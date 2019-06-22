@@ -1,0 +1,14 @@
+// bypass code early in game that assumes we're on PC and always connected to steam
+-nosteam
+
+// Required by phone steam for now
+-steamhdl_init
+//-init_universe Beta 
+-websocket
+
+// To set up steam headless:
+//-steamhdl_user "myname"
+//-steamhdl_password "mypassword"
+
+// one time provide code.
+//-steamhdl_steamguard 33NHD

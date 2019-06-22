@@ -1,0 +1,68 @@
+ A __bss_end__
+ A _bss_end__
+ A __bss_start
+ A __bss_start__
+ A _edata
+ A _end
+ A __end__
+ __android_log_print
+ clock_gettime@@LIBC
+ __cxa_atexit@@LIBC
+ __cxa_finalize@@LIBC
+ free@@LIBC
+ malloc@@LIBC
+ memcpy@@LIBC
+ memset@@LIBC
+ operator delete(void*)@@LIBC_O
+ operator delete[](void*)@@LIBC_O
+ operator new(unsigned long)@@LIBC_O
+ operator new[](unsigned long)@@LIBC_O
+ pthread_cond_broadcast@@LIBC
+ pthread_cond_signal@@LIBC
+ pthread_cond_timedwait@@LIBC
+ pthread_key_create@@LIBC
+ pthread_mutex_lock@@LIBC
+ pthread_mutex_unlock@@LIBC
+ pthread_setspecific@@LIBC
+ __stack_chk_fail@@LIBC
+ strcmp@@LIBC
+ strdup@@LIBC
+ T hid_close
+ T hid_enumerate
+ T hid_error
+ T hid_exit
+ T hid_free_enumeration
+ T hid_get_feature_report
+ T hid_get_indexed_string
+ T hid_get_manufacturer_string
+ T hid_get_product_string
+ T hid_get_serial_number_string
+ T hid_init
+ T hid_open
+ T hid_open_path
+ T hid_read
+ T hid_read_timeout
+ T hid_send_feature_report
+ T hid_set_nonblocking
+ T hid_write
+ T Java_org_libsdl_app_HIDDeviceManager_HIDDeviceConnected
+ T Java_org_libsdl_app_HIDDeviceManager_HIDDeviceDisconnected
+ T Java_org_libsdl_app_HIDDeviceManager_HIDDeviceFeatureReport
+ T Java_org_libsdl_app_HIDDeviceManager_HIDDeviceInputReport
+ T Java_org_libsdl_app_HIDDeviceManager_HIDDeviceOpenPending
+ T Java_org_libsdl_app_HIDDeviceManager_HIDDeviceOpenResult
+ T Java_org_libsdl_app_HIDDeviceManager_HIDDeviceRegisterCallback
+ T Java_org_libsdl_app_HIDDeviceManager_HIDDeviceReleaseCallback
+ W CHIDDevice::BOpen()
+ W CHIDDevice::~CHIDDevice()
+ W CHIDDevice::Close(bool)
+ W CHIDDevice::ExceptionCheck(_JNIEnv*, char const*)
+ W CHIDDevice::GetFeatureReport(unsigned char*, unsigned long)
+ wcslen@@LIBC
+ wcsncpy@@LIBC
+ W hid_device_ref<CHIDDevice>::~hid_device_ref()
+ W hid_device_ref<CHIDDevice>::SetObject(CHIDDevice*)
+ W _JNIEnv::CallBooleanMethod(_jobject*, _jmethodID*, ...)
+ W _JNIEnv::CallIntMethod(_jobject*, _jmethodID*, ...)
+ W _JNIEnv::CallObjectMethod(_jobject*, _jmethodID*, ...)
+ W _JNIEnv::CallVoidMethod(_jobject*, _jmethodID*, ...)

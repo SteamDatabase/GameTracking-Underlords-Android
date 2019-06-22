@@ -1,0 +1,318 @@
+"lang"
+{ 
+	"Language" "bulgarian" 
+	"Tokens" 
+	{
+		// ANTIMAGE
+		"dac_ability_antimage_mana_break"										"Пречупване на мана"
+		"dac_ability_antimage_mana_break_Description"							"ПАСИВНО: Анти-магът изгаря {s:mana_per_hit} от маната на опонента при всяка атака. Нанасяйки 50% от изгорената мана като щети към целта."
+		"dac_ability_antimage_mana_break_Lore"									"Анти-магът е дошъл за мен... а аз ще бъда готов. — <i>Турат, беглец от имението Тайлър</i>"
+
+		//QUEEN OF PAIN
+		"dac_ability_queenofpain_scream_of_pain"								"Писъкът на болка"
+		"dac_ability_queenofpain_scream_of_pain_Description"					"Кралицата на болката отприщва пронизителен писък около нея, който нанася щети върху близките врагове на разстояние до {s:radius} клетки за {s:damage} щети."
+		"dac_ability_queenofpain_scream_of_pain_Lore"							"Акаша може и да не е близка приятелка, но на драго сърце ще ми помогне, ако мисли, че впоследствие ще може да се разпорежда с мен. — <i>Анессикс, прагматичен демон</i>"
+
+		//LINA
+		"dac_ability_lina_laguna_blade"											"Мълниеносно острие"
+		"dac_ability_lina_laguna_blade_Description"								"Лина отприщва светкавична мълния, нанасяйки {s:damage} щети на една единица."
+		"dac_ability_lina_laguna_blade_Lore"									"Не беше трудно склоним Лина да дойде до Белия Шпил, тъй като взаимно сме почитатели на своите творчества. — <i>Хобген, професионален подпалвач</i>"
+
+		//FURION
+		"dac_ability_natures_prophet_summon_tree"								"Природният зов"
+		"dac_ability_natures_prophet_summon_tree_Description"					"Природният пророк призовава дървесен ент от ръба на таблото. Този дървесен ент се счита за друид."
+		"dac_ability_natures_prophet_summon_tree_Lore"							"Енно протегна ръка към своите малки горски приятели… това може да се окаже проблем. — <i>О'ния, прокудена търговка от Ревтел</i>"
+
+		//WINDRUNNER
+		"dac_ability_windrunner_powershot"										"Могъщ изстрел"
+		"dac_ability_windrunner_powershot_Description"							"Ветровитата рейнджърка зарежда лъка си за {s:castPoint} секунди за един мощен изстрел, нанасяйки до {s:powershot_damage} щети. За всеки ударен враг от „Могъщия изстрел“, щетите от него се намаляват с {s:damage_reduction}%."
+		"dac_ability_windrunner_powershot_Lore"									"Създадох много приятелства, докато пътешествах и не се притеснявам от връзките си за услуги. — <i>Врен, околосветска пътешественичка</i>"
+
+		//WITCHDOCTOR
+		"dac_ability_witch_doctor_paralyzing_cask"								"Парализираща бъчва"
+		"dac_ability_witch_doctor_paralyzing_cask_Description"					"Знахарят запраща бъчва с парализиращ прах, който отскача {s:bounces} пъти между вражески единици, зашеметявайки ги и нанасяйки {s:damage} щети на онези, които уцели."
+		"dac_ability_witch_doctor_paralyzing_cask_Lore"							"Обичам да гледам как работиш, докторе… — <i>Хобген, пакостлива фея</i>"
+
+		//JUGGERNAUT
+		"dac_ability_juggernaut_blade_fury"										"Остра ярост"
+		"dac_ability_juggernaut_blade_fury_Description"							"Непреодолимият се завърта със своето острие, давайки му имунитет срещу магии и нанасяйки {s:damage} щети в секунда върху вражески единици на разстояние {s:radius} клетка за {s:duration} секунди."
+		"dac_ability_juggernaut_blade_fury_Lore"								"Юрнеро не е просто войн. Той е Непреодолимият. Ако го привлечем на наша страна, ще съберем купища трупове за нула време. — <i>Грек разглежда ситуацията от всички възможни ъгли</i>"
+
+		//SANDKING
+		"dac_ability_sandking_burrowstrike"										"Изкопно нападение"
+		"dac_ability_sandking_burrowstrike_Description"							"Пясъчният крал прокопава тунели в земята, придвижвайки се напред, удряйки враговете с {s:damage} щети и зашеметявайки ги за {s:stun_duration} секунди.<br><br>Прилага натрупване от „Разяждаща кончина“ върху всички уцелени врагове.<br><br>Разяждаща кончина<br><br>ПАСИВНО: Всеки път, когато Пясъчният крал удря враг, той намалява скоростта на атака на своята цел за 3 секунди. Ако дадена цел умре, докато „Разяждащата кончина“ е активна, то тя експлодира, нанасяйки щети върху своите съюзници на разстояние 1 клетка."
+		"dac_ability_sandking_burrowstrike_Lore"								"Беше вложена много работа при установяването на мрежата ни от тунели, не можем да позволим на Пясъчния крал да съсипе това, което сме изградили. — <i>Джул, ликьорен барон</i>"
+
+		//SHADOW FRIEND
+		"dac_ability_shadow_fiend_requiem"										"Душевен реквием"
+		"dac_ability_shadow_fiend_requiem_Description"							"Сенчестият злодей призовава душите на обречените и отприщва демонична енергия навсякъде около него, нанасяйки {s:damage} щети върху всеки, който попадне във взрива."
+		"dac_ability_shadow_fiend_requiem_Lore"									"Дворецът на Ристул и аз разполагаме със… споразумение. — <i>Анессикс, светски демон</i>"
+
+		//PHANTOM ASSASSIN
+		"dac_ability_phantom_assassin_coup_de_grace"							"Милостива смърт"
+		"dac_ability_phantom_assassin_coup_de_grace_Description"				"ПАСИВНО: Фантомната убийца разполага с {s:crit_chance}% шанс за нанасяне на опустошителен {s:crit_bonus}% критичен удар върху вражеските единици."
+		"dac_ability_phantom_assassin_coup_de_grace_Lore"						"Тя извърши покушението над Квертиас, защо да не предполагам, че е дошла и за мен — <i>О'ния, параноична търговка</i>"
+
+		//DROW RANGER
+		"dac_ability_drow_ranger_trueshot_aura"									"Аура за прецизност"
+		"dac_ability_drow_ranger_trueshot_aura_Description"						"ПАСИВНО: Дроу рейнджърката добавя {s:bonus}% бонус към скоростта на атака за всички съюзници на разстояние {s:range} клетка."
+		"dac_ability_drow_ranger_trueshot_aura_Lore"							"Траксес. Ти и аз ще стигнем до върха. Довери ми се. — <i>Грек, шарлатанин</i>"
+
+		//MORPHLING
+		"dac_ability_morphling_waveform"										"Вълновидна форма"
+		"dac_ability_morphling_waveform_Description"							"Морфлинг се разтапя в течност и избликва напред, нанасяйки {s:damage} щети върху вражеските единици по пътя си.<br><br>Морфлинг е неуязвим, докато трае „Вълновидната форма“."
+		"dac_ability_morphling_waveform_Lore"									"Способността на Турат да спечели благоволението на същества подобни на Морфлинг е… тревожна. — <i>Хрисима, механична конспираторка</i>"
+
+		//AXE
+		"dac_ability_axe_berserkers_call"										"Обезумяващ призив"
+		"dac_ability_axe_berserkers_call_Description"							"Палачът се присмива на вражеските единици на разстояние до {s:radius} клетка, принуждавайки ги да го атакуват. Докато „Обезумяващият призив“ е активен, Палачът придобива {s:bonus_armor} бонус броня."
+		"dac_ability_axe_berserkers_call_Lore"									"Да се сдобиете с помощта на Палача е лесно… Всичко, от което се нуждаете, е бира и обещанието за добра история, която ще е способен да разкаже. — <i>Врен, сплотяваща бунтовничка</i>" 
+
+		//RAZOR
+		"dac_ability_razor_plasma_field"										"Плазмено поле"
+		"dac_ability_razor_plasma_field_Description"							"Бръсначът отприщва плазмен пръстен, чиято мощ нараства, докато се разширява, но също така удря и при свиване. Забавя и нанася до {s:damage_max} щети върху вражеските единици на разстояние до {s:radius} клетки.<br><br>Щетите и забавянето се увеличават спрямо разстоянието от Бръснача.<br><br>Плазменото поле удря всяка единица два пъти. По един път във всяка посока."
+		"dac_ability_razor_plasma_field_Lore"									"Ако мислите, че е страховит по улиците на Белия Шпил, трябва да видите какво прави в Тесния лабиринт. — <i>Анессикс, спортен почитател</i>"
+
+		//CRYSTAL MAIDEN
+		"dac_ability_crystal_maiden_brilliance_aura"							"Тайнствена аура"
+		"dac_ability_crystal_maiden_brilliance_aura_Description"				"ПАСИВНО: Всеки {s:interval} секунди, Кристалната девица предоставя {s:mana_regen} мана на всички приятелски единици."
+		"dac_ability_crystal_maiden_brilliance_aura_Lore"						"Разбери дали тя е тук заради мен или Турат. — <i>Джул, контрабандист на спиртни напитки от Айсрак</i>"
+
+		//KUNKKA
+		"dac_ability_kunkka_ghostship"											"Призрачен кораб"
+		"dac_ability_kunkka_ghostship_Description"								"Кунка призовава призрачен кораб, който преплава през битката, преди да корабокрушира, нанасяйки {s:ability_damage} щети и зашеметявайки всички врагове на разстояние {s:ghostship_crash_cells} клетки до останките за {s:stun_duration} секунди."
+		"dac_ability_kunkka_ghostship_Lore"										"Мама Ейб имаше много приятели… Кунка иска отговори толкова много, колкото и аз. — <i>Врен, отмъстителна дъщеря</i>"
+
+		//TINY
+		"dac_ability_tiny_toss"													"Мятане"
+		"dac_ability_tiny_toss_Description"										"Дребосъчето сграбчва произволен враг наблизо и го захвърля по най-далечната вражеска цел.<br><br>При сблъсък, целта нанася {s:damage} щети на всички врагове на разстояние {s:damage_radius} клетка и ги зашеметява за {s:stun_duration} секунди."
+		"dac_ability_tiny_toss_Lore"											"Изглежда, че Енно си е намерил як помощник. — <i>А Грек намира голям проблем в това</i>"
+
+		//PUCK
+		"dac_ability_puck_illusory_orb"											"Илюзорно кълбо"
+		"dac_ability_puck_illusory_orb_Description"								"Пакостничето изстрелва магическо кълбо, което лети в права линия, нанасяйки {s:damage} щети върху вражески единици по пътя."
+		"dac_ability_puck_illusory_orb_Lore"									"Не се заблуждавайте от външния вид, Пакостничето е същинско копеле. — <i>Хобген, споделя няколко мъдри дълбокомислия</i>"
+
+		//CLOCKWERK
+		"dac_ability_clockwerk_battery_assault"									"Батарейно нападение"
+		"dac_ability_clockwerk_battery_assault_Description"						"Часовникарят отприщва шрапнел с голяма сила върху произволни вражески единици на разстояние {s:radius_in_cells} клетка за {s:duration} секунди, нанасяйки им {s:damage}магически щети и леко зашеметяване."
+		"dac_ability_clockwerk_battery_assault_Lore"							"Брас Хералд би те нарекъл мерзост, но мисля, че си доста хитър, малък кийн фолк. — <i>Хрисима, еретичен автоматичен механизъм</i>"
+
+		//LICH
+		"dac_ability_lich_chain_frost"											"Верижен скреж"
+		"dac_ability_lich_chain_frost_Description"								"Лич отприщва ледено кълбо, което отскача между близките вражески единици до {s:jumps} пъти, забавяйки атаките и скоростта им на движение с {s:slow_value}% за {s:slow_duration} секунди и нанася {s:damage} щети при всяко попадение."
+		"dac_ability_lich_chain_frost_Lore"										"Можем да си помогнем взаимно, Лич. — <I>Турат, сключващ фаустова сделка</i>"
+
+		//TIDEHUNTER
+		"dac_ability_tidehunter_ravage"											"Опустошение"
+		"dac_ability_tidehunter_ravage_Description"								"Приливният ловец блъска в земята, причинявайки появата на пипала във всички посоки, нанасяйки {s:damage} щети и зашеметявайки всички вражески единици на разстояние {s:cells} клетки за {s:duration} секунди."
+		"dac_ability_tidehunter_ravage_Lore"									"Кунка, харесвах те повече, когато не беше преследван от левиатан. — <i>Врен, благосклонна приятелка</i>"
+
+		//SHADOWSHAMAN
+		"dac_ability_shadow_shaman_voodoo"										"Вещерство"
+		"dac_ability_shadow_shaman_voodoo_Description"							"Сенчестият шаман превръща дадена вражеска единица в безобидна твар, преустановявайки атаките и уменията ѝ за {s:duration} секунди."
+		"dac_ability_shadow_shaman_voodoo_Lore"									"Ето този тип знае как да направи представление! — <i>Грек показва професионална учтивост</i>"
+
+		//ENIGMA
+		"dac_ability_enigma_midnight_pulse"										"Среднощен пулс"
+		"dac_ability_enigma_midnight_pulse_Description"							"Енигма потапя дадена област в мрачен резонанс, нанасяйки {s:damage_percent}% от макс. вражеско здраве за {s:duration} секунди към всички неприятелски единици на разстояние до {s:radius} клетки от целта."
+		"dac_ability_enigma_midnight_pulse_Lore"								"На този свят има някои неща, които не можете да контролирате. — <i>Турат, луд маг</i>"
+
+		//TINKER
+		"dac_ability_tinker_heat_seeking_missile"								"Топлинно насочваща се ракета"
+		"dac_ability_tinker_heat_seeking_missile_Description"					"Нескопосникът изстрелва оръдеен залп от ракети по {s:targets} произволни врага, нанасяйки {s:damage_per_missile} щети при сблъсък."
+		"dac_ability_tinker_heat_seeking_missile_Lore"							"Обществото от кийнфолк със сходни възгледи ще бъде проблем, ако не е обуздано. — <i>О'ния опитва да сформира единен фронт</i>"
+
+		//SNIPER
+		"dac_ability_sniper_assassinate"										"Покушение"
+		"dac_ability_sniper_assassinate_Description"							"Снайперистът се прицелва към вражеска единица за {s:castPoint} секунди, а след това изстрелва опустошителен изстрел, който нанася {s:damage} щети и леко зашеметява целта."
+		"dac_ability_sniper_assassinate_Lore"									"Знаеш ли, преди имах кийнфолк за подгряващо представление. Страхотно за аудиториите, лошо при подвеждане под отговорност за застраховка. — <i>Грек, фокусиран над крайната сметка</i>"
+
+		//NECROLYTE
+		"dac_ability_necrophos_death_pulse"										"Мъртвешки пулс"
+		"dac_ability_necrophos_death_pulse_Description"							"Некрофос отприщва вълна от смърт около себе си, влияейки на вражески и приятелски единици на разстояние до {s:radius} клетки.<br><br>Мъртвешкият пулс нанася {s:damage} щети на враговете и лекува съюзниците с {s:heal}."
+		"dac_ability_necrophos_death_pulse_Lore"								"Хайде сега, Некрофос, трябва да има нещо, което искаш… — <i>Анессикс, сребро уста дяволица</i>"
+
+		//SLARDAR
+		"dac_ability_slardar_amplify_damage"									"Корозивна мъглявина"
+		"dac_ability_slardar_amplify_damage_Description"						"Слардар намалява вражеската броня с {s:armor_reduction} за {s:duration} секунди."
+		"dac_ability_slardar_amplify_damage_Lore"								"Сларк и аз бяхме способни да въртим бизнес. Със сигурност можем да достигнем и спогодба. — <i>Джул, познавач на пандизчийска пиячка</i>"
+
+		//BEASTMASTER
+		"dac_ability_beastmaster_wild_axes"										"Диви брадви"
+		"dac_ability_beastmaster_wild_axes_Description"							"Повелителят на зверовете захвърля брадвите си, а след това ги призовава обратно, разрязвайки вражески единици и дървета по пътя им за {s:axe_damage} щети.<br><br>Всяка брадва може да удари враг само веднъж, увеличавайки по-нататъшните щети от Повелителя на зверовете с {s:damage_amp}%."
+		"dac_ability_beastmaster_wild_axes_Lore"								"Колко още от тези природолюбители ще се застъпят за този дребен изтърсак? — <i>Грек се оплаква относно Енно</i>"
+
+		//VENOMANCER
+		"dac_ability_venomancer_plague_ward"									"Чумен страж"
+		"dac_ability_venomancer_plague_ward_Description"						"Отровителят призовава чумен страж, който да се сражава редом с него."
+		"dac_ability_venomancer_plague_ward_Lore"								"Творенията ти са красиви за взора. Нека ти помогна да култивираш своята градина… — <i>Турат научава, че ласкателството Ви отвежда навсякъде</i>"
+
+		//TEMPLAR ASSASSIN
+		"dac_ability_templar_assassin_refraction"								"Рефракция"
+		"dac_ability_templar_assassin_refraction_Description"					"Тамплиерката убиец става неуловима, избягвайки щети и придобивайки {s:bonus_damage}% бонус към своите.<br><br>Ефектите за щетите и избягването са отделни и разполагат с {s:instances} инстанциите за всеки от тях."
+		"dac_ability_templar_assassin_refraction_Lore"							"Ако ми помогнеш, дългът ни е уреден. — <i>Врен се сдобива с всичката помощ, която може да получи</i>"
+		
+		//VIPER
+		"dac_ability_viper_viper_strike"										"Нападение от Пепелянката"
+		"dac_ability_viper_viper_strike_Description"							"Киселинната отрова на Пепелянката забавя скоростта за движение и атака на дадена вражеска единица с {s:bonus_attack_speed}%, а същевременно с това ѝ нанася {s:damage} отровни щети през време.<br><br>Забавящият ефект чезне през времетраенето на отровата."
+		"dac_ability_viper_viper_strike_Lore"									"Не сме толкова различни… Аз също знам какво означава да бъдеш роб. — <i>Хрисима, механична съзаклятница</i>"
+
+		//LUNA
+		"dac_ability_luna_moon_glaive"											"Лунни пики"
+		"dac_ability_luna_moon_glaive_Description"								"ПАСИВНО: Лунните пики на Луна отскачат между враговете на разстояние {s:range} клетки. <br><br>Пиките нанасят {s:damage_reduction_percent}% по-малко щети с всеки отскок."
+		"dac_ability_luna_moon_glaive_Lore"										"Не разбирам и половината от това, което ка'аш, но ми харесва начина, по който запращаш тези неща. — <i>Грек, човека от народа</i>"
+
+		//DRAGON KNIGHT
+		"dac_ability_dragon_knight_elder_dragon_form"							"Форма на древен дракон"
+		"dac_ability_dragon_knight_elder_dragon_form_Description"				"Драконовият рицар може да приема формата на три мощни древни дракони, увеличаващи неговата скорост на движение с {s:bonus_movement_speed}% и му предоставя нова мощ.<br><br>Зелен дракон — Атаките нанасят {s:corrosive_breath_damage} отровни щети в сек. за {s:corrosive_breath_duration} секунди.<br><br>Червен дракон — Атаките нанасят щети върху всички вражески единици на разстояние {s:splash_radius} клетки за {s:splash_damage_percent}% щети, а към целите се добавя и „Корозивен дъх“.<br><br>Син дракон — Забавя скоростта за движение с {s:frost_bonus_movement_speed}%, а тази на атаката с {s:frost_bonus_attack_speed}% при вражески единици на разстояние {s:frost_aoe} клетка за {s:frost_duration} секунди, а към целите се добавя и „Корозивен дъх“."
+		"dac_ability_dragon_knight_elder_dragon_form_Lore"						"Каден говореше благосклонно за теб, да се надяваме, че хвалбите му са били заслужени. — <i>Врен, приятел на драконовата крепост</i>"
+
+		//ENCHANTRESS
+		"dac_ability_enchantress_natures_attendants"							"Природните придружители"
+		"dac_ability_enchantress_natures_attendants_Description"				"Чародейката призовава облак от {s:wisp_count} духчета, които лекуват съюзниците на разстояние до {s:radius} клетки.<br><br>За {s:duration} секунди, съюзниците лекуват {s:heal} здраве на всеки {s:heal_interval} сек."
+		"dac_ability_enchantress_natures_attendants_Lore"						"Тя няма да оцелее и ден в Белия Шпил. Ни. Един. Ден. Дори. — <i>А Хобген подценява своя неприятел</i>"
+
+		//BOUNTY HUNTER
+		"dac_ability_bounty_hunter_shuriken_toss"								"Мятане на шурикен"
+		"dac_ability_bounty_hunter_shuriken_toss_Description"					"Ловецът на глави захвърля смъртоносен шурикен към дадена вражеска единица, нанасяйки {s:damage} щети и леко зашеметяване на целта."
+		"dac_ability_bounty_hunter_shuriken_toss_Lore"							"Стига да имаш парите, винаги се доверявай на човек, чиято лоялност е за продан. — <i>О'ния, съмнителна мъдрост</i>"
+
+		//BATRIDER
+		"dac_ability_batrider_sticky_napalm"									"Лепкав напалм"
+		"dac_ability_batrider_sticky_napalm_Description"						"Прилеповият ездач хвърля лепкаво гориво, наслоявайки земята на разстояние {s:radius} клетки от точката на стълкновение. Горивото добавя {s:damage} щети за натрупване към атаките на Прилеповия ездач, забавяйки скоростта за движение и атака на враговете с {s:movement_speed_pct}%.<br><br>Допълнителни изпълнявания на „Лепкав напалм“ продължават да увеличават процентите за щети и забавяне до 10 натрупвания."
+		"dac_ability_batrider_sticky_napalm_Lore"								"Обичам този тип. ОБИЧАМ ГО. — <i>Хобген, пироманиак</i>"
+
+		//DOOM BRINGER
+		"dac_ability_doom_bringer_doom"											"Гибел"
+		"dac_ability_doom_bringer_doom_Description"								"Вестителят на гибелта призовава могъщо проклятие, което възпрепядства даден враг да изпълнява заклинания или използва предмети, докато същевременно с това им нанася {s:damage} щети в секунда.<br><br>Трае {s:duration} секунди."
+		"dac_ability_doom_bringer_doom_Lore"									"Предпочитам да си имам вземане-даване с метафорични демони… — <i>А О'ния изказва мнение относно съюзниците на Анессикс</i>"
+
+		//GYROCOPTER
+		"dac_ability_gyrocopter_call_down"										"Призоваване на въздушна ракетна атака"
+		"dac_ability_gyrocopter_call_down_Description"							"Жирокоптера изстрелва ракетно нападение, удряйки всички вражески единици на разстояние до {s:radius} клетки от точката на стълкновение.<br><br>Последователно пристигат две ракети. Първата нанася {s:damage_first} щети и {s:slow_first}% забавяне за {s:slow_duration_first} секунди. А финалната нанася {s:damage_second} щети и {s:slow_second}% забавяне за {s:slow_duration_second} секунди."
+		"dac_ability_gyrocopter_call_down_Lore"									"Замислете се относно това колко продукция бихме могли да пренесем с негова помощ. — <i>Джул се замисля за по-голямата картина</i>"
+
+		//ALCHEMIST
+		"dac_ability_alchemist_acid_spray"										"Киселинен спрей"
+		"dac_ability_alchemist_acid_spray_Description"							"Алхимикът изпръсква киселина под високо налягане, влияейки върху врагове на разстояние до {s:radius} клетки от целта.<br><br>Вражески единици, които преминат през заразения терен, поемат {s:damage} щети в секунда и имат намалена броня с {s:armor_reduction}."
+		"dac_ability_alchemist_acid_spray_Lore"									"Харесва ти да изгаряш хорските лица, а аз обичам да изпепелява жилища им… Какво райско пламенно съвпадение. — <i>Хобген преодолява културна пропаст</i>"
+
+		// Lycan
+		"dac_ability_lycan_wolf_spawn_shift"									"Призоваване на вълци"
+		"dac_ability_lycan_wolf_spawn_shift_Description"						"Ликантропът призовава два вълка, които да се сражават редом с него.<br><br>След това Ликантропът се трансформира и придобива {s:hp_per}% към своето макс. здраве, скоростта му на движение е подсилена до {s:speed} и придобива {s:crit_chance}% шанс при критична атака за {s:crit_bonus}% бонус щети."
+		"dac_ability_lycan_wolf_spawn_shift_Lore"								"Моля те, Ликантропе, помогни ми да си отмъстя. — <i>Врен опитва да умилостиви човещината на Ликантропа</i>"
+		
+		// LONE DRUID
+		"dac_ability_lone_druid_summon_bear"									"Призоваване на духовна мечка"
+		"dac_ability_lone_druid_summon_bear_Description"						"Призовава могъща духовна мечка като придружител."
+		"dac_ability_lone_druid_summon_bear_Lore"								"Просто дръж мечката далеч от мен, става ли? Мечките не ми понасят. — <i>Грек, страдащ от фобия към мечки</i>"
+		
+
+		//CHAOS KNIGHT
+		"dac_ability_chaos_knight_chaos_bolt"									"Мълния на хаоса"
+		"dac_ability_chaos_knight_chaos_bolt_Description"						"Рицарят на хаоса хвърля мистериозна енергийна мълния, която зашеметява дадена вражеска единица с произволно времетраене. Също така нанася произволни стойности на щети."
+		"dac_ability_chaos_knight_chaos_bolt_Lore"								"На Белия Шпил малко хаос би му се отразил добре. — <i>Хобген, агент на хаоса</i>"
+
+		//OGRE MAGI
+		"dac_ability_ogre_magi_bloodlust"										"Кръвожадност"
+		"dac_ability_ogre_magi_bloodlust_Description"							"Огре маг подбужда яростта на съюзническа единица, увеличавайки скоростта ѝ на движение с {s:bonus_movement_speed}%, а тази на атаката с {s:bonus_attack_speed}%. Ако се изпълни върху самия Огре маг, вместо това бонус скоростта на атаката е {s:self_bonus}%."
+		"dac_ability_ogre_magi_bloodlust_Lore"									"Магът струват дваж по-скъпо от туй, що таксува. За щастие, магът също тъй е идиот. — <i>О'ния, пазаряща се за най-изгодната цена</i>"
+
+		//TREANT PROTECTOR
+		"dac_ability_treant_leech_seed"											"Семе пиявица"
+		"dac_ability_treant_leech_seed_Description"								"Дървесният защитник засява подривно за живота семе във вражеска единица, източвайки здравето ѝ с {s:leech_damage} на всеки {s:damage_interval} секунди, докато в същото време забавя скоростта на атака и движение с {s:movement_slow}%.<br><br>Семето лекува съюзническите единици на разстояние до {s:radius} клетки от целта. Трае {s:duration} секунди."
+		"dac_ability_treant_leech_seed_Lore"									"Няма да лъжа, не очаквах Енно да получи помощ от дърво. — <i>Джул и Анессикс, които пият по питие</i>"
+
+		//KEEPER OF THE LIGHT
+		"dac_ability_keeper_of_the_light_illuminate"							"Озаряване"
+		"dac_ability_keeper_of_the_light_illuminate_Description"				"Пазителят на светлината призовава енергия, надграждаща мощта си при продължително изпълнение. Щом бъде отприщена, изпраща вълна, която нанася {s:damage_per_second} щети за всяка секунда изпълнение."
+		"dac_ability_keeper_of_the_light_illuminate_Lore"						"Пазителят е по-могъщ, отколкото дава да се разбере, ако остане необуздан ще докара кончината на всинца ни. — <i>Турат, унищожител на светлината</i> "
+
+		// MEDUSA
+		"dac_ability_medusa_stone_gaze"											"Каменен взор"
+		"dac_ability_medusa_stone_gaze_Description"								"Всяка вражеска единица на разстояние до {s:radius} клетки, гледаща към Медуза, ще получи забавяне на скоростта за движение и атака с {s:slow}%.<br><br>Ако се натрупат {s:face_duration} секунди гледане към Медуза, тази единица ще се вкамени.<br><br>Вцепенените единици биват зашеметени и поемат бонус {s:bonus_physical_damage}% физически щети."
+		"dac_ability_medusa_stone_gaze_Lore"									"Моят тип дама е, но очите ми са привлечени само от Мирешка. — <i>Хобген, лудо влюбен престъпник</i>"
+
+		// TROLL WARLORD
+		"dac_ability_troll_warlord_fervor"										"Разпаленост"
+		"dac_ability_troll_warlord_fervor_Description"							"ПАСИВНО: Тролът военачалник сипе удари един подир друг, придобивайки {s:attack_speed}% бонус скорост на атака за натрупване.<br><br>Ако Тролът военачалник смени целта, натрупванията спадат до нула.<br><br>Този ефект може да се натрупа само до {s:max_stacks} пъти."
+		"dac_ability_troll_warlord_fervor_Lore"									"Ефикасен и неумолим. Точно като мен. — <i>Хрисима, без напразно усилие</i>"
+
+		// SHREDDER
+		"dac_ability_timbersaw_whirling_death"									"Завихрена смърт"
+		"dac_ability_timbersaw_whirling_death_Description"						"Острите ръбове по бронирания костюм на Дърворезача се завихрят, нараняват враговете на разстояние до {s:radius} клетки за {s:damage} щети."
+		"dac_ability_timbersaw_whirling_death_Lore"								"Досетих се, че Енно ще извика всичките си горски приятели. Ето защо и аз се обадих тук-там. — <i>Хобген се заема с решаването на проблеми</i>"
+
+		//TUSK
+		"dac_ability_tusk_walrus_punch"											"Моржов УДАР С ЮМРУК!"
+		"dac_ability_tusk_walrus_punch_Description"								"Бивникът се свързва със своя могъщ „Моржов удар с юмрук“. Критичен удар, който е толкова силен, че подхвърля жертвата си във въздуха. При приземяването жертвата е забавена с {s:move_slow}%."
+		"dac_ability_tusk_walrus_punch_Lore"									"Беше ми приятел някога. Съвсем скоро ще разберем дали е тук да ми помогне или да ме фрасне с юмрук. — <i>А Джул размишлява над своята младост</i>"
+		
+		
+		//ABADDON
+		"dac_ability_abaddon_aphotic_shield"									"Сумрачният щит"
+		"dac_ability_abaddon_aphotic_shield_Description"						"Абадон защитава приятелска единица с щит, който абсорбира {s:damage_absorb} щети за {s:duration} секунди.<br><br>Когато е унищожен, щитът се разпръсва и нанася {s:damage_absorb} щети върху враговете на разстояние до {s:radius} клетки.<br><br>Премахва определени типове отрицателни бъфове и зашеметявания при изпълнение."
+		"dac_ability_abaddon_aphotic_shield_Lore"								"Имам голямо уважение към династията Авернус. — <i>О'ния, разполагаща с дворцовата благосклонност</i>"
+
+		// TERRORBLADE
+		"dac_ability_terrorblade_metamorph"										"Метаморфоза"
+		"dac_ability_terrorblade_metamorph_Description"							"Острието на терора се превръща в могъщ демон, придобиващ далекобойна атака до {s:bonus_attack_range} клетки, както и {s:bonus_attack_damage}% бонус щети. Също така Острието на терора разменя стойностите за здраве с друг съюзник, когато това умение стартира."
+		"dac_ability_terrorblade_metamorph_Lore"								"Когато видите, че говори с Анессикс, знаете, че предстои да се случи нещо лошо. — <i>Джул, хорски наблюдател</i>"
+
+		// TECHIES
+		"dac_ability_techies_bomb" 												"Отдалечени мини"
+		"dac_ability_techies_bomb_Description"									"Шайката поставя невидим експлозив, който се детонира след {s:explode_time} секунди и нанася {s:damage} щети върху цели на разстояние {s:range} клетки.<br><br>Нанася преполовени щети на врагове, които са на половината разстояние."
+		"dac_ability_techies_bomb_Lore"											"Говорете каквото щете относно кийн фолк, но винаги знаят как да те развеселят. — <i>Хобген, гледайки показно разрушение</i>"
+
+		//DISRUPTOR
+		"dac_ability_disruptor_static_storm"									"Статична буря"
+		"dac_ability_disruptor_static_storm_Description"						"Разрушителният създава статична буря, която нанася щети и заглушава всички вражески единици на разстояние до {s:radius} клетки от своята цел за {s:duration} секунди.<br><br>Щетите първоначално са слаби, но набират мощност, докато достигнат максималната стойност от {s:damage_max}."
+		"dac_ability_disruptor_static_storm_Lore"								"Не съм сигурна дали действително е тук, за да ми помогне или просто иска да наглежда Палача. — <i>Врен, командваща на колоритна шайка</i>"
+
+		//OMNIKNIGHT
+		"dac_ability_omniknight_purification"									"Пречистване"
+		"dac_ability_omniknight_purification_Description"						"Всеведущият рицар незабавно лекува приятелска единица с {s:heal} и нанася щети по всички близки вражески единици на разстояние {s:radius} клетка."
+		"dac_ability_omniknight_purification_Lore"								"Борави с вярата сякаш е оръжие… както и аз. — <i>Турат, налудничав спасител</i>"
+		
+		//PUDGE
+		"dac_ability_pudge_meathook"											"Кука за месо"
+		"dac_ability_pudge_meathook_Description"								"Дундьо изстрелва кървава кука към своя най-далечен враг, издърпвайки жертвата обратно, нанасяйки ѝ {s:damage} щети.<br><br>Дундьо и съюзниците на разстояние 1 клетка ще насочат своите атаки към целта, докато умре."
+		"dac_ability_pudge_meathook_Lore"										"Дундьо? О, той е просто елегантно надут. Винаги ме поздравява, когато ощавям телата. — <i>Карл, немъртъв шивач</i>"
+		
+		//WARLOCK
+		"dac_ability_warlock_shadow_word"										"Сенчест свят"
+		"dac_ability_warlock_shadow_word_Description"							"Вещерът прошепва заклинание, възстановявайки {s:heal_tick} здраве на приятелска или нанасящо {s:damage_tick} щети върху вражеска единица всяка секунда в продължение на {s:duration} сек."
+		"dac_ability_warlock_shadow_word_Lore"									"Някои тайни са предназначени да бъдат пазени… Демнок ще плати за липсата си на дискретност. — <i>Анессикс, отбиваща време</i>"
+		
+		//BLOODSEEKER
+		"dac_ability_bloodseeker_blood_rage"									"Кървава ярост"
+		"dac_ability_bloodseeker_blood_rage_Description"						"ПАСИВНО: Всяка секунда Кръвотърсачът поема щети, еквивалентни на {s:self_dmg_pct}% от макс. му здраве.<br><br>За всеки процент липсващо здраве той придобива {s:attack_speed_per_missing_pct}% скорост на атака.<br><br>При убийство си възвръща {s:heal_pct}% от своето макс. здраве."
+		"dac_ability_bloodseeker_blood_rage_Lore"								"Ако съм научил едно нещо през кариерата си, то е, че хорицата обичат кръв. Намете този човек. — <i>Грек, решителен поощрител</i>"
+		
+		//ARC WARDEN
+		"dac_ability_arc_warden_tempest_double"									"Бушуващ двойник"
+		"dac_ability_arc_warden_tempest_double_Description"						"Бранителят на волтовата дъга създава свое копие.<br><br>Дубликатът може да използва всички текущи предмети и заклинания на Бранителя на волтовата дъга, също така има отделно време за изчакване, но генерира {s:mana_dampen_outgoing}% мана от изходящи атаки и никаква при поемане на щети."
+		"dac_ability_arc_warden_tempest_double_Lore"							"В себе си той носи тайните на сътворението. — <i>Турат, потаен пророк</i>"
+		
+		//MIRANA
+		"dac_ability_mirana_arrow"												"Свещена стрела"
+		"dac_ability_mirana_arrow_Description"									"Мирана изстрелва далекобойна стрела със смъртоносна точност, зашеметяваща своята цел за {s:duration} секунди и нанасяйки {s:damage} щети."
+		"dac_ability_mirana_arrow_Lore"											"Никога не се доверявай на фанатичен последовател, Врен. Не си струва. — <i>Джул дава приятелски съвет</i>"
+		
+		//SLARK
+		"dac_ability_slark_essence_shift"										"Изместване на есенция"
+		"dac_ability_slark_essence_shift_description"							"ПАСИВНО: Всяко нападение от Сларк намалява щетите на целта му с {s:stolen_dmg} и скоростта на атака с {s:stolen_aspd}.<br><br>Щетите и скоростта за атака на Сларк се увеличават със същата стойност, която източва от своята цел."
+		"dac_ability_slark_essence_shift_lore"									"Сларк е от съществено значение за пренасянето на продукта ни в и извън Мрачния риф. — <i>Джул, самоиздигнал се човек</i>"
+
+		//BLACK DRAGON
+		"dac_ability_black_dragon_splash_attack"								"Косвена атака"
+		"dac_ability_black_dragon_splash_attack_description"					"ПАСИВНО: Далекобойната атака на черния дракон нанася косвени щети върху единици на разстояние 1 клетка от целта му."
+		"dac_ability_black_dragon_splash_attack_lore"							" "
+
+		//"SVEN GREAT CLEAVE - used for YEAR BEAST and ROSHAN"
+		"dac_ability_sven_great_cleave"											"Знаменито разсичане"
+		"dac_ability_sven_great_cleave_description"								"ПАСИВНО: Ръкопашните атаки на тази единица нападат враговете наблизо."
+		"dac_ability_sven_great_cleave_lore"									" "
+	}
+}

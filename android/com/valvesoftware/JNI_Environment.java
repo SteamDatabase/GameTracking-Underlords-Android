@@ -1,0 +1,1209 @@
+package com.valvesoftware;
+
+import android.app.ActivityManager;
+import android.app.ActivityManager.MemoryInfo;
+import android.app.Application;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Build.VERSION;
+import android.os.Debug;
+import android.os.Environment;
+import android.os.StatFs;
+import android.util.Log;
+import java.io.File;
+
+public class JNI_Environment {
+    static final /* synthetic */ boolean $assertionsDisabled = false;
+    private static INativeLibraryPathResolver m_NativeLibraryPathResolver;
+    public static Application m_application;
+    private static boolean m_bSetupCalled;
+    private static String[] m_sNativeLibrarySearchPaths;
+    private static File m_sPrivatePath;
+    private static File m_sPublicPath;
+    public static String[] sm_ProgramArguments;
+
+    public interface INativeLibraryPathResolver {
+        String ResolveNativeLibraryPath(String str);
+    }
+
+    public static native String[] GetNeededSharedObjects(String str, boolean z);
+
+    private static native String setupNative(int i, Object obj, Class<?> cls, String str, String str2);
+
+    public static void setApplication(Application application) {
+        m_application = application;
+    }
+
+    public static void onBootStrap() {
+        AddNativeLibrarySearchPath(m_application.getApplicationContext().getApplicationInfo().nativeLibraryDir);
+        m_sPrivatePath = new File(m_application.getFilesDir(), BuildConfig.APPLICATION_ID);
+        m_sPublicPath = SelfInstall.GetContentDirectory();
+        if (!m_sPrivatePath.exists()) {
+            m_sPrivatePath.mkdirs();
+        }
+        if (!m_sPublicPath.exists()) {
+            m_sPublicPath.mkdirs();
+        }
+        StringBuilder sb = new StringBuilder();
+        sb.append("m_sPrivatePath = \"");
+        sb.append(m_sPrivatePath.getAbsolutePath());
+        sb.append("\"\nm_sPublicPath = \"");
+        sb.append(m_sPublicPath.getAbsolutePath());
+        sb.append("\"");
+        sb.append(Environment.isExternalStorageEmulated(m_sPublicPath) ? " (EMULATED)" : "");
+        sb.append(" (");
+        sb.append(GetAvailableStorageBytes(m_sPublicPath));
+        sb.append(" Bytes total)");
+        Log.i("com.valvesoftware.JNI_Environment", sb.toString());
+    }
+
+    public static String setup(INativeLibraryPathResolver iNativeLibraryPathResolver, String[] strArr) {
+        boolean z;
+        sm_ProgramArguments = strArr;
+        if (iNativeLibraryPathResolver != null) {
+            SetPathResolver(iNativeLibraryPathResolver);
+        }
+        try {
+            System.loadLibrary("jni_environment");
+            z = true;
+        } catch (Throwable unused) {
+            z = false;
+        }
+        if (!z) {
+            FindAndLoadNativeLibrary("libjni_environment.so");
+        }
+        Class cls = null;
+        try {
+            StringBuilder sb = new StringBuilder();
+            sb.append(m_application.getPackageName());
+            sb.append(".R");
+            cls = Class.forName(sb.toString(), false, m_application.getClassLoader());
+        } catch (Throwable unused2) {
+        }
+        String str = setupNative(VERSION.SDK_INT, m_application, cls, m_sPrivatePath.getAbsolutePath(), m_sPublicPath.getAbsolutePath());
+        m_bSetupCalled = true;
+        return str;
+    }
+
+    /* JADX WARNING: Missing exception handler attribute for start block: B:12:0x0019 */
+    /* JADX WARNING: Missing exception handler attribute for start block: B:17:0x0024 */
+    /* JADX WARNING: Removed duplicated region for block: B:15:0x001d A[Catch:{ Throwable -> 0x0003, Throwable -> 0x0019, Throwable -> 0x0024, Throwable -> 0x002f }] */
+    /* JADX WARNING: Removed duplicated region for block: B:20:0x0028 A[Catch:{ Throwable -> 0x0003, Throwable -> 0x0019, Throwable -> 0x0024, Throwable -> 0x002f }] */
+    /* Code decompiled incorrectly, please refer to instructions dump. */
+    public static java.lang.String[] GetSupportedABIs() {
+        /*
+            java.lang.String[] r0 = android.os.Build.SUPPORTED_ABIS     // Catch:{ Throwable -> 0x0003 }
+            return r0
+        L_0x0003:
+            r0 = 1
+            r1 = 0
+            java.lang.String r2 = android.os.Build.CPU_ABI     // Catch:{ Throwable -> 0x0019 }
+            if (r2 == 0) goto L_0x0019
+            java.lang.String r2 = android.os.Build.CPU_ABI2     // Catch:{ Throwable -> 0x0019 }
+            if (r2 == 0) goto L_0x0019
+            r2 = 2
+            java.lang.String[] r2 = new java.lang.String[r2]     // Catch:{ Throwable -> 0x0019 }
+            java.lang.String r3 = android.os.Build.CPU_ABI     // Catch:{ Throwable -> 0x0019 }
+            r2[r1] = r3     // Catch:{ Throwable -> 0x0019 }
+            java.lang.String r3 = android.os.Build.CPU_ABI2     // Catch:{ Throwable -> 0x0019 }
+            r2[r0] = r3     // Catch:{ Throwable -> 0x0019 }
+            return r2
+        L_0x0019:
+            java.lang.String r2 = android.os.Build.CPU_ABI     // Catch:{ Throwable -> 0x0024 }
+            if (r2 == 0) goto L_0x0024
+            java.lang.String[] r2 = new java.lang.String[r0]     // Catch:{ Throwable -> 0x0024 }
+            java.lang.String r3 = android.os.Build.CPU_ABI     // Catch:{ Throwable -> 0x0024 }
+            r2[r1] = r3     // Catch:{ Throwable -> 0x0024 }
+            return r2
+        L_0x0024:
+            java.lang.String r2 = android.os.Build.CPU_ABI2     // Catch:{ Throwable -> 0x002f }
+            if (r2 == 0) goto L_0x002f
+            java.lang.String[] r0 = new java.lang.String[r0]     // Catch:{ Throwable -> 0x002f }
+            java.lang.String r2 = android.os.Build.CPU_ABI2     // Catch:{ Throwable -> 0x002f }
+            r0[r1] = r2     // Catch:{ Throwable -> 0x002f }
+            return r0
+        L_0x002f:
+            java.lang.String[] r0 = new java.lang.String[r1]
+            return r0
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.JNI_Environment.GetSupportedABIs():java.lang.String[]");
+    }
+
+    public static String GetVPCPlatform() {
+        String[] GetSupportedABIs = GetSupportedABIs();
+        for (String GetVPCPlatformForABI : GetSupportedABIs) {
+            String GetVPCPlatformForABI2 = GetVPCPlatformForABI(GetVPCPlatformForABI);
+            if (GetVPCPlatformForABI2 != null) {
+                return GetVPCPlatformForABI2;
+            }
+        }
+        return null;
+    }
+
+    public static String GetVPCPlatformForABI(String str) {
+        if (str.startsWith("arm64")) {
+            return "androidarm64";
+        }
+        if (str.startsWith("armeabi")) {
+            return "androidarm32";
+        }
+        if (str.equals("mips64")) {
+            return "androidmips64";
+        }
+        if (str.equals("mips")) {
+            return "androidmips32";
+        }
+        if (str.equals("x86_64")) {
+            return "androidx8664";
+        }
+        if (str.equals("x86")) {
+            return "androidx8632";
+        }
+        return null;
+    }
+
+    /* JADX WARNING: Removed duplicated region for block: B:116:0x04a8  */
+    /* JADX WARNING: Removed duplicated region for block: B:132:0x051d  */
+    /* JADX WARNING: Removed duplicated region for block: B:135:0x0524 A[ADDED_TO_REGION] */
+    /* JADX WARNING: Removed duplicated region for block: B:148:0x0566  */
+    /* JADX WARNING: Removed duplicated region for block: B:150:0x0581  */
+    /* JADX WARNING: Removed duplicated region for block: B:155:0x05a9  */
+    /* Code decompiled incorrectly, please refer to instructions dump. */
+    public static boolean LoadNativeLibrary(java.lang.String r52) {
+        /*
+            r1 = r52
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r0.<init>()
+            java.lang.String r2 = "Start loading native module \""
+            r0.append(r2)
+            r0.append(r1)
+            java.lang.String r2 = "\""
+            r0.append(r2)
+            java.lang.String r0 = r0.toString()
+            java.lang.String r3 = "com.valvesoftware.JNI_Environment.LoadNativeLibrary"
+            android.util.Log.i(r3, r0)
+            r4 = 0
+            java.lang.String r0 = "search:/"
+            boolean r0 = r1.startsWith(r0, r4)
+            r6 = 2
+            java.lang.String r7 = "Native Module \""
+            java.lang.String r8 = "com.valvesoftware.JNI_Environment"
+            r9 = 1
+            if (r0 != 0) goto L_0x05a1
+            java.io.File r0 = new java.io.File
+            r0.<init>(r1)
+            java.lang.String r10 = r0.getName()
+            boolean r11 = r0.exists()
+            if (r11 == 0) goto L_0x0584
+            boolean r11 = m_bSetupCalled
+            if (r11 == 0) goto L_0x007d
+            java.lang.String[] r11 = GetNeededSharedObjects(r1, r9)
+            if (r11 == 0) goto L_0x007d
+            r12 = 0
+        L_0x0046:
+            int r13 = r11.length
+            if (r12 >= r13) goto L_0x007d
+            java.lang.StringBuilder r13 = new java.lang.StringBuilder
+            r13.<init>()
+            java.lang.String r14 = "Module \""
+            r13.append(r14)
+            r13.append(r1)
+            java.lang.String r14 = "\" needs shared object \""
+            r13.append(r14)
+            r14 = r11[r12]
+            r13.append(r14)
+            java.lang.String r14 = "\" to be loaded first. Detouring..."
+            r13.append(r14)
+            java.lang.String r13 = r13.toString()
+            android.util.Log.i(r3, r13)
+            java.io.File r13 = new java.io.File
+            r14 = r11[r12]
+            r13.<init>(r14)
+            java.lang.String r13 = r13.getName()
+            FindAndLoadNativeLibrary(r13)
+            int r12 = r12 + 1
+            goto L_0x0046
+        L_0x007d:
+            android.app.Application r11 = m_application
+            android.content.Context r11 = r11.getApplicationContext()
+            android.content.pm.ApplicationInfo r11 = r11.getApplicationInfo()
+            java.lang.String r11 = r11.nativeLibraryDir
+            boolean r11 = r1.startsWith(r11)
+            if (r11 == 0) goto L_0x00a1
+            java.lang.String r12 = "lib"
+            boolean r12 = r10.startsWith(r12)
+            if (r12 == 0) goto L_0x00a1
+            java.lang.String r12 = ".so"
+            boolean r12 = r10.endsWith(r12)
+            if (r12 == 0) goto L_0x00a1
+            r12 = 1
+            goto L_0x00a2
+        L_0x00a1:
+            r12 = 0
+        L_0x00a2:
+            java.lang.StringBuilder r13 = new java.lang.StringBuilder
+            r13.<init>()
+            java.lang.String r14 = "Module \""
+            r13.append(r14)
+            r13.append(r1)
+            java.lang.String r14 = "\" already in native search path ["
+            r13.append(r14)
+            r13.append(r12)
+            java.lang.String r14 = "]"
+            r13.append(r14)
+            java.lang.String r13 = r13.toString()
+            android.util.Log.i(r3, r13)
+            if (r11 != 0) goto L_0x00cd
+            int r11 = android.os.Build.VERSION.SDK_INT
+            r13 = 23
+            if (r11 < r13) goto L_0x00cd
+            r11 = 1
+            goto L_0x00ce
+        L_0x00cd:
+            r11 = 0
+        L_0x00ce:
+            java.lang.StringBuilder r13 = new java.lang.StringBuilder
+            r13.<init>()
+            r13.append(r1)
+            java.lang.String r14 = ".zip"
+            r13.append(r14)
+            java.lang.String r13 = r13.toString()
+            if (r11 == 0) goto L_0x0496
+            java.io.File r14 = new java.io.File
+            r14.<init>(r13)
+            boolean r15 = r14.exists()
+            if (r15 == 0) goto L_0x0134
+            long r15 = r14.lastModified()
+            long r17 = r0.lastModified()
+            int r19 = (r15 > r17 ? 1 : (r15 == r17 ? 0 : -1))
+            if (r19 >= 0) goto L_0x00f9
+            goto L_0x0134
+        L_0x00f9:
+            java.lang.StringBuilder r15 = new java.lang.StringBuilder
+            r15.<init>()
+            java.lang.String r5 = "Zip \""
+            r15.append(r5)
+            r15.append(r13)
+            java.lang.String r5 = "\" is up to date for binary \""
+            r15.append(r5)
+            r15.append(r1)
+            java.lang.String r5 = "\". ("
+            r15.append(r5)
+            long r4 = r14.lastModified()
+            r15.append(r4)
+            java.lang.String r4 = ">="
+            r15.append(r4)
+            long r4 = r0.lastModified()
+            r15.append(r4)
+            java.lang.String r0 = ")"
+            r15.append(r0)
+            java.lang.String r0 = r15.toString()
+            android.util.Log.i(r3, r0)
+            goto L_0x0496
+        L_0x0134:
+            boolean r4 = r14.exists()
+            if (r4 == 0) goto L_0x013d
+            r14.delete()
+        L_0x013d:
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder
+            r4.<init>()
+            java.lang.String r5 = "Zipping \""
+            r4.append(r5)
+            r4.append(r1)
+            java.lang.String r5 = "\" for subsequent loading attempt"
+            r4.append(r5)
+            java.lang.String r4 = r4.toString()
+            android.util.Log.i(r3, r4)
+            long r3 = r0.length()
+            int r4 = (int) r3
+            r3 = 0
+            java.io.FileInputStream r5 = new java.io.FileInputStream     // Catch:{ Throwable -> 0x0162 }
+            r5.<init>(r1)     // Catch:{ Throwable -> 0x0162 }
+            r3 = r5
+        L_0x0162:
+            r5 = 0
+            java.io.RandomAccessFile r14 = new java.io.RandomAccessFile     // Catch:{ Throwable -> 0x016b }
+            java.lang.String r15 = "rw"
+            r14.<init>(r13, r15)     // Catch:{ Throwable -> 0x016b }
+            r5 = r14
+        L_0x016b:
+            if (r5 == 0) goto L_0x0481
+            r14 = 4096(0x1000, float:5.74E-42)
+            byte[] r15 = new byte[r14]
+            r19 = r15
+            long r14 = r0.lastModified()
+            java.util.GregorianCalendar r0 = new java.util.GregorianCalendar
+            r0.<init>()
+            r0.setTimeInMillis(r14)
+            int r14 = r0.get(r9)
+            int r14 = r14 + -1980
+            int r15 = r0.get(r6)
+            int r15 = r15 + r9
+            r9 = 5
+            int r21 = r0.get(r9)
+            r14 = r14 & 127(0x7f, float:1.78E-43)
+            int r14 = r14 << 9
+            r17 = 0
+            r14 = r14 | 0
+            r15 = r15 & 15
+            int r15 = r15 << r9
+            r14 = r14 | r15
+            r15 = 31
+            r21 = r21 & 31
+            r14 = r14 | r21
+            r6 = 11
+            int r6 = r0.get(r6)
+            r9 = 12
+            int r9 = r0.get(r9)
+            r23 = r11
+            r11 = 13
+            int r0 = r0.get(r11)
+            r6 = r6 & r15
+            int r6 = r6 << 11
+            r11 = 0
+            r6 = r6 | r11
+            r9 = r9 & 63
+            r11 = 5
+            int r9 = r9 << r11
+            r6 = r6 | r9
+            r9 = 2
+            int r0 = r0 / r9
+            r0 = r0 & r15
+            r0 = r0 | r6
+            java.nio.charset.Charset r6 = java.nio.charset.StandardCharsets.UTF_8
+            byte[] r6 = r10.getBytes(r6)
+            int r11 = r6.length
+            r21 = 80
+            r17 = 0
+            r19[r17] = r21
+            r21 = 75
+            r20 = 1
+            r19[r20] = r21
+            r16 = 3
+            r19[r9] = r16
+            r9 = 4
+            r19[r16] = r9
+            r24 = 10
+            r19[r9] = r24
+            r22 = 5
+            r19[r22] = r17
+            r25 = 6
+            r19[r25] = r17
+            r26 = 7
+            r19[r26] = r17
+            r27 = 8
+            r19[r27] = r17
+            r28 = 9
+            r19[r28] = r17
+            r15 = r0 & 255(0xff, float:3.57E-43)
+            byte r15 = (byte) r15
+            r19[r24] = r15
+            r29 = 11
+            int r0 = r0 >> 8
+            r0 = r0 & 255(0xff, float:3.57E-43)
+            byte r0 = (byte) r0
+            r19[r29] = r0
+            r30 = 12
+            r9 = r14 & 255(0xff, float:3.57E-43)
+            byte r9 = (byte) r9
+            r19[r30] = r9
+            r31 = 13
+            int r14 = r14 >> 8
+            r14 = r14 & 255(0xff, float:3.57E-43)
+            byte r14 = (byte) r14
+            r19[r31] = r14
+            r32 = r7
+            r33 = 18
+            r7 = r4 & 255(0xff, float:3.57E-43)
+            byte r7 = (byte) r7
+            r19[r33] = r7
+            r33 = 19
+            int r1 = r4 >> 8
+            r1 = r1 & 255(0xff, float:3.57E-43)
+            byte r1 = (byte) r1
+            r19[r33] = r1
+            r33 = 20
+            r34 = r12
+            int r12 = r4 >> 16
+            r12 = r12 & 255(0xff, float:3.57E-43)
+            byte r12 = (byte) r12
+            r19[r33] = r12
+            r33 = 21
+            r35 = r8
+            int r8 = r4 >> 24
+            r8 = r8 & 255(0xff, float:3.57E-43)
+            byte r8 = (byte) r8
+            r19[r33] = r8
+            r33 = 22
+            r19[r33] = r7
+            r33 = 23
+            r19[r33] = r1
+            r33 = 24
+            r19[r33] = r12
+            r36 = 25
+            r19[r36] = r8
+            r36 = 26
+            r37 = r2
+            r2 = r11 & 255(0xff, float:3.57E-43)
+            byte r2 = (byte) r2
+            r19[r36] = r2
+            r36 = 27
+            r38 = r10
+            int r10 = r11 >> 8
+            r10 = r10 & 255(0xff, float:3.57E-43)
+            byte r10 = (byte) r10
+            r19[r36] = r10
+            r36 = r13
+            int r13 = r11 + 30
+            r39 = r10
+            r10 = 4096(0x1000, float:5.74E-42)
+            int r10 = r10 - r13
+            r13 = 28
+            r18 = r2
+            r2 = r10 & 255(0xff, float:3.57E-43)
+            byte r2 = (byte) r2
+            r19[r13] = r2
+            r2 = 29
+            int r10 = r10 >> 8
+            r10 = r10 & 255(0xff, float:3.57E-43)
+            byte r10 = (byte) r10
+            r19[r2] = r10
+            r2 = 30
+            r10 = r19
+            r13 = 0
+            java.lang.System.arraycopy(r6, r13, r10, r2, r11)
+            int r2 = r2 + r11
+            r19 = r6
+        L_0x0285:
+            int r6 = r10.length
+            if (r2 >= r6) goto L_0x028d
+            r10[r2] = r13
+            int r2 = r2 + 1
+            goto L_0x0285
+        L_0x028d:
+            r5.write(r10, r13, r2)     // Catch:{ Throwable -> 0x0292 }
+            r6 = 1
+            goto L_0x0293
+        L_0x0292:
+            r6 = 0
+        L_0x0293:
+            int r2 = r2 + r13
+            r13 = 65536(0x10000, float:9.18355E-41)
+            int r13 = java.lang.Math.min(r4, r13)
+            r40 = r2
+            byte[] r2 = new byte[r13]
+            r41 = r4
+            java.util.zip.CRC32 r4 = new java.util.zip.CRC32
+            r4.<init>()
+            r51 = r40
+            r40 = r6
+            r6 = r41
+            r41 = r51
+        L_0x02ad:
+            if (r3 == 0) goto L_0x02c9
+            r42 = r11
+            int r11 = java.lang.Math.min(r13, r6)     // Catch:{ Throwable -> 0x02c2 }
+            r44 = r8
+            r43 = r13
+            r13 = 0
+            int r8 = r3.read(r2, r13, r11)     // Catch:{ Throwable -> 0x02c7 }
+            if (r8 != r11) goto L_0x02c7
+            r8 = 1
+            goto L_0x02d1
+        L_0x02c2:
+            r44 = r8
+            r43 = r13
+            r11 = 0
+        L_0x02c7:
+            r8 = 0
+            goto L_0x02d1
+        L_0x02c9:
+            r44 = r8
+            r42 = r11
+            r43 = r13
+            r8 = 0
+            r11 = 0
+        L_0x02d1:
+            if (r8 != 0) goto L_0x02d8
+            r2 = r41
+            r40 = 0
+            goto L_0x02ed
+        L_0x02d8:
+            if (r40 == 0) goto L_0x02e2
+            r8 = 0
+            r5.write(r2, r8, r11)     // Catch:{ Throwable -> 0x02df }
+            goto L_0x02e3
+        L_0x02df:
+            r40 = 0
+            goto L_0x02e3
+        L_0x02e2:
+            r8 = 0
+        L_0x02e3:
+            r4.update(r2, r8, r11)
+            int r41 = r41 + r11
+            int r6 = r6 - r11
+            if (r6 > 0) goto L_0x0472
+            r2 = r41
+        L_0x02ed:
+            long r45 = r4.getValue()
+            r47 = 255(0xff, double:1.26E-321)
+            r8 = r5
+            long r4 = r45 & r47
+            int r5 = (int) r4
+            byte r4 = (byte) r5
+            r5 = 14
+            r10[r5] = r4
+            r5 = 15
+            long r47 = r45 >> r27
+            r49 = 255(0xff, double:1.26E-321)
+            r11 = r7
+            long r6 = r47 & r49
+            int r7 = (int) r6
+            byte r6 = (byte) r7
+            r10[r5] = r6
+            r7 = 16
+            long r47 = r45 >> r7
+            r43 = r6
+            long r5 = r47 & r49
+            int r6 = (int) r5
+            byte r5 = (byte) r6
+            r10[r7] = r5
+            r6 = 17
+            long r45 = r45 >> r33
+            r47 = 255(0xff, double:1.26E-321)
+            r49 = r14
+            long r13 = r45 & r47
+            int r14 = (int) r13
+            byte r13 = (byte) r14
+            r10[r6] = r13
+            r45 = r11
+            r14 = r12
+            r6 = 14
+            long r11 = (long) r6
+            r8.seek(r11)     // Catch:{ Throwable -> 0x0335 }
+            r11 = 4
+            r8.write(r10, r6, r11)     // Catch:{ Throwable -> 0x0335 }
+            long r11 = (long) r2     // Catch:{ Throwable -> 0x0335 }
+            r8.seek(r11)     // Catch:{ Throwable -> 0x0335 }
+            goto L_0x0337
+        L_0x0335:
+            r40 = 0
+        L_0x0337:
+            r6 = 80
+            r11 = 0
+            r10[r11] = r6
+            r6 = 75
+            r12 = 1
+            r10[r12] = r6
+            r6 = 2
+            r10[r6] = r12
+            r12 = 3
+            r10[r12] = r6
+            r6 = 4
+            r10[r6] = r24
+            r6 = 5
+            r10[r6] = r11
+            r10[r25] = r24
+            r10[r26] = r11
+            r10[r27] = r11
+            r10[r28] = r11
+            r10[r24] = r11
+            r10[r29] = r11
+            r10[r30] = r15
+            r10[r31] = r0
+            r0 = 14
+            r10[r0] = r9
+            r0 = 15
+            r10[r0] = r49
+            r10[r7] = r4
+            r0 = 17
+            r10[r0] = r43
+            r0 = 18
+            r10[r0] = r5
+            r0 = 19
+            r10[r0] = r13
+            r0 = 20
+            r10[r0] = r45
+            r0 = 21
+            r10[r0] = r1
+            r0 = 22
+            r10[r0] = r14
+            r0 = 23
+            r10[r0] = r44
+            r10[r33] = r45
+            r0 = 25
+            r10[r0] = r1
+            r0 = 26
+            r10[r0] = r14
+            r0 = 27
+            r10[r0] = r44
+            r0 = 28
+            r10[r0] = r18
+            r0 = 29
+            r10[r0] = r39
+            r0 = 30
+            r1 = 0
+            r10[r0] = r1
+            r5 = 31
+            r10[r5] = r1
+            r0 = 32
+            r10[r0] = r1
+            r0 = 33
+            r10[r0] = r1
+            r0 = 34
+            r10[r0] = r1
+            r0 = 35
+            r10[r0] = r1
+            r0 = 36
+            byte r4 = (byte) r1
+            r10[r0] = r4
+            r0 = 37
+            byte r5 = (byte) r1
+            r10[r0] = r5
+            r0 = 38
+            r10[r0] = r4
+            r0 = 39
+            r10[r0] = r5
+            r0 = 40
+            byte r4 = (byte) r1
+            r10[r0] = r4
+            r0 = 41
+            byte r4 = (byte) r1
+            r10[r0] = r4
+            r0 = 42
+            r10[r0] = r1
+            r0 = 43
+            r10[r0] = r1
+            r0 = 44
+            r10[r0] = r1
+            r0 = 45
+            r10[r0] = r1
+            r0 = 46
+            r11 = r19
+            r12 = r42
+            java.lang.System.arraycopy(r11, r1, r10, r0, r12)
+            int r0 = r0 + r12
+            if (r40 == 0) goto L_0x03f0
+            r8.write(r10, r1, r0)     // Catch:{ Throwable -> 0x03ee }
+            goto L_0x03f0
+        L_0x03ee:
+            r4 = 0
+            goto L_0x03f2
+        L_0x03f0:
+            r4 = r40
+        L_0x03f2:
+            int r0 = r0 + r1
+            r5 = 80
+            r10[r1] = r5
+            r5 = 75
+            r6 = 1
+            r10[r6] = r5
+            r5 = 2
+            r13 = 5
+            r10[r5] = r13
+            r5 = 6
+            r16 = 3
+            r10[r16] = r5
+            r19 = 4
+            r10[r19] = r1
+            r10[r13] = r1
+            r10[r25] = r1
+            r10[r26] = r1
+            r10[r27] = r6
+            r10[r28] = r1
+            r10[r24] = r6
+            r10[r29] = r1
+            r1 = r0 & 255(0xff, float:3.57E-43)
+            byte r1 = (byte) r1
+            r10[r30] = r1
+            int r1 = r0 >> 8
+            r1 = r1 & 255(0xff, float:3.57E-43)
+            byte r1 = (byte) r1
+            r10[r31] = r1
+            int r1 = r0 >> 16
+            r1 = r1 & 255(0xff, float:3.57E-43)
+            byte r1 = (byte) r1
+            r22 = 14
+            r10[r22] = r1
+            r1 = 15
+            int r0 = r0 >> 24
+            r0 = r0 & 255(0xff, float:3.57E-43)
+            byte r0 = (byte) r0
+            r10[r1] = r0
+            r0 = r2 & 255(0xff, float:3.57E-43)
+            byte r0 = (byte) r0
+            r10[r7] = r0
+            r0 = 17
+            int r1 = r2 >> 8
+            r1 = r1 & 255(0xff, float:3.57E-43)
+            byte r1 = (byte) r1
+            r10[r0] = r1
+            r0 = 18
+            int r1 = r2 >> 16
+            r1 = r1 & 255(0xff, float:3.57E-43)
+            byte r1 = (byte) r1
+            r10[r0] = r1
+            r0 = 19
+            int r1 = r2 >> 24
+            r1 = r1 & 255(0xff, float:3.57E-43)
+            byte r1 = (byte) r1
+            r10[r0] = r1
+            r0 = 20
+            r1 = 0
+            r10[r0] = r1
+            r0 = 21
+            r10[r0] = r1
+            r0 = 22
+            if (r4 == 0) goto L_0x0467
+            r8.write(r10, r1, r0)     // Catch:{ Throwable -> 0x0466 }
+            goto L_0x0467
+        L_0x0466:
+            r4 = 0
+        L_0x0467:
+            r8.close()     // Catch:{ Throwable -> 0x046a }
+        L_0x046a:
+            if (r4 != 0) goto L_0x046e
+            r4 = 0
+            goto L_0x0470
+        L_0x046e:
+            r4 = r23
+        L_0x0470:
+            r11 = r4
+            goto L_0x0490
+        L_0x0472:
+            r49 = r14
+            r11 = r19
+            r13 = 5
+            r16 = 3
+            r11 = r42
+            r13 = r43
+            r8 = r44
+            goto L_0x02ad
+        L_0x0481:
+            r37 = r2
+            r32 = r7
+            r35 = r8
+            r38 = r10
+            r34 = r12
+            r36 = r13
+            r16 = 3
+            r11 = 0
+        L_0x0490:
+            r3.close()     // Catch:{ Throwable -> 0x0493 }
+        L_0x0493:
+            r23 = r11
+            goto L_0x04a6
+        L_0x0496:
+            r37 = r2
+            r32 = r7
+            r35 = r8
+            r38 = r10
+            r23 = r11
+            r34 = r12
+            r36 = r13
+            r16 = 3
+        L_0x04a6:
+            if (r23 == 0) goto L_0x051d
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r0.<init>()
+            r1 = r36
+            r0.append(r1)
+            java.lang.String r1 = "!/"
+            r0.append(r1)
+            r1 = r38
+            r0.append(r1)
+            java.lang.String r1 = r0.toString()
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder     // Catch:{ Throwable -> 0x04e6 }
+            r0.<init>()     // Catch:{ Throwable -> 0x04e6 }
+            java.lang.String r2 = "Trying zip load path \""
+            r0.append(r2)     // Catch:{ Throwable -> 0x04e6 }
+            r0.append(r1)     // Catch:{ Throwable -> 0x04e6 }
+            r2 = r37
+            r0.append(r2)     // Catch:{ Throwable -> 0x04e2 }
+            java.lang.String r0 = r0.toString()     // Catch:{ Throwable -> 0x04e2 }
+            r3 = r35
+            android.util.Log.i(r3, r0)     // Catch:{ Throwable -> 0x04e0 }
+            java.lang.System.load(r1)     // Catch:{ Throwable -> 0x04e0 }
+            r1 = 1
+            goto L_0x0522
+        L_0x04e0:
+            r0 = move-exception
+            goto L_0x04eb
+        L_0x04e2:
+            r0 = move-exception
+            r3 = r35
+            goto L_0x04eb
+        L_0x04e6:
+            r0 = move-exception
+            r3 = r35
+            r2 = r37
+        L_0x04eb:
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder
+            r4.<init>()
+            java.lang.String r5 = "Exception during zip load: "
+            r4.append(r5)
+            java.lang.String r0 = r0.getMessage()
+            r4.append(r0)
+            java.lang.String r0 = r4.toString()
+            android.util.Log.i(r3, r0)
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r0.<init>()
+            java.lang.String r4 = "\tZip load of \""
+            r0.append(r4)
+            r0.append(r1)
+            java.lang.String r1 = "\" failed"
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            android.util.Log.i(r3, r0)
+            goto L_0x0521
+        L_0x051d:
+            r3 = r35
+            r2 = r37
+        L_0x0521:
+            r1 = 0
+        L_0x0522:
+            if (r1 != 0) goto L_0x0562
+            if (r34 != 0) goto L_0x0562
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder     // Catch:{ Throwable -> 0x0546 }
+            r0.<init>()     // Catch:{ Throwable -> 0x0546 }
+            java.lang.String r4 = "Trying plain module path \""
+            r0.append(r4)     // Catch:{ Throwable -> 0x0546 }
+            r4 = r52
+            r0.append(r4)     // Catch:{ Throwable -> 0x0544 }
+            r0.append(r2)     // Catch:{ Throwable -> 0x0544 }
+            java.lang.String r0 = r0.toString()     // Catch:{ Throwable -> 0x0544 }
+            android.util.Log.i(r3, r0)     // Catch:{ Throwable -> 0x0544 }
+            java.lang.System.load(r52)     // Catch:{ Throwable -> 0x0544 }
+            r1 = 1
+            goto L_0x0564
+        L_0x0544:
+            r0 = move-exception
+            goto L_0x0549
+        L_0x0546:
+            r0 = move-exception
+            r4 = r52
+        L_0x0549:
+            java.lang.StringBuilder r5 = new java.lang.StringBuilder
+            r5.<init>()
+            java.lang.String r6 = "Exception during plain load: "
+            r5.append(r6)
+            java.lang.String r0 = r0.getMessage()
+            r5.append(r0)
+            java.lang.String r0 = r5.toString()
+            android.util.Log.i(r3, r0)
+            goto L_0x0564
+        L_0x0562:
+            r4 = r52
+        L_0x0564:
+            if (r1 == 0) goto L_0x0581
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r0.<init>()
+            r5 = r32
+            r0.append(r5)
+            r0.append(r4)
+            java.lang.String r1 = "\" loaded"
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            android.util.Log.i(r3, r0)
+            r1 = 1
+            return r1
+        L_0x0581:
+            r5 = r32
+            goto L_0x05a7
+        L_0x0584:
+            r4 = r1
+            r5 = r7
+            r3 = r8
+            r16 = 3
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r0.<init>()
+            r0.append(r5)
+            r0.append(r4)
+            java.lang.String r1 = "\" does not exist"
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            android.util.Log.i(r3, r0)
+            goto L_0x05a6
+        L_0x05a1:
+            r4 = r1
+            r5 = r7
+            r3 = r8
+            r16 = 3
+        L_0x05a6:
+            r1 = 0
+        L_0x05a7:
+            if (r1 != 0) goto L_0x0666
+            java.lang.String r0 = "/"
+            int r0 = r4.lastIndexOf(r0)
+            r1 = 1
+            int r0 = r0 + r1
+            java.lang.String r1 = r4.substring(r0)
+            r6 = 0
+            r7 = 2
+        L_0x05b7:
+            if (r6 == r7) goto L_0x0666
+            if (r6 != 0) goto L_0x05bd
+            r0 = r1
+            goto L_0x05c1
+        L_0x05bd:
+            java.lang.String r0 = MakeNativeLibraryExtensionCompatible(r1)
+        L_0x05c1:
+            java.lang.String r8 = "lib"
+            boolean r8 = r0.startsWith(r8)
+            if (r8 == 0) goto L_0x05cb
+            r8 = 3
+            goto L_0x05cc
+        L_0x05cb:
+            r8 = 0
+        L_0x05cc:
+            int r9 = r0.length()
+            java.lang.String r10 = ".so"
+            boolean r10 = r0.endsWith(r10)
+            if (r10 == 0) goto L_0x05da
+            r10 = 3
+            goto L_0x05db
+        L_0x05da:
+            r10 = 0
+        L_0x05db:
+            int r9 = r9 - r10
+            java.lang.String r8 = r0.substring(r8, r9)
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder     // Catch:{ Throwable -> 0x0642 }
+            r0.<init>()     // Catch:{ Throwable -> 0x0642 }
+            java.lang.String r9 = "Trying search method with name \""
+            r0.append(r9)     // Catch:{ Throwable -> 0x0642 }
+            r0.append(r8)     // Catch:{ Throwable -> 0x0642 }
+            r0.append(r2)     // Catch:{ Throwable -> 0x0642 }
+            java.lang.String r0 = r0.toString()     // Catch:{ Throwable -> 0x0642 }
+            android.util.Log.i(r3, r0)     // Catch:{ Throwable -> 0x0642 }
+            java.io.File r0 = new java.io.File     // Catch:{ Throwable -> 0x0642 }
+            android.app.Application r9 = m_application     // Catch:{ Throwable -> 0x0642 }
+            android.content.Context r9 = r9.getApplicationContext()     // Catch:{ Throwable -> 0x0642 }
+            android.content.pm.ApplicationInfo r9 = r9.getApplicationInfo()     // Catch:{ Throwable -> 0x0642 }
+            java.lang.String r9 = r9.nativeLibraryDir     // Catch:{ Throwable -> 0x0642 }
+            java.lang.StringBuilder r10 = new java.lang.StringBuilder     // Catch:{ Throwable -> 0x0642 }
+            r10.<init>()     // Catch:{ Throwable -> 0x0642 }
+            java.lang.String r11 = "lib"
+            r10.append(r11)     // Catch:{ Throwable -> 0x0642 }
+            r10.append(r8)     // Catch:{ Throwable -> 0x0642 }
+            java.lang.String r11 = ".so"
+            r10.append(r11)     // Catch:{ Throwable -> 0x0642 }
+            java.lang.String r10 = r10.toString()     // Catch:{ Throwable -> 0x0642 }
+            r0.<init>(r9, r10)     // Catch:{ Throwable -> 0x0642 }
+            boolean r0 = r0.exists()     // Catch:{ Throwable -> 0x0642 }
+            if (r0 == 0) goto L_0x0640
+            java.lang.System.loadLibrary(r8)     // Catch:{ Throwable -> 0x0642 }
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder     // Catch:{ Throwable -> 0x0642 }
+            r0.<init>()     // Catch:{ Throwable -> 0x0642 }
+            r0.append(r5)     // Catch:{ Throwable -> 0x0642 }
+            r0.append(r4)     // Catch:{ Throwable -> 0x0642 }
+            java.lang.String r9 = "\" loaded"
+            r0.append(r9)     // Catch:{ Throwable -> 0x0642 }
+            java.lang.String r0 = r0.toString()     // Catch:{ Throwable -> 0x0642 }
+            android.util.Log.i(r3, r0)     // Catch:{ Throwable -> 0x0642 }
+            r9 = 1
+            return r9
+        L_0x0640:
+            r9 = 1
+            goto L_0x0662
+        L_0x0642:
+            r0 = move-exception
+            r9 = 1
+            java.lang.StringBuilder r10 = new java.lang.StringBuilder
+            r10.<init>()
+            r10.append(r5)
+            r10.append(r8)
+            java.lang.String r8 = "\" failed "
+            r10.append(r8)
+            java.lang.String r0 = r0.getMessage()
+            r10.append(r0)
+            java.lang.String r0 = r10.toString()
+            android.util.Log.i(r3, r0)
+        L_0x0662:
+            int r6 = r6 + 1
+            goto L_0x05b7
+        L_0x0666:
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r0.<init>()
+            r0.append(r5)
+            r0.append(r4)
+            java.lang.String r1 = "\" failed to load"
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            android.util.Log.i(r3, r0)
+            r1 = 0
+            return r1
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.JNI_Environment.LoadNativeLibrary(java.lang.String):boolean");
+    }
+
+    public static INativeLibraryPathResolver SetPathResolver(INativeLibraryPathResolver iNativeLibraryPathResolver) {
+        INativeLibraryPathResolver iNativeLibraryPathResolver2 = m_NativeLibraryPathResolver;
+        m_NativeLibraryPathResolver = iNativeLibraryPathResolver;
+        return iNativeLibraryPathResolver2;
+    }
+
+    public static void AddNativeLibrarySearchPath(String str) {
+        String[] strArr = m_sNativeLibrarySearchPaths;
+        int length = strArr != null ? strArr.length : 0;
+        m_sNativeLibrarySearchPaths = new String[(length + 1)];
+        for (int i = 0; i < length; i++) {
+            m_sNativeLibrarySearchPaths[i] = strArr[i];
+        }
+        m_sNativeLibrarySearchPaths[length] = str;
+    }
+
+    private static String MakeNativeLibraryExtensionCompatible(String str) {
+        String str2 = ".so";
+        if (str.endsWith(str2)) {
+            return str;
+        }
+        do {
+            str = str.substring(0, str.lastIndexOf(46));
+        } while (!str.endsWith(str2));
+        return str;
+    }
+
+    public static boolean FindAndLoadNativeLibrary(String str) {
+        boolean z;
+        String str2;
+        String str3;
+        String str4 = "/";
+        int indexOf = str.indexOf(str4);
+        int indexOf2 = str.indexOf("\\");
+        if (indexOf < 0 || (indexOf2 >= 0 && indexOf2 < indexOf)) {
+            indexOf = indexOf2;
+        }
+        if (indexOf >= 0) {
+            int indexOf3 = str.indexOf(":");
+            if (indexOf3 < 0 || indexOf3 != indexOf - 1) {
+                StringBuilder sb = new StringBuilder();
+                sb.append("Library \"");
+                sb.append(str);
+                sb.append("\" must either be unqualified or an absolute abstract \"game:/bin/$(PLATFORM_ARCH)/*****\" style path");
+                Log.i("com.valvesoftware.JNI_Environment.NativeSupport.FindAndLoadNativeLibrary", sb.toString());
+                return false;
+            }
+            z = true;
+        } else {
+            z = false;
+        }
+        if (z) {
+            INativeLibraryPathResolver iNativeLibraryPathResolver = m_NativeLibraryPathResolver;
+            str2 = iNativeLibraryPathResolver != null ? iNativeLibraryPathResolver.ResolveNativeLibraryPath(str) : str;
+        } else if (m_sNativeLibrarySearchPaths != null) {
+            str2 = null;
+            for (int i = 0; i != 2; i++) {
+                if (i == 0) {
+                    str3 = str;
+                } else {
+                    str3 = MakeNativeLibraryExtensionCompatible(str);
+                }
+                String str5 = str2;
+                for (int i2 = 0; i2 < m_sNativeLibrarySearchPaths.length; i2++) {
+                    INativeLibraryPathResolver iNativeLibraryPathResolver2 = m_NativeLibraryPathResolver;
+                    if (iNativeLibraryPathResolver2 != null) {
+                        StringBuilder sb2 = new StringBuilder();
+                        sb2.append(m_sNativeLibrarySearchPaths[i2]);
+                        sb2.append(str4);
+                        sb2.append(str3);
+                        str5 = iNativeLibraryPathResolver2.ResolveNativeLibraryPath(sb2.toString());
+                    } else {
+                        StringBuilder sb3 = new StringBuilder();
+                        sb3.append(m_sNativeLibrarySearchPaths[i2]);
+                        sb3.append(str4);
+                        sb3.append(str3);
+                        str5 = sb3.toString();
+                        if (!new File(str5).exists()) {
+                            str5 = null;
+                        }
+                    }
+                    if (str5 != null) {
+                        break;
+                    }
+                }
+                str2 = str5;
+                if (str2 != null) {
+                    break;
+                }
+            }
+        } else {
+            str2 = null;
+        }
+        if (str2 == null) {
+            String str6 = "search:/";
+            if (z) {
+                StringBuilder sb4 = new StringBuilder();
+                sb4.append(str6);
+                sb4.append(str.substring(str.lastIndexOf(str4) + 1));
+                str2 = sb4.toString();
+            } else {
+                StringBuilder sb5 = new StringBuilder();
+                sb5.append(str6);
+                sb5.append(str);
+                str2 = sb5.toString();
+            }
+        }
+        return LoadNativeLibrary(str2);
+    }
+
+    public static File GetPrivatePath() {
+        return m_sPrivatePath;
+    }
+
+    public static File GetPublicPath() {
+        return m_sPublicPath;
+    }
+
+    public static boolean LogMemory() {
+        ActivityManager activityManager = (ActivityManager) m_application.getBaseContext().getSystemService("activity");
+        MemoryInfo memoryInfo = new MemoryInfo();
+        activityManager.getMemoryInfo(memoryInfo);
+        StringBuilder sb = new StringBuilder();
+        sb.append("MI avail ");
+        sb.append(((double) memoryInfo.availMem) / 1048576.0d);
+        sb.append(", low Mem:");
+        sb.append(memoryInfo.lowMemory);
+        sb.append(", threshold: ");
+        sb.append(((double) memoryInfo.threshold) / 1048576.0d);
+        sb.append(", total");
+        sb.append(((double) memoryInfo.totalMem) / 1048576.0d);
+        sb.append("[end]");
+        Log.i("JBAPSYS", sb.toString());
+        Debug.MemoryInfo memoryInfo2 = new Debug.MemoryInfo();
+        Debug.getMemoryInfo(memoryInfo2);
+        float totalPss = ((float) memoryInfo2.getTotalPss()) / 1024.0f;
+        double nativeHeapAllocatedSize = ((double) Debug.getNativeHeapAllocatedSize()) / 1048576.0d;
+        double nativeHeapSize = ((double) Debug.getNativeHeapSize()) / 1048576.0d;
+        StringBuilder sb2 = new StringBuilder();
+        sb2.append("Memory log HeapMB=");
+        sb2.append(nativeHeapSize);
+        sb2.append(", HeapUsedMB=");
+        sb2.append(nativeHeapAllocatedSize);
+        sb2.append(", PSS MB=");
+        sb2.append(totalPss);
+        sb2.append(", dpss:");
+        sb2.append(memoryInfo2.dalvikPss);
+        sb2.append(", otherpss:");
+        sb2.append(memoryInfo2.otherPss);
+        sb2.append(", nativepss:");
+        sb2.append(memoryInfo2.nativePss);
+        Log.i("com.valvesoftware.JNI_Environment", sb2.toString());
+        return true;
+    }
+
+    public static boolean OpenURL(String str) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Opening URL: ");
+        sb.append(str);
+        Log.i(BuildConfig.APPLICATION_ID, sb.toString());
+        Intent intent = new Intent("android.intent.action.VIEW", Uri.parse(str));
+        intent.addFlags(268435456);
+        m_application.startActivity(intent);
+        return true;
+    }
+
+    public static long GetAvailableStorageBytes(File file) {
+        StatFs statFs = new StatFs(file.getPath());
+        return statFs.getBlockCountLong() * statFs.getBlockSizeLong();
+    }
+}

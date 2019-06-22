@@ -1,0 +1,50 @@
+//configure steam
+@steam.txt
+
+-noassert
+-dev
+
+// Clamp this for now?
+-scene_system_partitions 4
+
+// General memory housekeeping
+-shadowTargetSize 512
+//-deferTextureLoads
+//-nosound
+-maxtextureres 1024
+//-clientonly
+
+// general rendering
++r_deferred_additive_pass 0
++r_dota_force_forward 1
++r_morphing_enabled 0
++r_drawgameui 0
++r_drawvgui 0
++r_dota_allow_parallax_mapping 0
++r_dota_allow_wind_on_trees 0
+
+// Force medium precision as the default precision for fragment shaders (perf)
+-gl_force_medium_precision
+
+
+// force gl es 3.0
+//-gl_force_es30
+
+// throttling
++fps_max 30
+
+// physics
++cl_phys_timescale 0
+
+// Panorama
+//+@panorama_show_fps 1
+//+@panorama_show_fps_scale 3
+
+// dota specifics?
++r_ssao 0
++dota_portrait_animate 0
++dota_ambient_creatures 0
+
+// Console logging
+-consolelog
+-conrotate 3

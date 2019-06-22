@@ -1,0 +1,207 @@
+0123456789ABCDEF
+%02d:%02d:%02d
+%04d%02d%02d%02d%02d%02d
+13CCallbackBase
+13CCallbackImplILi16EE
+( @9(
+9CCallbackI12CCallbackMgr23SteamAPICallCompleted_tLb0EE
+9CCallbackI12CCallbackMgr23SteamAPICallCompleted_tLb1EE
++a@9?
+a@9*a
+Android clang version 5.0.300080  (based on LLVM 5.0.300080)
+__android_log_write
+atoi@@LIBC
+Breakpad_SteamMiniDumpInit
+Breakpad_SteamSetAppID
+Breakpad_SteamSetSteamID
+Breakpad_SteamWriteMiniDumpSetComment
+Breakpad_SteamWriteMiniDumpUsingExceptionInfoWithBuildId
+__bss_end__
+__bss_start
+__bss_start__
+Calling BreakpadMiniDumpSystemInit
+clientui.so
+close@@LIBC
+.comment
+com.valvesoftware.steam_api
+CreateInterface
+__cxa_atexit
+__cxa_atexit@@LIBC
+__cxa_begin_catch
+__cxa_end_catch
+__cxa_finalize
+__cxa_finalize@@LIBC
+__cxa_guard_acquire
+__cxa_guard_release
+__cxa_pure_virtual
+.data
+.data.rel.ro
+dlclose
+dlclose@@LIBC
+dlerror
+dlerror@@LIBC
+dlopen
+dlopen failed trying to load:
+dlopen@@LIBC
+dlsym
+dlsym@@LIBC
+.dynamic
+.dynstr
+.dynsym
+_edata
+.eh_frame
+.eh_frame_hdr
+Either launch the game from Steam, or put the file steam_appid.txt containing the correct appID in your game folder.
+__end__
+fclose
+fclose@@LIBC
+fgets
+fgets@@LIBC
+.fini_array
+fopen
+fopen@@LIBC
+Forcing breakpad minidump interfaces to load
+fprintf
+fprintf@@LIBC
+free@@LIBC
+fwrite
+fwrite@@LIBC
+gameoverlayrenderer.so
+GCC: (GNU) 4.9.x 20150123 (prerelease)
+getenv
+getenv@@LIBC
+GetHSteamPipe
+GetHSteamUser
+.gnu_debuglink
+.gnu.version
+.gnu.version_r
+g_pSteamClientGameServer
+__gxx_personality_v0
+.hash
+hBA9t"
+.init_array
+Ka@9+
+Ka@9k
+libandroid.so
+libaudio.so
+libc++_shared.so
+libc.so
+libdl.so
+liblog.so
+liboverride.so
+libsteam_api.so
+libsteam_api.so.dbg
+libsteamclient.so
+libsteam.so
+Looking up breakpad interfaces from steamclient
+malloc
+malloc@@LIBC
+memset
+memset@@LIBC
+.note.gnu.build-id
+open@@LIBC
+/proc/self/cmdline
+pthread_mutex_lock
+pthread_mutex_lock@@LIBC
+pthread_mutex_unlock
+pthread_mutex_unlock@@LIBC
+read@@LIBC
+.rela.dyn
+.rela.plt
+.rodata
+[S_API FAIL] SteamAPI_Init() failed; connect to global user failed.
+[S_API FAIL] SteamAPI_Init() failed; create pipe failed.
+[S_API FAIL] SteamAPI_Init() failed; no appID found.
+[S_API FAIL] SteamAPI_Init() failed; unable to locate interface factory in %s.
+[S_API FAIL] Tried to access Steam interface %s before SteamAPI_Init succeeded.
+[S_API] SteamAPI_Init(): Could not determine Steam client install directory.
+[S_API] SteamAPI_Init(): Loaded local '%s' OK.
+[S_API] SteamAPI_Init(): SteamAPI_IsSteamRunning() did not locate a running instance of Steam.
+%s%c%s
+setenv
+setenv@@LIBC
+Setting breakpad minidump AppID = %u
+__sF@@LIBC
+.shstrtab
+sscanf
+sscanf@@LIBC
+__stack_chk_fail
+__stack_chk_fail@@LIBC
+SteamAPI_GetHSteamPipe
+SteamAPI_GetHSteamUser
+SteamAPI_GetSteamInstallPath
+SteamAPI_Init
+SteamAPI_InitAnonymousUser
+SteamAPI_InitSafe
+SteamAPI_IsSteamRunning
+SteamAPI_RegisterCallback
+SteamAPI_RegisterCallResult
+SteamAPI_ReleaseCurrentThreadMemory
+SteamAPI_RestartAppIfNecessary
+SteamAPI_RunCallbacks
+SteamAPI_SetBreakpadAppID
+SteamAPI_SetMiniDumpComment
+SteamAPI_SetTryCatchCallbacks
+SteamAPI_Shutdown
+SteamAPI_UnregisterCallback
+SteamAPI_UnregisterCallResult
+SteamAPI_UseBreakpadCrashHandler
+SteamAPI_WriteMiniDump
+SteamAppId
+steam_appid.txt
+Steam_BGetCallback
+SteamClient
+SteamClient017
+SteamClient018
+steamconsole.so
+SteamController007
+Steam_FreeLastCallback
+SteamGameId
+SteamGameServer012
+SteamGameServer_BSecure
+SteamGameServer_GetHSteamPipe
+SteamGameServer_GetHSteamUser
+SteamGameServer_GetIPCCallCount
+SteamGameServer_GetSteamID
+SteamGameServer_InitSafe
+SteamGameServer_RunCallbacks
+SteamGameServer_Shutdown
+Steam_GetAPICallResult
+Steam_GetHSteamUserCurrent
+SteamInput001
+SteamInternal_ContextInit
+SteamInternal_CreateInterface
+SteamInternal_FindOrCreateGameServerInterface
+SteamInternal_FindOrCreateUserInterface
+SteamInternal_GameServer_Init
+Steam_RegisterInterfaceFuncs
+Steam_ReleaseThreadLocalMemory
+Steam_RunCallbacks
+steam://run/%u
+steam://run/%u//
+Steam_SetMinidumpSteamID:  Caching Steam ID:  %lld [API loaded %s]
+Steam_SetMinidumpSteamID:  Setting Steam ID:  %lld
+steamui.so
+SteamUser020
+SteamUtils009
+strlen
+strlen@@LIBC
+strncasecmp
+strncasecmp@@LIBC
+strncpy
+strncpy@@LIBC
+.strtab
+.symtab
+.text
+THa@9(
+Using breakpad crash handler
+.valvesig
+vsnprintf
+vsnprintf@@LIBC
+with error:
+_ZdlPv
+_Znwm
+_ZSt9terminatev
+_ZTVN10__cxxabiv117__class_type_infoE
+_ZTVN10__cxxabiv120__si_class_type_infoE
+_ZTVN10__cxxabiv121__vmi_class_type_infoE

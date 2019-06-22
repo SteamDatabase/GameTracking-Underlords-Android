@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2000132" android:versionName="1.0" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.valvesoftware.underlords" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <application android:theme="@style/Theme.NoTitleBar.Fullscreen" android:label="Underlords" android:icon="@mipmap/ic_launcher" android:name="com.valvesoftware.underlords.application" android:hasCode="true" android:hardwareAccelerated="true" android:appComponentFactory="android.support.v4.app.CoreComponentFactory">
+        <activity android:label="Underlords" android:name="com.valvesoftware.underlords.applauncher" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="store.steampowered.com" android:pathPrefix="/m/launchapp/1046930"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="Underlords" android:name="com.valvesoftware.underlords.appmain" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="com.valvesoftware.underlords.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+</manifest>

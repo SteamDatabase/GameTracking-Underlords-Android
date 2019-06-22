@@ -1,0 +1,318 @@
+"lang"
+{ 
+	"Language" "dutch" 
+	"Tokens" 
+	{
+		// ANTIMAGE
+		"dac_ability_antimage_mana_break"										"Mana Break"
+		"dac_ability_antimage_mana_break_Description"							"PASSIEF: De Antimagiër verbrandt per aanval {s:mana_per_hit} mana van de tegenstander en richt 50% van de verbrande mana als schade toe aan het doelwit."
+		"dac_ability_antimage_mana_break_Lore"									"De Antimagiër is voor mij gekomen... en ik ben er klaar voor. – <i>Turath, vluchteling uit het Tylerdomein</i>"
+
+		//QUEEN OF PAIN
+		"dac_ability_queenofpain_scream_of_pain"								"Pijnkreet"
+		"dac_ability_queenofpain_scream_of_pain_Description"					"De Koningin der pijn laat een doordringende schreeuw rondom haar los, die {s:damage} schade aan alle vijanden in een straal van {s:radius} cellen aanricht."
+		"dac_ability_queenofpain_scream_of_pain_Lore"							"Akasha mag dan geen goede vriendin zijn, maar ze helpt me graag als dat betekent dat ze later de baas over me mag spelen. – <i>Anessix, pragmatische demon</i>"
+
+		//LINA
+		"dac_ability_lina_laguna_blade"											"Lagunazwaard"
+		"dac_ability_lina_laguna_blade_Description"								"Lina vuurt een bliksemschicht af en richt {s:damage} schade aan aan een enkele eenheid."
+		"dac_ability_lina_laguna_blade_Lore"									"Het was niet zo moeilijk om Lina naar Witspits te krijgen, aangezien we elkaars werk bewonderen. – <i>Hobgen, professioneel brandstichter</i>"
+
+		//FURION
+		"dac_ability_natures_prophet_summon_tree"								"Roep der natuur"
+		"dac_ability_natures_prophet_summon_tree_Description"					"De Natuurprofeet bezweert een treant aan de rand van het bord. Deze treant wordt als druïde beschouwd."
+		"dac_ability_natures_prophet_summon_tree_Lore"							"Enno heeft zich tot zijn vriendjes uit het bos gewend... Dit kan een probleem worden. – <i>O'nia, verbannen handelaar uit Revtel</i>"
+
+		//WINDRUNNER
+		"dac_ability_windrunner_powershot"										"Krachtschot"
+		"dac_ability_windrunner_powershot_Description"							"Windranger charges her bow for up to {s:castPoint} seconds for a single powerful shot, dealing up to {s:powershot_damage} damage. For each enemy that Powershot hits, its damage is reduced by {s:damage_reduction}%."
+		"dac_ability_windrunner_powershot_Lore"									"Tijdens mijn reizen heb ik veel vrienden gemaakt die nog bij me in het krijt staan. – <i>Wren, wereldreiziger</i>"
+
+		//WITCHDOCTOR
+		"dac_ability_witch_doctor_paralyzing_cask"								"Verlammende dosis"
+		"dac_ability_witch_doctor_paralyzing_cask_Description"					"De Medicijnman gooit een vat verlammend poeder dat {s:bounces} keer tussen vijandelijke eenheden springt en deze verlamt en {s:damage} schade aanricht."
+		"dac_ability_witch_doctor_paralyzing_cask_Lore"							"Ik zie je graag aan het werk, Doc... – <i>Hobgen, ondeugende fee</i>"
+
+		//JUGGERNAUT
+		"dac_ability_juggernaut_blade_fury"										"Strijdwoede"
+		"dac_ability_juggernaut_blade_fury_Description"							"De Kolos draait rond met zijn zwaard, waardoor hij immuun wordt voor magie en {s:duration} seconden lang {s:damage} schade per seconde aan vijandelijke eenheden in een straal van {s:radius} cellen aanricht."
+		"dac_ability_juggernaut_blade_fury_Lore"								"Yurnero is niet zomaar een strijder. Hij is een kolos. Als we hem aan onze zijde krijgen, dan stapelen de lijken zich op. – <i>Grek bekijkt alles opties</i>"
+
+		//SANDKING
+		"dac_ability_sandking_burrowstrike"										"Ondergrondse aanval"
+		"dac_ability_sandking_burrowstrike_Description"							"De Zandkoning graaft zich in onder de grond en schiet vooruit, waarbij hij {s:damage} schade bij vijanden aanricht en ze {s:stun_duration} seconden verlamt.<br><br>Past een lading van 'Bijtende finale' toe op alle geraakte vijanden.<br><br>Bijtende finale<br><br>PASSIEF: Wanneer de Zandkoning een vijand aanvalt, vermindert hij de aanvalssnelheid van zijn doelwit 3 seconden. Als een doelwit doodgaat terwijl Bijtende finale actief is, explodeert deze, waarbij het zijn bondgenoten in een straal van 1 cel schade aanricht."
+		"dac_ability_sandking_burrowstrike_Lore"								"Ons tunnelnetwerk heeft veel werk gekost, dus we kunnen de Zandkoning alles niet zomaar laten vernietigen. – <i>Jull, drankbaron</i>"
+
+		//SHADOW FRIEND
+		"dac_ability_shadow_fiend_requiem"										"Requiem der zielen"
+		"dac_ability_shadow_fiend_requiem_Description"							"De Schaduwduivel stuurt de zielen van de vervloekten en laat demonische energie rond hem heen los, waarbij hij {s:damage} schade aan alle getroffen vijanden aanricht."
+		"dac_ability_shadow_fiend_requiem_Lore"									"Het Hof van Ristul en ik hebben een... overeenkomst. – <i>Anessix, aardgebonden demon</i>"
+
+		//PHANTOM ASSASSIN
+		"dac_ability_phantom_assassin_coup_de_grace"							"Genadeklap"
+		"dac_ability_phantom_assassin_coup_de_grace_Description"				"PASSIEF: De Fantoommoordenaar heeft een kans van {s:crit_chance}% om een verwoestende kritieke treffer van {s:crit_bonus}% bij vijandelijke eenheden te veroorzaken."
+		"dac_ability_phantom_assassin_coup_de_grace_Lore"						"Ze heeft Kwerthias vermoord. Waarom zou ik niet aannemen dat ze ook achter mij aankomt? – <i>O'nia, paranoïde handelaar</i>"
+
+		//DROW RANGER
+		"dac_ability_drow_ranger_trueshot_aura"									"Precisieaura"
+		"dac_ability_drow_ranger_trueshot_aura_Description"						"PASSIVE: Drow Ranger adds a {s:bonus}% bonus to attack speed to all allies {s:range} cell away."
+		"dac_ability_drow_ranger_trueshot_aura_Lore"							"Traxex. Jij en ik gaan de top bereiken. Geloof me maar. – <i>Grek, kwakzalver</i>"
+
+		//MORPHLING
+		"dac_ability_morphling_waveform"										"Golfvorm"
+		"dac_ability_morphling_waveform_Description"							"Morphling dissolves into liquid and surges forward, damaging enemy units in his path for {s:damage} damage.<br><br>Morphling is invulnerable during Waveform."
+		"dac_ability_morphling_waveform_Lore"									"Turath's ability to court favor with the likes of Morphling is...troubling. - <i>Quiet, Clockwork Conspirator</i>"
+
+		//AXE
+		"dac_ability_axe_berserkers_call"										"Berserkersroep"
+		"dac_ability_axe_berserkers_call_Description"							"Axe taunts enemy units {s:radius} cell away, forcing them to attack him.  While Berserker’s Call is active, Axe gains {s:bonus_armor} bonus armor."
+		"dac_ability_axe_berserkers_call_Lore"									"Getting Axe's help is easy... all you need is beer and the promise of a good story he'll be able to tell. - <i>Wren, Rallying Rebel</i>" 
+
+		//RAZOR
+		"dac_ability_razor_plasma_field"										"Plasmaveld"
+		"dac_ability_razor_plasma_field_Description"							"Razor laat een ringvormige plasmagolf los die in kracht groeit naarmate deze zich uitbreidt en zich vervolgens weer terugtrekt. Vijandelijke eenheden in een straal van {s:radius} cellen worden vertraagd en ontvangen maximaal {s:damage_max} schade.<br><br>De schade en vertraging nemen toe met de afstand tot Razor.<br><br>Het plasmaveld kan eenheden twee keer raken."
+		"dac_ability_razor_plasma_field_Lore"									"Als je denkt dat hij in de straten van Witspits angstaanjagend is, zou je eens moeten zien wat hij in het Smalle Labyrint doet. – <i>Anessix, sportfan</i>"
+
+		//CRYSTAL MAIDEN
+		"dac_ability_crystal_maiden_brilliance_aura"							"Mystieke aura"
+		"dac_ability_crystal_maiden_brilliance_aura_Description"				"PASSIVE: Every {s:interval} seconds, Crystal Maiden grants {s:mana_regen} mana to all friendly units."
+		"dac_ability_crystal_maiden_brilliance_aura_Lore"						"Zoek uit of ze hier voor mij of voor Turath is. – <i>Jull, smokkelaar uit IJswrak</i>"
+
+		//KUNKKA
+		"dac_ability_kunkka_ghostship"											"Spookschip"
+		"dac_ability_kunkka_ghostship_Description"								"Kunkka roept een spookschip op dat zich een weg baant door het gevecht voordat het uit elkaar spat, waarbij het {s:ability_damage} schade aanricht aan alle vijanden in een straal van {s:ghostship_crash_cells} cellen rond het wrak en ze {s:stun_duration} seconden verlamt."
+		"dac_ability_kunkka_ghostship_Lore"										"Mama Eeb had veel vrienden... Kunkka wil antwoorden, net als ik. – <i>Wren, wraakzuchtige dochter</i>"
+
+		//TINY
+		"dac_ability_tiny_toss"													"Worp"
+		"dac_ability_tiny_toss_Description"										"Tiny pakt een willekeurige nabije vijand op en gooit deze naar het verste vijandelijke doelwit.<br><br>Bij impact richt het {s:damage} schade aan aan alle vijanden in een straal van {s:damage_radius} en verlamt het ze {s:stun_duration} seconden."
+		"dac_ability_tiny_toss_Lore"											"Enno heeft blijkbaar wat spierkracht ontdekt. – <i>Grek staat voor een groot probleem</i>"
+
+		//PUCK
+		"dac_ability_puck_illusory_orb"											"Illusiebol"
+		"dac_ability_puck_illusory_orb_Description"								"Puck vuurt een magische bol af die in een recht pad zweeft en daarbij {s:damage} schade aanricht aan vijandelijke eenheden."
+		"dac_ability_puck_illusory_orb_Lore"									"Laat je niet door z'n uiterlijk misleiden. Puck is een etterbakje. – <i>Hobgen spreekt wijze woorden</i>"
+
+		//CLOCKWERK
+		"dac_ability_clockwerk_battery_assault"									"Batterijaanval"
+		"dac_ability_clockwerk_battery_assault_Description"						"Het Uurwerk vuurt gedurende {s:duration} seconden met hoge kracht schroot af op willekeurige vijandelijke eenheden in een straal van {s:radius_in_cells}, wat {s:damage} magische schade veroorzaakt en kort verlamt."
+		"dac_ability_clockwerk_battery_assault_Lore"							"De Messingen Heraut zou je walgelijk noemen, maar ik vind je best slim, kleine Keen. – <i>Quiet, ketterautomaat</i>"
+
+		//LICH
+		"dac_ability_lich_chain_frost"											"Kettingvorst"
+		"dac_ability_lich_chain_frost_Description"								"De Zielenzuiger laat een bal van vorst los die maximaal {s:jumps} keer tussen nabije vijandelijke eenheden springt en daarbij hun aanvals- en bewegingssnelheid {s:slow_duration} seconden met {s:slow_value}% vertraagt en {s:damage} per treffer aanricht."
+		"dac_ability_lich_chain_frost_Lore"										"Wij kunnen elkaar helpen, Zielenzuiger. – <i>Turath sluit een pact met de duivel</i>"
+
+		//TIDEHUNTER
+		"dac_ability_tidehunter_ravage"											"Verwoesting"
+		"dac_ability_tidehunter_ravage_Description"								"De Getijdenjager slaat op de grond, waardoor er in alle richtingen tentakels uitbreken die bij alle vijandelijke eenheden in een straal van {s:cells} cellen {s:damage} schade aanrichten en ze {s:duration} seconden verlammen."
+		"dac_ability_tidehunter_ravage_Lore"									"Kunkka, ik vond je leuker toen je niet door een Leviathan werd opgejaagd. – <i>Wren, schijnvriend</i>"
+
+		//SHADOWSHAMAN
+		"dac_ability_shadow_shaman_voodoo"										"Beheksing"
+		"dac_ability_shadow_shaman_voodoo_Description"							"De Schaduwsjamaan transformeert een vijandelijke eenheid in een hulpeloos beest, waardoor deze {s:duration} seconden niet kan aanvallen en geen vaardigheden kan gebruiken."
+		"dac_ability_shadow_shaman_voodoo_Lore"									"Dat is me pas een show! – <i>Grek bewijst professionele beleefdheid</i>"
+
+		//ENIGMA
+		"dac_ability_enigma_midnight_pulse"										"Middernachtspuls"
+		"dac_ability_enigma_midnight_pulse_Description"							"Enigma verhult een gebied in een straal van {s:radius} cellen rond het doelwit gedurende {s:duration} seconden in donkere resonantie, die {s:damage_percent}% van de maximale gezondheid van een vijand als schade aanricht."
+		"dac_ability_enigma_midnight_pulse_Lore"								"Er zijn dingen in deze wereld die je niet kunt beheersen. – <i>Turath, krankzinnige magiër</i>"
+
+		//TINKER
+		"dac_ability_tinker_heat_seeking_missile"								"Hittezoekende raket"
+		"dac_ability_tinker_heat_seeking_missile_Description"					"De Knutselaar vuurt een salvo raketten af op {s:targets} willekeurige vijanden die {s:damage_per_missile} schade aanrichten."
+		"dac_ability_tinker_heat_seeking_missile_Lore"							"Het Gezelschap van Gelijkgestemde Keens wordt nog een probleem als we er niets aan doen. – <i>O'nia probeert een verenigd front te vormen</i>"
+
+		//SNIPER
+		"dac_ability_sniper_assassinate"										"Genadeschot"
+		"dac_ability_sniper_assassinate_Description"							"De Sluipschutter focust zich {s:castPoint} seconden op een vijandelijke eenheid en vuurt daarna een verwoestend schot af dat {s:damage} schade aanricht en het doelwit kort verlamt."
+		"dac_ability_sniper_assassinate_Lore"									"Je moet weten dat ik ooit een Keen mijn show liet openen. Prachtig voor het publiek, maar wat minder voor de aansprakelijkheidsverzekering. – <i>Grek, gericht op de nettowinst</i>"
+
+		//NECROLYTE
+		"dac_ability_necrophos_death_pulse"										"Doodspuls"
+		"dac_ability_necrophos_death_pulse_Description"							"Necrofos laat een golf des doods om zich heen los, die vijandelijke en bevriende eenheden in een straal van {s:radius} cellen beïnvloedt.<br><br>De doodspuls richt {s:damage} schade aan aan vijanden en geneest bondgenoten met {s:heal}."
+		"dac_ability_necrophos_death_pulse_Lore"								"Kom op, Necrofos, er is vast iets dat je wilt hebben... – <i>Anessix, gladde duivel</i>"
+
+		//SLARDAR
+		"dac_ability_slardar_amplify_damage"									"Bijtende nevel"
+		"dac_ability_slardar_amplify_damage_Description"						"Slardar vermindert vijandelijk pantser {s:duration} seconden met {s:armor_reduction}."
+		"dac_ability_slardar_amplify_damage_Lore"								"Zelfs met Slark kon ik zakendoen, dus dan kunnen we het vast wel met elkaar eens worden. – <i>Jull, amateurwijnkenner</i>"
+
+		//BEASTMASTER
+		"dac_ability_beastmaster_wild_axes"										"Wilde bijlen"
+		"dac_ability_beastmaster_wild_axes_Description"							"De Beestenheer gooit zijn bijlen weg en roept ze vervolgens weer terug. Hierbij snijden ze door vijandelijke eenheden op hun pad en richten ze {s:axe_damage} schade aan.<br><br>Elke bijl kan een vijand eenmaal raken en versterkt daaropvolgende schade van de Beestenheer met {s:damage_amp}%."
+		"dac_ability_beastmaster_wild_axes_Lore"								"Hoeveel van die bomenknuffelaars springen er nog voor dat onderdeurtje in de bres? – <i>Grek klaagt over Enno</i>"
+
+		//VENOMANCER
+		"dac_ability_venomancer_plague_ward"									"Pestwachter"
+		"dac_ability_venomancer_plague_ward_Description"						"Venomancer summons a Plague Ward to fight alongside him."
+		"dac_ability_venomancer_plague_ward_Lore"								"Je creaties zijn werkelijk prachtig. Laat me je toch met je tuin helpen... – <i>Turath leert dat je met vleierij alles bereikt</i>"
+
+		//TEMPLAR ASSASSIN
+		"dac_ability_templar_assassin_refraction"								"Breking"
+		"dac_ability_templar_assassin_refraction_Description"					"De Tempelmoordenaar wordt ongrijpbaar, waarbij ze schade ontwijkt en {s:bonus_damage}% meer schade aanricht.<br><br>De effecten staan los van elkaar en hebben elk {s:instances} instanties."
+		"dac_ability_templar_assassin_refraction_Lore"							"Als je me helpt is je schuld vereffend. – <i>Wren neemt alle hulp aan die ze kan krijgen</i>"
+		
+		//VIPER
+		"dac_ability_viper_viper_strike"										"Adderaanval"
+		"dac_ability_viper_viper_strike_Description"							"Het zure gif van Viper vertraagt de bewegings- en aanvalssnelheid van een vijandelijke eenheid met {s:bonus_attack_speed}% en richt {s:damage} gifschade over tijd aan.<br><br>Het vertragende effect neemt met de duur van het gif af."
+		"dac_ability_viper_viper_strike_Lore"									"We zijn niet zo verschillend... Ik weet ook hoe het is om een slaaf te zijn. – <i>Quiet, samenzwerende automaat</i>"
+
+		//LUNA
+		"dac_ability_luna_moon_glaive"											"Maanmessen"
+		"dac_ability_luna_moon_glaive_Description"								"PASSIEF: Luna's messen springen tussen vijanden in een straal van {s:range} cellen.<br><br>Messen richten per sprong {s:damage_reduction_percent}% minder schade aan."
+		"dac_ability_luna_moon_glaive_Lore"										"Ik snap de helft van wat je zegt niet, maar ik vind het leuk hoe je die dingen gooit. – <i>Grek, mensenmens</i>"
+
+		//DRAGON KNIGHT
+		"dac_ability_dragon_knight_elder_dragon_form"							"Oerdraakvorm"
+		"dac_ability_dragon_knight_elder_dragon_form_Description"				"De Drakenridder neemt de vorm aan van een van de drie krachtige oerdraken, waardoor zijn bewegingssnelheid met {s:bonus_movement_speed}% toeneemt en hij nieuwe krachten krijgt.<br><br>Groene draak:\nAanvallen richten {s:corrosive_breath_duration} seconden lang {s:corrosive_breath_damage} gifschade per seconde aan.<br><br>Rode draak:\nAanvallen richten {s:splash_damage_percent}% schade aan bij vijandelijke eenheden in een straal van {s:splash_radius} cellen rond zijn doelwit en passen het gifeffect toe.<br><br>Blauwe draak:\nVerlaagt de bewegings- en aanvalssnelheid van vijandelijke eenheden {s:frost_duration} seconden lang in een straal van {s:frost_aoe} cellen rond zijn doelwit met {s:frost_bonus_movement_speed}% en {s:frost_bonus_attack_speed}% en past het gifeffect toe."
+		"dac_ability_dragon_knight_elder_dragon_form_Lore"						"Kaden sprak vol lof over je. Laten we hopen dat het welverdiend is. – <i>Wren, vriendin van de Drakenvesting</i>"
+
+		//ENCHANTRESS
+		"dac_ability_enchantress_natures_attendants"							"Hoeders der natuur"
+		"dac_ability_enchantress_natures_attendants_Description"				"De Tovenares roept een zwerm van {s:wisp_count} schepseltjes op die alle bondgenoten in een straal van {s:radius} cellen geneest. <br><br>Gedurende {s:duration} seconden genezen bondgenoten elke {s:heal_interval} seconden {s:heal} gezondheid."
+		"dac_ability_enchantress_natures_attendants_Lore"						"Ze houdt het nog geen dag uit in Witspits. Geen. Dag. – <i>Hobgen onderschat zijn vijand</i>"
+
+		//BOUNTY HUNTER
+		"dac_ability_bounty_hunter_shuriken_toss"								"Shurikenworp"
+		"dac_ability_bounty_hunter_shuriken_toss_Description"					"De Premiejager gooit een dodelijke werpster richting een vijandelijke eenheid, die {s:damage} schade aanricht en het doelwit kort verlamt."
+		"dac_ability_bounty_hunter_shuriken_toss_Lore"							"Zolang je genoeg geld hebt, vertrouw je de man wiens loyaliteit te koop is. – <i>O'nia, twijfelachtige wijsheid</i>"
+
+		//BATRIDER
+		"dac_ability_batrider_sticky_napalm"									"Kleverige napalm"
+		"dac_ability_batrider_sticky_napalm_Description"						"De Vleerrijder gooit kleverige olie op de grond, waarbij hij het gebied in een straal van {s:radius} cellen rond het doelwit bedekt. De olie voegt {s:damage} schade per lading toe aan de aanvallen van de Vleerrijder en vertraagt de bewegings- en aanvalssnelheid van vijanden met {s:movement_speed_pct}%.<br><br>Elke keer dat Kleverige napalm opnieuw wordt gebruikt, nemen de schade en vertraging toe, tot maximaal 10 ladingen."
+		"dac_ability_batrider_sticky_napalm_Lore"								"Ik houd van die vent. IK HOUD VAN HEM! – <i>Hobgen, pyromaan</i>"
+
+		//DOOM BRINGER
+		"dac_ability_doom_bringer_doom"											"Verderf"
+		"dac_ability_doom_bringer_doom_Description"								"De Verderver spreekt een krachtige vloek uit die voorkomt dat een vijandelijke held spreuken of voorwerpen kan gebruiken en {s:damage} schade per seconde aanricht.<br><br>Duurt {s:duration} seconden."
+		"dac_ability_doom_bringer_doom_Lore"									"Ik sluit liever dealtjes met metaforische demonen... – <i>O'nia spreekt haar mening uit over de bondgenoten van Anessix</i>"
+
+		//GYROCOPTER
+		"dac_ability_gyrocopter_call_down"										"Luchtaanval"
+		"dac_ability_gyrocopter_call_down_Description"							"De Gyrocopter roept een luchtaanval op die alle vijanden in een straal van {s:radius} cellen rond het doelwit raakt.<br><br>Er komen twee raketten na elkaar aan: de eerste richt {s:damage_first} schade aan en vertraagt {s:slow_duration_first} seconden lang {s:slow_first}% en de tweede richt {s:damage_second} schade aan en vertraagt {s:slow_duration_second} seconden lang {s:slow_second}%."
+		"dac_ability_gyrocopter_call_down_Lore"									"Beeld je eens in hoeveel goederen we met hem kunnen vervoeren. – <i>Jull denkt aan het grotere geheel</i>"
+
+		//ALCHEMIST
+		"dac_ability_alchemist_acid_spray"										"Zuurbad"
+		"dac_ability_alchemist_acid_spray_Description"							"De Alchemist sproeit zuur met een hoge druk in een straal van {s:radius} cellen rond het doelwit.<br><br>Vijandelijke eenheden die over het aangetaste terrein heenlopen ontvangen {s:damage} schade per seconde en hun pantser wordt met {s:armor_reduction} verminderd."
+		"dac_ability_alchemist_acid_spray_Lore"									"Jij brandt de gezichten van mensen er graag af en ik brand de huizen van mensen graag af... Het is voorbestemd. – <i>Hobgen overbrugt een culturele kloof</i>"
+
+		// Lycan
+		"dac_ability_lycan_wolf_spawn_shift"									"Wolven oproepen"
+		"dac_ability_lycan_wolf_spawn_shift_Description"						"De Lycantroop roept twee wolven op om samen met hem te vechten.<br><br>De Lycantroop transformeert vervolgens en verhoogt zijn maximale gezondheid en bewegingssnelheid met {s:hp_per}% en {s:speed} en krijgt een kans van {s:crit_chance}% om {s:crit_bonus}% bonusschade aan te richten."
+		"dac_ability_lycan_wolf_spawn_shift_Lore"								"Alsjeblieft Lycantroop, help me om wraak te nemen. – <i>Wren doet een beroep op de menselijkheid van de Lycantroop</i>"
+		
+		// LONE DRUID
+		"dac_ability_lone_druid_summon_bear"									"Geestesbeer oproepen"
+		"dac_ability_lone_druid_summon_bear_Description"						"Roept een krachtige metgezel op in de vorm van een geestesbeer."
+		"dac_ability_lone_druid_summon_bear_Lore"								"Houd die beer gewoon van me weg, oké? Ik heb niets met beren. – <i>Grek, berenfoob </i>"
+		
+
+		//CHAOS KNIGHT
+		"dac_ability_chaos_knight_chaos_bolt"									"Chaosflits"
+		"dac_ability_chaos_knight_chaos_bolt_Description"						"De Chaosridder werpt een mysterieuze energieschok die een vijandelijke eenheid voor een willekeurige duur verlamt en willekeurige schade aanricht."
+		"dac_ability_chaos_knight_chaos_bolt_Lore"								"Witspits kan wel wat chaos gebruiken. – <i>Hobgen, vertegenwoordiger van chaos</i>"
+
+		//OGRE MAGI
+		"dac_ability_ogre_magi_bloodlust"										"Bloedlust"
+		"dac_ability_ogre_magi_bloodlust_Description"							"De Ogermagiër zet een bevriende eenheid aan tot razernij, waardoor zijn bewegings- en aanvalssnelheid met {s:bonus_movement_speed}% en {s:bonus_attack_speed}% toenemen. Wanneer de Ogermagiër zichzelf betovert, is de aanvalssnelheidsbonus {s:self_bonus}%."
+		"dac_ability_ogre_magi_bloodlust_Lore"									"De magiër is zijn prijs dubbel waard. Gelukkig is de magiër een idioot. – <i>O'nia, koopjesjager</i>"
+
+		//TREANT PROTECTOR
+		"dac_ability_treant_leech_seed"											"Parasitisch zaad"
+		"dac_ability_treant_leech_seed_Description"								"De Treant-beschermer plant een levensonttrekkend zaadje in een vijandelijke eenheid, waardoor diens gezondheid elke {s:damage_interval} seconden met {s:leech_damage} afneemt en daarbij ook zijn aanvals- en bewegingssnelheid met {s:movement_slow}% vermindert.<br><br>Het zaadje geneest bevriende eenheden in een straal van {s:radius} cellen van het doelwit. Duurt {s:duration} seconden."
+		"dac_ability_treant_leech_seed_Lore"									"Eerlijk gezegd verwachtte ik niet dat Enno hulp zou krijgen van een boom. – <i>Jull en Anessix doen een drankje</i>"
+
+		//KEEPER OF THE LIGHT
+		"dac_ability_keeper_of_the_light_illuminate"							"Verlichting"
+		"dac_ability_keeper_of_the_light_illuminate_Description"				"De Hoeder van het licht stuurt energie die met toenemende duur krachtiger wordt. Eenmaal losgelaten breidt dit zich als een golf naar voren uit die per opgeladen seconde {s:damage_per_second} schade aanricht."
+		"dac_ability_keeper_of_the_light_illuminate_Lore"						"De Hoeder is krachtiger dan hij laat blijken. Als we niet oppassen zal hij het einde zijn van ons allemaal. – <i>Turath, vernietiger van het licht</i> "
+
+		// MEDUSA
+		"dac_ability_medusa_stone_gaze"											"Verstenende blik"
+		"dac_ability_medusa_stone_gaze_Description"								"De bewegings- en aanvalssnelheid van vijandelijke eenheden in een straal van {s:radius} cellen rond Medusa wordt met {s:slow}% verlaagd wanneer zij in haar richting kijken.<br><br>Eenheden die in totaal {s:face_duration} seconden naar Medusa hebben gekeken veranderen in steen.<br><br>Versteende vijanden zijn verlamd en ontvangen {s:bonus_physical_damage}% bonusschade van fysieke aanvallen."
+		"dac_ability_medusa_stone_gaze_Lore"									"Ze is precies mijn type, maar ik heb alleen oog voor Mireska. – <i>Hobgen, verliefde crimineel</i>"
+
+		// TROLL WARLORD
+		"dac_ability_troll_warlord_fervor"										"IJver"
+		"dac_ability_troll_warlord_fervor_Description"							"PASSIEF: Met elke aanval op hetzelfde doelwit verhoogt de Trollenkrijgsheer zijn aanvalssnelheid met {s:attack_speed}%.<br><br>Zodra hij van doelwit wisselt gaat de bonus verloren.<br><br>Dit effect versterkt zichzelf maximaal {s:max_stacks} keer."
+		"dac_ability_troll_warlord_fervor_Lore"									"Efficiënt en meedogenloos. Net als ik. – <i>Quiet verspilt geen moeite</i>"
+
+		// SHREDDER
+		"dac_ability_timbersaw_whirling_death"									"Werveldood"
+		"dac_ability_timbersaw_whirling_death_Description"						"De scherpe randen van de wapenrusting van de Woudveller draaien in het rond, waardoor vijanden in een straal van {s:radius} cellen {s:damage} schade ontvangen."
+		"dac_ability_timbersaw_whirling_death_Lore"								"Ik dacht al dat Enno zijn bosvriendjes bijeen zou roepen, dus ik heb er zelf ook een paar gemobiliseerd. – <i>Hobgen lost problemen op</i>"
+
+		//TUSK
+		"dac_ability_tusk_walrus_punch"											"Walrus-KNAL!"
+		"dac_ability_tusk_walrus_punch_Description"								"De Slagtand raakt het doelwit met zijn machtige Walrus-knal, een kritieke treffer die zo sterk is dat het slachtoffer de lucht in wordt gelanceerd en na de landing met {s:move_slow}% wordt vertraagd."
+		"dac_ability_tusk_walrus_punch_Lore"									"Hij was mijn vriend. We zien gauw genoeg of hij hier is om me te helpen of om me een klap te verkopen. – <i>Jull denkt terug aan zijn jeugd</i>"
+		
+		
+		//ABADDON
+		"dac_ability_abaddon_aphotic_shield"									"Duister schild"
+		"dac_ability_abaddon_aphotic_shield_Description"						"Abaddon beschermt een bevriende eenheid met een schild dat gedurende {s:duration} seconden in totaal {s:damage_absorb} schade absorbeert.<br><br>Als het schild wordt vernietigd, knalt het uit elkaar en richt het {s:damage_absorb} schade aan aan vijanden in een straal van {s:radius} cellen.<br><br>Verwijdert verscheidene soorten negatieve effecten en verlammingen bij gebruik."
+		"dac_ability_abaddon_aphotic_shield_Lore"								"Ik heb veel respect voor het Huis van Avernus. – <i>O'nia tracht een wit voetje te halen</i>"
+
+		// TERRORBLADE
+		"dac_ability_terrorblade_metamorph"										"Metamorfose"
+		"dac_ability_terrorblade_metamorph_Description"							"Terrorblade transforms into a powerful demon, gaining a ranged attack of {s:bonus_attack_range} cells as well as {s:bonus_attack_damage}% bonus to damage and attack speed. Terrorblade also exchanges health values with another ally when this ability starts."
+		"dac_ability_terrorblade_metamorph_Lore"								"Wanneer je die met Anessix ziet praten, weet je dat er iets slechts staat te gebeuren. – <i>Jull houdt een oogje in het zeil</i>"
+
+		// TECHIES
+		"dac_ability_techies_bomb" 												"Afstandsmijnen"
+		"dac_ability_techies_bomb_Description"									"De gang plaatst een explosief dat na {s:explode_time} seconden ontploft en {s:damage} schade aan doelwitten in een straal van {s:range} cellen aanricht.<br><br>Richt de helft van de schade aan aan vijanden die zich op de helft van de maximale afstand bevinden."
+		"dac_ability_techies_bomb_Lore"											"Zeg wat je wilt over de Keen, maar ze zorgen altijd voor een lach op mijn gezicht. – <i>Hobgen bekijkt de nasleep van een sloop</i>"
+
+		//DISRUPTOR
+		"dac_ability_disruptor_static_storm"									"Statische storm"
+		"dac_ability_disruptor_static_storm_Description"						"Disruptor veroorzaakt een verwoestende statische storm, die alle vijandelijke eenheden in een straal van {s:radius} cellen rond het doelwit {s:duration} seconden het zwijgen oplegt.<br><br>De schade begint zwak, maar wordt na verloop van tijd steeds krachtiger tot het zijn maximale schade van {s:damage_max} bereikt."
+		"dac_ability_disruptor_static_storm_Lore"								"I'm not sure if he's actually here to help me, or if he just wants to keep an eye on Axe. - <i>Wren, Captain of a Motley Crew</i>"
+
+		//OMNIKNIGHT
+		"dac_ability_omniknight_purification"									"Zuivering"
+		"dac_ability_omniknight_purification_Description"						"De Alwetende ridder geneest een bevriende eenheid {s:heal} en richt schade aan aan alle vijandelijke eenheden in een straal van {s:radius} cellen."
+		"dac_ability_omniknight_purification_Lore"								"Hij gebruikt zijn geloof als een wapen... net als ik. – <i>Turath, redder met waanvoorstellingen</i>"
+		
+		//PUDGE
+		"dac_ability_pudge_meathook"											"Vleeshaak"
+		"dac_ability_pudge_meathook_Description"								"Pudge werpt een bloederige haak richting zijn verste vijand, waarna hij het slachtoffer naar zich toe sleurt en {s:damage} schade aanricht.<br><br>Pudge en zijn bondgenoten in een straal van 1 cel vallen het slachtoffer vervolgens aan totdat deze doodgaat."
+		"dac_ability_pudge_meathook_Lore"										"Pudge? Ja, goeie gast. Zegt altijd gedag wanneer ik de lijken aan het looien ben. – <i>Carl, ondode kleermaker</i>"
+		
+		//WARLOCK
+		"dac_ability_warlock_shadow_word"										"Schaduwspraak"
+		"dac_ability_warlock_shadow_word_Description"							"De Heksenmeester fluistert een bezwering die {s:heal_tick} gezondheid van een bevriende eenheid herstelt of {s:duration} seconden lang elke seconde {s:damage_tick} schade aanricht bij een vijandelijke eenheid."
+		"dac_ability_warlock_shadow_word_Lore"									"Sommige geheimen moeten geheim blijven... Ik zal het Demnok nog wel betaald zetten voor zijn gebrek aan discretie. – <i>Anessix, wachtend op het juiste moment</i>"
+		
+		//BLOODSEEKER
+		"dac_ability_bloodseeker_blood_rage"									"Bloedrazernij"
+		"dac_ability_bloodseeker_blood_rage_Description"						"PASSIEF: Elke seconde ontvangt de Bloeddorstige schade die gelijk staat aan {s:self_dmg_pct}% van zijn maximale gezondheid.<br><br>Voor elke procent die ontbreekt krijgt hij {s:attack_speed_per_missing_pct}% aanvalssnelheid.<br><br>Wanneer hij een vijand doodt, krijgt hij {s:heal_pct}% van zijn maximale gezondheid terug."
+		"dac_ability_bloodseeker_blood_rage_Lore"								"Als ik gedurende mijn loopbaan iets heb geleerd, is het dat men van bloed houdt. Huur deze vent in.  – <i>Grek, stellige promotor</i>"
+		
+		//ARC WARDEN
+		"dac_ability_arc_warden_tempest_double"									"Stormkopie"
+		"dac_ability_arc_warden_tempest_double_Description"						"De Plasmawachter maakt een kopie van zichzelf.<br><br>De dubbelganger kan alle huidige voorwerpen en spreuken van de Plasmawachter gebruiken en heeft aparte afkoeltijden, maar genereert {s:mana_dampen_outgoing}% mana bij uitgaande aanvallen en geen mana bij inkomende schade."
+		"dac_ability_arc_warden_tempest_double_Lore"							"Met hem arriveren de mysteries van de schepping. – <i>Turath, cryptische profeet</i>"
+		
+		//MIRANA
+		"dac_ability_mirana_arrow"												"Heilige pijl"
+		"dac_ability_mirana_arrow_Description"									"Mirana vuurt een pijl met dodelijke precisie af, die haar doelwit {s:duration} seconden verlamt en {s:damage} schade aanricht."
+		"dac_ability_mirana_arrow_Lore"											"Vertrouw nooit op een fanatiekeling, Wren. Het is het niet waard. – <i>Jull geeft welgemeend advies</i>"
+		
+		//SLARK
+		"dac_ability_slark_essence_shift"										"Essentieroof"
+		"dac_ability_slark_essence_shift_description"							"PASSIEF: Aanvallen van Slark verlagen de schade en aanvalssnelheid van zijn doelwit met {s:stolen_dmg} en {s:stolen_aspd}.<br><br>De schade en aanvalssnelheid van Slark nemen met dezelfde waarde toe."
+		"dac_ability_slark_essence_shift_lore"									"Slark is essentieel om ons product het Duistere Rif in en uit te smokkelen. – <i>Jull, opgeklommen man</i>"
+
+		//BLACK DRAGON
+		"dac_ability_black_dragon_splash_attack"								"Splash Attack"
+		"dac_ability_black_dragon_splash_attack_description"					"PASSIEF: De afstandsaanvallen van de zwarte draak richten schade aan in een straal van 1 cel rond zijn doelwit."
+		"dac_ability_black_dragon_splash_attack_lore"							" "
+
+		//"SVEN GREAT CLEAVE - used for YEAR BEAST and ROSHAN"
+		"dac_ability_sven_great_cleave"											"Grote splijting"
+		"dac_ability_sven_great_cleave_description"								"PASSIVE: This unit's melee attacks strike nearby enemies."
+		"dac_ability_sven_great_cleave_lore"									" "
+	}
+}

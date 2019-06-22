@@ -1,0 +1,83 @@
+ A __bss_end__
+ A _bss_end__
+ A __bss_start
+ A __bss_start__
+ a _DYNAMIC
+ A _edata
+ A _end
+ A __end__
+ a _GLOBAL_OFFSET_TABLE_
+ b g_module_global_lock
+ b main_module
+ b module_debug_flags
+ b module_debug_initialized
+ b modules
+ close@@LIBC
+ __cxa_atexit@@LIBC
+ __cxa_finalize@@LIBC
+ d $d
+ d $d.2
+ d $d.3
+ d __dso_handle
+ d _g_module_debug_init.keys
+ dlclose@@LIBC
+ dlerror@@LIBC
+ dlopen@@LIBC
+ dlsym@@LIBC
+ d module_error_private
+ __errno@@LIBC
+ g_filename_display_name
+ g_file_test
+ g_free
+ g_getenv
+ g_malloc_n
+ g_parse_debug_string
+ g_path_get_dirname
+ g_private_get
+ g_private_replace
+ g_rec_mutex_lock
+ g_rec_mutex_unlock
+ g_return_if_fail_warning
+ g_scanner_destroy
+ g_scanner_eof
+ g_scanner_get_next_token
+ g_scanner_input_file
+ g_scanner_new
+ g_scanner_scope_add_symbol
+ g_strconcat
+ g_strdup
+ g_strdup_printf
+ n $d.4
+ open@@LIBC
+ r $d.1
+ strcmp@@LIBC
+ strlen@@LIBC
+ strncmp@@LIBC
+ strrchr@@LIBC
+ t atexit
+ t __atexit_handler_wrapper
+ t $d
+ t fetch_dlerror
+ t _g_module_build_path
+ T g_module_build_path
+ t _g_module_close
+ T g_module_close
+ t _g_module_debug_init
+ T g_module_error
+ t g_module_find_by_handle
+ t g_module_find_by_name
+ T g_module_make_resident
+ T g_module_name
+ t _g_module_open
+ T g_module_open
+ t _g_module_self
+ t g_module_set_error
+ t g_module_set_error_unduped
+ T g_module_supported
+ t _g_module_symbol
+ T g_module_symbol
+ t __on_dlclose
+ t parse_libtool_archive
+ t str_check_suffix
+ t $x
+ t $x.0

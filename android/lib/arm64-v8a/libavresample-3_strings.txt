@@ -1,0 +1,263 @@
+  %0.3f 
+0~ x"
+16-bit 8.8 Fixed-Point
+16-bit signed integer
+16-bit signed integer planar
+1I@-SQ@-5YA-WaA-
+32-bit 17.15 Fixed-Point
+32-bit float
+32-bit float planar
+32-bit signed integer
+32-bit signed integer planar
+5?dithering %s to %s is not supported
+64-bit double
+64-bit double planar
+(6h>@
+8a.!8a.
+8-bit unsigned integer
+8-bit unsigned integer planar
+!^A(!
+%	A-`
+Aaudio_convert: found function: %-4s to %-4s (%s)
+#(aND(aN
+Android clang version 5.0.300080  (based on LLVM 5.0.300080)
+[any to any] 
+[any to %d] 
+AudioData
+audio_mix: %d samples - %d to %d channels (%s)
+audio_mix: found function: [fmt=%s] [c=%s] %s(%s)
+audio_mix: NO FUNCTION FOUND: [fmt=%s] [c=%s] [%d to %d]
+audio_mix: %s to %s
+av_audio_fifo_alloc
+av_audio_fifo_drain
+av_audio_fifo_free
+av_audio_fifo_read
+av_audio_fifo_size
+av_audio_fifo_write
+AVAudioResampleContext
+av_default_item_name
+av_frame_get_buffer
+av_free
+av_freep
+av_get_bytes_per_sample
+av_get_channel_layout_nb_channels
+av_get_channel_layout_string
+av_get_cpu_flags
+av_get_packed_sample_fmt
+av_get_planar_sample_fmt
+av_get_sample_fmt_name
+av_lfg_init
+av_log
+av_malloc_tracked
+av_mallocz_tracked
+av_opt_free
+av_opt_set_defaults
+av_reduce
+avresample_alloc_context
+avresample_available
+avresample_build_matrix
+avresample_close
+avresample_config
+avresample_configuration
+avresample_convert
+avresample_convert_frame
+avresample_free
+avresample_get_class
+avresample_get_delay
+avresample_get_matrix
+avresample_get_out_samples
+avresample_is_open
+avresample_license
+avresample_open
+avresample_read
+avresample_set_channel_mapping
+avresample_set_compensation
+avresample_set_matrix
+avresample_version
+av_rescale_rnd
+av_sample_fmt_is_planar
+av_samples_alloc
+av_samples_fill_arrays
+av_samples_get_buffer_size
+av_samples_set_silence
+blackman_nuttall
+Blackman Nuttall Windowed Sinc
+B@q)}
+cannot remap packed format during conversion
+cannot remap packed format during copy
+center_mix_level
+Center Mix Level
+.comment
+[convert] %s to in_buffer
+[convert] %s to out_buffer
+[convert] %s to output
+[copy] %s to in_buffer
+[copy] %s to out_buffer
+[copy] %s to output
+cubic
+Cubic
+Cutoff Frequency Ratio
+__cxa_atexit
+__cxa_finalize
+D0oCD0o@
+.data
+.data.rel.ro
+dither flt buffer
+dither_method
+Dither Method
+dither s16 buffer
+dolby
+Dolby
+Dolby Pro Logic II
+[downmix] in_buffer
+dplii
+%d samples - audio_convert: %s to %s (dithered)
+%d samples - audio_convert: %s to %s (%s)
+dst is read-only
+[%d to any] 
+D)$yh
+.dynamic
+.dynstr
+.dynsym
+[end conversion]
+error during resampling
+error reallocating dst
+error reallocating output
+Error reallocating resampling buffer
+error setting mix matrix
+[FIFO] add %s to out_fifo
+[FIFO] read from out_fifo to output
+filter_size
+filter_type
+Filter Type
+.fini_array
+Floating-Point
+force_resampling
+Force Resampling
+GCC: (GNU) 4.9.x 20150123 (prerelease)
+.gnu.version
+.gnu.version_d
+.gnu.version_r
+.got.plt
+.hash
+in_buffer
+in_channel_layout
+.init_array
+in|J	
+input
+Input Channel Layout
+Input Sample Format
+Input Sample Rate
+in_sample_fmt
+in_sample_rate
+internal_sample_fmt
+Internal Sample Format
+invalid channel count: %d
+Invalid channel counts
+Invalid channel layouts
+Invalid channel map
+Invalid input channel layout
+Invalid input channel layout: %lu
+Invalid mix coeff type
+invalid NULL pointer for src[%d]
+Invalid output channel layout: %lu
+invalid sample format
+kaiser
+kaiser_beta
+Kaiser Window Beta
+Kaiser Windowed Sinc
+K%@xk=
+K%@xk}
+L#D0o
+lfe_mix_level
+LFE Mix Level
+LIBAVRESAMPLE_3
+libavresample-3.so
+libavresample/audio_convert.c
+libavresample/audio_data.c
+libavresample/audio_mix.c
+libavresample/dither.c
+libavresample license: LGPL version 2.1 or later
+libavresample/options.c
+libavresample/resample.c
+libavresample/utils.c
+LIBAVUTIL_55
+libavutil-55.so
+libc.so
+libm.so
+linear_interp
+llrint
+llrintf
+Matrixed Stereo Encoding
+matrix_encoding
+matrix is not set
+matrix size: %d x %d
+MCD0o
+memcpy
+memmove
+memset
+mix_coeff_type
+Mixing Coefficient Type
+N)b*@
+N$	@L
+N$	@L1
+No Dithering
+{no name}
+normalize_mix_level
+Normalize Mix Level
+offset out-of-bounds: src=%d dst=%d
+out_channel_layout
+output
+Output Channel Layout
+Output Sample Format
+Output Sample Rate
+out_sample_fmt
+out_sample_rate
+p?[%d to %d] 
+phase_shift
+--prefix=/data/thirdparty/nonredist/ffmpeg/dev/build_androidarm64 --cc='/data/thirdparty/nonredist/ffmpeg/dev/../../android-ndk-r15c/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -gcc-toolchain /data/thirdparty/nonredist/ffmpeg/dev/../../android-ndk-r15c/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 -target aarch64-none-linux-android --sysroot=/data/thirdparty/nonredist/ffmpeg/dev/../../android-ndk-r15c/platforms/android-21/arch-arm64 ' --extra-cflags=' -g -O2 -fno-strict-aliasing -ffast-math -fno-omit-frame-pointer -Wno-unused-parameter' --strip=/data/thirdparty/nonredist/ffmpeg/dev/../../android-ndk-r15c/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/strip --disable-linux-perf --enable-cross-compile --enable-dash_symver --target-os=linux --arch=arm64 --enable-shared --disable-static --enable-runtime-cpudetect --disable-all --enable-avcodec --enable-avutil --enable-avresample --enable-avformat --enable-swscale --enable-parser=h264 --enable-decoder='aac,h264,vp8,vp9,gif,vorbis,mp3,flac,alac,pcm*' --enable-demuxer='aac,matroska,gif,ogg,mov,mp3,flac,wav,flv' --enable-muxer=flv --disable-decoder=mpeg1video --disable-decoder=mpeg2video --disable-decoder=vc1 --disable-decoder=h263 --enable-libvpx --enable-protocol='file,rtmp'
+p~ x"
+rectangular
+Rectangular Dither
+.rela.dyn
+.rela.plt
+remap channels during in_convert
+remap channels during in_copy
+remap channels during out_convert
+remap channels during out_copy
+resample buffer
+resample_cutoff
+resampled %d in + %d leftover to %d out + %d leftover
+resample_out_buffer
+resample: %s from %d Hz to %d Hz
+[resample] %s to %s
+Resampling Filter Size
+Resampling Phase Shift
+.rodata
+sample format mismatch
+sample rate must be 48000 or 44100 Hz for triangular_ns dither. using triangular_hp instead.
+.shstrtab
+  (SKIP)
+snprintf
+[start conversion]
+surround_mix_level
+Surround Mix Level
+.text
+Tf$@|'%@|
+The resampling context is already open.
+triangular
+Triangular Dither
+Triangular Dither With High Pass
+Triangular Dither With Noise Shaping
+triangular_hp
+triangular_ns
+T*$@x*%
+Unable to set resampling compensation
+Unsupported internal format for mixing: %s
+Unsupported internal format for resampling: %s
+[upmix] %s
+Use Linear Interpolation
+Using %s as internal sample format
+v"D))
+;xh"@
+  (ZERO)
