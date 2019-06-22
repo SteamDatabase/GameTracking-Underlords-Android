@@ -7,14 +7,14 @@ PASSWORD="$(head -n 1 password.txt)"
 git add -f manifest_bootstrap.json
 cat manifest_bootstrap.json
 
-APKURL="$(jq -r '.packages.androidarm64.url' manifest_bootstrap.json)"
-MVER="$(jq -r '.packages.androidarm64.version' manifest_bootstrap.json)"
+APKURL="$(jq -er '.packages.androidarm64.url' manifest_bootstrap.json)"
+MVER="$(jq -er '.packages.androidarm64.version' manifest_bootstrap.json)"
 
 # update game manifests
 
 for PLATFORM in android ios; do
 
-    curl -sSf "https://www.dota2.com/project7manifest/?platform=${PLATFORM}&appid=1046930&version=${MVER}&password=${PASSWORD}" | jq -MS '.' > manifest_${PLATFORM}.json
+    curl -sSf "https://www.dota2.com/project7manifest/?platform=${PLATFORM}&appid=1046930&version=${MVER}&password=${PASSWORD}" | jq -eMS '.' > manifest_${PLATFORM}.json
     git add -f manifest_${PLATFORM}.json
 
 done
@@ -50,10 +50,10 @@ find android/res/ -type f -regextype egrep -iregex 'android/res/values.*\.xml' -
 rm -rf ./game
 
 # grab CDN url
-CDNROOT="$(jq -r '.cdnroot' manifest_android.json)"
+CDNROOT="$(jq -er '.cdnroot' manifest_android.json)"
 
 # download all game files
-for FPATH in $(jq -r '.assets | keys[]' manifest_android.json); do
+for FPATH in $(jq -er '.assets | keys[]' manifest_android.json); do
 
     mkdir -p "$(dirname ${FPATH})"
     wget -O "${FPATH}" "${CDNROOT}${FPATH}"
