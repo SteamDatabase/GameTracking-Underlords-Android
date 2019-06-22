@@ -524,7 +524,7 @@ public class PatchSystem {
     }
 
     /* access modifiers changed from: private */
-    /* JADX WARNING: Code restructure failed: missing block: B:27:0x00fb, code lost:
+    /* JADX WARNING: Code restructure failed: missing block: B:30:0x00ff, code lost:
         return;
      */
     /* Code decompiled incorrectly, please refer to instructions dump. */
@@ -553,97 +553,100 @@ public class PatchSystem {
             android.app.DownloadManager r0 = (android.app.DownloadManager) r0
             java.util.HashMap<java.lang.Long, com.valvesoftware.PatchSystem$PendingDownload> r1 = r5.m_mapPendingDownloads
             monitor-enter(r1)
-            java.util.HashMap<java.lang.Long, com.valvesoftware.PatchSystem$PendingDownload> r2 = r5.m_mapPendingDownloads     // Catch:{ all -> 0x00fc }
-            java.lang.Long r3 = java.lang.Long.valueOf(r6)     // Catch:{ all -> 0x00fc }
-            boolean r2 = r2.containsKey(r3)     // Catch:{ all -> 0x00fc }
+            java.util.HashMap<java.lang.Long, com.valvesoftware.PatchSystem$PendingDownload> r2 = r5.m_mapPendingDownloads     // Catch:{ all -> 0x0100 }
+            java.lang.Long r3 = java.lang.Long.valueOf(r6)     // Catch:{ all -> 0x0100 }
+            boolean r2 = r2.containsKey(r3)     // Catch:{ all -> 0x0100 }
             if (r2 != 0) goto L_0x0061
             java.lang.String r8 = "com.valvesoftware.PatchSystem"
-            java.lang.StringBuilder r0 = new java.lang.StringBuilder     // Catch:{ all -> 0x00fc }
-            r0.<init>()     // Catch:{ all -> 0x00fc }
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder     // Catch:{ all -> 0x0100 }
+            r0.<init>()     // Catch:{ all -> 0x0100 }
             java.lang.String r2 = "Download Error: "
-            r0.append(r2)     // Catch:{ all -> 0x00fc }
-            java.lang.String r6 = java.lang.String.valueOf(r6)     // Catch:{ all -> 0x00fc }
-            r0.append(r6)     // Catch:{ all -> 0x00fc }
+            r0.append(r2)     // Catch:{ all -> 0x0100 }
+            java.lang.String r6 = java.lang.String.valueOf(r6)     // Catch:{ all -> 0x0100 }
+            r0.append(r6)     // Catch:{ all -> 0x0100 }
             java.lang.String r6 = " (Not found in Pending Downloads)"
-            r0.append(r6)     // Catch:{ all -> 0x00fc }
-            java.lang.String r6 = r0.toString()     // Catch:{ all -> 0x00fc }
-            android.util.Log.e(r8, r6)     // Catch:{ all -> 0x00fc }
-            monitor-exit(r1)     // Catch:{ all -> 0x00fc }
+            r0.append(r6)     // Catch:{ all -> 0x0100 }
+            java.lang.String r6 = r0.toString()     // Catch:{ all -> 0x0100 }
+            android.util.Log.e(r8, r6)     // Catch:{ all -> 0x0100 }
+            monitor-exit(r1)     // Catch:{ all -> 0x0100 }
             return
         L_0x0061:
-            java.util.HashMap<java.lang.Long, com.valvesoftware.PatchSystem$PendingDownload> r2 = r5.m_mapPendingDownloads     // Catch:{ all -> 0x00fc }
-            java.lang.Long r3 = java.lang.Long.valueOf(r6)     // Catch:{ all -> 0x00fc }
-            java.lang.Object r2 = r2.get(r3)     // Catch:{ all -> 0x00fc }
-            com.valvesoftware.PatchSystem$PendingDownload r2 = (com.valvesoftware.PatchSystem.PendingDownload) r2     // Catch:{ all -> 0x00fc }
-            java.util.HashMap<java.lang.Long, com.valvesoftware.PatchSystem$PendingDownload> r3 = r5.m_mapPendingDownloads     // Catch:{ all -> 0x00fc }
-            java.lang.Long r6 = java.lang.Long.valueOf(r6)     // Catch:{ all -> 0x00fc }
-            r3.remove(r6)     // Catch:{ all -> 0x00fc }
+            java.util.HashMap<java.lang.Long, com.valvesoftware.PatchSystem$PendingDownload> r2 = r5.m_mapPendingDownloads     // Catch:{ all -> 0x0100 }
+            java.lang.Long r3 = java.lang.Long.valueOf(r6)     // Catch:{ all -> 0x0100 }
+            java.lang.Object r2 = r2.get(r3)     // Catch:{ all -> 0x0100 }
+            com.valvesoftware.PatchSystem$PendingDownload r2 = (com.valvesoftware.PatchSystem.PendingDownload) r2     // Catch:{ all -> 0x0100 }
+            java.util.HashMap<java.lang.Long, com.valvesoftware.PatchSystem$PendingDownload> r3 = r5.m_mapPendingDownloads     // Catch:{ all -> 0x0100 }
+            java.lang.Long r6 = java.lang.Long.valueOf(r6)     // Catch:{ all -> 0x0100 }
+            r3.remove(r6)     // Catch:{ all -> 0x0100 }
             java.lang.String r6 = "com.valvesoftware.PatchSystem"
-            java.lang.StringBuilder r7 = new java.lang.StringBuilder     // Catch:{ all -> 0x00fc }
-            r7.<init>()     // Catch:{ all -> 0x00fc }
+            java.lang.StringBuilder r7 = new java.lang.StringBuilder     // Catch:{ all -> 0x0100 }
+            r7.<init>()     // Catch:{ all -> 0x0100 }
             java.lang.String r3 = "Download Success: "
-            r7.append(r3)     // Catch:{ all -> 0x00fc }
-            java.lang.String r3 = r2.strURL     // Catch:{ all -> 0x00fc }
-            r7.append(r3)     // Catch:{ all -> 0x00fc }
+            r7.append(r3)     // Catch:{ all -> 0x0100 }
+            java.lang.String r3 = r2.strURL     // Catch:{ all -> 0x0100 }
+            r7.append(r3)     // Catch:{ all -> 0x0100 }
             java.lang.String r3 = " (DownloadID: "
-            r7.append(r3)     // Catch:{ all -> 0x00fc }
-            long r3 = r2.nDownloadID     // Catch:{ all -> 0x00fc }
-            java.lang.String r3 = java.lang.String.valueOf(r3)     // Catch:{ all -> 0x00fc }
-            r7.append(r3)     // Catch:{ all -> 0x00fc }
+            r7.append(r3)     // Catch:{ all -> 0x0100 }
+            long r3 = r2.nDownloadID     // Catch:{ all -> 0x0100 }
+            java.lang.String r3 = java.lang.String.valueOf(r3)     // Catch:{ all -> 0x0100 }
+            r7.append(r3)     // Catch:{ all -> 0x0100 }
             java.lang.String r3 = ")"
-            r7.append(r3)     // Catch:{ all -> 0x00fc }
-            java.lang.String r7 = r7.toString()     // Catch:{ all -> 0x00fc }
-            android.util.Log.i(r6, r7)     // Catch:{ all -> 0x00fc }
-            boolean r6 = r5.ProcessCompletedDownload(r2, r8)     // Catch:{ all -> 0x00fc }
+            r7.append(r3)     // Catch:{ all -> 0x0100 }
+            java.lang.String r7 = r7.toString()     // Catch:{ all -> 0x0100 }
+            android.util.Log.i(r6, r7)     // Catch:{ all -> 0x0100 }
+            boolean r6 = r5.ProcessCompletedDownload(r2, r8)     // Catch:{ all -> 0x0100 }
             if (r6 != 0) goto L_0x00b3
-            r5.ClearPendingDownloads()     // Catch:{ all -> 0x00fc }
-            com.valvesoftware.PatchSystem$EState r6 = com.valvesoftware.PatchSystem.EState.Error     // Catch:{ all -> 0x00fc }
-            com.valvesoftware.PatchSystem$EErrorCode r7 = com.valvesoftware.PatchSystem.EErrorCode.Download     // Catch:{ all -> 0x00fc }
-            r5.WaitForUserInput(r6, r7)     // Catch:{ all -> 0x00fc }
-            monitor-exit(r1)     // Catch:{ all -> 0x00fc }
+            r5.ClearPendingDownloads()     // Catch:{ all -> 0x0100 }
+            com.valvesoftware.PatchSystem$EState r6 = com.valvesoftware.PatchSystem.EState.Error     // Catch:{ all -> 0x0100 }
+            com.valvesoftware.PatchSystem$EErrorCode r7 = com.valvesoftware.PatchSystem.EErrorCode.Download     // Catch:{ all -> 0x0100 }
+            r5.WaitForUserInput(r6, r7)     // Catch:{ all -> 0x0100 }
+            monitor-exit(r1)     // Catch:{ all -> 0x0100 }
             return
         L_0x00b3:
+            boolean r6 = r5.m_bDownloadingAPK     // Catch:{ all -> 0x0100 }
+            if (r6 != 0) goto L_0x00c2
             r6 = 1
-            long[] r6 = new long[r6]     // Catch:{ all -> 0x00fc }
+            long[] r6 = new long[r6]     // Catch:{ all -> 0x0100 }
             r7 = 0
-            long r3 = r2.nDownloadID     // Catch:{ all -> 0x00fc }
-            r6[r7] = r3     // Catch:{ all -> 0x00fc }
-            r0.remove(r6)     // Catch:{ all -> 0x00fc }
-            long r6 = r5.m_nCompletedDownloadBytes     // Catch:{ all -> 0x00fc }
-            long r2 = r2.nByteSize     // Catch:{ all -> 0x00fc }
+            long r3 = r2.nDownloadID     // Catch:{ all -> 0x0100 }
+            r6[r7] = r3     // Catch:{ all -> 0x0100 }
+            r0.remove(r6)     // Catch:{ all -> 0x0100 }
+        L_0x00c2:
+            long r6 = r5.m_nCompletedDownloadBytes     // Catch:{ all -> 0x0100 }
+            long r2 = r2.nByteSize     // Catch:{ all -> 0x0100 }
             long r6 = r6 + r2
-            r5.m_nCompletedDownloadBytes = r6     // Catch:{ all -> 0x00fc }
-            boolean r6 = r5.m_bDownloadingAPK     // Catch:{ all -> 0x00fc }
-            if (r6 == 0) goto L_0x00e6
-            java.util.HashMap<java.lang.Long, com.valvesoftware.PatchSystem$PendingDownload> r6 = r5.m_mapPendingDownloads     // Catch:{ all -> 0x00fc }
-            boolean r6 = r6.isEmpty()     // Catch:{ all -> 0x00fc }
-            if (r6 == 0) goto L_0x00d7
-            com.valvesoftware.PatchSystem$EState r6 = com.valvesoftware.PatchSystem.EState.APKDownloadedWaitingOnUser     // Catch:{ all -> 0x00fc }
-            r5.SetState(r6)     // Catch:{ all -> 0x00fc }
-            goto L_0x00fa
-        L_0x00d7:
+            r5.m_nCompletedDownloadBytes = r6     // Catch:{ all -> 0x0100 }
+            boolean r6 = r5.m_bDownloadingAPK     // Catch:{ all -> 0x0100 }
+            if (r6 == 0) goto L_0x00ea
+            java.util.HashMap<java.lang.Long, com.valvesoftware.PatchSystem$PendingDownload> r6 = r5.m_mapPendingDownloads     // Catch:{ all -> 0x0100 }
+            boolean r6 = r6.isEmpty()     // Catch:{ all -> 0x0100 }
+            if (r6 == 0) goto L_0x00db
+            com.valvesoftware.PatchSystem$EState r6 = com.valvesoftware.PatchSystem.EState.APKDownloadedWaitingOnUser     // Catch:{ all -> 0x0100 }
+            r5.SetState(r6)     // Catch:{ all -> 0x0100 }
+            goto L_0x00fe
+        L_0x00db:
             java.lang.String r6 = "com.valvesoftware.PatchSystem"
             java.lang.String r7 = "More than one pending APK download."
-            android.util.Log.i(r6, r7)     // Catch:{ all -> 0x00fc }
-            com.valvesoftware.PatchSystem$EState r6 = com.valvesoftware.PatchSystem.EState.Error     // Catch:{ all -> 0x00fc }
-            com.valvesoftware.PatchSystem$EErrorCode r7 = com.valvesoftware.PatchSystem.EErrorCode.Unknown     // Catch:{ all -> 0x00fc }
-            r5.WaitForUserInput(r6, r7)     // Catch:{ all -> 0x00fc }
-            goto L_0x00fa
-        L_0x00e6:
-            java.util.HashMap<java.lang.Long, com.valvesoftware.PatchSystem$PendingDownload> r6 = r5.m_mapPendingDownloads     // Catch:{ all -> 0x00fc }
-            boolean r6 = r6.isEmpty()     // Catch:{ all -> 0x00fc }
-            if (r6 == 0) goto L_0x00fa
-            com.valvesoftware.PatchSystem$CRegistry r6 = r5.m_Registry     // Catch:{ all -> 0x00fc }
-            int r7 = r5.m_nApplicationVersion     // Catch:{ all -> 0x00fc }
-            r6.SetLastFullyInstalledAppVersion(r7)     // Catch:{ all -> 0x00fc }
-            com.valvesoftware.PatchSystem$EState r6 = com.valvesoftware.PatchSystem.EState.Done     // Catch:{ all -> 0x00fc }
-            r5.SetState(r6)     // Catch:{ all -> 0x00fc }
-        L_0x00fa:
-            monitor-exit(r1)     // Catch:{ all -> 0x00fc }
+            android.util.Log.i(r6, r7)     // Catch:{ all -> 0x0100 }
+            com.valvesoftware.PatchSystem$EState r6 = com.valvesoftware.PatchSystem.EState.Error     // Catch:{ all -> 0x0100 }
+            com.valvesoftware.PatchSystem$EErrorCode r7 = com.valvesoftware.PatchSystem.EErrorCode.Unknown     // Catch:{ all -> 0x0100 }
+            r5.WaitForUserInput(r6, r7)     // Catch:{ all -> 0x0100 }
+            goto L_0x00fe
+        L_0x00ea:
+            java.util.HashMap<java.lang.Long, com.valvesoftware.PatchSystem$PendingDownload> r6 = r5.m_mapPendingDownloads     // Catch:{ all -> 0x0100 }
+            boolean r6 = r6.isEmpty()     // Catch:{ all -> 0x0100 }
+            if (r6 == 0) goto L_0x00fe
+            com.valvesoftware.PatchSystem$CRegistry r6 = r5.m_Registry     // Catch:{ all -> 0x0100 }
+            int r7 = r5.m_nApplicationVersion     // Catch:{ all -> 0x0100 }
+            r6.SetLastFullyInstalledAppVersion(r7)     // Catch:{ all -> 0x0100 }
+            com.valvesoftware.PatchSystem$EState r6 = com.valvesoftware.PatchSystem.EState.Done     // Catch:{ all -> 0x0100 }
+            r5.SetState(r6)     // Catch:{ all -> 0x0100 }
+        L_0x00fe:
+            monitor-exit(r1)     // Catch:{ all -> 0x0100 }
             return
-        L_0x00fc:
+        L_0x0100:
             r6 = move-exception
-            monitor-exit(r1)     // Catch:{ all -> 0x00fc }
+            monitor-exit(r1)     // Catch:{ all -> 0x0100 }
             throw r6
         */
         throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.PatchSystem.OnDownloadResponseSuccess(long, java.lang.String):void");

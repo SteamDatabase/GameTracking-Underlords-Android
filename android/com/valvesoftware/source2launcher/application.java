@@ -14,8 +14,15 @@ public class application extends Application {
     IContentSyncAsyncTask m_ContentSyncAsyncTask = null;
     private boolean m_bTriedBootStrap = false;
     LanguageCountryMap[] m_languageMap;
+    private EPermissionsState m_nPermissionState = EPermissionsState.ENeedPermissions;
     String m_strCmdLineAccessCode = null;
     String m_strCmdLineAuthority = null;
+
+    public enum EPermissionsState {
+        ENeedPermissions,
+        ERequestedPermisions,
+        EHavePermissions
+    }
 
     public class LanguageCountryMap {
         String m_country;
@@ -172,5 +179,13 @@ public class application extends Application {
 
     public void SetTriedBootStrap(boolean z) {
         this.m_bTriedBootStrap = z;
+    }
+
+    public EPermissionsState GetPermissionsState() {
+        return this.m_nPermissionState;
+    }
+
+    public void SetPermissionsState(EPermissionsState ePermissionsState) {
+        this.m_nPermissionState = ePermissionsState;
     }
 }

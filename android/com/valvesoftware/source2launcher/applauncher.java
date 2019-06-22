@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.Build.VERSION;
 import android.os.Bundle;
 import android.os.Handler;
@@ -16,6 +17,7 @@ import android.util.Log;
 import com.valvesoftware.JNI_Environment;
 import com.valvesoftware.Resources;
 import com.valvesoftware.source2launcher.IContentSyncAsyncTask.TaskStatus;
+import com.valvesoftware.source2launcher.application.EPermissionsState;
 
 public class applauncher extends Activity {
     private static final int MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 1;
@@ -59,30 +61,34 @@ public class applauncher extends Activity {
 
     public void onResume() {
         super.onResume();
+        String str = "com.valvesoftware.applauncher";
+        Log.i(str, "Checking permissions");
+        String str2 = "android.permission.WRITE_EXTERNAL_STORAGE";
+        if (VERSION.SDK_INT >= 23) {
+            this.m_bWriteAccess = checkSelfPermission(str2) == 0;
+        } else {
+            this.m_bWriteAccess = true;
+        }
         application application = (application) JNI_Environment.m_application;
-        if (!application.TriedBootStrap()) {
-            application.SetTriedBootStrap(true);
-            String str = "com.valvesoftware.applauncher";
-            Log.i(str, "Checking permissions");
-            String str2 = "android.permission.WRITE_EXTERNAL_STORAGE";
-            if (VERSION.SDK_INT >= 23) {
-                this.m_bWriteAccess = checkSelfPermission(str2) == 0;
-            } else {
-                this.m_bWriteAccess = true;
-            }
-            boolean z = this.m_bWriteAccess;
-            if (z) {
+        if (this.m_bWriteAccess) {
+            application.SetPermissionsState(EPermissionsState.EHavePermissions);
+        }
+        EPermissionsState GetPermissionsState = application.GetPermissionsState();
+        if (GetPermissionsState == EPermissionsState.EHavePermissions) {
+            if (!application.TriedBootStrap()) {
+                application.SetTriedBootStrap(true);
                 Log.i(str, "We have read/write access");
                 bootStrapIntoGame();
-            } else if (!z) {
-                Log.i(str, "Requesting write access");
-                String GetStringSafe = Resources.GetStringSafe("Native_PermissionsTitle");
-                String GetStringSafe2 = Resources.GetStringSafe("Native_PermissionsText");
-                Log.i(str, "Showing explanation to user");
-                showExplanation(GetStringSafe, GetStringSafe2, str2, 1);
+                return;
             }
-        } else {
             this.m_timerHandler.postDelayed(this.m_timerRunnable, 1000);
+        } else if (GetPermissionsState == EPermissionsState.ENeedPermissions) {
+            Log.i(str, "Showing permissions explanation to user");
+            showPermissionExplanation(Resources.GetStringSafe("Native_PermissionsTitle"), Resources.GetStringSafe("Native_PermissionsText"), str2, 1);
+            application.SetPermissionsState(EPermissionsState.ERequestedPermisions);
+        } else {
+            Log.i(str, "Requesting write access");
+            showPermissionExitSettingsOption();
         }
     }
 
@@ -96,7 +102,7 @@ public class applauncher extends Activity {
         requestPermissions(new String[]{str}, i);
     }
 
-    private void showExplanation(String str, String str2, final String str3, final int i) {
+    private void showPermissionExplanation(String str, String str2, final String str3, final int i) {
         Builder builder = new Builder(this);
         builder.setTitle(str).setMessage(str2).setPositiveButton(17039370, new OnClickListener() {
             public void onClick(DialogInterface dialogInterface, int i) {
@@ -106,18 +112,38 @@ public class applauncher extends Activity {
         builder.create().show();
     }
 
+    private void showPermissionExitSettingsOption() {
+        Log.i("com.valvesoftware.applauncher", "showing exit/settings option dialog");
+        String GetStringSafe = Resources.GetStringSafe("Native_Exit");
+        String GetStringSafe2 = Resources.GetStringSafe("Native_Settings");
+        String GetStringSafe3 = Resources.GetStringSafe("Native_NeedsStoragePermissionsToContinueTitle");
+        String GetStringSafe4 = Resources.GetStringSafe("Native_NeedsStoragePermissionsToContinueText");
+        Builder builder = new Builder(this);
+        builder.setTitle(GetStringSafe3).setMessage(GetStringSafe4).setNegativeButton(GetStringSafe, new OnClickListener() {
+            public void onClick(DialogInterface dialogInterface, int i) {
+                System.exit(0);
+            }
+        }).setPositiveButton(GetStringSafe2, new OnClickListener() {
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Intent intent = new Intent();
+                intent.setAction("android.settings.APPLICATION_DETAILS_SETTINGS");
+                intent.setData(Uri.fromParts("package", applauncher.this.getPackageName(), null));
+                dialogInterface.dismiss();
+                applauncher.this.startActivity(intent);
+            }
+        });
+        builder.create().show();
+    }
+
     public void onRequestPermissionsResult(int i, String[] strArr, int[] iArr) {
         if (i == 1) {
             String str = "com.valvesoftware.applauncher";
             if (iArr.length <= 0 || iArr[0] != 0) {
-                Log.i(str, "Write permission denied. Stuck here forever.");
-            } else {
-                Log.i(str, "Write permission granted");
-                this.m_bWriteAccess = true;
+                Log.i(str, "Write permission denied.");
+                return;
             }
-        }
-        if (this.m_bWriteAccess) {
-            bootStrapIntoGame();
+            Log.i(str, "Write permission granted");
+            this.m_bWriteAccess = true;
         }
     }
 

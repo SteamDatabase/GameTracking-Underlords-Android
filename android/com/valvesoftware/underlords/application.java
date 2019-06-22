@@ -8,10 +8,6 @@ public class application extends com.valvesoftware.source2launcher.application {
         if (GetInteger == null) {
             return null;
         }
-        String GetString = Resources.GetString("VPC_ManifestPasswordString");
-        if (GetString == null) {
-            return null;
-        }
         int intValue = Integer.valueOf(GetInteger[0]).intValue();
         String str = intValue != 1024290 ? intValue != 1046930 ? null : "https://www.dota2.com/project7manifest/?platform=android&appid=1046930" : "https://beta.dota2.com/project7manifest/?platform=android&appid=1024290&u=beta";
         if (str == null) {
@@ -20,12 +16,18 @@ public class application extends com.valvesoftware.source2launcher.application {
         StringBuilder sb = new StringBuilder();
         sb.append(str);
         sb.append("&password=");
-        sb.append(GetString);
         String sb2 = sb.toString();
-        StringBuilder sb3 = new StringBuilder();
-        sb3.append(sb2);
-        sb3.append("&version=");
-        sb3.append(String.valueOf(GetEffectiveApplicationVersion()));
-        return sb3.toString();
+        String GetString = Resources.GetString("VPC_ManifestPasswordString");
+        if (GetString != null) {
+            StringBuilder sb3 = new StringBuilder();
+            sb3.append(sb2);
+            sb3.append(GetString);
+            sb2 = sb3.toString();
+        }
+        StringBuilder sb4 = new StringBuilder();
+        sb4.append(sb2);
+        sb4.append("&version=");
+        sb4.append(String.valueOf(GetEffectiveApplicationVersion()));
+        return sb4.toString();
     }
 }
