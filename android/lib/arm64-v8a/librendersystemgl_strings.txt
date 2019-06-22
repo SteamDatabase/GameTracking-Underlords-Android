@@ -1,4 +1,5 @@
 =	 ();,
+>{}()':
 --------------------------------
 !:@=!
 !.@=!
@@ -125,7 +126,7 @@ $@)#@@)
 -1=App controlled, 0=DONT_CARE, 1=CPU_OPTIMIZED, 2=GPU_OPTIMIZED, 3=RENDER_DIRECT_TO_FRAMEBUFFER
 !1AQaq
 !>@=1B
-@)1i@
+@)1	F
 /1V?O	
 /1V?OA
 /1V?OR
@@ -164,7 +165,6 @@ $@)#@@)
 2DArray
 2Gio8
 2	h(8
-2h"@9
 2hf!9
 2hj58
 2Hku8
@@ -320,6 +320,7 @@ _8Jhj8*
 8x9,7
 |&@9{#
 .@9*]
+"'9}%
 (@@9	
 )=@9)}
 )!@9)
@@ -327,6 +328,7 @@ _8Jhj8*
 @9	|	
 &@9*]
 #@@9	
+	!\9	
 	@91~
 9.1.15
 92ji8R
@@ -493,23 +495,21 @@ _A8B8G8R8_SNORM
 _A8B8G8R8_SRGB
 _A8R8G8B8
 _A8R8G8B8_SRGB
+	a[9	
 	A@9)
 A@9(9
 A9a2@
-"A9)AG
-A9)AG
 /A9a:J9`>
 A9`&B
-	 A9JAG
+A9J)F
+	 A9JUG
+"A9)UG
+A9)UG
 A(aN!
 $	A)Ar
 aBE9a
 abort
 aB@ya
-AChoreographer_getInstance
-AChoreographer_getInstance failed
-AChoreographer_postFrameCallback
-AChoreographer_postFrameCallbackDelayed
 -adapter
 _addons
 Adobe APP14 marker: version %d, flags 0x%04x 0x%04x, transform %d
@@ -531,35 +531,20 @@ Allow
 Allow%d
 Allow%d( 
 Allow immediately loading mips of textures (when possible) when their headers are loaded, saving IO & reducing latency.
-ALooper_acquire
-ALooper_pollAll
-ALooper_prepare
-ALooper_prepare failed
-ALooper_release
-ALooper_wake
 alpha
 -@(aN
 "(aN`(!
 (aN`(!
 (aN@(!
 (aN0*aN
-	an9	
 "(aNa(a
 #(aNA(a
 (aNB8an1
-Android (4751641 based on r328903) clang version 7.0.2 (https://android.googlesource.com/toolchain/clang 003100370607242ddd5815e4a043907ea9004281) (https://android.googlesource.com/toolchain/llvm 1d739ffb0366421d383e04ff80ec2ee591315116) (based on LLVM 7.0.2svn)
-android/app/NativeActivity
 Android clang version 5.0.300080  (based on LLVM 5.0.300080)
-Android Game SDK Swappy enabled: %s
-Android Game SDK Swappy swap interval: %0.2f ms
-__android_log_print
-android/os/Build$VERSION
 ANDROID PCI: %s: class 0x%llx
 ANDROID PCI: %s: unable to open, errno %d (%s)
 ANDROID PCI: %s: unable to read line
 ANDROID PCI: %s: vendor 0x%04x, device 0x%04x
-android/view/Display
-android/view/WindowManager
 )aNh?
 AnimationSystem_001
 AnimationSystemUtils_001
@@ -601,11 +586,6 @@ ATIRadeonX2000
 ATIRage128
 ATIRagePro
 At marker 0x%02x, recovery action %d
-ATrace_beginSection
-ATrace_endSection
-ATrace_isEnabled
-ATrace_setCounter
-Attempted to initialize SwappyGL twice
 Attempting to create OpenGL context: v%d.%d (%s profile)...
 Attempt to set buffer size beyond max ignored
 //ATTRIBMAP-
@@ -626,8 +606,8 @@ Ayjb@
 Ay?! k
 B@9A1
 B9h&C
-BA9)AG
-bA9JAG
+bA9JUG
+BA9)UG
 Backing store not supported
 bad adaptive filter value
 Bad expression operator: '%c%c', expected C style boolean expression operator.
@@ -650,7 +630,6 @@ Begin:
 /*BEGIN_UNIFORMBINDINGS
 BenchmarkService001
 b.EycZA
-bfh9A
 BGR565
 BGR888_BLUESCREEN
 BGRA1010102
@@ -658,8 +637,6 @@ BGRA4444
 BGRA5551
 BGRA8888_LINEAR
 BGRX8888_LINEAR
-b~h9A
-b"h9A
 bhb8"
 Biases the mip level the texture streaming system choses to stream for each texture.
 Bib81
@@ -669,15 +646,12 @@ binary_lz4
 BinaryProperties_GetValue
 binormal
 b"J9_@
-bjh9A
-BK@9a\
 BKbhTb~XBK!;
 blendindices
 blendweight
 blocking issue in occlusion queries!!
 bN!(a
 bNEy_
-bnh9A
 Bogus buffer control mode
 Bogus DAC index %d
 Bogus DAC value 0x%x
@@ -695,7 +669,6 @@ bool3
 bool4
 bool CRenderDeviceGL::CreateRenderThread()
 bool InitializeDisplayDB(const CUtlVector<GLContextVersion_t> &)
-bool swappy::SwappyGL::setPresentationTime(swappy::EGLDisplay, swappy::EGLSurface)
 borrow
 Bound texture to unsupported shader.
 box2i
@@ -704,7 +677,6 @@ __bss_end__
 __bss_start
 __bss_start__
 /BT?O
-Buckets:                    
 buf error
 Buffer error in compressed datastream
 Buffer passed to JPEG library is too small
@@ -713,7 +685,6 @@ B)v	@
 B)V	@
 BXcxc
 B#@y:
-bzh9A
 @=%	@=c
 C9an@
 )C@9H
@@ -797,7 +768,6 @@ COLORCORRECTION_VERSION_1
 *** Combo "%s" in %s has arg %s that doesn't match an existing feature!
 *** Combo "%s" in %s has incorrect range %d..%d. Expecting %d..%d!
 *** Combo "%s" in %s requires a 3rd argument: Sys( ... )
-com/google/androidgamesdk/ChoreographerCallback
 CommandLine
 Command stream pools: %s bytes in base, %s bytes in medium, %s bytes in large (%s extra data fallbacks)
 .comment
@@ -841,7 +811,6 @@ Corrupt JPEG data: found marker 0x%02x instead of RST%d
 Corrupt JPEG data: premature end of data segment
 Corrupt JPEG data: %u extraneous bytes before marker 0x%02x
 Could not find required OpenGL entry point '%s'!
-/cpufreq/cpuinfo_max_freq
 CRC error
 CreateDevice: Requested DX level %d, clamped to DX level %d
 CreateInterface
@@ -930,6 +899,8 @@ D24FS8
 D24X4S4
 D24X8
 D24X8_SHADOW
+d6@yc
+d6@yC
 	D@8!
 D@8)%
 D$@8$
@@ -953,7 +924,7 @@ DCT scaled block size %dx%d not supported
 %d..%d
 %d.%d.%d
 DDDDUUUU
-DDDDUUUUDDDDUUUU
+DDDDUUUUDDDDUUUUhJ
 -debugdxsupport
 DebugTextureInfo001
 Decompressed %i texture mips in %.2f ms (%.1fmb/s)
@@ -973,8 +944,6 @@ Deleting texture with outstanding streaming request (%s)
 -D- -----end-----
 DEPRECATION
 Description
-Destroying JavaChoreographerThread
-Destroying NDKChoreographerThread
 developer
 Device Caps :
 device id: 0x%x
@@ -996,7 +965,6 @@ Direct3D 11
 Direct3D 9
 -disableboneuniformbuffers
 Disabling GL_ARB_buffer_storage for RenderDoc.
-Disabling stats
 Disabling use of separate shader objects. 
 -disallowhwmorph
 Discarding abandoned streaming texture load for %s
@@ -1006,14 +974,12 @@ displayWindow
 "displayWindow" attribute not found in the header.
 d~l9czl9bvl9arl9
 dlclose
-dlopen
 dlsym
 d(!N$
 dnl9cjl9bfl9abl9
 Domain Shader
 -dontEvictTextures
 DotaCardGameClient_001
-doWork
 Driver Description :  %s
 Driver : %s Version : %d.%d
 ds_5_0
@@ -1059,12 +1025,10 @@ _edata
 EDeviceCreated
 E)dF@
 eglGetDisplay
-eglGetProcAddress
 EGL_KHR_create_context_no_error
 EGL_KHR_gl_colorspace
 EGL_KHR_gl_colorspace not supported, relying on sRGB rendering to the backbuffer to work without it.
 eglQueryString
-eglSwapBuffers
 Eh`8$h`8
 eha8fhb8
 Ehe8%
@@ -1081,11 +1045,9 @@ el9$y@
 Empty
 Empty input file
 Empty JPEG image (DNL not supported)
-__emutls_get_address
 E*!N%
 Enabling EGL_KHR_create_context_no_error, OpenGL errors will not be reported by driver.
 Enabling sRGB framebuffer with EGL_KHR_gl_colorspace.
-Enabling stats
 __end__
 End: 
 #endif
@@ -1146,8 +1108,6 @@ ERROR: Specified full path %s does not lie under the mod search path!)
 ERROR: Specified path %s could not be made content-relative
 *** Error! Too many args found in rule in %s!
 *** Error! Too many or too few arguments to a rule in %s!
-Error while getting method: getAppVsyncOffsetNanos
-Error while getting method: getPresentationDeadlineNanos
 ETC compression not supported on this target .
 EventSystem001
 Evict all resident texture.
@@ -1172,7 +1132,7 @@ Extra compressed data
 Extra compression data
 extreme cHRM chunk cannot be converted to tristimulus values
 F-4WE-6_G-
-f!9hb!9E
+f!9hb!9*
 \|FA@
 Failed AllocateTexture for '%s'
 Failed to AddVideoCardKeys.
@@ -1182,46 +1142,15 @@ Failed to create device. Modules loaded: %s
 Failed to create OpenGL context.
 Failed to create temporary file %s
 Failed to create the GL context.
-Failed to destroy sync fence
 Failed to detect video memory size.
-Failed to get Build.VERSION class
-Failed to get Build.VERSION.SDK_INT field
-Failed to get next frame ID
-Failed to get SDK version
-Failed to get SwappyGL instance in addTracer
-Failed to get SwappyGL instance in enableStats
-Failed to get SwappyGL instance in getFenceTimeout
-Failed to get SwappyGL instance in getStats
-Failed to get SwappyGL instance in getSwapIntervalNS
-Failed to get SwappyGL instance in setAutoPipelineMode
-Failed to get SwappyGL instance in setAutoSwapInterval
-Failed to get SwappyGL instance in setFenceTimeout
-Failed to get SwappyGL instance in swap
-Failed to get Swappy instance in recordFrameStart
-Failed to get Swappy instance in swap
-Failed to get sync status
-Failed to get timestamps for frame %llu
-Failed to load eglClientWaitSyncKHR
-Failed to load eglCreateSyncKHR
-Failed to load eglDestroySyncKHR
-Failed to load EGL functions
-Failed to load eglGetError
-Failed to load eglGetFrameTimestampsANDROID
-Failed to load eglGetNextFrameIdANDROID
-Failed to load eglGetSyncAttribKHR
-Failed to load eglPresentationTimeANDROID
-Failed to load eglSurfaceAttrib
 Failed to load shader using program binary.  Falling back to shader source.  Log string from driver:
 Failed to map from %s to content-path
 Failed to map from %s to game-path
 Failed to parse channel info.
 Failed to save video settings config to '%s'
 Failed to use program binary, falling back to source shader.
-Failed to wait sync
 false
 F(aNb(a
-FATAL: cannot get AChoreographer symbols
-FATAL: cannot open libandroid.so: %s
 FATAL ERROR: unable to register all schema data: %s
 FCVAR_NEVER_AS_STRING
 _feature
@@ -1303,9 +1232,6 @@ Found %d streaming textures in array, but in-flight count is %d
 --------------FP:%s
 fputc
 Fractional sampling not implemented yet
-frame latency:              
-== Frame statistics ==
-FrameStatistics
 fread
 Freed EMS handle %u
 Freed XMS handle %u
@@ -1313,7 +1239,6 @@ frexp
 __FROM_ATTRIBUTE__
 __FROM_ATTRIBUTE_OR_FEATURE__
 fYfxk
-G{}()':
 	!g9`
 	!g9i
 *!g9j
@@ -1336,18 +1261,13 @@ Generic
 GenericFloat
 Geometry Shader
 GetCPUInformation
-getDefaultDisplay
 getenv
 GetNameFromOSType
-getRefreshRate
 GetResourceManifestCount
 GetResourceManifests
-gettid
 GetVfxShaderFile: Failed to unserialize CVfxShaderFile.  Is your shadercache out-of-date?  Try deleting it.
-getWindowManager
 G)g"H)	
 Gig8ut
-g_JNI
 GL_1PASS_EXT
 GL_2_BYTES
 GL_2D
@@ -1853,7 +1773,6 @@ glDisable
 -gl_disable_recreate_buffers_on_update
 -gl_disable_separate_shader_objects
 gl_disableStaticBuffer
--gl_disable_swappy
 glDisableVertexAttribArray
 GL_DITHER
 GL_DOMAIN
@@ -2126,6 +2045,7 @@ glGetDebugMessageLogARB
 glGetDebugMessageLogKHR
 glGetDoublei_v
 glGetDoublev
+glGetError
 glGetFloati_v
 glGetFloatv
 glGetFramebufferAttachmentParameteriv
@@ -3145,7 +3065,7 @@ gl/renderdevicegl.cpp(942):
 GL_RENDERER
 GL_RENDER_MODE
 GLRenderThread
-gl/renderthreadgl.cpp(1914): 
+gl/renderthreadgl.cpp(1922): 
 -glrenderthreadstack
 GL_REPEAT
 GL_REPLACE
@@ -3453,7 +3373,6 @@ GL_STREAM_READ_ARB
 glStringMarkerGREMEDY
 GL_SUBPIXEL_BITS
 GL_SUBTRACT
--gl_swappy_interval_ms
 GL_T2F_C3F_V3F
 GL_T2F_C4F_N3F_V3F
 GL_T2F_C4UB_V3F
@@ -3887,18 +3806,16 @@ h$8d:B
 	h*8	dK
 h`8%h`8
 h#8Jh#8
-*h"@9(
 h""9	
 h"'90
 ?h98a
 h.@9H
 h"`9tb 
 h"A9a
-h"A9)AG
+h"A9)UG
 HammerMapLoader001
 HangWatchdogInternal_BeginScope
 HangWatchdogInternal_EndScope
-Hardware
 .hash
 !Hb8b
 hb8bF
@@ -3910,7 +3827,7 @@ hb@9h
 hb@9H
 hb^9t
 h"b9tb"
-hBA9)AG
+hBA9)UG
 hbO9(
 hc87hd89hc88hb8
 hc8#h 8
@@ -3959,7 +3876,7 @@ Hkw8(
 hn8c|
 HookUpTextureBits
 HostStateMgr001
-hr@9JQ8
+hr@9J
 hs_5_0
 http://support.steampowered.com/cgi-bin/steampowered.cfg/php/enduser/std_adp.php?p_faqid=772
 Huffman code size table overflow
@@ -3986,7 +3903,7 @@ ib@9(
 ib@9)
 ib@9i
 ib@9l
-ibA9JAG
+ibA9JUG
 IB: %d buffers, %.2f MB
 IB)Mki
 IB "%s" : Attempted to create too big of a dynamic index buffer!
@@ -4016,7 +3933,6 @@ I CUtlRBTree<CUtlMap<unsigned long long, CVfxByteCodeManager::StaticComboInfo_t 
 I CUtlRBTree<void *, int, bool (*)(void *const &, void *const &), CUtlMemory<UtlRBTreeNode_t<void *, int>, int> >::NewNode(const T *) [T = void *, I = int, L = bool (*)(void *const &, void *const &), M = CUtlMemory<UtlRBTreeNode_t<void *, int>, int>]
 $Id8g
 id8$h 8
-idle frames:                
 %ie8E
 i"E)j.P)l>@
 !if8D
@@ -4096,9 +4012,7 @@ Incorrect sRGB chunk length
 Incorrect tIME chunk length
 Incorrect tRNS chunk length
 Incorrect vpk path delimiter for shader %s
-<init>
 .init_array
-Initialized Swappy with vsyncPeriod=%lld, appOffset=%lld, sfOffset=%lld
 Input file read error
 INPUT_LAYOUT_VARIATION_DEFAULT
 INPUT_LAYOUT_VARIATION_MAX
@@ -4243,11 +4157,13 @@ iq8@hq81
 IQuickTime001
 ir@9I
 irA9a
+irB9h
 IS_SM_
 )Iv8(
 iv@9I
 	*iW@
 *'i$x
+	i,x(
 *i.xi>@yj:
 i>@yh
 j48*:
@@ -4256,19 +4172,18 @@ j58hf@9(
 @j!8!
 j(8(<
 j(8(=
-j(8%5
 j(8h<
 j(8h=
 j(8H<
 j(8H=
 j`8!i 8
+j(8"Z
 *j*!9	
  J9?@
 J9e:A
 ja8 i!8!
 JA@9j
 JA@9J
-Java_com_google_androidgamesdk_ChoreographerCallback_nOnChoreographer
 <jBF9`"
 JEIJJ}
 JFIF APP0 marker: version %d.%02d, density %dx%d  %d
@@ -4303,7 +4218,9 @@ k68wZ@
 ?k78h
 k(8vV@
 (k:8Z
+k(8Z_F
 K	@9)
+k9B06
 #kc8Ein8
 KDDEy%
 KD$@xc
@@ -4351,10 +4268,6 @@ k@y	Q
 l6H))
 l	@9,
 l	@9J
-()Landroid/view/Display;
-()Landroid/view/WindowManager;
-lastFrameIncomplete
-late frames:                
 L-Ax?
 layout(location = 0) in vec4 inPos;  
 layout(location = 0) in  vec4 texCoords;  
@@ -4410,7 +4323,6 @@ Link failed; no code produced.  Log string from driver:
 LINUX
 l-J)I}	
 ,<L\l|
-lldiv
 Lm@x,
 Loaded video settings config from '%s'
 LoadEXRImageFromMemory failed! Error message: %s
@@ -4449,7 +4361,6 @@ MATCHFRAMEWORK_001
 MaterialUtils_001
 matrix3x4a_t
 matrix3x4_t
-mAutoSwapInterval
 m-Ax_
 MAX_ALLOC_CHUNK is wrong, please fix
 Max Combined Texture Image Units : %d
@@ -4503,7 +4414,6 @@ m_dynamicComboRuleArray
 MEDIUM
 mediump
 m_elems
-memchr
 memcmp
 memcpy
 memmove
@@ -4647,8 +4557,6 @@ MODES
   m_osComboVersion: 0x%08x (%d.%d.%d)
 m_PciModelString
 m_pD3DSemanticName
-mPipelineMode
-mPipelineModeAutoMode
 m_pName
 m_PreferDynamicTextures: %s
 m_pSemantic
@@ -4659,7 +4567,6 @@ m_Sequences
 m_staticComboArray
 m_staticComboRuleArray
 m_SupportsMipmappedCubemaps: %s
-mSwapInterval
 m_textureChannelProcessorArray
 m_TextureMemorySize: %llu
 Multiply defined variable "%s"
@@ -4826,14 +4733,12 @@ nX(aNB?
 nY nk)a
 !O1*a
 o1V?OS
-	!o9	
 )o))a
 Obtained EMS handle %u
 Obtained XMS handle %u
 o$ c.! cn
 # of channels is zero.
 offscreen plain surface
-offset from previous frame: 
 Oio8,
 Oio8s
 O*/i*x
@@ -5003,8 +4908,6 @@ Premature end of JPEG file
 #Present
 p?RGB565
 *** Problem remapping texture reference!
-/proc/cpuinfo
-processor
 Profile size field missing from iCCP chunk
 Program MD5 is out of date with features! If you recompiled shaders in the background, reload shaders now! %s
 Program MD5 is out of date with features! %s
@@ -5017,16 +4920,12 @@ ps_5_0
 psize
 PS_RENDER_STATE
 _psrs
-pthread_create
 pthread_mutexattr_init
 pthread_mutexattr_settype
 pthread_mutex_destroy
 pthread_mutex_init
 pthread_mutex_lock
 pthread_mutex_unlock
-pthread_self
-pthread_setname_np
-pthread_setspecific
 ptr( 0x%p )
 ../public/ordered_constructor.h
 ../public/tier0/tslist.h
@@ -5240,6 +5139,7 @@ R	h(8
 rHihx,
 rhj)8
 Rhj)8
+rhj)8h
 Rhjh8
 Rhjh8(
 Rhjh8h
@@ -5343,8 +5243,6 @@ Scan script does not transmit all data
 %s: Can't concatenate input layouts with more than %d fields total!
 SceneSystem_002
 SceneUtils_001
-sched_getaffinity
-sched_setaffinity
 sched_yield
 schemabindings.cpp
 SchemaSystem_001
@@ -5362,11 +5260,8 @@ SDDEy)
 SDDFy
 %s: Detected partial buffer update on a device index buffer, this will likely cause a stall!
 %s: Detected partial buffer update on a device vertex buffer, this will likely cause a stall!
-SDK_INT
 sdktools/bin/vproj.exe
 sdktools/bin/vprojUI.exe
-SDK version = %d
-SDL_AndroidGetActivity
 SDL_CreateWindow
 SDL_CreateWindowFrom
 SDL_DestroyWindow
@@ -5378,7 +5273,6 @@ SDL_GetError
 SDL_GetNumDisplayModes
 SDL_GetNumVideoDisplays
 SDL_GetWindowSize
-SDL_GetWindowWMInfo
 SDL_GL_CreateContext
 SDL_GL_DeleteContext
 SDL_GL_GetAttribute
@@ -5434,10 +5328,8 @@ setting.refreshrate_denominator
 setting.refreshrate_numerator
 setting.resettodefaults
 setting.shaderquality
-Setting '%s' thread [%d-0x%x] affinity mask to 0x%x.
 setting.SuppressPixelShaderCentroidHackFixup
 setting.Unsupported
-Setting up hardware caps with PerformsFramePacing set to: %s
 %s: Exhausted all available dynamic buffers of type (%d), creating a new one.
 SFm1V
 SfREyE
@@ -5540,7 +5432,6 @@ standardTex
 Start Of Frame 0x%02x: width=%u, height=%u, components=%d
 Start of Image
 Start Of Scan: %d components
-static bool swappy::SwappyGL::swap(swappy::EGLDisplay, swappy::EGLSurface)
 StaticCombo
 StaticComboRule
    StaticComboRule( 
@@ -5548,10 +5439,6 @@ Static combos:
 static void CGlobalConfigValueRegistry::HookUpConfigValue(const char *, ConfigType_t, ConfigValueType_t, CConfigValueOptions &&, const void **)
 static void CSchemaRegistration::RegisterAllModuleData(ISchemaSystem *)
 static void CTextureManagerGLNew::RemoveMipLevelsForTextures(const CUtlVector<TextureStreamingPriorityInfo_t> &, uint64, int, uint64, int &, int &, uint64 &)
-static void swappy::SwappyGL::onChoreographer(int64_t)
-static void swappy::SwappyGL::recordFrameStart(swappy::EGLDisplay, swappy::EGLSurface)
-stats are not suppored on this platform
-stats are not supported on this platform
 StatsService_001
 SteamAudio001
 S_TOOLS_ENABLED
@@ -5588,42 +5475,12 @@ Suspension not allowed here
 %s: %u total draws
 /sV?O
 SwapChainTexture.vtex
-Swappy
-SwappyChoreographer
-SwappyCommon
-SwappyCommon could not initialize correctly.
-swappy.disable
-Swappy::EGL
-Swappy found %d CPUs [%s].
-SwappyGL_destroy
-SwappyGL_enableStats
-SwappyGL_getFenceTimeoutNS
-SwappyGL_getRefreshPeriodNanos
-SwappyGL_getStats
-SwappyGL_getSwapIntervalNS
-SwappyGL_getUseAffinity
-SwappyGL_init_internal
-SwappyGL_injectTracer
-SwappyGL_isEnabled
-SwappyGL_onChoreographer
-SwappyGL_recordFrameStart
-SwappyGL_setAutoPipelineMode
-SwappyGL_setAutoSwapInterval
-SwappyGL_setFenceTimeoutNS
-SwappyGL_setRefreshPeriod
-SwappyGL_setSwapIntervalNS
-SwappyGL_setUseAffinity
-SwappyGL_swap
-Swappy is disabled
-Swappy_version_0_1
 %s: Warning: No compile targets specified! Shader will not be compiled!
 sY8	5
 &*Syg
 S@y(Q
 /sys/devices
-/sys/devices/system/cpu/cpu
 system.fxc
-__system_property_get
 s@ysz
 T`"07
 T#0@9"0
@@ -5692,8 +5549,6 @@ TDPEy$h 8
 TeFEyhJEygNEy
 Te*L9
 Te&L9
-terminate
-Terminating Looper thread
 TERMVALUE
 tessfactor
 TestFormatA
@@ -5776,7 +5631,6 @@ ThR@9
 ThR@9	
 ThrA9
 ThrB9(
-thread constructor failed
 ThreadGetCurrentId
 ThreadJoin
 ThreadYield
@@ -5794,7 +5648,6 @@ Tif@9)
 Tih8)!
 tiles
 Timed out waiting for thread to exit? hung?
-Timeout waiting for fence
 Tit8A
 tit8d
 Tit8g
@@ -5820,12 +5673,10 @@ Too many color components: %d, max %d
 Too many IDATs found
 too many length or distance symbols
 Too many threads (%d) accessing the render device, need to increase -r_max_device_threads (%d)
-/topology/physical_package_id
 TOTAL: %.2f MB
 Total Combos After Rules:  %15s ( %s Static, 
 Total Combos Before Rules: %15s ( %s Static, %s Dynamic )
     Total committed memory: %d KB
-total frames: %lu
 Total size of the texture pool in MB
     Total used memory:      %d KB
 T?OZW?O
@@ -5833,7 +5684,6 @@ T` p7@
 T$P@9C,
 T p@9"t@9"p
 T ;@Q
-Trace
 transparency
 T`REy
 tRNS chunk has out-of-range samples for bit_depth
@@ -5881,7 +5731,6 @@ uj4xa
 Unable to append GL program binary to cache file "%s".  Clearing cache.
 Unable to create dummy context for GLMDisplayDB.
 Unable to create dummy window for GLMDisplayDB.
-Unable to load NDK tracing APIs
 Unable to open GL shader cache TOC %s file - might not exist yet.
 *** Unable to parse Version in HEADER section of %s!
 Unable to parse vpk paths from shader %s
@@ -5894,16 +5743,12 @@ undefined
 UNDEFINED_BEHAVIOR
 Unexpected marker 0x%02x
 Unexpected resource version '%d' for '%s'
-Unexpected sync status: %d
 uniform
 uniform sampler2D sampler15;  
 uniform sampler3D sampler15;  
 uniform samplerCube sampler15;  
 uniform vec4 vTexCoordScaleOffset;
 Uninitialized row
-unique_lock::lock: already locked
-unique_lock::lock: references null mutex
-unique_lock::unlock: not locked
 unknown
 <unknown>
 (unknown)
@@ -5944,10 +5789,6 @@ Unsupported stage for sampler state.
 UPDATE_STRING_TOKEN_DATABASE
 Upper limit on texture pool size.
 UserInfoChangeService_001
-Using Application's Choreographer
-Using Java Choreographer
-Using NDK Choreographer
-Using no Choreographer (Best Effort)
 utlbuffer.cpp
 utlstring.cpp
 """"UUUU
@@ -6058,8 +5899,6 @@ virtual void CRenderContextBase::SetAssociatedThreadIndex(int)
 virtual void CRenderContextGL::SetAssociatedThreadIndex(int)
 virtual void CTextureManagerGL::LoadStreamingData(ResourceHandle_t, IResourceSystemUtils *)
 virtual void CTextureManagerGLNew::LoadStreamingData(ResourceHandle_t, IResourceSystemUtils *)
-virtual void swappy::ChoreographerThread::onChoreographer()
-virtual void swappy::ChoreographerThread::postFrameCallbacks()
 V_IsAbsolutePath
 VisBuilder_001
 V_logf
@@ -6103,10 +5942,6 @@ void FloatBitMap_t::ConvertGammaToLinear(FBMGammaType_t)
 VoidFnPtrLookup_Tier0
 void main()
 void main()  
-void swappy::SwappyCommon::onChoreographer(int64_t)
-void swappy::SwappyCommon::startFrame()
-void swappy::SwappyCommon::waitOneFrame()
-void swappy::SwappyCommon::waitUntilTargetFrame()
 void VfxInit(bool)
 V?ORV?O
 VP4003
@@ -6296,9 +6131,6 @@ _Z10DevWarningPKcz
 _Z14V_stristr_fastPKcS0_
 _Z17LoggingSystem_Logi17LoggingSeverity_t5ColorPKcz
 _Z17LoggingSystem_Logi17LoggingSeverity_tRK14LeafCodeInfo_tPKcz
-_Z19getSystemPropViaGetPKcNSt6__ndk112basic_stringIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE
-_Z24getSystemPropViaGetAsIntPKci
-_Z25getSystemPropViaGetAsBoolPKcb
 _Z6DevMsgPKcz
 #Z80ijx
 #Z8	A
@@ -6307,7 +6139,6 @@ _ZdlPv
 Zero length tRNS chunk
 ZFP compression is not supported.
 ZFP compression is not supported in this build.
-_ZGVZN7gamesdk5Trace11getInstanceEvE5trace
 zlib memory error
 zlib stream error
 zlib version error
@@ -6316,7 +6147,6 @@ _ZN10CVProfNode10GetSubNodeEPKciS1_i
 _ZN10CVProfNode9ExitScopeEv
 _ZN12CThreadEvent3SetEv
 _ZN12CThreadEventC1Eb
-_ZN12JNIGlobals_t6GetEnvEv
 _ZN13CBufferString10ExtendPathEPKcc
 _ZN13CBufferString10FixSlashesEc
 _ZN13CBufferString11ToLowerFastEi
@@ -6341,164 +6171,8 @@ _ZN22CThreadRWLock_FastRead20UnlockReadAccountingEj
 _ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEj
 _ZN22CThreadRWLock_FastRead30HandleFirstWriteLockTransitionEv
 _ZN22CThreadRWLock_FastReadC1Ev
-_ZN6swappy10getNumCpusEv
-_ZN6swappy11setAffinityEi
-_ZN6swappy11setAffinityENS_8AffinityE
-_ZN6swappy12SwappyCommon10onPostSwapERKNS0_12SwapHandlersE
-_ZN6swappy12SwappyCommon10startFrameEv
-_ZN6swappy12SwappyCommon10swapFasterERKNS0_13FrameDurationERKNSt6__ndk16chrono8durationIxNS4_5ratioILl1ELl1000000000EEEEESB_RKi
-_ZN6swappy12SwappyCommon10swapSlowerERKNS0_13FrameDurationERKNSt6__ndk16chrono8durationIxNS4_5ratioILl1ELl1000000000EEEEESB_RKi
-_ZN6swappy12SwappyCommon10wakeClientEv
-_ZN6swappy12SwappyCommon12waitOneFrameEv
-_ZN6swappy12SwappyCommon13FrameDuration12MAX_DURATIONE
-_ZN6swappy12SwappyCommon15onChoreographerEl
-_ZN6swappy12SwappyCommon16addFrameDurationENS0_13FrameDurationE
-_ZN6swappy12SwappyCommon16FRAME_HYSTERESISE
-_ZN6swappy12SwappyCommon16preWaitCallbacksEv
-_ZN6swappy12SwappyCommon16waitForNextFrameERKNS0_12SwapHandlersE
-_ZN6swappy12SwappyCommon17getSwapIntervalNSEv
-_ZN6swappy12SwappyCommon17onSettingsChangedEv
-_ZN6swappy12SwappyCommon17postWaitCallbacksEv
-_ZN6swappy12SwappyCommon18addTracerCallbacksE12SwappyTracer
-_ZN6swappy12SwappyCommon18updateSwapDurationENSt6__ndk16chrono8durationIxNS1_5ratioILl1ELl1000000000EEEEE
-_ZN6swappy12SwappyCommon18updateSwapIntervalEv
-_ZN6swappy12SwappyCommon19setAutoPipelineModeEb
-_ZN6swappy12SwappyCommon19setAutoSwapIntervalEb
-_ZN6swappy12SwappyCommon19startFrameCallbacksEv
-_ZN6swappy12SwappyCommon20waitUntilTargetFrameEv
-_ZN6swappy12SwappyCommon21SwappyTracerCallbacksD2Ev
-_ZN6swappy12SwappyCommon23preSwapBuffersCallbacksEv
-_ZN6swappy12SwappyCommon24postSwapBuffersCallbacksEv
-_ZN6swappy12SwappyCommon28swapIntervalChangedCallbacksEv
-_ZN6swappy12SwappyCommon9onPreSwapERKNS0_12SwapHandlersE
-_ZN6swappy12SwappyCommonC1EP7_JNIEnvP8_jobject
-_ZN6swappy12SwappyCommonC2EP7_JNIEnvP8_jobject
-_ZN6swappy12SwappyCommonD1Ev
-_ZN6swappy12SwappyCommonD2Ev
-_ZN6swappy15FrameStatistics12updateFramesEllPm
-_ZN6swappy15FrameStatistics14LOG_EVERY_N_NSE
-_ZN6swappy15FrameStatistics16updateIdleFramesERNS_3EGL15FrameTimestampsE
-_ZN6swappy15FrameStatistics16updateLateFramesERNS_3EGL15FrameTimestampsE
-_ZN6swappy15FrameStatistics19updateLatencyFramesERNS_3EGL15FrameTimestampsENSt6__ndk16chrono10time_pointINS5_12steady_clockENS5_8durationIxNS4_5ratioILl1ELl1000000000EEEEEEE
-_ZN6swappy15FrameStatistics29updateOffsetFromPreviousFrameERNS_3EGL15FrameTimestampsE
-_ZN6swappy15FrameStatistics7captureEPvS1_
-_ZN6swappy15FrameStatistics8getStatsEv
-_ZN6swappy15FrameStatistics9logFramesEv
-_ZN6swappy19ChoreographerFilter10threadMainEbi
-_ZN6swappy19ChoreographerFilter15onChoreographerEv
-_ZN6swappy19ChoreographerFilter17onSettingsChangedEv
-_ZN6swappy19ChoreographerFilter19launchThreadsLockedEv
-_ZN6swappy19ChoreographerFilter22terminateThreadsLockedEv
-_ZN6swappy19ChoreographerFilterC1ENSt6__ndk16chrono8durationIxNS1_5ratioILl1ELl1000000000EEEEES6_NS1_8functionIFS6_vEEE
-_ZN6swappy19ChoreographerFilterC2ENSt6__ndk16chrono8durationIxNS1_5ratioILl1ELl1000000000EEEEES6_NS1_8functionIFS6_vEEE
-_ZN6swappy19ChoreographerFilterD1Ev
-_ZN6swappy19ChoreographerFilterD2Ev
-_ZN6swappy19ChoreographerThread13getSDKVersionEP7_JavaVM
-_ZN6swappy19ChoreographerThread15onChoreographerEv
-_ZN6swappy19ChoreographerThread18postFrameCallbacksEv
-_ZN6swappy19ChoreographerThread25createChoreographerThreadENS0_4TypeEP7_JavaVMNSt6__ndk18functionIFvvEEE
-_ZN6swappy19ChoreographerThread34isChoreographerCallbackClassLoadedEP7_JavaVM
-_ZN6swappy19ChoreographerThreadC2ENSt6__ndk18functionIFvvEEE
-_ZN6swappy19ChoreographerThreadD0Ev
-_ZN6swappy19ChoreographerThreadD1Ev
-_ZN6swappy19ChoreographerThreadD2Ev
-_ZN6swappy21NoChoreographerThread18postFrameCallbacksEv
-_ZN6swappy21NoChoreographerThread25scheduleNextFrameCallbackEv
-_ZN6swappy21NoChoreographerThreadC1ENSt6__ndk18functionIFvvEEE
-_ZN6swappy21NoChoreographerThreadC2ENSt6__ndk18functionIFvvEEE
-_ZN6swappy21NoChoreographerThreadD0Ev
-_ZN6swappy22NDKChoreographerThread12looperThreadEv
-_ZN6swappy22NDKChoreographerThread25scheduleNextFrameCallbackEv
-_ZN6swappy22NDKChoreographerThreadC1ENSt6__ndk18functionIFvvEEE
-_ZN6swappy22NDKChoreographerThreadC2ENSt6__ndk18functionIFvvEEE
-_ZN6swappy22NDKChoreographerThreadD0Ev
-_ZN6swappy22NDKChoreographerThreadD1Ev
-_ZN6swappy22NDKChoreographerThreadD2Ev
-_ZN6swappy23JavaChoreographerThread15onChoreographerEl
-_ZN6swappy23JavaChoreographerThread15onChoreographerEv
-_ZN6swappy23JavaChoreographerThread25scheduleNextFrameCallbackEv
-_ZN6swappy23JavaChoreographerThreadC1EP7_JavaVMNSt6__ndk18functionIFvvEEE
-_ZN6swappy23JavaChoreographerThreadC2EP7_JavaVMNSt6__ndk18functionIFvvEEE
-_ZN6swappy23JavaChoreographerThreadD0Ev
-_ZN6swappy23JavaChoreographerThreadD1Ev
-_ZN6swappy23JavaChoreographerThreadD2Ev
-_ZN6swappy3EGL11FenceWaiter10threadMainEv
-_ZN6swappy3EGL11FenceWaiter11waitForIdleEv
-_ZN6swappy3EGL11FenceWaiter15onFenceCreationEPvS2_
-_ZN6swappy3EGL11FenceWaiter19getFencePendingTimeEv
-_ZN6swappy3EGL11FenceWaiterC1ENSt6__ndk16chrono8durationIxNS2_5ratioILl1ELl1000000000EEEEE
-_ZN6swappy3EGL11FenceWaiterC2ENSt6__ndk16chrono8durationIxNS2_5ratioILl1ELl1000000000EEEEE
-_ZN6swappy3EGL11FenceWaiterD1Ev
-_ZN6swappy3EGL11FenceWaiterD2Ev
-_ZN6swappy3EGL14getNextFrameIdEPvS1_
-_ZN6swappy3EGL14resetSyncFenceEPv
-_ZN6swappy3EGL14statsSupportedEv
-_ZN6swappy3EGL18getFrameTimestampsEPvS1_m
-_ZN6swappy3EGL19lastFrameIsCompleteEPv
-_ZN6swappy3EGL19setPresentationTimeEPvS1_NSt6__ndk16chrono10time_pointINS3_12steady_clockENS3_8durationIxNS2_5ratioILl1ELl1000000000EEEEEEE
-_ZN6swappy3EGL6createENSt6__ndk16chrono8durationIxNS1_5ratioILl1ELl1000000000EEEEES6_
-_ZN6swappy7CpuInfoC1Ev
-_ZN6swappy7CpuInfoC2Ev
-_ZN6swappy7to_maskE9cpu_set_t
-_ZN6swappy8Settings11addListenerENSt6__ndk18functionIFvvEEE
-_ZN6swappy8Settings11getInstanceEv
-_ZN6swappy8Settings14setUseAffinityEb
-_ZN6swappy8Settings15notifyListenersEv
-_ZN6swappy8Settings16setRefreshPeriodENSt6__ndk16chrono8durationIxNS1_5ratioILl1ELl1000000000EEEEE
-_ZN6swappy8Settings17setSwapIntervalNSEm
-_ZN6swappy8Settings5resetEv
-_ZN6swappy8Settings8instanceE
-_ZN6swappy8SwappyGL11enableStatsEb
-_ZN6swappy8SwappyGL11getInstanceEv
-_ZN6swappy8SwappyGL12swapInternalEPvS1_
-_ZN6swappy8SwappyGL14resetSyncFenceEPv
-_ZN6swappy8SwappyGL14sInstanceMutexE
-_ZN6swappy8SwappyGL15destroyInstanceEv
-_ZN6swappy8SwappyGL15getFenceTimeoutEv
-_ZN6swappy8SwappyGL15onChoreographerEl
-_ZN6swappy8SwappyGL15setFenceTimeoutENSt6__ndk16chrono8durationIxNS1_5ratioILl1ELl1000000000EEEEE
-_ZN6swappy8SwappyGL16recordFrameStartEPvS1_
-_ZN6swappy8SwappyGL17getSwapIntervalNSEv
-_ZN6swappy8SwappyGL19lastFrameIsCompleteEPv
-_ZN6swappy8SwappyGL19setAutoPipelineModeEb
-_ZN6swappy8SwappyGL19setAutoSwapIntervalEb
-_ZN6swappy8SwappyGL19setPresentationTimeEPvS1_
-_ZN6swappy8SwappyGL4initEP7_JNIEnvP8_jobject
-_ZN6swappy8SwappyGL4swapEPvS1_
-_ZN6swappy8SwappyGL6getEglEv
-_ZN6swappy8SwappyGL8getStatsEP11SwappyStats
-_ZN6swappy8SwappyGL9addTracerEPK12SwappyTracer
-_ZN6swappy8SwappyGL9isEnabledEv
-_ZN6swappy8SwappyGL9sInstanceE
-_ZN6swappy8SwappyGLC1EP7_JNIEnvP8_jobjectNS0_14ConstructorTagE
-_ZN6swappy8SwappyGLC2EP7_JNIEnvP8_jobjectNS0_14ConstructorTagE
-_ZN6swappy8SwappyGLD2Ev
-_ZN6swappy9to_stringEi
-_ZN7gamesdk5Trace6createEv
-_ZN7_JNIEnv14CallLongMethodEP8_jobjectP10_jmethodIDz
-_ZN7_JNIEnv14CallVoidMethodEP8_jobjectP10_jmethodIDz
-_ZN7_JNIEnv15CallFloatMethodEP8_jobjectP10_jmethodIDz
-_ZN7_JNIEnv16CallObjectMethodEP8_jobjectP10_jmethodIDz
-_ZN7_JNIEnv9NewObjectEP7_jclassP10_jmethodIDz
 _Znam
-_ZNK6swappy7CpuInfo11getHardwareEv
-_ZNK6swappy7CpuInfo15getBigCoresMaskEv
-_ZNK6swappy7CpuInfo15getNumberOfCpusEv
-_ZNK6swappy7CpuInfo18getLittleCoresMaskEv
-_ZNK6swappy7CpuInfo19getNumberOfBigCoresEv
-_ZNK6swappy7CpuInfo22getNumberOfLittleCoresEv
-_ZNK6swappy7CpuInfo7getCpusEv
-_ZNK6swappy8Settings14getUseAffinityEv
-_ZNK6swappy8Settings16getRefreshPeriodEv
-_ZNK6swappy8Settings17getSwapIntervalNSEv
 _ZNKSt11logic_error4whatEv
-_ZNKSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvilEEENS_9allocatorIS7_EEEEPFvPvilEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_E7__cloneEPNS0_6__baseIS6_EE
-_ZNKSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvilEEENS_9allocatorIS7_EEEEPFvPvilEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_E7__cloneEv
-_ZNKSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvlEEENS_9allocatorIS7_EEEEPFvPvlEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_E7__cloneEPNS0_6__baseIS6_EE
-_ZNKSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvlEEENS_9allocatorIS7_EEEEPFvPvlEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_E7__cloneEv
-_ZNKSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvvEEENS_9allocatorIS7_EEEEPFvPvEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_E7__cloneEPNS0_6__baseIS6_EE
-_ZNKSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvvEEENS_9allocatorIS7_EEEEPFvPvEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_E7__cloneEv
-_ZNKSt6__ndk119__shared_weak_count13__get_deleterERKSt9type_info
 _ZNKSt6__ndk123__match_any_but_newlineIcE6__execERNS_7__stateIcEE
 _ZNKSt6__ndk16locale4nameEv
 _ZNKSt6__ndk16locale9use_facetERNS0_2idE
@@ -6506,69 +6180,24 @@ _ZNKSt6__ndk18ios_base6getlocEv
 Z n{[ n
 Z nRZ n
 _ZNSt11logic_errorC2EPKc
-_ZNSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvilEEENS_9allocatorIS7_EEEEPFvPvilEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_E18destroy_deallocateEv
-_ZNSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvilEEENS_9allocatorIS7_EEEEPFvPvilEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_E7destroyEv
-_ZNSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvilEEENS_9allocatorIS7_EEEEPFvPvilEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_EclEOiOl
-_ZNSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvilEEENS_9allocatorIS7_EEEEPFvPvilEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_ED0Ev
-_ZNSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvlEEENS_9allocatorIS7_EEEEPFvPvlEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_E18destroy_deallocateEv
-_ZNSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvlEEENS_9allocatorIS7_EEEEPFvPvlEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_E7destroyEv
-_ZNSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvlEEENS_9allocatorIS7_EEEEPFvPvlEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_EclEOl
-_ZNSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvlEEENS_9allocatorIS7_EEEEPFvPvlEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_ED0Ev
-_ZNSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvvEEENS_9allocatorIS7_EEEEPFvPvEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_E18destroy_deallocateEv
-_ZNSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvvEEENS_9allocatorIS7_EEEEPFvPvEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_E7destroyEv
-_ZNSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvvEEENS_9allocatorIS7_EEEEPFvPvEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_EclEv
-_ZNSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvvEEENS_9allocatorIS7_EEEEPFvPvEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_ED0Ev
-_ZNSt6__ndk111this_thread9sleep_forERKNS_6chrono8durationIxNS_5ratioILl1ELl1000000000EEEEE
-_ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEmPKcm
-_ZNSt6__ndk114__thread_proxyINS_5tupleIJNS_10unique_ptrINS_15__thread_structENS_14default_deleteIS3_EEEEMN6swappy3EGL11FenceWaiterEFvvEPS9_EEEEEPvSE_
 _ZNSt6__ndk115__get_classnameEPKcb
-_ZNSt6__ndk115__thread_structC1Ev
-_ZNSt6__ndk115__thread_structD1Ev
-_ZNSt6__ndk118condition_variable10notify_allEv
-_ZNSt6__ndk118condition_variable4waitERNS_11unique_lockINS_5mutexEEE
-_ZNSt6__ndk118condition_variableD1Ev
 _ZNSt6__ndk119__shared_weak_count12__add_sharedEv
-_ZNSt6__ndk119__shared_weak_count14__release_weakEv
 _ZNSt6__ndk119__shared_weak_count16__release_sharedEv
 _ZNSt6__ndk119__shared_weak_countD2Ev
-_ZNSt6__ndk119__thread_local_dataEv
 _ZNSt6__ndk120__get_collation_nameEPKc
-_ZNSt6__ndk120__shared_ptr_emplaceINS_5mutexENS_9allocatorIS1_EEE16__on_zero_sharedEv
-_ZNSt6__ndk120__shared_ptr_emplaceINS_5mutexENS_9allocatorIS1_EEE21__on_zero_shared_weakEv
-_ZNSt6__ndk120__shared_ptr_emplaceINS_5mutexENS_9allocatorIS1_EEED0Ev
-_ZNSt6__ndk120__shared_ptr_emplaceINS_5mutexENS_9allocatorIS1_EEED2Ev
-_ZNSt6__ndk120__shared_ptr_pointerIPN6swappy3EGLENS_14default_deleteIS2_EENS_9allocatorIS2_EEE16__on_zero_sharedEv
-_ZNSt6__ndk120__shared_ptr_pointerIPN6swappy3EGLENS_14default_deleteIS2_EENS_9allocatorIS2_EEE21__on_zero_shared_weakEv
-_ZNSt6__ndk120__shared_ptr_pointerIPN6swappy3EGLENS_14default_deleteIS2_EENS_9allocatorIS2_EEED0Ev
-_ZNSt6__ndk120__throw_system_errorEiPKc
 _ZNSt6__ndk15ctypeIcE2idE
-_ZNSt6__ndk15mutex4lockEv
-_ZNSt6__ndk15mutex6unlockEv
-_ZNSt6__ndk15mutexD1Ev
-_ZNSt6__ndk16chrono12steady_clock3nowEv
 _ZNSt6__ndk16localeC1ERKS0_
 _ZNSt6__ndk16localeC1Ev
 _ZNSt6__ndk16localeD1Ev
-_ZNSt6__ndk16thread4joinEv
-_ZNSt6__ndk16threadD1Ev
-_ZNSt6__ndk16vectorIN6swappy12SwappyCommon13FrameDurationENS_9allocatorIS3_EEE21__push_back_slow_pathIRKS3_EEvOT_
-_ZNSt6__ndk16vectorIN6swappy15FrameStatistics8EGLFrameENS_9allocatorIS3_EEE21__push_back_slow_pathIS3_EEvOT_
-_ZNSt6__ndk16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE21__push_back_slow_pathIS6_EEvOT_
-_ZNSt6__ndk16vectorINS_6threadENS_9allocatorIS1_EEE21__push_back_slow_pathIS1_EEvOT_
-_ZNSt6__ndk16vectorINS_8functionIFvvEEENS_9allocatorIS3_EEE24__emplace_back_slow_pathIJS3_EEEvDpOT_
-_ZNSt6__ndk16vectorINS_8functionIFvvEEENS_9allocatorIS3_EEE6assignIPS3_EENS_9enable_ifIXaasr21__is_forward_iteratorIT_EE5valuesr16is_constructibleIS3_NS_15iterator_traitsISA_E9referenceEEE5valueEvE4typeESA_SA_
 _ZNSt6__ndk17collateIcE2idE
-_ZNSt6__ndk18functionIFvvEE4swapERS2_
 _ZNSt6__ndk18ios_base4initEPv
 _ZNSt6__ndk18ios_base5clearEj
 _ZNSt6__ndk18ios_baseD2Ev
-_ZNSt6__ndk1plIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EERKS9_PKS6_
 _ZNV16CThreadFastMutex4LockEyj
 _Znwm
 Z n)Y n
 \z^@Q
 _ZSt18uncaught_exceptionv
-_ZSt9terminatev
 zsx:K
 _ZTCNSt6__ndk118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE0_NS_13basic_istreamIcS2_EE
 _ZTCNSt6__ndk119basic_istringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE0_NS_13basic_istreamIcS2_EE
@@ -6596,21 +6225,11 @@ _ZTSNSt6__ndk19basic_iosIcNS_11char_traitsIcEEEE
 _ZTVN10__cxxabiv117__class_type_infoE
 _ZTVN10__cxxabiv120__si_class_type_infoE
 _ZTVN10__cxxabiv121__vmi_class_type_infoE
-_ZTVN6swappy19ChoreographerThreadE
-_ZTVN6swappy21NoChoreographerThreadE
-_ZTVN6swappy22NDKChoreographerThreadE
-_ZTVN6swappy23JavaChoreographerThreadE
-_ZTVNSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvilEEENS_9allocatorIS7_EEEEPFvPvilEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_EE
-_ZTVNSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvlEEENS_9allocatorIS7_EEEEPFvPvlEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_EE
-_ZTVNSt6__ndk110__function6__funcIZN6swappy12addToTracersINS_4listINS_8functionIFvvEEENS_9allocatorIS7_EEEEPFvPvEEEvRT_T0_SB_EUlDpT_E_NS8_ISJ_EES6_EE
 _ZTVNSt6__ndk115basic_streambufIcNS_11char_traitsIcEEEE
 _ZTVNSt6__ndk115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE
 _ZTVNSt6__ndk118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE
 _ZTVNSt6__ndk119basic_istringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE
 _ZTVNSt6__ndk119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE
-_ZTVNSt6__ndk120__shared_ptr_emplaceINS_5mutexENS_9allocatorIS1_EEEE
-_ZTVNSt6__ndk120__shared_ptr_pointerIPN6swappy3EGLENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE
 _ZTVSt12length_error
 /ZW?Ok
 {zx	=
-_ZZN7gamesdk5Trace11getInstanceEvE5trace
