@@ -1,5 +1,5 @@
 #!/bin/bash
-set -xe
+set -xeo pipefail
 
 PASSWORD="$(head -n 1 password.txt)"
 
