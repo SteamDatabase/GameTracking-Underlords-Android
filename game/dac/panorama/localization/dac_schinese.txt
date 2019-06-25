@@ -421,7 +421,7 @@
 	"dac_unit_neutral_thunder_lizard_small"				"雷肤兽"
 	"dac_unit_neutral_thunder_lizard_small_lore"		"要说我对这一行有什么了解的，那就是：小孩子喜欢看巨型蜥蜴绞碎格斗士。- <i>行内人格瑞克</i>"
 	"dac_unit_neutral_black_dragon"						"黑龙"
-	"dac_unit_neutral_black_dragon_lore"				"咱们不谈我是从哪儿把这东西弄到手的。- <i>龙走私犯格瑞克</i>"
+	"dac_unit_neutral_black_dragon_lore"				"咱们不谈我是从哪儿把这东西弄到手的。- <i>贩龙的格瑞克</i>"
 	"dac_unit_neutral_troll_dark_a"						"黑暗巨魔小怪"
 	"dac_unit_neutral_troll_dark_a_lore"				"金玉良言：别和这些家伙拼酒。- <i>格瑞克分享来之不易的智慧</i>"
 	"dac_unit_neutral_troll_dark_b"						"黑暗巨魔老怪"
@@ -477,6 +477,10 @@
 	"dac_item_boots_of_speed"							"速度之靴"
 	"dac_item_boots_of_speed_desc"						"+100% 移动速度。"
 	"dac_item_boots_of_speed_lore"						"对需要动动腿的懒人来说再好不过了。- <i>白色尖塔销赃人泽诺克</i>"			
+
+	"dac_item_tranquil_boots"							"静谧之鞋"
+	"dac_item_tranquil_boots_desc"						"+100% 移动速度。+16 生命恢复。"
+	"dac_item_tranquil_boots_lore"						"你卖给我的速度之靴基本上是一文不值。给我点用得上的好东西。- <i>白色尖塔销赃人泽诺克</i>"
 	
 	"dac_item_octarine_fragment"						"玲珑精华"
 	"dac_item_octarine_fragment_desc"					"减少 50% 冷却时间。"
@@ -560,7 +564,7 @@
 	"dac_item_skadi_lore"								"你不会想知道我怎么弄到这个的……- <i>白色尖塔销赃人泽诺克</i>"
 	
 	"dac_item_chainmail"								"锁子甲"
-	"dac_item_chainmail_desc"							"+5 护甲值。"
+	"dac_item_chainmail_desc"							"+10 护甲值。"
 	"dac_item_chainmail_lore"							"又实用又可靠。- <i>白色尖塔销赃人泽诺克</i>"
 	
 	"dac_item_gloves_of_haste"							"加速手套"
@@ -595,6 +599,10 @@
 	"dac_item_basher_desc"								"+25 攻击。有 25% 几率眩晕目标 1.5 秒。"
 	"dac_item_basher_lore"								"受到震荡的敌人离死不远了。- <i>白色尖塔销赃人泽诺克</i>"
 	
+	"dac_item_pipe_of_insight"							"洞察烟斗"
+	"dac_item_pipe_of_insight_desc"						"+50% 魔法抗性。如果第一个敌人魔法值为 100%，给最多 1 格之内的友军添加护盾，格挡 400 魔法伤害（一场战斗一次）。"
+	"dac_item_pipe_of_insight_lore"						"你以为修补匠疯狂的主意是从哪儿来的？- <i>白色尖塔销赃人泽诺克</i>"
+
 	"dac_item_summoning_stone"							"召唤神石"
 	"dac_item_summoning_stone_desc"						"受到召唤的友方单位 +150 生命值和 +30 攻击速度。"
 	"dac_item_summoning_stone_lore"						"把你的敌人淹没在源源不断的血肉潮水之中。- <i>白色尖塔销赃人泽诺克</i>"
@@ -628,7 +636,7 @@
 	"dac_item_humans_turn_undead_lore"					"这个小镇有办法让你全力以赴。- <i>白色尖塔销赃人泽诺克</i>"
 	
 	"dac_item_elves_start_invisible"					"无踪目标"
-	"dac_item_elves_start_invisible_desc"				"<span class='Elf'>Elusive</span> <img class='InlineSynergyIcon SynergyElusive'/> units are invisible for the first 3 seconds of a battle."
+	"dac_item_elves_start_invisible_desc"				"<span class='Elf'>无踪</span> <img class='InlineSynergyIcon SynergyElusive'/> 单位在战斗前 3 秒不可见。"
 	"dac_item_elves_start_invisible_lore"				"看不见就更刺不中了。- <i>白色尖塔销赃人泽诺克</i>"
 	
 	"dac_item_shamans_hex_attackers"					"萨满胆识"
@@ -636,7 +644,7 @@
 	"dac_item_shamans_hex_attackers_lore"				"你应该看看上一个背叛恩诺的出什么事了。- <i>白色尖塔销赃人泽诺克</i>"
 	
 	"dac_item_assassins_blind_on_landing"				"口袋细沙"
-	"dac_item_assassins_blind_on_landing_desc"			"<span class='Assassin'>刺客</span> <img class='InlineSynergyIcon SynergyAssassins'/> 将使他们落地点周围 1 格内的敌人致盲 2 秒（有 50% 几率失手）。"
+	"dac_item_assassins_blind_on_landing_desc"			"<span class='Assassin'>刺客</span> <img class='InlineSynergyIcon SynergyAssassins'/> 将使他们落地点周围 1 格内的敌人致盲 2 秒（有 50% 几率失手，受到攻击时魔法值降低 50%）。"
 	"dac_item_assassins_blind_on_landing_lore"			"葵艾特打架不管公不公平，只看能不能赢。- <i>白色尖塔销赃人泽诺克</i>"
 	
 	"dac_item_extra_items"								"有钱人的烦恼"
@@ -648,7 +656,7 @@
 	"dac_item_better_items_lore"						"你真正想要的东西在后面。- <i>白色尖塔销赃人泽诺克</i>"
 	
 	"dac_item_bonus_damage_on_low_life"					"绝望手段"
-	"dac_item_bonus_damage_on_low_life_desc"			"你的霸主每受到 5 伤害，你的单位即可获得 +1% 攻击伤害。"
+	"dac_item_bonus_damage_on_low_life_desc"			"你的霸主每受到 5 伤害，你的单位获得 +1% 攻击伤害和 +1% 魔法值。"
 	"dac_item_bonus_damage_on_low_life_lore"			"困兽最危险。- <i>白色尖塔销赃人泽诺克</i>"
 	
 	"dac_item_prevent_next_life_loss"					"不朽之守护"
@@ -716,10 +724,6 @@
 	"dac_item_warlocks_spell_lifesteal_desc"			"<span class='Warlock'>术士</span> <img class='InlineSynergyIcon SynergyWarlocks'/> 治疗周围 1 格内的友方单位受到的所有技能和物品伤害的 25%。"
 	"dac_item_warlocks_spell_lifesteal_lore"			"说真的，这个有点怪。- <i>白色尖塔销赃人泽诺克</i>"
 	
-	"dac_item_elves_start_invisible"					"Elusive Targets"
-	"dac_item_elves_start_invisible_desc"				"<span class='Elf'>无踪</span> <img class='InlineSynergyIcon SynergyElusive'/> 单位在战斗前 3 秒不可见。"
-	"dac_item_elves_start_invisible_lore"				"It's hard to stab what you can't see. - <i>Zenok, White Spire Fence</i>"
-	
 	"dac_item_undeads_stop_healing"						"邪恶意念"
 	"dac_item_undeads_stop_healing_desc"				"你每拥有一个<span class='Undead'>无情</span> <img class='InlineSynergyIcon SynergyHeartless'/> 单位，对手的治疗效果便降低 25%。"
 	"dac_item_undeads_stop_healing_lore"				"有人就是喜欢见到别人受苦。- <i>白色尖塔销赃人泽诺克</i>"
@@ -734,9 +738,9 @@
 	"dac_bp1_bonus_attack_1"							"+1% 攻击伤害加成"
 	"dac_bp1_bonus_hp_1"								"+1% 生命值加成"
 	"dac_bp1_bonus_ability_dmg_1"						"+1% 技能伤害加成"
-	"dac_bp1_title_journeyman"							"学成出师头衔"
-	"dac_bp1_title_winner"								"赢家头衔"
-	"dac_bp1_title_banana"								"香蕉头衔"
+	"dac_bp1_title_journeyman"							"学成出师称号"
+	"dac_bp1_title_winner"								"赢家称号"
+	"dac_bp1_title_banana"								"香蕉称号"
 	"dac_bp1_background_fire"							"火焰对战屏幕背景"
 	
 	"dac_achievement_bp1_win"							"赢一场比赛。"
@@ -1099,7 +1103,7 @@
 
 	"DAC_Synergy_Desc_Demon_1"		"所有恶魔单位获得 +50% 纯粹伤害。在棋盘上只有一种恶魔单位时有效"
 
-	"DAC_Synergy_Desc_Dragon_1"		"所有龙族单位在战斗之初有完整魔法值"
+	"DAC_Synergy_Desc_Dragon_1"		"所有龙族单位解锁一个额外龙族技能。"
 
 	"DAC_Synergy_Desc_Dwarf_1"		"所有神枪手单位专门攻击生命值最低的敌人"
 
@@ -1110,8 +1114,8 @@
 	"DAC_Synergy_Desc_Elf_2"		"所有无踪单位获得 +45% 闪避"
 	"DAC_Synergy_Desc_Elf_3"		"所有无踪单位获得 +75% 闪避"
 
-	"DAC_Synergy_Desc_Goblin_1"		"一名随机友军获得 +15 护甲值和 +10 生命恢复"
-	"DAC_Synergy_Desc_Goblin_2"		"友军获得 +15 护甲值和 +10 生命恢复"
+	"DAC_Synergy_Desc_Goblin_1"		"随机友军获得 +9 护甲值和 +8 生命恢复。如果开始战斗时你的单位数量少于对手，护甲值和生命值加倍。"
+	"DAC_Synergy_Desc_Goblin_2"		"友军获得 +9 护甲值和 +8 生命恢复。如果开始战斗时你的单位数量少于对手，护甲值和生命值加倍。"
 
 	"DAC_Synergy_Desc_Human_1"		"所有人族单位在攻击时有 20% 几率使目标沉默 4 秒"
 	"DAC_Synergy_Desc_Human_2"		"所有人族单位在攻击时有 44% 几率使目标沉默 4 秒"
@@ -1145,9 +1149,9 @@
 	"DAC_Synergy_Desc_Hunter_1"		"所有猎人有 20% 几率快速进行 2 次攻击"
 	"DAC_Synergy_Desc_Hunter_2"		"所有猎人有 35% 几率快速进行 2 次攻击"
 
-	"DAC_Synergy_Desc_Knight_1"		"骑士单位站在另一名骑士周围 1 格内时，受到的物理和魔法伤害降低 25%。"
-	"DAC_Synergy_Desc_Knight_2"		"骑士单位站在另一名骑士周围 1 格内时，受到的物理和魔法伤害降低 35%。"
-	"DAC_Synergy_Desc_Knight_3"		"骑士单位站在另一名骑士周围 1 格内时，受到的物理和魔法伤害降低 50%。"
+	"DAC_Synergy_Desc_Knight_1"		"骑士单位受到的物理和魔法伤害降低 10%，如果站在另一名骑士周围 1 格内时，再额外降低 15%。"
+	"DAC_Synergy_Desc_Knight_2"		"骑士单位受到的物理和魔法伤害降低 20%，如果站在另一名骑士周围 1 格内时，再额外降低 20%。"
+	"DAC_Synergy_Desc_Knight_3"		"骑士单位受到的物理和魔法伤害降低 30%，如果站在另一名骑士周围 1 格内时，再额外降低 25%。"
 
 	"DAC_Synergy_Desc_Mage_1"		"敌人的魔法抗性减少 40%"
 	"DAC_Synergy_Desc_Mage_2"		"敌人的魔法抗性减少 100%"
@@ -1510,14 +1514,14 @@
 	"DAC_LevelUp_Title_Major"	"天梯提升！"
 	"DAC_LevelDown_Title_Minor"	"你降了一级！"
 
-	"DAC_Rank_Name_1"							"新晋后生"
-	"DAC_Rank_Name_2"							"江湖术士"
-	"DAC_Rank_Name_3"							"天涯亡徒"
-	"DAC_Rank_Name_4"							"执行专家"
-	"DAC_Rank_Name_5"							"隐形大亨"
-	"DAC_Rank_Name_6"							"地方统领"
-	"DAC_Rank_Name_7"							"江湖一霸"
-	"DAC_Rank_Name_8"							"江湖至尊"
+	"DAC_Rank_Name_1"							"初出茅庐"
+	"DAC_Rank_Name_2"							"小试牛刀"
+	"DAC_Rank_Name_3"							"略有建树"
+	"DAC_Rank_Name_4"							"出类拔萃"
+	"DAC_Rank_Name_5"							"百里挑一"
+	"DAC_Rank_Name_6"							"卓越超群"
+	"DAC_Rank_Name_7"							"独步江湖"
+	"DAC_Rank_Name_8"							"称霸天下"
 	"DAC_Tier_Name_1"							"第 1 级"
 	"DAC_Tier_Name_2"							"第 2 级"
 	"DAC_Tier_Name_3"							"第 3 级"
@@ -1595,6 +1599,7 @@
 	"dac_hotkey_lock_desc"							"锁定商店，使其在下一轮开始时不会重新选择。"
 	"dac_hotkey_opponent_board_desc"				"查看你当前对手的棋盘。"
 	"dac_hotkey_away_board_desc"					"查看正与你的军团作战的玩家的棋盘。"
+	"dac_hotkey_chat_desc"							"切换聊天"
 
 	"DAC_Tutorial_Intro_Title"						"孩子："
 	"DAC_Tutorial_Intro_Body1"						"当你读到这封信的时候，我已经不在了——这意味着白色尖塔已经战火纷飞了。<br><br>我再也无法保护你了，但我可以教你怎样指挥一个军团。一旦学会，你不仅能幸免于难……整个城池也许都会在你的掌控之中。<br><br>祝你好运。小心暗箭。"
@@ -1620,4 +1625,12 @@
 	"DAC_Tutorial_OverpopPopup"						"你在棋盘上部署的单位过多！战斗开始时，<span class='Emphasis'>多余单位会被移除</span>。记住，你的等级就是你能在棋盘上部署的英雄数量。"
 
 	"DAC_Ability_Panel_Cooldown"	"冷却时间：{s:ability_cooldown}"
+
+	"DAC_Hero_Odds_XP"								"经验值：{i:xp} / {i:next_level_xp}"
+	"DAC_Hero_Odds_Header"							"根据你的玩家等级，单位在商店中出现的几率："
+	"DAC_Hero_Odds_Tier1"							"第 1 梯队单位：{s:odds_tier_1}%"
+	"DAC_Hero_Odds_Tier2"							"第 2 梯队单位：{s:odds_tier_2}%"
+	"DAC_Hero_Odds_Tier3"							"第 3 梯队单位：{s:odds_tier_3}%"
+	"DAC_Hero_Odds_Tier4"							"第 4 梯队单位：{s:odds_tier_4}%"
+	"DAC_Hero_Odds_Tier5"							"第 5 梯队单位：{s:odds_tier_5}%"
 }

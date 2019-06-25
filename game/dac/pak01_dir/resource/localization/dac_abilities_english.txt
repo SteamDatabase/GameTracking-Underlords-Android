@@ -36,7 +36,7 @@
 		//JUGGERNAUT
 		"dac_ability_juggernaut_blade_fury"										"Blade Fury"
 		"dac_ability_juggernaut_blade_fury_Description"							"Juggernaut spins with his blade, rendering him immune to magic and dealing {s:damage} damage per second to enemy units {s:radius} cell away for {s:duration} seconds."
-		"dac_ability_juggernaut_blade_fury_Lore"								"Yunero isn't just a warrior.  He's a Juggernaut.  If we get him on our side, we'll be stacking bodies in no time. - <i>In which Grek looks at all the angles</i>"
+		"dac_ability_juggernaut_blade_fury_Lore"								"Yurnero isn't just a warrior.  He's a Juggernaut.  If we get him on our side, we'll be stacking bodies in no time. - <i>In which Grek looks at all the angles</i>"
 
 		//SANDKING
 		"dac_ability_sandking_burrowstrike"										"Burrowstrike"
@@ -92,6 +92,10 @@
 		"dac_ability_puck_illusory_orb"											"Illusory Orb"
 		"dac_ability_puck_illusory_orb_Description"								"Puck launches a magic orb that floats in a straight path, damaging enemy units along the way for {s:damage} damage."
 		"dac_ability_puck_illusory_orb_Lore"									"Don't let the way he looks fool you, Puck is a right bastard. - <i>In which Hobgen gives some words of wisdom</i>"
+
+		"dac_ability_puck_phase_shift"											"Phase Shift"
+		"dac_ability_puck_phase_shift_Description"								"PHASE SHIFT ABILITY"
+		"dac_ability_puck_phase_shift_Lore"										"That little bugger is never around when you need him. - <i>Hobgen, Impatient Underlord"
 
 		//CLOCKWERK
 		"dac_ability_clockwerk_battery_assault"									"Battery Assault"
@@ -158,14 +162,22 @@
 		"dac_ability_viper_viper_strike_Description"							"Viper's acidic venom slows an enemy unit's movement and attack speed by {s:bonus_attack_speed}% while also dealing {s:damage} poison damage over time.<br><br>The slowing effect fades over the duration of the poison."
 		"dac_ability_viper_viper_strike_Lore"									"We're not that different... I too, know what it means to be a slave. - <i>Quiet, Plotting Automoton</i>"
 
+		"dac_ability_viper_corrosive_skin"										"Corrosive Skin"
+		"dac_ability_viper_corrosive_skin_Description"							"CORROSIVE SKIN ABILITY"
+		"dac_ability_viper_corrosive_skin_Lore"									"I'd love to figure out a way to make a coat out of that one... - <i>Carl, Big Dreams"
+
 		//LUNA
 		"dac_ability_luna_moon_glaive"											"Moon Glaives"
 		"dac_ability_luna_moon_glaive_Description"								"PASSIVE: Luna's glaives bounce between enemies {s:range} cells away.<br><br>Glaives deal {s:damage_reduction_percent}% less damage with each bounce."
 		"dac_ability_luna_moon_glaive_Lore"										"I can't understand half of what you're sayin', but I like the way you throw those things. - <i>Grek, People Person</i>"
 
 		//DRAGON KNIGHT
+		"dac_ability_dragon_knight_breathe_fire"								"Breathe Fire"
+		"dac_ability_dragon_knight_breathe_fire_Description"					"BREATHE FIRE ABILITY"
+		"dac_ability_dragon_knight_breathe_fire_Lore"							"Davion, your talents are being wasted on someone who doesn't appreciate the beauty of what you do. - <i>In which Hobgen trys to poach talent"
+
 		"dac_ability_dragon_knight_elder_dragon_form"							"Elder Dragon Form"
-		"dac_ability_dragon_knight_elder_dragon_form_Description"				"Dragon Knight takes the form of one of three powerful elder dragons, increasing his movement speed by {s:bonus_movement_speed}% and granting him new powers.<br><br>Green Dragon:\nAttacks deal {s:corrosive_breath_damage} poison damage per second for {s:corrosive_breath_duration} seconds.<br><br>Red Dragon:\nAttacks damage all enemy units {s:splash_radius} cell away from his target for {s:splash_damage_percent}% damage, with Corrosive Breath added to the targets.<br><br>Blue Dragon:\nSlows movement speed by {s:frost_bonus_movement_speed}% and attack speed by {s:frost_bonus_attack_speed}% of enemy units {s:frost_aoe} cell away for {s:frost_duration} seconds, with Corrosive Breath added to the targets."
+		"dac_ability_dragon_knight_elder_dragon_form_Description"				"Dragon Knight takes the form of one of three powerful elder dragons, increasing his movement speed by {s:bonus_movement_speed}% and granting him new powers.<br><br>Green Dragon:\nAttacks deal {s:corrosive_breath_damage} poison damage per second for {s:corrosive_breath_duration} seconds.<br><br>Red Dragon:\nIn addition to poisoning enemies, attacks damage all enemy units {s:splash_radius} cell away from the target for {s:splash_damage_percent}% damage.<br><br>Blue Dragon:\nIn addition to poisoning enemies, attacks slows movement speed by {s:frost_bonus_movement_speed}% and attack speed by {s:frost_bonus_attack_speed}% to enemy units {s:frost_aoe} cell away from the target for {s:frost_duration} seconds."
 		"dac_ability_dragon_knight_elder_dragon_form_Lore"						"Kaden spoke highly of you, let's hope his praise was well earned. - <i>Wren, Friend to Dragon Hold</i>"
 
 		//ENCHANTRESS
@@ -292,7 +304,7 @@
 		
 		//ARC WARDEN
 		"dac_ability_arc_warden_tempest_double"									"Tempest Double"
-		"dac_ability_arc_warden_tempest_double_Description"						"Arc Warden creates a copy of himself.<br><br>The duplicate can use all of Arc Warden's current items and spells and has separate cooldowns, but generates {s:mana_dampen_outgoing}% mana from outgoing attacks, and no mana upon recieving damage."
+		"dac_ability_arc_warden_tempest_double_Description"						"Arc Warden creates a copy of himself.<br><br>The duplicate can use all of Arc Warden's current items and spells and has separate cooldowns, but generates {s:mana_dampen_outgoing}% mana from outgoing attacks, and no mana upon receiving damage."
 		"dac_ability_arc_warden_tempest_double_Lore"							"He brings with him the mysteries of creation. - <i>Turath, Cryptic Prophet</i>"
 		
 		//MIRANA

@@ -126,7 +126,6 @@ $@)#@@)
 -1=App controlled, 0=DONT_CARE, 1=CPU_OPTIMIZED, 2=GPU_OPTIMIZED, 3=RENDER_DIRECT_TO_FRAMEBUFFER
 !1AQaq
 !>@=1B
-@)1	F
 /1V?O	
 /1V?OA
 /1V?OR
@@ -138,7 +137,9 @@ $@)#@@)
 20CRefCountServiceBaseILb1E6CRefMTE
 20CRenderDeviceMgrBase
 20CTextureManagerGLNew
+20IHibernationListener
 20IResourceTypeManager
+2*1>9
 21CRenderHardwareConfig
 21CSheetHashConstructor
 21CTextureInfoChunkBase
@@ -161,6 +162,7 @@ $@)#@@)
 27CSchemaUtlVectorManipulatorI10CUtlVectorI25VsInputSignatureElement_t10CUtlMemoryIS1_iEES1_E
 28ISchemaCollectionManipulator
 2,	@9L
+2	A79"
 "2BRbr
 2DArray
 2Gio8
@@ -320,7 +322,6 @@ _8Jhj8*
 8x9,7
 |&@9{#
 .@9*]
-"'9}%
 (@@9	
 )=@9)}
 )!@9)
@@ -495,7 +496,7 @@ _A8B8G8R8_SNORM
 _A8B8G8R8_SRGB
 _A8R8G8B8
 _A8R8G8B8_SRGB
-	a[9	
+	A{9*
 	A@9)
 A@9(9
 A9a2@
@@ -646,6 +647,7 @@ binary_lz4
 BinaryProperties_GetValue
 binormal
 b"J9_@
+BK@9u`
 BKbhTb~XBK!;
 blendindices
 blendweight
@@ -924,7 +926,7 @@ DCT scaled block size %dx%d not supported
 %d..%d
 %d.%d.%d
 DDDDUUUU
-DDDDUUUUDDDDUUUUhJ
+DDDDUUUUDDDDUUUU
 -debugdxsupport
 DebugTextureInfo001
 Decompressed %i texture mips in %.2f ms (%.1fmb/s)
@@ -1132,7 +1134,7 @@ Extra compressed data
 Extra compression data
 extreme cHRM chunk cannot be converted to tristimulus values
 F-4WE-6_G-
-f!9hb!9*
+f!9hb!9
 \|FA@
 Failed AllocateTexture for '%s'
 Failed to AddVideoCardKeys.
@@ -3041,27 +3043,27 @@ glRenderbufferStorageMultisample
 GL_RENDERBUFFER_WIDTH
 GL_RENDERBUFFER_WIDTH_EXT
 gl/rendercontextgl.cpp
-gl/renderdevicegl.cpp(1210): 
-gl/renderdevicegl.cpp(1448): 
-gl/renderdevicegl.cpp(1483): 
-gl/renderdevicegl.cpp(1518): 
-gl/renderdevicegl.cpp(1553): 
-gl/renderdevicegl.cpp(1598): 
-gl/renderdevicegl.cpp(2053): 
-gl/renderdevicegl.cpp(2060): 
-gl/renderdevicegl.cpp(2106): 
-gl/renderdevicegl.cpp(2358): 
-gl/renderdevicegl.cpp(2574): 
-gl/renderdevicegl.cpp(394): 
-gl/renderdevicegl.cpp(532): 
+gl/renderdevicegl.cpp(1215): 
+gl/renderdevicegl.cpp(1453): 
+gl/renderdevicegl.cpp(1488): 
+gl/renderdevicegl.cpp(1523): 
+gl/renderdevicegl.cpp(1558): 
+gl/renderdevicegl.cpp(1603): 
+gl/renderdevicegl.cpp(2058): 
+gl/renderdevicegl.cpp(2065): 
+gl/renderdevicegl.cpp(2111): 
+gl/renderdevicegl.cpp(2363): 
+gl/renderdevicegl.cpp(2579): 
+gl/renderdevicegl.cpp(399): 
+gl/renderdevicegl.cpp(537): 
 gl/renderdevicegl.cpp(55): 
-gl/renderdevicegl.cpp(635): 
 gl/renderdevicegl.cpp(64): 
-gl/renderdevicegl.cpp(653): 
+gl/renderdevicegl.cpp(640): 
+gl/renderdevicegl.cpp(658): 
 gl/renderdevicegl.cpp(73): 
 gl/renderdevicegl.cpp(82): 
 gl/renderdevicegl.cpp(91): 
-gl/renderdevicegl.cpp(942): 
+gl/renderdevicegl.cpp(947): 
 GL_RENDERER
 GL_RENDER_MODE
 GLRenderThread
@@ -3860,6 +3862,7 @@ Hih8h
 Hih8R
 Hitch alert: Present was waiting for %d iterations and %.1f seconds.
 hi)xh
+hj58M
 hj8."@
 hJAy	
 <hji8
@@ -3876,7 +3879,7 @@ Hkw8(
 hn8c|
 HookUpTextureBits
 HostStateMgr001
-hr@9J
+hr@9JQ
 hs_5_0
 http://support.steampowered.com/cgi-bin/steampowered.cfg/php/enduser/std_adp.php?p_faqid=772
 Huffman code size table overflow
@@ -4157,7 +4160,6 @@ iq8@hq81
 IQuickTime001
 ir@9I
 irA9a
-irB9h
 IS_SM_
 )Iv8(
 iv@9I
@@ -4176,8 +4178,8 @@ j(8h<
 j(8h=
 j(8H<
 j(8H=
+j)8HA
 j`8!i 8
-j(8"Z
 *j*!9	
  J9?@
 J9e:A
@@ -4202,6 +4204,7 @@ JNI_OnUnload
 JPEG datastream contains no image
 JPEGMEM
 JPEG parameter struct mismatch: library thinks size is %u, caller expects %u
+	*Jq,
 jr82"
 jr822
 jr8!hr8R
@@ -4214,13 +4217,13 @@ j(x	k(x)k(x
 	K)}@
 K[ .)
 *k2@y
+?k68e
 k68wZ@
 ?k78h
 k(8vV@
 (k:8Z
 k(8Z_F
 K	@9)
-k9B06
 #kc8Ein8
 KDDEy%
 KD$@xc
@@ -4991,6 +4994,7 @@ RecursiveLoadFromBuffer:  got } in key
 RecursiveLoadFromBuffer:  got NULL key
 RecursiveLoadFromBuffer:  recursion overflow
 RegisterConfigValue: Unknown error constructing config value "%s"!
+RegisterHibernationListener
 .rela.dyn
 .rela.plt
 Release
@@ -5142,6 +5146,7 @@ Rhj)8
 rhj)8h
 Rhjh8
 Rhjh8(
+rhjh8h
 Rhjh8h
 rhju8
 R(i*8
@@ -5778,6 +5783,7 @@ UNKNOWNTYPE
 Unknown zlib error
 Unrecognized component IDs %d %d %d, assuming YCbCr
 Unrecognized equation type for pCAL chunk
+UnregisterHibernationListener
 Unsatisfied dependency at present time = death!
 Unsupported color conversion request
 Unsupported JPEG data precision %d

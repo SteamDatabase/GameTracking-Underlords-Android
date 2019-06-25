@@ -129,6 +129,7 @@ $0 to $1,
 19ISerializedEntities
 19NetMessagePacketEnd
 1bQJ1~
+	1o9I
 1@y(1
 *1@y)}B9d
 %20.20s 
@@ -203,7 +204,6 @@ $0 to $1,
 29CMsgServerNetworkStats_Player
 2_!9k
 29NetMessageConnectionCrashed_t
-2	A;9
 2	a@9Ia
 2	AA9
 2B9h2
@@ -226,13 +226,12 @@ $0 to $1,
 2j"@9)p
 2_!(k
 2?".k
-2?k780
+2?k78
 2_k88
-2?k88/
+2?k88
 2(K@9
 2oi-x
 2 .ProtoFlattenedSerializerField_t"!
-2	Q:9s
 2@yzz@
 30CBidirMsg_RebroadcastGameEvent
 30CSVCMsgList_GameEvents_event_t
@@ -290,7 +289,6 @@ $0 to $1,
 % 5d % 5d:% 5d: %-20s [%d]: delta field %s [%s] "%s" != "%s"
 5hr@9H
 5h"@y
-5h"@yi
 )5IJ(}
 5i.@y
 5j3@y
@@ -429,6 +427,7 @@ _6inA9
 %8.3f: %s: ParseMessagesSNP RELIABLE %d bytes
 %8.3f: %s: ParseMessagesSNP UNRELIABLE Seq=%d %d bytes
 86`*@
+86);C
 86h*@
 86h2@
 86i*@
@@ -567,6 +566,7 @@ A)hR@9K
 allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
 allow_alias
 Already saw decimal point or exponent; can't have another one.
+	aM9i
 Android clang version 5.0.300080  (based on LLVM 5.0.300080)
 __android_log_write
 angle
@@ -601,7 +601,6 @@ audible_mask
 audio
 [a:%u:%u]
 [A:%u:%u:%u]
-	Av9)
 available
 Available settings:
 Average Backing Raw Paths         :  %8.3f
@@ -616,7 +615,8 @@ avg_loss_in
 avg_loss_out
 avg_packets_in
 avg_packets_out
-	aw9	
+	Aw9	
+aX9!9@
 Ay?!(k
 ^B9h^
 >B9h>
@@ -1102,9 +1102,9 @@ __cxa_pure_virtual
  D-	(@
 %d % 5d: %-20s: %32.32s %128.128s
 %d % 5d % 5d: %-20s (skip): %s %s: %s
-d6@y#
+d6@yc
+d6@yc	
 d6@yC
-d6@yC	
 .data
 databytes
 data_compressed
@@ -1307,6 +1307,7 @@ Failed to open P2P network socket '%s'
 Failed to open UDP network socket '%s'
 : failed to parse contents
 Failed to set SteamNetSockets option '%s'
+Failed to start listening for SDR on port %d.  Waiting and will retry
 Failed to unserialize message %s: expected message ID %u, encountered %u!
 fakeplayer
 false
@@ -1599,7 +1600,6 @@ h*@9h/
 (H@9h
 H@9/H@9
 h"@9i
-h"@9I
 	H@9i"
 H`@9iFG9
 *H@9j
@@ -1895,7 +1895,7 @@ J1@9k
 j48	C
 j48t^@
 j4xH;@
-j58"p
+j58"l
 J!@9#
 J@9.A
 J@9B1
@@ -1936,8 +1936,9 @@ JY@y)1
 *k2@y
 k2@yh
 ?k58D
-*?k78
+*?k78\
 ?k78h
+_k88i
 _!)kA
 K	A9lC
 Key in map fields cannot be enum types.
@@ -2012,7 +2013,6 @@ low_priority
 lseek
 [L:%u:%u]
 m%@9i)
-	!M9i
 m	A9j"
 MakeSerializersMatchByMeta failed for %s
 malloc
@@ -2168,7 +2168,7 @@ NA9iN
 [Name]
 	name_part
 NamePart
-N(B(6
+N(B(6(
 NB9hN
 needs_decoder
 Need space between identifier and decimal point.
@@ -2700,8 +2700,8 @@ QueueChange
 queued
 QueuedLoaderVersion001
 QueueDuplicate
-	q@y:
 	Q@y?
+	q@yZ
 *R)8yv
 RA9iR
 RadianEuler
@@ -2781,7 +2781,7 @@ RIO_WILL_RELAY
 r(i*xK
 rJAJJL
 rJMJJ
-R?k78
+R?k78v
 rkMKJ
 Rmij8
 rnd_down
@@ -2983,6 +2983,7 @@ slots
 %s:  NetChan QoS flow %s: %4dms latency, %5d/%5d dropped (%.1f%%)
 %s:  NetChan Setting Timeout to %4.2f seconds
 Socket '%s' bound to '%s' [%s]:
+Socket '%s' listening for SDR on port %d virtual port %d
 Socket '%s' listening for %s on port %d:
 sounddata_t
 sound_index
@@ -3218,6 +3219,7 @@ syntax
 syntax = "$0";
 System
 *T)8yv
+	!t9	
 T)	@9
 t@9)}D
 table_id
@@ -3287,6 +3289,7 @@ ThrA9
 ThrA9h
 ThRAx
 ThreadGetCurrentId
+ThreadSleep
 Thv|9(
 Th>@y
 Th.@y
@@ -3622,7 +3625,6 @@ x6ij@
 x6iz@
 X75	`7
 x7wB@
-!X9!9@
 x@9)y@9
 )x	H@9)
 )xhJ@9H

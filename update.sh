@@ -29,6 +29,7 @@ rm -rf android
 ./tools/bin/jadx -ds android -dr android androidarm64.apk
 
 # strings libraries
+set +e
 for SOFILE in $(find android -type f -name '*.so'); do
 
     nm -C -p "${SOFILE}" | grep -Evi "GCC_except_table|google::protobuf" | awk '{$1=""; print $0}' | sort -u > "${SOFILE%.so}.txt"
@@ -36,6 +37,7 @@ for SOFILE in $(find android -type f -name '*.so'); do
     git add -f "${SOFILE%.so}.txt" "${SOFILE%.so}_strings.txt"
 
 done
+set -e
 
 # track android files
 find android/{org,com} -type d > android/dirlist.txt

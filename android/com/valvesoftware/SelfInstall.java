@@ -19,6 +19,10 @@ import java.util.zip.ZipInputStream;
 public class SelfInstall {
     private static int counter;
 
+    private static boolean HasGameZip() {
+        return false;
+    }
+
     public static boolean OnStartup() {
         return CheckZippedAssets();
     }
@@ -203,25 +207,6 @@ public class SelfInstall {
             return false;
         }
         return !HasGameZip();
-    }
-
-    private static boolean HasGameZip() {
-        boolean z = true;
-        if (FindExpansionFile() != null) {
-            return true;
-        }
-        InputStream inputStream = null;
-        try {
-            inputStream = JNI_Environment.m_application.getApplicationContext().getAssets().open("game01.zip");
-            if (inputStream != null) {
-                inputStream.close();
-            }
-        } catch (Throwable unused) {
-        }
-        if (inputStream == null) {
-            z = false;
-        }
-        return z;
     }
 
     private static boolean testUnzip(InputStream inputStream, String str) throws IOException {

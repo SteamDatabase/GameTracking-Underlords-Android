@@ -322,6 +322,7 @@ $0 to $1,
 14IRenderHandler
 14IRenderService
 14ISource2Engine
+(159}
 15CBaseConstraint
 15CBaseDemoAction
 15CBaseSpawnGroup
@@ -982,6 +983,7 @@ $0 to $1,
 2	i+8h
 2ii*x
 2ij(8
+2ij(83$
 2-ik8k
 2+imx
 2iN	9
@@ -989,9 +991,9 @@ $0 to $1,
 2j"	9I
 2j"@9)p
 2?".k
-2?k78+?
-2_k88:
-2?k88*;
+2?k78%?
+2?k88$;
+2_k884
 2kii8l}C
 2Kkj8k
 2L%@x+
@@ -1094,7 +1096,6 @@ $0 to $1,
 49CNetworkServerSpawnGroup_LoadSaveGamePrerequisite
 &4@9R
 4Ayk'
-4AyK'
 4(cB9
 4CLog
 4CPVS
@@ -1194,7 +1195,7 @@ $0 to $1,
 64-bit
 6Ay+}E
 6Ayk'
-6AyY'
+6Ayy'
 6ConVar
 _6	D@
 %6d unresolved strings
@@ -1424,18 +1425,20 @@ _=8q	)
 _8X,@8
 8x9,7
 _8y,@8
- @9	#
+ @9)#
 .@9)	
 (@@9	
 (@@9		
 )=@9)}
 )!@9)
 )	@9*
+@@9	!
 @9)!@
 @9)&@
 @9*&@
 @9*	@
 @9+	@
+#)9	*
 	-^9)
 	!"9!
 	)@9)
@@ -1446,7 +1449,6 @@ _8y,@8
 @90	@9
 9	0@9i
 @91#@92
-	!`9*2
 	) 92
 92ji8R
 @92yr
@@ -1506,7 +1508,7 @@ _8y,@8
 9CGameInfo
 9CRegistry
 9	D@8
-	)	9dh
+	)	9dd
 9*E@8?
 @9E-@9U
 	%	9F
@@ -1610,7 +1612,7 @@ _8y,@8
 @9N9@9Q
 @9n	@9o
 @9O	@9P
-	!	9Oh
+	!	9Od
 	-"9P
 @9p	@9
 @9 q@
@@ -1646,16 +1648,16 @@ a2@yh2@y
 a8#%D
 _A8qh
 +a@9?
-	a=9;<
 	!A9?
 		A9?
 		A9	
 	A@9)
 	A@9)	
+	a=9;8
 a@9+a
 a@9	a
-	A"9az
-	a;9h?
+	A"9av
+	a;9h;
 		A9h
 	A9h&A
 	a_9i
@@ -1678,7 +1680,7 @@ A9|J@
 A9Kik
 +	A9lC
 ?A9tJ@
-	A%9Tt
+	A%9Tp
 A-'@A-
 	aa9	
 AA9(	
@@ -1960,10 +1962,8 @@ A@qA
 	Ar9*2
 	Ar9j2
 	Ar9J2
-	Ar9S2
+	Ar9s2
 	Ar9t2
-	Ar9T2
-	Ar9v2
 	Ar9_y
 archive
  args were given.  Full format string was: "
@@ -2165,8 +2165,7 @@ Base Spring;
 bB9hb
 BB9hB
 BB9hj:8
-bb@9j
-bBA9!
+bBA9A
 BC6h compression not supported on this target (windows only).
 BC7 compression not supported on this target (windows only).
 B channel not found!
@@ -2399,7 +2398,6 @@ Button.DepressedTextColor
 Button.FocusBorderColor
 ButtonKeyFocusBorder
 ButtonToggled
-&B)v*
 byte COM_BlockSequenceCRCByte(byte *, int, int)
 bytes. 
 Byte size calculation and serialization were inconsistent.  This may indicate a bug in protocol buffers or it may be caused by concurrent modification of 
@@ -3812,7 +3810,7 @@ D24FS8
 D24X4S4
 D24X8
 D24X8_SHADOW
-d2@yI
+d2@yi
 d3@yI
 *-D),5E)_
 d6@y#
@@ -4700,7 +4698,7 @@ fgcolor
 fgetc
 fg_image
 F*%h3x%hgx
-F-HeG
+F-H}G
 F*&h%x%hsx
 F*%h'x%hsx
 field
@@ -5472,6 +5470,7 @@ h)8Ay)
 h:]9(
 h"@9(
 h"@9)
+h"@9)#
 h"@9	
 h"@9	#
 `H9)}
@@ -5485,7 +5484,6 @@ h*\9h
 *h"@9H
 h.@9H
 h"@9i
-h"@9I
 	-H9I
 	)H9I
 h:	9i>	9
@@ -5664,7 +5662,7 @@ HParticleSystemDefinition
 HPostProcessing
 HRenderTexture
 hrEy)
-hrEy	"
+hrEy)"
 hrEyi
 hrEyu
 hrf9(
@@ -5705,6 +5703,7 @@ i6@yh
 i78w"B
 i7xh6@
 _i(8+
+?i(8!
 	*	i8
 	I*8)
 i)8a^A
@@ -5717,16 +5716,15 @@ i)8i&
 ?i(8?i*x?i+
 ?i(8v
 i*8?y*xJ
-	i;9}?
+	i;9};
 i"	9@
 I9`BA
 I9))D
 )I@9I
-	I%9it
-i*@9j	
+	I%9ip
 i"@9J
-	i=9P<
-	I"9vz
+	i=9P8
+	I"9vv
 IAppSystem *CAppSystemDict::AddSystem(const char *, const char *, ErrorResponse_t)
 IAppSystem *CAppSystemDict::AddSystem(CreateInterfaceFn, const char *)
 IAppSystem *CAppSystemDict::AddSystem(IAppSystem *, const char *)
@@ -5899,7 +5897,6 @@ Ii+x!
 	iix?!:k`
 i"@)j
 )ij8	
-ij(8!/
 )Ij8?
 Ij8)	@
 ij8)ij8*
@@ -6258,17 +6255,16 @@ IyixJylx+
 j.])	
 @ @-J
 j2	)k
-j38\c
+j38Vc
 j48	C
-j48h!
 j48t^@
 j4xH;@
-j58H$
+j58h$
 j58hf@9(
 j58"l
-j68(#
+j68H#
 j68u"@
-j68X!
+j68x!
 j7Ayh3Ay)	
 j)8hjj
 j(8(Z@
@@ -6391,13 +6387,12 @@ K1@yk
 *k2@y
 ?k58D
 K5@yk
-?k68`
+?k68Z
 *?k78
 ?k78h
-k78TO
-?k78X9
+k78NO
+?k78R9
 ?k)8(
-	k!87
 _k88?
 ?k88w
 (k;8H
@@ -6898,20 +6893,20 @@ LrwcE
 lseek
 %ls [wstring, len = %d]
 [L:%u:%u]
-	m89bM
-	m89PL
+	m89bI
+	m89PH
 	m+9|
-	m99_C
-	M&9go
-	m=9H:
+	m99_?
+	M&9gk
+	m=9H6
 	m\9i
 m%@9i)
 	!M9I
 	%M9I
-	M&9Lp
-	M%9ns
-	m=9S;
-	M%9!t
+	M&9Ll
+	M%9no
+	M%9!p
+	m=9S7
 	m+9z
 m	A9j"
 Machine
@@ -8970,19 +8965,19 @@ PVS cluster %d
 pvs.cpp
 PVS origin %s
 py_generic_services
-	q89AM
-	q89bO
-	q89/L
+	q89AI
+	q89bK
+	q89/H
 	q=9?
 	q+9[
 ?Q?9		@
-	Q&9Fo
+	Q&9Fk
 	!Q9i
 	Q[9i
 	q=9J
 *Q@9j
-	Q%9Ms
-	Q&9+p
+	Q&9+l
+	Q%9Mo
 	q+9Y
 Q(aNf(!
 qangle
@@ -9459,7 +9454,7 @@ RIO_REQUEST_RELAY
 RIO_WILL_RELAY
 rJMJJ
 RJ	* &v
-R?k78"d
+R?k78
 R?k)8
 R(k)8
 R(kh8
@@ -10554,6 +10549,7 @@ Steam headless InitInstance failed, result %d
 STEAMHEADLESS_INTERFACE_VERSION001
 Steam headless logged in OK, initializing Steam engine interfaces
 Steam headless login call %d
+Steam headless module not loaded
 Steam headless re-logged in OK
 Steam headless reset embedded client token
 Steam headless using stored credential info
@@ -10674,7 +10670,7 @@ style
 "%s":%u
 %s:%u
 %s.%u
-=	Su$
+=	Su(
 sub%dx%d.tga
 subFocus
 submrg%dx%d.tga
@@ -11471,15 +11467,15 @@ T"zrx
 \U%08x
 u64( %lld = 0x%llX )
 )U7O{
-	u89AO
-	u89 M
-	u=9]:
+	u89AK
+	u89 I
 	u+9:
+	u=9]6
 	u+98
-	u=9h;
+	u=9h7
 	U[9i
-	U&9$o
-	U&9	p
+	U&9$k
+	U&9	l
 %u[%d]
 udp/ip   : %s:%i
 udp_port
@@ -12448,7 +12444,7 @@ Y80ijx
 #Y80ijx
 Y8Qikx
 #Y8Qikx
-	y=9 ;
+	y=9 7
 	y}9i
 	-Y9i
 @y?!9k

@@ -220,8 +220,7 @@ public class PatchSystem {
     }
 
     private long GetAvailableStorageBytes() {
-        StatFs statFs = new StatFs(this.m_strSyncPath);
-        return ((long) statFs.getBlockSize()) * ((long) statFs.getBlockCount());
+        return new StatFs(this.m_strSyncPath).getAvailableBytes();
     }
 
     /* access modifiers changed from: private */
@@ -398,22 +397,29 @@ public class PatchSystem {
         applicationContext.registerReceiver(new BroadcastReceiver() {
             public void onReceive(Context context, Intent intent) {
                 long longExtra = intent.getLongExtra("extra_download_id", -1);
-                boolean z = false;
+                boolean z = true;
+                boolean z2 = false;
                 Cursor query = downloadManager.query(new Query().setFilterById(new long[]{longExtra}));
                 int i = -1;
                 String str = null;
                 if (query.moveToFirst()) {
                     if (query.getInt(query.getColumnIndex(NotificationCompat.CATEGORY_STATUS)) == 8) {
-                        z = true;
+                        z2 = true;
                     }
-                    if (!z) {
+                    if (!z2) {
                         i = query.getInt(query.getColumnIndex("reason"));
                     } else {
                         str = query.getString(query.getColumnIndex("local_uri"));
                     }
+                } else {
+                    Log.i("com.valvesoftware.PatchSystem", "moveToFirst failed");
+                    z = false;
                 }
                 query.close();
-                if (z) {
+                if (!z) {
+                    return;
+                }
+                if (z2) {
                     PatchSystem.this.OnDownloadResponseSuccess(longExtra, str);
                 } else {
                     PatchSystem.this.OnDownloadResponseFailure(longExtra, i);
