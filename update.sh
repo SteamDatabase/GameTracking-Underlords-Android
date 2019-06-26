@@ -1,5 +1,6 @@
 #!/bin/bash
 set -xeo pipefail
+touch .error
 
 PASSWORD="$(head -n 1 password.txt)"
 
@@ -37,7 +38,7 @@ for SOFILE in $(find android -type f -name '*.so'); do
     git add -f "${SOFILE%.so}.txt" "${SOFILE%.so}_strings.txt"
 
 done
-set -e
+set -eo pipefail
 
 # track android files
 find android/{org,com} -type d > android/dirlist.txt
@@ -95,3 +96,5 @@ if [ $(git diff --cached | wc -l) -ne 0 ]; then
     git push > /dev/null 2>&1
 
 fi
+
+rm .error

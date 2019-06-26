@@ -77,6 +77,10 @@
         "stolen_aspd": [ 3, 5, 7 ],
         "stolen_dmg": [ 3, 4, 5 ]
     },
+    "slark_pounce": {
+        "maxLevel": 3,
+        "disarm_duration": 3
+    },
     "dragon_knight_breathe_fire": {
         "maxLevel": 3,
         "damage": [ 200, 350, 500 ],
@@ -100,7 +104,7 @@
 	},
 	"dragon_knight_elder_dragon_form": {
         "maxLevel": 3,
-        "castPoint": 0.5,
+        "castPoint": 0.001,
         "castAnimation": "ACT_DOTA_CAST_ABILITY_4",
         "cooldown": 60,
         "manaCost": 0,
