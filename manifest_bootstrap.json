@@ -1,6 +1,873 @@
 {
   "appid": 1046930,
-  "minversion": 155,
+  "assets": {
+    "game/bin/dxsupport.cfg": {
+      "bytesize": 260835,
+      "version": "1ed8d78e"
+    },
+    "game/cacert.pem": {
+      "bytesize": 1456,
+      "version": "2b7bb32e"
+    },
+    "game/core/pak01_000.vpk": {
+      "bytesize": 9979316,
+      "version": "ec75734f"
+    },
+    "game/core/pak01_001.vpk": {
+      "bytesize": 12055632,
+      "version": "c31109dd"
+    },
+    "game/core/pak01_002.vpk": {
+      "bytesize": 9278158,
+      "version": "0cc3d47d"
+    },
+    "game/core/pak01_dir.vpk": {
+      "bytesize": 7870,
+      "version": "8ceaf44d"
+    },
+    "game/core/panorama/fonts/conf.d/20-aliases-default-win.conf": {
+      "bytesize": 748,
+      "version": "17576a7d"
+    },
+    "game/core/panorama/fonts/conf.d/20-fix-cantarell.conf": {
+      "bytesize": 391,
+      "version": "8d7f40d4"
+    },
+    "game/core/panorama/fonts/conf.d/21-aliases-wine-win7-inf.conf": {
+      "bytesize": 949,
+      "version": "badd67bb"
+    },
+    "game/core/panorama/fonts/conf.d/30-non-latin-inf-win.conf": {
+      "bytesize": 3599,
+      "version": "a4a0047b"
+    },
+    "game/core/panorama/fonts/conf.d/41-repl-os-win.conf": {
+      "bytesize": 9210,
+      "version": "bfe9d79c"
+    },
+    "game/core/panorama/fonts/conf.d/42-repl-global.conf": {
+      "bytesize": 1126,
+      "version": "0892efb3"
+    },
+    "game/core/panorama/fonts/conf.d/43-repl-tt-traced-bitmap.conf": {
+      "bytesize": 2565,
+      "version": "f9eee988"
+    },
+    "game/core/panorama/fonts/conf.d/44-repl-corrective.conf": {
+      "bytesize": 1218,
+      "version": "fd14742e"
+    },
+    "game/core/panorama/fonts/conf.d/50-base-rendering-win7-winxp.conf": {
+      "bytesize": 967,
+      "version": "87f21c59"
+    },
+    "game/core/panorama/fonts/conf.d/60-group-non-tt-fonts.conf": {
+      "bytesize": 94923,
+      "version": "c9949465"
+    },
+    "game/core/panorama/fonts/conf.d/60-group-tt-fonts.conf": {
+      "bytesize": 66644,
+      "version": "e00db6f8"
+    },
+    "game/core/panorama/fonts/conf.d/61-group-non-tt-rendering-inf-7-xp-lin.conf": {
+      "bytesize": 1144,
+      "version": "499713be"
+    },
+    "game/core/panorama/fonts/conf.d/61-group-tt-rendering-inf-7-xp.conf": {
+      "bytesize": 485,
+      "version": "d0c7e626"
+    },
+    "game/core/panorama/fonts/conf.d/62-tt-monospace-rendering.conf": {
+      "bytesize": 3921,
+      "version": "fa650d5f"
+    },
+    "game/core/panorama/fonts/conf.d/62-tt-traced-bitmap-rendering.conf": {
+      "bytesize": 7663,
+      "version": "90616ae0"
+    },
+    "game/core/panorama/fonts/conf.d/65-override.conf": {
+      "bytesize": 1390,
+      "version": "c9109080"
+    },
+    "game/core/panorama/fonts/conf.d/70-forced-synthetic.conf": {
+      "bytesize": 3011,
+      "version": "9dd3838a"
+    },
+    "game/core/panorama/fonts/conf.d/80-selective-rendering-inf-7-xp.conf": {
+      "bytesize": 1119,
+      "version": "c2b63bb5"
+    },
+    "game/core/panorama/fonts/conf.d/80-selective-rendering-inf-win-lin.conf": {
+      "bytesize": 5717,
+      "version": "cd538743"
+    },
+    "game/core/panorama/fonts/conf.d/81-final-rendering-inf-7-xp.conf": {
+      "bytesize": 1107,
+      "version": "9f646759"
+    },
+    "game/core/panorama/fonts/conf.d/90-no-synthetic.conf": {
+      "bytesize": 2270,
+      "version": "a1ee023c"
+    },
+    "game/core/panorama/fonts/conf.d/90-reject.conf": {
+      "bytesize": 687,
+      "version": "9c08ff16"
+    },
+    "game/core/panorama/fonts/conf.d/95-valve.conf": {
+      "bytesize": 1008,
+      "version": "6eff1bfd"
+    },
+    "game/core/panorama/fonts/fonts.conf": {
+      "bytesize": 5678,
+      "version": "d45a31d2"
+    },
+    "game/core/resource/dmecontrols_english.txt": {
+      "bytesize": 4470,
+      "version": "5479af9d"
+    },
+    "game/core/resource/keybindings_english.txt": {
+      "bytesize": 196,
+      "version": "e52d3f20"
+    },
+    "game/core/resource/toolhelp_animgraph_editor_english.txt": {
+      "bytesize": 230122,
+      "version": "8fd91518"
+    },
+    "game/core/resource/toolhelp_base_fgd_english.txt": {
+      "bytesize": 834,
+      "version": "4eb98bbe"
+    },
+    "game/core/resource/toolhelp_hammer_commands_english.txt": {
+      "bytesize": 16506,
+      "version": "49eb9d0d"
+    },
+    "game/core/resource/toolhelp_hammer_embedded_properties_english.txt": {
+      "bytesize": 566,
+      "version": "bd79203f"
+    },
+    "game/core/resource/toolhelp_helpsystem_english.txt": {
+      "bytesize": 2098,
+      "version": "c7ddd97f"
+    },
+    "game/core/resource/toolhelp_model_editor_english.txt": {
+      "bytesize": 99544,
+      "version": "f2f284f7"
+    },
+    "game/core/resource/toolhelp_modeldoc_editor_english.txt": {
+      "bytesize": 876,
+      "version": "9e8cb122"
+    },
+    "game/core/resource/toolhelp_particles_english.txt": {
+      "bytesize": 147060,
+      "version": "08a2526f"
+    },
+    "game/core/resource/toolhelp_sndtool_english.txt": {
+      "bytesize": 984,
+      "version": "e12999f7"
+    },
+    "game/core/resource/toolhelp_surfacepropertyeditor_english.txt": {
+      "bytesize": 9154,
+      "version": "5a11bebe"
+    },
+    "game/core/resource/toolhelp_vmixtool_english.txt": {
+      "bytesize": 384,
+      "version": "5acfdc6a"
+    },
+    "game/core/resource/valve_brazilian.txt": {
+      "bytesize": 113920,
+      "version": "d06e074b"
+    },
+    "game/core/resource/valve_bulgarian.txt": {
+      "bytesize": 124644,
+      "version": "540f7469"
+    },
+    "game/core/resource/valve_czech.txt": {
+      "bytesize": 122372,
+      "version": "a8f67b01"
+    },
+    "game/core/resource/valve_danish.txt": {
+      "bytesize": 107638,
+      "version": "cbd39d37"
+    },
+    "game/core/resource/valve_dutch.txt": {
+      "bytesize": 100446,
+      "version": "cac5eac5"
+    },
+    "game/core/resource/valve_english.txt": {
+      "bytesize": 65122,
+      "version": "98d39641"
+    },
+    "game/core/resource/valve_finnish.txt": {
+      "bytesize": 95044,
+      "version": "45a5ee00"
+    },
+    "game/core/resource/valve_french.txt": {
+      "bytesize": 124594,
+      "version": "ce5e28b0"
+    },
+    "game/core/resource/valve_german.txt": {
+      "bytesize": 116210,
+      "version": "d7b84b69"
+    },
+    "game/core/resource/valve_greek.txt": {
+      "bytesize": 122396,
+      "version": "029932cc"
+    },
+    "game/core/resource/valve_hungarian.txt": {
+      "bytesize": 122482,
+      "version": "6d47c204"
+    },
+    "game/core/resource/valve_italian.txt": {
+      "bytesize": 114980,
+      "version": "64339ec9"
+    },
+    "game/core/resource/valve_japanese.txt": {
+      "bytesize": 82378,
+      "version": "93adbe65"
+    },
+    "game/core/resource/valve_korean.txt": {
+      "bytesize": 109682,
+      "version": "59e320d0"
+    },
+    "game/core/resource/valve_koreana.txt": {
+      "bytesize": 109682,
+      "version": "59e320d0"
+    },
+    "game/core/resource/valve_latam.txt": {
+      "bytesize": 111902,
+      "version": "d26ac0b7"
+    },
+    "game/core/resource/valve_norwegian.txt": {
+      "bytesize": 122180,
+      "version": "146d2ae7"
+    },
+    "game/core/resource/valve_polish.txt": {
+      "bytesize": 122172,
+      "version": "bf1a8b61"
+    },
+    "game/core/resource/valve_portuguese.txt": {
+      "bytesize": 114684,
+      "version": "6932fa77"
+    },
+    "game/core/resource/valve_romanian.txt": {
+      "bytesize": 78498,
+      "version": "9d18d532"
+    },
+    "game/core/resource/valve_russian.txt": {
+      "bytesize": 114682,
+      "version": "f7ff6156"
+    },
+    "game/core/resource/valve_schinese.txt": {
+      "bytesize": 106266,
+      "version": "55100d40"
+    },
+    "game/core/resource/valve_spanish.txt": {
+      "bytesize": 124644,
+      "version": "b4046067"
+    },
+    "game/core/resource/valve_swedish.txt": {
+      "bytesize": 106872,
+      "version": "2282742c"
+    },
+    "game/core/resource/valve_tchinese.txt": {
+      "bytesize": 92830,
+      "version": "658d57cd"
+    },
+    "game/core/resource/valve_thai.txt": {
+      "bytesize": 120784,
+      "version": "4f8b59c3"
+    },
+    "game/core/resource/valve_turkish.txt": {
+      "bytesize": 121320,
+      "version": "cf1f8857"
+    },
+    "game/core/resource/valve_ukrainian.txt": {
+      "bytesize": 121648,
+      "version": "04fd0b76"
+    },
+    "game/core/resource/valve_vietnamese.txt": {
+      "bytesize": 120218,
+      "version": "6e0ffabd"
+    },
+    "game/core/resource/vgui_brazilian.txt": {
+      "bytesize": 42794,
+      "version": "3b83cfc0"
+    },
+    "game/core/resource/vgui_bulgarian.txt": {
+      "bytesize": 43140,
+      "version": "3032d771"
+    },
+    "game/core/resource/vgui_czech.txt": {
+      "bytesize": 42244,
+      "version": "5c0887ad"
+    },
+    "game/core/resource/vgui_danish.txt": {
+      "bytesize": 42254,
+      "version": "9f1fc21a"
+    },
+    "game/core/resource/vgui_dutch.txt": {
+      "bytesize": 42486,
+      "version": "a47e0d3e"
+    },
+    "game/core/resource/vgui_english.txt": {
+      "bytesize": 17758,
+      "version": "75119d4d"
+    },
+    "game/core/resource/vgui_finnish.txt": {
+      "bytesize": 42192,
+      "version": "a05a74e3"
+    },
+    "game/core/resource/vgui_french.txt": {
+      "bytesize": 43426,
+      "version": "5b58b41a"
+    },
+    "game/core/resource/vgui_german.txt": {
+      "bytesize": 42600,
+      "version": "b5219806"
+    },
+    "game/core/resource/vgui_greek.txt": {
+      "bytesize": 43006,
+      "version": "7120d0bb"
+    },
+    "game/core/resource/vgui_hungarian.txt": {
+      "bytesize": 42390,
+      "version": "b56c112e"
+    },
+    "game/core/resource/vgui_italian.txt": {
+      "bytesize": 42808,
+      "version": "e38e65f3"
+    },
+    "game/core/resource/vgui_japanese.txt": {
+      "bytesize": 31672,
+      "version": "9c938e84"
+    },
+    "game/core/resource/vgui_korean.txt": {
+      "bytesize": 38304,
+      "version": "8c369408"
+    },
+    "game/core/resource/vgui_koreana.txt": {
+      "bytesize": 38304,
+      "version": "8c369408"
+    },
+    "game/core/resource/vgui_norwegian.txt": {
+      "bytesize": 42510,
+      "version": "0d61bbc1"
+    },
+    "game/core/resource/vgui_polish.txt": {
+      "bytesize": 42056,
+      "version": "bf83c516"
+    },
+    "game/core/resource/vgui_portuguese.txt": {
+      "bytesize": 42802,
+      "version": "e596b087"
+    },
+    "game/core/resource/vgui_romanian.txt": {
+      "bytesize": 41916,
+      "version": "2b473d24"
+    },
+    "game/core/resource/vgui_russian.txt": {
+      "bytesize": 42496,
+      "version": "a87e571a"
+    },
+    "game/core/resource/vgui_schinese.txt": {
+      "bytesize": 37336,
+      "version": "eaa04a44"
+    },
+    "game/core/resource/vgui_spanish.txt": {
+      "bytesize": 43112,
+      "version": "138c61f1"
+    },
+    "game/core/resource/vgui_swedish.txt": {
+      "bytesize": 41990,
+      "version": "feefcf2c"
+    },
+    "game/core/resource/vgui_tchinese.txt": {
+      "bytesize": 37416,
+      "version": "28325648"
+    },
+    "game/core/resource/vgui_thai.txt": {
+      "bytesize": 32580,
+      "version": "33c67188"
+    },
+    "game/core/resource/vgui_turkish.txt": {
+      "bytesize": 41634,
+      "version": "ace3d928"
+    },
+    "game/core/resource/vgui_ukrainian.txt": {
+      "bytesize": 42242,
+      "version": "31b7ec25"
+    },
+    "game/core/shaders_mobile_gles_000.vpk": {
+      "bytesize": 243984,
+      "version": "f7b6c015"
+    },
+    "game/core/shaders_mobile_gles_dir.vpk": {
+      "bytesize": 674660,
+      "version": "0e07a7dd"
+    },
+    "game/core/shaders_mobile_vulkan_000.vpk": {
+      "bytesize": 83049,
+      "version": "6183cb5c"
+    },
+    "game/core/shaders_mobile_vulkan_dir.vpk": {
+      "bytesize": 313992,
+      "version": "1be075f1"
+    },
+    "game/dac/cfg/user_keys_default.vcfg": {
+      "bytesize": 131,
+      "version": "02c9ae96"
+    },
+    "game/dac/gameinfo.gi": {
+      "bytesize": 5664,
+      "version": "3740efd4"
+    },
+    "game/dac/maps/dac.vpk": {
+      "bytesize": 623710,
+      "version": "4680ba01"
+    },
+    "game/dac/maps/dac_alleyway.vpk": {
+      "bytesize": 329811,
+      "version": "854358e5"
+    },
+    "game/dac/maps/dac_forest.vpk": {
+      "bytesize": 358727,
+      "version": "f6c6b226"
+    },
+    "game/dac/maps/dac_test.vpk": {
+      "bytesize": 5123608,
+      "version": "e1b1ce16"
+    },
+    "game/dac/maps/particles/hud/items_available.vpk": {
+      "bytesize": 5704,
+      "version": "90850ac6"
+    },
+    "game/dac/maps/particles/hud/items_unassigned.vpk": {
+      "bytesize": 5119,
+      "version": "ffc4343a"
+    },
+    "game/dac/maps/particles/hud/profile_streak.vpk": {
+      "bytesize": 5873,
+      "version": "bf919762"
+    },
+    "game/dac/maps/particles/leaderboard/streak.vpk": {
+      "bytesize": 5885,
+      "version": "bc00b1b4"
+    },
+    "game/dac/maps/particles/leaderboard/streak_10.vpk": {
+      "bytesize": 5735,
+      "version": "288527b4"
+    },
+    "game/dac/maps/particles/leaderboard/streak_10_bkg.vpk": {
+      "bytesize": 5820,
+      "version": "9b19097d"
+    },
+    "game/dac/maps/particles/leaderboard/streak_5.vpk": {
+      "bytesize": 5710,
+      "version": "7747bc8b"
+    },
+    "game/dac/maps/particles/leaderboard/streak_5_bkg.vpk": {
+      "bytesize": 5809,
+      "version": "2c8aa358"
+    },
+    "game/dac/maps/particles/leaderboard/streak_bkg.vpk": {
+      "bytesize": 6275,
+      "version": "be41a729"
+    },
+    "game/dac/maps/scenes/bench.vpk": {
+      "bytesize": 7299,
+      "version": "6aa2ea83"
+    },
+    "game/dac/maps/scenes/shop.vpk": {
+      "bytesize": 28542,
+      "version": "02d8d409"
+    },
+    "game/dac/pak01_000.vpk": {
+      "bytesize": 10852179,
+      "version": "3715a1cb"
+    },
+    "game/dac/pak01_001.vpk": {
+      "bytesize": 12988380,
+      "version": "d9500af1"
+    },
+    "game/dac/pak01_002.vpk": {
+      "bytesize": 10831546,
+      "version": "2602c131"
+    },
+    "game/dac/pak01_003.vpk": {
+      "bytesize": 12479638,
+      "version": "d04d780b"
+    },
+    "game/dac/pak01_004.vpk": {
+      "bytesize": 14756276,
+      "version": "deb6f98c"
+    },
+    "game/dac/pak01_005.vpk": {
+      "bytesize": 10487212,
+      "version": "d76b7b48"
+    },
+    "game/dac/pak01_006.vpk": {
+      "bytesize": 10648220,
+      "version": "9a9156d0"
+    },
+    "game/dac/pak01_007.vpk": {
+      "bytesize": 10460540,
+      "version": "91db438d"
+    },
+    "game/dac/pak01_008.vpk": {
+      "bytesize": 13731019,
+      "version": "15f8effa"
+    },
+    "game/dac/pak01_009.vpk": {
+      "bytesize": 9982265,
+      "version": "c7a2edfd"
+    },
+    "game/dac/pak01_010.vpk": {
+      "bytesize": 10325428,
+      "version": "747b8cf3"
+    },
+    "game/dac/pak01_011.vpk": {
+      "bytesize": 12734788,
+      "version": "bde11dec"
+    },
+    "game/dac/pak01_012.vpk": {
+      "bytesize": 11306937,
+      "version": "6c217c6c"
+    },
+    "game/dac/pak01_013.vpk": {
+      "bytesize": 13077043,
+      "version": "29275d9a"
+    },
+    "game/dac/pak01_014.vpk": {
+      "bytesize": 11501849,
+      "version": "149ba29d"
+    },
+    "game/dac/pak01_015.vpk": {
+      "bytesize": 13295557,
+      "version": "b0c9bf80"
+    },
+    "game/dac/pak01_016.vpk": {
+      "bytesize": 11517859,
+      "version": "0e57945f"
+    },
+    "game/dac/pak01_017.vpk": {
+      "bytesize": 10151529,
+      "version": "585ee8be"
+    },
+    "game/dac/pak01_018.vpk": {
+      "bytesize": 11887915,
+      "version": "737a53a6"
+    },
+    "game/dac/pak01_019.vpk": {
+      "bytesize": 8490069,
+      "version": "c65eb004"
+    },
+    "game/dac/pak01_dir.vpk": {
+      "bytesize": 634042,
+      "version": "8cfea9af"
+    },
+    "game/dac/panorama/fonts/dota.uifont": {
+      "bytesize": 510914,
+      "version": "8a920c5d"
+    },
+    "game/dac/panorama/fonts/dota_mono_numbers.uifont": {
+      "bytesize": 38974,
+      "version": "dff00454"
+    },
+    "game/dac/panorama/fonts/dota_trajan.uifont": {
+      "bytesize": 227498,
+      "version": "c4c61568"
+    },
+    "game/dac/panorama/fonts/notosansjp-regular.otf": {
+      "bytesize": 4479576,
+      "version": "688f71df"
+    },
+    "game/dac/panorama/fonts/notosanskr-regular.otf": {
+      "bytesize": 4559524,
+      "version": "ab981acc"
+    },
+    "game/dac/panorama/fonts/notosanssc-regular.otf": {
+      "bytesize": 8368828,
+      "version": "db04c8c0"
+    },
+    "game/dac/panorama/fonts/notosanstc-regular.otf": {
+      "bytesize": 5648604,
+      "version": "e26e0f05"
+    },
+    "game/dac/panorama/fonts/thai.uifont": {
+      "bytesize": 1081522,
+      "version": "f66302c6"
+    },
+    "game/dac/panorama/localization/dac_brazilian.txt": {
+      "bytesize": 111257,
+      "version": "be0d4a9d"
+    },
+    "game/dac/panorama/localization/dac_bulgarian.txt": {
+      "bytesize": 139067,
+      "version": "32689a24"
+    },
+    "game/dac/panorama/localization/dac_czech.txt": {
+      "bytesize": 111706,
+      "version": "76ac17dd"
+    },
+    "game/dac/panorama/localization/dac_danish.txt": {
+      "bytesize": 108079,
+      "version": "b8ed5982"
+    },
+    "game/dac/panorama/localization/dac_dutch.txt": {
+      "bytesize": 109928,
+      "version": "38d7434b"
+    },
+    "game/dac/panorama/localization/dac_english.txt": {
+      "bytesize": 104733,
+      "version": "600397ee"
+    },
+    "game/dac/panorama/localization/dac_finnish.txt": {
+      "bytesize": 107731,
+      "version": "55a39b4c"
+    },
+    "game/dac/panorama/localization/dac_french.txt": {
+      "bytesize": 116856,
+      "version": "9d636c05"
+    },
+    "game/dac/panorama/localization/dac_german.txt": {
+      "bytesize": 112971,
+      "version": "1d0d042d"
+    },
+    "game/dac/panorama/localization/dac_greek.txt": {
+      "bytesize": 149279,
+      "version": "1918e687"
+    },
+    "game/dac/panorama/localization/dac_hungarian.txt": {
+      "bytesize": 113356,
+      "version": "b64ba646"
+    },
+    "game/dac/panorama/localization/dac_italian.txt": {
+      "bytesize": 111538,
+      "version": "4289ac57"
+    },
+    "game/dac/panorama/localization/dac_japanese.txt": {
+      "bytesize": 124787,
+      "version": "ef879903"
+    },
+    "game/dac/panorama/localization/dac_koreana.txt": {
+      "bytesize": 116673,
+      "version": "39a8e5b3"
+    },
+    "game/dac/panorama/localization/dac_latam.txt": {
+      "bytesize": 112796,
+      "version": "62a0469f"
+    },
+    "game/dac/panorama/localization/dac_norwegian.txt": {
+      "bytesize": 107087,
+      "version": "a5c9c0fc"
+    },
+    "game/dac/panorama/localization/dac_polish.txt": {
+      "bytesize": 113671,
+      "version": "782c4fe4"
+    },
+    "game/dac/panorama/localization/dac_portuguese.txt": {
+      "bytesize": 111987,
+      "version": "bcf205b9"
+    },
+    "game/dac/panorama/localization/dac_romanian.txt": {
+      "bytesize": 114584,
+      "version": "c04ef7a0"
+    },
+    "game/dac/panorama/localization/dac_russian.txt": {
+      "bytesize": 141126,
+      "version": "ab76fb1f"
+    },
+    "game/dac/panorama/localization/dac_schinese.txt": {
+      "bytesize": 102300,
+      "version": "5b74a88a"
+    },
+    "game/dac/panorama/localization/dac_spanish.txt": {
+      "bytesize": 113280,
+      "version": "8aa33033"
+    },
+    "game/dac/panorama/localization/dac_swedish.txt": {
+      "bytesize": 108058,
+      "version": "6da77b44"
+    },
+    "game/dac/panorama/localization/dac_tchinese.txt": {
+      "bytesize": 102665,
+      "version": "00a25e77"
+    },
+    "game/dac/panorama/localization/dac_thai.txt": {
+      "bytesize": 186348,
+      "version": "c28fdc90"
+    },
+    "game/dac/panorama/localization/dac_turkish.txt": {
+      "bytesize": 112204,
+      "version": "1878cd4f"
+    },
+    "game/dac/panorama/localization/dac_ukrainian.txt": {
+      "bytesize": 144688,
+      "version": "adba2e73"
+    },
+    "game/dac/panorama/localization/dac_vietnamese.txt": {
+      "bytesize": 120612,
+      "version": "cfea8158"
+    },
+    "game/dac/resource/dac_common_brazilian.txt": {
+      "bytesize": 56762,
+      "version": "761778bc"
+    },
+    "game/dac/resource/dac_common_bulgarian.txt": {
+      "bytesize": 57904,
+      "version": "d4b2261a"
+    },
+    "game/dac/resource/dac_common_czech.txt": {
+      "bytesize": 57666,
+      "version": "347424fa"
+    },
+    "game/dac/resource/dac_common_danish.txt": {
+      "bytesize": 55552,
+      "version": "4369ce77"
+    },
+    "game/dac/resource/dac_common_dutch.txt": {
+      "bytesize": 56228,
+      "version": "1291f31f"
+    },
+    "game/dac/resource/dac_common_english.txt": {
+      "bytesize": 54570,
+      "version": "1c83bdeb"
+    },
+    "game/dac/resource/dac_common_finnish.txt": {
+      "bytesize": 55148,
+      "version": "b8902318"
+    },
+    "game/dac/resource/dac_common_french.txt": {
+      "bytesize": 57902,
+      "version": "f7d7c21e"
+    },
+    "game/dac/resource/dac_common_german.txt": {
+      "bytesize": 56330,
+      "version": "1dcf483d"
+    },
+    "game/dac/resource/dac_common_greek.txt": {
+      "bytesize": 57030,
+      "version": "8b4dec49"
+    },
+    "game/dac/resource/dac_common_hungarian.txt": {
+      "bytesize": 56428,
+      "version": "b796b6ae"
+    },
+    "game/dac/resource/dac_common_italian.txt": {
+      "bytesize": 57318,
+      "version": "71557040"
+    },
+    "game/dac/resource/dac_common_japanese.txt": {
+      "bytesize": 49202,
+      "version": "f30548cf"
+    },
+    "game/dac/resource/dac_common_koreana.txt": {
+      "bytesize": 48122,
+      "version": "fab6f335"
+    },
+    "game/dac/resource/dac_common_latam.txt": {
+      "bytesize": 56976,
+      "version": "d5ceb757"
+    },
+    "game/dac/resource/dac_common_norwegian.txt": {
+      "bytesize": 55048,
+      "version": "fd53abc3"
+    },
+    "game/dac/resource/dac_common_polish.txt": {
+      "bytesize": 56528,
+      "version": "e68e69f0"
+    },
+    "game/dac/resource/dac_common_portuguese.txt": {
+      "bytesize": 56874,
+      "version": "76c505a9"
+    },
+    "game/dac/resource/dac_common_romanian.txt": {
+      "bytesize": 57476,
+      "version": "5761b372"
+    },
+    "game/dac/resource/dac_common_russian.txt": {
+      "bytesize": 55902,
+      "version": "66c98f1f"
+    },
+    "game/dac/resource/dac_common_schinese.txt": {
+      "bytesize": 46698,
+      "version": "d956f5a9"
+    },
+    "game/dac/resource/dac_common_spanish.txt": {
+      "bytesize": 57206,
+      "version": "cb5dfa16"
+    },
+    "game/dac/resource/dac_common_swedish.txt": {
+      "bytesize": 55396,
+      "version": "8094c757"
+    },
+    "game/dac/resource/dac_common_tchinese.txt": {
+      "bytesize": 46906,
+      "version": "e455ed29"
+    },
+    "game/dac/resource/dac_common_thai.txt": {
+      "bytesize": 55164,
+      "version": "15474c72"
+    },
+    "game/dac/resource/dac_common_turkish.txt": {
+      "bytesize": 56216,
+      "version": "2cda3936"
+    },
+    "game/dac/resource/dac_common_ukrainian.txt": {
+      "bytesize": 55916,
+      "version": "493433bf"
+    },
+    "game/dac/resource/dac_common_vietnamese.txt": {
+      "bytesize": 55432,
+      "version": "14b22f0a"
+    },
+    "game/dac/shaders_mobile_gles_000.vpk": {
+      "bytesize": 106213777,
+      "version": "eb120892"
+    },
+    "game/dac/shaders_mobile_gles_001.vpk": {
+      "bytesize": 7000713,
+      "version": "7746d9d7"
+    },
+    "game/dac/shaders_mobile_gles_dir.vpk": {
+      "bytesize": 2221695,
+      "version": "f38d00f2"
+    },
+    "game/dac/shaders_mobile_vulkan_000.vpk": {
+      "bytesize": 53115639,
+      "version": "891e5abc"
+    },
+    "game/dac/shaders_mobile_vulkan_dir.vpk": {
+      "bytesize": 951091,
+      "version": "dcf7213a"
+    },
+    "game/dac/steam.inf": {
+      "bytesize": 192,
+      "version": "ba860c83"
+    },
+    "game/mobile/commandlines/android/source2launcher_underlords.txt": {
+      "bytesize": 116,
+      "version": "f5839f1e"
+    },
+    "game/mobile/commandlines/ios/source2launcher_underlords.txt": {
+      "bytesize": 62,
+      "version": "9be85afe"
+    },
+    "game/mobile/commandlines/source2launcher_underlords.txt": {
+      "bytesize": 853,
+      "version": "c4b75a3d"
+    },
+    "game/mobile/commandlines/steam.txt": {
+      "bytesize": 338,
+      "version": "e75cf271"
+    },
+    "game/thirdpartylegalnotices.txt": {
+      "bytesize": 86455,
+      "version": "12c22400"
+    }
+  },
+  "cdnroot": "https://steamcdn-a.akamaihd.net/apps/1046930/mobilebuilds/133_c21fa7eaf94048d03fac8affb05246c754107788/",
+  "cdnroot_insecure": "http://cdn.dota2.com/apps/1046930/mobilebuilds/133_c21fa7eaf94048d03fac8affb05246c754107788/",
   "packages": {
     "androidarm32": {
       "size": 50389020,
@@ -12,5 +879,7 @@
       "url": "https://steamcdn-a.akamaihd.net/apps/1046930/mobilebuilds/170_de873125cb32235a56298a568621a16427a5eee6/androidarm64.apk",
       "version": 170
     }
-  }
+  },
+  "password": "c21fa7eaf94048d03fac8affb05246c754107788",
+  "version": 133
 }
