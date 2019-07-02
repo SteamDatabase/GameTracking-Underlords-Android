@@ -260,8 +260,15 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
 
     /* access modifiers changed from: private */
     public void setupPreparingToDownloadScreen() {
-        setupCommonUI(Resources.GetStringSafe("Native_PreparingToDownload"), null);
-        this.m_progressBar = null;
+        FrameLayout frameLayout = setupCommonUI(Resources.GetStringSafe("Native_PreparingToDownload"), null);
+        LinearLayout linearLayout = new LinearLayout(this);
+        linearLayout.setOrientation(1);
+        linearLayout.setGravity(48);
+        linearLayout.addView(new Space(this), new LinearLayout.LayoutParams(-1, 100));
+        this.m_progressBar = new ProgressBar(this, null, 16842872);
+        this.m_progressBar.setIndeterminate(true);
+        linearLayout.addView(this.m_progressBar, new LinearLayout.LayoutParams(-1, 50));
+        frameLayout.addView(linearLayout);
     }
 
     private void setupDownloadingScreen() {

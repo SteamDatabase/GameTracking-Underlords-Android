@@ -29,7 +29,6 @@
 05000000de2800000611000001000000,Steam Controller,a:b0,b:b1,back:b6,guide:b8,leftshoulder:b4,leftstick:b9,lefttrigger:a2,leftx:a0,lefty:a1,rightshoulder:b5,righttrigger:a3,start:b7,x:b2,y:b3,
 07`/@
 ?0766666
-0x%.4x/0x%.4x
 0x%8.8x
 	0x%lx: %s
 0@yJ}@
@@ -38,26 +37,28 @@
                           1.596,  -0.813,    0);
                           1.7927, -0.5329,   0);
  )19AJRZbjs{
+	1F9i
 1$@xb<
 2A)0Ab
+2	a<9
+2	A$9
 2BQ*r
 2D@@qK
 2e@@qK
 2h`@9id@9jh@9
-2hF@9	
+2hF@9
 2Hr8|H|8
 2Hr8}H|8
-2hr!9
 2+i(8
 2Ly)x)
 2M%@x.
+2	q'9H
 2#@@qK
 2~	SR
 |2TZ3
 2uB@qK
 2@y*5
 ?3?00p
-?333?
 "3DUfw
 3Hs8THt8
 3mE@9+
@@ -106,31 +107,25 @@
 @9aJa83zc
 @9aXm
 @9aXn
-@9+[Ay)
 >@9b~@
 9b	@9k
 @9Bzb
 @9C!@
-@9+CAy)w
 +`@9*d@9)h@9(l@9l=
 @9DF@8!
 @9Dzd
+@9)-E
 @9eZn
 @9F!@
-@9)=G
-@9+gAy)
 @9gye
 9'hb8
-9h<	S
 @9hyh
-9I<	S
+@9!I@
 @9k!@
 @9kzk
 @9L|@
 9N|W0O{
-@9+OAy)
 @9Pzp
-@9!QA
 @9Qzq
 @9Rzg
 @9vxv
@@ -149,7 +144,6 @@
 	A@9?
 	A@9?!
 A@9? 
-a>@9e
 ;A@9Z}
 a_angle
 a:b0,
@@ -170,14 +164,12 @@ AC Refresh
 AC Search
 AC Stop
 >a<ff<
-Afterglow AX.1 Gamepad for Xbox 360
-Afterglow Gamepad for Xbox 360
-Afterglow Prismatic Wired Controller
 'Aic*Ci
 A-i*@)k2A)
 Aja8B|
 AJa8B
 A@)k	
+A)k)1
 A-K9 
 A)kc@
 Allocation %d: %d bytes
@@ -318,7 +310,6 @@ Application
 Application didn't initialize properly, did you include SDL_main.h in the file containing your main() function?
 Application not compiled with SDL %d.%d
 app_process
-ASDL_JOYSTICK_HIDAPI_PS4
 ASensorEventQueue_disableSensor
 ASensorEventQueue_enableSensor
 ASensorEventQueue_getEvents
@@ -365,18 +356,15 @@ audioWriteFloatBuffer
 audioWriteShortBuffer
 AuthenticAMD
 Average Test runtime: %.5f sec
-aW@y`S@y
 A@y*m@
 /=!B{^
 B@9_!
 back:b4,
-Batarang Xbox 360 controller
 b:b1,
 b:b4,
 ```bf
 bhxh`
 bhxhb
-BigBen Interactive XBOX 360 Controller
 B)*il
 B)*ilx
 B)Kii
@@ -399,15 +387,10 @@ Built-in render drivers:
 Built-in video drivers:
 Button name too large: %s
 ([B)V
-bV@yaR@y
-bW@yaS@y
 b@y(5
-By)YBy6
 ([BZ)I
-bZ@yaV@y`R@y
 C)4zm
 C@9)C@9
-(c\9H
 Calculator
 callback
 calloc_func
@@ -504,7 +487,6 @@ Couldn't create sensor manager
 Couldn't create surface: %s
 Couldn't create window: %s
 Couldn't enable sensor
-Couldn't enable vibration
 Couldn't find any displays
 Couldn't find display mode match
 Couldn't find mapping for device (%d)
@@ -516,24 +498,16 @@ Couldn't get external directory
 Couldn't get internal directory
 Couldn't get stream offset
 Couldn't initialize audio driver: %s
-Couldn't initialize hidapi
 Couldn't initialize pthread attributes
 Couldn't initialize video driver: %s
-Couldn't initialize WUP-028
 Couldn't load %s: %s
-Couldn't load stick calibration
 Couldn't lock event queue
 Couldn't open audio: %s
-Couldn't open HID device %s
 Couldn't parse GUID from %s
 Couldn't parse name from %s
 Couldn't parse %s
 Couldn't read screen: %s
 Couldn't save screenshot.bmp: %s
-Couldn't send rumble packet
-Couldn't set input mode
-Couldn't start USB reports
-Couldn't write Xbox One initialization packet
 count
 createCustomCursor
 Created renderer: %s
@@ -611,16 +585,15 @@ dYC)w!@
 .dynstr
 .dynsym
 D+^ZT\
-@)e2@9
 @)e2@9f"
-@)e2@9f6@9"
+@)e2@9f6@9
+@)e2@9i
 *E@9_
 	E@9?
 	E@9*
 E@9\E@9
 E@9H%
 E@9VE@9
-eB@y"
 _edata
 EGL_BAD_ACCESS
 EGL_BAD_ALLOC
@@ -651,7 +624,6 @@ EHe8gHg8
 .eh_frame
 .eh_frame_hdr
 Eject
-Elecom JC-U3613M
 Empty destination palette
 __end__
 e@@q+
@@ -678,6 +650,7 @@ eT@9gX@9h`@9id@9jh@9
 event
 Event queue is full (%d events)
 Execute
+_exit
 Exit code: 2
 Exit code: %d
 _exit@@LIBC
@@ -769,13 +742,11 @@ ftell@@LIBC
 --fullscreen
 --fullscreen-desktop
   Fullscreen video modes:
-FUS1ON Tournament Controller
 Fuzzer invocations: %d
 ([F)V
 fwrite
 fwrite@@LIBC
 ([FZ)I
-Gamestop Xbox 360 Controller
 gamma
 g*B)k2@y
 Generating a random seed failed
@@ -926,13 +897,12 @@ glViewport
 .gnu_debuglink
 .gnu.version
 .gnu.version_r
-GPD Win 2 X-Box Controller
 --grab
         Green Mask = 0x%.8x
 guide
 GUIDE
 h2@9c
-h2@9i6@9
+h2@9i6@9l
 h6@9c
 {H{88Hx8)%
 H|8J%
@@ -959,9 +929,6 @@ Haptic: SDL_SYS_HapticOpenFromJoystick failed.
 hapticStop
 Haptic: There are %d haptic devices available
 Haptic: Updating effect type is illegal.
-Harmonix Rock Band Drumkit
-Harmonix Rock Band Guitar
-Harmonix Xbox 360 Controller
 Harness input to repro failures:
 .hash
 Hb8c|
@@ -980,18 +947,8 @@ hg-0:aaaaaaaaaaah
 Hg83Hs8
 'Hg8SHs8
 Hi8J}
+hidapi
 hidapi,*,a:b0,b:b1,back:b4,dpdown:b12,dpleft:b13,dpright:b14,dpup:b11,guide:b5,leftshoulder:b9,leftstick:b7,lefttrigger:a4,leftx:a0,lefty:a1,rightshoulder:b10,rightstick:b8,righttrigger:a5,rightx:a2,righty:a3,start:b6,x:b2,y:b3,
-HIDAPI_IsDevicePresent
-HIDAPI_XboxControllerName
-hid_close
-hid_enumerate
-hid_exit
-hid_free_enumeration
-hid_get_feature_report
-hid_init
-hid_open_path
-hid_read_timeout
-hid_write
 *Hi)x
 Hj8.Hn8DHd8
 Hj8k}	
@@ -1004,35 +961,12 @@ h"K9H
 h+M)k
 Hn8$Hd8FHf8jHj8
 Ho8J%
-Honey Bee Xbox360 dancepad
-Hori Co. DOA4 FightStick
-Hori Fighting Edge
-Hori Fighting Stick EX2
-Hori Fighting Stick EX2B
-Hori Fighting Stick VX
-Hori Fighting Stick VX Alt
-Hori GEM Xbox controller
-HoriPad EX2 Turbo
-Hori PadEX Turbo
-HORIPAD ONE
-Hori Real Arcade Pro.EX
-Hori Real Arcade Pro. EX
-Hori Real Arcade Pro.EX Premium VLX
-Hori Real Arcade Pro Hayabusa (USA) Xbox One
-Hori Real Arcade Pro V Kai 360
-Hori Real Arcade Pro V Kai Xbox One
-Hori Real Arcade Pro VX
-Hori Real Arcade Pro VX-SA
-Hori Real Arcade Pro.VX SA
-Hori SOULCALIBUR V Stick
-Hori XBOX 360 EX 2 with Turbo
 Hp8`}
 Hp8R~	
 Hq8[H{8
 Hq8\H{8
 Hq8R&
 Hs86}
-HSM3 Xbox360 dancepad
 Ht87}
 }Ht8w
 Hu84}
@@ -1056,7 +990,6 @@ Ic8cJh8/Kv8
 --icon
 iF@9?
 (IFI)V
- ihxH
 	ii8	
 (IIII)[I
 ([IIIII)I
@@ -1107,7 +1040,6 @@ Invalid texture
 Invalid texture format
 Invalid window
 Io8cJd8/Kv8
-Ion Drum Rocker
 Ip81}
 Ip8PH`8
 Iq82}
@@ -1126,6 +1058,7 @@ isTablet
 *	i+x
 	*	i+x
 J$@)+
+j689^
 J{8"Kb8
 java/lang/Class
 java/lang/String
@@ -1187,7 +1120,6 @@ Joystick only has %d axes
 Joystick only has %d balls
 Joystick only has %d buttons
 Joystick only has %d hats
-Joytech Neo-Se Take2
 JQbRW
 Js84Jt8GJg8s&
 Js8%Jv8
@@ -1201,6 +1133,7 @@ Jx8(Kh8
 Jx8wKz8
 	J	Xi
 	K	|1
+K1F9k
 K|8=Jh8
 K|8=Jh8~
 k}8tk}8
@@ -1208,7 +1141,6 @@ K`8xHb8*
 KBDIllumDown
 KBDIllumToggle
 KBDIllumUp
-kb@yk
 Kc8IJi8
 Kc8IJi8?
 Kd8`J`8aJa8
@@ -1282,9 +1214,9 @@ K)[JQb
 koE@9
 kpE@9
 Kq8R~
-KqN9k
 Kw8SKs8YKy8
 K(&@x
+l1F9l
 L5?)L5
 l6666
 L7?)?O
@@ -1332,7 +1264,6 @@ libEGL.so
 libGLES_CM.so
 libGLESv1_CM.so
 libGLESv2.so
-libhidapi.so
 liblog.so
 libm.so
 libOpenSLES.so
@@ -1361,16 +1292,9 @@ localtime@@LIBC
 log10f@@LIBC
 log10@@LIBC
 logf@@LIBC
-Logic3 Controller
 --logical
-Logitech Chillstream Controller
-Logitech DriveFx Racing Wheel
-Logitech Gamepad F310
-Logitech Gamepad F510
-Logitech Gamepad F710
 log@@LIBC
     lowp vec3 rgb;
-lqN9l
 lseek
 lseek@@LIBC
 `lvff
@@ -1378,36 +1302,6 @@ lVTkP
 lVTP9
 lVTw]
 ~#m}	
-m@9J}
-Mad Cats Ghost Recon FS GamePad
-Mad Catz Arcade Game Stick
-Mad Catz Beat Pad
-Mad Catz Brawlstick for Xbox 360
-Mad Catz Call Of Duty
-Mad Catz Fightpad
-Mad Catz FightStick SoulCaliber
-Mad Catz FightStick TE2
-Mad Catz FightStick TE 2
-Mad Catz FightStick TES+
-Mad Catz FPS Pro
-Mad Catz GamePad
-MadCatz GamePad
-Mad Catz JOYTECH NEO SE Advanced GamePad
-Mad Catz MicroCon Gamepad
-Mad Catz MicroCon GamePad Pro
-Mad Catz MLG FightStick TE
-Mad Catz MvC2 TE
-Mad Catz MVC2TE Stick 2
-Mad Catz Portable Drum
-Mad Catz SFxT Fightstick Pro
-Mad Catz Street Fighter IV FightPad
-Mad Catz Street Fighter IV FightStick SE
-Mad Catz Street Fighter IV SE Fighting Stick
-Mad Catz Wired Xbox 360 Controller
-Mad Catz Wired Xbox 360 Controller (SFIV)
-Mad Catz Xbox 360 Controller
-Mad Catz Xbox 360 MC2 MicroCon Racing Wheel
-Mad Catz Xbox controller - MW2
 malloc_func
 malloc@@LIBC
 manualBackButton
@@ -1429,12 +1323,6 @@ Memory allocations:
 memset@@LIBC
 messageboxdata
 messageboxShowMessageBox
-Microsoft X-Box 360 pad
-Microsoft X-Box 360 pad v2
-Microsoft X-Box One Elite pad
-Microsoft X-Box One pad
-Microsoft X-Box One pad (Firmware 2015)
-Microsoft X-Box One S pad
 mim8?
 *MIm8NIn8Iii8*
 --min-geometry
@@ -1446,11 +1334,8 @@ Missing native window
 Missing some Java callbacks, do you have the latest version of SDLActivity.java?
 Missing some Java callbacks, do you have the latest version of SDLAudioManager.java?
 Missing some Java callbacks, do you have the latest version of SDLControllerManager.java?
-MLG Pro Circuit Controller (Xbox)
     Mode %d: %dx%d@%dHz, %d bits-per-pixel (%s)
 ModeSwitch
-MortalKombat FightStick
-Mortal Kombat Klassic FightStick
 mounted
 mounted_ro
 mouse_input
@@ -1463,7 +1348,6 @@ mVvmVv
 N0T(O
 ~N@)9
 N@9l=
-Nacon GC-100XF
 +!N;)aN
 nanosleep
 nanosleep@@LIBC
@@ -1481,8 +1365,6 @@ newChannel
 nHn8)%
 NHn8eHe8
 Nii8)
-Nintendo GameCube Controller
-Nintendo Switch Pro Controller
 NKU"Oj
 NKU$Ox+a
 No Asserts
@@ -1579,20 +1461,7 @@ Passed a NULL semaphore
 Passed NULL cursor surface
 Paste
 Pause
-PDP Afterglow AX.1
-PDP AFTERGLOW AX.1
-PDP Battlefield One
-PDP Controller for Xbox One
-PDP EA Sports Controller
-PDP Marvel Xbox One Controller
-PDP Titanfall 2
-PDP Versus Fighting Pad
-PDP Wired Controller for Xbox One - Stealth Series
-PDP Xbox 360 Controller
-PDP Xbox One Arcade Stick
-PDP Xbox One Controller
 PE@9 
-Pelican PL-3601 'TSZ' Wired Xbox 360 Controller
 PHp8sHs8J%
 pIp81
 pIp81}
@@ -1607,13 +1476,6 @@ PORTRAIT
 PORTRAIT_FLIPPED
 --position
 Power
-PowerA FUSION Controller
-PowerA FUSION Pro Controller
-Power A Mini Pro Elite
-PowerA MINI PROEX Controller
-PowerA Pro Ex
-PowerA Xbox One Mini Wired Controller
-PowerA Xbox One wired controller
 powf@@LIBC
 pow@@LIBC
 precision mediump float;
@@ -1627,7 +1489,6 @@ present
 PresentVSync
 PrintScreen
 Prior
-PS4 Controller
 pthread_attr_init
 pthread_attr_init@@LIBC
 pthread_attr_setdetachstate
@@ -1697,30 +1558,18 @@ pthread_sigmask@@LIBC
 puts@@LIBC
 ?<@q!
 	 q (
-	!q9	
 q@ir82
 QJ!	*i
 Q(k7x
-	qN9i
 qP@9R
 q@~	S
 qsort@@LIBC
-	Q@y?!4k
 q@yrx2
 --rate
-Razer Atrox Arcade Stick
-Razer Onza
-Razer Onza Classic Edition
-Razer Onza TE
-Razer Onza Tournament Edition
-Razer Sabertooth
-Razer Wildcat
  [RBUTTON]
 realloc_func
 realloc@@LIBC
         Red Mask   = 0x%.8x
-RedOctane Controller
-RedOctane Guitar Hero X-plorer
 --refresh
 registerReceiver
 .rela.dyn
@@ -1768,11 +1617,6 @@ RIGHTY
 righty:a3,
 RNi./
 ro.build.version.sdk
-Rock Candy Gamepad for Xbox 360
-Rock Candy Gamepad for Xbox One 2015
-Rock Candy Gamepad for Xbox One 2016
-Rock Candy Gamepad Wired Controller
-Rock Candy Wired Controller for Xbox One
 .rodata
 Runtime of %i iterations: %.1f sec
 Run /w seed
@@ -1788,10 +1632,6 @@ S2K"8*
 S32LSB
 S32MSB
 S32SYS
-Saitek Aviator Stick AV8R02
-Saitek Cyborg Rumble Pad - PC/Xbox 360
-Saitek P3200 Rumble Pad - PC/Xbox 360
-Saitek P3600
 --samples
 %sapturing mouse %s!
 SBJb8CJc8!
@@ -2717,13 +2557,6 @@ SDL_HasSSE42
 SDL_HasSSE42_REAL
 SDL_HasSSE_REAL
 SDL_HasWindows
-SDL_HIDAPI_DriverGameCube
-SDL_HIDAPI_DriverPS4
-SDL_HIDAPI_DriverSwitch
-SDL_HIDAPI_DriverXbox360
-SDL_HIDAPI_DriverXboxOne
-SDL_HIDAPI_JoystickDriver
-SDL_HIDAPI_UpdateDevices
 SDL_HideWindow
 SDL_HideWindow_REAL
 SDL_HITTEST_DRAGGABLE
@@ -2847,11 +2680,6 @@ SDL_JoystickGetType
 SDL_JoystickGetType_REAL
 SDL_JoystickGetVendor
 SDL_JoystickGetVendor_REAL
-SDL_JOYSTICK_HIDAPI
-SDL_JOYSTICK_HIDAPI_GAMECUBE
-SDL_JOYSTICK_HIDAPI_PS4_RUMBLE
-@SDL_JOYSTICK_HIDAPI_SWITCH
-SDL_JOYSTICK_HIDAPI_XBOX
 SDL_JoystickInit
 SDL_JoystickInstanceID
 SDL_JoystickInstanceID_REAL
@@ -3852,7 +3680,6 @@ SRi08
 SrIr8`I`81
 Sry0x
 SRYrx1z
-%s %s
 %s/%s
     * %s (%s:%d)
 %s: %s (%d): %s %s (0x%X)
@@ -3873,8 +3700,6 @@ Stopped set state failed
 strcasecmp@@LIBC
 strchr@@LIBC
 strcmp@@LIBC
-Street Fighter IV Arcade Stick TE - Chun Li
-Street Fighter IV FightStick TE
 strftime
 strftime@@LIBC
 strlcat@@LIBC
@@ -3893,7 +3718,6 @@ strtoull@@LIBC
 succeeded
 Suite
 Suite Setup
-Super SFIV FightStick TE S
 supportsRelativeMouse
 Surface doesn't have a colorkey
 Surfaces from failed comparison saved as '%s' and '%s'
@@ -3913,10 +3737,9 @@ __system_property_get
 __system_property_get@@LIBC
 ([SZ)I
 T(0@9
-T?1'q
 T-2{^
 T2~	SR
-T	'@9
+(#T9H
 Ta>@9
 T	A@9?
 TargetTexturesSupported
@@ -3954,11 +3777,6 @@ ThF@9
 Th&H)
 This is a capture device, queueing not allowed
 ThousandsSeparator
-Thrustmaster Ferrari 458 Racing Wheel
-ThrustMaster Ferrari 458 Racing Wheel
-Thrustmaster Gamepad GP XID
-Thrustmaster, Inc. GPX Controller
-THS@9
 tHt8S
 TI!	*
 Ti*F)k2G)?
@@ -4004,9 +3822,7 @@ Tried to read outside of surface bounds
     * triggered %u time%s.
 TRIGGERLEFT
 TRIGGERRIGHT
-Tron Xbox 360 controller
 Ts	@9g
-T	U@y?!3ka
 /tVz{^
 T@y`x
 T`Y`x
@@ -4076,7 +3892,6 @@ Unsupported YUV conversion
 Unsupported YUV conversion mode: %d
 Unsupported YUV destination format: %s
 Unsupported YUV format
-]UoN,@
 Upitch
 Uplane
 u_projection
@@ -4100,7 +3915,6 @@ UTF32LE
 UTF-32LE
 UTF-8
 value
-.valvesig
 varying vec2 v_texCoord;
 VERBOSE
 vHv8Z
@@ -4180,7 +3994,6 @@ Vulkan is not loaded
 Vulkan loader library already loaded
 Vulkan support is either not configured in SDL or not available in current SDL video driver (%s) or platform
 V@y()
-WCHAR_T
 WE@9xE@9
 width
 Window is too large.
@@ -4191,12 +4004,6 @@ Window surface is invalid, please call SDL_GetWindowSurface() to get a new surfa
 X6hB@
 x:b2,
 X-Box
-Xbox 360 Pro EX Controller
-Xbox 360 Wired Controller
-Xbox 360 Wireless Receiver
-Xbox 360 Wireless Receiver (XBOX)
-Xbox Airflo wired controller
-Xbox ONE spectra
 "$@xC
 ($@xC
 x<fff<
@@ -4207,12 +4014,9 @@ xinput
 ^@y(1
 @y!	@9)
 @y"	@9@
-y@9p}
+^y)9^y
 @yE$@x
-yH+@9h+
 YHy8Z'
-yj2@yj[
-ykf@yhg
 You know it!
 You probably don't have a working Vulkan driver installed. %s %s %s(%d)
 You're awesome!

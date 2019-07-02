@@ -71,12 +71,6 @@
  D SDL_ANDROID_SensorDriver
  D SDL_expand_byte
  D SDL_GeneratedBlitFuncTable
- D SDL_HIDAPI_DriverGameCube
- D SDL_HIDAPI_DriverPS4
- D SDL_HIDAPI_DriverSwitch
- D SDL_HIDAPI_DriverXbox360
- D SDL_HIDAPI_DriverXboxOne
- D SDL_HIDAPI_JoystickDriver
  D SW_RenderDriver
  __errno@@LIBC
  _exit@@LIBC
@@ -178,15 +172,6 @@
  glVertexAttribPointer
  glVertexPointer
  glViewport
- hid_close
- hid_enumerate
- hid_exit
- hid_free_enumeration
- hid_get_feature_report
- hid_init
- hid_open_path
- hid_read_timeout
- hid_write
  isspace@@LIBC
  localtime@@LIBC
  log10f@@LIBC
@@ -372,8 +357,6 @@
  tanf@@LIBC
  tan@@LIBC
  T GLES2_GetShader
- T HIDAPI_IsDevicePresent
- T HIDAPI_XboxControllerName
  time@@LIBC
  T Java_org_libsdl_app_SDLActivity_nativeAddTouch
  T Java_org_libsdl_app_SDLActivity_nativeFocusChanged
@@ -1173,7 +1156,6 @@
  T SDL_HasSSE42_REAL
  T SDL_HasSSE_REAL
  T SDL_HasWindows
- T SDL_HIDAPI_UpdateDevices
  T SDL_HideWindow
  T SDL_HideWindow_REAL
  T SDL_iconv

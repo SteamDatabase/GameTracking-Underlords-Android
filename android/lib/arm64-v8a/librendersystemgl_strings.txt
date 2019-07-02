@@ -139,7 +139,8 @@ $@)#@@)
 20CTextureManagerGLNew
 20IHibernationListener
 20IResourceTypeManager
-2*1>9
+2	169s
+21CAndroidPresentTiming
 21CRenderHardwareConfig
 21CSheetHashConstructor
 21CTextureInfoChunkBase
@@ -159,10 +160,10 @@ $@)#@@)
 25CDepthStencilStateCreator
 26CDefaultKeyValuesErrorSpew
 26ICommandCompletionCallback
+2	!79
 27CSchemaUtlVectorManipulatorI10CUtlVectorI25VsInputSignatureElement_t10CUtlMemoryIS1_iEES1_E
 28ISchemaCollectionManipulator
 2,	@9L
-2	A79"
 "2BRbr
 2DArray
 2Gio8
@@ -183,6 +184,7 @@ $@)#@@)
 2	ky8?
 2L%@x+
 2oi-x
+2*q>9
 +3@))#
 3_0_gl
 3_0_gles
@@ -329,7 +331,7 @@ _8Jhj8*
 @9	|	
 &@9*]
 #@@9	
-	!\9	
+	![9	
 	@91~
 9.1.15
 92ji8R
@@ -343,6 +345,7 @@ _8Jhj8*
 9*	@9*
 . @9/$@90(@918@9.}
 *9@9J
+?9?A?9
 9aia8
 9Aia8
 9AIb8
@@ -496,8 +499,9 @@ _A8B8G8R8_SNORM
 _A8B8G8R8_SRGB
 _A8R8G8B8
 _A8R8G8B8_SRGB
-	A{9*
+	a]9	
 	A@9)
+	A\9)
 A@9(9
 A9a2@
 /A9a:J9`>
@@ -540,12 +544,15 @@ alpha
 (aN0*aN
 "(aNa(a
 #(aNA(a
+ANativeWindow_getFormat
+ANativeWindow_setBuffersGeometry
 (aNB8an1
 Android clang version 5.0.300080  (based on LLVM 5.0.300080)
 ANDROID PCI: %s: class 0x%llx
 ANDROID PCI: %s: unable to open, errno %d (%s)
 ANDROID PCI: %s: unable to read line
 ANDROID PCI: %s: vendor 0x%04x, device 0x%04x
+Android present timing disabled.
 )aNh?
 AnimationSystem_001
 AnimationSystemUtils_001
@@ -647,7 +654,6 @@ binary_lz4
 BinaryProperties_GetValue
 binormal
 b"J9_@
-BK@9u`
 BKbhTb~XBK!;
 blendindices
 blendweight
@@ -926,7 +932,7 @@ DCT scaled block size %dx%d not supported
 %d..%d
 %d.%d.%d
 DDDDUUUU
-DDDDUUUUDDDDUUUU
+DDDDUUUUDDDDUUUUxC
 -debugdxsupport
 DebugTextureInfo001
 Decompressed %i texture mips in %.2f ms (%.1fmb/s)
@@ -1030,6 +1036,9 @@ eglGetDisplay
 EGL_KHR_create_context_no_error
 EGL_KHR_gl_colorspace
 EGL_KHR_gl_colorspace not supported, relying on sRGB rendering to the backbuffer to work without it.
+eglPresentationTimeANDROID
+eglPresentationTimeANDROID failed.
+eglPresentationTimeANDROID supported: %s
 eglQueryString
 Eh`8$h`8
 eha8fhb8
@@ -1048,6 +1057,7 @@ Empty
 Empty input file
 Empty JPEG image (DNL not supported)
 E*!N%
+Enabling Android HW scaler using ANativeWindow_setBuffersGeometry( %d, %d ), returned %d
 Enabling EGL_KHR_create_context_no_error, OpenGL errors will not be reported by driver.
 Enabling sRGB framebuffer with EGL_KHR_gl_colorspace.
 __end__
@@ -1145,6 +1155,7 @@ Failed to create OpenGL context.
 Failed to create temporary file %s
 Failed to create the GL context.
 Failed to detect video memory size.
+Failed to initialize CAndroidPresentTiming.
 Failed to load shader using program binary.  Falling back to shader source.  Log string from driver:
 Failed to map from %s to content-path
 Failed to map from %s to game-path
@@ -1765,6 +1776,7 @@ glDetachShader
 GL_DIFFUSE
 glDisable
 -gl_disable_420pack
+-gl_disable_android_present_timing
 -gl_disable_binary_shaders
 -gl_disable_buffer_storage
 -gl_disable_compressed_texture_pixel_storage
@@ -3043,31 +3055,31 @@ glRenderbufferStorageMultisample
 GL_RENDERBUFFER_WIDTH
 GL_RENDERBUFFER_WIDTH_EXT
 gl/rendercontextgl.cpp
-gl/renderdevicegl.cpp(1215): 
-gl/renderdevicegl.cpp(1453): 
-gl/renderdevicegl.cpp(1488): 
-gl/renderdevicegl.cpp(1523): 
-gl/renderdevicegl.cpp(1558): 
-gl/renderdevicegl.cpp(1603): 
-gl/renderdevicegl.cpp(2058): 
-gl/renderdevicegl.cpp(2065): 
-gl/renderdevicegl.cpp(2111): 
-gl/renderdevicegl.cpp(2363): 
-gl/renderdevicegl.cpp(2579): 
-gl/renderdevicegl.cpp(399): 
-gl/renderdevicegl.cpp(537): 
-gl/renderdevicegl.cpp(55): 
-gl/renderdevicegl.cpp(64): 
-gl/renderdevicegl.cpp(640): 
-gl/renderdevicegl.cpp(658): 
-gl/renderdevicegl.cpp(73): 
-gl/renderdevicegl.cpp(82): 
-gl/renderdevicegl.cpp(91): 
-gl/renderdevicegl.cpp(947): 
+gl/renderdevicegl.cpp(1232): 
+gl/renderdevicegl.cpp(1466): 
+gl/renderdevicegl.cpp(1501): 
+gl/renderdevicegl.cpp(1536): 
+gl/renderdevicegl.cpp(1571): 
+gl/renderdevicegl.cpp(1616): 
+gl/renderdevicegl.cpp(2071): 
+gl/renderdevicegl.cpp(2078): 
+gl/renderdevicegl.cpp(2124): 
+gl/renderdevicegl.cpp(2376): 
+gl/renderdevicegl.cpp(2592): 
+gl/renderdevicegl.cpp(403): 
+gl/renderdevicegl.cpp(541): 
+gl/renderdevicegl.cpp(59): 
+gl/renderdevicegl.cpp(657): 
+gl/renderdevicegl.cpp(675): 
+gl/renderdevicegl.cpp(68): 
+gl/renderdevicegl.cpp(77): 
+gl/renderdevicegl.cpp(86): 
+gl/renderdevicegl.cpp(95): 
+gl/renderdevicegl.cpp(964): 
 GL_RENDERER
 GL_RENDER_MODE
 GLRenderThread
-gl/renderthreadgl.cpp(1922): 
+gl/renderthreadgl.cpp(1869): 
 -glrenderthreadstack
 GL_REPEAT
 GL_REPLACE
@@ -3862,7 +3874,7 @@ Hih8h
 Hih8R
 Hitch alert: Present was waiting for %d iterations and %.1f seconds.
 hi)xh
-hj58M
+hj58}
 hj8."@
 hJAy	
 <hji8
@@ -3879,7 +3891,7 @@ Hkw8(
 hn8c|
 HookUpTextureBits
 HostStateMgr001
-hr@9JQ
+hr@9J
 hs_5_0
 http://support.steampowered.com/cgi-bin/steampowered.cfg/php/enduser/std_adp.php?p_faqid=772
 Huffman code size table overflow
@@ -4204,7 +4216,6 @@ JNI_OnUnload
 JPEG datastream contains no image
 JPEGMEM
 JPEG parameter struct mismatch: library thinks size is %u, caller expects %u
-	*Jq,
 jr82"
 jr822
 jr8!hr8R
@@ -4217,7 +4228,6 @@ j(x	k(x)k(x
 	K)}@
 K[ .)
 *k2@y
-?k68e
 k68wZ@
 ?k78h
 k(8vV@
@@ -4256,6 +4266,7 @@ KMdEy
 KMeansQuantization
 Km@x+
 kn1V?OK
+(knNfps_max
 KOio8
 KPip8
 KRir8\K
@@ -4290,7 +4301,6 @@ libandroid.so
 libc++_shared.so
 libc.so
 libdl.so
-libEGL.so
 liblog.so
 libm.so
 libpng does not support gamma+background+rgb_to_gray
@@ -4966,6 +4976,7 @@ QuarterSizeAttrWithBoxFilter
 Quaternion
 queued
 QueuedLoaderVersion001
+	QV9I
 _R11_EAC
 R16F_EXPAND
 R32_UINT
@@ -5278,6 +5289,7 @@ SDL_GetError
 SDL_GetNumDisplayModes
 SDL_GetNumVideoDisplays
 SDL_GetWindowSize
+SDL_GetWindowWMInfo
 SDL_GL_CreateContext
 SDL_GL_DeleteContext
 SDL_GL_GetAttribute
@@ -5335,6 +5347,7 @@ setting.resettodefaults
 setting.shaderquality
 setting.SuppressPixelShaderCentroidHackFixup
 setting.Unsupported
+Setting up hardware caps with PerformsFramePacing set to: %s
 %s: Exhausted all available dynamic buffers of type (%d), creating a new one.
 SFm1V
 SfREyE
