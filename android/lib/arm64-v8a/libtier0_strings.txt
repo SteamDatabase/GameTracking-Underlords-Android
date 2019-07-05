@@ -99,8 +99,9 @@ $9jr$9h
 !@9x&@
 A)"	@
 +a@9?
-A9)1G
+A9)9G
 a@9*a
+A&9Tm
 &aacute;
 &Aacute;
 AbortMessage({
@@ -306,7 +307,7 @@ DoAssertDialog: invalid Assert response returned from dialog/vxconsole - breakin
 .dynamic
 .dynstr
 .dynsym
-E9)1G
+E9)9G
 &eacute;
 &Eacute;
 EarlyInit_Tier0
@@ -363,6 +364,8 @@ FileSystem
 FindAndLoadNativeLibrary
 findClass
 .fini_array
+-force_battery_level
+-force_battery_level_battery
 forced dump
 -force_dpi
 Found Application AutoArgs file '%s'
@@ -567,8 +570,6 @@ Ka@9k
 Kii8+
 	kl8ij<8
 KM^bM
-L9aMD
-L9`ND
 ::<lambda_
 &laquo;
 $layout
@@ -842,6 +843,7 @@ Plat_GetPackageName
 Plat_GetPagedPoolInfo
 Plat_GetPeakRSS
 Plat_GetPlatformError
+Plat_GetPowerInfo
 Plat_GetProcAddress
 Plat_GetProcAddresses
 Plat_GetRawCallStack
@@ -1094,7 +1096,7 @@ RunWithAlternateStack
  [%s]
 %s	0x%x
 S?9=qh
-:sA9 
+:sA9@
 %s: added string size %d overflows (added to %d)
 %s: capacity request for %d can't be satisfied (max %d)
 sched_setaffinity
@@ -1145,6 +1147,7 @@ SDL_GetModState
 SDL_GetNumAudioDevices
 SDL_GetNumDisplayModes
 SDL_GetNumVideoDisplays
+SDL_GetPowerInfo
 SDL_GetQueuedAudioSize
 SDL_GetRelativeMouseMode
 SDL_GetScancodeFromKey
@@ -1462,7 +1465,6 @@ UCS-2
 &Ugrave;
 uint64 CTimestampedEventLog::SetListener(TimestampedEventListener_t)
 uint64 Plat_GetCPUFrequency()
-uj68I"
 </ul>
 &uml;
 Unable to create event, error %d
@@ -1824,7 +1826,6 @@ Windows ME
 Windows NT
 Windows Vista
 Windows XP
-wj68""
 wn>Jj
 Working set: %s
 	%@x!

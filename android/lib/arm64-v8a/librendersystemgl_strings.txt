@@ -139,7 +139,6 @@ $@)#@@)
 20CTextureManagerGLNew
 20IHibernationListener
 20IResourceTypeManager
-2	169s
 21CAndroidPresentTiming
 21CRenderHardwareConfig
 21CSheetHashConstructor
@@ -160,7 +159,6 @@ $@)#@@)
 25CDepthStencilStateCreator
 26CDefaultKeyValuesErrorSpew
 26ICommandCompletionCallback
-2	!79
 27CSchemaUtlVectorManipulatorI10CUtlVectorI25VsInputSignatureElement_t10CUtlMemoryIS1_iEES1_E
 28ISchemaCollectionManipulator
 2,	@9L
@@ -174,7 +172,7 @@ $@)#@@)
 2hn!9
 	2(I(
 2ij(8
-2ij(8h2T
+2ij(8h6T
 2+imx
 2+i*x
 2KA@9*9
@@ -331,7 +329,7 @@ _8Jhj8*
 @9	|	
 &@9*]
 #@@9	
-	![9	
+	!]9	
 	@91~
 9.1.15
 92ji8R
@@ -499,9 +497,8 @@ _A8B8G8R8_SNORM
 _A8B8G8R8_SRGB
 _A8R8G8B8
 _A8R8G8B8_SRGB
-	a]9	
+	a\9	
 	A@9)
-	A\9)
 A@9(9
 A9a2@
 /A9a:J9`>
@@ -932,7 +929,7 @@ DCT scaled block size %dx%d not supported
 %d..%d
 %d.%d.%d
 DDDDUUUU
-DDDDUUUUDDDDUUUUxC
+DDDDUUUUDDDDUUUUh3
 -debugdxsupport
 DebugTextureInfo001
 Decompressed %i texture mips in %.2f ms (%.1fmb/s)
@@ -1776,7 +1773,6 @@ glDetachShader
 GL_DIFFUSE
 glDisable
 -gl_disable_420pack
--gl_disable_android_present_timing
 -gl_disable_binary_shaders
 -gl_disable_buffer_storage
 -gl_disable_compressed_texture_pixel_storage
@@ -3056,16 +3052,16 @@ GL_RENDERBUFFER_WIDTH
 GL_RENDERBUFFER_WIDTH_EXT
 gl/rendercontextgl.cpp
 gl/renderdevicegl.cpp(1232): 
-gl/renderdevicegl.cpp(1466): 
-gl/renderdevicegl.cpp(1501): 
-gl/renderdevicegl.cpp(1536): 
-gl/renderdevicegl.cpp(1571): 
-gl/renderdevicegl.cpp(1616): 
-gl/renderdevicegl.cpp(2071): 
-gl/renderdevicegl.cpp(2078): 
-gl/renderdevicegl.cpp(2124): 
-gl/renderdevicegl.cpp(2376): 
-gl/renderdevicegl.cpp(2592): 
+gl/renderdevicegl.cpp(1476): 
+gl/renderdevicegl.cpp(1511): 
+gl/renderdevicegl.cpp(1546): 
+gl/renderdevicegl.cpp(1581): 
+gl/renderdevicegl.cpp(1626): 
+gl/renderdevicegl.cpp(2081): 
+gl/renderdevicegl.cpp(2088): 
+gl/renderdevicegl.cpp(2134): 
+gl/renderdevicegl.cpp(2386): 
+gl/renderdevicegl.cpp(2602): 
 gl/renderdevicegl.cpp(403): 
 gl/renderdevicegl.cpp(541): 
 gl/renderdevicegl.cpp(59): 
@@ -3817,7 +3813,6 @@ h!8`>B
 h$8`:B
 h`8ch`8$h`8
 h$8d:B
-	h*8	dK
 h`8%h`8
 h#8Jh#8
 h""9	
@@ -3874,7 +3869,6 @@ Hih8h
 Hih8R
 Hitch alert: Present was waiting for %d iterations and %.1f seconds.
 hi)xh
-hj58}
 hj8."@
 hJAy	
 <hji8
@@ -3982,8 +3976,8 @@ Ii+x!
 ij8(	
 ij(8`j
 ij8kI
-ij(8uRT
 ij(8uVT
+ij(8uZT
 )ijx?
 *ijx_
 *+ijxk
@@ -4248,8 +4242,8 @@ KeyValuesSystem
 KFif8
 K)g.L)l&@
 	kh8?u
-	khB/
 K(hi8
+	khJ/
 KHXEy
 khxh6
 _|`ki
@@ -4266,7 +4260,7 @@ KMdEy
 KMeansQuantization
 Km@x+
 kn1V?OK
-(knNfps_max
+(knN-gl_disable_android_present_timing
 KOio8
 KPip8
 KRir8\K
@@ -4976,7 +4970,6 @@ QuarterSizeAttrWithBoxFilter
 Quaternion
 queued
 QueuedLoaderVersion001
-	QV9I
 _R11_EAC
 R16F_EXPAND
 R32_UINT

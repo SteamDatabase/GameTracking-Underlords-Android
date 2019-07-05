@@ -165,6 +165,7 @@ public class application extends Application {
     public void onBootStrapFinished() {
         this.m_ContentSyncAsyncTask.cancel(false);
         String GetString = Resources.GetString("VPC_LauncherBinaryName");
+        JNI_Environment.FindAndLoadNativeLibrary("libSDL2.so");
         StringBuilder sb = new StringBuilder();
         sb.append("lib");
         sb.append(GetString);
