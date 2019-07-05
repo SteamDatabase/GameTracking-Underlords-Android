@@ -36,16 +36,13 @@
 !&@=!
 !	@-)	@
 !	@-#	@
-!	@)=
 !	@)>
-!	@)_
-!	@),}
-!	@);
-!	@)!
-!	@))
-!	@)$}
+!	@)>|
+!	@),
+!	@)$
 !	@)#
 !	@)+
+!	@)	
 ?)>>!;/
 ?}@=	
 .*-@)!
@@ -1224,6 +1221,7 @@ $0 to $1,
 19TEDecal_GameEvent_t
 19TESmoke_GameEvent_t
 19TonemapParameters_t
+!	@)1a
 1 = Animates the pause text so that you can be sure the game isn't just hard locked.
 !1AQaq
 )1AyJ
@@ -1275,6 +1273,7 @@ $0 to $1,
 !2@=!
 ?2: 	
 +2: 	
+	2! :
 	2@( 
 	2*	@
 	2	(@)
@@ -2306,7 +2305,7 @@ $0 to $1,
 28TEProjectedDecal_GameEvent_t
 28TEShatterSurface_GameEvent_t
 28VPhysicsCollisionAttribute_t
-29159	}
+29159
 29CBaseRenderingPipelineFactory
 29CBodyComponentBaseModelEntity
 29CBoneConstraintPoseSpaceMorph
@@ -2542,7 +2541,7 @@ $0 to $1,
 2hj)8
 	2hN	
 2hNA9
-2hr*9
+2hr*9h:
 2h^@y
 2h>@y
 2Hyix
@@ -2572,9 +2571,9 @@ $0 to $1,
 2?!!k
 2?!(k
 2?"!k`
-2?k78r
-2_k88/
-2?k88q
+2?k78o
+2_k88,
+2?k88n
 2k_EGCMsgInitiateTradeResponse_VAC_Banned_Initiator
 2Ki(8k
 2Kii8
@@ -2593,6 +2592,7 @@ $0 to $1,
 ?2lZJ
 2Mii8nii8
 2)!MyJ
+!	@)2n
 2N(  
 2ninx
 }2'@+P
@@ -2600,7 +2600,7 @@ $0 to $1,
 // 2 px horizontal radii 4px vertical elliptical corners on all sides
 2	Q29
 2	q29(Z
-2+q79I}
+2+q79)}
 2+Q89
 2+q<9
 2+Q.9
@@ -2616,7 +2616,6 @@ $0 to $1,
 2Way_1( %s )
 2x2>9
 2	xh:@
-2	x)N
 2@y?=
 2*y5xi"@
 2*y7xi"@
@@ -2624,7 +2623,6 @@ $0 to $1,
 2@yh2
 2@yi2@y
 2zj68hj@
-!	@)3
 '3)	,
 3000.0
 300000
@@ -3128,7 +3126,7 @@ $0 to $1,
 3GAME_PARTICLE_MANAGER_EVENT_SET_CONTROL_POINT_MODEL
 3\.,I
 %3i, %3i, %5.1f
-3i(8ea
+3i(8bm
 %3i fps (%3i, %3i) smth:%4.1f ms frm:%4.1f ms on %s frames: %u
 %3i fps on %s
 3k_ECustomGameInstallStatus_RequestedTimestampTooNew
@@ -3145,7 +3143,7 @@ $0 to $1,
 3R)J!
 3SB-H
 3X@-7
-3@yC&
+3@y#&
 3@yMMA
 40 40 40 196
 4(0@9
@@ -3320,8 +3318,8 @@ $4DTdt
 4hbR9(
 4hbR9h
 4hbR9x
+4h&D)!:
 4h"D9hI
-4h&D)A:
 4hf]9
 4hf@9
 4hf@9(
@@ -3389,7 +3387,6 @@ $4DTdt
 4x3Button
 	4@y 
 |?5^:+
-!	@)5
 ?}?5^
 5@)	@
 5000.0
@@ -3484,6 +3481,7 @@ $4DTdt
 5	S)M*
 +5W),
 =5$@x
+!	@)5y
 5YA)I%@
 5YHe/
 )5@yi*
@@ -3493,6 +3491,7 @@ _6`:@
 _6	<@
 ;*@'6
 !	@)6
+!	@)6|
 ?6`*@
 ?6	`@
 ?6	<@
@@ -3760,7 +3759,6 @@ _6jr@
 6k_EGCMsgInitiateTradeResponse_Shared_Account_Initiator
 6Kis8
 6k_ItemPurgatoryResponse_Refund_Failed_CouldNotFindItem
-!	@)6m
 '6`N@
 6(Optional) Type of game the published file represents.
 _6	p@
@@ -3940,6 +3938,7 @@ _!7ki
 7W	 7w
  7wB@
  7x"@
+& 7xA
 ?7`%Yf
 7Ze&<o
 7`ZKV?e
@@ -4074,7 +4073,7 @@ _8o%@8
 _8|{t
 8x9,7
 8@y ( 
->@9@"
+>@9 "
 |@9		
 |&@9{#
 -9@)/	@
@@ -4137,7 +4136,6 @@ _8|{t
 @@9)@@9
 @9,	@9
 @9*	@9-
-@9%	@9
 @9%	@9&
 @9+	@9
 @9+	@9,
@@ -4150,6 +4148,7 @@ _8|{t
 9(,@9H
 9	!@9i
 9	%@9i
+@9%	@9i6
 )@9()@9I)B)
  @9	$@9J
  @9	$@9J!A
@@ -4158,11 +4157,13 @@ _8|{t
 [%9.9s] (%d)%s at %.6f phase not supported
 [%9.9s] (%d)%s SetInterpolationTimeType - changing interpolation phase type
 @99X@)8 @9
- @9)a
+ @9	a
+!	@)9a
 (@@9	a
  @9)!A
 "@9	A
 @9)	A
+"@9a0
 9	\A9(\A9?
 ?9A@c
 @9)AF9
@@ -4365,7 +4366,6 @@ _8|{t
 9ij@9
 	9IJi
 9iji8h
- @9IK
 @9*ik8
 9ILoopMode
 9in@9
@@ -4382,7 +4382,6 @@ _8|{t
 @9j&@
  @9J,
 )!@9J
-@@9	J
 @9J-@
 @9J5@
 @9j6B9?
@@ -4404,6 +4403,7 @@ _8|{t
 @9J!z9?
 @9k!@
 @9k&@
+ @9)K
 !!@9K
 !@9K}@
 >9K!0>N
@@ -4477,7 +4477,6 @@ _8|{t
 (@@9uB
 9*uC9
 (@@9	v
-#9v[ 
 `9vB 
 (@@9	w
 @9wiu
@@ -4489,13 +4488,14 @@ _8|{t
 )9@y	
 ,9_)-Y@
 @9)yD
+#9yO 
 @9|*@y	y
 )9YyJ
 @9 	@z
 9Zg,>4
  	@-A
 ,/A)*
-!	@)A
+!	@)A{
 'A)	}	
 @-'A@-
 $A))}
@@ -4515,6 +4515,7 @@ a2@yb6@y
 a2@yh2@y
 A5fSXbf7
 	a79H
+a79hH
 A-!8"
 A8q(!
 !a9)#
@@ -4555,7 +4556,6 @@ A9h&@
 	A$9hf@
 A$9hf@
 A9h&H
-a"9Hy
 a$9Hy
 ^A9i^
 "A9i"
@@ -4563,7 +4563,6 @@ a$9Hy
 	A@9i
 A9i>@
 A9i&@
-*A"9I
 	A@9I
 A9iF@
 A9	ii
@@ -4575,10 +4574,12 @@ A9j.D
 +	A9K
 +a@9Ka
 A9Kik
-A?9Ky
+*A"9L
 +	A9lC
 	A>9_Q>9?
 ?A9tJ@
+a"9(y
+A?9+y
 ?A9)yD
 A9)yD
 A-a.@
@@ -4590,7 +4591,7 @@ aaaaaaaazzzzzzzz
 AABB_t
 $	A)Ar
 )aAyJ
-)AAyJZ
+)AAy*Z
 abcdefghijklmnopqrrqponmlkjihgfedcba
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
@@ -6953,6 +6954,7 @@ az9)#
 azure
 aZure : voiced postalveolar fricative
 !^b	!
+!	@)b
 ""\\//b
 @=b("
 @-b	@
@@ -6961,13 +6963,13 @@ aZure : voiced postalveolar fricative
 ('B)*
 @-B	@
 *-B)!
-&B)*>
 B-   
 B-@ !
 B-1HD-
 B333333
-B49mf
+B49j^
 *-B),5C)_
+B69j1
 !^B8!
 @-B8!
 @-B8$
@@ -6979,11 +6981,10 @@ b@9@|
  B\9{
 #B9)=@
 	$B9(
+B@9);
 B@9	a
 B@9a'
 B@9A1
-B:9(D
-B:9	D
 ?B\9{g
 B\9{gt
 ^B9h^
@@ -6995,12 +6996,11 @@ b@9hb
 B@9hB
 B@9hC
 b"@9i
-B@9I;
 B9I	87
 b@9ib
 b@9ib@9
 b@9	w
-*B)a.
+*B)A.
 B-'A@-1	@
 bA9hb
 BA9hB
@@ -7596,8 +7596,6 @@ C-!8"
 ,c@9-
 !C9)#
 C9)|@
-c@9*1
-C@9*1
 C9an@
 (C@9h
 <(C@9H#
@@ -11168,6 +11166,7 @@ czech
  D-	(@
 ?D]`,
 @-D	@
+&D)!:
 %d:%02d
 %d:%02d:%02d
 D0gPad
@@ -11186,11 +11185,11 @@ d3_citadel_05
 .D=3w
 *-D),5E)_
 d6@y#
-d6@y#*
-d6@y#3
+d6@y#$
 d6@yc 
-d6@yc*
-d6@yC$
+d6@yc!
+d6@yC 
+d6@yC*
 d6@yc3
 d6@yC3
 d6@yc6
@@ -11204,7 +11203,6 @@ d9hj
 #D9(M
 D-a"@
 D-a*@
-&D)A:
 dA9)dA9
 #dac_ability_%s
 #dac_ability_%s_Description
@@ -12756,8 +12754,8 @@ distance from the player to the hud
 distancetotarget
 dJ9?a
 dJ9a<
-dJ9a;
-dJ9)b
+dJ9A;
+dJ9,j
 ?dj\I<
 D)l.@
 %d len(%6.3f) (%6.3f %6.3f %6.3f) origin = (%6.3f %6.3f %6.3f) network = (%6.3f %6.3f %6.3f)
@@ -13100,7 +13098,6 @@ D)yV@
 ?e;:	
 @-e	@
 -E)		
-!	@)E
 .E))}
 e0F$J
 ?=((E+7
@@ -13332,6 +13329,7 @@ EM_FixAngle
 emitFromWorld
 Emits a closed caption
 Emits a random caption
+;Em@M
 EMP.Explode
 EM_PlayJingle
 EM_PropagateForce
@@ -14063,7 +14061,6 @@ F-!8"
 !f9*#
 ?\%F9
 f@9(6
-f995D
 F9h&@
 f@9H1
 f@9h2
@@ -14663,8 +14660,8 @@ fixed point overflow in
 Fix this or you'll see a crash.
 FixupResourceName: Illegal full path passed in ("%s")!
 FixupResourceName: Illegal path, missing extension passed in ("%s")!
-#F)j#
 F-j>@
+#F)J#
 FJ-&	&
 ?,F]k
 F-.K@
@@ -15068,9 +15065,7 @@ fYfxk
 f@y?! k
 F@y?! k
 FZ*o7
-!	@)g
 @g|_\
-!	@)G
 .G))}
 G-`( 
 G- ( 
@@ -15879,10 +15874,10 @@ gustduration
 [G:%u:%u]
 G-vF@
 g_VProfCurrentProfile
+!	@)Gx
 gxXM|Z
 g@yRz
 !.h	 
-!	@)h
 ()@)h*
 )h&	)
 @-h  
@@ -15891,6 +15886,7 @@ h&@)?
 h&@)*
 `"@=H?
 ;+%@H
+!	@)H
 @-H  
 #H)	}	
 H-@( 
@@ -15957,7 +15953,6 @@ h"@9(
 h"@9)
 h"@9)%
 h"@9	
-h"@9	=
 h* 9`
 h*@9	
 h&%9+
@@ -15966,9 +15961,9 @@ h+@9
 ?h98a
 h"@9	 @9
 H @9	 @9
-h"@9)a
+h"@9	a
 h"@9)!A
-h"@9)E
+h"@9	E
 h.@9h
 h"@9h
 h*@9h
@@ -15980,15 +15975,17 @@ h&`9H
 h&@9H
 H @9h"
 H@9H?
-h"@9i7
-h"@9i9
+h"@9I7
+h"@9I9
+h"@9iJ
 h9i*J
 h"@9iM
 h"@9IU
 *H@9J
 h"@9	P
+h"@9)U
 h"@9	U
-h"@9)V
+h"@9	V
 h&_)a"
 H)+A@
 *h"A9
@@ -15999,7 +15996,6 @@ hA@9`
 h"A9a
 =H#A9A'
 HA@9(A
-h"A9	E
 h"A9h	
 h^A9H
 h>A9H
@@ -16098,6 +16094,7 @@ hb@9
 =hB@9
 hB@9`
 hB@9(
+hB@9);
 H'B9(
 hb@9h
 hb@9H
@@ -16107,9 +16104,8 @@ h"B9H
 hB@9H
 hB@9H	
 hB@9hF
-hB@9I;
 hb@9i*B
-hB@9iI
+hB@9II
 hB@9)mG
 hb@9	P
 hB@9t
@@ -16641,12 +16637,11 @@ hzG9`r@
 hz	y@
 <i*?)
 !^i	 
-)i*	)
 @-i(&
 	*i>@
 i.@)(
 i)@)	
-!	@)I
+!	@)I{
 !	I- ( 
 	*I}`
 I-!	!
@@ -16721,7 +16716,7 @@ ibA9J
 iBD9(
 iBF9hz@
 i*B)h
-ibH9H}
+ibH9(}
 iBQ9H
 IClientAlphaProperty
 iCollide
@@ -17000,6 +16995,7 @@ I-!H#
 IHandleEntity
 IHasAttributes
 i*	-hf
+)i*	)HM
 I("hq
 *ihx_
 *ihx(
@@ -17171,7 +17167,7 @@ import public "$0";
 import weak "$0";
 impulse
 IMsgNetPacketFromCNetPacket: malformed packet, size %d bytes
-)iMyjX
+)iMyJX
 In8hIh8jIj8mIm8kIo8nU
 (inactive)
 Inactive billing agreement
@@ -18133,6 +18129,7 @@ Iy(xj
 i"Yy?
 )IYy7
 <j.?)
+!	@)j
 @ @-J
 @-J	,
 *$J)(}
@@ -18146,46 +18143,47 @@ j28R8
 j2By+
 j2[y)
 j2@yh
-j38}]
+j38zi
 j48	C
-j48h:
+j48H:
 j48t^@
 j4xH;@
 j58(:
-j58\6
-j58H:
+j58{H
 j58H*
 j58hf@9(
 j58vs
+j58Y:
 J5@y_
-j68>*
-j68,6
-J68C^
+j68>"
+j68,.
+j68hH
 j68hJ[
+J68@j
+J68rj
 j68u*@
-J68u^
 j68v&@
-j68V.
+j68V&
 j6@9(
 j|8?	
 J-!8"
-j(86D
+j(8H,
 j(8HH
 j 8hN
-j)8i+
 j)8I:
+j)8I+
 j`8!i 8
 j)8IV
 j)8`j
-j;8(J
 j)8	L
+j(8w 
 j(8(Z@
  J9?@
 J!~9?
 J!@9_
 J!@9#
 j9!8 
-j98`<
+j98`H
 j98Hki8A
 J9e:A
 j	@9I
@@ -18426,6 +18424,7 @@ Jytx_
 	*jz-
 *:JZjz
 _!(k#
+!	@)k
 ?!(k@
 ?!(k	<
 )k"?)
@@ -18452,13 +18451,13 @@ k2N)jJ@
 *k2@y
 ?k58D
 k5KJLV
+k68(d
 k68wZ@
-k68+X
 ?k78h
-*?k78l
-?k78y3
+*?k78i
+?k78v?
 *?k88}
-_k8864
+_k883@
 ?k88zU
 (k;8H
 k(8vV@
@@ -19401,7 +19400,7 @@ Label.TextDullColor
 label_token
 ladder
 lAF9k
-laL9mJ
+laL9-J
 landmarkModelSpace
 landmarkname
 LangLegend
@@ -19925,9 +19924,7 @@ L!@y?
 Ly?! k
 Ly?!(k
 ?lzPP
-!	@).m
 @=#?m\
-!	@)M
 +M))	
 +M)	)	)
 M-"	"
@@ -21550,7 +21547,6 @@ m_GraphParameterName
 m_groundNormal
 m_guid
 M@=h2
-M@=H3
 m_hActivator
 m_hActiveHandAttachment
 m_hActiveWeapon
@@ -23154,6 +23150,7 @@ m_yaw
 my_custom_images/%d.png
 )!MyJ
 !.n	 
+!	@)*n
 $-n(%
 ?[]N	
 "N(  
@@ -24184,7 +24181,6 @@ Ny)	Oy
 nZ:0J
 ?'[nza
 o*-@)
-!	@)O
 !	O-#
 O?0 ,	f
 o6`"@
@@ -24578,13 +24574,14 @@ owner_id
 ownername
 owner_soid
 OwnGameplayInfo
+!	@)Ox
 o}Xot#
 &OYMW
 @-oyrn
 %O?ZE
-!	@)p
 ?<-?p
 @-p	@
+!	@)P
 P-!("
 P10CUtlBuffer
 P12IVideoPlayer
@@ -25963,7 +25960,7 @@ Q8q(2
 	q,9_
 q	!>9
 *	Q-9_a-9
-*Q$9Jy
+*Q$9*y
 ?!@qA
 Q-A8!
 qangle
@@ -25988,7 +25985,6 @@ qD	@za
 )QGy	
 QH@-$
 q?h(8
-qH9!<
 ?"QhY
 q	i:8
 Q(i*8
@@ -26086,7 +26082,7 @@ R@9hR
 r@9ir
 r@9ir@9
 )!R9J
-RA9h)
+RA9H)
 RA9hR
 rA9ir
 RA9iR
@@ -26793,7 +26789,7 @@ Rj.@-l
 rJ@LB
 rJMJJ
 rk5KJk}
-R?k78C^
+R?k78@j
 R(k)8
 R(kh8h
 Rkjkxljl8k!
@@ -27037,7 +27033,7 @@ r_WaterDrawReflection
 r_WaterDrawRefraction
 r_waterforcereflectentities
 r@y`&@
-`R@y3
+`R@y0
 r@yh*@
 `R@yh
 R@yHq
@@ -27050,6 +27046,7 @@ R	yu2
 === %s ===
 --- %s: 
 :    %s
+!	@)s
 "%s" 
 "%s":
 "%s":[
@@ -27186,7 +27183,7 @@ Saving game to %s...
 Saving MRU list file %s
 Saving %s to cloud....
 saxis
-sAya0
+sAyA0
 say_team
 s_bAbsQueriesValid
 s_bAbsRecomputationEnabled
@@ -29348,7 +29345,7 @@ Switch which class the panel has for a given attribute slot. Allows easily chang
 	s@y?
 )!Sy@
 ))Sy@=
-S@yc&
+S@yC&
 )!SyJ
 ))SyJ
 symbol
@@ -29518,9 +29515,9 @@ Tb8	S
 TbFEyaJEy?
 Tbhd8
 T`b@y
-T`b@y~
-T`b@yE
-T`b@yJq
+T`b@y{
+T`b@yB
+T`b@yG}
 Tc"A)`
 Tc"B)`
 TC#B)@
@@ -29760,7 +29757,6 @@ Th2`9h
 Th2_9H
 Th2I9
 Th2I9(
-Th2I9	&
 Th2@y
 Th5@y
 Th6I9
@@ -29788,7 +29784,7 @@ Th"B9
 ThB@9
 ThB@9(
 Th&B9a
-ThB@9)G
+ThB@9	G
 ThB@9h
 ThB@9H
 ThBA9
@@ -29906,7 +29902,7 @@ ThrK9
 ThrO9
 Thr@y
 ThR@y
-ThR@yyE
+ThR@y9E
 Th^S9H
 th_TH
 ThVA9
@@ -30392,7 +30388,6 @@ Trying to play envelope on invalid sound event %s
 Trying to play unknown soundscape %s
 Trying to send message type %u (%s) before GC connection established.  This is guaranteed to fail.
 Try to clear all the debug overlay info
-ts@)HE
 Ts"@y	
 T*-T),5\).M@
 Tu&A9
@@ -30518,7 +30513,6 @@ tZP)a	+
 )?)	@u
 	*u~@
 u^[&`
-!	@)U
 %u:%02u:%02u
 \U%08x
 U: %.2f deg
@@ -32302,6 +32296,7 @@ WY@)U	@
 ?Wzm6V"
 @%@x	
 x]/(@
+!	@)X
 X-%	"
 \x%02x
 X=2v?
@@ -32373,6 +32368,9 @@ x*;XZ
 XYZ values out of representable range
 <) @y
 !@y,}@
+!	@)=y
+!	@),y
+!	@)$y
 (%@y-	@
 )!^y	
 )!_y	
@@ -32401,7 +32399,7 @@ Y@333?
 y6{(x
 _@y?!8k#
 ?@y?!8k#
-!'@y9~
+!'@y9
 y	-%9
 y,@@9m
 !@@ya
@@ -32512,8 +32510,7 @@ yjx(ih
 ,%@yK%@y
 yk^@yj
 ykZ@yI
-%@ylm
-%@y/m
+%@ylu
 %Y-%m-%dT%H:%M:%SZ
 ymh<xoh;xc
 yMI48
@@ -32545,11 +32542,13 @@ ys@){
 @y)SA9
 @ysB@
 ?yt#,*
+"@yt@
 @ytB@
 @ytF@
 Y_txt
 @y)!Ty
 @yu>@
+%@y/u
 @yub$
 @yuB@
 @yuF@
@@ -32569,7 +32568,7 @@ ywi(xI
 y*x(+
 Y`x($
 y+xh-
-%@yxl
+%@yxt
 	@y-	@y
 y)	@y?
 y	,@y)
@@ -32589,8 +32588,8 @@ Yy?!!k
 )YYy	
 YYYY-MM-DD
 YYYY-MM-DD hh:mm:ss
-!	@)/z
-!	@)'z
+!	@)#z
+!	@)+z
 Z0000
 z	?0e`9
 *z0x1
