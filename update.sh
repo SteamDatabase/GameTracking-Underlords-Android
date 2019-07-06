@@ -2,23 +2,11 @@
 set -xeo pipefail
 touch .error
 
-PASSWORD="$(head -n 1 password.txt)"
-
-# --- Manifest tracking ----------
-git add -f manifest_bootstrap.json
+# --- Bootstrap ----------
 cat manifest_bootstrap.json
 
 APKURL="$(jq -er '.packages.androidarm64.url' manifest_bootstrap.json)"
 MVER="$(jq -er '.packages.androidarm64.version' manifest_bootstrap.json)"
-
-# update game manifests
-
-for PLATFORM in android ios; do
-
-    curl -sSf "https://www.dota2.com/project7manifest/?platform=${PLATFORM}&appid=1046930&version=${MVER}&password=${PASSWORD}" | jq -eMS '.' > manifest_${PLATFORM}.json
-    git add -f manifest_${PLATFORM}.json
-
-done
 
 # --- APK tracking ----------
 IFS=$'\n'
@@ -28,6 +16,7 @@ wget -O androidarm64.apk "$APKURL"
 # decompile APK
 rm -rf android
 ./tools/bin/jadx -ds android -dr android androidarm64.apk
+find android/ -type f > android/filelist.txt
 
 # strings libraries
 set +e
@@ -41,11 +30,24 @@ done
 set -eo pipefail
 
 # track android files
-find android/{org,com} -type d > android/dirlist.txt
 find android/com/valvesoftware -type f -name '*.java' -exec git add -f {} +
 
-git add -f android/AndroidManifest.xml android/dirlist.txt
+git add -f android/AndroidManifest.xml android/filelist.txt
 find android/res/ -type f -regextype egrep -iregex 'android/res/values.*\.xml' -exec git add -f {} +
+
+# --- Manifest tracking ----------
+
+# update game manifests
+
+grep VPC_ManifestPasswordString android/res/values/strings.xml | cut -d'>' -f2 | cut -d'<' -f1 > password.txt
+PASSWORD="$(head -n 1 password.txt)"
+
+for PLATFORM in android ios; do
+
+    curl -sSf "https://www.dota2.com/project7manifest/?platform=${PLATFORM}&appid=1046930&version=${MVER}&password=${PASSWORD}" | jq -eMS '.' > manifest_${PLATFORM}.json
+    git add -f manifest_${PLATFORM}.json
+
+done
 
 # --- Game tracking ----------
 
@@ -86,13 +88,14 @@ find game -type f -regextype egrep -iregex '.*\.(txt|gi|cfg|pem|inf|json|gameeve
 
 # stage deleted files
 git add -f -u
+git reset update.sh
 
 # --- Commit ----------
 
 # create a nice commit
 if [ $(git diff --cached | wc -l) -ne 0 ]; then
 
-    git commit -a -m "v${MVER} | $(git status --porcelain | wc -l) files | $(git status --porcelain | sed '{:q;N;s/\n/, /g;t q}' | sed 's/^ *//g' | cut -c 1-1024)" > /dev/null
+    git commit -m "v${MVER} | $(git status --porcelain | wc -l) files | $(git status --porcelain | sed '{:q;N;s/\n/, /g;t q}' | sed 's/^ *//g' | cut -c 1-1024)" > /dev/null
     git push > /dev/null 2>&1
 
 fi
