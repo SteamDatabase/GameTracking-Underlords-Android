@@ -77,7 +77,7 @@ public class PatchSystem {
             }
         }
     };
-    ArrayList<PendingDownload> m_vecPendingDownloads = null;
+    ArrayList<PendingDownload> m_vecPendingDownloads = new ArrayList<>();
 
     private class CAsyncDownloadManagerTask extends AsyncTask<Void, Void, Boolean> {
         private CAsyncDownloadManagerTask() {
@@ -151,7 +151,7 @@ public class PatchSystem {
                 sb2.append(")");
                 Log.i("com.valvesoftware.PatchSystem", sb2.toString());
             }
-            PatchSystem.this.m_vecPendingDownloads = null;
+            PatchSystem.this.m_vecPendingDownloads.clear();
             return Boolean.valueOf(true);
         }
 
@@ -452,7 +452,11 @@ public class PatchSystem {
                 WaitForUserInput(EState.Error, EErrorCode.Manifest);
                 return;
             }
-            this.m_vecPendingDownloads = new ArrayList<>();
+            String str2 = "com.valvesoftware.PatchSystem";
+            if (!this.m_vecPendingDownloads.isEmpty()) {
+                Log.e(str2, "State exception - start download with non-empty pending list");
+                this.m_vecPendingDownloads.clear();
+            }
             try {
                 PendingDownload pendingDownload = new PendingDownload();
                 pendingDownload.strFilePath = str;
@@ -470,7 +474,7 @@ public class PatchSystem {
                 StringBuilder sb2 = new StringBuilder();
                 sb2.append("Manifest Exception: ");
                 sb2.append(e.toString());
-                Log.e("com.valvesoftware.PatchSystem", sb2.toString());
+                Log.e(str2, sb2.toString());
                 WaitForUserInput(EState.Error, EErrorCode.Manifest);
             }
         } else {

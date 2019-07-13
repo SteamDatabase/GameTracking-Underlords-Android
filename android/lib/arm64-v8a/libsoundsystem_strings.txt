@@ -235,7 +235,7 @@
 28CSosOperatorPauseSoundEvents
 28CSosOperatorRightAngleFloat3
 28ISchemaCollectionManipulator
-2	!.9
+2	!/9
 2@96\@)
 29CSosOperatorCalcFixedRotation
 29CSosOperatorFloatAccumulate12
@@ -253,12 +253,12 @@
 2iqx_
 2irx_"0k
 2?"/k
-2?k78
+2?k78_
 2_!-kc	
 2Ki)8x
 2L1@y
 2njj8l
-2t~	)K
+2t~	)
 30CAudioSource_PlayerVoiceStream
 30CSosGroupActionTimeLimitSchema
 30CSosOperatorGetOpVarArrayIndex
@@ -316,7 +316,7 @@
 6iz@y
 6kB@y
 6@y?!4kC
-6Y#F9
+6Y#J9
 *7`@)
 7	aB9
 7h"A9
@@ -341,13 +341,11 @@ _@8j.@
 `"@9	
 )!@9)
 )	@9?
-	!~9	
-	!@9	
 	*	(@9
 		@9	
 @9	0@
 @9+	@9,
-@99c7
+@99#7
 @9?aEkA
 @9aR@
 @9B("
@@ -363,7 +361,6 @@ _@8j.@
 @9hV@
 9hV@9
 @9hZ@
-(!$9i
 "@9i"@9
 @9ib@9
 9	ii8(
@@ -380,13 +377,13 @@ a6@=b6@
 )a@9	
 ,%A9 
 .%A9-
-)A~9?
 A#@9	
-A9)AG
-a@9)AO
+A9)EG
 *%A9J
 AA9	I@
+)AB9?
 Abort processing sound event %s (scheduled recursively will not process this frame)
+	aC9)
 accumulate_indexed_speakers
 Action Type
 ActionType_t
@@ -504,6 +501,7 @@ AssetBrowserSystem_001
 AssetPreviewSystem_001
 AssetSystem001
 AssetSystemTest001
+assigned
 AsyncSoundQueue
 Atomic Type: %i
 attachment
@@ -530,6 +528,7 @@ Ay
 B-" @
 B-(  
 B-1HD-
+	!B9	
 backward
 Bad Audio file '%s'
 Bad command in vmix!
@@ -801,6 +800,7 @@ Copying '%s' to '%s'
 core.null
 core_update_default
 core.voip
+Couldn't parse the input.
 CParticleSystemDefinition
 cplayervoice
 CPlayerVoiceStream
@@ -919,6 +919,7 @@ CUtlSymbolLarge
 CUtlVector
 Cutoff Freq
 Cutoff Frequency
+cVA9	
 cVA9I
 CVSoundEventScriptTypeManager::AddSoundEvent:  %s has a hash collision with existing %s
 CVSoundStackScriptTypeManager::Allocate can't parse stack KV %s
@@ -932,10 +933,12 @@ __cxa_pure_virtual
 Cycle or diamond double-reference to '%s'
 @-D	@
 D-  "
-d6@yC
+d6@y#
+d6@yc
 D-`8 
 D-!8 
 D-)8,
+	!D9	
 .data
 Data Count: %i
 .data.rel.ro
@@ -956,6 +959,7 @@ Default
 Default_Mix
 Default: %s
 default_to_max
+DEFAULT_WRITE_PATH
  ( def. "%s" )
 DegreeEuler
 delay count
@@ -967,8 +971,11 @@ Depth Reflectivity
 Describe the current sound device.
 Detected %d-level recursion in sound operator stack, abort!
 developer
+DevMsg
 d~F}h
 Didn't find index %s in list (%d events)
+diffmapping
+diffmaterials
 display_category
 display_game
 display_group
@@ -1029,6 +1036,8 @@ DSP: Warning, failed to allocate lfo or mdy for chorus.
 DSP: Warning, failed to allocate mod delay.
 DSP: Warning, failed to allocate pitch shifter.
 DSP: Warning, failed to allocate reverb.
+%d %s %s
+%d) %s %s -> %s
 DUCT Detected 
 Duration: %f
 D%@yh
@@ -1149,6 +1158,7 @@ Failed to assign bool literal value
 Failed to convert KV3 to string; error: %s
 Failed to decode %s
 Failed to determine polymorphic class name
+Failed to get p4 file info for %s
 Failed to load soundstacks/mixgraph.vmix
 Failed to save unsupported class
 false
@@ -1175,6 +1185,7 @@ Field Type: %i
 FIELINFO COMPARE FAIL: %s->%s
 File %s did not have sounds directory in path, appending path and loading, but path needs to be fixed in resource file.
 File %s had sound/ instead of sounds/, path needs to be fixed in resource file.
+File %s is opened for edit by someone. Ignoring the mapping.
 File %s missing sounds dir. Fixing for now.
 File %s missing vsnd extension. Fixing for now.
 Filter bandwidth
@@ -1232,6 +1243,7 @@ GenericGameData
 GetCPUInformation
 GetCStringCharConversion
 Get data related to mix group matching string
+Get physics surface properties for all the materials.
 GetResourceManifestCount
 GetResourceManifests
 GetSoundEventBaseHash: unable to get event by hash %i
@@ -1289,8 +1301,8 @@ h&A9h
 HALL Detected 
 HammerMapLoader001
 handindex
+HangWatchdog_IndicateActivity
 .hash
-H!Ayj
 hb@9`
 hB@9`
 hb@9h
@@ -1319,12 +1331,12 @@ HIGHDPI
 Highest
 HighPass
 h&I)tb
-hj)8:
+hj)8Z
 hJAy`
 hJAy	
 HostStateMgr001
 hr@9(
-hR@9)A
+hR@9)a
 hr@9h
 hRA9jN@
 )H}	S
@@ -1370,7 +1382,6 @@ I CUtlRBTree<void *, int, bool (*)(void *const &, void *const &), CUtlMemory<Utl
 )icx?
 ID of the sound device to use
 =i*D)`R
-i"D)u
 )idx?
 )idx9
 *if@9
@@ -1723,7 +1734,8 @@ jn87kn8
 JNI_OnLoad
 JNI_OnUnload
 JSON error, unterminated element: 
-jv8<]
+ju8$Y
+jv8[Y
 J{)x)
 J!_x_!5k
 j=@ykA@y
@@ -1737,6 +1749,7 @@ k2D)m:E)
 *k2@y
 k(8vV@
 K9y;xa
+KAA9(
 kAKJJ
 key_groups
 KeyValueCache001
@@ -1813,6 +1826,7 @@ Lm@x,
 Load all the probes from a file and log the nearby probes within the radius.
 LOADED CUSTOM STACKS
 LoadFromBuffer: expected '{', found '%s'
+Loading mapping from %s file.
 LoadKV3Object error: %s
 LoadVMixList
 Localize_001
@@ -2236,6 +2250,8 @@ nTries < 10000000
 <NULL>
 nullfield
 NULL m_pSfx
+Number of materials not mapped = %d.
+Number of materials updated with new mapping = %d.
 numerator
 Num Match groups: %i
 numsegments
@@ -2440,6 +2456,7 @@ PhysicsShapeCapsule
 PhysicsShapeHull
 PhysicsShapeMesh
 PhysicsShapeSphere
+PhysicsSurfaceProperties
 pitchScale
 PitchShift
 placement_attach
@@ -2530,7 +2547,7 @@ public.%s
 public.sample
 public.start_point
 public.sync_bpm
-public.sync_bpm_div
+public.sync_bpm_beats
 ../public/tier0/tslist.h
 ../public/tier1/utlleanvector.h
 ../public/tier1/utllinkedlist.h
@@ -2540,11 +2557,12 @@ PurgeAndDeleteAll: Deleting orphaned CSoundEvent pointer for %s via shutdown
 Purge and reload all vmidi data and files.
 	Q@9?
 	Q@9	
+	Q}9I
 ?	@qA
 	qA9	
 *qA9jq
 QAngle
-q)C79
+q)C89
 Qi"A)`
 Qj$xij0
 Qj/xnj0
@@ -2555,7 +2573,6 @@ QueuedLoaderVersion001
 Queue sound '%s'
 Queue took %f msec to drain
 	Q@xi
-	Qy9I
 q$;@z
 RadianEuler
 radius0
@@ -2643,7 +2660,9 @@ rnd_up
 ROOM Detected 
 rootNode
 round_to_int
-r	Q99_A>9T
+r	Q=9_A
+Running snd_get_physics_surface_properties for %s mod.
+Running snd_set_physics_surface_properties for %s mod.
 ryjj8
 : %s::
 "%s" 
@@ -2704,6 +2723,7 @@ Set named Mixgroup of current mixer to mix vol, mute, solo.
 Set named Mixgroup of named mix layer to mix vol, mute, solo.
 Set named mix layer mix amount.
 Set named mix layer / mix group, trigger amount.
+Set physics surface properties for materials. Usage: <heuristic #> <commit>
 Set reverb level for Steam Audio Reverb. Suggested values from [.0f, 10.0f]. Setting it to zero disables all simulation for reverb calculation as well.
 Sets the tempo of the specified track
 Sets the transposition of the specified track
@@ -2729,6 +2749,7 @@ Show sounds location in world
 %s:%i
 sideChain
 sideChainPeak
+single
 singleplayer
 S_Init( finish )
 Size in bytes
@@ -2770,6 +2791,7 @@ snd_gain_max
 snd_gain_min
 snd_gamevoicevolume
 snd_gamevolume
+snd_get_physics_surface_properties
 snd_headphone_pan_exponent
 snd_headphone_pan_radial_weight
 snd_list
@@ -2815,6 +2837,7 @@ snd_sequence_stop_all_tracks
 snd_sequence_stop_track
 snd_setmixer
 snd_setmixlayer
+snd_set_physics_surface_properties
 snd_showclassname
 snd_showstart
 snd_sos_block_global_stack
@@ -3088,6 +3111,7 @@ Steam Audio is not enabled.
 SteamAudioReverb
 Steam Audio Reverb Level value changed from %.3f to %.3f for this map.
 SteamAudioSource
+(Steam Audio) Update physics material attribute of a VMAT file. They are used for picking acoustic material property for Steam Audio.
 Stop a note from a specified sampler
 stop_events_by_next
 stop_immediately
@@ -3130,6 +3154,7 @@ S@y	A
 s@yHC
 sync_track
 sync_type
+SystemAttributes
 _system_properties
 T(0@9
 		T9)
@@ -3137,7 +3162,7 @@ T*-@9
 T*)@9
 T*%A9?
 T	!A9
-T?C79
+T?C89
 Tcih8
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<CSosPackedFieldData::Entry_t, 3, short>, CSosPackedFieldData::Entry_t, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<CSosPackedFieldData::Entry_t, 3, short>, T = CSosPackedFieldData::Entry_t, I = short]
 __temp_unserialization_member__
@@ -3166,6 +3191,7 @@ ThJAy
 ThJ@y
 ThreadGetCurrentId
 ThreadJoin
+ThreadSetAffinityPreference
 ThreadSetPriority
 ThreadSleep
 Threshold dB
@@ -3279,8 +3305,10 @@ UPDATE_STRING_TOKEN_DATABASE
 Usage: movie_fixwave wavname
 Usage:  playdelay delay_in_msec (negative to skip ahead) soundname
 Usage:  snd_compare_soundevents soundevent1 soundevent2
+Usage: snd_get_physics_surface_properties <all|null|assigned|default|material-name>.
 Usage:  snd_print_soundevent <soundeventname>
 Usage:  snd_remove_soundevent <soundeventname>
+Usage: snd_set_physics_surface_properties <diffmaterials|diffmapping|set|overwrite|single> <mapping-file|material-name,material,...>
 Usage:  snd_sos_get_operator_field <stackname> <operator> <field>
 Usage:  snd_sos_print_exec_list
 Usage:  snd_sos_print_operator_stack <stackname>
@@ -3347,11 +3375,16 @@ VERTICAL SHAFT Detected
 VeryHigh
 V_expf
 _V_ExtractFileExtension
+V_fclose
 VFileSystem017
 V_FixDoubleSlashes
 V_FixSlashes
 V_fmodf
+V_fopen
 V_fpclassify
+V_fread
+V_fseek
+V_ftell
 V_GetErrno
 V_GetFileExtension
 vgraph_name
@@ -3495,6 +3528,7 @@ V_tan
 V_tanf
 V_tanhf
 V_TokenWaiting
+V_UnqualifiedFileName
 V_UTF16ToUTF8
 V_UTF32ToUTF8
 V_UTF8ToUTF32
@@ -3542,6 +3576,7 @@ W@y	E
 	 x: %4f y: %4f z: %4f
 X#@9(?
 xfade
+_x`qH
 =	/@y
 +	@y,
 	@y(-
@@ -3573,7 +3608,7 @@ yiv@y
 ykN@y
 ykO@y
 )ylxB
-@-#yN
+@-#yM
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 y+O@y
 )!@y =p

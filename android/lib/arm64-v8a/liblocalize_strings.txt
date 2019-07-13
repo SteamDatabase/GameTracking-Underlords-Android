@@ -17,12 +17,12 @@
 20CPostConnectCallback
 22CSchemaInstallCallback
 23IConCommandBaseAccessor
-2hB.9#
+2hB/9
  [%.3f server clamped to %.3f]
 )5IJ(}
 6ConVar
 6hb@9
- 6hv@
+(6hv@
 7IConVar
 8CFmtStrNILi256ELb0EE
 8x9,7
@@ -31,6 +31,7 @@
 @9hV@
 9	ii8(
 9ILocalize
+	Ac9j
 -all_languages
 Android clang version 5.0.300080  (based on LLVM 5.0.300080)
 AnimationSystem_001
@@ -104,6 +105,9 @@ delete
 developer
 DotaCardGameClient_001
 dump_localization_files
+DuplicateTokensAssert
+DuplicateTokensFail
+DuplicateTokensWarning
 dutch
 .dynamic
 .dynstr
@@ -122,6 +126,7 @@ english
 _english.txt
 en_US
 EnvironmentMapBuilder_001
+ERROR: Duplicate string token '%s' found in %s (original in %s)
 es_419
 es-419
 es_ES
@@ -129,7 +134,6 @@ EventSystem001
 EXPORTSYSTEM_INTERFACE_VERSION_001
 Failed to read localization file %s
 false
-FATAL ERROR: Duplicate string token '%s' found in %s
 FATAL ERROR: unable to register all schema data: %s
 FCVAR_NEVER_AS_STRING
 %f %f %f %f
@@ -278,6 +282,7 @@ Localization key '%s' is too long. Truncating.
 Localization string too long: %d chars in '%.20s...'
 Localization watching these dirs for changes:
 localize
+Localize
 Localize_001
 Localize_Create
 localize_imp.cpp
@@ -633,9 +638,10 @@ V_UTF8ToUTF16
 V_UTF8ToUTF32
 V_vsnprintf
 V_vsnprintfWarnTrunc
+V_wcstoi64
 Warning
 WARNING: CDirWatcher not implemented
-WARNING: Duplicate string token '%s' found in %s
+WARNING: Duplicate string token '%s' found in %s (original in %s)
 Warning:  %s = '%s' is infinite, clamping value.
 wcslen
 WIN32

@@ -5,7 +5,6 @@
 !^ 	 
 !~ 	 
 !~!	!
-!	@-#	@
 '":|;
 ".!("
 (/@))
@@ -22,7 +21,9 @@
 *-@))	@
 *!@))	@
 	*	}`
+@-0	@
 00000000-0000-0000-0000-000000000000
+0 100
 	0@9?
 0@9I0@9
 0ED- 
@@ -30,9 +31,7 @@
 0nB8#
 0x%016llX
   0x%08X %s,
-0@yH3
 0@y_!!ka
-#@-	1@
 10CAnimState
 10CBoneSetup
 10ConCommand
@@ -117,6 +116,7 @@
 15CLookAtAnimNode
 15CParameterValue
 15CPostGraphIKTag
+15CRagdollAnimTag
 15CRootUpdateNode
 15CTier0AppSystemI16IAnimationSystemE
 15CTier1AppSystemI16IAnimationSystemLi0EE
@@ -129,6 +129,7 @@
 15IChoiceAnimNode
 15IParameterValue
 15IPostGraphIKTag
+15IRagdollAnimTag
 15ISaveRestoreOps
 %.15lf
 16CAnimationBucket
@@ -241,14 +242,13 @@
 19CSubtractUpdateNode
 19CTurnHelperAnimNode
 19CUnregisterReceipt2I9CSmartPtrI23CAnimTagManagerInstance17CRefCountAccessorEMS1_FvjP16IAnimTagListenerEjS5_E
-	1|9I
 19IAnimStateCondition
 19IKeyValuesErrorSpew
 1-B(#
 1bQJ1~
 1DBlend
 1*i(8`
-1@)kqD
+1@)kiD
 1N  !
 1ns:5
 	2*	@
@@ -333,7 +333,6 @@
 22IAnimGraphModelBinding
 22IAnimParameterInstance
 22IIKJointConstraintData
-2	!39s
 23CAnimationGraphInstance
 23CAnimationGroupResource
 23CAnimationTypeManagerV0
@@ -359,12 +358,12 @@
 23CUpdateNodeInstanceData
 23CVConCommandMessageAnim
 23CWayPointHelperAnimNode
+23IAnimationDebugRenderer
 23IAnimationGraphInstance
 23IAnimTagManagerInstance
 23IChoreoAnimNodeInstance
 23IConCommandBaseAccessor
 23IMotionMatchingAnimNode
-2	!49
 24CAnimStateMachineContext
 24CCompressedReferenceBool
 24CCompressedStaticColor32
@@ -521,9 +520,14 @@
 29CStrideLengthAdjusterAnimNode
 29IAnimationGraphVisualizerInfo
 29ISolveIKChainAnimNodeInstance
+	2)a-
+	2)a0
+	2)a6
 2_BONE_IK
 2dtri
 %.2f degrees, %.2f ratio
+2hB#9
+2Hc39
 2Hi88H
 2h>@y
 	2	i*
@@ -535,7 +539,6 @@
 2+imx
 *2j08p
 *2j08q^A
-	2Ja.
 2jp8R
 2_!!k
 2L@-4
@@ -605,12 +608,15 @@
 )5IJ(}
 =5$@x
 %6.2f %6.2f %6.2f %.3f %.3f %.3f
+6B-	-F
 6($C)* @
 6ConVar
 6hb@9
 6hB@9H
 6i"@ij
+?!6kA
 @6W!?
+6Ycs9
 6@ygz
 6@yX&
 7hb@9h
@@ -637,6 +643,7 @@
 @=#9 
 @-!9 
 *@9	)
+	+@9)
 "@9"%@9_
 @9,	@9-
 @9+	@9,
@@ -647,7 +654,6 @@
 9a	@= 	@=!
 9a"@9
 @9?aEkA
-"@9]C
 9CAnimData
 9CAnimPath
 (@@9h
@@ -655,13 +661,13 @@
 9h&A9
 9hb@9
 9hB@9
-9hbB9
 9hbE9
 9h^E9
 9hf@9(
 "@9hf@9i
 9hji8
 @9hV@
+_9_I	
 @9+i(8k
 "@9i"@9
 9*i@9J
@@ -686,12 +692,10 @@ a^  `
 A- (#
 A- 	 
 A-!(!
-/^-a*3
 a	@- 8 
 &	A-!8#
-?A-@9+
+A-(8 
 *A@9_
-	!A9	
 A-!9 
 a^@9b*
 *A9h*
@@ -699,8 +703,8 @@ A@9)y
 A-'@A-
 "A)az
 	@=a	@=B
-A-B8-
 	AB9?
+A	@-C	@
 Acceleration Forward-Back
 Acceleration Front-Back
 Acceleration Heading
@@ -714,7 +718,6 @@ Activity %s has %d sequences with a total weight of %d!
 ACTIVITY WEIGHTS
 Activity Weights keys not allocated!
 ACT_NEUTRAL_REF_POSE
-	AD9	
 AddEventTypeFlags
 addlayer
 Add node is missing a child.  Will use t-pose by default
@@ -825,6 +828,7 @@ AimMtx:m_resetCount
 ai_model_info
 AIWalkable
 _A@k(
+	ak9	
 AllocateAndLoad failed for '%s'
 AllocateAndLoad failed for '%s' (%s)
 allowstatic
@@ -899,10 +903,15 @@ AnimGraphEditorUtils001
 animgraph_footlock_apply_lock
 animgraph_footlock_debug_foot_index
 animgraph_footlock_debug_type
-animgraph_footlock_enabled
+animgraph_footlock_ik_enable
+animgraph_footlock_shimmy_footbase
+animgraph_footlock_sphere_slide
+animgraph_footlock_use_twobone_solve
 animgraph_ik_debug
 animgraph_ik_locks_enabled
 AnimGraphInstance
+Animgraph Parameter
+Animgraph Position Parameter
   +- AnimGroup: %s
 AnimIkLockLocal
 AnimLayer
@@ -957,7 +966,6 @@ Anticipation Heading Parameter
 Anticipation Position Parameter
 Anticipation Time
 AppendDataChannels( %s, %d, %s )
-Apply a curved Z offset based on the begin/end normals.
 Apply Foot Rotation Limits
 Apply Locks
 Apply Motion Limits
@@ -966,6 +974,7 @@ Apply Step Limits
 Apply Tilt
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 archive
+AssertMsg_ConditionFailed
 AssetBrowserSystem_001
 AssetBrowse( vpcf )
 AssetPreviewSystem_001
@@ -988,6 +997,7 @@ Auto Reset
 auto_unragdoll_duration
 A-!Xh
 AXk!#
+$Ay	@@
 @-;A@y:E@y9I@y8M@y
 ?AYki
 Ay)Y@y
@@ -1002,6 +1012,7 @@ B-1HD-
 b"@9i
 B-A(!
 BA9hB
+BA-B8$
 Bad AnimEvent, sequence = "%s", AnimEvent = "%s", cycle & frame are both < 0 on model: %s
 Bad expression operator: '%c%c', expected C style boolean expression operator.
 Bad expression syntax: '%s', expected a single matching pair of enclosing braces.
@@ -1044,13 +1055,14 @@ Bad %s on sequence %s: %s or %s already specified, entryNode: %s, exitNode: %s o
 <BAD_VAL>
 Bad value
 BakedLODBuilderMgr001
-Banimgraph_footlock_offset_curve
+Banimgraph_footlock_enabled
 #base
 BaseIKRig
 #base is NULL 
 baselayer
 BasePhysicsShape
 Base Spring; 
+b&Aya"Ay
 &B)bz
 *B)cz
 Beginning
@@ -1067,8 +1079,10 @@ bindPose
 Blend 1D
 Blend1D:m_flBlendValue
 Blend 2D
+Blend2D:m_flCycle
 Blend2D:m_flCycleZeroTime
 Blend2D:m_flPlaybackRate
+Blend2D:m_flPrevCycle
 Blend2DMode
 Blend2DMode_Directional
 Blend2DMode_General
@@ -1081,6 +1095,7 @@ Blend Amount on Exit
 Blend Animation
 Blend Duration
 blendindices
+Blending
 Blend Item
 Blend Items
 BlendKey_Distance
@@ -1091,6 +1106,7 @@ Blend Key Values
 BlendKey_Velocity
 blendlayer
 BlendList
+Blend Method
 Blend Mode
 BLEND_PREALIGNED|
 Blend Source for the X Axis set to "Parameter", but no parameter is set
@@ -1100,7 +1116,6 @@ Blend Space
 BlendSpace_Model
 BlendSpace_Model_RotationOnly
 BlendSpace_Parent
-Blend Time
 Blend Value
 blendweight
 blendweights
@@ -1165,6 +1180,7 @@ burst_scale
 C-@ !
 C-2-@
 C-!8"
+"C9(A
 C@9`b
 cable
 CActivityValueList
@@ -1225,6 +1241,8 @@ CAnimStateTransition::LoadFromBuffer error: %s
 CAnimTagBase
 CAnimTagManager
 CAnimTagSpan
+CAnimUpdateTagList:PrevTagStatus
+CAnimUpdateTagList:TagStatus
 CAnimUser
 CAnimUserDifference
 CAnimVariant
@@ -1407,6 +1425,7 @@ CHitBox
 CHitBoxSet
 CHitBoxSetList
 CHitReactAnimNode
+ChoiceBlendMethod
 ChoiceChangeMethod
 Choice Item
 Choice:m_currentChoice
@@ -1482,7 +1501,6 @@ ClientPredicted
 Client Predicted
 ClientSimulate
 Client Simulate
-cl_ik_enable
 clock_gettime
 CLookAtAnimNode
 CLookHeadingCondition
@@ -1631,6 +1649,7 @@ CPlayerInputAnimMotorInstance
 CPointConstraint
 CPostGraphIKChainBlendTag
 CPostGraphIKTag
+CRagdollAnimTag
 Create a new sequence on the model by specifying the sequence type (string), name and a table of parameters
 CreateInterface
 create_particle
@@ -1738,10 +1757,12 @@ c@yhR
 D-"/@
 d6@yc
 d6@yC
+D- 8 
 d@9hf
 %d.Add( %s, %d, %.2f )
 Damped Path Motor
 DampedPathMotorInstanceData_t
+Damping Ratio
 DampingSpeedFunction
 .data
 #data
@@ -1772,6 +1793,9 @@ delete
 deltaAngle
 deltaMovement
 DepthPassBatchID
+DeswizzleContainer: Index out of range in anim %s
+DeswizzleContainer: Trying to read out of range for anim %s
+DeswizzleContainer: Trying to write out of range for anim %s
 detach_from_owner
 developer
 DevMsg
@@ -1782,8 +1806,10 @@ Difference Between Moving and Facing
 differs  :
 %d.IKLockInPlace( %s, %.2f, %.2f )
 %d.IKRestoreAll( )
+DirBlend:m_flCycle
 DirBlend:m_flCycleZeroTime
 DirBlend:m_flPlaybackRate
+DirBlend:m_flPrevCycle
 DirBlend:m_resetCount
 DirBlend:m_resetCycleValue
 Directional Blend
@@ -1826,8 +1852,9 @@ dynamic_interaction
 .dynstr
 .dynsym
 @-e	@
+E- 8 
 E-!8$
-EB-!($
+E-	8,
 EconItemToolModel_001
 _edata
 .eh_frame
@@ -1838,11 +1865,12 @@ emitFromWorld
 #empty#
 EmptyAnim
 Enable Collision
-Enable Hip Drop
 Enable IK
 Enable IK.
 enable_limit
+Enable Pose Control
 encoding
+Encountered bad skin weights, summing to %g (1.0 expected) at position %.3f %.3f %.3f
 __end__
 End Cycle
 End Effector
@@ -1908,10 +1936,8 @@ extra
 Extra Reach Allowed
 Extra Stretch Allowed
 F: %.2f deg
-F- 8 
 f@9H1
 f@9h2
-F#A9G
 FABRIK
 Face Direction
 faceMergeAngle
@@ -2096,11 +2122,10 @@ Foot Lock node (%s): Failed to find foot with name "%s"
 Foot Lock node (%s): Invalid target bone for foot "%s"
 Foot Lock node (%s): No feet defined; node will do nothing 
 FootLockSubVisualization
-FOOTLOCKSUBVISUALIZATION_FootStretch
-FOOTLOCKSUBVISUALIZATION_RotationLimit
+FOOTLOCKSUBVISUALIZATION_IKSolve
+FOOTLOCKSUBVISUALIZATION_ReachabilitySphereAnalysis
 footpose_hip_bone_stabilize_debug
 Foot Rest Damping
-Foot Stretch
 force
 Force Latest Value
 force unlocked
@@ -2228,6 +2253,9 @@ handindex
 Has a Path
 Has Collision; 
 .hash
+h.AyH
+h"Ayi
+h&AyiB@
 hb@9`
 hb@9(
 hB@9`
@@ -2251,6 +2279,7 @@ hf@9i
 )hFA9
 hfB9	
 hFD9u
+hfGy	
 hf@y`
 h*@i)
 Hi)8j
@@ -2273,11 +2302,11 @@ Hit React node requires its %s parameter %s to be networked
 Hit React node requires its %s parameter %s to NOT be interpolated
 Hit Strength
 Hit Strength Parameter
-hj48.
+hj48S
 hj@9yF@
 h&@-j.A-
 !H*JAJ*
-hjG9)uF
+hjG9)qF
 H*J!J*
 H*J	J*
 HMaterial
@@ -2298,6 +2327,7 @@ HSequence
 =hs@y1
 hurt_me
 hurt_them
+[hxVYyxk
 h&@y)
 h&Y)9
 h"@yi
@@ -2311,6 +2341,7 @@ I)!|@
 i1xhj*
 i1xhj+
 i1xjj,
+i6@yh
 ?i(8	
 @i889
 ?i(8i
@@ -2319,7 +2350,6 @@ i*8*i@9J
 ?i(8?i*x?i+
 *i+8j
 +i(8k
-i;8o^
 i98h.@
 IAnimationGraph
 IAnimationGraphBuilder
@@ -2338,6 +2368,8 @@ IAnimStateTransition
 IAnimTag
 IA-pz
 IAudioAnimTag
+i&Ay`
+i&Ayj
 ib@9`
 ib@9(
 ib@9)
@@ -2348,6 +2380,7 @@ IBlendAnimNode
 IChoiceAnimNode
 IChoreoAnimNodeInstance
 IClothSettingsAnimTag
+I CUtlLinkedList<CSmartPtr<CPoseRecipe, CRefCountAccessor>, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CSmartPtr<CPoseRecipe, CRefCountAccessor>, unsigned short>, unsigned short> >::AllocInternal(bool) [T = CSmartPtr<CPoseRecipe, CRefCountAccessor>, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<CSmartPtr<CPoseRecipe, CRefCountAccessor>, unsigned short>, unsigned short>]
 I CUtlLinkedList<int, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short> >::AllocInternal(bool) [T = int, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int, CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int>, unsigned int> >::NewNode(const T *) [T = CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, I = unsigned int, L = CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int>, unsigned int>]
 I CUtlRBTree<CUtlMap<const char *, CActivityRemapCache, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, CActivityRemapCache, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CActivityRemapCache, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, CActivityRemapCache, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, CActivityRemapCache, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CActivityRemapCache, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
@@ -2368,6 +2401,7 @@ IEnumAnimParameter
 ifB9)
 IFootFallAnimTag
 IFootLockAnimNodeInstance
+If the footbase is unreachable by IK, we move the target inwards.
 (ih8h
 )ih8Ii(8
 	*Ii+
@@ -2433,11 +2467,12 @@ ik_debugrule_spin_speedscale
 ik_debug_soften
 ik_debug_soften_enable
 ik_debug_targets
-ik_debug_twobone_solver
+ik_enable_planetilt
 IkEndEffector_Attachment
 IkEndEffector_Bone
 IkEndEffectorType
 ik_fabrik_iterations
+ik_final_fixup_enable
 ik_force_lock_value
 ik_force_masterblend_amount
 ik_groundrule_enabled
@@ -2448,6 +2483,7 @@ ik_ground_rule_normalspring_strength
 ik_ground_rule_zspring_strength
 Ikh8?
 ik_hinge_constraint_enable
+ik_hinge_debug_bone_index
 ik_ignore_end_effector_target_bones
 iklockinplace
 ikLocks
@@ -2461,7 +2497,7 @@ ikrig
 IKRigBiped
 IKRigBug
 IKRigSimple
-ik_solve_enabled
+IK Solve
 IKSOLVER_COUNT
 IKSOLVER_DogLeg3Bone
 IKSOLVER_Fabrik
@@ -2469,14 +2505,18 @@ IKSOLVER_Perlin
 IKSolverSettings_t
 IKSOLVER_TwoBone
 IKSolverType
+IK Solver Type
 IKSYSTEMTYPE_Animgraph
 IKSYSTEMTYPE_SkeletonInstance
+IK Target
 IkTarget_Attachment
 IkTarget_Bone
 IkTarget_Parameter_ModelSpace
 IkTarget_Parameter_WorldSpace
+IK Target: %s
 IKTargetSettings_t
 IKTargetSource
+IKTARGETSOURCE_AnimgraphParameter
 IKTARGETSOURCE_Bone
 IKTARGETSOURCE_COUNT
 IkTargetType
@@ -2487,12 +2527,13 @@ IMotionMetric
 #include
 #include is NULL 
 IncludeScript stack overflow
-Infinite Joint Weights encountered: Skinning will not work!
+Infinite Joint Weights encountered: Skinning will not work! (At position %.3f %.3f %.3f)
 InfoForResourceTypeCAnimationGroup
 InfoForResourceTypeCAnimData
 InfoForResourceTypeCSequenceGroupData
 .init_array
 Inner Angle
+Inner Stopping Radius
 input
 <input>
 InputLayoutBuilder
@@ -2555,6 +2596,7 @@ IPostGraphIKTag
 Iq@9	1
 IQuickTime001
 ir8nhr8?
+IRagdollAnimTag
 is active
 IsAnimation
 IsAutoplay
@@ -2579,6 +2621,7 @@ IsSnapped
 IStatusAnimTag
 IStringAnimTag
 IsVScript
+iS@yhW@y
 )it8i
 #It contains connectivity part %d with %d vertices
 Iterate
@@ -2590,10 +2633,12 @@ IVSSequence
 *i.xi>@yj:
 i#xjj-
 	ixx))
+I	@y	)
 i>@yh
 @i)yj
 )iz8)
 J-@	 
+j >= 0 && j < nResultBufSize
 J0@y_
 J1@i)iy
 j58hf@9(
@@ -2624,9 +2669,9 @@ J(MHJ
 jn87kn8
 JNI_OnLoad
 JNI_OnUnload
-Joint Indices (%d) Out Of Range for SINT16: Skinning will not work ! 
-Joint Indices (%d) Out Of Range for UINT10: Skinning will not work ! 
-Joint Indices (%d) Out Of Range for UINT8: Skinning will not work ! 
+Joint Indices (%d) Out Of Range for SINT16: Skinning will not work!
+Joint Indices (%d) Out Of Range for UINT10: Skinning will not work!
+Joint Indices (%d) Out Of Range for UINT8: Skinning will not work!
 JQ@9j
 JQ@9J
 js_array
@@ -2657,7 +2702,6 @@ KeyValues::RecursiveSaveToFile: TODO, missing code for TYPE_COLOR.
 KeyValues::SaveToFile: couldn't open file "%s" in path "%s".
 KeyValuesSystem
 k-F9(
-kh,8+
 	kh8?u
 kiix)	
 K)@)j
@@ -2672,6 +2716,7 @@ k@y(Y
 l-@),-
 *-	L!
 L: %.2f deg
+	!l9	
 L	@9!
 labelled_debug_helper_arc_segments
 labelled_debug_helper_enabled
@@ -2765,7 +2810,6 @@ LrwcE
 %ls [wstring, len = %d]
 LYkxk
 M)@)-)
-M@9H`
 (MA8(
 m_activities
 m_activityArray
@@ -2774,6 +2818,7 @@ m_activityName
 m_additiveChildID
 malloc
 m_animArray
+m_AnimgraphParameterNamePosition
 m_animNamePrefix
 m_AnimOverlay
 m_ankleBoneName
@@ -2805,11 +2850,12 @@ m_attachmentName
 m_attachments
 m_autoLayerArray
 max_angle
+Max Excess
  max. %f
 maxHullVertices
 Max Impact Force
-Maximum IK Extension
 Maximum Tension
+Max reachable
 maxSpringTension
 Max( %s, %s )
 Max Tension
@@ -2859,8 +2905,8 @@ m_bDoNotDrawInFastShadowPath
 m_bDrawLast
 m_bEnableCollision
 m_bEnabled
-m_bEnableHipDrop
 m_bEnableIK
+m_bEnablePoseControl
 m_bEnableRetarget
 m_bExclusiveFootMotion
 m_bFetchFrame
@@ -2904,6 +2950,7 @@ m_blendCurve
 m_blendCycle
 m_blendDuration
 m_blendKeyType
+m_blendMethod
 m_blendMode
 m_blendParameter
 m_blendSource
@@ -2984,7 +3031,6 @@ m_bTeleported
 m_bTrailBias
 m_bTranslationOnly
 m_bTurnToFace
-m_bUnparkAtCycleStart
 m_bUseBlendScale
 m_bUseCompressedNormalTangent
 m_bUseHighestEndCP
@@ -3128,6 +3174,7 @@ m_flClusterRefireTimeMax
 m_flClusterRefireTimeMin
 m_flClusterSize
 m_flCounterRotationScale
+m_flDampingRatio
 m_flDefaultTiltSpringStrength
 m_flDistance
 m_flDistanceFadeScale
@@ -3147,6 +3194,7 @@ m_flFingerScaleRatio
 m_flFingerWeight
 m_flFixedCycleValue
 m_flFPS
+m_flFrequency
 m_flHipBoneTranslationScale
 m_flHipDipDelay
 m_flHipDipImpactScale
@@ -3158,12 +3206,12 @@ m_fLifespanScaleExp
 m_flInitFromKilledParentParticles
 m_flInitialMasterBlendAmount
 m_flInitialTiltBoneInfluence
+m_flInnerRadius
 m_flInput0
 m_flInput1
 m_flInterpEndTime
 m_flKillDelay
 m_flKillRate
-m_flLastTimeStep
 m_flLiteralValue
 m_flLookAheadDistance
 m_flLoop
@@ -3171,7 +3219,6 @@ m_flMass
 m_flMax
 m_flMaxAngle
 m_flMaxExtent
-m_flMaxIKExtension
 m_flMaxImpactForce
 m_flMaxLockDistanceToTarget
 m_flMaxRadians
@@ -3180,26 +3227,25 @@ m_flMaxValue
 m_flMaxYawDegreesFromForward
 m_flMin
 m_flMinAngle
+m_flMinDelayBetweenHits
 m_flMinImpactForce
 m_flMinRadians
 m_flMinSpringTension
 m_flMotionFalloffBias
 m_flMultFactor
-m_flNextAnimTime
 m_flNormalSpringStiffness
 m_floatAttributes
 m_floatParams
 m_flOpStrength
 m_flOpStrengthMaxScale
 m_flOpStrengthMinScale
+m_flOuterRadius
 m_flOutput0
 m_flOutput1
 m_flOverrideTiltSpringStrength
 m_flPitchLimit
 m_flPosWeight
 m_flPredictionTime
-m_flPrevAnimTime
-m_flPrevCycle
 m_flProgression
 m_flPropagationScale
 m_flRadius
@@ -3209,6 +3255,8 @@ m_flRaycastHeight
 m_flRaycastRadius
 m_flReachScale
 m_flRealTime
+m_flReflectTargetMaxExcessAmount
+m_flReflectTargetPushInMaxAmount
 m_flResponsiveness
 m_flRootMotionBlend
 m_flSampleRate
@@ -3295,6 +3343,7 @@ m_ikChainName
 m_IkChains
 m_IKChains
 m_IKLockArray
+m_ikSolverType
 min_angle
 m_includedGroupArray
 m_includedGroupArray_Handle
@@ -3304,6 +3353,7 @@ m_influenceFlags
 m_influenceNames
 m_influenceWeights
 Min Impact Force
+Minimum Delay Between Hits
 Minimum Speed
 m_Initializers
 m_inputList
@@ -3527,7 +3577,6 @@ MotionMatching:clipIndex
 MotionMatching:currentSegmentIndex
 MotionMatching:cycleZeroTime
 MotionMatchingInstanceData
-MotionMatching:m_resetCount
 MotionMatchingNode
 Motion Matching node at least on valid clip with duration longer than the sampling rate
 Motion Matching node requires at least one metric to work
@@ -3621,7 +3670,6 @@ m_qChildBindRotation
 m_qFixupRotation
 m_qOffset
 m_qParentBindRotation
-m_qRotationOffset
 m_quat
 m_quaternionCompressor
 m_renderAttributesUsed
@@ -3731,7 +3779,6 @@ m_vBallOffset
 m_vBasePosition
 m_vCapsulePos1
 m_vCapsulePos2
-m_vCenter
 m_vConeApex
 m_vControlPoint1
 m_vControlPoint2
@@ -3749,7 +3796,6 @@ m_vector4DCompressor
 m_vectorAttributes
 m_vectorCompressor
 m_vectorParams
-m_vEnd
 m_vertexBuffers
 m_verticalAxisDirection
 m_vForwardLS
@@ -3761,27 +3807,27 @@ m_vMinBounds
 m_vMovement
 m_vOffset
 m_vPole
-m_vPosition
-m_vPositionEnd
 m_vPositionOffset
-m_vPositionStart
 m_vRotation
-m_vRotationDelta
 m_vSplayHingeAxis
 m_vStanceDirectionMS
 m_vStancePositionMS
-m_vStart
 m_vTargetOrientation
 m_vTargetPosition
 m_vTintColor
 m_vTipOffset
 m_vToStrideStartPos
-m_vTranslationDelta
 m_vUpLS
 m_vUpVector
 m_vValue
 m_vVelocity
 m_vWaypointPosWS
+m_vWsCenter
+m_vWsEnd
+m_vWsPosition
+m_vWsPositionEnd
+m_vWsPositionStart
+m_vWsStart
 m_weight
 m_weightListName
 m_weightParam
@@ -3792,7 +3838,7 @@ m_writeIndex
 mWsEndEffectorInitial
 mw@yl}E
 *m@x_
-m_xTransform
+m_xWsTransform
 myjx?
 'n  !
 $n  !
@@ -3803,6 +3849,7 @@ $n  !
 &N':'
 #N  "
 #N)	}	
+#N!0 
 &n0:0
 N10Reflection6Detail7ToBaseTI10CAnimState10IAnimStateEE
 N10Reflection6Detail7ToBaseTI10IAnimMotorNS_6ObjectEEE
@@ -3833,6 +3880,8 @@ N10Reflection6Detail7ToBaseTI15CCycleCondition23CAnimStateConditionBaseEE
 N10Reflection6Detail7ToBaseTI15CLookAtAnimNode13CAnimNodeBaseEE
 N10Reflection6Detail7ToBaseTI15CPostGraphIKTag12CAnimTagBaseEE
 N10Reflection6Detail7ToBaseTI15CPostGraphIKTag15IPostGraphIKTagEE
+N10Reflection6Detail7ToBaseTI15CRagdollAnimTag12CAnimTagBaseEE
+N10Reflection6Detail7ToBaseTI15CRagdollAnimTag15IRagdollAnimTagEE
 N10Reflection6Detail7ToBaseTI15IAnimationGraphNS_6ObjectEEE
 N10Reflection6Detail7ToBaseTI16CBlend2DAnimNode13CAnimNodeBaseEE
 N10Reflection6Detail7ToBaseTI16CFootCycleMetric17CMotionMetricBaseEE
@@ -3967,9 +4016,11 @@ N10Reflection6Detail9TypeInfoTI15CChoreoAnimNodeEE
 N10Reflection6Detail9TypeInfoTI15CCycleConditionEE
 N10Reflection6Detail9TypeInfoTI15CLookAtAnimNodeEE
 N10Reflection6Detail9TypeInfoTI15CPostGraphIKTagEE
+N10Reflection6Detail9TypeInfoTI15CRagdollAnimTagEE
 N10Reflection6Detail9TypeInfoTI15IAnimationGraphEE
 N10Reflection6Detail9TypeInfoTI15IChoiceAnimNodeEE
 N10Reflection6Detail9TypeInfoTI15IPostGraphIKTagEE
+N10Reflection6Detail9TypeInfoTI15IRagdollAnimTagEE
 N10Reflection6Detail9TypeInfoTI16CBlend2DAnimNodeEE
 N10Reflection6Detail9TypeInfoTI16CFootCycleMetricEE
 N10Reflection6Detail9TypeInfoTI16CFootFallAnimTagEE
@@ -4081,6 +4132,7 @@ N16CAnimFactoryBase13CFactoryMakerE
 N17CAnimFactoryBaseTI12CAnimTagBaseE14CFactoryMakerTI13CAudioAnimTagEE
 N17CAnimFactoryBaseTI12CAnimTagBaseE14CFactoryMakerTI14CStringAnimTagEE
 N17CAnimFactoryBaseTI12CAnimTagBaseE14CFactoryMakerTI15CPostGraphIKTagEE
+N17CAnimFactoryBaseTI12CAnimTagBaseE14CFactoryMakerTI15CRagdollAnimTagEE
 N17CAnimFactoryBaseTI12CAnimTagBaseE14CFactoryMakerTI16CParticleAnimTagEE
 N17CAnimFactoryBaseTI12CAnimTagBaseE14CFactoryMakerTI18CTaskStatusAnimTagEE
 N17CAnimFactoryBaseTI12CAnimTagBaseE14CFactoryMakerTI21CClothSettingsAnimTagEE
@@ -4165,9 +4217,10 @@ N37CTypesafeIntrospectedToKV3TypeManagerILy482955714934E15CAnimationGroupE28IKV3
  n"(a
 $Na)#
 "NA*!
-!NA=M
+!NA-M
 nav_attribute_avoid
 nav_data
+N 	B-d
 %nbH)
 'nD:$
 !nE(%
@@ -4202,17 +4255,23 @@ nf@9/
 &NF9!
  nG:'
 !Nh! 
-"Nh  
 NhFD9t
 niqx?
 Nj1xkj-
++N-K9
  n)M"
+N	)n@
 noblend
 No Buffer
 No conversion from %s to int now
 No conversion from %s to string at the moment!
 NoDamping
 No DATA block for resource '%s'
+NodeInstance:m_flLastTimeStep
+NodeInstance:m_flNextAnimTime
+NodeInstance:m_flPrevAnimTime
+NodeInstance:m_vRotationDelta
+NodeInstance:m_vTranslationDelta
 <NO EXPRESSION>
 <no failure reason set>
 No free conversion of %s variant to HSCRIPT right now
@@ -4227,6 +4286,7 @@ notify
 Not safe to 'new' this class due to alignment requirements
 No valid format conversion from '%s' to '%s'
 $np:0
+n < pSwizzle->m_masterElement.Count()
 &nQ:1
 <null>
 (null)
@@ -4266,6 +4326,7 @@ Original Thigh
 origin_max_delta
 origin_relative
 Outer Angle
+Outer Stopping Radius
 Out of range %s on sequence %s.%s[%d] on model: %s
 overlay
 Override Solver Settings
@@ -4303,8 +4364,11 @@ PathStatus_GoalHasChanged
 PathStatus_HasPath
 PathStatusOptions
 PathStatus_WaypointIsGoal
+pContainer->m_nCount < ANIM_DECOMPRESSED_MAX_BLOCKSIZE
 peakframe
 @-pEA-+y
+PerChoiceBlendTimes
+Per-Choice Blend Times
 PerTickSettings
 PerTickSettings_t
 pervertexlighting
@@ -4413,13 +4477,14 @@ pthread_mutex_init
 pthread_mutex_lock
 pthread_mutex_unlock
 ptr( 0x%p )
+../public/animationsystem/compression.h
 ../public/ordered_constructor.h
 ../public/tier0/tslist.h
 ../public/tier1/utlleanvector.h
 ../public/tier1/utllinkedlist.h
 ../public/tier1/utlrbtree.h
 ../public/tier1/utlsortvector.h
-!@)@q
+Push In Amount
 )Q@9)
 qangle
 QAngle
@@ -4434,7 +4499,6 @@ quaternion
 Quaternion-world
 QueuedLoaderVersion001
 Quintic
-Q){ux([hx
 q$;@z
 r1NQJ
 R5P=(
@@ -4443,10 +4507,12 @@ raAIJ
 RadianEuler
 radius0
 radius1
+Ragdoll Tag
 R)AIJK
 raise
 RandomFloat
 RandomInt
+Reachability Sphere Analysis
  ReadToken overflow
 recenter_on_parent_bone
 RecursiveLoadFromBuffer:  got conditional between key and value
@@ -4455,6 +4521,7 @@ RecursiveLoadFromBuffer:  got EOF instead of keyname
 RecursiveLoadFromBuffer:  got } in key
 RecursiveLoadFromBuffer:  got NULL key
 RecursiveLoadFromBuffer:  recursion overflow
+Reflect Target On Max IK Extension
 RegisterConfigValue: Unknown error constructing config value "%s"!
 RegisterStringToken
 .rela.dyn
@@ -4573,10 +4640,8 @@ Root Motion Velocity
 rootNode
 rotate
 Rotation Damping
-Rotation Limit
 rotWeight
 runspeed
-R-V	#
 ryjj8
 "%s" 
 (*%s*), 
@@ -4692,8 +4757,10 @@ SequenceNode
 sequence_number
 Sequence out of range: %d
 Sequence( %s, %.3f ) : %.3f
+Sequence:%s:m_flCycle
 Sequence:%s:m_flCycleZeroTime
 Sequence:%s:m_flPlaybackRate
+Sequence:%s:m_flPrevCycle
 Sequence:%s:m_resetCount
 Sequence:%s:m_resetCycleValue
 SerializedEntitiesVersion001
@@ -4770,6 +4837,8 @@ short_src
 %s: ignoring unknown sequence paramater: %s
 %s: ignoring unknown, %s = %s, parameter: %s
 Simulated
+SingleBlendTime
+Single Blend Time
 singleplayer
 Sin( %s )
 %s: Invalid pose parameter index specified %d, valid range is [0, %d] on model: %s
@@ -4981,6 +5050,7 @@ static const ::Reflection::TypeID CPlayerInputAnimMotorInstance::MyTypeID()
 static const ::Reflection::TypeID CPlayerInputAnimMotor::MyTypeID()
 static const ::Reflection::TypeID CPostGraphIKChainBlendTag::MyTypeID()
 static const ::Reflection::TypeID CPostGraphIKTag::MyTypeID()
+static const ::Reflection::TypeID CRagdollAnimTag::MyTypeID()
 static const ::Reflection::TypeID CRootAnimNode::MyTypeID()
 static const ::Reflection::TypeID CSelectorAnimNode::MyTypeID()
 static const ::Reflection::TypeID CSequenceAnimNodeInstance::MyTypeID()
@@ -5034,6 +5104,7 @@ static const ::Reflection::TypeID IMotionMetric::MyTypeID()
 static const ::Reflection::TypeID IParticleAnimTag::MyTypeID()
 static const ::Reflection::TypeID IPostGraphIKChainBlendTag::MyTypeID()
 static const ::Reflection::TypeID IPostGraphIKTag::MyTypeID()
+static const ::Reflection::TypeID IRagdollAnimTag::MyTypeID()
 static const ::Reflection::TypeID ISelectorAnimNode::MyTypeID()
 static const ::Reflection::TypeID ISequenceAnimNodeInstance::MyTypeID()
 static const ::Reflection::TypeID ISequenceAnimNode::MyTypeID()
@@ -5061,7 +5132,6 @@ Stop on Tag End
 +Stopping:Arrival Damping
 Stopping Distance
 Stopping Min Speed Scale
-Stopping Radius
 %s trace
 StrafeSpeed
 Strafe Speed
@@ -5083,7 +5153,6 @@ suppress
 surface_prop
 sv_accelerate
 sv_friction
-sv_ik_enable
 %s| Virtual: %s; Abstract: %s; TrivialConstr: %s; TrivialDestr: %s
 sv_stopspeed
 SyncChildren
@@ -5096,11 +5165,11 @@ T)0@9
 T)0@9	
 T)0@9	1
 T	1@9
+T	4@y?!"k
 T(@@9
 Tag Behavior
 Tag Condition
 Tag End Stop is Instant
-TagStatus
 tailframe
 tangent
 tangentu_signv
@@ -5113,6 +5182,7 @@ Target Move Heading
 Target Move Speed
 Target Parameter
 Target Setting Source
+Target Source
 Target State Blend Weight
 Target Type
 Tc"A)`
@@ -5140,6 +5210,7 @@ TextLayout_001
 TextMessageMgr_001
 texturescale
 Th6A9h
+Th*Ay
 ThB@9
 ThbE9
 Thf@9
@@ -5150,8 +5221,13 @@ THit8
 ThreadGetCurrentId
 ThreadYield
 Th>@y
+Ti2@yh
 Ti5KJ(}
+Ti6Ay?
+Ti6Ay?! k
 Ti"A)`
+Ti"AyhB@
+Ti&AyhB@
 Tib@9
 Tib@9)
 Tib@9	
@@ -5201,6 +5277,7 @@ Try changing the number of bones per vertex or the skin weighting, and send Serg
 Trying to concatenate meshes with different numbers of attributes!
 Trying to concatenate meshes with incompatible attribute sets!
 tT@-A
+Tu"Ay
 Turn Duration
 Turn Helper
 TurnHelperNode
@@ -5242,8 +5319,7 @@ Unnamed
 Unnamed Motor
 Unnamed Parameter
 Unnamed Tag
-Unnormalized joint weights encountered (%f): Skinning may not work!
-Unpark at foot cycle start
+Unnormalized joint weights encountered (%f): Skinning may not work! (At position %.3f %.3f %.3f)
 Unrecognized flag name '%s'
 Unrecognized resource version (%d): %s
 Unrecognized type '%d'
@@ -5260,7 +5336,6 @@ UpdateContext
 Update Graph (ms) : Server:%.3f (Max: %.3f)  Client:%.3f (Max: %.3f)
 UPDATE_STRING_TOKEN_DATABASE
 UpperEyelid( 
-u"Rit
 Use Blend Source
 UseChild1
 Use Child1
@@ -5301,6 +5376,7 @@ V_atoi64
 V_atoui64
 VAvi001
 VB9hV
+VB9iVB9
 VBAllocTracker001
 VBaseFileSystem011
 VBik001
@@ -5347,9 +5423,20 @@ virtual bool CCmdSequence::InitFromScript(HSCRIPT, CAnimContainer *)
 virtual bool CScriptCreatableSequence::InitActivitiesFromScript(IScriptVM *, ScriptVariant_t &)
 Virtual Joint
 virtual void CBaseIntrospectedToKV3TypeManager::AllocateResource(ResourceHandle_t, ResourceId_t, const ResourceFileHeader_t *, IRD_RegisterResourceDataUtils *)
+virtual void CCompressedAnim<bool>::DeswizzleContainer(const DecodeContainer_t *, const CAnimDecodeSwizzle *, void *, const void *, int, const char *) const [T = bool]
+virtual void CCompressedAnim<Color>::DeswizzleContainer(const DecodeContainer_t *, const CAnimDecodeSwizzle *, void *, const void *, int, const char *) const [T = Color]
+virtual void CCompressedAnim<float>::DeswizzleContainer(const DecodeContainer_t *, const CAnimDecodeSwizzle *, void *, const void *, int, const char *) const [T = float]
+virtual void CCompressedAnim<int>::DeswizzleContainer(const DecodeContainer_t *, const CAnimDecodeSwizzle *, void *, const void *, int, const char *) const [T = int]
+virtual void CCompressedAnim<Quaternion>::DeswizzleContainer(const DecodeContainer_t *, const CAnimDecodeSwizzle *, void *, const void *, int, const char *) const [T = Quaternion]
+virtual void CCompressedAnim<Vector2D>::DeswizzleContainer(const DecodeContainer_t *, const CAnimDecodeSwizzle *, void *, const void *, int, const char *) const [T = Vector2D]
+virtual void CCompressedAnim<Vector4D>::DeswizzleContainer(const DecodeContainer_t *, const CAnimDecodeSwizzle *, void *, const void *, int, const char *) const [T = Vector4D]
+virtual void CCompressedAnim<Vector>::DeswizzleContainer(const DecodeContainer_t *, const CAnimDecodeSwizzle *, void *, const void *, int, const char *) const [T = Vector]
 V_IsAbsolutePath
 VisBuilder_001
 V_isnan
+vJOnPlane2
+vJOnPlane3
+vJOnPlane4
 V_logf
 VMaterialSystem2_001
 VMatrix
@@ -5375,7 +5462,7 @@ void CUtlLeanVectorBase<CIKChainDescription *, short>::EnsureCapacity(int, bool)
 void CUtlLeanVectorBase<const IIKRuleDescription *, short>::EnsureCapacity(int, bool) [T = const IIKRuleDescription *, I = short]
 void CUtlLeanVectorBase<int, short>::EnsureCapacity(int, bool) [T = int, I = short]
 void CUtlLeanVectorBase<JointTreeNode *, short>::EnsureCapacity(int, bool) [T = JointTreeNode *, I = short]
-void FillVBForAttribute(uint8 *, CMeshVertexAttribute *, const RenderInputLayoutField_t &, int &, float *, int &, float *, bool, bool, const Vector &)
+void FillVBForAttribute(uint8 *, CMeshVertexAttribute *, const RenderInputLayoutField_t &, int &, float *, int &, float *, bool, bool, const Vector &, int *)
 void GetPoseParametersFromScript(CUtlVector<float> *, IScriptVM *, const HSCRIPT, int)
 VP4003
 vpcf1
@@ -5439,15 +5526,16 @@ V_UTF16ToUTF8
 V_UTF32ToUTF8
 vUWsEndEffectorInitial
 vUWsTarget
+vVOnPlane1
 V_vsnprintf
 V_vsnprintfSize
 V_vsnprintfWarnTrunc
 V_wcstoi64
-w2@9y
 walkspeed
 Warning
 Warning! autocycle specified on sequence "%s", but it's not looping, ignoring autocycle
 Warning! autocycle specified on sequence "%s", but sequence is not pose parameter invariant, i.e. it has blends, ignoring autocycle
+WARNING: Encountered %d total problems with vertex data (first %d shown above)
 WARNING: Failed to convert introspected block for file: %s
 WARNING: Invalid resource version (%d): %s
 Warning:  %s = '%s' is infinite, clamping value.
@@ -5489,11 +5577,9 @@ W`@-Y
 xf@)*
 xfade
 xi*8*i@9J
-//)Xt
 xWsTarget
 ,]@y!
 ,	@y)
-!	@y`
 @y`&@
 &@y}'
 	y4xl
@@ -5509,7 +5595,12 @@ yaw_start
 .@yfz
 .@y}g
 *@y}G
+yh.Ay`
+yh"Ay
 *Y@i)	
+yi.Ay)
+yi&Ay?
+yi.AyjB@
 @y)ih
 {YIN?
 	*[Yix
@@ -5521,13 +5612,13 @@ yaw_start
 .@yrz
 :@ysz
 >@yTD
-*[Yvxk
 :@yWF
 @yWii
 ]@y x
 ?y(xi
 *y(xj
 +y(xk
+y	,@y)
 Y@yh[
 Y@yhY
 @y)Y@y

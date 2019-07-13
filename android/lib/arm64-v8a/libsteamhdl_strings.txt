@@ -21,6 +21,7 @@
 %0.8X%0.4X%0.4X%0.2X%0.2X%0.2X%0.2X%0.2X%0.2X%0.2X%0.2X
   %10.3f %6.2f      %10.3f %6.2f      %10.3f %6.2f   %6d %6.2f
   %10.3f %6.2f      %6d
+11:14:28
 11CCallResultI14CSteamHeadless28RequestFreeLicenseResponse_tE
 12CStdMemAlloc
 13CCallbackBase
@@ -29,10 +30,8 @@
 13CCallbackImplILi4EE
 13CCallbackImplILi7EE
 13CCallbackImplILi8EE
-14CSteamHeadless
 14CUtlLinkedListIN11SteamStdLib12CCommandLine18CommandLineParam_tEiE
 14ISteamHeadless
-15:31:49
 18CUtlCharConversion
 %.18g
 19CUtlNoEscConversion
@@ -41,7 +40,6 @@
 20IUniformRandomStream
 21CUtlCStringConversion
 2?k58y
-2@Vpw
 4h2@9h
 4`jx8 
   %52s%12d%12.3f%6.2f%%%12.3f%6.2f%%%12.3f%12.3f%12.3f
@@ -55,12 +53,12 @@
 9CCallbackI12CCallbackMgr23SteamAPICallCompleted_tLb1EE
 9CCallbackI14CSteamHeadless16PostLogonState_tLb0EE
 9CCallbackI14CSteamHeadless23SteamServersConnected_tLb0EE
-9CCallbackI14CSteamHeadless25LogOnCredentialsChanged_tLb0EE
 9CCallbackI14CSteamHeadless26SteamServersDisconnected_tLb0EE
 9CCallbackI14CSteamHeadless27SteamServerConnectFailure_tLb0EE
 9?h(8
 9IMemAlloc
 9?k48
+.A14CSteamHeadless
 +a@9?
 a@9*a
 &aacute;
@@ -70,7 +68,6 @@ aarch64
 abort@@LIBC
 &acirc;
 &Acirc;
-.ACSteamHeadless::OnLogOn
 &acute;
 %a, %e-%b-%y %H:%M:%S
 %a, %e %b %Y %H:%M:%S
@@ -304,6 +301,7 @@ ClientAPI_Init(GlobalInstance): GetIClientParentalSettings returned NULL.
 ClientAPI_Init(GlobalInstance): GetIClientParties returned NULL.
 ClientAPI_Init(GlobalInstance): GetIClientProductBuilder returned NULL.
 ClientAPI_Init(GlobalInstance): GetIClientRemoteClientManager returned NULL.
+ClientAPI_Init(GlobalInstance): GetIClientRemotePlay returned NULL.
 ClientAPI_Init(GlobalInstance): GetIClientRemoteStorage returned NULL.
 ClientAPI_Init(GlobalInstance): GetIClientScreenshots returned NULL.
 ClientAPI_Init(GlobalInstance): GetIClientShader returned NULL.
@@ -339,8 +337,8 @@ crashhandler002
 crashhandler.so
 CreateInterface
 C-runtime internal
-CSteamHeadless::OnCredentialsChanged
 CSteamHeadless::OnLogOff
+CSteamHeadless::OnLogOn
 CSteamHeadless::OnLogOnFailure
 CSteamHeadless::OnPostLogOn
 &curren;
@@ -476,8 +474,6 @@ h2@9(
 hBA9t"
 -- Hierarchical Call Graph --
 -hometest
-hRC9(
-hrC9h
 &iacute;
 &Iacute;
 &icirc;
@@ -504,7 +500,7 @@ j!8h^
 ja8? 
 jb8_ 
 Jobs/Coroutines
-Jun 18 2019
+Jul  9 2019
 	K"}@
 	K5}@
 Ka@9+
@@ -561,7 +557,6 @@ N14CSteamHeadless17CCallback_OnLogOnE
 N14CSteamHeadless18CCallback_OnLogOffE
 N14CSteamHeadless21CCallback_OnPostLogOnE
 N14CSteamHeadless24CCallback_OnLogOnFailureE
-N14CSteamHeadless30CCallback_OnCredentialsChangedE
 nanosleep
 nanosleep@@LIBC
 &nbsp;
@@ -708,7 +703,6 @@ signal@@LIBC
 Sleeping
 %s not implemented
 snprintf@@LIBC
-Software\Valve\Steam\LastAccount
 Someone called ClearWritingMinidump without holding the minidump lock.
 Someone called SetWritingMinidump without holding the minidump lock.
 %s overflow!
@@ -792,7 +786,9 @@ time@@LIBC
 &times;
 /tmp/
 TMPDIR
+.tmp.save
 /tmp/.steam-sem-names
+.tmp.swap
 tolower
 tolower@@LIBC
 Tracked allocs currently in use. %d Total %d
@@ -804,7 +800,6 @@ Tried to create a thread that has already been created!
 &Ucirc;
 &ugrave;
 &Ugrave;
-Ulibsteamhdl.so.dbg
 &uml;
 Unaccounted
 Unbuffered read should be called with cubData length that is aligned to system page size (4kb)

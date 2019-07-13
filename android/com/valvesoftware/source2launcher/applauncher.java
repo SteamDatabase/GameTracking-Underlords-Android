@@ -1,6 +1,7 @@
 package com.valvesoftware.source2launcher;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -109,7 +110,9 @@ public class applauncher extends Activity {
                 applauncher.this.requestPermission(str3, i);
             }
         });
-        builder.create().show();
+        AlertDialog create = builder.create();
+        create.setCanceledOnTouchOutside(false);
+        create.show();
     }
 
     private void showPermissionExitSettingsOption() {

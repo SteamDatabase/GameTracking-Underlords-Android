@@ -19,6 +19,7 @@
 !^  (
 !^ ( 
 !^ 	 
+!^!("
 !^@ !
 !^@( 
 !^@	 
@@ -29,9 +30,11 @@
 !~@( 
 !*,=@
 !	@-#	@
-!	@)`
-!	@)<!
-!	@)]
+!	@)-
+!	@):{
+!	@)?
+!	@)(
+!	@)}
 ?)>>!;/
 ?}@=	
 '":|;
@@ -45,7 +48,6 @@
 )*-)+
 {}()'
 {}()':
-{}[]=, 	
 {}[]:,
 {}[]()=&, 	
 @-` "
@@ -70,7 +72,6 @@
 @-%	@
 $.!("
 $@)#@@)
-*-@)!
 *-@))	@
 *!@-)	@
 *!@))	@
@@ -81,11 +82,10 @@ $@)#@@)
 	(@),
 	) 	)
 	)@)	(
-	*! :
 	*(#:
-	*	{(
 	*	}`
  [$0]
+!	@)0
 ?]0]-
 "$0", 
 $0  }
@@ -124,12 +124,12 @@ $0$1$2 $3 = $4
 %04u-%02u-%02uT%02u:%02u:%02uZ
 06`"@
 06`&@
-065'@
 06h:@
 06h2@
 06h6@
 06hB@
 06hF@
+06hN@
 06hRF
 	06i:@
 06i:@
@@ -159,6 +159,7 @@ $0enum $1 {
 $0  extend .$1 {
 $0  extensions $1 to $2;
 0GAME_PARTICLE_MANAGER_EVENT_SET_SHOULD_CHECK_FOW
+0~H  
 @-0I@-
 *_"0k
 0k_EDACDisconnectReason_GameDestroyedUnexpectedly
@@ -186,7 +187,7 @@ $0 to $1,
 (0@y @
 )0@y @
 )0@y?
-(0@y)iC
+(0@y)aC
 0@y_!!ka
 '@@-1
 @-'@@-1
@@ -272,6 +273,7 @@ $0 to $1,
 11CLogicRelay
 11CModelState
 11CMsgGCError
+11CMsgSynergy
 11CMsgTEDecal
 11CMsgTESmoke
 11CMsgUseItem
@@ -321,7 +323,6 @@ $0 to $1,
 %-120s
 %-120s - %s
 127.0.0.1
-	129_A29
 12CBaseCubemap
 12CBaseDMStart
 12CBaseTrigger
@@ -349,6 +350,7 @@ $0 to $1,
 12CMapModifier
 12CMathCounter
 12CMsgItemAges
+12CMsgItemSlot
 12CMsgPosition
 12CMsgShopItem
 12CMsgTEImpact
@@ -387,6 +389,7 @@ $0 to $1,
 12CTriggerSave
 12FilterHealth
 12IAchievement
+12IDACGameMode
 12IMotionEvent
 12INavDrawArea
 12INavDrawMesh
@@ -401,6 +404,7 @@ $0 to $1,
 13CCallbackImplILi4EE
 13CCallbackImplILi8EE
 13CDACGameRules
+13CDAC_GM_Turbo
 13CDAC_Modifier
 13CDAC_PB_Empty
 13CDebugHistory
@@ -544,6 +548,7 @@ $0 to $1,
 14CBodyComponent
 14CBreakableProp
 14CChoreoChannel
+14CDAC_GM_Normal
 14CDAC_Item_Pipe
 14CDACItemSchema
 14CDACItemSystem
@@ -875,6 +880,7 @@ $0 to $1,
 16CModifierFactoryI25CDAC_Modifier_HuntersBandE
 16CModifierFactoryI25CDAC_Modifier_IgnoreMaxMSE
 16CModifierFactoryI25CDAC_Modifier_MagicImmuneE
+16CModifierFactoryI25CDAC_Modifier_NeutralBuffE
 16CModifierFactoryI25CDAC_Modifier_SacredRelicE
 16CModifierFactoryI25CDAC_Modifier_Synergy_ElfE
 16CModifierFactoryI25CDAC_Modifier_Synergy_OrcE
@@ -1197,6 +1203,7 @@ $0 to $1,
 17CParticleCombined
 17CParticleModifier
 17CPathCostRecorder
+17CPathParticleRope
 17CPrecacheRegister
 17CRenderGameSystem
 17CSceneListManager
@@ -1227,6 +1234,7 @@ $0 to $1,
 17CUtlVectorDataOpsI10CUtlVectorI14globalentity_t10CUtlMemoryIS1_iEELi10EE
 17CUtlVectorDataOpsI10CUtlVectorI14handposepair_t10CUtlMemoryIS1_iEELi10EE
 17CUtlVectorDataOpsI10CUtlVectorI14Relationship_t10CUtlMemoryIS1_iEELi10EE
+17CUtlVectorDataOpsI10CUtlVectorI15CUtlSymbolLarge10CUtlMemoryIS1_iEELi2EE
 17CUtlVectorDataOpsI10CUtlVectorI16ragdollelement_t10CUtlMemoryIS1_iEELi10EE
 17CUtlVectorDataOpsI10CUtlVectorI17modifiedconvars_t10CUtlMemoryIS1_iEELi10EE
 17CUtlVectorDataOpsI10CUtlVectorI17ResponseContext_t10CUtlMemoryIS1_iEELi10EE
@@ -1244,20 +1252,25 @@ $0 to $1,
 17CUtlVectorDataOpsI21CNetworkUtlVectorBaseI15CUtlSymbolLargeN24CPointClientUIWorldPanel26NetworkVar_m_vecCSSClassesELin1EELi2EE
 17CUtlVectorDataOpsI21CNetworkUtlVectorBaseI6QAngleN12CRagdollProp22NetworkVar_m_ragAnglesELin1EELi46EE
 17CUtlVectorDataOpsI21CNetworkUtlVectorBaseI6VectorN12CRagdollProp19NetworkVar_m_ragPosELin1EELi14EE
-17CUtlVectorDataOpsI21CNetworkUtlVectorBaseI6VectorN28CAnimGraphNetworkedVariables28NetworkVar_m_VectorVariablesELin1EELi3EE
+17CUtlVectorDataOpsI21CNetworkUtlVectorBaseI6VectorN17CPathParticleRope31NetworkVar_m_PathNodes_PositionELin1EELi3EE
+17CUtlVectorDataOpsI21CNetworkUtlVectorBaseI6VectorN17CPathParticleRope32NetworkVar_m_PathNodes_TangentInELin1EELi3EE
+17CUtlVectorDataOpsI21CNetworkUtlVectorBaseI6VectorN17CPathParticleRope33NetworkVar_m_PathNodes_TangentOutELin1EELi3EE
+17CUtlVectorDataOpsI21CNetworkUtlVectorBaseI6VectorN28CAnimGraphNetworkedVariables31NetworkVar_m_NetVectorVariablesELin1EELi3EE
 17CUtlVectorDataOpsI21CNetworkUtlVectorBaseI7CHandleI17CBaseCombatWeaponEN20CBaseCombatCharacter23NetworkVar_m_hMyWeaponsELin1EELi13EE
 17CUtlVectorDataOpsI21CNetworkUtlVectorBaseI7CHandleI21CBaseVRHandAttachmentEN11CPropVRHand25NetworkVar_m_hAttachmentsELin1EELi13EE
 17CUtlVectorDataOpsI21CNetworkUtlVectorBaseI7CHandleI21CPostProcessingVolumeEN16CPlayerLocalData34NetworkVar_m_PostProcessingVolumesELin1EELi13EE
 17CUtlVectorDataOpsI21CNetworkUtlVectorBaseI7CHandleI9CBaseFlexEN12CSceneEntity23NetworkVar_m_hActorListELin1EELi13EE
-17CUtlVectorDataOpsI21CNetworkUtlVectorBaseIbN28CAnimGraphNetworkedVariables26NetworkVar_m_BoolVariablesELin1EELi6EE
-17CUtlVectorDataOpsI21CNetworkUtlVectorBaseIfN28CAnimGraphNetworkedVariables27NetworkVar_m_FloatVariablesELin1EELi1EE
+17CUtlVectorDataOpsI21CNetworkUtlVectorBaseIbN17CPathParticleRope33NetworkVar_m_PathNodes_PinEnabledELin1EELi6EE
+17CUtlVectorDataOpsI21CNetworkUtlVectorBaseIbN28CAnimGraphNetworkedVariables29NetworkVar_m_NetBoolVariablesELin1EELi6EE
+17CUtlVectorDataOpsI21CNetworkUtlVectorBaseIfN28CAnimGraphNetworkedVariables30NetworkVar_m_NetFloatVariablesELin1EELi1EE
 17CUtlVectorDataOpsI21CNetworkUtlVectorBaseIfN9CBaseFlex23NetworkVar_m_flexWeightELin1EELi1EE
-17CUtlVectorDataOpsI21CNetworkUtlVectorBaseIhN28CAnimGraphNetworkedVariables26NetworkVar_m_ByteVariablesELin1EELi8EE
-17CUtlVectorDataOpsI21CNetworkUtlVectorBaseIiN28CAnimGraphNetworkedVariables25NetworkVar_m_IntVariablesELin1EELi5EE
+17CUtlVectorDataOpsI21CNetworkUtlVectorBaseIhN28CAnimGraphNetworkedVariables29NetworkVar_m_NetByteVariablesELin1EELi8EE
+17CUtlVectorDataOpsI21CNetworkUtlVectorBaseIiN28CAnimGraphNetworkedVariables28NetworkVar_m_NetIntVariablesELin1EELi5EE
 17fogplayerparams_t
 17IEntityFindFilter
 17IPredictionSystem
 18446744073709551615
+	189_A89
 18CAnnouncerModifier
 18CChatWheelModifier
 18CCLCMsg_ClientInfo
@@ -1379,7 +1392,6 @@ $0 to $1,
 18TEFizz_GameEvent_t
 18ToolTraceRayResult
 1960/00/00
-	1&9_A&9
 19CAI_ChangeHintGroup
 19CAmmoDefInitializer
 19CAttributeContainer
@@ -1478,6 +1490,7 @@ $0 to $1,
 19TEDecal_GameEvent_t
 19TESmoke_GameEvent_t
 19TonemapParameters_t
+	1-9(z
 =)1A9I
      1: AI Decisions
 1) Blue : %i
@@ -1485,6 +1498,7 @@ $0 to $1,
 1CMsgRequestItemPurgatory_FinalizePurchaseResponse
 1DBlend
 +1E)*	
+1"F9R"F9 
 1GAME_PARTICLE_MANAGER_EVENT_SET_TEXTURE_ATTRIBUTE
 1GERA
 1) Green: %i
@@ -1501,11 +1515,13 @@ $0 to $1,
               -1 = let clients set cl_interp_ratio to anything
 <1+=Mg'
 1O[y?
++1_)*Q
 1) Red  : %i
 1sAL"
 1 to output sv_showanimstate to Msg(). 2 to store in AnimStateServer.log. 3 for both.
 1w?WA
 	1@y?!"k`
+!	@)2{
 ?2: 	
 +2: 	
 	2"("
@@ -1652,8 +1668,8 @@ $0 to $1,
 20TESparks_GameEvent_t
 20ToolTraceRayResult_t
 20TransitioningLayer_t
-2*1=9
-2	1%9
+2	1'9
+2	1)9hz
 21CAnimGraphTraceFilter
 21CBaseAnimatingOverlay
 21CBaseAttributableItem
@@ -1724,6 +1740,7 @@ $0 to $1,
 21CResponseQueueManager
 21CServerMessageHandlerIL16EDACGameMessages12E25CMsgClientToServerChatMsgE
 21CServerMessageHandlerIL16EDACGameMessages20E36CMsgClientToServerUpvoteNotificationE
+21CServerMessageHandlerIL16EDACGameMessages23E38CMsgClientToServerLocalPlayerInventoryE
 21CServerMessageHandlerIL16EDACGameMessages5E27CMsgClientSetDebugNetBufferE
 21CServerMessageHandlerIL16EDACGameMessages6E15CMsgPlayerOrderE
 21CServerRagdollTrigger
@@ -1818,6 +1835,7 @@ $0 to $1,
 22CMsgPlayerAcquiredItem
 22CMsgPlayerCombatResult
 22CMsgPlayerCombinedHero
+22.CMsgPlayerSignoutData_EventGrantProgress.Currency
 22CMsgPrivatePlayerState
 22CMsgRedeemCodeResponse
 22CMsgServerNetworkStats
@@ -1973,6 +1991,7 @@ $0 to $1,
 23CMsgClientToGCPartyJoin
 23.CMsgClientToGCStartMatchmakingResponse.EResultCode
 23.CMsgClientToGCUnlockItemStyleResponse.EUnlockStyle
+23.CMsgClientToServerLocalPlayerInventory.LoadoutItem
 23CMsgExtractGemsResponse
 23CMsgGCGetAppFriendsList
 23CMsgGCShowItemsPickedUp
@@ -2006,6 +2025,7 @@ $0 to $1,
 23CUserMessageKeyHintText
 23CUserMessageVoiceMask_t
 23.CUserMsg_ParticleManager.SetParticleShouldCheckFoW
+23IAnimationDebugRenderer
 23IAnimGraphTraceProvider
 23IConCommandBaseAccessor
 23IEconLootListDefinition
@@ -2103,6 +2123,7 @@ $0 to $1,
 24CMsgPlayerOrderProcessed
 24CMsgPublicPostMatchStats
 24CMsgResetStrangeGemCount
+24.CMsgServerToClientNotificationChanged.UpvoteSubtype
 24CMsgSosStartSoundEvent_t
 24CMsgUnitMeterDamageDealt
 24CMsgUnitMeterDamageTaken
@@ -2176,6 +2197,7 @@ $0 to $1,
 25CDAC_Modifier_HuntersBand
 25CDAC_Modifier_IgnoreMaxMS
 25CDAC_Modifier_MagicImmune
+25CDAC_Modifier_NeutralBuff
 25CDAC_Modifier_SacredRelic
 25CDAC_Modifier_Synergy_Elf
 25CDAC_Modifier_Synergy_Orc
@@ -2197,6 +2219,7 @@ $0 to $1,
 25CMsgAMGetLicensesResponse
 25CMsgClearWorldDecalsEvent
 25.CMsgClientToGCClaimChallengeRewardResponse.EResponse
+25.CMsgClientToGCEventRequestInfoSyncResponse.EResponse
 25CMsgClientToGCPartyAction
 25CMsgClientToGCPartyCreate
 25CMsgClientToGCUnlockCrate
@@ -2210,7 +2233,6 @@ $0 to $1,
 25CMsgGCToGCUniverseStartup
 25CMsgGCToServerRequestPing
 25CMsgModifierName_Modifier
-25.CMsgPlayerSignoutData_EventGrantProgress.Achievement
 25CMsgRegionPingTimesClient
 25CMsgServerToClientChatMsg
 25CMsgSosStopSoundEventHash
@@ -2288,10 +2310,10 @@ $0 to $1,
 26CMsgAMFindAccountsResponse
 26CMsgClearEntityDecalsEvent
 26CMsgClientToGCEquipLoadout
+26.CMsgClientToGCEventEquipVirtualItemResponse.EResponse"
 26CMsgClientToGCSetItemStyle
 26CMsgClientToGCSpectateUser
 26CMsgClientToGCUnpackBundle
-26CMsgClientToServerTutorial
 26CMsgClientWelcome_Location
 26CMsgCombatEvent_GoldChange
 26CMsgCombatEvent_SoundEvent
@@ -2427,6 +2449,7 @@ $0 to $1,
 27CSchemaUtlVectorManipulatorI10CUtlVectorI14Relationship_t10CUtlMemoryIS1_iEES1_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorI15CAnimationLayer10CUtlMemoryIS1_iEES1_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorI15CAnimationLayer28CNetworkUtlVector_MemoryTypeIS1_Lin1EEES1_E
+27CSchemaUtlVectorManipulatorI10CUtlVectorI15CUtlSymbolLarge10CUtlMemoryIS1_iEES1_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorI15CUtlSymbolLarge28CNetworkUtlVector_MemoryTypeIS1_Lin1EEES1_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorI16ragdollelement_t10CUtlMemoryIS1_iEES1_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorI17CDAC_BuffParticle10CUtlMemoryIS1_iEES1_E
@@ -2486,6 +2509,7 @@ $0 to $1,
 27IKeyValuesDumpContextAsText
 27IServerMessageBufferHandler
 2_!7k
+27s@y
 27TEArmorRicochet_GameEvent_t
 	2 8 
 28CAnimGraphNetworkedVariables
@@ -2578,8 +2602,7 @@ $0 to $1,
 28TEProjectedDecal_GameEvent_t
 28TEShatterSurface_GameEvent_t
 28VPhysicsCollisionAttribute_t
-2	!,9
-2	!+9
+2	!(9
 29CBodyComponentBaseModelEntity
 29CBoneConstraintPoseSpaceMorph
 29CCLCMsg_SplitPlayerDisconnect
@@ -2625,7 +2648,6 @@ $0 to $1,
 29CMsgGCToGCAddSubscriptionTime
 29CMsgGCToGCCanUseDropRateBonus
 29CMsgHttpRequest_RequestHeader
-29CMsgPublicPlayerState_Synergy
 29CMsgRequestCrateItemsResponse
 29CMsgServerNetworkStats_Player
 29CMsgSOCacheSubscribedUpToDate
@@ -2642,15 +2664,17 @@ $0 to $1,
 2_!9k
 2?!9k
 2?!9k`
-2	!,9n
-2	!+9n
 2*9	S)!@
 2(9	SHM(
 2	9	S	O)
 29ToolEvent_GetEntityInfoResult
-2	A/9
-2	A)9
+2	a29
+2	a29p
+2	a59
+2	a*9
+2A9i2
 2	a@9Ia
+2	a*9n
 2	AA9
 2A.CWorkshop_PopulateItemDescriptions_Request.SingleItemDescription"F
 2A-k	 
@@ -2674,6 +2698,7 @@ $0 to $1,
 2'.CMsgAnyToGCReportAsserts.TrackedAssert
 2&.CMsgClientToGCCreateStaticRecipe.Item
 2:.CMsgClientToGCCreateStaticRecipeResponse.AdditionalOutput
+2+.CMsgClientToGCDevEventOperation.EOperation
 2-.CMsgClientToGCEquipLoadoutResponse.EResponse"
 2+.CMsgClientToGCEventClaimResponse.EResponse
 2*.CMsgClientToGCGetFriendCodesResponse.Code
@@ -2697,6 +2722,7 @@ $0 to $1,
 2*.CMsgDPPartnerMicroTxnsResponse.EErrorCode"
 2=.CMsgEconPlayerStrangeCountAdjustment.CStrangeCountAdjustment
 2".CMsgEventClaimRewards.Achievement
+2 .CMsgEventClaimRewards.Challenge
 2%.CMsgExtractGemsResponse.EExtractGems"
 2'.CMsgGameReplayActionMarker.EActionType"+
 2+.CMsgGCGetPersonaNames_Response.PersonaName
@@ -2709,8 +2735,9 @@ $0 to $1,
 2*.CMsgGCRequestStoreSalesDataResponse.Price
 2 .CMsgGCRoutingInfo.RoutingMethod:
 2+.CMsgGCToClientCurrencyPricePoints.Currency
-2$.CMsgGCToClientEventInfo.Achievement
 2".CMsgGCToClientEventInfo.Challenge
+2!.CMsgGCToClientEventInfo.Currency
+2$.CMsgGCToClientEventInfo.VirtualItem
 2).CMsgGCToClientMatchmakingStopped.EReason"B
 2 .CMsgGCToClientPartyEvent.EEvent
 2#.CMsgGCToGCConsoleOutput.OutputLine
@@ -2723,7 +2750,9 @@ $0 to $1,
 2-.CMsgGCToServerAddSpectatorResponse.EResponse
 2(.CMsgGCUpdateSubGCSessionInfo.CMsgUpdate
 2 .CMsgHttpResponse.ResponseHeader
-2&.CMsgIndividualPostMatchStats.ItemStat
+2'.CMsgIndividualPostMatchStats.Challenge
+2&.CMsgIndividualPostMatchStats.Currency"
+2#.CMsgIndividualPostMatchStats.Event
 2#.CMsgIndividualPostMatchStats.Round
 2 .CMsgItemAges.MaxItemIDTimestamp
 2/.CMsgLookupMultipleAccountNamesResponse.Account
@@ -2734,7 +2763,9 @@ $0 to $1,
 2(.CMsgPrivatePlayerState.ItemChoiceReward
 2/.CMsgPrivatePlayerState.ItemChoiceReward.Choice
 2!.CMsgProcessTransactionOrder.Item
-2$.CMsgPublicPostMatchStats.PlayerInfo"
+2".CMsgPublicPlayerState.LoadoutItem
+2$.CMsgPublicPostMatchStats.PlayerInfo
+2,.CMsgPublicPostMatchStats.PlayerPerRoundInfo
 2+.CMsgResetStrangeGemCountResponse.EResetGem"
 2$.CMsgSerializedSOCache.Cache.Version
 2 .CMsgSerializedSOCache.TypeCache
@@ -2782,12 +2813,15 @@ $0 to $1,
 2) Green: %i
 ?2h2-
 2	h(8
+2h"(9
+2h&]9
 2h&(9T
+2hb59
 2h"B9
 2hBA9H
-2Hc09
 2hf89
 2hF 9
+2hF 9HM
 2hj+9
 2hjh8
 	2hN	
@@ -2797,14 +2831,17 @@ $0 to $1,
 2h.Yy
 	2	i*
 2i2Ay?
+2	i88
 2i>Ay?!4k
 2I.CWorkshop_PopulateItemDescriptions_Request.ItemDescriptionsLanguageBlock
 2ii*x
 2ij(8
+2ij(84D
 2ij(8F
 2+imx
 2iR99
 2j"@9)p
+2jr8_
 2_  k
 2_!;k
 2_!!k
@@ -2817,9 +2854,9 @@ $0 to $1,
 2?!!k
 2?!(k
 2?"!k`
-2?k78
-2_k88)
-2?k88
+2?k789
+2_k88"	
+2?k888
 2k_EGCMsgInitiateTradeResponse_VAC_Banned_Initiator
 2Ki(8
 2Ki(8k
@@ -2831,14 +2868,19 @@ $0 to $1,
 @2l9<)8
 2l*@9h
 2li(8l
+2lQ<9
 2l"@y?
 2Ly+xi
 ?2lZJ
+2Nim8`
 2ninx
 2njj8l
 }2'@+P
 2 .ProtoFlattenedSerializerField_t"!
-2	QT9
+2	Q19(z
+2	q39
+2	q39(~
+2*Q:9
 2	q@y?
 	2R*3
 2) Red  : %i
@@ -2846,17 +2888,18 @@ $0 to $1,
 2(;	S
      2: Scene Print
 2tGZE
+	2ur9
 ?2uWv
+2	!V9
 2Way_0( %s )
 2Way_1( %s )
+2@y*"
 2*y5xi"@
 2*y7xi"@
-2@y)iC
+2@y)aC
 2*y(x	
-'3))'
 300000
 30000.0
-30.0f
 30CBidirMsg_RebroadcastGameEvent
 30CBodyComponentSkeletonInstance
 30CCompressedReferenceQuaternion
@@ -2954,6 +2997,7 @@ $0 to $1,
 30CMsgClientToGCStartMatchmaking
 30CMsgCombatEvent_ModifierCreate
 30CMsgDPPartnerMicroTxnsResponse
+30CMsgEventClaimRewards_Currency
 30CMsgGCCheckFriendship_Response
 30CMsgGCGetEmailTemplateResponse
 30CMsgGCGetPersonaNames_Response
@@ -2964,8 +3008,6 @@ $0 to $1,
 30CMsgGCToGCWebAPIAccountChanged
 30CMsgGCToServerAllocateForMatch
 30CMsgLookupMultipleAccountNames
-30CMsgPublicPlayerState_ItemSlot
-30CMsgPublicPostMatchStats_Round
 30CMsgServerToGCEnterMatchmaking
 30CMsgSOCacheSubscriptionRefresh
 30CMsgSosSetLibraryStackFields_t
@@ -3012,9 +3054,11 @@ $0 to $1,
 31CEntityMessageRemoveAllDecals_t
 31CGCToGCMsgMasterStartupComplete
 31CMsgAMGrantGuestPasses2Response
+31CMsgClientToGCDevEventOperation
 31CMsgClientToGCLookupAccountName
 31CMsgClientToGCPartyJoinResponse
 31CMsgCombatEvent_ModifierDestroy
+31CMsgEventClaimRewards_Challenge
 31CMsgGCClientDisplayNotification
 31CMsgGCHUpdateSession_ExtraField
 31CMsgGCMsgMasterSetWebAPIRouting
@@ -3090,6 +3134,8 @@ $0 to $1,
 32CMsgGCGetAppFriendsList_Response
 32CMsgGCIncrementKillCountResponse
 32CMsgGCMsgSetOptions_MessageRange
+32CMsgGCToClientEventInfo_Currency
+32CMsgGCToClientEventInfoSerialize
 32CMsgGCToClientMatchmakingStopped
 32CMsgGCToClientPollConvarResponse
 32CMsgGCToGCMasterBroadcastMessage
@@ -3145,6 +3191,7 @@ $0 to $1,
 33CMsgGCToGCGrantAccountRolledItems
 33CMsgGCToGCUniverseStartupResponse
 33CMsgGCToGCUpdateSubscriptionItems
+33CMsgPublicPlayerState_LoadoutItem
 33CMsgServerToGCAbandonMatch_Player
 33CMsgSetItemPositions_ItemPosition
 33CNETMsg_SpawnGroup_ManifestUpdate
@@ -3185,6 +3232,7 @@ $0 to $1,
 34CEnvSoundscapeAlias_snd_soundscape
 34CMsgClientToGCClaimChallengeReward
 34CMsgClientToGCEquipLoadoutResponse
+34CMsgClientToGCEventRequestInfoSync
 34CMsgClientToGCReplacementSDRTicket
 34CMsgClientToGCSetItemStyleResponse
 34CMsgClientToGCSpectateUserResponse
@@ -3198,6 +3246,7 @@ $0 to $1,
 34CMsgGCToGCFlushSteamInventoryCache
 34CMsgGCToGCPerformManualOpCompleted
 34CMsgGCToServerAddSpectatorResponse
+34CMsgIndividualPostMatchStats_Event
 34CMsgIndividualPostMatchStats_Round
 34CMsgServerToGCAbandonMatchResponse
 34CMsgServerToGCMatchSignoutResponse
@@ -3230,14 +3279,19 @@ $0 to $1,
 35CDAC_Modifier_Synergy_Undead_Debuff
 35CDAC_Modifier_Terrorblade_Metamorph
 35CDAC_Modifier_Tusk_WalrusPunch_Slow
+35CEntFireOutputAutoCompletionFunctor
 35CEventQueue_SaveRestoreBlockHandler
 35CGameInfo_CDotaGameInfo_CPlayerInfo
+35CGameMsg_k_EMsgLocalPlayerInventory
 35CGCMsgMemCachedGetResponse_ValueTag
 35CInlineJob_CMsgClientWelcome_Server
+35CMsgClientToGCEventEquipVirtualItem
 35CMsgGCItemEditorReservationsRequest
 35CMsgGCRequestStoreSalesDataResponse
 35CMsgGCStorePurchaseFinalizeResponse
-35CMsgGCToClientEventInfo_Achievement
+35CMsgGCToClientEventInfo_VirtualItem
+35CMsgGCToClientUpdateConsoleCommands
+35CMsgGCToServerUpdateConsoleCommands
 35CMsgIDLinkGenericClientToGCResponseILj2ELj10001E36CMsgServerToGCMatchSignoutPermissionLj10002E44CMsgServerToGCMatchSignoutPermissionResponseE
 35CMsgIDLinkGenericClientToGCResponseILj2ELj10003E26CMsgServerToGCMatchSignoutLj10004E34CMsgServerToGCMatchSignoutResponseE
 35CMsgIDLinkGenericClientToGCResponseILj2ELj10012E26CMsgServerToGCAbandonMatchLj10013E34CMsgServerToGCAbandonMatchResponseE
@@ -3317,7 +3371,7 @@ $0 to $1,
 37CMsgGCRequestSubGCSessionInfoResponse
 37CMsgGCToGCClientServerVersionsUpdated
 37CMsgGCToGCMasterSubscribeToCacheAsync
-37CMsgIndividualPostMatchStats_ItemStat
+37CMsgIndividualPostMatchStats_Currency
 37CMsgMatchSignoutData_PerformanceStats
 37CMsgServerToClientNotificationChanged
 37CServerLobbyData_PlayerInfo_Challenge
@@ -3349,6 +3403,7 @@ $0 to $1,
 38CMsgClientToGCSetItemInventoryCategory
 38CMsgClientToGCStartMatchmakingResponse
 38CMsgClientToGCUnlockCrateResponse_Item
+38CMsgClientToServerLocalPlayerInventory
 38CMsgDPPartnerMicroTxns_PartnerMicroTxn
 38CMsgGCItemEditorReserveItemDefResponse
 38CMsgGCToGCFlushSteamInventoryCache_Key
@@ -3357,11 +3412,13 @@ $0 to $1,
 38CMsgGCToGCGrantAccountRolledItems_Item
 38CMsgGCToGCStoreProcessCDKeyTransaction
 38CMsgGCToServerAllocateForMatchResponse
+38CMsgIndividualPostMatchStats_Challenge
 38CMsgLookupMultipleAccountNamesResponse
 38CRagdollPropAlias_physics_prop_ragdoll
 38CSoundEventEntityAlias_snd_event_point
 38CWorkshop_GetItemDailyRevenue_Response
 38CWorkshop_SetItemPaymentRules_Response
+3!%9_
 39CCommunity_GetClanAnnouncements_Request
 39CDAC_Ability_WitchDoctor_ParalyzingCask
 39CDAC_Modifier_DragonKnight_SplashAttack
@@ -3369,6 +3426,7 @@ $0 to $1,
 39CDynamicPropAlias_prop_dynamic_override
 39CGCSystemMsg_GetAccountDetails_Response
 39CMsgClearDecalsForSkeletonInstanceEvent
+39CMsgClientToGCDevEventOperationResponse
 39CMsgClientToGCLookupAccountNameResponse
 39CMsgGCPartnerRechargeRedirectURLRequest
 39CMsgGCToClientStoreTransactionCompleted
@@ -3385,7 +3443,7 @@ $0 to $1,
 39CTraceFilterSkipTwoEntitiesAndTeammates
 39CUserMsg_ParticleManager_CreateParticle
 39CUserMsg_ParticleManager_UpdateParticle
-3a09_
+3A 9_
 3A-`9 
      3: Alyx Blind
 @@-3B!
@@ -3407,7 +3465,6 @@ $0 to $1,
 =3PF-5XG-
 3.t8!
 3X@-7
-!	@)4!
 4('@)*
 4(0@9
 40CColorCorrectionMaterialOverrideModifier
@@ -3471,6 +3528,7 @@ $0 to $1,
 42CDAC_Modifier_PudgeForceAttackHookedTarget
 42CDOTA_Modifier_SandKing_CausticFinale_Slow
 42CMsgClientToGCClaimChallengeRewardResponse
+42CMsgClientToGCEventRequestInfoSyncResponse
 42CMsgClientToGCReplacementSDRTicketResponse
 42CMsgGCGetPersonaNames_Response_PersonaName
 42CMsgGCItemEditorReleaseReservationResponse
@@ -3487,9 +3545,11 @@ $0 to $1,
 43CDAC_Modifier_LoneDruid_SpiritBear_Entangle
 43CDAC_Modifier_Synergy_DemonHunter_DemonBuff
 43CMsgAMSendEmail_PersonaNameReplacementToken
+43CMsgClientToGCEventEquipVirtualItemResponse
 43CMsgGCMsgMasterSetClientMsgRouting_Response
 43CMsgGCRequestStoreSalesDataUpToDateResponse
 43CMsgGCToGCSOCacheSubscribe_CMsgHaveVersions
+43CMsgPublicPostMatchStats_PlayerPerRoundInfo
 43CMsgSource1LegacyGameEventList_descriptor_t
 43CSceneEntityAlias_logic_choreographed_scene
 43CSchemaAttributeType_DynamicRecipeComponent
@@ -3518,6 +3578,7 @@ $0 to $1,
 46CDAC_Modifier_TemplarAssassin_RefractionDamage
 46CEconItemAttributeIterator_ApplyAttributeFloat
 46CEconItemAttributeIterator_EconItemViewWrapper
+46CInlineJob_CMsgGCToServerUpdateConsoleCommands
 46CMsgGCToGCStoreProcessCDKeyTransactionResponse
 46CMsgLookupMultipleAccountNamesResponse_Account
 46CMsgPrivatePlayerState_ItemChoiceReward_Choice
@@ -3543,6 +3604,7 @@ $0 to $1,
 4($@9(
 4(\@9
 49CMsgAMGetUserGameStatsResponse_Achievement_Blocks
+49CMsgPlayerSignoutData_EventGrantProgress_Currency
 49CMsgRequestItemPurgatory_FinalizePurchaseResponse
 49CUserMsg_ParticleManager_DestroyParticleInvolving
 49CUserMsg_ParticleManager_SetParticleFoWProperties
@@ -3561,8 +3623,10 @@ $0 to $1,
 4h6A9
 4H	@7
 4h"@9
+4h&]9
 4h&@9
 4(h@9h
+4h&]9H
 4(H@9h
 4h:A9
 4h"A9
@@ -3576,29 +3640,31 @@ $0 to $1,
 4hbk9
 4hf@9
 4hf@9(
-4hF[9
 4hfO9
+4hfU9
+4hfU9(,
 4h&@)j
 4hn@9
 4hn@9H
 4h&O)j
 4hR`9
+4hR]9
 4hrJ9
 4hrJ9(
 4hrJ9H
 4hRP9H
-4hRT9
-4hr@y
-4hR@y
+4hr@y 6
+4hR@y 6
+4h"V9
 4hVy9
 4hZP9
 4)(@i
 4i.@9h"@9I
 4ib@y
 4ij58
-4,ij8
-4*in8
 4in@9?
+4+io8L/B
+4iR@9?
 ?4iSu
 ?4I,)w
 4i*@y
@@ -3607,15 +3673,16 @@ $0 to $1,
 4kb@y
 4k_EGCMsgInitiateTradeResponse_Target_Already_Trading
 4k_EGCMsgInitiateTradeResponse_Trade_Banned_Initiator
+4k!F9
 4(l@9
 4(L@9
      4: Log of damage done to player
+4Mii8N/B
 4m{kx
 #4#.n<
 4n&	&
 4(p@9
 4(P@9
-4	Qg9)
 4T@-6
 4(t@9(
 4(T@9(
@@ -3628,9 +3695,11 @@ $0 to $1,
 4(X@9h
 4Y@)5	@
 |?5^:+
+!	@)5
 ?}?5^
 %50.50s: %2.2d bits == '%s'
 50CDAC_Modifier_LoneDruid_SpiritBear_Entangle_Effect
+50CMsgClientToServerLocalPlayerInventory_LoadoutItem
 50CMsgPlayerSignoutData_EventGrantProgress_Challenge
 50CUserMessageCameraTransition_Transition_DataDriven
 50CUserMsg_ParticleManager_SetParticleShouldCheckFoW
@@ -3641,8 +3710,8 @@ $0 to $1,
 5(0@y
 51CMsgClientToGCCreateStaticRecipeResponse_InputError
 51CMsgClientToGCCreateStaticRecipeResponse_OutputItem
+51CMsgServerToClientNotificationChanged_UpvoteSubtype
 51GameToolEventSpawnEntityToolEvent_tHookupGameSystem
-52CMsgPlayerSignoutData_EventGrantProgress_Achievement
 52CWorkshop_GetSpecialPayments_Response_SpecialPayment
 53CUserMsg_ParticleManager_ChangeControlPointAttachment
 %5.3f:%s: adding layer %d (order %d): %s : cycle %5.3f (weight %5.3f)
@@ -3662,10 +3731,9 @@ $0 to $1,
 58CMsgNotificationOfSuspiciousActivity_MultipleGameInstances
 58CWorkshop_GetItemDailyRevenue_Response_CountryDailyRevenue
 58GameToolEventDestroyAllEntitiesToolEvent_tHookupGameSystem
-59a:M
 59CMsgGCToGCGrantAccountRolledItems_Item_AdditionalAuditEntry
 59CProtoItemSocket_AssetModifier_DESERIALIZE_FROM_STRING_ONLY
-5!$9R
+59h.M
 5#@9Z
 @/5B?S
 5CBeam
@@ -3680,30 +3748,31 @@ $0 to $1,
 5h2V9
 5h6V9H
 5h"]9
+5h&]9h
+5hB^9
 5hbP9
 5hBQ9
-5hBV9
+5hbU9
 5h&C)
 5h&D)j*
 5hf@9
-5hF[9
 5hfD9
-5hfL9
+5hfU9
+5hfU9H
 5HJIV
 5h^P9h
 5h&Q)j
 5hr@9H
 5hRh9H
-5hRT9
 5hRy9h
+5h"V9
 5ib@y
 5i*C))
-5i"J)
 )5IJ(}
+5i"J)UV
 5ISave
 5i.@y
 5`J@)q
-5JQ\9
 ?!5kc
 *?!5kc
 5k&C)
@@ -3716,23 +3785,18 @@ $0 to $1,
 	 5: Player Teleport
 5p>@)n
 -5	)?Q
-5?q59h
-5	Qg9
 ?5r'"
 %5s%9s%8s%9s%10s   %s
-5	Ug9I
 5Uow)X
 =5$@x
 5YHe/
 	5@y?!"k
 _6`:@
-_6	<@
 ;*@'6
 ?6`*@
 ?6	`@
 ?6	<@
 ?6	(@
-?6	@@
 /6`>@
 /6`"@
 /6	 @
@@ -3755,8 +3819,6 @@ _6	<@
 ?6	4@
 /6	4@
 64CWorkshop_PopulateItemDescriptions_Request_SingleItemDescription
-(65#@
-@65/@
 65535"
 65GameToolEventToolEvent_SFMRecordingStateChanged_tHookupGameSystem
 '6`6@
@@ -3764,10 +3826,12 @@ _6	<@
 67&-@
 _6	8@
 6_@)8
+6]@-8	@
+6!/9_
 	6	9J
 6	a@9)
 6	@A9
-6aBD9
+6abV9
 /6`B@
  6bB@
 6	c@9
@@ -3817,14 +3881,17 @@ _6	D@
 /6h6@
 (6h6@
 6	h@9
+6h'@9
 6h"@9
+6h&]9
 '6h^A9	
+ 6hb@
 '6hb@
 /6hB@
 @6hB@
 6h&B)
+6hb^9
 6hb@9
-6hB[9
 6hB@9
 6h^B9	Z
 6hBA9
@@ -3838,6 +3905,7 @@ _6	D@
 (6hF@
 6hF`9
 6hFA9
+6hFh9h
 _6hj@
 (6hj@
  6hJ@
@@ -3849,17 +3917,20 @@ _6hJ@
 _6hjA9	
 6hkP9H
 ?6hn@
+/6hn@
+(6hn@
 `6hN@
 /6hN@
 6hN]9
 6hNA9
 6hNA9h
 _6hNB9	;
+6hnU9h
 _6hr@
 ?6hr@
 /6hr@
 6h"R9(
-6hrA9
+/6hRB9
 (6hRF
 `6hv@
 @6hv@
@@ -3874,7 +3945,6 @@ _6hZ@
  6i.@
  6i*@
 _6i^@
-_6i~@
 _6i:@
 ?6i>@
 ?6i:@
@@ -3894,6 +3964,7 @@ _6i:@
  6i2@
 /6i2@
 '6i2@
+6i2A9
  6i6@
 ?6i6@
 /6i6@
@@ -3921,16 +3992,19 @@ _6i:@
 6ih8h
 _6ij@
 /6ij@
+'6ij@
 @6ij@
  6iJ@
 _6iJ@
 ?6iJ@
+/6iJ@
 '6iJ@
 @6iJ@
-6i"J)
+6i"J)5V
 6iJA9
 ?.@6$Ik
 `6in@
+/6in@
 ?6iN@
 /6iN@
 @6iN@
@@ -3941,11 +4015,11 @@ _6ir@
 @6iR@
 6iRA9
  6iRA9
+?6iv@
 '6iV@
 @6iV@
 6iVA9
 (6iVA9
- 6iz@
 /6iZ@
 '6iZ@
 (6iZ@
@@ -3980,7 +4054,6 @@ _6	p@
 @6u.@
 6U@)4	@
 6<u7@
-6	Ug9i
 _6v:@
 ?6v*@
 /6v"@
@@ -3988,10 +4061,8 @@ _6v:@
 '6vj@
 /6	X@
 6	x@9
-6Ycp9
 6@y_! k
 ?7[/<
-'7))'
 +@;^7[/
 72CWorkshop_PopulateItemDescriptions_Request_ItemDescriptionsLanguageBlock
 (7@3@
@@ -4000,7 +4071,6 @@ _6v:@
  74	(7t
 75	 7
 76`&@
-76	<@
 76	$@
 76	\@
 76	0@
@@ -4015,6 +4085,7 @@ _6v:@
 76hB@
 76hF@
 76hj@
+76hN@
 76hv@
 76i^@
 76i>@
@@ -4028,10 +4099,12 @@ _6v:@
 76ij@
 76iJ@
 76in@
+76ir@
 76iR@
 76v&@
 76`V@
 7(	 7
+7(	 7(
 77h2A
 7AIJ)
 (7($B9
@@ -4048,6 +4121,7 @@ _6v:@
 :=]7e
 7		E9I
 (7H	07H
+7h2\9
 7h2N9
 7H	 6h:@
 `7(	h7
@@ -4058,24 +4132,20 @@ _6v:@
 7h.@9H
 7hb@9
 7hb@9h
-7hbs9h
 7hf@9
 7hf@9(
 7hF@9
 7hf@9h
-7hFq9
 7h&G-mB@
 (7hnB
 7hR@9
-7hR@9h
 (7hRA9
 7hrAyv2@
-7hRg9H
 7hT@y
 7hU@y
+(7hV@
 7hV@y
 7h"@y
-(7hZ@
 7_i(8)
 7ib@9
 7iB@9
@@ -4092,10 +4162,8 @@ _6v:@
 7*j"@
 7jT@y
 7jU@y
-7jV@y
 	*_!7k
  7Kis8
-7kV@y
 7k"Yy
 `7l[4
 7L4HA
@@ -4108,17 +4176,18 @@ _6v:@
 7t	87t
 7	T@y
 7	T@y	
-7	Ug9i
+ 7u	(7u
 7*U@y
 7+U@y
-7	U@y
 7	U@yI
 	 7V	(7
+(7w"@
 @7w:@
 7W	 7
 7W	 7w
  7wB@
  7x"@
+7Y@-5	@
 ?7`%Yf
 7Ze&<o
 7`ZKV?e
@@ -4131,6 +4200,7 @@ _6v:@
 @- 8 
 @-.8 
 @-#8)
+@-	8"
 @8)		
 @8	}@
 #.$8&
@@ -4141,15 +4211,12 @@ _6v:@
     %8.4f : %30s : %5.3f [%5.3f]: %4.2f %s
 --- %8.4f : %30s : %5.3f [%5.3f]: %4.2f %s
 86`*@
-865+@
 86h>@
 86h:@
 86h*@
 86h2@
 86h6@
 86hb@
-86hBh9
-86hBh9H
 86hn@
 86hnB
 86hV@
@@ -4168,12 +4235,13 @@ _6v:@
 86iJ@
 86in@
 86ir@
+86iv@
 86u*@
 86`V@
+87	#A9i
 87H	@7
-87i"A9i
+	87UL
 %8.8s: %-5d entries, '%s', ...
-89hR4
 8CAISound
 8CAmmoDef
 8CCredits
@@ -4204,20 +4272,20 @@ _6v:@
 8CUtlSlot
 8d@-<
 8#GameUI_Disconnect_LocalProblem_HostedServerPrimaryRelay
+(-@8h
 (8h^@
 8-h+8
 8h.@9
 (8hn@
-8hR@9
 8iB@9i
 8INavDraw
 8IRagdoll
 8IRestore
 @8j&A
 	*_!8k
+@8kiA
 8k_ItemPurgatoryResponse_Refund_Failed_ItemNotInPurgatory
 ??]8kK
-@8kyA
 +-@8l
 8<lCE
 ?8/N|
@@ -4232,9 +4300,6 @@ _8|{t
 8x9,7
 `"@9	
 |@9		
- 9)!!
-!!@9)
-!	@)9 
 ?9% &
 .@9)	
 (@@9(
@@ -4252,9 +4317,11 @@ _8|{t
 ** @9
 	 @9)
 	 @9	
+	!@9	
 	)@9)
 	)@9*
 	@9*]
+	%@9`
 	%@9)
 	%@9	
 <9}@0>1
@@ -4268,21 +4335,23 @@ _8|{t
 @9!8"
 98]@)5	@
 98N*>
-=9_!=9
 @9*	@9-
 @9%	@9$
 @9%	@9&
-@9%	@9	-
 @9+	@9,
 %@9	)@9
 9)@@9
+9+![9
 9+	@9
+@9%	@9I-
  @9	$@9J
- @9	$@9JQG
+ @9	$@9J9G
 [%9.9s] (%5d)%s:
 [%9.9s] (%d)%s at %.6f phase not supported
 [%9.9s] (%d)%s SetInterpolationTimeType - changing interpolation phase type
+"@9A:
 @9A(!
+9*a{9
 ?9A@c
 @9?aEkA
 @9B!@
@@ -4320,9 +4389,9 @@ _8|{t
 9CTimeline
 9D7V=
 (@@9	f
-@9 %F
 (@@9	g
 9gCN>
+(!)9h
 (@@9	h
 )@@9h
 @9h*@
@@ -4330,11 +4399,13 @@ _8|{t
 (@@9H
 9h2@y
 9h.@9
+9h"\9
 9h^A9
 9hb@9
 9h^B9
 9hB@9
 9hbB9
+9hBh9H
 +9hbk9
 9hbP9i
 @9hF@
@@ -4351,62 +4422,59 @@ _8|{t
 9hJA9
 9hJA9t
 9hJB9
-@9hJh9
 9hji8
 9hNA9
 9hNB9
 #@9HP
 9h@);pA) DB)7
+!+9hR
+9hR]9sR
 9hRB9
 @9hV@
 9hVA9
 9hVB9
-9hVg9H
 9h#@y
-=9h"z9
 9hZA9
 9hZB9
 ~@9i~
- @9i,
 (@@9i
 )!@9i
 )@@9i
 @9i&@
 @9I	@
-	!^9I
-	![9I
 @9	i58s
+@9	i:8
 9i:8!
 @9+i(8k
-@9	i:8s"
 "@9i"@9
-@9i"@9
 9	i@9
 ^9I9)
-9+!I9
 9*i@9J
+@9i"@9T6
 9*i@9X
-@9i*B
-@9iBD9
+@9i.B
+@9ibV9
 9IEconTool
 9ifA9
 9	ii8(
++9iJ@
+9ijBy
 9ijh8h
 9ILoopMode
 9i>N9
-@@9iR
- @9IR
-"@9IR
 9IRegistry
 9ISequence
 @9iz@
 9iZA9?	
+!!@9}j
+9j"@9
 9j*@9(
 @9J9	
+9jjBy
 @9jjh8*
-	!@9jM
 @9JU	
 !!@9K
+	!@9*K
 >9K!0>N
 )!@9	k(8I
 @9?`@kA
@@ -4415,7 +4483,7 @@ _8|{t
 9k_ItemPurgatoryResponse_Finalize_Failed_CouldNotFindItems
 9kj(8|
 9l"A9
-@9l*B
+@9l.B
 )9}[p=
 9Px? FcH
 9)P@y	q
@@ -4425,7 +4493,7 @@ _8|{t
 **9	S
 *9	S?
 *9	S)!
-9	S;!
+&9S2	
 *9	SH
 (9	SHM(
 	9	SIM)
@@ -4457,22 +4525,24 @@ _8|{t
 (@@9	t
 (@@9t"
 (@@9t"(
+ @9	T
 @9T|@
 (@@9tb
 (@@9tB
 @9U|@
-9	UT9
 (@@9	v
+9	%V9
 (@@9	w
 @9wiu
-_!<9*x
 (@@9	x
+!@9xi
 ?9.>`y
+"@9~y
 @9 	@z
 9@z(|`
 9Zg,>4
 9@zH~`
-!	@)A 
+"@)++@)a
 'A)	}	
 A-`	+
 A-   
@@ -4481,6 +4551,8 @@ A-!(!
 A-(  
 A-@ #
 A))!@
+a19(z
++A-`2G
 a2U0*	
 ?a2U0*i
 ?|a2U0j
@@ -4488,6 +4560,7 @@ a2U0*
 a2@yh2@y
 ,-A-.5@-
 A5fSXbf7
+a79(,
 	a79H
  .a8"
 @-a	@- 8 
@@ -4497,26 +4570,25 @@ A-!8#
 +a@9?
 	a@9	
 a"@9`
-a"@9^
-_A/9)
 "A9		
 (@A9(
 (A@9(
 )`A9	
 )!A9?
-)A@9	
+)A@9)
 		A9?
 		A9	
-	A^9)
+	A|9	
 	A@9)
 	A@9)	
 	A@9	
-A=9(|
 A9()(
-a"@9"4
+<A99_
 a@9+a
 `A9)`A9
-A9 g@
+a"@9b4
+a"@9b5
+A9@g@
 .A9h.
 "A9h"
 *A9h*
@@ -4528,8 +4600,10 @@ A9 g@
 (A@9hC
 	A$9hf@
 A$9hf@
+A)9hz
 )a@9i
-	a{9i
+	a[9i
+a@9i@
 ^A9i^
 "A9i"
 *	A9i
@@ -4549,14 +4623,15 @@ A9jji
 +a@9Ka
 A9Kik
 +	A9lC
-*	a;9m
+?A#9_m
 	A@9	P
 ?A9tJ@
 A@9vi)
-a"@9z
-	A<9Z
+_A-9*z
 A-a)*
 A-'@A-
+A	A-*6
+)AA9	
 AA9(	
 AA9(	@
 aaaaaaaazzzzzzzz
@@ -4607,6 +4682,7 @@ A-c($
 A-c(&
 A-c8$
 @-aC@9
+	Ac96S
 Accel/Deaccel (cosine)
 acceleration
 Accel (time*time)
@@ -4647,12 +4723,8 @@ achievement_disable
 achievement_earned
 achievement_event
 Achievement failed: %s (%s)
-Achievement found in Challenge ID: %u config %u without a goal number
-Achievement found in Challenge ID: %u config %u without reward data
 achievement_id
-achievement_level
 achievement_name
-achievement_progress
 achievements
 Achievements disabled: cheats turned on in this app session.
 Achievements disabled, ignoring achievement component for %s
@@ -5217,6 +5289,8 @@ ACT_ITEM2_VM_PULLBACK
 ACT_ITEM2_VM_RELOAD
 ACT_ITEM2_VM_SECONDARYATTACK
 Activate a different one with spawn_group_activate!
+	activated
+activate_on_roll
 Activate specified spawngroup.
 ACTIVATE_TYPE_DATAUPDATE_CREATION
 ACTIVATE_TYPE_INITIAL_CREATION
@@ -5224,6 +5298,7 @@ ACTIVATE_TYPE_ONRESTORE
 !activator
 (ACTIVE)
 active_end_time
+active_events
  ACTIVE GROUP
 active_jobs
 active_spawngroup_handle
@@ -6048,8 +6123,6 @@ _addons
 AddOutput
 AddOutput fired on entity "%s" with unknown output name "%s"
 AddOutput fired with bad string. Format: outputname>targetname>inputname>parameter>delay>max times to fire (-1 == infinite)
-add_player_gold
-add_player_xp
 add_random_gems
 AddResource
 address
@@ -6151,6 +6224,7 @@ AE_FOOTSTEP
 AE_FOOTSTEP_LEFT
 AE_FOOTSTEP_RIGHT
 aegis_used
+AE_HAPTIC_PULSE
 AE_HIDE_WEAPON
 AE_HIT_ARM_LEFT_SEVERED
 AE_HIT_ARM_RIGHT_SEVERED
@@ -6231,6 +6305,8 @@ AE_RELOAD_PUMPEND
 AE_RELOAD_SHELL_INSERT
 AE_REMOVE_CLIENT_AIM
 AE_SCRIPT_EVENT_CANINTERRUPT
+AE_SCRIPT_EVENT_CUSTOMINTERRUPT_END
+AE_SCRIPT_EVENT_CUSTOMINTERRUPT_START
 AE_SCRIPT_EVENT_DEAD
 AE_SCRIPT_EVENT_FIREEVENT
 AE_SCRIPT_EVENT_FIRE_INPUT
@@ -6282,6 +6358,17 @@ AE_WPN_PRIMARYATTACK
 AE_WPN_UNHIDE
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
+)aF9?
+AF9)~
+AF9)|
+AF9){
+AF9	{
+AF9i~
+AF9i{
+AF9i}
+AF9I|
+AF9lm
+AF9)z
 affect_ragdolls
 affects_all_allied_units
 affects_all_allies_with_keyword
@@ -6302,14 +6389,11 @@ age_seconds
 Agg data %d: %p (%d parts, crc 0x%08X)
 aggregate_value
 Ah1xij/
-	AH9)
-	Ah9i
-*Ah9j
 AH*I}
 a"@-i
 `"A-i
 	!Ai)
-	aI9	
+)Ai9?
 aiAura
 AI_BaseNPC.SentenceStop
 ai_changehintgroup
@@ -6365,9 +6449,11 @@ ai_type
 ai_use_visibility_cache
 AIWalkable
 ai,x*
+A)j	@
 A)J}@
 _A@k(
 A-k9.
+	Al9	
 alchemist
 alert_type
 alienbloodsplat
@@ -6386,6 +6472,7 @@ allow_clientside_entities
 allow_clientside_particles
 allowCombines
 allow_count_reset
+allow_different_config_dupes
 allow_equal_rate
 AllowFlipping
 Allowing
@@ -6396,7 +6483,6 @@ allownewgibs
 allow_overhead
 allow_pickup_script_func
 allowRerolls
-allow_round_start
 Allows anchor teleportation onto walls and ceiling. NOTE: WIP, mostly broken!
 allowstatic
 Allows team members to injure other members of their team
@@ -6423,6 +6509,7 @@ AmmoDefInitializer
 ammo_id
 ammomod
 amount
+amount_gained
 amount of time players can chat after the game is over
 amplitude
 	amplitude
@@ -6449,6 +6536,8 @@ angle_offset
 angles
 angles %.2f, %.2f, %.2f
 angles: %g %g %g
+angles_left
+angles_right
 anglesX
 anglesY
 anglesZ
@@ -6520,9 +6609,7 @@ AnimGraph Recording saved to %s
 AnimGraph Recording started on entity %s (%s):%i
 AnimGraph Recording stopped on entity %s (%s):%i
 AnimGraph Status Tag: "%s" %s at %.2f
-AnimGraph Trying to set parameter: "%s" but does not exist
 animgraph_update
-AnimGraph Variable: "%s" set to "%s" on %s (%d) at %.2f [%d]
 AnimIkLockLocal
 AnimLayer
 AnimLayerBase
@@ -6560,8 +6647,7 @@ An orthographic spot light entity
 An RR_Concept couldn't find its string in the symbol table!
  any other value = set minimum value for cl_interp_ratio
 &A)(o@
-A-OyL
-	Ap9i
+A-OyF
 api_key
 `AP$N
 appear_time
@@ -6592,7 +6678,7 @@ A protocol message was rejected because it was too big (more than
 A@Q?%
 >!@A+r
 AR2AltFire
-	aR9i
+	ar9i
 arcana_level
 arcane_boots
 archive
@@ -6641,6 +6727,7 @@ armory_remap
 arrow_range
 arrow_speed
 arrow_width
+	AS9)
 as_coach
 @asiW|
 Ask whether the main sequence is done playing.
@@ -6678,18 +6765,6 @@ asynchronous
 Asynchronously spawn an entity group from a list of spawn tables. A callback will be triggered when the spawning is complete
 AsyncWrite: Attempted to write to a read-only file
 AsyncWrite (%s/%d)...
-)at9?
-At9)|
-At9){
-At9I|
-At9I{
-At9ix
-At9Ix
-At9iy
-At9lQ
-At9)x
-At9)y
-At9	z
 at console
 aT,@J
 a trigger_changelevel doesn't have a map
@@ -6716,6 +6791,7 @@ ATTACHMENT_INFLUENCE_FLAGS_NONE
 attachmentname
 attachment_new
 attachment_old
+attachment_point
 attach_mouth
 attach particle effect
 attachpoint
@@ -6773,7 +6849,6 @@ Attempting to get the Skeletal Input settings from model %s, which doesn't have 
 Attempting to precache model, but model name is NULL or empty
 Attempting to precache model for entity %d [%s] at %.2f %.2f %.2f, but model name is NULL
 Attempting to re-establish GC connection.
-Attempting to start non-existent soundevent: %s
 **Attempting to update point_spotlight but target ent is NULL
 Attempts to build a nav ladder on the climbable surface under the cursor.
 AttemptToMaterialize
@@ -6880,7 +6955,7 @@ Avg/Msg
 avg_packets_in
 avg_packets_out
 AWARDED
-Away Team Won - %d damage applied.
+Away Team Won - %d damage applied to home team.
 a world layer in a dota map
 `awpf*
 *A)X#
@@ -6891,27 +6966,27 @@ A-!Xh
 Ax? /k 
 AXk!#
 ?aXY6
-	AY9	
 	<Ay?!9k
 	<Ay?!<kC
 ?AYki
 ?A@YY$
-	aZ9	
 ""\\//b
 @-b("
 @-b	@
 !^B($
 ('B)*
-@-)=B
+@-)-B
 @-B	@
+*B)!-
 B-`! 
 B-   
 B-'("
 B-)( 
-B09@$
 B-1HD-
 B333?33
 B-(5@
+b59aRM
+b59)y
 *-B),5C)_
 @-b8"
 @-B8!
@@ -6919,21 +6994,19 @@ B-(5@
 B-!8"
 ~b8~q)=
  B\9{
-*(!B9
 B`@9!
 B!9, 
-B/9@$
-B(9(-
 B@9a'
 ?B9b8"
 ?B\9{g
 B\9{gt
 ^B9h^
 "B9h"
-B@9H-
+B@9H.
+B@9H0
 b@9h 07
 B@9H2
-B@9H3
+B@9H6
 b@9hb
 B@9hB
 B@9hC
@@ -6942,8 +7015,8 @@ b"@9i
 B9$i@
 B9I	87
 b@9ib
-b@9JyG
-B!9M-
+b@9JaG
+B(9t"%
 B-A8!
 bA9hb
 BA9hB
@@ -7097,6 +7170,7 @@ BeginFadeOutThink
 BeginRestoreEntities without previous EndRestoreEntities.
 BeginScriptDebug
 Begin shifting the Selected Set.
+BE=h5
 "bench_additional_unique_unit_count
 BenchmarkService001
 bentnormal
@@ -7106,6 +7180,7 @@ bEOFUnlocked
 bExitsMesh
 bezier
 Bezier
+B F9c F9
 bFired
 ?B&:G
 B-gBC-
@@ -7317,6 +7392,7 @@ break_damage_inherit_scale
 break_damage_nested_break_pieces
 break_disable_impact_damage
 break_fade_emissive
+break_flip_pieces
 break_invulnerable_spawn_duration
 break_list
 BreakPieceEmbedded
@@ -7326,6 +7402,7 @@ break_prop
 Breaks in the debugger
 breaksound
 BreakThink
+break_twist_pieces
 break_uniform_burst
 bReincarnate
 brightness
@@ -7379,7 +7456,6 @@ BULLET
 bulletPenetrationDamageModifier
 bulletPenetrationDistanceModifier
 BulletProof
-B-(UM
 Bundle has circular reference: 
 "B)Up
 bUpdate
@@ -7393,6 +7469,7 @@ ButtonBitMask_t
 &B)uv
 "B)Ux
 bValue
+`b@y'
 `b@yh
 B	yi.
 BYield
@@ -7404,6 +7481,7 @@ Byte size calculation and serialization were inconsistent.  This may indicate a 
 bytes_read
 bytes_written
 b	yu6
+!	@)c
 $.c($
 :C)   
 !	@-C
@@ -7413,24 +7491,23 @@ $.c($
 C-  "
 C-@( 
 C-&"@
-C).%@
 C-2-@
 @-c2N
 C33s?)\
 @-c8 
 @-c8%
 C-!8"
+C-"8"
 ,c@9-
 C9   
 C9)|@
 C@9	2
-C9	a793J
+C9	a79
 [C9h#
 <(C@9H#
 C9,h5
 C@9HC
 	@C9i
-c@9j+
 CA9`:
 cA9h"
 cA9s~
@@ -7520,6 +7597,7 @@ Cannot save as KV3_FORMAT_LOAD_WITH_NO_UPCONVERSION.
 Cannot save KV3 text to a non-text buffer!
 cannot trade
 can_sign_out
+can_spend
 canSupportSet
 Can't 
 Can't BackUp() after failed Next().
@@ -7865,6 +7943,8 @@ CDACGameRules
 CDACGameRules *
 CDACGameRules::GameInit: Disabling Developer Mode for loading save game.
 CDACGameRulesProxy
+CDAC_GM_Normal
+CDAC_GM_Turbo
 CDACInventoryManager
 CDAC_Item
 CDAC_Item_ArcaneBoots
@@ -8008,6 +8088,7 @@ CEmptyEntityInstance
 CEnableMotionFixup
 CEngineServiceRegistry::RegisterEngineServices()
 center_follow
+center_on_damage_point
 Center Position: %f, %f, %f
 centersize
 Centers the nav mesh in the world
@@ -8253,14 +8334,12 @@ chainname
 chainName
 Chain '%s' SetEnabled(%s)
 	Challenge
+challenge_grants
 challenge_id
 challenge_instance
+challenge_level
 challenge_list
-Challenge list contains an entry that doesn't reference another list or a challenge!
-Challenge list contains an entry that references both a challenge list and a challenge!
-Challenge list references another challenge list %s that cannot be found!
-Challenge list references challenge %s, but no challenge with this name could be found!
-Challenge list references challenge %s with config %u but no configuration with that ID can be found!
+Challenge list has an invalid specifier
 challenge_lists
 challenges
 Challenge %s failed to load the goals and reward block
@@ -8272,6 +8351,17 @@ Challenge %s has no goals set
 Challenge %s has no ID
 Challenge %s has the same name as another challenge!
 Challenge %s has unrecognized event '%s'
+challenge_slot
+Challenge slot is allowing different configs but isn't avoiding duplicates. Likely configuration issue
+challenge_slots
+Challenge specifier contains an entry that doesn't reference another list or a challenge!
+Challenge specifier contains an entry that references both a challenge list and a challenge!
+Challenge specifier references another challenge list %s that cannot be found!
+Challenge specifier references challenge %s, but does not specify a config and this challenge cannot be rolled!
+Challenge specifier references challenge %s, but no challenge with this name could be found!
+Challenge specifier references challenge %s, this challenge has been disabled!
+Challenge specifier references challenge %s with config %u but no configuration with that ID can be found!
+Challenge specifier references challenge %s with config %u this configuration has been disabled!
 Challenge %s(%u) doesn't contain any valid configurations!
 Challenge %s(%u) failed to parse
 Challenge %s(%u) failed to parse with config %u
@@ -8348,7 +8438,8 @@ charge_restore_time
 chat_cooldown_s
 chat_lines
 chatwheel
-C)h*B
+chat_wheel
+C)h.B
 CHealthComponent
 CHealthComponentReferenced
 CHealthComponentReferencedPtr
@@ -8535,6 +8626,7 @@ CInlineJob_CMsgGCToServerAddSpectator
 CInlineJob_CMsgGCToServerAllocateForMatch
 CInlineJob_CMsgGCToServerCancelAllocateForMatch
 CInlineJob_CMsgGCToServerRequestPing
+CInlineJob_CMsgGCToServerUpdateConsoleCommands
 CInstancedSceneEntity
 CInstructorEventEntity
 CInteractionManager
@@ -8558,13 +8650,17 @@ c?kdWZF
 CKeepUpright
 *ckz8
 CLagCompensationManager::StartLagCompensation with NULL CUserCmd!!!
-claim
 Claim
 claimcode
 claimed
 claim_end_time
 claim_id
-Claim references a minimum level that is higher than what the event supports!
+Claim references a challenge level of %u that is higher than what is allowed!
+Claim references a currency %s which is not setup for spending
+Claim references a maximum currency balance of %u that is higher than what is allowed!
+Claim references a maximum currency level of %u that is higher than what is allowed!
+Claim references an invalid challenge slot of name %s
+Claim references an invalid currency of name %s
 Claim reward is completely empty! A claim must grant something
 claims
 Claim %s(%u) does not have a criteria block
@@ -8637,6 +8733,7 @@ client
 client_account_ids
 client_active_version
 client_addr
+client_auto_claim
 clientbitcount
 clientcmd_can_execute
 client_ehandle
@@ -8862,6 +8959,8 @@ CMsgClientToGCCreateFriendCode"
 &CMsgClientToGCCreateFriendCodeResponse
  CMsgClientToGCCreateStaticRecipe
 (CMsgClientToGCCreateStaticRecipeResponse
+CMsgClientToGCDevEventOperation
+'CMsgClientToGCDevEventOperationResponse"?
 $CMsgClientToGCDevForceMatchFormation"F
 CMsgClientToGCEquipItems
  CMsgClientToGCEquipItemsResponse
@@ -8869,7 +8968,11 @@ CMsgClientToGCEquipLoadout
 "CMsgClientToGCEquipLoadoutResponse
 CMsgClientToGCEventClaim
  CMsgClientToGCEventClaimResponse
+#CMsgClientToGCEventEquipVirtualItem
++CMsgClientToGCEventEquipVirtualItemResponse
 CMsgClientToGCEventRequestInfo
+"CMsgClientToGCEventRequestInfoSync
+*CMsgClientToGCEventRequestInfoSyncResponse
 CMsgClientToGCGetFriendCodes"
 $CMsgClientToGCGetFriendCodesResponse
  CMsgClientToGCGetGiftPermissions"
@@ -8927,7 +9030,7 @@ CMsgClientToGCUnwrapGift
  CMsgClientToGCWrapAndDeliverGift
 (CMsgClientToGCWrapAndDeliverGiftResponse
 CMsgClientToServerChatMsg
-CMsgClientToServerTutorial
+&CMsgClientToServerLocalPlayerInventory
 $CMsgClientToServerUpvoteNotification
 CMsgClientWelcome
 CMsgClientWelcomeDAC
@@ -8987,6 +9090,7 @@ CMsgEffectData
 .CMsgEffectData"[
 CMsgEventClaimRewards
 .CMsgEventClaimRewards"
+.CMsgEventClaimRewards.Currency
 .CMsgEventClaimRewards.Item
 CMsgExtractGems
 CMsgExtractGemsResponse
@@ -9068,7 +9172,10 @@ CMsgGCToClientCanRejoinParty
 !CMsgGCToClientCurrencyPricePoints
 CMsgGCToClientDevMMStatus
 CMsgGCToClientEventInfo
+.CMsgGCToClientEventInfo
+.CMsgGCToClientEventInfo"
 .CMsgGCToClientEventInfo.Claim
+ CMsgGCToClientEventInfoSerialize
  CMsgGCToClientMatchmakingStopped
 CMsgGCToClientPartyEvent
 CMsgGCToClientPollConvarRequest
@@ -9078,6 +9185,7 @@ CMsgGCToClientPollFileResponse
 CMsgGCToClientRequestDropped"
 CMsgGCToClientSDRTicket
 'CMsgGCToClientStoreTransactionCompleted
+#CMsgGCToClientUpdateConsoleCommands
 CMsgGCToGCAddSubscriptionTime
 CMsgGCToGCApplyLocalizationDiff
 'CMsgGCToGCApplyLocalizationDiffResponse
@@ -9136,6 +9244,7 @@ CMsgGCToServerAllocateForMatch
 &CMsgGCToServerAllocateForMatchResponse
 $CMsgGCToServerCancelAllocateForMatch
 CMsgGCToServerRequestPing"2
+#CMsgGCToServerUpdateConsoleCommands
 CMsgGCUpdateSubGCSessionInfo
 CMsgGenericResult
 CMsgGlobalCombatEvent
@@ -9155,6 +9264,8 @@ CMsgIPCAddress
 CMsgItemAcknowledged
 CMsgItemAges
 CMsgItemChangedOwner
+CMsgItemSlot
+.CMsgItemSlot
 CMsgKickFromParty
 CMsgLANServerAvailable
 CMsgLeaveParty"~
@@ -9197,10 +9308,7 @@ CMsgPrivatePlayerState
 CMsgProcessTransactionOrder
 .CMsgProcessTransactionOrder
 CMsgPublicPlayerState
-.CMsgPublicPlayerState.ItemSlot
-.CMsgPublicPlayerState.Synergy
 CMsgPublicPostMatchStats
-.CMsgPublicPostMatchStats.Round
 CMsgQAngle
 .CMsgQAngle
 .CMsgQAngle"
@@ -9252,7 +9360,7 @@ CMsgServerToGCTestConnection"G
 $CMsgServerToGCTestConnectionResponse
 $CMsgServerToGCUpdateLobbyServerState
 CMsgServerUseItem
-CMsgServerWelcomeDAC"0
+CMsgServerWelcomeDAC
 CMsgSetItemPositions
 CMsgSHA1Digest
 CMsgShopItem
@@ -9292,6 +9400,8 @@ CMsgSQLGCToGCGrantBackpackSlots
 CMsgSQLUpgradeBattleBooster
 CMsgStartFindingMatchInfo
 .CMsgStartFindingMatchInfo
+CMsgSynergy
+.CMsgSynergy
 CMsgSystemBroadcast
 CMsgTEArmorRicochet
 CMsgTEBaseBeam
@@ -9422,7 +9532,6 @@ CNetworkVelocityVector
 CNetworkViewOffsetVector
 CNullEntity
 /cn?z
-C=-o6
 codec
 code_filename
 	code_list
@@ -9538,6 +9647,7 @@ conditions
 conection lost
 config
 	config_id
+config_id
 configs
 ConfigurationSystem_001
 configvalue.cpp
@@ -9547,6 +9657,7 @@ configvalue.cpp
  conflicts with an existing oneof type.
 " conflicts with field "
 " conflicts with the existing symbol "
+conform_fingers
 con_logfile_suffix
 ConnectGeneratedAreas()
 Connecting navigation areas...
@@ -9563,6 +9674,7 @@ ConnectTier1/2/3Libraries - Start
 Consolas
 "Console<0>" say "%s"
 "Console<0>" say_team "%s"
+console_commands
 Console command too long.
 const float &CNetworkedQuantizedFloat::QuantizeInPlace()
 constrainedEventID
@@ -9683,7 +9795,9 @@ Could not create an instance of
 Could not find type "
 Couldn't alloc player sound slot!
 Couldn't find any entity named '%s'
+Couldn't find entity named '%s'.
 Couldn't find HLTV client player.
+Couldn't find output named '%s' on entity '%s'.
 Couldn't parse default value "
 Couldn't resolve response target %s
 Couldn't test if nav file was writable, file name pointer is null!
@@ -9695,6 +9809,7 @@ Count 3: %i
 Count|Accounts
 Count All: %i
 CountdownTimer
+count_instances
 Count|Msgs
 country
 country_code
@@ -9711,6 +9826,7 @@ CParticleLight
 CParticleSystem
 CParticleSystemDefinition
 CPathKeyFrame
+CPathParticleRope
 CPhysBallSocket
 CPhysBox
 CPhysConstraint
@@ -9897,9 +10013,6 @@ Criteria has a threshold list that is not ascending. Value %u
 criteria is an array of %d
 Criteria is missing a threshold value, or a threshold list: %d
 criteria_match
-Criteria references achievement level %u for achievement %s, but it doesn't have this many levels
-Criteria references achievement level %u for achievement %s, but that doesn't make sense as 0 is always available
-Criteria references an unknown achievement for this event or is missing the achievement field: %s
 Criteria references an unknown claim for this event or is missing the claim field: %s
 Criteria references claim level %u for claim %s, but that doesn't make sense as 0 is always available
 Criteria references claim value %u for claim %s, but this cannot be claimed that many times
@@ -10003,6 +10116,7 @@ CSkyCamera
 CSODACLobby
 CSODACParty
 .CSODACParty.EBotDifficulty
+.CSODACParty.EBotDifficulty"
 .CSODACParty.EPlayerType
 .CSODACParty.Invite
 .CSODACParty.LeftMember
@@ -10077,7 +10191,6 @@ css_classes
 CStopwatch
 CStopwatchBase
 CStrangeCountAdjustment
-cstring
 CStripWeapons
 CStrongHandle
 CSVCMsg_BSPDecal
@@ -10197,10 +10310,16 @@ curr_connections
 currencies
 currency
 Currency
+currency_balance
 currency_code
+currency_cost
+currency_grants
 currency_id
+currency_level
 currency_name
 currency_price
+Currency %u has an invalid starting level %u
+Currency %u is missing a name
 current
 Current item schema is up-to-date with version %08X.
 Currently allocated agg data: {
@@ -10398,7 +10517,7 @@ cycler at %.0f %.0f %0.f missing modelname
 cycler_flex
 cycler_flex used on model "%s" specified unknown sequence "%s"
 cycler_flex used on model %s without enough flexes.
-C@y)yA
+C@y)iA
 %d | 
  D-	(@
 ?D]`,
@@ -10413,12 +10532,14 @@ d3_citadel_05
 .D=3w
 *-D),5E)_
 d6@y#
-d6@y# 
 d6@y#(
-d6@yc:
+d6@yc
+d6@yc<
+d6@yc%
 	$D9?
 D-)9,
 D9i2@
+*!D9j
 dA9)dA9
 dac_ability
 dac_ability_no_cooldown
@@ -10467,6 +10588,7 @@ DAC: Destroy all npcs
 dac_destroy_npcs
 dac_draw_range_radius
 dac_enforce_unit_limit
+dac_equip_item
 dac_fakeplayers
 DAC: Finds a path between two points on the grid
 DAC: Finds a path between two vectors
@@ -10485,6 +10607,7 @@ DacGestureSlot_t
 dac_hero_name_
 dac_hero_name_%s
 dac_initial_strategy_time_duration
+dac_injure_player
 dac_intro_duration
 dac_item
 DACItemChoiceReward
@@ -10492,16 +10615,16 @@ DACItemChoiceReward_Choice
 DACItemID_t
 DACItemSlot
 dac_kill_player
-dac_load
+dac_kill_player_next_combat
 DACLobbyID_t
 dac_local_player_bot_driven
 dac_local_server_hnetconnection
 dac_manual_round_progress
 DAC Match Signout
-dac_max_combat_round_duration
 dac_min_combat_round_duration
-dac_mirror_players_maximum
+dac_mirror_matches
 dac_neutral_percentage_bonus_per_standing
+dac_normal_max_combat_round_duration
 dac_npc
 dac_npc_assassin
 dac_npc_bloodseeker
@@ -10525,6 +10648,7 @@ DAC_PURGE_FLAG_REMOVE_EXCEPTIONS
 DAC_PURGE_FLAG_REMOVE_STUNS
 DAC_PURGE_FLAG_REMOVE_THIS_FRAME_ONLY
 DAC Replay Recording
+dac_replay_recording_enabled
 dac_replay_upload_enabled
 dac_replay_upload_script
 dac_save
@@ -10538,6 +10662,7 @@ dac_shop_units_totally_random
 dac_skip_neutral_waves
 dac_status
 dac_strategy_time_duration
+dac_turbo_max_combat_round_duration
 dac_unit_disable_ai
 dac_unit_draw_path
 dac_unit_no_damage
@@ -10602,6 +10727,7 @@ DamageCategory_t
 damage_dealt
 damage_dealt_to_units
 damage_direction
+damage_direction_cp
 DAMAGE_EVENTS_ONLY
 damage_expired
 damagefilter
@@ -10625,6 +10751,7 @@ damage_per_missing_health
 damage_per_second
 damage_position
 damagePosition
+damage_position_cp
 damage_radius
 damage_reduction
 damage_reduction_percent
@@ -10753,7 +10880,6 @@ default_clip2
 default_color
 defaultcurvetype
 default_drop_quantity
-default_event_points
 Default Game Description
 -defaultgamedir
 default_idle_expression
@@ -10870,6 +10996,9 @@ destroy_particle
 DestroyParticle
 destroy_particle_involving
 DestroyParticleInvolving
+DeswizzleContainer: Index out of range in anim %s
+DeswizzleContainer: Trying to read out of range for anim %s
+DeswizzleContainer: Trying to write out of range for anim %s
 Detach from its parent
 DetachFromParent
 details"
@@ -10895,7 +11024,6 @@ developermode
 developeronly
 DevMsg
 dev/panorama_world_panel_hint_ui.vmat
-+dev_simulate_gcdown
 devtest_hierarchy
 devtest_hierarchy2
 devtest_hierarchy_child
@@ -10908,9 +11036,9 @@ D_FEAR
 %d.FetchFrame( %s, %.1f )
 %d: %f %f %f
 D=fff?
-D)h:@
 %d Hand Attachments:
 D_HATE
+D)hB@
 }d)H"j
 DhUbv?
 `"D-i*@
@@ -10923,6 +11051,7 @@ DIALOG_MSG
 DIALOG_TEXT
 dialog_type
 DIALOG_TYPE
+dialog_variable_name
 Dictionary: %s
 [+%d identical]
 Did not find both an input and ouput field within root components block
@@ -10981,6 +11110,7 @@ disallowed
 DisappearDist
 disarm_duration
 DISCARD
+Discarding incoming message; simulating connection failure
 disconnect
 disconnected_time
 disconnections
@@ -11023,7 +11153,6 @@ Displays the movement bounding box for the triggers in orange.  Some entites wil
 Displays the pivot for the given entity(ies).
 Displays the skeleton for the given entity(ies).
 Displays the total bounding box for the given entity(s) in green.  Some entites will also display entity specific overlays.
-display_string
 displaytime
 display up-to-date elapsed play time
 disposition
@@ -11092,7 +11221,6 @@ Dormant entity %s (%s) is thinking!!
 DoScriptAssert
 DoSpark
 dota_ability_channel_finished
-Dota Auto Chess
 DOTA_BUFF_REMOVE_ALL
 DOTA_BUFF_REMOVE_ALLY
 DOTA_BUFF_REMOVE_ENEMY
@@ -11103,6 +11231,7 @@ dota_min_haste
 DOTAModifierAttribute_t
 dota_modifier_debug
 dota_random_strength
+Dota Underlords
 dota_unit_name
 dot_damage
 dot_duration
@@ -11255,6 +11384,7 @@ duration;stack_count;caster;ability;creationtime
 Dur ms
 %d.Worldspace( %s, %d, %.2f )
 %d: World: %s Refcount: %d
+D@y)D@y
 Dyh"@y
 .dynamic
 Dynamic - Asleep
@@ -11279,14 +11409,13 @@ dynpitchvol_t
 .dynsym
 D)yV@
 @-dZG
-!	@)e
+!	@)\e
 ?e;:	
 @-e@@-
 @-e	@
 -E)		
 .E))}
 e0F$J
-@E=(5
 ?=((E+7
 )E@9?
  E@9)A@9Pj1
@@ -11299,7 +11428,7 @@ E9hNB
 	E@9i
 E9iz@
 !E9#L
-E9szD
+E9srD
 *EA9J
 EAction
 EActionType
@@ -11324,6 +11453,7 @@ EBaseGameEvents
 EBaseUserMessages
 #ebe2ca
 EBotDifficulty
+EClientStatsEvent
 EClientUIEvent
 .EClientUIEvent
 EClientUIEvent_DialogFinished
@@ -11430,6 +11560,7 @@ Effects :%d (EF_NODRAW=%d)
 effects/flashlight001
 effects/flashlight_border
 effects/fleck_wood2.vmat
+effectStateChanged
 effect_type
 E-G=@
 E-G1@
@@ -11520,7 +11651,6 @@ Enable/disable dynamic vs dynamic continuous collision traces
 Enabled: %s
 Enable : %d SplitScreen %X
 enableexposure
-Enable IK.
 enable_limit
 enablelinearconstraint
 Enable more aggressive ragdoll settling
@@ -11539,17 +11669,25 @@ Enable to skip game animations
 	ENameItem
 encode_flags
 Encountered a challenge list %s that didn't have any elements to roll from
+Encountered a challenge slot with an invalid ID: %u
 Encountered a 'chance' block on a static recipe which is not allowed
 Encountered a 'chances' block in a static recipe which is not allowed
 Encountered a claim ending time that occurred while it is still possible to obtain match rewards from the event!
 Encountered a claim ending time when there was no active ending time specified!
 Encountered a 'counts' block on a static recipe which is not allowed
 Encountered a duplicate autograph with ID %u
+Encountered a level that had 0 point cost!
+Encountered a max points or points per level value set on currency %s that also has a level points list
+Encountered a multiple challenge slots with an ID of: %u
 Encountered an active duration for an event that was more than a year!
 Encountered an empty or missing localization token
+Encountered a no dupe item list %s without any entries!
 Encountered a server with an unexpected port assigned to it: Port %u. Assuming ports are relative to %u
 Encountered bad enum value "%s" for type %s, entity "%s" field "%s"!
+Encountered bad skin weights, summing to %g (1.0 expected) at position %.3f %.3f %.3f
 Encountered chat line with an invalid ID: %s
+Encountered invalid challenge amount of %s %u
+Encountered invalid currency grant amount of %s %u
 Encountered invalid slot (may have been missing slot specifier): %d
 Encountered malformed keys in call to CallScriptFunction : "%s"!
 Encountered message for job %s (message ID %d) sent by %s called within an invalid context of %d. Dropping the message.
@@ -11558,6 +11696,10 @@ Encountered multiple challenge lists that share the name %s
 Encountered multiple challenges with ID %u and config %u
 Encountered multiple chat lines with the same ID: %u
 Encountered multiple input or output components with the same name (slot ID) of %u
+Encountered multiple no dupe lists with the same ID of %u!
+Encountered multiple rewards with the same reward id of %u!
+Encountered no dupe list with invalid list ID %u!
+Encountered no dupe list with invalid or duplicate name %s!
 Encountered recipe that includes an event reward but is not a static recipe
 Encountered %s entity '%s' with no target map specified!
 Encountered unknown entity i/o target type!
@@ -11626,6 +11768,8 @@ ENT_FIND_METHOD_RANDOM
 ent_fire
 #EntFireByHandle:Generate and entity i/o event
 #EntFire:Generate and entity i/o event
+ent_fire_output
+   ent_fire_output <target> [output name] [value] [delay]
    ent_fire <target> [action] [value] [delay]
 ent_grab
 ent_grab: found %s @{%g,%g,%g}
@@ -11868,6 +12012,8 @@ env_tonemap_controller
 env_volumetric_fog_controller
 env_volumetric_fog_volume
 env_zoom
+EOperation
+	*`eP
 ep1_citadel_02
 ep1_citadel_02b
 ep1_citadel_03
@@ -11902,12 +12048,12 @@ EQueryCvarValueStatus
 #eQueryCvarValueStatus_CvarProtected
 eQueryCvarValueStatus_NotACvar
 !eQueryCvarValueStatus_ValueIntact
+Equip an item for testing: dac_equip_item <ItemID/Name> [Sub Slot] [PlayerSlot]
 equip_conflicts
 equipment_defensive
 equipment_offensive
 equipment_support
 equipped_state
-equipped_unit
 equip_region
 equip_regions
 equip_regions_list
@@ -12121,6 +12267,7 @@ eventid
 event_id
 eventID
 eventindex
+event_info
 event_keys
 EVENT_LEVELSHUTDOWN:  with negative elapsed time (rt %f starttime %f)
 event_mask
@@ -12155,7 +12302,6 @@ event_t
 event_tier
 event_time
 event_type
-event_xp
 	evictions
 /Ex"	
 excludednpc
@@ -12285,7 +12431,8 @@ Extension ranges are not allowed in proto3.
 Extensions in proto3 are only allowed for defining options.
 Extensions of MessageSets must be optional messages.
 Extensions to non-lite types can only be declared in non-lite files.  Note that you cannot extend a non-lite type to contain a lite type, but the reverse is allowed.
-extent
+extent_origin_left
+extent_origin_right
 extra_abilities
 extractlevelsfromsavegame
 extra_damage_per_unit_to_player
@@ -12318,13 +12465,14 @@ f^7:!
 @-f8&
 ?\%F9
 f@9(6
+ F9! F9_
 F9h&@
 f@9H1
 f@9h2
 F@9hF
 f@9if
-"F9 KB
-fA9	a79@+
+"F9 sO
+fA9	a79
 fA9hf
 FA9hF
 FA9iF
@@ -12379,19 +12527,21 @@ Failed to create ragdoll for %s
 Failed to create/update SO
 Failed to determine polymorphic class name
 Failed to execute replay upload script for replay %s:
-Failed to find achievement named %s referenced by claim rewards
-Failed to find achievements block within the event definition
 Failed to find any players
 Failed to find any valid threshold values for criteria
+Failed to find challenge slot %s for reward!
 Failed to find claims block within the event definition
+Failed to find currency block within the event definition
+Failed to find currency with name %s
 Failed to find custom physics damage table name: %s
 Failed to find entity %s during an autosave at distance from!
 Failed to find function %s
 Failed to find glaive info?
 Failed to find input handle for action %s
-Failed to find levels block for achievement %s(%u)
+Failed to find instance of slot %u with name '%s' when attempting to parse the slot body
 Failed to find lobby shared object
 Failed to find post game stats
+Failed to find reward list for no dupe list %s!
 Failed to find unit draft pools
 Failed to find valid round number
 Failed to get a match signout response for lobby %llu. Backing off before resend.
@@ -12409,10 +12559,14 @@ Failed to load challenge lists from file %s
 Failed to load challenge %s from file %s
 Failed to load challenges from file %s
 Failed to load challenges json file %s
+Failed to load challenge slot %u with anme '%s'
 Failed to load config for challenge %s, config %u
 Failed to load DACBoardPosition_t, was expecting [x, y]
 Failed to load file: %s
+Failed to load game mode
 Failed to load human player's class instance from KV3.
+Failed to load in the names of the challenge slots
+Failed to load in the virtual item list
 Failed to load items.json "%s"
 Failed to load item "%s" - possibly a duplicate Item ID?
 Failed to load modifiers.json "%s"
@@ -12426,13 +12580,20 @@ Failed to map from %s to game-path
 Failed to open file
 Failed to open replay file %s for writing
 Failed to parse a player's post match stats
+Failed to parse challenge specifier for challenge slot
+Failed to parse claims
 Failed to parse components block in dynamic recipe
 : failed to parse contents
+Failed to parse currencies
 Failed to parse entry in challenge list %s
 Failed to parse internal condition in challenge %s
 Failed to parse message %s from account %u from provided network data of %u bytes
 Failed to parse message %u: %s
+Failed to parse no dupe lists
 Failed to parse rewards for Challenge ID: %u config %u
+Failed to parse rewards for challenge slot
+Failed to parse the challenge slot bodies
+Failed to parse the match rewards
 Failed to parse the public post match stats
 Failed to play server side instructor hint: no player specified for hint
 Failed to precache script entity %s of type %s: script entity instance is null
@@ -12514,7 +12675,7 @@ ffffff
 fflush
 fGain
 F*%h3x%hgx
-F-H)D
+F-HaC
 F*&h%x%hsx
 F*%h'x%hsx
 @-FI@-)	@
@@ -12724,6 +12885,11 @@ FindOrCreateCustomResponseSystem %s - Start
 FindOrCreateQuantizedFloatEncoder
 Finds all entities by class name. Returns an array containing all the found entities.
 Find the delta between two QAngles.
+finger_index
+finger_middle
+finger_pinky
+finger_ring
+finger_thumb
 .fini_array
 Finished.
 FinishGravity
@@ -12773,9 +12939,12 @@ FixupResourceName: Illegal path, missing extension passed in ("%s")!
 FJ-&	&
 ?,F]k
 flAddAmount
+flag_base
+flag_image
 flags
 	Flags: 
 Flags :%d
+flag_shape
 flagstoclear
 flammable
 flashbang
@@ -12900,6 +13069,7 @@ forcelimit
 forcelimit_x
 forcelimit_y
 forcelimit_z
+Force matches to be head-to-head 1v1 for more exciting play
 forcenavignore
 force_npc_height
 ForceOff
@@ -12940,22 +13110,24 @@ forward_account_details
 forward %f
 found
 ", found "
-Found achievement %s(%u) that does not have any valid levels assocaited with it
-Found achievement %s(%u) that does not have the achievement level progress increasing at value %u
 Found a claim with an empty name, likely missing the 'name' field
 Found a claim with an invalid ID, likely missing the 'id' field. 0 is not a valid ID
-Found an achievement with an empty name, likely missing the 'name' field
-Found an achievement with an invalid ID, likely missing the 'id' field. 0 is not a valid ID
+Found a match reward that had no currency and no challenge progress associated with it
+Found an invalid max value for currency %s: %d
+Found an invalid points per level of %u in currency %s
+Found claim that granted challenge %u multiple times!
+Found claim that granted currency %u multiple times!
 Found %d matches.
 Found %d (out of %d) zero-area triangles
 found_friendship
 Found %i matching rules, selecting slot %i
+Found invalid min and max place on match reward: %u %u
 Found invalid proto option data for: 
 Found max edge length %g. Skipping SplitLongEdges, as that'll take too long to split.
-Found multiple achievements using the same ID of %u
-Found multiple achievements using the same name of %s
 Found multiple claims using the same ID of %u
 Found multiple claims using the same name of %s
+Found multiple currencies that share the same id %u
+Found multiple currencies that share the same name %s
 Found multiple human players which is not supported.
 Found no entity at %d.
 found no payload in new-system match
@@ -13111,7 +13283,9 @@ f@y?! k
 FZ*o7
 @-g	@
 @g|_\
+!	@)G
 .G))}
+)	+G)
 @-G@@-
 @-G	@
 &G) ( 
@@ -13120,13 +13294,12 @@ G-!()
 @g3^%
 g6`>@
 g6	<@
-g6	@@
-'G)#6
 G6	,@
 G6	@@
 G6	8@
 G6cRB
 G6	d@
+G6	D@
 g6h^@
 G6h>@
 G6h:@
@@ -13141,6 +13314,7 @@ g6hRB9
 g6hv@
 G6hv@
 g6hz@
+g6hZ@
 g6i^@
 g6i>@
 G6i>@
@@ -13149,14 +13323,16 @@ G6i&@
 g6i2@
 g6iB@
 G6iBA9
-g6iN@
+g6iZ@
+G6iz@
 G6iZ@
 G6`N@
 g6v>@
 G6v.@
 G-7F@
 g\8"@6
-]G-a,
+g9	Q@
+gA}-d
 Gambler
 game_
 GameActivity_t
@@ -13761,6 +13937,7 @@ global_loadout_slot
 globalname
 Globalname: %s
 GLOBALNAME: %s
+global_pose
 global %s
 -- Globals --
 global_set
@@ -13779,6 +13956,8 @@ glowstate
 .gnu.version_r
 @g-?O
 Goal found in challenge ID: %u config %u with an unexpected required progress: %u
+Goal found in Challenge ID: %u config %u without a goal number
+Goal found in Challenge ID: %u config %u without reward data
 goals
 goblins_give_gold
 godmode OFF
@@ -13810,12 +13989,11 @@ grabs the object in front of the player. Options: -loose -multiple -toggle
 g_ragdoll_important_maxcount
 g_ragdoll_maxcount
 grainstrength
+grant
 granted_items
 grant_in_order
 grant_item
-grant_items
 grant_one_of_each_item
-grant_progress
 grant_reason
 GraphicsAPI
 graph_param
@@ -13874,9 +14052,6 @@ g_VProfCurrentProfile
 g_VProfSignalSpike
 gxXM|Z
 -h&@)
-!	@)h
-!	@) h
-!	@)(h
 )h&	)
 @-h  
 	-h:@
@@ -13899,13 +14074,14 @@ h2Y9h
 h2@ytB
 h)@)4
 *-H),5I)_
-H653@
-h65C@
+h6@9(
+h6]9H
 )h6A9
+*H6B3
 H6h>@
 H6h6Y9h
 h6hB@
-H6hJ@
+(	H6hJ@
 H6hV@
 H6in@
 H6iR@
@@ -13914,46 +14090,43 @@ H6jJ@
 h6N9H
 H6u2@
 h6uB@
-h6V9IH
 h6	yh
 H7H	P7
 H7t	P7
 H7t	P7i
 h7u	p7
 H7u	P7
-H7(w@
 H7x"@
 @-H8!
 h)8Ay)
 H=)@8f
 [h] %8llx (%s) <%s%s> [o] %8.3f %8.3f %8.3f [a] %6.3f %6.3f %6.3f [s] %6.3f
 h"@9)
-h"@9)/
-h"@9	,
-h"@9	*
+h"@9)$
 h&@) 9.
 H'@9(
 ;h@)9\A)<
 H @9`b
+h*^9	D
+h"@9)F
+*h&]9h
 h"]9h
 h"@9h
 h*@9h
 h*@9h/
+h&]9h
+h&@9h
 h.@9H
 h*@9H
+h&]9H
 h&\9H
 (H@9h
 H @9h"
-H9h&C)t
-h"@9i$
+h"@9i*
 h"@9I
-h"@9I/
-h*^9I/
-h"@9i7
-h*^9iC
-h"@9IE
-h"@9IR
-h"@9)R
+h&@9k
+h*]9T7
+h"^9`Z
 h%A)`
 )h>A9
 )h.A9
@@ -13970,7 +14143,6 @@ HA@9(A
 h^A9H
 h"A9H
 hA9)hA9
-hAA9(
 hack_no_hand_skeleton
 Had %u pending combat item choice rewards during save
 H'A)J
@@ -13991,6 +14163,7 @@ HandInteractionStarted
 HandInteractionSucceeded
 HandleObstacleTopAreas()
 handles
+hand_pose_list
 handposepair_t
 handshake
 HangWatchdogInternal_BeginScope
@@ -14001,6 +14174,7 @@ hardstopspeakevent
 (Has breakpieces or commands)
 Has Collision; 
 HasDamageType
+has_extent
 HasField
 .hash
 " has no field named "
@@ -14009,6 +14183,7 @@ has_no_recent_password_resets
 " has no value named "
 	has_panel
 has_prior_purchase_history
+has_rotation
 has_store_custom_item_details_panel
 has_synergy
 HasTag
@@ -14031,19 +14206,18 @@ hb@9
 h"B9(
 hB@9`
 hB@9(
-hB@9)}B
 hb@9h
 hb@9H
 h"B9h
+hB]9h
 hB@9h
 h"B9H
 hB^9H
 hB@9H
 H'B9h
-hb\9iG
-hb@9IN
-hb@9IR
-hB@9)P
+hB@9iQ
+hB@9)qB
+hb@9	T
 hB@9t
 hB@9u"@
 h&^)b:A
@@ -14052,9 +14226,9 @@ h&^)b:A
 hBA9)
 hBA9	
 hbA9h	
-hbA9uF
 h&_)bB
 hbB9h
+hBB9h
 hBF9(#
 hBF99
 hBF9h
@@ -14067,10 +14241,11 @@ H-bN@
 hBO9h
 hBO9i
 hbP9i
+hbr9H
 HB@T	J
-hBV9(
-hBV9h
-hBV9H
+hbu9(
+hbu9H
+hbU9h
 hbV9i
 hB@y	
 hB	yi
@@ -14084,7 +14259,6 @@ HC@9hB
 HC@9hC
 hCallbackFunc
 hCallbackScope
-HClservercfgfile
 h"D9t
 HDR Color Scale: %0.3f
 !hdx?
@@ -14121,6 +14295,7 @@ health_regen
 healthRegen
 health_trigger_percentage
 heal_tick
+h&E)h&
 height
 h&E-j
 h&E)j
@@ -14135,6 +14310,7 @@ Hero_Abaddon.AphoticShield.Destroy
 Hero_Alchemist.AcidSpray
 Hero_Antimage.ManaBreak
 Hero_ArcWarden.MagneticField.Cast
+Hero_ArcWarden.TempestDouble
 Hero_Axe.Berserkers_Call
 Hero_Batrider.StickyNapalm.Cast
 Hero_Beastmaster.Wild_Axes
@@ -14238,10 +14414,12 @@ hexColor
 hex_model
 HEY! Leaving modifier think with a locked modifier manager!
 =hf@9
+)hf@9
 *hf@9
 *hf@9(
 hf@9_
 hf@9(
+h"F9)
 hF`9	
 hF@9)
 hf@9h
@@ -14254,13 +14432,11 @@ hFD9u
 hFf9h
 hFKyH
 hFQ9h
-=hFV9s&
 )hfx9
 hF	yh
 hf	yh*R9
 hgrunt;scientist
 H%@)h&
-*h*h9
 h&h9H
 Hi+8h
 hidden
@@ -14357,15 +14533,18 @@ h&_)j
 h&@-j
 h%@)j	@
 H%@)J	@
-hj58."
+hj48:>
+hj58.&
 hj@9yF@
 h&@-j.A-
 =hjc9
 hjG9)
-hJh9(
+H'J)J[@
+h&J)jZ@
 hJN9h
 hJN9t"
 hjN9v
+hJW9)T
 hjX9v
 h&^-k.@
 h&^-k*@
@@ -14392,6 +14571,7 @@ hltv_title
 hltv_versioninfo
 ?(Hlw
 H:Ly?
+#()HM
 HMaterial
 HMaterialStrong
 HMD Avatar that owns the VR hands
@@ -14399,9 +14579,9 @@ HModel
 HModelStrong
 H-m.V-
 !^hNB
-h"O9	$
 h*O9H
-h*O9I9
+h"O9i$
+h"O9)L
 h"O9t
 <HOi#
 	Holding lock %s:
@@ -14411,6 +14591,7 @@ holdTime
     hold time: %f
 holiday_restriction
 Home Team Won
+Home Team Won - %d damage applied to away team.
 hook_speed
 HORIZ_JUSTIFICATION_CENTER
 HorizJustification_e
@@ -14452,6 +14633,7 @@ How much to slow down backwards motion
 How often should we run the Think() function for CEnvTimeOfDay2?
 h^P9h
 h"P9i
+h*P9t(
 hParent
 HParticleSystemDefinition
 HParticleSystemDefinitionStrong
@@ -14464,9 +14646,11 @@ hp_percent
 hp_regen_disadvantage
 Hp@y(p
 h"Q9H
+h"Q9iK
 h&Q)j
 "@Hqr
-hr89!N
+"	)hR
+hr\9h
 hR@9h
 hRB9`
 hRD9`&@
@@ -14476,11 +14660,11 @@ HRenderTexture
 HRenderTextureStrong
 hResult
 hrG9(
-hRg9H
 h&R)j
+*hRJ9
 hrJ9h
+hRJ9h
 hRJ9t
-hRT9(
 hRy9	
 hrY9h
 hR@yh
@@ -14490,9 +14674,7 @@ HSCRIPT-light
 hscript_lightbinding
 HSCRIPT-new
 HSequence
-H;	Sh[h
 HSteamNetConnection CDACNetwork_Server::CreateLocalLoopbackConnection(CSteamID)
-h;	Sy#@
 htarget
 hThinkFunc
 hud_skin
@@ -14518,17 +14700,18 @@ Hurts the player.
 hurt_them
 HurtThink
 HurtTouch
-h&@)v@
 h*v9(
 hv@9)
-hV99?O
+*hV]9
+h"V9(
 hvKyH
 hvN9i
 hV@yh
 hV	yh
 	hw8h
+HW@9XS@9H
 H-"X(
-=h*X9i8
+=h*X9
 =h*X9v
 h*X9v
 h:@y*
@@ -14539,16 +14722,12 @@ h"Y9u
 h"Y9uB
 h&	yh
 H'@yh'
-h&@yi&
-h&@yI&
 hy)x,
 =h&Yy
 ?+hZbe4
-hZg9H
 =hzIy	$
 hz	y@
 <i*?)
-!	@)i
 )i!@)
 @-i(&
 !^I))
@@ -14562,10 +14741,11 @@ I0@yJ
 i1xhj*
 i1xhj+
 i1xjj,
-+i-`2G
 i2N9h6N9t6
 i2V9h
+(i38#
 @i4^_
+	i48V
 i6xh>@yt:
 i6@yh
 *i;8{
@@ -14576,6 +14756,7 @@ I-!8"
 _i)8)A
 ?i(8h
 _i)8i
+*+i,8i
 *+i*8i
 i)8i&
 i-8-i@9
@@ -14593,12 +14774,10 @@ i:8jz@
 +i(8k
 i)8Ki@9
 i+8Ki@9k
-i:8Kl
-i;8qJ
 )i@9	
+	!i9	
 )I@9I
 i"@9J
-i*@9j2
 I9	S	M)
 	*i.A
 IA@9	A
@@ -14621,7 +14800,9 @@ i"B9i
 i#B9i
 ib@9j
 ib@9l
+iBB9hA
 iBB9hn@
+iBB9J
 i*B)h
 I+B-K
 IBotController
@@ -14695,6 +14876,7 @@ I CUtlRBTree<CUtlMap<const char *, ConceptHistory_t, int, bool (*)(const char *c
 I CUtlRBTree<CUtlMap<const char *, const char *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, const char *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, const char *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, const char *, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, const char *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, const char *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<const char *, const CResponseCriteriaSet::CritEntry_t *, unsigned short, bool (*)(const char *const &, const char *const &)>::Node_t, unsigned short, CUtlMap<const char *, const CResponseCriteriaSet::CritEntry_t *, unsigned short, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, const CResponseCriteriaSet::CritEntry_t *, unsigned short, bool (*)(const char *const &, const char *const &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<const char *, const CResponseCriteriaSet::CritEntry_t *, unsigned short, bool (*)(const char *const &, const char *const &)>::Node_t, I = unsigned short, L = CUtlMap<const char *, const CResponseCriteriaSet::CritEntry_t *, unsigned short, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, const CResponseCriteriaSet::CritEntry_t *, unsigned short, bool (*)(const char *const &, const char *const &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<const char *, const EventChallengeDef_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, const EventChallengeDef_t *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, const EventChallengeDef_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, const EventChallengeDef_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, const EventChallengeDef_t *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, const EventChallengeDef_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
+I CUtlRBTree<CUtlMap<const char *, const EventChallengeSlot_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, const EventChallengeSlot_t *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, const EventChallengeSlot_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, const EventChallengeSlot_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, const EventChallengeSlot_t *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, const EventChallengeSlot_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<const char *, const flexsettinghdr_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, const flexsettinghdr_t *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, const flexsettinghdr_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, const flexsettinghdr_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, const flexsettinghdr_t *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, const flexsettinghdr_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<const char *, ConVar *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, ConVar *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, ConVar *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, ConVar *, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, ConVar *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, ConVar *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<const char *, CPrerequisitDescriptionHelper::Analysis_t, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, CPrerequisitDescriptionHelper::Analysis_t, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CPrerequisitDescriptionHelper::Analysis_t, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, CPrerequisitDescriptionHelper::Analysis_t, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, CPrerequisitDescriptionHelper::Analysis_t, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CPrerequisitDescriptionHelper::Analysis_t, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
@@ -14706,6 +14888,7 @@ I CUtlRBTree<CUtlMap<const char *, CUtlVector<ChatLineID_t, CUtlMemory<ChatLineI
 I CUtlRBTree<CUtlMap<const char *, CUtlVector<CItemLevelingDefinition, CUtlMemory<CItemLevelingDefinition, int> > *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, CUtlVector<CItemLevelingDefinition, CUtlMemory<CItemLevelingDefinition, int> > *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CUtlVector<CItemLevelingDefinition, CUtlMemory<CItemLevelingDefinition, int> > *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, CUtlVector<CItemLevelingDefinition, CUtlMemory<CItemLevelingDefinition, int> > *, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, CUtlVector<CItemLevelingDefinition, CUtlMemory<CItemLevelingDefinition, int> > *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CUtlVector<CItemLevelingDefinition, CUtlMemory<CItemLevelingDefinition, int> > *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<const char *, EventChallengeList_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, EventChallengeList_t *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, EventChallengeList_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, EventChallengeList_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, EventChallengeList_t *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, EventChallengeList_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<const char *, EventGroup, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, EventGroup, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, EventGroup, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, EventGroup, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, EventGroup, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, EventGroup, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
+I CUtlRBTree<CUtlMap<const char *, EventNoDupeList_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, EventNoDupeList_t *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, EventNoDupeList_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, EventNoDupeList_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, EventNoDupeList_t *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, EventNoDupeList_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<const char *, float, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, float, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, float, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, float, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, float, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, float, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<const char *, GameEventRegister_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, GameEventRegister_t *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, GameEventRegister_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, GameEventRegister_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, GameEventRegister_t *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, GameEventRegister_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<const char *, GameFileWeaponInfo_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, GameFileWeaponInfo_t *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, GameFileWeaponInfo_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, GameFileWeaponInfo_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, GameFileWeaponInfo_t *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, GameFileWeaponInfo_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
@@ -14715,9 +14898,11 @@ I CUtlRBTree<CUtlMap<const char *, ResponseGroup *, short, bool (*)(const char *
 I CUtlRBTree<CUtlMap<const char *, ServerClass *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, ServerClass *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, ServerClass *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, ServerClass *, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, ServerClass *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, ServerClass *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<const CSchemaClassInfo *, CUtlVector<CEventDispatcher_Base::EventListenerInfo_t, CUtlMemory<CEventDispatcher_Base::EventListenerInfo_t, int> >, unsigned int, bool (*)(const CSchemaClassInfo *const &, const CSchemaClassInfo *const &)>::Node_t, unsigned int, CUtlMap<const CSchemaClassInfo *, CUtlVector<CEventDispatcher_Base::EventListenerInfo_t, CUtlMemory<CEventDispatcher_Base::EventListenerInfo_t, int> >, unsigned int, bool (*)(const CSchemaClassInfo *const &, const CSchemaClassInfo *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const CSchemaClassInfo *, CUtlVector<CEventDispatcher_Base::EventListenerInfo_t, CUtlMemory<CEventDispatcher_Base::EventListenerInfo_t, int> >, unsigned int, bool (*)(const CSchemaClassInfo *const &, const CSchemaClassInfo *const &)>::Node_t, unsigned int>, unsigned int> >::NewNode(const T *) [T = CUtlMap<const CSchemaClassInfo *, CUtlVector<CEventDispatcher_Base::EventListenerInfo_t, CUtlMemory<CEventDispatcher_Base::EventListenerInfo_t, int> >, unsigned int, bool (*)(const CSchemaClassInfo *const &, const CSchemaClassInfo *const &)>::Node_t, I = unsigned int, L = CUtlMap<const CSchemaClassInfo *, CUtlVector<CEventDispatcher_Base::EventListenerInfo_t, CUtlMemory<CEventDispatcher_Base::EventListenerInfo_t, int> >, unsigned int, bool (*)(const CSchemaClassInfo *const &, const CSchemaClassInfo *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const CSchemaClassInfo *, CUtlVector<CEventDispatcher_Base::EventListenerInfo_t, CUtlMemory<CEventDispatcher_Base::EventListenerInfo_t, int> >, unsigned int, bool (*)(const CSchemaClassInfo *const &, const CSchemaClassInfo *const &)>::Node_t, unsigned int>, unsigned int>]
 I CUtlRBTree<CUtlMap<const flexsettinghdr_t *, FS_LocalToGlobal_t, unsigned short, CDefLess<const flexsettinghdr_t *> >::Node_t, unsigned short, CUtlMap<const flexsettinghdr_t *, FS_LocalToGlobal_t, unsigned short, CDefLess<const flexsettinghdr_t *> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const flexsettinghdr_t *, FS_LocalToGlobal_t, unsigned short, CDefLess<const flexsettinghdr_t *> >::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<const flexsettinghdr_t *, FS_LocalToGlobal_t, unsigned short, CDefLess<const flexsettinghdr_t *> >::Node_t, I = unsigned short, L = CUtlMap<const flexsettinghdr_t *, FS_LocalToGlobal_t, unsigned short, CDefLess<const flexsettinghdr_t *> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const flexsettinghdr_t *, FS_LocalToGlobal_t, unsigned short, CDefLess<const flexsettinghdr_t *> >::Node_t, unsigned short>, unsigned short>]
+I CUtlRBTree<CUtlMap<CUtlString, CUtlString, int, CDefLess<CUtlString> >::Node_t, int, CUtlMap<CUtlString, CUtlString, int, CDefLess<CUtlString> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, CUtlString, int, CDefLess<CUtlString> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<CUtlString, CUtlString, int, CDefLess<CUtlString> >::Node_t, I = int, L = CUtlMap<CUtlString, CUtlString, int, CDefLess<CUtlString> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, CUtlString, int, CDefLess<CUtlString> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<CUtlStringToken, bool, unsigned short, bool (*)(const CUtlStringToken &, const CUtlStringToken &)>::Node_t, unsigned short, CUtlMap<CUtlStringToken, bool, unsigned short, bool (*)(const CUtlStringToken &, const CUtlStringToken &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlStringToken, bool, unsigned short, bool (*)(const CUtlStringToken &, const CUtlStringToken &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<CUtlStringToken, bool, unsigned short, bool (*)(const CUtlStringToken &, const CUtlStringToken &)>::Node_t, I = unsigned short, L = CUtlMap<CUtlStringToken, bool, unsigned short, bool (*)(const CUtlStringToken &, const CUtlStringToken &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlStringToken, bool, unsigned short, bool (*)(const CUtlStringToken &, const CUtlStringToken &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<CUtlStringToken, CPhysicsGameSystem::PhysicsWorld_t, unsigned short, bool (*)(const CUtlStringToken &, const CUtlStringToken &)>::Node_t, unsigned short, CUtlMap<CUtlStringToken, CPhysicsGameSystem::PhysicsWorld_t, unsigned short, bool (*)(const CUtlStringToken &, const CUtlStringToken &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlStringToken, CPhysicsGameSystem::PhysicsWorld_t, unsigned short, bool (*)(const CUtlStringToken &, const CUtlStringToken &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<CUtlStringToken, CPhysicsGameSystem::PhysicsWorld_t, unsigned short, bool (*)(const CUtlStringToken &, const CUtlStringToken &)>::Node_t, I = unsigned short, L = CUtlMap<CUtlStringToken, CPhysicsGameSystem::PhysicsWorld_t, unsigned short, bool (*)(const CUtlStringToken &, const CUtlStringToken &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlStringToken, CPhysicsGameSystem::PhysicsWorld_t, unsigned short, bool (*)(const CUtlStringToken &, const CUtlStringToken &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<CUtlStringToken, CUtlString, int, bool (*)(const CUtlStringToken &, const CUtlStringToken &)>::Node_t, int, CUtlMap<CUtlStringToken, CUtlString, int, bool (*)(const CUtlStringToken &, const CUtlStringToken &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlStringToken, CUtlString, int, bool (*)(const CUtlStringToken &, const CUtlStringToken &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<CUtlStringToken, CUtlString, int, bool (*)(const CUtlStringToken &, const CUtlStringToken &)>::Node_t, I = int, L = CUtlMap<CUtlStringToken, CUtlString, int, bool (*)(const CUtlStringToken &, const CUtlStringToken &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlStringToken, CUtlString, int, bool (*)(const CUtlStringToken &, const CUtlStringToken &)>::Node_t, int>, int>]
+I CUtlRBTree<CUtlMap<CUtlStringToken, int, int, CDefLess<CUtlStringToken> >::Node_t, int, CUtlMap<CUtlStringToken, int, int, CDefLess<CUtlStringToken> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlStringToken, int, int, CDefLess<CUtlStringToken> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<CUtlStringToken, int, int, CDefLess<CUtlStringToken> >::Node_t, I = int, L = CUtlMap<CUtlStringToken, int, int, CDefLess<CUtlStringToken> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlStringToken, int, int, CDefLess<CUtlStringToken> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<CUtlStringToken, SecondarySceneWorld_t, int, CDefLess<CUtlStringToken> >::Node_t, int, CUtlMap<CUtlStringToken, SecondarySceneWorld_t, int, CDefLess<CUtlStringToken> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlStringToken, SecondarySceneWorld_t, int, CDefLess<CUtlStringToken> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<CUtlStringToken, SecondarySceneWorld_t, int, CDefLess<CUtlStringToken> >::Node_t, I = int, L = CUtlMap<CUtlStringToken, SecondarySceneWorld_t, int, CDefLess<CUtlStringToken> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlStringToken, SecondarySceneWorld_t, int, CDefLess<CUtlStringToken> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<CUtlSymbol, AsyncCaption_t *, unsigned short, bool (*)(const CUtlSymbol &, const CUtlSymbol &)>::Node_t, unsigned short, CUtlMap<CUtlSymbol, AsyncCaption_t *, unsigned short, bool (*)(const CUtlSymbol &, const CUtlSymbol &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlSymbol, AsyncCaption_t *, unsigned short, bool (*)(const CUtlSymbol &, const CUtlSymbol &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<CUtlSymbol, AsyncCaption_t *, unsigned short, bool (*)(const CUtlSymbol &, const CUtlSymbol &)>::Node_t, I = unsigned short, L = CUtlMap<CUtlSymbol, AsyncCaption_t *, unsigned short, bool (*)(const CUtlSymbol &, const CUtlSymbol &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlSymbol, AsyncCaption_t *, unsigned short, bool (*)(const CUtlSymbol &, const CUtlSymbol &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<CUtlSymbol, CSaveDirectory::file_t, unsigned short, bool (*)(const CUtlSymbol &, const CUtlSymbol &)>::Node_t, unsigned short, CUtlMap<CUtlSymbol, CSaveDirectory::file_t, unsigned short, bool (*)(const CUtlSymbol &, const CUtlSymbol &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlSymbol, CSaveDirectory::file_t, unsigned short, bool (*)(const CUtlSymbol &, const CUtlSymbol &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<CUtlSymbol, CSaveDirectory::file_t, unsigned short, bool (*)(const CUtlSymbol &, const CUtlSymbol &)>::Node_t, I = unsigned short, L = CUtlMap<CUtlSymbol, CSaveDirectory::file_t, unsigned short, bool (*)(const CUtlSymbol &, const CUtlSymbol &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlSymbol, CSaveDirectory::file_t, unsigned short, bool (*)(const CUtlSymbol &, const CUtlSymbol &)>::Node_t, unsigned short>, unsigned short>]
@@ -14726,7 +14911,6 @@ I CUtlRBTree<CUtlMap<CUtlSymbolLarge, CUtlVector<CEntityHandle, CUtlMemory<CEnti
 I CUtlRBTree<CUtlMap<EChallengeEvent, CUtlVector<const ChallengeCondition_t *, CUtlMemory<const ChallengeCondition_t *, int> >, int, CDefLess<EChallengeEvent> >::Node_t, int, CUtlMap<EChallengeEvent, CUtlVector<const ChallengeCondition_t *, CUtlMemory<const ChallengeCondition_t *, int> >, int, CDefLess<EChallengeEvent> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<EChallengeEvent, CUtlVector<const ChallengeCondition_t *, CUtlMemory<const ChallengeCondition_t *, int> >, int, CDefLess<EChallengeEvent> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<EChallengeEvent, CUtlVector<const ChallengeCondition_t *, CUtlMemory<const ChallengeCondition_t *, int> >, int, CDefLess<EChallengeEvent> >::Node_t, I = int, L = CUtlMap<EChallengeEvent, CUtlVector<const ChallengeCondition_t *, CUtlMemory<const ChallengeCondition_t *, int> >, int, CDefLess<EChallengeEvent> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<EChallengeEvent, CUtlVector<const ChallengeCondition_t *, CUtlMemory<const ChallengeCondition_t *, int> >, int, CDefLess<EChallengeEvent> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<EDACGameMessages, CDACNetwork_Server::MsgStats_t, int, CDefLess<EDACGameMessages> >::Node_t, int, CUtlMap<EDACGameMessages, CDACNetwork_Server::MsgStats_t, int, CDefLess<EDACGameMessages> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<EDACGameMessages, CDACNetwork_Server::MsgStats_t, int, CDefLess<EDACGameMessages> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<EDACGameMessages, CDACNetwork_Server::MsgStats_t, int, CDefLess<EDACGameMessages> >::Node_t, I = int, L = CUtlMap<EDACGameMessages, CDACNetwork_Server::MsgStats_t, int, CDefLess<EDACGameMessages> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<EDACGameMessages, CDACNetwork_Server::MsgStats_t, int, CDefLess<EDACGameMessages> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<EDACGameMessages, IServerMessageBufferHandler *, int, CDefLess<EDACGameMessages> >::Node_t, int, CUtlMap<EDACGameMessages, IServerMessageBufferHandler *, int, CDefLess<EDACGameMessages> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<EDACGameMessages, IServerMessageBufferHandler *, int, CDefLess<EDACGameMessages> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<EDACGameMessages, IServerMessageBufferHandler *, int, CDefLess<EDACGameMessages> >::Node_t, I = int, L = CUtlMap<EDACGameMessages, IServerMessageBufferHandler *, int, CDefLess<EDACGameMessages> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<EDACGameMessages, IServerMessageBufferHandler *, int, CDefLess<EDACGameMessages> >::Node_t, int>, int>]
-I CUtlRBTree<CUtlMap<EventAchievementID_t, EventAchievement_t, int, CDefLess<EventAchievementID_t> >::Node_t, int, CUtlMap<EventAchievementID_t, EventAchievement_t, int, CDefLess<EventAchievementID_t> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<EventAchievementID_t, EventAchievement_t, int, CDefLess<EventAchievementID_t> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<EventAchievementID_t, EventAchievement_t, int, CDefLess<EventAchievementID_t> >::Node_t, I = int, L = CUtlMap<EventAchievementID_t, EventAchievement_t, int, CDefLess<EventAchievementID_t> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<EventAchievementID_t, EventAchievement_t, int, CDefLess<EventAchievementID_t> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<EventChallengeID_t, EventChallengeDef_t *, int, CDefLess<EventChallengeID_t> >::Node_t, int, CUtlMap<EventChallengeID_t, EventChallengeDef_t *, int, CDefLess<EventChallengeID_t> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<EventChallengeID_t, EventChallengeDef_t *, int, CDefLess<EventChallengeID_t> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<EventChallengeID_t, EventChallengeDef_t *, int, CDefLess<EventChallengeID_t> >::Node_t, I = int, L = CUtlMap<EventChallengeID_t, EventChallengeDef_t *, int, CDefLess<EventChallengeID_t> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<EventChallengeID_t, EventChallengeDef_t *, int, CDefLess<EventChallengeID_t> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<EventClaimID_t, EventClaim_t, int, CDefLess<EventClaimID_t> >::Node_t, int, CUtlMap<EventClaimID_t, EventClaim_t, int, CDefLess<EventClaimID_t> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<EventClaimID_t, EventClaim_t, int, CDefLess<EventClaimID_t> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<EventClaimID_t, EventClaim_t, int, CDefLess<EventClaimID_t> >::Node_t, I = int, L = CUtlMap<EventClaimID_t, EventClaim_t, int, CDefLess<EventClaimID_t> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<EventClaimID_t, EventClaim_t, int, CDefLess<EventClaimID_t> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<EventID_t, CDACEventDefinition *, int, CDefLess<EventID_t> >::Node_t, int, CUtlMap<EventID_t, CDACEventDefinition *, int, CDefLess<EventID_t> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<EventID_t, CDACEventDefinition *, int, CDefLess<EventID_t> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<EventID_t, CDACEventDefinition *, int, CDefLess<EventID_t> >::Node_t, I = int, L = CUtlMap<EventID_t, CDACEventDefinition *, int, CDefLess<EventID_t> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<EventID_t, CDACEventDefinition *, int, CDefLess<EventID_t> >::Node_t, int>, int>]
@@ -14750,6 +14934,7 @@ I CUtlRBTree<CUtlMap<int, int, unsigned short, bool (*)(const int &, const int &
 I CUtlRBTree<CUtlMap<item_definition_index_t, item_definition_index_t, int, CDefLess<item_definition_index_t> >::Node_t, int, CUtlMap<item_definition_index_t, item_definition_index_t, int, CDefLess<item_definition_index_t> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<item_definition_index_t, item_definition_index_t, int, CDefLess<item_definition_index_t> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<item_definition_index_t, item_definition_index_t, int, CDefLess<item_definition_index_t> >::Node_t, I = int, L = CUtlMap<item_definition_index_t, item_definition_index_t, int, CDefLess<item_definition_index_t> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<item_definition_index_t, item_definition_index_t, int, CDefLess<item_definition_index_t> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<item_definition_index_t, KeyValues *, int, CDefLess<item_definition_index_t> >::Node_t, int, CUtlMap<item_definition_index_t, KeyValues *, int, CDefLess<item_definition_index_t> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<item_definition_index_t, KeyValues *, int, CDefLess<item_definition_index_t> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<item_definition_index_t, KeyValues *, int, CDefLess<item_definition_index_t> >::Node_t, I = int, L = CUtlMap<item_definition_index_t, KeyValues *, int, CDefLess<item_definition_index_t> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<item_definition_index_t, KeyValues *, int, CDefLess<item_definition_index_t> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<item_definition_index_t, unsigned int, int, CDefLess<item_definition_index_t> >::Node_t, int, CUtlMap<item_definition_index_t, unsigned int, int, CDefLess<item_definition_index_t> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<item_definition_index_t, unsigned int, int, CDefLess<item_definition_index_t> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<item_definition_index_t, unsigned int, int, CDefLess<item_definition_index_t> >::Node_t, I = int, L = CUtlMap<item_definition_index_t, unsigned int, int, CDefLess<item_definition_index_t> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<item_definition_index_t, unsigned int, int, CDefLess<item_definition_index_t> >::Node_t, int>, int>]
+I CUtlRBTree<CUtlMap<item_definition_index_t, unsigned int, unsigned short, bool (*)(const item_definition_index_t &, const item_definition_index_t &)>::Node_t, unsigned short, CUtlMap<item_definition_index_t, unsigned int, unsigned short, bool (*)(const item_definition_index_t &, const item_definition_index_t &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<item_definition_index_t, unsigned int, unsigned short, bool (*)(const item_definition_index_t &, const item_definition_index_t &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<item_definition_index_t, unsigned int, unsigned short, bool (*)(const item_definition_index_t &, const item_definition_index_t &)>::Node_t, I = unsigned short, L = CUtlMap<item_definition_index_t, unsigned int, unsigned short, bool (*)(const item_definition_index_t &, const item_definition_index_t &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<item_definition_index_t, unsigned int, unsigned short, bool (*)(const item_definition_index_t &, const item_definition_index_t &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<PlayerSlot_t, CServerSignout::ElimInfo_t, int, CDefLess<PlayerSlot_t> >::Node_t, int, CUtlMap<PlayerSlot_t, CServerSignout::ElimInfo_t, int, CDefLess<PlayerSlot_t> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<PlayerSlot_t, CServerSignout::ElimInfo_t, int, CDefLess<PlayerSlot_t> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<PlayerSlot_t, CServerSignout::ElimInfo_t, int, CDefLess<PlayerSlot_t> >::Node_t, I = int, L = CUtlMap<PlayerSlot_t, CServerSignout::ElimInfo_t, int, CDefLess<PlayerSlot_t> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<PlayerSlot_t, CServerSignout::ElimInfo_t, int, CDefLess<PlayerSlot_t> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<PlayerSlot_t, CSteamID, int, CDefLess<PlayerSlot_t> >::Node_t, int, CUtlMap<PlayerSlot_t, CSteamID, int, CDefLess<PlayerSlot_t> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<PlayerSlot_t, CSteamID, int, CDefLess<PlayerSlot_t> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<PlayerSlot_t, CSteamID, int, CDefLess<PlayerSlot_t> >::Node_t, I = int, L = CUtlMap<PlayerSlot_t, CSteamID, int, CDefLess<PlayerSlot_t> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<PlayerSlot_t, CSteamID, int, CDefLess<PlayerSlot_t> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<PlayerSlot_t, PlayerSlot_t, int, CDefLess<PlayerSlot_t> >::Node_t, int, CUtlMap<PlayerSlot_t, PlayerSlot_t, int, CDefLess<PlayerSlot_t> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<PlayerSlot_t, PlayerSlot_t, int, CDefLess<PlayerSlot_t> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<PlayerSlot_t, PlayerSlot_t, int, CDefLess<PlayerSlot_t> >::Node_t, I = int, L = CUtlMap<PlayerSlot_t, PlayerSlot_t, int, CDefLess<PlayerSlot_t> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<PlayerSlot_t, PlayerSlot_t, int, CDefLess<PlayerSlot_t> >::Node_t, int>, int>]
@@ -14762,6 +14947,7 @@ I CUtlRBTree<CUtlMap<unsigned int, CPhysicsGameSystem::PhysicsSpawnGroups_t, uns
 I CUtlRBTree<CUtlMap<unsigned int, CSoundscapeSystem::SoundscapeInfo_t *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short, CUtlMap<unsigned int, CSoundscapeSystem::SoundscapeInfo_t *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, CSoundscapeSystem::SoundscapeInfo_t *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<unsigned int, CSoundscapeSystem::SoundscapeInfo_t *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, I = unsigned short, L = CUtlMap<unsigned int, CSoundscapeSystem::SoundscapeInfo_t *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, CSoundscapeSystem::SoundscapeInfo_t *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<unsigned int, CTonemapController2 *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short, CUtlMap<unsigned int, CTonemapController2 *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, CTonemapController2 *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<unsigned int, CTonemapController2 *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, I = unsigned short, L = CUtlMap<unsigned int, CTonemapController2 *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, CTonemapController2 *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<unsigned int, CUtlDelegate<void (const EventSpawnGroupPrecache_t &)>, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short, CUtlMap<unsigned int, CUtlDelegate<void (const EventSpawnGroupPrecache_t &)>, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, CUtlDelegate<void (const EventSpawnGroupPrecache_t &)>, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<unsigned int, CUtlDelegate<void (const EventSpawnGroupPrecache_t &)>, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, I = unsigned short, L = CUtlMap<unsigned int, CUtlDelegate<void (const EventSpawnGroupPrecache_t &)>, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, CUtlDelegate<void (const EventSpawnGroupPrecache_t &)>, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short>, unsigned short>]
+I CUtlRBTree<CUtlMap<unsigned int, CUtlVector<const EventVirtualItemUnlock_t *, CUtlMemory<const EventVirtualItemUnlock_t *, int> >, int, CDefLess<unsigned int> >::Node_t, int, CUtlMap<unsigned int, CUtlVector<const EventVirtualItemUnlock_t *, CUtlMemory<const EventVirtualItemUnlock_t *, int> >, int, CDefLess<unsigned int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, CUtlVector<const EventVirtualItemUnlock_t *, CUtlMemory<const EventVirtualItemUnlock_t *, int> >, int, CDefLess<unsigned int> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<unsigned int, CUtlVector<const EventVirtualItemUnlock_t *, CUtlMemory<const EventVirtualItemUnlock_t *, int> >, int, CDefLess<unsigned int> >::Node_t, I = int, L = CUtlMap<unsigned int, CUtlVector<const EventVirtualItemUnlock_t *, CUtlMemory<const EventVirtualItemUnlock_t *, int> >, int, CDefLess<unsigned int> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, CUtlVector<const EventVirtualItemUnlock_t *, CUtlMemory<const EventVirtualItemUnlock_t *, int> >, int, CDefLess<unsigned int> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<unsigned int, float, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short, CUtlMap<unsigned int, float, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, float, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<unsigned int, float, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, I = unsigned short, L = CUtlMap<unsigned int, float, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, float, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<unsigned int, ItemPartner_t, int, CDefLess<unsigned int> >::Node_t, int, CUtlMap<unsigned int, ItemPartner_t, int, CDefLess<unsigned int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, ItemPartner_t, int, CDefLess<unsigned int> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<unsigned int, ItemPartner_t, int, CDefLess<unsigned int> >::Node_t, I = int, L = CUtlMap<unsigned int, ItemPartner_t, int, CDefLess<unsigned int> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, ItemPartner_t, int, CDefLess<unsigned int> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<unsigned int, kill_eater_score_type_t, int, CDefLess<unsigned int> >::Node_t, int, CUtlMap<unsigned int, kill_eater_score_type_t, int, CDefLess<unsigned int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, kill_eater_score_type_t, int, CDefLess<unsigned int> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<unsigned int, kill_eater_score_type_t, int, CDefLess<unsigned int> >::Node_t, I = int, L = CUtlMap<unsigned int, kill_eater_score_type_t, int, CDefLess<unsigned int> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, kill_eater_score_type_t, int, CDefLess<unsigned int> >::Node_t, int>, int>]
@@ -14784,6 +14970,7 @@ I CUtlRBTree<void *, int, bool (*)(void *const &, void *const &), CUtlMemory<Utl
 )icx_
 )icx?
 ic@y?
+IDACGameMode
 IDACPlayerBot
 iDamageCustom
 IDamageHandler
@@ -14807,6 +14994,7 @@ Ie@y3
 If > 0, always spawn the specified wave number
 If 1, polling for info_remarkables and issuances of TLK_REMARK is enabled.
 *if@9
+i"F9H
 If a player is moving slower than this, don't push away physics objects (enables ducking behind things).
 If cheats are enabled, then you can noclip with the game paused (for doing screenshots, etc.).
 If enabled, prints diagnostic information about the current fog volume
@@ -14835,7 +15023,6 @@ If this scene is currently playing.
 If true, compute lighting for this area.  Otherwise, just set to 1/2.
 If true, nav areas will be placed flush with the ground when created by hand.
 If used without arguments, all available Places will be listed. If a Place argument is given, the current Place is set.
-	)i*G)
 IGameSystem::Init( %-80s ) %8.3f msec
 IGameSystem::PostInit( %-80s ) %8.3f msec
 ignite
@@ -14863,8 +15050,11 @@ Ignoring impact, energy %.0f (%.2f)
 Ignoring player blocking train!
 ignoring %s.HL%s on %s
 iGroup
+	*ih*
 I-!H#
+(ih8	[
 )ih8?
+(Ih8)[
 )ih8Ii(8
 (ih8*ij8+ik8,il8-im8.in8/io80ip81iq82ir8"ib8#ic8$id8%ie8&if8)i`8
 IHandleEntity
@@ -14912,11 +15102,10 @@ i*J)(
 )I-@)J	@
 I!@)J	@
 *ij8+ik8,il8-im8.in8/io80ip8(ih8
+/ij8K/B
 ij,8kj*8mj(8
-iji8)
++i-`JG
 ijj8?
-iJP9h=
-iJR9(;
 ijw8*
 )ijx?
 *)ijx?
@@ -14946,7 +15135,6 @@ IKData
 ik_debug_adjusted_groundheight
 ik_debug_groundtraces
 ik_debug_perlin_solver
-ik_debug_twobone_solver
 ik_decay_hip_offset_after_x_seconds
 ik_enable_only_this_chain
 ik_enable_only_this_chain: Couldn't find chain named '%s', or a unique match.  #%d Chains available on entity '%s'
@@ -15044,7 +15232,7 @@ inertiafactor
 inertiascale
 INETSUPPORT_001
 ineye
-Infinite Joint Weights encountered: Skinning will not work!
+Infinite Joint Weights encountered: Skinning will not work! (At position %.3f %.3f %.3f)
 Infinite time value
 infinity
 Inflictor: %s
@@ -15099,10 +15287,12 @@ InitGameRules: game rules entity (%s) not created
 InitGameRules: missing gamerules class '%s' on the server
 InitGameSystems - Finish
 InitGameSystems - Start
+initial_amount
 initial_inventory
 Initialize with number of outputs
 initialoffset
 InitialOwner
+initial_progress
 initial_quantity
 initial_rotation
 InitialThink
@@ -15182,6 +15372,7 @@ InputDisableLinearConstraint
 InputDisableMotion
 InputDisablePhyscannonPickup
 InputDisablePickup
+InputDisablePin
 InputDisablePuntSound
 InputDisableShadow
 InputDispatchResponse
@@ -15414,6 +15605,7 @@ InputSetPoseParameterName
 InputSetPoseValue
 InputSetPushDirection
 InputSetPushSpeed
+InputSetRadius
 InputSetRate
 Input_SetRenderAttribute on %s: FAILED to set %s, no more slots available (maximum %d)
 Input_SetRenderAttribute on %s: Init %s to [%.2f %.2f %.2f %.2f] (slot %d)
@@ -15422,6 +15614,7 @@ Input_SetRenderAttribute on %s: Unexpected parameter format. Had <%s>, expected 
 InputSetRestLength
 InputSetScattering
 InputSetScrollSpeed
+InputSetSlack
 InputSetSlideFriction
 InputSetSolid
 InputSetSoundName
@@ -15559,7 +15752,6 @@ instance_data
 InstancedAutoGeneratedSoundScene:  Expecting non-NULL pActor for sound %s
 instanced_scripted_scene
 instance_id
-instances
 instructor_close_lesson
 instructor_server_hint_create
 instructor_server_hint_stop
@@ -15623,18 +15815,21 @@ Intro time after everyone loads and before the first round starts
 ( int TeamNumber, string EventName, table EventData )
 	int_value
     invalid!
-Invalid achievement progress amount for claim reward %u. Must provide some progress
-Invalid achievement progress amount for claim reward %u. This is more than the achievement even allows
 #Invalid_AssetMod
 Invalid attach type specified for particle_test in cvar 'particle_test_attach_mode.
 Invalid blackbox type: %s
 invalid_bone
 INVALID CGameEventStartTouchCollideAdaptor
+Invalid challenge config in match reward list: %s %u
+Invalid challenge in match reward list: %s
+Invalid challenge progress amount %u specified
 Invalid code point \u%04x
 Invalid compressed buffer size
 Invalid control characters encountered in text.
 Invalid conversion : CString '%s' to bool
 INVALID_CPPTYPE
+Invalid currency amount %u specified
+Invalid currency in match reward list: %s
 Invalid data.
 Invalid data for member '%s'
 Invalid directory size %d for %s
@@ -15655,13 +15850,13 @@ Invalid item quality specified for component!
 Invalid item %s referenced in item rewards
 Invalid job ID %llu
 Invalid key for map field.
+Invalid loadout slot %s refrenced by virtual item unlock for %s
 Invalid logic operator parsing condition in challenge %s, found logic op %s
 Invalid map '%s' included in map cycle file. Ignored.
-Invalid maximum level: %u
 Invalid member name '%s'
 Invalid message set extension.
 Invalid navigation file '%s'.
-Invalid number of points per level: %u
+Invalid no dupe list %s referenced in item rewards
 Invalid parameter type in condition for challenge %s
 Invalid Path
 Invalid proto descriptor for file "
@@ -15671,11 +15866,12 @@ Invalid rarity specified for component!
 Invalid request for mesh %d in model %s with %d entry remapping start table
 Invalid request for mesh %d in model %s with no remapping table
 Invalid request for mesh %d in model %s with no remapping table starts
+Invalid reward ID encountered with %u!
 Invalid save, failed to open file
 Invalid starting amplitude value in envelope!  (Cannot be -1)
 Invalid starting duration value in envelope! (Cannot be -1)
-Invalid starting event points: %u
 Invalid strings::Substitute() format string: "
+Invalid sub slot specified for virtual item unlock for %s: %u
 Invalid symbol name: 
 Invalid syntax for condition in challenge %s
 Invalid time value
@@ -15704,7 +15900,6 @@ invites
 invulnerability_duration
 In-world UI panel
 ip8Rkp8
-i*P9H=
 IPhysicsPlayerController
 IPlayerInfo
 	ip_public
@@ -15712,7 +15907,6 @@ ip[[x
 Ip@y?
 IP@y?
 i>Pyh
-i*Q9h=
 IQuickTime001
 iqx?"/k@
 	)@)ir
@@ -15982,14 +16176,12 @@ ItemsGameFile
 items_game_url
 items_game_use_gc_copy
 item_show_whitelistable_definitions
-ItemSlot
 item_slots
 item_socket_id
 items_per_treasure
 item_spirit_vessel
 Item %s: Store remap definition "%s" was not found
 items_t
-ItemStat
 item_suit
 ItemTest_CreateTestItemSet:  ignored, item set %s already exists
 ItemTest_CreateTestItemSet:  ignored, test item set %s already exists
@@ -15998,6 +16190,7 @@ ItemTouch
 item_to_unlock
 #Item_TournamentDrop
 #Item_Traded
+item_type
 itemType
 item_type_name
 itemTypeName
@@ -16007,11 +16200,11 @@ Item Whitelist file '%s' could not be found. All items will be allowed.
 item_whitelist.txt
 !ITestScriptMgr
 IToolObject
-i*U9(=
 iUnlockedSentence
 [i:%u:%u]
 [I:%u:%u]
 !iv8?|
+)iv8?
 )iv8i
 	*iVA
 iValue
@@ -16036,11 +16229,13 @@ i*xh>@yu:
 ixhy*xh2N
 ixhy*xh"N
 i)xhZA
+*+i,xi
 *i-xi>@yj:
 *i,xi>@yj:
 *i.xi>@yj:
 i-xj:
 i,xj:
+i*xjA
 i#xjj-
 *i,x	=@y
 ix`yi
@@ -16053,82 +16248,80 @@ IyixJylx+
 Iy(xj
 i"Yy?
 @I@z)
+)iz8_
 iZA9	
 <j.?)
+('J)*[@
 ))+J)
 @ @-J
 @-J	,
 @-J	@
 J-` $
+j08p!
+j >= 0 && j < nResultBufSize
 J0@y_
 J0@yI
 J0@yk
-j18q!
 j2@yh
 j48	C
-j48H$
-j48N!
+j48(Q
 j48t^@
 j4xH;@
-j58(8
-j58H$
-j58h8
-j58H8
 j58hf@9(
-j58[J
+j58#m
 J5@y_
-j68HJ
+j68h[
 j68u*@
 j68v&@
 j(8(~
-j)8)+
+j(8(-
 j)8	 
 j)8	?
+j)8	"
 j)8	$
 j)8	*
+j*8	>
 j)8	2
-j(8&7
 j)8	7
-j+8*F
-j(8h?
 j(8h$
 j)8h&
-j(8H-
 j(8Hd
+j;8hK
 j(8HL
 j(8hM
 j)8i!
 j)8i&
+j)8I+
 j)8ID
 j)8iL
 j)8Ir
 j)8`j
-j*8j!
 j(8jj)8`
 j-8K,
-j+8K-
 j+8K:
 j+8Kd
 j+8KV
-j)8)L
-j)8	L
 j,8LH
+j,8LL
 j,8Lr
 j-8M^
 j-8M,
+j-8MB
 j-8MV
 j-8Mz
+j.8n!
 j.8Nl
 j.8NP
-j/8o!
 j)8)p
-j)8z%
+j)8)X
+j)8	Z
 J!@9_
 J!@9#
 J@9hJ
 j@9ij
 J%@9j
 j9	S*M*
+$J)a7
 J`A9)
 J]A9_
 jA9hj
@@ -16138,7 +16331,6 @@ JAAHJ
 JAAHJ	 
 JAAIJ
 J"AHJ
-J"AHJC
 JAJJ)
 JAJJB
 java_generate_equals_and_hash
@@ -16158,7 +16350,7 @@ J-B(.
 JB9hJ
 jbL9(
 J-cb@
-J!D9J	
+j.C)i"D)
 J-dj@
 (*j~E
 j.E-1*<
@@ -16184,7 +16376,7 @@ JiMIJ+
 JIMIJ*
 ji)x)	
 jj(8(
-jj+8	
+jj+8	Q
 j!JJ+
 jjj8h
 j!JJK
@@ -16194,11 +16386,12 @@ j!JJK
 Jki8_5
 	J!}	KK
 jklmnopqrstuvwxyzyxwvutsrqponmlkj
-	!@)j/@)L
 @-J,@-l4@-
 J@L!J
 	J(MHJ)
 J(MHJ	
+j&M)m*
+j"M)n*
 jn87kn8
 ?jN^d
 JNI_OnLoad
@@ -16209,8 +16402,8 @@ Job debugging disabled
 job_id_source
 job_id_target
 jobmsgcontext
-Job of type %s held lock for %.2f seconds
-Job of type %s held lock for %.2f seconds while job of type %s was waiting
+Job of type %s held lock for %.2f seconds in %s:%d
+Job of type %s held lock for %.2f seconds while job of type %s was waiting in %s:%d
 Job passed lock it wasn't waiting for. Job: %s, Lock: %s %s(%d), Paused for %s, Waiting on %s
 Jobs/Coroutines
 Job %s detected and cleaned up leak of %d lock(s):
@@ -16219,20 +16412,18 @@ Job %s trying to release lock %s at %s(%d) though the lock is held by %s
 Job %s was waiting for a response and expected msg %u but received %u
 job warning: Resuming job '%s (id: %lld)' due to timeout while paused for %s
 	join_code
-Joint Indices (%d) Out Of Range for SINT16: Skinning will not work ! 
-Joint Indices (%d) Out Of Range for UINT10: Skinning will not work ! 
-Joint Indices (%d) Out Of Range for UINT8: Skinning will not work ! 
+Joint Indices (%d) Out Of Range for SINT16: Skinning will not work!
+Joint Indices (%d) Out Of Range for UINT10: Skinning will not work!
+Joint Indices (%d) Out Of Range for UINT8: Skinning will not work!
 JointMotion_t
 Joints: %d (%d)
 joy_autoaimdampen
 j@)[p@)
 Jp@y_
 JP@y_
-JQT9k!
 [jRDe
 jRh9i
 jR@yK=
-js8	i98
 js_array
 j;	S)M*
 ?*JSN
@@ -16256,6 +16447,7 @@ jumps
 justify_horizontal
 justify_vertical
 jv8?)
+J!V9k!
 j.V-m
 jV@y_
 jV@y)|@
@@ -16266,16 +16458,16 @@ j)x	@
 j)x		
 j+x+(
 J!_x_!5k
-j(x(F
-j(xH!
+j(xh!
 j)x	H
+j(xhF
 j(xHH
 j)xi&
-j x`L
 j-xM 
 j.xN.
 j)x	O
 j"(y`
+J!@y)}@
 J	@y_
 JYix*$
 Jykx)ij
@@ -16283,13 +16475,12 @@ Jytx_
 j@y	y5x
 	*jz-
 _!(k#
-!	@)	k
+!	@)k
 *_  k
 *?!(k
 &@)k	
 	*_!;k
 	*_!(k
-!	@)K
 K)@)+)
 (@)k0@)n
 K1B)M9C)
@@ -16303,21 +16494,23 @@ k2	)j~
 k2Q)m
 *k2@y
 ?k58D
-*?k78
-?k78G
+k68F	
+?k78@
+*?k781
 ?k78h
-k78H3
 	K!8"
 k(8vV@
 ?){K9_
 @){K9_
 k9J{c>
+K	\9K
 K9	S)
 K9	S)M+
 K9	S+M+
 K)A)+)
 kA@9J}@
 K	A9lC
+KAB9k
 k_AddGem_Failed_FailedToAddGem
 k_AddGem_Failed_GemIsInvalid
 %k_AddGem_Failed_InvalidGemTypeForHero
@@ -16334,6 +16527,7 @@ kAKJJ
 kAKJk
 ?k,am
 K.Ax E@
+!	@)Kb
 kBEAMCLIPSTYLE_NUMBITS
 KBSaved%
 _!(kc
@@ -16354,6 +16548,12 @@ k_eCancelFindMatch
 k_eCancelInvite
 k_eCannotReroll
 k_eCannotSelectRegion
+ k_EClientStatsEvent_AbandonMatch
+k_EClientStatsEvent_Boot
+k_EClientStatsEvent_FinishMatch
+%k_EClientStatsEvent_FinishSteamSignon
+k_EClientStatsEvent_StartMatch
+$k_EClientStatsEvent_StartSteamSignon
 kEconItemOrigin_Achievement
 kEconItemOrigin_AssassinEventReward
 kEconItemOrigin_CDKey
@@ -16459,7 +16659,9 @@ k_EDACLobbyTeam_Team5
 k_EDACLobbyTeam_Team6
 k_EDACLobbyTeam_Team7
 k_EDACMatchMode_Casual
+k_EDACMatchMode_Invalid
 k_EDACMatchMode_PrivateLobby
+k_EDACMatchMode_Ranked
 k_EDACMatchMode_SoloBot
 k_eDACNetBuffer_Debug
 (k_eDACNetBuffer_IndividualPostMatchStats
@@ -16534,6 +16736,7 @@ k_eInvalidKey
 k_eInvalidLoadoutSlot
 k_eInvalidPartyID
 k_eInvalidPermissions
+k_eInvalidSlot
 k_eInvalidTarget
 k_eInvalidValue
 k_eInvalidVersion
@@ -16580,6 +16783,8 @@ $k_EMsgClientToGCClaimChallengeReward
 (k_EMsgClientToGCCreateFriendCodeResponse
 "k_EMsgClientToGCCreateStaticRecipe
 *k_EMsgClientToGCCreateStaticRecipeResponse
+!k_EMsgClientToGCDevEventOperation
+)k_EMsgClientToGCDevEventOperationResponse
 &k_EMsgClientToGCDevForceMatchFormation
 k_EMsgClientToGCEquipItems
 "k_EMsgClientToGCEquipItemsResponse
@@ -16587,7 +16792,11 @@ k_EMsgClientToGCEquipLoadout
 $k_EMsgClientToGCEquipLoadoutResponse
 k_EMsgClientToGCEventClaim
 "k_EMsgClientToGCEventClaimResponse
+%k_EMsgClientToGCEventEquipVirtualItem
+-k_EMsgClientToGCEventEquipVirtualItemResponse
  k_EMsgClientToGCEventRequestInfo
+$k_EMsgClientToGCEventRequestInfoSync
+,k_EMsgClientToGCEventRequestInfoSyncResponse
 k_EMsgClientToGCGetFriendCodes
 &k_EMsgClientToGCGetFriendCodesResponse
 k_EMsgClientToGCIsInMatchmaking
@@ -16644,7 +16853,6 @@ $k_EMsgClientToGCUnpackBundleResponse
 "k_EMsgClientToGCWrapAndDeliverGift
 *k_EMsgClientToGCWrapAndDeliverGiftResponse
 k_EMsgClientToServerChatMsg
-k_EMsgClientToServerTutorial
 &k_EMsgClientToServerUpvoteNotification
 k_EMsgGameReplayActionMarker
 k_EMsgGCAddGiftItem
@@ -16796,6 +17004,7 @@ k_EMsgGCToClientPollFileRequest
 k_EMsgGCToClientRequestDropped
 k_EMsgGCToClientSDRTicket
 )k_EMsgGCToClientStoreTransactionCompleted
+%k_EMsgGCToClientUpdateConsoleCommands
 k_EMsgGCToGCAddSubscriptionTime
 !k_EMsgGCToGCApplyLocalizationDiff
 )k_EMsgGCToGCApplyLocalizationDiffResponse
@@ -16843,6 +17052,7 @@ $k_EMsgGCToServerAddSpectatorResponse
 (k_EMsgGCToServerAllocateForMatchResponse
 &k_EMsgGCToServerCancelAllocateForMatch
 k_EMsgGCToServerRequestPing
+%k_EMsgGCToServerUpdateConsoleCommands
 k_EMsgGCTradingBase
 $k_EMsgGCTrading_InitiateTradeRequest
 ,k_EMsgGCTrading_InitiateTradeRequestResponse
@@ -16857,7 +17067,9 @@ k_EMsgGCUseItemRequest
 k_EMsgGCUseItemResponse
 k_EMsgGCUseMultipleItemsRequest
 k_EMsgGCVerifyCacheSubscription
+k_eMsgIndividualPostMatchStats
 k_EMsgItemChangedOwner
+k_EMsgLocalPlayerInventory
 k_EMsgNetBufferContents
 k_EMsgNetBufferRemoved
 k_EMsgPlayerAcquiredItem
@@ -16891,6 +17103,13 @@ k_eNotComplete
 k_eNotFriends
 k_eNotInGame
 k_eNotInParty
+k_eOp_GrantChallenge
+k_eOp_GrantCurrency
+k_eOp_RerollCooldown
+k_eOp_Reset
+k_eOp_SetChallengeValue
+k_eOp_SetCurrencyLevel
+k_eOp_SetCurrencyValue
 k_EPartnerRequestBadAccount
 k_EPartnerRequestNotLinked
 k_EPartnerRequestOK
@@ -16918,6 +17137,7 @@ k_EResult_InternalError
 k_EResult_InvalidClientVersion
 k_EResult_MatchmakingDisabled
 k_EResult_MatchmakingTooBusy
+k_EResult_ModeLocked
 k_EResult_NoRegionPings
 k_EResult_OK
 k_EResult_PartyMemberInLobby
@@ -16985,15 +17205,18 @@ KeyValuesSystem
 keyword
 keywords
 `'Kf"
+K!F9JAB9
 k_Failed
 k_Failed_CodeAlreadyUsed
 k_Failed_CodeNotFound
 k_Failed_OtherError
 kGEOCLIP
 	kh8?
-kh,8+
 	kh8?u
+khF(9@
 khxh6
+_!:ki
+?! ki
 	k_i-
 Ki,8)!
 Ki)8)
@@ -17035,11 +17258,11 @@ kit8K
 (k_ItemPurgatoryResponse_Refund_Succeeded
 )kix?!4k@
 K)@)j
+($@)K=J
 kji8v
-(%@)K)@)k
+('@)K)@)k
 K)@)k
 K]K+2
-($@)KMH
 kMODELCLIP
 K?@mOy
 k_MsgAlreadyRunning
@@ -17052,7 +17275,6 @@ k_MsgSQLFailure
 k_MsgTransactionInsertFailed
 k_MsgValid
 Km@x+
-k-n8$
 k_NameItem_Failed
 k_NameItem_Failed_ItemIsInvalid
 k_NameItem_Failed_NameIsInvalid
@@ -17158,8 +17380,8 @@ L: %.2f deg
 ?>l3_o
 l4d_airport05_runway
 l5@yk
- @-l6N-
-@-l6N-
+ @-l6M-
+@-l6M-
 L7D)N+@
 }l7f~
 "L9`2
@@ -17169,6 +17391,7 @@ L9	Sk
 L9	SkM,
 la@9L	
 L	A9mC
+LA9+uI
 label
 Label
 labelled_debug_helper_arc_segments
@@ -17266,6 +17489,7 @@ LevelInitWorld failed!
 levellist_t
 levelname
 levelName
+level_points
 Level: %s
 level_type
 levelup_rule
@@ -17342,7 +17566,8 @@ LightStyles
 lighttype
 LightType_t
 lightworld
-Liixi!E
+lih8+[
+LiixiaG
 lij8?
 Lik8m
 L@I@L
@@ -17417,7 +17642,6 @@ Lm@x,
 lm@xl
 L-#o@
 loadautosave
-Load board state from file, usage: dac_load <filename>
 Loaded %d rays
 LoadFromBuffer: expected '{', found '%s'
 loading_screen
@@ -17430,6 +17654,7 @@ loadout
 loadout_default_offset
 Loadout Default Offset:
 loadout_hero_offsets
+LoadoutItem
 loadout_scale
 Loadout Scale:
 loadout_slot
@@ -17452,6 +17677,7 @@ localBits
 localcontrastedgestrength
 localcontraststrength
 LocalFlexController_t CBaseFlex::FlexControllerLocalToGlobal(const flexsettinghdr_t *, int) const
+localgloballeaderboardrank
 localhost
 Localization tokens must begin with # - Found %s
 Localize_001
@@ -17479,9 +17705,14 @@ locksound_t
 Lock the pathfinding goal to the current intersection point.
 Lock the pathfinding start to the current intersection point.
 locomotive
+locstring
 log10
 LOGDIR
 Log game events being considered by the director
+Logged off of Steam, set GC connection state to NO_STEAM
+Logged on to Steam, set GC connection state to GC_GOING_DOWN
+Logged on to Steam, set GC connection state to NO_SESSION
+Logged on to Steam, set GC connection state to STEAM_GOING_DOWN
 LOG_GENERAL
 LoggingSystem_AddTagToChannel
 LoggingSystem_GetChannelVerbosity
@@ -17602,10 +17833,12 @@ LP@y?
 ?LrA/<,M?+
 LrwcE
 lseek
+lservercfgfile
 %ls [wstring, len = %d]
 lu9% 
 [L:%u:%u]
 l!@y,
+l!@y?
 lycan_wolf_spawn_shift
 LYkxk
 ly)x)
@@ -17807,6 +18040,7 @@ match_info
 match_mode
 	Match reservation: %llu
 Match reservation was canceled but %llu didn't match the reservation match id %llu or state was invalid: %u
+match_rewards
 match_rounds
 Match signed out time: %u
 match_signout
@@ -17951,7 +18185,6 @@ m_axisEnd
 max_item_id
 MaxItemIDTimestamp
 max_item_id_timestamps
-max_level
 maxLevel
 maxLevelToBuy
 maxlogexposure
@@ -17963,7 +18196,9 @@ Max number of entities to transmit to player
 maxobjects
 MAX_PATTACH_TYPES
 maxpieces
+max_place
 -maxplayers
+max_points
 max ragdoll count: %d
 max_rotation
 MaxSize
@@ -18022,6 +18257,7 @@ m_bAsynchronouslySpawnEntities
 m_bAtMaxLimit
 m_bAtMinLimit
 m_bAttachedToTrackedBody
+m_bAttachNextFrame
 m_bAttack
 m_bAuraIsHeal
 m_bAutoAimTarget
@@ -18160,7 +18396,6 @@ m_bGroupByPrefab
 m_bGroupByVolume
 m_bGroupOtherGroups
 m_bGusting
-m_bHadOverrideEnabledBeforeShadowFade
 m_bHadOwner
 m_bHasArrived
 m_bHasAttachedParticles
@@ -18400,6 +18635,7 @@ m_bSelected
 m_bSelfMustBeHeld
 m_bSellOld
 m_bSentGG
+m_bSentPostMatchStats
 m_bSequenceChangeNetworked
 m_bSequenceFinished
 m_bSessionPersister
@@ -18754,7 +18990,6 @@ MFieldVerificationName
 m_Filter
 m_FilteredAreas
 m_FindMethod
-m_fingers
 m_fInitHUD
 m_fInterpolationDuration
 m_fIsRunning
@@ -19213,6 +19448,7 @@ m_flOverlayTimes
 m_flOverriddenFriction
 m_flOverrideCastPoint
 m_flOverrideShadowFarZ
+m_flParticleSpacing
 m_flPhi
 m_flPhysicalArmorValue
 m_flPickupRadius
@@ -19286,6 +19522,7 @@ m_flSimOrRenderTime
 m_flSimTime
 m_flSimulationTime
 m_flSkyIntensity
+m_flSlack
 m_flSmoothFactor
 m_flSnapValue
 m_flSpeed
@@ -19795,7 +20032,6 @@ mincpulevel
 m_indexBuffer
 m_inertiaFactor
 m_inertiaScale
-min_event_level
 minexposure
 m_iNext
 m_iNextAudible
@@ -19832,6 +20068,7 @@ minlogexposure
 m_InnerAngle
 m_iNodeNumber
 m_iNodeNumberMax
+min_place
 m_inputList
 m_inputValue
 min_rotation
@@ -20075,7 +20312,6 @@ m_iWorldModelIndex
 m_JointConstraintPairs
 m_JointName
 m_Joints
-)mj@y
 m_keyPoints
 m_keyPoints[0]
 m_keyPoints[1]
@@ -20190,6 +20426,7 @@ m_MoveTypeOverride
 m_mPreferredCatchTransform
 mmr_leaderboard
 	mmr_level
+mmr_level_score
 m>~-n
 m_nAABBDirection
 m_nActiveInteraction
@@ -20277,6 +20514,7 @@ m_nDamageThisRound
 m_nDamageType
 m_nDepletionCount
 m_nDestBrightness
+m_nDevNextCombatTakeDamage
 m_nDirectLight
 m_nDisappearMaxDist
 m_nDisappearMinDist
@@ -20293,10 +20531,16 @@ m_nDynamicDetachCount
 m_nDynamicResetCount
 m_NearestEntityDistance
 m_nEffectIndex
+m_nEffectState
 m_nEntIndex
 m_nEntityId
 m_nEntityIndex
+m_NetBoolVariables
+m_NetByteVariables
+m_NetFloatVariables
+m_NetIntVariables
 m_netlookupFilename
+m_NetVectorVariables
 MNetworkAlias
 MNetworkBitCount
 MNetworkChangeAccessorFieldPathIndex
@@ -20413,6 +20657,7 @@ m_nLinearMotionZ
 m_nLiteralHand
 m_nLogicBranchNames
 m_nLosses
+m_nLossesQueued
 m_nLossStreak
 m_nLowestPowerLevel
 m_nMagnitude
@@ -20494,6 +20739,7 @@ m_nOutsideWorld
 m_nOverrideStyle
 m_nParentAttachmentOrBone
 m_nParticlesToEmit
+m_nPartyIndex
 m_nPersonality
 m_nPhysgunState
 m_nPlatWindowHeight
@@ -20616,6 +20862,7 @@ m_nWaterLevel
 m_nWaterTouch
 m_nWaterType
 m_nWins
+m_nWinsQueued
 m_nWinStreak
 m_nWorldGroupID
 m_nXP
@@ -21474,6 +21721,11 @@ m_Params
 m_pAreas
 m_parentName
 m_PathIndex
+m_PathNodes_Name
+m_PathNodes_PinEnabled
+m_PathNodes_Position
+m_PathNodes_TangentIn
+m_PathNodes_TangentOut
 m_pAttackerClassNameFilter
 m_Pattern
 m_pAttributes
@@ -21519,6 +21771,7 @@ mp_forcerespawn
 mp_fraglimit
 mp_friendlyfire
 m_pGameDirFilter
+m_pGameMode
 m_pGameRules
 m_pGameSceneNode
 m_pHand
@@ -21595,6 +21848,11 @@ m_PredBoolVariables
 m_PredByteVariables
 m_PredFloatVariables
 m_PredIntVariables
+m_PredNetBoolVariables
+m_PredNetByteVariables
+m_PredNetFloatVariables
+m_PredNetIntVariables
+m_PredNetVectorVariables
 m_PredVectorVariables
 m_PreEmissionOperators
 m_preferredCarryAngles
@@ -21949,7 +22207,6 @@ m_unpressedBack
 m_unpressedForward
 m_unpressedMoveLeft
 m_unpressedMoveRight
-m_unProgressXP
 m_unRerollsThisRound
 m_unRoundBonusGold
 m_unShopGenerationID
@@ -21962,7 +22219,6 @@ m_uRankTier
 m_uSequenceNumber
 m_usSolidFlags
 " must be unique within 
-must_own_event
 Must specify a valid (non-zero) renewal frequency.
 Must specify a valid renewal period.
 MutableMessage
@@ -22278,6 +22534,7 @@ N5GCSDK15COutputToStdOutE
 N5GCSDK15CWorkThreadPoolE
 N5GCSDK16CGCClientLinkJobI27CMsgIDLinkGCToGenericClientILj2ELj10006E25CMsgGCToServerRequestPingEEE
 N5GCSDK16CGCClientLinkJobI27CMsgIDLinkGCToGenericClientILj2ELj10010E36CMsgGCToServerCancelAllocateForMatchEEE
+N5GCSDK16CGCClientLinkJobI27CMsgIDLinkGCToGenericClientILj2ELj10018E35CMsgGCToServerUpdateConsoleCommandsEEE
 N5GCSDK16CGCClientLinkJobI27CMsgIDLinkGCToGenericClientILj2ELj2522E26CMsgGCServerVersionUpdatedEEE
 N5GCSDK16CGCClientLinkJobI27CMsgIDLinkGCToGenericClientILj2ELj4005E24CMsgClientWelcome_ServerEEE
 N5GCSDK16CGCClientLinkJobI35CMsgIDLinkGCToGenericClientResponseILj2ELj10007E30CMsgGCToServerAllocateForMatchLj10008E38CMsgGCToServerAllocateForMatchResponseEEE
@@ -22296,6 +22553,7 @@ N5GCSDK17CGCClientProtoJobI26CMsgGCToServerAddSpectatorEE
 N5GCSDK17CGCClientProtoJobI29CMsgSOCacheSubscribedUpToDateEE
 N5GCSDK17CGCClientProtoJobI30CMsgGCToServerAllocateForMatchEE
 N5GCSDK17CGCClientProtoJobI31CMsgGCToClientPollConvarRequestEE
+N5GCSDK17CGCClientProtoJobI35CMsgGCToServerUpdateConsoleCommandsEE
 N5GCSDK17CGCClientProtoJobI36CMsgGCToServerCancelAllocateForMatchEE
 N5GCSDK18CSharedObjectCacheE
 N5GCSDK21ISharedObjectListenerE
@@ -22321,6 +22579,9 @@ N7CNavGen24INavConnectionBlockerMgrE
 (_N8H
 N)!9,
 N9@)+
+"N9"2
+*N9"2
+&N9"2
 N@9hN
 N9	S.M.
 n9@yN
@@ -22591,6 +22852,8 @@ nav_smooth_draw_calc
 nav_smooth_draw_constraint_spline
 nav_smooth_draw_constraint_spring
 nav_smooth_draw_speed
+nav_smooth_relax
+nav_smooth_relax_use_timesteps
 nav_smooth_separating_dist_override
 nav_smooth_spring_const_override
 nav_smooth_spring_factor_deriv
@@ -22664,7 +22927,6 @@ nav_test_smooth_extern_push
 nav_test_smooth_in_speed
 nav_test_smooth_in_yaw
 nav_test_smooth_path_speed
-nav_test_smooth_relax
 nav_test_smooth_separating_dist
 nav_test_smooth_spring_const
 nav_test_smooth_spring_tension_max
@@ -22907,6 +23169,7 @@ New result:
 new_slot
 nexonid
 NextBot
+Next combat, the player will take 100 damage
 nextlevel
 next_level_xp
 next_rarity
@@ -22965,6 +23228,8 @@ node_viewer_fly
 node_viewer_human
 node_viewer_large
 nodmgforce
+no_dupe_list
+no_dupe_lists
 no_dupe_loot_list_override
 no_equip_to_use
 <NO EXPRESSION>
@@ -23002,6 +23267,7 @@ no model
 No model!
 <none>
 [none]
+(None)
 	None
 Non-entity Aggregate: %s
 Non-logical condition has the wrong amount of attributes in challenge %s (Should be 1)
@@ -23078,6 +23344,7 @@ Not obstructing nav
 " not previously defined in symbols_by_name_, but was defined in symbols_by_parent_; this shouldn't be possible.
 Not safe to 'new' this class due to alignment requirements
 Not saving empty selected set to disk.
+Not sending message type %u (%s); simulating connection failure
 notsolid
 not started
 not_tradable
@@ -23127,6 +23394,7 @@ nPlanes
 nPlayerids_stick
 nPoint
 nPriority != NETWORK_FIELD_CHANGE_DEFAULT_PRIORITY
+n < pSwizzle->m_masterElement.Count()
 nPulseDuration
 !nq)"
 N"@q:
@@ -23167,22 +23435,21 @@ NSt6__ndk110__function6__funcIZN10CNavEditor15UpdateSelectionEvE3$_4NS_9allocato
 NSt6__ndk110__function6__funcIZN10CNavEditor15UpdateSelectionEvE3$_5NS_9allocatorIS3_EEF6VectorRKS6_S8_EEE
 NSt6__ndk110__function6__funcIZN12CNavDrawArea18DrawConnectedAreasERK8CNavAreaPK6VectorffE3$_0NS_9allocatorIS9_EEF21NavSearchAreaResult_tRS3_P19NavSearchAreaInfo_tEEE
 NSt6__ndk110__function6__funcIZN12CNavDrawMesh13DrawJumpLinksER8CNavMesh9NavHull_tRK6VectorffE3$_1NS_9allocatorIS9_EEFbP8CNavAreaEEE
-NSt6__ndk110__function6__funcIZN13CDACGameRules12FinishCombatEvE3$_7NS_9allocatorIS3_EEFvPK10KeyValues3EEE
 NSt6__ndk110__function6__funcIZN13CDACGameRules12SetGameStateE10EGameState11ERoundStateifE4$_10NS_9allocatorIS5_EEFvP13IDACPlayerBotEEE
 NSt6__ndk110__function6__funcIZN13CDACGameRules13OnCombatEndedEPK15CMsgRoundCombatE3$_2NS_9allocatorIS6_EEFvPK10KeyValues3EEE
 NSt6__ndk110__function6__funcIZN13CDACGameRules14ApplyItemBuffsEiPK15CDACPlayerStateE3$_4NS_9allocatorIS6_EEFvPK10KeyValues3EEE
 NSt6__ndk110__function6__funcIZN13CDACGameRules14OnUnitSummonedEP8CDAC_NPCS4_E3$_5NS_9allocatorIS5_EEFvPK10KeyValues3EEE
 NSt6__ndk110__function6__funcIZN13CDACGameRules16SetGameStatePostE10EGameState11ERoundStateiE4$_11NS_9allocatorIS5_EEFvP13IDACPlayerBotEEE
+NSt6__ndk110__function6__funcIZN13CDACGameRules19ComputePlayerDamageEPK15CDACPlayerStatePS3_iE3$_7NS_9allocatorIS7_EEFvPK10KeyValues3EEE
 NSt6__ndk110__function6__funcIZN13CDACGameRules22PlayerOrder_ReRollShopE12PlayerSlot_tjE3$_8NS_9allocatorIS4_EEFvPK10KeyValues3EEE
 NSt6__ndk110__function6__funcIZN13CDACGameRules25RunGameStateMachine_IntroEvE3$_0NS_9allocatorIS3_EEFvP13IDACPlayerBotEEE
 NSt6__ndk110__function6__funcIZN13CDACGameRules29RemoveRandomUnitFromDraftPoolEP15CDACPlayerStateP10CUtlVectorIi10CUtlMemoryIiiEEE3$_3NS_9allocatorISA_EEFvPK10KeyValues3EEE
-NSt6__ndk110__function6__funcIZN13CDACUnitState16CreateCombatUnitEPK15CDACPlayerStateiE3$_6NS_9allocatorIS6_EEFvPK10KeyValues3EEE
-NSt6__ndk110__function6__funcIZN13CDACUnitState16CreateCombatUnitEPK15CDACPlayerStateiE3$_7NS_9allocatorIS6_EEFvPK10KeyValues3EEE
-NSt6__ndk110__function6__funcIZN15CDACPlayerState19SubstituteSynergiesEvE4$_33NS_9allocatorIS3_EEFvPK10KeyValues3EEE
-NSt6__ndk110__function6__funcIZN15CDACPlayerState29PreCalculateEndOfRoundRewardsEiE4$_12NS_9allocatorIS3_EEFvPK10KeyValues3EEE
-NSt6__ndk110__function6__funcIZN15CDACPlayerState38GrantPendingCombatRewardForNeutralWaveERK15CUtlVectorFixedIiLm5EEbE4$_11NS_9allocatorIS7_EEFvPK10KeyValues3EEE
-NSt6__ndk110__function6__funcIZN15CDACPlayerState7AddItemE11DACItemID_tE3$_8NS_9allocatorIS4_EEFvPK10KeyValues3EEE
-NSt6__ndk110__function6__funcIZN15CDACPlayerState7AddItemE11DACItemID_tE3$_9NS_9allocatorIS4_EEFvPK10KeyValues3EEE
+NSt6__ndk110__function6__funcIZN13CDACUnitState16CreateCombatUnitEPK15CDACPlayerStateiE3$_0NS_9allocatorIS6_EEFvPK10KeyValues3EEE
+NSt6__ndk110__function6__funcIZN13CDACUnitState16CreateCombatUnitEPK15CDACPlayerStateiE3$_1NS_9allocatorIS6_EEFvPK10KeyValues3EEE
+NSt6__ndk110__function6__funcIZN15CDACPlayerState29PreCalculateEndOfRoundRewardsEiE3$_6NS_9allocatorIS3_EEFvPK10KeyValues3EEE
+NSt6__ndk110__function6__funcIZN15CDACPlayerState38GrantPendingCombatRewardForNeutralWaveERK15CUtlVectorFixedIiLm5EEbE3$_5NS_9allocatorIS7_EEFvPK10KeyValues3EEE
+NSt6__ndk110__function6__funcIZN15CDACPlayerState7AddItemE11DACItemID_tE3$_2NS_9allocatorIS4_EEFvPK10KeyValues3EEE
+NSt6__ndk110__function6__funcIZN15CDACPlayerState7AddItemE11DACItemID_tE3$_3NS_9allocatorIS4_EEFvPK10KeyValues3EEE
 NSt6__ndk110__function6__funcIZN15CNavSpliceBlock11SpliceBlockERK14CNavGenRtBlockR8CNavMeshE4$_33NS_9allocatorIS8_EEFbP8CNavAreaEEE
 NSt6__ndk110__function6__funcIZN15NavBoundarySegs7TestRayER8CSegGridRK8Vector2DS7_fPibE3$_1NS_9allocatorIS9_EEFviRK16NavBoundarySeg_tEEE
 NSt6__ndk110__function6__funcIZN16CNavBoundaryZone38FindConnectedBoundaryEdgesWithinCircleERK13CPathCostBaseR8CNavAreaRK8Vector2DfR10CUtlVectorI16NavBoundarySeg_t10CUtlMemoryISC_iEEE4$_31NS_9allocatorISH_EEF21NavSearchAreaResult_tS7_P19NavSearchAreaInfo_tEEE
@@ -23211,6 +23478,12 @@ NSt6__ndk110__function6__funcIZN9NavSearch35FindConnectedNavAreaContainingPointE
 NSt6__ndk110__function6__funcIZN9NavSearch36FindConnectedNavAreasWithinDistOfSegER8CNavAreaRK8Vector2DS7_fRK13CPathCostBaseP23CUtlVectorFixedGrowableIPS3_Lm32EEE4$_26NS_9allocatorISF_EEF21NavSearchAreaResult_tS4_P19NavSearchAreaInfo_tEEE
 NSt6__ndk110__function6__funcIZN9NavSearch36FindConnectedNavAreasWithinDistOfSegER8CNavAreaRK8Vector2DS7_fRK13CPathCostBaseP23CUtlVectorFixedGrowableIPS3_Lm32EEE4$_27NS_9allocatorISF_EEFbS4_R20NavIncludeAreaInfo_tEEE
 NSt6__ndk110__function6__funcIZNK13CDACGameRules34GetNeutralWaveRewardTiersForPlayerEiPK15CDACPlayerStateE3$_9NS_9allocatorIS6_EEFvPK10KeyValues3EEE
+NSt6__ndk110__function6__funcIZNK15CDACPlayerState15GetUnitKeywordsEiRK15CUtlVectorFixedI12EUnitKeywordLm4EEE3$_7NS_9allocatorIS8_EEFvPK10KeyValues3EEE
+NSt6__ndk110__function6__funcIZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE3$_9NS_9allocatorIS5_EEFvPK10KeyValues3EEE
+NSt6__ndk110__function6__funcIZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_10NS_9allocatorIS5_EEFvPK10KeyValues3EEE
+NSt6__ndk110__function6__funcIZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_11NS_9allocatorIS5_EEFvPK10KeyValues3EEE
+NSt6__ndk110__function6__funcIZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_12NS_9allocatorIS5_EEFvPK10KeyValues3EEE
+NSt6__ndk110__function6__funcIZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_13NS_9allocatorIS5_EEFvPK10KeyValues3EEE
 NSt6__ndk110__function6__funcIZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_14NS_9allocatorIS5_EEFvPK10KeyValues3EEE
 NSt6__ndk110__function6__funcIZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_15NS_9allocatorIS5_EEFvPK10KeyValues3EEE
 NSt6__ndk110__function6__funcIZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_16NS_9allocatorIS5_EEFvPK10KeyValues3EEE
@@ -23225,13 +23498,8 @@ NSt6__ndk110__function6__funcIZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDA
 NSt6__ndk110__function6__funcIZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_25NS_9allocatorIS5_EEFvPK10KeyValues3EEE
 NSt6__ndk110__function6__funcIZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_26NS_9allocatorIS5_EEFvPK10KeyValues3EEE
 NSt6__ndk110__function6__funcIZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_27NS_9allocatorIS5_EEFvPK10KeyValues3EEE
-NSt6__ndk110__function6__funcIZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_28NS_9allocatorIS5_EEFvPK10KeyValues3EEE
-NSt6__ndk110__function6__funcIZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_29NS_9allocatorIS5_EEFvPK10KeyValues3EEE
-NSt6__ndk110__function6__funcIZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_30NS_9allocatorIS5_EEFvPK10KeyValues3EEE
-NSt6__ndk110__function6__funcIZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_31NS_9allocatorIS5_EEFvPK10KeyValues3EEE
-NSt6__ndk110__function6__funcIZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_32NS_9allocatorIS5_EEFvPK10KeyValues3EEE
-NSt6__ndk110__function6__funcIZNK15CDACPlayerState22CollectPublicGameStateEP21CMsgPublicPlayerStateE4$_10NS_9allocatorIS5_EEFvPK10KeyValues3EEE
-NSt6__ndk110__function6__funcIZNK15CDACPlayerState42UpgradeUnitsBasedOnGlobalItemsAndSynergiesER10CUtlVectorIPK13CDACUnitState10CUtlMemoryIS6_iEESA_E4$_13NS_9allocatorISB_EEFvPK10KeyValues3EEE
+NSt6__ndk110__function6__funcIZNK15CDACPlayerState22CollectPublicGameStateEP21CMsgPublicPlayerStateE3$_4NS_9allocatorIS5_EEFvPK10KeyValues3EEE
+NSt6__ndk110__function6__funcIZNK15CDACPlayerState42UpgradeUnitsBasedOnGlobalItemsAndSynergiesER10CUtlVectorIPK13CDACUnitState10CUtlMemoryIS6_iEESA_E3$_8NS_9allocatorISB_EEFvPK10KeyValues3EEE
 NSt6__ndk110__function6__funcIZNK19CEconItemDefinition31GetAssetModifiersActiveForStyleEiP10CUtlVectorI20AssetModifierEntry_t10CUtlMemoryIS4_iEEE5$_181NS_9allocatorIS9_EEFvPK14CAssetModifierEEE
 NSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
 NSt6__ndk113basic_ostreamIcNS_11char_traitsIcEEEE
@@ -23342,20 +23610,18 @@ Nx	V @M
 n@y?	
 nZ:0J
 ?'[nza
-!	@)o
 O?0 ,	f
   o [%5d] '%s' (%s) [group entity]
 o6`"@
 O6	<@
 O6	0@
 O6`2@
-O6	4@
 o6`B@
-o6	D@
 O6	D@
 o6h~@
 O6	h@
 O6h:@
+O6	H@
 o6hb@
 O6hb@
 O6hB@
@@ -23366,6 +23632,7 @@ O6hj@
 O6hN@
 o6hVB9	1
 O6hz@
+O6i~@
 O6i>@
 O6i:@
 O6i*@
@@ -23383,7 +23650,6 @@ O6iFA9
 O6ij@
 O6iR@
 O6irA9
-O6iv@
 O6iz@
 o6jb@
 o6jN@
@@ -23391,8 +23657,10 @@ O6`R@
 O6v2@
 o6vB@
 o-!8#
+"O9)2
 O9`*B
 ? !o^A?
+O	A#9
 o/A-m'B-n+@-`C
 objc_class_prefix
 object_data
@@ -23418,10 +23686,12 @@ offset
 ?oG8-x
 oG8-x
 ?og_y
+!	@)oi
 ?:|o_I
 okifnomodel
 old_audit_action
 oldest_unclaimed_reward
+old_item_slot
 oldname
 old_player_slot
 Old result:
@@ -23490,6 +23760,9 @@ OnSteamNetConnectionStatusChanged [%s] Closed hconn=%u, old state=%u, listensock
 OnSteamNetConnectionStatusChanged [%s] finished accepting: hconn=%u, listensocket=%u )
 OnSteamNetConnectionStatusChanged [%s] hconn=%u, new state=%u, old state=%u, listensocket=%u )
 OnSteamNetConnectionStatusChanged [%s] %s.  hconn=%u, code=%u, Msg=%s
+OnSteamServerConnectFailure(result=%u, StillRetrying=%d)
+OnSteamServersConnected()
+OnSteamServersDisconnected(result=%u)
 OnUpdateOBB
 OnUpdateSolidFlags
 OnUpdateSolidType
@@ -23508,6 +23781,7 @@ Operation_t
 operator
 operatorname
 op_id
+opponent
 opponent"
 Opponent
 opponent"E
@@ -23545,7 +23819,6 @@ order_id
 ORIENT
 Orient the specified entity to match the player's angles. By default, only orients target entity's YAW. Use the 'allangles' option to orient on all axis.
 origin
-Original
 Original Foot 
 original_id
 Original Knee
@@ -23609,6 +23882,7 @@ OutputType_RotationZ
 Output unserialization of entities on map load. 0 - off, 1 - client/server, 2 - server, 3 - client
 outside
 OutsideTransition
+Overflow in total point cost for levels!
 overhead_follow
 OverlayName%d
 OverlayTime%d
@@ -23621,6 +23895,7 @@ owner_account_id
 owner_context
 owner_id
 ownername
+ownership
 owner_soid
 o}Xot#
 &OYMW
@@ -23629,6 +23904,7 @@ o}Xot#
 ?<-?p
 @-p	@
 @-P	@
+*-@)!P&
 p2A-r
 p;4,F
 P6h>@
@@ -23643,10 +23919,10 @@ p6jf@
 p6jR@
 'P77*X7W-`7w0h7
 p7v	P7
+P7(w@
 P7x"@
 (p@9h
 (P@9H
-!	@)pa
 "pA3QuW
 P-A8!
 package
@@ -23673,6 +23949,7 @@ PaintSplatPink
 panel_class_name
 panel_dpi
 panel_id
+panorama_class
 PanoramaTextServices001
 PanoramaUIClient001
 PanoramaUIEngine001
@@ -23686,6 +23963,7 @@ param3
 param3 "%s"
 param4
 parameterName
+parametersChanged
  Parameter to BackUp() can't be negative.
 parameter_type
 params
@@ -23794,6 +24072,7 @@ particles/items/soul_sucking_syphon/soul_syphon.vpcf
 particles/items/warriors_never_die/warriors_never_die.vpcf
 particles_list
 particle_snapshot
+particle_spacing
 particles/status_fx/status_effect_avatar.vpcf
 particles/status_fx/status_effect_doom.vpcf
 particles/status_fx/status_effect_forcestaff.vpcf
@@ -23969,6 +24248,7 @@ particle_test_file
 particle_test_start
 particle_test_stop
 ParticleTracer
+part_name
 partner
 partner_accounts
 PartnerAccountType
@@ -24012,6 +24292,7 @@ Path_AddToTail failed, depth already == DEFAULT_MAX_PATH_DEPTH(%d)
 Path_AddToTail failed for read only CFieldPath
 path_corner
 Path Overflow, must be less than 260 characters.
+path_particle_rope
 Path_PopLast failed for read only CFieldPath
 Path_RemoveAll failed for read only CFieldPath
 path seg %d: type %d, out %d, in edge %d, vPos (%0.2f, %0.2f, %0.2f)
@@ -24041,6 +24322,7 @@ payloadData
 payment_row_usd
 payment_us_usd
 P-b8 
+pContainer->m_nCount < ANIM_DECOMPRESSED_MAX_BLOCKSIZE
 pctChance
 pData->GetDataDescMap() == pTemplateDataMap
 pDefault
@@ -24217,6 +24499,7 @@ ping_avg_ms
 ping-pong ball
 ping_stddev_ms
 ping_times
+pinStateChanged
 pip85
 Pistol
 pitch
@@ -24226,6 +24509,10 @@ pitchrun
 PitchShift
 pitchstart
 pitchVel
+pivot_max
+pivot_min
+pivot_origin_left
+pivot_origin_right
 pkgitem
 place
 Placed %d areas on the ground
@@ -24237,7 +24524,6 @@ placementbone
 placement_bone
 placement_mode
 Places the selected corner of the currently marked Area on the ground.
-Plane normal
 PLASMA
 Plastic.Large
 Plastic.Medium
@@ -24330,6 +24616,7 @@ PlayerInfo
 PlayerInstanceFromIndex
 player_interest_gold
 player_level
+player_loadout
 player_loadsaved
 player_manager
 playermodel
@@ -24339,6 +24626,7 @@ player_name
 PlayerOff
 player_old_armor
 PlayerOn
+PlayerPerRoundInfo
 Player.PickupWeapon
 Player.PlasmaDamage
 player_player_slot
@@ -24602,6 +24890,7 @@ PressedForward
 PressedMoveLeft
 PressedMoveRight
 PrettyFont:%s:%d:%d
+prevent_duplicate_challenges
 prevent_gifting
 prevent_interaction_t
 prevent_movement
@@ -24645,8 +24934,8 @@ process_id
 	PROCESSING RESPONSE RULE FROM .NUT :
 process_name
 Process Updater: %6.3f [ms]
+profile_ring
 progress
-progress_xp
      *Project Constraints: %6.3f [ms]
 projectile_model
 projectileName
@@ -24732,6 +25021,7 @@ ptr( 0x%p )
 Pt@-s: 
 ~p>u,
 public
+../public/animationsystem/compression.h
 public_dependency
 ../../public/entity2/concreteentitylist.h
 ../../public/entity2/entitycomponent.h
@@ -24816,21 +25106,21 @@ pxADj
 ?p[[x^j
 @p}Xo
 py_generic_services
-!	@)q
 ?	@q)
 -	-	Q
+!	@)Q
 Q-   
-	q19_
+	Q19_a19
+	q29_
 q;4,F
-	q79_
 Q8q(2
-	q+9_
-	q	9_
+	q<9_
 Q"@9?
-	Q99_a99
-	Q>9_a>9
-(q:9I|
-)Q@9I=
+	Q<9_a<9
+	Q;9_a;9
+	Q.9_a.9
+	Q'9_a'9
+)Q@9i:
 Q-a)!
 	qA9?
 qangle
@@ -24839,18 +25129,16 @@ QAngle-world
 Q-bND
 ?@@qC
 QD-{(#
+	Qd9I
 q	DC9
 qD	@za
 ?qe?A
-	Qg9?
-Qg988
-	Qg9i
-Qg9J8
 QH@-$
 q?h(8
 ?"QhY
 Qi"A)`
-	QJ9h2@
+q@)(=J
+	QJ9h*@
 QjN?#
 qJT-s
 Qj$xij0
@@ -24860,23 +25148,10 @@ qK5B),
 >QL^9
 	qL9i
 	qL9I
-q@)(MH
 Qn=@-s	@
 qo[k!
 ~-QQC-
 ?\qqTn
-QT9+#
-)QT9j!
-)QT9j#
-)QT9J!
-+QT9J!
-	QT9J!
-QT9J!
-QT9J#
-QT9k!
-QT9K#
-,QT9M!
-*qu9J
 qualities
 quality
 Quality definition %d: Duplicate quality name %s
@@ -24920,7 +25195,6 @@ QuitServer() executing "quit"
 q$;@z
 r-@	*
 "@:R".
-R09hE
 r0@GP!
 >r3\9
 ?r4GV~	
@@ -24929,7 +25203,6 @@ r)5IJY}
 @-R8'
 ?R8q(2)
 *R)8yv
-r^9`1
 &R97|@
 R99h.
 r@9hr
@@ -25055,9 +25328,11 @@ RecursiveLoadFromBuffer:  got EOF instead of keyname
 RecursiveLoadFromBuffer:  got } in key
 RecursiveLoadFromBuffer:  got NULL key
 RecursiveLoadFromBuffer:  recursion overflow
+Recv msg %u (%s), %u bytes
 recycle_list
 RedirectOutput
 	Red is collides with something
+Reduce the health of a player by..
 ref_aim_
 referencename
 refire interval: %.2f sec
@@ -25248,8 +25523,8 @@ requires_ability
 requires_all_same_class
 requires_all_same_slot
 requires_exact_number
-requires_ownership
 requiresUseKey
+reroll_cooldown
 reroll_cost_modifier
 Re-selects the stored selected set.
 reservations
@@ -25267,7 +25542,6 @@ ResetSequenceInfo
 RESET_SEQUENCES
 ResetSequence : %s: %s -> %s
 resolution
-Resolved
  (resolved to '%s')
 <resource>
 resource/closecaption_english.dat
@@ -25401,11 +25675,9 @@ reversalsoundthresholdSmall
 reversed
 ReverseMove
 reward
-reward0
-reward1
-reward2
 reward_flags
 	reward_id
+reward_list
 rewards
 reward_sound
 rewardTiers
@@ -25424,7 +25696,6 @@ Rhk)8
 RHk)8
 Rhkh8h
 RHkh8h
-!	@)Ri
 R(i*8
 R	i*8"
 R*i(8h
@@ -25459,7 +25730,6 @@ RIO_WILL_RELAY
 r_JeepViewDampenDamp
 r_JeepViewDampenFreq
 r_JeepViewZHeight
-Rj.@-l
 rJ@LB
 rJMJJ
 R?k78
@@ -25481,8 +25751,11 @@ rnd_down
 rnd_up
 .rodata
 ROLL_CREDITS
+rolled
 ROLL_LATE_JOIN_LOGO
 	ROLL_NONE
+roll_on_event_purchase
+roll_on_event_unlock
 ROLL_OUTTRO
 ROLL_STATS
 rolltype
@@ -25505,14 +25778,18 @@ Rotates an entity by a specified # of degrees
 RotatingUse
 ROTATION
 rotationAxis
+rotation_axis0
+rotation_axis1
 Rotation offset from the base Attachment point (for testing)
 rotationSpeed
 Round
+round_bonus
 round_end
 Round: %i (%s)
 roundnumber
 round_number
 round_ranking
+round_result
 rounds
 round_start_pre_entity
 round_state
@@ -25523,8 +25800,8 @@ RoutingMethod
 RP_PAUSE
 RP_TOGGLEPAUSE
 RP_UNPAUSE
+r	Q$9_A)99
 rQ@y1
-`r@)R
 rr_AddDecisionRule
 -rr_allow_reload
 rr_CommitAIResponse
@@ -25570,14 +25847,14 @@ RunTimeOfDayCommand
 	R)v4N
 r_VehicleViewDampen
 r@y`&@
-`R@yd
+`R@y3,
+`R@y8
 `R@yh
 R@yHq
 r@yhr
-R@yHx
+`R@yi+
 R	yi2
 ryjj8
-R@yoy
 R	yu2
 --- %s: 
 "%s" 
@@ -25592,8 +25869,8 @@ R	yu2
 %s+--
 +++ %s: 
 s)~+@
-!	@)S
 ?;? +S'
+S_@)\
 )`>s0
 %s%02d
 %s %.0f%%
@@ -25658,6 +25935,8 @@ sample_stack
 samples_use_time
 Sampling walkable space...
 sandking_caustic_finale
+%s: AnimGraph Trying to set parameter: "%s" but does not exist
+%s: AnimGraph Variable: "%s" set to "%s" on %s (%d) at %.2f [%d]
 %s at %.0f %.0f %0.f uses model %s, which has an invalid prop_data type. DELETED.
 %s at %.0f %.0f %0.f uses model %s, which has no propdata which means it must be used on a prop_static. DELETED.
 %s at %.0f %.0f %0.f uses model %s, which has propdata which means that it be used on a prop_physics or prop_door_xxx. DELETED.
@@ -25727,6 +26006,7 @@ Saving game to %s...
 saxis
 SAyK9
 say_team
+!	@)Sb
 s_bAbsQueriesValid
 %s| Base Class%s: %d
 %s:  BeginRestoreEntities( %s%s )
@@ -26228,6 +26508,7 @@ Selects the current Area and all Areas connected to it, recursively. To clear a 
 self_bonus
 self_dmg_pct
 sellObsolete
+sell_unit
 Send a screen message to all clients.
 Send a string to the console as a client command
 Send a string to the console as a server command
@@ -26235,6 +26516,7 @@ Send a string to the console as a server command
 sender_permission
 sending_gc
 Sending update to GC to transition from lobby state %s to active state %s
+Sending %u (%s) %u bytes
 send_node_sym
 sendprop_t
 %s:  EndRestoreEntities( %s%s )
@@ -26491,7 +26773,6 @@ setpos into world, use noclip to unstick yourself!
 setpos_player
 SetQuestName
 SetQuestPhase
-SetRadius
 SetRenderAlpha( int ): Set the alpha modulation of this entity.
 SetRenderAttribute
 SetRenderColor( r, g, b ): Sets the render color of the entity.
@@ -26677,11 +26958,6 @@ Shifts the selected areas by the specified amount
 shithead
 S?!Hj
 Shoots a phys object.
-shop0
-shop1
-shop2
-shop3
-shop4
 shop_cost_modifier
 shop_generation_id
 shop_locked
@@ -26755,7 +27031,7 @@ Signout temporarily failed for lobby %llu with status code %u. Backing off for r
 SIJ-QAK-G
 silence_duration
 silent
-;	SiM)
+:	SiM)
 SIM: ------------------------------------------------------------
 SIM: Cleared: %s
 SIM: Closed file: %s
@@ -26789,6 +27065,7 @@ SingleObject
 singleplayer
 single_shot
 single_shot_npc
+%s (in non-developer mode always returns '%s')
 %s InputActivate: entity %s not found or is not a player!
 %s InputActivate: invalid or missing !activator!
 Sin( %s )
@@ -26861,6 +27138,7 @@ skyintensity
 sky_name
 SkyStateChanged
 sky_urb01
+slack
 %s Ladder Count: %d
 %s:  landmark '%s' but no matching trigger_transition with that name!
 %s:  landmark='%s' position offset ( %g, %g, %g )
@@ -26887,7 +27165,9 @@ slidesoundfwd
 %sLock acquired: %s:%d
 sLockedSentence
 sLockedSound
+Slot has multiple reward levels that reference the same reward level of challenge! %u
 slot_id
+Slot references a goal level of %u, however, some of the challenges that are referenced by this slot only have a goal level of %u
 slots
 slot_token_id
 	Slot: %u, place: %u
@@ -27128,6 +27408,7 @@ source_file
 source_filename
 	"sourcefile" "%s"
 	source_gc
+source_player
 source_player_slot
 source_reference_id
 SourceTV broadcast delay in seconds
@@ -27296,6 +27577,7 @@ SquareUpAreas()
 (src %d)
 srcid
 src/public/tier0/platform.h
+@-srD
 sR@-e
 %sRecent NPC speech:
 %s : removed for '%s'
@@ -27408,6 +27690,7 @@ Stack depth limit hit (%d)
 stack_hash
 stackname
 Standard nav area minimum size
+   %s <target> [action] [value] [delay]
 start
 start: (%.2f,%.2f,%.2f)
 Start: %3.0f
@@ -27443,6 +27726,7 @@ StartGravity
 Starting analysis steps.
 starting_claimed
 Starting Debug History Dump of Category %d
+starting_level
 starting_value
 startLerpTo
 startloop
@@ -27731,6 +28015,7 @@ subscriber
 subscribe_to_id
 subscribe_to_type
 subscription
+sub_slot
 SUB_StartFadeOut
 SUB_StartFadeOutInstant
 SUB_StartShadowFadeIn
@@ -27738,6 +28023,7 @@ SUB_StartShadowFadeOut
 SUB_StopShadowFade
 subtype
 subtype mismatch
+subtypes
 SUB_Vanish
 succeeded_lookups
 success
@@ -27831,6 +28117,7 @@ svc_UpdateStringTable
 svc_VoiceData
 svc_VoiceInit
 sv_debug_player_use
++sv_dev_simulate_gcdown
 sv_disable_querycache
 SV:     %d:  '%s'
 SV:  %d/%s ignored %d
@@ -27853,7 +28140,6 @@ sv_gravity
 sv_hibernate_when_empty
 sv_hibernate_when_empty 0
 sv_hitbox_debug
-sv_ik_enable
 sv_infinite_ammo
 sv_infinite_clips
 SV:  InputActivateSpawnGroup called while request is still pending, ignoring!!!
@@ -27984,6 +28270,7 @@ Switches to navmesh for the specified spawngroup
 Switching local lobby state to %s from %s
 Switching to server state %s from %s based upon the lobby being updated to this state
 %s (%x) spoke %s (%f)
+S@y!:
 Symbol name "
 symbols
 Synchronously spawn an entity group from a list of spawn tables.
@@ -27991,7 +28278,6 @@ Synchronously spawns a single entity from a table
 synctofollowinggesture
 sync_version
 	synergies
-Synergy
 synergy_keyword
 synergy_level
 synergy_replacement
@@ -28000,7 +28286,6 @@ syntax = "$0";
 Syntax Error at offset: %d
 systemloadscale
 System %s failed to init
-@-szD
   szFullScriptFile = %s
 szName
   szReplaysPath = %s
@@ -28017,20 +28302,20 @@ T@8	S
 T( @9
 T(@@9
 T)	@9
+T	@^9
 ?t`9B
 T(9	S
 T*9	S
 T	9	S
 T(9	ShO(
-T(9	SHO(
 T(9	S(O(
 T	9	S	O)
-T`@9T%
 T	9@y
 T	9@y?!"k
 &&^TA;
 T	(A)
 TA8	S
+*	TA9)
 table_flags
 table_id
 table_name
@@ -28092,9 +28377,12 @@ T *CUtlLeanVectorImpl<CUtlLeanVectorBase<ParserResponse, short>, ParserResponse,
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<CAssetModifierCriteria::CriteriaVal_t, 8, short>, CAssetModifierCriteria::CriteriaVal_t, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<CAssetModifierCriteria::CriteriaVal_t, 8, short>, T = CAssetModifierCriteria::CriteriaVal_t, I = short]
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<CFieldPathReconstruct_t, 3, short>, CFieldPathReconstruct_t, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<CFieldPathReconstruct_t, 3, short>, T = CFieldPathReconstruct_t, I = short]
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<CSosPackedFieldData::Entry_t, 3, short>, CSosPackedFieldData::Entry_t, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<CSosPackedFieldData::Entry_t, 3, short>, T = CSosPackedFieldData::Entry_t, I = short]
+T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<unsigned char, 12, short>, unsigned char, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<unsigned char, 12, short>, T = unsigned char, I = short]
+T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<unsigned char, 60, short>, unsigned char, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<unsigned char, 60, short>, T = unsigned char, I = short]
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<unsigned int, 3, short>, unsigned int, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<unsigned int, 3, short>, T = unsigned int, I = short]
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<unsigned int, 9, short>, unsigned int, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<unsigned int, 9, short>, T = unsigned int, I = short]
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<unsigned short, 6, short>, unsigned short, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<unsigned short, 6, short>, T = unsigned short, I = short]
+!	@)Te
 team_
 team_id
 team_image
@@ -28215,19 +28503,22 @@ texturename
 texture_name
 texturescale
 TextureScroll
+T	!F9)
 t	Failed to save unsupported class
 tf_escort_score_rate
 ?TFm,r
 #TF_UnknownStyle
+Th2]9
 Th2@9H
 Th6N9
 Th6N9(
 Th*@)7
+Th.]9
 Th"@9
+Th&]9
 T)H@9I
 Th9	S(M(
 TH9	S(M(
-Th"A9
 THa@9(
 Th&A-j
 Thb@9,
@@ -28236,11 +28527,15 @@ ThB@9
 ThB@9(
 TH B9
 ThB@9h
+ThB^9H
 ThB@9H
 ThbA9
 ThBA9(
 ThBC9
 ThBM9
+ThbU9
+Thbu9h
+ThbU9h
 Thb@y
 ThB@y
 ThC@9
@@ -28285,7 +28580,7 @@ Thf@9
 Thf@9(
 ThF@9h
 ThFC9
-ThFp9
+ThfU9(
 Thf@y
 thick
 TH_IGNORE_MAX_HITPOINTS
@@ -28322,6 +28617,7 @@ ThreadGetCurrentId
 ThreadGetCurrentProcessId
 ThreadingMain
 ThreadInMainThread
+ThreadMultiWaitObjectSetDestroy
 threads
 threads_active
 threads_connected
@@ -28335,9 +28631,7 @@ THROW PRE BLOCKED
 Thrx9
 ThR@y
 ThRy9
-TH;	S
-Th*U9TH
-ThvJ9(
+Th*U9
 ThV@yh
 Th*W9v
 Th~@y
@@ -28346,11 +28640,10 @@ Th:@y
 Th.@y
 Th"@y
 Th*@y
-TH?@yI
 Th.Yy
-ThZt9H
 ThZ@y
 T)I) 
+Ti2\9	
 Ti2@yh
 Ti5KJ(}
 TI9	S	M)
@@ -28376,8 +28669,6 @@ Tif@y?! k
 Ti"H)`
 Tiil8ii*8	)@
 Tijh8
-T(ik8(i*8
-T+ik8+i*8
 T,ik8k
 TIkh8?}
 Ti"L)`.@
@@ -28388,7 +28679,9 @@ Time:   %3.2f
 time_acquired
 time_all_trusted
 time_created
-Timed out waiting %d secs for reply msg %d from GC.  Assuming connection has been disrupted.
+Timed out waiting %d secs for reply msg %u (%s) from GC.  Assuming connection has been disrupted.
+Timed out waiting %d secs for reply msg %u (%s) from GC, connection state is %s
+Timed out waiting %u secs for reply msg %u from GC.  Reply was not marked critical.
 time %f %f
 Time in seconds after player state changes before steady state changes can occur.
 Time in seconds without network state changes until an entity is considered for trickle updates
@@ -28413,7 +28706,6 @@ timeout_particles
 timeout_script_func
 timeout_sound
 TimeoutThink
-timer
 Time reward %s: Criteria is no longer supported
 Time Reward %s: loot_list (%s) does not exist
 Time reward %s: Missing required field. Needs "loot_list"
@@ -28425,9 +28717,6 @@ Time Reward %s: pctChance (%f) must be less than or equal to 1.0
 Time Reward %s: value_max (%d) must be greater than 0
 Time Reward %s: value_max (%d) must be greater than or equal to value_min (%d)
 Time Reward %s: value_min (%d) must be greater than 0
-timer_prepare
-timer_ready
-timer_round_over
 times_fired
 Time spend frozen in observer freeze cam.
 timeSpoken
@@ -28446,8 +28735,9 @@ TiV@y(=
 Tiv@y?!7k
 Ti>@y?
 Ti:@y
+Ti&@y?1
 Tj2@9j
-Tj2E)k
+Tj2F)k:B
 Tj"@9J
 Tj9	S
 t"@-j.A-t+4
@@ -28457,6 +28747,7 @@ TjkA9k'@
 TjV@y_
 Tj*@y
 Tj&@y(
+Tj&@y_1
 t"	)K
 T_k(8
 T_k)8
@@ -28468,6 +28759,7 @@ TKE_x
 Tkf@y
 TKih8
 tkU)`
+Tk&@y
 Tl	@9
 TL!@9
 TL	@9kA
@@ -28541,6 +28833,7 @@ TLK_TELEPORTED
 TLK_WINDMINIGUN
 TM!@9
 TM9@)O	@
+T+)_),mA
 t>M.F9
 TMm@x
 T,m@x
@@ -28662,7 +28955,7 @@ touch_player_or_npc
 touch_player_or_npc_or_physicsprop
 Touch_t
 ".  To use it here, please add the necessary import.
-Tp@9h*B
+Tp@9h.B
 Tp:A-m
 %Tpxa
 T? @q
@@ -28767,6 +29060,7 @@ TS_AT_TOP
 TS_GOING_DOWN
 TS_GOING_UP
 -tU@-
+Tu"]9
 turbo_mode
 Turn an entity index integer to an HScript representing that entity's script instance.
 Turn off achievements.
@@ -28806,6 +29100,8 @@ txn_country_code
 txn_id
 	T@y?
 T/ @y
+T+%@y
+T	}@y?
 T*=@y_!8k
 T	=@y?!!kC
 Type appears to be in generated pool but wasn't 
@@ -28847,6 +29143,7 @@ TYPE_UINT64
 type_value
 t"@yu
 T	,Yy?
+!	@)u
 )?)	@u
 	*u~@
 u^[&`
@@ -28862,7 +29159,6 @@ U7r8Ne
 u9% &
 U9i2V9
 ]u9n5;> )"
-uB09\
 %u[%d]
 uD-@	D-
 udp_connect_ip
@@ -28903,10 +29199,6 @@ UF_FAIL_RANGED
 UF_FAIL_SUMMONED
 UF_SUCCESS
 UG"@]
-	Ug9?
-	Ug9	
-	Ug9i
-*Ug9	Q@
 ui)8	i@9
 uint16
 uint32
@@ -28969,12 +29261,16 @@ Unable to determine buffer encoding.
 Unable to determine compressed message length, likely malformed message
 Unable to establish a connection to the GC to enter matchmaking
 Unable to find a filename to save the selected set to disk.
+Unable to find a loadout slot associated with item %s
 Unable to find base equip region named "%s" for conflicts.
 Unable to find enough dynamic attributes to hold all the attributes of name %s!
 Unable to find existing object for challenge list %s. Something is seriously broken between the parse names and body
 Unable to find footstep entry %s
 Unable to find hero named "%s" for kill eater score type %u.
 Unable to find item definition '%s' for bundle '%s'.
+Unable to find item definition %s referenced by no dupe reward list
+Unable to find item definition %s referenced by virtual item unlocks
+Unable to find item with the name or ID of %s
 Unable to find leveling data block named "%s" for kill eater score type %u.
 Unable to find mapping for flexcontroller %i, settings %p on %i/%s
 Unable to find other equip region named "%s" for conflicts.
@@ -29077,13 +29373,13 @@ unlocked_sound
 unlocked styles
 unlock_field
 unlock_override_quality
-unlocks
+unlock_ranked_progress
 unlocks has duplicate item_def index: %u
 unlock_time
 unlock_value
 unnamed
 Unnamed Bot2 %u
-Unnormalized joint weights encountered (%f): Skinning may not work!
+Unnormalized joint weights encountered (%f): Skinning may not work! (At position %.3f %.3f %.3f)
 unpacked_item_def_indexes
 unpacked_item_ids
 unpacked_state_size
@@ -29094,6 +29390,7 @@ UnpressedForward
 UnpressedMoveLeft
 UnpressedMoveRight
 Unrecognized flag name '%s'
+Unrecognized mode specifier for match reward: %s
 Unrecognized parameter %s in condition for challenge %s
 Unrecognized resource version (%d): %s
 Unrecognized syntax: 
@@ -29130,7 +29427,6 @@ unusual
 unusual_index
 unweighted
 unweighted 
-	*`UP
 ?uP.2
 update_baseline
 UpdateBlocked: Area %d is already blocked with a different team id! This may cause flow bugs.
@@ -29184,6 +29480,7 @@ uptime
 uptodate_subscribed_caches
 ?upU~
 upvotes
+UpvoteSubtype
 uRB9l
 usable
 usable_gc
@@ -29191,7 +29488,7 @@ usable_out_of_game
 usage
 Usage:
 usage_capabilities
-usage: dac_load <filename>
+usage: dac_equip_item <ItemID/Name> [Sub Slot]
 Usage:  ent_setang index pitch yaw <optional roll>
 Usage:  ent_setpos index x y <optional z>
 Usage: global_set <globalname> <state>: Sets the state of the given env_global (0 = OFF, 1 = ON, 2 = DEAD).
@@ -29227,6 +29524,7 @@ USE_COLLISION_BOUNDS_NEVER_VPHYSICS
 useConstantAnimationLayer
 used_by_heroes
   used during construction differ from defaults. Please re-export the map.
+Used to control if replay is recorded or not
 Used to control if replay uploading is enabled
 !Used to create and manage particle effects
 USE_GAME_CODE
@@ -29312,13 +29610,24 @@ UX@)W
 uYLl>
 uz9GxV
 !V @;
+&@)V7
 v8array
 v8callback
 v8object
 v8value
 V8@yCx@9A|@9
-V99JR
+!V9+#
+V9)!4
 v@9iv
+)!V9j#
+!V9J!
+!V9J#
+)!V9J!
++!V9J!
+	!V9J!
+!V9k!
+!V9K#
+,!V9M!
 ?(-\Va3
 VA9hV
 vA9iv
@@ -29546,10 +29855,22 @@ violence_hblood
 violence_hgibs
 virtual bool CLoopModeGame::LoopInit(KeyValues *, ILoopModePrerequisiteRegistry *)
 virtual CEntityInstance *CLoadingSpawnGroup::CreateEntityToSpawn(SpawnGroupHandle_t, const matrix3x4a_t &, int, const CEntityKeyValues *, int)
+virtual_grant_items
 virtual int CNetworkSerializerBindingBuildFilter::GetFieldPriority(ClassIntrospectionHandle_t) const
 VirtualItem
+Virtual item for %s does not have a criteria block
+Virtual item for %s failed to load criteria: %s
 virtual_items
+virtual_item_unlocks
 virtual matrix3x4a_t CEntityLumpRequest::ComputeWorldOrigin(const char *, SpawnGroupHandle_t, IWorld *)
+virtual void CCompressedAnim<bool>::DeswizzleContainer(const DecodeContainer_t *, const CAnimDecodeSwizzle *, void *, const void *, int, const char *) const [T = bool]
+virtual void CCompressedAnim<Color>::DeswizzleContainer(const DecodeContainer_t *, const CAnimDecodeSwizzle *, void *, const void *, int, const char *) const [T = Color]
+virtual void CCompressedAnim<float>::DeswizzleContainer(const DecodeContainer_t *, const CAnimDecodeSwizzle *, void *, const void *, int, const char *) const [T = float]
+virtual void CCompressedAnim<int>::DeswizzleContainer(const DecodeContainer_t *, const CAnimDecodeSwizzle *, void *, const void *, int, const char *) const [T = int]
+virtual void CCompressedAnim<Quaternion>::DeswizzleContainer(const DecodeContainer_t *, const CAnimDecodeSwizzle *, void *, const void *, int, const char *) const [T = Quaternion]
+virtual void CCompressedAnim<Vector2D>::DeswizzleContainer(const DecodeContainer_t *, const CAnimDecodeSwizzle *, void *, const void *, int, const char *) const [T = Vector2D]
+virtual void CCompressedAnim<Vector4D>::DeswizzleContainer(const DecodeContainer_t *, const CAnimDecodeSwizzle *, void *, const void *, int, const char *) const [T = Vector4D]
+virtual void CCompressedAnim<Vector>::DeswizzleContainer(const DecodeContainer_t *, const CAnimDecodeSwizzle *, void *, const void *, int, const char *) const [T = Vector]
 virtual void CGameEntitySystem::Spawn(int, const EntitySpawnInfo_t *)
 virtual void CHLTVDirector::SetHLTVServer(IHLTVServer *)
 virtual void CLagCompensationManager::StartLagCompensation(CBasePlayer *, LagCompensationType, const Vector &, const QAngle &, float)
@@ -29622,6 +29943,7 @@ void CDACEventSchema::Initialize()
 void CDACGameRules::AddPlayerFromLobby(const CSODACServerStaticLobby &, const CSODACServerStaticLobby::Member &)
 void CDACGameRules::LoadItemDefs()
 void CDACGameRules::SaveGame()
+void CDACGameRules::SetGameState(EGameState, ERoundState, int, float)
 void CDACNetwork_Server::StartReplayRecording(const char *)
 void CDACPlayerState::KV3TransferPreSave(CKV3TransferSaveContext *) const
 void CEntitySystem::AddKeyToUnserialize(int, const CEntitySystem::ComponentFieldUnserializerInfo_t &, const char *, const char *, const char *, typedescription_t *, fieldtype_t, uint32, bool)
@@ -29660,13 +29982,15 @@ void CUtlLeanVectorFixedGrowableBase<CAssetModifierCriteria::CriteriaVal_t, 8, s
 void CUtlLeanVectorFixedGrowableBase<CFieldPath::Path_t, 6, short>::EnsureCapacity(int, bool) [T = CFieldPath::Path_t, N = 6, I = short]
 void CUtlLeanVectorFixedGrowableBase<CFieldPathReconstruct_t, 3, short>::EnsureCapacity(int, bool) [T = CFieldPathReconstruct_t, N = 3, I = short]
 void CUtlLeanVectorFixedGrowableBase<CSosPackedFieldData::Entry_t, 3, short>::EnsureCapacity(int, bool) [T = CSosPackedFieldData::Entry_t, N = 3, I = short]
+void CUtlLeanVectorFixedGrowableBase<unsigned char, 12, short>::EnsureCapacity(int, bool) [T = unsigned char, N = 12, I = short]
+void CUtlLeanVectorFixedGrowableBase<unsigned char, 60, short>::EnsureCapacity(int, bool) [T = unsigned char, N = 60, I = short]
 void CUtlLeanVectorFixedGrowableBase<unsigned int, 3, short>::EnsureCapacity(int, bool) [T = unsigned int, N = 3, I = short]
 void CUtlLeanVectorFixedGrowableBase<unsigned int, 9, short>::EnsureCapacity(int, bool) [T = unsigned int, N = 9, I = short]
 void CUtlLeanVectorFixedGrowableBase<unsigned short, 6, short>::EnsureCapacity(int, bool) [T = unsigned short, N = 6, I = short]
 void CWeaponScriptParser::LoadFileWeaponInfoDatabase(const unsigned char *)
 void DataDesc_ConvertTextDataToNewKeyValues(CEntityKeyValues *, KeyValues *, fieldtype_t, EnumIntrospectionHandle_t, bool)
 void DataDescSchemaInit()
-void FillVBForAttribute(uint8 *, CMeshVertexAttribute *, const RenderInputLayoutField_t &, int &, float *, int &, float *, bool, bool, const Vector &)
+void FillVBForAttribute(uint8 *, CMeshVertexAttribute *, const RenderInputLayoutField_t &, int &, float *, int &, float *, bool, bool, const Vector &, int *)
 void GCSDK::CGCClient::ProcessCompressedMsg(GCSDK::IMsgNetPacket *)
 void ParticleSytemMissingWarnOnce(const char *)
 void ReconnectGameInterface(CreateInterfaceFn, const char *, GameInterfaceConnectionMode_t)
@@ -29905,22 +30229,18 @@ V_wcstod
 V_wcstoi64
 v\@-x
 V\@-X
-!Vy	<
 @V@yAZ@y1
 V@yh$
 V@y_! k
 V@y!yv
 v>zlK9T
-!	@)w
 @W?,}
 W)` !
 W3|Uxa
 W6	@@
 W6	4@
 W6`6@
-W6	8@
 w6`F@
-w6	H@
 W6h~@
 W6h>@
 W6h*@
@@ -29946,16 +30266,13 @@ W6ijA9
 W6in@
 w6ir@
 W6ivA9
-W6iz@
 W6iZ@
-W6j:@
 W6jn@
 W6	l@
 W6v6@
 w6vF@
 @@w8p
 W8@yYx@9X|@9
-(W@9:S@9H
 W)A9!
   wait forces async .sav to finish before returning
 waiting for lock
@@ -29983,6 +30300,7 @@ WARNING: BackupPlayer trying to back player into a bad position - client %d
 WARNING: BreakFadeEmissive not supported on this entity (%s %s)
 Warning! Can't specify mins/maxs for point entities! (%s)
 Warning: Deleting orphaned children of %s
+WARNING: Encountered %d total problems with vertex data (first %d shown above)
 **WARNING** Failed to apply item schema, falling back to local copy!
 **WARNING** Failed to apply local copy of item schema. We have no valid schema. Economy will not function.
 WARNING: Failed to load propdata.txt: %s
@@ -30089,7 +30407,6 @@ When playing back, show the directions of look events.
 When selecting an area under nav_edit, allow area marked as blocked.
 When specifying keyvalues to spawn or precache, you must specify a classname!
 When true, print amount and type of all damage received by player to console.
-When we are down to this many players, do mirror matching. If set above 2, we'll form pairs, with any remaining odd player running their own match against any random opponent.
 Whether or not asserts should be collected for sending to the GC
 Whether or not replay recording is enabled
 Whether to spawn the player or the anchor at the info_player_start. (0 = Honor the info_player_start spawnflags, 1 = spawn at the info_player_start position)
@@ -30099,6 +30416,7 @@ Whether to spawn the player or the anchor at the info_player_start. (0 = Honor t
 )", which is not defined. The innermost scope is searched first in name resolution. Consider using a leading '.'(i.e., "(.
 ", which is not imported by "
 Which match clock to use for private matches (casual, competitive, or none)
+!	@)wi
 WIDE_HUMAN_HULL
 width
 WILL TRANSITION
@@ -30178,6 +30496,7 @@ WORLDTEXT_VERTICAL_ALIGN_TOP
     -world -touch: list body pairs (bodies in contact)
 world_units_per_pixel
 )Wq@)
+wr89"
 wrapped_gift
 Wrapper class over g_pDebugOverlay instance
 wrinkler
@@ -30190,14 +30509,13 @@ Writing kdTree with %d triangles
 wrong submessage type
 ?%WV?
 W`@-Y
-W@yH<
 WY@)U	@
 ?Wzm6V"
-)x^	)
 @%@x	
 x]/(@
 X-!("
 \x%02x
+X@)`2G
 X=2v?
 :x&4I,
   x %6.6f  : no samples latched
@@ -30211,17 +30529,15 @@ X6i:@
 x6ij@
 x6iz@
 x6`J@
-X6j>@
 X6jR@
 X75	`7
 x7hJF
-X7hzG
 	X7U	`7
 x7w"@
 x7wB@
 X7xR@
-!	@)xa
-*	XA9)
+	*!x8
+x"[9ub
 XAxis
 XBowBolt
 XboxSystemInterface001
@@ -30233,14 +30549,18 @@ Xd@-Z
 xen_plant*
 xf@)*
 xfF-V+6
+X@)`&G
 ?xG!$fQ
 xi*8*i@9J
+xIQ@9+
 xL9-C
 	xp_earned
+x(Q@9
 ?XRQi
 xT)~)>
 X-V:;
 X\V@%
+)x^	)vB
 x*;XZ
 [xYq|m
 <) @y
@@ -30248,16 +30568,16 @@ x*;XZ
 )	@y?
 @y`&@
 @y;]@
-@y.=@
-@y)=@
+*%@y(
 		@y_
 		@y?
+!	@)Y
+@y)1@
 `>Y1\
 ,y=35
 @y?!4kC
 	y4xl
 @y?!6kC
-*&y6U
 @y8ih
 _@y?!8k#
 ?@y?!8k#
@@ -30265,6 +30585,7 @@ _@y?!8k#
 >@y?!9kC
 "@y*A
 	yA9?
+@y)AEy
 Yaw; 
 YawArrow
 yaw_end
@@ -30272,14 +30593,12 @@ yaw_start
 yawVel
 y+a_x
 YAxis
-Yc09TS
 YcuP.
-@y =D
+@y)!Cy
 @y+}E
+*@yEc
 YellowBlood
-*@yEM
 yes - via input
-	Yg9?
 @yh=@
 @yh"@
 &@yh&
@@ -30289,8 +30608,6 @@ yh6Eyt:
 yh6@yt:
 yh6@yu:
 yh*^9
-yh*]9
-yh*\9
 yh&A9
 @yhb@
 yh*b9
@@ -30307,12 +30624,11 @@ yhF@yuJ
 yhf@yvj
 yh*g9
 @yhJ@
-yhj^9
+yhj`9
+yhj_9
 yhj[9
-yhJ`9
-yhJ[9
 yhJ]9
-yhJa9
+yhJb9
 yhJe9
 yhjh9
 yhJj9
@@ -30376,15 +30692,16 @@ yin@y)
 yiV@y?
 yi^@y)
 yi^@yj
-*%y`j
-@yJ=@
 *	@yJ
+	!_yj1
+@yJ1@
 *!@yJ9
 yJ-A-
 )YJJ)}
 @yjV@
 @yjV@y
 yj&@x
+@yJyG
 =@y_!!k
 @y_!(k
 @y_!(k!
@@ -30401,6 +30718,7 @@ ykZ@yI
 y*M@yJ
 @Y_nA
 Yni5$.
+"	yNt
 @yO	@
 You are #%d in line of %d waiting players.
 You have been waiting for approximately %02d:%02d.
@@ -30410,6 +30728,7 @@ You must be a server admin to use mp_disable_autokick
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 You must now restart to use Grunt-o-matic.
 @y(Q*
+y)Q@9
 ys@){
 @y)SA9
 ?yt#,*
@@ -30419,6 +30738,7 @@ yuB@y
 @yUii
 	(y=up=green, z=forward=blue, x=left=red). 
 (Yuxt
+"@y^V
 ?#YvwS
 YWA)H/@
 @y)/@x
@@ -30432,7 +30752,6 @@ y+-@yk
 Yy?!!k
 YYYY-MM-DD
 YYYY-MM-DD hh:mm:ss
-!	@)"z
 Z0000
 z	?0e`9
 *z0x1
@@ -30455,10 +30774,9 @@ _ZdaPv
 _ZdlPv
 zero_value
 @Zg|_\j
-!	@)Zi
 zi*8*i@9J
 Z|J'@X
-z:K(None)
+z:K{}[]=, 	
 zl@-|
 >zlK9
 zm6Vb
@@ -30489,28 +30807,28 @@ _ZN13CBufferString16RemoveDotSlashesEc
 _ZN13CBufferString4SwapERS_
 _ZN13CBufferString5PurgeEi
 _ZN13CBufferString6ConcatEPKcS1_z
+_ZN13CBufferString6FormatEPKcz
 _ZN13CBufferString6InsertEiPKcib
 _ZN13CBufferString6SetPtrEPciibb
 _ZN13CBufferString8RemoveAtEii
 _ZN13CBufferString9StrFormatEPKcz
-ZN13CDACGameRules12FinishCombatEvE3$_7
 ZN13CDACGameRules12SetGameStateE10EGameState11ERoundStateifE4$_10
 ZN13CDACGameRules13OnCombatEndedEPK15CMsgRoundCombatE3$_2
 ZN13CDACGameRules14ApplyItemBuffsEiPK15CDACPlayerStateE3$_4
 ZN13CDACGameRules14OnUnitSummonedEP8CDAC_NPCS1_E3$_5
 ZN13CDACGameRules16SetGameStatePostE10EGameState11ERoundStateiE4$_11
+ZN13CDACGameRules19ComputePlayerDamageEPK15CDACPlayerStatePS0_iE3$_7
 ZN13CDACGameRules22PlayerOrder_ReRollShopE12PlayerSlot_tjE3$_8
 ZN13CDACGameRules25RunGameStateMachine_IntroEvE3$_0
 ZN13CDACGameRules29RemoveRandomUnitFromDraftPoolEP15CDACPlayerStateP10CUtlVectorIi10CUtlMemoryIiiEEE3$_3
-ZN13CDACUnitState16CreateCombatUnitEPK15CDACPlayerStateiE3$_6
-ZN13CDACUnitState16CreateCombatUnitEPK15CDACPlayerStateiE3$_7
+ZN13CDACUnitState16CreateCombatUnitEPK15CDACPlayerStateiE3$_0
+ZN13CDACUnitState16CreateCombatUnitEPK15CDACPlayerStateiE3$_1
 _ZN13CThreadRWLock11UnlockWriteEv
 _ZN13CThreadRWLock12LockForWriteEv
-ZN15CDACPlayerState19SubstituteSynergiesEvE4$_33
-ZN15CDACPlayerState29PreCalculateEndOfRoundRewardsEiE4$_12
-ZN15CDACPlayerState38GrantPendingCombatRewardForNeutralWaveERK15CUtlVectorFixedIiLm5EEbE4$_11
-ZN15CDACPlayerState7AddItemE11DACItemID_tE3$_8
-ZN15CDACPlayerState7AddItemE11DACItemID_tE3$_9
+ZN15CDACPlayerState29PreCalculateEndOfRoundRewardsEiE3$_6
+ZN15CDACPlayerState38GrantPendingCombatRewardForNeutralWaveERK15CUtlVectorFixedIiLm5EEbE3$_5
+ZN15CDACPlayerState7AddItemE11DACItemID_tE3$_2
+ZN15CDACPlayerState7AddItemE11DACItemID_tE3$_3
 ZN15CNavSpliceBlock11SpliceBlockERK14CNavGenRtBlockR8CNavMeshE4$_33
 ZN15NavBoundarySegs7TestRayER8CSegGridRK8Vector2DS4_fPibE3$_1
 ZN16CNavBoundaryZone38FindConnectedBoundaryEdgesWithinCircleERK13CPathCostBaseR8CNavAreaRK8Vector2DfR10CUtlVectorI16NavBoundarySeg_t10CUtlMemoryIS9_iEEE4$_31
@@ -30570,6 +30888,12 @@ _Znam
 zNear
 zn@)j
 ZNK13CDACGameRules34GetNeutralWaveRewardTiersForPlayerEiPK15CDACPlayerStateE3$_9
+ZNK15CDACPlayerState15GetUnitKeywordsEiRK15CUtlVectorFixedI12EUnitKeywordLm4EEE3$_7
+ZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE3$_9
+ZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_10
+ZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_11
+ZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_12
+ZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_13
 ZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_14
 ZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_15
 ZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_16
@@ -30584,13 +30908,8 @@ ZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_24
 ZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_25
 ZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_26
 ZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_27
-ZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_28
-ZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_29
-ZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_30
-ZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_31
-ZNK15CDACPlayerState22AddGlobalItemModifiersEP8CDAC_NPCE4$_32
-ZNK15CDACPlayerState22CollectPublicGameStateEP21CMsgPublicPlayerStateE4$_10
-ZNK15CDACPlayerState42UpgradeUnitsBasedOnGlobalItemsAndSynergiesER10CUtlVectorIPK13CDACUnitState10CUtlMemoryIS3_iEES7_E4$_13
+ZNK15CDACPlayerState22CollectPublicGameStateEP21CMsgPublicPlayerStateE3$_4
+ZNK15CDACPlayerState42UpgradeUnitsBasedOnGlobalItemsAndSynergiesER10CUtlVectorIPK13CDACUnitState10CUtlMemoryIS3_iEES7_E3$_8
 ZNK19CEconItemDefinition31GetAssetModifiersActiveForStyleEiP10CUtlVectorI20AssetModifierEntry_t10CUtlMemoryIS1_iEEE5$_181
 _ZNKSt11logic_error4whatEv
 _ZNKSt6__ndk16locale9use_facetERNS0_2idE
@@ -30630,4 +30949,5 @@ _ZTVSt12length_error
 Z}uU 
 ?zV-D
 Zx?HuS-
+Z&y;G
 _ZynF

@@ -135,15 +135,17 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
             imageView.setImageResource(GetDrawable[0]);
         }
         imageView.setLayoutParams(new LayoutParams(-1, -1));
-        imageView.setScaleType(ScaleType.CENTER_INSIDE);
+        imageView.setScaleType(ScaleType.CENTER_CROP);
         LinearLayout linearLayout = new LinearLayout(this);
         linearLayout.setOrientation(1);
         linearLayout.setGravity(80);
-        TextView textView = new TextView(this);
-        textView.setTextSize(36.0f);
-        textView.setText(str);
-        textView.setGravity(17);
-        linearLayout.addView(textView);
+        if (str != null) {
+            TextView textView = new TextView(this);
+            textView.setTextSize(36.0f);
+            textView.setText(str);
+            textView.setGravity(17);
+            linearLayout.addView(textView);
+        }
         if (str2 != null) {
             TextView textView2 = new TextView(this);
             textView2.setTextSize(36.0f);
@@ -365,7 +367,13 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
     }
 
     public void onCreate(Bundle bundle) {
+        getWindow().getDecorView().setSystemUiVisibility(6);
+        if (VERSION.SDK_INT >= 28) {
+            getWindow().getAttributes().layoutInDisplayCutoutMode = 1;
+        }
         super.onCreate(bundle);
+        setupCommonUI(null, null);
+        this.m_progressBar = null;
         getWindow().addFlags(128);
         HandleSteamLogin();
     }

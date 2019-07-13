@@ -33,9 +33,11 @@ $@)#@@)
 	*(#:
 	**}`
 	*	}`
+								
  [$0]
 "$0", 
 $0  }
+ +0000
 00000000-0000-0000-0000-000000000000
 00010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899
 0027015
@@ -47,18 +49,21 @@ $0$1 = $2
  !"#$%&'()*+,-./0123
 $0$1$2 $3 = $4
 0123456789abcdef
+0123456789ABCDEF0123456789ABCDEF
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
 [%02d:%02d:%02.3f]: %s
 %02i/%02i/%04i - %02i:%02i:%02i
 %03i:  %s (%s):   
 \%03o
  $(,048<AEIMQUY]aeimquy}
 06`&@
+06`*A
 06h2@
 06jZ@
 07h"@
-		09@
+0@9	4
 /0@9n9
 %0@9R
 	0AyI
@@ -73,12 +78,14 @@ $0  extensions $1 to $2;
     0 = force cl_predict to 0
 0: Force z prepass off. 1: Force on. -1: Don't force
 )0HJI
+0J9b&J9
 $0message $1
 0NETWORK_DISCONNECT_REJECT_SERVERCDKEYAUTHINVALID
 0 - no auto-resize
 0=Off, 1=Surface Wireframe, 2=Transparent Wireframe
 $0oneof $1 {
 $0option $1;
+ 0@P`p
  0: read from NULL
 $0  reserved 
 $0rpc $1($4.$2) returns ($5.$3)
@@ -135,6 +142,8 @@ $0 to $1,
 11IXboxSystem
 %-120s
 %-120s - %s
+1.2.5
+1.2.7
 127.0.0.1
 %128.128s : %8d bits (%8.3f bytes)
 12CCLCMsg_Move
@@ -161,7 +170,6 @@ $0 to $1,
 12IVoiceServer
 12IVoiceTarget
 12IVProfExport
-	139X
 13CBoolProperty
 13CCallbackBase
 13CCallbackImplILi128EE
@@ -240,6 +248,8 @@ $0 to $1,
 13IPrerequisite
 13ISoundService
 13IStatsService
+	149[
+	149Y
 14CAimConstraint
 14CAppSystemDict
 14CBaseAppSystemI10IAppSystemE
@@ -307,6 +317,7 @@ $0 to $1,
 14CHFontProperty
 14CInstantReplay
 14CKeyValueCache
+14CMovieRecorder
 14CMsgIPCAddress
 14CMsgPlayerInfo
 14CMsgServerPeer
@@ -320,9 +331,12 @@ $0 to $1,
 14IEngineService
 14IGameUIService
 14IKeyValueCache
+14IMovieRecorder
 14IRenderHandler
 14IRenderService
 14ISource2Engine
+1.5.13
+1.5.2
 15CBaseConstraint
 15CBaseDemoAction
 15CBaseSpawnGroup
@@ -529,7 +543,6 @@ $0 to $1,
 15IVEngineServer2
 %.15lf
 15SignedPayload_t
-16:47:11
 16CDefaultAccessor
 16CDemoSpawnGroups
 16CEntityComponent
@@ -645,6 +658,8 @@ $0 to $1,
 18IRenderDeviceSetup
 18MenuItemCheckImage
 18ToolTraceRayResult
+-1@9_
+(!19@
 !)19BJRZcks{
 19C2S_CONNECT_Message
 19CBidirMsg_RelayInfo
@@ -668,24 +683,26 @@ $0 to $1,
 19CTier2AppSystemDict
 19CVariantSaveDataOps
 19CVConCommandMessage
+	1+9E
 19IConsoleDisplayFunc
 19IDebugVisualizerMgr
 19IKeyValuesErrorSpew
 19INetworkStringTable
 19IScreenshotCallback
 19ISplitScreenService
+1@9M5
 19NetMessagePacketEnd
 19RestartMapToolEvent
-)1A9?
+!1AQaq
 !>@=1B
 1bQJ1~
-1 CPU, Frequency: %.01f %s,  Features: %s
 1DBlend
     1 = force cl_predict to 1
-	1J9i
-1@)kIE
+1hqx2hrx?
+	1k9)
+1@)k=E
    -1 = let clients set cl_predict to anything
-	1O9I
+	1N9i
 1 = Pause the game when pressing ~ to open the console. CTRL+~ opens the console without pause.
 1.QB!
 1 - resize right
@@ -701,6 +718,7 @@ $0 to $1,
 	2*	@
 	2		@
 200000
+20:05:43
 20CAsyncTrackingConvar
 20CBoundedCvar_CmdRate
 20CCLCMsg_ClientInfo_t
@@ -947,13 +965,16 @@ $0 to $1,
 29IToolGameSimulationDispatcher
 2,	@9L
 29ToolEvent_GetEntityInfoResult
-#2)\A
-2	a#9?
+2	a19H)
+2	a%9
+2	A*9
 2	a@9Ia
+2	A 9s
 2	AA9
 2Ay)	
 2_BONE_IK
 2 - bottom-left
+"2BRbr
 2 .CBidirMsg_RelayInfo.Operation_t
 2).CGameInfo.CDotaGameInfo.CHeroSelectEvent
 2$.CGameInfo.CDotaGameInfo.CPlayerInfo
@@ -961,45 +982,45 @@ $0 to $1,
 2!.CSVCMsg_GameSessionConfiguration
 2#.CSVCMsgList_UserMessages.usermsg_t
  2: DmCrashDump() (xbox360 only)
+%2d: proc group %u:%u, physical ID %d, core ID %d
 %.2f GB
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
 2Gio8
-	2!h(
 2	h(8
 2h"	9
 2h&	9
-2hb:9
-2hB	9
 2hb@9H
 2hBK9H
+2HC>9$
 2hj)8
-2hj)8H!
-2hN	9
-2hR79i
+2hJ	9(
 2hr	9`
+2hR	9
 2h>@y
 	2	i*
 %2i:%02i:%02i
 %2i/%2i on map %s
+2*i(8h*@
 2	i+8h
+2Ii(8h
 2ii*x
 2ij(8
-2ij(8(!
-2ij(83$
 2-ik8k
 2+imx
-2iN	9
+2iR	9
 2+iu8
 2j"	9I
 2j"@9)p
 2?".k
 2?k78
-2_k88
 2?k88
+2_k88C
 2kii8l}C
 2Kkj8k
 2L%@x+
 2 .ProtoFlattenedSerializerField_t"!
+2	q&9"
+2*Q-9
 2 - resize down
 2	u	9
 2Way_0( %s )
@@ -1060,13 +1081,12 @@ $0 to $1,
 38CServerGameSessionManifestPrerequisite
 38CWaitForInitialSpawnGroupsPrerequisite
 38IFlattenedSerializerSpewListenerEngine
-	-39?
 39CBaseClientSpawnGroupCreatePrerequisite
 39CBaseServerSpawnGroupCreatePrerequisite
 39CFlattenedSerializerChangesSpewListener
 39CNetworkServerSpawnGroup_WaitForClients
-	)39m
 3 - bottom-right
+#3CScs
         %3d %3d %3d %3d %3d %3d %3d %3d
 3 - down & right
  [%.3f server clamped to %.3f]
@@ -1093,16 +1113,22 @@ $0 to $1,
 48CBidirMsg_RelayPacket_SignedDestinationAddress_t
 48CNetworkClientSpawnGroup_WaitForChildSpawnGroups
 48CNetworkServerSpawnGroup_WaitForChildSpawnGroups
+	-49|
 4		@9
 49CNetworkClientSpawnGroup_LoadEntitiesPrerequisite
 49CNetworkClientSpawnGroup_LoadSaveGamePrerequisite
 49CNetworkServerSpawnGroup_LoadEntitiesPrerequisite
 49CNetworkServerSpawnGroup_LoadSaveGamePrerequisite
 &4@9R
+	-49z
+4Ayk(
+4AyK(
 4(cB9
 4CLog
 4CPVS
 4Csv_voiceenable
+$4DTdt
+4fie8
  4: force an Assert
 4h3@y
 4H	@7
@@ -1133,6 +1159,7 @@ $0 to $1,
 4I)@yW
 4j&C)k"@
 4k&Aij
+4#L@9B
 4m{kx
 #4#.n<
 4n&	&
@@ -1148,24 +1175,29 @@ $0 to $1,
 %5.1f,
 524288
 %5.2f %5.2f %5.2f %7i %5i %7.2f %7i
-	539O
 53CNetworkClientSpawnGroup_AllocateEntitiesPrerequisite
 53CNetworkClientSpawnGroup_WaitForAssetLoadPrerequisite
 53CNetworkServerSpawnGroup_AllocateEntitiesPrerequisite
 53CNetworkServerSpawnGroup_WaitForAssetLoadPrerequisite
+	549:
+	5498
 54q`	
 55CNetworkClientSpawnGroup_AllocateSpawnGroupPrerequisite
 &'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz
 58jv@
+,5@9_
 )5@9)}
 	5@9)
 59CNetworkClientSpawnGroup_WaitForOwnerSpawnGroupPrerequisite
 59CNetworkServerSpawnGroup_WaitForOwnerSpawnGroupPrerequisite
 *5@9J
+5@9J9
+	5A9i
 	5Ay*
 5CVEfx
 % 5d: % 5d
 %5d:  DispatchEvent( %s )
+%5EUeu
 5h2I9h
 5h6I9
 5h6I9h
@@ -1196,11 +1228,17 @@ $0 to $1,
 60CNetworkClientSpawnGroup_WaitForManualCompletionPrerequisite
 %6.2f %6.2f %6.2f %.3f %.3f %.3f
 64-bit
+ 6`"A
+(6`&A
 6Ay+}E
+6AyK(
+6AyY(
+`6`BD
 6ConVar
 _6	D@
 %6d unresolved strings
 ?6`F@
+&6FVfv
 /6h.@
 /6h"@
 /6h*@
@@ -1247,13 +1285,14 @@ _6hj@
 6hj@9
 6hj@9h
 _6hjA9	
+6hJI9
 6hjI9h
-6hJI9H
 6h>K9
 '6hN@
 6hNA9
 _6hNB9	;
 6hnI9
+6hNI9h
 ?6hr@
 ?6hrA9	
 6hrB9
@@ -1326,7 +1365,9 @@ _6inA9
 76in@
 76v&@
 ~`7(b@
+7cF@yd
 7Dragger
+'7GWgw
 7h	 7h
 7h"@9
 7h&\9h
@@ -1390,13 +1431,18 @@ _6inA9
 8CFunctor
 8CMsgRGBA
 8CUtlSlot
+8dhb8D
+8Dhc8D
 _8f$@8
+&8g|@
 8#GameUI_Disconnect_LocalProblem_HostedServerPrimaryRelay
+_8"h 8
 8h.@9
 (8hn@
 (8hv@
 )8hv@
 *8hv@
+(8HXhx
 @8i/@8J
 @8i/@8X
 @8+ih8
@@ -1426,31 +1472,36 @@ _=8q	)
 _8X,@8
 8x9,7
 _8y,@8
+ @9	$
+--@9_
+-!@9_
+-)@9_
+-%@9_
+-	@9_
 .@9)	
-(!-9@
-(!#9&
 (@@9	
 (@@9		
+(@9	,
 )=@9)}
 )!@9)
 )	@9*
-@@9)!
 @9)!@
 @9)&@
 @9*&@
 @9*	@
 @9+	@
-#)9)*
+$@9	(
 	)@9)
 	)@9*
+	)%9&
 	@9*]
+,@9	0
 @90	@9
 9	0@9i
 @91#@92
 92ji8R
 @92yr
 @9>3@9*
-	939m
 9,5@8K
 	@9*6B9
 @9(	 7
@@ -1473,17 +1524,19 @@ _8y,@8
 9+	@9
 @9/'@90
 . @9/$@90(@918@9.}
-	9 92
-@993E
+@99'E
 9	!@9i
 9	%@9i
  @9	$@9J
 *9@9J
+9@9j9
  @9	$@9JuF
 @9+	@9K
+@9a2@
+	9A9i
 @9-b@
 @9*b@
-	}$9b
+	%;9c
 @9)+C
 @9	}C
 	9C%A
@@ -1502,16 +1555,15 @@ _8y,@8
 9CDemoStop
 9CGameInfo
 9CRegistry
-	)$9d
 9	D@8
 9*E@8?
 @9E-@9U
-		*9;f
-	%$9F
+	9F9i
 @9h*@
 "@9H	
 (@@9H
 @@9H	
+@9`h`8 
 9h.@9
 @9h"A
 9h^A9
@@ -1519,6 +1571,7 @@ _8y,@8
 9h^B9
 9hB@9
 9hbB9
+9hbD9
 @9hF@
 @9hf@9
 9hf@9(
@@ -1544,8 +1597,6 @@ _8y,@8
 9hZB9
 ) @9i
 @9i&@
-	]\9i
- @9I#
 @9I	@
 "@9i"@9
 9IBlackBox
@@ -1566,16 +1617,17 @@ _8y,@8
 @9iR@9h 
 9IRegistry
 9ISequence
+		.9ix
+)9IYiy
 @9j&@
 *=@9J
-	!`9j2
 @9j6B9?
 9j*@9(
 @9J!@9
 @9J#@9*
 @9J	@9&
 @9J9	
-@9JAF
+@9J9F
 @9jF@
 @9jij8
 @9jij8*G!7)
@@ -1595,11 +1647,16 @@ _8y,@8
 9kj(8|
 9Kkj8k
 9Kkj8k}
+	!;9l
 @9L	@9l
 @9L=@9M
 9l"A9
 @9l}C
+!@9M%
+)@9M-
+%@9M)
 9).M)
+-@9M1
 9m-@9
 @9m	@9k
 @9Mim8
@@ -1607,10 +1664,8 @@ _8y,@8
 9mj+8
 @9N9@9Q
 @9n	@9o
-	!$9O
 @9O	@9P
 @9p	@9
-		&9Ps
 @9 q@
  9(QD
 &,@9R
@@ -1621,9 +1676,12 @@ _8y,@8
 @9R1@9D
 9	S)M*
 @9T|@
+	9t9i
 @9T)@9K
 (@@9tB
 @9U|@
+		+9v~
+	}%9V
 @9V%@9W
 @9-{vx
 @9){vxl
@@ -1631,6 +1689,7 @@ _8y,@8
 /9W?OZ
 @9+	@yHA
 @9+	@yHM
+9y*xi
 @9 	@z
 'A)	}	
 #@)`~A
@@ -1642,36 +1701,38 @@ a2@yh2@y
 a8#%D
 _A8qh
 +a@9?
-	a$9!
 	!A9?
 		A9?
 		A9	
+	A`9?
 	A@9)
 	A@9)	
-	A\9?
 a@9+a
 a@9	a
-A<9c9
+	a%9c
+A9)eG
 		A9h
 	A9h&A
-	!a9i
 	a@9i
 ^A9i^
 "A9i"
 *	A9i
+	=A9i
+	A[9i
 	A@9i
+	A\9i
 A9i>@
 	A@9I
-A9)iG
 A9	ii
 	 A9J
 A9|J@
+/A9`*J9
 	A9j"A
-*A@9k
 ,	A9K
 +	A9K
 A9Kik
 +	A9lC
+A-9?Q-9_
 ?A9tJ@
 A-'@A-
 AA9(	
@@ -1686,7 +1747,7 @@ aBI9J
 abort
 abortflag
 Aborting download of %s
-	Ac9)
+aB@ya
 Accel
 accept
 ACCEPT
@@ -1720,7 +1781,6 @@ active_spawngroup_handle
 ACT_NEUTRAL_REF_POSE
     Actual    : 
   Actual   : 
-	ad9	
 -adapter
 Adapter: %d
 AddAllocatedMessage
@@ -1814,6 +1874,7 @@ After selecting and moving a panel Ctrl-z will undo the move.
 after solve err=%f
 After this many seconds without a message from fully connected client, the client is dropped
 After this many seconds without receiving a packet from the server, the client will disconnect itself
+	ag9	
 A game file appears to be missing or corrupted.  In the Steam client go to the game's properties.  In the 'Local Files' tab select 'Verify Integrity of Game Cache' to have Steam double-check the game's installation.
 A-gBA-
 Agg data %d: %p (%d parts, crc 0x%08X)
@@ -1826,7 +1887,7 @@ ai_model_info
 .A)iN@
 AIWalkable
 A	@}J!
-	AJ9i
+)Aj9?
 a.JY .I
 alias
 Alias a command.
@@ -1919,7 +1980,6 @@ Annotation
 ", another member of oneof "
 Anti-aliasing: 
 a numbered reference must not be zero
-	aO9I
 App active: %s, %dms inactive sleep
 .app/Contents/MacOS
 append
@@ -1929,6 +1989,7 @@ append
 application
 Application
 Application "
+Application built with libpng-
 Application .exe "%s"
 ApplicationInfo
 Application transferred too few scanlines
@@ -1950,14 +2011,8 @@ APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 App UI Language: %s, convar %s
  a protocol 
 A protocol message was rejected because it was too big (more than 
-	aQ9i
+A\@Q!`
 A@qA	
-	Ar9_
-	Ar9_		
-	aR9i
-	Ar9_I
-	Ar9j2
-	Ar9J2
 archive
  args were given.  Full format string was: "
 Arithmetic table 0x%02x was not defined
@@ -1966,8 +2021,8 @@ armedFgColor_override
 ArmItem
 Arrow keys slowly move panels, holding shift + arrow will slowly resize it.
 Artist Triangles Rendered: 
-	aS9i
 ascii
+ASCII conversion buffer too small
 *** A special note about internal error number 1007 ***
 AssertFastTest( %s ) end
 AssertFastTest( %s ) start
@@ -1991,7 +2046,7 @@ As the clock offset goes from cl_clock_correction_adjustment_min_offset to this 
 AsyncBeginRenderingViews
 async_serialize
 async_track_all
-	aT9i
+	At9i
 \ at end of pattern
 ATI1N
 ATI2N
@@ -2011,6 +2066,7 @@ Attempted to set non-attribute value %s as if it was an attribute!
 Attempted to switch to unknown loop "%s"!
 Attempting to get the movement settings from model %s, for which movement settings have not been set.  
 Attempting to get the Skeletal Input settings from model %s, which doesn't have any.  
+Attempt to set buffer size beyond max ignored
 attenuation0
 attenuation1
 attenuation2
@@ -2019,7 +2075,6 @@ attrib
 Attribute counts between meshes is inconsistent
 attributes
 Attribute "%s" was defined more than once.
-	aU9i
 audible_mask
 audio
 AudioLanguage
@@ -2045,7 +2100,16 @@ Auto Update - any changes apply instantly.
 auto_wide_tocontents
 [a:%u:%u]
 [A:%u:%u:%u]
-	aV9i
+	Av9_
+	Av9_]
+	Av9_	
+	Av9*3
+	Av9j3
+	Av9J3
+	Av9_Q
+	Av9s3
+	Av9t3
+	Av9T3
    Average frame time: %f ms (%f FPS)
 avg_data_in
 avg_data_out
@@ -2055,10 +2119,16 @@ avg_loss_in
 avg_loss_out
 avg_packets_in
 avg_packets_out
- avi = AVI + AVISOUND
 /AV?O!
+	AW9i
+	AX9i
+A{"xB
 Ax_! k
+	AY9i
+A@yi*@
 A)`z@
+	AZ9i
+AZUy!
 =	)B)
 	*`"B
 B-!(#
@@ -2067,12 +2137,11 @@ B-1HD-
 b1 "%i"
 b2 "%i"
 *-B),5C)_
-B+9(,
 B@9	A
 ^B9h^
 b@9hb
-	!b9i
 b"@9i
+	-B9i
 b@9ib
 bA9hb
 BA9hB
@@ -2158,12 +2227,13 @@ baseline_tick
 BasePhysicsShape
 ./basespawngroup.h
 Base Spring; 
+	"$basetexture"	"%s%c%s"
 battery_saver
 Battery saver mode. 0=off, 1=Medium, 2=High.
 bB9hb
 BB9hB
 BB9hj:8
-bBA9a
+bB@yG
 BC6h compression not supported on this target (windows only).
 BC7 compression not supported on this target (windows only).
 B channel not found!
@@ -2182,6 +2252,7 @@ benchframe <demoname> <frame> <tgafilename>: takes a snapshot of a particular fr
 -benchframes
 ----------Benchmark run on %s------
 BenchmarkService001
+benchmark time,
 -benchnoexit
 -benchnote
    Bench started at %f
@@ -2199,6 +2270,7 @@ BGRA5551
 BGRA8888_LINEAR
 BGRX8888_LINEAR
 B*"h3xA
+"*bh 8
 B)hZA
 b "%i"
 Bidirectional_Messages
@@ -2389,6 +2461,7 @@ burst_randomize
 burst_scale
  but not used.
 ", but only 
+ but running with 
 Button.ArmedTextColor
 Button.BlinkColor
 ButtonClicked
@@ -2396,6 +2469,7 @@ Button.DepressedTextColor
 Button.FocusBorderColor
 ButtonKeyFocusBorder
 ButtonToggled
+&B)v+
 byte COM_BlockSequenceCRCByte(byte *, int, int)
 bytes. 
 Byte size calculation and serialization were inconsistent.  This may indicate a bug in protocol buffers or it may be caused by concurrent modification of 
@@ -2410,10 +2484,13 @@ C-!($
 C-2-@
 C2S_CONNECTION_Message
 C2S_CONNECT_Message
-c3@yb
 C-!8"
 (c@9+
+_C>9(
+C9an@
+C9fj@
  c@9!g@9"
+_C-9_Q-9
 cA9s~
 cable
 cache/DownloadCache.db
@@ -2435,6 +2512,7 @@ CallGlobalScriptFunction
 CallPrivateScriptFunction
 CallScriptFunction
 Call set methods to initialize MapKey.
+Call to NULL write function
 Camera settings can't be changed during a live broadcast.
 C(aN#
 CanBeDefaultButton
@@ -2466,7 +2544,10 @@ Cannot save KV3 text to a non-text buffer!
 Cannot transcode due to multiple use of quantization table %d
 Can only dump stats when active in a level
 Can't 
+Can't add Average filter after starting
 Can't add Keybindings Context for unnamed panels
+Can't add Paeth filter after starting
+Can't add Up filter after starting
 Can't BackUp() after failed Next().
  Can't back up over more bytes than were returned by the last call to Next().
 Can't ban users on a LAN
@@ -2494,6 +2575,7 @@ Can't record on dedicated server.
 Can't retry, no previous SourceTV connection
 can't save, not in a listen server game!
 can't save voice attachment, no data in buffers.
+Can't set both read_data_fn and write_data_fn in the same structure
 Can't SetGeneric( %d ), no precache table [no level loaded?]
 Can't %s, no game running
 Can't %s, no more split screen player slots!
@@ -2504,6 +2586,8 @@ Can't SplitScreenConnect, not connected to server
 Can't %s, slot %d not active
 Can't 'users', not running a server
 Can't write binary data to a text buffer.
+Can't write sCAL (buffer too small)
+Can't write tRNS with an alpha channel
 CAppSystemDict::Connect( %-32s ) %8.3f msec
 CAppSystemDict::Init   ( %-32s ) %8.3f msec
 CAppSystemDict::LoadModuleInPath( %-23s ) %8.3f msec
@@ -2698,6 +2782,7 @@ CFingerChain
 CFingerSource
 CFootDefinition
 CFrameSnapshot CUtlMemoryPoolMT
+c^Fy"
 CGameClientConnectPrerequisite
 CGameEventSystem::SendRebroadcastMessage doesn't support more than %llu clients!
 .CGameInfo"
@@ -2854,6 +2939,7 @@ check "sv_logfile", "sv_logecho"
 CheckTimeouts: Disconnecting client: %s %s, after a netchan-decided timeout of %0.2fs with no acks received
 CheckTimeouts: Disconnecting client: %s %s, after a server-decided timeout of %0.2fs with no acks received
 CHeroSelectEvent
+Chf8%hb8B
 children
 CHitBox
 CHitBoxSet
@@ -2900,6 +2986,15 @@ Choose .wav file
 CHostStateMgr::Activate(%s)
 CHostStateMgr::QueueNewRequest( %s, %u )
 CHostStateMgr::StartNewRequest:  Discarding pending request '%s, %u'
+cHRM Blue X
+cHRM Blue Y
+cHRM Green X
+cHRM Green Y
+cHRM Red X
+cHRM Red Y
+cHRM Red Z
+cHRM White X
+cHRM White Y
 C_INIT_AddVectorToVector
 C_INIT_AgeNoise
 C_INIT_CreateFromCPs
@@ -2956,6 +3051,7 @@ CircularProgressBar.FgColor
    (c)%i : %s
 CL:  
 cL9 3
+c@L@A
 CL_AddPostDataUpdateCall: overflowed u.m_PostDataUpdateCalls
 cl_allowupload
 Clamping split screen users to 1 due to -tools mode.
@@ -3179,6 +3275,7 @@ cl_precacheinfo
 cl_precacheinfo:  not connected
 cl_predict
 cl_predict_after_move
+cl_predict_during_simulation
 cl_predictweapons
 cl_print_consistency_list
 CL:  ProcessPacketEntities: frame window too big (>=%i)
@@ -3220,6 +3317,7 @@ Cluster list cleared
 cl_voice_filter
 CL:  WARNING:  Connection Problem, not requesting uncompressed update due to sv_snapshot_unlimited == true
 CL:  WARNING:  Connection Problem, requesting uncompressed update
+CL:  WARNING! User command buffer overflow (start:%i, current:%i, end:%i), buffer size %d bytes
 CMaterialDrawDescriptor
 cmdline,
 cmd_number
@@ -3320,6 +3418,7 @@ CNetworkStringTableContainer::DirectUpdate
 CNetworkStringTableContainer::WriteUpdateMessage
 CNetworkStringTableItem::SetUserData(%s) tried to write userdata of %d bytes, max size is %d
 CNetworkVarChainer
+cNGy"
 CNonFocusableMenu
 \C not allowed in lookbehind assertion
 cntrl
@@ -3373,6 +3472,7 @@ Component index %d: mismatching sampling ratio %d:%d, %d:%d, %c
 component, you should also report this bug to the author(s)
 composite
 compressed %d -> %d bytes
+Compression window is being reset to 512
 ComputeClientPacks
 computer_guid
 COM_TimestampedLog
@@ -3527,6 +3627,9 @@ CopyNewEntity: GetClassBaseline(%s) failed.
 CopyNewEntity: invalid class index (%d), classname '%s'
 CopyNewEntity: invalid class index (%d), out of range %d
 CopyNewEntity: m_nNewEntity >= MAX_NETWORKABLE_ENTITY_COUNT
+Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.
+Copyright (c) 1996-1997 Andreas Dilger
+Copyright (c) 1998-2012 Glenn Randers-Pehrson
 Copyright (C) 2010, Thomas G. Lane, Guido Vollbeding
 core.stop_all_soundevents
 COrientConstraint
@@ -3806,18 +3909,18 @@ D24FS8
 D24X4S4
 D24X8
 D24X8_SHADOW
-d2@yi
-d3@yi
 *-D),5E)_
 d6@y#
 d6@yc
-d6@yC
 	D@8!
 D@8)%
 	D@8)m
+"D@9%
+D@9_ 
 D9{6@
-	}d9i
 D9i.A
+	!d9j3
+	!d9J3
 D9vJG
 -dac_offline
 %d addons loaded
@@ -3878,14 +3981,13 @@ DefaultRenderSystemOption
 defaultSelectionBG2Color_override
 DefaultSmall
 DefaultSystemUI
- (default = TGAs + .wav file)
+ (default = .tga + .wav file)
 DefaultToVr
 DefaultUnderline
 default_value
 Default value for an enum field must be an identifier.
 DefaultVerySmall
 DEFAULT_WRITE_PATH
-Defer sound recording until next tick when laying off movies.
 DEFINE
 Define Arithmetic Table 0x%02x: 0x%02x
 DEFINE group contains more than one branch
@@ -4018,6 +4120,7 @@ DeviceID
 DevMsg
 %d(%f):  
 %d,%f,%f,%f,%f,%f
+DG-*	
 %d_hidden
     [%d: huff+mtf 
 DIALOG_ASKCONNECT
@@ -4176,6 +4279,7 @@ dx90.vtx
 -dxlevel
 dxlevel,
 DXLevel:  %d
+D@xS0
 DXT1_ONEBITALPHA
 DXT5_NM
 -dxwarp
@@ -4186,10 +4290,11 @@ __dynamic_cast
 dynamic_interaction
 .dynstr
 .dynsym
+-@))=E
 E-!("
-	e`9)
-	E<9Y
-	e$9z7
+	-e9i
+	}e9i
+	e%9Zr
  *Each frame will render %d times*
 echoln
 Echo log information to the console.
@@ -4204,10 +4309,13 @@ editable
 EditMenu
 Edit %s Action
 E-evA
+	EF9i
 effect
   effect %d, color1(%d,%d,%d,%d), color2(%d,%d,%d,%d)
+, efficiency class %lld
   eg: 'demo_goto 6666' or 'demo_gototick 25%%' or 'demo_gototick 42min'
-e.g.:  startmovie testmovie jpg wav jpeg_qality 75
+e.g.: playdemo replays/foo jpg wav framerate 30
+e.g.:  startmovie testmovie jpg wav jpeg_qality 75 framerate 30
 ehandle
 .eh_frame
 .eh_frame_hdr
@@ -4216,6 +4324,8 @@ element
 element_array
 elementid
 <embedded>
+Embedded profile length in iCCP chunk is negative
+Embedded profile length too large in iCCP chunk
 emitFromWorld
 <empty>
 -empty
@@ -4224,6 +4334,7 @@ EmptyAnim
 empty distance tree with lengths
 Empty input file
 Empty JPEG image (DNL not supported)
+Empty language field in iTXt chunk
 "e" must be followed by exponent.
 __emutls_get_address
 E*!N%
@@ -4252,6 +4363,7 @@ encoder
 encoding
 Encountered a circular dependency with library %s!
 Encountered bad enum value "%s" for type %s, entity "%s" field "%s"!
+Encountered bad skin weights, summing to %g (1.0 expected) at position %.3f %.3f %.3f
 Encountered duplicate attribute definition for attribute "%s"!
 Encountered invalid element ID data!
 Encountered malformed keys in call to CallScriptFunction : "%s"!
@@ -4378,7 +4490,6 @@ Enum value in map must define 0 as the first value.
 EnumValueOptions
 EnvironmentMapBuilder_001
 Environment %s value: %s
-	eO9I
 episodic
 EQueryCvarValueStatus
 "eQueryCvarValueStatus_CvarNotFound
@@ -4446,8 +4557,10 @@ Escape key doesn't show game UI
 Escape key pressed.
 ESplitScreenMessageType
 .ESplitScreenMessageType
+	Et9i
 ETC compression not supported on this target .
 ETC_TEXTURES
+	eU9)
 event
 EventAdvanceTick_t
 EventAppShutdown_t
@@ -4598,10 +4711,11 @@ Extension ranges are not allowed in proto3.
 Extensions in proto3 are only allowed for defining options.
 Extensions of MessageSets must be optional messages.
 Extensions to non-lite types can only be declared in non-lite files.  Note that you cannot extend a non-lite type to contain a lite type, but the reverse is allowed.
+extra interior spaces removed from keyword
+extreme cHRM chunk cannot be converted to tristimulus values
 F-!($
 F-%:%
 *-F),5G)_
-		F9i
 fA9hf
 FA9hF
 FA9iF
@@ -4672,6 +4786,7 @@ FCVAR_REPLICATED not valid on ConCommands (%s)
 f %d %d %d
 #f %d %d %d, original mesh: %d %d %d
 fdopen
+,  Features: 
 FeetSettings
 FeModel combiner: Too many ropes (%u) or links (%u): cannot fit sum in uint16
 ferror
@@ -4691,7 +4806,6 @@ fgcolor
 fgetc
 fg_image
 F*%h3x%hgx
-F-H%A
 F*&h%x%hsx
 F*%h'x%hsx
 field
@@ -4868,6 +4982,7 @@ FindResourceByName %s failed
 Finished caching file CRCs for pure server in %d seconds.
 Finished [delta %s]
 FinishedMapLoad
+Finishing movie: %s.* [%d frames @ %f == %f seconds]
 Finish recording bug voice attachment.
 Finish recording demo.
 Fire a fatal error
@@ -4876,6 +4991,8 @@ Fire an entity output
 First argument to SwapFields() (of type "
 First argument to Swap() (of type "
 firstspawngroup
+fixed point overflow ignored
+fixed point overflow in 
 !!!FIXME:  SOSGetOpvarFloat API not ported
 !!!FIXME:  SOSSetOpvarFloat API not ported
 FixupResourceName: Illegal full path passed in ("%s")!
@@ -5017,7 +5134,9 @@ frame_menu
 frame_minimize
 frame_mintosystray
 Frame.OutOfFocusBgColor
+framerate %f 
 Frame rate limiter.  0=no limit.  Does not apply to dedicated server.
+ framerate mmm = sets fixed framerate for recording, default %d
 frame_rightGrip
 -framesamples
 Frame samples:
@@ -5049,6 +5168,8 @@ Freed EMS handle %u
 Freed XMS handle %u
 Free page file: %.2f MiB
 Free physical memory: %.2f MiB
+, Frequency: %.01f %s
+frexp
 friction
 friends_id
 friends_name
@@ -5283,6 +5404,7 @@ gameui_preventescapetoshow
 GameUIService_001
 gameuiservice.cpp
 game_winner
+gamma table being rebuilt
 ------ gathering state
 Gaussian
 GCC: (GNU) 4.9.x 20150123 (prerelease)
@@ -5390,6 +5512,7 @@ G)i*F
 G)j*F
 GK-Tk
 g_Mathlib_GammaToLinearByteTable
+gmtime
 .gnu_debuglink
 .gnu.version
 .gnu.version_r
@@ -5401,7 +5524,6 @@ Goto a direct timestamp of the replay
 g_pEngineServiceMgr is NULL. Display mode information unavailable
   * g_pInputService->HasMouseFocus() = %d
   * g_pInputService->IsAppActive() = %d
-g_pLocalize->AddFile
     g_pMaterialSystem2->FrameUpdate()
 g_pMemAlloc
     g_pMeshSystem->FrameUpdate()
@@ -5456,15 +5578,21 @@ H6hV@
 H6in@
 	*H#7
 h7Ay	
+"*"h 8
+"h`8_
 	*h#8
+?h88a
+ H`8a
 h)8Ay)
+@H`8b
 =h"	9
 h:]9(
 h"@9(
 h"@9)
-h"@9)#
+h"@9)$
 h"@9	
 `H9)}
+?h98a
 h"	9a
 H9a2B
 ;h9h	
@@ -5473,10 +5601,9 @@ h*@9h
 h*@9h/
 h*\9h
 *h"@9H
-*h# 9H
 h.@9H
+h"@9i
 h"@9I
-h"@9I#
 h:	9i>	9
 H9)yx
 h"A9)
@@ -5520,6 +5647,9 @@ hbGyi
 hBH9H
 *hBK9
 hBK9H
+hB.y(5
+*hB.yK
+hB.yM1
 HC333?
 hC@9h
 hcB9(
@@ -5542,21 +5672,32 @@ Hex and octal numbers must be integers.
 *hf@9(
 hf@9(
 hF@9)
-hf@9a	
 hf@9h
 hf@9H
 hF@9h
 hf@9i
 hFB9h
+hfUyh
 HH`8IHa8
 h"H9(
 h*H9h
 h"H9H
 HHh8IHi8
+hi,8(
+hi)8,
+hi*8,
+Hi)8+
+Hi)8D
+hi,8h
+hi)8H
+Hi)8h
+Hi)8h*@
+hI)8i:@
+Hi)8i*@
 Hi)8j
+Hi)8	$W
 =h"I9
 h"I9(
-	HI9(
 -hideconsole
 HideNewControlMenu
 Hides the game UI
@@ -5573,6 +5714,7 @@ Hits/m
 hj58Xn
 hj|8H
 hj)8H'@
+hj8li*8J
 *hJ]9
 h"J9a
 h"J9b^A
@@ -5580,6 +5722,8 @@ h"J9i
 h"J9iR
 hjh8H
 h*@)K
+hk<8|
+hk8)!
 h>K9H 
 h"K9H
 h>K9v2B
@@ -5609,6 +5753,7 @@ HModel
 h>N9H	
 hnG9h
 hnG9i
+hnUyh
 Holding right mouse button down opens a dropdown panel creation menu.
 holdtime
 holdtime "%.3f"
@@ -5653,7 +5798,7 @@ HParticleSystemDefinition
 HPostProcessing
 HRenderTexture
 hrEy)
-hrEy)"
+hrEy	#
 hrEyi
 hrEyu
 hrf9(
@@ -5675,7 +5820,9 @@ Huffman table 0x%02x was not defined
 hurt_me
 hurt_them
 -hushsteam
+h~Uyh
 hv@9)
+hvUyh
 h*@y_
 h*@y	
 h&@y)
@@ -5694,30 +5841,35 @@ i6@yh
 i78w"B
 i7xh6@
 _i(8+
+?i(8"
 	*	i8
 	I*8)
-?i(84
-?i(8a
 i)8a^A
+*i(8B
+?i(8C
 ?i(8h
+?i(8h*@
+i-8h*@
 ?i(8h6
 ?i(8h6P
 i)8hv@
 (i*8i
 i)8i&
+i`8%i`8
+i)8i&W
 ?i(8?i*x?i+
-?i(8U
+i)8j&W
+i*8j&W
+i(8m&W
 ?i(8v
 i*8?y*xJ
-	i 9}
+	i%9*
 i"	9@
-	i"92
-	i$96
 I9`BA
 I9))D
 )I@9I
 i"@9J
-	I<9w9
+	i%9x
 IAppSystem *CAppSystemDict::AddSystem(const char *, const char *, ErrorResponse_t)
 IAppSystem *CAppSystemDict::AddSystem(CreateInterfaceFn, const char *)
 IAppSystem *CAppSystemDict::AddSystem(IAppSystem *, const char *)
@@ -5738,9 +5890,11 @@ ibA9J
 i*B)h
 I-bR@
 iB@y?
+iB.yJ5
+ic8kic8
 iconImage
 iController
-%i CPUs%s, Frequency: %.01f %s, Features: %s
+ (%i core%s)
 I CUtlLinkedList<CClientFrame *, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CClientFrame *, unsigned short>, unsigned short> >::AllocInternal(bool) [T = CClientFrame *, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<CClientFrame *, unsigned short>, unsigned short>]
 I CUtlLinkedList<CCommandBuffer::Command_t, long long, true, long long, CUtlFixedMemory<UtlLinkedListElem_t<CCommandBuffer::Command_t, long long> > >::AllocInternal(bool) [T = CCommandBuffer::Command_t, S = long long, ML = true, I = long long, M = CUtlFixedMemory<UtlLinkedListElem_t<CCommandBuffer::Command_t, long long> >]
 I CUtlLinkedList<CFrameSnapshot *, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CFrameSnapshot *, unsigned short>, unsigned short> >::AllocInternal(bool) [T = CFrameSnapshot *, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<CFrameSnapshot *, unsigned short>, unsigned short>]
@@ -5802,6 +5956,7 @@ I CUtlRBTree<CUtlMap<unsigned long long, CGameResourceManifest::UGCState_t, unsi
 I CUtlRBTree<EntityClassAutoCompleteEntry_t, unsigned short, bool (*)(const EntityClassAutoCompleteEntry_t &, const EntityClassAutoCompleteEntry_t &), CUtlMemory<UtlRBTreeNode_t<EntityClassAutoCompleteEntry_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = EntityClassAutoCompleteEntry_t, I = unsigned short, L = bool (*)(const EntityClassAutoCompleteEntry_t &, const EntityClassAutoCompleteEntry_t &), M = CUtlMemory<UtlRBTreeNode_t<EntityClassAutoCompleteEntry_t, unsigned short>, unsigned short>]
 I CUtlRBTree<vgui::ListPanel::IndexItem_t, int, bool (*)(const vgui::ListPanel::IndexItem_t &, const vgui::ListPanel::IndexItem_t &), CUtlMemory<UtlRBTreeNode_t<vgui::ListPanel::IndexItem_t, int>, int> >::NewNode(const T *) [T = vgui::ListPanel::IndexItem_t, I = int, L = bool (*)(const vgui::ListPanel::IndexItem_t &, const vgui::ListPanel::IndexItem_t &), M = CUtlMemory<UtlRBTreeNode_t<vgui::ListPanel::IndexItem_t, int>, int>]
 I CUtlRBTree<void *, int, bool (*)(void *const &, void *const &), CUtlMemory<UtlRBTreeNode_t<void *, int>, int> >::NewNode(const T *) [T = void *, I = int, L = bool (*)(void *const &, void *const &), M = CUtlMemory<UtlRBTreeNode_t<void *, int>, int>]
+$Id8g
 -ideal_mobile_resolution_low_end_y
 -ideal_mobile_resolution_y
 "id" "elementid" 
@@ -5817,7 +5972,6 @@ ID filter list: %i entry
 ID: %i, "%s" %s, Time %s, %s, In %.1f, Out %.1f.
 Idle (%s)
 i>D-nrA
--@))IE
 i"E)j
 I#E)J
 IEngineClient::RecordDemoCustomData(): Not recording a demo.
@@ -5844,9 +5998,18 @@ If the clock offset is less than this amount (in milliseconds), then no clock co
 If true when log when a query is blocked (can cause very large log files)
 If you have special characters in your install path this may be confusing the game.
 IgnoreScheme
+	"$ignorez" "1"
+Ignoring attempt to set cHRM RGB triangle with zero area
+Ignoring attempt to set negative chromaticity value
+Ignoring attempt to write 16-bit bKGD chunk when bit_depth is 8
+Ignoring attempt to write 16-bit tRNS chunk when bit_depth is 8
+Ignoring attempt to write bKGD chunk out-of-range for bit_depth
+Ignoring attempt to write tRNS chunk out-of-range for bit_depth
 Ignoring convar '%s' in file '%s'.  Value set by configuration system
+Ignoring invalid time value
 Ignoring line in steam.inf: '%s'
 Ignoring P2PSessionRequest_t from %s
+Ignoring request to write a PLTE chunk in grayscale PNG
 Ignoring unknown convar '%s' in file '%s'
 Ignoring unknown field steam.inf: '%s'
 )Ih8?
@@ -5864,6 +6027,8 @@ I-HYh
 	*ii,
 	*ii(8
 	*ii(8 
+ii*8,
+ii*8(
 Ii)8)
 ii8Ha'7
 ii8Hb'6
@@ -5871,6 +6036,15 @@ ii8Hc
 ii8Hd
 ii8He
 ii8Hf
+*ii/8i
+ii*8i
+Ii`8k
+ii(8	$W
+Ii(8	$W
+ii8_y+x
+Ii8_y+x
+ii8_y+xi
+Ii8_y+xi
 Iii8*
 %i %i %i %i
 %i.%i.%i.%i
@@ -5895,9 +6069,9 @@ i"@)j
 Ij8)	@
 ij8)ij8*
 *ij8+ik8,il8-im8.in8/io80ip8(ih8
+)Ij8j
 ij8nio8
 -ij8nkj8J
-	iJ9I
 i"J9j
 ijj8?
 ijw8*
@@ -5930,8 +6104,12 @@ i"L)zn@
 im8Jy
 imageAlignment
 imagecolor
+Image height exceeds user limit in IHDR
+Image height is zero in IHDR
 imageSelected
 Image too wide for this implementation
+Image width exceeds user limit in IHDR
+Image width is zero in IHDR
 IMECandidatesMenu
 imemanager
 impact
@@ -5957,6 +6135,7 @@ inconsistent NEWLINE options
 Inconsistent progression sequence for component %d coefficient %d
 incorrect data check
 incorrect header check
+incorrect png_set_filler call ignored
 incremental
 Incrementally compacts the heap
 Increment specified convar value.
@@ -5970,14 +6149,13 @@ Index out-of-bounds (field is empty).
 Indicates whether or not the tv should use delta frames for storage of intermediate frames. This takes more CPU but significantly less memory.
 INETSUPPORT_001
 infested
-Infinite Joint Weights encountered: Skinning will not work!
+Infinite Joint Weights encountered: Skinning will not work! (At position %.3f %.3f %.3f)
 infinity
 infocus_bgcolor_override
 Info: OS Paged Pool Memory restored - currently %d pages free (%d Kb) of total %d pages (%d Kb total).
 info_player_start
 inG9h
 ingameui
-iNI9h
 .init_array
       initial group %d, [%d .. %d], has %d syms (%4.1f%%)
 InitializeEntityDLLFields
@@ -6036,6 +6214,14 @@ instant_replay_togglepause
 Insufficient arguments to blackbox_record. Usage: blackbox_record <type> <message>
 insufficient memory
 Insufficient memory (case %d)
+Insufficient memory for hIST chunk data
+Insufficient memory for pCAL parameter
+Insufficient memory for pCAL params
+Insufficient memory for pCAL purpose
+Insufficient memory for pCAL units
+Insufficient memory to process iCCP chunk
+Insufficient memory to process iCCP profile
+Insufficient memory to store text
 #int#
 int_array
 int CDemoPlayer::GetNetCmd(bf_read &) const
@@ -6066,10 +6252,12 @@ Intentionally vague touch behavior for %p
 interfaces.cpp
 internal
 internal error: code overflow
+internal error in png_XYZ_from_xy
 internal error: overran compiling workspace
 internal error: previously-checked referenced subpattern not found
 internal error: unexpected repeat
 Internal inconsistency between the layout format and attribute is detected.
+internal write transform logic error
 Interpolate entities on the client.
 Interpreting non ascii codepoint %d.
 Interval_per_tick %f out of range [%f to %f]
@@ -6077,15 +6265,29 @@ Interval time in seconds to write full updates to demo.
 In the Build Mode Dialog Window:
 In the Context Panel:
 Invalidate
+Invalid background palette index
 Invalid binding:  Tried to GetConfigValueOrConvarValue from ConCommand( %s )
+Invalid bit depth for grayscale+alpha image
+Invalid bit depth for grayscale image
+Invalid bit depth for paletted image
+Invalid bit depth for RGBA image
+Invalid bit depth for RGB image
+Invalid bit depth in IHDR
 invalid bit length repeat
 Invalid blackbox type: %s
 invalid block type
 invalid_bone
 Invalid challenge packet.
+Invalid cHRM blue point
+Invalid cHRM green point
+Invalid cHRM red point
+Invalid cHRM white point
 Invalid color quantization mode change
+Invalid color type/bit depth combination in IHDR
+Invalid color type in IHDR
 Invalid component ID %d in SOS
 Invalid compressed buffer size
+Invalid compression type specified
 invalid condition (?(0)
 Invalid control characters encountered in text.
 Invalid conversion : CString '%s' to bool
@@ -6099,22 +6301,37 @@ invalid escape sequence in character class
 Invalid escape sequence in string literal.
 <INVALID EXPRESSION>
 Invalid file descriptor data passed to EncodedDescriptorDatabase::Add().
+Invalid filter method in IHDR
+Invalid filter type specified
 Invalid float number: 
 Invalid format for element ID encountered for attribute "%s"
+Invalid format for pCAL parameter
 Invalid header
 invalid_hitbox
+Invalid IHDR data
+Invalid image color type specified
+Invalid image height in IHDR
+Invalid image width in IHDR
 Invalid input layout field format %d for joint indices
+Invalid interlace type specified
 Invalid JPEG file structure: missing SOS marker
 Invalid JPEG file structure: SOS before SOF
 Invalid JPEG file structure: two SOF markers
 Invalid JPEG file structure: two SOI markers
 Invalid key for map field.
+invalid keyword character 0x@1
 invalid literal/length code
 Invalid member name '%s'
 Invalid memory pool code %d
 Invalid message set extension.
+Invalid number of colors in palette
+Invalid number of histogram entries specified
+Invalid number of transparent colors specified
+Invalid palette length
+Invalid palette size, hIST allocation skipped
 Invalid parent region %s specified for region %s in panel %s
 Invalid Path
+Invalid pCAL equation type
 Invalid progressive parameters at scan script entry %d
 Invalid progressive parameters Ss=%d Se=%d Ah=%d Al=%d
 Invalid proto descriptor for file "
@@ -6123,13 +6340,21 @@ Invalid public dependency index.
 Invalid request for mesh %d in model %s with %d entry remapping start table
 Invalid request for mesh %d in model %s with no remapping table
 Invalid request for mesh %d in model %s with no remapping table starts
+Invalid sBIT depth specified
+Invalid sCAL height
+Invalid sCAL height ignored
+Invalid sCAL unit
+Invalid sCAL width
+Invalid sCAL width ignored
 Invalid scan script at entry %d
 Invalid search path specified for 'game_language'. Search path '%s' does not contain '%s'
 Invalid SOS parameters for sequential JPEG
+Invalid sRGB rendering intent specified
 Invalid Steam key size.
 invalid stored block lengths
 Invalid strings::Substitute() format string: "
 Invalid symbol name: 
+Invalid time specified for tIME chunk
 invalid UTF-8 string
 Invalid value for boolean field "
 Invalid weak dependency index.
@@ -6139,6 +6364,9 @@ Invalid wire type for CPPTYPE_INT64:
 Invalid wire type for CPPTYPE_MESSAGE: 
 Invalid wire type for CPPTYPE_UINT32: 
 Invalid wire type for CPPTYPE_UINT64: 
+Invalid zlib compression method or flags in IDAT
+Invalid zlib compression method or flags in non-IDAT chunk
+invalid zlib state
 Inverse Multi Quadratic
 Invert Axes; 
 invert_orientation
@@ -6150,17 +6378,18 @@ ipaddress
 IP filter list: empty
 IP filter list: %i entries
 IP filter list: %i entry
- (%i physical)
 %i pred reason %s -- finish
 %i pred reason %s -- start
 IQuickTime001
 ir8Jic
 ir8kic
+irC9h
 *irD9?
 IRecipientFilter
  %i refs
 irEya
 iRFy?
+iRI9h
    %i : %s
 %i %s : %.3f min
 isactive
@@ -6250,27 +6479,33 @@ IyixJylx+
 j.])	
 @ @-J
 j2	)k
+j38eY
 j48	C
+j48h"
 j48t^@
 j4xH;@
-j58h$
+j58H%
 j58hf@9(
 j58"l
 j68($
-j68(#
-j68H#
 j68u"@
-j68x!
+j68X"
 j7Ayh3Ay)	
+j88B5
 j)8hjj
 j(8(Z@
+	!j9	
+ J9?@
+$J9!|
 J!@9_
 J!@9#
 J9afA
+ J9F|
+J	9hB	9
 j	@9I
-	-J9i
 J!@9jB
 J9tB	
+ja8B(
 J]A9_
 jA9hj
 JA9iJ
@@ -6280,8 +6515,10 @@ java_multiple_files
 java_outer_classname
 java_package
 java_string_check_utf8
+jb8B(
 JB9hJ
 jbK9i
+jB.y+-
 J-cb@
 J-dj@
 j"E))
@@ -6298,11 +6535,15 @@ JFIF extension marker: type 0x%02x, length %u
 jh8?)
 jh8J=
 jh8?q
+ji)8,
+ji)8h
+ji)8i&W
 ji8J}
 ji8jj)8)
 	*JID
 JIGGLE_BONE
 jiggle bone %u
+jIi8-
 JIIJJ}
 Jikx_
 Jilxk
@@ -6311,15 +6552,19 @@ jj(8(
 jj)8v
 jjh8J
 j!JJ+
+jjj8l
 j!JJK
 !JJK|
+jjl8k
+jjm8l
 Jl8k	@
+Jm8iy,x
 JNI_OnLoad
 JNI_OnUnload
 joinsession
-Joint Indices (%d) Out Of Range for SINT16: Skinning will not work ! 
-Joint Indices (%d) Out Of Range for UINT10: Skinning will not work ! 
-Joint Indices (%d) Out Of Range for UINT8: Skinning will not work ! 
+Joint Indices (%d) Out Of Range for SINT16: Skinning will not work!
+Joint Indices (%d) Out Of Range for UINT10: Skinning will not work!
+Joint Indices (%d) Out Of Range for UINT8: Skinning will not work!
 JO@xj
 joy_autoaimdampen
 joy_axisr_deadzone
@@ -6340,9 +6585,9 @@ JPEG datastream contains no image
 JPEGMEM
 JPEG parameter struct mismatch: library thinks size is %u, caller expects %u
 jpeg_quality
- jpeg_quality nnn = set jpeq quality to nnn (range 1 to 100), default %d
+ jpeg_quality nnn = sets jpeq quality to nnn (range 1 to 100), default %d
 jpeg_screenshot
- jpg/jpeg = JPegs
+ jpg/jpeg = outputs .jpg files
 J	@Q*
 jr82"
 jr822
@@ -6361,7 +6606,7 @@ jstype is only allowed on int64, uint64, sint64, fixed64 or sfixed64 fields.
 js_value
 @@J	t
 /JU7OB
-Jul  3 2019
+Jul 11 2019
 Jumping to random tick %d (%.2f min)
 Jumping to %s
 just happens to cross-check the results of huge numbers of
@@ -6370,10 +6615,12 @@ jv8?)
 jx?!7k
 j+x`j
 j`x j`x?
+jx`xI}	
 #@)JY@
 J	@y_!5k
 JYix*$
 	*jz-
+*:JZjz
 *?".k
 	k	}@
 	K)}{
@@ -6384,12 +6631,14 @@ K1@yk
 *k2@y
 ?k58D
 K5@yk
-k68yQ
-k78	4
+?k68i
+k7834
+k7886
+?k78a/
+k78:F
 ?k78h
-*?k78<O
+*?k78kQ
 ?k)8(
-k:8<$
 _k88?
 ?k88w
 (k;8H
@@ -6402,7 +6651,9 @@ K	A9lC
 kaJJk[k
 Ka@yk
 KA@yk
+kB.y)-
 _!(kC
+Kci 8
 K	D9L
 KD$@xc
 KEY_0
@@ -6554,6 +6805,7 @@ KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s
 KeyValues::RecursiveSaveToFile: TODO, missing code for TYPE_COLOR.
 KeyValues::SaveToFile: couldn't open file "%s" in path "%s".
 KEY_W
+keyword length must be 1 - 79 characters
 KEY_X
 KEY_Y
 KEY_Z
@@ -6561,20 +6813,28 @@ KEY_Z
 	kh8?
 )kh8?q
 	kh8?u
+Khi 8
 *Khi8Lhj8
-ki8kAF
+Ki,8*
+Ki)8i*@
+ki8k9F
 Kick a player by name.
 Kick a player by userid or uniqueid, with a message.
 kickid
 kickid_hltv
+Kih 8
 *Kii8)
 kir8)ic
 Ki@yk
 KI@yk
 K)@)j
 kj,8A
+Kj8kzK
 kji8v
+kjk8l
++;K[k{
 _#;kL
+Kli 8	
 km8N}
 KMeansQuantization
 Km@x+
@@ -6584,6 +6844,7 @@ kn1V?OK
 :(knN
 Known by handlers: 
 Known Peer State "%s"
+	*kQ4
 Kq@yk
 KQ@yk
 K)T9J!P9j
@@ -6597,7 +6858,9 @@ kv 0x%p Release refcount == %d
 kv3format_manager.cpp
 KV3 load transfer failed: %s
 KV Conditional Evaluation Error
+	k!x,
 K%@xl}
+kx`xj}
 k	@y)
 K=@yk
 K-@yk
@@ -6615,6 +6878,7 @@ L %02i/%02i/%04i - %02i:%02i:%02i: %s
 l4d360uischeme
 l	@9,
 "L9`2
+	}L9i
 l	@9J
 la@9L	
 L	A9mC
@@ -6661,12 +6925,14 @@ L=cl_clock_correction
 %ld%c
 leading_comments
 leading_detached_comments
+leading spaces removed from keyword
 leagueid
 LeavePVS
 LE_BGRA8888
 LE_BGRX8888
 left4dead2
 Length; 
+length exceeds PNG maxima
   let me know, and, ideally, save a copy of the file causing the
 levelload
 levelname
@@ -6677,6 +6943,7 @@ Li(8,a_8k
 Li(8,A_8k
 Li(8,q_8k
 Li(8,Q_8k
+	LI9(
 libandroid.so
 libc++_shared.so
 libc.so
@@ -6685,6 +6952,10 @@ libengine2.so
 libengine2.so.dbg
 liblog.so
 libm.so
+libpng error: %s
+ libpng version 1.5.13 - September 27, 2012
+libpng version 1.5.13 - September 27, 2012
+libpng warning: %s
 libsteam_api.so
 libsteamclient.so
 libsteamnetworkingsockets.so
@@ -6756,6 +7027,7 @@ ListViewItem
 ListViewItemSelected
 ListViewPanel
 LITE_RUNTIME
+,<L\l|
  %llu aggs, %s total data
 LMBxl
 Lm@x,
@@ -6844,6 +7116,7 @@ logs/%s/%04i
 log:  unknown parameter %s, 'on' and 'off' are valid
 Log when a tick is recieved
 Log when the tick delta >= this
+longjmp
 LookAtList
 lookbehind assertion is not fixed length
 LookInLabel
@@ -6889,15 +7162,10 @@ LrwcE
 lseek
 %ls [wstring, len = %d]
 [L:%u:%u]
-	m`9)
-	m 9\
-	M 9f
-	m 9g
-!m9i*
-	m`9i
-	m[9i
+	M49b
+	M49d
+	m%90
 m%@9i)
-	m$9P
 m	A9j"
 Machine
 machine_convars
@@ -6987,6 +7255,7 @@ MaterialParamTexture_t
 MaterialParamVector_t
 MaterialResourceData_t
 materials
+/materials/
 materials/console/background%02d%s.vmat
 materials/console_background.vmat
 materials/console_background_vr.vmat
@@ -7036,6 +7305,7 @@ max_clients
     Max committed memory: %u KB out of %d KB
 max_entries
  max. %f
+, max frequency %.01f %s
 maxHullVertices
 Maximum allowable entity delta size over unreliable delivery.
 Maximum amount of minutes to save history (0 is unlimited).
@@ -7057,7 +7327,6 @@ max_spawngroup_creationsequence
 maxSpringTension
 Max( %s, %s )
 maxVerticesPerHull
-	mb9i
 m_bApplyMinForce
 m_bAutoHideButtons
 m_bbox
@@ -7130,7 +7399,6 @@ m_ControlRigData
 m_cRenderColor
 m_CScriptComponent
 m_CullDataIndex
-	md9i
 m_DefaultSolverSettings
 MDefaultString
 m_DefaultTargetSettings
@@ -7139,6 +7407,7 @@ m_drawCalls
 m_drawCullData
 m_dynamicParams
 m_dynamicTextureParams
+	me9)
 media/l4d2_background%02d.bik
 m_eHand
 m_elems
@@ -7152,7 +7421,10 @@ mem_incremental_compact
 mem_incremental_compact_rate
 m_Emitters
 memmove
+memory
+Memory allocation failed while processing sCAL
 memory_check_limit
+) memory error
 memory_free_mb
 Memory load: %u%%
 memory reads/writes, and so acts (unintendedly) as a stress
@@ -7364,15 +7636,14 @@ Missing field: FileDescriptorProto.name.
 Missing file '%s'
 Missing Huffman code table entry
 Missing name.
-Missing or unknown recording types, must specify one or both of 'avi' or 'raw'
 missing serializer on %s
 missing terminating ] for character class
 m_iszPrivateVScripts
 m_iTitleTextInsetXOverride
 m_iTitleTextInsetYOverride
 mi,x!
-	mJ9I
 )MJJ }
+mjk8o
 m_JointConstraintPairs
 m_JointName
 m_Joints
@@ -7380,6 +7651,7 @@ mkdir
 @mk%@y
 m_lightCookie
 m_LoopState
+-=M]m}
 m_material
 m_materialName
 m_metacarpalBoneName
@@ -7429,6 +7701,7 @@ m_nFingerIndex
 m_nFirstMultipleOverride_BackwardCompat
 m_nFlags
 m_nFogLightingMode
+MNG features are not allowed in a PNG datastream
 m_nGroupId
 m_nHitBoxIndex
 m_nIncrement
@@ -7550,6 +7823,8 @@ MoveScrollBar
 MoveScrollBarDirect
 Moves the camera position + orientation to the named entity
 Moves the camera position + orientation to the specified position
+?Movie
+movie/%04d_%02d_%02d_%02d_%02d_%02d/%s
 m_parentName
 m_PathIndex
 m_pAttributes
@@ -7625,6 +7900,7 @@ m_tipParentBoneName
 m_toeBoneName
 MTreatUnknownEnumeratorsAsZero
 m_Type
+	mU9I
 m_uint
 m_uint64
 MultiFilesSelected
@@ -7670,12 +7946,15 @@ m_vMaxBounds
 m_vMinBounds
 m_vOffset
 m_vSplayHingeAxis
+mvSylj
 m_vTintColor
 m_vTipOffset
 m_vUpLS
 m_vUpVector
+	Mw9i
 m_worldGroupId
 m_wristBones
+	mz9i
 "N(  
 #N)	}	
 N}[ .=
@@ -7766,6 +8045,7 @@ N6snappy6SourceE
 (_N8H
 !n9[ .
 [ n9+a
+	-N9u
 ,.n*a
 n	A9-
 nA9hn
@@ -8004,6 +8284,7 @@ NJ[ .
 [ n{[ n
 n{[ n
 nn&*!
+.>N^n~
 ** No active loop **
        (no arguments stops current blinking convar)
 No binding for '%s', defautl key already bound to '%s'
@@ -8013,8 +8294,6 @@ No Buffer
 -no_bundle_module
 [NoChan]
 No client connection
-nocodecprompt
- [nocodecprompt]
 No conversion from %s to bool now
 No conversion from %s to float now
 No conversion from %s to int now
@@ -8048,12 +8327,14 @@ No free conversion of %s variant to Vector right now
 -nogamestats
 -nohltv
 No HLTV server running
+No IDATs written into file
 <no inputsystem>
 NoKeyBindings
 No know mod!
 (no landmark)
 -nolod
 nomapvalidation
+No memory for sPLT palettes
 -nominidumps
 No mod specified! This is necessary to run!
 no more split screen slots!
@@ -8135,6 +8416,7 @@ No valid format conversion from '%s' to '%s'
 -no_vrconfig
 -novsync
 -nowindow
+[no zlib message]
 nQ(aN
 nr(aN
 nRZ n
@@ -8200,9 +8482,11 @@ NV_RAWZ
 NWay( 
 nX(aNB?
 [ n!X n
+@nyj<
 [ n)Y n
 nY nk)a
 NyoxrIq8q
+@ny	$W
 !O1*a
 o1V?OS
 o2@9M!@
@@ -8220,12 +8504,6 @@ O6ifA9
 O6iFA9
 o6jb@
 o6jN@
-	-O9I
-	!O9I
-	)O9I
-	]O9I
-	%O9I
-		O9I
 O	@9P5@9S
 )o))a
 objc_class_prefix
@@ -8277,6 +8555,9 @@ OnFolderUp
 OnHostSetTime
 OnLevelLoadingServerInfo
 Online %s, FPS %.1f, Version %i (%s)
+Only compression method 8 is supported by PNG
+Only compression windows >= 256 supported by PNG
+Only compression windows <= 32k supported by PNG
 Only DXT1/DXT5 online texture compression supported.
 Only HTTP downloads are supported, ignoring %s
 Only %i string tables allowed, can't create'%s'
@@ -8308,7 +8589,9 @@ OnStatusFinished for %s
 OnStoppedPlayback
 OnTextMessageFinished
 OnTickBoundary
+/?O_o
 )oO*a
+O!OJ)
 open_asset
 Open a VConsole subtool.
 OpenButton
@@ -8357,6 +8640,11 @@ outgoing
 'out_location' must not be NULL
 out of bounds - LOS needs to pass through outside space, hint this in the level!
 outoffocus_bgcolor_override
+Out of Memory
+Out of memory while procesing keyword
+Out of memory while processing sPLT chunk
+Out of memory while processing unknown chunk
+Out of range gamma value ignored
 outputcolor
 output_color_back_buffer
 output_color_for_post
@@ -8394,6 +8682,7 @@ p6jf@
 p6jR@
 p7v	P7
 P7x"@
+	%P9I
 "pA3QuW
 package
 package $0;
@@ -8693,7 +8982,7 @@ PlayCDTrackStart
 PlayCDTrackStop
 PlayCommands
 +playdemo
-playdemo <demoname> : plays a demo file
+playdemo <demoname> [
 playdemo %s
 Play demos in demo sequence.
 play_endcap
@@ -8723,6 +9012,7 @@ Playing Demo (%s)
 Playing '%s'
 Play next demo in sequence.
 playrecapvid
+- plays a demo file
 playsound
 playsound 
 playsound command
@@ -8737,6 +9027,10 @@ Please report it to me at: jseward@acm.org.  If this happened
 PlusFour
 PlusThree
 PlusTwo
+ png = outputs .png files
+png_screenshot
+png_set_gAMA
+png_write_info was never called before png_write_row
 POINT
 point0
 point1
@@ -8777,6 +9071,7 @@ posttoserver
 pos-Vector
 posxyz
 PosXYZ
+Potential overflow in png_zalloc()
   power-on test, and may find failures that the BIOS doesn't.
 P*Pi+x
 PrecacheDecal called with no server!
@@ -8834,7 +9129,7 @@ ProcessingCompleted: %d/%d skipping zero payload packet
 ProcessingCompleted: %d/%d storing %d bytes/%d bits
 Processing Split Screen connection packet.
 Process Memory:
-processpacketentities executed command %d
+:    processpacketentities: server executed through command %d
 Process priority: %s, main thread priority: %s
 ProcessServerInfo: Failed to initialize the game client!
 ProcessServerInfo: Failed to parse the game session manifest!
@@ -8961,12 +9256,10 @@ PVS cluster %d
 pvs.cpp
 PVS origin %s
 py_generic_services
-	q$9+
-	q 99
-	q 9B
-	q"9e
-	Q 9E
-	q[9i
+	Q49A
+	Q49C
+!q9	+
+	q%9b
 *Q@9j
 Q(aNf(!
 qangle
@@ -8975,7 +9268,6 @@ qangle_array
 QAngle-world
 q(	AzK
 QB)5}@
-	qb9)
 	QB9i
 QE@yk
 *	qG9)
@@ -8984,14 +9276,21 @@ q?h(8
 qhB	9
 qhnG9)
 Qi"A)`
+qiB.y
+qiB.yk
+q+ij8J
 qiy9x9
-	qJ9i
 qJT-s
 @QK,	
 qknG9
 q	kw8A
+Q/!OJ
+	QQ9I
         qsort [0x%x, 0x%x]   done %d   this %d
+	qSy)
+*qSyJ
 quality
+quality %d 
 quality software.  Thanks.  Julian Seward, 30 December 2001.
 Quantization table 0x%02x was not defined
 Quantizing to %d colors
@@ -9017,12 +9316,15 @@ Qu@yk
 qWiw8
 Q-@yk
 Q]@yk
+Q?Y(xhv@
 R11_EAC
 R16F_EXPAND
 r1 "%i"
 !~r(2
 r2 "%i"
 R32_UINT
+R6hv8
+R6hx8
 R8G8B8A8_ETC2_EAC
 R8G8B8_ETC2
 *R)8yv
@@ -9050,8 +9352,8 @@ r_aspectratio
 Rate at which to attempt internal heap compaction
 Rate multiplier when connected via hltv
 RATINGBOARD
+ raw = outputs .tga + .wav file (same as default)
 rawpkt
- raw = TGAs + .wav file, same as default
 RB9hR
 r_camerapos
 R channel not found!
@@ -9348,7 +9650,6 @@ resourcesystem
 ResourceSystem013
 resource_type
 RESOURCE_TYPE_POST_PROCESSING
-resource/valve_%language%.txt
 resource/vgui_%language%.txt
 Resource\warning.wav
 resourefiles
@@ -9402,6 +9703,8 @@ RGBA32323232F
 RGBA8888_LINEAR
 RGBX555
 RGBX8888
+R?h)8
+R#h&8
 R	h(8
 R	h(8	
 r	hi8I
@@ -9417,6 +9720,7 @@ Rhkh8h
 RHkh8h
 Rhk xV
 r "%i"
+R*i(8h*@
 R*i(8h6
 RichText
 RichText.BgColor
@@ -9428,6 +9732,7 @@ RichText.SelectedTextColor
 RichText.TextColor
 RichText: textfile parameter '%s' not found.
 Rigid; 
+R(ih8
 r	ii8
 riji8
 Riji8
@@ -9439,10 +9744,11 @@ RIO_NO_ROUTE
 RIO_REJECT_RELAY
 RIO_REQUEST_RELAY
 RIO_WILL_RELAY
+Rjjh8hB
 rJMJJ
 RJ	* &v
-R?k78
-R?k)8|
+R?k78+Z
+R?k)8
 R(k)8
 R(kh8
 R(kh8h
@@ -9489,7 +9795,7 @@ r_stereo_eye_separation
 r_stereo_mode_anaglyph
 r_stereo_mode_crossed
 r_stereo_mode_parallel
-Rtj(8"
+Rtj(8L
 r_toggleviewportsize
 r_translucent
 rt+rld
@@ -9516,6 +9822,7 @@ r_wireframe
 r_worldlod
 r@yhr
 r_zprepass_normals
+RZqxeHq81
             %s
         %s
     %s
@@ -9536,6 +9843,8 @@ r_zprepass_normals
 %s: %0.3fMB
 %s%03i.dem
 %s%03i.log
+%s%04d.jpg
+%s%04d.png
 %s_%04d%s%s
 %s%04d.tga
 %s0x%08X %s = "%s"
@@ -9555,7 +9864,6 @@ S3: Duplicate client connection: UserID: %x SteamID %s
 S3,	S48
 S)5K*j
 %s = %6d (%6d:%6d)
-	%s9)
 %s. Ack, Net Buffer overflowed.
 %s:  adding %d:'%s' (%d total) userdata %d
 -safe_mode
@@ -9596,6 +9904,7 @@ SAVE/%s.sav
 Save the ban list to banned_ip.cfg.
 saving %d samples to %s
 %s| Base Class%s: %d
+Sb.J9e
 %s, bool showScrollBar, bool allowMouseWheel, bool overrideChildPanelWidth
 %s, bool textHidden, bool editable, bool unicode, bool NumericInputOnly, int maxchars
 %s Build, service overhead %5f ms
@@ -9657,6 +9966,7 @@ ScreenFadeStop
 Screenshot Failed! Missing expected context!
 Screenshot Failed! Missing expected JPEG pixels!
 Screenshot Failed! Missing expected pixels!
+Screenshot Failed! Missing expected PNG pixels!
 Screenshot Failure: Could not save screenshot to: %s
 Screenshot Failure: Unexpected empty screenshot buffer.
 screenshot.jpg
@@ -9973,6 +10283,7 @@ SetView
 %s %f
 %s %f %d %d
 %s| Fields:
+%s <filename>
 %s <filename> [path id]: execute an async script and wait for it to finish
 %s <filename> [path id]: execute a script file
 %s <filename> [path id]: execute a script file over time
@@ -9996,6 +10307,7 @@ Shared memory space %s (%i) still has %i references.
 sharpStartAngle
 	"%s" has %d known peers:
 	"%s" has no known peers.
+SHi)8h
 shift
 Shift
 "shift"	"1"
@@ -10048,6 +10360,9 @@ Shutdown request received when no network service exists.
 Shutdown request received while server is hibernating. Shutting down right now
 Shutdown: "%s"
 SI-	*{
+S`i#8
+S i#8
+S@i#8
 %s_%i.dem
 SIGINT received
 	signature
@@ -10077,7 +10392,6 @@ SimpleEngineLoop
 ?SimpleEngineLoopService_001
 simplified
 Simulated
-simulation
 singleplayer
 Sin( %s )
 sint32
@@ -10094,6 +10408,7 @@ Sitting idle in the main menu for longer than 5 seconds with -error_if_idle or -
 size0
 size1
 Sj)	3)
+S j)8K
 SJIl8kYyx
 SJ	@Q
 SkeletonBoneBounds_t
@@ -10125,6 +10440,7 @@ SkyLightingSamples.vtex
 SkyMapRenderTarget.vtex
 sky_name
 %s/L%03i_%03i_%03i_%03i_%i_%04i%02i%02i%02i%02i_
+S)l6@
 Slams viewport size to a specified value.
 Sleep
 Sleeping
@@ -10142,10 +10458,10 @@ slots
 %s ManifestUpdate
 %s <millis>: pause an async script
 Smoothing not supported with nonstandard sampling ratios
+, SMT/HT index %d
 SMYpxlIl8
 -snap
 Snapshots broadcasted per second
-?snd_moviefix
 snd_mute_losefocus
 %s:  Note:  synchronously loading client spawn groups should not be creating work!!!
 %s:  Not sending unload group to client '%s' due to not being sent
@@ -10193,7 +10509,7 @@ SoundService_001
 sounds/ui/menu_focus.wav
 soundsystem
 SoundSystem001
-SoundSystem/DisableSteamAudio
+SoundSystem/SteamAudioEnabled
 Source1 Client
 Source1 VGUI Escape
 Source1 VGUI No Escape
@@ -10300,7 +10616,6 @@ speaker_entity
 Specified too high an adapter number on the command line (%d/%d)!
 Specifies the number of seconds worth of frames that the tv replay system should keep in memory. Increasing this greatly increases the amount of memory consumed by the TV system
 Specifies which voice codec DLL to use in a game. Set to the name of the DLL without the extension.
-  Specify nocodecprompt to use the default raw output.
 spec_mode
 spec_next
 spec_prev
@@ -10431,6 +10746,7 @@ ss_remove %d
 ss_voice_hearpartner
 ss_waitingforgamesessionmanifest
 %s:  SyncUnloadSpawnGroup shutdown/destroy...
+=	St$
 __stack_chk_fail
 Stack depth limit hit (%d)
 stackstats_dump 
@@ -10446,11 +10762,10 @@ StackTools_VerifyLoadedModuleMappings
 start
 StartChangeLevel unable to save game from %s -> %s (landmark %s)
 startdemos
-Started recording movie, frames will record after console is cleared...
+Started recording movie: %s.*: %s
 Started:  "%s"
 Starting SourceTV server listening on port %d.
 startmovie
-startmovie <filename>
 Start Of Frame 0x%02x: width=%u, height=%u, components=%d
 Start of Image
 Start Of Scan: %d components
@@ -10539,7 +10854,6 @@ Steam headless module not loaded
 Steam headless re-logged in OK
 Steam headless reset embedded client token
 Steam headless using stored credential info
-Steam headless using stored Steam credential info
 STEAMHTTP_INTERFACE_VERSION003
 steamid
 steam_id
@@ -10583,6 +10897,7 @@ SteamUtils009
 STEAMVIDEO_INTERFACE_V002
 SteamVR FAILED to initialize!
 SteamVR initialization begin...
+%stemp%d.tga
 -stereo
 StereoToScreenBlue
 StereoToScreenLeft
@@ -10600,7 +10915,6 @@ Stop looping demos (current demo will complete).
 stop:  not recording a demo.
 stop_on_seq_change
 StopPanelAnimations
-Stopped recording movie...
 StopPlayback
 Stop recording movie frames.
 Stops SourceTV demo recording.
@@ -10617,8 +10931,10 @@ strchr
 strcmp
 strcmp( pInfo->m_pCPPClassname, pDataDesc->dataClassName ) == 0
 strcpy
+stream
 stream 
 stream end
+) stream error
 stream error
 strerror
 STRING
@@ -10656,7 +10972,6 @@ style
 "%s":%u
 %s:%u
 %s.%u
-=	Su$
 sub%dx%d.tga
 subFocus
 submrg%dx%d.tga
@@ -10899,17 +11214,48 @@ System/lock
 System Memory:
 system/network
 System/network
+T#0@9"0
+T$0@9C
+T#0@9D4
 T+2B9J
+T#4@9"4
+T#4@9B8
+T#4@9D
 T	4@y?!"k
 T	-@8?
+T`8@9)
+T 8@9
+T#8@9"8
+T$8@9C 
 t8HY@
 *T)8yv
 T(@@9
 T)	@9
 T*	@9*
+T# @9" 
+T#,@9",
+T#(@9"(
+T#$@9"$
+T`9@9@9
+T@9@9)9@9
+T$ @9C
+T$(@9C
+T$@@9C$
+T$`@9C4
+T#<@9D 
+T# @9D$
+T#,@9D
+T#(@9D,
+T#$@9D
+T#$@9D(
+T#,@9D0
+T#\@9D0
+	=t9i
+	]t9i
 T*9	S
 T	/A)
 T	a@9
+Tab@9
 table %32.32s  %5i
 table_flags
 table_id
@@ -10920,8 +11266,10 @@ tab position
 tabPosition
 Tags:
 Tags string is too long: %s
+Ta>J9?
 Take a cube map snapshot at the current camera location
 Take a jpeg screenshot: jpeg_screenshot [filename] [quality 1-100].
+Take a .png screenshot: png_screenshot [filename]
 Take a screenshot: screenshot [filename]
 Takes a snapshot of a particular frame in a time demo.
 tangent
@@ -10934,6 +11282,7 @@ Tc"A)`
 Tc"B)`
 Tc"C)`
 Tc"D)`
+TcF@yE
 T *CUtlLeanVectorImpl<CUtlLeanVectorBase<CEntityKeyValues::KeyValueInfo_t, short>, CEntityKeyValues::KeyValueInfo_t, short>::AddToTailGetPtr() [B = CUtlLeanVectorBase<CEntityKeyValues::KeyValueInfo_t, short>, T = CEntityKeyValues::KeyValueInfo_t, I = short]
 T *CUtlLeanVectorImpl<CUtlLeanVectorBase<CInputService::AsyncConfigFile_t, short>, CInputService::AsyncConfigFile_t, short>::AddToTailGetPtr() [B = CUtlLeanVectorBase<CInputService::AsyncConfigFile_t, short>, T = CInputService::AsyncConfigFile_t, I = short]
 T *CUtlLeanVectorImpl<CUtlLeanVectorBase<ConVarSnapshot_t__ *, short>, ConVarSnapshot_t__ *, short>::AddToTailGetPtr() [B = CUtlLeanVectorBase<ConVarSnapshot_t__ *, short>, T = ConVarSnapshot_t__ *, I = short]
@@ -10941,6 +11290,11 @@ T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<CFieldPathReconstruct_t, 3
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<unsigned int, 3, short>, unsigned int, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<unsigned int, 3, short>, T = unsigned int, I = short]
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<unsigned int, 9, short>, unsigned int, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<unsigned int, 9, short>, T = unsigned int, I = short]
 T('D))
+Td2J9b&J9e
+T#D@9D$
+T#d@9D4
+TDh`8%
+TDId8g
 Tearing off console log, will continue using suffix '%s'
 Telling clients to connect (%d maxclients)
 temp/bugreport.wav
@@ -10972,6 +11326,8 @@ textalignment
 textAlignment
 TextChanged
 TextClicked
+text compression mode is out of range
+Text compression window is being reset to 512
 #TextEntry_AppendText
 TextEntry.BgColor
 #TextEntry_ConversionMode
@@ -11025,8 +11381,9 @@ Texture data resident:  %s (panorama_rt %s; panorama_tex %s)
 textureid
 Texture memory:  %s
 texturescale
+Tf"J9`.J9g
 tf_medigun_autoheal
- tga = TGAs
+ tga = outputs .tga files
 TGAWriter: Failed to serialize screenshot pixels (%d x %d, %s).
 Th&@)
 Th2@9
@@ -11034,9 +11391,14 @@ Th2@y
 Th6h9H
 Th6@y
 Th6@yi
+T?h 8
+T#h)8)
 Th"@9
 Th"\9
+T#h@9B8
+T$H@9C(
 THa@9(
+T#hb8
 Th"B9
 ThB@9
 ThB@9h
@@ -11049,6 +11411,8 @@ ThbK9h
 Thb@y
 ThC@9
 ThC@9h
+T'hd8
+T#hd8c
 the actual field type (for enums T should be the generated enum 
 The device appears to have %s of memory.
 The entity instance is too large for type %s! Make more components referenced!
@@ -11141,6 +11505,7 @@ Tib@9
 Ti"B9i
 TiBGy
 TiBGy?
+TiBny
 	tickcount
 Tick %i
 tick_interval
@@ -11157,6 +11522,7 @@ TiF@y?
 TiF@y?! k
 T(ih8
 Ti"H9
+T.ij8M
 T,ij8mkj8J
 Tij@9
 Ti"J9j
@@ -11166,6 +11532,7 @@ tileHorizontally
 tileImage
 tileVertically
 TILT_TWIST
+T im8
 Time %.3f
 time_array
 time_asserts
@@ -11189,6 +11556,7 @@ timestamp_%s
 TimeUseClock
 TimeUseTick
 TinG9a
+T`ip8
 TiR@9h
 TiRFy?
 titlebarbgcolor_override
@@ -11208,16 +11576,32 @@ TizEyJ
 Tj2@9j
 Tj2B9)
 Tj6@y_! k
-tj(8%
+tj(8O
+T`"J9
 Tj"@9J
 TjkA9k'@
 Tj*@y
+TK1@9
+Tk4@9
+TK5@9
 TK-@8
+Tk$@9
+TK-@9
+TK!@9
+TK)@9
+TK%@9
+TK	@9
 TK	@9)A
 Tkf@y
 Tkxixlxjx
 Tkxkxlxlx
+Tl0@9
+Tl @9
+Tl,@9
+Tl(@9	 
 Tl	@9
+T#l@9B8
+T#L@9D(
 TL	@9kA
 T	L@y?!!k
 TLYpx
@@ -11226,6 +11610,13 @@ Tn}A9
 tn)U?O
 TNykx
 /!T?O
+To1@9
+To5@9
+To-@9
+To!@9
+To)@9
+To%@9
+To	@9
 !T!OBT!O!
 -toconsole
 TODO demo file name
@@ -11281,6 +11672,7 @@ ToolTipBorder
 tooltiptext
 Tooltip.TextColor
 ToolTraceRayResult
+Too many bytes for PNG signature
 Too many color components: %d, max %d
 too many length or distance symbols
 too many named subpatterns (maximum 10000)
@@ -11312,10 +11704,14 @@ toupper
 towlower
 towupper
 T?OZW?O
+T$P@9C,
+T p@9"t@9"p
 Tp^@y
 TPYqx1~
 TPYrxR~
 T? @q
+TQ*@9
+TR"@9
 Trace rays and check vis from the current camera
 TraceRayServerToolEvent
 track
@@ -11326,8 +11722,10 @@ TrackNumber
 Traffic from %s was blocked for exceeding rate limits
 trailing_comments
 Trailing Data
+trailing spaces removed from keyword
 Transition Return (%s [loading save game :%s])
 Transition Return (%s [returning to :%s])
+	"$translucent" "1"
 TranslucentDebugDraw
 Transmit all entities (not only director view)
 Transparent wireframe overlay for draw calls with triangle count higher than specified number
@@ -11358,12 +11756,16 @@ Tried to register the same input value %s twice!
 tried to sprint to a non-client
 Tried to write clouded file, but we don't have Steam interfaces?  Probably bug with order of initialization, or trying to run without steam
 Triggers the client to perform a consistency check
+tRNS chunk has out-of-range samples for bit_depth
 ...<truncated>...
 Truncated data
+Truncating profile to actual length in iCCP chunk
   Try a memory-test program.  I have used Memtest86
 Try changing the number of bones per vertex or the skin weighting, and send Sergiy a repro mesh with this error description.
 Trying to concatenate meshes with different numbers of attributes!
 Trying to concatenate meshes with incompatible attribute sets!
+T t@9
+T#T@9D,
 Turn on demo debug spew.
 turn_rate
 [T:%u:%u]
@@ -11421,6 +11823,7 @@ Two Bone
 Two KV3 format GUIDs with the same human-friendly name ('%s')
 two named subpatterns have the same name
 t.!X .
+T$X@9C0
 T+=@y
 Type appears to be in generated pool but wasn't 
 	TYPE_BOOL
@@ -11451,13 +11854,17 @@ TYPE_UINT64
 Typing Enter in any text field applies changes.
 T"zrx
 \U%08x
+	U49 
+	U49"
 u64( %lld = 0x%llX )
 )U7O{
-	u 9!
-	U 9$
+	u%9A
+	}U9I
+%u CPU%s
 %u[%d]
 udp/ip   : %s:%i
 udp_port
+	ue9)
 -uidev
 UILanguage
 uint16
@@ -11466,6 +11873,7 @@ uint64_array
 uint8
 uint8_array
 UISubLanguage
+	uL9i
 %u MB
 Unable to capture %s virtual memory information
 Unable to capture virtual memory information
@@ -11516,6 +11924,7 @@ unbind: no inputsystem for bindings
 -unbufferedio
 uncompressed_sample_offset
 uncompressed_size
+undefined
 Under memory limit. Limit is %llu but current usage is %llu.
 Unexpected end of file
 Unexpected end of string.
@@ -11549,10 +11958,19 @@ Unknown APP0 marker (not JFIF), length %u
 Unknown APP14 marker (not Adobe), length %u
 Unknown command or convar '%s'!
 unknown compression method
+Unknown compression method in IHDR
+Unknown compression type @1
+Unknown compression type in iCCP chunk
+Unknown custom filter method
 Unknown enumeration value of "
 UNKNOWN_ENUM_VALUE_%s_%d
+) unknown error
 unknown error
+Unknown filter heuristic method
+Unknown filter method in IHDR
+Unknown freer parameter in png_data_freer
 <unknown hash %u>
+Unknown interlace method in IHDR
 Unknown loop type encountered in loop "%s"!
 Unknown message in DemoSpawnGroups %d.
 Unknown modifier in whitelist file: %s.
@@ -11561,18 +11979,20 @@ unknown option bit(s) set
 Unknown Path Class
 unknown POSIX class name
 unknown property name after \P or \p
+Unknown row filter for method 0
 Unknown token: %s
 unknown_variant_type
 Unknown variety of crash. You have now failed to crash. I hope you're happy.
 Unknown vtune option.
 unknown zip result code
+"UnlitGeneric"
 unlocked
 unmatched parentheses
 UnmountAddon: Failed to find %s search path.
 Unmounting addon '%s'
 unnamed
 Unnamed%i
-Unnormalized joint weights encountered (%f): Skinning may not work!
+Unnormalized joint weights encountered (%f): Skinning may not work! (At position %.3f %.3f %.3f)
 unpause
 unpause bug
 unpause bug;unpause
@@ -11585,11 +12005,14 @@ unrecognized character after (? or (?-
 unrecognized character after (?P
 unrecognized character follows \
 Unrecognized component IDs %d %d %d, assuming YCbCr
+Unrecognized equation type for pCAL chunk
 Unrecognized flag name '%s'
 Unrecognized option '%s'
 Unrecognized resource version (%d): %s
 Unrecognized syntax: 
 Unrecognized type '%d'
+Unrecognized unit type for oFFs chunk
+Unrecognized unit type for pHYs chunk
 UnregisterHibernationListener
 [Unreliable payload]
 unreserved
@@ -11714,12 +12137,13 @@ UsesVGui
 usetitlesafe
 Using 10-bit blend indices: are you sure they are supproted on the target hardware?
 Using 16-bit blend indices
-Using AVI will bring up a dialog for choosing the codec, which may not show if you are running the engine in fullscreen mode!
+	Ut9i
 UTF8)
 UTF-8 data when 
 utlbuffer.cpp
 utlstring.cpp
 utlstringtoken
+	uU9I
 %u:%u:%u
 [U:%u:%u]
 [U:%u:%u:%u]
@@ -11740,6 +12164,7 @@ Validation stalled
 Valid Content Absolute Path
 Valid External Path
 Valid Game Absolute Path
+Valid palette required for paletted images
 Valid Relative Path
   valid  : %s
 val_long
@@ -11845,8 +12270,11 @@ VerifyTest() vanilla result = Fail
 VerifyTest() vanilla result = Pass
 version
 VersionDate
+) version error
 version  : %s/%d %d %s %s%s
 VersionTime
+	"$vertexalpha" "1"
+	"$vertexcolor" "1"
 VertexColorPos_t
 VertexPaintBlendParams
 VertexPaintBlendParams1
@@ -11907,18 +12335,21 @@ VGUI_System010
 #vgui_TimeLeftSecond
 #vgui_TimeLeftSeconds
 vgui_togglepanel
+*vha8
+VI(8V
 VIDEO PLAYBACK NOT SUPPORTED, probably okay for dedicated server
 vidmemstats.txt
 vidmem total: %0.3fMB
 Vid:  %s, render at %i x %i, display at %i x %i
 Vid:  %s, render at %i x %i, display at %i x %i, refresh rate %.2fHz (%uHz desktop)
+Vik8j
 Vil8jil8)y
 violence_ablood
 violence_agibs
 violence_hblood
 violence_hgibs
 Virtual array controller messed up
-virtual bool CDemoPlayer::StartPlayback(const char *, bool)
+virtual bool CDemoPlayer::StartPlayback(const char *, bool, KeyValues *)
 virtual bool CEngineGameUI::Connect(CreateInterfaceFn)
 virtual bool CNetworkGameServerBase::GetClassBaseline(ServerClass *, SerializedEntityHandle_t *)
 virtual bool CServerSideClientBase::SendSignonData()
@@ -12057,7 +12488,7 @@ void CUtlLeanVectorFixedGrowableBase<unsigned int, 3, short>::EnsureCapacity(int
 void CUtlLeanVectorFixedGrowableBase<unsigned int, 9, short>::EnsureCapacity(int, bool) [T = unsigned int, N = 9, I = short]
 void CVisRender::LoadLOS()
 void DataDesc_ConvertTextDataToNewKeyValues(CEntityKeyValues *, KeyValues *, fieldtype_t, EnumIntrospectionHandle_t, bool)
-void FillVBForAttribute(uint8 *, CMeshVertexAttribute *, const RenderInputLayoutField_t &, int &, float *, int &, float *, bool, bool, const Vector &)
+void FillVBForAttribute(uint8 *, CMeshVertexAttribute *, const RenderInputLayoutField_t &, int &, float *, int &, float *, bool, bool, const Vector &, int *)
 void FloatBitMap_t::ConvertGammaToLinear(FBMGammaType_t)
 void force_fatal_error(const CCommandContext &, const CCommand &)
 void Host_BuildConVarUpdateMessage(CMsg_CVars *, int, bool)
@@ -12185,6 +12616,7 @@ VScriptManager010
 VScriptUsage
 V_SetErrno
 _V_SetExtension
+V_setjmp
 V_sincosf
 V_sinf
 VSInputSignature
@@ -12219,6 +12651,7 @@ V_strupper_fast
 V_swscanf
 -vsync
 V_tanf
+vtex_dll
 vtune
 vtune "pause" | "resume" : Suspend or resume VTune's sampling.
 VTune sampling paused.
@@ -12268,6 +12701,7 @@ Warning:  Can't add NULL string to table %s
 WARNING: Command buffer full... ignoring!
 WARNING: Command too long... ignoring!
  *WARNING - DEBUG BINARIES.*
+WARNING: Encountered %d total problems with vertex data (first %d shown above)
 WARNING: Failed to find startup tool '%s'
 WARNING: Failed to load startup asset '%s'
 WARNING:  FlushEntityPacket, %s
@@ -12300,7 +12734,7 @@ was kicked and banned by IP
  was modified concurrently during serialization.
 " was not found or had errors.
 Watchdog timeout exceeded, exiting
- wav = Write .wav audio file
+ wav = write .wav file
 -wb	-y
 wcschr
 wcscmp
@@ -12331,6 +12765,7 @@ Whitelist: from_steam not compatible with other modifiers (used on %s).
 Wider eye separation results in greater depth perception
 _widescreen
 width,
+Width is too large for libpng to process pixels
   will clear '%s'
 WIN32
 WindowDisabledBgColor
@@ -12360,6 +12795,7 @@ WriteDeltaEntities
 WriteEnterPVS: GetEntServerClass failed for ent %d.
 WriteEnterPVS: missing instance baseline for '%s'.
 WriteEnterPVS: missing pFromData for '%s'.
+Write Error
 Write failed on temporary file --- out of disk space?
 writeid
 writeip
@@ -12376,10 +12812,13 @@ Writing configuration for slot %d
 Writing kdTree with %d triangles
 Writing memory stats to file memstats.txt
 Writing %s.
+Writing zero-length unknown chunk
 Wrong JPEG library version: library is %d, caller expects %d
 wrong submessage type
+Wrote palette index exceeding num_palette
 Wrote vis errors to %s
   (www.memtest86.com).  At the time of writing it is free (GPLd).
+"Wyk	
 \x%02x
 X360_DST16
 X360_DST24
@@ -12388,6 +12827,7 @@ x6hz@
 x6ij@
 x6iz@
 X75	`7
+X7 	`7 
 @x_!7k
 x7wB@
 X80ijx
@@ -12400,6 +12840,9 @@ XboxSystemInterface001
 xdigit
 x "%f"
 xf@)*
+xfx	|	
+xixC}
+xjx	|	
 @x_!:k
 ,xkxT
 xMSAA
@@ -12409,32 +12852,42 @@ X nBX n
 /!X ncT?O6(!
 X nF*a
 X nN(a
+xpxI}	
 xuidReserve
+:X"xA
+XYZ values out of representable range
 (%@y-	@
 ))@y,
+@.y	$
+@.y	%
 @y`&@
 	%@y?
-@y)1Gy
 	y4xl
+@.y)5
 @y_!5k
 Y80ijx
 #Y80ijx
 Y8Qikx
 #Y8Qikx
-	y`9i
-	Y|9I
+	y%9{
 @y?!9k
 y+	@9km
+@y)aHy
 Yaw; 
 yaw_end
 yaw_start
+@.yb$
+@.yb4
 YB)5}@
+@.yB8
 Y@    block %d: crc = 0x%8x, combined CRC = 0x%8x, size = %d
 +%@yBy|
+@yc|	
+#@@yc
 y#	@=c
 yC	@}c
-	yd9i
 @y+}E
+	ye9i
 y "%f"
 #@yh^
 yh2@y
@@ -12456,6 +12909,7 @@ yh.@y
 yh"@y
 )%@yi*
 @yi2@
+@.yI5
 yi6@y?
 yif@9
 yiFGy?
@@ -12485,17 +12939,19 @@ Y ng*a
 yNs*!
 Y nsZ n
 Y n)Y nJY nkY n
-	YO9I
  (You)
 You have been kicked and banned %s by the server.
 you_hear_them
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 Your current chat group is "%s"
 @yO	@y
+y(qSy
+	yU9I
 yuJ	9(a@
 @y	WDy
 Y`x($
 (y{x7
+_Y)xhv@
 @y"y|
 y*	@y+
 y	,@y)
@@ -12519,6 +12975,8 @@ ZA9iZ
 ZB9hZ
 _ZdaPv
 _ZdlPv
+zero length keyword
+Zero length keyword
 Zih8hih8)y
 Zip-bug: an internal error during flation
 Zip-bug: internal initialisation not completed
@@ -12527,6 +12985,9 @@ Zip-bug: tried to change mind, but not allowed
 Zip-bug: trying to seek the unseekable
 Zipfile is corrupt or not a zipfile
 Z_!(k
+zlib error
+zlib failed to initialize compressor (
+zlib failed to reset compressor: @1(@2): @3
 _ZN10CVProfNode10EnterScopeEv
 _ZN10CVProfNode10GetSubNodeEPKciS1_i
 _ZN10CVProfNode5PauseEv
@@ -12571,6 +13032,7 @@ _ZN16CMiniDumpComment14PrependCommentEPKc
 _ZN16CMiniDumpComment15AppendOSCommentEv
 _ZN16CMiniDumpComment15GetStartPointerEv
 _ZN16CMiniDumpComment17GetCurrentPointerEv
+_ZN16CMiniDumpComment19EnsureOSDescriptionEv
 _ZN16CMiniDumpComment22AppendFormattedCommentEPKcz
 _ZN16CMiniDumpCommentC1Ei
 _ZN16CMiniDumpCommentD1Ev
@@ -12635,9 +13097,12 @@ ZoomIn
 ZoomOut
 ZoomSpline
 ZoomStayout
+\z^@Q
 zR@y_
 _ZSt18uncaught_exceptionv
 _ZSt7nothrow
+zstream already in use (internal error)
+zstream not in use (internal error)
 _ZTCNSt6__ndk118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE0_NS_13basic_istreamIcS2_EE
 zt?EngineServiceManager
 _ZTIc

@@ -60,9 +60,9 @@
 19CRenderContextEmpty
 19CSchemaRegistration
 19CTextureManagerBase
+@)19E
 19IKeyValuesErrorSpew
 19IRenderShaderBuffer
-@)1AE
 !1AQaq
 20CPostConnectCallback
 20CRefCountServiceBaseILb1E6CRefMTE
@@ -89,7 +89,6 @@
 "2BRbr
 2Gio8
 2	h(8
-2hB.9#
 	2(I(
 2ij(8
 37CSchemaRegistration_rendersystemempty
@@ -306,8 +305,8 @@ _8Jhj8*
 *,A)($@),4B)o
 -A)7S@
 /A9a:J9`>
-A9)iG
-	 A9JiG
+	 A9JmG
+A9)mG
 $	A)Ar
 aBE9a
 abort
@@ -320,9 +319,9 @@ after solve err=%f
 Ah`8!(
 aHa8c
 A!;I2
-	aj9	
 a"J9?@
-	Al9	
+	Ak9)
+	al9	
 ALIGN_TYPE is wrong, please fix
 allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
 Allow immediately loading mips of textures (when possible) when their headers are loaded, saving IO & reducing latency.
@@ -366,7 +365,7 @@ A)TU@)X
 -autoconfig_level
 A{"xB
 B@9A1
-bA9JiG
+bA9JmG
 Backing store not supported
 bad adaptive filter value
 Bad expression operator: '%c%c', expected C style boolean expression operator.
@@ -496,8 +495,6 @@ CONTENT
 CONTENTROOT
 ConVarRef %s doesn't point to an existing ConVar
 ConVar(%s) defined with infinite float value (%s)
-ConvertJpegToRGB
-ConvertRGBToRGBAImage
 CopyAttrFrom
 Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.
 Copyright (c) 1996-1997 Andreas Dilger
@@ -764,7 +761,6 @@ GPU reports %dMB available memory which is too low, using %d MB
 Graphics Device changed, resetting video config
 GRendersystem/SheetCacheTextureRows
 g_Tier1_BitWriteMasks
-g_VProfCurrentProfile
 g@yRz
 	)	)h
 H6c"J9
@@ -842,7 +838,7 @@ ib@9(
 ib@9)
 ib@9i
 ib@9l
-ibA9JiG
+ibA9JmG
 IB: %d buffers, %.2f MB
 IB)Mki
 ic8)Q
@@ -1039,12 +1035,12 @@ IQuickTime001
 	*iW@
 *'i$x
 j58hf@9(
-J78yE
 @j!8!
-j(8DY
+j(8C]
 j`8!i 8
-j(8[t
-j(8zu
+j(8]x
+j(8|y
+	!j9	
  J9?@
 J9e:A
 ja8 i!8!
@@ -1061,7 +1057,6 @@ JNI_OnUnload
 JPEG datastream contains no image
 JPEGMEM
 JPEG parameter struct mismatch: library thinks size is %u, caller expects %u
-	*Jq'
 jr82"
 jr822
 JSON error, unterminated element: 
@@ -1346,7 +1341,6 @@ O!OJ)
 Opened temporary file %s
 OpenGL
 Ordered constructor wrapped type has no default constructor.
-oS_g.
 out of memory
 Out of Memory
 Out of memory processing zTXt chunk
@@ -1444,6 +1438,7 @@ qb"J9a.J9
 QC-nhj
 qcRFy
 QE9H!
+	Qe9I
 q i181
 Q(i*8
 *QI@)A
@@ -1613,7 +1608,6 @@ r	hh8)
 rHihx,
 rhj)8
 Rhjh8
-Rhjh8(
 R(i*8
 riihx
 rIihx
@@ -1823,7 +1817,6 @@ TbFEyaJEy?
 Tbhd8
 TCDFy 
 TCD@Q
-Tc"I)`"@
 Tc.J9
 Tc"L9
 Td$@8
@@ -2192,9 +2185,6 @@ ZFP compression is not supported in this build.
 zlib memory error
 zlib stream error
 zlib version error
-_ZN10CVProfNode10EnterScopeEv
-_ZN10CVProfNode10GetSubNodeEPKciS1_i
-_ZN10CVProfNode9ExitScopeEv
 _ZN12CThreadEvent3SetEv
 _ZN12CThreadEventC1Eb
 _ZN13CBufferString10FixSlashesEc

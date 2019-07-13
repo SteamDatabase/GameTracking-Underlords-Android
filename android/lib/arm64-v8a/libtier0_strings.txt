@@ -8,6 +8,7 @@
 0'>0c*>
 0123456789ABCDEF
 ?0,/1a,
+  %02d: %u:0x%llx
 ,%03d
 %.0f pct of time accounted for
 %0*llx: address after highest user-space virtual region
@@ -52,9 +53,11 @@
 29CDefaultLoggingResponsePolicy
 2(A@qJ5
 2CB@q
+  %2d - proc %2d (grp %u:%u / phy %d / cor %d / smt %d): max freq %llu
 2*hi8
 2j2@9i6@9_
 2*ki8J
+2mymx
 4(3H9
 4i2@9?
 4-ij8
@@ -80,7 +83,6 @@
 %8.8x-%4.4x-%4.4x-%2.2x%2.2x-%2.2x%2.2x%2.2x%2.2x%2.2x%2.2x
 8Oi-8+
 %8x-%4x-%4x-%2x%2x-%2x%2x%2x%2x%2x%2x
-!>9?1>9K
 (@9	,@9
 9CTestCase
 9h2@9i6@9
@@ -94,14 +96,15 @@
 @9@iq8_
 9ITestCase
 	@9J	
-$9jr$9h
+)	@9J	@9?
 	@9k}A
-!@9x&@
+@9x&@
 A)"	@
 +a@9?
-A9)9G
+A9)1G
 a@9*a
-A&9Tm
+a'9*p
+A?9?Q?9K
 &aacute;
 &Aacute;
 AbortMessage({
@@ -112,6 +115,20 @@ aco-nz
 A>}?E>
 &aelig;
 &AElig;
+Affinity preferences: all-procs gather crossed group boundary
+Affinity preferences: disabled (%u physical procs, %u logical)
+Affinity preferences: %d logical processors, limiting to %d
+Affinity preferences: %d speeds, preference split at sort index %d
+Affinity preferences: explicitly disabled
+Affinity preferences: no logical processor speed variation
+Affinity preferences: no logical processor split fit
+Affinity preferences: no per-logical-processor information
+Affinity preferences: no-pref all-procs does not set affinity
+Affinity preferences: no preferences, skipping assignment
+Affinity preferences: only one logical processor
+Affinity preferences: '%s' thread assigned to all-procs mask %u:0x%llx
+Affinity preferences: '%s' thread assigned to proc mask %u:0x%llx (index %d)%s, next proc mask %u:0x%llx (index %d)
+Affinity preferences: turned off for internal reason
 .AGenuineIntel
 &agrave;
 &Agrave;
@@ -250,6 +267,7 @@ const char *CBufferString::ReplaceAt(int, const char *, int, bool)
 const char *CBufferString::ReverseChars(int, int)
 &copy;
 Corefile
+core id
 Couldn't window icon! %s
 cpu.cpp
 cpu  %lu %lu %lu %lu %lu %lu %lu
@@ -295,6 +313,7 @@ DeveloperVerbose
 DevMsg
 DevWarning
 %d frames sampled for %.2f seconds
+-disable_affinity_preferences
  (DISABLED)
 distributed...
 &divide;
@@ -307,7 +326,7 @@ DoAssertDialog: invalid Assert response returned from dialog/vxconsole - breakin
 .dynamic
 .dynstr
 .dynsym
-E9)9G
+E9)1G
 &eacute;
 &Eacute;
 EarlyInit_Tier0
@@ -324,6 +343,9 @@ __emutls_register_common
 ENABLE_ASSERT_DIALOG_PRINT
 __end__
 ******** END VPROF REPORT ********
+epoll_create1
+epoll_ctl
+epoll_wait
 __errno
 error
 ERROR: Alloc exceeded allocation limit /+/ %llu > %llu
@@ -366,6 +388,7 @@ findClass
 .fini_array
 -force_battery_level
 -force_battery_level_battery
+ (forced)
 forced dump
 -force_dpi
 Found Application AutoArgs file '%s'
@@ -408,6 +431,7 @@ GetLocalHostname
 GetModuleNameFromAddress
 GetNameFromOSType
 GetOSDetailString
+GetPerfSortedLogicalProcessors
 getpid
 GetPlatformName
 getpriority
@@ -461,11 +485,10 @@ HangWatchdog_SetMainThreadWindow
 HangWatchdog_Shutdown
 .hash
 hb@9h
-hb]9H
 hb@9H
-hBW9(
-hbX9H
-hBX9H
+hbX9(
+hbY9H
+hBY9H
 Heap: standard allocator
 HEAP WARNING: memory block at %p appears to be corrupt
 HEAP WARNING: memory block at %p is unexpectedly allocated
@@ -476,6 +499,7 @@ H!HJB
 *+hi8K
 hi8_q
 -- Hierarchical Call Graph --
+higher
 hj*8Hhi8K
 H>*SL>
 )I*+%
@@ -535,6 +559,7 @@ isspace
 IterateCapturedStackAnnotations
 &iuml;
 &Iuml;
+J	@9k	@9_
 Java_com_valvesoftware_AttributeSetNative_getAttributeBooleanValue_1Native(__complex int0_t)
 Java_com_valvesoftware_AttributeSetNative_getAttributeBooleanValue_1Native__JLjava_lang_String_2Ljava_lang_String_2Z
 Java_com_valvesoftware_AttributeSetNative_getAttributeCount_1Native
@@ -561,6 +586,7 @@ JmpToAlternateStack
 JNI_OnLoad
 JNI_OnUnload
 Jobs/Coroutines
+*jyhx
 *(!(K
 	K"}@
 k	@9J	
@@ -597,6 +623,10 @@ Linux 3.10
 Linux 3.2
 Linux 3.5
 Linux 3.6
+Linux 4.0
+Linux 4.18
+Linux 4.5
+Linux 5.0
 [/list]
 [list]
 ()Ljava/lang/ClassLoader;
@@ -646,12 +676,16 @@ LoggingSystem_SetLoggingResponsePolicy
 LoggingSystem_TagName
 LoggingSystem_UnregisterLoggingListener
 LoggingTag_t *CLoggingSystem::AllocTag(const char *)
+lower
 &lsquo;
 (\M8h
 macos
 Mac OS
 MacOS 10.10
 MacOS 10.11
+MacOS 10.12
+MacOS 10.13
+MacOS 10.14
 MacOS 10.4
 MacOS 10.5
 MacOS 10.5.8
@@ -714,6 +748,7 @@ no affinity...
 -nocustomermachine
 NO_GAME_ASSERT_DIALOG
 -nohibernate
+nopref-all
 NO_RAISE_ON_ASSERT
 No samples
 &not;
@@ -740,6 +775,7 @@ Ordered constructor wrapped type has no default constructor.
 OS memory stats:
 OS: %s
 OSTypesAreCompatible
+OS type: %s (%d)
 Other VScript
 &otilde;
 &Otilde;
@@ -760,6 +796,7 @@ Peak resident virtual bytes: %s
 Peak total virtual bytes: %s
 Peak working set: %s
 -phased_window_create
+physical id
 Plat_AlertUser
 Plat_AndroidFixMe
 Plat_AndroidLogMemoryInfo
@@ -1230,6 +1267,7 @@ SDL_WarpMouseGlobal
 SDL_WarpMouseInWindow
 SDL_WasInit
 SDL_wcslen
+    %s %d: proc %d (group %u:%u)
 %s (%d) : %s
 &sect;
 SECURITY_PATCH
@@ -1316,6 +1354,7 @@ S?)=q
 srand
 Srir8qIq8
 %s: %s
+  %s slot %d combined mask %u:0x%llx
 %s/source_engine_%u.lock
 %s specified, allocating %d MB%s
 %s: string format requested %d chars
@@ -1354,6 +1393,7 @@ Stop has been called on thread.
 %s total bytes in user-space regions (%s bytes in kernel-space regions)
 strerror
 strlen
+strncasecmp
 strtok_r
 strtoll
 strtoull
@@ -1371,6 +1411,9 @@ sVwES
 Swap_Buffers
 sysconf
 /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq
+/sys/devices/system/cpu/cpu%u/cpufreq/cpuinfo_max_freq
+/sys/devices/system/cpu/cpu%u/topology/core_id
+/sys/devices/system/cpu/cpu%u/topology/physical_package_id
 sysinfo
 system
 &szlig;
@@ -1408,9 +1451,12 @@ ThreadIsProcessActive
 ThreadIsProcessIdActive
 ThreadJoin
 ThreadMultiWait
+ThreadMultiWaitObjectSetCreate
+ThreadMultiWaitObjectSetDestroy
 ThreadNanoSleep
 Thread(%p/0x%llx)
 ThreadSetAffinity
+ThreadSetAffinityPreference
 ThreadSetDebugNameS2
 ThreadSetPriority
 ThreadSetProcessPriority
@@ -1443,6 +1489,7 @@ TimestampedEventMsgV
 TimestampedEvent_RegisterListenerAndFlushBuffer
 timestamped.log
 	Title: %s
+TjyhxmywxN
 TKii8
 Tkji8Lii8
 TKki8
@@ -1896,6 +1943,7 @@ _Z27V_UnicodeCaseStringInStringPKcS0_i25EStringConvertErrorPolicy
 _Z27V_UnicodeCaseStringInStringPKtS0_i25EStringConvertErrorPolicy
 _Z27V_UnicodeCaseStringInStringPKwS0_i25EStringConvertErrorPolicy
 _Z30LoggingSystem_IsChannelEnabledi18LoggingVerbosity_t
+_Z30ThreadMultiWaitObjectSetCreatePK6pollfdPK22ThreadMultiWaitExtra_ti
 _Z6ConMsgPKcz
 _Z6DevMsgPKcz
 _Z9V_wcsistrPKwS0_

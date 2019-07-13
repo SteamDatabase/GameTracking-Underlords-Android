@@ -83,7 +83,7 @@
 26CDefaultKeyValuesErrorSpew
 26ICommandCompletionCallback
 2) channel names: name1 name2 ...           // Lists channels by name.
-2ij(8U
+2ij(87
 2+imx
 2?"!k`
 2ninx
@@ -107,6 +107,7 @@
 6ConVar
 6hb@9
 6xRBy
+7	$@9)
 7hb@9h
 7hf@9
 7hf@9h
@@ -495,8 +496,8 @@ ITALIAN
 i>@yh
 !@i)yj
 j58hf@9(
-j(80j
 j)8hii8
+j(8^j
 j(8OJ
 j(8S	
 J!@9_
@@ -687,7 +688,6 @@ ptr( 0x%p )
 ../public/tier1/utlfixedmemory.h
 ../public/tier1/utllinkedlist.h
 ../public/tier1/utlrbtree.h
-	Q@9	
 qangle
 Qi"A)`
 QueuedLoaderVersion001
@@ -743,6 +743,7 @@ Rhjh8
 Rhjh8(
 Rij(8
 Rjj(8H)
+R(kh8
 Rkj)8jj(8
 rnd_down
 rnd_up
@@ -831,7 +832,7 @@ strcmp
 strcpy
 strerror
 strlen
-%s: Unable to progress to finished state
+%s: Unable to progress %d jobs to finished state (%llums elapsed)
 sysconf
 T	4@y?!"k
 T*	@9_
@@ -884,6 +885,7 @@ ThreadInMainThread
 ThreadIsProcessActive
 ThreadJoin
 ThreadMultiWait
+ThreadMultiWaitObjectSetCreate
 ThreadPoolTest:     Distribute
 ThreadPoolTest:     Distribute NO Sleep
 ThreadPoolTest:         %d threads -- %d (%d) jobs processed in %fms, %fms to suspend (%f/%f) [ (main) %d, %d, %d, %d, %d, %d, %d, %d, %d]
@@ -897,6 +899,7 @@ ThreadPoolTest:   To completion
 -threads
 threadsafe
 ThreadSetAffinity
+ThreadSetAffinityPreference
 ThreadSetPriority
 ThreadSetProcessPriority
 ThreadShellExecuteEx
@@ -931,6 +934,7 @@ Tried to install the same listener on the same event id + queue twice!
 u64( %lld = 0x%llX )
 uint32
 uint64
+Unable to create multiwait object set
 Unable to create thread in %s
 Unable to exec '%s'
 unit test
@@ -1002,12 +1006,14 @@ virtual bool CThreadPool::Start(const ThreadPoolStartParams_t &, const char *)
 virtual bool CThreadPool::YieldWait(CThreadedJob **, int, bool, uint32)
 virtual HKeySymbol CKeyValuesSystem::GetSymbolForStringCaseSensitive(HKeySymbol &, const char *, bool)
 virtual HKeySymbol CKeyValuesSystem::GetSymbolForString(const char *, bool)
+virtual int CJobThread::Run()
 virtual void CAsyncScheduledFunctionManager::Init()
 virtual void CConfigurationSystem::LoadConfigSchema()
 virtual void CTestScriptMgr::InitFromCommandLine(ITestScriptCommandProcessor *)
 virtual void CThreadPool::ChangePriority(CThreadedJob *, JobPriority_t)
 VisBuilder_001
 V_iswspace
+vj)8kj*
 V_logf
 V_LogMultiline
 V_LogMultilineToArray
@@ -1109,6 +1115,7 @@ _Z17LoggingSystem_Logi17LoggingSeverity_t5ColorPKcz
 _Z17LoggingSystem_Logi17LoggingSeverity_tRK14LeafCodeInfo_tPKcz
 _Z20V_SplitStringInPlacePcPKcR10CUtlVectorIS1_10CUtlMemoryIS1_iEE
 _Z21V_SplitString2InPlacePcPPKciR10CUtlVectorIS1_10CUtlMemoryIS1_iEE
+_Z30ThreadMultiWaitObjectSetCreatePK6pollfdPK22ThreadMultiWaitExtra_ti
 _Z6ConMsgPKcz
 _Z6DevMsgPKcz
 _Z9V_wcsistrPKwS0_

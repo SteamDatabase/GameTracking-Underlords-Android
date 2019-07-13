@@ -47,14 +47,12 @@
 1bQJ1~
 1DBlend
 1@)k1G
-	2)!+
 	2*	@
 20CPostConnectCallback
 20CPostProcessRenderer
 20CRefCountServiceBaseILb1E6CRefMTE
 20CRenderingPipelineVr
 20CTiltTwistConstraint
-2	1:9s
 21CMyClearLayerRenderer
 22CRenderingPipelineSSAO
 22CSchemaInstallCallback
@@ -76,21 +74,20 @@
 28CBoneConstraintPoseSpaceBone
 28CRenderingPipelineLightSetup
 28CRenderingPipelineVR3DSkybox
-2	!;9
 29CBaseRenderingPipelineFactory
 29CBoneConstraintPoseSpaceMorph
 29CRenderingPipelineOvertopMenu
 29CRenderingPipelinePostProcess
-2@9|J
+	2)a+
+2	a;9
 2_BONE_IK
-2hB29
-2hr19
 	2	i*
+2	q:9s
 2Way_0( %s )
 2Way_1( %s )
 30CRenderingPipelineSlimDeferred
 31CScreenSpaceReflectionsRenderer
-=)3@9
+=(3@9
 3@9iJ
 3@9jJ
 3D Skybox
@@ -108,6 +105,7 @@
 4hb@9
 4hf@9
 4hf@9(
+4h'@)j
 4n&	&
 ,5D)(%E)
 5h'@)
@@ -122,6 +120,7 @@
 8CFmtStrNILi256ELb0EE
 8x9,7
 	@@9h
+9h'@)*
 (@@9H
 "@9hf@9i
 @9hV@
@@ -131,8 +130,7 @@
 (@@9tB
 'A)	}	
 A-!(!
-(A19=k
-(a/9Jy
+(A/9m
 A-'@A-
 ACT_IDLE
 ACT_NEUTRAL_REF_POSE
@@ -219,7 +217,6 @@ AoProxyDebug
 ApplyFog
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 archive
-	as9I
 AssertMsg_ConditionFailed
 AssetBrowserSystem_001
 AssetPreviewSystem_001
@@ -236,8 +233,6 @@ Attempting to get the movement settings from model %s, for which movement settin
 Attempting to get the Skeletal Input settings from model %s, which doesn't have any.  
 Attribute counts between meshes is inconsistent
 auto_unragdoll_duration
-	ax9	
-	Az9	
 !^B(*
 *-B)!
 B-1HD-
@@ -582,6 +577,7 @@ emitFromWorld
 EmptyAnim
 enable_limit
 encoding
+Encountered bad skin weights, summing to %g (1.0 expected) at position %.3f %.3f %.3f
 __end__
 Engine2/RenderingPipeline/AmbientOcclusionProxies
 Engine2/RenderingPipeline/OpaqueFade
@@ -644,7 +640,6 @@ f %d %d %d
 FeetSettings
 FeModel combiner: Too many ropes (%u) or links (%u): cannot fit sum in uint16
 %f %f %f %f
-F-H1C
 .fini_array
 FixupResourceName: Illegal full path passed in ("%s")!
 FixupResourceName: Illegal path, missing extension passed in ("%s")!
@@ -703,6 +698,7 @@ g_pMemAlloc
 gravity
 GroundFog
 )h&	)
+*h'@)_
 h'@)*
 h&@)?
 #H)	}	
@@ -727,7 +723,7 @@ HelpSystem_001
 hf@9H
 hf@9i
 H%@)J	@
-hj58,r
+hj58,n
 H#L9`r
 Hologram Depth
 Hologram Wireframe
@@ -735,7 +731,8 @@ HostStateMgr001
 hurt_me
 hurt_them
 h&@y)
-<i*@)a
+h&@yi
+I)@)!
 i*@)a
 i+@)a
 ib@9j
@@ -758,7 +755,7 @@ IKRigBug
 IKRigSimple
 #include
 #include is NULL 
-Infinite Joint Weights encountered: Skinning will not work!
+Infinite Joint Weights encountered: Skinning will not work! (At position %.3f %.3f %.3f)
 .init_array
 InnerSky
 InputLayoutBuilder
@@ -802,7 +799,8 @@ IQuickTime001
 is_debris
 #It contains connectivity part %d with %d vertices
 @ @-J
-j88=M
+J38@=
+j88sE
 J-cb@
 J-dj@
 JEIJJ}
@@ -811,9 +809,9 @@ jiggle bone %u
 JIIJJ}
 JNI_OnLoad
 JNI_OnUnload
-Joint Indices (%d) Out Of Range for SINT16: Skinning will not work ! 
-Joint Indices (%d) Out Of Range for UINT10: Skinning will not work ! 
-Joint Indices (%d) Out Of Range for UINT8: Skinning will not work ! 
+Joint Indices (%d) Out Of Range for SINT16: Skinning will not work!
+Joint Indices (%d) Out Of Range for UINT10: Skinning will not work!
+Joint Indices (%d) Out Of Range for UINT8: Skinning will not work!
 JSON error, unterminated element: 
 K1@)A
 K1B)A
@@ -1677,7 +1675,6 @@ suppress
 surface_prop
 %s| Virtual: %s; Abstract: %s; TrivialConstr: %s; TrivialDestr: %s
 Syntax Error at offset: %d
-T('@)
 T(@@9
 tangent
 tangentu_signv
@@ -1760,6 +1757,7 @@ ToolsVisMode: TANGENT_U_WS
 ToolsVisMode: TANGENT_V_WS						
 ToolsVisMode: TRANSMISSIVE_LIGHTING				
 ToolsVisMode: UNKNOWN
+ToolsVisMode: WRINKLE							
 Trailing Data
 TranslucentDebugDraw
 TranslucentViewModel
@@ -1776,7 +1774,7 @@ Unable to determine buffer encoding.
 Unable to read resource file %s!
 Unable to write file '%s'
 Unexpected end of file
-Unnormalized joint weights encountered (%f): Skinning may not work!
+Unnormalized joint weights encountered (%f): Skinning may not work! (At position %.3f %.3f %.3f)
 Unrecognized flag name '%s'
 Unrecognized resource version (%d): %s
 Unrecognized type '%d'
@@ -1864,7 +1862,7 @@ void CreatePerViewConstantBuffer(CRenderAttributes &, const CRenderAttributes &,
 void CSchemaClassInfo::ReportClassError(const char *) const
 void CSchemaClassInfo::ValidateModuleLocalTypeScope()
 void CUtlBuffer::VaPrintf(const char *, va_list)
-void FillVBForAttribute(uint8 *, CMeshVertexAttribute *, const RenderInputLayoutField_t &, int &, float *, int &, float *, bool, bool, const Vector &)
+void FillVBForAttribute(uint8 *, CMeshVertexAttribute *, const RenderInputLayoutField_t &, int &, float *, int &, float *, bool, bool, const Vector &, int *)
 void SetupCubemapFogForView(ISceneView *, CRenderAttributes *)
 void SetupGradientFogForView(ISceneView *, CRenderAttributes *)
 VolumetricFog
@@ -1961,6 +1959,7 @@ V_vsnprintfWarnTrunc
 V_wcstoi64
 walkspeed
 Warning
+WARNING: Encountered %d total problems with vertex data (first %d shown above)
 Warning:  %s = '%s' is infinite, clamping value.
 WARNING: Trying to create a CRenderContextPtr without a valid context.
 WaterBottomShading
@@ -1981,6 +1980,7 @@ X360_DST24
 X360_DST24F
 xf@)*
 @y`&@
+	!Y9	
 Yaw; 
 yaw_end
 yaw_start
@@ -1993,6 +1993,7 @@ _Z14V_stristr_fastPKcS0_
 _Z17LoggingSystem_Logi17LoggingSeverity_t5ColorPKcz
 _Z17LoggingSystem_Logi17LoggingSeverity_tRK14LeafCodeInfo_tPKcz
 _Z6DevMsgPKcz
+	!z9	
 _ZdaPv
 _ZdlPv
 _ZN13CBufferString10FixSlashesEc

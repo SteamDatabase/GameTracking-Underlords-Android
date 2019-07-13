@@ -47,6 +47,7 @@ $0$1$2 $3 = $4
 0.8.3
 0@9(0
 0@9)0@9
+(0@9H
 0@9K0@9
 +0A).<@)0
 !0D9a
@@ -96,7 +97,6 @@ $0 to $1,
 15CTier1AppSystemI17IPanoramaUIEngineLi0EE
 15CTier2AppSystemI17IPanoramaUIEngineLi0EE
 15CTier3AppSystemI17IPanoramaUIEngineLi0EE
-16:45:54
 16CDefaultAccessor
 17CPanoramaUIEngine
 17EVideoPlayerEvent
@@ -111,6 +111,7 @@ $0 to $1,
 ?1Jk`
 *)1KL)
 	2	(@)
+20:04:07
 20CMultipleCallResultsIN8panorama16CLoadFileURLTaskE22HTTPRequestCompleted_tE
 20CMultipleCallResultsIN8panorama16CReloadStyleFileE22HTTPRequestCompleted_tE
 20CMultipleCallResultsIN8panorama20CLoadLayoutFileAsyncE22HTTPRequestCompleted_tE
@@ -129,12 +130,12 @@ $0 to $1,
 25IVideoPlayerVideoCallback
 26IRenderDeviceEventListener
 27ILocalizationChangeCallback
-2@9(	
-2	!<9
+2@980
 2@9h2
 2@9i2@9
-2	!;9s
+2	a$9
 2	a@9Ia
+2	a#9s
 2	AA9
 "2BRbr
 2h"F9
@@ -147,12 +148,11 @@ $0 to $1,
 2j"@9)p
 2?"!k`
 2?k78
-2_k88
+2_k88@
 2?k88
 2Mii8nii8
 2ninx
 // 2 px horizontal radii 4px vertical elliptical corners on all sides
-+2WARNING: Image '%s' size too large (%d x %d with limit %d x %d), image load failing
 	2z*@
 ?333333
 3@9(i:8
@@ -215,6 +215,7 @@ $4DTdt
 4v^@y`
 4wZ@y`
 	4@y	
+*-?),5
 5aFEy`JEy
 5ahb8
 5Ahh8
@@ -314,6 +315,7 @@ _6hNB9	;
 76iB@
 76iJ@
 7 ! 7
+*	!79
 7d"J9bREy
  7F507
 '7GWgw
@@ -413,16 +415,13 @@ _8o%@8
  @9	$@9J
 "@9	A
 @9))A
-@9)a|9
 9	a@9?
-@9)A[9
 @9)AB9
 9aia8
 9Aia8
 9AIb8
-@9)AV9
-@9)aY9
-@9)Ay9
+@9)al9
+@9)AQ9
 @9)%B
 9bib8
 9Bib8
@@ -532,13 +531,14 @@ _8o%@8
 "@9+iz8
 9j*@9(
 @9J9	
-@9JAB9?
-@9J!D9
+@9Ja^9?
+@9Jal9
+@9JAn9?
+@9JAQ9?
+@9Jar9?
 9jij8
-@9J!J9?
 @9jjh8*
 @9JU	
-@9J!v9?
 9j&@y
 !!@9K
 )!@9	k(8I
@@ -612,9 +612,11 @@ A-$8"
 =?a%9?
 +a@9?
 	a@9	
+	a\9	
 a@9_	
 		A9?
 		A9	
+	A^9	
 	A@9)
 	A@9	
 A9!(!
@@ -625,11 +627,9 @@ A9!8#
 =?a)9?9
 =?a	9?9
 a@9+a
-A9)AA9
 /A9a:J9`>
 		A9h
 	A9h&A
-"A9hb
 ^A9i^
 *	A9i
 	A@9i
@@ -641,7 +641,6 @@ A9	ii
 	a@9k
 ,	A9K
 +	A9K
-A9kAA9L
 A9Kik
 +	A9lC
 	a@9	p
@@ -779,9 +778,7 @@ ATTLIST
 A)tU@)x
 A)TU@)X
 )@-	!A-U
-	Au9)
 AutoReloadFailedLayoutReloads
-	av9	
  Average %s commands per frame: %u, %u bytes
 Ax?!6k`
 Ax_!9k
@@ -852,6 +849,7 @@ begin
 BeginDebuggerInspect
 beige
 BenchmarkService001
+bevel
 b.EycZA
 bg_BG
 BGR565
@@ -969,10 +967,8 @@ Byte size calculation and serialization were inconsistent.  This may indicate a 
 C- @!
 !~c8!
 C-!8"
-c@9`#
 C@9?	
 C9an@
-(c@9hb
 cA9h 
 cA9h5
 cA9s~
@@ -1105,12 +1101,14 @@ cHRM Red Y
 cHRM Red Z
 cHRM White X
 cHRM White Y
+CImageData::SetImageDataFromSvg - texture creation
 CImageData::SetImageDataR8G8B8A8
 CImageData::SetImageDataR8G8B8A8 - A8 conversion
 CImageData::SetImageDataR8G8B8A8 - Jpeg
 CImageData::SetImageDataR8G8B8A8 - LoadTGA
 CImageData::SetImageDataR8G8B8A8 - Png
 CImageData::SetImageDataR8G8B8A8 - resize
+CImageData::SetImageDataR8G8B8A8 - SVG
 CImageData::SetImageDataR8G8B8A8 - texture creation
 CImageDecodeThread::Run
 CImageDecodeThread::Run - run item
@@ -1122,6 +1120,7 @@ CImageResourceManager::LoadImageFromMemory
 CImageResourceManager::LoadImageInternal
 CImageResourceManager::LoadLocalFileSynchronous
 CImageResourceManager::LoadLocalFileSynchronous()
+circle
 "C)jN@
 c@L@A
 class, eventToFire
@@ -1136,6 +1135,10 @@ client
 clientcmd_can_execute
 client_streaming
 clipaftertransform
+clip-path
+clipPath
+Clip-path not supported unless element string table supplied
+clip-rule
 CLocalization::CheckPanelNeedsLocUpdate
 CLocalization::OnPanelDeleted
 CLocalization::PanelLocEntry_t CUtlMemoryPool
@@ -1201,8 +1204,6 @@ Controls truncation of text that doesn't fit in a panel.  "clip" means to simply
 Controls white-space wrapping on rendered text.  "normal" means wrap on whitespace, "nowrap" means do no wrapping at all.<br><br><b>Examples:</b><pre>white-space: normal;
 ConVarRef %s doesn't point to an existing ConVar
 ConVar(%s) defined with infinite float value (%s)
-ConvertJpegToRGB
-ConvertRGBToRGBAImage
 CopyAttrFrom
 Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.
 Copyright (c) 1996-1997 Andreas Dilger
@@ -1254,6 +1255,8 @@ CStyleFile::BLoadFromBuffer
 CStyleFileSet::BContainsStyleFile
 CStylePropertyFactory:  Factory for '%s' already exists!!!!
 CStyleSymbol must become larger, cannot fit all style properties in uint8 anymore
+CSvgDecodeWorkItem::DispatchResult
+CSvgDecodeWorkItem::RunWorkItem
 CTopLevelWindow - ApplyStyles
 CTopLevelWindow - PaintEmptyFrame
 CTopLevelWindow::PaintIfNeeded 
@@ -1339,6 +1342,7 @@ __cxa_guard_release
 __cxa_pure_virtual
 c@y1z
 )c@y(3
+C@yhB
 ^C)yhi
 )c@yJ
 CZ8	I
@@ -1350,8 +1354,6 @@ D24FS8
 D24X4S4
 D24X8
 D24X8_SHADOW
-d6@yc
-d6@yC
 D- 8"
 D-!8"
 D$@8$
@@ -1524,6 +1526,7 @@ e*L9%
 e&L9%
 ELEMENT
 el_GR
+ellipse
 ellipsis
 #empty#
 EMPTY
@@ -1556,6 +1559,12 @@ en_US
 EnvironmentMapBuilder_001
 __errno
 ERROR
+Error: Attempting to add child element before parsing SVG root
+Error: Attempting to add child element to a non-container element
+Error: Attempting to add stop element before parsing SVG root
+Error: Attempting to add stop element to a non-gradient element
+Error: Attribute index exceeds valid range
+Error: Failed to add sibling element
 error in user chunk
 Error loading %s: Addons can only add layouts in the %s subdirectory.
 Error parsing @define
@@ -1567,16 +1576,23 @@ Error parsing @keyframe selector: %s
 Error parsing layout and style files
 Error parsing style
 Error parsing style selector: %s
+Error parsing SVG: %s
 Error parsing text-format 
+Error parsing transform - invalid matrix - %s
+Error parsing transform - invalid rotation angle - %s
+Error parsing transform - invalid rotation centre point - %s
+Error parsing transform - invalid skew angle - %s
+Error parsing transform - invalid translate - %s
 ERROR: Resource name "%s" has the incorrect extension "%s" for the specified resource type (expected "%s")!
 ERROR: Specified full path %s does not lie under the mod search path!)
 ERROR: Specified path %s could not be made content-relative
+Error: Transform index exceeds valid range
 Error while parsing option value for "
 es_419
 es-419
 es_ES
 ETC compression not supported on this target .
-*E) U
+evenodd
 ! Event
 EventSystem001
 Exceeded size limit while expanding chunk
@@ -1630,6 +1646,7 @@ extreme cHRM chunk cannot be converted to tristimulus values
 F-!8"
 	!F9	
 f@9H	
+	!f9i
 \|FA@
 FA9iF
 fade_out
@@ -1710,8 +1727,10 @@ Files that do not use optimize_for = LITE_RUNTIME cannot import files which do u
 Files with optimize_for = LITE_RUNTIME cannot define services unless you set both options cc_generic_services and java_generic_sevices to false.
 fill 
 FillAttr
+fill-opacity
 fill-parent-flow
 fill-parent-flow( %s )
+fill-rule
 filterinY
 filterinZ
 FindClosestMatchingRegion
@@ -1892,6 +1911,7 @@ go_package
 g_pMemAlloc
 gradient
 gradient( 
+gradientTransform
 gravity-acceleration
 gravity-acceleration-particle-variance
 greek
@@ -1950,7 +1970,6 @@ h"@9))A
 h*@9h/
 h.@9H
 h"@9i
-h"@9I
 `ha8@
 ha8!(
 h"A9(
@@ -1986,7 +2005,6 @@ hBH9I
 !hc8 (
 hc87hd89hc88hb8
 hc8#h 8
-HC@9@
 hC@9h
 HC@yj
 hd8% 
@@ -2006,10 +2024,9 @@ height-percentage
 height-percentage( %s )
 HelpSystem_001
 Hex and octal numbers must be integers.
-h"F9(
-h"F9(!
 hF@9)
 hf@9h
+h"F9h!
 hF@9h
 h*F9H
 hf@9i
@@ -2080,6 +2097,7 @@ H{vxH
 h:@y)
 h.@y(
 h*@y_
+h&@y)
 h&@y	
 h.@yh
 h&@yi
@@ -2107,6 +2125,8 @@ i)8i6@yH
  i(8jB
 *i(8kB
 ?i(8N
+i"@9@
+i&@9c
 i"@9J
 IA@y(
 ib@9(
@@ -2124,9 +2144,9 @@ I CUtlLinkedList<panorama::CCompositionLayerCache<panorama::CSource2CompositionL
 I CUtlLinkedList<panorama::CCompositionLayerCache<panorama::CSource2CsCompositionLayer *, panorama::CSource2CsCompositionLayer, CDefLessPtr<panorama::CSource2CsCompositionLayer>, true>::LRU_t, int, false, int, CUtlMemory<UtlLinkedListElem_t<panorama::CCompositionLayerCache<panorama::CSource2CsCompositionLayer *, panorama::CSource2CsCompositionLayer, CDefLessPtr<panorama::CSource2CsCompositionLayer>, true>::LRU_t, int>, int> >::AllocInternal(bool) [T = panorama::CCompositionLayerCache<panorama::CSource2CsCompositionLayer *, panorama::CSource2CsCompositionLayer, CDefLessPtr<panorama::CSource2CsCompositionLayer>, true>::LRU_t, S = int, ML = false, I = int, M = CUtlMemory<UtlLinkedListElem_t<panorama::CCompositionLayerCache<panorama::CSource2CsCompositionLayer *, panorama::CSource2CsCompositionLayer, CDefLessPtr<panorama::CSource2CsCompositionLayer>, true>::LRU_t, int>, int>]
 I CUtlLinkedList<panorama::CCompositionLayerCache<unsigned long long, panorama::CSource2CompositionLayer, CDefLess<unsigned long long>, false>::LRU_t, int, false, int, CUtlMemory<UtlLinkedListElem_t<panorama::CCompositionLayerCache<unsigned long long, panorama::CSource2CompositionLayer, CDefLess<unsigned long long>, false>::LRU_t, int>, int> >::AllocInternal(bool) [T = panorama::CCompositionLayerCache<unsigned long long, panorama::CSource2CompositionLayer, CDefLess<unsigned long long>, false>::LRU_t, S = int, ML = false, I = int, M = CUtlMemory<UtlLinkedListElem_t<panorama::CCompositionLayerCache<unsigned long long, panorama::CSource2CompositionLayer, CDefLess<unsigned long long>, false>::LRU_t, int>, int>]
 I CUtlLinkedList<panorama::CCompositionLayerCache<unsigned long long, panorama::CSource2CsCompositionLayer, CDefLess<unsigned long long>, false>::LRU_t, int, false, int, CUtlMemory<UtlLinkedListElem_t<panorama::CCompositionLayerCache<unsigned long long, panorama::CSource2CsCompositionLayer, CDefLess<unsigned long long>, false>::LRU_t, int>, int> >::AllocInternal(bool) [T = panorama::CCompositionLayerCache<unsigned long long, panorama::CSource2CsCompositionLayer, CDefLess<unsigned long long>, false>::LRU_t, S = int, ML = false, I = int, M = CUtlMemory<UtlLinkedListElem_t<panorama::CCompositionLayerCache<unsigned long long, panorama::CSource2CsCompositionLayer, CDefLess<unsigned long long>, false>::LRU_t, int>, int>]
-I CUtlLinkedList<panorama::CImageDecodeWorkItem *, int, false, int, CUtlMemory<UtlLinkedListElem_t<panorama::CImageDecodeWorkItem *, int>, int> >::AllocInternal(bool) [T = panorama::CImageDecodeWorkItem *, S = int, ML = false, I = int, M = CUtlMemory<UtlLinkedListElem_t<panorama::CImageDecodeWorkItem *, int>, int>]
 I CUtlLinkedList<panorama::CUIPanel *, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<panorama::CUIPanel *, unsigned short>, unsigned short> >::AllocInternal(bool) [T = panorama::CUIPanel *, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<panorama::CUIPanel *, unsigned short>, unsigned short>]
 I CUtlLinkedList<panorama::CUIWindowInput::TopMostFocus_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<panorama::CUIWindowInput::TopMostFocus_t, unsigned short>, unsigned short> >::AllocInternal(bool) [T = panorama::CUIWindowInput::TopMostFocus_t, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<panorama::CUIWindowInput::TopMostFocus_t, unsigned short>, unsigned short>]
+I CUtlLinkedList<panorama::IImageDecodeWorkItem *, int, false, int, CUtlMemory<UtlLinkedListElem_t<panorama::IImageDecodeWorkItem *, int>, int> >::AllocInternal(bool) [T = panorama::IImageDecodeWorkItem *, S = int, ML = false, I = int, M = CUtlMemory<UtlLinkedListElem_t<panorama::IImageDecodeWorkItem *, int>, int>]
 I CUtlRBTree<CUtlMap<const char *, CUtlString, short, bool (*)(const char *const &, const char *const &)>::Node_t, short, CUtlMap<const char *, CUtlString, short, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CUtlString, short, bool (*)(const char *const &, const char *const &)>::Node_t, short>, short> >::NewNode(const T *) [T = CUtlMap<const char *, CUtlString, short, bool (*)(const char *const &, const char *const &)>::Node_t, I = short, L = CUtlMap<const char *, CUtlString, short, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CUtlString, short, bool (*)(const char *const &, const char *const &)>::Node_t, short>, short>]
 I CUtlRBTree<CUtlMap<const char *, FileWatch_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, FileWatch_t *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, FileWatch_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, FileWatch_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, FileWatch_t *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, FileWatch_t *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<const char *, ImageInfo_t, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, ImageInfo_t, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, ImageInfo_t, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, ImageInfo_t, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, ImageInfo_t, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, ImageInfo_t, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
@@ -2146,6 +2166,7 @@ I CUtlRBTree<CUtlMap<CUtlString, panorama::ILocalizationString *, int, CDefLess<
 I CUtlRBTree<CUtlMap<CUtlString, panorama::PanelDescription_t *, unsigned short, bool (*)(const CUtlString &, const CUtlString &)>::Node_t, unsigned short, CUtlMap<CUtlString, panorama::PanelDescription_t *, unsigned short, bool (*)(const CUtlString &, const CUtlString &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, panorama::PanelDescription_t *, unsigned short, bool (*)(const CUtlString &, const CUtlString &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<CUtlString, panorama::PanelDescription_t *, unsigned short, bool (*)(const CUtlString &, const CUtlString &)>::Node_t, I = unsigned short, L = CUtlMap<CUtlString, panorama::PanelDescription_t *, unsigned short, bool (*)(const CUtlString &, const CUtlString &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, panorama::PanelDescription_t *, unsigned short, bool (*)(const CUtlString &, const CUtlString &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<CUtlString, short, int, CDefCaselessCUtlStringLess>::Node_t, int, CUtlMap<CUtlString, short, int, CDefCaselessCUtlStringLess>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, short, int, CDefCaselessCUtlStringLess>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<CUtlString, short, int, CDefCaselessCUtlStringLess>::Node_t, I = int, L = CUtlMap<CUtlString, short, int, CDefCaselessCUtlStringLess>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, short, int, CDefCaselessCUtlStringLess>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<CUtlString, unsigned int, int, CDefFastCaselessStringLess>::Node_t, int, CUtlMap<CUtlString, unsigned int, int, CDefFastCaselessStringLess>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, unsigned int, int, CDefFastCaselessStringLess>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<CUtlString, unsigned int, int, CDefFastCaselessStringLess>::Node_t, I = int, L = CUtlMap<CUtlString, unsigned int, int, CDefFastCaselessStringLess>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, unsigned int, int, CDefFastCaselessStringLess>::Node_t, int>, int>]
+I CUtlRBTree<CUtlMap<CUtlSymbol, int, int, CDefLess<CUtlSymbol> >::Node_t, int, CUtlMap<CUtlSymbol, int, int, CDefLess<CUtlSymbol> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlSymbol, int, int, CDefLess<CUtlSymbol> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<CUtlSymbol, int, int, CDefLess<CUtlSymbol> >::Node_t, I = int, L = CUtlMap<CUtlSymbol, int, int, CDefLess<CUtlSymbol> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlSymbol, int, int, CDefLess<CUtlSymbol> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<CUtlSymbol, LocalPanelRegistration_t, int, CDefLess<CUtlSymbol> >::Node_t, int, CUtlMap<CUtlSymbol, LocalPanelRegistration_t, int, CDefLess<CUtlSymbol> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlSymbol, LocalPanelRegistration_t, int, CDefLess<CUtlSymbol> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<CUtlSymbol, LocalPanelRegistration_t, int, CDefLess<CUtlSymbol> >::Node_t, I = int, L = CUtlMap<CUtlSymbol, LocalPanelRegistration_t, int, CDefLess<CUtlSymbol> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlSymbol, LocalPanelRegistration_t, int, CDefLess<CUtlSymbol> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<CUtlSymbol, LocalRegistration_t, int, CDefLess<CUtlSymbol> >::Node_t, int, CUtlMap<CUtlSymbol, LocalRegistration_t, int, CDefLess<CUtlSymbol> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlSymbol, LocalRegistration_t, int, CDefLess<CUtlSymbol> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<CUtlSymbol, LocalRegistration_t, int, CDefLess<CUtlSymbol> >::Node_t, I = int, L = CUtlMap<CUtlSymbol, LocalRegistration_t, int, CDefLess<CUtlSymbol> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlSymbol, LocalRegistration_t, int, CDefLess<CUtlSymbol> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<int, panorama::CUIInputEngine::AnalogData_t, int, CDefLess<int> >::Node_t, int, CUtlMap<int, panorama::CUIInputEngine::AnalogData_t, int, CDefLess<int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, panorama::CUIInputEngine::AnalogData_t, int, CDefLess<int> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<int, panorama::CUIInputEngine::AnalogData_t, int, CDefLess<int> >::Node_t, I = int, L = CUtlMap<int, panorama::CUIInputEngine::AnalogData_t, int, CDefLess<int> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, panorama::CUIInputEngine::AnalogData_t, int, CDefLess<int> >::Node_t, int>, int>]
@@ -2354,7 +2375,7 @@ Insufficient memory to store iTXt chunk
 Insufficient memory to store text
 Insufficient memory to store zTXt chunk
 #int#
-int CUtlSortVector<CUtlString, CUtlSortVectorDefaultLess<CUtlString>, CUtlVector<CUtlString, CUtlMemory<CUtlString, int> > >::FindLessOrEqual(const TKey &, bool *) const [T = CUtlString, LessFunc = CUtlSortVectorDefaultLess<CUtlString>, BaseVector = CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >, TKey = const char *]
+int CUtlSortVector<CUtlString, panorama::FontNameListSort_t, CUtlVector<CUtlString, CUtlMemory<CUtlString, int> > >::FindLessOrEqual(const TKey &, bool *) const [T = CUtlString, LessFunc = panorama::FontNameListSort_t, BaseVector = CUtlVector<CUtlString, CUtlMemory<CUtlString, int> >, TKey = const char *]
 int CUtlSortVector<panorama::CStyleKeyFrame *, panorama::CUtlSortVectorCStyleKeyFramePtrLess, CUtlVector<panorama::CStyleKeyFrame *, CUtlMemory<panorama::CStyleKeyFrame *, int> > >::Find(const TKey &) const [T = panorama::CStyleKeyFrame *, LessFunc = panorama::CUtlSortVectorCStyleKeyFramePtrLess, BaseVector = CUtlVector<panorama::CStyleKeyFrame *, CUtlMemory<panorama::CStyleKeyFrame *, int> >, TKey = panorama::CStyleKeyFrame *]
 int CUtlSortVector<panorama::CStyleKeyFrame *, panorama::CUtlSortVectorCStyleKeyFramePtrLess, CUtlVector<panorama::CStyleKeyFrame *, CUtlMemory<panorama::CStyleKeyFrame *, int> > >::FindLessOrEqual(const TKey &, bool *) const [T = panorama::CStyleKeyFrame *, LessFunc = panorama::CUtlSortVectorCStyleKeyFramePtrLess, BaseVector = CUtlVector<panorama::CStyleKeyFrame *, CUtlMemory<panorama::CStyleKeyFrame *, int> >, TKey = panorama::CStyleKeyFrame *]
 int CUtlSortVector<panorama::CStyleKeyFrame *, panorama::CUtlSortVectorCStyleKeyFramePtrLess, CUtlVector<panorama::CStyleKeyFrame *, CUtlMemory<panorama::CStyleKeyFrame *, int> > >::Insert(const T &) [T = panorama::CStyleKeyFrame *, LessFunc = panorama::CUtlSortVectorCStyleKeyFramePtrLess, BaseVector = CUtlVector<panorama::CStyleKeyFrame *, CUtlMemory<panorama::CStyleKeyFrame *, int> >]
@@ -2393,6 +2414,7 @@ Invalid cHRM red point
 Invalid cHRM white point
 invalid chunklength
 invalid chunk type
+Invalid clip-path %s, expecting url(#...)
 invalid code lengths set
 invalid code -- missing end-of-block
 Invalid color quantization mode change
@@ -2494,6 +2516,7 @@ I/O error
 _<Ip@9
 IPanelImageSource
 IQuickTime001
+irC9K
 " is already defined.
 " is already defined (as something other than a package) in file "
 " is already defined in "
@@ -2545,10 +2568,14 @@ IyixJylx+
 ())+J)
 J- 	 
 J1Fy?
+J38Uv
 j48	C
 j48t^@
 j4xH;@
+j58b/
 j58hf@9(
+j58Z(
+J68]s
 @j!8!
 J-!8"
 j`8!i 8
@@ -2559,31 +2586,28 @@ j98Hki8A
 J9e:A
 J9Fy?
 ja8 i!8!
-Ja^9?
 J]A9_
 JA`9?
+JA[9?
 JA9iJ
-JaA9?
-Jac9?
-JAe9?
+JaE9?
 JaFy?
 JAFy?
-Jah9?
+JAG9?
+JaJ9?
 JAj9?
 ja_JP
-JaK9?
+JAL9?
 JaO9?
 japanese
-Jar9?
 JAt9?
+Jav9?
 java_generate_equals_and_hash
 java_generic_services
 java_multiple_files
 java_outer_classname
 java_package
 java_string_check_utf8
-Jaw9?
-J!b9?
 JB9hJ
 jBA9i"	)J
 JEIJJ}
@@ -2593,12 +2617,10 @@ JFIF extension marker: JPEG-compressed thumbnail image, length %u
 JFIF extension marker: palette thumbnail image, length %u
 JFIF extension marker: RGB thumbnail image, length %u
 JFIF extension marker: type 0x%02x, length %u
-J!Fy?
 J)Fy?
-J	Fy?
-J!g9?
 jH9i.A
 ji)8)
+J!I9?
 JiFy?
 JIFy?
 Jig8'
@@ -2620,7 +2642,7 @@ JPEGMEM
 JPEG parameter struct mismatch: library thinks size is %u, caller expects %u
 JqFy?
 JQFy?
-js8O*
+J!S9?
 JSConsoleOutput
 	JS_NORMAL
 	JS_NUMBER
@@ -2634,7 +2656,7 @@ jstype
 JSType
 jstype is only allowed on int64, uint64, sint64, fixed64 or sfixed64 fields.
 Ju@9_	
-Jul  3 2019
+Jul 11 2019
 jv8?)
 j*@y)
 J!@y)}@
@@ -2648,10 +2670,13 @@ _#(k#
 	K)}@
 *k2@y
 ?k58D
-?k68)
+k68Tr
 *?k78
+k78!'
 ?k78h
 k78La
+_k(8`&
+_k88_N
 (k:8Z
 k	@9)
 k!@9,xk
@@ -2904,6 +2929,9 @@ libSDL2.so
 libsteam_api.so
 libtier0.so
 libvstdlib.so
+Lifetime Svg allocs: %d
+Lifetime Svg File size read: %d
+Lifetime Svg texture allocs: %d
 lightblue
 lightcoral
 lightcyan
@@ -2930,6 +2958,7 @@ LINEAR_BGRA8888
 LINEAR_BGRX5551
 LINEAR_BGRX8888
 LINEAR_D24S8
+linearGradient
 LINEAR_I8
 LINEAR_RGB888
 LINEAR_RGBA16161616
@@ -2971,6 +3000,7 @@ lowercase
 &lt;Needs a description&gt;
 l!@y?
 L!@y?
+@-M) 
 M-"	"
 M-!8"
 M=@8M
@@ -3019,6 +3049,7 @@ materials/panorama/panorama_fancyquad.vmat
 materials/panorama/panorama.vmat
 materialsystem2
 MaterialUtils_001
+matrix
 MAX_ALLOC_CHUNK is wrong, please fix
     Max committed memory: %u KB out of %d KB
  max. %f
@@ -3089,6 +3120,7 @@ Minimum time that the mouse button must be down before a move is treated as a dr
 mintcream
 min-width
 Miscellaneous marker 0x%02x, length %u
+Missing close bracket in transform %s
 Missing colon
 Missing field: FileDescriptorProto.name.
 Missing Huffman code table entry
@@ -3111,6 +3143,7 @@ Missing IHDR before tEXt
 Missing IHDR before tRNS
 Missing IHDR before zTXt
 Missing name.
+Missing open bracket in transform %s
 Missing opening brace for @keyframe
 Missing PLTE before bKGD
 Missing PLTE before hIST
@@ -3118,6 +3151,7 @@ Missing PLTE before IDAT
 Missing PLTE before tRNS
 Missing semicolon
 mistyrose
+miter
 Mi,xH
 )MJJ }
 -=M]m}
@@ -3236,6 +3270,7 @@ N8panorama15IUIRenderEngineE
 N8panorama15IUIStyleFactoryE
 N8panorama16CImageLoaderTaskE
 N8panorama16CLoadFileURLTaskE
+N8panorama16CLoadFromSvgTaskE
 N8panorama16CUIEngineSource2E
 N8panorama16IUILayoutManagerE
 N8panorama17CImageProxySourceE
@@ -3249,6 +3284,7 @@ N8panorama18CRenderCommandListE
 N8panorama18CStylePropertyBlurE
 N8panorama18CStylePropertyClipE
 N8panorama18CStylePropertyFontE
+N8panorama18CSvgDecodeWorkItemE
 N8panorama18CTransformRotate3DE
 ?N8panorama19CMouseCursorTextureE
 N8panorama19CStylePropertyAlignE
@@ -3256,6 +3292,7 @@ N8panorama19CStylePropertySoundE
 N8panorama19CStylePropertyWidthE
 N8panorama19IDragStartCallbacksE
 N8panorama19ILocalizationStringE
+N8panorama20CImageDecodeWorkItemE
 N8panorama20CPanoramaVideoPlayerE
 N8panorama20CSource2UIFileSystemE
 N8panorama20CStyleFactoryWrapperE
@@ -3263,6 +3300,7 @@ N8panorama20CStylePropertyBorderE
 N8panorama20CStylePropertyHeightE
 N8panorama20CStylePropertyMarginE
 N8panorama20CStylePropertyZIndexE
+N8panorama20IImageDecodeWorkItemE
 N8panorama21CImageResourceManagerE
 N8panorama21CStylePropertyOpacityE
 N8panorama21CStylePropertyPaddingE
@@ -3404,7 +3442,6 @@ NetworkService_001
 NetworkSystemUtilsVersion001
 NetworkSystemVersion001
 nf@9/
-Nh"C9
 NhfH9(
 NHp@9
 Nin8/
@@ -3433,6 +3470,7 @@ Non-repeated field "
 Non-windows platforms don't support loading of JPG images
 Non-windows platforms don't support loading of PNG images
 Non-windows platforms don't support loading of TIFF images
+nonzero
 no-repeat
 normal
 Normalize3ComponentVectorInAttributes
@@ -3500,6 +3538,7 @@ OculusCV1Present
 OculusDK1Present
 OculusDK2Present
 OculusTouchControllerPresent
+offset
  of the Protocol Buffer runtime library, but the installed version is 
  of the Protocol Buffer runtime library, which is not compatible with the installed version (
 Oio8,
@@ -3712,6 +3751,7 @@ panorama/localization/panorama_%language%.txt
 panorama_nov8
 panorama/panorama.vrman
 @panorama_print_cache_status
+@panorama_print_svg_stats
 @panorama_reload_animations
 panorama RenderCommand_t memory stack
 Panorama Required Manifest
@@ -3847,8 +3887,11 @@ PNG load error %s
 png_set_background
 png_set_gAMA
 PNG unsigned integer out of range
+points
 polish
 PollingForSteamClientUpdate
+polygon
+polyline
 portuguese
 position
 positive_int_value
@@ -3927,7 +3970,6 @@ Qi"A)`
 *QI@)A
 qic<rid<
 qid<s
-	Qo9I
 Q/!OJ
 Quantization table 0x%02x was not defined
 Quantizing to %d colors
@@ -3935,7 +3977,7 @@ Quantizing to %d = %d*%d*%d colors
 QuarterSizeAttrWithBoxFilter
 QueuedLoaderVersion001
 QuitApp
-q"@y#)M
+q"@y#
 R- ) 
 R- @!
 R11_EAC
@@ -3952,6 +3994,7 @@ r@9ir@9
 RA9iR
 radial
 radial( 
+radialGradient
 raise
 RandomFloat
 RandomInt
@@ -4038,6 +4081,7 @@ RESOURCE_TYPE_PANORAMA_DYNAMIC_IMAGES
 RESOURCE_TYPE_PANORAMA_LAYOUT
 RESOURCE_TYPE_PANORAMA_SCRIPT
 RESOURCE_TYPE_PANORAMA_STYLE
+RESOURCE_TYPE_VECTOR_GRAPHIC
 RestartMachine
 RetryStyleReload
 RG11_EAC
@@ -4079,7 +4123,7 @@ right-wrap
 Rijj8
 RiN@9e
 Rir8!
-R?k78
+R?k78lx
 R(k)8
 R(kh8h
 R	m!9	
@@ -4089,6 +4133,7 @@ romanian
 <root><Panel>
 ro_RO
 rosybrown
+rotate
 rotate3d(
 rotate3d( 
 rotateX(
@@ -4346,6 +4391,8 @@ sint64
 %s is trying to import %s, but that file has already been included either from the layout file directly, or from a different @import.
 S`JEy
 S:ji8HJh
+skewX
+skewY
 "%s":%lld
 "%s":%llu
 %s://localhost%s
@@ -4450,6 +4497,7 @@ sprintf
 %s property listed in a keyframe but marked as cannot transition
 %spublic/shared/
 sqrtf
+square
 squish
 srgbgammatolinear
 "%s" = "%s"
@@ -4546,6 +4594,8 @@ SteamUtils009
 STEAMVIDEO_INTERFACE_V002
 %stemp%d.tga
 StopAudioSample
+stop-color
+stop-opacity
 StopStreaming
 StopStreamingAndSuspendClient
 /store/
@@ -4565,6 +4615,11 @@ STRING_PIECE
 strings::Substitute format string invalid: asked for "$
 string_value
 strlen
+stroke
+stroke-linecap
+stroke-linejoin
+stroke-opacity
+stroke-width
 strrchr
 strstr
 strtof
@@ -4585,6 +4640,7 @@ subtype mismatch
 Surface %p %s stats: %llu frames rendered in %.3f seconds, %.3fms per frame
 SuspendMachine
 Suspension not allowed here
+svg format not supported for default images, %s not loaded.
 sv_SE
 %sweb/shared/public/%s
 %sweb%s%s
@@ -4596,6 +4652,7 @@ Switch which class the panel has for a given attribute slot. Allows easily chang
 sY8	5
 &*Syg
 S@yJ}@
+symbol
 Symbol name "
 syntax
 syntax = "$0";
@@ -4618,13 +4675,11 @@ T 8@9B
 T$8@9C 
 T"8@9E(
 *T)8yv
-	!t9	
 T- 9*
 T" @9#$
 T"(@9#,
 T"$@9#(
 T( @9
-T(	@9
 T)	@9
 T# @9" 
 T# @9$$
@@ -4633,7 +4688,6 @@ T#(@9
 T#(@9"(
 T#$@9"$
 T#$@9$(
-T		@9?
 T",@9#0
 T#,@9$0
 T$ @9C
@@ -4657,10 +4711,10 @@ Tag '%s' was not closed
 TAy_!!k
 TbFEyaJEy?
 Tbhd8
+TC#_)@{@
 TCDFy 
 TCD@Q
 tchinese
-Tc"I)`"@
 Tc.J9
 Tc"L9
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<panorama::CFillBrushCollection::FillBrush_t, 1, short>, panorama::CFillBrushCollection::FillBrush_t, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<panorama::CFillBrushCollection::FillBrush_t, 1, short>, T = panorama::CFillBrushCollection::FillBrush_t, I = short]
@@ -4717,6 +4771,7 @@ T%h`8DPFy
 T$h`8EPFy
 Th"@9
 Th*@9
+TH	@9
 T#h@9B8
 T$H@9C(
 Th&@9h
@@ -4773,6 +4828,7 @@ ThN@9
 ThN@9L
 ThreadGetCurrentId
 ThreadInMainThread
+ThreadSetAffinityPreference
 ThreadSleep
 Thr@y
 th_TH
@@ -4852,6 +4908,10 @@ Top most panel should not have an ID. This ID is set in code
 ") to start from the outermost scope.
 total
     Total committed memory: %d KB
+Total No. of Svgs parsed: %d
+Total No. of Svgs rendered: %d
+Total Svg Parse Time (micros): %llu
+Total Svg Render Time (micros): %llu
     Total used memory:      %d KB
 toupper
 ".  To use it here, please add the necessary import.
@@ -4873,6 +4933,7 @@ transition-property
 transition-timing-function
 transition-timing-function: cubic-bezier( 0.785, 0.385, 0.555, 1.505 );</pre>
 transition-timing-function: ease-in-out, linear;
+translate
 translate3d(
 translate3d( 
 translateX(
@@ -4954,6 +5015,7 @@ Unable to load layout from string
 Unable to load snippet %s
 **** Unable to localize '#%s' on panel descendant of '%s'
 **** Unable to localize '#%s' on panel '%s'
+Unable to parse SVG '%s': %s
 Unable to read file %s
 Unable to save file
 Unable to save the following file, because it has changed on disk.
@@ -4967,7 +5029,9 @@ Unexpected failure while serializing option submessage
  unexpected for field 
 Unexpected marker 0x%02x
 Unexpected parsing error: line %d, col %d
+Unexpected parsing error - popping last remaining panel off stack, but not root element: line %d, col %d
 Unexpected parsing error - popping panel off empty stack: line %d, col %d
+Unexpected transform type
 unfocused
 Unimplemented Map Reflection API.
 Unimplemented type: 
@@ -4989,6 +5053,7 @@ unknown critical chunk
 Unknown(%d)
 Unknown enumeration value of "
 UNKNOWN_ENUM_VALUE_%s_%d
+unknown fill-rule value: %s
 Unknown filter method in IHDR
 Unknown freer parameter in png_data_freer
 unknown header flags set
@@ -4996,7 +5061,11 @@ Unknown interlace method in IHDR
 Unknown iTXt compression type or method
 Unknown panel type in style selector: %s
 Unknown sRGB intent
+unknown strokeLineCap value: %s
+unknown strokeLineJoin value: %s
+Unknown SVG attribute type
 Unknown;tenfoot
+Unknown transform type %s
 Unknown zlib error
 "UnlitGeneric"
 UnreadyForDisplay
@@ -5022,6 +5091,7 @@ US-ASCII
 -use_panel_id_in_rt_name
 UserInfoChangeService_001
 UserInputActive
+UsesSvg
 " uses the same enum value as "
 UTF-16
 UTF-8
@@ -5101,6 +5171,7 @@ VEngineCvar007
 vertical
 vertical-align
 V_ExtractDomainFromURL
+_V_ExtractFileExtension
 VFileSystem017
 V_FixDoubleSlashes
 V_FixSlashes
@@ -5121,6 +5192,7 @@ VideoPlayerInitAudio
 VideoPlayerPlaybackStateChange
 VideoPlayerRepeated
 vietnamese
+viewBox
 Virtual array controller messed up
 virtual bool panorama::CSource2UIFileSystem::LoadFileIntoBuffer(const char *, CUtlBuffer &, bool, panorama::FileChangeCallback_t, uint)
 virtual bool panorama::CUIEngineSource2::StartupSubsystems(panorama::IUISettings *, PlatWindow_t)
@@ -5208,6 +5280,8 @@ _V_strnicmp_fast
 V_strtod
 V_strtoui64
 V_StrTrim
+.vsvg
+vsvg_c
 vtex_dll
 V_UnqualifiedFileName
 V_UTF32ToUTF8
@@ -5224,11 +5298,13 @@ W8j*@
 Warning
 WARNING
 WARNING: CDirWatcher not implemented
+#<WARNING: Image '%s' size too large (%d x %d with limit %d x %d), image load failing
 !! WARNING: Panorama couldn't fetch all remote css included by %s, panel %s won't have correct layout loaded
 !! WARNING: Panorama couldn't fetch or got 0 byte result for layout %s, panel %s won't have correct layout loaded
 !! WARNING: Panorama couldn't read or parse %s, panel %s won't have correct layout loaded
 Warning parsing text-format 
 Warning:  %s = '%s' is infinite, clamping value.
+WARNING: %s used as background-image. Won't be resized on resolution change, full svg support for background-images not yet implemented.
 Warning: thumbnail image size does not match data length %u
 Warning: unknown JFIF revision number %d.%02d
 " was already set.
@@ -5287,6 +5363,7 @@ XInputPad
 XInputPad SteamPad SteamVRController
 Xix84
 _{*xl
+xlink:href
 xmlns
 XML parsing error: %s
 X-NotLoggedIn
@@ -5312,18 +5389,20 @@ $@y($@-
 @y?!7k
 @y	8@
 y	-%9
+y	-%9H
 y(@@9hB
 !@@ya
 yaA-A	!
 yaJEy
-@y)AJy
+@y)aJy
 yaNEy
 .%@y-A@y+
 @y))B
+@yBP=
 #@@yc
 y(eD9
 yellowgreen
-@y)	Fy
+@y))Fy
 @yh=@
 yhb@9
 yhb@9(
@@ -5344,11 +5423,12 @@ yi.@y)
 yi&@y?
 yi.@yj
 @yIy(x
-@yJ!$
 @yJ}@
 yjeD9J
+@yJ!Fy?
 )YJJ)}
 yjNAyiJ@
+@yJq	
 yjx+y*
 )!@yj!@y
 )!@yJ!@y?
@@ -5386,7 +5466,6 @@ yLX@9
 You must turn on @panorama_track_render_commands to track command usage.
 @y(Q*
 @yT}@
-)yUyJ
 !@yv}@
 @yV}@
 @y;{x
@@ -5396,10 +5475,11 @@ Y`x($
 @y(y4x
 @y	y5x
 #@y	y5xuBAy
-@y)YFy
-#@y)YFy
 #@y	y<x
 @y,!@y)	@y
+@y)yZy
+#@y)yZy
+_Z10DevWarningPKcz
 _Z13V_SplitStringPKcS0_R10CUtlVectorI10CUtlString10CUtlMemoryIS2_iEEb
 _Z13V_SplitStringPKcS0_R10CUtlVectorIPc10CUtlMemoryIS2_iEE
 _Z14V_stristr_fastPKcS0_
@@ -5503,6 +5583,6 @@ _ZTVN10__cxxabiv120__si_class_type_infoE
 _ZTVN10__cxxabiv121__vmi_class_type_infoE
 _ZTVNSt6__ndk118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE
 _ZTVSt12length_error
-zwx	[Fy
+zwx	{Zy
 {zx	=
 zzyx?

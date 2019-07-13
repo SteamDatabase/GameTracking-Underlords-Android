@@ -164,7 +164,7 @@
 37CTypesafeIntrospectedToKV3TypeManagerILy1818520950E15PermModelData_tE
 37CTypesafeIntrospectedToKV3TypeManagerILy440006569334E13CMorphSetDataE
  [%.3f server clamped to %.3f]
-3R)J!
+3S)J!
 46CInputLayoutRegistration_g_hSkeletonMeshLayout
 4h&@9
 4hb@9
@@ -213,8 +213,8 @@ A-!(!
 A-@ #
 a2@yh2@y
 A-'@A-
+	Ab9*
 	Ab9	
-	Ab9J
 ACT_IDLE
 Activity %s has %d sequences with a total weight of %d!
 ACTIVITY WEIGHTS
@@ -325,6 +325,7 @@ AssetBrowserSystem_001
 AssetPreviewSystem_001
 AssetSystem001
 AssetSystemTest001
+ A)	t@9
 ATTACHMENT_INFLUENCE_FLAGS_NONE
 attachment_offset
 Attempting to get the movement settings from model %s, for which movement settings have not been set.  
@@ -713,6 +714,7 @@ encoding
 ENCODING_TYPE_COUNT
 ENCODING_TYPE_OBJECT_SPACE
 ENCODING_TYPE_TANGENT_SPACE
+Encountered bad skin weights, summing to %g (1.0 expected) at position %.3f %.3f %.3f
 __end__
 EngineServiceMgr001
 EnvironmentMapBuilder_001
@@ -1022,7 +1024,7 @@ hf@9i
 hidden
 Hitbox indexing is incorrect for set %s, hitbox %s. Hitboxes will not be setup properly.
 H-@)J	@
-hj48[
+hj48e
 HostStateMgr001
 =h"R9_
 hR@y`
@@ -1031,7 +1033,7 @@ hR@yt
 hurt_me
 hurt_them
 h*@y_
-h&@y)yG
+h&@y)uG
 <	)@)i*
 *-@i)	
 _i(8j
@@ -1071,7 +1073,7 @@ IKRigSimple
 impacthard
 impactHardThreshold
 impactsoft
-Infinite Joint Weights encountered: Skinning will not work!
+Infinite Joint Weights encountered: Skinning will not work! (At position %.3f %.3f %.3f)
 InfoForResourceTypeCAnimationGroup
 InfoForResourceTypeCModel
 InfoForResourceTypeCPhysAggregateData
@@ -1125,8 +1127,9 @@ i)xhR@
 *i.xi>@yj:
 i>@yh
 iy*xi
-j88K/
-j(8	m
+J38.!
+J68!"
+j(8	i
 J-cb@
 J-dj@
 JEIJJ}
@@ -1144,9 +1147,9 @@ JointAxis_t
 JOINT_AXIS_X
 JOINT_AXIS_Y
 JOINT_AXIS_Z
-Joint Indices (%d) Out Of Range for SINT16: Skinning will not work ! 
-Joint Indices (%d) Out Of Range for UINT10: Skinning will not work ! 
-Joint Indices (%d) Out Of Range for UINT8: Skinning will not work ! 
+Joint Indices (%d) Out Of Range for SINT16: Skinning will not work!
+Joint Indices (%d) Out Of Range for UINT10: Skinning will not work!
+Joint Indices (%d) Out Of Range for UINT8: Skinning will not work!
 JOINT_MOTION_COUNT
 JOINT_MOTION_FREE
 JOINT_MOTION_LOCKED
@@ -1756,6 +1759,7 @@ m_nMinParticlesToEmit
 m_nNameHash
 m_nNext
 m_nNode
+m_nNodeBaseJiggleboneDependsCount
 m_nNodeCount
 m_NodeBases
 m_NodeCollisionRadii
@@ -1957,7 +1961,6 @@ m_qBaseOrientation
 m_qChildBindRotation
 m_qOffset
 m_qParentBindRotation
-m_qRotationOffset
 m_Quads
 m_Range
 m_ranges
@@ -2541,6 +2544,7 @@ Thin Plate
 ThJ@9
 ThrA9
 ThreadGetCurrentId
+ThreadMultiWaitObjectSetDestroy
 Th>@y
 Th.@y
 Ti5KJ(}
@@ -2582,7 +2586,7 @@ Unexpected end of file
 <unknown>
 Unknown
 unknown activity %d on for activity model %s!
-Unnormalized joint weights encountered (%f): Skinning may not work!
+Unnormalized joint weights encountered (%f): Skinning may not work! (At position %.3f %.3f %.3f)
 Unrecognized flag name '%s'
 Unrecognized resource version (%d): %s
 Unrecognized type '%d'
@@ -2672,7 +2676,7 @@ void CSchemaClassInfo::ValidateModuleLocalTypeScope()
 void CUtlBlockMemory<CacheOptimizedTriangle_t, int>::ChangeSize(int) [T = CacheOptimizedTriangle_t, I = int]
 void CUtlBlockMemory<Vector2D, int>::ChangeSize(int) [T = Vector2D, I = int]
 void CUtlBuffer::VaPrintf(const char *, va_list)
-void FillVBForAttribute(uint8 *, CMeshVertexAttribute *, const RenderInputLayoutField_t &, int &, float *, int &, float *, bool, bool, const Vector &)
+void FillVBForAttribute(uint8 *, CMeshVertexAttribute *, const RenderInputLayoutField_t &, int &, float *, int &, float *, bool, bool, const Vector &, int *)
 VP4003
 vpcf1
 vpcf10
@@ -2770,6 +2774,7 @@ V_vsnprintfWarnTrunc
 V_wcstoi64
 walkspeed
 Warning
+WARNING: Encountered %d total problems with vertex data (first %d shown above)
 WARNING: Failed to convert introspected block for file: %s
 WARNING: Invalid resource version (%d): %s
 Warning:  %s = '%s' is infinite, clamping value.

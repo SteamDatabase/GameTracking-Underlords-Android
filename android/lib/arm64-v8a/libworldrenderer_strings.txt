@@ -109,7 +109,7 @@
 20CTiltTwistConstraint
 20CWorldSceneObjectRef
 20IResourceTypeManager
-2	1*9s
+2	1+9s
 21CGrassTileSceneObject
 21IGrassTileSceneObject
 22CDefScriptAccessorBase
@@ -152,7 +152,7 @@
 27IStreamingEnvironmentMapMgr
 28CBoneConstraintPoseSpaceBone
 28ISchemaCollectionManipulator
-2	!+9
+2	!,9
 29CBoneConstraintPoseSpaceMorph
 2,	@9L
 2_BONE_IK
@@ -335,6 +335,7 @@ ai_model_info
 AIWalkable
 A	@}J!
 a.JY .I
+_<a%K
 AllocateAndLoad failed for '%s'
 AllocateAndLoad failed for '%s' (%s)
 AllocateResource: Cannot find DATA block in resource %s!
@@ -408,8 +409,8 @@ _attr_
 attrib
 Attribute counts between meshes is inconsistent
 auto_unragdoll_duration
-	av9	
 /AV?O!
+	aw9	
 B-1HD-
 *-B),5C)_
 B9)EG
@@ -901,6 +902,7 @@ E*!N%
 enable_limit
 encoding
 Encountered bad enum value "%s" for type %s, entity "%s" field "%s"!
+Encountered bad skin weights, summing to %g (1.0 expected) at position %.3f %.3f %.3f
 Encountered malformed keys in call to CallScriptFunction : "%s"!
 Encountered unknown entity i/o target type!
 Encountered unknown enum value %s for field %s
@@ -1291,7 +1293,6 @@ ib@9)
 ib@9j
 ib@9l
 ibA9JqG
-iBBy?
 I CUtlLinkedList<int, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short> >::AllocInternal(bool) [T = int, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int, CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int>, unsigned int> >::NewNode(const T *) [T = CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, I = unsigned int, L = CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int>, unsigned int>]
 I CUtlRBTree<CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
@@ -1306,7 +1307,6 @@ I CUtlRBTree<CUtlMap<RetargetKey_t, int, unsigned short, bool (*)(const Retarget
 I CUtlRBTree<CUtlMap<unsigned long long, WorldTraversal_t *, unsigned short, bool (*)(const unsigned long long &, const unsigned long long &)>::Node_t, unsigned short, CUtlMap<unsigned long long, WorldTraversal_t *, unsigned short, bool (*)(const unsigned long long &, const unsigned long long &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned long long, WorldTraversal_t *, unsigned short, bool (*)(const unsigned long long &, const unsigned long long &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<unsigned long long, WorldTraversal_t *, unsigned short, bool (*)(const unsigned long long &, const unsigned long long &)>::Node_t, I = unsigned short, L = CUtlMap<unsigned long long, WorldTraversal_t *, unsigned short, bool (*)(const unsigned long long &, const unsigned long long &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned long long, WorldTraversal_t *, unsigned short, bool (*)(const unsigned long long &, const unsigned long long &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<void *, int, bool (*)(void *const &, void *const &), CUtlMemory<UtlRBTreeNode_t<void *, int>, int> >::NewNode(const T *) [T = void *, I = int, L = bool (*)(void *const &, void *const &), M = CUtlMemory<UtlRBTreeNode_t<void *, int>, int>]
 !if8D
-iFByh
 )ih8Ii(8
 IHandleEntity
  ih<if@
@@ -1337,7 +1337,7 @@ In8hIh8jIj8mIm8kIo8nU
 #include is NULL 
 IncludeScript stack overflow
 IncludeScript Warning - Script %s either missing or empty
-Infinite Joint Weights encountered: Skinning will not work!
+Infinite Joint Weights encountered: Skinning will not work! (At position %.3f %.3f %.3f)
 InfoForResourceTypeCEntityLump
 InfoForResourceTypeCModel
 InfoForResourceTypeCRenderMesh
@@ -1390,6 +1390,7 @@ Inverse Multi Quadratic
 Invert Axes; 
 invert_orientation
 IQuickTime001
+iRBy?
 )is8	
 is_debris
 IsKeyValueUsed
@@ -1399,6 +1400,7 @@ iszString
 	iu8)
 	iu8i
 !iv<B
+iVByh
 iV@y(
 iV@yi
 i)xh~F
@@ -1416,13 +1418,12 @@ jiggle bone %u
 Jih8ji(8
 JIIJJ}
 Jikx_
-Ji/yM
 jj(8(
 JNI_OnLoad
 JNI_OnUnload
-Joint Indices (%d) Out Of Range for SINT16: Skinning will not work ! 
-Joint Indices (%d) Out Of Range for UINT10: Skinning will not work ! 
-Joint Indices (%d) Out Of Range for UINT8: Skinning will not work ! 
+Joint Indices (%d) Out Of Range for SINT16: Skinning will not work!
+Joint Indices (%d) Out Of Range for UINT10: Skinning will not work!
+Joint Indices (%d) Out Of Range for UINT8: Skinning will not work!
 j?@)p
 jr82"
 jr822
@@ -1463,6 +1464,7 @@ KV3 load transfer failed for resource '%s': %s
 KV3 load transfer failed: %s
 KV Conditional Evaluation Error
 K%@xl}
+	!@))L
 l6@)o
 l	@9,
 l	@9J
@@ -2068,6 +2070,7 @@ m_vInfluenceRotations
 m_VisClusterMemberBits
 m_visClusterMembership
 m_vLightingOrigin
+m_vLightmapUvScale
 m_vMaxBounds
 m_vMinBounds
 m_vOffset
@@ -2673,7 +2676,7 @@ target input not found
 Tc"A)`
 Tc"B)`
 Tc"[)`j@
-Tc"O)`:@
+Tc"P)`>@
 T *CUtlLeanVectorImpl<CUtlLeanVectorBase<CEntityKeyValues::KeyValueInfo_t, short>, CEntityKeyValues::KeyValueInfo_t, short>::AddToTailGetPtr() [B = CUtlLeanVectorBase<CEntityKeyValues::KeyValueInfo_t, short>, T = CEntityKeyValues::KeyValueInfo_t, I = short]
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<unsigned int, 9, short>, unsigned int, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<unsigned int, 9, short>, T = unsigned int, I = short]
 T*eA9_
@@ -2692,12 +2695,12 @@ TextLayout_001
 TextMessageMgr_001
 texturescale
 Th&@)
+Th^By
 The entity instance is too large for type %s! Make more components referenced!
 Thf@9
 Thin Plate
 thisEntity
 #This file is generated by CMesh::SaveObj() from CMesh with %d indices, %d vertices, %d attributes
-ThNBy
 ThrA9
 ThreadGetCurrentId
 Th>@y
@@ -2775,7 +2778,7 @@ Unknown image format in gameinfo.gi WorldRenderer/EnvironmentMapFormat. Defaulti
 unknown_variant_type
 UnmountWorldVPK() --%s is at refcount %d
 UNNAMED
-Unnormalized joint weights encountered (%f): Skinning may not work!
+Unnormalized joint weights encountered (%f): Skinning may not work! (At position %.3f %.3f %.3f)
 Unrecognized flag name '%s'
 Unrecognized resource version (%d): %s
 Unrecognized type '%d'
@@ -2910,7 +2913,7 @@ void CUtlBuffer::VaPrintf(const char *, va_list)
 void CUtlLeanVectorBase<CEntityKeyValues::KeyValueInfo_t, short>::EnsureCapacity(int, bool) [T = CEntityKeyValues::KeyValueInfo_t, I = short]
 void CUtlLeanVectorFixedGrowableBase<unsigned int, 9, short>::EnsureCapacity(int, bool) [T = unsigned int, N = 9, I = short]
 void DataDesc_ConvertTextDataToNewKeyValues(CEntityKeyValues *, KeyValues *, fieldtype_t, EnumIntrospectionHandle_t, bool)
-void FillVBForAttribute(uint8 *, CMeshVertexAttribute *, const RenderInputLayoutField_t &, int &, float *, int &, float *, bool, bool, const Vector &)
+void FillVBForAttribute(uint8 *, CMeshVertexAttribute *, const RenderInputLayoutField_t &, int &, float *, int &, float *, bool, bool, const Vector &, int *)
 void FloatBitMap_t::ConvertGammaToLinear(FBMGammaType_t)
 V?ORV?O
 voxel_vis_cluster_t
@@ -2981,6 +2984,7 @@ V_wcstoi64
 .vwnod
 walkspeed
 Warning
+WARNING: Encountered %d total problems with vertex data (first %d shown above)
 Warning: Error resource loaded for level %s
 WARNING: Failed to convert introspected block for file: %s
 WARNING: Ignoring invalid gameinfo MaxNetworkableEntities %d
@@ -3043,7 +3047,6 @@ Y80ijx
 #Y80ijx
 Y8Qikx
 #Y8Qikx
-	!y9	
 y+	@9km
 Yaw; 
 yaw_end
@@ -3068,6 +3071,7 @@ yNs*!
 Y nsZ n
 Y n)Y nJY nkY n
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
+@y)Q^y
 Y>t$7?*
 @yu&@
 _Z14V_stristr_fastPKcS0_
@@ -3076,6 +3080,7 @@ _Z17LoggingSystem_Logi17LoggingSeverity_tPK17LoggingMetaData_tPKcz
 _Z17LoggingSystem_Logi17LoggingSeverity_tRK14LeafCodeInfo_tPKcz
 _Z6DevMsgPKcz
 #Z80ijx
+	!z9	
 _ZdaPv
 _ZdlPv
 z:K(None)

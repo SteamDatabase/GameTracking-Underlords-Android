@@ -992,6 +992,7 @@ EmptyAnim
 "e" must be followed by exponent.
 enable_limit
 encoding
+Encountered bad skin weights, summing to %g (1.0 expected) at position %.3f %.3f %.3f
 __end__
 End-of-file inside block comment.
 ENetworkDisconnectionReason
@@ -1502,7 +1503,7 @@ in@9h
 Index must be -1 for singular fields.
 Index must be in range of repeated field values. 
 Index out-of-bounds (field is empty).
-Infinite Joint Weights encountered: Skinning will not work!
+Infinite Joint Weights encountered: Skinning will not work! (At position %.3f %.3f %.3f)
 infinity
 .init_array
 InputLayoutBuilder
@@ -1621,9 +1622,9 @@ JIIJJ}
 jj(8(
 JNI_OnLoad
 JNI_OnUnload
-Joint Indices (%d) Out Of Range for SINT16: Skinning will not work ! 
-Joint Indices (%d) Out Of Range for UINT10: Skinning will not work ! 
-Joint Indices (%d) Out Of Range for UINT8: Skinning will not work ! 
+Joint Indices (%d) Out Of Range for SINT16: Skinning will not work!
+Joint Indices (%d) Out Of Range for UINT10: Skinning will not work!
+Joint Indices (%d) Out Of Range for UINT8: Skinning will not work!
 	JS_NORMAL
 	JS_NUMBER
 JSON error, unterminated element: 
@@ -2962,7 +2963,7 @@ unknown
 " unknown.
 Unknown enumeration value of "
 UNKNOWN_ENUM_VALUE_%s_%d
-Unnormalized joint weights encountered (%f): Skinning may not work!
+Unnormalized joint weights encountered (%f): Skinning may not work! (At position %.3f %.3f %.3f)
 Unrecognized flag name '%s'
 Unrecognized resource version (%d): %s
 Unrecognized syntax: 
@@ -3086,7 +3087,7 @@ void COrderedConstructor_Create<COrderedInitShutdownRefWrapper<&EarlyInit_Common
 void CSchemaClassInfo::ReportClassError(const char *) const
 void CSchemaClassInfo::ValidateModuleLocalTypeScope()
 void CUtlBuffer::VaPrintf(const char *, va_list)
-void FillVBForAttribute(uint8 *, CMeshVertexAttribute *, const RenderInputLayoutField_t &, int &, float *, int &, float *, bool, bool, const Vector &)
+void FillVBForAttribute(uint8 *, CMeshVertexAttribute *, const RenderInputLayoutField_t &, int &, float *, int &, float *, bool, bool, const Vector &, int *)
 void ReconnectGameInterface(CreateInterfaceFn, const char *, GameInterfaceConnectionMode_t)
 VP4003
 vpcf10
@@ -3157,6 +3158,7 @@ walkright
 walkspeed
 Warning
 WARNING
+WARNING: Encountered %d total problems with vertex data (first %d shown above)
 Warning parsing text-format 
 Warning:  %s = '%s' is infinite, clamping value.
 WARNING: Trying to create a CRenderContextPtr without a valid context.
