@@ -18,6 +18,13 @@ rm -rf android
 ./tools/bin/jadx -ds android -dr android androidarm64.apk
 find android/ -type f > android/filelist.txt
 
+# dump protos
+
+rm -rf ./Protobufs
+dotnet ./tools/bin/ProtobufDumper.dll android/lib/arm64-v8a/libserver.so ./Protobufs/
+dotnet ./tools/bin/ProtobufDumper.dll android/lib/arm64-v8a/libsteamclient.so ./Protobufs/
+git add -f ./Protobufs/*.proto
+
 # strings libraries
 set +e
 for SOFILE in $(find android -type f -name '*.so'); do
