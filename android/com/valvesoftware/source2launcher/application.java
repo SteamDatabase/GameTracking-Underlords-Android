@@ -12,6 +12,7 @@ import java.util.Locale;
 
 public class application extends Application {
     IContentSyncAsyncTask m_ContentSyncAsyncTask = null;
+    private boolean m_bHasRunLauncher = false;
     private boolean m_bTriedBootStrap = false;
     LanguageCountryMap[] m_languageMap;
     private EPermissionsState m_nPermissionState = EPermissionsState.ENeedPermissions;
@@ -165,7 +166,6 @@ public class application extends Application {
     public void onBootStrapFinished() {
         this.m_ContentSyncAsyncTask.cancel(false);
         String GetString = Resources.GetString("VPC_LauncherBinaryName");
-        JNI_Environment.FindAndLoadNativeLibrary("libSDL2.so");
         StringBuilder sb = new StringBuilder();
         sb.append("lib");
         sb.append(GetString);
@@ -188,5 +188,13 @@ public class application extends Application {
 
     public void SetPermissionsState(EPermissionsState ePermissionsState) {
         this.m_nPermissionState = ePermissionsState;
+    }
+
+    public void SetHasRunLauncher(boolean z) {
+        this.m_bHasRunLauncher = z;
+    }
+
+    public boolean HasRunLauncher() {
+        return this.m_bHasRunLauncher;
     }
 }

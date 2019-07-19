@@ -235,7 +235,6 @@
 28CSosOperatorPauseSoundEvents
 28CSosOperatorRightAngleFloat3
 28ISchemaCollectionManipulator
-2	!/9
 2@96\@)
 29CSosOperatorCalcFixedRotation
 29CSosOperatorFloatAccumulate12
@@ -245,6 +244,8 @@
 29CSosSetSoundEventFieldsInfo_t
 29CVSoundEventScriptTypeManager
 29CVSoundStackScriptTypeManager
+2	a/9
+2	A)9
 	[%2d] %16.16s : %s (%d)
 (%2db) %6i : %s
 2ij(8
@@ -253,7 +254,7 @@
 2iqx_
 2irx_"0k
 2?"/k
-2?k78_
+2?k78W
 2_!-kc	
 2Ki)8x
 2L1@y
@@ -316,7 +317,7 @@
 6iz@y
 6kB@y
 6@y?!4kC
-6Y#J9
+6YcJ9
 *7`@)
 7	aB9
 7h"A9
@@ -341,6 +342,7 @@ _@8j.@
 `"@9	
 )!@9)
 )	@9?
+	!_9	
 	*	(@9
 		@9	
 @9	0@
@@ -381,14 +383,14 @@ A#@9
 A9)EG
 *%A9J
 AA9	I@
-)AB9?
+	aB9	
 Abort processing sound event %s (scheduled recursively will not process this frame)
-	aC9)
 accumulate_indexed_speakers
 Action Type
 ActionType_t
 Active ?: %s
 Active Voices: %d
+	aD9	
 Adding operator stack matching existing name: %s
 AddNewSoundEvent:  %s has a hash collision with existing %s
 Addon unloaded, unloading sound resources.
@@ -449,6 +451,7 @@ _A@k(
 allowstatic
 AllPass
 -altgameroot
+A-#mM
 (aN#(aN
 anchor_angles
 anchor_position
@@ -528,7 +531,6 @@ Ay
 B-" @
 B-(  
 B-1HD-
-	!B9	
 backward
 Bad Audio file '%s'
 Bad command in vmix!
@@ -938,7 +940,6 @@ d6@yc
 D-`8 
 D-!8 
 D-)8,
-	!D9	
 .data
 Data Count: %i
 .data.rel.ro
@@ -1336,7 +1337,7 @@ hJAy`
 hJAy	
 HostStateMgr001
 hr@9(
-hR@9)a
+hR@9)
 hr@9h
 hRA9jN@
 )H}	S
@@ -1416,6 +1417,7 @@ IKRigSimple
 il8lhl8_
  I@L	A
 import_public_opvars
+@-#IN
 #include
 #include is NULL 
 Incorrect sampling rate in %s (mp3 frames are at %dHz, .vsnd file has %dHz)
@@ -1749,7 +1751,6 @@ k2D)m:E)
 *k2@y
 k(8vV@
 K9y;xa
-KAA9(
 kAKJJ
 key_groups
 KeyValueCache001
@@ -2470,6 +2471,7 @@ Plat_ExitProcess
 Plat_FloatTime
 Plat_GetCPUFrequency
 Plat_GetEnv
+Plat_GetGameDirectory
 Plat_GetOSType
 Plat_GetProcAddresses
 Plat_IsHighDPI
@@ -2557,12 +2559,10 @@ PurgeAndDeleteAll: Deleting orphaned CSoundEvent pointer for %s via shutdown
 Purge and reload all vmidi data and files.
 	Q@9?
 	Q@9	
-	Q}9I
 ?	@qA
 	qA9	
 *qA9jq
 QAngle
-q)C89
 Qi"A)`
 Qj$xij0
 Qj/xnj0
@@ -2660,7 +2660,6 @@ rnd_up
 ROOM Detected 
 rootNode
 round_to_int
-r	Q=9_A
 Running snd_get_physics_surface_properties for %s mod.
 Running snd_set_physics_surface_properties for %s mod.
 ryjj8
@@ -3149,6 +3148,7 @@ Sustain target amplitude
 Sustain time (ms)
 %s| Virtual: %s; Abstract: %s; TrivialConstr: %s; TrivialDestr: %s
  : %s : vol: %4.2f, sndlvl: %4.2f 
+s@y!	
 s@yA	
 S@y	A
 s@yHC
@@ -3162,7 +3162,6 @@ T*-@9
 T*)@9
 T*%A9?
 T	!A9
-T?C89
 Tcih8
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<CSosPackedFieldData::Entry_t, 3, short>, CSosPackedFieldData::Entry_t, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<CSosPackedFieldData::Entry_t, 3, short>, T = CSosPackedFieldData::Entry_t, I = short]
 __temp_unserialization_member__
@@ -3358,6 +3357,7 @@ VAvi001
 VBAllocTracker001
 VBaseFileSystem011
 VBik001
+_V_ComposeFileName
 VConComm001
 V_cosf
 V_coshf
@@ -3575,8 +3575,8 @@ WorldRendererMgr001
 W@y	E
 	 x: %4f y: %4f z: %4f
 X#@9(?
+_x`AI
 xfade
-_x`qH
 =	/@y
 +	@y,
 	@y(-
@@ -3608,7 +3608,6 @@ yiv@y
 ykN@y
 ykO@y
 )ylxB
-@-#yM
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 y+O@y
 )!@y =p

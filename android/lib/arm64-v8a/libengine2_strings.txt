@@ -40,6 +40,7 @@ $0  }
  +0000
 00000000-0000-0000-0000-000000000000
 00010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899
+00:26:14
 0027015
 0027020
 $0// $1
@@ -248,8 +249,6 @@ $0 to $1,
 13IPrerequisite
 13ISoundService
 13IStatsService
-	149[
-	149Y
 14CAimConstraint
 14CAppSystemDict
 14CBaseAppSystemI10IAppSystemE
@@ -659,7 +658,7 @@ $0 to $1,
 18MenuItemCheckImage
 18ToolTraceRayResult
 -1@9_
-(!19@
+	1%9b
 !)19BJRZcks{
 19C2S_CONNECT_Message
 19CBidirMsg_RelayInfo
@@ -683,7 +682,6 @@ $0 to $1,
 19CTier2AppSystemDict
 19CVariantSaveDataOps
 19CVConCommandMessage
-	1+9E
 19IConsoleDisplayFunc
 19IDebugVisualizerMgr
 19IKeyValuesErrorSpew
@@ -699,10 +697,8 @@ $0 to $1,
 1DBlend
     1 = force cl_predict to 1
 1hqx2hrx?
-	1k9)
 1@)k=E
    -1 = let clients set cl_predict to anything
-	1N9i
 1 = Pause the game when pressing ~ to open the console. CTRL+~ opens the console without pause.
 1.QB!
 1 - resize right
@@ -718,7 +714,6 @@ $0 to $1,
 	2*	@
 	2		@
 200000
-20:05:43
 20CAsyncTrackingConvar
 20CBoundedCvar_CmdRate
 20CCLCMsg_ClientInfo_t
@@ -753,6 +748,8 @@ $0 to $1,
 20ISource2WorldSession
 20PacketEntitiesFilter
 20SpawnEntityToolEvent
+2	1&9"
+2	!19h)
 21C2S_CONNECT_Message_t
 21CBaseActionEditDialog
 21CBaseActionZoomDialog
@@ -945,6 +942,7 @@ $0 to $1,
 28INetworkStringTableContainer
 2_!8k
 2@9()
+2	!%9
 29CBaseActionCDTrackStartDialog
 29CBaseActionPlayCommandsDialog
 29CBaseActionStopPlaybackDialog
@@ -965,11 +963,7 @@ $0 to $1,
 29IToolGameSimulationDispatcher
 2,	@9L
 29ToolEvent_GetEntityInfoResult
-2	a19H)
-2	a%9
-2	A*9
 2	a@9Ia
-2	A 9s
 2	AA9
 2Ay)	
 2_BONE_IK
@@ -988,11 +982,10 @@ $0 to $1,
 2Gio8
 2	h(8
 2h"	9
-2h&	9
 2hb@9H
 2hBK9H
-2HC>9$
 2hj)8
+2hj)8("
 2hJ	9(
 2hr	9`
 2hR	9
@@ -1013,14 +1006,12 @@ $0 to $1,
 2j"@9)p
 2?".k
 2?k78
+2_k88
 2?k88
-2_k88C
 2kii8l}C
 2Kkj8k
 2L%@x+
 2 .ProtoFlattenedSerializerField_t"!
-2	q&9"
-2*Q-9
 2 - resize down
 2	u	9
 2Way_0( %s )
@@ -1113,16 +1104,13 @@ $0 to $1,
 48CBidirMsg_RelayPacket_SignedDestinationAddress_t
 48CNetworkClientSpawnGroup_WaitForChildSpawnGroups
 48CNetworkServerSpawnGroup_WaitForChildSpawnGroups
-	-49|
 4		@9
 49CNetworkClientSpawnGroup_LoadEntitiesPrerequisite
 49CNetworkClientSpawnGroup_LoadSaveGamePrerequisite
 49CNetworkServerSpawnGroup_LoadEntitiesPrerequisite
 49CNetworkServerSpawnGroup_LoadSaveGamePrerequisite
 &4@9R
-	-49z
 4Ayk(
-4AyK(
 4(cB9
 4CLog
 4CPVS
@@ -1179,8 +1167,6 @@ $4DTdt
 53CNetworkClientSpawnGroup_WaitForAssetLoadPrerequisite
 53CNetworkServerSpawnGroup_AllocateEntitiesPrerequisite
 53CNetworkServerSpawnGroup_WaitForAssetLoadPrerequisite
-	549:
-	5498
 54q`	
 55CNetworkClientSpawnGroup_AllocateSpawnGroupPrerequisite
 &'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz
@@ -1188,15 +1174,16 @@ $4DTdt
 ,5@9_
 )5@9)}
 	5@9)
+	5%9A
 59CNetworkClientSpawnGroup_WaitForOwnerSpawnGroupPrerequisite
 59CNetworkServerSpawnGroup_WaitForOwnerSpawnGroupPrerequisite
 *5@9J
 5@9J9
-	5A9i
 	5Ay*
 5CVEfx
 % 5d: % 5d
 %5d:  DispatchEvent( %s )
+	5e9)
 %5EUeu
 5h2I9h
 5h6I9
@@ -1207,7 +1194,6 @@ $4DTdt
 5h&D)
 5hf@9
 5hf@9(
-5h*I9(
 5h"J9i
 5h:N9H
 5hr@9H
@@ -1215,6 +1201,8 @@ $4DTdt
 5IVEfx
 5i.@y
 5(k|8
+	5L9i
+	5U9I
 ?6`*@
 ?6	(@
 /6`>@
@@ -1231,8 +1219,8 @@ $4DTdt
  6`"A
 (6`&A
 6Ay+}E
-6AyK(
-6AyY(
+6Ayk(
+6Ayy(
 `6`BD
 6ConVar
 _6	D@
@@ -1254,7 +1242,6 @@ _6	D@
 6h2N9
  6h6@
 (6h6@
-6h6]9
 '6h^A9	
 @6hb@
 @6hB@
@@ -1380,8 +1367,6 @@ _6inA9
 7hf@9(
 7hF@9
 7hf@9h
-7h"I9(
-7h&I9
 7h:K9
 7ib@9
 7ib@9i
@@ -1472,6 +1457,7 @@ _=8q	)
 _8X,@8
 8x9,7
 _8y,@8
+ @9)$
  @9	$
 --@9_
 -!@9_
@@ -1485,17 +1471,20 @@ _8y,@8
 )=@9)}
 )!@9)
 )	@9*
+@@9	"
 @9)!@
 @9)&@
 @9*&@
 @9*	@
 @9+	@
 $@9	(
+#)9	+
 	)@9)
 	)@9*
-	)%9&
+	)%9*
 	@9*]
 ,@9	0
+	-%90
 @90	@9
 9	0@9i
 @91#@92
@@ -1518,6 +1507,7 @@ $@9	(
 @9+	@9
 @9+	@9)
 	9@9)
+	9%9{
 9,	@9)
 9*	@9)
 9*	@9*
@@ -1533,10 +1523,9 @@ $@9	(
  @9	$@9JuF
 @9+	@9K
 @9a2@
-	9A9i
 @9-b@
 @9*b@
-	%;9c
+	!%9c
 @9)+C
 @9	}C
 	9C%A
@@ -1557,8 +1546,8 @@ $@9	(
 9CRegistry
 9	D@8
 9*E@8?
+	9e9i
 @9E-@9U
-	9F9i
 @9h*@
 "@9H	
 (@@9H
@@ -1617,7 +1606,6 @@ $@9	(
 @9iR@9h 
 9IRegistry
 9ISequence
-		.9ix
 )9IYiy
 @9j&@
 *=@9J
@@ -1647,7 +1635,6 @@ $@9	(
 9kj(8|
 9Kkj8k
 9Kkj8k}
-	!;9l
 @9L	@9l
 @9L=@9M
 9l"A9
@@ -1676,40 +1663,43 @@ $@9	(
 @9R1@9D
 9	S)M*
 @9T|@
-	9t9i
 @9T)@9K
 (@@9tB
 @9U|@
-		+9v~
-	}%9V
+	9U9I
+	=%9V
 @9V%@9W
 @9-{vx
 @9){vxl
 /9W?O
 /9W?OZ
+	)%9x
 @9+	@yHA
 @9+	@yHM
 9y*xi
 @9 	@z
+	%%9Zf
 'A)	}	
 #@)`~A
 A-!(!
 A)`~@
+A09&f
 a1 "%i"
+(a29r
 a2 "%i"
 a2@yh2@y
+	A69+
 a8#%D
 _A8qh
 +a@9?
 	!A9?
 		A9?
 		A9	
-	A`9?
 	A@9)
 	A@9)	
+	A%91
 a@9+a
 a@9	a
-	a%9c
 A9)eG
 		A9h
 	A9h&A
@@ -1717,10 +1707,7 @@ A9)eG
 ^A9i^
 "A9i"
 *	A9i
-	=A9i
-	A[9i
 	A@9i
-	A\9i
 A9i>@
 	A@9I
 A9	ii
@@ -1732,7 +1719,8 @@ A9|J@
 +	A9K
 A9Kik
 +	A9lC
-A-9?Q-9_
+	A(9o
+	A,9;s
 ?A9tJ@
 A-'@A-
 AA9(	
@@ -1740,7 +1728,7 @@ AA9(	@
 A(aN!
 $	A)Ar
 a^  b
-ab@9<+
+ab@9B+
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 aBI9J
@@ -1839,6 +1827,7 @@ AddUInt64
 Adobe APP14 marker: version %d, flags 0x%04x 0x%04x, transform %d
 !	A)Dr
 AE- "#
+	Ae9i
 AE_ACTION_SET_TURN_RATE_SCALE
 AE_BLIND_ZOMBIE_SNIFF
 AE_CL_ADD_PARTICLE_EFFECT_CP
@@ -1874,11 +1863,13 @@ After selecting and moving a panel Ctrl-z will undo the move.
 after solve err=%f
 After this many seconds without a message from fully connected client, the client is dropped
 After this many seconds without receiving a packet from the server, the client will disconnect itself
-	ag9	
+)Ag9?
+	Ag9i
 A game file appears to be missing or corrupted.  In the Steam client go to the game's properties.  In the 'Local Files' tab select 'Verify Integrity of Game Cache' to have Steam double-check the game's installation.
 A-gBA-
 Agg data %d: %p (%d parts, crc 0x%08X)
 aggregate_value
+	Ah9i
 <a href=
 a "%i"
 A!;I2
@@ -1887,8 +1878,9 @@ ai_model_info
 .A)iN@
 AIWalkable
 A	@}J!
-)Aj9?
+	Aj9	
 a.JY .I
+	AL9i
 alias
 Alias a command.
 ALIGN_TYPE is wrong, please fix
@@ -1990,7 +1982,6 @@ application
 Application
 Application "
 Application built with libpng-
-Application .exe "%s"
 ApplicationInfo
 Application transferred too few scanlines
 Application transferred too many scanlines
@@ -2012,6 +2003,7 @@ App UI Language: %s, convar %s
  a protocol 
 A protocol message was rejected because it was too big (more than 
 A\@Q!`
+	AQ9I
 A@qA	
 archive
  args were given.  Full format string was: "
@@ -2046,7 +2038,6 @@ As the clock offset goes from cl_clock_correction_adjustment_min_offset to this 
 AsyncBeginRenderingViews
 async_serialize
 async_track_all
-	At9i
 \ at end of pattern
 ATI1N
 ATI2N
@@ -2075,6 +2066,8 @@ attrib
 Attribute counts between meshes is inconsistent
 attributes
 Attribute "%s" was defined more than once.
+	aU9I
+	AU9I
 audible_mask
 audio
 AudioLanguage
@@ -2100,16 +2093,6 @@ Auto Update - any changes apply instantly.
 auto_wide_tocontents
 [a:%u:%u]
 [A:%u:%u:%u]
-	Av9_
-	Av9_]
-	Av9_	
-	Av9*3
-	Av9j3
-	Av9J3
-	Av9_Q
-	Av9s3
-	Av9t3
-	Av9T3
    Average frame time: %f ms (%f FPS)
 avg_data_in
 avg_data_out
@@ -2120,14 +2103,10 @@ avg_loss_out
 avg_packets_in
 avg_packets_out
 /AV?O!
-	AW9i
-	AX9i
 A{"xB
 Ax_! k
-	AY9i
 A@yi*@
 A)`z@
-	AZ9i
 AZUy!
 =	)B)
 	*`"B
@@ -2138,10 +2117,10 @@ b1 "%i"
 b2 "%i"
 *-B),5C)_
 B@9	A
+b+9h"
 ^B9h^
 b@9hb
 b"@9i
-	-B9i
 b@9ib
 bA9hb
 BA9hB
@@ -2469,7 +2448,6 @@ Button.DepressedTextColor
 Button.FocusBorderColor
 ButtonKeyFocusBorder
 ButtonToggled
-&B)v+
 byte COM_BlockSequenceCRCByte(byte *, int, int)
 bytes. 
 Byte size calculation and serialization were inconsistent.  This may indicate a bug in protocol buffers or it may be caused by concurrent modification of 
@@ -2486,11 +2464,9 @@ C2S_CONNECTION_Message
 C2S_CONNECT_Message
 C-!8"
 (c@9+
-_C>9(
 C9an@
 C9fj@
  c@9!g@9"
-_C-9_Q-9
 cA9s~
 cable
 cache/DownloadCache.db
@@ -2625,6 +2601,7 @@ CBidirMsg_RebroadcastSource
 CBidirMsg_RelayInfo
 CBidirMsg_RelayPacket
 CBitmapImagePanel
+cBL9"
 CBoneConstraintBase
 CBoneConstraintPoseSpaceBone
 CBoneConstraintPoseSpaceBone::Input_t
@@ -2780,6 +2757,7 @@ CFinalizeConnectionPrerequisite
 CFingerBone
 CFingerChain
 CFingerSource
+cFL9"
 CFootDefinition
 CFrameSnapshot CUtlMemoryPoolMT
 c^Fy"
@@ -3909,6 +3887,7 @@ D24FS8
 D24X4S4
 D24X8
 D24X8_SHADOW
+d2@y	
 *-D),5E)_
 d6@y#
 d6@yc
@@ -3919,9 +3898,7 @@ D@8)%
 D@9_ 
 D9{6@
 D9i.A
-	!d9j3
-	!d9J3
-D9vJG
+D9vBG
 -dac_offline
 %d addons loaded
 ,DA)R
@@ -4292,9 +4269,11 @@ dynamic_interaction
 .dynsym
 -@))=E
 E-!("
-	-e9i
-	}e9i
-	e%9Zr
+	E69"6
+	-e9)
+	E,92
+	E(9f7
+	=e9i
  *Each frame will render %d times*
 echoln
 Echo log information to the console.
@@ -4309,7 +4288,6 @@ editable
 EditMenu
 Edit %s Action
 E-evA
-	EF9i
 effect
   effect %d, color1(%d,%d,%d,%d), color2(%d,%d,%d,%d)
 , efficiency class %lld
@@ -4320,6 +4298,7 @@ ehandle
 .eh_frame
 .eh_frame_hdr
 eikonal
+	EL9i
 element
 element_array
 elementid
@@ -4557,10 +4536,10 @@ Escape key doesn't show game UI
 Escape key pressed.
 ESplitScreenMessageType
 .ESplitScreenMessageType
-	Et9i
 ETC compression not supported on this target .
 ETC_TEXTURES
-	eU9)
+	eU9I
+	EU9I
 event
 EventAdvanceTick_t
 EventAppShutdown_t
@@ -4713,6 +4692,7 @@ Extensions of MessageSets must be optional messages.
 Extensions to non-lite types can only be declared in non-lite files.  Note that you cannot extend a non-lite type to contain a lite type, but the reverse is allowed.
 extra interior spaces removed from keyword
 extreme cHRM chunk cannot be converted to tristimulus values
+	ey9)
 F-!($
 F-%:%
 *-F),5G)_
@@ -5230,10 +5210,10 @@ g6i^@
 G6iBA9
 G6v.@
 (g@9.
+	!g9	
 %g: AdvanceTime ticks this frame %d, sim remain: %g
 -game
 /game/
-Game base directory "%s" doesn't match root dir "%s"
 GAMEBIN
 Game cannot launch without explicit commandline flag: %s
 game.cfg
@@ -5586,11 +5566,12 @@ h7Ay
 h)8Ay)
 @H`8b
 =h"	9
-h:]9(
+*h*]9
 h"@9(
 h"@9)
 h"@9)$
 h"@9	
+h"@9	$
 `H9)}
 ?h98a
 h"	9a
@@ -5602,7 +5583,6 @@ h*@9h/
 h*\9h
 *h"@9H
 h.@9H
-h"@9i
 h"@9I
 h:	9i>	9
 H9)yx
@@ -5651,6 +5631,7 @@ hB.y(5
 *hB.yK
 hB.yM1
 HC333?
+*hc&9H
 hC@9h
 hcB9(
 headtype
@@ -5715,7 +5696,6 @@ hj58Xn
 hj|8H
 hj)8H'@
 hj8li*8J
-*hJ]9
 h"J9a
 h"J9b^A
 h"J9i
@@ -5801,7 +5781,7 @@ hrEy)
 hrEy	#
 hrEyi
 hrEyu
-hrf9(
+hrf9H
 )hrG9
 hrG9H	
 hrG9t
@@ -5833,20 +5813,21 @@ hzT9h
 hzT9`zA
 	*	i*
 	*I}`
+	I09;f
 i2@9(
 i2@9j
 %i %3i.%3i.%3i.%3i : %.3f min
 %i %3i.%3i.%3i.%3i : permanent
+	I69@
 i6@yh
 i78w"B
 i7xh6@
 _i(8+
-?i(8"
 	*	i8
 	I*8)
 i)8a^A
 *i(8B
-?i(8C
+?i(8e
 ?i(8h
 ?i(8h*@
 i-8h*@
@@ -5863,13 +5844,13 @@ i*8j&W
 i(8m&W
 ?i(8v
 i*8?y*xJ
-	i%9*
 i"	9@
+	i99m
 I9`BA
 I9))D
 )I@9I
 i"@9J
-	i%9x
+	I,9Ps
 IAppSystem *CAppSystemDict::AddSystem(const char *, const char *, ErrorResponse_t)
 IAppSystem *CAppSystemDict::AddSystem(CreateInterfaceFn, const char *)
 IAppSystem *CAppSystemDict::AddSystem(IAppSystem *, const char *)
@@ -5996,7 +5977,6 @@ If the clock offset is less than this amount (in milliseconds), then no clock co
 * If the error cannot be reproduced, and/or happens at different
 ". If this is intended, set 'option allow_alias = true;' to the enum definition.
 If true when log when a query is blocked (can cause very large log files)
-If you have special characters in your install path this may be confusing the game.
 IgnoreScheme
 	"$ignorez" "1"
 Ignoring attempt to set cHRM RGB triangle with zero area
@@ -6097,6 +6077,7 @@ IKRigBiped
 IKRigBug
 IKRigSimple
 il8k	@
+	IL9i
 Illegal jstype for int64, uint64, sint64, fixed64 or sfixed64 field: 
 )ilxi
 ilxMik8	i,x
@@ -6414,7 +6395,6 @@ isgame
 is_headless
 ishltv
 is_hltv
-is in an unsupported path for game "%s"!
 IsKeyValueUsed
 is_listenserver_host
 is_loadsavegame
@@ -6458,6 +6438,8 @@ items
 items_clientside
 items_t
 *)iu8)}
+	iU9I
+	IU9I
 %i users
 [i:%u:%u]
 [I:%u:%u]
@@ -6479,22 +6461,21 @@ IyixJylx+
 j.])	
 @ @-J
 j2	)k
-j38eY
 j48	C
 j48h"
 j48t^@
 j4xH;@
-j58H%
+j58h%
 j58hf@9(
 j58"l
+j58u	
 j68($
+j68H$
 j68u"@
 j68X"
 j7Ayh3Ay)	
-j88B5
 j)8hjj
 j(8(Z@
-	!j9	
  J9?@
 $J9!|
 J!@9_
@@ -6606,7 +6587,7 @@ jstype is only allowed on int64, uint64, sint64, fixed64 or sfixed64 fields.
 js_value
 @@J	t
 /JU7OB
-Jul 11 2019
+Jul 18 2019
 Jumping to random tick %d (%.2f min)
 Jumping to %s
 just happens to cross-check the results of huge numbers of
@@ -6631,15 +6612,14 @@ K1@yk
 *k2@y
 ?k58D
 K5@yk
-?k68i
-k7834
-k7886
-?k78a/
-k78:F
+k68aS
+*?k78
+k786D
 ?k78h
-*?k78kQ
 ?k)8(
 _k88?
+?k88_
+_k88l/
 ?k88w
 (k;8H
 k(8vV@
@@ -6844,7 +6824,7 @@ kn1V?OK
 :(knN
 Known by handlers: 
 Known Peer State "%s"
-	*kQ4
+	*kQ9
 Kq@yk
 KQ@yk
 K)T9J!P9j
@@ -6858,7 +6838,7 @@ kv 0x%p Release refcount == %d
 kv3format_manager.cpp
 KV3 load transfer failed: %s
 KV Conditional Evaluation Error
-	k!x,
+	k!x1
 K%@xl}
 kx`xj}
 k	@y)
@@ -6878,7 +6858,7 @@ L %02i/%02i/%04i - %02i:%02i:%02i: %s
 l4d360uischeme
 l	@9,
 "L9`2
-	}L9i
+	=L9i
 l	@9J
 la@9L	
 L	A9mC
@@ -6922,6 +6902,7 @@ LayoutFileChanged
 lb@9l
 LC_ALL
 L=cl_clock_correction
+LCr9j
 %ld%c
 leading_comments
 leading_detached_comments
@@ -7162,9 +7143,10 @@ LrwcE
 lseek
 %ls [wstring, len = %d]
 [L:%u:%u]
-	M49b
-	M49d
-	m%90
+	M699
+	M(9<
+	m99?
+	M99X
 m%@9i)
 m	A9j"
 Machine
@@ -7407,7 +7389,6 @@ m_drawCalls
 m_drawCullData
 m_dynamicParams
 m_dynamicTextureParams
-	me9)
 media/l4d2_background%02d.bik
 m_eHand
 m_elems
@@ -7649,6 +7630,7 @@ m_JointName
 m_Joints
 mkdir
 @mk%@y
+	ML9i
 m_lightCookie
 m_LoopState
 -=M]m}
@@ -7825,6 +7807,7 @@ Moves the camera position + orientation to the named entity
 Moves the camera position + orientation to the specified position
 ?Movie
 movie/%04d_%02d_%02d_%02d_%02d_%02d/%s
+	mP9i
 m_parentName
 m_PathIndex
 m_pAttributes
@@ -7951,10 +7934,8 @@ m_vTintColor
 m_vTipOffset
 m_vUpLS
 m_vUpVector
-	Mw9i
 m_worldGroupId
 m_wristBones
-	mz9i
 "N(  
 #N)	}	
 N}[ .=
@@ -8045,7 +8026,6 @@ N6snappy6SourceE
 (_N8H
 !n9[ .
 [ n9+a
-	-N9u
 ,.n*a
 n	A9-
 nA9hn
@@ -8308,7 +8288,6 @@ no destinations! (file or console)
 -nodev
 No display adapters found. Falling back to software rasterizer
 no error
--noexecheck
 No existing hint file %s
 <NO EXPRESSION>
 <no failure reason set>
@@ -8671,6 +8650,7 @@ Overrides the SourceTV master root address.
 oversubscribed distance tree
 oversubscribed dynamic bit lengths tree
 oversubscribed literal/length tree
+O@yv&
 !OZW?O
 p2p_listpeers
 p2p_ping "%s"
@@ -8682,7 +8662,6 @@ p6jf@
 p6jR@
 p7v	P7
 P7x"@
-	%P9I
 "pA3QuW
 package
 package $0;
@@ -8949,6 +8928,7 @@ Plat_SetCurrentFrame
 Plat_SetDefaultMonitorIndex
 Plat_SetDesktopNotifyIconPath
 Plat_SetFullscreenMinimizeOnFocusLoss
+Plat_SetGameDirectories
 Plat_SetMainWindowSwapChainScale
 Plat_SetVirtualReserveWarnLimit
 Plat_SetWatchdogHandlerFunction
@@ -8960,7 +8940,6 @@ Plat_ShutdownCOM
 Plat_TickDiffMilliSec
 Plat_TickDiffMilliSecF
 Plat_TicksAfterMilliSecs
-Plat_TranslateSymbolicLinks
 Plat_UnloadModule
 Plat_UnloadSDL
 Plat_VerifyHardwareKeyPrompt
@@ -9256,10 +9235,10 @@ PVS cluster %d
 pvs.cpp
 PVS origin %s
 py_generic_services
-	Q49A
-	Q49C
-!q9	+
-	q%9b
+	Q6905
+	Q997
+	q99X
+	q$9gd
 *Q@9j
 Q(aNf(!
 qangle
@@ -9268,7 +9247,9 @@ qangle_array
 QAngle-world
 q(	AzK
 QB)5}@
+	Qb9I
 	QB9i
+)QC9?
 QE@yk
 *	qG9)
 	qG9)
@@ -9284,11 +9265,13 @@ qJT-s
 @QK,	
 qknG9
 q	kw8A
+	Ql9i
 Q/!OJ
-	QQ9I
+	qP9i
         qsort [0x%x, 0x%x]   done %d   this %d
 	qSy)
 *qSyJ
+	qU9I
 quality
 quality %d 
 quality software.  Thanks.  Julian Seward, 30 December 2001.
@@ -9747,7 +9730,7 @@ RIO_WILL_RELAY
 Rjjh8hB
 rJMJJ
 RJ	* &v
-R?k78+Z
+R?k78yY
 R?k)8
 R(k)8
 R(kh8
@@ -9768,6 +9751,7 @@ Route voice between splitscreen players on same system.
 RP_PAUSE
 RP_TOGGLEPAUSE
 RP_UNPAUSE
+r	Q"9_A'9c
 r_randomizememstacks
 r_render_coordination_state
 r_rendersun
@@ -9795,7 +9779,7 @@ r_stereo_eye_separation
 r_stereo_mode_anaglyph
 r_stereo_mode_crossed
 r_stereo_mode_parallel
-Rtj(8L
+Rtj(8
 r_toggleviewportsize
 r_translucent
 rt+rld
@@ -10477,8 +10461,6 @@ Socket listen failed (%s)
 Socket ProcessAccept Error: %s
 Socket unable to create socket (%s)
 s off
-/softlinks/
-\softlinks\
 %s:  OnSpawnGroupActivate
 %s:  OnSpawnGroupActivate (CreationSequence=%d)
 %s:  OnSpawnGroupDeactivate
@@ -10652,7 +10634,7 @@ Sqrt( %s )
 src_corner_height
 src_corner_width
 src/public/tier0/platform.h
-\src\shaders\
+..\src\shaders\
 %s Received SpawnGroup_LoadCompleted on client '%s'
 %s:reconnect
 %s:  RegisterPrerequisite %s
@@ -10746,7 +10728,7 @@ ss_remove %d
 ss_voice_hearpartner
 ss_waitingforgamesessionmanifest
 %s:  SyncUnloadSpawnGroup shutdown/destroy...
-=	St$
+=	St(
 __stack_chk_fail
 Stack depth limit hit (%d)
 stackstats_dump 
@@ -11250,8 +11232,6 @@ T#$@9D
 T#$@9D(
 T#,@9D0
 T#\@9D0
-	=t9i
-	]t9i
 T*9	S
 T	/A)
 T	a@9
@@ -11576,7 +11556,6 @@ TizEyJ
 Tj2@9j
 Tj2B9)
 Tj6@y_! k
-tj(8O
 T`"J9
 Tj"@9J
 TjkA9k'@
@@ -11854,17 +11833,17 @@ TYPE_UINT64
 Typing Enter in any text field applies changes.
 T"zrx
 \U%08x
-	U49 
-	U49"
 u64( %lld = 0x%llX )
+	U69N
 )U7O{
-	u%9A
-	}U9I
+	%U9)
+	u99O
+	=U9I
+	-U9I
 %u CPU%s
 %u[%d]
 udp/ip   : %s:%i
 udp_port
-	ue9)
 -uidev
 UILanguage
 uint16
@@ -11873,7 +11852,6 @@ uint64_array
 uint8
 uint8_array
 UISubLanguage
-	uL9i
 %u MB
 Unable to capture %s virtual memory information
 Unable to capture virtual memory information
@@ -12137,13 +12115,12 @@ UsesVGui
 usetitlesafe
 Using 10-bit blend indices: are you sure they are supproted on the target hardware?
 Using 16-bit blend indices
-	Ut9i
 UTF8)
 UTF-8 data when 
 utlbuffer.cpp
 utlstring.cpp
 utlstringtoken
-	uU9I
+	UU9I
 %u:%u:%u
 [U:%u:%u]
 [U:%u:%u:%u]
@@ -12472,7 +12449,7 @@ void COrderedConstructor_Create<COrderedInitShutdownRefWrapper<&EarlyInit_Common
 void crash_error(const CCommandContext &, const CCommand &)
 void CSchemaClassInfo::ReportClassError(const char *) const
 void CSchemaClassInfo::ValidateModuleLocalTypeScope()
-void CTier1AppSystemDict::SetModPath(const char *)
+void CTier1AppSystemDict::SetModGameSubdir(const char *)
 void CTier2AppSystemDict::MountAddonInternal(const char *, bool)
 void CTier2AppSystemDict::SetAllowAddonChanges(bool)
 void CTier2AppSystemDict::UnmountAddonInternal(const char *, bool)
@@ -12869,10 +12846,12 @@ Y80ijx
 #Y80ijx
 Y8Qikx
 #Y8Qikx
-	y%9{
+	y&92
+	y99m
+	]y9I
 @y?!9k
 y+	@9km
-@y)aHy
+@y)AHy
 Yaw; 
 yaw_end
 yaw_start
@@ -12880,6 +12859,7 @@ yaw_start
 @.yb4
 YB)5}@
 @.yB8
+	YB9I
 Y@    block %d: crc = 0x%8x, combined CRC = 0x%8x, size = %d
 +%@yBy|
 @yc|	
@@ -12887,7 +12867,6 @@ Y@    block %d: crc = 0x%8x, combined CRC = 0x%8x, size = %d
 y#	@=c
 yC	@}c
 @y+}E
-	ye9i
 y "%f"
 #@yh^
 yh2@y
@@ -12946,8 +12925,9 @@ you_hear_them
 Your current chat group is "%s"
 @yO	@y
 y(qSy
-	yU9I
+	YU9I
 yuJ	9(a@
+	Yv9)
 @y	WDy
 Y`x($
 (y{x7
@@ -12970,6 +12950,7 @@ _Z6ConMsgPKcz
 _Z6DevMsgPKcz
 #Z80ijx
 Z*=@8H
+	-z9i
 #@)`zA
 ZA9iZ
 ZB9hZ
@@ -13001,7 +12982,6 @@ _ZN12CThreadEventC1Eb
 _ZN12CThreadFiberC1Em
 _ZN13CBufferString10ExtendPathEPKcc
 _ZN13CBufferString10FixSlashesEc
-_ZN13CBufferString11ShortenPathEv
 _ZN13CBufferString11ToLowerFastEi
 _ZN13CBufferString12AppendConcatEiPKPKcPKib
 _ZN13CBufferString12AppendFormatEPKcz

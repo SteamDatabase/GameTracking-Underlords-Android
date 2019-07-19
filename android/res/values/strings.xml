@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Native_AppOutOfDate">A new version is available in the App Store. It is required for online play.</string>
+    <string name="Native_AppOutOfDateOpt">A new app version is available</string>
+    <string name="Native_AppOutOfDateReq">A new app version is available. It is required for online play.</string>
     <string name="Native_AppUpdateTitle">New Version Available</string>
     <string name="Native_Cancel">Cancel</string>
     <string name="Native_ConfirmCellular">Preparing to download %d megabytes of Content - Proceed with download over cellular connection?</string>
     <string name="Native_ConfirmDownload">Proceed with %d megabyte Content download?</string>
     <string name="Native_ContactingServer">Contacting Server</string>
+    <string name="Native_DownloadAppUpdate">Download latest app</string>
     <string name="Native_DownloadError">An Error Occurred</string>
     <string name="Native_DownloadErrorDownload">Unable to download content file</string>
     <string name="Native_DownloadErrorManifest">Unable to download manifest</string>
@@ -17,6 +20,7 @@
     <string name="Native_DownloadUpdate">Download latest update:</string>
     <string name="Native_DownloadingContent">Downloading Content</string>
     <string name="Native_Exit">Exit</string>
+    <string name="Native_FileSystemFailed">A required filesystem operation failed. Please restart the app. If this message persists. Try reinstalling the app.</string>
     <string name="Native_LoadingGame">Loading Game...</string>
     <string name="Native_ManifestDownloaded">Manifest Downloaded</string>
     <string name="Native_NeedsStoragePermissionsToContinueText">In order to install game content, we need access to your device storage. Go to settings to enable the permissions.</string>
@@ -26,17 +30,21 @@
     <string name="Native_OK">OK</string>
     <string name="Native_PermissionsText">Dota Underlords needs permission to store game content on this device\'s external storage.</string>
     <string name="Native_PermissionsTitle">Dota Underlords Permissions</string>
+    <string name="Native_PlayAppOutOfDateOpt">Play without updating</string>
+    <string name="Native_PlayAppOutOfDateReq">Play without updating. Online play disabled.</string>
     <string name="Native_PlayOffline">Play without updating (offline)</string>
     <string name="Native_PreparingToDownload">Preparing To Download...</string>
     <string name="Native_PressOkCheckWifi">Press OK to check for WIFI.</string>
     <string name="Native_Settings">Settings</string>
+    <string name="Native_UpdateFailed">Content Update Failed</string>
+    <string name="Native_UpdateFailed_ConnectToTheInternet">A previous update operation failed and needs an internet connection to recover.</string>
     <string name="Native_VersionLabel">Version:</string>
     <string name="Native_WifiNotActive">WIFI not active</string>
     <string name="VPC_GameName">dac</string>
     <string name="VPC_LauncherBinaryName">underlords</string>
-    <string name="VPC_ManifestPasswordString">ea165caf53c8b07f</string>
+    <string name="VPC_ManifestPasswordString">0f44c29eeb971be7</string>
     <string name="VPC_TargetPlatformName">androidarm64</string>
-    <string name="VPC_VersionCodeString">2000201</string>
+    <string name="VPC_VersionCodeString">2000204</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
     <string name="abc_action_menu_overflow_description">More options</string>

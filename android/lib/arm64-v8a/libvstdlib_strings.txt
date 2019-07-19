@@ -83,7 +83,7 @@
 26CDefaultKeyValuesErrorSpew
 26ICommandCompletionCallback
 2) channel names: name1 name2 ...           // Lists channels by name.
-2ij(87
+2ij(8C
 2+imx
 2?"!k`
 2ninx
@@ -135,7 +135,6 @@ A-#9!
 ACCESSIBLE_FROM_THREADS
 A channel specifier is either:
 All functions are case insensitive.
-android
 Android clang version 5.0.300080  (based on LLVM 5.0.300080)
 AnimationSystem_001
 AnimationSystemUtils_001
@@ -187,6 +186,8 @@ CCommand::Tokenize: Encountered command which overflows the argument buffer.. Cl
 >CCommand::Tokenize: Encountered command which overflows the tokenizer buffer.. Skipping!
 CConfigurationSystem::ReadConfiguration: Error parsing configuration file!
 CCvar::FindCommandBase
+cfg/configdefaults.android.vcfg
+cfg/configschema.vcfg
 Channel Name
 chdir
 cheat
@@ -211,8 +212,6 @@ ConCommand %s has conflicting %s flags (child: %s%s, parent: %s%s, parent wins)
 ConCommand %s has multiple help strings:
 Conditional Error: %s
 config
-configdefaults.
-configschema.vcfg
 ConfigurationSystem_001
 configurationsystem.cpp
 configvalue.cpp
@@ -335,11 +334,11 @@ EnvironmentMapBuilder_001
 __errno
 error
 Error in configuration schema file "%s":
-Error parsing configuration defaults file "%s"!
-Error parsing configuration schema file "%s"!
+Error parsing configuration defaults file "cfg/configdefaults.android.vcfg"!
+Error parsing configuration schema file "cfg/configschema.vcfg"!
 Error parsing default value for config value "%s", default value "%s"!
 Error parsing value to set configuration value "%s" to ("%s")!
-Error reading configuration defaults file "%s"!
+Error reading configuration defaults file "cfg/configdefaults.android.vcfg"!
 essential
                                             // 'essential' turns on vital logs
 Event_CreateHandle
@@ -497,8 +496,6 @@ i>@yh
 !@i)yj
 j58hf@9(
 j)8hii8
-j(8^j
-j(8OJ
 j(8S	
 J!@9_
 JAJJ)
@@ -656,7 +653,7 @@ Plat_FileIsReadOnly
 Plat_FileSize
 Plat_FloatTime
 Plat_GetEnv
-Plat_GetModuleFilename
+Plat_GetGameDirectory
 Plat_GetOSType
 Plat_GetTime
 Plat_IsHighDPI
@@ -1131,10 +1128,7 @@ _ZN12CThreadEvent5ResetEv
 _ZN12CThreadEventC1Eb
 _ZN12CThreadEventC1EPKcbb
 _ZN12CThreadMutex7TryLockEv
-_ZN13CBufferString11ShortenPathEv
-_ZN13CBufferString15ComposeFileNameEPKcS1_c
 _ZN13CBufferString5PurgeEi
-_ZN13CBufferString6InsertEiPKcib
 _ZN13COneTimeEvent8AllocateEv
 _ZN13CWorkerThreadC2Ev
 _ZN16CThreadSemaphore7ReleaseEiPi

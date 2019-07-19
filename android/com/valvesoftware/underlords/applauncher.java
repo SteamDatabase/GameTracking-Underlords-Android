@@ -1,7 +1,6 @@
 package com.valvesoftware.underlords;
 
 import android.app.AlertDialog.Builder;
-import android.app.Application;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
@@ -35,8 +34,8 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
     EState m_nState = EState.Unstarted;
     protected ProgressBar m_progressBar = null;
 
-    /* renamed from: com.valvesoftware.underlords.applauncher$5 reason: invalid class name */
-    static /* synthetic */ class AnonymousClass5 {
+    /* renamed from: com.valvesoftware.underlords.applauncher$7 reason: invalid class name */
+    static /* synthetic */ class AnonymousClass7 {
         static final /* synthetic */ int[] $SwitchMap$com$valvesoftware$PatchSystem$EErrorCode = new int[EErrorCode.values().length];
 
         /* JADX WARNING: Can't wrap try/catch for region: R(22:0|(2:1|2)|3|(2:5|6)|7|(2:9|10)|11|(2:13|14)|15|17|18|(2:19|20)|21|23|24|25|26|27|28|29|30|(3:31|32|34)) */
@@ -121,7 +120,7 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
             L_0x0086:
                 return
             */
-            throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.underlords.applauncher.AnonymousClass5.<clinit>():void");
+            throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.underlords.applauncher.AnonymousClass7.<clinit>():void");
         }
     }
 
@@ -232,8 +231,53 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
         return linearLayout;
     }
 
+    private LinearLayout setupAPKButtons(boolean z, boolean z2, long j, final EUserDownloadResponse eUserDownloadResponse, final EUserDownloadResponse eUserDownloadResponse2) {
+        String str;
+        String str2;
+        LinearLayout linearLayout = new LinearLayout(this);
+        linearLayout.setOrientation(1);
+        linearLayout.setGravity(17);
+        linearLayout.setScaleX(0.75f);
+        if (z) {
+            Button button = new Button(this);
+            button.setTextSize((float) 30);
+            if (z2) {
+                str2 = Resources.GetStringSafe("Native_AppOutOfDateReq");
+            } else {
+                str2 = Resources.GetStringSafe("Native_AppOutOfDateOpt");
+            }
+            button.setText(str2);
+            button.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    if (applauncher.this.isConnectedToWifi()) {
+                        PatchSystem.GetInstance().SetUserDownloadResponse(eUserDownloadResponse);
+                        applauncher.this.setupPreparingToDownloadScreen();
+                        return;
+                    }
+                    applauncher.this.requestDownloadOverMobileData(eUserDownloadResponse);
+                }
+            });
+            linearLayout.addView(button);
+        }
+        Button button2 = new Button(this);
+        button2.setTextSize((float) 30);
+        if (z2) {
+            str = Resources.GetStringSafe("Native_PlayAppOutOfDateReq");
+        } else {
+            str = Resources.GetStringSafe("Native_PlayAppOutOfDateOpt");
+        }
+        button2.setText(str);
+        button2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                PatchSystem.GetInstance().SetUserDownloadResponse(eUserDownloadResponse2);
+            }
+        });
+        linearLayout.addView(button2);
+        return linearLayout;
+    }
+
     private void setupAPKOutOfDateScreen() {
-        setupCommonUI(Resources.GetStringSafe("Native_AppOutOfDate"), null).addView(setupPlayButtons(true, PatchSystem.GetInstance().CanPlayOffline(), PatchSystem.GetInstance().GetDownloadSizeBytes() / 1048576, EUserDownloadResponse.DownloadAPK, EUserDownloadResponse.SkipDownloadAPK));
+        setupCommonUI(Resources.GetStringSafe("Native_AppOutOfDate"), null).addView(setupAPKButtons(true, PatchSystem.GetInstance().UpdateRequiredForOnlinePlay(), PatchSystem.GetInstance().GetDownloadSizeBytes() / 1048576, EUserDownloadResponse.DownloadAPK, EUserDownloadResponse.SkipDownloadAPK));
         this.m_progressBar = null;
     }
 
@@ -287,7 +331,7 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
 
     private void setupErrorScreen(EErrorCode eErrorCode) {
         String GetStringSafe = Resources.GetStringSafe("Native_DownloadError");
-        int i = AnonymousClass5.$SwitchMap$com$valvesoftware$PatchSystem$EErrorCode[eErrorCode.ordinal()];
+        int i = AnonymousClass7.$SwitchMap$com$valvesoftware$PatchSystem$EErrorCode[eErrorCode.ordinal()];
         String str = "Native_DownloadErrorUnknown";
         String str2 = i != 1 ? i != 2 ? i != 3 ? i != 4 ? i != 5 ? null : Resources.GetStringSafe(str) : Resources.GetStringSafe("Native_DownloadErrorStorage") : Resources.GetStringSafe("Native_DownloadErrorDownload") : Resources.GetStringSafe("Native_DownloadErrorManifest") : Resources.GetStringSafe(str);
         setupCommonUI(GetStringSafe, str2).addView(setupPlayButtons(false, PatchSystem.GetInstance().CanPlayOffline(), 0, EUserDownloadResponse.DownloadVPK, EUserDownloadResponse.SkipDownloadVPK));
@@ -381,7 +425,7 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
     /* access modifiers changed from: protected */
     public void onLaunchMainActivity(boolean z) {
         Class<appmain> cls;
-        Application application = JNI_Environment.m_application;
+        application application = (application) JNI_Environment.m_application;
         StringBuilder sb = new StringBuilder();
         sb.append(application.getPackageName());
         sb.append(".appmain");
@@ -397,6 +441,7 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
         if (z) {
             intent.setFlags(131072);
         }
+        application.SetHasRunLauncher(true);
         startActivity(intent);
         finish();
     }

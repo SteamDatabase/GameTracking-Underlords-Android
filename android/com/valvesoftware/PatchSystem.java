@@ -45,6 +45,9 @@ public class PatchSystem {
     private int m_nApplicationVersion;
     private volatile long m_nCompletedDownloadBytes = 0;
     private volatile EErrorCode m_nErrorCode = EErrorCode.Unknown;
+    private volatile long m_nMinApkVersion = 0;
+    private volatile long m_nNewApkVersion = 0;
+    private volatile long m_nOptionalApkVersion = 0;
     private volatile long m_nPotentialDownloadBytes = 0;
     /* access modifiers changed from: private */
     public volatile long m_nTotalDownloadBytes = 0;
@@ -315,11 +318,21 @@ public class PatchSystem {
     public void OnManifestResponseSuccess(JSONObject jSONObject) {
         this.m_JSONManifest = jSONObject;
         boolean z = false;
-        try {
-            JSONObject jSONObject2 = this.m_JSONManifest.getJSONObject("packages");
-            if (jSONObject2 != null) {
-                JSONObject jSONObject3 = null;
-                try {
+        this.m_nMinApkVersion = (long) this.m_JSONManifest.optInt("minversion", 0);
+        if (this.m_nMinApkVersion == 0) {
+            OnHaveCurrentAPK();
+            return;
+        }
+        this.m_nOptionalApkVersion = (long) this.m_JSONManifest.optInt("latestversion", 0);
+        if (this.m_nOptionalApkVersion == 0) {
+            this.m_nOptionalApkVersion = this.m_nMinApkVersion;
+        }
+        boolean[] GetBoolean = Resources.GetBoolean("VPC_SelfInstallAPK");
+        if (GetBoolean != null && GetBoolean[0]) {
+            try {
+                JSONObject jSONObject2 = this.m_JSONManifest.getJSONObject("packages");
+                if (jSONObject2 != null) {
+                    JSONObject jSONObject3 = null;
                     String str = Build.SUPPORTED_ABIS[0];
                     if (str.equals("armeabi-v7a")) {
                         jSONObject3 = jSONObject2.getJSONObject("androidarm32");
@@ -332,15 +345,19 @@ public class PatchSystem {
                     }
                     this.m_newAPKUrl = jSONObject3.getString("url");
                     this.m_nPotentialDownloadBytes = (long) jSONObject3.getInt("size");
-                    if (GetAvailableStorageBytes() <= this.m_nPotentialDownloadBytes) {
+                    this.m_nNewApkVersion = (long) jSONObject3.getInt("version");
+                    if (this.m_nNewApkVersion > ((long) this.m_nApplicationVersion)) {
+                        z = true;
+                    }
+                    if (z && GetAvailableStorageBytes() <= this.m_nPotentialDownloadBytes) {
                         WaitForUserInput(EState.Error, EErrorCode.Storage);
                         return;
                     }
-                    z = true;
-                } catch (Exception unused) {
                 }
+            } catch (Exception unused) {
             }
-        } catch (Exception unused2) {
+        } else if (this.m_nOptionalApkVersion > ((long) this.m_nApplicationVersion)) {
+            z = true;
         }
         if (z) {
             WaitForUserInput(EState.APKOutOfDateWaitingOnUser, EErrorCode.None);
@@ -721,6 +738,10 @@ public class PatchSystem {
 
     public boolean CanPlayOffline() {
         return this.m_Registry.GetLastFullyInstalledAppVersion() == this.m_nApplicationVersion;
+    }
+
+    public boolean UpdateRequiredForOnlinePlay() {
+        return this.m_nMinApkVersion > ((long) this.m_nApplicationVersion);
     }
 
     public long GetDownloadSizeBytes() {
