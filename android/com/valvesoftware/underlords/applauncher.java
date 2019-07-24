@@ -416,7 +416,9 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
             getWindow().getAttributes().layoutInDisplayCutoutMode = 1;
         }
         super.onCreate(bundle);
-        setupCommonUI(null, null);
+        if (JNI_Environment.m_application != null) {
+            setupCommonUI(null, null);
+        }
         this.m_progressBar = null;
         getWindow().addFlags(128);
         HandleSteamLogin();

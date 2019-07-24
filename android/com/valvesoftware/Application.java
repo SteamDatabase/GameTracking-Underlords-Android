@@ -13,8 +13,8 @@ public abstract class Application extends android.app.Application {
     }
 
     public void onCreate() {
-        super.onCreate();
         JNI_Environment.setApplication(this);
+        super.onCreate();
     }
 
     /* JADX WARNING: Removed duplicated region for block: B:25:0x0121  */
