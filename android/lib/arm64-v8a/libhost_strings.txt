@@ -559,6 +559,8 @@ BodyGroupChoice
 body_type
 # bone
 BoneChannel
+bone_name
+bone_names
 Boolean default must be true or false.
 borrow
 B-pFC-rND-
@@ -579,7 +581,6 @@ burst_randomize
 burst_scale
  but not used.
 ", but only 
-Bvpcf1
 bytes
 bytes. 
 Byte size calculation and serialization were inconsistent.  This may indicate a bug in protocol buffers or it may be caused by concurrent modification of 
@@ -851,6 +852,8 @@ C_OP_RemapCPtoCP
 C_OP_RemapModelVolumetoCP
 C_OP_RemapSpeedtoCP
 C_OP_RenderModels
+C_OP_RenderSprites
+C_OP_RenderTrails
 C_OP_RepeatedTriggerChildGroup
 C_OP_SetControlPointFieldToWater
 C_OP_SetControlPointFromObjectScale
@@ -1600,7 +1603,8 @@ j48	C
 j48t^@
 j4xH;@
 j58hf@9(
-j58nK
+j58nO
+j88G%
 J!@9#
 J]A9_
 jA9hj
@@ -1638,12 +1642,11 @@ jv8?)
 JYix*$
 	*jz-
 ?k58D
-*?k78
-?k787p
-k78_b
+?k787t
 ?k78h
-k78oc
-k78Z`
+k78o_
+k78Zn
+*?k78zx
 k(8vV@
 K	A9lC
 *kb@9
@@ -1765,6 +1768,7 @@ MapValueRef::GetStringValue
 MapValueRef::GetUInt32Value
 MapValueRef::GetUInt64Value
 MapValueRef::type MapValueRef is not initialized.
+master_morph_weight
 MATCHFRAMEWORK_001
 MaterialParamBuffer_t
 MaterialParamFloat_t
@@ -1939,6 +1943,8 @@ m_flOpStrengthMinScale
 m_flOutput0
 m_flOutput1
 m_flRadius
+m_flRadiusScale
+m_flRadiusTaper
 m_flRandomMax
 m_flRandomMin
 m_flRealTime
@@ -2087,6 +2093,8 @@ modeldoc21
 modeldoc22
 modeldoc23
 modeldoc24
+modeldoc25
+modeldoc26
 modeldoc3
 modeldoc4
 modeldoc5
@@ -2484,7 +2492,7 @@ Plat_ExitProcess
 Plat_GetEnv
 Plat_GetOSType
 Plat_IsHighDPI
-Plat_IsInDebugSessionRaw
+Plat_IsInDebugSession
 Plat_RelativeTicks
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_TickDiffMilliSecF
@@ -2577,11 +2585,13 @@ ReleaseMessage
 remapping vertex %d[w%d] invalid: %d->? >= %d
 remapping vertex %d[w%d] invalid: %d->%d >= %d
 RemapValClamped( 
+RemoveBoneAndChildren
 RemoveLast
 RenderDevice003
 RenderDeviceMgr001
 RenderHardwareConfig002
 rendermesh.cpp(717): 
+RenderMeshFile
 RenderPrimitiveType_t
 RenderService_001
 RenderSkeletonBone_t
@@ -3072,7 +3082,7 @@ V_isnan
 V_logf
 VMaterialSystem2_001
 VMatrix
-:vmdlkeys0
+vmdlkeys0
 vmdlkeys1
 vmdlkeys2
 VMDLLIB001
@@ -3090,6 +3100,7 @@ void CUtlBuffer::VaPrintf(const char *, va_list)
 void FillVBForAttribute(uint8 *, CMeshVertexAttribute *, const RenderInputLayoutField_t &, int &, float *, int &, float *, bool, bool, const Vector &, int *)
 void ReconnectGameInterface(CreateInterfaceFn, const char *, GameInterfaceConnectionMode_t)
 VP4003
+#<vpcf1
 vpcf10
 vpcf11
 vpcf12
@@ -3103,6 +3114,8 @@ vpcf19
 vpcf2
 vpcf20
 vpcf21
+vpcf22
+vpcf23
 vpcf3
 vpcf4
 vpcf5
@@ -3129,6 +3142,7 @@ V_sincosf
 V_sinf
 VSInputSignature
 vsnap
+VSNAPFile
 V_snprintf
 V_sscanf
 V_stricmp_fast

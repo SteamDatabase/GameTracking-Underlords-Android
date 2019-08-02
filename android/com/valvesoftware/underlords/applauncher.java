@@ -5,10 +5,15 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Point;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Build.VERSION;
 import android.os.Bundle;
+import android.support.v4.content.res.ResourcesCompat;
+import android.support.v4.view.ViewCompat;
 import android.util.Log;
+import android.view.Display;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -16,8 +21,7 @@ import android.widget.FrameLayout.LayoutParams;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
-import android.widget.Space;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.valvesoftware.JNI_Environment;
 import com.valvesoftware.PatchSystem;
@@ -31,8 +35,15 @@ import java.net.URLDecoder;
 import java.util.LinkedHashMap;
 
 public class applauncher extends com.valvesoftware.source2launcher.applauncher {
+    protected static final int DEFAULT_FONT_SIZE = 18;
+    protected Typeface m_Font = null;
+    protected ImageView m_Logo = null;
+    protected Point m_ScreenSize = new Point(1, 1);
+    protected int m_nLoadingBarFillWidth = 1;
     EState m_nState = EState.Unstarted;
-    protected ProgressBar m_progressBar = null;
+    protected ImageView m_progressBarBg = null;
+    protected ImageView m_progressBarFill = null;
+    protected TextView m_progressPctLabel = null;
 
     /* renamed from: com.valvesoftware.underlords.applauncher$7 reason: invalid class name */
     static /* synthetic */ class AnonymousClass7 {
@@ -124,7 +135,24 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
         }
     }
 
-    private FrameLayout setupCommonUI(String str, String str2) {
+    private TextView createTextfield(String str) {
+        TextView textView = new TextView(this);
+        textView.setTypeface(this.m_Font);
+        textView.setTextColor(-1);
+        textView.setShadowLayer(0.06f, -2.0f, 2.0f, ViewCompat.MEASURED_STATE_MASK);
+        textView.setTextSize(18.0f);
+        textView.setText(str.toUpperCase());
+        textView.setGravity(17);
+        return textView;
+    }
+
+    private LinearLayout setupCommonUI(String str, String str2, boolean z) {
+        this.m_progressPctLabel = null;
+        this.m_progressBarFill = null;
+        this.m_progressBarBg = null;
+        Display defaultDisplay = getWindowManager().getDefaultDisplay();
+        this.m_ScreenSize = new Point();
+        defaultDisplay.getSize(this.m_ScreenSize);
         FrameLayout frameLayout = new FrameLayout(this);
         frameLayout.setLayoutParams(new LayoutParams(-1, -1));
         frameLayout.setBackgroundColor(Color.parseColor("#000000"));
@@ -135,42 +163,90 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
         }
         imageView.setLayoutParams(new LayoutParams(-1, -1));
         imageView.setScaleType(ScaleType.CENTER_CROP);
+        this.m_Logo = new ImageView(this);
+        int[] GetDrawable2 = Resources.GetDrawable("clean_logo");
+        if (GetDrawable2 != null) {
+            this.m_Logo.setImageResource(GetDrawable2[0]);
+        }
+        this.m_Logo.setLayoutParams(new LayoutParams((int) (((float) this.m_ScreenSize.x) * 0.62f), (int) (((float) this.m_ScreenSize.y) * 0.65f), 49));
+        this.m_Logo.setPadding(20, 20, 20, 20);
         LinearLayout linearLayout = new LinearLayout(this);
         linearLayout.setOrientation(1);
-        linearLayout.setGravity(80);
+        int i = (int) (((float) this.m_ScreenSize.x) * 0.38f);
+        int i2 = (int) (((float) this.m_ScreenSize.y) * 0.033f);
+        int i3 = (int) (((float) i) * 0.9808219f);
+        int i4 = (int) (((float) i2) * 0.5555556f);
+        this.m_nLoadingBarFillWidth = i3;
+        linearLayout.setLayoutParams(new LayoutParams(i, (int) (((float) this.m_ScreenSize.y) * 0.35f), 81));
+        if (z) {
+            RelativeLayout relativeLayout = new RelativeLayout(this);
+            relativeLayout.setLayoutParams(new LayoutParams(i, i2));
+            ImageView imageView2 = new ImageView(this);
+            int[] GetDrawable3 = Resources.GetDrawable("loadingbar_bg");
+            if (GetDrawable3 != null) {
+                imageView2.setImageResource(GetDrawable3[0]);
+            }
+            imageView2.setScaleType(ScaleType.FIT_XY);
+            RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(i, i2);
+            layoutParams.addRule(14);
+            layoutParams.addRule(15);
+            relativeLayout.addView(imageView2, layoutParams);
+            ImageView imageView3 = new ImageView(this);
+            int[] GetDrawable4 = Resources.GetDrawable("loadingbar_fill");
+            if (GetDrawable4 != null) {
+                imageView3.setImageResource(GetDrawable4[0]);
+            }
+            int i5 = (i - i3) / 2;
+            imageView3.setScaleType(ScaleType.FIT_XY);
+            imageView3.setPadding(i5, 0, 0, 0);
+            this.m_progressBarFill = imageView3;
+            RelativeLayout.LayoutParams layoutParams2 = new RelativeLayout.LayoutParams(0, i4);
+            layoutParams2.addRule(15);
+            relativeLayout.addView(imageView3, layoutParams2);
+            linearLayout.addView(relativeLayout);
+        }
         if (str != null) {
-            TextView textView = new TextView(this);
-            textView.setTextSize(36.0f);
-            textView.setText(str);
-            textView.setGravity(17);
-            linearLayout.addView(textView);
+            linearLayout.addView(createTextfield(str));
+        }
+        if (z) {
+            TextView createTextfield = createTextfield("");
+            linearLayout.addView(createTextfield);
+            this.m_progressPctLabel = createTextfield;
         }
         if (str2 != null) {
-            TextView textView2 = new TextView(this);
-            textView2.setTextSize(36.0f);
-            textView2.setText(str2);
-            textView2.setGravity(17);
-            linearLayout.addView(textView2);
+            linearLayout.addView(createTextfield(str2));
         }
         String GetStringSafe = Resources.GetStringSafe("VPC_VersionCodeString", "DEBUG");
-        TextView textView3 = new TextView(this);
-        textView3.setTextSize(24.0f);
-        textView3.setGravity(5);
         String GetStringSafe2 = Resources.GetStringSafe("Native_VersionLabel");
         StringBuilder sb = new StringBuilder();
         sb.append(GetStringSafe2);
         sb.append(GetStringSafe);
-        textView3.setText(sb.toString());
-        linearLayout.addView(textView3);
+        TextView createTextfield2 = createTextfield(sb.toString());
+        createTextfield2.setGravity(85);
+        createTextfield2.setPadding(12, 12, 26, 12);
         frameLayout.addView(imageView);
+        frameLayout.addView(this.m_Logo);
         frameLayout.addView(linearLayout);
+        frameLayout.addView(createTextfield2);
         setContentView(frameLayout);
-        return frameLayout;
+        return linearLayout;
+    }
+
+    private void setProgress(float f) {
+        if (this.m_progressPctLabel != null && this.m_progressBarFill != null) {
+            float max = Math.max(0.0f, Math.min(1.0f, f));
+            TextView textView = this.m_progressPctLabel;
+            StringBuilder sb = new StringBuilder();
+            sb.append((int) (100.0f * max));
+            sb.append("%");
+            textView.setText(sb.toString());
+            this.m_progressBarFill.getLayoutParams().width = (int) (max * ((float) this.m_nLoadingBarFillWidth));
+            this.m_progressBarFill.requestLayout();
+        }
     }
 
     private void setupContactingServerScreen() {
-        setupCommonUI(Resources.GetStringSafe("Native_ContactingServer"), null);
-        this.m_progressBar = null;
+        setupCommonUI(Resources.GetStringSafe("Native_ContactingServer"), null, false);
     }
 
     /* access modifiers changed from: private */
@@ -197,14 +273,15 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
         linearLayout.setScaleX(0.75f);
         if (z) {
             Button button = new Button(this);
-            button.setTextSize((float) 30);
+            button.setTextSize(18.0f);
+            button.setTypeface(this.m_Font);
             String GetStringSafe = Resources.GetStringSafe("Native_DownloadUpdate");
             StringBuilder sb = new StringBuilder();
             sb.append(GetStringSafe);
             sb.append(" ");
             sb.append(j);
             sb.append("mb");
-            button.setText(sb.toString());
+            button.setText(sb.toString().toUpperCase());
             button.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
                     if (applauncher.this.isConnectedToWifi()) {
@@ -219,8 +296,9 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
         }
         if (z2) {
             Button button2 = new Button(this);
-            button2.setTextSize((float) 30);
-            button2.setText(Resources.GetStringSafe("Native_PlayOffline"));
+            button2.setTextSize(18.0f);
+            button2.setTypeface(this.m_Font);
+            button2.setText(Resources.GetStringSafe("Native_PlayOffline").toUpperCase());
             button2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
                     PatchSystem.GetInstance().SetUserDownloadResponse(eUserDownloadResponse2);
@@ -240,13 +318,14 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
         linearLayout.setScaleX(0.75f);
         if (z) {
             Button button = new Button(this);
-            button.setTextSize((float) 30);
+            button.setTextSize(18.0f);
+            button.setTypeface(this.m_Font);
             if (z2) {
                 str2 = Resources.GetStringSafe("Native_AppOutOfDateReq");
             } else {
                 str2 = Resources.GetStringSafe("Native_AppOutOfDateOpt");
             }
-            button.setText(str2);
+            button.setText(str2.toUpperCase());
             button.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
                     if (applauncher.this.isConnectedToWifi()) {
@@ -260,13 +339,14 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
             linearLayout.addView(button);
         }
         Button button2 = new Button(this);
-        button2.setTextSize((float) 30);
+        button2.setTextSize(18.0f);
+        button2.setTypeface(this.m_Font);
         if (z2) {
             str = Resources.GetStringSafe("Native_PlayAppOutOfDateReq");
         } else {
             str = Resources.GetStringSafe("Native_PlayAppOutOfDateOpt");
         }
-        button2.setText(str);
+        button2.setText(str.toUpperCase());
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 PatchSystem.GetInstance().SetUserDownloadResponse(eUserDownloadResponse2);
@@ -277,17 +357,17 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
     }
 
     private void setupAPKOutOfDateScreen() {
-        setupCommonUI(Resources.GetStringSafe("Native_AppOutOfDate"), null).addView(setupAPKButtons(true, PatchSystem.GetInstance().UpdateRequiredForOnlinePlay(), PatchSystem.GetInstance().GetDownloadSizeBytes() / 1048576, EUserDownloadResponse.DownloadAPK, EUserDownloadResponse.SkipDownloadAPK));
-        this.m_progressBar = null;
+        long GetDownloadSizeBytes = PatchSystem.GetInstance().GetDownloadSizeBytes() / 1048576;
+        LinearLayout linearLayout = setupCommonUI(Resources.GetStringSafe("Native_AppUpdateTitle"), null, false);
+        linearLayout.getLayoutParams().width = (int) (((float) this.m_ScreenSize.x) * 0.7f);
+        linearLayout.getLayoutParams().height = (int) (((float) this.m_ScreenSize.y) * 0.55f);
+        this.m_Logo.getLayoutParams().width = (int) (((float) this.m_ScreenSize.x) * 0.5f);
+        this.m_Logo.getLayoutParams().height = (int) (((float) this.m_ScreenSize.y) * 0.33f);
+        linearLayout.addView(setupAPKButtons(true, PatchSystem.GetInstance().UpdateRequiredForOnlinePlay(), GetDownloadSizeBytes, EUserDownloadResponse.DownloadAPK, EUserDownloadResponse.SkipDownloadAPK));
     }
 
     private void installAPK() {
-        boolean[] GetBoolean = Resources.GetBoolean("VPC_SelfInstallAPK");
-        boolean z = false;
-        if (GetBoolean != null && GetBoolean[0]) {
-            z = true;
-        }
-        if (z) {
+        if (PatchSystem.IsSelfInstallAPKEnabled()) {
             Uri GetDownloadedAPKLocation = PatchSystem.GetInstance().GetDownloadedAPKLocation();
             Intent intent = new Intent("android.intent.action.VIEW");
             intent.setFlags(335544320);
@@ -300,33 +380,21 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
     }
 
     private void setupManifestDownloadedScreen() {
-        setupCommonUI(Resources.GetStringSafe("Native_ManifestDownloaded"), null).addView(setupPlayButtons(true, PatchSystem.GetInstance().CanPlayOffline(), PatchSystem.GetInstance().GetDownloadSizeBytes() / 1048576, EUserDownloadResponse.DownloadVPK, EUserDownloadResponse.SkipDownloadVPK));
-        this.m_progressBar = null;
+        LinearLayout linearLayout = setupCommonUI(Resources.GetStringSafe("Native_ManifestDownloaded"), null, false);
+        linearLayout.getLayoutParams().width = (int) (((float) this.m_ScreenSize.x) * 0.7f);
+        linearLayout.getLayoutParams().height = (int) (((float) this.m_ScreenSize.y) * 0.55f);
+        this.m_Logo.getLayoutParams().width = (int) (((float) this.m_ScreenSize.x) * 0.5f);
+        this.m_Logo.getLayoutParams().height = (int) (((float) this.m_ScreenSize.y) * 0.33f);
+        linearLayout.addView(setupPlayButtons(true, PatchSystem.GetInstance().CanPlayOffline(), PatchSystem.GetInstance().GetDownloadSizeBytes() / 1048576, EUserDownloadResponse.DownloadVPK, EUserDownloadResponse.SkipDownloadVPK));
     }
 
     /* access modifiers changed from: private */
     public void setupPreparingToDownloadScreen() {
-        FrameLayout frameLayout = setupCommonUI(Resources.GetStringSafe("Native_PreparingToDownload"), null);
-        LinearLayout linearLayout = new LinearLayout(this);
-        linearLayout.setOrientation(1);
-        linearLayout.setGravity(48);
-        linearLayout.addView(new Space(this), new LinearLayout.LayoutParams(-1, 100));
-        this.m_progressBar = new ProgressBar(this, null, 16842872);
-        this.m_progressBar.setIndeterminate(true);
-        linearLayout.addView(this.m_progressBar, new LinearLayout.LayoutParams(-1, 50));
-        frameLayout.addView(linearLayout);
+        setupCommonUI(Resources.GetStringSafe("Native_PreparingToDownload"), null, true);
     }
 
     private void setupDownloadingScreen() {
-        FrameLayout frameLayout = setupCommonUI(Resources.GetStringSafe("Native_DownloadingContent"), null);
-        LinearLayout linearLayout = new LinearLayout(this);
-        linearLayout.setOrientation(1);
-        linearLayout.setGravity(48);
-        linearLayout.addView(new Space(this), new LinearLayout.LayoutParams(-1, 100));
-        this.m_progressBar = new ProgressBar(this, null, 16842872);
-        this.m_progressBar.setIndeterminate(false);
-        linearLayout.addView(this.m_progressBar, new LinearLayout.LayoutParams(-1, 50));
-        frameLayout.addView(linearLayout);
+        setupCommonUI(Resources.GetStringSafe("Native_DownloadingContent"), null, true);
     }
 
     private void setupErrorScreen(EErrorCode eErrorCode) {
@@ -334,8 +402,12 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
         int i = AnonymousClass7.$SwitchMap$com$valvesoftware$PatchSystem$EErrorCode[eErrorCode.ordinal()];
         String str = "Native_DownloadErrorUnknown";
         String str2 = i != 1 ? i != 2 ? i != 3 ? i != 4 ? i != 5 ? null : Resources.GetStringSafe(str) : Resources.GetStringSafe("Native_DownloadErrorStorage") : Resources.GetStringSafe("Native_DownloadErrorDownload") : Resources.GetStringSafe("Native_DownloadErrorManifest") : Resources.GetStringSafe(str);
-        setupCommonUI(GetStringSafe, str2).addView(setupPlayButtons(false, PatchSystem.GetInstance().CanPlayOffline(), 0, EUserDownloadResponse.DownloadVPK, EUserDownloadResponse.SkipDownloadVPK));
-        this.m_progressBar = null;
+        LinearLayout linearLayout = setupCommonUI(GetStringSafe, str2, false);
+        linearLayout.getLayoutParams().width = (int) (((float) this.m_ScreenSize.x) * 0.7f);
+        linearLayout.getLayoutParams().height = (int) (((float) this.m_ScreenSize.y) * 0.55f);
+        this.m_Logo.getLayoutParams().width = (int) (((float) this.m_ScreenSize.x) * 0.5f);
+        this.m_Logo.getLayoutParams().height = (int) (((float) this.m_ScreenSize.y) * 0.33f);
+        linearLayout.addView(setupPlayButtons(false, PatchSystem.GetInstance().CanPlayOffline(), 0, EUserDownloadResponse.DownloadVPK, EUserDownloadResponse.SkipDownloadVPK));
     }
 
     public void UpdateState(EState eState, EErrorCode eErrorCode) {
@@ -417,9 +489,13 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
         }
         super.onCreate(bundle);
         if (JNI_Environment.m_application != null) {
-            setupCommonUI(null, null);
+            this.m_Font = Typeface.create("sans-serif", 1);
+            int[] GetFont = Resources.GetFont("radiance_bold");
+            if (GetFont != null) {
+                this.m_Font = ResourcesCompat.getFont(this, GetFont[0]);
+            }
+            setupCommonUI(null, null, false);
         }
-        this.m_progressBar = null;
         getWindow().addFlags(128);
         HandleSteamLogin();
     }
@@ -457,13 +533,6 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
     /* access modifiers changed from: protected */
     public void setInstallStatus(TaskStatus taskStatus) {
         UpdateState(taskStatus.m_nState, taskStatus.m_nErrorCode);
-        if (this.m_progressBar == null) {
-            return;
-        }
-        if (VERSION.SDK_INT >= 24) {
-            this.m_progressBar.setProgress(taskStatus.m_nProgress, true);
-        } else {
-            this.m_progressBar.setProgress(taskStatus.m_nProgress);
-        }
+        setProgress(((float) taskStatus.m_nProgress) * 0.01f);
     }
 }

@@ -129,7 +129,6 @@ $0 to $1,
 19ISerializedEntities
 19NetMessagePacketEnd
 1bQJ1~
-	1o9I
 1@y(1
 *1@y)}B9d
 %20.20s 
@@ -216,8 +215,12 @@ $0 to $1,
 2/H@9
 2*H@9)}@
 2&H@9
+2hb39
 2hB	9
+2hr29#
 2ij(8
+2ij(8j 
+2ij(8w 
 2iJ@9
 2iJ@9)
 2iJ@9	
@@ -226,9 +229,9 @@ $0 to $1,
 2j"@9)p
 2_!(k
 2?".k
-2?k78
-2?k88
-2_k88a
+2?k78Z
+2_k88
+2?k88Y
 2(K@9
 2oi-x
 2 .ProtoFlattenedSerializerField_t"!
@@ -289,7 +292,7 @@ $0 to $1,
 % 5d % 5d:% 5d: %-20s [%d]: delta field %s [%s] "%s" != "%s"
 5hr@9H
 5h"@y
-5h"@yi
+5h"@yI
 )5IJ(}
 5i.@y
 5j3@y
@@ -297,6 +300,8 @@ $0 to $1,
 5w"@y(
 5(#@y
 5	 @y)
+5@yJS
+5@y=S
 ?6`*@
 ?6	(@
 /6`>@
@@ -428,12 +433,12 @@ _6inA9
 %8.3f: %s: ParseMessagesSNP RELIABLE %d bytes
 %8.3f: %s: ParseMessagesSNP UNRELIABLE Seq=%d %d bytes
 86`*@
-86);C
 86h*@
 86h2@
 86i*@
 86i2@
 86iF@
+86)KB
 8CFmtStrNILi1024ELb0EE
 8CFmtStrNILi256ELb0EE
 8CFunctor
@@ -515,6 +520,7 @@ a2@yh2@y
 	A@9)	
 	A@9	
 A-#9!
+	A@94
 a@9+a
 "A9)]F
 A9)]F
@@ -560,14 +566,12 @@ AddString
 AddUInt32
 AddUInt64
 A file with this name is already in the pool.
-After sending last chunk of split packet payload, wait at least this many msecs after last activity before giving up
 aggregate_value
 A)hR@9K
 )AIJ)
 allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
 allow_alias
 Already saw decimal point or exponent; can't have another one.
-	aM9i
 Android clang version 5.0.300080  (based on LLVM 5.0.300080)
 __android_log_write
 angle
@@ -577,6 +581,7 @@ AnimGraphEditorUtils001
 annotation
 Annotation
 ", another member of oneof "
+	ao9	
 ApplyOverrides_R:  couldn't find field from schema %s::%s
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
  a protocol 
@@ -616,8 +621,6 @@ avg_loss_in
 avg_loss_out
 avg_packets_in
 avg_packets_out
-	Aw9	
-aX9!9@
 Ay?!(k
 ^B9h^
 >B9h>
@@ -663,6 +666,7 @@ bool CFlattenedSerializer::EncodeField(bool, CFieldPath &, CEncodeInfo *, Packed
 bool CFlattenedSerializer::MergeDeltas(FlattenedSerializerSpewType_t, CSerializedEntity *, CSerializedEntity *, CSerializedEntity *, int, NetworkSerializationMode_t, INetworkProceduralDataHelper *, void *, PackedFieldPathVec_t *) const
 bool CFlattenedSerializer::WriteFieldList(FlattenedSerializerSpewType_t, bf_write &, CSerializedEntity *, int, NetworkSerializationMode_t, const PackedFieldPathVec_t *, INetworkProceduralDataHelper *, void *) const
 bool CNetChan::ParseMessages(bf_read &, NetChannelBufType_t)
+bool CNetChan::ProcessMessages()
 bool CNetworkFieldChangedEventQueue::QueueChange(int, const CFieldPath &, const char *, void *, void *, void *&, int, NetworkFieldChangedDelegateType_t, CUtlAbstractDelegate, int, int, bool)
 bool CNetworkSerializer::InitField(NetworkFieldSerializerInfo_t *, int, NetworkValidationMode_t, const char *, const FieldMetaInfo_t &, int, CDataparserBuilder &, bool, INetworkSerializerBindingBuildFilter *, int) const
 bool CQuantizedFloatEncoder::Init(const char *, int, int, float, float) [bValidate = true]
@@ -1105,7 +1109,8 @@ __cxa_pure_virtual
 %d % 5d % 5d: %-20s (skip): %s %s: %s
 d6@y#
 d6@yc
-d6@yc	
+d6@yC
+d6@yC	
 .data
 databytes
 data_compressed
@@ -1153,6 +1158,7 @@ Direct UDP connect
 disabled
 Disassociating NetChan %s (%s) from Steam Net Connection handle #%u
 (%d) is > avg (%.2f) with stddev*scale (%.2f * %.2f) and threshold (%.2f)
+Disconnecting netchan because of excessive CPU usage /+/ %dms, %d, current message type: '%s'
 Display info about a message (by classname or id)
 %d Metadata %s [utlvector count]:  %d
 Don't bother compressing packets below this size.
@@ -1601,6 +1607,7 @@ h*@9h/
 (H@9h
 H@9/H@9
 h"@9i
+h"@9I
 	H@9i"
 H`@9iFG9
 *H@9j
@@ -1620,6 +1627,7 @@ h*A)t
 h&B)(
 hB@9`
 hB@9(
+hB	9&c
 hB@9)EF
 h"B9h
 hB@9h
@@ -1721,12 +1729,10 @@ IDEMPOTENCY_UNKNOWN
 IDEMPOTENT
 identifier_value
 	ID                       = %u
-If a splitpacket has more than this many fragments, use the reliable/ack based protocol
 iFG9I& 7h
 If set, only net_showmsg spew for data inbound on this socket name e.g. client, server, etc.
 ". If this is intended, set 'option allow_alias = true;' to the enum definition.
 If unable to bind to initial port, how many more to try binding.
-If we get a completed splitpacket requesting acks, send the final 'success' ack this many times
 )ih8Ii(8
 (ih8*ij8+ik8,il8-im8.in8/io80ip81iq82ir8"ib8#ic8$id8%ie8&if8)i`8
 +ih8Ki(8kbB9
@@ -1896,7 +1902,7 @@ J1@9k
 j48	C
 j48t^@
 j4xH;@
-j58"p
+j58"l
 J!@9#
 J@9.A
 J@9B1
@@ -1937,9 +1943,9 @@ JY@y)1
 *k2@y
 k2@yh
 ?k58D
-*?k78/
+*?k78
 ?k78h
-_k88<
+k	94y
 _!)kA
 K	A9lC
 Key in map fields cannot be enum types.
@@ -2169,7 +2175,7 @@ NA9iN
 [Name]
 	name_part
 NamePart
-N(B(6(
+N(B(6
 NB9hN
 needs_decoder
 Need space between identifier and decimal point.
@@ -2179,6 +2185,7 @@ nested_type
 netchan.cpp
 net_channels
 NetChannel '%s':
+NetChan %s ProcessMessages has taken more than %dms to process %d messages.  (Current message type: '%s')
 netchan_t::reliabledata
 netchan_t::unreliabledata
 net_compresspackets
@@ -2235,10 +2242,6 @@ net_SpawnGroup_SetCreationTick
 net_SpawnGroup_Unload
 net_spewcounts
 net_spewserializer
-net_splitpacket_minimum_ack_rtt_msecs
-net_splitpacket_require_acks_threshold
-net_splitpacket_resend_time_msecs
-net_splitpacket_success_ack_count
 net_SplitScreenUser
 net_status
 Net status for host %s:
@@ -2519,6 +2522,8 @@ p6jf@
 p6jR@
 p7v	P7
 P7x"@
+	!p9	
+P9!9@
 	P@9K
 package
 package $0;
@@ -2571,11 +2576,12 @@ Plat_ExitProcess
 Plat_FloatTime
 Plat_GetEnv
 Plat_GetLocalTime
-Plat_IsInDebugSessionRaw
+Plat_IsInDebugSession
 Plat_IsInTestMode
 Plat_RelativeTicks
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_TickDiffMilliSecF
+Plat_USTime
 Player
 player_index
 playername
@@ -2702,8 +2708,8 @@ QueueChange
 queued
 QueuedLoaderVersion001
 QueueDuplicate
+	q@y:
 	Q@y?
-	q@yZ
 *R)8yv
 RA9iR
 RadianEuler
@@ -2783,7 +2789,7 @@ RIO_WILL_RELAY
 r(i*xK
 rJAJJL
 rJMJJ
-R?k78I
+R?k78
 rkMKJ
 Rmij8
 rnd_down
@@ -3100,7 +3106,7 @@ SteamAPI_UnregisterCallResult
 STEAMAPPLIST_INTERFACE_VERSION001
 STEAMAPPS_INTERFACE_VERSION008
 SteamAudio001
-SteamClient018
+SteamClient019
 SteamController007
 SteamDatagramClient_Init failed.  %s
 SteamDatagramClient_Init_InternalV9
@@ -3145,7 +3151,8 @@ STEAMPARENTALSETTINGS_INTERFACE_VERSION001
 STEAMREMOTESTORAGE_INTERFACE_VERSION014
 STEAMSCREENSHOTS_INTERFACE_VERSION003
 Steam supporting smaller max routable packet than engine expecting (%d vs %d)
-STEAMUGC_INTERFACE_VERSION012
+STEAMTV_INTERFACE_V001
+STEAMUGC_INTERFACE_VERSION013
 SteamUser020
 STEAMUSERSTATS_INTERFACE_VERSION011
 SteamUtils009
@@ -3221,7 +3228,6 @@ syntax
 syntax = "$0";
 System
 *T)8yv
-	!t9	
 T)	@9
 t@9)}D
 table_id
@@ -3590,7 +3596,6 @@ w6hZB9	2
 w6if@
 W6if@
 W6ijA9
-Wait this many msecs before checking whether to send resend requests.
 warning
 Warning
 WARNING

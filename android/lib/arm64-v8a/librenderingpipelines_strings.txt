@@ -8,6 +8,7 @@
 @-#(!
 *-@)!
 00000000-0000-0000-0000-000000000000
+(!09Nm
 =0DD-
 0ED- 
 0=Off, 1=DebugWireframe, 2=DebugSolidBlink
@@ -78,6 +79,8 @@
 29CBoneConstraintPoseSpaceMorph
 29CRenderingPipelineOvertopMenu
 29CRenderingPipelinePostProcess
+2@9iJ
+2@9jJ
 	2)a+
 2	a;9
 2_BONE_IK
@@ -87,9 +90,9 @@
 2Way_1( %s )
 30CRenderingPipelineSlimDeferred
 31CScreenSpaceReflectionsRenderer
+33@9A
 =(3@9
-3@9iJ
-3@9jJ
+(3@9|J
 3D Skybox
 3DSkyboxForward
 3DSkyboxLightBinnerVr
@@ -119,6 +122,8 @@
 7IConVar
 8CFmtStrNILi256ELb0EE
 8x9,7
+	!]9	
+9(3@9
 	@@9h
 9h'@)*
 (@@9H
@@ -130,7 +135,6 @@
 (@@9tB
 'A)	}	
 A-!(!
-(A/9m
 A-'@A-
 ACT_IDLE
 ACT_NEUTRAL_REF_POSE
@@ -292,6 +296,8 @@ BodyGroupChoice
 body_type
 # bone
 BoneChannel
+bone_name
+bone_names
 borrow
 B-pFC-rND-
 breakable_count
@@ -451,6 +457,8 @@ C_OP_RemapCPtoCP
 C_OP_RemapModelVolumetoCP
 C_OP_RemapSpeedtoCP
 C_OP_RenderModels
+C_OP_RenderSprites
+C_OP_RenderTrails
 C_OP_RepeatedTriggerChildGroup
 C_OP_SetControlPointFieldToWater
 C_OP_SetControlPointFromObjectScale
@@ -640,6 +648,7 @@ f %d %d %d
 FeetSettings
 FeModel combiner: Too many ropes (%u) or links (%u): cannot fit sum in uint16
 %f %f %f %f
+F-H9B
 .fini_array
 FixupResourceName: Illegal full path passed in ("%s")!
 FixupResourceName: Illegal path, missing extension passed in ("%s")!
@@ -723,7 +732,7 @@ HelpSystem_001
 hf@9H
 hf@9i
 H%@)J	@
-hj58,n
+hj581n
 H#L9`r
 Hologram Depth
 Hologram Wireframe
@@ -731,8 +740,7 @@ HostStateMgr001
 hurt_me
 hurt_them
 h&@y)
-h&@yi
-I)@)!
+<i*@)a
 i*@)a
 i+@)a
 ib@9j
@@ -799,8 +807,7 @@ IQuickTime001
 is_debris
 #It contains connectivity part %d with %d vertices
 @ @-J
-J38@=
-j88sE
+J78h8
 J-cb@
 J-dj@
 JEIJJ}
@@ -901,6 +908,7 @@ m_ankleBoneName
 mapbuilder.nodraw
 mapbuilder.occluder
 MapListService_001
+master_morph_weight
 MATCHFRAMEWORK_001
 MaterialParamBuffer_t
 MaterialParamFloat_t
@@ -1068,6 +1076,8 @@ m_flOpStrengthMinScale
 m_flOutput0
 m_flOutput1
 m_flRadius
+m_flRadiusScale
+m_flRadiusTaper
 m_flRandomMax
 m_flRandomMin
 m_flScalePerParentParticle
@@ -1184,6 +1194,8 @@ modeldoc21
 modeldoc22
 modeldoc23
 modeldoc24
+modeldoc25
+modeldoc26
 modeldoc3
 modeldoc4
 modeldoc5
@@ -1391,7 +1403,7 @@ Plat_DebugPrint
 Plat_ExitProcess
 Plat_GetEnv
 Plat_GetThreadIndex
-Plat_IsInDebugSessionRaw
+Plat_IsInDebugSession
 Plat_ShouldCollectMiniDumpsForFatalErrors
 play_endcap
 Please add a MovementSettings node to the model in ModelDoc
@@ -1438,6 +1450,7 @@ QuarterResDepth
 QuarterResEffectsColor
 QueuedLoaderVersion001
 Quintic
+r*-@)!
 R11_EAC
 R16F_EXPAND
 R32_UINT
@@ -1471,6 +1484,7 @@ Release
 remapping vertex %d[w%d] invalid: %d->? >= %d
 remapping vertex %d[w%d] invalid: %d->%d >= %d
 RemapValClamped( 
+RemoveBoneAndChildren
 RenderDevice003
 RenderDeviceMgr001
 RenderHardwareConfig002
@@ -1494,6 +1508,7 @@ RenderingPipelineVrManifestDeveloperModeOnly
 RenderingPipelineVrRetinaBurnManifest
 RenderingPipelineVrStartup
 rendermesh.cpp(717): 
+RenderMeshFile
 RenderPipelineAliases
 RenderPipelineVr
 RenderPrimitiveType_t
@@ -1847,7 +1862,7 @@ V_isnan
 V_log2f
 V_logf
 VMaterialSystem2_001
-:vmdlkeys0
+vmdlkeys0
 vmdlkeys1
 vmdlkeys2
 VMDLLIB001
@@ -1882,6 +1897,8 @@ vpcf19
 vpcf2
 vpcf20
 vpcf21
+vpcf22
+vpcf23
 vpcf3
 vpcf4
 vpcf5
@@ -1944,6 +1961,7 @@ V_sincosf
 V_sinf
 VSInputSignature
 vsnap
+VSNAPFile
 V_snprintf
 V_sscanf
 V_stricmp_fast
@@ -1980,7 +1998,6 @@ X360_DST24
 X360_DST24F
 xf@)*
 @y`&@
-	!Y9	
 Yaw; 
 yaw_end
 yaw_start

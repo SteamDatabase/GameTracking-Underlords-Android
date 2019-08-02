@@ -4,16 +4,20 @@ import android.util.Log;
 import com.valvesoftware.Application;
 import com.valvesoftware.IStreamingBootStrap;
 import com.valvesoftware.JNI_Environment;
+import com.valvesoftware.PatchSystem;
 import com.valvesoftware.PatchSystem.EErrorCode;
 import com.valvesoftware.PatchSystem.EState;
 import com.valvesoftware.Resources;
 import com.valvesoftware.source2launcher.IContentSyncAsyncTask.TaskStatus;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Locale;
 
 public class application extends Application {
     IContentSyncAsyncTask m_ContentSyncAsyncTask = null;
     private boolean m_bHasRunLauncher = false;
     private boolean m_bTriedBootStrap = false;
+    private boolean m_bUseVulkan = false;
     LanguageCountryMap[] m_languageMap;
     private EPermissionsState m_nPermissionState = EPermissionsState.ENeedPermissions;
     String m_strCmdLineAccessCode = null;
@@ -98,22 +102,31 @@ public class application extends Application {
         String language = locale.getLanguage();
         String country = locale.getCountry();
         String GetEngineLanguage = GetEngineLanguage(language, country);
-        String str = "-launchersublanguage";
-        String str2 = "-launcherlanguage";
-        String str3 = ".txt";
-        String str4 = "@mobile/commandlines/android/source2launcher_";
-        if (this.m_strCmdLineAuthority == null || this.m_strCmdLineAccessCode == null) {
-            StringBuilder sb = new StringBuilder();
-            sb.append(str4);
-            sb.append(GetString);
-            sb.append(str3);
-            return new String[]{sb.toString(), str2, GetEngineLanguage, str, country};
+        StringBuilder sb = new StringBuilder();
+        sb.append("@mobile/commandlines/android/source2launcher_");
+        sb.append(GetString);
+        sb.append(".txt");
+        String[] strArr = {sb.toString()};
+        String[] strArr2 = {"-launcherlanguage", GetEngineLanguage, "-launchersublanguage", country};
+        ArrayList arrayList = new ArrayList();
+        arrayList.addAll(Arrays.asList(strArr));
+        arrayList.addAll(Arrays.asList(strArr2));
+        String str = this.m_strCmdLineAuthority;
+        if (str != null) {
+            String str2 = this.m_strCmdLineAccessCode;
+            if (str2 != null) {
+                arrayList.addAll(Arrays.asList(new String[]{"-steamlogin_authority", str, "-steamlogin_accesscode", str2}));
+            }
         }
-        StringBuilder sb2 = new StringBuilder();
-        sb2.append(str4);
-        sb2.append(GetString);
-        sb2.append(str3);
-        return new String[]{sb2.toString(), str2, GetEngineLanguage, str, country, "-steamlogin_authority", this.m_strCmdLineAuthority, "-steamlogin_accesscode", this.m_strCmdLineAccessCode};
+        if (PatchSystem.IsSelfInstallAPKEnabled()) {
+            arrayList.addAll(Arrays.asList(new String[]{"-sideloadedapk"}));
+        }
+        if (this.m_bUseVulkan) {
+            arrayList.addAll(Arrays.asList(new String[]{"-vulkan"}));
+        }
+        String[] strArr3 = new String[arrayList.size()];
+        arrayList.toArray(strArr3);
+        return strArr3;
     }
 
     public boolean InstallFiles(IStreamingBootStrap iStreamingBootStrap) {
@@ -140,6 +153,10 @@ public class application extends Application {
             this.m_ContentSyncAsyncTask.updateProgress(EState.Error, EErrorCode.Unknown, 0);
         }
         return true;
+    }
+
+    public void SetUseVulkan(boolean z) {
+        this.m_bUseVulkan = z;
     }
 
     /* access modifiers changed from: protected */

@@ -712,8 +712,10 @@ android/com/valvesoftware/source2launcher/PatchSystemContentSyncAsyncTask.java
 android/com/valvesoftware/source2launcher/IContentSyncAsyncTask.java
 android/com/valvesoftware/source2launcher/SafeAreaListener.java
 android/com/valvesoftware/source2launcher/appmain.java
+android/com/valvesoftware/source2launcher/DeviceInfo.java
 android/com/valvesoftware/source2launcher/application.java
 android/com/valvesoftware/source2launcher/applauncher.java
+android/com/valvesoftware/source2launcher/VulkanWhitelist.java
 android/com/valvesoftware/Resources.java
 android/com/valvesoftware/SelfInstall.java
 android/com/valvesoftware/BuildConfig.java
@@ -834,6 +836,7 @@ android/res/values-xxxhdpi/drawables.xml
 android/res/values-vi/strings.xml
 android/res/values-iw/strings.xml
 android/res/values-v25/styles.xml
+android/res/values-nodpi/drawables.xml
 android/res/values-pt-rPT/strings.xml
 android/res/values-mdpi/drawables.xml
 android/res/values-mn/strings.xml
@@ -861,6 +864,7 @@ android/res/values/colors.xml
 android/res/values/dimens.xml
 android/res/values/strings.xml
 android/res/values/xmls.xml
+android/res/values/fonts.xml
 android/res/values-bs/strings.xml
 android/res/values-hu/strings.xml
 android/res/color/abc_primary_text_material_dark.xml
@@ -903,6 +907,7 @@ android/res/values-pt/strings.xml
 android/res/values-no/strings.xml
 android/res/values-xlarge/dimens.xml
 android/res/values-xhdpi/drawables.xml
+android/res/drawable-nodpi-v4/launch_background.png
 android/res/values-port/bools.xml
 android/res/values-en-rIN/strings.xml
 android/res/values-v28/styles.xml
@@ -1162,6 +1167,7 @@ android/res/values-ro/strings.xml
 android/res/values-es/strings.xml
 android/res/values-in/strings.xml
 android/res/values-night/styles.xml
+android/res/font/radiance_bold.otf
 android/res/values-ldrtl-hdpi/drawables.xml
 android/res/values-mr/strings.xml
 android/res/values-ta/strings.xml
@@ -1183,14 +1189,15 @@ android/res/mipmap-mdpi-v4/ic_launcher_round.png
 android/res/mipmap-mdpi-v4/ic_launcher_foreground.png
 android/res/mipmap-mdpi-v4/ic_launcher.png
 android/res/drawable/abc_ic_ab_back_material.xml
+android/res/drawable/clean_logo.png
 android/res/drawable/abc_list_selector_background_transition_holo_dark.xml
 android/res/drawable/abc_list_selector_holo_dark.xml
 android/res/drawable/abc_textfield_search_material.xml
 android/res/drawable/logo.png
 android/res/drawable/abc_ic_go_search_api_material.xml
+android/res/drawable/loadingbar_bg.png
 android/res/drawable/notification_icon_background.xml
 android/res/drawable/abc_cab_background_internal_bg.xml
-android/res/drawable/launch_background.png
 android/res/drawable/abc_ratingbar_small_material.xml
 android/res/drawable/abc_btn_radio_material.xml
 android/res/drawable/abc_seekbar_tick_mark_material.xml
@@ -1220,6 +1227,7 @@ android/res/drawable/abc_ic_voice_search_api_material.xml
 android/res/drawable/abc_list_selector_background_transition_holo_light.xml
 android/res/drawable/abc_ic_search_api_material.xml
 android/res/drawable/abc_ratingbar_indicator_material.xml
+android/res/drawable/loadingbar_fill.png
 android/res/drawable/abc_vector_test.xml
 android/res/drawable/abc_tab_indicator_material.xml
 android/res/values-gl/strings.xml

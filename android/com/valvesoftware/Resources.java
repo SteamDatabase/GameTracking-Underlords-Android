@@ -8,17 +8,19 @@ public class Resources {
     public static Class<?> R_color;
     public static Class<?> R_dimen;
     public static Class<?> R_drawable;
+    public static Class<?> R_font;
     public static Class<?> R_id;
     public static Class<?> R_integer;
     public static Class<?> R_string;
     public static android.content.res.Resources app_resources;
     private static boolean s_bInitialized;
 
-    /* JADX WARNING: Can't wrap try/catch for region: R(19:0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|19) */
+    /* JADX WARNING: Can't wrap try/catch for region: R(21:0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|21) */
     /* JADX WARNING: Failed to process nested try/catch */
     /* JADX WARNING: Missing exception handler attribute for start block: B:11:0x0099 */
     /* JADX WARNING: Missing exception handler attribute for start block: B:13:0x00b0 */
     /* JADX WARNING: Missing exception handler attribute for start block: B:15:0x00c7 */
+    /* JADX WARNING: Missing exception handler attribute for start block: B:17:0x00de */
     /* JADX WARNING: Missing exception handler attribute for start block: B:3:0x003d */
     /* JADX WARNING: Missing exception handler attribute for start block: B:5:0x0054 */
     /* JADX WARNING: Missing exception handler attribute for start block: B:7:0x006b */
@@ -105,12 +107,21 @@ public class Resources {
             java.lang.StringBuilder r3 = new java.lang.StringBuilder     // Catch:{ Throwable -> 0x00de }
             r3.<init>()     // Catch:{ Throwable -> 0x00de }
             r3.append(r0)     // Catch:{ Throwable -> 0x00de }
-            java.lang.String r0 = "drawable"
-            r3.append(r0)     // Catch:{ Throwable -> 0x00de }
-            java.lang.String r0 = r3.toString()     // Catch:{ Throwable -> 0x00de }
-            java.lang.Class r0 = java.lang.Class.forName(r0, r2, r1)     // Catch:{ Throwable -> 0x00de }
-            R_drawable = r0     // Catch:{ Throwable -> 0x00de }
+            java.lang.String r4 = "drawable"
+            r3.append(r4)     // Catch:{ Throwable -> 0x00de }
+            java.lang.String r3 = r3.toString()     // Catch:{ Throwable -> 0x00de }
+            java.lang.Class r3 = java.lang.Class.forName(r3, r2, r1)     // Catch:{ Throwable -> 0x00de }
+            R_drawable = r3     // Catch:{ Throwable -> 0x00de }
         L_0x00de:
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder     // Catch:{ Throwable -> 0x00f5 }
+            r3.<init>()     // Catch:{ Throwable -> 0x00f5 }
+            r3.append(r0)     // Catch:{ Throwable -> 0x00f5 }
+            java.lang.String r0 = "font"
+            r3.append(r0)     // Catch:{ Throwable -> 0x00f5 }
+            java.lang.String r0 = r3.toString()     // Catch:{ Throwable -> 0x00f5 }
+            java.lang.Class r0 = java.lang.Class.forName(r0, r2, r1)     // Catch:{ Throwable -> 0x00f5 }
+            R_font = r0     // Catch:{ Throwable -> 0x00f5 }
+        L_0x00f5:
             r0 = 1
             s_bInitialized = r0
             return
@@ -213,6 +224,20 @@ public class Resources {
         }
         try {
             Field FindField = FindField(R_drawable, str);
+            if (FindField != null) {
+                return new int[]{FindField.getInt(null)};
+            }
+        } catch (Throwable unused) {
+        }
+        return null;
+    }
+
+    public static int[] GetFont(String str) {
+        if (!s_bInitialized) {
+            Initialize();
+        }
+        try {
+            Field FindField = FindField(R_font, str);
             if (FindField != null) {
                 return new int[]{FindField.getInt(null)};
             }

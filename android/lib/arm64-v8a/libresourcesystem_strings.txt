@@ -56,7 +56,7 @@
 29CRD_RegisterResourceDataUtils
 29IRD_RegisterResourceDataUtils
 2	h(8H
-2hb49
+2hb89
 30IAsyncResourceDataRequestOwner
 32CSchemaRegistration_resourcefile
 34CSchemaRegistration_resourcesystem
@@ -143,7 +143,6 @@ AE_ZOMBIE_TOGGLE_HEAD
 AH*I}
 ai_model_info
 AIWalkable
-	Al9	
 allowstatic
 An attempt was made to create a resource manifest with debug name "%s" while the resource system was shutting down.
 anchor_angles
@@ -181,6 +180,7 @@ AnimSmoothLoop
 AnimStartLoop
 AnimSubtract
 anonymous 
+	Ap9	
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 archive
 AssertMsg_ConditionFailed
@@ -234,6 +234,8 @@ blockLOS
 BodyGroup
 BodyGroupChoice
 body_type
+bone_name
+bone_names
 bouncecolor
 breakable_count
 breakable_model
@@ -249,7 +251,6 @@ __bss_start__
 bUpdate
 burst_randomize
 burst_scale
-Bvpcf1
 b*yhZ*yhf*ya
 cable
 Cannot register same format from/to a KV3 conversion (from '%s' to '%s')
@@ -363,6 +364,8 @@ C_OP_RemapCPtoCP
 C_OP_RemapModelVolumetoCP
 C_OP_RemapSpeedtoCP
 C_OP_RenderModels
+C_OP_RenderSprites
+C_OP_RenderTrails
 C_OP_RepeatedTriggerChildGroup
 C_OP_SetControlPointFieldToWater
 C_OP_SetControlPointFromObjectScale
@@ -387,7 +390,9 @@ create_particle
 CResourceArray
 CResourcePointer
 CResourceString
+CResourceSystem::BlockingFinishAllCurrentlyLoadingManifests is blocking
 CResourceSystem::FindOrCreateProceduralResource: Passed in an empty name for a procedural resource!
+CResourceSystem::ForceSynchronizationAndBlockUntilManifestLoaded blocked for %.3f ms on %s
 CResourceSystem Init
 CResourceSystem PreShutdown()
 CResourceSystem Shutdown
@@ -590,11 +595,10 @@ HostStateMgr001
 hurt_me
 hurt_them
 **hx)
+h"@y	
 h*@y_
-h"@yi
 I)!|@
 i6@yh
-	!i9	
 I'A9)
 ib@9(
 ib@9)
@@ -673,9 +677,10 @@ IQuickTime001
 is_debris
 IsResourceManifestGroupKnown: Manifest group name is empty or null
 i"@yh
-J38ME
-J68@F
+J38cD
+J68VE
 j6@y_
+J78*D
 JEIJJ}
 JIIJJ}
 jj(8(
@@ -737,11 +742,13 @@ loop_break_on_flashlight
 loop_in_action
 looping
 LrwcE
+	!m9	
 - Manifest, %d operations: %s
 + Manifest, %d operations: %s
 - Manifest, operation: %lld)
 + Manifest, operation: %lld)
 MapListService_001
+master_morph_weight
  -> Matched %d of %d loaded resources
 MATCHFRAMEWORK_001
 material
@@ -837,6 +844,8 @@ m_flOpStrengthMinScale
 m_flOutput0
 m_flOutput1
 m_flPrecomputedMaxRange
+m_flRadiusScale
+m_flRadiusTaper
 m_flRandomMax
 m_flRandomMin
 m_flScalePerParentParticle
@@ -919,6 +928,8 @@ modeldoc21
 modeldoc22
 modeldoc23
 modeldoc24
+modeldoc25
+modeldoc26
 modeldoc3
 modeldoc4
 modeldoc5
@@ -1036,7 +1047,7 @@ Plat_DebugPrint
 Plat_ExitProcess
 Plat_FloatTime
 Plat_GetEnv
-Plat_IsInDebugSessionRaw
+Plat_IsInDebugSession
 Plat_MicroSecTickDiff
 Plat_RelativeTicks
 Plat_ShouldCollectMiniDumpsForFatalErrors
@@ -1061,7 +1072,7 @@ pthread_mutex_destroy
 ../public/tier1/utlrbtree.h
 ../public/tier1/utlsortvector.h
 QAngle
-	Qd9I
+	Qh9I
 Qi"A)`
 Qi^*yi
 Quaternion
@@ -1082,10 +1093,12 @@ RegisterStringToken
 .rela.dyn
 .rela.plt
 Release
+RemoveBoneAndChildren
 RenderDevice003
 RenderDeviceMgr001
 renderdiffuse
 RenderHardwareConfig002
+RenderMeshFile
 RenderService_001
 renderspecular
 RenderSystemSurface001
@@ -1118,6 +1131,7 @@ resource_repeated_reload
 resource_repeated_reload <count> <resource_name> (<resource name> ...): Load and unload the specified resource(s)
 resource_repeated_reload(%d)
 resource_repeated_reload: Invalid resource name '%s'
+Resource "%s" was explicitly loaded with a blocking load.
 Resource "%s" was not precached and could not be loaded by a just in time blocking load.
 Resource "%s" was not precached but was loaded by a just in time blocking load.
 resourcesystem
@@ -1347,7 +1361,7 @@ VisBuilder_001
 V_isnan
 VMaterialSystem2_001
 VMatrix
-:vmdlkeys0
+vmdlkeys0
 vmdlkeys1
 vmdlkeys2
 VMDLLIB001
@@ -1365,6 +1379,7 @@ void CUtlBlockMemory<UtlLinkedListElem_t<CStreamingResourceData *, unsigned shor
 void CUtlBlockMemory<UtlLinkedListElem_t<ExtRefList_t *, unsigned int>, unsigned int>::ChangeSize(int) [T = UtlLinkedListElem_t<ExtRefList_t *, unsigned int>, I = unsigned int]
 void CUtlBuffer::VaPrintf(const char *, va_list)
 VP4003
+#<vpcf1
 vpcf10
 vpcf11
 vpcf12
@@ -1378,6 +1393,8 @@ vpcf19
 vpcf2
 vpcf20
 vpcf21
+vpcf22
+vpcf23
 vpcf3
 vpcf4
 vpcf5
@@ -1405,6 +1422,7 @@ VScriptDbg
 VScriptManager010
 _V_SetExtension
 vsnap
+VSNAPFile
 vsndevtsvsndstckvsnd
 V_snprintf
 V_sscanf
@@ -1437,6 +1455,7 @@ WARNING: %s resource '%s' (%016llX) requested but is not in the system. (Missing
 Warning:  %s = '%s' is infinite, clamping value.
 WARNING: Trying to deallocate a resource after the type manager was uninstalled! ("%s")
 WARNING: Trying to deallocate a resource with no associated resource type! ("%s")
+WeightList
 WorkshopSetup001
 WorldRendererBuilderMgr001
 WorldRendererMgr001
@@ -1458,6 +1477,7 @@ yi^jy)
 )YJJ)}
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 ^*ySi(
+,$yVD
 @y	y3x-
 _Z14V_stristr_fastPKcS0_
 _Z17LoggingSystem_Logi17LoggingSeverity_t5ColorPKcz

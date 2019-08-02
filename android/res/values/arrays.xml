@@ -60,6 +60,7 @@
         <item>game:../steam_images/dac_mobile/mobile_bins/dac/bin/$(PLATFORM_ARCH)/libhost.so</item>
         <item>game:../steam_images/dac_mobile/mobile_bins/dac/bin/$(PLATFORM_ARCH)/libserver.so</item>
         <item>game:bin/$(PLATFORM_ARCH)/libunderlords.so</item>
+        <item>game:bin/$(PLATFORM_ARCH)/libhidapi.so</item>
     </array>
     <array name="VPC_SharedLibraries_MinimalNames">
         <item>c++_shared</item>
@@ -121,6 +122,7 @@
         <item>host</item>
         <item>server</item>
         <item>underlords</item>
+        <item>hidapi</item>
     </array>
     <array name="VPC_SharedLibraries_UnqualifiedNames">
         <item>libc++_shared.so</item>
@@ -182,5 +184,6 @@
         <item>libhost.so</item>
         <item>libserver.so</item>
         <item>libunderlords.so</item>
+        <item>libhidapi.so</item>
     </array>
 </resources>

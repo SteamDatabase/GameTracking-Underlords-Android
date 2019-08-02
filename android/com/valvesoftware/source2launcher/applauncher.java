@@ -23,6 +23,7 @@ import com.valvesoftware.source2launcher.application.EPermissionsState;
 public class applauncher extends Activity {
     private static final int MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 1;
     private static Context s_context;
+    private boolean m_bMadeAPIChoice = false;
     private boolean m_bWriteAccess = false;
     Handler m_timerHandler = new Handler();
     Runnable m_timerRunnable = new Runnable() {
@@ -152,6 +153,18 @@ public class applauncher extends Activity {
 
     /* access modifiers changed from: protected */
     public void bootStrapIntoGame() {
+        if (!this.m_bMadeAPIChoice && VERSION.SDK_INT >= 24) {
+            boolean[] GetBoolean = Resources.GetBoolean("VPC_PatchSystemEnabled");
+            boolean z = false;
+            if (GetBoolean != null && GetBoolean[0]) {
+                z = true;
+            }
+            if (!z) {
+                ChooseRenderingAPI();
+                this.m_bMadeAPIChoice = true;
+                return;
+            }
+        }
         Log.i("com.valvesoftware.SelfInstall", "Bootstrapping");
         this.m_timerHandler.postDelayed(this.m_timerRunnable, 1000);
         ((application) JNI_Environment.m_application).onBootStrap();
@@ -198,5 +211,24 @@ public class applauncher extends Activity {
         } else {
             Log.e(str, "Could not getPackageManager().");
         }
+    }
+
+    /* access modifiers changed from: protected */
+    public void ChooseRenderingAPI() {
+        Builder builder = new Builder(this);
+        String str = "Vulkan";
+        builder.setTitle("Rendering API").setMessage("Please choose a rendering API").setNegativeButton("OpenGL ES", new OnClickListener() {
+            public void onClick(DialogInterface dialogInterface, int i) {
+                ((application) JNI_Environment.m_application).SetUseVulkan(false);
+                applauncher.this.bootStrapIntoGame();
+            }
+        }).setPositiveButton(str, new OnClickListener() {
+            public void onClick(DialogInterface dialogInterface, int i) {
+                ((application) JNI_Environment.m_application).SetUseVulkan(true);
+                applauncher.this.bootStrapIntoGame();
+            }
+        });
+        builder.setCancelable(false);
+        builder.create().show();
     }
 }

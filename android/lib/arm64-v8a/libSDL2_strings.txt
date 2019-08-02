@@ -29,6 +29,7 @@
 05000000de2800000611000001000000,Steam Controller,a:b0,b:b1,back:b6,guide:b8,leftshoulder:b4,leftstick:b9,lefttrigger:a2,leftx:a0,lefty:a1,rightshoulder:b5,righttrigger:a3,start:b7,x:b2,y:b3,
 07`/@
 ?0766666
+0x%.4x/0x%.4x
 0x%8.8x
 	0x%lx: %s
 0@yJ}@
@@ -36,34 +37,37 @@
                           1.402,  -0.7141,   0);
                           1.596,  -0.813,    0);
                           1.7927, -0.5329,   0);
+	1[9?
  )19AJRZbjs{
-	1F9i
+,[1K6
 1$@xb<
+	1@y?!4k
 2A)0Ab
-2	a<9
-2	A$9
+2	A,9
 2BQ*r
 2D@@qK
 2e@@qK
 2h`@9id@9jh@9
-2hF@9
+2hF@9	
 2Hr8|H|8
 2Hr8}H|8
-2+i(8
-2Ly)x)
 2M%@x.
-2	q'9H
 2#@@qK
 2~	SR
 |2TZ3
 2uB@qK
+2@y*;
 2@y*5
+%;2ZFd
 ?3?00p
+?333?
+3-bit IMA ADPCM currently not supported
 "3DUfw
 3Hs8THt8
 3mE@9+
 4*-@)
 4a>@9
+4H3^9
 4h+L)
 4Ht8UHu8vHv8
 4hWL)hs
@@ -73,8 +77,8 @@
 4"	@y
 5063045
 5	E@9 
+5hj@y
 5h'N)
-5	@y7
 66666
 ?6666666
 6666666?
@@ -82,11 +86,12 @@
 66666707666
 666676666670?
 6Mii8
-6@y(	
 (7C)+
 7h>@9
 7vV	)h"@
+!7@y 3@y
 /!8a.!
+8H0@9I
 8Hx8)%
 8!im8
 @8Rir8r
@@ -97,6 +102,7 @@
 @92Xm
 @93}@
 @94xt
+@9!5A
 @9"	@9)
 @9#	@9
 @9#	@9@
@@ -114,14 +120,17 @@
 +`@9*d@9)h@9(l@9l=
 @9DF@8!
 @9Dzd
-@9)-E
 @9eZn
 @9F!@
 @9gye
-9'hb8
 @9hyh
-@9!I@
+9i<	S
+	@9)j28
 @9k!@
+@9k2Ayif
+@9k>Ayin
+@9kJAyiv
+@9kVAyi~
 @9kzk
 @9L|@
 9N|W0O{
@@ -144,6 +153,7 @@
 	A@9?
 	A@9?!
 A@9? 
+a>@9b
 ;A@9Z}
 a_angle
 a:b0,
@@ -163,17 +173,23 @@ acos@@LIBC
 AC Refresh
 AC Search
 AC Stop
+ADH~OqW/`
 >a<ff<
+Afterglow AX.1 Gamepad for Xbox 360
+Afterglow Gamepad for Xbox 360
+Afterglow Prismatic Wired Controller
 'Aic*Ci
+aii|j
 A-i*@)k2A)
 Aja8B|
 AJa8B
 A@)k	
-A)k)1
 A-K9 
 A)kc@
+A)kQ&
 Allocation %d: %d bytes
 --allow-highdpi
+[--allow-highdpi]
 All SDL assertions between last init/quit:
 ALooper_forThread
 ALooper_pollAll
@@ -183,6 +199,8 @@ AltErase
 always_ignore
 Always Ignore
     * always ignore: %s.
+(aN!@
+(aN0*aN
 (aN'*a
 +aN[)a
 ANativeWindow_fromSurface
@@ -197,6 +215,9 @@ Android
 Android (4751641 based on r328903) clang version 7.0.2 (https://android.googlesource.com/toolchain/clang 003100370607242ddd5815e4a043907ea9004281) (https://android.googlesource.com/toolchain/llvm 1d739ffb0366421d383e04ff80ec2ee591315116) (based on LLVM 7.0.2svn)
 Android Accelerometer
 Android_ActivityMutex
+Android_ActivityMutex_Lock
+Android_ActivityMutex_Lock_Running
+Android_ActivityMutex_Unlock
 Android_AddHaptic
 Android_AddJoystick
 ANDROIDAUDIO_bootstrap
@@ -246,6 +267,7 @@ Android_JNI_HasClipboardText
 Android_JNI_HideTextInput
 Android_JNI_InitTouch
 Android_JNI_IsScreenKeyboardShown
+Android_JNI_MinizeWindow
 Android_JNI_OpenAudioDevice
 Android_JNI_PollHapticDevices
 Android_JNI_PollInputDevices
@@ -258,6 +280,7 @@ Android_JNI_SetRelativeMouseEnabled
 Android_JNI_SetSystemCursor
 Android_JNI_SetupThread
 Android_JNI_SetWindowStyle
+Android_JNI_ShouldMinimizeOnFocusLoss
 Android_JNI_ShowMessageBox
 Android_JNI_ShowTextInput
 Android_JNI_SupportsRelativeMouse
@@ -265,6 +288,7 @@ Android_JNI_SuspendScreenSaver
 Android_JNI_WriteAudioBuffer
 __android_log_print
 __android_log_write
+Android_MinimizeWindow
 Android_OnHat
 Android_OnJoy
 Android_OnKeyDown
@@ -305,11 +329,13 @@ AN*N%
 +aNV+aN
 +aNy+aN*
 +aNY+aNi
+	Ap9	
 a_position
 Application
 Application didn't initialize properly, did you include SDL_main.h in the file containing your main() function?
 Application not compiled with SDL %d.%d
 app_process
+ASDL_JOYSTICK_HIDAPI_PS4
 ASensorEventQueue_disableSensor
 ASensorEventQueue_enableSensor
 ASensorEventQueue_getEvents
@@ -334,12 +360,14 @@ atof@@LIBC
 atoi@@LIBC
 audio
 AUDIO
+audio_buf
 audioClose
 Audio device already open
 Audio device has a callback, queueing not allowed
 Audio device is already opened
 Audio driver: %s
 AudioFastForward
+audio_len
 AudioMute
 AUDIO nativeSetupJNI()
 AudioNext
@@ -360,11 +388,14 @@ A@y*m@
 /=!B{^
 B@9_!
 back:b4,
+Batarang Xbox 360 controller
 b:b1,
 b:b4,
 ```bf
 bhxh`
 bhxhb
+BigBen Interactive XBOX 360 Controller
+bii|j
 B)*il
 B)*ilx
 B)Kii
@@ -373,7 +404,6 @@ B)lii
 Blit combination not supported
         Blue Mask  = 0x%.8x
 BMP file has an invalid number of colors
-bogus extended .wav header
 Bounds: %dx%d at %d,%d
 break
 Break
@@ -387,7 +417,8 @@ Built-in render drivers:
 Built-in video drivers:
 Button name too large: %s
 ([B)V
-b@y(5
+b:@ya6@y`2@y
+b@y+k
 ([BZ)I
 C)4zm
 C@9)C@9
@@ -417,7 +448,10 @@ C-b&@
 --center
 CENTER
 Centering on display %d
+[--center | --position X,Y]
 --channels
+[--channels N]
+Chunk count in WAVE file exceeds limit of %u
 Clear / Again
 clipboardGetText
 clipboardHasText
@@ -433,7 +467,6 @@ close
 CompareSurfaces%04d_Reference.bmp
 CompareSurfaces%04d_TestOutput.bmp
 Comparison of pixels with allowable error of %i failed %i times.
-Complex WAVE files not supported
 Compressed BMP files not supported
 Computer
 Conflicting window flags specified
@@ -449,13 +482,20 @@ Could not create EGL context (context attributes are not supported)
 Could not enumerate Vulkan physical devices
 Could not fetch native window
 Could not fetch native window from UI thread
+Could not find RIFF or WAVE identifiers (not a Waveform file)
 Could not get EGL display
 Could not initialize EGL
 Could not initialize OpenGL / GLES library
 Could not load EGL library
 Could not parse EGL version string: %s
 could not read any dollar gesture from rwops
+Could not read custom coefficients in MS ADPCM format header
+Could not read data of WAVE data chunk
+Could not read data of WAVE fmt chunk
 Could not read DB
+Could not read MS ADPCM format header
+Could not read RIFF form type
+Could not read RIFF header
 Could not retrieve EGL function eglBindAPI
 Could not retrieve EGL function eglChooseConfig
 Could not retrieve EGL function eglCreateContext
@@ -476,6 +516,10 @@ Could not retrieve EGL function eglSwapInterval
 Could not retrieve EGL function eglTerminate
 Could not retrieve EGL function eglWaitGL
 Could not retrieve EGL function eglWaitNative
+Could not seek data of WAVE data chunk
+Could not seek in file
+Could not seek to WAVE chunk data
+Could not seek to WAVE chunk header
 Couldn't convert image to %d bpp
 Couldn't create audio buffer queue
 Couldn't create audio thread
@@ -487,6 +531,7 @@ Couldn't create sensor manager
 Couldn't create surface: %s
 Couldn't create window: %s
 Couldn't enable sensor
+Couldn't enable vibration
 Couldn't find any displays
 Couldn't find display mode match
 Couldn't find mapping for device (%d)
@@ -498,16 +543,23 @@ Couldn't get external directory
 Couldn't get internal directory
 Couldn't get stream offset
 Couldn't initialize audio driver: %s
+Couldn't initialize hidapi
 Couldn't initialize pthread attributes
 Couldn't initialize video driver: %s
 Couldn't load %s: %s
+Couldn't load stick calibration
 Couldn't lock event queue
 Couldn't open audio: %s
+Couldn't open HID device %s
 Couldn't parse GUID from %s
 Couldn't parse name from %s
 Couldn't parse %s
 Couldn't read screen: %s
 Couldn't save screenshot.bmp: %s
+Couldn't send rumble packet
+Couldn't set input mode
+Couldn't start USB reports
+Couldn't write Xbox One initialization packet
 count
 createCustomCursor
 Created renderer: %s
@@ -515,6 +567,7 @@ CreateSystemCursor is not currently supported
 Creation of SDL timer failed: %s
 CRITICAL
 CrSel
+CTx_	
 CurrencySubUnit
 CurrencyUnit
   Current mode: %dx%d@%dHz, %d bits-per-pixel (%s)
@@ -533,6 +586,7 @@ __cxa_finalize@@LIBC
 	D@9+
 *D@9n
 .data
+Data of WAVE fmt chunk too big
 .data.rel.ro
 %d bpp BMP files not supported
 %d-bpp BMP images are not supported
@@ -543,14 +597,17 @@ default
 Delete
 densityDpi
 --depth
+[--depth N]
 descriptor
 Destination pitch is too small, expected at least %d
-Destination rate is zero
+Destination rate is equal to or less than zero
+Destination rate is too high
 Device doesn't support rumble
 dI)	,A)
 --display
 Display %d: %s
 displayIndex must be in the range 0 - %d
+[--display N]
 DisplaySwitch
 Dja8B|
 DJa8B
@@ -576,6 +633,8 @@ dpleft:b13,
 dpright
 dpright:b14,
 dpup:b11,
+dropblock
+dropframe
 dst_pitch
 !D`.!T
 dummy
@@ -585,15 +644,16 @@ dYC)w!@
 .dynstr
 .dynsym
 D+^ZT\
+@)e2@9
 @)e2@9f"
-@)e2@9f6@9
-@)e2@9i
+@)e2@9f6@9"
 *E@9_
 	E@9?
 	E@9*
 E@9\E@9
 E@9H%
 E@9VE@9
+eB@y"
 _edata
 EGL_BAD_ACCESS
 EGL_BAD_ALLOC
@@ -624,6 +684,7 @@ EHe8gHg8
 .eh_frame
 .eh_frame_hdr
 Eject
+Elecom JC-U3613M
 Empty destination palette
 __end__
 e@@q+
@@ -650,7 +711,6 @@ eT@9gX@9h`@9id@9jh@9
 event
 Event queue is full (%d events)
 Execute
-_exit
 Exit code: 2
 Exit code: %d
 _exit@@LIBC
@@ -658,13 +718,13 @@ Expect 2 allocations from within SDL_GetErrBuf()
 expf@@LIBC
 exp@@LIBC
 ExSel
+Extensible WAVE header too small
      #extension GL_OES_EGL_image_external : require
 external storage state: %s
 F32LSB
 F32MSB
 F32SYS
 @F@8`i-8 F@8@i-8
-$F@8R
 F@9)}
 Failed (Aborted)
 Failed loading %s: %s
@@ -722,10 +782,13 @@ flxlf
 Fm('B)
 fmodf@@LIBC
 fmod@@LIBC
+fmt chunk after data chunk in WAVE file
 fopen
 fopen@@LIBC
+force
 Force run of disabled test since test filter was set
 --format
+[--format U8|S8|U16|U16LE|U16BE|S16|S16LE|S16BE]
 Found no matching display mode
 FOURCC pixel formats are not supported
 fprintf
@@ -741,18 +804,23 @@ ftell
 ftell@@LIBC
 --fullscreen
 --fullscreen-desktop
+[--fullscreen | --fullscreen-desktop | --windows N]
   Fullscreen video modes:
+FUS1ON Tournament Controller
 Fuzzer invocations: %d
 ([F)V
 fwrite
 fwrite@@LIBC
+f@y(G
 ([FZ)I
+Gamestop Xbox 360 Controller
 gamma
 g*B)k2@y
 Generating a random seed failed
 generic
 GenuineIntel
 --geometry
+[--geometry WxH]
 getAbsolutePath
 getAssets
 getBooleanExtra
@@ -808,6 +876,7 @@ glCompileShader
 glCreateProgram
 glCreateShader
 --gldebug
+[--gldebug]
 glDeleteBuffers
 glDeleteFramebuffers
 glDeleteFramebuffersOES
@@ -894,21 +963,25 @@ glUseProgram
 glVertexAttribPointer
 glVertexPointer
 glViewport
+gng*a
 .gnu_debuglink
 .gnu.version
 .gnu.version_r
+GPD Win 2 X-Box Controller
 --grab
+[--grab]
         Green Mask = 0x%.8x
 guide
 GUIDE
 h2@9c
-h2@9i6@9l
+h2@9i6@9
 h6@9c
 {H{88Hx8)%
 H|8J%
 ;H{8Q#
 @H`8sHs8
 h:@9h
+h~@9izA9
 >Haptic already opened
 Haptic: Autocenter must be between 0 and 100.
 Haptic: Device does not support setting autocenter.
@@ -929,6 +1002,9 @@ Haptic: SDL_SYS_HapticOpenFromJoystick failed.
 hapticStop
 Haptic: There are %d haptic devices available
 Haptic: Updating effect type is illegal.
+Harmonix Rock Band Drumkit
+Harmonix Rock Band Guitar
+Harmonix Xbox 360 Controller
 Harness input to repro failures:
 .hash
 Hb8c|
@@ -947,8 +1023,18 @@ hg-0:aaaaaaaaaaah
 Hg83Hs8
 'Hg8SHs8
 Hi8J}
-hidapi
 hidapi,*,a:b0,b:b1,back:b4,dpdown:b12,dpleft:b13,dpright:b14,dpup:b11,guide:b5,leftshoulder:b9,leftstick:b7,lefttrigger:a4,leftx:a0,lefty:a1,rightshoulder:b10,rightstick:b8,righttrigger:a5,rightx:a2,righty:a3,start:b6,x:b2,y:b3,
+HIDAPI_IsDevicePresent
+HIDAPI_XboxControllerName
+hid_close
+hid_enumerate
+hid_exit
+hid_free_enumeration
+hid_get_feature_report
+hid_init
+hid_open_path
+hid_read_timeout
+hid_write
 *Hi)x
 Hj8.Hn8DHd8
 Hj8k}	
@@ -961,12 +1047,35 @@ h"K9H
 h+M)k
 Hn8$Hd8FHf8jHj8
 Ho8J%
+Honey Bee Xbox360 dancepad
+Hori Co. DOA4 FightStick
+Hori Fighting Edge
+Hori Fighting Stick EX2
+Hori Fighting Stick EX2B
+Hori Fighting Stick VX
+Hori Fighting Stick VX Alt
+Hori GEM Xbox controller
+HoriPad EX2 Turbo
+Hori PadEX Turbo
+HORIPAD ONE
+Hori Real Arcade Pro.EX
+Hori Real Arcade Pro. EX
+Hori Real Arcade Pro.EX Premium VLX
+Hori Real Arcade Pro Hayabusa (USA) Xbox One
+Hori Real Arcade Pro V Kai 360
+Hori Real Arcade Pro V Kai Xbox One
+Hori Real Arcade Pro VX
+Hori Real Arcade Pro VX-SA
+Hori Real Arcade Pro.VX SA
+Hori SOULCALIBUR V Stick
+Hori XBOX 360 EX 2 with Turbo
 Hp8`}
 Hp8R~	
 Hq8[H{8
 Hq8\H{8
 Hq8R&
 Hs86}
+HSM3 Xbox360 dancepad
 Ht87}
 }Ht8w
 Hu84}
@@ -978,6 +1087,7 @@ Hw89'
 Hw8"Kb8$Kd8
 Hy8vJv8
 h"@yi
+H@y	`@y
 Hz8{'
 }Hz89
 *I!	*
@@ -985,11 +1095,15 @@ Hz8{'
 i2@y9
 i`8aIa8R
 I`8@i181
+*I@9+M@9j
 iBE9j.
 Ic8cJh8/Kv8
 --icon
+[--icon icon.bmp]
 iF@9?
 (IFI)V
+ignorezero
+ ihxh
 	ii8	
 (IIII)[I
 ([IIIII)I
@@ -1004,7 +1118,6 @@ I*	i+x
 .@il2@y
 (ILjava/lang/String;Ljava/lang/String;[I[I[Ljava/lang/String;[I)I
 Im8/~
-IMA ADPCM decoder can only handle %u channels
 In8IIi8
 Index1LSB
 Index1MSB
@@ -1014,6 +1127,7 @@ Index8
 Indexed pixel formats not supported
 index must be -1 or in the range of 0 - %d
 --info
+[--info all|video|modes|render|event]
 <init>
 initTouch
 I@No buffer allocated for conversion
@@ -1023,14 +1137,29 @@ Installed Vulkan doesn't implement the VK_KHR_surface extension
 instance
 (Invalid)
 Invalid audio device ID
+Invalid bits per sample
+Invalid block alignment
 Invalid channel combination
+Invalid companded bits per sample of %u
 Invalid destination blit rectangle
 Invalid destination channels
 Invalid destination format
+Invalid fact chunk in WAVE file
+Invalid IMA ADPCM bits per sample of %u
+Invalid IMA ADPCM block size (nBlockAlign)
+Invalid MS ADPCM bits per sample of %u
+Invalid MS ADPCM block size (nBlockAlign)
+Invalid MS ADPCM coefficient index in block header
+Invalid MS ADPCM format header (too small)
 Invalid number of buttons
+Invalid number of channels
+Invalid number of sample frames in WAVE fact chunk (too many)
+Invalid number of samples per IMA ADPCM block (wSamplesPerBlock)
+Invalid number of samples per MS ADPCM block (wSamplesPerBlock)
 Invalid renderer
 Invalid runSeed string.
 Invalid RWops
+Invalid sample rate
 Invalid source blit rectangle
 Invalid source channels
 Invalid source format
@@ -1038,8 +1167,10 @@ Invalid suiteName string.
 Invalid testName string.
 Invalid texture
 Invalid texture format
+Invalid WAVE fmt chunk length (too small)
 Invalid window
 Io8cJd8/Kv8
+Ion Drum Rocker
 Ip81}
 Ip8PH`8
 Iq82}
@@ -1058,7 +1189,6 @@ isTablet
 *	i+x
 	*	i+x
 J$@)+
-j689^
 J{8"Kb8
 java/lang/Class
 java/lang/String
@@ -1120,6 +1250,7 @@ Joystick only has %d axes
 Joystick only has %d balls
 Joystick only has %d buttons
 Joystick only has %d hats
+Joytech Neo-Se Take2
 JQbRW
 Js84Jt8GJg8s&
 Js8%Jv8
@@ -1132,8 +1263,8 @@ Jw8VKy8
 Jx8(Kh8
 Jx8wKz8
 	J	Xi
+	K! +
 	K	|1
-K1F9k
 K|8=Jh8
 K|8=Jh8~
 k}8tk}8
@@ -1209,6 +1340,7 @@ Keypad Space
 Keypad Tab
 Keypad XOR
 	KI~1
+KI@9JM@9K
 K*(Jh8
 K)[JQb
 koE@9
@@ -1216,7 +1348,6 @@ kpE@9
 Kq8R~
 Kw8SKs8YKy8
 K(&@x
-l1F9l
 L5?)L5
 l6666
 L7?)?O
@@ -1264,6 +1395,7 @@ libEGL.so
 libGLES_CM.so
 libGLESv1_CM.so
 libGLESv2.so
+libhidapi.so
 liblog.so
 libm.so
 libOpenSLES.so
@@ -1291,8 +1423,16 @@ localtime@@LIBC
 --log
 log10f@@LIBC
 log10@@LIBC
+[--log all|error|system|audio|video|render|input]
 logf@@LIBC
+Logic3 Controller
 --logical
+[--logical WxH]
+Logitech Chillstream Controller
+Logitech DriveFx Racing Wheel
+Logitech Gamepad F310
+Logitech Gamepad F510
+Logitech Gamepad F710
 log@@LIBC
     lowp vec3 rgb;
 lseek
@@ -1302,13 +1442,46 @@ lVTkP
 lVTP9
 lVTw]
 ~#m}	
+m@9J}
+Mad Cats Ghost Recon FS GamePad
+Mad Catz Arcade Game Stick
+Mad Catz Beat Pad
+Mad Catz Brawlstick for Xbox 360
+Mad Catz Call Of Duty
+Mad Catz Fightpad
+Mad Catz FightStick SoulCaliber
+Mad Catz FightStick TE2
+Mad Catz FightStick TE 2
+Mad Catz FightStick TES+
+Mad Catz FPS Pro
+Mad Catz GamePad
+MadCatz GamePad
+Mad Catz JOYTECH NEO SE Advanced GamePad
+Mad Catz MicroCon Gamepad
+Mad Catz MicroCon GamePad Pro
+Mad Catz MLG FightStick TE
+Mad Catz MvC2 TE
+Mad Catz MVC2TE Stick 2
+Mad Catz Portable Drum
+Mad Catz SFxT Fightstick Pro
+Mad Catz Street Fighter IV FightPad
+Mad Catz Street Fighter IV FightStick SE
+Mad Catz Street Fighter IV SE Fighting Stick
+Mad Catz Wired Xbox 360 Controller
+Mad Catz Wired Xbox 360 Controller (SFIV)
+Mad Catz Xbox 360 Controller
+Mad Catz Xbox 360 MC2 MicroCon Racing Wheel
+Mad Catz Xbox controller - MW2
 malloc_func
 malloc@@LIBC
 manualBackButton
 mappingString
 --max-geometry
+[--max-geometry WxH]
 max_h
 --maximize
+[--maximize]
+maximum
 /maxLength
     Max Texture Size: %dx%d
 max_w
@@ -1323,23 +1496,41 @@ Memory allocations:
 memset@@LIBC
 messageboxdata
 messageboxShowMessageBox
+Microsoft X-Box 360 pad
+Microsoft X-Box 360 pad v2
+Microsoft X-Box One Elite pad
+Microsoft X-Box One pad
+Microsoft X-Box One pad (Firmware 2015)
+Microsoft X-Box One S pad
 mim8?
 *MIm8NIn8Iii8*
 --min-geometry
+[--min-geometry WxH]
 min_h
 --minimize
+[--minimize]
+minimizeWindow
 min_w
+Missing data chunk in WAVE file
 Missing desired mode or closest mode parameter
+Missing fact chunk in WAVE file
+Missing fmt chunk in WAVE file
 Missing native window
+Missing required coefficients in MS ADPCM format header
 Missing some Java callbacks, do you have the latest version of SDLActivity.java?
 Missing some Java callbacks, do you have the latest version of SDLAudioManager.java?
 Missing some Java callbacks, do you have the latest version of SDLControllerManager.java?
+Missing wBitsPerSample field in WAVE fmt chunk
+MLG Pro Circuit Controller (Xbox)
     Mode %d: %dx%d@%dHz, %d bits-per-pixel (%s)
 ModeSwitch
+MortalKombat FightStick
+Mortal Kombat Klassic FightStick
 mounted
 mounted_ro
 mouse_input
-MPEG Layer 3 data not supported
+MPEG formats not supported
+MS ADPCM with the extensible header is not supported
 /mVv{^
 mVv{^
 mVvELn
@@ -1348,6 +1539,7 @@ mVvmVv
 N0T(O
 ~N@)9
 N@9l=
+Nacon GC-100XF
 +!N;)aN
 nanosleep
 nanosleep@@LIBC
@@ -1365,6 +1557,7 @@ newChannel
 nHn8)%
 NHn8eHe8
 Nii8)
+Nintendo Switch Pro Controller
 NKU"Oj
 NKU$Ox+a
 No Asserts
@@ -1381,6 +1574,7 @@ No conversion from float to destination format available
 No conversion from source format to float available
 No dynamic GL support in current SDL video driver (%s)
 --noframe
+[--noframe]
 no gesture touch devices registered
 No GL driver has been loaded
 No hardware accelerated renderers available
@@ -1406,17 +1600,19 @@ No window texture data
 nsZ n
 N%T(O
 (null)
+Number of channels exceeds limit of 255
 Number of displays: %d
 Numlock
 numrects
 N+U$O
 N+U"OZ
 NVIDIA Corporation 
-N@y(!
 NZW"O{
+?o1V0O
 =o7T#O
 o8/k08
 OE@92
+O)h#@
 oHo81
 oHo81~
 oIo80
@@ -1461,7 +1657,20 @@ Passed a NULL semaphore
 Passed NULL cursor surface
 Paste
 Pause
+PDP Afterglow AX.1
+PDP AFTERGLOW AX.1
+PDP Battlefield One
+PDP Controller for Xbox One
+PDP EA Sports Controller
+PDP Marvel Xbox One Controller
+PDP Titanfall 2
+PDP Versus Fighting Pad
+PDP Wired Controller for Xbox One - Stealth Series
+PDP Xbox 360 Controller
+PDP Xbox One Arcade Stick
+PDP Xbox One Controller
 PE@9 
+Pelican PL-3601 'TSZ' Wired Xbox 360 Controller
 PHp8sHs8J%
 pIp81
 pIp81}
@@ -1476,6 +1685,13 @@ PORTRAIT
 PORTRAIT_FLIPPED
 --position
 Power
+PowerA FUSION Controller
+PowerA FUSION Pro Controller
+Power A Mini Pro Elite
+PowerA MINI PROEX Controller
+PowerA Pro Ex
+PowerA Xbox One Mini Wired Controller
+PowerA Xbox One wired controller
 powf@@LIBC
 pow@@LIBC
 precision mediump float;
@@ -1489,6 +1705,7 @@ present
 PresentVSync
 PrintScreen
 Prior
+PS4 Controller
 pthread_attr_init
 pthread_attr_init@@LIBC
 pthread_attr_setdetachstate
@@ -1558,19 +1775,32 @@ pthread_sigmask@@LIBC
 puts@@LIBC
 ?<@q!
 	 q (
+*Q@9)U@9*
 q@ir82
 QJ!	*i
 Q(k7x
 qP@9R
 q@~	S
 qsort@@LIBC
+{qxR~
 q@yrx2
 --rate
+[--rate N]
+Razer Atrox Arcade Stick
+Razer Onza
+Razer Onza Classic Edition
+Razer Onza TE
+Razer Onza Tournament Edition
+Razer Sabertooth
+Razer Wildcat
  [RBUTTON]
 realloc_func
 realloc@@LIBC
         Red Mask   = 0x%.8x
+RedOctane Controller
+RedOctane Guitar Hero X-plorer
 --refresh
+[--refresh R]
 registerReceiver
 .rela.dyn
 .rela.plt
@@ -1580,10 +1810,12 @@ RENDER
 Renderer already associated with window
 Renderer does not support RenderCopyEx
 Renderer doesn't support querying output size
+[--renderer driver]
   Renderer %s:
 Request to get environment variables before JNI is ready
 RESERVED
 --resize
+[--resize]
 result
 retry
 Retry
@@ -1594,6 +1826,8 @@ rgb24_yuv420_std
     rgb = matrix * yuv;
 RHr8J%
 RHr8k%
+RIFF form type is not WAVE (not a Waveform file)
+RIFF size truncates chunk
 Right
 Right Alt
 Right Ctrl
@@ -1617,10 +1851,15 @@ RIGHTY
 righty:a3,
 RNi./
 ro.build.version.sdk
+Rock Candy Gamepad for Xbox 360
+Rock Candy Gamepad for Xbox One 2015
+Rock Candy Gamepad for Xbox One 2016
+Rock Candy Gamepad Wired Controller
+Rock Candy Wired Controller for Xbox One
 .rodata
 Runtime of %i iterations: %.1f sec
 Run /w seed
-R@y(%
+    %s
   '%s'
 S0J-8-
 S16BE
@@ -1632,12 +1871,19 @@ S2K"8*
 S32LSB
 S32MSB
 S32SYS
+Saitek Aviator Stick AV8R02
+Saitek Cyborg Rumble Pad - PC/Xbox 360
+Saitek P3200 Rumble Pad - PC/Xbox 360
+Saitek P3600
+Sample rate exceeds limit of %d
 --samples
+[--samples N]
 %sapturing mouse %s!
 SBJb8CJc8!
 scalbnf@@LIBC
 scalbn@@LIBC
 --scale
+[--scale N]
 %s (call to %s failed, reporting an error of %s)
 scancode
 sched_get_priority_max
@@ -2557,6 +2803,11 @@ SDL_HasSSE42
 SDL_HasSSE42_REAL
 SDL_HasSSE_REAL
 SDL_HasWindows
+SDL_HIDAPI_DriverPS4
+SDL_HIDAPI_DriverSwitch
+SDL_HIDAPI_DriverXbox360
+SDL_HIDAPI_DriverXboxOne
+SDL_HIDAPI_JoystickDriver
 SDL_HideWindow
 SDL_HideWindow_REAL
 SDL_HITTEST_DRAGGABLE
@@ -2599,7 +2850,6 @@ SDL_isdigit_REAL
 SDL_IsGameController
 SDL_IsGameControllerNameAndGUID
 SDL_IsGameController_REAL
-SDL_IsJoystickGameCube
 SDL_IsJoystickHIDAPI
 SDL_IsJoystickNintendoSwitchPro
 SDL_IsJoystickPS4
@@ -2680,6 +2930,10 @@ SDL_JoystickGetType
 SDL_JoystickGetType_REAL
 SDL_JoystickGetVendor
 SDL_JoystickGetVendor_REAL
+SDL_JOYSTICK_HIDAPI
+SDL_JOYSTICK_HIDAPI_PS4_RUMBLE
+SDL_JOYSTICK_HIDAPI_SWITCH
+SDL_JOYSTICK_HIDAPI_XBOX
 SDL_JoystickInit
 SDL_JoystickInstanceID
 SDL_JoystickInstanceID_REAL
@@ -2715,6 +2969,8 @@ SDL_LoadBMP_RW
 SDL_LoadBMP_RW_REAL
 SDL_LoadDollarTemplates
 SDL_LoadDollarTemplates_REAL
+SDL_LoadFile
+SDL_LoadFile_REAL
 SDL_LoadFile_RW
 SDL_LoadFile_RW_REAL
 SDL_LoadFunction
@@ -3067,6 +3323,8 @@ SDL_RLEBlit
 SDL_RLESurface
 SDL rocks!
 SDL_RunThread
+SDL_RWclose
+SDL_RWclose_REAL
 SDL_RWFromConstMem
 SDL_RWFromConstMem_REAL
 SDL_RWFromFile
@@ -3076,6 +3334,16 @@ SDL_RWFromFP
 SDL_RWFromFP_REAL
 SDL_RWFromMem
 SDL_RWFromMem_REAL
+SDL_RWread
+SDL_RWread_REAL
+SDL_RWseek
+SDL_RWseek_REAL
+SDL_RWsize
+SDL_RWsize_REAL
+SDL_RWtell
+SDL_RWtell_REAL
+SDL_RWwrite
+SDL_RWwrite_REAL
 SDL/%s
 SDL_SaveAllDollarTemplates
 SDL_SaveAllDollarTemplates_REAL
@@ -3265,8 +3533,11 @@ SDL_ShowSimpleMessageBox_REAL
 SDL_ShowWindow
 SDL_ShowWindow_REAL
 SDL_SIMDAlloc
+SDL_SIMDAlloc_REAL
 SDL_SIMDFree
+SDL_SIMDFree_REAL
 SDL_SIMDGetAlignment
+SDL_SIMDGetAlignment_REAL
 SDL_sin
 SDL_sinf
 SDL_sinf_REAL
@@ -3376,8 +3647,8 @@ SDLTest_CommonCreateState
 SDLTest_CommonDefaultArgs
 SDLTest_CommonEvent
 SDLTest_CommonInit
+SDLTest_CommonLogUsage
 SDLTest_CommonQuit
-SDLTest_CommonUsage
 SDLTest_CompareSurfaces
 SDLTest_Crc32Calc
 SDLTest_Crc32CalcBuffer
@@ -3556,6 +3827,10 @@ SDL_WarpMouseInWindow
 SDL_WarpMouseInWindow_REAL
 SDL_WasInit
 SDL_WasInit_REAL
+SDL_WAVE_CHUNK_LIMIT
+SDL_WAVE_FACT_CHUNK
+SDL_WAVE_RIFF_CHUNK_SIZE
+SDL_WAVE_TRUNCATION
 SDL_wcscmp
 SDL_wcscmp_REAL
 SDL_wcsdup
@@ -3632,6 +3907,7 @@ setWindowStyle
 __sF@@LIBC
 SgJ(8w
 S$hd8
+shouldMinimizeOnFocusLoss
 showTextInput
 SHs8tHt8
 .shstrtab
@@ -3665,7 +3941,8 @@ SMI,8l
 software
 Software
 Software renderer doesn't have an output surface
-Source rate is zero
+Source rate is equal to or less than zero
+Source rate is too high
 SpIp8qIq8
 SQi/8
 SqIq8rIr8
@@ -3680,6 +3957,7 @@ SRi08
 SrIr8`I`81
 Sry0x
 SRYrx1z
+%s %s
 %s/%s
     * %s (%s:%d)
 %s: %s (%d): %s %s (0x%X)
@@ -3700,6 +3978,8 @@ Stopped set state failed
 strcasecmp@@LIBC
 strchr@@LIBC
 strcmp@@LIBC
+Street Fighter IV Arcade Stick TE - Chun Li
+Street Fighter IV FightStick TE
 strftime
 strftime@@LIBC
 strlcat@@LIBC
@@ -3718,6 +3998,7 @@ strtoull@@LIBC
 succeeded
 Suite
 Suite Setup
+Super SFIV FightStick TE S
 supportsRelativeMouse
 Surface doesn't have a colorkey
 Surfaces from failed comparison saved as '%s' and '%s'
@@ -3726,6 +4007,7 @@ Surfaces must not be locked during blit
 SvJ(8
 SW_CreateRendererForSurface
 SW_RenderDriver
+#Sx?D
 .symtab
 sysconf
 sysconf@@LIBC
@@ -3737,9 +4019,10 @@ __system_property_get
 __system_property_get@@LIBC
 ([SZ)I
 T(0@9
+T?1'q
 T-2{^
 T2~	SR
-(#T9H
+T	5@y?!3ka
 Ta>@9
 T	A@9?
 TargetTexturesSupported
@@ -3764,6 +4047,7 @@ Texture was not created with this renderer
 T	(H)
 That operation is not supported
     // That was easy. :) 
+ThB@9
 THE@9)i@
 The event system has been shut down
 There are %d joysticks available
@@ -3776,7 +4060,12 @@ The video driver did not add any displays
 ThF@9
 Th&H)
 This is a capture device, queueing not allowed
+Thn@y
 ThousandsSeparator
+Thrustmaster Ferrari 458 Racing Wheel
+ThrustMaster Ferrari 458 Racing Wheel
+Thrustmaster Gamepad GP XID
+Thrustmaster, Inc. GPX Controller
 tHt8S
 TI!	*
 Ti*F)k2G)?
@@ -3800,9 +4089,12 @@ times
  (timestamp=%u windowid=%u which=%u x=%d y=%d direction=%s)
 $tIThe length of the harness seed must be >0.
 --title
+[--title title]
 TJ!	*i
 Tkjh8j
 TN<@)
+TNy)x)
+T(O&i
 tolower@@LIBC
 Too many filters needed for conversion, exceeded maximum of %d
 Too many open audio devices
@@ -3814,16 +4106,22 @@ toupper@@LIBC
 T? @q!
 --trackmem
 [--trackmem]
-[--trackmem] [--rate N] [--format U8|S8|U16|U16LE|U16BE|S16|S16LE|S16BE] [--channels N] [--samples N]
-[--trackmem] [--video driver] [--renderer driver] [--gldebug] [--info all|video|modes|render|event] [--log all|error|system|audio|video|render|input] [--display N] [--fullscreen | --fullscreen-desktop | --windows N] [--title title] [--icon icon.bmp] [--center | --position X,Y] [--geometry WxH] [--min-geometry WxH] [--max-geometry WxH] [--logical WxH] [--scale N] [--depth N] [--refresh R] [--vsync] [--noframe] [--resize] [--minimize] [--maximize] [--grab] [--allow-highdpi]
-[--trackmem] [--video driver] [--renderer driver] [--gldebug] [--info all|video|modes|render|event] [--log all|error|system|audio|video|render|input] [--display N] [--fullscreen | --fullscreen-desktop | --windows N] [--title title] [--icon icon.bmp] [--center | --position X,Y] [--geometry WxH] [--min-geometry WxH] [--max-geometry WxH] [--logical WxH] [--scale N] [--depth N] [--refresh R] [--vsync] [--noframe] [--resize] [--minimize] [--maximize] [--grab] [--allow-highdpi] [--rate N] [--format U8|S8|U16|U16LE|U16BE|S16|S16LE|S16BE] [--channels N] [--samples N]
 TRi08
 Tried to read outside of surface bounds
     * triggered %u time%s.
 TRIGGERLEFT
 TRIGGERRIGHT
+Tron Xbox 360 controller
+truncate
+Truncated data chunk
+Truncated data chunk in WAVE file
+Truncated IMA ADPCM block
+Truncated MS ADPCM block
 Ts	@9g
 /tVz{^
+#Tx? 
+#Tx( 
+#Tx) 
 T@y`x
 T`Y`x
 U16BE
@@ -3831,6 +4129,8 @@ U16LE
 U16LSB
 U16MSB
 U16SYS
+%u-bit IEEE floating-point format not supported
+%u-bit PCM format not supported
  #%u! (Bug? FIXME?)
 u_color
 UCS-2
@@ -3856,8 +4156,12 @@ Unable to set the EGL swap interval
 unable to show color buffer in an OS-native window
 Unexpected audio format from Java: %d
 Unexpected controller element %s
+Unexpected end of WAVE file
 Unexpected joystick element: %s
+Unexpected overflow in IMA ADPCM decoder
+Unexpected overflow in MS ADPCM decoder
 Unexpected results from Java, expected 4, got %d
+Unexpected %u-bit PCM data format
 Unexpected YUV conversion mode
      uniform mat4 u_projection;     attribute vec2 a_position;     attribute vec2 a_texCoord;     attribute vec2 a_angle;     attribute vec2 a_center;     varying vec2 v_texCoord;         void main()     {         float s = a_angle[0];         float c = a_angle[1] + 1.0;         mat2 rotationMatrix = mat2(c, -s, s, c);         vec2 position = rotationMatrix * (a_position - a_center) + a_center;         v_texCoord = a_texCoord;         gl_Position = u_projection * vec4(position, 0.0, 1.0);        gl_PointSize = 1.0;     } 
 uniform sampler2D u_texture;
@@ -3866,7 +4170,7 @@ uniform sampler2D u_texture_v;
 uniform vec4 u_color;
 Unknown
 UNKNOWN (bug? fixme?)
-Unknown %d-bit PCM data format
+Unknown companded encoding
 Unknown event 0x%4.4x
 ?Unknown gestureId
 Unknown keycode %d
@@ -3875,16 +4179,16 @@ Unknown OpenGL context flag %d
 Unknown OpenGL context profile %d
 Unknown pixel format
 Unknown SDL error
-Unknown set of MS_ADPCM coefficients
 Unknown texture format
 Unknown touch device id %d, cannot reset
 Unknown touch device index %d
 Unknown touch finger
 Unknown touch id %d, resetting
 Unknown value for 'whence'
-Unknown WAVE data format: 0x%.4x
-Unrecognized file type (not WAVE)
+Unknown WAVE format GUID: %08x-%04x-%04x-%02x%02x%02x%02x%02x%02x%02x%02x
+Unknown WAVE format tag: 0x%04x
 Unsupported audio format: 0x%x
+Unsupported block alignment
 Unsupported number of audio channels.
 Unsupported texture access for SDL_PIXELFORMAT_EXTERNAL_OES
 Unsupported texture format
@@ -3896,7 +4200,7 @@ Upitch
 Uplane
 u_projection
 Usable bounds: %dx%d at %d,%d
-Usage: %s %s
+USAGE: %s
 US-ASCII
 u_texture
 u_texture_u
@@ -3915,11 +4219,14 @@ UTF32LE
 UTF-32LE
 UTF-8
 value
+.valvesig
 varying vec2 v_texCoord;
 VERBOSE
+verystrict
 vHv8Z
 --video
 VIDEO
+[--video driver]
 Video driver: %s
 Video subsystem has not been initialized
 Video subsystem must be initialized to check clipboard text
@@ -3979,6 +4286,7 @@ Vplane
 vsnprintf@@LIBC
 vsscanf@@LIBC
 --vsync
+[--vsync]
 Vulkan already loaded
 Vulkan and OpenGL not supported on same window
 vulkandisplay: Choosing plane %d, minimum extent %dx%d maximum extent %dx%d
@@ -3993,29 +4301,41 @@ vulkandisplay: Number of supported displays for plane %u: %u
 Vulkan is not loaded
 Vulkan loader library already loaded
 Vulkan support is either not configured in SDL or not available in current SDL video driver (%s) or platform
-V@y()
+w~@9h
+WAVE file too big
+WCHAR_T
 WE@9xE@9
 width
 Window is too large.
 Window requested size %dx%d, got %dx%d
 --windows
 Window surface is invalid, please call SDL_GetWindowSurface() to get a new surface
+Wrong preset coefficients in MS ADPCM format header
+wz@9hvA9
  [X2BUTTON]
 X6hB@
 x:b2,
 X-Box
+Xbox 360 Pro EX Controller
+Xbox 360 Wired Controller
+Xbox 360 Wireless Receiver
+Xbox 360 Wireless Receiver (XBOX)
+Xbox Airflo wired controller
+Xbox ONE spectra
 "$@xC
 ($@xC
 x<fff<
+xGy!x!
 xinput
 *'$@xs
 %x %X
+xyxx<
 )(@))y
-^@y(1
 @y!	@9)
 @y"	@9@
-^y)9^y
+y@9p}
 @yE$@x
+yH+@9h+
 YHy8Z'
 You know it!
 You probably don't have a working Vulkan driver installed. %s %s %s(%d)
@@ -4053,4 +4373,3 @@ yv}mVv
 zHz8{
 (ZI)V
 ZT\d[
-Z@y(-

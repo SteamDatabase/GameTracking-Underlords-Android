@@ -22,6 +22,7 @@
 )*0@9?
 0x%016llX
 0@y_!!ka
+?)_-1)
 10CDSPEditor
 10ConCommand
 10CVMixMixer
@@ -111,6 +112,7 @@
 19CSchemaRegistration
 19CSosOperatorFalloff
 19CSosOperatorGlobals
+19CSosOperatorPathing
 19CSosOperatorPosVec8
 19IKeyValuesErrorSpew
 1bQJ1~
@@ -118,6 +120,7 @@
 1DBlend
 1@)k1F
 1.QB!
+	1w9I
 *+1@y
 *1@y_
 	1@y?
@@ -139,6 +142,7 @@
 20CSoundMixGroupSystem
 20IResourceTypeManager
 20ISoundMixGroupSystem
+2	1#9x
 21CAudioStream_Attached
 21CFilterAudioProcessor
 21CSosGroupActionSchema
@@ -244,8 +248,10 @@
 29CSosSetSoundEventFieldsInfo_t
 29CVSoundEventScriptTypeManager
 29CVSoundStackScriptTypeManager
-2	a/9
-2	A)9
+2	a39
+2	a-9
+2	A?9
+2	A>9s
 	[%2d] %16.16s : %s (%d)
 (%2db) %6i : %s
 2ij(8
@@ -254,7 +260,7 @@
 2iqx_
 2irx_"0k
 2?"/k
-2?k78W
+2?k78q
 2_!-kc	
 2Ki)8x
 2L1@y
@@ -317,7 +323,7 @@
 6iz@y
 6kB@y
 6@y?!4kC
-6YcJ9
+6Y#D9
 *7`@)
 7	aB9
 7h"A9
@@ -342,7 +348,9 @@ _@8j.@
 `"@9	
 )!@9)
 )	@9?
-	!_9	
+*	!#9
+	!~9	
+	!|9	
 	*	(@9
 		@9	
 @9	0@
@@ -370,6 +378,7 @@ _@8j.@
 @9?`@kA
 9)PA9	
 @9wiu
+!#9(Y@
 9@z(|`
 9@zH~`
 A-!(!
@@ -377,20 +386,24 @@ A-@ !
 a2@yh2@y
 a6@=b6@
 )a@9	
+	a}9)
 ,%A9 
 .%A9-
+)A|9?
+	A}9*
 A#@9	
+	A}9_1
+	A}9_a	
 A9)EG
 *%A9J
+	A}9J
 AA9	I@
-	aB9	
 Abort processing sound event %s (scheduled recursively will not process this frame)
 accumulate_indexed_speakers
 Action Type
 ActionType_t
 Active ?: %s
 Active Voices: %d
-	aD9	
 Adding operator stack matching existing name: %s
 AddNewSoundEvent:  %s has a hash collision with existing %s
 Addon unloaded, unloading sound resources.
@@ -451,7 +464,6 @@ _A@k(
 allowstatic
 AllPass
 -altgameroot
-A-#mM
 (aN#(aN
 anchor_angles
 anchor_position
@@ -588,6 +600,8 @@ Blocks Events
 BodyGroup
 BodyGroupChoice
 body_type
+bone_name
+bone_names
 bool MXR_LoadAllSoundMixers()
 borrow
 BPM: %f
@@ -608,6 +622,7 @@ burst_randomize
 burst_scale
 C-!8"
 C?@8"
+	!c9	
 cable
 calc_angles_facing
 calc_audibility
@@ -622,6 +637,7 @@ calc_falloff_curve
 calc_falloff_vr
 calc_occlusion_src1
 calc_occlusion_src2
+calc_pathing
 calc_segment
 @?calc_spatialize_speakers
 calc_spatialize_speakers
@@ -780,6 +796,8 @@ C_OP_RemapCPtoCP
 C_OP_RemapModelVolumetoCP
 C_OP_RemapSpeedtoCP
 C_OP_RenderModels
+C_OP_RenderSprites
+C_OP_RenderTrails
 C_OP_RepeatedTriggerChildGroup
 C_OP_SetControlPointFieldToWater
 C_OP_SetControlPointFromObjectScale
@@ -804,7 +822,6 @@ core_update_default
 core.voip
 Couldn't parse the input.
 CParticleSystemDefinition
-cplayervoice
 CPlayerVoiceStream
 CreateInterface
 create_particle
@@ -936,7 +953,7 @@ Cycle or diamond double-reference to '%s'
 @-D	@
 D-  "
 d6@y#
-d6@yc
+d6@yC
 D-`8 
 D-!8 
 D-)8,
@@ -1417,7 +1434,6 @@ IKRigSimple
 il8lhl8_
  I@L	A
 import_public_opvars
-@-#IN
 #include
 #include is NULL 
 Incorrect sampling rate in %s (mp3 frames are at %dHz, .vsnd file has %dHz)
@@ -1736,8 +1752,7 @@ jn87kn8
 JNI_OnLoad
 JNI_OnUnload
 JSON error, unterminated element: 
-ju8$Y
-jv8[Y
+ju8H]
 J{)x)
 J!_x_!5k
 j=@ykA@y
@@ -1751,6 +1766,7 @@ k2D)m:E)
 *k2@y
 k(8vV@
 K9y;xa
+KA{9(
 kAKJJ
 key_groups
 KeyValueCache001
@@ -1866,6 +1882,7 @@ malloc
 MapListService_001
 mask_type
 MASK_WATER
+master_morph_weight
 MasterVolume
 match_duration_type
 match_entity
@@ -2006,6 +2023,8 @@ m_flOpStrengthMinScale
 m_flOpvar
 m_flOutput0
 m_flOutput1
+m_flRadiusScale
+m_flRadiusTaper
 m_flRandomMax
 m_flRandomMin
 m_flScalePerParentParticle
@@ -2106,6 +2125,8 @@ modeldoc21
 modeldoc22
 modeldoc23
 modeldoc24
+modeldoc25
+modeldoc26
 modeldoc3
 modeldoc4
 modeldoc5
@@ -2312,7 +2333,20 @@ out of voice sources, won't lipsync %s
 output_
 output_0
 output_1
+output_10
+output_11
+output_12
+output_13
+output_14
+output_15
 output_2
+output_3
+output_4
+output_5
+output_6
+output_7
+output_8
+output_9
 output_above
 output_angles
 output_below
@@ -2475,7 +2509,7 @@ Plat_GetGameDirectory
 Plat_GetOSType
 Plat_GetProcAddresses
 Plat_IsHighDPI
-Plat_IsInDebugSessionRaw
+Plat_IsInDebugSession
 Plat_LoadSDL
 Plat_RequireSDL
 Plat_ShouldCollectMiniDumpsForFatalErrors
@@ -2574,6 +2608,7 @@ Queue sound '%s'
 Queue took %f msec to drain
 	Q@xi
 q$;@z
+r	179_A<9T
 RadianEuler
 radius0
 radius1
@@ -2612,10 +2647,12 @@ releaseTime
 Release time (ms)
 Reload soundmixers.txt file.
 Remove all soundevents
+RemoveBoneAndChildren
 Remove the specified soundevent
 RenderDevice003
 RenderDeviceMgr001
 RenderHardwareConfig002
+RenderMeshFile
 RenderService_001
 RenderSystemSurface001
 RenderUtils_001
@@ -3148,7 +3185,6 @@ Sustain target amplitude
 Sustain time (ms)
 %s| Virtual: %s; Abstract: %s; TrivialConstr: %s; TrivialDestr: %s
  : %s : vol: %4.2f, sndlvl: %4.2f 
-s@y!	
 s@yA	
 S@y	A
 s@yHC
@@ -3399,12 +3435,12 @@ virtual CSfxTable *CVSoundTypeManager::GetSfx(const char *, bool)
 V_IsAbsolutePath
 VisBuilder_001
 V_isnan
-v"@-j.A-H
+v"@-j.A-h
 V_log10f
 V_logf
 VMaterialSystem2_001
 VMatrix
-:vmdlkeys0
+vmdlkeys0
 vmdlkeys1
 vmdlkeys2
 VMDLLIB001
@@ -3474,6 +3510,8 @@ vpcf19
 vpcf2
 vpcf20
 vpcf21
+vpcf22
+vpcf23
 vpcf3
 vpcf4
 vpcf5
@@ -3503,6 +3541,7 @@ V_sincosf
 V_sinf
 V_sinhf
 vsnap
+VSNAPFile
 vsnd_c
 vsnd_duration
 vsnd_files
@@ -3560,6 +3599,7 @@ WaveFixupTmpFile( '%s' ) failed to open file for editing
 wave_type
 wcscmp
 wcslen
+WeightList
 weights_field_name
 Width Reflectivity
 Wikx7
@@ -3575,7 +3615,6 @@ WorldRendererMgr001
 W@y	E
 	 x: %4f y: %4f z: %4f
 X#@9(?
-_x`AI
 xfade
 =	/@y
 +	@y,

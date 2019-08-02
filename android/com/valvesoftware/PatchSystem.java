@@ -317,18 +317,10 @@ public class PatchSystem {
     /* access modifiers changed from: private */
     public void OnManifestResponseSuccess(JSONObject jSONObject) {
         this.m_JSONManifest = jSONObject;
+        this.m_nMinApkVersion = (long) this.m_JSONManifest.optInt("minversion", this.m_nApplicationVersion);
+        this.m_nOptionalApkVersion = (long) this.m_JSONManifest.optInt("latestversion", (int) this.m_nMinApkVersion);
         boolean z = false;
-        this.m_nMinApkVersion = (long) this.m_JSONManifest.optInt("minversion", 0);
-        if (this.m_nMinApkVersion == 0) {
-            OnHaveCurrentAPK();
-            return;
-        }
-        this.m_nOptionalApkVersion = (long) this.m_JSONManifest.optInt("latestversion", 0);
-        if (this.m_nOptionalApkVersion == 0) {
-            this.m_nOptionalApkVersion = this.m_nMinApkVersion;
-        }
-        boolean[] GetBoolean = Resources.GetBoolean("VPC_SelfInstallAPK");
-        if (GetBoolean != null && GetBoolean[0]) {
+        if (IsSelfInstallAPKEnabled()) {
             try {
                 JSONObject jSONObject2 = this.m_JSONManifest.getJSONObject("packages");
                 if (jSONObject2 != null) {
@@ -368,42 +360,45 @@ public class PatchSystem {
 
     /* access modifiers changed from: private */
     public void OnHaveCurrentAPK() {
-        String str = "com.valvesoftware.PatchSystem";
+        String str = "cdnroot";
+        String str2 = "com.valvesoftware.PatchSystem";
         this.m_vecPendingDownloads = new ArrayList<>();
         try {
-            String string = this.m_JSONManifest.getString("cdnroot");
+            String string = this.m_JSONManifest.getString(str);
             JSONObject jSONObject = this.m_JSONManifest.getJSONObject("assets");
             Iterator keys = jSONObject.keys();
             while (keys.hasNext()) {
-                String str2 = (String) keys.next();
-                JSONObject jSONObject2 = jSONObject.getJSONObject(str2);
+                String str3 = (String) keys.next();
+                JSONObject jSONObject2 = jSONObject.getJSONObject(str3);
                 int i = jSONObject2.getInt("bytesize");
                 String string2 = jSONObject2.getString("version");
-                File file = new File(this.m_strSyncPath, str2);
+                File file = new File(this.m_strSyncPath, str3);
+                String optString = jSONObject2.optString(str, string);
+                StringBuilder sb = new StringBuilder();
+                sb.append(optString);
+                sb.append(str3);
+                String sb2 = sb.toString();
                 if (!file.exists()) {
-                    StringBuilder sb = new StringBuilder();
-                    sb.append("Forcing Download for Missing Asset: ");
-                    sb.append(str2);
-                    Log.i(str, sb.toString());
-                } else if (this.m_Registry.HasAssetVersion(str2, string2)) {
-                    StringBuilder sb2 = new StringBuilder();
-                    sb2.append("Skipping Download for Existing Asset: ");
-                    sb2.append(str2);
-                    Log.i(str, sb2.toString());
+                    StringBuilder sb3 = new StringBuilder();
+                    sb3.append("Forcing Download for Missing Asset: ");
+                    sb3.append(str3);
+                    Log.i(str2, sb3.toString());
+                } else if (this.m_Registry.HasAssetVersion(str3, string2)) {
+                    StringBuilder sb4 = new StringBuilder();
+                    sb4.append("Skipping Download for Existing Asset: ");
+                    sb4.append(str3);
+                    Log.i(str2, sb4.toString());
                 }
                 PendingDownload pendingDownload = new PendingDownload();
-                pendingDownload.strFilePath = str2;
-                StringBuilder sb3 = new StringBuilder();
-                sb3.append(string);
-                sb3.append(str2);
-                pendingDownload.strURL = sb3.toString();
+                pendingDownload.strFilePath = str3;
+                pendingDownload.strURL = sb2;
                 pendingDownload.strVersionCode = string2;
                 pendingDownload.uriDestinationPath = Uri.fromFile(file);
                 pendingDownload.nByteSize = (long) i;
                 this.m_vecPendingDownloads.add(pendingDownload);
             }
             if (this.m_vecPendingDownloads.isEmpty()) {
-                Log.i(str, "All files up-to-date, we're done.");
+                Log.i(str2, "All files up-to-date, we're done.");
                 SetState(EState.Done);
                 return;
             }
@@ -419,10 +414,10 @@ public class PatchSystem {
                 WaitForUserInput(EState.ManifestDownloadedWaitingOnUser, EErrorCode.None);
             }
         } catch (Exception e) {
-            StringBuilder sb4 = new StringBuilder();
-            sb4.append("Manifest Exception: ");
-            sb4.append(e.toString());
-            Log.e(str, sb4.toString());
+            StringBuilder sb5 = new StringBuilder();
+            sb5.append("Manifest Exception: ");
+            sb5.append(e.toString());
+            Log.e(str2, sb5.toString());
             WaitForUserInput(EState.Error, EErrorCode.Manifest);
         }
     }
@@ -454,12 +449,7 @@ public class PatchSystem {
 
     /* access modifiers changed from: private */
     public void OnContinueAPKDownload() {
-        boolean[] GetBoolean = Resources.GetBoolean("VPC_SelfInstallAPK");
-        boolean z = false;
-        if (GetBoolean != null && GetBoolean[0]) {
-            z = true;
-        }
-        if (z) {
+        if (IsSelfInstallAPKEnabled()) {
             SetState(EState.AssetsDownloading);
             this.m_bDownloadingAPK = true;
             Context applicationContext = JNI_Environment.m_application.getApplicationContext();
@@ -958,5 +948,13 @@ public class PatchSystem {
             throw r3
         */
         throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.PatchSystem.MoveFile(java.io.File, java.io.File):boolean");
+    }
+
+    public static boolean IsSelfInstallAPKEnabled() {
+        boolean[] GetBoolean = Resources.GetBoolean("VPC_SelfInstallAPK");
+        if (GetBoolean == null || !GetBoolean[0]) {
+            return false;
+        }
+        return true;
     }
 }

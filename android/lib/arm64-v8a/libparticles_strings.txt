@@ -11,7 +11,6 @@
 )#@)*
 {}[]=, 	
 {}[]()=&, 	
-@=")@
 @-   
 @- ( 
 @- 	 
@@ -158,6 +157,7 @@
 18C_OP_BasicMovement
 18C_OP_BoxConstraint
 18C_OP_FadeOutSimple
+18C_OP_QuantizeFloat
 18C_OP_RenderSprites
 18C_OP_SetCPtoVector
 18C_OP_VelocityDecay
@@ -182,10 +182,8 @@
 +1@)-%A)
 1bL9?2
 1bQJ1~
-1C-!YD
 1DBlend
 -1 for all asleep, 1 for all awake
-	1g9I
 1ik8 il8)ip8R
 1il8n
 1@)kuF
@@ -197,6 +195,7 @@
 20C_INIT_CreateFromCPs
 20C_INIT_CreateOnModel
 20C_INIT_CreationNoise
+20C_INIT_QuantizeFloat
 20C_INIT_RandomYawFlip
 20C_OP_CPVelocityForce
 20C_OP_LagCompensation
@@ -409,7 +408,6 @@
 29C_OP_SnapshotRigidSkinToBones
 29CSchemaRegistration_particles
 2@9PU
-2	A99
 2_BONE_IK
 2E9h2
 2G9h2
@@ -417,18 +415,19 @@
 2i2@9
 2)ia8
 2)ib8
+2ib@9I
 2(ih8
+2)ih8
 2,ih8-ik8
 2,ih8-ik8@8 
 2Iii8
 2*ij8
-2iR@9I
 2jr81j`8
 	2k~@
 2kii8
 2Lii8
 2m>@-h
-2	Q89s
+2	q&9
 2Way_0( %s )
 2Way_1( %s )
 	2	Y+
@@ -534,6 +533,7 @@
 32CParticleFunctionDefinitionTypedI18C_OP_BasicMovementE
 32CParticleFunctionDefinitionTypedI18C_OP_BoxConstraintE
 32CParticleFunctionDefinitionTypedI18C_OP_FadeOutSimpleE
+32CParticleFunctionDefinitionTypedI18C_OP_QuantizeFloatE
 32CParticleFunctionDefinitionTypedI18C_OP_RenderSpritesE
 32CParticleFunctionDefinitionTypedI18C_OP_SetCPtoVectorE
 32CParticleFunctionDefinitionTypedI18C_OP_VelocityDecayE
@@ -551,6 +551,7 @@
 32CParticleFunctionDefinitionTypedI20C_INIT_CreateFromCPsE
 32CParticleFunctionDefinitionTypedI20C_INIT_CreateOnModelE
 32CParticleFunctionDefinitionTypedI20C_INIT_CreationNoiseE
+32CParticleFunctionDefinitionTypedI20C_INIT_QuantizeFloatE
 32CParticleFunctionDefinitionTypedI20C_INIT_RandomYawFlipE
 32CParticleFunctionDefinitionTypedI20C_OP_CPVelocityForceE
 32CParticleFunctionDefinitionTypedI20C_OP_LagCompensationE
@@ -876,7 +877,6 @@
 %6.2f %6.2f %6.2f %.3f %.3f %.3f
 6ConVar
 6E9<yj
- 6h"@9
 6hb@9
 6hB@9H
 6hb@y
@@ -884,7 +884,6 @@
 6iq8m
 6n8+a
 (7c8%
-7h"@9H
 7hb@9h
 7hf@9
 7hf@9(
@@ -908,7 +907,9 @@
 @-@9 
 @9*%@-(	@
 	=@9)
+	![9	
 -90.0f
+	![92
 (!@93
 @9+	@9,
 9@9)y
@@ -916,6 +917,8 @@
 9C_OP_Cull
 9C_OP_Spin
 ~^>9cx
+)@9Fc
+@9)}G
 (@@9H
 9h:A9(
 "@9hf@9i
@@ -934,7 +937,6 @@
 (@@9u"
 (@@9ub
 @9wiu
-@9)yG
 .A@)/!
 'A)	}	
 A- ( 
@@ -942,6 +944,7 @@ A-!(!
 A-!8 
 a]8Ja
 A-'@A-
+	aB9	
 AB-!H#
 Acceleration
 ACT_IDLE
@@ -1023,6 +1026,7 @@ alpha random exponent
 alpha scale
 Alpha window threshold random
 also set ouput to previous particle
+#@-	aM
 	#A)M
 $AMBIENTSCALE
 A minimum on particle simulation time, particle simulation happening more frequently than this will lerp.
@@ -1135,6 +1139,7 @@ attribute to write to
 auto_unragdoll_duration
 Average pixels form sequence 0 and 1 together
 avT=bzT=c
+	ay9	
 B-#@!
 B-1HD-
 *-B),5C)_
@@ -1186,7 +1191,8 @@ bG9hb
 BG9hB
 bI9hb	9
 BI9hB	9
-BI9hB	9T\
+BI9hB	9b
+BI9hB	9>V
 bias distance
 biased 0 500
 bias in local space
@@ -1224,6 +1230,8 @@ body_type
 BoneChannel
 Bone Indices
 BONE_INDICES
+bone_name
+bone_names
 Bone Weights
 BONE_WEIGHTS
 bouncecolor
@@ -1257,8 +1265,10 @@ burst_randomize
 burst_scale
 C-2-@
 C-!8"
+	!C9	
 C@9`b
 "C9h"
+)CA9*
 cable
 cache attribute to read from
 CAimConstraint
@@ -1374,6 +1384,7 @@ C_INIT_PositionOffsetToCP
 C_INIT_PositionPlaceOnGround
 C_INIT_PositionWarp
 C_INIT_PositionWarpScalar
+C_INIT_QuantizeFloat
 C_INIT_RadiusFromCPObject
 C_INIT_RandomAlpha
 C_INIT_RandomAlphaWindowThreshold
@@ -1664,6 +1675,7 @@ C_OP_PlaneCull
 C_OP_PlayEndCapWhenFinished
 C_OP_PointVectorAtNextParticle
 C_OP_PositionLock
+C_OP_QuantizeFloat
 C_OP_RadiusDecay
 C_OP_RampCPLinearRandom
 C_OP_RampScalarLinear
@@ -1952,6 +1964,7 @@ D9Bxq
 D9Byi
 D9Byk
 D9cxq
+D9)=E
 D9Eyi
 D9Eyk
 D9Fyk
@@ -1967,7 +1980,7 @@ D9iyi
 D9Iyi
 D9Iyl
 D9Iyy
-D9J%C
+D9JMD
 D9Jy|
 D9Jye
 D9Jyh
@@ -1977,11 +1990,10 @@ D9Jym
 D9Jyo
 D9Jyz
 D9kim
-D9kym
 D9Lyi
-D9lyl
 D9Myk
 D9Q90
+D9Qzq
 D9Ryk
 D9Rz`
 D9Rzl
@@ -1996,6 +2008,7 @@ D9Vyk
 D9Wyi
 D9Wyk
 D9,yh
+D9;yh
 D9:yh
 D9(yh
 D9)yh
@@ -2111,7 +2124,6 @@ Double-save to Member '%s'
 draw as opaque
 Draw particle children with parents (-1=use gameinfo, 0=no, 1=yes)
 Drive CP from global sound float
-!	@ds
 dual sequence combine mode
 Dual sequence controls
 Dump all new particles, optional name substring.
@@ -2131,7 +2143,7 @@ dynamic_interaction
 E9  (
 E98yh
 E9B9,
-E9!(G
+E9!,G
 E9(ih8
 "E9J}
 E9*J2
@@ -2323,6 +2335,7 @@ First/Oldest Particle
 first parent control point to set from
 first particle to copy
 Fit Lifetime
+Fixed "Animation Type" in Sprite Renderer not working for non-particle normal alignment types.
 Fixed bugs in "Position along path sequential" where it could incorrectly create too many particles at the last control point. Also fixed issues with control points specified in backward order in that operator as well as "Movement lock to saved position along path".
 Fixed "Inherit Attribute from Parent Particles" not keeping parent particles in sync with children.
 Fixed Rate
@@ -2395,6 +2408,7 @@ Full Loop Increment Amount
 Function is disabled
 Function "%s" not found while loading particle system
 FX Light
+@=")G
 G{}()':
 *	<G9
 	 G9*
@@ -2409,7 +2423,7 @@ Gaussian
 GCC: (GNU) 4.9.x 20150123 (prerelease)
 g cMesh
 g default
-../_generated_code/particles/release/androidarm64/../../../../particles/pfunc_renderers.cpp(7228): 
+../_generated_code/particles/release/androidarm64/../../../../particles/pfunc_renderers.cpp(7249): 
 GenerateDistanceField
 generate normals for cylinder
 GenerateResourceNameFromFileName: Invalid extension specified in file name "%s"!
@@ -2503,7 +2517,8 @@ Hitbox Offset Position
 HITBOX_RELATIVE_XYZ
 hitbox set
 H%@)J	@
-hj58>S
+hj48sM
+hj58.P
 hk989
 hollow
 horizontal texture offset
@@ -2511,13 +2526,13 @@ horizontal texture scale
 HostStateMgr001
 How aggressive the switch to fallbacks will be depending on how far over the cl_particle_sim_fallback_threshold_ms the sim time is.  Higher numbers are more aggressive.
 how long before a trail grows to its full length
-hr^94
+hrf94
 hrZ9(
 HSV Shift Control Point
 HSV Shift to control point
 hurt_me
 hurt_them
-h&@y)=G
+h&@y)AG
 h&@yi
 #@)i"@
 	)@)i*
@@ -2527,21 +2542,19 @@ i6@yh
 i`81}
 i`8ky`
 "I9h"	9
-"I9h"	9C
 =#ia8+ib8-ie8)if8
 *ia8+ie8)if8
 ia8kir
 )ib8?
 )ib8k
 ib8Nyb
+*ib@9	
 ib@9(
 ib@9)
 ib@9j
 ib@9l
 *iBA9j
 iBE9h
-iCA9j
-)iCA9j
 ICA9J
 I cannot be refracted through refracting objects like water
 IControlPointEditorData
@@ -2599,7 +2612,7 @@ iii8Oyl
 iii8Pyl
 iii8\yl
 %i %i %i %i
-II=)iM
+II=)iO
 iiix+
 iil8rio8Lyl
 Iin8Wio8Jip8
@@ -2735,6 +2748,7 @@ Internal inconsistency between the layout format and attribute is detected.
 interploation distance tolerance cp
 interpolation rate
 interpolation scale
+interval to snap to
 intraframe zoom amount for sequence 0
 intraframe zoom amount for sequence 1
 invalid_bone
@@ -2782,7 +2796,6 @@ iq8Zyq
 IQuickTime001
 ir8\yr
 ir@9	
-*iR@9	
 is_debris
 it8oU
 it8.yt
@@ -2845,7 +2858,6 @@ JQAyJ%
 k?!@&>
 K1B)M9C)
 K9azA
-KAk9(
 kaL9(
 kaL9)
 kaL9*
@@ -2883,7 +2895,6 @@ KV3 load transfer failed: %s
 *(kz8
 kz8;k:8
 l5B)c
-	!l9	
 l:@9kyh
 Last/Newest Particle
 last_sniff
@@ -3062,6 +3073,7 @@ manual time placement field
 mapbuilder.nodraw
 mapbuilder.occluder
 MapListService_001
+master_morph_weight
 MATCHFRAMEWORK_001
 material override
 MaterialParamBuffer_t
@@ -3296,7 +3308,6 @@ m_BoundingBoxMax
 m_BoundingBoxMin
 m_bOutline
 m_bOverrideTranslucentMaterials
-MbP?4a
 m_bParticleFeathering
 m_bParticles
 m_bPerParticle
@@ -3373,6 +3384,7 @@ m_bSkin
 m_bSkipRenderingOnMobile
 m_bSoftEdges
 m_bSubFrame
+m_bSuppressStopSoundEvent
 m_bSuppressTint
 m_bSynchronizeParticles
 m_bTintByFOW
@@ -4398,6 +4410,8 @@ modeldoc21
 modeldoc22
 modeldoc23
 modeldoc24
+modeldoc25
+modeldoc26
 modeldoc3
 modeldoc4
 modeldoc5
@@ -4714,7 +4728,6 @@ nav_attribute_avoid
 nav_data
 n=B)l
 "nc(a
-!Nc(a
 Need valid position and texcoord when creating world space tangent lengths!
 Need valid position to calculate face centers!
 NetworkClientService_001
@@ -4764,7 +4777,7 @@ nij8kim8
 nil8kim8,yl
 nin8rij8`il8
 nio8qii8ril8
-$nJ)G
+$nJ-G
 !NJu|
 #NkIF
 #Nkil
@@ -5222,7 +5235,7 @@ Plat_ExitProcess
 Plat_FloatTime
 Plat_GetEnv
 Plat_GetThreadIndex
-Plat_IsInDebugSessionRaw
+Plat_IsInDebugSession
 Plat_MSTime
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_UUIDFromString
@@ -5347,13 +5360,13 @@ q(ih8
 qih8*
 qii8Iyi
 qJT-s
-)Ql9?
+	qt9I
 Quadrilaterals
+Quantize Float
 QuarterSizeAttrWithBoxFilter
 Quaternion
 QueuedLoaderVersion001
 Quintic
-r	1'9_Q,9
 R2@9_
 r8iq8>ir8*ia8#ib8
 :R9h:
@@ -5498,6 +5511,7 @@ remap values for names
 remap vector component to scalar
 Remap vector to CP
 Remap velocity to vector
+RemoveBoneAndChildren
 Render as models (DEPRECATED)
 render attribute
 Render blobs
@@ -5516,6 +5530,7 @@ RenderHardwareConfig002
 Rendering filter
 Render lights
 rendermesh.cpp(717): 
+RenderMeshFile
 Render models
 render particles 100 times and show perf
 Render points
@@ -5623,6 +5638,7 @@ r_particle_min_timestep
 r_particle_render_refreshes_sleep_timer
 r_particle_render_test
 r_particle_timescale
+r	q49_
 Rqin8HU
 r_threaded_particles
 runspeed
@@ -5635,8 +5651,6 @@ rZ9i,
 %s|  % 2d: [% 3d] %-12s %s
 %s|  % 2d: %s [Offset: %d]
 S7W?O
-	!S9	
-	!S92Z
 %s| AlignOf: %d
 %s allocation count overflow
 %s allocation count overflow( %llu >= %llu )
@@ -5984,6 +5998,7 @@ strstr
 sub frame interpolation
 submodel field
 suppress
+suppress stop event
 suppress tinting of the model
 surface_prop
 %s| Virtual: %s; Abstract: %s; TrivialConstr: %s; TrivialDestr: %s
@@ -6030,7 +6045,7 @@ texture V Params CP
 texture V Scroll Rate
 texture V World Size
 Th&@)
-Th"@9
+Th2@9
 Thf@9
 thickness
 TH$@iJ,Ai
@@ -6120,7 +6135,6 @@ Twist around axis
 twist axis
 Two Bone
 Two KV3 format GUIDs with the same human-friendly name ('%s')
-	!u9	
 )UAy?
 uii8Wyi
 uij8:yl
@@ -6288,7 +6302,7 @@ V_log10f
 V_logf
 VMaterialSystem2_001
 VMatrix
-:vmdlkeys0
+vmdlkeys0
 vmdlkeys1
 vmdlkeys2
 VMDLLIB001
@@ -6331,6 +6345,8 @@ vpcf19
 vpcf2
 vpcf20
 vpcf21
+vpcf22
+vpcf23
 vpcf3
 vpcf4
 vpcf5
@@ -6356,6 +6372,7 @@ _V_SetExtension
 V_sincosf
 V_sinf
 VSInputSignature
+VSNAPFile
 V_snprintf
 V_sscanf
 V_stricmp_fast

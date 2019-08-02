@@ -71,6 +71,11 @@
  D SDL_ANDROID_SensorDriver
  D SDL_expand_byte
  D SDL_GeneratedBlitFuncTable
+ D SDL_HIDAPI_DriverPS4
+ D SDL_HIDAPI_DriverSwitch
+ D SDL_HIDAPI_DriverXbox360
+ D SDL_HIDAPI_DriverXboxOne
+ D SDL_HIDAPI_JoystickDriver
  D SW_RenderDriver
  __errno@@LIBC
  _exit@@LIBC
@@ -172,6 +177,15 @@
  glVertexAttribPointer
  glVertexPointer
  glViewport
+ hid_close
+ hid_enumerate
+ hid_exit
+ hid_free_enumeration
+ hid_get_feature_report
+ hid_init
+ hid_open_path
+ hid_read_timeout
+ hid_write
  isspace@@LIBC
  localtime@@LIBC
  log10f@@LIBC
@@ -265,6 +279,9 @@
  strtoull@@LIBC
  sysconf@@LIBC
  __system_property_get@@LIBC
+ T Android_ActivityMutex_Lock
+ T Android_ActivityMutex_Lock_Running
+ T Android_ActivityMutex_Unlock
  T Android_AddHaptic
  T Android_AddJoystick
  T ANDROIDAUDIO_PauseDevices
@@ -310,6 +327,7 @@
  T Android_JNI_HideTextInput
  T Android_JNI_InitTouch
  T Android_JNI_IsScreenKeyboardShown
+ T Android_JNI_MinizeWindow
  T Android_JNI_OpenAudioDevice
  T Android_JNI_PollHapticDevices
  T Android_JNI_PollInputDevices
@@ -322,11 +340,13 @@
  T Android_JNI_SetSystemCursor
  T Android_JNI_SetupThread
  T Android_JNI_SetWindowStyle
+ T Android_JNI_ShouldMinimizeOnFocusLoss
  T Android_JNI_ShowMessageBox
  T Android_JNI_ShowTextInput
  T Android_JNI_SupportsRelativeMouse
  T Android_JNI_SuspendScreenSaver
  T Android_JNI_WriteAudioBuffer
+ T Android_MinimizeWindow
  T Android_OnHat
  T Android_OnJoy
  T Android_OnKeyDown
@@ -357,6 +377,8 @@
  tanf@@LIBC
  tan@@LIBC
  T GLES2_GetShader
+ T HIDAPI_IsDevicePresent
+ T HIDAPI_XboxControllerName
  time@@LIBC
  T Java_org_libsdl_app_SDLActivity_nativeAddTouch
  T Java_org_libsdl_app_SDLActivity_nativeFocusChanged
@@ -1188,7 +1210,6 @@
  T SDL_IsGameController
  T SDL_IsGameControllerNameAndGUID
  T SDL_IsGameController_REAL
- T SDL_IsJoystickGameCube
  T SDL_IsJoystickHIDAPI
  T SDL_IsJoystickNintendoSwitchPro
  T SDL_IsJoystickPS4
@@ -1293,6 +1314,8 @@
  T SDL_LoadBMP_RW_REAL
  T SDL_LoadDollarTemplates
  T SDL_LoadDollarTemplates_REAL
+ T SDL_LoadFile
+ T SDL_LoadFile_REAL
  T SDL_LoadFile_RW
  T SDL_LoadFile_RW_REAL
  T SDL_LoadFunction
@@ -1576,6 +1599,8 @@
  T SDL_RLEBlit
  T SDL_RLESurface
  T SDL_RunThread
+ T SDL_RWclose
+ T SDL_RWclose_REAL
  T SDL_RWFromConstMem
  T SDL_RWFromConstMem_REAL
  T SDL_RWFromFile
@@ -1584,6 +1609,16 @@
  T SDL_RWFromFP_REAL
  T SDL_RWFromMem
  T SDL_RWFromMem_REAL
+ T SDL_RWread
+ T SDL_RWread_REAL
+ T SDL_RWseek
+ T SDL_RWseek_REAL
+ T SDL_RWsize
+ T SDL_RWsize_REAL
+ T SDL_RWtell
+ T SDL_RWtell_REAL
+ T SDL_RWwrite
+ T SDL_RWwrite_REAL
  T SDL_SaveAllDollarTemplates
  T SDL_SaveAllDollarTemplates_REAL
  T SDL_SaveBMP_RW
@@ -1767,8 +1802,11 @@
  T SDL_ShowWindow
  T SDL_ShowWindow_REAL
  T SDL_SIMDAlloc
+ T SDL_SIMDAlloc_REAL
  T SDL_SIMDFree
+ T SDL_SIMDFree_REAL
  T SDL_SIMDGetAlignment
+ T SDL_SIMDGetAlignment_REAL
  T SDL_sin
  T SDL_sinf
  T SDL_sinf_REAL
@@ -1877,8 +1915,8 @@
  T SDLTest_CommonDefaultArgs
  T SDLTest_CommonEvent
  T SDLTest_CommonInit
+ T SDLTest_CommonLogUsage
  T SDLTest_CommonQuit
- T SDLTest_CommonUsage
  T SDLTest_CompareSurfaces
  T SDLTest_Crc32Calc
  T SDLTest_Crc32CalcBuffer

@@ -228,6 +228,7 @@
 )=@9)}
 )!@9)
 )@@9	
+	!~9	
 92ji8R
 @92yr
 9,5@8K
@@ -281,6 +282,8 @@
 ()@)+%A)
 A-!(!
 a2@yh2@y
+_<a5I
+	a{9	
 	A@9	
 	 A9JqG
 A9)qG
@@ -335,7 +338,6 @@ ai_model_info
 AIWalkable
 A	@}J!
 a.JY .I
-_<a%K
 AllocateAndLoad failed for '%s'
 AllocateAndLoad failed for '%s' (%s)
 AllocateResource: Cannot find DATA block in resource %s!
@@ -410,7 +412,6 @@ attrib
 Attribute counts between meshes is inconsistent
 auto_unragdoll_duration
 /AV?O!
-	aw9	
 B-1HD-
 *-B),5C)_
 B9)EG
@@ -486,6 +487,8 @@ BodyGroupChoice
 body_type
 # bone
 BoneChannel
+bone_name
+bone_names
 BoneOverride_t
 bool CEntityClass::DataDesc_UnserializeKey(const CEntityClass::UnserializationContext_t &, CEntityInstance *, void *, const ComponentUnserializerFieldInfo_t *, const CEntityVariant &)
 bool CEntityKeyValues::Serialize(CUtlBuffer &) const
@@ -718,6 +721,8 @@ C_OP_RemapCPtoCP
 C_OP_RemapModelVolumetoCP
 C_OP_RemapSpeedtoCP
 C_OP_RenderModels
+C_OP_RenderSprites
+C_OP_RenderTrails
 C_OP_RepeatedTriggerChildGroup
 C_OP_SetControlPointFieldToWater
 C_OP_SetControlPointFromObjectScale
@@ -827,7 +832,6 @@ D24X8
 D24X8_SHADOW
 *-D),5E)_
 d6@y#
-d6@yc
 d6@yC
 	D@8!
 D@8)%
@@ -1265,7 +1269,8 @@ hf@9i
 hfA9i
 (hide)
 Hitbox indexing is incorrect for set %s, hitbox %s. Hitboxes will not be setup properly.
-hj48Q
+hj48?
+hj58"v
 H#L9`3
 HMaterial
 HModel
@@ -1546,6 +1551,7 @@ maps/%s/world_environmentmaps.vwenvmap
 maps/%s/world_visibility.vvis
 maps/%s/world.vrman
 maps/%s/world.vwrld
+master_morph_weight
 MATCHFRAMEWORK_001
 MaterialOverride_t
 MaterialParamBuffer_t
@@ -1748,6 +1754,8 @@ m_flOpStrengthMinScale
 m_flOutput0
 m_flOutput1
 m_flRadius
+m_flRadiusScale
+m_flRadiusTaper
 m_flRandomMax
 m_flRandomMin
 m_flScalePerParentParticle
@@ -1949,6 +1957,8 @@ modeldoc21
 modeldoc22
 modeldoc23
 modeldoc24
+modeldoc25
+modeldoc26
 modeldoc3
 modeldoc4
 modeldoc5
@@ -2316,7 +2326,7 @@ Plat_ExitProcess
 Plat_GetCPUFrequency
 Plat_GetEnv
 Plat_GetThreadIndex
-Plat_IsInDebugSessionRaw
+Plat_IsInDebugSession
 Plat_NeedsLowFragmentation
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_UUIDFromString
@@ -2419,6 +2429,7 @@ Release
 remapping vertex %d[w%d] invalid: %d->? >= %d
 remapping vertex %d[w%d] invalid: %d->%d >= %d
 RemapValClamped( 
+RemoveBoneAndChildren
  [removed w REMOVED_KEYFIELD] 
 Removes a connected script function from an I/O event on the passed entity.
 Removes a connected script function from an I/O event on this entity.
@@ -2430,6 +2441,7 @@ RenderGrassTextureJob
 RenderHardwareConfig002
 RenderInputLayoutField_t
 rendermesh.cpp(717): 
+RenderMeshFile
 RenderPrimitiveType_t
 RenderService_001
 RenderSkeletonBone_t
@@ -2883,7 +2895,7 @@ V_logf
 VMaterialSystem2_001
 VMatrix
 VMatrix-world
-:vmdlkeys0
+vmdlkeys0
 vmdlkeys1
 vmdlkeys2
 VMDLLIB001
@@ -2921,7 +2933,7 @@ voxel_vis_compression_t
 VOXVIS_COMPRESS_RAW
 VOXVIS_COMPRESS_RLE
 VP4003
-vpcf1
+#<vpcf1
 vpcf10
 vpcf11
 vpcf12
@@ -2935,6 +2947,8 @@ vpcf19
 vpcf2
 vpcf20
 vpcf21
+vpcf22
+vpcf23
 vpcf3
 vpcf4
 vpcf5
@@ -2962,6 +2976,7 @@ V_sincosf
 V_sinf
 VSInputSignature
 vsnap
+VSNAPFile
 V_snprintf
 V_sscanf
 V_stricmp_fast
@@ -3080,7 +3095,6 @@ _Z17LoggingSystem_Logi17LoggingSeverity_tPK17LoggingMetaData_tPKcz
 _Z17LoggingSystem_Logi17LoggingSeverity_tRK14LeafCodeInfo_tPKcz
 _Z6DevMsgPKcz
 #Z80ijx
-	!z9	
 _ZdaPv
 _ZdlPv
 z:K(None)

@@ -241,6 +241,7 @@ A-
 	a\9	
 	A@9	
 @A9)@A9
+a9@y%
 A	A-!
 AA9*Q
 a	@=B
@@ -279,6 +280,7 @@ AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
 *** A feature in %s doesn't start with "F_"! Aborting shader compile!
 &A)H'
+A)	#H
 )AH9(e
 ai_model_info
 AIWalkable
@@ -297,6 +299,9 @@ All static combos set to zero
 anchor_angles
 anchor_position
 Android clang version 5.0.300080  (based on LLVM 5.0.300080)
+Android SM 4.0 (VULKAN)
+ANDROID_VULKAN
+ANDROID_VULKAN_4_0
 AnimAddLayer
 AnimAlign
 AnimationList
@@ -430,6 +435,8 @@ BLOOM_BLEND_SCREEN
 BodyGroup
 BodyGroupChoice
 body_type
+bone_name
+bone_names
 bool2
 bool3
 bool4
@@ -613,6 +620,8 @@ C_OP_RemapCPtoCP
 C_OP_RemapModelVolumetoCP
 C_OP_RemapSpeedtoCP
 C_OP_RenderModels
+C_OP_RenderSprites
+C_OP_RenderTrails
 C_OP_RepeatedTriggerChildGroup
 C_OP_SetControlPointFieldToWater
 C_OP_SetControlPointFromObjectScale
@@ -689,7 +698,7 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 *-D),5E)_
-d6@y#
+d6@yC
 ,DA)R
 .data
 .data.rel.ro
@@ -1050,6 +1059,7 @@ hFEyu
 hFFyuf
 hf@y(
 hf@yH
+h!H*	
 H-%H@
 h%@)j-A)
 *Hk989
@@ -1085,7 +1095,6 @@ i6@yh
 (i:8h
 *i(8i
 i.@9h
-i.@9H
 i~@9k
 IA9*Y
 ib@9(
@@ -1172,6 +1181,9 @@ Invalid member name '%s'
 invert_orientation
 InvTextureDim
 InvViewportSize
+iOS SM 4.0 (VULKAN)
+IOS_VULKAN
+IOS_VULKAN_4_0
 IQuickTime001
 irAy?
 )iR`y
@@ -1196,9 +1208,10 @@ Iu@y?1
 i>@yh
 I$@yi
 j~	)`
+J38]=
 j58hf@9(
 j68hb@9h
-J68HD
+J78$=
 J8@-I0B-O4D-K
 J!@9_
 JaN9j
@@ -1231,6 +1244,7 @@ JNI_OnUnload
 $Jo8$J!8!
 jq8!$B9
 JSON error, unterminated element: 
+!^Ju<
 j(xhb@9
 	*jz-
 _!/k"
@@ -1350,6 +1364,7 @@ MainVs
 malloc
 MapListService_001
 Marlett
+master_morph_weight
 mat_assert_on_error_shader_use
 mat_assert_on_shader_use
 mat_assert_on_shader_use disabled
@@ -1432,16 +1447,15 @@ Material %s (shader %s) nonbatchable in mode "%s" because of dynamic CB for %s. 
 MaterialSystem
 materialsystem2
 MaterialSystem2
-materialsystem2.cpp
 materialsystem2.cpp(145): ERROR! Empty shader mode string found! Use "Default" instead!
 materialsystem2.cpp(161): ERROR! Shader mode "%s" has unsupported type "%s" specified gameinfo.gi!
-materialsystem2.cpp(2616): pVfx == NULL!
-materialsystem2.cpp(2661): pVfx == NULL!
-materialsystem2.cpp(2933): Error reading index!
-materialsystem2.cpp(350): ERROR!!! Materials not released by other systems on shutdown! (See spew above)
-materialsystem2.cpp(355): ERROR!!! Shaders not freed on shutdown, likely due to unreleased materials! (See spew above)
-materialsystem2.cpp(369): GetErrorMaterial() called when m_pMaterialTypeManager == NULL!
-materialsystem2.cpp(811): ERROR!!! Shaders not freed before shader reload! (See spew above)
+materialsystem2.cpp(2623): pVfx == NULL!
+materialsystem2.cpp(2668): pVfx == NULL!
+materialsystem2.cpp(2940): Error reading index!
+materialsystem2.cpp(357): ERROR!!! Materials not released by other systems on shutdown! (See spew above)
+materialsystem2.cpp(362): ERROR!!! Shaders not freed on shutdown, likely due to unreleased materials! (See spew above)
+materialsystem2.cpp(376): GetErrorMaterial() called when m_pMaterialTypeManager == NULL!
+materialsystem2.cpp(818): ERROR!!! Shaders not freed before shader reload! (See spew above)
 MaterialSystem2DefaultDebugFont
 MaterialSystem2DefaultDebugFontOutline
 MaterialSystem2/ShaderIDColors/
@@ -1586,6 +1600,8 @@ m_flOpStrengthMinScale
 m_flOutput0
 m_flOutput1
 m_flRadius
+m_flRadiusScale
+m_flRadiusTaper
 m_flRandomMax
 m_flRandomMin
 m_flRoundness
@@ -1669,9 +1685,6 @@ MOBILE_GLES_3_0
 MOBILE_GLES_3_1
 Mobile SM 3.0 (GLES 3.0)
 Mobile SM 3.0 (GLES 3.1)
-Mobile SM 4.0 (VULKAN)
-MOBILE_VULKAN
-MOBILE_VULKAN_4_0
 modeldoc0
 modeldoc1
 modeldoc10
@@ -1690,6 +1703,8 @@ modeldoc21
 modeldoc22
 modeldoc23
 modeldoc24
+modeldoc25
+modeldoc26
 modeldoc3
 modeldoc4
 modeldoc5
@@ -1896,7 +1911,7 @@ Plat_GetEnv
 Plat_GetGameDirectory
 Plat_GetProcAddresses
 Plat_GetThreadIndex
-Plat_IsInDebugSessionRaw
+Plat_IsInDebugSession
 Plat_LoadInterface
 Plat_LoadModuleRaw
 Plat_ShouldCollectMiniDumpsForFatalErrors
@@ -1999,9 +2014,11 @@ Release
 Reloads all materials. Takes an optional substring as an argument.
 Reloads all shaders from vcs files until the next time mat_reloadshaders is called
 Reloads all shaders. Takes an optional substring as an argument.
+RemoveBoneAndChildren
 RenderDevice003
 RenderDeviceMgr001
 RenderHardwareConfig002
+RenderMeshFile
 RenderModes
 RenderService_001
 __RenderStateLiteral__
@@ -2133,16 +2150,15 @@ Shader expected %d bytes of push constants but only got %d (%s)!
 Shader expression for constant %s is dynamic.
 ShaderIDColor
 -shaders
+shaders_android_vulkan.vpk
 Shader %s doesn't support compile target %s
+shaders_ios_vulkan.vpk
 shaders_mobile_gles.vpk
-shaders_mobile_vulkan.vpk
 SHADER_SOURCE
 SHADER_SOURCE_ROOT
-shaders_pcgl.vpk
 shaders_pc.vpk
 -shaderstats
 shaders/vfx
-shaders_vulkan.vpk
 Shader uses push constants but they weren't supplied through attributes (%s)!
 Shader variable %s is illegal to use in expression. Only artist-editable variables are usable.
 ShadingComplexity
@@ -2370,7 +2386,6 @@ Unknown RenderPrimitives primitive type %d
 -unknown source-(
 *** Unknown text found in FEATURES section in %s: "%s"
 Unknown variable name %s.
-Unknown VPK platform %d
 Unrecognized flag name '%s'
 Unrecognized type '%d'
 Unresolved object reference '%s'
@@ -2431,31 +2446,31 @@ V_FixSlashes
 VFONT1
 V_fpclassify
 vfx_common.cpp
-*** vfx_common.cpp(1017): Error opening file "%s"!
-*** vfx_common.cpp(1027): Error masking unused parts for "%s"!
-*** vfx_common.cpp(1096): Error opening file "%s"!
-*** vfx_common.cpp(1106): Error masking unused parts for "%s"!
-*** vfx_common.cpp(1281): Error opening file "%s"!
-*** vfx_common.cpp(1358): Error opening file "%s"!
-*** vfx_common.cpp(189): Don't call VfxInit() more than once!
-*** vfx_common.cpp(199): g_pFullFileSystem must be set up before calling VfxInit!
-vfx_common.cpp(3552): Error! Ref count !=0 for static combo data cache entry!
-vfx_common.cpp(3639): Error! Ref count !=0 for static combo data cache entry!
-*** vfx_common.cpp(5079): Error opening file "%s"!
-*** vfx_common.cpp(5228): Error opening include file in features list"%s"!
-*** vfx_common.cpp(5267): Error opening file "%s"!
-*** vfx_common.cpp(5496): Error opening file "%s"!
-*** vfx_common.cpp(5530): Error opening file "%s"!
-*** vfx_common.cpp(5569): Error opening file "%s"!
-*** vfx_common.cpp(5673): Error opening file "%s"!
-*** vfx_common.cpp(6128): Programmer Error! The order of VfxVariableSourceType_t does not match s_shaderVariableSource!
-vfx_common.cpp(6799): Error opening file %s
-vfx_common.cpp(6873): VCS %s Unserialize failed
-vfx_common.cpp(6887): VCS %s Unserialize hit EOF
-vfx_common.cpp(7025): Error opening file %s
-vfx_common.cpp(7032): Error calling SkipAndValidateVCSHeader() for %s
-*** vfx_common.cpp(7263): Programmer Error! NULL pointer passed into function!
-*** vfx_common.cpp(7289): Programmer Error! Non feature rule found in feature rule array!
+*** vfx_common.cpp(1019): Error opening file "%s"!
+*** vfx_common.cpp(1029): Error masking unused parts for "%s"!
+*** vfx_common.cpp(1098): Error opening file "%s"!
+*** vfx_common.cpp(1108): Error masking unused parts for "%s"!
+*** vfx_common.cpp(1297): Error opening file "%s"!
+*** vfx_common.cpp(1374): Error opening file "%s"!
+*** vfx_common.cpp(191): Don't call VfxInit() more than once!
+*** vfx_common.cpp(201): g_pFullFileSystem must be set up before calling VfxInit!
+vfx_common.cpp(3569): Error! Ref count !=0 for static combo data cache entry!
+vfx_common.cpp(3656): Error! Ref count !=0 for static combo data cache entry!
+*** vfx_common.cpp(5096): Error opening file "%s"!
+*** vfx_common.cpp(5245): Error opening include file in features list"%s"!
+*** vfx_common.cpp(5284): Error opening file "%s"!
+*** vfx_common.cpp(5513): Error opening file "%s"!
+*** vfx_common.cpp(5547): Error opening file "%s"!
+*** vfx_common.cpp(5586): Error opening file "%s"!
+*** vfx_common.cpp(5690): Error opening file "%s"!
+*** vfx_common.cpp(6145): Programmer Error! The order of VfxVariableSourceType_t does not match s_shaderVariableSource!
+vfx_common.cpp(6816): Error opening file %s
+vfx_common.cpp(6890): VCS %s Unserialize failed
+vfx_common.cpp(6904): VCS %s Unserialize hit EOF
+vfx_common.cpp(7042): Error opening file %s
+vfx_common.cpp(7049): Error calling SkipAndValidateVCSHeader() for %s
+*** vfx_common.cpp(7280): Programmer Error! NULL pointer passed into function!
+*** vfx_common.cpp(7306): Programmer Error! Non feature rule found in feature rule array!
 vfx_compile_target_expr.cpp(106): : Failed to create lexer from "%s"
 vfx_compile_target_expr.cpp(114): : Failed to create token stream from "%s"
 vfx_compile_target_expr.cpp(122): : Failed to create parser from "%s"
@@ -2486,7 +2501,6 @@ ViewFadeMode_t
 VIEW_FADE_MODULATE
 Viewport
 virtual InitReturnVal_t CFontManager::Init()
-virtual InitReturnVal_t CMaterialSystem2::Init()
 virtual void CBaseIntrospectedToKV3TypeManager::AllocateResource(ResourceHandle_t, ResourceId_t, const ResourceFileHeader_t *, IRD_RegisterResourceDataUtils *)
 virtual void CMaterialSystem2Utils::RenderPrimitives(IRenderContext *, MaterialPrimitiveType2_t, const Vector *, const Color *, const Vector2D *, int, const IMaterial2 *, const CRenderAttributes *, HRenderTexture, LayoutPositionType_e)
 virtual void CPostProcessingState::ResetColorCorrectionLookupWeights()
@@ -2505,7 +2519,7 @@ V_logf
 VMaterialSystem2_001
 VMatError
 VMatrix
-:vmdlkeys0
+vmdlkeys0
 vmdlkeys1
 vmdlkeys2
 VMDLLIB001
@@ -2516,6 +2530,7 @@ void ConnectInterfaces(CreateInterfaceFn *, int)
 void COrderedConstructor_Create<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, CResolveOrderedFunc<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, &_ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC>, false>::AddRef(bool) [T = COrderedInitShutdownRefWrapper<&EarlyInit_Common>, RESOLVECLASS = CResolveOrderedFunc<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, &_ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC>, bCONSTRUCT_ON_FIRST_USE = false]
 void CSchemaClassInfo::ReportClassError(const char *) const
 void CSchemaClassInfo::ValidateModuleLocalTypeScope()
+void CUtlBlockMemory<CFontTextureCache::Page_t, int>::ChangeSize(int) [T = CFontTextureCache::Page_t, I = int]
 void CUtlBlockMemory<CVfxStaticComboData, int>::ChangeSize(int) [T = CVfxStaticComboData, I = int]
 void CUtlBuffer::VaPrintf(const char *, va_list)
 void CUtlLeanVectorBase<CUtlVector<CMaterialParam, CUtlMemory<CMaterialParam, int> >, short>::EnsureCapacity(int, bool) [T = CUtlVector<CMaterialParam, CUtlMemory<CMaterialParam, int> >, I = short]
@@ -2546,6 +2561,8 @@ vpcf19
 vpcf2
 vpcf20
 vpcf21
+vpcf22
+vpcf23
 vpcf3
 vpcf4
 vpcf5
@@ -2578,6 +2595,7 @@ _V_SetExtension
 V_sincosf
 V_sinf
 vsnap
+VSNAPFile
 V_snprintf
 V_sscanf
 _V_strcspn
@@ -2596,6 +2614,7 @@ V_strtod
 V_strtoi64
 V_strtoui64
 V_towupper32
+-vulkan_use_ios_vcs
 V_UnqualifiedFileName
 V_UTF16ToUTF32
 V_UTF16ToUTF8
@@ -2606,6 +2625,7 @@ V_vsnprintfSize
 V_vsnprintfWarnTrunc
 V_wcstoi64
 v@y?5
+W	)#/
 Warning
 WARNING: Failed to convert introspected block for file: %s
 WARNING: Invalid resource version (%d): %s
@@ -2613,7 +2633,7 @@ Warning:  %s = '%s' is infinite, clamping value.
 WARNING: Trying to create a CRenderContextPtr without a valid context.
 WAy2z@
 WAyky@
-weight
+WeightList
 width
 W)n^@
 WorkshopSetup001

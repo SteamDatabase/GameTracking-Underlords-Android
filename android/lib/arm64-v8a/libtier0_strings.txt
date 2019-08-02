@@ -53,13 +53,11 @@
 29CDefaultLoggingResponsePolicy
 2(A@qJ5
 2CB@q
-  %2d - proc %2d (grp %u:%u / phy %d / cor %d / smt %d): max freq %llu
 2*hi8
-2j2@9i6@9_
 2*ki8J
 2mymx
-4(3H9
-4i2@9?
+  %2u - proc %2u (grp %u:%-2u / phy %u / cor %u / smt %u): max freq %llu
+4h3H9
 4-ij8
 4-ik8
 4oil8
@@ -67,7 +65,7 @@
   %52.52s%12d%12.3f%12.3f%7.2f%12.3f%7.2f%12.3f%12.3f%12.3f%12.3f
 5{"A9hB
 5		@q
-(6a*@
+(6a2@
 ?6`>H
 /6`>H
 '6`>H
@@ -84,11 +82,13 @@
 8Oi-8+
 %8x-%4x-%4x-%2x%2x-%2x%2x%2x%2x%2x%2x
 (@9	,@9
+@9a^@
 9CTestCase
+!'9Eq
 9h2@9i6@9
 @9.h`8
+9HcS9h
 9Hh{8
-9i2@9h6@9?
 9ib@9
 9ib@9)}
 9*ih8
@@ -98,13 +98,11 @@
 	@9J	
 )	@9J	@9?
 	@9k}A
-@9x&@
 A)"	@
 +a@9?
 A9)9G
 a@9*a
-A?9?Q?9K
-a'9%t
+(a%9jR%9h
 &aacute;
 &Aacute;
 AbortMessage({
@@ -155,9 +153,7 @@ android/os/Build$VERSION
 android/os/Debug
 &apos;
 AppendMiniProfilerToList
-A@q	7
 A@qH7
-?A@qi5
 A@qI7
 (A@qJ7
 A@qK5
@@ -370,6 +366,7 @@ ERROR: Virtual reservation exceeded limit /+/ %llu > %llu
 eventfd
 _exit
 Exiting due to logging LR_ABORT request.
+Exit Process
 exitprocess_%d
 Expr: %s
  failed to dlopen "%s" error=%s
@@ -378,6 +375,7 @@ FAIL: !IsEmpty()
 FAIL: Not all items popped
 FAIL: !Validate()
 false
+Fatal Error
 fchmod
 fcntl
 fcntl(%d) for %s failed
@@ -472,6 +470,9 @@ g_VProfNodeSpikeReporting
 g_VProfSignalSpike
 </h1>
 [/h1]
+h2@9i6@9
+h6@9`2
+h6@9i2
 h<8]hh8J
 h=8]hh8J
 h>8j	
@@ -486,9 +487,10 @@ HangWatchdog_Shutdown
 .hash
 hb@9h
 hb@9H
-hbX9(
+hB^9H
 hbY9H
 hBY9H
+HcS9(
 Heap: standard allocator
 HEAP WARNING: memory block at %p appears to be corrupt
 HEAP WARNING: memory block at %p is unexpectedly allocated
@@ -501,9 +503,11 @@ hi8_q
 -- Hierarchical Call Graph --
 higher
 hj*8Hhi8K
+hjD)x*@
 H>*SL>
-)I*+%
+h"X9(
 	*I}`
+i2@9h6@9?
 i2q		
 ?i*8i
 )ia8?q
@@ -550,6 +554,7 @@ InstallProgressReportHandler
 int CBufferString::AppendFormatV(const char *, va_list)
 int CBufferString::EnsureAddedCapacity(int, char **, bool, bool)
 int CBufferString::EnsureCapacity(int, char **, bool, bool)
+int CBufferString::UnicodeCaseConvert(int, EStringConvertErrorPolicy)
 Intentionally vague touch behavior for %p
 Interpolation
 InvokeMiniDumpHandler
@@ -559,8 +564,6 @@ isspace
 IterateCapturedStackAnnotations
 &iuml;
 &Iuml;
-j68R 
-j68x 
 J	@9k	@9_
 Java_com_valvesoftware_AttributeSetNative_getAttributeBooleanValue_1Native(__complex int0_t)
 Java_com_valvesoftware_AttributeSetNative_getAttributeBooleanValue_1Native__JLjava_lang_String_2Ljava_lang_String_2Z
@@ -600,6 +603,7 @@ Kii8+
 KM^bM
 ::<lambda_
 &laquo;
+Launch Debugger
 $layout
 &ldquo;
 LengthOfMatchingPaths
@@ -681,8 +685,6 @@ LoggingTag_t *CLoggingSystem::AllocTag(const char *)
 lower
 &lsquo;
 (\M8h
-"M9auA
-"M9`vA
 macos
 Mac OS
 MacOS 10.10
@@ -914,8 +916,7 @@ Plat_IsConsoleApplication
 Plat_IsDirectory
 Plat_IsFile
 Plat_IsHighDPI
-Plat_IsInBenchmarkMode
-Plat_IsInDebugSessionRaw
+Plat_IsInDebugSession
 Plat_IsInHeadlessMode
 Plat_IsInTestMode
 Plat_IsModuleLoaded
@@ -964,7 +965,6 @@ PlatSDLFunctions_t *Plat_RequireSDL()
 Plat_SecTickDiff
 Plat_SecTickDiffF
 Plat_SetActiveWindow
-Plat_SetBenchmarkMode
 Plat_SetClipboardText
 Plat_SetCpuTimeIsReliable
 Plat_SetCurrentDirectory
@@ -1082,6 +1082,7 @@ putenv
 *		@q
 :>	Q>>
 @@q(7
+	q>9@
 Q@)Gz`1
 @@qh7
 qH}V*
@@ -1121,9 +1122,6 @@ RestoreWin32ConsoleColor
 R]hh8
 Rh+I*+%
 Rhjh8
-R(+I*+%
-Ri2@9h6@9?
-Ri2@9j6@9?
 Rj+H*
 Rjj(8
 rmdir
@@ -1138,7 +1136,6 @@ RunWithAlternateStack
  [%s]
 %s	0x%x
 S?9=qh
-:sA9 
 %s: added string size %d overflows (added to %d)
 %s: capacity request for %d can't be satisfied (max %d)
 sched_setaffinity
@@ -1357,6 +1354,7 @@ SoundOperators
 sprintf
 S?)=q
 srand
+%s: requested conversion of %d chars
 Srir8qIq8
 %s: %s
   %s slot %d combined mask %u:0x%llx
@@ -1431,6 +1429,7 @@ Testing %d threads:
 Tests done, purging test memory...
 .text
 Texture_Cache
+Th>@9
 Th&A9
 THa@9(
 T\hh8]
@@ -1532,7 +1531,7 @@ Unknown
 UnknownOS
 UnregisterAssertionFailureListener
 UnregisterHibernationListener
-uRC9`
+uRC9@
 [/url]
 [url=
 usleep
@@ -2028,6 +2027,7 @@ _ZN13CBufferString16MakeRelativePathEPKcS1_
 _ZN13CBufferString16RemoveDotSlashesEc
 _ZN13CBufferString16RemoveToFileBaseEv
 _ZN13CBufferString18StripTrailingSlashEv
+_ZN13CBufferString18UnicodeCaseConvertEi25EStringConvertErrorPolicy
 _ZN13CBufferString19EnsureAddedCapacityEiPPcbb
 _ZN13CBufferString19EnsureTrailingSlashEc
 _ZN13CBufferString20ExtractFileExtensionEPKc

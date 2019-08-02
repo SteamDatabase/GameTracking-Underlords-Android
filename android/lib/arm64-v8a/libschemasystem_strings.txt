@@ -203,6 +203,8 @@ blockLOS
 BodyGroup
 BodyGroupChoice
 body_type
+bone_name
+bone_names
 bool CSchemaSystemTypeScope::InsertNewClassBinding(SchemaClassId_t, CSchemaClassInfo *, CSchemaClassInfo **)
 bool CSchemaSystemTypeScope::InsertNewEnumBinding(SchemaClassId_t, CSchemaEnumInfo *, CSchemaEnumInfo **)
 breakable_count
@@ -219,7 +221,6 @@ __bss_start__
 bUpdate
 burst_randomize
 burst_scale
-Bvpcf1
 B@yg&@
 cable
 Cannot allocate abstract class
@@ -345,6 +346,8 @@ C_OP_RemapCPtoCP
 C_OP_RemapModelVolumetoCP
 C_OP_RemapSpeedtoCP
 C_OP_RenderModels
+C_OP_RenderSprites
+C_OP_RenderTrails
 C_OP_RepeatedTriggerChildGroup
 C_OP_SetControlPointFieldToWater
 C_OP_SetControlPointFromObjectScale
@@ -391,8 +394,8 @@ __cxa_guard_acquire
 __cxa_guard_release
 __cxa_pure_virtual
 Cycle or diamond double-reference to '%s'
-d6@y#
 d6@yc
+d6@yC
 -DANGER_MODE_ignore_schema_mismatches
 .data
 .data.rel.ro
@@ -615,7 +618,7 @@ i)xhqA
 i>@yh
 IyhnB
 j2Gyh
-j(8L~
+j(8M~
 JAAHJ
 JaAIJ
 JAJJ)
@@ -630,7 +633,7 @@ JNI_OnLoad
 JNI_OnUnload
 	*jz-
 	*_!<k
-!}	K	
+!}	K)
 *k2@y
 kAKJk
 kBJyh
@@ -674,6 +677,7 @@ loop_in_action
 looping
 LrwcE
 MapListService_001
+master_morph_weight
 MATCHFRAMEWORK_001
 material
 MaterialParamBuffer_t
@@ -755,6 +759,8 @@ m_flOpStrengthMaxScale
 m_flOpStrengthMinScale
 m_flOutput0
 m_flOutput1
+m_flRadiusScale
+m_flRadiusTaper
 m_flRandomMax
 m_flRandomMin
 m_flScalePerParentParticle
@@ -830,6 +836,8 @@ modeldoc21
 modeldoc22
 modeldoc23
 modeldoc24
+modeldoc25
+modeldoc26
 modeldoc3
 modeldoc4
 modeldoc5
@@ -965,7 +973,7 @@ Plat_DebugPrint
 Plat_ExitProcess
 Plat_GetEnv
 Plat_GetModuleProcAddress
-Plat_IsInDebugSessionRaw
+Plat_IsInDebugSession
 Plat_LoadModule
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_UnloadModule
@@ -996,10 +1004,12 @@ RegisterStringToken
 .rela.dyn
 .rela.plt
 Release
+RemoveBoneAndChildren
 RenderDevice003
 RenderDeviceMgr001
 RenderHardwareConfig002
 renderingpipelines
+RenderMeshFile
 RenderService_001
 RenderSystemSurface001
 RenderUtils_001
@@ -1236,7 +1246,7 @@ VisBuilder_001
 V_isnan
 VMaterialSystem2_001
 VMatrix
-:vmdlkeys0
+vmdlkeys0
 vmdlkeys1
 vmdlkeys2
 VMDLLIB001
@@ -1262,6 +1272,7 @@ void PromoteUnresolvedAndGlobalTypes(CSchemaPtrMap<TTypeMapKey, TSchemaTypeSubcl
 void PromoteUnresolvedAndGlobalTypes(CSchemaPtrMap<TTypeMapKey, TSchemaTypeSubclass *> &, CSchemaPtrMap<TTypeMapKey, TSchemaTypeSubclass *> &, ISchemaSystemTypeScope *, const TExtraWork) [TTypeMapKey = unsigned int, TSchemaTypeSubclass = CSchemaType_DeclaredEnum, TExtraWork = (lambda at schemasystem.cpp:1722:111)]
 void ValidateAtomicType(const char *, CSchemaType_Atomic *)
 VP4003
+#<vpcf1
 vpcf10
 vpcf11
 vpcf12
@@ -1275,6 +1286,8 @@ vpcf19
 vpcf2
 vpcf20
 vpcf21
+vpcf22
+vpcf23
 vpcf3
 vpcf4
 vpcf5
@@ -1300,6 +1313,7 @@ VScriptDbg
 VScriptManager010
 _V_SetExtension
 vsnap
+VSNAPFile
 V_snprintf
 V_sscanf
 V_stricmp_fast
@@ -1317,6 +1331,7 @@ WARNING: SchemaSystem tried to load schema data for module '%s' but failed to lo
 WARNING: SchemaSystem tried to load schema data for module '%s' but InstallSchemaBindings returned false.
 Warning:  %s = '%s' is infinite, clamping value.
 WARNING: Unknown schema class '%s' referenced.
+WeightList
 width
 WorkshopSetup001
 worldrenderer
