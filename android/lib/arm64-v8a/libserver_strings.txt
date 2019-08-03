@@ -30,6 +30,7 @@
 !~@( 
 !*,=@
 !	@-#	@
+!	@)%_
 ?)>>!;/
 ?}@=	
 '":|;
@@ -38,7 +39,6 @@
 ((@-)
 ()@))	@
 (%@-*	@
-(%@)`
 )@-		@
 )*-)+
 )+@)+
@@ -147,7 +147,6 @@ $0$1$2 $3 = $4
 .>()09
 	0@9?
 >()09,)G>r
-0A9+*
 0~B8 
 @0bDG
 0CClientMsg_WorldUIControllerHasPanelChangedEvent
@@ -1414,7 +1413,6 @@ $0 to $1,
 18TEDust_GameEvent_t
 18TEFizz_GameEvent_t
 18ToolTraceRayResult
-	1#9(|
 1960/00/00
 19CAI_ChangeHintGroup
 19CAmmoDefInitializer
@@ -1542,7 +1540,7 @@ $0 to $1,
 1sAL"
 1 to output sv_showanimstate to Msg(). 2 to store in AnimStateServer.log. 3 for both.
 1w?WA
-1@yH<
+1@y(<
 	1@y?!"k`
 ?2: 	
 +2: 	
@@ -2864,7 +2862,6 @@ $0 to $1,
 2hB#9
 2hf89
 2hF 9
-2hF 9(N
 2hj+9
 2hjh8
 	2hN	
@@ -2923,11 +2920,12 @@ $0 to $1,
 }2'@+P
 2 .ProtoFlattenedSerializerField_t"!
 2*q?9
-2	Q'9(|
+2	Q'9
 2	Q	9
 2Q9 2
 2	q@y?
 	2R*3
+2r!9rx
 2) Red  : %i
 2RF-5:@
 2(;	S
@@ -3523,6 +3521,7 @@ $0 to $1,
 =3PF-5XG-
 3.t8!
 3X@-7
+	*!4,
 4('@)*
 4(0@9
 40CColorCorrectionMaterialOverrideModifier
@@ -3822,8 +3821,8 @@ $0 to $1,
 5H;	S(O(
 5ib@y
 5i*C))
+5i"J)
 )5IJ(}
-5i"J)5W
 5ISave
 5i.@y
 5`J@)q
@@ -3958,7 +3957,6 @@ _6	D@
 6hbB9	7
 6hbC9
 6hBf9
-6hBW9
 6HC@9
 ?6hf@
 /6hf@
@@ -4054,7 +4052,7 @@ _6iJ@
 ?6iJ@
 /6iJ@
 @6iJ@
-6i"J)5W
+6i"J)
 6iJA9
 ?.@6$Ik
 `6in@
@@ -4307,9 +4305,9 @@ _6v:@
 86iv@
 86u*@
 86`V@
-	875M
 87)#A9i
 87H	@7
+	87hL
 87iZ@
 %8.8s: %-5d entries, '%s', ...
 8CAISound
@@ -4351,6 +4349,7 @@ _6v:@
 8INavDraw
 8IRagdoll
 8IRestore
+#[8j'
 @8j&A
 	*_!8k
 8k_ItemPurgatoryResponse_Refund_Failed_ItemNotInPurgatory
@@ -4373,6 +4372,7 @@ _8|{t
 :!"9_
 ?9% &
 .@9)	
+"@9!;
 (@@9(
 (	@9	
 )!@9)
@@ -4419,7 +4419,6 @@ _8|{t
 [%9.9s] (%5d)%s:
 [%9.9s] (%d)%s at %.6f phase not supported
 [%9.9s] (%d)%s SetInterpolationTimeType - changing interpolation phase type
-"@9A;
 @9A(!
 9*a{9
 9+aB9
@@ -4460,6 +4459,7 @@ _8|{t
 9CTESparks
 9CTimeline
 9D7V=
+!?9e8
 (@@9	f
 (@@9	g
 9gCN>
@@ -4505,16 +4505,16 @@ _8|{t
 @9hV@
 9hVA9
 9hVB9
-!.9hW
+!.9HW
 9h#@y
 9hZA9
 9hZB9
 ~@9i~
- @9i-
 (@@9i
 )!@9i
 )@@9i
 @9i&@
+ @9I-
 @9I	@
 @9	i58s
 @9	i*8
@@ -4536,9 +4536,8 @@ _8|{t
 9i>N9
 9IRegistry
 9ISequence
-@@9IT
- @9iU
-"@9iU
+ @9IU
+"@9IU
 @9iz@
 9iZA9?	
 9j"@9
@@ -4601,6 +4600,7 @@ _!9ki
 (@@9	t
 (@@9t"
 (@@9t"(
+@@9)T
 @9T|@
 (@@9tb
 (@@9tB
@@ -4608,6 +4608,7 @@ _!9ki
 @9U|@
 (@@9	v
 (@@9	w
+!?9w8
 @9wiu
 (@@9	x
 ?9.>`y
@@ -4643,9 +4644,7 @@ A-!8#
 _A89j
 +a@9?
 	a@9	
-a'9(|
 a"@9`
-_A#9*|
 "A9		
 (@A9(
 (A@9(
@@ -4661,11 +4660,11 @@ _A#9*|
 	A@9)	
 	A@9	
 A9()(
+a"@9"5
 a"@9"6
 a@9+a
 `A9)`A9
 a@9	B
-a"@9B5
 A9@g@
 .A9h.
 "A9h"
@@ -4690,8 +4689,8 @@ A9i>@
 a"@9"ih
 A9	ii
 A9iji
-#A9j*
 *!A9J
+#A9J*
 A9|J@
 	A9j"A
 A9jji
@@ -7059,11 +7058,8 @@ B-)(
 B-1HD-
 B-(5@
 b59aRM
-B59 U
 b59)y
 *-B),5C)_
-B69 U
-B79 U
 @-b8"
 @-B8!
 	@-B8!
@@ -7097,7 +7093,7 @@ b@9ib
 b@9JIG
 B(9t"%
 B-A8!
-bA9),
+bA9	,
 bA9hb
 BA9hB
 BA9iB
@@ -7540,7 +7536,6 @@ BULLET
 bulletPenetrationDamageModifier
 bulletPenetrationDistanceModifier
 BulletProof
-B-(uM
 Bundle has circular reference: 
 "B)Up
 bUpdate
@@ -7555,11 +7550,12 @@ ButtonBitMask_t
 "B)Ux
 buy_unit
 bValue
-`b@y~*
-`b@yg-
+`b@y*+
+`b@y9-
 `b@yh
 B	yi.
 BYield
+`b@yP*
 B	yt.
 bytes
 bytes. 
@@ -7568,7 +7564,6 @@ Byte size calculation and serialization were inconsistent.  This may indicate a 
 bytes_read
 bytes_written
 b	yu6
-`b@yX+
 $.c($
 :C)   
 !	@-C
@@ -7586,7 +7581,6 @@ C33s?)\
 C-!8"
 C-"8"
 ,c@9-
-c@9*,
 C9   
 C9)|@
 C@9	2
@@ -7596,9 +7590,11 @@ C9	a79
 C9,h5
 C@9HC
 	@C9i
+c@9j,
+C@9j,
 CA9`:
 cA9h"
-CA9j*
+CA9J*
 cA9s~
 cable
 Cache
@@ -10657,16 +10653,17 @@ d3_citadel_05
 *-D),5E)_
 d6@y#
 d6@y#.
-d6@y#+
+d6@y#$
 d6@y#1
 d6@yc
+d6@yc=
 d6@yc 
-d6@yc.
 d6@yc(
 d6@yC
+d6@yC 
 d6@yC.
+d6@yC(
 d6@yC$
-d6@yC1
 	$D9?
 D-)9,
 D9i2@
@@ -11792,7 +11789,6 @@ EM_RemoveAllDecals
 ?)^emS<
 EM_ScreenOverlay
 "e" must be followed by exponent.
-!	@)en
 !^e.N
 }?E:n
 enableangularconstraint
@@ -12414,6 +12410,7 @@ EUnitKeyword_Warlock
 EUnitKeyword_Warrior
 EUnlockStyle
 EUnpackBundle
+!	@)ev
 ]E)v^
 evasion_bonus
 evasion_chance
@@ -12635,6 +12632,8 @@ eyes_follow
 eZQ9\
 ?-f:*
 @+,]f}/
+!	@)-F
+!	@)%F
 .F))}
 F-%:%
 F: %.2f deg
@@ -12864,6 +12863,7 @@ ffffff
 fflush
 fGain
 F*%h3x%hgx
+F-HaB
 F*&h%x%hsx
 F*%h'x%hsx
 @-FI@-)	@
@@ -13478,7 +13478,6 @@ FZ*o7
 @g|_\
 .G))}
 ))+G)
-]G-!-
 @-G@@-
 @-G	@
 &G) ( 
@@ -14257,6 +14256,7 @@ gxXM|Z
 h&@)?
 h&@)*
 ;+%@H
+!	@)	H
 ('H)_
 @-H  
 #H)	}	
@@ -14269,7 +14269,7 @@ h2@9)
 h2@9)yE
 )h2A9
 h2N9i
-h2Q9@2
+h2Q9 2
 h2V9u2
 h2Y9h
 h2@ytB
@@ -14302,11 +14302,12 @@ h)8Ay)
 H=)@8f
 [h] %8llx (%s) <%s%s> [o] %8.3f %8.3f %8.3f [a] %6.3f %6.3f %6.3f [s] %6.3f
 h"@9)
-h"@9)-
+h"@9	-
 h&@) 9.
-,H@9-=
 H'@9(
 h"@9)0
+h"@9	0
+h*^9)0
 ;h@)9\A)<
 H @9`b
 *h&]9h
@@ -14324,12 +14325,11 @@ h&\9H
 H @9h"
 H`@9H
 h"@9I%
-h"@9I0
-h*^9I0
 h"@9i8
-h"@9iU
+h"@9iF
 h"@9IU
 h&@9k
+h"@9)U
 h*_9u5
 h"^9`Z
 h%A)`
@@ -14422,8 +14422,8 @@ h"B9H
 hB^9H
 hB@9H
 H'B9h
-hB@9IR
-hb@9iU
+hb@9IU
+hB@9)R
 hB@9t
 hB@9u"@
 hB@9)YB
@@ -14472,6 +14472,7 @@ HC@9hB
 HC@9hC
 hCallbackFunc
 hCallbackScope
+HCB9HW
 h"D9t
 HDR Color Scale: %0.3f
 !hdx?
@@ -14745,6 +14746,7 @@ hi,xk
 h&_)j
 h%@)j	@
 H%@)J	@
+hj48F|
 hj@9yF@
 h&@-j.A-
 =hjc9
@@ -14754,6 +14756,7 @@ h&J)jZ@
 hJN9h
 hJN9t"
 hjN9v
+hJW9iU
 hjX9v
 h&^-k.@
 h&^-k*@
@@ -14956,7 +14959,7 @@ i6@yh
 *i;8{
 !	I- 8 
 I-!8"
-i:82u
+i:82m
 *	i88
 	i:89
 _i)8)A
@@ -14982,7 +14985,6 @@ i:8jz@
 i)8Ki@9
 i+8Ki@9k
 )i@9	
-i*@9*3
 )I@9I
 i"@9J
 I9	S	M)
@@ -15259,8 +15261,8 @@ iGroup
 	*ih*
 I-!H#
 (ih8)\
+(ih8	\
 )ih8?
-(ih8I\
 (Ih8I\
 )ih8Ii(8
 (ih8*ij8+ik8,il8-im8.in8/io80ip81iq82ir8"ib8#ic8$id8%ie8&if8)i`8
@@ -15272,8 +15274,8 @@ I("hq
 (ihxA=
 +ihxh=@
 *ihx(Q*
+ii8,\
 ii8#hi8
-ii8L\
 iii8_
 Iii8*
 %i %i %i %i
@@ -15311,9 +15313,9 @@ i*J)(
 I!@)J	@
 *ij8+ik8,il8-im8.in8/io80ip8(ih8
 ij,8kj*8mj(8h&
-iJ\9(U
 +i-`JG
 ijj8?
+iJR9h;
 ijw8*
 )ijx?
 *)ijx?
@@ -16469,7 +16471,6 @@ Iyix8}
 IyixJylx+
 +I@yL
 Iy(xj
-iyx+q
 i"Yy?
 @I@z)
 iZA9	
@@ -16481,71 +16482,73 @@ iZA9
 @-J	@
 J-` $
 j08!(
-j08N=
-j08P=
+j08.=
+j080=
 j >= 0 && j < nResultBufSize
 J0@y_
 J0@yI
 J0@yk
-j18Q=
+j181=
 j1x1(
-j28Q=
-j28R=
-j28R>
+j281=
+j282=
+j282>
 j2@yh
-j38@;
 j48(%
 j48	C
 j48t^@
 j4xH;@
 j58(%
+j58(9
 j58h9
 j58H9
 j58hf@9(
 J5@y_
+j68hM
 j68u*@
 j68v&@
 j(8(~
 j(8('
+j)8('
 j)8	?
-j)8	'
 j)8	"
 j)8	$
 j)8	*
+j*8*'
 j*8*(
+j+8+'
 $J)!8
 j)8	2
 j)8	7
 j(8h 
-j)8H'
 j(8Hd
-j;8HL
 j(8HL
 j(8hM
 j)8i 
 j)8ID
 j)8iL
+j)8iM
 j)8Ir
 j)8`j
 j*8j 
-j*8J'
-j*8J(
 j+8jG
 j(8jj)8`
 j-8K,
 j+8K:
-j+8K'
 j+8Kd
 j+8KV
+j;8(L
 j,8LH
 j,8LL
 j,8Lr
 j-8m 
 j-8M^
 j-8M,
+j-8M.
 j-8MB
 j-8MV
 j-8Mz
+j)8`n
 j.8Nl
 j.8NP
 j)8)p
@@ -16731,27 +16734,25 @@ k2	)j~
 k2Q)m
 *k2@y
 ?k58D
-k68Bj
-?k78<
+?k68|T
 *?k78
-k78}?
+k78CI
 ?k78h
-k78h4
-k78qM
-k78x=
+k78H4
+k78J9
+k78O;
 	K!8"
-?k88zS
+?k88ZS
 k(8vV@
 ?){K9_
 @){K9_
-	K9c6
 k9J{c>
 K	\9K
 K9	S)
 K9	S)M+
 K9	S+M+
 K)A)+)
-KA@9h
+KA@9H
 kA@9J}@
 K	A9lC
 KAB9k
@@ -17479,7 +17480,7 @@ Ki)8)
 	kI9@
 kickid %d CBaseEntity::InputKill()
 ?kIG9
-Kih8J\
+Kih8*\
 Kih8Ki)8Mi(8
 kill_count
 killeater
@@ -17631,7 +17632,6 @@ Kykx)
 Kykx5
 Ky)x)
 l-@),-
-\-.-L
 L-`"$
 L-`"%
 L0AyK
@@ -18108,6 +18108,7 @@ ly)x)
 ?lzPP
 @=#?m\
 @m"	@
+(%@)`M
 +M)	)	)
 M)@)-)
 M0AyL
@@ -22026,7 +22027,6 @@ move_y
 move_yaw
 m_ownerChannelIndex
 m_ownerSpawnGroupType
-!	@)mP
 m_pAchievementKV
 m_PainFinished
 mp_allowNPCs
@@ -22773,6 +22773,7 @@ m_worldGoalAxis
 m_worldGroupId
 m_worldName
 m_wristBones
+!	@)mX
 M@x_!7k
 m_xaxis
 m_xfriction
@@ -22786,15 +22787,11 @@ m_ymin
 m_zfriction
 m_zmax
 m_zmin
-!	@)]n
 @-n	@
-!	@)-N
-!	@)%N
 ?[]N	
 'N(  
 "N(  
 $N(  
-#()(N
 #N(  
 #N)	}	
 %N(  
@@ -22915,6 +22912,7 @@ n9@yN
 n	A9-
 nA9hn
 NA9iN
+#na=B
 nActiveAreas %d + nAreasDestroyed %d + nAreasPendingDestruction %d = %d
 nAlpha
 nameable
@@ -23531,7 +23529,6 @@ nMeshGroupMask
 nMode
 nmonqnmomnmomomno
 ?nnLOX
-N@)O'
 <NoAbilityName>
 No area with id %d
 (no attrib) 
@@ -23929,6 +23926,7 @@ Nx	V @M
 n@y?	
 nZ:0J
 ?'[nza
+!	@)O`
 O?0 ,	f
   o [%5d] '%s' (%s) [group entity]
 o6`"@
@@ -24216,14 +24214,12 @@ owner_id
 ownername
 ownership
 owner_soid
-!	@)OX
 o}Xot#
 &OYMW
 @-oyrn
 %O?ZE
 ?<-?p
 @-p	@
-!	@)	P
 @-P	@
 p2A-r
 p;4,F
@@ -26170,12 +26166,14 @@ RunTimeOfDayCommand
 	R)v4N
 r_VehicleViewDampen
 r@y`&@
+R@y}!
 `R@yh
 R@yHq
 r@yhr
 R	yi2
 ryjj8
 R	yu2
+R@yV 
 --- %s: 
 "%s" 
 "%s":
@@ -28597,8 +28595,6 @@ Switches to navmesh for the specified spawngroup
 Switching local lobby state to %s from %s
 Switching to server state %s from %s based upon the lobby being updated to this state
 %s (%x) spoke %s (%f)
-s@y!;
-S@y!;
 Symbol name "
 symbols
 Synchronously spawn an entity group from a list of spawn tables.
@@ -28612,6 +28608,7 @@ synergy_replacement
 syntax
 syntax = "$0";
 Syntax Error at offset: %d
+S@yp)
 systemloadscale
 System %s failed to init
   szFullScriptFile = %s
@@ -28981,7 +28978,7 @@ Thrx9
 ThR@y
 ThRy9
 TH;	S(O(
-Th*U9tI
+Th*U9TI
 ThV@yh
 Th*W9v
 Th~@y
@@ -29785,7 +29782,6 @@ unusual
 unusual_index
 unweighted
 unweighted 
-!	@)uP
 ?uP.2
 update_auto_claims
 update_baseline
@@ -29964,6 +29960,7 @@ UUID:	0x%x, 0x%x, 0x%x, 0x%x, 0x%x, 0x%x, 0x%x, 0x%x, 0x%x, 0x%x, 0x%x
 [U:%u:%u:%u]
 UUUUUU
 ?uv28J
+!	@)uX
 uX@-w
 UX@-W
 UX@)W
@@ -29971,13 +29968,16 @@ UX@)W
 ?uYLl>
 uYLl>
 uz9GxV
+!	@)]v
 !V @;
 	!@)V
+v2N9a3
 v8array
 v8callback
 v8object
 v8value
 V8@yCx@9A|@9
+V9)a$
 v@9iv
 ?(-\Va3
 VA9hV
@@ -30599,7 +30599,7 @@ V@yh$
 V@y_! k
 V@y!yv
 v>zlK9T
-!	@)%W
+!	@)W`
 @W?,}
 W)` !
 W3|Uxa
@@ -30871,7 +30871,6 @@ WriteToBuffer Message %s is not initialized! Probably missing required fields!
 Writing kdTree with %d triangles
 wrong submessage type
 ?%WV?
-!	@)WX
 W`@-Y
 WY@)U	@
 ?Wzm6V"
@@ -30935,7 +30934,7 @@ x*;XZ
 *%@y(
 		@y_
 		@y?
-"	y0m
+"	y0u
 `>Y1\
 ,y=35
 @y?!4kC
@@ -30957,6 +30956,9 @@ yawVel
 @y)aWy
 y+a_x
 YAxis
+'@yb+
+#@yb+
++@yb+
 :@y`B
 YcuP.
 @y+}E
@@ -31107,7 +31109,6 @@ YWA)H/@
 @y)/@x
 Y`x($
 y|x(E@
-	y:x!G
 *y(xj
 +y(xk
 	@y-	@y
