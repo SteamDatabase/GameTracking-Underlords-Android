@@ -409,11 +409,10 @@
 			},
 			{
 				"id": 20068,
-				"unitcount": 1,
+				"unitcount": 2,
 				"cumulative": true,
 				"hidden": true,
 				"affects_all_allies_with_keyword": true,
-				"special_keyword": "demonhunter",
 				"modifier_name": "demonhunter_demon_self_buff"
 			}
 		],
@@ -422,7 +421,7 @@
 			0,
 			50
 		],
-		"demon_damage_bonus_pct": 30,
+		"self_damage_bonus_pct": 50,
 		"color": "139 0 139"
 	},
 
@@ -926,17 +925,17 @@
 			{
 				"id": 20065,
 				"unitcount": 2,
-				"affects_all_allied_units": true
+				"affects_all_allies_with_keyword": true
 			},
 			{
 				"id": 20066,
 				"unitcount": 4,
-				"affects_all_allied_units": true
+				"affects_all_allies_with_keyword": true
 			},
 			{
 				"id": 20067,
 				"unitcount": 6,
-				"affects_all_allied_units": true
+				"affects_all_allies_with_keyword": true
 			}
 		],
 		"dot_damage":

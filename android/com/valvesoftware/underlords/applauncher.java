@@ -311,7 +311,6 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
 
     private LinearLayout setupAPKButtons(boolean z, boolean z2, long j, final EUserDownloadResponse eUserDownloadResponse, final EUserDownloadResponse eUserDownloadResponse2) {
         String str;
-        String str2;
         LinearLayout linearLayout = new LinearLayout(this);
         linearLayout.setOrientation(1);
         linearLayout.setGravity(17);
@@ -320,12 +319,7 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
             Button button = new Button(this);
             button.setTextSize(18.0f);
             button.setTypeface(this.m_Font);
-            if (z2) {
-                str2 = Resources.GetStringSafe("Native_AppOutOfDateReq");
-            } else {
-                str2 = Resources.GetStringSafe("Native_AppOutOfDateOpt");
-            }
-            button.setText(str2.toUpperCase());
+            button.setText(Resources.GetStringSafe("Native_DownloadAppUpdate").toUpperCase());
             button.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
                     if (applauncher.this.isConnectedToWifi()) {
@@ -357,13 +351,20 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
     }
 
     private void setupAPKOutOfDateScreen() {
+        String str;
         long GetDownloadSizeBytes = PatchSystem.GetInstance().GetDownloadSizeBytes() / 1048576;
-        LinearLayout linearLayout = setupCommonUI(Resources.GetStringSafe("Native_AppUpdateTitle"), null, false);
+        boolean UpdateRequiredForOnlinePlay = PatchSystem.GetInstance().UpdateRequiredForOnlinePlay();
+        if (UpdateRequiredForOnlinePlay) {
+            str = Resources.GetStringSafe("Native_AppOutOfDateReq");
+        } else {
+            str = Resources.GetStringSafe("Native_AppOutOfDateOpt");
+        }
+        LinearLayout linearLayout = setupCommonUI(str, null, false);
         linearLayout.getLayoutParams().width = (int) (((float) this.m_ScreenSize.x) * 0.7f);
         linearLayout.getLayoutParams().height = (int) (((float) this.m_ScreenSize.y) * 0.55f);
         this.m_Logo.getLayoutParams().width = (int) (((float) this.m_ScreenSize.x) * 0.5f);
         this.m_Logo.getLayoutParams().height = (int) (((float) this.m_ScreenSize.y) * 0.33f);
-        linearLayout.addView(setupAPKButtons(true, PatchSystem.GetInstance().UpdateRequiredForOnlinePlay(), GetDownloadSizeBytes, EUserDownloadResponse.DownloadAPK, EUserDownloadResponse.SkipDownloadAPK));
+        linearLayout.addView(setupAPKButtons(true, UpdateRequiredForOnlinePlay, GetDownloadSizeBytes, EUserDownloadResponse.DownloadAPK, EUserDownloadResponse.SkipDownloadAPK));
     }
 
     private void installAPK() {
