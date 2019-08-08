@@ -63,35 +63,39 @@ public class applauncher extends Activity {
 
     public void onResume() {
         super.onResume();
-        String str = "com.valvesoftware.applauncher";
-        Log.i(str, "Checking permissions");
-        String str2 = "android.permission.WRITE_EXTERNAL_STORAGE";
-        if (VERSION.SDK_INT >= 23) {
-            this.m_bWriteAccess = checkSelfPermission(str2) == 0;
-        } else {
-            this.m_bWriteAccess = true;
-        }
         application application = (application) JNI_Environment.m_application;
-        if (this.m_bWriteAccess) {
-            application.SetPermissionsState(EPermissionsState.EHavePermissions);
-        }
-        EPermissionsState GetPermissionsState = application.GetPermissionsState();
-        if (GetPermissionsState == EPermissionsState.EHavePermissions) {
-            if (!application.TriedBootStrap()) {
-                application.SetTriedBootStrap(true);
-                Log.i(str, "We have read/write access");
-                bootStrapIntoGame();
-                return;
+        if (VERSION.SDK_INT < 24 || VERSION.SDK_INT > 25 || application != null) {
+            String str = "com.valvesoftware.applauncher";
+            Log.i(str, "Checking permissions");
+            String str2 = "android.permission.WRITE_EXTERNAL_STORAGE";
+            if (VERSION.SDK_INT >= 23) {
+                this.m_bWriteAccess = checkSelfPermission(str2) == 0;
+            } else {
+                this.m_bWriteAccess = true;
             }
-            this.m_timerHandler.postDelayed(this.m_timerRunnable, 1000);
-        } else if (GetPermissionsState == EPermissionsState.ENeedPermissions) {
-            Log.i(str, "Showing permissions explanation to user");
-            showPermissionExplanation(Resources.GetStringSafe("Native_PermissionsTitle"), Resources.GetStringSafe("Native_PermissionsText"), str2, 1);
-            application.SetPermissionsState(EPermissionsState.ERequestedPermisions);
-        } else {
-            Log.i(str, "Requesting write access");
-            showPermissionExitSettingsOption();
+            if (this.m_bWriteAccess) {
+                application.SetPermissionsState(EPermissionsState.EHavePermissions);
+            }
+            EPermissionsState GetPermissionsState = application.GetPermissionsState();
+            if (GetPermissionsState == EPermissionsState.EHavePermissions) {
+                if (!application.TriedBootStrap()) {
+                    application.SetTriedBootStrap(true);
+                    Log.i(str, "We have read/write access");
+                    bootStrapIntoGame();
+                } else {
+                    this.m_timerHandler.postDelayed(this.m_timerRunnable, 1000);
+                }
+            } else if (GetPermissionsState == EPermissionsState.ENeedPermissions) {
+                Log.i(str, "Showing permissions explanation to user");
+                showPermissionExplanation(Resources.GetStringSafe("Native_PermissionsTitle"), Resources.GetStringSafe("Native_PermissionsText"), str2, 1);
+                application.SetPermissionsState(EPermissionsState.ERequestedPermisions);
+            } else {
+                Log.i(str, "Requesting write access");
+                showPermissionExitSettingsOption();
+            }
+            return;
         }
+        forceRestart();
     }
 
     public void onStop() {

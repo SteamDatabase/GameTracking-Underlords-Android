@@ -30,6 +30,9 @@
 !~@( 
 !*,=@
 !	@-#	@
+!	@)-:
+!	@)%:
+!	@)	<
 ?)>>!;/
 ?}@=	
 '":|;
@@ -38,7 +41,7 @@
 ((@-)
 ()@))	@
 (%@-*	@
-(%@)`]
+(%@)`
 )@-		@
 )*-)+
 )+@)+
@@ -147,7 +150,7 @@ $0$1$2 $3 = $4
 .>()09
 	0@9?
 >()09,)G>r
-0A9K*
+0A9+*
 0~B8 
 @0bDG
 0CClientMsg_WorldUIControllerHasPanelChangedEvent
@@ -163,7 +166,6 @@ $0  extensions $1 to $2;
 0GAME_PARTICLE_MANAGER_EVENT_SET_SHOULD_CHECK_FOW
 0~H  
 @-0I@-
-*_"0k
 0k_EDACDisconnectReason_GameDestroyedUnexpectedly
 0k_EGCMsgInitiateTradeResponse_SteamGuardDuration
 0k_EMsgGCToGCStoreProcessCDKeyTransactionResponse
@@ -325,7 +327,6 @@ $0 to $1,
 %-120s
 %-120s - %s
 127.0.0.1
-	129_A29
 12CBaseCubemap
 12CBaseDMStart
 12CBaseTrigger
@@ -1087,6 +1088,7 @@ $0 to $1,
 16CModifierFactoryI46CDAC_Modifier_TemplarAssassin_RefractionDamageE
 16CModifierFactoryI47CDAC_Modifier_Synergy_DemonHunter_DisableDemonsE
 16CModifierFactoryI48CDAC_Modifier_DragonKnight_BreatheFire_ReductionE
+16CModifierFactoryI48CDAC_Modifier_Juggernaut_BladeFury_DamageWatcherE
 16CModifierFactoryI50CDAC_Modifier_LoneDruid_SpiritBear_Entangle_EffectE
 16CMorphConstraint
 16CMotorController
@@ -1412,8 +1414,8 @@ $0 to $1,
 18TEDust_GameEvent_t
 18TEFizz_GameEvent_t
 18ToolTraceRayResult
-*1!9`
-	1'9(
+*1#9`
+19_!19
 1960/00/00
 19CAI_ChangeHintGroup
 19CAmmoDefInitializer
@@ -1497,7 +1499,6 @@ $0 to $1,
 19CVariantSaveDataOps
 19CVoiceGameMgrHelper
 19CWeaponScriptParser
-	1#9H|
 19IAttachmentOverride
 19IConsoleDisplayFunc
 19IDecalEmitterSystem
@@ -1542,7 +1543,7 @@ $0 to $1,
 1sAL"
 1 to output sv_showanimstate to Msg(). 2 to store in AnimStateServer.log. 3 for both.
 1w?WA
-1@yh<
+1@y(<
 	1@y?!"k`
 ?2: 	
 +2: 	
@@ -1682,7 +1683,6 @@ $0 to $1,
 20ISource2ClientConfig
 20ISource2GameEntities
 20ISource2ServerConfig
-2_"0k
 20SpawnEntityToolEvent
   %20s = '%s'
   %20s = '%s' (weight %f)
@@ -1691,7 +1691,9 @@ $0 to $1,
 20TESparks_GameEvent_t
 20ToolTraceRayResult_t
 20TransitioningLayer_t
+2*1?9
 2	!19
+2	1>9h|
 21CAnimGraphTraceFilter
 21CBaseAnimatingOverlay
 21CBaseAttributableItem
@@ -1791,6 +1793,8 @@ $0 to $1,
 21prevent_interaction_t
 %21s %10llu %10llu %10.1f %10.1f
 21TEBubbles_GameEvent_t
+2	!29
+2	!29l
 22CAnimTagListenerHelperI15IPostGraphIKTagE
 22CAnimTagListenerHelperI16IParticleAnimTagE
 22CAnimTagListenerHelperI21IClothSettingsAnimTagE
@@ -2298,7 +2302,6 @@ $0 to $1,
 25IAssertionFailureListener
 25INavMeshGameEventListener
 25ISource2ServerSerializers
-2?!5ka
 25TEBloodStream_GameEvent_t
 25TEBubbleTrail_GameEvent_t
 25TELargeFunnel_GameEvent_t
@@ -2643,7 +2646,9 @@ $0 to $1,
 28TEProjectedDecal_GameEvent_t
 28TEShatterSurface_GameEvent_t
 28VPhysicsCollisionAttribute_t
-2	!!9
+2	!;9
+2	!&9
+2	!#9
 29CBodyComponentBaseModelEntity
 29CBoneConstraintPoseSpaceMorph
 29CCLCMsg_SplitPlayerDisconnect
@@ -2707,23 +2712,20 @@ $0 to $1,
 2_!9k
 2?!9k
 2?!9k`
+2	!&9n
 2*9	S)!@
 2	9	S
 2(9	SHM(
 2	9	S)O)
 2	9	S	O)
 29ToolEvent_GetEntityInfoResult
-2	A29s
-2	A59
-2	A59p
-2	a79
-2	a"9
-2	a+9
-2	A"9
-2	A(9
+2	a19
+2	a19n
+2	A*9
+2	A+9
 2A9i2
 2	a@9Ia
-2	a"9n
+2	A*9p
 2	AA9
 2A.CWorkshop_PopulateItemDescriptions_Request.SingleItemDescription"F
 2A-k	 
@@ -2869,15 +2871,14 @@ $0 to $1,
 2h&(9T
 2hb59
 2h"B9
-2hB+9
+2hB-9
 2hf89
 2hF 9
-2hF 9(N
 2hj+9
 2hjh8
 	2hN	
 2hr89
-2hR*9i
+2hR,9i
 2H;	S(O(
 2h^@y
 2h>@y
@@ -2890,7 +2891,6 @@ $0 to $1,
 2I.CWorkshop_PopulateItemDescriptions_Request.ItemDescriptionsLanguageBlock
 2ii*x
 2ij(8
-2ij(84E
 2ij(8F
 2+imx
 2ir89h
@@ -2907,11 +2907,10 @@ $0 to $1,
 2?!<k
 2?!;k
 2?!!k
-2?!(k
 2?"!k`
-2?k78z5
+2?k78)J
 2_k88
-2?k88y1
+2?k88(F
 2k_EGCMsgInitiateTradeResponse_VAC_Banned_Initiator
 2Ki(8
 2Ki(8k
@@ -2931,10 +2930,9 @@ $0 to $1,
 2njj8l
 }2'@+P
 2 .ProtoFlattenedSerializerField_t"!
-2	Q!9
-2	Q'9(|
-2	Q)9ix
-2*q;9*x
+2	q:9
+2	q+9
+2	Q#9
 2	q@y?
 	2R*3
 2) Red  : %i
@@ -2946,12 +2944,12 @@ $0 to $1,
 ?2uWv
 2Way_0( %s )
 2Way_1( %s )
-	2!X!
+	2!X=
 2*y5xi"@
 2*y7xi"@
 2@y"!A
 2@y)]C
-2@yj#
+2@yJ#
 2*y(x	
 '3)	(
 300000
@@ -3487,6 +3485,7 @@ $0 to $1,
 38CSoundEventEntityAlias_snd_event_point
 38CWorkshop_GetItemDailyRevenue_Response
 38CWorkshop_SetItemPaymentRules_Response
+3!-9_
 39CCommunity_GetClanAnnouncements_Request
 39CDAC_Ability_WitchDoctor_ParalyzingCask
 39CDAC_Modifier_DragonKnight_SplashAttack
@@ -3511,7 +3510,6 @@ $0 to $1,
 39CTraceFilterSkipTwoEntitiesAndTeammates
 39CUserMsg_ParticleManager_CreateParticle
 39CUserMsg_ParticleManager_UpdateParticle
-3a)9_
 3A-`9 
      3: Alyx Blind
 @@-3B!
@@ -3626,7 +3624,6 @@ $0 to $1,
 43CSchemaAttributeType_DynamicRecipeComponent
 %43s%12d%12d%12s%12s
 440.0
-4!49_
 4(4@9(
 44CDAC_Modifier_Item_Shivas_Guard_Blast_Debuff
 44CMsgMatchSignoutData_CombatStats_CombatRound
@@ -3663,6 +3660,7 @@ $0 to $1,
 48CBidirMsg_RelayPacket_SignedDestinationAddress_t
 48CClientMsg_WorldUIControllerHasPanelChangedEvent
 48CDAC_Modifier_DragonKnight_BreatheFire_Reduction
+48CDAC_Modifier_Juggernaut_BladeFury_DamageWatcher
 48CTonemapController2Alias_env_tonemap_controller2
 48CUserMsg_ParticleManager_SetControlPointSnapshot
 48CUserMsg_ParticleManager_UpdateParticleSetFrozen
@@ -3682,7 +3680,6 @@ $0 to $1,
 49CUserMsg_ParticleManager_UpdateParticleShouldDraw
 49GameToolEventToolTraceRayResult_tHookupGameSystem
 4((@9h
-4A 9_
 4`&C-
 4(d@9(
 4(D@9(
@@ -3800,6 +3797,7 @@ $0 to $1,
 59CProtoItemSocket_AssetModifier_DESERIALIZE_FROM_STRING_ONLY
 59h.M
 5#@9Z
+5a!9l
 @/5B?S
 5CBeam
 5CItem
@@ -3833,13 +3831,12 @@ $0 to $1,
 5H;	S(O(
 5ib@y
 5i*C))
+5i"J)
 )5IJ(}
-5i"J)5W
 5ISave
 5i.@y
 5`J@)q
 ?!5kc
-*?!5kc
 5k&C)
 5k_RemoveItemAttribute_Failed_AttributeCannotBeRemoved
 5K!@y
@@ -3966,6 +3963,7 @@ _6	D@
 6hbB9	7
 6hbC9
 6hBf9
+6hBn9
 6HC@9
 ?6hf@
 /6hf@
@@ -4062,7 +4060,7 @@ _6iJ@
 ?6iJ@
 /6iJ@
 @6iJ@
-6i"J)5W
+6i"J)
 6iJA9
 ?.@6$Ik
 `6in@
@@ -4123,6 +4121,7 @@ _6v:@
 /6v"@
 6Vector
 '6vj@
+!	@)6W
 /6	X@
 6	x@9
 6@y_! k
@@ -4314,7 +4313,6 @@ _6v:@
 86iv@
 86u*@
 86`V@
-	875M
 87)#A9i
 87H	@7
 87iZ@
@@ -4377,8 +4375,10 @@ _8|{t
 8x9,7
 `"@9	
 |@9		
+ 9)!#
 ?9% &
 .@9)	
+"@9!;
 (@@9(
 (	@9	
 )!@9)
@@ -4392,7 +4392,6 @@ _8|{t
 @9*	@
 @9+	@
 ** @9
-&9']	
 	 @9)
 	 @9	
 	)@9)
@@ -4411,7 +4410,6 @@ _8|{t
 @9!8"
 98]@)5	@
 98N*>
-!9_!!9
 @9*	@9-
 @9%	@9
 @9%	@9$
@@ -4425,10 +4423,8 @@ _8|{t
 [%9.9s] (%5d)%s:
 [%9.9s] (%d)%s at %.6f phase not supported
 [%9.9s] (%d)%s SetInterpolationTimeType - changing interpolation phase type
-"@9A;
 @9A(!
 9*a{9
-9_A	99
 9+aB9
 ?9A@c
 @9?aEkA
@@ -4468,6 +4464,7 @@ _8|{t
 9CTimeline
 9D7V=
 (@@9	f
+@9 !F
 (@@9	g
 9gCN>
 (@@9	h
@@ -4517,7 +4514,6 @@ _8|{t
 9hZB9
 ~@9i~
  @9i-
- @9i%
 (@@9i
 )!@9i
 )@@9i
@@ -4528,9 +4524,9 @@ _8|{t
 9i:8!
 @9+i(8k
 "@9i"@9
+@9i"@9
 9	i@9
 ^9I9)
-@9i"@946
 9*i@9J
 9*i@9X
 9IEconTool
@@ -4541,14 +4537,14 @@ _8|{t
 9i>N9
 9IRegistry
 9ISequence
-@@9IT
+ @9IU
+"@9IU
 @9iz@
 9iZA9?	
 9j"@9
 9j*@9(
 @9J9	
 @9jjh8*
-	!@9jL
 @9JU	
 !!@9K
 >9K!0>N
@@ -4559,6 +4555,7 @@ _!9ki
 9Ki@9k
 9k_ItemPurgatoryResponse_Finalize_Failed_CouldNotFindItems
 9kj(8|
+	!@9*L
 9l"A9
 @9l^B
 9lQ@x
@@ -4569,7 +4566,6 @@ _!9ki
 9QH@)A
 @9R"@9)
 **9	S
-*9	S,
 *9	S?
 *9	S)!
 *9	SH
@@ -4600,20 +4596,20 @@ _!9ki
 9	SnM.
 9	SNM.
 (9	S(O(
+*	9	S)O)
 	9	S)O)
 (@@9t
 (@@9	t
 (@@9t"
 (@@9t"(
+@@9)T
 @9T|@
 (@@9tb
 (@@9tB
 @9TC@
 @9Ts@9
-"<9@U
-"=9 U
-">9 U
 @9U|@
+&9'U	
 (@@9	v
 (@@9	w
 @9wiu
@@ -4646,12 +4642,10 @@ A5fSXbf7
 A- 8 
 A-!8$
 A-!8#
+?A89	}
 +a@9?
 	a@9	
-a'9(|
 a"@9`
-_A'9*
-?A(9_
 "A9		
 (@A9(
 (A@9(
@@ -4659,25 +4653,27 @@ _A'9*
 )!A9?
 )A@9)
 )A@9	
-*A!9`
+*A#9`
 		A9?
 		A9	
-	A`9	
 	A@9)
 	A@9)	
 	A@9	
 A9()(
+a"@9"5
+a"@95e
+a"@9"6
+a"@96S
 a@9+a
 `A9)`A9
-a@9)B
-a"@9B5
-a"@9B6
+a@9	B
 A9@g@
 .A9h.
 "A9h"
 *A9h*
 &A9h&
 		A9h
+A>9h|
 	A9h&A
 (A@9HA
 "A9hC
@@ -4696,8 +4692,8 @@ A9i>@
 a"@9"ih
 A9	ii
 A9iji
-_A#9J|
 *!A9J
+#A9J*
 A9|J@
 	A9j"A
 A9jji
@@ -4707,18 +4703,21 @@ A9jji
 A9Kik
 +	A9lC
 	A@9	P
+a"@9SS
 ?A9tJ@
 A@9vi)
 A-a)*
 A-'@A-
 AA9(	
 AA9(	@
+	AA9i
 aaaaaaaazzzzzzzz
 aabb_max
 aabb_min
 AABB_t
 A-b6B
 A@-B8(
+	Ab9	
 abcdefghijklmnopqrrqponmlkjihgfedcba
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
@@ -4761,7 +4760,6 @@ A-c($
 A-c(&
 A-c8$
 @-aC@9
-	Ac9	
 Accel/Deaccel (cosine)
 acceleration
 Accel (time*time)
@@ -6247,6 +6245,7 @@ Advancing to ERoundState_Ready for round %d.
 Advancing to ERoundState_RoundOver for round %d.
 aDy	<
 ?*a\`E<
+	Ae9	
 AE_ABILITY_END_EVENT
 AE_ABILITY_START_EVENT
 AE_ABILITY_TICK
@@ -6472,7 +6471,6 @@ AH*I}
 a"@-i
 `"A-i
 	!Ai)
-)AI9?
 aiAura
 AI_BaseNPC.SentenceStop
 ai_changehintgroup
@@ -6529,9 +6527,10 @@ ai_use_visibility_cache
 AIWalkable
 ai,x*
 A)j	@
+	Aj9i
 _A@k(
 A-k9.
-	AL9	
+)AK9?
 alchemist
 alert_type
 alienbloodsplat
@@ -6581,6 +6580,7 @@ always_notify
 always_send_to_servers
 always tradable
 ;Am@  
+#AmB1
 AmbientCubes
 ambient_generic
 Ambiguous
@@ -6594,6 +6594,7 @@ amplitude
 	amplitude
 AMPLITUDE: %f
 	An9	
+	AN9	
 anchor_angles
 AnchorList
 Anchor nav_begin_area Z to editing player's feet
@@ -6727,9 +6728,6 @@ An orthographic spot light entity
 An RR_Concept couldn't find its string in the symbol table!
  any other value = set minimum value for cl_interp_ratio
 &A)(o@
-A-O	C
-	AP9)
-+AP9j
 api_key
 `AP$N
 appear_time
@@ -6967,7 +6965,6 @@ Attribute type not specified in dynamic recipe definition
 attribute_value
 Attribute value not specified in dynamic recipe definition
 attr_value
-	Au9i
 audible_mask
 audio
 audioparams_t
@@ -7061,34 +7058,33 @@ AXk!#
 ('B)*
 @-))B
 @-B	@
-&B)*=
 B-`! 
 B-   
 B-'("
 B-)( 
 B-1HD-
 B-(5@
-B59`%
 b59aRM
 b59)y
 *-B),5C)_
-B69@%
-B79 %
+B79`%
 @-b8"
 @-B8!
 	@-B8!
 B-!8"
+B89@%
 ~b8~q)=
  B\9{
 B`@9!
-B!9-.
 B9@  
+B99 %
 B@9a'
 ?B9b8"
 ?B\9{g
 B\9{gt
 ^B9h^
 "B9h"
+B/9H'
 B@9H.
 B@9H0
 b@9h 07
@@ -7103,12 +7099,10 @@ B9I	87
 b@9ib
 b@9JIG
 B(9t"%
-b<9 U
-b=9 U
 B-A8!
+bA9	,
 bA9hb
 BA9hB
-bA9I,
 BA9iB
 BA9iFA9hB
 b?)AC_
@@ -7236,7 +7230,6 @@ bbox.m_vMinBounds
 bC9hb
 bChainLightningConsidered
 bCraniumBasherTested
-`BCyn
 %b %d
 bDh%)
 bDiffusalApplied
@@ -7352,7 +7345,7 @@ bloodimpact
 Bmaps\%s.vpk
 ?bMeQ
 bMKBTested
-bO9a&
+bO9A&
 Bodies: %d (%d)
 Body Component Scriptdesc
 BodyGameSystem
@@ -7525,7 +7518,6 @@ Buckshot
 BUCKSHOT
 "B)Ud
 buddha
-B-(uE
 BUF_DEFAULT
 buffer. Use the 'bytes' type if you intend to send raw 
 buff_modifier
@@ -7546,6 +7538,7 @@ BuildCacheSubscribed(CEconItem)
   -Build New Contacts: %6.3f [ms]
 Build out high-precision areas around the edit cursor and create them.
 BuiltRightHanded
+B-(uL
 "B)Ul
 BULLET
 bulletPenetrationDamageModifier
@@ -7565,12 +7558,10 @@ ButtonBitMask_t
 "B)Ux
 buy_unit
 bValue
-b@yg8
+`b@y"/
 `b@yh
 B	yi.
-b@yI8
 BYield
-`b@ys"
 B	yt.
 bytes
 bytes. 
@@ -7596,19 +7587,21 @@ C33s?)\
 C-!8"
 C-"8"
 ,c@9-
+c@9*,
 C9   
 C9)|@
 C@9	2
 C9	a79
-(C[9h
 [C9h#
 <(C@9H#
 C9,h5
 C@9HC
 	@C9i
-c@9J,
+c@9j,
+C@9j,
 CA9`:
 cA9h"
+CA9j*
 cA9s~
 cable
 Cache
@@ -10667,17 +10660,15 @@ d3_citadel_05
 *-D),5E)_
 d6@y#
 d6@y#.
-d6@y#+
+d6@y#$
 d6@y#1
 d6@yc
+d6@yc=
 d6@yc 
-d6@yc.
-d6@yc$
+d6@yc(
 d6@yC
 d6@yC.
-d6@yc1
-d6@yC1
-	!d9	
+d6@yC$
 	$D9?
 D-)9,
 D9i2@
@@ -10764,7 +10755,7 @@ DACLobbyID_t
 dac_local_player_bot_driven
 dac_local_server_hnetconnection
 dac_manual_round_progress
-DAC Match Signout
+DACMatchSignout
 dac_min_combat_round_duration
 dac_mirror_matches
 dac_neutral_percentage_bonus_per_standing
@@ -10781,6 +10772,7 @@ dac_pathfind_draw_cells
 dac_pathfind_find_path_to_cell
 dac_pathfind_find_path_to_vector
 dac_post_combat_wait
+dac_post_combat_wait_max
 dac_post_game_time_duration
 dac_post_round_time_duration
 dac_post_round_time_item_selection_duration
@@ -11766,8 +11758,8 @@ Eiffel tower
 EItemEditorReservationResult
 EItemPurgatoryResponse_Finalize
 EItemPurgatoryResponse_Refund
-!	@)ej
 eKeypoints
+!	@)El
 Elapsed
 electrical
 Electrical.Explode
@@ -11782,6 +11774,7 @@ ELobbyServerState
 .ELobbyServerState
 .ELobbyServerState"
 eLogicalHandType
+*eM9_
 email_format
 email_lang
 email_msg_type
@@ -11920,7 +11913,7 @@ ent_create
 ent_create usage:
 ent_debugkeys
 ent_ehandle
-Entered EGameState_Playing, ERoundState_Combat, Round %u for saved game.
+Entered EGameState_Playing, ERoundState_Preparing, Round %u for saved game.
 Entering EGameState_Intro.
 Entering EGameState_Playing, ERoundState_Combat for dac_combat_debugging.
 Entering matchmaking for region %u with search key '%s'
@@ -12495,7 +12488,6 @@ event_tier
 event_time
 event_type
 	evictions
-/ExB	
 excludednpc
 exclude_from_save_games
 exclusive
@@ -12655,6 +12647,7 @@ F: %.2f deg
 *-F),5G)_
 f^7:!
 @-f8&
+	!f9	
 ?\%F9
 f@9(6
 F9h&@
@@ -12663,7 +12656,7 @@ f@9h2
 F@9hF
 f@9if
 F9JAB9
-fA9	a79 ,
+fA9	a79
 fA9hf
 FA9hF
 FA9iF
@@ -12877,6 +12870,7 @@ fGain
 F*%h3x%hgx
 F*&h%x%hsx
 F*%h'x%hsx
+F-HYA
 @-FI@-)	@
 F<I @
 field
@@ -13385,6 +13379,7 @@ frost_aoe
 frost_bonus_attack_speed
 frost_bonus_movement_speed
 frost_duration
+frozen
 |"F-s**
 F_TRANSLUCENT
 FTYPEDESC_ADDITIONAL_FIELDS
@@ -13536,7 +13531,6 @@ G6v.@
 G-7F@
 g\8"@6
 g9	Q@
-]G-A-
 gA}-d
 Gambler
 game_
@@ -14277,6 +14271,7 @@ H0@yV
 h1xnj 
 h2@9)
 h2@9)yE
+	*h2A
 )h2A9
 h2N9i
 h2V9u2
@@ -14309,9 +14304,12 @@ h)8Ay)
 H=)@8f
 [h] %8llx (%s) <%s%s> [o] %8.3f %8.3f %8.3f [a] %6.3f %6.3f %6.3f [s] %6.3f
 h"@9)
-h"@9)-
+h"@9	-
 h&@) 9.
+,H@9-=
 H'@9(
+h"@9)0
+h*^9)0
 ;h@)9\A)<
 H @9`b
 *h&]9h
@@ -14330,10 +14328,12 @@ H @9h"
 H`@9H
 h"@9I%
 h"@9I0
-h*^9I0
-h"@9iU
+h"@9i8
+h"@9iF
+h"@9IU
 h&@9k
-,H@9M=
+h"@9)U
+h*_9u5
 h"^9`Z
 h%A)`
 )h>A9
@@ -14415,6 +14415,7 @@ hb@9
 h"B9(
 hB@9`
 hB@9(
+hB.92
 hb@9h
 hb@9H
 h"B9h
@@ -14424,7 +14425,8 @@ h"B9H
 hB^9H
 hB@9H
 H'B9h
-hB@9iR
+hb@9IU
+hB@9)R
 hB@9t
 hB@9u"@
 hB@9)YB
@@ -14444,9 +14446,8 @@ hBF99
 hBF9h
 hBI9(
 hBI9H
-hBM9t"
-hBM9v
 H-bN@
+hbN9tB
 hBO9h
 hBO9i
 hbP9i
@@ -14747,7 +14748,6 @@ hi,xk
 h&_)j
 h%@)j	@
 H%@)J	@
-hj48^
 hj@9yF@
 h&@-j.A-
 =hjc9
@@ -14791,9 +14791,8 @@ HModelStrong
 H-m.V-
 !^hNB
 h*O9H
-h*O9i:
-h"O9)M
-h"O9t
+h*O9I:
+h"O9	M
 <HOi#
 	Holding lock %s:
 holdtime
@@ -14855,8 +14854,6 @@ hp_per
 hp_percent
 hp_regen_disadvantage
 Hp@y(p
-h"Q9H
-h"Q9iK
 h&Q)j
 "@Hqr
 "	)hR
@@ -14880,6 +14877,7 @@ HSCRIPT-light
 hscript_lightbinding
 HSCRIPT-new
 HSequence
+H;	S(O(
 HSteamNetConnection CDACNetwork_Server::CreateLocalLoopbackConnection(CSteamID)
 htarget
 hThinkFunc
@@ -14909,14 +14907,16 @@ HurtTouch
 h*v9(
 hv@9)
 *hV]9
+hV99)
 hvKyH
 hvN9i
 hV@yh
 hV	yh
 	hw8h
 HW@9XS@9H
+!	@)hX
 H-"X(
-=h*X9
+=h*X9i9
 =h*X9v
 h*X9v
 h:@y*
@@ -14953,6 +14953,7 @@ i2N9h6N9t6
 i2V9h
 (i38#
 @i4^_
+	i48;n
 i6xh>@yt:
 i6@yh
 *i;8{
@@ -14961,8 +14962,7 @@ I-!8"
 *	i88
 	i:89
 _i)8)A
-i:8cn
-i;8g6
+i;8g:
 ?i(8h
 _i)8i
 *+i,8i
@@ -14984,12 +14984,9 @@ i:8jz@
 i)8Ki@9
 i+8Ki@9k
 )i@9	
-	!I9	
-i*@9*3
 )I@9I
 i"@9J
 I9	S	M)
-	*i.A
 IA@9	A
 I-a~E
 I-aL"
@@ -15010,7 +15007,6 @@ i"B9i
 i#B9i
 ib@9j
 ib@9l
-iBB9(C
 iBB9hn@
 i*B)h
 I+B-K
@@ -15124,9 +15120,9 @@ I CUtlRBTree<CUtlMap<EventChallengeID_t, EventChallengeDef_t *, int, CDefLess<Ev
 I CUtlRBTree<CUtlMap<EventClaimID_t, EventClaim_t, int, CDefLess<EventClaimID_t> >::Node_t, int, CUtlMap<EventClaimID_t, EventClaim_t, int, CDefLess<EventClaimID_t> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<EventClaimID_t, EventClaim_t, int, CDefLess<EventClaimID_t> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<EventClaimID_t, EventClaim_t, int, CDefLess<EventClaimID_t> >::Node_t, I = int, L = CUtlMap<EventClaimID_t, EventClaim_t, int, CDefLess<EventClaimID_t> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<EventClaimID_t, EventClaim_t, int, CDefLess<EventClaimID_t> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<EventID_t, CDACEventDefinition *, int, CDefLess<EventID_t> >::Node_t, int, CUtlMap<EventID_t, CDACEventDefinition *, int, CDefLess<EventID_t> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<EventID_t, CDACEventDefinition *, int, CDefLess<EventID_t> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<EventID_t, CDACEventDefinition *, int, CDefLess<EventID_t> >::Node_t, I = int, L = CUtlMap<EventID_t, CDACEventDefinition *, int, CDefLess<EventID_t> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<EventID_t, CDACEventDefinition *, int, CDefLess<EventID_t> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<EventNoDupeListID_t, const EventNoDupeList_t *, int, CDefLess<EventNoDupeListID_t> >::Node_t, int, CUtlMap<EventNoDupeListID_t, const EventNoDupeList_t *, int, CDefLess<EventNoDupeListID_t> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<EventNoDupeListID_t, const EventNoDupeList_t *, int, CDefLess<EventNoDupeListID_t> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<EventNoDupeListID_t, const EventNoDupeList_t *, int, CDefLess<EventNoDupeListID_t> >::Node_t, I = int, L = CUtlMap<EventNoDupeListID_t, const EventNoDupeList_t *, int, CDefLess<EventNoDupeListID_t> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<EventNoDupeListID_t, const EventNoDupeList_t *, int, CDefLess<EventNoDupeListID_t> >::Node_t, int>, int>]
-I CUtlRBTree<CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::PartialSOCache_t *, unsigned short, bool (*)(const GCSDK::SOID_t &, const GCSDK::SOID_t &)>::Node_t, unsigned short, CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::PartialSOCache_t *, unsigned short, bool (*)(const GCSDK::SOID_t &, const GCSDK::SOID_t &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::PartialSOCache_t *, unsigned short, bool (*)(const GCSDK::SOID_t &, const GCSDK::SOID_t &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::PartialSOCache_t *, unsigned short, bool (*)(const GCSDK::SOID_t &, const GCSDK::SOID_t &)>::Node_t, I = unsigned short, L = CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::PartialSOCache_t *, unsigned short, bool (*)(const GCSDK::SOID_t &, const GCSDK::SOID_t &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::PartialSOCache_t *, unsigned short, bool (*)(const GCSDK::SOID_t &, const GCSDK::SOID_t &)>::Node_t, unsigned short>, unsigned short>]
-I CUtlRBTree<CUtlMap<GCSDK::SOID_t, GCSDK::CGCClientSharedObjectCache *, unsigned short, bool (*)(const GCSDK::SOID_t &, const GCSDK::SOID_t &)>::Node_t, unsigned short, CUtlMap<GCSDK::SOID_t, GCSDK::CGCClientSharedObjectCache *, unsigned short, bool (*)(const GCSDK::SOID_t &, const GCSDK::SOID_t &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<GCSDK::SOID_t, GCSDK::CGCClientSharedObjectCache *, unsigned short, bool (*)(const GCSDK::SOID_t &, const GCSDK::SOID_t &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<GCSDK::SOID_t, GCSDK::CGCClientSharedObjectCache *, unsigned short, bool (*)(const GCSDK::SOID_t &, const GCSDK::SOID_t &)>::Node_t, I = unsigned short, L = CUtlMap<GCSDK::SOID_t, GCSDK::CGCClientSharedObjectCache *, unsigned short, bool (*)(const GCSDK::SOID_t &, const GCSDK::SOID_t &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<GCSDK::SOID_t, GCSDK::CGCClientSharedObjectCache *, unsigned short, bool (*)(const GCSDK::SOID_t &, const GCSDK::SOID_t &)>::Node_t, unsigned short>, unsigned short>]
-I CUtlRBTree<CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::SOVersion_t *, unsigned short, bool (*)(const GCSDK::SOID_t &, const GCSDK::SOID_t &)>::Node_t, unsigned short, CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::SOVersion_t *, unsigned short, bool (*)(const GCSDK::SOID_t &, const GCSDK::SOID_t &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::SOVersion_t *, unsigned short, bool (*)(const GCSDK::SOID_t &, const GCSDK::SOID_t &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::SOVersion_t *, unsigned short, bool (*)(const GCSDK::SOID_t &, const GCSDK::SOID_t &)>::Node_t, I = unsigned short, L = CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::SOVersion_t *, unsigned short, bool (*)(const GCSDK::SOID_t &, const GCSDK::SOID_t &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::SOVersion_t *, unsigned short, bool (*)(const GCSDK::SOID_t &, const GCSDK::SOID_t &)>::Node_t, unsigned short>, unsigned short>]
+I CUtlRBTree<CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::PartialSOCache_t *, int, CDefLess<GCSDK::SOID_t> >::Node_t, int, CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::PartialSOCache_t *, int, CDefLess<GCSDK::SOID_t> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::PartialSOCache_t *, int, CDefLess<GCSDK::SOID_t> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::PartialSOCache_t *, int, CDefLess<GCSDK::SOID_t> >::Node_t, I = int, L = CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::PartialSOCache_t *, int, CDefLess<GCSDK::SOID_t> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::PartialSOCache_t *, int, CDefLess<GCSDK::SOID_t> >::Node_t, int>, int>]
+I CUtlRBTree<CUtlMap<GCSDK::SOID_t, GCSDK::CGCClientSharedObjectCache *, int, CDefLess<GCSDK::SOID_t> >::Node_t, int, CUtlMap<GCSDK::SOID_t, GCSDK::CGCClientSharedObjectCache *, int, CDefLess<GCSDK::SOID_t> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<GCSDK::SOID_t, GCSDK::CGCClientSharedObjectCache *, int, CDefLess<GCSDK::SOID_t> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<GCSDK::SOID_t, GCSDK::CGCClientSharedObjectCache *, int, CDefLess<GCSDK::SOID_t> >::Node_t, I = int, L = CUtlMap<GCSDK::SOID_t, GCSDK::CGCClientSharedObjectCache *, int, CDefLess<GCSDK::SOID_t> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<GCSDK::SOID_t, GCSDK::CGCClientSharedObjectCache *, int, CDefLess<GCSDK::SOID_t> >::Node_t, int>, int>]
+I CUtlRBTree<CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::SOVersion_t *, int, CDefLess<GCSDK::SOID_t> >::Node_t, int, CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::SOVersion_t *, int, CDefLess<GCSDK::SOID_t> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::SOVersion_t *, int, CDefLess<GCSDK::SOID_t> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::SOVersion_t *, int, CDefLess<GCSDK::SOID_t> >::Node_t, I = int, L = CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::SOVersion_t *, int, CDefLess<GCSDK::SOID_t> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<GCSDK::SOID_t, GCSDK::CGCClient::SOVersion_t *, int, CDefLess<GCSDK::SOID_t> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<int, AssetModifier_t, int, CDefLess<int> >::Node_t, int, CUtlMap<int, AssetModifier_t, int, CDefLess<int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, AssetModifier_t, int, CDefLess<int> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<int, AssetModifier_t, int, CDefLess<int> >::Node_t, I = int, L = CUtlMap<int, AssetModifier_t, int, CDefLess<int> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, AssetModifier_t, int, CDefLess<int> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<int, attachedparticlesystem_t, int, CDefLess<int> >::Node_t, int, CUtlMap<int, attachedparticlesystem_t, int, CDefLess<int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, attachedparticlesystem_t, int, CDefLess<int> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<int, attachedparticlesystem_t, int, CDefLess<int> >::Node_t, I = int, L = CUtlMap<int, attachedparticlesystem_t, int, CDefLess<int> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, attachedparticlesystem_t, int, CDefLess<int> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<int, autograph_t, int, CDefLess<int> >::Node_t, int, CUtlMap<int, autograph_t, int, CDefLess<int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, autograph_t, int, CDefLess<int> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<int, autograph_t, int, CDefLess<int> >::Node_t, I = int, L = CUtlMap<int, autograph_t, int, CDefLess<int> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, autograph_t, int, CDefLess<int> >::Node_t, int>, int>]
@@ -15166,7 +15162,7 @@ I CUtlRBTree<CUtlMap<unsigned int, PlayerSlot_t, int, CDefLess<unsigned int> >::
 I CUtlRBTree<CUtlMap<unsigned int, Rule *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short, CUtlMap<unsigned int, Rule *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, Rule *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<unsigned int, Rule *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, I = unsigned short, L = CUtlMap<unsigned int, Rule *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, Rule *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<unsigned int, unsigned char, int, CDefLess<unsigned int> >::Node_t, int, CUtlMap<unsigned int, unsigned char, int, CDefLess<unsigned int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned char, int, CDefLess<unsigned int> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<unsigned int, unsigned char, int, CDefLess<unsigned int> >::Node_t, I = int, L = CUtlMap<unsigned int, unsigned char, int, CDefLess<unsigned int> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned char, int, CDefLess<unsigned int> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<unsigned int, unsigned int, int, CDefLess<unsigned int> >::Node_t, int, CUtlMap<unsigned int, unsigned int, int, CDefLess<unsigned int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned int, int, CDefLess<unsigned int> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<unsigned int, unsigned int, int, CDefLess<unsigned int> >::Node_t, I = int, L = CUtlMap<unsigned int, unsigned int, int, CDefLess<unsigned int> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned int, int, CDefLess<unsigned int> >::Node_t, int>, int>]
-I CUtlRBTree<CUtlMap<unsigned int, unsigned long long, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short, CUtlMap<unsigned int, unsigned long long, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned long long, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<unsigned int, unsigned long long, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, I = unsigned short, L = CUtlMap<unsigned int, unsigned long long, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned long long, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short>, unsigned short>]
+I CUtlRBTree<CUtlMap<unsigned int, unsigned long long, int, CDefLess<unsigned int> >::Node_t, int, CUtlMap<unsigned int, unsigned long long, int, CDefLess<unsigned int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned long long, int, CDefLess<unsigned int> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<unsigned int, unsigned long long, int, CDefLess<unsigned int> >::Node_t, I = int, L = CUtlMap<unsigned int, unsigned long long, int, CDefLess<unsigned int> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned long long, int, CDefLess<unsigned int> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<unsigned short, const CEconItemDefinition *, int, CDefLess<unsigned short> >::Node_t, int, CUtlMap<unsigned short, const CEconItemDefinition *, int, CDefLess<unsigned short> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned short, const CEconItemDefinition *, int, CDefLess<unsigned short> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<unsigned short, const CEconItemDefinition *, int, CDefLess<unsigned short> >::Node_t, I = int, L = CUtlMap<unsigned short, const CEconItemDefinition *, int, CDefLess<unsigned short> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned short, const CEconItemDefinition *, int, CDefLess<unsigned short> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<void *, CThreadSafeMultiMemoryPool::RawAllocation_t, int, bool (*)(void *const &, void *const &)>::Node_t, int, CUtlMap<void *, CThreadSafeMultiMemoryPool::RawAllocation_t, int, bool (*)(void *const &, void *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<void *, CThreadSafeMultiMemoryPool::RawAllocation_t, int, bool (*)(void *const &, void *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<void *, CThreadSafeMultiMemoryPool::RawAllocation_t, int, bool (*)(void *const &, void *const &)>::Node_t, I = int, L = CUtlMap<void *, CThreadSafeMultiMemoryPool::RawAllocation_t, int, bool (*)(void *const &, void *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<void *, CThreadSafeMultiMemoryPool::RawAllocation_t, int, bool (*)(void *const &, void *const &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<WeaponSound_t, CUtlString, unsigned short, bool (*)(const WeaponSound_t &, const WeaponSound_t &)>::Node_t, unsigned short, CUtlMap<WeaponSound_t, CUtlString, unsigned short, bool (*)(const WeaponSound_t &, const WeaponSound_t &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<WeaponSound_t, CUtlString, unsigned short, bool (*)(const WeaponSound_t &, const WeaponSound_t &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<WeaponSound_t, CUtlString, unsigned short, bool (*)(const WeaponSound_t &, const WeaponSound_t &)>::Node_t, I = unsigned short, L = CUtlMap<WeaponSound_t, CUtlString, unsigned short, bool (*)(const WeaponSound_t &, const WeaponSound_t &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<WeaponSound_t, CUtlString, unsigned short, bool (*)(const WeaponSound_t &, const WeaponSound_t &)>::Node_t, unsigned short>, unsigned short>]
@@ -15263,10 +15259,9 @@ iGroup
 	*ih*
 I-!H#
 (ih8)\
+(ih8	\
 )ih8?
-(ih8i\
-(ih8I\
-(Ih8i\
+(Ih8)\
 )ih8Ii(8
 (ih8*ij8+ik8,il8-im8.in8/io80ip81iq82ir8"ib8#ic8$id8%ie8&if8)i`8
 IHandleEntity
@@ -15278,7 +15273,6 @@ I("hq
 +ihxh=@
 *ihx(Q*
 ii8#hi8
-ii8l\
 iii8_
 Iii8*
 %i %i %i %i
@@ -15292,7 +15286,6 @@ Ii+x!
 	iix?!4k
 	iix?!4k`
 	iix?!5k
-	iix?!5k`
 	iix?!6k
 	iix?!6k`
 	iix?!6k@
@@ -15316,16 +15309,15 @@ i*J)(
 I!@)J	@
 *ij8+ik8,il8-im8.in8/io80ip8(ih8
 ij,8kj*8mj(8h&
-iJ\9HU
 +i-`JG
 ijj8?
+iJR9h;
 ijw8*
 )ijx?
 *)ijx?
 *ijx_
 )ijx?!3k
 )ijx?!4k
-)ijx?!5k`
 *ijx_!5k
 )ijx?!6k
 ijx_!6k
@@ -16129,7 +16121,6 @@ Ip@y?
 IP@y?
 i>Pyh
 IQuickTime001
-iqx?"/k@
 	)@)ir
 ir8nhr8?
 IRagdoll
@@ -16426,13 +16417,12 @@ Item Whitelist file '%s' could not be found. All items will be allowed.
 item_whitelist.txt
 !ITestScriptMgr
 IToolObject
+i*U9h>
 iUnlockedSentence
 [i:%u:%u]
 [I:%u:%u]
 !iv8?|
-)iv8?
 )iv8i
-	*iVA
 iValue
 iV@y(
 iV@yi
@@ -16444,19 +16434,16 @@ I@-!X"
 i*x*C
 i)xh.@
 i)xh"@
-i)xh2A
 i)xh6A
 i)xhBF
 i)xh~F
 i)xhF@
-i)xhFA
 i)xhjF
 i)xhVF
 i*xh>@yt:
 i*xh>@yu:
 ixhy*xh2N
 ixhy*xh"N
-i)xhZA
 *+i,xi
 *i-xi>@yj:
 *i,xi>@yj:
@@ -16477,67 +16464,65 @@ i"Yy?
 @I@z)
 iZA9	
 <j.?)
-!	@)]j
 ('J)*[@
 ))+J)
 @ @-J
 @-J	,
 @-J	@
 J-` $
-j08a(
-j08n=
-j08p=
+j08!(
+j08.=
+j080=
 j >= 0 && j < nResultBufSize
 J0@y_
 J0@yI
 J0@yk
-j18q=
-j1xq(
-j28q=
-j28r=
-j28r>
+j181=
+j1x1(
+j281=
+j282=
+j282>
 j2@yh
 j48(%
 j48	C
 j48t^@
 j4xH;@
 j58(%
-j58_4
 j58h9
 j58H9
 j58hf@9(
 J5@y_
+j68hM
 j68u*@
 j68v&@
 j(8(~
-j(8($
-j(8(%
+j(8('
 j)8('
-j)8)'
-j)8	 
 j)8	?
 j)8	"
 j)8	$
 j)8	*
-j*8	?
-j+8+.
+j*8*'
+j*8*(
+j+8+'
 $J)!8
 j)8	2
 j)8	7
-j(8h'
-j)8h'
+j88FR
+j(8h 
 j(8Hd
-j;8hL
+j;8HL
 j(8HL
 j(8hM
+j)8i 
 j)8ID
 j)8iL
+j)8iM
 j)8Ir
 j)8`j
-j*8j'
-j*8j(
+j*8j 
+j+8jG
 j(8jj)8`
-j+8k'
 j-8K,
 j+8K:
 j+8Kd
@@ -16545,6 +16530,8 @@ j+8KV
 j,8LH
 j,8LL
 j,8Lr
+j-8m 
+j-8m.
 j-8M^
 j-8M,
 j-8MB
@@ -16553,7 +16540,6 @@ j-8Mz
 j.8Nl
 j.8NP
 j)8)p
-j)8)Y
 j)8z&
 j)8	Z
 J!@9_
@@ -16590,7 +16576,6 @@ jaw_tilt_controller
 j"B))
 J-B(.
 JB9hJ
-jbL9(
 J-cb@
 J-dj@
 (*j~E
@@ -16617,12 +16602,11 @@ JiMIJ+
 JIMIJ*
 ji)x)	
 jj(8(
-jj+8	q
+jj+8	a
 j!JJ+
 jjj8h
 j!JJK
 !JJK|
-jj)x8c
 	J"}	K
 )+J)-#K)+3L)
 Jki8_5
@@ -16696,15 +16680,15 @@ jV@y)|@
 jV@y!y|
 jV@y:yt
 jV@y!yt
-j)x)'
+j-x-(
 j)x	@
 j)x		
+j*x*'
 J!_x_!5k
-j(xH 
+j(xh!
 j)x	H
+j(xhG
 j(xHH
-j*xj'
-j-xm(
 j-xM 
 j.xN.
 j)x	O
@@ -16718,7 +16702,6 @@ j@y	y5x
 	*jz-
 _!(k#
 *_  k
-*?!(k
 &@)k	
 	*_!;k
 	*_!(k
@@ -16736,16 +16719,19 @@ k2	)j~
 k2Q)m
 *k2@y
 ?k58D
-?k68JP
-k78AF
+?k68&a
+k68j>
+*?k78!f
 ?k78h
 k78h4
-*?k78rQ
 	K!8"
-?k88zS
+_k88u
+?k88ZS
 k(8vV@
 ?){K9_
 @){K9_
+	!K9	
+	K9c2
 k9J{c>
 K	\9K
 K9	S)
@@ -16767,6 +16753,7 @@ $k_AddSocket_Failed_FailedToAddSocket
 'k_AddSocket_Failed_ItemCannotBeSocketed
  k_AddSocket_Failed_ToolIsInvalid
 k_AddSocket_Succeeded
+KAJ9h
 kAKJJ
 kAKJk
 ?k,am
@@ -17479,7 +17466,7 @@ Ki)8)
 	kI9@
 kickid %d CBaseEntity::InputKill()
 ?kIG9
-Kih8J\
+Kih8*\
 Kih8Ki)8Mi(8
 kill_count
 killeater
@@ -17630,6 +17617,7 @@ k	@y)
 Kykx)
 Kykx5
 Ky)x)
+!	@)=l
 l-@),-
 L-`"$
 L-`"%
@@ -17639,16 +17627,16 @@ L: %.2f deg
 l4d_airport05_runway
 l5@yk
  @-l6M-
-@-l6M-
 L7D)N+@
 }l7f~
 "L9`2
-L9k"C
+L9k:C
 l9	SJM,
 L9	Sk
 L9	SkM,
 la@9L	
 L	A9mC
+LA9+uN
 label
 Label
 labelled_debug_helper_arc_segments
@@ -17824,7 +17812,7 @@ LightStyles
 lighttype
 LightType_t
 lightworld
-lih8k\
+lih8K\
 LiixiID
 lij8?
 Lik8m
@@ -18105,6 +18093,7 @@ lycan_wolf_spawn_shift
 LYkxk
 ly)x)
 ?lzPP
+!	@)!m
 @=#?m\
 @m"	@
 +M)	)	)
@@ -18114,7 +18103,6 @@ m1B)n
 m1E)n
 :m2OS
 :m@)5eA)6qB)
-M9!5A
 M9brC
 M9h~C
 M9hzC
@@ -18122,7 +18110,6 @@ m%@9i)
 M9l6F
 M9m6F
 M9n6F
-\-.MA
 m	A9j"
 m_acceleration
 machine_name
@@ -18477,6 +18464,7 @@ Max( %s, %s )
 max_stacks
 maxThenAnyDispatchDist
 maxTierForLevel3
+Max time to wait after combat has ended and after dac_post_combat_wait to wait for projectiles/modifiers to clear up.
 maxToTakeToLevel3
 maxUnitTier
 max_update_time_micros
@@ -20595,7 +20583,6 @@ m_keyPoints
 m_keyPoints[0]
 m_keyPoints[1]
 mktime
-!	@)mL
 m_ladderSurfaceProps
 m_LastCmd
 m_lastDamageAmount
@@ -21388,6 +21375,7 @@ modifier_ignore_max_ms
 modifier_inventor
 modifier_item_pipe_barrier
 modifier_juggernaut_blade_fury
+modifier_juggernaut_blade_fury_damagewatcher
 modifier_keeper_of_the_light_will_o_wisp
 modifier_kill
 modifier_knight
@@ -21699,6 +21687,7 @@ MODIFIER_STATE_MAGIC_IMMUNE
 MODIFIER_STATE_MUTED
 MODIFIER_STATE_NIGHTMARED
 MODIFIER_STATE_NO_HEALTH_BAR
+MODIFIER_STATE_NO_ROUND_DAMAGE
 MODIFIER_STATE_NO_TEAM_MOVE_TO
 MODIFIER_STATE_NO_TEAM_SELECT
 MODIFIER_STATE_NOT_ON_MINIMAP
@@ -22788,13 +22777,10 @@ m_zfriction
 m_zmax
 m_zmin
 @-n	@
-!	@)-N
-!	@)%N
 ?[]N	
 'N(  
 "N(  
 $N(  
-#()(N
 #N(  
 #N)	}	
 %N(  
@@ -23278,7 +23264,7 @@ nav_unmark; nav_mark %d; nav_warp_to_mark;
 nav_unmark; nav_mark ladder %d; nav_warp_to_mark
 nav_use_place
 nav_use_place %s
-nav_validate
+@nav_validate
 NavVertsPerPoly
 nav_volume_debug
 nav_warp_to_mark
@@ -23975,9 +23961,10 @@ O6`R@
 O6v2@
 o6vB@
 o-!8#
-"O9a&
+"O9A&
 O9`*B
 ? !o^A?
+O	A*9
 o/A-m'B-n+@-`C
 objc_class_prefix
 object_data
@@ -24164,7 +24151,6 @@ ortholightwidth
 OSCILLATE_POSE_PARAMETERS
 os_type
 OSType
-!	@)OT
 ?o=Td
 other
 otherentity
@@ -24223,7 +24209,7 @@ o}Xot#
 %O?ZE
 ?<-?p
 @-p	@
-!	@)	P
+!	@)~P
 @-P	@
 p2A-r
 p;4,F
@@ -25440,15 +25426,15 @@ py_generic_services
 -	-	Q
 @-'@@-Q
 Q-   
-	q29_
-q49(}
+	Q19_a19
 q;4,F
-	Q79_a79
+	q89_
 Q8q(2
-	q!9`
+	q#9`
 )Q@9)@
 Q"@9?
-(q*91e
+Q9_9	
+	Q-9_a-9
 	qA9?
 qangle
 QAngle-world
@@ -25456,11 +25442,11 @@ QAngle-world
 Q-bND
 ?@@qC
 QD-{(#
-	QD9I
 *QD9j
 q	DC9
 qD	@za
 ?qe?A
+	QF9I
 QH@-$
 q?h(8
 ?"QhY
@@ -25522,7 +25508,6 @@ q$;@z
 r-@	*
 "@:R".
 r0@GP!
-r	1'9_A'9
 >r3\9
 ?r4GV~	
 R5i98
@@ -25612,7 +25597,6 @@ razor
 RB9hR
 R~~C@
 r_cacheSequenceData
-`RCy0
 Reached an unintended state: CPPTYPE_MESSAGE
 Reached impossible case in HasBit().
 Read: Attempted to read from a write-only file
@@ -26133,6 +26117,7 @@ RoutingMethod
 RP_PAUSE
 RP_TOGGLEPAUSE
 RP_UNPAUSE
+r	Q*9_a*9
 rQ@y1
 rr_AddDecisionRule
 -rr_allow_reload
@@ -26179,13 +26164,13 @@ RunTimeOfDayCommand
 	R)v4N
 r_VehicleViewDampen
 r@y`&@
-`R@y|
-`R@yF
+`R@y+
 `R@yh
 R@yHq
 r@yhr
 R	yi2
 ryjj8
+`R@y@u
 R	yu2
 --- %s: 
 "%s" 
@@ -26200,7 +26185,6 @@ R	yu2
 %s+--
 +++ %s: 
 s)~+@
-!	@)%S
 ?;? +S'
 S_@)\
 )`>s0
@@ -26249,9 +26233,9 @@ s7>Ip
 %s : %8.2f: resumed
 %s : %8.2f:  start %s [%s]
 %s : %8.2f: waiting scene to become interruptible
-*?S%9
+*?S'9
 S@9h"
-(S%9j
+(S'9j
 (SA9(
 %s:  added global entity %d %s (%s)
 sale_price
@@ -26839,7 +26823,6 @@ Selects areas with the given attribute.
 Selects the current Area and all Areas connected to it, recursively. To clear a selection, use this command again.
 !self
 self_bonus
-self_damage_bonus_pct
 self_dmg_pct
 sellObsolete
 sell_unit
@@ -28062,7 +28045,7 @@ start_enabled
 startentity
 start %f %f %f
 startframe
-StartGameFromSave Error: %s
+StartGameFromAutoSave Error: %s
 StartGravity
 Starting analysis steps.
 starting_charges
@@ -28615,8 +28598,6 @@ Switches to navmesh for the specified spawngroup
 Switching local lobby state to %s from %s
 Switching to server state %s from %s based upon the lobby being updated to this state
 %s (%x) spoke %s (%f)
-s@y!;
-S@y!;
 Symbol name "
 symbols
 Synchronously spawn an entity group from a list of spawn tables.
@@ -28942,12 +28923,12 @@ The server tries to keep each player's m_nTickBase withing this many msecs of th
 theta
 The type parameter T in RepeatedFieldRef<T> API doesn't match 
 Th~Ey
-Th>Ey
 they_hear_you
 Thf@9
 Thf@9(
 Th"F9
 ThF@9h
+Th"F9{Z
 ThFC9
 Thf@y
 thick
@@ -29001,7 +28982,7 @@ Thrx9
 ThR@y
 ThRy9
 TH;	S(O(
-Th*U9
+Th*U9TI
 ThV@yh
 Th*W9v
 Th~@y
@@ -29111,7 +29092,7 @@ Tj"@9J
 Tj9	S
 t"@-j.A-t+4
 TjB@y
-TjCW9j
+TjCW9J
 Tjf@y_!7kC
 TjkA9k'@
 TjV@y_
@@ -29129,7 +29110,6 @@ TKE_x
 Tkf@y
 TKih8
 tkU)`
-Tk&@y
 Tl	@9
 TL!@9
 TL	@9kA
@@ -29529,6 +29509,7 @@ U7r8Ne
 u9% &
 U9i2V9
 ]u9n5;> )"
+U@9@SF
 %u[%d]
 uD-@	D-
 udp_connect_ip
@@ -29577,7 +29558,6 @@ uint8
 	uint_data
 uint_value
 'U)jj
-!	@)uL
 ultra_rare
 UM_AchievementEvent
 UM_AmmoDenied
@@ -29700,6 +29680,7 @@ UnitDamageRecord
 unitdraftpools
 UnitFilterResult
 unit_id
+unitID
 unit_killed
 unit_limit_bonus
 UnitRank
@@ -29994,6 +29975,7 @@ uYLl>
 uz9GxV
 !V @;
 	!@)V
+v2N9a3
 v8array
 v8callback
 v8object
@@ -30624,6 +30606,7 @@ V@yh$
 V@y_! k
 V@y!yv
 v>zlK9T
+!	@).W
 @W?,}
 W)` !
 W3|Uxa
@@ -30894,13 +30877,13 @@ Writes the selected set to disk for merging into another mesh via nav_merge_mesh
 WriteToBuffer Message %s is not initialized! Probably missing required fields!
 Writing kdTree with %d triangles
 wrong submessage type
-!	@)WT
 ?%WV?
 W`@-Y
 WY@)U	@
 ?Wzm6V"
 @%@x	
 x]/(@
+!	@)`X
 X-!("
 \x%02x
 X@)`2G
@@ -30938,7 +30921,6 @@ xfF-V+6
 X@)`&G
 ?xG!$fQ
 xi*8*i@9J
-xIQ@9+
 xL9-C
 	xp_earned
 x(Q@9
@@ -30946,7 +30928,7 @@ x(Q@9
 xT)~)>
 X-V:;
 X\V@%
-)x^	)vC
+)x^	)VC
 x*;XZ
 [xYq|m
 <) @y
@@ -30959,7 +30941,7 @@ x*;XZ
 *%@y(
 		@y_
 		@y?
-"	y0i
+"	y0q
 `>Y1\
 ,y=35
 @y?!4kC
@@ -30989,7 +30971,6 @@ yes - via input
 &@yh&
 (yH*)<
 yh6Ayt:
-yh6Eyt:
 yh6@yt:
 yh6@yu:
 yh*^9
@@ -31126,7 +31107,6 @@ yuB@y
 ?#YvwS
 YWA)H/@
 @y)/@x
-"@y'X
 Y`x($
 y|x(E@
 *y(xj

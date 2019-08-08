@@ -83,7 +83,10 @@ public class PatchSystem {
     ArrayList<PendingDownload> m_vecPendingDownloads = new ArrayList<>();
 
     private class CAsyncDownloadManagerTask extends AsyncTask<Void, Void, Boolean> {
+        private boolean m_bEnqueueError;
+
         private CAsyncDownloadManagerTask() {
+            this.m_bEnqueueError = false;
         }
 
         /* access modifiers changed from: protected */
@@ -141,18 +144,28 @@ public class PatchSystem {
                 request.setTitle(pendingDownload.strFilePath);
                 request.setDescription(pendingDownload.strFilePath);
                 request.setNotificationVisibility(0);
-                pendingDownload.nDownloadID = downloadManager.enqueue(request);
                 synchronized (PatchSystem.this.m_mapPendingDownloads) {
-                    PatchSystem.this.m_mapPendingDownloads.put(Long.valueOf(pendingDownload.nDownloadID), pendingDownload);
-                    PatchSystem.this.m_nTotalDownloadBytes = PatchSystem.this.m_nTotalDownloadBytes + pendingDownload.nByteSize;
+                    try {
+                        pendingDownload.nDownloadID = downloadManager.enqueue(request);
+                        PatchSystem.this.m_mapPendingDownloads.put(Long.valueOf(pendingDownload.nDownloadID), pendingDownload);
+                        PatchSystem.this.m_nTotalDownloadBytes = PatchSystem.this.m_nTotalDownloadBytes + pendingDownload.nByteSize;
+                    } catch (Throwable th) {
+                        this.m_bEnqueueError = true;
+                        StringBuilder sb2 = new StringBuilder();
+                        sb2.append("Download Queue Failed: ");
+                        sb2.append(pendingDownload.strURL);
+                        sb2.append(" with exception: ");
+                        sb2.append(th.getMessage());
+                        Log.i("com.valvesoftware.PatchSystem", sb2.toString());
+                    }
                 }
-                StringBuilder sb2 = new StringBuilder();
-                sb2.append("Download Queued: ");
-                sb2.append(pendingDownload.strURL);
-                sb2.append(" (DownloadID: ");
-                sb2.append(String.valueOf(pendingDownload.nDownloadID));
-                sb2.append(")");
-                Log.i("com.valvesoftware.PatchSystem", sb2.toString());
+                StringBuilder sb3 = new StringBuilder();
+                sb3.append("Download Queued: ");
+                sb3.append(pendingDownload.strURL);
+                sb3.append(" (DownloadID: ");
+                sb3.append(String.valueOf(pendingDownload.nDownloadID));
+                sb3.append(")");
+                Log.i("com.valvesoftware.PatchSystem", sb3.toString());
             }
             PatchSystem.this.m_vecPendingDownloads.clear();
             return Boolean.valueOf(true);
@@ -161,7 +174,11 @@ public class PatchSystem {
         /* access modifiers changed from: protected */
         public void onPostExecute(Boolean bool) {
             super.onPostExecute(bool);
-            PatchSystem.this.SetState(EState.AssetsDownloading);
+            if (this.m_bEnqueueError) {
+                PatchSystem.this.WaitForUserInput(EState.Error, EErrorCode.QueueDownload);
+            } else {
+                PatchSystem.this.SetState(EState.AssetsDownloading);
+            }
         }
     }
 
@@ -214,6 +231,7 @@ public class PatchSystem {
         Manifest,
         Download,
         Storage,
+        QueueDownload,
         Unknown
     }
 
@@ -249,7 +267,8 @@ public class PatchSystem {
         }
     }
 
-    private void WaitForUserInput(EState eState, EErrorCode eErrorCode) {
+    /* access modifiers changed from: private */
+    public void WaitForUserInput(EState eState, EErrorCode eErrorCode) {
         this.m_eUserResponse = EUserDownloadResponse.Waiting;
         this.m_nErrorCode = eErrorCode;
         SetState(eState);
@@ -257,20 +276,18 @@ public class PatchSystem {
     }
 
     private void ClearPendingDownloads() {
-        int i;
         File[] listFiles;
         Context applicationContext = JNI_Environment.m_application.getApplicationContext();
         DownloadManager downloadManager = (DownloadManager) applicationContext.getSystemService("download");
         Query query = new Query();
         query.setFilterByStatus(31);
         Cursor query2 = downloadManager.query(query);
-        while (true) {
-            if (!query2.moveToNext()) {
-                break;
+        if (query2 != null) {
+            while (query2.moveToNext()) {
+                downloadManager.remove(new long[]{query2.getLong(query2.getColumnIndex("_id"))});
             }
-            downloadManager.remove(new long[]{query2.getLong(query2.getColumnIndex("_id"))});
+            query2.close();
         }
-        query2.close();
         for (File file : applicationContext.getExternalCacheDir().listFiles()) {
             if (file.getName().startsWith("download_") && file.getName().endsWith(".tmp")) {
                 boolean delete = file.delete();
@@ -763,10 +780,12 @@ public class PatchSystem {
             Query query = new Query();
             query.setFilterById(jArr);
             Cursor query2 = downloadManager.query(query);
-            while (query2.moveToNext()) {
-                j += query2.getLong(query2.getColumnIndex("bytes_so_far"));
+            if (query2 != null) {
+                while (query2.moveToNext()) {
+                    j += query2.getLong(query2.getColumnIndex("bytes_so_far"));
+                }
+                query2.close();
             }
-            query2.close();
             float f = ((float) j) / ((float) this.m_nTotalDownloadBytes);
             return f;
         }

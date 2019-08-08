@@ -45,96 +45,6 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
     protected ImageView m_progressBarFill = null;
     protected TextView m_progressPctLabel = null;
 
-    /* renamed from: com.valvesoftware.underlords.applauncher$7 reason: invalid class name */
-    static /* synthetic */ class AnonymousClass7 {
-        static final /* synthetic */ int[] $SwitchMap$com$valvesoftware$PatchSystem$EErrorCode = new int[EErrorCode.values().length];
-
-        /* JADX WARNING: Can't wrap try/catch for region: R(22:0|(2:1|2)|3|(2:5|6)|7|(2:9|10)|11|(2:13|14)|15|17|18|(2:19|20)|21|23|24|25|26|27|28|29|30|(3:31|32|34)) */
-        /* JADX WARNING: Can't wrap try/catch for region: R(26:0|1|2|3|(2:5|6)|7|(2:9|10)|11|13|14|15|17|18|(2:19|20)|21|23|24|25|26|27|28|29|30|31|32|34) */
-        /* JADX WARNING: Can't wrap try/catch for region: R(27:0|1|2|3|5|6|7|(2:9|10)|11|13|14|15|17|18|(2:19|20)|21|23|24|25|26|27|28|29|30|31|32|34) */
-        /* JADX WARNING: Failed to process nested try/catch */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:19:0x0040 */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:25:0x005e */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:27:0x0068 */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:29:0x0072 */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:31:0x007c */
-        static {
-            /*
-                com.valvesoftware.PatchSystem$EState[] r0 = com.valvesoftware.PatchSystem.EState.values()
-                int r0 = r0.length
-                int[] r0 = new int[r0]
-                $SwitchMap$com$valvesoftware$PatchSystem$EState = r0
-                r0 = 1
-                int[] r1 = $SwitchMap$com$valvesoftware$PatchSystem$EState     // Catch:{ NoSuchFieldError -> 0x0014 }
-                com.valvesoftware.PatchSystem$EState r2 = com.valvesoftware.PatchSystem.EState.ManifestDownloading     // Catch:{ NoSuchFieldError -> 0x0014 }
-                int r2 = r2.ordinal()     // Catch:{ NoSuchFieldError -> 0x0014 }
-                r1[r2] = r0     // Catch:{ NoSuchFieldError -> 0x0014 }
-            L_0x0014:
-                r1 = 2
-                int[] r2 = $SwitchMap$com$valvesoftware$PatchSystem$EState     // Catch:{ NoSuchFieldError -> 0x001f }
-                com.valvesoftware.PatchSystem$EState r3 = com.valvesoftware.PatchSystem.EState.APKOutOfDateWaitingOnUser     // Catch:{ NoSuchFieldError -> 0x001f }
-                int r3 = r3.ordinal()     // Catch:{ NoSuchFieldError -> 0x001f }
-                r2[r3] = r1     // Catch:{ NoSuchFieldError -> 0x001f }
-            L_0x001f:
-                r2 = 3
-                int[] r3 = $SwitchMap$com$valvesoftware$PatchSystem$EState     // Catch:{ NoSuchFieldError -> 0x002a }
-                com.valvesoftware.PatchSystem$EState r4 = com.valvesoftware.PatchSystem.EState.APKDownloadedWaitingOnUser     // Catch:{ NoSuchFieldError -> 0x002a }
-                int r4 = r4.ordinal()     // Catch:{ NoSuchFieldError -> 0x002a }
-                r3[r4] = r2     // Catch:{ NoSuchFieldError -> 0x002a }
-            L_0x002a:
-                r3 = 4
-                int[] r4 = $SwitchMap$com$valvesoftware$PatchSystem$EState     // Catch:{ NoSuchFieldError -> 0x0035 }
-                com.valvesoftware.PatchSystem$EState r5 = com.valvesoftware.PatchSystem.EState.ManifestDownloadedWaitingOnUser     // Catch:{ NoSuchFieldError -> 0x0035 }
-                int r5 = r5.ordinal()     // Catch:{ NoSuchFieldError -> 0x0035 }
-                r4[r5] = r3     // Catch:{ NoSuchFieldError -> 0x0035 }
-            L_0x0035:
-                r4 = 5
-                int[] r5 = $SwitchMap$com$valvesoftware$PatchSystem$EState     // Catch:{ NoSuchFieldError -> 0x0040 }
-                com.valvesoftware.PatchSystem$EState r6 = com.valvesoftware.PatchSystem.EState.AssetsDownloading     // Catch:{ NoSuchFieldError -> 0x0040 }
-                int r6 = r6.ordinal()     // Catch:{ NoSuchFieldError -> 0x0040 }
-                r5[r6] = r4     // Catch:{ NoSuchFieldError -> 0x0040 }
-            L_0x0040:
-                int[] r5 = $SwitchMap$com$valvesoftware$PatchSystem$EState     // Catch:{ NoSuchFieldError -> 0x004b }
-                com.valvesoftware.PatchSystem$EState r6 = com.valvesoftware.PatchSystem.EState.Error     // Catch:{ NoSuchFieldError -> 0x004b }
-                int r6 = r6.ordinal()     // Catch:{ NoSuchFieldError -> 0x004b }
-                r7 = 6
-                r5[r6] = r7     // Catch:{ NoSuchFieldError -> 0x004b }
-            L_0x004b:
-                com.valvesoftware.PatchSystem$EErrorCode[] r5 = com.valvesoftware.PatchSystem.EErrorCode.values()
-                int r5 = r5.length
-                int[] r5 = new int[r5]
-                $SwitchMap$com$valvesoftware$PatchSystem$EErrorCode = r5
-                int[] r5 = $SwitchMap$com$valvesoftware$PatchSystem$EErrorCode     // Catch:{ NoSuchFieldError -> 0x005e }
-                com.valvesoftware.PatchSystem$EErrorCode r6 = com.valvesoftware.PatchSystem.EErrorCode.None     // Catch:{ NoSuchFieldError -> 0x005e }
-                int r6 = r6.ordinal()     // Catch:{ NoSuchFieldError -> 0x005e }
-                r5[r6] = r0     // Catch:{ NoSuchFieldError -> 0x005e }
-            L_0x005e:
-                int[] r0 = $SwitchMap$com$valvesoftware$PatchSystem$EErrorCode     // Catch:{ NoSuchFieldError -> 0x0068 }
-                com.valvesoftware.PatchSystem$EErrorCode r5 = com.valvesoftware.PatchSystem.EErrorCode.Manifest     // Catch:{ NoSuchFieldError -> 0x0068 }
-                int r5 = r5.ordinal()     // Catch:{ NoSuchFieldError -> 0x0068 }
-                r0[r5] = r1     // Catch:{ NoSuchFieldError -> 0x0068 }
-            L_0x0068:
-                int[] r0 = $SwitchMap$com$valvesoftware$PatchSystem$EErrorCode     // Catch:{ NoSuchFieldError -> 0x0072 }
-                com.valvesoftware.PatchSystem$EErrorCode r1 = com.valvesoftware.PatchSystem.EErrorCode.Download     // Catch:{ NoSuchFieldError -> 0x0072 }
-                int r1 = r1.ordinal()     // Catch:{ NoSuchFieldError -> 0x0072 }
-                r0[r1] = r2     // Catch:{ NoSuchFieldError -> 0x0072 }
-            L_0x0072:
-                int[] r0 = $SwitchMap$com$valvesoftware$PatchSystem$EErrorCode     // Catch:{ NoSuchFieldError -> 0x007c }
-                com.valvesoftware.PatchSystem$EErrorCode r1 = com.valvesoftware.PatchSystem.EErrorCode.Storage     // Catch:{ NoSuchFieldError -> 0x007c }
-                int r1 = r1.ordinal()     // Catch:{ NoSuchFieldError -> 0x007c }
-                r0[r1] = r3     // Catch:{ NoSuchFieldError -> 0x007c }
-            L_0x007c:
-                int[] r0 = $SwitchMap$com$valvesoftware$PatchSystem$EErrorCode     // Catch:{ NoSuchFieldError -> 0x0086 }
-                com.valvesoftware.PatchSystem$EErrorCode r1 = com.valvesoftware.PatchSystem.EErrorCode.Unknown     // Catch:{ NoSuchFieldError -> 0x0086 }
-                int r1 = r1.ordinal()     // Catch:{ NoSuchFieldError -> 0x0086 }
-                r0[r1] = r4     // Catch:{ NoSuchFieldError -> 0x0086 }
-            L_0x0086:
-                return
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.underlords.applauncher.AnonymousClass7.<clinit>():void");
-        }
-    }
-
     private TextView createTextfield(String str) {
         TextView textView = new TextView(this);
         textView.setTypeface(this.m_Font);
@@ -399,11 +309,33 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
     }
 
     private void setupErrorScreen(EErrorCode eErrorCode) {
+        String str;
         String GetStringSafe = Resources.GetStringSafe("Native_DownloadError");
-        int i = AnonymousClass7.$SwitchMap$com$valvesoftware$PatchSystem$EErrorCode[eErrorCode.ordinal()];
-        String str = "Native_DownloadErrorUnknown";
-        String str2 = i != 1 ? i != 2 ? i != 3 ? i != 4 ? i != 5 ? null : Resources.GetStringSafe(str) : Resources.GetStringSafe("Native_DownloadErrorStorage") : Resources.GetStringSafe("Native_DownloadErrorDownload") : Resources.GetStringSafe("Native_DownloadErrorManifest") : Resources.GetStringSafe(str);
-        LinearLayout linearLayout = setupCommonUI(GetStringSafe, str2, false);
+        String str2 = "Native_DownloadErrorUnknown";
+        switch (eErrorCode) {
+            case None:
+                str = Resources.GetStringSafe(str2);
+                break;
+            case Manifest:
+                str = Resources.GetStringSafe("Native_DownloadErrorManifest");
+                break;
+            case Download:
+                str = Resources.GetStringSafe("Native_DownloadErrorDownload");
+                break;
+            case Storage:
+                str = Resources.GetStringSafe("Native_DownloadErrorStorage");
+                break;
+            case QueueDownload:
+                str = Resources.GetStringSafe("Native_DownloadErrorQueueDownload");
+                break;
+            case Unknown:
+                str = Resources.GetStringSafe(str2);
+                break;
+            default:
+                str = null;
+                break;
+        }
+        LinearLayout linearLayout = setupCommonUI(GetStringSafe, str, false);
         linearLayout.getLayoutParams().width = (int) (((float) this.m_ScreenSize.x) * 0.7f);
         linearLayout.getLayoutParams().height = (int) (((float) this.m_ScreenSize.y) * 0.55f);
         this.m_Logo.getLayoutParams().width = (int) (((float) this.m_ScreenSize.x) * 0.5f);
