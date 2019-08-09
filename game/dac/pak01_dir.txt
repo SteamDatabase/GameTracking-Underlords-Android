@@ -8,7 +8,7 @@ scripts/botspersonalities.json CRC:9271bdb3 Size:15999
 scripts/chat_wheel_lines.json CRC:1a627108 Size:1146
 scripts/events.json CRC:63615025 Size:78
 scripts/items.json CRC:f84c740e Size:30637
-scripts/modifiers.json CRC:9e8ec1e8 Size:3655
+scripts/modifiers.json CRC:0ec83faa Size:3677
 scripts/synergies.json CRC:2379616d Size:13661
 scripts/units.json CRC:9a20438e Size:69486
 scripts/waves.json CRC:4425633b Size:5869
@@ -35,7 +35,7 @@ resource/localization/dac_abilities_bulgarian.txt CRC:a8754ac7 Size:53780
 resource/localization/dac_abilities_czech.txt CRC:e22e6ecc Size:37547
 resource/localization/dac_abilities_danish.txt CRC:0fab55eb Size:35990
 resource/localization/dac_abilities_dutch.txt CRC:2bb8faa4 Size:37121
-resource/localization/dac_abilities_english.txt CRC:7ff7a39d Size:34393
+resource/localization/dac_abilities_english.txt CRC:50e0a9a0 Size:34405
 resource/localization/dac_abilities_finnish.txt CRC:e5da929d Size:34898
 resource/localization/dac_abilities_french.txt CRC:0aa3909f Size:39084
 resource/localization/dac_abilities_german.txt CRC:2c810a5f Size:37886
@@ -3752,7 +3752,7 @@ panorama/styles/dac_ui_scoreboard.vcss_c CRC:7e1339ad Size:3334
 panorama/styles/dac_ui_scoreboard_entry.vcss_c CRC:6532d61b Size:6754
 panorama/styles/dac_ui_sell_unit_bar.vcss_c CRC:df7e853f Size:7696
 panorama/styles/dac_ui_settings_panel.vcss_c CRC:587189ea Size:60175
-panorama/styles/dac_ui_shop.vcss_c CRC:0466374c Size:49776
+panorama/styles/dac_ui_shop.vcss_c CRC:e6782a0b Size:49825
 panorama/styles/dac_ui_synergy_capsule.vcss_c CRC:d4727a4d Size:740
 panorama/styles/dac_ui_synergy_icon.vcss_c CRC:b0f1f049 Size:97969
 panorama/styles/dac_ui_underlord_config.vcss_c CRC:52361f8e Size:5650
@@ -10550,6 +10550,7 @@ particles/world_environmental_fx/lamp_flame_dire_default_e.vpcf_c CRC:31d5fba8 S
 particles/world_environmental_fx/lamp_flame_dire_default_f.vpcf_c CRC:81dcb23d Size:2321
 particles/world_environmental_fx/motes_dust_00.vpcf_c CRC:ac778da7 Size:2361
 panorama/dynamic_images.vpdi_c CRC:f78518ca Size:247175
+panorama/dynamic_images_staging.vpdi_c CRC:b9c9b8ce Size:1126
 models/creeps/lane_creeps/creep_radiant_ranged/radiant_ranged_mega.vphys_c CRC:5bddcc0c Size:3019
 models/creeps/neutral_creeps/n_creep_black_dragon/n_creep_black_dragon.vphys_c CRC:91f810df Size:15422
 models/creeps/neutral_creeps/n_creep_troll_dark_b/n_creep_troll_dark_b.vphys_c CRC:68f84213 Size:2691
@@ -10612,7 +10613,7 @@ models/props_debris/neutral_creep_camp001e.vphys_c CRC:f8c7b558 Size:7859
 models/props_gameplay/pig.vphys_c CRC:010d7cad Size:3512
 models/props_tree/tree_cine_00_low.vphys_c CRC:c5599b3a Size:6514
 models/props_tree/tree_cine_02_low.vphys_c CRC:49119a01 Size:6711
-panorama/panorama.vrman_c CRC:93904f07 Size:433
+panorama/panorama.vrman_c CRC:c7bf8587 Size:538
 scenes/scenes.vrman_c CRC:183eeb0f Size:425
 scenes_staging/scenes.vrman_c CRC:d01f2aba Size:328
 soundevents/soundevents_manifest.vrman_c CRC:ac08f44e Size:699
@@ -14630,6 +14631,7 @@ models/props_tree/tree_pine_03b_inspector_vmorf.vtex_c CRC:56eff5c6 Size:5174
 models/props_tree/tree_pine_03b_model_vmorf.vtex_c CRC:9e0e442f Size:8017
 models/props_wildlife/crow_00_vmorf.vtex_c CRC:4f90dfb0 Size:4704
 panorama/dynamic_images_sentinel.vtex_c CRC:2b50bb35 Size:2892
+panorama/dynamic_images_staging_sentinel.vtex_c CRC:2b50bb35 Size:2892
 panorama/images/key_illustration_psd.vtex_c CRC:0e404a3e Size:3600
 panorama/images/banners/banner_01_psd.vtex_c CRC:854693e1 Size:56220
 panorama/images/banners/banner_02_psd.vtex_c CRC:6ffe2671 Size:50697
