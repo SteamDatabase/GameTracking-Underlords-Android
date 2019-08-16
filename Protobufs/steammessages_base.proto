@@ -82,6 +82,7 @@ message CMsgProtoBufHeader {
 	repeated uint32 forward_to_sysid = 27;
 	optional uint32 cm_sysid = 28;
 	optional string wg_token = 30;
+	optional uint32 launcher_type = 31 [default = 0];
 	oneof ip_addr {
 		uint32 ip = 15;
 		bytes ip_v6 = 29;

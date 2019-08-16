@@ -20,6 +20,7 @@
 !	@}!
 ....................
 '()+,-./:=?
+'	))?
 ()*+,-./*(((
 (+@))
 )(!	 
@@ -104,6 +105,7 @@ $0$1$2 $3 = $4
 06a*@
 06`*A
 06a6@
+06aR@
 06aRA9
 06`B@
 06hFE
@@ -120,13 +122,14 @@ $0$1$2 $3 = $4
 06u*@
 06u&@
 06vB@
+06`Z@
 	07)]
 07	%@
 07(	87
 07		87U
 07`"A
 07h	@7
-&07h'87
+*07h+87
 07H	87	
 07h	87h
 07hB@9
@@ -194,6 +197,7 @@ $0  extensions $1 to $2;
 0file size as transmitted and stored in the Cloud
 0Flags that must not be set on any returned items
 0J9b&J9
+0J9	$Eyk
 0k_ESteamDatagramMsg_GameserverSessionEstablished
 0Marks latest announcement timestamp read by user
 $0  message $1
@@ -258,7 +262,6 @@ $0rpc $1(.$2) returns (.$3)
 10NoResponse
 11#?*0
 1!1'1-191C1E1K1]1a1g1m1s1
-11:14:28
   ##%%&&))**,,//1122447788;;==>>@@CCEEFFIIJJLLOOQQRRTTWWXX[[]]^^aabbddgghhkkmmnnppssuuvvyyzz||
 11CBaseAPIJob
 11CClientHTTP
@@ -366,6 +369,7 @@ $0rpc $1(.$2) returns (.$3)
 12IClientVideo
 12IClientVRMap
 12IProcessPipe
+12ISteamClient
 12PlayerResult
 %12sPublic Key Algorithm: 
 %12s%s
@@ -402,6 +406,7 @@ $0rpc $1(.$2) returns (.$3)
 +'+1+3+=+?+K+O+U+i+m+o+{+
 13ServerMessage
 13VideoBookmark
+14:59:31
 1.4.9.1088
 14CBaseClientJob
 14CChatRoomState
@@ -508,8 +513,8 @@ $0rpc $1(.$2) returns (.$3)
 15CFourButtonMode
 15CHTTPRequestJob
 15CInputGenerator
+15CInterfaceStats
 15CJoystickSource
-15CMemberFunctor0IP12CCMInterfaceMS0_FvvE18CFuncMemPolicyNoneE
 15CMemberFunctor0IP14CListHashCacheMS0_FvvE18CFuncMemPolicyNoneE
 15CMemberFunctor0IP15CDepotBuildBaseMS0_FvvE18CFuncMemPolicyNoneE
 15CMemberFunctor0IP17CAsyncFileReadJobMS0_FvvE18CFuncMemPolicyNoneE
@@ -542,6 +547,7 @@ $0rpc $1(.$2) returns (.$3)
 15IControllerMode
 15IDigitalBinding
 15IInputGenerator
+15IInterfaceStats
 15IP2PVoiceHelper
 15ISSLCertificate
 15ISteamAppTicket
@@ -618,7 +624,8 @@ $0rpc $1(.$2) returns (.$3)
 16ITCPHostCallback
 %.16llX
 16ParentalSettings
-172.16.3.108:27017
+172.16.145.110:27017
+172.16.145.120:27017
 172.16.3.16
 172.16.3.16:443
 172.16.3.23
@@ -632,7 +639,6 @@ $0rpc $1(.$2) returns (.$3)
 172.16.3.28
 172.16.3.28:443
 172.16.3.31
-172.16.3.36:27017
 172.16.3.39
 17CAPIJobEndSession
 17CAPIJobGameSearch
@@ -835,8 +841,8 @@ $0rpc $1(.$2) returns (.$3)
 1^8)Y
 -1@9_
 )1@9)
-1/9?!/9
 *1(@9#$@9E
+1(9?A(9S
 19CAdapterSteamUGC001
 19CAdapterSteamUGC002
 19CAdapterSteamUGC003
@@ -934,6 +940,7 @@ $0rpc $1(.$2) returns (.$3)
 1.CPlayer_UpdateSteamAnnouncementLastRead_Response"4
 1CPublishedFile_AreFilesInSubscriptionList_Request
 1CRemoteClient_UnregisterStatusUpdate_Notification
+1Data for each of the revisions that this item has
 1d[O~
 %.1f pct of time accounted for
 1FR*1~	
@@ -952,14 +959,13 @@ _!@1J
 1Notify client directly about seat checkout result
 1*OJ/F
 1"P*c
-1S9H5
 1Steam ID of user to whom to send a friend invite."
 1steammessages_gamenotifications.steamclient.proto
 1The retrieved hits will be filtered to this type.
 1Unregister for status updates with a Steam client
-	1X9	
 &>1;y
 1@y!)
+1@ya)
 // 1) You must specify login credentials of an account that has been associated to your business site.
 1Znxr}
 	2 	 
@@ -980,6 +986,7 @@ _!@1J
 208.78.164.14:27018
 208.78.164.14:27019
 20CAdapterSteamApps001
+20CAdapterSteamApps002
 20CAdapterSteamApps003
 20CAdapterSteamApps004
 20CAdapterSteamApps005
@@ -1053,6 +1060,7 @@ _!@1J
 20PublishedFileDetails
 20SteamClientJobLambdaIZN12CClientVideo12SendGameDataEvE3$_0E
 2?!@1
+2	169AF
 21CAdapterSteamInput001
 21CAdapterSteamMusic001
 21CAdapterSteamUtils001
@@ -1149,6 +1157,7 @@ _!@1J
 22CAdapterSteamClient017
 22CAdapterSteamClient018
 22CAdapterSteamClient019
+22CAdapterSteamClient020
 22CAPIJobGetUserItemVote
 22CAPIJobSetUserItemVote
 22CBaseScheduledFunction
@@ -1499,11 +1508,13 @@ _!@1J
 26CAdapterSteamGameServer010
 26CAdapterSteamGameServer011
 26CAdapterSteamGameServer012
+26CAdapterSteamGameServer013
 26CAdapterSteamNetworking001
 26CAdapterSteamNetworking002
 26CAdapterSteamNetworking003
 26CAdapterSteamNetworking004
 26CAdapterSteamNetworking005
+26CAdapterSteamNetworking006
 26CAdapterSteamRemotePlay001
 26CAPIJobCheckSteamReachable
 26CAPIJobDeletePublishedFile
@@ -1660,6 +1671,13 @@ _!@1J
 27CMsgSteamDatagramDiagnostic
 27COffline_OfflineLogonTicket
 27CParties_JoinParty_Response
+27.CPlayer_GetFriendsAppsActivity_Response.AppFriendsInfoBa
+27.CPlayer_GetFriendsAppsActivity_Response.AppFriendsInfoBe
+27.CPlayer_GetFriendsAppsActivity_Response.AppFriendsInfoBm
+27.CPlayer_GetFriendsAppsActivity_Response.AppFriendsInfoBT
+27.CPlayer_GetFriendsAppsActivity_Response.AppFriendsInfoBW
+27.CPlayer_GetFriendsAppsActivity_Response.AppFriendsInfoBx
+27.CPlayer_GetFriendsAppsActivity_Response.FriendPlayTimeB
 27.CPublishedFile_GetUserVoteSummary_Response.VoteSummary
 27CRangeCheckStreamingHandler
 27CRemoteClientJobStartStream
@@ -1718,6 +1736,7 @@ _!@1J
 28.CDeviceAuth_GetBorrowerPlayHistory_Response.GameHistory2
 28CDongleBugWorkaroundWorkItem
 28CDongleFlashFirmwareWorkItem
+28CMsgBadgeCraftedNotification
 28CMsgClientActivateOEMLicense
 28CMsgClientAppInfoRequest_App
 28CMsgClientCheckFileSignature
@@ -1753,6 +1772,7 @@ _!@1J
 28.CPlayer_GetFriendsGameplayInfo_Response.OwnGameplayInfo
 28CPlayer_IgnoreFriend_Request
 28CPlayer_RemoveFriend_Request
+28.CPublishedFile_FileSubscribed_Notification.RevisionDataB5
 28.CSiteManagerClient_TrackedPayments_Notification.Payment
 28CSiteServerUIClientStatusJob
 28CSTAR_ReadGlyphData_Response
@@ -1767,6 +1787,7 @@ _!@1J
 28SiteServerUI_Logout_Response
 28SiteServerUI_Status_Response
 `2@9@
+2	!,9
 2	$	9
 29CAdapterSteamRemoteStorage001
 29CAdapterSteamRemoteStorage002
@@ -1858,10 +1879,11 @@ _!@1J
 29IDepotDownloadCallbackHandler
 29IHTTPStreamingResponseHandler
 29PublishedFileDetails_VoteData
-2	a/9 !
+2	a59aa
+2*A(9
 2	!A9
-2	A:9
-2	A)9h
+2	A-9
+2	a%9`h
 2A.CChatUsability_ClientUsabilityMetrics_Notification.VoiceSettings
 2A.CMsgClientUCMEnumerateUserPublishedFilesResponse.PublishedFileId
 2(aNa
@@ -1872,7 +1894,6 @@ _!@1J
 2B.CChatRoom_SetUserChatGroupPreferences_Request.ChatRoomPreferences
 2B.CMsgClientUCMEnumerateUserSubscribedFilesResponse.PublishedFileId
 2B.CMsgCREGetUserPublishedItemVoteDetailsResponse.UserItemVoteDetail
-2B}I@
 2bk*8
 "2BRbr
 2CAccountHardware_DeRegisterSteamController_Request
@@ -1956,6 +1977,7 @@ _!@1J
 2+.CMsgClientGetClientAppListResponse.App.DLC
 2(.CMsgClientGetClientDetailsResponse.Game
 2%.CMsgClientGetUserStatsResponse.Stats
+2'.CMsgClientItemAnnouncements.UnseenItem
 2'.CMsgClientLANP2PRequestChunks.ChunkKey
 2(.CMsgClientLBSGetLBEntriesResponse.Entry
 2!.CMsgClientMMSGetLobbyList.Filter
@@ -2036,6 +2058,7 @@ _!@1J
 2).CPublishedFile_GetUserFiles_Response.App
 2(.CPublishedFile_QueryFiles_Request.KVTagB(
 2.CRemoteClient_UnregisterStatusUpdate_Notification
+2..CRemotePlayTogether_Notification.GroupUpdated
 2&.CShader_RegisterShader_Request.Shader
 2&.CShader_SendShader_Request.ShaderCode
 2,.CStore_GetLocalizedNameForTags_Response.Tag
@@ -2046,23 +2069,21 @@ _!@1J
 2!.CVirtualControllerConfig.Control"
 2Cxhf
 2Cxhr
+2Cyh"
 *2d@95h@9%
 2dV2:tN:
-2	E)9h
 2eh$8
 2!.ERemoteDeviceAuthorizationResult
 [%.2f] 
 2Get build status for previously uploaded depot ZIP
 2Gets a list of server SteamIDs given a list of IPs
 2h2:9
-2h#49
 2h6:9
 2	h(8
-2	h(86T
 2hB@9h
 2H.CFriendsMessages_GetActiveMessageSessions_Response.FriendMessageSession
-2hF99h
-2hF:9id
+2hF:9ie
+2hF:9Ie
 2HH=HHzu
 2HHH=Hzu
 2HH==Hzu
@@ -2085,17 +2106,21 @@ _!@1J
 2ij(8
 2ij(8 
 2ij(8(
-2ij(8h
-2ij(8hJT
-2ij(8hZ]
-2ij(8hzR
+2ij(8h*`
+2ij(8h*^
+2ij(8h*\
+2ij(8h*T
+2ij(8h*V
+2ij(8h*X
+2ij(8h*Z
 2ik88
 2Iy(x
 2`j(8(
 2J(NQj(N
 2?k58y
 2?k78
-2?k88
+2?k78yY
+2?k885w
 2key to search for in JSON path format (SQL subset)
 2kii8l}C
 2Kp@9
@@ -2126,7 +2151,7 @@ _!@1J
 2#.PublishedFileDetails.PlaytimeStats
 2PYoxq}
 2?!@q	=
-2	q"9
+2	q59
 2	QA9
 2Q.CChatUsability_ClientUsabilityMetrics_Notification.UIState.CategoryCollapseState
 // 2) Run the server, using the accountname and password from step 1.
@@ -2138,7 +2163,7 @@ _!@1J
 2User has picked a resolution for a Cloud conflict.
 2v&A)
 2Whether the user allows notification for this app."v
-2@yh:
+2yf$9hb$9{j$9W
 2z&A)
 2)[zx
 !#%')+-/3
@@ -2381,6 +2406,7 @@ _!@1J
 32CPublishedFile_AddChild_Response
 32CPublishedFile_Subscribe_Request
 32CRemoteClientJobRemotePlayInvite
+32CRemotePlayTogether_Notification
 32CSteamControllerChellAbstraction
 32CTwoFactor_ValidateToken_Request
 32CUserOnNotifyLastPlayedTimes_Job
@@ -2690,7 +2716,6 @@ _!@1J
 36CMsgClientRequestMachineAuthResponse
 36CMsgClientRequestOfflineMessageCount
 36CMsgClientStatsUpdated_Updated_Stats
-36CMsgClientUCMPublishedFileSubscribed
 36CMsgClientUninstallClientAppResponse
 36CMsgClientWorkshopItemChangesRequest
 36CMsgDownloadRateStatistics_StatsInfo
@@ -2806,10 +2831,10 @@ _!@1J
 38CMsgClientDPCheckSpecialSurveyResponse
 38CMsgClientGetAuthorizedDevicesResponse
 38CMsgClientGetClientAppListResponse_App
+38CMsgClientItemAnnouncements_UnseenItem
 38CMsgClientLANP2PRequestChunks_ChunkKey
 38CMsgClientPersonaState_Friend_ClanData
 38CMsgClientSiteLicenseGetAvailableSeats
-38CMsgClientUCMPublishedFileUnsubscribed
 38CMsgClientUFSGetFileListForAppResponse
 38CMsgClientUFSGetSingleFileInfoResponse
 38CMsgClientUFSUploadCommitResponse_File
@@ -2831,6 +2856,7 @@ _!@1J
 38CParental_RequestRecoveryCode_Response
 38CParental_SetParentalSettings_Response
 38CPartnerApps_FinishUploadDepot_Request
+38CPlayer_GetFriendsAppsActivity_Request
 38CPlayer_GetFriendsGameplayInfo_Request
 38CPlayer_IncomingInviteMutualFriendList
 38CRemoteClient_RegisterStatusUpdate_Job
@@ -2893,6 +2919,7 @@ _!@1J
 39CPartnerApps_FinishUploadDepot_Response
 39CPartnerApps_RequestUploadToken_Request
 39CPlayer_GetCommunityPreferences_Request
+39CPlayer_GetFriendsAppsActivity_Response
 39CPlayer_GetFriendsGameplayInfo_Response
 39CPlayer_GetPerFriendPreferences_Request
 39CPlayer_SetCommunityPreferences_Request
@@ -2910,10 +2937,10 @@ _!@1J
 39CUserAccount_RegisterCompatTool_Request
 39SiteServerUI_ContentCacheConfig_Request
 39SiteServerUI_ContentCacheStatus_Request
+3A9a.
 3Allocate a UDP relay server for a streaming session
 3App Id of the app that the files were published to.
 >#>)>/>3>A>W>c>e>w>
-3B9"9
 3.CAccountHardware_DeRegisterSteamController_Request
 3CAccountHardware_DeRegisterSteamController_Response"t
 3.CAccountHardware_SteamControllerGetConfig_Response"/
@@ -3008,7 +3035,6 @@ _!@1J
 3)[{x
 3x&>Z
 3@y?)
-3@y":
 3YH_!
 3@yh2
 3Z8	E
@@ -3198,6 +3224,7 @@ _!@1J
 42CPublishedFile_RefreshVotingQueue_Response
 42CQueuedMatchmakingGameHost_EndGame_Request
 42CRemoteClient_AllocateRelayServer_Response
+42CRemoteClient_RemotePlayTogetherPacket_Job
 42CSiteManagerClient_IncomingClient_Response
 42CUserAccount_GetAccountLinkStatus_Response
 42CUserAccount_GetFriendInviteTokens_Request
@@ -3327,6 +3354,7 @@ _!@1J
 45CPublishedFile_GetChangeHistoryEntry_Response
 45CPublishedFile_RemoveAppRelationship_Response
 45CPublishedFile_StartPlaytimeTracking_Response
+45CRemotePlayTogether_Notification_GroupUpdated
 45CSiteLicense_ClientGetAvailableSeats_Response
 45CUserAccount_CreateFriendInviteToken_Response
 45CUserAccount_RedeemFriendInviteToken_Response
@@ -3411,7 +3439,6 @@ _!@1J
 4	%@9
 ,4@9$0@9#<@9
 4@9=4@9
-496wE
 *%4@9:8@9
 4@9c8
 49CAccountHardware_RegisterSteamController_Response
@@ -3434,7 +3461,6 @@ _!@1J
 49CMsgSteamDatagramSignedGameCoordinatorServerLogin
 49CPublishedFile_AreFilesInSubscriptionList_Request
 49CRemoteClient_UnregisterStatusUpdate_Notification
-49h*B
 4@9J=
 .4@)((A)+0B))
 4	A@9	
@@ -3444,6 +3470,7 @@ _!@1J
 4a"J9
 4Authorize own remote device that has pending request
 4($B9
+4bbCycfCyu
 4bjt8
 4.CAccountHardware_DeRegisterSteamController_Response"
 4.CChatRoom_SetChatRoomGroupWatchingBroadcast_Request
@@ -3457,7 +3484,6 @@ _!@1J
 4.CQueuedMatchmakingGameHost_SearchForPlayers_Request
 4CQueuedMatchmakingGameHost_SearchForPlayers_Response
 4`"D}
-4`"D}(>
 4	D@9	
 $4DTdt
 <4E87
@@ -3470,9 +3496,9 @@ $4DTdt
 4H3@9h
 4h6\9(
 4h6C9
-4h6D9
 4h6D9h
-4h6E9(
+4h6D9H
+4h6E9
 4h6z9
 4h	@7(
 4H	@7
@@ -3486,12 +3512,12 @@ $4DTdt
 4hB@9
 4hbA9
 4hBA9H
-4hbD9
 4hBF9h
+4hBG9
 4hBz9
 4h&C)
 4hc@9
-4hcM9
+4hcM9h
 4h"D9
 4h"D9(
 4h*D9	
@@ -3500,6 +3526,7 @@ $4DTdt
 4hf@9{
 4h"F9(
 4h"F9h
+4hfd9
 4hfM9H
 4h"G9
 4h~H9h
@@ -3510,6 +3537,7 @@ $4DTdt
 4)hk8i
 4hn@y
 4hR@9
+4hrA9
 4hrD9h
 4h"U9
 4Hu@9
@@ -3539,7 +3567,6 @@ $4DTdt
 4k6\9
 4#L@9B
 4Local cafe server wants to grant user access to site
-4	mC9
 #4#.n<
 4(Optional) Sorting method to use on returned values.
 4	P@9
@@ -3547,6 +3574,7 @@ $4DTdt
 4	P@9i
 4	Q@9?
 4	q@9i	
+4Send a Remote Play Together packet to a Steam client
 4steammessages_remoteclient_service.steamclient.proto
 4Tags to match on. See match_all_tags parameter below
 4Tells directory broadcast session is still available
@@ -3558,8 +3586,8 @@ $4DTdt
 4Update chat message flair in the specified chat room
 4when we recorded it was last modified. Not settable.
 4Whether or not the user is allowed to use the market
-4 X@}
 %.4X_%.8X_%.5X
+4 X@}H>
 4@y+<
 4@y"d
 	4z9I
@@ -3619,6 +3647,8 @@ $4DTdt
 54CMsgCREEnumeratePublishedFilesResponse_PublishedFileId
 54CMsgCREGetUserPublishedItemVoteDetails_PublishedFileId
 54CMsgRemoteDeviceAuthorizationRequest_CKeyEscrow_Ticket
+54CPlayer_GetFriendsAppsActivity_Response_AppFriendsInfo
+54CPlayer_GetFriendsAppsActivity_Response_FriendPlayTime
 54CPublishedFile_GetUserVoteSummary_Response_VoteSummary
 54CPublishedFile_SetPlaytimeForControllerConfigs_Request
 54CQueuedMatchmakingGameHost_SubmitPlayerResult_Response
@@ -3632,6 +3662,7 @@ $4DTdt
 55CMsgClientChatGetFriendMessageHistoryForOfflineMessages
 55CMsgClientGetAuthorizedDevicesResponse_AuthorizedDevice
 55CPlayer_GetFriendsGameplayInfo_Response_OwnGameplayInfo
+55CPublishedFile_FileSubscribed_Notification_RevisionData
 55CPublishedFile_SetPlaytimeForControllerConfigs_Response
 55CSiteManagerClient_TrackedPayments_Notification_Payment
 55j_WW
@@ -3661,7 +3692,6 @@ $4DTdt
 58CHIDMessageFromRemote_DeviceInputReports_DeviceInputReport
 58CPublishedFile_StopPlaytimeTrackingForAllAppItems_Response
 ,5@9_
-)5@9)
 5`:@9
 5`.@9
 5`"@9
@@ -3681,8 +3711,8 @@ $4DTdt
 59CMsgClientChatGetFriendMessageHistoryResponse_FriendMessage
 59CPlayer_GetFriendsGameplayInfo_Response_FriendsGameplayInfo
 59CPublishedFile_GetAppRelationships_Response_AppRelationship
-)5@9i
 5@9J9
+5	!A9
 5Add two-factor authenticator to the logged-in account
 5aFEy`JEy
 !5!A!I!O!Y![!_!s!}!
@@ -3725,7 +3755,7 @@ $4DTdt
 5Gets a list of the emoticons a user has with metadata
 5h2\9h
 5h6B9
-5h6E9
+5h6E9h
 5h6z9
 5 h`8
 5hBC9H
@@ -3734,26 +3764,25 @@ $4DTdt
 5#hc8
 5hFC9
 5h~G9
-5h&I9
-5h&I9h
 5HJ[}
-5h*J9h
 5hJC9
 5HJIV
 5hNC9
+5hR@9
+5hrt9h
 5hVK9
 5HW@9
 5hz@9H
 5h:z9i>z9
 5i&D9
-5inC9)
+5ifF9)
 5`>J9
 5ji)x
 5Js@y_
 ?!5k 	
 5(k|8
 5(K@9
-5knC9
+5kfF9
 &'&)&5&;&?&K&S&Y&e&i&o&{&
 5 kx8
 %5ld:
@@ -3777,7 +3806,6 @@ $4DTdt
 5UA@yu
 5U!@y
 5(W@9
-5x319
 5@!@y
 5	Y@9
 5)yE9)
@@ -3833,7 +3861,6 @@ _6`*@
 61CGameNotifications_GetSessionDetails_Request_RequestedSession
 61CMsgClientUCMGetPublishedFilesForUserResponse_PublishedFileId
  6`2@
-_6`2@
 /6`2@
 '6`2@
 (6`2@
@@ -3865,6 +3892,8 @@ _6`6@
 68aB@
 `6@9@
 ?6	9@
+@@69 
+69h*P
 `6a>@
 `6a&@
  6a>@
@@ -3939,6 +3968,7 @@ _6aBA9
 6aBB9 
 6aBC9 
 6a^C9
+6a~C9
 _6af@
 @6af@
 ?6aF@
@@ -3976,7 +4006,6 @@ _6aR@
 6aRC9
 _6aV@
 ?6aV@
-(6aV@
 /6av@9
 6av@9
 '6aVA
@@ -3989,8 +4018,8 @@ _6aV@
 @6aZ@
 6az@9
 /6aZA
+6azC9`
 6aZC9
-6aZC9`
 `6`b@
 _6`b@
 ?6`b@
@@ -4005,6 +4034,7 @@ _6`b@
 (6`B@
 @6`B@
 	 6`B@
+6B9	;
 |6B9z2B9
 6bBE9cFE9B|
 `6`BD
@@ -4023,6 +4053,7 @@ _6`b@
 6CTHashIP16ITCPHostCallbackjE
 6CTHashIP18IUDPSocketCallbackjE
 6CTHashIP20CWebSocketConnectionjE
+6Cyh&
 6(d@9)
 `6`f@
 ?6`f@
@@ -4044,8 +4075,11 @@ _6h*@
 ?6h"@
 ?6h&@
 /6h.@
+'6h.@
 '6h*@
 '6h&@
+(6h"@
+@6h"@
 @6h&@
  6h2@
 '6h2@
@@ -4072,16 +4106,17 @@ _6hBA9
 6h&C)j^@
 6hf@9
 6hFB9
+6hf@x
 6h&G)
 6h"G9
 6hj@9
-6hjC9
 6hn@9
 '6hr@9	
 6hr@9
 6hRA9
 /6hv@9
 6hv@9
+6h+@yi
  6i~@
  6i"@
 _6i.@
@@ -4095,6 +4130,7 @@ _6i&@
 '6i.@
 '6i*@
 '6i&@
+(6i"@
 _6i2@
 6i2A9
 '6i2A9
@@ -4114,8 +4150,8 @@ _6i.A9
 6iBA9
 6iBB9
 6iBC9
-6	iC9	
 6i^C9
+6i~C9
 ?6iFA9
 6iFB9
 6iFC9
@@ -4139,6 +4175,7 @@ _6in@
 6iVC9
 '6iZ@
 6iz@9
+6izC9
 6iZC9
 6iZ@y
 _6`j@
@@ -4172,11 +4209,12 @@ _6`R@
 @6`R@
 6Returns the URL of the proper cloud server for a user.
 6Service for accessing credentials and guarding secretsB
+`6t:@
 ?6t.@
 ?6t*@
 /6t&@
 _6t2@
-`6t6@
+_6t6@
 6t"G)iB
 6tpD4
 	6trF
@@ -4215,13 +4253,10 @@ _6u2@
 /6`Z@
 (6`Z@
 @6`Z@
-6z9H	
 /6`ZA
 (6`ZA
  7!'@
-)	 7	
 @7`:@
-	*	#7
 (7(	07
 (7(	07h
 71CFriendsMessages_GetActiveMessageSessions_Response_FriendMessageSession
@@ -4277,12 +4312,14 @@ _6u2@
 76i"A9
 76iB@
 76iBA9
+76iJ@
 76iJA9
 76iR@
 76`J@
 76`n@
 76`N@
 76`R@
+76t"@
 76t*@
 76u"@
 76u*@
@@ -4293,7 +4330,7 @@ _6u2@
 76`Z@
  7(	(7
  7		(7
-% 7(&(7
+) 7(*(7
 7 ! 7
 7)	 7
 7?7E7I7O7]7a7u7
@@ -4302,7 +4339,6 @@ $ 7(%(7H&07
  7(	(7hB@9
  7)	(7i
 7)	 7i
-7	%`7i
 7		 7i
 7	% 7iB@9
 7@9?<
@@ -4358,7 +4394,6 @@ $@7a*@
 (7hB@9
 7hB@9
 7hB@9(
-7hB@9(	 7h
 7hb@9h
  7hB@9h
 (7hB@9h
@@ -4366,28 +4401,31 @@ $@7a*@
 7hB@9H
 7hB@9h	 7h
 7hbD9
+7hbG9(
 7h:C9
 7hF@9
-7hFL9
-7hFL9h
+?7hF@9h
+7hFK9
+7hFK9h
 $`7h%h7
-`7H	h7
 #`7H$h7
 '7hJ@9
  7hJ@y
 '7hJ@y
  7hN5
+7hR@9
 7hR@9(
 7hr@9h
 (7hv@9
 7hzA9
-7hzD9H
+7hZG9H
 /7i:@
 	(7i*@
 (7i	07)
 (7I	07iB@9
 '7i2@
 7i6 7I7(7
+ 7i	(7I
 7I	 7i
 ; 7i<(7I=07	>87
 7i^@9
@@ -4417,7 +4455,6 @@ $`7h%h7
 7iB@9		 7iB@9	
  7iB@9i
 (7iB@9i
-	 7iB@9i
 	(7iB@9i
 7iB@9i
  7iB@9I
@@ -4431,10 +4468,12 @@ $`7h%h7
 7ib@9Iy 7ib@9
 7ib@9	v
 7ibD9i
+ 7ibF9i
 7iBM9)
 `7iF@9
  7iF@9
  7iF@9	
+(7iF@9
 (7iF@9	
 @7iF@9
 @7iF@9)
@@ -4459,10 +4498,11 @@ $`7h%h7
 % 7iJ@9)'(7i
 7iJ@9	+ 7iJ@9
 7iJ@9i)
+7iJ@9i$
 7iJ@9I
 ,(7iJ@9I.07iJ@9
 % 7iJ@9i'(7i
- 7ijC9i
+7iJ@9I!(7iJ@9
 7iN@9
 7iN@9)
 7iN@9	-
@@ -4471,6 +4511,7 @@ $`7h%h7
 7iN@9i
 7iN@9i6
 7iR@9
+7iR@9	
 7iR@9)E 7iR@9
 7iR@9I@
 7iR@9I6
@@ -4512,6 +4553,7 @@ $`7h%h7
 &`_8',
 #$@8`
 	-@8?
+	*)#8
 	*	-@8
 ]8*0]8c
 80CChatUsability_ClientUsabilityMetrics_Notification_UIState_CategoryCollapseState
@@ -4548,6 +4590,7 @@ _830_8
 86`V@
 !87@"
  87(!@7
+87(	@7
 87`^A
 87aZA
 87h	@7(
@@ -4555,6 +4598,7 @@ _830_8
 87hF@9
 87hv@
 87i	@7)
+!87iF@9
 87iF@9
 87iF@9)
 87iF@9	
@@ -4576,7 +4620,6 @@ _8+ _8
 8,9,10,11,15
 8@9c`
 8@9c8@9
-8!A9*!
 @8aB 
 _8B 	
 8b  16-May-2010
@@ -4662,7 +4705,7 @@ _8 x`x
 _8@x`x
 @8 x`x
 _8y,@8
-)8@y+<@yL?
+)8@y,<@y
 `^@9 
 `.@9@
 `"@9@
@@ -4686,14 +4729,15 @@ _8y,@8
 -	@9_
 ,@9" 
 ,@9",
+!@]9?
 .@9(]
 .@9*]
 '@9?(
 '@9?+
+"@9!=
 (`@9	
 (@9`,
 (@9((
-(@9$=@
 (@9	,
 )%@9)
 )	@9*
@@ -4721,7 +4765,6 @@ $@9	(
 #@@9	
 #@9?'
 #@9?$
-#@9":
 +@9?,
 +@9?/
 	!@9?
@@ -4731,6 +4774,7 @@ $@9	(
 	)@9*
 	$@9?
 	*	#9
+	%?9?
 <@9"0
 ,@9`0
 ,@9+0
@@ -4749,7 +4793,6 @@ $@9	(
 @91#@92
 \@91r
 @9`2@
-@9!`2
 @92	@9)
 /@9?3
  @93 @9
@@ -4761,7 +4804,6 @@ $@95$@9
 (@97(@9
 @9;7@9<
 .97yY
-	!+98
 9.@8 
 @9#'87`
 @9#&87`
@@ -4807,8 +4849,7 @@ $ @9*$@9#,@9%(@9J=
 @9+	@9K
 @9)	@9Lyl
 99rKJJ
- @9	$@9u
-"@9A<
+(@9$A@
 @9`A)
 @9a2@
 9a^@9
@@ -4819,7 +4860,6 @@ $ @9*$@9#,@9%(@9J=
 9ab@9
 9aB@9
 @9aB@9A
-"@9aD
 9af@9
 9aF@9
 9aia8
@@ -4838,8 +4878,8 @@ $ @9*$@9#,@9%(@9J=
 9aZ@9
 @9-b@
 @9*b@
+#@9b:
 &,@9B
-#@9B:
 +&9`>B
 9b2A9!
 9b6A9!
@@ -4948,10 +4988,11 @@ $ @9*$@9#,@9%(@9J=
 9eig8
 ;!;#;-;9;E;S;Y;_;q;{;
 9E#@ye
-&@9)F
+)9EyI
 @9#F87`
 @9f	@9
 @9f(@9c @9
+@9FA$
 9`FE9
 @9F\Ey(
 9Fif8
@@ -4980,22 +5021,25 @@ $@9h2
 9	H@9*
 9h*A9
 9h&A9
+9hb@9
 9hB@9
 9hB@9(
 9hb@9h
+9hB@9h
 9hB@9H
-@9hBA
 9hbA9
 9hBB9H
+9hbF9
 9hBF9
-9hbg9h	
-9h*By
+9hbf9h	
 9h"D9
 9h&D9
 @9H`Ey&
 9@HEy 
+9hF@9
 9hF@9H
 9hfM9
+9hfW9)
 @9@HFy
 9h&G9
 @9(hh8'hg8&hf8%he8$hd8#hc8"hb8!hi8
@@ -5020,10 +5064,9 @@ $@9h2
 9Hiu8
 9hj@9
 9hJ@9H
-9hjC9
 9hjj8i
-9hJ@y(
-#9h:K
+&9h*L
+.9h*N
 #@9hN
 *@9HN
 9hn@9
@@ -5031,18 +5074,20 @@ $@9h2
 "@9hO
 ~@9hr
 ^@9hR
+>9h*R
 &@9hR
 9hr@9
+9hR@9
 9hR@9H
-9hRH9(
+9hRH9
 "@9hV
 9hv@9
 9hV@9H
 @9Hyh
 9hz@9
-9hzD9H
 9hzF9
 @9i:@
+@9i"`
 @9i&@
 	)@9i
 9i@)`
@@ -5077,6 +5122,7 @@ $@9h2
 9ifG9
 9If non-zero, cap the number of recent messages to return.
 9+ig8
+"@9ih
 @9(ih8
 @9*ih8
 9(ih8h
@@ -5084,11 +5130,11 @@ $@9h2
 @9I-I
 @9	ii8
 @9	ii8_
-@9ij`
 @9ij68
 @9)ij8
 @9)ij8)
 9iJ@9	I
+9	ijxI
 @9*ik8
 9+ik8
 9IMemAlloc
@@ -5101,6 +5147,7 @@ $@9h2
 9+iw8c
 )9IYiy
 9iz@9
+)@9j?
 @9j&@
 *(@9j
  @9J=
@@ -5119,18 +5166,19 @@ $@9h2
 @9jJ@
 @9jjh8
 @9J!K
+@9JQG
 9jrG9
-@9JUG
 9jvG9
-9jzD9i
 9jzG9
+9jZG9i
 @9k&@
 + @9K
+@9k1G
 9?k48
 9k6@x)
 @9K	@9?
 @9K	@9M
-@9kAG
+@9k+F
 @9Kii8
 @9Kik8
 @9k!L
@@ -5170,9 +5218,9 @@ $@9h2
 9M%	S
 @9N9@9Q
 @9n	@9o
+@9nbF9h
 9Nin8
 9Nin8m
-@9njC9h
 9nks8akf8
 @9O	@9P
 9Oio81
@@ -5232,8 +5280,8 @@ $@9h2
 9@ym		
 9	YOy
 9y*xi
-9z	86
 @9`Z@9 
+`"@}a&@}
 ___a_
 __a__
 	a!!&
@@ -5270,17 +5318,14 @@ a8Ak 8
 a:@9!
 a&@9!
 !A9(	@
-	A=9@
+	A`9	
 	A@9)
 	A@9	
-	A\9)
 A9|"@
 A9)'@
 A9			
 A9	3@
-	a>94
 A9	5z9
-a(97Q(9 
 A9`^@9A
 a@9*a
 a^@9A
@@ -5291,25 +5336,28 @@ A9A@@9
 /A9a:J9`>
 a"@9B
 A9`B@9A
-"A9)]C
-A9)]C
 A9`F@9A
+(a<9h
 (`A9h
+?a<9i
 )a@9i
-	a~9I
 	a@9I
 		A9i
 	A@9i
 A9i*@
 A9i&@
 	A@9I
+	A\9I
+	A@9iJ
+a@9iR
 *a@9J
 	 A9J
 /A9`*J9
 A9`J@9A
 A9_k98h
 A9`N@9A
-?A9}P
+"A9)QC
+A9)QC
 A9`R@9A
 ?A9t"@
 A#@9T
@@ -5336,6 +5384,7 @@ aaControls
 &Aacute;
 AA		$	H-
 aaj_55
+aApps friends have played in the past two weeks, for which the user has a license, sorted by count
 aarch64
 ab@9A
 ABADF
@@ -5371,6 +5420,7 @@ about to perform blocking dns call from the main thread.  consider refactoring.
 <ABSENT>
 absolute_mouse
 AbsoluteMouseCoordinates
+absolute_mouse.vdf
 Abuse reporter's UGC Image
 %$%a%b%V%U%c%Q%W%]%\%[%
 aB@ya
@@ -5549,7 +5599,6 @@ active_voice_member_count
 actor_id
     Actual    : 
 &acute;
-	AcyJ(
 a_d2i_fp.c
 AdapterDescription
 adaptive_centering
@@ -5698,6 +5747,7 @@ adult_content_violence
 a_dup.c
 AdvertiseGame
 Advertisement
+aE0cn
 %a, %e-%b-%y %H:%M:%S
 %a, %e %b %Y %H:%M:%S
 %a, %e-%b-%Y %H:%M:%S
@@ -5821,7 +5871,6 @@ aF@9A
 affiliationChanged
 Affiliation Changed
 A file with this name is already in the pool.
-	AFyJ(
 a_gentm.c
 @Agent that added the authenticator (e.g., ios / android / other)
 Ag*g*
@@ -5844,9 +5893,9 @@ aHa8c
 AhDy!
 A		$	HH-
 	AHJj
+'A)hRC
 A!;I2
 a_i2d_fp.c
-	Ai9	
 aia8!
 aif provided, only return glyphs modified more recently than this timestamp  (RFC 3339 UTC format)"
 AIf true, the file should be encrypted by the client before upload
@@ -5858,10 +5907,8 @@ aiKwZ
 AINIT 
 a_int.c
 airtel
-`"@}a&@}J@
 A)j*@
 *-A)J}@
-#A)J<
 aj 8_@
 *aj#8l
 Aj`8PJp82
@@ -6037,7 +6084,6 @@ Any language
 anyPolicy
 ANY PRIVATE KEY
 Any Purpose
-	ao9)
 a_object.c
 aOnly return results after time. Min value is 1. (seconds since epoch January 1st, 1970 Unix Time)"u
 AOZs\!yA*
@@ -6066,6 +6112,7 @@ AppendedSHA
 APPEND_EXP
 AppendQueueToPlaylistID
 AppEvents
+AppFriendsInfo
 appid
 __appid
 app_id
@@ -6154,6 +6201,7 @@ AppID %u exited.
 [AppID %u] Failed to get digest for app: %s (%s)
 [AppID %u] Failed to get file info for %s file %s (%s)
 [AppID %u] Failed to get file key for %s file %s (%s)
+[AppID %u] Failed to get item info: %s
 [AppID %u] Failed to get purchase info for user %s: %s (%s)
 [AppID %u] Failed to load installscript "%s"
 [AppID %u] Failed to open file '%s' temp file for write '%s'
@@ -6171,6 +6219,7 @@ AppID %u exited.
 [AppID %u] Failed to upload workshop %s file %s (%s)
 [AppID %u] Failed to write file '%s' to temp disk location '%s'
 [AppID %u] Failed to write %s file %s to remote storage (%s)
+[AppID %u] Failure in NotifyFileSubscribed--no valid branch found for %llu.  Requested %i.
 AppID %u file commit : %u updated, %u moved, %u deleted
 [AppID %u] File is in sync %s
 [AppID %u] File %s does not exist remotely and bUseLocal = %s. Setting local version forgotten instead
@@ -6362,6 +6411,7 @@ Apps changed:
 Apps changed: force all
 app_set_update_flag
 app_set_update_flag <appId>
+]Apps friends have played in the past two weeks for which the user recently acquired a license
 apps_installed
 apps_pending
 apps_running
@@ -6390,6 +6440,7 @@ App %u updates now enabled
 AppWorkshop
  a protocol 
 A protocol message was rejected because it was too big (more than 
+=_A@q(+
 *?A@q
 A\@Q!`
 A@qH7
@@ -6427,13 +6478,10 @@ _armv8_sha256_probe
 Artwork
 ArtworkPublished
 A@}S!@
-)AS9	
-)As9vB
 Ascending
 ascii
 ASCII
 ASCII conversion buffer too small
-asE9	
 )A service for accessing Steam player data2
 ]A service for relaying and logging friend messages (user-to-user chats and offline messaging)2
 %A service for Steam Cloud operations.B
@@ -6809,7 +6857,6 @@ Assertion Failed: bExpectedThisThread && !m_QueueCallbackMsg.IsEmpty()
 Assertion Failed: bFailed == false
 Assertion Failed: BFileExists( pchCertPEMFile )
 Assertion Failed: BFileExists( pchPrivKeyPEMFile )
-Assertion Failed: BFileExists( strFullLocalFilePath )
 Assertion Failed: BFileExists( strSteam2WrapperSrcPath.String() )
 Assertion Failed: bForceRequeue || m_unThreadBytesToRead == 0 || m_eResultRunSSL != k_EResultOK
 Assertion Failed: !"BGetMachineGUID"
@@ -7325,7 +7372,6 @@ Assertion Failed: m_bDeleteDiskHitCache == false
 Assertion Failed: !m_bDisconnected
 Assertion Failed: !m_bDisconnecting
 Assertion Failed: m_bDryRun
-Assertion Failed: !m_bExiting
 Assertion Failed: !m_bFilenamesEncrypted
 Assertion Failed: m_bFilenamesEncrypted
 Assertion Failed: !m_bFindingBestServer
@@ -7340,6 +7386,7 @@ Assertion Failed: m_bHeartbeatsActive
 Assertion Failed: m_bHTTPSTunnelCompleted == false
 Assertion Failed: m_bInitialized
 Assertion Failed: !m_bInitialRequest
+Assertion Failed: m_bInReportPending
 Assertion Failed: !m_bIsFinalized
 Assertion Failed: m_bIsFinalized
 Assertion Failed: !m_bIsFlushingAll
@@ -7869,6 +7916,7 @@ Assertion Failed: nBitID >= 0 && nBitID < 32
 Assertion Failed: nBlocks == uint8(nBlocks)
 Assertion Failed: nBufOffset >= 0
 Assertion Failed: nBufOffset+cbSegmentSize <= len( m_receiverState.m_bufReliableStream )
+Assertion Failed: nBytes
 Assertion Failed: nBytes2 == m_data.NumAllocated()
 Assertion Failed: nBytesInBuffer > 0
 Assertion Failed: nBytesToRead>= 0
@@ -8660,6 +8708,7 @@ Assertion Failed: written == count
 Assertion Failed: x != kInvalidItem
 Assertion Failed: !zipBucketDirIter.BCurrentIsDir()
 Assert( %s ):%s:%d
+asset_id
 assets
 //    Associate a Steam account to your new site.  This is the account you will use with your server.
 associatedDomain
@@ -8741,6 +8790,7 @@ attributes
 Attributes
 A)tU@)x
 A)TU@)X
+)au9?
 audio
 AUDIO
 Audio Behind
@@ -8749,6 +8799,7 @@ AudioDeviceDescription
 Audio Init Failed
 audio track choice.
 audio_track_id
+Aug  5 2019
 &auml;
 &Auml;
 AUser chat group state (preferences, ack state, etc) have changed.
@@ -8831,11 +8882,12 @@ Auto-update blackout time
 [a:%u:%u]
 [A:%u:%u:%u]
 aux error
-	auyJ(
 &A)Uyx
 av@9A
 aV@9A
 available_on_platform
+available_revisions
+Available revisions
 available_seats
 avatar
 avatar_hash
@@ -8855,8 +8907,8 @@ AVS Failure
 Awaiting_Logon
 AWhen the token was transferred from another device, if applicable"
 A{"xB
-	aXyJ(
 "	)Ay)
+#Ay"8
 aybSr
 A@yi*@
 az@9A
@@ -8896,23 +8948,22 @@ B8(WC
 b.@9@
 b"@9_
 `B@9 
-#B9"9
 b.@9A
 b*@9A
 B@9	A
 B@9A1
 B9A D9
 b*@9B
+B@}!9B
 b@9h!
 b@9H	
 ($B9h
 B@9h(
-B9h:@
+B9h>@
+B:9h::9
 b@9hb
 B9hj68	
 B9hNB
-B>9II
-bA9(	
 b&A9af@9b
 b*A9aj@9b
 b.A9an@9b
@@ -8991,6 +9042,7 @@ Bad flag in RTime32DateAdd
 bad fopen mode
 Bad Gateway
 Badge
+badge_level
 bad generator
 badges
 bad get asn1 object call
@@ -9127,6 +9179,7 @@ B"`b	)(!
 bB"`3
 "`bB303
 BB4!!
+bBB9	%
 B#B)B/BCBSBUB[BaBsB}B
 bbc.co.uk
 bbcode_format
@@ -9172,9 +9225,8 @@ bDisableClientUIOverlay
 BDisableParentalSettings
 bDisableTenFootOverlay
 BDownloadsDisabled
-B@}!)E
 	beacon_id
-BEBGCZDKDEEEIEELGRESFRHRISITCYLILVLTLUHUMTNLNOATPLPTROSISKFISEUK(
+BEBGCZDKDEEEIEELGRESFRHRISITCYLILVLTLUHUMTNLNOATPLPTROSISKFISEUK
 " because it is missing required fields: 
 Beeline
 before accept initialization
@@ -9195,6 +9247,7 @@ BeginLaunchQueryParams
 Begin session : %s (SessionID %llu)
 Begins the process of uploading a file to Steam external storage services. File should be uploaded via HTTP PUT to the returned URL, after which the upload must be finalized by a call to CommitHTTPUpload.
 behavior
+being_discussed
 bellcanada
 BEnableEmbeddedClient
 @bEnableFrameFuncOverageWarnings
@@ -9224,6 +9277,7 @@ between
 b.EycZA
 )bF	)%
 bF@9C
+bF9 h
 bf_buff.c
 bf-cbc
 BF-CBC
@@ -9291,9 +9345,9 @@ bhb8"
 bHb8c
 Bh;+j
 BHost name of server to which file should be uploaded via HTTP PUT.
-Bhs8!
-Bhv8@
-Bhv8g
+Bhs8! 
+Bhv8+d
+Bhv8kd
 B)hZA
 Bib81
 BIGNUM
@@ -9428,6 +9482,7 @@ BIsAccountCommunityBanned
 BIsAccountLimited
 BIsAccountLockedDown
 BIsAlienwareDemoAccount
+BIsAnyGameOrServiceAppRunning
 BIsAnyGameRunning
 BIsAppBlocked
 BIsAppInBlockList
@@ -9476,6 +9531,7 @@ BIsShortcutHiddenByAppID
 BIsShortcutRemoteByAppID
 BIsShortcutRemoteByIndex
 BIsStreamClientRunning
+BIsStreamClientRunningConnectedToClient
 BIsStreamingClientConnected
 BIsStreamingController
 BIsStreamingEnabled
@@ -9824,7 +9880,7 @@ branches/%s/pwdrequired
 branches/%s/timeupdated
 branch_name
 brazilian
-brCy	l
+brCy	b
 BREAK
 Breakpad_SetSteamID
 Breakpad_SteamMiniDumpInit
@@ -9929,6 +9985,7 @@ Broadcast.WebRTCStartResult#1
 Broadcast.WebRTCStopped#1
 Broken
 broken pipe
+Broken symlink: "%s"
 BRouteWorkItemCompleted called for a job that could not be found!
 Browser
 BRumbleEnabledByUser
@@ -9966,6 +10023,7 @@ bSteam3LimitedUserEnable
 BSteamDatagramTransportLock held for %.1fms.  This can be a performance problem.
 BSteamGuardNewMachineNotification
 bSteamLoaderEnable
+BStreamingDesktopToRemotePlayTogetherEnabled
 bSubscribedFilesDecompressOnClient
 bSubscribedFilesPollForUpdates
 bSubscribedFilesUseRangeRequests
@@ -10090,13 +10148,10 @@ BXcxc
 BXzxc
 b"@y"
 b@y$	
-.By @
-#By";
 By default, if none of the other 'return_*' fields are set, only some voting details are returned. Set this to true to return the default set of details.
 by_dir.c
 by_file.c
 BY_FILE_CTRL
-.By@g
 b@yhb
 BYield()
 BYieldingBuildManifest
@@ -10125,7 +10180,6 @@ BYieldingRegisterSteamController - missing controller id
 BYieldingRegisterSteamController - timed out
 BYieldingRunClientJob
 BYieldingSetDesiredControllerConfigForApp
-B@yjJ
 bytes
 bytes. 
 bytes_actual
@@ -10190,9 +10244,17 @@ c@9(!
 "C9(#
 C@9`"@
 C@9(	
+C@9"8
+c@9"9
 C9an@
+c@9b:
+c@9B:
+C@9b:
 C@9B:
-c@9B8
+C@9B8
+c@9b9
+c@9B9
+C@9b9
 C9fj@
 (c@9H
 (C@9h
@@ -10202,11 +10264,14 @@ c@9in@
 C9j2D9
 C@9_!+k`
 )!C9l
+C@9vX
 C} A!
-CA9":
+CA9";
 cA9"8
-cA9"9
-CA9b:
+CA9b;
+CA9B;
+cA9b8
+cA9B8
 Cabal
 <CAccountHardware_CompleteSteamControllerRegistration_Request
 =.CAccountHardware_CompleteSteamControllerRegistration_Request
@@ -10691,6 +10756,8 @@ Caution: quantization tables are too coarse for baseline JPEG
 c!!B0
 CB4cJQlAc
 CB9"8
+CB9b8
+CB9B8
 cB9H(
 CB9hA
 CBaseRemoteClientJob::BYieldingWaitforUI
@@ -12238,6 +12305,7 @@ Chunk size to use for POSTing partner uploads
 Chunks should be compressed during depot building
 chunkstores
 chunk timeout
+chv8r|
 *cib8
 -;-C-I-M-a-e-q-
 CINIT 
@@ -12311,7 +12379,6 @@ cityname_loginattempt
 cj 8_@
 cj!8_@
 cj"8?@
-cj"8X
 cjb8d
 cjb8dj"8d
 cjf8d
@@ -12388,6 +12455,9 @@ ClearAchievement
 ClearAllKeyValues
 ClearAllLoginInformation
 clearance
+ClearAndSetAppTags
+ClearAndSetShortcutUserTags
+ClearAppTags
 ClearChatHistory
 ClearChatRoomHistory
 ClearField
@@ -12767,6 +12837,7 @@ CMsgAMUnlockStreamingResponse
 CMsgAppRights
 CMsgAuthTicket
 .CMsgAuthTicket
+CMsgBadgeCraftedNotification
 CMsgBase_t : packet too small
 CMsgBase_t : packet too small (EMsg %u)
 CMsgBuffer(%s), no room for %i bytes, %i / %i already in use
@@ -13006,8 +13077,6 @@ CMsgClientUCMDeleteScreenshot
 %CMsgClientUCMGetPublishedFilesForUser
 -CMsgClientUCMGetPublishedFilesForUserResponse
 !CMsgClientUCMPublishedFileDeleted
-$CMsgClientUCMPublishedFileSubscribed
-&CMsgClientUCMPublishedFileUnsubscribed
 !CMsgClientUCMPublishedFileUpdated
 CMsgClientUCMPublishFile
  CMsgClientUCMPublishFileResponse
@@ -13114,6 +13183,14 @@ CMsgGSStatusReply
 CMsgGSUserPlaying
 CMsgIPAddress
 .CMsgIPAddress
+.CMsgIPAddress"
+.CMsgIPAddress"^
+.CMsgIPAddress"*
+.CMsgIPAddress"&
+.CMsgIPAddress"9
+.CMsgIPAddress"O
+.CMsgIPAddress"s
+.CMsgIPAddress"u
 	CMsgMulti
 CMsgPersonaChangeResponse
 CMsgRemoteClientAcceptEULA
@@ -13603,8 +13680,6 @@ compact_quick_access
 comparision
 /compatdata
 compatibilitytools
-/compatibilitytools.d
-/compatibilitytools.vdf
 compatible
 CompatibleLobby
 compat_installscript
@@ -13904,6 +13979,7 @@ contentupdatecontext.cpp
 content verify error
 Content Version
 context
+context_id
 context not initialised
 Continue
 Control
@@ -14258,6 +14334,10 @@ $.CPlayer_GetDurationControl_Response"+
 CPlayer_GetEmoticonList_Request"
  CPlayer_GetEmoticonList_Response
 !.CPlayer_GetEmoticonList_Response"9
+'.CPlayer_GetFriendsAppsActivity_Request
+&CPlayer_GetFriendsAppsActivity_Request
+'CPlayer_GetFriendsAppsActivity_Response
+(.CPlayer_GetFriendsAppsActivity_Response"A
 '.CPlayer_GetFriendsGameplayInfo_Request
 &CPlayer_GetFriendsGameplayInfo_Request
 'CPlayer_GetFriendsGameplayInfo_Response
@@ -14486,6 +14566,7 @@ CreateControllerMode, unknown mode type %d
 CreateCookieContainer
 Created 
 Created download interface of type '%s' (%d) to host %s (%s)
+Created dual-stack http client
 Created ipv4-only http client
 Created peer download interface to host %s (%s)
 Created shared memory when not owner %s
@@ -14611,6 +14692,8 @@ CRemoteDeviceJobStartStreaming timed out k_ERemoteClientWaitUIAudioPrepared
 CRemoteDeviceJobStartStreaming timed out k_ERemoteClientWaitUIDriverInstallation
 CRemoteDeviceJobStartStreaming timed out k_ERemoteClientWaitUIProcessStreamStart
 CRemoteDeviceJobStartStreaming timed out k_ERemoteClientWaitUIProcessStreamStop
+ CRemotePlayTogether_Notification
+!.CRemotePlayTogether_Notification
 CRemoteStorageSyncHelpers::ThreadedDecryptFile
 CRemoteStorageSyncHelpers::ThreadedDecryptFile failed
 CRemoteStorageSyncHelpers::ThreadedEncryptFile
@@ -15390,10 +15473,15 @@ __cxa_throw
 `<C$Y
 c@y1z
 )cY9	
+:Cy!A
+c@yb;
+C@yb;
 -cybercafe
 Cyber cafe accounts can't purchase
 cycle
 Cycle detected in trust chain!  (Cert for key %llu, signed by CA key %llu)
+>Cyh>
+:Cyh:
 ^C)yhi
 Cyin@y
 Cyir@y
@@ -15610,7 +15698,6 @@ D7q/;M
 D$@8$
 D8x}@
 "D@9%
-#D9([
 D@9_ 
 %D@93H@9B
 d@9>d@9)
@@ -15913,12 +16000,16 @@ deprecated
 ;deprecated_authentication_exists_from_geoloc_before_mintime
 deprecated client msg %s, SteamID %s
 (DEPRECATED) Friends-of-friends-only
+deprecated_game_ip_address
+deprecated_game_server_ip
+deprecated_ip
 (DEPRECATED) Logged-in users only
 deprecated_machine_id
 "deprecated_machine_name_userchosen
 deprecated_newauthentication
 "deprecated_obfustucated_private_ip
 deprecated_public_ip
+deprecated_server_ip
 DEPRECATED_ticket
 /deprecated_timestamp_machine_steamguard_enabled
 depth exceeded
@@ -15985,6 +16076,7 @@ DES_encrypt3
 DeserializeResult
 Desired language"
 desired_queue_size
+desired_revision
 DES_is_weak_key
 DES_key_sched
 DesktopHeightInPixels
@@ -16415,6 +16507,7 @@ dlsym@@LIBC
 DL_UNLOAD
 %d_*.manifest
 dmdName
+@}DmF
 dmp1 not congruent to d
 dmq1 not congruent to d
  %d%n %n
@@ -16455,6 +16548,7 @@ Dongle build time invalid
 do_not_disturb_mode
 Do Not Revive
 DONT_BREAK_ON_ASSERT
+dont_forget
 Don't have network config. Check Internet connection
 Don't know how to check filesystem type on POSIX!
 Don't know our AppID.  Order of init bug?
@@ -16821,6 +16915,11 @@ Dy?
 `Dy 0
 Dya:A
 Dya~B
+DyabB
+DyajB
+DyarB
+DyazB
+DyaZB
 dynamic
 .dynamic
 __dynamic_cast
@@ -16853,7 +16952,10 @@ E2EUrgentPing
 ~E9h~
 )E@9i
 	E@9i
+	E\9I
+E@9JD
 	EA9	
+eA9HK
 EAbuseReportType
 EACCES
 EAccountFlags
@@ -17412,7 +17514,6 @@ EHTTPMethod
 EHTTPStatusCode
 EHTTPStatusCode %d does not allow a body in response, not sending
 Ei.8%jf8
-	Ei9	
 EIe8g
 EINPROGRESS
 EInputMode
@@ -17468,7 +17569,7 @@ Email Validated
 email_validation_changed
 EmbeddedClient
 EmbeddedClient.AuthorizeCurrentDevice#1
-EmbeddedClientLogin
+Embedded client [%d:%d]
 Embedded client result - %d
 embedded_client_secret
 Embedded client token auth - %s, exiting.
@@ -17502,7 +17603,6 @@ EMsg %d registered multiple times.
 "e" must be followed by exponent.
 __emutls_get_address
 __emutls_register_common
-	*	eN
 enable
 enable_audio_streaming
 enablecode
@@ -17552,7 +17652,6 @@ ENABLE_VK_LAYER_VALVE_steam_fossilize_1
 ENABLE_VK_LAYER_VALVE_steam_overlay_1
 EnableVoiceCalibration
 EnableVoiceNotificationSounds
-Enabling ipv6 dual-stack
 Enabling local content cache at '%s' as directed by site license server.
 Enabling local content cache at '%s' as directed @sForceLocalContentCache
 Enabling parental settings for %u, account flags are %x
@@ -17869,6 +17968,11 @@ EProtoExecutionSite
 EPublishedFileForSaleStatus
 .EPublishedFileForSaleStatus
 "EPublishedFileInfoMatchingFileType
+EPublishedFileRevision
+.EPublishedFileRevision
+.EPublishedFileRevisionB
+.EPublishedFileRevision: k_EPublishedFileRevision_DefaultB>
+.EPublishedFileRevision: k_EPublishedFileRevision_DefaultB/
 EPurchaseResultDetail
 EPurchaseStatus
 EQUALS
@@ -18078,7 +18182,6 @@ ErrorString
 Error text not found (please report)
 ERROR! ThreadedFinalizeManifest failed for depot %u
 ERROR! Timeout uploading manifest (depotID %u, size %u)
-Error turning off controller
 Error turning on gyro
 ERROR! Uploading chunk SHA mismatch
 ERROR! Uploading chunk size mismatch
@@ -18129,6 +18232,7 @@ E_STAR_GlyphWriteResult
 .E_STAR_GlyphWriteResultB,
 estate
 estatus
+ESteamControllerConfigTemplateWorkshopFileID
 ESteamDatagramMsgID
 ESteamNetworkingUDPMsgID
 ESteamUserStatType
@@ -18167,6 +18271,7 @@ EvaluateRemoteStorageSyncState
 evaluatorscript
 evalvesignaturecheckdetail
 Event
+event_count
 event created
 event deleted
 eventfd
@@ -18728,13 +18833,14 @@ extra interior spaces removed from keyword
 extreme cHRM chunk cannot be converted to tristimulus values
 extReq
 Eyefinity
+)=Eyi
 e+ZQT
 .F))}
 	 F))
-	*	=F
 F&&##
 F&###
 $F09Y
+	*F1A
 	-f3F2
 ;f[4~
 F(7iR@9iH07iR@9	J87iV@9
@@ -19087,6 +19193,7 @@ fd-cl-
 @fDownloadRateImprovementToAddAnotherConnection
 fd-srv-
 f""D~**T
+FDyiR
 feature_actionset
 feature_activator
 Feature Disabled
@@ -19161,6 +19268,7 @@ FileDelete
 file_description
 FileDescriptorProto
 FileDescriptorSet
+File does not exist: "%s"
 file_encoded_sha1
 file error
 FileExclusion
@@ -19246,6 +19354,7 @@ Filter
 filters
 Filters
 filter_text
+:Filter to items that have data for the specified revision.",
 filter_type
 Finalization timeout waiting for processing of %d to complete
 FinalizeAddAuthenticator
@@ -19485,6 +19594,7 @@ FriendMessagesClient
 FriendMessagesClient.IncomingMessage#1
 FriendMessageSession
 Friend-only
+FriendPlayTime
 friend_relationship
 friends
 FriendsAutoLoginEnabled
@@ -19507,6 +19617,7 @@ friend_steamid
 friendster.com
 -friendsui
 friends_with_offline_messages
+{Friends (w/ playtime) that meet a specific criteria -- e.g. for trending, only includes friends w/ more playtime this week."3
 , from:
 from_active_packets_recv
 from_active_time
@@ -19579,7 +19690,6 @@ f|YL#~
 ]&g''}
 .G))}
 "G))!
-	*	%G
 G:   
 G3oML
 g6`^@
@@ -19637,6 +19747,7 @@ G6b&@
 g6`f@
 g6`F@
 G6`F@
+G6h"@
 G6h&@
 G6hJ@
 g6i:@
@@ -19738,6 +19849,7 @@ game_query_port
 Game Release
 Game removed: AppID %u "%s", ProcID %u 
 games
+Game %s created interface %s / %s
 GameSearchParam
 .GameSearchParam
 gamesearchresult
@@ -19766,6 +19878,7 @@ game_server_steam_id
 __gameserverSteamID
 game_server_token
 gamesforwindows.com
+Game %s method call count for %s::%s : %d
 games_played
 gamespot.com
 gamesradar.com
@@ -19834,7 +19947,6 @@ Generated client id: %llu
 GenerateItems
 GENERATE_KEY
 generate_new_token
-generate_nonce
 GENERATE_PARAMETERS
 generationQualifier
 generator:
@@ -20202,6 +20314,7 @@ GetFriendRestrictions
 GetFriendRichPresence
 GetFriendRichPresenceKeyByIndex
 GetFriendRichPresenceKeyCount
+GetFriendsAppsActivity
 GetFriendSessionStateInfo
 GetFriendsGameplayInfo
 GetFriendsGroupActivityCounts
@@ -20277,6 +20390,7 @@ GetInviteLinkInfo
 GetInviteLinksForGroup
 GetInviteList
 GetIPCountry
+GetIPv6ConnectivityState
 GetItemDefinitionIDs
 GetItemDefinitionProperty
 GetItemDefMeta
@@ -20318,6 +20432,7 @@ Get list of authorized devices
 =Get list of lenders that authorized given account as borrower
 +Get list of missing chunks for depot upload
 !Get list played games as borrower
+=Get lists of apps friends are active in, in a variety of ways
 GetLobbyByIndex
 GetLobbyChatEntry
 GetLobbyChatEntry() couldn't find lobby %s
@@ -20816,6 +20931,8 @@ groupid
 	groupname
 group_source_bindings
 group_summary
+group_updated
+GroupUpdated
 group was created
 	gs_app_id
 Gsc_kalman_h_vel
@@ -20871,14 +20988,15 @@ H-1*3
 <h1>%s</h1>
 h2@9)
 h2@9)A
+h2@9)AD
 h2@9h
 h2\9hj
-h2@9)MD
 h2D9H,
 h2G9@
+h2G9H
 h2j9H
-h2q9h
 h2Q9h
+h2z9if
 H3@9(
 H3@9H
 H3@9H	
@@ -20893,20 +21011,21 @@ H6`"@
 H6`*@
 H6`&@
 H6a&@
+h6`B@
 H6`b@
 H6`B@
 h6B9H
-h6B9`J@
 H6c"J9
 h6D9h
 h6E9u6
 H6`f@
 H6`F@
+h6F9)-
 H6h*@
 h6i&@9
 h6`J@
 H6`J@
-*h6K9
+*h6J9
 H6`N@
 h6`r@
 h6`R@
@@ -20921,22 +21040,23 @@ H6u&@
 h6u2@
 H6`v@
 H6`V@
-h6`z@
 h6z9(
 h6z9h
 h6z9H
 H7(	87h
 h78abB
 H7Ah@
+h7h	p7
 !H7h"P7
 H7h	P7
 H7h	P7(
 H7H	P7
-&h7i'07iJ@9	*
+(h7I)07iJ@9
 	h7iF@9
 h7iF@9
 H7iF@9
 h7iF@9i
+H7iF@9i
 H7iF@9I
 H7(	P7
 H7_Ya
@@ -20992,12 +21112,13 @@ h*@9h
 h"@9H
 	h@9(h@9q
 H+@9i
-h"@9	K
+h"@9iK
+h"@9IK
 H9n&B
 h&A)*
 @Ha8a
-h"A9)]C
 h:A9i
+h"A9)QC
 ?HAI	81	9dcG'
 	HAI8xpH
 haI)|pL<
@@ -21049,6 +21170,7 @@ hb@9(
 hb@9	
 h^B9(
 h^B9	
+hB{9?
 hB@9!
 hB@9(
 hB@9(-
@@ -21056,6 +21178,7 @@ hB@9(:
 hB@9(	
 hB@9)
 h"B9(a
+hB@9)]C
 hb@9h
 hb@9H
 h~B9h
@@ -21071,9 +21194,6 @@ hB@9H
 hB@9H4
 hB@9hF
 hB@9i
-hB@9iA
-hB@9IA
-hB@9)iC
 hB@9t
 hbA9(
 hBA9(
@@ -21081,11 +21201,13 @@ hbA9h
 hbA9H
 hBA9h
 hBA9H
-hbA9h8
 hbB9h
 hBB9H
-hBcyI(
-hBFyI(
+=hbCy	
+hbd9H
+hbF9	
+hbf9h
+hbF9H
 hBG9h
 hBG9H
 hBI9h
@@ -21094,9 +21216,6 @@ hbJ*("
 hBL9(
 hBO9t
 hBSJi
-hbuyI(
-hbw9?
-hbXyI(
 hB.y(5
 *hB.yK
 hB.yM1
@@ -21115,13 +21234,15 @@ hc@9`
 hc@9	
 hc@9h
 hC@9h
+hcH9h
+hcH9H
 h&C)j^@
 !hcK+dbF&
 hconnection
 hcontent
 hcontent_file
 hcontent_preview
-h:Cya
+hcV9H
 hd8$!
 hd8% 
 hd8%,
@@ -21139,6 +21260,7 @@ h"D9H
 h,DUu
 he8$he8
 he8%je8c
+h&E9iq
 </head>
 <head>
 HEAD 
@@ -21165,10 +21287,8 @@ hex_to_string
  Hf8a
 hf8fif8
 *hF@9
-hF@9)=A
-h#f9h
+hF@9)1A
 hf@9h
-h#f9H
 hf@9H
 hF[9h
 hF@9h
@@ -21178,14 +21298,17 @@ hf@9v
 hFA9(
 hfA9a
 hfA9h
+hfA9H
 hFA9H
 hFL9H
 hfUyh
+hfW94
 hf@y?
 hg%+|
 h&G)_
 hG@82h
 hg@9(
+h~G9H
 h"G9H
 hgM9h
 hgP9h
@@ -21202,7 +21325,6 @@ H!HJ,
 H(h`O?|s
 `H(hqA1p
 h`H(|sO?
-hhx"C
 h&I)_
 hi5.com
 	hi8	
@@ -21259,14 +21381,13 @@ hj8li*8J
 hJ@9(
 hJ@9h
 hJ@9H
-hJ@9i"
-hjA9iS
+hJ@9iB
 &H)jB@
-hjC9H
 hJD9H
+hJG9	T
+HJh& 
 hjh8H
 hjh8t
-HJhn 
 h'@)jS@
 	H*k	
 hk<8|
@@ -21322,7 +21443,6 @@ hm_pmeth.c
 hn8c|
 hn8Ja
 hn@9H
-h&N9h
 hN@9h
 hN@9H
 h(NB@
@@ -21342,7 +21462,6 @@ HNotification from server to client that it should start a WebRTC session
 h(N&p
 h(Nqx@L
 hnUyh
-h"nyI(
 ho8C!
 ho8k!
 holdInstructionCallIssuer
@@ -21363,6 +21482,7 @@ HOptional: The steamid of the broadcast whose details you are requesting."
 HORI Wireless Switch Pad
 horizontal resultion
 %host%
+host_clientid
 HostConfirmGameStart
 hostname
 	host_name
@@ -21372,6 +21492,7 @@ host_poweroff
 host_restart
 Host: %s
 - host %s (%llu), ip %s, %u connections 
+host_steamid
 HostStringToNetAdr
 host_suspend
       Host %s - %u/%u connections (active/keepalive)
@@ -21384,11 +21505,12 @@ How many at maximum to return.
 #how many seconds between thumbnails
 h&P)_
 h&P)a
+HP Reverb
 HP Windows MR HMD
 +HpXhE
 HqI9x
-h"QyI(
 #/)hR@
+hr@9`
 hR@9(
 hr@9H
 hR@9h
@@ -21396,16 +21518,16 @@ hR@9h%
 hR@9H
 hRA9(
 hrB9zC
-hrD9h
+hRG9h
+hRH9(
 hRH9h
-hRY9H
+hRX9H
 /\HS7_
 !Hs8b
 hscreenshot
 HShould notify the user that the item was added to their Steam Inventory.
 h_steam_pipe
 \h!T[
-h#t9H
 HTC Vive
 HTC Vive Cosmos
 HTC Vive Pro
@@ -21530,14 +21652,15 @@ hv@9H
 hV@9h
 hV@9H
 hV@9jZ@9
-hvB9(
-hvD9h
+hvB9h
+hVG9h
 Hviewer token received from last WatchRequest call, from browser storage.
 Hviewer token received from last WatchRequest call, from browser storage."
 hvUyh
 H{vxH
 hW@9(
 HWID Set
+h"X9(
 !h|xa
 h`xI7X7i7 6
 	h.xM
@@ -21546,12 +21669,14 @@ h~@yh
 h~@yH
 HyperThreading
 h.@yt.
+**H@y)U
 hZ@9(
 hZ@9a
 hZ@9H
-hzD9h
+hzF9(
+hzF9H
+hZG9h
 hzO9e(%
-'	)i>
 ]]]i]
 ]]i]]
 	*i~@
@@ -21562,7 +21687,7 @@ hzO9e(%
 	*I}{
 	*I}@
 	*I#*
-i2\9h<
+i2\9(=
 i2a_ACCESS_DESCRIPTION
 i2a_ASN1_INTEGER
 i2a_ASN1_OBJECT
@@ -21768,6 +21893,7 @@ i	 7)
 I	(7)
 	i78h
 i78hV@
+I(@7))H7	*P7
 i	 7I
 ?i+8,
 (i;8{
@@ -21777,10 +21903,9 @@ i	 7I
 %i'8@
 %i&8@
 	i*8#
-i;8! 
-i%87I&@7)'H7
+i)85u
+i;8a 
 *i(8B
-i)8=B
 i"8b@@9!
 ?i(8h
 ?i(8h*@
@@ -21793,9 +21918,7 @@ i)8h&@
 _i)8H
 i)8h6@y
 i)8hB
-i)8i@
 i)8i&
-i)8!I
 i)8i6@yH
 i`8%i`8
 i)8i&W
@@ -21805,14 +21928,13 @@ i*8j&W
 *i(8kB
 i+8L!
 i(8m&W
-i)8ur
-i)8ut
-i)8Ut
+i)8Us
 i^@9)
 i^@9	
 i~@9*
 =	I@9
 	I@9)
+i98D!
 i&@9g"@9
 i&@9h"@9J!K
 i^@9i
@@ -21828,6 +21950,7 @@ iaI*)
 =i"A)j
 i"A)j
 i*A)K
+iApps that friends have played more this week than last, with list of friends who've played more this week
 ib@9)
 ib@9	
 i'B9)
@@ -21845,7 +21968,6 @@ iBF9(
 ibG99
 i*B)h
 I@BJj
-iBM9k>
 IB)Mki
 iB.yJ5
 ic8Cjc8
@@ -22215,7 +22337,6 @@ if@9i
 if@9I
 iF@9i
 iF@9I
-if@9J@
 `If a paging cursor was used, then this will be the next cursor to use for paging through results"i
 IFCA?L
 I#F)J
@@ -22450,7 +22571,6 @@ ijx_!5k
 *ijx_! k
 ijx_! ka
 iJ@y?
-iJ@yjN@y
 !ik8/
 ik8-	
 *,ik8Kik8
@@ -23310,9 +23430,9 @@ iqmp not inverse of q
 &iquest;
 iR@9)
 iR@9	
-ir@9`i
 iR@9i
 iR@9I
+ir@9@j
 IRegistryInterface
 IReturns the desired ratings board and maximum rating to show on the store
 irT9h
@@ -23517,7 +23637,7 @@ iswspace
 iswspace@@LIBC
 isxdigit
 isxdigit@@LIBC
-!it8a
+!it8?
 italian
 Itau Online
 item	%02x%02x%02x%02x%02x%02x%02x%02x
@@ -23560,20 +23680,21 @@ IV block
 iv gen error
 IVRApplications_006
 IVRChaperone_003
-IVRCompositor_020
+IVRCompositor_022
 IVRControlPanel_001
 IVRDashboardManager_001
 IVRExternalEventSource_001
 IVRNotifications_002
-IVROverlay_016
-IVRRenderModels_005
+IVROverlay_019
+IVRRenderModels_006
 IVRSettings_002
-IVRSystem_015
+IVRSystem_020
 iv too large
 	*iW@
 Iw89#
 )Iw8h
 i~wKVA\
+?i*x?
 *'i$x
 *i,x#
 *i+x`
@@ -23587,7 +23708,6 @@ i"X)j^@
 i{xP9
 i{xrF 
 	I@y<
-iy8|n
 IyixJylx+
 IYixK9
 i~@y?! k
@@ -23610,11 +23730,14 @@ j1@y_
 J2@@9y
 j2	)k
 	J3p_8
+j48sZ
 j48t^@
 J5JJJ}
 J5JJL}
+j68f/
 j68uj9
 `j78*
+{j(8<
 @j!8!
 j`8!%
 j`8"$
@@ -23623,21 +23746,18 @@ j!8_<
 j"8?<
 j)8	 
 j)8	,
-j)8	$
+j)8	*
 j)8	&
 j{8?)
 J& ]8
 j`8"0
 j)8	2
-j)8	3
-{j(84
 j)8	5
 j`8!8
 `j889
 j88uJ@
 J+8@9
 J8\@9
-j!8a.
 `j)8A
 j`8A@@9a
 j`8Ak`8A
@@ -23647,23 +23767,24 @@ j`8b2
 j`8bh`8
 j`8bh`8A
 j`8Bh`8A
+j)8	c
 j`8Ck`8
 j`8`h
 j`8@h
 j!8h^
 j(8H8
 j(8hB@9
+j)8hbA
 j(8hzA
-j)8hZA
 j`8!i 8
 j{8	i;8{
 j)8kj*
-j)8	l
 j 8m	
-j*8*p
+j!8n(
 j`8s:
 j(8`Z
 j(8(Z@
+j$8Z/
 `j@9 
 `J@9 
  J9?@
@@ -23734,9 +23855,6 @@ JBk!8
 JB(KJ
 jB.y+-
 jc8 ,
-jC9 @
-jC9!@
-jC9@g
 JC AJc
 JC@AJc<
 jCh'?/ 
@@ -23745,10 +23863,9 @@ J@ CJ
 JCk 8
 JCk!8
 Jc(LJ
-j*Cy)
 	J#d@
 jd8`jd8 
-JDesired number of items in the voting queue.  May be clamped by the server",
+JDesired number of items in the voting queue.  May be clamped by the server
 JDetermines which files in the given list are in a user's subscription list
 Jdha8D
 JdHs8
@@ -23817,6 +23934,7 @@ JJ5Jj
   JJ5Jj
  JJ5Jjj
  JJ5JJj
+jj)8@?
 J`j"8
 J`j$8
 	Jj*@9f
@@ -23853,7 +23971,6 @@ Jl"@9
 :.JlN
 jlxRjm8
 =j&&LZ66lA??~
-	*JM@
 Jm8iy,x
 jMG\^
 J(N1j(N
@@ -23945,11 +24062,12 @@ JSON file is empty
 JStops usage tracking for all items currently tracked for the specified app
 	#jT$
 	J#t@
+jt8(*
 J.T@9)
 =Jt@9j
 jtxrhrx
 j$U"~
-Jul  9 2019
+	*JU@
 jurisdictionC
 jurisdictionCountryName
 jurisdictionL
@@ -23961,9 +24079,10 @@ jv8?)
 jv8?5
 =jv@9
 jw8?)
+j(x}.
 J%X@9)
 	J	x@9(x@9J
-j(xhzF
+j(xhZF
 	J/Xo
 J:xrG
 	J[Xx
@@ -23973,9 +24092,9 @@ j@yhj
 JYix*$
 J!@yk
 jz8?)
-&J)ZeQ
 JZJ{.
 *:JZjz
+&J)Z=Q
 jZT9e(%
 !#k)|@
 !%K,>
@@ -23996,15 +24115,14 @@ k2N)jJ@
 K-409
 	K5}@
 K-571
-k58Ej
  k58S
 k5KJj}
 k5KJk}
 _k68(
-*_k685
-<k78h
+*_k68
+k785[
 ?k78h
-k78sb
+<k78hS
 !k|8?$
 @k"8`
 *`k&8
@@ -24013,11 +24131,13 @@ k78sb
 *!k 8	
 *$k`8%
 k`8,*
+k:8'%
 k)8		
 ?k88h
-?k88hbw9
+?k88hB{9
 (k88T
 ?K88W
+_k88"x
 "k`8 @@9@
 *&k`8a
 k`8a"
@@ -24274,6 +24394,7 @@ k_EMsgAMTwoFactorRecoverAuthenticatorRequest
 k_EMsgAMTwoFactorRecoverAuthenticatorResponse
 k_EMsgAMValidatePasswordResetCodeAndSendSmsRequest
 k_EMsgAMValidatePasswordResetCodeAndSendSmsResponse
+k_EMsgBadgeCraftedNotification
 k_EMsgChannelEncryptRequest
 k_EMsgChannelEncryptResponse
 k_EMsgClientAccountInfo
@@ -24734,6 +24855,12 @@ k_EP2PSessionErrorTimeout
  k_EProtoExecutionSiteSteamClient
 k_EProtoExecutionSiteUnknown
 k_EProtoExecutionSiteUnknown:<
+)k_EPublishedFileRevision_ApprovedSnapshot
+/k_EPublishedFileRevision_ApprovedSnapshot_China
+ k_EPublishedFileRevision_Default
+k_EPublishedFileRevision_Latest
+)k_EPublishedFileRevision_RejectedSnapshot
+/k_EPublishedFileRevision_RejectedSnapshot_China
 -k_ERemoteClientBroadcastMsgClientIDDeconflict
 $k_ERemoteClientBroadcastMsgDiscovery
 "k_ERemoteClientBroadcastMsgOffline
@@ -24940,7 +25067,7 @@ Ki,8*
 Ki)88
 Ki)8i*@
 K@i`8~K
-ki8kUG
+ki8kQG
 KickChatMember
 KickChatMember() passed invalid chat room %s
 kicked
@@ -25038,10 +25165,8 @@ Kt@9+
 *Kt@9k
 kText rendered in the requested language, complete with variable substitutions, if a language was specified."
 kThe sessionid to request details for. Optional. If not specified, all the user's sessions will be returned.
-ku8[B
 Kuveyt Turk Bank
 	kv8?)
-kv@96?
 kV!DA
 kv_headers
 kvsign2
@@ -25053,10 +25178,12 @@ k"	)Wy)
 _k+xJ1
 kx`xj}
 K@y(%
+k@yb;
+K@yb;
 Kykx)
 *kYlxm
 	kz8	
-kzD9h
+kZG9h
 	*l!*
 /L-@	*
 (@L$ 
@@ -25071,7 +25198,6 @@ L@9"@
 L9cbL9
 l.@9k*@9
 l@9<l@9)
-lA@9l
 label
 Label
 LABEL_OPTIONAL
@@ -25127,6 +25253,7 @@ last_seen_online
       last send call: %d ms ago
 last_session_id
 	last_time
+Last time content updated
 Last time content updated"
 last_time_updated
 last_time_used
@@ -25397,12 +25524,14 @@ linux41
 Linux 4.1
 linux414
 Linux 4.14
+linux419
 linux44
 Linux 4.4
 linux49
 Linux 4.9
 linux4x
 Linux 4.x
+linux5x
 linux64
 LINUX64
 LinuxHome
@@ -25462,6 +25591,7 @@ LL-LZZa
 \%llu_%s.png
 ll_value
 [-&LMb#{'
+LMinutes this friend played the game (from the enclosing structure) all time.
 /":lnv 
 load_address
 LoadBroadcastSettings
@@ -25660,8 +25790,7 @@ low-pri yield - userscreenshots.cpp:2144
 lowviolence
  - Low Violence 
 Low Violence
-$l@}%p@}&t@}K<
-lQA9nUA9J
+$l@}%p@}&t@}
 LRequest from client to stop a broadcast session. Any uploads will terminate.
 lseek
 lseek@@LIBC
@@ -25684,13 +25813,12 @@ lvs&4
 L@x@L
 )L@y?
 ;"lY7
+	*)L@yJU
 l!@ym
 LzmaDec_DecodeToDic no progress?
 \\\m\
 \\m\\
-	*	}M
 	*M!,
-)#M)*3@
 M3fU3
 m	@9)
 "M9_;
@@ -25794,6 +25922,7 @@ MangirKart
 Manifest %d_%llu not finalized
 manifest_dump
 manifestgid
+Manifest GID
 manifestid
 manifest_id
 Manifest ID / date     : %llu / %s 
@@ -25895,7 +26024,6 @@ m_bQueueProxyDiscoveryCheckOnDispatch is expected to be windows only!
 m!C9+!
 MCheck if the given parental unlock token is correct for the logged in account
 m_cubVoiceDataStored == %d
-	*	mD
 md2WithRSAEncryption
 md4_block_data_order
 MD4_Final
@@ -25968,6 +26096,7 @@ merchant initiated auth
 (merge 
 merge_guid
 MESA_GLSL_CACHE_DIR
+MESA_GLSL_CACHE_MAX_SIZE
 message
 Message
 message $0
@@ -26141,6 +26270,7 @@ Method GetEmoticonList() not implemented.
 Method GetExcludedGamesInLibrary() not implemented.
 Method GetFileDetails() not implemented.
 Method GetFriendInviteTokens() not implemented.
+Method GetFriendsAppsActivity() not implemented.
 Method GetFriendsGameplayInfo() not implemented.
 Method GetGameBadgeLevels() not implemented.
 Method GetInventory() not implemented.
@@ -26248,6 +26378,7 @@ Method NotifyPerFriendPreferencesChanged() not implemented.
 Method NotifyPrivacyPrivacySettingsChanged() not implemented.
 Method NotifyRegisterStatusUpdate() not implemented.
 Method NotifyRemotePacket() not implemented.
+Method NotifyRemotePlayTogetherPacket() not implemented.
 Method NotifyReplyPacket() not implemented.
 Method NotifyRequestClientUsabilityMetrics() not implemented.
 Method NotifyServer() not implemented.
@@ -26314,6 +26445,7 @@ Method SendBroadcastStateToServer() not implemented.
 Method SendChatMessage() not implemented.
 Method SendEmail() not implemented.
 Method SendMessage() not implemented.
+Method SendRemotePlayTogetherPacket() not implemented.
 Method SendShader() not implemented.
 Method SendSteamBroadcastPacket() not implemented.
 Method SendSteamToSteamPacket() not implemented.
@@ -26436,6 +26568,8 @@ minute_limit
 MinuteLimit
 minutes_played
 minutes_played_forever
+minutes_played_this_week
+minutes_played_two_weeks
 minutes_used
 MinutesUsed
 min_val
@@ -26571,6 +26705,7 @@ mllt!
 m_MapHostsToPersistentConnections has NULL entry!
 mmap@@LIBC
 MMfU33
+MMinutes this friend played the game (from the enclosing structure) this week.
 MM)MMRd
 MMM)MRd
 MM)MRd
@@ -26684,7 +26819,6 @@ msSmartcardLogin
 mstring not universal
 mstring wrong tag
 msUPN
-('M)t
 mThe number of days after initial device authorization a user must wait before using the market on that device2
 MThe title of the session to be displayed within each user's list of sessions.
 MT-%s
@@ -26735,7 +26869,6 @@ m_vecLocks.Count(): %d, m_vecLocks[0]: (0x%p), pLock: 0x%p, this: 0x%p, pLock->G
 m_vecLocks.Count(): %d, this: 0x%p, pLock->GetJobLocking(): %s (0x%p)
 mvSylj
 mXRecord
-*mYA9
 myfavorites
 myfiles
 myfilesB,
@@ -26748,6 +26881,7 @@ mysubscriptions
 my_timestamp
 @(!N 
 n >= 0
+ N!@1
 N10CIPCServer13CThreadClientE
 N11SteamStdLib12CCommandLineE
 N11SteamStdLib12ICommandLineE
@@ -26838,6 +26972,7 @@ N5ujson5value6impl_tE
 N5ujson9exceptionE
 n6@9m2@9
 N6/~n.
+)#N)*7@
 n8/ho8
 `n@9 
 `N@9 
@@ -26846,7 +26981,6 @@ N9e(%
 n.@9g*@9! B
 n@9hb
 N@9hB
-)%N9i
 Nack count of %llu<<3 is crazy
 nack count upper bits
 Nack range underflow, end=%lld, num=%lld
@@ -27043,6 +27177,7 @@ NewRelaySession
 NEW: %s
 new_session
 NewsItemUpdate
+news_language
 new target
 nexon_dota2
 next_cursor
@@ -27054,7 +27189,6 @@ nextUpdate
 nextupdate before thisupdate
 +!N?G
 nGroupID
-n@=H@
 "nhF@9gJ@9eN@9
 (>nH&p
 &''Ni
@@ -27259,6 +27393,7 @@ No package info for packageID %u found.
 no parameters set
 No partner pipe?
 no password
+No payment provider is configured to handle the transaction
 no pem extensions
 No ping data available.
 no policy identifier
@@ -27477,6 +27612,7 @@ NotifyOnline
 #NotifyPrivacyPrivacySettingsChanged
 NotifyRegisterStatusUpdate
 NotifyRemotePacket
+NotifyRemotePlayTogetherPacket
 NotifyReplyPacket
 #NotifyRequestClientUsabilityMetrics
 NotifyRichPresenceJoinRequested
@@ -27609,6 +27745,7 @@ NSt6__ndk19basic_iosIcNS_11char_traitsIcEEEE
 NSt6__ndk19basic_iosIwNS_11char_traitsIwEEEE
 nStf,a
 nSw}Z	u
+('N)t
 @nTCPLargeSendBufSizeMB
 n<!TH+9
 &ntilde;
@@ -27692,16 +27829,15 @@ nvme-
 n@yhf
 n@yhn
 @nyj<
-	!nyJ(
 nytimes.com
 @ny	$W
-nzCya
 ^(O= 
 :O "#-
 o&1m&
 o2i_ECPublicKey
 O44h\
 O=4_}gL:
+o6`^@
 o6`>@
 o6`:@
 o6`.@
@@ -27733,6 +27869,7 @@ O6a6@
 o6a6A9
 o6a&A9
 O6a"A9@
+o6aB@
 O6ab@
 O6aB@
 O6af@
@@ -27749,10 +27886,11 @@ O6aR@
 o6aV@
 O6av@
 o6az@
+O6az@
 O6`B@
 O6h"@
 O6h*@
-o6i:@
+o6i>@
 o6i*@
 O6i^@
 O6i"@
@@ -27773,7 +27911,8 @@ O6`N@
 o6`r@
 o6`R@
 O6`R@
-O6t*@
+O6t.@
+O6t&@
 o6t6@
 o6u.@
 O6u.@
@@ -27784,15 +27923,15 @@ o6uB@
 o6`V@
 O6`v@
 o6`z@
+O6`z@
 O7hB@
 @O@9!
+O9(1E
 O	@9P5@9S
-O9(qG
 }o]9s
 &oacute;
 &Oacute;
 oaep decoding error
-*oAK)
 Oakley-EC2N-3
 Oakley-EC2N-4
 o`A@Lk
@@ -28001,12 +28140,12 @@ Oio8,
 Oio8s
 oj;8**
 oj88J
-ojCya
 o%%Jr..\$
 ok/accept SSL initialization
 ok/connect SSL initialization
 Okmx-
 OkmxMkpx
+OLanguage for which to query about news items (for the being_discussed results)."
 OLD_DSA_PRIV_DECODE
 OLD_EC_PRIV_DECODE
 oldestfirst
@@ -28026,6 +28165,7 @@ OnBigPictureForStreamingDone
 OnBigPictureForStreamingRestarting
 OnBigPictureForStreamingStartResult
 Once preferred servers reach this load, we'll continue to use non-preferred servers in the list after them
+OnClientUsedInput
 On-disk registry has changed and is marked dirty - we're about to lose data.
 OneCard
 oneof_decl
@@ -28557,6 +28697,7 @@ owner_steam_id
 OwnGameplayInfo
 own_library_locked_by
 ownsdlc
+O@x*"
  *O y
 O@yh"
 O!YNO
@@ -28604,11 +28745,9 @@ p5_pbev2.c
 p6`^@
 p6`>@
 p6`.@
-P6`.@
 P6`"@
 P6 #@
 P6`2@
-P6a.@
 P6aj@
 P6aN@
 p6aVA
@@ -28632,18 +28771,18 @@ p6`v@
 P6`V@
 P6`ZA
  	p7`
-+P7(,
+/P7(0
  	p7aF@
 P7h	X7
 P7h	X7(
 P7H	X7
  P7h!X7("`7
+p7iF@9
 P7iF@9
 p7iF@9i
-p7iF@9I
 	p7s	
 p7tJ@
-*p7(+x7
+.p7(/x7
 p7	"x7
 #P7($X7
 P7(	X7
@@ -28658,6 +28797,7 @@ P7)_@y)
 =)p@9 
 	p@9(<
 p@9)<
+	!P9	
 ,p@90t@9Op@9Ct@9
 *p@94|@9B
 #P@9&\@9B
@@ -28670,7 +28810,6 @@ P9e(%
 p@9>p@9)
 P@9<P@9)
 *p@9	p@9j
-	PA9h
 (%p) Aborting HTTP request because BAsyncSend() failed (AsyncSendCurrentRequest)
 (%p) Aborting HTTP request because we received a ConnectFailed callback (handle: %X  eResult: %d  extended: %llu)
 (%p) Aborting HTTP request due to lack of SSL certificate verification
@@ -28783,6 +28922,7 @@ p(aN'*!
 #Panorama_Selection_Turkish
 #Panorama_Selection_Ukrainian
 #Panorama_Selection_Vietnamese
+PApps friends have played in the past two weeks for which the user has no license
 &para;
 parameter encoding error
 parameter error
@@ -28901,6 +29041,7 @@ Payment method allows multiple pending transactions, but there is an overlap of 
 Payment method is disabled
 Payment method is not allowed for this purchase
 Payment Required
+Payment requires additional authentication step
 payments
 PayPal
 PayPal internal error
@@ -28950,7 +29091,6 @@ PBKDF2PARAM_free
 PBKDF2PARAM_it
 PBKDF2PARAM_new
 PBMAC1
-pB,Pi
 pcgamer.com
 pcgames.gwn.com
 p.char_two
@@ -29209,6 +29349,7 @@ p}?fff?
 /pfx/drive_c/users/steamuser/My Documents
 /pfx/drive_c/users/steamuser/Saved Games
 PGet a list of hashes describing the version of each chunk of the requested size.
+ P@}H>
 Phone
 photo
 php_output_always_number
@@ -29678,6 +29819,7 @@ POPs . . . :
 POP %s has invalid relay ipv4 address '%s'
 POP '%s' lists invalid alias '%s'
 POP %s router %s has missing/invalid port range
+popular
 Populate the metadata
 Populate the metadata field
 @Populate the short_description field instead of file_description
@@ -30231,15 +30373,15 @@ pWorkThread->m_bFinished is false but thread is not running
 pwrd_telecom
 pwrd_unicom
 P<xD<
+p@y%]@
 py_generic_services
-p@y%Y@
-pZCya
 pzKD)
 pZlNr
 >//^q
 ?@	q!#
 [[[q[
 [[q[[
+]<q@	
 **	@q
 *		@q
 Q:   
@@ -30254,10 +30396,11 @@ q`2D9
 q`3@9 
 },Q$"'.4
 q#4@9 8
-!@q6>
+	q49n
 q`6D9 
 q`7@9 
 q#8@9 <
+=	q?9
 q`/@9 
 q`'@9 
 q`#@9 
@@ -30296,6 +30439,7 @@ Q-c($
 QC-nhj
 qcRFy
 qcStatements
+QC)x+
 q`>D9 
 q`:D9 
 q`.D9 
@@ -30305,6 +30449,7 @@ q`&D9
 q'D@9$L@9#H@9
 QDid the user choose to keep the files local to the machine they are on right now?""
 `@ `QE
+!^#QE
 qE9?<
 QE9H!
 Qe#@9y'
@@ -30330,12 +30475,10 @@ qj;8*)
 qj88j
 qj88J
 qj>8J&
-qJCya
 q`JD9 
 Qjh/T
 QJKi8_
 q J(N
-!^#qK
 @QK,	
 Qkkbal
 QkkXa
@@ -30354,6 +30497,7 @@ q@!Ozj5
 QPeA~S
 [[qq[
 +QQ 3K%
+	Qq9i
 QQQYQ
 QQYQQ
 QQYYQ
@@ -30370,6 +30514,7 @@ qsort@@LIBC
 *qSyJ
 Qt#@9!
 '#^QTy
+qu9H5
 	qualified
 qualifiers
  --quality %d
@@ -30435,49 +30580,45 @@ qWoQmLI
 q"X(NBx(NAx
 Q/xtJ2
 **qXU
-	!QyJ(
 Q?Y(xhv@
 q 	@z
+	qz9	
 q Z(N
 q!Z(N!x(N2Z(NRz(N
 r:   
 }{))R>
 R||))
 R|)))
-r	!09
-R	1&9'B
 R1h58
 R2I_CERTPOL
 R2I_PCI
 R3i*8s
-r	!59
-R	5&9kA
 r)5IJ)}
 r)5IJ+}
 R)5IJKV
+r	!69a
 R6hv8
 R6hx8
 R6RJR~
 `r@9 
+r	!=9
+r	!:9
 `R@9 
 R-	@9.
 R% @9
-R	9&9
 r!9h2
 r@9ir@9
 r@9ir@9j
 r@9ir@9J
-r	!>9J
 r@9jq@9
 r@9lq@9
 r!9uR"9h2
 r'9xDrS
-r	A39b
-r	a39i
-r	a>9
-r	a?9
-r	a+9
-r	a,9g
+r	a09
+r	a59}
+r	a59A
+r	a89S
+r	A 99
 @Rack informing site manager of new inbound client PSK connection
 rackspace
 RackSystem
@@ -30524,7 +30665,6 @@ raw_file_size
 Raw stream mode only supported for TCP connections
 rB2pBB
 Rb&@8
-rB9	:
 Rbg.E
 Rbj`8!
 Rbja8
@@ -30584,7 +30724,6 @@ rchmxB
 Rcic8Z
 RCxhj
 RCxhv
-rD9h*
 Reached an unintended state: CPPTYPE_MESSAGE
 read bio not set
 read body
@@ -30689,6 +30828,7 @@ ReceiveRemoteCandidates() %s received candidates from %s, %llu
 ReceiveRemoteCandidates() %s refusing connection from %s, %llu
 receiver_steamid
 ReceivesGroupComment
+recent_purchases
 Recent Runtimes(
 RecipientAddress
 recipientEncryptedKeys
@@ -30701,6 +30841,8 @@ Reconfiguring
 Recorded backend hit cache generation %d.
 record length mismatch
 record overflow
+RecordSteamInterfaceCreation
+RecordSteamInterfaceCreation (PID %d): %s / %s
 record too large
 record too small
 RecoverOldScreenshots
@@ -30796,6 +30938,7 @@ Rejecting connection request from %s at %s, connection ID %u.  That steamID/Conn
 .rela.plt
 relationship
 relative_mouse
+relative_mouse.vdf
 relativename
 Relative URL: %s
 relay=
@@ -30868,11 +31011,13 @@ Remote Client Listener
 remoteclientmanager.cpp
 RemoteClient.NotifyOnline#1
 RemoteClient.NotifyReplyPacket#1
+RemoteClient.SendRemotePlayTogetherPacket#1
 RemoteClient.SendSteamBroadcastPacket#1
 RemoteClient.SendSteamToSteamPacket#1
 RemoteClientSteamClient
 RemoteClientSteamClient.NotifyRegisterStatusUpdate#1
 RemoteClientSteamClient.NotifyRemotePacket#1
+RemoteClientSteamClient.NotifyRemotePlayTogetherPacket#1
 RemoteClientSteamClient.NotifySteamBroadcastPacket#1
 RemoteClientSteamClient.NotifySteamToSteamPacket#1
 RemoteClientSteamClient.NotifyUnregisterStatusUpdate#1
@@ -30882,6 +31027,7 @@ Remote File Conflict
     Remote host is in data center '%s'
 Remote peer connection: FAILED - invalid steamID
 remote_play
+RemotePlayTogether
 remote_steamcmd
 remotetime
 Remote Tokens : 
@@ -31213,6 +31359,8 @@ return_short_description
 *Returns the player's community preferences
 return_tags
 Return tags in the file details
++Return the data for the specified revision.
++Return the data for the specified revision."
 *Return the results with bbcode formatting.
 (Return the total number of changes only.
 return_url
@@ -31228,6 +31376,9 @@ reverted_stat_value
 Reviews
 review_score_preference
 revision
+revision_change_number
+RevisionData
+	revisions
 revocation_attempts_remaining
 revocation_code
 revocationDate
@@ -31251,6 +31402,7 @@ RFC 5639 curve over a 512 bit prime field
 rFC822localPart
 rfc822Mailbox
 R##Fe
+RG9h*
 RGBA: %.2X %.2X %.2X %.2X
 rgb to gray green coefficient
 rgb to gray red coefficient
@@ -31277,11 +31429,14 @@ Rhjh8
 Rhjh8	)
 Rhjh8	#
 Rhjh8	%
+rhjh8h
+rhjh8H
 Rhjh8h
 Rhjh8H
+Rhjh8hX
 Rhjh8tBX
 Rhjh8xJ[
-Rhj)x
+Rhj)x Y
 RHkh8
 r!hmx
 r	h-x
@@ -31293,14 +31448,13 @@ r	h-xj
 r	h*xJ
 R	h,xL
 r	h,x	V
-rH;+*$Z<]
-R	i5xhF
+R	i5x
 R?i(8
 R(i*8
-R(i*8`?
 R	i*8
-R(i*8(3@
+R	i*8]
 R*i(8h*@
+R(i*8l
 rich_presence
 RichPresence
 rich_presence_kv
@@ -31386,7 +31540,6 @@ R)kh8(
 RKikxp
 rkjjx
 Rkjkxljl8k!
-R(kz8
 rLikx)}
 rmd160
 RMD160_version
@@ -31450,6 +31603,7 @@ RpE@)`	@
 RPip8
 rPipxOiox
 RPjpx
+R	Q19
 RR|))
 RRecords a serial number and the calling user's account info for warranty purposes.
 rRjmx	
@@ -31609,6 +31763,7 @@ rtime32_created
 rtime32_creation_time
 rtime32EarliestSubscribedFileToDownload
 rtime32_end_time
+rtime32_gained
 rtime32_last_modified
 rtime32_last_updated
 rtime32_server_time
@@ -31762,7 +31917,6 @@ S6jh8)
 S(7iV@9iU07iV@9	W87iZ@9
 S#>87`
 S%8@9
-)!S9?
 S& @9
 S	(@9
 %s    90-95 :%5d  %3.0f%%
@@ -31775,7 +31929,8 @@ S	(@9
 %s    98%% of pings <= %4dms
 %s    98%% of speeds <= %4d KB/s
 %s     99+  :%5d  %3.0f%%
-S@9aH
+s@9b;
+S@9b;
 S9e(%
 s@9h0
 S9jZT9k
@@ -31832,6 +31987,7 @@ Saving personalization
 Saving roaming config store failed during shutdown
 saving roaming config store to '%s'
 Saving roaming config store write-aside failed during shutdown
+sAy";
 SAy(3
 says it's ok to ignore cert validation issues if using WebSocket connections, for dev use only
 SB,E*!
@@ -32101,7 +32257,6 @@ SDR service thread gave up on lock after waiting %dms.  This directly adds to de
 sdsiCertificate
 %s    Duplicate :%11s pkts%7.2f%%
 %s/DXVK_state_cache
-SDyB;
 %	S(E
 Search for a game
 SearchForGame
@@ -32346,6 +32501,7 @@ send_path_prefixes
 SendQueryUGCRequest
 SendRateMax
 SendRateMin
+SendRemotePlayTogetherPacket
 send reports about broken install scripts
 SendResumeRequest
 SendSAS
@@ -32891,6 +33047,7 @@ Sets RTMP broadcast info
 SetStat
 SetSteamID( %s )
 'Sets the player's community preferences
+SetStreamingDesktopToRemotePlayTogetherEnabled
 SetStreamingDriversInstalled
 SetStreamingEnabled
 SetStreamingPIN
@@ -33137,8 +33294,6 @@ S`i#8
 S i#8
 S@i#8
 S@I`8
-	Si9i
-	Si9I
  siblings="%s"
 %s/IEmbeddedClientService/AuthorizeDevice/v1/
 sIf true, then files must have all the tags specified.  If false, then must have at least one of the tags specified.
@@ -33208,7 +33363,6 @@ sigx_app
 SiIi8
 S*ij8
 %simages/apps/%u/%s.%s
-%s/IMobileAuthService/GetWGToken/v1/
 Simple
 simpleSecurityObject
 since_change_number
@@ -33549,6 +33703,7 @@ sounds_play_online
 sounds_showingame
 sounds_showmessages
 sounds_showonline
+source_appid
 source_code_info
 SourceCodeInfo
 Source Engine Query
@@ -33558,6 +33713,7 @@ sourcetv_port
 source_type
 %s    OutOfOrder:%11s pkts%7.2f%%
 %s overflow!
+SOwned apps that friends have posted status or screenshots for in the past two weeks
 [%s] P2P route through '%s' now forwarding to '%s', revision %d
 space
 [%s] Packet data chunk failed to decrypt!  Could be tampering/spoofing or a bug.
@@ -34605,10 +34761,6 @@ steam2_ticket
 steam2_ticket_request
 Steam2WrapperEncryptionKey
 {Steam3AccountID}
-steam3beta16.valvesoftware.com:27018
-steam3beta16.valvesoftware.com:443
-steam3beta19.valvesoftware.com:27018
-steam3beta19.valvesoftware.com:443
 Steam3 Client Engine
 Steam3Master
 SteamAPI called with an invalid steamID
@@ -34634,6 +34786,10 @@ STEAMAPPTICKET_INTERFACE_VERSION001
 steam.app.%u
 SteamAppUser
 Steam_BConnected
+steambeta-0010.steambeta.net:27018
+steambeta-0010.steambeta.net:443
+steambeta-0020.steambeta.net:27018
+steambeta-0020.steambeta.net:443
 Steam_BGetCallback
 SteamBilling002
 Steam_BLoggedOn
@@ -34661,6 +34817,7 @@ SteamClient016
 SteamClient017
 SteamClient018
 SteamClient019
+SteamClient020
 STEAM_CLIENT_CONFIG_FILE
 SteamClient: Failed to save sentry file
 // Steam client game downloads will proxy through this port on the site server
@@ -34701,6 +34858,7 @@ SteamController_%s
 SteamController_%s_Command
 SteamController_Slow_%s
 SteamController_SwitchSupport
+SteamControllerTouchConfigDetails
 SteamController_XBoxSupport
 Steam_CreateGlobalUser
 Steam_CreateLocalUser
@@ -34718,6 +34876,7 @@ steam_display
 STEAM_ENABLE_SHADER_CACHE_MANAGEMENT
 Steam Engine
 steamengine.cpp
+STEAM_EXTRA_COMPAT_TOOLS_PATHS
 STEAM_FOSSILIZE_DUMP_PATH
 STEAM_FOSSILIZE_DUMP_PATH_READ_ONLY
 Steam_FreeLastCallback
@@ -34752,6 +34911,7 @@ SteamGameServer009
 SteamGameServer010
 SteamGameServer011
 SteamGameServer012
+SteamGameServer013
 SteamGameServerStats001
 steam/games/%s.%s
 SteamGameStats001
@@ -35017,6 +35177,7 @@ SteamNetworking002
 SteamNetworking003
 SteamNetworking004
 SteamNetworking005
+SteamNetworking006
 SteamNetworkingMessagesSession::ConnectionStateChanged after detaching from connection?
 SteamNetworkingSockets002
 SteamNetworkingSockets003
@@ -35122,6 +35283,7 @@ SteamStreamingHardwareEncodingNVIDIA
 SteamStreamingInput
 SteamStreamingMaximumResolution
 SteamStreamingVideo
+SteamStreamingVideoDisableVSync
 SteamStreamLauncher001
 SteamSwarm
 SteamTenfoot
@@ -35250,6 +35412,7 @@ StopApp
 StopCrashMonitor
 Stopping
 Stopping rendering after %d connections.  (%d total connections exist.)
+Stopping use of cache type '%s' on host '%s' for manifest requests due to errors
 StopPlaytimeTracking
 "StopPlaytimeTrackingForAllAppItems
 StopPlaytimeTrackingForAllItems
@@ -35342,7 +35505,6 @@ string_value
 String value to report2
 strip_description_bbcode
  Strips BBCode from descriptions.
- Strips BBCode from descriptions."
 strlen
 strlen@@LIBC
 strlen(objstr) + 23 + 2 * enc->iv_len + 13 <= sizeof buf
@@ -35558,7 +35720,6 @@ SXNETID_new
 SXNET_it
 SXNET_new
 %s\%x%x
-S@y";
 sY8	5
 &*Syg
 S)ylx
@@ -35598,7 +35759,6 @@ __system_property_get
 __system_property_get@@LIBC
 SystemRAM
 systemreport
-system.vrdashboard
 s@ysz
 &szlig;
 %*sZone: %s, User: 
@@ -35753,7 +35913,6 @@ Ta(@9
 Ta{@9
 Ta$@9
 T	`A9
-T	A\9
 TA @9_'
 TA(@9_/
 TA$@9_+
@@ -35801,6 +35960,7 @@ TaJC9
 Taks8
 TaNB9
 TaNC9
+tApps friends have played in the past two weeks which the user has neither purchased nor played in the past two weeks
 T?a@q
 T?A@q
 TaRB9
@@ -35825,12 +35985,12 @@ TaVB9
 TaVC9
 Tax@Lf
 TA	@y
-T	Ay9
 T*a@y+e@y
 Tb2@9
 TB3@9?4
 Tb4@9
 Tb6@9
+Tb6Cyc:Cy
 TB7@9?<
 Tb8@9  _8" 
 Tb:@9
@@ -36017,10 +36177,11 @@ TGje8
 Th2\9
 Th2C9
 Th2C9H
-Th2G9
-Th2K9(
-Th2W9
+Th2G9h
+Th2J9(
+Th2V9
 Th2z9
+Th6Ay
 Th6D9
 Th6z9
 T?h 8
@@ -36042,12 +36203,10 @@ T#hb8
 Thb[9
 Thb@9
 Th~B9
-Th.B9
 Th"B9
 ThB@9
 ThB@9(
 ThB@9(	
-ThB\9
 Thb@9H
 ThB@9h
 ThB@9H
@@ -36056,13 +36215,11 @@ ThBA9
 ThbA9h
 ThBB9h
 ThbD9
-ThBD9
-ThbD9H2
 ThbG9
-ThbU9{~B
-Th.By
-ThBy9
-ThB@yj
+ThbG9h
+ThBG9H2
+ThBU9{zB
+ThB@yjN
 Th&C)
 T hc8
 Thc@9
@@ -36080,6 +36237,7 @@ The app that contains the item
 the asn1 object identifier is not known for this md
 The bucket count must be greater than 0 or the implementation will crash due to an incorrect mod mask.
 )the Bundle ID of the glyphs to be written
+-The change number for the specified revision.
 The ClientServiceCallResponse does not contain a valid size for its OS Info - %d
 "The current title for the session.
 The details of the session."
@@ -36117,6 +36275,7 @@ there must be one signer
 the request was HTTPS
 the resulting relationship"
 the resulting relationship")
+The revision of the data returned, usually k_EPublishedFileRevision_Latest, but can be another revision/snapshot depending on the caller.
 the same event name (%s) was created as both manual and auto reset, something's fubar'd
 The server's IP and query port
 The sessionid for this session.
@@ -36171,6 +36330,7 @@ Th&J)
 Thj68
 ThJ@9
 ThJ@9(
+Thjd9
 T		HK?
 THkk8
 Th*@)l.H)oBA)qJI)m:Di
@@ -36178,7 +36338,6 @@ ThN@9
 ThN@9h
 ThN@9L
 ThnBy
-ThnC9
 &thorn;
 &THORN;
 Th:P9.
@@ -36211,7 +36370,7 @@ Thread synchronization object is unuseable
 ThreadTerminate
 threadtools.cpp
 ThreadWorkItem
-ThRY9h
+ThRX9h
 th_TH
 thumbnail
 thumbnail_broadcast_session_id
@@ -36229,9 +36388,8 @@ thumbnail_width
 Th~@y
 Th.@y
 Th.@y`
-Th:@yj
+Th:@yj>
 ThZ@9`
-Th>z9h::9
 ThZN9A
 ThzO9(
 T*|?i|~
@@ -36278,6 +36436,7 @@ Ti"E)4!
 TiF@9
 TiF@9)
 TiF@9i
+TiF@9I
 TifA9i
 T(ih8
 Tih8)!
@@ -36554,6 +36713,7 @@ TMPDIR
 .tmp.swap
 Tm	@y
 Tn}A9
+Tnij8
 To1@9
 To5@9
 T`o@9
@@ -36780,6 +36940,7 @@ Transport
 transport_error
 Transport signal with no payload, ignoring
 tree_find_sk
+trending
 T`REy
 =trF6,#
 TRG7ts
@@ -36917,7 +37078,6 @@ TTTMT
 `tun%
 turkish
 Turning off Switch controller
-Turning off Switch controller due to idle timeout %d
 Turning off Switch controller via BT disconnect
 Turning on early CRC checks for all received data.
 TurnOffController
@@ -36943,7 +37103,7 @@ T*_}x:
 t_x509.c
 Tx:@9
 T$X@9C0
-T	xD9
+T	XG9
 !tX)i
 Txja8
 T@x@L
@@ -37012,7 +37172,7 @@ TYPE_UINT64
 &T)z"@
 Tz:@9
 Tzja8?
-@`@<U
+Tzs49h*B
 \u000
 \u001
 \U%04lX
@@ -37056,7 +37216,6 @@ UDPSocket: WSARecvFrom synchronously returned error %d (%s) from socket %d, (inv
 UDP %s@%s
 /u%d-Shm_%x
 /u%d-ValveIPCSharedObj-Steam
-	*	UE
 u?fff?fff?r
 u?fff?fff?X
 %u frame functions of type %s:
@@ -37477,6 +37636,7 @@ unmatched parentheses
 unnamed
 unnamed job
 Unnamed service method.
+unowned
 Unpack failed (c:%u,u:%u,b:%u)
 unpacking bad chunk "%s" (%s)
 UnPair
@@ -37522,6 +37682,8 @@ unreliable msgnum
 unreliable msgnum offset
 unreliable size lower bits
 unsafe legacy renegotiation disabled
+UnseenItem
+unseen_items
 unsetenv
 unsetenv@@LIBC
 unShaderHitCacheGeneration
@@ -37870,11 +38032,13 @@ usleep
 usleep@@LIBC
 /usr/bin/
 /usr/bin/open
+/usr/local/share/steam/compatibilitytools.d
 /usr/local/ssl
 /usr/local/ssl/cert.pem
 /usr/local/ssl/certs
 /usr/local/ssl/lib/engines
 /usr/local/ssl/private
+/usr/share/steam/compatibilitytools.d
 #%u %s '%s'
 UTCTIME
 Ut]<E
@@ -37901,7 +38065,6 @@ UUPx((
 [U:%u:%u]
 UUUIU
 %u.%u.%u.%u
-[U:%u:%u:%u]
 """"UUUU
 %u.%u.%u.%u:%u
 UUUUUUUUUUUa
@@ -37987,6 +38150,7 @@ v5>}#
 v6\9w2\9
 V8zc5\e
 `v@9 
+	!v9	
 `V@9 
 V@9H&
 @V9HP
@@ -38212,6 +38376,7 @@ VMS_MERGER
 VMS_UNLOAD
 Vn+++
 Vnn++
+VNumber of events involving this user & app. (Only set for results in being_discussed.)
 Vn+vv
 vOB9`
 voice_allowed
@@ -38312,8 +38477,6 @@ W1O	g_?
 w6`^@
 w6`~@
 w6`>@
-W6`~@
-W6`.@
 W6`"@
 W6`*@
 W6`&@
@@ -38324,9 +38487,7 @@ W6`6@
 w6a^@
 w6a~@
 w6a>@
-W6a~@
 W6a>@
-W6a.@
 W6a"@
 W6a*@
 W6a&@
@@ -38376,15 +38537,16 @@ W6i6@
 w6i^A9
 W6i.A9
 W6i*A9
+w6iB@
 W6if@
 W6iVA9
 W6`j@
 W6`n@
 W6`R@
-W6t.@
+W6t*@
+W6t2@
 w6tf@
 W6u:@
-W6u.@
 W6u&@
 w6u2@
 W6u2@
@@ -38482,7 +38644,6 @@ wcsncpy
 wcsncpy@@LIBC
 wcstol
 wcstol@@LIBC
-WC)xV
 weak_dependency
 We are pursuing a session on cluster %s, but that cluster is relay type %d.  Why are we doing this?
 We are the 'client' who initiated the connection, so 'server' shouldn't be sending us this!
@@ -38499,7 +38660,6 @@ WebMoney
 WebMoney (Degica)
 WebMoney Steam Card (Japan)
 WebMoney Steam Card Top Up (Japan)
-web_nonce
 WebRTCAddCandidate
 WebRTCAddHostCandidate
 WebRTCAddViewerCandidate
@@ -38566,6 +38726,7 @@ When the token was created
 )Whether I want to show this in my history
 )Whether I want to show this in my library"r
 :Whether or not we've requested the user fill out tax forms
+Which button is the emulation activation button?
 " which is.
 ", which is not defined. The innermost scope is searched first in name resolution. Consider using a leading '.'(i.e., ".
 )", which is not defined. The innermost scope is searched first in name resolution. Consider using a leading '.'(i.e., "(.
@@ -38657,6 +38818,7 @@ wmemmove
 wmemmove@@LIBC
 wmemset
 wmemset@@LIBC
+WMinutes this friend played the game (from the enclosing structure) in the past 2 weeks.
 w>mMS
 (wMww
 wn>Jj
@@ -38767,7 +38929,6 @@ WWWAW
 !,wze
  wZiK
 w"ZXb
-	x	%@
 \x%02x
 x121Address
 X!;3; 
@@ -39326,6 +39487,7 @@ x509_vpm.c
 x6`.@
 X6`:@
 X6`*@
+X6`2@
 X6a*@
 X6a2@
 X6aZA9
@@ -39340,7 +39502,7 @@ X6`j@
 X6`J@
 X6`n@
 X6`(@Q
-x6tB@
+x6tF@
 x6u:@
 X6u*@
 x6u6@
@@ -39355,7 +39517,8 @@ x6`Z@
 X7 	`7 
 X7(	`7
 &x7H'
-(X7H)`7
+,X7H-`7
+X7H	`7
 	X7iF@9
 X7iF@9I
 x7iJ@9
@@ -39487,7 +39650,7 @@ XX}}X
 XX}XX
 XXX}X
 ,x)x;y
-x@y&Q@
+x@y&U@
 &@x	y;x+
 !Xyxb
 XYZ values out of representable range
@@ -39495,7 +39658,6 @@ XYZ values out of representable range
 xzdD]
 =*(@y
   @y!(@
-;@y":
 !@y(=
 "	)[y)
 "	)\y)
@@ -39509,15 +39671,12 @@ xzdD]
 @y?!5k
 @y?!6k
 @y)	@9
-+@y"9
 y@9	}
-	Y(9a
-	y@9jnC97}
+	y@9jfF97}
 @y_!9ki
 y	9@y
 !@@ya
 y"A)?
-,@ya1
 &yacute;
 &Yacute;
 yaJEy
@@ -39531,7 +39690,6 @@ yA	@y
 @.yb4
 Yb6N4
 @.yB8
-"@ybI
 yB@J9b
 ybn@}B
 ybr@}B
@@ -39547,15 +39705,18 @@ YeKlt
 y*/Ex)=
 ^@yh^
 .@yh~
+yh6@y
 @yh7@y?
 @yH7@y?
-:@yhB
 yhB@9
 yhB@9(
+yhB@9H
 &@yhF
 yhF@9
+yhfCy
 yhf@y
-yhF@yj
+yhF@y_
+yhF@yjV
 yhJ@9
 yhJ@9(
 yhj@9h
@@ -39576,12 +39737,13 @@ yhv@y
 )Yhx)$
 (YhxJ9
 yh~@y
+yh>@y
+yh:@y
 yh.@y
 yh*@y
-yh>@yj
+yh>@yjF
 yhZ@9
 yhz@y
-@y&I@
 @.yI5
 yield - CDepotReconstruct::YieldingPushAsyncPump() - BDispatchCompletedWorkItems
 yielding
@@ -39591,6 +39753,7 @@ YieldingRefreshItemDefs
 YieldingRunMethod
 yield - m_PreloadChunkStore.FinishWrittenChunk()
 yield - m_PreloadChunkStore.FinishWrittenChunks()
+yi.EyjV
 @yiF@
 yiF@yJ
 yiJ@y
@@ -39601,8 +39764,10 @@ yi^@y
 @yI	@y
 @yIyi
 yiz@9h~@9j
+yizF9
 @yj&@
 yj<8*
+yjB@y
 yjiixJ
 @y@j`xa
 yjx+y*
@@ -39636,6 +39801,7 @@ yLT@9
 yLx@9
 yLX@9
 Ylxp}
+@y&M@
 %Y-%m-%d
 %Y%m%d%H%M%S
 %Y-%m-%dT%H:%M:%SZ
@@ -39742,7 +39908,7 @@ zh_TW
 Zhxj}
 zIf false, it means access token no longer work (expired, disconnected) and the link is now broken. Inform user to refresh."e
 Zih8hih8)y
-'ZikAD
+'Zik1D
 ZInclude files that have all the tags or any of the tags if match_all_tags is set to false.
 zip_helpers.cpp
 Ziraat Bank

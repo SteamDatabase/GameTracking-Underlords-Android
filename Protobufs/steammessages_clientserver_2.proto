@@ -159,6 +159,7 @@ message CMsgClientUCMEnumerateUserSubscribedFilesWithUpdates {
 	optional uint32 app_id = 1;
 	optional uint32 start_index = 2;
 	optional fixed32 start_time = 3;
+	optional uint32 desired_revision = 4 [default = 0];
 }
 
 message CMsgClientUCMEnumerateUserSubscribedFilesWithUpdatesResponse {
@@ -177,21 +178,6 @@ message CMsgClientUCMEnumerateUserSubscribedFilesWithUpdatesResponse {
 	optional uint32 total_results = 3;
 }
 
-message CMsgClientUCMPublishedFileSubscribed {
-	optional fixed64 published_file_id = 1;
-	optional uint32 app_id = 2;
-	optional fixed64 file_hcontent = 3;
-	optional uint32 file_size = 4;
-	optional uint32 rtime_subscribed = 5;
-	optional bool is_depot_content = 6;
-	optional uint32 rtime_updated = 7;
-}
-
-message CMsgClientUCMPublishedFileUnsubscribed {
-	optional fixed64 published_file_id = 1;
-	optional uint32 app_id = 2;
-}
-
 message CMsgClientUCMPublishedFileDeleted {
 	optional fixed64 published_file_id = 1;
 	optional uint32 app_id = 2;
@@ -204,6 +190,7 @@ message CMsgClientUCMPublishedFileUpdated {
 	optional fixed64 hcontent = 4;
 	optional fixed32 file_size = 5;
 	optional bool is_depot_content = 6;
+	optional uint32 revision = 7;
 }
 
 message CMsgClientWorkshopItemChangesRequest {
@@ -591,11 +578,12 @@ message CMsgGameServerData {
 	}
 
 	optional fixed64 steam_id_gs = 1;
-	optional uint32 ip = 2;
+	optional uint32 deprecated_ip = 2;
 	optional uint32 query_port = 3;
 	optional uint32 game_port = 4;
 	optional uint32 sourcetv_port = 5;
 	optional string name = 22;
+	optional .CMsgIPAddress game_ip_address = 23;
 	optional uint32 app_id = 6;
 	optional string gamedir = 7;
 	optional string version = 8;
@@ -616,8 +604,9 @@ message CMsgGameServerData {
 
 message CMsgGameServerRemove {
 	optional fixed64 steam_id = 1;
-	optional uint32 ip = 2;
+	optional uint32 deprecated_ip = 2;
 	optional uint32 query_port = 3;
+	optional .CMsgIPAddress ip = 4;
 }
 
 message CMsgClientGMSServerQuery {
@@ -630,9 +619,10 @@ message CMsgClientGMSServerQuery {
 
 message CMsgGMSClientServerQueryResponse {
 	message Server {
-		optional uint32 server_ip = 1;
+		optional uint32 deprecated_server_ip = 1;
 		optional uint32 server_port = 2;
 		optional uint32 auth_players = 3;
+		optional .CMsgIPAddress server_ip = 4;
 	}
 
 	repeated .CMsgGMSClientServerQueryResponse.Server servers = 1;
@@ -788,7 +778,17 @@ message CMsgClientRequestForgottenPasswordEmailResponse {
 }
 
 message CMsgClientItemAnnouncements {
+	message UnseenItem {
+		optional uint32 appid = 1;
+		optional uint64 context_id = 2;
+		optional uint64 asset_id = 3;
+		optional uint64 amount = 4;
+		optional fixed32 rtime32_gained = 5;
+		optional uint32 source_appid = 6;
+	}
+
 	optional uint32 count_new_items = 1;
+	repeated .CMsgClientItemAnnouncements.UnseenItem unseen_items = 2;
 }
 
 message CMsgClientRequestItemAnnouncements {
@@ -1164,5 +1164,10 @@ message CMsgClientVoiceCallPreAuthorizeResponse {
 	optional fixed64 receiver_steamid = 2;
 	optional int32 eresult = 3 [default = 2];
 	optional int32 caller_id = 4;
+}
+
+message CMsgBadgeCraftedNotification {
+	optional uint32 appid = 1;
+	optional uint32 badge_level = 2;
 }
 

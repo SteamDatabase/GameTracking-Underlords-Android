@@ -161,6 +161,7 @@ __bss_start__
 Buffer not big enough to hold requested File IO
 Callback called at wrong time (%d)
 Cannot open %s for writing
+Cannot rename file "%s" that exists in a read only search path!
 Cannot rename file "%s" that exists in a VPK or UGC file!
 Can't find completed Async IO request, request description %s
 CAsyncFileRequest::GetProfilingInfo called with bad buffer size (%d passed, expecting %llu)
@@ -443,7 +444,8 @@ IQuickTime001
 I	@y(
 i>@yh
 j58hf@9(
-J68hI
+J688I
+J68jI
 j!JJ+
 j!JJK
 !JJK|

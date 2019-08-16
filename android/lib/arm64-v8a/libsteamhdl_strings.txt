@@ -21,7 +21,6 @@
 %0.8X%0.4X%0.4X%0.2X%0.2X%0.2X%0.2X%0.2X%0.2X%0.2X%0.2X
   %10.3f %6.2f      %10.3f %6.2f      %10.3f %6.2f   %6d %6.2f
   %10.3f %6.2f      %6d
-11:14:28
 11CCallResultI14CSteamHeadless28RequestFreeLicenseResponse_tE
 12CStdMemAlloc
 13CCallbackBase
@@ -30,6 +29,8 @@
 13CCallbackImplILi4EE
 13CCallbackImplILi7EE
 13CCallbackImplILi8EE
+14:59:31
+14CSteamHeadless
 14CUtlLinkedListIN11SteamStdLib12CCommandLine18CommandLineParam_tEiE
 14ISteamHeadless
 18CUtlCharConversion
@@ -58,7 +59,6 @@
 9?h(8
 9IMemAlloc
 9?k48
-.A14CSteamHeadless
 +a@9?
 a@9*a
 &aacute;
@@ -76,6 +76,7 @@ abort@@LIBC
 &AElig;
 &agrave;
 &Agrave;
+.Alanguage
 allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
 &amp;
 Android clang version 5.0.300080  (based on LLVM 5.0.300080)
@@ -109,7 +110,6 @@ Assertion Failed: existingLen < k_cchMaxString && cubInput * 2 < k_cchMaxString 
 Assertion Failed: extension
 Assertion Failed: extension[0] == '.'
 Assertion Failed: false
-Assertion Failed: g_pClientController
 Assertion Failed: g_pFioAsyncEnqueue == NULL
 Assertion Failed: g_pFioAsyncFinalize == NULL
 Assertion Failed: !"Implement GetCRunTimeVersion"
@@ -162,6 +162,7 @@ Assertion Failed: m_vecRegisteredWriters.HasElement( pFile )
 Assertion Failed: n >= 0
 Assertion Failed: n == 0 || s1 != NULL
 Assertion Failed: n == 0 || s2 != NULL
+Assertion Failed: nBytes
 Assertion Failed: nDay > 0
 Assertion Failed: nDay < 32
 Assertion Failed: nDestSize == 0 || pDest != NULL
@@ -239,6 +240,7 @@ Assert( %s ):%s:%d
 &Atilde;
 atoi@@LIBC
 Attempting to create a named event with a null name
+Aug  5 2019
 &auml;
 &Auml;
 Average %.2f fps, %.2f ms per frame
@@ -283,6 +285,7 @@ ClientAPI_Init(GlobalInstance): GetIClientBilling returned NULL.
 ClientAPI_Init(GlobalInstance): GetIClientBluetoothManager returned NULL.
 ClientAPI_Init(GlobalInstance): GetIClientCompat returned NULL.
 ClientAPI_Init(GlobalInstance): GetIClientConfigStore returned NULL.
+ClientAPI_Init(GlobalInstance): GetIClientController returned NULL.
 ClientAPI_Init(GlobalInstance): GetIClientControllerSerialized returned NULL.
 ClientAPI_Init(GlobalInstance): GetIClientDepotBuilder returned NULL.
 ClientAPI_Init(GlobalInstance): GetIClientDeviceAuth returned NULL.
@@ -500,7 +503,6 @@ j!8h^
 ja8? 
 jb8_ 
 Jobs/Coroutines
-Jul  9 2019
 	K"}@
 	K5}@
 Ka@9+
@@ -508,6 +510,7 @@ Ka@9k
  Kbps
 Ki)88
 &laquo;
+_*&L/g
 libandroid.so
 libaudio.so
 libc++_shared.so
