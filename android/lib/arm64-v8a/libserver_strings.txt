@@ -31,10 +31,7 @@
 !*,=@
 !	@-#	@
 !	@)`\
-!	@)-^
 !	@).[
-!	@)%^
-!	@)	`
 ?)>>!;/
 ?}@=	
 '":|;
@@ -43,6 +40,7 @@
 ((@-)
 ()@))	@
 (%@-*	@
+(%@)`
 )@-		@
 )*-)+
 )+@)+
@@ -151,7 +149,7 @@ $0$1$2 $3 = $4
 .>()09
 	0@9?
 >()09,)G>r
-0A9K*
+0A9+*
 0~B8 
 @0bDG
 0CClientMsg_WorldUIControllerHasPanelChangedEvent
@@ -1417,7 +1415,6 @@ $0 to $1,
 18TEFizz_GameEvent_t
 18ToolTraceRayResult
 *1%9`
-	1+9(
 1960/00/00
 	1"9_A"9
 	1&9_A&9
@@ -1547,7 +1544,7 @@ $0 to $1,
 1sAL"
 1 to output sv_showanimstate to Msg(). 2 to store in AnimStateServer.log. 3 for both.
 1w?WA
-1@yh<
+1@yH<
 	1@y?!"k`
 ?2: 	
 +2: 	
@@ -1795,6 +1792,7 @@ $0 to $1,
 21prevent_interaction_t
 %21s %10llu %10llu %10.1f %10.1f
 21TEBubbles_GameEvent_t
+22,9rx
 22CAnimTagListenerHelperI15IPostGraphIKTagE
 22CAnimTagListenerHelperI16IParticleAnimTagE
 22CAnimTagListenerHelperI21IClothSettingsAnimTagE
@@ -2881,7 +2879,6 @@ $0 to $1,
 2h"B9
 2hB/9
 2hF 9
-2hF 9HN
 2hj+9
 2hjh8
 	2hN	
@@ -2898,7 +2895,6 @@ $0 to $1,
 2I.CWorkshop_PopulateItemDescriptions_Request.ItemDescriptionsLanguageBlock
 2ii*x
 2ij(8
-2ij(84E
 2ij(8F
 2+imx
 2j"@9)p
@@ -2915,8 +2911,8 @@ $0 to $1,
 2?!!k
 2?"!k`
 2?k78
+2_k88
 2?k88
-2_k88,T
 2k_EGCMsgInitiateTradeResponse_VAC_Banned_Initiator
 2Ki(8
 2Ki(8k
@@ -2936,10 +2932,10 @@ $0 to $1,
 2njj8l
 }2'@+P
 2 .ProtoFlattenedSerializerField_t"!
-2	q>9
+2*q?9
 2	Q%9
-2	Q-9ix
-2*q?9*x
+2	q>9h|
+2	Q-9)x
 2	q@y?
 	2R*3
 2) Red  : %i
@@ -2955,7 +2951,7 @@ $0 to $1,
 2*y7xi"@
 2@y"!A
 2@y)]C
-2@yj#
+2@yJ#
 2*y(x	
 '3))(
 300000
@@ -3835,8 +3831,8 @@ $0 to $1,
 5hRh9H
 5ib@y
 5i*C))
+5i"J)
 )5IJ(}
-5i"J)UW
 5ISave
 5i.@y
 5`J@)q
@@ -4067,8 +4063,8 @@ _6iJ@
 ?6iJ@
 /6iJ@
 @6iJ@
+6i"J)
 6iJA9
-6i"J)UW
 ?.@6$Ik
 `6in@
 /6in@
@@ -4321,7 +4317,6 @@ _6v:@
 87)#A9i
 87H	@7
 87iZ@
-	87UM
 %8.8s: %-5d entries, '%s', ...
 8CAISound
 8CAmmoDef
@@ -4381,9 +4376,10 @@ _8|{t
 8x9,7
 `"@9	
 |@9		
-_!*9*|
+!@9=[
 ?9% &
 .@9)	
+"@9!;
 (@@9(
 (	@9	
 )!@9)
@@ -4430,7 +4426,7 @@ _!*9*|
 [%9.9s] (%d)%s at %.6f phase not supported
 [%9.9s] (%d)%s SetInterpolationTimeType - changing interpolation phase type
  9)a#
-"@9a;
+&9'a	
 @9A(!
 9*a{9
 9+aB9
@@ -4439,6 +4435,8 @@ _!*9*|
 9	AW9
 @9B!@
 	9B9))*
+"@9Bk
+!!@9C\
 @9)+C
 9CBaseFlex
 9CBaseProp
@@ -4475,7 +4473,6 @@ _!*9*|
 @9 )F
 (@@9	g
 9gCN>
-!@9h[
 (@@9	h
 )@@9h
 @9h*@
@@ -4527,16 +4524,15 @@ _!*9*|
 )!@9i
 )@@9i
 @9i&@
-&9'i	
 @9I	@
 @9	i58s
 @9	i*8
 9i:8!
 @9+i(8k
 "@9i"@9
+@9i"@9
 9	i@9
 ^9I9)
-@9i"@946
 9*i@9J
 9*i@9X
 @9ib|9
@@ -4548,14 +4544,15 @@ _!*9*|
 9i>N9
 9IRegistry
 9ISequence
-@@9iT
+ @9iU
+"@9IU
 @9iz@
 9iZA9?	
 9j"@9
 9j*@9(
 @9J9	
 @9jjh8*
-	!@9jL
+	!@9JL
 @9JU	
 !!@9K
 >9K!0>N
@@ -4569,8 +4566,6 @@ _!9ki
 9l"A9
 @9l^B
 9lQ@x
-"@9mk
-!!@9n\
 )9}[p=
 9Px? FcH
 9)P@y	q
@@ -4614,6 +4609,7 @@ _!9ki
 (@@9	t
 (@@9t"
 (@@9t"(
+@@9)T
 @9T|@
 (@@9tb
 (@@9tB
@@ -4655,7 +4651,6 @@ A-!8#
 +a@9?
 	a@9	
 a"@9`
-_A+9*
 ;A	9_
 ?A,9_
 "A9		
@@ -4672,11 +4667,11 @@ _A+9*
 	A@9)	
 	A@9	
 A9()(
+a"@9"5
+a"@9"6
 a@9+a
 `A9)`A9
-a@9	B
-a"@9b5
-a"@9B6
+a@9)B
 A9@g@
 .A9h.
 "A9h"
@@ -4702,6 +4697,7 @@ A9i>@
 a"@9"ih
 A9	ii
 A9iji
+#A9j*
 *!A9J
 A9|J@
 	A9j"A
@@ -4710,7 +4706,9 @@ A9jji
 +	A9K
 +a@9Ka
 A9Kik
+a"@9l_
 +	A9lC
+a"@9mM
 	A@9	P
 ?A9tJ@
 A@9vi)
@@ -6588,6 +6586,7 @@ always_send_to_servers
 always tradable
 ;Am@  
 )AM9?
+#AmB1
 AmbientCubes
 ambient_generic
 Ambiguous
@@ -6734,6 +6733,7 @@ An orthographic spot light entity
 An RR_Concept couldn't find its string in the symbol table!
  any other value = set minimum value for cl_interp_ratio
 &A)(o@
+A-OyC
 	AP9	
 api_key
 `AP$N
@@ -7069,7 +7069,6 @@ AXk!#
 ('B)*
 @-))B
 @-B	@
-&B)*=
 B-`! 
 B-   
 B-'("
@@ -7088,7 +7087,6 @@ B-!8"
 B`@9!
 B;9 %
 B:9@%
-B!9-.
 B9@  
 B99`%
 B@9a'
@@ -7097,6 +7095,7 @@ B@9a'
 B\9{gt
 ^B9h^
 "B9h"
+B/9H'
 B@9H.
 B@9H0
 b@9h 07
@@ -7113,9 +7112,9 @@ b@9JIG
 B(9t"%
 B@9t.N
 B-A8!
+bA9	,
 bA9hb
 BA9hB
-bA9I,
 BA9iB
 BA9iFA9hB
 b?)AC_
@@ -7260,7 +7259,6 @@ BeamType_t
 	Because CModifierFactoryDictionary is case sensitive, you have probably introduced a bug.
 " because it is missing required fields: 
 		Becomes:	%s
-B-(EG
 begin
 Begin an iteration over the list of entities
 BeginFadeOutThink
@@ -7358,7 +7356,7 @@ bloodimpact
 Bmaps\%s.vpk
 ?bMeQ
 bMKBTested
-bO9a&
+bO9!&
 Bodies: %d (%d)
 Body Component Scriptdesc
 BodyGameSystem
@@ -7570,8 +7568,8 @@ ButtonBitMask_t
 "B)Ux
 buy_unit
 bValue
-`b@y"+
-`b@y9(
+b@y_>
+b@y}>
 `b@yh
 B	yi.
 BYield
@@ -7599,7 +7597,6 @@ C33s?)\
 C-!8"
 C-"8"
 ,c@9-
-C@9 ;
 C9   
 C9)|@
 C@9	2
@@ -7610,9 +7607,11 @@ C9	a79
 C9,h5
 C@9HC
 	@C9i
-c@9J,
+c@9j,
+C@9j,
 CA9`:
 cA9h"
+CA9j*
 cA9s~
 cable
 Cache
@@ -10672,14 +10671,16 @@ d3_citadel_05
 *-D),5E)_
 d6@y#
 d6@y#.
-d6@y#+
+d6@y#$
 d6@y#1
-d6@y#7
 d6@yc
-d6@yc.
-d6@yc$
+d6@yc=
+d6@yc 
 d6@yC
-d6@yc1
+d6@yC 
+d6@yC.
+d6@yC(
+d6@yC$
 	$D9?
 D-)9,
 D9i2@
@@ -11569,7 +11570,6 @@ dynpitchvol_t
 D)yV@
 @-dZG
 ?e;:	
-(%@)`e
 @-e	@
 -E)		
 .E))}
@@ -12652,6 +12652,8 @@ eyes_follow
 eZQ9\
 ?-f:*
 @+,]f}/
+!	@)-F
+!	@)%F
 .F))}
 F-%:%
 F: %.2f deg
@@ -12668,7 +12670,7 @@ f@9h2
 F@9hF
 f@9if
 F9JAB9
-fA9	a79 ,
+fA9	a79
 fA9hf
 FA9hF
 FA9iF
@@ -12880,6 +12882,7 @@ ffffff
 fflush
 fGain
 F*%h3x%hgx
+F-H	G
 F*&h%x%hsx
 F*%h'x%hsx
 @-FI@-)	@
@@ -13542,7 +13545,6 @@ G6v.@
 G-7F@
 g\8"@6
 g9	Q@
-]G-A-
 gA}-d
 Gambler
 game_
@@ -13777,7 +13779,7 @@ G-B8%
 G-bB@
 GB@-Q
 G-c*#
-'G)C7
+'G)c7
 	gc_app_id
 	gc_binary
 GCC: (GNU) 4.9.x 20150123 (prerelease)
@@ -14275,6 +14277,7 @@ gxXM|Z
 h&@)?
 h&@)*
 ;+%@H
+!	@)	H
 ('H)_
 @-H  
 #H)	}	
@@ -14320,10 +14323,9 @@ H=)@8f
 h"@9)
 h"@9	-
 h&@) 9.
+,H@9-=
 H'@9(
 h"@9)0
-h*]948
-h"99~q
 ;h@)9\A)<
 H @9`b
 *h&]9h
@@ -14343,9 +14345,11 @@ H`@9H
 h"@9I%
 h"@9I0
 h*^9I0
-h"@9iU
+h"@9i8
+h"@9iF
+h"@9IU
 h&@9k
-,H@9M=
+h*_9u5
 h"^9`Z
 h%A)`
 )h>A9
@@ -14437,7 +14441,8 @@ h"B9H
 hB^9H
 hB@9H
 H'B9h
-hB@9iR
+hB@9IR
+hb@9IU
 hB@9t
 hB@9u"@
 hB@9)YB
@@ -14757,7 +14762,7 @@ hi,xk
 h&_)j
 h%@)j	@
 H%@)J	@
-hj489
+hj489~
 hj@9yF@
 h&@-j.A-
 =hjc9
@@ -14799,10 +14804,10 @@ HMD Avatar that owns the VR hands
 HModel
 HModelStrong
 H-m.V-
-#()HN
 !^hNB
 h*O9H
-h"O9)M
+h*O9I:
+h"O9	M
 <HOi#
 	Holding lock %s:
 holdtime
@@ -14922,7 +14927,7 @@ hV	yh
 	hw8h
 HW@9XS@9H
 H-"X(
-=h*X9
+=h*X9i9
 =h*X9v
 h*X9v
 h:@y*
@@ -14958,7 +14963,7 @@ i2N9h6N9t6
 i2V9h
 (i38#
 @i4^_
-	i485s
+	i48`s
 i6xh>@yt:
 i6@yh
 *i;8{
@@ -14967,7 +14972,7 @@ I-!8"
 *	i88
 	i:89
 _i)8)A
-i;8g:
+i;8g6
 ?i(8h
 _i)8i
 *+i,8i
@@ -14989,7 +14994,6 @@ i:8jz@
 i)8Ki@9
 i+8Ki@9k
 )i@9	
-i*@9*3
 )I@9I
 i"@9J
 I9	S	M)
@@ -15265,9 +15269,11 @@ ignoring %s.HL%s on %s
 iGroup
 	*ih*
 I-!H#
+(ih8)\
+(ih8	\
 )ih8?
-(ih8i\
 (ih8I\
+(Ih8I\
 )ih8Ii(8
 (ih8*ij8+ik8,il8-im8.in8/io80ip81iq82ir8"ib8#ic8$id8%ie8&if8)i`8
 IHandleEntity
@@ -15315,7 +15321,6 @@ i*J)(
 I!@)J	@
 *ij8+ik8,il8-im8.in8/io80ip8(ih8
 ij,8kj*8mj(8h&
-iJ\9HU
 +i-`JG
 ijj8?
 ijw8*
@@ -16423,6 +16428,7 @@ Item Whitelist file '%s' could not be found. All items will be allowed.
 item_whitelist.txt
 !ITestScriptMgr
 IToolObject
+i*U9h>
 iUnlockedSentence
 [i:%u:%u]
 [I:%u:%u]
@@ -16464,7 +16470,6 @@ i'@yH'@y?
 Iyix8}
 IyixJylx+
 +I@yL
-iyx9g
 Iy(xj
 i"Yy?
 @I@z)
@@ -16476,69 +16481,68 @@ iZA9
 @-J	,
 @-J	@
 J-` $
-j08a(
-j08n=
-j08p=
+j08!(
+j08.=
+j080=
 j >= 0 && j < nResultBufSize
 J0@y_
 J0@yI
 J0@yk
-j18q=
-j1xq(
-j28q=
-j28r=
-j28r>
+j181=
+j1x1(
+j281=
+j282=
+j282>
 j2@yh
-j38N%
+j38#A
 j48(%
 j48	C
-j48(R
 j48t^@
 j4xH;@
 j58(%
-j58 8
 j58h9
+j58H9
 j58hf@9(
 J5@y_
+j68hM
 j68u*@
 j68v&@
 j(8(~
-j(8(.
-j(8($
-j(8(%
+j(8('
 j)8('
-j)8)'
-j)8	 
 j)8	?
 j)8	"
 j)8	$
 j)8	*
-j*8	?
-j+8+.
+j*8*'
+j*8*(
+j+8+'
+$J)!8
 j)8	2
 j)8	7
-j(8h'
-j)8h'
+j(8h 
 j(8Hd
-j;8hL
 j(8HL
 j(8hM
+j)8i 
 j)8ID
 j)8iL
-j)8Ip
+j)8iM
 j)8Ir
 j)8`j
-j*8j'
-j*8j(
+j*8j 
+j+8jG
 j(8jj)8`
-j+8k'
 j-8K,
 j+8K:
 j+8Kd
 j+8KV
+j;8(L
 j,8LH
 j,8LL
 j,8Lr
+j-8m 
+j-8m.
 j-8M^
 j-8M,
 j-8MB
@@ -16547,7 +16551,7 @@ j-8Mz
 j.8Nl
 j.8NP
 j)8)p
-j)8)Y
+j)8	Y
 j)8z&
 j)8	Z
 J!@9_
@@ -16556,7 +16560,6 @@ J@9hJ
 j@9ij
 J%@9j
 j9	S*M*
-$J)A8
 J`A9)
 J]A9_
 jA9hj
@@ -16616,7 +16619,7 @@ j!JJ+
 jjj8h
 j!JJK
 !JJK|
-jj)xym
+jj)xNq
 	J"}	K
 )+J)-#K)+3L)
 Jki8_5
@@ -16690,15 +16693,15 @@ jV@y)|@
 jV@y!y|
 jV@y:yt
 jV@y!yt
-j)x)'
+j-x-(
 j)x	@
 j)x		
+j*x*'
 J!_x_!5k
-j(xH 
+j(xh!
 j)x	H
+j(xhG
 j(xHH
-j*xj'
-j-xm(
 j-xM 
 j.xN.
 j)x	O
@@ -16715,7 +16718,6 @@ _!(k#
 &@)k	
 	*_!;k
 	*_!(k
-($@)K
 K)@)+)
 (@)k0@)n
 K1B)M9C)
@@ -16729,18 +16731,17 @@ k2	)j~
 k2Q)m
 *k2@y
 ?k58D
-k68PP
+k68%l
 *?k78
-k78,?
-k783/
-k7881
 ?k78h
-k78h4
-?k78J
+k78H4
+k78W\
 	K!8"
+?k88zS
 k(8vV@
 ?){K9_
 @){K9_
+	K9# 
 k9J{c>
 K	\9K
 K9	S)
@@ -16764,6 +16765,7 @@ $k_AddSocket_Failed_FailedToAddSocket
 k_AddSocket_Succeeded
 kAKJJ
 kAKJk
+KAL9h
 ?k,am
 K.Ax E@
 kBEAMCLIPSTYLE_NUMBITS
@@ -16771,6 +16773,7 @@ KBSaved%
 _!(kc
 _!(kC
 K-#c@
+($@)K]C
 k_eActionType_Placholder
 k_eAlreadyClaimed
 k_eAlreadyFriends
@@ -17474,7 +17477,7 @@ Ki)8)
 	kI9@
 kickid %d CBaseEntity::InputKill()
 ?kIG9
-Kih8j\
+Kih8*\
 Kih8Ki)8Mi(8
 kill_count
 killeater
@@ -17620,6 +17623,7 @@ kv3format_manager.cpp
 KV3 load transfer failed: %s
 KV Conditional Evaluation Error
 K %vmo
+	k!x0
 )-k@y
 k	@y)
 Kykx)
@@ -17818,6 +17822,7 @@ LightStyles
 lighttype
 LightType_t
 lightworld
+lih8K\
 LiixiID
 lij8?
 Lik8m
@@ -22922,7 +22927,6 @@ Name of the .txt file used to cycle the maps on multiplayer servers
 	name_part
 NamePart
  - Name: %s
-#namF
 NativeFunctions
 natures_prophet_summon_tree
 nav_add_to_selected_set
@@ -23970,7 +23974,7 @@ O6`R@
 O6v2@
 o6vB@
 o-!8#
-"O9a&
+"O9!&
 O9`*B
 ? !o^A?
 o/A-m'B-n+@-`C
@@ -25437,18 +25441,18 @@ py_generic_services
 Q-   
 	Q19_a19
 q;4,F
-q89(}
 Q8q(2
 	q%9`
 )Q@9)@
 Q"@9?
-(q.9rc
+(q.9G{
 	qA9?
 qangle
 QAngle-world
 	QB9i
 Q-bND
 ?@@qC
+q@)(]C
 QD-{(#
 *QD9j
 q	DC9
@@ -25605,7 +25609,7 @@ RB9hR
 R~~C@
 RC9hR
 r_cacheSequenceData
-`RCyq
+`RCyF
 Reached an unintended state: CPPTYPE_MESSAGE
 Reached impossible case in HasBit().
 Read: Attempted to read from a write-only file
@@ -26173,8 +26177,9 @@ RunTimeOfDayCommand
 	R)v4N
 r_VehicleViewDampen
 r@y`&@
-R@y?"
-R@yf#
+`R@y\
+R@y_"
+R@y;#
 `R@yh
 R@yHq
 r@yhr
@@ -28607,8 +28612,7 @@ Switches to navmesh for the specified spawngroup
 Switching local lobby state to %s from %s
 Switching to server state %s from %s based upon the lobby being updated to this state
 %s (%x) spoke %s (%f)
-s@yA;
-S@yA;
+S@y.7
 Symbol name "
 symbols
 Synchronously spawn an entity group from a list of spawn tables.
@@ -28624,7 +28628,6 @@ syntax = "$0";
 Syntax Error at offset: %d
 systemloadscale
 System %s failed to init
-S@yY'
   szFullScriptFile = %s
 szName
   szReplaysPath = %s
@@ -28941,6 +28944,7 @@ Thf@9
 Thf@9(
 Th"F9
 ThF@9h
+Th"F9{Z
 ThFC9
 Thf@y
 thick
@@ -28991,7 +28995,7 @@ THROW POST BLOCKED
 THROW PRE BLOCKED
 ThR@y
 TH;	S(O(
-Th*U9
+Th*U9tI
 ThV@yh
 Th*W9v
 Th~@y
@@ -29984,6 +29988,7 @@ uYLl>
 uz9GxV
 !V @;
 	!@)V
+v2N9a3
 v8array
 v8callback
 v8object
@@ -30890,6 +30895,7 @@ W`@-Y
 WY@)U	@
 ?Wzm6V"
 @%@x	
+	*!x#
 x]/(@
 X-!("
 \x%02x
@@ -30935,7 +30941,7 @@ x(Q@9
 xT)~)>
 X-V:;
 X\V@%
-)x^	)vC
+)x^	)VC
 x*;XZ
 [xYq|m
 <) @y
@@ -30948,7 +30954,7 @@ x*;XZ
 *%@y(
 		@y_
 		@y?
-"	y0m
+"	y0q
 `>Y1\
 ,y=35
 @y?!4kC
@@ -31118,6 +31124,7 @@ YWA)H/@
 @y)/@x
 Y`x($
 y|x(E@
+	y:xII
 *y(xj
 +y(xk
 	@y-	@y
