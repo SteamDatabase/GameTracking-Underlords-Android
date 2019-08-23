@@ -30,8 +30,8 @@
 !~@( 
 !*,=@
 !	@-#	@
-!	@)`\
-!	@).[
+!	@).-
+!	@)&-
 ?)>>!;/
 ?}@=	
 '":|;
@@ -40,7 +40,7 @@
 ((@-)
 ()@))	@
 (%@-*	@
-(%@)`
+(%@)`]
 )@-		@
 )*-)+
 )+@)+
@@ -126,7 +126,6 @@ $0$1$2 $3 = $4
 06h2@
 06h6@
 06hB@
-06hf@
 06hF@
 06hRF
 	06i:@
@@ -149,7 +148,7 @@ $0$1$2 $3 = $4
 .>()09
 	0@9?
 >()09,)G>r
-0A9+*
+0A9K*
 0~B8 
 @0bDG
 0CClientMsg_WorldUIControllerHasPanelChangedEvent
@@ -398,6 +397,8 @@ $0 to $1,
 12INavDrawMesh
 12INavObstacle
 135.0f
+_139*|
+	139H~
 13audioparams_t
 13CAI_Expresser
 13CBuffModifier
@@ -816,7 +817,6 @@ $0 to $1,
 15TSocketIteratorI25CItemSocket_AssetModifierE
 %-16.16s | 
 16384
-	169_A69
 16CActivityDataOps
 16CAI_ChangeTarget
 16CAnimationBucket
@@ -1414,10 +1414,9 @@ $0 to $1,
 18TEDust_GameEvent_t
 18TEFizz_GameEvent_t
 18ToolTraceRayResult
-*1%9`
+*1'9`
 1960/00/00
-	1"9_A"9
-	1&9_A&9
+	199_A99
 19CAI_ChangeHintGroup
 19CAmmoDefInitializer
 19CAttributeContainer
@@ -1500,6 +1499,7 @@ $0 to $1,
 19CVariantSaveDataOps
 19CVoiceGameMgrHelper
 19CWeaponScriptParser
+	1.9h
 19IAttachmentOverride
 19IConsoleDisplayFunc
 19IDecalEmitterSystem
@@ -1544,7 +1544,6 @@ $0 to $1,
 1sAL"
 1 to output sv_showanimstate to Msg(). 2 to store in AnimStateServer.log. 3 for both.
 1w?WA
-1@yH<
 	1@y?!"k`
 ?2: 	
 +2: 	
@@ -1692,7 +1691,6 @@ $0 to $1,
 20TESparks_GameEvent_t
 20ToolTraceRayResult_t
 20TransitioningLayer_t
-2	!19
 21CAnimGraphTraceFilter
 21CBaseAnimatingOverlay
 21CBaseAttributableItem
@@ -1792,7 +1790,6 @@ $0 to $1,
 21prevent_interaction_t
 %21s %10llu %10llu %10.1f %10.1f
 21TEBubbles_GameEvent_t
-22,9rx
 22CAnimTagListenerHelperI15IPostGraphIKTagE
 22CAnimTagListenerHelperI16IParticleAnimTagE
 22CAnimTagListenerHelperI21IClothSettingsAnimTagE
@@ -1943,6 +1940,7 @@ $0 to $1,
 22TEBeamEnts_GameEvent_t
 22TEBeamRing_GameEvent_t
 22TEBSPDecal_GameEvent_t
+2	!39(|
 23CAnimGraphTraceProvider
 23CBaseAnimatingEasings_t
 23CCLCMsg_LoadingProgress
@@ -2644,9 +2642,7 @@ $0 to $1,
 28TEProjectedDecal_GameEvent_t
 28TEShatterSurface_GameEvent_t
 28VPhysicsCollisionAttribute_t
-2	!/9
-2	!/9;
-2	!%9
+2	!'9
 29CBodyComponentBaseModelEntity
 29CBoneConstraintPoseSpaceMorph
 29CCLCMsg_SplitPlayerDisconnect
@@ -2710,27 +2706,23 @@ $0 to $1,
 2_!9k
 2?!9k
 2?!9k`
-2	!/9l
 2*9	S)!@
 2	9	S
 2(9	SHM(
 2	9	S)O)
 2	9	S	O)
 29ToolEvent_GetEntityInfoResult
-2	a29
-2	a29l
-2	A69s
-2	a;9
-2	a&9
-2	A>9
-2	A,9
-2	A&9
-2	A99
-2	A99p
+2	a>9
+2	a.9
+2	a)9
+2	A<9
+2	A/9
+2	A)9
+2	A99s
 2A9i2
 2	a@9Ia
-2	a&9n
-2	A>9p
+2	a)9n
+2	A<9p
 2	AA9
 2A.CWorkshop_PopulateItemDescriptions_Request.SingleItemDescription"F
 2A-k	 
@@ -2738,6 +2730,7 @@ $0 to $1,
 2) Blue : %i
 2_BONE_IK
 @?$2bUs
+2(C"9AW
 2 .CBidirMsg_RelayInfo.Operation_t
 2 .CCommunity_ClanAnnouncementInfo"p
 2).CGameInfo.CDotaGameInfo.CHeroSelectEvent
@@ -2875,14 +2868,15 @@ $0 to $1,
 2h&]9
 2h"99
 2h&(9T
+2hB19
 2hb59
 2h"B9
-2hB/9
 2hF 9
+2hF 9(N
 2hj+9
 2hjh8
 	2hN	
-2hR.9i
+2hR09i
 2H;	S(O(
 2h^@y
 2h>@y
@@ -2911,8 +2905,8 @@ $0 to $1,
 2?!!k
 2?"!k`
 2?k78
-2_k88
 2?k88
+2_k88-F
 2k_EGCMsgInitiateTradeResponse_VAC_Banned_Initiator
 2Ki(8
 2Ki(8k
@@ -2932,10 +2926,9 @@ $0 to $1,
 2njj8l
 }2'@+P
 2 .ProtoFlattenedSerializerField_t"!
-2*q?9
-2	Q%9
-2	q>9h|
-2	Q-9)x
+2	Q09
+2	Q'9
+2	Q*9
 2	q@y?
 	2R*3
 2) Red  : %i
@@ -3511,8 +3504,9 @@ $0 to $1,
 39CTraceFilterSkipTwoEntitiesAndTeammates
 39CUserMsg_ParticleManager_CreateParticle
 39CUserMsg_ParticleManager_UpdateParticle
-3a-9_
+3a09_
 3A-`9 
+3a"9u
      3: Alyx Blind
 @@-3B!
 %.3d,%.3d,%.3d
@@ -3658,7 +3652,6 @@ $0 to $1,
 47CInlineJob_CMsgGCToServerCancelAllocateForMatch
 47CMsgRequestItemPurgatory_RefundPurchaseResponse
 47CUserMsg_ParticleManager_UpdateParticleFallback
-4!89_
 4(8@9h
 48CBidirMsg_RelayPacket_SignedDestinationAddress_t
 48CClientMsg_WorldUIControllerHasPanelChangedEvent
@@ -3667,6 +3660,7 @@ $0 to $1,
 48CTonemapController2Alias_env_tonemap_controller2
 48CUserMsg_ParticleManager_SetControlPointSnapshot
 48CUserMsg_ParticleManager_UpdateParticleSetFrozen
+4!;9_
 4(`@9
 4(<@9
 4(|@9
@@ -3683,7 +3677,7 @@ $0 to $1,
 49CUserMsg_ParticleManager_UpdateParticleShouldDraw
 49GameToolEventToolTraceRayResult_tHookupGameSystem
 4((@9h
-4A$9_
+4A'9_
 4`&C-
 4(d@9(
 4(D@9(
@@ -3806,6 +3800,7 @@ $0 to $1,
 5CPath
 5CSave
 5CTeam
+!	@)5d
 %5d%9.0f%8d%9.0f%10.0f   %*s%s
 %5d%9.0f%8s%9s%10s   %*s%s
   + [%5d] '%s' (%s)
@@ -3831,8 +3826,8 @@ $0 to $1,
 5hRh9H
 5ib@y
 5i*C))
-5i"J)
 )5IJ(}
+5i"J)UW
 5ISave
 5i.@y
 5`J@)q
@@ -3855,7 +3850,6 @@ $0 to $1,
 	5@y?!"k
 _6`:@
 ;*@'6
-!	@)6[
 ?6`*@
 ?6	`@
 ?6	<@
@@ -3888,12 +3882,13 @@ _6`:@
 66GameToolEventToolEvent_SFMToolActiveStateChanged_tHookupGameSystem
 67&-@
 _6	8@
+&@)68
 6_@)8
 6]@-8	@
 	6	9J
 6	a@9)
 6	@A9
-6ab|9
+6ab~9
 /6`B@
  6bB@
 6	c@9
@@ -3972,11 +3967,12 @@ _6	D@
 ?6hF@
 '6hF@
 (6hF@
-6h"F9`
 6hF`9
+6h"F9`sM
 6hFA9
 6hFh9h
 _6hj@
+?6hj@
 (6hj@
  6hJ@
 _6hJ@
@@ -4063,8 +4059,8 @@ _6iJ@
 ?6iJ@
 /6iJ@
 @6iJ@
-6i"J)
 6iJA9
+6i"J)UW
 ?.@6$Ik
 `6in@
 /6in@
@@ -4150,6 +4146,7 @@ _6v:@
 76h6@
 76hb@
 76hB@
+76hf@
 76hF@
 76hj@
 76hN@
@@ -4163,6 +4160,7 @@ _6v:@
 76i6@
 76ib@
 76iB@
+76if@
 76iF@
 76ij@
 76iJ@
@@ -4292,6 +4290,7 @@ _6v:@
 86h"A9
 86hb@
 86hf@
+86hj@
 86hn@
 86hnB
 86hR@
@@ -4308,12 +4307,14 @@ _6v:@
 86ib@
 86iB@
 86iF@
+86ij@
 86iJ@
 86in@
 86ir@
 86iv@
 86u*@
 86`V@
+	875M
 87)#A9i
 87H	@7
 87iZ@
@@ -4376,10 +4377,9 @@ _8|{t
 8x9,7
 `"@9	
 |@9		
-!@9=[
 ?9% &
 .@9)	
-"@9!;
+"@9;_
 (@@9(
 (	@9	
 )!@9)
@@ -4393,6 +4393,7 @@ _8|{t
 @9*	@
 @9+	@
 ** @9
+&9,]	
 	 @9)
 	 @9	
 	)@9)
@@ -4405,19 +4406,20 @@ _8|{t
 9(0@y
 )#@95c
 95*P>
+!@96O
 @96Y@
 @9(	(7
 @9(	(7`
 @9!8"
 98]@)5	@
 98N*>
+(9_!(9
 @9*	@9-
 @9%	@9
 @9%	@9$
 @9%	@9&
 @9+	@9,
 %@9	)@9
-%9_!%9
 9)@@9
 9+	@9
  @9	$@9J
@@ -4425,18 +4427,15 @@ _8|{t
 [%9.9s] (%5d)%s:
 [%9.9s] (%d)%s at %.6f phase not supported
 [%9.9s] (%d)%s SetInterpolationTimeType - changing interpolation phase type
- 9)a#
-&9'a	
+ 9)a&
 @9A(!
 9*a{9
-9+aB9
 ?9A@c
+9+aD9
 @9?aEkA
 9	AW9
 @9B!@
 	9B9))*
-"@9Bk
-!!@9C\
 @9)+C
 9CBaseFlex
 9CBaseProp
@@ -4470,7 +4469,6 @@ _8|{t
 9CTimeline
 9D7V=
 (@@9	f
-@9 )F
 (@@9	g
 9gCN>
 (@@9	h
@@ -4530,29 +4528,28 @@ _8|{t
 9i:8!
 @9+i(8k
 "@9i"@9
-@9i"@9
 9	i@9
 ^9I9)
+@9i"@946
 9*i@9J
 9*i@9X
-@9ib|9
+@9ib~9
 9IEconTool
 9ifA9
 9	ii8(
+ 9iJ@
 9ijh8h
 9ILoopMode
 9i>N9
 9IRegistry
 9ISequence
- @9iU
-"@9IU
 @9iz@
 9iZA9?	
 9j"@9
 9j*@9(
 @9J9	
 @9jjh8*
-	!@9JL
+	!@9jL
 @9JU	
 !!@9K
 >9K!0>N
@@ -4567,6 +4564,7 @@ _!9ki
 @9l^B
 9lQ@x
 )9}[p=
+!!@9<P
 9Px? FcH
 9)P@y	q
 9Q"@)
@@ -4609,7 +4607,6 @@ _!9ki
 (@@9	t
 (@@9t"
 (@@9t"(
-@@9)T
 @9T|@
 (@@9tb
 (@@9tB
@@ -4634,6 +4631,7 @@ A-!(!
 A-(  
 A-@ #
 A))!@
+_a09*}
 +A-`2G
 a2U0*	
 ?a2U0*i
@@ -4651,8 +4649,7 @@ A-!8#
 +a@9?
 	a@9	
 a"@9`
-;A	9_
-?A,9_
+?A/9_
 "A9		
 (@A9(
 (A@9(
@@ -4660,18 +4657,20 @@ a"@9`
 )!A9?
 )A@9)
 )A@9	
-*A%9`
+*A'9`
 		A9?
 		A9	
 	A@9)
 	A@9)	
 	A@9	
 A9()(
-a"@9"5
-a"@9"6
 a@9+a
 `A9)`A9
 a@9)B
+a"@9B5
+a"@9B6
+a"@9eS
+a"@9fA
 A9@g@
 .A9h.
 "A9h"
@@ -4689,7 +4688,7 @@ A$9hf@
 "A9i"
 *	A9i
 	!A9i
-	A~9i
+	A|9i
 	A@9i
 A9i>@
 )A@9I
@@ -4697,7 +4696,7 @@ A9i>@
 a"@9"ih
 A9	ii
 A9iji
-#A9j*
+_A.9j
 *!A9J
 A9|J@
 	A9j"A
@@ -4706,9 +4705,7 @@ A9jji
 +	A9K
 +a@9Ka
 A9Kik
-a"@9l_
 +	A9lC
-a"@9mM
 	A@9	P
 ?A9tJ@
 A@9vi)
@@ -4787,6 +4784,7 @@ account_ids
 account_name
 accounts
 account_to_spectate
+Account %u is in CServerLobbyData_PlayerMMR, but cannot find their player state to update MMR data?
 Account %u is in the same party, position=%u
 accumulate
 Accumulator in challenge %s is missing a name
@@ -6145,7 +6143,6 @@ ACT_ZOMBIE_LUNGE
 ACT_ZOMBIE_TRIP
 A-d)*
 A-d6@
-	Ad9	
 Add a filter to the game debug overlay
 Add a line to the debug history. Format: <category id> <line>
 AddAllocatedMessage
@@ -6249,7 +6246,6 @@ Advancing to ERoundState_Preparing for round %d.
 Advancing to ERoundState_Ready for round %d.
 Advancing to ERoundState_RoundOver for round %d.
 ?*a\`E<
-)ae9	
 AE_ABILITY_END_EVENT
 AE_ABILITY_START_EVENT
 AE_ABILITY_TICK
@@ -6450,6 +6446,7 @@ AE_WPN_PRIMARYATTACK
 AE_WPN_UNHIDE
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
+	Af9	
 affect_ragdolls
 affects_all_allied_units
 affects_all_allies_with_keyword
@@ -6466,7 +6463,7 @@ After this many seconds of being basically stationary, the ragdoll will go to sl
 A-G=@
 A-G1@
 A-G5@
-	Ag9	
+)ag9	
 A-G9@
 age_seconds
 Agg data %d: %p (%d parts, crc 0x%08X)
@@ -6476,6 +6473,7 @@ AH*I}
 a"@-i
 `"A-i
 	!Ai)
+	Ai9	
 aiAura
 AI_BaseNPC.SentenceStop
 ai_changehintgroup
@@ -6585,8 +6583,6 @@ always_notify
 always_send_to_servers
 always tradable
 ;Am@  
-)AM9?
-#AmB1
 AmbientCubes
 ambient_generic
 Ambiguous
@@ -6599,7 +6595,7 @@ amount of time players can chat after the game is over
 amplitude
 	amplitude
 AMPLITUDE: %f
-	An9	
+a.m_pState->m_unSignedOutPlace == 0 || nMMRChangeOverallMin == nMMRChangeOverallMax
 anchor_angles
 AnchorList
 Anchor nav_begin_area Z to editing player's feet
@@ -6733,8 +6729,9 @@ An orthographic spot light entity
 An RR_Concept couldn't find its string in the symbol table!
  any other value = set minimum value for cl_interp_ratio
 &A)(o@
-A-OyC
-	AP9	
+)AO9?
+A-OyF
+	Ap9	
 api_key
 `AP$N
 appear_time
@@ -6765,6 +6762,7 @@ A protocol message was rejected because it was too big (more than
 A@Q?%
 >!@A+r
 AR2AltFire
+	AR9	
 arcana_level
 arcane_boots
 archive
@@ -6850,8 +6848,6 @@ asynchronous
 Asynchronously spawn an entity group from a list of spawn tables. A callback will be triggered when the spawning is complete
 AsyncWrite: Attempted to write to a read-only file
 AsyncWrite (%s/%d)...
-	AT9)
-+AT9j
 at console
 aT,@J
 a trigger_changelevel doesn't have a map
@@ -7044,20 +7040,20 @@ avg_loss_out
 Avg/Msg
 avg_packets_in
 avg_packets_out
+	AW9)
++AW9j
 AWARDED
 Away Team Won - %d damage applied to home team.
 a world layer in a dota map
 `awpf*
 *A)X#
 Ax_!7k
-	AX9i
 *A_x)a_xk^
 axe_damage
 A-!Xh
 Ax? /k 
 AXk!#
 ?aXY6
-	Ay9i
 	<Ay?!9k
 	<Ay?!<kC
 ?AYki
@@ -7085,17 +7081,18 @@ B-!8"
 ~b8~q)=
  B\9{
 B`@9!
-B;9 %
-B:9@%
+B<9@%
+B=9@%
+B;9`%
+B!9-.
 B9@  
-B99`%
 B@9a'
 ?B9b8"
 ?B\9{g
 B\9{gt
 ^B9h^
 "B9h"
-B/9H'
+B/9h'
 B@9H.
 B@9H0
 b@9h 07
@@ -7112,7 +7109,7 @@ b@9JIG
 B(9t"%
 B@9t.N
 B-A8!
-bA9	,
+bA9),
 bA9hb
 BA9hB
 BA9iB
@@ -7310,9 +7307,10 @@ bIsKillingBlow
 bitsDamageType
 bitsToTest
 ?{^;b>j
-&B)J}@
+&B)j=
 #bJ$Q
 ?'bj{V
+*B)k}@
 	)B)K
 ?)bl|
 	-B)l
@@ -7356,7 +7354,7 @@ bloodimpact
 Bmaps\%s.vpk
 ?bMeQ
 bMKBTested
-bO9!&
+bO9A&
 Bodies: %d (%d)
 Body Component Scriptdesc
 BodyGameSystem
@@ -7568,8 +7566,8 @@ ButtonBitMask_t
 "B)Ux
 buy_unit
 bValue
-b@y_>
-b@y}>
+`b@y"
+`b@y9
 `b@yh
 B	yi.
 BYield
@@ -7597,21 +7595,19 @@ C33s?)\
 C-!8"
 C-"8"
 ,c@9-
+C@9@;
 C9   
 C9)|@
 C@9	2
 C9	a79
-(C_9h
 [C9h#
 <(C@9H#
 C9,h5
 C@9HC
 	@C9i
-c@9j,
-C@9j,
+c@9J,
 CA9`:
 cA9h"
-CA9j*
 cA9s~
 cable
 Cache
@@ -7709,9 +7705,11 @@ Can't BackUp() after failed Next().
  Can't back up over more bytes than were returned by the last call to Next().
 cantdie
 Can't ent_call w/o arguments!
+Can't find CDACServerStaticLobby to calculate MMR changes!
 Can't find decal %s
 Can't find landmark %s
 Can't find the world
+Can't get CServerLobbyData_PlayerMMR to calculate MMR changes!
 Can't get here.
 Can't get here: failed to get default value as string
 Can't get key value	'%s' from file '%s'.
@@ -7766,6 +7764,7 @@ CAuthPhysJoint
 	@=c	@=B
 C-B()
 C-B)-
+(Cb9h
 cBA-g
 CBaseAchievement
 CBaseAnimating
@@ -10656,6 +10655,7 @@ cycler_flex
 cycler_flex used on model "%s" specified unknown sequence "%s"
 cycler_flex used on model %s without enough flexes.
 C@y)QA
+!	@)=d
 %d | 
  D-	(@
 ?D]`,
@@ -10670,17 +10670,20 @@ d3_citadel_05
 .D=3w
 *-D),5E)_
 d6@y#
+d6@y#=
 d6@y#.
-d6@y#$
+d6@y#+
 d6@y#1
+d6@y#7
 d6@yc
-d6@yc=
 d6@yc 
+d6@yc.
+d6@yc(
+d6@yc$
 d6@yC
-d6@yC 
-d6@yC.
-d6@yC(
 d6@yC$
+d6@yc1
+d6@yC1
 	$D9?
 D-)9,
 D9i2@
@@ -11544,7 +11547,6 @@ duration;stack_count;caster;ability;creationtime
 Dur ms
 %d.Worldspace( %s, %d, %.2f )
 %d: World: %s Refcount: %d
-!Dy	<
 Dyh"@y
 .dynamic
 Dynamic - Asleep
@@ -12185,7 +12187,6 @@ env_volumetric_fog_volume
 env_zoom
 EOperation
 	*`eP
-!	@)Ep
 ep1_citadel_02
 ep1_citadel_02b
 ep1_citadel_03
@@ -12291,7 +12292,6 @@ ERROR: CreateLinearProjectile() called with non-zero vertical acceleration! Proj
 ERROR: CreateLinearProjectile() called with non-zero vertical velocity! Projectile velocity must be two-dimensional.
 ERROR: CSource2Server::Connect - Failed to connect to blackboxrecorder
 ERROR: CSource2Server::Connect - Failed to connect to engine
-ERROR: CSource2Server::Connect - Failed to connect to filelogginglistener
 ERROR: CSource2Server::Connect - Failed to connect to filesystem
 ERROR: CSource2Server::Connect - Failed to connect to g_pGameConfiguration
 ERROR: CSource2Server::Connect - Failed to connect to g_pVoiceServer
@@ -12646,14 +12646,13 @@ extrapolated [%.2f]
 extra_shots
 extra_spell_damage_percent
 extremely_rare
+!Ey	<
 eyebrows_controller
 eyebrows_mover
 eyes_follow
 eZQ9\
 ?-f:*
 @+,]f}/
-!	@)-F
-!	@)%F
 .F))}
 F-%:%
 F: %.2f deg
@@ -12713,6 +12712,7 @@ Failable achievement %s now active
 FAILED
 failed (+exclude rule)
 failed_lookup_steamids
+failed_signouts
 Failed to activate script entity %s of type %s: script entity instance is null
 Failed to allocate an instance of a class
 Failed to allocate an instance of class '%s'
@@ -12882,7 +12882,6 @@ ffffff
 fflush
 fGain
 F*%h3x%hgx
-F-H	G
 F*&h%x%hsx
 F*%h'x%hsx
 @-FI@-)	@
@@ -12997,7 +12996,6 @@ FileDescriptorProto
 FileDescriptorSet
 File %d: %s Size:%d
 File is already registered: 
-FileLoggingListener001
 filename
 	file_name
 Filename of crash detection sentinel
@@ -13498,6 +13496,7 @@ FZ*o7
 @g|_\
 .G))}
 ))+G)
+]G-!-
 @-G@@-
 @-G	@
 &G) ( 
@@ -13524,6 +13523,7 @@ G6hBB9
 G6hJ@
 g6hn@
 g6hN@
+G6hn@
 g6hRB9
 G6hv@
 g6hz@
@@ -14270,14 +14270,13 @@ g_VProfCurrentProfile
 g_VProfSignalSpike
 gxXM|Z
 -h&@)
-!	@)h\
 )h&	)
 @-h  
 	-h:@
 h&@)?
 h&@)*
 ;+%@H
-!	@)	H
+!	@)~H
 ('H)_
 @-H  
 #H)	}	
@@ -14319,13 +14318,10 @@ h7u	p7
 h)8Ay)
 H=)@8f
 [h] %8llx (%s) <%s%s> [o] %8.3f %8.3f %8.3f [a] %6.3f %6.3f %6.3f [s] %6.3f
-	!h9	
 h"@9)
-h"@9	-
+h"@9)-
 h&@) 9.
-,H@9-=
 H'@9(
-h"@9)0
 ;h@)9\A)<
 H @9`b
 *h&]9h
@@ -14343,11 +14339,10 @@ h&\9H
 H @9h"
 H`@9H
 h"@9I%
+h"@9i0
 h"@9I0
 h*^9I0
 h"@9i8
-h"@9iF
-h"@9IU
 h&@9k
 h*_9u5
 h"^9`Z
@@ -14425,7 +14420,7 @@ h[Ay)
 ?h$B#
 h&B)(
  @-hb]9	
-hb<9 
+hb>9 
 hb@9`
 hb@9	
 =hB@9
@@ -14441,8 +14436,6 @@ h"B9H
 hB^9H
 hB@9H
 H'B9h
-hB@9IR
-hb@9IU
 hB@9t
 hB@9u"@
 hB@9)YB
@@ -14490,7 +14483,6 @@ HC@9hB
 HC@9hC
 hCallbackFunc
 hCallbackScope
-HCB9HW
 h"D9t
 HDR Color Scale: %0.3f
 !hdx?
@@ -14762,7 +14754,7 @@ hi,xk
 h&_)j
 h%@)j	@
 H%@)J	@
-hj489~
+hj48x
 hj@9yF@
 h&@-j.A-
 =hjc9
@@ -14807,7 +14799,7 @@ H-m.V-
 !^hNB
 h*O9H
 h*O9I:
-h"O9	M
+h"O9)M
 <HOi#
 	Holding lock %s:
 holdtime
@@ -14920,6 +14912,7 @@ HurtTouch
 h*v9(
 hv@9)
 *hV]9
+hVC9	^
 hvKyH
 hvN9i
 hV@yh
@@ -14938,7 +14931,7 @@ h"Y9u
 h"Y9uB
 h&	yh
 H'@yh'
-h&@yI'
+h&@yi'
 hy)x,
 =h&Yy
 ?+hZbe4
@@ -14963,7 +14956,7 @@ i2N9h6N9t6
 i2V9h
 (i38#
 @i4^_
-	i48`s
+	i48j{
 i6xh>@yt:
 i6@yh
 *i;8{
@@ -14972,7 +14965,7 @@ I-!8"
 *	i88
 	i:89
 _i)8)A
-i;8g6
+i;8g2
 ?i(8h
 _i)8i
 *+i,8i
@@ -14994,6 +14987,7 @@ i:8jz@
 i)8Ki@9
 i+8Ki@9k
 )i@9	
+i*@9*3
 )I@9I
 i"@9J
 I9	S	M)
@@ -15017,7 +15011,7 @@ i"B9i
 i#B9i
 ib@9j
 ib@9l
-iBB9(C
+iBB9HC
 iBB9hn@
 i*B)h
 I+B-K
@@ -15269,11 +15263,10 @@ ignoring %s.HL%s on %s
 iGroup
 	*ih*
 I-!H#
-(ih8)\
-(ih8	\
 )ih8?
+(ih8i\
 (ih8I\
-(Ih8I\
+(Ih8i\
 )ih8Ii(8
 (ih8*ij8+ik8,il8-im8.in8/io80ip81iq82ir8"ib8#ic8$id8%ie8&if8)i`8
 IHandleEntity
@@ -15321,6 +15314,7 @@ i*J)(
 I!@)J	@
 *ij8+ik8,il8-im8.in8/io80ip8(ih8
 ij,8kj*8mj(8h&
+iJ\9hU
 +i-`JG
 ijj8?
 ijw8*
@@ -16442,7 +16436,6 @@ iV@yi
  i(x`
 I@-!X"
 )ix8?
-i*x*C
 i)xh.@
 i)xh"@
 i)xh6A
@@ -16461,6 +16454,7 @@ ixhy*xhBN
 *i.xi>@yj:
 i-xj:
 i,xj:
+i*xJC
 i#xjj-
 *i,x	=@y
 ix`yi
@@ -16470,33 +16464,29 @@ i'@yH'@y?
 Iyix8}
 IyixJylx+
 +I@yL
+iyx?I
 Iy(xj
 i"Yy?
 @I@z)
 iZA9	
 <j.?)
+!	@)"J
 ('J)*[@
 ))+J)
 @ @-J
 @-J	,
 @-J	@
 J-` $
-j08!(
-j08.=
-j080=
+j08A(
 j >= 0 && j < nResultBufSize
 J0@y_
 J0@yI
 J0@yk
-j181=
-j1x1(
-j281=
-j282=
-j282>
+j1xQ(
 j2@yh
-j38#A
 j48(%
 j48	C
+j48(R
 j48t^@
 j4xH;@
 j58(%
@@ -16504,45 +16494,39 @@ j58h9
 j58H9
 j58hf@9(
 J5@y_
-j68hM
 j68u*@
 j68v&@
 j(8(~
-j(8('
-j)8('
 j)8	?
+j)8	'
 j)8	"
 j)8	$
 j)8	*
-j*8*'
-j*8*(
-j+8+'
-$J)!8
+j+8+.
 j)8	2
 j)8	7
-j(8h 
+j(8H'
+j)8H'
 j(8Hd
+j;8HL
 j(8HL
 j(8hM
-j)8i 
+j)8I6
 j)8ID
 j)8iL
-j)8iM
 j)8Ir
 j)8`j
-j*8j 
-j+8jG
+j*8J'
+j*8J(
 j(8jj)8`
 j-8K,
 j+8K:
+j+8K'
 j+8Kd
 j+8KV
-j;8(L
 j,8LH
 j,8LL
 j,8Lr
-j-8m 
-j-8m.
 j-8M^
 j-8M,
 j-8MB
@@ -16551,15 +16535,17 @@ j-8Mz
 j.8Nl
 j.8NP
 j)8)p
-j)8	Y
+j)8)Y
 j)8z&
 j)8	Z
+	!j9	
 J!@9_
 J!@9#
 J@9hJ
 j@9ij
 J%@9j
 j9	S*M*
+$J)A8
 J`A9)
 J]A9_
 jA9hj
@@ -16614,12 +16600,12 @@ JiMIJ+
 JIMIJ*
 ji)x)	
 jj(8(
-jj+8	q
+jj+8	1
 j!JJ+
 jjj8h
 j!JJK
 !JJK|
-jj)xNq
+jj)xy3
 	J"}	K
 )+J)-#K)+3L)
 Jki8_5
@@ -16693,16 +16679,16 @@ jV@y)|@
 jV@y!y|
 jV@y:yt
 jV@y!yt
-j-x-(
+j(x( 
+j)x	'
 j)x	@
 j)x		
-j*x*'
 J!_x_!5k
-j(xh!
 j)x	H
-j(xhG
 j(xHH
+j*xJ'
 j-xM 
+j-xM(
 j.xN.
 j)x	O
 j"(y`
@@ -16718,6 +16704,7 @@ _!(k#
 &@)k	
 	*_!;k
 	*_!(k
+($@)K
 K)@)+)
 (@)k0@)n
 K1B)M9C)
@@ -16731,17 +16718,17 @@ k2	)j~
 k2Q)m
 *k2@y
 ?k58D
-k68%l
+k68Q6
 *?k78
+k78')
+k78}*
 ?k78h
-k78H4
-k78W\
+k78h4
+?k78K
 	K!8"
-?k88zS
 k(8vV@
 ?){K9_
 @){K9_
-	K9# 
 k9J{c>
 K	\9K
 K9	S)
@@ -16765,7 +16752,6 @@ $k_AddSocket_Failed_FailedToAddSocket
 k_AddSocket_Succeeded
 kAKJJ
 kAKJk
-KAL9h
 ?k,am
 K.Ax E@
 kBEAMCLIPSTYLE_NUMBITS
@@ -16773,7 +16759,6 @@ KBSaved%
 _!(kc
 _!(kC
 K-#c@
-($@)K]C
 k_eActionType_Placholder
 k_eAlreadyClaimed
 k_eAlreadyFriends
@@ -17477,7 +17462,7 @@ Ki)8)
 	kI9@
 kickid %d CBaseEntity::InputKill()
 ?kIG9
-Kih8*\
+Kih8j\
 Kih8Ki)8Mi(8
 kill_count
 killeater
@@ -17623,7 +17608,6 @@ kv3format_manager.cpp
 KV3 load transfer failed: %s
 KV Conditional Evaluation Error
 K %vmo
-	k!x0
 )-k@y
 k	@y)
 Kykx)
@@ -17822,8 +17806,8 @@ LightStyles
 lighttype
 LightType_t
 lightworld
-lih8K\
-LiixiID
+lih8k\
+Liixi
 lij8?
 Lik8m
 L@I@L
@@ -18072,6 +18056,10 @@ Loot list %s: Missing "escalating_chance_drop" item name
 Loot List %s: Missing required field "chance" in the "random_attributes" block.
 Loot list %s: Multiple "escalating_chance_drop" blocks in the same slot not supported!
 Loot list %s: Specified both an item (%s) and a loot list (%s)
+lords_elo_ante
+lords_elo_ignore
+lords_elo_k
+lords_k > 0
 lose_streak
 LoseStreak
 losses
@@ -18112,7 +18100,6 @@ m1B)n
 m1E)n
 :m2OS
 :m@)5eA)6qB)
-	!M9	
 M9brC
 M9h~C
 M9hzC
@@ -20711,12 +20698,17 @@ m_movementType
 m_MoveType
 m_MoveTypeOverride
 m_mPreferredCatchTransform
+mmrchange_current_max
+mmrchange_current_min
+mmrchange_overall_max
+mmrchange_overall_min
+MMR changes don't make sense %d,%d,%d,%d -> %d,%d,%d,%d
+  MMR: %d, %d, %d, %d
 mmr_leaderboard
 	mmr_level
 mmr_level_partial_progress
 mmr_level_score
-mmr_level_score_max_gain
-mmr_level_score_max_loss
+MMR update mismatch!  %d predicted, we are sending %d!
 m>~-n
 m_nAABBDirection
 m_nActiveInteraction
@@ -20986,6 +20978,9 @@ m_nMinFactor_3
 m_nMinFactorAll
 m_nMinGPULevel
 m_nMinParticlesToEmit
+m_nMMRChangeCurrentMax
+m_nMMRChangeCurrentMin
+m_nMMRChangeOverallMin
 m_nMMRLevel
 m_nModelIndex
 m_nModifyMode
@@ -22794,6 +22789,7 @@ m_zmin
 'N(  
 "N(  
 $N(  
+#()(N
 #N(  
 #N)	}	
 %N(  
@@ -23285,6 +23281,7 @@ nav_world_center
 N-B(.
 NB9hN
 nButton
+nChange == nExpectedMMRChange
 nCost
 nDamageCategory
 nDamageflags
@@ -23527,6 +23524,7 @@ niqx?
 Nj1xkj-
 ?nm]A
 nMeshGroupMask
+nMMRChangeOverallMin <= nMMRChangeCurrentMin && nMMRChangeCurrentMin <= nMMRChangeCurrentMax && nMMRChangeCurrentMax <= nMMRChangeOverallMax
 nMode
 nmonqnmomnmomomno
 ?nnLOX
@@ -23927,6 +23925,8 @@ Nx	V @M
 n@y?	
 nZ:0J
 ?'[nza
+!	@).O
+!	@)&O
 O?0 ,	f
   o [%5d] '%s' (%s) [group entity]
 o6`"@
@@ -23947,6 +23947,7 @@ O6hF@
 O6hFB9	
 O6hn@
 O6hN@
+O6hr@
 o6hVB9	1
 O6hz@
 O6i~@
@@ -23965,6 +23966,7 @@ O6iF@
 O6ifA9
 O6iFA9
 O6ij@
+O6ir@
 O6iR@
 O6irA9
 O6iz@
@@ -23974,7 +23976,8 @@ O6`R@
 O6v2@
 o6vB@
 o-!8#
-"O9!&
+	!O9	
+"O9A&
 O9`*B
 ? !o^A?
 o/A-m'B-n+@-`C
@@ -24219,9 +24222,9 @@ o}Xot#
 &OYMW
 @-oyrn
 %O?ZE
-!	@)=p
 ?<-?p
 @-p	@
+!	@)`P
 @-P	@
 p2A-r
 p;4,F
@@ -24229,6 +24232,7 @@ P6h>@
 p6hF@
 P6hJ@
 P6hN@
+P6hv@
 P6i6@
 P6iB@
 P6iJ@
@@ -24666,6 +24670,7 @@ percent_target
 PerformanceMode_t
 PerformDeferredDeletion()
 permission
+permission_request
 permitresponses
 Permit Responses
 persister_entities
@@ -24925,6 +24930,7 @@ PlayerFogController
 PlayerFoley.Teleport_movement_short
 player_footstep
 player_gold
+Player has been eliminated in %u, but MMR changes did not converge? %d,%d,%d,%d -> %d,%d,%d,%d
 playerhealth
 playerhealthfrac
 player_hurt
@@ -24965,6 +24971,7 @@ player_signouts
 players   : %i humans, %i bots (%i max)
 playerslot
 player_slot
+Player slot %d (%s) signout place %u, health %d, relevant opponents %d
 PlayerSlot_t
 players_networkids
 Player.SonicDamage
@@ -25150,6 +25157,7 @@ pOwner
 pPlayer->m_fDisconnectedTime > 0.0f
 pPlayer->m_fDisconnectedTime <= flCurrGameTime
 pPlayerSlotPair->first == INVALID_PLAYER_SLOT || pPlayerSlotPair->second == INVALID_PLAYER_SLOT
+pPlayerState->m_nMMRChangeOverallMin == pPlayerState->m_nMMRChangeCurrentMin && pPlayerState->m_nMMRChangeCurrentMin == pPlayerState->m_nMMRChangeCurrentMax && pPlayerState->m_nMMRChangeCurrentMax == pPlayerState->m_nMMRChangeOverallMax
 pPlayerState->m_pOpponentPlayerState
 pPlayerState->m_pOpponentPlayerState->m_eCombatType == k_EDACCombatType_MirrorSource
 pPlayerState->m_pOpponentPlayerState->m_pOpponentPlayerState == pPlayerState
@@ -25434,25 +25442,25 @@ pxADj
 ?p[[x^j
 @p}Xo
 py_generic_services
-!	@)!q
 ?	@q)
 -	-	Q
 @-'@@-Q
 Q-   
-	Q19_a19
+(q09mE
 q;4,F
+	q59_
 Q8q(2
-	q%9`
+	q!9_
+	q'9`
 )Q@9)@
 Q"@9?
-(q.9G{
+	Q:9_a:9
 	qA9?
 qangle
 QAngle-world
 	QB9i
 Q-bND
 ?@@qC
-q@)(]C
 QD-{(#
 *QD9j
 q	DC9
@@ -25460,9 +25468,9 @@ qD	@za
 ?qe?A
 QH@-$
 q?h(8
-	QH9I
 ?"QhY
 Qi"A)`
+	QJ9I
 QjN?#
 qJT-s
 Qj$xij0
@@ -25517,6 +25525,7 @@ QuitServer() executing "quit"
 %qVDM
 ?q?}WF
 q$;@z
+"	)(r
 r-@	*
 "@:R".
 r0@GP!
@@ -25609,7 +25618,7 @@ RB9hR
 R~~C@
 RC9hR
 r_cacheSequenceData
-`RCyF
+`RCya
 Reached an unintended state: CPPTYPE_MESSAGE
 Reached impossible case in HasBit().
 Read: Attempted to read from a write-only file
@@ -25623,6 +25632,7 @@ really freaking heavy
 Re-analyze the current Navigation Mesh and save it to disk.
 reason
 reason_code
+Re-calculating range of MMR changes
 Receive
 Received a cancel match reservation for match %llu
 Received a match reservation for match %llu
@@ -26177,15 +26187,13 @@ RunTimeOfDayCommand
 	R)v4N
 r_VehicleViewDampen
 r@y`&@
-`R@y\
-R@y_"
-R@y;#
 `R@yh
 R@yHq
 r@yhr
 R	yi2
 ryjj8
 R	yu2
+`R@yw
 --- %s: 
 "%s" 
 "%s":
@@ -26247,9 +26255,9 @@ s7>Ip
 %s : %8.2f: resumed
 %s : %8.2f:  start %s [%s]
 %s : %8.2f: waiting scene to become interruptible
-*?S)9
+*?S+9
 S@9h"
-(S)9j
+(S+9j
 (SA9(
 %s:  added global entity %d %s (%s)
 sale_price
@@ -28612,7 +28620,8 @@ Switches to navmesh for the specified spawngroup
 Switching local lobby state to %s from %s
 Switching to server state %s from %s based upon the lobby being updated to this state
 %s (%x) spoke %s (%f)
-S@y.7
+s@ya;
+S@ya;
 Symbol name "
 symbols
 Synchronously spawn an entity group from a list of spawn tables.
@@ -28632,10 +28641,10 @@ System %s failed to init
 szName
   szReplaysPath = %s
 ?"_t?
-!	@)~T
 T0:	S
 T0:	S0M0
 T0:	SpM0
+	*!t1
 T1I@-f@!
 T28	S
 T+5@y
@@ -28944,7 +28953,6 @@ Thf@9
 Thf@9(
 Th"F9
 ThF@9h
-Th"F9{Z
 ThFC9
 Thf@y
 thick
@@ -28968,6 +28976,7 @@ This will break level transitions!
 This ZeroCopyOutputStream doesn't support aliasing. Reaching here usually means a ZeroCopyOutputStream implementation bug.
 THit8
 Th&@)j
+ThJ@9
 ThJ@9H
 ThJO9
 ThJP9v
@@ -28995,7 +29004,7 @@ THROW POST BLOCKED
 THROW PRE BLOCKED
 ThR@y
 TH;	S(O(
-Th*U9tI
+Th*U9
 ThV@yh
 Th*W9v
 Th~@y
@@ -29411,6 +29420,7 @@ trusted_server
 T`R@y`
 Try changing the number of bones per vertex or the skin weighting, and send Sergiy a repro mesh with this error description.
 Trying %s (%s): 
+Trying to add end of round stats  for a non existing player (player slot: %d, we have %d player states)?
 Trying to change pitch on invalid sound event %s
 Trying to concatenate meshes with different numbers of attributes!
 Trying to concatenate meshes with incompatible attribute sets!
@@ -29523,6 +29533,7 @@ U7r8Ne
 u9% &
 U9i2V9
 ]u9n5;> )"
+U@9@SG
 %u[%d]
 uD-@	D-
 udp_connect_ip
@@ -29988,13 +29999,11 @@ uYLl>
 uz9GxV
 !V @;
 	!@)V
-v2N9a3
 v8array
 v8callback
 v8object
 v8value
 V8@yCx@9A|@9
-V9)a$
 v@9iv
 ?(-\Va3
 VA9hV
@@ -30207,6 +30216,7 @@ VguiScreen
 VGUI_Surface032
 VGUI_System010
 =vgU)z[@
+!	@)vH
 ?+Vh{O@
 Vh{O@n
 V-hV@
@@ -30314,11 +30324,13 @@ void CConcreteEntityList::AllocEntityChunk(bool)
 void CConcreteEntityList::PreservePlayerNetworkables(int)
 void CDAC_AttackRecordManager::RemoveRecord(CDAC_AttackRecord *)
 void CDACEventSchema::Initialize()
+void CDACGameRules::CleanMMRChanges()
 void CDACGameRules::DropDisconnectedPlayers()
 void CDACGameRules::InitializeGameMode(EDACGameMode)
 void CDACGameRules::LoadItemDefs()
 void CDACGameRules::RunGameStateMachine_Combat()
 void CDACGameRules::SaveGame()
+void CDACGameRules::SendPostMatchState(const CDACPlayerState *)
 void CDACGameRules::SetGameState(EGameState, ERoundState, int, float)
 void CDACGameRules::StartNewBotGame(int)
 void CDACGameRules::StartNewGameFromLobby(const CDACLobby *, const CDACServerStaticLobby *)
@@ -30638,6 +30650,7 @@ W6hfA9
 W6hJB9	4
 W6hr@
 w6hv@
+W6hv@
 w6hZB9	2
 W6i~@
 W6i6@
@@ -30810,6 +30823,7 @@ windradius
 windrunner_powershot
 winning_player_slot
 winning_team
+  Wins: %d, %d, %d, %d
 win_streak
 Win the game at the end of the next combat (local bot match only).
 WINXP
@@ -30895,7 +30909,6 @@ W`@-Y
 WY@)U	@
 ?Wzm6V"
 @%@x	
-	*!x#
 x]/(@
 X-!("
 \x%02x
@@ -30935,6 +30948,7 @@ X@)`&G
 ?xG!$fQ
 xi*8*i@9J
 xL9-C
+!	@)XP
 	xp_earned
 x(Q@9
 ?XRQi
@@ -30954,7 +30968,6 @@ x*;XZ
 *%@y(
 		@y_
 		@y?
-"	y0q
 `>Y1\
 ,y=35
 @y?!4kC
@@ -30972,13 +30985,13 @@ YawArrow
 yaw_end
 yaw_start
 yawVel
-@y)aWy
 y+a_x
 YAxis
+@y)aXy
 :@y`B
 YcuP.
-@y %E
 @y+}E
+@y eE
 YellowBlood
 yes - via input
 @yh=@
@@ -31093,6 +31106,7 @@ yj&@x
 yk^@yj
 ykZ@yI
 @yL	@yJ
+"	y@m
 %Y-%m-%dT%H:%M:%SZ
 *	@ym	@y
 y*M@yJ
@@ -31109,7 +31123,7 @@ You must be a server admin to use mp_disable_autokick
 You must now restart to use Grunt-o-matic.
 @y(Q*
 y)Q@9
-@y)qVy
+@y)qWy
 ys@){
 @y)SA9
 ?yt#,*
@@ -31124,9 +31138,9 @@ YWA)H/@
 @y)/@x
 Y`x($
 y|x(E@
-	y:xII
 *y(xj
 +y(xk
+	y:xNW
 	@y-	@y
 y+)@yJ
 y+-@yk

@@ -54,7 +54,7 @@ $0$1$2 $3 = $4
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
 [%02d:%02d:%02.3f]: %s
-%02i/%02i/%04i - %02i:%02i:%02i
+%02i/%02i %02i:%02i:%02i 
 %03i:  %s (%s):   
 \%03o
  $(,048<AEIMQUY]aeimquy}
@@ -170,6 +170,9 @@ $0 to $1,
 12IVoiceServer
 12IVoiceTarget
 12IVProfExport
+	1390L
+	139BM
+	139cO
 13CBoolProperty
 13CCallbackBase
 13CCallbackImplILi128EE
@@ -368,6 +371,7 @@ $0 to $1,
 15CSVCMsg_Print_t
 15CSVCMsg_SetView
 15CTextMessageMgr
+15CThreadedLogger
 15CTier0AppSystemI11IEngineVGuiE
 15CTier0AppSystemI11IXboxSystemE
 15CTier0AppSystemI12IApplicationE
@@ -573,6 +577,7 @@ $0 to $1,
 16ILoopModeFactory
 16IMatchEventsSink
 16IUploadGameStats
+17:59:11
 17CBaseCmdKeyValuesI20CCLCMsg_CmdKeyValuesE
 17CBaseCmdKeyValuesI20CSVCMsg_CmdKeyValuesE
 17CBaseCmdKeyValuesI32CSVCMsg_GameSessionConfigurationE
@@ -609,8 +614,8 @@ $0 to $1,
 17IEngineServiceMgr
 17IGameEventWatcher
 180.0
-	189[
-	189Y
+	189?
+	189J
 18CBaseEngineServiceI12IToolServiceE
 18CBaseEngineServiceI13IInputServiceE
 18CBaseEngineServiceI13ISoundServiceE
@@ -659,7 +664,8 @@ $0 to $1,
 18MenuItemCheckImage
 18ToolTraceRayResult
 -1@9_
-*(!19@
+	1[9)
+	1&9[
 !)19BJRZcks{
 19C2S_CONNECT_Message
 19CBidirMsg_RelayInfo
@@ -679,10 +685,12 @@ $0 to $1,
 19CSVCMsg_UserMessage
 19CSVCMsg_VoiceData_t
 19CSVCMsg_VoiceInit_t
+19CThreadedFileLogger
 19CTier1AppSystemDict
 19CTier2AppSystemDict
 19CVariantSaveDataOps
 19CVConCommandMessage
+	1@9i
 19IConsoleDisplayFunc
 19IDebugVisualizerMgr
 19IKeyValuesErrorSpew
@@ -691,8 +699,8 @@ $0 to $1,
 19ISplitScreenService
 1@9M5
 19NetMessagePacketEnd
-	1+9R
 19RestartMapToolEvent
+	1&9Y
 !1AQaq
 !>@=1B
 1bQJ1~
@@ -700,11 +708,9 @@ $0 to $1,
     1 = force cl_predict to 1
 1hqx2hrx?
 1@)k5E
-	1k9)
    -1 = let clients set cl_predict to anything
 1 = Pause the game when pressing ~ to open the console. CTRL+~ opens the console without pause.
 1.QB!
-	1R9i
 1 - resize right
 1sAL"
 1 - top-right
@@ -715,7 +721,6 @@ $0 to $1,
  1: write to NULL
 *1x0x
 !2@=!
-	2!("
 	2*	@
 	2		@
 200000
@@ -782,7 +787,6 @@ $0 to $1,
 21IUGCAddonPathResolver
 21IVConCommDataReceived
 21NetMessagePacketStart
-22:58:16
 22C2S_CONNECTION_Message
 22CActivateMainMenuPanel
 22CBaseActionPauseDialog
@@ -964,14 +968,10 @@ $0 to $1,
 29CToolGameSimulationDispatcher
 29ILoopModePrerequisiteRegistry
 29IToolGameSimulationDispatcher
-		29jp
 2,	@9L
 29ToolEvent_GetEntityInfoResult
-2	a19H)
-2	a%9
-2	A*9
+2	a!9H)
 2	a@9Ia
-2	A 9s
 2	AA9
 2Ay)	
 2_BONE_IK
@@ -992,7 +992,7 @@ $0 to $1,
 2h"	9
 2hb@9H
 2hBK9H
-2HC>9
+2HC.9
 2hj)8
 2hJ	9(
 2hr	9`
@@ -1013,15 +1013,13 @@ $0 to $1,
 2j"	9I
 2j"@9)p
 2?".k
-2?k78
-2?k88
-2_k88pz
+2?k78O>
+2_k88m
+2?k88N:
 2kii8l}C
 2Kkj8k
 2L%@x+
 2 .ProtoFlattenedSerializerField_t"!
-2	q&9"
-2*Q-9
 2 - resize down
 2	u	9
 2Way_0( %s )
@@ -1085,7 +1083,10 @@ $0 to $1,
 39CBaseClientSpawnGroupCreatePrerequisite
 39CBaseServerSpawnGroupCreatePrerequisite
 39CFlattenedSerializerChangesSpewListener
+	-39cM
 39CNetworkServerSpawnGroup_WaitForClients
+	-39QL
+	%39z
 3 - bottom-right
 #3CScs
         %3d %3d %3d %3d %3d %3d %3d %3d
@@ -1115,6 +1116,7 @@ $0 to $1,
 48CNetworkClientSpawnGroup_WaitForChildSpawnGroups
 48CNetworkServerSpawnGroup_WaitForChildSpawnGroups
 4		@9
+	-49`C
 49CNetworkClientSpawnGroup_LoadEntitiesPrerequisite
 49CNetworkClientSpawnGroup_LoadSaveGamePrerequisite
 49CNetworkServerSpawnGroup_LoadEntitiesPrerequisite
@@ -1174,6 +1176,8 @@ $4DTdt
 %5.1f,
 524288
 %5.2f %5.2f %5.2f %7i %5i %7.2f %7i
+	539BO
+	539!M
 53CNetworkClientSpawnGroup_AllocateEntitiesPrerequisite
 53CNetworkClientSpawnGroup_WaitForAssetLoadPrerequisite
 53CNetworkServerSpawnGroup_AllocateEntitiesPrerequisite
@@ -1181,12 +1185,14 @@ $4DTdt
 54q`	
 55CNetworkClientSpawnGroup_AllocateSpawnGroupPrerequisite
 &'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz
-	589:
-	5898
+	589^:
+	589i;
 58jv@
 ,5@9_
 )5@9)}
 	5@9)
+	5&9:
+	5&98
 59CNetworkClientSpawnGroup_WaitForOwnerSpawnGroupPrerequisite
 59CNetworkServerSpawnGroup_WaitForOwnerSpawnGroupPrerequisite
 *5@9J
@@ -1196,7 +1202,6 @@ $4DTdt
 % 5d: % 5d
 %5d:  DispatchEvent( %s )
 -@))5E
-	5E9i
 %5EUeu
 5h2I9h
 5h6I9
@@ -1213,6 +1218,7 @@ $4DTdt
 5IVEfx
 5i.@y
 5(k|8
+	5s9i
 ?6`*@
 ?6	(@
 /6`>@
@@ -1226,12 +1232,16 @@ $4DTdt
 60CNetworkClientSpawnGroup_WaitForManualCompletionPrerequisite
 %6.2f %6.2f %6.2f %.3f %.3f %.3f
 64-bit
+	)69~?
+	%69_
+	!69i?
  6`"A
 (6`&A
  6arBy
 6Ay+}E
 6Ayk(
-6Ayy(
+6AyK(
+6AyY(
 `6`BD
 6ConVar
 _6	D@
@@ -1299,6 +1309,7 @@ _6hNB9	;
 @6hv@
 6hVA9
 6hVEy
+6hVK9
 (6hZ@
 6hzEy
  6i*@
@@ -1416,9 +1427,12 @@ _6inA9
 87`f@
 :,@8[,@8
 %8.8s: %-5d entries, '%s', ...
-	-89|
+	!89<<
+	%892
+	-89I:
+	)89Q<
 %8@9R
-	-89z
+	-89T;
 8b  16-May-2010
 8CFmtStrNILi1024ELb0EE
 8CFmtStrNILi1024ELb1EE
@@ -1441,8 +1455,8 @@ _8"h 8
 )8hv@
 *8hv@
 (8HXhx
-@8i/@88
 @8i/@8J
+@8i/@8X
 @8+ih8
 @8,ij8_}
 @8*ij8
@@ -1477,6 +1491,7 @@ _8y,@8
 -)@9_
 -%@9_
 -	@9_
+:9		@
 .@9)	
 (@@9	
 (@@9		
@@ -1490,8 +1505,9 @@ _8y,@8
 @9*	@
 @9+	@
 $@9	(
-#)9	+
-	))9'
+*(!!9@
+	-&9|
+	!^9	
 	)@9)
 	)@9*
 	@9*]
@@ -1507,6 +1523,7 @@ $@9	(
 @9(	 7
 @9;7@9<
 9.@8 
+	989!;
 @9*-@8K
 (`@9	`@9
 )9@9)}
@@ -1534,7 +1551,7 @@ $@9	(
 @9a2@
 @9-b@
 @9*b@
-	%?9c
+	%-9c
 @9)+C
 @9	}C
 	9C%A
@@ -1555,8 +1572,8 @@ $@9	(
 9CRegistry
 9	D@8
 9*E@8?
-	9E9i
 @9E-@9U
+	9f9i
 @9h*@
 "@9H	
 (@@9H
@@ -1595,6 +1612,7 @@ $@9	(
 9hZB9
 ) @9i
 @9i&@
+	}~9i
 @9I	@
 "@9i"@9
 9IBlackBox
@@ -1625,13 +1643,13 @@ $@9	(
 @9J#@9*
 @9J	@9&
 @9J9	
-	9J9i
 @9jF@
 @9jij8
 @9jij8*G!7)
 @9jij8JE!6)
 @9jJ@
 @9jjh8*
+		 9jt
 @9JU	
 @9k&@
 !!@9K
@@ -1649,7 +1667,7 @@ $@9	(
 @9L=@9M
 9l"A9
 @9l}C
-	!?9m
+	!-9m
 !@9M%
 )@9M-
 %@9M)
@@ -1672,23 +1690,24 @@ $@9	(
 % @9R
 %(@9R
 @9R1@9D
+	9s9i
 9	S)M*
 @9T|@
 @9T)@9K
 (@@9tB
+	-@9u
 @9U|@
 @9V%@9W
 @9-{vx
 @9){vxl
-	})9W
 /9W?O
 /9W?OZ
-		/9wv
 	9x9i
 @9+	@yHA
 @9+	@yHM
 9y*xi
 @9 	@z
+	-&9z
 'A)	}	
 #@)`~A
 A-!(!
@@ -1698,26 +1717,24 @@ a2 "%i"
 a2@yh2@y
 a8#%D
 _A8qh
+!a9)+
 +a@9?
+	a[9	
 	!A9?
 		A9?
 		A9	
-	A`9?
 	A@9)
 	A@9)	
 a@9+a
 a@9	a
 A9)aG
-	a)9d
 		A9h
 	A9h&A
 	a@9i
 ^A9i^
 "A9i"
 *	A9i
-	A[9i
 	A@9i
-	A\9i
 A9i>@
 	A@9I
 A9	ii
@@ -1729,7 +1746,6 @@ A9|J@
 +	A9K
 A9Kik
 +	A9lC
-A-9?Q-9_
 ?A9tJ@
 A-'@A-
 AA9(	
@@ -1865,26 +1881,31 @@ AE_VORTIGAUNT_ZAP_POWERUP
 AE_VORTIGAUNT_ZAP_SHOOT
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
+	Af9i
 A file with this name is already in the pool.
 After selecting and moving a panel Ctrl-z will undo the move.
 after solve err=%f
 After this many seconds without a message from fully connected client, the client is dropped
 After this many seconds without receiving a packet from the server, the client will disconnect itself
+	AG9i
 A game file appears to be missing or corrupted.  In the Steam client go to the game's properties.  In the 'Local Files' tab select 'Verify Integrity of Game Cache' to have Steam double-check the game's installation.
 A-gBA-
 Agg data %d: %p (%d parts, crc 0x%08X)
 aggregate_value
+	AH9i
 <a href=
 a "%i"
 A!;I2
+	AI9i
 #A)iBB
 ai_model_info
 .A)iN@
 AIWalkable
 A	@}J!
-)Aj9?
+	AJ9i
 a.JY .I
-	ak9	
+	AK9i
+	AL9i
 alias
 Alias a command.
 ALIGN_TYPE is wrong, please fix
@@ -1976,9 +1997,9 @@ Annotation
 ", another member of oneof "
 Anti-aliasing: 
 a numbered reference must not be zero
+	AP9?
 App active: %s, %dms inactive sleep
 .app/Contents/MacOS
-append
 #AppFramework_InvalidLocalFiles
 #AppFramework_OutOfMemory
 -appidoverride
@@ -2073,7 +2094,7 @@ audible_mask
 audio
 AudioLanguage
 AudioSubLanguage
-Aug 14 2019
+Aug 20 2019
 auth_protocol
 auth_steam
 auth succeeded
@@ -2095,15 +2116,6 @@ Auto Update - any changes apply instantly.
 auto_wide_tocontents
 [a:%u:%u]
 [A:%u:%u:%u]
-	Av9_
-	Av9_]
-	Av9_	
-	Av9*3
-	Av9j3
-	Av9J3
-	Av9_Q
-	Av9s3
-	Av9t3
    Average frame time: %f ms (%f FPS)
 avg_data_in
 avg_data_out
@@ -2117,15 +2129,11 @@ avg_packets_out
 AVI recording failed! Missing expected pixels!
 avisound 
 /AV?O!
-	AW9i
-	Ax9i
-	AX9i
 A{"xB
 Ax_! k
-	AY9i
 A@yi*@
 A)`z@
-	AZ9i
+)AZ9?
 AZUy!
 =	)B)
 	*`"B
@@ -2139,8 +2147,9 @@ B@9	A
 ^B9h^
 b@9hb
 b"@9i
+	%B9I
 b@9ib
-B 9rc
+b+9m%
 bA9hb
 BA9hB
 BA9iB
@@ -2469,6 +2478,7 @@ Button.DepressedTextColor
 Button.FocusBorderColor
 ButtonKeyFocusBorder
 ButtonToggled
+&B)v+
 byte COM_BlockSequenceCRCByte(byte *, int, int)
 bytes. 
 Byte size calculation and serialization were inconsistent.  This may indicate a bug in protocol buffers or it may be caused by concurrent modification of 
@@ -2485,11 +2495,10 @@ C2S_CONNECTION_Message
 C2S_CONNECT_Message
 C-!8"
 (c@9+
-_C>9(
+_C.9(
 C9an@
 C9fj@
  c@9!g@9"
-_C-9_Q-9
 cA9s~
 cable
 cache/DownloadCache.db
@@ -2780,7 +2789,6 @@ CFingerChain
 CFingerSource
 CFootDefinition
 CFrameSnapshot CUtlMemoryPoolMT
-c^Fy"
 CGameClientConnectPrerequisite
 CGameEventSystem::SendRebroadcastMessage doesn't support more than %llu clients!
 .CGameInfo"
@@ -3473,7 +3481,6 @@ Compression window is being reset to 512
 ComputeClientPacks
 computer_guid
 COM_TimestampedLog
--conclearlog
 ConcreteEntityList:  approaching limit, allocating entity chuck %d/%d for ents [%d -> %d]
 -condebug
 Conditional Error: %s
@@ -3534,6 +3541,9 @@ Console History (reversed)
 Console initialized.
 -consolelog
 console.log
+-consolelog_append
+-consolelog_notimestamp
+-consolelog_rotate
 ConsolePage
 ConsoleStartup
 ConsoleSubmit
@@ -3556,7 +3566,6 @@ CONTENT
 CONTENTADDONS
 -contentroot
 CONTENTROOT
--con_timestamp
 ContinuousProgressBar
 ControlFactory
 ControlModified
@@ -3819,9 +3828,11 @@ CTSQueue<CFunctor *, false>::CTSQueue() [T = CFunctor *, bTestOptimizer = false]
 CTSQueue<CNetworkFieldChangedEventQueueChangeInfo_t, false>::CTSQueue() [T = CNetworkFieldChangedEventQueueChangeInfo_t, bTestOptimizer = false]
 CTSQueue<CNetworkMessageSignalQueue<CEventIDManager_GameToolEvents, BogusType_t>::QueuedMessage_t, false>::CTSQueue() [T = CNetworkMessageSignalQueue<CEventIDManager_GameToolEvents, BogusType_t>::QueuedMessage_t, bTestOptimizer = false]
 CTSQueue corruption
+CTSQueue<CThreadedLogger::Buffer_t *, false>::CTSQueue() [T = CThreadedLogger::Buffer_t *, bTestOptimizer = false]
 CTSQueue: Misaligned queue
 CTSQueue::Node_t *CTSQueue<CFunctor *, false>::Push(CTSQueue::Node_t *) [T = CFunctor *, bTestOptimizer = false]
 CTSQueue::Node_t *CTSQueue<CNetworkFieldChangedEventQueueChangeInfo_t, false>::Push(CTSQueue::Node_t *) [T = CNetworkFieldChangedEventQueueChangeInfo_t, bTestOptimizer = false]
+CTSQueue::Node_t *CTSQueue<CThreadedLogger::Buffer_t *, false>::Push(CTSQueue::Node_t *) [T = CThreadedLogger::Buffer_t *, bTestOptimizer = false]
 CTSQueue::Node_t *CTSQueue<QueuedSweepNode_t, false>::Push(CTSQueue::Node_t *) [T = QueuedSweepNode_t, bTestOptimizer = false]
 CTSQueue::Node_t *CTSQueue<SweepGroup_t *, false>::Push(CTSQueue::Node_t *) [T = SweepGroup_t *, bTestOptimizer = false]
 CTSQueue<QueuedSweepNode_t, false>::CTSQueue() [T = QueuedSweepNode_t, bTestOptimizer = false]
@@ -3909,8 +3920,7 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 *-D),5E)_
-d6@y#
-d6@yC
+d6@yc
 	D@8!
 D@8)%
 	D@8)m
@@ -3918,9 +3928,6 @@ D@8)%
 D@9_ 
 D9{6@
 D9i.A
-	!d9j3
-	!d9J3
-D9vBG
 -dac_offline
 %d addons loaded
 ,DA)R
@@ -4107,6 +4114,7 @@ Destroy
 DestroyAllEntitiesToolEvent"
 DestroyEntityToolEvent
 DestStructType_t::BaseClass
+Detected log rotation.  Closing and reopening log
 Determines which files can be downloaded from the server (all, none, nosounds)
 DEV_BUILD
 -devcontent
@@ -4119,6 +4127,7 @@ DeviceID
 DevMsg
 %d(%f):  
 %d,%f,%f,%f,%f,%f
+DG-*	
 %d_hidden
     [%d: huff+mtf 
 DIALOG_ASKCONNECT
@@ -4289,8 +4298,6 @@ dynamic_interaction
 .dynstr
 .dynsym
 E-!("
-	=E9i
-	e)9Zr
  *Each frame will render %d times*
 echoln
 Echo log information to the console.
@@ -4305,9 +4312,11 @@ editable
 EditMenu
 Edit %s Action
 E-evA
+	Ef9i
 effect
   effect %d, color1(%d,%d,%d,%d), color2(%d,%d,%d,%d)
 , efficiency class %lld
+	eG9)
   eg: 'demo_goto 6666' or 'demo_gototick 25%%' or 'demo_gototick 42min'
 e.g.: playdemo replays/foo jpg wav framerate 30
 e.g.:  startmovie testmovie jpg wav jpeg_qality 75 framerate 30
@@ -4315,7 +4324,6 @@ ehandle
 .eh_frame
 .eh_frame_hdr
 eikonal
-	EJ9i
 element
 element_array
 elementid
@@ -4708,11 +4716,11 @@ Extensions of MessageSets must be optional messages.
 Extensions to non-lite types can only be declared in non-lite files.  Note that you cannot extend a non-lite type to contain a lite type, but the reverse is allowed.
 extra interior spaces removed from keyword
 extreme cHRM chunk cannot be converted to tristimulus values
-	eY9)
 F-!($
 F-%:%
 *-F),5G)_
-	-F9i
+	=f9i
+	]f9i
 fA9hf
 FA9hF
 FA9iF
@@ -4803,7 +4811,7 @@ fgcolor
 fgetc
 fg_image
 F*%h3x%hgx
-F-HUG
+F-HMB
 F*&h%x%hsx
 F*%h'x%hsx
 field
@@ -4920,6 +4928,7 @@ filename
 FileNameCombo
 FileNameComboBox
 FileNameLabel
+fileno
 File not found in the zipfile
 FileOpenDialog
 #FileOpenDialog_Cancel
@@ -5228,6 +5237,7 @@ g6i^@
 G6iBA9
 G6v.@
 (g@9.
+	}G9I
 %g: AdvanceTime ticks this frame %d, sim remain: %g
 -game
 /game/
@@ -5584,7 +5594,6 @@ h7Ay
 h)8Ay)
 @H`8b
 =h"	9
-*h*]9
 h"@9(
 h"@9)
 h"@9)$
@@ -5719,6 +5728,7 @@ h"J9b^A
 h"J9i
 h"J9iR
 hjh8H
+*hjK9
 h*@)K
 hk<8|
 hk8)!
@@ -5796,6 +5806,7 @@ HParticleSystemDefinition
 HPostProcessing
 HRenderTexture
 hrEy)
+hrEy	#
 hrEyi
 hrEyu
 )hrG9
@@ -5825,6 +5836,7 @@ h&@y)
 hzEyH
 hzEyi
 hzEyirB
+hZK9H
 hzT9h
 hzT9`zA
 	*	i*
@@ -5837,7 +5849,6 @@ i6@yh
 i78w"B
 i7xh6@
 _i(8+
-?i(8	
 	*	i8
 	I*8)
 i)8a^A
@@ -5859,15 +5870,11 @@ i(8m&W
 ?i(8v
 i*8?y*xJ
 *i"@9
-	i)9+
 i"	9@
 I9`BA
 I9)%D
-	-i9i
-	}i9i
 )I@9I
 i"@9J
-	i)9y
 IAppSystem *CAppSystemDict::AddSystem(const char *, const char *, ErrorResponse_t)
 IAppSystem *CAppSystemDict::AddSystem(CreateInterfaceFn, const char *)
 IAppSystem *CAppSystemDict::AddSystem(IAppSystem *, const char *)
@@ -6062,9 +6069,9 @@ Ii+x!
 	iix?!:k`
 i"@)j
 )ij8	
-ij(8;
 )Ij8?
 Ij8)	@
+ij(88*
 ij8)ij8*
 *ij8+ik8,il8-im8.in8/io80ip8(ih8
 )Ij8j
@@ -6477,15 +6484,15 @@ j.])
 @ @-J
 j2	)k
 j48	C
-j48H"
+j48h"
 j48t^@
 j4xH;@
 j58H%
 j58hf@9(
 j58"l
 j68($
-j688"
 j68u"@
+j68X"
 j7Ayh3Ay)	
 j)8hjj
 j(8(Z@
@@ -6499,7 +6506,6 @@ J	9hB	9
 j	@9I
 J!@9jB
 J9tB	
-	*JA-
 ja8B(
 J]A9_
 jA9hj
@@ -6583,8 +6589,8 @@ jpeg_quality
  jpeg_quality nnn = sets jpeq quality to nnn (range 1 to 100), default %d
 jpeg_screenshot
  jpg/jpeg = outputs .jpg files
-	*JQ!
 J	@Q*
+	*JQ8
 jr82"
 jr822
 js_array
@@ -6626,19 +6632,21 @@ K1@yk
 *k2@y
 ?k58D
 K5@yk
-k68@F
-*?k786?
+k68=b
+*?k78
 ?k78h
+k78xN
 ?k)8(
 _k88?
 ?k88_
-_k88K"
+_k88H>
 ?k88w
 (k;8H
 k(8vV@
 K!@9+!
 K	@9)
 _k98x
+	K9C:
 K9@yk
 K	A9lC
 kaJJk[k
@@ -6837,6 +6845,7 @@ kn1V?OK
 :(knN
 Known by handlers: 
 Known Peer State "%s"
+	*kQ#
 Kq@yk
 KQ@yk
 K)T9J!P9j
@@ -7152,12 +7161,10 @@ LrwcE
 lseek
 %ls [wstring, len = %d]
 [L:%u:%u]
-	M89b
-	M89d
-	m)91
-	m~9i
+	M&9b
+	M&9d
 m%@9i)
-	M{9i
+	m>9z
 m	A9j"
 Machine
 machine_convars
@@ -7571,6 +7578,7 @@ m_flValue
 m_flWeight
 m_ForceGenerators
 m_FullSendTables
+	mG9I
 *mGxJ
 m_hActivator
 m_hBuffer
@@ -7585,7 +7593,7 @@ Mhk8Nhl8
 m_hParentSpawnGroup != m_hSpawnGroupHandle
 m_hSnapshot
 m_hTarget
-	mi9)
+	Mi9i
 m_iEventListCount
 Migrating HW specific configuration files.
 Migrating old convar '%s' (value='%s') in file '%s' to new configuration system
@@ -7644,6 +7652,7 @@ m_JointName
 m_Joints
 mkdir
 @mk%@y
+	ml9i
 m_lightCookie
 m_LoopState
 -=M]m}
@@ -7947,9 +7956,9 @@ m_vTintColor
 m_vTipOffset
 m_vUpLS
 m_vUpVector
+	mW9)
 m_worldGroupId
 m_wristBones
-	mY9I
 "N(  
 #N)	}	
 N}[ .=
@@ -8039,7 +8048,6 @@ N6snappy4SinkE
 N6snappy6SourceE
 (_N8H
 !n9[ .
-	!n9	
 [ n9+a
 ,.n*a
 n	A9-
@@ -8679,7 +8687,6 @@ p6jf@
 p6jR@
 p7v	P7
 P7x"@
-	}P9i
 "pA3QuW
 package
 package $0;
@@ -9181,6 +9188,7 @@ PseudoUUID
 PS_FAILED %s in sequence for %s
 PS_SATISFIED %s in sequence for %s
 ptestbed
+pthread_create
 pthread_getspecific
 pthread_key_create
 pthread_mutexattr_init
@@ -9192,6 +9200,7 @@ pthread_mutex_lock:
 pthread_mutex_unlock
 pthread_mutex_unlock: 
 pthread_setspecific
+pthread_sigmask
 ptr( 0x%p )
 public
 ../public/appframework/tier1app.h
@@ -9254,11 +9263,10 @@ PVS cluster %d
 pvs.cpp
 PVS origin %s
 py_generic_services
-	Q89A
-	Q89C
-!q9)+
-	q)9c
+	Q&9A
+	Q&9C
 *Q@9j
+	q>9Y
 Q(aNf(!
 qangle
 QAngle
@@ -9267,6 +9275,8 @@ QAngle-world
 q(	AzK
 QB)5}@
 	QB9i
+	QC9I
+)qE9?
 QE@yk
 *	qG9)
 	qG9)
@@ -9286,7 +9296,6 @@ Q/!OJ
         qsort [0x%x, 0x%x]   done %d   this %d
 	qSy)
 *qSyJ
-	QU9I
 quality
 quality %d 
 quality software.  Thanks.  Julian Seward, 30 December 2001.
@@ -9327,7 +9336,6 @@ R8G8B8A8_ETC2_EAC
 R8G8B8_ETC2
 *R)8yv
 r@9ir
-	-R9u
 rA9hr
 RA9iR
 RadianEuler
@@ -9748,9 +9756,9 @@ RIO_WILL_RELAY
 Rjjh8hB
 rJMJJ
 RJ	* &v
-R?k78XL
+R?k78Uh
+R?k)8
 R(k)8
-R?k)8(e
 R(kh8
 R(kh8h
 R(kh8H
@@ -9796,7 +9804,7 @@ r_stereo_eye_separation
 r_stereo_mode_anaglyph
 r_stereo_mode_crossed
 r_stereo_mode_parallel
-Rtj(8h
+Rtj(81
 r_toggleviewportsize
 r_translucent
 rt+rld
@@ -9835,7 +9843,6 @@ RZqxeHq81
 "%s":
 "%s":[
 (*%s*), 
-[%s] 
 %%%s%%
 %s:  
 %s/*.*
@@ -9865,6 +9872,7 @@ S3: Duplicate client connection: UserID: %x SteamID %s
 S3,	S48
 S)5K*j
 %s = %6d (%6d:%6d)
+	=s9i
 %s. Ack, Net Buffer overflowed.
 %s:  adding %d:'%s' (%d total) userdata %d
 -safe_mode
@@ -10365,6 +10373,7 @@ S`i#8
 S i#8
 S@i#8
 %s_%i.dem
+sigfillset
 SIGINT received
 	signature
 SignedDestinationAddress_t
@@ -10746,7 +10755,7 @@ ss_remove %d
 ss_voice_hearpartner
 ss_waitingforgamesessionmanifest
 %s:  SyncUnloadSpawnGroup shutdown/destroy...
-=	St(
+=	St$
 __stack_chk_fail
 Stack depth limit hit (%d)
 stackstats_dump 
@@ -11251,7 +11260,7 @@ T#$@9D
 T#$@9D(
 T#,@9D0
 T#\@9D0
-	%T9I
+	-t9i
 T*9	S
 T	/A)
 T	a@9
@@ -11473,6 +11482,7 @@ Th>K9(
 Th>K9H
 Th*@)l.H)oBA)qJI)m:Di
 ThrA9
+thread constructor failed
 ThreadGetCurrentId
 ThreadGetCurrentProcessHandle
 ThreadGetPriority
@@ -11577,7 +11587,7 @@ TizEyJ
 Tj2@9j
 Tj2B9)
 Tj6@y_! k
-tj(8k
+tj(8D
 T`"J9
 Tj"@9J
 TjkA9k'@
@@ -11857,14 +11867,16 @@ T"zrx
 \U%08x
 u64( %lld = 0x%llX )
 )U7O{
-	U89 
-	U89"
-	u)9B
+	U&9 
+	U&9"
+	u>98
+	u~9i
 %u CPU%s
 %u[%d]
 udp/ip   : %s:%i
 udp_port
-	ui9)
+	Uf9i
+	uG9I
 -uidev
 UILanguage
 uint16
@@ -12035,7 +12047,6 @@ unused
 UnzipZip error: failed to find '%s' in zip '%s'
 UnzipZip error: %s (%s)
 /]U?O
-	uP9i
 UpArrow
 update_baseline
 UpdateBinarySizes
@@ -12148,9 +12159,8 @@ utlstringtoken
 [U:%u:%u:%u]
 UVLX8888
 UVWQ8888
+	uW9)
 u[|)x_})`
-	Ux9i
-	uY9I
 v8array
 v8callback
 v8object
@@ -12217,6 +12227,7 @@ V_atoi
 V_atoi64
 V_atoui64
 vaudio_speex
+v@Aug 14 2019
 VAvi001
 VB9hV
 VBAllocTracker001
@@ -12402,7 +12413,6 @@ Visibility %s.
  (Visible)
 V_isnan
 V_iswspace
-v@Jan
 V_logf
 V_LogMultiline
 _V_MakeAbsolutePath
@@ -12692,6 +12702,8 @@ w6hZB9	2
 w6if@
 W6if@
 W6ijA9
+	-W9i
+	}W9i
 waiting
 waiting for first spawn group
 waiting for IsServerRunning()
@@ -12838,8 +12850,6 @@ X80ijx
 @x_!8k
 @x_!8k@
 X8Qikx
-	=x9i
-	]x9i
 @x_!9k
 xboxsystem.cpp
 XboxSystemInterface001
@@ -12875,8 +12885,6 @@ Y80ijx
 #Y80ijx
 Y8Qikx
 #Y8Qikx
-	y)9|
-	}Y9I
 @y?!9k
 y+	@9km
 Yaw; 
@@ -12894,6 +12902,7 @@ y#	@=c
 yC	@}c
 @y+}E
 y "%f"
+	yG9I
 #@yh^
 yh2@y
 %@y!ha
@@ -12916,7 +12925,6 @@ yh"@y
 @yi2@
 @.yI5
 yi6@y?
-	yi9i
 yif@9
 yiFGy?
 yi^Fy)
@@ -12951,9 +12959,10 @@ you_hear_them
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 Your current chat group is "%s"
 @yO	@y
-@y)qHy
+@y)QIy
 y(qSy
 yuJ	9(a@
+	yW9i
 @y	WDy
 Y`x($
 (y{x7
@@ -12964,7 +12973,6 @@ y	,@y)
 .@y)Y@
 @y	y5x
 @y	y6x
-	yY9I
 _Z10DevWarningPKcz
 _Z11ConColorMsgRK5ColorPKcz
 _Z13V_SplitStringPKcS0_R10CUtlVectorIPc10CUtlMemoryIS2_iEE
@@ -13006,6 +13014,7 @@ _ZN10CVProfNode9ResetPeakEv
 _ZN12CThreadEvent3SetEv
 _ZN12CThreadEventC1Eb
 _ZN12CThreadFiberC1Em
+_ZN12CThreadMutex7TryLockEv
 _ZN13CBufferString10ExtendPathEPKcc
 _ZN13CBufferString10FixSlashesEc
 _ZN13CBufferString11ToLowerFastEi
@@ -13047,6 +13056,7 @@ ZN17CThreadLocalScopeC1EP16ThreadHandle_t(bool)
 _ZN17CThreadLocalScopeD1Ev
 _ZN17CThreadSpinRWLock11UnlockWriteEv
 _ZN17CThreadSpinRWLock16SpinLockForWriteEy
+_ZN17CThreadSyncObject4WaitEj
 _ZN17CThreadSyncObjectD2Ev
 Z n1*a
 _ZN21CThreadMultiWaitEvent3SetEv
@@ -13085,9 +13095,15 @@ Z n{[ n
 Z nRZ n
 _ZNSt11logic_errorC2EPKc
 _ZNSt6__ndk112__next_primeEm
+_ZNSt6__ndk115__thread_structC1Ev
+_ZNSt6__ndk115__thread_structD1Ev
+_ZNSt6__ndk119__thread_local_dataEv
+_ZNSt6__ndk120__throw_system_errorEiPKc
 _ZNSt6__ndk15ctypeIcE2idE
 _ZNSt6__ndk16localeC1Ev
 _ZNSt6__ndk16localeD1Ev
+_ZNSt6__ndk16thread4joinEv
+_ZNSt6__ndk16threadD1Ev
 _ZNSt6__ndk17num_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEE2idE
 _ZNSt6__ndk18ios_base4initEPv
 _ZNSt6__ndk18ios_base5clearEj
