@@ -1,4 +1,5 @@
 `"@)	
+`*@}*&
 ============================================
 =()@))	@
 =	-@)
@@ -39,14 +40,12 @@
 !	@-#	@
 !	@)^
 !	@)~!
-!	@)>
 !	@)_
-!	@),
+!	@);
 !	@)"
+!	@))
 !	@)]
 !	@){
-!	@)@
-!	@)$
 !	@)*
 !	@)+
 ?)>>!;/
@@ -57,6 +56,7 @@
 ((@-)
 ()@))	@
 (%@-*	@
+(%@)`
 )(%@)
 [ ! ]
 {}()'
@@ -170,13 +170,11 @@ $0$1$2 $3 = $4
 07af@
 07hf@
 07h*L9h
-	07(K
 07x"@
 %08X:
 -0@9+
 ?>()09
 .>()09
-"09@;
 	0@9?
 0@9(0
 0@9)0@9
@@ -184,8 +182,8 @@ $0$1$2 $3 = $4
 0@9K0@9
 0@9	l@
 /0@9n9
-"09 P
 0@9	X@
+0A9K1
 (0B9 
 @0bDG
 0CClientMsg_WorldUIControllerHasPanelChangedEvent
@@ -233,8 +231,8 @@ $0 to $1,
 	0@y!
 0@y	4@y
 0@y_!!ka
+!	@)1
 '@@-1
-(%@)`1
 1.0 0 0
 100.0
 10000
@@ -1162,9 +1160,11 @@ $0 to $1,
 18TEDust_GameEvent_t
 18TEFizz_GameEvent_t
 18ToolTraceRayResult
+	1~9)
 195.0f
 1960/00/00
-	1#9_A#9
+	1+9_A+93
+	1)9_A)9Q
 !)19BJRZcks{
 19CAmmoDefInitializer
 19CAttributeContainer
@@ -1273,7 +1273,6 @@ $0 to $1,
 19TEDecal_GameEvent_t
 19TESmoke_GameEvent_t
 19TonemapParameters_t
-)1A9h9
 1 = Animates the pause text so that you can be sure the game isn't just hard locked.
 !1AQaq
 !>@=1B
@@ -1283,23 +1282,19 @@ $0 to $1,
 1CHelpRequestLogs_UploadUserApplicationLog_Request
 1CMsgRequestItemPurgatory_FinalizePurchaseResponse
 1.CPlayer_UpdateSteamAnnouncementLastRead_Response"4
-)1Cy	
-!	@)1D
 1DBlend
-)1DyJ
+)1Dy	
 +1E)*	
 [-1] -> empty
+)1Ey	
 %.1f %.1f %.1f
 -%.1fs
-)1Fy	
 1GAME_PARTICLE_MANAGER_EVENT_SET_TEXTURE_ATTRIBUTE
 1GERA
 1) Green: %i
-)1Gy	
 1H@-3
 1If true, return children in the returned details.
 )1Iy	
-)1JyJ^
 )1K9?
 	1K9?
 	1K9i
@@ -1312,20 +1307,19 @@ $0 to $1,
 1k_RemoveItemAttribute_Failed_AttributeDoesntExist
 1k_UnpackBundle_Failed_UnableToCreateContainedItem
 )1Ky	
+)1L9?
 <1+=Mg'
 1: mouse_acceleration = min(m_customaccel_max, pow(raw_mouse_delta, m_customaccel_exponent) * m_customaccel_scale + sensitivity)
++1@)NS
 1 or 0, Used to display ranked only features during postgame
 1O[y?
 +1_)*Q
 1) Red  : %i
-)1Ry	
-+1@).S
 1sAL"
 1Service containing methods to manage OAuth tokens
 1Steam ID of user to whom to send a friend invite."
 )1Sy	
 1 to output cl_showanimstate to Msg(). 2 to store in AnimStateClient.log. 3 for both.
-)1VyJ
 1w?WA
 *1x0x
 )1^y	
@@ -1333,7 +1327,6 @@ $0 to $1,
 	1@y?
 1@))y
 	1@y?!"k`
-1Zy	<
 !2@=!
 ?2: 	
 +2: 	
@@ -1493,8 +1486,7 @@ $0 to $1,
 20TEImpact_GameEvent_t
 20TESparks_GameEvent_t
 20TransitioningLayer_t
-2	169
-2+1	9	
+2	1>9
 21CAnimGraphTraceFilter
 21C_BaseCombatCharacter
 21C_BaseExplosionEffect
@@ -2412,8 +2404,9 @@ $0 to $1,
 28TEProjectedDecal_GameEvent_t
 28TEShatterSurface_GameEvent_t
 28VPhysicsCollisionAttribute_t
+"29@+
 2	!!9,
-2	!%9
+2(!99
 29CBaseRenderingPipelineFactory
 29CBodyComponentBaseModelEntity
 29CBoneConstraintPoseSpaceMorph
@@ -2469,9 +2462,8 @@ $0 to $1,
 29PublishedFileDetails_VoteData
 2(9	SHM(
 29ToolEvent_GetEntityInfoResult
-29U#P
-2	a39
-2	A?9"
+2	a+9
+2	a99
 2A9hF@
 2A9i2
 2	a@9Ia
@@ -2481,7 +2473,6 @@ $0 to $1,
 2A-k	 
 	2 Arguments:   	Radius, {entity_name/class_name/ no argument picks what player is looking at}
 2Array of text tags to apply to the published file.
-2)AWyJ
 	2B@!
 2) Blue : %i
 2_BONE_IK
@@ -2629,7 +2620,6 @@ $0 to $1,
 %2d: weight %8.2f cycle %8.2f playbackrate %8.2f fadeout %8.2f order (%4.4s): %32.32s
 %2d: weight %8.2f cycle %8.2f playbackrate %8.2f fadeout %8.2f order (base): %32.32s
 2)E@9
-2	E!9
 %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f
 %.2f (client: post update)
 %.2f: client (pre-update)
@@ -2641,6 +2631,7 @@ $0 to $1,
 2	h(8
 2h&'9
 2h'@9h
+2h&'9h#
 2hfC9
 2Hi)8h
 2hj)8
@@ -2654,7 +2645,7 @@ $0 to $1,
 2h.Yy
 	2	i*
 2i2Ay?
-2i6$9)+
+2i6$9
 2	i98
 2i>Ay?!4k
 2iB 9
@@ -2676,9 +2667,9 @@ $0 to $1,
 2?!<k
 2?!;k
 2?!!k
-2?k78f
-2?k88e
-2_k88r
+2?k78
+2_k88
+2?k88
 2k_EGCMsgInitiateTradeResponse_VAC_Banned_Initiator
 2Ki(8k
 2Kii8
@@ -2700,7 +2691,8 @@ $0 to $1,
 }2'@+P
 2 .ProtoFlattenedSerializerField_t"!
 // 2 px horizontal radii 4px vertical elliptical corners on all sides
-2+q$9
+2+Q=9
+2+Q'9
 	2R*3
 2) Red  : %i
 2RF-5:@
@@ -2717,11 +2709,10 @@ $0 to $1,
 	2	y9
 2@yh2
 2@yi2@y
-2@yJ}D
+2@yJyD
 2	yu*
 2zj68hf@
 !	@)3
-	)@3@
 30000
 3000.0
 300000
@@ -2859,6 +2850,7 @@ $0 to $1,
 31CDAC_UI_Popup_Looking_For_Match
 31CDAC_UI_Popup_PartyInviteFriend
 31CDAC_UI_Popup_Select_Match_Type
+31CDAC_UI_PostGame_Stats_Overview
 31CDecalGameSystemDebugVisualizer
 31C_DynamicPropAlias_dynamic_prop
 31CEntityComponentHelperContainedI16CHitboxComponentE
@@ -3025,6 +3017,7 @@ $0 to $1,
 33ToolEvent_GetEntityInputsResult_t
 34CCloud_EnumerateUserFiles_Response
 34CCloud_GetUploadServerInfo_Request
+34CDAC_UI_Popup_MarketingLegendaries
 34CEcon_FlushInventoryCache_Response
 34CEconItemSpecificAttributeIterator
 34CGameMsg_k_EMsgRecordLocalBotStats
@@ -3072,6 +3065,7 @@ $0 to $1,
 35CDAC_DB_Page_Heropedia_Items_ByName
 35CDAC_DB_Page_Heropedia_Items_ByTier
 35CDAC_DB_Page_Heropedia_Items_ByType
+35CDAC_UI_Popup_Legendary_Description
 35CDynamicFaceOcclusionRendererObject
 35CEventQueue_SaveRestoreBlockHandler
 35CGameInfo_CDotaGameInfo_CPlayerInfo
@@ -3217,6 +3211,7 @@ $0 to $1,
 38CPlayer_IncomingInviteMutualFriendList
 38CWorkshop_GetItemDailyRevenue_Response
 38CWorkshop_SetItemPaymentRules_Response
+"39@+
 39CCommunity_GetClanAnnouncements_Request
 39CDAC_DB_Page_Heropedia_Heroes_BySynergy
 39CDynamicFaceOcclusionRendererObjectDesc
@@ -3259,9 +3254,9 @@ $0 to $1,
  [%.3f server clamped to %.3f]
 	@3g"
 3GAME_PARTICLE_MANAGER_EVENT_SET_CONTROL_POINT_MODEL
+'3)i-
 3\.,I
 %3i, %3i, %5.1f
-3i(8e
 %3i fps (%3i, %3i) smth:%4.1f ms frm:%4.1f ms on %s frames: %u
 %3i fps on %s
 3k_ECustomGameInstallStatus_RequestedTimestampTooNew
@@ -3278,7 +3273,6 @@ $0 to $1,
 3SB-H
 3S)J!
 3X@-7
-3@y#'
 3@yMMA
 40 40 40 196
 4(0@9
@@ -3462,8 +3456,8 @@ $4DTdt
 4hbR9(
 4hbR9h
 4hbR9x
+4h&D)!<
 4h"D9hI
-4h&D)A<
 4hf]9
 4hf@9
 4hf@9(
@@ -3503,6 +3497,7 @@ $4DTdt
 4i"Yy
 4j"A9
 4j"E)k
+4K9I)
 4KA@9
 4KA@9+
 4k&Aij
@@ -3513,7 +3508,6 @@ $4DTdt
 4m{kx
 #4#.n<
 4n&	&
-4	oF9I
 4(Optional) Sorting method to use on returned values.
 4	q@9?
 4q:Aip
@@ -3577,7 +3571,7 @@ $4DTdt
 59CMsgGCToGCGrantAccountRolledItems_Item_AdditionalAuditEntry
 59CPlayer_GetFriendsGameplayInfo_Response_FriendsGameplayInfo
 59CProtoItemSocket_AssetModifier_DESERIALIZE_FROM_STRING_ONLY
-"59Xa
+"59f?
 5aFEy`JEy
 	5B9)
 5`bJ9
@@ -3638,7 +3632,6 @@ $4DTdt
 )5@y?! kC
 _6`:@
 ;*@'6
-!	@)6
 ?6`*@
 ?6	`@
 ?6	<@
@@ -3679,6 +3672,7 @@ _6`:@
 66GameToolEventToolEvent_SFMToolActiveStateChanged_tHookupGameSystem
 67&-@
 _6	8@
+"69 ;
 6(#@9
 6 @9h
 	6	9J
@@ -3746,6 +3740,7 @@ _6	D@
 6H#@9
  6h"A9
 '6h^A9	
+@6h&A9
  6hb@
 /6hb@
 '6hb@
@@ -3753,14 +3748,20 @@ _6	D@
 @6hB@
 6h&B)
 6hb@9
+6h*B9
+6h*B9	
+6h&B9
+6h&B9	
 6hB`9
 6hB@9
+6h"B9	1
 6h^B9	Z
 6hbA9
 6hBA9
 6hBA9	Q
 6hBB9
 6hbB9	7
+6hBd9(
 6hBD9
 (6hBD9h
 6hBK9
@@ -3793,7 +3794,6 @@ _6hjA9
 6hNA9
 _6hNB9	;
  6hnG9h
-6h"p9
 ?6hr@
 /6hr@
 /6hR@
@@ -3803,6 +3803,7 @@ _6hNB9	;
 `6hv@
 _6hv@
 @6hv@
+6h"v9
 ?6hz@
 _6hZ@
 '6hZ@
@@ -3886,6 +3887,7 @@ _6ir@
 @6iR@
 6iRA9
  6iRA9
+_6iv@
 ?6iv@
 @6iV@
 6iVA9
@@ -3907,7 +3909,6 @@ _6ir@
  6`"J9
 `6jB@
  6jR@
-_6jv@
  6jZ@
 	*_!6k
 6k_EGCMsgInitiateTradeResponse_Shared_Account_Initiator
@@ -3937,10 +3938,10 @@ _6v:@
 '6vj@
 /6	X@
 6	x@9
+6Yc^9
 6@y_! k
 6@y?! k
 6@y_! kC
-6Y#X9
 ?6`Z@
 ?7[/<
 @7('@
@@ -4045,6 +4046,7 @@ _6v:@
 7hU@y
 7hV@y
  7hZ@9
+'7)i-
 7ib@9
 7iB@9
 7ib@9i
@@ -4068,7 +4070,6 @@ _6v:@
 7L4HA
 7	(L9I
 7m"Yy
-!	@)7o
  7P/07
 ?7QKs+
 7Q)lb
@@ -4080,7 +4081,6 @@ _6v:@
 7t	87t
 7	T@y
 (7u	07
-7U	(7
 7U	x7
 7*U@y
 7+U@y
@@ -4095,7 +4095,6 @@ _6v:@
  7x"@
 (7x:@
 @7x"@
-& 7XC
 ?7`%Yf
 7Ze&<o
 7`ZKV?e
@@ -4168,7 +4167,6 @@ _6v:@
 87hRa9
 %8.8s: %-5d entries, '%s', ...
 8@9c8@9
-8A"9Z
 8CAmmoDef
 8C_EnvSky
 8CFmtStrNILi1024ELb0EE
@@ -4205,7 +4203,7 @@ _8cnA
 8hF@9
 8hR@9
 (8HXhx
-@8i/@882
+@8i/@8
 @8i/@8J
 8iB@9i
 8If set, remove from ignore/block list instead of adding "\
@@ -4244,9 +4242,7 @@ _8|{t
 ,@9(,
 ?9% &
 .@9)	
-"-9`+
-",9`+
-"@9)>
+".9`:
 ( @9(
 (@@9(
 (@@9	
@@ -4267,14 +4263,10 @@ _8|{t
 @9+	@
 @9	|	
 @9	@!
-*@9](
-*@9	&
 ** @9
 #@@9	
 	 @9)
 	 @9	
-	![9_
-	![9*
 	)@9)
 	)@9*
 	@9*]
@@ -4283,15 +4275,16 @@ _8|{t
 9	!@)
 <9}@0>1
 9(0@9
+*@9?1
 	@91~
 9+1@))	@
 9.1.15
-)@9<2
+	!)9_1)9?
 92ji8R
 @92yr
 9(4@9
-+@95K
 95*P>
+*@962
 	@9*6B9
 (@@9	7
 @9(	(7
@@ -4299,9 +4292,9 @@ _8|{t
 `98il
 @9*-@8K
 98N*>
->9_!>9
  @9) @9
 ,@9),@9
+?9_!?9
 "9	!#9
 (`@9	`@9
 ( @9	 @9
@@ -4309,6 +4302,7 @@ _8|{t
 (@9*(@9
 @@9)@@9
 @9,	@9
+@9)!`9
 @9*	@9-
 @9%	@9&
 @9+	@9
@@ -4319,7 +4313,6 @@ _8|{t
 9+	@9
 . @9/$@90(@918@9.}
 @9%	@9)8
-99_!99
 9(,@9H
 9	!@9i
 9	%@9i
@@ -4329,18 +4322,19 @@ _8|{t
 [%9.9s] (%5d)%s:
 [%9.9s] (%d)%s at %.6f phase not supported
 [%9.9s] (%d)%s SetInterpolationTimeType - changing interpolation phase type
+!99U#P
 @99X@)8 @9
 (@@9	a
 "@9	A
+@9)a\9
 9	\A9(\A9?
+@9)A@9j	
 @9)aB
 ?9A@c
-@9)aC9
-@9)af9
-@9)aH9j	
+@9)AJ9
+@9)aM9
 9*aM9
-@9)ao9
-@9)Aq9
+@9)AO9J	
 (@@9	b
 @9-b@
 @9*b@
@@ -4421,8 +4415,8 @@ _8|{t
 9CTESparks
 9CTimeline
 9CUI_Popup
+)@9d=
 @9d.@
-!	@)9D
 @9	 D-
 9D7V=
 9(d@9(
@@ -4437,17 +4431,15 @@ _8|{t
 9DPEy
 @9DPFy
 @@9DXA
-)9DyJ
  @9e:B
 @@9E<H
 9ELanguage
-@9)	F
+)9Ey	
 	- 9F
 @9f	@9
 \9)!F9
 9`FE9
 @9F\Ey(
-@9)!G9
 9gCN>
 @9GPFy
 `9h"	
@@ -4507,16 +4499,16 @@ _8|{t
 9hv@9
 9hVA9
 9hVB9
-)9Hy	
 9hz@9
 9hZA9
 9hZB9
 ~@9i~
-![9i$
+!}9i$
 )@@9i
 @9i&@
 @9I	@
 	%@9I
+ @9i2
 @9	i48
 @9	i48;
 @9*i68
@@ -4526,6 +4518,7 @@ _8|{t
 "@9i"@9
 9	i@9
 (@9I(@9
+@@9I9
 9*i@9J
 @9i.B9
 9iC);!@
@@ -4546,7 +4539,6 @@ _8|{t
 	9IJi
 9iji8h
 @9*ik8
-@@9IL
 9ILoopMode
 9in@9
 @9iR!
@@ -4560,30 +4552,26 @@ _8|{t
 @9iz@
 9iz@y	
 @9j&@
-	![9j
 )!@9J
 *	@9J
-	![9J
 @9j6@
 @9j6B9?
 9j*@9(
 @9J#@9*
 @9J9	
-@9JAc9?
-@9Jao9?
-@9JAq9
-@9JAw9?
+@9Ja\9?
+@9Jay9?
 @9jF@
 @9jij8
 @9jij8*G!7)
 @9jij8JE!6)
 @9jJ@
 @9jjh8*
-	!@9JQ
-@9jRA9i*
-@9J!s9?
+@9Jm&
+	!@9jQ
+@9jRA9)*
+@9J!t9?
 @9JU	
-@9J!V9?
 @9k!@
 @9k&@
 !!@9K
@@ -4595,14 +4583,16 @@ _8|{t
 9k	@9
 @9K	@9?
 @9K	@9M
-`9k}D
 _!9ki
 @9Kii8
 @9Kik8
 9k_ItemPurgatoryResponse_Finalize_Failed_CouldNotFindItems
 9kj(8|
 @9kR@
++@9kV
+`9kyD
 @9kz@
+@@9)L
 @9L	@9l
 9(lA9
 9l"A9
@@ -4615,16 +4605,13 @@ _!9ki
 ,@9M,@9)
 @9Mim8
 .@9n.@9k
-)9Ny	
 )9}[p=
 9	PA9(PA9?
 9@PEy
 9@PEy 
 9Px? FcH
-)9PyJ
 9)P@y	q
 9Q"@)
-)9Qy	
 (@@9s
 (@@9	s
 (@@9s"
@@ -4659,15 +4646,16 @@ _!9ki
 (@@9	u
 @9	U@
 @9U|@
-@9)UA9j*
+@9)UA9**
+@9)UA9J*
 9*uC9
-(@9v<
-@9)!V9
+(@9V<
 @9wiu
-@9!x:
+@9!x1
 @9x*@9{"@9!<
 9	XA9(XA9?
 ?9.>`y
+)9@yJ
 @9|*@y	y
 @9 	@z
 9Zg,>4
@@ -4690,16 +4678,17 @@ a2U0*
 a2@yb6@y
 a2@yh2@y
 A5fSXbf7
-A69("
 	a79H
 A-!8"
 A-!8$
 A8q(!
+_a#9	
 +a@9?
 	a@9)
 "A9		
 (A@9(
 )`A9	
+)A[9?
 \A9	)@)	(
 +A@9@
 		A9?
@@ -4710,7 +4699,6 @@ A8q(!
 A9`"	
 A9!8"
 A9!8#
-A9)9A
 a@9+a
 `A9)`A9
 	`A9(`A9?
@@ -4729,17 +4717,19 @@ A9h&@
 (A@9hC
 	A$9hf@
 A$9hf@
+a~9i$
+a\9i$
 ^A9i^
 "A9i"
 *	A9i
 	A@9i
-A@9i$
 A9i>@
 A9i"@
 A9i&@
 	A@9I
 A9iF@
 A9	ii
+A@9j$
 	 A9J
 A9|J@
 	A9j"A
@@ -4750,12 +4740,14 @@ A@9k}@
 +a@9Ka
 A9Kik
 +	A9lC
-	a(9_q(9?
+A9)qA
 ?A9tJ@
+	A@9:W
 A-'@A-
 	AA9	
 AA9(	
 AA9(	@
+aa9i$
 	AA9i
 aaaaaaaazzzzzzzz
 AABB_t
@@ -4811,12 +4803,13 @@ absorigin
 absorigin_follow
 AbsTagType(unknown)
 A burning player that gibs has burning gibs.
+aB@y]
 )ABy	
 aBy9a
 aB@ya
 A-c($
 @-aC@9
-	AC9	
+Ac9i$
 acceleration
 accept
 ACCEPT
@@ -6203,9 +6196,7 @@ ACT_WAVEFORM_START
 ACT_ZOMBIE_LUNGE
 ACT_ZOMBIE_TRIP
 	AD9?
-	AD9	
 	AD9i
-aD)AL
 Add a CSS class to all children of this panel.
 Add a CSS class to a panel.
 Add a filter to the game debug overlay
@@ -6290,10 +6281,9 @@ AdvanceAnimatedImageStripFrame
 Advanced joystick settings initialized for joystick %d
 advanced to state %d at %f
 AdvancedVideo
-)aDy	
 )ADy	
 ?*a\`E<
-	AE9	
+AE9i$
 AE_ABILITY_END_EVENT
 AE_ABILITY_START_EVENT
 AE_ABILITY_TICK
@@ -6492,10 +6482,10 @@ AE_WPN_INCREMENTAMMO
 AE_WPN_PLAYWPNSOUND
 AE_WPN_PRIMARYATTACK
 AE_WPN_UNHIDE
-)aEy*_
+)aEy	
+)AEy	
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
-	AF9	
 affect_ragdolls
 affects_all_allied_units
 affects_all_allies_with_keyword
@@ -6509,10 +6499,10 @@ After3DGeo
 after solve err=%f
 After this amount of time of standing in place but aiming to one side, go ahead and move feet to face upper body.
 After this many seconds of being basically stationary, the ragdoll will go to sleep.
+)AFy	
 A-G=@
 A-G1@
 A-G5@
-	AG9	
 A-G9@
 age_seconds
 Agg data %d: %p (%d parts, crc 0x%08X)
@@ -6520,20 +6510,17 @@ aggregate_value
 Ago : lower-mid central unrounded vowel
 Ago : mid-central unrounded vowel
 )aGy	
-)AGy	
 @-a*H
 'A)h&
 A-h~@
 !*Ah 8
 Ah`8!(
-	AH9	
-aH9j$
+aH9k$
 aHa8c
 #aH}c
 AH*I}
 AHJk}
 )aHy	
-)AHy	
 	AI9	
 aiAura
 ai_debug_shoot_positions
@@ -6562,7 +6549,6 @@ aiTierOffset
 ai_type
 AIWalkable
 ai,x*
-)aIy	
 "A)j"
 Aj`8PJp82
 a"J9?@
@@ -6570,6 +6556,7 @@ a"J9?@
 ?AJk`
 A)jz@
 	AK9	
+	ak9i
 )aKy	
 	AL9	
 alert_type
@@ -6629,19 +6616,22 @@ alternate_icons
 alternateModel
 alternateParent
 alternate-reverse
-alternative_requirement
 ALWAYSGIB
 always_notify
 always_send_to_servers
 always tradable
-)ALy	
+	AM9	
+aM9j$
 #Am@A!
+#AmB)
+#AmBI
 ambientcolor1
 ambientcolor2
 ambientcolor3
 AmbientCubes
   Ambient: %d %d %d
   AmbientDir: %2.2f %2.2f %2.2f
+ambient_effect
 ambientpositionoverride
 ambientscale1
 ambientscale2
@@ -6660,10 +6650,13 @@ amount of time players can chat after the game is over
 Amount to adjust the chase cam's distance on a zoom request
 &amp;
 	amplitude
+)aMy	
+)AMy	
 "(aN`(!
 (aN`(!
 (aN!(!
 (aN@(!
+	AN9	
 "(aNa(a
 #(aNA(a
 an argument is not allowed for (*ACCEPT), (*FAIL), or (*COMMIT)
@@ -6790,11 +6783,13 @@ An orthographic spot light entity
 antialias
 antiquewhite
 a numbered reference must not be zero
+)ANy	
 &A)(o@
-ao9i$
+	AO9	
 a	O-c
 A	O-C
 )aOy	
+	AP9	
 api_key
 APIN_txt
 `AP$N
@@ -6832,14 +6827,15 @@ APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 APPSYSTEM: In ReconnectGameInterface(), tried to use different connection modes!
  a protocol 
 A protocol message was rejected because it was too big (more than 
-)APy	
 A@Q?%
 A\@Q!`
-	aq9	
+	AQ9	
 ?A@qB$
 a(@Q! ?Q?
 )aQy	
 >!@A+r
+)aR9	
+	AR9	
 	aR9i
 arcana_level
 archive
@@ -6859,6 +6855,7 @@ ar_fade_in
 	Arguments: x1 y1 z1 x2 y2 z2
 	Arguments: x y z
 Arial Black
+armor
 armor1
 armor2
 armor3
@@ -6871,6 +6868,7 @@ armory_item_types
 armory_remap
 arrowOffset
 arroworigin
+	AS9	
 ascii
 ASCII conversion buffer too small
 as_coach
@@ -6903,7 +6901,7 @@ AssetSystemTest001
 assigned_unit_entindex
 associated_item
 associated_workshop_files
-)ASyJ
+)ASy	
 AsyncAppend: Attempted to write to a read-only file
 AsyncCaptionResourceManager
 AsyncComputeGenMips
@@ -6915,10 +6913,7 @@ AsyncPanoramaSurfaceReturned
 AsyncUpdate
 AsyncWrite: Attempted to write to a read-only file
 AsyncWrite (%s/%d)...
-	aT9*
  A)	t@9
-	aT9j
-	aT9J
 \ at end of pattern
 Ate : upper-mid front unrounded vowel
 ATI1N
@@ -7055,6 +7050,7 @@ attribute_value
 Attribute value not specified in dynamic recipe definition
 attr_value
 A_txt
+)ATy	
 audible_mask
 audio
 audioparams_t
@@ -7095,8 +7091,8 @@ autoswitchto
 auto_unragdoll_duration
 [a:%u:%u]
 [A:%u:%u:%u]
-)aUyJ
-	AV9)
+)AUy	
+Av9i$
 	available
 Available: 
 AvatarBorderImage
@@ -7113,22 +7109,24 @@ avg_loss_out
 Avg/Msg
 avg_packets_in
 avg_packets_out
+)aVyJ
+	Aw9)
+Aw9i$
 a world layer in a dota map
 `awpf*
-)AWyJ
 *-Ax_
 	-Ax?
 Ax7hF@9hC
+	ax9	
 A{"xB
 Ax? /k 
 ?aXY6
-)a^y	
-)a[y	
-)!Ay	
-)	Ay	
+)a_y	
+)a]y?
+)a\y	
 A-	 @y!
 Ay?!4kC
-ay9i$
+ay9j$
 	<Ay?!9k
 	<Ay?!9k#
 a@y	a
@@ -7136,19 +7134,19 @@ Ayhz@
 	a@yir
 #AyiY
 *a@yJ
+)A@yJ
 	<Ay?!<kC
 ?A@YY$
  	Az)
-	Az9:W
+az9i$
 azure
 aZure : voiced postalveolar fricative
-)aZy	
-)AZy?
 !^b	!
 !	@)b
 ""\\//b
 @=b("
 @-b	@
+`"@=(B
 !^B( 
 !^B($
 ('B)*
@@ -7156,48 +7154,50 @@ aZure : voiced postalveolar fricative
 *-B)!
 B-   
 B-@ !
-b09 P
 B-1HD-
-#B)`2@
+b29@+
 B333333
+b39@+
 *-B),5C)_
+b69 ;
+B69 P
 !^B8!
 @-B8!
 @-B8$
 	@-B8!
 B-!8"
 ~b8~q)=
-b,9`+
-b/9@;
+b.9@:
 b"@9	
 b@9@|
-b+9`+
  B\9{
+*B9@}
+&B9 }
 #B9)=@
+B<9@:
+B!9(-
 B@9	a
 B@9a'
 B@9A1
 ?B\9{g
 B\9{gt
 ^B9h^
-B!9H-
 B@9H.
 B@9H0
 b@9h 07
 B@9H6
-B9h6H
+&B9h6H
 b@9hb
 B@9hB
 B@9hC
 b"@9i
+B@9I=
 B9I	87
+B@9I9
 b@9ib
 b@9ib@9
-!B9k$
-b/9 P
 b@9	w
-*B)A/
-&B)*A
+b]9	z
 B-'A@-1	@
 bA9hb
 BA9hB
@@ -7349,7 +7349,6 @@ B-B8#
 bB9hb
 BB9hB
 BB9hj:8
-BB9<z
 bBlock
 bbox.m_vMaxBounds
 bbox.m_vMinBounds
@@ -7362,6 +7361,7 @@ B channel not found!
 BCheckLaunchParameters - redundant, ignoring
 %b %d
 bDh%)
+BE9I@
 BeamClipStyle_t
 BEAM_ENTPOINT
 BEAM_ENTS
@@ -7495,7 +7495,6 @@ BlurBackground
 blur: gaussian( 6, 6, 1 );</pre>
 BlurHorz
 BlurVert
-)@)bM
 BmbBE
 BmdBE
 ?bMeQ
@@ -7702,6 +7701,8 @@ BSR_UNICODE)
 __bss_end__
 __bss_start
 __bss_start__
+BSy)qSy
+BSy)ySy
 /BT?OB
 B_txt
 Bubble
@@ -7783,22 +7784,21 @@ Buy2Binder
 Buy3Binder
 Buy4Binder
 Buy5Binder
+BUy)qUy
 buy_unit
+BUy)yUy
 Bx?!3k
 Bx?!8k
 BXcxc
 Bxj}_
 b@y)	
-)!By	
+b@y*	
+))By	
 `b@yh
-b@yI	
 BYield
 B@y*iux?
-b@yJ	
 BYldPromptYesNo
-b@yok
-By)qFy
-b@yQk
+b@ymd
 byte differs (net %d pred %d)
 bytes
 bytes. 
@@ -7809,6 +7809,7 @@ bytes_written
 $.c("
 &.c($
 !	@-C
+!	@)C
 !C-	!@
 .C))}
 @-'@@-C
@@ -7828,8 +7829,6 @@ C- 8
 C-!8"
 ,c@9-
 C9)|@
-c@9*2
-C@9*2
 C9an@
 (C@9h
 <(C@9H#
@@ -7926,6 +7925,7 @@ Canceled
 CancelEntityIOEvents
 Cancel Party Invite
 cancelselect
+CanClaimAchievement
 can_collect
 can_combine
 CanCombine
@@ -9662,7 +9662,6 @@ CL:  WARNING! User command buffer overflow (%i->%i), last cmd was %i bits long
 cl_winddir
 cl_windspeed
 cl_yawspeed
-!	@)cm
 +Cm!("
 C-m)-
 CMarketController::YldRefreshClientMarketData
@@ -10701,7 +10700,7 @@ CP2P_Voice
 CP2P_VRAvatarPosition
 CP2P_WatchSynchronization
 CP4FileInfoCache::StartJob( %s, %s )
-CPackedStore::CPackedStore(const char *, IFileSystem *, int, CPackedStore *, const char *)
+CPackedStore::CPackedStore(const char *, IFileSystem *, int, CPackedStore *, const char *, CUtlStringToken)
 CPanel2D::BSetProperty
 CPanel2D::~CPanel2D
 ~CPanel2D - destroy members
@@ -11504,8 +11503,9 @@ __cxa_pure_virtual
 Cx_!"k
 Cx?! k
 (=Cy"
-C@y!;
+*C@y?
 c@y1z
+C@yA;
 cycle
 Cycle: %.5f (%.5f)
 Cycle or diamond double-reference to '%s'
@@ -11513,13 +11513,14 @@ cycler at %.0f %.0f %0.f missing modelname
 cycler_flex
 cycler_flex used on model "%s" specified unknown sequence "%s"
 cycler_flex used on model %s without enough flexes.
+Cy)QCy
 czech
-!	@)d
 !	@)d"
 %d | 
  D-	(@
 ?D]`,
 @-D	@
+&D)!<
 D-   
 %d:%02d
 %d:%02d:%02d
@@ -11541,13 +11542,18 @@ d3_citadel_05
 *-D),5E)_
 D(6h%
 d6@y#
-d6@y#!
-d6@y##
+d6@y#<
 d6@y#8
 d6@yc
+d6@yc)
 d6@yc@
-d6@yC<
-d6@yc1
+d6@yc$
+d6@yc+
+d6@yC
+d6@yC 
+d6@yC&
+d6@yC1
+d6@yc4
 D-!8"
 D$@8$
 "D@9%
@@ -11558,7 +11564,6 @@ D@9ElA
 #D9hL
 D-a"@
 D-a*@
-&D)A<
 dA9)dA9
 dA9Hx@
 #dac_ability_%s
@@ -11697,6 +11702,7 @@ dac_damage_floaters
 dac_damage_floaters_offset_scale
 DACDashboard
 DACDashboardRoot
+dac_db_page_patchnotes_panorama_url
 dac_db_page_patchnotes_url
 #DAC_DBPlay_AbandonConfirm
 #DAC_DBPlay_AbandonGame
@@ -11732,6 +11738,7 @@ DACDPSChart
 DACDPSShowEnemy
 DACDPSShowPlayer
 dac_drag_move
+dac_draw_unit_outlines
 dac_dump_keybindings
 DACEnableCustomGraphics
 DACEnableCustomResolution
@@ -11882,6 +11889,7 @@ DACHeropediaSynergiesPage
 #dac_hero_rank%d
 DACHeroTooltip
 #dac_hero_type_%s
+#DAC_Hero_Unit_Cost
 DACHideBattlePassProgress
 DACHideHeroTooltip
 DACHideHud
@@ -11962,6 +11970,7 @@ DACItemTooltip
 #dac_item_tooltip_item_type_defensive
 #dac_item_tooltip_item_type_global
 #dac_item_tooltip_item_type_offensive
+#dac_item_tooltip_item_type_placeable
 #dac_item_tooltip_item_type_support
 #DAC_JoinParty_AlreadyInParty
 DACJoinPartyCode
@@ -12206,6 +12215,7 @@ DACPopupFriendCodeRevoke
 DACPopupJoinParty
 DACPopupJoinPartyCode
 DACPopupManager
+dac_popup_marketing_legendaries_seen
 #DAC_Popup_Ping_NoDataCenters
 DACPopupRewardEquip
 DACPopupRewardsAbout
@@ -12227,6 +12237,7 @@ DACPostGameShowSeasonProgressLevelUp
 DACPostGameShowSeasonProgressPage
 DACPostGameShowSeasonProgressReward
 DACPostGameShowStatsPage
+DACPostGameStatsOverview
 DAC Post UI
 DAC precache background map
 dac_price
@@ -12247,6 +12258,7 @@ DACPurchaseUnbundleFailed
 DACQuitApp
 DACQuitAppConfirmed
 DACRankIcon
+#DACRankLegendaryUnit
 #DAC_Rank_Name_%d
 DACRankPopupChangeRank
 DACRankPopupTriggerParticle
@@ -12634,6 +12646,7 @@ DAC_UI.Shop_HeroBuy
 DAC_UI.Shop_HeroBuy_BenchFull
 DAC_UI.Shop_HeroBuy_CannotAfford
 DAC_UI.Shop_HeroCombine
+DAC_UI.Shop_Legendary
 DAC_UI.Shop_Lock
 DAC_UI.Shop_Refresh
 DAC_UI.Shop_UnLock
@@ -12667,10 +12680,12 @@ DACUnderlordTree
 DACUnderlordTreeSelectTalent
 #DAC_Underlord_%u
 DACUnhighlightDashboardButton
+DACUnitActivateLegendaryPopup
 dac_unitchatwheel_dead_zone_radius
 dac_unitchatwheel_outer_radius
 dac_unitchatwheel_ui_center_radius
 DACUnitHideAbilityTooltip
+DACUnitHideLegendaryTooltip
 DACUnitKilled
 DAC Units
 DACUnitScenePanel
@@ -12678,6 +12693,7 @@ DACUnitScenePanelInteract
 DACUnitsDealingDamage
 DACUnitSelected
 DACUnitShowAbilityTooltip
+DACUnitShowLegendaryTooltip
 DACUnitSpawnedForCombat
 DACUnitStatus
 DACUnitStatusAbilitySelected
@@ -12809,7 +12825,6 @@ D-cN@=
 D-d.@
 D-d	 
 %d (%d) : %.2f %.2f : %.2f %.2f : %.3f %.3f
-Ddac_draw_unit_outlines
 %d_%d_%d
 %d.%d.%d
 %d %d %d %d
@@ -12829,6 +12844,7 @@ DDDDUUUU
  [%d] (%d) %s (%s) %s%s
 deadflag
 deadlock_retries
+death_effect
 deathmatch
 death_modifier
 DEBRIS
@@ -13213,6 +13229,7 @@ disabledoubleclick
 Disabled: %s
 disableifoutofrange
 Disable interpolation list optimizations.
+disable_items
 Disable map color-correction entities
 disable_movement
 disablenav
@@ -13606,12 +13623,11 @@ dutch
 %d x %s
 DXT1_ONEBITALPHA
 DXT5_NM
-)!Dy	
+))Dy	
 Dya:A
 Dya~B
 :d@yd
 Dyh"@y
-))DyJ
 D@y_!!k#
 .dynamic
 DynamicAtr:%s
@@ -13652,7 +13668,6 @@ E-!8"
 e9*D@
 	E$9hf@
 #E9hs
-	!e9i
 )E@9i
 !E9#L
 #E9(n
@@ -13746,12 +13761,14 @@ EDACGameMessages
 EDACGameMode
 .EDACGameMode"
 EDACItemType
+EDACItemType_
 EDACItemType_Alliance
  EDACItemType_Equipment_Defensive
  EDACItemType_Equipment_Offensive
 EDACItemType_Equipment_Support
 EDACItemType_Global
 EDACItemType_Invalid
+EDACItemType_Placeable
 EDACLobbyTeam
 .EDACLobbyTeam
 .EDACLobbyTeam"
@@ -13837,6 +13854,7 @@ EGrantRewards_No
 EGrantRewards_NoLongerEligible
 EGrantRewards_Yes
 eh 0x%p
+`E=H1
 Eh`8$h`8
 eha8fhb8
 ehandle
@@ -13852,7 +13870,6 @@ eikonal
 EItemEditorReservationResult
 EItemPurgatoryResponse_Finalize
 EItemPurgatoryResponse_Refund
-#@-	EK
 eKeyword
 e*L9%
 e&L9%
@@ -14228,9 +14245,6 @@ eQueryCvarValueStatus_NotACvar
 EquipButton
 equip_conflicts
 EquipInProgress
-equipment_defensive
-equipment_offensive
-equipment_support
 EquippableItem
 EquippableItemContainer
 equipped_state
@@ -14638,7 +14652,6 @@ extrazoomout
 extreme cHRM chunk cannot be converted to tristimulus values
 extremely_rare
 )e@y?
-)	Ey	
 eyebrows_controller
 eyebrows_mover
 eye_data_list
@@ -14651,6 +14664,7 @@ eyes_follow
 eyes_rightleft
 eyes_updown
 )e@yi*
+)!EyJ
 eZQ9\
 !	@)f
 ?-f:*
@@ -14762,7 +14776,7 @@ Failed to load item "%s" - possibly a duplicate Item ID?
 Failed to load keyboard settings.
 Failed to load modifiers.json "%s"
 Failed to load opacity mask for panel '%s'
-Failed to load synergies.json "%s"
+Failed to load %s "%s"
 Failed to load units.json "%s"
 Failed to load unit "%s" - possibly a duplicate unitID?
 Failed to load waves.json "%s"
@@ -14900,8 +14914,8 @@ ffffff
 fflush
 FgColorDim
 F*%h3x%hgx
+F-H)E
 Fhf8&
-F-HIF
 F*&h%x%hsx
 F*%h'x%hsx
 F<I @
@@ -15139,6 +15153,7 @@ file://{resources}/layout/dac_ui_party.xml
 file://{resources}/layout/dac_ui_player_avatar.xml
 file://{resources}/layout/dac_ui_postgame_scoreboard_entry.xml
 file://{resources}/layout/dac_ui_postgame_scoreboard.xml
+file://{resources}/layout/dac_ui_postgame_stats_overview.xml
 file://{resources}/layout/dac_ui_rank_icon.xml
 file://{resources}/layout/dac_ui_rewards_about.xml
 file://{resources}/layout/dac_ui_round_over.xml
@@ -15183,8 +15198,10 @@ file://{resources}/layout/popups/popup_heropedia.xml
 file://{resources}/layout/popups/popup_hero.xml
 file://{resources}/layout/popups/popup_item.xml
 file://{resources}/layout/popups/popup_join_party.xml
+file://{resources}/layout/popups/popup_legendary_desc.xml
 file://{resources}/layout/popups/popup_looking_for_match.xml
 file://{resources}/layout/popups/popup_manager.xml
+file://{resources}/layout/popups/popup_marketing_legendaries.xml
 file://{resources}/layout/popups/popup_party_invite_friend.xml
 file://{resources}/layout/popups/popup_player_state.xml
 file://{resources}/layout/popups/popup_rank_tier_desc.xml
@@ -15208,6 +15225,7 @@ file://{resources}/layout/tooltips/tooltip_gold_amount.xml
 file://{resources}/layout/tooltips/tooltip_hero_ability.xml
 file://{resources}/layout/tooltips/tooltip_hero.xml
 file://{resources}/layout/tooltips/tooltip_item.xml
+file://{resources}/layout/tooltips/tooltip_legendary.xml
 file://{resources}/layout/tooltips/tooltip_synergy.xml
 file://{resources}/layout/tooltips/tooltip_text.xml
 file://{resources}/layout/tooltips/tooltip_title_image_text.xml
@@ -15321,7 +15339,6 @@ Fix this or you'll see a crash.
 FixupResourceName: Illegal full path passed in ("%s")!
 FixupResourceName: Illegal path, missing extension passed in ("%s")!
 F-j>@
-#F)J$
 FJ-&	&
 ?,F]k
 F-.K@
@@ -15333,6 +15350,7 @@ flags
 Flags :%d
 flag_shape
 flagstoclear
+flame_attachment
 flammable
 flashbang
 Flashbang.Explode
@@ -15726,12 +15744,8 @@ fxtime
 fx_time
 fxTime
 =.f?y
-)!Fy@
 f@y?!3ka
-))FyB
 fYfxk
-)!FyJ
-))FyJ
 f@y?! k
 F@y?! k
 FZ*o7
@@ -15776,9 +15790,9 @@ g6iB@
 g6ibA
 G6iBA9
 G6iRA
+g6iz@
 G6iz@
 G6iZ@
-g6jz@
 g6`n@
 G6`N@
 g6v>@
@@ -15787,9 +15801,9 @@ G-7F@
 G- 8 
 G-!8"
 g\8"@6
+!G9i$
 ((G9I
-!G9j$
-Ga>)\
+]G-A.
 gainsboro
 -game
 /game/
@@ -16068,6 +16082,7 @@ Ga>MouseScroll
 ?%#gaO
 ?%#gaO{
     gap of %d bytes [last run %d bytes]
+Ga>q=
 gascan
 gasCan_pull_back_layer
 gascylinder
@@ -16555,6 +16570,7 @@ g_Tier1_CRC32Table
 g_TimeOfDayEntity
 g_TimeOfDayKeyValues
 g_tNormal
+G-"UN
 gunshotsplash
 gunshotsplash_global_client
 gustdirchange
@@ -16565,6 +16581,7 @@ G-vF@
 g_VProfCurrentProfile
 gxXM|Z
 )!Gy	
+))Gy	
 g@yRz
 !.h	 
 ()@)h*
@@ -16574,7 +16591,6 @@ g@yRz
 h&@)?
 h&@)*
 ;+%@H
-!	@)H
 @-H  
 #H)	}	
 H-@( 
@@ -16598,10 +16614,10 @@ H6c"J9
 H6h>@
 h6hB@
 (	H6hJ@
+H6hN@
 H6hV@
 H6in@
 H6iR@
-h6j~@
 h6jF@
 H6jJ@
 h6K9H
@@ -16609,12 +16625,12 @@ H6u2@
 h6uB@
 h6X9t
 h6	yh
-H75	P7
 h78abB
 H7H	P7
 H7t	P7
 H7t	P7i
 h7u	p7
+H7u	P7
 H7U	P7
 `h`8@
  h"8`
@@ -16642,18 +16658,18 @@ h#8Jh#8
 h:@9?	
 h"@9(
 h"@9)
-h"@9);
 h"@9	
 h"@9	;
 h*@9	
 h&'9)
 h+@9`
 h+@9	
-h"@9)2
+h"@9	2
+h"@9)5
 ?h98a
 h"@9	 @9
 H @9	 @9
-H@9(A
+h"@9	F
 h.@9h
 h"@9h
 h*@9h
@@ -16664,16 +16680,17 @@ h"@9H
 H @9h"
 h"_9i
 h"@9i&
+h"@9I>
 h&'9I
-h"@9i5
-h"@9IF
+h"@9I5
 h"@9ig
-h"@9IP
+h"@9iG
+h"@9iP
 h"@9iT
 h"@9iY
 *H@9J
-h"@9	M
 h"@9	P
+h:@9vA
 h"@9)Y
 h&_)a"
 H)+A@
@@ -16686,11 +16703,11 @@ hA@9`
 h"A9a
 =H#A9A'
 HA@9(A
-h"A9	F
 h"A9h	
 h^A9H
 h>A9H
 hA9)hA9
+HackThatForcesALayout
 `"H=a&H=b*H=c.H=
 h&A-j
 halfhealth
@@ -16793,7 +16810,6 @@ HaveActivePopups
 have_versions
 ?h$B#
 h&B)(
-`"@=HB
 !Hb8b
 hb8bF
 hB\8u
@@ -16817,8 +16833,10 @@ hB@9H
 hB@9H	
 hB@9hF
 hB_9i
+hB@9I=
 hb@9i*B
-hb@9IS
+hb@9iG
+hb@9iS
 hB@9t
 hB@9u"@
 hb@9v
@@ -16867,7 +16885,6 @@ hBZ9h
 hc87hd89hc88hb8
 hc8#h 8
 =hC@9
-h*C9(
 =HC@9
 h*C)9A@y
 hC@9h
@@ -16910,6 +16927,7 @@ head_yaw
 healingdone
 healing_done
 HealingDoneActive
+healing_ward
 health
 HealthBar
 healthBarOffset
@@ -17004,10 +17022,10 @@ hexColor
 hex_model
 *hf@9
 *hf@9(
+hf@9!
 hf@9(
 *hF@9
 hF@9)
-hf@9a
 @=hF@9b
 hf@9h
 hf@9H
@@ -17028,6 +17046,7 @@ hfC9h
 hfC9H
 hfD9)A
 *hFM9
+hFM9h
 hFM9iBM9
 hFN9?
 hfQ9h
@@ -17098,6 +17117,8 @@ HighlightLevel
 highlightnextunit
 HighlightSlot
 HighResolutionDisplay
+HighRoller
+HighRollerContainer
 high_value
 hint_name
 hint_panel_fadein
@@ -17110,8 +17131,7 @@ Hit Test
 Hit Test Children
 hi,xk
 H%@)J	@
-hj58{@
-hj58E
+hj58{L
 hj|8h
 hj 9`
 hj]9ib
@@ -17170,7 +17190,6 @@ hN(9i
 hnF9(
 hnG9H
 h&N)jb@
-*h~O9
 <HOi#
 	Holding lock %s:
 holdtime
@@ -17234,6 +17253,7 @@ H-PK@
 HPostProcessing
 HPostProcessingStrong
 h&Q)4 
+h&Q)5
 h&Q)a
 h*Q)`R
 "@Hqr
@@ -17254,7 +17274,6 @@ href="
 HRenderTexture
 hRenderTexture != RENDER_TEXTURE_HANDLE_INVALID && m_image.IsValid()
 HRenderTextureStrong
-hrG9iB
 hrG9v
 hR@yh
 hR@yiF@
@@ -17266,7 +17285,6 @@ HSCRIPT-new
 hscroll
 HSequence
 hsv-transform
-h&T)5
 hThinkFunc
 HTMLBackForwardState
 HTMLCloseWindow
@@ -17309,6 +17327,7 @@ http://%s%s
 https://store.steampowered.com/join?insideAppModal=1&embedded_appid=%d
 https://store.steampowered.com/m/accesscode/%d
 https://underlords.com/feedback/?l=%s
+https://underlords.com/updates/
 https://underlords.com/updates/panorama/
 HUD_BattlePassProgressVisible
 hud_drawhistory_time
@@ -17353,18 +17372,17 @@ h>@y(
 h:@y*
 h"@y`
 h*@y_
-h&@y)
 h&@y)$
 h&@y	$
-))Hy	
+)!Hy	
+h&@y)	G
 H @y	H@9
 )H@yHH@y?
 	h@y(h@y?
+h&@yi+
 H @yi
-:Hy)qHy
 hy)x,
 =h&Yy
-:Hy)yHy
 &@)hZ
 hZA9)
 hZA9H
@@ -17391,6 +17409,7 @@ i2K9h6K9I
 @i)5@
 i6xh>@yt:
 i6@yh
+i78[>
 	i|8?)
 i)!8 
 !	I- 8 
@@ -17424,24 +17443,26 @@ i+8Ki@9k
 	i*8Z
 )i@9	
 i"@9(
-i*@9*>
 i&@9(
 i"@9J
+i*@9J
+i*@9J>
 I9	S	M)
-i*a9tK
+i*a9TK
 i*a9u
 )i^A)i
 I-aL"
 iAmmoType
 iAttribHook
-)IAy	
 Ia@yZ
 	*iB@
 i"B)	
 I#B)	
+ib]9(
 ib@9`
 ib@9(
 ib@9)
+iB$9"
 ib@9h
 ib@9i
 =iB/9i
@@ -17456,7 +17477,9 @@ iBD9(
 iBF9hz@
 i*B)h
 *iBM9
+)iBy	
 iB@yJ
+IcByj
 IClientAlphaProperty
 IClientStats
 iCollide
@@ -17641,6 +17664,7 @@ I CUtlRBTree<CUtlMap<unsigned int, CUtlVector<const EventVirtualItemUnlock_t *, 
 I CUtlRBTree<CUtlMap<unsigned int, IDACOrderProcessed *, int, CDefLess<unsigned int> >::Node_t, int, CUtlMap<unsigned int, IDACOrderProcessed *, int, CDefLess<unsigned int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, IDACOrderProcessed *, int, CDefLess<unsigned int> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<unsigned int, IDACOrderProcessed *, int, CDefLess<unsigned int> >::Node_t, I = int, L = CUtlMap<unsigned int, IDACOrderProcessed *, int, CDefLess<unsigned int> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, IDACOrderProcessed *, int, CDefLess<unsigned int> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<unsigned int, ItemPartner_t, int, CDefLess<unsigned int> >::Node_t, int, CUtlMap<unsigned int, ItemPartner_t, int, CDefLess<unsigned int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, ItemPartner_t, int, CDefLess<unsigned int> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<unsigned int, ItemPartner_t, int, CDefLess<unsigned int> >::Node_t, I = int, L = CUtlMap<unsigned int, ItemPartner_t, int, CDefLess<unsigned int> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, ItemPartner_t, int, CDefLess<unsigned int> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<unsigned int, kill_eater_score_type_t, int, CDefLess<unsigned int> >::Node_t, int, CUtlMap<unsigned int, kill_eater_score_type_t, int, CDefLess<unsigned int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, kill_eater_score_type_t, int, CDefLess<unsigned int> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<unsigned int, kill_eater_score_type_t, int, CDefLess<unsigned int> >::Node_t, I = int, L = CUtlMap<unsigned int, kill_eater_score_type_t, int, CDefLess<unsigned int> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, kill_eater_score_type_t, int, CDefLess<unsigned int> >::Node_t, int>, int>]
+I CUtlRBTree<CUtlMap<unsigned int, LegendaryUnitData_t, int, CDefLess<unsigned int> >::Node_t, int, CUtlMap<unsigned int, LegendaryUnitData_t, int, CDefLess<unsigned int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, LegendaryUnitData_t, int, CDefLess<unsigned int> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<unsigned int, LegendaryUnitData_t, int, CDefLess<unsigned int> >::Node_t, I = int, L = CUtlMap<unsigned int, LegendaryUnitData_t, int, CDefLess<unsigned int> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, LegendaryUnitData_t, int, CDefLess<unsigned int> >::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<unsigned int, Rule *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short, CUtlMap<unsigned int, Rule *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, Rule *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<unsigned int, Rule *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, I = unsigned short, L = CUtlMap<unsigned int, Rule *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, Rule *, unsigned short, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<unsigned int, unsigned long long, int, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, int, CUtlMap<unsigned int, unsigned long long, int, bool (*)(const unsigned int &, const unsigned int &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned long long, int, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<unsigned int, unsigned long long, int, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, I = int, L = CUtlMap<unsigned int, unsigned long long, int, bool (*)(const unsigned int &, const unsigned int &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned long long, int, bool (*)(const unsigned int &, const unsigned int &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<unsigned int, unsigned long long, int, CDefLess<unsigned int> >::Node_t, int, CUtlMap<unsigned int, unsigned long long, int, CDefLess<unsigned int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned long long, int, CDefLess<unsigned int> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<unsigned int, unsigned long long, int, CDefLess<unsigned int> >::Node_t, I = int, L = CUtlMap<unsigned int, unsigned long long, int, CDefLess<unsigned int> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, unsigned long long, int, CDefLess<unsigned int> >::Node_t, int>, int>]
@@ -17657,8 +17681,8 @@ I CUtlRBTree<panorama::CPanelPtr<panorama::IUIPanel>, int, CDefLess<panorama::CP
 I CUtlRBTree<result_t, unsigned short, bool (*)(const result_t &, const result_t &), CUtlMemory<UtlRBTreeNode_t<result_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = result_t, I = unsigned short, L = bool (*)(const result_t &, const result_t &), M = CUtlMemory<UtlRBTreeNode_t<result_t, unsigned short>, unsigned short>]
 I CUtlRBTree<unsigned int, unsigned short, bool (*)(const unsigned int &, const unsigned int &), CUtlMemory<UtlRBTreeNode_t<unsigned int, unsigned short>, unsigned short> >::NewNode(const T *) [T = unsigned int, I = unsigned short, L = bool (*)(const unsigned int &, const unsigned int &), M = CUtlMemory<UtlRBTreeNode_t<unsigned int, unsigned short>, unsigned short>]
 I CUtlRBTree<void *, int, bool (*)(void *const &, void *const &), CUtlMemory<UtlRBTreeNode_t<void *, int>, int> >::NewNode(const T *) [T = void *, I = int, L = bool (*)(void *const &, void *const &), M = CUtlMemory<UtlRBTreeNode_t<void *, int>, int>]
+ic]y?
 ic@y?
-iCZy?
 $Id8g
 id8$h 8
 iDamageCustom
@@ -17674,6 +17698,7 @@ idle: %s, weight: %.2f
 i>D-nrA
 (ID of the Cloud file to get details for.
 ids_only
+)iDy	
 IEconItemDescription::YieldingFillOutEconItemDescription()
 IEconItemInterface
 i*E)h
@@ -17713,6 +17738,7 @@ ignite
 ignore_depth
 ignoredisabledchildren
 ignore_enabled_flag
+ignoreForRoundEnd
 IgnoreFriend
 ignore_in_collection_view
 ignore_input
@@ -17868,6 +17894,8 @@ il8k	@
 Illegal jstype for int64, uint64, sint64, fixed64 or sfixed64 field: 
 )ilxi
 *ilxJ
+)ILy	
+@-#iM
 i"@)M
 I.@)M
 im8Jy
@@ -17916,8 +17944,6 @@ import public "$0";
 import weak "$0";
 impulse
 IMsgNetPacketFromCNetPacket: malformed packet, size %d bytes
-@)iN	
-!	@)In
 In8hIh8jIj8mIm8kIo8nU
 (inactive)
 Inactive billing agreement
@@ -18454,23 +18480,18 @@ invnextselect
 invprev
 invprevselect
 in_wishlist
-)iNy	
-)INy	
 i(Optional) Maximum number of results to return on this call. Defaults to a maximum of 500 files returned.
 i"P)?
-i"p9j7
 IParticleEffect
 	ip_public
 ip[[x
 i*Q)h
 i"Q)kz@
 IQuickTime001
-)IQyJ
 IRagdoll
 IRecipientFilter
 iResult == 0
 ir@y?
-)IRy	
 is^8h
 is_account_locked_down
 isactive
@@ -18578,6 +18599,7 @@ IsPaused
 is_phone_identifying
 is_phone_verified
 is_pick
+is_placeable_item
 IsPlatformMobile
 IsPlatformPC
 IsPlayer
@@ -18625,9 +18647,8 @@ IsVictory
 is_wallet_cash_trusted
 IsWinner
 is@y?
-)ISy	
 iszString
-#$)iT
+#$)IT
 )it8?
 )it8?}
 	it8?
@@ -18805,6 +18826,7 @@ ItemTypeEquipSupport
 ItemTypeGlobal
 item_type_name
 itemTypeName
+ItemTypePlaceable
 item_whitelist
 itemwidth
 !ITestScriptMgr
@@ -18814,15 +18836,19 @@ IToolObject
 it's a handle %p!!
 i"T)t
 i"T)w
+)ITy	
+)ITyJ
 )iu8?
 	iu8?
 [i:%u:%u]
 [I:%u:%u]
-)IUy	
+)iUyJ
+@)iV	
 !iv8?|
 )Iv8(
 )iv8i
 )iv8J
+i"v9j7
 iv_alt1
 iv_alt2
 +iv_attack
@@ -18895,38 +18921,37 @@ i,xj:
 *i.x	l@y
 i{xP9
 i{xrF 
-)	Iy	
+)i]y?
+)I_y	
 I	@y(
 Iy	0@
 	iy8?
 i>@yh
-Iy	iwx?
 Iyix8}
 IyixJylx+
 IYixK9
+)	IyJ
+)I@yJ
 +I@yL
-Iy)uB
 Iy(xj
 i"Yy?
-)IZy?
+IZy	<
 <j.?)
-!	@)j
 @ @-J
 @-J	,
 *$J)(}
 J- 	 
 J-!(#
 J0@yI
-J0@yk}D
-j2R)k6S)
-j2Sy)1Xy
-j2Sy)9Xy
+J0@ykyD
+J1Ry?
+j2O)k6P)
 j2@yh
 j48	C
-j48h+
+j48H+
 j48t^@
 j4xH;@
-j58h+
+j58H+
 j58hf@9(
 j58hJ[
 j58vs
@@ -18934,56 +18959,64 @@ J5@y_
 j68{?
 j68?3
 j68c;
+j68hD
 j68u*@
 j68v&@
 j6@9(
 j|8?	
+j(8('
 j)8)	
 j)8	"
 J-!8"
-j(8h'
+j(8h.
+j(8H.
 j(8HH
+j;8hK
 j 8hN
 j)8I:
 j`8!i 8
 j)8IV
 j)8`j
+j)8!s
 j(8(Z@
 j)8	Z
  J9?@
-J!`9?
+J!~9?
+J![9?
 J!@9_
 J!@9#
 j9!8 
 j98Hki8A
+j98|N
 J9e:A
 j	@9I
 j@9ij
 J%@9j
+J9Ke	
 j9	S*M*
 ja8 i!8!
 J`A9)
 J]A9_
-JA{9?
+JA^9?
+JA[9?
 jA9hj
 JA9iJ
 Ja@9j
-Jaa9?
 JAAHJ
 JAAHJ	 
 JAAIJ
 JaAJJ
-J"AHJ
-JAJ9?
+Jaf9?
+JAh9?
+J"AHJ)
 JAJJ)
 ja_JP
-JaM9?
-JAO9?
-JAOy?
+Jak9?
+JAMy?
 japanese
-JaPy-
 JaR9?
 JAT9?
+Jau9?
 java_generate_equals_and_hash
 java_generic_services
 java_multiple_files
@@ -18999,15 +19032,15 @@ jaw_open
 jawOpen
 jaw_tilt
 jaw_tilt_controller
+JAY9?
 j"B))
+J!B9?
 JB9hJ
 jb@9j
 jB@y)
 "J)*C
 J-cb@
-?J-CI@
-jc]y?
-JC]y?
+Jc@y?
 JDesired number of items in the voting queue.  May be clamped by the server",
 J-dj@
 J!e9?
@@ -19015,9 +19048,6 @@ Je@9*
 JEIJJ}
 j.E)l2@
 J-f^@
-j"f9(
-j"f9h
-j"f9H
 jFM9	
 ji)8)
 ji)8	i@9
@@ -19038,12 +19068,12 @@ ji)x)
 Jiy8+
 )j"J)
 jj(8(
+J!j9?
 jji8J
 j!JJ+
 j!JJK
 !JJK|
 JjMJJK
-J!Jy?
 JJ*Yj
 J)k^@
 J)k~@
@@ -19052,7 +19082,6 @@ jkj8\
 jklmnopqrstuvwxyzyxwvutsrqponmlkj
 =@J@L
 Jl8k	@
-J!L9?
 j*L9c
 -jlook
 +jlook
@@ -19061,10 +19090,10 @@ jlxRjm8
 J(MHJ	
 j&M)m*
 j"M)n*
+J#My?
 ?jN^d
 JNI_OnLoad
 JNI_OnUnload
-J!o9?
 Job Avg
 Job debugging disabled
 job_id_source
@@ -19088,7 +19117,6 @@ Joint Indices (%d) Out Of Range for UINT10: Skinning will not work!
 Joint Indices (%d) Out Of Range for UINT8: Skinning will not work!
 Joints: %d (%d)
 J(Optional) If this represents a game, this is the URL to that game's page."P
-J!Oy?
 joy_accel_filter
 joy_accelmax
 joy_accelscale
@@ -19142,18 +19170,19 @@ joy_yawsensitivity
 joy_yaw_sensitivity
 joy_yawthreshold
 j?@)p
+j"Py+
 Jp@y_
 JP@y_
-J!Py)uB
 J!Q9?
+JqQy)uB
 JQY9*
 jr82"
 jr822
 [jRDe
 jRh9i
-jr[y)
+jRVy)Q[y
+jRVy)Y[y
 jR@yK=
-jrYy)
 js_array
 JSConsoleInput
 JSConsoleOutput
@@ -19172,8 +19201,8 @@ jstype
 JSType
 jstype is only allowed on int64, uint64, sint64, fixed64 or sfixed64 fields.
 js_value
-;*-jT
 @@J	t
+;*-JT
 -jump
 +jump
 jumped = %f
@@ -19181,6 +19210,7 @@ jumpfactor
 justify_horizontal
 justify_vertical
 jv8?)
+J!V9?
 j.V-m
 jV@y_
 jV@y)|@
@@ -19190,10 +19220,7 @@ jx>xk
 )!Jy	
 J!@y)}@
 J	@y_
-J!y9?
 JYix*$
-)!JyJ
-))JyJ
 Jykx_
 Jykx)ij
 Jytx_
@@ -19206,7 +19233,6 @@ _!(k#
 &@)k	
 	*_!;k
 	*_!(k
-!	@)K
 	*K!<
 	*K}@
 	K)}}
@@ -19226,11 +19252,11 @@ k2N)jJ@
 ?k58D
 k5KJLV
 k68wZ@
-*?k78`
+*?k78|
 ?k78h
+?k78Ks
 *?k88}
-_k88y
-?k88ZX
+?k88zX
 (k;8H
 k(8vV@
 k@9(-
@@ -19238,9 +19264,11 @@ k@9(-
 @){K9_
 	=K9?
 	=K9?	
+	!K9)
 k9J{c>
 K9	S)
 K9	S)M+
+!	@)ka
 K)A)+)
 kA@9J}@
 K	A9lC
@@ -19980,6 +20008,7 @@ k_Failed_CodeNotFound
 k_Failed_OtherError
 kGEOCLIP
 (# Kh
+	Kh~@
 	kh8?
 kh8jkh8?
 	kh8?u
@@ -20165,13 +20194,11 @@ k!@y_
 k!@y?
 k@y	]
 k	@y)
-)!Ky	
 k!@yJ}@
+))KyJ
 Kykx)
-!	@)l
 !	@)l"
 !.L	 
-+L))	
 	L- 	 
 L0AyK
 L: %.2f deg
@@ -20333,6 +20360,8 @@ left_puckerer
 left_upper_raiser
 left-wrap
 legacymaterialtag
+legendary_desc
+legendary_title
 lemonchiffon
 l_endcap
 [len=%d sz=%d]
@@ -20741,24 +20770,19 @@ lseek
 LT_txt
 lu9% 
 [L:%u:%u]
-L=VALVt
  %lx %lx
 l!@y?
+)!Ly	
 L!@y?
+Ly	iwx?
+)	LyJ
 Lyj"C
 Ly?! k
-LysB@
-LytB@
-LytF@
-Lyu>@
-LyuB@
-LyuF@
-Lyv>@
-LyvF@
-Lyw>@
+Ly)uB
 ?lzPP
-!	@)[m
 @=#?m\
+!	@)M
++M))	
 +M)	)	)
 M-"	"
 M-@	 
@@ -20767,7 +20791,6 @@ m1B)n
 m1E)n
 m2K-jV@
 :m2OS
-M@=(4
 M-!8"
 m8m"@9
 M9C)J!@
@@ -21451,7 +21474,6 @@ m_bParticlePrecipInitialized
 m_bParticleSystemsCreated
 m_bPassthoughCaller
 m_bPaused
-MbP?@d
 m_bPerformAvoidance
 m_bPhysicsInitted
 m_bPlayerUnderwater
@@ -22411,6 +22433,7 @@ m_glowEntity
 m_GraphParameterName
 m_groundNormal
 m_guid
+M@=h4
 m_hActivator
 m_hActiveHandAttachment
 m_hActiveWeapon
@@ -23217,6 +23240,7 @@ m_nStartInstance
 m_nStepside
 m_nStopType
 m_nStyle
+m_nSummonOwnerEntIndex
 m_nSurfaceProp
 m_nSurroundType
 m_nTargetAxis
@@ -24061,6 +24085,7 @@ m_worldSpaceBoneComputationOrder
 m_wristBones
 M@x_!7k
 m@x+ij
+))My	
 m_yaw
 my_custom_images/%d.png
 !.n	 
@@ -24201,7 +24226,7 @@ N5GCSDK17GCClientJobLambdaIZN20CDAC_UI_Popup_Reward18OnPopupRewardEquipEvE3$_9EE
 N5GCSDK17GCClientJobLambdaIZN21CDAC_DB_Page_PostGame18OnPostGameMainMenuEvE3$_0EE
 N5GCSDK17GCClientJobLambdaIZN22CDAC_UI_DailyChallenge16OnClaimChallengeEvE4$_28EE
 N5GCSDK17GCClientJobLambdaIZN22CDAC_UI_DailyChallenge17OnRerollChallengeEvE4$_27EE
-N5GCSDK17GCClientJobLambdaIZN23CDAC_UI_UnderlordConfig22EventActivateUnderlordEvE3$_1EE
+N5GCSDK17GCClientJobLambdaIZN23CDAC_UI_UnderlordConfig22EventActivateUnderlordEvE3$_3EE
 N5GCSDK17GCClientJobLambdaIZN24CDAC_UI_AchievementPanel18OnClaimAchievementEvE3$_2EE
 N5GCSDK17GCClientJobLambdaIZN24CDAC_UI_Popup_FriendCode11OnReconnectEvE3$_0EE
 N5GCSDK17GCClientJobLambdaIZN24CDAC_UI_Popup_FriendCode12OnRevokeCodeEvE3$_2EE
@@ -24487,6 +24512,7 @@ N9C_EnvWind26NetworkVar_m_EnvWindSharedE
 n9@yN
 #n!(a
 n	A9-
+N?a 9
 nA9hn
 NA9iN
 nameable
@@ -24512,6 +24538,7 @@ NB9hN
 "Nb(a
 NBX ncX nB(
 $nc(a
+#n!d;
 !Nd*$
 nDamageTaken
 NDebugOverlay::Box
@@ -24763,7 +24790,7 @@ $NH
 %NH  
 N@-!H*
 N	H`9
-N	H`9tK
+N	H`9TK
 Nh*L9`
 Nh&P)a
 ni)8?
@@ -25024,11 +25051,11 @@ NSt6__ndk110__function6__funcIPFiPN8panorama14IUIPanelClientES4_ENS_9allocatorIS
 NSt6__ndk110__function6__funcIPFvP12CSceneObjectENS_9allocatorIS5_EES4_EE
 NSt6__ndk110__function6__funcIZN11CDAC_UI_Hud15UpdateSynergiesEPK21CMsgPublicPlayerStateS5_E3$_6NS_9allocatorIS6_EEFiPN8panorama14IUIPanelClientESB_EEE
 NSt6__ndk110__function6__funcIZN11CDAC_UI_Hud24UpdateSelectedPlayerDataEvE3$_5NS_9allocatorIS3_EEFviP9C_DAC_NPCEEE
-NSt6__ndk110__function6__funcIZN11CDAC_UI_Zoo11OnHudUpdateEvE3$_3NS_9allocatorIS3_EEFbPN8panorama8CPanel2DEEEE
+NSt6__ndk110__function6__funcIZN11CDAC_UI_Zoo11OnHudUpdateEvE3$_5NS_9allocatorIS3_EEFbPN8panorama8CPanel2DEEEE
 NSt6__ndk110__function6__funcIZN12CDACCS_Setup17AdvanceSimulationEvE3$_1NS_9allocatorIS3_EEFviP9C_DAC_NPCEEE
 NSt6__ndk110__function6__funcIZN12CDACCS_Setup21TriggerSynergyEffectsEvE3$_2NS_9allocatorIS3_EEFviP9C_DAC_NPCEEE
-NSt6__ndk110__function6__funcIZN12CDAC_UI_Shop11OnHudUpdateEvE3$_4NS_9allocatorIS3_EEFbPN8panorama8CPanel2DEEEE
-NSt6__ndk110__function6__funcIZN12CDAC_UI_Shop15UpdateSynergiesEvE3$_3NS_9allocatorIS3_EEFiPN8panorama14IUIPanelClientES8_EEE
+NSt6__ndk110__function6__funcIZN12CDAC_UI_Shop11OnHudUpdateEvE3$_1NS_9allocatorIS3_EEFbPN8panorama8CPanel2DEEEE
+NSt6__ndk110__function6__funcIZN12CDAC_UI_Shop15UpdateSynergiesEvE3$_0NS_9allocatorIS3_EEFiPN8panorama14IUIPanelClientES8_EEE
 NSt6__ndk110__function6__funcIZN12C_EnvCubemap9PreRenderE16CSplitScreenSlotE3$_2NS_9allocatorIS4_EEFvvEEE
 NSt6__ndk110__function6__funcIZN13CDACCS_Combat17HandleCombatEndedEvE3$_0NS_9allocatorIS3_EEFviP9C_DAC_NPCEEE
 NSt6__ndk110__function6__funcIZN15C_EnvTimeOfDay29PreRenderE16CSplitScreenSlotE3$_4NS_9allocatorIS4_EEFvvEEE
@@ -25144,8 +25171,6 @@ n@y?
 n@y?!7kC
 nZ:0J
 ?'[nza
-!	@)o
-!	@)?o
 o*-@)
 !	O-#
 O?0 ,	f
@@ -25172,6 +25197,7 @@ o6hr@
 O6hr@
 o6hVB9	1
 O6hz@
+o6i~@
 O6i~@
 O6i>@
 O6i:@
@@ -25204,7 +25230,6 @@ O9 8"
 O9ibO9
 o9	Q@
 ? !o^A?
-O	A:9@
 O-a	N-dy@
 O-A	N-Dy@
 OAuthToken
@@ -25222,10 +25247,15 @@ octal value is greater than \377 (not in UTF-8 mode)
 _octree.dat
 oculus
 odds_tier_1
+odds_tier_1_next
 odds_tier_2
+odds_tier_2_next
 odds_tier_3
+odds_tier_3_next
 odds_tier_4
+odds_tier_4_next
 odds_tier_5
+odds_tier_5_next
 (OE8i
 # of channels is zero.
 offlinemode=1
@@ -25551,10 +25581,19 @@ OwnGameplayInfo
 o}Xot#
 &OYMW
 @-oyrn
+OysB@
+OytB@
+OytF@
+Oyu>@
+OyuB@
+OyuF@
+Oyv>@
+OyvF@
+Oyw>@
 %O?ZE
 ?<-?p
 @-p	@
-!	@)P
+	*!P.
 P-!("
 P10CUtlBuffer
 P12IVideoPlayer
@@ -25591,8 +25630,8 @@ p6iv@
 p6jf@
 p6jR@
 p6%pD9
-	*!P7
 'P77*X7W-`7w0h7
+p7h	x7
 P7H	X7h
 p7v	P7
 P7x"@
@@ -25838,6 +25877,7 @@ particles/fx/fx_tesla_hitbox.vpcf
 particles/fx/fx_tracer.vpcf
 particles/gameplay/synergy/druids/druids.vpcf
 particles/gameplay/synergy/dwarf/dwarf_target.vpcf
+particles/gameplay/synergy/rollers/roller_place.vpcf
 particles/gameplay/synergy/synergy_highlight_bench_surplus.vpcf
 particles/gameplay/synergy/synergy_highlight_bench.vpcf
 particles/gameplay/synergy/synergy_highlight.vpcf
@@ -25885,6 +25925,7 @@ particles/msg_fx/msg_block.vpcf
 particles/msg_fx/msg_crit.vpcf
 particles/msg_fx/msg_damage_numbers_incoming.vpcf
 particles/msg_fx/msg_damage_numbers_outgoing.vpcf
+particles/msg_fx/msg_death.vpcf
 particles/msg_fx/msg_evade.vpcf
 particles/msg_fx/msg_miss.vpcf
 particles/msg_fx/msg_synergy_numbers_totes_final.vpcf
@@ -25980,6 +26021,7 @@ particles/ui/timer/ui_timer_ticks.vpcf
 particles/ui/xp/ui_xp_invest.vpcf
 particles/ui/xp/ui_xp_lvlup.vpcf
 particles/units/heroes/hero_drow/drow_base_attack.vpcf
+particles/units/heroes/hero_juggernaut/juggernaut_healing_ward.vpcf
 particles/units/heroes/hero_pangolier/pangolier_tailthump_buff.vpcf
 particles/water_fx/water_trail_directional.vpcf
 particles/water_fx/water_trail_directional_walk.vpcf
@@ -26548,6 +26590,7 @@ PopupHeroOdds
 PopupHeropedia
 PopupHeropediaSynergy
 PopupItem
+PopupLegendaryDescription
 PopupLookingForMatch
 PopupPartyInviteFriend
 PopupPlayerState
@@ -26997,13 +27040,12 @@ pWorldObject
 pxADj
 ?p[[x^j
 @p}Xo
+)!Py?
 )!Py	
+)	Py?
 PY9	@
 P@ya?
 py_generic_services
-"Py)QPy
-Py)uB
-"Py)YPy
 _!@q	
 ?	@q)
 q	)		
@@ -27012,68 +27054,64 @@ Q0&	S
 q;4,F
 Q-!8"
 Q8q(2
-	q*9_
-	Q	9_a	95
-	!Q9i
+	q>9_
+	Q 9I^
 ?!@qA
 Q-A8!
 qangle
 QAngle
 QAngle-world
+)QAy	
 	QB9i
 q`bJ9
 qb"J9a.J9
-)QBy	
 Q-C8#
 qcRFy
 	QD9?
 	QD9)
 	QD9I
-)qDy	
-)QDy	
 qD	@za
 ?qe?A
 )qEy	
-)qFy	
+)QFy	
+)qG9(9
+)qGy	
 QH@-$
 q?h(8
-)qHy	
 ?"QhY
-)QHy	
 q	i:8
 Q(i*8
 Q	I*8
 Qi"A)`
 qIo8p
-)QIy	
 QjN?#
 qJT-s
-)QJyJ
+)QJy	
 qK5B),	
 QKJ-S[@
 QkkXa
 q	kw8A
-)QKy	
+)qKy	
+)qKyJ
 	qL9	
 >QL^9
 	qL9i
 	qL9I
 )QLy	
 qM9VV
-)qMy	
-!	@)Qn
+)qNy	
+)QNy	
 Q/!OJ
 qo[k!
 Q(Optional) If supplied, the resulting published file's Id is appended to the URI.
-)QPyJ
+)QPy	
 ?\qqTn
-)qQy	
-)QQy	
 QReturns the Steam Level of a user, the Badge level for the game, and if it's foil
 QRHr8@H`8
 )qRy	
+)QRy	
 	@qsj
-)qSy	
+)qTy	
 )QTy	
 quAKJ
 qualities
@@ -27102,23 +27140,17 @@ queue_position
 queue_size
 Quintic
 &quot;
+)QUy	
 %qVDM
-)qVy	
 )QVy	
 ?q?}WF
 qWiw8
-)qXy	
-)q^y	
-)q[y	
-)!Qy	
-)Q_y	
-)Q[y	
+)q_y	
+)q]y?
+)Q^y	
 )Q@y?
-)Q\y	
-)Q\yJ
 =qypx
-)qYy	
-)QZy?
+Qy)uB
 "@:R".
 r0@GP!
 R11_EAC
@@ -27133,7 +27165,6 @@ R8G8B8A8_ETC2_EAC
 R8G8B8_ETC2
 ?R8q(2)
 *R)8yv
-	!r9	
 R "@9
 R	-	9
 r@9hr
@@ -27143,11 +27174,10 @@ R9iBR9
 r@9ir
 r@9ir@9
 R@9Y'
-R	A!9
-RA9),
+RA9)*
 RA9	,
 RA9hR
-RA9i*
+RA9I*
 rA9ir
 RA9iR
 RA9iRA9
@@ -27999,6 +28029,7 @@ r_propsmaxdist
 RP_TOGGLEPAUSE
 RP_UNPAUSE
 ;r)/Q(
+R	Q#9
 rr_AddDecisionRule
 r_RainAllowInSplitScreen
 r_rainalpha
@@ -28125,14 +28156,11 @@ r_WaterDrawRefraction
 r_waterforcereflectentities
 r@y`&@
 )!Ry	
-"Ry)aRy
 r@yh*@
 `R@yh
 R@yHq
 r@yhr
 r	yi6
-"Ry)QRy
-"Ry)YRy
 rZ9H~
 </%s>
 === %s ===
@@ -28151,7 +28179,6 @@ rZ9H~
 	%s: 
 s)~+@
 s$)+) 
-!	@)S
 ?;? +S'
 )`>s0
 %s_%03d.vpk
@@ -28197,6 +28224,7 @@ s7>Ip
 S96|@
 S@9h"
 S@9irB
+!	@)sa
 (SA9(
 saddlebrown
 safe-area-inset-bottom
@@ -28304,6 +28332,7 @@ ScaleDamage
 Scale down the main viewport (to reduce GPU impact on CPU profiling)
 scale: (%f)
 scaleoffset
+scaleOnlyBaseModel
 Scales entities.	Arguments: <scale factor> {entity_name} / {class_name} / no argument picks what player is looking at
 scalesettings
 scale_size
@@ -29413,6 +29442,7 @@ Slot_Global
 Slot has multiple reward levels that reference the same reward level of challenge! %u
 slot_id
 slotName
+Slot_Placeable
 Slot references a goal level of %u, however, some of the challenges that are referenced by this slot only have a goal level of %u
 slots
 SlottedSlider
@@ -30353,6 +30383,7 @@ success
 SUC)V!@
 SuggestionPanel
 Summarizes (by class) all extant entities. Optional 2nd arg is a substring of a classname that the list will be filtered by.
+summon_owner_entindex
 %s: unexpected parameter format for InputSetBodyGroup. Had %s, expected <bodygroupname,partnumber>
 %s: unexpected parameter type %s, expected a CString
 %s: unexpected token %s
@@ -30512,7 +30543,6 @@ Switch which class the panel has for a given attribute slot. Allows easily chang
 %s writing meta data %d
 %s writing start offset %d
 	s@y?
-S@yC'
 symbol
 Symbol name "
 symbols
@@ -30585,6 +30615,7 @@ T$8@9C
 T"8@9E(
 T?!8k
 *T)8yv
+t&*9:[
 T" @9#$
 T"(@9#,
 T"$@9#(
@@ -30614,13 +30645,13 @@ T#,@9D0
 T#@@9$D@9 H@9cx
 !t9i$
 T9ibR9
-t&*9KZ
 T`.@9s.
 T*9	S
 T	9	S	O)
 T	9@y?!"k
 &&^TA;
 T	a@9?
+T)$A9	
 T	!A9
 T	A@9?
 T(A@9H
@@ -30684,6 +30715,7 @@ target1
 target2
 target_account_id
 -target_dpi
+target_dummy
 target_entindex
 target_entity
 target entity not found
@@ -30709,10 +30741,9 @@ Tb8	S
 TbFEyaJEy?
 Tbhd8
 T`b@y
-T`b@y3U
-T`b@y"D
-T`b@y|S
-T`b@y%S
+T`b@y-[
+T`b@yAD
+T`b@yOF
 Tc"A)`
 Tc"B)`
 TC#B)@
@@ -30979,7 +31010,7 @@ ThB@9
 ThB@9(
 ThB@9h
 ThB@9H
-ThB@9)I
+ThB@9	I
 ThBA9
 ThBA9(
 ThbC9
@@ -31144,6 +31175,7 @@ ticket
 tick_interval
 -tickrate
 Ticks: %d (%d)
+tier_label
 TierList
 tier_number
 TierPageContainer
@@ -31572,7 +31604,6 @@ trusted
 trusted_server
 T`R@y
 T`R@y`
-T`R@y[
 Try changing the number of bones per vertex or the skin weighting, and send Sergiy a repro mesh with this error description.
 Trying to add duplicate decal material %s.
 Trying to change pitch on invalid sound event %s
@@ -31583,8 +31614,8 @@ Trying to play envelope on invalid sound event %s
 Trying to play unknown soundscape %s
 Trying to send message type %u (%s) before GC connection established.  This is guaranteed to fail.
 Try to clear all the debug overlay info
-ts@)hG
-T(sX9
+T`R@yw
+ts@)HG
 Ts"@y	
 Tu&A9
 turbo_mode
@@ -31662,8 +31693,10 @@ txting_type_fail
 txting_type_main
 txting_type_numbers
 txting_type_spacebar
+)	Ty?
 	T@y?
 T	?@y?
+))TyJ
 Type appears to be in generated pool but wasn't 
 	TYPE_BOOL
 TYPE_BYTES
@@ -31708,17 +31741,20 @@ tZP)a	+
 )?)	@u
 	*u~@
 u^[&`
+!	@)U
 %u:%02u:%02u
 \U%08x
 U: %.2f deg
 u64( %lld = 0x%llX )
-u6#9&
+u6#94
 U7r8Ne
 *u,9`%
 u~ 9?
 u9% &
-U@9@3O
+	!U9*
 	!u9i
+	!U9j
+	!U9J
 ]u9n5;> )"
 )UA9J
 u axis
@@ -31921,9 +31957,11 @@ unique_unit_count
 UnitAbility
 UnitAbilityContainer
 UnitAssignment
+unit_cap_cost
 UnitCost
 UnitCost%d
 UnitCostSwitch
+unitCount
 UnitCountDisplay
 Unit_%d
 UnitDamageRecord
@@ -32312,7 +32350,6 @@ v8object
 v8value
 V8@yCx@9A|@9
 v@9hv
-!V9i$
 v@9iv
 v@9iv@9
 ?(-\Va3
@@ -32419,6 +32456,7 @@ ValveLogo
 #Valve_SelectLanguage_Ukrainian
 #Valve_SelectLanguage_Vietnamese
 Val : voiced labialdental fricative
+=VALVt
 v_angle
 vanmgrph
 _V_AppendSlash
@@ -32441,6 +32479,7 @@ V_atoui64
 VAvi001
 v axis
 VB9hV
+vB@9Z
 VBAllocTracker001
 VBaseFileSystem011
 V_BasicHtmlEntityEncode
@@ -32971,7 +33010,6 @@ VPK directory for '%s' corrupt
 VPK signing not implemented
 V_pow
 V_powf
-V-PqM
 V_PrettifyMem
 V_PrettifyNum
 VProcessUtils002
@@ -33239,11 +33277,9 @@ V_wcstoi64
 v\@-x
 V\@-X
 V@yirBy
-)	VyJ
 V@y_! k
 V@y!yv
 v>zlK9T
-!	@)w
 !	@)W
 @W?,}
 W3|Uxa
@@ -33285,6 +33321,7 @@ W6v6@
 w6vF@
 @@w8p
 W8@yYx@9X|@9
+	!W9i
 W9i2X9
 WaitingForAuthorization
 waiting for lock
@@ -33303,6 +33340,7 @@ WakeRecvMsg
 +walk
 walkspeed
 WalkSpeed
+wanted_legendary
 WARNING
 WARNING: BreakFadeEmissive not supported on this entity (%s %s)
 Warning! Can't specify mins/maxs for point entities! (%s)
@@ -33594,7 +33632,7 @@ X7h `7("h7(#p7H
 	X7U	`7
 x7w"@
 x7wB@
-;X9aA
+;X9AA
 X9hnC
 !x9i$
 @x_!9k
@@ -33608,7 +33646,6 @@ Xd@-Z
 xf@)*
 xfF-V+6
 ?xG!$fQ
-_xI#Ey
 XInputPad
 XInputPad SteamPad SteamVRController
 ^xirBy
@@ -33639,61 +33676,57 @@ xzBys
 (%@y-	@
 (	@y)
 )!^y	
-)!_y	
-)!]y	
-)!@y	
+)!\y	
 ))@y,
 )%@y?
-)	^y@
-)	_y	
 )	@y?
 @y`&@
 @y;-@
 @y.=@
 $@y($@-
-*#]y?
 	$@y!
 	%@y)
 		@y_
 `>Y1\
-@y)1Dy
-_y)1@y
+@y)1Gy
+@y)1Ry
+@y)1Vy
 ,y=35
-"@y4B
 	y4xl
-@y)!5
 y6{(x
 _@y?!8k#
 ?@y?!8k#
-y	-%9
+y	-%9H
+!y9j$
 y,@@9m
+y	-%9Z
 !@@ya
 @y)a@
 "@y*A
 y .A8
 Yacht : voiced palatal approximant
-@y)ADy
-@y)aGy
+@y)AEy
 yaJEy
 yaNEy
-@y)aRy
 %@yAt
 Yaw; 
 YawArrow
 yaw_end
 yaw_start
 y axis
-]y)a^y
-@y)a@y
+@y)A[y
+@y)A@y
 :@y`B
 @y))B
-@y)!By
 #@@yc
 YcuP.
+)YCy	
 @y+}E
 YellowBlood
 yellowgreen
 yf?)`
+)YFy	
+:@yh:
 @yh>@
 @yh"@
 (yH*)<
@@ -33739,20 +33772,17 @@ YieldingAcquireLobbyTicket
 yielding_jobs
 yijx?
 {YIN?
-@y)iPy
 @yiRA9
 @yiSA9
 @yISA9
-\y	iux?
+@y)iSy
+@y)ISy
+@y	iux?
 yiV@y?
-_y)i@y
 yi^@y)
 yi^@yj
 yi^@yk
 @yj&@
-)!]yJ
-)!\yJ
-))]yJ
 *-@yJ
 ;@yJeB
 yjiixJ
@@ -33762,18 +33792,19 @@ yjR@y*
 )yjx?
 yjx(ih
 +yjxJ
-)YJyJ
 !@yk}@
 @y_!(k
 @y_!(k!
 @y?!(k@
+@yk!%
 +@y	k@9
-@yka1
 @yK@A9
 >@y?! kC
 @y?! kC
 ,%@yK%@y
+)YKy	
 yk^@yj
+)yKyJ
 ykZ@yI
 %Y-%m-%dT%H:%M:%SZ
 ymh<xoh;xc
@@ -33795,22 +33826,18 @@ You need to name the scheme (%s)!
 youtube_username
 youtubevideoid
 youtube_videoid
-)yOy	
 )!@y =p
-@y)!Py
-@y))Py
-@y)qDy
-@y)qFy
-@y)QFy
-@y)qMy
-@y)QOy
-]y)q^y
-@y)q@y
-@y)qYy
+@y)QGy
+@y)qIy
+@y)QJy
+@y)qKy
+@y)QPy
+)YQy	
 ys@){
 @y)SA9
 ?yt#,*
 Y_txt
+@y)uC
 @yUii
 	(y=up=green, z=forward=blue, x=left=red). 
 yU{(x
@@ -33819,28 +33846,27 @@ yvh<x
 ?#YvwS
 yvx(yhx
 ywi(xI
+)YWyJ
 y*x(+
 Y`x($
 y+xh-
-@y)!Xy
+^y)	_y
+)y]y?
 @y)!]y
+@y)	@y
+#@y)	@y
 	@y-	@y
 y)	@y?
 y	,@y)
+)Y_y	
 @y	y4x`
 @y	y6x
-@y)yC
-@y)yCy
 y*]@yJ
 +Y@yJ
 Yy?!!k
-@y)YQy
 @y	y;x(
-]y)y^y
-@y)!Yy
 YYYY-MM-DD
 YYYY-MM-DD hh:mm:ss
-)YZy?
 !	@)Z
 Z0000
 z	?0e`9
@@ -33871,7 +33897,6 @@ ZA9iZ
 Zap : voiced alveolar fricative
 z axis
 ZB9hZ
-@zBX<
 _ZdaPv
 _ZdlPv
 zDm_NetBoolVariables
@@ -33902,11 +33927,11 @@ _ZN10CVProfNode10GetSubNodeEPKciS1_i
 _ZN10CVProfNode9ExitScopeEv
 ZN11CDAC_UI_Hud15UpdateSynergiesEPK21CMsgPublicPlayerStateS2_E3$_6
 ZN11CDAC_UI_Hud24UpdateSelectedPlayerDataEvE3$_5
-ZN11CDAC_UI_Zoo11OnHudUpdateEvE3$_3
+ZN11CDAC_UI_Zoo11OnHudUpdateEvE3$_5
 ZN12CDACCS_Setup17AdvanceSimulationEvE3$_1
 ZN12CDACCS_Setup21TriggerSynergyEffectsEvE3$_2
-ZN12CDAC_UI_Shop11OnHudUpdateEvE3$_4
-ZN12CDAC_UI_Shop15UpdateSynergiesEvE3$_3
+ZN12CDAC_UI_Shop11OnHudUpdateEvE3$_1
+ZN12CDAC_UI_Shop15UpdateSynergiesEvE3$_0
 ZN12C_EnvCubemap9PreRenderE16CSplitScreenSlotE3$_2
 _ZN12CThreadEvent3SetEv
 _ZN12CThreadEvent5ResetEv

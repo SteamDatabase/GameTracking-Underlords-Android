@@ -63,9 +63,11 @@
 25CFileSystemReloadFileList
 26CDefaultKeyValuesErrorSpew
 26CFileAsyncDirectoryScanJob
+2	A%9
 2ij,xl=
 2+imx
 2_!(k
+2	Q$9s
  [%.3f server clamped to %.3f]
 4hf@9
 4i"J)
@@ -76,7 +78,6 @@
 5ur@y
 6ConVar
 6hb@9
-6hR@y
 6@y?! k
 7hb@9h
 7ib@9
@@ -88,13 +89,13 @@
 9hb@9
 9hf@9(
 9hji8
+@9Hkj
 @9hV@
 9IFileList
 9	ii8(
-@9(kj
+9y6xh
 a2@yh2@y
 Aborting IO request for %s
-Ac9uN
 Adding VPK file: %s
 Add N ms of delay to every low-level read operation, to simulate a slow disk
 _addons
@@ -215,7 +216,7 @@ ConVar(%s) defined with infinite float value (%s)
 CopyAFile: Cannot copy into a VPK or UGC file '%s'
 CopyAFile: dest '%s' must be absolute path.
 CopyAFile: Failed to copy file %s.
-CPackedStore::CPackedStore(const char *, IFileSystem *, int, CPackedStore *, const char *)
+CPackedStore::CPackedStore(const char *, IFileSystem *, int, CPackedStore *, const char *, CUtlStringToken)
 crc32
 CreateFile
 CreateInterface
@@ -391,6 +392,7 @@ HIGHDPI
 HostStateMgr001
 hZC)	
 i6@yh
+i78[>
 ?i(8?i*x?i+
 IAsyncRequestBase *CAsyncRequestBase::GetInterfaceBase()
 ib@9`
@@ -414,6 +416,7 @@ I CUtlRBTree<sort_search_paths_t, unsigned short, bool (*)(const sort_search_pat
 I CUtlRBTree<void *, int, bool (*)(void *const &, void *const &), CUtlMemory<UtlRBTreeNode_t<void *, int>, int> >::NewNode(const T *) [T = void *, I = int, L = bool (*)(void *const &, void *const &), M = CUtlMemory<UtlRBTreeNode_t<void *, int>, int>]
 Iii8*
 %i %i %i %i
+Ii+x!
 ijh8?)
 *ij,x+
 *ijx_
@@ -440,12 +443,14 @@ Invalid async read of %s
 Invalid Path
 IOJob
 IQuickTime001
+\i)x)	
 *i.xi>@yj:
-i)x_S
 I	@y(
 i>@yh
 j58hf@9(
-J686I
+J68xA
+ji,x!
+ji)x)	
 j!JJ+
 j!JJK
 !JJK|
@@ -499,6 +504,7 @@ LOWVIOLENCE
 lseek
 lstat
 %ls [wstring, len = %d]
+Lykx?
 MapListService_001
 MATCHFRAMEWORK_001
 materials/overviews/
@@ -773,6 +779,7 @@ Tried to close unknown file pointer %p
 Tried to read %i bytes from unknown file pointer %p
 Tried to Seek NULL file handle!
 Tried to write %i bytes from unknown file pointer %p
+T+yA9
  - %u
 u64( %lld = 0x%llX )
 Unable to determine async job type (%d)
@@ -931,13 +938,17 @@ WINXP
 WorkshopSetup001
 WorldRendererBuilderMgr001
 WorldRendererMgr001
+xi*xJ	
 XZP%c %d
+@y9X@
 yhj,x
 yhV@ytZ
 yh"@y
 @y_!(k!
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 ?y(xi
+@y	y4x
+@y)ys
 _Z14V_stristr_fastPKcS0_
 _Z17LoggingSystem_Logi17LoggingSeverity_tRK14LeafCodeInfo_tPKcz
 _Z6DevMsgPKcz
@@ -978,6 +989,7 @@ _ZN13CBufferString9SetLengthEibPi
 _ZN13CThreadRWLock11UnlockWriteEv
 _ZN13CThreadRWLock11WaitForReadEv
 _ZN13CThreadRWLock12LockForWriteEv
+_ZN16CThreadSemaphore7ReleaseEiPi
 _ZN16CThreadSemaphoreD1Ev
 _ZN17CThreadSpinRWLock10UnlockReadEv
 _ZN17CThreadSpinRWLock11LockForReadEv
@@ -988,6 +1000,7 @@ _ZN17CThreadSyncObjectD2Ev
 _ZN21CThreadMultiWaitEvent3SetEv
 _ZN22CThreadRWLock_FastRead20UnlockReadAccountingEj
 _ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEj
+_ZN22CThreadRWLock_FastRead30HandleFirstWriteLockTransitionEv
 _ZN22CThreadRWLock_FastReadC1Ev
 _ZN7CThread15IsThreadRunningEv
 _ZN7CThread21WaitForCreateCompleteEP12CThreadEvent
