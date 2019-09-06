@@ -171,9 +171,6 @@ $0 to $1,
 12IVoiceServer
 12IVoiceTarget
 12IVProfExport
-	1390H
-	139BI
-	139cK
 13CBoolProperty
 13CCallbackBase
 13CCallbackImplILi128EE
@@ -614,8 +611,7 @@ $0 to $1,
 17IEngineServiceMgr
 17IGameEventWatcher
 180.0
-	189?
-	189J
+(189q
 18CBaseEngineServiceI12IToolServiceE
 18CBaseEngineServiceI13IInputServiceE
 18CBaseEngineServiceI13ISoundServiceE
@@ -664,7 +660,7 @@ $0 to $1,
 18MenuItemCheckImage
 18ToolTraceRayResult
 -1@9_
-	1&9[
+	1#9,
 !)19BJRZcks{
 19C2S_CONNECT_Message
 19CBidirMsg_RelayInfo
@@ -689,8 +685,7 @@ $0 to $1,
 19CTier2AppSystemDict
 19CVariantSaveDataOps
 19CVConCommandMessage
-	1@9i
-	1[9I
+	1!9e
 19IConsoleDisplayFunc
 19IDebugVisualizerMgr
 19IKeyValuesErrorSpew
@@ -700,13 +695,15 @@ $0 to $1,
 1@9M5
 19NetMessagePacketEnd
 19RestartMapToolEvent
-	1&9Y
+	1	9(X
+	1a9)
 !1AQaq
 !>@=1B
 1bQJ1~
 1DBlend
     1 = force cl_predict to 1
 1hqx2hrx?
+	1I9i
 1@)k5E
    -1 = let clients set cl_predict to anything
 1 = Pause the game when pressing ~ to open the console. CTRL+~ opens the console without pause.
@@ -720,6 +717,8 @@ $0 to $1,
 /1V?OR
  1: write to NULL
 *1x0x
+	1X9)
+	1Z9i
 !2@=!
 	2*	@
 	2		@
@@ -950,6 +949,7 @@ $0 to $1,
 28INetworkStringTableContainer
 2_!8k
 2@9()
+2	!$9?
 29CBaseActionCDTrackStartDialog
 29CBaseActionPlayCommandsDialog
 29CBaseActionStopPlaybackDialog
@@ -970,7 +970,7 @@ $0 to $1,
 29IToolGameSimulationDispatcher
 2,	@9L
 29ToolEvent_GetEntityInfoResult
-2	a!9H)
+2	A%9
 2	a@9Ia
 2	AA9
 2Ay)	
@@ -990,10 +990,11 @@ $0 to $1,
 2Gio8
 2	h(8
 2h"	9
+2h"99
 2hb@9H
 2hBK9H
-2HC.9
 2hj)8
+2hj)8("
 2hJ	9(
 2hr	9`
 2hR	9
@@ -1006,6 +1007,7 @@ $0 to $1,
 2Ii(8h
 2ii*x
 2ij(8
+2ij(83%
 2-ik8k
 2+imx
 2iR	9
@@ -1013,12 +1015,13 @@ $0 to $1,
 2j"	9I
 2j"@9)p
 2?".k
-2?k78
-2_k88
-2?k88
+2?k78&
+2?k88%
+2_k88tu
 2kii8l}C
 2Kkj8k
 2L%@x+
+#2)N&
 2 .ProtoFlattenedSerializerField_t"!
 2 - resize down
 2	u	9
@@ -1083,10 +1086,7 @@ $0 to $1,
 39CBaseClientSpawnGroupCreatePrerequisite
 39CBaseServerSpawnGroupCreatePrerequisite
 39CFlattenedSerializerChangesSpewListener
-	-39cI
 39CNetworkServerSpawnGroup_WaitForClients
-	-39QH
-	%39z
 3 - bottom-right
 #3CScs
         %3d %3d %3d %3d %3d %3d %3d %3d
@@ -1115,7 +1115,6 @@ $0 to $1,
 48CBidirMsg_RelayPacket_SignedDestinationAddress_t
 48CNetworkClientSpawnGroup_WaitForChildSpawnGroups
 48CNetworkServerSpawnGroup_WaitForChildSpawnGroups
-	-49`?
 4		@9
 49CNetworkClientSpawnGroup_LoadEntitiesPrerequisite
 49CNetworkClientSpawnGroup_LoadSaveGamePrerequisite
@@ -1175,8 +1174,6 @@ $4DTdt
 %5.1f,
 524288
 %5.2f %5.2f %5.2f %7i %5i %7.2f %7i
-	539BK
-	539!I
 53CNetworkClientSpawnGroup_AllocateEntitiesPrerequisite
 53CNetworkClientSpawnGroup_WaitForAssetLoadPrerequisite
 53CNetworkServerSpawnGroup_AllocateEntitiesPrerequisite
@@ -1184,14 +1181,11 @@ $4DTdt
 54q`	
 55CNetworkClientSpawnGroup_AllocateSpawnGroupPrerequisite
 &'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz
-	589^6
-	589i7
 58jv@
 ,5@9_
 )5@9)}
 	5@9)
-	5&9:
-	5&98
+	5	97W
 59CNetworkClientSpawnGroup_WaitForOwnerSpawnGroupPrerequisite
 59CNetworkServerSpawnGroup_WaitForOwnerSpawnGroupPrerequisite
 *5@9J
@@ -1217,7 +1211,6 @@ $4DTdt
 5IVEfx
 5i.@y
 5(k|8
-	5s9i
 ?6`*@
 ?6	(@
 /6`>@
@@ -1231,9 +1224,6 @@ $4DTdt
 60CNetworkClientSpawnGroup_WaitForManualCompletionPrerequisite
 %6.2f %6.2f %6.2f %.3f %.3f %.3f
 64-bit
-	)69~;
-	%69_
-	!69i;
  6`"A
 (6`&A
  6arBy
@@ -1425,12 +1415,7 @@ _6inA9
 87`f@
 :,@8[,@8
 %8.8s: %-5d entries, '%s', ...
-	%892
-	!89<8
-	-89I6
-	)89Q8
 %8@9R
-	-89T7
 8b  16-May-2010
 8CFmtStrNILi1024ELb0EE
 8CFmtStrNILi1024ELb1EE
@@ -1453,8 +1438,8 @@ _8"h 8
 )8hv@
 *8hv@
 (8HXhx
-@8i/@88
 @8i/@8J
+@8i/@8X
 @8+ih8
 @8,ij8_}
 @8*ij8
@@ -1482,14 +1467,12 @@ _=8q	)
 _8X,@8
 8x9,7
 _8y,@8
- @9)$
  @9	$
 --@9_
 -!@9_
 -)@9_
 -%@9_
 -	@9_
-:9		@
 .@9)	
 (@@9	
 (@@9		
@@ -1504,26 +1487,27 @@ _8y,@8
 @9*	@
 @9+	@
 $@9	(
-*(!!9@
-#)9	+
-	-&9|
-	!^9	
+#)9)+
+	-_9)
+	!#9"
 	)@9)
 	)@9*
 	@9*]
+	%_9)
 ,@9	0
 @90	@9
 9	0@9i
 @91#@92
+	)!92
 92ji8R
 @92yr
 @9>3@9*
 9,5@8K
 	@9*6B9
 @9(	 7
+	)#97
 @9;7@9<
 9.@8 
-	989!7
 @9*-@8K
 (`@9	`@9
 )9@9)}
@@ -1535,12 +1519,14 @@ $@9	(
 @9+	@9
 @9+	@9)
 	9@9)
+	9	9,
 9,	@9)
 9*	@9)
 9*	@9*
 9+	@9
 @9/'@90
 . @9/$@90(@918@9.}
+	9_9i
 9	!@9i
 9	%@9i
  @9	$@9J
@@ -1551,9 +1537,10 @@ $@9	(
 @9a2@
 @9-b@
 @9*b@
-	%-9c
+	=#9c
 @9)+C
 @9	}C
+	9c9i
 	9C%A
 9CBlackBox
 9CCallbackI13CSteam3Client17LowBatteryPower_tLb0EE
@@ -1573,7 +1560,6 @@ $@9	(
 9	D@8
 9*E@8?
 @9E-@9U
-	9f9i
 @9h*@
 "@9H	
 (@@9H
@@ -1612,7 +1598,8 @@ $@9	(
 9hZB9
 ) @9i
 @9i&@
-	}~9i
+	-_9i
+ @9I$
 @9I	@
 "@9i"@9
 9IBlackBox
@@ -1649,7 +1636,6 @@ $@9	(
 @9jij8JE!6)
 @9jJ@
 @9jjh8*
-		 9jp
 @9JU	
 @9k&@
 !!@9K
@@ -1663,11 +1649,12 @@ $@9	(
 9kj(8|
 9Kkj8k
 9Kkj8k}
+	=	9KW
 @9L	@9l
 @9L=@9M
 9l"A9
 @9l}C
-	!-9m
+	-	9LX
 !@9M%
 )@9M-
 %@9M)
@@ -1682,7 +1669,9 @@ $@9	(
 @9n	@9o
 @9O	@9P
 @9p	@9
+	)	9pX
 @9 q@
+	-#9Q
  9(QD
 &,@9R
 &$@9R
@@ -1690,24 +1679,22 @@ $@9	(
 % @9R
 %(@9R
 @9R1@9D
-	9s9i
 9	S)M*
 @9T|@
 @9T)@9K
 (@@9tB
-	-@9u
 @9U|@
 @9V%@9W
 @9-{vx
 @9){vxl
 /9W?O
 /9W?OZ
-	9x9i
+			9xY
 @9+	@yHA
 @9+	@yHM
 9y*xi
 @9 	@z
-	-&9z
+	%#9z7
 'A)	}	
 #@)`~A
 A-!(!
@@ -1715,12 +1702,12 @@ A)`~@
 a1 "%i"
 a2 "%i"
 a2@yh2@y
+	a39m
 a8#%D
 _A8qh
-!a9)+
-(!a9*+
+*(a'9@
 +a@9?
-	a[9	
+	a>9<<
 	!A9?
 		A9?
 		A9	
@@ -1729,12 +1716,17 @@ _A8qh
 a@9+a
 a@9	a
 A9)aG
+	A#9bv
 		A9h
 	A9h&A
+	-a9i
+	a<9i?
 	a@9i
 ^A9i^
 "A9i"
 *	A9i
+	A^9i
+	A_9i
 	A@9i
 A9i>@
 	A@9I
@@ -1747,7 +1739,9 @@ A9|J@
 +	A9K
 A9Kik
 +	A9lC
+	A!9M4
 ?A9tJ@
+	A&9Up
 A-'@A-
 AA9(	
 AA9(	@
@@ -1794,6 +1788,7 @@ active_spawngroup_handle
 ACT_NEUTRAL_REF_POSE
     Actual    : 
   Actual   : 
+	ad9	
 -adapter
 Adapter: %d
 AddAllocatedMessage
@@ -1852,6 +1847,7 @@ AddUInt64
 Adobe APP14 marker: version %d, flags 0x%04x 0x%04x, transform %d
 !	A)Dr
 AE- "#
+	Ae9?
 AE_ACTION_SET_TURN_RATE_SCALE
 AE_BLIND_ZOMBIE_SNIFF
 AE_CL_ADD_PARTICLE_EFFECT_CP
@@ -1882,31 +1878,27 @@ AE_VORTIGAUNT_ZAP_POWERUP
 AE_VORTIGAUNT_ZAP_SHOOT
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
-	Af9i
 A file with this name is already in the pool.
 After selecting and moving a panel Ctrl-z will undo the move.
 after solve err=%f
 After this many seconds without a message from fully connected client, the client is dropped
 After this many seconds without receiving a packet from the server, the client will disconnect itself
-	AG9i
+	AG9	
+ag9I+
+(ag9J+
 A game file appears to be missing or corrupted.  In the Steam client go to the game's properties.  In the 'Local Files' tab select 'Verify Integrity of Game Cache' to have Steam double-check the game's installation.
 A-gBA-
 Agg data %d: %p (%d parts, crc 0x%08X)
 aggregate_value
-	AH9i
 <a href=
 a "%i"
 A!;I2
-	AI9i
 #A)iBB
 ai_model_info
 .A)iN@
 AIWalkable
 A	@}J!
-	AJ9i
 a.JY .I
-	AK9i
-	AL9i
 alias
 Alias a command.
 ALIGN_TYPE is wrong, please fix
@@ -1998,7 +1990,6 @@ Annotation
 ", another member of oneof "
 Anti-aliasing: 
 a numbered reference must not be zero
-	AP9?
 App active: %s, %dms inactive sleep
 .app/Contents/MacOS
 #AppFramework_InvalidLocalFiles
@@ -2134,7 +2125,6 @@ A{"xB
 Ax_! k
 A@yi*@
 A)`z@
-)AZ9?
 AZUy!
 =	)B)
 	*`"B
@@ -2148,7 +2138,6 @@ B@9	A
 ^B9h^
 b@9hb
 b"@9i
-	%B9I
 b@9ib
 bA9hb
 BA9hB
@@ -2236,10 +2225,10 @@ BasePhysicsShape
 Base Spring; 
 	"$basetexture"	"%s%c%s"
 battery_saver
-Battery saver mode. 0=off, 1=on
 bB9hb
 BB9hB
 BB9hj:8
+bBA9!
 bB@yG
 BC6h compression not supported on this target (windows only).
 BC7 compression not supported on this target (windows only).
@@ -2494,10 +2483,11 @@ C2S_CONNECTION_Message
 C2S_CONNECT_Message
 C-!8"
 (c@9+
-_C.9(
 C9an@
 C9fj@
  c@9!g@9"
+	=c9i
+	-c9i
 cA9s~
 cable
 cache/DownloadCache.db
@@ -2632,6 +2622,7 @@ CBidirMsg_RebroadcastSource
 CBidirMsg_RelayInfo
 CBidirMsg_RelayPacket
 CBitmapImagePanel
+cBL9"
 CBoneConstraintBase
 CBoneConstraintPoseSpaceBone
 CBoneConstraintPoseSpaceBone::Input_t
@@ -2786,8 +2777,10 @@ CFinalizeConnectionPrerequisite
 CFingerBone
 CFingerChain
 CFingerSource
+cFL9"
 CFootDefinition
 CFrameSnapshot CUtlMemoryPoolMT
+c^Fy"
 CGameClientConnectPrerequisite
 CGameEventSystem::SendRebroadcastMessage doesn't support more than %llu clients!
 .CGameInfo"
@@ -3423,6 +3416,7 @@ CNetworkStringTableContainer::DirectUpdate
 CNetworkStringTableContainer::WriteUpdateMessage
 CNetworkStringTableItem::SetUserData(%s) tried to write userdata of %d bytes, max size is %d
 CNetworkVarChainer
+cNGy"
 CNonFocusableMenu
 \C not allowed in lookbehind assertion
 cntrl
@@ -3918,8 +3912,10 @@ D24FS8
 D24X4S4
 D24X8
 D24X8_SHADOW
+d2@y	
+d3@y	
 *-D),5E)_
-d6@yc
+d6@yC
 	D@8!
 D@8)%
 	D@8)m
@@ -4126,6 +4122,7 @@ DeviceID
 DevMsg
 %d(%f):  
 %d,%f,%f,%f,%f,%f
+DG-*	
 %d_hidden
     [%d: huff+mtf 
 DIALOG_ASKCONNECT
@@ -4296,6 +4293,15 @@ dynamic_interaction
 .dynstr
 .dynsym
 E-!("
+	e39c
+	!e9	
+	e<9_
+	e>92
+	e99z
+	E!9C
+	E&9K
+	E'9v
+	E#9X
  *Each frame will render %d times*
 echoln
 Echo log information to the console.
@@ -4310,14 +4316,13 @@ editable
 EditMenu
 Edit %s Action
 E-evA
-	Ef9i
 effect
   effect %d, color1(%d,%d,%d,%d), color2(%d,%d,%d,%d)
 , efficiency class %lld
-	eG9)
   eg: 'demo_goto 6666' or 'demo_gototick 25%%' or 'demo_gototick 42min'
 e.g.: playdemo replays/foo jpg wav framerate 30
 e.g.:  startmovie testmovie jpg wav jpeg_qality 75 framerate 30
+	eH9I
 ehandle
 .eh_frame
 .eh_frame_hdr
@@ -4612,7 +4617,7 @@ EventSystem001
 event_t
 Evictions/m
 Ex?!4k
-	Ex9i
+	EX9?
 Example: blink r_ssao           - toggles between 0 and 1 every second
 Exclusive Fullscreen
 exec_async
@@ -4717,8 +4722,6 @@ extreme cHRM chunk cannot be converted to tristimulus values
 F-!($
 F-%:%
 *-F),5G)_
-	=f9i
-	]f9i
 fA9hf
 FA9hF
 FA9iF
@@ -4809,6 +4812,7 @@ fgcolor
 fgetc
 fg_image
 F*%h3x%hgx
+F-H]E
 F*&h%x%hsx
 F*%h'x%hsx
 field
@@ -5234,7 +5238,6 @@ g6i^@
 G6iBA9
 G6v.@
 (g@9.
-	}G9I
 %g: AdvanceTime ticks this frame %d, sim remain: %g
 -game
 /game/
@@ -5594,7 +5597,6 @@ h"@9(
 h"@9)
 h"@9)$
 h"@9	
-h"@9	$
 `H9)}
 ?h98a
 h"	9a
@@ -5607,7 +5609,8 @@ h*\9h
 *h"@9H
 h.@9H
 h"@9i
-h"@9I
+h"@9I$
+	]H9i
 h:	9i>	9
 H9)yx
 h"A9)
@@ -5802,7 +5805,7 @@ HParticleSystemDefinition
 HPostProcessing
 HRenderTexture
 hrEy)
-hrEy	#
+hrEy)#
 hrEyi
 hrEyu
 hrf9(
@@ -5846,7 +5849,6 @@ i6@yh
 i78w"B
 i7xh6@
 _i(8+
-?i(8-
 	*	i8
 	I*8)
 i)8a^A
@@ -5862,17 +5864,25 @@ i)8i&
 i`8%i`8
 i)8i&W
 ?i(8?i*x?i+
+?i(8j
 i)8j&W
 i*8j&W
 i(8m&W
 ?i(8v
 i*8?y*xJ
 *i"@9
+	i<9~?
 i"	9@
+	I!9b4
 I9`BA
 I9)%D
 )I@9I
+	-I9I
+	)I9I
 i"@9J
+	I&9jp
+	i>9Q<
+	I#9wv
 IAppSystem *CAppSystemDict::AddSystem(const char *, const char *, ErrorResponse_t)
 IAppSystem *CAppSystemDict::AddSystem(CreateInterfaceFn, const char *)
 IAppSystem *CAppSystemDict::AddSystem(IAppSystem *, const char *)
@@ -5998,6 +6008,8 @@ If the clock offset is less than this amount (in milliseconds), then no clock co
 * If the error can be repeatably reproduced, this is a bug in
 * If the error cannot be reproduced, and/or happens at different
 ". If this is intended, set 'option allow_alias = true;' to the enum definition.
+If true we double framerate during touch drag operations.
+If true we double framerate during touch drag operations when charging or charged.
 If true when log when a query is blocked (can cause very large log files)
 IgnoreScheme
 	"$ignorez" "1"
@@ -6067,12 +6079,12 @@ Ii+x!
 	iix?!:k`
 i"@)j
 )ij8	
+ij(8@
 )Ij8?
 Ij8)	@
 ij8)ij8*
 *ij8+ik8,il8-im8.in8/io80ip8(ih8
 )Ij8j
-ij(8k%
 ij8nio8
 -ij8nkj8J
 i"J9j
@@ -6485,12 +6497,13 @@ j48	C
 j48h"
 j48t^@
 j4xH;@
-j58H%
+j58h%
 j58hf@9(
 j58"l
 j68($
+j68H$
 j68u"@
-j68X"
+j68x"
 j7Ayh3Ay)	
 j)8hjj
 j(8(Z@
@@ -6504,6 +6517,7 @@ J	9hB	9
 j	@9I
 J!@9jB
 J9tB	
+	*JA#
 ja8B(
 J]A9_
 jA9hj
@@ -6629,14 +6643,15 @@ K1@yk
 *k2@y
 ?k58D
 K5@yk
-k68oU
-*?k781N
+k68DA
+*?k78
 ?k78h
+k78O-
 ?k)8(
 _k88?
 ?k88_
+_k88O
 ?k88w
-_k88z1
 (k;8H
 k(8vV@
 K!@9+!
@@ -6840,7 +6855,6 @@ kn1V?OK
 :(knN
 Known by handlers: 
 Known Peer State "%s"
-	*kQ0
 Kq@yk
 KQ@yk
 K)T9J!P9j
@@ -6854,7 +6868,6 @@ kv 0x%p Release refcount == %d
 kv3format_manager.cpp
 KV3 load transfer failed: %s
 KV Conditional Evaluation Error
-	k!x(
 K%@xl}
 kx`xj}
 k	@y)
@@ -6874,6 +6887,7 @@ L %02i/%02i/%04i - %02i:%02i:%02i: %s
 l4d360uischeme
 l	@9,
 "L9`2
+	}l9i
 l	@9J
 la@9L	
 L	A9mC
@@ -7157,10 +7171,20 @@ LrwcE
 lseek
 %ls [wstring, len = %d]
 [L:%u:%u]
-	M&9b
-	M&9d
+	m,9|
+	m99cM
+	m99QL
+	m:9`C
+	M'9hk
+	m]9i
 m%@9i)
-	m>9z
+	m>9I:
+	M'9Ml
+	M&9oo
+	M&9"p
+	m>9T;
+	m,9z
+	Ma9I
 m	A9j"
 Machine
 machine_convars
@@ -7500,6 +7524,7 @@ Message type "
 method
 MethodDescriptorProto
 MethodOptions
+	mF9u
 m_Falloff
 m_fDataObjectTypes
 m_fForceAmount
@@ -7574,7 +7599,6 @@ m_flValue
 m_flWeight
 m_ForceGenerators
 m_FullSendTables
-	mG9I
 *mGxJ
 m_hActivator
 m_hBuffer
@@ -7589,7 +7613,6 @@ Mhk8Nhl8
 m_hParentSpawnGroup != m_hSpawnGroupHandle
 m_hSnapshot
 m_hTarget
-	Mi9i
 m_iEventListCount
 Migrating HW specific configuration files.
 Migrating old convar '%s' (value='%s') in file '%s' to new configuration system
@@ -7648,7 +7671,6 @@ m_JointName
 m_Joints
 mkdir
 @mk%@y
-	ml9i
 m_lightCookie
 m_LoopState
 -=M]m}
@@ -7755,6 +7777,10 @@ m_nVectorComponent
 m_nVertexCount
 MOBILE
 MobileClientVersion
+mobile_fps_increase_during_charging
+mobile_fps_increase_during_touch
+mobile_fps_limit
+Mobile FPS limit - 15, 30, 60
 Mod doesn't support SourceTV. No director module found.
 Model combiner: too many vertex sets (%d)! Clamping to %d
 ModelCompile/UseShadowFastPathHeuristic
@@ -7952,9 +7978,9 @@ m_vTintColor
 m_vTipOffset
 m_vUpLS
 m_vUpVector
-	mW9)
 m_worldGroupId
 m_wristBones
+	mz9i
 "N(  
 #N)	}	
 N}[ .=
@@ -8045,6 +8071,8 @@ N6snappy6SourceE
 (_N8H
 !n9[ .
 [ n9+a
+	!N9I
+	%N9I
 ,.n*a
 n	A9-
 nA9hn
@@ -8508,6 +8536,7 @@ o6jN@
 O	@9P5@9S
 )o))a
 objc_class_prefix
+OBSOLETE replaced by mobile_fps_* - Battery saver mode. 0=off, 1=on
 Obtained EMS handle %u
 Obtained XMS handle %u
 octal value is greater than \377 (not in UTF-8 mode)
@@ -8908,6 +8937,7 @@ Plat_GetMonitorResolution
 Plat_GetOSType
 Plat_GetPagedPoolInfo
 Plat_GetPeakRSS
+Plat_GetPowerInfo
 Plat_GetSteamLoginWithAccessCode
 Plat_GetThreadIndex
 Plat_GetTimeString
@@ -9259,10 +9289,19 @@ PVS cluster %d
 pvs.cpp
 PVS origin %s
 py_generic_services
-	Q&9A
-	Q&9C
+	q>9?
+	q,9[
+	q990L
+	q99BM
+	q99cO
+	Q'9Gk
+	Q\9i
+	q>9J
 *Q@9j
-	q>9Y
+	Q'9,l
+	Q&9No
+	q,9Y
+	qa9I
 Q(aNf(!
 qangle
 QAngle
@@ -9271,9 +9310,10 @@ QAngle-world
 q(	AzK
 QB)5}@
 	QB9i
-	QC9I
 )qE9?
 QE@yk
+	Qf9)
+	qF9i
 *	qG9)
 	qG9)
 q?h(8
@@ -9752,9 +9792,9 @@ RIO_WILL_RELAY
 Rjjh8hB
 rJMJJ
 RJ	* &v
-R?k78
+R?k78\G
+R?k)8
 R(k)8
-R?k)8Mh
 R(kh8
 R(kh8h
 R(kh8H
@@ -9800,7 +9840,7 @@ r_stereo_eye_separation
 r_stereo_mode_anaglyph
 r_stereo_mode_crossed
 r_stereo_mode_parallel
-Rtj(8h
+Rtj(8
 r_toggleviewportsize
 r_translucent
 rt+rld
@@ -9868,7 +9908,6 @@ S3: Duplicate client connection: UserID: %x SteamID %s
 S3,	S48
 S)5K*j
 %s = %6d (%6d:%6d)
-	=s9i
 %s. Ack, Net Buffer overflowed.
 %s:  adding %d:'%s' (%d total) userdata %d
 -safe_mode
@@ -10751,7 +10790,7 @@ ss_remove %d
 ss_voice_hearpartner
 ss_waitingforgamesessionmanifest
 %s:  SyncUnloadSpawnGroup shutdown/destroy...
-=	St$
+=	St(
 __stack_chk_fail
 Stack depth limit hit (%d)
 stackstats_dump 
@@ -11257,7 +11296,6 @@ T#$@9D
 T#$@9D(
 T#,@9D0
 T#\@9D0
-	-t9i
 T*9	S
 T	/A)
 T	a@9
@@ -11582,7 +11620,7 @@ TizEyJ
 Tj2@9j
 Tj2B9)
 Tj6@y_! k
-tj(8{
+tj(8 
 T`"J9
 Tj"@9J
 TjkA9k'@
@@ -11862,16 +11900,18 @@ T"zrx
 \U%08x
 u64( %lld = 0x%llX )
 )U7O{
-	U&9 
-	U&9"
-	u>98
-	u~9i
+	u>9^:
+	u,9:
+	u,98
+	u99BO
+	u99!M
+	u>9i;
+	U\9i
+	U'9%k
 %u CPU%s
 %u[%d]
 udp/ip   : %s:%i
 udp_port
-	Uf9i
-	uG9I
 -uidev
 UILanguage
 uint16
@@ -12154,8 +12194,8 @@ utlstringtoken
 [U:%u:%u:%u]
 UVLX8888
 UVWQ8888
-	uW9)
 u[|)x_})`
+	uy9i
 v8array
 v8callback
 v8object
@@ -12697,8 +12737,6 @@ w6hZB9	2
 w6if@
 W6if@
 W6ijA9
-	-W9i
-	}W9i
 waiting
 waiting for first spawn group
 waiting for IsServerRunning()
@@ -12880,6 +12918,9 @@ Y80ijx
 #Y80ijx
 Y8Qikx
 #Y8Qikx
+	y>9!;
+	}y9i
+	y~9i
 @y?!9k
 y+	@9km
 Yaw; 
@@ -12897,7 +12938,6 @@ y#	@=c
 yC	@}c
 @y+}E
 y "%f"
-	yG9I
 #@yh^
 yh2@y
 %@y!ha
@@ -12944,6 +12984,7 @@ yj.@yJ
 @yK	@y
 yk^@yj
 ykZ@yI
+	yl9i
 Y ng*a
 yNs*!
 Y nsZ n
@@ -12957,7 +12998,6 @@ Your current chat group is "%s"
 @y)QIy
 y(qSy
 yuJ	9(a@
-	yW9i
 @y	WDy
 Y`x($
 (y{x7
@@ -12968,6 +13008,7 @@ y	,@y)
 .@y)Y@
 @y	y5x
 @y	y6x
+	yy9i
 _Z10DevWarningPKcz
 _Z11ConColorMsgRK5ColorPKcz
 _Z13V_SplitStringPKcS0_R10CUtlVectorIPc10CUtlMemoryIS2_iEE
@@ -12980,6 +13021,7 @@ _Z6ConMsgPKcz
 _Z6DevMsgPKcz
 #Z80ijx
 Z*=@8H
+	-Z9i
 #@)`zA
 ZA9iZ
 ZB9hZ

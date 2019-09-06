@@ -30,11 +30,9 @@
 !~@( 
 !*,=@
 !	@-#	@
-!	@)`\
-!	@)<^
-!	@):\
-!	@)"_
-!	@)*_
+!	@)<:
+!	@)";
+!	@)*;
 ?)>>!;/
 ?}@=	
 '":|;
@@ -74,7 +72,6 @@
 @-%	@
 $.!("
 $@)#@@)
-*-@)! 
 *-@))	@
 *!@-)	@
 *!@))	@
@@ -154,7 +151,6 @@ $0$1$2 $3 = $4
 .>()09
 	0@9?
 >()09,)G>r
-0A9K*
 0~B8 
 @0bDG
 0CClientMsg_WorldUIControllerHasPanelChangedEvent
@@ -946,6 +942,7 @@ $0 to $1,
 16CModifierFactoryI28CDAC_Modifier_Synergy_SavageE
 16CModifierFactoryI28CDAC_Modifier_Synergy_ShamanE
 16CModifierFactoryI28CDAC_Modifier_TrollBonusBashE
+16CModifierFactoryI29CDAC_Modifier_ArcWarden_CloneE
 16CModifierFactoryI29CDAC_Modifier_ForceStaff_PushE
 16CModifierFactoryI29CDAC_Modifier_HealingAura_PFXE
 16CModifierFactoryI29CDAC_Modifier_Lich_Mage_BonusE
@@ -1438,8 +1435,8 @@ $0 to $1,
 18TEFizz_GameEvent_t
 18ToolTraceRayResult
 	1/9(}
+1*9(~
 1960/00/00
-	1*9_A*9
 19CAI_ChangeHintGroup
 19CAmmoDefInitializer
 19CAttributeContainer
@@ -1714,9 +1711,7 @@ $0 to $1,
 20TESparks_GameEvent_t
 20ToolTraceRayResult_t
 20TransitioningLayer_t
-2	119
-2	1>9
-2	1,9(~
+2*119
 21CAnimGraphTraceFilter
 21CBaseAnimatingOverlay
 21CBaseAttributableItem
@@ -2585,7 +2580,6 @@ $0 to $1,
 27s@y
 27TEArmorRicochet_GameEvent_t
 	2 8 
-	2!8$
 28CAnimGraphNetworkedVariables
 28CBoneConstraintPoseSpaceBone
 28CCleanupDefaultRelationships
@@ -2684,10 +2678,7 @@ $0 to $1,
 28TEProjectedDecal_GameEvent_t
 28TEShatterSurface_GameEvent_t
 28VPhysicsCollisionAttribute_t
-2	!=9
-2	!$9`%
-2	!#9
-29_!29
+2	!-9
 29CBodyComponentBaseModelEntity
 29CBoneConstraintPoseSpaceMorph
 29CCLCMsg_SplitPlayerDisconnect
@@ -2700,6 +2691,7 @@ $0 to $1,
 29CDAC_Ability_Tusk_WalrusPunch
 29CDAC_Clockwerk_BatteryAssault
 29CDAC_Gyrocopter_Deadeye_Bonus
+29CDAC_Modifier_ArcWarden_Clone
 29CDAC_Modifier_ForceStaff_Push
 29CDAC_Modifier_HealingAura_PFX
 29CDAC_Modifier_Lich_Mage_Bonus
@@ -2754,8 +2746,6 @@ $0 to $1,
 2_!9k
 2?!9k
 2?!9k`
-2	!=9n
-2	!#9n
 2*9	S)!@
 2	9	S
 2(9	SHM(
@@ -2763,10 +2753,14 @@ $0 to $1,
 2	9	S)O)
 2	9	S	O)
 29ToolEvent_GetEntityInfoResult
-2	A79
+2	a=9
+2	a$9@%
+2	a#9
 2	A 9
 2A9i2
 2	a@9Ia
+2	a=9n
+2	a#9n
 2	A 9o
 2	AA9
 2A.CWorkshop_PopulateItemDescriptions_Request.SingleItemDescription"F
@@ -2913,12 +2907,15 @@ $0 to $1,
 2h&(9T
 2hb59
 2h"B9
+2hB!9
 2hF 9
 2hf99
+2hF 9hN
 2hj+9
 2hjh8
 	2hN	
 2hr99
+2hR 9i
 2h;	SHO(
 2h^@y
 2h>@y
@@ -2969,8 +2966,10 @@ $0 to $1,
 2ninx
 2njj8l
 }2'@+P
-	2!P/
 2 .ProtoFlattenedSerializerField_t"!
+2	q19h}
+2	q>9
+2	q,9
 2	q@y?
 	2R*3
 2) Red  : %i
@@ -2986,7 +2985,7 @@ $0 to $1,
 2*y7xi"@
 2@y"!A
 2@y)]C
-2@yj#
+2@yJ#
 2*y(x	
 300000
 30000.0
@@ -3577,7 +3576,7 @@ $0 to $1,
 =3PF-5XG-
 3.t8!
 3X@-7
-!	@)4^
+!	@)4:
 4('@)*
 4(0@9
 40CColorCorrectionMaterialOverrideModifier
@@ -3904,6 +3903,7 @@ $0 to $1,
 	5@y?!"k
 _6`:@
 ;*@'6
+!	@)|6
 ?6`*@
 ?6	`@
 ?6	<@
@@ -4011,6 +4011,7 @@ _6	D@
 6h*B9	
 6h&B9
 6h&B9	
+6hB`9
 6hB@9
 6h"B9	1
 6hb^9H
@@ -4028,7 +4029,7 @@ _6	D@
 '6hF@
 (6hF@
 6hF`9
-6h"F9`cI
+6h"F9`sI
 6hFA9
 6hFh9h
 _6hj@
@@ -4328,6 +4329,7 @@ _6v:@
 !~ 8 
 !~@8 
 !~$8%
+!	@)`8
 @-`8 
 @- 8 
 @-.8 
@@ -4378,6 +4380,7 @@ _6v:@
 87)#A9i
 87H	@7
 87iZ@
+	87uM
 %8.8s: %-5d entries, '%s', ...
 8CAISound
 8CAmmoDef
@@ -4454,7 +4457,6 @@ _8|{t
 ** @9
 	 @9)
 	 @9	
-	!}9	
 	)@9)
 	)@9*
 	@9*]
@@ -4487,16 +4489,17 @@ $9_!$9
 [%9.9s] (%5d)%s:
 [%9.9s] (%d)%s at %.6f phase not supported
 [%9.9s] (%d)%s SetInterpolationTimeType - changing interpolation phase type
-!@9A?
 @9A(!
 9*a{9
 9+a`9
 ?9A@c
+@9 aD
 @9?aEkA
+!@9?B
 @9B!@
 	9B9))*
-"@9BO
 @9)+C
+&9ca	
 9CBaseFlex
 9CBaseProp
 9CCallbackI15CGCClientSystem23SteamServersConnected_tLb1EE
@@ -4527,10 +4530,9 @@ $9_!$9
 9CTEImpact
 9CTESparks
 9CTimeline
-&9cu	
 9D7V=
+!!@9DC
 (@@9	f
-!!@9F@
 (@@9	g
 9gCN>
 (@@9	h
@@ -4589,9 +4591,9 @@ $9_!$9
 @9+i(8k
 "@9i"@9
 @9i"[9
+@9i"@9
 9	i@9
 ^9I9)
-@9i"@946
 9*i@9J
 9*i@9X
 9IEconTool
@@ -4605,6 +4607,7 @@ $9_!$9
 9ISequence
 @9iz@
 9iZA9?	
+_!:9j
 9j"@9
 9j*@9(
 @9J9	
@@ -4626,6 +4629,7 @@ _!9ki
 9)P@y	q
 9Q"@)
 9QH@)A
+"@9@R
 @9R"@9)
 (9	S)!@
 **9	S
@@ -4672,16 +4676,14 @@ _!9ki
 (@@9tB
 @9TC@
 @9Ts@9
-@@9	U
 @9U|@
 (@@9	v
- @9)V
-"@9)V
+ @9	V
+"@9	V
 (@@9	w
 @9wiu
 (@@9	x
 ?9.>`y
-@9 YD
 @9 	@z
 9@z(|`
 9Zg,>4
@@ -4703,7 +4705,6 @@ a2U0*
 a2@yh2@y
 ,-A-.5@-
 A5fSXbf7
-a793R
 	a79H
  .a8"
 @-a	@- 8 
@@ -4713,13 +4714,12 @@ A-!8#
 +a@9?
 	a@9	
 a"@9`
-:A#9_
+?A*9)~
 "A9		
 (@A9(
 (A@9(
 )`A9	
 )!A9?
-)A}9?
 )A@9)
 )A@9	
 		A9?
@@ -4727,12 +4727,14 @@ a"@9`
 	A@9)
 	A@9)	
 	A@9	
-A,9(~
 A9()(
-a"@9'1
+a"@9%4
 a@9+a
 `A9)`A9
-a"@9D1
+;A:9am
+a"@9B4
+a"@9B5
+a"@9B6
 A9@g@
 .A9h.
 "A9h"
@@ -4753,6 +4755,7 @@ A$9hf@
 	!A9i
 	A`9i
 	A@9i
+	A\9i
 A9i>@
 )A@9I
 	A@9I
@@ -4760,6 +4763,7 @@ a"@9"ih
 A9	ii
 A9iji
 *!A9J
+#A9J*
 A9|J@
 	A9j"A
 A9jji
@@ -4768,10 +4772,11 @@ A9jji
 +a@9Ka
 A9Kik
 +	A9lC
+a"@9oF
 	A@9	P
-a"@9qC
 ?A9tJ@
 A@9vi)
+	A\9vT
 A-a)*
 A-'@A-
 AA9(	
@@ -4780,9 +4785,10 @@ aaaaaaaazzzzzzzz
 aabb_max
 aabb_min
 AABB_t
-A	A-j7
+A	A-J7
 A-b6B
 A@-B8(
+	AB9	
 abcdefghijklmnopqrrqponmlkjihgfedcba
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
@@ -6309,6 +6315,7 @@ Advancing to ERoundState_Preparing for round %d.
 Advancing to ERoundState_Ready for round %d.
 Advancing to ERoundState_RoundOver for round %d.
 ?*a\`E<
+aE=	<
 AE_ABILITY_END_EVENT
 AE_ABILITY_START_EVENT
 AE_ABILITY_TICK
@@ -6397,7 +6404,6 @@ AE_HIT_SHOULDER_LEFT_FRONT
 AE_HIT_SHOULDER_RIGHT_BACK
 AE_HIT_SHOULDER_RIGHT_FRONT
 AE_HIT_STOMACH
-aE=I<
 AE_IK_ALLOW_PLANE_TILT_NORMAL_UPDATES
 AE_IK_SET_CHAIN_BLEND_AMOUNT
 AE_IK_SET_LOCK_ROTATION_ALPHA
@@ -6644,7 +6650,7 @@ always_notify
 always_send_to_servers
 always tradable
 ;Am@  
-	AM9)
+#Amb1
 AmbientCubes
 ambient_effect
 ambient_generic
@@ -6792,6 +6798,7 @@ An orthographic spot light entity
 An RR_Concept couldn't find its string in the symbol table!
  any other value = set minimum value for cl_interp_ratio
 &A)(o@
+A-O)I
 api_key
 `AP$N
 appear_time
@@ -6808,6 +6815,7 @@ Apply an Ang Velocity Impulse
 Apply an impulse at a worldspace position to the physics
 Apply a Velocity Impulse
 Apply damage to this entity. Use CreateDamageInfo() to create a damageinfo object.
+apply_duration
 ApplyEntity
 Applying new item schema, version %08X
 ApplyLocalAngularVelocityImpulse
@@ -6909,7 +6917,6 @@ asynchronous
 Asynchronously spawn an entity group from a list of spawn tables. A callback will be triggered when the spawning is complete
 AsyncWrite: Attempted to write to a read-only file
 AsyncWrite (%s/%d)...
-	AT9	
 at console
 aT,@J
 a trigger_changelevel doesn't have a map
@@ -7032,7 +7039,6 @@ Attribute type not specified in dynamic recipe definition
 attribute_value
 Attribute value not specified in dynamic recipe definition
 attr_value
-	aU9i
 audible_mask
 audio
 audioparams_t
@@ -7087,6 +7093,7 @@ autoteam
 auto_unragdoll_duration
 [a:%u:%u]
 [A:%u:%u:%u]
+	AV9	
 	available
 Available: 
 Available item definitions for whitelisting:
@@ -7103,7 +7110,6 @@ avg_loss_out
 Avg/Msg
 avg_packets_in
 avg_packets_out
-	AW9	
 AWARDED
 Away Team Won - %d damage applied to home team.
 a world layer in a dota map
@@ -7116,6 +7122,7 @@ A-!Xh
 Ax? /k 
 AXk!#
 ?aXY6
+	AY9	
 	<Ay?!9k
 	<Ay?!<kC
 ?AYki
@@ -7124,7 +7131,6 @@ AXk!#
 @-b("
 @-b	@
 !^B($
-!	@)B\
 ('B)*
 @-))B
 @-B	@
@@ -7133,6 +7139,8 @@ B-
 B-'("
 B-)( 
 B-1HD-
+B29`U
+B39`U
 B-(5@
 b59aRM
 b59)y
@@ -7149,11 +7157,12 @@ B`@9!
 B9@  
 B@9a'
 ?B9b8"
-B(9cR
+B(9c:
 ?B\9{g
 B\9{gt
 ^B9h^
 "B9h"
+B/9H'
 B@9H.
 B@9H0
 b@9h 07
@@ -7170,7 +7179,7 @@ b@9JIG
 B(9t"%
 B@9t^N
 B-A8!
-bA9),
+bA9	,
 bA9hb
 BA9hB
 BA9iB
@@ -7301,6 +7310,7 @@ bbox.m_vMinBounds
 !	B-C
 bChainLightningConsidered
 bCraniumBasherTested
+`BCyk
 %b %d
 bDh%)
 bDiffusalApplied
@@ -7416,7 +7426,7 @@ bloodimpact
 Bmaps\%s.vpk
 ?bMeQ
 bMKBTested
-bO9a&
+bO9A&
 Bodies: %d (%d)
 Body Component Scriptdesc
 BodyGameSystem
@@ -7590,6 +7600,7 @@ Buckshot
 BUCKSHOT
 "B)Ud
 buddha
+B-(uF
 BUF_DEFAULT
 buffer. Use the 'bytes' type if you intend to send raw 
 buff_modifier
@@ -7629,8 +7640,8 @@ ButtonBitMask_t
 "B)Ux
 buy_unit
 bValue
-`b@y,
-`b@yC
+!	@)BX
+`b@y%
 `b@yh
 B	yi.
 BYield
@@ -7651,6 +7662,7 @@ $.c($
 C-  "
 C-@( 
 C-&"@
+C=-1T
 C-2-@
 C33s?)\
 @-c8 
@@ -7658,20 +7670,23 @@ C33s?)\
 C-!8"
 C-"8"
 ,c@9-
-c@9*,
+C@9`;
 C9   
 C9)|@
 C@9	2
-C9	a793L
+C9	a79
 [C9h#
 <(C@9H#
 (C@9H
 C9,h5
 C@9HC
 	@C9i
+c@9j,
+C@9j,
 C9J#B9?
 CA9`:
 cA9h"
+CA9J*
 cA9s~
 cable
 Cache
@@ -7713,7 +7728,6 @@ Cancels all ent_fire created outputs that are currently waiting for their delay 
 Cancel scene playback
 cancelselect
 can_collect
-can_combine
 can_consume
 can_craft_count
 can_craft_mark
@@ -10742,20 +10756,19 @@ d3_citadel_04
 d3_citadel_05
 .D=3w
 *-D),5E)_
-d6Py#
 d6@y#
-d6@y#>
 d6@y#.
+d6@y#$
 d6@y#1
+d6@y#7
 d6@yc
-d6@yc=
-d6@yc.
+d6@yc 
 d6@yc(
-d6@yc$
+d6@yC
+d6@yC=
 d6@yC.
+d6@yC(
 d6@yC$
-d6@yc1
-d6@yC7
 )!D9	
 	$D9?
 D-)9,
@@ -11850,6 +11863,7 @@ EHapticPulseType
 .eh_frame
 .eh_frame_hdr
 ?eH_R
+!	@)ei
 E-i6@
 eidolon_rank
 Eiffel tower
@@ -11871,7 +11885,6 @@ ELobbyServerState
 .ELobbyServerState
 .ELobbyServerState"
 eLogicalHandType
-!	@)em
 *eM9_
 email_format
 email_lang
@@ -12732,7 +12745,6 @@ eyes_follow
 eZQ9\
 ?-f:*
 @+,]f}/
-!	@)F]
 .F))}
 F-%:%
 F: %.2f deg
@@ -12741,6 +12753,7 @@ F: %.2f deg
 *-F),5G)_
 f^7:!
 @-f8&
+!	@)F9
 ?\%F9
 f@9(6
 F9h&@
@@ -13576,7 +13589,6 @@ FZ*o7
 @g|_\
 .G))}
 ))+G)
-]G-!-
 @-G@@-
 @-G	@
 &G) ( 
@@ -14359,7 +14371,6 @@ h&@)*
 ;+%@H
 ('H)_
 @-H  
-\-.]H
 #H)	}	
 H0@9(0
 H0@yU
@@ -14376,6 +14387,7 @@ h2@ytB
 *-H),5I)_
 h6]9H
 )h6A9
+h&@)6C
 H6h>@
 H6h6Y9h
 h6hB@
@@ -14390,7 +14402,7 @@ h6N9H
 h6N9t
 H6u2@
 h6uB@
-h6V9)J
+h6V9	J
 h6	yh
 H7H	P7
 H7t	P7
@@ -14403,12 +14415,13 @@ H=)@8f
 [h] %8llx (%s) <%s%s> [o] %8.3f %8.3f %8.3f [a] %6.3f %6.3f %6.3f [s] %6.3f
 h"@9)
 h"@9)%
+h"@9	+
 h&@) 9.
 H'@9(
+h*]948
 h"@9)8
 ;h@)9\A)<
 H @9`b
-h"@9	G
 *h&]9h
 h"]9h
 h"@9h
@@ -14425,8 +14438,6 @@ H @9h"
 H`@9H
 h*^9i0
 h&@9k
-h*]9T8
-h"@9)V
 h"@9	V
 h"^9`Z
 h%A)`
@@ -14518,10 +14529,10 @@ h"B9H
 hB^9H
 hB@9H
 H'B9h
-hb@9IP
+hb@9	P
 hB@9t
 hB@9u"@
-hb@9)V
+hb@9	V
 hB@9)YB
 h&^)b:A
 hbA9(
@@ -14530,8 +14541,8 @@ hbA9(
 hBA9(
 hBA9)
 hBA9	
+hbA95H
 hbA9h	
-hbA9UH
 h&_)bB
 hbB9h
 hBD9i
@@ -14836,6 +14847,7 @@ hi,xk
 h&_)j
 h%@)j	@
 H%@)J	@
+hj48%k
 hj@9yF@
 h&@-j.A-
 =hjc9
@@ -14845,7 +14857,7 @@ h&J)jZ@
 hJN9h
 hJN9t"
 hjN9v
-hJW9IV
+hJW9)V
 hjX9v
 h&^-k.@
 h&^-k*@
@@ -14878,8 +14890,11 @@ HMD Avatar that owns the VR hands
 HModel
 HModelStrong
 H-m.V-
+#()hN
 !^hNB
 h*O9H
+h*O9i:
+h"O9iM
 <HOi#
 	Holding lock %s:
 holdtime
@@ -14954,7 +14969,6 @@ HRenderTexture
 HRenderTextureStrong
 hResult
 h&R)j
-hrM9@2
 hRN9h
 hrY9h
 hR@yh
@@ -14995,8 +15009,6 @@ HurtTouch
 h*v9(
 hv@9)
 *hV]9
-hV:97
-h&@)VC
 hVC9	^
 hvKyH
 hvN9i
@@ -15053,7 +15065,7 @@ _i)8i
 *+i,8i
 *+i*8i
 i)8i&
-i;8I6
+i;8I:
 i-8-i@9
 i*8-i@9
 i*8*i@9
@@ -15072,7 +15084,6 @@ i+8Ki@9k
 )i@9	
 )I@9I
 i"@9J
-i*@9J3
 I9	S	M)
 IA@9	A
 I-a~E
@@ -15346,9 +15357,7 @@ ignoring %s.HL%s on %s
 iGroup
 	*ih*
 I-!H#
-(ih8	]
 )ih8?
-(Ih8	]
 )ih8Ii(8
 (ih8*ij8+ik8,il8-im8.in8/io80ip81iq82ir8"ib8#ic8$id8%ie8&if8)i`8
 IHandleEntity
@@ -15399,7 +15408,7 @@ ij,8kj*8mj(8
 iJ_9h:
 +i-`JG
 ijj8?
-iJP9H?
+iJP9(?
 ijw8*
 ijW9h?
 )ijx?
@@ -16202,7 +16211,6 @@ invites
 invulnerability_duration
 In-world UI panel
 ip8Rkp8
-i*P9(?
 IPhysicsPlayerController
 IPlayerInfo
 	ip_public
@@ -16548,54 +16556,52 @@ i'@yH'@y?
 Iyix8}
 IyixJylx+
 +I@yL
-iyxA,
 Iy(xj
 i"Yy?
 @I@z)
 iZA9	
 <j.?)
-!	@)j[
 ('J)*[@
 ))+J)
 @ @-J
 @-J	,
 @-J	@
 J-` $
-j08a(
+j08!(
 j >= 0 && j < nResultBufSize
 J0@y_
 J0@yI
 J0@yk
-j1xq(
+j1x1(
 j2@yh
+j48(:
 j48	C
-j48H:
+j48hR
 j48t^@
 j4xH;@
 j58(:
 j58hf@9(
-j58;L
 J5@y_
-j68hV
-j68(L
 j68u*@
 j68v&@
+j68(V
+!	@)j7
 j/8.!
 j(8(~
-j(8($
-j(8(%
+j(8('
 j)8('
-j)8)'
+j)8[!
 j)8	 
 j)8	?
 j)8	"
 j)8	$
 j)8	*
+j*8*'
+j*8*(
+j+8+'
 j)8	2
 j)8	7
-j)8)A
-j)8h'
-j(8H'
+j)8	A
 j(8Hd
 j(8HL
 j(8hM
@@ -16603,11 +16609,9 @@ j*8i?
 j)8ID
 j)8iL
 j)8Ir
+j)8iY
 j)8`j
-j*8j'
-j*8j(
 j(8jj)8`
-j+8k'
 j-8K,
 j+8K:
 j+8Kd
@@ -16617,15 +16621,14 @@ j,8LL
 j,8Lr
 j-8M^
 j-8M,
+j-8M.
 j-8MB
 j-8MV
 j-8Mz
-j)8	N
 j.8Nl
 j.8NP
 j)8)p
 j)8	Z
-j(8zq
 J!@9_
 J!@9#
 J@9hJ
@@ -16692,7 +16695,6 @@ j!JJ+
 jjj8h
 j!JJK
 !JJK|
-jj)x$ 
 	J"}	K
 )+J)-#K)+3L)
 Jki8_5
@@ -16710,6 +16712,7 @@ jn87kn8
 JNI_OnLoad
 JNI_OnUnload
 jN@ymN
+!	@)jO
 Job Avg
 Job debugging disabled
 job_id_source
@@ -16737,7 +16740,6 @@ JP@y_
 [jRDe
 jRh9i
 jR@yK=
-!	@)jS
 js_array
 j;	S)M*
 ?*JSN
@@ -16767,19 +16769,16 @@ jV@y)|@
 jV@y!y|
 jV@y:yt
 jV@y!yt
-j/x/ 
-j.x. 
-j)x	'
+j-x-(
 j)x	@
 j)x		
+j*x*'
 J!_x_!5k
 j(xH 
 j)x	H
 j(xHH
-j*xJ'
-j-xm(
 j-xM 
-j x`N
+j x@N
 j.xN.
 j)x	O
 j"(y`
@@ -16795,6 +16794,7 @@ _!(k#
 &@)k	
 	*_!;k
 	*_!(k
+($@)K
 K)@)+)
 (@)k0@)n
 K1B)M9C)
@@ -16808,12 +16808,11 @@ k2	)j~
 k2Q)m
 *k2@y
 ?k58D
-k68(w
+k68Wi
 *?k78
-?k784
 ?k78h
-	k!8(
 	K!8"
+_k88e
 k(8vV@
 ?){K9_
 @){K9_
@@ -16823,6 +16822,7 @@ K9	S)
 K9	S)M+
 K9	S+M+
 K)A)+)
+KA~9h
 kA@9J}@
 K	A9lC
 KAB9k
@@ -17592,7 +17592,6 @@ kji8v
 K)@)k
 K]K+2
 !!kL}@
-($@)KMB
 kMODELCLIP
 K?@mOy
 k_MsgAlreadyRunning
@@ -17720,7 +17719,7 @@ L9k:C
 l9	SJM,
 L9	Sk
 L9	SkM,
-LA9+5B
+LA9+EA
 la@9L	
 L	A9mC
 label
@@ -18192,13 +18191,13 @@ m1E)n
 :m2OS
 :m@)5eA)6qB)
 M9brC
-M9!EH
 M9h~C
 M9hzC
 m%@9i)
 M9l6F
 M9m6F
 M9n6F
+M9!UG
 m	A9j"
 m_acceleration
 machine_name
@@ -20029,6 +20028,7 @@ m_fVignetteEnd
 m_fVignetteStart
 m_fWeapon
 m_fWidth
+\-.mG
 m_gearRatio
 m_Gender
 m_GibDir
@@ -20242,6 +20242,7 @@ m_hVRControllers
 m_hWaitingForThisResumeScene
 m_hWeapon
 m_hZoomOwner
+!	@)mi
 m_iAbilityIndex
 m_iAccountID
 m_iAchievementID
@@ -20732,7 +20733,6 @@ m_lookupFilename
 m_LoopState
 m_LRU
 m ]lZ
-!	@)mm
 m_MagnettedEntities
 m_MainSoundscapeName
 mmamammmmammamamaaamammma
@@ -21321,6 +21321,7 @@ modifier_add_mana_per_damage
 modifier_alchemist_acid_spray
 modifier_alchemist_acid_spray_thinker
 modifier_antimage_mana_break
+modifier_arc_warden_clone
 modifier_arc_warden_magnetic_field
 modifier_arc_warden_magnetic_field_aura
 modifier_arc_warden_magnetic_field_inside
@@ -22904,7 +22905,6 @@ m_zfriction
 m_zmax
 m_zmin
 @-n	@
-!	@)N]
 ?[]N	
 'N(  
 "N(  
@@ -23020,13 +23020,13 @@ N6snappy4SinkE
 N6snappy6SourceE
 N7CNavGen24INavConnectionBlockerMgrE
 (_N8H
+!	@)N9
 N)!9,
 N9@)+
 &N97|@
 N@9hN
 N9	S.M.
 n9@yN
-#na5F
 n	A9-
 nA9hn
 NA9iN
@@ -24097,7 +24097,7 @@ O6`R@
 O6v2@
 o6vB@
 o-!8#
-"O9a&
+"O9A&
 O9`*B
 ? !o^A?
 o/A-m'B-n+@-`C
@@ -24343,6 +24343,8 @@ o}Xot#
 %O?ZE
 ?<-?p
 @-p	@
+*-@)!p
+!	@)`P
 @-P	@
 p2A-r
 p;4,F
@@ -25570,12 +25572,14 @@ py_generic_services
 -	-	Q
 @-'@@-Q
 Q-   
+	Q29_a29
 q;4,F
 Q8q(2
 	q=9_
-	q/9_
+	q*9_
 Q"@9?
-	Q(9_a(9
+	Q#9_a#9
+Q@9~O
 	qA9?
 qangle
 QAngle-world
@@ -25600,7 +25604,6 @@ qK5B),
 >QL^9
 	qL9i
 	qL9I
-q@)(MB
 Qn=@-s	@
 qo[k!
 ~-QQC-
@@ -25645,17 +25648,17 @@ QuitServer() executing "disconnect"
 QuitServer() executing "quit"
 %qVDM
 ?q?}WF
-	Qx9I
 q$;@z
-!	@)r[
+	Qz9I
 r-@	*
 "@:R".
-R09HH
+R09(H
 r0@GP!
 >r3\9
 ?r4GV~	
 R5i98
 r)5IJY}
+!	@)r7
 @-R8'
 ?R8q(2)
 *R)8yv
@@ -25742,6 +25745,7 @@ RB9hR
 R~~C@
 RC9hR
 r_cacheSequenceData
+`RCy-
 Reached an unintended state: CPPTYPE_MESSAGE
 Reached impossible case in HasBit().
 Read: Attempted to read from a write-only file
@@ -26194,7 +26198,7 @@ r_JeepViewDampenFreq
 r_JeepViewZHeight
 rJ@LB
 rJMJJ
-R?k78
+R?k78r
 R(k)8
 R)k(84
 R(kh8h
@@ -26203,7 +26207,6 @@ rkMKJ:
 R)kx8i
 ?rl=C8&
 RL@-T
-rM9@2
 r)MIJ
 r)MIJ<
 R)MIJ*
@@ -26212,6 +26215,7 @@ Rmij8
 @-RN'
 rnd_down
 rnd_up
+!	@)rO
 .rodata
 ROLL_CREDITS
 roll_criteria
@@ -26265,7 +26269,7 @@ RoutingMethod
 RP_PAUSE
 RP_TOGGLEPAUSE
 RP_UNPAUSE
-r	Q89_A=99
+r	Q:9_A?99
 rQ@y1
 rr_AddDecisionRule
 -rr_allow_reload
@@ -26285,7 +26289,6 @@ rr_QueryBestResponse
 rr_reloadresponsesystems
 rr_remarkables_enabled
 rr_thenany_score_slop
-!	@)rS
 r_skymodel_moonboost
 r_skymodel_wavelength_b
 r_skymodel_wavelength_g
@@ -26313,13 +26316,14 @@ RunTimeOfDayCommand
 	R)v4N
 r_VehicleViewDampen
 r@y`&@
-`R@y')
+`R@yCW
 `R@yh
 R@yHq
 r@yhr
 R	yi2
 ryjj8
 R	yu2
+`R@yyV
 --- %s: 
 "%s" 
 "%s":
@@ -28767,8 +28771,7 @@ System %s failed to init
 szName
   szReplaysPath = %s
 ?"_t?
-	*!t	
-!	@)`T
+!	@)|T
 T0:	S
 T0:	S0M0
 T0:	SpM0
@@ -29083,7 +29086,6 @@ they_hear_you
 Thf@9
 Thf@9(
 Th"F9
-Th"F9;[
 ThF@9h
 ThFC9
 Thf@y
@@ -29137,11 +29139,11 @@ THROW POST BLOCKED
 THROW PRE BLOCKED
 ThR@y
 Thry9
-ThR@yyH
+ThR@yYH
 ThRz9
 Th;	SHO(
 TH;	S(O(
-Th*U9
+Th*U9tI
 ThV@yh
 Th*W9v
 Th~@y
@@ -29670,6 +29672,7 @@ U7r8Ne
 u9% &
 U9i2V9
 ]u9n5;> )"
+U@9@SC
 %u[%d]
 uD-@	D-
 udp_connect_ip
@@ -30138,6 +30141,7 @@ uYLl>
 uz9GxV
 !V @;
 	!@)V
+v2N9a3
 v8array
 v8callback
 v8object
@@ -30955,6 +30959,8 @@ Whether to spawn the player or the anchor at the info_player_start. (0 = Honor t
 Which match clock to use for private matches (casual, competitive, or none)
 WIDE_HUMAN_HULL
 width
+will_combine_three_stars
+will_combine_two_stars
 WILL TRANSITION
 Will transmit all entities to client, regardless of PVS conditions (will still skip based on transmit flags, however).
 WIN32
@@ -31051,8 +31057,7 @@ WY@)U	@
 )x^	)
 @%@x	
 x]/(@
-!	@)|X
-!	@)X\
+!	@):X
 X-!("
 \x%02x
 X@)`2G
@@ -31075,7 +31080,7 @@ x7hJF
 	X7U	`7
 x7w"@
 x7wB@
-	!X9	
+!	@)X8
 x"[9ub
 XAxis
 XBowBolt
@@ -31092,11 +31097,11 @@ X@)`&G
 ?xG!$fQ
 xi*8*i@9J
 xL9-C
+!	@)XP
 	xp_earned
 x(Q@9
 ?XRQi
 xT)~)>
-!	@)XT
 X-V:;
 X\V@%
 x*;XZ
@@ -31132,9 +31137,9 @@ yawVel
 y+a_x
 YAxis
 :@y`B
-@y %C
 YcuP.
 @y+}E
+@y eC
 YellowBlood
 yes - via input
 @yh=@
@@ -31281,13 +31286,13 @@ Y`x($
 y|x(E@
 *y(xj
 +y(xk
+	y:xLd
 	@y-	@y
 y+)@yJ
 y+-@yk
 Yy?!!k
 YYYY-MM-DD
 YYYY-MM-DD hh:mm:ss
-!	@)|Z
 Z0000
 z	?0e`9
 *z0x1
@@ -31302,6 +31307,7 @@ _Z17LoggingSystem_Logi17LoggingSeverity_tRK14LeafCodeInfo_tPKcz
 _Z6ConMsgPKcz
 _Z6DevMsgPKcz
 Z*=@8H
+	!Z9	
 z@9iz
 ZA9?	
 ZA9iZ
