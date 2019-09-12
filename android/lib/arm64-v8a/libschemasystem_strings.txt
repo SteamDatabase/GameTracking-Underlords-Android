@@ -65,7 +65,6 @@
 %-40s = 0x%016llX (%lld)
 4i*@y
 	*_!4k
-_&4phI
 )5IJ(}
 5i.@y
 %5s: %s (%.3f%% of all %s bindings)
@@ -712,6 +711,7 @@ m_Children
 MClassHasCustomAlignedNewDelete
 m_Color
 m_colorCorrectionVolumeData
+m_ColorScale
 m_container
 m_ControlRigData
 m_CTransform
@@ -767,6 +767,7 @@ m_flRandomMin
 m_flScalePerParentParticle
 m_flStartTime
 m_flStartTimeMax
+m_flTailAlphaScale
 m_ForceGenerators
 m_frameData
 m_hSnapshot
@@ -782,6 +783,7 @@ m_JointConstraintPairs
 m_JointName
 m_Joints
 m_keyValuesData
+m_LiteralColor
 m_matrix3x4a_t
 m_matrix3x4_t
 m_Name
@@ -872,10 +874,14 @@ m_TargetSource
 multiplayer_break
 Multiple instances of schema system are initialized. %p != %p
 m_value
+m_vecColorScale
+m_vecTailColorScale
 m_Vector
 m_Vector2D
 m_Vector4D
 m_VectorAligned
+m_vEndTrailTintFactor
+m_vLiteralValue
 N24CFieldPathHuffmanEncoder12InternalNodeE
 N24CFieldPathHuffmanEncoder5INodeE
 N24CFieldPathHuffmanEncoder8LeafNodeE
@@ -991,6 +997,8 @@ PropertyEditorSystem_001
 pthread_mutex_destroy
 ../public/ordered_constructor.h
 ../public/tier1/utlrbtree.h
+PVEC_TYPE_LITERAL
+PVEC_TYPE_LITERAL_COLOR
 Qi"A)`
 QueuedLoaderVersion001
 r	a49_
@@ -1289,6 +1297,7 @@ vpcf20
 vpcf21
 vpcf22
 vpcf23
+vpcf24
 vpcf3
 vpcf4
 vpcf5

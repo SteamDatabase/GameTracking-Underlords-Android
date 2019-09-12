@@ -252,11 +252,9 @@
 1bQJ1~
 1DBlend
 1*i(8`
-1@)kED
+1@)k=D
 1N  !
 1ns:5
-	2)!-
-	2)!!
 	2*	@
 2*?)0"
 20CAimMatrixUpdateNode
@@ -344,7 +342,6 @@
 22IAnimGraphModelBinding
 22IAnimParameterInstance
 22IIKJointConstraintData
-	2)!3
 23CAnimationGraphInstance
 23CAnimationGroupResource
 23CAnimationTypeManagerV0
@@ -1793,7 +1790,6 @@ c@yhR
  D-	(@
 D-"/@
 d6@yc
-d6@yC
 D- 8 
 d@9hf
 %d.Add( %s, %d, %.2f )
@@ -2288,6 +2284,7 @@ ground_virtualplanes
 g_Tier1_BitWriteMasks
 h&@)?
 #H)	}	
+H-"1G
 h1xnj 
 h2A9(
 H3@y(3
@@ -2298,7 +2295,6 @@ H-`9
 h"@9h
 h.@9H
 h"A9a
-H-"aM
 HammerMapLoader001
 handindex
 Has a Path
@@ -2355,11 +2351,10 @@ Hit React node requires its %s parameter %s to be networked
 Hit React node requires its %s parameter %s to NOT be interpolated
 Hit Strength
 Hit Strength Parameter
-hj48i
 hj@9yF@
 h&@-j.A-
 !H*JAJ*
-hjG9)aF
+hjG9)YF
 H*J!J*
 H*J	J*
 HMaterial
@@ -2384,8 +2379,8 @@ hurt_them
 [hxVYyxk
 h&Y)9
 h"@yi
+h&@y)mD
 h"@ys
-h&@y)uD
 hZE9h
 *-@i)	
 *]@i)	
@@ -2694,9 +2689,9 @@ i>@yh
 J-@	 
 j >= 0 && j < nResultBufSize
 J0@y_
-J38}d
+J38ch
 j58hf@9(
-J78Dd
+J78*h
 JaAIJ
 JAAIJ
 	J"AHJ
@@ -3119,6 +3114,7 @@ m_cmd
 m_cmdLayerArray
 m_Color
 m_colorCompressor
+m_ColorScale
 m_comparisonControlValue
 m_comparisonFixedValue
 m_comparisonOp
@@ -3355,6 +3351,7 @@ m_flStoppingSpeedScale
 m_flStretchScale
 m_flStrideCurveLimitScale
 m_flStrideCurveScale
+m_flTailAlphaScale
 m_flTargetFacing
 m_flTiltPlanePitchSpringStrength
 m_flTiltPlaneRollSpringStrength
@@ -3456,6 +3453,7 @@ m_Joints
 m_keyValues
 m_keyValueText
 m_LegacyKeyValueText
+m_LiteralColor
 m_localBoneMaskArray
 m_localBoneNameArray
 m_localCmdSeqDescArray
@@ -3868,23 +3866,27 @@ m_vControlPoint2
 m_vecBoneWorldMax
 m_vecBoneWorldMin
 m_vecCenter
+m_vecColorScale
 m_vecMax
 m_vecMin
 m_vecPosition
 m_vecRootMax
 m_vecRootMin
 m_vecSize
+m_vecTailColorScale
 m_vector2DCompressor
 m_vector4DCompressor
 m_vectorAttributes
 m_vectorCompressor
 m_vectorParams
+m_vEndTrailTintFactor
 m_vertexBuffers
 m_verticalAxisDirection
 m_vForwardLS
 m_vHeelOffset
 m_vInfluenceOffsets
 m_vInfluenceRotations
+m_vLiteralValue
 m_vMaxBounds
 m_vMinBounds
 m_vMovement
@@ -4325,7 +4327,7 @@ N37CTypesafeIntrospectedToKV3TypeManagerILy482955714934E15CAnimationGroupE28IKV3
  n"(a
 $Na)#
 "NA*!
-!NA]B
+!NA-L
 nav_attribute_avoid
 nav_data
 N 	B-d
@@ -4600,7 +4602,8 @@ ptr( 0x%p )
 ../public/tier1/utlrbtree.h
 ../public/tier1/utlsortvector.h
 Push In Amount
-!@)@q
+PVEC_TYPE_LITERAL
+PVEC_TYPE_LITERAL_COLOR
 )Q@9)
 qangle
 QAngle
@@ -5619,6 +5622,7 @@ vpcf20
 vpcf21
 vpcf22
 vpcf23
+vpcf24
 vpcf3
 vpcf4
 vpcf5
@@ -5733,7 +5737,6 @@ yaw_end
 Yaw Limit
 yaw_start
 &@ybz
-Yc#9yk
 @y+}E
 >@yEf
 "@yez

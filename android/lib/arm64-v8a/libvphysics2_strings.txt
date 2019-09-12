@@ -262,7 +262,6 @@ $@)#@@)
 %-30s%14s%14s
 320000
 @333?
-333?X
 33CBaseIntrospectedToKV3TypeManager
 @33s?ff
 3AmB8%
@@ -316,6 +315,7 @@ $@)#@@)
 %6.2f %6.2f %6.2f %.3f %.3f %.3f
 %6.2f %s
 6]@-8e
+6B-	aM
 6ConVar
 6\E-B
  6en@
@@ -458,7 +458,6 @@ AABB_t
 AABB_t RnHullRefl_t::m_Bounds
 "A)az
 !A-	)B-
-AB-6-O
 A-'@B-B
 abnap
 a	@-c	@
@@ -510,7 +509,6 @@ AiixHI(
 )AIJK
 ai_model_info
 AIWalkable
-	aL9	
 All Groups:
 All Layers:
 AllocateAndLoad failed for '%s'
@@ -520,6 +518,7 @@ Also there were %d NaN errors
    (although Pair Trigger flag was there anyway)
 always
 +Always Notify on Touch Found or Lost
+	aM9	
 ;AmA(!
 anchor_angles
 anchor_position
@@ -855,7 +854,6 @@ C--8E-"
 C-8gD-
 C9 8 
 "C9hB
-C@9 	I
 C-A	!
 cable
 CAimConstraint
@@ -980,7 +978,6 @@ CFootTrajectories
 CFootTrajectory
 CFrustum
 CFrustum RnWorldRefl_t::m_DebugCamera
-CH-1	I
 ChangeCallbackOnChange
 ChangeCallbackOnChangeOrCreate
 char *
@@ -1820,9 +1817,9 @@ FeWeightedNode_t
 FeWorldCollisionParams_t
 ff9966;">Can <b>Not</b> Collide: same body</div><span>Both shapes belong to the same body %d <i>%s</i>. Do not collide.</span>
 ff9966;">Can <b>Not</b> Collide: same shape</div><span>Hm, it's the same shape, it cannot collide with itself</span>
->fff?
 %f %f %f
 ffffcc
+>fff?X
 fFM-uZL-wbK-
 F-g:@
      *Finalize Constraints: %6.3f [ms]
@@ -2164,7 +2161,7 @@ H-b(3
 hb@9`
 hB@9`
 hBAyHC
-hbB9)
+hbB9	
 hBB9)
 "HB-c($
 H-bJ@
@@ -2210,9 +2207,9 @@ Hit Trigger
 H-@)J	@
 H%@-J	@
 H%@)J	@
-hj58%v
-hj)8!;
-hj)8i?
+hj58D|
+hj)8!?
+hj)8iC
 H$@)J,B)M$@
 H-k	9
 HMDAvatar
@@ -2257,7 +2254,7 @@ h&X)`	(
 (h@y 
 h&@y)
 h[@ys
-hz5x)
+hz5xH
 <	)@)i*
 *-@i)	
 	)@)i
@@ -2482,8 +2479,9 @@ J-{+?
 j1@)k	@
 )j2])
 j58hf@9(
+j)88E
 j)8hJ@
-j(8jP
+j(8jT
 j)8	Q
 j)8	U
 JAAHJ
@@ -2700,7 +2698,6 @@ M- (
 M-!()
 M-1IZ-3Q[-
 m8dI-:lH-=xJ-? K-
-	!M9	
 M|@9-
 M-_9?
 m	@9c
@@ -2843,6 +2840,8 @@ m_CollisionGroup
 m_CollisionGroupString
 m_CollisionPlanes
 m_CollisionSpheres
+m_Color
+m_ColorScale
 m_components
 m_ConeAxis
 m_ConeCutoff
@@ -3044,6 +3043,7 @@ m_flStartTime
 m_flStartTimeMax
 m_flStiffness
 m_flSupport
+m_flTailAlphaScale
 m_flTipMass
 m_flTraceHeight
 m_flTraceRadius
@@ -3131,6 +3131,7 @@ m_linearLimitDamping
 m_linearLimitRestitution
 m_linearLimitSpring
 m_linearLimitValue
+m_LiteralColor
 m_LocalForce
 m_LocalInertiaInv.c1
 m_LocalInertiaInv.c2
@@ -3577,10 +3578,13 @@ m_vCenter
 m_vConeApex
 m_vDiag
 m_vecCenter
+m_vecColorScale
 m_vecSize
+m_vecTailColorScale
 m_vectorAttributes
 m_vectorParams
 m_vEnds
+m_vEndTrailTintFactor
 m_vertexBuffers
 m_VertexSetNames
 m_vEyePosition
@@ -3591,6 +3595,7 @@ m_vHullMin
 m_vInfluenceOffsets
 m_vInfluenceRotations
 m_vLinearTargetVelocity
+m_vLiteralValue
 m_vLocalAnchor1
 m_vLocalAnchor2
 m_vLocalOrigin1
@@ -3631,6 +3636,7 @@ N24CFieldPathHuffmanEncoder8LeafNodeE
 "N$4$n
 N-5(6
 N,5@y0&
+	!N9	
 N)!9,
 N		@9*
 N,9@y0F
@@ -4115,6 +4121,8 @@ PullKinematicTransformsWorker
 PullKinematicTransformsWorker_PerWorld_Deprecated
 pushaway
 PushDynamicTransformsWorker
+PVEC_TYPE_LITERAL
+PVEC_TYPE_LITERAL_COLOR
 	)@)p.@y
 !P@ya
 pz_clip
@@ -5391,6 +5399,7 @@ vpcf20
 vpcf21
 vpcf22
 vpcf23
+vpcf24
 vpcf3
 vpcf4
 vpcf5
@@ -5643,10 +5652,10 @@ Y@-3SE-C
 	y4xl
 @y69@yr
 @y8	@y
+@ya5N
 Yaw; 
 yaw_end
 yaw_start
-@y	]B
 =yb@y
 &@ybz
 Y-c('
@@ -5709,7 +5718,7 @@ y(	@yhb
 y(	@yhn
 y(	@yhz
 @y.yj
-@y.	@yliM
+@y.	@yl
 )yyx_
 	Y@y	X
 @y)Y@y

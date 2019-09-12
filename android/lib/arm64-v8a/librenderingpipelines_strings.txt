@@ -8,7 +8,7 @@
 @-#(!
 *-@)!
 00000000-0000-0000-0000-000000000000
-(!09Nm
+(!094q
 =0DD-
 0ED- 
 0=Off, 1=DebugWireframe, 2=DebugSolidBlink
@@ -122,7 +122,7 @@
 7IConVar
 8CFmtStrNILi256ELb0EE
 8x9,7
-	!]9	
+	!^9	
 9(3@9
 	@@9h
 9h'@)*
@@ -648,7 +648,6 @@ f %d %d %d
 FeetSettings
 FeModel combiner: Too many ropes (%u) or links (%u): cannot fit sum in uint16
 %f %f %f %f
-F-H9B
 .fini_array
 FixupResourceName: Illegal full path passed in ("%s")!
 FixupResourceName: Illegal path, missing extension passed in ("%s")!
@@ -732,7 +731,7 @@ HelpSystem_001
 hf@9H
 hf@9i
 H%@)J	@
-hj581n
+hj48Go
 H#L9`r
 Hologram Depth
 Hologram Wireframe
@@ -807,7 +806,7 @@ IQuickTime001
 is_debris
 #It contains connectivity part %d with %d vertices
 @ @-J
-J78h8
+J78ND
 J-cb@
 J-dj@
 JEIJJ}
@@ -998,6 +997,8 @@ m_bVisible
 m_ChainData
 m_Children
 MClassHasCustomAlignedNewDelete
+m_Color
+m_ColorScale
 m_ConeAxis
 m_ConeCutoff
 m_constraints
@@ -1086,6 +1087,7 @@ m_flSplayMaxAngle
 m_flSplayMinAngle
 m_flStartTime
 m_flStartTimeMax
+m_flTailAlphaScale
 m_flTraceHeight
 m_flTraceRadius
 m_flUvDensity
@@ -1119,6 +1121,7 @@ Missing file '%s'
 m_JointConstraintPairs
 m_JointName
 m_Joints
+m_LiteralColor
 m_material
 m_materialName
 m_metacarpalBoneName
@@ -1262,14 +1265,18 @@ m_vCapsulePos1
 m_vCapsulePos2
 m_vConeApex
 m_vecCenter
+m_vecColorScale
 m_vecSize
+m_vecTailColorScale
 m_vectorAttributes
 m_vectorParams
+m_vEndTrailTintFactor
 m_vertexBuffers
 m_vForwardLS
 m_vHeelOffset
 m_vInfluenceOffsets
 m_vInfluenceRotations
+m_vLiteralValue
 m_vMaxBounds
 m_vMinBounds
 m_vOffset
@@ -1443,6 +1450,8 @@ ptr( 0x%p )
 ../public/tier1/utllinkedlist.h
 ../public/tier1/utlrbtree.h
 ../public/tier1/utlsortvector.h
+PVEC_TYPE_LITERAL
+PVEC_TYPE_LITERAL_COLOR
 q-A(!
 qJT-s
 QuarterRes
@@ -1899,6 +1908,7 @@ vpcf20
 vpcf21
 vpcf22
 vpcf23
+vpcf24
 vpcf3
 vpcf4
 vpcf5

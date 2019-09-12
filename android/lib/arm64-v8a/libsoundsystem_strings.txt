@@ -260,7 +260,7 @@
 2iqx_
 2irx_"0k
 2?"/k
-2?k78q
+2?k78W
 2_!-kc	
 2Ki)8x
 2L1@y
@@ -395,6 +395,7 @@ A#@9
 	A}9_1
 	A}9_a	
 A9)EG
+	A}9j
 *%A9J
 	A}9J
 AA9	I@
@@ -621,7 +622,7 @@ bUpdate
 burst_randomize
 burst_scale
 C-!8"
-C?@8"
+C?@8B
 	!c9	
 cable
 calc_angles_facing
@@ -754,7 +755,6 @@ CMemAllocSystemInitialize
 C)n*@
 collision_group
 collision_prop
-Color
 COLORCORRECTION_VERSION_1
 command
 CommandLine
@@ -953,6 +953,7 @@ Cycle or diamond double-reference to '%s'
 @-D	@
 D-  "
 d6@y#
+d6@yc
 d6@yC
 D-`8 
 D-!8 
@@ -1349,7 +1350,7 @@ HIGHDPI
 Highest
 HighPass
 h&I)tb
-hj)8Z
+hj)8z
 hJAy`
 hJAy	
 HostStateMgr001
@@ -1407,6 +1408,7 @@ If set to 1, report all sounds stopped with S_StopSound().
 If set to 1, report more error found when playing sounds.
 If set to 1, show all incoming updates to vmix inputs.
 I-gR@
+@-#IH
 +ih8k
 ii8#hi8
 Iii8*
@@ -1712,6 +1714,7 @@ itemName
 itemPos
 itemType
 itemTypeName
+iwxSQ
 Ix_!4k
 Ix?!7k
 Ix?!8k
@@ -1752,7 +1755,7 @@ jn87kn8
 JNI_OnLoad
 JNI_OnUnload
 JSON error, unterminated element: 
-ju8H]
+ju8HY
 J{)x)
 J!_x_!5k
 j=@ykA@y
@@ -1766,7 +1769,7 @@ k2D)m:E)
 *k2@y
 k(8vV@
 K9y;xa
-KA{9(
+KA{9H
 kAKJJ
 key_groups
 KeyValueCache001
@@ -1974,6 +1977,8 @@ m_bUseHighestEndCP
 m_ChainData
 m_Children
 MClassHasCustomAlignedNewDelete
+m_Color
+m_ColorScale
 m_controlInputs
 m_controlMeters
 m_controlPoints
@@ -2032,6 +2037,7 @@ m_flSlopeIncoming
 m_flSlopeOutgoing
 m_flStartTime
 m_flStartTimeMax
+m_flTailAlphaScale
 m_ForceGenerators
 m_groupList
 m_hSnapshot
@@ -2060,6 +2066,7 @@ m_JointConstraintPairs
 m_JointName
 m_Joints
 M)	 K
+m_LiteralColor
 m_matchPattern
 m_matchSoundEventName
 m_matchSoundEventSubString
@@ -2207,6 +2214,10 @@ m_vActions
 m_values
 m_vDomainMaxs
 m_vDomainMins
+m_vecColorScale
+m_vecTailColorScale
+m_vEndTrailTintFactor
+m_vLiteralValue
 .M@yiA
 n1Aim
 N24CFieldPathHuffmanEncoder12InternalNodeE
@@ -2591,6 +2602,8 @@ public.sync_bpm_beats
 public.volume
 PurgeAndDeleteAll: Deleting orphaned CSoundEvent pointer for %s via shutdown
 Purge and reload all vmidi data and files.
+PVEC_TYPE_LITERAL
+PVEC_TYPE_LITERAL_COLOR
 	Q@9?
 	Q@9	
 ?	@qA
@@ -3185,7 +3198,8 @@ Sustain target amplitude
 Sustain time (ms)
 %s| Virtual: %s; Abstract: %s; TrivialConstr: %s; TrivialDestr: %s
  : %s : vol: %4.2f, sndlvl: %4.2f 
-s@yA	
+s@y!	
+s@ya	
 S@y	A
 s@yHC
 sync_track
@@ -3435,7 +3449,7 @@ virtual CSfxTable *CVSoundTypeManager::GetSfx(const char *, bool)
 V_IsAbsolutePath
 VisBuilder_001
 V_isnan
-v"@-j.A-h
+v"@-j.A-
 V_log10f
 V_logf
 VMaterialSystem2_001
@@ -3512,6 +3526,7 @@ vpcf20
 vpcf21
 vpcf22
 vpcf23
+vpcf24
 vpcf3
 vpcf4
 vpcf5
@@ -3615,6 +3630,7 @@ WorldRendererMgr001
 W@y	E
 	 x: %4f y: %4f z: %4f
 X#@9(?
+_x`aC
 xfade
 =	/@y
 +	@y,

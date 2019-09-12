@@ -179,9 +179,9 @@ $0 to $1,
 2Hc&9
 	2	i*
 2j"@9)p
-2?k78
+2?k78f\
 2_k88
-2?k88
+2?k88eX
 2Way_0( %s )
 2Way_1( %s )
 30CGameSystemReallocatingFactoryI15CTestGameSystemS0_E
@@ -959,7 +959,7 @@ DepthPassBatchID
 DescriptorProto
 DescriptorProtosH
 developer
-df@9#
+df@9C
 diffcheck
 diffcheck_playerslot
 diffcheck_spew
@@ -1394,7 +1394,6 @@ h)8Ay)
 h"@9h
 h*@9h/
 h.@9H
-h"@9i
 h"@9)iG
 h"A9a
 h"A9)}F
@@ -1603,8 +1602,8 @@ j48	C
 j48t^@
 j4xH;@
 j58hf@9(
-j58nO
-j88G%
+j58nK
+j88-!
 J!@9#
 J]A9_
 jA9hj
@@ -1642,11 +1641,11 @@ jv8?)
 JYix*$
 	*jz-
 ?k58D
-?k787t
+?k787p
 ?k78h
+k78@j
 k78o_
-k78Zn
-*?k78zx
+*?k78`t
 k(8vV@
 K	A9lC
 *kb@9
@@ -1844,6 +1843,8 @@ m_bVisible
 m_ChainData
 m_Children
 MClassHasCustomAlignedNewDelete
+m_Color
+m_ColorScale
 m_ConeAxis
 m_ConeCutoff
 m_constraints
@@ -1958,6 +1959,7 @@ m_flSplayMaxAngle
 m_flSplayMinAngle
 m_flStartTime
 m_flStartTimeMax
+m_flTailAlphaScale
 m_flTickRemainder
 m_flTraceHeight
 m_flTraceRadius
@@ -1996,6 +1998,7 @@ Missing name.
 m_JointConstraintPairs
 m_JointName
 m_Joints
+m_LiteralColor
 m_LoopState
 m_material
 m_materialName
@@ -2166,14 +2169,18 @@ m_vCapsulePos1
 m_vCapsulePos2
 m_vConeApex
 m_vecCenter
+m_vecColorScale
 m_vecSize
+m_vecTailColorScale
 m_vectorAttributes
 m_vectorParams
+m_vEndTrailTintFactor
 m_vertexBuffers
 m_vForwardLS
 m_vHeelOffset
 m_vInfluenceOffsets
 m_vInfluenceRotations
+m_vLiteralValue
 m_vMaxBounds
 m_vMinBounds
 m_vOffset
@@ -2549,6 +2556,8 @@ public_dependency
 ../public/tier1/utllinkedlist.h
 ../../public/tier1/utlrbtree.h
 ../public/tier1/utlsortvector.h
+PVEC_TYPE_LITERAL
+PVEC_TYPE_LITERAL_COLOR
 py_generic_services
 QAngle
 	QB9i
@@ -3116,6 +3125,7 @@ vpcf20
 vpcf21
 vpcf22
 vpcf23
+vpcf24
 vpcf3
 vpcf4
 vpcf5
@@ -3214,6 +3224,7 @@ xf@)*
 Yaw; 
 yaw_end
 yaw_start
+Yc&9[
 @y+}E
 )yhx)$
 )Yhx)$
@@ -3221,7 +3232,7 @@ yaw_start
 )YJJ)}
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 Y`x($
-y[(xp*
+y[(xp.
 _Z14V_stristr_fastPKcS0_
 _Z17LoggingSystem_Logi17LoggingSeverity_tRK14LeafCodeInfo_tPKcz
 _Z6DevMsgPKcz

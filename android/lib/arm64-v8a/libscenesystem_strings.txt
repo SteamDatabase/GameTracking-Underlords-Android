@@ -165,7 +165,7 @@ $0 to $1,
 1DBlend
 *1H9	
 @-1ho
-1@)k1C
+1@)k)C
 1 = visualize bounds, 2 = visualize sceneobject mesh materials
 !2@=!
 	2*	@
@@ -262,7 +262,7 @@ $0 to $1,
 2ij(8F
 2j"@9)p
 2?k78
-2_k88]!
+2_k88]
 2?k88
 2njj8l
 2Way_0( %s )
@@ -459,7 +459,6 @@ _8o%@8
 )	@9*
 @9)!@
 @9*	@
-	!@9	
 	)@9)
 	)@9*
 	9	!@
@@ -471,13 +470,12 @@ _8o%@8
 @9(! 7
 @9() 7
 @9%	@9&
- @9	$@9JQG
- @9	$@9JUF
+ @9	$@9JIG
+ @9	$@9JMF
 @9?aEkA
 	9	!B9
 @9)+C
 9CFunctor3IPFvP10CSceneViewP11CSceneLayerbES1_S3_b12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEEE
-?!*9f
 (@@9h
 @9h*@
 (@@9H
@@ -497,13 +495,15 @@ _8o%@8
 @9i&@
 @9I	@
 "@9i"@9
+@9)IF
+ @9)IG
 9	ii8(
 9ISequence
 9j*@9(
 @9J9	
+@9JIG
 @9jjh8*
 9jqA9
-@9JQG
 @9JU	
 !!@9K
 )!@9	k(8I
@@ -512,10 +512,9 @@ _8o%@8
 9kaA9
 @9	ki8
 9kj(8|
+?!*9L
 9lY)<xZ)
 #9(M@
-@9)QF
- @9)QG
 (@@9sb
 (@@9t
 (@@9T
@@ -534,20 +533,20 @@ _8o%@8
 +@)	/A)
 	(A)(
 A-!(!
-(A297V
 A- 8 
 !^a9-
 +a@9?
-	a}9	
+	a~9	
 {A9	=
+	!A9	
 		A9?
 		A9	
 	A@9)
 	A@9)	
 	A@9	
 a@9+a
-"A9))F
-A9))F
+"A9)!F
+A9)!F
 		A9h
 	A9h&A
 ^A9i^
@@ -557,7 +556,7 @@ A9i>@
 	A@9I
 A9	ii
 	A9j"A
-	 A9J)F
+	 A9J!F
 .!A9k
 ,	A9K
 +	A9K
@@ -756,10 +755,10 @@ attenuation2
 Attribute counts between meshes is inconsistent
  auto alias
 auto_unragdoll_duration
-	ax9I
 AX-B8#
 Ax_!"k
 AXk!#
+	ay9I
 ?AYki
 @-b	@
 !^B(*
@@ -774,10 +773,10 @@ B@9
 ^B9h^
 (<B9h
 ) B9(H@
-b@9J1F
+b@9J)F
 bA9hb
 BA9iB
-bA9J)F
+bA9J!F
 BackUp() can only be called after a successful Next().
  BackUp() can only be called after Next().
 Bad expression operator: '%c%c', expected C style boolean expression operator.
@@ -918,11 +917,9 @@ C6FaceSkyboxObjectDesc
 C- 8 
 C-!8"
 (C@9(
+C9)EC
 (C@9h
 c9ibD
-c-9*l
-C9)MC
-c-9sq
 cA9s~
 cable
 CAimConstraint
@@ -1718,6 +1715,7 @@ FeetSettings
 FeModel combiner: Too many ropes (%u) or links (%u): cannot fit sum in uint16
 %f %f %f %f
 fflush
+F-H%@
 field
   Field       : 
 Field "
@@ -1996,7 +1994,6 @@ Groups are not supported in proto3 syntax.
 g_Tier1_BitWriteMasks
 g_Tier1_CRC64Table
 g_VProfCurrentProfile
-g`YfA
 )h&	)
 #@)h&
 h&@)?
@@ -2019,9 +2016,9 @@ h"@9h
 h*@9h/
 h.@9H
 h"@9i
-h"@9)QG
+h"@9)IG
 h"A9a
-h"A9))F
+h"A9)!F
 HammerMapLoader001
 Hammer/UsesBakedLighting
 handindex
@@ -2079,9 +2076,9 @@ HIGHDPI
 hi,xk
 h&@)j
 H$@-J
-hj584!
+hj58S
+hj)87b
 *hj)8h
-hj)8h`
 hj)8H
 hJAyJ
 hjj8	
@@ -2111,7 +2108,6 @@ hS@9HS
 hurt_me
 hurt_them
 hv@9)
-hv@9)%D
 HW Does not support occlusion queries!
 Hx)|@
 h*@y_
@@ -2131,7 +2127,7 @@ i)8i&
 ?i(8?i*x?i+
 _i)8j
 i"@9@
-i"@9JQG
+i"@9JIG
 ib@9`
 ib@9(
 ib@9)
@@ -2139,7 +2135,7 @@ ib@9i
 i"B9i
 ib@9j
 ib@9l
-ibA9J)F
+ibA9J!F
 i*B)h
 i.Bx?
 I CUtlLinkedList<CCharacterDecalRenderer::CCharacterDecalSceneObject *, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CCharacterDecalRenderer::CCharacterDecalSceneObject *, unsigned short>, unsigned short> >::AllocInternal(bool) [T = CCharacterDecalRenderer::CCharacterDecalSceneObject *, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<CCharacterDecalRenderer::CCharacterDecalSceneObject *, unsigned short>, unsigned short>]
@@ -2182,19 +2178,19 @@ Iii8*
 Ii+x!
 i"@)j
 *ij(8
-*ij(8>~
-*ij(8}~
 ij(8(
-*ij(85~
-*ij(8b~
-*ij(8G~
+*ij(86z
+*ij(8cz
+*ij(8Hz
 ij(8I
-*ij(8k~
 *ij(8kj*
-*ij(8P~
-*ij(8t~
-*ij(8Y~
+*ij(8lz
+*ij(8Qz
+*ij(8-z
+*ij(8?z
+*ij(8$z
 ij(8Z
+*ij(8Zz
 ijj8?
 IjJY@
 ijw8*
@@ -2349,8 +2345,8 @@ j48	C
 j48t^@
 j4xH;@
 j58hf@9(
-J78}5
 j78a&l
+J78c1
 j)8	?
 j)8	1
 j(8h>
@@ -2358,8 +2354,8 @@ j)8hR@
 j(8jj)8
 j(8tj)8
 J!@9#
-!j9{_F
-j9{_F
+!j9{WF
+j9{WF
 J]A9_
 jA9hj
 JA9iJ
@@ -2371,7 +2367,7 @@ java_multiple_files
 java_outer_classname
 java_package
 java_string_check_utf8
-@}J)B
+@}J!B
 JB9hJ
 J-cb@
 j.D)J}@
@@ -2417,7 +2413,7 @@ K1D)M9E)
 K1F)M9G)
 K1H)M9I)
 ?k58D
-k689W
+k689O
 *?k78
 ?k78h
 k78o_
@@ -2774,6 +2770,7 @@ m_ChainData
 m_Children
 MClassHasCustomAlignedNewDelete
 m_Color
+m_ColorScale
 m_ConeAxis
 m_ConeCutoff
 m_constraints
@@ -2906,6 +2903,7 @@ m_flSplayMinAngle
 m_flStartFadeDistanceSquared
 m_flStartTime
 m_flStartTimeMax
+m_flTailAlphaScale
 m_flTraceHeight
 m_flTraceRadius
 m_flUvDensity
@@ -2945,6 +2943,7 @@ m_JointName
 m_Joints
 m_LayerName
 m_lightCookie
+m_LiteralColor
 m_masks
 m_material
 m_materialName
@@ -3176,9 +3175,12 @@ m_vConeApex
 m_vecAABBMaxes
 m_vecAABBMins
 m_vecCenter
+m_vecColorScale
 m_vecSize
+m_vecTailColorScale
 m_vectorAttributes
 m_vectorParams
+m_vEndTrailTintFactor
 m_vertexBuffers
 m_vForwardLS
 m_vHeelOffset
@@ -3188,6 +3190,7 @@ m_Views
 m_vInfluenceOffsets
 m_vInfluenceRotations
 m_vLightingOrigin
+m_vLiteralValue
 m_vMaxBounds
 m_vMinBounds
 m_vOffset
@@ -3717,6 +3720,8 @@ public_dependency
 ../public/tier1/utlmultilist.h
 ../public/tier1/utlrbtree.h
 ../public/tier1/utlsortvector.h
+PVEC_TYPE_LITERAL
+PVEC_TYPE_LITERAL_COLOR
 py_generic_services
 	(Q)(
 	Q@9I
@@ -3748,9 +3753,9 @@ R8G8B8A8_ETC2_EAC
 R8G8B8_ETC2
 *R)8yv
 R@9hR
-r	a89_
+r	a99_
 RA9iR
-R	a 9KR
+R	a 9KV
 RadianEuler
 radius0
 radius1
@@ -3959,6 +3964,7 @@ runspeed
 R@y		
 r@yi"@
 ryjj8
+R@yJQE
 --- %s: 
 "%s" 
 "%s":
@@ -4410,7 +4416,6 @@ T: %7.3f
 *T)8yv
 T(@@9
 T)	@9
-t@9)%D
 T&A@-
 </table>
 <table border="1">
@@ -4967,6 +4972,7 @@ vpcf20
 vpcf21
 vpcf22
 vpcf23
+vpcf24
 vpcf3
 vpcf4
 vpcf5

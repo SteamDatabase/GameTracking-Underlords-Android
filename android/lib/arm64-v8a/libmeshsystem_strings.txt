@@ -250,8 +250,8 @@ AE_VORTIGAUNT_ZAP_POWERUP
 AE_VORTIGAUNT_ZAP_SHOOT
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
-	aG9	
 Agg data %d: %p (%d parts, crc 0x%08X)
+	aH9	
 )AHJ*
 ai_model_info
 AIWalkable
@@ -1026,7 +1026,7 @@ hf@9i
 hidden
 Hitbox indexing is incorrect for set %s, hitbox %s. Hitboxes will not be setup properly.
 H-@)J	@
-hj48U
+hj48t
 HostStateMgr001
 hR@y`
 hR@y	
@@ -1034,7 +1034,6 @@ hR@yt
 hurt_me
 hurt_them
 h*@y_
-h&@y	
 h&@y)uG
 <	)@)i*
 *-@i)	
@@ -1129,8 +1128,8 @@ i)xhR@
 *i.xi>@yj:
 i>@yh
 iy*xi
-j(8	m
-	!J9	
+J78t 
+j(8	i
 J-cb@
 J-dj@
 JEIJJ}
@@ -1159,6 +1158,7 @@ JointMotion_t
 *k2@y
 K`8B@
 K`8c@
+	!K9	
 	KB8#
 KeyValueCache001
 KeyValuesSystem
@@ -1356,6 +1356,7 @@ m_CollisionGroupString
 m_CollisionPlanes
 m_CollisionSpheres
 m_Color
+m_ColorScale
 m_components
 m_ConeAxis
 m_ConeCutoff
@@ -1575,6 +1576,7 @@ m_flSplayMinAngle
 m_flStartTime
 m_flStartTimeMax
 m_flStaticImpactVolume
+m_flTailAlphaScale
 m_flTipMass
 m_flTraceHeight
 m_flTraceRadius
@@ -1668,6 +1670,7 @@ m_linearLimitDamping
 m_linearLimitRestitution
 m_linearLimitSpring
 m_linearLimitValue
+m_LiteralColor
 m_LocalForce
 m_LocalRotation
 m_lodGroupSwitchDistances
@@ -2084,10 +2087,13 @@ m_vCentroid
 m_vConeApex
 m_vDiag
 m_vecCenter
+m_vecColorScale
 m_vecSize
+m_vecTailColorScale
 m_vectorAttributes
 m_vectorParams
 m_vEnds
+m_vEndTrailTintFactor
 m_vertexBuffers
 m_VertexSetNames
 m_Vertices
@@ -2099,6 +2105,7 @@ m_vHullMin
 m_vInfluenceOffsets
 m_vInfluenceRotations
 m_vLinearTargetVelocity
+m_vLiteralValue
 m_vMassCenterOverride
 m_vMax
 m_vMaxBounds
@@ -2343,9 +2350,11 @@ pthread_mutex_unlock
 ../public/tier1/utlrbtree.h
 ../public/tier1/utlsortvector.h
 ../public/tier2/fileutils.h
+PVEC_TYPE_LITERAL
+PVEC_TYPE_LITERAL_COLOR
 qAdjust
 QAngle
-	qB9I
+	qC9I
 Qi"A)`
 qJT-s
 Quaternion
@@ -2701,6 +2710,7 @@ vpcf20
 vpcf21
 vpcf22
 vpcf23
+vpcf24
 vpcf3
 vpcf4
 vpcf5

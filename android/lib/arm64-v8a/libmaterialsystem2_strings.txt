@@ -698,7 +698,7 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 *-D),5E)_
-d6@yC
+d6@y#
 ,DA)R
 .data
 .data.rel.ro
@@ -1092,6 +1092,7 @@ i6@yh
 (i78h
 ?i(8	
 (i{8`
+i;86m
 (i:8h
 *i(8i
 i.@9h
@@ -1208,10 +1209,10 @@ Iu@y?1
 i>@yh
 I$@yi
 j~	)`
-J38]=
+J38CA
 j58hf@9(
 j68hb@9h
-J78$=
+J68jB
 J8@-I0B-O4D-K
 J!@9_
 JaN9j
@@ -1244,7 +1245,6 @@ JNI_OnUnload
 $Jo8$J!8!
 jq8!$B9
 JSON error, unterminated element: 
-!^Ju<
 j(xhb@9
 	*jz-
 _!/k"
@@ -1539,7 +1539,9 @@ m_bUseHighestEndCP
 m_ChainData
 m_Children
 MClassHasCustomAlignedNewDelete
+m_Color
 m_colorCorrectionVolumeData
+m_ColorScale
 m_ControlRigData
 MD5 match on %s, loading from vcs
 MD5 mismatch on %s, will load from vfx instead.
@@ -1611,6 +1613,7 @@ m_flShoulderStrength
 m_flSkyboxBloomStrength
 m_flStartTime
 m_flStartTimeMax
+m_flTailAlphaScale
 m_flToeDenom
 m_flToeNum
 m_flToeStrength
@@ -1642,6 +1645,7 @@ m_JointName
 m_Joints
 &M*jV
 MK,y*
+m_LiteralColor
 m_materialName
 m_Name
 m_nAnimationType
@@ -1750,9 +1754,13 @@ m_variableDescriptionArray
 m_vBlurTint
 m_vCenter
 m_vColorTint
+m_vecColorScale
+m_vecTailColorScale
 m_vectorAttributes
 m_vectorParams
+m_vEndTrailTintFactor
 m_vignetteParams
+m_vLiteralValue
 m_vsInputSignatureArray
 N24CFieldPathHuffmanEncoder12InternalNodeE
 N24CFieldPathHuffmanEncoder5INodeE
@@ -1974,6 +1982,8 @@ ptr( 0x%p )
 ../public/tier1/utllinkedlist.h
 ../public/tier1/utlntree.h
 ../public/tier1/utlrbtree.h
+PVEC_TYPE_LITERAL
+PVEC_TYPE_LITERAL_COLOR
 QAngle
 qDI;8j
 q	i{8)
@@ -2563,6 +2573,7 @@ vpcf20
 vpcf21
 vpcf22
 vpcf23
+vpcf24
 vpcf3
 vpcf4
 vpcf5
@@ -2625,7 +2636,7 @@ V_vsnprintfSize
 V_vsnprintfWarnTrunc
 V_wcstoi64
 v@y?5
-W	)#/
+W	)#3
 Warning
 WARNING: Failed to convert introspected block for file: %s
 WARNING: Invalid resource version (%d): %s

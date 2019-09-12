@@ -56,7 +56,7 @@
 29CRD_RegisterResourceDataUtils
 29IRD_RegisterResourceDataUtils
 2	h(8H
-2hb89
+2hb99
 30IAsyncResourceDataRequestOwner
 32CSchemaRegistration_resourcefile
 34CSchemaRegistration_resourcesystem
@@ -180,8 +180,8 @@ AnimSmoothLoop
 AnimStartLoop
 AnimSubtract
 anonymous 
-	Ap9	
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
+	Aq9	
 archive
 AssertMsg_ConditionFailed
 AssetBrowserSystem_001
@@ -677,10 +677,9 @@ IQuickTime001
 is_debris
 IsResourceManifestGroupKnown: Manifest group name is empty or null
 i"@yh
-J38cD
-J68VE
+J38I@
+J68<A
 j6@y_
-J78*D
 JEIJJ}
 JIIJJ}
 jj(8(
@@ -742,7 +741,6 @@ loop_break_on_flashlight
 loop_in_action
 looping
 LrwcE
-	!m9	
 - Manifest, %d operations: %s
 + Manifest, %d operations: %s
 - Manifest, operation: %lld)
@@ -797,6 +795,7 @@ m_bUsesIndexedBakedLighting
 m_ChainData
 m_Children
 m_Color
+m_ColorScale
 m_ControlRigData
 m_DefaultSolverSettings
 m_DefaultTargetSettings
@@ -852,6 +851,7 @@ m_flScalePerParentParticle
 m_flShadowCascadeDistance
 m_flStartTime
 m_flStartTimeMax
+m_flTailAlphaScale
 m_ForceGenerators
 m_hResource->m_nLoadingResource != LOADING_RESOURCE_INDEX_INVALID
 m_hResource->m_nStreamingResource != STREAMING_RESOURCE_DATA_INDEX_INVALID
@@ -868,6 +868,7 @@ m_JointConstraintPairs
 m_JointName
 m_Joints
 m_lightCookie
+m_LiteralColor
 m_Name
 m_nAnimationType
 m_nAttributeToWrite
@@ -959,7 +960,11 @@ m_TargetSource
 m_Theta
 m_Type
 multiplayer_break
+m_vecColorScale
+m_vecTailColorScale
 m_vecUp
+m_vEndTrailTintFactor
+m_vLiteralValue
 m_vMaxBounds
 m_vMinBounds
 	 N))
@@ -967,6 +972,7 @@ N24CFieldPathHuffmanEncoder12InternalNodeE
 N24CFieldPathHuffmanEncoder5INodeE
 N24CFieldPathHuffmanEncoder8LeafNodeE
 "N$4$n
+	!n9	
 nav_attribute_avoid
 nav_data
 NetworkClientService_001
@@ -1071,8 +1077,10 @@ pthread_mutex_destroy
 ../public/tier1/utllinkedlist.h
 ../public/tier1/utlrbtree.h
 ../public/tier1/utlsortvector.h
+PVEC_TYPE_LITERAL
+PVEC_TYPE_LITERAL_COLOR
 QAngle
-	Qh9I
+	Qi9I
 Qi"A)`
 Qi^*yi
 Quaternion
@@ -1395,6 +1403,7 @@ vpcf20
 vpcf21
 vpcf22
 vpcf23
+vpcf24
 vpcf3
 vpcf4
 vpcf5

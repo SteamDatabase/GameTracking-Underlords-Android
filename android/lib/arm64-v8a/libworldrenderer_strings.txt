@@ -228,7 +228,6 @@
 )=@9)}
 )!@9)
 )@@9	
-	!~9	
 92ji8R
 @92yr
 9,5@8K
@@ -282,8 +281,7 @@
 ()@)+%A)
 A-!(!
 a2@yh2@y
-_<a5I
-	a{9	
+	a|9	
 	A@9	
 	 A9JqG
 A9)qG
@@ -831,7 +829,7 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 *-D),5E)_
-d6@y#
+d6@yc
 d6@yC
 	D@8!
 D@8)%
@@ -1266,11 +1264,9 @@ hf@9A
 hf@9h
 hf@9H
 hf@9i
-hfA9i
 (hide)
 Hitbox indexing is incorrect for set %s, hitbox %s. Hitboxes will not be setup properly.
-hj48?
-hj58"v
+hj48^
 H#L9`3
 HMaterial
 HModel
@@ -1423,6 +1419,7 @@ jiggle bone %u
 Jih8ji(8
 JIIJJ}
 Jikx_
+Ji/yH
 jj(8(
 JNI_OnLoad
 JNI_OnUnload
@@ -1646,6 +1643,8 @@ m_ChildNodeIndices
 m_Children
 MClassHasCustomAlignedNewDelete
 m_clusters
+m_Color
+m_ColorScale
 m_ConeAxis
 m_ConeCutoff
 m_connections
@@ -1764,6 +1763,7 @@ m_flSplayMaxAngle
 m_flSplayMinAngle
 m_flStartTime
 m_flStartTimeMax
+m_flTailAlphaScale
 m_flTraceHeight
 m_flTraceRadius
 m_flUvDensity
@@ -1817,6 +1817,7 @@ m_keyValuesData
 m_layerNames
 m_lightmapInstanceDataOverrides
 m_lightMaps
+m_LiteralColor
 m_manifestName
 m_material
 m_materialName
@@ -2069,9 +2070,12 @@ m_vCapsulePos1
 m_vCapsulePos2
 m_vConeApex
 m_vecCenter
+m_vecColorScale
 m_vecSize
+m_vecTailColorScale
 m_vectorAttributes
 m_vectorParams
+m_vEndTrailTintFactor
 m_vertexBuffers
 m_vForwardLS
 m_vHeelOffset
@@ -2081,6 +2085,7 @@ m_VisClusterMemberBits
 m_visClusterMembership
 m_vLightingOrigin
 m_vLightmapUvScale
+m_vLiteralValue
 m_vMaxBounds
 m_vMinBounds
 m_vOffset
@@ -2380,6 +2385,8 @@ ptr( 0x%p )
 ../public/tier1/utlsortvector.h
 ../public/tier2/fieldpath.h
 PushCurrentSkewBrightnessValuesToSceneObject
+PVEC_TYPE_LITERAL
+PVEC_TYPE_LITERAL_COLOR
 Q(aNf(!
 qangle
 QAngle
@@ -2949,6 +2956,7 @@ vpcf20
 vpcf21
 vpcf22
 vpcf23
+vpcf24
 vpcf3
 vpcf4
 vpcf5
