@@ -38,7 +38,6 @@
 ((@-)
 ()@))	@
 (%@-*	@
-(%@)`
 )@-		@
 )*-)+
 )+@)+
@@ -69,7 +68,6 @@
 @-%	@
 $.!("
 $@)#@@)
-*-@)!
 *-@))	@
 *!@-)	@
 *!@))	@
@@ -900,6 +898,7 @@ $0 to $1,
 16CModifierFactoryI26CDAC_Modifier_Synergy_OgreE
 16CModifierFactoryI26CDAC_Modifier_UpgradedRankE
 16CModifierFactoryI27CDAC_Modifier_Assassin_LeapE
+16CModifierFactoryI27CDAC_Modifier_AssassinWoundE
 16CModifierFactoryI27CDAC_Modifier_BloodboundHatE
 16CModifierFactoryI27CDAC_Modifier_CraniumBasherE
 16CModifierFactoryI27CDAC_Modifier_Deadeye_BonusE
@@ -1433,6 +1432,8 @@ $0 to $1,
 18TEDust_GameEvent_t
 18TEFizz_GameEvent_t
 18ToolTraceRayResult
+	1/9(}
+1*9(~
 1960/00/00
 19CAI_ChangeHintGroup
 19CAmmoDefInitializer
@@ -1516,8 +1517,6 @@ $0 to $1,
 19CVariantSaveDataOps
 19CVoiceGameMgrHelper
 19CWeaponScriptParser
-	1/9H}
-1*9H~
 19IAttachmentOverride
 19IConsoleDisplayFunc
 19IDecalEmitterSystem
@@ -1565,8 +1564,6 @@ $0 to $1,
 	1@y?!"k`
 ?2: 	
 +2: 	
-	*!`2
-	2!@,
 	2"("
 	2@( 
 	2*	@
@@ -2439,6 +2436,7 @@ $0 to $1,
 27CDAC_Ability_Barricade_Aura
 27CDAC_Ability_Slark_DarkPact
 27CDAC_Modifier_Assassin_Leap
+27CDAC_Modifier_AssassinWound
 27CDAC_Modifier_BloodboundHat
 27CDAC_Modifier_CraniumBasher
 27CDAC_Modifier_Deadeye_Bonus
@@ -2911,6 +2909,7 @@ $0 to $1,
 2hB!9
 2hF 9
 2hf99
+2hF 9hN
 2hj+9
 2hjh8
 	2hN	
@@ -2929,6 +2928,7 @@ $0 to $1,
 2ii*x
 2ij(8
 2ij(8F
+2ij(8tE
 2+imx
 2iR:9
 2ir99h
@@ -2945,9 +2945,9 @@ $0 to $1,
 2?!;k
 2?!!k
 2?"!k`
-2?k78
+2?k78m
 2_k88
-2?k88
+2?k88l
 2k_EGCMsgInitiateTradeResponse_VAC_Banned_Initiator
 2Ki(8
 2Ki(8k
@@ -2968,8 +2968,7 @@ $0 to $1,
 }2'@+P
 2 .ProtoFlattenedSerializerField_t"!
 2	q19
-2	q>9
-2	q,9(~
+2	q,9
 2	q@y?
 	2R*3
 2) Red  : %i
@@ -3730,7 +3729,6 @@ $0 to $1,
 4(D@9(
 %% 4d=[%%%d.%ds] at cycle %%6.4f weight %%5.3f
 	[%4d]: %s%s
-!	@)4F
 4@G8-x
 4h2A9
 4h2O9(
@@ -3768,8 +3766,8 @@ $0 to $1,
 4hRN9(
 4hRN9H
 4hRP9H
-4hr@y@8
-4hR@y@8
+4hr@y`8
+4hR@y`8
 4hVz9
 4hZP9
 4)(@i
@@ -3782,6 +3780,7 @@ $0 to $1,
 ?4I,)w
 4i*@y
 4i"Yy
+!	@)4J
 4jr@y
 4kb@y
 4k_EGCMsgInitiateTradeResponse_Target_Already_Trading
@@ -4335,6 +4334,7 @@ _6v:@
 @-	8"
 @8)		
 @8	}@
+*-@)!@8
 #.$8&
 @-%80
 %8.3f
@@ -4378,6 +4378,7 @@ _6v:@
 87)#A9i
 87H	@7
 87iZ@
+	87uM
 %8.8s: %-5d entries, '%s', ...
 8CAISound
 8CAmmoDef
@@ -4464,11 +4465,12 @@ _8|{t
 9(0@y
 )#@95c
 95*P>
+!@9?6
 @96Y@
 @9(	(7
 @9(	(7`
- @9)8
-@@9)8
+ @9	8
+@@9	8
 @9!8"
 98]@)5	@
 98N*>
@@ -4493,7 +4495,6 @@ $9_!$9
 ?9A@c
 @9 aD
 @9?aEkA
-!@9?B
 @9B!@
 	9B9))*
 @9)+C
@@ -4520,6 +4521,7 @@ $9_!$9
 9CPathData
 9CPropData
 9CPushable
+&9cQ	
 ?;9Cq
 9CRegistry
 9CSoundEnt
@@ -4527,10 +4529,10 @@ $9_!$9
 9CTEImpact
 9CTESparks
 9CTimeline
-&9cY	
+!!@9D7
 9D7V=
-!!@9DC
 (@@9	f
+"@9@F
 (@@9	g
 9gCN>
 (@@9	h
@@ -4589,9 +4591,9 @@ $9_!$9
 @9+i(8k
 "@9i"@9
 @9i"[9
+@9i"@9
 9	i@9
 ^9I9)
-@9i"@946
 9*i@9J
 9*i@9X
 9IEconTool
@@ -4626,7 +4628,6 @@ _!9ki
 9)P@y	q
 9Q"@)
 9QH@)A
-"@9@R
 @9R"@9)
 (9	S)!@
 **9	S
@@ -4673,10 +4674,11 @@ _!9ki
 (@@9tB
 @9TC@
 @9Ts@9
+@@9	U
 @9U|@
 (@@9	v
- @9	V
-"@9	V
+ @9)V
+"@9)V
 (@@9	w
 @9wiu
 (@@9	x
@@ -4702,6 +4704,7 @@ a2U0*
 a2@yh2@y
 ,-A-.5@-
 A5fSXbf7
+(A79+
 	a79H
  .a8"
 @-a	@- 8 
@@ -4711,7 +4714,8 @@ A-!8#
 +a@9?
 	a@9	
 a"@9`
-;A:9{
+a"@9%(
+?A*9)~
 "A9		
 (@A9(
 (A@9(
@@ -4725,11 +4729,10 @@ a"@9`
 	A@9)	
 	A@9	
 A9()(
-a"@9%4
 a@9+a
 `A9)`A9
-a"@9B4
-a"@9B5
+a"@9B(
+a"@9b5
 a"@9b6
 A9@g@
 .A9h.
@@ -4753,14 +4756,13 @@ A$9hf@
 	A@9i
 	A\9i
 A9i>@
-?A*9I~
 )A@9I
 	A@9I
 a"@9"ih
 A9	ii
 A9iji
-#A9j*
 *!A9J
+#A9J*
 A9|J@
 	A9j"A
 A9jji
@@ -4769,10 +4771,11 @@ A9jji
 +a@9Ka
 A9Kik
 +	A9lC
-a"@9oF
+a"@9o:
 	A@9	P
 ?A9tJ@
 A@9vi)
+	A\9vT
 A-a)*
 A-'@A-
 AA9(	
@@ -6311,7 +6314,7 @@ Advancing to ERoundState_Preparing for round %d.
 Advancing to ERoundState_Ready for round %d.
 Advancing to ERoundState_RoundOver for round %d.
 ?*a\`E<
-aE=	<
+aE=)<
 AE_ABILITY_END_EVENT
 AE_ABILITY_START_EVENT
 AE_ABILITY_TICK
@@ -6794,6 +6797,7 @@ An orthographic spot light entity
 An RR_Concept couldn't find its string in the symbol table!
  any other value = set minimum value for cl_interp_ratio
 &A)(o@
+A-OiL
 api_key
 `AP$N
 appear_time
@@ -7139,6 +7143,7 @@ B-(5@
 b59aRM
 b59)y
 *-B),5C)_
+B-(5J
 @-b8"
 @-B8!
 	@-B8!
@@ -7151,7 +7156,7 @@ B`@9!
 B9@  
 B@9a'
 ?B9b8"
-B(9cF
+B(9c:
 ?B\9{g
 B\9{gt
 ^B9h^
@@ -7173,7 +7178,7 @@ b@9JIG
 B(9t"%
 B@9t^N
 B-A8!
-bA9),
+bA9	,
 bA9hb
 BA9hB
 BA9iB
@@ -7304,7 +7309,6 @@ bbox.m_vMinBounds
 !	B-C
 bChainLightningConsidered
 bCraniumBasherTested
-`BCyQ
 %b %d
 bDh%)
 bDiffusalApplied
@@ -7420,7 +7424,6 @@ bloodimpact
 Bmaps\%s.vpk
 ?bMeQ
 bMKBTested
-B-(%O
 bO9A&
 Bodies: %d (%d)
 Body Component Scriptdesc
@@ -7634,10 +7637,10 @@ ButtonBitMask_t
 "B)Ux
 buy_unit
 bValue
+`b@y	
 `b@yh
 B	yi.
 BYield
-`b@yj
 B	yt.
 bytes
 bytes. 
@@ -7646,7 +7649,6 @@ Byte size calculation and serialization were inconsistent.  This may indicate a 
 bytes_read
 bytes_written
 b	yu6
-`b@yy
 $.c($
 :C)   
 !	@-C
@@ -7675,10 +7677,12 @@ C9	a79
 C9,h5
 C@9HC
 	@C9i
+c@9j,
+C@9j,
 C9J#B9?
 CA9`:
 cA9h"
-CA9j*
+CA9J*
 cA9s~
 cable
 Cache
@@ -9071,6 +9075,7 @@ cl_updaterate
 ClusteredDistributionParams_t
 cluster_id
 C-m&@
+C=-|M
 CMapSpawnGroup::OnPostSpawnGroupLoad:  Misconfigured CInfoSpawnGroupLoadUnload(%d), couldn't find landmark named %s
 CMarkupVolume
 CMarkupVolumeTagged
@@ -10737,7 +10742,6 @@ cycler_flex used on model %s without enough flexes.
 C@y)QA
 %d | 
  D-	(@
-!	@)`D
 ?D]`,
 @-D	@
 	D-	)@
@@ -10755,10 +10759,10 @@ d6@y#$
 d6@y#1
 d6@y#7
 d6@yc
+d6@yc=
 d6@yc 
 d6@yc(
 d6@yC
-d6@yC=
 d6@yC 
 d6@yC.
 d6@yC(
@@ -12740,7 +12744,6 @@ eyes_follow
 eZQ9\
 ?-f:*
 @+,]f}/
-!	@)<F
 .F))}
 F-%:%
 F: %.2f deg
@@ -12950,7 +12953,6 @@ fDamage
 f %d %d %d
 #f %d %d %d, original mesh: %d %d %d
 fDistance
-!	@)FE
 F-#E@
 FeetSettings
 _female
@@ -12970,9 +12972,9 @@ ffffff
 fflush
 fGain
 F*%h3x%hgx
-F-H)B
 F*&h%x%hsx
 F*%h'x%hsx
+!	@)FI
 @-FI@-)	@
 F<I @
 field
@@ -13584,8 +13586,6 @@ f@y?! k
 FZ*o7
 @-g	@
 @g|_\
-!	@)"G
-!	@)*G
 .G))}
 ))+G)
 @-G@@-
@@ -14368,6 +14368,7 @@ gxXM|Z
 h&@)?
 h&@)*
 ;+%@H
+!	@)`H
 ('H)_
 @-H  
 #H)	}	
@@ -14417,8 +14418,7 @@ h"@9)%
 h"@9	+
 h&@) 9.
 H'@9(
-h*]948
-h"@9)8
+h"@9	8
 ;h@)9\A)<
 H @9`b
 *h&]9h
@@ -14437,6 +14437,7 @@ H @9h"
 H`@9H
 h*^9i0
 h&@9k
+h"@9)V
 h"@9	V
 h"^9`Z
 h%A)`
@@ -14519,7 +14520,6 @@ hb@9
 h"B9(
 hB@9`
 hB@9(
-hB 9f#
 hb@9h
 hb@9H
 h"B9h
@@ -14532,7 +14532,7 @@ H'B9h
 hb@9)P
 hB@9t
 hB@9u"@
-hb@9	V
+hb@9)V
 hB@9)YB
 h&^)b:A
 hbA9(
@@ -14552,6 +14552,7 @@ hBF9h
 hBI9(
 hBI9H
 H-bN@
+hbN9	&
 hbN9tB
 hBO9h
 hBO9i
@@ -14589,6 +14590,7 @@ head_pitch
 headtype
 head_yaw
 heal_amount
+heal_damp
 heal_duration
 healing_done
 healing_prevented
@@ -14734,6 +14736,7 @@ HEY! Leaving modifier think with a locked modifier manager!
 *hf@9
 *hf@9(
 hf@9_
+hf@9!
 hf@9(
 hF`9	
 hF@9)
@@ -14847,7 +14850,7 @@ hi,xk
 h&_)j
 h%@)j	@
 H%@)J	@
-hj48X
+hj48Z{
 hj58:
 hj@9yF@
 h&@-j.A-
@@ -14891,6 +14894,7 @@ HMD Avatar that owns the VR hands
 HModel
 HModelStrong
 H-m.V-
+#()hN
 !^hNB
 h*O9H
 h*O9i:
@@ -15017,7 +15021,7 @@ hV	yh
 	hw8h
 HW@9XS@9H
 H-"X(
-=h*X9
+=h*X9i9
 =h*X9v
 h*X9v
 h:@y*
@@ -15081,6 +15085,7 @@ i:8jz@
 i)8Ki@9
 i+8Ki@9k
 )i@9	
+i*@9*
 i*@9*3
 )I@9I
 i"@9J
@@ -15295,7 +15300,6 @@ IEconItemInterface
 i*E)h
 IEI*(}
 i*E)k2@
-iE=#MJ
 I-eR@
 Ie@y3
 If > 0, always spawn the specified wave number
@@ -15411,7 +15415,7 @@ iJ_9H:
 ijj8?
 iJP9(?
 ijw8*
-ijW9h?
+ijW9H?
 )ijx?
 *)ijx?
 *ijx_
@@ -16219,7 +16223,6 @@ ip[[x
 Ip@y?
 IP@y?
 i>Pyh
-i*Q9(?
 IQuickTime001
 	)@)ir
 ir8nhr8?
@@ -16562,6 +16565,7 @@ i"Yy?
 @I@z)
 iZA9	
 <j.?)
+!	@)<J
 ('J)*[@
 ))+J)
 @ @-J
@@ -16580,44 +16584,45 @@ j48	C
 j48hR
 j48t^@
 j4xH;@
-j58(:
 j58hf@9(
-j58;L
 J5@y_
 j68HV
 j68u*@
 j68v&@
 j(8(~
 j(8('
-j)8	 
+j)8('
 j)8	?
 j)8	"
 j)8	$
 j)8	*
+j*8*'
 j*8*(
+j+8+'
 j)8	2
 j)8	7
-j)8	A
-j)8H'
+j(8h 
 j(8Hd
 j(8HL
 j(8hM
+j)8i 
 j*8I?
 j)8ID
 j)8iL
 j)8Ir
 j)8`j
-j*8J'
+j*8j 
 j*8J(
 j(8jj)8`
+j(8@k
 j-8K,
 j+8K:
-j+8K'
 j+8Kd
 j+8KV
 j,8LH
 j,8LL
 j,8Lr
+j-8m 
 j-8m.
 j-8M^
 j-8M,
@@ -16662,7 +16667,6 @@ jaw_tilt_controller
 j"B))
 J-B(.
 JB9hJ
-!	@)jC
 J-cb@
 J-dj@
 (*j~E
@@ -16670,6 +16674,7 @@ j.E-1*<
 JEIJJ}
 j.E)l2@
 J-eZ@
+!	@)jG
 ji)8)A
 ji)8	i@9
 ji)8	i@9)
@@ -16695,7 +16700,6 @@ j!JJ+
 jjj8h
 j!JJK
 !JJK|
-jj)xq
 	J"}	K
 )+J)-#K)+3L)
 Jki8_5
@@ -16770,11 +16774,11 @@ jV@y!y|
 jV@y:yt
 jV@y!yt
 j-x-(
+j(x( 
 j)x	@
 j)x		
 j*x*'
 J!_x_!5k
-j(xH 
 j)x	H
 j(xHH
 j-xM 
@@ -16794,6 +16798,8 @@ _!(k#
 &@)k	
 	*_!;k
 	*_!(k
+!	@)"K
+!	@)*K
 ($@)K
 K)@)+)
 (@)k0@)n
@@ -16808,16 +16814,15 @@ k2	)j~
 k2Q)m
 *k2@y
 ?k58D
-k68=]
-k68u]
-*?k78
+k684#
+?k78.
+*?k78e
 ?k78h
 	K!8"
-_k88e
 k(8vV@
 ?){K9_
 @){K9_
-	K9#9
+	K9c%
 k9J{c>
 K	\9K
 K9	S)
@@ -17698,7 +17703,6 @@ kv3format_manager.cpp
 KV3 load transfer failed: %s
 KV Conditional Evaluation Error
 K %vmo
-	k!x	
 )-k@y
 k	@y)
 Kykx)
@@ -21332,6 +21336,7 @@ modifier_assassin
 modifier_assassin_leap
 modifier_assassins_blind
 modifier_assassins_blind_debuff
+modifier_assassin_wound
 modifier_assault_cuirass
 modifier_assault_cuirass_buff
 modifier_assault_cuirass_buff_aura
@@ -23036,7 +23041,6 @@ n9@yN
 n	A9-
 nA9hn
 NA9iN
-#na]B
 nActiveAreas %d + nAreasDestroyed %d + nAreasPendingDestruction %d = %d
 nAlpha
 nameable
@@ -23418,7 +23422,6 @@ NDebugOverlay::ScreenTextOffset
 NDebugOverlay::ScreenTextPretty
 NDebugOverlay::Text
 nDefault
-!	@)NE
 ?N%E\
 NE-`8 
 nearclipplane
@@ -23646,6 +23649,7 @@ nHandID
 nHash
 nHealth
 NhFD9t
+!	@)NI
 Nil time value
 niqx?
 Nj1xkj-
@@ -24105,7 +24109,7 @@ O6`R@
 O6v2@
 o6vB@
 o-!8#
-"O9A&
+"O9!&
 O9`*B
 ? !o^A?
 o/A-m'B-n+@-`C
@@ -25579,6 +25583,7 @@ pxADj
 py_generic_services
 ?	@q)
 -	-	Q
+(%@)`Q
 @-'@@-Q
 Q-   
 	Q29_a29
@@ -25588,7 +25593,7 @@ Q8q(2
 	q*9_
 Q"@9?
 	Q#9_a#9
-Q@9dO
+Q@9W_
 	qA9?
 qangle
 QAngle-world
@@ -25662,7 +25667,6 @@ q$;@z
 	Qz9I
 r-@	*
 "@:R".
-R09(H
 r0@GP!
 >r3\9
 ?r4GV~	
@@ -25751,7 +25755,6 @@ rays.bin
 RAY TEST: %d hits, %d misses, %.2fms   (%d rays, %d sweeps against %d aggregates)
 razor
 RB9hR
-!	@)rC
 R~~C@
 RC9hR
 r_cacheSequenceData
@@ -26156,6 +26159,7 @@ reward_list
 rewards
 reward_sound
 rewardTiers
+!	@)rG
 RGBA color to draw as the background color for nav areas while editing.
 R	h(8	
 Rhj)8
@@ -26207,7 +26211,7 @@ r_JeepViewDampenFreq
 r_JeepViewZHeight
 rJ@LB
 rJMJJ
-R?k78r
+R?k78
 R(k)8
 R)k(84
 R(kh8h
@@ -26328,10 +26332,7 @@ r@y`&@
 R@yHq
 r@yhr
 R	yi2
-`R@y_J
 ryjj8
-`R@y)K
-`R@yt
 R	yu2
 --- %s: 
 "%s" 
@@ -31097,7 +31098,6 @@ XboxSystemInterface001
 xc_crouch_debounce
 XC-Y+9
 X^'@d
-!	@)XD
 Xd@-Z
 ?XEM.
 xen_plant*
@@ -31105,6 +31105,7 @@ xf@)*
 xfF-V+6
 X@)`&G
 ?xG!$fQ
+!	@)XH
 xi*8*i@9J
 xL9-C
 	xp_earned
@@ -31296,7 +31297,7 @@ Y`x($
 y|x(E@
 *y(xj
 +y(xk
-	y:xLd
+	y:xLp
 	@y-	@y
 y+)@yJ
 y+-@yk
