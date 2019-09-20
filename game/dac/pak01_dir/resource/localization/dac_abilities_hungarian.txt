@@ -160,6 +160,10 @@
 		"dac_ability_templar_assassin_refraction"								"Fénytörés"
 		"dac_ability_templar_assassin_refraction_Description"					"Templomos Orgyilkos megközelíthetetlenné válik, elkerülve a sebződést és {s:bonus_damage}% többletsebzésre téve szert.<br><br>A sebzés és az elkerülés különálló hatások, és mindkettőnek {s:instances} példánya van."
 		"dac_ability_templar_assassin_refraction_Lore"							"Ha segítesz nekem, törleszted az adósságod. - <i>Wren, minden elérhető segítséget összeszedve</i>"
+
+		"dac_ability_templar_assassin_meld"										"Meld"
+		"dac_ability_templar_assassin_meld_Description"							"PASSIVE: After teleporting to her target, Templar Assassin does {s:damage} extra damage on her first attack and lowers her target's armor by {s:armor_debuff} for {s:armor_debuff_duration} seconds."
+		"dac_ability_templar_assassin_meld_Lore"								"Everyone goes wild when Lanaya makes her move. - <i>In which Grek likes a lively crowd</i>"
 		
 		//VIPER
 		"dac_ability_viper_viper_strike"										"Viperamarás"
@@ -237,7 +241,7 @@
 
 		//TREANT PROTECTOR
 		"dac_ability_treant_leech_seed"											"Szipolyozó mag"
-		"dac_ability_treant_leech_seed_Description"								"Védelmező Treant életcsapoló magot ültet egy ellenséges egységbe, amely {s:damage_interval} másodpercenként {s:leech_damage} életerejét szívja el, miközben {s:movement_slow}%-kal csökkenti támadási és mozgási sebességét is.<br><br>A mag gyógyítja a célpont körül {s:radius} mezőn belüli baráti egységeket. {s:duration} másodpercig tart. Korábban véget ér, ha a célpont meghal."
+		"dac_ability_treant_leech_seed_Description"								"Treant Protector plants a life-sapping seed in an enemy unit, draining its health by {s:leech_damage} every {s:damage_interval} seconds, while simultaneously slowing its attack and movement speed by {s:movement_slow}%.<br><br>The seed heals friendly units up to {s:radius} cell away from the target. Lasts {s:duration} seconds. Jumps to a new target within {s:radius} cell if the current target dies."
 		"dac_ability_treant_leech_seed_Lore"									"Nem fogok hazudni; nem számítottam rá, hogy Enno egy fától fog segítséget kapni. - <i>Jull és Anessix egy ital fölött</i>"
 
 		//KEEPER OF THE LIGHT
@@ -266,7 +270,7 @@
 
 		//TUSK
 		"dac_ability_tusk_walrus_punch"											"Rozmár ÜTÉS!"
-		"dac_ability_tusk_walrus_punch_Description"								"Agyaras beviszi nagy erejű rozmárütését, egy olyan erős kritikus találatot, ami a levegőbe repíti az áldozatát. Földet érve az áldozat {s:move_slow}%-kal lassul."
+		"dac_ability_tusk_walrus_punch_Description"								"Tusk connects with his mighty Walrus Punch, a critical strike so powerful it launches its victim into the air. Upon landing, the victim is slowed by {s:move_slow}%. While Punching, Tusk is invulnerable."
 		"dac_ability_tusk_walrus_punch_Lore"									"Valaha a barátom volt. Hamarosan meglátjuk, segíteni jött-e, vagy azért, hogy lecsapjon. - <i>Jull, az ifjúkorán töprengve</i>"
 		
 		
@@ -302,12 +306,12 @@
 		
 		//WARLOCK
 		"dac_ability_warlock_shadow_word"										"Árnyszó"
-		"dac_ability_warlock_shadow_word_Description"							"Átokkovács ráolvasást suttogva {s:duration} másodpercen át másodpercenként {s:heal_tick} életerőt állít helyre egy baráti egységen, vagy {s:damage_tick} sebzést okoz egy ellenséges egységnek."
+		"dac_ability_warlock_shadow_word_Description"							"Warlock whispers an incantation, immediately restoring {s:burst_tooltip} health to a friendly unit and {s:hot_tooltip} a second over {s:duration} seconds, or damaging an enemy unit for {s:damage_tick}, every second for {s:duration} seconds."
 		"dac_ability_warlock_shadow_word_Lore"									"Bizonyos titkokat nem szokás kifecsegni. Demnok fizetni fog az indiszkréciójáért. - <i>Anessix, az időt húzva</i>"
 		
 		//BLOODSEEKER
 		"dac_ability_bloodseeker_blood_rage"									"Vérdüh"
-		"dac_ability_bloodseeker_blood_rage_Description"						"PASSZÍV: Vérkopó minden másodpercben maximális életerejének {s:self_dmg_pct}%-át szenvedi el sebzésként.<br><br>Minden elvesztett egy százalék életerőért {s:attack_speed_per_missing_pct}% támadási sebességet kap.<br><br>Megölve valakit visszakapja maximális életerejének {s:heal_pct}%-át."
+		"dac_ability_bloodseeker_blood_rage_Description"						"PASSIVE: Every second Bloodseeker takes damage equal to {s:self_dmg_pct}% of his max health.<br><br>As he loses health, he gains attack speed, up to a maximum of {s:attack_speed_bonus_max} at {s:min_health_pct}% health.<br><br>On a kill, he regains {s:heal_pct}% of his max health."
 		"dac_ability_bloodseeker_blood_rage_Lore"								"Ha bármit is tanultam pályafutásom során, az az, hogy a népek szeretik a vért. Vegyétek fel ezt az alakot. - <i>Grek, a határozott szponzor</i>"
 		
 		//ARC WARDEN
