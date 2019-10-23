@@ -1613,7 +1613,8 @@
   "vulkan_whitelist": [
     {
       "device_name": "Google crosshatch",
-      "friendly_device_name": "Pixel 3 XL",
+      "friendly_device_name": "Pixel 3 XL (DISABLED VIA MAX_OS)",
+      "max_os": 1,
       "min_driver_version": "V@313.0",
       "min_os": 28,
       "renderer": "Adreno (TM) 630"
