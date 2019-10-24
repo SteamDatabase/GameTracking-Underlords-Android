@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Native_AppOutOfDate">Im App Store ist eine neue Version verfügbar. Diese Version ist zum Onlinespielen erforderlich.</string>
+    <string name="Native_AppOutOfDateOpt">Eine neue Version ist verfügbar</string>
+    <string name="Native_AppOutOfDateReq">Eine neue Version ist verfügbar. Sie wird für Onlinepartien vorausgesetzt.</string>
     <string name="Native_AppUpdateTitle">Neue Version verfügbar</string>
     <string name="Native_Cancel">Abbrechen</string>
     <string name="Native_ConfirmCellular">Download von %d Megabytes steht aus. Über mobile Datenverbindung herunterladen?</string>
     <string name="Native_ConfirmDownload">Mit Download von %d Megabytes fortfahren?</string>
     <string name="Native_ContactingServer">Server wird kontaktiert</string>
+    <string name="Native_DownloadAppUpdate">Aktuelle App herunterladen</string>
     <string name="Native_DownloadError">Ein Fehler ist aufgetreten</string>
     <string name="Native_DownloadErrorDownload">Inhaltsdatei konnte nicht heruntergeladen werden</string>
     <string name="Native_DownloadErrorManifest">Manifest konnte nicht heruntergeladen werden</string>
+    <string name="Native_DownloadErrorQueueDownload">Download einer Inhaltsdatei kann nicht eingereiht werden.</string>
     <string name="Native_DownloadErrorStorage">Nicht genügend Speicherplatz</string>
     <string name="Native_DownloadErrorUnknown">Unbekannter Fehler</string>
     <string name="Native_DownloadOverMobileLabel">Über Mobilnetz herunterladen?</string>
     <string name="Native_DownloadOverMobileMessage">Du bist kurz davor, das Spiel über ein Mobilnetz herunterzuladen. Fortfahren?</string>
     <string name="Native_DownloadTitle">Inhaltsupdate erforderlich:</string>
     <string name="Native_DownloadUpdate">Letztes Update herunterladen:</string>
-    <string name="Native_DownloadingContent">Inhalte werden heruntergeladen</string>
+    <string name="Native_DownloadingContent">INHALTE WERDEN HERUNTERGELADEN</string>
     <string name="Native_Exit">Schließen</string>
-    <string name="Native_LoadingGame">Spiel wird geladen...</string>
+    <string name="Native_FileSystemFailed">Eine erforderliche Dateisystemoperation ist fehlgeschlagen. Bitte App neu starten. Wenn diese Nachricht weiter angezeigt wird, bitte App neu installieren.</string>
+    <string name="Native_LoadingGame">SPIEL WIRD GELADEN …</string>
     <string name="Native_ManifestDownloaded">Manifest heruntergeladen</string>
     <string name="Native_NeedsStoragePermissionsToContinueText">Um die Spielinhalte zu installieren, benötigen wir Zugriff auf den Gerätespeicher. Bitte in den Einstellungen aktivieren.</string>
     <string name="Native_NeedsStoragePermissionsToContinueTitle">Berechtigungen für Speicherzugriff erforderlich</string>
@@ -26,11 +31,15 @@
     <string name="Native_OK">OK</string>
     <string name="Native_PermissionsText">Dota Underlords benötigt Berechtigungen, um Spielinhalte auf dem externen Speicher dieses Geräts zu speichern.</string>
     <string name="Native_PermissionsTitle">Berechtigungen für Dota Underlords</string>
+    <string name="Native_PlayAppOutOfDateOpt">Ohne Aktualisierung spielen</string>
+    <string name="Native_PlayAppOutOfDateReq">Ohne Aktualisierung spielen. Onlinepartien deaktiviert.</string>
     <string name="Native_PlayOffline">Ohne Update spielen (offline)</string>
     <string name="Native_PreparingToDownload">Download wird vorbereitet …</string>
     <string name="Native_PressOkCheckWifi">Drücken Sie \"OK\", um das WLAN zu überprüfen.</string>
     <string name="Native_Settings">Einstellungen</string>
-    <string name="Native_VersionLabel">Version:</string>
+    <string name="Native_UpdateFailed">Inhaltsupdate fehlgeschlagen</string>
+    <string name="Native_UpdateFailed_ConnectToTheInternet">Eine vorherige Aktualisierung ist fehlgeschlagen und benötigt zum Fortsetzen eine Internetverbindung.</string>
+    <string name="Native_VersionLabel">VERSION:</string>
     <string name="Native_WifiNotActive">WLAN nicht aktiv</string>
     <string name="abc_action_bar_home_description">Zur Startseite</string>
     <string name="abc_action_bar_up_description">Nach oben</string>

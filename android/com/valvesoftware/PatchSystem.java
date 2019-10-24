@@ -378,7 +378,12 @@ public class PatchSystem {
     /* access modifiers changed from: private */
     public void OnHaveCurrentAPK() {
         String str = "cdnroot";
+        boolean DeviceIsVulkanCompatible = VulkanWhitelist.DeviceIsVulkanCompatible(this.m_JSONManifest, JNI_Environment.m_application.getApplicationContext());
+        StringBuilder sb = new StringBuilder();
+        sb.append("Rendering API chosen from VulkanWhitelist: ");
+        sb.append(DeviceIsVulkanCompatible ? "Vulkan" : "OpenGL ES");
         String str2 = "com.valvesoftware.PatchSystem";
+        Log.i(str2, sb.toString());
         this.m_vecPendingDownloads = new ArrayList<>();
         try {
             String string = this.m_JSONManifest.getString(str);
@@ -391,28 +396,36 @@ public class PatchSystem {
                 String string2 = jSONObject2.getString("version");
                 File file = new File(this.m_strSyncPath, str3);
                 String optString = jSONObject2.optString(str, string);
-                StringBuilder sb = new StringBuilder();
-                sb.append(optString);
-                sb.append(str3);
-                String sb2 = sb.toString();
-                if (!file.exists()) {
-                    StringBuilder sb3 = new StringBuilder();
-                    sb3.append("Forcing Download for Missing Asset: ");
-                    sb3.append(str3);
-                    Log.i(str2, sb3.toString());
-                } else if (this.m_Registry.HasAssetVersion(str3, string2)) {
-                    StringBuilder sb4 = new StringBuilder();
-                    sb4.append("Skipping Download for Existing Asset: ");
-                    sb4.append(str3);
-                    Log.i(str2, sb4.toString());
+                StringBuilder sb2 = new StringBuilder();
+                sb2.append(optString);
+                sb2.append(str3);
+                String sb3 = sb2.toString();
+                String optString2 = jSONObject2.optString("depotgroup", "common");
+                if (!optString2.equals("client_vulkan_iosall")) {
+                    if (DeviceIsVulkanCompatible) {
+                        if (optString2.equals("client_gles")) {
+                        }
+                    } else if (optString2.equals("client_vulkan_androidall")) {
+                    }
+                    if (!file.exists()) {
+                        StringBuilder sb4 = new StringBuilder();
+                        sb4.append("Forcing Download for Missing Asset: ");
+                        sb4.append(str3);
+                        Log.i(str2, sb4.toString());
+                    } else if (this.m_Registry.HasAssetVersion(str3, string2)) {
+                        StringBuilder sb5 = new StringBuilder();
+                        sb5.append("Skipping Download for Existing Asset: ");
+                        sb5.append(str3);
+                        Log.i(str2, sb5.toString());
+                    }
+                    PendingDownload pendingDownload = new PendingDownload();
+                    pendingDownload.strFilePath = str3;
+                    pendingDownload.strURL = sb3;
+                    pendingDownload.strVersionCode = string2;
+                    pendingDownload.uriDestinationPath = Uri.fromFile(file);
+                    pendingDownload.nByteSize = (long) i;
+                    this.m_vecPendingDownloads.add(pendingDownload);
                 }
-                PendingDownload pendingDownload = new PendingDownload();
-                pendingDownload.strFilePath = str3;
-                pendingDownload.strURL = sb2;
-                pendingDownload.strVersionCode = string2;
-                pendingDownload.uriDestinationPath = Uri.fromFile(file);
-                pendingDownload.nByteSize = (long) i;
-                this.m_vecPendingDownloads.add(pendingDownload);
             }
             if (this.m_vecPendingDownloads.isEmpty()) {
                 Log.i(str2, "All files up-to-date, we're done.");
@@ -431,10 +444,10 @@ public class PatchSystem {
                 WaitForUserInput(EState.ManifestDownloadedWaitingOnUser, EErrorCode.None);
             }
         } catch (Exception e) {
-            StringBuilder sb5 = new StringBuilder();
-            sb5.append("Manifest Exception: ");
-            sb5.append(e.toString());
-            Log.e(str2, sb5.toString());
+            StringBuilder sb6 = new StringBuilder();
+            sb6.append("Manifest Exception: ");
+            sb6.append(e.toString());
+            Log.e(str2, sb6.toString());
             WaitForUserInput(EState.Error, EErrorCode.Manifest);
         }
     }

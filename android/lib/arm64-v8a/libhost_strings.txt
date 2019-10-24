@@ -9,6 +9,8 @@
 @-   
 @-!	!
 @-#(!
+$@)   
+$@)  "
 	*(#:
  [$0]
 "$0", 
@@ -131,6 +133,7 @@ $0 to $1,
 18IGameSystemFactory
 18IPredictionDiffMgr
 19CBoneConstraintBase
+19CModelConfigElement
 19CNETMsg_SignonState
 19CSaveRestoreDataMgr
 19CSchemaRegistration
@@ -168,7 +171,7 @@ $0 to $1,
 26CGameSystemEventDispatcher
 26IGameSystemEventDispatcher
 28CBoneConstraintPoseSpaceBone
-2	!'9
+28CModelConfigElement_UserPick
 29CBoneConstraintPoseSpaceMorph
 29CResourceManifestPrerequisite
 2	a@9Ia
@@ -176,21 +179,26 @@ $0 to $1,
 2_BONE_IK
 2#.CSVCMsgList_UserMessages.usermsg_t
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
-2Hc&9
 	2	i*
 2j"@9)p
-2?k78f\
-2_k88
-2?k88eX
+2?k78'\
+2_k889
+2?k88&X
 2Way_0( %s )
 2Way_1( %s )
 30CGameSystemReallocatingFactoryI15CTestGameSystemS0_E
+30CModelConfigElement_RandomPick
 30CSVCMsgList_GameEvents_event_t
+31CModelConfigElement_RandomColor
+32CModelConfigElement_SetBodygroup
 32CNETMsg_SpawnGroup_LoadCompleted
 32CSVCMsg_GameSessionConfiguration
+33CModelConfigElement_AttachedModel
 33CNETMsg_SpawnGroup_ManifestUpdate
+34CModelConfigElement_SetRenderColor
 34CNETMsg_SpawnGroup_SetCreationTick
 34CSVCMsgList_UserMessages_usermsg_t
+36CModelConfigElement_SetMaterialGroup
  [%.3f server clamped to %.3f]
 ?456789:;<=
 456789:;<=
@@ -254,7 +262,6 @@ _6hNB9	;
 _6ij@
  6iJ@
 6iJA9
-`6in@
 ?6iN@
 _6inA9
 @6iR@
@@ -269,8 +276,9 @@ _6inA9
 ?6v*@
 /6v"@
 '6vj@
-6Ycf9
+6Y3H9
  74	(74
+ 75	(7
 75	 7
 76`&@
 76	$@
@@ -309,12 +317,14 @@ _8o%@8
 )	@9*
 @9)!@
 @9*	@
+	!@9	
 	)@9)
 	)@9*
 @9%	@9&
 @9+	@9,
  @9	$@9J
- @9	$@9JiG
+ @9	$@9JaG
+ @9)aG
 @9)+C
 @9h*@
 (@@9H
@@ -331,13 +341,12 @@ _8o%@8
 @9i&@
 @9I	@
 "@9i"@9
- @9)iG
 9	ii8(
 9ILoopMode
 9ISequence
 9j*@9(
 @9J9	
-@9JiG
+@9JaG
 @9jjh8*
 @9JU	
 !!@9K
@@ -351,16 +360,12 @@ _8o%@8
 'A)	}	
 A-!(!
 +a@9?
-	a^9	
 a	@9?
 		A9?
 		A9	
-	A`9	
 	A@9)
 	A@9)	
 a@9+a
-"A9)}F
-A9)}F
 		A9h
 	A9h&A
 ^A9i^
@@ -375,6 +380,8 @@ A9	ii
 A9Kik
 +	A9lC
 ?A9tJ@
+"A9)uF
+A9)uF
 A-'@A-
 AA9(	
 AA9(	@
@@ -498,12 +505,15 @@ AssetSystemTest001
 attachment
 ATTACHMENT_INFLUENCE_FLAGS_NONE
 attachment_offset
+attachment_type
+attach_point
 Attempting to get the movement settings from model %s, for which movement settings have not been set.  
 Attempting to get the Skeletal Input settings from model %s, which doesn't have any.  
 Attribute counts between meshes is inconsistent
 auto_unragdoll_duration
 B-1HD-
 ^B9h^
+b@9J}F
 bA9hb
 BA9iB
 BackUp() can only be called after a successful Next().
@@ -556,9 +566,11 @@ blendweights
 blockLOS
 BodyGroup
 BodyGroupChoice
+body_groups
 body_type
 # bone
 BoneChannel
+bonemerge
 bone_name
 bone_names
 Boolean default must be true or false.
@@ -581,6 +593,7 @@ burst_randomize
 burst_scale
  but not used.
 ", but only 
+B@yhB
 bytes
 bytes. 
 Byte size calculation and serialization were inconsistent.  This may indicate a bug in protocol buffers or it may be caused by concurrent modification of 
@@ -779,6 +792,16 @@ ClothShapeSphere
 CMaterialDrawDescriptor
 CMemAllocSystemInitialize
 CMesh Cannot create packed input layout, because the bone indices are out of range (0x%X)
+CModelConfig
+CModelConfigElement
+CModelConfigElement_AttachedModel
+CModelConfigElement_RandomColor
+CModelConfigElement_RandomPick
+CModelConfigElement_SetBodygroup
+CModelConfigElement_SetMaterialGroup
+CModelConfigElement_SetRenderColor
+CModelConfigElement_UserPick
+CModelConfigList
 CMorphConstraint
 .CMsg_CVars"
 CMsg_CVars
@@ -805,7 +828,6 @@ CNETMsg_Tick
 	CODE_SIZE
 collision_group
 collision_prop
-color
 COLORCORRECTION_VERSION_1
 Combo(
 command
@@ -816,6 +838,8 @@ CommandProcedureList
 composite
 COM_TimestampedLog
 Conditional Error: %s
+ConfigAttachedModel
+config_state
 ConfigurationSystem_001
 configvalue.cpp
  conflicts with an existing enum type.
@@ -959,7 +983,7 @@ DepthPassBatchID
 DescriptorProto
 DescriptorProtosH
 developer
-df@9C
+df@9c
 diffcheck
 diffcheck_playerslot
 diffcheck_spew
@@ -982,11 +1006,13 @@ double_value
 .dummy
 .dynamic
 __dynamic_cast
+DynamicConfigList
 dynamic_interaction
 .dynstr
 .dynsym
 EconItemToolModel_001
 _edata
+EditorDynamicConfig
 .eh_frame
 .eh_frame_hdr
 emitFromWorld
@@ -1138,6 +1164,7 @@ f@9h2
 fA9hf
 FA9iF
 faceMergeAngle
+Failed to allocate an instance of a class
 Failed to allocate an instance of class '%s'
 Failed to assign bool literal value
 Failed to convert introspected block: %s
@@ -1233,6 +1260,7 @@ G6hBB9
 g6hn@
 g6hRB9
 g6i^@
+g6in@
 G6v.@
 game_class
 GAMECONSOLE
@@ -1387,16 +1415,17 @@ g_pMemAlloc
 gravity
 Groups are not supported in proto3 syntax.
 g_Tier1_BitWriteMasks
+h&?);
 h&@)?
 #H)	}	
 H6hV@
 h)8Ay)
+h"@9)aG
 h"@9h
 h*@9h/
 h.@9H
-h"@9)iG
 h"A9a
-h"A9)}F
+h"A9)uF
 HammerMapLoader001
 handindex
 Has Collision; 
@@ -1410,7 +1439,7 @@ h&B)(
 hb@9`
 hB@9`
 hB@9(
-hB@9)eF
+hB@9)]F
 hB@9h
 h"B9H
 hB@9H
@@ -1423,13 +1452,13 @@ health_override
 HELPER_BONE
 HelpSystem_001
 Hex and octal numbers must be integers.
-hf@9a
-hF@9)%D
+hF@9)
 hf@9h
 hf@9H
 hF@9h
 hf@9i
 HIGHDPI
+hj48o\
 h*@)K
 host_computationtime
 "host_computationtime_std_deviation
@@ -1443,11 +1472,11 @@ HostUtils001
 hurt_me
 hurt_them
 hv@9)
-h&@y)UF
+h&@y)MF
 i)8i&
 *i.8in@9jj
 ?i(8?i*x?i+
-i"@9JiG
+i"@9JaG
 ib@9`
 ib@9(
 ib@9)
@@ -1493,6 +1522,7 @@ IKRigBiped
 IKRigBug
 IKRigSimple
 Illegal jstype for int64, uint64, sint64, fixed64 or sfixed64 field: 
+i*?)m
 " implements neither SetCachedSize() nor ByteSize().  Must implement one or the other.
 Import 
 import "$0";
@@ -1530,7 +1560,6 @@ Integer out of range (
 Intentionally vague touch behavior for %p
 Internal inconsistency between the layout format and attribute is detected.
 Interpreting non ascii codepoint %d.
-INVALID
 Invalid compressed buffer size
 Invalid control characters encountered in text.
 INVALID_CPPTYPE
@@ -1598,12 +1627,13 @@ is_transition
 #It contains connectivity part %d with %d vertices
 !iv8?|
 IyixJylx+
+j2?)?
 j48	C
 j48t^@
 j4xH;@
 j58hf@9(
-j58nK
-j88-!
+j58[U
+j88 !
 J!@9#
 J]A9_
 jA9hj
@@ -1641,11 +1671,11 @@ jv8?)
 JYix*$
 	*jz-
 ?k58D
-?k787p
 ?k78h
-k78@j
+k78	j
 k78o_
-*?k78`t
+*?k78)t
+_k88Xt
 k(8vV@
 K	A9lC
 *kb@9
@@ -1680,6 +1710,7 @@ leading_comments
 leading_detached_comments
 length
 Length; 
+leveltransition
 libandroid.so
 libc++_shared.so
 libc.so
@@ -1735,6 +1766,7 @@ LrwcE
 %ls [wstring, len = %d]
 m%@9i)
 m	A9j"
+m_aAngOffset
 manifest
 manifestincomplete
 manifestloadpriority
@@ -1769,6 +1801,7 @@ MapValueRef::GetUInt64Value
 MapValueRef::type MapValueRef is not initialized.
 master_morph_weight
 MATCHFRAMEWORK_001
+material_group
 MaterialParamBuffer_t
 MaterialParamFloat_t
 MaterialParamInt_t
@@ -1781,7 +1814,9 @@ materials/error.vmat
 MaterialUtils_001
 matrix3x4a_t
 matrix3x4_t
+m_AttachmentName
 m_attachments
+m_AttachmentType
 max_angle
 max_client_limit
 max_clients
@@ -1795,6 +1830,7 @@ m_bbox
 m_bCacheAttempted
 m_bCacheOk
 m_bCanBatchWithDynamicShaderConstants
+m_bClamp
 m_bDisableChild
 m_bDisableOperator
 m_bDoBonesOrientAlongPositiveX
@@ -1808,6 +1844,8 @@ m_bHasBakedLightingFromLightMap
 m_bHasBakedLightingFromVertexStream
 m_bHasCullingData
 m_bHasPerInstanceBakedLightingData
+m_bHideMaterialGroupInTools
+m_bHideRenderColorInTools
 m_bIgnoreRotation
 m_bInfluenceRootTransform
 m_bInitFromKilledParentParticles
@@ -1834,19 +1872,25 @@ m_bScaleInitialValue
 m_bScalePerParticle
 m_bSelected
 m_bThreadsActive
+m_bTopLevel
 m_bTrailBias
 m_bTranslationOnly
 m_bUseCompressedNormalTangent
 m_bUseHighestEndCP
+m_bUserSpecifiedColor
+m_bUserSpecifiedMaterialGroup
 m_bUseShadowFastPath
 m_bVisible
 m_ChainData
 m_Children
+m_Choices
 MClassHasCustomAlignedNewDelete
 m_Color
 m_ColorScale
 m_ConeAxis
 m_ConeCutoff
+m_ConfigName
+m_Configs
 m_constraints
 m_ControlRigData
 m_cRenderColor
@@ -1859,6 +1903,8 @@ m_drawCullData
 m_dynamicParams
 m_dynamicTextureParams
 m_eHand
+m_ElementName
+m_Elements
 m_elems
 memchr
 memcmp
@@ -1869,6 +1915,7 @@ mempool.cpp
 memset
 m_EndEffectorBone
 m_EndEffectorTargetBone
+m_EntityClass
 m_eRbfType
 (merge 
 mesh_calculate_curvature_smooth_invert
@@ -1912,6 +1959,7 @@ m_fForceAmount
 m_fForceAmountMin
 m_fingers
 m_flBiasParameter
+m_flBindPoseDirectionMS
 m_flClusterCooldown
 m_flClusterCooldownMax
 m_flClusterCooldownMin
@@ -1919,12 +1967,14 @@ m_flClusterRefireTime
 m_flClusterRefireTimeMax
 m_flClusterRefireTimeMin
 m_flClusterSize
+m_flDuration
 m_flEmissionDuration
 m_flEmissionScale
 m_flEmitRate
 m_flFalloff
 m_flFingerScaleRatio
 m_flFingerWeight
+m_flFootLength
 m_flFrameTime
 m_fLifespanScaleExp
 m_flInitFromKilledParentParticles
@@ -1943,6 +1993,7 @@ m_flOpStrengthMaxScale
 m_flOpStrengthMinScale
 m_flOutput0
 m_flOutput1
+m_flPosition
 m_flRadius
 m_flRadiusScale
 m_flRadiusTaper
@@ -1967,11 +2018,14 @@ m_flUvDensity
 m_flValue
 m_flWeight
 m_ForceGenerators
+m_Gradient
+m_GroupName
 m_hBuffer
 m_hingeAxis
 m_HitBoxes
 m_hitboxsets
 m_HitBoxSets
+m_hModel
 m_hSnapshot
 m_IkChain
 m_IkChains
@@ -1987,6 +2041,7 @@ m_Initializers
 m_inputList
 m_inputValue
 Min( %s, %s )
+m_InstanceName
 m_intAttributes
 m_intParams
 m_invBindPose
@@ -2001,6 +2056,7 @@ m_Joints
 m_LiteralColor
 m_LoopState
 m_material
+m_MaterialGroupName
 m_materialName
 m_metacarpalBoneName
 m_morphSet
@@ -2014,16 +2070,20 @@ m_nBindOffsetBytes
 m_nBoneHash
 m_nBoneNameHash
 m_nBoneWeightCount
+m_nChoice
 m_nClientOutputFrames
 m_nClusterSizeMax
 m_nClusterSizeMin
 m_nControlPoint
 m_nControlPointNumber
 m_nCount
+m_nCP
+m_nCPField
 m_nCurrentTick
 m_nD3DSemanticIndex
 m_nDummy0
 m_nEntityIndex
+m_NestedElements
 MNetworkBitCount
 MNetworkChangeCallback
 MNetworkEncoder
@@ -2076,6 +2136,12 @@ m_nVectorComponent
 m_nVertexCount
 Model combiner: too many vertex sets (%d)! Clamping to %d
 ModelCompile/UseShadowFastPathHeuristic
+MODEL_CONFIG_ATTACHMENT_BONEMERGE
+MODEL_CONFIG_ATTACHMENT_BONE_OR_ATTACHMENT
+MODEL_CONFIG_ATTACHMENT_COUNT
+MODEL_CONFIG_ATTACHMENT_INVALID
+MODEL_CONFIG_ATTACHMENT_ROOT_RELATIVE
+ModelConfigAttachmentType_t
 model.cpp
 model_default_preview_sequence_name
 modeldoc0
@@ -2098,6 +2164,7 @@ modeldoc23
 modeldoc24
 modeldoc25
 modeldoc26
+modeldoc27
 modeldoc3
 modeldoc4
 modeldoc5
@@ -2106,6 +2173,7 @@ modeldoc7
 modeldoc8
 modeldoc9
 ModelDocUtils001
+model_name
 MODEL_PROCESSING_SCRIPT_INTERFACE_001
 MODEL_PROCESSING_SERVICES_INTERFACE_001
 Model %s missing bone and flex counts (%d < %d), init %d
@@ -2147,6 +2215,7 @@ m_SolverType
 m_SourceFilename
 m_sSurfaceProperty
 m_sTargetMorph
+m_Stops
 m_stringAttributes
 m_targets
 m_TargetSettingSource
@@ -2395,10 +2464,12 @@ num_server_players
 NWay( 
 O6hb@
 O6hFB9	
+o6hr@
 o6hVB9	1
 o6ib@
 O6ib@
 O6ifA9
+o6ir@
 o6jb@
 objc_class_prefix
  of the Protocol Buffer runtime library, but the installed version is 
@@ -2426,6 +2497,7 @@ origin_relative
 'out_location' must not be NULL
 output_type
 overlay
+($?)P
 p6iv@
 p6jf@
 p7v	P7
@@ -2500,6 +2572,7 @@ Plat_GetEnv
 Plat_GetOSType
 Plat_IsHighDPI
 Plat_IsInDebugSession
+Plat_NeedsLowFragmentation
 Plat_RelativeTicks
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_TickDiffMilliSecF
@@ -2523,6 +2596,11 @@ posxyz
 PosXYZ
 PredictionDiffManager001
 preferred_carryangles
+PreviewAttachmentModel
+PreviewBoneAttachedModel
+PreviewBoneMergedModel
+PreviewPreset
+PreviewPresetList
 previouslevel
   Problem     : 
   Problem     : Enum value did not match field type:
@@ -2572,6 +2650,8 @@ RadianEuler
 radius0
 radius1
 raise
+RandomFloat
+RandomInt
 RB9hR
 Reached an unintended state: CPPTYPE_MESSAGE
 Reached impossible case in HasBit().
@@ -2588,6 +2668,8 @@ RegisterConfigValue: Unknown error constructing config value "%s"!
 RegisterStringToken
 .rela.dyn
 .rela.plt
+relative_angles
+relative_origin
 Release
 ReleaseLast
 ReleaseMessage
@@ -2629,7 +2711,7 @@ rhj)8H
 Rhjh8
 Rigid; 
 rJMJJ
-R?k78
+R?k78e
 Rmij8
 rnd_down
 rnd_up
@@ -2666,6 +2748,8 @@ schemaclassinfo.cpp
 SchemaSystem_001
 SchemaTestExternal_One_001
 SchemaTestExternal_Two_001
+%s_color
+%s (Color)
 scripts/global_actors.txt
 scripts/surfaceproperties_footsteps.txt
 --- %s[%d]: 
@@ -2736,6 +2820,8 @@ sint64
 SkeletonBoneBounds_t
 "%s":%lld
 "%s":%llu
+%s (Material)
+%s_matgrp
 s off
 SoundOpSystem001
 SoundOpSystemEdit001
@@ -2758,6 +2844,7 @@ source_code_info
 SourceCodeInfo
 source_file
 source_filename
+@spawn
 spawn_count
 SPAWN_GROUP_BLOCK_UNTIL_LOADED
 'SPAWN_GROUP_CREATE_CLIENT_ONLY_ENTITIES
@@ -2996,6 +3083,7 @@ Unsupported: type mismatch
 update
 UPDATE_STRING_TOKEN_DATABASE
 UpperEyelid( 
+use_additional_offset
 useMotionDamping
 usemtl initialShadingGroup
 userid
@@ -3126,6 +3214,7 @@ vpcf21
 vpcf22
 vpcf23
 vpcf24
+vpcf25
 vpcf3
 vpcf4
 vpcf5
@@ -3213,8 +3302,6 @@ WorldRendererMgr001
 Writing kdTree with %d triangles
 wrong submessage type
 \x%02x
-x6hz@
-x6iz@
 x7wB@
 XC-Y+9
 xf@)*
@@ -3224,7 +3311,6 @@ xf@)*
 Yaw; 
 yaw_end
 yaw_start
-Yc&9[
 @y+}E
 )yhx)$
 )Yhx)$
@@ -3232,7 +3318,6 @@ Yc&9[
 )YJJ)}
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 Y`x($
-y[(xp.
 _Z14V_stristr_fastPKcS0_
 _Z17LoggingSystem_Logi17LoggingSeverity_tRK14LeafCodeInfo_tPKcz
 _Z6DevMsgPKcz
@@ -3244,10 +3329,12 @@ _ZdlPv
 z:K(None)
 _ZN13CBufferString10FixSlashesEc
 _ZN13CBufferString11ToLowerFastEi
+_ZN13CBufferString12AppendFormatEPKcz
 _ZN13CBufferString12SetExtensionEPKc
 _ZN13CBufferString13AppendFormatVEPKcSt9__va_list
 _ZN13CBufferString13FixupPathNameEv
 _ZN13CBufferString5PurgeEi
+_ZN13CBufferString6FormatEPKcz
 _ZN13CBufferString6InsertEiPKcib
 _ZN13CBufferString8RemoveAtEii
 _ZN16CThreadSemaphoreD1Ev

@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Native_AppOutOfDate">App Store 上已推出新版本。在线游戏必须使用该版本。</string>
+    <string name="Native_AppOutOfDateOpt">新app版本已经推出</string>
+    <string name="Native_AppOutOfDateReq">App Store 上已推出新版本。在线游戏必须使用该版本。</string>
     <string name="Native_AppUpdateTitle">新版本现已推出</string>
     <string name="Native_Cancel">取消</string>
     <string name="Native_ConfirmCellular">正在准备下载 %d MB 内容。要通过手机网络连接进行吗？</string>
     <string name="Native_ConfirmDownload">要下载 %d MB 内容吗？</string>
     <string name="Native_ContactingServer">连接服务器中</string>
+    <string name="Native_DownloadAppUpdate">下载最新应用</string>
     <string name="Native_DownloadError">已发生错误</string>
     <string name="Native_DownloadErrorDownload">无法下载内容文件</string>
     <string name="Native_DownloadErrorManifest">无法下载清单</string>
+    <string name="Native_DownloadErrorQueueDownload">无法进入下载内容文件的队列</string>
     <string name="Native_DownloadErrorStorage">存储空间不足</string>
     <string name="Native_DownloadErrorUnknown">未知错误</string>
     <string name="Native_DownloadOverMobileLabel">要通过移动网络下载吗？</string>
@@ -17,6 +21,7 @@
     <string name="Native_DownloadUpdate">下载最新更新：</string>
     <string name="Native_DownloadingContent">内容下载中</string>
     <string name="Native_Exit">退出</string>
+    <string name="Native_FileSystemFailed">需要的文件系统操作失败。请重启应用。若还是出现此信息。请尝试卸载后重新安装。</string>
     <string name="Native_LoadingGame">载入游戏中...</string>
     <string name="Native_ManifestDownloaded">清单已下载</string>
     <string name="Native_NeedsStoragePermissionsToContinueText">为了安装游戏内容，我们需要读取设备存储的权限。请前往设置勾选权限。</string>
@@ -26,10 +31,14 @@
     <string name="Native_OK">好的</string>
     <string name="Native_PermissionsText">刀塔霸业需要权限才能将游戏内容存储于此设备的外部存储器中。</string>
     <string name="Native_PermissionsTitle">刀塔霸业权限</string>
+    <string name="Native_PlayAppOutOfDateOpt">不更新直接游玩</string>
+    <string name="Native_PlayAppOutOfDateReq">不更新直接游玩。在线游玩已禁用。</string>
     <string name="Native_PlayOffline">忽略更新进行游戏（离线模式）</string>
     <string name="Native_PreparingToDownload">下载准备中...</string>
     <string name="Native_PressOkCheckWifi">点击“好的”检测WIFI。</string>
     <string name="Native_Settings">设置</string>
+    <string name="Native_UpdateFailed">内容更新失败</string>
+    <string name="Native_UpdateFailed_ConnectToTheInternet">之前的更新操作失败，需要网络连接才能恢复。</string>
     <string name="Native_VersionLabel">版本：</string>
     <string name="Native_WifiNotActive">WIFI未启动</string>
     <string name="abc_action_bar_home_description">转到主屏幕</string>

@@ -36,6 +36,7 @@ import java.util.LinkedHashMap;
 
 public class applauncher extends com.valvesoftware.source2launcher.applauncher {
     protected static final int DEFAULT_FONT_SIZE = 18;
+    protected static final int SMALLER_FONT_SIZE = 14;
     protected Typeface m_Font = null;
     protected ImageView m_Logo = null;
     protected Point m_ScreenSize = new Point(1, 1);
@@ -132,8 +133,9 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
         sb.append(GetStringSafe2);
         sb.append(GetStringSafe);
         TextView createTextfield2 = createTextfield(sb.toString());
+        createTextfield2.setTextSize(14.0f);
         createTextfield2.setGravity(85);
-        createTextfield2.setPadding(12, 12, 26, 12);
+        createTextfield2.setPadding(12, 12, 136, 12);
         frameLayout.addView(imageView);
         frameLayout.addView(this.m_Logo);
         frameLayout.addView(linearLayout);

@@ -9,7 +9,13 @@ import android.os.Build.VERSION;
 import android.os.Debug;
 import android.os.Environment;
 import android.os.StatFs;
+import android.telephony.TelephonyManager;
 import android.util.Log;
+import com.android.volley.Response.ErrorListener;
+import com.android.volley.Response.Listener;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import java.io.File;
 
 public class JNI_Environment {
@@ -1205,5 +1211,129 @@ public class JNI_Environment {
     public static long GetAvailableStorageBytes(File file) {
         StatFs statFs = new StatFs(file.getPath());
         return statFs.getBlockCountLong() * statFs.getBlockSizeLong();
+    }
+
+    public static boolean GetInAppPurchasePricingAsync(String str) {
+        return ((Application) m_application).QuerySkuDetailsAsync(str);
+    }
+
+    public static boolean QueryExistingPurchases() {
+        return ((Application) m_application).QueryExistingPurchases();
+    }
+
+    public static boolean PurchaseSku(String str) {
+        return ((Application) m_application).PurchaseSku(str);
+    }
+
+    public static boolean ConsumePurchase(String str) {
+        return ((Application) m_application).ConsumePurchase(str);
+    }
+
+    public static boolean HttpGet(String str) {
+        Volley.newRequestQueue(m_application).add(new StringRequest(0, str, new Listener<String>() {
+            public void onResponse(String str) {
+            }
+        }, new ErrorListener() {
+            public void onErrorResponse(VolleyError volleyError) {
+                Log.i("com.valvesoftware.JNI_Environment", "HttpGet failed");
+            }
+        }));
+        return true;
+    }
+
+    public static String GetDeviceCountryCode() {
+        String str;
+        TelephonyManager telephonyManager = (TelephonyManager) m_application.getBaseContext().getSystemService("phone");
+        if (telephonyManager != null) {
+            String simCountryIso = telephonyManager.getSimCountryIso();
+            if (simCountryIso != null && simCountryIso.length() == 2) {
+                return simCountryIso.toUpperCase();
+            }
+            String networkCountryIso = telephonyManager.getNetworkCountryIso();
+            if (networkCountryIso != null && networkCountryIso.length() == 2) {
+                return networkCountryIso.toUpperCase();
+            }
+        }
+        if (VERSION.SDK_INT >= 24) {
+            str = m_application.getBaseContext().getResources().getConfiguration().getLocales().get(0).getCountry();
+        } else {
+            str = m_application.getBaseContext().getResources().getConfiguration().locale.getCountry();
+        }
+        return (str == null || str.length() != 2) ? "US" : str.toUpperCase();
+    }
+
+    /* JADX WARNING: Removed duplicated region for block: B:14:0x0046  */
+    /* Code decompiled incorrectly, please refer to instructions dump. */
+    public static long GetDeviceID() {
+        /*
+            java.lang.String r0 = "com.valvesoftware.JNI_Environment"
+            java.lang.String r1 = "/DeviceID.bin"
+            r2 = 0
+            java.io.File r4 = new java.io.File     // Catch:{ Exception -> 0x003c }
+            java.io.File r5 = GetPrivatePath()     // Catch:{ Exception -> 0x003c }
+            r4.<init>(r5, r1)     // Catch:{ Exception -> 0x003c }
+            java.util.Scanner r5 = new java.util.Scanner     // Catch:{ Exception -> 0x003c }
+            r5.<init>(r4)     // Catch:{ Exception -> 0x003c }
+            boolean r4 = r5.hasNextLong()     // Catch:{ Exception -> 0x003c }
+            if (r4 == 0) goto L_0x001f
+            long r4 = r5.nextLong()     // Catch:{ Exception -> 0x003c }
+            goto L_0x0020
+        L_0x001f:
+            r4 = r2
+        L_0x0020:
+            java.lang.StringBuilder r6 = new java.lang.StringBuilder     // Catch:{ Exception -> 0x003a }
+            r6.<init>()     // Catch:{ Exception -> 0x003a }
+            java.lang.String r7 = "GetDeviceID() read "
+            r6.append(r7)     // Catch:{ Exception -> 0x003a }
+            r6.append(r4)     // Catch:{ Exception -> 0x003a }
+            java.lang.String r7 = " from file"
+            r6.append(r7)     // Catch:{ Exception -> 0x003a }
+            java.lang.String r6 = r6.toString()     // Catch:{ Exception -> 0x003a }
+            android.util.Log.i(r0, r6)     // Catch:{ Exception -> 0x003a }
+            goto L_0x0042
+        L_0x003a:
+            r6 = move-exception
+            goto L_0x003f
+        L_0x003c:
+            r4 = move-exception
+            r6 = r4
+            r4 = r2
+        L_0x003f:
+            r6.printStackTrace()
+        L_0x0042:
+            int r6 = (r4 > r2 ? 1 : (r4 == r2 ? 0 : -1))
+            if (r6 != 0) goto L_0x0092
+            java.util.UUID r2 = java.util.UUID.randomUUID()
+            long r3 = r2.getLeastSignificantBits()
+            long r5 = r2.getMostSignificantBits()
+            long r4 = r3 ^ r5
+            java.lang.StringBuilder r2 = new java.lang.StringBuilder
+            r2.<init>()
+            java.lang.String r3 = "GetDeviceID() generated "
+            r2.append(r3)
+            r2.append(r4)
+            java.lang.String r2 = r2.toString()
+            android.util.Log.i(r0, r2)
+            java.io.File r0 = new java.io.File     // Catch:{ Exception -> 0x008e }
+            java.io.File r2 = GetPrivatePath()     // Catch:{ Exception -> 0x008e }
+            r0.<init>(r2, r1)     // Catch:{ Exception -> 0x008e }
+            java.io.FileWriter r1 = new java.io.FileWriter     // Catch:{ Exception -> 0x008e }
+            r1.<init>(r0)     // Catch:{ Exception -> 0x008e }
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder     // Catch:{ Exception -> 0x008e }
+            r0.<init>()     // Catch:{ Exception -> 0x008e }
+            r0.append(r4)     // Catch:{ Exception -> 0x008e }
+            java.lang.String r2 = "\n"
+            r0.append(r2)     // Catch:{ Exception -> 0x008e }
+            java.lang.String r0 = r0.toString()     // Catch:{ Exception -> 0x008e }
+            r1.write(r0)     // Catch:{ Exception -> 0x008e }
+            r1.close()     // Catch:{ Exception -> 0x008e }
+            goto L_0x0092
+        L_0x008e:
+            r0 = move-exception
+            r0.printStackTrace()
+        L_0x0092:
+            return r4
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.JNI_Environment.GetDeviceID():long");
     }
 }

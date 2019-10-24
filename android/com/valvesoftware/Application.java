@@ -1,9 +1,25 @@
 package com.valvesoftware;
 
 public abstract class Application extends android.app.Application {
+    public boolean ConsumePurchase(String str) {
+        return false;
+    }
+
     public abstract String[] GetProgramArguments();
 
     public abstract boolean InstallFiles(IStreamingBootStrap iStreamingBootStrap);
+
+    public boolean PurchaseSku(String str) {
+        return false;
+    }
+
+    public boolean QueryExistingPurchases() {
+        return false;
+    }
+
+    public boolean QuerySkuDetailsAsync(String str) {
+        return false;
+    }
 
     public String[] GetNativeBinarySearchPaths(String str) {
         StringBuilder sb = new StringBuilder();

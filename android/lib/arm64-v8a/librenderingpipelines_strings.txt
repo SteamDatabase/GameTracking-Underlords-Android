@@ -6,9 +6,10 @@
 @-   
 @-!	!
 @-#(!
+$@)   
+$@)  "
 *-@)!
 00000000-0000-0000-0000-000000000000
-(!094q
 =0DD-
 0ED- 
 0=Off, 1=DebugWireframe, 2=DebugSolidBlink
@@ -43,11 +44,11 @@
 18CRenderingPipeline
 18IRenderingPipeline
 19CBoneConstraintBase
+19CModelConfigElement
 19CRenderingPipelines
 19CVR3DSkyboxRenderer
 1bQJ1~
 1DBlend
-1@)k1G
 	2*	@
 20CPostConnectCallback
 20CPostProcessRenderer
@@ -73,26 +74,31 @@
 25IRenderingPipelineFactory
 26CGaussianBloomBlurRenderer
 28CBoneConstraintPoseSpaceBone
+28CModelConfigElement_UserPick
 28CRenderingPipelineLightSetup
 28CRenderingPipelineVR3DSkybox
 29CBaseRenderingPipelineFactory
 29CBoneConstraintPoseSpaceMorph
 29CRenderingPipelineOvertopMenu
 29CRenderingPipelinePostProcess
-2@9iJ
-2@9jJ
-	2)a+
-2	a;9
+2	a#9
 2_BONE_IK
 	2	i*
-2	q:9s
+2	q"9s
 2Way_0( %s )
 2Way_1( %s )
+30CModelConfigElement_RandomPick
 30CRenderingPipelineSlimDeferred
+31CModelConfigElement_RandomColor
 31CScreenSpaceReflectionsRenderer
-33@9A
+32CModelConfigElement_SetBodygroup
+33CModelConfigElement_AttachedModel
+34CModelConfigElement_SetRenderColor
+36CModelConfigElement_SetMaterialGroup
 =(3@9
+3@9iJ
 (3@9|J
+3@9jJ
 3D Skybox
 3DSkyboxForward
 3DSkyboxLightBinnerVr
@@ -101,6 +107,7 @@
  [%.3f server clamped to %.3f]
 =3PF-5XG-
 4	1@9?
+41CVrClearQuadOverdrawVisualizationTextures
 42CTemplateSceneViewFactory_RenderVRMonitors
 4	5@9?
 4h'@)
@@ -108,7 +115,6 @@
 4hb@9
 4hf@9
 4hf@9(
-4h'@)j
 4n&	&
 ,5D)(%E)
 5h'@)
@@ -122,10 +128,10 @@
 7IConVar
 8CFmtStrNILi256ELb0EE
 8x9,7
-	!^9	
+(@@9(
 9(3@9
+$9FFs
 	@@9h
-9h'@)*
 (@@9H
 "@9hf@9i
 @9hV@
@@ -178,6 +184,7 @@ allowstatic
 AmbientOcclusionDepth
 Ambient Occlusion Proxies
 Ambient Occlusion Proxies Downsample Depth
+Ambient Occlusion Proxies: Texture Barrier
 anchor_angles
 anchor_position
 Android clang version 5.0.300080  (based on LLVM 5.0.300080)
@@ -233,6 +240,8 @@ ATI_DST24
 attachment
 ATTACHMENT_INFLUENCE_FLAGS_NONE
 attachment_offset
+attachment_type
+attach_point
 Attempting to get the movement settings from model %s, for which movement settings have not been set.  
 Attempting to get the Skeletal Input settings from model %s, which doesn't have any.  
 Attribute counts between meshes is inconsistent
@@ -241,6 +250,7 @@ auto_unragdoll_duration
 *-B)!
 B-1HD-
 *-B),5C)_
+	!b9	
 b]9AQ
 BackgroundForShaderIDs
 Bad header format (expected '<!--'
@@ -267,6 +277,7 @@ BaseIKRig
 baselayer
 BasePhysicsShape
 Base Spring; 
+BB9_w
 BeforeTranslucent
 BenchmarkService001
 bentnormal
@@ -293,9 +304,11 @@ BloomBuffer
 BloomManifest
 BodyGroup
 BodyGroupChoice
+body_groups
 body_type
 # bone
 BoneChannel
+bonemerge
 bone_name
 bone_names
 borrow
@@ -314,6 +327,7 @@ __bss_start__
 bUpdate
 burst_randomize
 burst_scale
+B@yhB
 C-2-@
 cable
 CAimConstraint
@@ -406,6 +420,7 @@ Clear Color Depth Stencil
 Clear Depth Stencil
 ClearHdrBackBuffer
 ClearOutputDepth
+ClearQuadCoverage
 client
 clientcmd_can_execute
 cloth_collide
@@ -420,16 +435,27 @@ ClothShapeSphere
 CMaterialDrawDescriptor
 CMemAllocSystemInitialize
 CMesh Cannot create packed input layout, because the bone indices are out of range (0x%X)
+CModelConfig
+CModelConfigElement
+CModelConfigElement_AttachedModel
+CModelConfigElement_RandomColor
+CModelConfigElement_RandomPick
+CModelConfigElement_SetBodygroup
+CModelConfigElement_SetMaterialGroup
+CModelConfigElement_SetRenderColor
+CModelConfigElement_UserPick
+CModelConfigList
 CMorphConstraint
 collision_group
 collision_prop
-color
 COLORCORRECTION_VERSION_1
 Combo(
 CommandProcedure
 CommandProcedureList
 .comment
 composite
+ConfigAttachedModel
+config_state
 ConfigurationSystem_001
 configvalue.cpp
 CONTENT
@@ -566,6 +592,7 @@ DXT1_ONEBITALPHA
 DXT5_NM
 .dynamic
 DynamicAmbientOcclusion
+DynamicConfigList
 Dynamic Decals
 DynamicGBuffer
 dynamic_interaction
@@ -574,6 +601,7 @@ Dynamic Opaque Forward
 .dynsym
 EconItemToolModel_001
 _edata
+EditorDynamicConfig
 E-evA
 EffectsOpaque
 EffectsTranslucent
@@ -633,6 +661,7 @@ F-%:%
 *-F),5G)_
 faceMergeAngle
  Fade
+Failed to allocate an instance of a class
 Failed to allocate an instance of class '%s'
 Failed to assign bool literal value
 Failed to convert introspected block: %s
@@ -666,6 +695,8 @@ format
 formats.cpp
 ForwardLightSetup
 Found max edge length %g. Skipping SplitLongEdges, as that'll take too long to split.
+FreezeFrameCapture
+FreezeFrameDraw
 friction
 F_TRANSLUCENT
 FvP12CSceneObjectE
@@ -706,10 +737,14 @@ g_pMemAlloc
 gravity
 GroundFog
 )h&	)
-*h'@)_
 h'@)*
+h&?);
 h&@)?
 #H)	}	
+=h2@9
+=h2@9_
+h2@9)
+h2@9I
 h3@9i
 h)8Ay)
 h"@9h
@@ -718,6 +753,7 @@ HammerMapLoader001
 handindex
 Has Collision; 
 .hash
+hB@9`
 h&C)j"@
 HDRBloom
 HDRColorBuffer
@@ -731,7 +767,6 @@ HelpSystem_001
 hf@9H
 hf@9i
 H%@)J	@
-hj48Go
 H#L9`r
 Hologram Depth
 Hologram Wireframe
@@ -739,9 +774,7 @@ HostStateMgr001
 hurt_me
 hurt_them
 h&@y)
-<i*@)a
 i*@)a
-i+@)a
 ib@9j
 I CUtlLinkedList<int, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short> >::AllocInternal(bool) [T = int, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int, CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int>, unsigned int> >::NewNode(const T *) [T = CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, I = unsigned int, L = CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int>, unsigned int>]
@@ -760,6 +793,7 @@ ikrig
 IKRigBiped
 IKRigBug
 IKRigSimple
+i*?)m
 #include
 #include is NULL 
 Infinite Joint Weights encountered: Skinning will not work! (At position %.3f %.3f %.3f)
@@ -786,7 +820,6 @@ intermediate_color_stereo_rt
 intermediate_depth_stereo_rt
 IntermediateOutputColorResolved
 Internal inconsistency between the layout format and attribute is detected.
-INVALID
 InvalidBubble
 Invalid compressed buffer size
 Invalid data.
@@ -806,7 +839,8 @@ IQuickTime001
 is_debris
 #It contains connectivity part %d with %d vertices
 @ @-J
-J78ND
+j2?)?
+j88ED
 J-cb@
 J-dj@
 JEIJJ}
@@ -903,12 +937,14 @@ lowprecisionuv1
 LrwcE
 %ls [wstring, len = %d]
 #M9 3
+m_aAngOffset
 m_ankleBoneName
 mapbuilder.nodraw
 mapbuilder.occluder
 MapListService_001
 master_morph_weight
 MATCHFRAMEWORK_001
+material_group
 MaterialParamBuffer_t
 MaterialParamFloat_t
 MaterialParamInt_t
@@ -934,13 +970,16 @@ materials/dev/retina_burn_capture.vmat
 materials/dev/screenspacereflectionblur.vmat
 materials/dev/screenspacereflections.vmat
 materials/dev/visualize_depth.vmat
+materials/dev/visualize_quad_overdraw.vmat
 materials/error.vmat
 materials/rendertargetops/bilateral_blur_horz.vmat
 materials/rendertargetops/bilateral_blur_vert.vmat
 materialsystem2
 MaterialSystem2/ShaderIDColors
 MaterialUtils_001
+m_AttachmentName
 m_attachments
+m_AttachmentType
 max_angle
  max. %f
 maxHullVertices
@@ -952,6 +991,7 @@ m_bbox
 m_bCacheAttempted
 m_bCacheOk
 m_bCanBatchWithDynamicShaderConstants
+m_bClamp
 m_bDisableChild
 m_bDisableOperator
 m_bDoBonesOrientAlongPositiveX
@@ -964,6 +1004,8 @@ m_bHasBakedLightingFromLightMap
 m_bHasBakedLightingFromVertexStream
 m_bHasCullingData
 m_bHasPerInstanceBakedLightingData
+m_bHideMaterialGroupInTools
+m_bHideRenderColorInTools
 m_bIgnoreRotation
 m_bInfluenceRootTransform
 m_bInitFromKilledParentParticles
@@ -988,19 +1030,25 @@ m_bScaleInitialRange
 m_bScaleInitialValue
 m_bScalePerParticle
 m_bSelected
+m_bTopLevel
 m_bTrailBias
 m_bTranslationOnly
 m_bUseCompressedNormalTangent
 m_bUseHighestEndCP
+m_bUserSpecifiedColor
+m_bUserSpecifiedMaterialGroup
 m_bUseShadowFastPath
 m_bVisible
 m_ChainData
 m_Children
+m_Choices
 MClassHasCustomAlignedNewDelete
 m_Color
 m_ColorScale
 m_ConeAxis
 m_ConeCutoff
+m_ConfigName
+m_Configs
 m_constraints
 m_ControlRigData
 m_cRenderColor
@@ -1013,6 +1061,8 @@ m_drawCullData
 m_dynamicParams
 m_dynamicTextureParams
 m_eHand
+m_ElementName
+m_Elements
 m_elems
 memcmp
 memcpy
@@ -1022,6 +1072,7 @@ mempool.cpp
 memset
 m_EndEffectorBone
 m_EndEffectorTargetBone
+m_EntityClass
 m_eRbfType
 mesh_calculate_curvature_smooth_invert
 mesh_calculate_curvature_smooth_pass_count
@@ -1046,6 +1097,7 @@ m_fForceAmount
 m_fForceAmountMin
 m_fingers
 m_flBiasParameter
+m_flBindPoseDirectionMS
 m_flClusterCooldown
 m_flClusterCooldownMax
 m_flClusterCooldownMin
@@ -1053,12 +1105,14 @@ m_flClusterRefireTime
 m_flClusterRefireTimeMax
 m_flClusterRefireTimeMin
 m_flClusterSize
+m_flDuration
 m_flEmissionDuration
 m_flEmissionScale
 m_flEmitRate
 m_flFalloff
 m_flFingerScaleRatio
 m_flFingerWeight
+m_flFootLength
 m_fLifespanScaleExp
 m_flInitFromKilledParentParticles
 m_flInput0
@@ -1076,6 +1130,7 @@ m_flOpStrengthMaxScale
 m_flOpStrengthMinScale
 m_flOutput0
 m_flOutput1
+m_flPosition
 m_flRadius
 m_flRadiusScale
 m_flRadiusTaper
@@ -1094,11 +1149,14 @@ m_flUvDensity
 m_flValue
 m_flWeight
 m_ForceGenerators
+m_Gradient
+m_GroupName
 m_hBuffer
 m_hingeAxis
 m_HitBoxes
 m_hitboxsets
 m_HitBoxSets
+m_hModel
 m_hSnapshot
 m_IkChain
 m_IkChains
@@ -1113,6 +1171,7 @@ m_Initializers
 m_inputList
 m_inputValue
 Min( %s, %s )
+m_InstanceName
 m_intAttributes
 m_intParams
 m_invBindPose
@@ -1123,6 +1182,7 @@ m_JointName
 m_Joints
 m_LiteralColor
 m_material
+m_MaterialGroupName
 m_materialName
 m_metacarpalBoneName
 m_morphSet
@@ -1136,11 +1196,15 @@ m_nBindOffsetBytes
 m_nBoneHash
 m_nBoneNameHash
 m_nBoneWeightCount
+m_nChoice
 m_nClusterSizeMax
 m_nClusterSizeMin
 m_nControlPoint
 m_nControlPointNumber
+m_nCP
+m_nCPField
 m_nD3DSemanticIndex
+m_NestedElements
 m_nFeatheringMode
 m_nFingerIndex
 m_nFirstMultipleOverride_BackwardCompat
@@ -1177,6 +1241,12 @@ m_nVectorComponent
 m_nVertexCount
 Model combiner: too many vertex sets (%d)! Clamping to %d
 ModelCompile/UseShadowFastPathHeuristic
+MODEL_CONFIG_ATTACHMENT_BONEMERGE
+MODEL_CONFIG_ATTACHMENT_BONE_OR_ATTACHMENT
+MODEL_CONFIG_ATTACHMENT_COUNT
+MODEL_CONFIG_ATTACHMENT_INVALID
+MODEL_CONFIG_ATTACHMENT_ROOT_RELATIVE
+ModelConfigAttachmentType_t
 model.cpp
 model_default_preview_sequence_name
 modeldoc0
@@ -1199,6 +1269,7 @@ modeldoc23
 modeldoc24
 modeldoc25
 modeldoc26
+modeldoc27
 modeldoc3
 modeldoc4
 modeldoc5
@@ -1207,6 +1278,7 @@ modeldoc7
 modeldoc8
 modeldoc9
 ModelDocUtils001
+model_name
 MODEL_PROCESSING_SCRIPT_INTERFACE_001
 MODEL_PROCESSING_SERVICES_INTERFACE_001
 Model %s missing bone and flex counts (%d < %d), init %d
@@ -1248,6 +1320,7 @@ m_SolverType
 m_SourceFilename
 m_sSurfaceProperty
 m_sTargetMorph
+m_Stops
 m_stringAttributes
 m_targets
 m_TargetSettingSource
@@ -1347,6 +1420,7 @@ Overtop Menu Procedural
 OvertopMenuRender
 OvertopMenuRendererTemplate
 OvertopMenu Translucent Forward
+($?)P
 "pA3QuW
 PaintPost0
 PaintPost1
@@ -1411,6 +1485,7 @@ Plat_ExitProcess
 Plat_GetEnv
 Plat_GetThreadIndex
 Plat_IsInDebugSession
+Plat_NeedsLowFragmentation
 Plat_ShouldCollectMiniDumpsForFatalErrors
 play_endcap
 Please add a MovementSettings node to the model in ModelDoc
@@ -1434,7 +1509,12 @@ PosXYZ
 preferred_carryangles
 PrevFrameHDRBuffer
 prevframe_swapchain%p_%dx%d
+PreviewAttachmentModel
+PreviewBoneAttachedModel
+PreviewBoneMergedModel
 Preview Lighting - Not indicative of shipping quality or performance. Please bake lightmaps.
+PreviewPreset
+PreviewPresetList
 prop_data
 PropertyEditorSystem_001
 PropWorldOrigin
@@ -1454,6 +1534,8 @@ PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
 q-A(!
 qJT-s
+quad_coverage_lock.vtex
+quad_coverage.vtex
 QuarterRes
 QuarterResDepth
 QuarterResEffectsColor
@@ -1469,7 +1551,9 @@ radius0
 radius1
 raise
 RandomFloat
+RandomInt
 r_bloom_compute
+r_cubemap_debug_colors
 r_deferred_cubemap_diffuse
 r_deferred_debugvis
 r_dither_scale
@@ -1489,6 +1573,8 @@ RegisterConfigValue: Unknown error constructing config value "%s"!
 RegisterStringToken
 .rela.dyn
 .rela.plt
+relative_angles
+relative_origin
 Release
 remapping vertex %d[w%d] invalid: %d->? >= %d
 remapping vertex %d[w%d] invalid: %d->%d >= %d
@@ -1577,6 +1663,7 @@ r_post_colorcorrection
 r_post_film_grain
 r_post_fxaa
 r_post_vignette
+?r_render_to_cubemap_debug
 r_showdebugoverlays
 r_showsceneobjectbounds
 r_ssao
@@ -1614,12 +1701,13 @@ schemaclassinfo.cpp
 SchemaSystem_001
 SchemaTestExternal_One_001
 SchemaTestExternal_Two_001
+%s_color
+%s (Color)
 ScreenSpaceReflBuffer
 ScreenSpaceReflections
 screenspace_reflections.cpp
 ScreenSpaceReflectionsManifest
 ScreenSpaceReflectionsRenderer
-sc_use_fullsort_for_opaque
 secondary
 seq_trans
 SequenceMarkup
@@ -1638,7 +1726,9 @@ singleplayer
 Sin( %s )
 SkeletonBoneBounds_t
 SlimDeferred
+%s (Material)
 %s (mat_fullbright: %d)
+%s_matgrp
 s off
 SoundOpSystem001
 SoundOpSystemEdit001
@@ -1657,6 +1747,7 @@ Source2Host001
 Source2Server001
 Source2ServerSerializers002
 source_filename
+@spawn
 spawn_motion_disabled
 speeds
 Splitting huge triangles (%d verts,%d tris) -> (%d verts,%d tris), %d splits
@@ -1810,6 +1901,7 @@ Unsupported text encoding id.
 update
 UPDATE_STRING_TOKEN_DATABASE
 UpperEyelid( 
+use_additional_offset
 Use compute shaders for bloom on Vulkan
 useMotionDamping
 usemtl initialShadingGroup
@@ -1868,6 +1960,7 @@ ViewModelTranslucent
 V_IsAbsolutePath
 VisBuilder_001
 V_isnan
+VisualizeQuads
 V_log2f
 V_logf
 VMaterialSystem2_001
@@ -1909,6 +2002,7 @@ vpcf21
 vpcf22
 vpcf23
 vpcf24
+vpcf25
 vpcf3
 vpcf4
 vpcf5
@@ -1930,6 +2024,7 @@ VR3DSkyboxView
 vr_aoproxy_debug
 vr_aoproxy_enable
 vr_carry_type
+vr_cubemap_normalization
 vr_custom_msaa_resolve
 vr_decal_debug
 vr_depth_prepass
@@ -1942,6 +2037,8 @@ vr_enable_translucent_screen_space
 vr_enable_volume_fog
 VRenderDeviceSetupV001
 vr_expand_cull_frustum
+vr_fullsort_depth_prepass
+vr_postprocess_enable
 VrQuadLayout
 vr_readonly_depth_stencil_enable
 vr_render_decals
@@ -1950,11 +2047,11 @@ vr_render_opaque
 vr_render_opaque_notzprepassed
 vr_render_overlays
 vr_render_refaction
-vr_render_to_cubemap_debug
 vr_render_translucent
 vr_shadows_debug
 vr_stencil_debug
 vr_stencil_hidden_pixels
+vr_use_fullsort_for_opaque
 vr_use_invalid_bubble
 vr_warp
 vr_warp_debug
@@ -2011,24 +2108,25 @@ xf@)*
 Yaw; 
 yaw_end
 yaw_start
+yB-9#
 @y+}E
 {YIN?
 )YJJ)}
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 _Z13V_SplitStringPKcS0_R10CUtlVectorI10CUtlString10CUtlMemoryIS2_iEEb
 _Z14V_stristr_fastPKcS0_
-_Z17LoggingSystem_Logi17LoggingSeverity_t5ColorPKcz
 _Z17LoggingSystem_Logi17LoggingSeverity_tRK14LeafCodeInfo_tPKcz
 _Z6DevMsgPKcz
-	!z9	
 _ZdaPv
 _ZdlPv
 _ZN13CBufferString10FixSlashesEc
 _ZN13CBufferString11ToLowerFastEi
+_ZN13CBufferString12AppendFormatEPKcz
 _ZN13CBufferString12SetExtensionEPKc
 _ZN13CBufferString13AppendFormatVEPKcSt9__va_list
 _ZN13CBufferString13FixupPathNameEv
 _ZN13CBufferString5PurgeEi
+_ZN13CBufferString6FormatEPKcz
 _ZN13CBufferString6InsertEiPKcib
 _ZN13CBufferString8RemoveAtEii
 _ZN16CThreadSemaphoreD1Ev

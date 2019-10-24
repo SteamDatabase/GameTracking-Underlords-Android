@@ -57,13 +57,14 @@
 2*ki8J
 2mymx
   %2u - proc %2u (grp %u:%-2u / phy %u / cor %u / smt %u): max freq %llu
-4h3H9
+4(3H9
 4-ij8
 4-ik8
 4oil8
 4oim8
   %52.52s%12d%12.3f%12.3f%7.2f%12.3f%7.2f%12.3f%12.3f%12.3f%12.3f
 5{"A9hB
+5hr@yH
 5		@q
 (6a2@
 ?6`>H
@@ -78,16 +79,15 @@
 7]hh8
 %8.4f / %9.2f:  %s
 %8.4f / %9.2f:  Writing profile data to '%s'
+87h>@
 %8.8x-%4.4x-%4.4x-%2.2x%2.2x-%2.2x%2.2x%2.2x%2.2x%2.2x%2.2x
 8Oi-8+
 %8x-%4x-%4x-%2x%2x-%2x%2x%2x%2x%2x%2x
 (@9	,@9
 @9a^@
 9CTestCase
-!'9Eq
 9h2@9i6@9
 @9.h`8
-9HcS9h
 9Hh{8
 9ib@9
 9ib@9)}
@@ -100,9 +100,8 @@
 	@9k}A
 A)"	@
 +a@9?
-A9)9G
+A9)5G
 a@9*a
-(a%9jR%9h
 &aacute;
 &Aacute;
 AbortMessage({
@@ -261,6 +260,7 @@ const char *CBufferString::RemoveAt(int, int)
 const char *CBufferString::RemoveAtUTF8(int, int)
 const char *CBufferString::ReplaceAt(int, const char *, int, bool)
 const char *CBufferString::ReverseChars(int, int)
+ConsumePurchase
 &copy;
 Corefile
 core id
@@ -322,7 +322,7 @@ DoAssertDialog: invalid Assert response returned from dialog/vxconsole - breakin
 .dynamic
 .dynstr
 .dynsym
-E9)9G
+E9)5G
 &eacute;
 &Eacute;
 EarlyInit_Tier0
@@ -368,6 +368,7 @@ _exit
 Exiting due to logging LR_ABORT request.
 Exit Process
 exitprocess_%d
+-export:RunWithAlternateStack-export:JmpToAlternateStack
 Expr: %s
  failed to dlopen "%s" error=%s
  failed to dlopen %s error=%s
@@ -419,10 +420,13 @@ GetCPUInformation
 getcwd
 GetDefaultMiniDumpHandler
 GetDefaultMiniDumpTypeFlags
+GetDeviceCountryCode
+GetDeviceID
 getenv
 GetFileAndLineFromAddress
 GetHardwareClockReliably
 gethostname
+GetInAppPurchasePricingAsync
 GetInstructionPointer
 GetJNIEnvironment
 GetLocalHostname
@@ -487,10 +491,8 @@ HangWatchdog_Shutdown
 .hash
 hb@9h
 hb@9H
-hB^9H
-hbY9H
-hBY9H
-HcS9(
+hbZ9H
+hBZ9H
 Heap: standard allocator
 HEAP WARNING: memory block at %p appears to be corrupt
 HEAP WARNING: memory block at %p is unexpectedly allocated
@@ -503,9 +505,16 @@ hi8_q
 -- Hierarchical Call Graph --
 higher
 hj*8Hhi8K
-hjD)x*@
+hjC)j>@
+hRC9h
+hr@y`
+hr@yH
+hr@yt
 H>*SL>
-h"X9(
+Hs@y@
+Hs@yIGA
+HttpGet
+h"Y9(
 	*I}`
 i2@9h6@9?
 i2q		
@@ -598,6 +607,7 @@ k	@9J
 Ka@9+
 Ka@9k
 )kh8?)
+(kh8I
 Kii8+
 	kl8ij<8
 KM^bM
@@ -685,6 +695,8 @@ LoggingTag_t *CLoggingSystem::AllocTag(const char *)
 lower
 &lsquo;
 (\M8h
+M9a-E
+M9`.E
 macos
 Mac OS
 MacOS 10.10
@@ -692,6 +704,8 @@ MacOS 10.11
 MacOS 10.12
 MacOS 10.13
 MacOS 10.14
+MacOS 10.15
+MacOS 10.16
 MacOS 10.4
 MacOS 10.5
 MacOS 10.5.8
@@ -750,6 +764,7 @@ Networking
 nexttoken
 no affinity...
 -noassert
+-no_assert_dialog
 -noautoargs
 -nocustomermachine
 NO_GAME_ASSERT_DIALOG
@@ -804,7 +819,10 @@ Peak working set: %s
 -phased_window_create
 physical id
 Plat_AlertUser
+Plat_AndroidCountryCode
+Plat_AndroidDeviceID
 Plat_AndroidFixMe
+Plat_AndroidHttpGet
 Plat_AndroidLogMemoryInfo
 Plat_AndroidLogMemoryInfo Heap Total %.2fMB, Used %.2fMB RSS %.2fMB VM %.2fGB
 Plat_AppendMiniDumpErrorString
@@ -907,6 +925,15 @@ Plat_gmtime
 Plat_HandleJavaException
 Plat_HasClipboardText
 Plat_HasDefaultMonitorIndexChanged
+Plat_HookSpecialThread
+Plat_IAPConsumePurchase
+Plat_IAPGetPricingAsync
+Plat_IAPPurchaseSku
+Plat_IAPQueryExistingPurchases
+Plat_IAPSetHandler
+Plat_IAPUpdateConsumedStatus
+Plat_IAPUpdatePricing
+Plat_IAPUpdatePurchaseStatus
 Plat_IgnoreContentAsserts
 Plat_InitializeCOM
 Plat_InstallControlCHandler
@@ -1075,6 +1102,7 @@ pthread_setaffinity_np
 pthread_setspecific
 ../public/ordered_constructor.h
 ../public/tier0/tslist.h
+PurchaseSku
 PushMiniProfilerTS
 PushPopThread
 PushThread
@@ -1082,7 +1110,6 @@ putenv
 *		@q
 :>	Q>>
 @@q(7
-	q>9@
 Q@)Gz`1
 @@qh7
 qH}V*
@@ -1092,6 +1119,7 @@ q "Mz
 q@"Mz
 q`"Pz
 Qt_GetCustomAllocators
+QueryExistingPurchases
 queue force advance
 queue max wait
 )&quot;
@@ -1233,7 +1261,9 @@ SDL_NewAudioStream
 SDL_NumJoysticks
 SDL_OpenAudioDevice
 SDL_PauseAudioDevice
+SDL_PeepEvents
 SDL_PollEvent
+SDL_PumpEvents
 SDL_QueueAudio
 SDL_Quit
 SDL_QuitSubSystem
@@ -1505,6 +1535,7 @@ Total virtual bytes: %s
 T		@Q?
 &trade;
 TranslateStackInfo
+tr@yt
 TSList cannot hold more that %d nodes
 Twj58
 &uacute;
@@ -1534,6 +1565,7 @@ UnregisterHibernationListener
 uRC9@
 [/url]
 [url=
+ur@yu
 usleep
 UTF-8
 &uuml;
@@ -1620,8 +1652,6 @@ V_ftell
 V_ftelli64
 V_fwrite
 VGAME
-V_get_crt_longjmp_fn
-V_get_crt_setjmp_fn
 V_GetErrno
 V_GetFileExtension
 V_GetFileExtensionSafe
@@ -2132,6 +2162,10 @@ _ZN17CThreadSpinRWLock11UnlockWriteEv
 _ZN17CThreadSpinRWLock16SpinLockForWriteEy
 _ZN17CThreadSpinRWLock23UnlockRead_LockForWriteEv
 _ZN17CThreadSpinRWLock23UnlockWrite_LockForReadEv
+_ZN17CThreadSwapTarget14OwnerThreadRunEv
+_ZN17CThreadSwapTarget18ReleaseOwnerThreadEv
+_ZN17CThreadSwapTargetC1Ev
+_ZN17CThreadSwapTargetC2Ev
 _ZN17CThreadSyncObject13AssertUseableEv
 _ZN17CThreadSyncObject14SaveNameToFileEPKc
 _ZN17CThreadSyncObject15WaitForMultipleEiPPS_bj
@@ -2154,6 +2188,10 @@ _ZN17CThreadSyncObjectC2Ev
 _ZN17CThreadSyncObjectD1Ev
 _ZN17CThreadSyncObjectD2Ev
 _ZN18CCachedJNIMethodID4FindERKNS_6Init_tE
+_ZN18CThreadSwapContextC1EP17CThreadSwapTarget
+_ZN18CThreadSwapContextC2EP17CThreadSwapTarget
+_ZN18CThreadSwapContextD1Ev
+_ZN18CThreadSwapContextD2Ev
 _ZN21CThreadMultiWaitEvent3SetEv
 _ZN21CThreadMultiWaitEvent5ResetEv
 _ZN21CThreadMultiWaitEventC1Eb
@@ -2186,6 +2224,8 @@ _ZN23CEventRWLock_DebuggableILb1EE22AllocOrFreeReadLockMemEPNS0_17TrackedReadLoc
 _ZN24BasicStatStructFieldDesc13DescribeFieldEPhm
 _ZN24CDeferredCallStackMarker6InsertEv
 _ZN24CDeferredCallStackMarker6RemoveEv
+_ZN24StackContext_StartData_t20ReplaceReturnContextEP23JmpBuf_AlternateStack_t
+_ZN24StackContext_StartData_t27UnlinkFromLongJumpHierarchyEv
 _ZN25CCallStackMarker_ThisLineC1Eb
 _ZN25CCallStackMarker_ThisLineC2Eb
 _ZN25CRecursionCallStackMarkerC1Eb
@@ -2323,6 +2363,7 @@ _ZNK16CMiniDumpComment17GetCurrentPointerEv
 _ZNK16CMiniDumpComment22GetAvailableBufferSizeEv
 _ZNK16CThreadFullMutex9IsCreatorEv
 _ZNK17CThreadLocalScope18IsLocalThreadScopeEv
+_ZNK17CThreadSwapTarget15IsCurrentThreadEv
 _ZNK17CThreadSyncObjectntEv
 _ZNK19IAttributeSetNative18CreateJavaInstanceEP7_JNIEnv
 _ZNK20CCallStackMarkerBase35TestMarkerAgainstCapturedStackIndexEPKPKvii

@@ -15,14 +15,17 @@
 00000000-0000-0000-0000-000000000000
 0.001
 0.005
+[ 0.005714, 0.3, 1.083, 1.083, 2.0, 3.0 ]
 0.010
 0.015
 %08x %s size %08x
 (0@9?
 )*0@9?
+*_"0k
 0x%016llX
+	0@y)
 0@y_!!ka
-?)_-1)
+[ 1.0, 1.0, 0.227125, 0.227125, 2.0, 3.0 ]
 10CDSPEditor
 10ConCommand
 10CVMixMixer
@@ -52,7 +55,6 @@
 15CAudioMixerWave
 15CAudioProcessor
 15CAudioSourceMP3
-15CMainAudioGraph
 15CSosEventInfo_t
 15CSosGroupAction
 15CSosOperatorLFO
@@ -75,6 +77,7 @@
 16CSosOperatorNull
 16CSosOperatorVec3
 16CVMixTypeManager
+16IDebugVisualizer
 17CAudioDeviceNull2
 17CSequenceArranger
 17CSosOperatorCurve
@@ -83,6 +86,7 @@
 17CSosOperatorFunc1
 17CSosOperatorNoise
 17CSosOperatorTimer
+17CSoundViewerState
 17ISequenceArranger
 17IVMixToolServices
 18CAsyncWavDataCache
@@ -101,10 +105,12 @@
 18CSosOperatorSubmix
 18CSoundEventManager
 18CVSoundTypeManager
+18CWaveTmpFileWriter
 18IAsyncWavDataCache
 18IAudioOutputStream
 18ISoundEventManager
 18ISoundOpSystemEdit
+18IWaveTmpFileWriter
 19CAudioCaptureDevice
 19CAudioSourceMemWave
 19CHRTFAudioProcessor
@@ -112,21 +118,20 @@
 19CSchemaRegistration
 19CSosOperatorFalloff
 19CSosOperatorGlobals
-19CSosOperatorPathing
 19CSosOperatorPosVec8
+	1}9I
 19IKeyValuesErrorSpew
 1bQJ1~
-	1D99
 1DBlend
-1@)k1F
+1ipx?
+1iqx?"/k
 1.QB!
-	1w9I
 *+1@y
 *1@y_
 	1@y?
-:1@y9
 2*?)0"
 20CAudioMixerWaveADPCM
+20CDelayAudioProcessor
 20CPostConnectCallback
 20CSosGroupActionLimit
 20CSosOperatorDBToGain
@@ -142,7 +147,7 @@
 20CSoundMixGroupSystem
 20IResourceTypeManager
 20ISoundMixGroupSystem
-2	1#9x
+2_"0k
 21CAudioStream_Attached
 21CFilterAudioProcessor
 21CSosGroupActionSchema
@@ -161,6 +166,8 @@
 21CSosOperatorStopTrack
 21CSosOperatorTimerRamp
 21CSosOperatorVMixInput
+21CSoundDebugVisualizer
+21IKeyValuesDumpContext
 21IVConCommDataReceived
 2+1@y
 2	1@y?
@@ -177,6 +184,7 @@
 22CSosOperatorRemapValue
 22CSosOperatorSourceInfo
 22CSosOperatorStartVMix8
+22CSosOperatorSteamAudio
 23CDynamicsAudioProcessor
 23CKV3ResourceTypeManagerILy2020175222EE
 23CSosOperatorBlockEvents
@@ -224,6 +232,7 @@
 26CSosOperatorRandomizeFloat
 26CSosOperatorSetOpVarFloat3
 26CSosOperatorSetOpVarString
+26CSosOperatorVMixInputArray
 26CSteamAudioReverbProcessor
 27CSchemaUtlVectorManipulatorI10CUtlVectorI17SosEditItemInfo_t10CUtlMemoryIS1_iEES1_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorI25CSosSoundEventGroupSchema10CUtlMemoryIS1_iEES1_E
@@ -233,6 +242,7 @@
 27CSosOperatorStackCollection
 27CSosOperatorStartSoundEvent
 27CSosOperatorStopSoundEvents
+27IKeyValuesDumpContextAsText
 28CRealtimePitchShiftProcessor
 28CSosEventInfoWithFieldData_t
 28CSosOperatorArrangementStart
@@ -240,6 +250,7 @@
 28CSosOperatorRightAngleFloat3
 28ISchemaCollectionManipulator
 2@96\@)
+29CKeyValuesDumpContextAsDevMsg
 29CSosOperatorCalcFixedRotation
 29CSosOperatorFloatAccumulate12
 29CSosOperatorLogicSwitch3Float
@@ -248,19 +259,15 @@
 29CSosSetSoundEventFieldsInfo_t
 29CVSoundEventScriptTypeManager
 29CVSoundStackScriptTypeManager
-2	a39
-2	a-9
-2	A?9
-2	A>9s
+2	A59
 	[%2d] %16.16s : %s (%d)
 (%2db) %6i : %s
+2hb@9
+2	i:8
 2ij(8
 2ij(8F
 2+imx
-2iqx_
-2irx_"0k
 2?"/k
-2?k78W
 2_!-kc	
 2Ki)8x
 2L1@y
@@ -289,7 +296,7 @@
 35CSosOperatorIterateAndMergeSpeakers
  [%.3f server clamped to %.3f]
 3inputPeak
-3y{x`9,
+40CSchemaRegistration_soundsystem_lowlevel
 ;4)h&@
 4h&A)i"
 4hb@9
@@ -300,33 +307,28 @@
 4I1@y
 4i*@y
 4L5@9
-51@y4
-)5Ay?
-)5Ayi*
-5h&A9
-5h&A9h
 5hf@9
+5hr@y
 )5IJ(}
 5i.@y
 5K!@y
 5vsound_manager.cpp
 =5$@x
+5)@y4
 	5@y?!7kH
 6	1@9
-61@y4
 6ConVar
-	(6h"@
-6h&A9
+	 6h"@
+6h2@y
 6h&Ayi"Ay
 6hb@9
 6hzFy
 6iz@y
 6kB@y
-6@y?!4kC
-6Y#D9
+6)@y4
+6YsL9
 *7`@)
-7	aB9
-7h"A9
+7h.@9H
 7hb@9h
 7hbA9
 7hf@9
@@ -335,9 +337,9 @@
 7ib@9
 7ib@9i
 7IConVar
-7><input_speaker_volumes
 7*j"@
-7	QC9
+7><vgraph_track
+7y8xh
 ?$	)?8
 8CFmtStrNILi256ELb0EE
 8CSosEdit
@@ -346,60 +348,57 @@
 _@8j.@
 8x9,7
 `"@9	
+!#@9	
+"#@9	
 )!@9)
 )	@9?
-*	!#9
-	!~9	
-	!|9	
 	*	(@9
-		@9	
 @9	0@
+(;@93+
+)9@9?
 @9+	@9,
-@99#7
 @9?aEkA
 @9aR@
 @9B("
 9CAudioSDL
 9CSfxTable
+!@9!h4
 9hb@9
+9hb@9)
 9hf@9(
 "@9hf@9i
 9hji8
 9hr@y
+9hr@y)=G
 9hR@yHS
 9hS@yHS
 @9hV@
 9hV@9
 @9hZ@
+)]@9I
 "@9i"@9
-@9ib@9
 9	ii8(
 :@9K1@9k
 @9?`@kA
+9>)mn@
 9)PA9	
+9}	S?
 @9wiu
-!#9(Y@
+9 )@y
 9@z(|`
 9@zH~`
 A-!(!
 A-@ !
 a2@yh2@y
 a6@=b6@
-)a@9	
-	a}9)
-,%A9 
-.%A9-
-)A|9?
-	A}9*
-A#@9	
-	A}9_1
-	A}9_a	
-A9)EG
-	A}9j
-*%A9J
-	A}9J
+	A@9)
+A@9`	(
++a@9k
+[A)		A
 AA9	I@
+)AB9?
 Abort processing sound event %s (scheduled recursively will not process this frame)
+	aC9)
 accumulate_indexed_speakers
 Action Type
 ActionType_t
@@ -522,6 +521,8 @@ AsyncSoundQueue
 Atomic Type: %i
 attachment
 attachment_offset
+attachment_type
+attach_point
 attackTime
 Attack time (ms)
 Attempted preload of soundevent %s with no vsnds
@@ -538,12 +539,13 @@ Available Operators:
 *A_x)a_xk^
 AXk!#
 )!Ay?	
-Ay 	 
+!Ay7J
 ?AYki
 @-B	@
 B-" @
 B-(  
 B-1HD-
+	!B9	
 backward
 Bad Audio file '%s'
 Bad command in vmix!
@@ -601,6 +603,7 @@ Blocks Events
 BodyGroup
 BodyGroupChoice
 body_type
+bonemerge
 bone_name
 bone_names
 bool MXR_LoadAllSoundMixers()
@@ -621,9 +624,8 @@ __bss_start__
 bUpdate
 burst_randomize
 burst_scale
+*BW@9
 C-!8"
-C?@8B
-	!c9	
 cable
 calc_angles_facing
 calc_audibility
@@ -638,7 +640,6 @@ calc_falloff_curve
 calc_falloff_vr
 calc_occlusion_src1
 calc_occlusion_src2
-calc_pathing
 calc_segment
 @?calc_spatialize_speakers
 calc_spatialize_speakers
@@ -670,16 +671,10 @@ center1
 center2
 CEntityIndex
 Cfff?
-CHAN_BODY
 ChangeCallbackOnChange
 ChangeCallbackOnChangeOrCreate
-CHAN_ITEM
-Channel - Index: %d - Guid: %d.
 channels
 Channels:	%d
-CHAN_STATIC
-CHAN_VOICE
-CHAN_WEAPON
 cheat
 check_event_data
 checksum
@@ -739,7 +734,6 @@ Cleaning up leaked audio stream!
 C-l.E-m2@
 client
 clientcmd_can_execute
-Clock ERROR!: %.2f %.2f
 clock_gettime
 CLOSECAPTION
 cloth_collide
@@ -753,6 +747,7 @@ ClothShapeSphere
 Cmath_filter_float
 CMemAllocSystemInitialize
 C)n*@
+cn@9i
 collision_group
 collision_prop
 COLORCORRECTION_VERSION_1
@@ -765,6 +760,7 @@ Compare the compiled and loaded contents of 2 soundevents.
 composite
 COM_TimestampedLog
 Conditional Error: %s
+ConfigAttachedModel
 ConfigurationSystem_001
 configvalue.cpp
 (connected: %s %i )
@@ -916,17 +912,28 @@ CUE Operators:
 Currently gets info for a single operator field
 Currently sets a single float operator field
 CurTime: %f
+CURVES: %d
 CURVE_TANGENT_FREE
 CURVE_TANGENT_LINEAR
 CURVE_TANGENT_MIRROR
 CURVE_TANGENT_SINE
 CURVE_TANGENT_SPLINE
 curve_type
+__customstack
 custom_stack
-CUSTOM_STACK
+__customstack_curve_input
+__customstack_curve_mixgraph_send
+__customstack_curve_name
+__customstack_curve_output
+__customstack_field
+__customstack_has_random
+__customstack_hidden
+__customstack_layers
+__customstack_rand_max
+__customstack_rand_min
+__customstack_send_pos
+__customstack_vsnd
 CUtlBuffer::VaPrintf: String overflowed buffer [%llu]
-CUtlLinkedList overflow! (exhausted index range)
-CUtlLinkedList overflow! (exhausted memory allocator)
 CUtlMemoryArena::CUtlMemoryArena(uint32, bool)
 CUtlMemoryPoolBase: Cannot specify 0 elements to grow each time!
 CUtlMemoryPoolBase::CUtlMemoryPoolBase(int, int, int, MemoryPoolGrowType_t, const char *)
@@ -938,8 +945,6 @@ CUtlSymbolLarge
 CUtlVector
 Cutoff Freq
 Cutoff Frequency
-cVA9	
-cVA9I
 CVSoundEventScriptTypeManager::AddSoundEvent:  %s has a hash collision with existing %s
 CVSoundStackScriptTypeManager::Allocate can't parse stack KV %s
 CVSoundStackScriptTypeManager::Allocate can't parse stack %s
@@ -954,22 +959,21 @@ Cycle or diamond double-reference to '%s'
 D-  "
 d6@y#
 d6@yc
-d6@yC
+d6@yc	
 D-`8 
 D-!8 
 D-)8,
+	!D9	
 .data
 Data Count: %i
 .data.rel.ro
 Data Size: %i
 data_type
 dBCompressionThreshold
-dbGain
 dBKneeWidth
 dBLimiterThreshold
 dBNoiseGateThreshold
 debug.solo
--debugsoundqueue
 DebugTextureInfo001
 Decay target amplitude
 Decay time (ms)
@@ -996,11 +1000,13 @@ Didn't find index %s in list (%d events)
 diffmapping
 diffmaterials
 display_category
+display_edit_type
 display_game
 display_group
 Displaying %d probes around (%.1f, %.1f, %.1f) within %.2f radius for %.2f seconds.
 Displaying %d probes around (%.1f, %.1f, %.1f) with influence for %.2f seconds.
 displayName
+@distance_seek_speed_filter.output
 Distortion feedback
 Distortion Mix (1.0 = wet)
 Distortion Threshold
@@ -1018,7 +1024,8 @@ Double-register of KV3 conversion (from '%s' to '%s')
 Double-save to Member '%s'
 =($D)?P
 Dropping Voice data (%d bytes)
-  %d: %s (%08lx :: %08lx) %s [%d::%d]
+%d) %s
+  %d: %s (%08lx :: %08lx) %s [%.1fs]
 dsp: %3.2f 
 dsp_automatic
 dsp_db_min
@@ -1026,7 +1033,7 @@ dsp_db_mixdrop
 dsp_dist_max
 dsp_dist_min
 	DSP: %f
-	 dspmix %1.2f : distmix %1.2f : lvol %1.2f : cvol %1.2f : rvol %1.2f : rlvol %1.2f : rrvol %1.2f
+	 dspmix %1.2f : lvol %1.2f : cvol %1.2f : rvol %1.2f : rlvol %1.2f : rrvol %1.2f
 dsp_mix_max
 dsp_mix_min
 DSP NODE
@@ -1062,18 +1069,20 @@ Duration: %f
 D%@yh
 .dynamic
 Dynamic
+DynamicConfigList
 dynamic_interaction
 Dynamics
 .dynstr
 .dynsym
-E-@  
-)}E9?
+)=E9?
+	!E9	
 easeIn
 easeOut
 EconItemToolModel_001
 econ_replacement
 _edata
 _editor_
+EditorDynamicConfig
 E-e2@
 effectname
 .eh_frame
@@ -1084,9 +1093,11 @@ emitFromWorld
 EMPHASIS
 ---empty---
 #empty#
+<EMPTY>
 EmptyAnim
-Enable automatic buffer latency detection (requires driver support)
 enable_limit
+Enable visualization for pathing.
+Enable visualization for pathing validation.
 encoding
 __end__
 EngineServiceMgr001
@@ -1164,7 +1175,6 @@ Exports scene currently used by Steam Audio as a phononscene file.
 EXPORTSYSTEM_INTERFACE_VERSION_001
 Extra taps
 ex ym
-F-@  
 f@9H1
 f@9h2
 F@9jB
@@ -1193,10 +1203,12 @@ Feedback scale
 ?fff?
 %f %f %f %f
 %f: %f : %f : %f : %f
+[%f,%f,%f,%f,%f,%f]
 fff?fff?
 fff?fff?fff?fff?fff?fff?
 FIELDATA COMPARE FAIL: %s->%s
 FIELDATASIZE COMPARE FAIL: %s->%s
+field_curve_2d_editor
 field_override
 _field_properties
 Fields:
@@ -1207,17 +1219,27 @@ File %s had sound/ instead of sounds/, path needs to be fixed in resource file.
 File %s is opened for edit by someone. Ignoring the mapping.
 File %s missing sounds dir. Fixing for now.
 File %s missing vsnd extension. Fixing for now.
+FILTER_BANDPASS
 Filter bandwidth
 Filter Bandwidth
 FilteredLinear
+FILTER_HIGHPASS
+FILTER_HIGH_SHELF
+FILTER_LOWPASS
+FILTER_LOW_SHELF
+FILTER_NOTCH
+FILTER_PEAKING_EQ
 Filter Quality
 Filter Type
+FILTER_UNKNOWN
+FIND ELEMENT: (%s)
 .fini_array
 _fixed
 Fixup corrupted .wav file if engine crashed during startmovie/endmovie, etc.
 FixupResourceName: Illegal full path passed in ("%s")!
 FixupResourceName: Illegal path, missing extension passed in ("%s")!
 FlattenedSerializersVersion001
+float16
 float2
 float4
 float6
@@ -1262,9 +1284,12 @@ GenericGameData
 GetCPUInformation
 GetCStringCharConversion
 Get data related to mix group matching string
+get_entity_info.output_position
+@get_event_info.output_elapsed_time
 Get physics surface properties for all the materials.
 GetResourceManifestCount
 GetResourceManifests
+GetSfx: NULL name
 GetSoundEventBaseHash: unable to get event by hash %i
 GetSoundEventBaseHash: unable to get event by name %s
 GetSoundEventBaseName: unable to get event by hash %i
@@ -1281,7 +1306,7 @@ GetSoundEventUpdateStackHash: unable to get event by name %s
 GetSoundEventUpdateStackName: unable to get event by hash %i
 get_system_globals
 GetVSndNameForSoundEvent( %s ) missing
-global
+get_vsnd_%s
 g_mastermixlayer:
 .gnu_debuglink
 .gnu.version
@@ -1305,32 +1330,30 @@ g_VProfCurrentProfile
 h&@)?
 @-$H+
 h1xnj 
-h2@9h
 h2@y	
-h3D9(
-H3D9{
 H5@yH
 h#@9	
 H#@9	
 h.@9H
-h&A9`
-h&A9	
+h:@9u*
 h"A9a
-h&A9h
 HALL Detected 
 HammerMapLoader001
 handindex
 HangWatchdog_IndicateActivity
 .hash
+H!Ay*
 hb@9`
 hB@9`
 hb@9h
+hbay`
+hbay`V
 hBB9(
 hbB9h
-hBB9h
 h&B-j
 h&B)j
 =hB@yHC
+hb!yI
 =hC@y
 =hC@yHC
 !hdx?
@@ -1345,20 +1368,26 @@ hf@9H
 hf@9i
 hfA9hR
 hFD9u
+hfJ9(
+hfJ9(,
 h&H-9+*
 HIGHDPI
 Highest
 HighPass
 h&I)tb
-hj)8z
 hJAy`
 hJAy	
+hnJ9h
+hnJ9H
+HoA8	
 HostStateMgr001
 hr@9(
 hR@9)
 hr@9h
 hRA9jN@
-)H}	S
+hr@y`
+hr@yI
+HS@9{
 hurt_me
 hurt_them
 hV	)i
@@ -1368,17 +1397,20 @@ hv@yh
 H/@xI
 h*@y_
 *H@y($B-
+h"@yj
+!^)I@
 i1xhj*
 i1xhj+
 i1xjj,
+i2A9*	
 i2@y?
 i68t.@
-i6@yh
 ?i(8i
 ?i(8?i*x?i+
 <i*	)a6
 IA@9K%@y
 i*A)I
+ib[8*
 i*B-`8 
 ib@9`
 ib@9(
@@ -1387,15 +1419,17 @@ ib@9h
 ib@9i
 ib@9j
 ib@9l
-I CUtlLinkedList<CQueuedVSoundLoader::AsyncSoundQueue_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CQueuedVSoundLoader::AsyncSoundQueue_t, unsigned short>, unsigned short> >::AllocInternal(bool) [T = CQueuedVSoundLoader::AsyncSoundQueue_t, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<CQueuedVSoundLoader::AsyncSoundQueue_t, unsigned short>, unsigned short>]
+iC[8	
 I CUtlRBTree<CUtlMap<const char *, CSosOperator *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, CSosOperator *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CSosOperator *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, CSosOperator *, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, CSosOperator *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CSosOperator *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<const char *, CSosOperatorStack *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, CSosOperatorStack *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CSosOperatorStack *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, CSosOperatorStack *, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, CSosOperatorStack *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CSosOperatorStack *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
+I CUtlRBTree<CUtlMap<const char *, CUtlString, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, CUtlString, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CUtlString, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, CUtlString, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, CUtlString, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CUtlString, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
+I CUtlRBTree<CUtlMap<const char *, CUtlString, unsigned short, bool (*)(const char *const &, const char *const &)>::Node_t, unsigned short, CUtlMap<const char *, CUtlString, unsigned short, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CUtlString, unsigned short, bool (*)(const char *const &, const char *const &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<const char *, CUtlString, unsigned short, bool (*)(const char *const &, const char *const &)>::Node_t, I = unsigned short, L = CUtlMap<const char *, CUtlString, unsigned short, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CUtlString, unsigned short, bool (*)(const char *const &, const char *const &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<const char *, int, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, int, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, int, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, int, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, int, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, int, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
+I CUtlRBTree<CUtlMap<const char *, KeyValues *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, KeyValues *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, KeyValues *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, KeyValues *, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, KeyValues *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, KeyValues *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<CSosDependent *, int, unsigned short, bool (*)(CSosDependent *const &, CSosDependent *const &)>::Node_t, unsigned short, CUtlMap<CSosDependent *, int, unsigned short, bool (*)(CSosDependent *const &, CSosDependent *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CSosDependent *, int, unsigned short, bool (*)(CSosDependent *const &, CSosDependent *const &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<CSosDependent *, int, unsigned short, bool (*)(CSosDependent *const &, CSosDependent *const &)>::Node_t, I = unsigned short, L = CUtlMap<CSosDependent *, int, unsigned short, bool (*)(CSosDependent *const &, CSosDependent *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CSosDependent *, int, unsigned short, bool (*)(CSosDependent *const &, CSosDependent *const &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<SoundEventGuid_t, CSndMixGroupTrigger_t, unsigned short, CDefLess<SoundEventGuid_t> >::Node_t, unsigned short, CUtlMap<SoundEventGuid_t, CSndMixGroupTrigger_t, unsigned short, CDefLess<SoundEventGuid_t> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<SoundEventGuid_t, CSndMixGroupTrigger_t, unsigned short, CDefLess<SoundEventGuid_t> >::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<SoundEventGuid_t, CSndMixGroupTrigger_t, unsigned short, CDefLess<SoundEventGuid_t> >::Node_t, I = unsigned short, L = CUtlMap<SoundEventGuid_t, CSndMixGroupTrigger_t, unsigned short, CDefLess<SoundEventGuid_t> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<SoundEventGuid_t, CSndMixGroupTrigger_t, unsigned short, CDefLess<SoundEventGuid_t> >::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<unsigned int, CSosOperatorStack *, unsigned short, CDefLess<unsigned int> >::Node_t, unsigned short, CUtlMap<unsigned int, CSosOperatorStack *, unsigned short, CDefLess<unsigned int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, CSosOperatorStack *, unsigned short, CDefLess<unsigned int> >::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<unsigned int, CSosOperatorStack *, unsigned short, CDefLess<unsigned int> >::Node_t, I = unsigned short, L = CUtlMap<unsigned int, CSosOperatorStack *, unsigned short, CDefLess<unsigned int> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, CSosOperatorStack *, unsigned short, CDefLess<unsigned int> >::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<unsigned int, SosOpFieldMapInfo_t *, unsigned short, CDefLess<unsigned int> >::Node_t, unsigned short, CUtlMap<unsigned int, SosOpFieldMapInfo_t *, unsigned short, CDefLess<unsigned int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, SosOpFieldMapInfo_t *, unsigned short, CDefLess<unsigned int> >::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<unsigned int, SosOpFieldMapInfo_t *, unsigned short, CDefLess<unsigned int> >::Node_t, I = unsigned short, L = CUtlMap<unsigned int, SosOpFieldMapInfo_t *, unsigned short, CDefLess<unsigned int> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, SosOpFieldMapInfo_t *, unsigned short, CDefLess<unsigned int> >::Node_t, unsigned short>, unsigned short>]
-I CUtlRBTree<unsigned int, unsigned short, bool (*)(const unsigned int &, const unsigned int &), CUtlMemory<UtlRBTreeNode_t<unsigned int, unsigned short>, unsigned short> >::NewNode(const T *) [T = unsigned int, I = unsigned short, L = bool (*)(const unsigned int &, const unsigned int &), M = CUtlMemory<UtlRBTreeNode_t<unsigned int, unsigned short>, unsigned short>]
 I CUtlRBTree<void *, int, bool (*)(void *const &, void *const &), CUtlMemory<UtlRBTreeNode_t<void *, int>, int> >::NewNode(const T *) [T = void *, I = int, L = bool (*)(void *const &, void *const &), M = CUtlMemory<UtlRBTreeNode_t<void *, int>, int>]
 )icx_
 )icx?
@@ -1404,11 +1438,9 @@ ID of the sound device to use
 )idx?
 )idx9
 *if@9
-If set to 1, report all sounds stopped with S_StopSound().
 If set to 1, report more error found when playing sounds.
 If set to 1, show all incoming updates to vmix inputs.
 I-gR@
-@-#IH
 +ih8k
 ii8#hi8
 Iii8*
@@ -1420,6 +1452,7 @@ i"@)j
 )ij8Y
 )ijx?
 *ijx_
+*ijx_!4k
 ijx)ijx
 *ijx_!(k
 ik8khk8
@@ -1439,7 +1472,6 @@ import_public_opvars
 #include
 #include is NULL 
 Incorrect sampling rate in %s (mp3 frames are at %dHz, .vsnd file has %dHz)
-index(%03d) guid(% 4d) l(% 1.2f) c(%1.2f) r(%1.2f) rl(%1.2f) rr(%1.2f) vol(%1.2f) ent(% 3d) pos(% 6.2f % 6.2f % 6.2f) timeleft(% 2.2f) pitch(% 2.2f) looped(%d) %s
 index %i = %i guid : %i dependents 
 .init_array
 input_
@@ -1554,8 +1586,11 @@ inputName
 input_near_max
 input_near_min
 input_observer_position
+input_occlusion_method
+input_occlusion_mode
 input_operator_name
 input_opvar
+input_pathing_enabled
 input_pause
 input_pitch
 input_pos
@@ -1578,14 +1613,18 @@ input_radius_min
 input_rand_max
 input_rand_min
 input_rear_stereo_scale
+input_restart_start_time
 input_restart_time
 input_retrigger_on_finish
 input_rotation_angle
+input_%s
 Input %s: %.3f
 input_sampler
 input_scalar
 input_scale
+input_scale_x
 input_scale_X
+input_scale_y
 input_scale_Y
 InputService_001
 input_should_pause
@@ -1593,8 +1632,11 @@ input_should_play_tail
 input_should_save
 input_size
 input_soundlevel
+?input_source_offset
 input_source_position
+input_source_radius
 input_spawn_oneshots
+input_speaker_volumes
 input_sphere_pos
 input_sphere_radius
 input_spread_max
@@ -1613,6 +1655,7 @@ input_start5
 input_start6
 input_start7
 input_start8
+input_start%d
 input_start_position
 input_start_value
 input_stop
@@ -1638,6 +1681,7 @@ input_track5
 input_track6
 input_track7
 input_track8
+input_track%d
 input_track_name
 input_trigger
 input_update_opvar1
@@ -1661,6 +1705,7 @@ input_vsnd5
 input_vsnd6
 input_vsnd7
 input_vsnd8
+input_vsnd%d
 input_wait_time
 input_x
 input_X1
@@ -1702,9 +1747,12 @@ invert
 Invert Match
 invert_orientation
 invert_scale
+IoA8?	
 IQuickTime001
 ir8nhr8?
 =iRB9ub
+iR@yh"@y
+iR@ysb
 		%i %s %.3f %.3f 1
 is_debris
 Is Oneshot
@@ -1714,28 +1762,28 @@ itemName
 itemPos
 itemType
 itemTypeName
-iwxSQ
-Ix_!4k
-Ix?!7k
-Ix?!8k
+ivA9*	
 +i*xA
 	i-xhN@yiJ
 *i.xi>@yj:
 i*xJ	
-_i(xj~A
 i#xjj-
-_i(xjrA
+_i(xjjA
+_i(xjvA
+ixsyl
 )i@y_
 )i@y?
+i.@y	
 i>@yh
 )i@yi
 I%@yJ
 Iymx`9,
-i:@yxZ@
 i@y@yl
-i@yZyix
+i@yYyix
+izA9*	
 @)J}	
 j58hf@9(
+j5@yk9@y?
 j)8HK
 J!A9j
 JaAJJ
@@ -1755,10 +1803,10 @@ jn87kn8
 JNI_OnLoad
 JNI_OnUnload
 JSON error, unterminated element: 
-ju8HY
 J{)x)
 J!_x_!5k
-j=@ykA@y
+J @yj
+*j @yK @y_
 Jylx<}@
 Jymxh
 	*jz-
@@ -1769,7 +1817,6 @@ k2D)m:E)
 *k2@y
 k(8vV@
 K9y;xa
-KA{9H
 kAKJJ
 key_groups
 KeyValueCache001
@@ -1788,14 +1835,20 @@ kv3format_manager.cpp
 KV Conditional Evaluation Error
 k!@y_
 k!@y?
+K @y+ 
+K!@y+!
 K	@y(
 k	y9xA
+K!@yk"
+K @yK
+k"@yl
 k@y)Q@
+K @y, @y
 l6B)i
+#l@9i
 last_sniff
 l"Ay	$
 LayerTriggers
-(LB8(
 left_front
 left_front1
 left_front2
@@ -1823,7 +1876,6 @@ libtier0.so
 libvstdlib.so
 Lik8m
 limiterRatio
-linear
 Line %d at "%s": %s
 Line %d: Invalid literal value "%s"
 Line %d: Invalid value "%s"
@@ -1840,6 +1892,7 @@ List all mixers to dev console.
 List all mix groups to dev console.
 List all mix layers to dev console.
 li*x)
+li@yK
 	@LJ!
 	@Lk!
 Lm@x,
@@ -1848,6 +1901,7 @@ LOADED CUSTOM STACKS
 LoadFromBuffer: expected '{', found '%s'
 Loading mapping from %s file.
 LoadKV3Object error: %s
+LoadKV3ObjectInPlace error: %s
 LoadVMixList
 Localize_001
 localPlayer
@@ -1869,15 +1923,21 @@ LowPass
 Lowpass4Tap
 LOWVIOLENCE
 LrwcE
+lR@yj"@yi
+lR@yK
 %ls [wstring, len = %d]
 lvl: %3.2f 
 	LVL: %f
 L@y)%
 l-@)@yi
+l @yL 
+l!@yL!
 @m&!@}
 @m0!@}
+m@9i5@
 m_actionInstanceType
 m_actionType
+m_additionalOutputs
 M-AiL
 Main Output
 make_vertical
@@ -1939,6 +1999,7 @@ math_velocity
 matrix3x4a_t
 matrix3x4_t
 m_audioMeters
+m_automaticControlInputs
 max_angle
  max. %f
 maxHullVertices
@@ -1947,12 +2008,15 @@ max_output
 Max Time
 max_velocity_db
 maxVerticesPerHull
+m_bAffectsGlobals
 m_bApplyMinForce
 m_bDisableChild
 m_bDisableOperator
 m_bDoBonesOrientAlongPositiveX
+m_bEnableFilter
 m_bFitCycleToLifetime
 m_bForceLoopingAnimation
+M-Bh 
 m_bInitFromKilledParentParticles
 m_bInvertMatch
 m_bIsBlocking
@@ -1979,6 +2043,7 @@ m_Children
 MClassHasCustomAlignedNewDelete
 m_Color
 m_ColorScale
+m_controlInputArrays
 m_controlInputs
 m_controlMeters
 m_controlPoints
@@ -1989,6 +2054,7 @@ m_DefaultTargetSettings
 m_EditItems
 m_EditorPreview
 Medium
+m_effectName
 memcmp
 memcpy
 m_Emitters
@@ -2001,8 +2067,10 @@ meshes
 MeshSystem001
 MeshUtils001
 	mF8i
+m_feedbackFilter
 m_fForceAmount
 m_fForceAmountMin
+m_flAttackTimeMS
 m_flBiasParameter
 m_flClusterCooldown
 m_flClusterCooldownMax
@@ -2011,14 +2079,26 @@ m_flClusterRefireTime
 m_flClusterRefireTimeMax
 m_flClusterRefireTimeMin
 m_flClusterSize
+m_flCutoffFreq
+m_fldbCompressionThreshold
+m_fldbGain
+m_fldbKneeWidth
+m_fldbLimiterThreshold
+m_fldbNoiseGateThreshold
+m_flDelay
+m_flDelayGain
+m_flDirectGain
+m_flDuration
 m_flEmissionDuration
 m_flEmissionScale
 m_flEmitRate
 m_flEntIndex
+m_flFeedbackGain
 m_fLifespanScaleExp
 m_flInitFromKilledParentParticles
 m_flInput0
 m_flInput1
+m_flLimiterRatio
 m_flLiteralValue
 m_flMaxDuration
 m_flMultFactor
@@ -2028,16 +2108,23 @@ m_flOpStrengthMinScale
 m_flOpvar
 m_flOutput0
 m_flOutput1
+m_flPitchShift
+m_flQ
 m_flRadiusScale
 m_flRadiusTaper
 m_flRandomMax
 m_flRandomMin
+m_flRatio
+m_flReleaseTimeMS
+m_flRMSTimeMS
 m_flScalePerParentParticle
 m_flSlopeIncoming
 m_flSlopeOutgoing
 m_flStartTime
 m_flStartTimeMax
 m_flTailAlphaScale
+m_flWidth
+m_flxfade
 m_ForceGenerators
 m_groupList
 m_hSnapshot
@@ -2071,6 +2158,7 @@ m_matchPattern
 m_matchSoundEventName
 m_matchSoundEventSubString
 m_MixCommands
+;)mn@
 m_Name
 m_nameInputs
 m_nAnimationType
@@ -2078,10 +2166,14 @@ m_nAttributeToWrite
 m_nBehaviorVersion
 m_nBiasType
 m_nBlockMaxCount
+m_nChannels
 m_nClusterSizeMax
 m_nClusterSizeMin
+m_nControlInputIndex
 m_nControlPoint
 m_nControlPointNumber
+m_nCP
+m_nCPField
 MNetworkBitCount
 MNetworkChangeCallback
 MNetworkEncoder
@@ -2091,7 +2183,9 @@ MNetworkRemoveAll
 MNetworkSerializer
 MNetworkUserGroup
 m_nFeatheringMode
+m_nFilterType
 m_nFirstMultipleOverride_BackwardCompat
+m_nGrainSampleCount
 m_nGraphOutputChannels
 m_nIncomingTangent
 m_nIncrement
@@ -2102,6 +2196,7 @@ m_nOpScaleCP
 m_nOpStrengthScaleSeed
 m_nOutgoingTangent
 m_nParticlesToEmit
+m_nProcessorType
 m_nRandomMode
 m_nScaleControlPoint
 m_nScaleControlPointField
@@ -2134,6 +2229,7 @@ modeldoc23
 modeldoc24
 modeldoc25
 modeldoc26
+modeldoc27
 modeldoc3
 modeldoc4
 modeldoc5
@@ -2142,6 +2238,7 @@ modeldoc7
 modeldoc8
 modeldoc9
 ModelDocUtils001
+model_name
 MODEL_PROCESSING_SCRIPT_INTERFACE_001
 MODEL_PROCESSING_SERVICES_INTERFACE_001
 Mod Frequency
@@ -2158,6 +2255,7 @@ m_Operators
 MORPHS
 movie_fixwave
 movie_fixwave: File '%s' does not exist
+m_params
 m_pBody
 mpg123_close
 mpg123_decode_frame
@@ -2191,6 +2289,7 @@ MPropertyFriendlyName
 MPropertySuppressField
 m_pszSnapshotName
 m_Renderers
+mR@yl
 ms Delay
 ms delay max
 ms delay min
@@ -2211,6 +2310,7 @@ Music volume
 mute: %3.2f
 	MUTE: %f
 m_vActions
+m_valueArrays
 m_values
 m_vDomainMaxs
 m_vDomainMins
@@ -2218,6 +2318,8 @@ m_vecColorScale
 m_vecTailColorScale
 m_vEndTrailTintFactor
 m_vLiteralValue
+!m@y!
+m"@y?
 .M@yiA
 n1Aim
 N24CFieldPathHuffmanEncoder12InternalNodeE
@@ -2228,6 +2330,9 @@ N@adsp_debug
 named
 nav_attribute_avoid
 nav_data
+NBX ncX nB(
+%NBX ncX nB(a
+NBX ncX nB(a
 ne@9kQ
 NetworkClientService_001
 NETWORK_FIELD_CHANGED_ARRAY_WITH_VALUE
@@ -2286,6 +2391,7 @@ NULL m_pSfx
 Number of materials not mapped = %d.
 Number of materials updated with new mapping = %d.
 numerator
+NUM LAYERS: %d
 Num Match groups: %i
 numsegments
 N@y)%
@@ -2340,24 +2446,10 @@ Ordered constructor wrapped type has no default constructor.
 origin_max_delta
 origin_relative
 #OS_Default_Device
-out of voice sources, won't lipsync %s
 output_
 output_0
 output_1
-output_10
-output_11
-output_12
-output_13
-output_14
-output_15
 output_2
-output_3
-output_4
-output_5
-output_6
-output_7
-output_8
-output_9
 output_above
 output_angles
 output_below
@@ -2366,7 +2458,6 @@ output_dependencies
 output_distance
 output_dsp
 output_duration
-output_elapsed_time
 output_element_count
 output_ent_dormant
 output_entity_classname
@@ -2397,16 +2488,19 @@ output_listener_up
 output_match_count
 output_max_index
 output_mixgroups
+output_occlusion
 output_opvar_elements
 output_opvar_exists
+output_pathing_coeffs
+output_pathing_eq
 outputPeak
 output_pos
-output_position
 output_position_x
 output_position_y
 output_position_z
 output_pos_max
 output_pos_min
+OutputPosToVmix
 output_rear
 output_result
 output_snd_gain_convar
@@ -2421,6 +2515,7 @@ outputSubmix
 output_success
 output_time_to_next_syncpoint
 output_time_to_start
+output_transmission
 output_unspread
 output_unstopped
 output_velocity
@@ -2459,7 +2554,6 @@ Parameters: mix group name, [vol, mute, solo], value
 Parameters: mix layer name, mix group name, trigger amount
 PARAMINFO COMPARE FAIL: %s->%s
 paramName
-params
 Parsing LayerTriggers:
 Parsing MixGroups:
 Parsing MixLayers:
@@ -2504,7 +2598,6 @@ PhysicsShapeMesh
 PhysicsShapeSphere
 PhysicsSurfaceProperties
 pitchScale
-PitchShift
 placement_attach
 placement_bone
 placement_mode
@@ -2544,9 +2637,16 @@ preferred_carryangles
 preload_vsnds
 PresetDSP
 preview
+PreviewAttachmentModel
+PreviewBoneAttachedModel
+PreviewBoneMergedModel
 preview.editor
 preview.editor.000
 preview.editor.001
+previewInGame
+PreviewPreset
+PreviewPresetList
+Prewview VMIX voice on the game graph, preview will be different!
 Prints a list of currently available operators
 Prints a list of currently available stacks
 Prints a list of currently cached strings
@@ -2572,6 +2672,7 @@ ProcessSoundEvent: %s unable to find field name %s either in public or event dat
 ProcessSoundEvent: %s unable to get "base" sound event %s
 ProcessSoundEvent:  %s unable to get referenced stack %s. Soundevent deleted and removed.
 ProcessSoundEvent: %s unable to get referenced stack %s. Soundevent deleted and removed.
+process_steamaudio_source
 prop_data
 PropertyEditorSystem_001
 pthread_mutexattr_init
@@ -2590,24 +2691,25 @@ public_field_name
 public.pitch
 public.position
 public.release
-public.%s
+@public.%s
 public.sample
 public.start_point
 public.sync_bpm
 public.sync_bpm_beats
 ../public/tier0/tslist.h
 ../public/tier1/utlleanvector.h
-../public/tier1/utllinkedlist.h
 ../public/tier1/utlrbtree.h
 public.volume
 PurgeAndDeleteAll: Deleting orphaned CSoundEvent pointer for %s via shutdown
 Purge and reload all vmidi data and files.
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
+)q@9)
+q)#+9
 	Q@9?
 	Q@9	
 ?	@qA
-	qA9	
+	qA9i
 *qA9jq
 QAngle
 Qi"A)`
@@ -2617,17 +2719,14 @@ quantize_multiplier
 Quaternion
 Queued: elapsed time: %f, next sync time: %f, length: %f
 QueuedLoaderVersion001
-Queue sound '%s'
-Queue took %f msec to drain
 	Q@xi
 q$;@z
-r	179_A<9T
+r	1=9_A
 RadianEuler
 radius0
 radius1
 R)AIJJ
 raise
-random
 random_exclusive
 RandomFloat
 RandomInt
@@ -2654,11 +2753,14 @@ RegisterConfigValue: Unknown error constructing config value "%s"!
 RegisterStringToken
 .rela.dyn
 .rela.plt
+relative_angles
+relative_origin
 Release
 ReleaseThreadHandle
 releaseTime
 Release time (ms)
 Reload soundmixers.txt file.
+__remap_input
 Remove all soundevents
 RemoveBoneAndChildren
 Remove the specified soundevent
@@ -2700,6 +2802,7 @@ right_rear
 right_rear1
 right_rear2
 Rijh8h"`
+Riji8
 rJMJJ
 rJMJJ8
 r)MIJ
@@ -2721,7 +2824,6 @@ ryjj8
 %*s(%08x):Stopping: %s (%08x) : elapsed time: %.2fs
 %s|  % 2d: [% 3d] %-12s %s
 %s|  % 2d: %s [Offset: %d]
-(S@9Z
 %s| AlignOf: %d
 %s allocation count overflow
 %s allocation count overflow( %llu >= %llu )
@@ -2731,6 +2833,7 @@ S?A@qhJ
 %s| Base Class%s: %d
 SceneSystem_002
 SceneUtils_001
+%s changed to [ 
 sched_yield
 schema
 <!-- schema 
@@ -2742,15 +2845,13 @@ SchemaTestExternal_Two_001
 scripts/soundmixers.txt
 scripts/vmidi/vmidi_manifest.txt
 (%s) %d
-%s(%d): Channel does not have a mixer for sound '%s'.
-%s(%d): Could not pick channel for sound '%s'.
 SDL Audio Device: %s
-%s(%d): params.pSfx is NULL.
 secondary
 SelectedEditItemInfo_t
 send%d
 sendOperator
 send_type
+send_voicegraph_%s
 sequence
 sequence_index
 SequenceMarkup
@@ -2782,10 +2883,10 @@ Setting MixLayer %s
 Setting MixLayer %s : mix %f
 Setting null device for -nosound
 Setting Steam Audio Reverb Level to %.3f.
+SET VMIXGRAPH NAME: %s
 %s::Execute: Can't find operator stack %s in %s
 %s = %f
 %s| Fields:
-S_FindName: NULL name
 shapeType
 %s: Has a failed library stack message.
 %s: Has a failed sound event message.
@@ -2793,7 +2894,6 @@ shift & multiply = %2.5f
 Show async memory stats
 Show async memory stats for just non-streamed music
 Show brief async memory stats
-Show sounds location in world
 .shstrtab
 %s:%i
 sideChain
@@ -2809,6 +2909,7 @@ slerp_bounce
 S_MixAsync
 %*smixgroup: %s
 S_MixSampleFrames
+%s_mult
 %*sName: %s
 %*sNameSpace: %s
 snd_arrangement_start
@@ -2846,8 +2947,6 @@ snd_headphone_pan_radial_weight
 snd_list
 snd_list_soundevents
 snd_list_soundevents_by_stack
-snd_max_same_sounds
-snd_max_same_weapon_sounds
 snd_mergemethod
 snd_mixahead
 snd_mix_async
@@ -2873,7 +2972,6 @@ snd_rear_stereo_speaker_position
 snd_rear_surround_speaker_position
 snd_remove_all_soundevents
 snd_remove_soundevent
-snd_report_stop_sound
 snd_report_verbose_error
 snd_samplers_play_note
 snd_samplers_stop_note
@@ -2906,11 +3004,11 @@ snd_sos_print_operator_stacks
 snd_sos_print_stack_exec_list
 snd_sos_print_strings
 snd_sos_print_tool_properties
+snd_sos_report_entity_deleted
 snd_sos_resolve_execute_operator
 snd_sos_set_operator_field
 snd_sos_set_operator_field_by_guid
 snd_sos_show_block_debug
-snd_sos_show_client_rcv
 snd_sos_show_entry_match_free
 snd_sos_show_groups_debug
 snd_sos_show_groups_match_free
@@ -2948,6 +3046,8 @@ snd_soundmixer_setmixlayer_amount
 snd_soundmixer_set_trigger_factor
 snd_soundmixer_version
 snd_steamaudio_export_scene
+snd_steamaudio_pathing_enablevalidationvis
+snd_steamaudio_pathing_enablevis
 snd_steamaudio_probes_nearby
 snd_steamaudio_set_reverb_level
 snd_stereo_speaker_pan_exponent
@@ -2956,7 +3056,6 @@ snd_surround_speaker_pan_exponent
 snd_surround_speaker_pan_radial_weight
 SndToolHelp
 snd_toolvolume
-snd_visualize
 snd_vmidi_flush
 snd_vmix_show_input_updates
 snd_voipvolume
@@ -3001,10 +3100,10 @@ SOS_STOPTYPE_NONE
 SOS_STOPTYPE_OPVAR
 SOS_STOPTYPE_TIME
 sound/
+Sound delay clock error!: %.2f %.2f
 sound_device_override
 Sound Disabled
 Sound Disabled.
-Sound DSP: preset failed to init.
 soundevent_block
 soundevent_block_test
 SOUNDEVENT COMPARE SUCCESS: %s->%s
@@ -3045,17 +3144,16 @@ soundmixer_set_mixlayer_amount
 soundmixer_set_trigger
 soundmixer_set_vmix
 SoundOperators
-SoundOperatorSystem
 SoundOpSystem001
 SoundOpSystemEdit001
+sounds
 sounds/
 sounds\
 sounds/__attached_output_stream_wrapper_%d.vsnd
 SoundService_001
 sounds/%s
-[Sound] %s("%s") called. %s
 sounds/%s_%llu.vsnd
-soundstacks/custom_soundstacks.txt
+soundstacks/generated/generator_templates.txt
 soundstacks/sosstrings.txt
 soundstacks/soundeventgroups.vsndgrps
 soundstacks/soundstacks_manifest.vrman
@@ -3064,6 +3162,7 @@ soundsystem
 SoundSystem
 SoundSystem001
 SoundSystem/DisableSoundOnDedicatedServer
+soundsystem_lowlevel
 SoundSystemLowLevel
 Sound system not started
 SoundsystemVMixLoader
@@ -3084,7 +3183,9 @@ Source2Server001
 Source2ServerSerializers002
 Source Entity Index
 source_filename
+@%s.output
 %s : %p
+%s: params.pSfx is NULL.
 sparse_convolution
 spawn_motion_disabled
 spawn_orphans
@@ -3104,6 +3205,8 @@ Spline
 %s| Project: '%s' Binary: '%s'
 sqrtf
 Square Wave
+%s_random_add
+%s_random_variance
 %s references : 
 "%s" = "%s"
 (%s:%s) 
@@ -3115,6 +3218,7 @@ Square Wave
 %s%s 
 ss_added
 %s+-- Schema Class: %s
+%s_seek_speed_filter
 %s set to %.2f
 %s set to %x (%s)
 %s%s%f
@@ -3123,15 +3227,15 @@ ss_added
 %s = %s: %i : %i : %i : %i : %i : %i
 %*sSize: %i
 %s| SizeOf: %d
+%s_%s_linear
 %s%s%llu
+%s_%s_mapping_curve
 %s:%s needs base %s:%s to be registered
 %s: Sound event executionlist has exceeded MAX_VOICES. Index %i : %s
 %*sSoundEvent Hash: %d
 %*s%s.%s: 
 %s%s%s
 [%s] %s : src %d : channel %d : vol %.2f : time %.3f
-S_StartSound: Failed to load sound '%s', file probably missing from disk/repository
-S_StopVoiceUnlocked
 %s: string format requested %d chars
 %s%s%u
 __stack_chk_fail
@@ -3150,6 +3254,7 @@ start_offset
 Starts a specified soundevent
 Starts the specified arrangement.
 StartTime: %f
+start_vsnd
 Static
 static void CGlobalConfigValueRegistry::HookUpConfigValue(const char *, ConfigType_t, ConfigValueType_t, CConfigValueOptions &&, const void **)
 static void CSchemaRegistration::RegisterAllModuleData(ISchemaSystem *)
@@ -3168,9 +3273,8 @@ stop_instantly
 stop_oldest
 stop_on_seq_change
 stopped_includes_dependencies
+Stopped voice %d, graph reloaded
 Stopping All Sounds...
-Stopping: Channel:%2d %s
-Stopping sound.
 Stops all currently playing sequences
 Stops all soundevents currently on the execution list
 Stops a specified soundevent
@@ -3198,7 +3302,6 @@ Sustain target amplitude
 Sustain time (ms)
 %s| Virtual: %s; Abstract: %s; TrivialConstr: %s; TrivialDestr: %s
  : %s : vol: %4.2f, sndlvl: %4.2f 
-s@y!	
 s@ya	
 S@y	A
 s@yHC
@@ -3208,9 +3311,9 @@ SystemAttributes
 _system_properties
 T(0@9
 		T9)
+T?#+9
 T*-@9
 T*)@9
-T*%A9?
 T	!A9
 Tcih8
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<CSosPackedFieldData::Entry_t, 3, short>, CSosPackedFieldData::Entry_t, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<CSosPackedFieldData::Entry_t, 3, short>, T = CSosPackedFieldData::Entry_t, I = short]
@@ -3229,11 +3332,12 @@ TextMessageMgr_001
 texturescale
 Th&@)
 Th6@9
-Th6@y
+Th:@9
+Th:@9i
 Th&A)`
-Th&A9	
 The soundsystem requires the filesystem to run!
 Thf@9
+ThfJ9H
 THik8Hi)8
 THit8
 ThJAy	
@@ -3248,11 +3352,9 @@ Thr@y
 ThVB9
 Th>@y
 Th.@y
-Th*@y
-Ti2@yh
+Th"@yi
 Ti5KJ(}
 Ti"A)`
-Ti"B)?
 Tib@9
 Tib@9)
 Tib@9	
@@ -3269,10 +3371,13 @@ TiR@9I
 Ti>@y?
 Ti:@y
 Ti&@y_A
+Ti"@yj
 Tj*@y
+Tj"@yk
 TJ=@y_!+k
 TK	@9)A
 TKih8
+Tk"@yl
 Tl6B-oBC-q:D-
 TL	@9kA
 T	L@y?
@@ -3314,29 +3419,29 @@ Trailing Data
 Triangle
 Tried to load a polymorphic pointer with no '%s' key
 Truncated data
-TuB@y
 TUNNEL Detected 
 turn_rate
-Tu"@y
 Two Bone
 Two KV3 format GUIDs with the same human-friendly name ('%s')
+T+!@y_
 T	<@y?
+T	 @y
 Type Name: %s
 u64( %lld = 0x%llX )
 uint32
 uint32 CUtlMemoryArena::Free(byte *)
 uint64
+Unable to allocate voice for %s
 Unable to create audio thread.
 Unable to create voice for vmix "%s" check script.
 Unable to determine buffer encoding.
+Unable to find graph for vmix %s
 Unable to find soundevent: %s
 Unable to load sound system data.
 Unable to write file '%s'
 Unexpected end of file
 unicode
 <unknown>
-Unknown
-(Unknown)
 __UNKNOWN__
 Unknown field type %s for field %s
 Unknown graph input %s
@@ -3351,6 +3456,7 @@ Unsupported version %d for resource '%s' (Expected %d)
 update
 Update SoundEvent: %s
 UPDATE_STRING_TOKEN_DATABASE
+US@95
 Usage: movie_fixwave wavname
 Usage:  playdelay delay_in_msec (negative to skip ahead) soundname
 Usage:  snd_compare_soundevents soundevent1 soundevent2
@@ -3368,6 +3474,7 @@ Usage:  snd_sos_stop_soundevent_guid <guid>
 Usage:  snd_sos_stop_soundevent_index <index>
 Usage: snd_steamaudio_probes_nearby <radius_inches> <display_duration> <mapname>. Set radius_inches to -1 to use influence radius per probe.
 Usage:  snd_steamaudio_set_reverb_level <level in following range: [0.0 10.0]>. Current value = %.3f
+use_additional_offset
 Used stack: %s
 UserInfoChangeService_001
 use_world_position
@@ -3387,7 +3494,11 @@ util_timer_ramp
 utlbuffer.cpp
 utlmemoryarena.cpp
 utlstring.cpp
+	u@y)9
 V_acosf
+value1
+value2
+value%d
 Value Operator Offset: %i
 VALUES
 Value Stack Offset: %i
@@ -3462,17 +3573,24 @@ VMediaFoundation001
 vmidiManifest
 vmix:%02d: %s
 vmix.cpp
+vmix_delay_desc_t
+vmix_dynamics_desc_t
 VMixEditTool001
+vmix_filter_desc_t
+vmix_filter_type_t
 vmix_mixgraph_input
 vmix_mixgraph_input_dsp_preset
 vmix_mixgraph_input_get_float
 vmix_mixgraph_send
+vmix_pitch_shift_desc_t
+vmix_processor_type_t
 VMixStartup
 vmix_start_vmix_8track has empty vsnd string
 vmix_start_vsnd: %s Voice count >= MAX_VOICES, aborting starting vsnd %s
-VMIX: Unknown filter type for DSP:%s
+VMIX: Unknown filter type %s for DSP:%s
 VMIX: Unknown processor type %s (name %s)
 vmix_voicegraph_input
+vmix_voicegraph_inputarray
 vmix_voicegraph_start_8track
 vmix_vsnd_info
 vmix_vsnd_start
@@ -3486,8 +3604,6 @@ voice_layer
 voiceList
 voice_loopback
 voice_min_buffer_ms
-voice_minimum_gain
-Voice overflow, voice count == MAX_CHANNELS
 voice_scale
 voice_stall_ms
 voice_threshold
@@ -3527,6 +3643,7 @@ vpcf21
 vpcf22
 vpcf23
 vpcf24
+vpcf25
 vpcf3
 vpcf4
 vpcf5
@@ -3539,6 +3656,15 @@ VPhysics2_Interface_001
 VPhysX Interface ResourceMgr v0.1
 V_powf
 V_PrettifyMem
+VPROCESSOR_DELAY
+VPROCESSOR_DYNAMICS
+VPROCESSOR_FILTER
+VPROCESSOR_FULLWAVE_INTEGRATOR
+VPROCESSOR_PRESETDSP
+VPROCESSOR_RT_PITCH
+VPROCESSOR_STEAMAUDIO_HRTF
+VPROCESSOR_STEAMAUDIO_REVERB
+VPROCESSOR_UNKNOWN
 VProcessUtils002
 VProfService_001
 V_qsort
@@ -3563,6 +3689,7 @@ vsnd_files
 VSNDVEC COMPARE FAIL: %s->%s
 VSNDVEC COMPARE SIZE FAIL: %s->%s
 V_snprintf
+V_snwprintf_cch
 V_sscanf
 V_stricmp_fast
 VStringTokenSystem001
@@ -3578,6 +3705,7 @@ V_strtod
 V_strtoi64
 V_strtok
 V_strtoui64
+V_swscanf
 V_tan
 V_tanf
 V_tanhf
@@ -3590,8 +3718,8 @@ V_vsnprintf
 V_vsnprintfSize
 V_vsnprintfWarnTrunc
 _V_wcsncpy_bytes
+V_wcstod
 V_wcstoi64
-*:W@9{w
 Wait: elapsed time: %f, next sync time: %f, local elapsed: %f, local sync: %f, length: %f, num loops: %i
 wait_for_track
 Warning
@@ -3610,7 +3738,6 @@ WARNING: Stack %s Operator %s, opvar field %s overwriting existing parameter of 
 Warning: track_queue: No track name specified on %s, playing without track features
 Warning: Unable to acquire convar value: %s
 Warning: Unable to set convar value: %s
-WaveFixupTmpFile( '%s' ) failed to open file for editing
 wave_type
 wcscmp
 wcslen
@@ -3629,49 +3756,66 @@ WorldRendererBuilderMgr001
 WorldRendererMgr001
 W@y	E
 	 x: %4f y: %4f z: %4f
-X#@9(?
-_x`aC
-xfade
+X7)m@y
+_xi"@y
+_xkR@y_
+x(%	S
+_x	 @y
 =	/@y
+;)@y:
+@y	@@
+*!@y_
+#@y(!
+#@y*!
+#@y+ 
 +	@y,
 	@y(-
 	%@y)
-=@y_"0k
 	y4xl
-Y5Ay+
+#@y)a
+y+a@9*)
 yaw_end
 yaw_start
 y+a_x
 Y?calc_occlusion_src2
+(!@yh"
+#@yH 
 @yh{4x
 yh6@yt:
-yhB@y
+yhB@yH
 yhF@yHG
 yhG@y
 yhG@yHG
-yhJ@yH
 yhS@y
-yh.@y
-yh"@y
 @yhZ@
 {YIN?
 yiv@y
 @yJ|@
 *%@yJ
+)@yj1@
 )YJJ)}
+#@yjR
+"@yj"@y
 @y_!(k!
+#@yK!
+=@y?"/kC
 ykN@y
 ykO@y
+#@ykR
+- @yl
 )ylxB
+@yl"@y
+ @yL @y_
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 y+O@y
 )!@y =p
 y	q@y)
 @y	S@
+@ysrG
+yux)I@
 +yux)y{x
-yvx)I@
 ywx)I@
-@y	x@
+;y|x`9,
 	y:xh
 @y,	@y)!
 @y*	@y-!
@@ -3684,6 +3828,7 @@ _Z6ConMsgPKcz
 _Z6DevMsgPKcz
 _ZdaPv
 _ZdlPv
+zDSoundOperatorSystem
 z:K(None)
 _ZN10CVProfNode10EnterScopeEv
 _ZN10CVProfNode10GetSubNodeEPKciS1_i

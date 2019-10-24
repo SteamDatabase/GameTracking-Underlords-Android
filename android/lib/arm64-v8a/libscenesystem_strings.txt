@@ -25,7 +25,8 @@
 @-"	@
 @-@ #
 @-#(!
-	- (%
+$@)   
+$@)  "
 	(@)(
 	*	}`
  [$0]
@@ -153,6 +154,7 @@ $0 to $1,
 18IRenderingPipeline
 19CBoneConstraintBase
 19CDebugLayerRenderer
+19CModelConfigElement
 19CNETMsg_SignonState
 19CScalableAORenderer
 19CSceneMonitorObject
@@ -163,9 +165,9 @@ $0 to $1,
 !>@=1B
 1bQJ1~
 1DBlend
+1E	)?Q
 *1H9	
 @-1ho
-1@)k)C
 1 = visualize bounds, 2 = visualize sceneobject mesh materials
 !2@=!
 	2*	@
@@ -212,13 +214,11 @@ $0 to $1,
 23IConCommandBaseAccessor
 23ISceneViewDebugOverlays
 24COccluderSceneObjectDesc
-24CSpotLightObjectDescCsgo
 24CSVCMsgList_UserMessages
 24CVConCommandMessageScene
 24IProceduralLayerRenderer
 25CConCommandMemberAccessorI12CSceneSystemE
 25CNETMsg_SpawnGroup_Unload
-25CPointLightObjectDescCsgo
 25CSceneLightObjectInternal
 25CSplatLightsLayerRenderer
 26CAnimatableSceneObjectDesc
@@ -240,6 +240,7 @@ $0 to $1,
 28CBindlessFastPathSceneObject
 28CBoneConstraintPoseSpaceBone
 28CGenerateMipsProceduralLayer
+28CModelConfigElement_UserPick
 28CSceneLightProbeVolumeObject
 28CTextureBarrierLayerRenderer
 28CTextureDisplayLayerRenderer
@@ -253,6 +254,7 @@ $0 to $1,
 2#.CSVCMsgList_UserMessages.usermsg_t
 %.2f ms
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
+2h2"9
 2	h(8
 	2	i*
 2	i78
@@ -261,35 +263,43 @@ $0 to $1,
 2ij(8
 2ij(8F
 2j"@9)p
-2?k78
-2_k88]
-2?k88
+2?k78I
+2_k88?
+2?k88H~
 2njj8l
 2Way_0( %s )
 2Way_1( %s )
 2	y3x
 2	y4xaFAy
 2*y4xaJAy
+2:yWv
 2*y(x	
 2*Y(x
 -3@)+
+30CModelConfigElement_RandomPick
 30CProjectedDecalSceneObjectDesc
 30CSVCMsgList_GameEvents_event_t
+30ISceneLightProbeVolumeListener
 31CBlitTextureToRenderTargetLayer
+31CModelConfigElement_RandomColor
 31CSchemaRegistration_scenesystem
 32CBindlessFastPathSceneObjectDesc
+32CModelConfigElement_SetBodygroup
 32CNETMsg_SpawnGroup_LoadCompleted
 32CSVCMsg_GameSessionConfiguration
 333?1
 33CLightPropagationVolumeObjectDesc
+33CModelConfigElement_AttachedModel
 33CNETMsg_SpawnGroup_ManifestUpdate
 (%3.3f - %3.3f)
 %3.3f x %3.3f
 34CLightPropagationVolumeSceneObject
+34CModelConfigElement_SetRenderColor
 34CNETMsg_SpawnGroup_SetCreationTick
 34CSimplePostProcessingLayerRenderer
 34CSVCMsgList_UserMessages_usermsg_t
 35CInputLayoutRegistration_sm_hLayout
+36CModelConfigElement_SetMaterialGroup
 37CCopySkyLightingPixelsProceduralLayer
 38IMaxSwapChainDimensionsChangedListener
  [%.3f server clamped to %.3f]
@@ -303,19 +313,17 @@ $0 to $1,
 456789:;<=
 4*aNc
 	4B9i
-4*CI9
 4CMDL
 4h'\)
 4h"@9
 4h&@9
+4h.A9
 4hb@9
 4hB@9
 4hf@9
 4hf@9(
-4hJI9
 4hn@9
 4hn@9H
-4hNI9
 4i2@yh
 4i.@9h"@9I
 4in@9?
@@ -326,14 +334,14 @@ $0 to $1,
 4n&	&
 4q:Aip
 5?33s?r_pixelvisibility_partial
-5hBI9(
 5hf@9
+5Hku8|
 5hr@9H
 )5IJ(}
 5i.@y
 5(kv8
 5	QM9	
-5.rZ`
+5.rj`
 5@y)}
 )5@yi
 ?6`*@
@@ -345,7 +353,6 @@ $0 to $1,
 '6`:@
 '6	(@
 %6.2f %6.2f %6.2f %.3f %.3f %.3f
-(6`2H
 )6B9)
 )6B9i
 	6B9i
@@ -385,7 +392,6 @@ _6hNB9	;
 _6ij@
  6iJ@
 6iJA9
-`6in@
 ?6iN@
 _6inA9
 @6iR@
@@ -403,6 +409,7 @@ _6inA9
 /6v"@
 '6vj@
  74	(74
+ 75	(7
 75	 7
 76`&@
 76	$@
@@ -411,6 +418,7 @@ _6inA9
 76i&@
 76iB@
 76iJ@
+7b@)6fA){C
 7h	 7h
 7h"@9
 7hf@9
@@ -419,7 +427,7 @@ _6inA9
 7hf@9h
 7hr@y
 7hr@yi
-7HVX7
+7HWX7
 7ib@9
 7ib@9i
 7IConVar
@@ -451,7 +459,6 @@ _8o%@8
 `"@9	
 (@@9(
 (@@9	
-(@@9	~
 (@@9	-
 (@@9	/
 (@@9	.
@@ -470,12 +477,14 @@ _8o%@8
 @9(! 7
 @9() 7
 @9%	@9&
- @9	$@9JIG
- @9	$@9JMF
+ @9	$@9JEG
+ @9	$@9JIF
 @9?aEkA
 	9	!B9
 @9)+C
 9CFunctor3IPFvP10CSceneViewP11CSceneLayerbES1_S3_b12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEEE
+@9)EF
+ @9)EG
 (@@9h
 @9h*@
 (@@9H
@@ -495,13 +504,11 @@ _8o%@8
 @9i&@
 @9I	@
 "@9i"@9
-@9)IF
- @9)IG
 9	ii8(
 9ISequence
 9j*@9(
 @9J9	
-@9JIG
+@9JEG
 @9jjh8*
 9jqA9
 @9JU	
@@ -512,7 +519,6 @@ _8o%@8
 9kaA9
 @9	ki8
 9kj(8|
-?!*9L
 9lY)<xZ)
 #9(M@
 (@@9sb
@@ -522,31 +528,26 @@ _8o%@8
 (@@9tb
 (@@9tB
 @9U|@
+(@@9	x
 @9 	@z
 9@z(|`
 9@zH~`
 !^a	!
 ?A- 	)
 'A)	}	
-('@)*/A)
 )	!A)
 +@)	/A)
 	(A)(
 A-!(!
-A- 8 
 !^a9-
 +a@9?
-	a~9	
 {A9	=
-	!A9	
 		A9?
 		A9	
 	A@9)
 	A@9)	
 	A@9	
 a@9+a
-"A9)!F
-A9)!F
 		A9h
 	A9h&A
 ^A9i^
@@ -555,8 +556,8 @@ A9)!F
 A9i>@
 	A@9I
 A9	ii
+	 A9J
 	A9j"A
-	 A9J!F
 .!A9k
 ,	A9K
 +	A9K
@@ -596,6 +597,7 @@ AddUInt32
 AddUInt64
 advanced to state %d at %f
 AE_ACTION_SET_TURN_RATE_SCALE
+AEast
 AE_BLIND_ZOMBIE_SNIFF
 AE_CL_ADD_PARTICLE_EFFECT_CP
 AE_CL_BODYGROUP_SET_VALUE
@@ -631,14 +633,18 @@ after sort
 A-G=@
 A-G1@
 A-G5@
+)Ag9?
 A-G9@
 Agg data %d: %p (%d parts, crc 0x%08X)
 aggregate_value
-!aH}!
 Ah1xij/
-"AHJh
+	AH9j
+	AH9J
+	AH9u
+	AH9x
 ai_model_info
 AIWalkable
+	Aj9	
 _A@k(
 		Aliases:
 Allocating new transform texture!
@@ -647,7 +653,6 @@ allow_alias
 allowstatic
 Allow time-sliced shadow buffer rendering when enabled via gameinfo.gi
 Already saw decimal point or exponent; can't have another one.
-A))MA
 *aN6*aN
 anchor_angles
 anchor_position
@@ -717,7 +722,7 @@ ApplyNewState %d at %f
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
  a protocol 
 A protocol message was rejected because it was too big (more than 
-Ar9($
+A))QA
 archive
  args were given.  Full format string was: "
 A sceneobject (perhaps a decal) is still in the world that needs to be deleted before deleting the world.
@@ -736,6 +741,8 @@ ATI_DST24
 attachment
 ATTACHMENT_INFLUENCE_FLAGS_NONE
 attachment_offset
+attachment_type
+attach_point
 Attempted to add semaphore for view (%s) for label layer (%s) that does not exist.
 Attempted to alias unknown rendering pipeline
 Attempted to bind the back buffers of two different swap chains in a single layer!
@@ -758,8 +765,8 @@ auto_unragdoll_duration
 AX-B8#
 Ax_!"k
 AXk!#
-	ay9I
 ?AYki
+Ayws@
 @-b	@
 !^B(*
 !^B(%
@@ -773,10 +780,10 @@ B@9
 ^B9h^
 (<B9h
 ) B9(H@
-b@9J)F
+	!b9I
+b@9J%F
 bA9hb
 BA9iB
-bA9J!F
 BackUp() can only be called after a successful Next().
  BackUp() can only be called after Next().
 Bad expression operator: '%c%c', expected C style boolean expression operator.
@@ -814,12 +821,12 @@ Batch: %d
 bB9hb
 BB9hB
 BB9hj:8
+BB9)u
 B-c("
 !	B-C
 BC6h compression not supported on this target (windows only).
 BC7 compression not supported on this target (windows only).
 B channel not found!
-BEast
 because aux mask=
 " because it is missing required fields: 
 before solve err=%f
@@ -846,8 +853,8 @@ binary_lz4
 BinaryProperties_GetValue
 BindlessFastPathDesc
 bindlessfastpathdesc.cpp
-bindlessfastpathdesc.cpp(228): 
-bindlessfastpathdesc.cpp(897): 
+bindlessfastpathdesc.cpp(1263): 
+bindlessfastpathdesc.cpp(231): 
 BindlessFastPathManifest
 BindlessFastPathSceneObject
 bindless_procedural.vmat
@@ -867,9 +874,11 @@ blockLOS
 bodygroup
 BodyGroup
 BodyGroupChoice
+body_groups
 body_type
 # bone
 BoneChannel
+bonemerge
 bone_name
 bone_names
 Boolean default must be true or false.
@@ -889,7 +898,6 @@ break_create_joint_revolute
 BreakPieceEmbedded
 BreakPieceExternal
 break_uniform_burst
-Bsc_disable_dynamic_sky_lighting
 __bss_end__
 __bss_start
 __bss_start__
@@ -902,7 +910,8 @@ burst_scale
 <b>Viewport X</b>=%d <b>Y</b>=%d <b>Width</b>=%d <b>Height</b>=%d  <b>MinZ</b>=%.3f <b>MaxZ</b>=%.3f
 BX-B8#
 ^B))Y@
-'By_! k#;
+B@yhB
+'By_! k#<
 By?! k
 bytes
 bytes. 
@@ -910,14 +919,11 @@ Byte size calculation and serialization were inconsistent.  This may indicate a 
 !^c(!
 !	@-C
 	(C)(
-C- 	 
-'C@-1
 C-2-@
 C6FaceSkyboxObjectDesc
-C- 8 
 C-!8"
 (C@9(
-C9)EC
+C9)5C
 (C@9h
 c9ibD
 cA9s~
@@ -956,7 +962,6 @@ Can't read a rendertarget from a view with a higher priority.
 can't solve quadratic for light %f %f
 Can't write binary data to a text buffer.
 castshadows
- Cast Shadows %dx%d.
 CAttachment
 CAuthPhysBody
 CAuthPhysJoint
@@ -1153,6 +1158,16 @@ CMaterialDrawDescriptor
 CMemAllocSystemInitialize
 CMeshBuilderSceneObjectDesc
 CMesh Cannot create packed input layout, because the bone indices are out of range (0x%X)
+CModelConfig
+CModelConfigElement
+CModelConfigElement_AttachedModel
+CModelConfigElement_RandomColor
+CModelConfigElement_RandomPick
+CModelConfigElement_SetBodygroup
+CModelConfigElement_SetMaterialGroup
+CModelConfigElement_SetRenderColor
+CModelConfigElement_UserPick
+CModelConfigList
 CMonitorObjectDesc
 CMorphConstraint
 .CMsg_CVars"
@@ -1188,7 +1203,6 @@ collision_prop
 color
 Color: %1.3f, %1.3f, %1.3f
 COLORCORRECTION_VERSION_1
- Color: %d %d %d.
 ColorPosition
 colorTarget
 			Color Target %d: HRT = %llX, MSAA = %s, Resolve = %llX, Width = %d, Height = %d
@@ -1203,6 +1217,8 @@ CommandProcedureList
 .comment
   Comment started here.
 Conditional Error: %s
+ConfigAttachedModel
+config_state
 ConfigurationSystem_001
 configvalue.cpp
  conflicts with an existing enum type.
@@ -1213,6 +1229,8 @@ configvalue.cpp
 " conflicts with the existing symbol "
 ).  Contact the program author for an update.  If you compiled the program yourself, make sure that your headers are from the same version of Protocol Buffers as your link-time library.  (Version verification failed in "
  contains invalid 
+CONTENT
+CONTENTROOT
 control_point
 ConVarRef %s doesn't point to an existing ConVar
 convars
@@ -1271,7 +1289,6 @@ CParentConstraint
 CParticleSystemDefinition
 CPointConstraint
 CPointLightObjectDesc
-CPointLightObjectDescCsgo
 CPointLightObjectDescVr
 CPPTYPE_BOOL
 CPPTYPE_DOUBLE
@@ -1285,7 +1302,6 @@ CPPTYPE_UINT64
 CProjectedDecalSceneObjectDesc
 CPVSData
 CPVSData::pvsmask_t
-(Cr9h
 CreateInterface
 create_particle
 creationsequence
@@ -1316,11 +1332,6 @@ CScratchRenderTargetSystem::FindOrCreateRenderTarget: invalid texture handle for
 CScratchRenderTargetSystem::FindOrCreateRenderTarget: Tried to reference unknown render target name "%s"!
 CScratchRenderTargetSystem::FindOrCreateRenderTarget: Tried to specify RENDER_MULTISAMPLE_INVALID! "%s"
 CScratchRenderTargetSystem::GetRenderTargetInfo cannot work until FinishRenderingViews is called!
-csgo_dump_lights
-csgo_enable_lights
-CSGO_LIGHT_BIN.vtex
-CsgoLightCookieSettings
-csgo_shadow_depthDS.vtex
 CShadowAtlas::Clear
 csharp_namespace
 CSisterResourceBlockLoader::BlockingLoadResourceFileData: Trying to load an illegal resource name %s!
@@ -1346,7 +1357,6 @@ csm_viewdir_shadow_bias
 CSOAContainer::SetAttributeType - ERROR, trying to change type of previously-defined attribute %d!
 CSolveIKChainAnimNode
 CSpotLightObjectDesc
-CSpotLightObjectDescCsgo
 CSpotLightObjectDescVr
 CSSDSEndFrameViewInfo
 CSSDSMsg_EndFrame
@@ -1420,6 +1430,7 @@ Cycle or diamond double-reference to '%s'
 ,d@):
  D-	(@
 	(D)(
+D-"	"
 D}` !
 D15S1
 D16_SHADOW
@@ -1435,7 +1446,6 @@ D9 \@
 %DC-&HE-
 %d %d
 				[%d -> %d]
-D-d*@
 %d.%d.%d
 DDDDUUUUDDDDUUUU
 %d (%d depth-only, %d depth-only alpha-tested)
@@ -1476,9 +1486,7 @@ DevMsg
 dimension0
 dimension1
    %d initial materials (%d initial depth-only), %d copy material changes
-      Dir %d:
 dir=%d %d %d, err=%f
-   Directional: %d
 DirectionalLight
 Directional lights are not supported by the LightBinner
 Dist Cull
@@ -1534,20 +1542,19 @@ Duplicate view id found for %llu
 Dx_! k
 DXT1_ONEBITALPHA
 DXT5_NM
-Dy@C	
 .dynamic
 __dynamic_cast
+DynamicConfigList
 dynamic_interaction
 .dynstr
 .dynsym
 	(E)(
 e4B9e
 E-"5@
-E- 8 
-eA){C
 eC@-g
 EconItemToolModel_001
 _edata
+EditorDynamicConfig
 E-evA
 E-G=@
 E-G1@
@@ -1566,6 +1573,7 @@ EmptyAnim
 __emutls_get_address
 Enable display of console messages on screen. 1 = Enabled, 0 = Disabled, -1 = Enabled if vgui is not present
 enable_limit
+EncodeRGBM
 encoding
 Encountered bad skin weights, summing to %g (1.0 expected) at position %.3f %.3f %.3f
 __end__
@@ -1599,8 +1607,11 @@ ERROR
 	Error allocating render target binding! No targets have been specified!
 error in transition graph: %s to %s
 Error parsing text-format 
+ERROR: Resource name "%s" has the incorrect extension "%s" for the specified resource type (expected "%s")!
 ERROR: Schema registration error - class '%s' is not marked as MModuleLocalTypeScope but contains member '%s' with locally-scoped type '%s'
 ERROR: Schema registration error - class '%s' is not marked as MModuleLocalTypeScope but derives from locally-scoped class '%s'
+ERROR: Specified full path %s does not lie under the mod search path!)
+ERROR: Specified path %s could not be made content-relative
 Error: View "%s", layer "%s": 
 Error: View "%s", layer "%s", render target "%s": 
 Error: View "%s", Layer "%s", render target "%s": 
@@ -1682,11 +1693,12 @@ Extensions to non-lite types can only be declared in non-lite files.  Note that 
 	)F))
 F-%:%
 *-F),5G)_
-F@9	_
 f@9	A
+F@9	Y
 fA9hf
 FA9iF
 faceMergeAngle
+Failed to allocate an instance of a class
 Failed to allocate an instance of class '%s'
 Failed to allocate space for morph!
 Failed to assign bool literal value
@@ -1708,14 +1720,13 @@ FATAL ERROR: unable to register all schema data: %s
 FB9hF
 !	F-C
 FCVAR_NEVER_AS_STRING
-F-d:@
 f %d %d %d
 #f %d %d %d, original mesh: %d %d %d
 FeetSettings
 FeModel combiner: Too many ropes (%u) or links (%u): cannot fit sum in uint16
 %f %f %f %f
 fflush
-F-H%@
+F-HUE
 field
   Field       : 
 Field "
@@ -1767,6 +1778,8 @@ First argument to SwapFields() (of type "
 First argument to Swap() (of type "
 %f is before m_SimulationState[%d].m_flSimulationTime %f
 FIXME
+FixupResourceName: Illegal full path passed in ("%s")!
+FixupResourceName: Illegal path, missing extension passed in ("%s")!
 -F)J}@
 flags
 	Flags: 
@@ -1775,10 +1788,10 @@ Flexible;
 float
 floatbitmap.cpp
 floatbitmap.cpp(140): Unknown gamma type "%s"!
-floatbitmap.cpp(2455): Error calling TGALoader::GetInfo( %s )
-floatbitmap.cpp(2466): Error loading %s
-floatbitmap.cpp(2489): Error! Unknown file type for %s
-floatbitmap.cpp(2508): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s
+floatbitmap.cpp(2463): Error calling TGALoader::GetInfo( %s )
+floatbitmap.cpp(2474): Error loading %s
+floatbitmap.cpp(2497): Error! Unknown file type for %s
+floatbitmap.cpp(2516): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s
 floatbitmap.cpp(324): Conversion not supported yet!
 floatbitmap.cpp(424): Conversion not supported yet!
 floatbitmap.cpp(887): Unsupported color format "%s", skipping!
@@ -1826,8 +1839,9 @@ G6hBB9
 g6hn@
 g6hRB9
 g6i^@
+g6in@
 G6v.@
-G-A(#
+	!g9	
 game_class
 GAMECONSOLE
 game_keys
@@ -1940,6 +1954,7 @@ GeneratedCodeInfo
 GenerateDecalNormals
 GenerateDistanceField
 generated_proto/androidarm64/networkbasetypes.pb.cc
+GenerateResourceNameFromFileName: Invalid extension specified in file name "%s"!
 generic
 GenericGameData
 GeomSplat
@@ -1996,11 +2011,12 @@ g_Tier1_CRC64Table
 g_VProfCurrentProfile
 )h&	)
 #@)h&
+h&?);
 h&@)?
--)H	@
 !.H	 
 #H)	}	
 	(H))}@
+h"0yI
 H@-1	@
 h1xnj 
 h2@9h
@@ -2009,16 +2025,13 @@ h2@yi
 h3@9h
 *-H),5I)_
 H6hV@
-H) 78
 h)8Ay)
-h"@9)
+h"@9)EG
 h"@9h
 h*@9h/
 h.@9H
-h"@9i
-h"@9)IG
+h"A9)
 h"A9a
-h"A9)!F
 HammerMapLoader001
 Hammer/UsesBakedLighting
 handindex
@@ -2037,25 +2050,21 @@ hb@9(
 hB@9`
 hB@9(
 hB@9)
-hB	9)
-hB	9)A
 hb@9h
 hb@9H
 h"B9h
 hB@9h
 h"B9H
 hB@9H
-H<B9h
 hB@9t
+hbAy`V
 hbB9h
-hbD9i
+hBC9	
+hbD9)
 hbD9t
-=hBI9
-HC@9(
 hC@9h
 HC@9h
 HCTonemapManifest
-H-dJ@
 !hdx?
 headtype
 health
@@ -2065,7 +2074,7 @@ HelpSystem_001
 h&E)V
 Hex and octal numbers must be integers.
 =hf@9
-hF@9)
+hF@9)}C
 hf@9h
 hf@9H
 hF@9h
@@ -2076,15 +2085,12 @@ HIGHDPI
 hi,xk
 h&@)j
 H$@-J
-hj58S
-hj)87b
 *hj)8h
 hj)8H
 hJAyJ
 hjj8	
 h*@)K
 Hk;8{
-=hN	9
 host_computationtime
 "host_computationtime_std_deviation
 !host_framestarttime_std_deviation
@@ -2093,18 +2099,23 @@ host_frametime_std_deviation
 	host_loss
 hostname
 HostStateMgr001
+h"py`
 HQ@9(Q
 $)hR@
 hR=9hji8
 hR@9i"
+hrAyi
+hRAy`R
+hrAy`Z
 			HRT = %llX, MSAA = %s
+hr@y`
 hR@y`
 hR@yiF@
+hr@yiFA
 hR@yu
 hR@yv
 hR@yvf
 hS@9HS
-@=hSA)
 hurt_me
 hurt_them
 hv@9)
@@ -2112,22 +2123,23 @@ HW Does not support occlusion queries!
 Hx)|@
 h*@y_
 h&@y)
-hzDycB
 	)@)i
 !.I	 
-)I!	)
+)I!	)?|
 	*I}`
 I@-$	@
 i1xhj*
 i1xhj+
 i1xjj,
 i3@)kW
+i58hbAyi
 i6@yh
+	i{8i
 i)8i&
 ?i(8?i*x?i+
 _i)8j
 i"@9@
-i"@9JIG
+i"@9JEG
 ib@9`
 ib@9(
 ib@9)
@@ -2135,7 +2147,7 @@ ib@9i
 i"B9i
 ib@9j
 ib@9l
-ibA9J!F
+ibA9J
 i*B)h
 i.Bx?
 I CUtlLinkedList<CCharacterDecalRenderer::CCharacterDecalSceneObject *, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CCharacterDecalRenderer::CCharacterDecalSceneObject *, unsigned short>, unsigned short> >::AllocInternal(bool) [T = CCharacterDecalRenderer::CCharacterDecalSceneObject *, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<CCharacterDecalRenderer::CCharacterDecalSceneObject *, unsigned short>, unsigned short>]
@@ -2167,9 +2179,10 @@ identifier_value
 i>D-nrA
 )idx?
 )idx9
-IeDyi
 ". If this is intended, set 'option allow_alias = true;' to the enum definition.
 	(If you are in tools mode, you can add SVF_TOOL_VIEW to your view to allow dynamic allocations.)
+!iH}!
+ii8((
 	ii8h
 ii8#hi8
 I*)!I*)AI*)
@@ -2179,18 +2192,8 @@ Ii+x!
 i"@)j
 *ij(8
 ij(8(
-*ij(86z
-*ij(8cz
-*ij(8Hz
-ij(8I
 *ij(8kj*
-*ij(8lz
-*ij(8Qz
-*ij(8-z
-*ij(8?z
-*ij(8$z
 ij(8Z
-*ij(8Zz
 ijj8?
 IjJY@
 ijw8*
@@ -2207,6 +2210,7 @@ IKRigBug
 IKRigSimple
 <i>Label Layer</i>
 Illegal jstype for int64, uint64, sint64, fixed64 or sfixed64 field: 
+i*?)m
 " implements neither SetCachedSize() nor ByteSize().  Must implement one or the other.
 Import 
 import "$0";
@@ -2252,7 +2256,6 @@ interfaces.cpp
 Internal inconsistency between the layout format and attribute is detected.
 Interpreting non ascii codepoint %d.
 int ParseRenderTargetTokens(const char *, int, RenderTargetToken_t *)
-INVALID
 Invalid compressed buffer size
 Invalid control characters encountered in text.
 INVALID_CPPTYPE
@@ -2337,29 +2340,27 @@ is_transition
 !iv8?|
 *i(xi
 i#xjj-
-	iy8i
 IyixJylx+
 @ @-J
 @-J	,
+j2?)?
+J38d.
 j48	C
 j48t^@
 j4xH;@
 j58hf@9(
+J78+.
 j78a&l
-J78c1
-j)8	?
+j)8	=
 j)8	1
-j(8h>
+j(8h<
 j)8hR@
 j(8jj)8
 j(8tj)8
 J!@9#
-!j9{WF
-j9{WF
 J]A9_
 jA9hj
 JA9iJ
-JaC9*
 JAJJ)
 java_generate_equals_and_hash
 java_generic_services
@@ -2367,16 +2368,16 @@ java_multiple_files
 java_outer_classname
 java_package
 java_string_check_utf8
-@}J!B
 JB9hJ
 J-cb@
 j.D)J}@
 J-dj@
-J-dZ@
+JEIJJ}
 j.E)l2@
 jh8_5
 JIGGLE_BONE
 jiggle bone %u
+JIIJJ}
 jix?! k#
 jn87kn8
 JNI_OnLoad
@@ -2387,6 +2388,7 @@ Joint Indices (%d) Out Of Range for UINT8: Skinning will not work!
 J-q\@
 J-Q\@
 JqA9Hi
+JqC9j
 Jq@y)q@y_
 	JS_NORMAL
 	JS_NUMBER
@@ -2413,14 +2415,11 @@ K1D)M9E)
 K1F)M9G)
 K1H)M9I)
 ?k58D
-k689O
 *?k78
 ?k78h
 k78o_
-_k88|
+_k88^
 k(8vV@
-K9hJ	9i
-K9hsC9
 K	A9lC
 kAKJk
 K-eb@
@@ -2438,13 +2437,14 @@ Kfff>fff>fff>fff>
 kh8ij(8h
 	kh8?u
 K)@)j
-kj8hj*8h>
-kj*8lz 
+kj8hj*8h<
+kj*8l
 kji8v
 k_k<8
 k_k;8
 KMeansQuantization
 kMKJk
+KqC9+
 K?@@qk
 	kSy_
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
@@ -2452,13 +2452,18 @@ kv3format_manager.cpp
 KV3 load transfer failed: %s
 KV3 save transfer failed: %s
 KV Conditional Evaluation Error
+	k(xJ
 Kykx)
 !.l	 
+,)L	@
 (#L9`
 "L9`2
-"L9 3
+(#L9:3
 (#L9@3
 (#L953
+L9hsC9
+!L9{SF
+L9{SF
 @-$LA
 La@9K
 la@9L	
@@ -2486,6 +2491,7 @@ LE_BGRA8888
 LE_BGRX8888
 length
 Length; 
+leveltransition
 @Lff"D
 li)8E
 libandroid.so
@@ -2498,7 +2504,6 @@ libscenesystem.so
 libscenesystem.so.dbg
 libtier0.so
 libvstdlib.so
-LightBinnerCsgo - ClearShadowTexture
 LightBinnerShadowClear
 lightbinner_total_data_%d.vtex
 LightBinnerVr - ClearCacheTile
@@ -2585,9 +2590,9 @@ LrwcE
 %ls [wstring, len = %d]
 	(M))}@
 ^m3-Y
-M-!8 
 m%@9i)
 m	A9j"
+m_aAngOffset
 	Main: %dx%d, Depth: %dx%d
 MakeFramebufferCopy
 MA-L%@8
@@ -2629,6 +2634,7 @@ master_morph_weight
 MATCHFRAMEWORK_001
 Match ID
 Material changes: 
+material_group
 MaterialParamBuffer_t
 MaterialParamFloat_t
 MaterialParamInt_t
@@ -2675,14 +2681,14 @@ materials/effects/lightcookies.vtex
 materials/error.vmat
 materials/tools/copy_texture_with_gamma.vmat
 materials/tools/copy_to_backbuffer.vmat
-MaterialSystem
 materialsystem2
-MaterialSystem2
 MaterialUtils_001
 mat_fullbright
 matrix3x4a_t
 matrix3x4_t
+m_AttachmentName
 m_attachments
+m_AttachmentType
 m_Attenuation0
 m_Attenuation1
 m_Attenuation2
@@ -2717,6 +2723,7 @@ m_bCacheAttempted
 m_bCacheOk
 m_bCanBatchWithDynamicShaderConstants
 m_bCastShadows
+m_bClamp
 m_bDisableChild
 m_bDisableOperator
 m_bDoBonesOrientAlongPositiveX
@@ -2730,6 +2737,8 @@ m_bHasBakedLightingFromVertexStream
 m_bHasCullingData
 m_bHasDecodeDump
 m_bHasPerInstanceBakedLightingData
+m_bHideMaterialGroupInTools
+m_bHideRenderColorInTools
 m_bIgnoreRotation
 m_bInfluenceRootTransform
 m_bInitFromKilledParentParticles
@@ -2737,6 +2746,7 @@ m_bInverse
 m_bIsAttachment
 m_bIsNotMatchedToMaterial
 m_bIsOccluder
+m_bLightingOriginIsInWorldSpace
 m_bLocalSpace
 !m_bNeedsSort
 m_bOffsetExistingPos
@@ -2759,20 +2769,26 @@ m_bScaleInitialRange
 m_bScaleInitialValue
 m_bScalePerParticle
 m_bSelected
+m_bTopLevel
 m_bTrailBias
 m_bTranslationOnly
 m_bUseCompressedNormalTangent
 m_bUseHighestEndCP
+m_bUserSpecifiedColor
+m_bUserSpecifiedMaterialGroup
 m_bUseShadowFastPath
 m_bUsesIndexedBakedLighting
 m_bVisible
 m_ChainData
 m_Children
+m_Choices
 MClassHasCustomAlignedNewDelete
 m_Color
 m_ColorScale
 m_ConeAxis
 m_ConeCutoff
+m_ConfigName
+m_Configs
 m_constraints
 m_ControlRigData
 m_cRenderColor
@@ -2789,6 +2805,8 @@ m_drawCullData
 m_dynamicParams
 m_dynamicTextureParams
 m_eHand
+m_ElementName
+m_Elements
 m_elems
 memchr
 memcmp
@@ -2799,6 +2817,7 @@ mempool.cpp
 memset
 m_EndEffectorBone
 m_EndEffectorTargetBone
+m_EntityClass
 m_eRbfType
 (merge 
 Meshbuilder2
@@ -2849,6 +2868,7 @@ m_fForceAmountMin
 m_fingers
 m_flBakeLightIndexScale
 m_flBiasParameter
+m_flBindPoseDirectionMS
 m_flClusterCooldown
 m_flClusterCooldownMax
 m_flClusterCooldownMin
@@ -2857,6 +2877,7 @@ m_flClusterRefireTimeMax
 m_flClusterRefireTimeMin
 m_flClusterSize
 m_flDepthSortBias
+m_flDuration
 m_flEmissionDuration
 m_flEmissionScale
 m_flEmitRate
@@ -2867,6 +2888,7 @@ m_flFarCullDistanceSquared
 m_flFingerScaleRatio
 m_flFingerWeight
 m_flFogContributionStength
+m_flFootLength
 m_fLifespanScaleExp
 m_flInitFromKilledParentParticles
 m_flInput0
@@ -2888,6 +2910,7 @@ m_flOpStrengthMaxScale
 m_flOpStrengthMinScale
 m_flOutput0
 m_flOutput1
+m_flPosition
 m_flPrecomputedMaxRange
 m_flRadius
 m_flRadiusScale
@@ -2910,11 +2933,14 @@ m_flUvDensity
 m_flValue
 m_flWeight
 m_ForceGenerators
+m_Gradient
+m_GroupName
 m_hBuffer
 m_hingeAxis
 m_HitBoxes
 m_hitboxsets
 m_HitBoxSets
+m_hModel
 m_hSnapshot
 m_IkChain
 m_IkChains
@@ -2930,6 +2956,7 @@ m_Initializers
 m_inputList
 m_inputValue
 Min( %s, %s )
+m_InstanceName
 m_intAttributes
 m_internalOps
 m_intParams
@@ -2938,6 +2965,7 @@ Missing field: FileDescriptorProto.name.
 Missing file '%s'
 Missing name.
 mJD)o
+)MJJ }
 m_JointConstraintPairs
 m_JointName
 m_Joints
@@ -2946,6 +2974,7 @@ m_lightCookie
 m_LiteralColor
 m_masks
 m_material
+m_MaterialGroupName
 m_materialName
 m_metacarpalBoneName
 m_modelName
@@ -2963,10 +2992,13 @@ m_nBoneHash
 m_nBoneNameHash
 m_nBoneWeightCount
 m_nBoundsType
+m_nChoice
 m_nClusterSizeMax
 m_nClusterSizeMin
 m_nControlPoint
 m_nControlPointNumber
+m_nCP
+m_nCPField
 m_nCubeMapPrecomputedHandshake
 m_nCurrentLOD
 m_nCurrentMeshGroupMask
@@ -2975,6 +3007,7 @@ m_nDebugLevel
 m_nDepth
 m_nEntIndex
 m_nEntityIndex
+m_NestedElements
 MNetworkBitCount
 MNetworkChangeCallback
 MNetworkEncoder
@@ -3056,6 +3089,12 @@ m_nVisibleToPlayer
 m_nWidth
 Model combiner: too many vertex sets (%d)! Clamping to %d
 ModelCompile/UseShadowFastPathHeuristic
+MODEL_CONFIG_ATTACHMENT_BONEMERGE
+MODEL_CONFIG_ATTACHMENT_BONE_OR_ATTACHMENT
+MODEL_CONFIG_ATTACHMENT_COUNT
+MODEL_CONFIG_ATTACHMENT_INVALID
+MODEL_CONFIG_ATTACHMENT_ROOT_RELATIVE
+ModelConfigAttachmentType_t
 model.cpp
 model_default_preview_sequence_name
 modeldoc0
@@ -3078,6 +3117,7 @@ modeldoc23
 modeldoc24
 modeldoc25
 modeldoc26
+modeldoc27
 modeldoc3
 modeldoc4
 modeldoc5
@@ -3086,6 +3126,7 @@ modeldoc7
 modeldoc8
 modeldoc9
 ModelDocUtils001
+model_name
 MODEL_PROCESSING_SCRIPT_INTERFACE_001
 MODEL_PROCESSING_SERVICES_INTERFACE_001
 Model %s missing bone and flex counts (%d < %d), init %d
@@ -3144,6 +3185,7 @@ m_SolverType
 m_SourceFilename
 m_sSurfaceProperty
 m_sTargetMorph
+m_Stops
 m_stringAttributes
 m_targets
 m_Targets
@@ -3213,7 +3255,6 @@ N24CFieldPathHuffmanEncoder8LeafNodeE
 "N$4$n
 N5@-J	@
 (_N8H
-.\)`nA
 n	A9-
 nA9hn
 NA9iN
@@ -3379,7 +3420,6 @@ niqx?
 Nj1xkj-
 No Buffer
 No default value
-No Diffuse.
 <NO EXPRESSION>
 <no failure reason set>
 No field named "uninterpreted_option" in the Options proto.
@@ -3400,7 +3440,6 @@ Normalized3x3SobelEdgeFilterFrom
 North
 <No schemasystem>
 NO_SIDE_EFFECTS
- No Specular.
 no_standard_descriptor_accessor
 no_steam_server
 Not Available
@@ -3426,6 +3465,7 @@ NSt6__ndk110__function6__funcIZN14CLightBinnerVr25AddEnvironmentMapsForViewEP10C
 NSt6__ndk110__function6__funcIZN14CLightBinnerVr27AddLightProbeVolumesForViewEP10CSceneViewyyE3$_4NS_9allocatorIS5_EEFvP28CSceneLightProbeVolumeObjectEEE
 NSt6__ndk110__function6__funcIZN14CLightBinnerVr40ShadowSetup_AllocateDumbShadowsForLightsEP10CSceneViewP11ISceneLayerRK8CFrustumyyiE3$_2NS_9allocatorISA_EEFvP25CSceneLightObjectInternalEEE
 NSt6__ndk110__function6__funcIZN26CBindlessFastPathPartition21EnsureEnvironmentMapsEvE3$_0NS_9allocatorIS3_EEFvP18CEnvMapSceneObjectEEE
+NSt6__ndk110__function6__funcIZN32CBindlessFastPathSceneObjectDesc35EnsureLightProbeVolumeDescriptorSetEvE3$_1NS_9allocatorIS3_EEFvP28CSceneLightProbeVolumeObjectEEE
 NSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
 NSt6__ndk113basic_istreamIcNS_11char_traitsIcEEEE
 NSt6__ndk113basic_ostreamIcNS_11char_traitsIcEEEE
@@ -3485,10 +3525,12 @@ N.Y ns*a
 	(O)(
 O6hb@
 O6hFB9	
+o6hr@
 o6hVB9	1
 o6ib@
 O6ib@
 O6ifA9
+o6ir@
 o6jb@
 objc_class_prefix
 Object %4d: 0x%p, class=%20s, origin=(%13g,%13g,%13g), bounds=(%13g,%13g,%13g):(%13g,%13g,%13g), desc=0x%p, flags=0x%016llX
@@ -3526,7 +3568,6 @@ original
 Original
 origin_max_delta
 origin_relative
-Ortho
 OrthoLight
  Outdent() without matching Indent().
 outerconeangle
@@ -3540,6 +3581,7 @@ Override. Old default was 3.0
 Override. Old default was 45.
 Override. Old value was 1.0
 Overrides the map's fog settings (-1 populates fog_ vars with map's values)
+($?)P
 p6iv@
 p6jf@
 p7v	P7
@@ -3633,6 +3675,7 @@ Plat_GetThreadIndex
 Plat_IsHighDPI
 Plat_IsInDebugSession
 Plat_MSTime
+Plat_NeedsLowFragmentation
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_UUIDToString
 play_endcap
@@ -3647,8 +3690,6 @@ pObj->GetRefDataPtr() == nullptr
 POINT
 point0
 point1
-      Point %d:
-   Point: %d
 pointLightLayout
 pointLightQuadLayout
 Pong0
@@ -3674,6 +3715,11 @@ PosXYZ
 precomputedmaxrange
 preferred_carryangles
 Prepass
+PreviewAttachmentModel
+PreviewBoneAttachedModel
+PreviewBoneMergedModel
+PreviewPreset
+PreviewPresetList
 previouslevel
 prev layer not found
 Primitives drawn: 
@@ -3728,7 +3774,6 @@ py_generic_services
 Q@9*Q
 )qA9)i
 QAngle
-Q-B8+
 	QB9i
 Qhc@9
 Qi"A)`
@@ -3752,18 +3797,18 @@ R	}8)
 R8G8B8A8_ETC2_EAC
 R8G8B8_ETC2
 *R)8yv
+r	!"9_A'9A
 R@9hR
-r	a99_
 RA9iR
-R	a 9KV
 RadianEuler
 radius0
 radius1
+R)AIJJ
 raise
 r_allow_morph_batching_on_base
 RandomFloat
+RandomInt
 Range: %2.3f, Falloff: %2.3f
- Range: %d.
 RB9hR
 r_bloom_offset
 r_bloom_scale
@@ -3790,6 +3835,8 @@ RegisterConfigValue: Unknown error constructing config value "%s"!
 RegisterStringToken
 .rela.dyn
 .rela.plt
+relative_angles
+relative_origin
 Release
 ReleaseLast
 ReleaseMessage
@@ -3811,7 +3858,6 @@ RenderCubeMap frustum %s
 RenderDevice003
 RenderDeviceMgr001
 renderdiffuse
- Render Diffuse.
  Render %d specific objects
 RenderHardwareConfig002
 RenderingPipeline
@@ -3819,13 +3865,11 @@ renderingpipelines
 RenderingPipelines_001
 rendermesh.cpp(717): 
 RenderMeshFile
-RenderModes
 Render pending translucent drawlist
 RenderPrimitiveType_t
 RenderService_001
 RenderSkeletonBone_t
 renderspecular
- Render Specular.
 RenderSystemSurface001
 		Render Target Desc:
 rendertarget_dscratch_%d_%d.vtex
@@ -3879,6 +3923,7 @@ RGBA32323232F
 RGBA8888_LINEAR
 RGBX555
 RGBX8888
+Rh"0y
 R	h(8	
 Rhf@9
 R	hh8
@@ -3887,7 +3932,9 @@ R	hi8
 R	hi8i
 Rhi)8t
 Rhj)8
+Rhj)8"
 rhj)8H
+Rhj)8t
 Rhjh8
 Rhjh8(
 Rhjh8h
@@ -3902,7 +3949,6 @@ R	ii8I
 R)ij8I
 Rijh8
 Rijh8)
-Rijh8Z
 Riji8(
 r_indirect_specular_force_scale
 RingReduction
@@ -3910,13 +3956,17 @@ RingReduction2
 RingReduction3
 RingReduction4
 R`j(8(
+RJAJJL
 rj/J)
 Rjji8
 Rjjj8
 rJMJJ
-R?k78
+RJMJJ,
+rJMJJi
+R?k78k
 R(kh8
 R	kh8)
+R	khx)
 R(ki8
 Rkji8i
 r_lightBinnerFarPlane
@@ -3951,7 +4001,7 @@ r_ssao_strength
 rt_bakecubemap_depthstencil.vtex
 rt_bakecubemap.vtex
 r_texture_lod_scale
-Rtj(8(>
+Rtj(8(<
 rt_LPV_Blockers.vtex
 rt_lpvPingB.vtex
 rt_lpvPingG.vtex
@@ -3961,10 +4011,9 @@ rt_lpvPongG.vtex
 rt_lpvPongR.vtex
 rt_LPV.vtex
 runspeed
-R@y		
 r@yi"@
+R@yI	
 ryjj8
-R@yJQE
 --- %s: 
 "%s" 
 "%s":
@@ -3978,8 +4027,8 @@ s1_mapname
 %s|  % 2d: %s [Offset: %d]
 "%s":%.3f
 S: %7.3f
+(S@9hS
 S@9	Q
-S@9(S
 SA)hb@
 SA)hJ@
 %s| AlignOf: %d
@@ -4024,7 +4073,7 @@ scenegfxresources.cpp(309):
 scenegfxresources.cpp(491): 
 scenegfxresources.cpp(513): 
 scenegfxresources.cpp(740): 
-scenegfxresources.cpp(890): 
+scenegfxresources.cpp(905): 
 sceneobject_h
 sceneobject_methods.cpp
 scene_quadindexbuffer
@@ -4036,15 +4085,14 @@ scenesysDodecahedron
 @SceneSystem
 SceneSystem_002
 SceneSystem/CharacterDecals
-SceneSystem/CMTAtlasChunkSize
-SceneSystem/CMTAtlasHeight
-SceneSystem/CMTAtlasWidth
+SceneSystem/CMTAtlasChunkSizeMobile
+SceneSystem/CMTAtlasHeightMobile
+SceneSystem/CMTAtlasWidthMobile
 scenesystem.cpp
-scenesystem.cpp(1210): 
+scenesystem.cpp(1209): 
 scenesystem.cpp(4403): 
-scenesystem.cpp(6275): Expecting 1 renderable pass for material "%s" but found %d!
-scenesystem.cpp(7502): Waited 500 ms for jobs to complete. Attempt to drain windows message queue. Jobs in queue = %d
-SceneSystem/CsgoLightBinner
+scenesystem.cpp(6255): Expecting 1 renderable pass for material "%s" but found %d!
+scenesystem.cpp(7488): Waited 500 ms for jobs to complete. Attempt to drain windows message queue. Jobs in queue = %d
 SceneSystem/CubemapFog
 scenesystemdebug
 SceneSystem/DisableShadowFullSort
@@ -4104,6 +4152,8 @@ sc_log_submits
 sc_max_framebuffer_copies_per_layer
 sc_multithread_sorted_layers
 sc_new_morph_atlasing
+%s_color
+%s (Color)
 sc_only_render_opaque
 sc_only_render_shadowcasters
 sc_optimizepartitions
@@ -4135,7 +4185,6 @@ sc_spew_cmt_usage
 sc_throw_away_all_layers
 sc_use_clear_subrect
 sc_visualizesceneobjects
-      %s %d:
 --- %s[%d]: 
 "%s":%d
 %s : %d
@@ -4181,6 +4230,7 @@ SetRepeatedUInt32
 SetRepeatedUInt64
 SetString
 setting m_SimulationState[%d].m_flSimulationTime=%f
+setting.shaderquality
 SetUInt32
 SetUInt64
 "%s":%f
@@ -4198,7 +4248,6 @@ shadowcascaderesolution%d
 shadowcolor
 shadowdepth
 Shadowed spot lights in view: %d
-Shadowed spot lights require more than the allocated %dx%d shadow map! Some will be removed!
 -shadowTargetSize
  -shadowTargetSize Adjusting shadow target size to %d from %d
  -shadowTargetSize psys jba Adjusting nMaxShadowBufferSize size to %d from %d
@@ -4240,6 +4289,8 @@ SkyMapSampleLightingReadPixels
 SkyMapSkyRender
 "%s":%lld
 "%s":%llu
+%s (Material)
+%s_matgrp
 sm_hLayout
 			"%s": msaa = %s
 			"%s": msaa = %s, resolve = %s
@@ -4266,6 +4317,7 @@ source_file
 source_filename
 South
 Spatial partitions: %d
+@spawn
 spawn_count
 SPAWN_GROUP_BLOCK_UNTIL_LOADED
 'SPAWN_GROUP_CREATE_CLIENT_ONLY_ENTITIES
@@ -4289,7 +4341,6 @@ Splitting huge triangles (%d verts,%d tris) -> (%d verts,%d tris), %d splits
 SpotLight
 spotLightLayout
 spotLightQuadLayout
-   Spot & Ortho: %d
 SpotShadowColor
 SpotShadowDepth
 #%s/PrimaryContext frame( %d )
@@ -4314,7 +4365,6 @@ ss_added
 SSAOManifest
 #%s/%s/BatchRenderList frame( %d )
 %s+-- Schema Class: %s
-#%s/SetupLightingForViewCsgo/SetupLightingForViewCsgo
 #%s/SetupLightingForView/SetupLightingForView
 #%s/SetupLightingForViewVr/SetupLightingForViewVr
 %s| SizeOf: %d
@@ -4540,7 +4590,6 @@ Tg@C-q @
 TG@C-Q @
 Tg@F-q8@
 TG@F-Q8@
-T(GI9hD
 TGif8
 Tg@I-qP@
 TG@I-QP@
@@ -4581,6 +4630,7 @@ This shouldn't be called if all the sizes are equal.
 This ZeroCopyOutputStream doesn't support aliasing. Reaching here usually means a ZeroCopyOutputStream implementation bug.
 THit8
 ThJ@y
+Th&Q)
 ThrA9
 ThreadGetCurrentId
 ThreadMultiWaitObjectSetDestroy
@@ -4603,7 +4653,6 @@ Ti*C)k"@
 tick_interval
 Tif@9
 Tif@9)
-TifDy(=
 TiF@y?
 TiF@y?! k
 TIkh8?}
@@ -4638,10 +4687,8 @@ ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
-Too many point(%d) + spot(%d) + dir(%d) lights found! CLightBinnerCsgo supports %d active point + spot + dir lights!
 Too many shadowed spot lights in the scene!  Some will be removed!
 ") to start from the outermost scope.
-Total Lights: %d
 ".  To use it here, please add the necessary import.
 T? @q
 T? @q*
@@ -4730,6 +4777,7 @@ TYPE_UINT32
 TYPE_UINT64
 \U%08x
 u64( %lld = 0x%llX )
+)u@9i
 uint32
 uint64
 U)'LV)5XW)7`X)
@@ -4778,6 +4826,7 @@ UpperEyelid(
 Usage is sc_setfloatattr <attrname> <value>
 Usage is sc_setintattr <attrname> <value>
 Usage scope:
+use_additional_offset
 useMotionDamping
 usemtl initialShadingGroup
 userid
@@ -4876,6 +4925,7 @@ V_fmodf
 V_fpclassify
 V_frexpf
 V_GetErrno
+V_GetFileExtension
 v %g %g %g
 v %g %g %g%s
 VGUI_Input005
@@ -4899,6 +4949,7 @@ virtual void CSceneViewDebugOverlays::AddToView(ISceneView *, float)
 virtual void CSceneViewDebugOverlays::AgeList(float, float)
 virtual void CSceneView::MoveLayerToBeAfterLabel(CUtlStringToken, ISceneLayer *, bool)
 virtual void CSceneView::MoveLayerToBeAfterLayer(ISceneLayer *, ISceneLayer *)
+V_IsAbsolutePath
 VisBuilder_001
 V_isnan
 V_log2f
@@ -4950,6 +5001,8 @@ volume_fog_dither_scale
 volume_fog_enable_jitter
 volume_fog_enable_stereo
 volume_fog_enlarge_frusta
+volume_fog_fade_in_end
+volume_fog_fade_in_start
 volume_fog_show_volumes
 volume_fog_single_pass
 volume_fog_view_culling_enabled
@@ -4973,6 +5026,7 @@ vpcf21
 vpcf22
 vpcf23
 vpcf24
+vpcf25
 vpcf3
 vpcf4
 vpcf5
@@ -4992,7 +5046,10 @@ V_qsort_s
 VR_001
 vr_allow_time_sliced_shadow_map_rendering
 vr_carry_type
+vr_cubemap_normalization_max
+vr_cubemap_normalization_roughness_begin
 vr_dump_lights
+V_RemoveDotSlashes
 vr_enable_cached_lights
 vr_enable_lights
 VRenderDeviceSetupV001
@@ -5082,6 +5139,9 @@ world_offset_angle
 world_offset_pos
 WorldRendererBuilderMgr001
 WorldRenderer/EnvironmentMapColorSpace
+WorldRenderer/LightProbeVolumeAlgorithm
+WorldRenderer/LightProbeVolumeColorSpace
+WorldRenderer/LightProbeVolumeUncompressedFormat
 WorldRendererMgr001
 Writing kdTree with %d triangles
 wrong submessage type
@@ -5091,8 +5151,6 @@ wX@)u
 X360_DST16
 X360_DST24
 X360_DST24F
-x6hz@
-x6iz@
 @x_!6k
 ,X@)7
 x7wB@
@@ -5113,7 +5171,7 @@ Yaw;
 yaw_end
 yaw_start
 @yaZN
-y(Cr9
+y(cT9
 @y+}E
 yh2@y
 yhB@y
@@ -5126,9 +5184,12 @@ y+%I)
 yi2@yh:
 yi6@y?
 {YIN?
+@yiNA
+y)iu8I
 yi>@y)
 yi>@yj
 *	@yJ
+)YJJ)}
 @yJq@y
 @yku@y_
 @ykzj
@@ -5154,23 +5215,30 @@ _Z17LoggingSystem_Logi17LoggingSeverity_tPK17LoggingMetaData_tPKcz
 _Z17LoggingSystem_Logi17LoggingSeverity_tRK14LeafCodeInfo_tPKcz
 _Z6DevMsgPKcz
 Z*=@8H
+=*!Z9	
 ZA9iZ
 ZB9hZ
 'Z .c
 _ZdaPv
 _ZdlPv
 -z down
+zDsc_disable_dynamic_sky_lighting
 Zd@)X
-$	@zI
 _ZN10CVProfNode10EnterScopeEv
 _ZN10CVProfNode10GetSubNodeEPKciS1_i
 _ZN10CVProfNode9ExitScopeEv
 _ZN12CThreadEvent3SetEv
 _ZN12CThreadEventC1Eb
+_ZN13CBufferString10FixSlashesEc
+_ZN13CBufferString11ToLowerFastEi
 _ZN13CBufferString12AppendFormatEPKcz
+_ZN13CBufferString12SetExtensionEPKc
 _ZN13CBufferString13AppendFormatVEPKcSt9__va_list
+_ZN13CBufferString13FixupPathNameEv
 _ZN13CBufferString5PurgeEi
+_ZN13CBufferString6FormatEPKcz
 _ZN13CBufferString6InsertEiPKcib
+_ZN13CBufferString8RemoveAtEii
 _ZN13CBufferString9SetLengthEibPi
 _ZN13CThreadRWLock11UnlockWriteEv
 _ZN13CThreadRWLock11WaitForReadEv
@@ -5195,6 +5263,7 @@ _ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEj
 _ZN22CThreadRWLock_FastRead30HandleFirstWriteLockTransitionEv
 _ZN22CThreadRWLock_FastReadC1Ev
 ZN26CBindlessFastPathPartition21EnsureEnvironmentMapsEvE3$_0
+ZN32CBindlessFastPathSceneObjectDesc35EnsureLightProbeVolumeDescriptorSetEvE3$_1
 _Znam
 zn@)j
 _ZNKSt11logic_error4whatEv

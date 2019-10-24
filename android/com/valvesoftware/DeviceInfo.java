@@ -1,4 +1,4 @@
-package com.valvesoftware.source2launcher;
+package com.valvesoftware;
 
 import android.util.Log;
 import java.util.ArrayList;
@@ -136,7 +136,7 @@ class DeviceInfo {
     /* JADX WARNING: Removed duplicated region for block: B:28:0x003a  */
     /* JADX WARNING: Removed duplicated region for block: B:41:0x005c  */
     /* Code decompiled incorrectly, please refer to instructions dump. */
-    private static boolean DeviceExcluded(com.valvesoftware.source2launcher.DeviceInfo r5, com.valvesoftware.source2launcher.DeviceInfo r6) {
+    private static boolean DeviceExcluded(com.valvesoftware.DeviceInfo r5, com.valvesoftware.DeviceInfo r6) {
         /*
             int r0 = r6.m_nMinOS
             r1 = 999999(0xf423f, float:1.401297E-39)
@@ -228,7 +228,7 @@ class DeviceInfo {
         L_0x0098:
             return r1
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.source2launcher.DeviceInfo.DeviceExcluded(com.valvesoftware.source2launcher.DeviceInfo, com.valvesoftware.source2launcher.DeviceInfo):boolean");
+        throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.DeviceInfo.DeviceExcluded(com.valvesoftware.DeviceInfo, com.valvesoftware.DeviceInfo):boolean");
     }
 
     private static int[] ParseDriverVersion(String str) {

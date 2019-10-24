@@ -1,9 +1,6 @@
 //configure steam
 @steam.txt
 
-//-noassert
--dev
-
 // Clamp this for now?
 -scene_system_partitions 4
 
@@ -17,7 +14,6 @@
 // general rendering
 +r_deferred_additive_pass 0
 +r_dota_force_forward 1
-+r_morphing_enabled 0
 +r_drawgameui 0
 +r_drawvgui 0
 +r_dota_allow_parallax_mapping 0

@@ -215,12 +215,8 @@ $0 to $1,
 2/H@9
 2*H@9)}@
 2&H@9
-2hb39
 2hB	9
-2hr29#
 2ij(8
-2ij(8j 
-2ij(8w 
 2iJ@9
 2iJ@9)
 2iJ@9	
@@ -229,11 +225,10 @@ $0 to $1,
 2j"@9)p
 2_!(k
 2?".k
-2?k78Z
+2?k78:
 2_k88
-2?k88Y
+2?k889
 2(K@9
-2lC8a
 2oi-x
 2 .ProtoFlattenedSerializerField_t"!
 2@yzz@
@@ -281,6 +276,7 @@ $0 to $1,
 %50.50s %75.75s offset %10.10s %9.9s %s
 % 5d %-20s:  %-32s at offset % 5d, 0x%p array %-5s struct %-5s
 % 5d %-20s:  %-32s at offset % 5d, 0x%p FAKE field
+% 5d %-20s:  %-32s:  received non-zero array count for FAKE deleted field in demo file, can't continue since don't know how to parse the members
 % 5d % 5d % 5d: %-20s: 0x%p
 % 5d % 5d % 5d: %-20s: 0x%p encoding field %s %s%s: %s
 % 5d % 5d % 5d: %-20s [%d]: 0x%p array size adjusted from %d to %d elements
@@ -293,7 +289,6 @@ $0 to $1,
 % 5d % 5d:% 5d: %-20s [%d]: delta field %s [%s] "%s" != "%s"
 5hr@9H
 5h"@y
-5h"@yI
 )5IJ(}
 5i.@y
 5j3@y
@@ -301,8 +296,6 @@ $0 to $1,
 5w"@y(
 5(#@y
 5	 @y)
-5@yJS
-5@y=S
 ?6`*@
 ?6	(@
 /6`>@
@@ -375,7 +368,6 @@ _6ij@
 @6ij@
  6iJ@
 6iJA9
-`6in@
 ?6iN@
 _6inA9
 ?6iR@
@@ -388,6 +380,7 @@ _6inA9
  6`j@
 '6j.@
 (6j2@
+6+kA9
 6	PA9
 6	TA9
  6tj@
@@ -398,6 +391,7 @@ _6inA9
 '6vj@
  74	(74
  74	(7t
+ 75	(7
 75	 7
 76`&@
 76	$@
@@ -434,12 +428,12 @@ _6inA9
 %8.3f: %s: ParseMessagesSNP RELIABLE %d bytes
 %8.3f: %s: ParseMessagesSNP UNRELIABLE Seq=%d %d bytes
 86`*@
+86)?B
 86h*@
 86h2@
 86i*@
 86i2@
 86iF@
-86)KB
 8CFmtStrNILi1024ELb0EE
 8CFmtStrNILi256ELb0EE
 8CFunctor
@@ -521,7 +515,6 @@ a2@yh2@y
 	A@9)	
 	A@9	
 A-#9!
-	A@94
 a@9+a
 "A9)]F
 A9)]F
@@ -540,6 +533,7 @@ A9|J@
 +	A9K
 A9Kik
 +	A9lC
+	A@9T
 ?A9tJ@
 AA9(	
 AA9(	@
@@ -582,7 +576,7 @@ AnimGraphEditorUtils001
 annotation
 Annotation
 ", another member of oneof "
-	ao9	
+	Ao9	
 ApplyOverrides_R:  couldn't find field from schema %s::%s
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
  a protocol 
@@ -1095,6 +1089,7 @@ CUtlString
 CUtlStringToken
 CUtlSymbol
 CUtlSymbolLarge
+CUtlVector
 [c:%u:%u]
 [C:%u:%u]
 	cvar_name
@@ -1110,8 +1105,8 @@ __cxa_pure_virtual
 %d % 5d % 5d: %-20s (skip): %s %s: %s
 d6@y#
 d6@yc
+d6@yc	
 d6@yC
-d6@yC	
 .data
 databytes
 data_compressed
@@ -1249,7 +1244,7 @@ Error parsing text-format
 Error processing network message %s! Channel is closing!
 ERROR: Schema registration error - class '%s' is not marked as MModuleLocalTypeScope but contains member '%s' with locally-scoped type '%s'
 ERROR: Schema registration error - class '%s' is not marked as MModuleLocalTypeScope but derives from locally-scoped class '%s'
-ERROR! SendData reliable data too big (%i)
+ERROR! SendData %s data too big (%i)
 Error while parsing option value for "
 ESplitScreenMessageType
 .ESplitScreenMessageType
@@ -1324,6 +1319,7 @@ False
 FALSE
 FastHexToBuffer() wants non-negative integers, not 
 FATAL
+Fatal error, demo file includes a field in array that is not parseable %s = (%s::%s)
 FATAL ERROR: unable to register all schema data: %s
 FB9hF
 fc=%d, m=%d, sum=%d, bits=%u
@@ -1427,6 +1423,7 @@ g6hn@
 g6hRB9
 g6hz@
 g6i^@
+g6in@
 G6v.@
 game_dir
 gamemode
@@ -1608,7 +1605,6 @@ h*@9h/
 (H@9h
 H@9/H@9
 h"@9i
-h"@9I
 	H@9i"
 H`@9iFG9
 *H@9j
@@ -1628,7 +1624,6 @@ h*A)t
 h&B)(
 hB@9`
 hB@9(
-hB	9&c
 hB@9)EF
 h"B9h
 hB@9h
@@ -1665,18 +1660,21 @@ hostname
 	host_name
 HostStateMgr001
 How long p2p connection requests should linger before we completely ignore them
+hrAyi
+hrAy`Z
+hr@y`
 HS@9(
 HS@9h
 hv@9)
 hv@9)}D
 hV@9h
 hV@9H
-hwB9w
+hwB9t
 h*x* 
 h)x	H@9
 h*x*H@9
-h;@y)
 h*@y_
+h;@yi~@
 h"@yi
 	*	i*
 i)8i&
@@ -1887,6 +1885,7 @@ is_transition
 [I:%u:%u]
 !iv8?|
 iw8i4
+iwB9?
 	i*xb
 	i*xh
 i)xh&{
@@ -1946,7 +1945,6 @@ k2@yh
 ?k58D
 *?k78
 ?k78h
-k	94y
 _!)kA
 K	A9lC
 Key in map fields cannot be enum types.
@@ -1963,6 +1961,7 @@ k	@y)
 Kykx)
 L?333? * 
 L5@9m5@9
+	!l9	
 L)@9m)@9
 la@9L	
 L	A9mC
@@ -1979,6 +1978,7 @@ last_cmd_number
 leading_comments
 leading_detached_comments
 Leaked channel %s remote %s
+leveltransition
 libandroid.so
 libc++_shared.so
 libc.so
@@ -2176,7 +2176,7 @@ NA9iN
 [Name]
 	name_part
 NamePart
-N(B(6
+N(B(6(
 NB9hN
 needs_decoder
 Need space between identifier and decimal point.
@@ -2426,7 +2426,7 @@ NonTopoComplexPack4Bits
 NonTopoPenultimatePluseOne
 normal
 noscale
-?<No schemasystem>
+<No schemasystem>
 NO_SIDE_EFFECTS
 no_standard_descriptor_accessor
 no_steam_server
@@ -2474,12 +2474,14 @@ O6h:@
 O6hb@
 O6hbA9
 O6hFB9	
+o6hr@
 o6hVB9	1
 O6i>@
 O6i:@
 o6ib@
 O6ib@
 O6ifA9
+o6ir@
 o6jb@
 o6jN@
 objc_class_prefix
@@ -2523,7 +2525,6 @@ p6jf@
 p6jR@
 p7v	P7
 P7x"@
-	!p9	
 P9!9@
 	P@9K
 package
@@ -2699,6 +2700,7 @@ qangle
 QAngle
 qangle_pitch_yaw
 	QB9i
+	Qg9I
 q?h(8
 qhz;x
 Qi"A)`
@@ -2709,8 +2711,8 @@ QueueChange
 queued
 QueuedLoaderVersion001
 QueueDuplicate
-	q@y:
 	Q@y?
+	q@yZ
 *R)8yv
 RA9iR
 RadianEuler
@@ -2942,7 +2944,6 @@ sfixed32
 sfixed64
 %sfound leafmost nobase at %s
 %sfound offset %u in %s at path '%s'
-S,h(8
 %s had %d different permutations
 %s:  high packet loss detected flow %s: %4dms latency, %5d/%5d dropped (%.1f%%)
 Should dedicated server listen for new-style P2P?
@@ -3142,10 +3143,10 @@ Steam Net connection %s %s, reason %d: %s
 SteamNetSockets
 SteamNetworking005
 SteamNetworkingMessages_Lib
-SteamNetworkingSockets003
+SteamNetworkingSockets006
 SteamNetworkingSockets_Lib
 -steamnetworkingsockets_use_steamclient
-SteamNetworkingUtils002
+SteamNetworkingUtils003
 SteamNetworkingUtils_Lib
 SteamNetworkongSockets not yet initialized.  Queuing command '%s'
 STEAMPARENTALSETTINGS_INTERFACE_VERSION001
@@ -3293,12 +3294,12 @@ ThnHy
 Thn@y
 THO@y
 THPAx
-ThR@9
 ThrA9
 ThrA9h
 ThRAx
 ThreadGetCurrentId
 ThreadSleep
+Thr@y
 Thv|9(
 Th>@y
 Th.@y
@@ -3425,6 +3426,7 @@ __UNKNOWN__
 Unknown enumeration value of "
 UNKNOWN_ENUM_VALUE_%s_%d
 Unrecognized syntax: 
+unreliable
 Unsupported
 Unsupported: type mismatch
 update_baseline
@@ -3502,7 +3504,6 @@ VBaseFileSystem011
 VBik001
 VConComm001
 VDebugService_001
-Vector
 Vector2D
 Vector4D
 VectorAligned
@@ -3628,9 +3629,7 @@ Writing %d bits for path %s of serializer %s entity %d, this will fail to parse
 wrong submessage type
 w"@yvJ
 \x%02x
-x6hz@
 x6ij@
-x6iz@
 X75	`7
 x7wB@
 x@9)y@9

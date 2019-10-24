@@ -327,6 +327,7 @@
  pthread_cond_wait@@LIBC
  pthread_create@@LIBC
  pthread_equal@@LIBC
+ pthread_getschedparam@@LIBC
  pthread_getspecific@@LIBC
  pthread_join@@LIBC
  pthread_key_create@@LIBC
@@ -341,6 +342,7 @@
  pthread_once@@LIBC
  pthread_self@@LIBC
  pthread_setname_np@@LIBC
+ pthread_setschedparam@@LIBC
  pthread_setspecific@@LIBC
  qsort@@LIBC
  R AES_version
@@ -394,6 +396,8 @@
  R tls1_version_str
  R TXT_DB_version
  R X509_version
+ sched_get_priority_max@@LIBC
+ sched_get_priority_min@@LIBC
  sched_yield@@LIBC
  send@@LIBC
  sendmsg@@LIBC
@@ -3659,6 +3663,8 @@
  T SteamGameServerNetworkingSockets_Lib
  T SteamNetworkingMessages_Lib
  T SteamNetworkingSockets_Lib
+ T SteamNetworkingSockets_Poll
+ T SteamNetworkingSockets_SetManualPollMode
  T SteamNetworkingUtils_Lib
  T string_to_hex
  T SXNET_add_id_asc

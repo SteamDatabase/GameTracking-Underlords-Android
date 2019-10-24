@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Native_AppOutOfDate">Загрузите новую версию игры в App Store, если хотите играть по сети.</string>
+    <string name="Native_AppOutOfDateOpt">Доступна новая версия игры</string>
+    <string name="Native_AppOutOfDateReq">Загрузите новую версию игры, если хотите играть по сети.</string>
     <string name="Native_AppUpdateTitle">Доступна новая версия</string>
     <string name="Native_Cancel">Отмена</string>
     <string name="Native_ConfirmCellular">Планируется загрузка %d МБ контента. Вы уверены, что хотите загрузить его по мобильной сети?</string>
     <string name="Native_ConfirmDownload">Загрузить %d МБ контента?</string>
     <string name="Native_ContactingServer">Подключение к серверу</string>
+    <string name="Native_DownloadAppUpdate">Загрузить обновлённое приложение</string>
     <string name="Native_DownloadError">Произошла ошибка</string>
     <string name="Native_DownloadErrorDownload">Не удалось загрузить контент</string>
     <string name="Native_DownloadErrorManifest">Не удалось загрузить манифест</string>
+    <string name="Native_DownloadErrorQueueDownload">Не удалось запланировать загрузку контента</string>
     <string name="Native_DownloadErrorStorage">Недостаточно места</string>
     <string name="Native_DownloadErrorUnknown">Неизвестная ошибка</string>
     <string name="Native_DownloadOverMobileLabel">Загрузить по мобильной сети?</string>
     <string name="Native_DownloadOverMobileMessage">Сейчас начнётся загрузка по мобильной сети. Продолжить?</string>
     <string name="Native_DownloadTitle">Требуется обновление:</string>
     <string name="Native_DownloadUpdate">Загрузить последнее обновление:</string>
-    <string name="Native_DownloadingContent">Загрузка контента</string>
+    <string name="Native_DownloadingContent">ЗАГРУЗКА КОНТЕНТА</string>
     <string name="Native_Exit">Выход</string>
-    <string name="Native_LoadingGame">Загрузка игры...</string>
+    <string name="Native_FileSystemFailed">Не удалось совершить необходимую операцию файловой системы. Перезапустите приложение. Если ошибка не исчезает, переустановите приложение.</string>
+    <string name="Native_LoadingGame">ЗАГРУЗКА ИГРЫ...</string>
     <string name="Native_ManifestDownloaded">Манифест загружен</string>
     <string name="Native_NeedsStoragePermissionsToContinueText">Чтобы установить данные игры, необходим доступ к хранилищу вашего устройства. Включите разрешения в настройках.</string>
     <string name="Native_NeedsStoragePermissionsToContinueTitle">Необходимы разрешения на доступ к хранилищу</string>
@@ -26,11 +31,15 @@
     <string name="Native_OK">ОК</string>
     <string name="Native_PermissionsText">Требуется разрешение хранить контент игры во внешнем хранилище этого устройства.</string>
     <string name="Native_PermissionsTitle">Разрешения игры</string>
+    <string name="Native_PlayAppOutOfDateOpt">Играть без обновления</string>
+    <string name="Native_PlayAppOutOfDateReq">Играть без обновления (сетевая игра выключена).</string>
     <string name="Native_PlayOffline">Играть без обновления (вне сети)</string>
     <string name="Native_PreparingToDownload">Подготовка к загрузке...</string>
     <string name="Native_PressOkCheckWifi">Подключитесь к Wi-Fi и нажмите OK.</string>
     <string name="Native_Settings">Настройки</string>
-    <string name="Native_VersionLabel">Версия:</string>
+    <string name="Native_UpdateFailed">Не удалось обновить контент</string>
+    <string name="Native_UpdateFailed_ConnectToTheInternet">Предыдущее обновление не было завершено. Для восстановления требуется интернет-соединение.</string>
+    <string name="Native_VersionLabel">ВЕРСИЯ:</string>
     <string name="Native_WifiNotActive">Wi-Fi не найден</string>
     <string name="abc_action_bar_home_description">Перейти на главный экран</string>
     <string name="abc_action_bar_up_description">Перейти вверх</string>

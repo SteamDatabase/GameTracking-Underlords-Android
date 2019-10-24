@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Native_AppOutOfDate">En ny versjon er tilgjengelig i App Store. Den kreves for å spille på nett.</string>
+    <string name="Native_AppOutOfDateOpt">En ny versjon av appen er tilgjengelig</string>
+    <string name="Native_AppOutOfDateReq">En ny versjon av appen er tilgjengelig. Den kreves for å spille på nett.</string>
     <string name="Native_AppUpdateTitle">Ny versjon tilgjengelig</string>
     <string name="Native_Cancel">Avbryt</string>
     <string name="Native_ConfirmCellular">Forbereder å laste ned innhold på %d MB. Fortsett med å laste ned over mobilnettet?</string>
     <string name="Native_ConfirmDownload">Fortsett med å laste ned innhold på %d MB?</string>
     <string name="Native_ContactingServer">Kontakter tjener</string>
+    <string name="Native_DownloadAppUpdate">Last ned nyeste app</string>
     <string name="Native_DownloadError">Det oppstod en feil</string>
     <string name="Native_DownloadErrorDownload">Kunne ikke laste ned innholdsfil</string>
     <string name="Native_DownloadErrorManifest">Kunne ikke laste ned manifest</string>
+    <string name="Native_DownloadErrorQueueDownload">Kunne ikke legge innholdsfilen i nedlastingskøen</string>
     <string name="Native_DownloadErrorStorage">Ikke nok lagringsplass</string>
     <string name="Native_DownloadErrorUnknown">Ukjent feil</string>
     <string name="Native_DownloadOverMobileLabel">Last ned over mobilt nettverk?</string>
     <string name="Native_DownloadOverMobileMessage">Du er i ferd med å laste ned over et mobilt nettverk. Fortsette?</string>
     <string name="Native_DownloadTitle">Innholdsoppdatering kreves:</string>
     <string name="Native_DownloadUpdate">Last ned siste oppdatering:</string>
-    <string name="Native_DownloadingContent">Laster ned innhold</string>
+    <string name="Native_DownloadingContent">LASTER NED INNHOLD</string>
     <string name="Native_Exit">Avslutt</string>
-    <string name="Native_LoadingGame">Laster spill...</string>
+    <string name="Native_FileSystemFailed">En nødvendig operasjon i filsystemet mislyktes. Start appen på nytt. Hvis meldingen fremdeles vises, kan du prøve å installere appen på nytt.</string>
+    <string name="Native_LoadingGame">LASTER SPILL...</string>
     <string name="Native_ManifestDownloaded">Manifest lastet ned</string>
     <string name="Native_NeedsStoragePermissionsToContinueText">Vi trenger tilgang til enhetens lagring for å kunne installere spillinnholdet. Gå til innstillingene for å gi tillatelse.</string>
     <string name="Native_NeedsStoragePermissionsToContinueTitle">Lagringstillatelser kreves</string>
@@ -26,10 +31,14 @@
     <string name="Native_OK">OK</string>
     <string name="Native_PermissionsText">Dota Underlords trenger tillatelse til å lagre spillinnhold på enhetens eksterne lagring.</string>
     <string name="Native_PermissionsTitle">Dota Underlords-tillatelser</string>
+    <string name="Native_PlayAppOutOfDateOpt">Spill uten å oppdatere</string>
+    <string name="Native_PlayAppOutOfDateReq">Spill uten å oppdatere. Kan ikke spille på nett.</string>
     <string name="Native_PlayOffline">Spill uten å oppdatere (frakoblet)</string>
     <string name="Native_PreparingToDownload">Forbereder nedlasting...</string>
     <string name="Native_PressOkCheckWifi">Trykk OK for å se etter Wi-Fi.</string>
     <string name="Native_Settings">Innstillinger</string>
-    <string name="Native_VersionLabel">Versjon:</string>
+    <string name="Native_UpdateFailed">Innholdsoppdatering mislyktes</string>
+    <string name="Native_UpdateFailed_ConnectToTheInternet">En tidligere oppdatering mislyktes og trenger en internettforbindelse for å gjenopprettes.</string>
+    <string name="Native_VersionLabel">VERSJON:</string>
     <string name="Native_WifiNotActive">Wi-Fi ikke aktivt</string>
 </resources>

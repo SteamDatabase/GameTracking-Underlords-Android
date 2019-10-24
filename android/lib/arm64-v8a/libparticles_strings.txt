@@ -11,6 +11,7 @@
 )#@)*
 {}[]=, 	
 {}[]()=&, 	
+@-` "
 @-   
 @- ( 
 @- 	 
@@ -39,7 +40,7 @@ $@)  "
 07`R@
 -0.9629629
 0~b("
-0E9!,G
+0E9! G
 @-0EB-!H#
 0ED- 
   0x%08X %s,
@@ -175,6 +176,8 @@ $@)  "
 19C_INIT_RandomScalar
 19C_INIT_RandomVector
 19C_INIT_StatusEffect
+19CModelConfigElement
+19C_OP_ColorAdjustHSL
 19C_OP_CurlNoiseForce
 19C_OP_ParentVortices
 19C_OP_RemapSpeedtoCP
@@ -186,11 +189,10 @@ $@)  "
 +1@)-%A)
 1bL9?2
 1bQJ1~
-1C-!yF
 1DBlend
 -1 for all asleep, 1 for all awake
 1ik8 il8)ip8R
-1@)kuF
+	1m9I
 /1V?O1
 	2*	@
 200000.0
@@ -255,6 +257,7 @@ $@)  "
 22C_OP_ConstrainDistance
 22C_OP_ContinuousEmitter
 22C_OP_ControlpointLight
+22C_OP_EndCapTimedFreeze
 22C_OP_ExternalWindForce
 22C_OP_InterpolateRadius
 22C_OP_RemapCPtoVelocity
@@ -366,6 +369,8 @@ $@)  "
 27CSchemaUtlVectorManipulatorI10CUtlVectorI18MaterialVariable_t10CUtlMemoryIS1_iEES1_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorI22ParticleChildrenInfo_t10CUtlMemoryIS1_iEES1_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorI26ParticlePreviewBodyGroup_t10CUtlMemoryIS1_iEES1_E
+27CSchemaUtlVectorManipulatorI10CUtlVectorI26VecInputMaterialVariable_t10CUtlMemoryIS1_iEES1_E
+27CSchemaUtlVectorManipulatorI10CUtlVectorI28FloatInputMaterialVariable_t10CUtlMemoryIS1_iEES1_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorI28ParticleControlPointDriver_t10CUtlMemoryIS1_iEES1_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorI31PointDefinitionWithTimeValues_t10CUtlMemoryIS1_iEES1_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorI35ParticleControlPointConfiguration_t10CUtlMemoryIS1_iEES1_E
@@ -384,6 +389,7 @@ $@)  "
 28C_INIT_CreateParticleImpulse
 28C_INIT_PositionPlaceOnGround
 28C_INIT_RandomVectorComponent
+28CModelConfigElement_UserPick
 28C_OP_ConstrainDistanceToPath
 28C_OP_CylindricalDistanceToCP
 28C_OP_MovementRigidAttachToCP
@@ -413,9 +419,7 @@ $@)  "
 29C_OP_SnapshotRigidSkinToBones
 29CSchemaRegistration_particles
 2@9PU
-2	A;9
 2_BONE_IK
-2	E;9
 2E98yh
 2E9h2
 2E9(ih8
@@ -442,6 +446,7 @@ $@)  "
 	2	Y+
 	2	y6
 30C_INIT_RandomNamedModelElement
+30CModelConfigElement_RandomPick
 30C_OP_LockToSavedSequentialPath
 30C_OP_PointVectorAtNextParticle
 30C_OP_RemapCPVisibilityToScalar
@@ -454,6 +459,7 @@ $@)  "
 31C_INIT_InitialSequenceFromModel
 31C_INIT_RandomNamedModelBodyPart
 31C_INIT_RandomNamedModelSequence
+31CModelConfigElement_RandomColor
 31C_OP_DifferencePreviousParticle
 31C_OP_InheritFromParentParticles
 31C_OP_PercentageBetweenCPLerpCPs
@@ -466,6 +472,7 @@ $@)  "
 32C_INIT_CreateFromParentParticles
 32C_INIT_InitialVelocityFromHitbox
 32C_INIT_RandomNamedModelMeshGroup
+32CModelConfigElement_SetBodygroup
 32C_OP_ChooseRandomChildrenInGroup
 32C_OP_DriveCPFromGlobalSoundFloat
 32C_OP_ForceBasedOnDistanceToPlane
@@ -554,6 +561,7 @@ $@)  "
 32CParticleFunctionDefinitionTypedI19C_INIT_RandomScalarE
 32CParticleFunctionDefinitionTypedI19C_INIT_RandomVectorE
 32CParticleFunctionDefinitionTypedI19C_INIT_StatusEffectE
+32CParticleFunctionDefinitionTypedI19C_OP_ColorAdjustHSLE
 32CParticleFunctionDefinitionTypedI19C_OP_CurlNoiseForceE
 32CParticleFunctionDefinitionTypedI19C_OP_ParentVorticesE
 32CParticleFunctionDefinitionTypedI19C_OP_RemapSpeedtoCPE
@@ -608,6 +616,7 @@ $@)  "
 32CParticleFunctionDefinitionTypedI22C_OP_ConstrainDistanceE
 32CParticleFunctionDefinitionTypedI22C_OP_ContinuousEmitterE
 32CParticleFunctionDefinitionTypedI22C_OP_ControlpointLightE
+32CParticleFunctionDefinitionTypedI22C_OP_EndCapTimedFreezeE
 32CParticleFunctionDefinitionTypedI22C_OP_ExternalWindForceE
 32CParticleFunctionDefinitionTypedI22C_OP_InterpolateRadiusE
 32CParticleFunctionDefinitionTypedI22C_OP_RemapCPtoVelocityE
@@ -779,6 +788,7 @@ $@)  "
 32CParticleFunctionDefinitionTypedI38C_INIT_RemapNamedModelSequenceToScalarE
 32CParticleFunctionDefinitionTypedI38C_OP_RemapNamedModelMeshGroupOnceTimedE
 32CParticleFunctionDefinitionTypedI39C_INIT_RemapNamedModelMeshGroupToScalarE
+32CParticleFunctionDefinitionTypedI39C_OP_MovementMoveAlongSkinnedCPSnapshotE
 32CParticleFunctionDefinitionTypedI39C_OP_RemapControlPointDirectionToVectorE
 32CParticleFunctionDefinitionTypedI39C_OP_RemapDistanceToLineSegmentToScalarE
 32CParticleFunctionDefinitionTypedI39C_OP_RemapDistanceToLineSegmentToVectorE
@@ -789,6 +799,7 @@ $@)  "
 32CParticleFunctionDefinitionTypedI41C_OP_SetPerChildControlPointFromAttributeE
 32CParticleFunctionDefinitionTypedI42C_OP_EnableChildrenFromParentParticleCountE
 32CParticleFunctionDefinitionTypedI42C_OP_MovementSkinnedPositionFromCPSnapshotE
+32CParticleFunctionDefinitionTypedI42C_OP_RemapCrossProductOfTwoVectorsToVectorE
 32CParticleFunctionDefinitionTypedI43C_OP_RemapControlPointOrientationToRotationE
 32CParticleFunctionDefinitionTypedI43C_OP_SetControlPointFieldToScalarExpressionE
 32CParticleFunctionDefinitionTypedI44C_OP_SetControlPointPositionToTimeOfDayValueE
@@ -802,11 +813,13 @@ $@)  "
 33C_INIT_InheritFromParentParticles
 33C_INIT_RandomAlphaWindowThreshold
 33C_INIT_RemapParticleCountToScalar
+33CModelConfigElement_AttachedModel
 33C_OP_InheritFromParentParticlesV2
 33C_OP_RemapNamedModelElementEndCap
 33C_OP_RemapVectorComponentToScalar
 33C_OP_SetControlPointToImpactPoint
 34CKV3Transfer_ResourceLoadInterface
+34CModelConfigElement_SetRenderColor
 34C_OP_RemapCPOrientationToRotations
 34C_OP_RemapNamedModelBodyPartEndCap
 34C_OP_RemapNamedModelSequenceEndCap
@@ -823,6 +836,7 @@ $@)  "
 35C_OP_SetCPOrientationToGroundNormal
 36C_INIT_RemapCPOrientationToRotations
 36CKV3Transfer_UtlSymbolLargeInterfaceI24CUtlSymbolTableLargeBaseILb0ELm2048E16CThreadNullMutexEE
+36CModelConfigElement_SetMaterialGroup
 36C_OP_RemapNamedModelElementOnceTimed
 36C_OP_SetParentControlPointsToChildCP
 36CProjectedTextureAttributeRefCounted
@@ -838,6 +852,7 @@ $@)  "
 38C_OP_RemapNamedModelMeshGroupOnceTimed
 39C_INIT_RemapNamedModelMeshGroupToScalar
 39CKV3Transfer_EmptyResourceLoadInterface
+39C_OP_MovementMoveAlongSkinnedCPSnapshot
 39C_OP_RemapControlPointDirectionToVector
 39C_OP_RemapDistanceToLineSegmentToScalar
 39C_OP_RemapDistanceToLineSegmentToVector
@@ -853,17 +868,18 @@ $@)  "
 41C_OP_SetPerChildControlPointFromAttribute
 42C_OP_EnableChildrenFromParentParticleCount
 42C_OP_MovementSkinnedPositionFromCPSnapshot
+42C_OP_RemapCrossProductOfTwoVectorsToVector
 43C_OP_RemapControlPointOrientationToRotation
 43C_OP_SetControlPointFieldToScalarExpression
 44C_OP_SetControlPointPositionToTimeOfDayValue
 4*aNc
 	%4d -  %s
 4h2E9h
-4h6N9
 4h&@9
 4hb@9
 4hf@9
 4hf@9(
+4hVN9
  %4i: 
 4iFE9)
 4k&Aij
@@ -876,10 +892,9 @@ $@)  "
 51C_INIT_RemapParticleCountToNamedModelSequenceScalar
 52C_INIT_RemapParticleCountToNamedModelMeshGroupScalar
 .5 .5 .5
-5h6N9
-5hbN9
 5hf@9
 5hVE9
+5hVN9
 )5IJ(}
 5iZO9i
 5NUY@-
@@ -892,7 +907,6 @@ $@)  "
 6hB@9H
 6hb@y
 6hrZ9
-6iq8-
 6n8+a
 (7c8%
 7hb@9h
@@ -903,6 +917,8 @@ $@)  "
 7IConVar
 7)ij8
 7Jik8
+7.yw"@
+8]@)6	@
 86(p@
 86 P@
 8CFmtStrNILi256ELb0EE
@@ -914,6 +930,7 @@ $@)  "
 @-@9 
 @9*%@-(	@
 	=@9)
+	!{9	
 -90.0f
 (!@93
 @9+	@9,
@@ -922,7 +939,6 @@ $@)  "
 9C_OP_Cull
 9C_OP_Spin
 ~^>9cx
-@9)}G
 (@@9H
 9h:A9(
 "@9hf@9i
@@ -932,14 +948,13 @@ $@)  "
 "@9i"@9
 9ISequence
 9i(x(?
-(!%9r
+@9)qG
 (@@9t
 (@@9t"
 (@@9t"	
 (@@9tb
 (@@9tB
 (@@9u"
-(!%9U
 (@@9ub
 @9wiu
 .A@)/!
@@ -948,7 +963,9 @@ A- (
 A-!(!
 A-!8 
 a]8Ja
-	A{9I
+(a+9:
+"a9h"!9
+(a+9W
 A-'@A-
 AB-!H#
 Acceleration
@@ -998,11 +1015,12 @@ AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
 Agg data %d: %p (%d parts, crc 0x%08X)
 aggregation radius
+ahe8chf8
 ai_model_info
 AIWalkable
 )aL9(
 )aL9)
-)aL9j
+)aL9jZ
 +aL9k
 aL9kU
 allowstatic
@@ -1094,6 +1112,8 @@ AnimStartLoop
 AnimSubtract
 AnimVRFinger_t
 AnimVRHand_t
+	ap9	
+	ap92
 A-particle_perf
 Apply fog of war to color
 Apply fog to particle
@@ -1102,7 +1122,6 @@ Apply Min Pullforce
 Apply motion vectors
 apply radius to ends (capsule)
 apply velocity in local space (0/1)
-approximate size in feet of the texture before repeat
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 Arc Duration Maximum
 archive
@@ -1118,10 +1137,11 @@ AssetBrowse( vtex, *showassetpreview )
 AssetPreviewSystem_001
 AssetSystem001
 AssetSystemTest001
-	AT9	
 ATTACHMENT_INFLUENCE_FLAGS_NONE
 attachment_offset
 attachment to follow
+attachment_type
+attach_point
 Attempted to create particle system from an empty name!
 Attempted to create particle system from RESOURCE_HANDLE_INVALID
 Attempted to create unknown particle system type "%s"!
@@ -1138,6 +1158,7 @@ Attribute counts between meshes is inconsistent
 attribute_%d
 attributes
 attribute to cache to
+attribute to use for normal
 attribute to write to
 auto_unragdoll_duration
 Average pixels form sequence 0 and 1 together
@@ -1149,6 +1170,7 @@ B-!8
 b8@8 
 b8B8 
 b8D8 
+Ba9hB!9
 Bad compression
 Bad header format (expected '<!--'
 Bad header format (expected ':'
@@ -1179,9 +1201,11 @@ baselayer
 BasePhysicsShape
 Base Spring; 
 batch particle systems
+bB9hb
 BB9hB
 bByhb
 BC9hB
+B-,	D-/
 BE9hB
 BE9J}
 bE9Y}
@@ -1193,8 +1217,13 @@ BentNormalData
 BF9hB
 bG9hb
 BG9hB
+bH9hb
 BH9hB
 bI9hb	9
+bI9hb	9 
+bI9hb	9E6
+bI9hb	9h
+bI9hb	9U'
 bias distance
 biased 0 500
 bias in local space
@@ -1225,16 +1254,17 @@ bN9hb
 BN9hB
 bN9in@
 bo9hb/9
-Bo9hB/9
 BodyGroup
 BodyGroupChoice
 bodygroup field
+body_groups
 body part
 body_type
 # bone
 BoneChannel
 Bone Indices
 BONE_INDICES
+bonemerge
 bone_name
 bone_names
 Bone Weights
@@ -1243,7 +1273,8 @@ bouncecolor
 bounding box max
 bounding box min
 B-pFC-rND-
-BQ9hB
+bQ9hb
+BR9hB
 breakable_count
 breakable_model
 breakable_skin
@@ -1258,10 +1289,10 @@ break speed
 break_uniform_burst
 Browse to the particle in asset browser, right click and select Full Recompile.
 brush only
-bS9hb
 __bss_end__
 __bss_start
 __bss_start__
+BT9hB
 /BT?OB
 BuildParticleSimList
 bulge control 0=random 1=orientation of start pnt 2=orientation of end point
@@ -1269,11 +1300,16 @@ Bump Strength
 bUpdate
 burst_randomize
 burst_scale
+bVD9a
+B@yhB
 C-2-@
 C-!8"
 C@9`b
-)CA9*
-cable
+cable end cap offset amount
+cable end cap shape factor
+cable_tesselation_ib
+cable_tesselation_vb
+cablevertices
 cache attribute to read from
 CAimConstraint
 Calculate vector attribute
@@ -1304,7 +1340,7 @@ CBoneConstraintPoseSpaceBone
 CBoneConstraintPoseSpaceBone::Input_t
 CBoneConstraintPoseSpaceMorph
 CBoneConstraintPoseSpaceMorph::Input_t
-CColorGradientSchemaWrapper
+CColorGradient
 CCommand::Tokenize: Encountered command which overflows the argument buffer.. Clamped!
 CCommand::Tokenize: Encountered command which overflows the tokenizer buffer.. Skipping!
 CConstraintSlave
@@ -1479,6 +1515,16 @@ Cluster Cooldown Time
 CMaterialDrawDescriptor
 CMemAllocSystemInitialize
 CMesh Cannot create packed input layout, because the bone indices are out of range (0x%X)
+CModelConfig
+CModelConfigElement
+CModelConfigElement_AttachedModel
+CModelConfigElement_RandomColor
+CModelConfigElement_RandomPick
+CModelConfigElement_SetBodygroup
+CModelConfigElement_SetMaterialGroup
+CModelConfigElement_SetRenderColor
+CModelConfigElement_UserPick
+CModelConfigList
 CMorphConstraint
 CNewParticleEffect
 CNewParticleEffect *CParticleProperty::Create(const char *, ParticleAttachment_t, AttachmentHandle_t, CUtlStringToken, Vector, matrix3x4_t *)
@@ -1497,6 +1543,7 @@ Collision via traces
 color
 color1
 color2
+Color Adjust
 Color and alpha adjustments
 Color and alpha from sequence 0
 Color and alpha from sequence 1
@@ -1514,6 +1561,8 @@ Color Gem Enable control point number
 Color light from control point
 Color light from global lighting
 Color lit per particle
+color map offset along path
+color map offset around cable
 Color random
 color tint
 $COLORWARPINTENSITY
@@ -1526,6 +1575,8 @@ comparison control point number
 component scale factor
 composite
 compute normals from control points
+ConfigAttachedModel
+config_state
 ConfigurationSystem_001
 configvalue.cpp
 Confirm Collision
@@ -1590,6 +1641,7 @@ C_OP_ChooseRandomChildrenInGroup
 C_OP_ClampScalar
 C_OP_ClampVector
 C_OP_CodeDrivenEmitter
+C_OP_ColorAdjustHSL
 C_OP_ColorInterpolate
 C_OP_ColorInterpolateRandom
 C_OP_ConnectParentParticleToNearest
@@ -1617,6 +1669,7 @@ C_OP_DriveCPFromGlobalSoundFloat
 C_OP_EnableChildrenFromParentParticleCount
 C_OP_EndCapDecay
 C_OP_EndCapTimedDecay
+C_OP_EndCapTimedFreeze
 C_OP_ExternalGameImpulseForce
 C_OP_ExternalGenericForce
 C_OP_ExternalWindForce
@@ -1655,6 +1708,7 @@ C_OP_MaxVelocity
 C_OP_ModelCull
 C_OP_MovementLoopInsideSphere
 C_OP_MovementMaintainOffset
+C_OP_MovementMoveAlongSkinnedCPSnapshot
 C_OP_MovementPlaceOnGround
 C_OP_MovementRigidAttachToCP
 C_OP_MovementRotateParticleAroundAxis
@@ -1704,6 +1758,7 @@ C_OP_RemapCPtoVelocity
 C_OP_RemapCPVelocityToVector
 C_OP_RemapCPVisibilityToScalar
 C_OP_RemapCPVisibilityToVector
+C_OP_RemapCrossProductOfTwoVectorsToVector
 C_OP_RemapDirectionToCPToVector
 C_OP_RemapDistanceToLineSegmentBase
 C_OP_RemapDistanceToLineSegmentToScalar
@@ -1955,14 +2010,16 @@ cylinder top control point
 @-D	@
 D-@ !
 *-D),5E)_
+=d6U9
+=d6U9-
+=d6U9R
+D- 8 
 D9  "
 D9!	)
 D9	~	
 D90zp
 D91zp
-D9)5G
 D96yu
-D9!8 
 D98yh
 D9Axa
 D9Bxq
@@ -1972,12 +2029,12 @@ D9cxq
 D9Eyi
 D9Eyk
 D9Fyk
-D9)]G
 D9({h
 D9H{h
 D9hyh
 D9Hyh
 D9hzh
+D9)IC
 D9)ij
 D9)ir
 D9)iv8Hyh
@@ -1986,7 +2043,6 @@ D9Iyi
 D9Iyl
 D9Iyy
 D9Jy|
-D9Jye
 D9Jyh
 D9jyj
 D9Jyl
@@ -2011,6 +2067,7 @@ D9Uyw
 D9Vyk
 D9Wyi
 D9Wyk
+D9)yc
 D9,yh
 D9;yh
 D9:yh
@@ -2076,10 +2133,10 @@ $DETAIL2ROTATION
 $DETAIL2SCALE
 detail 2 texture
 D-F	&
-dG91yk
 difference maximum
 difference minimum
 diffuse lighting amount
+diffuse lighting origin Control Point
 $DIFFUSEWARPBLENDTOFULL
 diffuse warp texture (3d)
 dimension0
@@ -2125,6 +2182,7 @@ DotaCardGameClient_001
 Double-register of KV3 conversion (from '%s' to '%s')
 Double-save to Member '%s'
 draw as opaque
+draw caps at each end of the cable
 Draw particle children with parents (-1=use gameinfo, 0=no, 1=yes)
 Drive CP from global sound float
 dual sequence combine mode
@@ -2139,6 +2197,7 @@ duration scale
 Duration value for path point
 .dynamic
 __dynamic_cast
+DynamicConfigList
 dynamic control point count
 dynamic_interaction
 .dynstr
@@ -2150,8 +2209,6 @@ E9*	@
 E9a6A
 &E9B9,
  E9	$E9
-E9*J2
-E9JmF
 @E9	yj
 EarlyRetireParticleSystems
 ease in and out
@@ -2159,6 +2216,7 @@ ease out
 E-B0@
 EconItemToolModel_001
 _edata
+EditorDynamicConfig
 .eh_frame
 .eh_frame_hdr
 eikonal
@@ -2195,6 +2253,7 @@ encoding
 Encountered bad skin weights, summing to %g (1.0 expected) at position %.3f %.3f %.3f
 __end__
 end alpha
+Endcap timed system freeze
 end control point
 end control point number
 end dot product value for fading as the particle normal becomes aligned with the view vector
@@ -2216,6 +2275,7 @@ end value for soft edges for distance alpha
 Engine2/SupportsVulkanParticleOptimizations
 EngineServiceMgr001
 ensure line of sight
+Entire Path
 Entity Hitbox Cache Field (Requires Stick on Collision)
 EnvironmentMapBuilder_001
 environment map texture
@@ -2283,6 +2343,7 @@ fade out time max
 fade out time min
 fade start time
 Fading and culling
+Failed to allocate an instance of a class
 Failed to allocate an instance of class '%s'
 Failed to assign bool literal value
 Failed to convert introspected block: %s
@@ -2295,6 +2356,7 @@ Failed to transfer KV3 data for resource '%s' - %s
 fallback max count
 fallback names when the input doesn't match
 fallback replacement definition
+falloff distance from control point
 falloff linearity
 falloff power
 falloff range
@@ -2313,6 +2375,7 @@ FeModel combiner: Too many ropes (%u) or links (%u): cannot fit sum in uint16
 F_ENABLE_DESCRIPTOR_SET
 F_FAST_SEQUENCE_BLEND_MODE
 F_FOG_PARTICLES
+fG91yk
 F_GENERATE_ROPE_NORMALS
 F_GLOBAL_LIGHT
 F_HAS_NO_NORMAL_FOR_LIGHTING
@@ -2355,6 +2418,7 @@ flip percentage
 flip twist axis with yaw
 Flip U or V texcoords if pitch or yaw go over PI
 float3
+FloatInputMaterialVariable_t
 fltx4
 F_MAXLUMINANCE_BLENDING
 F_MOD2X
@@ -2392,6 +2456,7 @@ F_PARTICLE_ORIENTATION
 F_PER_PIXEL_LIGHTING
 frames per second
 freeze simulation after time
+freeze time
 F_REFRACT
 F_REFRACT_BLUR
 frequence scale
@@ -2411,7 +2476,6 @@ Function is disabled
 Function "%s" not found while loading particle system
 FX Light
 G{}()':
-*	\G9
 G9a2A
  G9	(G9
 "G9h"
@@ -2428,7 +2492,7 @@ Gaussian
 GCC: (GNU) 4.9.x 20150123 (prerelease)
 g cMesh
 g default
-../_generated_code/particles/release/androidarm64/../../../../particles/pfunc_renderers.cpp(7275): 
+../_generated_code/particles/release/androidarm64/../../../../particles/pfunc_renderers.cpp(7160): 
 GenerateDistanceField
 generate normals for cylinder
 GenerateResourceNameFromFileName: Invalid extension specified in file name "%s"!
@@ -2463,6 +2527,7 @@ group emission times for new particles
 group id
 g_Tier1_BitWriteMasks
 g_VProfCurrentProfile
+; 	)h
 .-@-h
 h&?);
 h&@)?
@@ -2482,17 +2547,18 @@ hb@9(
 hB@9`
 hB@9h
 hb@9v
-hbN9h
 HBroot
 h&Byu"
 HC@9h
+head alpha scale
+head color scale
+head taper scale
 headtype
 health
 health_override
 height override control point number
 HELPER_BONE
 HelpSystem_001
-hf@9A
 hf@9h
 hf@9H
 hf@9i
@@ -2522,8 +2588,10 @@ Hitbox Offset Position
 HITBOX_RELATIVE_XYZ
 hitbox set
 H%@)J	@
-hj48^F
+hj48"5
+=hJU9@
 hk989
+=hNU9
 hollow
 horizontal texture offset
 horizontal texture scale
@@ -2534,16 +2602,19 @@ hRE9!
 hrZ9(
 HSV Shift Control Point
 HSV Shift to control point
+h&U9vU
+h.U9z
+hue adjust
 hurt_me
 hurt_them
-h&@y	
-h&@y)AG
+hwB9(
+h&@y)5G
 #@)i"@
 	)@)i*
 	)@)I(
 =i0@9
 i6@yh
-i`81}
+i`8Jy`
 i`8ky`
 I@@9JD@9KH@9(
 =#ia8+ib8-ie8)if8
@@ -2602,9 +2673,9 @@ ii8Jyk
 ii8nyi
 ii8tyi
 ii8Vyi
-II=)	C
 iih8 8 
 *Iii8
+Iii8*
 iii8c
 Iii8Hih8
 Iii8J
@@ -2634,7 +2705,7 @@ ij8kym
 ij8*yj
 <i)@)k	@
 *ik8!
-\ik8h
+\ik8h"U94yk
 +ik8)ij8
 ik8Kyk
 -ik8Kyk
@@ -2649,9 +2720,9 @@ ikrig
 IKRigBiped
 IKRigBug
 IKRigSimple
+*il8+
 ,il8B8#
 +il8)im8
-*il8K
 il8K8 
 il8Lyl
 il8M}
@@ -2659,9 +2730,9 @@ il8^yl
 il8,yl
 il8/yl
 i*?)m
+*im82
 im8iym
 im8pih8Syh
-*im8R
 im8Rih8
 =`im8[ym
 im8|ym
@@ -2674,13 +2745,12 @@ IMPULSE_TYPE_NONE
 IMPULSE_TYPE_PARTICLE_SYSTEM
 IMPULSE_TYPE_ROPE
 =)in8
-*in8!
 in8aYj
 in8dyp
-in8iyn
+*in8!H
 in8Jyn
-:in8r
 in8{ym
+in8$yq
 include water
 Infinite Joint Weights encountered: Skinning will not work! (At position %.3f %.3f %.3f)
 InfoForResourceTypeCModel
@@ -2730,6 +2800,8 @@ InputService_001
 InputStackSystemVersion001
 InputSystemVersion001
 Input Vector
+input vector 1
+input vector 2
 input volume maximum
 input volume maximum in cubic units
 input volume minimum
@@ -2778,26 +2850,25 @@ Invert Axes;
 invert input from total particle count
 invert_orientation
 io8byn
-io8jyo
 io8syo
 io8<yo
 io8[yo
+io8#yp
 io8Zyo
 ip8Dyp
 ip8eyq
-ip8Fy`
 ip8kyp
 ip8Pyp
 ip8qU
 IParticleCollection
 IParticleEffect
 iq8Ayq
-iq8Eyr
 iq8fyr
 ^iq8.yq
 iq8;yq
 iq8Zyq
 IQuickTime001
+ir8OH/
 ir8\yr
 ir@9	
 is_debris
@@ -2806,6 +2877,9 @@ it8.yt
 #It contains connectivity part %d with %d vertices
 i"T)j
 iu8Hyu
+i*U9`
+i&U9h:
+i.U9hB
 iv8Myv
 iv8(yv
 iw8\yw
@@ -2816,6 +2890,8 @@ iy89yy
 @-J	,
 j0@98
 j2?)?
+J78_Z
+j883k
 J-a	!
 =JaL9
 <JaL99
@@ -2838,7 +2914,7 @@ jh8({h
 jh8hzh
 jh8J}
 Jib8_
-JIb8X
+JIb88
 Jig82yg
 JIGGLE_BONE
 jiggle bone %u
@@ -2863,11 +2939,11 @@ JQAyJ%
 ?k+"?
 k?!@&>
 K1B)M9C)
-K9a~A
 kaL9(
 kaL9)
 kaL9*
 @-kaL9JU
+KAq9(
 KeyValueCache001
 KeyValuesSystem
 kh8h{h
@@ -2878,6 +2954,7 @@ kih84yh
 Kih8(yh
 kii8Hyi
 Kii8K
+kijxj
 Kik80yl
 Kik82yl
 Kik82yn
@@ -2897,6 +2974,7 @@ kip8mU
 K)@)j
 kki8K
 KMeansQuantization
+kMih8Jik8+yk
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
 kv3format_manager.cpp
 KV3 load transfer failed: %s
@@ -2994,6 +3072,7 @@ LightingBasis
 lightmap
 lightmapuv
 LightmapUV
+lightness adjust
 light per vertex
 light radius multiplier
 lightsourceshape
@@ -3005,6 +3084,7 @@ LightType_t
 L-(ih8
 Lih8H{h
 Lih8Jik8+yk
+lih8kii8
 Lii8Jih8uyh
 Lii8Mim8
 lij8*yj
@@ -3065,6 +3145,8 @@ LrwcE
 L-Til8IU
 @M 	 
 	(M))}@
+"M9h"
+m_aAngOffset
 m_ActivityName
 Made disabling operators + children actually fully work.
 magnitude
@@ -3084,6 +3166,8 @@ mapbuilder.occluder
 MapListService_001
 master_morph_weight
 MATCHFRAMEWORK_001
+material float variables
+material_group
 material override
 MaterialParamBuffer_t
 MaterialParamFloat_t
@@ -3101,12 +3185,13 @@ materialsystem2
 MaterialUtils_001
 material variable
 material variables
-MaterialVariable_t
+material vector variables
 matrix3x4a_t
 matrix3x4_t
 m_attachmentName
 m_AttachmentName
 m_attachments
+m_AttachmentType
 m_Attenuation0
 m_Attenuation1
 m_Attenuation2
@@ -3133,6 +3218,7 @@ maximum restart time
 maximum segment length %
 maximum sim tick rate
 maximum speed
+maximum steps between particles
 maximum time step
 maximum trace length
 Maximum Trace Length
@@ -3178,6 +3264,7 @@ m_bCannotBeRefracted
 m_bCapsule
 m_bCastShadows
 m_bCenter
+m_bClamp
 m_bClampLowerRange
 m_bClampUpperRange
 m_bClampV
@@ -3207,6 +3294,7 @@ m_bDontRemove
 m_bDotCameraAngles
 m_bDotCPAngles
 m_bDrawAsOpaque
+m_bDrawCableCaps
 m_bDrawLast
 m_bEaseInAndOut
 m_bEaseInOut
@@ -3239,6 +3327,8 @@ m_bHasBakedLightingFromLightMap
 m_bHasBakedLightingFromVertexStream
 m_bHasCullingData
 m_bHasPerInstanceBakedLightingData
+m_bHideMaterialGroupInTools
+m_bHideRenderColorInTools
 m_bHollow
 m_bIgnoreDelta
 m_bIgnoreDt
@@ -3319,6 +3409,7 @@ m_bOutline
 m_bOverrideTranslucentMaterials
 m_bParticleFeathering
 m_bParticles
+MbP?d
 m_bPerParticle
 m_bPerParticleTR
 m_bPerVertexLighting
@@ -3392,12 +3483,14 @@ m_bSimulate
 m_bSkin
 m_bSkipRenderingOnMobile
 m_bSoftEdges
+m_bStencilTestExclude
 m_bSubFrame
 m_bSuppressStopSoundEvent
 m_bSuppressTint
 m_bSynchronizeParticles
 m_bTintByFOW
 m_bTintByGlobalLight
+m_bTopLevel
 m_bTraceAlongNormal
 m_bTrailBias
 m_bTransformNormals
@@ -3420,6 +3513,8 @@ m_bUseParticleVelocity
 m_bUseQuat
 m_bUseRandomCPs
 m_bUseRawMeshGroup
+m_bUserSpecifiedColor
+m_bUserSpecifiedMaterialGroup
 m_bUseScalarForTextureCoordinate
 m_bUseShadowFastPath
 m_bUsesIndexedBakedLighting
@@ -3442,6 +3537,7 @@ m_CenterOffset
 m_ChainData
 m_ChildRef
 m_Children
+m_Choices
 MClassHasCustomAlignedNewDelete
 MClassIsParticleFloat
 m_CollisionGroupName
@@ -3454,6 +3550,8 @@ m_ColorMin
 m_ColorScale
 m_ConeAxis
 m_ConeCutoff
+m_ConfigName
+m_Configs
 m_ConstantColor
 m_ConstantNormal
 m_constraints
@@ -3467,7 +3565,6 @@ m_cubeWidth
 m_CullDataIndex
 m_Curve
 m_cutoffRadius
-)mD	)*
 m_DefaultHSVColor
 m_DefaultSolverSettings
 MDefaultString
@@ -3481,6 +3578,8 @@ m_dynamicParams
 m_dynamicTextureParams
 m_EconSlotName
 m_eHand
+m_ElementName
+m_Elements
 m_elems
 memcmp
 memcpy
@@ -3492,6 +3591,7 @@ memset
 m_EndEffectorBone
 m_EndEffectorTargetBone
 m_EndingForce
+m_EntityClass
 m_entityName
 m_eRbfType
 mesh_calculate_curvature_smooth_invert
@@ -3548,6 +3648,7 @@ m_flArcSpeed
 m_flBakeLightIndexScale
 m_flBias
 m_flBiasParameter
+m_flBindPoseDirectionMS
 m_flBlendValue
 m_flBoneVelocity
 m_flBoneVelocityMax
@@ -3559,6 +3660,8 @@ m_flBrightnessScale
 m_flBulge
 m_flBumpStrength
 m_flCameraBias
+m_flCapOffsetAmount
+m_flCapRoundness
 m_flCenterXOffset
 m_flCenterYOffset
 m_flClusterCooldown
@@ -3569,6 +3672,8 @@ m_flClusterRefireTimeMax
 m_flClusterRefireTimeMin
 m_flClusterSize
 m_flCohesionStrength
+m_flColorMapOffsetU
+m_flColorMapOffsetV
 m_flColorWarpIntensity
 m_flConstantLifespan
 m_flConstantRadius
@@ -3662,12 +3767,16 @@ m_flFingerScaleRatio
 m_flFingerWeight
 m_flFlattenStrength
 m_flFogContributionStength
+m_flFootLength
 m_flForceScale
 m_flForwardDegrees
 m_flForwardShift
 m_flFramerate
+m_flFreezeTime
 m_flFrequencyScale
+m_flHeadAlphaScale
 m_flHitBoxScale
+m_flHueAdjust
 m_fLifespanScaleExp
 m_fLifetimeMax
 m_fLifetimeMin
@@ -3678,6 +3787,7 @@ m_flInitialRadius
 m_flInitialRestingLength
 m_flInitialSpeedMax
 m_flInitialSpeedMin
+m_flInput
 m_flInput0
 m_flInput1
 m_flInput2
@@ -3703,6 +3813,7 @@ m_flLifeTimeLerpEnd
 m_flLifeTimeLerpStart
 m_flLightAmplification
 m_flLightDistance
+m_flLightnessAdjust
 m_flLightSourceDim0
 m_flLightSourceDim1
 m_flLightSourceSize0
@@ -3719,6 +3830,7 @@ m_flMaxDistance0
 m_flMaxDistance1
 m_flMaxDistanceMid
 m_flMaxDrawDistance
+m_flMaximumDistanceToCP
 m_flMaximumLightingRadius
 m_flMaximumSimTime
 m_flMaximumTimeStep
@@ -3760,7 +3872,8 @@ m_flNoiseCoordScale3
 m_flNoiseScale
 m_flNoiseScaleLoc
 m_flNoPixelVisibilityFallback
-m_flNormalMapScrollRate
+m_flNormalMapOffsetU
+m_flNormalMapOffsetV
 m_flNumberOfChildren
 m_flNumToAssign
 m_floatAttributes
@@ -3816,6 +3929,7 @@ m_flRadialStrength
 m_flRadius
 m_flRadius1
 m_flRadius2
+m_flRadiusHeadTaper
 m_flRadiusMax
 m_flRadiusMin
 m_flRadiusMultiplier
@@ -3845,6 +3959,7 @@ m_flRotOffset
 m_flRotRate
 m_flRotRateMax
 m_flRotRateMin
+m_flSaturationAdjust
 m_flScalarAttributeTextureCoordScale
 m_flScale
 m_flScalePerParentParticle
@@ -3899,8 +4014,8 @@ m_flStopSpeed
 m_flStrength
 m_flTailAlphaScale
 m_flTessScale
-m_flTextureScrollRate
-m_flTextureSize
+m_flTextureRepeatsCircumference
+m_flTextureRepeatsPerSegment
 m_flTextureVOffset
 m_flTextureVScrollRate
 m_flTextureVWorldSize
@@ -3919,6 +4034,7 @@ m_flTraceRadius
 m_flTraceTolerance
 m_flTransitionTime
 m_flTravelTime
+m_flTValue
 m_flTwistAmount
 m_flUpdateRate
 m_flUpdateThreshold
@@ -3958,6 +4074,7 @@ m_fSpinRateStopTime
 m_Gradient
 m_Gravity
 m_groundType
+m_GroupName
 m_hBuffer
 m_hFallback
 m_hingeAxis
@@ -3999,9 +4116,9 @@ mil8Lyl
 mim81
 Mim81yk
 mim8kin8Jyn
+Mim8n
 Mim8Qii8Rik8
 min8Nyn
-Min8p
 min8pii8qil8
 min8Xyn
 min_angle
@@ -4030,6 +4147,7 @@ minimum sim tick rate
 minimum simulation time step
 minimum speed
 minimum speed to kill on collision
+minimum steps between particles
 minimum velocity
 minimum visual size
 min initial speed
@@ -4044,9 +4162,12 @@ m_InputMagnitude
 m_InputRadius
 m_inputValue
 m_InputValue
+m_InputVec1
+m_InputVec2
 min row/particle index to affect
 min size
 Min( %s, %s )
+m_InstanceName
 m_intAttributes
 m_intParams
 m_invBindPose
@@ -4069,6 +4190,7 @@ m_Joints
 @Mjyp
 m_LastMax
 m_LastMin
+m_Lerp
 m_LightColor1
 m_LightColor2
 m_LightColor3
@@ -4086,9 +4208,12 @@ m_LiteralColor
 m_LocalCoordinateSystemSpeedMax
 m_LocalCoordinateSystemSpeedMin
 m_material
+m_MaterialFloatVars
 m_materialGroupName
+m_MaterialGroupName
 m_materialName
 m_MaterialVars
+m_MaterialVecVars
 m_MaxForce
 m_metacarpalBoneName
 @Mmih8
@@ -4131,6 +4256,7 @@ m_nChannel
 m_nChildControlPoint
 m_nChildCP
 m_nChildGroupID
+m_nChoice
 m_nClusterSizeMax
 m_nClusterSizeMin
 m_nCollisionGroupNumber
@@ -4193,6 +4319,7 @@ m_nDynamicCPCount
 m_nEndControlPointNumber
 m_nEndCP
 m_nEntityStickDataField
+m_NestedElements
 MNetworkBitCount
 MNetworkChangeCallback
 MNetworkEncoder
@@ -4257,6 +4384,7 @@ m_nLatencyCP
 m_nLatencyCPField
 m_nLerpCP
 m_nLerpType
+m_nLightingControlPoint
 m_nLightType
 m_nLocalCP
 m_nLocalSpaceCP
@@ -4377,6 +4505,7 @@ m_nStickOnCollisionField
 m_nStrengthFieldOverride
 m_nSubModelField
 m_nTargetAxis
+m_nTextureRepetitionMode
 m_nTextureVParamsCP
 m_nTintBlendMode
 m_nTintCP
@@ -4389,6 +4518,7 @@ m_nValue
 m_nVariableField
 m_nVectorAttribute
 m_nVectorComponent
+m_nVectorFieldForOrientation
 m_nVertCropField
 m_nVertexCount
 m_nVolumeField
@@ -4407,6 +4537,12 @@ Mod2x blend mode
 Model combiner: too many vertex sets (%d)! Clamping to %d
 ModelCompile/UseShadowFastPathHeuristic
 model component scale
+MODEL_CONFIG_ATTACHMENT_BONEMERGE
+MODEL_CONFIG_ATTACHMENT_BONE_OR_ATTACHMENT
+MODEL_CONFIG_ATTACHMENT_COUNT
+MODEL_CONFIG_ATTACHMENT_INVALID
+MODEL_CONFIG_ATTACHMENT_ROOT_RELATIVE
+ModelConfigAttachmentType_t
 model.cpp
 model_default_preview_sequence_name
 modeldoc0
@@ -4429,6 +4565,7 @@ modeldoc23
 modeldoc24
 modeldoc25
 modeldoc26
+modeldoc27
 modeldoc3
 modeldoc4
 modeldoc5
@@ -4444,6 +4581,7 @@ Model Helper Pointer 3
 Model Helper Pointer 4
 model hitbox scale
 model LOD
+model_name
 model override CP
 model override economy loadout slot type
 model override original model only (ignore shapeshift/hex/etc)
@@ -4487,6 +4625,7 @@ Movement maintain offset
 Movement maintain position along path
 Movement match particle velocities
 Movement max velocity
+Movement Move Along Skinned Snapshot
 Movement place on ground
 Movement rigid attach to control point
 Movement rotate particle around axis
@@ -4646,6 +4785,8 @@ m_vecDistanceBiasAbs
 m_vecDistanceScale
 m_vecForceAtMaxDist
 m_vecForceAtMinDist
+m_vecHeadColorScale
+m_vecInput
 m_vecLocalCoordinateSystemSpeedScale
 m_vecMax
 m_vecMin
@@ -4732,7 +4873,6 @@ $N  !
 #N)	}	
 	(N))}@
 &n0:0
- n1*a
 N24CFieldPathHuffmanEncoder12InternalNodeE
 N24CFieldPathHuffmanEncoder5INodeE
 N24CFieldPathHuffmanEncoder8LeafNodeE
@@ -4796,11 +4936,11 @@ nij8kim8
 nil8kim8,yl
 Nin8Jio8)yo
 nin8rij8`il8
+Nin8&yo
 nio8qii8ril8
-$nJ-G
+$nJ!G
 !NJu|
-#NkIF
-#Nkil
+#Nk9F
 NLii8,
 NNih8Pil8i
 No Buffer
@@ -4831,10 +4971,11 @@ normalize output
 normalize output 0/1
 Normalize vector
 Normal lock to control point
+normal map offset along path
+normal map offset around cable
 Normal Mapping
 Normal modify offset random
 normal texture
-normal texture scroll rate
 normal velocity ignore delta time
 normal velocity max
 normal velocity min
@@ -4849,10 +4990,8 @@ No valid format conversion from '%s' to '%s'
 "n(p@
 ?nP{<
 &npXe
- nR*a
 'nR*a
 N@)R*a
- ns*a
 NSt6__ndk110__function6__baseIFvvEEE
 NSt6__ndk110__function6__funcIZN18CNewParticleEffect12StopEmissionEbbbbE3$_0NS_9allocatorIS3_EEFvvEEE
 nTries < 10000000
@@ -4872,7 +5011,6 @@ object local space axis 0/1
 # of children to enable
 # of children to set
 # of control points to set
-offset amount
 offset axis
 offset control point
 offset control point number
@@ -4905,7 +5043,6 @@ oii8Iyi
 oij8-
 =Oik8Jim8lU
 Oik8+yk
-Oio84
 oio8Ryp
 __oldschema_object_name
 Omni Light
@@ -4918,6 +5055,7 @@ Only Render in effects bloom pass
 only restart children
 only set orientation once
 only set position once
+only write where stencil is NOT stencil test ID
 On (Required)
 opacity
 operator end cap state
@@ -4958,7 +5096,6 @@ oscillation rate
 oscillation rate max
 oscillation rate min
 oscillation start phase
-otR	9
 outerconeangle
 outer cone angle
 outline alpha
@@ -5105,6 +5242,7 @@ ParticlePreviewState_t
 particle_property.cpp
 particle_reset_assertions
 particles/
+particles/dev/dev_cables_preview_material.vmat
 PARTICLE_SELECTION_FIRST
 PARTICLE_SELECTION_LAST
 PARTICLE_SELECTION_NUMBER
@@ -5163,6 +5301,7 @@ peak strength field override
 percentage bias
 percentage maximum
 percentage minimum
+Per-Particle
 PerParticleFloatInput()
 Per-Particle Force
 per particle scale
@@ -5263,6 +5402,7 @@ Plat_GetEnv
 Plat_GetThreadIndex
 Plat_IsInDebugSession
 Plat_MSTime
+Plat_NeedsLowFragmentation
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_UUIDFromString
 Plat_UUIDToString
@@ -5321,6 +5461,11 @@ preferred_carryangles
 prepare for rigid lock
 Prevent passing through a plane
 Prevent passing through static part of world
+PreviewAttachmentModel
+PreviewBoneAttachedModel
+PreviewBoneMergedModel
+PreviewPreset
+PreviewPresetList
 previous position
 previous position sacale
 previous position scale
@@ -5382,23 +5527,28 @@ PVEC_TYPE_PARTICLE_VECTOR
 ?!@q!
 q0@9RU
 !^Q90
+"Q9h"
 QAngle
 ,QAy,
-,QAy*
+,QAy*;
 Qi"A)`
 q(ih8
 qih8*
 qii8Iyi
 qJT-s
+ql"U9i
+)Qr9?
 Quadrilaterals
 Quantize Float
 QuarterSizeAttrWithBoxFilter
 Quaternion
 QueuedLoaderVersion001
 Quintic
+r	1-9_Q29t
 R2@9_
 r8iq8>ir8*ia8#ib8
-"R9h"
+	!r9	
+R\9hR
 R-a8!
 Radial Amount (-1..1)
 radial strength
@@ -5435,7 +5585,9 @@ Ramp scalar spline random
 Ramp scalar spline simple
 random bulge
 Random Direction scale
+RandomFloat
 Random force
+RandomInt
 randomly distribute to highest supplied control point
 randomly distribution growth time
 randomly flip direction
@@ -5472,8 +5624,10 @@ RegisterStringToken
 Reinitialize on endcap scalar random
 .rela.dyn
 .rela.plt
+relative_angles
 relative control point number
 relative desired height
+relative_origin
 Relative probability
 Release
 Remap average scalar value to CP
@@ -5490,6 +5644,7 @@ Remap CP orientation to rotation
 Remap CP orientation to rotations
 Remap CP speed to CP
 Remap CP velocity to vector
+Remap cross product of two vectors to vector
 Remap cylindrical distance to control point to scalar
 Remap difference of sequential particle vector to scalar
 Remap direction to CP to vector
@@ -5544,7 +5699,7 @@ RemoveBoneAndChildren
 Render as models (DEPRECATED)
 render attribute
 Render blobs
-Render cables
+Render Cables
 Render Callback
 Render cloth force
 Render deferred light
@@ -5634,7 +5789,6 @@ Roll Speed
 rootNode
 rope shake
 Rope Spring constraint
-ropevertices
 rotate normals
 rotate rate(dps)
 Rotate vector random
@@ -5676,6 +5830,7 @@ runspeed
 "%s" 
 %s+--
 	%	S?
+S-@)+
 %s|  % 2d: [% 3d] %-12s %s
 %s|  % 2d: %s [Offset: %d]
 S7W?O
@@ -5685,6 +5840,7 @@ S7W?O
 %s allocation count overflow( %llu >= %llu )
 %s allocation count overflow( %llu > %llu )
 Saturate color pre alphablend
+saturation adjust
 save offset
 %s| Base Class%s: %d
 SCALAR_EXPRESSION_ADD
@@ -5713,8 +5869,6 @@ scale emission by parent particle count
 scale emission to used control points
 scale factor for radius
 scale factor for spring correction
-scale factor to apply to input radius
-Scale factor to apply to input radius
 scale from conrol point (radius 1/radius 2/offset)
 Scale Initial Value
 scale in local space
@@ -5745,6 +5899,8 @@ schemaclassinfo.cpp
 SchemaSystem_001
 SchemaTestExternal_One_001
 SchemaTestExternal_Two_001
+%s_color
+%s (Color)
 scratch_float
 Scratch Float
 SCRATCH_FLOAT
@@ -5877,7 +6033,6 @@ sharpStartAngle
 sheet animation time scale
 .shstrtab
 shuffle
-sih8Hyh
 sil8Lym
 Simulated
 singleplayer
@@ -5895,8 +6050,11 @@ skin override CP
 Skip rendering on mobile
 slack
 SLik8+yk
+%s (Material)
+%s_matgrp
 snapshot control point
 snapshot control point number
+Snapshot Index T Value
 Snapshot load error for resource '%s': %s
 Snapshot start point
 s off
@@ -5932,6 +6090,7 @@ source_filename
 %s: Overflowed control point array for point %d in %s
 space points along path
 spatial coordinate offset
+@spawn
 spawn_motion_disabled
 Specified Particle Number
 Specify blend weights for alpha and rgb
@@ -6008,7 +6167,6 @@ static void CSchemaRegistration::RegisterAllModuleData(ISchemaSystem *)
 StatsService_001
 SteamAudio001
 Stencil
-stencil test ID
 stencil write ID
 Stick On Collision Cache Field
 Stop effect after duration
@@ -6036,12 +6194,15 @@ SXW?O
 Synchronize particles
 Syntax Error at offset: %d
 T(@@9
-T94yk
 "T9h"
+tail alpha scale
+tail color scale
+tail taper scale
 tangent
 tangentu_signv
 Target color control point number
 target layer ID for rendering
+tb	9i
 Tc"A)`
 Tc"C)`
 T *CUtlLeanVectorImpl<CUtlLeanVectorBase<CParticleCollectionFloatInput *, short>, CParticleCollectionFloatInput *, short>::AddToTailGetPtr() [B = CUtlLeanVectorBase<CParticleCollectionFloatInput *, short>, T = CParticleCollectionFloatInput *, I = short]
@@ -6053,6 +6214,7 @@ Teleport Beam
 __temp_unserialization_member__
 tes_index_buffer
 tesselation resolution scale factor
+tessellation scale factor
 test_angles_relative
 _test_conversion_counter
 TestFormatA
@@ -6066,6 +6228,12 @@ texcoord
 TextLayout_001
 TextMessageMgr_001
 Texture Coordinates
+texture repetition mode
+TextureRepetitionMode_t
+TEXTURE_REPETITION_PARTICLE
+TEXTURE_REPETITION_PATH
+texture repetitions
+texture repetitions around cable
 texturescale
 Texture UV control
 texture UV horizontal Scale field
@@ -6086,6 +6254,7 @@ third control point number
 #This file is generated by CMesh::SaveObj() from CMesh with %d indices, %d vertices, %d attributes
 ThreadGetCurrentId
 ThreadSleep
+ThwB9u
 Ti2@yh
 Ti5KJ(}
 Ti"A)`
@@ -6137,8 +6306,6 @@ trace direction override
 trace offset
 trace recycle tolerance
 trace update rate
-trail end alpha scale
-trail end color scale
 Trail forward shift (fraction)
 Trailing Data
 trail_length
@@ -6168,9 +6335,9 @@ twist axis
 Two Bone
 Two KV3 format GUIDs with the same human-friendly name ('%s')
 )UAy?
+uih8Hyh
 uii8Wyi
 uij8:yl
-Uik8m
 Unable to determine buffer encoding.
 Unable to find a valid model handle for m_bModelFromRenderer in '%s'
 *** Unable to open profile file!
@@ -6195,6 +6362,7 @@ Update lights
 UpdateNewEffects
 UPDATE_STRING_TOKEN_DATABASE
 UpperEyelid( 
+use_additional_offset
 use additive blending
 use bones instead of hitboxes
 use continuous emission
@@ -6240,6 +6408,7 @@ utlstring.cpp
 ,>u"u?
 $>!@v>
 "V9h"
+V_acos
 V_acosf
 Value at end of cycle
 Value at start of cycle
@@ -6262,7 +6431,7 @@ vb phys
 VConComm001
 V_cosf
 VDebugService_001
-VE9<yj
+VecInputMaterialVariable_t
 Vector2D
 Vector4D
 VectorAligned
@@ -6296,6 +6465,7 @@ vertical texture scale
 V_expf
 VFileSystem017
 V_FixSlashes
+V_fmod
 V_fmodf
 V_fpclassify
 V_frexpf
@@ -6310,7 +6480,6 @@ VGUI_Surface032
 VGUI_System010
 view model effect
 Vin8A
-Vir8n
 virtual void *CParticleTypeManager::GetErrorResource()
 V_IsAbsolutePath
 VisBuilder_001
@@ -6384,6 +6553,7 @@ vpcf21
 vpcf22
 vpcf23
 vpcf24
+vpcf25
 vpcf3
 vpcf4
 vpcf5
@@ -6445,9 +6615,7 @@ warp min
 warp scale control point number
 warp transition start time
 warp transition time (treats min/max as start/end sizes)
-WD99C
 Wil8[in8Jip8:yn
-Wim8o
 Within-Cluster Fire Count Before Cooldown
 Within-Cluster Refire Time
 WorkshopSetup001
@@ -6465,13 +6633,13 @@ write stencil on z-buffer test failure
 write stencil on z-buffer test success
 Writing kdTree with %d triangles
 written field
+W.yw"@
 @-X+<
 	'@xaB
 X axis scaling scalar field
 X Dimension Count
 X Dimension Spacing
 xf@)*
-Xio8q
 *-@x_! k
 Xkh86yh
 X offset of center point
@@ -6500,6 +6668,7 @@ Y Dimension Spacing
 @yk"@
 +-@yk
 @y?! kc
+@="YN
 Y offset of center point
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 @yt"@
@@ -6529,10 +6698,12 @@ _ZN10CVProfNode9ExitScopeEv
 _ZN12CThreadEventC1Eb
 _ZN13CBufferString10FixSlashesEc
 _ZN13CBufferString11ToLowerFastEi
+_ZN13CBufferString12AppendFormatEPKcz
 _ZN13CBufferString12SetExtensionEPKc
 _ZN13CBufferString13AppendFormatVEPKcSt9__va_list
 _ZN13CBufferString13FixupPathNameEv
 _ZN13CBufferString5PurgeEi
+_ZN13CBufferString6FormatEPKcz
 _ZN13CBufferString6InsertEiPKcib
 _ZN13CBufferString8RemoveAtEii
 _ZN16CThreadSemaphoreD1Ev

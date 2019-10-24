@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Native_AppOutOfDate">Μια νέα έκδοση είναι διαθέσιμη στο App Store. Απαιτείται για διαδικτυακό παιχνίδι.</string>
+    <string name="Native_AppOutOfDateOpt">Μια νέα έκδοση εφαρμογής είναι διαθέσιμη</string>
+    <string name="Native_AppOutOfDateReq">Μια νέα έκδοση εφαρμογής είναι διαθέσιμη. Απαιτείται για διαδικτυακό παιχνίδι.</string>
     <string name="Native_AppUpdateTitle">Νέα διαθέσιμη έκδοση</string>
     <string name="Native_Cancel">Άκυρο</string>
     <string name="Native_ConfirmCellular">Προετοιμασία για λήψη %d megabyte περιεχομένου - Συνέχεια λήψης με δεδομένα κινητής;</string>
     <string name="Native_ConfirmDownload">Συνέχεια με λήψη περιεχομένου %d megabyte ;</string>
     <string name="Native_ContactingServer">Επικοινωνία με διακομιστή</string>
+    <string name="Native_DownloadAppUpdate">Λήψη νεότερης εφαρμογής</string>
     <string name="Native_DownloadError">Παρουσιάστηκε ένα σφάλμα</string>
     <string name="Native_DownloadErrorDownload">Αδυναμία λήψης αρχείου περιεχομένου</string>
     <string name="Native_DownloadErrorManifest">Αδυναμία λήψης δηλωτικού</string>
+    <string name="Native_DownloadErrorQueueDownload">Αδυναμία τοποθέτησης λήψης σε σειρά για αρχείο περιεχομένου</string>
     <string name="Native_DownloadErrorStorage">Ανεπαρκής μνήμη</string>
     <string name="Native_DownloadErrorUnknown">Άγνωστο σφάλμα</string>
     <string name="Native_DownloadOverMobileLabel">Λήψη με δεδομένα κινητής;</string>
     <string name="Native_DownloadOverMobileMessage">Πρόκειται να κατεβάσετε μέσω δικτύου κινητής. Συνέχεια;</string>
     <string name="Native_DownloadTitle">Απαιτείται ενημέρωση περιεχομένου:</string>
     <string name="Native_DownloadUpdate">Λήψη τελευταίας ενημέρωσης:</string>
-    <string name="Native_DownloadingContent">Λήψη περιεχομένου</string>
+    <string name="Native_DownloadingContent">ΛΗΨΗ ΠΕΡΙΕΧΟΜΕΝΟΥ...</string>
     <string name="Native_Exit">Έξοδος</string>
-    <string name="Native_LoadingGame">Φόρτωση παιχνιδιού...</string>
+    <string name="Native_FileSystemFailed">Μια απαιτούμενη λειτουργία συστήματος αρχείων απέτυχε. Παρακαλούμε επανεκκινήστε την εφαρμογή. Αν αυτό το μήνυμα παραμένει, δοκιμάστε να επαναγκαταστήσετε την εφαρμογή.</string>
+    <string name="Native_LoadingGame">ΦΟΡΤΩΣΗ ΠΑΙΧΝΙΔΙΟΥ...</string>
     <string name="Native_ManifestDownloaded">Λήφθηκε δηλωτικό</string>
     <string name="Native_NeedsStoragePermissionsToContinueText">Για να εγκατασταθεί περιεχόμενο παιχνιδιού, χρειάζεται να προσπελάσουμε τη μνήμη της συσκευής σας. Μεταβείτε στις ρυθμίσεις για να επιτρέψετε τα δικαιώματα.</string>
     <string name="Native_NeedsStoragePermissionsToContinueTitle">Απαιτούνται δικαιώματα αποθήκευσης</string>
@@ -26,11 +31,15 @@
     <string name="Native_OK">OK</string>
     <string name="Native_PermissionsText">Το Dota Underlords χρειάζεται δικαιώματα για να αποθηκεύσει περιεχόμενο παιχνιδιού στην εξωτερική μνήμη αυτής της συσκευής.</string>
     <string name="Native_PermissionsTitle">Άδειες Dota Underlords</string>
+    <string name="Native_PlayAppOutOfDateOpt">Παίξτε χωρίς ενημέρωση</string>
+    <string name="Native_PlayAppOutOfDateReq">Παίξτε χωρίς ενημέρωση. Ανενεργό διαδικτυακό παιχνίδι.</string>
     <string name="Native_PlayOffline">Παίξτε χωρίς ενημέρωση (εκτός σύνδεσης)</string>
     <string name="Native_PreparingToDownload">Ετοιμασία για λήψη...</string>
     <string name="Native_PressOkCheckWifi">Πατήστε OK για έλεγχο για WIFI.</string>
     <string name="Native_Settings">Ρυθμίσεις</string>
-    <string name="Native_VersionLabel">Έκδοση:</string>
+    <string name="Native_UpdateFailed">Αποτυχία ενημέρωσης περιεχομένου</string>
+    <string name="Native_UpdateFailed_ConnectToTheInternet">Μια προηγούμενη λειτουργία ενημέρωσης απέτυχε και χρειάζεται μια σύνδεση στο διαδίκτυο για ανάκτηση.</string>
+    <string name="Native_VersionLabel">ΕΚΔΟΣΗ:</string>
     <string name="Native_WifiNotActive">Μη ενεργό WIFI</string>
     <string name="abc_action_bar_home_description">Πλοήγηση στην αρχική σελίδα</string>
     <string name="abc_action_bar_up_description">Πλοήγηση προς τα επάνω</string>

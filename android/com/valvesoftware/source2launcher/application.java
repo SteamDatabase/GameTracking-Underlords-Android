@@ -1,8 +1,12 @@
 package com.valvesoftware.source2launcher;
 
+import android.app.Activity;
+import android.app.Application.ActivityLifecycleCallbacks;
+import android.os.Bundle;
 import android.util.Log;
 import com.valvesoftware.Application;
 import com.valvesoftware.IStreamingBootStrap;
+import com.valvesoftware.InAppPurchases;
 import com.valvesoftware.JNI_Environment;
 import com.valvesoftware.PatchSystem;
 import com.valvesoftware.PatchSystem.EErrorCode;
@@ -13,11 +17,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Locale;
 
-public class application extends Application {
+public class application extends Application implements ActivityLifecycleCallbacks {
     IContentSyncAsyncTask m_ContentSyncAsyncTask = null;
     private boolean m_bHasRunLauncher = false;
     private boolean m_bTriedBootStrap = false;
     private boolean m_bUseVulkan = false;
+    private Activity m_currentActivity = null;
+    private InAppPurchases m_inAppPurchases = null;
     LanguageCountryMap[] m_languageMap;
     private EPermissionsState m_nPermissionState = EPermissionsState.ENeedPermissions;
     String m_strCmdLineAccessCode = null;
@@ -44,6 +50,24 @@ public class application extends Application {
     /* access modifiers changed from: protected */
     public String GetManifestURL() {
         return null;
+    }
+
+    public void onActivityCreated(Activity activity, Bundle bundle) {
+    }
+
+    public void onActivityDestroyed(Activity activity) {
+    }
+
+    public void onActivityPaused(Activity activity) {
+    }
+
+    public void onActivitySaveInstanceState(Activity activity, Bundle bundle) {
+    }
+
+    public void onActivityStarted(Activity activity) {
+    }
+
+    public void onActivityStopped(Activity activity) {
     }
 
     public application() {
@@ -76,6 +100,13 @@ public class application extends Application {
                 i2++;
             }
         }
+    }
+
+    public void onCreate() {
+        super.onCreate();
+        registerActivityLifecycleCallbacks(this);
+        this.m_inAppPurchases = new InAppPurchases(JNI_Environment.m_application.getApplicationContext());
+        this.m_inAppPurchases.connectToBillingClient(null);
     }
 
     public String[] GetNativeBinarySearchPaths(String str) {
@@ -213,5 +244,31 @@ public class application extends Application {
 
     public boolean HasRunLauncher() {
         return this.m_bHasRunLauncher;
+    }
+
+    public boolean QuerySkuDetailsAsync(String str) {
+        ArrayList arrayList = new ArrayList();
+        arrayList.add(str);
+        this.m_inAppPurchases.querySkuDetails(arrayList);
+        return true;
+    }
+
+    public boolean QueryExistingPurchases() {
+        this.m_inAppPurchases.queryExistingPurchases();
+        return true;
+    }
+
+    public boolean PurchaseSku(String str) {
+        this.m_inAppPurchases.purchaseSku(this.m_currentActivity, str);
+        return false;
+    }
+
+    public boolean ConsumePurchase(String str) {
+        this.m_inAppPurchases.consumePurchase(str);
+        return true;
+    }
+
+    public void onActivityResumed(Activity activity) {
+        this.m_currentActivity = activity;
     }
 }

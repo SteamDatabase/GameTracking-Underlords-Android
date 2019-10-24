@@ -26,8 +26,7 @@
 22CSchemaInstallCallback
 23IConCommandBaseAccessor
 26CDefaultKeyValuesErrorSpew
-2hB:9#
-2(i<8
+2(i98
 2ij(8
 2+imx
 2kil8
@@ -50,7 +49,7 @@
 9hji8
 @9hV@
 9	ii8(
-	A^9?
+{*A9x
 A_BUTTON
 AC_BACK
 AC_BOOKMARKS
@@ -171,7 +170,6 @@ d6@yc
 DebugTextureInfo001
 DECIMALSEPARATOR
  ( def. "%s" )
-DEGREE_SIGN
 DEGREE_SYMBOL
 delete
 developer
@@ -209,7 +207,7 @@ EXCLAIM
 EXECUTE
 EXPORTSYSTEM_INTERFACE_VERSION_001
 EXSEL
-`FA9W%
+`FA9O&
 Failed to load cursor from '%s'
 Failed to load image for cursor from %s: %s
 Failed to scale image for cursor to %d,%d (hot %d,%d; scaling %g): %s
@@ -277,6 +275,7 @@ IE_InputLanguageChanged
 IE_KeyCodeReleased
 IE_KeyCodeTyped
 IE_KeyTyped
+IE_MultiTouchData
 IE_Quit
 IE_ScreenOrientationChanged
 IE_WindowMove
@@ -366,7 +365,6 @@ joy_wingmanwarrior_centerhack
 joy_wingmanwarrior_turnhack
 JSON error, unterminated element: 
 *k2@y
-k)8h'%
 k(8vV@
 KBDILLUMDOWN
 KBDILLUMTOGGLE
@@ -518,7 +516,6 @@ not using
 NUMLOCK
 NUMLOCKTOGGLE
 N_WITH_TILDE
-)oi-8
 Ordered constructor wrapped type has no default constructor.
 O_WITH_ACUTE
 O_WITH_CIRCUMFLEX
@@ -537,9 +534,8 @@ Physics2 Interface Old v0.5
 PhysicsBuilderMgr001
 PILCROW_SIGN
 Plat_DebugPrint
-Plat_EnterHibernation
-Plat_ExitHibernation
 Plat_ExitProcess
+Plat_GetCurrentFrame
 Plat_GetDefaultMonitorIndex
 Plat_GetDesktopResolution
 Plat_GetEnv
@@ -558,10 +554,12 @@ Plat_RequireSDL
 Plat_ScreenToWindowCoords
 Plat_SetupFPUControlWord
 Plat_ShouldCollectMiniDumpsForFatalErrors
+Plat_TickDiffMilliSecF
 Plat_UnloadModule
 Plat_WindowToOsSpecificHandle
 Plat_WindowToScreenCoords
 PLUS_MINUS_SIGN
+-------------------- PollInputState_SDL (frame %llu, elapsed ms = %.2f) --------------------
 POSIX
 PostProcessingSystem_001
 POUND_SIGN
@@ -583,9 +581,7 @@ QUESTION
 QueuedLoaderVersion001
 QUOTEDBL
 r[+A9
-r\+A9
 raise
-Rajh8
 R_AXIS
 R_AXIS_NEG
 R_AXIS_POS
@@ -617,23 +613,24 @@ ResourceSystem013
 RETURN2
 R	h(8	
 Rhj)8
-Rhj)8w
+Rhj)8p
 Rhjh8
 Rhjh8(
 Rhjh8h
 Rhjh8H
+RHk)8
 R(i*8
-R(i*84
 RIGHTARROW
 RIGHT_CURLY_BRACKET
 RIGHT_POINTING_DOUBLE_ANGLE_QUOTATION_MARK
+RIki8	
 .rodata
 rS+A9
 RSHIFT
 R_SHOULDER
 R_TRIGGER
 Ruj(x
-rW+A9
+rX+A9
 rY+A9
 "%s" 
 (*%s*), 
@@ -697,6 +694,7 @@ SDL: Mouse left window %d
 SDL_MOUSEMOTION
 SDL_MOUSEWHEEL
 SDL_MULTIGESTURE
+--> SDL_PumpEvents - %d new events (elapsed time from last pump %.2f ms)
 SDL_QUIT
 SDL says cursor is %s and is set to 0x%p
 SDL_SYSWMEVENT
@@ -907,7 +905,6 @@ WINXP
 WorkshopSetup001
 WorldRendererBuilderMgr001
 WorldRendererMgr001
-X+A9|
 X+A9W
 X_AXIS
 X_AXIS_NEG
@@ -925,7 +922,6 @@ Y_WITH_DIAERESIS
 _Z17LoggingSystem_Logi17LoggingSeverity_tRK14LeafCodeInfo_tPKcz
 _Z6ConMsgPKcz
 _Z6DevMsgPKcz
-z*A9y
 Z_AXIS
 Z_AXIS_NEG
 Z_AXIS_POS

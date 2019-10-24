@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Native_AppOutOfDate">Une nouvelle version, nécessaire pour jouer en ligne, est disponible sur l\'App Store.</string>
+    <string name="Native_AppOutOfDateOpt">Une nouvelle version de l\'application est disponible</string>
+    <string name="Native_AppOutOfDateReq">Une nouvelle version de l\'application est disponible. Elle est nécessaire pour jouer en ligne.</string>
     <string name="Native_AppUpdateTitle">Nouvelle version disponible</string>
     <string name="Native_Cancel">Annuler</string>
     <string name="Native_ConfirmCellular">Préparation du téléchargement des %d Mo de contenu. Voulez-vous utiliser les données mobiles ?</string>
     <string name="Native_ConfirmDownload">Télécharger %d Mo de contenu ?</string>
     <string name="Native_ContactingServer">Contact avec le serveur</string>
+    <string name="Native_DownloadAppUpdate">Télécharger la dernière version de l\'application</string>
     <string name="Native_DownloadError">Une erreur s\'est produite</string>
     <string name="Native_DownloadErrorDownload">Impossible de télécharger le fichier de contenu</string>
     <string name="Native_DownloadErrorManifest">Impossible de télécharger le manifeste</string>
+    <string name="Native_DownloadErrorQueueDownload">Impossible d\'ajouter le fichier de contenu à la file de téléchargement</string>
     <string name="Native_DownloadErrorStorage">Espace de stockage insuffisant</string>
     <string name="Native_DownloadErrorUnknown">Erreur inconnue</string>
     <string name="Native_DownloadOverMobileLabel">Télécharger via les données mobiles ?</string>
     <string name="Native_DownloadOverMobileMessage">Vous êtes sur le point de lancer un téléchargement via les données mobiles. Souhaitez-vous continuer ?</string>
     <string name="Native_DownloadTitle">Mise à jour de contenu nécessaire :</string>
     <string name="Native_DownloadUpdate">Télécharger la dernière mise à jour :</string>
-    <string name="Native_DownloadingContent">Téléchargement du contenu</string>
+    <string name="Native_DownloadingContent">TÉLÉCHARGEMENT DU CONTENU</string>
     <string name="Native_Exit">Quitter</string>
-    <string name="Native_LoadingGame">Chargement du jeu...</string>
+    <string name="Native_FileSystemFailed">Une opération nécessaire du système de fichiers a échoué. Veuillez redémarrer l\'application. Si ce message persiste, essayez de réinstaller l\'application.</string>
+    <string name="Native_LoadingGame">CHARGEMENT DU JEU...</string>
     <string name="Native_ManifestDownloaded">Manifeste téléchargé</string>
     <string name="Native_NeedsStoragePermissionsToContinueText">Pour installer le contenu du jeu, nous avons besoin d\'accéder au stockage de votre appareil. Rendez-vous dans les paramètres pour activer cette permission.</string>
     <string name="Native_NeedsStoragePermissionsToContinueTitle">Autorisation d\'accès au stockage requise</string>
@@ -26,11 +31,15 @@
     <string name="Native_OK">OK</string>
     <string name="Native_PermissionsText">Dota Underlords a besoin d\'accéder au stockage externe de cet appareil pour enregistrer les données de jeu.</string>
     <string name="Native_PermissionsTitle">Autorisations de Dota Underlord</string>
+    <string name="Native_PlayAppOutOfDateOpt">Jouer sans mettre à jour</string>
+    <string name="Native_PlayAppOutOfDateReq">Jouer sans mettre à jour. Le mode en ligne sera désactivé.</string>
     <string name="Native_PlayOffline">Jouer sans la mise à jour (hors ligne)</string>
     <string name="Native_PreparingToDownload">Préparation au téléchargement...</string>
     <string name="Native_PressOkCheckWifi">Appuyez sur OK pour vérifier le WiFi.</string>
     <string name="Native_Settings">Paramètres</string>
-    <string name="Native_VersionLabel">Version :</string>
+    <string name="Native_UpdateFailed">Échec de la mise à jour du contenu</string>
+    <string name="Native_UpdateFailed_ConnectToTheInternet">Une opération antérieure du système de fichiers a échoué. Connectez-vous à Internet pour lancer la récupération.</string>
+    <string name="Native_VersionLabel">VERSION :</string>
     <string name="Native_WifiNotActive">WiFi désactivé</string>
     <string name="abc_action_bar_home_description">Revenir à l\'accueil</string>
     <string name="abc_action_bar_up_description">Revenir en haut de la page</string>

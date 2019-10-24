@@ -29,7 +29,7 @@
 13CCallbackImplILi4EE
 13CCallbackImplILi7EE
 13CCallbackImplILi8EE
-14:59:31
+14:55:52
 14CSteamHeadless
 14CUtlLinkedListIN11SteamStdLib12CCommandLine18CommandLineParam_tEiE
 14ISteamHeadless
@@ -90,7 +90,7 @@ Assertion Failed: 0
 Assertion Failed: argLen < 0x10000000u
 Assertion Failed: bufferLen > 0 && bufferLen <= INT_MAX
 Assertion Failed: bufferLen == 0 || pDest != NULL
-Assertion Failed: buf.TellPut() < FIO_MAX_IO_BYTES
+Assertion Failed: bufferToSwap.TellPut() < FIO_MAX_IO_BYTES
 Assertion Failed: cActualReplacements == cReplacements
 Assertion Failed: cbActual < (uint32)nBufSizeWithTerminator
 Assertion Failed: ccMax >= 1
@@ -137,7 +137,6 @@ Assertion Failed: maxlen >= 1
 Assertion Failed: maxLenInBytes >= 0
 Assertion Failed: maxLenInBytes == 0 || pDest != NULL
 Assertion Failed: maxLen <= INT_MAX
-Assertion Failed: m_bAsync
 Assertion Failed: m_bInitialized
 Assertion Failed: m_bSemOwner
 Assertion Failed: m_Count == 0
@@ -158,6 +157,7 @@ Assertion Failed: m_TotalElements != InvalidIndex()
 Assertion Failed: m_unSizeOfElements > 0
 Assertion Failed: m_unSizeOfElements == mem.m_unSizeOfElements
 Assertion Failed: m_vecParms.IsValidIndex( nIndex )
+Assertion Failed: m_vecRegisteredWriters.Count() == 0
 Assertion Failed: m_vecRegisteredWriters.HasElement( pFile )
 Assertion Failed: n >= 0
 Assertion Failed: n == 0 || s1 != NULL
@@ -199,7 +199,8 @@ Assertion Failed: pDest
 Assertion Failed: pDest != NULL
 Assertion Failed: pDest >= pBuffer && pDest <= pBuffer + destBufferSize
 Assertion Failed: pEndingDelim && pEndingDelim[0]
-Assertion Failed: pFile && !m_bExit
+Assertion Failed: pFile
+Assertion Failed: pFile->m_hFileDest != INVALID_OSFILEHANDLE
 Assertion Failed: pFmt
 Assertion Failed: pFormat != NULL
 Assertion Failed: pGroupName
@@ -223,6 +224,7 @@ Assertion Failed: pToken
 Assertion Failed: ret != 0
 Assertion Failed: s1 != NULL
 Assertion Failed: s2 != NULL
+Assertion Failed: s_bExit
 Assertion Failed: ((size_t)(m_nLogicalBytesAllocated) % 8) == 0
 Assertion Failed: (&src < m_Memory.Base()) || (&src >= (m_Memory.Base() + m_Size) )
 Assertion Failed: src != NULL
@@ -240,7 +242,6 @@ Assert( %s ):%s:%d
 &Atilde;
 atoi@@LIBC
 Attempting to create a named event with a null name
-Aug  5 2019
 &auml;
 &Auml;
 Average %.2f fps, %.2f ms per frame
@@ -255,7 +256,6 @@ __bss_start
 __bss_start__
 Busy, please retry.
  bytes
-*?C!9
 Calling Tell on an async file writer is unsafe, will race with thread and may corrupt file pointer.
 can't open/create semaphore name file (%s)
 CatchAndWriteContext_t::Invoke with bogus argc/argv
@@ -277,7 +277,7 @@ C:/buildslave/steam_main_androidarm64/build/src/public\tier1/utlvector.h
 &cent;
 CFileWriter::SetTimestamp() not implemented
 CFileWriterThread
-CFileWriterThread: pending file writer %s
+CFileWriterThread already exited
 ClientAPI_Init(GlobalInstance): GetIClientAppManager returned NULL.
 ClientAPI_Init(GlobalInstance): GetIClientApps returned NULL.
 ClientAPI_Init(GlobalInstance): GetIClientAudio returned NULL.
@@ -490,6 +490,7 @@ Illegal termination of worker thread '%s'
 Infinite time value
 .init_array
 InitVirtualHeap( %d ) called twice (%d, %d)
+Invalid FileWriterItem_t
 Invalid flags in %s
 Invalid initial value for semaphore
 Invalid max value for semaphore
@@ -510,7 +511,6 @@ Ka@9k
  Kbps
 Ki)88
 &laquo;
-_*&L/g
 libandroid.so
 libaudio.so
 libc++_shared.so
@@ -554,6 +554,7 @@ MemTotal:
 &middot;
 minidump.cpp
 Minidumps written:
+~MO5f
 N11SteamStdLib12CCommandLineE
 N11SteamStdLib12ICommandLineE
 N14CSteamHeadless17CCallback_OnLogOnE
@@ -584,6 +585,7 @@ NULL buffer passed to V_atoi()
 &Ocirc;
 &ograve;
 &Ograve;
+olibsteamhdl.so.dbg
 Only thread can stop self: Use a higher-level protocol
 open@@LIBC
 &ordf;
@@ -696,6 +698,7 @@ Seeking to a position not supported with async io
 Seeking to a position which is not sector aligned will break unbuffered io
 semaphore creation failed %s
 Semaphore name (%s) is longer than POSIX can handle, truncating.
+Sep  5 2019
 ServerMain
 __sF@@LIBC
 .shstrtab
@@ -727,6 +730,7 @@ Steam_FreeLastCallback
 Steam_GetAPICallResult
 STEAMHEADLESS_INTERFACE_VERSION001
 Steam headless loaded...
+[SteamNetworkingSockets] %s
 steam://openurl/
 steam://openurl_external/
 -steamos
@@ -787,6 +791,7 @@ ThreadWorkItem
 ../tier1/utlstring.cpp
 time@@LIBC
 &times;
+T@,^J
 /tmp/
 TMPDIR
 .tmp.save

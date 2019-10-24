@@ -26,6 +26,7 @@ $@)#@@)
 00000000-0000-0000-0000-000000000000
 0.075 0.15 0.3
 0123456789)"
+	%02i%% (%i/%i)
 ?"0kb
 0x%016llX
 0@y_!!ka
@@ -63,6 +64,7 @@ $@)#@@)
 15CIntOpEvaluator
 15CLineLayoutInfo
 15CMemberFunctor1IP26CParallelProcessorAbstractI18CParallelProcessorIi23CLambdaJobItemProcessorIiELi1EEEMS5_FviEi12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
+15CMemberFunctor1IP26CParallelProcessorAbstractI26CFunctorParallelControllerIZ48CompileComboAndGetVariables_DynamicShaderCompileR10CUtlVectorI26DynamicShaderCompileTask_t10CUtlMemoryIS3_iEEPFviiEE3$_1EEMSC_FviEi12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CMemberFunctor7IP10CMaterial2MS0_FvP25IAsyncResourceDataRequestPhiP32MaterialStaticComboLoadRequest_ti11CWeakHandleI29InfoForResourceTypeIMaterial2EtES3_DniS6_iS9_t12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CMeshLayoutInfo
 15CTier0AppSystemI11ITextLayoutE
@@ -130,14 +132,16 @@ _"1k#
   %2d: FontHandle:0x%8.8llx, %s, %s, font:%s, tall:%f.0%s
     %2d = "%s"
  %2dx 
+2Hs<9
+2	i38
 2(i58
-2(i;8
-2	i;8
+2*i(8
 2	i88
 2ij(8
 2+imx
 ?"2kB
 2Pit8
+2tZ yA
 2@yh2
 2	y;x
 2/Y+xk
@@ -184,11 +188,12 @@ _"1k#
 %6d %-50s
 6hb@9
 6hB@9H
+6hbTy
 6hjz8
-6h"Uy
 6i.@9h
 %6s %-50s %5s %5s %5s %5s %5s %5s %5s %10s
 6@yh6
+6Ys|9
 7h.@9
 7hb@9h
 7hf@9
@@ -200,7 +205,6 @@ _"1k#
  %7sK
  %7sK 
 7@y?6
-_#<)8:
 *- 8(
 8CFmtStrNILi1024ELb0EE
 8CFmtStrNILi256ELb0EE
@@ -214,9 +218,10 @@ _#<)8:
 @9*	@
 @9+	@
 %@9)}`
-	!]9	
+	!^9	
 @9+	@9,
 9+	@9
+9(aTy
 9)%B9
 9CFontBase
 (@@9h
@@ -238,13 +243,14 @@ _#<)8:
 9('	Si
 @9wiu
 A-   
-	a\9	
+	a]9	
 	A@9	
 @A9)@A9
-a9@y%
+a9@yx
 A	A-!
 AA9*Q
 a	@=B
+aB9C	
 'AC-1!@
 Actually dude, we didn't seem to be expecting anything here, or at least
 *** A dynamic combo in %s doesn't start with "D_"! Aborting shader compile!
@@ -280,11 +286,9 @@ AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
 *** A feature in %s doesn't start with "F_"! Aborting shader compile!
 &A)H'
-A)	#H
 )AH9(e
 ai_model_info
 AIWalkable
-	Aj9I
 All Bad! Talk to Brian and Alex. g_pRenderHardwareConfig is NULL which means we won't load this material correctly: %s
  All %d static combos set to zero
 AllocateAndLoad failed for '%s'
@@ -358,10 +362,13 @@ ATI_DST24
 , at offset %d
 attachment
 attachment_offset
+attachment_type
+attach_point
 __Attribute__
 Attribute-based texture %s not bound for material "%s"!
 Attribute-based texture %s not bound for material "%s"! Missing render attribute "%s"
 ^^^ Attribute-based texture warning is now disabled after outputting 50 warnings.
+(aTy@
 auto_unragdoll_duration
 B-1HD-
 *-B),5C)_
@@ -416,6 +423,7 @@ BGRA4444
 BGRA5551
 BGRA8888_LINEAR
 BGRX8888_LINEAR
+B)	#H
 bhb8_
 binary
 binary_auto
@@ -435,11 +443,13 @@ BLOOM_BLEND_SCREEN
 BodyGroup
 BodyGroupChoice
 body_type
+bonemerge
 bone_name
 bone_names
 bool2
 bool3
 bool4
+bool CFontTextureCache::IsCharCached(FontHandle_t, FontDrawType_t, uchar32, int *, float **)
 BOOLLITERAL
 borrow
 breakable_count
@@ -482,6 +492,8 @@ CCommand::Tokenize: Encountered command which overflows the argument buffer.. Cl
 CCommand::Tokenize: Encountered command which overflows the tokenizer buffer.. Skipping!
 center
 CEntityIndex
+CFontTextureCache: Cache Page out of bounds %d (curr count %d)
+CFontTextureCache: Type Page out of bounds %d
 ChangeCallbackOnChange
 ChangeCallbackOnChangeOrCreate
 (channel = 
@@ -584,13 +596,16 @@ CommandProcedureList
 .comment
 COMMENT
 COMMON
+Compiled 
+Compiled %i shaders in %.1fs
 CompileShadersForFeatureCombo
 Compile Target Expression
 CompileTargets
 Compile Targets
-Compiling 
+Compiling %i shaders:
 composite
 Compute Shader
+ConfigAttachedModel
 ConfigurationSystem_001
 configvalue.cpp
 ^^^ Constant buffer warning is now disabled after outputting 50 warnings.
@@ -698,7 +713,7 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 *-D),5E)_
-d6@y#
+d6@yC
 ,DA)R
 .data
 .data.rel.ro
@@ -737,8 +752,9 @@ Double-save to Member '%s'
 ds_5_0
 DXT1_ONEBITALPHA
 DXT5_NM
+dy`*	
 .dynamic
-	Dynamic:
+		Dynamic:
 DynamicCombo
 DynamicComboFromFeature
 DynamicComboRule
@@ -746,6 +762,7 @@ DynamicComboRule
 Dynamic combos:
 *** Dynamic combo "%s" in %s cannot refer to a feature! Only static combos can refer to features.
 Dynamic combo %s referenced in expression doesn't exist.
+DynamicConfigList
 dynamic_interaction
    * Dynamic Shader Compile
 // Dynamic Shader Compile Enabled
@@ -758,6 +775,7 @@ EA9*U
 Early exit
 EconItemToolModel_001
 _edata
+EditorDynamicConfig
 .eh_frame
 .eh_frame_hdr
 EMaterialReloaded
@@ -951,13 +969,14 @@ fltx4
 FONTCONFIG_PATH
 FontManager_001
 fontmanager/fontmanager.cpp
+fontmanager/fonttexturecache.cpp
 @font_show_glyph_miss
 force
 format
    Found 0 materials
 *** Found combo "%s" multiple times in %s declared differently!
    Found %d materials
-   Found %d textures ( %d references ) %s MB (mem) %s MB (disk)
+   Found %d textures ( %d references ) %s MB (mem) %s MB (disk) | Mem = %s MB (streamable) %s MB (RTs) %s MB (non-mip'd non-RTs)
    Found %d unique vfx files, %s unique shader handles
 *** Found feature "%s" multiple times in %s!
 fprintf
@@ -1020,11 +1039,11 @@ h&@)?
  h`8_
 h.@9(
 h*@9(
-h+@9(
 H9)}`
 H9)%@9
 h.@9H
 H-@9H
+H/@9H
 h"A9a
 HammerMapLoader001
 handindex
@@ -1042,7 +1061,7 @@ H`B9hb
 hb@9i
 hb@9v
 hbB9t
-hBj9I
+hbTy	
 HC@9h
 HEADER
 headtype
@@ -1059,7 +1078,7 @@ hFEyu
 hFFyuf
 hf@y(
 hf@yH
-h!H*	
+h!H*)
 H-%H@
 h%@)j-A)
 *Hk989
@@ -1077,13 +1096,12 @@ Hs@9(s
 Hull Shader
 hurt_me
 hurt_them
-h"Uy	
 h*@y_
 H	@y(	
 h&@yh
 hz@9(
 i~	)2
-*i38s
+(i38H
 	i58h
 	i68h
 (i68hv@y
@@ -1091,10 +1109,10 @@ i68hV@y
 i6@yh
 (i78h
 ?i(8	
-(i{8`
-i;86m
 (i:8h
 *i(8i
+i;8;o
+*i989
 i.@9h
 i~@9k
 IA9*Y
@@ -1106,7 +1124,7 @@ I could not work out what I was expecting, like so many of us these days!
 I CUtlLinkedList<CMatSystemTexture, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CMatSystemTexture, unsigned short>, unsigned short> >::AllocInternal(bool) [T = CMatSystemTexture, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<CMatSystemTexture, unsigned short>, unsigned short>]
 I CUtlLinkedList<CVfxByteCodeManager::DynamicComboInfo_t, int, false, int, CUtlMemory<UtlLinkedListElem_t<CVfxByteCodeManager::DynamicComboInfo_t, int>, int> >::AllocInternal(bool) [T = CVfxByteCodeManager::DynamicComboInfo_t, S = int, ML = false, I = int, M = CUtlMemory<UtlLinkedListElem_t<CVfxByteCodeManager::DynamicComboInfo_t, int>, int>]
 I CUtlNTree<CTexturePacker::TreeEntry_t, int>::AllocInternal() [T = CTexturePacker::TreeEntry_t, I = int]
-I CUtlRBTree<CFontTextureCache::CacheEntry_t, unsigned short, bool (*)(const CFontTextureCache::CacheEntry_t &, const CFontTextureCache::CacheEntry_t &), CUtlMemory<UtlRBTreeNode_t<CFontTextureCache::CacheEntry_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CFontTextureCache::CacheEntry_t, I = unsigned short, L = bool (*)(const CFontTextureCache::CacheEntry_t &, const CFontTextureCache::CacheEntry_t &), M = CUtlMemory<UtlRBTreeNode_t<CFontTextureCache::CacheEntry_t, unsigned short>, unsigned short>]
+I CUtlRBTree<CFontTextureCache::CacheEntry_t, unsigned short, bool (*)(const CFontTextureCache::CacheEntry_t &, const CFontTextureCache::CacheEntry_t &), CUtlBlockMemory<UtlRBTreeNode_t<CFontTextureCache::CacheEntry_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CFontTextureCache::CacheEntry_t, I = unsigned short, L = bool (*)(const CFontTextureCache::CacheEntry_t &, const CFontTextureCache::CacheEntry_t &), M = CUtlBlockMemory<UtlRBTreeNode_t<CFontTextureCache::CacheEntry_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CPlatformFont::abc_cache_t, unsigned short, bool (*)(const CPlatformFont::abc_cache_t &, const CPlatformFont::abc_cache_t &), CUtlMemory<UtlRBTreeNode_t<CPlatformFont::abc_cache_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CPlatformFont::abc_cache_t, I = unsigned short, L = bool (*)(const CPlatformFont::abc_cache_t &, const CPlatformFont::abc_cache_t &), M = CUtlMemory<UtlRBTreeNode_t<CPlatformFont::abc_cache_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CPlatformFont::kerned_abc_cache_t, unsigned short, bool (*)(const CPlatformFont::kerned_abc_cache_t &, const CPlatformFont::kerned_abc_cache_t &), CUtlMemory<UtlRBTreeNode_t<CPlatformFont::kerned_abc_cache_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CPlatformFont::kerned_abc_cache_t, I = unsigned short, L = bool (*)(const CPlatformFont::kerned_abc_cache_t &, const CPlatformFont::kerned_abc_cache_t &), M = CUtlMemory<UtlRBTreeNode_t<CPlatformFont::kerned_abc_cache_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<CFontManager::CFontAttributes, CFontManager::CFontInfo, int, bool (*)(const CFontManager::CFontAttributes &, const CFontManager::CFontAttributes &)>::Node_t, int, CUtlMap<CFontManager::CFontAttributes, CFontManager::CFontInfo, int, bool (*)(const CFontManager::CFontAttributes &, const CFontManager::CFontAttributes &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CFontManager::CFontAttributes, CFontManager::CFontInfo, int, bool (*)(const CFontManager::CFontAttributes &, const CFontManager::CFontAttributes &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<CFontManager::CFontAttributes, CFontManager::CFontInfo, int, bool (*)(const CFontManager::CFontAttributes &, const CFontManager::CFontAttributes &)>::Node_t, I = int, L = CUtlMap<CFontManager::CFontAttributes, CFontManager::CFontInfo, int, bool (*)(const CFontManager::CFontAttributes &, const CFontManager::CFontAttributes &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CFontManager::CFontAttributes, CFontManager::CFontInfo, int, bool (*)(const CFontManager::CFontAttributes &, const CFontManager::CFontAttributes &)>::Node_t, int>, int>]
@@ -1121,7 +1139,9 @@ I CUtlRBTree<CUtlMap<unsigned long long, CVfxByteCodeManager::StaticComboInfo_t 
 I CUtlRBTree<CUtlMap<unsigned short, CFontManager::CFontDataFile, int, bool (*)(const unsigned short &, const unsigned short &)>::Node_t, int, CUtlMap<unsigned short, CFontManager::CFontDataFile, int, bool (*)(const unsigned short &, const unsigned short &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned short, CFontManager::CFontDataFile, int, bool (*)(const unsigned short &, const unsigned short &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<unsigned short, CFontManager::CFontDataFile, int, bool (*)(const unsigned short &, const unsigned short &)>::Node_t, I = int, L = CUtlMap<unsigned short, CFontManager::CFontDataFile, int, bool (*)(const unsigned short &, const unsigned short &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned short, CFontManager::CFontDataFile, int, bool (*)(const unsigned short &, const unsigned short &)>::Node_t, int>, int>]
 I CUtlRBTree<void *, int, bool (*)(void *const &, void *const &), CUtlMemory<UtlRBTreeNode_t<void *, int>, int> >::NewNode(const T *) [T = void *, I = int, L = bool (*)(void *const &, void *const &), M = CUtlMemory<UtlRBTreeNode_t<void *, int>, int>]
 ieDy?
+If we should use multithreaded shader recompilation during mat_reloadshaders.
 )ih8))
+*ih8 
  ih8h
 )ih8i&
 )ih8i2
@@ -1139,6 +1159,7 @@ ij(8h
 ,ij8m
 )ijx?
 )ijx)-@
+*ijx_
 *ijx_!(k
 IKChain
 IKChainOld
@@ -1187,32 +1208,28 @@ IOS_VULKAN
 IOS_VULKAN_4_0
 IQuickTime001
 irAy?
-)iR`y
-*is8J
+	is8)
 is also the end of the line, so you must check your lexer rules
 is_debris
 isprint
 IS_SM_
 I-$T@
 )iu8?
-)iu8)
 Iu@y?1
-	*iV@
 +iv8J
 )iw8)
 *ix8i!B9_
 	i+xh
 	i+xh~Ayiz
-	i-xh^`yiZ y
 *i,xi>@yj:
-*i.xi>@yj:
+*iy8J
 i>@yh
 I$@yi
 j~	)`
-J38CA
 j58hf@9(
+J68#5
 j68hb@9h
-J68jB
+J78^3
 J8@-I0B-O4D-K
 J!@9_
 JaN9j
@@ -1234,7 +1251,9 @@ jij8\a
 jij8\A
 jij8j
 Jik8\
+Jikx_!6k
 JiMIJ+
+ji,x	
 jj(8(
 j!JJ+
 j!JJK
@@ -1244,8 +1263,10 @@ JNI_OnLoad
 JNI_OnUnload
 $Jo8$J!8!
 jq8!$B9
+)jR`y
 JSON error, unterminated element: 
 j(xhb@9
+j>@y_
 	*jz-
 _!/k"
 K-%`@
@@ -1260,6 +1281,7 @@ K1H)M9I)
 k;8h"A
 ;K9+y
 kaDy+
+	KBl 
 _"!kc
 ?!.kc
 ?!*kc
@@ -1335,7 +1357,6 @@ Line %d: Invalid value "%s"
 Line %d: %s
  LinePos:
 L-#l@
-Lm@x,
 , LoadFont used
 LoadFromBuffer: expected '{', found '%s'
 localize
@@ -1374,30 +1395,30 @@ MATCHFRAMEWORK_001
 mat_colorcorrection
 mat_disable_dynamic_shader_compile
 material2.cpp
-material2.cpp(1091): Error! Material "%s" is already loaded!
-*** material2.cpp(1096): Error! Trying to load material "%s" without any params!
-material2.cpp(1129): Cannot find shader entry in material "%s"! Using error.vfx!
-material2.cpp(112): ERROR! Can't load vfx_dx dll, dynamic shader compile unavailable!
-material2.cpp(1169): Error creating shader %s for material %s!
-material2.cpp(1174): Error creating shader %s and cannot load error.vfx instead!
-material2.cpp(1214): Error creating fallback shader %s for %s for material %s! A fallback shader cannot fallback to a different shader!
-material2.cpp(1227): Error creating fallback shader %s for %s for material %s!
-material2.cpp(1231): Error creating fallback shader %s for %s and cannot load error.vfx instead!
-material2.cpp(1261): Error creating shader %s for material %s!
-material2.cpp(1266): Error creating shader %s and cannot load error.vfx instead!
-material2.cpp(1274): Error creating static combos for shader %s and error.vfx instead!
-material2.cpp(1797): DxSupportLevel %d not supported!
-material2.cpp(2076): Dynamic Combos should be assumed to be unique for dynamic shader compile! %d != %d
-material2.cpp(2110): Dynamic shader compile failed for %s in material "%s"!
+material2.cpp(1092): Error! Material "%s" is already loaded!
+*** material2.cpp(1097): Error! Trying to load material "%s" without any params!
+material2.cpp(1130): Cannot find shader entry in material "%s"! Using error.vfx!
+material2.cpp(113): ERROR! Can't load vfx_dx dll, dynamic shader compile unavailable!
+material2.cpp(1170): Error creating shader %s for material %s!
+material2.cpp(1175): Error creating shader %s and cannot load error.vfx instead!
+material2.cpp(1215): Error creating fallback shader %s for %s for material %s! A fallback shader cannot fallback to a different shader!
+material2.cpp(1228): Error creating fallback shader %s for %s for material %s!
+material2.cpp(1232): Error creating fallback shader %s for %s and cannot load error.vfx instead!
+material2.cpp(1262): Error creating shader %s for material %s!
+material2.cpp(1267): Error creating shader %s and cannot load error.vfx instead!
+material2.cpp(1275): Error creating static combos for shader %s and error.vfx instead!
+material2.cpp(1798): DxSupportLevel %d not supported!
+material2.cpp(2101): Dynamic Combos should be assumed to be unique for dynamic shader compile! %d != %d
 material2.cpp(2133): Dynamic shader compile failed for %s in material "%s"!
-material2.cpp(2426): Failed call to FindOrLoadStaticComboData()!
-material2.cpp(2637): Too many passes for caller! Ignoring layer %d pass %d
-material2.cpp(2722): All bad! The error material failed in dynamic shader compile!
-material2.cpp(3391): Find a graphics programmer! Trying to bind a "%s" shader that doesn't exist! for %s
-material2.cpp(3894): Unsupported sampler state type for "%s"!
-material2.cpp(528): Material "%s" is requesting a bad mode "%s"!
-material2.cpp(628): Error! Material "%s" doesn't have any valid layers to get the CVsInputSignatureVector from!
-material2.cpp(652): Error! Material "%s" doesn't have a CVsInputSignatureVector!
+material2.cpp(2184): Dynamic shader compile failed for %s in material "%s"!
+material2.cpp(2478): Failed call to FindOrLoadStaticComboData()!
+material2.cpp(2689): Too many passes for caller! Ignoring layer %d pass %d
+material2.cpp(2774): All bad! The error material failed in dynamic shader compile!
+material2.cpp(3443): Find a graphics programmer! Trying to bind a "%s" shader that doesn't exist! for %s
+material2.cpp(3946): Unsupported sampler state type for "%s"!
+material2.cpp(529): Material "%s" is requesting a bad mode "%s"!
+material2.cpp(629): Error! Material "%s" doesn't have any valid layers to get the CVsInputSignatureVector from!
+material2.cpp(653): Error! Material "%s" doesn't have a CVsInputSignatureVector!
 material_command_buffer.cpp
 Material command buffer printing only available in debug builds
 Material Creation
@@ -1447,15 +1468,15 @@ Material %s (shader %s) nonbatchable in mode "%s" because of dynamic CB for %s. 
 MaterialSystem
 materialsystem2
 MaterialSystem2
-materialsystem2.cpp(145): ERROR! Empty shader mode string found! Use "Default" instead!
-materialsystem2.cpp(161): ERROR! Shader mode "%s" has unsupported type "%s" specified gameinfo.gi!
-materialsystem2.cpp(2623): pVfx == NULL!
-materialsystem2.cpp(2668): pVfx == NULL!
-materialsystem2.cpp(2940): Error reading index!
-materialsystem2.cpp(357): ERROR!!! Materials not released by other systems on shutdown! (See spew above)
-materialsystem2.cpp(362): ERROR!!! Shaders not freed on shutdown, likely due to unreleased materials! (See spew above)
-materialsystem2.cpp(376): GetErrorMaterial() called when m_pMaterialTypeManager == NULL!
-materialsystem2.cpp(818): ERROR!!! Shaders not freed before shader reload! (See spew above)
+materialsystem2.cpp(143): ERROR! Empty shader mode string found! Use "Default" instead!
+materialsystem2.cpp(159): ERROR! Shader mode "%s" has unsupported type "%s" specified gameinfo.gi!
+materialsystem2.cpp(2761): pVfx == NULL!
+materialsystem2.cpp(2810): pVfx == NULL!
+materialsystem2.cpp(3082): Error reading index!
+materialsystem2.cpp(351): ERROR!!! Materials not released by other systems on shutdown! (See spew above)
+materialsystem2.cpp(356): ERROR!!! Shaders not freed on shutdown, likely due to unreleased materials! (See spew above)
+materialsystem2.cpp(370): GetErrorMaterial() called when m_pMaterialTypeManager == NULL!
+materialsystem2.cpp(837): ERROR!!! Shaders not freed before shader reload! (See spew above)
 MaterialSystem2DefaultDebugFont
 MaterialSystem2DefaultDebugFontOutline
 MaterialSystem2/ShaderIDColors/
@@ -1495,6 +1516,7 @@ mat_print_textures_size_in_memory
 mat_reinitmaterials
 mat_reloadmaterials
 mat_reloadshaders
+mat_reload_shaders_multithreaded
 mat_reset_material_costs
 matrix3x4a_t
 matrix3x4_t
@@ -1581,6 +1603,7 @@ m_flClusterRefireTime
 m_flClusterRefireTimeMax
 m_flClusterRefireTimeMin
 m_flClusterSize
+m_flDuration
 m_flEmissionDuration
 m_flEmissionScale
 m_flEmitRate
@@ -1657,6 +1680,8 @@ m_nClusterSizeMin
 m_nColorCorrectionVolumeDim
 m_nControlPoint
 m_nControlPointNumber
+m_nCP
+m_nCPField
 MNetworkBitCount
 MNetworkChangeCallback
 MNetworkEncoder
@@ -1709,6 +1734,7 @@ modeldoc23
 modeldoc24
 modeldoc25
 modeldoc26
+modeldoc27
 modeldoc3
 modeldoc4
 modeldoc5
@@ -1717,6 +1743,7 @@ modeldoc7
 modeldoc8
 modeldoc9
 ModelDocUtils001
+model_name
 MODEL_PROCESSING_SCRIPT_INTERFACE_001
 MODEL_PROCESSING_SERVICES_INTERFACE_001
 MODES
@@ -1774,6 +1801,7 @@ nav_attribute_avoid
 nav_data
 n%B9k!B9
 nBatchIndices <= nMaxIndexCountPerPass
+nCachePage >= 0 && nCachePage < m_PageList.Count()
 nCombos
 near '%c' :
 near char(%#02X) :
@@ -1799,6 +1827,7 @@ NetworkSystemUtilsVersion001
 NetworkSystemVersion001
 Newline in string literal
 nf@9/
+*Ninx
        (no arguments disables the assert)
 -noasyncmaterialload
 No Buffer
@@ -1837,6 +1866,7 @@ NV_INTZ
 NV_NULL
 NV_RAWZ
 N!X nBX n!
+*o2@y
 o6ir@
 o%B9k!B9
 OCTAL_ESC
@@ -1852,6 +1882,7 @@ origin_relative
 PanoramaTextServices001
 PanoramaUIClient001
 PanoramaUIEngine001
+PARALLEL_PROCESS material2.cpp:2120
 Parser encountered %i errors parsing compile targets expression "%s"
 PARTICLE_DEPTH_FEATHERING_OFF
 PARTICLE_DEPTH_FEATHERING_ON_OPTIONAL
@@ -1940,6 +1971,11 @@ PostProcessingSystemManifest
 PostProcessingTonemapParameters_t
 PostProcessingVignetteParameters_t
 preferred_carryangles
+PreviewAttachmentModel
+PreviewBoneAttachedModel
+PreviewBoneMergedModel
+PreviewPreset
+PreviewPresetList
 Print detailed info about a single shader. Takes a shader name (hero.vfx) as an argument.
 Print info about a specific material
 Print loaded materials. Takes an optional substring as an argument.
@@ -1986,7 +2022,6 @@ PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
 QAngle
 qDI;8j
-q	i{8)
 Qi"A)`
 qLil8
 Quaternion
@@ -2019,11 +2054,13 @@ RegisterStringToken
 Reinitializes all loaded materials, reloading their shaders.
 .rela.dyn
 .rela.plt
+relative_angles
+relative_origin
 Release
 // Reloading all shaders -----------------------------------------------------
 Reloads all materials. Takes an optional substring as an argument.
 Reloads all shaders from vcs files until the next time mat_reloadshaders is called
-Reloads all shaders. Takes an optional substring as an argument.
+Reloads all shaders. Takes optional substrings of shader names to recompile as arguments.
 RemoveBoneAndChildren
 RenderDevice003
 RenderDeviceMgr001
@@ -2056,7 +2093,7 @@ RG1616F
 RG1616F_EXPAND
 RG3232F
 RGB323232F
-?RGB565
+RGB565
 RGB888_BLUESCREEN
 RGBA1010102
 RGBA1010102F_EDRAM
@@ -2104,7 +2141,6 @@ R*Y(x,Y+x
    %s 0..0
 %s|  % 2d: [% 3d] %-12s %s
 %s|  % 2d: %s [Offset: %d]
-(S@9)
 %s| AlignOf: %d
 %s allocation count overflow
 %s allocation count overflow( add %llu + current %llu > max %llu )
@@ -2232,7 +2268,7 @@ S_SUPPORTS_CLIP_DISTANCE
 __stack_chk_fail
 Stack depth limit hit (%d)
  (Start: 
-	Static:
+		Static:
 StaticCombo
 StaticComboRule
    StaticComboRule( 
@@ -2269,7 +2305,7 @@ surface_prop
 %s| Virtual: %s; Abstract: %s; TrivialConstr: %s; TrivialDestr: %s
 %s: Warning: No compile targets specified! Shader will not be compiled!
 Swizzle operation only supports up to four channels.
-)	S`y
+S y`^@
  : syntax error...
  : syntax not recognized...
 system.fxc
@@ -2280,7 +2316,6 @@ tangent
 T_BKk
 Tc"A)`
 Tc"B)`
-Tc"\)`n@
 T *CUtlLeanVectorImpl<CUtlLeanVectorBase<CUtlVector<CMaterialParam, CUtlMemory<CMaterialParam, int> >, short>, CUtlVector<CMaterialParam, CUtlMemory<CMaterialParam, int> >, short>::AddToTailGetPtr() [B = CUtlLeanVectorBase<CUtlVector<CMaterialParam, CUtlMemory<CMaterialParam, int> >, short>, T = CUtlVector<CMaterialParam, CUtlMemory<CMaterialParam, int> >, I = short]
 T *CUtlLeanVectorImpl<CUtlLeanVectorBase<MaterialStaticComboLoadRequest_t, short>, MaterialStaticComboLoadRequest_t, short>::AddToTailGetPtr() [B = CUtlLeanVectorBase<MaterialStaticComboLoadRequest_t, short>, T = MaterialStaticComboLoadRequest_t, I = short]
 T *CUtlLeanVectorImpl<CUtlLeanVectorBase<VfxStaticComboLoadRequest_t, short>, VfxStaticComboLoadRequest_t, short>::AddToTailGetPtr() [B = CUtlLeanVectorBase<VfxStaticComboLoadRequest_t, short>, T = VfxStaticComboLoadRequest_t, I = short]
@@ -2288,6 +2323,7 @@ T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<CMaterialLayer, 1, short>,
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<RenderDescriptorBinding_t, 16, short>, RenderDescriptorBinding_t, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<RenderDescriptorBinding_t, 16, short>, T = RenderDescriptorBinding_t, I = short]
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<texture_use_info_t, 16, short>, texture_use_info_t, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<texture_use_info_t, 16, short>, T = texture_use_info_t, I = short]
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<VfxVariableIndexData_t, 2, int>, VfxVariableIndexData_t, int>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<VfxVariableIndexData_t, 2, int>, T = VfxVariableIndexData_t, I = int]
+Tc"^)`v@
 T	D@y?!!k
 T	eDy?
 __temp_unserialization_member__
@@ -2313,7 +2349,10 @@ TextureSheetData
 TextureSize
 Th.@9i
 Th~Ay
+Th&B))}
 Th&B9
+Th*B)J}
+THCC9(	
 	 The lexer was matching from line %d, offset %d, which
 Thf@9
 	 This indicates a poorly specified lexer RULE
@@ -2324,7 +2363,6 @@ Th.@y
 Th*@y
 Th&@y
 ThzAy
-ThZ`y
 Ti2@yh
 Ti5KJ(}
 Ti6@y?! kC
@@ -2336,9 +2374,9 @@ Tif@9
 Tif@9)
 TiF@y?!4kC
 Times New Roman
-Ti^`y?
 Ti:@y
 Tjb@9
+Tj^`y_
 TK	@9)A
 TL	@9kA
 Tn>@)
@@ -2365,6 +2403,7 @@ Tx"@y
 T	_`y?!6k
 ', type<
 TypeManager
+typePage >= 0 && typePage < FONT_DRAW_TYPE_COUNT
 u64( %lld = 0x%llX )
 Ubuntu
 uint64 CVfxProgramData::CalcDynamicComboIdFromValues(const VfxComboValueVector_t &) const
@@ -2405,6 +2444,7 @@ update
 UPDATE_STRING_TOKEN_DATABASE
    Usage:
 Usage: mat_assert_on_shader_use [shader_substring]
+use_additional_offset
 UserInfoChangeService_001
  using substring "%s"
 utils/materialsystem2utils.cpp
@@ -2413,7 +2453,6 @@ utlstring.cpp
 UVLX8888
 Uv scale variable %s referenced by texture %s doesn't evaluate to a constant value at material load time (%s).
 UVWQ8888
-(!Uy@
 )*U@y
 (U@yJ
 vanmgrph
@@ -2542,6 +2581,7 @@ void CSchemaClassInfo::ReportClassError(const char *) const
 void CSchemaClassInfo::ValidateModuleLocalTypeScope()
 void CUtlBlockMemory<CFontTextureCache::Page_t, int>::ChangeSize(int) [T = CFontTextureCache::Page_t, I = int]
 void CUtlBlockMemory<CVfxStaticComboData, int>::ChangeSize(int) [T = CVfxStaticComboData, I = int]
+void CUtlBlockMemory<UtlRBTreeNode_t<CFontTextureCache::CacheEntry_t, unsigned short>, unsigned short>::ChangeSize(int) [T = UtlRBTreeNode_t<CFontTextureCache::CacheEntry_t, unsigned short>, I = unsigned short]
 void CUtlBuffer::VaPrintf(const char *, va_list)
 void CUtlLeanVectorBase<CUtlVector<CMaterialParam, CUtlMemory<CMaterialParam, int> >, short>::EnsureCapacity(int, bool) [T = CUtlVector<CMaterialParam, CUtlMemory<CMaterialParam, int> >, I = short]
 void CUtlLeanVectorBase<MaterialStaticComboLoadRequest_t, short>::EnsureCapacity(int, bool) [T = MaterialStaticComboLoadRequest_t, I = short]
@@ -2574,6 +2614,7 @@ vpcf21
 vpcf22
 vpcf23
 vpcf24
+vpcf25
 vpcf3
 vpcf4
 vpcf5
@@ -2636,7 +2677,6 @@ V_vsnprintfSize
 V_vsnprintfWarnTrunc
 V_wcstoi64
 v@y?5
-W	)#3
 Warning
 WARNING: Failed to convert introspected block for file: %s
 WARNING: Invalid resource version (%d): %s
@@ -2646,7 +2686,6 @@ WAy2z@
 WAyky@
 WeightList
 width
-W)n^@
 WorkshopSetup001
 WorldRendererBuilderMgr001
 WorldRendererMgr001
@@ -2661,11 +2700,13 @@ X360_DST24F
 	y4xl
 y6xhv@y
 ('@y7#
+<@y	8
 yaw_end
 yaw_start
 @yB.@
-@y))G
+@y)%G
 :@yh:
+@yhkt
 yh"@y
 yh&@y
 @yi2@
@@ -2676,6 +2717,7 @@ yi>@y)
 yi.@y)
 yi&@y?
 yi>@yj
+Y)j*@
 )YJJ)}
 @y_!!k
 @y_!(k!

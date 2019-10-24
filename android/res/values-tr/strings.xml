@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Native_AppOutOfDate">Yeni sürüm App Store\'da çıktı. Çevrimiçi oyun için gereklidir.</string>
+    <string name="Native_AppOutOfDateOpt">Uygulamanın yeni bir sürümü indirilebilir</string>
+    <string name="Native_AppOutOfDateReq">Çevrimiçi oynamak için uygulamanın en güncel sürümünü indirin.</string>
     <string name="Native_AppUpdateTitle">Yeni Sürüm Çıktı</string>
     <string name="Native_Cancel">İptal</string>
     <string name="Native_ConfirmCellular">%d MB boyutundaki içerik indirilmeye hazırlanılıyor - Mobil veri üzerinden indirmek istediğinize emin misiniz?</string>
     <string name="Native_ConfirmDownload">%d MB boyutundaki içerik indirilsin mi?</string>
     <string name="Native_ContactingServer">Sunucuyla İletişim Kuruluyor</string>
+    <string name="Native_DownloadAppUpdate">En güncel uygulamayı indir</string>
     <string name="Native_DownloadError">Bir Hata Meydana Geldi</string>
     <string name="Native_DownloadErrorDownload">İçerik dosyası indirilemedi</string>
     <string name="Native_DownloadErrorManifest">Manifesto indirilemedi</string>
+    <string name="Native_DownloadErrorQueueDownload">İçerik dosyası indirme kuyruğuna eklenemedi</string>
     <string name="Native_DownloadErrorStorage">Yetersiz depolama alanı</string>
     <string name="Native_DownloadErrorUnknown">Bilinmeyen hata</string>
     <string name="Native_DownloadOverMobileLabel">Mobil veri kullanarak indir?</string>
     <string name="Native_DownloadOverMobileMessage">Mobil veri kullanarak indirmek üzeresiniz? Devam et?</string>
     <string name="Native_DownloadTitle">İçerik güncellemesi gerekli:</string>
     <string name="Native_DownloadUpdate">En son güncellemeyi indir:</string>
-    <string name="Native_DownloadingContent">İçerik İndiriliyor</string>
+    <string name="Native_DownloadingContent">İÇERİK İNDİRİLİYOR</string>
     <string name="Native_Exit">Çıkış</string>
-    <string name="Native_LoadingGame">Oyun yükleniyor...</string>
+    <string name="Native_FileSystemFailed">Gerekli bir dosya sistemi operasyonu başarısız oldu. Lütfen uygulamayı yeniden başlatın. Bu mesaj çıkmaya devam ederse uygulamayı yeniden yükleyin.</string>
+    <string name="Native_LoadingGame">OYUN YÜKLENİYOR...</string>
     <string name="Native_ManifestDownloaded">Bildirim İndirildi</string>
     <string name="Native_NeedsStoragePermissionsToContinueText">Oyun içeriklerini yükleyebilmek için cihazınızın hafızasına erişmemiz gerekiyor. Ayarlara giderek ilgili izinleri etkinleştirin.</string>
     <string name="Native_NeedsStoragePermissionsToContinueTitle">Kayıt İzni Gerekli</string>
@@ -26,11 +31,15 @@
     <string name="Native_OK">TAMAM</string>
     <string name="Native_PermissionsText">Dota Underlords oyun içeriğini bu aygıtın harici hafızasında depolamak için izninize ihtiyaç duyuyor.</string>
     <string name="Native_PermissionsTitle">Dota Underlords İzinleri</string>
+    <string name="Native_PlayAppOutOfDateOpt">Güncellemeden oynayın</string>
+    <string name="Native_PlayAppOutOfDateReq">Güncellemeden oynayın. Çevrimiçi oynama devre dışı.</string>
     <string name="Native_PlayOffline">Güncellemeden oyna (çevrimdışı)</string>
     <string name="Native_PreparingToDownload">İndirmeye hazırlanılıyor...</string>
     <string name="Native_PressOkCheckWifi">WIFI\'ı kontrol etmek için TAMAM\'a basın.</string>
     <string name="Native_Settings">Ayarlar</string>
-    <string name="Native_VersionLabel">Sürüm:</string>
+    <string name="Native_UpdateFailed">İçerik Güncellemesi Başarısız</string>
+    <string name="Native_UpdateFailed_ConnectToTheInternet">Önceki güncelleme operasyonu başarısız oldu. Kurtarma yapmak için internet bağlantısı gerekli.</string>
+    <string name="Native_VersionLabel">SÜRÜM:</string>
     <string name="Native_WifiNotActive">WIFI etkin değil</string>
     <string name="abc_action_bar_home_description">Ana ekrana git</string>
     <string name="abc_action_bar_up_description">Yukarı git</string>

@@ -7,6 +7,8 @@
 @-  $
 @-!	!
 @-#(!
+$@)   
+$@)  "
 	*	}`
 00000000-0000-0000-0000-000000000000
 0ED- 
@@ -69,10 +71,11 @@
 18CMorphSetManagerV0
 18CRenderMeshManager
 19CBoneConstraintBase
+19CModelConfigElement
 19CSchemaRegistration
 1bQJ1~
 1DBlend
-1@)k	G
+	1i9I
 	2*	@
 20CPostConnectCallback
 20CRefCountServiceBaseILb1E6CRefMTE
@@ -138,34 +141,46 @@
 27CSchemaUtlVectorManipulatorI10CUtlVectorIj10CUtlMemoryIjiEEjE
 27CSchemaUtlVectorManipulatorI10CUtlVectorIN28CBoneConstraintPoseSpaceBone7Input_tE10CUtlMemoryIS2_iEES2_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorIN29CBoneConstraintPoseSpaceMorph7Input_tE10CUtlMemoryIS2_iEES2_E
+27CSchemaUtlVectorManipulatorI10CUtlVectorIP12CModelConfig10CUtlMemoryIS2_iEES2_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorIP15CBaseConstraint10CUtlMemoryIS2_iEES2_E
+27CSchemaUtlVectorManipulatorI10CUtlVectorIP19CModelConfigElement10CUtlMemoryIS2_iEES2_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorIP22CPhysSurfaceProperties10CUtlMemoryIS2_iEES2_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorIs10CUtlMemoryIsiEEsE
 27CSchemaUtlVectorManipulatorI10CUtlVectorIt10CUtlMemoryItiEEtE
 27CSchemaUtlVectorManipulatorI10CUtlVectorIy10CUtlMemoryIyiEEyE
 27CSchemaUtlVectorManipulatorI23CUtlVectorFixedGrowableI16CSceneObjectDataLm1EES1_E
 28CBoneConstraintPoseSpaceBone
+28CModelConfigElement_UserPick
 28CSchemaRegistration_modellib
 28ISchemaCollectionManipulator
 29CBoneConstraintPoseSpaceMorph
+2	A,9
+2	A+9s
 2A9	y
 2_BONE_IK
 %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f
+2hr?9
 	2	i*
 2	i58h
 2+imx
 2Way_0( %s )
 2Way_1( %s )
+30CModelConfigElement_RandomPick
 30CSchemaRegistration_meshsystem
+31CModelConfigElement_RandomColor
+32CModelConfigElement_SetBodygroup
 33CBaseIntrospectedToKV3TypeManager
+33CModelConfigElement_AttachedModel
 34CKV3Transfer_ResourceLoadInterface
+34CModelConfigElement_SetRenderColor
 34IKV3TransferInterface_ResourceLoad
+36CModelConfigElement_SetMaterialGroup
 37CTypesafeIntrospectedToKV3TypeManagerILy1818520950E15PermModelData_tE
 37CTypesafeIntrospectedToKV3TypeManagerILy440006569334E13CMorphSetDataE
  [%.3f server clamped to %.3f]
-3S)J!
 46CInputLayoutRegistration_g_hSkeletonMeshLayout
 4h&@9
+4h.A9
 4hb@9
 4hf@9
 4hf@9(
@@ -217,9 +232,7 @@ ACTIVITY WEIGHTS
 Activity Weights keys not allocated!
 ACT_NEUTRAL_REF_POSE
 Adding animation group resource in replace animations: %s
-	AE9*
-	AE9J
-	AE9U
+	aE9	
 AE_ACTION_SET_TURN_RATE_SCALE
 AE_BLIND_ZOMBIE_SNIFF
 AE_CL_ADD_PARTICLE_EFFECT_CP
@@ -251,7 +264,6 @@ AE_VORTIGAUNT_ZAP_SHOOT
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
 Agg data %d: %p (%d parts, crc 0x%08X)
-	aH9	
 )AHJ*
 ai_model_info
 AIWalkable
@@ -315,6 +327,7 @@ AnimVRHand_t
 a	O-c
 A	O-C
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
+	Aq9	
 AqqInv
 archive
 Assertion Failed in function %s():
@@ -326,6 +339,8 @@ AssetSystemTest001
  A)	t@9
 ATTACHMENT_INFLUENCE_FLAGS_NONE
 attachment_offset
+attachment_type
+attach_point
 Attempting to get the movement settings from model %s, for which movement settings have not been set.  
 Attempting to get the Skeletal Input settings from model %s, which doesn't have any.  
 attenuation0
@@ -341,6 +356,7 @@ audiosounds
 auto_unragdoll_duration
 B-1HD-
 *-B),5C)_
+B.9$T
 Bad block type for embedded animation data
 Bad block type for embedded physics data
 Bad data block index for embedded animation data (%d,%d,%d)
@@ -404,10 +420,12 @@ bodygroup_choice
 BodyGroupChoice
 bodygroup_driven_morph_list
 bodygroup_name
+body_groups
 body_type
 # bone
 BoneChannel
 BoneConstraintList
+bonemerge
 bone_name
 bone_names
 bouncecolor
@@ -431,6 +449,7 @@ bUpdate
 burst_randomize
 burstRandomize
 burst_scale
+B@yhB
 C-2-@
 cable
 Cables
@@ -459,6 +478,7 @@ CBoneConstraintPoseSpaceBone
 CBoneConstraintPoseSpaceBone::Input_t
 CBoneConstraintPoseSpaceMorph
 CBoneConstraintPoseSpaceMorph::Input_t
+CColorGradient
 CCommand::Tokenize: Encountered command which overflows the argument buffer.. Clamped!
 CCommand::Tokenize: Encountered command which overflows the tokenizer buffer.. Skipping!
 CConstraintSlave
@@ -555,6 +575,16 @@ ClothShapeSphere
 CMaterialDrawDescriptor
 CMemAllocSystemInitialize
 CMesh Cannot create packed input layout, because the bone indices are out of range (0x%X)
+CModelConfig
+CModelConfigElement
+CModelConfigElement_AttachedModel
+CModelConfigElement_RandomColor
+CModelConfigElement_RandomPick
+CModelConfigElement_SetBodygroup
+CModelConfigElement_SetMaterialGroup
+CModelConfigElement_SetRenderColor
+CModelConfigElement_UserPick
+CModelConfigList
 CMorphBundleData
 CMorphConstraint
 CMorphData
@@ -571,6 +601,8 @@ CommandProcedure
 CommandProcedureList
 .comment
 composite
+ConfigAttachedModel
+config_state
 ConfigurationSystem_001
 configvalue.cpp
 CONTENT
@@ -676,7 +708,7 @@ __cxa_pure_virtual
 Cycle or diamond double-reference to '%s'
  D-	(@
 *-D),5E)_
-d6@yc
+d6@yC
 .data
 .data.rel.ro
 DebugTextureInfo001
@@ -699,11 +731,13 @@ Double-register of KV3 conversion (from '%s' to '%s')
 Double-save to Member '%s'
 %d tris
 .dynamic
+DynamicConfigList
 dynamic_interaction
 .dynstr
 .dynsym
 EconItemToolModel_001
 _edata
+EditorDynamicConfig
 .eh_frame
 .eh_frame_hdr
 embedded_animation
@@ -838,6 +872,8 @@ FeWorldCollisionParams_t
 FIELD_BOOLEAN
 FIELD_CHARACTER
 FIELD_CLASSPTR
+FIELD_CMOTIONTRANSFORM
+FIELD_CMOTIONTRANSFORM_WORLDSPACE
 FIELD_COLOR32
 FIELD_CSTRING
 FIELD_CTRANSFORM
@@ -1001,12 +1037,12 @@ g_pMemAlloc
 g_pThreadPool
 gravity
 g_Tier1_BitWriteMasks
+h&?);
 h&@)?
 #H)	}	
 h6iN@y
 h)8Ay)
 h"@9h
-h>A9	
 h"A9a
 h>A9H
 HammerMapLoader001
@@ -1015,18 +1051,21 @@ Has Collision;
 .hash
 hb@9`
 hB@9`
+=hBu9?
 headtype
 health
 health_override
 HELPER_BONE
 HelpSystem_001
+hf@9!
 hf@9h
 hf@9H
 hf@9i
+hiA){QB) 
 hidden
 Hitbox indexing is incorrect for set %s, hitbox %s. Hitboxes will not be setup properly.
 H-@)J	@
-hj48t
+hj48C|
 HostStateMgr001
 hR@y`
 hR@y	
@@ -1034,7 +1073,8 @@ hR@yt
 hurt_me
 hurt_them
 h*@y_
-h&@y)uG
+h&@y)
+h&@y)yG
 <	)@)i*
 *-@i)	
 _i(8j
@@ -1042,6 +1082,7 @@ ib@9(
 ib@9)
 ib@9j
 ib@9l
+ibAy?
 I CUtlLinkedList<int, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short> >::AllocInternal(bool) [T = int, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int, CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int>, unsigned int> >::NewNode(const T *) [T = CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, I = unsigned int, L = CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int>, unsigned int>]
 I CUtlRBTree<CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
@@ -1071,6 +1112,7 @@ ikrig
 IKRigBiped
 IKRigBug
 IKRigSimple
+i*?)m
 impacthard
 impactHardThreshold
 impactsoft
@@ -1128,8 +1170,7 @@ i)xhR@
 *i.xi>@yj:
 i>@yh
 iy*xi
-J78t 
-j(8	i
+j2?)?
 J-cb@
 J-dj@
 JEIJJ}
@@ -1158,7 +1199,6 @@ JointMotion_t
 *k2@y
 K`8B@
 K`8c@
-	!K9	
 	KB8#
 KeyValueCache001
 KeyValuesSystem
@@ -1226,6 +1266,7 @@ LowerEyelid(
 lowprecisionuv
 lowprecisionuv1
 LrwcE
+m_aAngOffset
 m_anchor
 m_AnimStrayRadii
 m_ankleBoneName
@@ -1234,6 +1275,7 @@ mapbuilder.occluder
 MapListService_001
 master_morph_weight
 MATCHFRAMEWORK_001
+material_group
 materialgroup_driven_morph_list
 materialgroup_name
 MaterialGroup_t
@@ -1251,7 +1293,9 @@ materialsystem2
 MaterialUtils_001
 matrix3x4a_t
 matrix3x4_t
+m_AttachmentName
 m_attachments
+m_AttachmentType
 m_Attenuation0
 m_Attenuation1
 m_Attenuation2
@@ -1267,6 +1311,7 @@ Max( %s, %s )
 maxVerticesPerHull
 )mB9_
 )mB9i
+m_bAdditive
 m_bApplyMinForce
 m_baseNameHash
 m_bbox
@@ -1274,6 +1319,7 @@ m_bCacheAttempted
 m_bCacheOk
 m_bCanBatchWithDynamicShaderConstants
 m_bCastShadows
+m_bClamp
 m_bDisableChild
 m_bDisableOperator
 m_bDoBonesOrientAlongPositiveX
@@ -1293,6 +1339,8 @@ m_bHasBakedLightingFromVertexStream
 m_bHasCullingData
 m_bHasPerInstanceBakedLightingData
 m_bHidden
+m_bHideMaterialGroupInTools
+m_bHideRenderColorInTools
 m_bIgnoreRotation
 m_bindPose
 m_bInfluenceRootTransform
@@ -1303,6 +1351,7 @@ m_bIsNotMatchedToMaterial
 m_bIsOccluder
 m_bLocalSpace
 !m_bNeedsSort
+m_BodyGroupsHiddenInTools
 m_bOffsetExistingPos
 m_Bone
 m_boneFlexDrivers
@@ -1332,6 +1381,7 @@ m_bScaleInitialRange
 m_bScaleInitialValue
 m_bScalePerParticle
 m_bSelected
+m_bTopLevel
 m_bTrailBias
 m_bTranslationOnly
 m_bulletImpact
@@ -1339,6 +1389,8 @@ m_bundleDatas
 m_bundleTypes
 m_bUseCompressedNormalTangent
 m_bUseHighestEndCP
+m_bUserSpecifiedColor
+m_bUserSpecifiedMaterialGroup
 m_bUseShadowFastPath
 m_bUsesIndexedBakedLighting
 M-bv@
@@ -1348,6 +1400,7 @@ m_capsules
 m_Capsules
 m_ChainData
 m_Children
+m_Choices
 MClassHasCustomAlignedNewDelete
 m_CollisionAttributeIndices
 m_collisionAttributes
@@ -1360,6 +1413,8 @@ m_ColorScale
 m_components
 m_ConeAxis
 m_ConeCutoff
+m_ConfigName
+m_Configs
 m_constraints
 m_constraints2
 m_ControlRigData
@@ -1401,6 +1456,8 @@ m_DynNodeVertexSet
 m_Edges
 m_eHand
 m_elasticity
+m_ElementName
+m_Elements
 m_elems
 m_embeddedKeyvalues
 memcmp
@@ -1411,6 +1468,7 @@ mempool.cpp
 memset
 m_EndEffectorBone
 m_EndEffectorTargetBone
+m_EntityClass
 m_eRbfType
 mesh_calculate_curvature_smooth_invert
 mesh_calculate_curvature_smooth_pass_count
@@ -1475,6 +1533,7 @@ m_flBaseMinUp
 m_flBaseStiffness
 m_flBaseUpFriction
 m_flBiasParameter
+m_flBindPoseDirectionMS
 m_flClusterCooldown
 m_flClusterCooldownMax
 m_flClusterCooldownMin
@@ -1493,6 +1552,7 @@ m_flDefaultVelAirDrag
 m_flDefaultVelQuadAirDrag
 m_flDefaultVelRodAirDrag
 m_flDefaultVolumetricSolveAmount
+m_flDuration
 m_flEmissionDuration
 m_flEmissionScale
 m_flEmitRate
@@ -1506,6 +1566,7 @@ m_flFalloff
 m_flFingerScaleRatio
 m_flFingerWeight
 m_flFogContributionStength
+m_flFootLength
 m_fLifespanScaleExp
 m_flInertiaScale
 m_flInitFromKilledParentParticles
@@ -1555,6 +1616,7 @@ m_flPitchBounce
 m_flPitchDamping
 m_flPitchFriction
 m_flPitchStiffness
+m_flPosition
 m_flPrecomputedMaxRange
 m_flProgression
 m_flQuadVelocitySmoothRate
@@ -1567,12 +1629,14 @@ m_flRandomMax
 m_flRandomMin
 m_flRFactor
 m_flRodVelocitySmoothRate
+m_flRotationOffset
 m_flScalePerParentParticle
 m_flShadowCascadeDistance
 m_flSkinWidth
 m_flSphereRadius
 m_flSplayMaxAngle
 m_flSplayMinAngle
+m_flStanceDirectionOffsetMS
 m_flStartTime
 m_flStartTimeMax
 m_flStaticImpactVolume
@@ -1613,7 +1677,9 @@ m_GoalDamping
 m_goalOrientation
 m_goalPosition
 m_GoalStrength
+m_Gradient
 m_Gravity
+m_GroupName
 m_hardnessFactor
 m_hardThreshold
 m_hardVelocityThreshold
@@ -1622,6 +1688,7 @@ m_hingeAxis
 m_HitBoxes
 m_hitboxsets
 m_HitBoxSets
+m_hModel
 m_hSnapshot
 m_Hull
 m_hulls
@@ -1644,6 +1711,7 @@ m_InitPose
 m_inputList
 m_inputValue
 Min( %s, %s )
+m_InstanceName
 m_intAttributes
 m_InteractAs
 m_InteractAsStrings
@@ -1676,6 +1744,7 @@ m_LocalRotation
 m_lodGroupSwitchDistances
 m_MassProperties
 m_material
+m_MaterialGroupName
 m_materialGroups
 m_materialName
 m_materials
@@ -1711,6 +1780,7 @@ m_nBoneWeightCount
 m_nBoxRigidIndex
 m_nChild
 m_nChildren
+m_nChoice
 m_nClusterSizeMax
 m_nClusterSizeMin
 m_nCollisionAttribute
@@ -1721,11 +1791,14 @@ m_nCollisionSphereInclusiveCount
 m_nCollisionSphereIndex
 m_nControlPoint
 m_nControlPointNumber
+m_nCP
+m_nCPField
 m_nD3DSemanticIndex
 m_nDefaultMeshGroupMask
 m_nDynamicNodeFlags
 m_nEdge
 m_nEncodingType
+m_NestedElements
 MNetworkBitCount
 MNetworkChangeCallback
 MNetworkEncoder
@@ -1847,6 +1920,12 @@ MODEL_BONE_FLEX_TZ
 _modelbuilder_phys_%i.vphys
 Model combiner: too many vertex sets (%d)! Clamping to %d
 ModelCompile/UseShadowFastPathHeuristic
+MODEL_CONFIG_ATTACHMENT_BONEMERGE
+MODEL_CONFIG_ATTACHMENT_BONE_OR_ATTACHMENT
+MODEL_CONFIG_ATTACHMENT_COUNT
+MODEL_CONFIG_ATTACHMENT_INVALID
+MODEL_CONFIG_ATTACHMENT_ROOT_RELATIVE
+ModelConfigAttachmentType_t
 Model conversion: %d conversions in %.3fsec (%.3fms each)
 model.cpp
 model_default_preview_sequence_name
@@ -1870,6 +1949,7 @@ modeldoc23
 modeldoc24
 modeldoc25
 modeldoc26
+modeldoc27
 modeldoc3
 modeldoc4
 modeldoc5
@@ -1880,6 +1960,7 @@ modeldoc9
 ModelDocUtils001
 @model_dump_convert_info
 modellib
+model_name
 MODEL_PROCESSING_SCRIPT_INTERFACE_001
 MODEL_PROCESSING_SERVICES_INTERFACE_001
 models/
@@ -1953,6 +2034,7 @@ m_Phi
 m_physics
 m_Plane
 m_Planes
+m_pModelConfigList
 m_pName
 m_pParent
 m_PreEmissionOperators
@@ -2026,6 +2108,7 @@ m_Springs
 m_sSurfaceProperty
 m_stanceCycle
 m_sTargetMorph
+m_Stops
 m_strain
 m_strides
 m_stringAttributes
@@ -2109,6 +2192,7 @@ m_vLiteralValue
 m_vMassCenterOverride
 m_vMax
 m_vMaxBounds
+m_vMidpointPositionMS
 m_vMin
 m_vMinBounds
 m_vNormal
@@ -2118,7 +2202,6 @@ m_vOrthographicAreas
 m_vPoint0
 m_vPoint1
 m_vSplayHingeAxis
-m_vStanceDirectionMS
 m_vStancePositionMS
 m_vTintColor
 m_vTipOffset
@@ -2143,6 +2226,7 @@ N37CTypesafeIntrospectedToKV3TypeManagerILy1818520950E15PermModelData_tE28IKV3Re
 N37CTypesafeIntrospectedToKV3TypeManagerILy440006569334E13CMorphSetDataE26IKV3ResourceAllocatorUtilsE
 N37CTypesafeIntrospectedToKV3TypeManagerILy440006569334E13CMorphSetDataE28IKV3ResourceDeallocatorUtilsE
 "N$4$n
+	!n9	
 nav_attribute_avoid
 nav_data
 nBeginDynamic
@@ -2222,6 +2306,7 @@ origin_max_delta
 origin_relative
 outerconeangle
 overlay
+($?)P
 P-!("
 p6iR@y
 "pA3QuW
@@ -2308,6 +2393,7 @@ Plat_GetCPUFrequency
 Plat_GetEnv
 Plat_GetThreadIndex
 Plat_IsInDebugSession
+Plat_NeedsLowFragmentation
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_UUIDFromString
 Plat_UUIDToString
@@ -2322,10 +2408,15 @@ POSE_SPACE_MORPH
 position
 POSITION
 PostProcessingSystem_001
-?posxyz
+posxyz
 PosXYZ
 precomputedmaxrange
 preferred_carryangles
+PreviewAttachmentModel
+PreviewBoneAttachedModel
+PreviewBoneMergedModel
+PreviewPreset
+PreviewPresetList
 Print model load-time conversion info
 priority
 projectedDecal
@@ -2354,7 +2445,6 @@ PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
 qAdjust
 QAngle
-	qC9I
 Qi"A)`
 qJT-s
 Quaternion
@@ -2366,6 +2456,8 @@ radius0
 radius1
 ragdoll
 raise
+RandomFloat
+RandomInt
 RayTracingEnvironment::RefineNode
 RayTracingEnvironment::RefineNodeJob
 recenter_on_parent_bone
@@ -2373,6 +2465,8 @@ RegisterConfigValue: Unknown error constructing config value "%s"!
 RegisterStringToken
 .rela.dyn
 .rela.plt
+relative_angles
+relative_origin
 Release
 remapping vertex %d[w%d] invalid: %d->? >= %d
 remapping vertex %d[w%d] invalid: %d->%d >= %d
@@ -2447,6 +2541,8 @@ schemaclassinfo.cpp
 SchemaSystem_001
 SchemaTestExternal_One_001
 SchemaTestExternal_Two_001
+%s_color
+%s (Color)
 scraperough
 scrapeRoughThreshold
 scrapesmooth
@@ -2476,6 +2572,8 @@ Sin( %s )
 size0
 size1
 SkeletonBoneBounds_t
+%s (Material)
+%s_matgrp
 s off
 SoundOpSystem001
 SoundOpSystemEdit001
@@ -2494,6 +2592,7 @@ Source2Host001
 Source2Server001
 Source2ServerSerializers002
 source_filename
+@spawn
 spawn_motion_disabled
 speeds
 Splitting huge triangles (%d verts,%d tris) -> (%d verts,%d tris), %d splits
@@ -2612,6 +2711,7 @@ Unsupported binary encoding id.
 Unsupported text encoding id.
 UPDATE_STRING_TOKEN_DATABASE
 UpperEyelid( 
+use_additional_offset
 useMotionDamping
 usemtl initialShadingGroup
 UserInfoChangeService_001
@@ -2711,6 +2811,7 @@ vpcf21
 vpcf22
 vpcf23
 vpcf24
+vpcf25
 vpcf3
 vpcf4
 vpcf5
@@ -2831,10 +2932,12 @@ _ZdlPv
 z:K8CFmtStrNILi256ELb0EE
 _ZN13CBufferString10FixSlashesEc
 _ZN13CBufferString11ToLowerFastEi
+_ZN13CBufferString12AppendFormatEPKcz
 _ZN13CBufferString12SetExtensionEPKc
 _ZN13CBufferString13AppendFormatVEPKcSt9__va_list
 _ZN13CBufferString13FixupPathNameEv
 _ZN13CBufferString5PurgeEi
+_ZN13CBufferString6FormatEPKcz
 _ZN13CBufferString6InsertEiPKcib
 _ZN13CBufferString8RemoveAtEii
 _ZN16CThreadSemaphoreD1Ev

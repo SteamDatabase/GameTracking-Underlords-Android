@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Native_AppOutOfDate">App Store에 새로운 버전이 출시되었습니다. 플레이하려면 온라인 상태여야 합니다.</string>
+    <string name="Native_AppOutOfDateOpt">새로운 버전의 앱 이용 가능</string>
+    <string name="Native_AppOutOfDateReq">새로운 버전의 앱을 이용할 수 있습니다. 온라인으로 플레이하려면 필요합니다.</string>
     <string name="Native_AppUpdateTitle">새로운 버전 출시</string>
     <string name="Native_Cancel">취소</string>
     <string name="Native_ConfirmCellular">%dMB의 콘텐츠 다운로드를 준비하는 중입니다. 셀룰러 데이터를 사용해 다운로드할까요?</string>
     <string name="Native_ConfirmDownload">%dMB의 콘텐츠를 다운로드할까요?</string>
     <string name="Native_ContactingServer">서버 접속 중</string>
+    <string name="Native_DownloadAppUpdate">최신 앱 다운로드</string>
     <string name="Native_DownloadError">오류가 발생했습니다</string>
     <string name="Native_DownloadErrorDownload">콘텐츠 파일을 다운로드할 수 없음</string>
     <string name="Native_DownloadErrorManifest">매니페스트를 다운로드할 수 없음</string>
+    <string name="Native_DownloadErrorQueueDownload">콘텐츠 파일을 다운로드할 대기열에 들어가지 못했습니다</string>
     <string name="Native_DownloadErrorStorage">저장 공간 부족</string>
     <string name="Native_DownloadErrorUnknown">알 수 없는 오류</string>
     <string name="Native_DownloadOverMobileLabel">모바일 네트워크로 다운로드하시겠습니까?</string>
@@ -17,6 +21,7 @@
     <string name="Native_DownloadUpdate">마지막 업데이트 다운로드:</string>
     <string name="Native_DownloadingContent">콘텐츠 다운로드 중</string>
     <string name="Native_Exit">종료</string>
+    <string name="Native_FileSystemFailed">필수 파일 시스템 작동이 실패했습니다. 앱을 다시 시작해 주세요. 본 메시지가 계속 나타난다면 앱을 재설치해 주시기 바랍니다.</string>
     <string name="Native_LoadingGame">게임을 불러오는 중...</string>
     <string name="Native_ManifestDownloaded">매니페스트 다운로드됨</string>
     <string name="Native_NeedsStoragePermissionsToContinueText">게임 콘텐츠를 설치하려면, 기기의 저장 장치를 이용할 수 있어야 합니다. 설정에서 사용 권한을 활성화해 주세요.</string>
@@ -26,10 +31,14 @@
     <string name="Native_OK">확인</string>
     <string name="Native_PermissionsText">Dota Underlords가 이 기기의 외부 저장 장치에 게임 콘텐츠를 저장하려면 권한이 필요합니다.</string>
     <string name="Native_PermissionsTitle">Dota Underlords 권한</string>
+    <string name="Native_PlayAppOutOfDateOpt">업데이트하지 않고 플레이</string>
+    <string name="Native_PlayAppOutOfDateReq">업데이트하지 않고 플레이합니다. 온라인으로 플레이할 수 없습니다.</string>
     <string name="Native_PlayOffline">업데이트 없이 플레이(오프라인)</string>
     <string name="Native_PreparingToDownload">다운로드를 준비하는 중...</string>
     <string name="Native_PressOkCheckWifi">확인을 누르면 와이파이를 검사합니다.</string>
     <string name="Native_Settings">설정</string>
+    <string name="Native_UpdateFailed">콘텐츠 업데이트 실패</string>
+    <string name="Native_UpdateFailed_ConnectToTheInternet">이전 업데이트 동작이 실패했습니다. 복구하려면 인터넷 연결이 필요합니다.</string>
     <string name="Native_VersionLabel">버전:</string>
     <string name="Native_WifiNotActive">와이파이 비활성화</string>
     <string name="abc_action_bar_home_description">홈 탐색</string>

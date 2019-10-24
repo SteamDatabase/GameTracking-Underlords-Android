@@ -58,6 +58,7 @@
 17CGlobalThreadPool
 17CPooledFunctorJob
 18CUtlCharConversion
+18CUtlJSONConversion
 18ITSHashConstructorI8CEventIdE
 18ITSHashConstructorIN21CUtlStringTokenSystem21CTokenStringAndSourceEE
 19CDmSymbolTableLarge
@@ -83,11 +84,10 @@
 26CDefaultKeyValuesErrorSpew
 26ICommandCompletionCallback
 2) channel names: name1 name2 ...           // Lists channels by name.
-2ij(8?
+2ij(8
 2+imx
 2?"!k`
 2ninx
-2tj)8
 30CAsyncScheduledFunctionManager
 %-32s    
  [%.3f server clamped to %.3f]
@@ -399,6 +399,7 @@ GetCPUInformation
 GetCStringCharConversion
 GetDmElementTypeSymbolMap
 GetJobManualEventFromPool
+GetJSONCharConversion
 GetQuantizedFloatEncoderByIndex
 GetQuantizedFloatEncodersSharingIndex
 GlobPool
@@ -434,6 +435,7 @@ hj)8kj*8
 hJD9*
 Hkx8(
 HostStateMgr001
+hr@y`
 )hx8?)
 h*@y_
 	*I}`
@@ -495,8 +497,10 @@ ITALIAN
 i>@yh
 !@i)yj
 j58hf@9(
-j88"%
+j88' 
+j(8ak
 j)8hii8
+j(8'J
 j(8S	
 J!@9_
 JAJJ)
@@ -686,6 +690,7 @@ ptr( 0x%p )
 ../public/tier1/utlfixedmemory.h
 ../public/tier1/utllinkedlist.h
 ../public/tier1/utlrbtree.h
+	Q@9	
 qangle
 Qi"A)`
 QueuedLoaderVersion001
@@ -735,18 +740,12 @@ ResourceManifestRegistry001
 ResourceSystem013
 ReturnJobManualEventToPool
 R	h(8	
-Rhj)8
-Rhj*8
 Rhjh8
 Rhjh8(
-Rij(8
-Rjj(8H)
-R(kh8
-Rkj)8jj(8
+R(ih8
 rnd_down
 rnd_up
 .rodata
-Ruj(8
 RunThreadPoolTests
 RunTSListTests
 RunTSQueueTests
@@ -884,6 +883,7 @@ ThreadIsProcessActive
 ThreadJoin
 ThreadMultiWait
 ThreadMultiWaitObjectSetCreate
+ThreadMultiWaitObjectSetDestroy
 ThreadPoolTest:     Distribute
 ThreadPoolTest:     Distribute NO Sleep
 ThreadPoolTest:         %d threads -- %d (%d) jobs processed in %fms, %fms to suspend (%f/%f) [ (main) %d, %d, %d, %d, %d, %d, %d, %d, %d]

@@ -29,6 +29,7 @@
 19CSchemaRegistration
 1bQJ1~
 1DBlend
+2	!09
 20CPostConnectCallback
 20CRefCountServiceBaseILb1E6CRefMTE
 20CResourceConstructor
@@ -55,8 +56,9 @@
 28ICodeResourceManifestManager
 29CRD_RegisterResourceDataUtils
 29IRD_RegisterResourceDataUtils
+2	!/9s
 2	h(8H
-2hb99
+2Hs,9
 30IAsyncResourceDataRequestOwner
 32CSchemaRegistration_resourcefile
 34CSchemaRegistration_resourcesystem
@@ -68,7 +70,7 @@
 4hf@9
 4hf@9(
 4h&N)
-4iRjy
+4hRjy
 4iRjy?
 4i*@y
 4@y	(
@@ -84,6 +86,7 @@
 6hb@9
 6hbp9
 6h"@y
+6Ysl9
 7hb@9h
 7hf@9
 7hf@9(
@@ -181,15 +184,17 @@ AnimStartLoop
 AnimSubtract
 anonymous 
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
-	Aq9	
 archive
 AssertMsg_ConditionFailed
 AssetBrowserSystem_001
 AssetPreviewSystem_001
 AssetSystem001
 AssetSystemTest001
+	At9	
 attachment
 attachment_offset
+attachment_type
+attach_point
 Attempted to register duplicate manifest name %s!
 attenuation0
 attenuation1
@@ -234,6 +239,7 @@ blockLOS
 BodyGroup
 BodyGroupChoice
 body_type
+bonemerge
 bone_name
 bone_names
 bouncecolor
@@ -339,10 +345,11 @@ CommandProcedure
 CommandProcedureList
 .comment
 composite
+ConfigAttachedModel
 ConfigurationSystem_001
 configvalue.cpp
 CONTENT
-?CONTENTROOT
+CONTENTROOT
 control_point
 ConVarRef %s doesn't point to an existing ConVar
 ConVar(%s) defined with infinite float value (%s)
@@ -392,7 +399,7 @@ CResourcePointer
 CResourceString
 CResourceSystem::BlockingFinishAllCurrentlyLoadingManifests is blocking
 CResourceSystem::FindOrCreateProceduralResource: Passed in an empty name for a procedural resource!
-CResourceSystem::ForceSynchronizationAndBlockUntilManifestLoaded blocked for %.3f ms on %s
+CResourceSystem::ForceSynchronizationAndBlockUntilManifestLoaded blocked for %.3f ms on %s [%s]
 CResourceSystem Init
 CResourceSystem PreShutdown()
 CResourceSystem Shutdown
@@ -460,11 +467,13 @@ Double-register of KV3 conversion (from '%s' to '%s')
 %d Schema references (Most likely a resource referring to another resource)
 %d Strong handle references (Still holding onto a CStrongHandle somewhere)
 .dynamic
+DynamicConfigList
 dynamic_interaction
 .dynstr
 .dynsym
 EconItemToolModel_001
 _edata
+EditorDynamicConfig
 .eh_frame
 .eh_frame_hdr
 emitFromWorld
@@ -595,7 +604,7 @@ HostStateMgr001
 hurt_me
 hurt_them
 **hx)
-h"@y	
+h"@y)
 h*@y_
 I)!|@
 i6@yh
@@ -677,9 +686,8 @@ IQuickTime001
 is_debris
 IsResourceManifestGroupKnown: Manifest group name is empty or null
 i"@yh
-J38I@
-J68<A
 j6@y_
+J78aA
 JEIJJ}
 JIIJJ}
 jj(8(
@@ -690,11 +698,13 @@ jZjy(
 keepall
 keep_all_records
 KeyValueCache001
+KeyValuesSystem
 K)@)j
 !)kl	
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
 kv3format_manager.cpp
 kV*yA
+	!l9I
 last_sniff
 Leaked reference to ERROR resource for type %s!
 Leaked resource: Refcount %s for %s%s resource "%s" (%016llX).  This may result in a crash.
@@ -822,6 +832,7 @@ m_flClusterRefireTime
 m_flClusterRefireTimeMax
 m_flClusterRefireTimeMin
 m_flClusterSize
+m_flDuration
 m_flEmissionDuration
 m_flEmissionScale
 m_flEmitRate
@@ -879,6 +890,8 @@ m_nClusterSizeMax
 m_nClusterSizeMin
 m_nControlPoint
 m_nControlPointNumber
+m_nCP
+m_nCPField
 MNetworkBitCount
 MNetworkChangeCallback
 MNetworkEncoder
@@ -931,6 +944,7 @@ modeldoc23
 modeldoc24
 modeldoc25
 modeldoc26
+modeldoc27
 modeldoc3
 modeldoc4
 modeldoc5
@@ -939,6 +953,7 @@ modeldoc7
 modeldoc8
 modeldoc9
 ModelDocUtils001
+model_name
 MODEL_PROCESSING_SCRIPT_INTERFACE_001
 MODEL_PROCESSING_SERVICES_INTERFACE_001
 m_Operators
@@ -972,7 +987,6 @@ N24CFieldPathHuffmanEncoder12InternalNodeE
 N24CFieldPathHuffmanEncoder5INodeE
 N24CFieldPathHuffmanEncoder8LeafNodeE
 "N$4$n
-	!n9	
 nav_attribute_avoid
 nav_data
 NetworkClientService_001
@@ -1067,6 +1081,11 @@ point1
 PostProcessingSystem_001
 precomputedmaxrange
 preferred_carryangles
+PreviewAttachmentModel
+PreviewBoneAttachedModel
+PreviewBoneMergedModel
+PreviewPreset
+PreviewPresetList
 priority
 prop_data
 PropertyEditorSystem_001
@@ -1079,8 +1098,8 @@ pthread_mutex_destroy
 ../public/tier1/utlsortvector.h
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
+	!q9	
 QAngle
-	Qi9I
 Qi"A)`
 Qi^*yi
 Quaternion
@@ -1100,6 +1119,8 @@ RegisterConfigValue: Unknown error constructing config value "%s"!
 RegisterStringToken
 .rela.dyn
 .rela.plt
+relative_angles
+relative_origin
 Release
 RemoveBoneAndChildren
 RenderDevice003
@@ -1147,6 +1168,7 @@ resourcesystem
 ResourceSystem013
 resourcesystem.cpp
 Resource system profile mode %s
+ResourceSystem/SpewBlockingLoads
 -resource_system_verbose
 ResourceSystemWaitingForFutureWork
 RESOURCE_TYPE_NONE
@@ -1156,6 +1178,7 @@ rhj)8@
 rhjh8
 rhjh8(
 Rhjh8(
+rhjh8h
 	RKS_DEFAULT = 
 RKS_DEFAULT
 	RKS_DISABLE_GROUP_CLEARING = 
@@ -1323,6 +1346,7 @@ Unsupported text encoding id.
 UPDATE_STRING_TOKEN_DATABASE
 Usage: resource_leaks <resource_name>
 Usage: resource_repeated_reload <count> <resource_name>
+use_additional_offset
 UserInfoChangeService_001
 utlbuffer.cpp
 utlstring.cpp
@@ -1404,6 +1428,7 @@ vpcf21
 vpcf22
 vpcf23
 vpcf24
+vpcf25
 vpcf3
 vpcf4
 vpcf5
@@ -1452,6 +1477,7 @@ V_UTF16ToUTF8
 V_vsnprintf
 V_vsnprintfSize
 V_vsnprintfWarnTrunc
+V_wcstoi64
 vwnod
 vwrld
 (WA)	

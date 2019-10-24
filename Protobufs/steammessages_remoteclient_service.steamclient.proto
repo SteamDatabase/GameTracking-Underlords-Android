@@ -39,6 +39,13 @@ message CRemoteClient_AllocateRelayServer_Response {
 	optional string relay_server = 1;
 }
 
+message CRemoteClient_AllocateSDR_Request {
+	optional uint32 appid = 1;
+}
+
+message CRemoteClient_AllocateSDR_Response {
+}
+
 message CRemoteClient_SteamBroadcast_Notification {
 	optional fixed64 steamid = 1;
 	optional fixed64 clientid = 2;
@@ -51,6 +58,21 @@ message CRemoteClient_SteamToSteam_Notification {
 	optional fixed64 dst_clientid = 3;
 	optional uint32 secretid = 4;
 	optional bytes encrypted_payload = 5;
+}
+
+message CRemotePlay_SessionStarted_Request {
+	optional uint32 host_account_id = 1;
+	optional uint32 client_account_id = 2;
+	optional uint32 appid = 3;
+	optional int32 device_form_factor = 4;
+}
+
+message CRemotePlay_SessionStarted_Response {
+	optional fixed64 record_id = 1;
+}
+
+message CRemotePlay_SessionStopped_Notification {
+	optional fixed64 record_id = 1;
 }
 
 message CRemotePlayTogether_Notification {
@@ -98,11 +120,20 @@ service RemoteClient {
 	rpc AllocateRelayServer (.CRemoteClient_AllocateRelayServer_Request) returns (.CRemoteClient_AllocateRelayServer_Response) {
 		option (method_description) = "Allocate a UDP relay server for a streaming session";
 	}
+	rpc AllocateSDR (.CRemoteClient_AllocateSDR_Request) returns (.CRemoteClient_AllocateSDR_Response) {
+		option (method_description) = "Allocate SDR resources for an app";
+	}
 	rpc SendSteamBroadcastPacket (.CRemoteClient_SteamBroadcast_Notification) returns (.NoResponse) {
 		option (method_description) = "Broadcast a packet to remote Steam clients";
 	}
 	rpc SendSteamToSteamPacket (.CRemoteClient_SteamToSteam_Notification) returns (.NoResponse) {
 		option (method_description) = "Send a packet to a remote Steam client";
+	}
+	rpc SendRemotePlaySessionStarted (.CRemotePlay_SessionStarted_Request) returns (.CRemotePlay_SessionStarted_Response) {
+		option (method_description) = "Let the server know that we started a Remote Play session";
+	}
+	rpc SendRemotePlaySessionStopped (.CRemotePlay_SessionStopped_Notification) returns (.NoResponse) {
+		option (method_description) = "Let the server know that we stopped a Remote Play session";
 	}
 	rpc SendRemotePlayTogetherPacket (.CRemotePlayTogether_Notification) returns (.NoResponse) {
 		option (method_description) = "Send a Remote Play Together packet to a Steam client";

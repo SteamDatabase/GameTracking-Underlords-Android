@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Native_AppOutOfDate">En ny version er tilgængelig i App Store. Denne kræves for at spille online.</string>
+    <string name="Native_AppOutOfDateOpt">En ny appversion er tilgængelig</string>
+    <string name="Native_AppOutOfDateReq">En ny appversion er tilgængelig. Den er nødvendig for at spille online.</string>
     <string name="Native_AppUpdateTitle">Ny version tilgængelig</string>
     <string name="Native_Cancel">Annuller</string>
     <string name="Native_ConfirmCellular">Forbereder download af %d MB indhold. Fortsæt med at downloade via mobilnetværket?</string>
     <string name="Native_ConfirmDownload">Fortsæt med indholdsdownload på %d MB?</string>
     <string name="Native_ContactingServer">Kontakter server</string>
+    <string name="Native_DownloadAppUpdate">Download seneste app</string>
     <string name="Native_DownloadError">Der opstod en fejl</string>
     <string name="Native_DownloadErrorDownload">Kunne ikke downloade indholdsfil</string>
     <string name="Native_DownloadErrorManifest">Kunne ikke downloade manifest</string>
+    <string name="Native_DownloadErrorQueueDownload">Kunne ikke downloade indholdsfilen</string>
     <string name="Native_DownloadErrorStorage">Der er ikke tilstrækkelig lagerplads</string>
     <string name="Native_DownloadErrorUnknown">Ukendt fejl</string>
     <string name="Native_DownloadOverMobileLabel">Download over det mobile netværk?</string>
     <string name="Native_DownloadOverMobileMessage">Du er ved at download over det mobile netværk. Fortsæt?</string>
     <string name="Native_DownloadTitle">Indholdsopdatering påkrævet:</string>
     <string name="Native_DownloadUpdate">Download seneste opdatering:</string>
-    <string name="Native_DownloadingContent">Downloader indhold</string>
+    <string name="Native_DownloadingContent">DOWNLOADER INDHOLD</string>
     <string name="Native_Exit">Afslut</string>
-    <string name="Native_LoadingGame">Indlæser spil...</string>
+    <string name="Native_FileSystemFailed">En påkrævet filsystemhandling mislykkedes. Genstart appen. Hvis denne fejl fortsætter, skal du prøve at geninstallere appen.</string>
+    <string name="Native_LoadingGame">INDLÆSER SPIL...</string>
     <string name="Native_ManifestDownloaded">Manifest downloadet</string>
     <string name="Native_NeedsStoragePermissionsToContinueText">Vi har brug for adgang til din enheds lager for at installere spilindhold. Gå til \"Indstillinger\" for at slå tilladelserne til.</string>
     <string name="Native_NeedsStoragePermissionsToContinueTitle">Lagertilladelser påkrævet</string>
@@ -26,11 +31,15 @@
     <string name="Native_OK">OK</string>
     <string name="Native_PermissionsText">Dota Underlords kræver tilladelse til at gemme spilindhold på denne enheds eksterne lager.</string>
     <string name="Native_PermissionsTitle">Dota Underlords-tilladelser</string>
+    <string name="Native_PlayAppOutOfDateOpt">Spil uden at opdatere</string>
+    <string name="Native_PlayAppOutOfDateReq">Spil uden at opdatere. Onlinespil er slået fra.</string>
     <string name="Native_PlayOffline">Spil uden at opdatere (offline)</string>
     <string name="Native_PreparingToDownload">Forbereder download...</string>
     <string name="Native_PressOkCheckWifi">Tryk på OK for at søge efter wi-fi.</string>
     <string name="Native_Settings">Indstillinger</string>
-    <string name="Native_VersionLabel">Version:</string>
+    <string name="Native_UpdateFailed">Indholdsopdatering mislykkedes</string>
+    <string name="Native_UpdateFailed_ConnectToTheInternet">En tidligere opdatering mislykkedes og har brug for internetforbindelse for at gendanne.</string>
+    <string name="Native_VersionLabel">VERSION:</string>
     <string name="Native_WifiNotActive">Wi-fi ikke aktivt</string>
     <string name="abc_action_bar_home_description">Naviger hjem</string>
     <string name="abc_action_bar_up_description">Naviger op</string>

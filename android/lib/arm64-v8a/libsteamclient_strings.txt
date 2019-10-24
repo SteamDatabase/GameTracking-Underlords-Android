@@ -118,7 +118,6 @@ $0$1$2 $3 = $4
 06`N@
 06`R@
 06u.@
-06u"@
 06u*@
 06u&@
 06vB@
@@ -131,7 +130,6 @@ $0$1$2 $3 = $4
 07h	@7
 *07h+87
 07H	87	
-07h	87h
 07hB@9
 07hB@9h
 	07hB@9H
@@ -230,6 +228,7 @@ $0rpc $1(.$2) returns (.$3)
 "0x" must be followed by hex digits.
 0x%p, 
 0x%x 0x%x
+0@y	(B)
 (0'yX
 *0z,x,Zixm}
 100B;
@@ -406,8 +405,7 @@ $0rpc $1(.$2) returns (.$3)
 +'+1+3+=+?+K+O+U+i+m+o+{+
 13ServerMessage
 13VideoBookmark
-14:59:31
-1.4.9.1088
+14:55:52
 14CBaseClientJob
 14CChatRoomState
 14CClanEventData
@@ -842,7 +840,6 @@ $0rpc $1(.$2) returns (.$3)
 -1@9_
 )1@9)
 *1(@9#$@9E
-1(9?A(9S
 19CAdapterSteamUGC001
 19CAdapterSteamUGC002
 19CAdapterSteamUGC003
@@ -893,6 +890,7 @@ $0rpc $1(.$2) returns (.$3)
 19CSTAR_KeyValueQuery
 19CSteam3StreamParser
 19CUtlNoEscConversion
+1@9H5
 19IAppUpdateDepotsJob
 19IAsyncFileIOHandler
 19IClientDepotBuilder
@@ -942,6 +940,7 @@ $0rpc $1(.$2) returns (.$3)
 1CRemoteClient_UnregisterStatusUpdate_Notification
 1Data for each of the revisions that this item has
 1d[O~
+	1E9	
 %.1f pct of time accounted for
 1FR*1~	
 !@1h*
@@ -964,8 +963,7 @@ _!@1J
 1The retrieved hits will be filtered to this type.
 1Unregister for status updates with a Steam client
 &>1;y
-1@y!)
-1@ya)
+1@yA)
 // 1) You must specify login credentials of an account that has been associated to your business site.
 1Znxr}
 	2 	 
@@ -1060,7 +1058,7 @@ _!@1J
 20PublishedFileDetails
 20SteamClientJobLambdaIZN12CClientVideo12SendGameDataEvE3$_0E
 2?!@1
-2	169AF
+2	1;9aF
 21CAdapterSteamInput001
 21CAdapterSteamMusic001
 21CAdapterSteamUtils001
@@ -1141,6 +1139,7 @@ _!@1J
 21IRegistryInterfaceMap
 21ISteamGameCoordinator
 21ISteamGameServerStats
+21ISteamNetworkingUtils
 21IWorkThreadPoolSignal
 2)252Y2]2c2k2o2u2w2{2
 22CAdapterSteamClient006
@@ -1594,6 +1593,7 @@ _!@1J
 26SiteServerUI_Login_Request
 26SiteServerUI_Quit_Response
 27038
+2	!79
 27CAdapterSteamHTMLSurface001
 27CAdapterSteamHTMLSurface002
 27CAdapterSteamHTMLSurface003
@@ -1673,6 +1673,7 @@ _!@1J
 27CParties_JoinParty_Response
 27.CPlayer_GetFriendsAppsActivity_Response.AppFriendsInfoBa
 27.CPlayer_GetFriendsAppsActivity_Response.AppFriendsInfoBe
+27.CPlayer_GetFriendsAppsActivity_Response.AppFriendsInfoBE
 27.CPlayer_GetFriendsAppsActivity_Response.AppFriendsInfoBm
 27.CPlayer_GetFriendsAppsActivity_Response.AppFriendsInfoBT
 27.CPlayer_GetFriendsAppsActivity_Response.AppFriendsInfoBW
@@ -1879,11 +1880,10 @@ _!@1J
 29IDepotDownloadCallbackHandler
 29IHTTPStreamingResponseHandler
 29PublishedFileDetails_VoteData
-2	a59aa
-2*A(9
+2	a59
+2	a!9
+2	a*9
 2	!A9
-2	A-9
-2	a%9`h
 2A.CChatUsability_ClientUsabilityMetrics_Notification.VoiceSettings
 2A.CMsgClientUCMEnumerateUserPublishedFilesResponse.PublishedFileId
 2(aNa
@@ -1920,6 +1920,8 @@ _!@1J
 2;.CChatUsability_ClientUsabilityMetrics_Notification.Metrics
 2<.CChatUsability_ClientUsabilityMetrics_Notification.Settings
 2;.CChatUsability_ClientUsabilityMetrics_Notification.UIState
+2$.CClientMetrics_AppInterfaceCreation
+2(.CClientMetrics_AppInterfaceMethodCounts
 2,.CCloud_BeginHTTPUpload_Response.HTTPHeadersB4
 2/.CCloud_ClientFileDownload_Response.HTTPHeadersB4
 2'.CCloud_EnumerateUserApps_Response.Apps
@@ -2078,12 +2080,12 @@ _!@1J
 2Get build status for previously uploaded depot ZIP
 2Gets a list of server SteamIDs given a list of IPs
 2h2:9
-2h6:9
+2h6:9Ea
 2	h(8
+2h#!9
 2hB@9h
 2H.CFriendsMessages_GetActiveMessageSessions_Response.FriendMessageSession
-2hF:9ie
-2hF:9Ie
+2hF:9
 2HH=HHzu
 2HHH=Hzu
 2HH==Hzu
@@ -2119,8 +2121,8 @@ _!@1J
 2J(NQj(N
 2?k58y
 2?k78
-2?k78yY
-2?k885w
+2?k78+
+2?k88
 2key to search for in JSON path format (SQL subset)
 2kii8l}C
 2Kp@9
@@ -2151,7 +2153,6 @@ _!@1J
 2#.PublishedFileDetails.PlaytimeStats
 2PYoxq}
 2?!@q	=
-2	q59
 2	QA9
 2Q.CChatUsability_ClientUsabilityMetrics_Notification.UIState.CategoryCollapseState
 // 2) Run the server, using the accountname and password from step 1.
@@ -2162,6 +2163,7 @@ _!@1J
 *2t@90x@9
 2User has picked a resolution for a Cloud conflict.
 2v&A)
+2V	F9H)F9?E
 2Whether the user allows notification for this app."v
 2yf$9hb$9{j$9W
 2z&A)
@@ -2426,6 +2428,7 @@ _!@1J
 3%3+3/353A3G3[3_3g3k3s3y3
 33CAdapterSteamNetworkingSockets003
 33CAdapterSteamNetworkingSockets004
+33CAdapterSteamNetworkingSockets005
 33CAPIJobDownloadLeaderboardEntries
 33CAPIJobInGameChatJoinClanChatRoom
 33CAPIJobSetUserPublishedFileAction
@@ -2454,6 +2457,7 @@ _!@1J
 33CClientJobGetStoreTagLocalization
 33CClientJobMatchmakingLobbyChatMsg
 33CClientJobPublishedFileSubscribed
+33CClientJobRecordRemotePlayStarted
 33CClientJobRedeemGuestPassResponse
 33CClientJobSetClientAppUpdateState
 33CClientJobSharedLibraryLockStatus
@@ -2505,6 +2509,7 @@ _!@1J
 33CPublishedFile_GetDetails_Request
 33CPublishedFile_QueryFiles_Request
 33CPublishedFile_Subscribe_Response
+33CRemoteClient_AllocateSDR_Request
 33CRemoteClient_Online_Notification
 33CRunWindowsCompatInstallScriptJob
 33CShader_GetBucketManifest_Request
@@ -2594,6 +2599,8 @@ _!@1J
 34CPublishedFile_QueryFiles_Response
 34CPublishedFile_RemoveChild_Request
 34CPublishedFile_Unsubscribe_Request
+34CRemoteClient_AllocateSDR_Response
+34CRemotePlay_SessionStarted_Request
 34CShader_GetBucketManifest_Response
 34CSiteServerUIContentCacheConfigJob
 34CSiteServerUIContentCacheStatusJob
@@ -2626,6 +2633,7 @@ _!@1J
 35CClientJobUpdateAppOwnershipTickets
 35CClientJobUpdateAuthorizedBorrowers
 35CClientJobUpdateOfflineMessageCount
+35CClientMetrics_AppInterfaceCreation
 35CCloud_GetUploadServerInfo_Response
 35CFriendMessages_SendMessage_Request
 35CGameServers_GetServerList_Response
@@ -2665,6 +2673,7 @@ _!@1J
 35CPublishedFile_RemoveChild_Response
 35CPublishedFile_Unsubscribe_Response
 35CRemoteClientJobGetControllerConfig
+35CRemotePlay_SessionStarted_Response
 35CStore_GetStorePreferences_Response
 35CTwoFactor_AddAuthenticator_Request
 35CUserOnParentalLockNotification_Job
@@ -2883,6 +2892,7 @@ _!@1J
 39CClientJobGetSteamNetworkingSocketsCert
 39CClientJobMatchmakingLobbyGameServerSet
 39CClientJobSetControllerAppConfiguration
+39CClientMetrics_AppInterfaceMethodCounts
 39CCommunity_GetLinkFilterHashes_Response
 39CContentBuilder_CommitAppBuild_Response
 39CContentBuilder_InitDepotBuild_Response
@@ -2929,6 +2939,7 @@ _!@1J
 39CRemoteClientJobRequestControllerConfig
 39CRemoteClient_RemotePacket_Notification
 39CRemoteClient_SteamToSteam_Notification
+39CRemotePlay_SessionStopped_Notification
 39CSiteLicense_ClientSeatCheckout_Request
 39CStore_GetLocalizedNameForTags_Response
 39CStore_UserContentDescriptorPreferences
@@ -2937,7 +2948,7 @@ _!@1J
 39CUserAccount_RegisterCompatTool_Request
 39SiteServerUI_ContentCacheConfig_Request
 39SiteServerUI_ContentCacheStatus_Request
-3A9a.
+3A9A.
 3Allocate a UDP relay server for a streaming session
 3App Id of the app that the files were published to.
 >#>)>/>3>A>W>c>e>w>
@@ -3098,6 +3109,7 @@ _!@1J
 40CValveHWSurvey_GetSurveySchedule_Request
 40SiteServerUI_ContentCacheConfig_Response
 40SiteServerUI_ContentCacheStatus_Response
+4.10.1440.19
 4(1A9
 41CBroadcast_BeginBroadcastSession_Response
 41CBroadcastClient_BroadcastChannelLive_Job
@@ -3161,6 +3173,7 @@ _!@1J
 41CUserAccount_GetAccountLinkStatus_Request
 41CValveHWSurvey_GetSurveySchedule_Response
 41CWorkItemThreadedEnsureScreenshotImported
+41ISteamNetworkingConnectionCustomSignaling
 4294967295
 42"A9
 42CAdapterSteamNetworkingSocketSerialized002
@@ -3229,6 +3242,7 @@ _!@1J
 42CUserAccount_GetAccountLinkStatus_Response
 42CUserAccount_GetFriendInviteTokens_Request
 42CUserAccount_ViewFriendInviteToken_Request
+42ISteamNetworkingCustomSignalingRecvContext
 42SiteServerUI_ClientStatus_Response_Payment
 4(3@9h
 43CBroadcastClient_BroadcastUploadStarted_Job
@@ -3331,6 +3345,7 @@ _!@1J
 45CChatRoom_InviteFriendToChatRoomGroup_Request
 45CChatRoom_SetUserChatGroupPreferences_Request
 45CClanChatRooms_SetClanChatRoomPrivate_Request
+45CClientMetrics_AppInterfaceStats_Notification
 45CCommunity_GetLinkFilterHashPrefixes_Response
 45CContentBuilder_CommitAppBuild_Request_Depots
 45CContentBuilder_GetMissingDepotChunks_Request
@@ -3359,6 +3374,7 @@ _!@1J
 45CUserAccount_CreateFriendInviteToken_Response
 45CUserAccount_RedeemFriendInviteToken_Response
 45CUserAccount_RevokeFriendInviteToken_Response
+~_45H
 45LobbyMatchmakingLegacy_GetLobbyStatus_Request
 45SiteServerUI_ClientStatus_Response_ClientInfo
 46CAccountHardware_VRCompatibilityCheck_Response
@@ -3394,6 +3410,7 @@ _!@1J
 46LobbyMatchmakingLegacy_GetLobbyStatus_Response
 %-46s %10u %14llu %10u %6.1f%%
 4 %(7
+4(	@7
 474E4U4W4c4i4m4
 47CAccountHardware_GetPersonalizationFile_Request
 47CAccountHardware_SetPersonalizationFile_Request
@@ -3513,7 +3530,6 @@ $4DTdt
 4hbA9
 4hBA9H
 4hBF9h
-4hBG9
 4hBz9
 4h&C)
 4hc@9
@@ -3527,6 +3543,7 @@ $4DTdt
 4h"F9(
 4h"F9h
 4hfd9
+4hfF9
 4hfM9H
 4h"G9
 4h~H9h
@@ -3537,13 +3554,14 @@ $4DTdt
 4)hk8i
 4hn@y
 4hR@9
-4hrA9
 4hrD9h
+4hS@9
 4h"U9
 4Hu@9
 4hvA9
 4hvA9(
 4hvA9H
+4hW@9
 4HY@9H
 4hz@9
 4hZ^9
@@ -3554,7 +3572,6 @@ $4DTdt
 4i"D)
 4i&D9?
 4	ii8
-4iN@9)
 4inByI
 4IU@9
 4ivO9h"I9a
@@ -3741,11 +3758,13 @@ $4DTdt
 5CQueuedMatchmakingGameHost_SubmitPlayerResult_Request
 5CUser
 5C!@y
+%5d%%
 5d6@9
 5d:@9
 5	D@9
 5(dA9h
 5Destroy emergency authenticator codes for the account
+%5dms
   %5d  %s
 5e6@9
 5	eA9
@@ -3771,6 +3790,7 @@ $4DTdt
 5hR@9
 5hrt9h
 5hVK9
+5hW@9(
 5HW@9
 5hz@9H
 5h:z9i>z9
@@ -3819,6 +3839,7 @@ $4DTdt
  6`"@
  6`*@
  6`&@
+ 6;(#
 _6`^@
 _6`*@
 ?6`~@
@@ -3892,7 +3913,6 @@ _6`6@
 68aB@
 `6@9@
 ?6	9@
-@@69 
 69h*P
 `6a>@
 `6a&@
@@ -3971,6 +3991,7 @@ _6aBA9
 6a~C9
 _6af@
 @6af@
+_6aF@
 ?6aF@
 /6aF@
 6af@9
@@ -4061,6 +4082,7 @@ _6`b@
 @6`f@
 `6`F@
  6`F@
+_6`F@
 ?6`F@
 /6`F@
 (6`F@
@@ -4100,6 +4122,7 @@ _6h*@
 6hBA9
 _6hBA9
 6hBB9
+6hbF9h
 6hBG9
 6hb@y
 6HC@9
@@ -4256,6 +4279,7 @@ _6u2@
 /6`ZA
 (6`ZA
  7!'@
+)	 7	
 @7`:@
 (7(	07
 (7(	07h
@@ -4305,7 +4329,6 @@ _6u2@
 76`F@
 76h.@
 76h"@
-76h"A9
 76hz@9
 76i>@
 76i6A9
@@ -4336,7 +4359,6 @@ _6u2@
 7?7E7I7O7]7a7u7
 7(	 7h
 $ 7(%(7H&07
- 7(	(7hB@9
  7)	(7i
 7)	 7i
 7		 7i
@@ -4373,6 +4395,7 @@ $@7a*@
 ?7h*@
 @7h&@
 (7h!07
+(7h	07
 (7h	07(
 (7h	07\
 (7H	07
@@ -4387,6 +4410,7 @@ $@7a*@
 7h) 7(*(7U
 7h~@9
 7h"@9
+7h"@9h
 7h"@9H
 7hb@9
  7hB@9
@@ -4425,7 +4449,6 @@ $`7h%h7
 (7I	07iB@9
 '7i2@
 7i6 7I7(7
- 7i	(7I
 7I	 7i
 ; 7i<(7I=07	>87
 7i^@9
@@ -4582,6 +4605,7 @@ _830_8
 86ib@
 86`J@
 86`N@
+86t"@
 86tZ@
 86u~@
 86u:@
@@ -4597,7 +4621,6 @@ _830_8
 !87H"@7
 87hF@9
 87hv@
-87i	@7)
 !87iF@9
 87iF@9
 87iF@9)
@@ -4659,11 +4682,11 @@ _8hr@9
 _8hr@9i
 _8hv@9
 (8HXhx
-@8i/@8
 8%i$8
 8+i#8Chh8
 8+i#8Dhj8
 @8i/@8J
+@8i/@8X,
 8IaiS/8,
 8If set, remove from ignore/block list instead of adding "\
 8if specified then only return this external account type
@@ -4729,7 +4752,6 @@ _8y,@8
 -	@9_
 ,@9" 
 ,@9",
-!@]9?
 .@9(]
 .@9*]
 '@9?(
@@ -4739,8 +4761,10 @@ _8y,@8
 (@9`,
 (@9((
 (@9	,
+)!@9?
 )%@9)
 )	@9*
+@9!`-
 @9)!@
 @9)&@
 @9$#@
@@ -4760,6 +4784,7 @@ $@9	(
 *#@9*]
 *+ @9
 \@9"@
+&@9!=
 &@9(]
 &@9*]
 #@@9	
@@ -4774,7 +4799,6 @@ $@9	(
 	)@9*
 	$@9?
 	*	#9
-	%?9?
 <@9"0
 ,@9`0
 ,@9+0
@@ -4878,7 +4902,6 @@ $ @9*$@9#,@9%(@9J=
 9aZ@9
 @9-b@
 @9*b@
-#@9b:
 &,@9B
 +&9`>B
 9b2A9!
@@ -4992,7 +5015,6 @@ $ @9*$@9#,@9%(@9J=
 @9#F87`
 @9f	@9
 @9f(@9c @9
-@9FA$
 9`FE9
 @9F\Ey(
 9Fif8
@@ -5086,6 +5108,7 @@ $@9h2
 @9Hyh
 9hz@9
 9hzF9
+"@9	i
 @9i:@
 @9i"`
 @9i&@
@@ -5122,7 +5145,6 @@ $@9h2
 9ifG9
 9If non-zero, cap the number of recent messages to return.
 9+ig8
-"@9ih
 @9(ih8
 @9*ih8
 9(ih8h
@@ -5147,7 +5169,6 @@ $@9h2
 9+iw8c
 )9IYiy
 9iz@9
-)@9j?
 @9j&@
 *(@9j
  @9J=
@@ -5166,19 +5187,19 @@ $@9h2
 @9jJ@
 @9jjh8
 @9J!K
-@9JQG
+@9JMG
 9jrG9
 9jvG9
 9jzG9
 9jZG9i
 @9k&@
 + @9K
-@9k1G
 9?k48
 9k6@x)
 @9K	@9?
 @9K	@9M
 @9k+F
+@9k!G
 @9Kii8
 @9Kik8
 @9k!L
@@ -5191,6 +5212,8 @@ $@9h2
 @9L	@9l
 @9L=@9M
 @9l}C
+9Let the server know that we started a Remote Play session
+9Let the server know that we stopped a Remote Play session
 9Let the service know we're available for status listeners
 9@LEy 
 @9@LFy
@@ -5247,6 +5270,7 @@ $@9h2
 9Qiq8kA
 9Qir8?
 9qir8?a
+ @9	r
 @9R1@9D
 9Relative path on server to which file should be uploaded.
 9Reports the result of an external Cloud storage transfer.
@@ -5285,7 +5309,6 @@ $@9h2
 ___a_
 __a__
 	a!!&
-*-A),
 A:   
 a0@9a
 A)	1@y
@@ -5315,12 +5338,15 @@ a8Ak 8
 +a@9?
 	a@9?
 	a@9)
+	a*9 
+	a\9)
 a:@9!
 a&@9!
 !A9(	@
-	A`9	
+)A@9	
 	A@9)
 	A@9	
+	A+9.
 A9|"@
 A9)'@
 A9			
@@ -5336,10 +5362,10 @@ A9A@@9
 /A9a:J9`>
 a"@9B
 A9`B@9A
+"A9)EC
+A9)EC
 A9`F@9A
-(a<9h
 (`A9h
-?a<9i
 )a@9i
 	a@9I
 		A9i
@@ -5347,7 +5373,6 @@ A9`F@9A
 A9i*@
 A9i&@
 	A@9I
-	A\9I
 	A@9iJ
 a@9iR
 *a@9J
@@ -5356,14 +5381,13 @@ a@9iR
 A9`J@9A
 A9_k98h
 A9`N@9A
-"A9)QC
-A9)QC
 A9`R@9A
 ?A9t"@
 A#@9T
 :A9u6@
 A9ue_
 A9`V@9A
+)A`9vB
 A9`Z@9A
 __aa_
 !`aA>
@@ -5435,6 +5459,7 @@ AcceptAuthorizationRequest
 accept called on a client socket
 accept called on uninitialized socket - m_hPipeFd = %d, m_bInit = %s
 accept-charset
+AcceptConnection
 Accepted peer connection from %s as %d
 accept-encoding
 Accept-Encoding
@@ -5447,6 +5472,7 @@ AcceptP2PPacketsFromUser() call on steamID %s, from steamID %s
 AcceptP2PPacketsFromUser() failed, invalid steamID %s
 AcceptP2PSessionWithUser
 Accept returned true but returned a NULL pipe
+AcceptSessionWithUser
 	AcceptSSA
 AcceptVoiceCall
 accept with a null output pointer
@@ -5747,7 +5773,6 @@ adult_content_violence
 a_dup.c
 AdvertiseGame
 Advertisement
-aE0cn
 %a, %e-%b-%y %H:%M:%S
 %a, %e %b %Y %H:%M:%S
 %a, %e-%b-%Y %H:%M:%S
@@ -5763,6 +5788,7 @@ aE%d0
 /'/)/A/E/K/M/Q/W/o/u/}/
 &aelig;
 &AElig;
+aEL)n
 a_enum.c
 aes128
 AES128
@@ -5896,6 +5922,7 @@ A		$	HH-
 'A)hRC
 A!;I2
 a_i2d_fp.c
+	AI9)
 aia8!
 aif provided, only return glyphs modified more recently than this timestamp  (RFC 3339 UTC format)"
 AIf true, the file should be encrypted by the client before upload
@@ -5917,6 +5944,7 @@ aj@9A
 aJ@9A
 @AJB<
 aju8"
+	Ak9I
 akamai
 Akbank
 akid mismatch
@@ -5939,6 +5967,8 @@ All Friends
 All jobs failed
 .Allocate a TURN server for a streaming session
 AllocateRelayServer
+AllocateSDR
+!Allocate SDR resources for an app
 AllocateSharedConnection
 AllocateTURNServer
 allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
@@ -6086,6 +6116,8 @@ ANY PRIVATE KEY
 Any Purpose
 a_object.c
 aOnly return results after time. Min value is 1. (seconds since epoch January 1st, 1970 Unix Time)"u
+AOwned apps that friends hadn't played for a while, but are again.
+AOwned apps that none of your friends had played prior to 2 weeks.
 AOZs\!yA*
 	aP9)
 	aP9I
@@ -6195,6 +6227,7 @@ AppID %u, DLC %u :
 [AppID %u] Download %s for file %s
 [AppID %u] Eval complete
 [AppID %u]     Evaluating rule %s with root="%s" path="%s" pattern="%s"%s%s
+AppID %u exceeding analog action limits
 [AppID %u]     Excluding files with pattern="%s"
 AppID %u exited.
 [AppID %u] Failed sync for '%s' [login=%s][offlineMode=%s]
@@ -6483,6 +6516,7 @@ ascii
 ASCII
 ASCII conversion buffer too small
 )A service for accessing Steam player data2
+%A service for client-reported metricsB
 ]A service for relaying and logging friend messages (user-to-user chats and offline messaging)2
 %A service for Steam Cloud operations.B
 +A service that provides access to inventory2
@@ -6914,6 +6948,7 @@ Assertion Failed: buffer.CubAllocated() >= (int)uOriginalSize
 Assertion Failed: bufferLen > 0 && bufferLen <= INT_MAX
 Assertion Failed: bufferLen == 0 || pDest != NULL
 Assertion Failed: buffer.TellPut() > 0
+Assertion Failed: bufferToSwap.TellPut() < FIO_MAX_IO_BYTES
 Assertion Failed: buf.GetFlags() & CUtlBuffer::TEXT_BUFFER
 Assertion Failed: &bufIn != &bufOut
 Assertion Failed: buflen >= 2
@@ -6923,7 +6958,6 @@ Assertion Failed: bufRet.TellPut() == sizeof(uint8)
 Assertion Failed: bufRet.TellPut() >= sizeof(uint8)
 Assertion Failed: bufRGBA.TellPut() == nWidth*nHeight * 4
 Assertion Failed: bufRGB.TellPut() == nWidth*nHeight*3
-Assertion Failed: buf.TellPut() < FIO_MAX_IO_BYTES
 Assertion Failed: buf.TellPut() < SHRT_MAX
 Assertion Failed: !BUseIOCP()
 Assertion Failed: BUseIOCP()
@@ -6932,7 +6966,6 @@ Assertion Failed: (b.x != 0.0f) && (b.y != 0.0f)
 Assertion Failed: bytesTransferred >= 0
 Assertion Failed: cacheIn.Count() == 1
 Assertion Failed: cActualReplacements == cReplacements
-Assertion Failed: callback.m_eResult == k_EResultOK
 Assertion Failed: callback->m_iCallback >= 0
 Assertion Failed: callback->m_pRegisteredWithMgr == nullptr
 Assertion Failed: callback->m_pRegisteredWithMgr == this
@@ -6964,6 +6997,7 @@ Assertion Failed: ccMax >= 1
 Assertion Failed: cDaysKeepPersistentLogFiles > 0
 Assertion Failed: !cert.m_authScope.IsEmpty()
 Assertion Failed: cert.m_ca_key_id == c.m_ca_key_id
+Assertion Failed: cert.m_cbPrivKey == 64
 Assertion Failed: cert.m_signature.length() == sizeof(CryptoSignature_t)
 Assertion Failed: cert.m_signed_data == c.m_signed_data
 Assertion Failed: !cert.m_signed_data.empty()
@@ -7137,7 +7171,8 @@ Assertion Failed: GJobCur().GetJobID() == m_JobIDRemoteStorageSync
 Assertion Failed: GJobCur().GetJobID() == m_jobIDScreenshotAction
 Assertion Failed: !g_mapConnections.IsValidIndex( idx )
 Assertion Failed: !g_mapListenSockets.IsValidIndex( idx )
-Assertion Failed: g_mapListenSockets.IsValidIndex( idx ) && g_mapListenSockets[ idx ] == pSock
+Assertion Failed: !g_mapP2PConnections.HasElement( key )
+Assertion Failed: g_mapP2PConnections[idx] == this
 Assertion Failed: g_mapRelayServersByAddr.Find( adr ) == g_mapRelayServersByAddr.InvalidIndex()
 Assertion Failed: g_mapRelayServersByAddr[idxServer]->m_adr == adr
 Assertion Failed: g_mapRelayServersByAddr[idxServer]->m_hRoutingCluster == hCluster
@@ -7186,6 +7221,7 @@ Assertion Failed: identity.m_cbSize == sizeof(identity.m_steamID64)
 Assertion Failed: identity.m_cbSize <= sizeof( identity.m_szGenericString )
 Assertion Failed: identity.m_cbSize <= sizeof( identity.m_szXboxPairwiseID )
 Assertion Failed: identity.m_cbSize == sizeof( SteamNetworkingIPAddr )
+Assertion Failed: identityPeer == pConn->m_identityRemote
 Assertion Failed: !identityRemote.IsInvalid()
 Assertion Failed: ( id & k_nMessageTypeID_Mask ) == k_nMessageTypeID_EMsg
 Assertion Failed: idx < 0 || ( m_vecClusters[idx].m_pData->m_idxInConfig == idx && m_vecClusters[idx].m_pData->m_pConfig->m_id == id )
@@ -7337,7 +7373,6 @@ Assertion Failed: len < maxlen
 Assertion Failed: l->first.m_nBegin >= range.m_nBegin
 Assertion Failed: (links.m_pNext->*pMbrLinks).m_pPrev == this
 Assertion Failed: (links.m_pPrev->*pMbrLinks).m_pNext == this
-Assertion Failed: ListenSocket()
 Assertion Failed: ( localHitBuffer.TellPut() % sizeof( LocalHitCacheEntry_t ) ) == 0
 Assertion Failed: localPrivateKey.IsValid()
 Assertion Failed: lookup.m_nFirstShell > 0
@@ -7360,8 +7395,8 @@ Assertion Failed: !m_bAPIResultPosted
 Assertion Failed: !m_bApplied
 Assertion Failed: m_BaseIP.GetType() == k_EIPTypeV4
 Assertion Failed: m_BaselineManifest.GetDepotID() == m_uDepotID
-Assertion Failed: m_bAsync
 Assertion Failed: !m_bCanceled
+Assertion Failed: m_bConnectionInitiatedRemotely
 Assertion Failed: !m_bConnectionIsInit
 Assertion Failed: m_bConnectionIsInit
 Assertion Failed: !m_bConnectionReleased
@@ -7506,6 +7541,7 @@ Assertion Failed: m_hConnection == hConnection
 Assertion Failed: m_hConnection == INVALID_HCONNECTION
 Assertion Failed: m_hConnectionSelf == k_HSteamNetConnection_Invalid
 Assertion Failed: m_heap.IsValidIndex(index)
+Assertion Failed: m_hListenSocketSelf == k_HSteamListenSocket_Invalid
 Assertion Failed: m_hPipeFd == m_pReadEvent->GetReadFD()
 Assertion Failed: m_hRefreshJob != k_uAPICallInvalid
 Assertion Failed: m_hRequest == hRequest
@@ -7562,11 +7598,13 @@ Assertion Failed: m_msgCert.has_time_expiry()
 Assertion Failed: m_msgCryptLocal.has_key_data()
 Assertion Failed: m_msgCryptLocal.has_key_type()
 Assertion Failed: m_msgCryptLocal.has_nonce()
+Assertion Failed: m_msg.has_connect_request()
 Assertion Failed: m_msgSignedCert.has_ca_signature()
 Assertion Failed: m_msgSignedCert.has_cert()
 Assertion Failed: m_msgSignedCertLocal.has_cert()
 Assertion Failed: m_msgSignedCryptLocal.has_info()
 Assertion Failed: m_nAccountAppID != 0
+Assertion Failed: m_nAppID == 0 || m_nAppID == k_nStreamingAppID
 Assertion Failed: m_nBytesLeftInCurrentChunkStore >= 0
 Assertion Failed: m_nChunksNeededFromCurrentChunkStore == 0
 Assertion Failed: m_nEnd >= m_nBegin
@@ -7763,7 +7801,8 @@ Assertion Failed: msgCommitResponse.file_committed()
 Assertion Failed: msg.CubVarData() == (int) msg.Body().m_cbBlock
 Assertion Failed: msg.GetHConnection() == m_hConnection
 Assertion Failed: !msg.has_connection_closed()
-Assertion Failed: msg.has_connect_request()
+Assertion Failed: msg.has_connection_closed()
+Assertion Failed: !msg.has_from_connection_id() || msg.from_connection_id() == pInfo->m_unConnectionIDSrc
 Assertion Failed: !msg.has_to_connection_id()
 Assertion Failed: msgMulti.Body().message_body().size() < UINT_MAX
 Assertion Failed: msg.relay_mode() != CMsgSteamDatagramConnectionClosed_ERelayMode_ClosedByPeer
@@ -7888,6 +7927,7 @@ Assertion Failed: m_vecPendingAdds[idx]->m_pRegisteredWithMgr == this
 Assertion Failed: m_vecpHTTPClients.FindAndFastRemove( pHTTPClient )
 Assertion Failed: m_vecPostParams.Count() < 65535
 Assertion Failed: m_vecPostParams.IsValidIndex( iNode )
+Assertion Failed: m_vecRegisteredWriters.Count() == 0
 Assertion Failed: m_vecRegisteredWriters.HasElement( pFile )
 Assertion Failed: m_vecRoutes.empty()
 Assertion Failed: m_vecSortedThreadPending.Count() == 0
@@ -7924,6 +7964,7 @@ Assertion Failed: nBytesWritten >= 0
 Assertion Failed: nCheckSignature == 0
 Assertion Failed: nColumnCount == 0
 Assertion Failed: nCompressionLevel >= -1 && nCompressionLevel <= 9
+Assertion Failed: nConnectionIDSrc
 Assertion Failed: nContentLength != 0
 Assertion Failed: nContentLength == 0 || CHTTPUtil::BMethodAllowsRequestBody( m_eRequestMethod )
 Assertion Failed: nCount >= 1
@@ -8142,7 +8183,6 @@ Assertion Failed: pCompletion->type == IOTYPE_ACCEPT && pCompletion->ulResult ==
 Assertion Failed: pCompletion->type == IOTYPE_CONNECT
 Assertion Failed: pCompletion->type == IOTYPE_RECV
 Assertion Failed: pCompletion->type == IOTYPE_SEND || pCompletion->type == IOTYPE_UNBUFFEREDSEND
-Assertion Failed: pConn
 Assertion Failed: pConnection->BIsConnected()
 Assertion Failed: pConnectionCallback
 Assertion Failed: pConn->GetState() == k_ESteamNetworkingConnectionState_Connecting
@@ -8152,7 +8192,8 @@ Assertion Failed: pConn->m_identityRemote == identityRemote
 Assertion Failed: pConn->m_pMessagesSession == this
 Assertion Failed: pConn->m_pParentListenSocket == nullptr
 Assertion Failed: pConn->m_pParentListenSocket == this
-Assertion Failed: pConn->m_unConnectionIDRemote == pInfo->m_unConnectionIDSrc
+Assertion Failed: pConn->m_pSignaling
+Assertion Failed: pConn->m_unConnectionIDRemote == msg.from_connection_id()
 Assertion Failed: pContext
 Assertion Failed: pContext->GetConnectionType() == k_ESSLConnectionType_Client
 Assertion Failed: pContext->GetStagedBytes() == 0
@@ -8180,10 +8221,11 @@ Assertion Failed: pEnd == m_ReplacementBody.Base() + m_ReplacementBody.Count()
 Assertion Failed: pEnd <= pubMsgBytes + cubBuffer
 Assertion Failed: pEntry->uploadEntry.bHasAMDExtraHeader == false
 Assertion Failed: pExistingDepotInfo->unManifestID == depotInfo.unManifestID
+Assertion Failed: pFile
 Assertion Failed: pFileDataSection->m_cubOverlap >= cubRemainder
 Assertion Failed: pFileMapping
 Assertion Failed: pFileMapping->unBytesWritten <= pFileMapping->pFile->GetSize()
-Assertion Failed: pFile && !m_bExit
+Assertion Failed: pFile->m_hFileDest != INVALID_OSFILEHANDLE
 Assertion Failed: pFileTransfer
 Assertion Failed: pFileTransferCallback
 Assertion Failed: !pFileTransfer->m_bPendingIO
@@ -8344,7 +8386,6 @@ Assertion Failed: pRequestHandle->AccessClientRequest()->GetPOSTParamCount() == 
 Assertion Failed: !pResult
 Assertion Failed: pResult->m_identityRemote == identityRemote
 Assertion Failed: pResult->m_pPrev == nullptr
-Assertion Failed: &pResult->m_steamNetworkingSockets == this
 Assertion Failed: pResult && pResult->m_hListenSocketSelf == sock
 Assertion Failed: pRetBucketVector != nullptr
 Assertion Failed: pReuseSession == NULL
@@ -8402,7 +8443,6 @@ Assertion Failed: pszName == NULL || *pszName == '/' || (isalpha((unsigned char)
 Assertion Failed: !pszString || pszString[nChars] == '\0'
 Assertion Failed: pszThreadName != NULL
 Assertion Failed: pTCPConnection->m_cOutstandingSends > 0
-Assertion Failed: p == temp.m_msg + temp.m_cbMsg
 Assertion Failed: pThread
 Assertion Failed: pTicket != NULL
 Assertion Failed: !pToCopy || (pToCopy + num <= Base()) || (pToCopy >= (Base() + Count()) )
@@ -8459,6 +8499,7 @@ Assertion Failed: requestCallback.m_JobID != k_JobIDNil
 Assertion Failed: resizeNumBits >= 0
 Assertion Failed: res == pBuf->TellPut()
 Assertion Failed: result
+Assertion Failed: result.m_eResult == k_EResultOK
 Assertion Failed: result.ulSerialNumber
 Assertion Failed: ret
 Assertion Failed: ret != 0
@@ -8477,6 +8518,7 @@ Assertion Failed: s1 != NULL
 Assertion Failed: s2 != NULL
 Assertion Failed: s_bAllowStaticSymbolTable
 Assertion Failed: s_bEverGotPingReplyFromRelay
+Assertion Failed: s_bExit
 ?Assertion Failed: s_bMathlibInitialized
 Assertion Failed: scheduledItem.m_ulTime
 Assertion Failed: seg.m_cbHdr <= seg.k_cbMaxHdr
@@ -8509,8 +8551,6 @@ Assertion Failed: (((size_t)&m1) % 16) == 0
 Assertion Failed: ((size_t)(m_nLogicalBytesAllocated) % 8) == 0
 Assertion Failed: (((size_t)&out) % 16) == 0
 Assertion Failed: s_libVideoFuncs.InitFunctions( LIBVIDEO_LIBRARY_NAME )
-Assertion Failed: !s_mapP2PConnections.HasElement( key )
-Assertion Failed: s_mapP2PConnections[idx] == this
 Assertion Failed: s_mapWebBrowserAPIFunctions.Find( pszName ) == s_mapWebBrowserAPIFunctions.InvalidIndex()
 Assertion Failed: !sm_bShutDown
 Assertion Failed: !sm_bShuttingDown
@@ -8719,6 +8759,7 @@ Associate user %s %s: SUCCESS
 a_strex.c
 a_strnid.c
 A summary of all IPC calls will be output once IPC logging has been disabled
+AsyncCertRequest
 AsyncConnect failed
 AsyncConnect failure
 async disconnect
@@ -8790,7 +8831,6 @@ attributes
 Attributes
 A)tU@)x
 A)TU@)X
-)au9?
 audio
 AUDIO
 Audio Behind
@@ -8799,7 +8839,6 @@ AudioDeviceDescription
 Audio Init Failed
 audio track choice.
 audio_track_id
-Aug  5 2019
 &auml;
 &Auml;
 AUser chat group state (preferences, ack state, etc) have changed.
@@ -8883,6 +8922,7 @@ Auto-update blackout time
 [A:%u:%u:%u]
 aux error
 &A)Uyx
+	AV9	
 av@9A
 aV@9A
 available_on_platform
@@ -8902,6 +8942,11 @@ AVGRATE
 avg time
  Avg Time/Frame (ms)
 AVS Failure
+AVX512CD
+AVX512ER
+AVX512F
+AVX512PF
+AVX512VNNI
 	-A)Vy{
 &A)Vyy
 Awaiting_Logon
@@ -8954,7 +8999,6 @@ B@9	A
 B@9A1
 B9A D9
 b*@9B
-B@}!9B
 b@9h!
 b@9H	
 ($B9h
@@ -8964,6 +9008,7 @@ B:9h::9
 b@9hb
 B9hj68	
 B9hNB
+B>9	J
 b&A9af@9b
 b*A9aj@9b
 b.A9an@9b
@@ -9070,6 +9115,9 @@ bad object
 :BAD OBJECT
 bad object header
 Bad oscompare value for app %u
+Bad P2P signal from '%s': no connect_request or (
+Bad P2P signal: invalid from_identity '%s'
+Bad P2P signal: no from_identity
 bad packet length
 Bad packet received: EMsg would be %u
 Bad packet received: EMsg would be %u, next 12 bytes: %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X
@@ -9179,7 +9227,7 @@ B"`b	)(!
 bB"`3
 "`bB303
 BB4!!
-bBB9	%
+bB@9Ab
 B#B)B/BCBSBUB[BaBsB}B
 bbc.co.uk
 bbcode_format
@@ -9192,6 +9240,7 @@ bB@yG
 Bc!! 0
 BCanLogonOfflineMode
 BCanReceive
+BCanRemotePlayTogether
 BCanSend
 BC (default)
 BChatRoomHasAvailableVoiceSlots
@@ -9225,8 +9274,9 @@ bDisableClientUIOverlay
 BDisableParentalSettings
 bDisableTenFootOverlay
 BDownloadsDisabled
+BE9H"
 	beacon_id
-BEBGCZDKDEEEIEELGRESFRHRISITCYLILVLTLUHUMTNLNOATPLPTROSISKFISEUK
+BEBGCZDKDEEEIEELGRESFRHRISITCYLILVLTLUHUMTNLNOATPLPTROSISKFISEUK$
 " because it is missing required fields: 
 Beeline
 before accept initialization
@@ -9277,7 +9327,7 @@ between
 b.EycZA
 )bF	)%
 bF@9C
-bF9 h
+bF9`h
 bf_buff.c
 bf-cbc
 BF-CBC
@@ -9303,7 +9353,9 @@ BF_version
 BGameConnectTokensAvailable
 bg_BG
 BGetAchievementIconURL
+BGetActiveBetaForApps
 BGet a list of chat rooms for a clan, optionally creating a new one
+BGetAppArrayMinutesPlayed
 BGetAppMinutesPlayed
 BGetBroadcastDimensions
 BGetChatRoomMemberDetails
@@ -9345,11 +9397,12 @@ bhb8"
 bHb8c
 Bh;+j
 BHost name of server to which file should be uploaded via HTTP PUT.
-Bhs8! 
-Bhv8+d
-Bhv8kd
+Bhs8!
+Bhv8{
+Bhv8T
 B)hZA
 Bib81
+B@}!IG
 BIGNUM
 Big Number part of OpenSSL 1.0.2m  2 Nov 2017
 BIGNUM_it
@@ -9511,7 +9564,9 @@ BIsGameWindowReady
 BIsGlobalInstance
 bis_limited_account
 -bis_limited_account_allowed_to_invite_friends
+BIsLocalMultiplayerApp
 bis_locked_account
+BIsLockFromSiteLicense
 BIsOpenVRShortcutByAppID
 BIsOpenVRShortcutByIndex
 BIsOtherSessionPlaying
@@ -9805,6 +9860,7 @@ bn to asn1 integer error
 BN_TO_FELEM
 BN_uadd
 BN_ucmp
+BNumber of friends with non-trivial activity in the past two weeks.
 BN_usub
 BN_value_one
 BN_version
@@ -9889,6 +9945,7 @@ Breakpad_SteamSetSteamID
 Breakpad_SteamWriteMiniDumpSetComment
 Breakpad_SteamWriteMiniDumpUsingExceptionInfoWithBuildId
 BReceiveFile
+BRecvCryptoHandshake
 BRecvCryptoHandshake failed creating localhost socket pair
 BRecvCryptoHandshake failed creating loopback pipe socket pair
 BRemoteClientHasStreamingEnabled
@@ -10020,9 +10077,9 @@ __bss_start
 __bss_start__
 BStartStreaming
 bSteam3LimitedUserEnable
-BSteamDatagramTransportLock held for %.1fms.  This can be a performance problem.
 BSteamGuardNewMachineNotification
 bSteamLoaderEnable
+BSteamNetworkingSocketsLowLevelAddRef
 BStreamingDesktopToRemotePlayTogetherEnabled
 bSubscribedFilesDecompressOnClient
 bSubscribedFilesPollForUpdates
@@ -10145,6 +10202,7 @@ bwiO'
 BWR	j
 BX7iC`7IDh7	Ep7
 BXcxc
+B(x%d)
 BXzxc
 b"@y"
 b@y$	
@@ -10246,11 +10304,11 @@ C@9`"@
 C@9(	
 C@9"8
 c@9"9
+C@9(906
 C9an@
 c@9b:
 c@9B:
 C@9b:
-C@9B:
 C@9B8
 c@9b9
 c@9B9
@@ -10259,16 +10317,19 @@ C9fj@
 (c@9H
 (C@9h
 C@9h	
+(C@9H
 c@9Hs
 c@9in@
 C9j2D9
 C@9_!+k`
+C@9K	
 )!C9l
 C@9vX
 C} A!
 CA9";
 cA9"8
 CA9b;
+CA9b:
 CA9B;
 cA9b8
 cA9B8
@@ -10342,6 +10403,7 @@ callback LobbyEnter_t: m_ulSteamIDLobby=%s m_EChatRoomEnterResponse=%lld
 callback LobbyInvite_t: m_ulSteamIDLobby=%s m_ulSteamIDUser=%s
 callback LobbyMatchList_t: m_nLobbiesMatching=%lld
 Callback %s (%u):
+call_count
 called a function that was disabled at compile-time
 called a function you should not call
 Called BYieldingGetOldManifestAndInitChunkFinder but chunk finder already initialized?
@@ -10469,17 +10531,19 @@ Cannot change response status code after some response data is already sent
    Cannot communicate with relays without network config.
 Cannot connect to proxied gameserver %s via steam datagram.  Library has not been initialized yet (or it failed).
 Cannot connect to proxied gameserver %s via steam datagram.  We don't have an authorization ticket!
-Cannot connect via %s via P2P+SDR.  Library has not been initialized yet (or it failed).
 Cannot create IPv4 connection.  %s
 Cannot create listen socket.  %s
+Cannot create P2P connection.  %s
 Cannot create P2P connection to %s.  %s
 Cannot create SDR connection to hosted dedicated server.  %s
 Cannot create shared steam datagram socket.  %s
+Cannot deserialize CMsgSteamDatagramP2PRendezvous rejection?
 (cannot determine missing fields for lite message)
 cannot find free function
 Cannot find impl for original cache type %u from depot.
 Cannot gift physical goods
 Cannot initialize GID system as local after rack
+Cannot locate connection by handle to process connect request?
 Cannot post failure callback for non-SteamID-based P2P
 Cannot quantize more than %d color components
 Cannot quantize to fewer than %d colors
@@ -10495,7 +10559,6 @@ Cannot use encryption with raw stream connection
 Cannot use netfilter based encryption with SSL, setup SSL based encryption in your INetSSLConnectionCallback
 Cannot Use Old Password
 Cannot use specific IP address.
-Can only create messages sessions by SteamID right now.
 Canot load cached network credentials - cache failed to deserialize
 can_set_watching_broadcast
 Can's serialize gameserver identity '%s' for unsigned ticket.  %s
@@ -10532,8 +10595,9 @@ Can't read enough bytes for entry %u's data, skipping file.
 Can't read enough bytes for entry %u's header, skipping file.
 Cant remove item
 Can't select relay in '%s', no relay addresses!
-Can't send CMsgSteamDatagramP2PRendezvous; %u bytes is too big!
+Can't send %d-byte P2P signal, max is %d
 Can't send NoConnection, we need at least one of from/to connection ID!
+Can't send P2P signal; failed CMsgSteamDatagramP2PRendezvous parse
 Can't set both read_data_fn and write_data_fn in the same structure
 Can't set * keys
 Can't use a key with a \
@@ -10749,6 +10813,9 @@ categories
 categories_collapsed
 "categorize_in_game_friends_by_game
 category
+category_24
+category_37
+category_39
 category_collapse
 CategoryCollapseState
 \c at end of pattern
@@ -11426,6 +11493,10 @@ CClientJobVerifyPassword
 CClientJobVerifyPassword: Unexpected message (%s/%d).
 CClientJobWriteAppInfoLocCacheToDisk
 CClientJobWriteAppInfoLocCacheToDisk::BYieldingRunAPIJob::ThreadedWriteCacheFile
+#CClientMetrics_AppInterfaceCreation
+'CClientMetrics_AppInterfaceMethodCounts
+-CClientMetrics_AppInterfaceStats_Notification
+..CClientMetrics_AppInterfaceStats_Notification
 CClientNetworkingAPI::DestroyListenSocket( %d ) failed, invalid socket handle
 CClientNetworkingAPI::DestroySocket( #%d ) failed, invalid socket handle
 CClientNetworkingAPI::GetListenSocketInfo( %d ) failed, invalid socket handle
@@ -11939,7 +12010,7 @@ cFileValidationMaxLog
 CFileVerifyThread
 CFileWriter::SetTimestamp() not implemented
 CFileWriterThread
-CFileWriterThread: pending file writer %s
+CFileWriterThread already exited
 CFindCurrentBucketJob::ThreadedRunTestProgram
 (CFovasVideo_ClientGetOPFSettings_Request
 ).CFovasVideo_ClientGetOPFSettings_Request
@@ -12305,7 +12376,6 @@ Chunk size to use for POSTing partner uploads
 Chunks should be compressed during depot building
 chunkstores
 chunk timeout
-chv8r|
 *cib8
 -;-C-I-M-a-e-q-
 CINIT 
@@ -12379,6 +12449,7 @@ cityname_loginattempt
 cj 8_@
 cj!8_@
 cj"8?@
+cj"8l
 cjb8d
 cjb8dj"8d
 cjf8d
@@ -12475,6 +12546,8 @@ ClearUserAchievement
 !C)lhi
 Click&Buy
 client
+client_account_id
+ClientAppInterfaceStatsReport
 client/AsyncFileIO/ReadBytesFinished
 client/AsyncFileIO/ReadBytesPending
 client/AsyncFileIO/ReadItemsPending
@@ -12558,6 +12631,8 @@ clientlinkfilter.cpp
 ClientLinkFilterInit
 client_local_ip
 CLIENT_MASTER_KEY
+ClientMetrics
+ClientMetrics.ClientAppInterfaceStatsReport#1
 client msg %s, job source %llu, job target %llu, SteamID %s
 clientnetworkingapi.cpp
 ClientNetworkingAPI().RunFrame()
@@ -12641,8 +12716,10 @@ close
 close_all_devices
 CloseAllDevicesB	
 Close before rename failed. Log will keep its old name
+CloseChannelWithUser
 CloseClanChatWindowInSteam
 CloseClanChatWindowInSteam( %s ) called with unknown chat room
+CloseConnection
 closed by peer
 ClosedByPeer
 close_device
@@ -12652,6 +12729,7 @@ closedir@@LIBC
 Closed temporary file %s
 close() failed: 
 close@@LIBC
+CloseListenSocket
 close_message
 close notify
 CloseP2PChannelWithUser
@@ -13186,7 +13264,6 @@ CMsgIPAddress
 .CMsgIPAddress"
 .CMsgIPAddress"^
 .CMsgIPAddress"*
-.CMsgIPAddress"&
 .CMsgIPAddress"9
 .CMsgIPAddress"O
 .CMsgIPAddress"s
@@ -13616,6 +13693,7 @@ commonredist
 ../common/steammessages_broadcast.steamclient.pb.cc
 ../common/steammessages_chat.steamclient.pb.cc
 ../common/steammessages_clientlanp2p.pb.cc
+../common/steammessages_clientmetrics.steamclient.pb.cc
 ../common/steammessages_cloud.steamclient.pb.cc
 ../common/steammessages_contentsystem.steamclient.pb.cc
 ../common/steammessages_credentials.steamclient.pb.cc
@@ -13809,6 +13887,7 @@ CONN_CTRL
 connect
 CONNECT
 connect_attempts
+ConnectByIPAddress
 	connected
 Connected to remote client: 0x%x
 ConnectEndClientTime
@@ -13816,7 +13895,7 @@ connect error
 ConnectFailed('%s':%llx) (%s, %s)
 connect_failures
 Connecting . . .
-Connecting P2P socket to self for %s.  We have not implemented a special case for this; the traffic will be relayed over the Internet
+Connecting P2P socket to self (%s).  Traffic will be relayed over the Internet
 Connecting to remote: 0x%x %s
 Connecting to site license mgr: 0x%x %s
 Connecting to %s %s PSK: 
@@ -13863,6 +13942,8 @@ ConnectivityTestFailedTime
 ConnectivityTestSucceeedTime
 connect@@LIBC
 connect_ok
+ConnectP2P
+ConnectP2PCustomSignaling
 connectpipe should occur on the client pipe, not the master pipe
 connect_port
 connect_private
@@ -13874,6 +13955,7 @@ Connect() starting connection (%s, %s, %s)
 connect_string
 connect_successes
 ConnectToDevice
+ConnectToHostedDedicatedServer
 ConnectToHostedDedicatedServer should not be called through a gameserver's ISteamSocketNetworking
 ConnectToRemote
 ConnectToRemoteAddress
@@ -14578,6 +14660,8 @@ CreateInterface
 CreateInviteLink
 CreateItem
 CreateListenSocket
+CreateListenSocketIP
+CreateListenSocketP2P
 CreateListenSocket() %s listening on p2p virtual port %d
 CreateListenSocket() %s listening on %s
 CreateLobby() failed, no appID set for the running app
@@ -14599,6 +14683,7 @@ Create role for goup
 Creates a chatroom invite link
 Creates an async game session
 CreateSNetSocketForP2P
+CreateSocketPair
 CreateSourceGroupBinding
 CreateUnauthenticatedUserConnection
 creating app folder
@@ -14631,6 +14716,10 @@ Credit would exceed max allowed wallet balance
 *.CRemoteClient_AllocateRelayServer_Request
 *CRemoteClient_AllocateRelayServer_Response
 +.CRemoteClient_AllocateRelayServer_Response"7
+!CRemoteClient_AllocateSDR_Request
+".CRemoteClient_AllocateSDR_Request
+"CRemoteClient_AllocateSDR_Response"_
+#.CRemoteClient_AllocateSDR_Response"%
 (CRemoteClient_AllocateTURNServer_Request
 ).CRemoteClient_AllocateTURNServer_Request
 )CRemoteClient_AllocateTURNServer_Response
@@ -14692,6 +14781,12 @@ CRemoteDeviceJobStartStreaming timed out k_ERemoteClientWaitUIAudioPrepared
 CRemoteDeviceJobStartStreaming timed out k_ERemoteClientWaitUIDriverInstallation
 CRemoteDeviceJobStartStreaming timed out k_ERemoteClientWaitUIProcessStreamStart
 CRemoteDeviceJobStartStreaming timed out k_ERemoteClientWaitUIProcessStreamStop
+"CRemotePlay_SessionStarted_Request
+#.CRemotePlay_SessionStarted_Request
+$.CRemotePlay_SessionStarted_Response"=
+#CRemotePlay_SessionStarted_Response
+'CRemotePlay_SessionStopped_Notification
+(.CRemotePlay_SessionStopped_Notification
  CRemotePlayTogether_Notification
 !.CRemotePlayTogether_Notification
 CRemoteStorageSyncHelpers::ThreadedDecryptFile
@@ -14849,6 +14944,8 @@ CSaveBufferToDiskWorkItem::ThreadProcess
 CScheduledFunctionMgr::BFrameFuncRun
 cs_CZ
 CSDRClientShutdown
+CSDRHTTPRequest::Cancel
+CSDRHTTPRequest::Think
 @csecCSRequestProcessorTimeOut
 @csecDurationControlPeriod
 @csecFavoriteGameAccountCacheTime
@@ -14986,6 +15083,13 @@ CSteamNetworkConnectionSDRClientBase received data packet while in the 'connecti
 CSteamNetworkConnectionToSDRServer received e2e stats while in Connecting state.  Resending ConnectRequest.
 CSteamNetworkConnectionToSDRServer received ProcessMessage_GameserverSessionEstablished while in state %d.  Rejecting packet with ConnectionClosed message.
 CSteamNetworkConnectionToSDRServer received Stats while in state %d.  Rejecting packet with ConnectionClosed message.
+CSteamNetworkingMessages::DestroySession
+CSteamNetworkingMessages::GetListenSocket
+CSteamNetworkingSockets::Destroy
+CSteamNetworkingSockets::KillConnections
+CSteamNetworkingSocketsSDR::Destroy
+CSteamNetworkingSocketsSteamBase::BInitSteamBase
+CSteamNetworkingUtilsSteamBase::BInit
 CSteamNetworkListenSocketP2P::BInit failed?  %s
 '.CStore_GetLocalizedNameForTags_Request
 &CStore_GetLocalizedNameForTags_Request
@@ -15997,6 +16101,7 @@ depot_%u_*.delta
 /depotupload/%llu/manifest
 DepotUseAlternatingReadWrite
 deprecated
+deprecated_10
 ;deprecated_authentication_exists_from_geoloc_before_mintime
 deprecated client msg %s, SteamID %s
 (DEPRECATED) Friends-of-friends-only
@@ -16142,6 +16247,7 @@ device_description
 device_disconnect
 DeviceDisconnect
 Device Error
+device_form_factor
 device_get_feature_report
 DeviceGetFeatureReport
 device_get_product_string
@@ -16400,6 +16506,7 @@ Disabling parental settings for %u, account flags are %x
 Discarding handshake timestamp that's %lldms old, not sending in ConnectOK
 Discarding inactive session %s for connection %u.  %s
 Discarding invalid CMsgSteamDatagramP2PRendezvous from %s
+Discarding invalid CMsgSteamDatagramP2PRendezvous from %s, messages has invalid from_identity '%s'
 Discarding invalid CMsgSteamDatagramP2PRendezvous from %s.  Must specify exactly one of connect_request or to_connection_id
 Discarding invalid SteamNetworkingSocketsRecvP2PRendezvous_t - invalid SteamID or ConnectionID
 Discarding oldest SDR ticket for server %s.  Expiry=%u
@@ -16468,6 +16575,7 @@ div by zero
 &divide;
 	)D)J
 dj&8?
+@}D}K
 	!D)K
 dk`8!k`8
 d.kari
@@ -16507,7 +16615,6 @@ dlsym@@LIBC
 DL_UNLOAD
 %d_*.manifest
 dmdName
-@}DmF
 dmp1 not congruent to d
 dmq1 not congruent to d
  %d%n %n
@@ -16952,7 +17059,6 @@ E2EUrgentPing
 ~E9h~
 )E@9i
 	E@9i
-	E\9I
 E@9JD
 	EA9	
 eA9HK
@@ -18175,6 +18281,7 @@ error setting key
 error setting nbio
 error setting nbio on accepted socket
 error setting nbio on accept socket
+Error setting option %d
 error setting recipientinfo
 Error State on string being set.
 Error stopping IR
@@ -18235,6 +18342,7 @@ estatus
 ESteamControllerConfigTemplateWorkshopFileID
 ESteamDatagramMsgID
 ESteamNetworkingUDPMsgID
+ESteamRealm
 ESteamUserStatType
 estimated_seconds_remaining
 EStreamDeviceFormFactor
@@ -18264,9 +18372,11 @@ EUFSPartitionType
 	euniverse
 &euro;
 eurotransit
+EUserConfigStoreNamespace
 EUserNewsEventType
 EUserReviewScorePreference
 .EUserReviewScorePreference
+	EV9	
 EvaluateRemoteStorageSyncState
 evaluatorscript
 evalvesignaturecheckdetail
@@ -18906,7 +19016,6 @@ Failed running GameID %s: "%s" (OS Error %u)
 Failed sending message with %u shaders.
 Failed signature verification (against CA key %llu)
 Failed to accept connection from %s.  %s
-Failed to accept P2P connection from %s.  %s
 Failed to add app dependency between %llu => %u! Error: %s (%s)
 Failed to add cert beginning with '%.32s'.  %s
 Failed to add dependency between %llu => %llu! Error: %s (%s)
@@ -18991,6 +19100,7 @@ Failed to get ParentalSettings\Settings from config file for account ID %u
 Failed to get ParentalSettings\Signature from config file for account ID %u
 Failed to get PS4 Details in SetupController
 Failed to get public key for universe %s, encrypted connection setup failed
+Failed to get SDR cert.  (%s)  Not trying SDR transport
 Failed to get Steam Service Start function
 Failed to get UGC lock
 Failed to get user encryption key, cannot encrypt or decrypt files!
@@ -19063,6 +19173,7 @@ Failed to %s chunk in file "%s", %u bytes at offset %llu (%s)
 Failed to send FD to client
 Failed to send heartbeat to Steam
 Failed to send MsgAMGameServerRemove to Steam
+Failed to send P2P signal
 Failed to send to shared fd client
 Failed to serialize identity to %s message.  %s
 FAILED to set download throttle rate to %d Kbps
@@ -19086,6 +19197,7 @@ Failed to take mutex in GetInternal()
 Failed to unlock account ID %u - bad PIN
 Failed to unpack chunk %s ( entry %u, offset %llu, size %u).
 Failed to unzip %s (%s)
+FAILED to upload AppInterfaceStats to Steam
 Failed to varint decode size of stats blob
 Failed to verify password for AppID %u
 Failed to wait for shared fd client
@@ -19404,12 +19516,15 @@ FIPS routines
 First argument to SwapFields() (of type "
 First argument to Swap() (of type "
 first_day_cached
+first_linux_playtime
+first_mac_playtime
 first num too large
 first octet invalid
  (first pass, stale OK)
 first_playtime
 first reliable streampos
 first_segment
+first_windows_playtime
 fixed64_value
 fixed point overflow ignored
 fixed point overflow in 
@@ -19429,6 +19544,7 @@ flock
 flock@@LIBC
 Flushed store '%s' to '%s'
 Flushed write-aside store '%s' to path '%s'
+FlushMessagesOnConnection
 @fMinDataRateToAttemptTwoConnectionsMbps
 fmodf
 fmodf@@LIBC
@@ -19521,9 +19637,9 @@ Found an action set without a name.
 Found %d chunks ( %d used previously ) for depot %u, took %lld minutes, %lld seconds
 Found %d current buckets:
 Found multiple action sets with the same name: %s
+Found no supported CDM versions, using last known good version %s
 Found %u files for mapping: %s %s -> %s
 Found %u files (%u MB) for depot %u
-Found unsupported CDM version %s, using last known good version %s
 Found %u pre-existing matching files for depot %u (%llu bytes)
 four_buttons
 FovasVideo
@@ -19623,6 +19739,7 @@ from_active_packets_recv
 from_active_time
 from_connection_id
 from_dropped_reason
+from_identity
 from_identity_string
 from_ip
 fromitemid
@@ -19766,6 +19883,7 @@ g6`j@
 g6`J@
 G6`J@
 g6`N@
+G6`N@
 G6`R@
 g6u:@
 g6u.@
@@ -19806,7 +19924,6 @@ game_id
 [GameID %llu] Processing screenshot #%d/%d - %s
 [GameID %llu] Revert file upload %s finished with result %s
 [GameID %llu] Screenshot file %s did not exist in remote cache
- --gameid %llu --server %s --transport %s
 [GameID %llu] Setting screenshot metadata finished with result %s
 [GameID %llu] Uploading %s finished with result %s
 GameID mismatch. Arg %d Expected %d 
@@ -20168,9 +20285,13 @@ GetConfigForAppAndController
 GetConfigInt
 GetConfigStoreKeyName
 GetConfigString
+GetConfigValue
 GetConflictingFileTimestamps
 GetConnectedUniverse
 GetConnectedWirelessEndpointSSID
+GetConnectionInfo
+GetConnectionName
+GetConnectionUserData
 GetConsoleSteamID
 GetControllerActivityByType
 GetControllerChipID
@@ -20222,6 +20343,7 @@ GetDependentApps
 GetDepotBuildResult
 GetDepotPatchInfo
  GetDesiredControllerConfigForApp
+GetDetailedConnectionStatus
 GetDetails
 Get details for Broadcast Clips
 GetDeviceAuthorizationInfo
@@ -20369,6 +20491,7 @@ GetHTTPResponseHeaderSize
 GetHTTPResponseHeaderValue
 GetHTTPStreamingResponseBodyData
 GetIClientHTMLSurface
+GetIdentity
 GetImageSize
 (Get information about a single chat room
 /Get inital parameters to start building a depot
@@ -20425,6 +20548,7 @@ GetLinkedAccountInfo
 GetLinkFilterHashes
 GetLinkFilterHashPrefixes
 GetLinkFilterListVersion
+GetListenSocketAddress
 GetListenSocketInfo
 Get list of authorized devices
 <Get list of authorized devices user played borrowed games on
@@ -20477,6 +20601,7 @@ GetLocalLibraryTrackAndAlbumCountOfArtistName
 GetLocalLibraryTrackCount
 GetLocalLibraryTrackCountForAlbumID
 GetLocalLibraryTrackEntry
+GetLocalPingLocation
 GetLocalScreenshot
 GetLocalScreenshotByHandle
 GetLocalScreenshotCount
@@ -20511,6 +20636,7 @@ GetMostRecentAchievementUnlocked
 GetMostRecentlyAddedAlbums
 GetMostRecentlyPlayedAlbums
 GetMoveAppProgress
+GetMultipleAppDataSections
 "GetMutualFriendsForIncomingInvites
 GetMyChatRoomGroups
 #Get names for list of users in chat
@@ -20603,6 +20729,7 @@ GetQueueCount
 GetQueueEntryData
 GetQueueEntryOrigin
 GetQueueEntryURI
+GetQuickConnectionStatus
 GetQuota
 GetRecentMessages
 GetRemoteClientAppState
@@ -20643,6 +20770,7 @@ GetRouterAddressIP4
 GetRTMPInfo
 GetRunningGameID
 GetRunningGamePID
+GetRuntimeInformation
 +Gets a desired controller config for an app
 ;Gets a list of server IP addresses given a list of SteamIDs
 ,Gets a list of servers given a filter string
@@ -20671,6 +20799,7 @@ GetSessionClientName
 GetSessionCount
 GetSessionDetails
 GetSessionID
+GetSessionState
 GetSessionSteamID
 GetSettings
 GetShaderDepotsTotalDiskUsage
@@ -20723,6 +20852,7 @@ GetSteamGuardHistoryEntry
 GetSteamID
 GetSteamUILanguage
 GetSteamVRAppId
+GetSteamVRPid
 ,Gets the file ID of the personalization file
 *Gets the last-played times for the account
 *Gets the user's Cloud file encryption key.
@@ -20987,16 +21117,14 @@ H*0"ZOW
 H-1*3
 <h1>%s</h1>
 h2@9)
+h2@9)5D
 h2@9)A
-h2@9)AD
 h2@9h
 h2\9hj
 h2D9H,
-h2G9@
-h2G9H
+h2G9)
 h2j9H
 h2Q9h
-h2z9if
 H3@9(
 H3@9H
 H3@9H	
@@ -21020,12 +21148,15 @@ h6D9h
 h6E9u6
 H6`f@
 H6`F@
-h6F9)-
+h6F9	-
+h6G9h
+h6G9H
 H6h*@
 h6i&@9
 h6`J@
 H6`J@
 *h6J9
+h6`N@
 H6`N@
 h6`r@
 h6`R@
@@ -21038,7 +21169,6 @@ H6u"@
 H6u*@
 H6u&@
 h6u2@
-H6`v@
 H6`V@
 h6z9(
 h6z9h
@@ -21111,14 +21241,17 @@ h"@9h
 h*@9h
 h"@9H
 	h@9(h@9q
+h"@9i
 H+@9i
 h"@9iK
 h"@9IK
 H9n&B
+h"@9	r
 h&A)*
 @Ha8a
+h"A9)EC
+h#a9H
 h:A9i
-h"A9)QC
 ?HAI	81	9dcG'
 	HAI8xpH
 haI)|pL<
@@ -21170,15 +21303,15 @@ hb@9(
 hb@9	
 h^B9(
 h^B9	
-hB{9?
 hB@9!
+hB@9?
 hB@9(
 hB@9(-
 hB@9(:
 hB@9(	
 hB@9)
 h"B9(a
-hB@9)]C
+hB@9@b
 hb@9h
 hb@9H
 h~B9h
@@ -21194,7 +21327,9 @@ hB@9H
 hB@9H4
 hB@9hF
 hB@9i
+hB@9)QC
 hB@9t
+hB@9Tb
 hbA9(
 hBA9(
 hbA9h
@@ -21208,7 +21343,7 @@ hbd9H
 hbF9	
 hbf9h
 hbF9H
-hBG9h
+hbG9h
 hBG9H
 hBI9h
 hbJ*("
@@ -21234,15 +21369,12 @@ hc@9`
 hc@9	
 hc@9h
 hC@9h
-hcH9h
-hcH9H
 h&C)j^@
 !hcK+dbF&
 hconnection
 hcontent
 hcontent_file
 hcontent_preview
-hcV9H
 hd8$!
 hd8% 
 hd8%,
@@ -21260,7 +21392,6 @@ h"D9H
 h,DUu
 he8$he8
 he8%je8c
-h&E9iq
 </head>
 <head>
 HEAD 
@@ -21287,7 +21418,7 @@ hex_to_string
  Hf8a
 hf8fif8
 *hF@9
-hF@9)1A
+hF@9)!A
 hf@9h
 hf@9H
 hF[9h
@@ -21482,6 +21613,7 @@ HOptional: The steamid of the broadcast whose details you are requesting."
 HORI Wireless Switch Pad
 horizontal resultion
 %host%
+host_account_id
 host_clientid
 HostConfirmGameStart
 hostname
@@ -21499,6 +21631,7 @@ host_suspend
 - host %s, vhost %s, cell %u, %s (#%u), %u connections of %u max
 Host to GET the file from
 houseIdentifier
+How did we already get connected?  We should be finding route?
 How many at maximum to return.
 +how many seconds between session heartbeats
 +how many seconds between session heartbeats">
@@ -21524,6 +21657,8 @@ hRH9h
 hRX9H
 /\HS7_
 !Hs8b
+h#S9h
+h#S9H
 hscreenshot
 HShould notify the user that the item was added to their Steam Inventory.
 h_steam_pipe
@@ -21574,6 +21709,7 @@ http_proxy
 HTTP_PROXY
 http request
 , http request cache too busy
+HTTPRequestCompleted_t
 'HTTP requests to make to perform upload"
 HTTP Response being sent for: %s http%s://%s %s
 http:%s
@@ -21600,8 +21736,8 @@ https_proxy
 HTTPS_PROXY
 https proxy request
 http://%s/rangecheck
-https://redirector.gvt1.com/edgedl/widevine-cdm/current.txt
 https://redirector.gvt1.com/edgedl/widevine-cdm/%s-%s.zip
+https://redirector.gvt1.com/edgedl/widevine-cdm/versions.txt
 http://%s%s
 https:%s
 https://%s/cmping/
@@ -21660,7 +21796,6 @@ hvUyh
 H{vxH
 hW@9(
 HWID Set
-h"X9(
 !h|xa
 h`xI7X7i7 6
 	h.xM
@@ -21903,7 +22038,6 @@ i	 7I
 %i'8@
 %i&8@
 	i*8#
-i)85u
 i;8a 
 *i(8B
 i"8b@@9!
@@ -21928,13 +22062,13 @@ i*8j&W
 *i(8kB
 i+8L!
 i(8m&W
-i)8Us
+i)8uu
 i^@9)
 i^@9	
 i~@9*
 =	I@9
 	I@9)
-i98D!
+#I97+
 i&@9g"@9
 i&@9h"@9J!K
 i^@9i
@@ -21961,6 +22095,7 @@ ib@9i
 ib@9I
 i"B9i
 iB@9i
+i&B9I
 iB@9I
 <iBA9
 ibA9J
@@ -22422,7 +22557,10 @@ ignoring out of range rgb_to_gray coefficients
 Ignoring P2P CMsgSteamDatagramConnectRequest from %s; can't get NetworkingMessages interface!
 Ignoring P2P CMsgSteamDatagramConnectRequest from %s; missing required fields
 Ignoring P2P connection request from %s.  We cannot accept it since we don't have a cert from Steam yet!
+Ignoring P2P connect_ok from %s, since they initiated the connection
+Ignoring P2P connect request through Steam backend from %s; no virual_port!
 Ignoring P2PFailure notification about unknown ConnectionID %u from %s
+Ignoring P2P signal from %s.  For our cxn #%u, they first used remote cxn #%u, not using #%u
 Ignoring PLTE chunk in grayscale PNG
 Ignoring PS4 controller due to duplicate serial number
 Ignoring request by %s to migrate to %s.  Can't locate requesting relay shared cluster data???
@@ -22523,6 +22661,7 @@ i"I)j"@
 	iix?
 	iix?! k
 i"@)j
+*ij8*
 	ij8!
 ij8/<
 ij8(	
@@ -22757,6 +22896,7 @@ inhibitPolicyMapping
 Inhibit Policy Mapping
 In Hours
 .init_array
+InitAuthentication
 InitBroadcastAudio
 InitBroadcastVideo
 InitDepotBuild
@@ -22876,7 +23016,9 @@ INT_ENGINE_MODULE_INIT
 Interac
 interaction.ie
   Interface:    %d
+interface_name
 interface_number
+interfaces_created
 +Interface to build and upload depot contentB
 Interlace handling should be turned on when using png_read_image
 Internal account ID
@@ -23036,6 +23178,7 @@ Invalid FileMapping for depot %d, DepotPath not set.
 Invalid FileMapping for depot %d, LocalPath not set.
 Invalid filename to UnlinkCacheFile
 Invalid file system
+Invalid FileWriterItem_t
 Invalid filter method in IHDR
 Invalid filter type specified
 invalid fips mode
@@ -23312,7 +23455,6 @@ InviteToBroadcast
 invite_token
 InviteUserToChatRoom
 InviteUserToGame
-InviteUserToGame( '%s', '%s' ) cannot be called on a user who is not a friend
 InviteUserToGame( '%s', '%s' ) has a connect string that is too long (max length: %d)
 InviteUserToGame( '%s', '%s' ) has an invalid steamID set
 InviteUserToLobby
@@ -23374,7 +23516,6 @@ i"P)?
 ip_addr"8
 	ipaddress
 ip_address
-IPAddress
 IP Address
 ipaddress_actual
 IP Address Banned
@@ -23432,7 +23573,8 @@ iR@9)
 iR@9	
 iR@9i
 iR@9I
-ir@9@j
+ir@9`j
+IRawUDPSocket::Close
 IRegistryInterface
 IReturns the desired ratings board and maximum rating to show on the store
 irT9h
@@ -23505,6 +23647,7 @@ is_from_external_source
 is_generic_gamepad
 is_generic_joystick
 IsGift
+is_hidden
 IsHidden
 isinbundle
 IsInFriendsUIBeta
@@ -23564,6 +23707,7 @@ is_rtmp
 IsSecurityRequired
 IsSet
 is_shared_file
+is_site_license_lock
 isspace
 isspace@@LIBC
 " is specified along with field "
@@ -23637,7 +23781,6 @@ iswspace
 iswspace@@LIBC
 isxdigit
 isxdigit@@LIBC
-!it8?
 italian
 Itau Online
 item	%02x%02x%02x%02x%02x%02x%02x%02x
@@ -23664,6 +23807,7 @@ it_IT
 itu-t
 ITU-T
 )iu8?	
+iu8r0
 &iuml;
 &Iuml;
 [i:%u:%u]
@@ -23707,7 +23851,6 @@ ixaustralia
 i"X)j^@
 i{xP9
 i{xrF 
-	I@y<
 IyixJylx+
 IYixK9
 i~@y?! k
@@ -23730,14 +23873,11 @@ j1@y_
 J2@@9y
 j2	)k
 	J3p_8
-j48sZ
 j48t^@
 J5JJJ}
 J5JJL}
-j68f/
 j68uj9
 `j78*
-{j(8<
 @j!8!
 j`8!%
 j`8"$
@@ -23780,11 +23920,10 @@ j`8!i 8
 j{8	i;8{
 j)8kj*
 j 8m	
-j!8n(
+j*8*q
 j`8s:
 j(8`Z
 j(8(Z@
-j$8Z/
 `j@9 
 `J@9 
  J9?@
@@ -23934,7 +24073,6 @@ JJ5Jj
   JJ5Jj
  JJ5Jjj
  JJ5JJj
-jj)8@?
 J`j"8
 J`j$8
 	Jj*@9f
@@ -24079,7 +24217,6 @@ jv8?)
 jv8?5
 =jv@9
 jw8?)
-j(x}.
 J%X@9)
 	J	x@9(x@9J
 j(xhZF
@@ -24120,9 +24257,8 @@ k5KJj}
 k5KJk}
 _k68(
 *_k68
-k785[
+<k78h
 ?k78h
-<k78hS
 !k|8?$
 @k"8`
 *`k&8
@@ -24131,13 +24267,12 @@ k785[
 *!k 8	
 *$k`8%
 k`8,*
-k:8'%
 k)8		
 ?k88h
-?k88hB{9
+?k88hB@9
+_k88st
 (k88T
 ?K88W
-_k88"x
 "k`8 @@9@
 *&k`8a
 k`8a"
@@ -24318,6 +24453,7 @@ k_EControllerElementTypeThumb
 &k_EControllerElementTypeTrackpadCenter
 $k_EControllerElementTypeTrackpadLeft
 %k_EControllerElementTypeTrackpadRight
+k_ECrosspostEvent
 "k_EDeviceDisconnectMethodBluetooth
 &k_EDeviceDisconnectMethodFeatureReport
 %k_EDeviceDisconnectMethodOutputReport
@@ -24946,6 +25082,7 @@ k_EStreamDeviceFormFactorTablet
 k_EStreamDeviceFormFactorTV
  k_EStreamDeviceFormFactorUnknown
 k_EStreamTransportNone
+k_EStreamTransportSDR
 k_EStreamTransportUDP
 k_EStreamTransportUDPRelay
 k_EStreamTransportWebRTC
@@ -25067,7 +25204,7 @@ Ki,8*
 Ki)88
 Ki)8i*@
 K@i`8~K
-ki8kQG
+ki8kMG
 KickChatMember
 KickChatMember() passed invalid chat room %s
 kicked
@@ -25189,6 +25326,7 @@ kZG9h
 (@L$ 
 	*L!+
 l1@9tQ@
+L3L9j
 l4d.com
 l5A)h
 l8skq8
@@ -25204,6 +25342,7 @@ LABEL_OPTIONAL
 LABEL_REPEATED
 LABEL_REQUIRED
 Lagged packet remains in queue after socket destroyed or queued for destruction!
+LagPacket
 LAHFSAHF
 LAI)haL<|p		
 *laM-\SO
@@ -25229,8 +25368,10 @@ last_call_module_crc
 last_call_sysid_routing
 last_changenumber
 last_ecallresult
+last_linux_playtime
 last_logoff
 last_logon
+last_mac_playtime
 last_message
 Last Message Repeated %d times.
 lastmessage_since
@@ -25244,6 +25385,7 @@ last octet invalid
 last_ordinal
 LastOwner
 lastplayed
+last_played_time
 last_playtime
 LastPlayTime
       last read call: %d ms ago
@@ -25264,6 +25406,7 @@ lastupdated
 lastupdatedB8
 last_update_steamid
 	last_view
+last_windows_playtime
 latam
 latency_datacenter_ids
 latency_ping_ms
@@ -25441,6 +25584,7 @@ libpng error: %s
  libpng version 1.5.13 - September 27, 2012
 libpng version 1.5.13 - September 27, 2012
 libpng warning: %s
+library
 library bug
 LibraryFolders
 Library folder "%s" is FAT32, NTFS required.
@@ -25546,6 +25690,7 @@ Listening for connections on: %s
 Listening for %s broadcast on: %hu
 listen@@LIBC
 Listen socket child list corruption!
+Listen socket handle bookkeeping bug!
 list error
 ListHashes
 )List of bookmarks we found. Can be empty.":
@@ -25688,6 +25833,7 @@ Locked account ID %u
 locked_library
 LockedLibrary
 Locking Failed
+Lock not held.  %s
 lock_parental_lock
 LockParentalLock
 *.log
@@ -26130,6 +26276,7 @@ MessageSets cannot have fields, only extensions.
 message_set_wire_format
 Message size %d is too big.  Max is %d
 Messages session %s: Can't create P2P connection.  %s
+Messages session %s: Can't create P2P signaling.  %s
 Messages session %s: connection [%s] is idle timing out, but we have a partial message from our peer.  Assuming a message was sent just at the timeout deadline.   Extending timeout.
 Messages session %s: connection [%s] is idle timing out.  But we still have unacked sent data?!?  This seems bad
 Messages session %s: connection [%s] %s: %d %s
@@ -26164,6 +26311,7 @@ Method AddFriend() not implemented.
 Method AddPromoItem() not implemented.
 Method AddRoleToUser() not implemented.
 Method AllocateRelayServer() not implemented.
+Method AllocateSDR() not implemented.
 Method AllocateTURNServer() not implemented.
 Method AreFilesInSubscriptionList() not implemented.
 Method AuthorizeCurrentDevice() not implemented.
@@ -26174,6 +26322,7 @@ Method CancelReservation() not implemented.
 Method CanSubscribe() not implemented.
 Method CDNReport() not implemented.
 Method ChangeNumOpenSlots() not implemented.
+Method ClientAppInterfaceStatsReport() not implemented.
 Method ClientBeginFileUpload() not implemented.
 Method ClientCommitFileUpload() not implemented.
 Method ClientConflictResolution() not implemented.
@@ -26439,12 +26588,15 @@ Method RevokeFriendInviteToken() not implemented.
 Method RevokeInviteToGroup() not implemented.
 Method SafeModifyItems() not implemented.
 Method SaveChatRoomGroup() not implemented.
+methods_called
 Method SearchForGame() not implemented.
 Method SearchForPlayers() not implemented.
 Method SendBroadcastStateToServer() not implemented.
 Method SendChatMessage() not implemented.
 Method SendEmail() not implemented.
 Method SendMessage() not implemented.
+Method SendRemotePlaySessionStarted() not implemented.
+Method SendRemotePlaySessionStopped() not implemented.
 Method SendRemotePlayTogetherPacket() not implemented.
 Method SendShader() not implemented.
 Method SendSteamBroadcastPacket() not implemented.
@@ -26881,7 +27033,6 @@ mysubscriptions
 my_timestamp
 @(!N 
 n >= 0
- N!@1
 N10CIPCServer13CThreadClientE
 N11SteamStdLib12CCommandLineE
 N11SteamStdLib12ICommandLineE
@@ -26945,7 +27096,9 @@ N25SteamNetworkingSocketsLib34CSteamNetworkConnectionToSDRServerE
 N25SteamNetworkingSocketsLib34CSteamNetworkingSocketsSteamClientE
 N25SteamNetworkingSocketsLib34CSteamNetworkListenSocketDirectUDPE
 N25SteamNetworkingSocketsLib35CSteamNetworkingSocketsCallbackBaseE
+N25SteamNetworkingSocketsLib36CP2PConnectionSignaling_SteamBackendE
 N25SteamNetworkingSocketsLib36CSteamNetworkConnectionSDRClientBaseE
+N25SteamNetworkingSocketsLib36P2PSignalingRecvContext_SteamBackendE
 N25SteamNetworkingSocketsLib37CSteamNetworkingSocketsCallResultBaseE
 N25SteamNetworkingSocketsLib40CSteamNetworkConnectionlocalhostLoopbackE
 N25SteamNetworkingSocketsLib8IThinkerE
@@ -27179,6 +27332,7 @@ new_session
 NewsItemUpdate
 news_language
 new target
+new_to_group
 nexon_dota2
 next_cursor
 Next packet in multi-packet UDP message is too large and would exceed initially allocated buffer
@@ -27336,6 +27490,7 @@ noise_gate_level
 no issuer certificate
 no issuer details
 No ISteamHTTP.
+No ISteamNetworkingSocketsSerialized
 No ISteamNetworkingSocketsSerialized; old steam client binaries
 No ISteamUtils: Using local time!
 no key
@@ -27878,13 +28033,13 @@ o6afA9
 o6aJ@
 O6aj@
 O6aJ@
+o6aN@
 O6aN@
 o6ar@
 o6aR@
 O6ar@
 O6aR@
 o6aV@
-O6av@
 o6az@
 O6az@
 O6`B@
@@ -27910,6 +28065,7 @@ O6|@L
 O6`N@
 o6`r@
 o6`R@
+O6`r@
 O6`R@
 O6t.@
 O6t&@
@@ -27921,12 +28077,10 @@ O6u&@
 o6u6@
 o6uB@
 o6`V@
-O6`v@
 o6`z@
 O6`z@
 O7hB@
 @O@9!
-O9(1E
 O	@9P5@9S
 }o]9s
 &oacute;
@@ -28203,6 +28357,7 @@ Only thread can stop self: Use a higher-level protocol
 only TLS 1.2 allowed in Suite B mode
 only tls allowed in fips mode
 onlyuser
+OnNetworkConfigFetchCompleted
 OnNotificationsRequested
 OnP2PLocalCandidateFound( #%d, %s ) %s, %llu sending candidates to %s, %llu
 OnP2PStateChanged() for %s (old=%d, new=%d) - %s - %s
@@ -28210,6 +28365,7 @@ OnPacketArrived() received bad packet for socket #%d, ignoring
 OnPacketArrived() received disconnecting message for socket #%d, destroying
 OnPacketArrived() received duplicate packet %d on socket #%d, ignoring
 OnPacketArrived() received message from unknown m_unDestID %d
+OnPlaceholderStateChanged
 OnReceiveDataMsg() on socket #%d discarding message, not connected
 OnReservationCompleted
 OnReservationCompleted() failed, invalid Beacon ID
@@ -28250,6 +28406,7 @@ Open Internet
 OpenInviteToTradeDialog
 open@@LIBC
 open_quickmenu
+OpenRawUDPSocketInternal
 openssh-key-v1
 OPENSSH PRIVATE KEY
 OpenSSL 1.0.2m  2 Nov 2017
@@ -28305,6 +28462,7 @@ OpenSSL X9.42 DH method
 OpenStreamingSession
 openvr_action_manifest_path
 openvr_api.dll
+openvr.component.vrcompositor
 openvr_controller_bindings
 openvr_mime_types
 openvr/openvrpaths.vrpath
@@ -28358,6 +28516,7 @@ Option must have a name.
 Option must not use reserved name "uninterpreted_option".
 options
 OPTIONS
+Options list is NULL, but nOptions != 0?
 Order: 
 orderid
 &ordf;
@@ -28697,7 +28856,6 @@ owner_steam_id
 OwnGameplayInfo
 own_library_locked_by
 ownsdlc
-O@x*"
  *O y
 O@yh"
 O!YNO
@@ -28797,7 +28955,6 @@ P7)_@y)
 =)p@9 
 	p@9(<
 p@9)<
-	!P9	
 ,p@90t@9Op@9Ct@9
 *p@94|@9B
 #P@9&\@9B
@@ -29001,6 +29158,7 @@ partyName
 Party-related servicesB
 passed a null parameter
 passed null parameter
+PAssertion Failed: &pResult->m_steamNetworkingSockets == this
 password
 password based MAC
 passwordhash
@@ -29141,8 +29299,8 @@ Peer isn't running the app
 Peer is running old software and needs to be udpated
 Peer is running old software and needs to be updated.  (V%u, >=V%u is required)
 peer key error
+Peer must be identified by SteamID
 Peer sent CMsgSteamDatagramP2PRoutes_RelayCluster without a ping?  Why bother?
-Peer sent different ConnectionIDs for our same connectionID
 Peer sent us a route with a score, but didn't sent ping to relay on their end?!
 Peer sent us a route with a score of %d, but ping to relay on their snd is %d.  Does not compute.
 Peer sent us a route without a score?
@@ -29395,7 +29553,6 @@ Pinging %s (%s).
 Ping location: %s
 Ping measurement completed
 ping_ms
-ping_ms_from_cell_search
 ping_ntile_50th
 ping_ntile_5th
 ping_ntile_75th
@@ -29728,9 +29885,12 @@ play_ptt_sounds
 "play_sessions": [{ "appid": %u, "session_time_start": %u, "session_time_end": %u }]
 playtime_2weeks
 playtime_forever
+playtime_linux_forever
+playtime_mac_forever
 playtime_seconds
 playtime_stats
 PlaytimeStats
+playtime_windows_forever
 Please set the game install path to something other than the Steam install folder
 .  Please update your library.  If you compiled the program yourself, make sure that your headers are from the same version of Protocol Buffers as your link-time library.  (Version verification failed in "
 p\lHtW
@@ -30009,6 +30169,7 @@ privateKey
 Private Key
 Private-Key
 PRIVATE KEY
+private_key_data
 Private-Key: (%d bit)
 private key decode error
 private key does not match certificate
@@ -30381,7 +30542,6 @@ pZlNr
 ?@	q!#
 [[[q[
 [[q[[
-]<q@	
 **	@q
 *		@q
 Q:   
@@ -30391,6 +30551,7 @@ Q0i/8
 Q0&	S
 q_<1b
 Q1iq8Rir8`i`8
+	q29D
 q`2D9 
 !@q#3
 q`3@9 
@@ -30400,7 +30561,6 @@ q#4@9 8
 q`6D9 
 q`7@9 
 q#8@9 <
-=	q?9
 q`/@9 
 q`'@9 
 q`#@9 
@@ -30439,7 +30599,6 @@ Q-c($
 QC-nhj
 qcRFy
 qcStatements
-QC)x+
 q`>D9 
 q`:D9 
 q`.D9 
@@ -30449,7 +30608,6 @@ q`&D9
 q'D@9$L@9#H@9
 QDid the user choose to keep the files local to the machine they are on right now?""
 `@ `QE
-!^#QE
 qE9?<
 QE9H!
 Qe#@9y'
@@ -30497,7 +30655,6 @@ q@!Ozj5
 QPeA~S
 [[qq[
 +QQ 3K%
-	Qq9i
 QQQYQ
 QQYQQ
 QQYYQ
@@ -30514,7 +30671,6 @@ qsort@@LIBC
 *qSyJ
 Qt#@9!
 '#^QTy
-qu9H5
 	qualified
 qualifiers
  --quality %d
@@ -30571,6 +30727,7 @@ QuitAllVR
 quit_application
 QuitApplication
 &quot;
+	Qv9i
 q`VD9 
 qwest
 qwilt
@@ -30582,7 +30739,6 @@ Q/xtJ2
 **qXU
 Q?Y(xhv@
 q 	@z
-	qz9	
 q Z(N
 q!Z(N!x(N2Z(NRz(N
 r:   
@@ -30596,13 +30752,14 @@ R3i*8s
 r)5IJ)}
 r)5IJ+}
 R)5IJKV
-r	!69a
+r	!69
 R6hv8
 R6hx8
 R6RJR~
+r	!79
 `r@9 
-r	!=9
-r	!:9
+r	!<9
+r	!%9
 `R@9 
 R-	@9.
 R% @9
@@ -30614,11 +30771,14 @@ r@9jq@9
 r@9lq@9
 r!9uR"9h2
 r'9xDrS
-r	a09
-r	a59}
-r	a59A
-r	a89S
-r	A 99
+r	a59?
+r	a 9
+r	a.9=
+r	A=9
+r	A	9
+r	a-9g
+r	a%9O
+r	A 9O3
 @Rack informing site manager of new inbound client PSK connection
 rackspace
 RackSystem
@@ -30663,6 +30823,7 @@ RaR@9
 Rate Limit Exceeded
 raw_file_size
 Raw stream mode only supported for TCP connections
+raw_version
 rB2pBB
 Rb&@8
 Rbg.E
@@ -30789,8 +30950,7 @@ Received CMsgSteamDatagramP2PSessionEstablished without token?
 Received connection nack from %s, connection attempt denied
 Received ConnectOK for ConnectionID %u to %s.
 Received ConnectOK for ConnectionID %u to %s, but connection already closed.
-Received ConnectOK in P2P Rendezvous for ConnectionID %u to %s.
-Received ConnectOK in P2P rendezvous message, but we are the 'server'!
+Received ConnectOK in P2P Rendezvous for cxn #%u to %s.
 Received ConnectRequest in P2P rendezvous message, but we are the 'client'!
 Received content-type: application/x-www-form-urlencoded with unsupported charset, %s
 received disconnect message for for socket #%d, vport: %d
@@ -30804,6 +30964,7 @@ Received message for connection %s associated with Messages interface, but no se
 ReceivedNewGame
 received_nosession
 Received offline message from client %llu at %s
+ReceivedP2PCustomSignal
 Received packet of invalid size %d from %s
 Received parental change notification for account %u
 Received redundant ConnectOK for ConnectionID %u to %s.
@@ -30820,8 +30981,12 @@ Received successful communication from Steam Datagram routing cluster.
 Received unexpected introducer message _ClientToTrackerAddLocalCandidates
 Received unexpected introducer message %d
 Received unexpected manifest %llu 
+Received unexpected P2P 'non connection' signal
 Received unknown control message %d from %s
 Received unreliable msg %lld offset %d twice.  Sizes %d,%d
+ReceiveMessagesOnChannel
+ReceiveMessagesOnConnection
+ReceiveMessagesOnListenSocket
 ReceiveNewLoginKey
 ReceiveRemoteCandidates( #%d ) %s, %llu accepting connection from %s
 ReceiveRemoteCandidates() %s received candidates from %s, %llu
@@ -30839,6 +31004,7 @@ recommended-private-length: %d bits
 // Recommended setting: 80, or another port that is free on your server and accessible to clients
 Reconfiguring
 Recorded backend hit cache generation %d.
+	record_id
 record length mismatch
 record overflow
 RecordSteamInterfaceCreation
@@ -30872,6 +31038,7 @@ recvmsg@@LIBC
 RecvP2PBadRoute
 Recv P2PRendezvous via Steam from %s cxn %u
 RecvPeerRoutes
+RecvUDPPacket
 RedCompra
 reddit.com
 RedeemFriendInviteToken
@@ -31004,6 +31171,7 @@ Remote Address %s (%s)
 Remote call failed
 RemoteClient
 RemoteClient.AllocateRelayServer#1
+RemoteClient.AllocateSDR#1
 RemoteClient.AllocateTURNServer#1
 RemoteClient.GetPairingInfo#1
 remoteclientjobs.cpp
@@ -31011,6 +31179,8 @@ Remote Client Listener
 remoteclientmanager.cpp
 RemoteClient.NotifyOnline#1
 RemoteClient.NotifyReplyPacket#1
+RemoteClient.SendRemotePlaySessionStarted#1
+RemoteClient.SendRemotePlaySessionStopped#1
 RemoteClient.SendRemotePlayTogetherPacket#1
 RemoteClient.SendSteamBroadcastPacket#1
 RemoteClient.SendSteamToSteamPacket#1
@@ -31027,7 +31197,6 @@ Remote File Conflict
     Remote host is in data center '%s'
 Remote peer connection: FAILED - invalid steamID
 remote_play
-RemotePlayTogether
 remote_steamcmd
 remotetime
 Remote Tokens : 
@@ -31167,6 +31336,7 @@ RequestDRMUploadToken
 requested_codeids
 Requested feature was omitted at compile time
 Requested Force create but SharedObjectMutex already created
+requested_interface_type
   Requested migration.
 Requested range not satisfiable
 RequestedSession
@@ -31311,6 +31481,8 @@ restart
 RestoreApp
 Restoring saved stack over RestoreStackFrame (%p, %p, %p, %p)
 restricted
+restricted_countries
+restricted_countries=
 Restricted country
 Restricted device
 result
@@ -31342,6 +31514,7 @@ return_access_token
 )Return child item ids in the file details
 return_children
 return_details
+returned_to_group
 return_for_sale_data
 )Return key-value tags in the file details
 return_kv_tags
@@ -31435,8 +31608,8 @@ Rhjh8h
 Rhjh8H
 Rhjh8hX
 Rhjh8tBX
-Rhjh8xJ[
-Rhj)x Y
+Rhjh8xN[
+Rhj)x@Y
 RHkh8
 r!hmx
 r	h-x
@@ -31452,9 +31625,9 @@ R	i5x
 R?i(8
 R(i*8
 R	i*8
-R	i*8]
+R	i*8b
 R*i(8h*@
-R(i*8l
+R(i*8q
 rich_presence
 RichPresence
 rich_presence_kv
@@ -31603,7 +31776,7 @@ RpE@)`	@
 RPip8
 rPipxOiox
 RPjpx
-R	Q19
+R	Q69y
 RR|))
 RRecords a serial number and the calling user's account info for warranty purposes.
 rRjmx	
@@ -31846,38 +32019,23 @@ RZqxeHq81
 [%s]: 
 %*s            
 s:   
-%s     0 - 16 KB/s:%5d  %3.0f%%
-%s      0-25  :%5d  %3.0f%%
+%s         0-25    25-50    50-75   75-100  100-125  125-150  150-200  200-300     300+
 %s%02d:%02d:%02d
 %s%02X
 %s_%03d.vpk
 %s%04x - <SPACES/NULS>
 %s	0x%x
 S0y-x
-%s    100-125 :%5d  %3.0f%%
 %s,100 127.0.0.1 stale
-%s     100  :%5d  %3.0f%%   (All packets received in order)
-%s   10-20 :%7d  %3.0f%%
-%s      1024+ KB/s:%5d  %3.0f%%
 %s.%10u.txt
+%s          <1     1-2     2-5    5-10   10-20     >20
 S11b?
 s11bS
-%s    125-150 :%5d  %3.0f%%
-%s    1-2  :%7d  %3.0f%%
-%s  128 - 256 KB/s:%5d  %3.0f%%
-%s    150-200 :%5d  %3.0f%%
-%s    16 - 32 KB/s:%5d  %3.0f%%
-%s     <1  :%7d  %3.0f%%
 S1$@9
 S1bIJ)=
-%s    200-300 :%5d  %3.0f%%
-%s    >20  :%7d  %3.0f%%
 s23_clnt.c
 s23_lib.c
 s23_srvr.c
-%s     25-50  :%5d  %3.0f%%
-%s  256 - 512 KB/s:%5d  %3.0f%%
-%s    2-5  :%7d  %3.0f%%
 %s %2d %02d:%02d:%02d %d%s
 %s %2d %02d:%02d:%02d%.*s %d%s
 S2I_ASN1_IA5STRING
@@ -31885,8 +32043,6 @@ s2i_ASN1_INTEGER
 s2i_ASN1_OCTET_STRING
 S2I_ASN1_SKEY_ID
 S2I_SKEY_ID
-%s      300+  :%5d  %3.0f%%
-%s    32 - 64 KB/s:%5d  %3.0f%%
 s3_both.c
 s3_cbc.c
 s3_clnt.c
@@ -31896,45 +32052,27 @@ s3_pkt.c
 s3_srvr.c
 %s:443
 S)4@9
-%s     <50  :%5d  %3.0f%%
-%s     50-75  :%5d  %3.0f%%
-%s    50-75 :%5d  %3.0f%%
-%s    50%% of intervals >= %3d%%
-%s    50%% of pings <= %4dms
-%s    50%% of speeds <= %4d KB/s
-%s    5-10 :%7d  %3.0f%%
-%s 512 - 1024 KB/s:%5d  %3.0f%%
-%s     5%% of pings <= %4dms
-%s     5%% of speeds <= %4d KB/s
-%s   64 - 128 KB/s:%5d  %3.0f%%
+%s    %6.1f%%%6.1f%%%6.1f%%%6.1f%%%6.1f%%%6.1f%%%6.1f%%%6.1f%%%6.1f%%
 S6jh8)
 %s %6u %s %5x %s
-%s     75-100 :%5d  %3.0f%%
-%s    75-90 :%5d  %3.0f%%
-%s    75%% of intervals >= %3d%%
-%s    75%% of pings <= %4dms
-%s    75%% of speeds <= %4d KB/s
+%s    %7.1f%%%7.1f%%%7.1f%%%7.1f%%%7.1f%%%7.1f%%
+%s    %7d%7d%7d%7d%7d%7d%7d%7d%7d
 S(7iV@9iU07iV@9	W87iZ@9
+%s    %8.1f%%%8.1f%%%8.1f%%%8.1f%%%8.1f%%%8.1f%%%8.1f%%%8.1f%%%8.1f%%
 S#>87`
 S%8@9
+%s    %8d%8d%8d%8d%8d%8d
 S& @9
 S	(@9
-%s    90-95 :%5d  %3.0f%%
-%s    95-97 :%5d  %3.0f%%
-%s    95%% of intervals >= %3d%%
-%s    95%% of pings <= %4dms
-%s    95%% of speeds <= %4d KB/s
-%s    97-99 :%5d  %3.0f%%
-%s    98%% of intervals >= %3d%%
-%s    98%% of pings <= %4dms
-%s    98%% of speeds <= %4d KB/s
-%s     99+  :%5d  %3.0f%%
 s@9b;
 S@9b;
+%s    %9d%9d%9d%9d%9d%9d%9d%9d%9d
 S9e(%
 s@9h0
+S@9!I
 S9jZT9k
 S9v.i
+sA9":
 \%s_*.acf
 safeContentsBag
 SafeMode
@@ -31970,6 +32108,7 @@ Santander Rio
 %s/appcache/packageinfo.vdf
 %s\appcache\stats\UserGameStatsSchema_%s.bin
 %s\appcache\stats\UserGameStats_%u_%s.bin
+'%s' appears to be a directory - please specify your actual game binary
 %s [AppID %u] Init cache request complete
 %s/appworkshop_%u.acf
 SaREy
@@ -32136,7 +32275,6 @@ s->d1->w_msg_hdr.msg_len + ((s->version==DTLS1_BAD_VER)?3:DTLS1_CCS_HEADER_LENGT
 %s: (%d bit)
 SDDEy)
 SDDFy
-%s    dead  :%5d  %3.0f%%   (Expected to receive something but didn't)
 [%s] decode pkt %lld
 [%s] decode pkt %lld abort.  %lld bytes reliable data buffered [%lld-%lld), new size would be %lld to %lld
 [%s] decode pkt %lld abort.  Reliable stream already has %d fragments, first is [%lld,%lld), last is [%lld,%lld), new segment is [%lld,%lld)
@@ -32466,8 +32604,6 @@ Sending ConnectRequest for ConnectionID %u to %s via primary relay %s.
 sending disconnect message for socket #%d, vport: %d
 Sending first queued request for %s
 Sending of an email failed
-Sending P2P ConnectionFailure via Steam to %s cxn %u (reason %d %s)
-Sending P2PRendezvous via Steam to %s from cxn %u (%s)
 sending unbuffered data
 sending unbuffered data after immediate disconnect
 SendItemDropHeartbeat
@@ -32479,6 +32615,8 @@ SendLocalDeviceAuthToken: token ownerID %u, token ID %llu
 SendMessage
 SendMessageAndAwaitResponse
 SendMessageOnSocket
+SendMessageToConnection
+SendMessageToUser
 SendMethod
 sendmsg
 SendMsg() failed, more that %d packets queued for send. Discarding packet
@@ -32501,6 +32639,8 @@ send_path_prefixes
 SendQueryUGCRequest
 SendRateMax
 SendRateMin
+SendRemotePlaySessionStarted
+SendRemotePlaySessionStopped
 SendRemotePlayTogetherPacket
 send reports about broken install scripts
 SendResumeRequest
@@ -32513,6 +32653,7 @@ Send thumbnails to relay
 SendThumbnailToRelay
 sendto
 sendto@@LIBC
+SendUDPacket
 send_unlock_on_success
 SendUserConnectAndAuthenticate
 SendUserConnectAndAuthenticate called with invalid cubAuthBlobSize
@@ -32526,6 +32667,7 @@ sensitivity_vert_scale
   Sensor %d: bias %hd, sensitivity %.4f
 Sentiment
 Sent message: %s - %u bytes
+Sep  5 2019
 seq_num
 seq_num_c2r
 seq_num_e2e
@@ -32627,6 +32769,7 @@ Service method '%s' registered without an initialization function.
 ServiceModuleCall
 ServiceOptions
 Service Read Only
+ServiceThread
 Service Unavailable
 session
 session_data
@@ -32640,6 +32783,7 @@ SessionIDProcess
 session_inactivity_timeout
 sessionkey
 session_length_sec
+session_length_seconds
 session_relay_routing_token
 Session Replaced
 SessionRequestCheck
@@ -32744,7 +32888,10 @@ SetComputerInUse
 SetConfigInt
 setconfig "%s"
 SetConfigString
+SetConfigValue
 SetConnectionDetails
+SetConnectionName
+SetConnectionUserData
 SetControllerActiveAccount
 SetControllerConfigFileForAppID
 SetControllerKeyboardMouseState
@@ -33121,6 +33268,8 @@ SfREyE
 %s/gameoverlayui
 SGIg8!|-
 SGIg8A
+[%s] Got P2P signal from %s.  Wrong connection type!
+[%s] Got P2P signal from wrong remote identity '%s'
 SH6tc
 's~h9g
 sha1_block_data_order
@@ -33564,8 +33713,6 @@ S`NEy
 snmpv2
 SNMPv2
 %sNo connection quality distribution available.  (%d measurement intervals)
-%sNo connection recieve speed distribution available.  (%d measurement intervals)
-%sNo connection transmit speed distribution available.  (%d measurement intervals)
 %sNo lifetime stats received from remote host
 Snooze
 %sNo ping distribution available.  (%d samples)
@@ -33617,6 +33764,8 @@ Software\Valve\Steam\Apps\%d
 Software\Valve\Steam\Apps\%d\betahash_%s
 Software\Valve\Steam\Apps\%d\DisableUpdatesUntil
 Software\Valve\Steam\Apps\%d\LastPlayed
+Software\Valve\Steam\Apps\%d\Playtime
+Software\Valve\Steam\Apps\%d\Playtime2wks
 Software\Valve\Steam\Apps\%d\ViewedLaunchEULA
 Software\Valve\Steam\Apps\%u
 Software\Valve\Steam\Apps\%u\BadgeData
@@ -33647,7 +33796,6 @@ Software\Valve\Steam\MTBF
 Software\Valve\Steam\NCTF
 Software\Valve\Steam\NoSavePersonalInfo
 Software\Valve\Steam\PercentDefaultWebSockets
-Software\Valve\Steam\PingTimeForCurrentCellID
 Software\Valve\Steam\PlayerLevel
 Software\Valve\Steam\Rate
 Software\Valve\Steam\RecentDownloadRate
@@ -33735,6 +33883,7 @@ Spectator Server name '%s' normalized to '%s'
 SPEED
 [%s] Peer acked our routes for revision %u, but our latest revision is %u!
 Spending limit exceeded
+%s    perfect    99+  97-99  95-97  90-95  75-90  50-75    <50   dead
 %s/personalization.vdf
 spew_controller_loss
 Spews sent net messages
@@ -33781,7 +33930,6 @@ src_clientid
 [%s] Received P2P routes, revision %u.  Contains %u clusters and %u routes
 [%s] Received P2PSessionEstablished from %s
 [%s] Received Stats while in state %d.  Rejecting packet with ConnectionClosed message.
-%sReceive speed distribution:
 %s    Recv:%11s pkts %15s bytes
 %sRecv:%6.1f pkts/sec%6.1f K/sec
 [%s] Recvd %s stats from %s:%s
@@ -33842,7 +33990,6 @@ srtp protection profile list too long
 srtp unknown protection profile
 srvping
 [%s] RX msg %lld offset %d+%d=%d %02x ... %02x
-%sRX Speed histogram: (%d total samples)
          * %s %s
    "%s"="%s" 
  %s=%s
@@ -33881,9 +34028,10 @@ sseconst.cpp
 %s\Secret
 [%s] Selecting %s as backup #%d (%s)
 [%s] Selecting %s as primary.  (%s)
-[%s] Sending graceful P2P ConnectionClosed via Steam, remote cxn %u
+[%s] Sending graceful P2P ConnectionClosed, remote cxn %u
 [%s] Sending P2P ConnectOK via Steam, remote cxn %u
 [%s] Sending P2P ConnectRequest via Steam
+[%s] Sending P2PRendezvous (%s)
 [%s] SendMessage %s: MsgNum=%lld sz=%d
 %s    Sent:%11s pkts %15s bytes
 %sSent:%6.1f pkts/sec%6.1f K/sec
@@ -33899,7 +34047,7 @@ ssfn*
 ssh-ed25519
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJrsoE4XUc5iaNVpACyh4fobLbwm02tOo6AIOtNygpuE ID18220590129359924542
 ssh-ed25519 %nAAAA%*s%n
-[%s] Should not be trying to acccept this connection, it was not received on a listen socket.
+[%s] Should not be trying to acccept this connection, it was not initiated remotely.
 %s %s HTTP/1.0
 s->sid_ctx_length <= sizeof s->sid_ctx
 %*sSignature : 
@@ -34870,6 +35018,7 @@ steamdatagram_client_debugticket_address value '%s' isn't a valid address
 steamdatagram_messages_auth.proto
  steamdatagram_messages_sdr.proto
 steamdatagram_messages_sdr.proto
+SteamDatagramTransportLock held for %.1fms.  (Performance warning).  %s
 steam_dev.cfg
 STEAM_DISABLE_SHADER_CACHE_SETUP
 steam_display
@@ -34917,6 +35066,7 @@ steam/games/%s.%s
 SteamGameStats001
 Steam_GetAPICallResult
 Steam_GetGSHandle
+steamglobal
 Steam_GSBLoggedOn
 Steam_GSBSecure
 Steam_GSGetSteam2GetEncryptionKeyToSendToNewClient
@@ -34985,9 +35135,10 @@ steam_id_invited
 steamid_invited
 steamid_invitee
 steamid_invitees
-SteamID is the only identity type supported for P2P right now
+SteamID is the only identity type supported for P2P signaling through Steam backend
 "steamid": "%llu",
 steamid:%llu
+ --steamid %llu --gameid %llu --server %s --transport %s
 steamidlobby
 steam_id_lobby
 steamid_lobby
@@ -35027,6 +35178,7 @@ STEAMINVENTORY_INTERFACE_V003
 SteamLauncherUI
 steam://launch/%u/%s
 Steam Link
+SteamLinuxRuntime
 steamLoginSecure=%s; Secure
 Steam_LogOff
 Steam_LogOn
@@ -35057,6 +35209,8 @@ $steammessages_chat.steamclient.proto
 steammessages_chat.steamclient.proto
  steammessages_clientlanp2p.proto
 steammessages_clientlanp2p.proto
+-steammessages_clientmetrics.steamclient.proto
+steammessages_clientmetrics.steamclient.proto
 steammessages_clientserver_2.pb.cc
 "steammessages_clientserver_2.proto
 steammessages_clientserver_2.proto
@@ -35138,6 +35292,7 @@ steammessages_twofactor.steamclient.proto
 ,steammessages_unified_base.steamclient.proto":
 ,steammessages_unified_base.steamclient.proto"@
 ,steammessages_unified_base.steamclient.proto"*
+,steammessages_unified_base.steamclient.proto"\
 ,steammessages_unified_base.steamclient.proto"+
 steammessages_unified_base.steamclient.proto
 ,steammessages_unified_base.steamclient.proto"0
@@ -35181,6 +35336,9 @@ SteamNetworking006
 SteamNetworkingMessagesSession::ConnectionStateChanged after detaching from connection?
 SteamNetworkingSockets002
 SteamNetworkingSockets003
+SteamNetworkingSockets004
+SteamNetworkingSockets005
+SteamNetworkingSocketsCert_t
 ../steamnetworkingsockets/clientlib/../../clientdll/internalcallbacks.h
 ../steamnetworkingsockets/clientlib/csteamnetworkingmessages.cpp
 ../steamnetworkingsockets/clientlib/csteamnetworkingsockets.cpp
@@ -35201,6 +35359,7 @@ SteamNetworkingSockets003
 ../steamnetworkingsockets/clientlib/steamnetworkingsockets_snp.h
 ../steamnetworkingsockets/clientlib/steamnetworkingsockets_udp.cpp
 ../steamnetworkingsockets/clientlib/../steamnetworking_statsutils.h
+SteamNetworkingSocketsLowLevelDecRef
 +steamnetworkingsockets_messages_certs.proto
 +steamnetworkingsockets_messages_certs.proto"
 steamnetworkingsockets_messages_certs.proto
@@ -35209,6 +35368,7 @@ steamnetworkingsockets_messages.proto
 %steamnetworkingsockets_messages.proto"n
 )steamnetworkingsockets_messages_udp.proto
 steamnetworkingsockets_messages_udp.proto
+SteamNetworkingSocketsRecvP2PFailure_t
 SteamNetworkingSocketsRecvP2PFailure_t with unknown failure code
 SteamNetworkingSocketsSerialized001
 SteamNetworkingSocketsSerialized002
@@ -35242,6 +35402,7 @@ steampipe
 steampipepeering
 &Steam player data client notifications
 Steam/Press Master
+steamrealm
 Steam Relay Server
 Steam_ReleaseThreadLocalMemory
 Steam_ReleaseUser
@@ -35261,9 +35422,13 @@ STEAMREMOTESTORAGE_INTERFACE_VERSION012
 STEAMREMOTESTORAGE_INTERFACE_VERSION013
 STEAMREMOTESTORAGE_INTERFACE_VERSION014
 steam://run/%d/
+STEAM_RUNTIME_CONTAINER_ALWAYS
 STEAMSCREENSHOTS_INTERFACE_VERSION001
 STEAMSCREENSHOTS_INTERFACE_VERSION002
 STEAMSCREENSHOTS_INTERFACE_VERSION003
+SteamServerConnectFailure_t
+SteamServersConnected_t
+SteamServersDisconnected_t
 SteamService_Shutdown
 steamservice.so
 SteamService_StartThread
@@ -35439,7 +35604,6 @@ StoreStats
 .Stores the file ID of the personalization file
 store_tags
 %sTotals
-%sTransmit speed distribution:
 Stray data packet from host with no connection.  Ignoring.
 strcasecmp
 strcasecmp@@LIBC
@@ -35551,7 +35715,6 @@ Struct dump: %u bytes
 [%s] Trying to send a packet via steam datagram, but we were never able to establish connectivity with any relays.  Check your Internet connection.  Cannot send packet.
 [%s] Trying to send a packet via steam datagram when no network configuration is available.
 ST V*
-%sTX Speed histogram: (%d total samples)
 %s.*.txt
 [%s]:%u
 %s\%u
@@ -35659,6 +35822,8 @@ Suspended
 Suspended workshop downloads
 Suspension not allowed here
 %s.%%u.txt
+	SV9i
+	SV9I
 svcK71b.
 %*sVersion   : 
 %*sVersion: %ld (0x%lX)
@@ -35738,6 +35903,7 @@ syncstate
 syntax error in subpattern name (missing terminator)
 syntax = "proto2";
 sYqSoNK
+S#yqy
 syscall
 syscall@@LIBC
 /sys/class/block/%s/removable
@@ -35862,7 +36028,7 @@ T%(@9
 T%@@9
 T%$@9
 T	!@9)	
-T	#@9
+T	'@9
 T!/@9_0
 T",@9#0
 T#,@9$0
@@ -36177,7 +36343,7 @@ TGje8
 Th2\9
 Th2C9
 Th2C9H
-Th2G9h
+Th2G9
 Th2J9(
 Th2V9
 Th2z9
@@ -36217,7 +36383,6 @@ ThBB9h
 ThbD9
 ThbG9
 ThbG9h
-ThBG9H2
 ThBU9{zB
 ThB@yjN
 Th&C)
@@ -36735,6 +36900,7 @@ ToggleMuteVolume
 TogglePlayingRepeatStatus
 TogglePlayPause
 toggle_rumble
+to_identity
 Toim8pkm8
 token
 	token_gid
@@ -36933,7 +37099,6 @@ TransferItemQuantity
 transfer_succeeded
 transid
 TransID
-transport
 	transport
 transport=
 Transport
@@ -37178,7 +37343,6 @@ Tzs49h*B
 \U%04lX
 \U%08x
 U1(\Q
-u6G9U
 "%-U^7
 u)8wz
 	u@9	
@@ -37881,6 +38045,7 @@ UploadBroadcastThumbnail
 upload_cdkeys
 Upload complete.
 Upload Disconnected
+Uploaded AppInterfaceStats to Steam
 upload from client address
 	upload_id
 Uploading new manifest to %s (handle %llu, %u bytes).
@@ -38156,6 +38321,7 @@ V@9H&
 @V9HP
 v@9iv@9j
 v@9j 
+v@9JqG
 v@9Ku@9
 v@9lu@9
 v@9O\
@@ -38346,8 +38512,8 @@ virtual_cap_size
 virtual_mode
 virtual_port
 Virtual port number must be a small, positive number
+Virtual port number should be a small, non-negative number
 Virtual port number should be a small, positive number
-Virtual port should be a small positive integer
 virtual_stick_throw
 Visa (BoaCompra)
 Visa Electron (BoaCompra)
@@ -38477,6 +38643,7 @@ W1O	g_?
 w6`^@
 w6`~@
 w6`>@
+W6`>@
 W6`"@
 W6`*@
 W6`&@
@@ -39766,6 +39933,7 @@ yi^@y
 yiz@9h~@9j
 yizF9
 @yj&@
+"@y"J
 yj<8*
 yjB@y
 yjiixJ
@@ -39908,7 +40076,7 @@ zh_TW
 Zhxj}
 zIf false, it means access token no longer work (expired, disconnected) and the link is now broken. Inform user to refresh."e
 Zih8hih8)y
-'Zik1D
+'Zik!D
 ZInclude files that have all the tags or any of the tags if match_all_tags is set to false.
 zip_helpers.cpp
 Ziraat Bank
@@ -40105,6 +40273,7 @@ _ZTVSt12length_error
 _ZTVSt12out_of_range
 {zx	=
 ZX---
+Z x]u
 ZXX--
 "	)Zy)
 z@yhr

@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Intent;
 import android.os.Build.VERSION;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.WindowManager.LayoutParams;
 import com.valvesoftware.JNI_Environment;
 import com.valvesoftware.Resources;
@@ -11,6 +12,10 @@ import org.libsdl.app.SDLActivity;
 
 public class appmain extends SDLActivity {
     private boolean m_bFastCleanup = false;
+
+    private static native void enterHibernationNative();
+
+    private static native void exitHibernationNative();
 
     private static native void onDestroyNative();
 
@@ -69,6 +74,20 @@ public class appmain extends SDLActivity {
         }
         super.onDestroy();
         onDestroyNative();
+    }
+
+    /* access modifiers changed from: protected */
+    public void onPause() {
+        Log.v("com.valvesoftware.source2launcher.appmain", "onPause()");
+        enterHibernationNative();
+        super.onPause();
+    }
+
+    /* access modifiers changed from: protected */
+    public void onResume() {
+        Log.v("com.valvesoftware.source2launcher.appmain", "onResume()");
+        exitHibernationNative();
+        super.onResume();
     }
 
     /* access modifiers changed from: protected */

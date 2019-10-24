@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Native_AppOutOfDate">Hay una nueva versión disponible en el App Store. Es necesaria para jugar en línea.</string>
+    <string name="Native_AppOutOfDateOpt">Hay una nueva versión de la aplicación disponible</string>
+    <string name="Native_AppOutOfDateReq">Hay una nueva versión de la aplicación disponible. Se necesita para jugar en línea.</string>
     <string name="Native_AppUpdateTitle">Nueva versión disponible</string>
     <string name="Native_Cancel">Cancelar</string>
     <string name="Native_ConfirmCellular">Preparándose para descargar %d megabytes de contenido. ¿Seguro que quieres hacerlo usando los datos del móvil?</string>
     <string name="Native_ConfirmDownload">¿Quieres continuar con la descarga de %d megabytes?</string>
     <string name="Native_ContactingServer">Contactando con el servidor</string>
+    <string name="Native_DownloadAppUpdate">Descargar la aplicación más reciente</string>
     <string name="Native_DownloadError">Se ha producido un error</string>
     <string name="Native_DownloadErrorDownload">No se ha podido descargar el archivo de contenido</string>
     <string name="Native_DownloadErrorManifest">No se ha podido descargar el manifiesto</string>
+    <string name="Native_DownloadErrorQueueDownload">No se puede poner en cola la descarga del archivo de contenido</string>
     <string name="Native_DownloadErrorStorage">Almacenamiento insuficiente</string>
     <string name="Native_DownloadErrorUnknown">Error desconocido</string>
     <string name="Native_DownloadOverMobileLabel">¿Descarga a través de la red móvil?</string>
     <string name="Native_DownloadOverMobileMessage">Estás a punto de descargar a través de una red móvil. ¿Continuar?</string>
     <string name="Native_DownloadTitle">Actualización de contenido necesaria:</string>
     <string name="Native_DownloadUpdate">Descargar actualización más reciente:</string>
-    <string name="Native_DownloadingContent">Descargando contenido</string>
+    <string name="Native_DownloadingContent">DESCARGANDO CONTENIDO</string>
     <string name="Native_Exit">Salir</string>
-    <string name="Native_LoadingGame">Cargando juego...</string>
+    <string name="Native_FileSystemFailed">Se ha producido un error con un archivo del sistema requerido. Por favor, reinicia la aplicación. Si el mensaje persiste, intenta reinstalarla.</string>
+    <string name="Native_LoadingGame">CARGANDO JUEGO...</string>
     <string name="Native_ManifestDownloaded">Manifiesto descargado</string>
     <string name="Native_NeedsStoragePermissionsToContinueText">Para instalar el contenido del juego, necesitamos acceso al almacenamiento de tu dispositivo. Ve a los ajustes para activar los permisos.</string>
     <string name="Native_NeedsStoragePermissionsToContinueTitle">Se requieren permisos de almacenamiento</string>
@@ -26,11 +31,15 @@
     <string name="Native_OK">Aceptar</string>
     <string name="Native_PermissionsText">Dota Underlords necesita permiso para guardar contenido del juego en el almacenamiento externo de este dispositivo.</string>
     <string name="Native_PermissionsTitle">Permisos de Dota Underlords</string>
+    <string name="Native_PlayAppOutOfDateOpt">Jugar sin actualizar</string>
+    <string name="Native_PlayAppOutOfDateReq">Juega sin actualizar. Juego en línea desactivado.</string>
     <string name="Native_PlayOffline">Jugar sin actualizar (desconectado)</string>
     <string name="Native_PreparingToDownload">Preparándose para descargar...</string>
     <string name="Native_PressOkCheckWifi">Pulsa Aceptar para buscar redes Wi-Fi.</string>
     <string name="Native_Settings">Ajustes</string>
-    <string name="Native_VersionLabel">Versión:</string>
+    <string name="Native_UpdateFailed">Error al actualizar</string>
+    <string name="Native_UpdateFailed_ConnectToTheInternet">Se ha producido un error con una actualización anterior y se necesita conexión a internet para recuperarla.</string>
+    <string name="Native_VersionLabel">VERSIÓN:</string>
     <string name="Native_WifiNotActive">La red Wi-Fi no está activa</string>
     <string name="abc_action_bar_home_description">Ir a la pantalla de inicio</string>
     <string name="abc_action_bar_up_description">Desplazarse hacia arriba</string>

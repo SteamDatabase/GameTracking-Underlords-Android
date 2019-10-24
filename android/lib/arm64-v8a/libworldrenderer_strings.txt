@@ -11,6 +11,8 @@
 @-   
 @-!	!
 @-#(!
+$@)   
+$@)  "
 	,@)!("
 	*	}`
 	%	)	}
@@ -89,6 +91,7 @@
 18CDefSaveRestoreOps
 !)19BJRZcks{
 19CBoneConstraintBase
+19CModelConfigElement
 19CSchemaRegistration
 19CVariantSaveDataOps
 !>@=1B
@@ -109,7 +112,6 @@
 20CTiltTwistConstraint
 20CWorldSceneObjectRef
 20IResourceTypeManager
-2	1+9s
 21CGrassTileSceneObject
 21IGrassTileSceneObject
 22CDefScriptAccessorBase
@@ -151,8 +153,8 @@
 27CVoxelVisibilityTypeManager
 27IStreamingEnvironmentMapMgr
 28CBoneConstraintPoseSpaceBone
+28CModelConfigElement_UserPick
 28ISchemaCollectionManipulator
-2	!,9
 29CBoneConstraintPoseSpaceMorph
 2,	@9L
 2_BONE_IK
@@ -166,17 +168,23 @@
 2Way_0( %s )
 2Way_1( %s )
 3000.0
+30CModelConfigElement_RandomPick
 30i*x
+31CModelConfigElement_RandomColor
 31CReadGrassTexturePixelsCallback
 32CEntityComponentHelperReferencedI16CScriptComponentE
+32CModelConfigElement_SetBodygroup
 33CBaseIntrospectedToKV3TypeManager
+33CModelConfigElement_AttachedModel
 33CSchemaRegistration_worldrenderer
 34CKV3Transfer_ResourceLoadInterface
+34CModelConfigElement_SetRenderColor
 34IKV3TransferInterface_ResourceLoad
 35CEventQueue_SaveRestoreBlockHandler
 3)5L*H
 36CDefaultIntrospectedToKV3TypeManagerILy431316170614E7World_tE
 36CKV3Transfer_UtlSymbolLargeInterfaceI24CUtlSymbolTableLargeBaseILb0ELm2048E16CThreadNullMutexEE
+36CModelConfigElement_SetMaterialGroup
 36IKV3TransferInterface_UtlSymbolLarge
 37CTypesafeIntrospectedToKV3TypeManagerILy431366240118E11WorldNode_tE
 37CTypesafeIntrospectedToKV3TypeManagerILy495874631030E20PermEntityLumpData_tE
@@ -184,7 +192,9 @@
 3Qi+x
 4h&@9
 4H#@9H
+4h.A9
 4hb@9
+4hbE9
 4hf@9
 4hf@9(
 4jRA9_
@@ -198,6 +208,7 @@
 *5@9J
 5h6@y
 5hf@9
+5hR]y
 )5IJ(}
 -5	)?Q
 =5$@x
@@ -209,6 +220,7 @@
 6h&Q)c*
 6IWorld
 7hb@9h
+7hbE9
 7hf@9
 7hf@9(
 7ib@9
@@ -228,6 +240,7 @@
 )=@9)}
 )!@9)
 )@@9	
+	!_9	
 92ji8R
 @92yr
 9,5@8K
@@ -254,6 +267,7 @@
 9hb@9
 9hf@9(
 "@9hf@9i
+9hR]y
 @9hV@
 "@9i"@9
 9ISequence
@@ -267,7 +281,6 @@
 9	S)M*
 =@9t	
 (@@9t
-(@@9tb
 (@@9tB
 @9 U@
 9*UA9_
@@ -277,17 +290,19 @@
 9*YA9_
 @9+	@yHA
 @9+	@yHM
+@9ZsF
 'A)	}	
 ()@)+%A)
 A-!(!
 a2@yh2@y
-	a|9	
+)A_9?
 	A@9	
-	 A9JqG
-A9)qG
+A9)eG
+	 A9JeG
 A-'@A-
 A(aN!
 $	A)Ar
+	Ab9	
 ACT_IDLE
 activator
 ACT_NEUTRAL_REF_POSE
@@ -310,6 +325,7 @@ AE_CL_CREATE_PARTICLE_EFFECT_CFG
 AE_CL_PLAYSOUND_LOOPING
 AE_CL_STOP_PARTICLE_EFFECT
 AE_DOTA_SUPPRESS_CONSTANT_LAYER
+_<aeE
 AE_HIDE_WEAPON
 AE_IK_ALLOW_PLANE_TILT_NORMAL_UPDATES
 AE_IK_SET_CHAIN_BLEND_AMOUNT
@@ -341,6 +357,7 @@ AllocateAndLoad failed for '%s' (%s)
 AllocateResource: Cannot find DATA block in resource %s!
 AllocateResource: Cannot find VXVS data in resource %s!
 allowstatic
+	Am9	
 (aN0*aN
 (aNB8an1
 anchor_angles
@@ -398,6 +415,8 @@ ATI_DST24
 attachment
 ATTACHMENT_INFLUENCE_FLAGS_NONE
 attachment_offset
+attachment_type
+attach_point
 Attempted to alias unknown class %s using same designer name "%s"
 Attempted to ConvertToCopiedData for unsupported type (%d)
 Attempted to create unknown entity classname "%s"!
@@ -412,8 +431,8 @@ auto_unragdoll_duration
 /AV?O!
 B-1HD-
 *-B),5C)_
-B9)EG
-bA9JqG
+B9)5G
+bA9JeG
 Bad entity index %d
 Bad entity serial number %d
 Bad header format (expected '<!--'
@@ -482,9 +501,11 @@ blockLOS
 bN!(a
 BodyGroup
 BodyGroupChoice
+body_groups
 body_type
 # bone
 BoneChannel
+bonemerge
 bone_name
 bone_names
 BoneOverride_t
@@ -514,6 +535,7 @@ bUpdate
 burst_randomize
 burst_scale
 By_!5kC
+B@yhB
 @=%	@=c
 $.c($
 C-2-@
@@ -664,7 +686,19 @@ ClothShapeSphere
 CMaterialDrawDescriptor
 CMemAllocSystemInitialize
 CMesh Cannot create packed input layout, because the bone indices are out of range (0x%X)
+CModelConfig
+CModelConfigElement
+CModelConfigElement_AttachedModel
+CModelConfigElement_RandomColor
+CModelConfigElement_RandomPick
+CModelConfigElement_SetBodygroup
+CModelConfigElement_SetMaterialGroup
+CModelConfigElement_SetRenderColor
+CModelConfigElement_UserPick
+CModelConfigList
 CMorphConstraint
+CMotionTransform
+CMotionTransform-world
 CNativeOutputs
 CNetworkFieldScratchData::Alloc created buffer %s of size %s
 CNetworkFieldScratchData::Alloc, failed to add new CMemoryStack at slot %d of size %u bytes.
@@ -674,7 +708,6 @@ CNetworkFieldScratchData.m_MemoryStacks[ %d ]
 CNetworkVarChainer
 collision_group
 collision_prop
-color
 COLORCORRECTION_VERSION_1
 Combo(
 CommandLine
@@ -685,6 +718,8 @@ Component class %s needs its own datadesc (is using %s)
 composite
 CompressAndUploadGrassTextureJob
 ConcreteEntityList:  approaching limit, allocating entity chuck %d/%d for ents [%d -> %d]
+ConfigAttachedModel
+config_state
 ConfigurationSystem_001
 configvalue.cpp
 ConnectOutput
@@ -829,8 +864,7 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 *-D),5E)_
-d6@yc
-d6@yC
+d6@y#
 	D@8!
 D@8)%
 	D@8)m
@@ -883,6 +917,7 @@ Dump the contents of an entity lump
 DXT1_ONEBITALPHA
 DXT5_NM
 .dynamic
+DynamicConfigList
 DynamicCubeMapTexture_EncodeOnly.vtex
 DynamicCubeMapTexture_FlipMipEncode.vtex
 dynamic_interaction
@@ -890,6 +925,7 @@ dynamic_interaction
 .dynsym
 EconItemToolModel_001
 _edata
+EditorDynamicConfig
 .eh_frame
 .eh_frame_hdr
 <	!E)I!
@@ -1019,6 +1055,7 @@ Failed to call CBaseIntrospectedToKV3TypeManager::Init
 Failed to convert introspected block: %s
 Failed to convert KV3 to string; error: %s
 Failed to determine polymorphic class name
+Failed to get material pointer for world node draw call. (material name: %s)
 Failed to include script "%s"
 Failed to load geometry for level %s
 Failed to mount world vpk file %s, file could not be found.
@@ -1039,6 +1076,8 @@ FeModel combiner: Too many ropes (%u) or links (%u): cannot fit sum in uint16
 FIELD_BOOLEAN
 FIELD_CHARACTER
 FIELD_CLASSPTR
+FIELD_CMOTIONTRANSFORM
+FIELD_CMOTIONTRANSFORM_WORLDSPACE
 FIELD_COLOR32
 FIELD_CSTRING
 FIELD_CTRANSFORM
@@ -1119,10 +1158,10 @@ float32-quantized
 float64
 floatbitmap.cpp
 floatbitmap.cpp(140): Unknown gamma type "%s"!
-floatbitmap.cpp(2455): Error calling TGALoader::GetInfo( %s )
-floatbitmap.cpp(2466): Error loading %s
-floatbitmap.cpp(2489): Error! Unknown file type for %s
-floatbitmap.cpp(2508): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s
+floatbitmap.cpp(2463): Error calling TGALoader::GetInfo( %s )
+floatbitmap.cpp(2474): Error loading %s
+floatbitmap.cpp(2497): Error! Unknown file type for %s
+floatbitmap.cpp(2516): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s
 floatbitmap.cpp(324): Conversion not supported yet!
 floatbitmap.cpp(424): Conversion not supported yet!
 floatbitmap.cpp(887): Unsupported color format "%s", skipping!
@@ -1238,8 +1277,10 @@ GrassTileVB
 GrassTint.vtex
 gravity
 g_Tier1_BitWriteMasks
+h&?);
 h&@)?
 #H)	}	
+h2Ay`J
 h)8Ay)
 H'@9)
 h"@9h
@@ -1253,20 +1294,24 @@ HammerMapLoader001
 handindex
 Has Collision; 
 .hash
+hb}9)	
 hb@9`
 hB@9`
+hbA9h
+hbE9	
+hbE9i
 headtype
 health
 health_override
 HELPER_BONE
 HelpSystem_001
-hf@9A
 hf@9h
 hf@9H
+h"F9H
 hf@9i
 (hide)
 Hitbox indexing is incorrect for set %s, hitbox %s. Hitboxes will not be setup properly.
-hj48^
+hj48|
 H#L9`3
 HMaterial
 HModel
@@ -1275,15 +1320,16 @@ HostStateMgr001
 *hO@)w
 HParticleSystemDefinition
 HPostProcessing
-#	)hR@9
+"	)hR@9
 HRenderTexture
+hR]y`R
 hscript
 HSCRIPT-light
 hscript_lightbinding
 HSCRIPT-new
 hurt_me
 hurt_them
-h&@y)aG
+h&@y)UG
 	*I}`
 	i48h6@
 *	i58
@@ -1293,7 +1339,9 @@ ib@9(
 ib@9)
 ib@9j
 ib@9l
-ibA9JqG
+ibA9JeG
+*ibE9)
+ibE9h
 I CUtlLinkedList<int, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short> >::AllocInternal(bool) [T = int, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int, CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int>, unsigned int> >::NewNode(const T *) [T = CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, I = unsigned int, L = CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int>, unsigned int>]
 I CUtlRBTree<CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
@@ -1333,6 +1381,7 @@ ikrig
 IKRigBiped
 IKRigBug
 IKRigSimple
+i*?)m
 In8hIh8jIj8mIm8kIo8nU
 #include
 #include is NULL 
@@ -1391,7 +1440,7 @@ Inverse Multi Quadratic
 Invert Axes; 
 invert_orientation
 IQuickTime001
-iRBy?
+iR]y`R
 )is8	
 is_debris
 IsKeyValueUsed
@@ -1401,7 +1450,6 @@ iszString
 	iu8)
 	iu8i
 !iv<B
-iVByh
 iV@y(
 iV@yi
 i)xh~F
@@ -1409,6 +1457,7 @@ i)xh~F
 i>@yh
 iy*xi
 	iz8)
+j2?)?
 j58hf@9(
 J-cb@
 J-dj@
@@ -1418,8 +1467,8 @@ JIGGLE_BONE
 jiggle bone %u
 Jih8ji(8
 JIIJJ}
+Ji/)K
 Jikx_
-Ji/yH
 jj(8(
 JNI_OnLoad
 JNI_OnUnload
@@ -1539,6 +1588,7 @@ lowprecisionuv1
 LrwcE
 %ls [wstring, len = %d]
 <*%M)
+m_aAngOffset
 m_ankleBoneName
 mapbuilder.nodraw
 mapbuilder.occluder
@@ -1550,6 +1600,7 @@ maps/%s/world.vrman
 maps/%s/world.vwrld
 master_morph_weight
 MATCHFRAMEWORK_001
+material_group
 MaterialOverride_t
 MaterialParamBuffer_t
 MaterialParamFloat_t
@@ -1568,7 +1619,9 @@ matrix3x4
 matrix3x4a_t
 matrix3x4_t
 matrix3x4-world
+m_AttachmentName
 m_attachments
+m_AttachmentType
 max_angle
  max. %f
 maxHullVertices
@@ -1584,6 +1637,7 @@ m_bBuildBakedLighting
 m_bCacheAttempted
 m_bCacheOk
 m_bCanBatchWithDynamicShaderConstants
+m_bClamp
 m_bDisableChild
 m_bDisableOperator
 m_bDoBonesOrientAlongPositiveX
@@ -1598,6 +1652,8 @@ m_bHasBakedLightingFromVertexStream
 m_bHasCullingData
 m_bHasLightmaps
 m_bHasPerInstanceBakedLightingData
+m_bHideMaterialGroupInTools
+m_bHideRenderColorInTools
 m_bIgnoreRotation
 m_bInfluenceRootTransform
 m_bInitFromKilledParentParticles
@@ -1629,11 +1685,14 @@ m_bScaleInitialRange
 m_bScaleInitialValue
 m_bScalePerParticle
 m_bSelected
+m_bTopLevel
 m_bTrailBias
 m_bTranslationOnly
 m_builderParams
 m_bUseCompressedNormalTangent
 m_bUseHighestEndCP
+m_bUserSpecifiedColor
+m_bUserSpecifiedMaterialGroup
 m_bUseShadowFastPath
 m_bVisible
 m_bWrapInAtlas
@@ -1641,12 +1700,15 @@ m_ChainData
 m_childLumps
 m_ChildNodeIndices
 m_Children
+m_Choices
 MClassHasCustomAlignedNewDelete
 m_clusters
 m_Color
 m_ColorScale
 m_ConeAxis
 m_ConeCutoff
+m_ConfigName
+m_Configs
 m_connections
 m_constraints
 m_ControlRigData
@@ -1662,6 +1724,8 @@ m_drawCullData
 m_dynamicParams
 m_dynamicTextureParams
 m_eHand
+m_ElementName
+m_Elements
 m_elems
 memcmp
 memcpy
@@ -1671,6 +1735,7 @@ mempool.cpp
 memset
 m_EndEffectorBone
 m_EndEffectorTargetBone
+m_EntityClass
 m_entityKeyValues
 m_entityLumps
 m_eRbfType
@@ -1706,6 +1771,7 @@ m_fingers
 m_flags
 m_Flags
 m_flBiasParameter
+m_flBindPoseDirectionMS
 m_flClusterCooldown
 m_flClusterCooldownMax
 m_flClusterCooldownMin
@@ -1715,6 +1781,7 @@ m_flClusterRefireTimeMin
 m_flClusterSize
 m_flDelay
 m_flDepth
+m_flDuration
 m_flEmissionDuration
 m_flEmissionScale
 m_flEmitRate
@@ -1724,6 +1791,7 @@ m_flFalloff
 m_flFingerScaleRatio
 m_flFingerWeight
 m_flFireTime
+m_flFootLength
 m_flGridSize
 m_flGutterSize
 m_flHalfScreenWidth
@@ -1752,6 +1820,7 @@ m_flOpStrengthMaxScale
 m_flOpStrengthMinScale
 m_flOutput0
 m_flOutput1
+m_flPosition
 m_flRadius
 m_flRadiusScale
 m_flRadiusTaper
@@ -1773,7 +1842,9 @@ m_flWeight
 m_flWidth
 m_ForceGenerators
 m_Format
+m_Gradient
 m_grassFileName
+m_GroupName
 m_hActivator
 m_hBuffer
 m_hCaller
@@ -1783,6 +1854,7 @@ m_hingeAxis
 m_HitBoxes
 m_hitboxsets
 m_HitBoxSets
+m_hModel
 m_hSnapshot
 m_hTarget
 m_iEventListCount
@@ -1802,6 +1874,7 @@ m_inputList
 m_inputName
 m_inputValue
 Min( %s, %s )
+m_InstanceName
 m_int
 m_intAttributes
 m_intParams
@@ -1820,6 +1893,7 @@ m_lightMaps
 m_LiteralColor
 m_manifestName
 m_material
+m_MaterialGroupName
 m_materialName
 m_materialOverrides
 m_metacarpalBoneName
@@ -1839,16 +1913,20 @@ m_nBlockIndex
 m_nBoneHash
 m_nBoneNameHash
 m_nBoneWeightCount
+m_nChoice
 m_nClusterSizeMax
 m_nClusterSizeMin
 m_nCompressedAtlasSize
 m_nControlPoint
 m_nControlPointNumber
+m_nCP
+m_nCPField
 m_nCubeMapPrecomputedHandshake
 m_nD3DSemanticIndex
 m_nDrawCallIndex
 m_nElementCount
 m_nElementSizeInBytes
+m_NestedElements
 MNetworkBitCount
 MNetworkChangeAccessorFieldPathIndex
 MNetworkChangeCallback
@@ -1937,6 +2015,12 @@ m_nVertexCount
 _modelbuilder_phys_%i.vphys
 Model combiner: too many vertex sets (%d)! Clamping to %d
 ModelCompile/UseShadowFastPathHeuristic
+MODEL_CONFIG_ATTACHMENT_BONEMERGE
+MODEL_CONFIG_ATTACHMENT_BONE_OR_ATTACHMENT
+MODEL_CONFIG_ATTACHMENT_COUNT
+MODEL_CONFIG_ATTACHMENT_INVALID
+MODEL_CONFIG_ATTACHMENT_ROOT_RELATIVE
+ModelConfigAttachmentType_t
 Model conversion: %d conversions in %.3fsec (%.3fms each)
 =model.cpp
 model_default_preview_sequence_name
@@ -1960,6 +2044,7 @@ modeldoc23
 modeldoc24
 modeldoc25
 modeldoc26
+modeldoc27
 modeldoc3
 modeldoc4
 modeldoc5
@@ -1970,6 +2055,7 @@ modeldoc9
 ModelDocUtils001
 model_dump_convert_info
 modellib
+model_name
 MODEL_PROCESSING_SCRIPT_INTERFACE_001
 MODEL_PROCESSING_SERVICES_INTERFACE_001
 Model %s missing bone and flex counts (%d < %d), init %d
@@ -2038,6 +2124,7 @@ m_SolverType
 m_SourceFilename
 m_sSurfaceProperty
 m_sTargetMorph
+m_Stops
 m_stringAttributes
 m_targetDesc
 m_targetInput
@@ -2111,7 +2198,7 @@ N1A@L
 n1Z nRZ n
 N24CFieldPathHuffmanEncoder12InternalNodeE
 N24CFieldPathHuffmanEncoder5INodeE
-?N24CFieldPathHuffmanEncoder8LeafNodeE
+N24CFieldPathHuffmanEncoder8LeafNodeE
 N2Z .
 N37CTypesafeIntrospectedToKV3TypeManagerILy431366240118E11WorldNode_tE26IKV3ResourceAllocatorUtilsE
 N37CTypesafeIntrospectedToKV3TypeManagerILy431366240118E11WorldNode_tE28IKV3ResourceDeallocatorUtilsE
@@ -2265,6 +2352,7 @@ outputid
 Output unserialization of entities on map load. 0 - off, 1 - client/server, 2 - server, 3 - client
 overlay
 !OZW?O
+($?)P
 "pA3QuW
 PanoramaTextServices001
 PanoramaUIClient001
@@ -2357,6 +2445,11 @@ P*Pi+x
 [PR#]
 Precaches a specific resource
 preferred_carryangles
+PreviewAttachmentModel
+PreviewBoneAttachedModel
+PreviewBoneMergedModel
+PreviewPreset
+PreviewPresetList
 p?RGB565
 Print model load-time conversion info
 	Private script scope:
@@ -2400,6 +2493,7 @@ Quaternion-world
 QueuedLoaderVersion001
 Quintic
 	Q@y)
+	QZ9I
 R11_EAC
 R16F_EXPAND
 R32_UINT
@@ -2432,6 +2526,8 @@ RegisterConfigValue: Unknown error constructing config value "%s"!
 RegisterStringToken
 .rela.dyn
 .rela.plt
+relative_angles
+relative_origin
 Release
 remapping vertex %d[w%d] invalid: %d->? >= %d
 remapping vertex %d[w%d] invalid: %d->%d >= %d
@@ -2557,6 +2653,8 @@ schemaclassinfo.cpp
 SchemaSystem_001
 SchemaTestExternal_One_001
 SchemaTestExternal_Two_001
+%s_color
+%s (Color)
 Script_DebugBreak
 ----Script Dump for entity "%s"
 Script failed to find output "%s"
@@ -2606,6 +2704,8 @@ Sin( %s )
 Sj)	3)
 SkeletonBoneBounds_t
 :	S	M)
+%s (Material)
+%s_matgrp
 %s( No I/O Connections )
 s off
 SoundGuid_t
@@ -2628,6 +2728,7 @@ Source2Server001
 Source2ServerSerializers002
 source_filename
 South
+@spawn
 spawn_motion_disabled
 speeds
 (spew)
@@ -2714,7 +2815,6 @@ TextLayout_001
 TextMessageMgr_001
 texturescale
 Th&@)
-Th^By
 The entity instance is too large for type %s! Make more components referenced!
 Thf@9
 Thin Plate
@@ -2722,6 +2822,7 @@ thisEntity
 #This file is generated by CMesh::SaveObj() from CMesh with %d indices, %d vertices, %d attributes
 ThrA9
 ThreadGetCurrentId
+ThR]y
 Th>@y
 Ti5KJ(}
 TI9	S	M)
@@ -2729,11 +2830,13 @@ Ti"A)`
 Tib@9
 Tib@9)
 Tib@9	
+TicE9cs
 Tif@9
 Tif@9)
 TILT_TWIST
 TiV@y(=
 Ti:@y
+Ti>@y?!6kC
 Tj2@9j
 Tj^A9_
 TjbA9_
@@ -2818,6 +2921,7 @@ UPDATE_STRING_TOKEN_DATABASE
 UpperEyelid( 
 Usage: %s <world_name> <layer_name> <visible>
 Usage: %s <world_name> <lump_name>
+use_additional_offset
 useMotionDamping
 usemtl initialShadingGroup
 UserInfoChangeService_001
@@ -2957,6 +3061,7 @@ vpcf21
 vpcf22
 vpcf23
 vpcf24
+vpcf25
 vpcf3
 vpcf4
 vpcf5
@@ -2993,6 +3098,7 @@ _V_StripExtension
 _V_strncat
 _V_strncmp
 _V_strncpy
+_V_strnicmp_fast
 V_strnlen
 V_strtod
 V_strtoi64
@@ -3026,8 +3132,8 @@ world_layer_list
 world_layer_set_visible
 world_layer_set_visible %s %s false
 world_layer_set_visible %s %s true
-worldnode.cpp(1216): 
-worldnode.cpp(680): 
+worldnode.cpp(1246): 
+worldnode.cpp(710): 
 WorldNodeOnDiskBufferData_t
 WorldNodeProceduralModel
 WorldNode_t
@@ -3065,7 +3171,7 @@ X nN(a
 !~ y(
 @y`&@
 	y4xl
->@y?!6kC
+\`y6W
 Y80ijx
 #Y80ijx
 Y8Qikx
@@ -3094,7 +3200,6 @@ yNs*!
 Y nsZ n
 Y n)Y nJY nkY n
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
-@y)Q^y
 Y>t$7?*
 @yu&@
 _Z14V_stristr_fastPKcS0_
@@ -3108,10 +3213,12 @@ _ZdlPv
 z:K(None)
 _ZN13CBufferString10FixSlashesEc
 _ZN13CBufferString11ToLowerFastEi
+_ZN13CBufferString12AppendFormatEPKcz
 _ZN13CBufferString12SetExtensionEPKc
 _ZN13CBufferString13AppendFormatVEPKcSt9__va_list
 _ZN13CBufferString13FixupPathNameEv
 _ZN13CBufferString5PurgeEi
+_ZN13CBufferString6FormatEPKcz
 _ZN13CBufferString6InsertEiPKcib
 _ZN13CBufferString8RemoveAtEii
 _ZN16CThreadSemaphoreD1Ev
@@ -3127,9 +3234,13 @@ ZN37CTypesafeIntrospectedToKV3TypeManagerILy495874631030E20PermEntityLumpData_tE
 ZN37CTypesafeIntrospectedToKV3TypeManagerILy495874631030E20PermEntityLumpData_tE24DeallocateDestroyCleanupEPvP25IResourceDeallocatorUtilsE17CDeallocatorUtils
 _Znam
 zn@)j
+_ZNKSt6__ndk16locale9use_facetERNS0_2idE
+_ZNKSt6__ndk18ios_base6getlocEv
 Z n{[ n
 Z nRZ n
+_ZNSt6__ndk15ctypeIcE2idE
 _ZNSt6__ndk16localeD1Ev
+_ZNSt6__ndk17num_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEE2idE
 _ZNSt6__ndk18ios_base5clearEj
 _ZNSt6__ndk18ios_baseD2Ev
 _ZNV16CThreadFastMutex4LockEyj

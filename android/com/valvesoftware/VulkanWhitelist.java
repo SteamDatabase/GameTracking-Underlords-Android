@@ -1,4 +1,4 @@
-package com.valvesoftware.source2launcher;
+package com.valvesoftware;
 
 import android.content.Context;
 import android.opengl.EGL14;
@@ -12,10 +12,42 @@ import android.os.Build.VERSION;
 import android.util.Log;
 import java.util.ArrayList;
 import org.json.JSONArray;
+import org.json.JSONObject;
 
 public class VulkanWhitelist {
-    private String TAG = "com.valvesoftware.source2launcher.VulkanWhitelist";
+    private static String TAG = "com.valvesoftware.VulkanWhitelist";
     private ArrayList<DeviceInfo> m_compatibleDevices;
+
+    public static boolean DeviceIsVulkanCompatible(JSONObject jSONObject, Context context) {
+        boolean z = false;
+        if (jSONObject == null) {
+            Log.e(TAG, "jsonManifest is null.");
+            return false;
+        } else if (context == null) {
+            Log.e(TAG, "appContext is null.");
+            return false;
+        } else {
+            try {
+                VulkanWhitelist vulkanWhitelist = new VulkanWhitelist();
+                JSONArray jSONArray = jSONObject.getJSONArray("vulkan_whitelist");
+                if (jSONArray == null) {
+                    Log.e(TAG, "Unable to get JSONArray \"vulkan_whitelist\".");
+                } else if (!vulkanWhitelist.InitializeFromJSONObject(jSONArray).booleanValue()) {
+                    Log.e(TAG, "VulkanWhitelist failed to load from JSONObject");
+                } else if (vulkanWhitelist.IsDeviceCompatible(context).booleanValue()) {
+                    Log.i(TAG, "Device is Vulkan compatible.");
+                    z = true;
+                }
+            } catch (Exception e) {
+                String str = TAG;
+                StringBuilder sb = new StringBuilder();
+                sb.append("VulkanWhitelist Exception: ");
+                sb.append(e.toString());
+                Log.e(str, sb.toString());
+            }
+            return z;
+        }
+    }
 
     /* JADX WARNING: Removed duplicated region for block: B:11:0x006e  */
     /* JADX WARNING: Removed duplicated region for block: B:12:0x0091  */
@@ -33,7 +65,7 @@ public class VulkanWhitelist {
             r2 = 0
             r3 = 0
             if (r10 == 0) goto L_0x00e0
-            java.lang.String r10 = r9.TAG
+            java.lang.String r10 = TAG
             java.lang.StringBuilder r4 = new java.lang.StringBuilder
             r4.<init>()
             java.lang.String r5 = "Vulkan white list file \""
@@ -56,7 +88,7 @@ public class VulkanWhitelist {
             goto L_0x006c
         L_0x0046:
             r10 = move-exception
-            java.lang.String r6 = r9.TAG
+            java.lang.String r6 = TAG
             java.lang.StringBuilder r7 = new java.lang.StringBuilder
             r7.<init>()
             r7.append(r5)
@@ -74,7 +106,7 @@ public class VulkanWhitelist {
             if (r10 == 0) goto L_0x0091
             java.lang.String r10 = new java.lang.String
             r10.<init>(r4)
-            java.lang.String r4 = r9.TAG
+            java.lang.String r4 = TAG
             java.lang.StringBuilder r6 = new java.lang.StringBuilder
             r6.<init>()
             r6.append(r5)
@@ -91,7 +123,7 @@ public class VulkanWhitelist {
             if (r10 == 0) goto L_0x00e0
             org.json.JSONObject r4 = new org.json.JSONObject     // Catch:{ Exception -> 0x00bb }
             r4.<init>(r10)     // Catch:{ Exception -> 0x00bb }
-            java.lang.String r10 = r9.TAG     // Catch:{ Exception -> 0x00b8 }
+            java.lang.String r10 = TAG     // Catch:{ Exception -> 0x00b8 }
             java.lang.StringBuilder r2 = new java.lang.StringBuilder     // Catch:{ Exception -> 0x00b8 }
             r2.<init>()     // Catch:{ Exception -> 0x00b8 }
             r2.append(r0)     // Catch:{ Exception -> 0x00b8 }
@@ -110,7 +142,7 @@ public class VulkanWhitelist {
         L_0x00bb:
             r10 = move-exception
         L_0x00bc:
-            java.lang.String r4 = r9.TAG
+            java.lang.String r4 = TAG
             java.lang.StringBuilder r5 = new java.lang.StringBuilder
             r5.<init>()
             r5.append(r0)
@@ -124,7 +156,7 @@ public class VulkanWhitelist {
             android.util.Log.e(r4, r10)
         L_0x00e0:
             if (r2 != 0) goto L_0x0101
-            java.lang.String r10 = r9.TAG
+            java.lang.String r10 = TAG
             java.lang.StringBuilder r0 = new java.lang.StringBuilder
             r0.<init>()
             java.lang.String r2 = "Failed to load \""
@@ -142,7 +174,7 @@ public class VulkanWhitelist {
             return r10
         L_0x010c:
             r10 = move-exception
-            java.lang.String r0 = r9.TAG
+            java.lang.String r0 = TAG
             java.lang.StringBuilder r2 = new java.lang.StringBuilder
             r2.<init>()
             java.lang.String r4 = "Failed to find `vulkan_whitelist' in \""
@@ -158,7 +190,7 @@ public class VulkanWhitelist {
             java.lang.Boolean r10 = java.lang.Boolean.valueOf(r3)
             return r10
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.source2launcher.VulkanWhitelist.InitializeFromJSONFile(java.lang.String):java.lang.Boolean");
+        throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.VulkanWhitelist.InitializeFromJSONFile(java.lang.String):java.lang.Boolean");
     }
 
     public Boolean InitializeFromJSONObject(JSONArray jSONArray) {
@@ -172,7 +204,7 @@ public class VulkanWhitelist {
             }
             return Boolean.valueOf(true);
         } catch (Exception e) {
-            String str = this.TAG;
+            String str = TAG;
             StringBuilder sb = new StringBuilder();
             sb.append("Failed to parse Vulkan whitelist exception: ");
             sb.append(e.toString());
@@ -190,12 +222,12 @@ public class VulkanWhitelist {
         if (this.m_compatibleDevices != null) {
             for (int i = 0; i < this.m_compatibleDevices.size(); i++) {
                 if (DeviceInfo.DevicesCompatible(CollectThisDeviceInfo, (DeviceInfo) this.m_compatibleDevices.get(i))) {
-                    Log.i(this.TAG, "Device determined to be compatible with Vulkan.");
+                    Log.i(TAG, "Device determined to be compatible with Vulkan.");
                     return Boolean.valueOf(true);
                 }
             }
         }
-        Log.i(this.TAG, "Device determined not to be compatible with Vulkan.");
+        Log.i(TAG, "Device determined not to be compatible with Vulkan.");
         return valueOf;
     }
 
@@ -203,7 +235,7 @@ public class VulkanWhitelist {
         StringBuilder sb = new StringBuilder();
         StringBuilder sb2 = new StringBuilder();
         if (!GetOpenGLDriverInfo(sb, sb2).booleanValue()) {
-            Log.e(this.TAG, "GetOpenGLDriverInfo() failed  - can't determine device info");
+            Log.e(TAG, "GetOpenGLDriverInfo() failed  - can't determine device info");
             return null;
         }
         DeviceInfo deviceInfo = new DeviceInfo();
@@ -219,22 +251,22 @@ public class VulkanWhitelist {
         deviceInfo.m_sMaxDriverVersion = sb4;
         deviceInfo.m_sMinDriverVersion = sb4;
         deviceInfo.m_sRenderer = sb.toString();
-        String str = this.TAG;
+        String str = TAG;
         StringBuilder sb5 = new StringBuilder();
         sb5.append("DeviceInfo OS: ");
         sb5.append(deviceInfo.m_nMinOS);
         Log.i(str, sb5.toString());
-        String str2 = this.TAG;
+        String str2 = TAG;
         StringBuilder sb6 = new StringBuilder();
         sb6.append("DeviceInfo Device Name: ");
         sb6.append(deviceInfo.m_sDeviceName);
         Log.i(str2, sb6.toString());
-        String str3 = this.TAG;
+        String str3 = TAG;
         StringBuilder sb7 = new StringBuilder();
         sb7.append("DeviceInfo Driver Version: ");
         sb7.append(deviceInfo.m_sMinDriverVersion);
         Log.i(str3, sb7.toString());
-        String str4 = this.TAG;
+        String str4 = TAG;
         StringBuilder sb8 = new StringBuilder();
         sb8.append("DeviceInfo Renderer: ");
         sb8.append(deviceInfo.m_sRenderer);
@@ -246,24 +278,24 @@ public class VulkanWhitelist {
         Boolean valueOf = Boolean.valueOf(false);
         EGLDisplay eglGetDisplay = EGL14.eglGetDisplay(0);
         if (eglGetDisplay == EGL14.EGL_NO_DISPLAY) {
-            Log.e(this.TAG, "eglGetDisplay failed.");
+            Log.e(TAG, "eglGetDisplay failed.");
             return valueOf;
         }
         int[] iArr = new int[2];
         if (!EGL14.eglInitialize(eglGetDisplay, iArr, 0, iArr, 1)) {
-            Log.e(this.TAG, "eglInitialize failed.");
+            Log.e(TAG, "eglInitialize failed.");
             return valueOf;
         }
         EGLConfig[] eGLConfigArr = new EGLConfig[1];
         if (!EGL14.eglChooseConfig(eglGetDisplay, new int[]{12324, 8, 12323, 8, 12322, 8, 12321, 8, 12352, 68, 12344}, 0, eGLConfigArr, 0, eGLConfigArr.length, new int[1], 0)) {
             EGL14.eglTerminate(eglGetDisplay);
-            Log.e(this.TAG, "eglChooseConfig failed.");
+            Log.e(TAG, "eglChooseConfig failed.");
             return valueOf;
         }
         EGLContext eglCreateContext = EGL14.eglCreateContext(eglGetDisplay, eGLConfigArr[0], EGL14.EGL_NO_CONTEXT, new int[]{12440, 3, 12344}, 0);
         if (eglCreateContext == EGL14.EGL_NO_CONTEXT || EGL14.eglGetError() != 12288) {
             EGL14.eglTerminate(eglGetDisplay);
-            Log.e(this.TAG, "eglCreateContext failed.");
+            Log.e(TAG, "eglCreateContext failed.");
             return valueOf;
         }
         EGLSurface eglCreatePbufferSurface = EGL14.eglCreatePbufferSurface(eglGetDisplay, eGLConfigArr[0], new int[]{12375, 4, 12374, 4, 12344}, 0);
@@ -271,13 +303,13 @@ public class VulkanWhitelist {
             EGL14.eglDestroyContext(eglGetDisplay, eglCreateContext);
             EGL14.eglDestroySurface(eglGetDisplay, eglCreatePbufferSurface);
             EGL14.eglTerminate(eglGetDisplay);
-            Log.e(this.TAG, "eglCreatePbufferSurface failed.");
+            Log.e(TAG, "eglCreatePbufferSurface failed.");
             return valueOf;
         } else if (!EGL14.eglMakeCurrent(eglGetDisplay, eglCreatePbufferSurface, eglCreatePbufferSurface, eglCreateContext)) {
             EGL14.eglDestroyContext(eglGetDisplay, eglCreateContext);
             EGL14.eglDestroySurface(eglGetDisplay, eglCreatePbufferSurface);
             EGL14.eglTerminate(eglGetDisplay);
-            Log.e(this.TAG, "eglMakeCurrent failed.");
+            Log.e(TAG, "eglMakeCurrent failed.");
             return valueOf;
         } else {
             String glGetString = GLES20.glGetString(7938);

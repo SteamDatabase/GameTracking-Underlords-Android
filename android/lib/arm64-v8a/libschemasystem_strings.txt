@@ -34,7 +34,6 @@
 20CSchemaType_Atomic_I
 20CSchemaType_Atomic_T
 20CSchemaType_Bitfield
-2	1:9s
 21CSchemaType_Atomic_TT
 22CSchemaInstallCallback
 22CSchemaSystemTypeScope
@@ -49,9 +48,7 @@
 25CConCommandMemberAccessorI13CSchemaSystemE
 25CSchemaType_DeclaredClass
 26ICommandCompletionCallback
-2	!;9
 29CSchemaRegistration_schemalib
-2hB39#
 2+imx
 2_!<k
 2_!<k!
@@ -78,10 +75,11 @@
 8CFmtStrNILi256ELb0EE
 8x9,7
 )!@9)
+	!|9	
 @9hV@
 "@9i"@9
 a2@yh2@y
-	A{9	
+	a{9	
  (Abstract)
 AE_ACTION_SET_TURN_RATE_SCALE
 AE_BLIND_ZOMBIE_SNIFF
@@ -162,11 +160,11 @@ AssetBrowserSystem_001
 AssetPreviewSystem_001
 AssetSystem001
 AssetSystemTest001
-	at9I
 attachment
 attachment_offset
+attachment_type
+attach_point
 auto_unragdoll_duration
-	ay9	
 BAD BINDING
 Bad header format (expected '<!--'
 Bad header format (expected ':'
@@ -203,6 +201,7 @@ blockLOS
 BodyGroup
 BodyGroupChoice
 body_type
+bonemerge
 bone_name
 bone_names
 bool CSchemaSystemTypeScope::InsertNewClassBinding(SchemaClassId_t, CSchemaClassInfo *, CSchemaClassInfo **)
@@ -311,6 +310,7 @@ ClothShapeCapsule
 ClothShapeList
 ClothShapeSphere
 CMemAllocSystemInitialize
+CMotionTransform
 collision_group
 collision_prop
 COLORCORRECTION_VERSION_1
@@ -319,6 +319,7 @@ CommandProcedure
 CommandProcedureList
 .comment
 composite
+ConfigAttachedModel
 ConfigurationSystem_001
 configvalue.cpp
 control_point
@@ -417,11 +418,13 @@ double
 Double-register of KV3 conversion (from '%s' to '%s')
 (dump)
 .dynamic
+DynamicConfigList
 dynamic_interaction
 .dynstr
 .dynsym
 EconItemToolModel_001
 _edata
+EditorDynamicConfig
 .eh_frame
 .eh_frame_hdr
 emitFromWorld
@@ -618,7 +621,6 @@ i)xhqA
 i>@yh
 IyhnB
 j2Gyh
-j(8M~
 JAAHJ
 JaAIJ
 JAJJ)
@@ -746,6 +748,7 @@ m_flClusterRefireTime
 m_flClusterRefireTimeMax
 m_flClusterRefireTimeMin
 m_flClusterSize
+m_flDuration
 m_flEmissionDuration
 m_flEmissionScale
 m_flEmitRate
@@ -795,6 +798,8 @@ m_nClusterSizeMax
 m_nClusterSizeMin
 m_nControlPoint
 m_nControlPointNumber
+m_nCP
+m_nCPField
 MNetworkBitCount
 MNetworkChangeCallback
 MNetworkEncoder
@@ -841,6 +846,7 @@ modeldoc23
 modeldoc24
 modeldoc25
 modeldoc26
+modeldoc27
 modeldoc3
 modeldoc4
 modeldoc5
@@ -849,6 +855,7 @@ modeldoc7
 modeldoc8
 modeldoc9
 ModelDocUtils001
+model_name
 MODEL_PROCESSING_SCRIPT_INTERFACE_001
 MODEL_PROCESSING_SERVICES_INTERFACE_001
 	Module 1 - %s
@@ -990,6 +997,11 @@ point1
 PostProcessingResource_t
 PostProcessingSystem_001
 preferred_carryangles
+PreviewAttachmentModel
+PreviewBoneAttachedModel
+PreviewBoneMergedModel
+PreviewPreset
+PreviewPresetList
 Project
 Promoting unresolved type '%s' to global scope.
 prop_data
@@ -1001,7 +1013,6 @@ PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
 Qi"A)`
 QueuedLoaderVersion001
-r	a49_
 radius0
 radius1
 raise
@@ -1012,6 +1023,8 @@ Registered binary: %s (project '%s')
 RegisterStringToken
 .rela.dyn
 .rela.plt
+relative_angles
+relative_origin
 Release
 RemoveBoneAndChildren
 RenderDevice003
@@ -1218,6 +1231,7 @@ Unsupported binary encoding id.
 Unsupported text encoding id.
 Unused
 UPDATE_STRING_TOKEN_DATABASE
+use_additional_offset
 UserInfoChangeService_001
 -use_tier2_bundle
 -use_tier3_bundle
@@ -1298,6 +1312,7 @@ vpcf21
 vpcf22
 vpcf23
 vpcf24
+vpcf25
 vpcf3
 vpcf4
 vpcf5

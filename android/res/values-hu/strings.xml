@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Native_AppOutOfDate">Új verzió érhető el az App Store-ban, ami szükséges az online játékhoz.</string>
+    <string name="Native_AppOutOfDateOpt">Új alkalmazásverzió érhető el</string>
+    <string name="Native_AppOutOfDateReq">Új alkalmazásverzió érhető el. Az online játékhoz követelmény.</string>
     <string name="Native_AppUpdateTitle">Új verzió érhető el</string>
     <string name="Native_Cancel">Mégse</string>
     <string name="Native_ConfirmCellular">Felkészülés %d megabájtnyi tartalom letöltésére - Megkezded a letöltést mobilhálózaton keresztül?</string>
     <string name="Native_ConfirmDownload">Megkezded a(z) %d megabájtnyi tartalom letöltését?</string>
     <string name="Native_ContactingServer">Kapcsolódás a szerverhez</string>
+    <string name="Native_DownloadAppUpdate">Legújabb alkalmazás letöltése</string>
     <string name="Native_DownloadError">Hiba történt</string>
     <string name="Native_DownloadErrorDownload">A tartalomfájl letöltése sikertelen</string>
     <string name="Native_DownloadErrorManifest">A tanúsítvány letöltése sikertelen</string>
+    <string name="Native_DownloadErrorQueueDownload">Nem lehet besorolni a tartalomfájl letöltését</string>
     <string name="Native_DownloadErrorStorage">Nincs elég tárhely</string>
     <string name="Native_DownloadErrorUnknown">Ismeretlen hiba</string>
     <string name="Native_DownloadOverMobileLabel">Letöltés mobilhálózaton keresztül?</string>
     <string name="Native_DownloadOverMobileMessage">Mobilhálózaton keresztül készülsz letölteni. Folytatod?</string>
     <string name="Native_DownloadTitle">Tartalomfrissítés szükséges:</string>
     <string name="Native_DownloadUpdate">Legutóbbi frissítés letöltése:</string>
-    <string name="Native_DownloadingContent">Tartalom letöltése</string>
+    <string name="Native_DownloadingContent">TARTALOM LETÖLTÉSE</string>
     <string name="Native_Exit">Kilépés</string>
-    <string name="Native_LoadingGame">Játék betöltése...</string>
+    <string name="Native_FileSystemFailed">Egy szükséges fájlrendszer-művelet meghiúsult. Indítsd újra az alkalmazást. Ha újra ezt az üzenetet kapod, próbáld újratelepíteni az alkalmazást.</string>
+    <string name="Native_LoadingGame">JÁTÉK BETÖLTÉSE...</string>
     <string name="Native_ManifestDownloaded">Tanúsítvány letöltve</string>
     <string name="Native_NeedsStoragePermissionsToContinueText">A játéktartalom telepítése hozzáférést igényel eszközöd tárolóhelyéhez. Menj a Beállításokba az engedély megadásához.</string>
     <string name="Native_NeedsStoragePermissionsToContinueTitle">Tárolóhely-engedély szükséges</string>
@@ -26,11 +31,15 @@
     <string name="Native_OK">OK</string>
     <string name="Native_PermissionsText">A Dota Underlordsnak engedélyre van szüksége játéktartalom tárolásához ezen eszköz külső tárhelyén.</string>
     <string name="Native_PermissionsTitle">Dota Underlords engedélyek</string>
+    <string name="Native_PlayAppOutOfDateOpt">Játék frissítés nélkül</string>
+    <string name="Native_PlayAppOutOfDateReq">Játék frissítés nélkül. Online játék letiltva.</string>
     <string name="Native_PlayOffline">Játék frissítés nélkül (offline)</string>
     <string name="Native_PreparingToDownload">Felkészülés a letöltésre...</string>
     <string name="Native_PressOkCheckWifi">Wi-Fi kereséséhez nyomj OK-t.</string>
     <string name="Native_Settings">Beállítások</string>
-    <string name="Native_VersionLabel">Verzió:</string>
+    <string name="Native_UpdateFailed">Tartalomfrissítés sikertelen</string>
+    <string name="Native_UpdateFailed_ConnectToTheInternet">Egy korábbi frissítési művelet meghiúsult, és internetkapcsolatra van szüksége a helyreállításhoz.</string>
+    <string name="Native_VersionLabel">VERZIÓ:</string>
     <string name="Native_WifiNotActive">Wi-Fi nem aktív</string>
     <string name="abc_action_bar_home_description">Ugrás a főoldalra</string>
     <string name="abc_action_bar_up_description">Felfelé mozgatás</string>

@@ -18,6 +18,7 @@
 ../../../../..
 ................................................................................
 '":|;
+()@))	@
 )*-@)!
 {}()'
 {}[]=, 	
@@ -27,7 +28,8 @@
 @-@ #
 @-$	@
 @-#(!
-@}%	@}
+$@)   
+$@)  "
 $@)#@@)
 ************************************************
 	*(#:
@@ -62,6 +64,7 @@ $0$1$2 $3 = $4
 06`*A
 06h2@
 06jZ@
+07:07:10
 07h"@
 0@9	4
 /0@9n9
@@ -97,13 +100,12 @@ $0 to $1,
 "0x" must be followed by hex digits.
 0x%x,
  {0x%x, 0x%x}
+0@y	K
 0@y_!!ka
-0@y	L
 /:@)1
 -1.000000
 1.0.2, 30-Dec-2001
 -1080
-10BlankImage
 10CCvarQuery
 10CEntityMsg
 10CheckImage
@@ -336,9 +338,7 @@ $0 to $1,
 1.5.13
 1.5.2
 15CBaseConstraint
-15CBaseDemoAction
 15CBaseSpawnGroup
-15CDemoActionZoom
 15CDemoConsoleCmd
 15CDemoCustomData
 15CDemoFileHeader
@@ -350,8 +350,7 @@ $0 to $1,
 15CLoopTypeSimple
 15CMapListService
 15CMemberFunctor0IP18CNetworkGameClientMS0_FvvE12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
-15CMemberFunctor0IP49CNetworkClientSpawnGroup_LoadSaveGamePrerequisiteMS0_FvvE12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
-15CMemberFunctor0IP49CNetworkServerSpawnGroup_LoadSaveGamePrerequisiteMS0_FvvE12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
+15CMemberFunctor0IP27CAsyncSpawnGroupFileRequestMS0_FvvE12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CMemberFunctor0IPN8panorama9IUIWindowEMS1_FvvE12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CMemberFunctor1IP26CParallelProcessorAbstractI18CParallelProcessorI11CrashItem_t21CFuncJobItemProcessorIS2_ELi1EEEMS6_FviEi12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CMemberFunctor1IP26CParallelProcessorAbstractI18CParallelProcessorIi27CMemberFuncJobItemProcessorIi11CCallQueueTI8CTSQueueIP8CFunctorLb0EEES8_ELi1EEEMSB_FviEi12CRefCounted1IS5_20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
@@ -580,6 +579,7 @@ $0 to $1,
 17CBenchmarkService
 17CBoundedCvar_Rate
 17CCLCMsg_VoiceData
+17CDemoPlaybackLoop
 17CDemoStringTables
 17CEnginePVSManager
 17CEngineServiceMgr
@@ -605,6 +605,7 @@ $0 to $1,
 17CTier2Application
 17CVGuiInputHandler
 17IBenchmarkService
+17IDemoPlaybackLoop
 17IDemoRecorderBase
 17IEnginePVSManager
 17IEngineServiceMgr
@@ -631,7 +632,6 @@ $0 to $1,
 18CCLCMsg_ClientInfo
 18CCLCMsg_ServerPing
 18CDefSaveRestoreOps
-18CDemoActionManager
 18CFocusOverlayPanel
 18CGameUIRenderLayer
 18ChangeMapToolEvent
@@ -649,7 +649,6 @@ $0 to $1,
 18CSVCMsg_ServerInfo
 18CSVCMsg_SetPause_t
 18CTextureIdProperty
-18IDemoActionManager
 18INetworkGameClient
 18INetworkGameServer
 18INetworkP2PService
@@ -658,16 +657,14 @@ $0 to $1,
 18MenuItemCheckImage
 18ToolTraceRayResult
 -1@9_
-	1 9:
-	1$9,
 !)19BJRZcks{
-	1 9C
 19C2S_CONNECT_Message
 19CBidirMsg_RelayInfo
 19CBoneConstraintBase
 19CCLCMsg_BaselineAck
 19CClientFrameManager
 19CDebugVisualizerMgr
+19CModelConfigElement
 19CNETMsg_SetConVar_t
 19CNETMsg_SignonState
 19CNETMsg_StringCmd_t
@@ -685,8 +682,6 @@ $0 to $1,
 19CTier2AppSystemDict
 19CVariantSaveDataOps
 19CVConCommandMessage
-	1"9e
-	1[9i
 19IConsoleDisplayFunc
 19IDebugVisualizerMgr
 19IKeyValuesErrorSpew
@@ -698,13 +693,10 @@ $0 to $1,
 19RestartMapToolEvent
 !1AQaq
 !>@=1B
-	1b9)
 1bQJ1~
 1DBlend
     1 = force cl_predict to 1
 1hqx2hrx?
-	1J9i
-1@)k5E
    -1 = let clients set cl_predict to anything
 1 = Pause the game when pressing ~ to open the console. CTRL+~ opens the console without pause.
 1.QB!
@@ -717,10 +709,9 @@ $0 to $1,
 /1V?OR
  1: write to NULL
 *1x0x
-	1X9)
 !2@=!
+#2)?=
 	2*	@
-	2		@
 200000
 20CAsyncTrackingConvar
 20CBoundedCvar_CmdRate
@@ -732,7 +723,6 @@ $0 to $1,
 20CCLCMsg_ServerStatus
 20CDefaultClientConfig
 20CDefaultServerConfig
-20CDemoActionSkipAhead
 20CDragDropHelperPanel
 20CEngineSoundServices
 20CFileLoggingListener
@@ -757,8 +747,6 @@ $0 to $1,
 20PacketEntitiesFilter
 20SpawnEntityToolEvent
 21C2S_CONNECT_Message_t
-21CBaseActionEditDialog
-21CBaseActionZoomDialog
 21CBidirMsg_RelayPacket
 21.CBidirMsg_RelayPacket.SignedDestinationAddress_t
 21CCLCMsg_BaselineAck_t
@@ -785,16 +773,13 @@ $0 to $1,
 21IUGCAddonPathResolver
 21IVConCommDataReceived
 21NetMessagePacketStart
-22:28:02
 22C2S_CONNECTION_Message
 22CActivateMainMenuPanel
-22CBaseActionPauseDialog
 22CCLCMsg_CmdKeyValues_t
 22CCLCMsg_FileCRCCheck_t
 22CCLCMsg_RequestPause_t
 22CCLCMsg_ServerStatus_t
 22CDefScriptAccessorBase
-22CDemoActionCDTrackStop
 22CDemoClassInfo_class_t
 22CEntityComponentHelper
 22CHeapCompactionService
@@ -804,7 +789,7 @@ $0 to $1,
 22CMsgServerNetworkStats
 22CNetworkGameClientBase
 22CNetworkGameServerBase
-22CRenderingWorldSession
+?22CRenderingWorldSession
 22CSchemaInstallCallback
 22CSimpleLoggingListener
 22CSVCMsg_CmdKeyValues_t
@@ -828,9 +813,6 @@ $0 to $1,
 23CClientOnlyServerConfig
 23CConsoleLoggingListener
 23CDebugVisualizerAbsTime
-23CDemoActionCDTrackStart
-23CDemoActionPlayCommands
-23CDemoActionStopPlayback
 23CEntityComponentHelperTI16CScriptComponent32CEntityComponentHelperReferencedIS0_EE
 23CEntityResourceManifest
 23CGameInfo_CDotaGameInfo
@@ -846,10 +828,8 @@ $0 to $1,
 23IToolGameSimulationBase
 23ToolEvent_GetEntityInfo
 23TraceRayServerToolEvent
-#2)4.
 24C2S_CONNECTION_Message_t
 24CCLCMsg_RespondCvarValue
-24CDemoActionPausePlayback
 24CDemoCustomDataCallbacks
 24CNetworkClientSpawnGroup
 24CNetworkFieldScratchData
@@ -886,7 +866,6 @@ $0 to $1,
 25CConCommandMemberAccessorI22CHeapCompactionServiceE
 25CConCommandMemberAccessorI22CRenderingWorldSessionE
 25CConnectRelayPrerequisite
-25CDemoActionPlaySoundStart
 25CDemoStringTables_items_t
 25CDemoStringTables_table_t
 25CNETMsg_SpawnGroup_Load_t
@@ -900,11 +879,9 @@ $0 to $1,
 25IToolGameSimulationSystem
 25ToolEvent_FireEntityInput
 25ToolEvent_GetEntityInputs
-26CBaseActionSkipAheadDialog
 26CCLCMsg_RespondCvarValue_t
 26CCLCMsg_SplitPlayerConnect
 26CDefaultKeyValuesErrorSpew
-26CDemoActionScreenFadeStart
 26CPipedCommandLogRedirector
 26CProportionalFloatProperty
 26CSVCMsg_Sounds_sounddata_t
@@ -915,10 +892,8 @@ $0 to $1,
 26NetMessageConnectionClosed
 26ProtoFlattenedSerializer_t
 26SpawnEntityToolEventResult
-27CBaseDemoActionWithStopTime
 27CBidirMsg_RebroadcastSource
 27CDefSaveRestoreBlockHandler
-27CDemoActionTextMessageStart
 27CHLTVBuildFullFrameSplitJob
 27CMsgServerNetworkStats_Port
 27CNETMsg_SpawnGroup_Unload_t
@@ -942,6 +917,7 @@ $0 to $1,
 28CEmptyEntityResourceManifest
 28CLoadSpawnGroupsPrerequisite
 28CLoopTypeClientServerService
+28CModelConfigElement_UserPick
 28CNetworkStringTableContainer
 28CSVCMsg_ClearAllStringTables
 28CSVCMsg_SendTable_sendprop_t
@@ -950,16 +926,10 @@ $0 to $1,
 28INetworkStringTableContainer
 2_!8k
 2@9()
-2	!%9?
-29CBaseActionCDTrackStartDialog
-29CBaseActionPlayCommandsDialog
-29CBaseActionStopPlaybackDialog
-29CBaseActionWithStopTimeDialog
 29CBidirMsg_RebroadcastSource_t
 29CBoneConstraintPoseSpaceMorph
 29CCLCMsg_SplitPlayerDisconnect
 29CCreateGameClientPrerequisite
-29CDemoActionChangePlaybackRate
 29CEngineConsoleLoggingListener
 29CMaterialSystem2AppSystemDict
 29CMsgServerNetworkStats_Player
@@ -971,7 +941,9 @@ $0 to $1,
 29IToolGameSimulationDispatcher
 2,	@9L
 29ToolEvent_GetEntityInfoResult
-2	A%9
+2	a!9
+2	a(9?
+2	A<9
 2	a@9Ia
 2	AA9
 2Ay)	
@@ -990,16 +962,12 @@ $0 to $1,
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
 2Gio8
 2	h(8
-2h":9
-2h"	9
+2h"	9H&
 2hb@9H
 2hBK9H
+2Hc59
 2hj)8
-2hj)8("
-2hJ	9(
 2hr	9`
-2hR	9
-2h>@y
 	2	i*
 %2i:%02i:%02i
 %2i/%2i on map %s
@@ -1008,17 +976,18 @@ $0 to $1,
 2Ii(8h
 2ii*x
 2ij(8
-2ij(83%
+2ij(8h 
+2ij(8s#
+2ij(x
 2-ik8k
 2+imx
-2iR	9
 2+iu8
 2j"	9I
 2j"@9)p
 2?".k
-2?k78
-2?k88
-2_k88ty
+2?k78p1
+2_k88
+2?k88o-
 2kii8l}C
 2Kkj8k
 2L%@x+
@@ -1033,23 +1002,24 @@ $0 to $1,
 30CConnectGameClientPrerequisite
 30CGameClientConnectPrerequisite
 30CHostSubscribeForProfileEvents
+30CModelConfigElement_RandomPick
 30CSVCMsg_ClearAllStringTables_t
 30CSVCMsgList_GameEvents_event_t
 30i*x
-31CBaseActionPlaySoundStartDialog
 31CCLCMsg_SplitPlayerDisconnect_t
 31CConsoleProcessorForTestScripts
 31CFinalizeConnectionPrerequisite
 31CGameUIRenderCallbackGroupLayer
+31CModelConfigElement_RandomColor
 31ISpawnGroupPrerequisiteRegistry
 31ProtoFlattenedSerializerField_t
 31ToolEvent_GetEntityInputsResult
-32CBaseActionScreenFadeStartDialog
 32CBidirMsg_RebroadcastGameEvent_t
 32CEntityComponentHelperReferencedI16CScriptComponentE
 32CFlattenedSerializerSpewFunc_Log
 32CFlattenedSerializerSpewListenerIL29FlattenedSerializerSpewType_t2EE
 32CLoadStartupResourcePrerequisite
+32CModelConfigElement_SetBodygroup
 32CNETMsg_SpawnGroup_LoadCompleted
 32CSource1InputHandler_VGUI_Escape
 32CSVCMsg_GameSessionConfiguration
@@ -1058,11 +1028,12 @@ $0 to $1,
 %-32s: %6.3f ms (+/- %6.3f) ms
 %-32s: %6.3f ms (+/- %6.3f) ms (%6.3f ave fps)
 333333
-33CBaseActionTextMessageStartDialog
 33CGameResourceManifestPrerequisite
+33CModelConfigElement_AttachedModel
 33CNETMsg_SpawnGroup_ManifestUpdate
 33CNetworkServerCreatePrerequisites
 34CChangelevelGameClientPrerequisite
+34CModelConfigElement_SetRenderColor
 34CNETMsg_SpawnGroup_LoadCompleted_t
 34CNETMsg_SpawnGroup_SetCreationTick
 34CSource1InputHandler_VGUI_NoEscape
@@ -1071,13 +1042,13 @@ $0 to $1,
 34CSVCMsgList_UserMessages_usermsg_t
 34INetworkMessageProcessingPreFilter
 34ToolEvent_SFMRecordingStateChanged
-35CBaseActionChangePlaybackRateDialog
 35CEngineSoundServicesDebugVisualizer
 35CEventQueue_SaveRestoreBlockHandler
 35CGameInfo_CDotaGameInfo_CPlayerInfo
 35CNETMsg_SpawnGroup_ManifestUpdate_t
 3)5L*H
 35ToolEvent_SFMToolActiveStateChanged
+36CModelConfigElement_SetMaterialGroup
 36CNETMsg_SpawnGroup_SetCreationTick_t
 37CWaitForGameServerStartupPrerequisite
 38CServerGameSessionManifestPrerequisite
@@ -1099,7 +1070,6 @@ $0 to $1,
 3mi,8K
 =3PF-5XG-
 3Qi+x
-%3s % 2i : %20s
  3: Same but with full heap
 40CGameInfo_CDotaGameInfo_CHeroSelectEvent
 %4.0f ms : %s
@@ -1120,9 +1090,9 @@ $0 to $1,
 49CNetworkClientSpawnGroup_LoadSaveGamePrerequisite
 49CNetworkServerSpawnGroup_LoadEntitiesPrerequisite
 49CNetworkServerSpawnGroup_LoadSaveGamePrerequisite
+		49J
+		49L
 &4@9R
-4Ayk(
-4(cB9
 4CLog
 4CPVS
 4Csv_voiceenable
@@ -1134,6 +1104,7 @@ $4DTdt
 4h"@9
 4h&@9
 4h"@9h
+4h.A9
 4hb@9
 4hB@9
 4hbA9
@@ -1156,6 +1127,7 @@ $4DTdt
 4IPVS
 4i*@y
 4I)@yW
+4j.A9i2
 4j&C)k"@
 4k&Aij
 4#L@9B
@@ -1175,21 +1147,26 @@ $4DTdt
 524288
 %5.2f %5.2f %5.2f %7i %5i %7.2f %7i
 53CNetworkClientSpawnGroup_AllocateEntitiesPrerequisite
+53CNetworkClientSpawnGroup_LoadSaveGamePrerequisiteBase
 53CNetworkClientSpawnGroup_WaitForAssetLoadPrerequisite
 53CNetworkServerSpawnGroup_AllocateEntitiesPrerequisite
+53CNetworkServerSpawnGroup_LoadSaveGamePrerequisiteBase
 53CNetworkServerSpawnGroup_WaitForAssetLoadPrerequisite
+54CNetworkClientSpawnGroup_LoadPreviousLevelPrerequisite
+54CNetworkServerSpawnGroup_LoadPreviousLevelPrerequisite
 54q`	
 55CNetworkClientSpawnGroup_AllocateSpawnGroupPrerequisite
 &'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz
 58jv@
 ,5@9_
 )5@9)}
-	5 9"
 	5@9)
 59CNetworkClientSpawnGroup_WaitForOwnerSpawnGroupPrerequisite
 59CNetworkServerSpawnGroup_WaitForOwnerSpawnGroupPrerequisite
 *5@9J
 5@9J9
+	)59l
+	!59W
 	5Ay*
 5CVEfx
 % 5d: % 5d
@@ -1211,6 +1188,8 @@ $4DTdt
 5IVEfx
 5i.@y
 5(k|8
+	5L9i
+	5U9I
 ?6`*@
 ?6	(@
 /6`>@
@@ -1220,7 +1199,6 @@ $4DTdt
 '6`:@
 '6	(@
 (6`"@
-6000.0
 60CNetworkClientSpawnGroup_WaitForManualCompletionPrerequisite
 %6.2f %6.2f %6.2f %.3f %.3f %.3f
 64-bit
@@ -1228,8 +1206,6 @@ $4DTdt
 (6`&A
  6arBy
 6Ay+}E
-6Ayk(
-6Ayy(
 `6`BD
 6ConVar
 _6	D@
@@ -1263,15 +1239,12 @@ _6	D@
 6hBA9	Q
 6hbB9
 6hbB9	7
-6hbL9
 6h^C9
 6HC@9
 6h&C9H
 6hcB9h
 6hcF9
 6hFA9
-6hFI9
-6h:h9
 6h"H9
 6h"I9H
 _6hj@
@@ -1281,17 +1254,14 @@ _6hj@
 6hj@9
 6hj@9h
 _6hjA9	
-6hJI9
 6hjI9h
 6h>K9
 '6hN@
 6hNA9
 _6hNB9	;
 6hnI9
-6hNI9h
 ?6hr@
 ?6hrA9	
-6hrB9
 6hrEybB
 6hrEyh
 @6hv@
@@ -1324,7 +1294,6 @@ _6ij@
 @6ij@
  6iJ@
 6iJA9
-`6in@
  6iN@
 ?6iN@
 _6inA9
@@ -1347,6 +1316,7 @@ _6inA9
 '6vj@
  74	(74
  74	(7t
+ 75	(7
 75	 7
 76`&@
 76	$@
@@ -1397,7 +1367,6 @@ _6inA9
  7wB@
  7x"@
 7	@y7
-7y9xH
 @8)		
 @8	}@
 *=@8_
@@ -1438,8 +1407,8 @@ _8"h 8
 )8hv@
 *8hv@
 (8HXhx
+@8i/@8
 @8i/@8J
-@8i/@8X
 @8+ih8
 @8,ij8_}
 @8*ij8
@@ -1467,6 +1436,7 @@ _=8q	)
 _8X,@8
 8x9,7
 _8y,@8
+ @9)$
  @9	$
 --@9_
 -!@9_
@@ -1475,6 +1445,8 @@ _8y,@8
 -	@9_
 .@9)	
 (@@9	
+(@@9	 
+(@@9	!
 (@@9		
 (@9	,
 )=@9)}
@@ -1487,27 +1459,22 @@ _8y,@8
 @9*	@
 @9+	@
 $@9	(
-#)9)+
-	-`9)
-	- 9]
-	!$9"
-	) 9~
+	!:9}
 	)@9)
 	)@9*
+	}%9`
 	@9*]
-	%`9)
 ,@9	0
 @90	@9
 9	0@9i
 @91#@92
-	)"92
 92ji8R
 @92yr
 @9>3@9*
 9,5@8K
 	@9*6B9
 @9(	 7
-	)$97
+$97{(
 @9;7@9<
 9.@8 
 @9*-@8K
@@ -1527,18 +1494,16 @@ $@9	(
 9+	@9
 @9/'@90
 . @9/$@90(@918@9.}
-	9`9i
 9	!@9i
 9	%@9i
  @9	$@9J
 *9@9J
 9@9j9
- @9	$@9JqF
+ @9	$@9JuF
 @9+	@9K
 @9a2@
 @9-b@
 @9*b@
-	=$9c
 @9)+C
 @9	}C
 	9C%A
@@ -1558,11 +1523,10 @@ $@9	(
 9CGameInfo
 9CRegistry
 9	D@8
-	9d9i
+		.9dp
 9*E@8?
 @9E-@9U
 @9h*@
-	- 9h
 "@9H	
 (@@9H
 @@9H	
@@ -1600,9 +1564,7 @@ $@9	(
 9hZB9
 ) @9i
 @9i&@
-	-`9i
-	-[9i
- @9I$
+#)9i)
 @9I	@
 "@9i"@9
 9IBlackBox
@@ -1626,13 +1588,14 @@ $@9	(
 )9IYiy
 @9j&@
 *=@9J
-@9J5F
+	-:9J
 @9j6B9?
 9j*@9(
 @9J!@9
 @9J#@9*
 @9J	@9&
 @9J9	
+@9J9F
 @9jF@
 @9jij8
 @9jij8*G!7)
@@ -1645,7 +1608,6 @@ $@9	(
 )!@9	k(8I
 9k=@9
 @9K	@9?
-	9K9i
 @9K	@9M
 @9Kii8
 @9Kik8
@@ -1671,8 +1633,7 @@ $@9	(
 @9O	@9P
 @9p	@9
 @9 q@
-	-$9Q
- 9(QD
+		+9qv
 &,@9R
 &$@9R
 %<@9R
@@ -1684,6 +1645,7 @@ $@9	(
 @9T)@9K
 (@@9tB
 @9U|@
+	9U9I
 @9V%@9W
 @9-{vx
 @9){vxl
@@ -1693,39 +1655,36 @@ $@9	(
 @9+	@yHM
 9y*xi
 @9 	@z
-	%$9z7
 'A)	}	
 #@)`~A
 A-!(!
 A)`~@
-a1 "%i"
-a2 "%i"
 a2@yh2@y
-	a49m
 a8#%D
 _A8qh
-*(a'9@
 +a@9?
 	!A9?
 		A9?
 		A9	
+	A|9?
 	A@9)
 	A@9)	
-	a?9<8
+	a	95"
 a@9+a
 a@9	a
-A9)aG
-	A$9bv
+(a(9E
+A9)eG
 		A9h
 	A9h&A
-	a=9i;
 	a@9i
+	!a9I
 ^A9i^
 "A9i"
 *	A9i
-	A`9i
-	A^9i
+	A[9i
+	A]9i
 	A@9i
+	A\9i
 A9i>@
 	A@9I
 A9	ii
@@ -1733,19 +1692,20 @@ A9	ii
 A9|J@
 /A9`*J9
 	A9j"A
+*A@9k
 ,	A9K
 +	A9K
 A9Kik
 +	A9lC
+	a%9m
 ?A9tJ@
-	A'9Up
 A-'@A-
+)aa9?
 AA9(	
 AA9(	@
 A(aN!
 $	A)Ar
 a^  b
-ab@9B+
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 aBI9J
@@ -1760,17 +1720,6 @@ Accepting P2PSessionRequest_t from %s
 .Acl_interpolate
 A command with the specified name already exists. Cannot create an alias with the same name.
 ACT_IDLE
-actionname
-ActionName
-ActionSkip
-ActionSkipType
-actionstart
-ActionStart
-ActionStartType
-ActionStop
-ActionStopType
-ActionTarget
-actiontype
 ActivateGameUI()
 ActivateItem
 ActivateMainWindow
@@ -1778,7 +1727,6 @@ Activates SourceTV on server.
 ActivateSteamGameServer(finished)
 ActivateSteamGameServer(start)
 activator
-activedirectory
 active loop:
 Active loop %s:
 active_spawngroup_handle
@@ -1843,8 +1791,6 @@ AddUInt64
 Adobe APP14 marker: version %d, flags 0x%04x 0x%04x, transform %d
 !	A)Dr
 AE- "#
-	ae9	
-	Ae9?
 AE_ACTION_SET_TURN_RATE_SCALE
 AE_BLIND_ZOMBIE_SNIFF
 AE_CL_ADD_PARTICLE_EFFECT_CP
@@ -1875,27 +1821,26 @@ AE_VORTIGAUNT_ZAP_POWERUP
 AE_VORTIGAUNT_ZAP_SHOOT
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
+)Af9?
 A file with this name is already in the pool.
 After selecting and moving a panel Ctrl-z will undo the move.
 after solve err=%f
 After this many seconds without a message from fully connected client, the client is dropped
 After this many seconds without receiving a packet from the server, the client will disconnect itself
-ag9I+
-(ag9J+
 A game file appears to be missing or corrupted.  In the Steam client go to the game's properties.  In the 'Local Files' tab select 'Verify Integrity of Game Cache' to have Steam double-check the game's installation.
 A-gBA-
 Agg data %d: %p (%d parts, crc 0x%08X)
 aggregate_value
-	AH9	
 <a href=
-a "%i"
 A!;I2
+	Ai9	
 #A)iBB
 ai_model_info
 .A)iN@
 AIWalkable
 A	@}J!
 a.JY .I
+	AL9i
 alias
 Alias a command.
 ALIGN_TYPE is wrong, please fix
@@ -1916,6 +1861,7 @@ allow_from_disk+check_crc
 +allow_in_coop
 allowMouseWheel
 -allow_no_lobby_connect
+-allow_non_tools_paths
 Allow or disallow the wait command on clients connected to this server.
 allowstatic
 Allows the client to playback screenshot and jpeg commands in demos.
@@ -1940,7 +1886,6 @@ __android_log_write
 angle
 Angle; 
 angles[player %d]: %.3f,%.3f,%.3f
-Angular velocity limit before eyes considered snapped for demo playback.
 )aNh?
 AnimAddLayer
 AnimAlign
@@ -2051,6 +1996,7 @@ As the clock offset goes from cl_clock_correction_adjustment_min_offset to this 
 AsyncBeginRenderingViews
 async_serialize
 async_track_all
+asyncwrite
 \ at end of pattern
 ATI1N
 ATI2N
@@ -2060,6 +2006,8 @@ At marker 0x%02x, recovery action %d
 attachment
 ATTACHMENT_INFLUENCE_FLAGS_NONE
 attachment_offset
+attachment_type
+attach_point
 -attachtodebugger
 Attempted to alias unknown class %s using same designer name "%s"
 Attempted to ConvertToCopiedData for unsupported type (%d)
@@ -2077,8 +2025,9 @@ attenuation2
 _attr_
 attrib
 Attribute counts between meshes is inconsistent
-attributes
 Attribute "%s" was defined more than once.
+	aU9I
+	AU9I
 audible_mask
 audio
 AudioLanguage
@@ -2117,25 +2066,26 @@ avg_packets_out
 AVI recording failed! Missing expected pixels!
 avisound 
 /AV?O!
+	AX9i
 A{"xB
 Ax_! k
+	AY9i
 A@yi*@
 A)`z@
+	AZ9i
 AZUy!
 =	)B)
 	*`"B
 B-!(#
 .B@)1
 B-1HD-
-b1 "%i"
-b2 "%i"
 *-B),5C)_
 B@9	A
 ^B9h^
 b@9hb
-	-b9i
 b"@9i
 b@9ib
+B	9T(
 bA9hb
 BA9hB
 BA9iB
@@ -2210,7 +2160,6 @@ Baseclass unpack
 Base_CmdKeyValues
 Base component class %s needs to have the same contained / referenced rules as its derived classes!
 BaseIKRig
-BaseInputDialog
 #base is NULL 
 baselayer
 baseline
@@ -2222,6 +2171,7 @@ BasePhysicsShape
 Base Spring; 
 	"$basetexture"	"%s%c%s"
 battery_saver
+BB9$|
 bB9hb
 BB9hB
 BB9hj:8
@@ -2264,7 +2214,6 @@ BGRX8888_LINEAR
 B*"h3xA
 "*bh 8
 B)hZA
-b "%i"
 Bidirectional_Messages
 #Bidirectional_Messages_LowFrequency
 bi_GameEvent
@@ -2324,6 +2273,7 @@ blockLOS
 bN!(a
 BodyGroup
 BodyGroupChoice
+body_groups
 body_type
 Bogus buffer control mode
 Bogus DAC index %d
@@ -2339,6 +2289,7 @@ Bogus sampling factors
 Bogus virtual array access
 # bone
 BoneChannel
+bonemerge
 bone_name
 bone_names
 bool_array
@@ -2463,6 +2414,7 @@ Button.DepressedTextColor
 Button.FocusBorderColor
 ButtonKeyFocusBorder
 ButtonToggled
+B@yhB
 byte COM_BlockSequenceCRCByte(byte *, int, int)
 bytes. 
 Byte size calculation and serialization were inconsistent.  This may indicate a bug in protocol buffers or it may be caused by concurrent modification of 
@@ -2477,11 +2429,13 @@ C-!($
 C-2-@
 C2S_CONNECTION_Message
 C2S_CONNECT_Message
+_c59(
 C-!8"
 (c@9+
 C9an@
 C9fj@
  c@9!g@9"
+	}C9i
 cA9s~
 cable
 cache/DownloadCache.db
@@ -2507,8 +2461,6 @@ Call to NULL write function
 Camera settings can't be changed during a live broadcast.
 C(aN#
 CanBeDefaultButton
-cancel
-CancelButton
 Candidate
 Cannot allocate abstract class
 Cannot allocate buffer larger than kint32max for 
@@ -2598,16 +2550,8 @@ CAuthPhysBody
 CAuthPhysJoint
 Caution: quantization tables are too coarse for baseline JPEG
 C)b @
-CBaseActionEditDialog
-CBaseActionPlaySoundStartDialog
-CBaseActionWithTargetDialog
  CBaseClient::ProcessCreateStringTable(%s)-done
 CBaseConstraint
-CBaseDemoAction::AddEditorFactory: Bogus factory type %i
-CBaseDemoAction::AddFactory: Bogus factory type %i
-CBaseDemoAction::CreateActionEditor:  Missing edit factory for %s
-CBaseDemoAction::CreateDemoAction:  Missing factory for %s
-CBaseDemoAction::Init:  must specify a name for action!
 --CBaseSpawnGroup
 ++CBaseSpawnGroup
 CBenchmarkService
@@ -2663,7 +2607,6 @@ CDemoClassInfo
 CDemoConsoleCmd
 CDemoCustomData
 CDemoCustomDataCallbacks
-CDemoEditorPanel
 CDemoFile: Close '%s'
 CDemoFile: [%d] ReadMessage: %s Size:%d
 CDemoFile: [%d] ReadMessageType: %s @ %d
@@ -2774,7 +2717,7 @@ CFingerSource
 cFL9"
 CFootDefinition
 CFrameSnapshot CUtlMemoryPoolMT
-c^FyB
+c^Fy"
 CGameClientConnectPrerequisite
 CGameEventSystem::SendRebroadcastMessage doesn't support more than %llu clients!
 .CGameInfo"
@@ -2814,7 +2757,6 @@ changelevel %s:  invalid map name
 Changelevel %s %s
 Changelevel to %s
 ChangeMapToolEvent
-ChangePlaybackRate
 Change(%s):End
 Change(%s):Start
 Changes to the console enable will not take effect until the next launch
@@ -2971,10 +2913,6 @@ CHLTVServer::StartRelay: WriteSendTables overflow.
 CHLTVServer::UpdateHibernationState:  Terminating after relaying game.
 CHLTVServer::UpdateTick
 choices
-Choose...
-choosesound
-ChooseSound
-Choose .wav file
 CHostStateMgr::Activate(%s)
 CHostStateMgr::QueueNewRequest( %s, %u )
 CHostStateMgr::StartNewRequest:  Discarding pending request '%s, %u'
@@ -3121,8 +3059,6 @@ CL:  CSteam3Client::GetAuthSessionTicket
 clc_VoiceData
 CL:  CWaitForGameServerStartupPrerequisite done waiting for server
 CL:  Deferring SIGNONSTATE_SPAWN (spawn count %d) message
-cl_demoaction.cpp
-./cl_demoaction.h
 cl_demo.cpp
 CL:  Disconnecting from server: changelevel
 CL:  Disconnecting from server: %s
@@ -3187,6 +3123,7 @@ clients
 Client:  %s
 clients_bot
 ClientScheme
+Client %s(%d) tried to execute command "%s" before being fully connected.
 Client %s(%d) tried to execute command "%s" but it is not marked FCVAR_CLIENT_CAN_EXECUTE.
 client send move at tick sv(%d) cl(%d) %f
 ClientServerEngineLoop
@@ -3281,6 +3218,7 @@ cl rendering at (%d) %f %f [dt %.2f]
 cl_resend
 cl_retire_low_priority_lights
 CL:  %s
+CL:  %s CNetworkClientSpawnGroup_LoadSaveGamePrerequisiteBase::OnSaveFileDataLoadedInternal( %s, %d bytes )...
 cl:  Sending %d commands at tick %d %f [%d bytes]
 CL:  SendMove()
 CL:  SendMove(connecting)
@@ -3302,6 +3240,7 @@ CL:  Successfully connected to %s
 CL:  Suppress INetchannel::Transmit() in loopmode( %s )
 cl_team
 cl_timeout
+CL:  TransmitNetChannel
 CL:  Unexpected authentication protocol %i!
 cl_updaterate
 Cluster %d added
@@ -3317,7 +3256,19 @@ cmd_number
 CMemAllocSystemInitialize
 CMemoryStack %s
 CMesh Cannot create packed input layout, because the bone indices are out of range (0x%X)
+CModelConfig
+CModelConfigElement
+CModelConfigElement_AttachedModel
+CModelConfigElement_RandomColor
+CModelConfigElement_RandomPick
+CModelConfigElement_SetBodygroup
+CModelConfigElement_SetMaterialGroup
+CModelConfigElement_SetRenderColor
+CModelConfigElement_UserPick
+CModelConfigList
 CMorphConstraint
+CMotionTransform
+CMotionTransform-world
 .CMsg_CVars"
 CMsg_CVars
 .CMsg_CVars.CVar
@@ -3398,6 +3349,7 @@ CNetworkServerSpawnGroup_AllocateEntitiesPrerequisite
 CNetworkServerSpawnGroup_AllocatePrerequisite
 CNetworkServerSpawnGroupCreatePrerequisites
 CNetworkServerSpawnGroup_LoadEntitiesPrerequisite
+CNetworkServerSpawnGroup_LoadPreviousLevelPrerequisite
 CNetworkServerSpawnGroup_LoadSaveGamePrerequisite
 CNetworkServerSpawnGroup_WaitForAssetLoadPrerequisite
 CNetworkServerSpawnGroup_WaitForChildSpawnGroups
@@ -3430,6 +3382,7 @@ column
 ColumnResized
     combined CRCs: stored = 0x%x, computed = 0x%x
 Combo(
+ComboBox
 ComboBoxBorder
 ComboBoxButton
 ComboBoxButton.ArmedArrowColor
@@ -3444,7 +3397,6 @@ command_number
 CommandProcedure
 CommandProcedureList
 command "%s"
-commands "%s"
 CommandSubmitted
 Commencing game stats upload connection.
 Commencing SourceTV connection retry to %s
@@ -3476,8 +3428,10 @@ ConDMsg
 condump
 condump%03d.txt
 con_enable
+ConfigAttachedModel
 CONFIG_ERROR
 config file '%s' is overriding an archived convar '%s' with value '%s'. User will not be able to change this value!
+config_state
 ConfigurationSystem_001
 configvalue.cpp
 Config Values
@@ -3686,9 +3640,7 @@ crash_job
 Crash the client. Optional parameter -- type of crash:
 crash_thread
 CRC'd '%s' .
-created
 CreateDebuggerWindow
-createdint
 CreateEntity
 createmove
 CreateNewControl
@@ -3907,9 +3859,7 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 d2@y	
-d3@y	
 *-D),5E)_
-d6@yc
 d6@yC
 	D@8!
 D@8)%
@@ -3917,8 +3867,6 @@ D@8)%
 "D@9%
 D@9_ 
 D9{6@
-	=d9i
-	-d9i
 D9i.A
 -dac_offline
 %d addons loaded
@@ -3967,6 +3915,7 @@ Decrement the timescale by one step
 	dedicated
 Dedicated Server
 Dedicated server frame rate limiter. 0=tick rate. Only applies to the dedicated server.
+Default
  [default = $0
 defaultBgColor_override
 defaultFgColor_override
@@ -3978,7 +3927,6 @@ default rate for relays
 DefaultRenderSystemOption
 defaultSelectionBG2Color_override
 DefaultSmall
-DefaultSystemUI
  (default = .tga + .wav file)
 DefaultToVr
 DefaultUnderline
@@ -4018,21 +3966,8 @@ DEM_FileInfo
 DEM_FullPacket
 DEM_IsCompressed
 DEM_Max
-DemoActionList
-demoactions
-demo_avellimit
 Demo contents for %s:
 demo_debug
-Demo demo file sequence.
-DemoEditCancel
-DemoEditDelete
-DemoEditEdit
-DemoEditNew
-DemoEditNewAction
-DemoEditOk
-Demo Editor
-DemoEditRevert
-DemoEditSave
 demo_fastforwardfinalspeed
 demo_fastforwardramptime
 demo_fastforwardstartspeed
@@ -4050,11 +3985,9 @@ demo_gotomark
 demo_gototick
 demoheader.tmp
 demo_info
-demo_interplimit
 demo_interpolateview
 demolist
 demo_marktick
-DemoName
 demopacket
 demo_pause
 demo_pauseatservertick
@@ -4270,7 +4203,6 @@ dump the text currently in the console to condumpXX.log
 Dump vprof counters to the console
 Duplicate engine service named "%s" registered!
 Duplicate loop named "%s" registered!
-duration "%.3f"
 %d_width
       %d work, %d block, ratio %5.2f
 -dx11
@@ -4286,17 +4218,17 @@ Dy)$HJi
 DyijB
 .dynamic
 __dynamic_cast
+DynamicConfigList
 dynamic_interaction
 .dynstr
 .dynsym
 E-!("
-	e49c
-	e=9_
-	e?92
-	E'9K
-	E(9v
-	E$9X#
-	e:9z
+	E69gW
+	e(9[
+	E'9-
+	E'96
+	e%97
+	}e9i
  *Each frame will render %d times*
 echoln
 Echo log information to the console.
@@ -4306,10 +4238,9 @@ EconItemToolModel_001
 E)d6@
 _edata
 EDemoCommands
-Edit...
 editable
 EditMenu
-Edit %s Action
+EditorDynamicConfig
 E-evA
 effect
   effect %d, color1(%d,%d,%d,%d), color2(%d,%d,%d,%d)
@@ -4320,8 +4251,8 @@ e.g.:  startmovie testmovie jpg wav jpeg_qality 75 framerate 30
 ehandle
 .eh_frame
 .eh_frame_hdr
-	eI9I
 eikonal
+	EL9i
 element
 element_array
 elementid
@@ -4410,6 +4341,7 @@ engine_no_focus_sleep_vconsole_suppress
 #Engine_NotEnoughPhysicalMemory_Title
 Engine only supports 255 ConVars marked 0x%llX
 Engine only supports 255 ConVars marked %i
+engine_ostype
 engine_platform_name_extended
 Engine RenderingWorldSession
 engine_rendersystem_init
@@ -4502,8 +4434,6 @@ __errno
 erroffset passed as NULL
 ERROR calling AddSystem( "vr" )! SteamVR not loaded!
 ***************** ERROR: Cannot call CAppSystemDict::AddSystems without initializing first!
-ERROR: CBaseDemoAction::NameForTimingType type %i out of range
-ERROR: CBaseDemoAction::NameForType type %i out of range
 Error: Could not save changes.  File is most likely read only.
 ERROR: couldn't open.
 ERROR: Detected mismatched logging state. Expected matching LoggingSystem_PushLoggingState/LoggingSystem_PopLoggingState.
@@ -4548,10 +4478,12 @@ Error while parsing option value for "
 Error writing launch configuration file %s!
 Error writing machine configuration file %s!
 Error writing machine convar configuration file %s!
+Error writing offline user config file '%s'
 Error writing to file
 Error writing user config file '%s'
 ERROR: You are trying to mount addon '%s' but SetAllowAddonChanges is false which probably means you shouldn't be calling this directly.
 ERROR: You are trying to unmount addon '%s', but SetAllowAddonChanges is false which probably means you should be using calling this directly.
+	eS9I
 Escape key allowed to hide game UI
 Escape key allowed to show game UI
 Escape key doesn't hide game UI
@@ -4561,6 +4493,8 @@ ESplitScreenMessageType
 .ESplitScreenMessageType
 ETC compression not supported on this target .
 ETC_TEXTURES
+	eU9I
+	EU9I
 event
 EventAdvanceTick_t
 EventAppShutdown_t
@@ -4612,7 +4546,6 @@ EventSystem001
 event_t
 Evictions/m
 Ex?!4k
-	EX9?
 Example: blink r_ssao           - toggles between 0 and 1 every second
 Exclusive Fullscreen
 exec_async
@@ -4714,27 +4647,22 @@ Extensions of MessageSets must be optional messages.
 Extensions to non-lite types can only be declared in non-lite files.  Note that you cannot extend a non-lite type to contain a lite type, but the reverse is allowed.
 extra interior spaces removed from keyword
 extreme cHRM chunk cannot be converted to tristimulus values
+	EY9?
 F-!($
 F-%:%
 *-F),5G)_
 	!f9	
+F	9L(
 fA9hf
 FA9hF
 FA9iF
 faceMergeAngle
-factory
-factory "%s"
 fadein
-Fade in
-fadein "%.3f"
-FADEINOUT
-FADEINOUT "1"
 fadeout
-Fade out
-fadeout "%.3f"
 failed!
 Failed
 Failed to activate script entity %s of type %s: script entity instance is null
+Failed to allocate an instance of a class
 Failed to allocate an instance of class '%s'
 Failed to allocate memory
 Failed to assign bool literal value
@@ -4792,12 +4720,6 @@ fdopen
 FeetSettings
 FeModel combiner: Too many ropes (%u) or links (%u): cannot fit sum in uint16
 ferror
-FFADE_IN "1"
-FFADE_MODULATE "1"
-FFADE_OUT "1"
-FFADE_PURGE
-FFADE_PURGE "1"
-FFADE_STAYOUT "1"
 ?fff?
 %f %f %f %f
 fffff
@@ -4808,6 +4730,7 @@ fgcolor
 fgetc
 fg_image
 F*%h3x%hgx
+F-He@
 F*&h%x%hsx
 F*%h'x%hsx
 field
@@ -4818,6 +4741,8 @@ Field "$0" uses reserved number $1.
 FIELD_BOOLEAN
 FIELD_CHARACTER
 FIELD_CLASSPTR
+FIELD_CMOTIONTRANSFORM
+FIELD_CMOTIONTRANSFORM_WORLDSPACE
 FIELD_COLOR32
 FIELD_CSTRING
 FIELD_CTRANSFORM
@@ -4921,59 +4846,26 @@ File has not been opened!
 File is already registered: 
 FileLoggingListener001
 filename
-FileNameCombo
-FileNameComboBox
-FileNameLabel
 fileno
 File not found in the zipfile
-FileOpenDialog
-#FileOpenDialog_Cancel
-#FileOpenDialog_Col_Attributes
-#FileOpenDialog_Col_DateModified
-#FileOpenDialog_Col_Name
-#FileOpenDialog_Col_Size
-#FileOpenDialog_Col_Type
-#FileOpenDialog_Directory_Name
-#FileOpenDialog_File_name
-#FileOpenDialog_File_type
-#FileOpenDialog_FileType_Folder
-#FileOpenDialog_Look_in
-#FileOpenDialog_NewFolder_DefaultName
-#FileOpenDialog_NewFolder_InputTitle
-#FileOpenDialog_NewFolderPrompt
-#FileOpenDialog_Open
-#FileOpenDialog_Save
-#FileOpenDialog_Select
-#FileOpenDialog_ToolTip_NewFolder
-#FileOpenDialog_ToolTip_OpenInDesktopManagerButton
-#FileOpenDialog_ToolTip_Up
 FileOptions
 FileRead for cloud file '%s' returned %d, even though GetFileSize returned size %d
 File recursively imports itself: 
-FileSelected
-FileSelectionCancelled
 FileSelectionCombo
 File %s is not allowed to be modified.
-filesize
-filesizeint
 Files that do not use optimize_for = LITE_RUNTIME cannot import files which do use this option.  This file is not lite, but it imports "
 File %s was not found.
 Files with optimize_for = LITE_RUNTIME cannot define services unless you set both options cc_generic_services and java_generic_sevices to false.
 FileSystem
 filesystem_stdio
-FileTypeCombo
-FileTypeLabel
 FillAttr
 fillcolor
 fillColor
 fillcolor_override
-filterinfo
 filterinY
 filterinZ
 Filter voice by name substring
     final combined CRC = 0x%x
-finalfov
-finalfov "%f"
 Final PP PAGES: used: %d, free %d
 FindClosestMatchingRegion
 FindDefaultButton
@@ -5006,18 +4898,16 @@ FlashWindow
 FlattenedSerializersVersion001
 Flexible; 
 Flicker
-FLICKER
-FLICKER "1"
 float32
 float32-quantized
 float64
 float_array
 floatbitmap.cpp
 floatbitmap.cpp(140): Unknown gamma type "%s"!
-floatbitmap.cpp(2455): Error calling TGALoader::GetInfo( %s )
-floatbitmap.cpp(2466): Error loading %s
-floatbitmap.cpp(2489): Error! Unknown file type for %s
-floatbitmap.cpp(2508): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s
+floatbitmap.cpp(2463): Error calling TGALoader::GetInfo( %s )
+floatbitmap.cpp(2474): Error loading %s
+floatbitmap.cpp(2497): Error! Unknown file type for %s
+floatbitmap.cpp(2516): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s
 floatbitmap.cpp(324): Conversion not supported yet!
 floatbitmap.cpp(424): Conversion not supported yet!
 floatbitmap.cpp(887): Unsupported color format "%s", skipping!
@@ -5052,12 +4942,9 @@ fog_override_exponent
 fog_override_max_density
 fog_override_start
 Folder in the game directory where server logs will be stored.
-FolderUpButton
 </font>
 <font color="#%.2X%.2X%.2X">
 FontManager_001
-font "%s"
-Fonts
 .foo = value".
 for %.2f minutes
 Force a full update for all clients.
@@ -5100,12 +4987,6 @@ Found %d lines of sight!
 Found invalid proto option data for: 
 Found max edge length %g. Skipping SplitLongEdges, as that'll take too long to split.
 fov_desired
-fovhold
-fovhold "%f"
-fovratein
-fovratein "%f"
-fovrateout
-fovrateout "%f"
 -fpexcept
 %f Player [%s][%d][adr:%s] was sent a datagram %d bits (%8.3f bytes)
 fprintf
@@ -5136,6 +5017,15 @@ frame_maximize
 frame_menu
 frame_minimize
 frame_mintosystray
+FRAME_NET_BLOCKING_LOAD_SPAWN_GROUP
+FRAME_NET_POST_PROCESS_NETWORKING
+FRAME_NET_PRE_PROCESS_NETWORKING
+FRAME_NET_UPDATE_END
+FRAME_NET_UPDATE_FULL_UPDATE_RECEIVED
+FRAME_NET_UPDATE_POSTDATAUPDATE_END
+FRAME_NET_UPDATE_POSTDATAUPDATE_START
+FRAME_NET_UPDATE_PREDICTION
+FRAME_NET_UPDATE_START
 Frame.OutOfFocusBgColor
 framerate %f 
 Frame rate limiter.  0=no limit.  Does not apply to dedicated server.
@@ -5143,6 +5033,7 @@ Frame rate limiter.  0=no limit.  Does not apply to dedicated server.
 frame_rightGrip
 -framesamples
 Frame samples:
+FRAME_SIMULATE
    Frames: %u
 FrameSystemButton
 FrameSystemButton.BgColor
@@ -5171,6 +5062,10 @@ Freed EMS handle %u
 Freed XMS handle %u
 Free page file: %.2f MiB
 Free physical memory: %.2f MiB
+freeze_frame
+freeze_frame_texture_player_%d.vtex
+freeze_render_target_split_%d
+Freezes the display client side only
 , Frequency: %.01f %s
 frexp
 friction
@@ -5210,18 +5105,13 @@ FTYPEDESC_WAS_OUTPUT
 FullFrameSplit tick=%d, chunk=%d of %d
 -full_memory_dumps
 fullpackets_version
-fullpath
-FullPathEdit
 -full_render_callback_clear
 <function>
 Function returned more than 1 return value, illegal!
 fxtime
-fxtime "%.3f"
 f@y?! k
 "G))!
 G-!(#
-g1 "%i"
-g2 "%i"
 G6h6@
 G6hb@
 G6hBB9
@@ -5231,6 +5121,7 @@ G6hv@
 g6hz@
 g6i^@
 G6iBA9
+g6in@
 G6v.@
 (g@9.
 %g: AdvanceTime ticks this frame %d, sim remain: %g
@@ -5276,6 +5167,7 @@ Game/MissionInfo/builtin
 gamemode
 	game_mode
 gamemodes/
+game_nontools
 GameOverlay
 GAME_RESOURCE_MANIFEST_HANDLE_INVALID
 GameResourceServiceClientV001
@@ -5465,9 +5357,11 @@ GetInt32
 GetInt64
 GetIntAttr
 Get Integer Attribute
+GetJSONCharConversion
 "GetMapData"
 GetMessage
 GetName
+GetNameFromOSType
 GetNativeClassForScriptClass
 GetNativeOutputsForClass
 GetNumSplitScreenUsersAttachedToEdict
@@ -5508,7 +5402,6 @@ GetUserSetting: cvar '%s' unknown.
 GetViewEntity
 %g: FilterTime took target %g as time base instead of actual %g, diff %g
 %g %g %g %g
-g "%i"
 G)i*F
 \g is not followed by a braced, angle-bracketed, or quoted name/number or by a plain number
 G)j*F
@@ -5565,12 +5458,13 @@ g_VProfCurrentProfile
 )h&	)
 @)h"@
 	)	)h
+h&?);
 h&@)?
 #H)	}	
 H-!($
 h2@9)
 h2@9H	
-h2@9)MC
+h2@9)IC
 h2K9(
 h2K9i
 h3E9(
@@ -5587,16 +5481,14 @@ h7Ay
  H`8a
 h)8Ay)
 @H`8b
-=h"	9
 h"@9(
 h"@9)
 h"@9)$
 h"@9	
+h"@9	$
 `H9)}
 ?h98a
-h"	9a
 H9a2B
-;h9h	
 h"@9h
 h*@9h
 h*@9h/
@@ -5604,7 +5496,7 @@ h*\9h
 *h"@9H
 h.@9H
 h"@9i
-h"@9I$
+h"@9I
 h:	9i>	9
 H9)yx
 h"A9)
@@ -5626,7 +5518,7 @@ hb@9`
 hb@9(
 hB@9`
 hB@9(
-hB@9)5C
+hB@9)1C
 <hb@9h
 hb@9h
 h"B9h
@@ -5642,12 +5534,14 @@ hBB9(
 hbB9h
 hBD9iz@
 hBD9t
+hBF9i
 *hbGy		
 hbGy`
 hbGyi
 hBH9H
 *hBK9
 hBK9H
+=hb@y
 hB.y(5
 *hB.yK
 hB.yM1
@@ -5697,7 +5591,6 @@ hI)8i:@
 Hi)8i*@
 Hi)8j
 Hi)8	$W
-=h"I9
 h"I9(
 -hideconsole
 HideNewControlMenu
@@ -5712,7 +5605,7 @@ High Poly Draw Calls
 high_value
 Hit rate
 Hits/m
-hj58be
+hj48PS
 hj|8H
 hj)8H'@
 hj8li*8J
@@ -5757,7 +5650,6 @@ hnG9i
 hnUyh
 Holding right mouse button down opens a dropdown panel creation menu.
 holdtime
-holdtime "%.3f"
 HorizScrollBar
 host_computationtime
 "host_computationtime_std_deviation
@@ -5793,16 +5685,14 @@ host_version
 host_writeconfig
 Hotkey
 How many seconds it takes to get to full FF speed.
-How much origin velocity before it's considered to have 'teleported' causing interpolation to reset.
 How often to flash demo recording/playback overlay (0 - disable overlay, -1 - show always)
 HParticleSystemDefinition
 HPostProcessing
 HRenderTexture
 hrEy)
-hrEy)#
 hrEyi
+hrEyi!
 hrEyu
-hrf9(
 )hrG9
 hrG9H	
 hrG9t
@@ -5827,6 +5717,7 @@ hvUyh
 h*@y_
 h*@y	
 h&@y)
+h&@yI
 hzEyH
 hzEyi
 hzEyirB
@@ -5839,6 +5730,7 @@ i2@9(
 i2@9j
 %i %3i.%3i.%3i.%3i : %.3f min
 %i %3i.%3i.%3i.%3i : permanent
+	i69Z
 i6@yh
 i78w"B
 i7xh6@
@@ -5858,25 +5750,19 @@ i)8i&
 i`8%i`8
 i)8i&W
 ?i(8?i*x?i+
+?i(8j
 i)8j&W
 i*8j&W
 i(8m&W
-?i(8P
-?i(8r
 ?i(8v
 i*8?y*xJ
 *i"@9
-	i=9~;
-i"	9@
+	i%94
 I9`BA
 I9)%D
-	]I9i
 )I@9I
-	i	9j/
+	i	9J"
 i"@9J
-	I'9jp
-	i?9Q8
-	I$9wv
 IAppSystem *CAppSystemDict::AddSystem(const char *, const char *, ErrorResponse_t)
 IAppSystem *CAppSystemDict::AddSystem(CreateInterfaceFn, const char *)
 IAppSystem *CAppSystemDict::AddSystem(IAppSystem *, const char *)
@@ -5943,7 +5829,6 @@ I CUtlRBTree<CUtlMap<const char *, CPanelKeyBindingMapDictionary::PanelKeyBindin
 I CUtlRBTree<CUtlMap<const char *, CPanelMessageMapDictionary::PanelMessageMapDictionaryEntry, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, CPanelMessageMapDictionary::PanelMessageMapDictionaryEntry, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CPanelMessageMapDictionary::PanelMessageMapDictionaryEntry, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, CPanelMessageMapDictionary::PanelMessageMapDictionaryEntry, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, CPanelMessageMapDictionary::PanelMessageMapDictionaryEntry, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CPanelMessageMapDictionary::PanelMessageMapDictionaryEntry, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<const char *, CPrerequisitDescriptionHelper::Analysis_t, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, CPrerequisitDescriptionHelper::Analysis_t, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CPrerequisitDescriptionHelper::Analysis_t, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, CPrerequisitDescriptionHelper::Analysis_t, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, CPrerequisitDescriptionHelper::Analysis_t, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CPrerequisitDescriptionHelper::Analysis_t, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<const char *, CPureServerWhitelist::CCommand *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, CPureServerWhitelist::CCommand *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CPureServerWhitelist::CCommand *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, CPureServerWhitelist::CCommand *, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, CPureServerWhitelist::CCommand *, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CPureServerWhitelist::CCommand *, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
-I CUtlRBTree<CUtlMap<const char *, CUtlString, unsigned short, bool (*)(const char *const &, const char *const &)>::Node_t, unsigned short, CUtlMap<const char *, CUtlString, unsigned short, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CUtlString, unsigned short, bool (*)(const char *const &, const char *const &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<const char *, CUtlString, unsigned short, bool (*)(const char *const &, const char *const &)>::Node_t, I = unsigned short, L = CUtlMap<const char *, CUtlString, unsigned short, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CUtlString, unsigned short, bool (*)(const char *const &, const char *const &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<const char *, int, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, int, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, int, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, int, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, int, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, int, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<const char *, long long, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, long long, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, long long, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, long long, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, long long, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, long long, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<const char *, unsigned long long, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, unsigned long long, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, unsigned long long, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, unsigned long long, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, unsigned long long, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, unsigned long long, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
@@ -5967,7 +5852,6 @@ $Id8g
 -ideal_mobile_resolution_low_end_y
 -ideal_mobile_resolution_y
 "id" "elementid" 
-%i demo(s) in loop
 idempotency_level
 IdempotencyLevel
 IDEMPOTENCY_UNKNOWN
@@ -6063,7 +5947,6 @@ Iir8jic
 Iiux?!4k
 	iix?
 Ii+x!
-	iix?!7k
 	iix?!7k`
 	iix?!8k
 	iix?!8k`
@@ -6073,7 +5956,7 @@ Ii+x!
 	iix?!:k`
 i"@)j
 )ij8	
-ij(8@
+ij(8(!
 )Ij8?
 Ij8)	@
 ij8)ij8*
@@ -6106,10 +5989,12 @@ IKRigBiped
 IKRigBug
 IKRigSimple
 il8k	@
+	IL9i
 Illegal jstype for int64, uint64, sint64, fixed64 or sfixed64 field: 
 )ilxi
 ilxMik8	i,x
 i"L)zn@
+i*?)m
 im8Jy
 imageAlignment
 imagecolor
@@ -6175,15 +6060,12 @@ innerconeangle
 <input>
 input_button_code_is_scan_code
 input_button_code_is_scan_code 1
-InputCanceled
-InputCompleted
 input_downimpulsevalue
 Input file read error
 input_filter_relative_analog_inputs
 input_forceuser
 InputLayoutBuilder
 input_list
-InputMessageBox
 input_name
 input_param
 InputRunPrivateScript
@@ -6398,7 +6280,6 @@ IRecipientFilter
  %i refs
 irEya
 iRFy?
-iRI9h
    %i : %s
 %i %s : %.3f min
 isactive
@@ -6466,6 +6347,8 @@ items
 items_clientside
 items_t
 *)iu8)}
+	iU9I
+	IU9I
 %i users
 [i:%u:%u]
 [I:%u:%u]
@@ -6475,7 +6358,6 @@ iV@9h
 )ix8?
 i)xh~F
 i*xh>@yt:
-i*xh>@yu:
 i)xhzA
 *i.xi
 *i,xi>@yj:
@@ -6486,38 +6368,39 @@ IyixJylx+
 =izEy
 j.])	
 @ @-J
+j2?)?
 j2	)k
+j38AS
+j481\
 j48	C
-j48mW
 j48t^@
 j4xH;@
-j58h%
+j58h$
 j58hf@9(
 j58"l
-j68($
-j68(%
-j68H$
+j688&
+j68h"
 j68u"@
-j68x"
 j7Ayh3Ay)	
+j(8((
 j)8hjj
 j(8(Z@
  J9?@
 $J9!|
 J!@9_
 J!@9#
+j98Z!
 J9afA
  J9F|
-J	9hB	9
 j	@9I
-	-J9I
-	)J9I
 J!@9jB
 J9tB	
+	*JA/
 ja8B(
 J]A9_
 jA9hj
 JA9iJ
+j*A9j
 java_generate_equals_and_hash
 java_generic_services
 java_multiple_files
@@ -6555,10 +6438,10 @@ jiggle bone %u
 jIi8-
 JIIJJ}
 Jikx_
-Jilxk
 jj(8(
 <jj)8h
 jj)8v
+*jjh8
 jjh8J
 j!JJ+
 jjj8l
@@ -6574,7 +6457,6 @@ joinsession
 Joint Indices (%d) Out Of Range for SINT16: Skinning will not work!
 Joint Indices (%d) Out Of Range for UINT10: Skinning will not work!
 Joint Indices (%d) Out Of Range for UINT8: Skinning will not work!
-JO@xj
 joy_autoaimdampen
 joy_axisr_deadzone
 joy_axisr_relative
@@ -6616,11 +6498,9 @@ js_value
 @@J	t
 /JU7OB
 Jumping to random tick %d (%.2f min)
-Jumping to %s
 just happens to cross-check the results of huge numbers of
 JustInTime Resource Spawn Group
 jv8?)
-jx?!7k
 j+x`j
 j`x j`x?
 jx`xI}	
@@ -6639,18 +6519,19 @@ K1@yk
 *k2@y
 ?k58D
 K5@yk
-k68DE
-*?k78
-k7851
+?k68Ey
+?k78=)
+k78(&
 ?k78h
+*?k78 N
 ?k)8(
-k:8<%
-	k(87
+k:8|#
 _k88?
 ?k88_
-_k88O!
+?k88(&
 ?k88w
-(k;8H
+?k88X$
+	k(8S
 k(8vV@
 K!@9+!
 K	@9)
@@ -6661,6 +6542,7 @@ kaJJk[k
 Ka@yk
 KA@yk
 kB.y)-
+_!(kc
 _!(kC
 Kci 8
 K	D9L
@@ -6818,15 +6700,13 @@ keyword length must be 1 - 79 characters
 KEY_X
 KEY_Y
 KEY_Z
-)kh8?
-	kh8?
 )kh8?q
 	kh8?u
 Khi 8
 *Khi8Lhj8
 Ki,8*
 Ki)8i*@
-ki8k5F
+ki8k9F
 Kick a player by name.
 Kick a player by userid or uniqueid, with a message.
 kickid
@@ -6881,10 +6761,11 @@ Kykx)
 K@y	Q
 Ky@yk
 KY@yk
+-@)l.
 L %02i/%02i/%04i - %02i:%02i:%02i: %s
-l4d360uischeme
 l	@9,
 "L9`2
+	=L9i
 l	@9J
 la@9L	
 L	A9mC
@@ -6892,7 +6773,6 @@ label
 Label
 Label.BgColor
 LabelChanged
-label%d
 Label.DisabledFgColor1
 Label.DisabledFgColor2
 LABEL_OPTIONAL
@@ -6927,7 +6807,6 @@ LayoutFileChanged
 [lazy = true] can only be specified for submessage fields.
 lb@9l
 LC_ALL
-LCh9j
 L=cl_clock_correction
 %ld%c
 leading_comments
@@ -6943,6 +6822,7 @@ length exceeds PNG maxima
   let me know, and, ideally, save a copy of the file causing the
 levelload
 levelname
+leveltransition
 Li(8,
 Li(8,1_8k
 Li(8,!_8k
@@ -6950,7 +6830,6 @@ Li(8,a_8k
 Li(8,A_8k
 Li(8,q_8k
 Li(8,Q_8k
-	LI9(
 libandroid.so
 libc++_shared.so
 libc.so
@@ -7019,7 +6898,6 @@ ListImage
 Listing known P2P networking peers from all peer groups:
 listip
 List IP addresses on the ban list.
-ListItemSelected
 ListPanel.BgColor
 ListPanel.DisabledSelectedTextColor
 ListPanel.DisabledTextColor
@@ -7126,7 +7004,6 @@ Log when the tick delta >= this
 longjmp
 LookAtList
 lookbehind assertion is not fixed length
-LookInLabel
 "LookupMapValue"
 loopback:%d
 loop_break_on_damage
@@ -7169,25 +7046,12 @@ LrwcE
 lseek
 %ls [wstring, len = %d]
 [L:%u:%u]
-	m-9|
-	m;9`?
-	m	9`
-	m:9cI
-	M(9hk
-	}m9i
-	m^9i
-	m{9i
+	m%9:
+	m	9B 
 m%@9i)
-	m?9I6
-	M(9Ml
-	M!9o6
-	M'9oo
-	M'9"p
-	m:9QH
-	m?9T7
-	m-9z
-	Ma9I
+	m	9M!
 m	A9j"
+m_aAngOffset
 Machine
 machine_convars
 machine_convars_default
@@ -7265,9 +7129,11 @@ Master "%s", delay %.0f
 MATCHFRAMEWORK_001
 match_id
 MatchSession
+mat_disable_normal_mapping
 mat_drawTitleSafe
 Material count: %s
 Material generation: %s
+material_group
 MaterialParamBuffer_t
 MaterialParamFloat_t
 MaterialParamInt_t
@@ -7293,12 +7159,6 @@ materials/vgui/hud/800corner1.vmat
 materials/vgui/hud/800corner2.vmat
 materials/vgui/hud/800corner3.vmat
 materials/vgui/hud/800corner4.vmat
-materials/vgui/resource/icon_explore.vmat
-materials/vgui/resource/icon_file.vmat
-materials/vgui/resource/icon_folder_selected.vmat
-materials/vgui/resource/icon_folderup.vmat
-materials/vgui/resource/icon_folder.vmat
-materials/vgui/resource/icon_newfolder.vmat
 materialsystem2
 MaterialSystem2
 MaterialSystem2App
@@ -7314,7 +7174,9 @@ matrix3x4_t
 matrix3x4-world
 matrix_array
 mat_shading_complexity
+m_AttachmentName
 m_attachments
+m_AttachmentType
 m_Attenuation0
 m_Attenuation1
 m_Attenuation2
@@ -7356,6 +7218,7 @@ m_bCacheAttempted
 m_bCacheOk
 m_bCanBatchWithDynamicShaderConstants
 m_bCastShadows
+m_bClamp
 m_bDisableChild
 m_bDisableOperator
 m_bDoBonesOrientAlongPositiveX
@@ -7369,6 +7232,8 @@ m_bHasBakedLightingFromLightMap
 m_bHasBakedLightingFromVertexStream
 m_bHasCullingData
 m_bHasPerInstanceBakedLightingData
+m_bHideMaterialGroupInTools
+m_bHideRenderColorInTools
 m_bIgnoreRotation
 m_bInfluenceRootTransform
 m_bInitFromKilledParentParticles
@@ -7402,21 +7267,27 @@ m_bScaleInitialValue
 m_bScalePerParticle
 m_bSelected
 m_bThreadsActive
+m_bTopLevel
 m_bTrailBias
 m_bTranslationOnly
 m_bUseCompressedNormalTangent
 m_bUseHighestEndCP
+m_bUserSpecifiedColor
+m_bUserSpecifiedMaterialGroup
 m_bUseShadowFastPath
 m_bUsesIndexedBakedLighting
 m_bVisible
 +MBxK
 m_ChainData
 m_Children
+m_Choices
 MClassHasCustomAlignedNewDelete
 m_Color
 m_ColorScale
 m_ConeAxis
 m_ConeCutoff
+m_ConfigName
+m_Configs
 m_constraints
 m_ControlRigData
 m_cRenderColor
@@ -7430,8 +7301,12 @@ m_drawCalls
 m_drawCullData
 m_dynamicParams
 m_dynamicTextureParams
+	me9)
+	mE9i
 media/l4d2_background%02d.bik
 m_eHand
+m_ElementName
+m_Elements
 m_elems
 Members/numSlots
 memchr
@@ -7465,6 +7340,7 @@ mem_virt_avail_gb
 mem_virt_total_gb
 m_EndEffectorBone
 m_EndEffectorTargetBone
+m_EntityClass
 Menu.ArmedBgColor
 Menu.ArmedTextColor
 MenuBar
@@ -7502,6 +7378,7 @@ MeshSystem001
 MeshSystem/DoNotLoadMorphsOnMobile
 MeshUtils001
 meshUtilsKeyValues
+MessageBox
 #MessageBox_Cancel
 #MessageBox_OK
 MessageBoxText
@@ -7511,7 +7388,6 @@ Message missing required fields:
  message of type "
 Message of type "
 MessageOptions
-message "%s"
 Messages can't have default values!
 Messages can't have default values.
 MessageSet is not supported in proto3.
@@ -7536,6 +7412,7 @@ m_flags
 m_flAlpha
 m_flBakeLightIndexScale
 m_flBiasParameter
+m_flBindPoseDirectionMS
 m_flClusterCooldown
 m_flClusterCooldownMax
 m_flClusterCooldownMin
@@ -7544,6 +7421,7 @@ m_flClusterRefireTimeMax
 m_flClusterRefireTimeMin
 m_flClusterSize
 m_flDelay
+m_flDuration
 m_flEmissionDuration
 m_flEmissionScale
 m_flEmitRate
@@ -7552,6 +7430,7 @@ m_flFingerScaleRatio
 m_flFingerWeight
 m_flFireTime
 m_flFogContributionStength
+m_flFootLength
 m_flFrameTime
 m_fLifespanScaleExp
 m_flInitFromKilledParentParticles
@@ -7575,6 +7454,7 @@ m_flOpStrengthMaxScale
 m_flOpStrengthMinScale
 m_flOutput0
 m_flOutput1
+m_flPosition
 m_flPrecomputedMaxRange
 m_flRadius
 m_flRadiusScale
@@ -7602,8 +7482,10 @@ m_flValue
 m_flWeight
 m_ForceGenerators
 m_FullSendTables
-	mG9u
+m_Gradient
+m_GroupName
 *mGxJ
+	mh9i
 m_hActivator
 m_hBuffer
 m_hCaller
@@ -7614,6 +7496,7 @@ m_HitBoxes
 m_hitboxsets
 m_HitBoxSets
 Mhk8Nhl8
+m_hModel
 m_hParentSpawnGroup != m_hSpawnGroupHandle
 m_hSnapshot
 m_hTarget
@@ -7647,6 +7530,7 @@ m_Initializers
 m_inputList
 m_inputValue
 Min( %s, %s )
+m_InstanceName
 m_int
 m_intAttributes
 m_intParams
@@ -7675,11 +7559,13 @@ m_JointName
 m_Joints
 mkdir
 @mk%@y
+	ML9i
 m_lightCookie
 m_LiteralColor
 m_LoopState
 -=M]m}
 m_material
+m_MaterialGroupName
 m_materialName
 m_metacarpalBoneName
 m_morphSet
@@ -7700,16 +7586,20 @@ m_nBindOffsetBytes
 m_nBoneHash
 m_nBoneNameHash
 m_nBoneWeightCount
+m_nChoice
 m_nClientOutputFrames
 m_nClusterSizeMax
 m_nClusterSizeMin
 m_nControlPoint
 m_nControlPointNumber
 m_nCount
+m_nCP
+m_nCPField
 m_nCurrentTick
 m_nD3DSemanticIndex
 m_nDummy0
 m_nEntityIndex
+m_NestedElements
 MNetworkBitCount
 MNetworkChangeAccessorFieldPathIndex
 MNetworkChangeCallback
@@ -7789,6 +7679,12 @@ Mobile FPS limit - 15, 30, 60
 Mod doesn't support SourceTV. No director module found.
 Model combiner: too many vertex sets (%d)! Clamping to %d
 ModelCompile/UseShadowFastPathHeuristic
+MODEL_CONFIG_ATTACHMENT_BONEMERGE
+MODEL_CONFIG_ATTACHMENT_BONE_OR_ATTACHMENT
+MODEL_CONFIG_ATTACHMENT_COUNT
+MODEL_CONFIG_ATTACHMENT_INVALID
+MODEL_CONFIG_ATTACHMENT_ROOT_RELATIVE
+ModelConfigAttachmentType_t
 =model.cpp
 model_default_preview_sequence_name
 modeldoc0
@@ -7811,6 +7707,7 @@ modeldoc23
 modeldoc24
 modeldoc25
 modeldoc26
+modeldoc27
 modeldoc3
 modeldoc4
 modeldoc5
@@ -7820,16 +7717,14 @@ modeldoc8
 modeldoc9
 ModelDocUtils001
 model_index
+model_name
 MODEL_PROCESSING_SCRIPT_INTERFACE_001
 MODEL_PROCESSING_SERVICES_INTERFACE_001
 Model %s exceeds maxs (%.1f %.1f %.1f vs. %.1f %.1f %.1f)
 Model %s exceeds mins (%.1f %.1f %.1f vs. %.1f %.1f %.1f)
 Model %s missing bone and flex counts (%d < %d), init %d
 Mod enables VR by default. You can opt out of VR using the -novr command line arg.
-modified
-modifiedint
 Modifies the LOD scale
-Modulate
 (Module names differ: existing '%s' != requested '%s')
 (Modules differ: existing '%p' != requested '%p')
 Module "%s" is not debug and will only grow/add loadaddress size for "%s". But will never reduce it
@@ -7858,6 +7753,7 @@ Moves the camera position + orientation to the named entity
 Moves the camera position + orientation to the specified position
 ?Movie
 movie/%04d_%02d_%02d_%02d_%02d_%02d/%s
+	mP9i
 m_parentName
 m_PathIndex
 m_pAttributes
@@ -7919,6 +7815,7 @@ m_SolverType
 m_SourceFilename
 m_sSurfaceProperty
 m_sTargetMorph
+m_Stops
 m_stringAttributes
 m_targetDesc
 m_targetInput
@@ -7933,10 +7830,9 @@ m_tipParentBoneName
 m_toeBoneName
 MTreatUnknownEnumeratorsAsZero
 m_Type
+	mU9I
 m_uint
 m_uint64
-MultiFilesSelected
-MultiInputDialog
 multiplayer_break
 Multiple components in same entity instance not supported (%s in class %s)
 Multiple entity classes have the same designer name "%s" ( alias class %s and class %s )
@@ -8014,7 +7910,6 @@ N4vgui10MessageBoxE
 N4vgui11BaseTooltipE
 N4vgui11CheckButtonE
 N4vgui11FrameButtonE
-N4vgui11InputDialogE
 N4vgui11ProgressBarE
 N4vgui11RadioButtonE
 N4vgui11TextTooltipE
@@ -8031,12 +7926,9 @@ N4vgui13MenuSeparatorE
 N4vgui13TreeNodeImageE
 N4vgui14CConsoleDialogE
 N4vgui14ComboBoxButtonE
-N4vgui14FileOpenDialogE
 N4vgui14PanelListPanelE
-N4vgui15BaseInputDialogE
 N4vgui15BuildModeDialogE
 N4vgui15ScrollBarSliderE
-N4vgui16FileNameComboBoxE
 N4vgui16RichTextInteriorE
 N4vgui16TreeViewSubPanelE
 N4vgui17CBitmapImagePanelE
@@ -8299,13 +8191,10 @@ networksystem_protomessages.proto
 NetworkSystemUtilsVersion001
 NetworkSystemVersion001
  never used
-New->
 New Control menu - creates a new panel in the upper left corner.
 NewControls
-NewFolderButton
 Newline in string literal
 newPanel
-New %s Action
 NextChild
 nextdemo
 nf@9/
@@ -8530,6 +8419,7 @@ O6h:@
 O6hb@
 O6hbA9
 O6hFB9	
+o6hr@
 o6hVB9	1
 O6i>@
 O6i:@
@@ -8537,16 +8427,16 @@ o6ib@
 O6ib@
 O6ifA9
 O6iFA9
+o6ir@
 o6jb@
 o6jN@
-	!O9I
-	%O9I
 O	@9P5@9S
 )o))a
 objc_class_prefix
 OBSOLETE replaced by mobile_fps_* - Battery saver mode. 0=off, 1=on
 Obtained EMS handle %u
 Obtained XMS handle %u
+Oct 23 2019
 octal value is greater than \377 (not in UTF-8 mode)
 o@debug_draw_enable
 # of seconds to wait after final client leaves before hibernating.
@@ -8555,7 +8445,6 @@ of that program.  Please make an effort to report this bug;
  of the Protocol Buffer runtime library, which is not compatible with the installed version (
 <o@)i
 O*/i*x
-OKButton
 __oldschema_object_name
 oldtall
 oldwide
@@ -8589,7 +8478,6 @@ OneofDescriptorProto
 oneof_index
 Oneof must have at least one field.
 OneofOptions
-OnFolderUp
 OnHostSetTime
 OnLevelLoadingServerInfo
 Online %s, FPS %.1f, Version %i (%s)
@@ -8601,19 +8489,13 @@ Only HTTP downloads are supported, ignoring %s
 Only %i string tables allowed, can't create'%s'
 Only SourceTV Master can record demos instantly.
 (Only used when hosting xbox games). Send clients updates at the same time. This saves CPU because the server will encode and calc deltas on less frames.
-OnMatchStringSelected
 OnMouseFocusTicked
 OnNavigateFrom
 OnNavigateTo
 OnNetLanConnectionlessPacket
-OnNewFolder
-OnOpen
-OnPlayCDTrackFinished
-OnPlaySoundFinished
 OnPostDataUpdate
 OnPreDataUpdate
 OnRequestFocus
-OnScreenFadeFinished
 OnScreenSizeChanged
 OnServerAdvanceTick
 OnServerPollNetworking
@@ -8622,23 +8504,17 @@ OnServerPostSimulate
 OnServerProcessNetworking
 OnServerSimulate
 OnSimpleLoopFrameUpdate
-OnSkippedAhead
 OnStatusFinished for %s
-OnStoppedPlayback
-OnTextMessageFinished
 OnTickBoundary
 /?O_o
 )oO*a
 O!OJ)
 open_asset
 Open a VConsole subtool.
-OpenButton
 OpenColumnChoiceMenu
 OpenContextMenu
 Opened demo frame stats file '%s'
 Opened temporary file %s
-OpenInExplorer
-OpenInExplorerButton
 Opens an asset in it's primary editor of choice. Specify the full path to the asset from the mod directory.
 operand of unlimited repeat could match the empty string
 	operation
@@ -8668,6 +8544,7 @@ oRV?Ok
 oS,@Lc
 OS Paged Pool Memory Low!
 os/type  : %s %s
+OS type the engine is running on.
            Other markers removed.
 Other Players
 o!T?OB
@@ -8710,6 +8587,7 @@ oversubscribed distance tree
 oversubscribed dynamic bit lengths tree
 oversubscribed literal/length tree
 !OZW?O
+($?)P
 p2p_listpeers
 p2p_ping "%s"
 p2p_relay_maxhops
@@ -8766,7 +8644,7 @@ PanoramaUIClient001
 PanoramaUIClientFromClient
 PanoramaUIClient interface not set up
 PanoramaUIEngine001
-PARALLEL_PROCESS sv_packedentities.cpp:911
+PARALLEL_PROCESS sv_packedentities.cpp:909
 PARALLEL_PROCESS utlsoacontainer.cpp:2533
 PARAM_ERROR
  Parameter to BackUp() can't be negative.
@@ -8807,15 +8685,11 @@ Path_PopLast failed for read only CFieldPath
 Path_RemoveAll failed for read only CFieldPath
 Path_SetCount failed, depth already == DEFAULT_MAX_PATH_DEPTH(%d)
  path(%u = '%s/')
-Pause
 paused
 pause_group
 Pauses demo playback.
 Pauses demo playback at server tick
 Pauses instant replay.
-pausetime
-PauseTime
-pausetime "%f"
 pause_type
 payloadData
 PBDEMS2
@@ -9011,15 +8885,10 @@ Play a demo, report performance info, and then exit
 Play a recorded demo file (.dem ).
 PLAYBACK: At end of data
 playback_frames
-playbackrate
-playbackrate "%f"
 PLAYBACK: ReadReplayMessage returning deltaFrame clientTick=%d tick=%d delta=%d
 PLAYBACK: ReadReplayMessage waiting for next tick at clientTick=%d
 playback_ticks
 playback_time
-PlayCDTrackStart
-PlayCDTrackStop
-PlayCommands
 +playdemo
 playdemo <demoname> [
 playdemo %s
@@ -9048,16 +8917,14 @@ Playing back demo: '%s' at tick %u
 Playing Demo File "%s"
 Playing demo from %s.
 Playing Demo (%s)
+playing %d: %s
 Playing '%s'
 Play next demo in sequence.
 playrecapvid
 - plays a demo file
 playsound
 playsound 
-playsound command
 playsound <soundname>
-PlaySoundStart
-PlaySoundStop
 Please add a MovementSettings node to the model in ModelDoc
 Please add a Skeletal Input Settings node to the model in ModelDoc
 Please report it to me at: jseward@acm.org.  If this happened
@@ -9084,9 +8951,6 @@ PopNPlusN
 PopNPlusOne
 PopOnePlusN
 PopOnePlusOne
-PopulateDriveList
-PopulateFileList
-PopulateFileNameSearchHistory
 pop_var_values
 -port
 +port
@@ -9136,6 +9000,11 @@ PreserveEnt
 PressButton
 PrevChild
 prevhopcount
+PreviewAttachmentModel
+PreviewBoneAttachedModel
+PreviewBoneMergedModel
+PreviewPreset
+PreviewPresetList
 previouslevel
 p?RGB565
 print
@@ -9299,19 +9168,11 @@ PVS cluster %d
 pvs.cpp
 PVS origin %s
 py_generic_services
-	q-9[
-	q?9?
-	q:90H
-	q:9BI
-	q:9cK
-	Q(9Gk
-	Q]9i
-	q?9J
+	Q69uV
+	Q'9d
 *Q@9j
-	Q(9,l
-	Q'9No
-	q-9Y
-	qa9I
+	q%9l
+	Q'9m
 Q(aNf(!
 qangle
 QAngle
@@ -9319,13 +9180,12 @@ qangle_array
 QAngle-world
 q(	AzK
 QB)5}@
+	Qb9I
 	QB9i
-)qE9?
 QE@yk
 *	qG9)
 	qG9)
-	Qg9)
-	qG9i
+	Qg9i
 q?h(8
 qhB	9
 qhnG9)
@@ -9339,9 +9199,11 @@ qJT-s
 qknG9
 q	kw8A
 Q/!OJ
+	qP9i
         qsort [0x%x, 0x%x]   done %d   this %d
 	qSy)
 *qSyJ
+	qU9I
 quality
 quality %d 
 quality software.  Thanks.  Julian Seward, 30 December 2001.
@@ -9370,17 +9232,17 @@ qWiw8
 Q-@yk
 Q]@yk
 Q?Y(xhv@
+)QZ9?
 R11_EAC
 R16F_EXPAND
-r1 "%i"
 !~r(2
-r2 "%i"
 R32_UINT
 R6hv8
 R6hx8
 R8G8B8A8_ETC2_EAC
 R8G8B8_ETC2
 *R)8yv
+r	!!9_A&9c
 r@9ir
 rA9hr
 RA9iR
@@ -9509,7 +9371,9 @@ Rejecting connection request from %s (reservation cookie 0x%llx), server is rese
 .rela.dyn
 .rela.plt
 relative
+relative_angles
 RelativeFrame
+relative_origin
 (Relay)
 Relay proxies retry connection after network timeout
 Relay "%s", connect to %s (GSID:%s)
@@ -9676,18 +9540,7 @@ resize delta x
 resize delta y
 -resizing
 <resource>
-resource\BaseActionCDTrackStartDialog.res
-resource\BaseActionPauseDialog.res
-resource\BaseActionPlaybackRateDialog.res
-resource\BaseActionPlayCommandsDialog.res
-resource\BaseActionPlaySoundStartDialog.res
-resource\BaseActionScreenFadeStartDialog.res
-resource\BaseActionSkipAheadDialog.res
-resource\BaseActionStopPlaybackDialog.res
-resource\BaseActionTextMessageStartDialog.res
-resource\BaseActionZoomDialog.res
 ResourceCompilerSystem001
-Resource\DemoEditorPanel.res
 resource/game-icon.bmp
 resourcehandle
 ResourceHandleUtils001
@@ -9699,7 +9552,6 @@ Resource Manifest: "%s" %s [pass %d]
 resource/%s_%%language%%_lv.txt
 resource/%s_%%language%%.txt
 resource/sourcescheme.res
-resource/SourceScheme.res
              ( Resource "%s type %lld", handle is%s set
 resourcesystem
 ResourceSystem013
@@ -9729,13 +9581,11 @@ Retrieve the public script-side data associated with an entity
 Retrying connection to %s, server requires lobby reservation but is unreserved.
 Return code cannot be an error code and number of results at the same time!
 ReturnJobManualEventToPool
-revert
 RevertToSaved
 Revert to saved- reloads the last saved file.
 r_experimental_lag_limiter
 r_extra_render_frames
 rEybB
-r_farplane
 r_force_engine_render_frame
 r_force_render_frame_count
 r_force_zprepass
@@ -9774,7 +9624,6 @@ RHk)8
 Rhkh8h
 RHkh8h
 Rhk xV
-r "%i"
 R*i(8h*@
 R*i(8h6
 RichText
@@ -9802,7 +9651,7 @@ RIO_WILL_RELAY
 Rjjh8hB
 rJMJJ
 RJ	* &v
-R?k78\K
+R?k78
 R?k)8
 R(k)8
 R(kh8
@@ -9907,6 +9756,7 @@ RZqxeHq81
 s1_mapname
 %s|  % 2d: [% 3d] %-12s %s
 %s|  % 2d: %s [Offset: %d]
+%s % 2i : %s
 %s.360%s
 S3: Client connected with expired ticket: UserID: %x
 S3: Client connected with invalid ticket ( old version ): UserID: %x
@@ -9918,6 +9768,7 @@ S3: Duplicate client connection: UserID: %x SteamID %s
 S3,	S48
 S)5K*j
 %s = %6d (%6d:%6d)
+	]S9i
 %s. Ack, Net Buffer overflowed.
 %s:  adding %d:'%s' (%d total) userdata %d
 -safe_mode
@@ -9953,6 +9804,7 @@ Saves current key bindings to disk.
 SAVE/%s.hl1
 SAVE/%s.HL1
 SAVE/%s.hl2
+SAVE/%s.hl3
 Saves out the user config values.
 SAVE/%s.sav
 Save the ban list to banned_ip.cfg.
@@ -9989,38 +9841,35 @@ SchemeSurface001
 %s:  client '%s' has spawn group fully loaded
 %s:  CNetworkClientSpawnGroup_AllocateSpawnGroupPrerequisite allocated...
 %s:  CNetworkClientSpawnGroup_LoadEntitiesPrerequisite completed...
-%s:  CNetworkClientSpawnGroup_LoadSaveGamePrerequisite async completed...
-%s:  CNetworkClientSpawnGroup_LoadSaveGamePrerequisite async failed...
-%s:  CNetworkClientSpawnGroup_LoadSaveGamePrerequisite async started...
+%s:  CNetworkClientSpawnGroup_LoadSaveGamePrerequisiteBase async failed on %s
+%s:  CNetworkClientSpawnGroup_LoadSaveGamePrerequisiteBase async FULLY completed...
+%s:  CNetworkClientSpawnGroup_LoadSaveGamePrerequisiteBase async started...
 %s:  CNetworkClientSpawnGroup_WaitForAssetLoadPrerequisite completed %s...
 %s:  CNetworkClientSpawnGroup_WaitForChildSpawnGroups completed...
 %s:  CNetworkServerSpawnGroup_LoadEntitiesPrerequisite completed...
-%s:  CNetworkServerSpawnGroup_LoadSaveGamePrerequisite async completed...
-%s:  CNetworkServerSpawnGroup_LoadSaveGamePrerequisite async failed...
-%s:  CNetworkServerSpawnGroup_LoadSaveGamePrerequisite async started...
+%s:  CNetworkServerSpawnGroup_LoadSaveGamePrerequisiteBase async failed on %s
+%s:  CNetworkServerSpawnGroup_LoadSaveGamePrerequisiteBase async FULLY completed...
+%s:  CNetworkServerSpawnGroup_LoadSaveGamePrerequisiteBase async started...
 %s:  CNetworkServerSpawnGroup_WaitForAssetLoadPrerequisite %s...
 %s:  CNetworkServerSpawnGroup_WaitForChildSpawnGroups completed...
 %s:  CNetworkServerSpawnGroup_WaitForClients completed...
 %s:  CNetworkServerSpawnGroup_WaitForManualCompletionPrerequisite manual creation was flagged...
 %s:  CNetworkStringTableContainer::RemoveAllTables:  removing %d tables
+%s_color
+%s (Color)
 "%s" connected%s.
 %s/console%04d.log
 %s: couldn't exec '%s', missing file
 %s: couldn't exec '%s', unable to read file
-ScreenFadeColor
-ScreenFadeDuration
-ScreenFadeFFADE_IN
-ScreenFadeFFADE_MODULATE
-ScreenFadeFFADE_OUT
-ScreenFadeFFADE_Purge
-ScreenFadeFFADE_STAYOUT
-ScreenFadeHoldTime
-ScreenFadeStart
-ScreenFadeStop
+ScreenShot
+Screenshot async write failure on '%s', error == %d
+Screenshot async write queued for : %s
+Screenshot async write success: %s
 Screenshot Failed! Missing expected context!
 Screenshot Failed! Missing expected JPEG pixels!
 Screenshot Failed! Missing expected pixels!
 Screenshot Failed! Missing expected PNG pixels!
+Screenshot Failure: Could not async save screenshot to: %s
 Screenshot Failure: Could not save screenshot to: %s
 Screenshot Failure: Unexpected empty screenshot buffer.
 screenshot.jpg
@@ -10028,7 +9877,7 @@ screenshot_prefix
 screenshot resampling failed (error code %d)
 ScreenshotService001
 screenshot_subdir
-Screenshot Written To: %s
+Screenshot written to: %s
 screenx
 screeny
 Script_DebugBreak
@@ -10124,9 +9973,7 @@ Seek failed on temporary file
 " seems to be defined in "
 select
 Selected %d colors for quantization
-selectedfiles
 SelectedImage
-SelectFolder
 selectionColor_override
 selectionTextColor_override
 selectors %d, 
@@ -10156,7 +10003,6 @@ s_EntComponentInfo
 SentenceModeMenu
 %s:  Entity Group loaded
 === %sEntity List Summary (%s) ===
-Sep 11 2019
 seq_trans
 sequence < 0, in COM_BlockSequenceCRCByte
 sequence_bytes
@@ -10251,7 +10097,6 @@ SetEnumValue
 SetEnumValue accepts only valid integer values: value 
 setenv
 SetFakeClientConVarValue: %d not a client
-Set far plane for rendering
 SetFloat
 SetFocus
 SetFont
@@ -10418,7 +10263,6 @@ SI-	*{
 S`i#8
 S i#8
 S@i#8
-%s_%i.dem
 sigfillset
 SIGINT received
 	signature
@@ -10472,7 +10316,6 @@ SkeletonBoneBounds_t
 %s kicked by %s : %s
 SkIm8JYnx
 SkIp8JYnx
-SkipAhead
 Skipped to LIVE
 Skipped to tick=%d clientTick=%d
 Skipping existing file %s%s.
@@ -10484,13 +10327,9 @@ Skipping to tick=%d starting at full from %d
 Skips the current demo playback to the marked tick
 Skips to a tick in demo.
 Skips to location in demo.
-skiptotick
 SkipToTick: doskip newPackFrameIndex=%d m_nSkipFullFrameServerTick=%d tick=%d
-skiptotick "%i"
 SkipToTick: No replay frames
 SkipToTick: tick=%d relative=%s pause=%s
-skiptotime
-skiptotime "%.3f"
 Sk	@Q
 SkyLightingSamples.vtex
 SkyMapRenderTarget.vtex
@@ -10512,6 +10351,8 @@ slots
 :	S	M)
 	%s manifest end
 %s ManifestUpdate
+%s (Material)
+%s_matgrp
 %s <millis>: pause an async script
 Smoothing not supported with nonstandard sampling ratios
 , SMT/HT index %d
@@ -10539,7 +10380,6 @@ s off
 %s:  OnSpawnGroupDeactivate (MergedIntoOwner)
 %s:  OnSpawnGroupLoad
 sound,
-sound\
 sound_armed
 sounddata_t
 sound_depressed
@@ -10547,7 +10387,6 @@ SoundGuid_t
 sound_index
 sound_level
 soundname
-SoundName
 	sound_num
 sound_num_handle
 SoundOpSystem001
@@ -10555,7 +10394,6 @@ SoundOpSystemEdit001
 sound_released
 sound_resource_id
 sounds
-sound "%s"
 sound\%s
 Sounds
 SoundService_001
@@ -10633,6 +10471,7 @@ space
 spare error
 %s -- pass %d
 %s:  password failed.
+@spawn
 spawn_count
 SpawnCount: %d
 spawn    : %d
@@ -10682,8 +10521,7 @@ Spew serializers
 Spews information about all CUtlLRUCaches
 SpIp8
 %s:  player entity %d out of range, maxclients is %d
-spline
-spline "%i"
+Spline
 SPLIT%d
 splitplayers
 SplitScreen
@@ -10772,7 +10610,6 @@ SSE4.2
 %s| SizeOf: %d
 ss_loading
 %s:%s needs base %s:%s to be registered
-%s/sound
 ss_paused
 %s:  Spawn group loading failed
 %s:  Spawn group loading for success
@@ -10801,7 +10638,6 @@ ss_remove %d
 ss_voice_hearpartner
 ss_waitingforgamesessionmanifest
 %s:  SyncUnloadSpawnGroup shutdown/destroy...
-=	St(
 __stack_chk_fail
 Stack depth limit hit (%d)
 stackstats_dump 
@@ -10817,6 +10653,7 @@ StackTools_VerifyLoadedModuleMappings
 start
 StartChangeLevel unable to save game from %s -> %s (landmark %s)
 startdemos
+startdemos:  %i demo(s) in loop
 Started recording movie: %s.*: %s
 Started:  "%s"
 Starting SourceTV server listening on port %d.
@@ -10830,21 +10667,14 @@ Start recording movie frames.
 StartRelay: not connected.
 Starts SourceTV demo recording.
 Starts timedemo on given tick.
-starttick "%i"
-starttime
-starttime "%.3f"
 StartupDemoFile: couldn't open demo file header.
 StartupDemoHeader: couldn't open temporary header file (%s)
 state
 static bool CAppSystemDict::DictSortLessFunc(CAppSystemDict::LibraryDependencies_t &, const int &, const int &)
-static CBaseActionEditDialog *CBaseDemoAction::CreateActionEditor(DEMOACTION, CDemoEditorPanel *, CBaseDemoAction *, bool)
-static CBaseDemoAction *CBaseDemoAction::CreateDemoAction(DEMOACTION)
 staticClientDLLPanel
 staticClientDLLToolsPanel
 staticGameDLLPanel
 staticPanel
-static void CBaseDemoAction::AddEditorFactory(DEMOACTION, DEMOACTIONEDIT_FUNC)
-static void CBaseDemoAction::AddFactory(DEMOACTION, DEMOACTIONFACTORY_FUNC)
 static void CEntitySystem::DestroyEntitySystem()
 static void CGlobalConfigValueRegistry::HookUpConfigValue(const char *, ConfigType_t, ConfigValueType_t, CConfigValueOptions &&, const void **)
 static void CSchemaRegistration::RegisterAllModuleData(ISchemaSystem *)
@@ -10856,10 +10686,6 @@ StatsService_001
 status_code
 status_json
 StatusLabel
-stayout
-Stay out
-Stay Out
-stayout "%i"
 -steam
 steam://
 Steam
@@ -10965,6 +10791,7 @@ Still more data to unzip
 Stop an existing remote VProf data request
 stopanimation
 stopdemos
+stopdemos: exiting demo loop
 stopevent
 stop_immediately
 stop_instantly
@@ -10972,14 +10799,9 @@ Stop looping demos (current demo will complete).
 stop:  not recording a demo.
 stop_on_seq_change
 StopPanelAnimations
-StopPlayback
 Stop recording movie frames.
 Stops SourceTV demo recording.
 Stops the SourceTV broadcast.
-stoptick
-stoptick "%i"
-stoptime
-stoptime "%.3f"
 StoreDemoSpawnGroupMessage Failed to parse spawn group message
 StoreUndo
 %s: Transfering creation sequence %d to owner spawn group %s
@@ -11016,7 +10838,6 @@ String tables user data size restricted to %i bytes, requested %i is too large
 string_t_table
 string_value
 strlen
-strpbrk
 strrchr
 strstr
 strtof
@@ -11195,6 +11016,7 @@ sv_reserve_slots_for_reconnecting_players
 %s_vr_vive.vcfg
 %s_vr_windowsmr.vcfg
 SV:  %s
+SV:  %s CNetworkServerSpawnGroup_LoadSaveGamePrerequisiteBase::OnSaveFileDataLoadedInternal( %s, %d bytes )...
 %s:vscroll
 sv_search_key
 SV:  SendClientMessages
@@ -11332,7 +11154,6 @@ tangentu_signv
 target_entity
 target entity not found
 target input not found
-target "%s"
 Tc"A)`
 Tc"B)`
 Tc"C)`
@@ -11409,22 +11230,8 @@ textinsety
 TextKillFocus
 -textlanguage
 TextLayout_001
-TextMessageColor1
-TextMessageColor2
 -textmessagedebug
-TextMessageDefault
-TextMessageEffect
-TextMessageFadeInTime
-TextMessageFadeOutTime
-TextMessageFont
-TextMessageFXTime
-TextMessageHoldTime
 TextMessageMgr_001
-TextMessageStart
-TextMessageStop
-TextMessageText
-TextMessageX
-TextMessageY
 TextNewLine
 -textsublanguage
  (Texture)
@@ -11442,7 +11249,6 @@ TGAWriter: Failed to serialize screenshot pixels (%d x %d, %s).
 Th&@)
 Th2@9
 Th2@y
-Th6h9H
 Th6@y
 Th6@yi
 T?h 8
@@ -11459,6 +11265,7 @@ ThB@9h
 ThbA9
 ThBGy
 ThbGyh
+Thbi9
 ThbK9
 ThbK9(
 ThbK9h
@@ -11504,6 +11311,7 @@ This is a bug in bzip2/libbzip2, %s.
 This is a test of the emergency broadcast system.
 	This is necessary to run!
 ". This is not 
+This probably means the engine crashed while recording the .dem file and it was not finalized.
 This program requires version 
 This program was compiled against version 
 This server is password protected for console access. Must send PASS command
@@ -11562,7 +11370,6 @@ TiBGy
 TiBGy?
 TiBny
 	tickcount
-Tick %i
 tick_interval
   tick mark is locked
   tick mark is unlocked
@@ -11588,7 +11395,6 @@ tileImage
 tileVertically
 TILT_TWIST
 T im8
-Time %.3f
 time_array
 time_asserts
 Time asserts and show the lengthiest asserts
@@ -11599,7 +11405,6 @@ timedemo_end
 timedemo_start
 timedemo_vprofrecord
 timedemo_vprofrecord <demoname> <vprof stats filename> : gets demo speeds, recording perf data to a vprof stats file
-TimeDontCare
 Timed out for spawn group: %s
 Time in seconds before lobby reservation expires.
 Time in seconds given for a lobby reservation.
@@ -11608,8 +11413,6 @@ Time: %s
 TimestampedEvent
 TimestampedEventMsgV
 timestamp_%s
-TimeUseClock
-TimeUseTick
 TinG9a
 T`ip8
 TiR@9h
@@ -11631,6 +11434,7 @@ TizEyJ
 Tj2@9j
 Tj2B9)
 Tj6@y_! k
+tj)8,
 T`"J9
 Tj"@9J
 TjkA9k'@
@@ -11768,11 +11572,8 @@ TQ*@9
 TR"@9
 Trace rays and check vis from the current camera
 TraceRayServerToolEvent
-track
 Tracker
-track "%i"
 Track individual field offset changes, rather than a single dirty flag for the whole entity.
-TrackNumber
 Traffic from %s was blocked for exceeding rate limits
 trailing_comments
 Trailing Data
@@ -11910,18 +11711,21 @@ T"zrx
 \U%08x
 u64( %lld = 0x%llX )
 )U7O{
-	u-9:
-	u?9^6
-	u-98
-	u:9BK
-	u:9!I
-	U]9i
-	u?9i7
-	U(9%k
+	%U9)
+	U'9?
+	u	9b!
+	U'9H
+	=U9I
+	-U9I
+	u%9K
+	u	9W 
+	uC9i
 %u CPU%s
 %u[%d]
 udp/ip   : %s:%i
 udp_port
+	ue9)
+	Ug9i
 -uidev
 UILanguage
 uint16
@@ -12047,7 +11851,6 @@ unmatched parentheses
 UnmountAddon: Failed to find %s search path.
 Unmounting addon '%s'
 unnamed
-Unnamed%i
 Unnormalized joint weights encountered (%f): Skinning may not work! (At position %.3f %.3f %.3f)
 unpause
 unpause bug
@@ -12121,6 +11924,7 @@ Usage: changelevel <mapname> [option1=value1 option2=value2 etc]
 Usage: connect_hltv <ip address or machine name>.
 Usage: connect <ip address or machine name>.
 Usage:  dumpstringtable tablename <sv | cl> <verbose>      Print string tables to console, verbose to dump data.
+Usage: freeze_frame <duration seconds>
 Usage:  grep pattern text
 Usage: incrementvar varName minValue maxValue delta
 usage: key_findbinding <substring> [splitscreen player]
@@ -12154,6 +11958,7 @@ Usage:  tv_relay only valid when running a dedicated server
 Usage:  vgui_showpanel panelname
 US]CQ
 Use 0 minutes for permanent
+use_additional_offset
 -useappid
 useexactfilename
 Use fast frame skipping when available for demo_goto commands.
@@ -12199,13 +12004,13 @@ UTF-8 data when
 utlbuffer.cpp
 utlstring.cpp
 utlstringtoken
+	UU9I
 %u:%u:%u
 [U:%u:%u]
 [U:%u:%u:%u]
 UVLX8888
 UVWQ8888
 u[|)x_})`
-	uz9i
 v8array
 v8callback
 v8object
@@ -12272,7 +12077,6 @@ V_atoi
 V_atoi64
 V_atoui64
 vaudio_speex
-v@Aug 14 2019
 VAvi001
 VB9hV
 VBAllocTracker001
@@ -12363,7 +12167,6 @@ vgui/
 vgui2
 VGUI Build Mode Editor
 vgui::Button
-#VGui_Cancel
 vgui::CBuildFactoryHelper::CBuildFactoryHelper(const char *, vgui::PANELCREATEFUNC)
 vgui::CConsoleDialog
 -vguiconsole
@@ -12379,7 +12182,6 @@ vgui::HFont
 VGUI_Input005
 VGUI_ivgui008
 -vguimessages
-#VGui_OK
 VGUI_Panel010
 vguirendersurface
 VGUI_Scheme010
@@ -12477,6 +12279,7 @@ vn %g %g %g
 	*vO@
 /!V?O!
 / V?OBT?O
+v@Oct 22 2019
 Voice
 voice_always_sample_mic
 voice_data
@@ -12581,6 +12384,7 @@ vpcf21
 vpcf22
 vpcf23
 vpcf24
+vpcf25
 vpcf3
 vpcf4
 vpcf5
@@ -12849,7 +12653,6 @@ WorldRendererBuilderMgr001
 WorldRendererMgr001
 /{W?Os
 /{W?OZ
-write
 Write buffered voice attachment data to file.
 WriteDeltaEntities
 WriteEnterPVS: GetEntServerClass failed for ent %d.
@@ -12860,9 +12663,6 @@ Write failed on temporary file --- out of disk space?
 writeid
 writeip
 writekeybindings
-WRITEOUT
-WRITEOUT 
-WRITEOUT "1"
 Writes a list of permanently-banned user IDs to banned_user.cfg.
 WriteToBuffer Message %s is not initialized! Probably missing required fields!
 Write to EMS failed
@@ -12883,9 +12683,7 @@ Wrote vis errors to %s
 X360_DST16
 X360_DST24
 X360_DST24F
-x6hz@
 x6ij@
-x6iz@
 X75	`7
 X7 	`7 
 @x_!7k
@@ -12898,7 +12696,6 @@ X8Qikx
 xboxsystem.cpp
 XboxSystemInterface001
 xdigit
-x "%f"
 xf@)*
 xfx	|	
 xixC}
@@ -12929,8 +12726,8 @@ Y80ijx
 #Y80ijx
 Y8Qikx
 #Y8Qikx
-	Y	9//
-	y?9!7
+	y%9(
+	Y'9#
 @y?!9k
 y+	@9km
 Yaw; 
@@ -12945,10 +12742,12 @@ Y@    block %d: crc = 0x%8x, combined CRC = 0x%8x, size = %d
 @yc|	
 #@@yc
 y#	@=c
+	yC9i
 yC	@}c
 @y+}E
-y "%f"
+	ye9i
 #@yh^
+#@yH*
 yh2@y
 %@y!ha
 yhBGy
@@ -12970,6 +12769,7 @@ yh"@y
 @yi2@
 @.yI5
 yi6@y?
+	yI9i
 yif@9
 yiFGy?
 yi^Fy)
@@ -12981,8 +12781,8 @@ yiVFy?
 yiV@yh:@
 yi>@y)
 @yj"@
-=yj(8a"
-yj+8v
+=yj)8`B
+yj+8w
 )YJJ)}
 yj.@y)
 yj&@y_
@@ -12994,7 +12794,6 @@ yj.@yJ
 @yK	@y
 yk^@yj
 ykZ@yI
-	ym9i
 Y ng*a
 yNs*!
 Y nsZ n
@@ -13005,9 +12804,10 @@ you_hear_them
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 Your current chat group is "%s"
 @yO	@y
-@y)QIy
 y(qSy
+	YU9I
 yuJ	9(a@
+	Yv9)
 @y	WDy
 Y`x($
 (y{x7
@@ -13018,7 +12818,6 @@ y	,@y)
 .@y)Y@
 @y	y5x
 @y	y6x
-	yz9i
 _Z10DevWarningPKcz
 _Z11ConColorMsgRK5ColorPKcz
 _Z13V_SplitStringPKcS0_R10CUtlVectorIPc10CUtlMemoryIS2_iEE
@@ -13031,7 +12830,7 @@ _Z6ConMsgPKcz
 _Z6DevMsgPKcz
 #Z80ijx
 Z*=@8H
-	}z9i
+	-z9i
 #@)`zA
 ZA9iZ
 ZB9hZ
@@ -13159,13 +12958,6 @@ _ZNV16CThreadFastMutex4LockEyj
 _Znwm
 _ZnwmRKSt9nothrow_t
 Z n)Y n
-ZoomFOV
-Zoom FOV
-ZoomHold
-ZoomIn
-ZoomOut
-ZoomSpline
-ZoomStayout
 \z^@Q
 zR@y_
 _ZSt18uncaught_exceptionv
