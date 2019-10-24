@@ -11,7 +11,7 @@ MVER="$(jq -er '.packages.androidarm64.version' manifest_bootstrap.json)"
 # --- APK tracking ----------
 IFS=$'\n'
 
-wget -O androidarm64.apk "$APKURL"
+wget -nv -O androidarm64.apk "$APKURL"
 
 # decompile APK
 rm -rf android
@@ -68,7 +68,7 @@ CDNROOT="$(jq -er '.cdnroot' manifest_android.json)"
 for FPATH in $(jq -er '.assets | keys[]' manifest_android.json); do
 
     mkdir -p "$(dirname ${FPATH})"
-    wget -O "${FPATH}" "${CDNROOT}${FPATH}"
+    wget -nv -O "${FPATH}" "${CDNROOT}${FPATH}"
 
 done
 
