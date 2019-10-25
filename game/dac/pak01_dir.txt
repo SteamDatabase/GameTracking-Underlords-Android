@@ -10,7 +10,7 @@ scripts/chat_wheel_lines.json CRC:41b87d99 Size:7664
 scripts/events.json CRC:af590d93 Size:352
 scripts/items.json CRC:c4c0ed4c Size:32541
 scripts/modifiers.json CRC:ede28c5d Size:5373
-scripts/synergies.json CRC:ebe89113 Size:15427
+scripts/synergies.json CRC:88a7d959 Size:15426
 scripts/underlords_bc.json CRC:43a62d5c Size:735
 scripts/units.json CRC:56af840a Size:94958
 scripts/waves.json CRC:7bc199e8 Size:6227
@@ -41,8 +41,8 @@ resource/localization/dac_abilities_bulgarian.txt CRC:6278c24d Size:72769
 resource/localization/dac_abilities_czech.txt CRC:a924a468 Size:59081
 resource/localization/dac_abilities_danish.txt CRC:d0fa330f Size:55778
 resource/localization/dac_abilities_dutch.txt CRC:86c18329 Size:57927
-resource/localization/dac_abilities_english.txt CRC:c57939e6 Size:53383
-resource/localization/dac_abilities_finnish.txt CRC:9af3bef4 Size:55090
+resource/localization/dac_abilities_english.txt CRC:90425586 Size:53377
+resource/localization/dac_abilities_finnish.txt CRC:c350aa16 Size:55201
 resource/localization/dac_abilities_french.txt CRC:ca124dc5 Size:60888
 resource/localization/dac_abilities_german.txt CRC:31654734 Size:59167
 resource/localization/dac_abilities_greek.txt CRC:b65bc1fc Size:70497
@@ -51,14 +51,14 @@ resource/localization/dac_abilities_italian.txt CRC:042d2819 Size:57801
 resource/localization/dac_abilities_japanese.txt CRC:811b76ef Size:62363
 resource/localization/dac_abilities_koreana.txt CRC:50b84ca4 Size:62243
 resource/localization/dac_abilities_latam.txt CRC:a16b4cc6 Size:58504
-resource/localization/dac_abilities_norwegian.txt CRC:e089388a Size:54381
-resource/localization/dac_abilities_polish.txt CRC:0ae97a85 Size:58501
+resource/localization/dac_abilities_norwegian.txt CRC:5df5ccb6 Size:54431
+resource/localization/dac_abilities_polish.txt CRC:9ca9c21f Size:58500
 resource/localization/dac_abilities_portuguese.txt CRC:15e33e96 Size:57614
 resource/localization/dac_abilities_romanian.txt CRC:1f37138d Size:58774
 resource/localization/dac_abilities_russian.txt CRC:9cf1158b Size:75321
-resource/localization/dac_abilities_schinese.txt CRC:c6d671aa Size:51729
+resource/localization/dac_abilities_schinese.txt CRC:df7e8729 Size:51743
 resource/localization/dac_abilities_spanish.txt CRC:f8a1dac5 Size:58581
-resource/localization/dac_abilities_swedish.txt CRC:ac4b7c6c Size:54626
+resource/localization/dac_abilities_swedish.txt CRC:be90ec26 Size:54645
 resource/localization/dac_abilities_tchinese.txt CRC:04e98a63 Size:52273
 resource/localization/dac_abilities_thai.txt CRC:43cefcb3 Size:107514
 resource/localization/dac_abilities_turkish.txt CRC:ac5e0db4 Size:58168
@@ -84,7 +84,7 @@ resource/localization/items_polish.txt CRC:4a01fa86 Size:51550
 resource/localization/items_portuguese.txt CRC:16f9b635 Size:52648
 resource/localization/items_romanian.txt CRC:7cd28278 Size:52330
 resource/localization/items_russian.txt CRC:385c6c38 Size:50532
-resource/localization/items_schinese.txt CRC:f03f8385 Size:39370
+resource/localization/items_schinese.txt CRC:23d9fbad Size:39366
 resource/localization/items_spanish.txt CRC:dc20c564 Size:53228
 resource/localization/items_swedish.txt CRC:14f0a6d2 Size:49752
 resource/localization/items_tchinese.txt CRC:8b71961d Size:39360
@@ -5982,7 +5982,7 @@ panorama/styles/dac_db_page_heropedia_items_bytype.vcss_c CRC:22eefc85 Size:1026
 panorama/styles/dac_db_page_heropedia_rules.vcss_c CRC:58c30bf5 Size:1375
 panorama/styles/dac_db_page_heropedia_season.vcss_c CRC:f4af5e81 Size:20064
 panorama/styles/dac_db_page_heropedia_synergies.vcss_c CRC:4210d51d Size:1621
-panorama/styles/dac_db_page_home.vcss_c CRC:d04cdddc Size:46607
+panorama/styles/dac_db_page_home.vcss_c CRC:9308e2f6 Size:46806
 panorama/styles/dac_db_page_loadout.vcss_c CRC:96d5988e Size:14039
 panorama/styles/dac_db_page_patchnotes.vcss_c CRC:795e6cd8 Size:4773
 panorama/styles/dac_db_page_postgame.vcss_c CRC:6621a480 Size:35970
@@ -6043,7 +6043,7 @@ panorama/styles/dac_ui_synergy_capsule.vcss_c CRC:d4727a4d Size:740
 panorama/styles/dac_ui_synergy_icon.vcss_c CRC:69e66081 Size:103560
 panorama/styles/dac_ui_talent_card.vcss_c CRC:ec01fc63 Size:4222
 panorama/styles/dac_ui_talent_selector.vcss_c CRC:d123711d Size:4002
-panorama/styles/dac_ui_underlord.vcss_c CRC:f360b26f Size:18376
+panorama/styles/dac_ui_underlord.vcss_c CRC:0c9c61be Size:19919
 panorama/styles/dac_ui_underlord_status.vcss_c CRC:6917515e Size:22237
 panorama/styles/dac_ui_unit_status.vcss_c CRC:9115fe2f Size:15354
 panorama/styles/dac_ui_vs_screen.vcss_c CRC:c4440592 Size:16610
@@ -16016,7 +16016,7 @@ particles/world_environmental_fx/lamp_flame_dire_default_d.vpcf_c CRC:7beb4e03 S
 particles/world_environmental_fx/lamp_flame_dire_default_e.vpcf_c CRC:31d5fba8 Size:2125
 particles/world_environmental_fx/lamp_flame_dire_default_f.vpcf_c CRC:81dcb23d Size:2321
 particles/world_environmental_fx/motes_dust_00.vpcf_c CRC:ac778da7 Size:2361
-panorama/dynamic_images.vpdi_c CRC:fd6a5012 Size:341199
+panorama/dynamic_images.vpdi_c CRC:d648d4b2 Size:341199
 models/creeps/lane_creeps/creep_radiant_ranged/radiant_ranged_mega.vphys_c CRC:5bddcc0c Size:3019
 models/creeps/neutral_creeps/n_creep_black_dragon/n_creep_black_dragon.vphys_c CRC:91f810df Size:15422
 models/creeps/neutral_creeps/n_creep_troll_dark_b/n_creep_troll_dark_b.vphys_c CRC:68f84213 Size:2691
@@ -26867,7 +26867,7 @@ panorama/images/underlords/talents/anessix_arcane_ritual_psd.vtex_c CRC:86afcbcd
 panorama/images/underlords/talents/anessix_brill_bruiser_psd.vtex_c CRC:a51d8e24 Size:31929
 panorama/images/underlords/talents/anessix_bring_it_down_psd.vtex_c CRC:4c44c79d Size:32108
 panorama/images/underlords/talents/anessix_broken_hearts_psd.vtex_c CRC:8bd4a8be Size:31938
-panorama/images/underlords/talents/anessix_confidence_boost_psd.vtex_c CRC:84baefd9 Size:30838
+panorama/images/underlords/talents/anessix_confidence_boost_psd.vtex_c CRC:d2532ca3 Size:30838
 panorama/images/underlords/talents/anessix_crash_psd.vtex_c CRC:fc7d7b5a Size:34752
 panorama/images/underlords/talents/anessix_demonic_hunter_psd.vtex_c CRC:c0560f1e Size:32043
 panorama/images/underlords/talents/anessix_despite_all_my_rage_psd.vtex_c CRC:30b10b46 Size:34816
@@ -26928,7 +26928,7 @@ panorama/layout/dac_db_page_heropedia_items_bytype.vxml_c CRC:e7bb2800 Size:3128
 panorama/layout/dac_db_page_heropedia_rules.vxml_c CRC:73af84b2 Size:2864
 panorama/layout/dac_db_page_heropedia_season.vxml_c CRC:bef2bd98 Size:7753
 panorama/layout/dac_db_page_heropedia_synergies.vxml_c CRC:3b25ef46 Size:1149
-panorama/layout/dac_db_page_home.vxml_c CRC:2f9938a5 Size:10787
+panorama/layout/dac_db_page_home.vxml_c CRC:81b7f27a Size:11239
 panorama/layout/dac_db_page_loadout.vxml_c CRC:6f46cef4 Size:5090
 panorama/layout/dac_db_page_patchnotes.vxml_c CRC:91818ca2 Size:1520
 panorama/layout/dac_db_page_postgame.vxml_c CRC:c46c4814 Size:5318
@@ -26994,7 +26994,7 @@ panorama/layout/dac_ui_synergy_icon.vxml_c CRC:2fbe6713 Size:2635
 panorama/layout/dac_ui_talent_browser.vxml_c CRC:cd4a4078 Size:2034
 panorama/layout/dac_ui_talent_card.vxml_c CRC:81b20cdd Size:1430
 panorama/layout/dac_ui_talent_selector.vxml_c CRC:b5887140 Size:1761
-panorama/layout/dac_ui_underlord_config.vxml_c CRC:7674f560 Size:3812
+panorama/layout/dac_ui_underlord_config.vxml_c CRC:88554ba1 Size:3994
 panorama/layout/dac_ui_underlord_config_levelprogress.vxml_c CRC:2aa897bf Size:1366
 panorama/layout/dac_ui_underlord_config_talent_tree.vxml_c CRC:bcb60bec Size:842
 panorama/layout/dac_ui_underlord_status.vxml_c CRC:21233a0c Size:5701
