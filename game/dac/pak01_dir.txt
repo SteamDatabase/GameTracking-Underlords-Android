@@ -17,7 +17,7 @@ scripts/waves.json CRC:7bc199e8 Size:6227
 scripts/events/season_00_battle_pass.json CRC:a00cd734 Size:24242
 scripts/events/season_00_challenges.json CRC:630faf02 Size:28969
 scripts/events/season_00_underlords.json CRC:c212eb40 Size:10909
-cfg/dackeys.lst CRC:cd34e4ca Size:3239
+cfg/dackeys.lst CRC:8ab2d27c Size:3394
 expressions/underlords/phonemeexport.mcr CRC:442af2a4 Size:8727
 resource/game-icon.png CRC:1319106f Size:1741
 toolscenelightrigs.txt CRC:50c35769 Size:155
@@ -6002,7 +6002,7 @@ panorama/styles/dac_ui_context_menu_chat_line.vcss_c CRC:95ea67b1 Size:4348
 panorama/styles/dac_ui_context_menu_gems.vcss_c CRC:11e8f98f Size:703
 panorama/styles/dac_ui_context_menu_party.vcss_c CRC:26b5e047 Size:1829
 panorama/styles/dac_ui_context_menu_player.vcss_c CRC:7ec2afea Size:2074
-panorama/styles/dac_ui_dps_chart.vcss_c CRC:5e0d8b93 Size:18452
+panorama/styles/dac_ui_dps_chart.vcss_c CRC:7f1f7da4 Size:18510
 panorama/styles/dac_ui_equip_control.vcss_c CRC:7c8f9908 Size:3039
 panorama/styles/dac_ui_friend.vcss_c CRC:e9193c83 Size:15892
 panorama/styles/dac_ui_friend_menu.vcss_c CRC:da79b99c Size:12538
@@ -6042,7 +6042,7 @@ panorama/styles/dac_ui_shop.vcss_c CRC:2182a35a Size:54316
 panorama/styles/dac_ui_synergy_capsule.vcss_c CRC:d4727a4d Size:740
 panorama/styles/dac_ui_synergy_icon.vcss_c CRC:69e66081 Size:103560
 panorama/styles/dac_ui_talent_card.vcss_c CRC:ec01fc63 Size:4222
-panorama/styles/dac_ui_talent_selector.vcss_c CRC:0ed77e23 Size:4203
+panorama/styles/dac_ui_talent_selector.vcss_c CRC:4ef8ad81 Size:4203
 panorama/styles/dac_ui_underlord.vcss_c CRC:18b3fb8d Size:19932
 panorama/styles/dac_ui_underlord_status.vcss_c CRC:5c86201a Size:23392
 panorama/styles/dac_ui_unit_status.vcss_c CRC:a58c26e4 Size:15695
@@ -11961,7 +11961,7 @@ particles/underlords/hobgen/hobgen_airstrike_model.vpcf_c CRC:00c6a84d Size:2123
 particles/underlords/hobgen/hobgen_airstrike_model_flame.vpcf_c CRC:4a77801c Size:2284
 particles/underlords/hobgen/hobgen_airstrike_model_sparks.vpcf_c CRC:ba39fdc1 Size:2299
 particles/underlords/hobgen/hobgen_airstrike_tile_highlight.vpcf_c CRC:3e232312 Size:1826
-particles/underlords/hobgen/hobgen_airstrike_tile_highlight_arrows.vpcf_c CRC:2873bbd3 Size:2159
+particles/underlords/hobgen/hobgen_airstrike_tile_highlight_arrows.vpcf_c CRC:1154e290 Size:1991
 particles/underlords/hobgen/hobgen_airstrike_trail_smoke.vpcf_c CRC:56a89811 Size:2456
 particles/underlords/hobgen/hobgen_ambient.vpcf_c CRC:5ae92e69 Size:1234
 particles/underlords/hobgen/hobgen_ambient_hair.vpcf_c CRC:124a233a Size:1313
@@ -11996,13 +11996,13 @@ particles/underlords/hobgen/hobgen_anim_lets_go_crazy_end_sparks.vpcf_c CRC:e1fd
 particles/underlords/hobgen/hobgen_anim_lets_go_crazy_start.vpcf_c CRC:8859df0b Size:1097
 particles/underlords/hobgen/hobgen_anim_lets_go_crazy_start_model.vpcf_c CRC:d44ca30d Size:1237
 particles/underlords/hobgen/hobgen_base_attack.vpcf_c CRC:247d0127 Size:2722
-particles/underlords/hobgen/hobgen_base_attack_endcap.vpcf_c CRC:7f56d42b Size:2614
+particles/underlords/hobgen/hobgen_base_attack_endcap.vpcf_c CRC:51d62e52 Size:2614
 particles/underlords/hobgen/hobgen_base_attack_endcap_flare.vpcf_c CRC:6afb6c74 Size:2188
-particles/underlords/hobgen/hobgen_base_attack_endcap_flek.vpcf_c CRC:f0ea39d8 Size:2427
-particles/underlords/hobgen/hobgen_base_attack_endcap_glow.vpcf_c CRC:7dcc6b25 Size:1579
+particles/underlords/hobgen/hobgen_base_attack_endcap_flek.vpcf_c CRC:d5442c04 Size:2376
+particles/underlords/hobgen/hobgen_base_attack_endcap_glow.vpcf_c CRC:c0c65099 Size:1579
 particles/underlords/hobgen/hobgen_base_attack_endcap_plasma.vpcf_c CRC:385a6f51 Size:1919
 particles/underlords/hobgen/hobgen_base_attack_glow.vpcf_c CRC:35550cac Size:2393
-particles/underlords/hobgen/hobgen_base_attack_trail_fire.vpcf_c CRC:c321b9af Size:2807
+particles/underlords/hobgen/hobgen_base_attack_trail_fire.vpcf_c CRC:e9ad1854 Size:2931
 particles/underlords/hobgen/hobgen_base_attack_trail_rope.vpcf_c CRC:7bc031a9 Size:2084
 particles/underlords/hobgen/hobgen_explosivo_afterburn.vpcf_c CRC:6a544141 Size:1233
 particles/underlords/hobgen/hobgen_explosivo_afterburn_flames.vpcf_c CRC:509385ad Size:2768
@@ -25355,6 +25355,7 @@ materials/particle/ui/selection_square_02.vtex_c CRC:d23df436 Size:13860
 materials/particle/ui/synergy_insect_infested.vtex_c CRC:f3775193 Size:10263
 materials/particle/ui/shop/selection_pillar_crown_tga_7def4e49.vtex_c CRC:c4cdc329 Size:9222
 materials/particle/ui/shop/ui_shop_border_00.vtex_c CRC:6df78d87 Size:2455
+materials/particle/underlords/hobgen_bomb_icon.vtex_c CRC:71d73df1 Size:6417
 materials/particle/vistasmokev1/vistasmokev1.vtex_c CRC:7c5e8a9c Size:88668
 materials/particle/vistasmokev1/vistasmokev1_gray.vtex_c CRC:2fd56ffc Size:105296
 materials/particle/vistasmokev1/vistasmokev1_gray_mks_baf6728b.vtex_c CRC:bef0c441 Size:43296
@@ -26993,7 +26994,7 @@ panorama/layout/dac_ui_scoreboard.vxml_c CRC:01c4370c Size:1356
 panorama/layout/dac_ui_scoreboard_entry.vxml_c CRC:ead633b8 Size:2530
 panorama/layout/dac_ui_sell_unit_bar.vxml_c CRC:528bd28b Size:1162
 panorama/layout/dac_ui_send_unit_bar.vxml_c CRC:8a22120b Size:1706
-panorama/layout/dac_ui_settings_panel.vxml_c CRC:a019ce2d Size:32096
+panorama/layout/dac_ui_settings_panel.vxml_c CRC:1d2fdcab Size:32239
 panorama/layout/dac_ui_shop.vxml_c CRC:e7b48759 Size:9012
 panorama/layout/dac_ui_synergy_capsule.vxml_c CRC:3d3919d9 Size:1018
 panorama/layout/dac_ui_synergy_icon.vxml_c CRC:2fbe6713 Size:2635
