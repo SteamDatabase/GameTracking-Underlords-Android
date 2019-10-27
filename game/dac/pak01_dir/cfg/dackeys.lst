@@ -1,0 +1,249 @@
+"DACKeys"
+{
+	"Commands"
+	{
+		//=============================================================
+		//
+		// Default
+		//
+		//=============================================================
+		"Default"
+		{
+			"SellUnit"
+			{
+				"Action"		"dac_sell_unit"
+			}
+
+			"UnitToBench"
+			{
+				"Action"		"dac_send_unit_to_bench"
+			}
+
+			"ShopToggle"
+			{
+				"Action"		"dac_shop_toggle"
+			}
+			"ShopReroll"
+			{
+				"Action"		"dac_shop_reroll"
+			}
+			"ShopLock"
+			{
+				"Action"		"dac_shop_lock"
+			}
+			"ShopLevelUp"
+			{
+				"Action"		"dac_shop_levelup"
+			}
+
+			"Buy1"
+			{
+				"Action"		"dac_buy_slot1"
+			}
+			"Buy2"
+			{
+				"Action"		"dac_buy_slot2"
+			}
+			"Buy3"
+			{
+				"Action"		"dac_buy_slot3"
+			}
+			"Buy4"
+			{
+				"Action"		"dac_buy_slot4"
+			}
+			"Buy5"
+			{
+				"Action"		"dac_buy_slot5"
+			}
+
+			"ScrollEnemiesUp"
+			{
+				"Action"		"dac_scroll_enemies_up"
+			}
+			"ScrollEnemiesDown"
+			{
+				"Action"		"dac_scroll_enemies_down"
+			}
+			"TabAlliances"
+			{
+				"Action"		"dac_tab_alliances"
+			}
+			"TabDPS"
+			{
+				"Action"		"dac_tab_dps"
+			}
+			"TabItems"
+			{
+				"Action"		"dac_tab_items"
+			}
+
+			"ViewHome"
+			{
+				"Action"		"dac_view_home"
+			}
+			"ViewOpponent"
+			{
+				"Action"		"dac_view_opponent"
+			}
+			"ViewAway"
+			{
+				"Action"		"dac_view_away"
+			}
+
+			"DevConsole"
+			{
+				"Action"		"toggleconsole"
+				"PreGameBind"		"1"
+			}
+			"Chat"
+			{
+				"Action"		"dac_toggle_chat"				
+			}
+			"Scoreboard"
+			{
+				"Action"		"+dac_scoreboard"						
+			}
+			"SendUnit"
+			{
+				"Action"		"dac_send_unit_to_teammate"						
+			}
+			"ScrollCameraUp"
+			{
+				"Action"		"dac_scroll_camera_up"						
+			}
+			"ScrollCameraDown"
+			{
+				"Action"		"dac_scroll_camera_down"						
+			}
+			"ResetCameraPosition"
+			{
+				"Action"		"dac_reset_camera_position"						
+			}
+		}
+	}
+
+	"Templates"
+	{
+
+		"DEFAULT"
+		{
+			"Name"		"DEFAULT"
+			"Version"		"3"
+			"AlgorithmicUpdateVersion"		"5"
+		
+			"Keys"
+			{
+				"SellUnit"
+				{
+					"Key"		"E"
+				}
+				"UnitToBench"
+				{
+					"Key"		"W"
+				}
+
+				"ShopToggle"
+				{
+					"Key"		"SPACE"
+				}
+				"ShopReroll"
+				{
+					"Key"		"R"
+				}
+				"ShopLock"
+				{
+					"Key"		"Q"
+				}
+				"ShopLevelUp"
+				{
+					"Key"		"T"
+				}
+
+				"Buy1"
+				{
+					"Key"		"1"
+				}
+				"Buy2"
+				{
+					"Key"		"2"
+				}
+				"Buy3"
+				{
+					"Key"		"3"
+				}
+				"Buy4"
+				{
+					"Key"		"4"
+				}
+				"Buy5"
+				{
+					"Key"		"5"
+				}
+
+				"ScrollEnemiesUp"
+				{
+					"Key"		"PGUP"
+				}
+				"ScrollEnemiesDown"
+				{
+					"Key"		"PGDN"
+				}
+
+				"TabAlliances"
+				{
+					"Key"		"P"
+				}
+				"TabDPS"
+				{
+					"Key"		"O"
+				}
+				"TabItems"
+				{
+					"Key"		"I"
+				}
+
+				"ViewHome"
+				{
+					"Key"		"F1"
+				}
+				"ViewOpponent"
+				{
+					"Key"		"S"
+				}
+				"ViewAway"
+				{
+					"Key"		"A"
+				}
+				"Chat"
+				{
+					"Key"		"ENTER"
+				}
+				"DevConsole"
+				{
+					"Key"		"`"
+				}
+				"Scoreboard"
+				{
+					"Key"		"TAB"
+				}
+				"SendUnit"
+				{
+					"Key"		"F"
+				}
+				"ScrollCameraUp"
+				{
+					"Key"		"MWHEELDOWN"						
+				}
+				"ScrollCameraDown"
+				{
+					"Key"		"MWHEELUP"					
+				}
+				"ResetCameraPosition"
+				{
+					"Key"		"MOUSE3"					
+				}
+			}
+		}
+	}
+}

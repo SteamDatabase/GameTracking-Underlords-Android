@@ -77,7 +77,7 @@ for VPKPATH in $(find game -type f -name '*_dir.vpk'); do
 
     VPKNAME="${VPKPATH%.vpk}"
     ./tools/bin/vpk -la "${VPKPATH}" > "${VPKNAME}.txt"
-    ./tools/bin/vpk -x "${VPKNAME}" -re '\.(txt|gi|cfg|pem|inf|json|gameevents)' "${VPKPATH}"
+    ./tools/bin/vpk -x "${VPKNAME}" -re '\.(txt|gi|cfg|pem|inf|json|gameevents|lst)$' "${VPKPATH}"
 
 done
 
@@ -91,7 +91,7 @@ for FPATH in $(find game android -type f -name '*.txt' -exec file {} \; | grep -
 done
 
 # add files for tracking
-find game -type f -regextype egrep -iregex '.*\.(txt|gi|cfg|pem|inf|json|gameevents)' -exec git add -f {} +
+find game -type f -regextype egrep -iregex '.*\.(txt|gi|cfg|pem|inf|json|gameevents|lst)' -exec git add -f {} +
 
 # stage deleted files
 git add -f -u
