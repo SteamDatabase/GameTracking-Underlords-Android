@@ -119,7 +119,6 @@
 19CSosOperatorFalloff
 19CSosOperatorGlobals
 19CSosOperatorPosVec8
-	1}9I
 19IKeyValuesErrorSpew
 1bQJ1~
 1DBlend
@@ -259,7 +258,6 @@
 29CSosSetSoundEventFieldsInfo_t
 29CVSoundEventScriptTypeManager
 29CVSoundStackScriptTypeManager
-2	A59
 	[%2d] %16.16s : %s (%d)
 (%2db) %6i : %s
 2hb@9
@@ -272,7 +270,8 @@
 2Ki)8x
 2L1@y
 2njj8l
-2t~	)
+2t~	)Y
+2x"@9
 30CAudioSource_PlayerVoiceStream
 30CSosGroupActionTimeLimitSchema
 30CSosOperatorGetOpVarArrayIndex
@@ -297,7 +296,6 @@
  [%.3f server clamped to %.3f]
 3inputPeak
 40CSchemaRegistration_soundsystem_lowlevel
-;4)h&@
 4h&A)i"
 4hb@9
 4hf@9
@@ -317,6 +315,7 @@
 5)@y4
 	5@y?!7kH
 6	1@9
+;6)a2@
 6ConVar
 	 6h"@
 6h2@y
@@ -325,8 +324,8 @@
 6hzFy
 6iz@y
 6kB@y
+6x"@9
 6)@y4
-6YsL9
 *7`@)
 7h.@9H
 7hb@9h
@@ -346,8 +345,10 @@
 (8h^@
 (8hn@
 _@8j.@
++8)m&@
 8x9,7
 `"@9	
+!@9!('
 !#@9	
 "#@9	
 )!@9)
@@ -357,20 +358,18 @@ _@8j.@
 (;@93+
 )9@9?
 @9+	@9,
-@99c 
 @9?aEkA
 @9aR@
 @9B("
 9CAudioSDL
 9CSfxTable
-@-#9G
 9hb@9
 9hb@9)
 9hf@9(
 "@9hf@9i
 9hji8
 9hr@y
-9hr@y)5G
+9hr@y)=G
 9hR@yHS
 9hS@yHS
 @9hV@
@@ -390,6 +389,7 @@ _@8j.@
 9@zH~`
 A-!(!
 A-@ !
+A))%@
 a2@yh2@y
 a6@=b6@
 	A@9)
@@ -397,14 +397,13 @@ A@9`	(
 +a@9k
 [A)		A
 AA9	I@
-)AB9?
 Abort processing sound event %s (scheduled recursively will not process this frame)
-	aC9)
 accumulate_indexed_speakers
 Action Type
 ActionType_t
 Active ?: %s
 Active Voices: %d
+	aD9	
 Adding operator stack matching existing name: %s
 AddNewSoundEvent:  %s has a hash collision with existing %s
 Addon unloaded, unloading sound resources.
@@ -457,6 +456,8 @@ AE_VORTIGAUNT_ZAP_POWERUP
 AE_VORTIGAUNT_ZAP_SHOOT
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
+	aF9	
+AG9h	
 Ah1xij/
 	(Aik}@
 ai_model_info
@@ -540,13 +541,11 @@ Available Operators:
 *A_x)a_xk^
 AXk!#
 )!Ay?	
-!Ay7N
 ?AYki
 @-B	@
 B-" @
 B-(  
 B-1HD-
-	!B9	
 backward
 Bad Audio file '%s'
 Bad command in vmix!
@@ -730,6 +729,7 @@ C_INIT_VelocityRadialRandom
 C_INIT_VelocityRandom
 circle
 circle_bounce
+C)j*@
 clamp_range
 Cleaning up leaked audio stream!
 C-l.E-m2@
@@ -747,7 +747,6 @@ ClothShapeList
 ClothShapeSphere
 Cmath_filter_float
 CMemAllocSystemInitialize
-C)n*@
 cn@9i
 collision_group
 collision_prop
@@ -956,15 +955,13 @@ __cxa_guard_acquire
 __cxa_guard_release
 __cxa_pure_virtual
 Cycle or diamond double-reference to '%s'
+@-#)D
 @-D	@
 D-  "
 d6@y#
-d6@yc
-d6@yc	
 D-`8 
 D-!8 
 D-)8,
-	!D9	
 .data
 Data Count: %i
 .data.rel.ro
@@ -1076,7 +1073,6 @@ Dynamics
 .dynstr
 .dynsym
 )=E9?
-	!E9	
 easeIn
 easeOut
 EconItemToolModel_001
@@ -1109,7 +1105,6 @@ Error: EntryMatchList has no free slots!
 Error: Failed to get mix group %s!
 ERROR: Invalid Group Branch Index
 Error: Invalid SoundEvent Hash %i from entry %s
-ERROR LOADING KEYVALUES
 ERROR: missing enum name!
 ERROR: missing enum tokenset!
 Error: MixGroup %s cannot be resolved!
@@ -1260,6 +1255,7 @@ Free ?: %s
 friction
 function
 FX Mix (1.0 == wet)
+	!G9	
 gainReduction
 game_class
 GAMECONSOLE
@@ -1338,14 +1334,13 @@ h#@9
 H#@9	
 h.@9H
 h:@9u*
-H	@9x	
 h"A9a
 HALL Detected 
 HammerMapLoader001
 handindex
 HangWatchdog_IndicateActivity
 .hash
-H!Ay*
+H!AyJ
 hb@9`
 hB@9`
 hb@9h
@@ -1389,7 +1384,6 @@ hR@9)
 hr@9h
 hRA9jN@
 hr@y`
-hr@yI
 HS@9{
 hurt_me
 hurt_them
@@ -1405,7 +1399,7 @@ h"@yj
 i1xhj*
 i1xhj+
 i1xjj,
-i2A9*	
+i2A9J	
 i2@y?
 i68t.@
 ?i(8i
@@ -1463,7 +1457,7 @@ IKChain
 IKChainOld
 ikdata
 IKData
-Ikh8?
+ikh8?
 ikrig
 IKRigBiped
 IKRigBug
@@ -1765,7 +1759,7 @@ itemName
 itemPos
 itemType
 itemTypeName
-ivA9*	
+ivA9J	
 +i*xA
 	i-xhN@yiJ
 *i.xi>@yj:
@@ -1783,7 +1777,7 @@ I%@yJ
 Iymx`9,
 i@y@yl
 i@yYyix
-izA9*	
+izA9J	
 @)J}	
 j58hf@9(
 j5@yk9@y?
@@ -1818,6 +1812,7 @@ K-@ $
 k2B-m"C-i*D-
 k2D)m:E)	
 *k2@y
+_k68!
 k(8vV@
 K9y;xa
 kAKJJ
@@ -1836,6 +1831,7 @@ K?@@qk
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
 kv3format_manager.cpp
 KV Conditional Evaluation Error
+	kw{<
 k!@y_
 k!@y?
 K @y+ 
@@ -1847,11 +1843,11 @@ K @yK
 k"@yl
 k@y)Q@
 K @y, @y
-l6B)i
 #l@9i
 last_sniff
 l"Ay	$
 LayerTriggers
+l>B)i
 left_front
 left_front1
 left_front2
@@ -1900,7 +1896,6 @@ li@yK
 	@Lk!
 Lm@x,
 Load all the probes from a file and log the nearby probes within the radius.
-LOADED CUSTOM STACKS
 LoadFromBuffer: expected '{', found '%s'
 Loading mapping from %s file.
 LoadKV3Object error: %s
@@ -2321,8 +2316,8 @@ m_vecColorScale
 m_vecTailColorScale
 m_vEndTrailTintFactor
 m_vLiteralValue
-!m@y!
 m"@y?
+!m@yA
 .M@yiA
 n1Aim
 N24CFieldPathHuffmanEncoder12InternalNodeE
@@ -2497,6 +2492,7 @@ output_opvar_exists
 output_pathing_coeffs
 output_pathing_eq
 outputPeak
+output_plat_time
 output_pos
 output_position_x
 output_position_y
@@ -2708,12 +2704,10 @@ Purge and reload all vmidi data and files.
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
 )q@9)
-q)#+9
+q)#-9
 	Q@9?
 	Q@9	
 ?	@qA
-	qA9i
-*qA9jq
 QAngle
 Qi"A)`
 Qj$xij0
@@ -2724,7 +2718,6 @@ Queued: elapsed time: %f, next sync time: %f, length: %f
 QueuedLoaderVersion001
 	Q@xi
 q$;@z
-r	1=9_A
 RadianEuler
 radius0
 radius1
@@ -2816,6 +2809,7 @@ rnd_up
 ROOM Detected 
 rootNode
 round_to_int
+r	q?9_
 Running snd_get_physics_surface_properties for %s mod.
 Running snd_set_physics_surface_properties for %s mod.
 ryjj8
@@ -3033,6 +3027,7 @@ snd_sos_show_opvar_updates_filter
 snd_sos_show_parameter_overwrite_warnings
 snd_sos_show_soundevent_param_overwrite
 snd_sos_show_track_list
+snd_sos_show_voice_elapsed_time
 snd_sos_soundevent_filter
 snd_sos_start_soundevent
 snd_sos_stop_all_soundevents
@@ -3293,7 +3288,6 @@ String Count: %i
 string_token
 strlen
 strstr
-SUBKEY: %s
 submix_name
 Sub-String
 %s unable to allocate %u bytes
@@ -3305,7 +3299,6 @@ Sustain target amplitude
 Sustain time (ms)
 %s| Virtual: %s; Abstract: %s; TrivialConstr: %s; TrivialDestr: %s
  : %s : vol: %4.2f, sndlvl: %4.2f 
-s@ya	
 S@y	A
 s@yHC
 sync_track
@@ -3314,7 +3307,7 @@ SystemAttributes
 _system_properties
 T(0@9
 		T9)
-T?#+9
+T?#-9
 T*-@9
 T*)@9
 T	!A9
@@ -3396,6 +3389,7 @@ ToolScriptManager001
 ToolService_001
 tools_no_extraction
 	tools_no_extraction %d
+__toolspreview__
 ToolsStartupPreGame
 Total: %.2f MB
 Total Mix Groups Rules: %i
@@ -3498,6 +3492,7 @@ utlbuffer.cpp
 utlmemoryarena.cpp
 utlstring.cpp
 	u@y)9
+uylx6i@yT
 V_acosf
 value1
 value2
@@ -3601,6 +3596,7 @@ vmix_vsnd_start has empty vsnd string
 VNewAsyncFileSystem001
 voice_duck
 	voice_duck %d
+Voice Elapsed Time: %f
 voice_fadeouttime
 voice_initial_buffer_ms
 voice_layer
@@ -3762,7 +3758,7 @@ W@y	E
 X7)m@y
 _xi"@y
 _xkR@y_
-x(%	S
+x)%	S(
 _x	 @y
 =	/@y
 ;)@y:
@@ -3814,7 +3810,6 @@ y+O@y
 )!@y =p
 y	q@y)
 @y	S@
-@ysrG
 yux)I@
 +yux)y{x
 ywx)I@
@@ -3845,6 +3840,7 @@ _ZN13CBufferString12SetExtensionEPKc
 _ZN13CBufferString13AppendFormatVEPKcSt9__va_list
 _ZN13CBufferString13FixupPathNameEv
 _ZN13CBufferString5PurgeEi
+_ZN13CBufferString6FormatEPKcz
 _ZN13CBufferString6InsertEiPKcib
 _ZN13CBufferString8RemoveAtEii
 _ZN13CThreadRWLock11UnlockWriteEv

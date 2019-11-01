@@ -225,9 +225,9 @@ $0 to $1,
 2j"@9)p
 2_!(k
 2?".k
-2?k78:
+2?k78e
 2_k88
-2?k889
+2?k88d
 2(K@9
 2oi-x
 2 .ProtoFlattenedSerializerField_t"!
@@ -289,6 +289,7 @@ $0 to $1,
 % 5d % 5d:% 5d: %-20s [%d]: delta field %s [%s] "%s" != "%s"
 5hr@9H
 5h"@y
+5h"@yi
 )5IJ(}
 5i.@y
 5j3@y
@@ -296,6 +297,8 @@ $0 to $1,
 5w"@y(
 5(#@y
 5	 @y)
+5@y3R
+5@y&R
 ?6`*@
 ?6	(@
 /6`>@
@@ -428,7 +431,7 @@ _6inA9
 %8.3f: %s: ParseMessagesSNP RELIABLE %d bytes
 %8.3f: %s: ParseMessagesSNP UNRELIABLE Seq=%d %d bytes
 86`*@
-86)?B
+86)_B
 86h*@
 86h2@
 86i*@
@@ -458,7 +461,7 @@ _8o%@8
 9	1@y	0
 @9%	@9&
  @9	$@9J
- @9	$@9JQG
+ @9	$@9JYG
 )9B9?
 9({B9
 @9)+C
@@ -494,16 +497,16 @@ _8o%@8
 )!@9J!@9?
 @9J9	
 @9jjh8*
-@9JQG
 @9JU	
+@9JYG
 	*_!9k
 !!@9K
 )!@9	k(8I
 9kj(8|
- @9)QG
 {9t";
 @9T|@
 @9U|@
+ @9)YG
 @9 	@z
 A-!(!
 a2@yh2@y
@@ -516,8 +519,8 @@ a2@yh2@y
 	A@9	
 A-#9!
 a@9+a
-"A9)]F
-A9)]F
+"A9)eF
+A9)eF
 		A9h
 	A9h&A
 ^A9i^
@@ -533,10 +536,10 @@ A9|J@
 +	A9K
 A9Kik
 +	A9lC
-	A@9T
 ?A9tJ@
 AA9(	
 AA9(	@
+	AA9T
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 abort
@@ -576,7 +579,7 @@ AnimGraphEditorUtils001
 annotation
 Annotation
 ", another member of oneof "
-	Ao9	
+	Ap9	
 ApplyOverrides_R:  couldn't find field from schema %s::%s
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
  a protocol 
@@ -622,7 +625,7 @@ Ay?!(k
 :B9h:
 	}B9i
 b@9ib
-b@9JeF
+b@9JmF
 bA9hb
 BA9hB
 BA9iB
@@ -654,7 +657,7 @@ bi_RebroadcastSource
 bi_RelayInfo
 bi_RelayPacket
 	bit_count
-bit %u - %u (%u bits/%u bytes):
+bit %d - %d (%d bits/%d bytes):
 bool CFlattenedSerializer::Decode(FlattenedSerializerSpewType_t, CSerializedEntity *, void *, int, NetworkSerializationMode_t, CNetworkFieldChangedEventQueue *, bool, int, INetworkProceduralDataHelper *, void *) const
 bool CFlattenedSerializer::DecodeProceduralField(CStackPair &, bf_read &, int, const NetworkFieldSerializerInfo_t &, const CFieldPath &, uint8 *, int, INetworkProceduralDataHelper *, void *, bool) const
 bool CFlattenedSerializer::EncodeField(bool, CFieldPath &, CEncodeInfo *, PackedFieldPathVec_t *, CUtlVector<uint32> *, unsigned long, int, NetworkSerializationMode_t, CAutoNetworkableData_t<2048> &, INetworkProceduralDataHelper *, void *, int *) const
@@ -881,7 +884,6 @@ ClearField
 client
 clientbitcount
 clientcmd_can_execute
-Client Messages
 clients
 client_streaming
 cl_interp
@@ -947,6 +949,7 @@ CNetworkMessages::FindOrCreateNetMessage: It is illegal to register new net mess
 CNetworkMessages::FindOrCreateNetMessage: Message %s is expected to have already been registered!
 CNetworkMessages::Serialize attempted to serialize a non-serializeable message [%s]!
 CNetworkMessages::Unserialize encountered unknown network message type %u!
+CNetworkMessagesVersion001
 CNetworkSerializer::Init:  Couldn't find field %s in iterator for %s
 CNetworkSerializer: Unable to find network encoder named %s!
 CNetworkSystem::BufferToBufferDecompress with improperly sized dest buffer (%u in, %llu needed)
@@ -1104,9 +1107,8 @@ __cxa_pure_virtual
 %d % 5d: %-20s: %32.32s %128.128s
 %d % 5d % 5d: %-20s (skip): %s %s: %s
 d6@y#
-d6@yc
-d6@yc	
 d6@yC
+d6@yC	
 .data
 databytes
 data_compressed
@@ -1120,7 +1122,6 @@ data_table_name
 deactivated
 DebugCallback
 DebugTextureInfo001
-Decals
 decal_texture_index
 decode
 	dedicated
@@ -1204,7 +1205,6 @@ End-of-file inside block comment.
 ENetworkDisconnectionReason
 .ENetworkDisconnectionReason"
 EngineServiceMgr001
-Entities
 entity_data
 entityfiltername
 entity_index
@@ -1253,7 +1253,6 @@ eventid
 event_mask
 event_name
 events
-Events
 eventsource
 EventSystem001
 event_t
@@ -1533,7 +1532,6 @@ generated_proto/androidarm64/netmessages.pb.cc
 generated_proto/androidarm64/networkbasetypes.pb.cc
 generated_proto/androidarm64/networksystem_protomessages.pb.cc
 generic
-Generic
 GetBitRange( %u -> %u ) end is before or same as start
 GetBool
 GetDefaultMiniDumpTypeFlags
@@ -1605,6 +1603,7 @@ h*@9h/
 (H@9h
 H@9/H@9
 h"@9i
+h"@9I
 	H@9i"
 H`@9iFG9
 *H@9j
@@ -1612,8 +1611,8 @@ H`@9iFG9
 H@9J(
 H@9k	
 -H@9m
-h"@9)QG
-h"A9)]F
+h"@9)YG
+h"A9)eF
 HammerMapLoader001
 HasField
 .hash
@@ -1624,12 +1623,12 @@ h*A)t
 h&B)(
 hB@9`
 hB@9(
-hB@9)EF
 h"B9h
 hB@9h
 h"B9H
 hB@9H
 *h~B9i
+hB@9)MF
 hB@9t
 hbB9	
 hbB9h
@@ -1645,6 +1644,7 @@ high_value
 hJ@9(
 hJ@9h
 hJ@9H
+-hj+j
 hj)xh"
 h*@)K
 host_computationtime
@@ -1666,7 +1666,6 @@ hr@y`
 HS@9(
 HS@9h
 hv@9)
-hv@9)}D
 hV@9h
 hV@9H
 hwB9t
@@ -1682,7 +1681,7 @@ i)8i&
 i@9+a@9_
 	i@9	h
 )I@9I
-i"@9JQG
+i"@9JYG
 i9xh>@yv:
 *i~B9)
 i"B9i
@@ -1888,7 +1887,7 @@ iw8i4
 iwB9?
 	i*xb
 	i*xh
-i)xh&{
+i)xh.{
 i*xh>@yt:
 i*xh>@yu:
 *i,xi>@yj:
@@ -1943,6 +1942,7 @@ JY@y)1
 *k2@y
 k2@yh
 ?k58D
+?k68!
 *?k78
 ?k78h
 _!)kA
@@ -1961,7 +1961,6 @@ k	@y)
 Kykx)
 L?333? * 
 L5@9m5@9
-	!l9	
 L)@9m)@9
 la@9L	
 L	A9mC
@@ -2001,7 +2000,6 @@ Lm@x,
 localhost
 Localize_001
 localnamefixup
-Local Player
 location
 Location
 LOG_GENERAL
@@ -2020,6 +2018,7 @@ low_priority
 	low_value
 lseek
 [L:%u:%u]
+	!m9	
 m%@9i)
 m	A9j"
 MakeSerializersMatchByMeta failed for %s
@@ -2176,7 +2175,6 @@ NA9iN
 [Name]
 	name_part
 NamePart
-N(B(6(
 NB9hN
 needs_decoder
 Need space between identifier and decimal point.
@@ -2381,7 +2379,6 @@ Networking
 networking/%04d_%02d_%02d_%02d_%02d_%02d
 Networking Reliable
 networkmessages.cpp
-NetworkMessagesVersion001
 NetworkP2PService_001
 networkserializer.cpp
 NetworkServerService_001
@@ -2512,7 +2509,6 @@ originalSender
 origin_x
 origin_y
 origin_z
-Other Players
  Outdent() without matching Indent().
 'out_location' must not be NULL
 out of order
@@ -2525,7 +2521,6 @@ p6jf@
 p6jR@
 p7v	P7
 P7x"@
-P9!9@
 	P@9K
 package
 package $0;
@@ -2696,12 +2691,13 @@ PushTwoPack5LeftDeltaOne
 PushTwoPack5LeftDeltaZero
 [P:%u:%u]
 py_generic_services
+Q9!9@
 qangle
 QAngle
 qangle_pitch_yaw
 	QB9i
-	Qg9I
 q?h(8
+	Qh9I
 qhz;x
 Qi"A)`
 Qij(x
@@ -2860,6 +2856,7 @@ SchemaTestExternal_Two_001
 +++ %s[%d]: 
 %s/%d:  AddFieldPathAndOffset (%s) added too large of a bit offset (%u : prev=%u) at element %d
 %s/%d:  AddFieldPathAndOffset (%s) added unexpected offset (%u : prev=%u) at element %d
+%s:  (%d bits/%d bytes):
 %s depth %d
 sdr config option not found
 SDR connect
@@ -2964,7 +2961,6 @@ SignedDestinationAddress_t
 signedPayload
 .SignedPayload_t
 SignedPayload_t
-Signon
 signon_state
 SIGNONSTATE_CHALLENGE
 SIGNONSTATE_CHANGELEVEL
@@ -3004,7 +3000,6 @@ SoundOpSystem001
 SoundOpSystemEdit001
 sound_resource_id
 sounds
-Sounds
 SoundService_001
 SoundSystem001
 Source2Client002
@@ -3037,7 +3032,6 @@ SPAWN_GROUP_LOAD_STREAMING_DATA
 spawngroupmanifest
 spawngroupownerhandle
 spawngroupparenthandle
-Spawn Groups
 SPAWN_GROUP_SYNCHRONOUS_SPAWN
 speaker_entity
 Specified different usergroup proxies for %s
@@ -3165,14 +3159,12 @@ strcpy
 stream 
 strerror
 STRING
-String Command
 string_data
 String field
 String literals cannot cross line boundaries.
 StringOutputStream.
 STRING_PIECE
 strings::Substitute format string invalid: asked for "$
-String Table
 string_t_table
 string_value
 strlen
@@ -3185,7 +3177,6 @@ strtoll
 strtoul
 strtoull
 "%s":%u
-%s:  (%u bits/%u bytes):
 subtype mismatch
 succeeded
 Summary of connection [%s]:
@@ -3231,7 +3222,6 @@ syntax = "$0";
 System
 *T)8yv
 T)	@9
-t@9)}D
 table_id
 target_entity
 Tc"A)`
@@ -3443,7 +3433,6 @@ user_data_size_bits
 %u serializers with %u fields (approx memory %llu / %llu in fields ) bytes (field size %d, serializer size %d)
 userid
 UserInfoChangeService_001
-User Messages
 usermsgs
 	usermsg_t
 " uses the same enum value as "

@@ -91,6 +91,7 @@
 2Gio8
 2	h(8
 2ij(8
+2x"@9
 37CSchemaRegistration_rendersystemempty
 #3CScs
         %3d %3d %3d %3d %3d %3d %3d %3d
@@ -143,6 +144,7 @@ $4DTdt
 &6FVfv
 6hb@9
  6`"J9
+6x"@9
 @7('@
 7 ! 7
 7d"J9bREy
@@ -303,8 +305,8 @@ _8Jhj8*
 @9x*@9{"@9!<
 *,A)($@),4B)o
 /A9a:J9`>
-	 A9JqG
-A9)qG
+A9)iG
+	 A9JiG
 $	A)Ar
 aBE9a
 abort
@@ -318,6 +320,7 @@ Ah`8!(
 aHa8c
 A!;I2
 a"J9?@
+	ak9	
 ALIGN_TYPE is wrong, please fix
 allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
 Allow immediately loading mips of textures (when possible) when their headers are loaded, saving IO & reducing latency.
@@ -360,7 +363,7 @@ A)TU@)X
 -autoconfig_level
 A{"xB
 B@9A1
-bA9JqG
+bA9JiG
 Backing store not supported
 bad adaptive filter value
 Bad expression operator: '%c%c', expected C style boolean expression operator.
@@ -718,14 +721,14 @@ FixupResourceName: Illegal path, missing extension passed in ("%s")!
 FlattenedSerializersVersion001
 float
 floatbitmap.cpp
-floatbitmap.cpp(140): Unknown gamma type "%s"!
-floatbitmap.cpp(2463): Error calling TGALoader::GetInfo( %s )
-floatbitmap.cpp(2474): Error loading %s
-floatbitmap.cpp(2497): Error! Unknown file type for %s
-floatbitmap.cpp(2516): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s
-floatbitmap.cpp(324): Conversion not supported yet!
-floatbitmap.cpp(424): Conversion not supported yet!
-floatbitmap.cpp(887): Unsupported color format "%s", skipping!
+floatbitmap.cpp(141): Unknown gamma type "%s"!
+floatbitmap.cpp(2473): Error calling TGALoader::GetInfo( %s )
+floatbitmap.cpp(2484): Error loading %s
+floatbitmap.cpp(2507): Error! Unknown file type for %s
+floatbitmap.cpp(2526): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s
+floatbitmap.cpp(325): Conversion not supported yet!
+floatbitmap.cpp(425): Conversion not supported yet!
+floatbitmap.cpp(888): Unsupported color format "%s", skipping!
 FloatBitMap::DownsampleNiceFiltered
 FloatBitMap::QuarterSize
 FloatBitMap::QuarterSizeBlocky
@@ -839,6 +842,7 @@ hn8c|
 HookUpTextureBits
 HostStateMgr001
 hr1yI
+hr1yR{
 =hrCy
 hrqy`Z
 Huffman code size table overflow
@@ -857,7 +861,7 @@ ib@9(
 ib@9)
 ib@9i
 ib@9l
-ibA9JqG
+ibA9JiG
 IB: %d buffers, %.2f MB
 IB)Mki
 ic8)Q
@@ -893,7 +897,7 @@ Ii+x!
 ij8(	
 ij8kI
 Ik68b
-Ikh8?
+ikh8?
 ikv8i
 ,il8H
 )ilxj%@
@@ -1084,8 +1088,9 @@ irCy`
 *'i$x
 j58hf@9(
 @j!8!
-j(81v
 j`8!i 8
+j(8{z
+j(8Z^
  J9?@
 J9e:A
 ja8 i!8!
@@ -1113,7 +1118,6 @@ k68wZ@
 ?k78h
 k(8vV@
 (k:8Z
-	!k9	
 #kc8Ein8
 KDDEy%
 KEdEy
@@ -1144,6 +1148,7 @@ KPip8
 KRir8\K
 k}	Sj
 KV Conditional Evaluation Error
+	!l9	
 %ld%c
 LE_BGRA8888
 LE_BGRX8888
@@ -1416,6 +1421,7 @@ p6%pD9
 PanoramaTextServices001
 PanoramaUIClient001
 PanoramaUIEngine001
+PARALLEL_PROCESS tinyexr_impl.cpp:163
 PARALLEL_PROCESS utlsoacontainer.cpp:2533
 parameter error
 ParseEXRHeaderFromMemory failed! Error message: %s

@@ -6,6 +6,7 @@
 -> $$ =
 -@),)
 ;()[]
+!^   
 !:@=!
 !.@=!
 !"@=!
@@ -182,7 +183,6 @@
 20CVfxShaderFileVulkan
 20IHibernationListener
 20IResourceTypeManager
-2	199s
 21CConstantBufferVulkan
 21CFramebufferMgrVulkan
 21CRenderHardwareConfig
@@ -214,7 +214,6 @@
 27CSchemaUtlVectorManipulatorI10CUtlVectorI25VsInputSignatureElement_t10CUtlMemoryIS1_iEES1_E
 2_!7k
 28ISchemaCollectionManipulator
-2	!:9
 29CMemoryReferenceManagerVulkan
 2,	@9L
 2	A	9
@@ -229,6 +228,7 @@
 2hBE9h
 2hj)8
 2hrU9
+2Hs.9
 2	i4xh
 2*i58
 2ij(8
@@ -254,6 +254,7 @@ $2,>S,,
 %!2,>S,
 @2,S,>S,,,
 %2,S,>S,,
+2x"@9
 	2z"@
 3_0_gl
 3_0_gles
@@ -396,9 +397,11 @@ $4DTdt
  6`"J9
 6jb@9J
 6`v@y
+6x"@9
 6@y_! k
 6@y?! k
 6@y?! kC
+6Ysn9
 @7('@
 7 ! 7
 (7@9H
@@ -470,7 +473,7 @@ _8ji)8
 )=@9)}
 )!@9)
 ))@9	
-@@9)#
+@@=9 
 @9`>@
 @9)!@
 @9)%@
@@ -480,7 +483,6 @@ _8ji)8
 &@9*]
 #@@9	
 #@9)	
-	!`9	
 	!@9	
 	@@9(
 	#@9*
@@ -572,6 +574,7 @@ _8ji)8
 )%@9i
 @9i&@
 #@9i	
+@@9I#
 @9I}	
 *!@9_I
 9`i`8
@@ -676,7 +679,6 @@ A8kB@9l
 *a@9_
 +a@9?
 +a@9*	
-	a_9	
 	a@9?
 	a@9	
 *A@9+
@@ -1497,6 +1499,7 @@ byteAddrTemp
 , bytes per element=
 ByVal
 @=%	@=c
+	!c9	
 c@95ID
 (C@9)?@9*#@9
 C9an@
@@ -2692,7 +2695,7 @@ DCT scaled block size %dx%d not supported
 %d %d
 %d..%d
 DDDDUUUU
-DDDDUUUUDDDDUUUUP
+DDDDUUUUDDDDUUUU
 ddx_coarse
 ddx_fine
 ddy_coarse
@@ -3166,7 +3169,6 @@ DynamicPool_%s
 .dynstr
 .dynsym
 <e;)(
-&@)@e
 E9i^A
 *eA9*
 earlydepthstencil
@@ -3279,6 +3281,8 @@ Error creating the NULL pixel shader!
 Error creating the resolve depth MSAA pixel shader!
 Error creating the resolve MSAA pixel shader!
 Error creating the resolve pixel shader!
+Error creating the resolve rotated pixel shader!
+Error creating the resolve rotated vertex shader!
 Error creating the resolve vertex shader!
 Error decompressing static combo data
 Error: discarding
@@ -4145,6 +4149,8 @@ float1x1
 float1x2
 float1x3
 float1x4
+	float2 vTexCoord				: TEXCOORD0;	
+	float2 vTexCoord				: TEXCOORD0;					
 float2x1
 float2x2
 float2x3
@@ -4180,14 +4186,14 @@ float64_t interpolateAtCentroid(float64_t);f64vec2   interpolateAtCentroid(f64ve
 float64_t matrix
 float64_t vector
 floatbitmap.cpp
-floatbitmap.cpp(140): Unknown gamma type "%s"!
-floatbitmap.cpp(2463): Error calling TGALoader::GetInfo( %s )
-floatbitmap.cpp(2474): Error loading %s
-floatbitmap.cpp(2497): Error! Unknown file type for %s
-floatbitmap.cpp(2516): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s
-floatbitmap.cpp(324): Conversion not supported yet!
-floatbitmap.cpp(424): Conversion not supported yet!
-floatbitmap.cpp(887): Unsupported color format "%s", skipping!
+floatbitmap.cpp(141): Unknown gamma type "%s"!
+floatbitmap.cpp(2473): Error calling TGALoader::GetInfo( %s )
+floatbitmap.cpp(2484): Error loading %s
+floatbitmap.cpp(2507): Error! Unknown file type for %s
+floatbitmap.cpp(2526): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s
+floatbitmap.cpp(325): Conversion not supported yet!
+floatbitmap.cpp(425): Conversion not supported yet!
+floatbitmap.cpp(888): Unsupported color format "%s", skipping!
 FloatBitMap::DownsampleNiceFiltered
 FloatBitMap::QuarterSize
 FloatBitMap::QuarterSizeBlocky
@@ -5054,12 +5060,12 @@ hbC9(
 hbC9h
 hbC9H
 *hbC9H
-h&B)@e
 hBE9h
 hBE9j
-hBg9)A
+hBg9)
 hBH9h
 hBI9H%
+h&B)@Q
 hB@yh&
 hc87hd89hc88hb8
 hc8#h 8
@@ -5111,7 +5117,6 @@ h"F9i
 hfC9H
 hFD9u
 h"G9i
-hh8)_
 $hh8Chh8
 *h&I)
 HIGHDPI
@@ -5147,7 +5152,7 @@ hj8."@
 hJ@9h
 hjh8{
 hjj8)1C
-hJL9)
+hJL9	
 h'@)jS@
 *hjt8
 hjt8U
@@ -5391,7 +5396,7 @@ Ii+x!
 i"@)j
 )ij8?
 )ij8	
-*ij(8
+*ij(8,
 ij8(	
 <)ij8j&
 *ij8j
@@ -5412,7 +5417,7 @@ IKChain
 IKChainOld
 ikdata
 IKData
-Ikh8?
+ikh8?
 ikrig
 IKRigBiped
 IKRigBug
@@ -6211,26 +6216,26 @@ Iy*wB
 j1By_! k
 ',)j2G
 ',)j3@
-j48lI
-j58-9
+j48lQ
+j58-A
 j58@c
-j58G7
+j58G?
 j58h%
 j58hf@9(
 j68HC@9h
 j68i"S
 @j!8!
 j*8*%
+j(87e
 j(8a6@
 j(8h*@
 j)8HA
-j(8HG
 j/8hj)
+j(8HK
 j`8!i 8
 j-8nj)
-j(8Sc
  J9?@
-J@9] 
+J@98!
 J9e:A
 J)@9j
 j"@9)Y@
@@ -6276,6 +6281,7 @@ JSON error, unterminated element:
 jump_statement
 Ju@y_
 j(x	k(x)k(x
+j*xrP
 J%@y_
 Jy?! kC
 J!@y-!@ylyj
@@ -6346,7 +6352,6 @@ KMdEy
 KMeansQuantization
 Km@x+
 kn1V?OK
-(knNh
 KOio8
 KPip8
 K?@@qk
@@ -6721,7 +6726,6 @@ m_bNoColor
 m_bOffsetExistingPos
 m_Bone
 m_bParticleFeathering
-MbP?d
 m_bRemapPullForceToLife
 m_bRunForParentApplyKillList
 m_bScaleCurrent
@@ -7200,6 +7204,7 @@ N2Z .
 N7glslang7TShader8IncluderE
 !n9[ .
 [ n9+a
+N@9IK
 ,.n*a
 name already defined
 named_barrier
@@ -7744,6 +7749,7 @@ Override default %s Vulkan GPU memory pool size: %d MB (default: %d MB)
 	o.vProjPos.w = 1.0;								
 	o.vProjPos.xyz = v.vProjPos;					
 	o.vTexCoordScaleOffset = v.vTexCoordScaleOffset;
+	o.vTexCoord = v.vTexCoord;						
 !OZW?O
 p6aVA
 P6hW@
@@ -7764,6 +7770,7 @@ PackUnorm4x8
 PanoramaTextServices001
 PanoramaUIClient001
 PanoramaUIEngine001
+PARALLEL_PROCESS tinyexr_impl.cpp:163
 PARALLEL_PROCESS utlsoacontainer.cpp:2533
 param
 parameter_declaration
@@ -8082,6 +8089,7 @@ PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
 Pvfx_shader_file.cpp
 _!@q	
+&@)@Q
 Q0&	S
 Q1iq8Rir8`i`8
 _	Q?9
@@ -8383,6 +8391,7 @@ Reserved word.
 ReservedWritePipe
 reserve_id
 resolve
+ResolveLayout
 ResourceCompilerSystem001
 ResourceHandleUtils001
 ResourceManifestRegistry001
@@ -8417,6 +8426,7 @@ RETURN
 	return g_tMSAASrctexture.Load( vSamplePos, 0 );					
 	return g_tMSAASrctexture.Load( vSamplePos, 0 ).x;				
 	return g_tSrctexture.Load( int3( vSamplePos, 0 ) );				
+	return g_tSrctexture.SampleLevel( g_sSrcSampler, i.vTexCoord.xy, 0 );
 returning error texture in CTextureManagerVulkan::GetTextureResource
 	return i.vColor;                                
 ReturnJobManualEventToPool
@@ -8502,6 +8512,7 @@ R	hi8
 rhj)8
 rhj)8@
 Rhj)8
+rhj)8;I
 Rhj)8t
 rhjh8
 Rhjh8
@@ -8604,6 +8615,7 @@ RTit8
 Rtj(8
 Rtj(8(
 R	t@y?
+Ruj(8
 rules: A Block or BufferBlock cannot be nested within another Block or BufferBlock. 
 _runtimearr_
 RuntimeDescriptorArray
@@ -8707,6 +8719,7 @@ samplerShadow
 SAMPLERSHADOW
 sampler_state
 SamplerState
+SamplerState g_sSrcSampler : register( s0 );						
 sampler/texture/image requires layout(binding=X)
 @sampleStructTemp
 Sampling factors too large for interleaved scan
@@ -12019,11 +12032,11 @@ vulkan/rendercontextvulkan.cpp
 vulkan/rendercontextvulkan.cpp(499): 
 vulkan/rendercontextvulkan.cpp(512): 
 vulkan/renderdevicevulkan.cpp
-vulkan/renderdevicevulkan.cpp(1614): 
-vulkan/renderdevicevulkan.cpp(2238): 
-vulkan/renderdevicevulkan.cpp(2867): 
-vulkan/renderdevicevulkan.cpp(3176): 
-vulkan/renderdevicevulkan.cpp(3913): 
+vulkan/renderdevicevulkan.cpp(1668): 
+vulkan/renderdevicevulkan.cpp(2302): 
+vulkan/renderdevicevulkan.cpp(2931): 
+vulkan/renderdevicevulkan.cpp(3240): 
+vulkan/renderdevicevulkan.cpp(3977): 
 -vulkanrenderthreadstack
 vulkan/renderthreadvulkan.cpp(194): Error! NULL texture pointer sent to OnReadPixels()!
 #Vulkan_RequiredExtensionMissing
@@ -12081,8 +12094,6 @@ vulkan/texturevulkan.cpp(1451):
 vulkan/texturevulkan.cpp(733): 
 vulkan/texturevulkan.cpp(749): 
 Vulkan using external subpass dependencies for all renderpasses.
-Vulkan using intermediate swapchain image rather than rendering direct to swapchain for Adreno 5xx to workaround corruption.
-Vulkan using intermediate swapchain image rather than rendering direct to swapchain on ARM to avoid GPU hangs.
 -vulkan_validation_warnings
 V_UTF16ToUTF8
 V_UTF32ToUTF8
@@ -12332,9 +12343,9 @@ yhBJy
 yh/Bx
 yH/Bx
 	yh~D
+yhj)x
 yh/Jx
 yH/Jx
-yhj)xh2A
 yhrBy
 yhr@y
 yhR@y
@@ -12403,9 +12414,9 @@ Y n)Y nJY nkY n
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 @yRhnxQ~
 @y)S<
+Ys.968
 y)U@y?
 @yUym
-"@yV#
 	y)wB
 y)%@y?
 y)	@y

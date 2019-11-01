@@ -31,7 +31,9 @@
 !~@( 
 !*,=@
 !	@-#	@
-!	@)^
+!	@)<
+!	@);
+!	@)?
 ?)>>!;/
 ?}@=	
 '":|;
@@ -83,7 +85,6 @@ $@)#@@)
 +!@))	@
 	) 	)
 	)@)	(
-	*! .
 	*({*
 	*(#:
 	*	}`
@@ -138,6 +139,7 @@ $0$1$2 $3 = $4
 06h6@
 06hB@
 06hF@
+06hN@
 06hRF
 	06i:@
 06i>@
@@ -201,8 +203,9 @@ $0 to $1,
 (0@y @
 )0@y @
 )0@y?
-(0@y)EC
+(0@y)5C
 0@y_!!ka
+!	@)[1
 '@@-1
 @-'@@-1
 +1@))	@
@@ -274,7 +277,7 @@ $0 to $1,
 11CBasePlayer
 11CBaseToggle
 11CCallResultI19CGCUpdateItemSchema22HTTPRequestCompleted_tE
-=11CDAC_Speech
+11CDAC_Speech
 11CDAC_Talent
 11CDemoPacket
 11CEconEntity
@@ -413,6 +416,7 @@ $0 to $1,
 12INavDrawMesh
 12INavObstacle
 135.0f
+	139_A39
 13audioparams_t
 13CAI_Expresser
 13CBuffModifier
@@ -1071,6 +1075,7 @@ $0 to $1,
 16CModifierFactoryI29CDAC_Modifier_Enigma_MaleficeE
 16CModifierFactoryI29CDAC_Modifier_EnthrallTriggerE
 16CModifierFactoryI29CDAC_Modifier_ForceStaff_PushE
+16CModifierFactoryI29CDAC_Modifier_HealingAura_OldE
 16CModifierFactoryI29CDAC_Modifier_HealingAura_PFXE
 16CModifierFactoryI29CDAC_Modifier_Hobgen_FirebombE
 16CModifierFactoryI29CDAC_Modifier_Lich_Mage_BonusE
@@ -1102,6 +1107,7 @@ $0 to $1,
 16CModifierFactoryI30CDAC_Modifier_ForceStaff_AIOldE
 16CModifierFactoryI30CDAC_Modifier_GlovesOfHasteOldE
 16CModifierFactoryI30CDAC_Modifier_GoldOnLastHitHatE
+16CModifierFactoryI30CDAC_Modifier_HealingAura_BuffE
 16CModifierFactoryI30CDAC_Modifier_HeartOfTarrasqueE
 16CModifierFactoryI30CDAC_Modifier_Hobgen_AfterburnE
 16CModifierFactoryI30CDAC_Modifier_Hobgen_AirStrikeE
@@ -1167,6 +1173,8 @@ $0 to $1,
 16CModifierFactoryI32CDAC_Modifier_Assassin_MorphlingE
 16CModifierFactoryI32CDAC_Modifier_AssaultCuirassBuffE
 16CModifierFactoryI32CDAC_Modifier_Axe_BerserkersCallE
+16CModifierFactoryI32CDAC_Modifier_Barricade_Aura_OldE
+16CModifierFactoryI32CDAC_Modifier_Barricade_Buff_OldE
 16CModifierFactoryI32CDAC_Modifier_BlightStone_DebuffE
 16CModifierFactoryI32CDAC_Modifier_CrystalMaidenDeathE
 16CModifierFactoryI32CDAC_Modifier_Drow_Trueshot_AuraE
@@ -1192,7 +1200,9 @@ $0 to $1,
 16CModifierFactoryI33CDAC_Modifier_BlackKingBar_ImmuneE
 16CModifierFactoryI33CDAC_Modifier_ForceStaff_Push_OldE
 16CModifierFactoryI33CDAC_Modifier_GenericInvisibilityE
+16CModifierFactoryI33CDAC_Modifier_HealingAura_PFX_OldE
 16CModifierFactoryI33CDAC_Modifier_HeartOfTarrasqueOldE
+16CModifierFactoryI33CDAC_Modifier_Hobgen_FeedbackLoopE
 16CModifierFactoryI33CDAC_Modifier_Hobgen_KeepItSecretE
 16CModifierFactoryI33CDAC_Modifier_Hobgen_MeltingPointE
 16CModifierFactoryI33CDAC_Modifier_Hobgen_PyrotechnicsE
@@ -1210,6 +1220,7 @@ $0 to $1,
 16CModifierFactoryI33CDAC_Modifier_TalentDawningRistulE
 16CModifierFactoryI33CDAC_Modifier_TalentSpeedyBlueBarE
 16CModifierFactoryI33CDAC_Modifier_Talisman_of_EvasionE
+16CModifierFactoryI33CDAC_Modifier_TargetDummyTauntOldE
 16CModifierFactoryI33CDAC_Modifier_TrollWarlord_FervorE
 16CModifierFactoryI33CDAC_Modifier_Warlock_Shadow_WordE
 16CModifierFactoryI33CDAC_Modifier_Warlord_Troll_BonusE
@@ -1256,6 +1267,7 @@ $0 to $1,
 16CModifierFactoryI35CDAC_Modifier_CriticalResponse_BuffE
 16CModifierFactoryI35CDAC_Modifier_Disruptor_StaticStormE
 16CModifierFactoryI35CDAC_Modifier_Druid_Death_ExplosionE
+16CModifierFactoryI35CDAC_Modifier_HobgenLetsGoCrazyCastE
 16CModifierFactoryI35CDAC_Modifier_Legion_Commander_DuelE
 16CModifierFactoryI35CDAC_Modifier_Medusa_StoneGaze_SlowE
 16CModifierFactoryI35CDAC_Modifier_Nyx_Assassin_VendettaE
@@ -1274,6 +1286,7 @@ $0 to $1,
 16CModifierFactoryI36CDAC_Modifier_BlackKingBar_ImmuneOLDE
 16CModifierFactoryI36CDAC_Modifier_Bristleback_QuillSprayE
 16CModifierFactoryI36CDAC_Modifier_ElementalsMakeEidolonsE
+16CModifierFactoryI36CDAC_Modifier_Hobgen_FireSuppressionE
 16CModifierFactoryI36CDAC_Modifier_Hobgen_Frustrated_CastE
 16CModifierFactoryI36CDAC_Modifier_Medusa_StoneGaze_StoneE
 16CModifierFactoryI36CDAC_Modifier_OctarineEssence_ShieldE
@@ -1365,6 +1378,7 @@ $0 to $1,
 16CModifierFactoryI43CDAC_Modifier_Kunkka_GhostShip_DamageAbsorbE
 16CModifierFactoryI43CDAC_Modifier_LoneDruid_SpiritBear_EntangleE
 16CModifierFactoryI43CDAC_Modifier_Synergy_DemonHunter_DemonBuffE
+16CModifierFactoryI43CDAC_Modifier_TargetDummy_DisableHealingOldE
 16CModifierFactoryI44CDAC_Modifier_FacelessVoid_Chronocube_FreezeE
 16CModifierFactoryI44CDAC_Modifier_Hobgen_Supercharge_AbilityManaE
 16CModifierFactoryI45CDAC_Modifier_DragonKnight_CorrosiveBreathDoTE
@@ -1728,7 +1742,7 @@ $0 to $1,
 18TEFizz_GameEvent_t
 18ToolTraceRayResult
 1960/00/00
-	1/9_A/9
+	1>9_A>9
 	1&9_A&9
 19CAI_ChangeHintGroup
 19CAmmoDefInitializer
@@ -1841,6 +1855,7 @@ $0 to $1,
 19TonemapParameters_t
 =)1A9I
      1: AI Decisions
+	1B9?
 1) Blue : %i
 1bQJ1~
 1CMsgRequestItemPurgatory_FinalizePurchaseResponse
@@ -1861,10 +1876,7 @@ $0 to $1,
 1k_UnpackBundle_Failed_UnableToCreateContainedItem
               -1 = let clients set cl_interp_ratio to anything
 <1+=Mg'
-1Ny	<
 1O[y?
-	1P9)
-	1P9i
 1) Red  : %i
 1sAL"
 1 to output sv_showanimstate to Msg(). 2 to store in AnimStateServer.log. 3 for both.
@@ -1989,6 +2001,7 @@ $0 to $1,
 20CSaveRestoreFileData
 20CScenePrecacheSystem
 20CServerCrashSentinel
+20CSODACParty_TeamInfo
 20CSOEconItemAttribute
 20CSOGameAccountClient
 20CSoundEventParameter
@@ -2032,6 +2045,7 @@ $0 to $1,
 20TESparks_GameEvent_t
 20ToolTraceRayResult_t
 20TransitioningLayer_t
+2	1,9
 21CAnimGraphTraceFilter
 21CBaseAnimatingOverlay
 21CBaseAttributableItem
@@ -2213,6 +2227,7 @@ $0 to $1,
 22CMsgAMGetUserGameStats
 22.CMsgAMGetUserGameStatsResponse.Achievement_Blocks
 22CMsgClientServerHeader
+22.CMsgClientToGCAckSupportCreditsResponse.EResponse"f
 22.CMsgClientToGCCanPurchaseItemResponse.Reservation
 22CMsgClientToGCNameItem
 22CMsgCombatEvent_Attack
@@ -2387,7 +2402,6 @@ $0 to $1,
 23CGCClientJobGetGCStatus
 23CGCMsgSystemStatsSchema
 23CInfoSpawnGroupLandmark
-23CKeyValuesDumpToConsole
 23CLagCompensationManager
 23CLightDirectionalEntity
 23CLightEnvironmentEntity
@@ -2488,6 +2502,7 @@ $0 to $1,
 24CDAC_Modifier_Spawn_Anim
 24CDAC_Modifier_WildRumpus
 24CDAC_Ogre_Magi_Bloodlust
+24CDAC_TargetDummyTauntOld
 24CDAC_Warlord_Troll_Bonus
 24CDemoCustomDataCallbacks
 24CEconTool_ItemRedemption
@@ -2676,6 +2691,8 @@ $0 to $1,
 25.CMsgClientToGCEventRequestInfoSyncResponse.EResponse
 25CMsgClientToGCPartyAction
 25CMsgClientToGCPartyCreate
+25.CMsgClientToGCPartySetGameModifierResponse.EResponse"
+25CMsgClientToGCSetTeamName
 25CMsgClientToGCUnlockCrate
 25CMsgClientToServerChatMsg
 25CMsgCombatEvent_Resurrect
@@ -2731,6 +2748,7 @@ $0 to $1,
 25TEPlayerDecal_GameEvent_t
 25ToolEvent_FireEntityInput
 25ToolEvent_GetEntityInputs
+269uG
 26CCLCMsg_SplitPlayerConnect
 26CClientMsg_CustomGameEvent
 26CDAC_Ability_Wisp_Relocate
@@ -2915,6 +2933,7 @@ $0 to $1,
 27CMsgCombatEvent_CombatEnded
 27CMsgCombatEvent_SpeechEvent
 27CMsgCombatEvent_StartAttack
+27CMsgCombatEvent_StopGesture
 27CMsgCustomGameInstallStatus
 27CMsgGCClientMarketDataEntry
 27CMsgGCGetPartnerAccountLink
@@ -3145,9 +3164,9 @@ $0 to $1,
 28TEProjectedDecal_GameEvent_t
 28TEShatterSurface_GameEvent_t
 28VPhysicsCollisionAttribute_t
-2	!-9?
-2	!99
-2	!99n
+2(##9
+2	!;9?
+2	!+9
 29CBodyComponentBaseModelEntity
 29CBoneConstraintPoseSpaceMorph
 29CCLCMsg_SplitPlayerDisconnect
@@ -3178,6 +3197,7 @@ $0 to $1,
 29CDAC_Modifier_Enigma_Malefice
 29CDAC_Modifier_EnthrallTrigger
 29CDAC_Modifier_ForceStaff_Push
+29CDAC_Modifier_HealingAura_Old
 29CDAC_Modifier_HealingAura_PFX
 29CDAC_Modifier_Hobgen_Firebomb
 29CDAC_Modifier_Lich_Mage_Bonus
@@ -3239,16 +3259,18 @@ $0 to $1,
 29CTraceFilterAgainstEntityList
 29CTraceFilterEntityIgnoreOther
 29DestroyAllEntitiesToolEvent_t
+2	!+9o
 2*9	S)!@
 2	9	S
 2(9	SHM(
 2	9	SIO)
 2	9	S)O)
 29ToolEvent_GetEntityInfoResult
-2	a49
+2	a+9
+2	A*9h
 2A9i2
 2	a@9Ia
-2	A/9s
+2	a+9n
 2	AA9
 2A.CWorkshop_PopulateItemDescriptions_Request.SingleItemDescription"F
 2A-k	 
@@ -3256,7 +3278,6 @@ $0 to $1,
 2) Blue : %i
 2_BONE_IK
 @?$2bUs
-2(c"9
 2 .CBidirMsg_RelayInfo.Operation_t
 2 .CCommunity_ClanAnnouncementInfo"p
 2).CGameInfo.CDotaGameInfo.CHeroSelectEvent
@@ -3294,6 +3315,7 @@ $0 to $1,
 2+.CMsgClientToGCPartyLeaveResponse.EResponse"Z
 2?.CMsgClientToGCRemoveItemAttributeResponse.ERemoveItemAttribute
 2-.CMsgClientToGCSetItemStyleResponse.ESetStyle"a
+2,.CMsgClientToGCSetTeamNameResponse.EResponse"
 2-.CMsgClientToGCSpectateUserResponse.EResponse
 2'.CMsgClientToGCUnlockCrateResponse.Item
 2 .CMsgCombatEvent_ModifierDestroyH
@@ -3401,18 +3423,18 @@ $0 to $1,
 ?2h2-
 2h2u9
 2	h(8
-2h"?9
+2h">9
 2h>(9h
 2h&(9T
-2hb09
 2hb89
 2hb>9
+2hb?9
 2h"B9
-2hf=9t=
+2hb?9H^
 2hjh8
 	2hN	
-2hr=9
 2hR99h
+2h;	SHO(
 2H;	S(O(
 2hV99h
 2h^@y
@@ -3425,9 +3447,7 @@ $0 to $1,
 2ii*x
 2ij(8
 2ij(8F
-2ij(8TL
 2+imx
-2iR>9
 2j"@9)p
 2jr8_
 2_!;k
@@ -3436,8 +3456,8 @@ $0 to $1,
 2?!!k
 2?"!k`
 2?k78
-2_k88
 2?k88
+2_k88K
 2k_EGCMsgInitiateTradeResponse_VAC_Banned_Initiator
 2Ki(8
 2Ki(8k
@@ -3460,10 +3480,10 @@ $0 to $1,
 2njj8l
 }2'@+P
 2 .ProtoFlattenedSerializerField_t"!
-2*q69
-2	q;9
-2	Q<9
-2	Q)9	
+2	q59
+2	Q69
+2	Q"9
+2	q"9H
 2	q@y?
 	2R*3
 2) Red  : %i
@@ -3473,14 +3493,16 @@ $0 to $1,
 ?2uWv
 2Way_0( %s )
 2Way_1( %s )
-2xR"9
+2x"@9
+2@y)5C
 2*y5xi"@
 2*y7xi"@
 2@y"!A
-2@y)EC
-2@yJ}F
+2@yJaF
 2yR99
 2*y(x	
+!	@)3
+'3))/
 -30.0
 300.0
 300000
@@ -3506,6 +3528,7 @@ $0 to $1,
 30CDAC_Modifier_ForceStaff_AIOld
 30CDAC_Modifier_GlovesOfHasteOld
 30CDAC_Modifier_GoldOnLastHitHat
+30CDAC_Modifier_HealingAura_Buff
 30CDAC_Modifier_HeartOfTarrasque
 30CDAC_Modifier_Hobgen_Afterburn
 30CDAC_Modifier_Hobgen_AirStrike
@@ -3652,6 +3675,7 @@ $0 to $1,
 31CBaseAnimatingOverlayController
 31CCommunity_ClanAnnouncementInfo
 31CDAC_Ability_AntiMage_ManaBreak
+31CDAC_Ability_Barricade_Aura_Old
 31CDAC_Ability_Drow_Trueshot_Aura
 31CDAC_Ability_Hobgen_LetsGoCrazy
 31CDAC_Ability_Morphling_Waveform
@@ -3691,6 +3715,7 @@ $0 to $1,
 31CGCToGCMsgMasterStartupComplete
 31CModelConfigElement_RandomColor
 31CMsgAMGrantGuestPasses2Response
+31CMsgClientToGCAckSupportCredits
 31CMsgClientToGCDevEventOperation
 31CMsgClientToGCGetRegionModeInfo
 31CMsgClientToGCLookupAccountName
@@ -3746,6 +3771,8 @@ $0 to $1,
 32CDAC_Modifier_Assassin_Morphling
 32CDAC_Modifier_AssaultCuirassBuff
 32CDAC_Modifier_Axe_BerserkersCall
+32CDAC_Modifier_Barricade_Aura_Old
+32CDAC_Modifier_Barricade_Buff_Old
 32CDAC_Modifier_BlightStone_Debuff
 32CDAC_Modifier_CrystalMaidenDeath
 32CDAC_Modifier_Drow_Trueshot_Aura
@@ -3835,7 +3862,9 @@ $0 to $1,
 33CDAC_Modifier_BlackKingBar_Immune
 33CDAC_Modifier_ForceStaff_Push_Old
 33CDAC_Modifier_GenericInvisibility
+33CDAC_Modifier_HealingAura_PFX_Old
 33CDAC_Modifier_HeartOfTarrasqueOld
+33CDAC_Modifier_Hobgen_FeedbackLoop
 33CDAC_Modifier_Hobgen_KeepItSecret
 33CDAC_Modifier_Hobgen_MeltingPoint
 33CDAC_Modifier_Hobgen_Pyrotechnics
@@ -3853,6 +3882,7 @@ $0 to $1,
 33CDAC_Modifier_TalentDawningRistul
 33CDAC_Modifier_TalentSpeedyBlueBar
 33CDAC_Modifier_Talisman_of_Evasion
+33CDAC_Modifier_TargetDummyTauntOld
 33CDAC_Modifier_TrollWarlord_Fervor
 33CDAC_Modifier_Warlock_Shadow_Word
 33CDAC_Modifier_Warlord_Troll_Bonus
@@ -3865,6 +3895,7 @@ $0 to $1,
 33CMsgClientToGCPartyCreateResponse
 33CMsgClientToGCRecordLocalBotMatch
 33CMsgClientToGCRemoveItemAttribute
+33CMsgClientToGCSetTeamNameResponse
 33CMsgClientToGCUnlockCrateResponse
 33CMsgEventClaimRewards_Achievement
 33CMsgFulfillDynamicRecipeComponent
@@ -3942,6 +3973,7 @@ $0 to $1,
 34CMsgClientToGCClearPurchaseReserve
 34CMsgClientToGCEquipLoadoutResponse
 34CMsgClientToGCEventRequestInfoSync
+34CMsgClientToGCPartySetGameModifier
 34CMsgClientToGCReplacementSDRTicket
 34CMsgClientToGCSetItemStyleResponse
 34CMsgClientToGCSpectateUserResponse
@@ -3987,6 +4019,7 @@ $0 to $1,
 35CDAC_Modifier_CriticalResponse_Buff
 35CDAC_Modifier_Disruptor_StaticStorm
 35CDAC_Modifier_Druid_Death_Explosion
+35CDAC_Modifier_HobgenLetsGoCrazyCast
 35CDAC_Modifier_Legion_Commander_Duel
 35CDAC_Modifier_Medusa_StoneGaze_Slow
 35CDAC_Modifier_Nyx_Assassin_Vendetta
@@ -4047,6 +4080,7 @@ $0 to $1,
 36CDAC_Modifier_BlackKingBar_ImmuneOLD
 36CDAC_Modifier_Bristleback_QuillSpray
 36CDAC_Modifier_ElementalsMakeEidolons
+36CDAC_Modifier_Hobgen_FireSuppression
 36CDAC_Modifier_Hobgen_Frustrated_Cast
 36CDAC_Modifier_Medusa_StoneGaze_Stone
 36CDAC_Modifier_OctarineEssence_Shield
@@ -4112,6 +4146,7 @@ $0 to $1,
 37CGCSystemMsg_GetPurchaseTrust_Request
 37CInlineJob_CMsgGCServerVersionUpdated
 37CInlineJob_CMsgGCToServerAddSpectator
+37CKeyValuesDumpContextToLoggingChannel
 37CMsgClientToGCAssociateDeviceResponse
 37CMsgClientToGCCanPurchaseItemResponse
 37CMsgClientToGCCheckFriendCodeResponse
@@ -4194,6 +4229,7 @@ $0 to $1,
 39CDynamicPropAlias_prop_dynamic_override
 39CGCSystemMsg_GetAccountDetails_Response
 39CMsgClearDecalsForSkeletonInstanceEvent
+39CMsgClientToGCAckSupportCreditsResponse
 39CMsgClientToGCDevEventOperationResponse
 39CMsgClientToGCGetRegionModeInfoResponse
 39CMsgClientToGCLookupAccountNameResponse
@@ -4238,6 +4274,7 @@ $0 to $1,
 4(0@9
 40CColorCorrectionMaterialOverrideModifier
 40CCommunity_GetClanAnnouncements_Response
+40CDAC_Ability_HealingWard_HealingAura_Old
 40CDAC_Ability_KeeperOfTheLight_Illuminate
 40CDAC_Ability_Nyx_Assassin_SpikedCarapace
 40CDAC_Ability_PhantomAssassin_CoupdeGrace
@@ -4321,6 +4358,7 @@ $0 to $1,
 42CMsgClientToGCClearPurchaseReserveResponse
 42CMsgClientToGCEventEquipVirtualItems_Equip
 42CMsgClientToGCEventRequestInfoSyncResponse
+42CMsgClientToGCPartySetGameModifierResponse
 42CMsgClientToGCReplacementSDRTicketResponse
 42CMsgGCGetPersonaNames_Response_PersonaName
 42CMsgGCItemEditorReleaseReservationResponse
@@ -4342,6 +4380,7 @@ $0 to $1,
 43CDAC_Modifier_Kunkka_GhostShip_DamageAbsorb
 43CDAC_Modifier_LoneDruid_SpiritBear_Entangle
 43CDAC_Modifier_Synergy_DemonHunter_DemonBuff
+43CDAC_Modifier_TargetDummy_DisableHealingOld
 43CMsgAMSendEmail_PersonaNameReplacementToken
 43CMsgClientToGCEventEquipVirtualItemResponse
 43CMsgGCMsgMasterSetClientMsgRouting_Response
@@ -4422,8 +4461,8 @@ $0 to $1,
 49CUserMsg_ParticleManager_UpdateParticleShouldDraw
 49GameToolEventToolTraceRayResult_tHookupGameSystem
 4((@9h
-4a<9_
-4A/9_
+4a=9_
+4A>9_
 4`&C-
 4(d@9(
 	4D9?
@@ -4431,8 +4470,11 @@ $0 to $1,
 %% 4d=[%%%d.%ds] at cycle %%6.4f weight %%5.3f
 	[%4d]: %s%s
 4@G8-x
+4h2]9
+4h2]9h
 4h2A9
 4h2O9(
+4h2P9H
 4h2@y
 4h6A9
 4H	@7
@@ -4447,6 +4489,7 @@ $0 to $1,
 4h&A9
 4h>A9H
 4h.A9H
+4hb]9
 4hb@9
 4hB@9
 4hBA9
@@ -4459,12 +4502,9 @@ $0 to $1,
 4h"N9(
 4hn@9H
 4h&O)j
-4hR]9
-4hR]9h
 4hRP9H
-4hr@y`?
-4hR@y`?
-4hV~9
+4hr@y
+4hR@y
 4hZP9
 4)(@i
 4i.@9h"@9I
@@ -4557,6 +4597,7 @@ $0 to $1,
 5h2j9H
 5h2O9h
 5h2V9
+5h6]9h
 5h6V9H
 5h"]9
 5h"@9
@@ -4573,12 +4614,10 @@ $0 to $1,
 5h^P9h
 5h&Q)j
 5hr@9H
-5hR~9h
-5hV]9h
 5ib@y
 5i*C))
+5i"J)
 )5IJ(}
-5i"J)5_
 5ISave
 5i.@y
 5`J@)q
@@ -4636,7 +4675,6 @@ _6	8@
 	6	9J
 6	a@9)
 6	@A9
-6aBo9
 /6`B@
  6bB@
 6	c@9
@@ -4717,6 +4755,7 @@ _6	D@
 6hbA9
 6hBA9
 6hBA9	Q
+6hBB9
 6hbB9	7
 6hBC9
 6HC@9
@@ -4726,8 +4765,10 @@ _6	D@
 ?6hF@
 '6hF@
 (6hF@
-6h"F9`3G
+6h"F9`CL
 6hFA9
+'6hFB9
+'6hFB9	
 _6hj@
 ?6hj@
 (6hj@
@@ -4747,6 +4788,7 @@ _6hNB9	;
 ?6hr@
 /6hr@
 '6hr@
+?6hR@
 (6hRF
 `6hv@
 /6hv@
@@ -4809,8 +4851,9 @@ _6i:@
 '6if@
 @6if@
 /6iF@
+'6iF@
 6iFA9
-6ih8hR
+6ih8hJ
 _6ij@
 /6ij@
 @6ij@
@@ -4819,7 +4862,7 @@ _6iJ@
 ?6iJ@
 /6iJ@
 @6iJ@
-6i"J)5_
+6i"J)
 6iJA9
 ?.@6$Ik
 ?6iN@
@@ -4885,9 +4928,12 @@ _6v:@
 '6vj@
 /6	X@
 6	x@9
-6Y3Q9
+6x"@9
+6Y3_9
 6@y_! k
+!	@)7
 ?7[/<
+'7))/
 +@;^7[/
 	**!7
 (7(	07
@@ -4980,9 +5026,9 @@ _6v:@
 7hf@9(
 7hF@9
 7hf@9h
-7hfe9
-7hfi9
-7hfk9
+7hFe9
+7hFi9
+7hFk9
 7h&G-mB@
 @7h	H7
 7h>h9
@@ -5014,6 +5060,7 @@ $(7hRA9
 7iV@y	
 (7j"@
 7*j"@
+(7`jO
 7jT@y
 7jU@y
 	*_!7k
@@ -5048,7 +5095,6 @@ $(7hRA9
 ?7`%Yf
 7Ze&<o
 7`ZKV?e
-(7`ZO
 `.`8$
 !^ 8 
 !~ 8 
@@ -5166,12 +5212,10 @@ _8|{t
 8x9,7
 `"@9	
 |@9		
- @9	,
 ?9% &
 .@9)	
 (@@9(
 (@@9	
-(%@)`9
 (	@9	
 )!@9)
 )@@9)
@@ -5205,7 +5249,7 @@ _8|{t
 @9!8"
 98]@)5	@
 98N*>
-?9_!?9
+>9_!>9
 @9*	@9-
 @9%	@9$
 @9%	@9&
@@ -5213,19 +5257,17 @@ _8|{t
 %@9	)@9
 9)@@9
 9+	@9
- @9)9D
-@9%	@9I/
+@9%	@9i/
  @9	$@9J
- @9	$@9J9D
 [%9.9s] (%5d)%s:
 [%9.9s] (%d)%s at %.6f phase not supported
-"@9!A
 @9A(!
+"@9aA
 ?9A@c
 @9?aEkA
 9AIJI
 @9B!@
-	9B9))*
+	9B9j)*
 @9)+C
 9CBaseFlex
 9CBaseProp
@@ -5258,7 +5300,6 @@ _8|{t
 9CTESparks
 9CTimeline
 9D7V=
-@9 	E
 (@@9	f
 (@@9	g
 9gCN>
@@ -5268,7 +5309,7 @@ _8|{t
 	#@9h
 (@@9H
 9h2@y
-@9H	87
+@9H	87U[
 9h.@9
 9h^A9
 9hb@9
@@ -5304,23 +5345,19 @@ _8|{t
 9hZA9
 9hZB9
 ~@9i~
- @9i^
-"@9i^
+ @9i,
 )!@9i
 )@@9i
-@@9i]
 @9i&@
 @9I	@
- @9I4
 @9	i58s
 9i:8!
 @9+i(8k
 "@9i"@9
-@9i"@9
 9	i@9
 ^9I9)
+@9i"@949
 9*i@9J
-@9iBo9
 9IEconTool
 9ifA9
 (@@9ifl9hF,9
@@ -5335,8 +5372,8 @@ _8|{t
 9j"@9
 9j*@9(
 @9J9	
-@9J9D
 @9jjh8*
+	!@9JS
 @9JU	
 !!@9K
 >9K!0>N
@@ -5347,6 +5384,8 @@ _8|{t
 9k_ItemPurgatoryResponse_Finalize_Failed_CouldNotFindItems
 9kj(8|
 9l"A9
+@9)m@
+!@9~n
 )9}[p=
 9Px? FcH
 9)P@y	q
@@ -5412,7 +5451,6 @@ A-/	.
 A-(  
 A-@ #
 A))!@
-*A29%?%
 a2B9bz@
 a2U0*	
 ?a2U0*i
@@ -5445,9 +5483,10 @@ A9 	*
 A9()(
 A9@) 
 A9@)(
-a"@9"7
+a"@92
 a@9+a
 `A9)`A9
+a"@9B7
 A9@g@
 .A9h.
 "A9h"
@@ -5473,6 +5512,7 @@ A9i>@
 )A@9	i98h:@
 A9	ii
 A9iji
+a@9)J
 *!A9J
 A9|J@
 	A9j"A
@@ -5484,21 +5524,22 @@ A@9k}@
 A9Kik
 +	A9lC
 	A@9	P
+?A9)QG
+A9)QG
 ?A9tJ@
 A@9vi)
-?A9)yG
-A9)yG
 A-a)*
 A-'@A-
+A	A-*>
 AA9(	
 AA9(	@
+a"A9T
 aaaaaaaazzzzzzzz
 aabb_max
 aabb_min
 AABB_t
 A-b6B
 A@-B8(
-	Ab9)
 abcdefghijklmnopqrrqponmlkjihgfedcba
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
@@ -5544,7 +5585,6 @@ absorigin
 absorigin_follow
 AbsTagType(unknown)
 A bunch of extra server work is done to log plenty of stuff in combat.
-\-.aC
 A-c($
 A-c(&
 A-c8$
@@ -7044,7 +7084,6 @@ Advancing to ERoundState_Preparing for round %d.
 Advancing to ERoundState_Ready for round %d.
 Advancing to ERoundState_RoundOver for round %d.
 ?*a\`E<
-	AE9	
 AE_ABILITY_END_EVENT
 AE_ABILITY_START_EVENT
 AE_ABILITY_TICK
@@ -7270,19 +7309,16 @@ After this many seconds of being basically stationary, the ragdoll will go to sl
 A-G=@
 A-G1@
 A-G5@
+	ag9	
 A-G9@
 age_seconds
 Agg data %d: %p (%d parts, crc 0x%08X)
 aggregate_value
 Ah1xij/
-	ah9	
-	aH9	
 AH*I}
 a"@-i
 `"A-i
 	!Ai)
-	AI9)
-A-)iA
 aiAura
 AI_BaseNPC.SentenceStop
 ai_changehintgroup
@@ -7396,6 +7432,8 @@ always_send_to_server
 always_send_to_servers
 always tradable
 ;Am@  
+A-)MA
+#AmB3
 AmbientCubes
 ambient_effect
 ambient_generic
@@ -7549,7 +7587,6 @@ An orthographic spot light entity
 An RR_Concept couldn't find its string in the symbol table!
  any other value = set minimum value for cl_interp_ratio
 &A)(o@
-	aO9	
 (aO)?Q
 api_key
 `AP$N
@@ -7583,6 +7620,7 @@ APPSYSTEM: In ReconnectGameInterface(), tried to use different connection modes!
  a protocol 
 A protocol message was rejected because it was too big (more than 
 A@Q?%
+	AQ9i
 >!@A+r
 AR2AltFire
 arcana_level
@@ -7638,6 +7676,7 @@ armory_remap
 arrow_range
 arrow_speed
 arrow_width
+	AS9	
 as_above_so_below
 as_above_so_below_talent
 as_coach
@@ -7867,6 +7906,8 @@ autoteam
 auto_unragdoll_duration
 [a:%u:%u]
 [A:%u:%u:%u]
+	av9	
+	aV9	
 	available
 Available: 
 Available item definitions for whitelisting:
@@ -7884,6 +7925,7 @@ Avg/Msg
 avg_packets_in
 avg_packets_out
 A)`W@
+	AW9)
 AWARDED
 away_team_talent
 Away Team Won - %d damage applied to home team.
@@ -7897,26 +7939,26 @@ A-!Xh
 Ax? /k 
 AXk!#
 ?aXY6
+a_y	<
 ?AYki
 ?A@YY$
-!	@)b 
 ""\\//b
 @-b("
 @-b	@
 	-b("
 !^B($
-!	@)B'
 ('B)*
 @-B	@
-*B)!/
 B-`! 
 B-   
 B-'("
 B-)( 
 B)*}@
 B-1HD-
+b1@yAA
 B-(5@
 *-B),5C)_
+b79iJ@
 @-b8"
 @-B8!
 	@-B8!
@@ -7924,6 +7966,7 @@ B-!8"
 ~b8~q)=
 `b@9 
  B\9{
+B!9,"
 B9@  
 B@9a'
 ?B9b8"
@@ -7938,15 +7981,18 @@ B@9H6
 b@9hb
 B@9hB
 B@9hC
+B(9HD
 b"@9i
 B9$i@
 B9I	87
 b@9ib
-B@9t^O
+B/9JD
+B@9tnO
+*B)A/
 B-A8!
-bA9	-
 bA9hb
 BA9hB
+bA9I-
 BA9iB
 BA9iFA9hB
 b?)AC_
@@ -8010,6 +8056,7 @@ banned_game_ids
 banned_words
 Ban some heroes for testing
 Barbed
+barricade_aura_new
 barrier_block
 Barrier Clip
 barrier_duration
@@ -8076,9 +8123,9 @@ bbox.m_vMaxBounds
 bbox.m_vMinBounds
 !	B-C
 BC9hB
-b@CDAC_Item_Dagon
 bChainLightningConsidered
 bCraniumBasherTested
+`BCy[W
 %b %d
 B-d{@
 B-D@@
@@ -8095,11 +8142,11 @@ BEAM_POINTS
 beams
 BEAM_SPLINE
 BeamType_t
+beautiful_corner
 	Because CModifierFactoryDictionary is case sensitive, you have probably introduced a bug.
 	Because CTalentFactoryDictionary is case sensitive, you have probably introduced a bug.
 " because it is missing required fields: 
 		Becomes:	%s
-B-(ED
 beg_borrow_heal
 beg_borrow_heal_talent
 begin
@@ -8227,6 +8274,7 @@ body_substring_keys
 body_substring_values
 body_type
 body_yaw
+b@offensive_bonus_damage_multiplier
 Bogus constraint %s (attaches ENTITY NOT FOUND:%s to %s)
 Bogus constraint %s (attaches %s to ENTITY NOT FOUND:%s)
 Bogus pmove player movetype %i on (%i) 0=cl 1=sv
@@ -8419,6 +8467,7 @@ BUF_UNRELIABLE
 BUF_VOICE
 -bugbait
 bug_swap
+B-(uH
 "B)Uh
 BuildArea - nullptr node.
 BuildArea: Out of memory.
@@ -8451,12 +8500,12 @@ ButtonBitMask_t
 "B)Ux
 buy_unit
 bValue
-`b@y,^
-`b@yC[
+`b@y[4
 `b@yh
 B@yhB
 B	yi.
 BYield
+b@y*J
 B	yt.
 bytes
 bytes. 
@@ -8466,27 +8515,32 @@ bytes_read
 bytes_written
 b	yu6
 $.c($
-&)c|'
 :C)   
 !	@-C
+!	@)C
 .C))}
 @-'@@-C
 &C)   
 C-  "
 C-@( 
 C-&"@
-C).%@
 C-2-@
 [C)`2G
 C33s?)\
+?c79g
+?c79n
+:c79x
 @-c8 
 @-c8%
+&)c<8
 C-!8"
 C-"8"
 ,c@9-
+C'9`,
 C9)|@
 C@9	2
 C9* (7(#
+!C9h	
 <(C@9H#
 C9,h5
 C@9HC
@@ -8624,9 +8678,11 @@ castPoint
 castRange
 cast_ray
 castshadows
+cast_speed_pct
 cast_spells
 cast_sphere
 casual
+casual_games
     Categories:
 category_desc
 catmullrom
@@ -8878,6 +8934,7 @@ CDAC_Ability_Anessix_PurePain
 CDAC_Ability_Anessix_SummonGolem
 CDAC_Ability_AntiMage_ManaBreak
 CDAC_Ability_Barricade_Aura
+CDAC_Ability_Barricade_Aura_Old
 CDAC_Ability_Batrider_StickyNapalm
 CDAC_Ability_Beastmaster_WildAxes
 CDAC_Ability_BlackDragon_SplashAttack
@@ -8903,6 +8960,7 @@ CDAC_Ability_FacelessVoid_Chronocube
 CDAC_Ability_FacelessVoid_TimeWalk
 CDAC_Ability_Gyrocopter_Call_Down
 CDAC_Ability_HealingWard_HealingAura
+CDAC_Ability_HealingWard_HealingAura_Old
 CDAC_Ability_Hobgen_AirStrike
 CDAC_Ability_Hobgen_Explosivo
 CDAC_Ability_Hobgen_Firebomb
@@ -9029,6 +9087,7 @@ CDAC_Item_CraniumBasher
 CDAC_Item_CraniumBasherOld
 CDAC_Item_Crystalis
 CDAC_Item_Daedalus
+CDAC_Item_Dagon
 CDAC_Item_DagonOLD
 CDAC_Item_Desolator
 CDAC_Item_DiffusalBlade
@@ -9135,6 +9194,7 @@ CDAC_SpeechSystem
 CDAC_Sven_Knight_Bonus
 CDAC_Talent
 CDAC_TargetDummyTaunt
+CDAC_TargetDummyTauntOld
 CDAC_TechiesBomb
 CDAC_Techies_Inventor_Bonus
 CDAC_TemplarAssassin_Refraction
@@ -10110,6 +10170,8 @@ CMsgClientPingData
 .CMsgClientPingData"=
 CMsgClientServerHeader
 CMsgClientSetDebugNetBuffer
+CMsgClientToGCAckSupportCredits
+'CMsgClientToGCAckSupportCreditsResponse
 CMsgClientToGCAssociateDevice
 %CMsgClientToGCAssociateDeviceResponse
 CMsgClientToGCCanPurchaseItem
@@ -10173,6 +10235,8 @@ CMsgClientToGCPartyJoinViaCode
 &CMsgClientToGCPartyJoinViaCodeResponse
 CMsgClientToGCPartyLeave
  CMsgClientToGCPartyLeaveResponse
+"CMsgClientToGCPartySetGameModifier
+*CMsgClientToGCPartySetGameModifierResponse
 CMsgClientToGCPartyStartMatch
 %CMsgClientToGCPartyStartMatchResponse
  CMsgClientToGCPerformAutoActions
@@ -10191,6 +10255,8 @@ CMsgClientToGCRevokeFriendCode
 &CMsgClientToGCSetItemInventoryCategory
 CMsgClientToGCSetItemStyle
 "CMsgClientToGCSetItemStyleResponse
+CMsgClientToGCSetTeamName
+!CMsgClientToGCSetTeamNameResponse
 CMsgClientToGCSpectateUser
 "CMsgClientToGCSpectateUserResponse
 CMsgClientToGCStartMatchmaking
@@ -10251,6 +10317,8 @@ CMsgCombatEvent_StartAttack
 .CMsgCombatEvent_StartAttackH
 CMsgCombatEvent_StartGesture
 .CMsgCombatEvent_StartGestureH
+CMsgCombatEvent_StopGesture
+.CMsgCombatEvent_StopGestureH
 CMsgCombatHighlight
 .CMsgCombatHighlightB
 CMsgCombatMetersSnapshot
@@ -11244,6 +11312,8 @@ Creating navigation areas from sampled data...
 creation_date
 creationsequence
 CRecipientFilter
+credit grant amount
+credit grant reason
 credits
 creditsdone
 credits_to_grant
@@ -11283,7 +11353,6 @@ critical
 critical_damage
 critical_response_talent
 crit_modifier_duration
-@-crO
 CRopeKeyframe
 CRopeKeyframeAlias_move_rope
 CRopeKeyframe::Precache:: path '%s' is a vmt! Fixing for now.
@@ -11382,6 +11451,7 @@ CSODACParty
 .CSODACParty.Invite
 .CSODACParty.LeftMember
 .CSODACParty.Member
+.CSODACParty.TeamInfo
 CSODACServerDynamicLobby
 CSODACServerStaticLobby
 .CSODACServerStaticLobby.Member
@@ -11588,7 +11658,6 @@ Currency %u is missing a name
 current
 Current item schema is up-to-date with version %08X.
 Currently allocated agg data: {
-Currently running tests so rejected match reservation for match %llu
 Current name of the skybox texture
 Current place set to '%s'
 Current sound patches: %d
@@ -11698,6 +11767,7 @@ custom_game_timestamp
 customize_texture_item
 customkill
 custom_kill_effect
+custom_modifier
 custom name attr
 customorigin_follow
 customOutputValue
@@ -11787,6 +11857,7 @@ cycler_flex used on model "%s" specified unknown sequence "%s"
 cycler_flex used on model %s without enough flexes.
 %d | 
  D-	(@
+!	@)D
 ?D]`,
 @-D	@
 	D-	)@
@@ -11801,14 +11872,17 @@ d3_citadel_05
 .D=3w
 *-D),5E)_
 d6@y#
+d6@y#<
 d6@y#!
 d6@y#/
+d6@y#%
 d6@yc/
 d6@yc)
 d6@yC
-d6@yC/
+d6@yC!
+d6@yc2
 d6@yC2
-d6@ycC
+d6@yCD
 D-)9,
 D9   
 D9i2@
@@ -11893,6 +11967,7 @@ dac_gcmessages_client.proto
 dac_gcmessages_common.proto
 dac_gcmessages_server.proto
 DacGestureSlot_t
+dac_ignore_staging_files
 dac_injure_player
 dac_item
 DACItemChoiceReward
@@ -11901,7 +11976,6 @@ DACItemGems
 DACItemSlot
 dac_kill_player
 dac_kill_player_next_combat
-dac_load_staging_files
 DACLobbyID_t
 dac_local_player_bot_driven
 dac_local_server_hnetconnection
@@ -11911,6 +11985,7 @@ dac_minimum_preparing_duration
 #dac_name_global_underlord
 dac_neutral_percentage_bonus_per_standing
 dac_normal_combat_wait_duration_padding_seconds
+dac_normal_combat_wait_duration_padding_seconds_late_game
 dac_normal_constant_experience_purchase_amount
 dac_normal_constant_experience_purchase_gold_cost
 dac_normal_enable_mirror_battles
@@ -11922,8 +11997,8 @@ dac_normal_max_combat_round_duration
 dac_normal_player_initial_health
 dac_normal_playing_preparing_duration
 dac_normal_playing_preparing_duration_initial
+dac_normal_playing_preparing_duration_late_game
 dac_normal_preparing_initial_cutoff_round
-dac_normal_preparing_late_game_cutoff_round
 dac_npc
 dac_npc_arc_warden
 dac_npc_assassin
@@ -11996,6 +12071,7 @@ DAC_UNIT_TARGET_BUILDING
 DAC_UNIT_TARGET_COURIER
 DAC_UNIT_TARGET_CREEP
 DAC_UNIT_TARGET_CUSTOM
+DAC_UNIT_TARGET_FLAG_ALLOW_UNTARGETABLE
 DAC_UNIT_TARGET_FLAG_CHECK_DISABLE_HELP
 DAC_UNIT_TARGET_FLAG_DEAD
 DAC_UNIT_TARGET_FLAG_FOW_VISIBLE
@@ -12203,7 +12279,6 @@ DecalEmitterSystem
 decalfrequency
 decalmaterialindex
 decalname
-Decals
 decal_texture_index
 Decider
 decodable
@@ -12267,6 +12342,7 @@ defensive_heal_each_kill
 defensive_health_bonus
 defensive_health_percentage_trigger
 defensive_health_regen
+defensive_hp
 defensive_hp_per_kill
 defensive_invuln_duration
 defensive_lifesteal
@@ -12414,6 +12490,7 @@ details_sound_event
 details_speech_event
 details_start_attack
 details_start_gesture
+details_stop_gesture
 details_tech_prototype_a
 details_turbo
 +dev_block_gc_hello
@@ -12422,7 +12499,7 @@ developer_mode
 developeronly
 development
 	device_id
-dev_load_staging_files
+dev_ignore_staging_files
 DevMsg
 dev/panorama_world_panel_hint_ui.vmat
 devtest_hierarchy
@@ -12576,7 +12653,6 @@ distancetotarget
 dist_from_issuer
 divine_rapier_new
 ?dj\I<
-@-djO
 DK@-0G@-
 D_LIKE
 <%d:%llu>
@@ -12844,7 +12920,7 @@ dynpitchvol_t
 .dynsym
 D)yV@
 @-dZG
-	-dzO
+@-dzO
 ?e;:	
 @-e	@
 -E)		
@@ -12853,10 +12929,10 @@ e0F$J
 ?=((E+7
 )E@9?
  E@9)A@9Pj1
-E9bbO
 E9bjO
-E9b^O
-E9bZO
+E9bnO
+E9brO
+E9bzO
 \|e9d
 e`@9d0
 E9hb@
@@ -12865,7 +12941,7 @@ E9hNB
 	E@9i
 E9iz@
 !E9#L
-E9unO
+E9u~O
 *EA9J
 EAction
 EActionType
@@ -13227,7 +13303,6 @@ Engine2
 EngineLoopState_t
 EngineServiceMgr001
 english
-!^enO
 enrage_bonus_pct
 ent_absbox
 ent_actornames
@@ -13514,6 +13589,7 @@ env_tonemap_controller
 env_volumetric_fog_controller
 env_volumetric_fog_volume
 env_zoom
+!^e~O
 EOperation
 ep1_citadel_02
 ep1_citadel_02b
@@ -13712,6 +13788,7 @@ ESynergyType_Race
 ESynergyType_%s
 ET:  AccumulateElapsedTime( %s ) at %d
 ET:  AccumulateElapsedTime %u seconds to %u, now at %s
+ETeamFlags
 ET:  elapsed time:  %s (%u seconds)
 ET:  Init from comment string to %u seconds, now at %s
 ET:  Restoring game at %u %s : '%s'
@@ -14015,7 +14092,7 @@ eyebrows_controller
 eyebrows_mover
 eyes_follow
 eZQ9\
-!	@)f
+!	@)f'
 ?-f:*
 @+,]f}/
 .F))}
@@ -14151,7 +14228,6 @@ Failed to load player WinsLosses component's class instance from KV3.
 Failed to load save game file: %s
 Failed to load save game for old version (%u vs required %u)
 Failed to load %s "%s"
-Failed to load %s! "%s"
 Failed to load unit draft pool %u from KV3.
 Failed to load unit "%s" - possibly a duplicate unitID?
 Failed to map from %s to content-path
@@ -14225,6 +14301,7 @@ FATAL
 FATAL ERROR: unable to register all schema data: %s
 fAttackTimeRemaining
 faulty context k:v pair in entity io %s
+!F=	B
 FB9hF
 !	F-C
 FC9hF
@@ -14261,6 +14338,7 @@ FeModel combiner: Too many ropes (%u) or links (%u): cannot fit sum in uint16
 Fetched %d bytes item schema version %08X via HTTP; update is queued.
 fetched: %s : %.3f
 [%f, %f]
+ff&?33
 (%f, %f, %f)
 ff&?ff&?
 ffffff
@@ -14273,9 +14351,9 @@ ffffff
 fflush
 fGain
 F*%h3x%hgx
+F-HqE
 F*&h%x%hsx
 F*%h'x%hsx
-F-HYD
 @-FI@-)	@
 F<I @
 field
@@ -14502,7 +14580,6 @@ Fire a haptic pulse on this hand. [0,2] for strength.
 Fire a haptic pulse on this hand. Specify the duration in micro seconds.
 Fire an entity output
 fire a response concept directly at a given character.
-fire_chance
 Fire Completion
 fire_duration
 Fire Entity's Action Input with passed String - you own the memory
@@ -14525,6 +14602,7 @@ First
 FIRST
 First argument to SwapFields() (of type "
 First argument to Swap() (of type "
+first_played
 first_sale_date
 first_valid_class
 First valid class must be greater than 0.
@@ -14793,7 +14871,6 @@ friendship_age_requirement
 friendship_timestamps
 friends_id
 friends_name
-!^frO
 fRoll
 , from: 
 from_player
@@ -14832,6 +14909,7 @@ FTYPEDESC_SCHEMA_INITIALIZED
 FTYPEDESC_WAS_INPUT
 FTYPEDESC_WAS_OUTPUT
 F%u2-
+)F=#UA
 fulfilled_item_id
 fullbright
 FullObserverMove
@@ -14908,7 +14986,7 @@ f@y?! k
 FZ*o7
 @-g	@
 @g|_\
-!	@)G*
+!	@)G
 .G))}
 )	+G)
 @-G@@-
@@ -15199,8 +15277,7 @@ G-B8%
 G-bB@
 GB@-Q
 G-c*#
-'G)C>
-GC9	a79
+GC9	a799S
 	gc_app_id
 	gc_binary
 GCC: (GNU) 4.9.x 20150123 (prerelease)
@@ -15377,6 +15454,7 @@ GetDamageTaken
 GetDamageType
 GetDebugHistoryWritable not available during restore.
 GetDebugName
+GetDefaultUniformRandomStream
 GetDesignerNameForScriptClass
 GetDouble
 GetEntityHandle
@@ -15720,13 +15798,14 @@ H0@9(0
 H0@yU
 H0@yV
 h1xnj 
-h2@9)aB
-h2@9)aE
+h2@9)]E
+h2@9)EB
 h2@9h
 	*h2A
 )h2A9
 h2N9H
 h2N9i
+h2P9h
 h2u9H
 h2V9u2
 h2Y9h
@@ -15734,7 +15813,6 @@ h2@ytB
 *-H),5I)_
 h6@9h
 )h6A9
-*H6b5
 H6h>@
 H6h6Y9h
 h6hB@
@@ -15746,9 +15824,9 @@ h6jF@
 H6jJ@
 h6N9H
 h6N9i2N9
-h6P9tR]9
 H6u2@
 h6uB@
+h6V9IQ
 h6	yh
 H7H	P7
 H7h	P7H
@@ -15760,13 +15838,12 @@ H7x"@
 h)8Ay)
 H=)@8f
 [h] %8llx (%-30.30s) <%3.3s> [loc] %-33.33s [abs] %-33.33s [ang] %-33.33s [s] %6.3f
-h"?9}
+)h:_9
 h"]9(
+h"@9)
+h"@9),
+h"@9	.
 h&@) 9.
-h"@9	4
-h"@9)7
-h"@9	7
-h"@9)9D
 ;h@)9\A)<
 H @9`b
 h"]9h
@@ -15775,19 +15852,19 @@ h*@9h
 h*@9h/
 h&@9h
 h.@9H
-h*^9	H
 h*@9H
 h&\9H
 (H@9h
 H @9h"
 H%@9H
 h"@9i
-h"@9i^
-h"@9I^
-h"@9I+
-h*^9I3
+h*^9i3
+h"@9I4
+h"@9i7
+h*^9IH
 h"@9IJ
 h&@9k
+h*_9U7
 h%A)`
 )h>A9
 )h.A9
@@ -15804,6 +15881,7 @@ HA@9(A
 h^A9H
 h"A9H
 hA9)hA9
+h"A9)m@
 hack_no_hand_skeleton
 Had %u pending combat item choice rewards during save
 H'A)J
@@ -15868,14 +15946,14 @@ h&B)(
 =hb@9
  @-hb]9	
 hb^9(
+hb?9}
 hb@9`
 hb@9	
 =hB@9
-hB/9 
 hB@9`
 hB@9(
 hB@9)
-hb}9h
+hB@9	[
 hb@9h
 hb^9H
 hb^9H	
@@ -15887,9 +15965,8 @@ hB@9h
 h"B9H
 hB@9H
 H'B9h
-hb@9i^
 h*B9i
-hb\9	L
+hb\9iL
 hB@9t
 hB@9u"@
 h&^)b:A
@@ -15901,17 +15978,18 @@ hBA9
 hbA9h	
 hBA9H
 h&_)bB
+hBB9	
 hbB9h
 hBD9i
 hBF9(#
-hBF99/G
+hBF99
 hBF9h
 hBI9(
 hBI9H
 H-bN@
-hbO9	,
 hBO9h
-hBO9i
+hbO9i
+hbO9i,
 hbO9tB
 HB@T	J
 hbV9i
@@ -15951,6 +16029,7 @@ healing_done
 healing_done_details
 healing_prevented
 healing_reduction_pct
+healing_ward_healing_aura_new
 heal_interval
 heal_pct
 heal_pct_per_second
@@ -16125,7 +16204,6 @@ hex_model
 HEY! Leaving modifier think with a locked modifier manager!
 =hf@9
 ))hf@9
-)hf}9
 *hf@9
 *hf@9(
 hf^9(
@@ -16133,17 +16211,17 @@ hf@9_
 hf@9!
 hf@9(
 h&F9	
+hF@9)=B
 hf@9h
 *hf@9H
 hf@9H
 hF@9h
 hf@9i
-hF@9)UB
 hfA9(
 hFC9	^
 hFC9h
 hFD9u
-hfi9H
+hFi9H
 hFKyH
 hfl9(
 hFQ9h
@@ -16229,6 +16307,7 @@ hint_vr_offset_y
 hint_vr_offset_z
 hint_vr_panel_type
 hitbox
+hitbox_lerp
 hitboxset
 HITGROUP_CHEST
 HITGROUP_GEAR
@@ -16249,13 +16328,13 @@ hi,xk
 h&_)j
 h&@-j
 H%@)J	@
-hj48!F
-hj48w
+hj48Cu
+hj48o
 hj@9yF@
 h&@-j.A-
 *hjF9
-hjg94F
-hjG9)AA
+hjG9)!A
+hjg9tF
 hJN9h
 hJN9t"
 hjN9v
@@ -16296,7 +16375,6 @@ HModelStrong
 h"N9t
 h"N9v
 h*O9H
-h"O9IT
 hobgen_airstrike_dot_talent
 hobgen_airstrike_talent
 hobgen_burning_down_the_house_talent
@@ -16355,7 +16433,7 @@ How far behind the gate to spawn the units
 How hard physics objects are pushed away from the players on the server.
 How hard the player is pushed away from physics objects (falls off with inverse square of distance).
 How long looping soundpatch captions should display for.
-How long to be in the preparing state after dac_normal_playing_preparing_duration_late_game
+How long to be in the preparing state after dac_normal_late_game_cutoff_round
 How long to display screen message text
 How long to wait for players to connect.
 How long we wait while there's a disconnected player before ending the game.
@@ -16386,12 +16464,7 @@ Hp@y(p
 h&Q)j
 "@Hqr
 "	)hR
-hr}9(
 hr@9(
-hR~9	
-hr=92
-hr=9E
-hr=9*G
 hr@9h
 h"r9H
 hr@9H
@@ -16406,7 +16479,6 @@ HRenderTextureStrong
 hResult
 hrH9h
 h&R)j
-hRP9h
 hr@y`
 hrY9h
 hR@yh
@@ -16420,7 +16492,6 @@ HSteamNetConnection CDACNetwork_Server::CreateLocalLoopbackConnection(CSteamID)
 h"t9H
 htarget
 hThinkFunc
-#()HU
 hud_skin
 hudtextparms_t
 hUK:J
@@ -16446,9 +16517,7 @@ HurtThink
 HurtTouch
 h*v9(
 hv@9)
-hv@9)]D
-hv=9G
-h&@)vJ
+hv@9)9D
 hvKyH
 hvN9i
 hV@yh
@@ -16461,7 +16530,6 @@ H-"X(
 h*X9v
 h:@y*
 h*@y_
-h&@y)
 h"Y9h
 h"Y9u
 h"Y9uB
@@ -16469,6 +16537,7 @@ h&	yh
 H'@yh'
 h:@yi
 h&@yi"
+h&@yI.
 hypeBarBaseColor
 hypeBarDarkColor
 hypeBarLightColor
@@ -16480,9 +16549,9 @@ hype_per_hit
 hype_per_kill
 hype_per_unit
 hype_per_unit_burning
+h&@y)q@
 hy)x,
 =h&Yy
-)hZ_9
 ?+hZbe4
 =hzIy	$
 hz	y@
@@ -16534,9 +16603,9 @@ i)8Ki@9
 i+8Ki@9k
 i*8*Y@
 )i@9	
-	!i9	
+i*@9*
 )I@9I
-i"@9J9D
+i"@9J
 I9	S	M)
 IA@9	
 IA@9	A
@@ -16553,11 +16622,13 @@ ib@9(
 ib@9)
 ib@9	!
 ib@9h
+i*B9HY
 ib@9i
 i"B9i
 i#B9i
 ib@9j
 ib@9l
+iBB9HK
 iBB9hn@
 +i-`bG
 i*B)h
@@ -16826,10 +16897,8 @@ iGroup
 	*ih*
 I-!H#
 )ih8?
-(ih8)e
-(ih8ie
-(ih8Ie
-(Ih8ie
+(ih8	f
+(Ih8	f
 )ih8Ii(8
 (ih8*ij8+ik8,il8-im8.in8/io80ip81iq82ir8"ib8#ic8$id8%ie8&if8)i`8
 IHandleEntity
@@ -16876,11 +16945,13 @@ i*J)(
 )I-@)J	@
 I!@)J	@
 *ij8+ik8,il8-im8.in8/io80ip8(ih8
-ij,8kj*8mj(8
-iJ\9(^
-iJc9HE
+ij,8kj*8mj(8H-
+iJ_9(A
 ijj8?
+iJk946
+iJP9(F
 ijw8*
+ijW9HF
 )ijx?
 *ijx_
 )ijx?!3k
@@ -16908,7 +16979,7 @@ ik_enable_only_this_chain: No chain name specified.  #%d Chains available on ent
 ik_enable_only_this_chain: no valid entities found in picker.
 ik_ground_rule_normalspring_strength
 ik_ground_rule_zspring_strength
-Ikh8?
+ikh8?
 Ikh8?5
 ikix?
 Ikix?
@@ -17722,9 +17793,6 @@ i>Pyh
 IQuickTime001
 	)@)ir
 ir8nhr8?
-*ir=9
-ir=9(
-ir=9hb
 IRagdoll
 irC9)
 IRecipientFilter
@@ -18057,9 +18125,9 @@ i)xhVF
 i*xh>@yt:
 i*xh>@yu:
 ixhy*xh
-ixhy*xhbO
 ixhy*xhrO
 *+i,xi
+i)xIK
 *i-xi>@yj:
 *i,xi>@yj:
 *i.xi>@yj:
@@ -18079,67 +18147,67 @@ i"Yy?
 @I@z)
 iZA9	
 <j.?)
+!	@)j&
 	*j{(
 j.@),
-!	@)J'
 @ @-J
 @-J	,
 @-J	@
-$J)!?
 J-` $
 j08r!
 J0@y_
 J0@yI
-J0@yk}F
+J0@ykaF
 j2?)?
-j28RE
 j2@9(
 j2j9i
 j2V-m
 j2@yh
+j38mQ
 j48	C
-j48HY
 j48t^@
 j4xH;@
-j58(@
-j58H@
+j58h,
 j58hf@9(
+j58[S
 J5@y_
-j68(^
+j68Hi
+j68HS
 j68u*@
 j68v&@
-J78R)
-j.8."
-j(8(/
+j,8,#
+j.8.#
 j)8	?
 j)8	"
 j)8	@
 j)8	$
 j)8	*
 j)8		
+j+8+#
+j-8-0
 j)8	2
 j)8	7
-j)8	a
-j(8h/
+j882-
 j(8h&
-j(8h%
 j)8h(
 j(8H!
+j(8H/
 j(8HL
 j(8hM
 j(8Hr
 j(8hr6
-j;8hS
+j)8i-
 j)8i(
-j)8I-
 j)8I!
 j)8ID
+j*8iF
 j)8iL
 j)8`j
 j*8J!
+j+8+J
 j(8jj)8`
+j,8k!
 j-8K,
-j,8K!
 j+8K:
 j+8Kd
 j+8KH
@@ -18147,14 +18215,18 @@ j,8l
 j,8l!
 j,8LH
 j,8Lr
-j-8m!
 j-8m%
 j-8M,
 j+8Mr
+j-8mU
 j-8MV
 j/8n"
+j.8N"
 j)8	o
 j)8)p
+j)8}q
+j)8)U
+j)8Z-
 J!@9_
 J!@9#
 J@9h6
@@ -18210,7 +18282,6 @@ Jih8j
 JIIJJ}
 jiix_
 Jiix)1
-jij8ke
 Jikx_
 Jikx_!!k
 JiMIJ+
@@ -18295,18 +18366,15 @@ jV@y!y|
 jV@y:yt
 jV@y!yt
 j)x		
-j+x+*
 j)x	4
 J!_x_!5k
-j(xH!
+j(xh!
 j)x	H
-j(xhN
 j(xHV
 j)xi(
 j+xk!
-j+xK!
+j+xK*
 j,xl!
-j,xL!
 j-xM 
 j.xN.
 j)x	N
@@ -18321,6 +18389,7 @@ _!(k#
 &@)k	
 	*_!;k
 	*_!(k
+!	@)K
 ('K)_
 K)@)-
 K)@)+)
@@ -18336,16 +18405,22 @@ k2	)j~
 k2Q)m
 *k2@y
 ?k58D
-k68j	
-k78(;
-?k782\
+($@)K5A
+k68(a
+k68.L
+k68{t
+k78A7
 ?k78h
-k78Mm
-*?k78~x
+?k78i#
+k78(i
+*?k78rB
 	K!8"
+_k88&$
+?k88Z[
 k(8vV@
 ?){K9_
 @){K9_
+	!k9i
 k9J{c>
 K9	S)
 K9	S)M+
@@ -18559,10 +18634,12 @@ k_eDuosMessageType_DoYouWant
 #k_eDuosMessageType_FreeYourBenchFor
  k_eDuosMessageType_INoLongerWant
 k_eDuosMessageType_IWant
+"k_eDuosMessageType_LevelUpQuestion
 k_eDuosMessageType_None
 k_eDuosMessageType_NoWant
 k_eDuosMessageType_Sent1Gold
 k_eDuosMessageType_Sent5Gold
+&k_eDuosMessageType_SpendRerollQuestion
 k_eDuosMessageType_Thanks
 k_eDuosMessageType_WantGold
 k_eDuosMessageType_YesWant
@@ -18573,8 +18650,7 @@ keepCombineds
 keeper_of_the_light_illuminate
 Keep this many old copies in history of autosaves and quicksaves.
 k_eEventInactive
-k_eExceedsLimit
-k_eExceedsLimitPending
+k_eExceedsCreditLimit
 k_eExpectedCostMismatch
 k_eFlags_China
 k_eFlags_FinishedTutorial
@@ -18617,9 +18693,9 @@ k_EGCMsgResponseUnknownError
 *k_EGCMsgUseItemResponse_NotHighEnoughLevel
 ,k_EGCMsgUseItemResponse_NotInLowPriorityPool
 #k_EGCMsgUseItemResponse_ServerError
-($@)KeH
 k_eHaveTooManyFriends
 k_eIgnored
+k_eInCooldown
 k_eInGameChatType_Combat
 k_eInGameChatType_Global
 k_eInMatch
@@ -18637,6 +18713,7 @@ k_eInvalidItem
 k_eInvalidItemType
 k_eInvalidKey
 k_eInvalidLoadoutSlot
+k_eInvalidModifier
 k_eInvalidOrderID
 k_eInvalidPartyID
 k_eInvalidPartyMatchMode
@@ -18644,7 +18721,6 @@ k_eInvalidPermissions
 k_eInvalidQuantity
 k_eInvalidReceipt
 k_eInvalidSlot
-k_eInvalidStoreForItem
 k_eInvalidTarget
 k_eInvalidTeam
 k_eInvalidValue
@@ -18687,6 +18763,8 @@ k_EMsgAnyToGCReportAsserts
 k_EMsgClientConnectionComplete
 k_EMsgClientConnectionStarted
 k_EMsgClientSetDebugNetBuffer
+!k_EMsgClientToGCAckSupportCredits
+)k_EMsgClientToGCAckSupportCreditsResponse
 k_EMsgClientToGCAssociateDevice
 'k_EMsgClientToGCAssociateDeviceResponse
 k_EMsgClientToGCCanPurchaseItem
@@ -18748,6 +18826,8 @@ k_EMsgClientToGCPartyJoin
 (k_EMsgClientToGCPartyJoinViaCodeResponse
 k_EMsgClientToGCPartyLeave
 "k_EMsgClientToGCPartyLeaveResponse
+$k_EMsgClientToGCPartySetGameModifier
+,k_EMsgClientToGCPartySetGameModifierResponse
 k_EMsgClientToGCPartyStartMatch
 'k_EMsgClientToGCPartyStartMatchResponse
 "k_EMsgClientToGCPerformAutoActions
@@ -18770,6 +18850,8 @@ k_EMsgClientToGCRerollChallenge
 (k_EMsgClientToGCSetItemInventoryCategory
 k_EMsgClientToGCSetItemStyle
 $k_EMsgClientToGCSetItemStyleResponse
+k_EMsgClientToGCSetTeamName
+#k_EMsgClientToGCSetTeamNameResponse
 k_EMsgClientToGCSpectateUser
 $k_EMsgClientToGCSpectateUserResponse
  k_EMsgClientToGCStartMatchmaking
@@ -19038,6 +19120,7 @@ k_EMsgServerToGCTestConnection
 &k_EMsgServerToGCUpdateLobbyServerState
 k_EMsgSQLAddDropRateBonus
 !k_EMsgSQLGCToGCGrantBackpackSlots
+k_eNameTooLong
 k_eNoRegionPings
 k_eNoRewards
 k_eNotAllPlayersAvailable
@@ -19047,6 +19130,7 @@ k_eNotFound
 k_eNotFriends
 k_eNotInGame
 k_eNotInParty
+k_eNotUnlocked
 k_eOp_GrantChallenge
 k_eOp_GrantCurrency
 k_eOp_GrantOwnership
@@ -19133,6 +19217,8 @@ k_eStartingValueMismatch
 k_eStoreDisabled
 k_eSuccess
 k_eTargetHasTooManyFriends
+k_eTeamFlags_CanRename
+k_eTeamFlags_RenameCooldown
 k_eTooBusy
 k_eTooFewPlayersForMM
 k_eTooFewPlayersForPrivate
@@ -19193,7 +19279,6 @@ Ki)8)
 Ki\9K
 kickid %d CBaseEntity::InputKill()
 ?kIG9
-Kih8Je
 Kih8Ki)8Mi(8
 kijxJ1
 kill_count
@@ -19354,6 +19439,7 @@ L0AyK
 L: %.2f deg
 ?>l3_o
 l4d_airport05_runway
+=l5B)
 l5@yk
 L7D)N+@
 }l7f~
@@ -19453,7 +19539,10 @@ length
 Length; 
 lerpdata_t
 lerp_duration
+lerp_effect
+lerp_restore_movetype
 lerp_target
+lerp_target_attachment
 LerpThink
 LerpVectors
 LessonPanelLayoutFileTypes_t
@@ -19548,8 +19637,7 @@ LightStyles
 lighttype
 LightType_t
 lightworld
-lih8ke
-Liixim@
+LiiximC
 Lik8m
 L@I@L
 L@I@L*
@@ -19642,7 +19730,6 @@ LoadoutSlot
 loadout_sub_slot
 load_save_file
    load [save file name]
-Load staging versions of gameplay configuration files.
 Loads the Navigation Mesh for the current map.
 Load the rays and run the benchmark
 LoadThink
@@ -19668,7 +19755,6 @@ local_mmr_level
 localnamefixup
 localonly
 local.origin
-Local Player
 LocalPlayerExclusive
 local pos : (%f, %f, %f)
 local scale : (%f)
@@ -19701,6 +19787,7 @@ LoggingSystem_AddTagToChannel
 LoggingSystem_GetChannelVerbosity
 LoggingSystem_IsChannelEnabled
 LoggingSystem_Log
+LoggingSystem_LogDirect
 LoggingSystem_RegisterLoggingChannel
 logic_achievement
 logic_active_autosave
@@ -19820,6 +19907,7 @@ lowprecisionuv1
 low_priority
 	low_value
 LOWVIOLENCE
+LP6`Z@
 LP@y?
 ?LrA/<,M?+
 LrwcE
@@ -19833,6 +19921,7 @@ lycan_wolf_spawn_shift
 LYkxk
 ly)x)
 ?lzPP
+(%@)`m
 @=#?m\
 @m"	@
 ))+M)
@@ -19848,7 +19937,6 @@ M9brC
 M9h~C
 M9hzC
 m%@9i)
-M9!IC
 M9l6F
 M9m6F
 M9n6F
@@ -20191,6 +20279,7 @@ Maximum range for precomputed nav mesh visibility (0 = default 1500 units)
 Maximum speed any ballistically moving object is allowed to attain per axis.
 maximum_synergy_units
 Maximum think time in milliseconds, warning is printed if this is exceeded.
+Maximum uptime reached
 maximum_value
 m_axis
 m_axisEnd
@@ -20231,6 +20320,7 @@ Max time to wait after combat has ended and after dac_post_combat_wait to wait f
 maxToTakeToLevel3
 maxUnitTier
 max_update_time_micros
+	Max uptime scheduled Shutdown: %u (%u seconds from now)
 max_val
     max value: %f
 maxVerticesPerHull
@@ -20541,6 +20631,7 @@ m_bLagCompensate
 m_bLagCompensation
 m_bLastTick
 m_bLeaped
+m_bLerpRestoreMoveType
 m_bLethalAttack
 m_bLightOnlyTarget
 m_bLightWorld
@@ -21228,6 +21319,7 @@ m_flFadeDist
 m_flFadeDuration
 m_flFadeEndDist
 m_flFadeInDuration
+m_flFadeInEnd
 m_flFadeInLength
 m_flFadeInStart
 m_flFadeMaxDist
@@ -21869,6 +21961,7 @@ m_hLastWeapon
 m_hLayerSequence
 m_hLayerSpawnGroup
 m_hLerpTarget
+m_hLerpTargetAttachment
 m_hLight
 m_hLightProbeDirectLightIndicesTexture
 m_hLightProbeDirectLightScalarsTexture
@@ -22310,7 +22403,9 @@ m_iszInitialAnim
 m_iszInteractsAs
 m_iszInteractsWith
 m_iszLandmarkName
+m_iszLerpEffect
 m_iszLerpTarget
+m_iszLerpTargetAttachment
 m_iszLightClassFilter
 m_iszLightNameFilter
 m_iszListenFilter
@@ -23181,7 +23276,9 @@ modifier_away_team
 modifier_axe_berserkers_call
 modifier_axe_berserkers_call_armor
 modifier_barricade_aura
+modifier_barricade_aura_old
 modifier_barricade_buff
+modifier_barricade_buff_old
 modifier_basher_weaken
 modifier_batrider_sticky_napalm
 modifier_battle_fury
@@ -23376,19 +23473,25 @@ modifier_gyrocopter_call_down_slow
 modifier_gyrocopter_deadeye_bonus
 modifier_hand_of_midas
 modifier_healer
+modifier_healing_aura_buff
 modifier_healing_ward_healing_aura
+modifier_healing_ward_healing_aura_old
 modifier_healing_ward_healing_aura_particles
+modifier_healing_ward_healing_aura_particles_old
 modifier_heart_of_tarrasque
 modifier_heart_of_tarrasque_old
 modifier_hobgen_afterburn
 modifier_hobgen_airstrike
 modifier_hobgen_airstrike_dot
 modifier_hobgen_burning_down_the_house
+modifier_hobgen_feedbackloop
 modifier_hobgen_firebomb
+modifier_hobgen_fire_suppression
 modifier_hobgen_frustrated_cast
 modifier_hobgen_hotrod
 modifier_hobgen_keep_it_secret
 modifier_hobgen_letsgocrazy
+modifier_hobgen_letsgocrazy_cast
 modifier_hobgen_melting_point
 modifier_hobgen_molten_armor
 modifier_hobgen_passive
@@ -23558,6 +23661,7 @@ MODIFIER_PROPERTY_BONUS_NIGHT_VISION_UNIQUE
 MODIFIER_PROPERTY_BONUS_VISION_PERCENTAGE
 MODIFIER_PROPERTY_BOUNTY_CREEP_MULTIPLIER
 MODIFIER_PROPERTY_BOUNTY_OTHER_MULTIPLIER
+MODIFIER_PROPERTY_BYPASSES_HEALING_RESTRICTIONS
 MODIFIER_PROPERTY_CAN_ATTACK_TREES
 MODIFIER_PROPERTY_CAST_RANGE_BONUS
 MODIFIER_PROPERTY_CAST_RANGE_BONUS_STACKING
@@ -23848,7 +23952,9 @@ modifier_synergy_shaman_voodoo
 modifier_talisman_of_evasion
 modifier_talisman_of_evasion_attackspeed
 modifier_target_dummy_disablehealing
+modifier_target_dummy_disablehealing_old
 modifier_target_dummy_taunt
+modifier_target_dummy_taunt_old
 modifier_teamheals_from_enemyburn
 modifier_techies_bomb
 modifier_techies_inventor_bonus
@@ -24689,7 +24795,6 @@ Multiple elevators overlap navigation area #%d
 Multiple entity classes have the same designer name "%s" ( alias class %s and class %s )
 Multiple entity classes have the same designer name "%s" ( class %s and class %s )
 Multiple event definitions for event '%s'.
-Multiple events active: '%d' and %d
 Multiple extension registrations for type "
 MultipleGameInstances
 multiple_instances
@@ -25001,7 +25106,9 @@ m_ymin
 m_zfriction
 m_zmax
 m_zmin
+!	@)n'
 @-n	@
+!	@)N.
 ?[]N	
 'N(  
 "N(  
@@ -25121,9 +25228,9 @@ N7CNavGen24INavConnectionBlockerMgrE
 N)!9,
 N9@)+
 &N97|@
-"N9B4
-*N9B4
-&N9B4
+"N9b4
+*N9b4
+&N9b4
 N@9h:
 N@9hN
 N9	S.M.
@@ -25919,7 +26026,6 @@ No valid format conversion from '%s' to '%s'
 No valid positions in history for BacktrackPlayer client ( %d )
 No valid walkable seed positions.  Cannot generate Navigation Mesh.
 ( nOwner & 7 ) == 0 && ( nOwner & 0x8000000000000000ull ) != 0x8000000000000000ull
-(NP6`Z@
 npc_*
 npc_bullseye
 npc_dota_hero_faceless_void
@@ -26127,6 +26233,7 @@ NUM_DIRECTIONS
 num_elements
 num_entries
 numeric
+num_first_place
 NUM_HAND_INTERACTIONS
 NUM_HULLS
 num_insects
@@ -26138,6 +26245,7 @@ numsegments
 num_server_players
 num_spectators
 num_spiderlings
+num_top_three
 num_tv_relays
 num_updates
 num_wards
@@ -26152,7 +26260,7 @@ Nx	V @M
 n@y?	
 nZ:0J
 ?'[nza
-!	@)O*
+!	@)O
 *#O)<
 O?0 ,	f
   o [%5d] '%s' (%s) [group entity]
@@ -26210,10 +26318,8 @@ O6v2@
 o6vB@
 o-!8#
 O9`*B
-"O9I4
 o9@)u	@
 ? !o^A?
-O	A=9
 o/A-m'B-n+@-`C
 objc_class_prefix
 object_data
@@ -26233,6 +26339,7 @@ _octree.dat
 offensive_aoe_damage
 offensive_aoe_radius
 offensive_aspd
+offensive_aspd_multiplier
 offensive_aspd_per_missing_health
 offensive_attack_damage
 offensive_attack_speed
@@ -26244,7 +26351,6 @@ offensive_bonus_burn
 offensive_bonus_damage
 offensive_bonus_damage_divisor
 offensive_bonus_damage_full_mana
-offensive_bonus_damage_multiplier
 offensive_bonus_spell_damage
 offensive_chance_to_counter
 offensive_cooldown_reduction_on_attack
@@ -26257,12 +26363,14 @@ offensive_damage_taken_reflect_percentage
 offensive_dmg_each_kill
 offensive_dps
 offensive_duration
+offensive_explosion
 offensive_explosion_aoe
 offensivegems
 offensive_gems
 offensive_magicres_debuff
 offensive_next_spell_amp
 offensive_percent_crit
+offensive_return
 offensive_revenge_damage_percent
 offensive_spell_amp
 offensive_target_armor
@@ -26443,8 +26551,8 @@ os_type
 OSType
 ?o=Td
 other
+other_account_id
 otherentity
-Other Players
 other_steamids
 OutColor
  Outdent() without matching Indent().
@@ -26523,6 +26631,7 @@ P7x"@
 P7xR@
 	P99H
 (p@9h
+P9t2]9
 "pA3QuW
 P-A8!
 package
@@ -27214,6 +27323,7 @@ pItemDef
 pItemDef->m_nUnitID <= 0
 pItemDef->m_pKVData
 pItemDefSource && pItemDefTarget
+pItem != nullptr
 pivot_max
 pivot_min
 pivot_origin_left
@@ -27889,16 +27999,14 @@ py_generic_services
 q-@	*
 -	-	Q
 @-'@@-Q
+	Q39_a39
 q;4,F
-	Q89_a89
+q@)(5A
 Q8q(2
-	q/9_
 )Q@9?
 Q"@9?
-	Q=9_a=9
-	Q#9_a#9
+_Q*9j
 	qA9?
-q	A"9
 qangle
 QAngle-world
 _#@qb
@@ -27908,7 +28016,6 @@ QD-{(#
 q	DC9
 qD	@za
 ?qe?A
-q@)(eH
 QH@-$
 q?h(8
 ?"QhY
@@ -27968,12 +28075,11 @@ QuitServer() called while already terminating
 QuitServer() executing "disconnect"
 QuitServer() executing "quit"
 %qVDM
-)qW9)
 ?q?}WF
 q$;@z
+!	@)r&
 "@:R".
 R-   
-R09hO
 r0@GP!
 >r3\9
 ?r4GV~	
@@ -27983,6 +28089,7 @@ r)5IJZ}
 @-R8'
 ?R8q(2)
 *R)8yv
+r>92B
 R@9h>
 r@9hr
 r@9ir
@@ -28050,6 +28157,7 @@ rangefinder
 Rangefinder didn't hit anything
 range_in_cells
 range_scepter
+ranked_games
 Ranked match, sending rank update
 rank_name
 	rank_tier
@@ -28073,6 +28181,7 @@ razor
 RB9hR
 R~~C@
 r_cacheSequenceData
+`RCy@
 Reached an unintended state: CPPTYPE_MESSAGE
 Reached impossible case in HasBit().
 reading weapons from %s
@@ -28552,7 +28661,7 @@ r_JeepViewZHeight
 rJ@LB
 rJMJJ
 rk5KJk}
-R?k78
+R?k783R
 R(k)8
 R)k(84
 R(kh8h
@@ -28620,6 +28729,7 @@ round_state
 round_type
 routing
 routing_app_id
+routing_id
 RoutingMethod
 .rOWw
 RP_PAUSE
@@ -28672,13 +28782,13 @@ RunTimeOfDayCommand
 	R)v4N
 r_VehicleViewDampen
 r@y`&@
-`R@y3
+R@y6X
+`R@yc
 `R@yh
 R@yHq
 r@yhr
 R	yi2
 ryjj8
-R@ynq
 R	yu2
 --- %s: 
 "%s" 
@@ -28694,6 +28804,7 @@ R	yu2
 %s+--
 +++ %s: 
 s)~+@
+!	@)S
 ?;? +S'
 S_@)\
 )`>s0
@@ -28701,6 +28812,7 @@ S_@)\
 %s %.0f%%
 %s0x%08X %s = "%s"
 %s0x%08X:%s = "%s"
+!	@)S1
 %s%12.12s:  cycle %6.4f (prev %6.4f) weight %5.3f rate %6.3f: % 4d=[%s]
 s1_mapname
 %s:  %20.20s ent %4.4d seq %4.4d %16.16s curtime %8.3f cycle %5.3f weight %5.3f
@@ -29215,8 +29327,10 @@ ScriptSetSpawnCallback
 ScriptSetVolumetrics
 scripts/events.json
 Script_ShowWorldLayer
+scripts/items_2.json
 scripts/items/items_game.txt
 scripts/items.json
+scripts/items_staging.json
 scripts/items/unencrypted/items_master.txt
 scripts/modifiers.json
 scripts/modifiers_staging.json
@@ -29248,7 +29362,6 @@ ScriptStopSound
 Script_StopSoundEventReliable
 Script_StopSoundEventUnreliable
 Script_StopSoundOn
-scripts/underlords_bc.json
 scripts/units.json
 scripts/units_staging.json
 scripts/voicecommands.txt
@@ -29708,6 +29821,7 @@ Set to 1 in local duos bot game to send messages back to player
 Set to 1 in to test if mass is correctly conserved.
 Set to 1 to autosave game on level transition. Does not affect autosave triggers.
 Set to 1 to end the WaitingForPlayers period.
+Set to 1 to NOT load the *_staging files
 Set to 1 to start or restart the WaitingForPlayers period.
 Set to change selection trace to be an arc instead of a line.  Value 1 should give a reasonable arc.
 Set to one to interactively edit the Navigation Mesh. Set to zero to leave edit mode.
@@ -29824,7 +29938,6 @@ Shifts the selected areas by the specified amount
 shithead
 shivas_guard_new
 S?!Hj
-;	ShO(
 shockwave_talent
 Shoots a phys object.
 shop_cost_modifier
@@ -29868,7 +29981,8 @@ shrapnel
 Shrapnel.Explode
 .shstrtab
 Shut down wrote to '%s'
-Shutting down server while in state %u
+Shutting down server while in state %u for maximum uptime
+Shutting down server while in state %u for reason %s
 - "%s" = "%i"
 	"%s" "%i"
 %s ID:%d (%d objects):
@@ -30341,7 +30455,6 @@ SpawnGroupManagerGameSystem
 spawngroupmanifest
 spawngroupownerhandle
 spawngroupparenthandle
-Spawn Groups
 Spawn group %s doesn't have the same tile VR parameters as other spawn groups in the same world!
 SPAWN_GROUP_SYNCHRONOUS_SPAWN
 spawnGroupType
@@ -30600,7 +30713,6 @@ stack_count
 Stack depth limit hit (%d)
 stack_hash
 stackname
-staging_active
 Standard nav area minimum size
    %s <target> [action] [value] [delay]
 start
@@ -30899,7 +31011,6 @@ StrikeThink
 StrikeTime
 string
 STRING
-String Command
 string_data
 Stringe Type:
 ( string EventName, func CallbackFunction ) - Register a callback to be called when a particular custom event arrives. Returns a listener ID that can be used to unregister later.
@@ -30911,7 +31022,6 @@ STRING_PIECE
 strings::Substitute format string invalid: asked for "$
 string_t
 string_table
-String Table
 string_t_table
 string_value
 Strip
@@ -30928,6 +31038,7 @@ strtoll
 strtoul
 strtoull
 struct
+stun_chance
 stun_max
 stun_min
 ST@-V
@@ -31037,6 +31148,7 @@ support_missing_mana_percent_multiplier
 support_multiplier
 support_offensive_armor_per_hit
 support_percentage_reflected_aoe
+support_radius
 support_replenish_amount
 supports_coop_teleport
 Supports Coop Teleport
@@ -31045,6 +31157,7 @@ support_spell_lifesteal_percentage
 support_stun
 support_summon_percent_gold
 support_targets
+supportUnitCount
 support_untargetability_duration
 suppress
 surfaceprop
@@ -31281,7 +31394,8 @@ Switches to navmesh for the specified spawngroup
 Switching local lobby state to %s from %s
 Switching to server state %s from %s based upon the lobby being updated to this state
 %s (%x) spoke %s (%f)
-S@ycZ
+s@yAA
+S@yAA
 Symbol name "
 symbols
 Synchronously spawn an entity group from a list of spawn tables.
@@ -31310,6 +31424,7 @@ T0:	S0M0
 T0:	SpM0
 T1I@-f@!
 T28	S
+t2]9`
 T+5@y
 t6O95
 t6O9U
@@ -31319,16 +31434,14 @@ T@8	S
 	!t9	
 T(@@9
 T)	@9
+t@9)9D
 ?t`9B
-t}9	B
-t@9)]D
 T(9	S
 T*9	S
 T	9	S
 T(9	ShN(
 T(9	ShO(
 T(9	SHO(
-T	9	SiO)
 T	9	SIO)
 T*9	SJO*
 T(9	S(O(
@@ -31373,6 +31486,7 @@ target_changegravity
 targetclassname
 target_crit_multiplier
 target_demon_distance
+target_dummy_taunt_new
 target_duration
 target_entindex
 target_entity
@@ -31420,16 +31534,19 @@ team_
 team_behavior
 team_id
 team_image
+TeamInfo
 team_invisible
 team_manager
 teammate_damage_result
 teammate_opponent_slot
 teammate_slot
+	team_name
 team_name
 teamnumber
 team_number
 teamplay_round_start
 teamplay_round_win
+teams
 teamToBlock
 TEArmorRicochet_GameEvent_t
 TE_ArmorRicochetId
@@ -31550,10 +31667,13 @@ tf_escort_score_rate
 ?TFm,r
 #TF_UnknownStyle
 TH'@)
+Th2]9
+Th2]9h
 Th2@9H
 Th6N9
 Th6N9(
 Th*@)7
+Th"~9
 Th"@9
 Th&@9h
 T)H@9I
@@ -31565,7 +31685,6 @@ TH'A)
 THa@9(
 Th&A-j
 Thb^9
-Thb~9
 Th"B9
 ThB@9
 ThB@9(
@@ -31576,7 +31695,6 @@ ThbA9
 ThBA9(
 ThBC9
 ThBM9
-ThBQ9(
 Thb@y
 ThB@y
 ThC@9
@@ -31621,14 +31739,13 @@ Th~Ey
 they_hear_you
 Thf@9
 Thf@9(
-Th"F9{d
+Th"F9
+Th"F9[d
 ThF@9h
-Th"F9H
 ThFC9
-Thfl9)!
-ThFQ9
+Thfl9I!
 Thf@y
-Th:Hy)
+Th*Hy)
 thick
 TH_IGNORE_MAX_HITPOINTS
 THik8Hi)8
@@ -31661,10 +31778,8 @@ Thj@y
 ThJ@y
 Thn@y
 Th*O9v
-ThR~9
-ThR]9
-Thr}9h
-ThR]9h
+Th"Q9(
+Th&Q9
 ThreadGetCurrentId
 ThreadGetCurrentProcessId
 ThreadingMain
@@ -31682,12 +31797,13 @@ THROW HULL BLOCKED
 THROW POST BLOCKED
 THROW PRE BLOCKED
 ThR@y
+ThR@yYO
 THS@9I
 Th;	SHO(
 TH;	S(O(
 Th"t9
 Th"t9h
-Th*U9
+Th*U94M
 ThV@yh
 Th*W9v
 Th~@y
@@ -31738,6 +31854,7 @@ TILT_TWIST
 timbersaw_whirling_death
 Time:   %3.2f
 time_acquired
+Time added to the end of combat during late game rounds
 Time added to the longest combat (used for determining combat wait time). This allows the slowest combat player(s) to still have a few seconds of board manipulation.
 time_all_trusted
 time_created
@@ -32047,7 +32164,6 @@ T? @q
 T? @qj
 TQ:	S
 `TR' 
-tR]9`
 TraceRayServerToolEvent
 tracer_particle
 Trace using: %s
@@ -32246,6 +32362,7 @@ U8mAU
 u9% &
 U9i2V9
 ]u9n5;> )"
+U@9@s@
 	uA9?
 %u[%d]
 uD-@	D-
@@ -32284,6 +32401,7 @@ UF_FAIL_OUT_OF_WORLD
 UF_FAIL_RANGED
 UF_FAIL_SUMMONED
 UF_FAIL_UNDERLORD
+UF_FAIL_UNTARGETABLE
 UF_SUCCESS
 UG"@]
 ui)8	i@9
@@ -32639,6 +32757,7 @@ Use block solving for constraint entities
 useClientSideAnimation
 USE_COLLISION_BOUNDS_NEVER_VPHYSICS
 useConstantAnimationLayer
+use_custom_modifier
 used_by_heroes
   used during construction differ from defaults. Please re-export the map.
 Used to control if replay is recorded or not
@@ -32726,9 +32845,11 @@ UX@)W
 ?uYLl>
 uYLl>
 uz9GxV
+!	@)V.
 !V @;
+&@)V?
 	!@)V
-v2N9!5
+v2N9A5
 v8array
 v8callback
 v8object
@@ -32942,7 +33063,7 @@ _V_FileBase
 VFileSystem017
 V_FixSlashes
 _V_FixupPathName
-vfl9~k
+vfl9r]
 V_fmodf
 V_fpclassify
 V_frexpf
@@ -33058,7 +33179,6 @@ VModEnable
 VNewAsyncFileSystem001
 vNewLoc
 vn %g %g %g
-Voice
 VoiceCommands
 Voicecommand script attempting to use unknown concept. Need to define new concepts in code. ( %s )
 voice_data
@@ -33078,7 +33198,7 @@ void CCoJobMgr::CheckThreadID()
 void CConcreteEntityList::AllocEntityChunk(bool)
 void CConcreteEntityList::PreservePlayerNetworkables(int)
 void CDAC_AttackRecordManager::RemoveRecord(CDAC_AttackRecord *)
-void CDACEventSchema::Initialize(bool, bool)
+void CDACEventSchema::Initialize(bool)
 void CDACGameRules::ApplyCombatPlayerDamage(CDACPlayerState *, CDACPlayerState *, int, const CompletedCombatResult_t &)
 void CDACGameRules::CalculateNextCombatAssignments()
 void CDACGameRules::CheckQueueDropItemsFromRoundLoss(const CDACPlayerState *, const CDACPlayerState *)
@@ -33104,6 +33224,7 @@ void CDACGameRules::SignoutPlayer(CDACPlayerState *)
 void CDACGameRules::StartNewGameForListenServer()
 void CDACGameRules::StartNewGameFromLobby(const CDACLobby *, const CDACServerStaticLobby *)
 void CDACNetwork_Server::StartReplayRecording(const char *)
+void CDAC_NPC::EquipItem(CDAC_Item *)
 void CDACPlayerItemSlots::ApplyPostCombatTransfers(PlayerSlot_t)
 void CDACPlayerItemSlots::ClearAssignmentsForUnit(int)
 void CDACPlayerItemSlots::QueuePostCombatTransfer(int, PlayerSlot_t, PlayerSlot_t)
@@ -33439,6 +33560,7 @@ V@yh$
 V@y_! k
 V@y!yv
 v>zlK9T
+!	@)W
 @W?,}
 W-!("
 W)` !
@@ -33482,6 +33604,7 @@ W6v6@
 w6vF@
 @@w8p
 W8@yYx@9X|@9
+	!w9	
 W)A9!
   wait forces async .sav to finish before returning
 waiting for lock
@@ -33543,7 +33666,6 @@ water_material_override
 water_wake
 waterz
 W)B8 
-wb>9c
 wbG)yB@
 W?,|C
 W)c8%
@@ -33631,8 +33753,8 @@ Whether to spawn the player or the anchor at the info_player_start. (0 = Honor t
 )", which is not defined. The innermost scope is searched first in name resolution. Consider using a leading '.'(i.e., "(.
 ", which is not imported by "
 Which match clock to use for private matches (casual, competitive, or none)
-Which round to switch preparing over to the 'late game' duration
 Which round to switch preparing over to the normal duration
+Which round to switch timers over to the 'late game' duration
 WIDE_HUMAN_HULL
 width
 wild_rumpus
@@ -33734,6 +33856,7 @@ wrong submessage type
 W`@-Y
 WY@)U	@
 ?Wzm6V"
+)x^	)
 @%@x	
 x]/(@
 \x%02x
@@ -33779,16 +33902,18 @@ x_pos
 xT)~)>
 X-V:;
 X\V@%
-)x^	)vJ
 x*;XZ
 [xYq|m
 <) @y
+'@y"-
 (	@y)
 )%@y?
 )	@y?
 @y`&@
 @y;]@
 *%@y(
+#@y"-
++@y"-
 		@y_
 		@y?
 &@y?1
@@ -33813,7 +33938,7 @@ y+a_x
 YAxis
 YcuP.
 @y+}E
-Y)E);
+Y)E);	D
 YellowBlood
 yes - via input
 @yh=@
@@ -33843,7 +33968,6 @@ yh*h9
 @yhJ@
 yhj`9
 yhj[9
-yhj]9
 yhJ]9
 yhja9
 yhJa9
@@ -33892,6 +34016,7 @@ yhZ@y)
 )%@yi
 )%@yi*
 yiB@y?
+@y)iD
 yield
 yielding
 yielding_jobs
@@ -33911,7 +34036,7 @@ yi^@yj
 *	@yJ
 *!@yJ9
 yJ-A-
-@yJ%G
+@yJ	G
 )YJJ)}
 @yjV@
 @yjV@y
@@ -33927,7 +34052,6 @@ yj&@x
 yk^@yj
 ykZ@yI
 @yL	@yJ
-@y M@
 Ym@)\	@
 %Y-%m-%dT%H:%M:%SZ
 *	@ym	@y
@@ -33936,6 +34060,7 @@ y*M@yJ
 Yni5$.
 @yO	@
 yo_count
+"	yOt
 You are #%d in line of %d waiting players.
 You have been waiting for approximately %02d:%02d.
 you_hear_them
@@ -33946,23 +34071,20 @@ You must now restart to use Grunt-o-matic.
 your_pain_is_my_gain_talent
 @y(Q*
 y)Q@9
-@y)qGy
+@y)qTy
 ys@){
 @y)SA9
 ?yt#,*
 "	yu&
 @y)U@
 yuB@y
-@y)uD
 @yUii
 	(y=up=green, z=forward=blue, x=left=red). 
 (Yuxt
 ?#YvwS
 YWA)H/@
-"	ywp
 @y)/@x
 Y`x($
-	y;xc
 y|x(E@
 *y(xj
 +y(xk
@@ -33972,7 +34094,6 @@ y+-@yk
 Yy?!!k
 YYYY-MM-DD
 YYYY-MM-DD hh:mm:ss
-!	@)Z 
 Z0000
 z	?0e`9
 *z0x1

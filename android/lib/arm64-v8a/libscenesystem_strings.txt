@@ -263,16 +263,17 @@ $0 to $1,
 2ij(8
 2ij(8F
 2j"@9)p
-2?k78I
-2_k88?
-2?k88H~
+2?k78
+2_k88
+2?k88
 2njj8l
 2Way_0( %s )
 2Way_1( %s )
+2x"@9
 2	y3x
 2	y4xaFAy
 2*y4xaJAy
-2:yWv
+2:y*q
 2*y(x	
 2*Y(x
 -3@)+
@@ -334,6 +335,7 @@ $0 to $1,
 4n&	&
 4q:Aip
 5?33s?r_pixelvisibility_partial
+5(3@9
 5hf@9
 5Hku8|
 5hr@9H
@@ -408,6 +410,7 @@ _6inA9
 ?6v*@
 /6v"@
 '6vj@
+6x"@9
  74	(74
  75	(7
 75	 7
@@ -472,19 +475,18 @@ _8o%@8
 9	)@)
 (@@9	0
 (@@9	1
+9.1.15
 (@@9	2
 @92yr
 @9(! 7
 @9() 7
 @9%	@9&
- @9	$@9JEG
- @9	$@9JIF
+ @9	$@9JIG
+ @9	$@9JMF
 @9?aEkA
 	9	!B9
 @9)+C
 9CFunctor3IPFvP10CSceneViewP11CSceneLayerbES1_S3_b12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEEE
-@9)EF
- @9)EG
 (@@9h
 @9h*@
 (@@9H
@@ -504,11 +506,13 @@ _8o%@8
 @9i&@
 @9I	@
 "@9i"@9
+@9)IF
+ @9)IG
 9	ii8(
 9ISequence
 9j*@9(
 @9J9	
-@9JEG
+@9JIG
 @9jjh8*
 9jqA9
 @9JU	
@@ -527,6 +531,7 @@ _8o%@8
 @9T|@
 (@@9tb
 (@@9tB
+(@@9u
 @9U|@
 (@@9	x
 @9 	@z
@@ -548,6 +553,8 @@ A-!(!
 	A@9)	
 	A@9	
 a@9+a
+"A9)!F
+A9)!F
 		A9h
 	A9h&A
 ^A9i^
@@ -556,8 +563,8 @@ a@9+a
 A9i>@
 	A@9I
 A9	ii
-	 A9J
 	A9j"A
+	 A9J!F
 .!A9k
 ,	A9K
 +	A9K
@@ -718,6 +725,7 @@ AnimVRHand_t
 annotation
 Annotation
 ", another member of oneof "
+aP9{WF
 ApplyNewState %d at %f
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
  a protocol 
@@ -781,9 +789,10 @@ B@9
 (<B9h
 ) B9(H@
 	!b9I
-b@9J%F
+b@9J)F
 bA9hb
 BA9iB
+bA9J!F
 BackUp() can only be called after a successful Next().
  BackUp() can only be called after Next().
 Bad expression operator: '%c%c', expected C style boolean expression operator.
@@ -821,11 +830,12 @@ Batch: %d
 bB9hb
 BB9hB
 BB9hj:8
-BB9)u
+BB9"y
 B-c("
 !	B-C
 BC6h compression not supported on this target (windows only).
 BC7 compression not supported on this target (windows only).
+B channel not found
 B channel not found!
 because aux mask=
 " because it is missing required fields: 
@@ -886,6 +896,7 @@ borrow
 bouncecolor
 _BoundTexture%d
 _BoundTextureSrgb%d
+box2i
 B-pFC-rND-
 BR-E($
 breakable_count
@@ -901,6 +912,7 @@ break_uniform_burst
 __bss_end__
 __bss_start
 __bss_start__
+buf error
 buffer. Use the 'bytes' type if you intend to send raw 
 bUpdate
 burst_randomize
@@ -947,10 +959,14 @@ Cannot deduce for class
 Cannot destruct abstract class
 (cannot determine missing fields for lite message)
 Cannot get here
+Cannot read a file 
+Cannot read file 
+Cannot reconstruct lineOffset table in DecodeEXRImage.
 Cannot register same format from/to a KV3 conversion (from '%s' to '%s')
 Cannot resolve to the same render targets as in the previous layer!
 Cannot save as KV3_FORMAT_LOAD_WITH_NO_UPCONVERSION.
 Cannot save KV3 text to a non-text buffer!
+Cannot write a file
 Can't 
  Can't back up over more bytes than were returned by the last call to Next().
 Can't bake cube maps unless you use -tools or -dev
@@ -1002,6 +1018,9 @@ C-G5@
 C-G9@
 ChangeCallbackOnChange
 ChangeCallbackOnChangeOrCreate
+channels
+, channels = 
+"channels" attribute not found in the header.
 CharacterDecalSystem
 CharacterDecalSystemManifest
 cheat
@@ -1082,6 +1101,9 @@ children
 CHitBox
 CHitBoxSet
 CHitBoxSetList
+chlist
+chunkCount
+`chunkCount' attribute is not found in the header.
 C_INIT_AddVectorToVector
 C_INIT_AgeNoise
 C_INIT_CreateFromCPs
@@ -1216,6 +1238,8 @@ CommandProcedure
 CommandProcedureList
 .comment
   Comment started here.
+compression
+"compression" attribute not found in the header.
 Conditional Error: %s
 ConfigAttachedModel
 config_state
@@ -1441,7 +1465,16 @@ D24X8_SHADOW
 *-D),5E)_
 D9 \@
 .data
+data error
+data_height = 
+data height too large.
 .data.rel.ro
+Data size too short
+data width or data height is negative.
+data width too large.
+dataWindow
+"dataWindow" attribute not found in the header or invalid.
+data_with or data_height too large. data_width: 
 !	D-C
 %DC-&HE-
 %d %d
@@ -1489,6 +1522,8 @@ dimension1
 dir=%d %d %d, err=%f
 DirectionalLight
 Directional lights are not supported by the LightBinner
+displayWindow
+"displayWindow" attribute not found in the header.
 Dist Cull
 %d kb
 %d material binds for particles
@@ -1667,6 +1702,7 @@ explosive_damage
 explosive_radius
 Exponent %.2f
 EXPORTSYSTEM_INTERFACE_VERSION_001
+EXRHeader variable is not initialized.
 extend .$0 {
 extendee
 	extension
@@ -1702,10 +1738,16 @@ Failed to allocate an instance of a class
 Failed to allocate an instance of class '%s'
 Failed to allocate space for morph!
 Failed to assign bool literal value
+Failed to compute channel layout.
 Failed to convert introspected block: %s
 Failed to convert KV3 to string; error: %s
 Failed to determine polymorphic class name
+Failed to parse attribute
+Failed to parse channel info
+Failed to parse channel info.
 : failed to parse contents
+Failed to parse EXR version
+Failed to read attribute.
 Failed to save unsupported class
 fakeplayer
 falloff
@@ -1726,7 +1768,6 @@ FeetSettings
 FeModel combiner: Too many ropes (%u) or links (%u): cannot fit sum in uint16
 %f %f %f %f
 fflush
-F-HUE
 field
   Field       : 
 Field "
@@ -1759,9 +1800,12 @@ File already exists in database:
 File appears to be in generated pool but wasn't registered: 
 FileDescriptorProto
 FileDescriptorSet
+file error
 File is already registered: 
 FileOptions
 File recursively imports itself: 
+File size is zero : 
+File size too short 
 Files that do not use optimize_for = LITE_RUNTIME cannot import files which do use this option.  This file is not lite, but it imports "
 Files with optimize_for = LITE_RUNTIME cannot define services unless you set both options cc_generic_services and java_generic_sevices to false.
 FillAttr
@@ -1787,14 +1831,14 @@ FlattenedSerializersVersion001
 Flexible; 
 float
 floatbitmap.cpp
-floatbitmap.cpp(140): Unknown gamma type "%s"!
-floatbitmap.cpp(2463): Error calling TGALoader::GetInfo( %s )
-floatbitmap.cpp(2474): Error loading %s
-floatbitmap.cpp(2497): Error! Unknown file type for %s
-floatbitmap.cpp(2516): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s
-floatbitmap.cpp(324): Conversion not supported yet!
-floatbitmap.cpp(424): Conversion not supported yet!
-floatbitmap.cpp(887): Unsupported color format "%s", skipping!
+floatbitmap.cpp(141): Unknown gamma type "%s"!
+floatbitmap.cpp(2473): Error calling TGALoader::GetInfo( %s )
+floatbitmap.cpp(2484): Error loading %s
+floatbitmap.cpp(2507): Error! Unknown file type for %s
+floatbitmap.cpp(2526): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s
+floatbitmap.cpp(325): Conversion not supported yet!
+floatbitmap.cpp(425): Conversion not supported yet!
+floatbitmap.cpp(888): Unsupported color format "%s", skipping!
 FloatBitMap::DownsampleNiceFiltered
 FloatBitMap::QuarterSize
 FloatBitMap::QuarterSizeBlocky
@@ -1820,7 +1864,6 @@ FontManager_001
 .foo = value".
 force
 " for field "
-format
 formats.cpp
 " for option "
 ", found "
@@ -1828,6 +1871,8 @@ Found invalid proto option data for:
 Found max edge length %g. Skipping SplitLongEdges, as that'll take too long to split.
 fprintf
 fputs
+`fread' error. file may be corrupted.
+fread() error on 
 friction
 , from: 
 F_TRANSLUCENT
@@ -1946,6 +1991,7 @@ $#GameUI_Disconnect_Request_HLTVRelay
 GameUIService_001
 Gaussian
 GCC: (GNU) 4.9.x 20150123 (prerelease)
+G channel not found
 G channel not found!
 g cMesh
 g default
@@ -2026,12 +2072,13 @@ h3@9h
 *-H),5I)_
 H6hV@
 h)8Ay)
-h"@9)EG
 h"@9h
 h*@9h/
 h.@9H
-h"A9)
+h"@9i
+h"@9)IG
 h"A9a
+h"A9)!F
 HammerMapLoader001
 Hammer/UsesBakedLighting
 handindex
@@ -2060,7 +2107,7 @@ hB@9t
 hbAy`V
 hbB9h
 hBC9	
-hbD9)
+hbD9I
 hbD9t
 hC@9h
 HC@9h
@@ -2069,6 +2116,7 @@ HCTonemapManifest
 headtype
 health
 health_override
+, height = 
 HELPER_BONE
 HelpSystem_001
 h&E)V
@@ -2085,8 +2133,10 @@ HIGHDPI
 hi,xk
 h&@)j
 H$@-J
+hj48{	
 *hj)8h
 hj)8H
+hj)8kv
 hJAyJ
 hjj8	
 h*@)K
@@ -2139,7 +2189,7 @@ i)8i&
 ?i(8?i*x?i+
 _i)8j
 i"@9@
-i"@9JEG
+i"@9JIG
 ib@9`
 ib@9(
 ib@9)
@@ -2147,7 +2197,7 @@ ib@9i
 i"B9i
 ib@9j
 ib@9l
-ibA9J
+ibA9J!F
 i*B)h
 i.Bx?
 I CUtlLinkedList<CCharacterDecalRenderer::CCharacterDecalSceneObject *, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<CCharacterDecalRenderer::CCharacterDecalSceneObject *, unsigned short>, unsigned short> >::AllocInternal(bool) [T = CCharacterDecalRenderer::CCharacterDecalSceneObject *, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<CCharacterDecalRenderer::CCharacterDecalSceneObject *, unsigned short>, unsigned short>]
@@ -2191,8 +2241,11 @@ Iii8*
 Ii+x!
 i"@)j
 *ij(8
+*ij(8~
 ij(8(
 *ij(8kj*
+*ij(8l
+*ij(8u
 ij(8Z
 ijj8?
 IjJY@
@@ -2203,7 +2256,7 @@ IKChain
 IKChainOld
 ikdata
 IKData
-Ikh8?
+ikh8?
 ikrig
 IKRigBiped
 IKRigBug
@@ -2211,6 +2264,7 @@ IKRigSimple
 <i>Label Layer</i>
 Illegal jstype for int64, uint64, sint64, fixed64 or sfixed64 field: 
 i*?)m
+Image data size is zero or too large: width = 
 " implements neither SetCachedSize() nor ByteSize().  Must implement one or the other.
 Import 
 import "$0";
@@ -2242,6 +2296,11 @@ InstanceID
 instanceidbuffer
 instanceidbuffer2
 	Instead, create a new render target with FindOrCreateRenderTarget!
+Insufficient data length.
+Insufficient data size.
+Insufficient data size for attributes.
+Insufficient data size in offset table.
+Insufficient header/data size.
 #int#
 int CModel::GetBoneIndexForHitboxForMesh(const CHitBox *, int) const
 int CreatePackedInputLayout(const CMesh *, CMeshVertexAttribute *, int, PackedInputLayoutInfo_t *, CUtlVector<RenderInputLayoutField_t> &, CMesh::InputLayoutToAttributeMap &, const ShaderInputSignatureDesc_t *, bool, bool)
@@ -2256,20 +2315,44 @@ interfaces.cpp
 Internal inconsistency between the layout format and attribute is detected.
 Interpreting non ascii codepoint %d.
 int ParseRenderTargetTokens(const char *, int, RenderTargetToken_t *)
+Invalid argument for DecodeEXRImage().
+Invalid argument for LoadDeepEXR
+Invalid argument for LoadEXR()
+Invalid argument for LoadEXRFromMemory
+Invalid argument for LoadEXRImageFromFile
+Invalid argument for LoadEXRImageFromMemory
+Invalid argument for LoadEXRMultipartImageFromFile
+Invalid argument for LoadEXRMultipartImageFromMemory()
+Invalid argument for ParseEXRHeaderFromFile
+Invalid argument for ParseEXRMultipartHeaderFromFile()
+Invalid argument for ParseEXRMultipartHeaderFromMemory
+Invalid argument for SaveEXRImageToFile
+Invalid argument for SaveEXRImageToMemory
+Invalid argument. `memory` or `exr_header` argument is null in ParseEXRHeaderFromMemory()
+Invalid channels format
 Invalid compressed buffer size
 Invalid control characters encountered in text.
 INVALID_CPPTYPE
 Invalid data.
 Invalid data for member '%s'
+Invalid data found when decoding pixels.
+Invalid data height value
+Invalid data width or data height: 
+Invalid data width value
 Invalid escape sequence in string literal.
 <INVALID EXPRESSION>
+Invalid EXR header.
 Invalid file descriptor data passed to EncodedDescriptorDatabase::Add().
 Invalid float number: 
 Invalid header
 Invalid input layout field format %d for joint indices
 Invalid key for map field.
+Invalid magic number
 Invalid member name '%s'
 Invalid message set extension.
+Invalid offset size in EXR header chunks.
+Invalid offset value in DecodeEXRImage.
+Invalid `part number' in EXR header chunks.
 Invalid proto descriptor for file "
 Invalid public dependency index.
 <INVALID_RBF_TYPE>
@@ -2278,6 +2361,8 @@ Invalid request for mesh %d in model %s with no remapping table
 Invalid request for mesh %d in model %s with no remapping table starts
 Invalid strings::Substitute() format string: "
 Invalid symbol name: 
+Invalid tile size x : 
+Invalid tile size y : 
 Invalid value for boolean field "
 Invalid weak dependency index.
 Invalid wire type for CPPTYPE_INT32: 
@@ -2344,19 +2429,17 @@ IyixJylx+
 @ @-J
 @-J	,
 j2?)?
-J38d.
 j48	C
 j48t^@
 j4xH;@
 j58hf@9(
-J78+.
 j78a&l
 j)8	=
 j)8	1
 j(8h<
-j)8hR@
+j)8hZ@
 j(8jj)8
-j(8tj)8
+j(8uj)8
 J!@9#
 J]A9_
 jA9hj
@@ -2402,6 +2485,7 @@ jstype is only allowed on int64, uint64, sint64, fixed64 or sfixed64 fields.
 j<@-UP@-i
 j@)UqA)
 jv8?)
+j)x-~
 j(xhb@9h
 j*xhfw
 j:@y)
@@ -2415,10 +2499,13 @@ K1D)M9E)
 K1F)M9G)
 K1H)M9I)
 ?k58D
-*?k78
+?k68RB
+?k78	
+*?k78(
+k78:|
+k78?~
 ?k78h
 k78o_
-_k88^
 k(8vV@
 K	A9lC
 kAKJk
@@ -2462,8 +2549,6 @@ Kykx)
 (#L9@3
 (#L953
 L9hsC9
-!L9{SF
-L9{SF
 @-$LA
 La@9K
 la@9L	
@@ -2547,6 +2632,8 @@ Line %d col %d:
 Line %d: Invalid literal value "%s"
 Line %d: Invalid value "%s"
 Line %d: %s
+lineOrder
+"lineOrder" attribute not found in the header.
 LINUX
 List all the active sceneworlds
 List the object class names known by scenesystem
@@ -2557,6 +2644,7 @@ L-@)J	@
 LoadEXRImageFromMemory failed! Error message: %s
 LoadFromBuffer: expected '{', found '%s'
 LoadFromInMemoryEXR( %s ) failed.
+Loading multipart or DeepImage is not supported  in LoadEXR() API
 LoadKV3ObjectInPlace error: %s
 Localize_001
 localnamefixup
@@ -3265,6 +3353,7 @@ nav_data
 N-B8-
 NB9hN
 nBX nB
+need dictionary
 Need space between identifier and decimal point.
 Need space between number and identifier.
 Need valid position and texcoord when creating world space tangent lengths!
@@ -3541,6 +3630,7 @@ Occlusion Cull
 occlusionproxyvb
 Occlusion render time: 
 Occlusion system scratch mem use: 
+# of channels is zero.
  of the Protocol Buffer runtime library, but the installed version is 
  of the Protocol Buffer runtime library, which is not compatible with the installed version (
 __oldschema_object_name
@@ -3572,8 +3662,10 @@ OrthoLight
  Outdent() without matching Indent().
 outerconeangle
 'out_location' must not be NULL
+out of memory
 outputcolor
 outputdepth
+Output memory size is zero
 		Outputs:
 output_type
 Override of %i partitions specified, scene system using %i partitions
@@ -3593,7 +3685,9 @@ packed
 PanoramaTextServices001
 PanoramaUIClient001
 PanoramaUIEngine001
+PARALLEL_PROCESS tinyexr_impl.cpp:163
 PARALLEL_PROCESS utlsoacontainer.cpp:2533
+parameter error
  Parameter to BackUp() can't be negative.
 , parent: 
 PARENT
@@ -3654,6 +3748,8 @@ PhysicsShapeSphere
 phys_res
 Ping0
 Pitch; 
+pixelAspectRatio
+"pixelAspectRatio" attribute not found in the header.
 Pixels visible: %d (qh:%p) (frame:%d)
 Pixels visible: %d (qh:%p) Pixels possible: %d (qh:%p) (frame:%d)
 pixelvis_debug
@@ -3772,6 +3868,7 @@ py_generic_services
 	(Q)(
 	Q@9I
 Q@9*Q
+"Q9{WF
 )qA9)i
 QAngle
 	QB9i
@@ -3812,6 +3909,7 @@ Range: %2.3f, Falloff: %2.3f
 RB9hR
 r_bloom_offset
 r_bloom_scale
+R channel not found
 R channel not found!
 r_cubemap_debug_colors
 r_dither_scale
@@ -3963,7 +4061,7 @@ Rjjj8
 rJMJJ
 RJMJJ,
 rJMJJi
-R?k78k
+R?k78
 R(kh8
 R	kh8)
 R	khx)
@@ -4168,6 +4266,10 @@ scratchrendertargetsystem.cpp
 scratch_rt_result_%d_%d
 screenmessage_show
 Screen Size Cull
+screenWindowCenter
+"screenWindowCenter" attribute not found in the header.
+screenWindowWidth
+"screenWindowWidth" attribute not found in the header.
 sc_reject_all_objects
 scripts/activity_modifier_weights.txt
 sc_rr_partitions_to_jobs
@@ -4406,6 +4508,8 @@ strchr
 strcmp
 strcpy
 stream 
+stream end
+stream error
 Strength %.2f
 strerror
 STRING
@@ -4657,6 +4761,7 @@ TiF@y?
 TiF@y?! k
 TIkh8?}
 TIkx8i
+tiles
 TILT_TWIST
 Timer took %.4f
 TirC9
@@ -4801,6 +4906,7 @@ unknown
 Unknown
 UNKNOWN
 unknown activity %d on for activity model %s!
+Unknown compression type.
 Unknown enumeration value of "
 UNKNOWN_ENUM_VALUE_%s_%d
 <UNKNOWN ID: %d>
@@ -4817,8 +4923,12 @@ Unshadowed spot lights in view: %d
 unspecified
 Unsupported
 Unsupported binary encoding id.
+Unsupported component value : 
+Unsupported compression format
+Unsupported compression type : 
 Unsupported text encoding id.
 Unsupported: type mismatch
+Unsupported version or scanline
 Update 
 UpdateDirtyObjects
 UPDATE_STRING_TOKEN_DATABASE
@@ -4905,7 +5015,7 @@ Vector2D
 Vector4D
 VectorAligned
 VEngineCvar007
-version
+version error
 vertexbuffer
 VertexColorPos_t
 VertexColorUVPos_t
@@ -5001,8 +5111,6 @@ volume_fog_dither_scale
 volume_fog_enable_jitter
 volume_fog_enable_stereo
 volume_fog_enlarge_frusta
-volume_fog_fade_in_end
-volume_fog_fade_in_start
 volume_fog_show_volumes
 volume_fog_single_pass
 volume_fog_view_culling_enabled
@@ -5048,11 +5156,13 @@ vr_allow_time_sliced_shadow_map_rendering
 vr_carry_type
 vr_cubemap_normalization_max
 vr_cubemap_normalization_roughness_begin
+vr_directional_lightmaps
 vr_dump_lights
 V_RemoveDotSlashes
 vr_enable_cached_lights
 vr_enable_lights
 VRenderDeviceSetupV001
+vr_fake_directionality
 VrLightCookieSettings
 vr_max_lights
 vr_show_light_priority
@@ -5171,7 +5281,6 @@ Yaw;
 yaw_end
 yaw_start
 @yaZN
-y(cT9
 @y+}E
 yh2@y
 yhB@y
@@ -5224,6 +5333,8 @@ _ZdlPv
 -z down
 zDsc_disable_dynamic_sky_lighting
 Zd@)X
+ZFP compression is not supported.
+ZFP compression is not supported in this build
 _ZN10CVProfNode10EnterScopeEv
 _ZN10CVProfNode10GetSubNodeEPKciS1_i
 _ZN10CVProfNode9ExitScopeEv

@@ -81,6 +81,7 @@
 %8.4f / %9.2f:  Writing profile data to '%s'
 87h>@
 %8.8x-%4.4x-%4.4x-%2.2x%2.2x-%2.2x%2.2x%2.2x%2.2x%2.2x%2.2x
+@8mA*
 8Oi-8+
 %8x-%4x-%4x-%2x%2x-%2x%2x%2x%2x%2x%2x
 (@9	,@9
@@ -695,8 +696,8 @@ LoggingTag_t *CLoggingSystem::AllocTag(const char *)
 lower
 &lsquo;
 (\M8h
-M9a-E
-M9`.E
+M9aM@
+M9`N@
 macos
 Mac OS
 MacOS 10.10
@@ -897,6 +898,7 @@ Plat_GetMonitorBounds
 Plat_GetMonitorContentsScale
 Plat_GetMonitorIndexFromName
 Plat_GetMonitorName
+Plat_GetMonitorPPI
 Plat_GetMonitorResolution
 Plat_GetOSDescriptionString
 Plat_GetOSType
@@ -919,6 +921,7 @@ Plat_GetWindowClientBounds
 Plat_GetWindowClientSize
 Plat_GetWindowContentsScale
 Plat_GetWindowMonitorIndex
+Plat_GetWindowPhysicalSize
 Plat_GetWindowSafeAreaInsets
 Plat_GlobalMemoryStatus
 Plat_gmtime
@@ -2064,6 +2067,7 @@ _ZN13CBufferString20ExtractFileExtensionEPKc
 _ZN13CBufferString21EnsureOwnedAllocationENS_19EAllocationOption_tE
 _ZN13CBufferString21RemovePartialUTF8TailEb
 _ZN13CBufferString4SwapERS_
+_ZN13CBufferString4TrimEPKc
 _ZN13CBufferString5PurgeEi
 _ZN13CBufferString6ConcatEPKcS1_z
 _ZN13CBufferString6FormatEPKcz
@@ -2072,6 +2076,8 @@ _ZN13CBufferString6SetPtrEPciibb
 _ZN13CBufferString7ReplaceEcc
 _ZN13CBufferString7ReplaceEPKcS1_b
 _ZN13CBufferString8RemoveAtEii
+_ZN13CBufferString8TrimHeadEPKc
+_ZN13CBufferString8TrimTailEPKc
 _ZN13CBufferString9ConvertInEPKwib
 _ZN13CBufferString9ReplaceAtEiiPKcib
 _ZN13CBufferString9ReplaceAtEiPKcib
@@ -2163,6 +2169,7 @@ _ZN17CThreadSpinRWLock16SpinLockForWriteEy
 _ZN17CThreadSpinRWLock23UnlockRead_LockForWriteEv
 _ZN17CThreadSpinRWLock23UnlockWrite_LockForReadEv
 _ZN17CThreadSwapTarget14OwnerThreadRunEv
+_ZN17CThreadSwapTarget16ReserveOwnershipEv
 _ZN17CThreadSwapTarget18ReleaseOwnerThreadEv
 _ZN17CThreadSwapTargetC1Ev
 _ZN17CThreadSwapTargetC2Ev
@@ -2363,7 +2370,6 @@ _ZNK16CMiniDumpComment17GetCurrentPointerEv
 _ZNK16CMiniDumpComment22GetAvailableBufferSizeEv
 _ZNK16CThreadFullMutex9IsCreatorEv
 _ZNK17CThreadLocalScope18IsLocalThreadScopeEv
-_ZNK17CThreadSwapTarget15IsCurrentThreadEv
 _ZNK17CThreadSyncObjectntEv
 _ZNK19IAttributeSetNative18CreateJavaInstanceEP7_JNIEnv
 _ZNK20CCallStackMarkerBase35TestMarkerAgainstCapturedStackIndexEPKPKvii

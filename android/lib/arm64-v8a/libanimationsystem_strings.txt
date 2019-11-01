@@ -32,6 +32,7 @@ $@)  "
 0x%016llX
   0x%08X %s,
 0@y_!!ka
+!@)@1
 10CAnimState
 10CBoneSetup
 10ConCommand
@@ -253,11 +254,11 @@ $@)  "
 19IAnimStateCondition
 19IKeyValuesErrorSpew
 19IPathMetricInstance
+	1B9I
 1bQJ1~
 1DBlend
 1*i(8`
 1ns:5
-	1z9I
 	2*	@
 2*?)0"
 20CAimMatrixUpdateNode
@@ -437,6 +438,7 @@ $@)  "
 27CCompressedStaticQuaternion
 27CDirectionalBlendUpdateNode
 27CFollowAttachmentUpdateNode
+27CFootPositionMetricInstance
 27CFutureFacingMetricInstance
 27CIKRuleData_FollowAnimation
 27CPathStatusConditionUpdater
@@ -517,6 +519,7 @@ $@)  "
 27CSchemaUtlVectorManipulatorI10CUtlVectorIs10CUtlMemoryIsiEEsE
 27CSequenceGroupTypeManagerV0
 27CSlowDownOnSlopesUpdateNode
+27IFootPositionMetricInstance
 27IFutureFacingMetricInstance
 2_!7k
 28CAnimationGraphVisualizerPie
@@ -536,6 +539,7 @@ $@)  "
 28CModelDocAnimResourceSeqBase
 28CMoveHeadingConditionUpdater
 28ISchemaCollectionManipulator
+2	!+9?
 29CAnimationGraphVisualizerAxis
 29CAnimationGraphVisualizerLine
 29CAnimationGraphVisualizerText
@@ -552,10 +556,11 @@ $@)  "
 29IAnimationGraphVisualizerInfo
 29IFutureVelocityMetricInstance
 29ISolveIKChainAnimNodeInstance
-	2)a<
-	2)a-
-	2)a0
-	2)a9
+2	!*9s
+	2)a'
+	2)a*
+	2)a3
+	2)a6
 2B9hj
 2_BONE_IK
 2dtri
@@ -581,10 +586,11 @@ $@)  "
 2Way_1( %s )
 2wi*8*i@9J
 	2	x(
+2x"@9
 2xi*8*i@9J
 	2(y7
 	2	y7
-2@yqz
+30-;0
 30CAnimGraphUpdateContextBuilder
 30CCompressedReferenceQuaternion
 30CFacingHeadingConditionUpdater
@@ -642,11 +648,11 @@ $@)  "
 4i^E9)
 4i*Z)_
 4+iz8K
+4jrA9
 4kk(8
 4n&	&
 4T@-6
 4	T@9?
-59@y7=@y 
 5h>A9
 5hf@9
 )5IJ(}
@@ -661,8 +667,8 @@ $@)  "
 ?!6ka
 6N  !
 @6W!?
-6@ygz
-6@yX&
+6x"@9
+6YsS9
 7hb@9h
 7hf@9
 7hf@9(
@@ -685,6 +691,7 @@ $@)  "
 8x9,7
 8@y	 @
 `"@9	
+=	+@9	
 )!@9)
 @=#9 
 @-!9 
@@ -751,12 +758,11 @@ A9`&@
 A9	(@
 a^@9b*
 	A@9i
+	!A9K
 A@9)y
 A-'@A-
-"A)az
 	@=a	@=B
 	AB9?
-	AB9	
 Acceleration Forward-Back
 Acceleration Front-Back
 Acceleration Heading
@@ -865,8 +871,11 @@ AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_POPHEADCRAB event format missing velocity parameter! Usage: event AE_ZOMBIE_POPHEADCRAB "<BoneName> <Speed>" 
 AE_ZOMBIE_TOGGLE_HEAD
 Agg data %d: %p (%d parts, crc 0x%08X)
+*]A)h
+*%A)h
 Ah1xij/
 *a@i)	
+ai9#	 
 )AIJ)
 )AIJ#
 Aim Attachment
@@ -880,11 +889,12 @@ Aim Matrix is missing a child.
 AimMtx:m_resetCount
 ai_model_info
 AIWalkable
+	!A)j
+	AJ9	
 _A@k(
 AllocateAndLoad failed for '%s'
 AllocateAndLoad failed for '%s' (%s)
 allowstatic
-Almost Finished Condition
    + Already Exists, ignoring
 Always use fallback hinge
 A master convar that effectively disables the entire footlock node.
@@ -964,6 +974,7 @@ animgraph_footlock_enabled
 animgraph_footlock_hip_drop_version
 animgraph_footlock_hip_offset_enable
 animgraph_footlock_reachability_slide
+animgraph_footlock_tilt_enable
 animgraph_footlock_trace_ground_enabled
 animgraph_footlock_use_hip_shift
 animgraph_footlock_use_twobone_solve
@@ -1065,10 +1076,8 @@ auto_unragdoll_duration
 Average Ground Position
 A-!Xh
 AXk!#
-@-;A@y:E@y9I@y8M@y
 ?AYki
 Ay)Y@y
-.A)`z
 @-b("
 @-b	@
 B-1HD-
@@ -1129,8 +1138,6 @@ BaseIKRig
 baselayer
 BasePhysicsShape
 Base Spring; 
-&B)bz
-*B)cz
 Beginning
 BenchmarkService001
 bentnormal
@@ -1250,6 +1257,7 @@ bUpdate
 burst_randomize
 burst_scale
 B@yhB
+@-c(#
 C-@ !
 C-2-@
 C-!8"
@@ -1430,12 +1438,10 @@ CDirectPlaybackAnimNodeInstance
 CDirectPlaybackInstanceData
 CDistanceRemainingMetric
 CDrawCullingData
-.C)dz
 center
 CEntityIndex
 CEnumAnimParameter
 CEnumAnimParameterInstance
-&C)ez
 CFacingHeadingCondition
 CFeModelCombiner: combined finite element model is too large, with %u nodes
 CFingerBone
@@ -1457,6 +1463,7 @@ CFootLockAnimNodeInstance
 CFootLockItem
 CFootMotion
 CFootPositionMetric
+CFootPositionMetricInstance
 CFootstepLandedAnimTag
 CFootStride
 CFootTrajectories
@@ -1922,7 +1929,6 @@ developer
 DevMsg
 %d.FetchCycle( %s, %.2f )
 %d.FetchFrame( %s, %.1f )
-*D)gz
 Difference Between Moving and Facing
 differs  :
 %d.IKLockInPlace( %s, %.2f, %.2f )
@@ -1978,12 +1984,9 @@ dynamic_interaction
 .dynsym
 @-e	@
 E-!8$
-e9#	 
-.eB4]
 EconItemToolModel_001
 _edata
 EditorDynamicConfig
-	eF9)
 .eh_frame
 .eh_frame_hdr
 <embedded>
@@ -2204,6 +2207,10 @@ Finger Splay - Ring:Pinky
 Finger Splay - Thumb:Index
 .fini_array
 Finish Early
+Finished Condition
+FinishedConditionOption
+FinishedConditionOption_OnAlmostFinished
+FinishedConditionOption_OnFinished
 %f is before m_SimulationState[%d].m_flSimulationTime %f
 Fixed Start Cycle Value
 FixupResourceName: Illegal full path passed in ("%s")!
@@ -2322,6 +2329,7 @@ Future Facing Metric
 Future Velocity
 Future Velocity Metric
 G{}()':
+	!G9	
 G@9hF
 G@9hN
 game_class
@@ -2331,7 +2339,6 @@ GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
 Gaussian
-gB@-q
 GCC: (GNU) 4.9.x 20150123 (prerelease)
 g cMesh
 g default
@@ -2415,9 +2422,11 @@ hb@9(
 hB@9`
 hb@9H
 hB@9h
+hBA9(
 hBA9h
 -hbB9
 )HcB9
+=Hci9 
 HCik_debug_perlin_solver
 !hdx?
 headtype
@@ -2428,7 +2437,7 @@ Height Increase Scale
 HELPER_BONE
 HelpSystem_001
 =hf@9
-hf@9a
+hf@9A
 hf@9h
 hf@9H
 hf@9i
@@ -2461,10 +2470,11 @@ Hit React node requires its %s parameter %s to be networked
 Hit React node requires its %s parameter %s to NOT be interpolated
 Hit Strength
 Hit Strength Parameter
+h&@-j
 hj@9yF@
 h&@-j.A-
+hjA9h
 !H*JAJ*
-hjG9)UF
 H*J!J*
 H*J	J*
 HMaterial
@@ -2502,6 +2512,7 @@ I)!|@
 i1xhj*
 i1xhj+
 i1xjj,
+I5A)K
 i6Ay`
 i6Ayj
 i6@yh
@@ -2528,7 +2539,6 @@ IAnimStateMachineInstance
 IAnimStateTransition
 IAnimTag
 IAnimTagSpanContainer
-IA-pz
 IAudioAnimTag
 ib@9`
 ib@9(
@@ -2564,10 +2574,12 @@ IEnumAnimParameterInstance
 ifB9)
 IFootFallAnimTag
 IFootLockAnimNodeInstance
+IFootPositionMetricInstance
 IFootstepLandedAnimTag
 IFutureFacingMetricInstance
 IFutureVelocityMetricInstance
 Ignore Direction
+Ignore Slope
 Ignoring mismatched anim :: %s :: %s
 (ih8h
 *ih8h~@
@@ -2649,7 +2661,7 @@ ik_groundrule_max_normal_degrees_from_up
 ik_groundrule_no_orienting_threshold
 ik_ground_rule_normalspring_strength
 ik_ground_rule_zspring_strength
-Ikh8?
+ikh8?
 ik_hinge_debug_bone_index
 ik_ignore_end_effector_target_bones
 iklockinplace
@@ -2826,6 +2838,7 @@ j-d'@
 J-dj@
 JD-sN*
 JEIJJ}
+j&@-h
 JHAHJ)
 ji)8k
 JIGGLE_BONE
@@ -2862,7 +2875,8 @@ k5@i*i
 `k68h
 |k68h
 k(8vV@
-KA~9h
+!k9h	
+KAF9h
 kAKJk
 k-D	 
 K-eb@
@@ -2900,6 +2914,7 @@ labelled_debug_helper_scale
 labelled_debug_helper_show_position
 labelled_debug_helper_show_text
 labelled_debug_helper_skeleton_show_bone_names
+L)A)k
 Last Bone in Chain
 last_sniff
 L-cn@
@@ -3141,6 +3156,7 @@ m_bHideMaterialGroupInTools
 m_bHideRenderColorInTools
 m_bIgnoreDirection
 m_bIgnoreRotation
+m_bIgnoreSlope
 m_bInfluenceRootTransform
 m_bInitFromKilledParentParticles
 m_bInterpolate
@@ -3258,6 +3274,7 @@ m_bUserSpecifiedMaterialGroup
 m_bUseShadowFastPath
 m_bVisible
 m_bXFade
+@Mcd>
 m_chain
 m_ChainData
 m_ChainName
@@ -3880,6 +3897,7 @@ Model %s: sequence/animation name collision found "%s"
 Model %s: unable to find bone reference "%s"
 Modulate Step Height
 m_Operators
+m_option
 m_optionToCheck
        - Morph[%d] %s %f :: MC %d MI %d
 Motion Clip
@@ -4000,6 +4018,7 @@ m_RootBone
 m_rootMotion
 m_rootNodeID
 m_rootToWorld
+m_rotation
 m_RuleData
 m_samplingMethod
 m_sAttachment
@@ -4066,6 +4085,7 @@ m_target
 m_TargetBlendParameter
 m_targetBoneName
 m_TargetCoordSystem
+m_targetOrientation
 m_targetParam
 m_targets
 m_TargetSettingSource
@@ -4138,7 +4158,6 @@ m_vPole
 m_vRotation
 m_vSplayHingeAxis
 m_vStancePositionMS
-m_vTargetOrientation
 m_vTargetPosition
 m_vTintColor
 m_vTipOffset
@@ -4195,6 +4214,7 @@ N10Reflection12CTypeFactoryI17CMotionMetricBaseJEE14CFactoryMakerTI22CCurrentVel
 N10Reflection12CTypeFactoryI17CMotionMetricBaseJEE14CFactoryMakerTI24CDistanceRemainingMetricEE
 N10Reflection16CInstanceFactoryI21CMotionMetricInstance17CMotionMetricBaseJRK9CSmartPtrI23CAnimGraphUpdateContext17CRefCountAccessorE13CPackedHandleIK22CMotionMetricEvaluatorEEE13CFactoryMakerE
 N10Reflection16CInstanceFactoryI21CMotionMetricInstance17CMotionMetricBaseJRK9CSmartPtrI23CAnimGraphUpdateContext17CRefCountAccessorE13CPackedHandleIK22CMotionMetricEvaluatorEEE14CFactoryMakerTI19CPathMetricInstanceEE
+N10Reflection16CInstanceFactoryI21CMotionMetricInstance17CMotionMetricBaseJRK9CSmartPtrI23CAnimGraphUpdateContext17CRefCountAccessorE13CPackedHandleIK22CMotionMetricEvaluatorEEE14CFactoryMakerTI27CFootPositionMetricInstanceEE
 N10Reflection16CInstanceFactoryI21CMotionMetricInstance17CMotionMetricBaseJRK9CSmartPtrI23CAnimGraphUpdateContext17CRefCountAccessorE13CPackedHandleIK22CMotionMetricEvaluatorEEE14CFactoryMakerTI27CFutureFacingMetricInstanceEE
 N10Reflection16CInstanceFactoryI21CMotionMetricInstance17CMotionMetricBaseJRK9CSmartPtrI23CAnimGraphUpdateContext17CRefCountAccessorE13CPackedHandleIK22CMotionMetricEvaluatorEEE14CFactoryMakerTI29CFutureVelocityMetricInstanceEE
 N10Reflection6Detail7ToBaseTI10CAnimState10IAnimStateEE
@@ -4341,6 +4361,8 @@ N10Reflection6Detail7ToBaseTI26CBasePathAnimMotorInstance22CBaseAnimMotorInstanc
 N10Reflection6Detail7ToBaseTI26CEnumAnimParameterInstance22CAnimParameterInstanceEE
 N10Reflection6Detail7ToBaseTI26CEnumAnimParameterInstance26IEnumAnimParameterInstanceEE
 N10Reflection6Detail7ToBaseTI26IEnumAnimParameterInstanceNS_6ObjectEEE
+N10Reflection6Detail7ToBaseTI27CFootPositionMetricInstance21CMotionMetricInstanceEE
+N10Reflection6Detail7ToBaseTI27CFootPositionMetricInstance27IFootPositionMetricInstanceEE
 N10Reflection6Detail7ToBaseTI27CFutureFacingMetricInstance21CMotionMetricInstanceEE
 N10Reflection6Detail7ToBaseTI27CFutureFacingMetricInstance27IFutureFacingMetricInstanceEE
 N10Reflection6Detail7ToBaseTI28CDampedPathAnimMotorInstance26CBasePathAnimMotorInstanceEE
@@ -4502,7 +4524,9 @@ N10Reflection6Detail9TypeInfoTI25ISequenceAnimNodeInstanceEE
 N10Reflection6Detail9TypeInfoTI26CBasePathAnimMotorInstanceEE
 N10Reflection6Detail9TypeInfoTI26CEnumAnimParameterInstanceEE
 N10Reflection6Detail9TypeInfoTI26IEnumAnimParameterInstanceEE
+N10Reflection6Detail9TypeInfoTI27CFootPositionMetricInstanceEE
 N10Reflection6Detail9TypeInfoTI27CFutureFacingMetricInstanceEE
+N10Reflection6Detail9TypeInfoTI27IFootPositionMetricInstanceEE
 N10Reflection6Detail9TypeInfoTI27IFutureFacingMetricInstanceEE
 N10Reflection6Detail9TypeInfoTI28CDampedPathAnimMotorInstanceEE
 N10Reflection6Detail9TypeInfoTI29CFutureVelocityMetricInstanceEE
@@ -4607,13 +4631,13 @@ N37CTypesafeIntrospectedToKV3TypeManagerILy469920276854E9CAnimDataE26IKV3Resourc
 N37CTypesafeIntrospectedToKV3TypeManagerILy469920276854E9CAnimDataE28IKV3ResourceDeallocatorUtilsE
 N37CTypesafeIntrospectedToKV3TypeManagerILy482955714934E15CAnimationGroupE26IKV3ResourceAllocatorUtilsE
 N37CTypesafeIntrospectedToKV3TypeManagerILy482955714934E15CAnimationGroupE28IKV3ResourceDeallocatorUtilsE
++N-4"
 "N$4$n
+$N!,5
 $NA*#
-!NA}G
 !NaR@
 nav_attribute_avoid
 nav_data
-+N-b#
  NB(&
 "Nb:4
  NB8&
@@ -4650,11 +4674,11 @@ Newline in string literal
 Next step normal
 nexttoken
 nf@9/
-&NF9!
  ng*!
  nG:'
 &nG9"
 NhFD9t
+NI5A)K
 niqx?
 Nj1xkj-
  n)M"
@@ -4710,12 +4734,13 @@ Offset the debug targets by x y z amount (space separated)
 Off When Finished
 __oldschema_object_name
      o MorphCtrlWeight[%d] :: %s :: %f
+On Almost Finished
 OnCycleEnd
+On Finished
 On Foot Cycle Change
 Only align to Goals
 OnResetOrCycleEnd
 open_asset %s
-option
 optionallycompressedtangentframe
 Ordered constructor wrapped type has no default constructor.
 ORIENT
@@ -4738,7 +4763,6 @@ Override Sound
 Override Target Settings
 Override Tilt Root
 Override Tilt Spring Strength
-<(o@x
 o)@yl
 ($?)P
 	P@9i
@@ -4903,7 +4927,7 @@ ptr( 0x%p )
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
 )Q@9)
-#@-	qA
+Q9_9	
 qangle
 QAngle
 QAngle-world
@@ -4920,7 +4944,6 @@ q$;@z
 r1NQJ
 R5P=(
 R-`9 
-R?9G	
 	*r"A9r
 raAIJ
 RadianEuler
@@ -5048,7 +5071,6 @@ Rigid;
 rJMJJ
 rkMKJ
 r)MIJ
-r)MIJ)
 R)MIJ*
 R)MIJ+
 rnd_down
@@ -5465,6 +5487,7 @@ static const ::Reflection::TypeID CFootCycleMetric::MyTypeID()
 static const ::Reflection::TypeID CFootFallAnimTag::MyTypeID()
 static const ::Reflection::TypeID CFootLockAnimNodeInstance::MyTypeID()
 static const ::Reflection::TypeID CFootLockAnimNode::MyTypeID()
+static const ::Reflection::TypeID CFootPositionMetricInstance::MyTypeID()
 static const ::Reflection::TypeID CFootPositionMetric::MyTypeID()
 static const ::Reflection::TypeID CFootstepLandedAnimTag::MyTypeID()
 static const ::Reflection::TypeID CFutureFacingMetricInstance::MyTypeID()
@@ -5556,6 +5579,7 @@ static const ::Reflection::TypeID IEnumAnimParameterInstance::MyTypeID()
 static const ::Reflection::TypeID IEnumAnimParameter::MyTypeID()
 static const ::Reflection::TypeID IFootFallAnimTag::MyTypeID()
 static const ::Reflection::TypeID IFootLockAnimNodeInstance::MyTypeID()
+static const ::Reflection::TypeID IFootPositionMetricInstance::MyTypeID()
 static const ::Reflection::TypeID IFootstepLandedAnimTag::MyTypeID()
 static const ::Reflection::TypeID IFutureFacingMetricInstance::MyTypeID()
 static const ::Reflection::TypeID IFutureVelocityMetricInstance::MyTypeID()
@@ -6024,7 +6048,6 @@ WayPoint Helper
 Waypoint Position
 WayPointPosition
 wcslen
-Wc@)Y
 weaponType
 WeightedRandom
 WeightedRandomNoRepeat
@@ -6049,7 +6072,6 @@ WorldRendererMgr001
 worldspace
 Writing kdTree with %d triangles
 W`@-Y
-<(-@x
 xf@)*
 xfade
 xhW@yn
@@ -6059,19 +6081,12 @@ xWsTarget
 ,	@y)
 !	@y`
 @y`&@
-&@y}'
 	y4xl
 Yaw; 
 yaw_end
 Yaw Limit
 yaw_start
-&@ybz
 @y+}E
->@yEf
-"@yez
-.@yfz
-.@y}g
-*@y}G
 yh2Ay
 yh>Ayi
 *Y@i)	
@@ -6084,11 +6099,6 @@ yi>Ay)
 =@y_!!k
 @y_!(k!
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
-*@ypz
-.@yrz
-:@ysz
->@yTD
-:@yWF
 @yWii
 ]@y x
 ?y(xi
@@ -6098,10 +6108,6 @@ y	,@y)
 Y@yh[
 Y@yhY
 @y)Y@y
-*@y|z
-*@y{z
-&@y|z
-&@y}z
 _Z10DevWarningPKcz
 _Z13V_SplitStringPKcS0_R10CUtlVectorIPc10CUtlMemoryIS2_iEE
 _Z14V_stristr_fastPKcS0_

@@ -159,6 +159,7 @@ $@)  "
 2,	@9L
 2_BONE_IK
 2Gio8
+2h2'9
 	2	i*
 2i2@yh
 2	i58h
@@ -219,6 +220,7 @@ $@)  "
 6hB@9H
 6h&Q)c*
 6IWorld
+6Y3Y9
 7hb@9h
 7hbE9
 7hf@9
@@ -240,7 +242,7 @@ $@)  "
 )=@9)}
 )!@9)
 )@@9	
-	!_9	
+@9.1.15
 92ji8R
 @92yr
 9,5@8K
@@ -290,19 +292,18 @@ $@)  "
 9*YA9_
 @9+	@yHA
 @9+	@yHM
-@9ZsF
+@9ZkF
 'A)	}	
 ()@)+%A)
 A-!(!
 a2@yh2@y
-)A_9?
 	A@9	
 A9)eG
 	 A9JeG
 A-'@A-
 A(aN!
 $	A)Ar
-	Ab9	
+	ab9	
 ACT_IDLE
 activator
 ACT_NEUTRAL_REF_POSE
@@ -325,7 +326,6 @@ AE_CL_CREATE_PARTICLE_EFFECT_CFG
 AE_CL_PLAYSOUND_LOOPING
 AE_CL_STOP_PARTICLE_EFFECT
 AE_DOTA_SUPPRESS_CONSTANT_LAYER
-_<aeE
 AE_HIDE_WEAPON
 AE_IK_ALLOW_PLANE_TILT_NORMAL_UPDATES
 AE_IK_SET_CHAIN_BLEND_AMOUNT
@@ -356,9 +356,10 @@ AllocateAndLoad failed for '%s'
 AllocateAndLoad failed for '%s' (%s)
 AllocateResource: Cannot find DATA block in resource %s!
 AllocateResource: Cannot find VXVS data in resource %s!
+allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
 allowstatic
-	Am9	
 (aN0*aN
+	an9	
 (aNB8an1
 anchor_angles
 anchor_position
@@ -431,7 +432,7 @@ auto_unragdoll_duration
 /AV?O!
 B-1HD-
 *-B),5C)_
-B9)5G
+B9)1G
 bA9JeG
 Bad entity index %d
 Bad entity serial number %d
@@ -474,6 +475,7 @@ BaseSceneObjectOverride_t
 Base Spring; 
 BC6h compression not supported on this target (windows only).
 BC7 compression not supported on this target (windows only).
+B channel not found
 B channel not found!
 before solve err=%f
 BenchmarkService001
@@ -517,6 +519,7 @@ bool CEntityKeyValues::UnserializeKeys(CUtlBuffer &, int, bool)
 bool CEntitySystem::BuildComponentRecursive(CEntityClass *, bool *, const char *, size_t, int &, CEntityClass::ComponentHelper_t *, bool *, int)
 boolean
 borrow
+box2i
 B-pFC-rND-
 breakable_count
 breakable_model
@@ -531,6 +534,7 @@ __bss_end__
 __bss_start
 __bss_start__
 /BT?O
+buf error
 bUpdate
 burst_randomize
 burst_scale
@@ -540,6 +544,7 @@ B@yhB
 $.c($
 C-2-@
 C-!8"
+	!c9	
 (C@9h
 cable
 Cables
@@ -559,10 +564,14 @@ Cannot deallocate abstract class
 Cannot deduce for class
 Cannot destruct abstract class
 Cannot force non-networkable entity index %d
+Cannot read a file 
+Cannot read file 
+Cannot reconstruct lineOffset table in DecodeEXRImage.
 Cannot register same format from/to a KV3 conversion (from '%s' to '%s')
 Cannot run script: NULL script name
 Cannot save as KV3_FORMAT_LOAD_WITH_NO_UPCONVERSION.
 Cannot save KV3 text to a non-text buffer!
+Cannot write a file
 cantdie
 Can't write binary data to a text buffer.
 CAttachment
@@ -615,6 +624,9 @@ ChangeAccessorFieldPathIndex_t
 ChangeCallbackOnChange
 ChangeCallbackOnChangeOrCreate
 change callback spew threshold %f msecs
+channels
+, channels = 
+"channels" attribute not found in the header.
 character
 cheat
 Checks to see if the given hScript is a valid entity
@@ -622,7 +634,10 @@ children
 CHitBox
 CHitBoxSet
 CHitBoxSetList
+chlist
 choices
+chunkCount
+`chunkCount' attribute is not found in the header.
 C_INIT_AddVectorToVector
 C_INIT_AgeNoise
 C_INIT_CreateFromCPs
@@ -717,6 +732,8 @@ CommandProcedureList
 Component class %s needs its own datadesc (is using %s)
 composite
 CompressAndUploadGrassTextureJob
+compression
+"compression" attribute not found in the header.
 ConcreteEntityList:  approaching limit, allocating entity chuck %d/%d for ents [%d -> %d]
 ConfigAttachedModel
 config_state
@@ -864,12 +881,21 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 *-D),5E)_
-d6@y#
+d6@yC
 	D@8!
 D@8)%
 	D@8)m
 .data
+data error
+data_height = 
+data height too large.
 .data.rel.ro
+Data size too short
+data width or data height is negative.
+data width too large.
+dataWindow
+"dataWindow" attribute not found in the header or invalid.
+data_with or data_height too large. data_width: 
 %d %d
 %d %d %d %d
 DebugTextureInfo001
@@ -894,6 +920,8 @@ DispatchInput
 DispatchPrecache
 DispatchSpawn
 DispatchUpdateOnRemove
+displayWindow
+"displayWindow" attribute not found in the header.
 dme_position_map
 dmg.bullets
 dmg.club
@@ -1040,6 +1068,7 @@ explosion_type
 explosive_damage
 explosive_radius
 EXPORTSYSTEM_INTERFACE_VERSION_001
+EXRHeader variable is not initialized.
 ExtraVertexStreamOverride_t
 eye_data
 eye_data_list
@@ -1052,6 +1081,7 @@ Failed to allocate an instance of a class
 Failed to allocate an instance of class '%s'
 Failed to assign bool literal value
 Failed to call CBaseIntrospectedToKV3TypeManager::Init
+Failed to compute channel layout.
 Failed to convert introspected block: %s
 Failed to convert KV3 to string; error: %s
 Failed to determine polymorphic class name
@@ -1059,7 +1089,12 @@ Failed to get material pointer for world node draw call. (material name: %s)
 Failed to include script "%s"
 Failed to load geometry for level %s
 Failed to mount world vpk file %s, file could not be found.
+Failed to parse attribute
+Failed to parse channel info
+Failed to parse channel info.
+Failed to parse EXR version
 Failed to precache script entity %s of type %s: script entity instance is null
+Failed to read attribute.
 Failed to run entity framework script
 Failed to save unsupported class
 Failed to spawn script entity %s of type %s: script entity instance is null
@@ -1141,6 +1176,9 @@ FIELD_VECTOR4D
 FIELD_VMATRIX
 FIELD_VMATRIX_WORLDSPACE
 FIELD_VOID
+file error
+File size is zero : 
+File size too short 
 filesystem_stdio
 FillAttr
 filterinY
@@ -1157,14 +1195,14 @@ float32
 float32-quantized
 float64
 floatbitmap.cpp
-floatbitmap.cpp(140): Unknown gamma type "%s"!
-floatbitmap.cpp(2463): Error calling TGALoader::GetInfo( %s )
-floatbitmap.cpp(2474): Error loading %s
-floatbitmap.cpp(2497): Error! Unknown file type for %s
-floatbitmap.cpp(2516): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s
-floatbitmap.cpp(324): Conversion not supported yet!
-floatbitmap.cpp(424): Conversion not supported yet!
-floatbitmap.cpp(887): Unsupported color format "%s", skipping!
+floatbitmap.cpp(141): Unknown gamma type "%s"!
+floatbitmap.cpp(2473): Error calling TGALoader::GetInfo( %s )
+floatbitmap.cpp(2484): Error loading %s
+floatbitmap.cpp(2507): Error! Unknown file type for %s
+floatbitmap.cpp(2526): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s
+floatbitmap.cpp(325): Conversion not supported yet!
+floatbitmap.cpp(425): Conversion not supported yet!
+floatbitmap.cpp(888): Unsupported color format "%s", skipping!
 FloatBitMap::DownsampleNiceFiltered
 FloatBitMap::QuarterSize
 FloatBitMap::QuarterSizeBlocky
@@ -1179,9 +1217,10 @@ fltx4
 F_MORPH_SUPPORTED
 FontManager_001
 force
-format
 formats.cpp
 Found max edge length %g. Skipping SplitLongEdges, as that'll take too long to split.
+`fread' error. file may be corrupted.
+fread() error on 
 friction
 F_TRANSLUCENT
 FTYPEDESC_ADDITIONAL_FIELDS
@@ -1219,6 +1258,7 @@ GameStartup
 GameUIService_001
 Gaussian
 GCC: (GNU) 4.9.x 20150123 (prerelease)
+G channel not found
 G channel not found!
 g cMesh
 g default
@@ -1303,6 +1343,7 @@ hbE9i
 headtype
 health
 health_override
+, height = 
 HELPER_BONE
 HelpSystem_001
 hf@9h
@@ -1311,7 +1352,8 @@ h"F9H
 hf@9i
 (hide)
 Hitbox indexing is incorrect for set %s, hitbox %s. Hitboxes will not be setup properly.
-hj48|
+hj48u
+hj581x
 H#L9`3
 HMaterial
 HModel
@@ -1335,6 +1377,7 @@ h&@y)UG
 *	i58
 i)8h~@
 _i(8j
+i*@9J
 ib@9(
 ib@9)
 ib@9j
@@ -1382,6 +1425,7 @@ IKRigBiped
 IKRigBug
 IKRigSimple
 i*?)m
+Image data size is zero or too large: width = 
 In8hIh8jIj8mIm8kIo8nU
 #include
 #include is NULL 
@@ -1408,6 +1452,11 @@ InstallChangeCallback called with NULL callback, ignoring!!!
 InstallChangeCallback ignoring duplicate change callback!!!
 InstallClasses
 InstallSchemaBindings
+Insufficient data length.
+Insufficient data size.
+Insufficient data size for attributes.
+Insufficient data size in offset table.
+Insufficient header/data size.
 #int#
 int CEntitySystem::RegisterComponentType(CEntityComponentHelper *)
 int CEntitySystem::RegisterEntityClass(CEntityClass *)
@@ -1424,18 +1473,44 @@ interfaces.cpp
 Internal inconsistency between the layout format and attribute is detected.
 interval
 introspectedtokv3typemanager.cpp
+Invalid argument for DecodeEXRImage().
+Invalid argument for LoadDeepEXR
+Invalid argument for LoadEXR()
+Invalid argument for LoadEXRFromMemory
+Invalid argument for LoadEXRImageFromFile
+Invalid argument for LoadEXRImageFromMemory
+Invalid argument for LoadEXRMultipartImageFromFile
+Invalid argument for LoadEXRMultipartImageFromMemory()
+Invalid argument for ParseEXRHeaderFromFile
+Invalid argument for ParseEXRMultipartHeaderFromFile()
+Invalid argument for ParseEXRMultipartHeaderFromMemory
+Invalid argument for SaveEXRImageToFile
+Invalid argument for SaveEXRImageToMemory
+Invalid argument. `memory` or `exr_header` argument is null in ParseEXRHeaderFromMemory()
+Invalid channels format
 Invalid compressed buffer size
 Invalid conversion : CString '%s' to bool
 Invalid data.
 Invalid data for member '%s'
+Invalid data found when decoding pixels.
+Invalid data height value
+Invalid data width or data height: 
+Invalid data width value
 <INVALID EXPRESSION>
+Invalid EXR header.
 Invalid header
 Invalid input layout field format %d for joint indices
+Invalid magic number
 Invalid member name '%s'
+Invalid offset size in EXR header chunks.
+Invalid offset value in DecodeEXRImage.
+Invalid `part number' in EXR header chunks.
 <INVALID_RBF_TYPE>
 Invalid request for mesh %d in model %s with %d entry remapping start table
 Invalid request for mesh %d in model %s with no remapping table
 Invalid request for mesh %d in model %s with no remapping table starts
+Invalid tile size x : 
+Invalid tile size y : 
 Inverse Multi Quadratic
 Invert Axes; 
 invert_orientation
@@ -1467,7 +1542,6 @@ JIGGLE_BONE
 jiggle bone %u
 Jih8ji(8
 JIIJJ}
-Ji/)K
 Jikx_
 jj(8(
 JNI_OnLoad
@@ -1560,6 +1634,8 @@ Line %d at "%s": %s
 Line %d: Invalid literal value "%s"
 Line %d: Invalid value "%s"
 Line %d: %s
+lineOrder
+"lineOrder" attribute not found in the header.
 List all known entity lumps
 List all world layers
  (listed %s)
@@ -1569,6 +1645,7 @@ Loaded List:
 LoadEXRImageFromMemory failed! Error message: %s
 LoadFromBuffer: expected '{', found '%s'
 LoadFromInMemoryEXR( %s ) failed.
+Loading multipart or DeepImage is not supported  in LoadEXR() API
 LoadKV3ObjectInPlace error: %s
 Localize_001
 lockRotationAlpha
@@ -1588,6 +1665,7 @@ lowprecisionuv1
 LrwcE
 %ls [wstring, len = %d]
 <*%M)
+!M9h	
 m_aAngOffset
 m_ankleBoneName
 mapbuilder.nodraw
@@ -2219,6 +2297,7 @@ nBX n
 NBX n
 nC(aNb?
 NcX n
+need dictionary
 Need valid position and texcoord when creating world space tangent lengths!
 Need valid position to calculate face centers!
 NetworkClientService_001
@@ -2293,7 +2372,7 @@ nRZ n
 NRZ nsZ nR*a
 NSt6__ndk113basic_istreamIcNS_11char_traitsIcEEEE
 NSt6__ndk113basic_ostreamIcNS_11char_traitsIcEEEE
-@NSt6__ndk114basic_iostreamIcNS_11char_traitsIcEEEE
+NSt6__ndk114basic_iostreamIcNS_11char_traitsIcEEEE
 NSt6__ndk115basic_streambufIcNS_11char_traitsIcEEEE
 NSt6__ndk115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE
 NSt6__ndk118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE
@@ -2335,6 +2414,7 @@ OBJECT_TYPE_NO_SUN_SHADOWS
 OBJECT_TYPE_PRECOMPUTED_VISMEMBERS
 OBJECT_TYPE_RENDER_TO_CUBEMAPS
 OBJECT_TYPE_WORLDSPACE_TEXURE_BLEND
+# of channels is zero.
 O*/i*x
 __oldschema_object_name
 Only DXT1/DXT5 online texture compression supported.
@@ -2348,7 +2428,9 @@ orV?O
 oRV?Ok
 oS,@Lc
 o!T?OB
+out of memory
 outputid
+Output memory size is zero
 Output unserialization of entities on map load. 0 - off, 1 - client/server, 2 - server, 3 - client
 overlay
 !OZW?O
@@ -2357,7 +2439,9 @@ overlay
 PanoramaTextServices001
 PanoramaUIClient001
 PanoramaUIEngine001
+PARALLEL_PROCESS tinyexr_impl.cpp:163
 PARALLEL_PROCESS utlsoacontainer.cpp:2533
+parameter error
 , parent: 
 PARENT
 parent of jiggle bone %u: %s
@@ -2410,6 +2494,8 @@ PhysicsShapeMesh
 PhysicsShapeSphere
 phys_res
 Pitch; 
+pixelAspectRatio
+"pixelAspectRatio" attribute not found in the header.
 P,@L 
 placement_attach
 placement_bone
@@ -2493,7 +2579,6 @@ Quaternion-world
 QueuedLoaderVersion001
 Quintic
 	Q@y)
-	QZ9I
 R11_EAC
 R16F_EXPAND
 R32_UINT
@@ -2509,6 +2594,7 @@ RandomInt
 RandomSeed
 Ran out of %snetworkable entities! (See console spew for entity list summary)
 r(aN#V
+R channel not found
 R channel not found!
 @r_drawworld
 Reads a spawn key
@@ -2641,6 +2727,7 @@ S)5K*j
 %s allocation count overflow( %llu >= %llu )
 %s allocation count overflow( %llu > %llu )
 %s| Base Class%s: %d
+sc_allow_dynamic_constant_batching
 sc_allow_precomputed_vismembers
 SceneObject_t
 scenesystem
@@ -2655,6 +2742,10 @@ SchemaTestExternal_One_001
 SchemaTestExternal_Two_001
 %s_color
 %s (Color)
+screenWindowCenter
+"screenWindowCenter" attribute not found in the header.
+screenWindowWidth
+"screenWindowWidth" attribute not found in the header.
 Script_DebugBreak
 ----Script Dump for entity "%s"
 Script failed to find output "%s"
@@ -2765,6 +2856,8 @@ strchr
 strcmp
 strcmp( pInfo->m_pCPPClassname, pDataDesc->dataClassName ) == 0
 strcpy
+stream end
+stream error
 streamingenvironmentmapmgr.cpp
 streamingenvironmentmapmgr.cpp(663): 
 Streaming of env map at location (%.2f, %.f2, %.f2) failed
@@ -2833,6 +2926,7 @@ Tib@9
 TicE9cs
 Tif@9
 Tif@9)
+tiles
 TILT_TWIST
 TiV@y(=
 Ti:@y
@@ -2895,6 +2989,7 @@ unknown
 <unknown>
 Unknown
 __UNKNOWN__
+Unknown compression type.
 <unknown hash %u>
 Unknown image format in gameinfo.gi WorldRenderer/EnvironmentMapFormat. Defaulting to DXT5.
 unknown_variant_type
@@ -2908,11 +3003,15 @@ Unresolved object reference '%s'
 unsigned
 unspecified
 Unsupported binary encoding id.
+Unsupported component value : 
+Unsupported compression format
+Unsupported compression type : 
 Unsupported field type for entity attribute, field %s
 Unsupported field type %s (%d) for conversion from old KeyValues, field %s
 Unsupported Grass File Version. Expected %d. Found %d
 Unsupported number of values found in grass tile. Expected %d. Found %d
 Unsupported text encoding id.
+Unsupported version or scanline
 <ununsed>
 unused
 /]U?O
@@ -2974,7 +3073,7 @@ VectorAligned
 Vector-dir
 Vector-quantized
 VEngineCvar007
-version
+version error
 VertexColorPos_t
 VertexPaintBlendParams
 VertexPaintBlendParams1
@@ -3132,8 +3231,8 @@ world_layer_list
 world_layer_set_visible
 world_layer_set_visible %s %s false
 world_layer_set_visible %s %s true
-worldnode.cpp(1246): 
-worldnode.cpp(710): 
+worldnode.cpp(1251): 
+worldnode.cpp(715): 
 WorldNodeOnDiskBufferData_t
 WorldNodeProceduralModel
 WorldNode_t
@@ -3171,7 +3270,6 @@ X nN(a
 !~ y(
 @y`&@
 	y4xl
-\`y6W
 Y80ijx
 #Y80ijx
 Y8Qikx
@@ -3210,6 +3308,8 @@ _Z6DevMsgPKcz
 #Z80ijx
 _ZdaPv
 _ZdlPv
+ZFP compression is not supported.
+ZFP compression is not supported in this build
 z:K(None)
 _ZN13CBufferString10FixSlashesEc
 _ZN13CBufferString11ToLowerFastEi

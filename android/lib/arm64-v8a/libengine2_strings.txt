@@ -59,16 +59,18 @@ $0$1$2 $3 = $4
 %02i/%02i %02i:%02i:%02i 
 %03i:  %s (%s):   
 \%03o
+04:00:01
  $(,048<AEIMQUY]aeimquy}
 06`&@
 06`*A
 06h2@
 06jZ@
-07:07:10
 07h"@
 0@9	4
 /0@9n9
+	-09Q
 %0@9R
+	%09Y
 	0AyI
 0Ay	P@
 =0DD-
@@ -106,6 +108,7 @@ $0 to $1,
 -1.000000
 1.0.2, 30-Dec-2001
 -1080
+	109,
 10CCvarQuery
 10CEntityMsg
 10CheckImage
@@ -200,7 +203,7 @@ $0 to $1,
 13CNetMessagePBILi17E27CBidirMsg_RebroadcastSourceL13SignonGroup_t5EL19NetChannelBufType_t1ELb1EE
 13CNetMessagePBILi20E18CCLCMsg_ClientInfoL13SignonGroup_t10EL19NetChannelBufType_t1ELb0EE
 13CNetMessagePBILi21E12CCLCMsg_MoveL13SignonGroup_t8EL19NetChannelBufType_t0ELb0EE
-13CNetMessagePBILi23E19CCLCMsg_BaselineAckL13SignonGroup_t3EL19NetChannelBufType_t1ELb0EE
+13CNetMessagePBILi23E19CCLCMsg_BaselineAckL13SignonGroup_t16EL19NetChannelBufType_t1ELb0EE
 13CNetMessagePBILi25E24CCLCMsg_RespondCvarValueL13SignonGroup_t0EL19NetChannelBufType_t1ELb0EE
 13CNetMessagePBILi26E20CCLCMsg_FileCRCCheckL13SignonGroup_t10EL19NetChannelBufType_t1ELb0EE
 13CNetMessagePBILi27E23CCLCMsg_LoadingProgressL13SignonGroup_t10EL19NetChannelBufType_t1ELb0EE
@@ -218,11 +221,11 @@ $0 to $1,
 13CNetMessagePBILi46E17CSVCMsg_VoiceInitL13SignonGroup_t10EL19NetChannelBufType_t1ELb0EE
 13CNetMessagePBILi47E17CSVCMsg_VoiceDataL13SignonGroup_t6EL19NetChannelBufType_t0ELb0EE
 13CNetMessagePBILi48E13CSVCMsg_PrintL13SignonGroup_t0EL19NetChannelBufType_t1ELb0EE
-13CNetMessagePBILi4E12CNETMsg_TickL13SignonGroup_t3EL19NetChannelBufType_t0ELb0EE
+13CNetMessagePBILi4E12CNETMsg_TickL13SignonGroup_t16EL19NetChannelBufType_t0ELb0EE
 13CNetMessagePBILi50E15CSVCMsg_SetViewL13SignonGroup_t0EL19NetChannelBufType_t1ELb0EE
 13CNetMessagePBILi51E28CSVCMsg_ClearAllStringTablesL13SignonGroup_t10EL19NetChannelBufType_t1ELb0EE
 13CNetMessagePBILi52E17CBaseCmdKeyValuesI20CSVCMsg_CmdKeyValuesEL13SignonGroup_t9EL19NetChannelBufType_t1ELb0EE
-13CNetMessagePBILi53E16CSVCMsg_BSPDecalL13SignonGroup_t3EL19NetChannelBufType_t1ELb0EE
+13CNetMessagePBILi53E16CSVCMsg_BSPDecalL13SignonGroup_t16EL19NetChannelBufType_t1ELb0EE
 13CNetMessagePBILi54E19CSVCMsg_SplitScreenL13SignonGroup_t10EL19NetChannelBufType_t1ELb0EE
 13CNetMessagePBILi55E22CSVCMsg_PacketEntitiesL13SignonGroup_t3EL19NetChannelBufType_t1ELb0EE
 13CNetMessagePBILi5E17CNETMsg_StringCmdL13SignonGroup_t9EL19NetChannelBufType_t1ELb0EE
@@ -657,6 +660,7 @@ $0 to $1,
 18MenuItemCheckImage
 18ToolTraceRayResult
 -1@9_
+	1)9A
 !)19BJRZcks{
 19C2S_CONNECT_Message
 19CBidirMsg_RelayInfo
@@ -697,7 +701,9 @@ $0 to $1,
 1DBlend
     1 = force cl_predict to 1
 1hqx2hrx?
+	1i9i
    -1 = let clients set cl_predict to anything
+	1p9)
 1 = Pause the game when pressing ~ to open the console. CTRL+~ opens the console without pause.
 1.QB!
 1 - resize right
@@ -709,8 +715,8 @@ $0 to $1,
 /1V?OR
  1: write to NULL
 *1x0x
+	1X9i
 !2@=!
-#2)?=
 	2*	@
 200000
 20CAsyncTrackingConvar
@@ -828,6 +834,7 @@ $0 to $1,
 23IToolGameSimulationBase
 23ToolEvent_GetEntityInfo
 23TraceRayServerToolEvent
+	2!46
 24C2S_CONNECTION_Message_t
 24CCLCMsg_RespondCvarValue
 24CDemoCustomDataCallbacks
@@ -888,7 +895,6 @@ $0 to $1,
 26GameSessionConfiguration_t
 26ICommandCompletionCallback
 26IRenderDeviceEventListener
-26KeyValuesDump_ToCUtlString
 26NetMessageConnectionClosed
 26ProtoFlattenedSerializer_t
 26SpawnEntityToolEventResult
@@ -925,7 +931,9 @@ $0 to $1,
 28IFlattenedSerializerSpewFunc
 28INetworkStringTableContainer
 2_!8k
+	}29]
 2@9()
+2	!-9
 29CBidirMsg_RebroadcastSource_t
 29CBoneConstraintPoseSpaceMorph
 29CCLCMsg_SplitPlayerDisconnect
@@ -940,10 +948,8 @@ $0 to $1,
 29ILoopModePrerequisiteRegistry
 29IToolGameSimulationDispatcher
 2,	@9L
+2	9l6	9pR
 29ToolEvent_GetEntityInfoResult
-2	a!9
-2	a(9?
-2	A<9
 2	a@9Ia
 2	AA9
 2Ay)	
@@ -962,10 +968,11 @@ $0 to $1,
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
 2Gio8
 2	h(8
-2h"	9h&
+2h"	94;
+2h"	9H&
+2Ha!9hRB
 2hb@9H
 2hBK9H
-2Hc59
 2hj)8
 2hr	9`
 	2	i*
@@ -976,7 +983,6 @@ $0 to $1,
 2Ii(8h
 2ii*x
 2ij(8
-2ij(8h 
 2ij(x
 2-ik8k
 2+imx
@@ -984,9 +990,9 @@ $0 to $1,
 2j"	9I
 2j"@9)p
 2?".k
-2?k78T-
+2?k78T8
 2_k88
-2?k88S)
+2?k88S4
 2kii8l}C
 2Kkj8k
 2L%@x+
@@ -995,6 +1001,7 @@ $0 to $1,
 2	u	9
 2Way_0( %s )
 2Way_1( %s )
+2x"@9
 2@y	!
 30000
 30CBidirMsg_RebroadcastGameEvent
@@ -1044,6 +1051,7 @@ $0 to $1,
 35CEngineSoundServicesDebugVisualizer
 35CEventQueue_SaveRestoreBlockHandler
 35CGameInfo_CDotaGameInfo_CPlayerInfo
+35CKeyValuesDumpContextToBufferString
 35CNETMsg_SpawnGroup_ManifestUpdate_t
 3)5L*H
 35ToolEvent_SFMToolActiveStateChanged
@@ -1089,8 +1097,7 @@ $0 to $1,
 49CNetworkClientSpawnGroup_LoadSaveGamePrerequisite
 49CNetworkServerSpawnGroup_LoadEntitiesPrerequisite
 49CNetworkServerSpawnGroup_LoadSaveGamePrerequisite
-		49J
-		49L
+		49Ks
 &4@9R
 4CLog
 4CPVS
@@ -1106,7 +1113,7 @@ $4DTdt
 4h.A9
 4hb@9
 4hB@9
-4hbA9
+4hbA9H
 4hBK9
 4hf@9
 4hf@9(
@@ -1142,6 +1149,7 @@ $4DTdt
 500000
 %50.50s: %2.2d bits == '%s'
 %50.50s %32.32s %32.32s
+	509y
 %5.1f,
 524288
 %5.2f %5.2f %5.2f %7i %5i %7.2f %7i
@@ -1164,13 +1172,10 @@ $4DTdt
 59CNetworkServerSpawnGroup_WaitForOwnerSpawnGroupPrerequisite
 *5@9J
 5@9J9
-	)59l
-	!59W
 	5Ay*
 5CVEfx
 % 5d: % 5d
 %5d:  DispatchEvent( %s )
--@))5E
 %5EUeu
 5h2I9h
 5h6I9
@@ -1187,8 +1192,6 @@ $4DTdt
 5IVEfx
 5i.@y
 5(k|8
-	5L9i
-	5U9I
 ?6`*@
 ?6	(@
 /6`>@
@@ -1203,7 +1206,6 @@ $4DTdt
 64-bit
  6`"A
 (6`&A
- 6arBy
 6Ay+}E
 `6`BD
 6ConVar
@@ -1283,6 +1285,7 @@ _6hNB9	;
 '6i2@
 ?6i6@
 	(6i6@
+6I9h&
 6i"B)
 6i"C)
 ?6if@
@@ -1313,6 +1316,7 @@ _6inA9
 ?6v*@
 /6v"@
 '6vj@
+6x"@9
  74	(74
  74	(7t
  75	(7
@@ -1383,6 +1387,7 @@ _6inA9
 87`f@
 :,@8[,@8
 %8.8s: %-5d entries, '%s', ...
+		896f
 %8@9R
 8b  16-May-2010
 8CFmtStrNILi1024ELb0EE
@@ -1435,6 +1440,7 @@ _=8q	)
 _8X,@8
 8x9,7
 _8y,@8
+ @9)$
  @9	$
 --@9_
 -!@9_
@@ -1450,21 +1456,20 @@ _8y,@8
 )=@9)}
 )!@9)
 )	@9*
-@@9	"
 @9)!@
 @9)&@
+@9)%'
 @9*&@
 @9*	@
 @9+	@
 $@9	(
-	!:9}
 	)@9)
 	)@9*
-	}%9`
 	@9*]
 ,@9	0
 @90	@9
 9	0@9i
+9.1.15
 @91#@92
 92ji8R
 @92yr
@@ -1472,7 +1477,7 @@ $@9	(
 9,5@8K
 	@9*6B9
 @9(	 7
-$97{(
++97{(
 @9;7@9<
 9.@8 
 @9*-@8K
@@ -1497,7 +1502,7 @@ $97{(
  @9	$@9J
 *9@9J
 9@9j9
- @9	$@9JuF
+ @9	$@9JiF
 @9+	@9K
 @9a2@
 @9-b@
@@ -1521,9 +1526,9 @@ $97{(
 9CGameInfo
 9CRegistry
 9	D@8
-		.9dt
 9*E@8?
 @9E-@9U
+	-)9f
 @9h*@
 "@9H	
 (@@9H
@@ -1536,7 +1541,6 @@ $97{(
 9h^B9
 9hB@9
 9hbB9
-9hbD9
 @9hF@
 @9hf@9
 9hf@9(
@@ -1562,8 +1566,12 @@ $97{(
 9hZB9
 ) @9i
 @9i&@
- @9I$
+#)9i)
+	!~9i
+	}{9i
 @9I	@
+	!]9I
+	%]9I
 "@9i"@9
 9IBlackBox
 9IFileList
@@ -1586,15 +1594,14 @@ $97{(
 )9IYiy
 @9j&@
 *=@9J
-	-:9J
 @9j6B9?
 9j*@9(
 @9J!@9
 @9J#@9*
 @9J	@9&
 @9J9	
-@9J9F
 @9jF@
+@9J)F
 @9jij8
 @9jij8*G!7)
 @9jij8JE!6)
@@ -1612,6 +1619,7 @@ $97{(
 9kj(8|
 9Kkj8k
 9Kkj8k}
+*	9l.	9
 @9L	@9l
 @9L=@9M
 9l"A9
@@ -1631,19 +1639,21 @@ $97{(
 @9O	@9P
 @9p	@9
 @9 q@
-		+9qz
+	-*9)Q
+	!*9\Q
+	)*9qQ
 &,@9R
 &$@9R
 %<@9R
 % @9R
 %(@9R
 @9R1@9D
+	!#9s
 9	S)M*
 @9T|@
 @9T)@9K
 (@@9tB
 @9U|@
-	9U9I
 @9V%@9W
 @9-{vx
 @9){vxl
@@ -1657,32 +1667,28 @@ $97{(
 #@)`~A
 A-!(!
 A)`~@
+	a29~
 a2@yh2@y
 a8#%D
 _A8qh
+(a#9*
 +a@9?
 	!A9?
 		A9?
 		A9	
-	A|9?
 	A@9)
 	A@9)	
-	a	95&
 a@9+a
 a@9	a
-(a(9E
-A9)eG
 		A9h
 	A9h&A
+	a`9i
+	a_9i
 	a@9i
-	!a9I
 ^A9i^
 "A9i"
 *	A9i
-	A[9i
-	A]9i
 	A@9i
-	A\9i
 A9i>@
 	A@9I
 A9	ii
@@ -1690,20 +1696,26 @@ A9	ii
 A9|J@
 /A9`*J9
 	A9j"A
-*A@9k
 ,	A9K
 +	A9K
 A9Kik
 +	A9lC
-	a%9m
+(a/9M
+	a 9$P
+	a;9t
 ?A9tJ@
+A9)UG
+	a;9v
+	a&9v
+(a#9X
 A-'@A-
-)aa9?
 AA9(	
 AA9(	@
+	aa9i
 A(aN!
 $	A)Ar
 a^  b
+	ab9i
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 aBI9J
@@ -1711,6 +1723,8 @@ abort
 abortflag
 Aborting download of %s
 aB@ya
+	AC9?
+	ac9i
 Accel
 accept
 ACCEPT
@@ -1731,6 +1745,7 @@ active_spawngroup_handle
 ACT_NEUTRAL_REF_POSE
     Actual    : 
   Actual   : 
+	ad9i
 -adapter
 Adapter: %d
 AddAllocatedMessage
@@ -1819,7 +1834,6 @@ AE_VORTIGAUNT_ZAP_POWERUP
 AE_VORTIGAUNT_ZAP_SHOOT
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
-)Af9?
 A file with this name is already in the pool.
 After selecting and moving a panel Ctrl-z will undo the move.
 after solve err=%f
@@ -1831,14 +1845,12 @@ Agg data %d: %p (%d parts, crc 0x%08X)
 aggregate_value
 <a href=
 A!;I2
-	Ai9	
 #A)iBB
 ai_model_info
 .A)iN@
 AIWalkable
 A	@}J!
 a.JY .I
-	AL9i
 alias
 Alias a command.
 ALIGN_TYPE is wrong, please fix
@@ -1930,6 +1942,7 @@ Annotation
 ", another member of oneof "
 Anti-aliasing: 
 a numbered reference must not be zero
+	ap9	
 App active: %s, %dms inactive sleep
 .app/Contents/MacOS
 #AppFramework_InvalidLocalFiles
@@ -2024,8 +2037,6 @@ _attr_
 attrib
 Attribute counts between meshes is inconsistent
 Attribute "%s" was defined more than once.
-	aU9I
-	AU9I
 audible_mask
 audio
 AudioLanguage
@@ -2064,13 +2075,10 @@ avg_packets_out
 AVI recording failed! Missing expected pixels!
 avisound 
 /AV?O!
-	AX9i
 A{"xB
 Ax_! k
-	AY9i
 A@yi*@
 A)`z@
-	AZ9i
 AZUy!
 =	)B)
 	*`"B
@@ -2078,12 +2086,12 @@ B-!(#
 .B@)1
 B-1HD-
 *-B),5C)_
+	%B9)
 B@9	A
 ^B9h^
 b@9hb
 b"@9i
 b@9ib
-B	9T 
 bA9hb
 BA9hB
 BA9iB
@@ -2169,13 +2177,13 @@ BasePhysicsShape
 Base Spring; 
 	"$basetexture"	"%s%c%s"
 battery_saver
-BB9$|
 bB9hb
 BB9hB
 BB9hj:8
 bB@yG
 BC6h compression not supported on this target (windows only).
 BC7 compression not supported on this target (windows only).
+B channel not found
 B channel not found!
 " because it is missing required fields: 
 B)e"F
@@ -2322,11 +2330,13 @@ bottom
 Bounce
 bouncecolor
 Bounds ( %f %f %f ) ( %f %f %f )
+box2i
 boxcolor
 boxsize
   box %s, size %f, color(%d,%d,%d,%d)
 bPayloadEncrypted
 B-pFC-rND-
+branch gameinfo
 breakable_count
 breakable_model
 breakable_skin
@@ -2356,6 +2366,7 @@ __bss_start
 __bss_start__
 /BT?O
         bucket sorting ...
+buf error
 buffer error
 Buffer passed to JPEG library is too small
 Buffer size for writing string table baselnes
@@ -2370,7 +2381,6 @@ bug_submitter_override
 +bugvoice
 bugvoice_clear
 bugvoice_save
-build
 -buildcubemaps
 BuildDialog
 Build: %d (revision %s)
@@ -2427,13 +2437,11 @@ C-!($
 C-2-@
 C2S_CONNECTION_Message
 C2S_CONNECT_Message
-_c59(
 C-!8"
 (c@9+
 C9an@
 C9fj@
  c@9!g@9"
-	}C9i
 cA9s~
 cable
 cache/DownloadCache.db
@@ -2478,11 +2486,15 @@ Cannot get here
 Cannot quantize more than %d color components
 Cannot quantize to fewer than %d colors
 Cannot quantize to more than %d colors
+Cannot read a file 
+Cannot read file 
+Cannot reconstruct lineOffset table in DecodeEXRImage.
 Cannot register same format from/to a KV3 conversion (from '%s' to '%s')
 Cannot run script: NULL script name
 Cannot save as KV3_FORMAT_LOAD_WITH_NO_UPCONVERSION.
 Cannot save KV3 text to a non-text buffer!
 Cannot transcode due to multiple use of quantization table %d
+Cannot write a file
 Can only dump stats when active in a level
 Can't 
 Can't add Average filter after starting
@@ -2558,7 +2570,7 @@ CBidirMsg_RebroadcastSource
 CBidirMsg_RelayInfo
 CBidirMsg_RelayPacket
 CBitmapImagePanel
-cBL9B
+cBL9"
 CBoneConstraintBase
 CBoneConstraintPoseSpaceBone
 CBoneConstraintPoseSpaceBone::Input_t
@@ -2712,7 +2724,7 @@ CFinalizeConnectionPrerequisite
 CFingerBone
 CFingerChain
 CFingerSource
-cFL9B
+cFL9"
 CFootDefinition
 CFrameSnapshot CUtlMemoryPoolMT
 c^FyB
@@ -2760,6 +2772,9 @@ Change(%s):Start
 Changes to the console enable will not take effect until the next launch
 Changlevel found save %s
 channel
+channels
+, channels = 
+"channels" attribute not found in the header.
 character
 character value in \x{...} sequence is too large
 CHeapCompactionService
@@ -2876,6 +2891,7 @@ children
 CHitBox
 CHitBoxSet
 CHitBoxSetList
+chlist
 CHLTVClient::ExecuteStringCommand: Unknown command %s.
 CHLTVClient::SendSnapshot
 CHLTVClient::SendSnapshot(delta)
@@ -2923,6 +2939,8 @@ cHRM Red Y
 cHRM Red Z
 cHRM White X
 cHRM White Y
+chunkCount
+`chunkCount' attribute is not found in the header.
 C_INIT_AddVectorToVector
 C_INIT_AgeNoise
 C_INIT_CreateFromCPs
@@ -3105,7 +3123,6 @@ Client Input/Output
 clientinsetx_override
 Client I/O
 Client is running in anonymous mode.  Many steam features will not work
-Client Messages
 Client missing networkable entity class %s
 client_name
 -clientonly
@@ -3414,6 +3431,8 @@ Component index %d: mismatching sampling ratio %d:%d, %d:%d, %c
 component, you should also report this bug to the author(s)
 composite
 compressed %d -> %d bytes
+compression
+"compression" attribute not found in the header.
 Compression window is being reset to 512
 ComputeClientPacks
 computer_guid
@@ -3856,11 +3875,10 @@ D24FS8
 D24X4S4
 D24X8
 D24X8_SHADOW
-d2@y	
-d3@y	
+d2@yI
+d3@yI
 *-D),5E)_
 d6@y#
-d6@yC
 	D@8!
 D@8)%
 	D@8)m
@@ -3877,9 +3895,17 @@ data_compressed
 data error
 DATA_ERROR
 DATA_ERROR_MAGIC
+data_height = 
+data height too large.
 .data.rel.ro
+Data size too short
 data_table_name
 DataTable_ParseClassInfosFromBuffer: invalid class index (%d).
+data width or data height is negative.
+data width too large.
+dataWindow
+"dataWindow" attribute not found in the header or invalid.
+data_with or data_height too large. data_width: 
 dBD9cFD9
 [%d] Changing player name to Steam name '%s'
 %d clients:
@@ -3906,7 +3932,6 @@ DebugShowZPrepassNormals
 DebugTextureInfo001
 DebugVisualizerMgr
 decalprecache
-Decals
 decal_texture_index
 DeclareCurrentThreadIsMainThread
 Decompression failure
@@ -4108,6 +4133,8 @@ DispatchUpdateOnRemove
 Displays list of maps.
 Displays perf statistics information
 Display's the contents and flags of the current consistency list
+displayWindow
+"displayWindow" attribute not found in the header.
 distance
 Divider
 dme_position_map
@@ -4222,13 +4249,8 @@ DynamicConfigList
 dynamic_interaction
 .dynstr
 .dynsym
+-@))%E
 E-!("
-	E69gS
-	e(9[
-	E'9-
-	E'96
-	e%97
-	}e9i
  *Each frame will render %d times*
 echoln
 Echo log information to the console.
@@ -4252,7 +4274,6 @@ ehandle
 .eh_frame
 .eh_frame_hdr
 eikonal
-	EL9i
 element
 element_array
 elementid
@@ -4483,7 +4504,6 @@ Error writing to file
 Error writing user config file '%s'
 ERROR: You are trying to mount addon '%s' but SetAllowAddonChanges is false which probably means you shouldn't be calling this directly.
 ERROR: You are trying to unmount addon '%s', but SetAllowAddonChanges is false which probably means you should be using calling this directly.
-	eS9I
 Escape key allowed to hide game UI
 Escape key allowed to show game UI
 Escape key doesn't hide game UI
@@ -4493,8 +4513,6 @@ ESplitScreenMessageType
 .ESplitScreenMessageType
 ETC compression not supported on this target .
 ETC_TEXTURES
-	eU9I
-	EU9I
 event
 EventAdvanceTick_t
 EventAppShutdown_t
@@ -4623,6 +4641,7 @@ explosion_type
 explosive_damage
 explosive_radius
 EXPORTSYSTEM_INTERFACE_VERSION_001
+EXRHeader variable is not initialized.
 extend .$0 {
 extendee
 	extension
@@ -4647,12 +4666,9 @@ Extensions of MessageSets must be optional messages.
 Extensions to non-lite types can only be declared in non-lite files.  Note that you cannot extend a non-lite type to contain a lite type, but the reverse is allowed.
 extra interior spaces removed from keyword
 extreme cHRM chunk cannot be converted to tristimulus values
-	EY9?
 F-!($
 F-%:%
 *-F),5G)_
-	!f9	
-F	9L 
 fA9hf
 FA9hF
 FA9iF
@@ -4666,6 +4682,7 @@ Failed to allocate an instance of a class
 Failed to allocate an instance of class '%s'
 Failed to allocate memory
 Failed to assign bool literal value
+Failed to compute channel layout.
 Failed to connect to %s.  Reason code %d.  %s
 Failed to convert introspected block: %s
 Failed to convert KV3 to string; error: %s
@@ -4685,10 +4702,15 @@ Failed to map from %s to content-path
 Failed to map from %s to game-path
 Failed to open/bind server socket
 Failed to open %s
+Failed to parse attribute
+Failed to parse channel info
+Failed to parse channel info.
 : failed to parse contents
 Failed to parse delta header for Packet Entities, see log for details
+Failed to parse EXR version
 Failed to parse P2P message from '%s'
 Failed to precache script entity %s of type %s: script entity instance is null
+Failed to read attribute.
 Failed to read demo header.
 Failed to read screenshot!
 Failed to run entity framework script
@@ -4852,6 +4874,8 @@ FileRead for cloud file '%s' returned %d, even though GetFileSize returned size 
 File recursively imports itself: 
 FileSelectionCombo
 File %s is not allowed to be modified.
+File size is zero : 
+File size too short 
 Files that do not use optimize_for = LITE_RUNTIME cannot import files which do use this option.  This file is not lite, but it imports "
 File %s was not found.
 Files with optimize_for = LITE_RUNTIME cannot define services unless you set both options cc_generic_services and java_generic_sevices to false.
@@ -4902,14 +4926,14 @@ float32-quantized
 float64
 float_array
 floatbitmap.cpp
-floatbitmap.cpp(140): Unknown gamma type "%s"!
-floatbitmap.cpp(2463): Error calling TGALoader::GetInfo( %s )
-floatbitmap.cpp(2474): Error loading %s
-floatbitmap.cpp(2497): Error! Unknown file type for %s
-floatbitmap.cpp(2516): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s
-floatbitmap.cpp(324): Conversion not supported yet!
-floatbitmap.cpp(424): Conversion not supported yet!
-floatbitmap.cpp(887): Unsupported color format "%s", skipping!
+floatbitmap.cpp(141): Unknown gamma type "%s"!
+floatbitmap.cpp(2473): Error calling TGALoader::GetInfo( %s )
+floatbitmap.cpp(2484): Error loading %s
+floatbitmap.cpp(2507): Error! Unknown file type for %s
+floatbitmap.cpp(2526): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s
+floatbitmap.cpp(325): Conversion not supported yet!
+floatbitmap.cpp(425): Conversion not supported yet!
+floatbitmap.cpp(888): Unsupported color format "%s", skipping!
 FloatBitMap::DownsampleNiceFiltered
 FloatBitMap::QuarterSize
 FloatBitMap::QuarterSizeBlocky
@@ -5057,6 +5081,8 @@ Frame.TransitionEffectTime
 frame_trGrip
 #Frame_Untitled
 fread
+`fread' error. file may be corrupted.
+fread() error on 
 Freed EMS handle %u
 Freed XMS handle %u
 Free page file: %.2f MiB
@@ -5141,6 +5167,7 @@ GameDetailsServer
 game_dir
 game_directory
 game does not support save/restore.
+Game Engine
 GameEvent:  Event %s (id:%d group:'%s') added listener.
 GameEvent:  Event %s (id:%d group:'%s') removed listener.
 GameEvent:  Firing %s (id:%d group:'%s')
@@ -5153,8 +5180,8 @@ GameEventSystemClientV001
 GameEventSystemServerV001
 game.GBufferNormalSpecExp
 Game indicated network version %d is incompatible.
-gameinfo
 	game_info
+gameinfo_branchspecific.gi
 -gameinfo_define
 Game info file does not specify a steam app id!
 gameinfo.gi
@@ -5301,6 +5328,7 @@ gamma table being rebuilt
 ------ gathering state
 Gaussian
 GCC: (GNU) 4.9.x 20150123 (prerelease)
+G channel not found
 G channel not found!
 g cMesh
 g default
@@ -5461,13 +5489,14 @@ h&?);
 h&@)?
 #H)	}	
 H-!($
-h2@9)
+h2@9)=C
 h2@9H	
-h2@9)IC
+h2@9)uB
 h2K9(
 h2K9i
 h3E9(
 h3E9H
+h6	9v&
 H6h>@
 H6hV@
 H6in@
@@ -5484,6 +5513,7 @@ h"@9(
 h"@9)
 h"@9)$
 h"@9	
+h"@9	$
 `H9)}
 ?h98a
 H9a2B
@@ -5492,10 +5522,10 @@ h*@9h
 h*@9h/
 h*\9h
 *h"@9H
+*h#.9H
 h.@9H
 h"@9i
 h"@9I
-h"@9I$
 h:	9i>	9
 H9)yx
 h"A9)
@@ -5517,7 +5547,7 @@ hb@9`
 hb@9(
 hB@9`
 hB@9(
-hB@9)1C
+hB@9)%C
 <hb@9h
 hb@9h
 h"B9h
@@ -5527,13 +5557,11 @@ hB@9H
 hB@9t
 hb@9v
 hbA9(
-hBA9(
 <hbA9h
 hBB9(
 hbB9h
 hBD9iz@
 hBD9t
-hBF9i
 *hbGy		
 hbGy`
 hbGyi
@@ -5545,6 +5573,7 @@ hB.y(5
 *hB.yK
 hB.yM1
 HC333?
+Hc#9;
 hC@9h
 hcB9(
 headtype
@@ -5554,6 +5583,7 @@ health_override
 HeapCompactionService001
 Heap is corrupt
 heartbeat
+, height = 
 height,
 h&E)j
 HELPER_BONE
@@ -5604,7 +5634,7 @@ High Poly Draw Calls
 high_value
 Hit rate
 Hits/m
-hj48PS
+hj48IO
 hj|8H
 hj)8H'@
 hj8li*8J
@@ -5695,6 +5725,7 @@ hrEyu
 hrG9H	
 hrG9t
 hrI9(
+hrI9H
 hscript
 HSCRIPT-light
 hscript_lightbinding
@@ -5711,10 +5742,12 @@ hurt_them
 -hushsteam
 h~Uyh
 hv@9)
+hv@9)uA
 hvUyh
 h*@y_
 h*@y	
 h&@y)
+h&@yi
 h&@yI
 hzEyH
 hzEyi
@@ -5725,18 +5758,20 @@ hzT9`zA
 	*	i*
 	*I}`
 i2@9(
+	i291
 i2@9j
 %i %3i.%3i.%3i.%3i : %.3f min
 %i %3i.%3i.%3i.%3i : permanent
-	i69Z
 i6@yh
 i78w"B
 i7xh6@
 _i(8+
+?i(8%
 	*	i8
 	I*8)
 i)8a^A
 *i(8B
+?i(8F
 ?i(8h
 ?i(8h*@
 i-8h*@
@@ -5748,18 +5783,16 @@ i)8i&
 i`8%i`8
 i)8i&W
 ?i(8?i*x?i+
-?i(8j
 i)8j&W
 i*8j&W
 i(8m&W
 ?i(8v
 i*8?y*xJ
 *i"@9
-	i%94
+	i 99P
 I9`BA
-I9)%D
+	-i9i
 )I@9I
-	i	9J&
 i"@9J
 IAppSystem *CAppSystemDict::AddSystem(const char *, const char *, ErrorResponse_t)
 IAppSystem *CAppSystemDict::AddSystem(CreateInterfaceFn, const char *)
@@ -5954,7 +5987,6 @@ Ii+x!
 	iix?!:k`
 i"@)j
 )ij8	
-ij(8(!
 )Ij8?
 Ij8)	@
 ij8)ij8*
@@ -5981,13 +6013,12 @@ IKChainOld
 ikdata
 IKData
 i"K)h"
-Ikh8?
+ikh8?
 ikrig
 IKRigBiped
 IKRigBug
 IKRigSimple
 il8k	@
-	IL9i
 Illegal jstype for int64, uint64, sint64, fixed64 or sfixed64 field: 
 )ilxi
 ilxMik8	i,x
@@ -5996,6 +6027,7 @@ i*?)m
 im8Jy
 imageAlignment
 imagecolor
+Image data size is zero or too large: width = 
 Image height exceeds user limit in IHDR
 Image height is zero in IHDR
 imageSelected
@@ -6101,6 +6133,11 @@ instant_replay_skip_live
 instant_replay_timescale
 instant_replay_togglepause
 Insufficient arguments to blackbox_record. Usage: blackbox_record <type> <message>
+Insufficient data length.
+Insufficient data size.
+Insufficient data size for attributes.
+Insufficient data size in offset table.
+Insufficient header/data size.
 insufficient memory
 Insufficient memory (case %d)
 Insufficient memory for hIST chunk data
@@ -6153,6 +6190,20 @@ Interval_per_tick %f out of range [%f to %f]
 Interval time in seconds to write full updates to demo.
 In the Build Mode Dialog Window:
 In the Context Panel:
+Invalid argument for DecodeEXRImage().
+Invalid argument for LoadDeepEXR
+Invalid argument for LoadEXR()
+Invalid argument for LoadEXRFromMemory
+Invalid argument for LoadEXRImageFromFile
+Invalid argument for LoadEXRImageFromMemory
+Invalid argument for LoadEXRMultipartImageFromFile
+Invalid argument for LoadEXRMultipartImageFromMemory()
+Invalid argument for ParseEXRHeaderFromFile
+Invalid argument for ParseEXRMultipartHeaderFromFile()
+Invalid argument for ParseEXRMultipartHeaderFromMemory
+Invalid argument for SaveEXRImageToFile
+Invalid argument for SaveEXRImageToMemory
+Invalid argument. `memory` or `exr_header` argument is null in ParseEXRHeaderFromMemory()
 Invalidate
 Invalid background palette index
 Invalid binding:  Tried to GetConfigValueOrConvarValue from ConCommand( %s )
@@ -6167,6 +6218,7 @@ Invalid blackbox type: %s
 invalid block type
 invalid_bone
 Invalid challenge packet.
+Invalid channels format
 Invalid cHRM blue point
 Invalid cHRM green point
 Invalid cHRM red point
@@ -6184,11 +6236,16 @@ INVALID_CPPTYPE
 Invalid crop request
 Invalid data.
 Invalid data for member '%s'
+Invalid data found when decoding pixels.
+Invalid data height value
+Invalid data width or data height: 
+Invalid data width value
 invalid distance code
 Invalid download file table.
 invalid escape sequence in character class
 Invalid escape sequence in string literal.
 <INVALID EXPRESSION>
+Invalid EXR header.
 Invalid file descriptor data passed to EncodedDescriptorDatabase::Add().
 Invalid filter method in IHDR
 Invalid filter type specified
@@ -6210,15 +6267,19 @@ Invalid JPEG file structure: two SOI markers
 Invalid key for map field.
 invalid keyword character 0x@1
 invalid literal/length code
+Invalid magic number
 Invalid member name '%s'
 Invalid memory pool code %d
 Invalid message set extension.
 Invalid number of colors in palette
 Invalid number of histogram entries specified
 Invalid number of transparent colors specified
+Invalid offset size in EXR header chunks.
+Invalid offset value in DecodeEXRImage.
 Invalid palette length
 Invalid palette size, hIST allocation skipped
 Invalid parent region %s specified for region %s in panel %s
+Invalid `part number' in EXR header chunks.
 Invalid Path
 Invalid pCAL equation type
 Invalid progressive parameters at scan script entry %d
@@ -6243,6 +6304,8 @@ Invalid Steam key size.
 invalid stored block lengths
 Invalid strings::Substitute() format string: "
 Invalid symbol name: 
+Invalid tile size x : 
+Invalid tile size y : 
 Invalid time specified for tIME chunk
 invalid UTF-8 string
 Invalid value for boolean field "
@@ -6272,7 +6335,6 @@ IP filter list: %i entry
 IQuickTime001
 ir8Jic
 ir8kic
-irC9h
 *irD9?
 IRecipientFilter
  %i refs
@@ -6345,8 +6407,6 @@ items
 items_clientside
 items_t
 *)iu8)}
-	iU9I
-	IU9I
 %i users
 [i:%u:%u]
 [I:%u:%u]
@@ -6368,20 +6428,17 @@ j.])
 @ @-J
 j2?)?
 j2	)k
-j38%O
-j481X
 j48	C
 j48t^@
 j4xH;@
 j58:#
-j58h$
 j58hf@9(
 j58"l
 j688&
 j68u"@
 j7Ayh3Ay)	
-j88w.
-j(8H(
+j(8((
+j88c9
 j)8hjj
 j(8(Z@
  J9?@
@@ -6391,10 +6448,12 @@ J!@9#
 j98z!
 J9afA
  J9F|
+	-j9i
 j	@9I
 J!@9jB
 J9tB	
 ja8B(
+	*JA9
 J]A9_
 jA9hj
 JA9iJ
@@ -6517,25 +6576,23 @@ K1@yk
 *k2@y
 ?k58D
 K5@yk
-?k68)q
-k68Vz
-?k78!%
 *?k78
 k78(&
-k78}=
+k78(#
 ?k78h
+k78}H
 ?k)8(
-	k(87
 _k88?
 ?k88_
 ?k88(&
 ?k88w
-?k88X$
+?k88x$
 k(8vV@
 K!@9+!
 K	@9)
 _k98(!
 _k98x
+	K9C'
 K9@yk
 K	A9lC
 kaJJk[k
@@ -6706,7 +6763,7 @@ Khi 8
 *Khi8Lhj8
 Ki,8*
 Ki)8i*@
-ki8k9F
+ki8k)F
 Kick a player by name.
 Kick a player by userid or uniqueid, with a message.
 kickid
@@ -6733,6 +6790,7 @@ kn1V?OK
 :(knN
 Known by handlers: 
 Known Peer State "%s"
+	*kQ)
 Kq@yk
 KQ@yk
 K)T9J!P9j
@@ -6765,7 +6823,6 @@ KY@yk
 L %02i/%02i/%04i - %02i:%02i:%02i: %s
 l	@9,
 "L9`2
-	=L9i
 l	@9J
 la@9L	
 L	A9mC
@@ -6807,7 +6864,6 @@ LayoutFileChanged
 [lazy = true] can only be specified for submessage fields.
 lb@9l
 LC_ALL
-LCL9j
 L=cl_clock_correction
 %ld%c
 leading_comments
@@ -6882,6 +6938,8 @@ Line %d col %d:
 Line %d: Invalid literal value "%s"
 Line %d: Invalid value "%s"
 Line %d: %s
+lineOrder
+"lineOrder" attribute not found in the header.
 Lines of crash dump console spew to keep.
 LinkClasses: class %d not initialized.
 Linux
@@ -6939,6 +6997,7 @@ LoadFromInMemoryEXR( %s ) failed.
 Loading gameui.dll
 Loading map "%s"
 Loading map "%s" (addon '%s')
+Loading multipart or DeepImage is not supported  in LoadEXR() API
 #LoadingProgress_BeginConnect
 #LoadingProgress_Changelevel
 #LoadingProgress_Connecting
@@ -7047,10 +7106,11 @@ LrwcE
 lseek
 %ls [wstring, len = %d]
 [L:%u:%u]
-	m%9:
-	m	9B$
+	m29K
+	m;9A
+	m;9C
 m%@9i)
-	m	9M%
+	m.9q
 m	A9j"
 m_aAngOffset
 Machine
@@ -7302,8 +7362,6 @@ m_drawCalls
 m_drawCullData
 m_dynamicParams
 m_dynamicTextureParams
-	me9)
-	mE9i
 media/l4d2_background%02d.bik
 m_eHand
 m_ElementName
@@ -7486,7 +7544,6 @@ m_FullSendTables
 m_Gradient
 m_GroupName
 *mGxJ
-	mh9i
 m_hActivator
 m_hBuffer
 m_hCaller
@@ -7560,7 +7617,6 @@ m_JointName
 m_Joints
 mkdir
 @mk%@y
-	ML9i
 m_lightCookie
 m_LiteralColor
 m_LoopState
@@ -7571,6 +7627,7 @@ m_materialName
 m_metacarpalBoneName
 m_morphSet
 Mm@xM
+	mn9i
 m_Name
 m_nameStringableIndex
 m_nAnimationType
@@ -7754,7 +7811,6 @@ Moves the camera position + orientation to the named entity
 Moves the camera position + orientation to the specified position
 ?Movie
 movie/%04d_%02d_%02d_%02d_%02d_%02d/%s
-	mP9i
 m_parentName
 m_PathIndex
 m_pAttributes
@@ -7790,6 +7846,7 @@ m_qBaseOrientation
 m_qChildBindRotation
 m_qOffset
 m_qParentBindRotation
+	mr9i
 m_Range
 m_renderAttributesUsed
 m_Renderers
@@ -7831,7 +7888,6 @@ m_tipParentBoneName
 m_toeBoneName
 MTreatUnknownEnumeratorsAsZero
 m_Type
-	mU9I
 m_uint
 m_uint64
 multiplayer_break
@@ -8437,9 +8493,10 @@ objc_class_prefix
 OBSOLETE replaced by mobile_fps_* - Battery saver mode. 0=off, 1=on
 Obtained EMS handle %u
 Obtained XMS handle %u
-Oct 23 2019
+Oct 31 2019
 octal value is greater than \377 (not in UTF-8 mode)
 o@debug_draw_enable
+# of channels is zero.
 # of seconds to wait after final client leaves before hibernating.
 of that program.  Please make an effort to report this bug;
  of the Protocol Buffer runtime library, but the installed version is 
@@ -8556,6 +8613,7 @@ outgoing
 'out_location' must not be NULL
 out of bounds - LOS needs to pass through outside space, hint this in the level!
 outoffocus_bgcolor_override
+out of memory
 Out of Memory
 Out of memory while procesing keyword
 Out of memory while processing sPLT chunk
@@ -8578,6 +8636,7 @@ output_depth_texture
 output_depth_vr_rt
 Output file write error --- out of disk space?
 outputid
+Output memory size is zero
 Output server networking statistics in json format
 output_type
 Output unserialization of entities on map load. 0 - off, 1 - client/server, 2 - server, 3 - client
@@ -8599,6 +8658,7 @@ p6jf@
 p6jR@
 p7v	P7
 P7x"@
+	-p9i
 "pA3QuW
 package
 package $0;
@@ -8646,8 +8706,10 @@ PanoramaUIClientFromClient
 PanoramaUIClient interface not set up
 PanoramaUIEngine001
 PARALLEL_PROCESS sv_packedentities.cpp:909
+PARALLEL_PROCESS tinyexr_impl.cpp:163
 PARALLEL_PROCESS utlsoacontainer.cpp:2533
 PARAM_ERROR
+parameter error
  Parameter to BackUp() can't be negative.
 paramName
 , parent: 
@@ -8766,6 +8828,8 @@ pin_to_sibling_corner
 Pio8Li/8
 pitch
 Pitch; 
+pixelAspectRatio
+"pixelAspectRatio" attribute not found in the header.
 P,@L 
 .placeholder.proto
 .PLACEHOLDER_VALUE
@@ -9169,11 +9233,14 @@ PVS cluster %d
 pvs.cpp
 PVS origin %s
 py_generic_services
-	Q69uR
-	Q'9d
+	q29&
+	!q9	
+	q;9 
+	q;9"
+	q:95h
 *Q@9j
-	q%9l
-	Q'9m
+	q.9L
+)qa9?
 Q(aNf(!
 qangle
 QAngle
@@ -9181,12 +9248,10 @@ qangle_array
 QAngle-world
 q(	AzK
 QB)5}@
-	Qb9I
 	QB9i
 QE@yk
 *	qG9)
 	qG9)
-	Qg9i
 q?h(8
 qhB	9
 qhnG9)
@@ -9200,11 +9265,9 @@ qJT-s
 qknG9
 q	kw8A
 Q/!OJ
-	qP9i
         qsort [0x%x, 0x%x]   done %d   this %d
 	qSy)
 *qSyJ
-	qU9I
 quality
 quality %d 
 quality software.  Thanks.  Julian Seward, 30 December 2001.
@@ -9233,7 +9296,6 @@ qWiw8
 Q-@yk
 Q]@yk
 Q?Y(xhv@
-)QZ9?
 R11_EAC
 R16F_EXPAND
 !~r(2
@@ -9243,7 +9305,7 @@ R6hx8
 R8G8B8A8_ETC2_EAC
 R8G8B8_ETC2
 *R)8yv
-r	!!9_A&9c
+	}r9i
 r@9ir
 rA9hr
 RA9iR
@@ -9272,6 +9334,7 @@ RATINGBOARD
 rawpkt
 RB9hR
 r_camerapos
+R channel not found
 R channel not found!
 rcon_address
 RCON Cmd: recv error (%s)
@@ -9615,8 +9678,10 @@ R	h(8
 R	h(8	
 r	hi8I
 rhj)8
+rhj)82N
 rhj)8H
 rhjh8
+rhjh8(
 Rhjh8
 Rhjh8(
 rhjh8h
@@ -9653,8 +9718,8 @@ Rjjh8hB
 rJMJJ
 RJ	* &v
 R?k78
-R?k)8
 R(k)8
+R?k)82f
 R(kh8
 R(kh8h
 R(kh8H
@@ -9700,7 +9765,7 @@ r_stereo_eye_separation
 r_stereo_mode_anaglyph
 r_stereo_mode_crossed
 r_stereo_mode_parallel
-Rtj(8
+Rtj(8,
 r_toggleviewportsize
 r_translucent
 rt+rld
@@ -9769,7 +9834,7 @@ S3: Duplicate client connection: UserID: %x SteamID %s
 S3,	S48
 S)5K*j
 %s = %6d (%6d:%6d)
-	]S9i
+S+a!9Hq!9h
 %s. Ack, Net Buffer overflowed.
 %s:  adding %d:'%s' (%d total) userdata %d
 -safe_mode
@@ -9879,6 +9944,10 @@ screenshot resampling failed (error code %d)
 ScreenshotService001
 screenshot_subdir
 Screenshot written to: %s
+screenWindowCenter
+"screenWindowCenter" attribute not found in the header.
+screenWindowWidth
+"screenWindowWidth" attribute not found in the header.
 screenx
 screeny
 Script_DebugBreak
@@ -10216,7 +10285,6 @@ Shift clicking panels allows multiple panels to be selected into a group.
 <shim>
 shithead
 S?-HjhM@
-short
 shot_
 Should not reach here.
 should PostActionSignals
@@ -11131,6 +11199,7 @@ T#$@9D(
 T#,@9D0
 T#\@9D0
 T*9	S
+t@9)uA
 T	/A)
 T	a@9
 Tab@9
@@ -11300,6 +11369,7 @@ Thf@y
 ThF@y
 Th"G9
 Th"H9
+Th"I9
 Thin Plate
 ". This appears to be a value from a sibling type.
 This can be used to force the value of cl_predict for connected clients (only while they are connected).
@@ -11393,6 +11463,7 @@ T-ik8.kk8k
 TIkh8?}
 tileHorizontally
 tileImage
+tiles
 tileVertically
 TILT_TWIST
 T im8
@@ -11435,7 +11506,8 @@ TizEyJ
 Tj2@9j
 Tj2B9)
 Tj6@y_! k
-tj)8,
+tj)8#
+tj(8W.
 T`"J9
 Tj"@9J
 TjkA9k'@
@@ -11712,21 +11784,11 @@ T"zrx
 \U%08x
 u64( %lld = 0x%llX )
 )U7O{
-	%U9)
-	U'9?
-	u	9b%
-	U'9H
-	=U9I
-	-U9I
-	u%9K
-	u	9W$
-	uC9i
+	u.9+
 %u CPU%s
 %u[%d]
 udp/ip   : %s:%i
 udp_port
-	ue9)
-	Ug9i
 -uidev
 UILanguage
 uint16
@@ -11820,6 +11882,7 @@ Unknown APP14 marker (not Adobe), length %u
 Unknown command or convar '%s'!
 unknown compression method
 Unknown compression method in IHDR
+Unknown compression type.
 Unknown compression type @1
 Unknown compression type in iCCP chunk
 Unknown custom filter method
@@ -11883,6 +11946,9 @@ Unspected spawngroup message in DemoSpawnGroups %d.
 Unsupported
 Unsupported binary encoding id.
 Unsupported color conversion request
+Unsupported component value : 
+Unsupported compression format
+Unsupported compression type : 
 Unsupported field type for entity attribute, field %s
 Unsupported field type %s (%d) for conversion from old KeyValues, field %s
 Unsupported JPEG data precision %d
@@ -11890,6 +11956,7 @@ Unsupported JPEG process: SOF type 0x%02x
 Unsupported marker type 0x%02x
 Unsupported text encoding id.
 Unsupported: type mismatch
+Unsupported version or scanline
 (Untested Direct Routing)
 <ununsed>
 unused
@@ -11984,7 +12051,6 @@ userinfo
 UserInfoChangeService_001
 user_keys
 user_keys_default
-User Messages
 usermsgs
 	usermsg_t
 users
@@ -12005,7 +12071,6 @@ UTF-8 data when
 utlbuffer.cpp
 utlstring.cpp
 utlstringtoken
-	UU9I
 %u:%u:%u
 [U:%u:%u]
 [U:%u:%u:%u]
@@ -12133,6 +12198,7 @@ VerifyTest() vanilla result = Pass
 version
 VersionDate
 ) version error
+version error
 version  : %s/%d %d %s %s%s
 VersionTime
 	"$vertexalpha" "1"
@@ -12261,6 +12327,7 @@ Visibility %s.
  (Visible)
 V_isnan
 V_iswspace
+v@Jan
 V_logf
 V_LogMultiline
 _V_MakeAbsolutePath
@@ -12280,7 +12347,6 @@ vn %g %g %g
 	*vO@
 /!V?O!
 / V?OBT?O
-v@Oct 22 2019
 Voice
 voice_always_sample_mic
 voice_data
@@ -12693,6 +12759,8 @@ X80ijx
 @x_!8k
 @x_!8k@
 X8Qikx
+	-X9I
+	)X9I
 @x_!9k
 xboxsystem.cpp
 XboxSystemInterface001
@@ -12727,8 +12795,7 @@ Y80ijx
 #Y80ijx
 Y8Qikx
 #Y8Qikx
-	y%9(
-	Y'9#
+	y{9i
 @y?!9k
 y+	@9km
 Yaw; 
@@ -12743,12 +12810,10 @@ Y@    block %d: crc = 0x%8x, combined CRC = 0x%8x, size = %d
 @yc|	
 #@@yc
 y#	@=c
-	yC9i
 yC	@}c
 @y+}E
-	ye9i
 #@yh^
-#@yh*
+#@yH*
 yh2@y
 %@y!ha
 yhBGy
@@ -12770,7 +12835,6 @@ yh"@y
 @yi2@
 @.yI5
 yi6@y?
-	yI9i
 yif@9
 yiFGy?
 yi^Fy)
@@ -12795,6 +12859,7 @@ yj.@yJ
 @yK	@y
 yk^@yj
 ykZ@yI
+	yn9i
 Y ng*a
 yNs*!
 Y nsZ n
@@ -12806,9 +12871,8 @@ you_hear_them
 Your current chat group is "%s"
 @yO	@y
 y(qSy
-	YU9I
+	yr9i
 yuJ	9(a@
-	Yv9)
 @y	WDy
 Y`x($
 (y{x7
@@ -12831,7 +12895,6 @@ _Z6ConMsgPKcz
 _Z6DevMsgPKcz
 #Z80ijx
 Z*=@8H
-	-z9i
 #@)`zA
 ZA9iZ
 ZB9hZ
@@ -12839,6 +12902,8 @@ _ZdaPv
 _ZdlPv
 zero length keyword
 Zero length keyword
+ZFP compression is not supported.
+ZFP compression is not supported in this build
 Zih8hih8)y
 Zip-bug: an internal error during flation
 Zip-bug: internal initialisation not completed
@@ -12883,6 +12948,7 @@ _ZN13CBufferString6FormatEPKcz
 _ZN13CBufferString6InsertEiPKcib
 _ZN13CBufferString6SetPtrEPciibb
 _ZN13CBufferString8RemoveAtEii
+_ZN13CBufferString8TrimHeadEPKc
 _ZN13CBufferString9SetLengthEibPi
 _ZN13CThreadRWLock11UnlockWriteEv
 _ZN13CThreadRWLock11WaitForReadEv

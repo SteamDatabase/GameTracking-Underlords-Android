@@ -81,10 +81,8 @@ $@)  "
 29CBoneConstraintPoseSpaceMorph
 29CRenderingPipelineOvertopMenu
 29CRenderingPipelinePostProcess
-2	a#9
 2_BONE_IK
 	2	i*
-2	q"9s
 2Way_0( %s )
 2Way_1( %s )
 30CModelConfigElement_RandomPick
@@ -96,9 +94,12 @@ $@)  "
 34CModelConfigElement_SetRenderColor
 36CModelConfigElement_SetMaterialGroup
 =(3@9
-3@9iJ
+(3@9?
+(3@9iJ
+(3@9j
 (3@9|J
-3@9jJ
+(3@9JA
+(3@9jJ
 3D Skybox
 3DSkyboxForward
 3DSkyboxLightBinnerVr
@@ -130,7 +131,6 @@ $@)  "
 8x9,7
 (@@9(
 9(3@9
-$9FFs
 	@@9h
 (@@9H
 "@9hf@9i
@@ -141,9 +141,11 @@ $9FFs
 (@@9tB
 'A)	}	
 A-!(!
+A\9ht
 A-'@A-
 ACT_IDLE
 ACT_NEUTRAL_REF_POSE
+	ad9	
 AE_ACTION_SET_TURN_RATE_SCALE
 AE_BLIND_ZOMBIE_SNIFF
 AE_CL_ADD_PARTICLE_EFFECT_CP
@@ -224,6 +226,7 @@ AnimStartLoop
 AnimSubtract
 AnimVRFinger_t
 AnimVRHand_t
+	AO9	
 AoProxyDebug
 ApplyFog
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
@@ -250,7 +253,6 @@ auto_unragdoll_duration
 *-B)!
 B-1HD-
 *-B),5C)_
-	!b9	
 b]9AQ
 BackgroundForShaderIDs
 Bad header format (expected '<!--'
@@ -277,7 +279,7 @@ BaseIKRig
 baselayer
 BasePhysicsShape
 Base Spring; 
-BB9_w
+BB9X{
 BeforeTranslucent
 BenchmarkService001
 bentnormal
@@ -423,6 +425,7 @@ ClearOutputDepth
 ClearQuadCoverage
 client
 clientcmd_can_execute
+ClosedCaption
 cloth_collide
 cloth_collision_layer0
 cloth_collision_layer1
@@ -599,6 +602,7 @@ dynamic_interaction
 Dynamic Opaque Forward
 .dynstr
 .dynsym
+	!e9	
 EconItemToolModel_001
 _edata
 EditorDynamicConfig
@@ -677,6 +681,7 @@ f %d %d %d
 FeetSettings
 FeModel combiner: Too many ropes (%u) or links (%u): cannot fit sum in uint16
 %f %f %f %f
+F-Hy@
 .fini_array
 FixupResourceName: Illegal full path passed in ("%s")!
 FixupResourceName: Illegal path, missing extension passed in ("%s")!
@@ -766,7 +771,6 @@ HELPER_BONE
 HelpSystem_001
 hf@9H
 hf@9i
-H%@)J	@
 H#L9`r
 Hologram Depth
 Hologram Wireframe
@@ -774,7 +778,7 @@ HostStateMgr001
 hurt_me
 hurt_them
 h&@y)
-i*@)a
+I)@)!
 ib@9j
 I CUtlLinkedList<int, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short> >::AllocInternal(bool) [T = int, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int, CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int>, unsigned int> >::NewNode(const T *) [T = CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, I = unsigned int, L = CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int>, unsigned int>]
@@ -840,7 +844,7 @@ is_debris
 #It contains connectivity part %d with %d vertices
 @ @-J
 j2?)?
-j88ED
+J38);
 J-cb@
 J-dj@
 JEIJJ}
@@ -1541,7 +1545,6 @@ QuarterResDepth
 QuarterResEffectsColor
 QueuedLoaderVersion001
 Quintic
-r*-@)!
 R11_EAC
 R16F_EXPAND
 R32_UINT
@@ -1557,6 +1560,7 @@ r_cubemap_debug_colors
 r_deferred_cubemap_diffuse
 r_deferred_debugvis
 r_dither_scale
+r_draw_overlays
  ReadToken overflow
 recenter_on_parent_bone
 RecursiveLoadFromBuffer:  got conditional between key and value

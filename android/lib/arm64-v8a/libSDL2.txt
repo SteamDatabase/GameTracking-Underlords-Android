@@ -660,12 +660,15 @@
  T SDL_DYNAPI_entry
  T SDL_EGL_ChooseConfig
  T SDL_EGL_CreateContext
+ T SDL_EGL_CreateOffscreenSurface
  T SDL_EGL_CreateSurface
  T SDL_EGL_DeleteContext
  T SDL_EGL_DestroySurface
  T SDL_EGL_GetProcAddress
  T SDL_EGL_GetSwapInterval
+ T SDL_EGL_InitializeOffscreen
  T SDL_EGL_LoadLibrary
+ T SDL_EGL_LoadLibraryOnly
  T SDL_EGL_MakeCurrent
  T SDL_EGL_SetErrorEx
  T SDL_EGL_SetRequiredVisualId
@@ -682,6 +685,7 @@
  T SDL_EventsQuit
  T SDL_EventState
  T SDL_EventState_REAL
+ T SDL_ExitProcess
  T SDL_exp
  T SDL_expf
  T SDL_expf_REAL
@@ -1212,6 +1216,7 @@
  T SDL_IsGameController_REAL
  T SDL_IsJoystickHIDAPI
  T SDL_IsJoystickNintendoSwitchPro
+ T SDL_IsJoystickNintendoSwitchProInputOnly
  T SDL_IsJoystickPS4
  T SDL_IsJoystickSteamController
  T SDL_IsJoystickXbox360
@@ -1336,6 +1341,8 @@
  T SDL_LockSurface_REAL
  T SDL_LockTexture
  T SDL_LockTexture_REAL
+ T SDL_LockTextureToSurface
+ T SDL_LockTextureToSurface_REAL
  T SDL_log
  T SDL_Log
  T SDL_log10
@@ -1403,6 +1410,10 @@
  T SDL_MemoryBarrierReleaseFunction_REAL
  T SDL_memset
  T SDL_memset_REAL
+ T SDL_Metal_CreateView
+ T SDL_Metal_CreateView_REAL
+ T SDL_Metal_DestroyView
+ T SDL_Metal_DestroyView_REAL
  T SDL_MinimizeWindow
  T SDL_MinimizeWindow_REAL
  T SDL_MixAudio
