@@ -116,9 +116,9 @@
 			{
 				"Action"		"dac_scroll_camera_down"						
 			}
-			"ResetCameraPosition"
+			"TiltCameraModifer"
 			{
-				"Action"		"dac_reset_camera_position"						
+				"Action"		"+dac_tilt_camera_modifier"						
 			}
 		}
 	}
@@ -130,7 +130,7 @@
 		{
 			"Name"		"DEFAULT"
 			"Version"		"3"
-			"AlgorithmicUpdateVersion"		"5"
+			"AlgorithmicUpdateVersion"		"6"
 		
 			"Keys"
 			{
@@ -239,7 +239,7 @@
 				{
 					"Key"		"MWHEELUP"					
 				}
-				"ResetCameraPosition"
+				"TiltCameraModifer"
 				{
 					"Key"		"MOUSE3"					
 				}

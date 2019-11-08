@@ -263,9 +263,9 @@ $0 to $1,
 2ij(8
 2ij(8F
 2j"@9)p
-2?k78
+2?k786
 2_k88
-2?k88
+2?k885
 2njj8l
 2Way_0( %s )
 2Way_1( %s )
@@ -273,7 +273,6 @@ $0 to $1,
 2	y3x
 2	y4xaFAy
 2*y4xaJAy
-2:y*q
 2*y(x	
 2*Y(x
 -3@)+
@@ -1730,7 +1729,6 @@ Extensions to non-lite types can only be declared in non-lite files.  Note that 
 F-%:%
 *-F),5G)_
 f@9	A
-F@9	Y
 fA9hf
 FA9iF
 faceMergeAngle
@@ -2075,7 +2073,6 @@ h)8Ay)
 h"@9h
 h*@9h/
 h.@9H
-h"@9i
 h"@9)IG
 h"A9a
 h"A9)!F
@@ -2107,7 +2104,7 @@ hB@9t
 hbAy`V
 hbB9h
 hBC9	
-hbD9I
+hbD9)
 hbD9t
 hC@9h
 HC@9h
@@ -2136,7 +2133,7 @@ H$@-J
 hj48{	
 *hj)8h
 hj)8H
-hj)8kv
+hj)8*n
 hJAyJ
 hjj8	
 h*@)K
@@ -2153,7 +2150,6 @@ h"py`
 HQ@9(Q
 $)hR@
 hR=9hji8
-hR@9i"
 hrAyi
 hRAy`R
 hrAy`Z
@@ -2241,11 +2237,17 @@ Iii8*
 Ii+x!
 i"@)j
 *ij(8
-*ij(8~
+*ij(8`
+*ij(8<
+*ij(8{
 ij(8(
+*ij(8E
+*ij(8i
 *ij(8kj*
-*ij(8l
-*ij(8u
+*ij(8m
+*ij(8N
+*ij(8r
+*ij(8W
 ij(8Z
 ijj8?
 IjJY@
@@ -2425,17 +2427,19 @@ is_transition
 !iv8?|
 *i(xi
 i#xjj-
+iy8D`
 IyixJylx+
 @ @-J
 @-J	,
 j2?)?
+J38V8
 j48	C
 j48t^@
 j4xH;@
 j58hf@9(
-j78a&l
 j)8	=
 j)8	1
+j88a&l
 j(8h<
 j)8hZ@
 j(8jj)8
@@ -2485,7 +2489,6 @@ jstype is only allowed on int64, uint64, sint64, fixed64 or sfixed64 fields.
 j<@-UP@-i
 j@)UqA)
 jv8?)
-j)x-~
 j(xhb@9h
 j*xhfw
 j:@y)
@@ -2499,13 +2502,11 @@ K1D)M9E)
 K1F)M9G)
 K1H)M9I)
 ?k58D
-?k68RB
-?k78	
-*?k78(
-k78:|
-k78?~
+?k78}
+*?k78
 ?k78h
 k78o_
+_k88:
 k(8vV@
 K	A9lC
 kAKJk
@@ -4021,7 +4022,7 @@ RGBA32323232F
 RGBA8888_LINEAR
 RGBX555
 RGBX8888
-Rh"0y
+Rh"0yaF
 R	h(8	
 Rhf@9
 R	hh8
@@ -4061,7 +4062,7 @@ Rjjj8
 rJMJJ
 RJMJJ,
 rJMJJi
-R?k78
+R?k78G
 R(kh8
 R	kh8)
 R	khx)
@@ -4110,7 +4111,8 @@ rt_lpvPongR.vtex
 rt_LPV.vtex
 runspeed
 r@yi"@
-R@yI	
+R@yi	
+R@yJAH
 ryjj8
 --- %s: 
 "%s" 
@@ -4171,7 +4173,7 @@ scenegfxresources.cpp(309):
 scenegfxresources.cpp(491): 
 scenegfxresources.cpp(513): 
 scenegfxresources.cpp(740): 
-scenegfxresources.cpp(905): 
+scenegfxresources.cpp(897): 
 sceneobject_h
 sceneobject_methods.cpp
 scene_quadindexbuffer
@@ -4187,10 +4189,10 @@ SceneSystem/CMTAtlasChunkSizeMobile
 SceneSystem/CMTAtlasHeightMobile
 SceneSystem/CMTAtlasWidthMobile
 scenesystem.cpp
-scenesystem.cpp(1209): 
-scenesystem.cpp(4403): 
-scenesystem.cpp(6255): Expecting 1 renderable pass for material "%s" but found %d!
-scenesystem.cpp(7488): Waited 500 ms for jobs to complete. Attempt to drain windows message queue. Jobs in queue = %d
+scenesystem.cpp(1202): 
+scenesystem.cpp(4357): 
+scenesystem.cpp(6209): Expecting 1 renderable pass for material "%s" but found %d!
+scenesystem.cpp(7433): Waited 500 ms for jobs to complete. Attempt to drain windows message queue. Jobs in queue = %d
 SceneSystem/CubemapFog
 scenesystemdebug
 SceneSystem/DisableShadowFullSort
@@ -4207,7 +4209,9 @@ SceneSystem/PointLightShadowsEnabled
 Scenesystem render target token too large! Increase MAX_RT_NAME_SIZE in scenesystem/scenesystem.h!
 SceneSystem/SkipLoadingRenderingPipelines
 SceneSystem/SunLightMaxCascadeSize
+SceneSystem/SunLightMaxCascadeSizeTools
 SceneSystem/SunLightMaxShadowBufferSize
+SceneSystem/SunLightMaxShadowBufferSizeTools
 SceneSystem/SunLightShadowRenderMode
 SceneSystem/Tonemapping
 SceneSystem/TransformTextureRowCount
@@ -4215,6 +4219,9 @@ SceneSystem/VolumetricFog
 SceneSystem/VrDefaultShadowTextureHeight
 SceneSystem/VrDefaultShadowTextureWidth
 SceneSystem/VrLightBinner
+SceneSystem/VrLightBinnerCachedShadowMapHeight
+SceneSystem/VrLightBinnerCachedShadowMapTileSize
+SceneSystem/VrLightBinnerCachedShadowMapWidth
 SceneSystem/VrLightBinnerMaxLights
 SceneSystem/VrLightBinnerSingleLightFastPath
 Scenesystem/VrShadowDepthMasks
@@ -4699,7 +4706,7 @@ Tg@I-qP@
 TG@I-QP@
 Th&@)
 Th2@y
-Th"@9h
+Th"@9
 THa@9(
 Th"B9
 ThB@9
@@ -4792,6 +4799,7 @@ ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
+Too many cached shadows requested (%d) this frame (%d). Increase size of cached shadow atlas, please.
 Too many shadowed spot lights in the scene!  Some will be removed!
 ") to start from the outermost scope.
 ".  To use it here, please add the necessary import.
@@ -4960,6 +4968,7 @@ UVWQ8888
 u@yHu
 u@yku@y
 u@y+w
+V@9	Y
 VA9iV
 V_acosf
 val_bool

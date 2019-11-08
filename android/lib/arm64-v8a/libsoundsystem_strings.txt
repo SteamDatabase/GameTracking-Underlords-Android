@@ -91,10 +91,11 @@
 17IVMixToolServices
 18CAsyncWavDataCache
 18CAudioMixerEncoded
-18CAudioMixerStretch
++18CAudioMixerStretch
 18CAudioMixerWaveMP3
 18CAudioOutputStream
 18CAudioSourceCached
+18CEQ8AudioProcessor
 18CSDLAudioSubsystem
 18CSosOperatorConvar
 18CSosOperatorCurve4
@@ -170,6 +171,7 @@
 21IVConCommDataReceived
 2+1@y
 2	1@y?
+22CPathingAudioProcessor
 22CSchemaInstallCallback
 22CSosGroupBranchPattern
 22CSosOperatorAudibility
@@ -270,7 +272,7 @@
 2Ki)8x
 2L1@y
 2njj8l
-2t~	)Y
+2t~	)
 2x"@9
 30CAudioSource_PlayerVoiceStream
 30CSosGroupActionTimeLimitSchema
@@ -318,7 +320,7 @@
 ;6)a2@
 6ConVar
 	 6h"@
-6h2@y
+6h2@y(
 6h&Ayi"Ay
 6hb@9
 6hzFy
@@ -348,7 +350,7 @@ _@8j.@
 +8)m&@
 8x9,7
 `"@9	
-!@9!('
+!@9!(
 !#@9	
 "#@9	
 )!@9)
@@ -358,6 +360,7 @@ _@8j.@
 (;@93+
 )9@9?
 @9+	@9,
+9	9@9)
 @9?aEkA
 @9aR@
 @9B("
@@ -376,6 +379,7 @@ _@8j.@
 9hV@9
 @9hZ@
 )]@9I
+9i2E9
 "@9i"@9
 9	ii8(
 :@9K1@9k
@@ -403,7 +407,6 @@ Action Type
 ActionType_t
 Active ?: %s
 Active Voices: %d
-	aD9	
 Adding operator stack matching existing name: %s
 AddNewSoundEvent:  %s has a hash collision with existing %s
 Addon unloaded, unloading sound resources.
@@ -456,16 +459,18 @@ AE_VORTIGAUNT_ZAP_POWERUP
 AE_VORTIGAUNT_ZAP_SHOOT
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
-	aF9	
-AG9h	
 Ah1xij/
+	aI9	
 	(Aik}@
 ai_model_info
 AIWalkable
 _A@k(
+	aK9	
+AL9h	
 allowstatic
 AllPass
 -altgameroot
+A-#MN
 (aN#(aN
 anchor_angles
 anchor_position
@@ -542,6 +547,7 @@ Available Operators:
 AXk!#
 )!Ay?	
 ?AYki
+!AyNK
 @-B	@
 B-" @
 B-(  
@@ -747,7 +753,6 @@ ClothShapeList
 ClothShapeSphere
 Cmath_filter_float
 CMemAllocSystemInitialize
-cn@9i
 collision_group
 collision_prop
 COLORCORRECTION_VERSION_1
@@ -955,10 +960,9 @@ __cxa_guard_acquire
 __cxa_guard_release
 __cxa_pure_virtual
 Cycle or diamond double-reference to '%s'
-@-#)D
 @-D	@
 D-  "
-d6@y#
+d6@yc
 D-`8 
 D-!8 
 D-)8,
@@ -1068,6 +1072,7 @@ D%@yh
 .dynamic
 Dynamic
 DynamicConfigList
+dynamicEQScale
 dynamic_interaction
 Dynamics
 .dynstr
@@ -1255,7 +1260,6 @@ Free ?: %s
 friction
 function
 FX Mix (1.0 == wet)
-	!G9	
 gainReduction
 game_class
 GAMECONSOLE
@@ -1340,7 +1344,7 @@ HammerMapLoader001
 handindex
 HangWatchdog_IndicateActivity
 .hash
-H!AyJ
+H!Ayj
 hb@9`
 hB@9`
 hb@9h
@@ -1366,8 +1370,6 @@ hf@9H
 hf@9i
 hfA9hR
 hFD9u
-hfJ9(
-hfJ9(,
 h&H-9+*
 HIGHDPI
 Highest
@@ -1375,8 +1377,6 @@ HighPass
 h&I)tb
 hJAy`
 hJAy	
-hnJ9h
-hnJ9H
 HoA8	
 HostStateMgr001
 hr@9(
@@ -1399,7 +1399,8 @@ h"@yj
 i1xhj*
 i1xhj+
 i1xjj,
-i2A9J	
+i2A9j	
+i2E9i
 i2@y?
 i68t.@
 ?i(8i
@@ -1407,7 +1408,6 @@ i68t.@
 <i*	)a6
 IA@9K%@y
 i*A)I
-ib[8*
 i*B-`8 
 ib@9`
 ib@9(
@@ -1430,6 +1430,7 @@ I CUtlRBTree<CUtlMap<unsigned int, SosOpFieldMapInfo_t *, unsigned short, CDefLe
 I CUtlRBTree<void *, int, bool (*)(void *const &, void *const &), CUtlMemory<UtlRBTreeNode_t<void *, int>, int> >::NewNode(const T *) [T = void *, I = int, L = bool (*)(void *const &, void *const &), M = CUtlMemory<UtlRBTreeNode_t<void *, int>, int>]
 )icx_
 )icx?
+i"D)5	
 ID of the sound device to use
 =i*D)`R
 )idx?
@@ -1759,15 +1760,16 @@ itemName
 itemPos
 itemType
 itemTypeName
-ivA9J	
+ivA9j	
 +i*xA
 	i-xhN@yiJ
 *i.xi>@yj:
 i*xJ	
 i#xjj-
-_i(xjjA
-_i(xjvA
+_i(xjnA
+_i(xjzA
 ixsyl
+!i@y 
 )i@y_
 )i@y?
 i.@y	
@@ -1777,19 +1779,23 @@ I%@yJ
 Iymx`9,
 i@y@yl
 i@yYyix
-izA9J	
+izA9j	
 @)J}	
 j58hf@9(
 j5@yk9@y?
 j)8HK
+Ja@9*
 J!A9j
 JaAJJ
 J"AHJ
 JAJJ)
+jA]x*A
+jAZx*A
 )j.B),}
 JEIJJ}
 j.E-R*(
 JIIJJ}
+Jiix)
 Jikx_
 JIMIJ*
 ji)x)	
@@ -1806,6 +1812,7 @@ J @yj
 *j @yK @y_
 Jylx<}@
 Jymxh
+jy(xjZ
 	*jz-
 *?"/k
 K-@ $
@@ -1816,6 +1823,7 @@ _k68!
 k(8vV@
 K9y;xa
 kAKJJ
+ke@9K
 key_groups
 KeyValueCache001
 KeyValues Error: %s in file %s
@@ -1843,7 +1851,7 @@ K @yK
 k"@yl
 k@y)Q@
 K @y, @y
-#l@9i
+	!L9	
 last_sniff
 l"Ay	$
 LayerTriggers
@@ -1928,6 +1936,7 @@ lvl: %3.2f
 	LVL: %f
 L@y)%
 l-@)@yi
+Lyixm
 l @yL 
 l!@yL!
 @m&!@}
@@ -2011,6 +2020,7 @@ m_bApplyMinForce
 m_bDisableChild
 m_bDisableOperator
 m_bDoBonesOrientAlongPositiveX
+m_bEnabled
 m_bEnableFilter
 m_bFitCycleToLifetime
 m_bForceLoopingAnimation
@@ -2299,6 +2309,7 @@ ms of mod depth
 m_SolverSettingSource
 m_SolverType
 m_spline
+m_stages
 m_Submixes
 m_tangents
 m_TargetSettingSource
@@ -2703,12 +2714,13 @@ PurgeAndDeleteAll: Deleting orphaned CSoundEvent pointer for %s via shutdown
 Purge and reload all vmidi data and files.
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
+q)#29
 )q@9)
-q)#-9
 	Q@9?
 	Q@9	
 ?	@qA
 QAngle
+	qD9I
 Qi"A)`
 Qj$xij0
 Qj/xnj0
@@ -2809,7 +2821,6 @@ rnd_up
 ROOM Detected 
 rootNode
 round_to_int
-r	q?9_
 Running snd_get_physics_surface_properties for %s mod.
 Running snd_set_physics_surface_properties for %s mod.
 ryjj8
@@ -2991,6 +3002,7 @@ snd_sos_get_operator_field_info
 snd_sos_list_operator_updates
 snd_sos_max_event_base_depth
 snd_sos_opvar_debug
+snd_sos_pause_system
 snd_sos_print_class_sizes
 snd_sos_print_field_references
 snd_sos_print_full_field_info
@@ -3260,6 +3272,7 @@ StatsService_001
 SteamAudio001
 Steam Audio could not create probes.
 Steam Audio is not enabled.
+SteamAudioPathing
 SteamAudioReverb
 Steam Audio Reverb Level value changed from %.3f to %.3f for this map.
 SteamAudioSource
@@ -3306,8 +3319,8 @@ sync_type
 SystemAttributes
 _system_properties
 T(0@9
+T?#29
 		T9)
-T?#-9
 T*-@9
 T*)@9
 T	!A9
@@ -3333,7 +3346,6 @@ Th:@9i
 Th&A)`
 The soundsystem requires the filesystem to run!
 Thf@9
-ThfJ9H
 THik8Hi)8
 THit8
 ThJAy	
@@ -3373,6 +3385,7 @@ Tj"@yk
 TJ=@y_!+k
 TK	@9)A
 TKih8
+TKu@yk
 Tk"@yl
 Tl6B-oBC-q:D-
 TL	@9kA
@@ -3558,7 +3571,7 @@ virtual CSfxTable *CVSoundTypeManager::GetSfx(const char *, bool)
 V_IsAbsolutePath
 VisBuilder_001
 V_isnan
-v"@-j.A-
+v"@-j.A-(
 V_log10f
 V_logf
 VMaterialSystem2_001
@@ -3574,6 +3587,7 @@ vmix.cpp
 vmix_delay_desc_t
 vmix_dynamics_desc_t
 VMixEditTool001
+vmix_eq8_desc_t
 vmix_filter_desc_t
 vmix_filter_type_t
 vmix_mixgraph_input
@@ -3657,11 +3671,13 @@ V_powf
 V_PrettifyMem
 VPROCESSOR_DELAY
 VPROCESSOR_DYNAMICS
+VPROCESSOR_EQ8
 VPROCESSOR_FILTER
 VPROCESSOR_FULLWAVE_INTEGRATOR
 VPROCESSOR_PRESETDSP
 VPROCESSOR_RT_PITCH
 VPROCESSOR_STEAMAUDIO_HRTF
+VPROCESSOR_STEAMAUDIO_PATHING
 VPROCESSOR_STEAMAUDIO_REVERB
 VPROCESSOR_UNKNOWN
 VProcessUtils002
@@ -3791,12 +3807,14 @@ yhS@y
 yiv@y
 @yJ|@
 *%@yJ
++	@yJ
 )@yj1@
 )YJJ)}
 #@yjR
 "@yj"@y
 @y_!(k!
 #@yK!
++	@yK	
 =@y?"/kC
 ykN@y
 ykO@y
@@ -3810,6 +3828,7 @@ y+O@y
 )!@y =p
 y	q@y)
 @y	S@
+@ys2I
 yux)I@
 +yux)y{x
 ywx)I@
@@ -3817,6 +3836,7 @@ ywx)I@
 	y:xh
 @y,	@y)!
 @y*	@y-!
+y+-@yK-
 (yyx`9,
 _Z10DevWarningPKcz
 _Z14V_stristr_fastPKcS0_

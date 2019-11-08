@@ -1,9 +1,11 @@
-|  |  |  |  |  |  |  |  |  |  |  |  |  
-  ---------- ---------      --------
-  ---------- ---------      ---------- ------      ---------- ------   -------- ------
+  ---------- --------  
+  ------------ ----------  
+  ------------ ------------  
   ---------------------------------------------------- ----------- ----------- ----------- ------ ----------- ------ ----------- ----------- ----------- -----------
+---------
 -------------------------------------------
 ,/$`,
+............| 
 	*	}`
 0'>0c*>
 0123456789ABCDEF
@@ -15,15 +17,15 @@
 %0*llx bytes at %0*llx is the largest open user-space VA region%s
 %0*llx bytes of %s at %0*llx%s
 0SIGFPE
-  %10.3f %9.2f      %10.3f %6.2f      %10.3f %6.2f   %8d %6.2f
-  %10.3f %9.2f      %8d
 10CTestSuite
 10ITestSuite
+ %12.3f %12.2f
 12CCommandLine
 12CStdMemAllocI24MemoryAllocationHeader_tI9MemConfigILb0ELb0E27DefaultAdditionalPropertiesEEE
 12CStdMemAllocI24MemoryAllocationHeader_tI9MemConfigILb0ELb0E27RuntimeAdditionalPropertiesEEE
 12CThreadEvent
 12ICommandLine
+ %12s %12s
 [1;31m%s
 [1;32m:%i:
 [1;33mASSERT: 
@@ -45,7 +47,12 @@
 22CStdMemAlloc_Data_Base
 22ILoggingResponsePolicy
 24BasicStatStructFieldDesc
+25CVProfileOutputColumn_Sum
+26CVProfileOutputColumn_Base
+26CVProfileOutputColumn_Name
+26CVProfileOutputColumn_Peak
 27CMiniDumpCommentBuilderBase
+27CVProfileOutputColumn_Count
 28CallStackStatStructDescFuncs
 28CStdMemAlloc_Data_StackStatsI24MemoryAllocationHeader_tI9MemConfigILb0ELb0E27DefaultAdditionalPropertiesEELb0EE
 28CStdMemAlloc_Data_StackStatsI24MemoryAllocationHeader_tI9MemConfigILb0ELb0E27RuntimeAdditionalPropertiesEELb0EE
@@ -53,10 +60,13 @@
 29CDefaultLoggingResponsePolicy
 2(A@qJ5
 2CB@q
+%2d.%03d
 2*hi8
 2*ki8J
 2mymx
   %2u - proc %2u (grp %u:%-2u / phy %u / cor %u / smt %u): max freq %llu
+40CVProfileOutputColumn_AverageTimePerCall
+41CVProfileOutputColumn_AverageTimePerFrame
 4(3H9
 4-ij8
 4-ik8
@@ -66,6 +76,7 @@
 5{"A9hB
 5hr@yH
 5		@q
+%6.2f
 (6a2@
 ?6`>H
 /6`>H
@@ -183,7 +194,8 @@ $attr
 &Auml;
 AuthenticAMD
 Average %.2f fps, %.2f ms per frame
- Avg Time/Frame (ms)
+   Avg Time/Call (%s)
+   Avg Time/Frame (%s)
 a?y#c?sIe?
 -&B'-
 b@9ib@9
@@ -266,6 +278,7 @@ ConsumePurchase
 Corefile
 core id
 Couldn't window icon! %s
+  Count  
 cpu.cpp
 cpu  %lu %lu %lu %lu %lu %lu %lu
 CrackSmokingCompiler
@@ -292,6 +305,8 @@ __cxa_finalize
 __cxa_guard_acquire
 __cxa_guard_release
 __cxa_pure_virtual
+%d:%02d:%02d.%03d
+%d:%02d.%03d
 \D2%4
 D"A/oyu
 .data
@@ -400,8 +415,9 @@ Frame Boundary
 FreeCommandLine
 fseeko
 ftello
-[ func+child      func ]       Count
-[ func+child      func ]  [ func+child   func ]  [ func+child   func ]    Count   Peak
+[   func+child         func ]
+[   func+child       func ]
+[ func+child     func ]
 game/
 game\..\autoargs
 g_bPlatCpuTimeIsReliable
@@ -501,6 +517,7 @@ HEAP WARNING: memory block at %p is unexpectedly free
 HEAP WARNING: memory block at %p is unexpectedly unrecognized
 HEAP WARNING: memory pointer %p is invalid
 H!HJB
+HH:MM:SS.z
 *+hi8K
 hi8_q
 -- Hierarchical Call Graph --
@@ -604,6 +621,7 @@ Jobs/Coroutines
 *jyhx
 *(!(K
 	K"}@
+?k88h
 k	@9J	
 Ka@9+
 Ka@9k
@@ -696,8 +714,6 @@ LoggingTag_t *CLoggingSystem::AllocTag(const char *)
 lower
 &lsquo;
 (\M8h
-M9aM@
-M9`N@
 macos
 Mac OS
 MacOS 10.10
@@ -813,6 +829,7 @@ Particle/Effect_Rendering
 Particle Simulation
 pb>pAf>
 pclose
+  Peak   
 Peak %.2f ms frame
 Peak resident virtual bytes: %s
 Peak total virtual bytes: %s
@@ -1163,7 +1180,6 @@ RunTSListTests
 RunTSQueueTests
 RunWithAlternateStack
  "%s"
- (%s)
  [%s]
 %s	0x%x
 S?9=qh
@@ -1304,6 +1320,7 @@ SDL_WasInit
 SDL_wcslen
     %s %d: proc %d (group %u:%u)
 %s (%d) : %s
+%s(%d%%) %s
 &sect;
 SECURITY_PATCH
 sem_close
@@ -1435,7 +1452,7 @@ strtoll
 strtoull
 STUB_GetStatStructName
 -- Summary --
-       Sum (ms)            Avg Time/Frame (ms)     Avg Time/Call (ms)
+         Sum (%s)
 %s: unable to find %s in '%s'
 %s: Unable to get executable filename (%d byte buffer).
 %s: Unable to load SDL
@@ -1565,7 +1582,7 @@ Unknown
 UnknownOS
 UnregisterAssertionFailureListener
 UnregisterHibernationListener
-uRC9@
+uRC9`
 [/url]
 [url=
 ur@yu
@@ -1910,6 +1927,7 @@ Windows ME
 Windows NT
 Windows Vista
 Windows XP
+wj68q
 wn>Jj
 Working set: %s
 	%@x!
@@ -1994,7 +2012,6 @@ _ZN10CTestSuiteC2EPKcP10ITestSuite
 _ZN10CTestSuiteD1Ev
 _ZN10CTestSuiteD2Ev
 _ZN10CVProfNode10EnterScopeEv
-_ZN10CVProfNode10GetSubNodeEPKciS1_
 _ZN10CVProfNode10GetSubNodeEPKciS1_i
 _ZN10CVProfNode15SetCurFrameTimeEm
 _ZN10CVProfNode22s_iCurrentUniqueNodeIDE
@@ -2335,7 +2352,8 @@ _ZN9CTestCaseC2EPKcP10ITestSuite
 _ZN9CTestCaseD1Ev
 _ZN9CTestCaseD2Ev
 _ZN9CVProfile11FreeNodes_REP10CVProfNode
-_ZN9CVProfile12OutputReportEiPKci
+_ZN9CVProfile12OutputReportEPKci
+_ZN9CVProfile12OutputReportERK21VProfReportSettings_tPKci
 _ZN9CVProfile13ResetCountersE14CounterGroup_t
 _ZN9CVProfile15HideBudgetGroupEib
 _ZN9CVProfile15SetOutputStreamEPFvPKczE
@@ -2354,14 +2372,16 @@ _ZN9CVProfile38CalcBudgetGroupL2CacheMisses_RecursiveEP10CVProfNodePjif
 _ZN9CVProfile38RegisterNumBudgetGroupsChangedCallBackEPFvvE
 _ZN9CVProfile4TermEv
 _ZN9CVProfile8FindNodeEP10CVProfNodePKc
-_ZN9CVProfile8SumTimesEP10CVProfNodeiR20CVProfSummingContext
+_ZN9CVProfile8SumTimesEPK10CVProfNodeiR20CVProfSummingContext
 _ZN9CVProfile8SumTimesEPKciR20CVProfSummingContext
-_ZN9CVProfile9DumpNodesEP10CVProfNodeibR20CVProfSummingContext
+_ZN9CVProfile9DumpNodesERK21VProfReportSettings_tPK10CVProfNodeibRK20CVProfSummingContextd
 _ZN9CVProfileC1Ev
 _ZN9CVProfileC2Ev
 _ZN9CVProfileD1Ev
 _ZN9CVProfileD2Ev
 _Znam
+_ZNK10CVProfNode10GetSubNodeEPKciS1_
+_ZNK10CVProfNode10GetSubNodeEPKciS1_i
 _ZNK13CWorkerThread12GetCallParamEv
 _ZNK15IRunnableNative18CreateJavaInstanceEP7_JNIEnv
 _ZNK16CMiniDumpComment13GetEndPointerEv

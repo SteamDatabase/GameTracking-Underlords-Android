@@ -46,6 +46,7 @@ $0 to $1,
 10CMsgVector
 10ConCommand
 10IAppSystem
+10NetCmdInfo
 11CEncodeInfo
 11CNETMsg_NOP
 11INetChannel
@@ -61,6 +62,7 @@ $0 to $1,
 12CNETMsg_Tick
 12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE
 12CSVCMsg_Menu
+12NetGraphData
 13CCallbackBase
 13CCallbackImplILi704EE
 13CNetMessagePBILi3E23CNETMsg_SplitScreenUserL13SignonGroup_t11EL19NetChannelBufType_t1ELb0EE
@@ -91,6 +93,7 @@ $0 to $1,
 15CTier2AppSystemI14INetworkSystemLi0EE
 15CTier2AppSystemI19INetworkSystemUtilsLi0EE
 15INetChannelInfo
+15NetGraphMsgBits
 15SignedPayload_t
 16CDefaultAccessor
 16CNetworkMessages
@@ -102,6 +105,7 @@ $0 to $1,
 16CSVCMsg_SetPause
 16ICommandCallback
 16INetworkMessages
+16NetBandwithGraph
 17CCLCMsg_VoiceData
 17CNETMsg_SetConVar
 17CNETMsg_StringCmd
@@ -116,6 +120,9 @@ $0 to $1,
 18CNETMsg_Disconnect
 18CSVCMsg_HLTVStatus
 18CSVCMsg_ServerInfo
+18CVConsoleMessagePBI12NetGraphDataE
+18CVConsoleMessagePBI18NetGraphGroupNamesE
+18NetGraphGroupNames
 19CBidirMsg_RelayInfo
 19CCLCMsg_BaselineAck
 19CNETMsg_SignonState
@@ -128,6 +135,7 @@ $0 to $1,
 19INetworkSystemUtils
 19ISerializedEntities
 19NetMessagePacketEnd
+19vcon_NetGraphData_t
 1bQJ1~
 1@y(1
 *1@y)}B9d
@@ -183,6 +191,7 @@ $0 to $1,
 25CSVCMsg_CreateStringTable
 25CSVCMsg_UpdateStringTable
 2?!5k
+25vcon_NetGraphGroupNames_t
 26CCLCMsg_SplitPlayerConnect
 26CSVCMsg_Sounds_sounddata_t
 26ICommandCompletionCallback
@@ -203,6 +212,8 @@ $0 to $1,
 29CMsgServerNetworkStats_Player
 2_!9k
 29NetMessageConnectionCrashed_t
+2	a89
+2	A$9?
 2	a@9Ia
 2	AA9
 2B9h2
@@ -215,8 +226,9 @@ $0 to $1,
 2/H@9
 2*H@9)}@
 2&H@9
+2hb%9
 2hB	9
-2ij(8
+2hr$9#
 2iJ@9
 2iJ@9)
 2iJ@9	
@@ -225,12 +237,14 @@ $0 to $1,
 2j"@9)p
 2_!(k
 2?".k
-2?k78e
+2?k78
 2_k88
-2?k88d
+2?k88
 2(K@9
+2#.NetGraphGroupNames.NetGraphGroup_t
 2oi-x
 2 .ProtoFlattenedSerializerField_t"!
+2	Q#9s
 2@yzz@
 30CBidirMsg_RebroadcastGameEvent
 30CSVCMsgList_GameEvents_event_t
@@ -247,6 +261,7 @@ $0 to $1,
 34CNETMsg_SpawnGroup_SetCreationTick
 34CSVCMsg_GameEventList_descriptor_t
 34CSVCMsgList_UserMessages_usermsg_t
+34NetGraphGroupNames_NetGraphGroup_t
 34NetMessageSplitscreenUserChanged_t
 38Source2SteamNetworkingSocketsCallbacks
  [%.3f server clamped to %.3f]
@@ -289,7 +304,6 @@ $0 to $1,
 % 5d % 5d:% 5d: %-20s [%d]: delta field %s [%s] "%s" != "%s"
 5hr@9H
 5h"@y
-5h"@yi
 )5IJ(}
 5i.@y
 5j3@y
@@ -297,8 +311,8 @@ $0 to $1,
 5w"@y(
 5(#@y
 5	 @y)
-5@y3R
-5@y&R
+5@ygN
+5@yZN
 ?6`*@
 ?6	(@
 /6`>@
@@ -396,6 +410,7 @@ _6inA9
  74	(7t
  75	(7
 75	 7
+`75	h7
 76`&@
 76	$@
 76`B@
@@ -431,7 +446,7 @@ _6inA9
 %8.3f: %s: ParseMessagesSNP RELIABLE %d bytes
 %8.3f: %s: ParseMessagesSNP UNRELIABLE Seq=%d %d bytes
 86`*@
-86)_B
+86)7G
 86h*@
 86h2@
 86i*@
@@ -456,16 +471,18 @@ _8o%@8
 @9)!@
 @9*	@
 @9+	@
+	!`9	
 	)@9)
 	)@9*
 9	1@y	0
 @9%	@9&
  @9	$@9J
- @9	$@9JYG
+ @9	$@9JMG
 )9B9?
 9({B9
 @9)+C
 9(cB9j
+@9)}F
 @9h*@
 9h.@9
 9h^A9
@@ -497,21 +514,22 @@ _8o%@8
 )!@9J!@9?
 @9J9	
 @9jjh8*
+@9JMG
 @9JU	
-@9JYG
 	*_!9k
 !!@9K
 )!@9	k(8I
 9kj(8|
+ @9)MG
 {9t";
 @9T|@
 @9U|@
- @9)YG
 @9 	@z
 A-!(!
 a2@yh2@y
 -A8*	
 +a@9?
+	a_9	
 		A9?
 		A9	
 	A@9)
@@ -519,8 +537,6 @@ a2@yh2@y
 	A@9	
 A-#9!
 a@9+a
-"A9)eF
-A9)eF
 		A9h
 	A9h&A
 ^A9i^
@@ -537,9 +553,10 @@ A9|J@
 A9Kik
 +	A9lC
 ?A9tJ@
+"A9)UF
+A9)UF
 AA9(	
 AA9(	@
-	AA9T
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 abort
@@ -548,6 +565,7 @@ Activates/deactivates net message validation
 active_spawngroup_handle
     Actual    : 
   Actual   : 
+Ad9h	
 AddAllocatedMessage
 AddBool
 AddDouble
@@ -579,7 +597,6 @@ AnimGraphEditorUtils001
 annotation
 Annotation
 ", another member of oneof "
-	Ap9	
 ApplyOverrides_R:  couldn't find field from schema %s::%s
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
  a protocol 
@@ -614,18 +631,25 @@ Average Number of Field Paths     :  %8.3f
 avg_data_in
 avg_data_out
 avg_latency_in
+avg_latency_local
+avg_latency_net
 avg_latency_out
+avg_latency_peer
 avg_loss_in
 avg_loss_out
+avg_packet_in
+avg_packet_loss
+avg_packet_out
 avg_packets_in
 avg_packets_out
+ax9!9@
 Ay?!(k
 ^B9h^
 >B9h>
 :B9h:
 	}B9i
 b@9ib
-b@9JmF
+b@9J]F
 bA9hb
 BA9hB
 BA9iB
@@ -690,6 +714,7 @@ bytes.
 Byte size calculation and serialization were inconsistent.  This may indicate a bug in protocol buffers or it may be caused by concurrent modification of 
 bz@9_
 .C))}
+c2@y"	
 cA9s~
 Call set methods to initialize MapKey.
 Cannot allocate abstract class
@@ -858,6 +883,7 @@ CHECK failed: type == WireFormatLite::TYPE_MESSAGE || type == WireFormatLite::TY
 CHECK failed: uninterpreted_options_field != NULL: 
 CHECK failed: value != NULL: 
 CHECK failed: (value.size()) <= (kint32max): 
+cj@9"	
 classes
 class_id
 class_name
@@ -884,6 +910,7 @@ ClearField
 client
 clientbitcount
 clientcmd_can_execute
+client_interpolation_amount
 clients
 client_streaming
 cl_interp
@@ -894,6 +921,8 @@ close() failed:
 CloseSocket
 Closing Steam Net Connection on socket '%s' to %s, handle #%u (%d %s)
 cl_updaterate
+cmd_info
+cmdrate
 CMemAllocSystemInitialize
 CMergedEntityOffsetBuilder::Expecting at least one bit in offset
 .CMsg_CVars"
@@ -1107,8 +1136,7 @@ __cxa_pure_virtual
 %d % 5d: %-20s: %32.32s %128.128s
 %d % 5d % 5d: %-20s (skip): %s %s: %s
 d6@y#
-d6@yC
-d6@yC	
+d6@yc
 .data
 databytes
 data_compressed
@@ -1411,6 +1439,7 @@ Found invalid proto option data for:
 fprintf
 fp_trace
 fputs
+	framerate
 friends_id
 friends_name
 , from: 
@@ -1423,6 +1452,7 @@ g6hRB9
 g6hz@
 g6i^@
 g6in@
+g6iz@
 G6v.@
 game_dir
 gamemode
@@ -1531,6 +1561,7 @@ Generated new connection id %X for use with remote system "%s"
 generated_proto/androidarm64/netmessages.pb.cc
 generated_proto/androidarm64/networkbasetypes.pb.cc
 generated_proto/androidarm64/networksystem_protomessages.pb.cc
+generated_proto/androidarm64/vconsole_shared.pb.cc
 generic
 GetBitRange( %u -> %u ) end is before or same as start
 GetBool
@@ -1580,10 +1611,13 @@ g_pSteamNetworkingMessages
 g_pSteamNetworkingSockets
 g_pSteamNetworkingUtils
 g_pThreadPool
+graph
 group
 [Group]
 [GroupID]
 	Group ID                 = %u
+group_index
+group_names
 	Group                    = '%s'
 Groups are not supported in proto3 syntax.
 g_Tier1_BitWriteMasks
@@ -1591,9 +1625,11 @@ g_Tier1_CRC64Table
 [g:%u:%u]
 [G:%u:%u]
 h2@9)
+h2@9)uD
 H6h>@
 H6hV@
 H6in@
+,H@9-
 	H@9)
 	H@9	
 H@9?	
@@ -1603,7 +1639,6 @@ h*@9h/
 (H@9h
 H@9/H@9
 h"@9i
-h"@9I
 	H@9i"
 H`@9iFG9
 *H@9j
@@ -1611,8 +1646,8 @@ H`@9iFG9
 H@9J(
 H@9k	
 -H@9m
-h"@9)YG
-h"A9)eF
+h"@9)MG
+h"A9)UF
 HammerMapLoader001
 HasField
 .hash
@@ -1623,12 +1658,12 @@ h*A)t
 h&B)(
 hB@9`
 hB@9(
+hB@9)=F
 h"B9h
 hB@9h
 h"B9H
 hB@9H
 *h~B9i
-hB@9)MF
 hB@9t
 hbB9	
 hbB9h
@@ -1644,7 +1679,6 @@ high_value
 hJ@9(
 hJ@9h
 hJ@9H
--hj+j
 hj)xh"
 h*@)K
 host_computationtime
@@ -1663,11 +1697,11 @@ How long p2p connection requests should linger before we completely ignore them
 hrAyi
 hrAy`Z
 hr@y`
-HS@9(
 HS@9h
 hv@9)
 hV@9h
 hV@9H
+hv@9)qD
 hwB9t
 h*x* 
 h)x	H@9
@@ -1681,7 +1715,7 @@ i)8i&
 i@9+a@9_
 	i@9	h
 )I@9I
-i"@9JYG
+i"@9JMG
 i9xh>@yv:
 *i~B9)
 i"B9i
@@ -1788,6 +1822,9 @@ import weak "$0";
 include
 including
 incoming
+incoming_data_bytespersecond
+incoming_sequence
+incoming_sequence_start
 Index must be -1 for singular fields.
 Index must be in range of repeated field values. 
 Index out-of-bounds (field is empty).
@@ -1902,6 +1939,7 @@ j48	C
 j48t^@
 j4xH;@
 j58"l
+J78i{
 J!@9#
 J@9.A
 J@9B1
@@ -1942,9 +1980,9 @@ JY@y)1
 *k2@y
 k2@yh
 ?k58D
-?k68!
-*?k78
+*?k781
 ?k78h
+_k88h
 _!)kA
 K	A9lC
 Key in map fields cannot be enum types.
@@ -1973,6 +2011,7 @@ landmarkname
 last_cmd_number
 - latency: %.1f, loss %.2f
 - Latency: avg out %.2fs, in %.2fs
+latency_seconds
 [lazy = true] can only be specified for submessage fields.
 leading_comments
 leading_detached_comments
@@ -2018,7 +2057,6 @@ low_priority
 	low_value
 lseek
 [L:%u:%u]
-	!m9	
 m%@9i)
 m	A9j"
 MakeSerializersMatchByMeta failed for %s
@@ -2142,6 +2180,8 @@ model_index
 MODEL_PROCESSING_SCRIPT_INTERFACE_001
 MODEL_PROCESSING_SERVICES_INTERFACE_001
 MResourceTypeForInfoType
+msgbits_reliable
+msgbits_unreliable
 msg_data
 MSG_SPLITSCREEN_ADDUSER
 MSG_SPLITSCREEN_REMOVEUSER
@@ -2181,12 +2221,16 @@ Need space between identifier and decimal point.
 Need space between number and identifier.
 negative_int_value
 nested_type
+NetBandwithGraph
+.NetBandwithGraph
 netchan.cpp
 net_channels
 NetChannel '%s':
 NetChan %s ProcessMessages has taken more than %dms to process %d messages.  (Current message type: '%s')
 netchan_t::reliabledata
 netchan_t::unreliabledata
+NetCmdInfo
+.NetCmdInfo*|
 net_compresspackets
 net_compresspackets_minsize
 net_compressvoice
@@ -2194,6 +2238,12 @@ net_connections_stats
 net_detailed_canpacket_log
 net_Disconnect
 net_filelogging
+NetGraphData
+NetGraphGroupNames
+NetGraphGroup_t
+NetGraphMsgBits
+.NetGraphMsgBits
+.NetGraphMsgBits"O
 Net graph %s
 net_listallmessages
 net_log_processing
@@ -2217,6 +2267,8 @@ net_NOP
 net_p2p_client_to_client_messages
 net_p2pconnection_linger_time
 net_p2p_listen_dedicated
+.NetPacketStatus_t:
+NetPacketStatus_t
 Net packet timing values don't make sense.  Send time=%llu, Recv time=%llu, Now=%llu, Peer delay=%d
 net_port_try
 net_public_adr
@@ -2473,11 +2525,13 @@ O6hbA9
 O6hFB9	
 o6hr@
 o6hVB9	1
+o6i~@
 O6i>@
 O6i:@
 o6ib@
 O6ib@
 O6ifA9
+O6in@
 o6ir@
 o6jb@
 o6jN@
@@ -2510,6 +2564,9 @@ origin_x
 origin_y
 origin_z
  Outdent() without matching Indent().
+outgoing_data_bytespersecond
+outgoing_sequence
+outgoing_sequence_start
 'out_location' must not be NULL
 out of order
 output_type
@@ -2529,6 +2586,11 @@ packed
 packet_loss_pct
 - packets: in %.1f/s, out %.1f/s
 - Packets: net total out  %.1f/s, in %.1f/s
+packet_status
+PACKET_STATUS_COUNT
+PACKET_STATUS_DROPPED
+PACKET_STATUS_INVALID
+PACKET_STATUS_NORMAL
 PanoramaTextServices001
 PanoramaUIClient001
 PanoramaUIEngine001
@@ -2691,13 +2753,11 @@ PushTwoPack5LeftDeltaOne
 PushTwoPack5LeftDeltaZero
 [P:%u:%u]
 py_generic_services
-Q9!9@
 qangle
 QAngle
 qangle_pitch_yaw
 	QB9i
 q?h(8
-	Qh9I
 qhz;x
 Qi"A)`
 Qij(x
@@ -2708,7 +2768,7 @@ queued
 QueuedLoaderVersion001
 QueueDuplicate
 	Q@y?
-	q@yZ
+	q@yz
 *R)8yv
 RA9iR
 RadianEuler
@@ -2736,6 +2796,7 @@ Release
 ReleaseLast
 ReleaseMessage
 reliable
+reliable_bits
 - reliable: %s
 reliable_sound
 remote_addr
@@ -2747,6 +2808,7 @@ Removing Steam Net Connection for %s, handle #%u
 RenderDevice003
 RenderDeviceMgr001
 RenderHardwareConfig002
+render_interpolation_fraction
 RenderService_001
 RenderSystemSurface001
 RenderUtils_001
@@ -2769,15 +2831,11 @@ ResourceHandleUtils001
 ResourceManifestRegistry001
 ResourceSystem013
 resource_type
-rh2@9
 rhj)8H
-rhjh8
 Rhjh8(
 Rhjh8	
 Rhjhx
 RiJ@9	
-rijh8)
-rijh8*
 Rijhx
 Rijhx)
 RIO_ESTABLISH_CONNECTION
@@ -2785,10 +2843,9 @@ RIO_NO_ROUTE
 RIO_REJECT_RELAY
 RIO_REQUEST_RELAY
 RIO_WILL_RELAY
-r(i*xK
 rJAJJL
 rJMJJ
-R?k78
+R?k78u
 rkMKJ
 Rmij8
 rnd_down
@@ -2901,6 +2958,8 @@ serializing
 server
 server_can_execute
 server_count
+server_framerate
+server_framerate_stddev
 server_ip_address
 server_streaming
 ServerUploadGameStats001
@@ -3222,6 +3281,7 @@ syntax = "$0";
 System
 *T)8yv
 T)	@9
+t@9)qD
 table_id
 target_entity
 Tc"A)`
@@ -3243,6 +3303,7 @@ text format contains deprecated field "
 TextFormat::Parser for Any supports only type.googleapis.com and type.googleprod.com, but found "
 TextLayout_001
 TextMessageMgr_001
+Th2@9
 T/H@9
 T)H@9
 T*H@9)}@
@@ -3339,7 +3400,6 @@ ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
-Too many network groups [%d], increase size of netbandwidthgraph_t::MAX_NETWORK_GROUPS [%d]
 Too many proxies for serializer %s.
 ") to start from the outermost scope.
 total
@@ -3394,8 +3454,8 @@ T( @y	 @y
 \U%08x
 UDP <- %s: sz=%5i seq=%5i ack=%5i rel=%1i tm=%8.3f
 UDP -> %s: sz=%5i seq=%5i ack=%5i rel=%1i tm=%8.3f
+UDP <- %s: sz=%i OOB (%d)
 UDP -> %s: sz=%i OOB (%d)
-UDP <- %s: sz=%i OOB (%d) wire=%i
 uint32
 uint64
 uint8 CNetworkMessages::FindOrCreateGroupId(const char *)
@@ -3417,10 +3477,12 @@ Unknown enumeration value of "
 UNKNOWN_ENUM_VALUE_%s_%d
 Unrecognized syntax: 
 unreliable
+unreliable_bits
 Unsupported
 Unsupported: type mismatch
 update_baseline
 updated_entries
+updaterate
 UPDATE_STRING_TOKEN_DATABASE
 uptime
 usage:  net_spewserializer <name>
@@ -3492,6 +3554,8 @@ VBAllocTracker001
 VBaseFileSystem011
 VBik001
 VConComm001
+vconsole_shared.proto
+vconsole_shared.proto"~
 VDebugService_001
 Vector2D
 Vector4D
@@ -3536,7 +3600,6 @@ void CFlattenedSerializer::SetRecursiveProxyIndices_R(const char *, CSendNode *,
 void CMergedEntityOffsetBuilder::AddToTail(uint32)
 void CNetworkMessages::ConfirmAllMessageHandlersInstalled(const char *, int, CUtlVector<NetMessageHandle_t> *)
 void CNetworkSerializer::AssignSharedChangeCallbackIndex(CUtlVector<CNetworkSerializer::ChangeCallbackInfo_t> &, int, NetworkFieldSerializerInfo_t &)
-void CNetworkSystem::UpdateNetGraph(float64)
 void ConnectInterfaces(CreateInterfaceFn *, int)
 void COrderedConstructor_Create<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, CResolveOrderedFunc<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, &_ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC>, false>::AddRef(bool) [T = COrderedInitShutdownRefWrapper<&EarlyInit_Common>, RESOLVECLASS = CResolveOrderedFunc<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, &_ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC>, bCONSTRUCT_ON_FIRST_USE = false]
 void CSchemaClassInfo::ReportClassError(const char *) const
@@ -3587,6 +3650,7 @@ w6hZB9	2
 w6if@
 W6if@
 W6ijA9
+W6ir@
 warning
 Warning
 WARNING
@@ -3619,6 +3683,7 @@ wrong submessage type
 w"@yvJ
 \x%02x
 x6ij@
+X6iv@
 X75	`7
 x7wB@
 x@9)y@9

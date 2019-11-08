@@ -40,7 +40,6 @@ $@)  "
 07`R@
 -0.9629629
 0~b("
-0E9!$G
 @-0EB-!H#
 0ED- 
   0x%08X %s,
@@ -189,12 +188,15 @@ $@)  "
 +1@)-%A)
 1bL9?2
 1bQJ1~
+1C-!5G
 1DBlend
 -1 for all asleep, 1 for all awake
 1ik8 il8)ip8R
-	1m9I
+1il8n
+	1t9I
 /1V?O1
 	2*	@
+2*?)0"
 200000.0
 200000000
 20CBaseRendererSource2
@@ -293,6 +295,7 @@ $@)  "
 24C_OP_RemapDotProductToCP
 24C_OP_RenderDeferredLight
 24C_OP_RenderStandardLight
+24C_OP_RenderVRHapticEvent
 24C_OP_SnapshotSkinToBones
 24C_OP_StopAfterCPDuration
 24CParticleFunctionEmitter
@@ -435,11 +438,14 @@ $@)  "
 2,ih8-ik8@8 
 2Iii8
 2*ij8
+2ij(8
+2ij(8F
 2jr81j`8
 	2k~@
 2kii8
 2Lii8
 2m>@-h
+2njj8l
 2Way_0( %s )
 2Way_1( %s )
 	2	Y+
@@ -644,6 +650,7 @@ $@)  "
 32CParticleFunctionDefinitionTypedI24C_OP_RemapDotProductToCPE
 32CParticleFunctionDefinitionTypedI24C_OP_RenderDeferredLightE
 32CParticleFunctionDefinitionTypedI24C_OP_RenderStandardLightE
+32CParticleFunctionDefinitionTypedI24C_OP_RenderVRHapticEventE
 32CParticleFunctionDefinitionTypedI24C_OP_SnapshotSkinToBonesE
 32CParticleFunctionDefinitionTypedI24C_OP_StopAfterCPDurationE
 32CParticleFunctionDefinitionTypedI25C_INIT_CreateSpiralSphereE
@@ -879,6 +886,7 @@ $@)  "
 4hf@9
 4hf@9(
 4hVN9
+4hzL9
  %4i: 
 4i2@9)
 4iFE9)
@@ -896,6 +904,7 @@ $@)  "
 5hVE9
 5hVN9
 )5IJ(}
+5in8P
 5iZO9i
 5NUY@-
 =5$@x
@@ -907,15 +916,20 @@ $@)  "
 6hB@9H
 6hb@y
 6hrZ9
+6il8N
+6iq8m
 6n8+a
 (7c8%
 7hb@9h
 7hf@9
 7hf@9(
+7hf@9h
 7ib@9
 7ib@9i
 7IConVar
 7)ij8
+7im8o
+7in8P
 7Jik8
 7.yw"@
 8]@)6	@
@@ -923,20 +937,23 @@ $@)  "
 86 P@
 8CFmtStrNILi256ELb0EE
 >;8d?
+8E=b)F
+(8hn@
+8in8p
 8nY+a
-!	@8o
 8x9,7
+`"@9	
 )!@9)
 )@@9	
 @-@9 
 @9*%@-(	@
 	=@9)
-	!{9	
 -90.0f
 (!@93
 @9+	@9,
 9@9)y
 9*AA9
+@9?aEkA
 9C_OP_Cull
 9C_OP_Spin
 ~^>9cx
@@ -949,6 +966,7 @@ $@)  "
 "@9i"@9
 9ISequence
 9i(x(?
+@9?`@kA
 (@@9t
 (@@9t"
 (@@9t"	
@@ -958,14 +976,15 @@ $@)  "
 (@@9ub
 @9)uG
 @9wiu
+9@z(|`
+9@zH~`
 .A@)/!
 'A)	}	
 A- ( 
 A-!(!
+(a29:
 A-!8 
 a]8Ja
-(a+9{
-(a+9%
 "a9h"!9
 A-'@A-
 AB-!H#
@@ -1016,14 +1035,18 @@ AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
 Agg data %d: %p (%d parts, crc 0x%08X)
 aggregation radius
+Ah1xij/
 ahe8chf8
 ai_model_info
 AIWalkable
+_A@k(
 )aL9(
 )aL9)
-)aL9jZ
+)aL9j
 +aL9k
 aL9kU
+Allocated Particles
+alloc_particles
 allowstatic
 All Particle Systems:
 alpha2
@@ -1113,9 +1136,6 @@ AnimStartLoop
 AnimSubtract
 AnimVRFinger_t
 AnimVRHand_t
-	ap9	
-	ap92
-A-particle_perf
 Apply fog of war to color
 Apply fog to particle
 Apply global light to color
@@ -1163,6 +1183,19 @@ attribute to use for normal
 attribute to write to
 auto_unragdoll_duration
 Average pixels form sequence 0 and 1 together
+Avg Actual Traces
+Avg Intersection Tests
+avg_num_tests
+avg_num_traces
+avg_render
+Avg. Render Time (us)
+avg_sim
+Avg. Sim Time (us)
+Avg. Time
+	aw9	
+	aw92
+AXk!#
+?AYki
 B-#@!
 B-1HD-
 *-B),5C)_
@@ -1171,6 +1204,7 @@ B-!8
 b8@8 
 b8B8 
 b8D8 
+	!B9	
 Ba9hB!9
 Bad compression
 Bad header format (expected '<!--'
@@ -1210,7 +1244,6 @@ B-,	D-/
 BE9hB
 BE9J}
 bE9Y}
-Begin profiling particle system performance
 behavior if parent particle dies
 BenchmarkService001
 bentnormal
@@ -1221,8 +1254,7 @@ BG9hB
 bH9hb
 BH9hB
 bI9hb	9
-bI9hb	9#/
-bI9hb	96
+bI9hb	9n
 bias distance
 biased 0 500
 bias in local space
@@ -1253,7 +1285,7 @@ bN9hb
 BN9hB
 bN9in@
 bo9hb/9
-bo9hb/9p
+bo9hb/9@
 BodyGroup
 BodyGroupChoice
 bodygroup field
@@ -1300,11 +1332,9 @@ Bump Strength
 bUpdate
 burst_randomize
 burst_scale
-bVD9a
 B@yhB
 C-2-@
 C-!8"
-C@9`b
 cable end cap offset amount
 cable end cap shape factor
 cable_tesselation_ib
@@ -1486,7 +1516,6 @@ clamp minimum light value to initial color
 Clamp Non-Sheet texture V coords
 Clamp scalar
 Clamp vector
-cl_dump_particle_stats
 client
 clientcmd_can_execute
 clock_gettime
@@ -1506,7 +1535,7 @@ cl_particle_fallback_multiplier
 cl_particle_log_creates
 cl_particle_max_count
 cl_particle_retire_cost
-cl_particles_debug_showparticles
+?cl_particles_debug_showparticles
 cl_particles_dumplist
 cl_particle_sim_fallback_base_multiplier
 cl_particle_sim_fallback_threshold_ms
@@ -1807,6 +1836,7 @@ C_OP_RenderText
 C_OP_RenderTonemapController
 C_OP_RenderTrails
 C_OP_RenderTreeShake
+C_OP_RenderVRHapticEvent
 C_OP_RepeatedTriggerChildGroup
 C_OP_RestartAfterDuration
 C_OP_RopeSpringConstraint
@@ -1902,6 +1932,7 @@ CPathParameters
 CP Entity to Ignore for Collisions
 CPerParticleFloatInput
 CPerParticleVecInput
+cp field
 CPiecewiseCurveSchemaWrapper
 CP movement tolerance
 CPointConstraint
@@ -1998,8 +2029,6 @@ __cxa_pure_virtual
 Cycle or diamond double-reference to '%s'
 Cycle Scalar
 Cycle time
-Cy?! k
-Cy?! kc
 cylinder bottom control point
 cylinder inner output
 cylinder inner radius
@@ -2011,7 +2040,7 @@ cylinder top control point
 D-@ !
 *-D),5E)_
 =d6U9
-=d6U9a
+=d6U9f
 D- 8 
 D9  "
 D9!	)
@@ -2033,7 +2062,6 @@ D9H{h
 D9hyh
 D9Hyh
 D9hzh
-D9)IC
 D9)ij
 D9)ir
 D9)iv8Hyh
@@ -2100,7 +2128,6 @@ Default
 Default HSV Color
 default text
 default value
-DEFAULT_WRITE_PATH
 (%d)  EffectName "%s"  Dormant? %s  Emission Stopped? %s 
 def min cpu=%d system cpu=%d def gpu=%d system gpu=%d
  ( def. "%s" )
@@ -2131,6 +2158,7 @@ DETAIL_2_COMBO_UNINITIALIZED
 $DETAIL2ROTATION
 $DETAIL2SCALE
 detail 2 texture
+Detect from CP's Object
 D-F	&
 difference maximum
 difference minimum
@@ -2178,6 +2206,7 @@ Do Nothing
 Do not repeat cycle
 Don't Break
 DotaCardGameClient_001
+double
 Double-register of KV3 conversion (from '%s' to '%s')
 Double-save to Member '%s'
 draw as opaque
@@ -2188,8 +2217,6 @@ dual sequence combine mode
 Dual sequence controls
 Dump all new particles, optional name substring.
 dumpparticlelist
-dumpparticleperf
-dump particle profiling info to particle_profile.csv
 duration at which to stop
 duration field
 duration scale
@@ -2265,7 +2292,6 @@ end fade time
 ending control point
 ending force
 end offset
-End profiling particle system performance
 end scale control point field
 end spread
 end time max
@@ -2306,6 +2332,8 @@ Expected <member name> after type
 Expected member name or '}'
 Expected '[' or '('
 Expected ',' or '%s'
+Expected 'systems' or 'operators' as first argument to particle_profile
+Expected 'systems' or 'operators' as first argument to particle_profile_spike
 Expected token
 Expected type of next member
 Expected value or ']'
@@ -2453,6 +2481,7 @@ fourth control point location
 fourth control point number
 F_PARTICLE_ORIENTATION
 F_PER_PIXEL_LIGHTING
+Frames Measured: %d
 frames per second
 freeze simulation after time
 freeze time
@@ -2480,6 +2509,7 @@ G9a2A
 "G9h"
 G9h2A
 	,G9i
+	`G9J
 :G9k}
 game_class
 game_keys
@@ -2491,7 +2521,7 @@ Gaussian
 GCC: (GNU) 4.9.x 20150123 (prerelease)
 g cMesh
 g default
-../_generated_code/particles/release/androidarm64/../../../../particles/pfunc_renderers.cpp(7160): 
+../_generated_code/particles/release/androidarm64/../../../../particles/pfunc_renderers.cpp(7291): 
 GenerateDistanceField
 generate normals for cylinder
 GenerateResourceNameFromFileName: Invalid extension specified in file name "%s"!
@@ -2531,13 +2561,16 @@ g_VProfCurrentProfile
 h&?);
 h&@)?
 #H)	}	
+h1xnj 
 h)8Ay)
 H@@9(@
 h"@9h
 h"A9a
 half-lambert normals
 HammerMapLoader001
+hand control point number
 handindex
+haptic hand
 Has Collision; 
 .hash
 HAT	K 
@@ -2550,6 +2583,7 @@ hb@9v
 HBroot
 h&Byu"
 HC@9h
+!hdx?
 head alpha scale
 head color scale
 head taper scale
@@ -2559,10 +2593,12 @@ health_override
 height override control point number
 HELPER_BONE
 HelpSystem_001
+=hf@9
 hf@9h
 hf@9H
 hf@9i
 hFByuB
+hFD9u
 Hih8Iii8
 Hih8Jik8)yk
 hih8kij8)yj
@@ -2574,7 +2610,7 @@ hii8Iyi
 hii8kin8
 hii8Vyi
 H$@iJ
-Hik8K{k
+Hik8kzk
 Hik8+yk
 Hil8J
 Hitboxes fall back to render bounds
@@ -2588,7 +2624,6 @@ Hitbox Offset Position
 HITBOX_RELATIVE_XYZ
 hitbox set
 H%@)J	@
-hj48!1
 =hJU9@
 hk989
 =hNU9
@@ -2608,11 +2643,14 @@ hue adjust
 hurt_me
 hurt_them
 hwB9(
-h&@y)9G
+h&@y)1G
 #@)i"@
 	)@)i*
 	)@)I(
 =i0@9
+i1xhj*
+i1xhj+
+i1xjj,
 i6@yh
 i`8Jy`
 i`8ky`
@@ -2639,12 +2677,17 @@ I CUtlRBTree<CUtlMap<const char *, CAttachment, int, bool (*)(const char *const 
 I CUtlRBTree<CUtlMap<const char *, CHitBoxSet, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, CHitBoxSet, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CHitBoxSet, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, CHitBoxSet, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, CHitBoxSet, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CHitBoxSet, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<const char *, IParticleEffect *(*)(), unsigned short, bool (*)(const char *const &, const char *const &)>::Node_t, unsigned short, CUtlMap<const char *, IParticleEffect *(*)(), unsigned short, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, IParticleEffect *(*)(), unsigned short, bool (*)(const char *const &, const char *const &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<const char *, IParticleEffect *(*)(), unsigned short, bool (*)(const char *const &, const char *const &)>::Node_t, I = unsigned short, L = CUtlMap<const char *, IParticleEffect *(*)(), unsigned short, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, IParticleEffect *(*)(), unsigned short, bool (*)(const char *const &, const char *const &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<void *, int, bool (*)(void *const &, void *const &), CUtlMemory<UtlRBTreeNode_t<void *, int>, int> >::NewNode(const T *) [T = void *, I = int, L = bool (*)(void *const &, void *const &), M = CUtlMemory<UtlRBTreeNode_t<void *, int>, int>]
+)icx_
+)icx?
 id8jyd
+)idx?
+)idx9
 IeG9H1A
 Ignore delta time (RenderTrails)
 ignore normal
 ignore radius
 =(ih8
+(ih8)
 )(ih8
 )+ih8
 )ih8)
@@ -2657,6 +2700,7 @@ ignore radius
 (ih8a:A
 ih8Hyh
 |ih8Hyh
+(ih8I
 *(ih8I
 (ih8)ij8
 .ih8/ik8)il8
@@ -2666,7 +2710,8 @@ ih8Hyh
 -ih8Wyh
 \ih8(yh
 ih8,yl
-\ii8I{i
+(ih8z
+ii8#hi8
 ii8Iyi
 ii8Jyk
 ii8nyi
@@ -2674,7 +2719,6 @@ ii8tyi
 ii8Vyi
 iih8 8 
 *Iii8
-Iii8*
 iii8c
 Iii8Hih8
 Iii8J
@@ -2688,6 +2732,7 @@ iiix+
 iil8rio8Lyl
 Iin8Wio8Jip8
 Ii+x!
+II=)yF
 i"@)j
 i.@)J-
 I!@)J	@
@@ -2719,7 +2764,6 @@ ikrig
 IKRigBiped
 IKRigBug
 IKRigSimple
-*il8+
 ,il8B8#
 +il8)im8
 il8K8 
@@ -2729,8 +2773,8 @@ il8^yl
 il8,yl
 il8/yl
 i*?)m
-*im82
 im8iym
+,im8O
 im8pih8Syh
 im8Rih8
 =`im8[ym
@@ -2744,10 +2788,11 @@ IMPULSE_TYPE_NONE
 IMPULSE_TYPE_PARTICLE_SYSTEM
 IMPULSE_TYPE_ROPE
 =)in8
+*in8!
 in8aYj
 in8dyp
-*in8!H
 in8Jyn
+;in8r
 in8{ym
 in8$yq
 include water
@@ -2867,6 +2912,7 @@ iq8fyr
 iq8;yq
 iq8Zyq
 IQuickTime001
+ir8nhr8?
 ir8OH/
 ir8\yr
 ir@9	
@@ -2884,13 +2930,16 @@ iv8(yv
 iw8\yw
 ix8[yx
 ix8\yx
+i#xjj-
 iy89yy
 .@)J-
 @-J	,
 j0@98
 j2?)?
-J38.f
-J68!g
+J38[Y
+J68NZ
+J78"Y
+j88&j
 J-a	!
 =JaL9
 <JaL99
@@ -2913,7 +2962,6 @@ jh8({h
 jh8hzh
 jh8J}
 Jib8_
-JIb88
 Jig82yg
 JIGGLE_BONE
 jiggle bone %u
@@ -2927,6 +2975,7 @@ Jis8K}
 jj(8(
 jj8fzj
 jm8mzm
+jn87kn8
 JNI_OnLoad
 JNI_OnUnload
 Joint Indices (%d) Out Of Range for SINT16: Skinning will not work!
@@ -2973,18 +3022,21 @@ K)@)j
 kki8K
 KMeansQuantization
 kMih8Jik8+yk
+K?@@qk
+*(kt8H
+kt8;k48
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
 kv3format_manager.cpp
 KV3 load transfer failed: %s
-*(kz8
-kz8;k:8
 l5B)c
 "L9h"
 l:@9kyi
+~L9L}
 Last/Newest Particle
 last_sniff
 latency CP
 latency CP field
+Left Hand
 Length; 
 length max
 length min
@@ -3080,7 +3132,7 @@ lighttype
 light type
 LightType_t
 L-(ih8
-Lih8H{h
+Lih8hzh
 Lih8Jik8+yk
 lih8kii8
 Lii8Jih8uyh
@@ -3140,7 +3192,7 @@ lowprecisionuv1
 low violence definition
 l @_p
 LrwcE
-L-Til8IU
+L-Vil8IU
 @M 	 
 	(M))}@
 "M9h"
@@ -3151,6 +3203,7 @@ magnitude
 maintain count scale control point
 maintain count scale control point field
 maintain existing hitbox
+malloc
 m_angOffset
 m_ankleBoneName
 manual_animation_frame
@@ -3199,6 +3252,7 @@ max constraint passes
 max coords
 max distance from plane
 max distance value
+max_expected
  max. %f
 max force
 maxHullVertices
@@ -3224,15 +3278,24 @@ maximum velocity
 maximum visual size
 max inherited bone velocity
 max initial speed
+max_instances
+Max Instances
 max length
 max # of children to enable (-1 for max particle count)
 max particles
+max_particles
+Max particles used
 MAX_PATTACH_TYPES
 max projection depth
+max_render
+Max Render Time (us)
 max row/particle index to affect
+max_sim
 max size
 maxSpringTension
 Max( %s, %s )
+Max Time
+Max Time (us)
 max trace length
 maxVerticesPerHull
 M-B(#
@@ -3405,6 +3468,7 @@ m_BoundingBoxMax
 m_BoundingBoxMin
 m_bOutline
 m_bOverrideTranslucentMaterials
+MbP?|
 m_bParticleFeathering
 m_bParticles
 m_bPerParticle
@@ -3635,6 +3699,7 @@ m_flAlphaScale
 m_flAlphaScaleMax
 m_flAlphaScaleMin
 m_flAmbientScale
+m_flAmplitude
 m_flAmplitudeScale
 m_flAnimationRate
 m_flAnimationRate2
@@ -4113,7 +4178,7 @@ mil8Lyl
 mim81
 Mim81yk
 mim8kin8Jyn
-Mim8n
+Mim8n 
 Mim8Qii8Rik8
 min8Nyn
 min8pii8qil8
@@ -4432,6 +4497,7 @@ m_nOutputCPField
 m_nOutputEndCP
 m_nOutputEndField
 m_nOutputField
+m_nOutputHandCP
 m_nOutputStartCP
 m_nOutputStartField
 m_nOutVectorField
@@ -4881,7 +4947,6 @@ Name					Count		Particle Count
 Named model body part random
 Named model mesh group random
 Named model sequence random
-name, total time, max time, avg sim time, total instances, max instances,total frames, max particles used, allocated particles, total render time, max render time, avg render time, number of intersection tests, number of actual traces
 nav_attribute_avoid
 nav_data
 n=B)l
@@ -4920,6 +4985,7 @@ nf@9/
 "nhbE9H
 "nhBE9H
 NhcE9
+NhFD9t
 N-(ih8
 N(ih8
 =nih8Hyh
@@ -4935,7 +5001,8 @@ Nin8Jio8)yo
 nin8rij8`il8
 Nin8&yo
 nio8qii8ril8
-$nJ%G
+niqx?
+Nj1xkj-
 !NJu|
 #Nk9F
 NLii8,
@@ -4996,7 +5063,6 @@ nTries < 10000000
 <null>
 Number of Children to Use
 Numer of points along path
-numframes,%d
 num_particles
 numsegments
 num to emit
@@ -5061,6 +5127,7 @@ operator end fadeout
 Operator Fade
 operator fade oscillate
 operator help and notes
+Operator Name
 operator start fadein
 operator start fadeout
 operator strength
@@ -5070,7 +5137,6 @@ operator time offset seed
 operator time scale max
 operator time scale min
 operator time scale seed
-opname, total time, max time, average time, total frames
 optionallycompressedtangentframe
 Ordered constructor wrapped type has no default constructor.
 ORIENT
@@ -5178,7 +5244,6 @@ Particle/Effect_Rendering
 Particle effect %s setting count to %d
 Particle Effect Systems:
 PARTICLE_EHANDLE__
-particle_end_profile
 Particle Error before emit: Effect %s, Function %s (%d, %d)
 Particle Error: Effect %s, Operator %s (%d, %d)
 PARTICLE_FALLOFF_CONSTANT
@@ -5216,6 +5281,7 @@ Particle needs recompiling: '%s'
 particle neighbor increment amount
 particle number
 particle number to read
+Particle Operator Perf
 PARTICLE_ORIENTATION_ALIGN_TO_PARTICLE_NORMAL
 ParticleOrientationChoiceList_t
 PARTICLE_ORIENTATION_FULL_3AXIS_ROTATION
@@ -5236,6 +5302,8 @@ ParticlePinDistance_t
 PARTICLE_PIN_SPEED
 ParticlePreviewBodyGroup_t
 ParticlePreviewState_t
+particle_profile
+particle_profile_spike
 particle_property.cpp
 particle_reset_assertions
 particles/
@@ -5255,7 +5323,6 @@ ParticlesLib
 particles_multiplier
 particle_snapshot_allow_combined_models
 Particle Speed
-particle_start_profile
 particles to map from start to end
 particle_stop_all
 particle_system
@@ -5263,6 +5330,7 @@ Particle System
 particlesystemmgr
 ParticleSystemMgr003
 particlesystemmgr.cpp
+Particle System Perf
 ParticleSystemRequiredResources
 Particle texture descriptor array overflow!
 PARTICLE_TOPOLOGY_CUBES
@@ -5274,6 +5342,11 @@ PARTICLE_TOPOLOGY_TRIS
 particle to use
 particletypemanager.cpp
 ParticleVecType_t
+ParticleVRHandChoiceList_t
+PARTICLE_VRHAND_CP
+PARTICLE_VRHAND_CP_OBJECT
+PARTICLE_VRHAND_LEFT
+PARTICLE_VRHAND_RIGHT
 PARTICLE_WORLD_HANDLE__
 path points
 PATTACH_ABSORIGIN
@@ -5397,6 +5470,7 @@ Plat_ExitProcess
 Plat_FloatTime
 Plat_GetEnv
 Plat_GetThreadIndex
+Plat_GetTime
 Plat_IsInDebugSession
 Plat_MSTime
 Plat_NeedsLowFragmentation
@@ -5474,6 +5548,8 @@ Problem loading error.vpcf, please validate your game install
 _procedural_particle_snapshot.vsnap
 procedural_spritecard.vmat
 ProcessPSystem
+Profile particle
+Profile particle spike
 projected texture alpha test point scale field
 projected texture alpha test range scale field
 projected texture alpha test sharpness scale field
@@ -5527,24 +5603,26 @@ q0@9RU
 "Q9h"
 QAngle
 ,QAy,
-,QAy*;
+,QAy*
 Qi"A)`
 q(ih8
 qih8*
 qii8Iyi
 qJT-s
+Qj$xij0
+Qj/xnj0
 ql"U9i
-)Qr9?
 Quadrilaterals
 Quantize Float
 QuarterSizeAttrWithBoxFilter
 Quaternion
 QueuedLoaderVersion001
 Quintic
-r	1-9_Q29t
+)Qy9?
+q$;@z
+r	149_Q99t
 R2@9_
 r8iq8>ir8*ia8#ib8
-	!r9	
 R\9hR
 R-a8!
 Radial Amount (-1..1)
@@ -5735,17 +5813,26 @@ Render Text
 Render tonemap controller
 Render Tree Shake
 RenderUtils_001
+Render VR Haptic Event
 Repeatedly Trigger Child Group
 Replace
 replicated
 Replicate sequence 0 alpha to rgb
 Replicate sequence 1 alpha to rgb
+report_columns
+report_info
+report_rows
+report_time
+report_time_str
+report_title
+report_type
 re-randomize rate (-1 for once only)
 reset animation frame on stop
 resource
 ResourceCompilerSystem001
 ResourceHandleUtils001
 ResourceManifestRegistry001
+resource_name
 resourcesystem
 ResourceSystem013
 RESOURCE_TYPE_PARTICLE_SNAPSHOT
@@ -5761,14 +5848,16 @@ r_freezeparticles
 rG9hr
 RGB blend weight for sequence 0
 RGB blend weight for sequence 1
+(Rh7i
 Rhjh8(
 Rhk)8
 RHk)8
 Rhkh8h
 RHkh8h
-R(i*8H
+R(i*8h
 r#ib8
 right eye first seq offset
+Right Hand
 Rigid; 
 Rik8(yl
 =rim8[ym
@@ -5786,6 +5875,7 @@ Roll Speed
 rootNode
 rope shake
 Rope Spring constraint
+Rotal render time (us)
 rotate normals
 rotate rate(dps)
 Rotate vector random
@@ -5824,6 +5914,7 @@ r_threaded_particles
 runspeed
 /RV?OJ
 =RV?OR
+ryjj8
 "%s" 
 %s+--
 	%	S?
@@ -6015,8 +6106,6 @@ Set Value
 set value method
 Set Vec
 Set vector from control point
-%s,%f,%f,%.9f,%d
-%s,%f,%f,%.9f,%d,%d,%d,%d,%d,%f,%f,%.9f,%d,%d
 %s| Fields:
 shader
 shadowcascadecount
@@ -6027,10 +6116,14 @@ shadowtexturewidth
 shake duration after end
 shapeType
 sharpStartAngle
+sheet
 sheet animation time scale
 .shstrtab
 shuffle
 sil8Lym
+Sim Time Average: %.2fms
+Sim Time Max: %.2fms
+Sim Time Min: %.2fms
 Simulated
 singleplayer
 Sin( %s )
@@ -6090,6 +6183,7 @@ spatial coordinate offset
 @spawn
 spawn_motion_disabled
 Specified Particle Number
+Specified Via Control Point
 Specify blend weights for alpha and rgb
 $SPECULARBLENDTOFULL
 $SPECULARCOLOR
@@ -6190,6 +6284,8 @@ surface_prop
 SXW?O
 Synchronize particles
 Syntax Error at offset: %d
+System Name
+Systems Measured: %d
 T(@@9
 "T9h"
 tail alpha scale
@@ -6202,6 +6298,7 @@ target layer ID for rendering
 tb	9i
 Tc"A)`
 Tc"C)`
+Tcih8
 T *CUtlLeanVectorImpl<CUtlLeanVectorBase<CParticleCollectionFloatInput *, short>, CParticleCollectionFloatInput *, short>::AddToTailGetPtr() [B = CUtlLeanVectorBase<CParticleCollectionFloatInput *, short>, T = CParticleCollectionFloatInput *, I = short]
 T *CUtlLeanVectorImpl<CUtlLeanVectorBase<CParticleCollectionVecInput *, short>, CParticleCollectionVecInput *, short>::AddToTailGetPtr() [B = CUtlLeanVectorBase<CParticleCollectionVecInput *, short>, T = CParticleCollectionVecInput *, I = short]
 T *CUtlLeanVectorImpl<CUtlLeanVectorBase<CPerParticleFloatInput *, short>, CPerParticleFloatInput *, short>::AddToTailGetPtr() [B = CUtlLeanVectorBase<CPerParticleFloatInput *, short>, T = CPerParticleFloatInput *, I = short]
@@ -6241,6 +6338,8 @@ texture V Scroll Rate
 texture V World Size
 Th&@)
 Th2@9
+Th2Cy
+Th:Cy
 Th"E9
 Thf@9
 thickness
@@ -6249,6 +6348,7 @@ Thin Plate
 third control point location
 third control point number
 #This file is generated by CMesh::SaveObj() from CMesh with %d indices, %d vertices, %d attributes
+THit8
 ThreadGetCurrentId
 ThreadSleep
 ThwB9u
@@ -6259,6 +6359,8 @@ Tib@9)
 TiBE9)
 Tif@9
 Tif@9)
+TiFCy?! k
+TiFCy?! kc
 TILT_TWIST
 time coordinate offset
 time-of-day parameter
@@ -6268,6 +6370,7 @@ Timescale Modifiers
 time to end transition
 time to sleep when not drawn
 time to start transition
+time_us
 Time varying force
 tint blend mode
 tint clamp max
@@ -6280,7 +6383,9 @@ Ti"Q)`B@
 TJib8_
 T?k(8
 TK	@9)A
+TKih8
 TL	@9kA
+Tnij8
 /!T?O!
 tonemap level
 tonemap level scale
@@ -6293,11 +6398,18 @@ ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
 Too many simultaneously active particle systems!
+total frames
+total_frames
+Total Frames
+total_render
+total_sim
+Total Time
+Total Time (us)
 T? @q
 T? @q*
 trace accuracy tolerance
 Trace along particle normal
-Trace cache efficiency = %f%%
+Trace cache efficiency = %.2f%% (%d traces for %d tests)
 trace collision group
 trace direction override
 trace offset
@@ -6323,7 +6435,6 @@ Try changing the number of bones per vertex or the skin weighting, and send Serg
 Trying to concatenate meshes with different numbers of attributes!
 Trying to concatenate meshes with incompatible attribute sets!
 Turbulent force
-*** Turn on -particle_perf!
 turn_rate
 Twist amount (-1..1)
 Twist around axis
@@ -6337,7 +6448,6 @@ uii8Wyi
 uij8:yl
 Unable to determine buffer encoding.
 Unable to find a valid model handle for m_bModelFromRenderer in '%s'
-*** Unable to open profile file!
 Unable to read resource file %s!
 Unable to write file '%s'
 Underwater Explosion
@@ -6359,6 +6469,8 @@ Update lights
 UpdateNewEffects
 UPDATE_STRING_TOKEN_DATABASE
 UpperEyelid( 
+Usage: particle_profile_spike <'systems'|'operators'> <spike_threshold_ms>
+Usage: particle_profile <'systems'|'operators'> <num_frames>
 use_additional_offset
 use additive blending
 use bones instead of hitboxes
@@ -6592,6 +6704,7 @@ V_tanf
 V_UTF16ToUTF32
 V_UTF16ToUTF8
 V_UTF8ToUTF32
+V_vscprintf
 V_vsnprintf
 V_vsnprintfSize
 V_vsnprintfWarnTrunc
@@ -6599,6 +6712,7 @@ V_wcstoi64
 wait for children to finish
 walkspeed
 Warning
+WARNING: Discarding existing in-progress particle performance request.
 WARNING: Encountered %d total problems with vertex data (first %d shown above)
 Warning: Missing fallback for particle system "%s"!
 WARNING: Particle system '%s' was not precached correctly. Performing blocking load....
@@ -6624,7 +6738,6 @@ world spatial noise coordinate scale
 world time noise coordinate scale
 World-Z Align
 wrap input
-Write a spreadheeet describing particle performance to particle_profile.csv
 Write normal instead of rotation
 write stencil on z-buffer test failure
 write stencil on z-buffer test success
@@ -6642,8 +6755,8 @@ Xkh86yh
 X offset of center point
 XY velocity only
 @y`&@
-@="Y@
 	y4xl
+	!y9	
 Yaw; 
 yaw_end
 yaw initial
@@ -6652,15 +6765,19 @@ yaw offset min
 yaw random exponent
 yaw_start
 Y axis scaling scalar field
-)YD9(
 Y Dimension Count
 Y Dimension Spacing
 @y+}E
+#@-	yG
+yh2Cy
 @yhz@
 )	@yi*
+yi>Cy)
+yi>Cyk
 {YIN?
 @yj"@
 )	@yJ
+yj2Cy*	
 )YJJ)}
 @y?! k
 @yk"@
@@ -6684,11 +6801,13 @@ Z Dimension Count
 Z Dimension Spacing
 _ZdlPv
 Zih8;yk
+Zii8izi
 zii8[yi
 Zik8*yl
 =Z.K>
 z:K(None)
 zKyhz
+zL9h	
 _ZN10CVProfNode10EnterScopeEv
 _ZN10CVProfNode10GetSubNodeEPKciS1_i
 _ZN10CVProfNode9ExitScopeEv

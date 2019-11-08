@@ -7,11 +7,13 @@
 '":|;
 (/@))
 ))@-+	@
+)*/	) 
 )+@)+
 {}[]=, 	
 {}[]()=&, 	
 @-   
 @- 	 
+@-!	 
 @-!	!
 @-"	@
 @-#(!
@@ -27,12 +29,10 @@ $@)  "
 	0@9?
 0@9I0@9
 0ED- 
-0n19$
 0Ng*'
 0x%016llX
   0x%08X %s,
 0@y_!!ka
-!@)@1
 10CAnimState
 10CBoneSetup
 10ConCommand
@@ -59,6 +59,7 @@ $@)  "
 12IAnimTagSpan
 13CAnimNodeBase
 13CAnimNodeList
+13CAnimPosePool
 13CAnimSkeleton
 13CAudioAnimTag
 13CNWaySequence
@@ -91,6 +92,7 @@ $@)  "
 15CActivityValues
 15CAnimationGraph
 15CAnimationGroup
+15CAnimObjectPoolI9CAnimPoseE
 15CAnimParamIdMap
 15CAnimTagManager
 15CBaseConstraint
@@ -222,6 +224,7 @@ $@)  "
 18IEnumAnimParameter
 18IIKRuleDescription
 18IParamLookupHelper
+19CAnimObjectPoolBase
 19CAnimUpdateNodeBase
 19CBoneConstraintBase
 19CBoneMaskUpdateNode
@@ -254,11 +257,14 @@ $@)  "
 19IAnimStateCondition
 19IKeyValuesErrorSpew
 19IPathMetricInstance
-	1B9I
 1bQJ1~
+	1D9I
 1DBlend
 1*i(8`
 1ns:5
+	2)!.
+	2)!"
+	2)!%
 	2*	@
 2*?)0"
 20CAimMatrixUpdateNode
@@ -297,6 +303,7 @@ $@)  "
 20IAnimStateTransition
 20IIKControlRigContext
 20IResourceTypeManager
+	2)!1
 21CAnimationSystemUtils
 21CAnimGraphDebugReplay
 21CAnimGraphInitContext
@@ -539,7 +546,7 @@ $@)  "
 28CModelDocAnimResourceSeqBase
 28CMoveHeadingConditionUpdater
 28ISchemaCollectionManipulator
-2	!+9?
+2	!-9?
 29CAnimationGraphVisualizerAxis
 29CAnimationGraphVisualizerLine
 29CAnimationGraphVisualizerText
@@ -556,12 +563,8 @@ $@)  "
 29IAnimationGraphVisualizerInfo
 29IFutureVelocityMetricInstance
 29ISolveIKChainAnimNodeInstance
-2	!*9s
-	2)a'
-	2)a*
-	2)a3
-	2)a6
-2B9hj
+2	!,9s
+2B9hz
 2_BONE_IK
 2dtri
 %.2f degrees, %.2f ratio
@@ -574,9 +577,10 @@ $@)  "
 2ij(8
 2ij(8F
 2+imx
-	2J!?
 *2j08p
 *2j08q^A
+	2Ja=
+	2Ja:
 2jp8R
 2_!!k
 2L@-4
@@ -590,7 +594,7 @@ $@)  "
 2xi*8*i@9J
 	2(y7
 	2	y7
-30-;0
+30-;,
 30CAnimGraphUpdateContextBuilder
 30CCompressedReferenceQuaternion
 30CFacingHeadingConditionUpdater
@@ -648,7 +652,6 @@ $@)  "
 4i^E9)
 4i*Z)_
 4+iz8K
-4jrA9
 4kk(8
 4n&	&
 4T@-6
@@ -668,7 +671,7 @@ $@)  "
 6N  !
 @6W!?
 6x"@9
-6YsS9
+6YsU9
 7hb@9h
 7hf@9
 7hf@9(
@@ -691,7 +694,6 @@ $@)  "
 8x9,7
 8@y	 @
 `"@9	
-=	+@9	
 )!@9)
 @=#9 
 @-!9 
@@ -746,6 +748,7 @@ $@)  "
 9@zH~`
 a^  `
 'A)	}	
+(-A)*
 *(%@-*-A-
 A- (#
 A- 	 
@@ -758,7 +761,6 @@ A9`&@
 A9	(@
 a^@9b*
 	A@9i
-	!A9K
 A@9)y
 A-'@A-
 	@=a	@=B
@@ -875,7 +877,6 @@ Agg data %d: %p (%d parts, crc 0x%08X)
 *%A)h
 Ah1xij/
 *a@i)	
-ai9#	 
 )AIJ)
 )AIJ#
 Aim Attachment
@@ -890,8 +891,10 @@ AimMtx:m_resetCount
 ai_model_info
 AIWalkable
 	!A)j
-	AJ9	
+aj9#	 
 _A@k(
+,%A)k
+	AL9	
 AllocateAndLoad failed for '%s'
 AllocateAndLoad failed for '%s' (%s)
 allowstatic
@@ -904,6 +907,7 @@ Android clang version 5.0.300080  (based on LLVM 5.0.300080)
 #Angle
 Angle; 
 Angle Increment
+Angle Traces with Slope
 AnimAddLayer
 AnimAlign
 Animated
@@ -1264,6 +1268,7 @@ C-!8"
 C9	%@
 C@9`b
 C@9hJ
+	!C9K
 cable
 CActivityValueList
 CActivityValues
@@ -1352,6 +1357,7 @@ CAttachment
 CAudioAnimTag
 CAuthPhysBody
 CAuthPhysJoint
+CAyhB
 	@=c	@=B
 CBaseAnimatingController::SequenceDuration( %d ) out of range
 CBaseAnimMotor
@@ -1873,8 +1879,7 @@ c@yhR
 %d : 
  D-	(@
 D-"/@
-D9()@
-D9	)@
+!D9	<
 d@9hf
 D-a"@
 %d.Add( %s, %d, %.2f )
@@ -2072,7 +2077,7 @@ EXPORTSYSTEM_INTERFACE_VERSION_001
 extra
 Extrapolate Movement
 F: %.2f deg
-F- 8 
+	%F9)
 f@9H1
 f@9h2
 FABRIK
@@ -2329,7 +2334,6 @@ Future Facing Metric
 Future Velocity
 Future Velocity Metric
 G{}()':
-	!G9	
 G@9hF
 G@9hN
 game_class
@@ -2371,6 +2375,7 @@ Get the model this sequence belongs to
 (gGy 
 Given a name or a sequence handle, returns an instance of the sequence class
 Given a pose parameter array, return the highest frame number for the sequence
+/G)j/
 GK-Tk
 .gnu_debuglink
 .gnu.version
@@ -2426,8 +2431,8 @@ hBA9(
 hBA9h
 -hbB9
 )HcB9
-=Hci9 
 HCik_debug_perlin_solver
+=Hcj9 
 !hdx?
 headtype
 health
@@ -2444,7 +2449,6 @@ hf@9i
 )hFA9
 hfB9	
 hFD9u
-hf@y`
 h*@i)
 =$	H-#I@
 Hi)8j
@@ -2473,8 +2477,8 @@ Hit Strength Parameter
 h&@-j
 hj@9yF@
 h&@-j.A-
-hjA9h
 !H*JAJ*
+hjG9)YF
 H*J!J*
 H*J	J*
 HMaterial
@@ -2493,8 +2497,8 @@ HSCRIPT-light
 hscript_lightbinding
 HSCRIPT-new
 HSequence
-=hs@y
 =hs@y+
+=hs@y1
 hurt_me
 hurt_them
 [hxVYyxk
@@ -2522,6 +2526,7 @@ i*8*i@9J
 ?i(8?i*x?i+
 *i+8j
 +i(8k
+	!I9	
 i98h.@
 IAnimationGraph
 IAnimationGraphBuilder
@@ -2531,7 +2536,7 @@ IAnimNode
 IAnimNodeBuilder
 IAnimNodeInstance
 IAnimParameter
-<IAnimParameterInstance
+IAnimParameterInstance
 ?IAnimState
 IAnimStateCondition
 IAnimStateMachine
@@ -2821,8 +2826,6 @@ IVSSequence
 *i.xi>@yj:
 i#xjj-
 	ixx))
-=i#@y	
-I!@y	
 i>@yh
 )iz8)
 j-!	)
@@ -2840,7 +2843,6 @@ JD-sN*
 JEIJJ}
 j&@-h
 JHAHJ)
-ji)8k
 JIGGLE_BONE
 jiggle bone %u
 Jih8*i+8j
@@ -2872,13 +2874,13 @@ K)@)+)
 K1?U20
 *k2@y
 k5@i*i
-`k68h
-|k68h
+[k68h
+@k68h
 k(8vV@
-!k9h	
-KAF9h
+KAH9H
 kAKJk
 k-D	 
+K-db@
 K-eb@
 Keyframe Animation
 Keyframed node does not have a valid sequence
@@ -2896,6 +2898,7 @@ kh,8+
 kiix)	
 K!@iJ	
 K)@)j
+K-pb@
 KP*;Q>.
 K?@@qk
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
@@ -2907,17 +2910,19 @@ k@y(Y
 l-@),-
 *-	L!
 L: %.2f deg
+L- 8 
 L	@9!
+LAAylA
 labelled_debug_helper_arc_segments
 labelled_debug_helper_enabled
 labelled_debug_helper_scale
 labelled_debug_helper_show_position
 labelled_debug_helper_show_text
 labelled_debug_helper_skeleton_show_bone_names
-L)A)k
 Last Bone in Chain
 last_sniff
 L-cn@
+L-dn@
 Lean Matrix
 Lean Matrix does not have a valid sequence
 LeanMatrixNode
@@ -3008,7 +3013,10 @@ LrwcE
 %ls [wstring, len = %d]
 lS@ymW@y
 LYkxk
+/M)*/
 M)@)-)
+M- 8 
+!m9h	
 (MA8(
 m_aAngOffset
 m_activeSegments
@@ -3274,7 +3282,6 @@ m_bUserSpecifiedMaterialGroup
 m_bUseShadowFastPath
 m_bVisible
 m_bXFade
-@Mcd>
 m_chain
 m_ChainData
 m_ChainName
@@ -3319,6 +3326,7 @@ m_cRenderColor
 m_CullDataIndex
 m_currentSegmentIndex
 m_currentSequenceIndex
+M*#D9	
 m_dampedScaleValue
 m_dampedTurnValue
 m_dampedValue
@@ -3397,6 +3405,7 @@ meshUtilsKeyValues
 m_eType
 m_eventArray
 m_EventData
+mE)z$
 m_facingDamping
 m_facingMode
 m_facingTarget
@@ -3578,6 +3587,7 @@ m_flTargetFacing
 m_flTiltPlanePitchSpringStrength
 m_flTiltPlaneRollSpringStrength
 m_flTimingBlend
+m_flTraceAngleBlend
 m_flTraceHeight
 m_flTraceRadius
 m_flTurnAmount
@@ -3683,6 +3693,7 @@ m_items
 m_JointConstraintPairs
 m_JointName
 m_Joints
+MK!D9Pa
 m_keyValues
 m_keyValueText
 m_lastSegmentIndex
@@ -4631,11 +4642,9 @@ N37CTypesafeIntrospectedToKV3TypeManagerILy469920276854E9CAnimDataE26IKV3Resourc
 N37CTypesafeIntrospectedToKV3TypeManagerILy469920276854E9CAnimDataE28IKV3ResourceDeallocatorUtilsE
 N37CTypesafeIntrospectedToKV3TypeManagerILy482955714934E15CAnimationGroupE26IKV3ResourceAllocatorUtilsE
 N37CTypesafeIntrospectedToKV3TypeManagerILy482955714934E15CAnimationGroupE28IKV3ResourceDeallocatorUtilsE
-+N-4"
 "N$4$n
-$N!,5
+N- 8 
 $NA*#
-!NaR@
 nav_attribute_avoid
 nav_data
  NB(&
@@ -4674,9 +4683,9 @@ Newline in string literal
 Next step normal
 nexttoken
 nf@9/
- ng*!
  nG:'
 &nG9"
+!N!H(
 NhFD9t
 NI5A)K
 niqx?
@@ -4724,6 +4733,8 @@ NWay(
 nwaysequence
 !N X(
 #n,]@yB
+O- 8 
+O-!8 
 Object
      o Bone Weights  :: %d
      o Channel :: %3d Pattern :: %3d Count :: %d
@@ -4927,7 +4938,6 @@ ptr( 0x%p )
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
 )Q@9)
-Q9_9	
 qangle
 QAngle
 QAngle-world
@@ -5096,7 +5106,9 @@ ryjj8
 %s %.2f
 %s (%.2f, %.2f, %.2f)
 %s %.3f
+S9_)	
 S@9h2
+S9_q	
 %s| AlignOf: %d
 %s allocation count overflow
 %s allocation count overflow( %llu >= %llu )
@@ -5707,7 +5719,6 @@ ThB@9
 ThbE9
 Thf@9
 Th*F9h
-Thf@y`
 Th"G9
 Th"G9h
 Thin Plate
@@ -6079,7 +6090,7 @@ xi*8*i@9J
 xWsTarget
 ,]@y!
 ,	@y)
-!	@y`
+!	@y@
 @y`&@
 	y4xl
 Yaw; 

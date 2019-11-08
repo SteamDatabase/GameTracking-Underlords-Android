@@ -4,7 +4,6 @@
 >{}()':
  -> %
 -> $$ =
--@),)
 ;()[]
 !^   
 !:@=!
@@ -474,6 +473,7 @@ _8ji)8
 )!@9)
 ))@9	
 @@=9 
+@@9)#
 @9`>@
 @9)!@
 @9)%@
@@ -574,7 +574,6 @@ _8ji)8
 )%@9i
 @9i&@
 #@9i	
-@@9I#
 @9I}	
 *!@9_I
 9`i`8
@@ -670,7 +669,6 @@ _8ji)8
 @9)yh
 @9+	@yHA
 @9+	@yHM
-@9z:@
 9@z(|`
 9@zH~`
 a2@yh2@y
@@ -1108,6 +1106,7 @@ Attempted to update an image layout for an image that was not transitioned in th
 Attempted to update invalid descriptor set.
 Attempting fallback GPU allocation in system memory.
 Attempting to create a Vulkan pipeline without a vertex shader bound, aborting pipeline creation.
+Attempting to create a Vulkan pipeline with too many descriptors, aborting pipeline creation.
 Attempting to purge m_fencedResourceList.Count() = %d, m_pendingFencedResourceQueue.Count() = %d, nCurrentCmdBuffersAvailable = %d, nAllocatedCommandBuffers = %d
 Attempting to release an invalid semaphore handle.
 Attempt to set buffer size beyond max ignored
@@ -2695,7 +2694,7 @@ DCT scaled block size %dx%d not supported
 %d %d
 %d..%d
 DDDDUUUU
-DDDDUUUUDDDDUUUU
+DDDDUUUUDDDDUUUU\
 ddx_coarse
 ddx_fine
 ddy_coarse
@@ -5044,6 +5043,7 @@ Hash: %llu
 has storage class StorageBuffer.
 Having 
 H(Ay	M
+h&B)@
 !Hb8b
 hb8bF
 hb@9`
@@ -5065,7 +5065,6 @@ hBE9j
 hBg9)
 hBH9h
 hBI9H%
-h&B)@Q
 hB@yh&
 hc87hd89hc88hb8
 hc8#h 8
@@ -5209,7 +5208,7 @@ I64VEC4
 i6xh&@
 i6@yh
 (i;8{
-i;8f/
+i;8f'
 +i*8h
 ^i~8H
 i(8hilxi*
@@ -5396,7 +5395,7 @@ Ii+x!
 i"@)j
 )ij8?
 )ij8	
-*ij(8,
+*ij(8
 ij8(	
 <)ij8j&
 *ij8j
@@ -6198,6 +6197,7 @@ IVEC3
 IVEC4
 	*iW@
 *'i$x
+	i,xh(
 *i,xi>@yj:
 *i.xi>@yj:
 i#xjj-
@@ -6213,29 +6213,29 @@ Iy*wB
 )*J=@
 **J=@
 +*J=@
+	*J1+
 j1By_! k
 ',)j2G
 ',)j3@
-j48lQ
-j58-A
+j48lE
+j58-=
 j58@c
-j58G?
+j58G;
 j58h%
 j58hf@9(
 j68HC@9h
 j68i"S
 @j!8!
 j*8*%
-j(87e
 j(8a6@
 j(8h*@
+j(8H#
 j)8HA
 j/8hj)
 j(8HK
 j`8!i 8
 j-8nj)
  J9?@
-J@98!
 J9e:A
 J)@9j
 j"@9)Y@
@@ -6260,7 +6260,6 @@ Jikx_
 Jil8J%
 Jim8_5
 jix?! k
-*jj(8
 jj(8(
 jj(8(!
 jj86}
@@ -6280,8 +6279,9 @@ JSON error, unterminated element:
 /JU7OB
 jump_statement
 Ju@y_
+j*x5W
 j(x	k(x)k(x
-j*xrP
+j*x W
 J%@y_
 Jy?! kC
 J!@y-!@ylyj
@@ -6352,6 +6352,7 @@ KMdEy
 KMeansQuantization
 Km@x+
 kn1V?OK
+(knNx
 KOio8
 KPip8
 K?@@qk
@@ -7204,7 +7205,6 @@ N2Z .
 N7glslang7TShader8IncluderE
 !n9[ .
 [ n9+a
-N@9IK
 ,.n*a
 name already defined
 named_barrier
@@ -8089,7 +8089,6 @@ PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
 Pvfx_shader_file.cpp
 _!@q	
-&@)@Q
 Q0&	S
 Q1iq8Rir8`i`8
 _	Q?9
@@ -8512,7 +8511,6 @@ R	hi8
 rhj)8
 rhj)8@
 Rhj)8
-rhj)8;I
 Rhj)8t
 rhjh8
 Rhjh8
@@ -8522,6 +8520,7 @@ Rhjh8v
 rhjhx
 Rhjhx
 rhj)x
+rhk)8|
 RHkh8
 R	i5x
 R	i6x
@@ -8538,12 +8537,15 @@ RIGHT_PAREN
 right-shift
 right shift second child into first child
 r(ih8
+r(ih8(
 r	ii8
 r	ii8)
 R	ii8
 r	ii8i	
 r	ii8I
 riihx
+r)ij8i
+rijh8
 Rijh8
 Rijhx
 Riji8
@@ -8567,7 +8569,6 @@ RKik8
 RKikxk	
 rkjjxk
 RkMKJ,
-rljh8
 Rljo8
 -r_max_device_threads
 r_max_texture_pool_size
@@ -8648,7 +8649,6 @@ rwtexture3d
 RWTexture3D
 Rxjhx
 ryjj8
-rzj)x
    %s 
 "%s" 
 (*%s*), 
@@ -8876,6 +8876,8 @@ ShaderRecordBufferNV
 shaderrecordnv
 shaders.cache
 Shader %s doesn't support compile target %s
+Shader '%s' has more than the maximum number of textures per stage (has: %d MAX: %d)
+Shader '%s' has more than the maximum number of uniform blocks per stage (has: %d MAX: %d)
 ShaderSMBuiltinsNV
 SHADER_SOURCE
 SHADER_SOURCE_ROOT
@@ -11158,6 +11160,7 @@ vkAllocateMemory
 vkAllocateMemory failed fallback system memory allocation.  Fatal error: out of video and system memory.
 vkAllocateMemory failed for DEVICE_LOCAL memory indicating video memory is full, trying again in system memory as a fallback.
 vkAllocateMemory failed to allocate GPU memory.  Fatal error: out of GPU video memory and no fallback heap available.
+VK_AMD_memory_overallocation_behavior
 vkBeginCommandBuffer
 vkBeginCommandBuffer( m_pCmdBuffer, &beginInfo )
 vkBeginCommandBuffer( pCmdBuffer, &beginInfo )
@@ -11445,6 +11448,7 @@ VK_EXT_debug_marker
 VK_EXT_debug_report
 VK_EXT_debug_utils
 VK_EXT_memory_budget
+VK_EXT_memory_priority
 VK_EXT_separate_stencil_usage
 VK_EXT_validation_cache
 vkFlushMappedMemoryRanges
@@ -11944,10 +11948,12 @@ vulkan_dedicated_allocation_threshold
 -vulkan_descriptor_sets_per_pool
 Vulkan device does not support precise occlusion queries, this may result in incorrect rendering that relies on accurate occlusion queries (such as tonemapping).
 -vulkan_diagnostic_checkpoints
+-vulkan_disable_amd_memory_overallocation_behavior
 -vulkan_disable_async_compute
 -vulkan_disable_device_coherent_allocations
 -vulkan_disable_external_subpass_dependency
 -vulkan_disable_ext_memory_budget
+-vulkan_disable_ext_memory_priority
 -vulkan_disable_ext_separate_stencil_usage
 -vulkan_disable_ext_validation_cache
 -vulkan_disable_google_display_timing
@@ -12032,11 +12038,11 @@ vulkan/rendercontextvulkan.cpp
 vulkan/rendercontextvulkan.cpp(499): 
 vulkan/rendercontextvulkan.cpp(512): 
 vulkan/renderdevicevulkan.cpp
-vulkan/renderdevicevulkan.cpp(1668): 
-vulkan/renderdevicevulkan.cpp(2302): 
-vulkan/renderdevicevulkan.cpp(2931): 
-vulkan/renderdevicevulkan.cpp(3240): 
-vulkan/renderdevicevulkan.cpp(3977): 
+vulkan/renderdevicevulkan.cpp(1708): 
+vulkan/renderdevicevulkan.cpp(2342): 
+vulkan/renderdevicevulkan.cpp(2971): 
+vulkan/renderdevicevulkan.cpp(3280): 
+vulkan/renderdevicevulkan.cpp(4017): 
 -vulkanrenderthreadstack
 vulkan/renderthreadvulkan.cpp(194): Error! NULL texture pointer sent to OnReadPixels()!
 #Vulkan_RequiredExtensionMissing
@@ -12090,9 +12096,9 @@ Vulkan swapchain does not support VK_IMAGE_USAGE_TRANSFER_SRC_BIT. Screenshots n
 Vulkan swapchain out-of-date, suboptimal, or surface lost - recreating.  Result: (%s)
 Vulkan swapchain recreated succesfully.  Attempting to acquire next image...
 Vulkan texture manager frame update
-vulkan/texturevulkan.cpp(1451): 
-vulkan/texturevulkan.cpp(733): 
-vulkan/texturevulkan.cpp(749): 
+vulkan/texturevulkan.cpp(1446): 
+vulkan/texturevulkan.cpp(728): 
+vulkan/texturevulkan.cpp(744): 
 Vulkan using external subpass dependencies for all renderpasses.
 -vulkan_validation_warnings
 V_UTF16ToUTF8
@@ -12297,6 +12303,7 @@ _{-x_{.xl
 _x!yh
 XYZ values out of representable range
 !@y	!
+"@y-"
 "@y*%
 )%@y?
 @y3yh
@@ -12414,7 +12421,7 @@ Y n)Y nJY nkY n
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 @yRhnxQ~
 @y)S<
-Ys.968
+Ys.960
 y)U@y?
 @yUym
 	y)wB
@@ -12442,6 +12449,7 @@ _Z6DevMsgPKcz
 #Z8	A
 _ZdaPv
 _ZdlPv
+"_ zEQm
 ZeroExtend
 Zero length tRNS chunk
 ZFP compression is not supported.
