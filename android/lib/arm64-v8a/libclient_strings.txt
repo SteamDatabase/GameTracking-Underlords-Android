@@ -41,10 +41,10 @@
 !&@=!
 !	@-)	@
 !	@-#	@
-!	@) /
 !	@)_
-!	@)(/
-!	@)]/
+!	@)?,
+!	@)/
+!	@)]+
 !	@)&
 ?)>>!;/
 ?}@=	
@@ -97,8 +97,6 @@ $@)#@@)
 								
 																																																																																
  [$0]
-!	@)?0
-!	@)$0
 ?]0]-
 "$0", 
 $0  }
@@ -203,7 +201,7 @@ $0$1$2 $3 = $4
 /0@9n9
 0@9	X@
 +0A).<@)0
-0A9k3
+0A9K3
 (0B9 
 @0bDG
 0CClientMsg_WorldUIControllerHasPanelChangedEvent
@@ -306,7 +304,6 @@ $0 to $1,
 10CMsgIDLinkILj1ELj16ELj9199E29CMsgClientToGCAssociateDeviceE
 10CMsgIDLinkILj1ELj16ELj9203E34CMsgClientToGCPartySetGameModifierE
 10CMsgIDLinkILj1ELj16ELj9207E25CMsgClientToGCSetTeamNameE
-10CMsgIDLinkILj1ELj16ELj9209E28CMsgClientToGCModifyGACFlagsE
 10CMsgIDLinkILj3ELj16ELj7000E24CMsgAnyToGCReportAssertsE
 10CMsgQAngle
 10CMsgTEDust
@@ -1166,7 +1163,6 @@ $0 to $1,
 18CMsgIDLinkResponseILj1ELj16ELj9199E29CMsgClientToGCAssociateDeviceLj9200E37CMsgClientToGCAssociateDeviceResponseE
 18CMsgIDLinkResponseILj1ELj16ELj9203E34CMsgClientToGCPartySetGameModifierLj9204E42CMsgClientToGCPartySetGameModifierResponseE
 18CMsgIDLinkResponseILj1ELj16ELj9207E25CMsgClientToGCSetTeamNameLj9208E33CMsgClientToGCSetTeamNameResponseE
-18CMsgIDLinkResponseILj1ELj16ELj9209E28CMsgClientToGCModifyGACFlagsLj9211E36CMsgClientToGCModifyGACFlagsResponseE
 18CMsgIDLinkResponseILj3ELj16ELj7000E24CMsgAnyToGCReportAssertsLj7001E32CMsgAnyToGCReportAssertsResponseE
 18CMsgNotifyWatchdog
 18CMsgPackageLicense
@@ -1228,7 +1224,6 @@ $0 to $1,
 18TEDust_GameEvent_t
 18TEFizz_GameEvent_t
 18ToolTraceRayResult
-	1>9(
 	1"9`
 195.0f
 1960/00/00
@@ -1337,6 +1332,7 @@ $0 to $1,
 19CViewAngleAnimation
 19CWeaponScriptParser
 19EDACResponseConcept
+	1>9h
 19IAttachmentOverride
 19IConsoleDisplayFunc
 19IDecalEmitterSystem
@@ -1351,7 +1347,6 @@ $0 to $1,
 19TEDecal_GameEvent_t
 19TESmoke_GameEvent_t
 19TonemapParameters_t
-(!19:U
 1 = Animates the pause text so that you can be sure the game isn't just hard locked.
 !1AQaq
 !>@=1B
@@ -1410,11 +1405,11 @@ $0 to $1,
 !2@=!
 ?2: 	
 +2: 	
+	2)!(
 	2@( 
 	2*	@
 	2	(@)
 2	)@)
-	2!0.
 200000
 200 200 200 196
 20.0f
@@ -1574,11 +1569,11 @@ $0 to $1,
 20TEImpact_GameEvent_t
 20TESparks_GameEvent_t
 20TransitioningLayer_t
-2+1<9
-2+1,9	
-2+1?9	
+2+1<9	
+2+1,9)
+2+1?9)
 2+1"9
-2	1%9
+2	1%9	
 2	1/9aJ
 21CAnimGraphTraceFilter
 21C_BaseCombatCharacter
@@ -2352,6 +2347,7 @@ $0 to $1,
 26SpawnEntityToolEventResult
 26TEBeamEntPoint_GameEvent_t
 26TEEnergySplash_GameEvent_t
+	2!`7
 27CAdditionalWearableModifier
 27CBaseAnimatingEasingFloat_t
 27CBidirMsg_RebroadcastSource
@@ -2620,14 +2616,14 @@ $0 to $1,
 29DestroyAllEntitiesToolEvent_t
 2@9h2
 2;9(I
-2;9)I
+2;9	I
 2@9i2@9
 2	!=9l
 29PublishedFileDetails_VoteData
 2(9	SHM(
 29ToolEvent_GetEntityInfoResult
+29WZ&
 2"9}z
-	2)a!
 2	a19
 2	a49?
 2	a 9`
@@ -2637,6 +2633,7 @@ $0 to $1,
 2A9i2
 2	a@9Ia
 2	A/9n
+2	a!9R
 2	A/9s
 2	AA9
 2abd9hZ	
@@ -2841,16 +2838,17 @@ $0 to $1,
 2+imx
 2	ix8?)
 2(i+xi
+	2J!(
+	2J!$
 2j"@9)p
-	2Ja(
-	2Ja$
+	2Ja5
 2jFK9kF
 2_!;k
 2?!!k
 2?"!k`
-2?k78vO
+2?k7868
 2_k88
-2?k88uK
+2?k8854
 2k_EGCMsgInitiateTradeResponse_VAC_Banned_Initiator
 2Ki(8k
 2Kii8
@@ -2859,7 +2857,6 @@ $0 to $1,
 2kj*x
 ?-2KLa
 2Ky)xi"@
-	2!l#
 2L@-4
 @2l9<)8
 2l*@9h
@@ -2878,10 +2875,10 @@ $0 to $1,
 2 .ProtoFlattenedSerializerField_t"!
 // 2 px horizontal radii 4px vertical elliptical corners on all sides
 2+Q69
-2+q>9
-2+q(9
-2+q99
-2+Q.9I
+2+q>9	
+2+q(9)
+2+q99)
+2+Q.9i
 	2R*3
 2) Red  : %i
 2RF-5:@
@@ -2902,6 +2899,8 @@ $0 to $1,
 2@yh2
 2@yi2@y
 2	yu*
+!	@) 3
+!	@)(3
 -30.0
 300.0
 30000
@@ -3329,7 +3328,6 @@ $0 to $1,
 35CMsgIDLinkGenericClientToGCResponseILj1ELj9199E29CMsgClientToGCAssociateDeviceLj9200E37CMsgClientToGCAssociateDeviceResponseE
 35CMsgIDLinkGenericClientToGCResponseILj1ELj9203E34CMsgClientToGCPartySetGameModifierLj9204E42CMsgClientToGCPartySetGameModifierResponseE
 35CMsgIDLinkGenericClientToGCResponseILj1ELj9207E25CMsgClientToGCSetTeamNameLj9208E33CMsgClientToGCSetTeamNameResponseE
-35CMsgIDLinkGenericClientToGCResponseILj1ELj9209E28CMsgClientToGCModifyGACFlagsLj9211E36CMsgClientToGCModifyGACFlagsResponseE
 35CMsgIDLinkGenericClientToGCResponseILj3ELj7000E24CMsgAnyToGCReportAssertsLj7001E32CMsgAnyToGCReportAssertsResponseE
 35CMsgMatchSignoutData_Disconnections
 35CMsgPlayerCombatResult_DamageSource
@@ -3497,6 +3495,7 @@ $0 to $1,
 3\.,I
 '3)I0
 %3i, %3i, %5.1f
+3i(8Q
 %3i fps (%3i, %3i) smth:%4.1f ms frm:%4.1f ms on %s frames: %u
 %3i fps on %s
 3k_ECustomGameInstallStatus_RequestedTimestampTooNew
@@ -3513,6 +3512,7 @@ $0 to $1,
 3SB-H
 3X@-7
 3@yMMA
+!	@)$4
 40 40 40 196
 4(0@9
 40CColorCorrectionMaterialOverrideModifier
@@ -3736,8 +3736,8 @@ $4DTdt
 4hR@9
 4hRA9
 4hrB9
-4hr@y <
-4hR@y <
+4hr@y
+4hR@y
 4hvF9
 4hvF9(C
 4i"@9
@@ -3876,9 +3876,9 @@ $4DTdt
 5K9_,
 ?!5kc
 5k_RemoveItemAttribute_Failed_AttributeCannotBeRemoved
-!	@)5M
 5	MA9?
 5(Optional) The number of results, per page to return.
+!	@)5Q
 ?5r'"
 5Retrieves information about a set of published files.
 %5s%9s%8s%9s%10s   %s
@@ -4221,6 +4221,7 @@ _6v:@
 6@y_! kC
 6Yst9
 ?6`Z@
+!	@)7
 ?7[/<
 @7('@
 +@;^7[/
@@ -4491,7 +4492,7 @@ _8cnA
 8hF@9
 8hR@9
 (8HXhx
-@8i/@885
+@8i/@8
 @8i/@8J
 8iB@9i
 8If set, remove from ignore/block list instead of adding "\
@@ -4506,11 +4507,11 @@ _8cnA
 8itemid_t
 )8#J)
 @8j&A
+@8keD
 _!8ki
 @8Kii8
 8k_ItemPurgatoryResponse_Refund_Failed_ItemNotInPurgatory
 ??]8kK
-@8kmD
 +-@8l
 8<lCE
 @8lij8
@@ -4572,6 +4573,7 @@ _8|{t
 @92yr
 9(4@9
 95*P>
+@@96@
 @9(	(6
 	@9*6B9
 (@@9	7
@@ -4590,7 +4592,6 @@ _8|{t
 @9,	@9
 @9)!`9
 @9*	@9-
-@9%	@9
 @9%	@9&
 @9+	@9
 @9+	@9,
@@ -4601,6 +4602,7 @@ _8|{t
 9+	@9
 . @9/$@90(@918@9.}
 9(,@9H
+@9%	@9i;
 9	!@9i
 9	%@9i
 )@9()@9I)B)
@@ -4609,10 +4611,11 @@ _8|{t
 [%9.9s] (%5d)%s:
 [%9.9s] (%d)%s at %.6f phase not supported
 @99X@)8 @9
+ @9	a
 (@@9	a
 "@9)A
 "@9	A
-9	a^9
+9	a^9+
 @9)A`9
 9	\A9(\A9?
 ?9A@c
@@ -4703,6 +4706,7 @@ _8|{t
 9CTimeline
 9CUI_Popup
 @9d.@
+"@9!D	
 @9	 D-
 9D7V=
 @9	dA9
@@ -4716,12 +4720,11 @@ _8|{t
 9DPEy
 @9DPFy
 @@9DXA
+@9)=E
  @9e:B
-@9)EE
 @@9E<H
 9ELanguage
 9EventID_t
-@9)]F
 @9F.@
 	- 9F
 @9f	@9
@@ -4812,6 +4815,7 @@ _8|{t
 	%@9I
 @9	i48
 @9	i48;
+ @9i5
 @9*i68
 @9	i:8
 .@9i.@9
@@ -4840,7 +4844,6 @@ _8|{t
 9ikxH-@
 9ILoopMode
 9in@9
- @9Ip
  @9iR
 @9iR!
 9ir@9
@@ -4871,10 +4874,11 @@ _8|{t
 @9jij8JE!6)
 @9jJ@
 @9jjh8*
-	!@9JK
+	!@9jK
 @9JQR9?
 @9J!S9?
 @9JU	
+@9JY$
 @9k!@
 @9k&@
 !!@9K
@@ -4905,6 +4909,7 @@ _8|{t
 ,@9M,@9)
 @9Mim8
 .@9n.@9k
+ @9	o
 @9)!o9
 )9}[p=
 9	PA9(PA9?
@@ -4951,6 +4956,7 @@ _8|{t
 @9	U@
 @9U|@
 9*uC9
+@9)UF
 (9U#P
 )9Uy	
 	!@9*V
@@ -4969,9 +4975,9 @@ _8|{t
  	@-A
 ,/A)*
 !^A(!
+!	@)A
 'A)	}	
 @-'A@-
-	!@)A
 A-` "
 A-   
 A-!(!
@@ -4988,18 +4994,16 @@ a2@yb6@y
 a2@yh2@y
 A5fSXbf7
 	a79H
-a79u`
+a79U`
 A-!8"
 A-!8$
 _a89	
 A8q(!
-!a9	'
+!a9)'
 +a@9?
-	a^9*
-	a^9+
 	a^9	
 	a@9)
-a_9	'
+a_9)'
 _A%9	
 "A9		
 (A@9(
@@ -5011,9 +5015,11 @@ _A%9
 	A@9)
 	A@9)	
 	A@9	
+A`9*'
 A9!8"
 A9!8#
 a@9+a
+A@9?a	
 `A9)`A9
 	`A9(`A9?
 A9)AI
@@ -5021,8 +5027,7 @@ A9)AI
 A9b6@
 A9cZ@
 A9d:@
-#A9	E
-A@9eQ	
+#A9)E
 .A9h.
 "A9h"
 (A@9h
@@ -5047,12 +5052,12 @@ A@9(i<8
 A9iF@
 A9	ii
 A9i*X)k
-+a^9j
-	a^9j
+	a^9J
 	 A9J
 A9|J@
 	A9j"A
 A9j.D
+	a^9k
 	a^9K
 ,	A9K
 +	A9K
@@ -5065,12 +5070,15 @@ A-'@A-
 	AA9	
 AA9(	
 AA9(	@
+	aa9I
 	AA9i
 aaaaaaaazzzzzzzz
 AABB_t
 $	A)Ar
 A-B8!
-ab@9@k
+ab@9f
+aB@9i
+ab@9`k
 abcdefghijklmnopqrrqponmlkjihgfedcba
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
@@ -5133,6 +5141,7 @@ A burning player that gibs has burning gibs.
 )aBy	
 aB@ya
 a~Byb
+aB@yf
 A-c($
 @-aC@9
 A-cBH
@@ -6538,6 +6547,7 @@ ACT_WAVEFORM_END
 ACT_WAVEFORM_START
 ACT_ZOMBIE_LUNGE
 ACT_ZOMBIE_TRIP
+aD)=2
 	Ad9	
 	AD9?
 	AD9i
@@ -6625,7 +6635,6 @@ ADJACENCY
 adjustment
 Adjusts how much time it takes for each player to appear in the intro sequence
 	adminonly
-aD)o>
 !	A)Dr
 adult male human
 AdvanceAnimatedImageStripFrame
@@ -6634,6 +6643,7 @@ advanced to state %d at %f
 AdvancedVideo
 )ADy	
 ?*a\`E<
+#@)AE
 	Ae9	
 AE_ABILITY_END_EVENT
 AE_ABILITY_START_EVENT
@@ -6934,7 +6944,7 @@ a"J9?@
 	Aj9	
 ?AJk`
 aJ@ybR@yc
-=aJ@yj 
+=aJ@yD4
 A)jz@
 	Ak9	
 )aKy	
@@ -7009,8 +7019,7 @@ always_send_to_server
 always_send_to_servers
 always tradable
 )ALy	
-#Am`'
-+Am@'
++Am`'
 	aM9	
 	Am9	
 Am9	'
@@ -7534,6 +7543,7 @@ A-	 @y!
 Ay?!4kC
 a@y	a
 Ay)	By
+a^yD,
 Ayhz@
 	a@yir
 *a@yJ
@@ -7554,7 +7564,6 @@ aZure : voiced postalveolar fricative
 !^B($
 ('B)*
 @-`*B
-@-#	B
 @-B	@
 *-B)!
 B-   
@@ -7578,6 +7587,7 @@ B@9a'
 B@9A1
 B@9AI
 B9bU@
+B@9!C
 ?B\9{g
 B\9{gt
 ^B9h^
@@ -7591,23 +7601,22 @@ b@9hb
 B@9hB
 B@9hC
 B9h"E9
-B(9hF
 B9hf 9
 b"@9i
 B@9i@
 B9I	87
 b@9ib
 b@9ib@9
-b@9J)B
+b@9J!B
 b@9	w
-B@9xZ
+B@9XZ
 B9(YB
 B-'A@-1	@
 b>A9!
 b:A9A
 bA9hb
 BA9hB
-bA9i7
+bA9I7
 BA9iB
 b&A9v
 b?)AC_
@@ -7758,11 +7767,10 @@ BattleTypeCarousel
 bAyhb
 %B-@	B-
 B-B8#
-bB9aA
 bB9hb
 BB9hB
 BB9hj:8
-BB9mg
+BB9mk
 bBlock
 bbox.m_vMaxBounds
 bbox.m_vMinBounds
@@ -7823,7 +7831,6 @@ BetaUniverse
 bevel
 b.EycZA
 Bezier
-B))]F
 bFired
 ?B&:G
 B-gBC-
@@ -8155,6 +8162,7 @@ BuddyButton/ArmedFgColor1
 BuddyButton/ArmedFgColor2
 BuddyButton/FgColor1
 BuddyListBgColor
+B))UF
 buf error
 buff_attach
 buffer-async
@@ -8232,6 +8240,7 @@ Bxj}_
 )!By	
 By)) 
 By)1Xy
+b@y{5
 `b@yh
 B@yhB
 BYield
@@ -8269,7 +8278,7 @@ C-!8"
 ,c@9-
 C9)|@
 C9* (7(#
-c@9A'
+c@9a'
 C9an@
 (C@9h
 <(C@9H#
@@ -11343,6 +11352,7 @@ CourierAbility%d
 courier_flying
 Courier New
 cover
+!~cp&
 ^Cp\&
 cp0_model
 cp0_snapshot
@@ -12174,7 +12184,7 @@ Cx?! k
 (=Cy"
 )!Cy	
 c@y1z
-C@yA>
+C@ya>
 "Cy)aCy
 cycle
 Cycle: %.5f (%.5f)
@@ -12183,7 +12193,7 @@ cycler at %.0f %.0f %0.f missing modelname
 cycler_flex
 cycler_flex used on model "%s" specified unknown sequence "%s"
 cycler_flex used on model %s without enough flexes.
-C@y)mD
+C@y)eD
 "Cy)QCy
 "Cy)YCy
 czech
@@ -12200,7 +12210,6 @@ D)[!@
 D0gPad
 D15S1
 D16_SHADOW
-@=D1M
 D-2.@
 D24FS8
 D24X4S4
@@ -12215,14 +12224,14 @@ d3_citadel_05
 *-D),5E)_
 D)5XC)7 @
 d6@y#
-d6@y#;
-d6@y#A
+d6@y#$
 d6@yc
 d6@yc!
 d6@yc?
-d6@yC!
+d6@yc'
+d6@yC
 d6@yC7
-d6@ycC
+d6@yCA
 D-!8"
 D$@8$
 "D@9%
@@ -14560,6 +14569,7 @@ DPSChartContainerEnemy
 DPSChartContainerPlayer
 DPSRow
 DPSRow_%u
+@=DQE
 %d queries, %d misses (%d free) suc spec = %d wasted spec=%d
 draftTier
 DraftTier
@@ -14834,8 +14844,8 @@ D)yV@
 ?e;:	
 @-e	@
 -E)		
+!	@)E
 .E))}
-#@)!E
 e0F$J
 ?=((E+7
 E-!8"
@@ -14850,7 +14860,6 @@ E9`!)
 )E@9i
 !E9#L
 #E9(n
-#@-	EA
 eA9(!
 *EA9J
 E-aBB
@@ -15126,7 +15135,7 @@ EmptyAnim
 EmptyPanel
 EmptyReward
 EmptySlot
-;Em`R
+;Em@R
 EM_RemoveAllDecals
 ?)^emS<
 EM_ScreenOverlay
@@ -15951,13 +15960,14 @@ eyes_rightleft
 eyes_updown
 )e@yi*
 eZQ9\
+!	@)f.
 ?-f:*
 @+,]f}/
 .F))}
+#@)!F
 F-!("
 F-"("
 F-%:%
-!	@)f2
 F: %.2f deg
 ?-F/3
 ?|F"4
@@ -15967,7 +15977,7 @@ F-!8"
 f`9(!
 ?\%F9
 f@9(6
-f`9AD
+f`9aD
 F9h&@
 f@9H1
 f@9h2
@@ -16034,7 +16044,6 @@ Failed to find reward list for no dupe list %s!
 Failed to find specified particle effect. Trying to add CP to '%s' on attachment named '%s'
 Failed to find the default key bindings template: DEFAULT.
 Failed to generate correct hostname for URL.
-Failed to get a response for updating client synchronized flags with the GC
 Failed to get HTTP response data.
 Failed to get HTTP response size.
 Failed to get lock %s at %s(%d) after waiting in %s
@@ -16207,9 +16216,9 @@ ffffff
 [ (%f, %f, %f, %f), (%f, %f, %f, %f), (%f, %f, %f, %f), (%f, %f, %f, %f) ]
 fflush
 FgColorDim
- F=h3
+F-H1D
+ F=H3
 F*%h3x%hgx
-F-H)A
 Fhf8&
 F*&h%x%hsx
 F*%h'x%hsx
@@ -17106,13 +17115,12 @@ f@y?! k
 F@y?! k
 FZ*o7
 @g|_\
+!	@)G,
 .G))}
 G-`( 
 G- ( 
 G-!	!
-!	@)G0
 @g3^%
-G-"5N
 g6`>@
 g6	<@
 G6`^@
@@ -17965,6 +17973,7 @@ g_Tier1_CRC32Table
 g_TimeOfDayEntity
 g_TimeOfDayKeyValues
 g_tNormal
+G-"UF
 gunshotsplash
 gunshotsplash_global_client
 gustdirchange
@@ -17993,8 +18002,8 @@ H-0K@
 H0@yV
 H1@)I	@
 H1@)ky
-h2@9)
-h2@9)YD
+h2@9)}F
+h2@9)QD
 	*h2A
 h2A9(
 h2A9h
@@ -18058,9 +18067,12 @@ h#8Jh#8
 h:@9?	
 h"@9(
 h"@9)
+h"@9)!
+h"@9)'
 h"@9))
 h"@9	
-h"@9	!
+h"@9	`
+h"@9	>
 h"@9	'
 h*@9	
 h&'9)
@@ -18069,7 +18081,6 @@ h"@9)5
 ?h98a
 h"@9	 @9
 H @9	 @9
-h"@9)a
 h9a>@
 H9)#g9
 h:@9h
@@ -18083,16 +18094,17 @@ h.@9H
 h"@9H
 h*@9H
 H @9h"
-H@9HD
+H@9hD
 h"@9I`
 h"@9I!
 h&'9I
 h"@9i8
 h"@9I8
 h"@9iA
-h"@9Ip
+h"@9Ia
 h"@9IY
 *H@9J
+h"@9	o
 h`9(P
 h"@9)U
 h&_)a"
@@ -18259,8 +18271,8 @@ hB@9hF
 hB_9i
 hB@9i@
 hb@9i*B
+hb^9iK
 hb@9iK
-hb^9IK
 hB@9t
 hB@9u"@
 hb@9v
@@ -18280,12 +18292,11 @@ hBB9`Z
 hbD9)C
 hBD9h
 hBD9H
-hbD9Ip
 hbE9*
 hbE9h
 hbF9)
 hBF9(#
-hBF99cB
+hBF99[B
 hBF9h
 hBG9H
 hBi9(
@@ -18472,7 +18483,7 @@ hF@9h
 hF@9H
 hF@9HN
 hf@9i
-hF@9)y@
+hF@9)q@
 <hfA9
 	*hfA9
 hfA9(
@@ -18828,7 +18839,6 @@ hurt_me
 hurt_them
 h*v9(
 hv@9)
-hv@9)!G
 =hVA9`
 hVA9`
 hVA9H
@@ -18837,7 +18847,7 @@ hvG9h
 hvN9H
 hvN9i
 hV@yh
-#*)hW
+#*)HW
 	hw8h
 HW@9XS@9H
 !h|xa
@@ -18847,12 +18857,12 @@ h:@y*
 h"@y`
 h*@y_
 )!Hy	
+h&@y)aF
 H @y	H@9
 )H@yHH@y?
 	h@y(h@y?
 h&@yI.
 H @yi
-h&@y)iF
 HypeBarBackground
 hypeBarBaseColor
 hypeBarColorEnd
@@ -18880,6 +18890,7 @@ hz	y@
 	!@)i"
 	*i>@
 i)@)	
+!	@)I
 !	I- ( 
 	*I}`
 I-!	!
@@ -18933,7 +18944,6 @@ i&@9(
 i&@9h
 i"@9J
 I9	S	M)
-I9	SV
 IA@9	
 )i^A)i
 I-aL"
@@ -18946,6 +18956,7 @@ i"B)
 I#B)	
 ib@9`
 ib@9(
+ib@9( 
 ib@9)
 ib@9h
 ib@9i
@@ -19262,13 +19273,13 @@ I-!H#
 )ih8?
 )ih8?	
 *ih8_
+!Ih8	
 )Ih8?
 (ih8c
 (ih8e
 (ih8g
 (ih8h
 (ih8H
-!Ih8I
 )ih8Ii(8
 (ih8*ij8+ik8,il8-im8.in8/io80ip81iq82ir8"ib8#ic8$id8%ie8&if8)i`8
 IHandleEntity
@@ -19286,7 +19297,7 @@ I-@)i
 	*ii(8 
 	ii8?
 ii81b
-ii83_
+ii83S
 ii8Fhi8
 ii8Ha'7
 ii8Hb'6
@@ -20411,6 +20422,7 @@ i"T)w
 	iu8?
 [i:%u:%u]
 [I:%u:%u]
+)IUy*f
 !	@)Iv
 !iv8?|
 	iv8	
@@ -20518,12 +20530,12 @@ J0@yk
 J1Cy?
 J1My)
 J1Oy?
+!	@)j2
 j2?)?
 j2O)k6P)
 j2V-m
 j2@yh
 j2@yI%
-j38Le
 j48(?
 j48	C
 j48t^@
@@ -20533,15 +20545,12 @@ j58hf@9(
 j58hJ[
 j58vs
 J5@y_
-!	@)j6
-j689I
-j68dE
-J68F+
+j689M
+j68dI
 j68QQ
 j68u*@
+j68v=
 j68v&@
-j68v9
-J68y+
 j6@9(
 j|8?	
 j)8	"
@@ -20549,9 +20558,8 @@ j)8	)
 J-!8"
 j-8-1
 j(86I
-j88qy
+j881b
 j 8hN
-j(8I:
 j)8I.
 j)8I%
 j`8!i 8
@@ -20835,15 +20843,15 @@ k2N)jJ@
 ?k58D
 k5KJLV
 	*K!6
+?k68kh
 k68wZ@
-k783a
-*?k78dl
 ?k78h
-?k78H;
+*?k78$U
+_k(8+1
+k(8}3
 *?k88}
 ?k88wr@
 (k;8H
-_k(8kD
 k(8vV@
 k@9(-
 ?){K9_
@@ -20869,11 +20877,11 @@ $k_AddSocket_Failed_FailedToAddSocket
 'k_AddSocket_Failed_ItemCannotBeSocketed
  k_AddSocket_Failed_ToolIsInvalid
 k_AddSocket_Succeeded
-KA@)-H
 kAKJJ
 kAKJk
 ?k,am
-KAN9lO
+KA@)mH
+KAN9LO
 KAU8K
 K.Ax E@
 Ka@yk
@@ -22535,7 +22543,7 @@ Ly))My
 !	@)-m
 !	@)%m
 @=#?m\
-!	@)=M
+!	@)M
 +M))	
 +M)	)	)
 M-"	"
@@ -23301,7 +23309,6 @@ m_bOverrideFogStartEnd
 m_bOverrideOnAppend
 m_bOverridePosition
 m_bOwnerModelChanged
-MbP?4
 m_bPadding
 m_bParticleCollision
 m_bParticleFeathering
@@ -26112,6 +26119,7 @@ MyTeam
 !.n	 
 !	@)!n
 !	@))n
+!	@)n.
 $-n(%
 ?[]N	
 "N(  
@@ -26152,7 +26160,6 @@ N18CPhysicsGameSystem14PhysicsWorld_tE
 N19CAttributeContainer17NetworkVar_m_ItemE
 N19CBodyComponentPoint22NetworkVar_m_sceneNodeE
 N19C_EnvWindClientside26NetworkVar_m_EnvWindSharedE
-!	@)n2
 N@- "2
 N23CBaseAnimatingEasings_t38NetworkVar_m_IKMasterBlendAmountEasingE
 N23CDACUIFindOpponentState13EFindingStateE
@@ -26231,7 +26238,6 @@ N5GCSDK17GCClientJobLambdaIZN14CDACItemSystem33RequestReservedItemDefinitionList
 N5GCSDK17GCClientJobLambdaIZN15CAsyncDataCacheI19EventDataCacheKey_t23CMsgGCToClientEventInfoE18RequestCurrentDataERKS2_EUlvE_EE
 N5GCSDK17GCClientJobLambdaIZN18CDACClientGCSystem14ConnectToLobbyEbE3$_3EE
 N5GCSDK17GCClientJobLambdaIZN18CDACClientGCSystem17BGetReconnectInfoEP20CClientReconnectInfoE3$_2EE
-N5GCSDK17GCClientJobLambdaIZN18CDACClientGCSystem30UpdateAccountSynchronizedFlagsEbE3$_4EE
 N5GCSDK17GCClientJobLambdaIZN19CDAC_PlayController10LeaveLobbyEvE4$_10EE
 N5GCSDK17GCClientJobLambdaIZN19CDAC_PlayController10LeavePartyEvE4$_24EE
 N5GCSDK17GCClientJobLambdaIZN19CDAC_PlayController11CreatePartyEjE4$_16EE
@@ -27143,22 +27149,22 @@ NSt6__ndk110__function6__funcIPFvP12CSceneObjectENS_9allocatorIS5_EES4_EE
 NSt6__ndk110__function6__funcIZN11CDAC_Speech22PlayVOClientCombatLineE19EDACResponseConceptE3$_0NS_9allocatorIS4_EEFviP9C_DAC_NPCEEE
 NSt6__ndk110__function6__funcIZN11CDAC_UI_Hud24UpdateSelectedPlayerDataEvE3$_8NS_9allocatorIS3_EEFviP9C_DAC_NPCEEE
 NSt6__ndk110__function6__funcIZN11CDAC_UI_Zoo11OnHudUpdateEvE3$_1NS_9allocatorIS3_EEFbPN8panorama8CPanel2DEEEE
-NSt6__ndk110__function6__funcIZN12CDACCS_Setup17AdvanceSimulationEvE4$_10NS_9allocatorIS3_EEFviP9C_DAC_NPCEEE
-NSt6__ndk110__function6__funcIZN12CDACCS_Setup21TriggerSynergyEffectsEvE4$_11NS_9allocatorIS3_EEFviP9C_DAC_NPCEEE
+NSt6__ndk110__function6__funcIZN12CDACCS_Setup17AdvanceSimulationEvE3$_9NS_9allocatorIS3_EEFviP9C_DAC_NPCEEE
+NSt6__ndk110__function6__funcIZN12CDACCS_Setup21TriggerSynergyEffectsEvE4$_10NS_9allocatorIS3_EEFviP9C_DAC_NPCEEE
 NSt6__ndk110__function6__funcIZN12CDAC_UI_Shop11OnHudUpdateEvE3$_2NS_9allocatorIS3_EEFbPN8panorama8CPanel2DEEEE
 NSt6__ndk110__function6__funcIZN12CDAC_UI_Shop15UpdateSynergiesEvE3$_0NS_9allocatorIS3_EEFiPN8panorama14IUIPanelClientES8_EEE
 NSt6__ndk110__function6__funcIZN12CDAC_UI_Shop23UpdateTeammateSynergiesEvE3$_1NS_9allocatorIS3_EEFiPN8panorama14IUIPanelClientES8_EEE
 NSt6__ndk110__function6__funcIZN12C_EnvCubemap9PreRenderE16CSplitScreenSlotE3$_2NS_9allocatorIS4_EEFvvEEE
-NSt6__ndk110__function6__funcIZN13CDACCS_Combat17AdvanceSimulationEvE3$_8NS_9allocatorIS3_EEFviP9C_DAC_NPCEEE
-NSt6__ndk110__function6__funcIZN13CDACCS_Combat17HandleCombatEndedEvE3$_9NS_9allocatorIS3_EEFviP9C_DAC_NPCEEE
+NSt6__ndk110__function6__funcIZN13CDACCS_Combat17AdvanceSimulationEvE3$_7NS_9allocatorIS3_EEFviP9C_DAC_NPCEEE
+NSt6__ndk110__function6__funcIZN13CDACCS_Combat17HandleCombatEndedEvE3$_8NS_9allocatorIS3_EEFviP9C_DAC_NPCEEE
 NSt6__ndk110__function6__funcIZN15C_EnvTimeOfDay29PreRenderE16CSplitScreenSlotE3$_4NS_9allocatorIS4_EEFvvEEE
 NSt6__ndk110__function6__funcIZN18CNewParticleEffect10SetDormantEbE3$_1NS_9allocatorIS3_EEFvvEEE
 NSt6__ndk110__function6__funcIZN18CNewParticleEffect12StopEmissionEbbbbE3$_0NS_9allocatorIS3_EEFvvEEE
 NSt6__ndk110__function6__funcIZN18CNewParticleEffect7RestartEvEUlvE_NS_9allocatorIS3_EEFvvEEE
 NSt6__ndk110__function6__funcIZN19CEntity2SaveRestore17SaveGame_FinalizeEP25SaveRestoreDataHandle_t__E3$_1NS_9allocatorIS5_EEFvvEEE
 NSt6__ndk110__function6__funcIZN19CEntity2SaveRestore31SaveReadHeaderAndSpawnGroupListEPvP17SaveHeaderCache_tE3$_2NS_9allocatorIS6_EEFvvEEE
-NSt6__ndk110__function6__funcIZN20CDACClientSimulation18SendOrder_MoveUnitEiiiP18IDACOrderProcessedE3$_7NS_9allocatorIS5_EEFviP9C_DAC_NPCEEE
-NSt6__ndk110__function6__funcIZN20CDACClientSimulation28DestroyAllSimulationEntitiesEvE3$_6NS_9allocatorIS3_EEFviP9C_DAC_NPCEEE
+NSt6__ndk110__function6__funcIZN20CDACClientSimulation18SendOrder_MoveUnitEiiiP18IDACOrderProcessedE3$_6NS_9allocatorIS5_EEFviP9C_DAC_NPCEEE
+NSt6__ndk110__function6__funcIZN20CDACClientSimulation28DestroyAllSimulationEntitiesEvE3$_5NS_9allocatorIS3_EEFviP9C_DAC_NPCEEE
 NSt6__ndk110__function6__funcIZN20CDAC_DB_Page_Loadout11LoadLoadoutEvE3$_0NS_9allocatorIS3_EEFbPN8panorama8CPanel2DEEEE
 NSt6__ndk110__function6__funcIZN20CDAC_DB_Page_Rewards11LoadRewardsEvE3$_2NS_9allocatorIS3_EEFPN8panorama8CPanel2DES8_iS8_EEE
 NSt6__ndk110__function6__funcIZN20CDAC_HUD_ItemDisplay11EventUpdateEvE3$_4NS_9allocatorIS3_EEFviP9C_DAC_NPCEEE
@@ -27722,6 +27728,7 @@ Oy))Py
 %O?ZE
 ?<-?p
 @-p	@
+!	@)P/
 ($?)P
 P-!("
 P10CUtlBuffer
@@ -27743,7 +27750,6 @@ p2p_TextMessage
 	p2p_Voice
 p2p_VRAvatarPosition
 p2p_WatchSynchronization
-!	@)P3
 p;4,F
 P6	@@
 p6aVA
@@ -29277,6 +29283,8 @@ _!@q
 q()@-*	@
 q	)		
 -	-	Q
+!	@)Q
+!	@)=Q
 Q0&	S
 q;4,F
 *	Q79_a79
@@ -29319,6 +29327,7 @@ Qi"A)`
 QicD9
 qIo8p
 )qIy	
+.QJe?
 QjN?#
 qjqx?
 qJT-s
@@ -29393,13 +29402,13 @@ R-!(%
 r0@GP!
 R11_EAC
 R16F_EXPAND
+!	@)r2
 R32_UINT
 >r3\9
 r_3dsky
 ?r4GV~	
 r)5IJY}
 r)5IJZ}
-!	@)r6
 R-!8"
 R8G8B8A8_ETC2_EAC
 R8G8B8_ETC2
@@ -30464,7 +30473,6 @@ r@y`&@
 )	Ry	
 r@yh*@
 `R@yh
-`R@yH
 R@yHq
 r@yhr
 )	RyJ
@@ -33076,7 +33084,6 @@ T#(@9D,
 T#$@9D(
 T#,@9D0
 T#@@9$D@9 H@9cx
-t@9)!G
 T9ibR9
 T`.@9s.
 T*9	S
@@ -33175,15 +33182,14 @@ taunt
 TauntCooldown
 tax_usd
 Tb8	S
-tb@9Ak
+tb@9ak
 =tB!9j.
 TbFEyaJEy?
 Tbhd8
 T`b@y
-T`b@y*
-T`b@yc
-T`b@yq
-T`b@yU
+T`b@y#
+T`b@y1
+T`b@yz
 Tc"A)`
 Tc"B)`
 TC#B)@
@@ -33813,7 +33819,7 @@ Tj)@y_!3kh
 t"	)K
 Tk2@-m
 Tk6A)
-T?k78h&
+T?k78
 TK-@8
 T	=K9
 TK	@9)A
@@ -34119,6 +34125,7 @@ trusted_server
 T`R@y
 T`R@y`
 Try changing the number of bones per vertex or the skin weighting, and send Sergiy a repro mesh with this error description.
+T`R@yg
 Trying to add duplicate decal material %s.
 Trying to change pitch on invalid sound event %s
 Trying to change volume on invalid sound event %s
@@ -34211,7 +34218,7 @@ txting_type_numbers
 txting_type_spacebar
 	T@y?
 T	?@y?
-T@yL7
+T@y,7
 Type appears to be in generated pool but wasn't 
 	TYPE_BOOL
 TYPE_BYTES
@@ -34258,7 +34265,8 @@ tZP)a	+
 )?)	@u
 	*u~@
 u^[&`
-!	@)U/
+!	@)U
+!	@)U+
 %u:%02u:%02u
 \U%08x
 U: %.2f deg
@@ -34274,6 +34282,7 @@ udp_connect_port
 Udt@R
 U[D-WcF-
 ufB-s*6
+#@-	UG
 UG"@]
 UGC bitmap %lld size %d x %d does not match the texture size %d x %d
 ugcid
@@ -34658,7 +34667,6 @@ UOnly valid in PublishedFile.GetUserFiles and not normal PublishedFile.GetDetail
 UpAction
 Update
    UPDATE
-UpdateAccountSynchronizedFlags
 update_baseline
 Update(CDACGameAccountClient)
 Update(CDACLobby)
@@ -35456,7 +35464,7 @@ votes_down
 votes_up
 VoxManager
 VP4003
-V-PAO
+V-PaG
 <"vpcf1
 vpcf10
 vpcf11
@@ -35869,8 +35877,8 @@ V_wcstoi64
 v\@-x
 V\@-X
 )!Vy	
+V@y*7
 V@yirBy
-V@yJ7
 V@y_! k
 V@y!yv
 v>zlK9T
@@ -36212,10 +36220,10 @@ WY@)U	@
 )'@x?
 @%@x	
 x]/(@
+!	@)X/
 X-%	"
 \x%02x
 X=2v?
-!	@)X3
 X360_DST16
 X360_DST24
 X360_DST24F
@@ -36273,7 +36281,6 @@ XP%dIncrementDivider
 x_pos
 XPRewardVisible
 ?XRQi
-xRS)/x
 XS@)V
 Xsx,xlx
 xT)~)>
@@ -36307,7 +36314,7 @@ $@y($@-
 	$@y!
 	%@y)
 		@y_
-@y)!1
+!	@)Y
 `>Y1\
 @y)1Cy
 @y)1Dy
@@ -36315,19 +36322,19 @@ $@y($@-
 @y)1Qy
 ,y=35
 	@y_!3k
-!^y46
 	y4xl
-@y)5C
 y6{(x
 _@y?!8k#
 ?@y?!8k#
 y	-%9
 @y)9Ky
 y,@@9m
+y	-%9m
 !@@ya
 "@y*A
 y .A8
 Yacht : voiced palatal approximant
+@y`AG
 yaJEy
 @y)aKy
 yaNEy
@@ -36343,6 +36350,7 @@ y axis
 @yb~@
 @y)-B
 #@@yc
+@y)-C
 YcuP.
 @y)!Cy
 @y+}E
@@ -36419,7 +36427,6 @@ yi^@yk
 @yj&@
 @yJ}@
 *-@yJ
-@yJ!1
 yjh9x
 yjiixJ
 )YJJ)}
@@ -36434,8 +36441,9 @@ yjZ@y
 @y_!(k
 @y_!(k!
 @y?!(k@
+@yk!4
 +@y	k@9
-@yka-
+@yka'
 @y?"+kA
 @yK@A9
 >@y?! kC
@@ -36454,10 +36462,8 @@ Ym@)\	@
 yMI48
 *	@ym	@y
 y*M@yJ
-!@yN@
 @Y_nA
 Yni5$.
-@y`!O
 @yO	@
 yo_count
 Y(Optional) Starting index to begin enumeration at. Defaults to the beginning of the list."Z
@@ -36483,10 +36489,9 @@ y_pos
 @y)!Ry
 ys@){
 @y)SA9
+)ySy@]
 )ySyJ
-)ySy@U
 ?yt#,*
-"@ytE
 Y_txt
 )yTy	
 )yTyJ
@@ -36525,6 +36530,7 @@ y^yuF@
 @y	y;x
 @y	y;x(
 @y)!Yy
+)YYy+a
 )YYyJ
 YYYY-MM-DD
 YYYY-MM-DD hh:mm:ss
@@ -36590,8 +36596,8 @@ _ZN10CVProfNode9ExitScopeEv
 ZN11CDAC_Speech22PlayVOClientCombatLineE19EDACResponseConceptE3$_0
 ZN11CDAC_UI_Hud24UpdateSelectedPlayerDataEvE3$_8
 ZN11CDAC_UI_Zoo11OnHudUpdateEvE3$_1
-ZN12CDACCS_Setup17AdvanceSimulationEvE4$_10
-ZN12CDACCS_Setup21TriggerSynergyEffectsEvE4$_11
+ZN12CDACCS_Setup17AdvanceSimulationEvE3$_9
+ZN12CDACCS_Setup21TriggerSynergyEffectsEvE4$_10
 ZN12CDAC_UI_Shop11OnHudUpdateEvE3$_2
 ZN12CDAC_UI_Shop15UpdateSynergiesEvE3$_0
 ZN12CDAC_UI_Shop23UpdateTeammateSynergiesEvE3$_1
@@ -36623,8 +36629,8 @@ _ZN13CBufferString6FormatEPKcz
 _ZN13CBufferString6InsertEiPKcib
 _ZN13CBufferString6SetPtrEPciibb
 _ZN13CBufferString8RemoveAtEii
-ZN13CDACCS_Combat17AdvanceSimulationEvE3$_8
-ZN13CDACCS_Combat17HandleCombatEndedEvE3$_9
+ZN13CDACCS_Combat17AdvanceSimulationEvE3$_7
+ZN13CDACCS_Combat17HandleCombatEndedEvE3$_8
 _ZN13CThreadRWLock11UnlockWriteEv
 _ZN13CThreadRWLock11WaitForReadEv
 _ZN13CThreadRWLock12LockForWriteEv
@@ -36641,8 +36647,8 @@ ZN18CNewParticleEffect12StopEmissionEbbbbE3$_0
 ZN18CNewParticleEffect7RestartEvEUlvE_
 ZN19CEntity2SaveRestore17SaveGame_FinalizeEP25SaveRestoreDataHandle_t__E3$_1
 ZN19CEntity2SaveRestore31SaveReadHeaderAndSpawnGroupListEPvP17SaveHeaderCache_tE3$_2
-ZN20CDACClientSimulation18SendOrder_MoveUnitEiiiP18IDACOrderProcessedE3$_7
-ZN20CDACClientSimulation28DestroyAllSimulationEntitiesEvE3$_6
+ZN20CDACClientSimulation18SendOrder_MoveUnitEiiiP18IDACOrderProcessedE3$_6
+ZN20CDACClientSimulation28DestroyAllSimulationEntitiesEvE3$_5
 ZN20CDAC_DB_Page_Loadout11LoadLoadoutEvE3$_0
 ZN20CDAC_DB_Page_Rewards11LoadRewardsEvE3$_2
 ZN20CDAC_HUD_ItemDisplay11EventUpdateEvE3$_4
