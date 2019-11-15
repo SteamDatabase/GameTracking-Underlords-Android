@@ -393,6 +393,8 @@
 	},
 	"Elemental-Mage-Shaman-Warrior": {
 		"id": 9,
+		"notes": "This shows off our new units, and is a decent lineup. Bloodseeker is out of place except for doing that and to have an early unit.",
+		"notes2": "We should maybe use SF instead of Necro? We don't have a demon. But Necro gives us undead without the humans.",
 		"units": [
 			"enigma",
 			"arc_warden",
@@ -402,20 +404,22 @@
 			"pudge",
 			"kunkka",
 
-			"keeper_of_the_light",
+			"disruptor",
 
 			"crystal_maiden",
 
-			"morphling",
-			"lina",
-
+			"necrophos",
 			"lich",
-			"shadow_shaman"
+
+			"morphling",
+			"shadow_shaman",
+			"keeper_of_the_light"
 		],
 		"keywords": [
 			"primordial",
 			"mage",
 			"warrior",
+			"undead",
 			"human",
 			"shaman"
 		],
@@ -500,13 +504,15 @@
 			"tidehunter",
 			"tiny",
 			"razor",
+			"shadow_fiend",
 			"crystal_maiden",
+			"medusa",
 			"slardar",
+			"lone_druid",
+
 			"keeper_of_the_light",
-			"lina",
-			"morphling",
-			
-			"puck"
+			"juggernaut"
+
 		],
 		"keywords": [
 			"primordial",
@@ -697,20 +703,21 @@
 	},
 	"Elemental-Mages": {
 		"id": 19,
+		"notes": "Not bothering to add Morphling--maybe we should?",
 		"units": [
 			"enigma",
-			"faceless_void",
+			"kunkka",
+			"doom",
 			"tiny",
 			"razor",
-			"morphling",
 			"arc_warden",
-			"lich",
-			"keeper_of_the_light",
 			"crystal_maiden",
-			"lina",
+			"keeper_of_the_light",
+			"disruptor",
+			"lich",
 
-			"ogre_magi",
-			"puck"
+			"lycan",
+			"lina"
 
 		],
 		"keywords": [
@@ -732,16 +739,20 @@
 	"Assassins-Elf-Druid": {
 		"id": 20,
 		"units": [
-			"faceless_void",
 			"phantom_assassin",
 			"templar_assassin",
-			"antimage",
+			"sand_king",
+			"bloodseeker",
 			"luna",
 			"slark",
-			"nyx_assassin",
+			"queen_of_pain",
 			"mirana",
-			"weaver",
-			"sand_king"
+			"treant_protector",
+			"furion",
+
+
+			"bounty_hunter",
+			"morphling"
 		],
 		"keywords": [
 			"assassin",
@@ -1394,7 +1405,7 @@
 			"antimage",
 			"nyx_assassin",
 
-			"queen_of_pain"
+			"morphling"
 		],
 		"keywords": [
 			"assassin",

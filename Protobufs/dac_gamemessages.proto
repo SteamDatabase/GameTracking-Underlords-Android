@@ -34,7 +34,6 @@ enum EDACGameMessages {
 	k_EMsgServerToClientTeammateDuosMessage = 28;
 	k_EMsgPlayerSelectedTalent = 29;
 	k_EMsgPlayerRecievedUnitFromDuosPartner = 30;
-	k_EMsgClientToServerLoadShareCode = 31;
 }
 
 enum EDACDisconnectReason {
@@ -999,10 +998,6 @@ message CMsgServerToClientTeammateDuosMessage {
 	optional .EDuosMessageType message_type = 2 [default = k_eDuosMessageType_None];
 	optional .EDuosMessageTargetType target_type = 3 [default = k_eDuosMessageTargetType_None];
 	optional uint32 target_id = 4;
-}
-
-message CMsgClientToServerLoadShareCode {
-	optional string share_code = 1;
 }
 
 message CMsgRecordLocalBotStats {
