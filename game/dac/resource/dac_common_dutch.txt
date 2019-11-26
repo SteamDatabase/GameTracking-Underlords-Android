@@ -45,14 +45,14 @@
 		"Steam_DAC_RP_MM_Casual"							"Casual"
 		"Steam_DAC_RP_MM_Ranked"							"Competitief"
 		"Steam_DAC_RP_MM_PrivateLobby"						"Privé"
-		"Steam_DAC_RP_MM_SoloBot"							"Local"
+		"Steam_DAC_RP_MM_SoloBot"							"Lokaal"
 
 		// These Game Mode ("GM_") tokens are for the %param3% below.
 		"Steam_DAC_RP_GM_Normal"							"Spel"
 		"Steam_DAC_RP_GM_Duos"								"Duo's"
 		"Steam_DAC_RP_GM_Sandbox"							"Freestyle"
 		"Steam_DAC_RP_GM_Puzzle"							"Uitdaging"
-		"Steam_DAC_RP_GM_Turbo"								"Knockout"
+		"Steam_DAC_RP_GM_Turbo"								"Knock-out"
 
 		// These Underlord ("UL_") tokens are for the %param4% below.
 		"Steam_DAC_RP_UL_0"									"Geen Underlord"
@@ -61,10 +61,10 @@
 		"Steam_DAC_RP_UL_3"									"Enno"
 		"Steam_DAC_RP_UL_4"									"Hobgen"
 
-		"Steam_DAC_RP_InGame_PlayingUnderlord"				"{%param2%} {%param3%} - {%param4%} - Round %param0%, Life %param1%"
+		"Steam_DAC_RP_InGame_PlayingUnderlord"				"{%param2%} ({%param3%}) - {%param4%} - ronde %param0%, %param1% levens"
 
 		// Same as above, but some modes don't want to show Round or Life because they don't make sense.
-		"Steam_DAC_RP_InGame_PlayingBoring"					"{%param2%} {%param3%} - Playing"
+		"Steam_DAC_RP_InGame_PlayingBoring"					"{%param2%} {%param3%} - Aan het spelen"
 
 		"Steam_DAC_RP_InPrivateGame_Disconnected"			"Privéspel - verbinding verbroken"
 		"Steam_DAC_RP_InGame_Disconnected"					"In spel - verbinding verbroken"
