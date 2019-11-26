@@ -63,7 +63,7 @@
 25CFileSystemReloadFileList
 26CDefaultKeyValuesErrorSpew
 26CFileAsyncDirectoryScanJob
-2	A%9?
+2	A%9B
 2ij,xl=
 2+imx
 2_!(k
@@ -103,7 +103,6 @@ Adding VPK file: %s
 Add N ms of delay to every low-level read operation, to simulate a slow disk
 _addons
 Addreffing existing VPK file: %s
-Ae9h	
 Alignment
 Allow AsyncBegin/EndRead()
 alphasort
@@ -754,7 +753,7 @@ TestScriptMgr001
 .text
 TextLayout_001
 TextMessageMgr_001
-The filename may only contain lower case alphanumeric characters and underscores.
+The filename may only contain lower case alphanumeric characters, dashes, and underscores.
 Thf@9
 ThreadGetCurrentId
 ThreadGetPriority
@@ -1021,8 +1020,10 @@ _ZN7CThread6OnExitEv
 _ZN7CThreadC2Ev
 _ZN7CThreadD2Ev
 _Znam
+_ZnamRKSt9nothrow_t
 _ZNV16CThreadFastMutex4LockEyj
 _Znwm
+_ZnwmRKSt9nothrow_t
 _ZTI7CThread
 _ZTVN10__cxxabiv117__class_type_infoE
 _ZTVN10__cxxabiv120__si_class_type_infoE

@@ -278,7 +278,6 @@ _6inA9
 /6v"@
 '6vj@
 6x"@9
-6Y3H9
  74	(74
  75	(7
 75	 7
@@ -390,6 +389,7 @@ AA9(	@
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 abort
+AbsolutePoseControl
 ACT_IDLE
 Activate diffcheck system.
 ACT_NEUTRAL_REF_POSE
@@ -428,6 +428,7 @@ AE_MELEE_DAMAGE
 AE_NPC_BECOME_TEMPORARY_RAGDOLL
 AE_NPC_HURT_INTERACTION_PARTNER
 AE_NPC_SET_INTERACTION_CANTDIE
+AE_NPC_START_POWERED_RAGDOLL
 AE_NPC_WEAPON_FIRE
 AE_NPC_WEAPON_SET_SEQUENCE_NUMBER
 AE_PASSENGER_PHYSICS_PUSH
@@ -444,12 +445,12 @@ Agg data %d: %p (%d parts, crc 0x%08X)
 aggregate_value
 ai_model_info
 AIWalkable
-	ak9	
 allactors
 allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
 allow_alias
 allowstatic
 Already saw decimal point or exponent; can't have another one.
+	am9	
 anchor_angles
 anchor_position
 Android clang version 5.0.300080  (based on LLVM 5.0.300080)
@@ -1460,7 +1461,7 @@ hf@9H
 hF@9h
 hf@9i
 HIGHDPI
-hj48h\
+hj580_
 h*@)K
 host_computationtime
 "host_computationtime_std_deviation
@@ -1634,7 +1635,6 @@ j48	C
 j48t^@
 j4xH;@
 j58hf@9(
-J68F	
 J!@9#
 J]A9_
 jA9hj
@@ -1673,11 +1673,11 @@ JYix*$
 	*jz-
 ?k58D
 *?k78
-k78']
-k78"[
 ?k78h
+k78iY
+k78n[
 k78o_
-?k78Ps
+?k78Wr
 k(8vV@
 K	A9lC
 *kb@9
@@ -2167,6 +2167,7 @@ modeldoc24
 modeldoc25
 modeldoc26
 modeldoc27
+modeldoc28
 modeldoc3
 modeldoc4
 modeldoc5
@@ -2432,6 +2433,7 @@ No field named "uninterpreted_option" in the Options proto.
 Non-primitive types can't be packed.
 Non-repeated Any specified multiple times.
 Non-repeated field "
+NoPoseControl
 <No schemasystem>
 NO_SIDE_EFFECTS
 no_standard_descriptor_accessor
@@ -2588,6 +2590,8 @@ Please add a Skeletal Input Settings node to the model in ModelDoc
 POINT
 point0
 point1
+pose_control
+pose_control_type
 POSE_SPACE_BONE
 POSE_SPACE_MORPH
 POSITION
@@ -2713,7 +2717,7 @@ rhj)8H
 Rhjh8
 Rigid; 
 rJMJJ
-R?k78
+R?k78!
 Rmij8
 rnd_down
 rnd_up
@@ -3234,6 +3238,7 @@ VR_001
 vr_carry_type
 V_RemoveDotSlashes
 VRenderDeviceSetupV001
+VRigHost001
 VScript
 VScriptDbg
 VScriptManager010
@@ -3345,6 +3350,7 @@ _ZN22CThreadRWLock_FastRead20UnlockReadAccountingEj
 _ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEj
 _ZN22CThreadRWLock_FastReadC1Ev
 _Znam
+_ZnamRKSt9nothrow_t
 zn@)j
 _ZNKSt11logic_error4whatEv
 _ZNKSt6__ndk16locale9use_facetERNS0_2idE

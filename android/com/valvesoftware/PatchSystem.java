@@ -13,6 +13,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
+import android.os.Build.VERSION;
 import android.os.Handler;
 import android.os.StatFs;
 import android.support.v4.app.NotificationCompat;
@@ -502,16 +503,23 @@ public class PatchSystem {
                 pendingDownload.uriDestinationPath = Uri.fromFile(file);
                 pendingDownload.nByteSize = this.m_nPotentialDownloadBytes;
                 this.m_vecPendingDownloads.add(pendingDownload);
-                StringBuilder sb = new StringBuilder();
-                sb.append(applicationContext.getApplicationContext().getPackageName());
-                sb.append(".provider");
-                this.m_downloadedAPKLocation = FileProvider.getUriForFile(applicationContext, sb.toString(), file);
+                if (VERSION.SDK_INT >= 24) {
+                    StringBuilder sb = new StringBuilder();
+                    sb.append(applicationContext.getApplicationContext().getPackageName());
+                    sb.append(".provider");
+                    this.m_downloadedAPKLocation = FileProvider.getUriForFile(applicationContext, sb.toString(), file);
+                } else {
+                    StringBuilder sb2 = new StringBuilder();
+                    sb2.append("file://");
+                    sb2.append(file);
+                    this.m_downloadedAPKLocation = Uri.parse(sb2.toString());
+                }
                 OnContinueFileDownload();
             } catch (Exception e) {
-                StringBuilder sb2 = new StringBuilder();
-                sb2.append("Manifest Exception: ");
-                sb2.append(e.toString());
-                Log.e(str2, sb2.toString());
+                StringBuilder sb3 = new StringBuilder();
+                sb3.append("Manifest Exception: ");
+                sb3.append(e.toString());
+                Log.e(str2, sb3.toString());
                 WaitForUserInput(EState.Error, EErrorCode.Manifest);
             }
         } else {

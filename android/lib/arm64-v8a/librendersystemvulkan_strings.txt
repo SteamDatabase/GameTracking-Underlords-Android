@@ -171,6 +171,7 @@
 /1V?OR
 *1x0x
 !2@=!
+	2)'*
 2*?)0"
 20CDescriptorSetVulkan
 20CMemoryManagerVulkan
@@ -182,6 +183,7 @@
 20CVfxShaderFileVulkan
 20IHibernationListener
 20IResourceTypeManager
+2*1#9
 21CConstantBufferVulkan
 21CFramebufferMgrVulkan
 21CRenderHardwareConfig
@@ -227,7 +229,7 @@
 2hBE9h
 2hj)8
 2hrU9
-2Hs.9
+2Hs,9
 2	i4xh
 2*i58
 2ij(8
@@ -400,12 +402,11 @@ $4DTdt
 6@y_! k
 6@y?! k
 6@y?! kC
-6Ysn9
+6Ysl9
 @7('@
 7 ! 7
 (7@9H
 7	aI9I
-7`B@y
 7d"J9bREy
  7F507
 '7GWgw
@@ -472,8 +473,7 @@ _8ji)8
 )=@9)}
 )!@9)
 ))@9	
-@@=9 
-@@9)#
+@@9	#
 @9`>@
 @9)!@
 @9)%@
@@ -652,7 +652,6 @@ _8ji)8
 @9)	T
 9Ti|8
 9Tit8
-@9)UD
 @9v"@
 @9v*@
 @9w6@
@@ -665,6 +664,7 @@ _8ji)8
 @9x*@
 @9x*@9{"@9!<
 @9)	@y
+@9)YD
 @9(yh
 @9)yh
 @9+	@yHA
@@ -677,6 +677,7 @@ A8kB@9l
 *a@9_
 +a@9?
 +a@9*	
+	!a9	
 	a@9?
 	a@9	
 *A@9+
@@ -713,7 +714,9 @@ a@9+a
 A9iji8
 A9iji8(
 *a@9j
+	A`9j)
 	 A9J
+	A`9J)
 A9j.G
 	aA9)
 +aA9F
@@ -723,16 +726,19 @@ A9j.G
 aA9`m@
 A(aN!
 $	A)Ar
+	Ab9)
 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789
 aBE9a
 A block must end with a branch instruction.
 Aboring OnReadPixels because of GPU memory allocation failure.
 abort
 AbsISubINTEL
+AbsolutePoseControl
 Absolute value
 AbsUSubINTEL
 A BuiltIn variable (id 
 aB@ya
+	ac9	
 	aC9)
 	aC9I
 	aC9I	 6
@@ -811,6 +817,7 @@ AE_MELEE_DAMAGE
 AE_NPC_BECOME_TEMPORARY_RAGDOLL
 AE_NPC_HURT_INTERACTION_PARTNER
 AE_NPC_SET_INTERACTION_CANTDIE
+AE_NPC_START_POWERED_RAGDOLL
 AE_NPC_WEAPON_FIRE
 AE_NPC_WEAPON_SET_SEQUENCE_NUMBER
 AE_PASSENGER_PHYSICS_PUSH
@@ -887,6 +894,8 @@ AMPERSAND
 (aN`(!
 (aN@(!
 (aN0*aN
+	An9)
+	An9	
 "(aNa(a
 #(aNA(a
 (aNB8an1
@@ -1163,9 +1172,10 @@ A@y!yh
 A@y(yh
 a@y#yj
 A@y*yj
-b"@9_
 B@9A1
+B(9hr
 #B9JA
+B!9!y
 BA9	A
 back-edge block
  back-edge blocks but the standard requires exactly one
@@ -1371,7 +1381,6 @@ block name cannot redefine a non-block name
 block redeclaration has extra members
 Block(s) 
 block_structure
-B`M9B
 bN!(a
 bNEy_
 BodyGroup
@@ -1422,6 +1431,7 @@ boolean expression expected
 bool ForceLoadShader(CShaderVulkanBase *)
 bool gl_HelperInvocation;flat in highp int gl_PrimitiveID;flat in highp int gl_Layer;
 bool helperInvocationEXT();
+BOOLLITERAL
 bool reportIntersectionNV(float, uint);
 bool sparseTexelsResidentARB(int code);
 bool   subgroupAllEqual(%s);
@@ -1498,7 +1508,6 @@ byteAddrTemp
 , bytes per element=
 ByVal
 @=%	@=c
-	!c9	
 c@95ID
 (C@9)?@9*#@9
 C9an@
@@ -1506,7 +1515,7 @@ C9(B07
 (c@9H
 (C@9h
 C9h 87
-C@9k%
+C@9K%
 cable
 cacheData
 callable
@@ -1932,7 +1941,6 @@ ClothShapeList
 ClothShapeSphere
 ClusteredReduce
 cluster size
-c`M9c
 CmdExecTime
 CMediumCommandBufferChunk CUtlMemoryPoolMT
 CMemAllocSystemInitialize
@@ -1972,6 +1980,7 @@ CommandProcedure
 CommandProcedureList
 Command stream pools: %s bytes in base, %s bytes in medium, %s bytes in large (%s extra data fallbacks)
 .comment
+COMMENT
 COMMON
 compact-ids
 Compare Equal
@@ -2669,6 +2678,7 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 D3DCOLORtoUBYTE4
+d6@yc
 	D@8!
 D@8)%
 D$@8$
@@ -2945,9 +2955,6 @@ DepthStencil
 depth_unchanged
 DepthUnchanged
 Deref
-__deregister_frame
-__deregister_frame_info
-__deregister_frame_info_bases
 DerivativeControl
 derivative_group_
 derivative_group_linearnv
@@ -3017,7 +3024,6 @@ displayWindow
 DIV_ASSIGN
 divide second child into first child
 division by 0
-dl_iterate_phdr
 dlopen
 dlsym
 DMAT2
@@ -3111,6 +3117,7 @@ doubles cannot start on an odd-numbered component
 double sqrt(double);dvec2  sqrt(dvec2);dvec3  sqrt(dvec3);dvec4  sqrt(dvec4);double inversesqrt(double);dvec2  inversesqrt(dvec2);dvec3  inversesqrt(dvec3);dvec4  inversesqrt(dvec4);double abs(double);dvec2  abs(dvec2);dvec3  abs(dvec3);dvec4  abs(dvec4);double sign(double);dvec2  sign(dvec2);dvec3  sign(dvec3);dvec4  sign(dvec4);double floor(double);dvec2  floor(dvec2);dvec3  floor(dvec3);dvec4  floor(dvec4);double trunc(double);dvec2  trunc(dvec2);dvec3  trunc(dvec3);dvec4  trunc(dvec4);double round(double);dvec2  round(dvec2);dvec3  round(dvec3);dvec4  round(dvec4);double roundEven(double);dvec2  roundEven(dvec2);dvec3  roundEven(dvec3);dvec4  roundEven(dvec4);double ceil(double);dvec2  ceil(dvec2);dvec3  ceil(dvec3);dvec4  ceil(dvec4);double fract(double);dvec2  fract(dvec2);dvec3  fract(dvec3);dvec4  fract(dvec4);double mod(double, double);dvec2  mod(dvec2 , double);dvec3  mod(dvec3 , double);dvec4  mod(dvec4 , double);dvec2  mod(dvec2 , dvec2);dvec3  mod(dvec3 , dvec3);dvec4  mod(dvec4 , dvec4);double modf(double, out double);dvec2  modf(dvec2,  out dvec2);dvec3  modf(dvec3,  out dvec3);dvec4  modf(dvec4,  out dvec4);double min(double, double);dvec2  min(dvec2,  double);dvec3  min(dvec3,  double);dvec4  min(dvec4,  double);dvec2  min(dvec2,  dvec2);dvec3  min(dvec3,  dvec3);dvec4  min(dvec4,  dvec4);double max(double, double);dvec2  max(dvec2 , double);dvec3  max(dvec3 , double);dvec4  max(dvec4 , double);dvec2  max(dvec2 , dvec2);dvec3  max(dvec3 , dvec3);dvec4  max(dvec4 , dvec4);double clamp(double, double, double);dvec2  clamp(dvec2 , double, double);dvec3  clamp(dvec3 , double, double);dvec4  clamp(dvec4 , double, double);dvec2  clamp(dvec2 , dvec2 , dvec2);dvec3  clamp(dvec3 , dvec3 , dvec3);dvec4  clamp(dvec4 , dvec4 , dvec4);double mix(double, double, double);dvec2  mix(dvec2,  dvec2,  double);dvec3  mix(dvec3,  dvec3,  double);dvec4  mix(dvec4,  dvec4,  double);dvec2  mix(dvec2,  dvec2,  dvec2);dvec3  mix(dvec3,  dvec3,  dvec3);dvec4  mix(dvec4,  dvec4,  dvec4);double mix(double, double, bool);dvec2  mix(dvec2,  dvec2,  bvec2);dvec3  mix(dvec3,  dvec3,  bvec3);dvec4  mix(dvec4,  dvec4,  bvec4);double step(double, double);dvec2  step(dvec2 , dvec2);dvec3  step(dvec3 , dvec3);dvec4  step(dvec4 , dvec4);dvec2  step(double, dvec2);dvec3  step(double, dvec3);dvec4  step(double, dvec4);double smoothstep(double, double, double);dvec2  smoothstep(dvec2 , dvec2 , dvec2);dvec3  smoothstep(dvec3 , dvec3 , dvec3);dvec4  smoothstep(dvec4 , dvec4 , dvec4);dvec2  smoothstep(double, double, dvec2);dvec3  smoothstep(double, double, dvec3);dvec4  smoothstep(double, double, dvec4);bool  isnan(double);bvec2 isnan(dvec2);bvec3 isnan(dvec3);bvec4 isnan(dvec4);bool  isinf(double);bvec2 isinf(dvec2);bvec3 isinf(dvec3);bvec4 isinf(dvec4);double length(double);double length(dvec2);double length(dvec3);double length(dvec4);double distance(double, double);double distance(dvec2 , dvec2);double distance(dvec3 , dvec3);double distance(dvec4 , dvec4);double dot(double, double);double dot(dvec2 , dvec2);double dot(dvec3 , dvec3);double dot(dvec4 , dvec4);dvec3 cross(dvec3, dvec3);double normalize(double);dvec2  normalize(dvec2);dvec3  normalize(dvec3);dvec4  normalize(dvec4);double faceforward(double, double, double);dvec2  faceforward(dvec2,  dvec2,  dvec2);dvec3  faceforward(dvec3,  dvec3,  dvec3);dvec4  faceforward(dvec4,  dvec4,  dvec4);double reflect(double, double);dvec2  reflect(dvec2 , dvec2 );dvec3  reflect(dvec3 , dvec3 );dvec4  reflect(dvec4 , dvec4 );double refract(double, double, double);dvec2  refract(dvec2 , dvec2 , double);dvec3  refract(dvec3 , dvec3 , double);dvec4  refract(dvec4 , dvec4 , double);dmat2 matrixCompMult(dmat2, dmat2);dmat3 matrixCompMult(dmat3, dmat3);dmat4 matrixCompMult(dmat4, dmat4);dmat2x3 matrixCompMult(dmat2x3, dmat2x3);dmat2x4 matrixCompMult(dmat2x4, dmat2x4);dmat3x2 matrixCompMult(dmat3x2, dmat3x2);dmat3x4 matrixCompMult(dmat3x4, dmat3x4);dmat4x2 matrixCompMult(dmat4x2, dmat4x2);dmat4x3 matrixCompMult(dmat4x3, dmat4x3);dmat2   outerProduct(dvec2, dvec2);dmat3   outerProduct(dvec3, dvec3);dmat4   outerProduct(dvec4, dvec4);dmat2x3 outerProduct(dvec3, dvec2);dmat3x2 outerProduct(dvec2, dvec3);dmat2x4 outerProduct(dvec4, dvec2);dmat4x2 outerProduct(dvec2, dvec4);dmat3x4 outerProduct(dvec4, dvec3);dmat4x3 outerProduct(dvec3, dvec4);dmat2   transpose(dmat2);dmat3   transpose(dmat3);dmat4   transpose(dmat4);dmat2x3 transpose(dmat3x2);dmat3x2 transpose(dmat2x3);dmat2x4 transpose(dmat4x2);dmat4x2 transpose(dmat2x4);dmat3x4 transpose(dmat4x3);dmat4x3 transpose(dmat3x4);double determinant(dmat2);double determinant(dmat3);double determinant(dmat4);dmat2 inverse(dmat2);dmat3 inverse(dmat3);dmat4 inverse(dmat4);bvec2 lessThan(dvec2, dvec2);bvec3 lessThan(dvec3, dvec3);bvec4 lessThan(dvec4, dvec4);bvec2 lessThanEqual(dvec2, dvec2);bvec3 lessThanEqual(dvec3, dvec3);bvec4 lessThanEqual(dvec4, dvec4);bvec2 greaterThan(dvec2, dvec2);bvec3 greaterThan(dvec3, dvec3);bvec4 greaterThan(dvec4, dvec4);bvec2 greaterThanEqual(dvec2, dvec2);bvec3 greaterThanEqual(dvec3, dvec3);bvec4 greaterThanEqual(dvec4, dvec4);bvec2 equal(dvec2, dvec2);bvec3 equal(dvec3, dvec3);bvec4 equal(dvec4, dvec4);bvec2 notEqual(dvec2, dvec2);bvec3 notEqual(dvec3, dvec3);bvec4 notEqual(dvec4, dvec4);
 double vector
 do-while loops not available
+<DOWN>
 dPdxCoarse
 DPdxCoarse
 dPdxFine
@@ -3162,6 +3169,7 @@ DynamicComboRule
    DynamicComboRule( 
 Dynamic combos:
 *** Dynamic combo "%s" in %s cannot refer to a feature! Only static combos can refer to features.
+Dynamic combo %s referenced in expression doesn't exist.
 DynamicConfigList
 dynamic_interaction
 DynamicPoolPMB_%s
@@ -3252,6 +3260,7 @@ Entry point not found
 Entry points may not have a call graph with cycles.
 EnvironmentMapBuilder_001
  environments.
+<EOR>
 EQ_OP
 equality_expression
 equal_spacing
@@ -3326,6 +3335,7 @@ ERROR: Specified path %s could not be made content-relative
 *** Error! Too many or too few arguments to a rule in %s!
 Error: Type Id is 0
 ERROR! VK call failed! result = %s ( %s )
+ESC_SEQ
 ETC compression not supported on this target .
 EvaluateAttributeAtCentroid
 EvaluateAttributeAtSample
@@ -3358,6 +3368,7 @@ Execution mode can only be used with the Kernel execution model.
 ExecutionModeId
 Execution mode must be one of OriginUpperLeft, DepthReplacing, DepthGreater, DepthLess, DepthUnchanged, LocalSize, or LocalSizeHint for WebGPU environment.
 : Execution scope is limited to Subgroup or Workgroup
+'exists'
  exits the 
 : expected 
 expected ')'
@@ -3748,6 +3759,7 @@ Expected Vector type to be equal to Result Type
 Expected Vector type to be OpTypeVector
 expected {x, y, z, w} for component
 Expecting compressed combo data
+Expecting %s
 Experimental: Set to 1 to enable full GPU pipeline flushing after each command list.
 Experimental: Set to 1 to enable full GPU pipeline flushing after each present.
 explicit
@@ -3762,12 +3774,14 @@ explosion_type
 explosive_damage
 explosive_radius
 expm1
+EXPONENT
 Export
 EXPORTSYSTEM_INTERFACE_VERSION_001
 __Expression__
 expression after :
 expression after ?
 expression followed by ']'
+Expression Parser - 
 expression_statement
 EXRHeader variable is not initialized.
 EXRReadFile() - B channel not found!
@@ -4022,6 +4036,7 @@ FCOOPMATNV
 fcoopmatNV coopMatMulAddNV(fcoopmatNV A, fcoopmatNV B, fcoopmatNV C);
 FCVAR_NEVER_AS_STRING
 _feature
+Feature combo %s referenced in expression doesn't exist.
 feature not yet implemented
 FeatureRule
 features
@@ -4221,6 +4236,7 @@ floating-point fast math mode
 floating-point rounding mode
 float interpolateAtCentroid(float);vec2  interpolateAtCentroid(vec2);vec3  interpolateAtCentroid(vec3);vec4  interpolateAtCentroid(vec4);float interpolateAtSample(float, int);vec2  interpolateAtSample(vec2,  int);vec3  interpolateAtSample(vec3,  int);vec4  interpolateAtSample(vec4,  int);float interpolateAtOffset(float, vec2);vec2  interpolateAtOffset(vec2,  vec2);vec3  interpolateAtOffset(vec3,  vec2);vec4  interpolateAtOffset(vec4,  vec2);
 float interpolateAtVertexAMD(float, uint);vec2  interpolateAtVertexAMD(vec2,  uint);vec3  interpolateAtVertexAMD(vec3,  uint);vec4  interpolateAtVertexAMD(vec4,  uint);int   interpolateAtVertexAMD(int,   uint);ivec2 interpolateAtVertexAMD(ivec2, uint);ivec3 interpolateAtVertexAMD(ivec3, uint);ivec4 interpolateAtVertexAMD(ivec4, uint);uint  interpolateAtVertexAMD(uint,  uint);uvec2 interpolateAtVertexAMD(uvec2, uint);uvec3 interpolateAtVertexAMD(uvec3, uint);uvec4 interpolateAtVertexAMD(uvec4, uint);float16_t interpolateAtVertexAMD(float16_t, uint);f16vec2   interpolateAtVertexAMD(f16vec2,   uint);f16vec3   interpolateAtVertexAMD(f16vec3,   uint);f16vec4   interpolateAtVertexAMD(f16vec4,   uint);
+FLOATLITERAL
 float literal needs a decimal point or exponent
 float literal too long
 float main( const PS_INPUT i )	: SV_DEPTH							
@@ -4228,6 +4244,7 @@ float min3(float, float, float);vec2  min3(vec2,  vec2,  vec2);vec3  min3(vec3, 
 float minInvocationsAMD(float);vec2  minInvocationsAMD(vec2);vec3  minInvocationsAMD(vec3);vec4  minInvocationsAMD(vec4);int   minInvocationsAMD(int);ivec2 minInvocationsAMD(ivec2);ivec3 minInvocationsAMD(ivec3);ivec4 minInvocationsAMD(ivec4);uint  minInvocationsAMD(uint);uvec2 minInvocationsAMD(uvec2);uvec3 minInvocationsAMD(uvec3);uvec4 minInvocationsAMD(uvec4);double minInvocationsAMD(double);dvec2  minInvocationsAMD(dvec2);dvec3  minInvocationsAMD(dvec3);dvec4  minInvocationsAMD(dvec4);int64_t minInvocationsAMD(int64_t);i64vec2 minInvocationsAMD(i64vec2);i64vec3 minInvocationsAMD(i64vec3);i64vec4 minInvocationsAMD(i64vec4);uint64_t minInvocationsAMD(uint64_t);u64vec2  minInvocationsAMD(u64vec2);u64vec3  minInvocationsAMD(u64vec3);u64vec4  minInvocationsAMD(u64vec4);float16_t minInvocationsAMD(float16_t);f16vec2   minInvocationsAMD(f16vec2);f16vec3   minInvocationsAMD(f16vec3);f16vec4   minInvocationsAMD(f16vec4);int16_t minInvocationsAMD(int16_t);i16vec2 minInvocationsAMD(i16vec2);i16vec3 minInvocationsAMD(i16vec3);i16vec4 minInvocationsAMD(i16vec4);uint16_t minInvocationsAMD(uint16_t);u16vec2  minInvocationsAMD(u16vec2);u16vec3  minInvocationsAMD(u16vec3);u16vec4  minInvocationsAMD(u16vec4);float minInvocationsInclusiveScanAMD(float);vec2  minInvocationsInclusiveScanAMD(vec2);vec3  minInvocationsInclusiveScanAMD(vec3);vec4  minInvocationsInclusiveScanAMD(vec4);int   minInvocationsInclusiveScanAMD(int);ivec2 minInvocationsInclusiveScanAMD(ivec2);ivec3 minInvocationsInclusiveScanAMD(ivec3);ivec4 minInvocationsInclusiveScanAMD(ivec4);uint  minInvocationsInclusiveScanAMD(uint);uvec2 minInvocationsInclusiveScanAMD(uvec2);uvec3 minInvocationsInclusiveScanAMD(uvec3);uvec4 minInvocationsInclusiveScanAMD(uvec4);double minInvocationsInclusiveScanAMD(double);dvec2  minInvocationsInclusiveScanAMD(dvec2);dvec3  minInvocationsInclusiveScanAMD(dvec3);dvec4  minInvocationsInclusiveScanAMD(dvec4);int64_t minInvocationsInclusiveScanAMD(int64_t);i64vec2 minInvocationsInclusiveScanAMD(i64vec2);i64vec3 minInvocationsInclusiveScanAMD(i64vec3);i64vec4 minInvocationsInclusiveScanAMD(i64vec4);uint64_t minInvocationsInclusiveScanAMD(uint64_t);u64vec2  minInvocationsInclusiveScanAMD(u64vec2);u64vec3  minInvocationsInclusiveScanAMD(u64vec3);u64vec4  minInvocationsInclusiveScanAMD(u64vec4);float16_t minInvocationsInclusiveScanAMD(float16_t);f16vec2   minInvocationsInclusiveScanAMD(f16vec2);f16vec3   minInvocationsInclusiveScanAMD(f16vec3);f16vec4   minInvocationsInclusiveScanAMD(f16vec4);int16_t minInvocationsInclusiveScanAMD(int16_t);i16vec2 minInvocationsInclusiveScanAMD(i16vec2);i16vec3 minInvocationsInclusiveScanAMD(i16vec3);i16vec4 minInvocationsInclusiveScanAMD(i16vec4);uint16_t minInvocationsInclusiveScanAMD(uint16_t);u16vec2  minInvocationsInclusiveScanAMD(u16vec2);u16vec3  minInvocationsInclusiveScanAMD(u16vec3);u16vec4  minInvocationsInclusiveScanAMD(u16vec4);float minInvocationsExclusiveScanAMD(float);vec2  minInvocationsExclusiveScanAMD(vec2);vec3  minInvocationsExclusiveScanAMD(vec3);vec4  minInvocationsExclusiveScanAMD(vec4);int   minInvocationsExclusiveScanAMD(int);ivec2 minInvocationsExclusiveScanAMD(ivec2);ivec3 minInvocationsExclusiveScanAMD(ivec3);ivec4 minInvocationsExclusiveScanAMD(ivec4);uint  minInvocationsExclusiveScanAMD(uint);uvec2 minInvocationsExclusiveScanAMD(uvec2);uvec3 minInvocationsExclusiveScanAMD(uvec3);uvec4 minInvocationsExclusiveScanAMD(uvec4);double minInvocationsExclusiveScanAMD(double);dvec2  minInvocationsExclusiveScanAMD(dvec2);dvec3  minInvocationsExclusiveScanAMD(dvec3);dvec4  minInvocationsExclusiveScanAMD(dvec4);int64_t minInvocationsExclusiveScanAMD(int64_t);i64vec2 minInvocationsExclusiveScanAMD(i64vec2);i64vec3 minInvocationsExclusiveScanAMD(i64vec3);i64vec4 minInvocationsExclusiveScanAMD(i64vec4);uint64_t minInvocationsExclusiveScanAMD(uint64_t);u64vec2  minInvocationsExclusiveScanAMD(u64vec2);u64vec3  minInvocationsExclusiveScanAMD(u64vec3);u64vec4  minInvocationsExclusiveScanAMD(u64vec4);float16_t minInvocationsExclusiveScanAMD(float16_t);f16vec2   minInvocationsExclusiveScanAMD(f16vec2);f16vec3   minInvocationsExclusiveScanAMD(f16vec3);f16vec4   minInvocationsExclusiveScanAMD(f16vec4);int16_t minInvocationsExclusiveScanAMD(int16_t);i16vec2 minInvocationsExclusiveScanAMD(i16vec2);i16vec3 minInvocationsExclusiveScanAMD(i16vec3);i16vec4 minInvocationsExclusiveScanAMD(i16vec4);uint16_t minInvocationsExclusiveScanAMD(uint16_t);u16vec2  minInvocationsExclusiveScanAMD(u16vec2);u16vec3  minInvocationsExclusiveScanAMD(u16vec3);u16vec4  minInvocationsExclusiveScanAMD(u16vec4);float maxInvocationsAMD(float);vec2  maxInvocationsAMD(vec2);vec3  maxInvocationsAMD(vec3);vec4  maxInvocationsAMD(vec4);int   maxInvocationsAMD(int);ivec2 maxInvocationsAMD(ivec2);ivec3 maxInvocationsAMD(ivec3);ivec4 maxInvocationsAMD(ivec4);uint  maxInvocationsAMD(uint);uvec2 maxInvocationsAMD(uvec2);uvec3 maxInvocationsAMD(uvec3);uvec4 maxInvocationsAMD(uvec4);double maxInvocationsAMD(double);dvec2  maxInvocationsAMD(dvec2);dvec3  maxInvocationsAMD(dvec3);dvec4  maxInvocationsAMD(dvec4);int64_t maxInvocationsAMD(int64_t);i64vec2 maxInvocationsAMD(i64vec2);i64vec3 maxInvocationsAMD(i64vec3);i64vec4 maxInvocationsAMD(i64vec4);uint64_t maxInvocationsAMD(uint64_t);u64vec2  maxInvocationsAMD(u64vec2);u64vec3  maxInvocationsAMD(u64vec3);u64vec4  maxInvocationsAMD(u64vec4);float16_t maxInvocationsAMD(float16_t);f16vec2   maxInvocationsAMD(f16vec2);f16vec3   maxInvocationsAMD(f16vec3);f16vec4   maxInvocationsAMD(f16vec4);int16_t maxInvocationsAMD(int16_t);i16vec2 maxInvocationsAMD(i16vec2);i16vec3 maxInvocationsAMD(i16vec3);i16vec4 maxInvocationsAMD(i16vec4);uint16_t maxInvocationsAMD(uint16_t);u16vec2  maxInvocationsAMD(u16vec2);u16vec3  maxInvocationsAMD(u16vec3);u16vec4  maxInvocationsAMD(u16vec4);float maxInvocationsInclusiveScanAMD(float);vec2  maxInvocationsInclusiveScanAMD(vec2);vec3  maxInvocationsInclusiveScanAMD(vec3);vec4  maxInvocationsInclusiveScanAMD(vec4);int   maxInvocationsInclusiveScanAMD(int);ivec2 maxInvocationsInclusiveScanAMD(ivec2);ivec3 maxInvocationsInclusiveScanAMD(ivec3);ivec4 maxInvocationsInclusiveScanAMD(ivec4);uint  maxInvocationsInclusiveScanAMD(uint);uvec2 maxInvocationsInclusiveScanAMD(uvec2);uvec3 maxInvocationsInclusiveScanAMD(uvec3);uvec4 maxInvocationsInclusiveScanAMD(uvec4);double maxInvocationsInclusiveScanAMD(double);dvec2  maxInvocationsInclusiveScanAMD(dvec2);dvec3  maxInvocationsInclusiveScanAMD(dvec3);dvec4  maxInvocationsInclusiveScanAMD(dvec4);int64_t maxInvocationsInclusiveScanAMD(int64_t);i64vec2 maxInvocationsInclusiveScanAMD(i64vec2);i64vec3 maxInvocationsInclusiveScanAMD(i64vec3);i64vec4 maxInvocationsInclusiveScanAMD(i64vec4);uint64_t maxInvocationsInclusiveScanAMD(uint64_t);u64vec2  maxInvocationsInclusiveScanAMD(u64vec2);u64vec3  maxInvocationsInclusiveScanAMD(u64vec3);u64vec4  maxInvocationsInclusiveScanAMD(u64vec4);float16_t maxInvocationsInclusiveScanAMD(float16_t);f16vec2   maxInvocationsInclusiveScanAMD(f16vec2);f16vec3   maxInvocationsInclusiveScanAMD(f16vec3);f16vec4   maxInvocationsInclusiveScanAMD(f16vec4);int16_t maxInvocationsInclusiveScanAMD(int16_t);i16vec2 maxInvocationsInclusiveScanAMD(i16vec2);i16vec3 maxInvocationsInclusiveScanAMD(i16vec3);i16vec4 maxInvocationsInclusiveScanAMD(i16vec4);uint16_t maxInvocationsInclusiveScanAMD(uint16_t);u16vec2  maxInvocationsInclusiveScanAMD(u16vec2);u16vec3  maxInvocationsInclusiveScanAMD(u16vec3);u16vec4  maxInvocationsInclusiveScanAMD(u16vec4);float maxInvocationsExclusiveScanAMD(float);vec2  maxInvocationsExclusiveScanAMD(vec2);vec3  maxInvocationsExclusiveScanAMD(vec3);vec4  maxInvocationsExclusiveScanAMD(vec4);int   maxInvocationsExclusiveScanAMD(int);ivec2 maxInvocationsExclusiveScanAMD(ivec2);ivec3 maxInvocationsExclusiveScanAMD(ivec3);ivec4 maxInvocationsExclusiveScanAMD(ivec4);uint  maxInvocationsExclusiveScanAMD(uint);uvec2 maxInvocationsExclusiveScanAMD(uvec2);uvec3 maxInvocationsExclusiveScanAMD(uvec3);uvec4 maxInvocationsExclusiveScanAMD(uvec4);double maxInvocationsExclusiveScanAMD(double);dvec2  maxInvocationsExclusiveScanAMD(dvec2);dvec3  maxInvocationsExclusiveScanAMD(dvec3);dvec4  maxInvocationsExclusiveScanAMD(dvec4);int64_t maxInvocationsExclusiveScanAMD(int64_t);i64vec2 maxInvocationsExclusiveScanAMD(i64vec2);i64vec3 maxInvocationsExclusiveScanAMD(i64vec3);i64vec4 maxInvocationsExclusiveScanAMD(i64vec4);uint64_t maxInvocationsExclusiveScanAMD(uint64_t);u64vec2  maxInvocationsExclusiveScanAMD(u64vec2);u64vec3  maxInvocationsExclusiveScanAMD(u64vec3);u64vec4  maxInvocationsExclusiveScanAMD(u64vec4);float16_t maxInvocationsExclusiveScanAMD(float16_t);f16vec2   maxInvocationsExclusiveScanAMD(f16vec2);f16vec3   maxInvocationsExclusiveScanAMD(f16vec3);f16vec4   maxInvocationsExclusiveScanAMD(f16vec4);int16_t maxInvocationsExclusiveScanAMD(int16_t);i16vec2 maxInvocationsExclusiveScanAMD(i16vec2);i16vec3 maxInvocationsExclusiveScanAMD(i16vec3);i16vec4 maxInvocationsExclusiveScanAMD(i16vec4);uint16_t maxInvocationsExclusiveScanAMD(uint16_t);u16vec2  maxInvocationsExclusiveScanAMD(u16vec2);u16vec3  maxInvocationsExclusiveScanAMD(u16vec3);u16vec4  maxInvocationsExclusiveScanAMD(u16vec4);float addInvocationsAMD(float);vec2  addInvocationsAMD(vec2);vec3  addInvocationsAMD(vec3);vec4  addInvocationsAMD(vec4);int   addInvocationsAMD(int);ivec2 addInvocationsAMD(ivec2);ivec3 addInvocationsAMD(ivec3);ivec4 addInvocationsAMD(ivec4);uint  addInvocationsAMD(uint);uvec2 addInvocationsAMD(uvec2);uvec3 addInvocationsAMD(uvec3);uvec4 addInvocationsAMD(uvec4);double  addInvocationsAMD(double);dvec2   addInvocationsAMD(dvec2);dvec3   addInvocationsAMD(dvec3);dvec4   addInvocationsAMD(dvec4);int64_t addInvocationsAMD(int64_t);i64vec2 addInvocationsAMD(i64vec2);i64vec3 addInvocationsAMD(i64vec3);i64vec4 addInvocationsAMD(i64vec4);uint64_t addInvocationsAMD(uint64_t);u64vec2  addInvocationsAMD(u64vec2);u64vec3  addInvocationsAMD(u64vec3);u64vec4  addInvocationsAMD(u64vec4);float16_t addInvocationsAMD(float16_t);f16vec2   addInvocationsAMD(f16vec2);f16vec3   addInvocationsAMD(f16vec3);f16vec4   addInvocationsAMD(f16vec4);int16_t addInvocationsAMD(int16_t);i16vec2 addInvocationsAMD(i16vec2);i16vec3 addInvocationsAMD(i16vec3);i16vec4 addInvocationsAMD(i16vec4);uint16_t addInvocationsAMD(uint16_t);u16vec2  addInvocationsAMD(u16vec2);u16vec3  addInvocationsAMD(u16vec3);u16vec4  addInvocationsAMD(u16vec4);float addInvocationsInclusiveScanAMD(float);vec2  addInvocationsInclusiveScanAMD(vec2);vec3  addInvocationsInclusiveScanAMD(vec3);vec4  addInvocationsInclusiveScanAMD(vec4);int   addInvocationsInclusiveScanAMD(int);ivec2 addInvocationsInclusiveScanAMD(ivec2);ivec3 addInvocationsInclusiveScanAMD(ivec3);ivec4 addInvocationsInclusiveScanAMD(ivec4);uint  addInvocationsInclusiveScanAMD(uint);uvec2 addInvocationsInclusiveScanAMD(uvec2);uvec3 addInvocationsInclusiveScanAMD(uvec3);uvec4 addInvocationsInclusiveScanAMD(uvec4);double  addInvocationsInclusiveScanAMD(double);dvec2   addInvocationsInclusiveScanAMD(dvec2);dvec3   addInvocationsInclusiveScanAMD(dvec3);dvec4   addInvocationsInclusiveScanAMD(dvec4);int64_t addInvocationsInclusiveScanAMD(int64_t);i64vec2 addInvocationsInclusiveScanAMD(i64vec2);i64vec3 addInvocationsInclusiveScanAMD(i64vec3);i64vec4 addInvocationsInclusiveScanAMD(i64vec4);uint64_t addInvocationsInclusiveScanAMD(uint64_t);u64vec2  addInvocationsInclusiveScanAMD(u64vec2);u64vec3  addInvocationsInclusiveScanAMD(u64vec3);u64vec4  addInvocationsInclusiveScanAMD(u64vec4);float16_t addInvocationsInclusiveScanAMD(float16_t);f16vec2   addInvocationsInclusiveScanAMD(f16vec2);f16vec3   addInvocationsInclusiveScanAMD(f16vec3);f16vec4   addInvocationsInclusiveScanAMD(f16vec4);int16_t addInvocationsInclusiveScanAMD(int16_t);i16vec2 addInvocationsInclusiveScanAMD(i16vec2);i16vec3 addInvocationsInclusiveScanAMD(i16vec3);i16vec4 addInvocationsInclusiveScanAMD(i16vec4);uint16_t addInvocationsInclusiveScanAMD(uint16_t);u16vec2  addInvocationsInclusiveScanAMD(u16vec2);u16vec3  addInvocationsInclusiveScanAMD(u16vec3);u16vec4  addInvocationsInclusiveScanAMD(u16vec4);float addInvocationsExclusiveScanAMD(float);vec2  addInvocationsExclusiveScanAMD(vec2);vec3  addInvocationsExclusiveScanAMD(vec3);vec4  addInvocationsExclusiveScanAMD(vec4);int   addInvocationsExclusiveScanAMD(int);ivec2 addInvocationsExclusiveScanAMD(ivec2);ivec3 addInvocationsExclusiveScanAMD(ivec3);ivec4 addInvocationsExclusiveScanAMD(ivec4);uint  addInvocationsExclusiveScanAMD(uint);uvec2 addInvocationsExclusiveScanAMD(uvec2);uvec3 addInvocationsExclusiveScanAMD(uvec3);uvec4 addInvocationsExclusiveScanAMD(uvec4);double  addInvocationsExclusiveScanAMD(double);dvec2   addInvocationsExclusiveScanAMD(dvec2);dvec3   addInvocationsExclusiveScanAMD(dvec3);dvec4   addInvocationsExclusiveScanAMD(dvec4);int64_t addInvocationsExclusiveScanAMD(int64_t);i64vec2 addInvocationsExclusiveScanAMD(i64vec2);i64vec3 addInvocationsExclusiveScanAMD(i64vec3);i64vec4 addInvocationsExclusiveScanAMD(i64vec4);uint64_t addInvocationsExclusiveScanAMD(uint64_t);u64vec2  addInvocationsExclusiveScanAMD(u64vec2);u64vec3  addInvocationsExclusiveScanAMD(u64vec3);u64vec4  addInvocationsExclusiveScanAMD(u64vec4);float16_t addInvocationsExclusiveScanAMD(float16_t);f16vec2   addInvocationsExclusiveScanAMD(f16vec2);f16vec3   addInvocationsExclusiveScanAMD(f16vec3);f16vec4   addInvocationsExclusiveScanAMD(f16vec4);int16_t addInvocationsExclusiveScanAMD(int16_t);i16vec2 addInvocationsExclusiveScanAMD(i16vec2);i16vec3 addInvocationsExclusiveScanAMD(i16vec3);i16vec4 addInvocationsExclusiveScanAMD(i16vec4);uint16_t addInvocationsExclusiveScanAMD(uint16_t);u16vec2  addInvocationsExclusiveScanAMD(u16vec2);u16vec3  addInvocationsExclusiveScanAMD(u16vec3);u16vec4  addInvocationsExclusiveScanAMD(u16vec4);float minInvocationsNonUniformAMD(float);vec2  minInvocationsNonUniformAMD(vec2);vec3  minInvocationsNonUniformAMD(vec3);vec4  minInvocationsNonUniformAMD(vec4);int   minInvocationsNonUniformAMD(int);ivec2 minInvocationsNonUniformAMD(ivec2);ivec3 minInvocationsNonUniformAMD(ivec3);ivec4 minInvocationsNonUniformAMD(ivec4);uint  minInvocationsNonUniformAMD(uint);uvec2 minInvocationsNonUniformAMD(uvec2);uvec3 minInvocationsNonUniformAMD(uvec3);uvec4 minInvocationsNonUniformAMD(uvec4);double minInvocationsNonUniformAMD(double);dvec2  minInvocationsNonUniformAMD(dvec2);dvec3  minInvocationsNonUniformAMD(dvec3);dvec4  minInvocationsNonUniformAMD(dvec4);int64_t minInvocationsNonUniformAMD(int64_t);i64vec2 minInvocationsNonUniformAMD(i64vec2);i64vec3 minInvocationsNonUniformAMD(i64vec3);i64vec4 minInvocationsNonUniformAMD(i64vec4);uint64_t minInvocationsNonUniformAMD(uint64_t);u64vec2  minInvocationsNonUniformAMD(u64vec2);u64vec3  minInvocationsNonUniformAMD(u64vec3);u64vec4  minInvocationsNonUniformAMD(u64vec4);float16_t minInvocationsNonUniformAMD(float16_t);f16vec2   minInvocationsNonUniformAMD(f16vec2);f16vec3   minInvocationsNonUniformAMD(f16vec3);f16vec4   minInvocationsNonUniformAMD(f16vec4);int16_t minInvocationsNonUniformAMD(int16_t);i16vec2 minInvocationsNonUniformAMD(i16vec2);i16vec3 minInvocationsNonUniformAMD(i16vec3);i16vec4 minInvocationsNonUniformAMD(i16vec4);uint16_t minInvocationsNonUniformAMD(uint16_t);u16vec2  minInvocationsNonUniformAMD(u16vec2);u16vec3  minInvocationsNonUniformAMD(u16vec3);u16vec4  minInvocationsNonUniformAMD(u16vec4);float minInvocationsInclusiveScanNonUniformAMD(float);vec2  minInvocationsInclusiveScanNonUniformAMD(vec2);vec3  minInvocationsInclusiveScanNonUniformAMD(vec3);vec4  minInvocationsInclusiveScanNonUniformAMD(vec4);int   minInvocationsInclusiveScanNonUniformAMD(int);ivec2 minInvocationsInclusiveScanNonUniformAMD(ivec2);ivec3 minInvocationsInclusiveScanNonUniformAMD(ivec3);ivec4 minInvocationsInclusiveScanNonUniformAMD(ivec4);uint  minInvocationsInclusiveScanNonUniformAMD(uint);uvec2 minInvocationsInclusiveScanNonUniformAMD(uvec2);uvec3 minInvocationsInclusiveScanNonUniformAMD(uvec3);uvec4 minInvocationsInclusiveScanNonUniformAMD(uvec4);double minInvocationsInclusiveScanNonUniformAMD(double);dvec2  minInvocationsInclusiveScanNonUniformAMD(dvec2);dvec3  minInvocationsInclusiveScanNonUniformAMD(dvec3);dvec4  minInvocationsInclusiveScanNonUniformAMD(dvec4);int64_t minInvocationsInclusiveScanNonUniformAMD(int64_t);i64vec2 minInvocationsInclusiveScanNonUniformAMD(i64vec2);i64vec3 minInvocationsInclusiveScanNonUniformAMD(i64vec3);i64vec4 minInvocationsInclusiveScanNonUniformAMD(i64vec4);uint64_t minInvocationsInclusiveScanNonUniformAMD(uint64_t);u64vec2  minInvocationsInclusiveScanNonUniformAMD(u64vec2);u64vec3  minInvocationsInclusiveScanNonUniformAMD(u64vec3);u64vec4  minInvocationsInclusiveScanNonUniformAMD(u64vec4);float16_t minInvocationsInclusiveScanNonUniformAMD(float16_t);f16vec2   minInvocationsInclusiveScanNonUniformAMD(f16vec2);f16vec3   minInvocationsInclusiveScanNonUniformAMD(f16vec3);f16vec4   minInvocationsInclusiveScanNonUniformAMD(f16vec4);int16_t minInvocationsInclusiveScanNonUniformAMD(int16_t);i16vec2 minInvocationsInclusiveScanNonUniformAMD(i16vec2);i16vec3 minInvocationsInclusiveScanNonUniformAMD(i16vec3);i16vec4 minInvocationsInclusiveScanNonUniformAMD(i16vec4);uint16_t minInvocationsInclusiveScanNonUniformAMD(uint16_t);u16vec2  minInvocationsInclusiveScanNonUniformAMD(u16vec2);u16vec3  minInvocationsInclusiveScanNonUniformAMD(u16vec3);u16vec4  minInvocationsInclusiveScanNonUniformAMD(u16vec4);float minInvocationsExclusiveScanNonUniformAMD(float);vec2  minInvocationsExclusiveScanNonUniformAMD(vec2);vec3  minInvocationsExclusiveScanNonUniformAMD(vec3);vec4  minInvocationsExclusiveScanNonUniformAMD(vec4);int   minInvocationsExclusiveScanNonUniformAMD(int);ivec2 minInvocationsExclusiveScanNonUniformAMD(ivec2);ivec3 minInvocationsExclusiveScanNonUniformAMD(ivec3);ivec4 minInvocationsExclusiveScanNonUniformAMD(ivec4);uint  minInvocationsExclusiveScanNonUniformAMD(uint);uvec2 minInvocationsExclusiveScanNonUniformAMD(uvec2);uvec3 minInvocationsExclusiveScanNonUniformAMD(uvec3);uvec4 minInvocationsExclusiveScanNonUniformAMD(uvec4);double minInvocationsExclusiveScanNonUniformAMD(double);dvec2  minInvocationsExclusiveScanNonUniformAMD(dvec2);dvec3  minInvocationsExclusiveScanNonUniformAMD(dvec3);dvec4  minInvocationsExclusiveScanNonUniformAMD(dvec4);int64_t minInvocationsExclusiveScanNonUniformAMD(int64_t);i64vec2 minInvocationsExclusiveScanNonUniformAMD(i64vec2);i64vec3 minInvocationsExclusiveScanNonUniformAMD(i64vec3);i64vec4 minInvocationsExclusiveScanNonUniformAMD(i64vec4);uint64_t minInvocationsExclusiveScanNonUniformAMD(uint64_t);u64vec2  minInvocationsExclusiveScanNonUniformAMD(u64vec2);u64vec3  minInvocationsExclusiveScanNonUniformAMD(u64vec3);u64vec4  minInvocationsExclusiveScanNonUniformAMD(u64vec4);float16_t minInvocationsExclusiveScanNonUniformAMD(float16_t);f16vec2   minInvocationsExclusiveScanNonUniformAMD(f16vec2);f16vec3   minInvocationsExclusiveScanNonUniformAMD(f16vec3);f16vec4   minInvocationsExclusiveScanNonUniformAMD(f16vec4);int16_t minInvocationsExclusiveScanNonUniformAMD(int16_t);i16vec2 minInvocationsExclusiveScanNonUniformAMD(i16vec2);i16vec3 minInvocationsExclusiveScanNonUniformAMD(i16vec3);i16vec4 minInvocationsExclusiveScanNonUniformAMD(i16vec4);uint16_t minInvocationsExclusiveScanNonUniformAMD(uint16_t);u16vec2  minInvocationsExclusiveScanNonUniformAMD(u16vec2);u16vec3  minInvocationsExclusiveScanNonUniformAMD(u16vec3);u16vec4  minInvocationsExclusiveScanNonUniformAMD(u16vec4);float maxInvocationsNonUniformAMD(float);vec2  maxInvocationsNonUniformAMD(vec2);vec3  maxInvocationsNonUniformAMD(vec3);vec4  maxInvocationsNonUniformAMD(vec4);int   maxInvocationsNonUniformAMD(int);ivec2 maxInvocationsNonUniformAMD(ivec2);ivec3 maxInvocationsNonUniformAMD(ivec3);ivec4 maxInvocationsNonUniformAMD(ivec4);uint  maxInvocationsNonUniformAMD(uint);uvec2 maxInvocationsNonUniformAMD(uvec2);uvec3 maxInvocationsNonUniformAMD(uvec3);uvec4 maxInvocationsNonUniformAMD(uvec4);double maxInvocationsNonUniformAMD(double);dvec2  maxInvocationsNonUniformAMD(dvec2);dvec3  maxInvocationsNonUniformAMD(dvec3);dvec4  maxInvocationsNonUniformAMD(dvec4);int64_t maxInvocationsNonUniformAMD(int64_t);i64vec2 maxInvocationsNonUniformAMD(i64vec2);i64vec3 maxInvocationsNonUniformAMD(i64vec3);i64vec4 maxInvocationsNonUniformAMD(i64vec4);uint64_t maxInvocationsNonUniformAMD(uint64_t);u64vec2  maxInvocationsNonUniformAMD(u64vec2);u64vec3  maxInvocationsNonUniformAMD(u64vec3);u64vec4  maxInvocationsNonUniformAMD(u64vec4);float16_t maxInvocationsNonUniformAMD(float16_t);f16vec2   maxInvocationsNonUniformAMD(f16vec2);f16vec3   maxInvocationsNonUniformAMD(f16vec3);f16vec4   maxInvocationsNonUniformAMD(f16vec4);int16_t maxInvocationsNonUniformAMD(int16_t);i16vec2 maxInvocationsNonUniformAMD(i16vec2);i16vec3 maxInvocationsNonUniformAMD(i16vec3);i16vec4 maxInvocationsNonUniformAMD(i16vec4);uint16_t maxInvocationsNonUniformAMD(uint16_t);u16vec2  maxInvocationsNonUniformAMD(u16vec2);u16vec3  maxInvocationsNonUniformAMD(u16vec3);u16vec4  maxInvocationsNonUniformAMD(u16vec4);float maxInvocationsInclusiveScanNonUniformAMD(float);vec2  maxInvocationsInclusiveScanNonUniformAMD(vec2);vec3  maxInvocationsInclusiveScanNonUniformAMD(vec3);vec4  maxInvocationsInclusiveScanNonUniformAMD(vec4);int   maxInvocationsInclusiveScanNonUniformAMD(int);ivec2 maxInvocationsInclusiveScanNonUniformAMD(ivec2);ivec3 maxInvocationsInclusiveScanNonUniformAMD(ivec3);ivec4 maxInvocationsInclusiveScanNonUniformAMD(ivec4);uint  maxInvocationsInclusiveScanNonUniformAMD(uint);uvec2 maxInvocationsInclusiveScanNonUniformAMD(uvec2);uvec3 maxInvocationsInclusiveScanNonUniformAMD(uvec3);uvec4 maxInvocationsInclusiveScanNonUniformAMD(uvec4);double maxInvocationsInclusiveScanNonUniformAMD(double);dvec2  maxInvocationsInclusiveScanNonUniformAMD(dvec2);dvec3  maxInvocationsInclusiveScanNonUniformAMD(dvec3);dvec4  maxInvocationsInclusiveScanNonUniformAMD(dvec4);int64_t maxInvocationsInclusiveScanNonUniformAMD(int64_t);i64vec2 maxInvocationsInclusiveScanNonUniformAMD(i64vec2);i64vec3 maxInvocationsInclusiveScanNonUniformAMD(i64vec3);i64vec4 maxInvocationsInclusiveScanNonUniformAMD(i64vec4);uint64_t maxInvocationsInclusiveScanNonUniformAMD(uint64_t);u64vec2  maxInvocationsInclusiveScanNonUniformAMD(u64vec2);u64vec3  maxInvocationsInclusiveScanNonUniformAMD(u64vec3);u64vec4  maxInvocationsInclusiveScanNonUniformAMD(u64vec4);float16_t maxInvocationsInclusiveScanNonUniformAMD(float16_t);f16vec2   maxInvocationsInclusiveScanNonUniformAMD(f16vec2);f16vec3   maxInvocationsInclusiveScanNonUniformAMD(f16vec3);f16vec4   maxInvocationsInclusiveScanNonUniformAMD(f16vec4);int16_t maxInvocationsInclusiveScanNonUniformAMD(int16_t);i16vec2 maxInvocationsInclusiveScanNonUniformAMD(i16vec2);i16vec3 maxInvocationsInclusiveScanNonUniformAMD(i16vec3);i16vec4 maxInvocationsInclusiveScanNonUniformAMD(i16vec4);uint16_t maxInvocationsInclusiveScanNonUniformAMD(uint16_t);u16vec2  maxInvocationsInclusiveScanNonUniformAMD(u16vec2);u16vec3  maxInvocationsInclusiveScanNonUniformAMD(u16vec3);u16vec4  maxInvocationsInclusiveScanNonUniformAMD(u16vec4);float maxInvocationsExclusiveScanNonUniformAMD(float);vec2  maxInvocationsExclusiveScanNonUniformAMD(vec2);vec3  maxInvocationsExclusiveScanNonUniformAMD(vec3);vec4  maxInvocationsExclusiveScanNonUniformAMD(vec4);int   maxInvocationsExclusiveScanNonUniformAMD(int);ivec2 maxInvocationsExclusiveScanNonUniformAMD(ivec2);ivec3 maxInvocationsExclusiveScanNonUniformAMD(ivec3);ivec4 maxInvocationsExclusiveScanNonUniformAMD(ivec4);uint  maxInvocationsExclusiveScanNonUniformAMD(uint);uvec2 maxInvocationsExclusiveScanNonUniformAMD(uvec2);uvec3 maxInvocationsExclusiveScanNonUniformAMD(uvec3);uvec4 maxInvocationsExclusiveScanNonUniformAMD(uvec4);double maxInvocationsExclusiveScanNonUniformAMD(double);dvec2  maxInvocationsExclusiveScanNonUniformAMD(dvec2);dvec3  maxInvocationsExclusiveScanNonUniformAMD(dvec3);dvec4  maxInvocationsExclusiveScanNonUniformAMD(dvec4);int64_t maxInvocationsExclusiveScanNonUniformAMD(int64_t);i64vec2 maxInvocationsExclusiveScanNonUniformAMD(i64vec2);i64vec3 maxInvocationsExclusiveScanNonUniformAMD(i64vec3);i64vec4 maxInvocationsExclusiveScanNonUniformAMD(i64vec4);uint64_t maxInvocationsExclusiveScanNonUniformAMD(uint64_t);u64vec2  maxInvocationsExclusiveScanNonUniformAMD(u64vec2);u64vec3  maxInvocationsExclusiveScanNonUniformAMD(u64vec3);u64vec4  maxInvocationsExclusiveScanNonUniformAMD(u64vec4);float16_t maxInvocationsExclusiveScanNonUniformAMD(float16_t);f16vec2   maxInvocationsExclusiveScanNonUniformAMD(f16vec2);f16vec3   maxInvocationsExclusiveScanNonUniformAMD(f16vec3);f16vec4   maxInvocationsExclusiveScanNonUniformAMD(f16vec4);int16_t maxInvocationsExclusiveScanNonUniformAMD(int16_t);i16vec2 maxInvocationsExclusiveScanNonUniformAMD(i16vec2);i16vec3 maxInvocationsExclusiveScanNonUniformAMD(i16vec3);i16vec4 maxInvocationsExclusiveScanNonUniformAMD(i16vec4);uint16_t maxInvocationsExclusiveScanNonUniformAMD(uint16_t);u16vec2  maxInvocationsExclusiveScanNonUniformAMD(u16vec2);u16vec3  maxInvocationsExclusiveScanNonUniformAMD(u16vec3);u16vec4  maxInvocationsExclusiveScanNonUniformAMD(u16vec4);float addInvocationsNonUniformAMD(float);vec2  addInvocationsNonUniformAMD(vec2);vec3  addInvocationsNonUniformAMD(vec3);vec4  addInvocationsNonUniformAMD(vec4);int   addInvocationsNonUniformAMD(int);ivec2 addInvocationsNonUniformAMD(ivec2);ivec3 addInvocationsNonUniformAMD(ivec3);ivec4 addInvocationsNonUniformAMD(ivec4);uint  addInvocationsNonUniformAMD(uint);uvec2 addInvocationsNonUniformAMD(uvec2);uvec3 addInvocationsNonUniformAMD(uvec3);uvec4 addInvocationsNonUniformAMD(uvec4);double addInvocationsNonUniformAMD(double);dvec2  addInvocationsNonUniformAMD(dvec2);dvec3  addInvocationsNonUniformAMD(dvec3);dvec4  addInvocationsNonUniformAMD(dvec4);int64_t addInvocationsNonUniformAMD(int64_t);i64vec2 addInvocationsNonUniformAMD(i64vec2);i64vec3 addInvocationsNonUniformAMD(i64vec3);i64vec4 addInvocationsNonUniformAMD(i64vec4);uint64_t addInvocationsNonUniformAMD(uint64_t);u64vec2  addInvocationsNonUniformAMD(u64vec2);u64vec3  addInvocationsNonUniformAMD(u64vec3);u64vec4  addInvocationsNonUniformAMD(u64vec4);float16_t addInvocationsNonUniformAMD(float16_t);f16vec2   addInvocationsNonUniformAMD(f16vec2);f16vec3   addInvocationsNonUniformAMD(f16vec3);f16vec4   addInvocationsNonUniformAMD(f16vec4);int16_t addInvocationsNonUniformAMD(int16_t);i16vec2 addInvocationsNonUniformAMD(i16vec2);i16vec3 addInvocationsNonUniformAMD(i16vec3);i16vec4 addInvocationsNonUniformAMD(i16vec4);uint16_t addInvocationsNonUniformAMD(uint16_t);u16vec2  addInvocationsNonUniformAMD(u16vec2);u16vec3  addInvocationsNonUniformAMD(u16vec3);u16vec4  addInvocationsNonUniformAMD(u16vec4);float addInvocationsInclusiveScanNonUniformAMD(float);vec2  addInvocationsInclusiveScanNonUniformAMD(vec2);vec3  addInvocationsInclusiveScanNonUniformAMD(vec3);vec4  addInvocationsInclusiveScanNonUniformAMD(vec4);int   addInvocationsInclusiveScanNonUniformAMD(int);ivec2 addInvocationsInclusiveScanNonUniformAMD(ivec2);ivec3 addInvocationsInclusiveScanNonUniformAMD(ivec3);ivec4 addInvocationsInclusiveScanNonUniformAMD(ivec4);uint  addInvocationsInclusiveScanNonUniformAMD(uint);uvec2 addInvocationsInclusiveScanNonUniformAMD(uvec2);uvec3 addInvocationsInclusiveScanNonUniformAMD(uvec3);uvec4 addInvocationsInclusiveScanNonUniformAMD(uvec4);double addInvocationsInclusiveScanNonUniformAMD(double);dvec2  addInvocationsInclusiveScanNonUniformAMD(dvec2);dvec3  addInvocationsInclusiveScanNonUniformAMD(dvec3);dvec4  addInvocationsInclusiveScanNonUniformAMD(dvec4);int64_t addInvocationsInclusiveScanNonUniformAMD(int64_t);i64vec2 addInvocationsInclusiveScanNonUniformAMD(i64vec2);i64vec3 addInvocationsInclusiveScanNonUniformAMD(i64vec3);i64vec4 addInvocationsInclusiveScanNonUniformAMD(i64vec4);uint64_t addInvocationsInclusiveScanNonUniformAMD(uint64_t);u64vec2  addInvocationsInclusiveScanNonUniformAMD(u64vec2);u64vec3  addInvocationsInclusiveScanNonUniformAMD(u64vec3);u64vec4  addInvocationsInclusiveScanNonUniformAMD(u64vec4);float16_t addInvocationsInclusiveScanNonUniformAMD(float16_t);f16vec2   addInvocationsInclusiveScanNonUniformAMD(f16vec2);f16vec3   addInvocationsInclusiveScanNonUniformAMD(f16vec3);f16vec4   addInvocationsInclusiveScanNonUniformAMD(f16vec4);int16_t addInvocationsInclusiveScanNonUniformAMD(int16_t);i16vec2 addInvocationsInclusiveScanNonUniformAMD(i16vec2);i16vec3 addInvocationsInclusiveScanNonUniformAMD(i16vec3);i16vec4 addInvocationsInclusiveScanNonUniformAMD(i16vec4);uint16_t addInvocationsInclusiveScanNonUniformAMD(uint16_t);u16vec2  addInvocationsInclusiveScanNonUniformAMD(u16vec2);u16vec3  addInvocationsInclusiveScanNonUniformAMD(u16vec3);u16vec4  addInvocationsInclusiveScanNonUniformAMD(u16vec4);float addInvocationsExclusiveScanNonUniformAMD(float);vec2  addInvocationsExclusiveScanNonUniformAMD(vec2);vec3  addInvocationsExclusiveScanNonUniformAMD(vec3);vec4  addInvocationsExclusiveScanNonUniformAMD(vec4);int   addInvocationsExclusiveScanNonUniformAMD(int);ivec2 addInvocationsExclusiveScanNonUniformAMD(ivec2);ivec3 addInvocationsExclusiveScanNonUniformAMD(ivec3);ivec4 addInvocationsExclusiveScanNonUniformAMD(ivec4);uint  addInvocationsExclusiveScanNonUniformAMD(uint);uvec2 addInvocationsExclusiveScanNonUniformAMD(uvec2);uvec3 addInvocationsExclusiveScanNonUniformAMD(uvec3);uvec4 addInvocationsExclusiveScanNonUniformAMD(uvec4);double addInvocationsExclusiveScanNonUniformAMD(double);dvec2  addInvocationsExclusiveScanNonUniformAMD(dvec2);dvec3  addInvocationsExclusiveScanNonUniformAMD(dvec3);dvec4  addInvocationsExclusiveScanNonUniformAMD(dvec4);int64_t addInvocationsExclusiveScanNonUniformAMD(int64_t);i64vec2 addInvocationsExclusiveScanNonUniformAMD(i64vec2);i64vec3 addInvocationsExclusiveScanNonUniformAMD(i64vec3);i64vec4 addInvocationsExclusiveScanNonUniformAMD(i64vec4);uint64_t addInvocationsExclusiveScanNonUniformAMD(uint64_t);u64vec2  addInvocationsExclusiveScanNonUniformAMD(u64vec2);u64vec3  addInvocationsExclusiveScanNonUniformAMD(u64vec3);u64vec4  addInvocationsExclusiveScanNonUniformAMD(u64vec4);float16_t addInvocationsExclusiveScanNonUniformAMD(float16_t);f16vec2   addInvocationsExclusiveScanNonUniformAMD(f16vec2);f16vec3   addInvocationsExclusiveScanNonUniformAMD(f16vec3);f16vec4   addInvocationsExclusiveScanNonUniformAMD(f16vec4);int16_t addInvocationsExclusiveScanNonUniformAMD(int16_t);i16vec2 addInvocationsExclusiveScanNonUniformAMD(i16vec2);i16vec3 addInvocationsExclusiveScanNonUniformAMD(i16vec3);i16vec4 addInvocationsExclusiveScanNonUniformAMD(i16vec4);uint16_t addInvocationsExclusiveScanNonUniformAMD(uint16_t);u16vec2  addInvocationsExclusiveScanNonUniformAMD(u16vec2);u16vec3  addInvocationsExclusiveScanNonUniformAMD(u16vec3);u16vec4  addInvocationsExclusiveScanNonUniformAMD(u16vec4);float swizzleInvocationsAMD(float, uvec4);vec2  swizzleInvocationsAMD(vec2,  uvec4);vec3  swizzleInvocationsAMD(vec3,  uvec4);vec4  swizzleInvocationsAMD(vec4,  uvec4);int   swizzleInvocationsAMD(int,   uvec4);ivec2 swizzleInvocationsAMD(ivec2, uvec4);ivec3 swizzleInvocationsAMD(ivec3, uvec4);ivec4 swizzleInvocationsAMD(ivec4, uvec4);uint  swizzleInvocationsAMD(uint,  uvec4);uvec2 swizzleInvocationsAMD(uvec2, uvec4);uvec3 swizzleInvocationsAMD(uvec3, uvec4);uvec4 swizzleInvocationsAMD(uvec4, uvec4);float swizzleInvocationsMaskedAMD(float, uvec3);vec2  swizzleInvocationsMaskedAMD(vec2,  uvec3);vec3  swizzleInvocationsMaskedAMD(vec3,  uvec3);vec4  swizzleInvocationsMaskedAMD(vec4,  uvec3);int   swizzleInvocationsMaskedAMD(int,   uvec3);ivec2 swizzleInvocationsMaskedAMD(ivec2, uvec3);ivec3 swizzleInvocationsMaskedAMD(ivec3, uvec3);ivec4 swizzleInvocationsMaskedAMD(ivec4, uvec3);uint  swizzleInvocationsMaskedAMD(uint,  uvec3);uvec2 swizzleInvocationsMaskedAMD(uvec2, uvec3);uvec3 swizzleInvocationsMaskedAMD(uvec3, uvec3);uvec4 swizzleInvocationsMaskedAMD(uvec4, uvec3);float writeInvocationAMD(float, float, uint);vec2  writeInvocationAMD(vec2,  vec2,  uint);vec3  writeInvocationAMD(vec3,  vec3,  uint);vec4  writeInvocationAMD(vec4,  vec4,  uint);int   writeInvocationAMD(int,   int,   uint);ivec2 writeInvocationAMD(ivec2, ivec2, uint);ivec3 writeInvocationAMD(ivec3, ivec3, uint);ivec4 writeInvocationAMD(ivec4, ivec4, uint);uint  writeInvocationAMD(uint,  uint,  uint);uvec2 writeInvocationAMD(uvec2, uvec2, uint);uvec3 writeInvocationAMD(uvec3, uvec3, uint);uvec4 writeInvocationAMD(uvec4, uvec4, uint);uint mbcntAMD(uint64_t);
 float near;float far;float diff;
 float noise1(float x);float noise1(vec2  x);float noise1(vec3  x);float noise1(vec4  x);vec2 noise2(float x);vec2 noise2(vec2  x);vec2 noise2(vec3  x);vec2 noise2(vec4  x);vec3 noise3(float x);vec3 noise3(vec2  x);vec3 noise3(vec3  x);vec3 noise3(vec4  x);vec4 noise4(float x);vec4 noise4(vec2  x);vec4 noise4(vec3  x);vec4 noise4(vec4  x);
+FLOATSUFFIX
 floor
 Floor
 fltx4
@@ -4347,7 +4364,6 @@ FragStencilRef
 FragStencilRefEXT
 frame
 	Framebuffer Count ( %d ): 
-__frame_state_for
 FrameSync() - bailing out of vkWaitForFences( fenceCount = %d ) after %f seconds, error = %s
 fread
 `fread' error. file may be corrupted.
@@ -4427,6 +4443,7 @@ function parameter requires array size
 Function Parameters: 
 Function parameters must only appear immediately after the function definition
 function_prototype
+Function %s() expects %d arguments. Found %d.
 : Function storage class forbidden when the Shader capability is declared.
 function typedefs not implemented
 FUnordEqual
@@ -5107,9 +5124,11 @@ helperInvocationEXT
 HelpSystem_001
 hexadecimal literal too big
 hexadecimal literal too long
+HEX_DIGIT
+HEXINTEGERLITERAL
 =hf@9
+hf@9!
 hf@9a*
-hf@9A
 hf@9h
 hf@9H
 hf@9i
@@ -5151,8 +5170,8 @@ H%@)J	@
 hj8."@
 hJ@9h
 hjh8{
-hjj8)1C
-hJL9)
+hjj8)5C
+hJL9	
 h'@)jS@
 *hjt8
 hjt8U
@@ -5209,14 +5228,13 @@ I64VEC4
 i6xh&@
 i6@yh
 (i;8{
-i;8f+
 +i*8h
 ^i~8H
 i(8hilxi*
 i)8i&
 i*8?i,x
 ?i(8?i*x?i+
-i`8j%
+i`8J%
 I8VEC2
 I8VEC3
 I8VEC4
@@ -5284,6 +5302,7 @@ I CUtlLinkedList<VulkanQueryPool_t *, unsigned short, false, unsigned short, CUt
 I CUtlLinkedList<VulkanQuery_t *, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<VulkanQuery_t *, unsigned short>, unsigned short> >::AllocInternal(bool) [T = VulkanQuery_t *, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<VulkanQuery_t *, unsigned short>, unsigned short>]
 I CUtlLinkedList<VulkanSemaphore_t *, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<VulkanSemaphore_t *, unsigned short>, unsigned short> >::AllocInternal(bool) [T = VulkanSemaphore_t *, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<VulkanSemaphore_t *, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<CRenderPassDesc, CRenderPassVulkan *, unsigned short, bool (*)(const CRenderPassDesc &, const CRenderPassDesc &)>::Node_t, unsigned short, CUtlMap<CRenderPassDesc, CRenderPassVulkan *, unsigned short, bool (*)(const CRenderPassDesc &, const CRenderPassDesc &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CRenderPassDesc, CRenderPassVulkan *, unsigned short, bool (*)(const CRenderPassDesc &, const CRenderPassDesc &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<CRenderPassDesc, CRenderPassVulkan *, unsigned short, bool (*)(const CRenderPassDesc &, const CRenderPassDesc &)>::Node_t, I = unsigned short, L = CUtlMap<CRenderPassDesc, CRenderPassVulkan *, unsigned short, bool (*)(const CRenderPassDesc &, const CRenderPassDesc &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CRenderPassDesc, CRenderPassVulkan *, unsigned short, bool (*)(const CRenderPassDesc &, const CRenderPassDesc &)>::Node_t, unsigned short>, unsigned short>]
+I CUtlRBTree<CUtlMap<CUtlString, bool, unsigned short, bool (*)(const CUtlString &, const CUtlString &)>::Node_t, unsigned short, CUtlMap<CUtlString, bool, unsigned short, bool (*)(const CUtlString &, const CUtlString &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, bool, unsigned short, bool (*)(const CUtlString &, const CUtlString &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<CUtlString, bool, unsigned short, bool (*)(const CUtlString &, const CUtlString &)>::Node_t, I = unsigned short, L = CUtlMap<CUtlString, bool, unsigned short, bool (*)(const CUtlString &, const CUtlString &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, bool, unsigned short, bool (*)(const CUtlString &, const CUtlString &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<CVfxHashValue, int, int, bool (*)(const CVfxHashValue &, const CVfxHashValue &)>::Node_t, int, CUtlMap<CVfxHashValue, int, int, bool (*)(const CVfxHashValue &, const CVfxHashValue &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CVfxHashValue, int, int, bool (*)(const CVfxHashValue &, const CVfxHashValue &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<CVfxHashValue, int, int, bool (*)(const CVfxHashValue &, const CVfxHashValue &)>::Node_t, I = int, L = CUtlMap<CVfxHashValue, int, int, bool (*)(const CVfxHashValue &, const CVfxHashValue &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CVfxHashValue, int, int, bool (*)(const CVfxHashValue &, const CVfxHashValue &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<CWeakHandle<InfoForResourceTypeCTextureBase>, CUtlHashtable<CDescriptorSetVulkan *, empty_t, DefaultHashFunctor<CDescriptorSetVulkan *>, DefaultEqualFunctor<CDescriptorSetVulkan *>, undefined_t, CUtlMemory<CUtlHashtableEntry<CDescriptorSetVulkan *, empty_t>, int> > *, unsigned short, bool (*)(const CWeakHandle<InfoForResourceTypeCTextureBase> &, const CWeakHandle<InfoForResourceTypeCTextureBase> &)>::Node_t, unsigned short, CUtlMap<CWeakHandle<InfoForResourceTypeCTextureBase>, CUtlHashtable<CDescriptorSetVulkan *, empty_t, DefaultHashFunctor<CDescriptorSetVulkan *>, DefaultEqualFunctor<CDescriptorSetVulkan *>, undefined_t, CUtlMemory<CUtlHashtableEntry<CDescriptorSetVulkan *, empty_t>, int> > *, unsigned short, bool (*)(const CWeakHandle<InfoForResourceTypeCTextureBase> &, const CWeakHandle<InfoForResourceTypeCTextureBase> &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CWeakHandle<InfoForResourceTypeCTextureBase>, CUtlHashtable<CDescriptorSetVulkan *, empty_t, DefaultHashFunctor<CDescriptorSetVulkan *>, DefaultEqualFunctor<CDescriptorSetVulkan *>, undefined_t, CUtlMemory<CUtlHashtableEntry<CDescriptorSetVulkan *, empty_t>, int> > *, unsigned short, bool (*)(const CWeakHandle<InfoForResourceTypeCTextureBase> &, const CWeakHandle<InfoForResourceTypeCTextureBase> &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<CWeakHandle<InfoForResourceTypeCTextureBase>, CUtlHashtable<CDescriptorSetVulkan *, empty_t, DefaultHashFunctor<CDescriptorSetVulkan *>, DefaultEqualFunctor<CDescriptorSetVulkan *>, undefined_t, CUtlMemory<CUtlHashtableEntry<CDescriptorSetVulkan *, empty_t>, int> > *, unsigned short, bool (*)(const CWeakHandle<InfoForResourceTypeCTextureBase> &, const CWeakHandle<InfoForResourceTypeCTextureBase> &)>::Node_t, I = unsigned short, L = CUtlMap<CWeakHandle<InfoForResourceTypeCTextureBase>, CUtlHashtable<CDescriptorSetVulkan *, empty_t, DefaultHashFunctor<CDescriptorSetVulkan *>, DefaultEqualFunctor<CDescriptorSetVulkan *>, undefined_t, CUtlMemory<CUtlHashtableEntry<CDescriptorSetVulkan *, empty_t>, int> > *, unsigned short, bool (*)(const CWeakHandle<InfoForResourceTypeCTextureBase> &, const CWeakHandle<InfoForResourceTypeCTextureBase> &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CWeakHandle<InfoForResourceTypeCTextureBase>, CUtlHashtable<CDescriptorSetVulkan *, empty_t, DefaultHashFunctor<CDescriptorSetVulkan *>, DefaultEqualFunctor<CDescriptorSetVulkan *>, undefined_t, CUtlMemory<CUtlHashtableEntry<CDescriptorSetVulkan *, empty_t>, int> > *, unsigned short, bool (*)(const CWeakHandle<InfoForResourceTypeCTextureBase> &, const CWeakHandle<InfoForResourceTypeCTextureBase> &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<CWeakHandle<InfoForResourceTypeCTextureBase>, VulkanDeviceSpecificTexture_t, unsigned short, bool (*)(const CWeakHandle<InfoForResourceTypeCTextureBase> &, const CWeakHandle<InfoForResourceTypeCTextureBase> &)>::Node_t, unsigned short, CUtlMap<CWeakHandle<InfoForResourceTypeCTextureBase>, VulkanDeviceSpecificTexture_t, unsigned short, bool (*)(const CWeakHandle<InfoForResourceTypeCTextureBase> &, const CWeakHandle<InfoForResourceTypeCTextureBase> &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CWeakHandle<InfoForResourceTypeCTextureBase>, VulkanDeviceSpecificTexture_t, unsigned short, bool (*)(const CWeakHandle<InfoForResourceTypeCTextureBase> &, const CWeakHandle<InfoForResourceTypeCTextureBase> &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<CWeakHandle<InfoForResourceTypeCTextureBase>, VulkanDeviceSpecificTexture_t, unsigned short, bool (*)(const CWeakHandle<InfoForResourceTypeCTextureBase> &, const CWeakHandle<InfoForResourceTypeCTextureBase> &)>::Node_t, I = unsigned short, L = CUtlMap<CWeakHandle<InfoForResourceTypeCTextureBase>, VulkanDeviceSpecificTexture_t, unsigned short, bool (*)(const CWeakHandle<InfoForResourceTypeCTextureBase> &, const CWeakHandle<InfoForResourceTypeCTextureBase> &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CWeakHandle<InfoForResourceTypeCTextureBase>, VulkanDeviceSpecificTexture_t, unsigned short, bool (*)(const CWeakHandle<InfoForResourceTypeCTextureBase> &, const CWeakHandle<InfoForResourceTypeCTextureBase> &)>::Node_t, unsigned short>, unsigned short>]
@@ -5355,6 +5374,8 @@ ignoring unrecognized register type
 ii8	a
 ii8Fhi8
 ii8#hi8
+	ii8i
+ii8jn
 Iii8?)
 Iii8*
 %i %i %i %i
@@ -5394,12 +5415,13 @@ Ii+x!
 	iix?!;k
 	iix?!:k
 i"@)j
+<)ij8*&
 )ij8?
 )ij8	
 *ij(8
 ij8(	
+ij(8h
 *ij8j
-<)ij8J&
 -ij8J
 ij8kI
 )ijx?
@@ -5840,6 +5862,7 @@ invalid bit length repeat
 Invalid bKGD after IDAT
 invalid block type
 Invalid channels format
+Invalid character '%c' in swizzle operation. Only xyzw or rgba are allowed.
 Invalid cHRM after IDAT
 Invalid cHRM blue point
 Invalid cHRM green point
@@ -6198,7 +6221,7 @@ IVEC3
 IVEC4
 	*iW@
 *'i$x
-	i,xh(
+	i,xH(
 *i,xi>@yj:
 *i.xi>@yj:
 i#xjj-
@@ -6218,32 +6241,30 @@ j1By_! k
 ',)j2G
 ',)j3@
 j48lE
-j58-=
+j58(%
+j58-A
 j58@c
-j58G;
-j58H%
+j58G?
 j58hf@9(
 j68HC@9h
 j68i"S
 @j!8!
 j*8*%
-j(82}
 j(8a6@
+j(8`B
 j(8h*@
-j(8H#
+j(8H-
 j)8HA
 j/8hj)
-j(8HK
+j(8HU
 j`8!i 8
 j-8nj)
  J9?@
 J9e:A
 J)@9j
 j"@9)Y@
-ja8? 
 ja8 i!8!
 J,A)(yh
-jb8_ 
 jB_8?
 jbA9)
 JC@9L
@@ -6272,7 +6293,8 @@ jo8Jio8
 JPEG datastream contains no image
 JPEGMEM
 JPEG parameter struct mismatch: library thinks size is %u, caller expects %u
-	*Jq$
+	*JQ>
+	*Jq5
 jr82"
 jr822
 jr8air8R
@@ -6281,8 +6303,11 @@ JSON error, unterminated element:
 /JU7OB
 jump_statement
 Ju@y_
-j*x2[
+j(x()
 j(x	k(x)k(x
+j*xPQ
+j*x;Q
+j(xxK
 J%@y_
 Jy?! kC
 J!@y-!@ylyj
@@ -6353,7 +6378,6 @@ KMdEy
 KMeansQuantization
 Km@x+
 kn1V?OK
-(knN$
 KOio8
 KPip8
 K?@@qk
@@ -6449,7 +6473,6 @@ limitations
 __LINE__
 #line 1
 lineadj
-Linear
 LINEAR_ABGR8888
 LINEAR_ARGB8888
 LINEAR_BGR888
@@ -6582,7 +6605,6 @@ LunarG
  l-value of swizzle cannot have duplicate components
  l-value required
 LZMA compression of static combo data failed
-@`M9`
 macro expansion
 Macro redefined; different argument names:
 Macro redefined; different number of arguments:
@@ -6932,6 +6954,7 @@ min_processor_count
 Minus
 miplodbias
 Miscellaneous marker 0x%02x, length %u
+Mismatched set
 mismatched statements
 : missing 
 ':' missing after extension name
@@ -7083,6 +7106,7 @@ modeldoc24
 modeldoc25
 modeldoc26
 modeldoc27
+modeldoc28
 modeldoc3
 modeldoc4
 modeldoc5
@@ -7367,6 +7391,7 @@ no operation '%s' exists that takes an operand of type %s (or there is no accept
  noperspective
 NoPerspective
 NOPERSPECTIVE
+NoPoseControl
 no qualifiers allowed for function return
 NoReadWrite
 -no_render_thread_affinity
@@ -7482,6 +7507,7 @@ Obtained EMS handle %u
 Obtained XMS handle %u
 o$ c.! cn
 octal and hex sequences not supported
+OCTAL_ESC
 octal literal digit too large
 octal literal too big
 # of channels is zero.
@@ -7963,6 +7989,8 @@ PointStream
 Pool: %s (Free: %0.2f MB)
 Pool Type ( %s ): 
 popcount
+pose_control
+pose_control_type
 position
 @position
 positiont
@@ -8057,7 +8085,6 @@ psize
 	PSO Count ( %d ) 
 PS_RENDER_STATE
 _psrs
-pthread_create
 pthread_getspecific
 pthread_key_create
 pthread_mutexattr_init
@@ -8066,7 +8093,6 @@ pthread_mutex_destroy
 pthread_mutex_init
 pthread_mutex_lock
 pthread_mutex_unlock
-pthread_once
 pthread_setspecific
 _ptr_
 ptr( 0x%p )
@@ -8093,6 +8119,7 @@ _!@q
 Q0&	S
 Q1iq8Rir8`i`8
 _	Q?9
+	Q\9I
 qaI	T
 Q(aNf(!
 QAngle
@@ -8160,6 +8187,7 @@ radius0
 radius1
 r)AIJ)
 raise
+random
 Ran out of occlusion query slots.
 r(aN#V
 Rasterizer state is VK_POLYGON_MODE_LINE but VkPhysicalDeviceFeatures.fillModeNonSolid is not supported.  Forcing to VK_POLYGON_MODE_FILL.  May result in incorrect rendering.
@@ -8218,12 +8246,6 @@ Reflect
 refract
 Refract
 RegisterConfigValue: Unknown error constructing config value "%s"!
-__register_frame
-__register_frame_info
-__register_frame_info_bases
-__register_frame_info_table
-__register_frame_info_table_bases
-__register_frame_table
 RegisterHibernationListener
 register number description
 RegisterStringToken
@@ -8257,7 +8279,7 @@ rendercontextbase.cpp
 RenderDevice003
 renderdevicebase.cpp(1487): 
 renderdevicebase.cpp(1648): 
-renderdevicebase.cpp(3112): 
+renderdevicebase.cpp(3116): 
 renderdevicebase.cpp(644): 
 renderdevicebase.cpp(918): 
 renderdevicebase.cpp(935): 
@@ -8422,6 +8444,7 @@ Result type (Op
 Result Type's second member
 Result Type vector size: 
 RetainEvent
+'return'
 RETURN
 	return g_tMSAASrctexture.Load( vSamplePos, 0 );					
 	return g_tMSAASrctexture.Load( vSamplePos, 0 ).x;				
@@ -8512,12 +8535,13 @@ R	hi8
 rhj)8
 rhj)8@
 Rhj)8
+rhj)86M
 Rhj)8t
 rhjh8
 Rhjh8
 rhjh8h
 Rhjh8h
-Rhjh8v
+Rhjh8vBI
 rhjhx
 Rhjhx
 rhj)x
@@ -8565,7 +8589,7 @@ rJik8J
 RJik8J
 Rjjhx
 rjjixk
-R?k88
+R?k88`
 RKik8
 RKikxk	
 rkjjxk
@@ -8617,7 +8641,6 @@ RTit8
 Rtj(8
 Rtj(8(
 R	t@y?
-Ruj(8
 rules: A Block or BufferBlock cannot be nested within another Block or BufferBlock. 
 _runtimearr_
 RuntimeDescriptorArray
@@ -8877,6 +8900,7 @@ ShaderRecordBufferNV
 shaderrecordnv
 shaders.cache
 Shader %s doesn't support compile target %s
+Shader '%s' has more than the maximum number of samplers per stage (has: %d MAX: %d)
 Shader '%s' has more than the maximum number of textures per stage (has: %d MAX: %d)
 Shader '%s' has more than the maximum number of uniform blocks per stage (has: %d MAX: %d)
 ShaderSMBuiltinsNV
@@ -8886,6 +8910,7 @@ SHADER_SOURCE_ROOT
 ShaderStereoViewNV
 shaders/vfx
 shader thread state machine violation
+Shader variable %s is illegal to use in expression. Only artist-editable variables are usable.
 Shader version: 
 ShaderViewportIndex
 ShaderViewportIndexLayerEXT
@@ -8961,6 +8986,7 @@ singleplayer
 single_type_qualifier
 %s: Input vector has incorrect length
 %s is not a valid flag.  Flag passes should have the form '--pass_name[=pass_args]'. Special flag names also accepted: -O and -Os.
+%s() isn't a known function.
 Size (in KBs) above which textures should be allocated in dedicated memory (NV-only).
 sizeof
 SizeOf
@@ -8978,6 +9004,7 @@ SLASH
 SLessThan
 SLessThanEqual
 Slider
+%s[line %d:%d] 
 s_mad24
 s_mad_hi
 s_mad_sat
@@ -9228,6 +9255,8 @@ S_%)q
 src/public/tier0/platform.h
 sRGBA
 srgbgammatolinear
+SrgbGammaToLinear
+SrgbLinearToGamma
 sRGBx
 s_rhadd
 "%s" = "%s"
@@ -9334,6 +9363,7 @@ StaticCombo
 StaticComboRule
    StaticComboRule( 
 Static combos:
+Static combo %s referenced in expression doesn't exist.
 StaticPoolMemory_%s
 StaticPool_%s
 	Static Type ( %s ): Count ( %d ) ( %llu MB ) ( Free: %llu MB, Largest Free Block %llu MB )
@@ -9773,6 +9803,7 @@ swizzleInvocationsMasked
 swizzleInvocationsMaskedAMD
 SwizzleInvocationsMaskedAMD
 swizzleInvocationsWithPatternAMD
+Swizzle operation only supports up to four channels.
 swizzle or member
 sx8xz
 sY8	5
@@ -9836,7 +9867,6 @@ T#@@9$D@9 H@9cx
 T	!@9i
 T`.@9s.
 T	`A9
-Ta[axc
 TafEyab
 tangents
 tangentt
@@ -10063,6 +10093,7 @@ Textures created overall: %s; textures evicted: %s
 TextureSheetData
 textureSize
  textureSize(
+TextureSize
 TextureSpecificationFlags_t
 TextureStaging
 texture state
@@ -10110,7 +10141,7 @@ The Base <id> '
 The Component Type of Vector 1 must be the same as ResultType.
 The Component Type of Vector 2 must be the same as ResultType.
 The 'False Label' operand for OpBranchConditional must be the ID of an OpLabel instruction
-The filename may only contain lower case alphanumeric characters and underscores.
+The filename may only contain lower case alphanumeric characters, dashes, and underscores.
 The following extension must be enabled to use this feature:
 The following forward referenced IDs have not been defined:
 The high-order bits of a literal number in instruction <id> 
@@ -10607,6 +10638,7 @@ Unhandled inst type (opcode: %d) found outside function definition.
 unhandled texture constructor
 Unhandled VkObjectType
 Unhandled VkValidationFeatureDisableEXT
+UNICODE_ESC
 Uniform and shader storage block variables must 
 UniformAndStorageBuffer16BitAccess
 UniformAndStorageBuffer8BitAccess
@@ -10707,6 +10739,7 @@ unknown swizzle selection
 unknown type
 UNKNOWN_TYPE
 unknown variable
+Unknown variable name %s.
 Unknown VkResult value
 Unknown zlib error
 Unordered
@@ -10779,24 +10812,7 @@ Unsupported PSD color mode!
 Unsupported text encoding id.
 Unsupported version or scanline
 unterminated mips operator:
-_Unwind_Backtrace
-_Unwind_DeleteException
-_Unwind_FindEnclosingFunction
-_Unwind_Find_FDE
-_Unwind_ForcedUnwind
-_Unwind_GetCFA
-_Unwind_GetDataRelBase
-_Unwind_GetGR
-_Unwind_GetIP
-_Unwind_GetIPInfo
-_Unwind_GetLanguageSpecificData
-_Unwind_GetRegionStart
-_Unwind_GetTextRelBase
-_Unwind_RaiseException
 _Unwind_Resume
-_Unwind_Resume_or_Rethrow
-_Unwind_SetGR
-_Unwind_SetIP
 /]U?O
 UpdateExternalTexture called on unknown external texture '%s'
 UPDATE_STRING_TOKEN_DATABASE
@@ -11091,31 +11107,31 @@ VFileSystem017
 V_FixSlashes
 V_fpclassify
 vfx_common.cpp
-*** vfx_common.cpp(1019): Error opening file "%s"!
-*** vfx_common.cpp(1029): Error masking unused parts for "%s"!
-*** vfx_common.cpp(1098): Error opening file "%s"!
-*** vfx_common.cpp(1108): Error masking unused parts for "%s"!
-*** vfx_common.cpp(1297): Error opening file "%s"!
-*** vfx_common.cpp(1374): Error opening file "%s"!
-*** vfx_common.cpp(191): Don't call VfxInit() more than once!
-*** vfx_common.cpp(201): g_pFullFileSystem must be set up before calling VfxInit!
-vfx_common.cpp(3569): Error! Ref count !=0 for static combo data cache entry!
-vfx_common.cpp(3656): Error! Ref count !=0 for static combo data cache entry!
-*** vfx_common.cpp(5096): Error opening file "%s"!
-*** vfx_common.cpp(5245): Error opening include file in features list"%s"!
-*** vfx_common.cpp(5284): Error opening file "%s"!
-*** vfx_common.cpp(5513): Error opening file "%s"!
-*** vfx_common.cpp(5547): Error opening file "%s"!
-*** vfx_common.cpp(5586): Error opening file "%s"!
-*** vfx_common.cpp(5690): Error opening file "%s"!
-*** vfx_common.cpp(6145): Programmer Error! The order of VfxVariableSourceType_t does not match s_shaderVariableSource!
-vfx_common.cpp(6816): Error opening file %s
-vfx_common.cpp(6890): VCS %s Unserialize failed
-vfx_common.cpp(6904): VCS %s Unserialize hit EOF
-vfx_common.cpp(7042): Error opening file %s
-vfx_common.cpp(7049): Error calling SkipAndValidateVCSHeader() for %s
-*** vfx_common.cpp(7280): Programmer Error! NULL pointer passed into function!
-*** vfx_common.cpp(7306): Programmer Error! Non feature rule found in feature rule array!
+*** vfx_common.cpp(1021): Error opening file "%s"!
+*** vfx_common.cpp(1031): Error masking unused parts for "%s"!
+*** vfx_common.cpp(1100): Error opening file "%s"!
+*** vfx_common.cpp(1110): Error masking unused parts for "%s"!
+*** vfx_common.cpp(1299): Error opening file "%s"!
+*** vfx_common.cpp(1376): Error opening file "%s"!
+*** vfx_common.cpp(193): Don't call VfxInit() more than once!
+*** vfx_common.cpp(203): g_pFullFileSystem must be set up before calling VfxInit!
+vfx_common.cpp(3591): Error! Ref count !=0 for static combo data cache entry!
+vfx_common.cpp(3678): Error! Ref count !=0 for static combo data cache entry!
+*** vfx_common.cpp(5118): Error opening file "%s"!
+*** vfx_common.cpp(5267): Error opening include file in features list"%s"!
+*** vfx_common.cpp(5306): Error opening file "%s"!
+*** vfx_common.cpp(5535): Error opening file "%s"!
+*** vfx_common.cpp(5569): Error opening file "%s"!
+*** vfx_common.cpp(5608): Error opening file "%s"!
+*** vfx_common.cpp(5712): Error opening file "%s"!
+*** vfx_common.cpp(6167): Programmer Error! The order of VfxVariableSourceType_t does not match s_shaderVariableSource!
+vfx_common.cpp(6838): Error opening file %s
+vfx_common.cpp(6912): VCS %s Unserialize failed
+vfx_common.cpp(6926): VCS %s Unserialize hit EOF
+vfx_common.cpp(7064): Error opening file %s
+vfx_common.cpp(7071): Error calling SkipAndValidateVCSHeader() for %s
+*** vfx_common.cpp(7302): Programmer Error! NULL pointer passed into function!
+*** vfx_common.cpp(7328): Programmer Error! Non feature rule found in feature rule array!
 vfx_compile_target_expr.cpp(106): : Failed to create lexer from "%s"
 vfx_compile_target_expr.cpp(114): : Failed to create token stream from "%s"
 vfx_compile_target_expr.cpp(122): : Failed to create parser from "%s"
@@ -11124,6 +11140,10 @@ vfx_dx11
 vfx_dx9
 Vfx Error: attribute type does not exist or does not support attribute literals.
 Vfx Error: attribute unsupported or requires a parameter binding.
+vfx_expression_parser.cpp(366): : Failed to create input stream from "%s"
+vfx_expression_parser.cpp(374): : Failed to create lexer from "%s"
+vfx_expression_parser.cpp(382): : Failed to create token stream from "%s"
+vfx_expression_parser.cpp(390): : Failed to create parser from "%s"
 Vfx file "%s" has both compute shader and other shaders. Compute shaders must be the only shader type in a vfx file.
 vfx_gl
 VFX_PROGRAM_MAX
@@ -12128,7 +12148,7 @@ v@yxW
 v@yY@
 W3C WebGPU Group
 W3C WebGPU Group WHLSL Shader Translator
-(#W9s>E
+(#W9sBE
 Waited for left eye command buffers to finish for 250ms, trying again.  Likely a GPU hang.
 WAITING_FOR_HOOKUP_JOB 
 WAITING_FOR_IO 
@@ -12304,7 +12324,6 @@ _{-x_{.xl
 _x!yh
 XYZ values out of representable range
 !@y	!
-"@y-"
 "@y*%
 )%@y?
 @y3yh
@@ -12359,7 +12378,6 @@ yhr@y
 yhR@y
 yhvCyvz
 )yhx?
-@yh:!y	
 yh:@y
 )%@yi*
 )	@yi*
@@ -12422,7 +12440,6 @@ Y n)Y nJY nkY n
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 @yRhnxQ~
 @y)S<
-Ys.964
 y)U@y?
 @yUym
 	y)wB
@@ -12488,6 +12505,7 @@ _ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEj
 _ZN22CThreadRWLock_FastRead30HandleFirstWriteLockTransitionEv
 _ZN22CThreadRWLock_FastReadC1Ev
 _Znam
+_ZnamRKSt9nothrow_t
 _ZNKSt11logic_error4whatEv
 _ZNKSt6__ndk16locale9use_facetERNS0_2idE
 _ZNKSt6__ndk18ios_base6getlocEv

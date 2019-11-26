@@ -6,6 +6,7 @@
 !~!	!
 '":|;
 (/@))
+(%@-*	@
 ))@-+	@
 )*/	) 
 )+@)+
@@ -13,7 +14,6 @@
 {}[]()=&, 	
 @-   
 @- 	 
-@-!	 
 @-!	!
 @-"	@
 @-#(!
@@ -33,6 +33,7 @@ $@)  "
 0x%016llX
   0x%08X %s,
 0@y_!!ka
+!@)@1
 10CAnimState
 10CBoneSetup
 10ConCommand
@@ -258,13 +259,10 @@ $@)  "
 19IKeyValuesErrorSpew
 19IPathMetricInstance
 1bQJ1~
-	1D9I
 1DBlend
 1*i(8`
 1ns:5
-	2)!.
-	2)!"
-	2)!%
+	1R9I
 	2*	@
 2*?)0"
 20CAimMatrixUpdateNode
@@ -303,7 +301,6 @@ $@)  "
 20IAnimStateTransition
 20IIKControlRigContext
 20IResourceTypeManager
-	2)!1
 21CAnimationSystemUtils
 21CAnimGraphDebugReplay
 21CAnimGraphInitContext
@@ -541,12 +538,12 @@ $@)  "
 28CFootPositionMetricEvaluator
 28CFutureFacingMetricEvaluator
 28CIKJointConstraintData_Hinge
+28CIKJointConstraintData_Plane
 28CLookHeadingConditionUpdater
 28CModelConfigElement_UserPick
 28CModelDocAnimResourceSeqBase
 28CMoveHeadingConditionUpdater
 28ISchemaCollectionManipulator
-2	!-9?
 29CAnimationGraphVisualizerAxis
 29CAnimationGraphVisualizerLine
 29CAnimationGraphVisualizerText
@@ -563,12 +560,15 @@ $@)  "
 29IAnimationGraphVisualizerInfo
 29IFutureVelocityMetricInstance
 29ISolveIKChainAnimNodeInstance
-2	!,9s
-2B9hz
+	2)a-
+	2)a!
+	2)a*
+2	A;9B
+2	A:9s
 2_BONE_IK
 2dtri
 %.2f degrees, %.2f ratio
-2hj78
+2H3#9
 2h>@y
 	2	i*
 2	i38
@@ -579,12 +579,12 @@ $@)  "
 2+imx
 *2j08p
 *2j08q^A
-	2Ja=
-	2Ja:
+	2Ja;
 2jp8R
 2_!!k
 2L@-4
 2Ly+xi
+2N  !
 2njj8l
 2Way_0( %s )
 2Way_1( %s )
@@ -594,7 +594,6 @@ $@)  "
 2xi*8*i@9J
 	2(y7
 	2	y7
-30-;,
 30CAnimGraphUpdateContextBuilder
 30CCompressedReferenceQuaternion
 30CFacingHeadingConditionUpdater
@@ -652,6 +651,7 @@ $@)  "
 4i^E9)
 4i*Z)_
 4+iz8K
+4jnA9
 4kk(8
 4n&	&
 4T@-6
@@ -659,7 +659,6 @@ $@)  "
 5h>A9
 5hf@9
 )5IJ(}
-5n  !
 =5$@x
 %6.2f %6.2f %6.2f %.3f %.3f %.3f
 6($C)* @
@@ -667,11 +666,9 @@ $@)  "
 6hb@9
 6hB@9H
 6i"@ij
-?!6ka
-6N  !
 @6W!?
 6x"@9
-6YsU9
+6Y3c9
 7hb@9h
 7hf@9
 7hf@9(
@@ -681,6 +678,7 @@ $@)  "
 7ib@9i
 7IConVar
 	*_!7k
+7n  !
 7Y@)8	@
 @- 8 
 @-!8$
@@ -717,6 +715,7 @@ $@)  "
 9h&@9
 9h&A9
 9hb@9
+9h_B9
 9h[B9
 9hB@9
 9hbE9
@@ -765,6 +764,8 @@ A@9)y
 A-'@A-
 	@=a	@=B
 	AB9?
+Absolute
+AbsolutePoseControl
 Acceleration Forward-Back
 Acceleration Front-Back
 Acceleration Heading
@@ -845,6 +846,7 @@ AE_NPC_ITEM_PICKUP
 AE_NPC_MUZZLEFLASH
 AE_NPC_RESTARTGESTURE
 AE_NPC_SET_INTERACTION_CANTDIE
+AE_NPC_START_POWERED_RAGDOLL
 AE_NPC_WEAPON_DROP
 AE_NPC_WEAPON_FIRE
 AE_NPC_WEAPON_SET_ACTIVITY
@@ -872,6 +874,7 @@ AE_WPN_PLAYWPNSOUND
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_POPHEADCRAB event format missing velocity parameter! Usage: event AE_ZOMBIE_POPHEADCRAB "<BoneName> <Speed>" 
 AE_ZOMBIE_TOGGLE_HEAD
+	aG9k
 Agg data %d: %p (%d parts, crc 0x%08X)
 *]A)h
 *%A)h
@@ -887,14 +890,12 @@ AimMatrixBlendMode_BoneMask
 Aim Matrix does not have a valid attachment.
 Aim Matrix does not have a valid sequence
 Aim Matrix is missing a child.
-AimMtx:m_resetCount
+>AimMtx:m_resetCount
 ai_model_info
 AIWalkable
 	!A)j
-aj9#	 
 _A@k(
 ,%A)k
-	AL9	
 AllocateAndLoad failed for '%s'
 AllocateAndLoad failed for '%s' (%s)
 allowstatic
@@ -975,7 +976,6 @@ animgraph_footlock_calculate_tilt
 animgraph_footlock_debug_foot_index
 animgraph_footlock_debug_type
 animgraph_footlock_enabled
-animgraph_footlock_hip_drop_version
 animgraph_footlock_hip_offset_enable
 animgraph_footlock_reachability_slide
 animgraph_footlock_tilt_enable
@@ -1019,10 +1019,11 @@ AnimParamButton_t
 ANIMPARAM_BUTTON_X
 ANIMPARAM_BUTTON_Y
 AnimParamID
+AnimPathData:BoundaryRadius[ %d ]
 AnimPathData:m_count
-AnimPathData:m_flWayPointBoundaryRadius[ %d ]
 AnimPathData:m_startIndex
-AnimPathData:m_vWayPoint[ %d ]
+AnimPathData:WaypointPos[ %d ]
+AnimPoseControl
 AnimProxy
 AnimResource
 anim_resource_validate_on_load
@@ -1049,8 +1050,6 @@ Apply Foot Rotation Limits
 Apply Hip Drop
 Apply Locks
 ApplyNewState %d at %f
-Apply Reachability Limits
-Apply Step Limits
 Apply Tilt
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 archive
@@ -1082,6 +1081,7 @@ A-!Xh
 AXk!#
 ?AYki
 Ay)Y@y
+	AZ9	
 @-b("
 @-b	@
 B-1HD-
@@ -1199,6 +1199,7 @@ Blend Value
 blendweight
 blendweights
 blockLOS
+Block Non-Path Movement
 Block Tags from Waning States
 bodygroup
 BodyGroup
@@ -1268,7 +1269,6 @@ C-!8"
 C9	%@
 C@9`b
 C@9hJ
-	!C9K
 cable
 CActivityValueList
 CActivityValues
@@ -1530,6 +1530,7 @@ Choreo
 ChoreoNode
 Cik_debugrule_degreespeed
 CIKJointConstraintData_Hinge
+CIKJointConstraintData_Plane
 CIKRuleData_Debug
 CIKRuleData_FollowAnimation
 CIKRuleData_Ground
@@ -1879,7 +1880,6 @@ c@yhR
 %d : 
  D-	(@
 D-"/@
-!D9	<
 d@9hf
 D-a"@
 %d.Add( %s, %d, %.2f )
@@ -1992,6 +1992,7 @@ E-!8$
 EconItemToolModel_001
 _edata
 EditorDynamicConfig
+	eF9	
 .eh_frame
 .eh_frame_hdr
 <embedded>
@@ -2008,9 +2009,10 @@ Enable Hip Shift
 Enable IK
 Enable IK.
 enable_limit
+Enable Lock Breaking
 Enable On Tag
-Enable Pose Control
 Enable Speed Scaling
+Enable Stretching
 Enable Turn to Face
 Enable Vertical Curved Paths
 encoding
@@ -2077,7 +2079,6 @@ EXPORTSYSTEM_INTERFACE_VERSION_001
 extra
 Extrapolate Movement
 F: %.2f deg
-	%F9)
 f@9H1
 f@9h2
 FABRIK
@@ -2114,6 +2115,7 @@ False
 FATAL ERROR: unable to register all schema data: %s
 FAy?! k
 FCVAR_NEVER_AS_STRING
+FdA-SH@-`
 f %d %d %d
 #f %d %d %d, original mesh: %d %d %d
 FeetSettings
@@ -2375,7 +2377,6 @@ Get the model this sequence belongs to
 (gGy 
 Given a name or a sequence handle, returns an instance of the sequence class
 Given a pose parameter array, return the highest frame number for the sequence
-/G)j/
 GK-Tk
 .gnu_debuglink
 .gnu.version
@@ -2402,14 +2403,17 @@ groundik_enabled
 GroundIKTiltSource_t
 ground_virtualplanes
 g_Tier1_BitWriteMasks
+)h$@)
 h&?);
 h&@)?
+)H$@)
 #H)	}	
 h1xnj 
 h2A9(
 h2Ayi
 H3@y(3
 h6A9h
+*h6AyiF@
 h6AyiF@
 H6hrC
 h)8Ay)
@@ -2432,7 +2436,6 @@ hBA9h
 -hbB9
 )HcB9
 HCik_debug_perlin_solver
-=Hcj9 
 !hdx?
 headtype
 health
@@ -2450,7 +2453,6 @@ hf@9i
 hfB9	
 hFD9u
 h*@i)
-=$	H-#I@
 Hi)8j
 HIGHDPI
 Hinge Axis
@@ -2459,7 +2461,6 @@ Hip Damping
 Hip Dip Delay Time
 Hip Dip Scale
 Hip Dip Spring Strength
-Hip position
 Hip Shift Scale
 Hip Translation Scale
 Hit Bone
@@ -2475,6 +2476,7 @@ Hit React node requires its %s parameter %s to NOT be interpolated
 Hit Strength
 Hit Strength Parameter
 h&@-j
+hj58P
 hj@9yF@
 h&@-j.A-
 !H*JAJ*
@@ -2497,8 +2499,8 @@ HSCRIPT-light
 hscript_lightbinding
 HSCRIPT-new
 HSequence
+=hs@y
 =hs@y+
-=hs@y1
 hurt_me
 hurt_them
 [hxVYyxk
@@ -2518,7 +2520,6 @@ i1xhj+
 i1xjj,
 I5A)K
 i6Ay`
-i6Ayj
 i6@yh
 ?i(8i
 i*8*i@9
@@ -2526,7 +2527,6 @@ i*8*i@9J
 ?i(8?i*x?i+
 *i+8j
 +i(8k
-	!I9	
 i98h.@
 IAnimationGraph
 IAnimationGraphBuilder
@@ -2657,6 +2657,10 @@ ik_enable_planetilt
 IkEndEffector_Attachment
 IkEndEffector_Bone
 IkEndEffectorType
+ik_fabrik_align_chain
+ik_fabrik_backwards_enabled
+ik_fabrik_forwards_enabled
+ik_fabrik_override_num_iterations
 ik_final_fixup_enable
 ik_force_lock_value
 ik_force_masterblend_amount
@@ -2675,6 +2679,7 @@ ikLocks
 ik_locks_breaking_enabled
 ik_locks_release_threshold
 ik_move_debug_target
+ik_plane_debug_bone_index
 ik_planetilt_enable
 ikrestoreall
 ikrig
@@ -2699,7 +2704,6 @@ IKTargetCoordinateSystem
 IKTARGETCOORDINATESYSTEM_COUNT
 IKTARGETCOORDINATESYSTEM_ModelSpace
 IKTARGETCOORDINATESYSTEM_WorldSpace
-IK target if it was straight below the hips
 IkTarget_Parameter_ModelSpace
 IkTarget_Parameter_WorldSpace
 IK Target: %s
@@ -2765,6 +2769,7 @@ Invalid data.
 Invalid data for member '%s'
 <INVALID EXPRESSION>
 Invalid header
+invalid index %d
 Invalid input layout field format %d for joint indices
 Invalid member name '%s'
 Invalid number of parameters.  Specify a flag you want to toggle.
@@ -2790,6 +2795,7 @@ Iq@9	1
 IQuickTime001
 ir8nhr8?
 IRagdollAnimTag
+	is8	
 is active
 IsAnimation
 IsAutoplay
@@ -2877,8 +2883,8 @@ k5@i*i
 [k68h
 @k68h
 k(8vV@
-KAH9H
 kAKJk
+KAV9h
 k-D	 
 K-db@
 K-eb@
@@ -2898,7 +2904,6 @@ kh,8+
 kiix)	
 K!@iJ	
 K)@)j
-K-pb@
 KP*;Q>.
 K?@@qk
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
@@ -2970,6 +2975,7 @@ local
 Localize_001
 Lock Blend on Reset
 Lock Blend When Waning
+Lock Clip When Waning
 Lock distance to target: %.2f
 Lock: %d%% (%s)
 lockRotationAlpha
@@ -3013,10 +3019,9 @@ LrwcE
 %ls [wstring, len = %d]
 lS@ymW@y
 LYkxk
-/M)*/
 M)@)-)
 M- 8 
-!m9h	
+m9#	 
 (MA8(
 m_aAngOffset
 m_activeSegments
@@ -3067,20 +3072,20 @@ Max Angle
  max. %f
 Max Foot Lift
 Max Goal Overshoot Scale
-Max Hip Drop Amount
 maxHullVertices
 Max Impact Force
 Maximum Speed Scale
 Maximum Tension
+Max Left Rotation
 MaxMoveSpeed
 Max Move Speed
+Max Right Rotation
 maxSpringTension
 Max( %s, %s )
+Max Stretch Amount
 Max Tension
 Max Value
 maxVerticesPerHull
-Max Yaw Degrees From Forward
-Max Z Offset from Hip
 m_b0D
 m_b1D
 m_b2D
@@ -3094,14 +3099,13 @@ m_bApplyHipDrop
 m_bApplyLocks
 m_bApplyMinForce
 m_bApplyMovement
-m_bApplyReachabilityLimits
-m_bApplyStepLimits
 m_bApplyTilt
 m_baseChildID
 m_bAutoplay
 m_bAutoReset
 m_bAutoTargetSpeed
 m_bAwaken
+m_bBlockNonPathMovement
 m_bBlockWaningTags
 m_bBonesInWorldSpace
 =m_bBonesOrientAlongPositiveX
@@ -3120,6 +3124,7 @@ m_bDebugDrawLockValues
 m_bDefault
 m_bDefaultValue
 m_bDelta
+m_bDestroy
 m_bDisableChild
 m_bDisabled
 m_bDisableOperator
@@ -3132,8 +3137,9 @@ m_bEnableDistanceScaling
 m_bEnableGroundTracing
 m_bEnableHipShift
 m_bEnableIK
-m_bEnablePoseControl
+m_bEnableLockBreaking
 m_bEnableRetarget
+m_bEnableStretching
 m_bEnableVerticalCurvedPaths
 m_bExtrapolateMovement
 m_bFetchFrame
@@ -3200,6 +3206,7 @@ m_blendValueSource
 m_bLocal
 m_bLocalSpace
 m_bLockBlendOnReset
+m_bLockClipWhenWaning
 m_bLockToPath
 m_bLockWhenWaning
 m_bLoop
@@ -3230,6 +3237,7 @@ m_bOnlyGoals
 m_boolCompressor
 m_boolParamID
 m_bOrientMovement
+m_bParentJointRequiresAlignment
 m_bParticleFeathering
 m_bPose
 m_bPost
@@ -3247,6 +3255,7 @@ m_bResetChild2
 m_bResetChosen
 m_bResetOnChange
 m_bResetOnFinish
+m_bResetPending
 m_bResetSubtract
 m_bRunForParentApplyKillList
 m_bScaleCurrent
@@ -3282,6 +3291,7 @@ m_bUserSpecifiedMaterialGroup
 m_bUseShadowFastPath
 m_bVisible
 m_bXFade
+M*cD9(3
 m_chain
 m_ChainData
 m_ChainName
@@ -3326,7 +3336,6 @@ m_cRenderColor
 m_CullDataIndex
 m_currentSegmentIndex
 m_currentSequenceIndex
-M*#D9	
 m_dampedScaleValue
 m_dampedTurnValue
 m_dampedValue
@@ -3403,9 +3412,9 @@ MeshSystem/DoNotLoadMorphsOnMobile
 MeshUtils001
 meshUtilsKeyValues
 m_eType
+mE)U"
 m_eventArray
 m_EventData
-mE)z$
 m_facingDamping
 m_facingMode
 m_facingTarget
@@ -3465,7 +3474,6 @@ m_flEndEffectorZOffsetFromFloor
 m_flEndTime
 m_flexControllers
 m_flExtensionScale
-m_flExtraRotationRate
 m_flFadeInTime
 m_flFadeOutTime
 m_flFalloff
@@ -3496,6 +3504,7 @@ m_flInterpEndTime
 m_flKillDelay
 m_flKillRate
 m_flLiteralValue
+m_flLockBreakBlendTime
 m_flLookAheadDistance
 m_flLoop
 m_flManualFacingHeading
@@ -3506,16 +3515,15 @@ m_flMaxAngle
 m_flMaxExtent
 m_flMaxFootHeight
 m_flMaxGoalOvershootScale
-m_flMaxHipDropAmount
 m_flMaxImpactForce
 m_flMaxLockDistanceToTarget
 m_flMaxRadians
-m_flMaxReachabilityScale
+m_flMaxRotationLeft
+m_flMaxRotationRight
 m_flMaxScale
 m_flMaxSpringTension
+m_flMaxStretchAmount
 m_flMaxValue
-m_flMaxYawDegreesFromForward
-m_flMaxZOffsetFromHip
 m_flMin
 m_flMinAngle
 m_flMinDelayBetweenHits
@@ -3568,7 +3576,7 @@ m_flSplayMaxAngle
 m_flSplayMinAngle
 m_flSpringConstant
 m_flSpringStrength
-m_flStanceDirectionOffsetMS
+m_flStanceDirectionMS
 m_flStart
 m_flStartCycle
 m_flStartGoalFilterDistance
@@ -3580,6 +3588,7 @@ m_flStiffness
 m_flStoppingDistance
 m_flStoppingRadius
 m_flStoppingSpeedScale
+m_flStretchExtensionScale
 m_flStrideCurveLimitScale
 m_flStrideCurveScale
 m_flTailAlphaScale
@@ -3693,7 +3702,7 @@ m_items
 m_JointConstraintPairs
 m_JointName
 m_Joints
-MK!D9Pa
+MKaD9
 m_keyValues
 m_keyValueText
 m_lastSegmentIndex
@@ -3825,6 +3834,7 @@ m_nOpScaleCP
 m_nOpStrengthScaleSeed
 m_nParticlesToEmit
 m_nPeakFrame
+m_nPoseControl
 m_nPrimitiveType
 m_nPriority
 m_nRandomMode
@@ -3887,6 +3897,7 @@ modeldoc24
 modeldoc25
 modeldoc26
 modeldoc27
+modeldoc28
 modeldoc3
 modeldoc4
 modeldoc5
@@ -3974,6 +3985,7 @@ m_pD3DSemanticName
 m_pData
 m_peak
 m_pJointConstraintData
+m_Plane
 m_playbackSpeed
 m_pName
 m_pos
@@ -4198,15 +4210,18 @@ myjx?
 "n"!@
 &n  +
  N` #
+!N` #
 !N 	)
 'N  !
-"N"@!
 "N(  
 $N   
 $N  "
-$N@ !
+$N@ #
+&N  "
+&N)))
+#N  !
 #N)	}	
-#N#@!
+#N#(-
 %N  !
 &n0:0
 $N "1
@@ -4645,6 +4660,7 @@ N37CTypesafeIntrospectedToKV3TypeManagerILy482955714934E15CAnimationGroupE28IKV3
 "N$4$n
 N- 8 
 $NA*#
+"Na8!
 nav_attribute_avoid
 nav_data
  NB(&
@@ -4654,6 +4670,7 @@ nBX nB
 #NC((
 'nD:$
 $ND8 
+%Ne*$
 %NE8"
 needs lock
 Need valid position and texcoord when creating world space tangent lengths!
@@ -4685,11 +4702,11 @@ nexttoken
 nf@9/
  nG:'
 &nG9"
-!N!H(
 NhFD9t
 NI5A)K
 niqx?
 Nj1xkj-
++N-k#
  n)M"
 noblend
 No Buffer
@@ -4708,6 +4725,7 @@ No free conversion of %s variant to HSCRIPT right now
 No free conversion of %s variant to Quaternion right now
 No free conversion of %s variant to Vector right now
 No IK rig found, can't initialize ground IK node.
+NoPoseControl
 no samples
 <No schemasystem>
 notconnected
@@ -4761,7 +4779,6 @@ Original Foot
 Original Joint
 Original Knee
 Original target.
-Original target ankle position
 Original Thigh
 origin_max_delta
 origin_relative
@@ -4887,6 +4904,9 @@ point0
 point1
 Pole vector (raw dir: {%.2f, %.2f, %.2f})
 pos-cellorigin
+pose_control
+Pose Control
+pose_control_type
 poseparameter
 poseparamweight
 poseparamweightinverse
@@ -4964,9 +4984,7 @@ R)AIJK
 raise
 RandomFloat
 RandomInt
-Reachability
 Reachability Analysis
-Reachability Scale
  ReadToken overflow
 recenter_on_parent_bone
 RecursiveLoadFromBuffer:  got conditional between key and value
@@ -4979,8 +4997,10 @@ RegisterConfigValue: Unknown error constructing config value "%s"!
 RegisterStringToken
 .rela.dyn
 .rela.plt
+Relative
 relative_angles
 relative_origin
+RelativePoseControl
 Release
 Remaining Distance
 Remaining Translation (Source State)
@@ -5106,9 +5126,7 @@ ryjj8
 %s %.2f
 %s (%.2f, %.2f, %.2f)
 %s %.3f
-S9_)	
 S@9h2
-S9_q	
 %s| AlignOf: %d
 %s allocation count overflow
 %s allocation count overflow( %llu >= %llu )
@@ -5135,6 +5153,7 @@ SchemaTestExternal_Two_001
 schemaType
 %s_color
 %s (Color)
+sC){r
 Script_CPS
 Script_DoIncludeScript
 Script_Duration
@@ -5314,6 +5333,8 @@ slerp
 Slope Angle
 Slope Heading
 Slope Normal
+Slope Normal World Space
+SlopeNormal_WorldSpace
 Slope Pitch
 Slope Yaw
 Slow Down On Slopes
@@ -5436,6 +5457,7 @@ ss_added
 __stack_chk_fail
 Stack depth limit hit (%d)
 '%s' Target
+%s Target
 Start Cycle
 Start Cycle At
 startframe
@@ -5640,12 +5662,12 @@ Strafe Speed
 strchr
 strcmp
 strcpy
+Stretch
 Strider
 string_t
 String Tag
 strlen
 strstr
-strtok
 subtract
 Subtract node is missing a child.  Will use t-pose by default
 "%s" unable to find retargeted bone "%s", disabling.
@@ -5719,11 +5741,10 @@ ThB@9
 ThbE9
 Thf@9
 Th*F9h
-Th"G9
-Th"G9h
 Thin Plate
 #This file is generated by CMesh::SaveObj() from CMesh with %d indices, %d vertices, %d attributes
 THit8
+TH'@)J
 ThreadGetCurrentId
 ThreadYield
 Th>@y
@@ -5907,6 +5928,7 @@ VectorParameter
 Vector Parameter
 Vector-quantized
 VEngineCvar007
+version
 VertexColorPos_t
 VertexPaintBlendParams
 VertexPaintBlendParams1
@@ -6030,6 +6052,7 @@ _V_strncpy
 V_strnlen
 V_strtod
 V_strtoi64
+V_strtok
 V_strtoui64
 V_UTF16ToUTF8
 V_UTF32ToUTF8
@@ -6040,6 +6063,8 @@ V_vsnprintf
 V_vsnprintfSize
 V_vsnprintfWarnTrunc
 V_wcstoi64
+	!W9	
+W9_a	
 walkspeed
 Warning
 Warning! autocycle specified on sequence "%s", but it's not looping, ignoring autocycle
@@ -6090,8 +6115,9 @@ xi*8*i@9J
 xWsTarget
 ,]@y!
 ,	@y)
-!	@y@
+!	@y`
 @y`&@
+Y3#9gw
 	y4xl
 Yaw; 
 yaw_end
@@ -6154,9 +6180,11 @@ ZN37CTypesafeIntrospectedToKV3TypeManagerILy469920276854E9CAnimDataE24Deallocate
 ZN37CTypesafeIntrospectedToKV3TypeManagerILy482955714934E15CAnimationGroupE15AllocateAndLoadER23CKV3TransferLoadContextPK21ResourceBindingBase_tP29IRD_RegisterResourceDataUtilsE15CAllocatorUtils
 ZN37CTypesafeIntrospectedToKV3TypeManagerILy482955714934E15CAnimationGroupE24DeallocateDestroyCleanupEPvP25IResourceDeallocatorUtilsE17CDeallocatorUtils
 _Znam
+_ZnamRKSt9nothrow_t
 zn@)j
 _ZNV16CThreadFastMutex4LockEyj
 _Znwm
+_ZnwmRKSt9nothrow_t
 _ZTVN10__cxxabiv117__class_type_infoE
 _ZTVN10__cxxabiv120__si_class_type_infoE
 _ZTVN10__cxxabiv121__vmi_class_type_infoE

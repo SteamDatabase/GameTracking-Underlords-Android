@@ -29,7 +29,7 @@
 19CSchemaRegistration
 1bQJ1~
 1DBlend
-2	!09?
+2	!09B
 20CPostConnectCallback
 20CRefCountServiceBaseILb1E6CRefMTE
 20CResourceConstructor
@@ -58,6 +58,8 @@
 29IRD_RegisterResourceDataUtils
 2	!/9s
 2	h(8H
+2h">9
+2hR=9#
 2Hs,9
 30IAsyncResourceDataRequestOwner
 32CSchemaRegistration_resourcefile
@@ -113,6 +115,7 @@
 *	!A9
 	A@9i
 AABB_t
+AbsolutePoseControl
 AE_ACTION_SET_TURN_RATE_SCALE
 AE_BLIND_ZOMBIE_SNIFF
 AE_CL_ADD_PARTICLE_EFFECT_CP
@@ -132,6 +135,7 @@ AE_MELEE_DAMAGE
 AE_NPC_BECOME_TEMPORARY_RAGDOLL
 AE_NPC_HURT_INTERACTION_PARTNER
 AE_NPC_SET_INTERACTION_CANTDIE
+AE_NPC_START_POWERED_RAGDOLL
 AE_NPC_WEAPON_FIRE
 AE_NPC_WEAPON_SET_SEQUENCE_NUMBER
 AE_PASSENGER_PHYSICS_PUSH
@@ -190,7 +194,6 @@ AssetBrowserSystem_001
 AssetPreviewSystem_001
 AssetSystem001
 AssetSystemTest001
-	At9	
 attachment
 attachment_offset
 attachment_type
@@ -199,6 +202,7 @@ Attempted to register duplicate manifest name %s!
 attenuation0
 attenuation1
 attenuation2
+	Au9	
 auto_unragdoll_duration
 Available resource leak tracking configuration aliases:
 *** Bad deletion request: Refcount for %s resource "%s" (%016llX) is greater than zero. (%d)!
@@ -686,11 +690,11 @@ IQuickTime001
 is_debris
 IsResourceManifestGroupKnown: Manifest group name is empty or null
 i"@yh
-J38fA
-J68YB
+J38`A
+J68SB
 j6@y_
-J78-A
-j88oU
+J78'A
+j88iU
 JEIJJ}
 JIIJJ}
 jj(8(
@@ -707,7 +711,6 @@ K)@)j
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
 kv3format_manager.cpp
 kV*yA
-	!l9I
 last_sniff
 Leaked reference to ERROR resource for type %s!
 Leaked resource: Refcount %s for %s%s resource "%s" (%016llX).  This may result in a crash.
@@ -754,6 +757,7 @@ loop_break_on_flashlight
 loop_in_action
 looping
 LrwcE
+	!m9I
 - Manifest, %d operations: %s
 + Manifest, %d operations: %s
 - Manifest, operation: %lld)
@@ -948,6 +952,7 @@ modeldoc24
 modeldoc25
 modeldoc26
 modeldoc27
+modeldoc28
 modeldoc3
 modeldoc4
 modeldoc5
@@ -1015,6 +1020,7 @@ nf@9/
 No Buffer
 <no failure reason set>
 nogroup
+NoPoseControl
 notconnected
 .note.gnu.build-id
 notify
@@ -1027,7 +1033,6 @@ Ordered constructor wrapped type has no default constructor.
 origin_max_delta
 origin_relative
 outerconeangle
-!p9h	
 )P@9h
 "pA3QuW
 PanoramaTextServices001
@@ -1082,6 +1087,8 @@ Plat_UUIDToString
 play_endcap
 point0
 point1
+pose_control
+pose_control_type
 PostProcessingSystem_001
 precomputedmaxrange
 preferred_carryangles
@@ -1102,12 +1109,12 @@ pthread_mutex_destroy
 ../public/tier1/utlsortvector.h
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
-	!q9	
 QAngle
 Qi"A)`
 Qi^*yi
 Quaternion
 QueuedLoaderVersion001
+	!r9	
 RadianEuler
 radius0
 radius1
@@ -1515,6 +1522,7 @@ yi^jy)
 	$@yJ
 )YJJ)}
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
+Ys,9X^
 ^*ySi(
 @y	y3x-
 _Z14V_stristr_fastPKcS0_
@@ -1556,8 +1564,10 @@ _ZN22CThreadRWLock_FastRead20UnlockReadAccountingEj
 _ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEj
 _ZN22CThreadRWLock_FastReadC1Ev
 _Znam
+_ZnamRKSt9nothrow_t
 _ZNV16CThreadFastMutex4LockEyj
 _Znwm
+_ZnwmRKSt9nothrow_t
 _ZTVN10__cxxabiv117__class_type_infoE
 _ZTVN10__cxxabiv120__si_class_type_infoE
 _ZTVN10__cxxabiv121__vmi_class_type_infoE

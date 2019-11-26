@@ -159,7 +159,6 @@ $@)  "
 2,	@9L
 2_BONE_IK
 2Gio8
-2h2'9
 	2	i*
 2i2@yh
 2	i58h
@@ -292,7 +291,6 @@ $@)  "
 9*YA9_
 @9+	@yHA
 @9+	@yHM
-@9ZkF
 'A)	}	
 ()@)+%A)
 A-!(!
@@ -303,7 +301,8 @@ A9)eG
 A-'@A-
 A(aN!
 $	A)Ar
-	ab9	
+AbsolutePoseControl
+	ac9	
 ACT_IDLE
 activator
 ACT_NEUTRAL_REF_POSE
@@ -335,6 +334,7 @@ AE_MELEE_DAMAGE
 AE_NPC_BECOME_TEMPORARY_RAGDOLL
 AE_NPC_HURT_INTERACTION_PARTNER
 AE_NPC_SET_INTERACTION_CANTDIE
+AE_NPC_START_POWERED_RAGDOLL
 AE_NPC_WEAPON_FIRE
 AE_NPC_WEAPON_SET_SEQUENCE_NUMBER
 AE_PASSENGER_PHYSICS_PUSH
@@ -359,7 +359,6 @@ AllocateResource: Cannot find VXVS data in resource %s!
 allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
 allowstatic
 (aN0*aN
-	an9	
 (aNB8an1
 anchor_angles
 anchor_position
@@ -432,7 +431,6 @@ auto_unragdoll_duration
 /AV?O!
 B-1HD-
 *-B),5C)_
-B9)1G
 bA9JeG
 Bad entity index %d
 Bad entity serial number %d
@@ -544,7 +542,6 @@ B@yhB
 $.c($
 C-2-@
 C-!8"
-	!c9	
 (C@9h
 cable
 Cables
@@ -885,6 +882,7 @@ d6@yC
 	D@8!
 D@8)%
 	D@8)m
+	!d9	
 .data
 data error
 data_height = 
@@ -1312,7 +1310,7 @@ GrassTileDirectionalIB
 GrassTileInit
 GrassTileInputLayout
 grasstilesceneobject.cpp
-grasstilesceneobject.cpp(1259): 
+grasstilesceneobject.cpp(1260): 
 GrassTileVB
 GrassTint.vtex
 gravity
@@ -1334,9 +1332,10 @@ HammerMapLoader001
 handindex
 Has Collision; 
 .hash
-hb}9)	
 hb@9`
 hB@9`
+h*B9)1G
+hb}9I	
 hbA9h
 hbE9	
 hbE9i
@@ -1352,8 +1351,7 @@ h"F9H
 hf@9i
 (hide)
 Hitbox indexing is incorrect for set %s, hitbox %s. Hitboxes will not be setup properly.
-hj48u
-hj581x
+hj58Fx
 H#L9`3
 HMaterial
 HModel
@@ -1375,11 +1373,13 @@ h&@y)UG
 	*I}`
 	i48h6@
 *	i58
+	i88h
 i)8h~@
 _i(8j
 i*@9J
 ib@9(
 ib@9)
+i"B99
 ib@9j
 ib@9l
 ibA9JeG
@@ -1401,7 +1401,7 @@ I CUtlRBTree<void *, int, bool (*)(void *const &, void *const &), CUtlMemory<Utl
 !if8D
 )ih8Ii(8
 IHandleEntity
- ih<if@
+ ih<ij@
 %i %i %i %i
 	iix?
 ii*x!
@@ -1665,7 +1665,6 @@ lowprecisionuv1
 LrwcE
 %ls [wstring, len = %d]
 <*%M)
-!M9h	
 m_aAngOffset
 m_ankleBoneName
 mapbuilder.nodraw
@@ -2123,6 +2122,7 @@ modeldoc24
 modeldoc25
 modeldoc26
 modeldoc27
+modeldoc28
 modeldoc3
 modeldoc4
 modeldoc5
@@ -2356,6 +2356,7 @@ non-networkable
 Non-windows platforms don't support loading of JPG images
 Non-windows platforms don't support loading of PNG images
 Non-windows platforms don't support loading of TIFF images
+NoPoseControl
 Normalize3ComponentVectorInAttributes
 Normalized3x3SobelEdgeFilterFrom
 North
@@ -2400,6 +2401,7 @@ nX(aNB?
 nY nk)a
 !O1*a
 o1V?OS
+	!o9	
 )o))a
 OBJECT_TYPE_BLOCK_LIGHT
 OBJECT_TYPE_DECAL
@@ -2517,6 +2519,8 @@ POINT
 point0
 point1
 pos-cellorigin
+pose_control
+pose_control_type
 POSE_SPACE_BONE
 POSE_SPACE_MORPH
 position
@@ -2968,8 +2972,10 @@ turn_rate
 Two Bone
 Two KV3 format GUIDs with the same human-friendly name ('%s')
 t.!X .
+TxfP)(
 	T@y?
 T*YA9_
+TynP)h
 TypeManager
 <type name is DEBUG only>
 u64( %lld = 0x%llX )
@@ -3231,8 +3237,8 @@ world_layer_list
 world_layer_set_visible
 world_layer_set_visible %s %s false
 world_layer_set_visible %s %s true
-worldnode.cpp(1251): 
-worldnode.cpp(715): 
+worldnode.cpp(1259): 
+worldnode.cpp(716): 
 WorldNodeOnDiskBufferData_t
 WorldNodeProceduralModel
 WorldNode_t
@@ -3333,6 +3339,7 @@ ZN37CTypesafeIntrospectedToKV3TypeManagerILy431366240118E11WorldNode_tE24Dealloc
 ZN37CTypesafeIntrospectedToKV3TypeManagerILy495874631030E20PermEntityLumpData_tE15AllocateAndLoadER23CKV3TransferLoadContextPK21ResourceBindingBase_tP29IRD_RegisterResourceDataUtilsE15CAllocatorUtils
 ZN37CTypesafeIntrospectedToKV3TypeManagerILy495874631030E20PermEntityLumpData_tE24DeallocateDestroyCleanupEPvP25IResourceDeallocatorUtilsE17CDeallocatorUtils
 _Znam
+_ZnamRKSt9nothrow_t
 zn@)j
 _ZNKSt6__ndk16locale9use_facetERNS0_2idE
 _ZNKSt6__ndk18ios_base6getlocEv
@@ -3345,6 +3352,7 @@ _ZNSt6__ndk18ios_base5clearEj
 _ZNSt6__ndk18ios_baseD2Ev
 _ZNV16CThreadFastMutex4LockEyj
 _Znwm
+_ZnwmRKSt9nothrow_t
 Z n)Y n
 _ZSt18uncaught_exceptionv
 _ZTCNSt6__ndk118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE0_NS_13basic_istreamIcS2_EE

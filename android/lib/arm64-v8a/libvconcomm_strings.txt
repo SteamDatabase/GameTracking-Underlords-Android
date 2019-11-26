@@ -34,7 +34,6 @@
 24CVConsoleLoggingListener
 25CConCommandMemberAccessorI9CVConCommE
 26ICommandCompletionCallback
-2hb;9
 2+imx
 30CVConsoleModuleMappingListener
 32IConfigValueRegistrationListener
@@ -57,6 +56,7 @@
 7ib@9i
 7IConVar
 8CFmtStrNILi256ELb0EE
+8x9,7
 )!@9)
 9CVConComm
 @9hV@
@@ -85,6 +85,10 @@ BakedLODBuilderMgr001
 #base
 #base is NULL 
 BenchmarkService001
+binary
+binary_auto
+binary_bc
+binary_lz4
 BinaryProperties_GetValue
 borrow
 __bss_end__
@@ -167,6 +171,7 @@ GameResourceServiceClientV001
 GameResourceServiceServerV001
 GameUIService_001
 GCC: (GNU) 4.9.x 20150123 (prerelease)
+generic
 GetResourceManifestCount
 GetResourceManifests
 g_JNI
@@ -181,8 +186,8 @@ h.@9H
 h"A9a
 HammerMapLoader001
 .hash
-hB~9H
 hb@9)u
+hBD9H
 HelpSystem_001
 hf@9h
 HostStateMgr001
@@ -426,6 +431,11 @@ strlen
 Success
   (%s, v. %3d) '%s'
 tBT9B
+TestFormatA
+TestFormatB
+TestFormatC
+TestFormatD
+TestFormatE
 TestScriptMgr001
 .text
 TextLayout_001
@@ -469,6 +479,7 @@ VConComm001
 vconcomm.cpp
 VConComm Discarding Oversized Outgoing Message: '%s' (%d bytes)
 VConComm Failed To Initialize!
+VConCommThread_PC
 VConCommThread_StreamingBootStrap
 -vconmaxlisten
 vcon_pipe_dump
@@ -620,8 +631,11 @@ _ZN7CThread7IsAliveEv
 _ZN7CThreadC2Ev
 _ZN7CThreadD2Ev
 _Znam
+_ZnamRKSt9nothrow_t
 _ZNV16CThreadFastMutex4LockEyj
 _Znwm
+_ZnwmRKSt9nothrow_t
+@z)q!
 _ZTI7CThread
 _ZTVN10__cxxabiv117__class_type_infoE
 _ZTVN10__cxxabiv120__si_class_type_infoE

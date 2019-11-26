@@ -75,7 +75,6 @@ $@)  "
 19CSchemaRegistration
 1bQJ1~
 1DBlend
-	1i9I
 	2*	@
 20CPostConnectCallback
 20CRefCountServiceBaseILb1E6CRefMTE
@@ -154,12 +153,10 @@ $@)  "
 28CSchemaRegistration_modellib
 28ISchemaCollectionManipulator
 29CBoneConstraintPoseSpaceMorph
-2	A,9?
-2	A+9s
 2A9	y
 2_BONE_IK
 %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f
-2hr?9
+2H3)9
 	2	i*
 2	i58h
 2+imx
@@ -199,6 +196,7 @@ $@)  "
 6h^@y
 `6iJ@y
 6iZ@y
+6Y3i9
 	!@)7}
 7hb@9h
 7hf@9
@@ -226,13 +224,13 @@ A-!(!
 A-@ #
 a2@yh2@y
 A-'@A-
+AbsolutePoseControl
 ACT_IDLE
 Activity %s has %d sequences with a total weight of %d!
 ACTIVITY WEIGHTS
 Activity Weights keys not allocated!
 ACT_NEUTRAL_REF_POSE
 Adding animation group resource in replace animations: %s
-	aE9	
 AE_ACTION_SET_TURN_RATE_SCALE
 AE_BLIND_ZOMBIE_SNIFF
 AE_CL_ADD_PARTICLE_EFFECT_CP
@@ -252,6 +250,7 @@ AE_MELEE_DAMAGE
 AE_NPC_BECOME_TEMPORARY_RAGDOLL
 AE_NPC_HURT_INTERACTION_PARTNER
 AE_NPC_SET_INTERACTION_CANTDIE
+AE_NPC_START_POWERED_RAGDOLL
 AE_NPC_WEAPON_FIRE
 AE_NPC_WEAPON_SET_SEQUENCE_NUMBER
 AE_PASSENGER_PHYSICS_PUSH
@@ -265,11 +264,10 @@ AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
 Agg data %d: %p (%d parts, crc 0x%08X)
 )AHJ*
+	Ai9j
 ai_model_info
 AIWalkable
-	AJ9j
 A)jz@
-Al9h	
 AllocateAndLoad failed for '%s'
 AllocateAndLoad failed for '%s' (%s)
 AllocateResource: Cannot find DATA block in resource %s!
@@ -329,8 +327,8 @@ AnimVRHand_t
 a	O-c
 A	O-C
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
-	Aq9	
 AqqInv
+	ar9	
 archive
 Assertion Failed in function %s():
 AssertMsg_ConditionFailed
@@ -450,6 +448,7 @@ bUpdate
 burst_randomize
 burstRandomize
 burst_scale
+Bvpcf1
 B@yhB
 C-2-@
 cable
@@ -709,7 +708,7 @@ __cxa_pure_virtual
 Cycle or diamond double-reference to '%s'
  D-	(@
 *-D),5E)_
-d6@y#
+d6@yC
 .data
 .data.rel.ro
 DebugTextureInfo001
@@ -1046,7 +1045,6 @@ h)8Ay)
 h"@9h
 h"A9a
 h>A9H
-h>A9i
 HammerMapLoader001
 handindex
 Has Collision; 
@@ -1054,19 +1052,19 @@ Has Collision;
 h]A)zQB) 
 hb@9`
 hB@9`
-=hBu9?
 headtype
 health
 health_override
 HELPER_BONE
 HelpSystem_001
+hf@9!
 hf@9h
 hf@9H
 hf@9i
 hidden
 Hitbox indexing is incorrect for set %s, hitbox %s. Hitboxes will not be setup properly.
 H-@)J	@
-hj486
+hj48y}
 HostStateMgr001
 hR@y`
 hR@y	
@@ -1075,7 +1073,7 @@ hurt_me
 hurt_them
 h*@y_
 h&@y)
-h&@y)uG
+h&@y)}G
 <	)@)i*
 *-@i)	
 _i(8j
@@ -1177,6 +1175,7 @@ J-dj@
 JEIJJ}
 JIGGLE_BONE
 jiggle bone %u
+Jih8ji(8
 JIIJJ}
 Jikx_
 ji)xA
@@ -1493,7 +1492,7 @@ Mesh needs recompiling: '%s' (invalid version: %d)
 meshsystem
 MeshSystem
 meshsystem.cpp
-meshsystem.cpp(1127): 
+meshsystem.cpp(1129): 
 meshsystem.cpp(155): GetErrorModel() called before error model exists!
 meshsystem.cpp(908): 
 MeshSystem/DoNotLoadMorphsOnMobile
@@ -1637,7 +1636,7 @@ m_flSkinWidth
 m_flSphereRadius
 m_flSplayMaxAngle
 m_flSplayMinAngle
-m_flStanceDirectionOffsetMS
+m_flStanceDirectionMS
 m_flStartTime
 m_flStartTimeMax
 m_flStaticImpactVolume
@@ -1951,6 +1950,7 @@ modeldoc24
 modeldoc25
 modeldoc26
 modeldoc27
+modeldoc28
 modeldoc3
 modeldoc4
 modeldoc5
@@ -2159,6 +2159,7 @@ m_twistLowLimitValue
 m_Type
 m_types
 multiplayer_break
+m_UserFriendlyName
 .M;UU
 m_value
 m_vAngularTargetVelocity
@@ -2227,7 +2228,6 @@ N37CTypesafeIntrospectedToKV3TypeManagerILy1818520950E15PermModelData_tE28IKV3Re
 N37CTypesafeIntrospectedToKV3TypeManagerILy440006569334E13CMorphSetDataE26IKV3ResourceAllocatorUtilsE
 N37CTypesafeIntrospectedToKV3TypeManagerILy440006569334E13CMorphSetDataE28IKV3ResourceDeallocatorUtilsE
 "N$4$n
-	!n9	
 nav_attribute_avoid
 nav_data
 nBeginDynamic
@@ -2271,6 +2271,7 @@ No DATA block for resource '%s'
 <NO EXPRESSION>
 <no failure reason set>
 (None)
+NoPoseControl
 normal
 <No schemasystem>
 notconnected
@@ -2404,6 +2405,8 @@ Please add a Skeletal Input Settings node to the model in ModelDoc
 POINT
 point0
 point1
+pose_control
+pose_control_type
 POSE_SPACE_BONE
 POSE_SPACE_MORPH
 position
@@ -2530,6 +2533,7 @@ runspeed
 %s+--
 %s|  % 2d: [% 3d] %-12s %s
 %s|  % 2d: %s [Offset: %d]
+	!s9	
 %s| AlignOf: %d
 %s| Base Class%s: %d
 SceneSystem_002
@@ -2795,7 +2799,6 @@ void CUtlBlockMemory<Vector2D, int>::ChangeSize(int) [T = Vector2D, I = int]
 void CUtlBuffer::VaPrintf(const char *, va_list)
 void FillVBForAttribute(uint8 *, CMeshVertexAttribute *, const RenderInputLayoutField_t &, int &, float *, int &, float *, bool, bool, const Vector &, int *)
 VP4003
-vpcf1
 vpcf10
 vpcf11
 vpcf12
@@ -2960,9 +2963,11 @@ ZN37CTypesafeIntrospectedToKV3TypeManagerILy1818520950E15PermModelData_tE24Deall
 ZN37CTypesafeIntrospectedToKV3TypeManagerILy440006569334E13CMorphSetDataE15AllocateAndLoadER23CKV3TransferLoadContextPK21ResourceBindingBase_tP29IRD_RegisterResourceDataUtilsE15CAllocatorUtils
 ZN37CTypesafeIntrospectedToKV3TypeManagerILy440006569334E13CMorphSetDataE24DeallocateDestroyCleanupEPvP25IResourceDeallocatorUtilsE17CDeallocatorUtils
 _Znam
+_ZnamRKSt9nothrow_t
 zn@)j
 _ZNV16CThreadFastMutex4LockEyj
 _Znwm
+_ZnwmRKSt9nothrow_t
 _ZTVN10__cxxabiv117__class_type_infoE
 _ZTVN10__cxxabiv120__si_class_type_infoE
 _ZTVN10__cxxabiv121__vmi_class_type_infoE

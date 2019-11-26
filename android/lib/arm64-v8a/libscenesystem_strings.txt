@@ -17,6 +17,7 @@
 ((@-)
 {}[]=, 	
 {}[]()=&, 	
+@=(?@
 @-   
 @- ))
 @- 	 
@@ -35,6 +36,7 @@ $0  }
 0~   
 00000000-0000-0000-0000-000000000000
 00010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899
+0.005
 $0// $1
 $0$1}
 $0$1 = $2
@@ -42,6 +44,7 @@ $0$1 = $2
 $0$1$2 $3 = $4
 0123456789abcdef
 \%03o
+06`?@
 06h2@
 %08dx.geo
 0a@9/
@@ -63,8 +66,9 @@ $0 to $1,
 0x%016llX : %s
   0x%08X %s,
 "0x" must be followed by hex digits.
-"0y]S
+"0y'N
 -1.000000
+1024.0
 10CEntityMsg
 10CMsg_CVars
 10CMsgQAngle
@@ -187,6 +191,7 @@ $0 to $1,
 20ISceneObjectDescBaseI25CSceneLightObjectInternalE
 20ISceneObjectDescBaseI28CBindlessFastPathSceneObjectE
 20ISceneObjectDescBaseI28CSceneLightProbeVolumeObjectE
+20ISceneObjectDescBaseI33CAmbientOcclusionProxySceneObjectE
 20ISceneObjectDescBaseIN23CCharacterDecalRenderer26CCharacterDecalSceneObjectEE
 21CPointLightObjectDesc
 21CResolveLayerRenderer
@@ -251,12 +256,13 @@ $0 to $1,
 29CVolumetricFogClipmapRenderer
 2	a@9Ia
 2	AA9
+	2a}M
 2_BONE_IK
 2#.CSVCMsgList_UserMessages.usermsg_t
 %.2f ms
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
-2h2"9
 2	h(8
+2h~%9
 	2	i*
 2	i78
 2	i;8H
@@ -265,8 +271,8 @@ $0 to $1,
 2ij(8F
 2j"@9)p
 2?k78
-2_k88
 2?k88
+2_k88B
 2njj8l
 2Way_0( %s )
 2Way_1( %s )
@@ -276,6 +282,7 @@ $0 to $1,
 2*y4xaJAy
 2*y(x	
 2*Y(x
+2zz%9
 -3@)+
 30CModelConfigElement_RandomPick
 30CProjectedDecalSceneObjectDesc
@@ -289,6 +296,7 @@ $0 to $1,
 32CNETMsg_SpawnGroup_LoadCompleted
 32CSVCMsg_GameSessionConfiguration
 333?1
+33CAmbientOcclusionProxySceneObject
 33CLightPropagationVolumeObjectDesc
 33CModelConfigElement_AttachedModel
 33CNETMsg_SpawnGroup_ManifestUpdate
@@ -301,6 +309,7 @@ $0 to $1,
 34CSVCMsgList_UserMessages_usermsg_t
 35CInputLayoutRegistration_sm_hLayout
 36CModelConfigElement_SetMaterialGroup
+37CAmbientOcclusionProxySceneObjectDesc
 37CCopySkyLightingPixelsProceduralLayer
 38IMaxSwapChainDimensionsChangedListener
  [%.3f server clamped to %.3f]
@@ -313,9 +322,8 @@ $0 to $1,
 ?456789:;<=
 456789:;<=
 4*aNc
-	4B9i
 4CMDL
-4h'\)
+4h'])
 4h"@9
 4h&@9
 4h.A9
@@ -336,16 +344,17 @@ $0 to $1,
 4q:Aip
 5?33s?r_pixelvisibility_partial
 5(3@9
+5	{e9
 5hf@9
 5Hku8|
 5hr@9H
 )5IJ(}
 5i.@y
 5(kv8
-5	QM9	
-5.rj`
+5	QM9)
 5@y)}
 )5@yi
+ = 6:
 ?6`*@
 ?6	(@
 /6`>@
@@ -355,9 +364,6 @@ $0 to $1,
 '6`:@
 '6	(@
 %6.2f %6.2f %6.2f %.3f %.3f %.3f
-)6B9)
-)6B9i
-	6B9i
 6ConVar
 ?6`F@
 /6h.@
@@ -374,6 +380,7 @@ $0 to $1,
 6hBA9	Q
 6hbB9	7
 6HC@9
+6h~e9
 6hFA9
 _6hj@
  6hJ@
@@ -404,7 +411,7 @@ _6inA9
 '6j.@
 (6j2@
 `6j6A
-/6s"@
+(6s"@
  6tj@
 (6u"@
 ?6v*@
@@ -421,7 +428,6 @@ _6inA9
 76i&@
 76iB@
 76iJ@
-7b@)6fA){C
 7h	 7h
 7h"@9
 7hf@9
@@ -430,7 +436,6 @@ _6inA9
 7hf@9h
 7hr@y
 7hr@yi
-7HWX7
 7ib@9
 7ib@9i
 7IConVar
@@ -462,13 +467,12 @@ _8o%@8
 `"@9	
 (@@9(
 (@@9	
-(@@9	-
 (@@9	/
-(@@9	.
 )!@9)
 )	@9*
 @9)!@
 @9*	@
+	!~9	
 	)@9)
 	)@9*
 	9	!@
@@ -478,6 +482,8 @@ _8o%@8
 9.1.15
 (@@9	2
 @92yr
+(@@9	3
+(@@9	4
 @9(! 7
 @9() 7
 @9%	@9&
@@ -524,16 +530,15 @@ _8o%@8
 @9	ki8
 9kj(8|
 9lY)<xZ)
-#9(M@
 (@@9sb
 (@@9t
 (@@9T
 @9T|@
 (@@9tb
 (@@9tB
-(@@9u
 @9U|@
-(@@9	x
+`9{WF
+(@@9	z
 @9 	@z
 9@z(|`
 9@zH~`
@@ -546,6 +551,8 @@ _8o%@8
 A-!(!
 !^a9-
 +a@9?
+	a}9	
+?A!9&
 {A9	=
 		A9?
 		A9	
@@ -571,6 +578,7 @@ A9	ii
 A9Kik
 +	A9lC
 ?A9tJ@
+a9{WF
 A-'@A-
 AA)/8@)1
 AA9(	
@@ -581,6 +589,7 @@ A)b("
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 abort
+AbsolutePoseControl
 ACT_IDLE
 Activity %s has %d sequences with a total weight of %d!
 ACTIVITY WEIGHTS
@@ -623,6 +632,7 @@ AE_MELEE_DAMAGE
 AE_NPC_BECOME_TEMPORARY_RAGDOLL
 AE_NPC_HURT_INTERACTION_PARTNER
 AE_NPC_SET_INTERACTION_CANTDIE
+AE_NPC_START_POWERED_RAGDOLL
 AE_NPC_WEAPON_FIRE
 AE_NPC_WEAPON_SET_SEQUENCE_NUMBER
 AE_PASSENGER_PHYSICS_PUSH
@@ -640,18 +650,12 @@ after sort
 A-G=@
 A-G1@
 A-G5@
-)Ag9?
 A-G9@
 Agg data %d: %p (%d parts, crc 0x%08X)
 aggregate_value
 Ah1xij/
-	AH9j
-	AH9J
-	AH9u
-	AH9x
 ai_model_info
 AIWalkable
-	Aj9	
 _A@k(
 		Aliases:
 Allocating new transform texture!
@@ -725,12 +729,12 @@ AnimVRHand_t
 annotation
 Annotation
 ", another member of oneof "
-aP9{WF
+	Ao9	
+@@ao_proxy_capsule_list
 ApplyNewState %d at %f
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
  a protocol 
 A protocol message was rejected because it was too big (more than 
-A))QA
 archive
  args were given.  Full format string was: "
 A sceneobject (perhaps a decal) is still in the world that needs to be deleted before deleting the world.
@@ -768,13 +772,13 @@ attenuation0
 attenuation1
 attenuation2
 Attribute counts between meshes is inconsistent
+A))UA
  auto alias
 auto_unragdoll_duration
-AX-B8#
 Ax_!"k
 AXk!#
+AY-B8#
 ?AYki
-Ayws@
 @-b	@
 !^B(*
 !^B(%
@@ -786,10 +790,9 @@ B-1HD-
 )!B9)
 B@9		
 ^B9h^
-(<B9h
-) B9(H@
-	!b9I
+(\B9h
 b@9J)F
+)@B9(L@
 bA9hb
 BA9iB
 bA9J!F
@@ -830,7 +833,6 @@ Batch: %d
 bB9hb
 BB9hB
 BB9hj:8
-BB9"y
 B-c("
 !	B-C
 BC6h compression not supported on this target (windows only).
@@ -872,7 +874,6 @@ BindRenderContext
 binner_shadow_depthDS.vtex
 binner_shadow_depthRT.vtex
 @}Biu
-BKyhB
 bL9`2
 bL9`s
 blendamount
@@ -889,6 +890,7 @@ body_type
 # bone
 BoneChannel
 bonemerge
+bonename
 bone_name
 bone_names
 Boolean default must be true or false.
@@ -920,10 +922,9 @@ burst_scale
  but not used.
 ", but only 
 <b>Viewport X</b>=%d <b>Y</b>=%d <b>Width</b>=%d <b>Height</b>=%d  <b>MinZ</b>=%.3f <b>MaxZ</b>=%.3f
-BX-B8#
 ^B))Y@
+BY-B8#
 B@yhB
-'By_! k#<
 By?! k
 bytes
 bytes. 
@@ -935,13 +936,13 @@ C-2-@
 C6FaceSkyboxObjectDesc
 C-!8"
 (C@9(
-C9)5C
+C9)-C
 (C@9h
-c9ibD
 cA9s~
 cable
 CAimConstraint
 Call set methods to initialize MapKey.
+CAmbientOcclusionProxySceneObjectDesc
 CAnimatableSceneObjectDesc
 CAnimationDecodeContext::AddAnimationDecodeDesc ran out of allocator memory (1)
 CAnimationDecodeContext::AddAnimationDecodeDesc ran out of allocator memory (2)
@@ -1240,6 +1241,7 @@ CommandProcedureList
   Comment started here.
 compression
 "compression" attribute not found in the header.
+Compute EnvMapAndLightProbes
 Conditional Error: %s
 ConfigAttachedModel
 config_state
@@ -1326,6 +1328,7 @@ CPPTYPE_UINT64
 CProjectedDecalSceneObjectDesc
 CPVSData
 CPVSData::pvsmask_t
+(CQ9`
 CreateInterface
 create_particle
 creationsequence
@@ -1522,13 +1525,14 @@ dimension1
 dir=%d %d %d, err=%f
 DirectionalLight
 Directional lights are not supported by the LightBinner
+(discarded renderbatch = 
 displayWindow
 "displayWindow" attribute not found in the header.
 Dist Cull
 %d kb
 %d material binds for particles
    %d material computes, %d full material sets, %d similar sets, %d texture-only sets
-   %d material Vfx evals, %d material Vfx rule checks
+   %d material Vfx evals, %d material Vfx rule checks, %i cb updates (%ikb)
 dme_position_map
 dmg.bullets
 dmg.club
@@ -1560,8 +1564,8 @@ Draw Proxy: qh:%p org:<%d,%d,%d> (frame:%d)
 drawspotlights
 DrawSpotLightShadow
 #%d: %s 0x%p @ (%g,%g,%g)
+Dsc_cache_envmap_lpv_lookup
 -- %d Scene Worlds: --
-Dsc_force_materials_batchable
 %d=%s:  pos[ %8.3f %8.3f %8.3f ] ang[ %8.3f %8.3f %8.3f ]
 %d (target %d per view, originally %d with cost per job %d)
 .dummy
@@ -1584,7 +1588,6 @@ dynamic_interaction
 .dynstr
 .dynsym
 	(E)(
-e4B9e
 E-"5@
 eC@-g
 EconItemToolModel_001
@@ -1652,6 +1655,7 @@ Error: View "%s", layer "%s", render target "%s":
 Error: View "%s", Layer "%s", render target "%s": 
 Error: View "%s", render target "%s": 
 Error while parsing option value for "
+eTB9e
 ETC compression not supported on this target .
 event
 event_class
@@ -1725,7 +1729,7 @@ Extension ranges are not allowed in proto3.
 Extensions in proto3 are only allowed for defining options.
 Extensions of MessageSets must be optional messages.
 Extensions to non-lite types can only be declared in non-lite files.  Note that you cannot extend a non-lite type to contain a lite type, but the reverse is allowed.
-	(F)(
+	,F)(
 	)F))
 F-%:%
 *-F),5G)_
@@ -1766,8 +1770,9 @@ f %d %d %d
 FeetSettings
 FeModel combiner: Too many ropes (%u) or links (%u): cannot fit sum in uint16
 %f %f %f %f
+fff>fff>fff>fff>
 fflush
-F-H-C
+F-H]F
 field
   Field       : 
 Field "
@@ -1851,6 +1856,8 @@ FloatBitMap_t::WriteToBuffer: Received improper buffer size %s (expecting %s), s
 float( %f )
 fltx4
 F_MORPH_SUPPORTED
+Fog Clipmaps - insufficient shadow atlas space %d units centered on (setpos %d %d %d) - some lighting will be missing from the fog
+Fog Clipmaps - too many lights (max: %d) %d units centered on (setpos %d %d %d) - some lighting will be missing from fog
 fog_color
 fogcontributionstrength
 fog_hdrcolorscale
@@ -1879,14 +1886,12 @@ F_TRANSLUCENT
 FvP12CSceneObjectE
 =.f?y
 Fy?! k
-	(G)(
 G6hBB9
 g6hn@
 g6hRB9
 g6i^@
 g6in@
 G6v.@
-	!g9	
 game_class
 GAMECONSOLE
 game_keys
@@ -1990,6 +1995,7 @@ $#GameUI_Disconnect_Request_HLTVRelay
 #GameUI_ServerRequireSteams
 GameUIService_001
 Gaussian
+GBy_! kCC
 GCC: (GNU) 4.9.x 20150123 (prerelease)
 G channel not found
 G channel not found!
@@ -2038,6 +2044,7 @@ G-G=@
 G-G1@
 G-G5@
 G-G9@
+	(G)h
 GK-Tk
 g_Mathlib_GammaToLinearByteTable
 .gnu_debuglink
@@ -2061,14 +2068,13 @@ h&?);
 h&@)?
 !.H	 
 #H)	}	
+	(H)(
 	(H))}@
 h"0yI
 H@-1	@
 h1xnj 
-h2@9h
 h2D9h
 h2@yi
-h3@9h
 *-H),5I)_
 H6hV@
 h)8Ay)
@@ -2098,20 +2104,19 @@ hB@9(
 hB@9)
 hb@9h
 hb@9H
-h"B9h
 hB@9h
 h"B9H
 hB@9H
 hB@9t
 hbAy`V
 hbB9h
-hBC9	
-hbD9I
-hbD9t
+hBB9h
+hbC9)
 hC@9h
 HC@9h
 HCTonemapManifest
 !hdx?
+h~e9i
 headtype
 health
 health_override
@@ -2130,12 +2135,9 @@ hFD9u
 H*)	I*)
 HIGHDPI
 hi,xk
-h&@)j
 H$@-J
-hj48{	
 *hj)8h
 hj)8H
-hj)8*r
 hJAyJ
 hjj8	
 h*@)K
@@ -2158,15 +2160,16 @@ hrAy`Z
 			HRT = %llX, MSAA = %s
 hr@y`
 hR@y`
-hR@yiF@
 hr@yiFA
+hR@yiJ@
 hR@yu
 hR@yv
-hR@yvf
+hR@yvj
 hS@9HS
 hurt_me
 hurt_them
 hv@9)
+	*hvw
 HW Does not support occlusion queries!
 Hx)|@
 h*@y_
@@ -2179,7 +2182,6 @@ I@-$	@
 i1xhj*
 i1xhj+
 i1xjj,
-i3@)kW
 i58hbAyi
 i6@yh
 	i{8i
@@ -2187,7 +2189,9 @@ i)8i&
 ?i(8?i*x?i+
 _i)8j
 i"@9@
+I9h{%9(M@
 i"@9JIG
+iAQ9k
 ib@9`
 ib@9(
 ib@9)
@@ -2229,9 +2233,9 @@ i>D-nrA
 )idx9
 ". If this is intended, set 'option allow_alias = true;' to the enum definition.
 	(If you are in tools mode, you can add SVF_TOOL_VIEW to your view to allow dynamic allocations.)
-!iH}!
 ii8((
 	ii8h
+ii8h$
 ii8#hi8
 I*)!I*)AI*)
 Iii8*
@@ -2239,17 +2243,12 @@ Iii8*
 Ii+x!
 i"@)j
 *ij(8
-*ij(8`
-*ij(8<
-*ij(8{
+*ij(8:}
+*ij(8(}
 ij(8(
-ij(8\
-*ij(8E
-*ij(8i
+*ij(81}
 *ij(8kj*
-*ij(8N
-*ij(8r
-*ij(8W
+*ij(8y
 ij(8Z
 ijj8?
 IjJY@
@@ -2437,14 +2436,14 @@ j48	C
 j48t^@
 j4xH;@
 j58hf@9(
-j)8	=
-j)8	1
-j887R
-j88a&l
-j(8h<
+j)8	3
+j88a.l
+j88PH
+j(8hl
 j)8hZ@
 j(8jj)8
-j(8uj)8
+j)8	m
+j(8tj)8
 J!@9#
 J]A9_
 jA9hj
@@ -2487,11 +2486,12 @@ json_name = "
 jstype
 JSType
 jstype is only allowed on int64, uint64, sint64, fixed64 or sfixed64 fields.
+jU>)`
 j<@-UP@-i
 j@)UqA)
 jv8?)
 j(xhb@9h
-j*xhfw
+j,xK{
 j:@y)
 JYix*$
 	*jz-
@@ -2503,13 +2503,15 @@ K1D)M9E)
 K1F)M9G)
 K1H)M9I)
 ?k58D
-?k68vE
-?k78-
+k78|{
+*?k78e
 ?k78h
-*?k78L
 k78o_
+k78wy
+_k88a
 k(8vV@
 K	A9lC
+kAKJJ
 kAKJk
 K-eb@
 Key in map fields cannot be enum types.
@@ -2521,12 +2523,11 @@ KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s
 KeyValues::RecursiveSaveToFile: TODO, missing code for TYPE_COLOR.
 KeyValues::SaveToFile: couldn't open file "%s" in path "%s".
 KeyValuesSystem
-Kfff>fff>fff>fff>
 )kh8)
 kh8ij(8h
 	kh8?u
 K)@)j
-kj8hj*8h<
+kj8hj*8hl
 kj*8l
 kji8v
 k_k<8
@@ -2545,13 +2546,8 @@ KV Conditional Evaluation Error
 Kykx)
 !.l	 
 ,)L	@
-(#L9`
 "L9`2
 (#L9:3
-(#L9@3
-(#L953
-L9hsC9
-@-$LA
 La@9K
 la@9L	
 L	A9mC
@@ -2972,7 +2968,6 @@ m_flEmissionDuration
 m_flEmissionScale
 m_flEmitRate
 m_flexControllers
-m_flExtraShaderData
 m_flFalloff
 m_flFarCullDistanceSquared
 m_flFingerScaleRatio
@@ -3089,7 +3084,6 @@ m_nControlPoint
 m_nControlPointNumber
 m_nCP
 m_nCPField
-m_nCubeMapPrecomputedHandshake
 m_nCurrentLOD
 m_nCurrentMeshGroupMask
 m_nD3DSemanticIndex
@@ -3126,7 +3120,6 @@ m_nLayerForceID
 m_nLayerId
 m_nLayerIndex
 m_nLayerMatchID
-m_nLightProbeVolumePrecomputedHandshake
 m_nMapType
 m_nMask
 m_nMeshGroupMaskSmall
@@ -3208,6 +3201,7 @@ modeldoc24
 modeldoc25
 modeldoc26
 modeldoc27
+modeldoc28
 modeldoc3
 modeldoc4
 modeldoc5
@@ -3335,7 +3329,6 @@ m_wristBones
 *m@x_! k
 ^m?-Y
 #N)	}	
-	(N)(
 &n0:0
 N23CCharacterDecalRenderer26CCharacterDecalSceneObjectE
 N23CCharacterDecalRenderer27CCharacterDecalRendererDescE
@@ -3505,6 +3498,7 @@ NetworkSystemVersion001
 Newline in string literal
 nf@9/
 NhFD9t
+NiBB9
 nIndex < m_RenderTargets.Count()
 nIndex == pList->m_nNumObjects - 1
 niqx?
@@ -3525,6 +3519,7 @@ Non-repeated field "
 Non-windows platforms don't support loading of JPG images
 Non-windows platforms don't support loading of PNG images
 Non-windows platforms don't support loading of TIFF images
+NoPoseControl
 normal
 Normalize3ComponentVectorInAttributes
 Normalized3x3SobelEdgeFilterFrom
@@ -3551,9 +3546,10 @@ NSt6__ndk110__function6__baseIFvP18CEnvMapSceneObjectEEE
 NSt6__ndk110__function6__baseIFvP25CSceneLightObjectInternalEEE
 NSt6__ndk110__function6__baseIFvP28CSceneLightProbeVolumeObjectEEE
 NSt6__ndk110__function6__funcIPFvP12CSceneObjectENS_9allocatorIS5_EES4_EE
+NSt6__ndk110__function6__funcIZN14CLightBinnerVr14InitForFrustumEP10CSceneViewP11ISceneLayerP14IRenderContextRK8CFrustumbyyE3$_4NS_9allocatorISC_EEFvP25CSceneLightObjectInternalEEE
 NSt6__ndk110__function6__funcIZN14CLightBinnerVr19GatherVisibleLightsER23CUtlVectorFixedGrowableI15ConsiderLight_tLm256EES6_P10CSceneViewRK8CFrustumyyE3$_0NS_9allocatorISC_EEFvP25CSceneLightObjectInternalEEE
-NSt6__ndk110__function6__funcIZN14CLightBinnerVr25AddEnvironmentMapsForViewEP10CSceneViewyyE3$_5NS_9allocatorIS5_EEFvP18CEnvMapSceneObjectEEE
-NSt6__ndk110__function6__funcIZN14CLightBinnerVr27AddLightProbeVolumesForViewEP10CSceneViewyyE3$_4NS_9allocatorIS5_EEFvP28CSceneLightProbeVolumeObjectEEE
+NSt6__ndk110__function6__funcIZN14CLightBinnerVr25AddEnvironmentMapsForViewEP10CSceneViewyyE3$_6NS_9allocatorIS5_EEFvP18CEnvMapSceneObjectEEE
+NSt6__ndk110__function6__funcIZN14CLightBinnerVr27AddLightProbeVolumesForViewEP10CSceneViewyyE3$_5NS_9allocatorIS5_EEFvP28CSceneLightProbeVolumeObjectEEE
 NSt6__ndk110__function6__funcIZN14CLightBinnerVr40ShadowSetup_AllocateDumbShadowsForLightsEP10CSceneViewP11ISceneLayerRK8CFrustumyyiE3$_2NS_9allocatorISA_EEFvP25CSceneLightObjectInternalEEE
 NSt6__ndk110__function6__funcIZN26CBindlessFastPathPartition21EnsureEnvironmentMapsEvE3$_0NS_9allocatorIS3_EEFvP18CEnvMapSceneObjectEEE
 NSt6__ndk110__function6__funcIZN32CBindlessFastPathSceneObjectDesc35EnsureLightProbeVolumeDescriptorSetEvE3$_1NS_9allocatorIS3_EEFvP28CSceneLightProbeVolumeObjectEEE
@@ -3583,6 +3579,7 @@ Number of objects culled by screen-size test:
 Number of objects culled by vis: 
 Number of objects occlusion-culled: 
 Number of objects passing cull check: 
+Number of objects pre-cull check: 
 Number of objects starting to fade: 
 Number of occlusion renders: 
 Number of pushconstant sets: 
@@ -3676,6 +3673,7 @@ Override. Old default was 45.
 Override. Old value was 1.0
 Overrides the map's fog settings (-1 populates fog_ vars with map's values)
 ($?)P
+	(P)(
 p6iv@
 p6jf@
 p7v	P7
@@ -3796,6 +3794,8 @@ Pong2
 Pos: %2.3f, %2.3f, %2.3f
 pos2Dtex2D
 PosColorUVNormalTangentVertexLayout
+pose_control
+pose_control_type
 POSE_SPACE_BONE
 POSE_SPACE_MORPH
 position
@@ -3855,7 +3855,7 @@ pthread_setspecific
 ptr( 0x%p )
 public_dependency
 ../public/ordered_constructor.h
-../public/scenesystem/sceneobject.h(2827): Material %s cannot render in mode %s but is being asked to
+../public/scenesystem/sceneobject.h(2844): Material %s cannot render in mode %s but is being asked to
 ../public/tier0/tslist.h
 ../public/tier1/utlblockmemory.h
 ../public/tier1/utlfixedmemory.h
@@ -3867,11 +3867,10 @@ public_dependency
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
 py_generic_services
-	(Q)(
 	Q@9I
 Q@9*Q
-"Q9{WF
 )qA9)i
+Q(AHJ
 QAngle
 	QB9i
 Qhc@9
@@ -3896,7 +3895,6 @@ R	}8)
 R8G8B8A8_ETC2_EAC
 R8G8B8_ETC2
 *R)8yv
-r	!"9_A'9A
 R@9hR
 RA9iR
 RadianEuler
@@ -4039,13 +4037,12 @@ Rhjh8(
 Rhjh8h
 Rhjhxh
 Rhj)x
-Rhkh8
 RHkh8
 Rigid; 
 RIhi8)
 R	ii8)
-R	ii8I
-R)ij8I
+R	ii8i
+R)ij8
 Rijh8
 Rijh8)
 Riji8(
@@ -4056,13 +4053,13 @@ RingReduction3
 RingReduction4
 R`j(8(
 RJAJJL
-rj/J)
+RJik8
 Rjji8
 Rjjj8
 rJMJJ
 RJMJJ,
 rJMJJi
-R?k78
+R?k78n
 R(kh8
 R	kh8)
 R	khx)
@@ -4076,6 +4073,7 @@ r_lpv_gi_scale
 <r_lpv_iterations
 r_lpv_ringing_reduction
 r_lpv_use_blockers
+r)MIJ
 Rmij8
 r)MIJh
 r_morphing_enabled
@@ -4097,10 +4095,14 @@ r_ssao_bias
 r_ssao_blur
 r_ssao_radius
 r_ssao_strength
+r_stereo_mode_anaglyph
+r_stereo_mode_crossed
+r_stereo_mode_parallel
+r_stereo_multiview_instancing
 rt_bakecubemap_depthstencil.vtex
 rt_bakecubemap.vtex
 r_texture_lod_scale
-Rtj(8(<
+Rtj(8(l
 rt_LPV_Blockers.vtex
 rt_lpvPingB.vtex
 rt_lpvPingG.vtex
@@ -4121,6 +4123,7 @@ ryjj8
 %s+--
 +++ %s: 
 !^S?@-
+	(S)(
 s1_mapname
 %s|  % 2d: [% 3d] %-12s %s
 %s|  % 2d: %s [Offset: %d]
@@ -4128,6 +4131,7 @@ s1_mapname
 S: %7.3f
 (S@9hS
 S@9	Q
+=(SA)
 SA)hb@
 SA)hJ@
 %s| AlignOf: %d
@@ -4188,10 +4192,10 @@ SceneSystem/CMTAtlasChunkSizeMobile
 SceneSystem/CMTAtlasHeightMobile
 SceneSystem/CMTAtlasWidthMobile
 scenesystem.cpp
-scenesystem.cpp(1202): 
-scenesystem.cpp(4357): 
-scenesystem.cpp(6209): Expecting 1 renderable pass for material "%s" but found %d!
-scenesystem.cpp(7433): Waited 500 ms for jobs to complete. Attempt to drain windows message queue. Jobs in queue = %d
+scenesystem.cpp(1207): 
+scenesystem.cpp(4340): 
+scenesystem.cpp(6236): Expecting 1 renderable pass for material "%s" but found %d!
+scenesystem.cpp(7462): Waited 500 ms for jobs to complete. Attempt to drain windows message queue. Jobs in queue = %d
 SceneSystem/CubemapFog
 scenesystemdebug
 SceneSystem/DisableShadowFullSort
@@ -4237,6 +4241,7 @@ sc_extended_stats
 sc_fast_object_reject
 sc_force_camera
 sc_force_lod_level
+sc_force_materials_batchable
 sc_force_push_constant_update_every_draw
 sc_force_single_display_list_per_layer
 sc_force_submit_count
@@ -4256,6 +4261,8 @@ sc_log_submits
 sc_max_framebuffer_copies_per_layer
 sc_multithread_sorted_layers
 sc_new_morph_atlasing
+sc_no_cull
+sc_no_vis
 %s_color
 %s (Color)
 sc_only_render_opaque
@@ -4284,6 +4291,9 @@ sc_setclassflags
 sc_setclassflags %s %d
 sc_setfloatattr
 sc_setintattr
+sc_shadow_depth_bias
+sc_shadow_depth_bias_clamp
+sc_shadow_slopescale_depth_bias
 sc_showclasses
 sc_show_rejected_objects
 sc_show_rejected_objects_range
@@ -4364,6 +4374,7 @@ shadowtexturewidth
 shapeType
 sharpStartAngle
 Should not reach here.
+Show cost of lights in fog clipmap constant buffer. yellow = 1 cost, red = 6 cost
 Show light priority values. 1 = normal lights, 2 = cached lights.
 Show occluder
 Show the occluder depth buffer mip level. 0=off, 1=1st mip, 2=2nd mip, etc...
@@ -4379,7 +4390,7 @@ size0
 size1
 SkeletonBoneBounds_t
 SkinnedObject
- *** Skip layer 
+ *** Skip layer '%s' 
 Skybox
 skybox.cpp
 SkyLightingSamples
@@ -4506,7 +4517,6 @@ Stencil bit dependency satisfied (bit %d)
 Stencil dependency layer : %s
 StencilReflection
 Stencil Reflection Render View
--stereo
 stop_immediately
 stop_instantly
 stop_on_seq_change
@@ -4569,13 +4579,13 @@ syntax
 syntax = "$0";
 =Syntax Error at offset: %d
 S-Y*x
-T) ( 
 T	0@9I$
 T	4@y?!"kC
 T: %7.3f
 *T)8yv
 T(@@9
 T)	@9
+@-$TA
 T&A@-
 </table>
 <table border="1">
@@ -4595,6 +4605,7 @@ T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<RenderPassSubPass_t, 8, sh
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<RenderSubPassAttachment_t, 4, short>, RenderSubPassAttachment_t, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<RenderSubPassAttachment_t, 4, short>, T = RenderSubPassAttachment_t, I = short]
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<texture_use_info_t, 1, short>, texture_use_info_t, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<texture_use_info_t, 1, short>, T = texture_use_info_t, I = short]
 T*-D)"
+T	)D)
 <td>3D_SKYBOX_LAYER</td>
 <td>CANNOT_BE_REFRACTED</td>
 <td>CAST_SHADOWS_ENABLED</td>
@@ -4696,6 +4707,7 @@ texturescale
 textures/dev/blue_noise_256.vtex
 textures/dev/ggx_integrate_brdf_lut_schlick.vtex
 T*-F)"
+T	)F)
 Tg@C-q @
 TG@C-Q @
 Tg@F-q8@
@@ -4756,8 +4768,8 @@ Ti"A)`
 Tib@9
 Tib@9)
 Tib@9	
-Ti"B9
 Ti"B9i
+TiBB9
 Ti*C)k"@
 	tickcount
 tick_interval
@@ -4770,7 +4782,6 @@ TIkx8i
 tiles
 TILT_TWIST
 Timer took %.4f
-TirC9
 TiV@y?
 Tj2@9j
 TjB@y
@@ -4801,6 +4812,7 @@ ToolService_001
 Too many cached shadows requested (%d) this frame (%d). Increase size of cached shadow atlas, please.
 Too many shadowed spot lights in the scene!  Some will be removed!
 ") to start from the outermost scope.
+Total : %d (%ukb)
 ".  To use it here, please add the necessary import.
 T? @q
 T? @q*
@@ -4887,7 +4899,9 @@ TYPE_SINT64
 TYPE_STRING
 TYPE_UINT32
 TYPE_UINT64
+U) ( 
 \U%08x
+U-0GR-2
 u64( %lld = 0x%llX )
 )u@9i
 uint32
@@ -4946,6 +4960,7 @@ Usage scope:
 use_additional_offset
 useMotionDamping
 usemtl initialShadingGroup
+Use multiview instancing for stereo rendering.
 userid
 UserInfoChangeService_001
 usermsgs
@@ -4967,7 +4982,7 @@ UVWQ8888
 u@yHu
 u@yku@y
 u@y+w
-V@9	Y
+V@9	[
 VA9iV
 V_acosf
 val_bool
@@ -5161,6 +5176,7 @@ V_qsort
 V_qsort_s
 VR_001
 vr_allow_time_sliced_shadow_map_rendering
+vr_baked_sun_shadow_distance
 vr_carry_type
 vr_cubemap_normalization_max
 vr_cubemap_normalization_roughness_begin
@@ -5170,9 +5186,9 @@ V_RemoveDotSlashes
 vr_enable_cached_lights
 vr_enable_lights
 VRenderDeviceSetupV001
-vr_fake_directionality
 VrLightCookieSettings
 vr_max_lights
+vr_show_light_fog_clipmap_cb_cost
 vr_show_light_priority
 vr_unlit_shadow_color
 VScript
@@ -5264,7 +5280,6 @@ WorldRendererMgr001
 Writing kdTree with %d triangles
 wrong submessage type
 wX@)u
-&X)(-
 \x%02x
 X360_DST16
 X360_DST24
@@ -5334,6 +5349,7 @@ _Z6DevMsgPKcz
 Z*=@8H
 =*!Z9	
 ZA9iZ
+ZA){C
 ZB9hZ
 'Z .c
 _ZdaPv
@@ -5362,9 +5378,10 @@ _ZN13CBufferString9SetLengthEibPi
 _ZN13CThreadRWLock11UnlockWriteEv
 _ZN13CThreadRWLock11WaitForReadEv
 _ZN13CThreadRWLock12LockForWriteEv
+ZN14CLightBinnerVr14InitForFrustumEP10CSceneViewP11ISceneLayerP14IRenderContextRK8CFrustumbyyE3$_4
 ZN14CLightBinnerVr19GatherVisibleLightsER23CUtlVectorFixedGrowableI15ConsiderLight_tLm256EES3_P10CSceneViewRK8CFrustumyyE3$_0
-ZN14CLightBinnerVr25AddEnvironmentMapsForViewEP10CSceneViewyyE3$_5
-ZN14CLightBinnerVr27AddLightProbeVolumesForViewEP10CSceneViewyyE3$_4
+ZN14CLightBinnerVr25AddEnvironmentMapsForViewEP10CSceneViewyyE3$_6
+ZN14CLightBinnerVr27AddLightProbeVolumesForViewEP10CSceneViewyyE3$_5
 ZN14CLightBinnerVr40ShadowSetup_AllocateDumbShadowsForLightsEP10CSceneViewP11ISceneLayerRK8CFrustumyyiE3$_2
 _ZN16CThreadSemaphore7ReleaseEiPi
 _ZN16CThreadSemaphoreD1Ev
@@ -5384,6 +5401,7 @@ _ZN22CThreadRWLock_FastReadC1Ev
 ZN26CBindlessFastPathPartition21EnsureEnvironmentMapsEvE3$_0
 ZN32CBindlessFastPathSceneObjectDesc35EnsureLightProbeVolumeDescriptorSetEvE3$_1
 _Znam
+_ZnamRKSt9nothrow_t
 zn@)j
 _ZNKSt11logic_error4whatEv
 _ZNKSt6__ndk16locale9use_facetERNS0_2idE

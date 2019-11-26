@@ -43,6 +43,7 @@ $@)  "
 17CParentConstraint
 18CRenderingPipeline
 18IRenderingPipeline
+1@9 C
 19CBoneConstraintBase
 19CModelConfigElement
 19CRenderingPipelines
@@ -81,6 +82,7 @@ $@)  "
 29CBoneConstraintPoseSpaceMorph
 29CRenderingPipelineOvertopMenu
 29CRenderingPipelinePostProcess
+2@9zJ
 2_BONE_IK
 	2	i*
 2Way_0( %s )
@@ -93,12 +95,9 @@ $@)  "
 33CModelConfigElement_AttachedModel
 34CModelConfigElement_SetRenderColor
 36CModelConfigElement_SetMaterialGroup
-=(3@9
-(3@9?
+(3@9i
 (3@9iJ
 (3@9j
-(3@9|J
-(3@9JA
 (3@9jJ
 3D Skybox
 3DSkyboxForward
@@ -130,7 +129,6 @@ $@)  "
 8CFmtStrNILi256ELb0EE
 8x9,7
 (@@9(
-9(3@9
 	@@9h
 (@@9H
 "@9hf@9i
@@ -141,8 +139,8 @@ $@)  "
 (@@9tB
 'A)	}	
 A-!(!
-A\9ht
 A-'@A-
+AbsolutePoseControl
 ACT_IDLE
 ACT_NEUTRAL_REF_POSE
 	ad9	
@@ -165,6 +163,7 @@ AE_MELEE_DAMAGE
 AE_NPC_BECOME_TEMPORARY_RAGDOLL
 AE_NPC_HURT_INTERACTION_PARTNER
 AE_NPC_SET_INTERACTION_CANTDIE
+AE_NPC_START_POWERED_RAGDOLL
 AE_NPC_WEAPON_FIRE
 AE_NPC_WEAPON_SET_SEQUENCE_NUMBER
 AE_PASSENGER_PHYSICS_PUSH
@@ -226,8 +225,8 @@ AnimStartLoop
 AnimSubtract
 AnimVRFinger_t
 AnimVRHand_t
-	AO9	
 AoProxyDebug
+	AP9	
 ApplyFog
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 archive
@@ -576,8 +575,9 @@ delete
 DepthPassBatchID
 depthprepass
 DepthPrepass
-Depth Pre-pass
 DepthPrePass
+Depth Pre-Pass
+Depth Pre-Pass Ancillary
 DepthPrePassDecals
 DepthPrePassNormals
 developer
@@ -681,7 +681,7 @@ f %d %d %d
 FeetSettings
 FeModel combiner: Too many ropes (%u) or links (%u): cannot fit sum in uint16
 %f %f %f %f
-F-Hy@
+F-HA@
 .fini_array
 FixupResourceName: Illegal full path passed in ("%s")!
 FixupResourceName: Illegal path, missing extension passed in ("%s")!
@@ -747,10 +747,7 @@ h&?);
 h&@)?
 #H)	}	
 =h2@9
-=h2@9_
-h2@9)
-h2@9I
-h3@9i
+=h3@9
 h)8Ay)
 h"@9h
 h.@9H
@@ -778,7 +775,7 @@ HostStateMgr001
 hurt_me
 hurt_them
 h&@y)
-I)@)!
+i*@)a
 ib@9j
 I CUtlLinkedList<int, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short> >::AllocInternal(bool) [T = int, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int, CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int>, unsigned int> >::NewNode(const T *) [T = CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, I = unsigned int, L = CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int>, unsigned int>]
@@ -844,7 +841,8 @@ is_debris
 #It contains connectivity part %d with %d vertices
 @ @-J
 j2?)?
-J38);
+j88\<
+jB/9iF/9k
 J-cb@
 J-dj@
 JEIJJ}
@@ -1274,6 +1272,7 @@ modeldoc24
 modeldoc25
 modeldoc26
 modeldoc27
+modeldoc28
 modeldoc3
 modeldoc4
 modeldoc5
@@ -1384,6 +1383,7 @@ NoDecalGBuffer
 <no failure reason set>
 (None)
 NoOpPostprocess
+NoPoseControl
 <No schemasystem>
 notconnected
  Not Depth Pre-passed
@@ -1497,6 +1497,8 @@ Please add a Skeletal Input Settings node to the model in ModelDoc
 POINT
 point0
 point1
+pose_control
+pose_control_type
 POSE_SPACE_BONE
 POSE_SPACE_MORPH
 position
@@ -1794,6 +1796,7 @@ suppress
 surface_prop
 %s| Virtual: %s; Abstract: %s; TrivialConstr: %s; TrivialDestr: %s
 Syntax Error at offset: %d
+T('@)
 T(@@9
 tangent
 tangentu_signv
@@ -2112,7 +2115,6 @@ xf@)*
 Yaw; 
 yaw_end
 yaw_start
-yB-9#
 @y+}E
 {YIN?
 )YJJ)}
@@ -2139,9 +2141,11 @@ _ZN22CThreadRWLock_FastRead20UnlockReadAccountingEj
 _ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEj
 _ZN22CThreadRWLock_FastReadC1Ev
 _Znam
+_ZnamRKSt9nothrow_t
 zn@)j
 _ZNV16CThreadFastMutex4LockEyj
 _Znwm
+_ZnwmRKSt9nothrow_t
 _ZTVN10__cxxabiv117__class_type_infoE
 _ZTVN10__cxxabiv119__pointer_type_infoE
 _ZTVN10__cxxabiv120__function_type_infoE

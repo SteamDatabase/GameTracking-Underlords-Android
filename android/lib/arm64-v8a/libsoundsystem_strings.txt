@@ -2,7 +2,7 @@
 =+)@-)	@
 >{}()':
 --------------------------------
-!^!	 
+/-` "
 '":|;
 ":)@	 
 {}[]=, 	
@@ -17,7 +17,7 @@
 0.005
 [ 0.005714, 0.3, 1.083, 1.083, 2.0, 3.0 ]
 0.010
-0.015
+0.023
 %08x %s size %08x
 (0@9?
 )*0@9?
@@ -49,6 +49,7 @@
 14ConCommandBase
 14CSoundOpSystem
 14CSoundSamplers
+14CVoiceTraceKV3
 14ISoundOpSystem
 14ISoundSamplers
 14IVSoundManager
@@ -187,6 +188,7 @@
 22CSosOperatorStartVMix8
 22CSosOperatorSteamAudio
 23CDynamicsAudioProcessor
+23CEnvelopeAudioProcessor
 23CKV3ResourceTypeManagerILy2020175222EE
 23CSosOperatorBlockEvents
 23CSosOperatorCalcDoppler
@@ -327,6 +329,7 @@
 6iz@y
 6kB@y
 6x"@9
+6Y3Z9
 6)@y4
 *7`@)
 7h.@9H
@@ -350,7 +353,6 @@ _@8j.@
 +8)m&@
 8x9,7
 `"@9	
-!@9!(
 !#@9	
 "#@9	
 )!@9)
@@ -366,6 +368,7 @@ _@8j.@
 @9B("
 9CAudioSDL
 9CSfxTable
+!@9!h4
 9hb@9
 9hb@9)
 9hf@9(
@@ -402,6 +405,7 @@ A@9`	(
 [A)		A
 AA9	I@
 Abort processing sound event %s (scheduled recursively will not process this frame)
+AbsolutePoseControl
 accumulate_indexed_speakers
 Action Type
 ActionType_t
@@ -448,6 +452,7 @@ AE_MELEE_DAMAGE
 AE_NPC_BECOME_TEMPORARY_RAGDOLL
 AE_NPC_HURT_INTERACTION_PARTNER
 AE_NPC_SET_INTERACTION_CANTDIE
+AE_NPC_START_POWERED_RAGDOLL
 AE_NPC_WEAPON_FIRE
 AE_NPC_WEAPON_SET_SEQUENCE_NUMBER
 AE_PASSENGER_PHYSICS_PUSH
@@ -460,17 +465,14 @@ AE_VORTIGAUNT_ZAP_SHOOT
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
 Ah1xij/
-	aI9	
 	(Aik}@
 ai_model_info
 AIWalkable
 _A@k(
-	aK9	
-AL9h	
+A-#}K
 allowstatic
 AllPass
 -altgameroot
-A-#MN
 (aN#(aN
 anchor_angles
 anchor_position
@@ -511,6 +513,9 @@ Application is not loaded.
 apply
 Apply cos(angle) * weight before pan law
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
+	aQ9	
+)AQ9?
+	aR9)
 archive
 Arrangement: %s
 arrangement_start
@@ -546,8 +551,9 @@ Available Operators:
 *A_x)a_xk^
 AXk!#
 )!Ay?	
+!Ay@G
 ?AYki
-!AyNK
+!Ayq;
 @-B	@
 B-" @
 B-(  
@@ -753,6 +759,7 @@ ClothShapeList
 ClothShapeSphere
 Cmath_filter_float
 CMemAllocSystemInitialize
+cn@9	
 collision_group
 collision_prop
 COLORCORRECTION_VERSION_1
@@ -962,7 +969,6 @@ __cxa_pure_virtual
 Cycle or diamond double-reference to '%s'
 @-D	@
 D-  "
-d6@yc
 D-`8 
 D-!8 
 D-)8,
@@ -1255,6 +1261,7 @@ force
 force_direction
 Forward Saw
 Found %d probes in %s.
+frames
 FREEING MATCH ENTRY:
 Free ?: %s
 friction
@@ -1316,7 +1323,7 @@ g_mastermixlayer:
 g_pMemAlloc
 G-qN@
 grainSampleCount
-graphName
+graph
 Graphs
 gravity
 greater_than
@@ -1344,7 +1351,6 @@ HammerMapLoader001
 handindex
 HangWatchdog_IndicateActivity
 .hash
-H!Ayj
 hb@9`
 hB@9`
 hb@9h
@@ -1365,6 +1371,7 @@ health_override
 Height Reflectivity
 HelpSystem_001
 =hf@9
+hf@9!
 hf@9h
 hf@9H
 hf@9i
@@ -1375,6 +1382,7 @@ HIGHDPI
 Highest
 HighPass
 h&I)tb
+hj)8Z	
 hJAy`
 hJAy	
 HoA8	
@@ -1399,7 +1407,6 @@ h"@yj
 i1xhj*
 i1xhj+
 i1xjj,
-i2A9j	
 i2E9i
 i2@y?
 i68t.@
@@ -1430,9 +1437,9 @@ I CUtlRBTree<CUtlMap<unsigned int, SosOpFieldMapInfo_t *, unsigned short, CDefLe
 I CUtlRBTree<void *, int, bool (*)(void *const &, void *const &), CUtlMemory<UtlRBTreeNode_t<void *, int>, int> >::NewNode(const T *) [T = void *, I = int, L = bool (*)(void *const &, void *const &), M = CUtlMemory<UtlRBTreeNode_t<void *, int>, int>]
 )icx_
 )icx?
-i"D)5	
 ID of the sound device to use
 =i*D)`R
+i"D)U	
 )idx?
 )idx9
 *if@9
@@ -1580,7 +1587,6 @@ input_memory_type
 input_min
 input_mixgroups
 input_name
-inputName
 input_near_max
 input_near_min
 input_observer_position
@@ -1760,7 +1766,6 @@ itemName
 itemPos
 itemType
 itemTypeName
-ivA9j	
 +i*xA
 	i-xhN@yiJ
 *i.xi>@yj:
@@ -1769,7 +1774,7 @@ i#xjj-
 _i(xjnA
 _i(xjzA
 ixsyl
-!i@y 
+!i@y@
 )i@y_
 )i@y?
 i.@y	
@@ -1779,7 +1784,7 @@ I%@yJ
 Iymx`9,
 i@y@yl
 i@yYyix
-izA9j	
+*-@)j.
 @)J}	
 j58hf@9(
 j5@yk9@y?
@@ -1792,6 +1797,7 @@ JAJJ)
 jA]x*A
 jAZx*A
 )j.B),}
+Je@9*
 JEIJJ}
 j.E-R*(
 JIIJJ}
@@ -1819,11 +1825,11 @@ K-@ $
 k2B-m"C-i*D-
 k2D)m:E)	
 *k2@y
-_k68!
+_k68A
 k(8vV@
 K9y;xa
 kAKJJ
-ke@9K
+KAP9H
 key_groups
 KeyValueCache001
 KeyValues Error: %s in file %s
@@ -1851,7 +1857,6 @@ K @yK
 k"@yl
 k@y)Q@
 K @y, @y
-	!L9	
 last_sniff
 l"Ay	$
 LayerTriggers
@@ -1898,6 +1903,7 @@ List all known sounds.
 List all mixers to dev console.
 List all mix groups to dev console.
 List all mix layers to dev console.
+listener
 li*x)
 li@yK
 	@LJ!
@@ -1946,14 +1952,15 @@ m_actionInstanceType
 m_actionType
 m_additionalOutputs
 M-AiL
+mainGraph
 Main Output
 make_vertical
 malloc
+m_Angles
 MapListService_001
 mask_type
 MASK_WATER
 master_morph_weight
-MasterVolume
 match_duration_type
 match_entity
 Match Entity Index: %i
@@ -2028,6 +2035,7 @@ M-Bh
 m_bInitFromKilledParentParticles
 m_bInvertMatch
 m_bIsBlocking
+m_bIsUnderwater
 m_bLocalSpace
 m_bMatchEntIndex
 m_bMatchEventName
@@ -2097,18 +2105,22 @@ m_flDelay
 m_flDelayGain
 m_flDirectGain
 m_flDuration
+m_flElapsedTime
 m_flEmissionDuration
 m_flEmissionScale
 m_flEmitRate
 m_flEntIndex
 m_flFeedbackGain
+m_flHoldTimeMS
 m_fLifespanScaleExp
 m_flInitFromKilledParentParticles
 m_flInput0
 m_flInput1
 m_flLimiterRatio
 m_flLiteralValue
+m_flMasterVolume
 m_flMaxDuration
+m_flMaxVolumeChangePerBuffer
 m_flMultFactor
 m_flOpStrength
 m_flOpStrengthMaxScale
@@ -2116,6 +2128,7 @@ m_flOpStrengthMinScale
 m_flOpvar
 m_flOutput0
 m_flOutput1
+m_flPitch
 m_flPitchShift
 m_flQ
 m_flRadiusScale
@@ -2126,14 +2139,23 @@ m_flRatio
 m_flReleaseTimeMS
 m_flRMSTimeMS
 m_flScalePerParentParticle
+m_flSend
+m_flSendFacingDSP
+m_flSendRoomDSP
 m_flSlopeIncoming
 m_flSlopeOutgoing
 m_flStartTime
 m_flStartTimeMax
+m_flSystemVolumeFadeRate
 m_flTailAlphaScale
+m_flTime
+m_flTimeScale
+m_flValue
+m_flVolume
 m_flWidth
 m_flxfade
 m_ForceGenerators
+m_graphName
 m_groupList
 m_hSnapshot
 m_IkChain
@@ -2144,12 +2166,12 @@ min_angle
 m_Initializers
 min_note
 min_output
+m_inputName
 min_velocity_db
 Mirror
 Missing file '%s'
 Missing wav file '%s'
 mixDownRule
-MixGroups
 MixGroup %s:
 MixGroup %s: %f : %f : %f : %f : %f 
 mix_input
@@ -2175,6 +2197,7 @@ m_nBehaviorVersion
 m_nBiasType
 m_nBlockMaxCount
 m_nChannels
+m_nChannelSelect
 m_nClusterSizeMax
 m_nClusterSizeMin
 m_nControlInputIndex
@@ -2195,11 +2218,14 @@ m_nFilterType
 m_nFirstMultipleOverride_BackwardCompat
 m_nGrainSampleCount
 m_nGraphOutputChannels
+m_nGuid
 m_nIncomingTangent
 m_nIncrement
+m_nLayer
 m_nMapType
 m_nMaxCount
 m_nMinParticlesToEmit
+m_nMixGroups
 m_nOpScaleCP
 m_nOpStrengthScaleSeed
 m_nOutgoingTangent
@@ -2215,7 +2241,9 @@ m_nSetMethod
 m_nSortType
 m_nStopType
 m_nType
+m_nValue
 m_nVectorComponent
+m_nVoiceId
 Mod Depth
 modeldoc0
 modeldoc1
@@ -2238,6 +2266,7 @@ modeldoc24
 modeldoc25
 modeldoc26
 modeldoc27
+modeldoc28
 modeldoc3
 modeldoc4
 modeldoc5
@@ -2295,7 +2324,9 @@ MPropertyAutoExpandGroup
 MPropertyElementNameFn
 MPropertyFriendlyName
 MPropertySuppressField
+m_pStack
 m_pszSnapshotName
+m_pVoice
 m_Renderers
 mR@yl
 ms Delay
@@ -2304,16 +2335,20 @@ ms delay min
 ms Delay (tap 1)
 ms Delay (tap 2)
 ms Delay (tap 3)
+m_sendList
+m_sendName
 m_snapshotName
 ms of mod depth
 m_SolverSettingSource
 m_SolverType
+m_soundEventName
 m_spline
 m_stages
 m_Submixes
 m_tangents
 m_TargetSettingSource
 m_TargetSource
+m_trackName
 multiplayer_break
 Music volume
 mute: %3.2f
@@ -2326,7 +2361,11 @@ m_vDomainMins
 m_vecColorScale
 m_vecTailColorScale
 m_vEndTrailTintFactor
+m_vHandLeft
+m_vHandRight
 m_vLiteralValue
+m_vOrigin
+m_vsndName
 m"@y?
 !m@yA
 .M@yiA
@@ -2375,6 +2414,7 @@ nOffset < m_nAllocationSize
 No filename specified to export Steam Audio scene.
 noise_type
 No MP3 support, can't compile!
+NoPoseControl
 normalize_spread
 normalize_trig
 No scene loaded to export as Steam Audio scene.
@@ -2636,11 +2676,14 @@ Plat_WindowToOsSpecificHandle
 Play a note from a specified sampler
 Play a sound.
 Play a sound at a specified volume.
+playback
 playback_type
 play_endcap
 playvol
 point0
 point1
+pose_control
+pose_control_type
 POSIX
 PostProcessingSystem_001
 preferred_carryangles
@@ -2714,16 +2757,17 @@ PurgeAndDeleteAll: Deleting orphaned CSoundEvent pointer for %s via shutdown
 Purge and reload all vmidi data and files.
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
-q)#29
 )q@9)
+	!Q9	
 	Q@9?
 	Q@9	
 ?	@qA
 QAngle
-	qD9I
+q)c79
 Qi"A)`
 Qj$xij0
 Qj/xnj0
+	QL9I
 quantize_multiplier
 Quaternion
 Queued: elapsed time: %f, next sync time: %f, length: %f
@@ -2832,6 +2876,7 @@ ryjj8
 %*s(%08x):Stopping: %s (%08x) : elapsed time: %.2fs
 %s|  % 2d: [% 3d] %-12s %s
 %s|  % 2d: %s [Offset: %d]
+	!S9	
 %s| AlignOf: %d
 %s allocation count overflow
 %s allocation count overflow( %llu >= %llu )
@@ -3038,6 +3083,7 @@ snd_sos_show_opvar_updates
 snd_sos_show_opvar_updates_filter
 snd_sos_show_parameter_overwrite_warnings
 snd_sos_show_soundevent_param_overwrite
+snd_sos_show_soundevent_start
 snd_sos_show_track_list
 snd_sos_show_voice_elapsed_time
 snd_sos_soundevent_filter
@@ -3262,8 +3308,11 @@ start_beat
 Starting verification of Steam Game Cache.
 start_offset
 Starts a specified soundevent
+Start Sound Event: %s
 Starts the specified arrangement.
+startSubvoice
 StartTime: %f
+startVoice
 start_vsnd
 Static
 static void CGlobalConfigValueRegistry::HookUpConfigValue(const char *, ConfigType_t, ConfigValueType_t, CConfigValueOptions &&, const void **)
@@ -3292,8 +3341,10 @@ Stops a specified soundevent
 stopsound
 Stop sound event: %s
 Stops the specified track
+stopSubvoice
 StopTime: %f
 Stop Type
+stopVoice
 strchr
 strcmp
 strcpy
@@ -3319,11 +3370,11 @@ sync_type
 SystemAttributes
 _system_properties
 T(0@9
-T?#29
 		T9)
 T*-@9
 T*)@9
 T	!A9
+T?c79
 Tcih8
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<CSosPackedFieldData::Entry_t, 3, short>, CSosPackedFieldData::Entry_t, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<CSosPackedFieldData::Entry_t, 3, short>, T = CSosPackedFieldData::Entry_t, I = short]
 __temp_unserialization_member__
@@ -3385,7 +3436,6 @@ Tj"@yk
 TJ=@y_!+k
 TK	@9)A
 TKih8
-TKu@yk
 Tk"@yl
 Tl6B-oBC-q:D-
 TL	@9kA
@@ -3431,6 +3481,7 @@ Tried to load a polymorphic pointer with no '%s' key
 Truncated data
 TUNNEL Detected 
 turn_rate
+T*u@yJ
 Two Bone
 Two KV3 format GUIDs with the same human-friendly name ('%s')
 T+!@y_
@@ -3466,6 +3517,7 @@ Unsupported version %d for resource '%s' (Expected %d)
 update
 Update SoundEvent: %s
 UPDATE_STRING_TOKEN_DATABASE
+updateVoice
 US@95
 Usage: movie_fixwave wavname
 Usage:  playdelay delay_in_msec (negative to skip ahead) soundname
@@ -3571,7 +3623,7 @@ virtual CSfxTable *CVSoundTypeManager::GetSfx(const char *, bool)
 V_IsAbsolutePath
 VisBuilder_001
 V_isnan
-v"@-j.A-(
+v"@-j.A-h
 V_log10f
 V_logf
 VMaterialSystem2_001
@@ -3587,6 +3639,7 @@ vmix.cpp
 vmix_delay_desc_t
 vmix_dynamics_desc_t
 VMixEditTool001
+vmix_envelope_desc_t
 vmix_eq8_desc_t
 vmix_filter_desc_t
 vmix_filter_type_t
@@ -3671,6 +3724,7 @@ V_powf
 V_PrettifyMem
 VPROCESSOR_DELAY
 VPROCESSOR_DYNAMICS
+VPROCESSOR_ENVELOPE
 VPROCESSOR_EQ8
 VPROCESSOR_FILTER
 VPROCESSOR_FULLWAVE_INTEGRATOR
@@ -3808,6 +3862,7 @@ yiv@y
 @yJ|@
 *%@yJ
 +	@yJ
+@-#YJ
 )@yj1@
 )YJJ)}
 #@yjR
@@ -3828,7 +3883,6 @@ y+O@y
 )!@y =p
 y	q@y)
 @y	S@
-@ys2I
 yux)I@
 +yux)y{x
 ywx)I@
@@ -3877,8 +3931,10 @@ _ZN22CThreadRWLock_FastRead20UnlockReadAccountingEj
 _ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEj
 _ZN22CThreadRWLock_FastReadC1Ev
 _Znam
+_ZnamRKSt9nothrow_t
 _ZNV16CThreadFastMutex4LockEyj
 _Znwm
+_ZnwmRKSt9nothrow_t
 _ZTVN10__cxxabiv117__class_type_infoE
 _ZTVN10__cxxabiv120__si_class_type_infoE
 _ZTVN10__cxxabiv121__vmi_class_type_infoE

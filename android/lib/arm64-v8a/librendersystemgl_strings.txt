@@ -163,18 +163,19 @@ $@)#@@)
 26CDefaultKeyValuesErrorSpew
 26ICommandCompletionCallback
 27CSchemaUtlVectorManipulatorI10CUtlVectorI25VsInputSignatureElement_t10CUtlMemoryIS1_iEES1_E
+2	!89"
 28ISchemaCollectionManipulator
 2,	@9L
-2	a69?
 "2BRbr
 2DArray
 2Gio8
 2	h(8
-2hb!9
+2h"!9
 2hf!9
-2hj58AH
+2hj58
 2Hku8
 2hn!9
+2hR 9
 2ij(8
 2ij(8h6T
 2+imx
@@ -186,7 +187,6 @@ $@)#@@)
 2	ky8?
 2L%@x+
 2oi-x
-2	q59s
 2x"@9
 +3@))#
 3_0_gl
@@ -224,7 +224,6 @@ $4DTdt
 4hb@9
 4hbO9(
 4hBS9H	
-4h*ey
 4hf@9
 4hf@9(
 4h"F9(
@@ -335,6 +334,7 @@ _8Jhj8*
 @9	|	
 &@9*]
 #@@9	
+	!]9	
 	@91~
 9.1.15
 92ji8R
@@ -500,18 +500,17 @@ _A8B8G8R8_SNORM
 _A8B8G8R8_SRGB
 _A8R8G8B8
 _A8R8G8B8_SRGB
+	A{9*
 	A@9)
-	A\9	
 A@9(9
 A9a2@
 /A9a:J9`>
 A9`&B
-	A{9j
 	A{9J
-A9J)F
-	 A9JYG
-"A9)YG
-A9)YG
+A9J!F
+	 A9JQG
+"A9)QG
+A9)QG
 A(aN!
 $	A)Ar
 aBE9a
@@ -606,7 +605,6 @@ A)tU@)x
 A)TU@)X
 -autoconfig
 -autoconfig_level
-av9h	
 /AV?O!
 Ax?!3k
 Ax_!6k
@@ -617,11 +615,10 @@ Ax?! k@
 a?@yHYD
 Ayjb@
 Ay?! k
-	aZ9	
 B@9A1
 B9h&C
-bA9JYG
-BA9)YG
+bA9JQG
+BA9)QG
 Backing store not supported
 bad adaptive filter value
 Bad expression operator: '%c%c', expected C style boolean expression operator.
@@ -660,7 +657,6 @@ binary_lz4
 BinaryProperties_GetValue
 binormal
 b"J9_@
-BK@9#a
 BKbhTb~XBK!;
 blendindices
 blendweight
@@ -684,6 +680,7 @@ bool3
 bool4
 bool CRenderDeviceGL::CreateRenderThread()
 bool InitializeDisplayDB(const CUtlVector<GLContextVersion_t> &)
+BOOLLITERAL
 borrow
 Bound texture to unsupported shader.
 box2i
@@ -766,6 +763,7 @@ cHRM White Y
 chunkCount
 `chunkCount' attribute is not found in the header.
 c@L@A
+clamp
 CLargeCommandBufferChunk CUtlMemoryPoolMT
 Clearing TEXTURE_WAITING_FOR_IO flag because it's has no streaming request id anymore
 !C)lhi
@@ -790,6 +788,7 @@ COLORCORRECTION_VERSION_1
 CommandLine
 Command stream pools: %s bytes in base, %s bytes in medium, %s bytes in large (%s extra data fallbacks)
 .comment
+COMMENT
 COMMON
 Compatibility
 Compilation failed; no code produced.  Log string from driver:
@@ -1003,6 +1002,7 @@ dnl9cjl9bfl9abl9
 Domain Shader
 -dontEvictTextures
 DotaCardGameClient_001
+<DOWN>
 Driver Description :  %s
 Driver : %s Version : %d.%d
 ds_5_0
@@ -1038,6 +1038,7 @@ DynamicComboRule
    DynamicComboRule( 
 Dynamic combos:
 *** Dynamic combo "%s" in %s cannot refer to a feature! Only static combos can refer to features.
+Dynamic combo %s referenced in expression doesn't exist.
 .dynstr
 .dynsym
 E))}@
@@ -1082,6 +1083,7 @@ END_UNIFORMBINDINGS*/
 EngineInitialization
 EngineServiceMgr001
 EnvironmentMapBuilder_001
+<EOR>
 __errno
 <error>
 ERROR
@@ -1134,14 +1136,18 @@ ERROR: Specified full path %s does not lie under the mod search path!)
 ERROR: Specified path %s could not be made content-relative
 *** Error! Too many args found in rule in %s!
 *** Error! Too many or too few arguments to a rule in %s!
+ESC_SEQ
 ETC compression not supported on this target .
 EventSystem001
 Evict all resident texture.
 Exceeded size limit while expanding chunk
 EXECUTABLE_PATH
+'exists'
 Expecting compressed combo data
+Expecting %s
 EXPORTSYSTEM_INTERFACE_VERSION_001
 __Expression__
+Expression Parser - 
 EXRHeader variable is not initialized.
 EXRReadFile() - B channel not found!
 EXRReadFile() - G channel not found!
@@ -1158,7 +1164,7 @@ Extra compressed data
 Extra compression data
 extreme cHRM chunk cannot be converted to tristimulus values
 F-4WE-6_G-
-f!9hb!9-
+f!9hb!9c
 F9Ii@
 \|FA@
 Failed AllocateTexture for '%s'
@@ -1187,6 +1193,7 @@ F(aNb(a
 FATAL ERROR: unable to register all schema data: %s
 FCVAR_NEVER_AS_STRING
 _feature
+Feature combo %s referenced in expression doesn't exist.
 FeatureRule
 features
 Features
@@ -1254,6 +1261,9 @@ FloatBitMap_t::LoadFromBuffer: Unsupported color format, skipping!
 FloatBitMap_t::LoadFromFloatBitmap: Received improper bitmap size, skipping!
 FloatBitMap_t::WriteToBuffer: Received improper buffer size %s (expecting %s), skipping!
 float( %f )
+FLOATLITERAL
+FLOATSUFFIX
+floor
 fltx4
 FontManager_001
 Force disabling Separate Shader Objects for ARM Mali.
@@ -1276,6 +1286,7 @@ Freed XMS handle %u
 frexp
 __FROM_ATTRIBUTE__
 __FROM_ATTRIBUTE_OR_FEATURE__
+Function %s() expects %d arguments. Found %d.
 fYfxk
 	!g9`
 	!g9i
@@ -3850,7 +3861,7 @@ h"'90
 h.@9H
 h"`9tb 
 h"A9a
-h"A9)YG
+h"A9)QG
 HammerMapLoader001
 HangWatchdogInternal_BeginScope
 HangWatchdogInternal_EndScope
@@ -3865,7 +3876,7 @@ hb@9h
 hb@9H
 hb^9t
 h"b9tb"
-hBA9)YG
+hBA9)QG
 hbO9(
 hc87hd89hc88hb8
 hc8#h 8
@@ -3885,6 +3896,8 @@ HEADER
 header crc mismatch
 , height = 
 HelpSystem_001
+HEX_DIGIT
+HEXINTEGERLITERAL
 hf@9a*
 hf@9h
 h"F9i
@@ -3900,13 +3913,12 @@ Hih8h
 Hih8R
 Hitch alert: Present was waiting for %d iterations and %.1f seconds.
 hi)xh
-hj58&
 hj8."@
 hJAy	
 <hji8
 h'@)jS@
-<hju8	_
-hju8	E
+<hju8	j
+hju8	P
 hJV9H
 hjx8(
 hjx8H
@@ -3918,7 +3930,8 @@ hn8c|
 HookUpTextureBits
 HostStateMgr001
 hr1yI
-hr@9J
+hr1yMX
+hr@9JA<
 =hrCy
 hrqy`Z
 hr@y`
@@ -3947,7 +3960,7 @@ ib@9(
 ib@9)
 ib@9i
 ib@9l
-ibA9JYG
+ibA9JQG
 IB: %d buffers, %.2f MB
 IB)Mki
 IB "%s" : Attempted to create too big of a dynamic index buffer!
@@ -3965,6 +3978,7 @@ I CUtlLinkedList<__GLsync *, unsigned short, false, unsigned short, CUtlMemory<U
 I CUtlLinkedList<RasterizerStateGL_t, long long, true, long long, CUtlFixedMemory<UtlLinkedListElem_t<RasterizerStateGL_t, long long> > >::AllocInternal(bool) [T = RasterizerStateGL_t, S = long long, ML = true, I = long long, M = CUtlFixedMemory<UtlLinkedListElem_t<RasterizerStateGL_t, long long> >]
 I CUtlLinkedList<UniformBinding_t, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<UniformBinding_t, unsigned short>, unsigned short> >::AllocInternal(bool) [T = UniformBinding_t, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<UniformBinding_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<CGLShaderHashValue, ProgramBinaryGL_t, unsigned int, bool (*)(const CGLShaderHashValue &, const CGLShaderHashValue &)>::Node_t, unsigned int, CUtlMap<CGLShaderHashValue, ProgramBinaryGL_t, unsigned int, bool (*)(const CGLShaderHashValue &, const CGLShaderHashValue &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CGLShaderHashValue, ProgramBinaryGL_t, unsigned int, bool (*)(const CGLShaderHashValue &, const CGLShaderHashValue &)>::Node_t, unsigned int>, unsigned int> >::NewNode(const T *) [T = CUtlMap<CGLShaderHashValue, ProgramBinaryGL_t, unsigned int, bool (*)(const CGLShaderHashValue &, const CGLShaderHashValue &)>::Node_t, I = unsigned int, L = CUtlMap<CGLShaderHashValue, ProgramBinaryGL_t, unsigned int, bool (*)(const CGLShaderHashValue &, const CGLShaderHashValue &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CGLShaderHashValue, ProgramBinaryGL_t, unsigned int, bool (*)(const CGLShaderHashValue &, const CGLShaderHashValue &)>::Node_t, unsigned int>, unsigned int>]
+I CUtlRBTree<CUtlMap<CUtlString, bool, unsigned short, bool (*)(const CUtlString &, const CUtlString &)>::Node_t, unsigned short, CUtlMap<CUtlString, bool, unsigned short, bool (*)(const CUtlString &, const CUtlString &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, bool, unsigned short, bool (*)(const CUtlString &, const CUtlString &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<CUtlString, bool, unsigned short, bool (*)(const CUtlString &, const CUtlString &)>::Node_t, I = unsigned short, L = CUtlMap<CUtlString, bool, unsigned short, bool (*)(const CUtlString &, const CUtlString &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CUtlString, bool, unsigned short, bool (*)(const CUtlString &, const CUtlString &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<CVfxHashValue, int, int, bool (*)(const CVfxHashValue &, const CVfxHashValue &)>::Node_t, int, CUtlMap<CVfxHashValue, int, int, bool (*)(const CVfxHashValue &, const CVfxHashValue &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CVfxHashValue, int, int, bool (*)(const CVfxHashValue &, const CVfxHashValue &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<CVfxHashValue, int, int, bool (*)(const CVfxHashValue &, const CVfxHashValue &)>::Node_t, I = int, L = CUtlMap<CVfxHashValue, int, int, bool (*)(const CVfxHashValue &, const CVfxHashValue &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CVfxHashValue, int, int, bool (*)(const CVfxHashValue &, const CVfxHashValue &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<GLMTexLayoutKey, GLMTexLayout *, unsigned short, bool (*)(const GLMTexLayoutKey &, const GLMTexLayoutKey &)>::Node_t, unsigned short, CUtlMap<GLMTexLayoutKey, GLMTexLayout *, unsigned short, bool (*)(const GLMTexLayoutKey &, const GLMTexLayoutKey &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<GLMTexLayoutKey, GLMTexLayout *, unsigned short, bool (*)(const GLMTexLayoutKey &, const GLMTexLayoutKey &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<GLMTexLayoutKey, GLMTexLayout *, unsigned short, bool (*)(const GLMTexLayoutKey &, const GLMTexLayoutKey &)>::Node_t, I = unsigned short, L = CUtlMap<GLMTexLayoutKey, GLMTexLayout *, unsigned short, bool (*)(const GLMTexLayoutKey &, const GLMTexLayoutKey &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<GLMTexLayoutKey, GLMTexLayout *, unsigned short, bool (*)(const GLMTexLayoutKey &, const GLMTexLayoutKey &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<OsSpecificWindowHandle_t__ *, SDL_Window *, unsigned short, bool (*)(OsSpecificWindowHandle_t__ *const &, OsSpecificWindowHandle_t__ *const &)>::Node_t, unsigned short, CUtlMap<OsSpecificWindowHandle_t__ *, SDL_Window *, unsigned short, bool (*)(OsSpecificWindowHandle_t__ *const &, OsSpecificWindowHandle_t__ *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<OsSpecificWindowHandle_t__ *, SDL_Window *, unsigned short, bool (*)(OsSpecificWindowHandle_t__ *const &, OsSpecificWindowHandle_t__ *const &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<OsSpecificWindowHandle_t__ *, SDL_Window *, unsigned short, bool (*)(OsSpecificWindowHandle_t__ *const &, OsSpecificWindowHandle_t__ *const &)>::Node_t, I = unsigned short, L = CUtlMap<OsSpecificWindowHandle_t__ *, SDL_Window *, unsigned short, bool (*)(OsSpecificWindowHandle_t__ *const &, OsSpecificWindowHandle_t__ *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<OsSpecificWindowHandle_t__ *, SDL_Window *, unsigned short, bool (*)(OsSpecificWindowHandle_t__ *const &, OsSpecificWindowHandle_t__ *const &)>::Node_t, unsigned short>, unsigned short>]
@@ -4009,7 +4023,7 @@ ii*x
 Ii+x!
 )ij8)
 ij8(	
-ij(8`j
+ij(8h
 ij8kI
 ij(8uVT
 ij(8uZT
@@ -4136,6 +4150,7 @@ invalid bit length repeat
 Invalid bKGD after IDAT
 invalid block type
 Invalid channels format
+Invalid character '%c' in swizzle operation. Only xyzw or rgba are allowed.
 Invalid cHRM after IDAT
 Invalid cHRM blue point
 Invalid cHRM green point
@@ -4238,21 +4253,20 @@ IS_SM_
 iv@9I
 	*iW@
 *'i$x
-	i,xH
+	i,x(
 *i.xi>@yj:
 i>@yh
-j48*>
+j48*:
 j48t^@
 j58hf@9(
 @j!8!
-j(8(<
-j(8(=
-j(8Ad
-j(8h<
-j(8h=
-j(8H<
-j(8H=
+j(8(G
+j(8(H
 j)8HA
+j(8hG
+j(8HG
+j(8hH
+j(8HH
 j`8!i 8
  J9?@
 J9e:A
@@ -4277,6 +4291,7 @@ JNI_OnUnload
 JPEG datastream contains no image
 JPEGMEM
 JPEG parameter struct mismatch: library thinks size is %u, caller expects %u
+	*Jq%
 jr82"
 jr822
 jr8!hr8R
@@ -4295,7 +4310,7 @@ k68wZ@
 ?k78h
 k(8vV@
 (k:8Z
-k(8Z[F
+k(8ZSF
 K	@9)
 #kc8Ein8
 KDDEy%
@@ -4378,7 +4393,6 @@ Lii8)
 Lil82
 -limitvsconst
 #line
-Linear
 LINEAR_ABGR8888
 LINEAR_ARGB8888
 LINEAR_BGR888
@@ -4407,6 +4421,7 @@ Loading multipart or DeepImage is not supported  in LoadEXR() API
 localize
 Localize_001
 LockDynamicTexture not currently implemented in rendersystemdx9
+log10
 LOG_GENERAL
 LoggingSystem_IsChannelEnabled
 LoggingSystem_Log
@@ -4516,6 +4531,7 @@ min megahertz
 min megatexels
 min_processor_count
 Miscellaneous marker 0x%02x, length %u
+Mismatched set
 missing entry points.
 Missing Huffman code table entry
 Missing IHDR before bKGD
@@ -4725,6 +4741,7 @@ Non-windows platforms don't support loading of JPG images
 Non-windows platforms don't support loading of PNG images
 Non-windows platforms don't support loading of TIFF images
 -no_render_thread_affinity
+normalize
 Normalize3ComponentVectorInAttributes
 Normalized3x3SobelEdgeFilterFrom
 No space in chunk cache for iTXt
@@ -4812,6 +4829,7 @@ o1V?OS
 Obtained EMS handle %u
 Obtained XMS handle %u
 o$ c.! cn
+OCTAL_ESC
 # of channels is zero.
 offscreen plain surface
 Oio8,
@@ -5048,6 +5066,7 @@ R8G8B8A8_ETC2_EAC
 R8G8B8_ETC2
 RadianEuler
 raise
+random
 RandomInt
 r(aN#V
 Rbj(8b
@@ -5087,7 +5106,7 @@ rendercontextbase.cpp
 RenderDevice003
 renderdevicebase.cpp(1487): 
 renderdevicebase.cpp(1648): 
-renderdevicebase.cpp(3112): 
+renderdevicebase.cpp(3116): 
 renderdevicebase.cpp(644): 
 renderdevicebase.cpp(918): 
 renderdevicebase.cpp(935): 
@@ -5184,6 +5203,7 @@ ResourceManifestRegistry001
 resourcesystem
 ResourceSystem013
 RESOURCE_TYPE_TEXTURE
+'return'
 ReturnJobManualEventToPool
 r_frame_sync_enable
 r_fullscreen_gamma
@@ -5252,6 +5272,7 @@ rnd_up
 Row has too many bytes to allocate in memory
 RpE@)`	@
 RPip8
+rsqrt
 r_texture_eager_eviction
 r_texture_nonstreaming_load
 r_texture_nonstreaming_only_fullmipchain
@@ -5308,6 +5329,7 @@ Sampler object hash is full, increase cSamplerObjectHashSize
 Sampling factors too large for interleaved scan
 sAmTb
 SaREy
+saturate
 Saved video settings config to '%s'
 S_BINDLESS_RUNTIME
 sCAL chunk too short
@@ -5428,6 +5450,7 @@ SHADER_SOURCE_ROOT
 -shaderstats
 shaders.toc
 shaders/vfx
+Shader variable %s is illegal to use in expression. Only artist-editable variables are usable.
 ShadingComplexity
 -shadowTargetSize
  -shadowTargetSize forcing nPoolSizeInMb size to %d from %d, bLarge %d, avail %lld
@@ -5445,6 +5468,7 @@ S@I`8
 single
 singleplayer
 %s: Input vector has incorrect length
+%s() isn't a known function.
 Size of Texture Memory : %llu kb
 Sj)	3)
 S`JEy
@@ -5452,10 +5476,12 @@ S:ji8HJh
 Skipped %d%% of all combos
 ^\s*layout\s*\(\s*binding\s*=\s*[0-9]+\s*\)\s*uniform\s+sampler
 Slider
+%s[line %d:%d] 
 %s: Lock size is too large!
 S_MOBILE
 S_MOLTEN_VK
 Smoothing not supported with nonstandard sampling ratios
+smoothstep
 S`NEy
 %s: OpenGL renderer %s
 %s: OpenGL vendor %s
@@ -5484,6 +5510,8 @@ src2_tmp_window
 src/public/tier0/platform.h
  SRGB
 srgbgammatolinear
+SrgbGammaToLinear
+SrgbLinearToGamma
 "%s" = "%s"
 %s/%s
 S.-	S/9
@@ -5511,6 +5539,7 @@ StaticCombo
 StaticComboRule
    StaticComboRule( 
 Static combos:
+Static combo %s referenced in expression doesn't exist.
 static void CGlobalConfigValueRegistry::HookUpConfigValue(const char *, ConfigType_t, ConfigValueType_t, CConfigValueOptions &&, const void **)
 static void CSchemaRegistration::RegisterAllModuleData(ISchemaSystem *)
 static void CTextureManagerGLNew::RemoveMipLevelsForTextures(const CUtlVector<TextureStreamingPriorityInfo_t> &, uint64, int, uint64, int &, int &, uint64 &)
@@ -5552,6 +5581,7 @@ Suspension not allowed here
 /sV?O
 SwapChainTexture.vtex
 %s: Warning: No compile targets specified! Shader will not be compiled!
+Swizzle operation only supports up to four channels.
 sx8xz
 sY8	5
 &*Syg
@@ -5670,6 +5700,7 @@ Texture memory discrepancy! %llu != %llu
 Texture memory limit: %s; in use: %s in %s textures
 Textures created overall: %s; textures evicted: %s
 TextureSheetData
+TextureSize
 TextureSpecificationFlags_t
 TEXTURESTREAMING: Extremely low memory: Available mem: %.2f MB, Required: %.2f MB. Kicking out all non-pinned textures.
 TEXTURESTREAMING: Filled %d fallback textures in %.3f ms
@@ -5690,7 +5721,7 @@ Thb@9
 Thb@9H
 THc@9I
 T*hd8
-The filename may only contain lower case alphanumeric characters and underscores.
+The filename may only contain lower case alphanumeric characters, dashes, and underscores.
 The value of field.m_nSlot (%d) exceeds the value of MAX_D3DVERTEXELEMENTS (%d)!
 Th#EyH
 Thf@9
@@ -5819,6 +5850,7 @@ undefined
 UNDEFINED_BEHAVIOR
 Unexpected marker 0x%02x
 Unexpected resource version '%d' for '%s'
+UNICODE_ESC
 uniform
 uniform sampler2D sampler15;  
 uniform sampler3D sampler15;  
@@ -5851,6 +5883,7 @@ Unknown Path Class
 Unknown sRGB intent
 *** Unknown text found in FEATURES section in %s: "%s"
 UNKNOWNTYPE
+Unknown variable name %s.
 Unknown zlib error
 Unrecognized component IDs %d %d %d, assuming YCbCr
 Unrecognized equation type for pCAL chunk
@@ -5924,31 +5957,31 @@ VFileSystem017
 V_fopen
 V_fprintf
 vfx_common.cpp
-*** vfx_common.cpp(1019): Error opening file "%s"!
-*** vfx_common.cpp(1029): Error masking unused parts for "%s"!
-*** vfx_common.cpp(1098): Error opening file "%s"!
-*** vfx_common.cpp(1108): Error masking unused parts for "%s"!
-*** vfx_common.cpp(1297): Error opening file "%s"!
-*** vfx_common.cpp(1374): Error opening file "%s"!
-*** vfx_common.cpp(191): Don't call VfxInit() more than once!
-*** vfx_common.cpp(201): g_pFullFileSystem must be set up before calling VfxInit!
-vfx_common.cpp(3569): Error! Ref count !=0 for static combo data cache entry!
-vfx_common.cpp(3656): Error! Ref count !=0 for static combo data cache entry!
-*** vfx_common.cpp(5096): Error opening file "%s"!
-*** vfx_common.cpp(5245): Error opening include file in features list"%s"!
-*** vfx_common.cpp(5284): Error opening file "%s"!
-*** vfx_common.cpp(5513): Error opening file "%s"!
-*** vfx_common.cpp(5547): Error opening file "%s"!
-*** vfx_common.cpp(5586): Error opening file "%s"!
-*** vfx_common.cpp(5690): Error opening file "%s"!
-*** vfx_common.cpp(6145): Programmer Error! The order of VfxVariableSourceType_t does not match s_shaderVariableSource!
-vfx_common.cpp(6816): Error opening file %s
-vfx_common.cpp(6890): VCS %s Unserialize failed
-vfx_common.cpp(6904): VCS %s Unserialize hit EOF
-vfx_common.cpp(7042): Error opening file %s
-vfx_common.cpp(7049): Error calling SkipAndValidateVCSHeader() for %s
-*** vfx_common.cpp(7280): Programmer Error! NULL pointer passed into function!
-*** vfx_common.cpp(7306): Programmer Error! Non feature rule found in feature rule array!
+*** vfx_common.cpp(1021): Error opening file "%s"!
+*** vfx_common.cpp(1031): Error masking unused parts for "%s"!
+*** vfx_common.cpp(1100): Error opening file "%s"!
+*** vfx_common.cpp(1110): Error masking unused parts for "%s"!
+*** vfx_common.cpp(1299): Error opening file "%s"!
+*** vfx_common.cpp(1376): Error opening file "%s"!
+*** vfx_common.cpp(193): Don't call VfxInit() more than once!
+*** vfx_common.cpp(203): g_pFullFileSystem must be set up before calling VfxInit!
+vfx_common.cpp(3591): Error! Ref count !=0 for static combo data cache entry!
+vfx_common.cpp(3678): Error! Ref count !=0 for static combo data cache entry!
+*** vfx_common.cpp(5118): Error opening file "%s"!
+*** vfx_common.cpp(5267): Error opening include file in features list"%s"!
+*** vfx_common.cpp(5306): Error opening file "%s"!
+*** vfx_common.cpp(5535): Error opening file "%s"!
+*** vfx_common.cpp(5569): Error opening file "%s"!
+*** vfx_common.cpp(5608): Error opening file "%s"!
+*** vfx_common.cpp(5712): Error opening file "%s"!
+*** vfx_common.cpp(6167): Programmer Error! The order of VfxVariableSourceType_t does not match s_shaderVariableSource!
+vfx_common.cpp(6838): Error opening file %s
+vfx_common.cpp(6912): VCS %s Unserialize failed
+vfx_common.cpp(6926): VCS %s Unserialize hit EOF
+vfx_common.cpp(7064): Error opening file %s
+vfx_common.cpp(7071): Error calling SkipAndValidateVCSHeader() for %s
+*** vfx_common.cpp(7302): Programmer Error! NULL pointer passed into function!
+*** vfx_common.cpp(7328): Programmer Error! Non feature rule found in feature rule array!
 vfx_compile_target_expr.cpp(106): : Failed to create lexer from "%s"
 vfx_compile_target_expr.cpp(114): : Failed to create token stream from "%s"
 vfx_compile_target_expr.cpp(122): : Failed to create parser from "%s"
@@ -5957,6 +5990,10 @@ vfx_dx11
 vfx_dx9
 Vfx Error: attribute type does not exist or does not support attribute literals.
 Vfx Error: attribute unsupported or requires a parameter binding.
+vfx_expression_parser.cpp(366): : Failed to create input stream from "%s"
+vfx_expression_parser.cpp(374): : Failed to create lexer from "%s"
+vfx_expression_parser.cpp(382): : Failed to create token stream from "%s"
+vfx_expression_parser.cpp(390): : Failed to create parser from "%s"
 Vfx file "%s" has both compute shader and other shaders. Compute shaders must be the only shader type in a vfx file.
 vfx_gl
 VFX_PROGRAM_MAX
@@ -6249,6 +6286,7 @@ _ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEj
 _ZN22CThreadRWLock_FastRead30HandleFirstWriteLockTransitionEv
 _ZN22CThreadRWLock_FastReadC1Ev
 _Znam
+_ZnamRKSt9nothrow_t
 _ZNKSt11logic_error4whatEv
 _ZNKSt6__ndk123__match_any_but_newlineIcE6__execERNS_7__stateIcEE
 _ZNKSt6__ndk16locale4nameEv
@@ -6273,6 +6311,7 @@ _ZNSt6__ndk18ios_base5clearEj
 _ZNSt6__ndk18ios_baseD2Ev
 _ZNV16CThreadFastMutex4LockEyj
 _Znwm
+_ZnwmRKSt9nothrow_t
 Z n)Y n
 \z^@Q
 _ZSt18uncaught_exceptionv
