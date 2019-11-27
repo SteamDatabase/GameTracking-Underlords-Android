@@ -722,7 +722,6 @@ $0 to $1,
  1: write to NULL
 *1x0x
 !2@=!
-#2)=:
 	2*	@
 200000
 20CAsyncTrackingConvar
@@ -892,7 +891,6 @@ $0 to $1,
 25IToolGameSimulationSystem
 25ToolEvent_FireEntityInput
 25ToolEvent_GetEntityInputs
-269-)
 26CCLCMsg_RespondCvarValue_t
 26CCLCMsg_SplitPlayerConnect
 26CDefaultKeyValuesErrorSpew
@@ -979,13 +977,13 @@ $0 to $1,
 2#.CSVCMsgList_UserMessages.usermsg_t
  2: DmCrashDump() (xbox360 only)
 %2d: proc group %u:%u, physical ID %d, core ID %d
-2	E"9
+2	E"9n
 %.2f GB
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
 2Gio8
 2	h(8
-2h"	9
-2h"	9h&
+2h"	9H&
+2h"	9o7
 2hb@9H
 2hBK9H
 2hj)8
@@ -995,7 +993,7 @@ $0 to $1,
 %2i/%2i on map %s
 2*i(8h*@
 2	i+8h
-2	I"9
+2	I"9d
 2Ii(8h
 2ii*x
 2ij(8
@@ -1474,7 +1472,7 @@ _8y,@8
 )=@9)}
 )!@9)
 )	@9*
-@@9)"
+@@9	"
 @9)!@
 @9)&@
 @9*&@
@@ -1498,7 +1496,6 @@ $@9	(
 		?96f
 @9(	 7
 @9;7@9<
-@9)%8
 		#98
 9.@8 
 @9*-@8K
@@ -1588,9 +1585,9 @@ $@9	(
 9hV@yvR
 9hZA9
 9hZB9
- @9i$
 ) @9i
 @9i&@
+ @9I$
 @9I	@
 	-_9I
 	)_9I
@@ -1690,12 +1687,9 @@ $@9	(
 A-!(!
 A)`~@
 a2@yh2@y
-(A698
-(a89[
 a8#%D
 _A8qh
 +a@9?
-(A%9+
 	!A9?
 		A9?
 		A9	
@@ -2117,6 +2111,7 @@ B-!(#
 .B@)1
 B-1HD-
 *-B),5C)_
+B	9-$
 	!B9*2
 B@9	A
 ^B9h^
@@ -2604,7 +2599,7 @@ CBidirMsg_RebroadcastSource
 CBidirMsg_RelayInfo
 CBidirMsg_RelayPacket
 CBitmapImagePanel
-cBL9B
+cBL9"
 CBoneConstraintBase
 CBoneConstraintPoseSpaceBone
 CBoneConstraintPoseSpaceBone::Input_t
@@ -2758,10 +2753,10 @@ CFinalizeConnectionPrerequisite
 CFingerBone
 CFingerChain
 CFingerSource
-cFL9B
+cFL9"
 CFootDefinition
 CFrameSnapshot CUtlMemoryPoolMT
-c^Fyb
+c^FyB
 CGameClientConnectPrerequisite
 CGameEventSystem::SendRebroadcastMessage doesn't support more than %llu clients!
 .CGameInfo"
@@ -3410,6 +3405,7 @@ CNetworkStringTable::CNetworkStringTable(NetworkStringTableId_t, const char *, i
 CNetworkStringTableContainer::DirectUpdate
 CNetworkStringTableContainer::WriteUpdateMessage
 CNetworkStringTableItem::SetUserData(%s) tried to write userdata of %d bytes, max size is %d
+CNetworkSystem::ShutdownGameServer
 CNetworkVarChainer
 cNGyB
 CNonFocusableMenu
@@ -3910,10 +3906,9 @@ D24FS8
 D24X4S4
 D24X8
 D24X8_SHADOW
-d2@yi
+d2@yI
 d3@yI
 *-D),5E)_
-d6@y#
 d6@yC
 	D@8!
 D@8)%
@@ -4163,7 +4158,9 @@ Disconnect: %s
 Disconnect: %s.
 DispatchActivate
 Dispatch clients to relay proxies: 0=never, 1=if appropriate, 2=always
+} Dispatched EventAppShutdown_t
 DispatchEvent( %s ) took %f msecs
+Dispatching EventAppShutdown_t {
 DispatchInput
 DispatchPrecache
 DispatchSpawn
@@ -4292,7 +4289,7 @@ dynamic_interaction
 .dynsym
 -@))-E
 E-!("
-E"9?I"9
+E"9?I"9x
 	E"9II"9
  *Each frame will render %d times*
 echoln
@@ -4712,6 +4709,7 @@ extreme cHRM chunk cannot be converted to tristimulus values
 F-!($
 F-%:%
 *-F),5G)_
+F	9%$
 	!F9i
 fA9hf
 FA9hF
@@ -4796,6 +4794,7 @@ fgcolor
 fgetc
 fg_image
 F*%h3x%hgx
+F-H%F
 F*&h%x%hsx
 F*%h'x%hsx
 field
@@ -5559,6 +5558,7 @@ h)8Ay)
 h"@9(
 h"@9)
 h"@9	
+h"@9	$
 `H9)}
 ?h98a
 H9a2B
@@ -5568,8 +5568,7 @@ h*@9h/
 h*\9h
 *h"@9H
 h.@9H
-h"@9i
-h"@9i$
+h"@9I
 h"@9I$
 h:	9i>	9
 -H@9m
@@ -5678,7 +5677,7 @@ High Poly Draw Calls
 high_value
 Hit rate
 Hits/m
-hj48aS
+hj48aO
 hj|8H
 hj)8H'@
 hj8li*8J
@@ -5795,6 +5794,7 @@ h*@y_
 h*@y	
 h&@y)
 h&@yi
+h&@yI
 hzEyH
 hzEyi
 hzEyirB
@@ -5813,6 +5813,7 @@ i7xh6@
 _i(8+
 	*	i8
 	I*8)
+?i(83
 i)8a^A
 *i(8B
 ?i(8h
@@ -5829,7 +5830,7 @@ i)8i&W
 i)8j&W
 i*8j&W
 i(8m&W
-?i(8s
+?i(8T
 ?i(8v
 i*8?y*xJ
 *i"@9
@@ -6474,18 +6475,17 @@ j.])
 @ @-J
 j2?)?
 j2	)k
-j38$W
 j48	C
 j48t^@
-j48yS
+j48x_
 j4xH;@
 j58hf@9(
 j58"l
 j58Z#
+j688&
 j68u"@
-j68X&
 j7Ayh3Ay)	
-j(8H(
+j(8((
 j)8hjj
 j(8(Z@
  J9?@
@@ -6621,19 +6621,18 @@ K1@yk
 *k2@y
 ?k58D
 K5@yk
-?k68(y
-?k78 -
-*?k78
-k78*D
+k68[I
+k78(&
+k78(#
+k78	=
 ?k78h
-k78H&
-k78H#
-k78u3
-k78z5
+*?k78:H
 ?k)8(
 _k88?
 ?k88_
-?k88H&
+?k88(&
+	k(88
+_k88f%
 ?k88w
 ?k88x$
 k(8vV@
@@ -6927,7 +6926,6 @@ length exceeds PNG maxima
 levelload
 levelname
 leveltransition
-@LGP-
 Li(8,
 Li(8,1_8k
 Li(8,!_8k
@@ -7038,6 +7036,7 @@ LoadAppSystems:  ReadLaunchConfiguration
 LoadedBinarySize
 Loaded %d los hints from existing file
 Loaded %d LOS segments!
+Loaded '%s' from SteamRemoteStorage, %d bytes OK
 loaded spawngroup(%3d)  : %s
 Loaded VR convar override settings from 
 LoadEXRImageFromMemory failed! Error message: %s
@@ -7167,6 +7166,7 @@ machine_convars_default
 mailto:
 Main 3D Window
 MainLoop
+MainLoop returning
 main lump
 mainmenubutton
         main sort initialise ...
@@ -9765,9 +9765,9 @@ RIO_WILL_RELAY
 Rjjh8hB
 rJMJJ
 RJ	* &v
-R?k78
-R?k)8
+R?k78sO
 R(k)8
+R?k)8zY
 R(kh8
 R(kh8h
 r_lpv_debug_lobe_count
@@ -9812,7 +9812,7 @@ r_stereo_eye_separation
 r_stereo_mode_anaglyph
 r_stereo_mode_crossed
 r_stereo_mode_parallel
-Rtj(8k
+Rtj(8
 r_toggleviewportsize
 r_translucent
 rt+rld
@@ -9856,7 +9856,7 @@ RZqxeHq81
 %s/*.*
 %s+--
 +++ %s: 
-=	S&%
+=	S&)
 %s: %0.3fMB
 %s%03i.dem
 %s%03i.log
@@ -9903,6 +9903,9 @@ satisfied
 &Save
 Save button - saves all settings to file. 
 Save convars and config values
+Saved offline user config file '%s'
+Saved '%s' to SteamRemoteStorage, %d bytes OK
+Saved user config file '%s'
 savefile
 savegame
 SaveGame
@@ -10375,6 +10378,7 @@ Shutdown request received. Server will shutdown when empty.
 Shutdown request received when no network service exists.
 Shutdown request received while server is hibernating. Shutting down right now
 Shutdown: "%s"
+ShutdownSource2Logging
 SI-	*{
 S`i#8
 S i#8
@@ -10534,11 +10538,13 @@ Source2EngineToServerStringTable001
 Source2GameClients001
 Source2GameEntities001
 Source2Host001
+Source2Init OK
 Source2Main
 SOURCE2_NO_BUNDLES
 Source2Server001
 Source2ServerConfig001
 Source2ServerSerializers002
+Source2Shutdown
 SOURCE2_USE_BUNDLES
 source_code_info
 SourceCodeInfo
@@ -10835,8 +10841,8 @@ SteamFriends017
 SteamGameId
 SteamGameServer012
 SteamGameServer_GetHSteamUser
-SteamGameServer_InitSafe( finish )
-SteamGameServer_InitSafe( start )
+SteamGameServer_Init()
+SteamGameServer_Init() OK, logging on to Steam
 SteamGameServer_RunCallbacks
 SteamGameServer_Shutdown
 SteamGameServerStats001

@@ -241,9 +241,9 @@ $0 to $1,
 2j"@9)p
 2_!(k
 2?".k
-2?k78X
-2_k885
-2?k88W
+2?k78
+2_k88
+2?k88
 2njj8l
 2oi-x
 2 .ProtoFlattenedSerializerField_t"!
@@ -1087,7 +1087,10 @@ close
 closed by peer
 close() failed: 
 CloseSocket
+Closing '%s' P2P listen socket
+Closing '%s' SDR listen socket
 Closing Steam Net Connection on socket '%s' to %s, handle #%u (%d %s)
+Closing '%s' UDP listen socket
 cloth_collide
 cloth_collision_layer0
 cloth_collision_layer1
@@ -1159,8 +1162,11 @@ CNetworkSerializer: Unable to find network encoder named %s!
 CNetworkSystem::BufferToBufferDecompress with improperly sized dest buffer (%u in, %llu needed)
 CNetworkSystem::BufferToBufferDecompress with improperly sized dest buffer (%u in, %u needed)
 CNetworkSystem::FlushPeerToPeerChannels
+CNetworkSystem::InitGameServer: CSteamGameServerAPIContext::Init Failed
+CNetworkSystem::InitGameServer: CSteamGameServerAPIContext::Init OK
 CNetworkSystem::Init() m_SteamAPIContextClient.Init ( ) failed (no Steam?)
 CNetworkSystem::SendToNsAddress ISteamNetworkingSockets::SendMessageToConnection %s returned %d when sending %d bytes
+CNetworkSystem::ShutdownGameServer
 codec
 code_filename
 	code_path
@@ -1355,7 +1361,6 @@ __cxa_guard_acquire
 __cxa_guard_release
 __cxa_pure_virtual
 Cycle or diamond double-reference to '%s'
-c@yi	
 [+%d]
  D-	(@
 d6@y#	
@@ -2247,7 +2252,8 @@ J#07k
 j48	C
 j48t^@
 j4xH;@
-j58"l
+j58"p
+J78`p
 J!@9#
 J@9.A
 J@9B1
@@ -2291,10 +2297,8 @@ JY@y)1
 *k2@y
 k2@yh
 ?k58D
-?k68[
-*?k78
 ?k78h
-?k78S
+*?k78r
 _!)kA
 K	A9lC
 Key in map fields cannot be enum types.
