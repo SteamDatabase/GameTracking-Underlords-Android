@@ -55,6 +55,7 @@
 	"DAC_MatchTypeName3"								"Duo-Modus"
 	"DAC_MatchTypeName5"								"Freistil"
 	"DAC_MatchOpponent"									"Gegner"
+	"DAC_MatchResume"									"Fortsetzen"
 	"DAC_MatchTeammate"									"Partner"
 	"DAC_MatchType"										"Partietyp"
 	"DAC_FreestyleDesc"									"In diesem Modus hast du volle Kontrolle über das Spielfeld und kannst jedes Szenario erfinden, dass du dir vorstellen kannst. Verwende es, um Teamaufstellungen auszuprobieren und neue Hypothesen zu testen. Du kannst dein Design mit Freunden und der Community teilen."
@@ -66,7 +67,7 @@
 	"DAC_MatchTypeNameDuosState_PartyWithBots"			"Einige Spieler erhalten Bots als Partner."
 	"DAC_MatchTypeNameDuosState_NoParty"				"Gruppe mit mindestens 2 Spielern erforderlich"
 	"DAC_MatchTypeNameDuosState_NeedBuddy"				"Gruppe zu klein für diesen Modus"
-	"DAC_MatchTypeNameDuosState_NeedBuddyOrBot"			"Gruppe zu klein für diesen Modus"
+	"DAC_MatchTypeNameDuosState_NeedBuddyOrBot"			"Lade einen Freund ein oder wähle einen Botpartner."
 	"DAC_MatchTypeNameDuosState_ExcessBuddies"			"Gruppe zu groß für diesen Modus"
 	"DAC_MatchTypeNameDuosState_TooManyPlayersOnTeam"	"In diesem Team befinden sich zu viele Spieler. Zur Verwaltung auswählen."
 	"DAC_MatchTypeNameDuosState_CantFillTeams"			"Es gibt nicht genug Spieler, um jeden einem Zweierteam zuzuweisen"
@@ -78,9 +79,9 @@
 	"DAC_Teammate"										"Partner"
 	"DuosAboutLabel"									"Was ist der Duo-Modus?"
 	"DAC_MatchTypeDescOnline"							"Spiele online eine Partie gegen andere Spieler"
-	"DAC_MatchTypeDescStandard"							"Eine tiefere und strategischere Runde. Der letzte Überlebende gewinnt"
-	"DAC_MatchTypeDescTurbo"							"Eine schnelle Runde. Vier Treffer und du bist raus"
-	"DAC_MatchTypeDescDuos"								"Spiele gemeinsam mit einem Freund eine klassische Runde"
+	"DAC_MatchTypeDescStandard"							"Partie mit mehr Tiefe und Strategie."
+	"DAC_MatchTypeDescTurbo"							"Schnelle Partie. Vier Treffer und du bist raus."
+	"DAC_MatchTypeDescDuos"								"Spiele gemeinsam mit einem Freund eine Standardpartie."
 	"DAC_MatchTypeDescTraining"							"Teste neue Kombinationen und Strategien"
 	"DAC_MatchTypeDescDuosCasual"						"Schließe dich mit einem Freund oder Bot zum Onlinekampf zusammen"
 	"DAC_MatchTypeDescDuosRanked"						"Schließe dich mit einem Freund zum Onlinekampf zusammen"
@@ -91,6 +92,8 @@
 	"DAC_MatchTypeDescFreestyle"						"Arrangiere und teste Scheinschlachten ohne Grenzen."	
 	"DAC_MatchTypeDescTutorial"							"Lerne die Grundlagen von Underlords"
 	"DAC_MatchTypeDescFreestyle2"						"In diesem Modus hast du volle Kontrolle über das Spielfeld und kannst jedes Szenario erfinden, dass du dir vorstellen kannst. Verwende es, um Teamaufstellungen auszuprobieren und neue Hypothesen zu testen. Du kannst dein Design mit Freunden und der Community teilen."	
+	"DAC_Play_Duos_Invite"								"Freund einladen"
+
 	"DAC_Training"										"Training"
 
 	"DAC_OpenFreestyleMenu"								"Freistilmenü öffnen"
@@ -319,6 +322,8 @@
 	"DAC_Party_Context_CopyCode"						"Gruppencode kopieren"
 	"DAC_Party_Context_ShowCode"						"Gruppencode anzeigen"
 	"DAC_Party_Context_HideCode"						"Gruppencode ausblenden"
+
+
 
 	"DAC_SetTeamName_FailedToGetResponse"				"Keine Verbindung zum Dota-Underlords-Netzwerk. Bitte in ein paar Minuten erneut versuchen."
 	"DAC_RenameTeam_InternalError"						"Unerwarteter interner Serverfehler. Bitte später erneut versuchen."
@@ -1213,6 +1218,8 @@
 	"DAC_Home_DeleteSave"								"Speicherstand löschen"
 	"DAC_Home_LeaveParty"								"Gruppe verlassen"
 	"DAC_Home_Reconnect"								"Wiederverbinden"
+	"DAC_Home_PlayAgain"								"Erneut spielen"
+	"DAC_Home_ReturnToMenu"								"Zurück zum Menü"
 	"DAC_Home_LeaveGame"								"Spiel verlassen"
 	"DAC_Home_ForceMatch"								"Partie erzwingen"
 	"DAC_Home_Quit"										"Verlassen"
@@ -2540,7 +2547,7 @@
 
 	"dac_player_dollar_value"						"${s:reward_value}"
 
-	"dac_player_wanted_subtitle_1"					"SEHR GEFÄRHLICH"
+	"dac_player_wanted_subtitle_1"					"SEHR GEFÄHRLICH"
 	"dac_player_wanted_subtitle_2"					"TOT ODER LEBENDIG"
 	"dac_player_wanted_subtitle_3"					"GESUCHT?"
 	"dac_player_wanted_subtitle_4"					"UNERWÜNSCHTE PERSON #1"
