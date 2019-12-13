@@ -48,7 +48,7 @@ resource/localization/dac_abilities_french.txt CRC:45992481 Size:67270
 resource/localization/dac_abilities_german.txt CRC:cdbc24be Size:65254
 resource/localization/dac_abilities_greek.txt CRC:3fcd5590 Size:88272
 resource/localization/dac_abilities_hungarian.txt CRC:9d89cce9 Size:64241
-resource/localization/dac_abilities_italian.txt CRC:e995ed9d Size:63527
+resource/localization/dac_abilities_italian.txt CRC:262b5890 Size:63527
 resource/localization/dac_abilities_japanese.txt CRC:74414b1a Size:69221
 resource/localization/dac_abilities_koreana.txt CRC:0bd35fe9 Size:68614
 resource/localization/dac_abilities_latam.txt CRC:3857a27e Size:64332
@@ -90,7 +90,7 @@ resource/localization/items_spanish.txt CRC:03cc46cd Size:72184
 resource/localization/items_swedish.txt CRC:457cad9d Size:68142
 resource/localization/items_tchinese.txt CRC:3751a9a5 Size:52934
 resource/localization/items_thai.txt CRC:d9c697fe Size:68850
-resource/localization/items_turkish.txt CRC:12327eae Size:68790
+resource/localization/items_turkish.txt CRC:6852dce0 Size:68784
 resource/localization/items_ukrainian.txt CRC:f4bbc067 Size:67108
 resource/localization/items_vietnamese.txt CRC:5cac64c7 Size:68770
 scripts/decals_subrect.txt CRC:5ce2500a Size:630
@@ -4950,7 +4950,7 @@ panorama/styles/dac_db_page_home.vcss_c CRC:5e2f92a2 Size:46396
 panorama/styles/dac_db_page_loadout.vcss_c CRC:96d5988e Size:14039
 panorama/styles/dac_db_page_patchnotes.vcss_c CRC:795e6cd8 Size:4773
 panorama/styles/dac_db_page_play.vcss_c CRC:dd944c40 Size:40730
-panorama/styles/dac_db_page_postgame.vcss_c CRC:047e7c0f Size:36731
+panorama/styles/dac_db_page_postgame.vcss_c CRC:154b2a90 Size:36827
 panorama/styles/dac_db_page_profile.vcss_c CRC:c5816fee Size:1185
 panorama/styles/dac_db_page_rewards.vcss_c CRC:d8496fc6 Size:36603
 panorama/styles/dac_db_page_settings.vcss_c CRC:5a08b3d5 Size:710
@@ -4970,13 +4970,13 @@ panorama/styles/dac_ui_context_menu_chat_line.vcss_c CRC:95ea67b1 Size:4348
 panorama/styles/dac_ui_context_menu_gems.vcss_c CRC:16e3c4a8 Size:2138
 panorama/styles/dac_ui_context_menu_party.vcss_c CRC:26b5e047 Size:1829
 panorama/styles/dac_ui_context_menu_player.vcss_c CRC:7ec2afea Size:2074
-panorama/styles/dac_ui_dps_chart.vcss_c CRC:f0e20072 Size:20548
+panorama/styles/dac_ui_dps_chart.vcss_c CRC:78b4fd52 Size:20546
 panorama/styles/dac_ui_equip_control.vcss_c CRC:7c8f9908 Size:3039
 panorama/styles/dac_ui_friend.vcss_c CRC:77e55f39 Size:18649
 panorama/styles/dac_ui_friend_menu.vcss_c CRC:23bc768f Size:12577
 panorama/styles/dac_ui_friend_picker.vcss_c CRC:5755eadb Size:1259
 panorama/styles/dac_ui_honeycomb_container.vcss_c CRC:b54f74f0 Size:540
-panorama/styles/dac_ui_hud.vcss_c CRC:ab1964b6 Size:98338
+panorama/styles/dac_ui_hud.vcss_c CRC:b1392254 Size:98307
 panorama/styles/dac_ui_hud_player_icons.vcss_c CRC:28964927 Size:30993
 panorama/styles/dac_ui_hud_top_bar.vcss_c CRC:e7bbd9eb Size:5885
 panorama/styles/dac_ui_hud_tutorial.vcss_c CRC:5dc975b5 Size:4215
@@ -4985,7 +4985,7 @@ panorama/styles/dac_ui_inventory_item.vcss_c CRC:c575e565 Size:9160
 panorama/styles/dac_ui_item_select.vcss_c CRC:3c69f4e4 Size:17728
 panorama/styles/dac_ui_leaderboard.vcss_c CRC:6fccc1dd Size:13675
 panorama/styles/dac_ui_leaderboard_duos.vcss_c CRC:7e76bc0b Size:46014
-panorama/styles/dac_ui_leaderboard_entry.vcss_c CRC:256f9b2f Size:75367
+panorama/styles/dac_ui_leaderboard_entry.vcss_c CRC:b6d1cc69 Size:75492
 panorama/styles/dac_ui_main.vcss_c CRC:2c0b7edd Size:29598
 panorama/styles/dac_ui_match_intro.vcss_c CRC:03c88e40 Size:13418
 panorama/styles/dac_ui_mini_jail.vcss_c CRC:2055ac12 Size:1407
@@ -5010,7 +5010,7 @@ panorama/styles/dac_ui_scoreboard_entry.vcss_c CRC:7f766cc3 Size:17415
 panorama/styles/dac_ui_sell_unit_bar.vcss_c CRC:753617d4 Size:12484
 panorama/styles/dac_ui_send_unit_bar.vcss_c CRC:01c3ec35 Size:8056
 panorama/styles/dac_ui_settings_panel.vcss_c CRC:f8b33d0e Size:61759
-panorama/styles/dac_ui_shop.vcss_c CRC:a67c281b Size:59700
+panorama/styles/dac_ui_shop.vcss_c CRC:6fa548d8 Size:59727
 panorama/styles/dac_ui_synergy_capsule.vcss_c CRC:9bdb8957 Size:758
 panorama/styles/dac_ui_synergy_icon.vcss_c CRC:04e99f74 Size:103761
 panorama/styles/dac_ui_talent_card.vcss_c CRC:88783f73 Size:4310
@@ -5057,7 +5057,7 @@ panorama/styles/popups/popup_postgame_reward.vcss_c CRC:190e1a56 Size:3649
 panorama/styles/popups/popup_pre_match_details.vcss_c CRC:a7e7e0e8 Size:12547
 panorama/styles/popups/popup_private_lobby_modifiers.vcss_c CRC:42d0b5d9 Size:5135
 panorama/styles/popups/popup_rank_tier_desc.vcss_c CRC:164f9b35 Size:1940
-panorama/styles/popups/popup_rankup.vcss_c CRC:7590bb3d Size:14235
+panorama/styles/popups/popup_rankup.vcss_c CRC:f97a1d2c Size:14247
 panorama/styles/popups/popup_rename_team.vcss_c CRC:f945b9cb Size:4155
 panorama/styles/popups/popup_reward.vcss_c CRC:c20b4534 Size:7222
 panorama/styles/popups/popup_reward_info.vcss_c CRC:aa852415 Size:6076
@@ -21819,7 +21819,7 @@ materials/econ/models/banners/banner_s0_lvl3_color_psd_79550096.vtex_c CRC:bbad5
 materials/editor/areafootprint_border_vmat_g_tcolorb_51d676ae.vtex_c CRC:bc8edf0f Size:1684
 materials/editor/iconhelper_border_vmat_g_tcolorb_51d676ae.vtex_c CRC:bc8edf0f Size:1684
 materials/effects/lightcookies.vtex_c CRC:3ed754a3 Size:18508
-materials/healthbars/healthbar_sheet.vtex_c CRC:6884f935 Size:89913
+materials/healthbars/healthbar_sheet.vtex_c CRC:d0c17bb8 Size:89890
 materials/lights/white.vtex_c CRC:438db299 Size:2100
 materials/models/city_crawl/bp1_citycrawl_info_node_01_color_psd_88a94c49.vtex_c CRC:cbe845f6 Size:6982
 materials/models/city_crawl/bp1_citycrawl_info_node_02_color_psd_4edd1d84.vtex_c CRC:f4fc2f26 Size:7615
@@ -26537,7 +26537,6 @@ materials/particle/glyphs/glyph3.vtex_c CRC:c6710423 Size:89608
 materials/particle/glyphs/glyph4_2.vtex_c CRC:db41fbbc Size:93912
 materials/particle/gradient/gradient_00_psd_5084654f.vtex_c CRC:80d972e7 Size:2770
 materials/particle/gradient/gradient_00_psd_c99e6c5a.vtex_c CRC:4ded5bf6 Size:2794
-materials/particle/gradient/gradient_01_psd_660def7e.vtex_c CRC:6b383ba4 Size:2848
 materials/particle/gradient/gradient_01_psd_df2e8ac2.vtex_c CRC:8fbe11d7 Size:3076
 materials/particle/gradient/gradient_03_psd_4bcb7fd0.vtex_c CRC:4295feaa Size:12274
 materials/particle/gradient/gradient_03_psd_4de3eb6a.vtex_c CRC:92c931b9 Size:11192
@@ -28541,7 +28540,7 @@ panorama/layout/dac_db_page_home.vxml_c CRC:83cbafcf Size:11387
 panorama/layout/dac_db_page_loadout.vxml_c CRC:6f46cef4 Size:5090
 panorama/layout/dac_db_page_patchnotes.vxml_c CRC:91818ca2 Size:1520
 panorama/layout/dac_db_page_play.vxml_c CRC:c1a41ec3 Size:36636
-panorama/layout/dac_db_page_postgame.vxml_c CRC:16862635 Size:7501
+panorama/layout/dac_db_page_postgame.vxml_c CRC:446f4d4d Size:7680
 panorama/layout/dac_db_page_profile.vxml_c CRC:bfd30798 Size:899
 panorama/layout/dac_db_page_rewards.vxml_c CRC:8523719b Size:4743
 panorama/layout/dac_db_page_settings.vxml_c CRC:abaa784c Size:702
@@ -28651,7 +28650,7 @@ panorama/layout/popups/popup_postgame_reward.vxml_c CRC:1b016c56 Size:1665
 panorama/layout/popups/popup_pre_match_details.vxml_c CRC:ba7e6300 Size:6659
 panorama/layout/popups/popup_private_lobby_modifiers.vxml_c CRC:12b6dc2b Size:2413
 panorama/layout/popups/popup_rank_tier_desc.vxml_c CRC:35e6f6f0 Size:4587
-panorama/layout/popups/popup_rankup.vxml_c CRC:8f68a22e Size:2208
+panorama/layout/popups/popup_rankup.vxml_c CRC:654b64f6 Size:2209
 panorama/layout/popups/popup_rename_team.vxml_c CRC:b3b61fe9 Size:2382
 panorama/layout/popups/popup_reward.vxml_c CRC:4f7870b1 Size:2380
 panorama/layout/popups/popup_reward_info.vxml_c CRC:52bdaf75 Size:1277
