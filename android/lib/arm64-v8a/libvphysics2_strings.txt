@@ -14,6 +14,7 @@
 ?!@-)	@
 '":|;
 ".!("
+()@)+	
 ($@)+
 (%@-*	@
 )!@-/	@
@@ -49,7 +50,6 @@ $@)  "
 $@)#@@)
 *-@-,	@
 *-@)`
-*-@)(
 *-@))	@
 # )!=(
 #.!("
@@ -141,7 +141,7 @@ $@)#@@)
 1@y z
 @-2	@
 	2*	@
-2019-11-01 17:51:37.543000
+2019-12-06 11:50:31.259000
 20CPostConnectCallback
 20CRefCountServiceBaseILb1E6CRefMTE
 20CResourceStreamFixed
@@ -152,8 +152,8 @@ $@)#@@)
 22CSchemaInstallCallback
 23CResourceStreamGrowable
 23IConCommandBaseAccessor
+2	5Ey?
 25IVPhysicsLegacyKeyHandler
-2	5Ry?
 27CSchemaUtlVectorManipulatorI10CUtlVectorI10CHitBoxSet10CUtlMemoryIS1_iEES1_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorI10CMorphData10CUtlMemoryIS1_iEES1_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorI10CTransform10CUtlMemoryIS1_iEES1_E
@@ -226,10 +226,10 @@ $@)#@@)
 	%2d.  %16llx - %s%s
 2E9)y
 2)eB9?
-2	EEy?
 %+.2f*%.1f in 
 @ %.2f, %.2f, %.2f
 %.2f -> %.2f @ %.2f
+2	=Fy?
 =2G@)+
 2H339
 	2	i*
@@ -240,25 +240,24 @@ $@)#@@)
 2LC-4
 2LE-4TF-
 2LY-;|Z-
-2	MFy?
-2	mQy?
-2	%My?
+2	mSy?
 2Nb:5
 2NpF@-r
 2OA-4WB-<wE-
 2oi-x
-2	=Oy?
+2	-Oy?
 2P@-B(0
 2P@-c(1
-2	-Py?
 2QQ- 
-2	%Qy?
+2	]Qy?
 2RA-s
+2	%Ry?
 2`]-s
 	2s*3
 	2s:4
-2	}Sy?
 2*!T@
+2	uMy?
+2	uNy?
 2Way_0( %s )
 2Way_1( %s )
 2+x(x
@@ -325,7 +324,6 @@ $4(PushBack
 %6.2f %6.2f %6.2f %.3f %.3f %.3f
 %6.2f %s
 6]@-8e
-6B-	AA
 6ConVar
 6E9)y
 6\E-B
@@ -335,7 +333,7 @@ $4(PushBack
 6hb@9
 6hB@9H
 6h~By
-6h#t9
+6h#u9
 6hzBy
 6I|@9i
 `6k*@
@@ -386,7 +384,6 @@ _8!(1
 	%8X - %s
 ^-#9 
 <.9;:
-"@9}]@
 ((^-9
 )!@9)
 @9!	(
@@ -396,7 +393,7 @@ _8!(1
 \-9;(
 +!-	9 
 +	@9)
-	!}9	
+	!~9	
 		@9*}
 9()@)
 93Q@-1	1
@@ -465,7 +462,7 @@ A3Ay(
 A-4TV-8
 a@-6;:
 A-!8#
-	a|9	
+	a}9	
 	A@9	
 A9	0@
 )-A9i
@@ -478,10 +475,10 @@ AABB_t
 AABB_t RnHullRefl_t::m_Bounds
 "A)az
 !A-	)B-
-AB-6}O
 A-'@B-B
 abnap
 AbsolutePoseControl
+abs( %s )
 a	@-c	@
 *A	@-C
 A	@-C	@
@@ -653,7 +650,6 @@ Ay)Y@y
 ^A-z+:
 .A)`z
 @-b	@
-$.b]@
 !.B(#
 ($@)*,B)-$@
 ($@)*,B).$@
@@ -1235,7 +1231,7 @@ C_OP_SetSingleControlPointPosition
 C_OP_StopAfterCPDuration
 C_OP_TwistAroundAxis
 COrientConstraint
-Cos( %s )
+cos( %s )
 Could not create phys debug IB for %d elements
 Could not create phys debug VB for %d elements
 Could not lock phys debug IB for %d elements
@@ -1486,10 +1482,6 @@ CRnWorld::RecordApiCall
 crX-7
 CS-1*2
 CSceneObjectData
-CSerialStreamDecoder: hull shape %llx changed hull, recreating
-CSerialStreamDecoder: mesh shape %llx changed mesh, recreating
-CSerialStreamDecoder: shape %llx serial changed, recreating
-CSerialStreamDecoder: shape %llx type changed, recreating
 CSisterResourceBlockLoader::BlockingLoadResourceFileData: Trying to load an illegal resource name %s!
 CSolveIKChainAnimNode
 C-sRV-uZW-
@@ -1575,7 +1567,7 @@ D-#	#
 D-0DG-"
 D-2+2
 	%d. %4x - %s
-d6@yC
+d6@yc
 Damping %.2f linear, %.2f angular
 ,DA)R
 .data
@@ -1702,15 +1694,15 @@ EB-2MB-
 E-b6@
 E-B7@
 e]-B81
-.eB8u
 (eB9_
 )eB9?
 *eB9_	
 E-b9"
 E-B9"
-eB9!h
+eB9!4
 *eB9i
 eB\-r
+	eByh
 E-c(&
 EconItemToolModel_001
 EC-P*0
@@ -1785,6 +1777,7 @@ explosion_type
 explosive_damage
 explosive_radius
 EXPORTSYSTEM_INTERFACE_VERSION_001
+exp( %s )
 	e@y)
 EZ-4UZ-6][-z
 @-f:&
@@ -1916,6 +1909,7 @@ flDistMin
 Flexible; 
 FLEX_OP_2WAY_0
 FLEX_OP_2WAY_1
+FLEX_OP_ABS
 FLEX_OP_ADD
 FLEX_OP_CLOSE
 FlexOpCode_t
@@ -2029,8 +2023,6 @@ float RnHullRefl_t::m_flMaxAngularRadius
 float RnHullRefl_t::m_flMaxMotionRadius
 float RnHullRefl_t::m_flMinMotionThickness
 float RnHullRefl_t::m_flVolume
-float RnHullShapeRefl_t::m_flMaxMotionRadius
-float RnHullShapeRefl_t::m_flMinMotionThickness
 float RnHullShapeRefl_t::m_flScale
 float RnJointRefl_t::m_flMaxAngularConstraintImpulse
 float RnJointRefl_t::m_flMaxLinearConstraintImpulse
@@ -2216,6 +2208,7 @@ h&?);
 h&@)?
 .H[-{
 @-H'@
+*-@)H
 #H)	}	
 H- * 
 H-1A@
@@ -2288,7 +2281,6 @@ h%@)j	@
 H-@)J	@
 H%@-J	@
 H%@)J	@
-hj)8S0
 H$@)J,B)M$@
 H-k	9
 HMDAvatar
@@ -2333,9 +2325,10 @@ h&X)`	(
 =h~@y
 (h@y 
 h&@y)
-h&@yI
-hz5x|-
-hz5xO1
+h&@yi
+hz5x9-
+hz5xh)
+hz5xm,
 <	)@)i*
 *-@i)	
 	)@)i
@@ -2566,11 +2559,11 @@ j1@)k	@
 )j2])
 j2?)?
 j58hf@9(
-j88Sv
+j88"j
+j(8GO
 j)8hJ@
-j)8	Q
 j)8	U
-j)8`w
+j)8	Y
 JAAHJ
 JAJJ)
 JAJJJ
@@ -2736,6 +2729,7 @@ LightingBasis
 lightmap
 lightmapuv
 LightmapUV
+LightmapUVW
 Lik8m
 LIMIT_AT_LIMIT
 LIMIT_AT_LOWER_LIMIT
@@ -2850,7 +2844,7 @@ maxHullVertices
 m_AxialEdges
 max object velocity, in/s
 maxSpringTension
-Max( %s, %s )
+max( %s, %s )
 maxVerticesPerHull
 m_bAdditive
 m_bApplyMinForce
@@ -3224,7 +3218,7 @@ m_Initializers
 m_InitPose
 m_inputList
 m_inputValue
-Min( %s, %s )
+min( %s, %s )
 m_InstanceName
 m_intAttributes
 m_InteractAs
@@ -3242,6 +3236,7 @@ Missing file '%s'
 m_jiggleBone
 m_JiggleBones
 )MJJ }
+m_JointConstraintData
 m_JointConstraintPairs
 m_JointName
 m_joints
@@ -3552,6 +3547,7 @@ m_pGoalDampedSpringIntegrators
 m_pInitPose
 m_pJiggleBones
 m_pJiggleBoneState
+m_pJointConstraintData
 m_pKelagerBends
 m_Plane
 m_pLegacyStretchForce
@@ -3756,6 +3752,8 @@ m_vStancePositionMS
 m_vTintColor
 m_vTipOffset
 m_vToStrideStartPos
+m_vTraceOffset
+m_vTraceScale
 m_vUpLS
 m_vUpVector
 m_vViewMax
@@ -4297,9 +4295,9 @@ q]-B(2
 {Q-B(9
 )qB	)j
 Q-C	:
-)qD9)
 q%d.%d
 Qd@-Z;;
+)qE9)
 @-QH@-"
 QHC-@
 QHZ-TT[-}
@@ -4807,7 +4805,7 @@ SimplifyMesh (%.3f) (v=%d,t=%d) to (v=%d,t=%d)
 Simulated
 singleplayer
 Single-threaded test:
-Sin( %s )
+sin( %s )
 SkeletonBoneBounds_t
 // Skipped due to deduction
 Skipping %d items of total size %u bytes
@@ -4816,6 +4814,7 @@ Skipping field %s (name hash 0x%X) size %u, expected %u
 Slider: %.1f
 slime
 %s: %llu casts, %.1f ticks/cast
+SlopeTrace
 %s (Material)
 %s_matgrp
 Sm-e(#
@@ -4871,7 +4870,6 @@ softbody_fields
 softbody_indices
 softbody_node_names
 SoftbodyProcessor
-Softbody:SetAnimatedTransforms called on dormant softbody; please use IsDormant()
 SOFTBODY_SIM_BOXERMAN_DAMPING
 SOFTBODY_SIM_CONJUGATE_GRADIENT
 SOFTBODY_SIM_DIAGONAL_PRECONDITIONER
@@ -4940,7 +4938,7 @@ Splitting huge triangles (%d verts,%d tris) -> (%d verts,%d tris), %d splits
 springConstant
 %s| Project: '%s' Binary: '%s'
 sqrtf
-Sqrt( %s )
+sqrt( %s )
 s	-R:3
 sR@-c(%
 %srel rotation {%.2f,%.2f,%.2f,%.2f}
@@ -5214,7 +5212,6 @@ UB-$*$
 UB-#*#
 U-B(1
 uB-9+;
-	uByh
 UC-6]C-
 uint16
 uint16[3]
@@ -5546,6 +5543,7 @@ VMatrix
 vmdlkeys0
 vmdlkeys1
 vmdlkeys2
+vmdlkeys3
 VMDLLIB001
 VMediaFoundation001
 v^M-xf@
@@ -5854,6 +5852,7 @@ Y@-3SE-C
 	y4xl
 @y69@yr
 @y8	@y
+@y	%A
 Yaw; 
 yaw_end
 yaw_start
@@ -5881,7 +5880,7 @@ yh.@y
 yif@y?
 {YIN?
 yin@y)
-`@yiRh
+`@yirh
 @yiR@y
 @yiy(x
 )YJJ)}

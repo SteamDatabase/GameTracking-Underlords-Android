@@ -252,6 +252,7 @@
 28CSosOperatorPauseSoundEvents
 28CSosOperatorRightAngleFloat3
 28ISchemaCollectionManipulator
+2	!.9
 2@96\@)
 29CKeyValuesDumpContextAsDevMsg
 29CSosOperatorCalcFixedRotation
@@ -264,17 +265,18 @@
 29CVSoundStackScriptTypeManager
 	[%2d] %16.16s : %s (%d)
 (%2db) %6i : %s
+2h2/9
 2hb@9
 2	i:8
 2ij(8
-2ij(8F
+2ij(8\
 2+imx
+2jjj8l
 2?"/k
 2_!-kc	
 2Ki)8x
 2L1@y
-2njj8l
-2t~	)
+2t~	){
 2x"@9
 30CAudioSource_PlayerVoiceStream
 30CSosGroupActionTimeLimitSchema
@@ -300,6 +302,7 @@
  [%.3f server clamped to %.3f]
 3inputPeak
 40CSchemaRegistration_soundsystem_lowlevel
+4h2A9
 4h&A)i"
 4hb@9
 4hf@9
@@ -329,7 +332,6 @@
 6iz@y
 6kB@y
 6x"@9
-6Y3Z9
 6)@y4
 *7`@)
 7h.@9H
@@ -363,19 +365,20 @@ _@8j.@
 )9@9?
 @9+	@9,
 9	9@9)
-@9?aEkA
+@9_aAkA
 @9aR@
+@9_aYkA
 @9B("
 9CAudioSDL
+@9?c@kA
 9CSfxTable
-!@9!h4
 9hb@9
 9hb@9)
 9hf@9(
 "@9hf@9i
 9hji8
 9hr@y
-9hr@y)=G
+9hr@y)9G
 9hR@yHS
 9hS@yHS
 @9hV@
@@ -386,14 +389,16 @@ _@8j.@
 "@9i"@9
 9	ii8(
 :@9K1@9k
-@9?`@kA
+@9_`[kA
+@9_`@kA
 9>)mn@
 9)PA9	
+@9_`RkA
 9}	S?
 @9wiu
 9 )@y
-9@z(|`
-9@zH~`
+"9(Y@
+9@z(~`
 A-!(!
 A-@ !
 A))%@
@@ -404,6 +409,7 @@ A@9`	(
 +a@9k
 [A)		A
 AA9	I@
+?AAk	"
 Abort processing sound event %s (scheduled recursively will not process this frame)
 AbsolutePoseControl
 accumulate_indexed_speakers
@@ -411,6 +417,7 @@ Action Type
 ActionType_t
 Active ?: %s
 Active Voices: %d
+	Ad9	
 Adding operator stack matching existing name: %s
 AddNewSoundEvent:  %s has a hash collision with existing %s
 Addon unloaded, unloading sound resources.
@@ -464,12 +471,11 @@ AE_VORTIGAUNT_ZAP_POWERUP
 AE_VORTIGAUNT_ZAP_SHOOT
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
-Ah1xij/
+Ah1xhj+
 	(Aik}@
 ai_model_info
 AIWalkable
-_A@k(
-A-#}K
+A[k+"
 allowstatic
 AllPass
 -altgameroot
@@ -513,10 +519,8 @@ Application is not loaded.
 apply
 Apply cos(angle) * weight before pan law
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
-	aQ9	
-)AQ9?
-	aR9)
 archive
+ARk-#
 Arrangement: %s
 arrangement_start
 arrangement_track_stop
@@ -548,12 +552,11 @@ AudioMixer
 auto_connect_public_fields
 auto_unragdoll_duration
 Available Operators:
+?AVki#
 *A_x)a_xk^
-AXk!#
 )!Ay?	
-!Ay@G
-?AYki
-!Ayq;
+!Ay,4
+!AyBK
 @-B	@
 B-" @
 B-(  
@@ -759,7 +762,6 @@ ClothShapeList
 ClothShapeSphere
 Cmath_filter_float
 CMemAllocSystemInitialize
-cn@9	
 collision_group
 collision_prop
 COLORCORRECTION_VERSION_1
@@ -943,6 +945,7 @@ __customstack_hidden
 __customstack_layers
 __customstack_rand_max
 __customstack_rand_min
+__customstack_seek_speed
 __customstack_send_pos
 __customstack_vsnd
 CUtlBuffer::VaPrintf: String overflowed buffer [%llu]
@@ -1014,7 +1017,7 @@ display_group
 Displaying %d probes around (%.1f, %.1f, %.1f) within %.2f radius for %.2f seconds.
 Displaying %d probes around (%.1f, %.1f, %.1f) with influence for %.2f seconds.
 displayName
-@distance_seek_speed_filter.output
+@distance_to_source.output
 Distortion feedback
 Distortion Mix (1.0 = wet)
 Distortion Threshold
@@ -1073,6 +1076,7 @@ DSP: Warning, failed to allocate reverb.
 %d %s %s
 %d) %s %s -> %s
 DUCT Detected 
+Dump a record of current soundevents and profile data
 Duration: %f
 D%@yh
 .dynamic
@@ -1337,8 +1341,9 @@ g_Tier1_BitWriteMasks
 g_VProfCurrentProfile
 h&@)?
 @-$H+
-h1xnj 
-h2@y	
+h1xij 
+h1xkj.
+h2@y	_
 H5@yH
 h"@9	
 h#@9	
@@ -1364,7 +1369,6 @@ h&B)j
 hb!yI
 =hC@y
 =hC@yHC
-!hdx?
 headtype
 health
 health_override
@@ -1382,7 +1386,7 @@ HIGHDPI
 Highest
 HighPass
 h&I)tb
-hj)8Z	
+hj)8:	
 hJAy`
 hJAy	
 HoA8	
@@ -1405,7 +1409,6 @@ h*@y_
 h"@yj
 !^)I@
 i1xhj*
-i1xhj+
 i1xjj,
 i2E9i
 i2@y?
@@ -1435,8 +1438,6 @@ I CUtlRBTree<CUtlMap<SoundEventGuid_t, CSndMixGroupTrigger_t, unsigned short, CD
 I CUtlRBTree<CUtlMap<unsigned int, CSosOperatorStack *, unsigned short, CDefLess<unsigned int> >::Node_t, unsigned short, CUtlMap<unsigned int, CSosOperatorStack *, unsigned short, CDefLess<unsigned int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, CSosOperatorStack *, unsigned short, CDefLess<unsigned int> >::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<unsigned int, CSosOperatorStack *, unsigned short, CDefLess<unsigned int> >::Node_t, I = unsigned short, L = CUtlMap<unsigned int, CSosOperatorStack *, unsigned short, CDefLess<unsigned int> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, CSosOperatorStack *, unsigned short, CDefLess<unsigned int> >::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<unsigned int, SosOpFieldMapInfo_t *, unsigned short, CDefLess<unsigned int> >::Node_t, unsigned short, CUtlMap<unsigned int, SosOpFieldMapInfo_t *, unsigned short, CDefLess<unsigned int> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, SosOpFieldMapInfo_t *, unsigned short, CDefLess<unsigned int> >::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<unsigned int, SosOpFieldMapInfo_t *, unsigned short, CDefLess<unsigned int> >::Node_t, I = unsigned short, L = CUtlMap<unsigned int, SosOpFieldMapInfo_t *, unsigned short, CDefLess<unsigned int> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<unsigned int, SosOpFieldMapInfo_t *, unsigned short, CDefLess<unsigned int> >::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<void *, int, bool (*)(void *const &, void *const &), CUtlMemory<UtlRBTreeNode_t<void *, int>, int> >::NewNode(const T *) [T = void *, I = int, L = bool (*)(void *const &, void *const &), M = CUtlMemory<UtlRBTreeNode_t<void *, int>, int>]
-)icx_
-)icx?
 ID of the sound device to use
 =i*D)`R
 i"D)U	
@@ -1447,7 +1448,6 @@ If set to 1, report more error found when playing sounds.
 If set to 1, show all incoming updates to vmix inputs.
 I-gR@
 +ih8k
-ii8#hi8
 Iii8*
 %i %i %i %i
 	iix?
@@ -1753,7 +1753,7 @@ invert_orientation
 invert_scale
 IoA8?	
 IQuickTime001
-ir8nhr8?
+)iqxD
 =iRB9ub
 iR@yh"@y
 iR@ysb
@@ -1774,7 +1774,7 @@ i#xjj-
 _i(xjnA
 _i(xjzA
 ixsyl
-!i@y@
+!i@y 
 )i@y_
 )i@y?
 i.@y	
@@ -1789,6 +1789,7 @@ i@yYyix
 j58hf@9(
 j5@yk9@y?
 j)8HK
+j`8'k`8
 Ja@9*
 J!A9j
 JaAJJ
@@ -1800,6 +1801,8 @@ jAZx*A
 Je@9*
 JEIJJ}
 j.E-R*(
+jh8Gkh8
+Jidx?
 JIIJJ}
 Jiix)
 Jikx_
@@ -1808,12 +1811,12 @@ ji)x)
 jj(8(
 J%	Ji*@
 J(MHJ	
-jn87kn8
 JNI_OnLoad
 JNI_OnUnload
 JSON error, unterminated element: 
 J{)x)
 J!_x_!5k
+j$xij.
 J @yj
 *j @yK @y_
 Jylx<}@
@@ -1821,15 +1824,16 @@ Jymxh
 jy(xjZ
 	*jz-
 *?"/k
+	K	}@
 K-@ $
 k2B-m"C-i*D-
 k2D)m:E)	
 *k2@y
-_k68A
+_k68!
 k(8vV@
 K9y;xa
 kAKJJ
-KAP9H
+K?B@qk
 key_groups
 KeyValueCache001
 KeyValues Error: %s in file %s
@@ -1838,10 +1842,11 @@ KeyValues::RecursiveSaveToFile: TODO, missing code for TYPE_COLOR.
 KeyValues::SaveToFile: couldn't open file "%s" in path "%s".
 KeyValuesSystem
 	kh8?u
+kicxJ
 Kii8k
 K)@)j
+kl8rhl8
 Km@x+
-K?@@qk
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
 kv3format_manager.cpp
 KV Conditional Evaluation Error
@@ -2082,7 +2087,6 @@ m_EndEffectorTargetBone
 meshes
 MeshSystem001
 MeshUtils001
-	mF8i
 m_feedbackFilter
 m_fForceAmount
 m_fForceAmountMin
@@ -2155,6 +2159,7 @@ m_flVolume
 m_flWidth
 m_flxfade
 m_ForceGenerators
+*mG8j
 m_graphName
 m_groupList
 m_hSnapshot
@@ -2179,6 +2184,7 @@ MixLayers
 MixLayers %s:
 MixLayer triggered %s:
 )MJJ }
+m_JointConstraintData
 m_JointConstraintPairs
 m_JointName
 m_Joints
@@ -2314,6 +2320,7 @@ mpg123_plain_strerror
 mpg123_rates
 mpg123_strerror
 m_pHandle
+m_pJointConstraintData
 m_pParent
 m_PreEmissionOperators
 m_PreviewInputs
@@ -2405,8 +2412,7 @@ New Group
 Newline in string literal
 nf@9/
 NhFD9t
-niqx?
-Nj1xkj-
+Nidx?
 No Buffer
 No DATA block for resource '%s'
 <no failure reason set>
@@ -2659,7 +2665,6 @@ Plat_ExitProcess
 Plat_FloatTime
 Plat_GetCPUFrequency
 Plat_GetEnv
-Plat_GetGameDirectory
 Plat_GetOSType
 Plat_GetProcAddresses
 Plat_IsHighDPI
@@ -2758,22 +2763,18 @@ Purge and reload all vmidi data and files.
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
 )q@9)
-	!Q9	
 	Q@9?
 	Q@9	
 ?	@qA
 QAngle
-q)c79
 Qi"A)`
 Qj$xij0
 Qj/xnj0
-	QL9I
 quantize_multiplier
 Quaternion
 Queued: elapsed time: %f, next sync time: %f, length: %f
 QueuedLoaderVersion001
 	Q@xi
-q$;@z
 RadianEuler
 radius0
 radius1
@@ -2853,7 +2854,7 @@ right_front2
 right_rear
 right_rear1
 right_rear2
-Rijh8h"`
+Rijh8h"d
 Riji8
 rJMJJ
 rJMJJ8
@@ -2862,12 +2863,12 @@ rmsTime
 rnd_down
 rnd_up
 .rodata
+rojj8
 ROOM Detected 
 rootNode
 round_to_int
 Running snd_get_physics_surface_properties for %s mod.
 Running snd_set_physics_surface_properties for %s mod.
-ryjj8
 : %s::
 "%s" 
 (*%s*), 
@@ -2876,7 +2877,6 @@ ryjj8
 %*s(%08x):Stopping: %s (%08x) : elapsed time: %.2fs
 %s|  % 2d: [% 3d] %-12s %s
 %s|  % 2d: %s [Offset: %d]
-	!S9	
 %s| AlignOf: %d
 %s allocation count overflow
 %s allocation count overflow( %llu >= %llu )
@@ -2958,7 +2958,6 @@ Size in bytes
 %s_KV3
 slerp
 slerp_bounce
-%s/maps/%s.sareverb
 S_MixAsync
 %*smixgroup: %s
 S_MixSampleFrames
@@ -3087,6 +3086,7 @@ snd_sos_show_soundevent_start
 snd_sos_show_track_list
 snd_sos_show_voice_elapsed_time
 snd_sos_soundevent_filter
+snd_sos_soundevent_profile
 snd_sos_start_soundevent
 snd_sos_stop_all_soundevents
 snd_sos_stop_soundevent_guid
@@ -3252,7 +3252,6 @@ Specifies the position (in degrees) of the virtual front left/right headphones.
 Specifies the position (in degrees) of the virtual front left/right speakers.
 Specifies the position  (in degrees) of the virtual rear left/right headphones.
 Specifies the position (in degrees) of the virtual rear left/right speakers.
-speed
 Spew data about the list of block entries.
 Spew message to console any time async sound loading blocks on file i/o.
 Spew streaming info ( 0=Off, 1=streams, 2=buffers
@@ -3374,8 +3373,6 @@ T(0@9
 T*-@9
 T*)@9
 T	!A9
-T?c79
-Tcih8
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<CSosPackedFieldData::Entry_t, 3, short>, CSosPackedFieldData::Entry_t, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<CSosPackedFieldData::Entry_t, 3, short>, T = CSosPackedFieldData::Entry_t, I = short]
 __temp_unserialization_member__
 test_angles_relative
@@ -3397,8 +3394,8 @@ Th:@9i
 Th&A)`
 The soundsystem requires the filesystem to run!
 Thf@9
+THik8
 THik8Hi)8
-THit8
 ThJAy	
 ThJ@y
 ThreadGetCurrentId
@@ -3440,7 +3437,6 @@ Tk"@yl
 Tl6B-oBC-q:D-
 TL	@9kA
 T	L@y?
-Tnij8
 Tokenset: %p
 ToolFramework2_002
 ToolGameSimulationDispatcher_001
@@ -3471,6 +3467,8 @@ Total USED Stack Mem Usage(ish): %i : %ik
 Total USED Stack Pool Mem: %i
 Total USED Stack Ref Fields: %i
 Total USED Stacks: %i
+Tpih8
+Tpii8
 T? @q
 track_queue
 	Track: %s
@@ -3581,7 +3579,6 @@ VAvi001
 VBAllocTracker001
 VBaseFileSystem011
 VBik001
-_V_ComposeFileName
 VConComm001
 V_cosf
 V_coshf
@@ -3631,6 +3628,7 @@ VMatrix
 vmdlkeys0
 vmdlkeys1
 vmdlkeys2
+vmdlkeys3
 VMDLLIB001
 VMediaFoundation001
 vmidiManifest
@@ -3799,6 +3797,7 @@ Warning: Can't find sos strings file: %s!
 Warning: Failed to get mix layer %s!
 WARNING: Invalid vsnd version '%d' for file: %s
 Warning: %s (error %s)!
+WARNING: snd_sos_soundevent_profile disabled - ignoring!
 Warning: sos_start_soundevent unable to read opvar %s for passing 
 Warning: sos_start_soundevent unable to read opvar %s for passing from event %s
 Warning:  %s = '%s' is infinite, clamping value.
@@ -3832,6 +3831,7 @@ x)%	S(
 _x	 @y
 =	/@y
 ;)@y:
+:@y	_
 @y	@@
 *!@y_
 #@y(!
@@ -3846,6 +3846,7 @@ y+a@9*)
 yaw_end
 yaw_start
 y+a_x
+@-#YC
 Y?calc_occlusion_src2
 (!@yh"
 #@yH 
@@ -3862,7 +3863,6 @@ yiv@y
 @yJ|@
 *%@yJ
 +	@yJ
-@-#YJ
 )@yj1@
 )YJJ)}
 #@yjR

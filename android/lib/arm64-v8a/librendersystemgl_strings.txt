@@ -82,7 +82,7 @@ $@)#@@)
 15CMemberFunctor4IP19CTextureManagerBaseMS0_FvP25IAsyncResourceDataRequestP12CTextureBase22TextureSpecification_tiES3_S5_S6_i12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CMemberFunctor6IP13CSOAContainerMS0_Fviiiii13__Float32x4_tEiiiiiS2_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CMemberFunctor7IP13CSOAContainerMS0_FviiiiPKS0_iiEiiiiS3_ii12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
-15CMemberFunctor7IP19CTextureManagerBaseMS0_FvP12CTextureBase12ResourceId_tPvi22TextureSpecification_ti23TextureBitsMemoryType_tES3_S4_S5_iS6_iS7_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
+15CMemberFunctor9IP19CTextureManagerBaseMS0_FvP12CTextureBase11CWeakHandleI31InfoForResourceTypeCTextureBaseE12ResourceId_tPvi22TextureSpecification_tS9_i23TextureBitsMemoryType_tES3_S6_S7_S8_iS9_S9_iSA_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CRenderDeviceGL
 15CRenderPassDesc
 15CRenderResource
@@ -128,6 +128,7 @@ $@)#@@)
 -1=App controlled, 0=DONT_CARE, 1=CPU_OPTIMIZED, 2=GPU_OPTIMIZED, 3=RENDER_DIRECT_TO_FRAMEBUFFER
 !1AQaq
 !>@=1B
+@)1]F
 /1V?O	
 /1V?OA
 /1V?OR
@@ -141,7 +142,7 @@ $@)#@@)
 20CTextureManagerGLNew
 20IHibernationListener
 20IResourceTypeManager
-2*1>9
+2	199s
 21CAndroidPresentTiming
 21CRenderHardwareConfig
 21CSheetHashConstructor
@@ -163,19 +164,17 @@ $@)#@@)
 26CDefaultKeyValuesErrorSpew
 26ICommandCompletionCallback
 27CSchemaUtlVectorManipulatorI10CUtlVectorI25VsInputSignatureElement_t10CUtlMemoryIS1_iEES1_E
-2	!89"
 28ISchemaCollectionManipulator
+2	!:9B
 2,	@9L
 "2BRbr
 2DArray
 2Gio8
 2	h(8
-2h"!9
 2hf!9
-2hj58
+2hj583P
 2Hku8
 2hn!9
-2hR 9
 2ij(8
 2ij(8h6T
 2+imx
@@ -187,6 +186,7 @@ $@)#@@)
 2	ky8?
 2L%@x+
 2oi-x
+2*q>9
 2x"@9
 +3@))#
 3_0_gl
@@ -217,7 +217,7 @@ $@)#@@)
 )4@9I
 .4@)((A)+0B))
 4a"J9
-4D#B)I
+4D!B)I	
 $4DTdt
 4GdEy#
 4h.A9
@@ -334,7 +334,7 @@ _8Jhj8*
 @9	|	
 &@9*]
 #@@9	
-	!]9	
+	!^9	
 	@91~
 9.1.15
 92ji8R
@@ -500,13 +500,13 @@ _A8B8G8R8_SNORM
 _A8B8G8R8_SRGB
 _A8R8G8B8
 _A8R8G8B8_SRGB
-	A{9*
+	a`9	
+	A_9)
 	A@9)
 A@9(9
 A9a2@
 /A9a:J9`>
 A9`&B
-	A{9J
 A9J!F
 	 A9JQG
 "A9)QG
@@ -521,6 +521,7 @@ _addons
 Adobe APP14 marker: version %d, flags 0x%04x 0x%04x, transform %d
 !	A)Dr
 *** A dynamic combo in %s doesn't start with "D_"! Aborting shader compile!
+	Af9	
 *** A feature in %s doesn't start with "F_"! Aborting shader compile!
 after solve err=%f
 !*Ah 8
@@ -585,6 +586,9 @@ AssetPreviewSystem_001
 AssetSystem001
 AssetSystemTest001
 *** A static combo in %s doesn't start with "S_"! Aborting shader compile!
+AsyncHookUpTextureBits
+AsyncTextureHookup
+Async Texture hookup uses its own threadpool instead of the global pool.
 ATI1N
 ATI2N
 ATI_DST16
@@ -626,7 +630,6 @@ Bad expression syntax: '%s', expected a single matching pair of enclosing braces
 Bad expression token: %c
 Bad VTEX data for '%s'
 Bailing out of OnBlockForQuery after %.3f seconds
-_bake
 BakedLODBuilderMgr001
 #base
 #base is NULL 
@@ -697,6 +700,7 @@ Buffer passed to JPEG library is too small
 B)v	@
 B)V	@
 BXcxc
+B#@y0
 @=%	@=c
 C9an@
 )C@9H
@@ -830,6 +834,7 @@ Could not find required OpenGL entry point '%s'!
 CRC error
 CreateDevice: Requested DX level %d, clamped to DX level %d
 CreateInterface
+CreateNewThreadPool
 CreateSimpleThread
 CRenderContextGL:: Cannot resolve from a non-MSAA buffer to an MSAA buffer!
 CRenderContextGL:: Tried to resolve 2 textures of differing sizes!
@@ -946,7 +951,7 @@ DCT scaled block size %dx%d not supported
 %d..%d
 %d.%d.%d
 DDDDUUUU
-DDDDUUUUDDDDUUUU
+DDDDUUUUDDDDUUUUx
 -debugdxsupport
 DebugTextureInfo001
 Decompressed %i texture mips in %.2f ms (%.1fmb/s)
@@ -1164,7 +1169,7 @@ Extra compressed data
 Extra compression data
 extreme cHRM chunk cannot be converted to tristimulus values
 F-4WE-6_G-
-f!9hb!9c
+f!9hb!9x
 F9Ii@
 \|FA@
 Failed AllocateTexture for '%s'
@@ -3552,10 +3557,10 @@ GL_TEXTURE_GEN_Q
 GL_TEXTURE_GEN_R
 GL_TEXTURE_GEN_S
 GL_TEXTURE_GEN_T
-gl/texturegl.cpp(1157): 
+gl/texturegl.cpp(1156): 
 gl/texturegl.cpp(469): 
 gl/texturegl.cpp(479): 
-gl/texturegl.cpp(911): 
+gl/texturegl.cpp(910): 
 gl/texturegl.cpp(95): 
 GL_TEXTURE_GREEN_SIZE
 GL_TEXTURE_GREEN_TYPE
@@ -3913,6 +3918,7 @@ Hih8h
 Hih8R
 Hitch alert: Present was waiting for %d iterations and %.1f seconds.
 hi)xh
+hj58[
 hj8."@
 hJAy	
 <hji8
@@ -3927,11 +3933,10 @@ hjy8H
 *Hk;8{
 Hkw8(
 hn8c|
-HookUpTextureBits
 HostStateMgr001
 hr1yI
-hr1yMX
-hr@9JA<
+hr1y'X
+hr@9J
 =hrCy
 hrqy`Z
 hr@y`
@@ -4260,6 +4265,7 @@ j48*:
 j48t^@
 j58hf@9(
 @j!8!
+j(8@\
 j(8(G
 j(8(H
 j)8HA
@@ -4268,6 +4274,7 @@ j(8HG
 j(8hH
 j(8HH
 j`8!i 8
+j(8O6
  J9?@
 J9e:A
 ja8 i!8!
@@ -4291,7 +4298,6 @@ JNI_OnUnload
 JPEG datastream contains no image
 JPEGMEM
 JPEG parameter struct mismatch: library thinks size is %u, caller expects %u
-	*Jq%
 jr82"
 jr822
 jr8!hr8R
@@ -5059,6 +5065,7 @@ QuarterSizeAttrWithBoxFilter
 Quaternion
 queued
 QueuedLoaderVersion001
+	QY9I
 _R11_EAC
 R16F_EXPAND
 R32_UINT
@@ -5274,6 +5281,7 @@ RpE@)`	@
 RPip8
 rsqrt
 r_texture_eager_eviction
+r_texture_hookup_uses_threadpool
 r_texture_nonstreaming_load
 r_texture_nonstreaming_only_fullmipchain
 r_texture_pool_size
@@ -5668,32 +5676,29 @@ texcoord
 texCoords = vec4( inTexCoords, 0.0, 0.0 );  
 TEXMAN: Abandoning job in %s
 TEXMAN: Abandoning streaming request in %s
-TEXMAN: Added hookup job for %s
 TEXMAN: Adding %s, %llx to abandoned hookup jobs
 TEXMAN: DeferTextureLoads %s MarkTextureBitsLoaded (%s)
 TEXMAN: Deleting %d textures
 TEXMAN: Outstanding stream count %d -> %d (%s)
-TEXMAN: Posting resource load complete msg.
 TEXMAN: %s loaded %s %i/%i mips (%ix%i / %ix%i) of %s (%i bytes)
 TEXMAN: %s MarkTextureBitsLoaded (%s)
 TEXMAN: %s MarkTextureBitsLoadRequired (%s)
-TEXMAN: %s %s
 TEX read request: %d KB; %s
 .text
 text compression mode is out of range
 TextLayout_001
 TextMessageMgr_001
 texturebase.cpp
-texturebase.cpp(1726):Error loading texture: %s
-texturebase.cpp(2642):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2663):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2674):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2685):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2696):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2717):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2728):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2739):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2750):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(1731):Error loading texture: %s
+texturebase.cpp(2647):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2668):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2679):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2690):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2701):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2722):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2733):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2744):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2755):ResourceHandleToData( %s ) failed! Falling back to error texture!
 TextureDimLog2
 Texture manager out of space! Can't allocate new texture!
 Texture memory discrepancy! %llu != %llu
@@ -6037,7 +6042,7 @@ void CRenderThreadGL::Execute(CCommandStream *, bool)
 void CRenderThreadGL::OnUpdateIndexBuffer(const CommandUpdateIndexBuffer_t &, bool)
 void CRenderThreadGL::OnUpdateVertexBuffer(const CommandUpdateVertexBuffer_t &, bool)
 void CSheetDataTextureCache::AllocateAndUploadSequenceData(const Sheet_t *, Vector2D *, int *)
-void CTextureManagerBase::AsyncHookUpTextureBits(CTextureBase *, ResourceId_t, void *, int, TextureSpecification_t, int32, TextureBitsMemoryType_t)
+void CTextureManagerBase::AsyncHookUpTextureBits(CTextureBase *, HRenderTexture, ResourceId_t, void *, int, TextureSpecification_t, TextureSpecification_t, int32, TextureBitsMemoryType_t)
 void CTextureManagerBase::MN_OnResourceFileLoaded(IAsyncResourceDataRequest *, CTextureBase *, TextureSpecification_t, int32)
 void CTextureManagerBase::MN_OnResourceLoadCompleted(CTextureBase *, TextureObjectInfo_t &, int32, int)
 void CTextureManagerBase::MN_OnResourceLoadFailed(CTextureBase *, int32)

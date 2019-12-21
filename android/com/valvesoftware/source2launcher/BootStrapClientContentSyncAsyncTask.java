@@ -18,7 +18,7 @@ public class BootStrapClientContentSyncAsyncTask extends IContentSyncAsyncTask {
     }
 
     private boolean SyncContent() {
-        String GetString = Resources.GetString("VPC_GameName");
+        String GetString = Resources.GetString("GameName");
         boolean z = JNI_Environment.GetAvailableStorageBytes(JNI_Environment.GetPublicPath()) < 0;
         String absolutePath = JNI_Environment.GetPublicPath().getAbsolutePath();
         String[] strArr = {"so", "dbg", "exe", "dll", "pdb", "dylib", "dmp", "mdmp", "bat", "cmd", "so.0", "so.1", "so.2", "so.3", "so.4", "so.5", "so.6"};

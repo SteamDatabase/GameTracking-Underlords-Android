@@ -65,6 +65,7 @@ Plat_ExitHibernation
 Plat_ExitProcess
 Plat_GetGameDirectory
 Plat_HandleJavaException
+Plat_HookSpecialThread
 Plat_IAPUpdateConsumedStatus
 Plat_IAPUpdatePricing
 Plat_IAPUpdatePurchaseStatus
@@ -85,6 +86,7 @@ strchr
 strlen
 .text
 ThreadGetCurrentId
+tier0
 UpdateIAPConsumedStatus
 V_atoui64
 V_snprintf

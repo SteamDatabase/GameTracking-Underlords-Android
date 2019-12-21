@@ -33,7 +33,6 @@ $@)  "
 0x%016llX
   0x%08X %s,
 0@y_!!ka
-!@)@1
 10CAnimState
 10CBoneSetup
 10ConCommand
@@ -41,6 +40,7 @@ $@)  "
 10IAnimMotor
 10IAnimState
 10IAppSystem
+-1 1000
 1 1 1
 11CMotionClip
 11CPathMetric
@@ -240,6 +240,7 @@ $@)  "
 19CFutureFacingMetric
 19CHitReactUpdateNode
 19CIKRuleContext_Base
+19CJiggleBoneAnimNode
 19CLeanMatrixAnimNode
 19CLookPitchCondition
 19CModelConfigElement
@@ -258,11 +259,11 @@ $@)  "
 19IAnimStateCondition
 19IKeyValuesErrorSpew
 19IPathMetricInstance
+	1B9I
 1bQJ1~
 1DBlend
 1*i(8`
 1ns:5
-	1R9I
 	2*	@
 2*?)0"
 20CAimMatrixUpdateNode
@@ -313,6 +314,7 @@ $@)  "
 21CFollowPathUpdateNode
 21CFutureVelocityMetric
 21CIKRuleContext_Ground
+21CJiggleBoneUpdateNode
 21CLeanMatrixUpdateNode
 21CLookHeadingCondition
 21CMotionMetricInstance
@@ -428,7 +430,7 @@ $@)  "
 26CAnimationGraphTypeManager
 26CAnimParameterListInstance
 26CBasePathAnimMotorInstance
-?26CClothAttrSequenceCompiler
+26CClothAttrSequenceCompiler
 26CDefaultKeyValuesErrorSpew
 26CEnumAnimParameterInstance
 26CLookPitchConditionUpdater
@@ -467,6 +469,7 @@ $@)  "
 27CSchemaUtlVectorManipulatorI10CUtlVectorI14CAnimAnimEvent10CUtlMemoryIS1_iEES1_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorI14CSeqCmdSeqDesc10CUtlMemoryIS1_iEES1_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorI15CBlendNodeChild10CUtlMemoryIS1_iEES1_E
+27CSchemaUtlVectorManipulatorI10CUtlVectorI15CJiggleBoneItem10CUtlMemoryIS1_iEES1_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorI15CSeqPoseSetting10CUtlMemoryIS1_iEES1_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorI16CChoiceNodeChild10CUtlMemoryIS1_iEES1_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorI16CSeqBoneMaskList10CUtlMemoryIS1_iEES1_E
@@ -560,32 +563,28 @@ $@)  "
 29IAnimationGraphVisualizerInfo
 29IFutureVelocityMetricInstance
 29ISolveIKChainAnimNodeInstance
-	2)a-
-	2)a!
-	2)a*
-2	A;9B
-2	A:9s
+	2)a(
+	2)a%
 2_BONE_IK
 2dtri
 %.2f degrees, %.2f ratio
-2H3#9
 2h>@y
 	2	i*
 2	i38
 2-i:8
 2	i:8
 2ij(8
-2ij(8F
+2ij(8\
 2+imx
 *2j08p
 *2j08q^A
-	2Ja;
+	2Ja6
+2jjj8l
 2jp8R
 2_!!k
 2L@-4
 2Ly+xi
 2N  !
-2njj8l
 2Way_0( %s )
 2Way_1( %s )
 2wi*8*i@9J
@@ -594,6 +593,7 @@ $@)  "
 2xi*8*i@9J
 	2(y7
 	2	y7
+30-]4
 30CAnimGraphUpdateContextBuilder
 30CCompressedReferenceQuaternion
 30CFacingHeadingConditionUpdater
@@ -656,7 +656,6 @@ $@)  "
 4n&	&
 4T@-6
 4	T@9?
-5h>A9
 5hf@9
 )5IJ(}
 =5$@x
@@ -668,7 +667,7 @@ $@)  "
 6i"@ij
 @6W!?
 6x"@9
-6Y3c9
+6Y3S9
 7hb@9h
 7hf@9
 7hf@9(
@@ -678,7 +677,6 @@ $@)  "
 7ib@9i
 7IConVar
 	*_!7k
-7n  !
 7Y@)8	@
 @- 8 
 @-!8$
@@ -693,6 +691,7 @@ $@)  "
 8@y	 @
 `"@9	
 )!@9)
+{9#	 
 @=#9 
 @-!9 
 @9`!)
@@ -703,13 +702,14 @@ $@)  "
 @9+	@9,
 9)@@9
 9-	@9l	@9
-[%9.9s] (%5d)%s:
 9a	@=
 9a	@= 	@=!
 9a"@9
-@9?aEkA
+@9_aAkA
+@9_aYkA
 9CAnimData
 9CAnimPath
+@9?c@kA
 (@@9h
 (@@9H
 9h&@9
@@ -721,7 +721,6 @@ $@)  "
 9hbE9
 9h^E9
 9hf@9(
-9h.F9
 "@9hf@9i
 9hji8
 9hrAy
@@ -739,16 +738,17 @@ $@)  "
 9ivA9
 +)@9J
  @9k%
-@9?`@kA
+@9_`[kA
+@9_`@kA
+@9_`RkA
 (@@9tB
 (@@9tB	
 @9wiu
-9@z(|`
-9@zH~`
+9@z(~`
 a^  `
 'A)	}	
 (-A)*
-*(%@-*-A-
+A- ! 
 A- (#
 A- 	 
 A-!(!
@@ -762,10 +762,12 @@ a^@9b*
 	A@9i
 A@9)y
 A-'@A-
+?AAk	"
 	@=a	@=B
 	AB9?
 Absolute
 AbsolutePoseControl
+abs( %s )
 Acceleration Forward-Back
 Acceleration Front-Back
 Acceleration Heading
@@ -874,11 +876,10 @@ AE_WPN_PLAYWPNSOUND
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_POPHEADCRAB event format missing velocity parameter! Usage: event AE_ZOMBIE_POPHEADCRAB "<BoneName> <Speed>" 
 AE_ZOMBIE_TOGGLE_HEAD
-	aG9k
 Agg data %d: %p (%d parts, crc 0x%08X)
 *]A)h
 *%A)h
-Ah1xij/
+Ah1xhj+
 *a@i)	
 )AIJ)
 )AIJ#
@@ -894,12 +895,15 @@ Aim Matrix is missing a child.
 ai_model_info
 AIWalkable
 	!A)j
-_A@k(
+	AJ9	
 ,%A)k
+A[k+"
+#@-	AK
 AllocateAndLoad failed for '%s'
 AllocateAndLoad failed for '%s' (%s)
 allowstatic
    + Already Exists, ignoring
+always_run
 Always use fallback hinge
 A master convar that effectively disables the entire footlock node.
 anchor_angles
@@ -976,9 +980,10 @@ animgraph_footlock_calculate_tilt
 animgraph_footlock_debug_foot_index
 animgraph_footlock_debug_type
 animgraph_footlock_enabled
+animgraph_footlock_ground_roll
 animgraph_footlock_hip_offset_enable
 animgraph_footlock_reachability_slide
-animgraph_footlock_tilt_enable
+animgraph_footlock_tilt_mode
 animgraph_footlock_trace_ground_enabled
 animgraph_footlock_use_hip_shift
 animgraph_footlock_use_twobone_solve
@@ -1053,6 +1058,7 @@ ApplyNewState %d at %f
 Apply Tilt
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 archive
+ARk-#
 AssetBrowserSystem_001
 AssetBrowse( vpcf )
 AssetPreviewSystem_001
@@ -1077,11 +1083,9 @@ autocycle
 Auto Reset
 auto_unragdoll_duration
 Average Ground Position
+?AVki#
 A-!Xh
-AXk!#
-?AYki
 Ay)Y@y
-	AZ9	
 @-b("
 @-b	@
 B-1HD-
@@ -1172,7 +1176,6 @@ Blend Amount on Enter
 Blend Amount on Exit
 Blend Duration
 blendindices
-Blending
 Blend Item
 Blend Items
 BlendKey_Distance
@@ -1185,7 +1188,6 @@ blendlayer
 BlendList
 Blend Method
 Blend Mode
-Blend Out Damping
 Blend Out Time
 BLEND_PREALIGNED|
 Blend Source for the X Axis set to "Parameter", but no parameter is set
@@ -1194,6 +1196,7 @@ Blend Source set to "Parameter", but no parameter is set
 Blend Space
 BlendSpace_Model
 BlendSpace_Model_RotationOnly
+BlendSpace_Model_TranslationOnly
 BlendSpace_Parent
 Blend Value
 blendweight
@@ -1582,6 +1585,8 @@ C_INIT_VelocityFromNormal
 C_INIT_VelocityRadialRandom
 C_INIT_VelocityRandom
 CIntAnimParameter
+CJiggleBoneAnimNode
+CJiggleBoneItem
 <classptr>
 CLeanMatrixAnimNode
 CLeanMatrixInstanceData
@@ -1751,7 +1756,7 @@ C_OP_SetSingleControlPointPosition
 C_OP_StopAfterCPDuration
 C_OP_TwistAroundAxis
 COrientConstraint
-Cos( %s )
+cos( %s )
 Counter Rotation Scale
 CParameterAnimCondition
 CParameterValue
@@ -1880,8 +1885,8 @@ c@yhR
 %d : 
  D-	(@
 D-"/@
+d6@y#
 d@9hf
-D-a"@
 %d.Add( %s, %d, %.2f )
 Damped Path Motor
 DampedPathMotorInstanceData_t
@@ -1915,11 +1920,14 @@ Debug Hold Up
 Debug Lock Values Color
 Debug Name
 Debug Normalized Length
+Debug Offset
 Debug Setting
 DebugTextureInfo001
 Debug X Axis Circle
 Debug Y Axis Circle
 Debug Z Axis Circle
+Decay Bias
+Decay Duration
 Decompression failure
    + Default Morph Ctrl Weight :: %8.4f
 Default Value
@@ -1935,7 +1943,6 @@ DevMsg
 %d.FetchCycle( %s, %.2f )
 %d.FetchFrame( %s, %.1f )
 Difference Between Moving and Facing
-differs  :
 %d.IKLockInPlace( %s, %.2f, %.2f )
 %d.IKRestoreAll( )
 DirBlend:m_flCycle
@@ -1992,7 +1999,7 @@ E-!8$
 EconItemToolModel_001
 _edata
 EditorDynamicConfig
-	eF9	
+	eF9)
 .eh_frame
 .eh_frame_hdr
 <embedded>
@@ -2021,6 +2028,7 @@ __end__
 End Cycle
 End Effector
 end effector position %f
+End Effector Post Solve
 End Effector Type
 endframe
 End State
@@ -2076,6 +2084,7 @@ explosion_type
 explosive_damage
 explosive_radius
 EXPORTSYSTEM_INTERFACE_VERSION_001
+exp( %s )
 extra
 Extrapolate Movement
 F: %.2f deg
@@ -2115,7 +2124,6 @@ False
 FATAL ERROR: unable to register all schema data: %s
 FAy?! k
 FCVAR_NEVER_AS_STRING
-FdA-SH@-`
 f %d %d %d
 #f %d %d %d, original mesh: %d %d %d
 FeetSettings
@@ -2124,9 +2132,9 @@ fetchcycle
 fetched: %s : %.3f
 fetchframe
 fetchframerange
->fff?
 %f %f %f %f
 ffffff
+>fff?$P
 FIELD_BOOLEAN
 FIELD_CHARACTER
 FIELD_CLASSPTR
@@ -2336,6 +2344,7 @@ Future Facing Metric
 Future Velocity
 Future Velocity Metric
 G{}()':
+	!G9	
 G@9hF
 G@9hN
 game_class
@@ -2374,7 +2383,6 @@ Get the list of animations for the model
 Get the list of sequences on the model
 Get the model this sequence belongs to
 %g %g %g %g
-(gGy 
 Given a name or a sequence handle, returns an instance of the sequence class
 Given a pose parameter array, return the highest frame number for the sequence
 GK-Tk
@@ -2387,7 +2395,6 @@ Goal Direction
 Goal Direction Metric
 Goal Filter Start Distance
 Goal Has Changed
-Goal plane tilt offset.
 GoalPosition
 Goal Position
 .got.plt
@@ -2408,11 +2415,10 @@ h&?);
 h&@)?
 )H$@)
 #H)	}	
-h1xnj 
-h2A9(
+h1xij 
+h1xkj.
 h2Ayi
 H3@y(3
-h6A9h
 *h6AyiF@
 h6AyiF@
 H6hrC
@@ -2431,12 +2437,10 @@ hb@9(
 hB@9`
 hb@9H
 hB@9h
-hBA9(
 hBA9h
 -hbB9
 )HcB9
 HCik_debug_perlin_solver
-!hdx?
 headtype
 health
 health_override
@@ -2452,6 +2456,7 @@ hf@9i
 )hFA9
 hfB9	
 hFD9u
+hfGy`
 h*@i)
 Hi)8j
 HIGHDPI
@@ -2476,11 +2481,11 @@ Hit React node requires its %s parameter %s to NOT be interpolated
 Hit Strength
 Hit Strength Parameter
 h&@-j
-hj58P
+hj48k
 hj@9yF@
 h&@-j.A-
 !H*JAJ*
-hjG9)YF
+hjG9)UF
 H*J!J*
 H*J	J*
 HMaterial
@@ -2499,15 +2504,15 @@ HSCRIPT-light
 hscript_lightbinding
 HSCRIPT-new
 HSequence
-=hs@y
 =hs@y+
+=hs@y1
 hurt_me
 hurt_them
 [hxVYyxk
 h&Y)9
+h&@y)ED
 h"@yi
 h&@yI
-h&@y)ID
 h"@ys
 hZE9h
 *-@i)	
@@ -2516,7 +2521,6 @@ hZE9h
 i*	)) 
 I)!|@
 i1xhj*
-i1xhj+
 i1xjj,
 I5A)K
 i6Ay`
@@ -2542,7 +2546,7 @@ IAnimStateCondition
 IAnimStateMachine
 IAnimStateMachineInstance
 IAnimStateTransition
-IAnimTag
+?IAnimTag
 IAnimTagSpanContainer
 IAudioAnimTag
 ib@9`
@@ -2567,9 +2571,6 @@ I CUtlRBTree<CUtlMap<const char *, int, unsigned short, bool (*)(const char *con
 I CUtlRBTree<CUtlMap<int, JointTreeNode *, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short, CUtlMap<int, JointTreeNode *, unsigned short, bool (*)(const int &, const int &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, JointTreeNode *, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<int, JointTreeNode *, unsigned short, bool (*)(const int &, const int &)>::Node_t, I = unsigned short, L = CUtlMap<int, JointTreeNode *, unsigned short, bool (*)(const int &, const int &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, JointTreeNode *, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<RetargetKey_t, int, unsigned short, bool (*)(const RetargetKey_t &, const RetargetKey_t &)>::Node_t, unsigned short, CUtlMap<RetargetKey_t, int, unsigned short, bool (*)(const RetargetKey_t &, const RetargetKey_t &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<RetargetKey_t, int, unsigned short, bool (*)(const RetargetKey_t &, const RetargetKey_t &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<RetargetKey_t, int, unsigned short, bool (*)(const RetargetKey_t &, const RetargetKey_t &)>::Node_t, I = unsigned short, L = CUtlMap<RetargetKey_t, int, unsigned short, bool (*)(const RetargetKey_t &, const RetargetKey_t &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<RetargetKey_t, int, unsigned short, bool (*)(const RetargetKey_t &, const RetargetKey_t &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<void *, int, bool (*)(void *const &, void *const &), CUtlMemory<UtlRBTreeNode_t<void *, int>, int> >::NewNode(const T *) [T = void *, I = int, L = bool (*)(void *const &, void *const &), M = CUtlMemory<UtlRBTreeNode_t<void *, int>, int>]
-)icx_
-)icx?
-identical:
 Identity
 IDirectPlaybackAnimNodeInstance
 )idx?
@@ -2590,7 +2591,6 @@ Ignoring mismatched anim :: %s :: %s
 *ih8h~@
 )ih8Ii(8
 	*Ii+
-ii8#hi8
 Iii8*
 %i %i %i %i
 ii*x!
@@ -2641,6 +2641,7 @@ ik_debug_lock_force_lock_rotation_alpha
 ik_debug_locks
 ik_debug_locks_breaks
 ik_debug_planetilt
+ik_debug_planetilt_axis_length
 ik_debugrule_distance
 ik_debugrule_forcedegree
 ik_debugrule_offset_x
@@ -2653,7 +2654,6 @@ ik_debug_soften
 ik_debug_soften_enable
 ik_debug_targets
 ik_enable
-ik_enable_planetilt
 IkEndEffector_Attachment
 IkEndEffector_Bone
 IkEndEffectorType
@@ -2728,6 +2728,7 @@ InfoForResourceTypeCAnimationGroup
 InfoForResourceTypeCAnimData
 InfoForResourceTypeCSequenceGroupData
 .init_array
+Initial tilt bone orientation.
 Inner Angle
 Inner Stopping Radius
 input
@@ -2756,6 +2757,7 @@ Intentionally vague touch behavior for %p
 Intercept point.
 interfaces.cpp
 Internal inconsistency between the layout format and attribute is detected.
+Interpolation
 interval
 IntParameter
 Int Parameter
@@ -2793,9 +2795,8 @@ IPostGraphIKChainBlendTag
 IPostGraphIKTag
 Iq@9	1
 IQuickTime001
-ir8nhr8?
+)iqxD
 IRagdollAnimTag
-	is8	
 is active
 IsAnimation
 IsAutoplay
@@ -2825,6 +2826,7 @@ IsVScript
 #It contains connectivity part %d with %d vertices
 Iterate
 IterateRandom
+	iu8)
 iv_debugbone
 IVSSequence
 	ivx?=
@@ -2838,6 +2840,7 @@ j-!	)
 J0@y_
 j2?)?
 j58hf@9(
+j`8'k`8
 JaAIJ
 JAAIJ
 	J"AHJ
@@ -2848,8 +2851,15 @@ J-dj@
 JD-sN*
 JEIJJ}
 j&@-h
+jh8Gkh8
 JHAHJ)
+Jidx?
+Jiggle Bone
 JIGGLE_BONE
+JiggleBone:m_resetCount
+Jiggle Bone node (%s): No items defined; node will do nothing 
+Jiggle Bones
+JiggleBoneSimSpace
 jiggle bone %u
 Jih8*i+8j
 Jih8j
@@ -2861,7 +2871,6 @@ Jiz8J
 jj(8(
 	J(MHJ	
 J(MHJ	
-jn87kn8
 JNI_OnLoad
 JNI_OnUnload
 Joint Indices (%d) Out Of Range for SINT16: Skinning will not work!
@@ -2874,8 +2883,10 @@ js_object
 JSON error, unterminated element: 
 js_raw_args
 js_value
+j$xij.
 	*jz-
 _!+k 
+	K	}@
 K)@)+)
 K1?U20
 *k2@y
@@ -2884,8 +2895,7 @@ k5@i*i
 @k68h
 k(8vV@
 kAKJk
-KAV9h
-k-D	 
+K?B@qk
 K-db@
 K-eb@
 Keyframe Animation
@@ -2901,11 +2911,12 @@ KeyValuesSystem
 k-F9(
 kh,8+
 	kh8?u
+kicxJ
 kiix)	
 K!@iJ	
 K)@)j
+kl8rhl8
 KP*;Q>.
-K?@@qk
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
 kv3format_manager.cpp
 KV3 load transfer failed: %s
@@ -2934,7 +2945,6 @@ LeanMatrixNode
 Left Shoulder
 Left Trigger
 Leg Extension Scale
-length
 Length; 
 li*8*i@9J
 L=IAnimMotorInstance
@@ -2953,6 +2963,7 @@ LightingBasis
 lightmap
 lightmapuv
 LightmapUV
+LightmapUVW
 Lik8m
 lil8l
 Linear
@@ -2973,6 +2984,7 @@ LoadKV3Object error: %s
 LoadKV3ObjectInPlace error: %s
 local
 Localize_001
+Local Space
 Lock Blend on Reset
 Lock Blend When Waning
 Lock Clip When Waning
@@ -3021,7 +3033,6 @@ lS@ymW@y
 LYkxk
 M)@)-)
 M- 8 
-m9#	 
 (MA8(
 m_aAngOffset
 m_activeSegments
@@ -3081,7 +3092,7 @@ MaxMoveSpeed
 Max Move Speed
 Max Right Rotation
 maxSpringTension
-Max( %s, %s )
+max( %s, %s )
 Max Stretch Amount
 Max Tension
 Max Value
@@ -3333,10 +3344,11 @@ m_constraints
 m_container
 m_ControlRigData
 m_cRenderColor
+@Mct>
 m_CullDataIndex
 m_currentSegmentIndex
 m_currentSequenceIndex
-m_dampedScaleValue
+m-D	 
 m_dampedTurnValue
 m_dampedValue
 m_damping
@@ -3411,8 +3423,8 @@ MeshSystem001
 MeshSystem/DoNotLoadMorphsOnMobile
 MeshUtils001
 meshUtilsKeyValues
+m_eSimSpace
 m_eType
-mE)U"
 m_eventArray
 m_EventData
 m_facingDamping
@@ -3452,8 +3464,11 @@ m_flClusterRefireTimeMax
 m_flClusterRefireTimeMin
 m_flClusterSize
 m_flCounterRotationScale
+m_flDamping
 m_flDampingRatio
 m_flDebugNormalizedLength
+m_flDecayBias
+m_flDecayDuration
 m_flDefaultMorphCtrlWeight
 m_flDefaultTiltSpringStrength
 m_flDistance
@@ -3503,6 +3518,7 @@ m_flInput1
 m_flInterpEndTime
 m_flKillDelay
 m_flKillRate
+m_flLastPathTime
 m_flLiteralValue
 m_flLockBreakBlendTime
 m_flLookAheadDistance
@@ -3568,9 +3584,11 @@ m_flScale
 m_flScalePerParentParticle
 m_flSegmentStartTime
 m_flSelectionThreshold
+m_flSimRateFPS
 m_flSlowDownStrength
 m_flSoftenPercentage
 m_flSoftenTime
+m_flSpeedScaleBlending
 m_flSphereRadius
 m_flSplayMaxAngle
 m_flSplayMinAngle
@@ -3680,7 +3698,7 @@ Minimum Speed Scale
 m_Initializers
 m_inputList
 m_inputValue
-Min( %s, %s )
+min( %s, %s )
 m_instanceData
 m_InstanceName
 Min Steps Remaining
@@ -3699,6 +3717,7 @@ Missing mandatory parameter "%s"
 Missing parameter for %s
 m_items
 )MJJ }
+m_JointConstraintData
 m_JointConstraintPairs
 m_JointName
 m_Joints
@@ -3915,8 +3934,10 @@ Model %s: group %s: missing referenced sequence "%s"
 Model %s missing bone and flex counts (%d < %d), init %d
 Model Space
 Model Space, Rotation Only
+Model Space, Translation Only
 Model %s: sequence/animation name collision found "%s"
 Model %s: unable to find bone reference "%s"
+Model to world
 Modulate Step Height
 m_Operators
 m_option
@@ -3950,6 +3971,7 @@ Move Heading Relative to Look Heading
 Move Heading Relative To Look Heading
 Move:m_bOnGround
 MovementData
+Movement Limits
 MovementSettings
 Move:m_flBoundaryRadius
 Move:m_flCurrentMoveSpeed
@@ -4048,7 +4070,6 @@ m_sAttachment
 m_sAttachmentName
 m_sBone
 m_sBoneName
-m_scaleDamping
 m_sceneObjects
 m_sChainName
 m_seed
@@ -4143,11 +4164,14 @@ m_values
 m_valueSource
 m_vBallOffset
 m_vBasePosition
+m_vBoundsMaxLS
+m_vBoundsMinLS
 m_vCapsulePos1
 m_vCapsulePos2
 m_vConeApex
 m_vControlPoint1
 m_vControlPoint2
+m_vDebugOffset
 m_vecBoneWorldMax
 m_vecBoneWorldMin
 m_vecCenter
@@ -4185,6 +4209,8 @@ m_vTargetPosition
 m_vTintColor
 m_vTipOffset
 m_vToStrideStartPos
+m_vTraceOffset
+m_vTraceScale
 m_vUpLS
 m_vUpVector
 m_vValue
@@ -4216,13 +4242,14 @@ myjx?
 "N(  
 $N   
 $N  "
+$N!\#
 $N@ #
-&N  "
-&N)))
+&N  !
 #N  !
 #N)	}	
-#N#(-
+#N#(*
 %N  !
+%N)))
 &n0:0
 $N "1
 N10Reflection12CTypeFactoryI17CMotionMetricBaseJEE13CFactoryMakerE
@@ -4318,6 +4345,7 @@ N10Reflection6Detail7ToBaseTI19CFloatAnimParameter18CAnimParameterBaseEE
 N10Reflection6Detail7ToBaseTI19CFollowPathAnimNode13CAnimNodeBaseEE
 N10Reflection6Detail7ToBaseTI19CFootPositionMetric17CMotionMetricBaseEE
 N10Reflection6Detail7ToBaseTI19CFutureFacingMetric17CMotionMetricBaseEE
+N10Reflection6Detail7ToBaseTI19CJiggleBoneAnimNode13CAnimNodeBaseEE
 N10Reflection6Detail7ToBaseTI19CLeanMatrixAnimNode13CAnimNodeBaseEE
 N10Reflection6Detail7ToBaseTI19CLookPitchCondition23CAnimStateConditionBaseEE
 N10Reflection6Detail7ToBaseTI19CMoveSpeedCondition23CAnimStateConditionBaseEE
@@ -4481,6 +4509,7 @@ N10Reflection6Detail9TypeInfoTI19CFloatAnimParameterEE
 N10Reflection6Detail9TypeInfoTI19CFollowPathAnimNodeEE
 N10Reflection6Detail9TypeInfoTI19CFootPositionMetricEE
 N10Reflection6Detail9TypeInfoTI19CFutureFacingMetricEE
+N10Reflection6Detail9TypeInfoTI19CJiggleBoneAnimNodeEE
 N10Reflection6Detail9TypeInfoTI19CLeanMatrixAnimNodeEE
 N10Reflection6Detail9TypeInfoTI19CLookPitchConditionEE
 N10Reflection6Detail9TypeInfoTI19CMoveSpeedConditionEE
@@ -4601,6 +4630,7 @@ N17CAnimFactoryBaseTI13CAnimNodeBaseE14CFactoryMakerTI18CAimMatrixAnimNodeEE
 N17CAnimFactoryBaseTI13CAnimNodeBaseE14CFactoryMakerTI18CSetFacingAnimNodeEE
 N17CAnimFactoryBaseTI13CAnimNodeBaseE14CFactoryMakerTI18CTwoBoneIKAnimNodeEE
 N17CAnimFactoryBaseTI13CAnimNodeBaseE14CFactoryMakerTI19CFollowPathAnimNodeEE
+N17CAnimFactoryBaseTI13CAnimNodeBaseE14CFactoryMakerTI19CJiggleBoneAnimNodeEE
 N17CAnimFactoryBaseTI13CAnimNodeBaseE14CFactoryMakerTI19CLeanMatrixAnimNodeEE
 N17CAnimFactoryBaseTI13CAnimNodeBaseE14CFactoryMakerTI19CSpeedScaleAnimNodeEE
 N17CAnimFactoryBaseTI13CAnimNodeBaseE14CFactoryMakerTI19CStopAtGoalAnimNodeEE
@@ -4697,16 +4727,16 @@ NetworkSystemVersion001
 Neural Network
 New ground target
 Newline in string literal
+Newly tilted bone.
 Next step normal
 nexttoken
 nf@9/
  nG:'
 &nG9"
+$NH" 
 NhFD9t
 NI5A)K
-niqx?
-Nj1xkj-
-+N-k#
+Nidx?
  n)M"
 noblend
 No Buffer
@@ -4872,7 +4902,6 @@ placement_attach
 placement_bone
 placement_mode
 Plane normal
-Plane tilt offset.
 Plat_DebugPrint
 Plat_ExitProcess
 Plat_FloatTime
@@ -4970,7 +4999,6 @@ quaternion
 Quaternion-world
 QueuedLoaderVersion001
 Quintic
-q$;@z
 r1NQJ
 R5P=(
 R-`9 
@@ -5035,7 +5063,6 @@ Reset Destination
 Reset On Change
 Reset On Selection
 Reset Subtracted Child
-Resolved
 resource
 <resource>
 ResourceCompilerSystem001
@@ -5106,6 +5133,7 @@ R)MIJ+
 rnd_down
 rnd_up
 .rodata
+rojj8
 _root_keyname
 Root Motion Blend
 Root Motion Speed
@@ -5113,10 +5141,11 @@ Root Motion Turn Speed
 RootMotionVelocity
 Root Motion Velocity
 rootNode
+Root to newly tilted bone
+Root to tilt bone original
 rotate
 rotWeight
 runspeed
-ryjj8
 "%s" 
 (*%s*), 
 %s+--
@@ -5140,6 +5169,8 @@ Sampling Method
 %s: arg %d, expected a <%s> = <%s> pair, got: %s = %s on model %s
 %s: Bad %s, couldn't compute nodeId for "%s" on model: %s
 %s| Base Class%s: %d
+%%s  %%c %%10s : %c%%-%d.%ds%c %%s
+%%s  %%c %%10s : %c%%%ds%c %%s
 SceneSystem_002
 SceneUtils_001
 sched_yield
@@ -5243,6 +5274,7 @@ Sequence:%s:m_resetCount
 Sequence:%s:m_resetCycleValue
 SerializedEntitiesVersion001
 server
+Server
 ServerAuthoritative
 Server Authoritative
 server_can_execute
@@ -5316,11 +5348,16 @@ short_src
 %s: ignoring unexpected sequence paramater: %s
 %s: ignoring unknown sequence paramater: %s
 %s: ignoring unknown, %s = %s, parameter: %s
+Sim Rate (FPS)
+Sim Space
+SimSpace_Local
+SimSpace_Model
+SimSpace_World
 Simulated
 SingleBlendTime
 Single Blend Time
 singleplayer
-Sin( %s )
+sin( %s )
 %s: Invalid pose parameter index specified %d, valid range is [0, %d] on model: %s
 %s: Invalid sequence handle %d on model: %s
 %s: invalid src index %d, valid range [0, 8]
@@ -5328,7 +5365,6 @@ skel_constraints_enable
 Skeletal Input node requires the model to have Skeletal Input Settings.  Please add a Skeletal Input Settings node to the model %s in ModelDoc
 SkeletonBoneBounds_t
 Skeleton Instance
-%s LatchChanged at %f:  %s %s
 slerp
 Slope Angle
 Slope Heading
@@ -5336,6 +5372,7 @@ Slope Normal
 Slope Normal World Space
 SlopeNormal_WorldSpace
 Slope Pitch
+SlopeTrace
 Slope Yaw
 Slow Down On Slopes
 Slow Down Strength
@@ -5397,7 +5434,7 @@ springConstant
 Spring Constant
 %s| Project: '%s' Binary: '%s'
 sqrtf
-Sqrt( %s )
+sqrt( %s )
 "%s" = "%s"
 %s == %s
 %s - %s
@@ -5472,6 +5509,7 @@ StatePropertyEditor
 State:%sm_currentStateIndex
 State:%sm_currentStateStartTime
 State:%sm_currentTransitionIndex
+State:%sm_resetCount
 StateTransitionPropertyEditor
 static const ::Reflection::TypeID CAddAnimNode::MyTypeID()
 static const ::Reflection::TypeID CAimMatrixAnimNode::MyTypeID()
@@ -5533,6 +5571,7 @@ static const ::Reflection::TypeID CGroundCondition::MyTypeID()
 static const ::Reflection::TypeID CGroundIKSolveAnimNode::MyTypeID()
 static const ::Reflection::TypeID CHitReactAnimNode::MyTypeID()
 static const ::Reflection::TypeID CIntAnimParameter::MyTypeID()
+static const ::Reflection::TypeID CJiggleBoneAnimNode::MyTypeID()
 static const ::Reflection::TypeID CLeanMatrixAnimNode::MyTypeID()
 static const ::Reflection::TypeID CLookAtAnimNode::MyTypeID()
 static const ::Reflection::TypeID CLookHeadingCondition::MyTypeID()
@@ -5714,7 +5753,6 @@ Target Type
 Tc"A)`
 Tc"B)`
 Tc"I)`"@
-Tcih8
 Tc"L)`.@
 T *CUtlLeanVectorImpl<CUtlLeanVectorBase<CIKChainDescription *, short>, CIKChainDescription *, short>::AddToTailGetPtr() [B = CUtlLeanVectorBase<CIKChainDescription *, short>, T = CIKChainDescription *, I = short]
 T *CUtlLeanVectorImpl<CUtlLeanVectorBase<const IIKRuleDescription *, short>, const IIKRuleDescription *, short>::AddToTailGetPtr() [B = CUtlLeanVectorBase<const IIKRuleDescription *, short>, T = const IIKRuleDescription *, I = short]
@@ -5735,15 +5773,14 @@ texcoord
 TextLayout_001
 TextMessageMgr_001
 texturescale
-Th6A9h
 Th:Ay
 ThB@9
 ThbE9
 Thf@9
 Th*F9h
+THik8
 Thin Plate
 #This file is generated by CMesh::SaveObj() from CMesh with %d indices, %d vertices, %d attributes
-THit8
 TH'@)J
 ThreadGetCurrentId
 ThreadYield
@@ -5761,6 +5798,8 @@ Tif@9)
 TiFAy?
 T,ik8k
 Tilt Attachment
+Tilt bone after tilt.
+Tilt delta from up offset
   tilted ground plane.
 TILT_IK
 TILT_MovementManagerSlope
@@ -5781,7 +5820,6 @@ Tj"@9J
 TK	@9)A
 TKih8
 TL	@9kA
-Tnij8
 to constrain
 tolower
 ToolFramework2_002
@@ -5792,6 +5830,8 @@ ToolScriptManager001
 ToolService_001
 Total Translation (Source State)
 Total Translation (Target State)
+Tpih8
+Tpii8
 T? @q
 traceback
 Trailing Data
@@ -5927,6 +5967,7 @@ Vector-dir
 VectorParameter
 Vector Parameter
 Vector-quantized
+V-)EE
 VEngineCvar007
 version
 VertexColorPos_t
@@ -5951,7 +5992,6 @@ VGUI_Panel010
 VGUI_Scheme010
 VGUI_Surface032
 VGUI_System010
-V-)IE
 Virtual 2-bone
 virtual bool CCmdSequence::InitFromScript(HSCRIPT, CAnimContainer *)
 virtual bool CScriptCreatableSequence::InitActivitiesFromScript(IScriptVM *, ScriptVariant_t &)
@@ -5971,6 +6011,7 @@ VM Did not start!
 vmdlkeys0
 vmdlkeys1
 vmdlkeys2
+vmdlkeys3
 VMDLLIB001
 VMediaFoundation001
 VNewAsyncFileSystem001
@@ -6063,8 +6104,7 @@ V_vsnprintf
 V_vsnprintfSize
 V_vsnprintfWarnTrunc
 V_wcstoi64
-	!W9	
-W9_a	
+w2@99
 walkspeed
 Warning
 Warning! autocycle specified on sequence "%s", but it's not looping, ignoring autocycle
@@ -6106,6 +6146,7 @@ WorkshopSetup001
 WorldRendererBuilderMgr001
 WorldRendererMgr001
 worldspace
+World space tilt normal
 Writing kdTree with %d triangles
 W`@-Y
 xf@)*
@@ -6115,9 +6156,7 @@ xi*8*i@9J
 xWsTarget
 ,]@y!
 ,	@y)
-!	@y`
 @y`&@
-Y3#9gw
 	y4xl
 Yaw; 
 yaw_end

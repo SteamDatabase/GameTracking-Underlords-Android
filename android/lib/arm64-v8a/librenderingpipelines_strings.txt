@@ -43,7 +43,6 @@ $@)  "
 17CParentConstraint
 18CRenderingPipeline
 18IRenderingPipeline
-1@9 C
 19CBoneConstraintBase
 19CModelConfigElement
 19CRenderingPipelines
@@ -82,8 +81,10 @@ $@)  "
 29CBoneConstraintPoseSpaceMorph
 29CRenderingPipelineOvertopMenu
 29CRenderingPipelinePostProcess
-2@9zJ
+2@9|J
 2_BONE_IK
+2h"'9
+2hR&9
 	2	i*
 2Way_0( %s )
 2Way_1( %s )
@@ -95,10 +96,6 @@ $@)  "
 33CModelConfigElement_AttachedModel
 34CModelConfigElement_SetRenderColor
 36CModelConfigElement_SetMaterialGroup
-(3@9i
-(3@9iJ
-(3@9j
-(3@9jJ
 3D Skybox
 3DSkyboxForward
 3DSkyboxLightBinnerVr
@@ -116,7 +113,6 @@ $@)  "
 4hf@9
 4hf@9(
 4n&	&
-,5D)(%E)
 5h'@)
 )5IJ(}
 %6.2f %6.2f %6.2f %.3f %.3f %.3f
@@ -135,15 +131,15 @@ $@)  "
 @9hV@
 "@9i"@9
 9ISequence
-(@@9sB
 (@@9tB
 'A)	}	
 A-!(!
+(a$9gj
 A-'@A-
 AbsolutePoseControl
+abs( %s )
 ACT_IDLE
 ACT_NEUTRAL_REF_POSE
-	ad9	
 AE_ACTION_SET_TURN_RATE_SCALE
 AE_BLIND_ZOMBIE_SNIFF
 AE_CL_ADD_PARTICLE_EFFECT_CP
@@ -186,6 +182,7 @@ AmbientOcclusionDepth
 Ambient Occlusion Proxies
 Ambient Occlusion Proxies Downsample Depth
 Ambient Occlusion Proxies: Texture Barrier
+	An9)
 anchor_angles
 anchor_position
 Android clang version 5.0.300080  (based on LLVM 5.0.300080)
@@ -225,8 +222,8 @@ AnimStartLoop
 AnimSubtract
 AnimVRFinger_t
 AnimVRHand_t
+	ao9	
 AoProxyDebug
-	AP9	
 ApplyFog
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 archive
@@ -252,7 +249,6 @@ auto_unragdoll_duration
 *-B)!
 B-1HD-
 *-B),5C)_
-b]9AQ
 BackgroundForShaderIDs
 Bad header format (expected '<!--'
 Bad header format (expected ':'
@@ -508,7 +504,7 @@ C_OP_TwistAroundAxis
 CopyHDRBackBuffer
 CopyRefractTexture
 COrientConstraint
-Cos( %s )
+cos( %s )
 CParentConstraint
 CParticleSystemDefinition
 CPointConstraint
@@ -602,7 +598,6 @@ dynamic_interaction
 Dynamic Opaque Forward
 .dynstr
 .dynsym
-	!e9	
 EconItemToolModel_001
 _edata
 EditorDynamicConfig
@@ -661,6 +656,7 @@ explosion_type
 explosive_damage
 explosive_radius
 EXPORTSYSTEM_INTERFACE_VERSION_001
+exp( %s )
 F-%:%
 *-F),5G)_
 faceMergeAngle
@@ -681,7 +677,6 @@ f %d %d %d
 FeetSettings
 FeModel combiner: Too many ropes (%u) or links (%u): cannot fit sum in uint16
 %f %f %f %f
-F-HA@
 .fini_array
 FixupResourceName: Illegal full path passed in ("%s")!
 FixupResourceName: Illegal path, missing extension passed in ("%s")!
@@ -747,10 +742,16 @@ h&?);
 h&@)?
 #H)	}	
 =h2@9
-=h3@9
+h2@9)
+h2@9)+B
+h2@9I
+H3@9	
+H3@9i
+H3@9jJ
 h)8Ay)
 h"@9h
 h.@9H
+	!h9I
 HammerMapLoader001
 handindex
 Has Collision; 
@@ -768,14 +769,14 @@ HELPER_BONE
 HelpSystem_001
 hf@9H
 hf@9i
-H#L9`r
+H%@)J	@
 Hologram Depth
 Hologram Wireframe
 HostStateMgr001
 hurt_me
 hurt_them
 h&@y)
-i*@)a
+i+@)a
 ib@9j
 I CUtlLinkedList<int, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short> >::AllocInternal(bool) [T = int, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int, CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int>, unsigned int> >::NewNode(const T *) [T = CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, I = unsigned int, L = CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int>, unsigned int>]
@@ -841,8 +842,8 @@ is_debris
 #It contains connectivity part %d with %d vertices
 @ @-J
 j2?)?
-j88\<
-jB/9iF/9k
+J38a9
+J78(9
 J-cb@
 J-dj@
 JEIJJ}
@@ -857,11 +858,11 @@ Joint Indices (%d) Out Of Range for UINT8: Skinning will not work!
 JSON error, unterminated element: 
 K1@)A
 K1B)A
-K1B)C
 K1B)M9C)
 K1@)C
 K1D)M9E)
 K1F)M9G)
+KAl9H
 KeyValueCache001
 KeyValues Error: %s in file %s
 KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s
@@ -877,7 +878,8 @@ KV Conditional Evaluation Error
 l5B)a
 l5B)c
 l5@)c
-#L9`2
+"L9`2
+(#L9`r
 last_sniff
 LE_BGRA8888
 LE_BGRX8888
@@ -899,6 +901,7 @@ lightmap
 Lightmaps are out of date !!! - Please re-bake. Rendering as FULLBRIGHT
 lightmapuv
 LightmapUV
+LightmapUVW
 Linear
 LINEAR_ABGR8888
 LINEAR_ARGB8888
@@ -920,8 +923,6 @@ LoadFromBuffer: expected '{', found '%s'
 LoadKV3ObjectInPlace error: %s
 Localize_001
 LockDynamicConstantBuffer failed in CreatePerViewConstantBuffer!!!
-LockDynamicConstantBuffer failed in SetupCubemapFogForView!!!
-LockDynamicConstantBuffer failed in SetupGradientFogForView!!!
 lockRotationAlpha
 LOG_GENERAL
 LoggingSystem_IsChannelEnabled
@@ -938,7 +939,7 @@ lowprecisionuv1
 ;l)/Q(
 LrwcE
 %ls [wstring, len = %d]
-#M9 3
+	!m9	
 m_aAngOffset
 m_ankleBoneName
 mapbuilder.nodraw
@@ -986,7 +987,7 @@ max_angle
  max. %f
 maxHullVertices
 maxSpringTension
-Max( %s, %s )
+max( %s, %s )
 maxVerticesPerHull
 m_bApplyMinForce
 m_bbox
@@ -1172,13 +1173,14 @@ m_influenceWeights
 m_Initializers
 m_inputList
 m_inputValue
-Min( %s, %s )
+min( %s, %s )
 m_InstanceName
 m_intAttributes
 m_intParams
 m_invBindPose
 Missing file '%s'
 )MJJ }
+m_JointConstraintData
 m_JointConstraintPairs
 m_JointName
 m_Joints
@@ -1296,6 +1298,7 @@ MovementSettings
 m_parentName
 m_pBody
 m_pD3DSemanticName
+m_pJointConstraintData
 m_pName
 m_pParent
 m_PreEmissionOperators
@@ -1359,6 +1362,8 @@ m_vOffset
 m_vSplayHingeAxis
 m_vTintColor
 m_vTipOffset
+m_vTraceOffset
+m_vTraceScale
 m_vUpLS
 m_vUpVector
 m_wristBones
@@ -1538,6 +1543,7 @@ ptr( 0x%p )
 ../public/tier1/utlsortvector.h
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
+q,5D)(%E)
 q-A(!
 qJT-s
 quad_coverage_lock.vtex
@@ -1668,6 +1674,8 @@ r_post_bloom_strength
 r_post_colorcorrection
 r_post_film_grain
 r_post_fxaa
+r_post_mirror_horizontal
+r_post_mirror_vertical
 r_post_vignette
 ?r_render_to_cubemap_debug
 r_showdebugoverlays
@@ -1729,9 +1737,10 @@ sharpStartAngle
 .shstrtab
 Simulated
 singleplayer
-Sin( %s )
+sin( %s )
 SkeletonBoneBounds_t
 SlimDeferred
+SlopeTrace
 %s (Material)
 %s (mat_fullbright: %d)
 %s_matgrp
@@ -1760,7 +1769,7 @@ Splitting huge triangles (%d verts,%d tris) -> (%d verts,%d tris), %d splits
 springConstant
 %s| Project: '%s' Binary: '%s'
 sqrtf
-Sqrt( %s )
+sqrt( %s )
 "%s" = "%s"
 %s - %s
 %s / %s
@@ -1796,7 +1805,6 @@ suppress
 surface_prop
 %s| Virtual: %s; Abstract: %s; TrivialConstr: %s; TrivialDestr: %s
 Syntax Error at offset: %d
-T('@)
 T(@@9
 tangent
 tangentu_signv
@@ -1820,6 +1828,7 @@ textures/dev/blue_noise_256.vtex
 textures/dev/ggx_integrate_brdf_lut_schlick.vtex
 textures/dev/ggx_integrate_brdf_lut.vtex
 textures/dev/reflectivity_scale.vtex
+Th'@)
 Thin Plate
 #This file is generated by CMesh::SaveObj() from CMesh with %d indices, %d vertices, %d attributes
 ThreadGetCurrentId
@@ -1974,6 +1983,7 @@ VMaterialSystem2_001
 vmdlkeys0
 vmdlkeys1
 vmdlkeys2
+vmdlkeys3
 VMDLLIB001
 VMediaFoundation001
 VNewAsyncFileSystem001
@@ -1982,13 +1992,11 @@ void CKV3FormatManager::RegisterFormatConversion(const KV3ID_t &, const KV3ID_t 
 void CMesh::RemapBlendIndices(const int *, int, int)
 void ConnectInterfaces(CreateInterfaceFn *, int)
 void COrderedConstructor_Create<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, CResolveOrderedFunc<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, &_ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC>, false>::AddRef(bool) [T = COrderedInitShutdownRefWrapper<&EarlyInit_Common>, RESOLVECLASS = CResolveOrderedFunc<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, &_ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC>, bCONSTRUCT_ON_FIRST_USE = false]
-void CreatePerViewConstantBuffer(CRenderAttributes &, const CRenderAttributes &, bool)
+void CreatePerViewConstantBuffer(CRenderAttributes &, const CRenderAttributes &, const VMatrix &, bool)
 void CSchemaClassInfo::ReportClassError(const char *) const
 void CSchemaClassInfo::ValidateModuleLocalTypeScope()
 void CUtlBuffer::VaPrintf(const char *, va_list)
 void FillVBForAttribute(uint8 *, CMeshVertexAttribute *, const RenderInputLayoutField_t &, int &, float *, int &, float *, bool, bool, const Vector &, int *)
-void SetupCubemapFogForView(ISceneView *, CRenderAttributes *)
-void SetupGradientFogForView(ISceneView *, CRenderAttributes *)
 VolumetricFog
 VolumetricFogManifest
 VP4003
@@ -2038,12 +2046,16 @@ vr_depth_prepass
 vr_depth_prepass_alphatested
 vr_depth_prepass_cull_threshold
 V_RemoveDotSlashes
+vr_enable_cubemap_fog
 vr_enable_glows
+vr_enable_gradient_fog
 vr_enable_tonemapping
 vr_enable_translucent_screen_space
 vr_enable_volume_fog
 VRenderDeviceSetupV001
 vr_expand_cull_frustum
+VrFidelityLevelVisualizer
+vr_fidelity_visualizer
 vr_fullsort_depth_prepass
 vr_postprocess_enable
 VrQuadLayout
@@ -2053,7 +2065,7 @@ vr_render_dynamic_objects
 vr_render_opaque
 vr_render_opaque_notzprepassed
 vr_render_overlays
-vr_render_refaction
+vr_render_refraction
 vr_render_translucent
 vr_shadows_debug
 vr_stencil_debug

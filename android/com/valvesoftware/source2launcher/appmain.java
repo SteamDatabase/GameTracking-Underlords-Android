@@ -2,9 +2,11 @@ package com.valvesoftware.source2launcher;
 
 import android.app.Application;
 import android.content.Intent;
+import android.graphics.Point;
 import android.os.Build.VERSION;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Display;
 import android.view.WindowManager.LayoutParams;
 import com.valvesoftware.JNI_Environment;
 import com.valvesoftware.Resources;
@@ -57,7 +59,10 @@ public class appmain extends SDLActivity {
     public void onStart() {
         super.onStart();
         if (VERSION.SDK_INT >= 28) {
-            getWindow().getDecorView().setOnApplyWindowInsetsListener(new SafeAreaListener());
+            Display defaultDisplay = getWindowManager().getDefaultDisplay();
+            Point point = new Point();
+            defaultDisplay.getSize(point);
+            getWindow().getDecorView().setOnApplyWindowInsetsListener(new SafeAreaListener(Math.max(point.x, point.y), Math.min(point.x, point.y)));
             LayoutParams attributes = getWindow().getAttributes();
             attributes.layoutInDisplayCutoutMode = 1;
             getWindow().setAttributes(attributes);
@@ -97,7 +102,7 @@ public class appmain extends SDLActivity {
 
     /* access modifiers changed from: protected */
     public String getMainSharedObject() {
-        String GetString = Resources.GetString("VPC_LauncherBinaryName");
+        String GetString = Resources.GetString("LauncherBinaryName");
         StringBuilder sb = new StringBuilder();
         sb.append("lib");
         sb.append(GetString);

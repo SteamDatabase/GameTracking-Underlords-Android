@@ -4,7 +4,7 @@ import com.valvesoftware.Resources;
 
 public class application extends com.valvesoftware.source2launcher.application {
     public String GetManifestURL() {
-        int[] GetInteger = Resources.GetInteger("VPC_AppID");
+        int[] GetInteger = Resources.GetInteger("APP_ID");
         if (GetInteger == null) {
             return null;
         }
@@ -17,7 +17,7 @@ public class application extends com.valvesoftware.source2launcher.application {
         sb.append(str);
         sb.append("&password=");
         String sb2 = sb.toString();
-        String GetString = Resources.GetString("VPC_ManifestPasswordString");
+        String GetString = Resources.GetString("ManifestPasswordString");
         if (GetString != null) {
             StringBuilder sb3 = new StringBuilder();
             sb3.append(sb2);

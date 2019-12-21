@@ -102,7 +102,7 @@ public abstract class Application extends android.app.Application {
             r1.append(r2)
             java.lang.String r1 = r1.toString()
             android.util.Log.i(r0, r1)
-            java.lang.String r1 = "VPC_BinariesOmittedFromAPK"
+            java.lang.String r1 = "BinariesOmittedFromAPK"
             boolean[] r1 = com.valvesoftware.Resources.GetBoolean(r1)
             r3 = 1
             r4 = 0
@@ -161,7 +161,7 @@ public abstract class Application extends android.app.Application {
         L_0x0118:
             r3 = r8
         L_0x0119:
-            java.lang.String r7 = "VPC_TargetPlatformName"
+            java.lang.String r7 = "TargetPlatformName"
             java.lang.String r7 = com.valvesoftware.Resources.GetString(r7)
             if (r7 != 0) goto L_0x0123
             java.lang.String r7 = "unknown"

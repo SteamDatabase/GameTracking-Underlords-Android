@@ -188,7 +188,7 @@ public class PatchSystem {
 
         public CRegistry() {
             Context applicationContext = JNI_Environment.m_application.getApplicationContext();
-            String GetString = Resources.GetString("VPC_GameName");
+            String GetString = Resources.GetString("GameName");
             StringBuilder sb = new StringBuilder();
             sb.append("PatchSystemRegistry.");
             sb.append(GetString);
@@ -991,7 +991,7 @@ public class PatchSystem {
     }
 
     public static boolean IsSelfInstallAPKEnabled() {
-        boolean[] GetBoolean = Resources.GetBoolean("VPC_SelfInstallAPK");
+        boolean[] GetBoolean = Resources.GetBoolean("SelfInstallAPK");
         if (GetBoolean == null || !GetBoolean[0]) {
             return false;
         }

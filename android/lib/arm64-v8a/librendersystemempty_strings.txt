@@ -38,7 +38,7 @@
 1.5.13
 1.5.2
 15CMemberFunctor4IP19CTextureManagerBaseMS0_FvP25IAsyncResourceDataRequestP12CTextureBase22TextureSpecification_tiES3_S5_S6_i12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
-15CMemberFunctor7IP19CTextureManagerBaseMS0_FvP12CTextureBase12ResourceId_tPvi22TextureSpecification_ti23TextureBitsMemoryType_tES3_S4_S5_iS6_iS7_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
+15CMemberFunctor9IP19CTextureManagerBaseMS0_FvP12CTextureBase11CWeakHandleI31InfoForResourceTypeCTextureBaseE12ResourceId_tPvi22TextureSpecification_tS9_i23TextureBitsMemoryType_tES3_S6_S7_S8_iS9_S9_iSA_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CRenderPassDesc
 15CSwapChainEmpty
 15CTier0AppSystemI12IRenderUtilsE
@@ -61,10 +61,10 @@
 19CRenderContextEmpty
 19CSchemaRegistration
 19CTextureManagerBase
-@)19E
 19IKeyValuesErrorSpew
 19IRenderShaderBuffer
 !1AQaq
+@)1}E
 20CPostConnectCallback
 20CRefCountServiceBaseILb1E6CRefMTE
 20CRenderDeviceMgrBase
@@ -90,7 +90,7 @@
 "2BRbr
 2Gio8
 2	h(8
-2hB29#
+2hB59
 2ij(8
 2x"@9
 37CSchemaRegistration_rendersystemempty
@@ -103,7 +103,7 @@
 4(@@9(
 .4@)((A)+0B))
 4a"J9
-4D#B)I
+4D!B)I	
 $4DTdt
 4GdEy#
 4hb@9
@@ -342,6 +342,7 @@ Application transferred too few scanlines
 Application transferred too many scanlines
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 A\@Q!`
+	aq9	
 a(@Q! ?Q?
 archive
 Arithmetic table 0x%02x was not defined
@@ -351,6 +352,9 @@ AssetBrowserSystem_001
 AssetPreviewSystem_001
 AssetSystem001
 AssetSystemTest001
+AsyncHookUpTextureBits
+AsyncTextureHookup
+Async Texture hookup uses its own threadpool instead of the global pool.
 ATI1N
 ATI2N
 ATI_DST16
@@ -370,7 +374,6 @@ Bad expression operator: '%c%c', expected C style boolean expression operator.
 Bad expression syntax: '%s', expected a single matching pair of enclosing braces.
 Bad expression token: %c
 Bad VTEX data for '%s'
-_bake
 BakedLODBuilderMgr001
 #base
 #base is NULL 
@@ -510,6 +513,7 @@ Corrupt JPEG data: premature end of data segment
 Corrupt JPEG data: %u extraneous bytes before marker 0x%02x
 CRC error
 CreateInterface
+CreateNewThreadPool
 CRenderDeviceBase::FindOrCreateTexture: Trying to load multiple mipmaps into 3d or array texture: %s
 CRenderDeviceBase::InitPerFrameMemoryStack
 CResourceArray
@@ -839,7 +843,6 @@ hj8."@
 h'@)jS@
 	H*k	
 hn8c|
-HookUpTextureBits
 HostStateMgr001
 hr1yI
 =hrCy
@@ -1085,10 +1088,12 @@ irCy`
 )Iv8(
 	*iW@
 *'i$x
+	*J10
 j58hf@9(
-J78k>
 @j!8!
+j(8Bw
 j`8!i 8
+j(8!v
  J9?@
 J9e:A
 ja8 i!8!
@@ -1378,7 +1383,6 @@ NV_DST24
 NV_INTZ
 NV_NULL
 NV_RAWZ
-	!o9	
 Obtained EMS handle %u
 Obtained XMS handle %u
 o$ c.! cn
@@ -1508,6 +1512,7 @@ R16F_EXPAND
 R32_UINT
 R8G8B8A8_ETC2_EAC
 R8G8B8_ETC2
+	!r9	
 RadianEuler
 raise
 R channel not found
@@ -1678,6 +1683,7 @@ rnd_up
 Row has too many bytes to allocate in memory
 RpE@)`	@
 RPip8
+r_texture_hookup_uses_threadpool
 r_texture_nonstreaming_load
 r_texture_nonstreaming_only_fullmipchain
 r_texture_pool_size
@@ -1890,30 +1896,27 @@ TestFormatE
 TestScriptMgr001
 TEXMAN: Abandoning job in %s
 TEXMAN: Abandoning streaming request in %s
-TEXMAN: Added hookup job for %s
 TEXMAN: Adding %s, %llx to abandoned hookup jobs
 TEXMAN: DeferTextureLoads %s MarkTextureBitsLoaded (%s)
 TEXMAN: Deleting %d textures
 TEXMAN: Outstanding stream count %d -> %d (%s)
-TEXMAN: Posting resource load complete msg.
 TEXMAN: %s loaded %s %i/%i mips (%ix%i / %ix%i) of %s (%i bytes)
 TEXMAN: %s MarkTextureBitsLoaded (%s)
-TEXMAN: %s %s
 .text
 text compression mode is out of range
 TextLayout_001
 TextMessageMgr_001
 texturebase.cpp
-texturebase.cpp(1726):Error loading texture: %s
-texturebase.cpp(2642):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2663):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2674):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2685):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2696):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2717):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2728):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2739):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2750):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(1731):Error loading texture: %s
+texturebase.cpp(2647):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2668):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2679):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2690):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2701):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2722):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2733):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2744):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2755):ResourceHandleToData( %s ) failed! Falling back to error texture!
 Texture manager out of space! Can't allocate new texture!
 Texture memory discrepancy! %llu != %llu
 TextureSpecificationFlags_t
@@ -2099,7 +2102,7 @@ VNewAsyncFileSystem001
 void ConnectInterfaces(CreateInterfaceFn *, int)
 void COrderedConstructor_Create<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, CResolveOrderedFunc<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, &_ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC>, false>::AddRef(bool) [T = COrderedInitShutdownRefWrapper<&EarlyInit_Common>, RESOLVECLASS = CResolveOrderedFunc<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, &_ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC>, bCONSTRUCT_ON_FIRST_USE = false]
 void CSheetDataTextureCache::AllocateAndUploadSequenceData(const Sheet_t *, Vector2D *, int *)
-void CTextureManagerBase::AsyncHookUpTextureBits(CTextureBase *, ResourceId_t, void *, int, TextureSpecification_t, int32, TextureBitsMemoryType_t)
+void CTextureManagerBase::AsyncHookUpTextureBits(CTextureBase *, HRenderTexture, ResourceId_t, void *, int, TextureSpecification_t, TextureSpecification_t, int32, TextureBitsMemoryType_t)
 void CTextureManagerBase::MN_OnResourceFileLoaded(IAsyncResourceDataRequest *, CTextureBase *, TextureSpecification_t, int32)
 void CTextureManagerBase::MN_OnResourceLoadCompleted(CTextureBase *, TextureObjectInfo_t &, int32, int)
 void CTextureManagerBase::MN_OnResourceLoadFailed(CTextureBase *, int32)

@@ -4,8 +4,8 @@
 		"points_per_level": 1000,
 		"max_level": 60,
 		"active_start_time": "2019-07-04 00:00:00",
-		"active_end_time": "2019-12-15 00:00:00",
-		"claim_end_time": "2019-12-18 00:00:00",
+		"active_end_time": "2020-06-15 00:00:00",
+		"claim_end_time": "2020-06-18 00:00:00",
         "default_event_points": 0,
 
         "includes": [
@@ -430,13 +430,20 @@
                 "challenge": "underlord_1_wins",
                 "required_underlord": 1,
                 "show_post_match_claim": 0
-                   
+
             },
             {
                 "name": "Underlord 4 Wins",
                 "id": 16,
                 "challenge": "underlord_4_wins",
                 "required_underlord": 4,
+                "show_post_match_claim": 0
+            },
+            {
+                "name": "Underlord 2 Wins",
+                "id": 17,
+                "challenge": "underlord_2_wins",
+                "required_underlord": 2,
                 "show_post_match_claim": 0
             }
         ],

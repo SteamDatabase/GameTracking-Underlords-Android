@@ -167,11 +167,14 @@ public class applauncher extends com.valvesoftware.source2launcher.applauncher {
             linearLayout2.addView(linearLayout4);
         }
         linearLayout.addView(linearLayout2);
-        String GetStringSafe = Resources.GetStringSafe("VPC_VersionCodeString", "DEBUG");
-        String GetStringSafe2 = Resources.GetStringSafe("Native_VersionLabel");
+        String GetString = Resources.GetString("VersionCodeString");
+        if (GetString == null || GetString.length() == 0) {
+            GetString = "DEBUG";
+        }
+        String GetStringSafe = Resources.GetStringSafe("Native_VersionLabel");
         StringBuilder sb = new StringBuilder();
-        sb.append(GetStringSafe2);
         sb.append(GetStringSafe);
+        sb.append(GetString);
         TextView createTextfield4 = createTextfield(sb.toString());
         createTextfield4.setTextSize(14.0f);
         createTextfield4.setGravity(85);

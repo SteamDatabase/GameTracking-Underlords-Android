@@ -3,7 +3,6 @@
  ... }
  { ... };
 ------ 
-,!@))	@
 !^"("
 !^@( 
 !:@=!
@@ -66,7 +65,6 @@ $0 to $1,
 0x%016llX : %s
   0x%08X %s,
 "0x" must be followed by hex digits.
-"0y'N
 -1.000000
 1024.0
 10CEntityMsg
@@ -108,6 +106,7 @@ $0 to $1,
 14CBaseAppSystemI11ISceneUtilsE
 14CBaseAppSystemI12ISceneSystemE
 14CEmptySequence
+14CLightBinnerVr
 14CMsgPlayerInfo
 14ConCommandBase
 14CTonemapSystem
@@ -226,12 +225,10 @@ $0 to $1,
 25CConCommandMemberAccessorI12CSceneSystemE
 25CNETMsg_SpawnGroup_Unload
 25CSceneLightObjectInternal
-25CSplatLightsLayerRenderer
 26CAnimatableSceneObjectDesc
 26CDefaultKeyValuesErrorSpew
 26ICommandCompletionCallback
 26IReadTexturePixelsCallback
-	2	)7)
 27CDirectionalLightObjectDesc
 27CLightProbeVolumeObjectDesc
 27CMeshBuilderSceneObjectDesc
@@ -242,7 +239,6 @@ $0 to $1,
 27CSchemaUtlVectorManipulatorI10CUtlVectorI33AnimationDecodeDebugDumpElement_t10CUtlMemoryIS1_iEES1_E
 27CSchemaUtlVectorManipulatorI10CUtlVectorIf10CUtlMemoryIfiEEfE
 27CSchemaUtlVectorManipulatorI10CUtlVectorIj10CUtlMemoryIjiEEjE
-27CSplatGeometryLayerRenderer
 28CBindlessFastPathSceneObject
 28CBoneConstraintPoseSpaceBone
 28CGenerateMipsProceduralLayer
@@ -250,30 +246,35 @@ $0 to $1,
 28CSceneLightProbeVolumeObject
 28CTextureBarrierLayerRenderer
 28CTextureDisplayLayerRenderer
+28ISceneEnvironmentMapListener
 28ISchemaCollectionManipulator
 29CBaseNonPooledSceneObjectDescI18C6FaceSkyboxObjectE
 29CBoneConstraintPoseSpaceMorph
 29CVolumetricFogClipmapRenderer
+2	a29B
 2	a@9Ia
 2	AA9
-	2a}M
 2_BONE_IK
 2#.CSVCMsgList_UserMessages.usermsg_t
+2	e7)
 %.2f ms
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
 2	h(8
 2h~%9
+2hB+9
+2hr*9
 	2	i*
 2	i78
 2	i;8H
 2iFAy
 2ij(8
-2ij(8F
+2ij(8\
 2j"@9)p
-2?k78
-2?k88
-2_k88B
-2njj8l
+2jjj8l
+2?k78-
+2?k88,}
+2_k88j
+2	q19s
 2Way_0( %s )
 2Way_1( %s )
 2x"@9
@@ -297,16 +298,15 @@ $0 to $1,
 32CSVCMsg_GameSessionConfiguration
 333?1
 33CAmbientOcclusionProxySceneObject
-33CLightPropagationVolumeObjectDesc
 33CModelConfigElement_AttachedModel
 33CNETMsg_SpawnGroup_ManifestUpdate
 (%3.3f - %3.3f)
 %3.3f x %3.3f
-34CLightPropagationVolumeSceneObject
 34CModelConfigElement_SetRenderColor
 34CNETMsg_SpawnGroup_SetCreationTick
 34CSimplePostProcessingLayerRenderer
 34CSVCMsgList_UserMessages_usermsg_t
+3*4y5
 35CInputLayoutRegistration_sm_hLayout
 36CModelConfigElement_SetMaterialGroup
 37CAmbientOcclusionProxySceneObjectDesc
@@ -315,6 +315,7 @@ $0 to $1,
  [%.3f server clamped to %.3f]
 3	h(8
 =3PF-5XG-
+3V9H#
 +3@y+
 4096.0f
 40ISceneAnimatableProceduralBoneTransforms
@@ -323,7 +324,6 @@ $0 to $1,
 456789:;<=
 4*aNc
 4CMDL
-4h'])
 4h"@9
 4h&@9
 4h.A9
@@ -346,7 +346,7 @@ $0 to $1,
 5(3@9
 5	{e9
 5hf@9
-5Hku8|
+5Hk{8
 5hr@9H
 )5IJ(}
 5i.@y
@@ -354,7 +354,6 @@ $0 to $1,
 5	QM9)
 5@y)}
 )5@yi
- = 6:
 ?6`*@
 ?6	(@
 /6`>@
@@ -380,7 +379,7 @@ $0 to $1,
 6hBA9	Q
 6hbB9	7
 6HC@9
-6h~e9
+ 6h~e9
 6hFA9
 _6hj@
  6hJ@
@@ -410,7 +409,6 @@ _6inA9
  6`j@
 '6j.@
 (6j2@
-`6j6A
 (6s"@
  6tj@
 (6u"@
@@ -418,6 +416,7 @@ _6inA9
 /6v"@
 '6vj@
 6x"@9
+@= 6Z
  74	(74
  75	(7
 75	 7
@@ -441,8 +440,8 @@ _6inA9
 7IConVar
 7IF 7
  7K=@
-@7T	H7
  7wB@
+7(-X7
 =	}8)
 @8)		
 %8.3f
@@ -467,12 +466,12 @@ _8o%@8
 `"@9	
 (@@9(
 (@@9	
+(@@9	 
 (@@9	/
 )!@9)
 )	@9*
 @9)!@
 @9*	@
-	!~9	
 	)@9)
 	)@9*
 	9	!@
@@ -489,10 +488,12 @@ _8o%@8
 @9%	@9&
  @9	$@9JIG
  @9	$@9JMF
-@9?aEkA
+@9_aAkA
+@9_aYkA
 	9	!B9
 @9)+C
 9CFunctor3IPFvP10CSceneViewP11CSceneLayerbES1_S3_b12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEEE
+@9?c@kA
 (@@9h
 @9h*@
 (@@9H
@@ -524,35 +525,36 @@ _8o%@8
 @9JU	
 !!@9K
 )!@9	k(8I
-@9?`@kA
+@9_`[kA
+@9_`@kA
 9k!A9
 9kaA9
 @9	ki8
 9kj(8|
 9lY)<xZ)
+@9_`RkA
 (@@9sb
 (@@9t
+(@@9t"
 (@@9T
 @9T|@
 (@@9tb
 (@@9tB
 @9U|@
-`9{WF
 (@@9	z
 @9 	@z
-9@z(|`
-9@zH~`
+9@z(~`
 !^a	!
 ?A- 	)
 'A)	}	
+('@)*/A)
 )	!A)
 +@)	/A)
 	(A)(
 A-!(!
+A-"	*
 !^a9-
 +a@9?
-	a}9	
-?A!9&
 {A9	=
 		A9?
 		A9	
@@ -578,18 +580,20 @@ A9	ii
 A9Kik
 +	A9lC
 ?A9tJ@
-a9{WF
 A-'@A-
 AA)/8@)1
 AA9(	
 AA9(	@
 .aA9k
+?AAk	"
 	AAyK
 A)b("
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 abort
 AbsolutePoseControl
+abs( %s )
+/A)@C
 ACT_IDLE
 Activity %s has %d sequences with a total weight of %d!
 ACTIVITY WEIGHTS
@@ -653,10 +657,12 @@ A-G5@
 A-G9@
 Agg data %d: %p (%d parts, crc 0x%08X)
 aggregate_value
-Ah1xij/
+Ah1xhj+
+"AHJq
 ai_model_info
 AIWalkable
-_A@k(
+A[k+"
+	al9I
 		Aliases:
 Allocating new transform texture!
 allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
@@ -729,14 +735,15 @@ AnimVRHand_t
 annotation
 Annotation
 ", another member of oneof "
-	Ao9	
 @@ao_proxy_capsule_list
 ApplyNewState %d at %f
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
  a protocol 
 A protocol message was rejected because it was too big (more than 
+	aq9	
 archive
  args were given.  Full format string was: "
+ARk-#
 A sceneobject (perhaps a decal) is still in the world that needs to be deleted before deleting the world.
 AssertMsg_ConditionFailed
 AssetBrowserSystem_001
@@ -775,10 +782,8 @@ Attribute counts between meshes is inconsistent
 A))UA
  auto alias
 auto_unragdoll_duration
+?AVki#
 Ax_!"k
-AXk!#
-AY-B8#
-?AYki
 @-b	@
 !^B(*
 !^B(%
@@ -938,6 +943,7 @@ C-!8"
 (C@9(
 C9)-C
 (C@9h
+?C9)yF
 cA9s~
 cable
 CAimConstraint
@@ -1164,7 +1170,6 @@ CLightBinnerVr: Unsupported VrMaxLights %d
 CLightBinnerVr: Unsupported VrNumBakedLights %d
 CLightObjectDesc
 CLightProbeVolumeObjectDesc
-CLightPropagationVolumeObjectDesc
 Clip Plane
 clock_gettime
 cloth_collide
@@ -1226,6 +1231,7 @@ collision_prop
 color
 Color: %1.3f, %1.3f, %1.3f
 COLORCORRECTION_VERSION_1
+color per batch
 ColorPosition
 colorTarget
 			Color Target %d: HRT = %llX, MSAA = %s, Resolve = %llX, Width = %d, Height = %d
@@ -1301,11 +1307,9 @@ C_OP_SetRandomControlPointPosition
 C_OP_SetSingleControlPointPosition
 C_OP_StopAfterCPDuration
 C_OP_TwistAroundAxis
-Copy2
-Copy3
 CopyAttrFrom
 COrientConstraint
-Cos( %s )
+cos( %s )
 Coudn't read pixels for texture %s
 Could not create an instance of 
 Could not find type "
@@ -1458,7 +1462,6 @@ Cycle or diamond double-reference to '%s'
  D-	(@
 	(D)(
 D-"	"
-D}` !
 D15S1
 D16_SHADOW
 D24FS8
@@ -1602,7 +1605,6 @@ E-G9@
 .eh_frame
 .eh_frame_hdr
 eikonal
-E)l(@
 elements
 emitFromWorld
 #empty#
@@ -1706,6 +1708,7 @@ explosive_damage
 explosive_radius
 Exponent %.2f
 EXPORTSYSTEM_INTERFACE_VERSION_001
+exp( %s )
 EXRHeader variable is not initialized.
 extend .$0 {
 extendee
@@ -1734,6 +1737,7 @@ Extensions to non-lite types can only be declared in non-lite files.  Note that 
 F-%:%
 *-F),5G)_
 f@9	A
+F9H* 6
 fA9hf
 FA9iF
 faceMergeAngle
@@ -1772,7 +1776,6 @@ FeModel combiner: Too many ropes (%u) or links (%u): cannot fit sum in uint16
 %f %f %f %f
 fff>fff>fff>fff>
 fflush
-F-H]F
 field
   Field       : 
 Field "
@@ -1856,8 +1859,8 @@ FloatBitMap_t::WriteToBuffer: Received improper buffer size %s (expecting %s), s
 float( %f )
 fltx4
 F_MORPH_SUPPORTED
-Fog Clipmaps - insufficient shadow atlas space %d units centered on (setpos %d %d %d) - some lighting will be missing from the fog
-Fog Clipmaps - too many lights (max: %d) %d units centered on (setpos %d %d %d) - some lighting will be missing from fog
+Fog Clipmaps - insufficient shadow atlas space %d units centered on (setpos %d %d %d) - some lighting will be missing from the fog - vr_show_light_fog_clipmap_cb_cost
+Fog Clipmaps - too many lights (%d - max: %d) %d units centered on (setpos %d %d %d) - some lighting will be missing from fog - use vr_show_light_fog_clipmap_cb_cost
 fog_color
 fogcontributionstrength
 fog_hdrcolorscale
@@ -2009,7 +2012,6 @@ generated_proto/androidarm64/networkbasetypes.pb.cc
 GenerateResourceNameFromFileName: Invalid extension specified in file name "%s"!
 generic
 GenericGameData
-GeomSplat
 GetBool
 GetCStringCharConversion
 GetDouble
@@ -2072,7 +2074,8 @@ h&@)?
 	(H))}@
 h"0yI
 H@-1	@
-h1xnj 
+h1xij 
+h1xkj.
 h2D9h
 h2@yi
 *-H),5I)_
@@ -2111,11 +2114,9 @@ hB@9t
 hbAy`V
 hbB9h
 hBB9h
-hbC9)
+hbC9I
 hC@9h
-HC@9h
 HCTonemapManifest
-!hdx?
 h~e9i
 headtype
 health
@@ -2136,12 +2137,19 @@ H*)	I*)
 HIGHDPI
 hi,xk
 H$@-J
+hj48I
 *hj)8h
 hj)8H
+hj)8P
+=hjA)_
+h%@)j-A)
+H'@)J/A)
 hJAyJ
 hjj8	
 h*@)K
 Hk;8{
+H#L9`
+H#L9X3
 host_computationtime
 "host_computationtime_std_deviation
 !host_framestarttime_std_deviation
@@ -2159,7 +2167,6 @@ hRAy`R
 hrAy`Z
 			HRT = %llX, MSAA = %s
 hr@y`
-hR@y`
 hr@yiFA
 hR@yiJ@
 hR@yu
@@ -2180,7 +2187,6 @@ h&@y)
 	*I}`
 I@-$	@
 i1xhj*
-i1xhj+
 i1xjj,
 i58hbAyi
 i6@yh
@@ -2220,8 +2226,6 @@ I CUtlRBTree<CUtlMap<const char *, CAttachment, int, bool (*)(const char *const 
 I CUtlRBTree<CUtlMap<const char *, CHitBoxSet, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, CHitBoxSet, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CHitBoxSet, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, CHitBoxSet, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, CHitBoxSet, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CHitBoxSet, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
 I CUtlRBTree<CUtlMap<const char *, int, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, int, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, int, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, int, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, int, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, int, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
 I CUtlRBTree<void *, int, bool (*)(void *const &, void *const &), CUtlMemory<UtlRBTreeNode_t<void *, int>, int> >::NewNode(const T *) [T = void *, I = int, L = bool (*)(void *const &, void *const &), M = CUtlMemory<UtlRBTreeNode_t<void *, int>, int>]
-)icx_
-)icx?
 idempotency_level
 IdempotencyLevel
 IDEMPOTENCY_UNKNOWN
@@ -2233,22 +2237,16 @@ i>D-nrA
 )idx9
 ". If this is intended, set 'option allow_alias = true;' to the enum definition.
 	(If you are in tools mode, you can add SVF_TOOL_VIEW to your view to allow dynamic allocations.)
-ii8((
 	ii8h
 ii8h$
-ii8#hi8
 I*)!I*)AI*)
 Iii8*
 %i %i %i %i
 Ii+x!
 i"@)j
 *ij(8
-*ij(8:}
-*ij(8(}
 ij(8(
-*ij(81}
 *ij(8kj*
-*ij(8y
 ij(8Z
 ijj8?
 IjJY@
@@ -2380,7 +2378,7 @@ invert_orientation
 <i>Procedural Layer</i>
 IQ@9	Q
 IQuickTime001
-ir8nhr8?
+)iqxD
 irradvolumescreenquad
 " is already defined.
 " is already defined (as something other than a package) in file "
@@ -2428,20 +2426,23 @@ is_transition
 !iv8?|
 *i(xi
 i#xjj-
+iy8-V
 IyixJylx+
 @ @-J
 @-J	,
 j2?)?
+J38M-
 j48	C
 j48t^@
 j4xH;@
 j58hf@9(
 j)8	3
 j88a.l
-j88PH
+j88~O
 j(8hl
 j)8hZ@
 j(8jj)8
+j`8'k`8
 j)8	m
 j(8tj)8
 J!@9#
@@ -2461,12 +2462,14 @@ j.D)J}@
 J-dj@
 JEIJJ}
 j.E)l2@
+'J)h*!
 jh8_5
+jh8Gkh8
+Jidx?
 JIGGLE_BONE
 jiggle bone %u
 JIIJJ}
 jix?! k#
-jn87kn8
 JNI_OnLoad
 JNI_OnUnload
 Joint Indices (%d) Out Of Range for SINT16: Skinning will not work!
@@ -2475,7 +2478,6 @@ Joint Indices (%d) Out Of Range for UINT8: Skinning will not work!
 J-q\@
 J-Q\@
 JqA9Hi
-JqC9j
 Jq@y)q@y_
 	JS_NORMAL
 	JS_NUMBER
@@ -2486,33 +2488,32 @@ json_name = "
 jstype
 JSType
 jstype is only allowed on int64, uint64, sint64, fixed64 or sfixed64 fields.
-jU>)`
 j<@-UP@-i
-j@)UqA)
 jv8?)
 j(xhb@9h
-j,xK{
+j$xij.
 j:@y)
 JYix*$
 	*jz-
 *?!(k
 	k!(!
+	K	}@
 K1B)M9C)
 K1D)k
 K1D)M9E)
 K1F)M9G)
 K1H)M9I)
 ?k58D
-k78|{
-*?k78e
+k68FG
+*?k78
 ?k78h
 k78o_
-k78wy
-_k88a
 k(8vV@
+@k989
 K	A9lC
 kAKJJ
 kAKJk
+K?B@qk
 K-eb@
 Key in map fields cannot be enum types.
 Key in map fields cannot be float/double, bytes or message types.
@@ -2526,28 +2527,29 @@ KeyValuesSystem
 )kh8)
 kh8ij(8h
 	kh8?u
+kicxJ
 K)@)j
 kj8hj*8hl
 kj*8l
 kji8v
 k_k<8
 k_k;8
+kl8rhl8
 KMeansQuantization
 kMKJk
-KqC9+
-K?@@qk
-	kSy_
+KqC9K
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
 kv3format_manager.cpp
 KV3 load transfer failed: %s
 KV3 save transfer failed: %s
 KV Conditional Evaluation Error
+	kVy_
 	k(xJ
 Kykx)
 !.l	 
 ,)L	@
 "L9`2
-(#L9:3
+"L9 3
 La@9K
 la@9L	
 L	A9mC
@@ -2602,11 +2604,11 @@ LightingBasis
 lightmap
 lightmapuv
 LightmapUV
+LightmapUVW
 LightProbeParams.vtex
 LightProbeVolume
 LightProbeVolumeDebugColors
 LightProbeVolumeDesc
-LightPropagationVolume
 lightsourceshape
 LightSourceShape_t
 lighttype
@@ -2670,7 +2672,6 @@ Low level command to set the flags byte associated with an object class. sc_SetC
 lowprecisionuv
 lowprecisionuv1
 LOWVIOLENCE
-LPVQuadVB
 LQ@9lQ
 LrwcE
 %ls [wstring, len = %d]
@@ -2800,7 +2801,7 @@ max_clients
  max. %f
 maxHullVertices
 maxSpringTension
-Max( %s, %s )
+max( %s, %s )
 maxVerticesPerHull
 m_bApplyMinForce
 m_bBonesInWorldSpace
@@ -3040,7 +3041,7 @@ m_influenceWeights
 m_Initializers
 m_inputList
 m_inputValue
-Min( %s, %s )
+min( %s, %s )
 m_InstanceName
 m_intAttributes
 m_internalOps
@@ -3051,6 +3052,7 @@ Missing file '%s'
 Missing name.
 mJD)o
 )MJJ }
+m_JointConstraintData
 m_JointConstraintPairs
 m_JointName
 m_Joints
@@ -3230,6 +3232,7 @@ m_pBody
 m_pD3DSemanticName
 m_pDesc
 m_Phi
+m_pJointConstraintData
 m_pName
 m_pNext
 m_pObject
@@ -3323,6 +3326,8 @@ m_vOffset
 m_vSplayHingeAxis
 m_vTintColor
 m_vTipOffset
+m_vTraceOffset
+m_vTraceScale
 m_vUpLS
 m_vUpVector
 m_wristBones
@@ -3499,10 +3504,9 @@ Newline in string literal
 nf@9/
 NhFD9t
 NiBB9
+Nidx?
 nIndex < m_RenderTargets.Count()
 nIndex == pList->m_nNumObjects - 1
-niqx?
-Nj1xkj-
 No Buffer
 No default value
 <NO EXPRESSION>
@@ -3546,11 +3550,11 @@ NSt6__ndk110__function6__baseIFvP18CEnvMapSceneObjectEEE
 NSt6__ndk110__function6__baseIFvP25CSceneLightObjectInternalEEE
 NSt6__ndk110__function6__baseIFvP28CSceneLightProbeVolumeObjectEEE
 NSt6__ndk110__function6__funcIPFvP12CSceneObjectENS_9allocatorIS5_EES4_EE
-NSt6__ndk110__function6__funcIZN14CLightBinnerVr14InitForFrustumEP10CSceneViewP11ISceneLayerP14IRenderContextRK8CFrustumbyyE3$_4NS_9allocatorISC_EEFvP25CSceneLightObjectInternalEEE
+NSt6__ndk110__function6__funcIZ29InitForFrustum_DebugRenderingyyP10CSceneViewE3$_2NS_9allocatorIS4_EEFvP25CSceneLightObjectInternalEEE
 NSt6__ndk110__function6__funcIZN14CLightBinnerVr19GatherVisibleLightsER23CUtlVectorFixedGrowableI15ConsiderLight_tLm256EES6_P10CSceneViewRK8CFrustumyyE3$_0NS_9allocatorISC_EEFvP25CSceneLightObjectInternalEEE
 NSt6__ndk110__function6__funcIZN14CLightBinnerVr25AddEnvironmentMapsForViewEP10CSceneViewyyE3$_6NS_9allocatorIS5_EEFvP18CEnvMapSceneObjectEEE
 NSt6__ndk110__function6__funcIZN14CLightBinnerVr27AddLightProbeVolumesForViewEP10CSceneViewyyE3$_5NS_9allocatorIS5_EEFvP28CSceneLightProbeVolumeObjectEEE
-NSt6__ndk110__function6__funcIZN14CLightBinnerVr40ShadowSetup_AllocateDumbShadowsForLightsEP10CSceneViewP11ISceneLayerRK8CFrustumyyiE3$_2NS_9allocatorISA_EEFvP25CSceneLightObjectInternalEEE
+NSt6__ndk110__function6__funcIZN14CLightBinnerVr40ShadowSetup_AllocateDumbShadowsForLightsEP10CSceneViewP11ISceneLayerRK8CFrustumyyiE3$_1NS_9allocatorISA_EEFvP25CSceneLightObjectInternalEEE
 NSt6__ndk110__function6__funcIZN26CBindlessFastPathPartition21EnsureEnvironmentMapsEvE3$_0NS_9allocatorIS3_EEFvP18CEnvMapSceneObjectEEE
 NSt6__ndk110__function6__funcIZN32CBindlessFastPathSceneObjectDesc35EnsureLightProbeVolumeDescriptorSetEvE3$_1NS_9allocatorIS3_EEFvP28CSceneLightProbeVolumeObjectEEE
 NSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
@@ -3676,6 +3680,7 @@ Overrides the map's fog settings (-1 populates fog_ vars with map's values)
 	(P)(
 p6iv@
 p6jf@
+P7T	X7
 p7v	P7
 "pA3QuW
 package
@@ -3746,7 +3751,6 @@ PhysicsShapeHull
 PhysicsShapeMesh
 PhysicsShapeSphere
 phys_res
-Ping0
 Pitch; 
 pixelAspectRatio
 "pixelAspectRatio" attribute not found in the header.
@@ -3788,9 +3792,6 @@ point0
 point1
 pointLightLayout
 pointLightQuadLayout
-Pong0
-Pong1
-Pong2
 Pos: %2.3f, %2.3f, %2.3f
 pos2Dtex2D
 PosColorUVNormalTangentVertexLayout
@@ -3855,7 +3856,7 @@ pthread_setspecific
 ptr( 0x%p )
 public_dependency
 ../public/ordered_constructor.h
-../public/scenesystem/sceneobject.h(2844): Material %s cannot render in mode %s but is being asked to
+../public/scenesystem/sceneobject.h(2856): Material %s cannot render in mode %s but is being asked to
 ../public/tier0/tslist.h
 ../public/tier1/utlblockmemory.h
 ../public/tier1/utlfixedmemory.h
@@ -3886,7 +3887,6 @@ Quintic
 )q@y?
 	Q@y)
 	q@yj
-q$;@z
 	(R)(
 R11_EAC
 R16F_EXPAND
@@ -3896,6 +3896,7 @@ R8G8B8A8_ETC2_EAC
 R8G8B8_ETC2
 *R)8yv
 R@9hR
+r	a,9_
 RA9iR
 RadianEuler
 radius0
@@ -3907,8 +3908,6 @@ RandomFloat
 RandomInt
 Range: %2.3f, Falloff: %2.3f
 RB9hR
-r_bloom_offset
-r_bloom_scale
 R channel not found
 R channel not found!
 r_cubemap_debug_colors
@@ -3950,7 +3949,7 @@ Render3DSphereOverlays
 Render3DTriangleOverlays
 Render3DVectorTextOverlays
 		Render Attributes:
-Render batch draw calls: 
+Render batchlist draw calls: 
 RenderCubeMap
 RenderCubeMap frustum %s
 RenderDevice003
@@ -4028,16 +4027,19 @@ R	hh8
 R	hh8)
 R	hi8
 R	hi8i
-Rhi)8t
+Rhi)8u
 Rhj)8
-Rhj)8"
+Rhj)8b
 rhj)8H
 Rhjh8
 Rhjh8(
 Rhjh8h
 Rhjhxh
 Rhj)x
+Rhk)8
 RHkh8
+Rhkh8h
+Right
 Rigid; 
 RIhi8)
 R	ii8)
@@ -4047,32 +4049,21 @@ Rijh8
 Rijh8)
 Riji8(
 r_indirect_specular_force_scale
-RingReduction
-RingReduction2
-RingReduction3
-RingReduction4
 R`j(8(
 RJAJJL
-RJik8
 Rjji8
 Rjjj8
 rJMJJ
 RJMJJ,
 rJMJJi
-R?k78n
+R?k78
 R(kh8
 R	kh8)
 R	khx)
-R(ki8
 Rkji8i
 r_lightBinnerFarPlane
 r_light_probe_volume_debug_colors
-r_lpv_block_from_camera
-r_lpv_enable
 r_lpv_gi_scale
-<r_lpv_iterations
-r_lpv_ringing_reduction
-r_lpv_use_blockers
 r)MIJ
 Rmij8
 r)MIJh
@@ -4081,6 +4072,7 @@ rnd_down
 rnd_up
 r_occluder_overlay
 .rodata
+rojj8
 =root
 rootNode
 ROTATION
@@ -4103,18 +4095,11 @@ rt_bakecubemap_depthstencil.vtex
 rt_bakecubemap.vtex
 r_texture_lod_scale
 Rtj(8(l
-rt_LPV_Blockers.vtex
-rt_lpvPingB.vtex
-rt_lpvPingG.vtex
-rt_lpvPingR.vtex
-rt_lpvPongB.vtex
-rt_lpvPongG.vtex
-rt_lpvPongR.vtex
-rt_LPV.vtex
 runspeed
 r@yi"@
 R@yi	
-ryjj8
+r@yir@y
+R@yJ1L
 --- %s: 
 "%s" 
 "%s":
@@ -4131,7 +4116,6 @@ s1_mapname
 S: %7.3f
 (S@9hS
 S@9	Q
-=(SA)
 SA)hb@
 SA)hJ@
 %s| AlignOf: %d
@@ -4192,10 +4176,10 @@ SceneSystem/CMTAtlasChunkSizeMobile
 SceneSystem/CMTAtlasHeightMobile
 SceneSystem/CMTAtlasWidthMobile
 scenesystem.cpp
-scenesystem.cpp(1207): 
-scenesystem.cpp(4340): 
-scenesystem.cpp(6236): Expecting 1 renderable pass for material "%s" but found %d!
-scenesystem.cpp(7462): Waited 500 ms for jobs to complete. Attempt to drain windows message queue. Jobs in queue = %d
+scenesystem.cpp(1214): 
+scenesystem.cpp(4493): 
+scenesystem.cpp(6380): Expecting 1 renderable pass for material "%s" but found %d!
+scenesystem.cpp(7605): Waited 500 ms for jobs to complete. Attempt to drain windows message queue. Jobs in queue = %d
 SceneSystem/CubemapFog
 scenesystemdebug
 SceneSystem/DisableShadowFullSort
@@ -4226,6 +4210,7 @@ SceneSystem/VrLightBinnerCachedShadowMapHeight
 SceneSystem/VrLightBinnerCachedShadowMapTileSize
 SceneSystem/VrLightBinnerCachedShadowMapWidth
 SceneSystem/VrLightBinnerMaxLights
+SceneSystem/VrLightBinnerShadowViewsNeedPerViewLightingConstants
 SceneSystem/VrLightBinnerSingleLightFastPath
 Scenesystem/VrShadowDepthMasks
 SceneUtils_001
@@ -4238,6 +4223,7 @@ Scene World %3d: 0x%p %40s [%4d objects]
 (SceneWorld 3D Dump contains %d large objects - they are scaled down and will render red.)
 SceneWorldDump
 sc_extended_stats
+sc_extra_sorting
 sc_fast_object_reject
 sc_force_camera
 sc_force_lod_level
@@ -4302,7 +4288,8 @@ sc_skip_traversal
 sc_spew_cmt_usage
 sc_throw_away_all_layers
 sc_use_clear_subrect
-sc_visualizesceneobjects
+sc_visualize_batches
+sc_visualize_sceneobjects
 --- %s[%d]: 
 "%s":%d
 %s : %d
@@ -4383,7 +4370,7 @@ signon_state
 SimplePostProcessingLayer
 Simulated
 singleplayer
-Sin( %s )
+sin( %s )
 sint32
 sint64
 size0
@@ -4408,6 +4395,7 @@ SkyMapSampleLightingReadPixels
 SkyMapSkyRender
 "%s":%lld
 "%s":%llu
+SlopeTrace
 %s (Material)
 %s_matgrp
 sm_hLayout
@@ -4455,7 +4443,6 @@ spawn_motion_disabled
 SPEED
 speeds
 Spherical %s
-SplatLights
 Splitting huge triangles (%d verts,%d tris) -> (%d verts,%d tris), %d splits
 SpotLight
 spotLightLayout
@@ -4467,7 +4454,7 @@ springConstant
 sprintf
 %s| Project: '%s' Binary: '%s'
 sqrtf
-Sqrt( %s )
+sqrt( %s )
 #%s/RenderAView/RenderAView
 srgbgammatolinear
 "%s" = "%s"
@@ -4573,6 +4560,7 @@ surface_prop
 S)	V*	
 %s| Virtual: %s; Abstract: %s; TrivialConstr: %s; TrivialDestr: %s
 #%s/VolumetricFog/SetupConstantBuffer
+#%s/VolumetricFog/SetupConstantBuffer%s
 swift_prefix
 Symbol name "
 syntax
@@ -4583,8 +4571,10 @@ T	0@9I$
 T	4@y?!"kC
 T: %7.3f
 *T)8yv
+	!t9	
 T(@@9
 T)	@9
+T9{WF
 @-$TA
 T&A@-
 </table>
@@ -4596,7 +4586,6 @@ target_entity
 T	)B)
 Tc"A)`
 Tc"B)`
-Tcih8
 T *CUtlLeanVectorImpl<CUtlLeanVectorBase<CBindlessFastPathSceneObject *, short>, CBindlessFastPathSceneObject *, short>::AddToTailGetPtr() [B = CUtlLeanVectorBase<CBindlessFastPathSceneObject *, short>, T = CBindlessFastPathSceneObject *, I = short]
 T *CUtlLeanVectorImpl<CUtlLeanVectorBase<CStrongHandle<InfoForResourceTypeCTextureBase>, short>, CStrongHandle<InfoForResourceTypeCTextureBase>, short>::AddToTailGetPtr() [B = CUtlLeanVectorBase<CStrongHandle<InfoForResourceTypeCTextureBase>, short>, T = CStrongHandle<InfoForResourceTypeCTextureBase>, I = short]
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<RenderPassAttachmentDesc_t, 8, short>, RenderPassAttachmentDesc_t, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<RenderPassAttachmentDesc_t, 8, short>, T = RenderPassAttachmentDesc_t, I = short]
@@ -4638,7 +4627,6 @@ T	)D)
 <td>ISSUES_QUERIES</td>
 <td>IS_SUN_LIGHT</td>
 <td>IS_TRANSLUCENT</td>
-<td>LAYERFLAGS_COMPLETE_ALL_APP_TILES</td>
 <td>LAYERFLAGS_DEBUG_BREAK_ON_RENDERING</td>
 <td>LAYERFLAGS_DEBUG_BREAK_ON_SUBMISSION</td>
 <td>LAYERFLAGS_DEBUGDRAW</td>
@@ -4647,18 +4635,14 @@ T	)D)
 <td>LAYERFLAGS_DOESNT_MODIFY_COLOR_BUFFERS</td>
 <td>LAYERFLAGS_DOESNT_MODIFY_DEPTH_STENCIL_BUFFER</td>
 <td>LAYERFLAGS_DO_NOT_SORT</td>
-<td>LAYERFLAGS_GENERATE_LIGHTPROBE_SAMPLES_FOR_OBJECTS</td>
 <td>LAYERFLAGS_INGNORE_LAYER_MATCH_ID</td>
 <td>LAYERFLAGS_IS_DEPTH_RENDERING_PASS</td>
 <td>LAYERFLAGS_LIGHT_BINNER_SETUP_LAYER</td>
-<td>LAYERFLAGS_LIGHT_IRRADIANCE_SAMPLES</td>
 <td>LAYERFLAGS_MATCH_TARGET_VIEWPORT_SIZE</td>
 <td>LAYERFLAGS_NEEDS_FULLSORT</td>
 <td>LAYERFLAGS_NEEDS_PER_VIEW_LIGHTING_CONSTANTS</td>
 <td>LAYERFLAGS_NEVER_REMOVE</td>
 <td>LAYERFLAGS_NO_APP_TILING</td>
-<td>LAYERFLAGS_PERFORM_PARTITION_OPTIMIZATION_AT_END_OF_FRAME</td>
-<td>LAYERFLAGS_PICK_MODE</td>
 <td>LAYERFLAGS_PRESERVE_COLOR_BUFFERS</td>
 <td>LAYERFLAGS_PRESERVE_DEPTH_BUFFER</td>
 <td>LAYERFLAGS_PRESERVE_STENCIL_BUFFER</td>
@@ -4693,8 +4677,6 @@ TestFormatB
 TestFormatC
 TestFormatD
 TestFormatE
-testLightLayout
-testLPVLightVB
 tests1
 TestScriptMgr001
 texcoord
@@ -4735,6 +4717,7 @@ Thf@9
 ThF@9h
 ThFAy
 ThF@y
+THik8
 Thin Plate
 ". This appears to be a value from a sibling type.
 	(This can often happen if you forget to clear both depth and stencil)
@@ -4750,7 +4733,6 @@ This shouldn't be called if all the sizes are equal.
 ), this value label conflicts with 
 . This will make the proto fail to compile for some languages, such as C#.
 This ZeroCopyOutputStream doesn't support aliasing. Reaching here usually means a ZeroCopyOutputStream implementation bug.
-THit8
 ThJ@y
 Th&Q)
 ThrA9
@@ -4792,7 +4774,6 @@ TK	@9)A
 TKih8
 Tl	@9
 TL	@9kA
-Tnij8
 Toggle display of box around text
  Tokenizer::ParseFloat() passed text that could not have been tokenized as a float: 
  Tokenizer::ParseStringAppend() passed text that could not have been tokenized as a string: 
@@ -4809,11 +4790,13 @@ ToolGameSimulationSystem_001
 ToolSceneNodeFactory_001
 ToolScriptManager001
 ToolService_001
-Too many cached shadows requested (%d) this frame (%d). Increase size of cached shadow atlas, please.
+Too many cached shadows requested (max %d) this frame (%d).
 Too many shadowed spot lights in the scene!  Some will be removed!
 ") to start from the outermost scope.
 Total : %d (%ukb)
 ".  To use it here, please add the necessary import.
+Tpih8
+Tpii8
 T? @q
 T? @q*
 T	Q@9	
@@ -4904,6 +4887,8 @@ U) (
 U-0GR-2
 u64( %lld = 0x%llX )
 )u@9i
+)UB9i
+)UB9I
 uint32
 uint64
 U)'LV)5XW)7`X)
@@ -5092,6 +5077,7 @@ VMatrix
 vmdlkeys0
 vmdlkeys1
 vmdlkeys2
+vmdlkeys3
 VMDLLIB001
 VMediaFoundation001
 V_modf
@@ -5125,7 +5111,7 @@ void CUtlLeanVectorFixedGrowableBase<RenderSubPassAttachment_t, 4, short>::Ensur
 void CUtlLeanVectorFixedGrowableBase<texture_use_info_t, 1, short>::EnsureCapacity(int, bool) [T = texture_use_info_t, N = 1, I = short]
 void FillVBForAttribute(uint8 *, CMeshVertexAttribute *, const RenderInputLayoutField_t &, int &, float *, int &, float *, bool, bool, const Vector &, int *)
 void FloatBitMap_t::ConvertGammaToLinear(FBMGammaType_t)
-void SetupLightingForViewVr(CSceneView *, float)
+void SetupLightingForViewVr(CSceneView *)
 Volume Cull
 volume_fog_clipmaps_enabled
 volume_fog_clipmap_update
@@ -5177,10 +5163,14 @@ V_qsort_s
 VR_001
 vr_allow_time_sliced_shadow_map_rendering
 vr_baked_sun_shadow_distance
+vr_camera_filter_decay
+vr_camera_filter_decay_roll
 vr_carry_type
+vr_companion_window_remove_roll_decay
 vr_cubemap_normalization_max
 vr_cubemap_normalization_roughness_begin
 vr_directional_lightmaps
+vr_disable_view_override
 vr_dump_lights
 V_RemoveDotSlashes
 vr_enable_cached_lights
@@ -5218,6 +5208,7 @@ V_vsnprintf
 V_vsnprintfSize
 V_vsnprintfWarnTrunc
 V_wcstoi64
+v@yiv@y
 V@y?! k
 W6hf@
 W6hJB9	4
@@ -5284,6 +5275,7 @@ wX@)u
 X360_DST16
 X360_DST24
 X360_DST24F
+X6j6A
 @x_!6k
 ,X@)7
 x7wB@
@@ -5345,9 +5337,9 @@ _Z17LoggingSystem_Logi17LoggingSeverity_t5ColorPKcz
 _Z17LoggingSystem_Logi17LoggingSeverity_tPK17LoggingMetaData_t5ColorPKcz
 _Z17LoggingSystem_Logi17LoggingSeverity_tPK17LoggingMetaData_tPKcz
 _Z17LoggingSystem_Logi17LoggingSeverity_tRK14LeafCodeInfo_tPKcz
+Z29InitForFrustum_DebugRenderingyyP10CSceneViewE3$_2
 _Z6DevMsgPKcz
 Z*=@8H
-=*!Z9	
 ZA9iZ
 ZA){C
 ZB9hZ
@@ -5378,11 +5370,10 @@ _ZN13CBufferString9SetLengthEibPi
 _ZN13CThreadRWLock11UnlockWriteEv
 _ZN13CThreadRWLock11WaitForReadEv
 _ZN13CThreadRWLock12LockForWriteEv
-ZN14CLightBinnerVr14InitForFrustumEP10CSceneViewP11ISceneLayerP14IRenderContextRK8CFrustumbyyE3$_4
 ZN14CLightBinnerVr19GatherVisibleLightsER23CUtlVectorFixedGrowableI15ConsiderLight_tLm256EES3_P10CSceneViewRK8CFrustumyyE3$_0
 ZN14CLightBinnerVr25AddEnvironmentMapsForViewEP10CSceneViewyyE3$_6
 ZN14CLightBinnerVr27AddLightProbeVolumesForViewEP10CSceneViewyyE3$_5
-ZN14CLightBinnerVr40ShadowSetup_AllocateDumbShadowsForLightsEP10CSceneViewP11ISceneLayerRK8CFrustumyyiE3$_2
+ZN14CLightBinnerVr40ShadowSetup_AllocateDumbShadowsForLightsEP10CSceneViewP11ISceneLayerRK8CFrustumyyiE3$_1
 _ZN16CThreadSemaphore7ReleaseEiPi
 _ZN16CThreadSemaphoreD1Ev
 _ZN17CThreadSyncObject4WaitEj

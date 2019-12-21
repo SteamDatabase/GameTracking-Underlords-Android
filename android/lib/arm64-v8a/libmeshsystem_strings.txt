@@ -75,6 +75,7 @@ $@)  "
 19CSchemaRegistration
 1bQJ1~
 1DBlend
+	2(%@)
 	2*	@
 20CPostConnectCallback
 20CRefCountServiceBaseILb1E6CRefMTE
@@ -156,7 +157,6 @@ $@)  "
 2A9	y
 2_BONE_IK
 %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f
-2H3)9
 	2	i*
 2	i58h
 2+imx
@@ -196,7 +196,6 @@ $@)  "
 6h^@y
 `6iJ@y
 6iZ@y
-6Y3i9
 	!@)7}
 7hb@9h
 7hf@9
@@ -211,7 +210,6 @@ $@)  "
 @9+	@9,
 (@@9h
 (@@9H
-9h>A9H
 "@9hf@9i
 @9hV@
 )@@9i
@@ -225,6 +223,7 @@ A-@ #
 a2@yh2@y
 A-'@A-
 AbsolutePoseControl
+abs( %s )
 ACT_IDLE
 Activity %s has %d sequences with a total weight of %d!
 ACTIVITY WEIGHTS
@@ -264,7 +263,6 @@ AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
 Agg data %d: %p (%d parts, crc 0x%08X)
 )AHJ*
-	Ai9j
 ai_model_info
 AIWalkable
 A)jz@
@@ -585,6 +583,7 @@ CModelConfigElement_SetMaterialGroup
 CModelConfigElement_SetRenderColor
 CModelConfigElement_UserPick
 CModelConfigList
+CModelTypeManager::NotifyManifestResourceFinished
 CMorphBundleData
 CMorphConstraint
 CMorphData
@@ -653,7 +652,7 @@ C_OP_SetSingleControlPointPosition
 C_OP_StopAfterCPDuration
 C_OP_TwistAroundAxis
 COrientConstraint
-Cos( %s )
+cos( %s )
 CovMatrix3
 CParentConstraint
 CParticleSystemDefinition
@@ -793,6 +792,7 @@ explosion_type
 explosive_damage
 explosive_radius
 EXPORTSYSTEM_INTERFACE_VERSION_001
+exp( %s )
 eye_data
 eye_data_list
 f4MaxDist
@@ -953,6 +953,7 @@ flDistMin
 Flexible; 
 FLEX_OP_2WAY_0
 FLEX_OP_2WAY_1
+FLEX_OP_ABS
 FLEX_OP_ADD
 FLEX_OP_CLOSE
 FlexOpCode_t
@@ -1047,6 +1048,8 @@ h"A9a
 h>A9H
 HammerMapLoader001
 handindex
+HangWatchdogInternal_BeginScope
+HangWatchdogInternal_EndScope
 Has Collision; 
 .hash
 h]A)zQB) 
@@ -1057,15 +1060,15 @@ health
 health_override
 HELPER_BONE
 HelpSystem_001
-hf@9!
 hf@9h
 hf@9H
 hf@9i
 hidden
 Hitbox indexing is incorrect for set %s, hitbox %s. Hitboxes will not be setup properly.
 H-@)J	@
-hj48y}
+hj58Y
 HostStateMgr001
+h&Q)d
 hR@y`
 hR@y	
 hR@yt
@@ -1073,7 +1076,7 @@ hurt_me
 hurt_them
 h*@y_
 h&@y)
-h&@y)}G
+h&@y)uG
 <	)@)i*
 *-@i)	
 _i(8j
@@ -1082,6 +1085,7 @@ ib@9)
 ib@9j
 ib@9l
 ibAy?
+=ibw9
 I CUtlLinkedList<int, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short> >::AllocInternal(bool) [T = int, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int, CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int>, unsigned int> >::NewNode(const T *) [T = CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, I = unsigned int, L = CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int>, unsigned int>]
 I CUtlRBTree<CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
@@ -1233,6 +1237,7 @@ LightingBasis
 lightmap
 lightmapuv
 LightmapUV
+LightmapUVW
 lightsourceshape
 LightSourceShape_t
 lighttype
@@ -1307,7 +1312,7 @@ m_axes
 maxHullVertices
 m_AxialEdges
 maxSpringTension
-Max( %s, %s )
+max( %s, %s )
 maxVerticesPerHull
 )mB9_
 )mB9i
@@ -1492,9 +1497,9 @@ Mesh needs recompiling: '%s' (invalid version: %d)
 meshsystem
 MeshSystem
 meshsystem.cpp
-meshsystem.cpp(1129): 
-meshsystem.cpp(155): GetErrorModel() called before error model exists!
-meshsystem.cpp(908): 
+meshsystem.cpp(1151): 
+meshsystem.cpp(152): GetErrorModel() called before error model exists!
+meshsystem.cpp(910): 
 MeshSystem/DoNotLoadMorphsOnMobile
 MeshSystem::InitPosedProp: Bone mismatch between transforms out (%d) and transforms in skeleton (%d)
 MESH_TRANSLUCENCY_FULLY_ALPHA_BLENDED
@@ -1710,7 +1715,7 @@ m_InitPos
 m_InitPose
 m_inputList
 m_inputValue
-Min( %s, %s )
+min( %s, %s )
 m_InstanceName
 m_intAttributes
 m_InteractAs
@@ -1725,6 +1730,7 @@ Missing file '%s'
 m_jiggleBone
 m_JiggleBones
 )MJJ }
+m_JointConstraintData
 m_JointConstraintPairs
 m_JointName
 m_joints
@@ -2033,6 +2039,7 @@ m_pD3DSemanticName
 m_pFeModel
 m_Phi
 m_physics
+m_pJointConstraintData
 m_Plane
 m_Planes
 m_pModelConfigList
@@ -2208,6 +2215,8 @@ m_vStancePositionMS
 m_vTintColor
 m_vTipOffset
 m_vToStrideStartPos
+m_vTraceOffset
+m_vTraceScale
 m_vUpLS
 m_vUpVector
 m_vViewMax
@@ -2447,14 +2456,15 @@ pthread_mutex_unlock
 ../public/tier2/fileutils.h
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
+q@-@#;
 qAdjust
 QAngle
 Qi"A)`
 qJT-s
+	qm9I
 Quaternion
 QueuedLoaderVersion001
 Quintic
-r@-@#;
 RadianEuler
 radius0
 radius1
@@ -2533,7 +2543,6 @@ runspeed
 %s+--
 %s|  % 2d: [% 3d] %-12s %s
 %s|  % 2d: %s [Offset: %d]
-	!s9	
 %s| AlignOf: %d
 %s| Base Class%s: %d
 SceneSystem_002
@@ -2573,10 +2582,11 @@ sharpStartAngle
 .shstrtab
 Simulated
 singleplayer
-Sin( %s )
+sin( %s )
 size0
 size1
 SkeletonBoneBounds_t
+SlopeTrace
 %s (Material)
 %s_matgrp
 s off
@@ -2604,7 +2614,7 @@ Splitting huge triangles (%d verts,%d tris) -> (%d verts,%d tris), %d splits
 springConstant
 %s| Project: '%s' Binary: '%s'
 sqrtf
-Sqrt( %s )
+sqrt( %s )
 "%s" = "%s"
 %s - %s
 %s / %s
@@ -2698,6 +2708,7 @@ turn_rate
 Two Bone
 Two KV3 format GUIDs with the same human-friendly name ('%s')
 TypeManager
+	!u9	
 Unable to determine buffer encoding.
 unable to load mesh "%s"
 Unable to read resource file %s!
@@ -2781,6 +2792,7 @@ VMatrix
 vmdlkeys0
 vmdlkeys1
 vmdlkeys2
+vmdlkeys3
 VMDLLIB001
 VMediaFoundation001
 VMeshError
@@ -2922,7 +2934,7 @@ yaw_start
 yh6@yt:
 yhfAytj
 yh@)w
-**yhxk{j
+*yhxk{j
 {YIN?
 )YJJ)}
 @y_!(k!

@@ -110,7 +110,7 @@ public class application extends Application implements ActivityLifecycleCallbac
     }
 
     public String[] GetNativeBinarySearchPaths(String str) {
-        String GetString = Resources.GetString("VPC_GameName");
+        String GetString = Resources.GetString("GameName");
         StringBuilder sb = new StringBuilder();
         sb.append("game:/bin/");
         sb.append(str);
@@ -128,7 +128,7 @@ public class application extends Application implements ActivityLifecycleCallbac
     }
 
     public String[] GetProgramArguments() {
-        String GetString = Resources.GetString("VPC_LauncherBinaryName");
+        String GetString = Resources.GetString("LauncherBinaryName");
         Locale locale = Locale.getDefault();
         String language = locale.getLanguage();
         String country = locale.getCountry();
@@ -162,7 +162,7 @@ public class application extends Application implements ActivityLifecycleCallbac
 
     public boolean InstallFiles(IStreamingBootStrap iStreamingBootStrap) {
         String str;
-        boolean[] GetBoolean = Resources.GetBoolean("VPC_PatchSystemEnabled");
+        boolean[] GetBoolean = Resources.GetBoolean("PatchSystemEnabled");
         if (GetBoolean == null || !GetBoolean[0]) {
             str = null;
         } else {
@@ -192,11 +192,11 @@ public class application extends Application implements ActivityLifecycleCallbac
 
     /* access modifiers changed from: protected */
     public int GetEffectiveApplicationVersion() {
-        String GetString = Resources.GetString("VPC_VersionCodeString");
-        if (GetString != null) {
-            return Integer.parseInt(GetString) % 1000000;
+        String GetString = Resources.GetString("VersionCodeString");
+        if (GetString == null || GetString.length() <= 0) {
+            return 1000001;
         }
-        return 1000001;
+        return Integer.parseInt(GetString) % 1000000;
     }
 
     public TaskStatus GetBootStrapStatus() {
@@ -213,7 +213,7 @@ public class application extends Application implements ActivityLifecycleCallbac
 
     public void onBootStrapFinished() {
         this.m_ContentSyncAsyncTask.cancel(false);
-        String GetString = Resources.GetString("VPC_LauncherBinaryName");
+        String GetString = Resources.GetString("LauncherBinaryName");
         StringBuilder sb = new StringBuilder();
         sb.append("lib");
         sb.append(GetString);

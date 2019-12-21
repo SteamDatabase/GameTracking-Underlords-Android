@@ -55,7 +55,6 @@ $0$1$2 $3 = $4
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
-02:08:31
 [%02d:%02d:%02.3f]: %s
 %02i/%02i %02i:%02i:%02i 
 %03i:  %s (%s):   
@@ -67,7 +66,7 @@ $0$1$2 $3 = $4
 06jZ@
 07h"@
 0@9	4
-	-09f
+097{(
 /0@9n9
 %0@9R
 	0AyI
@@ -107,7 +106,6 @@ $0 to $1,
 -1.000000
 1.0.2, 30-Dec-2001
 -1080
-	109A
 10CCvarQuery
 10CEntityMsg
 10CheckImage
@@ -252,6 +250,7 @@ $0 to $1,
 13IPrerequisite
 13ISoundService
 13IStatsService
+	149L
 14CAimConstraint
 14CAppSystemDict
 14CBaseAppSystemI10IAppSystemE
@@ -575,7 +574,6 @@ $0 to $1,
 16ILoopModeFactory
 16IMatchEventsSink
 16IUploadGameStats
-	179,
 17CBaseCmdKeyValuesI20CCLCMsg_CmdKeyValuesE
 17CBaseCmdKeyValuesI20CSVCMsg_CmdKeyValuesE
 17CBaseCmdKeyValuesI32CSVCMsg_GameSessionConfigurationE
@@ -614,6 +612,7 @@ $0 to $1,
 17IEngineServiceMgr
 17IGameEventWatcher
 180.0
+	189&
 18CBaseEngineServiceI12IToolServiceE
 18CBaseEngineServiceI13IInputServiceE
 18CBaseEngineServiceI13ISoundServiceE
@@ -660,8 +659,6 @@ $0 to $1,
 18MenuItemCheckImage
 18ToolTraceRayResult
 -1@9_
-	1$9-
-	1$9#
 !)19BJRZcks{
 19C2S_CONNECT_Message
 19CBidirMsg_RelayInfo
@@ -687,7 +684,6 @@ $0 to $1,
 19CTier2AppSystemDict
 19CVariantSaveDataOps
 19CVConCommandMessage
-	1_9i
 19IConsoleDisplayFunc
 19IDebugVisualizerMgr
 19IKeyValuesErrorSpew
@@ -696,11 +692,7 @@ $0 to $1,
 19ISplitScreenService
 1@9M5
 19NetMessagePacketEnd
-	-19)Q
-	!19\Q
-	)19qQ
 19RestartMapToolEvent
-	1	9s
 !1AQaq
 !>@=1B
 1bQJ1~
@@ -708,7 +700,6 @@ $0 to $1,
     1 = force cl_predict to 1
 1hqx2hrx?
    -1 = let clients set cl_predict to anything
-	1p9i
 1 = Pause the game when pressing ~ to open the console. CTRL+~ opens the console without pause.
 1.QB!
 1 - resize right
@@ -718,7 +709,6 @@ $0 to $1,
 /1V?O	
 /1V?OA
 /1V?OR
-	1w9)
  1: write to NULL
 *1x0x
 !2@=!
@@ -757,6 +747,7 @@ $0 to $1,
 20ISource2WorldSession
 20PacketEntitiesFilter
 20SpawnEntityToolEvent
+21:38:03
 21C2S_CONNECT_Message_t
 21CBidirMsg_RelayPacket
 21.CBidirMsg_RelayPacket.SignedDestinationAddress_t
@@ -859,7 +850,6 @@ $0 to $1,
 24ISaveRestoreBlockHandler
 24IWorldLoadUnloadCallback
 255 255 255 255
-2	!59
 25CAttributeDictSaveDataOps
 25CCLCMsg_LoadingProgress_t
 25CConCommandMemberAccessorI11CBugServiceE
@@ -924,7 +914,6 @@ $0 to $1,
 27ITestScriptCommandProcessor
 2_!7k
 27NetMessageConnectionCrashed
-2	!89?
 28CBoneConstraintPoseSpaceBone
 28CCLCMsg_SplitPlayerConnect_t
 28CEmptyEntityResourceManifest
@@ -939,13 +928,8 @@ $0 to $1,
 28INetworkStringTableContainer
 2_!8k
 2@9()
-2	!$9
-2	!$9%\
-2	!%9
-2	)%9
-2	%$9
-2		$9
-2	!+9B
+2	}"9
+2		 9
 29CBidirMsg_RebroadcastSource_t
 29CBoneConstraintPoseSpaceMorph
 29CCLCMsg_SplitPlayerDisconnect
@@ -957,12 +941,16 @@ $0 to $1,
 29CSimpleWindowsLoggingListener
 29CSVCMsg_FlattenedSerializer_t
 29CToolGameSimulationDispatcher
+2	}"9EX
 29ILoopModePrerequisiteRegistry
 29IToolGameSimulationDispatcher
 2,	@9L
 2	9l6	9pR
+2	}"9;M
+2	}"9O_
 29ToolEvent_GetEntityInfoResult
-2	%$9yO
+2	a"9
+2	a"9	`
 2	a@9Ia
 2	AA9
 2Ay)	
@@ -977,13 +965,12 @@ $0 to $1,
 2#.CSVCMsgList_UserMessages.usermsg_t
  2: DmCrashDump() (xbox360 only)
 %2d: proc group %u:%u, physical ID %d, core ID %d
-2	E"9n
 %.2f GB
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
 2Gio8
 2	h(8
-2h"	9H&
-2h"	9o7
+2h"	9
+2h"	9E7
 2hb@9H
 2hBK9H
 2hj)8
@@ -993,7 +980,10 @@ $0 to $1,
 %2i/%2i on map %s
 2*i(8h*@
 2	i+8h
-2	I"9d
+2	i"9
+2	i"98`
+2	i"9$N
+2	i"9.Y
 2Ii(8h
 2ii*x
 2ij(8
@@ -1004,19 +994,29 @@ $0 to $1,
 2j"	9I
 2j"@9)p
 2?".k
-2?k78
-2_k88
-2?k88
+2?k782+
+2?k881'
+2_k88B
 2kii8l}C
 2Kkj8k
 2L%@x+
+2	m"9
+2	m"9ZS
 2 .ProtoFlattenedSerializerField_t"!
+2	q"9
+2	q"96S
 2 - resize down
+	2!t!
+2	u"9
 2	u	9
 2Way_0( %s )
 2Way_1( %s )
 2x"@9
 2@y	!
+2	y"9
+2	y"9iX
+2	y"9_M
+2	y"9s_
 30000
 30CBidirMsg_RebroadcastGameEvent
 30CConnectGameClientPrerequisite
@@ -1075,12 +1075,10 @@ $0 to $1,
 38CServerGameSessionManifestPrerequisite
 38CWaitForInitialSpawnGroupsPrerequisite
 38IFlattenedSerializerSpewListenerEngine
-397{(
 39CBaseClientSpawnGroupCreatePrerequisite
 39CBaseServerSpawnGroupCreatePrerequisite
 39CFlattenedSerializerChangesSpewListener
 39CNetworkServerSpawnGroup_WaitForClients
-39_Q	
 3 - bottom-right
 #3CScs
         %3d %3d %3d %3d %3d %3d %3d %3d
@@ -1113,7 +1111,10 @@ $0 to $1,
 49CNetworkClientSpawnGroup_LoadSaveGamePrerequisite
 49CNetworkServerSpawnGroup_LoadEntitiesPrerequisite
 49CNetworkServerSpawnGroup_LoadSaveGamePrerequisite
+	-49q
 &4@9R
+4Ayk&
+4AyK&
 4CLog
 4CPVS
 4Csv_voiceenable
@@ -1173,12 +1174,12 @@ $4DTdt
 53CNetworkServerSpawnGroup_AllocateEntitiesPrerequisite
 53CNetworkServerSpawnGroup_LoadSaveGamePrerequisiteBase
 53CNetworkServerSpawnGroup_WaitForAssetLoadPrerequisite
+	549+
 54CNetworkClientSpawnGroup_LoadPreviousLevelPrerequisite
 54CNetworkServerSpawnGroup_LoadPreviousLevelPrerequisite
 54q`	
 55CNetworkClientSpawnGroup_AllocateSpawnGroupPrerequisite
 &'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz
-	579y
 58jv@
 ,5@9_
 )5@9)}
@@ -1187,7 +1188,6 @@ $4DTdt
 59CNetworkServerSpawnGroup_WaitForOwnerSpawnGroupPrerequisite
 *5@9J
 5@9J9
-	5$9w
 	5Ay*
 5CVEfx
 % 5d: % 5d
@@ -1223,6 +1223,8 @@ $4DTdt
  6`"A
 (6`&A
 6Ay+}E
+6Ayk&
+6Ayy&
 `6`BD
 6ConVar
 _6	D@
@@ -1349,8 +1351,6 @@ _6inA9
 76iJ@
 76in@
 76v&@
-	-79Q
-	%79Y
 ~`7(b@
 7cF@yd
 7Dragger
@@ -1404,6 +1404,10 @@ _6inA9
 87`f@
 :,@8[,@8
 %8.8s: %-5d entries, '%s', ...
+	=89]
+	!89~
+	)891
+	-89K
 %8@9R
 8b  16-May-2010
 8CFmtStrNILi1024ELb0EE
@@ -1427,8 +1431,8 @@ _8"h 8
 )8hv@
 *8hv@
 (8HXhx
-@8i/@8
 @8i/@8J
+@8i/@8X
 @8+ih8
 @8,ij8_}
 @8*ij8
@@ -1472,14 +1476,12 @@ _8y,@8
 )=@9)}
 )!@9)
 )	@9*
-@@9	"
 @9)!@
 @9)&@
 @9*&@
 @9*	@
 @9+	@
 $@9	(
-	-$9[
 	)@9)
 	)@9*
 	@9*]
@@ -1493,12 +1495,11 @@ $@9	(
 @9>3@9*
 9,5@8K
 	@9*6B9
-		?96f
 @9(	 7
 @9;7@9<
-		#98
 9.@8 
 @9*-@8K
+ 9?	 9$
 (`@9	`@9
 )9@9)}
 @9-+@9.
@@ -1508,7 +1509,6 @@ $@9	(
 @9+/@9,
 @9+	@9
 @9+	@9)
-	}99]
 	9@9)
 9,	@9)
 9*	@9)
@@ -1518,13 +1518,14 @@ $@9	(
 . @9/$@90(@918@9.}
 9	!@9i
 9	%@9i
-	9$9I
  @9	$@9J
 *9@9J
 9@9j9
  @9	$@9JmF
 @9+	@9K
+	)&99T
 @9a2@
+	9A9i
 @9-b@
 @9*b@
 @9)+C
@@ -1548,7 +1549,6 @@ $@9	(
 9	D@8
 9*E@8?
 @9E-@9U
-	-$9G
 @9h*@
 "@9H	
 (@@9H
@@ -1587,11 +1587,9 @@ $@9	(
 9hZB9
 ) @9i
 @9i&@
- @9I$
 @9I	@
-	-_9I
-	)_9I
 "@9i"@9
+ 9I	 9
 9IBlackBox
 9IFileList
 @9(ih8
@@ -1638,7 +1636,6 @@ $@9	(
 9kj(8|
 9Kkj8k
 9Kkj8k}
-		;9Ks
 *	9l.	9
 @9L	@9l
 @9L=@9M
@@ -1659,25 +1656,26 @@ $@9	(
 @9O	@9P
 @9p	@9
 @9 q@
-	-$9Q
 &,@9R
 &$@9R
 %<@9R
 % @9R
 %(@9R
 @9R1@9D
-	!*9s
 9	S)M*
 @9T|@
+	!&9$T
+	9t9i
 @9T)@9K
 (@@9tB
-	)$9u
 @9U|@
+	!,9v
 @9V%@9W
 @9-{vx
 @9){vxl
 /9W?O
 /9W?OZ
+	9x9i
 @9+	@yHA
 @9+	@yHM
 9y*xi
@@ -1687,6 +1685,7 @@ $@9	(
 A-!(!
 A)`~@
 a2@yh2@y
+	A89\z
 a8#%D
 _A8qh
 +a@9?
@@ -1695,7 +1694,6 @@ _A8qh
 		A9	
 	A@9)
 	A@9)	
-	a99~
 a@9+a
 a@9	a
 A9)]G
@@ -1705,6 +1703,8 @@ A9)]G
 ^A9i^
 "A9i"
 *	A9i
+	=A9i
+	]A9i
 	A@9i
 A9i>@
 	A@9I
@@ -1716,16 +1716,19 @@ A9|J@
 ,	A9K
 +	A9K
 A9Kik
-	a'9$L
 +	A9lC
+	A;9Ot
 ?A9tJ@
-	a-9v
+	A<9zp
 A-'@A-
 AA9(	
 AA9(	@
+	AA9i
 A(aN!
 $	A)Ar
 a^  b
+	aB9j1
+	aB9J1
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 aBI9J
@@ -1733,7 +1736,9 @@ abort
 abortflag
 Aborting download of %s
 AbsolutePoseControl
+abs( %s )
 aB@ya
+	aC9i
 Accel
 accept
 ACCEPT
@@ -1754,6 +1759,7 @@ active_spawngroup_handle
 ACT_NEUTRAL_REF_POSE
     Actual    : 
   Actual   : 
+	aD9i
 -adapter
 Adapter: %d
 AddAllocatedMessage
@@ -1848,24 +1854,18 @@ After selecting and moving a panel Ctrl-z will undo the move.
 after solve err=%f
 After this many seconds without a message from fully connected client, the client is dropped
 After this many seconds without receiving a packet from the server, the client will disconnect itself
-	ag9i
 A game file appears to be missing or corrupted.  In the Steam client go to the game's properties.  In the 'Local Files' tab select 'Verify Integrity of Game Cache' to have Steam double-check the game's installation.
 A-gBA-
 Agg data %d: %p (%d parts, crc 0x%08X)
 aggregate_value
-	ah9i
 <a href=
 A!;I2
-	ai9i
 #A)iBB
 ai_model_info
 .A)iN@
 AIWalkable
 A	@}J!
-	aj9i
 a.JY .I
-	ak9i
-	al9i
 alias
 Alias a command.
 ALIGN_TYPE is wrong, please fix
@@ -2022,15 +2022,7 @@ AsyncBeginRenderingViews
 async_serialize
 async_track_all
 asyncwrite
-	AT9_
-	AT9_)
-	AT9_1
-	AT9*2
-	AT952
-	AT962
-	AT9j0
-	AT9t0
-	AT9_Y
+	At9i
 \ at end of pattern
 ATI1N
 ATI2N
@@ -2098,10 +2090,9 @@ avg_packets_out
 AVI recording failed! Missing expected pixels!
 avisound 
 /AV?O!
-	Ax9)
+	aw9	
 A{"xB
 Ax_! k
-	ay9	
 A@yi*@
 A)`z@
 AZUy!
@@ -2111,15 +2102,12 @@ B-!(#
 .B@)1
 B-1HD-
 *-B),5C)_
-B	9-$
-	!B9*2
 B@9	A
 ^B9h^
 b@9hb
 b"@9i
-	}B9i
+	}b9I
 b@9ib
-	!B9j0
 bA9hb
 BA9hB
 BA9iB
@@ -3634,7 +3622,7 @@ Corrupt JPEG data: bad Huffman code
 Corrupt JPEG data: found marker 0x%02x instead of RST%d
 Corrupt JPEG data: premature end of data segment
 Corrupt JPEG data: %u extraneous bytes before marker 0x%02x
-Cos( %s )
+cos( %s )
 CO-%u
 Could not create an instance of 
 Could not establish connection to Steam servers.
@@ -3916,9 +3904,8 @@ D@8)%
 "D@9%
 D@9_ 
 D9{6@
-	!d9I
-	%d9I
 D9i.A
+D9Z_C
 -dac_offline
 %d addons loaded
 ,DA)R
@@ -3964,6 +3951,7 @@ DebugShowZPrepassDepth
 DebugShowZPrepassNormals
 DebugTextureInfo001
 DebugVisualizerMgr
+Dec 16 2019
 decalprecache
 decal_texture_index
 DeclareCurrentThreadIsMainThread
@@ -4289,11 +4277,15 @@ dynamic_interaction
 .dynsym
 -@))-E
 E-!("
-E"9?I"9x
-	E"9II"9
+	e"94
+	!e9i
+	e!9J
+	EA9i
  *Each frame will render %d times*
+	eb9)
 echoln
 Echo log information to the console.
+Echo text to console.
 Echo the command arguments on the console
 Echo to the console changes caused by toggling.
 EconItemToolModel_001
@@ -4681,6 +4673,7 @@ explosion_type
 explosive_damage
 explosive_radius
 EXPORTSYSTEM_INTERFACE_VERSION_001
+exp( %s )
 EXRHeader variable is not initialized.
 extend .$0 {
 extendee
@@ -4709,8 +4702,7 @@ extreme cHRM chunk cannot be converted to tristimulus values
 F-!($
 F-%:%
 *-F),5G)_
-F	9%$
-	!F9i
+	!f9i
 fA9hf
 FA9hF
 FA9iF
@@ -4794,7 +4786,6 @@ fgcolor
 fgetc
 fg_image
 F*%h3x%hgx
-F-H%F
 F*&h%x%hsx
 F*%h'x%hsx
 field
@@ -5027,7 +5018,6 @@ force_fatal_error
 force_fatal_error used, %d args
 Force full sendtable sending path.
 force_hibernate
-Force HMD backlight brightness to a specific value. Values <= 0 to to not force a value.
 -force_new_recommend
 -forcenovsync
 Force server side preloading.
@@ -5193,6 +5183,7 @@ G6iBA9
 g6in@
 G6v.@
 (g@9.
+	!g9i
 %g: AdvanceTime ticks this frame %d, sim remain: %g
 -game
 /game/
@@ -5245,7 +5236,6 @@ GameResourceServiceClientV001
 GameResourceServiceServerV001
 GAME_ROOT
 Game: "%s"
-{GAME}%s
 GameServerData001
 game_session_config
 game_session_manifest
@@ -5542,7 +5532,6 @@ h2K9(
 h2K9i
 h3E9(
 h3E9H
-*h#59H
 H6h>@
 H6hV@
 H6in@
@@ -5558,7 +5547,6 @@ h)8Ay)
 h"@9(
 h"@9)
 h"@9	
-h"@9	$
 `H9)}
 ?h98a
 H9a2B
@@ -5568,8 +5556,8 @@ h*@9h/
 h*\9h
 *h"@9H
 h.@9H
-h"@9I
-h"@9I$
+	!h9i
+h"@9i
 h:	9i>	9
 -H@9m
 H9)yx
@@ -5606,11 +5594,14 @@ hBB9(
 hbB9h
 hBD9iz@
 hBD9t
+hBF9	
 *hbGy		
 hbGy`
 hbGyi
+hbGyI
 hBH9H
 *hBK9
+hBk9	0
 hBK9H
 =hb@y
 hB.y(5
@@ -5677,7 +5668,7 @@ High Poly Draw Calls
 high_value
 Hit rate
 Hits/m
-hj48aO
+hj58AV
 hj|8H
 hj)8H'@
 hj8li*8J
@@ -5714,7 +5705,6 @@ HLTV:  SetSignonState( %s )
 hltv_slots
 hltv_spectate
 HMaterial
-HMD backlight brightness level corresponding to a tonemap scale of 1. 0 to disable.
 HModel
 *h>N9b:B
 h>N9H	
@@ -5761,9 +5751,9 @@ How many seconds it takes to get to full FF speed.
 How often to flash demo recording/playback overlay (0 - disable overlay, -1 - show always)
 HParticleSystemDefinition
 HPostProcessing
-	*hQ	
 HRenderTexture
 hrEy)
+hrEy	!
 hrEyi
 hrEyu
 )hrG9
@@ -5771,7 +5761,6 @@ hrG9H
 hrG9t
 hrI9(
 hrI9H
-	*hS	
 hscript
 HSCRIPT-light
 hscript_lightbinding
@@ -5793,8 +5782,6 @@ hvUyh
 h*@y_
 h*@y	
 h&@y)
-h&@yi
-h&@yI
 hzEyH
 hzEyi
 hzEyirB
@@ -5813,7 +5800,7 @@ i7xh6@
 _i(8+
 	*	i8
 	I*8)
-?i(83
+	I89qz
 i)8a^A
 *i(8B
 ?i(8h
@@ -5830,15 +5817,14 @@ i)8i&W
 i)8j&W
 i*8j&W
 i(8m&W
-?i(8T
 ?i(8v
 i*8?y*xJ
 *i"@9
-	%I9)
-	i991
-	i'99L
+	i'9*
 I9`BA
 "I9)!D
+	I;9dt
+	!i9i
 )I@9I
 i"@9J
 IAppSystem *CAppSystemDict::AddSystem(const char *, const char *, ErrorResponse_t)
@@ -6467,6 +6453,7 @@ i)xhzA
 *i.xi
 *i,xi>@yj:
 *i.xi>@yj:
+iy8^p
 i>@yh
 Iyix8}
 IyixJylx+
@@ -6475,29 +6462,35 @@ j.])
 @ @-J
 j2?)?
 j2	)k
+j38dR
+j48#|
 j48	C
+j48h 
 j48t^@
-j48x_
 j4xH;@
+j58h#
 j58hf@9(
 j58"l
-j58Z#
-j688&
+j68("
+j68(#
+j68H"
 j68u"@
+j68X 
 j7Ayh3Ay)	
-j(8((
+j88E(
 j)8hjj
 j(8(Z@
  J9?@
 $J9!|
 J!@9_
 J!@9#
-j98z!
 J9afA
  J9F|
+	!j9i
 j	@9I
 J!@9jB
 J9tB	
+	*JA*
 ja8B(
 J]A9_
 jA9hj
@@ -6621,24 +6614,21 @@ K1@yk
 *k2@y
 ?k58D
 K5@yk
-k68[I
-k78(&
-k78(#
-k78	=
+?k68hx
+?k78`(
+*?k78
+k78_;
 ?k78h
-*?k78:H
 ?k)8(
+k:8<#
 _k88?
 ?k88_
-?k88(&
-	k(88
-_k88f%
 ?k88w
-?k88x$
+	k(8d
+k(8H)
 k(8vV@
 K!@9+!
 K	@9)
-_k98(!
 _k98x
 K9@yk
 K	A9lC
@@ -6958,6 +6948,7 @@ LightingBasis
 lightmap
 lightmapuv
 LightmapUV
+LightmapUVW
 lightsourceshape
 LightSourceShape_t
 lightstyles
@@ -7155,9 +7146,10 @@ LrwcE
 lseek
 %ls [wstring, len = %d]
 [L:%u:%u]
-	m59q
-	m99K
+	M<9bo
+	M<9Gp
 m%@9i)
+	M;9is
 m	A9j"
 m_aAngOffset
 Machine
@@ -7318,8 +7310,9 @@ Max number of times a user can fail rcon authentication before being banned
 Max SourceTV spectator bandwidth rate allowed, 0 == unlimited
 max_spawngroup_creationsequence
 maxSpringTension
-Max( %s, %s )
+max( %s, %s )
 maxVerticesPerHull
+	mb9I
 m_bApplyMinForce
 m_bAutoHideButtons
 m_bbox
@@ -7402,6 +7395,7 @@ m_ControlRigData
 m_cRenderColor
 m_CScriptComponent
 m_CullDataIndex
+	MD9i
 m_DefaultSolverSettings
 MDefaultString
 m_DefaultTargetSettings
@@ -7589,7 +7583,7 @@ m_flValue
 m_flWeight
 m_ForceGenerators
 m_FullSendTables
-	MG9I
+	mG9i
 m_Gradient
 m_GroupName
 *mGxJ
@@ -7637,7 +7631,7 @@ minimum-width
 m_Initializers
 m_inputList
 m_inputValue
-Min( %s, %s )
+min( %s, %s )
 m_InstanceName
 m_int
 m_intAttributes
@@ -7662,6 +7656,7 @@ m_iTitleTextInsetYOverride
 mi,x!
 )MJJ }
 mjk8o
+m_JointConstraintData
 m_JointConstraintPairs
 m_JointName
 m_Joints
@@ -7876,6 +7871,7 @@ m_pGameUIFuncs->Start
 m_Phi
 m_pId
 m_pInfo
+m_pJointConstraintData
 m_pName
 m_pNetworkDataReferencedDescription
 m_pNetworkDataReferencedPtrPropDescription
@@ -7937,7 +7933,6 @@ m_tipParentBoneName
 m_toeBoneName
 MTreatUnknownEnumeratorsAsZero
 m_Type
-	mu9i
 m_uint
 m_uint64
 multiplayer_break
@@ -7988,11 +7983,12 @@ m_vSplayHingeAxis
 mvSylj
 m_vTintColor
 m_vTipOffset
+m_vTraceOffset
+m_vTraceScale
 m_vUpLS
 m_vUpVector
 m_worldGroupId
 m_wristBones
-	my9i
 "N(  
 #N)	}	
 N}[ .=
@@ -8441,7 +8437,6 @@ Not safe to 'new' this class due to alignment requirements
 not started
  (Not Visible)
 no_unique_dir
-Nov 26 2019
 No valid format conversion from '%s' to '%s'
   * (No VConComm)
 -novconsole
@@ -8710,7 +8705,6 @@ p6jf@
 p6jR@
 p7v	P7
 P7x"@
-	-p9i
 "pA3QuW
 package
 package $0;
@@ -9287,10 +9281,11 @@ PVS cluster %d
 pvs.cpp
 PVS origin %s
 py_generic_services
-	q59L
-	q99&
-	-q9i
+	Q{9)
+	Q<9Ao
+	Q;9Hs
 *Q@9j
+	Q<9&p
 Q(aNf(!
 qangle
 QAngle
@@ -9734,8 +9729,9 @@ Rhjh8(
 rhjh8h
 Rhk)8
 RHk)8
-RHkh8
+Rhkh8
 Rhkh8h
+Rhkh8H
 RHkh8h
 Rhk xV
 R*i(8h*@
@@ -9765,9 +9761,9 @@ RIO_WILL_RELAY
 Rjjh8hB
 rJMJJ
 RJ	* &v
-R?k78sO
+R?k78*S
+R?k)8
 R(k)8
-R?k)8zY
 R(kh8
 R(kh8h
 r_lpv_debug_lobe_count
@@ -9856,7 +9852,6 @@ RZqxeHq81
 %s/*.*
 %s+--
 +++ %s: 
-=	S&)
 %s: %0.3fMB
 %s%03i.dem
 %s%03i.log
@@ -9900,6 +9895,7 @@ sAmTb
 [%s] applying key '%s', has changed from '%s' to '%s'
 %s:  AsyncLoadSpawnGroup -- spawn group already loaded
 satisfied
+*.sav
 &Save
 Save button - saves all settings to file. 
 Save convars and config values
@@ -9922,7 +9918,6 @@ SAVE/%s.HL1
 SAVE/%s.hl2
 SAVE/%s.hl3
 Saves out the user config values.
-SAVE/%s.sav
 Save the ban list to banned_ip.cfg.
 saving %d samples to %s
 %s| Base Class%s: %d
@@ -10413,7 +10408,7 @@ SimpleEngineLoop
 simplified
 Simulated
 singleplayer
-Sin( %s )
+sin( %s )
 sint32
 sint64
 %s, int SubTabPosition
@@ -10464,6 +10459,7 @@ Sleeping
 "%s":%llu
 %s/loadaddress.txt
 %s:  LoadEntities
+SlopeTrace
 slot %d
 Slot%d
 slots
@@ -10663,7 +10659,7 @@ sprintf
 %s <protected>
 S)	@Q
 sqrtf
-Sqrt( %s )
+sqrt( %s )
 src_corner_height
 src_corner_width
 src/public/tier0/platform.h
@@ -10705,6 +10701,7 @@ ss_active
 ss_add
 ss_added
 SSAOTemp
+%s.sav
 %s_saves
 %s+-- Schema Class: %s
 %s/screenshot%04d.jpg
@@ -11252,6 +11249,7 @@ T#$@9D
 T#$@9D(
 T#,@9D0
 T#\@9D0
+	-t9i
 T*9	S
 T	/A)
 T	a@9
@@ -11841,9 +11839,10 @@ TYPE_UINT64
 Typing Enter in any text field applies changes.
 T"zrx
 \U%08x
-	u59+
 u64( %lld = 0x%llX )
 )U7O{
+	UA9i
+	ub9I
 %u CPU%s
 %u[%d]
 udp/ip   : %s:%i
@@ -12138,6 +12137,7 @@ utlstringtoken
 UVLX8888
 UVWQ8888
 u[|)x_})`
+	uY9i
 v8array
 v8callback
 v8object
@@ -12399,6 +12399,7 @@ VMatrix-world
 vmdlkeys0
 vmdlkeys1
 vmdlkeys2
+vmdlkeys3
 VMDLLIB001
 VMediaFoundation001
 vmem_dump
@@ -12566,6 +12567,7 @@ vr_companion_window_zoom
 -vrdemo
 vr_depth_resolve
 vr_depth_submit
+vr_disable_view_override
 VrDisplayLeftEye
 VrDisplayRightEye
 VrDisplayZoomedCompanionView
@@ -12579,8 +12581,6 @@ vr_ghost_correction_enable
 VrGhostingLeft
 VrGhostingRight
 vrgrp
-vr_hmd_backlight_brightness_force
-vr_hmd_backlight_brightness_set_to_inverse_tonemap_scale
 vRK9hV
 vr_msaa
 vr_msaa_submit
@@ -12683,7 +12683,6 @@ w6hZB9	2
 w6if@
 W6if@
 W6ijA9
-	-w9i
 waiting
 waiting for first spawn group
 waiting for IsServerRunning()
@@ -12824,6 +12823,9 @@ X80ijx
 @x_!8k
 @x_!8k@
 X8Qikx
+	!x9	
+	=x9i
+	-x9i
 @x_!9k
 xboxsystem.cpp
 XboxSystemInterface001
@@ -12858,7 +12860,7 @@ Y80ijx
 #Y80ijx
 Y8Qikx
 #Y8Qikx
-	}y9i
+	}Y9i
 @y?!9k
 y+	@9km
 Yaw; 
@@ -12868,7 +12870,7 @@ yaw_start
 @.yb4
 YB)5}@
 @.yB8
-	yB9i
+	yb9I
 Y@    block %d: crc = 0x%8x, combined CRC = 0x%8x, size = %d
 +%@yBy|
 @yc|	
@@ -12877,7 +12879,6 @@ y#	@=c
 yC	@}c
 @y+}E
 #@yh^
-#@yh*
 yh2@y
 %@y!ha
 yhBGy
@@ -12934,7 +12935,6 @@ you_hear_them
 Your current chat group is "%s"
 @yO	@y
 y(qSy
-	yu9i
 yuJ	9(a@
 @y	WDy
 Y`x($
@@ -12946,7 +12946,6 @@ y	,@y)
 .@y)Y@
 @y	y5x
 @y	y6x
-	yy9i
 _Z10DevWarningPKcz
 _Z11ConColorMsgRK5ColorPKcz
 _Z13V_SplitStringPKcS0_R10CUtlVectorIPc10CUtlMemoryIS2_iEE

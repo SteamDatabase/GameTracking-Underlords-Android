@@ -29,7 +29,6 @@
 19CSchemaRegistration
 1bQJ1~
 1DBlend
-2	!09B
 20CPostConnectCallback
 20CRefCountServiceBaseILb1E6CRefMTE
 20CResourceConstructor
@@ -56,11 +55,8 @@
 28ICodeResourceManifestManager
 29CRD_RegisterResourceDataUtils
 29IRD_RegisterResourceDataUtils
-2	!/9s
 2	h(8H
-2h">9
-2hR=9#
-2Hs,9
+2Hs.9
 30IAsyncResourceDataRequestOwner
 32CSchemaRegistration_resourcefile
 34CSchemaRegistration_resourcesystem
@@ -88,7 +84,7 @@
 6hb@9
 6hbp9
 6h"@y
-6Ysl9
+6Ysn9
 7hb@9h
 7hf@9
 7hf@9(
@@ -147,6 +143,7 @@ AE_VORTIGAUNT_ZAP_POWERUP
 AE_VORTIGAUNT_ZAP_SHOOT
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
+	AH9	
 AH*I}
 ai_model_info
 AIWalkable
@@ -202,9 +199,9 @@ Attempted to register duplicate manifest name %s!
 attenuation0
 attenuation1
 attenuation2
-	Au9	
 auto_unragdoll_duration
 Available resource leak tracking configuration aliases:
+	Ax9	
 *** Bad deletion request: Refcount for %s resource "%s" (%016llX) is greater than zero. (%d)!
 Bad header format (expected '<!--'
 Bad header format (expected ':'
@@ -636,6 +633,7 @@ IKRigSimple
 InfoForResourceTypeCAnimationGroup
 InfoForResourceTypeCAnimData
 InfoForResourceTypeCChoreoSceneFileData
+InfoForResourceTypeCDACGameDefsData
 InfoForResourceTypeCDotaItemDefinitionResource
 InfoForResourceTypeCDOTAPatchNotesList
 InfoForResourceTypeCEntityLump
@@ -690,11 +688,9 @@ IQuickTime001
 is_debris
 IsResourceManifestGroupKnown: Manifest group name is empty or null
 i"@yh
-J38`A
-J68SB
+J38$A
 j6@y_
-J78'A
-j88iU
+j88-U
 JEIJJ}
 JIIJJ}
 jj(8(
@@ -757,7 +753,6 @@ loop_break_on_flashlight
 loop_in_action
 looping
 LrwcE
-	!m9I
 - Manifest, %d operations: %s
 + Manifest, %d operations: %s
 - Manifest, operation: %lld)
@@ -882,6 +877,7 @@ min_angle
 m_Initializers
 Missing file '%s'
 )MJJ }
+m_JointConstraintData
 m_JointConstraintPairs
 m_JointName
 m_Joints
@@ -967,6 +963,7 @@ MODEL_PROCESSING_SERVICES_INTERFACE_001
 m_Operators
 m_pBody
 m_Phi
+m_pJointConstraintData
 m_pParent
 m_PreEmissionOperators
 m_pszSnapshotName
@@ -1034,6 +1031,7 @@ origin_max_delta
 origin_relative
 outerconeangle
 )P@9h
+	!p9I
 "pA3QuW
 PanoramaTextServices001
 PanoramaUIClient001
@@ -1114,7 +1112,6 @@ Qi"A)`
 Qi^*yi
 Quaternion
 QueuedLoaderVersion001
-	!r9	
 RadianEuler
 radius0
 radius1
@@ -1342,6 +1339,7 @@ Truncated data
 turn_rate
 Two Bone
 Two KV3 format GUIDs with the same human-friendly name ('%s')
+	!u9	
 	U@9)
 uint64
 Unable to determine buffer encoding.
@@ -1377,6 +1375,7 @@ VBAllocTracker001
 VBaseFileSystem011
 VBik001
 VConComm001
+vdacdefs
 VDebugService_001
 Vector2D
 Vector4D
@@ -1407,6 +1406,7 @@ VMatrix
 vmdlkeys0
 vmdlkeys1
 vmdlkeys2
+vmdlkeys3
 VMDLLIB001
 VMediaFoundation001
 vmesh
@@ -1522,7 +1522,6 @@ yi^jy)
 	$@yJ
 )YJJ)}
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
-Ys,9X^
 ^*ySi(
 @y	y3x-
 _Z14V_stristr_fastPKcS0_

@@ -37,7 +37,7 @@ public class applauncher extends Activity {
                 applauncher.this.onBootStrapFinished();
                 return;
             }
-            applauncher.this.m_timerHandler.postDelayed(this, 500);
+            applauncher.this.m_timerHandler.postDelayed(this, 30);
         }
     };
 
@@ -158,7 +158,7 @@ public class applauncher extends Activity {
     /* access modifiers changed from: protected */
     public void bootStrapIntoGame() {
         if (!this.m_bMadeAPIChoice && VERSION.SDK_INT >= 24) {
-            boolean[] GetBoolean = Resources.GetBoolean("VPC_PatchSystemEnabled");
+            boolean[] GetBoolean = Resources.GetBoolean("PatchSystemEnabled");
             boolean z = false;
             if (GetBoolean != null && GetBoolean[0]) {
                 z = true;

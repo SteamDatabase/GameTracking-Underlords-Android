@@ -302,10 +302,11 @@ A-'@A-
 A(aN!
 $	A)Ar
 AbsolutePoseControl
-	ac9	
+abs( %s )
 ACT_IDLE
 activator
 ACT_NEUTRAL_REF_POSE
+	ad9	
 Add an output
 Adding animation group resource in replace animations: %s
 AddOutput
@@ -790,7 +791,7 @@ C_OP_StopAfterCPDuration
 C_OP_TwistAroundAxis
 CopyAttrFrom
 COrientConstraint
-Cos( %s )
+cos( %s )
 Couldn't ReadTexturePixels when creating grass.
 CParentConstraint
 CParticleSystemDefinition
@@ -882,7 +883,6 @@ d6@yC
 	D@8!
 D@8)%
 	D@8)m
-	!d9	
 .data
 data error
 data_height = 
@@ -949,6 +949,7 @@ DynamicCubeMapTexture_FlipMipEncode.vtex
 dynamic_interaction
 .dynstr
 .dynsym
+	!e9	
 EconItemToolModel_001
 _edata
 EditorDynamicConfig
@@ -1066,6 +1067,7 @@ explosion_type
 explosive_damage
 explosive_radius
 EXPORTSYSTEM_INTERFACE_VERSION_001
+exp( %s )
 EXRHeader variable is not initialized.
 ExtraVertexStreamOverride_t
 eye_data
@@ -1352,6 +1354,7 @@ hf@9i
 (hide)
 Hitbox indexing is incorrect for set %s, hitbox %s. Hitboxes will not be setup properly.
 hj58Fx
+hj58k
 H#L9`3
 HMaterial
 HModel
@@ -1373,7 +1376,6 @@ h&@y)UG
 	*I}`
 	i48h6@
 *	i58
-	i88h
 i)8h~@
 _i(8j
 i*@9J
@@ -1613,6 +1615,7 @@ LightingBasis
 lightmap
 lightmapuv
 LightmapUV
+LightmapUVW
 Lightmap version number is out of date! Reverting to dynamic lighting
 Lik8m
 Linear
@@ -1705,7 +1708,7 @@ maxHullVertices
 MaxNetworkableEntities
 MaxNonNetworkableEntities
 maxSpringTension
-Max( %s, %s )
+max( %s, %s )
 maxVerticesPerHull
 )mB9_
 m_bApplyMinForce
@@ -1950,7 +1953,7 @@ m_inputLayoutFields
 m_inputList
 m_inputName
 m_inputValue
-Min( %s, %s )
+min( %s, %s )
 m_InstanceName
 m_int
 m_intAttributes
@@ -1960,6 +1963,7 @@ Missing cubemap precomputed handshake for world geometry.
 Missing file '%s'
 m_iszPrivateVScripts
 )MJJ }
+m_JointConstraintData
 m_JointConstraintPairs
 m_JointName
 m_Joints
@@ -2160,6 +2164,7 @@ m_pEntity
 m_PerVertexLightingDataPlainRGBM
 m_pId
 m_pInfo
+m_pJointConstraintData
 m_pMaterial
 m_pName
 m_pNetworkDataReferencedDescription
@@ -2258,6 +2263,8 @@ m_vOrigin
 m_vSplayHingeAxis
 m_vTintColor
 m_vTipOffset
+m_vTraceOffset
+m_vTraceScale
 m_vTransform
 m_vUpLS
 m_vUpVector
@@ -2401,7 +2408,6 @@ nX(aNB?
 nY nk)a
 !O1*a
 o1V?OS
-	!o9	
 )o))a
 OBJECT_TYPE_BLOCK_LIGHT
 OBJECT_TYPE_DECAL
@@ -2437,6 +2443,7 @@ Output unserialization of entities on map load. 0 - off, 1 - client/server, 2 - 
 overlay
 !OZW?O
 ($?)P
+	!p9	
 "pA3QuW
 PanoramaTextServices001
 PanoramaUIClient001
@@ -2794,10 +2801,11 @@ Show or hide the specified world layer
 SI-	*{
 Simulated
 singleplayer
-Sin( %s )
+sin( %s )
 %sI/O Connections:
 Sj)	3)
 SkeletonBoneBounds_t
+SlopeTrace
 :	S	M)
 %s (Material)
 %s_matgrp
@@ -2831,7 +2839,7 @@ Splitting huge triangles (%d verts,%d tris) -> (%d verts,%d tris), %d splits
 springConstant
 %s| Project: '%s' Binary: '%s'
 sqrtf
-Sqrt( %s )
+sqrt( %s )
 srgbgammatolinear
 "%s" = "%s"
 %s - %s
@@ -3114,6 +3122,7 @@ VMatrix-world
 vmdlkeys0
 vmdlkeys1
 vmdlkeys2
+vmdlkeys3
 VMDLLIB001
 VMediaFoundation001
 VNewAsyncFileSystem001

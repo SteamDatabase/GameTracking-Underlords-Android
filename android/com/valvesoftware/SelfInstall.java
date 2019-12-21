@@ -35,7 +35,7 @@ public class SelfInstall {
         /*
             android.app.Application r0 = com.valvesoftware.JNI_Environment.m_application
             android.content.Context r1 = r0.getApplicationContext()
-            java.lang.String r2 = "VPC_PatchSystemEnabled"
+            java.lang.String r2 = "PatchSystemEnabled"
             boolean[] r2 = com.valvesoftware.Resources.GetBoolean(r2)
             r3 = 1
             r4 = 0
@@ -257,8 +257,8 @@ public class SelfInstall {
     }
 
     private static boolean isAlreadyUnpacked(InputStream inputStream, String str) throws IOException {
-        String GetString = Resources.GetString("VPC_VersionCodeString");
-        if (GetString == null) {
+        String GetString = Resources.GetString("VersionCodeString");
+        if (GetString == null || GetString.length() == 0) {
             return testUnzip(inputStream, str);
         }
         boolean z = false;
@@ -285,8 +285,8 @@ public class SelfInstall {
 
     private static void writeVersionFile(String str) throws IOException {
         String str2 = "com.valvesoftware.SelfInstall";
-        String GetString = Resources.GetString("VPC_VersionCodeString");
-        if (GetString != null) {
+        String GetString = Resources.GetString("VersionCodeString");
+        if (!(GetString == null || GetString.length() == 0)) {
             String str3 = "nofile";
             try {
                 if (!new File(str).exists()) {
@@ -381,8 +381,8 @@ public class SelfInstall {
     private static File FindExpansionFile() {
         Application application = JNI_Environment.m_application;
         String packageName = application.getApplicationContext().getPackageName();
-        String GetString = Resources.GetString("VPC_VersionCodeString");
-        if (GetString == null) {
+        String GetString = Resources.GetString("VersionCodeString");
+        if (GetString == null || GetString.length() == 0) {
             GetString = "0000001";
         }
         String str = "com.valvesoftware.SelfInstall";
