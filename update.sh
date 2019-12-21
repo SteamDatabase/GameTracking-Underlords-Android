@@ -46,7 +46,7 @@ find android/res/ -type f -regextype egrep -iregex 'android/res/values.*\.xml' -
 
 # update game manifests
 
-grep VPC_ManifestPasswordString android/res/values/strings.xml | cut -d'>' -f2 | cut -d'<' -f1 > password.txt
+grep ManifestPasswordString android/res/values/strings.xml | cut -d'>' -f2 | cut -d'<' -f1 > password.txt
 PASSWORD="$(head -n 1 password.txt)"
 
 for PLATFORM in android ios; do
