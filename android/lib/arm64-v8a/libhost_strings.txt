@@ -245,6 +245,7 @@ $0 to $1,
 18IDACGameDefinition
 18IDebugDrawQueueMgr
 18IPredictionDiffMgr
+	1%9_A%9
 19CBoneConstraintBase
 19CDACNetBuffer_Debug
 19CGCMsgGetIPLocation
@@ -671,15 +672,14 @@ $0 to $1,
 2>.CWorkshop_SetItemPaymentRules_Request.WorkshopItemPaymentRule
 2GAME_PARTICLE_MANAGER_EVENT_UPDATE_ENTITY_POSITION
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
-2Hs89
 	2	i*
 2I.CWorkshop_PopulateItemDescriptions_Request.ItemDescriptionsLanguageBlock
 2+imx
 2j"@9)p
 2?"!k`
-2?k78lO
+2?k78LO
 2_k88
-2?k88kK
+2?k88KK
 2k_EGCMsgInitiateTradeResponse_VAC_Banned_Initiator
 2k_ItemPurgatoryResponse_Finalize_Failed_Incomplete
 2ninx
@@ -955,7 +955,6 @@ $0 to $1,
 57CMsgClientToGCGetGiftPermissionsResponse_FriendPermission
 58CMsgNotificationOfSuspiciousActivity_MultipleGameInstances
 58CWorkshop_GetItemDailyRevenue_Response_CountryDailyRevenue
-59_!59l
 59CMsgGCToGCGrantAccountRolledItems_Item_AdditionalAuditEntry
 59CProtoItemSocket_AssetModifier_DESERIALIZE_FROM_STRING_ONLY
 5h&C)
@@ -1041,8 +1040,8 @@ _6	H@
 6hBA9	Q
 6hBB9
 6hbB9	7
-6h~C9
-6h~C9	
+6hbC9
+6hbC9	
 6HC@9
 /6hf@
 (6hf@
@@ -1064,13 +1063,9 @@ _6hNB9	;
 /6hr@
 `6hR@
 ?6hR@
-6hrC9
-6hrC9	1
 ?6hV@
-6hvC9
 ?6hz@
 (6hZ@
-6hzC9
  6i.@
  6i*@
 _6i^@
@@ -1157,7 +1152,6 @@ _6v:@
 '6vj@
 6	x@9
 6x"@9
-6Ysx9
 72CWorkshop_PopulateItemDescriptions_Request_ItemDescriptionsLanguageBlock
  74	(74
 74	 74
@@ -1226,7 +1220,6 @@ _6v:@
 	(7W	07w
 7W	 7w
  7wB@
-	`7W	h7
  7x:@
 @7x"@
 @8)		
@@ -1318,7 +1311,6 @@ _8o%@8
 A-!(!
 a2@yh2@y
 +a@9?
-	a_9	
 a	@9?
 (A@9(
 		A9?
@@ -1539,7 +1531,6 @@ annotation
 Annotation
 announcements
 ", another member of oneof "
-	ao9	
 api_key
 appid
 app_id
@@ -1553,7 +1544,6 @@ APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 APPSYSTEM: In ReconnectGameInterface(), tried to use different connection modes!
  a protocol 
 A protocol message was rejected because it was too big (more than 
-	Aq9	
 archive
  args were given.  Full format string was: "
 armor
@@ -1655,6 +1645,7 @@ Base Spring;
 bB9hb
 BB9hB
 BB9hj:8
+bC9@}
 beams
 beautiful_corner
 " because it is missing required fields: 
@@ -1731,7 +1722,6 @@ bytes_read
 bytes_written
 .C))}
 C-2-@
-~C9@}
 (C@9h
 cA9s~
 cable
@@ -3534,6 +3524,7 @@ F_MORPH_SUPPORTED
 FontManager_001
 .foo = value".
 force
+force_big_healthbar
 force_full_send
 " for field "
 format
@@ -3967,7 +3958,6 @@ hypeBarColorStart
 hypeBarDarkColor
 hypeBarLightColor
 hypeCost
-hzC9	
 I)!|@
 *	i88
 i)8i&
@@ -4265,7 +4255,6 @@ j2?)?
 j48	C
 j48t^@
 j4xH;@
-j589M
 j58hf@9(
 J!@9#
 j@9ij
@@ -4309,12 +4298,12 @@ JYix*$
 	*jz-
 *k2@y
 ?k58D
-?k68@
+?k68 
 *?k78
 ?k78h
-k78o_
-?k78yk
-_k886l
+k78oc
+k78r\
+?k78Yg
 k(8vV@
 K	A9lC
 k_AddGem_Failed_FailedToAddGem
@@ -6171,10 +6160,11 @@ pure_damage_taken
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
 py_generic_services
+	Q59_a59l
+	!q9	
 QAngle
 	QB9i
 Qi"A)`
-	qj9I
 qJT-s
 quality
 quantity
@@ -6313,7 +6303,7 @@ right
 rights_flags
 Rigid; 
 rJMJJ
-R?k78C
+R?k78#
 Rmij8
 rnd_down
 rnd_up
@@ -7369,6 +7359,7 @@ x6hZ@
 X6i:@
 x6iz@
 x6`J@
+X77	`7w	h7
 	X7U	`7
 x7w"@
 x7wB@
@@ -7390,7 +7381,6 @@ yielding_jobs
 @y_!(k!
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 @y(Q*
-Ys89u
 Y`x($
 _Z13V_SplitStringPKcS0_R10CUtlVectorIPc10CUtlMemoryIS2_iEE
 _Z14V_stristr_fastPKcS0_
@@ -7400,7 +7390,6 @@ Z*=@8H
 z@9iz
 ZA9iZ
 ZB9hZ
-zC9 }
 _ZdaPv
 _ZdlPv
 z:K(None)
