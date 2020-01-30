@@ -677,9 +677,9 @@ $0 to $1,
 2+imx
 2j"@9)p
 2?"!k`
-2?k78LO
+2?k78
 2_k88
-2?k88KK
+2?k88
 2k_EGCMsgInitiateTradeResponse_VAC_Banned_Initiator
 2k_ItemPurgatoryResponse_Finalize_Failed_Incomplete
 2ninx
@@ -1040,8 +1040,6 @@ _6	H@
 6hBA9	Q
 6hBB9
 6hbB9	7
-6hbC9
-6hbC9	
 6HC@9
 /6hf@
 (6hf@
@@ -1645,7 +1643,6 @@ Base Spring;
 bB9hb
 BB9hB
 BB9hj:8
-bC9@}
 beams
 beautiful_corner
 " because it is missing required fields: 
@@ -2479,6 +2476,10 @@ CNETMsg_Tick
 	code_type
 collection_item_id
 collision_group
+COLLISION_MODE_INITIAL_TRACE_DOWN
+COLLISION_MODE_PER_FRAME_PLANESET
+COLLISION_MODE_PER_PARTICLE_TRACE
+COLLISION_MODE_USE_NEAREST_TRACE
 collision_prop
 color
 color1
@@ -2587,6 +2588,7 @@ C_OP_SetRandomControlPointPosition
 C_OP_SetSingleControlPointPosition
 C_OP_StopAfterCPDuration
 C_OP_TwistAroundAxis
+C_OP_WorldTraceConstraint
 COrientConstraint
 corporation_id
 cos( %s )
@@ -2786,6 +2788,7 @@ __cxa_pure_virtual
 cycle
 Cycle or diamond double-reference to '%s'
  D-	(@
+d6@yc
 DACAbilityID_t
 dac/dac_gamedefinitions.cpp
 dac/dac_gamemanager.cpp
@@ -3936,6 +3939,7 @@ highlander
 highlight_keywords
 highlight_type
 hintWords
+hj58~^
 	hold_time
 host_computationtime
 "host_computationtime_std_deviation
@@ -4255,6 +4259,7 @@ j2?)?
 j48	C
 j48t^@
 j4xH;@
+j58;F
 j58hf@9(
 J!@9#
 j@9ij
@@ -4298,12 +4303,11 @@ JYix*$
 	*jz-
 *k2@y
 ?k58D
-?k68 
-*?k78
+*?k78%f
 ?k78h
-k78oc
-k78r\
-?k78Yg
+k78o_
+k78\P
+k78WN
 k(8vV@
 K	A9lC
 k_AddGem_Failed_FailedToAddGem
@@ -5147,6 +5151,7 @@ m_ConeCutoff
 m_ConfigName
 m_Configs
 m_constraints
+m_Constraints
 m_ControlRigData
 m_cRenderColor
 m_CullDataIndex
@@ -5357,6 +5362,7 @@ m_nChoice
 m_nClientOutputFrames
 m_nClusterSizeMax
 m_nClusterSizeMin
+m_nCollisionMode
 m_nControlPoint
 m_nControlPointNumber
 m_nCount
@@ -5905,6 +5911,7 @@ output_items_criteria
 OutputLine
 output_type
 overlay
+override_item_slot
 owner_account_id
 owner_id
 owner_soid
@@ -6303,7 +6310,7 @@ right
 rights_flags
 Rigid; 
 rJMJJ
-R?k78#
+R?k78
 Rmij8
 rnd_down
 rnd_up
@@ -6640,6 +6647,7 @@ status_code
 status_effect_index
 status_label
 stat_value
+stealable
 SteamAudio001
 steamdatagram_login
 steamid
@@ -7223,6 +7231,7 @@ vpcf22
 vpcf23
 vpcf24
 vpcf25
+vpcf26
 vpcf3
 vpcf4
 vpcf5
@@ -7359,9 +7368,9 @@ x6hZ@
 X6i:@
 x6iz@
 x6`J@
-X77	`7w	h7
 	X7U	`7
 x7w"@
+	X7W	`7
 x7wB@
 XC-Y+9
 xf@)*
@@ -7382,6 +7391,7 @@ yielding_jobs
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 @y(Q*
 Y`x($
+y[(xS2
 _Z13V_SplitStringPKcS0_R10CUtlVectorIPc10CUtlMemoryIS2_iEE
 _Z14V_stristr_fastPKcS0_
 _Z17LoggingSystem_Logi17LoggingSeverity_tRK14LeafCodeInfo_tPKcz

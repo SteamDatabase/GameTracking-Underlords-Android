@@ -134,7 +134,7 @@ $@)  "
 (@@9tB
 'A)	}	
 A-!(!
-(a$9gj
+(a$9Oj
 A-'@A-
 AbsolutePoseControl
 abs( %s )
@@ -445,6 +445,10 @@ CModelConfigElement_UserPick
 CModelConfigList
 CMorphConstraint
 collision_group
+COLLISION_MODE_INITIAL_TRACE_DOWN
+COLLISION_MODE_PER_FRAME_PLANESET
+COLLISION_MODE_PER_PARTICLE_TRACE
+COLLISION_MODE_USE_NEAREST_TRACE
 collision_prop
 COLORCORRECTION_VERSION_1
 Combo(
@@ -501,6 +505,7 @@ C_OP_SetRandomControlPointPosition
 C_OP_SetSingleControlPointPosition
 C_OP_StopAfterCPDuration
 C_OP_TwistAroundAxis
+C_OP_WorldTraceConstraint
 CopyHDRBackBuffer
 CopyRefractTexture
 COrientConstraint
@@ -842,8 +847,7 @@ is_debris
 #It contains connectivity part %d with %d vertices
 @ @-J
 j2?)?
-J38a9
-J78(9
+J38I5
 J-cb@
 J-dj@
 JEIJJ}
@@ -862,7 +866,7 @@ K1B)M9C)
 K1@)C
 K1D)M9E)
 K1F)M9G)
-KAl9H
+KAl9h
 KeyValueCache001
 KeyValues Error: %s in file %s
 KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s
@@ -1053,6 +1057,7 @@ m_ConeCutoff
 m_ConfigName
 m_Configs
 m_constraints
+m_Constraints
 m_ControlRigData
 m_cRenderColor
 m_CullDataIndex
@@ -1203,6 +1208,7 @@ m_nBoneWeightCount
 m_nChoice
 m_nClusterSizeMax
 m_nClusterSizeMin
+m_nCollisionMode
 m_nControlPoint
 m_nControlPointNumber
 m_nCP
@@ -2018,6 +2024,7 @@ vpcf22
 vpcf23
 vpcf24
 vpcf25
+vpcf26
 vpcf3
 vpcf4
 vpcf5

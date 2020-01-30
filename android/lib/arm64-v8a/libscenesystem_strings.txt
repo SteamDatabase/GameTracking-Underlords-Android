@@ -271,8 +271,8 @@ $0 to $1,
 2ij(8\
 2j"@9)p
 2jjj8l
-2?k78-
-2?k88,}
+2?k78
+2?k88
 2_k88j
 2	q19s
 2Way_0( %s )
@@ -281,6 +281,7 @@ $0 to $1,
 2	y3x
 2	y4xaFAy
 2*y4xaJAy
+2:yk{
 2*y(x	
 2*Y(x
 2zz%9
@@ -362,6 +363,7 @@ $0 to $1,
 /6	,@
 '6`:@
 '6	(@
+@= 6:
 %6.2f %6.2f %6.2f %.3f %.3f %.3f
 6ConVar
 ?6`F@
@@ -416,7 +418,6 @@ _6inA9
 /6v"@
 '6vj@
 6x"@9
-@= 6Z
  74	(74
  75	(7
 75	 7
@@ -662,7 +663,6 @@ Ah1xhj+
 ai_model_info
 AIWalkable
 A[k+"
-	al9I
 		Aliases:
 Allocating new transform texture!
 allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
@@ -670,6 +670,7 @@ allow_alias
 allowstatic
 Allow time-sliced shadow buffer rendering when enabled via gameinfo.gi
 Already saw decimal point or exponent; can't have another one.
+	am9I
 *aN6*aN
 anchor_angles
 anchor_position
@@ -740,7 +741,7 @@ ApplyNewState %d at %f
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
  a protocol 
 A protocol message was rejected because it was too big (more than 
-	aq9	
+	ar9	
 archive
  args were given.  Full format string was: "
 ARk-#
@@ -1227,6 +1228,10 @@ CNETMsg_Tick
 COccluderSceneObjectDesc
 	CODE_SIZE
 collision_group
+COLLISION_MODE_INITIAL_TRACE_DOWN
+COLLISION_MODE_PER_FRAME_PLANESET
+COLLISION_MODE_PER_PARTICLE_TRACE
+COLLISION_MODE_USE_NEAREST_TRACE
 collision_prop
 color
 Color: %1.3f, %1.3f, %1.3f
@@ -1307,6 +1312,7 @@ C_OP_SetRandomControlPointPosition
 C_OP_SetSingleControlPointPosition
 C_OP_StopAfterCPDuration
 C_OP_TwistAroundAxis
+C_OP_WorldTraceConstraint
 CopyAttrFrom
 COrientConstraint
 cos( %s )
@@ -1776,6 +1782,7 @@ FeModel combiner: Too many ropes (%u) or links (%u): cannot fit sum in uint16
 %f %f %f %f
 fff>fff>fff>fff>
 fflush
+F-HUG
 field
   Field       : 
 Field "
@@ -2114,7 +2121,7 @@ hB@9t
 hbAy`V
 hbB9h
 hBB9h
-hbC9I
+hbC9)
 hC@9h
 HCTonemapManifest
 h~e9i
@@ -2137,10 +2144,10 @@ H*)	I*)
 HIGHDPI
 hi,xk
 H$@-J
-hj48I
+hj58>
+hj)8-}
 *hj)8h
 hj)8H
-hj)8P
 =hjA)_
 h%@)j-A)
 H'@)J/A)
@@ -2431,14 +2438,14 @@ IyixJylx+
 @ @-J
 @-J	,
 j2?)?
-J38M-
+J385-
 j48	C
 j48t^@
 j4xH;@
 j58hf@9(
 j)8	3
 j88a.l
-j88~O
+j88fO
 j(8hl
 j)8hZ@
 j(8jj)8
@@ -2504,8 +2511,8 @@ K1D)M9E)
 K1F)M9G)
 K1H)M9I)
 ?k58D
-k68FG
-*?k78
+k68FO
+*?k78{
 ?k78h
 k78o_
 k(8vV@
@@ -2877,6 +2884,7 @@ m_ConeCutoff
 m_ConfigName
 m_Configs
 m_constraints
+m_Constraints
 m_ControlRigData
 m_cRenderColor
 m_CullDataIndex
@@ -3082,6 +3090,7 @@ m_nBoundsType
 m_nChoice
 m_nClusterSizeMax
 m_nClusterSizeMin
+m_nCollisionMode
 m_nControlPoint
 m_nControlPointNumber
 m_nCP
@@ -3896,7 +3905,7 @@ R8G8B8A8_ETC2_EAC
 R8G8B8_ETC2
 *R)8yv
 R@9hR
-r	a,9_
+r	a-9_
 RA9iR
 RadianEuler
 radius0
@@ -4020,7 +4029,7 @@ RGBA32323232F
 RGBA8888_LINEAR
 RGBX555
 RGBX8888
-Rh"0y
+Rh"0yjL
 R	h(8	
 Rhf@9
 R	hh8
@@ -4029,7 +4038,7 @@ R	hi8
 R	hi8i
 Rhi)8u
 Rhj)8
-Rhj)8b
+Rhj)8B
 rhj)8H
 Rhjh8
 Rhjh8(
@@ -4099,7 +4108,7 @@ runspeed
 r@yi"@
 R@yi	
 r@yir@y
-R@yJ1L
+R@yJAN
 --- %s: 
 "%s" 
 "%s":
@@ -4571,7 +4580,6 @@ T	0@9I$
 T	4@y?!"kC
 T: %7.3f
 *T)8yv
-	!t9	
 T(@@9
 T)	@9
 T9{WF
@@ -4886,6 +4894,7 @@ U) (
 \U%08x
 U-0GR-2
 u64( %lld = 0x%llX )
+	!u9	
 )u@9i
 )UB9i
 )UB9I
@@ -5144,6 +5153,7 @@ vpcf22
 vpcf23
 vpcf24
 vpcf25
+vpcf26
 vpcf3
 vpcf4
 vpcf5

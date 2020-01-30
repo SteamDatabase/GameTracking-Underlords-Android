@@ -4,6 +4,7 @@
 >{}()':
  -> %
 -> $$ =
+-@),)
 ;()[]
 !^   
 !:@=!
@@ -674,6 +675,7 @@ _8ji)8
 @9+	@yHA
 @9+	@yHM
 9@z(~`
+&@)@A
 a2@yh2@y
 *,A)($@),4B)o
 A8kB@9l
@@ -683,6 +685,7 @@ A8kB@9l
 	a@9?
 	a@9	
 *A@9+
+	A`9*,
 A95)^
 A95+^
 A959Q
@@ -716,7 +719,6 @@ a@9+a
 A9iji8
 A9iji8(
 *a@9j
-	A`9j)
 	 A9J
 A9j.G
 	aA9)
@@ -1519,7 +1521,6 @@ C9(B07
 (c@9H
 (C@9h
 C9h 87
-C@9k%
 cable
 cacheData
 callable
@@ -1957,6 +1958,10 @@ code-sink
 Coherent
 coherent volatile 
 collision_group
+COLLISION_MODE_INITIAL_TRACE_DOWN
+COLLISION_MODE_PER_FRAME_PLANESET
+COLLISION_MODE_PER_PARTICLE_TRACE
+COLLISION_MODE_USE_NEAREST_TRACE
 collision_prop
 ColMajor
 color
@@ -2524,6 +2529,7 @@ C_OP_SetRandomControlPointPosition
 C_OP_SetSingleControlPointPosition
 C_OP_StopAfterCPDuration
 C_OP_TwistAroundAxis
+C_OP_WorldTraceConstraint
 CopyAttrFrom
 CopyGPUBufferHiddenStructureCount failed - invalid destination buffer.
 CopyGPUBufferHiddenStructureCount failed - invalid source buffer.
@@ -2709,7 +2715,7 @@ DCT scaled block size %dx%d not supported
 %d %d
 %d..%d
 DDDDUUUU
-DDDDUUUUDDDDUUUUh
+DDDDUUUUDDDDUUUU
 ddx_coarse
 ddx_fine
 ddy_coarse
@@ -5066,7 +5072,6 @@ Hash: %llu
 has storage class StorageBuffer.
 Having 
 H(Ay	M
-h&B)@
 !Hb8b
 hb8bF
 hb@9`
@@ -5076,6 +5081,7 @@ hB@9h
 hB@9i
 hB@9t
 hb@9w
+h&B)@A
 hBA9)
 hbA9h
 hBA9h
@@ -5131,8 +5137,8 @@ hexadecimal literal too long
 HEX_DIGIT
 HEXINTEGERLITERAL
 =hf@9
+hf@9!
 hf@9a*
-hf@9A
 hf@9h
 hf@9H
 hf@9i
@@ -5230,7 +5236,6 @@ I64VEC4
 i6xh&@
 i6@yh
 (i;8{
-i;8~0
 +i*8h
 ^i~8H
 i(8hilxi*
@@ -5371,6 +5376,7 @@ ignoring unrecognized register type
 ,ih8k
 ,ih8l
 )ihxAyi
+	ii8(&
 	ii8	
 ii8	a
 ii8Fhi8
@@ -5420,7 +5426,7 @@ i"@)j
 *ij(8
 ij8(	
 ij(8h
-<)ij8J&
+<)ij8j&
 -ij8J
 ij8kI
 )ijx?
@@ -6220,7 +6226,6 @@ IVEC3
 IVEC4
 	*iW@
 *'i$x
-	i,xh(
 *i,xi>@yj:
 *i.xi>@yj:
 i#xjj-
@@ -6239,10 +6244,10 @@ Iy*wB
 j1By_! k
 ',)j2G
 ',)j3@
-j48lI
-j58-9
+j48lE
+j58-=
 j58@c
-j58G7
+j58G;
 j58H%
 j58hf@9(
 j68HC@9h
@@ -6259,7 +6264,7 @@ j(8HU
 j`8!i 8
 j`8'k`8
 j-8nj)
-j(8r^
+j(8rn
  J9?@
 J9e:A
 J)@9j
@@ -6306,7 +6311,8 @@ Ju@y_
 j(x()
 j$xij.
 j(x	k(x)k(x
-j*xpU
+j*xmE
+j*xXE
 J%@y_
 Jy?! kC
 J!@y-!@ylyj
@@ -6381,6 +6387,7 @@ KMdEy
 KMeansQuantization
 Km@x+
 kn1V?OK
+(knNh
 KOio8
 KPip8
 KRir8\K
@@ -6751,8 +6758,8 @@ m_bNoAlpha
 m_bNoColor
 m_bOffsetExistingPos
 m_Bone
-MbP?(%
 m_bParticleFeathering
+MbP?x
 m_bRemapPullForceToLife
 m_bRunForParentApplyKillList
 m_bScaleCurrent
@@ -6774,6 +6781,7 @@ m_ChainData
 m_Children
 m_Color
 m_ColorScale
+m_Constraints
 m_ControlRigData
 MD5 match on %s, loading from vcs
 MD5 mismatch on %s, will load from vfx instead.
@@ -7023,6 +7031,7 @@ m_nBehaviorVersion
 m_nBiasType
 m_nClusterSizeMax
 m_nClusterSizeMin
+m_nCollisionMode
 m_nColorRendertargetFormat[ %d ] = %d
 m_nControlPoint
 m_nControlPointNumber
@@ -8118,7 +8127,6 @@ PushConstant OpVariable <id> '
 pushConstantRanges
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
-Pvfx_shader_file.cpp
 _!@q	
 Q0&	S
 Q1iq8Rir8`i`8
@@ -8538,7 +8546,7 @@ R	hi8
 rhj)8
 rhj)8@
 Rhj)8
-rhj)8kM
+rhj)8SA
 Rhj)8t
 rhjh8
 Rhjh8
@@ -8592,7 +8600,7 @@ rJik8J
 RJik8J
 Rjjhx
 rjjixk
-R?k88
+R?k88u
 RKik8
 RKikxk	
 rkjjxk
@@ -11148,6 +11156,7 @@ vfx_expression_parser.cpp(390): : Failed to create parser from "%s"
 Vfx file "%s" has both compute shader and other shaders. Compute shaders must be the only shader type in a vfx file.
 vfx_gl
 VFX_PROGRAM_MAX
+vfx_shader_file.cpp
 VFX value %s out of range %d-%d: %d
 VGAME
 V_GetErrno
@@ -11883,6 +11892,7 @@ vpcf22
 vpcf23
 vpcf24
 vpcf25
+vpcf26
 vpcf3
 vpcf4
 vpcf5
@@ -12326,7 +12336,6 @@ _{-x_{.xl
 _x!yh
 XYZ values out of representable range
 !@y	!
-"@y<"
 "@y*%
 )%@y?
 @y3yh
@@ -12443,7 +12452,6 @@ Y n)Y nJY nkY n
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 @yRhnxQ~
 @y)S<
-Ys.9N9
 y)U@y?
 @yUym
 	y)wB

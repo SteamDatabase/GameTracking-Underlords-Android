@@ -270,6 +270,7 @@ $@)#@@)
 320000
 32CModelConfigElement_SetBodygroup
 @333?
+333?(
 33CBaseIntrospectedToKV3TypeManager
 33CModelConfigElement_AttachedModel
 @33s?ff
@@ -333,7 +334,7 @@ $4(PushBack
 6hb@9
 6hB@9H
 6h~By
-6h#u9
+6h#v9
 6hzBy
 6I|@9i
 `6k*@
@@ -393,7 +394,6 @@ _8!(1
 \-9;(
 +!-	9 
 +	@9)
-	!~9	
 		@9*}
 9()@)
 93Q@-1	1
@@ -409,6 +409,7 @@ _8!(1
 9((B9
 9($B9
 @9c((
+"@9}-C
 9#	F-
 	@9GA@-Q	@
 (|@9h
@@ -462,7 +463,7 @@ A3Ay(
 A-4TV-8
 a@-6;:
 A-!8#
-	a}9	
+	a~9	
 	A@9	
 A9	0@
 )-A9i
@@ -475,6 +476,7 @@ AABB_t
 AABB_t RnHullRefl_t::m_Bounds
 "A)az
 !A-	)B-
+AB-6mB
 A-'@B-B
 abnap
 AbsolutePoseControl
@@ -708,6 +710,7 @@ BasePhysicsShape
 Base Spring; 
 BAy(C
 &B)bz
+$.b-C
 B-'@C-1HD-
 ;B-c87
 BC-B81
@@ -868,11 +871,13 @@ C)0(E)
 C-1*4
 C)1,E)
 C-2-@
+c	2c|"
 C-!8"
 C--8E-"
 C-8gD-
 C9 8 
 "C9hB
+C@9 qB
 C-A	!
 cable
 CAimConstraint
@@ -998,6 +1003,7 @@ CFootTrajectories
 CFootTrajectory
 CFrustum
 CFrustum RnWorldRefl_t::m_DebugCamera
+CH-1qB
 ChangeCallbackOnChange
 ChangeCallbackOnChangeOrCreate
 Change global friction factor
@@ -1147,6 +1153,10 @@ collisionGroup
 collision_group_override
 Collision group pair flags=0. Do not collide.
 CollisionGroup(uint8)
+COLLISION_MODE_INITIAL_TRACE_DOWN
+COLLISION_MODE_PER_FRAME_PLANESET
+COLLISION_MODE_PER_PARTICLE_TRACE
+COLLISION_MODE_USE_NEAREST_TRACE
 collision_prop
 CollXformBase
 color
@@ -1230,6 +1240,7 @@ C_OP_SetRandomControlPointPosition
 C_OP_SetSingleControlPointPosition
 C_OP_StopAfterCPDuration
 C_OP_TwistAroundAxis
+C_OP_WorldTraceConstraint
 COrientConstraint
 cos( %s )
 Could not create phys debug IB for %d elements
@@ -1699,8 +1710,8 @@ e]-B81
 *eB9_	
 E-b9"
 E-B9"
-eB9!4
 *eB9i
+.eBh"
 eB\-r
 	eByh
 E-c(&
@@ -2281,6 +2292,7 @@ h%@)j	@
 H-@)J	@
 H%@-J	@
 H%@)J	@
+hj48<+
 H$@)J,B)M$@
 H-k	9
 HMDAvatar
@@ -2325,10 +2337,8 @@ h&X)`	(
 =h~@y
 (h@y 
 h&@y)
-h&@yi
-hz5x9-
-hz5xh)
-hz5xm,
+h&@yI
+hz5xh(
 <	)@)i*
 *-@i)	
 	)@)i
@@ -2558,10 +2568,11 @@ J-{+?
 j1@)k	@
 )j2])
 j2?)?
+J38E~
 j58hf@9(
-j88"j
-j(8GO
+j(8GS
 j)8hJ@
+j)8hW
 j)8	U
 j)8	Y
 JAAHJ
@@ -2946,6 +2957,7 @@ m_ConeCutoff
 m_ConfigName
 m_Configs
 m_constraints
+m_Constraints
 m_constraints2
 m_ControlRigData
 m_controls
@@ -3300,6 +3312,7 @@ m_nClusterSizeMin
 m_nCollisionAttribute
 m_nCollisionAttributeIndex
 m_nCollisionMask
+m_nCollisionMode
 m_nCollisionPlaneIndex
 m_nCollisionSphereInclusiveCount
 m_nCollisionSphereIndex
@@ -4297,7 +4310,7 @@ q]-B(2
 Q-C	:
 q%d.%d
 Qd@-Z;;
-)qE9)
+)qF9)
 @-QH@-"
 QHC-@
 QHZ-TT[-}
@@ -5588,6 +5601,7 @@ vpcf22
 vpcf23
 vpcf24
 vpcf25
+vpcf26
 vpcf3
 vpcf4
 vpcf5
@@ -5852,7 +5866,6 @@ Y@-3SE-C
 	y4xl
 @y69@yr
 @y8	@y
-@y	%A
 Yaw; 
 yaw_end
 yaw_start
@@ -5861,6 +5874,7 @@ yaw_start
 Y-c('
 @yd!@ye%@yf)@yg-@ys1@yt5@yu9@yv=@y
 @y+}E
+@y	eA
 >@yEf
 "@yez
 .@yfz

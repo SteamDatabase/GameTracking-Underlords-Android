@@ -576,6 +576,10 @@ CMaterialUtils_001
 CMatSystemTexture::SetMaterial
 CMemAllocSystemInitialize
 collision_group
+COLLISION_MODE_INITIAL_TRACE_DOWN
+COLLISION_MODE_PER_FRAME_PLANESET
+COLLISION_MODE_PER_PARTICLE_TRACE
+COLLISION_MODE_USE_NEAREST_TRACE
 collision_prop
 color
 ?colorcorrection_%p.vtex
@@ -651,6 +655,7 @@ C_OP_SetRandomControlPointPosition
 C_OP_SetSingleControlPointPosition
 C_OP_StopAfterCPDuration
 C_OP_TwistAroundAxis
+C_OP_WorldTraceConstraint
 _copy%u
                      Cost
 Courier
@@ -1109,7 +1114,6 @@ i6@yh
 ?i(8	
 (i:8h
 *i(8i
-i;8Sp
 *i989
 i.@9h
 i~@9k
@@ -1225,10 +1229,10 @@ i_@xk
 i>@yh
 I$@yi
 j~	)`
-J38@0
+J38($
 j58hf@9(
-J68g1
 j68hb@9h
+J68O%
 J8@-I0B-O4D-K
 J!@9_
 JaN9j
@@ -1279,6 +1283,7 @@ K1H)M9I)
 )k(8h
 k;8h"A
 kaDyk
+	KB,3
 _"!kc
 ?!.kc
 ?!*kc
@@ -1563,6 +1568,7 @@ MClassHasCustomAlignedNewDelete
 m_Color
 m_colorCorrectionVolumeData
 m_ColorScale
+m_Constraints
 m_ControlRigData
 MD5 match on %s, loading from vcs
 MD5 mismatch on %s, will load from vfx instead.
@@ -1676,6 +1682,7 @@ m_nBehaviorVersion
 m_nBiasType
 m_nClusterSizeMax
 m_nClusterSizeMin
+m_nCollisionMode
 m_nColorCorrectionVolumeDim
 m_nControlPoint
 m_nControlPointNumber
@@ -2143,7 +2150,7 @@ R*Y(x,Y+x
 %s --------------------------------
 %s+--
 		%.*s
-_#<)S:
+_#<)S>
    %s 0..0
 %s|  % 2d: [% 3d] %-12s %s
 %s|  % 2d: %s [Offset: %d]
@@ -2622,6 +2629,7 @@ vpcf22
 vpcf23
 vpcf24
 vpcf25
+vpcf26
 vpcf3
 vpcf4
 vpcf5

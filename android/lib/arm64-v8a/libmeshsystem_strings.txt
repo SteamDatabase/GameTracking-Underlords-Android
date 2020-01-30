@@ -326,8 +326,8 @@ a	O-c
 A	O-C
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 AqqInv
-	ar9	
 archive
+	as9	
 Assertion Failed in function %s():
 AssertMsg_ConditionFailed
 AssetBrowserSystem_001
@@ -592,6 +592,10 @@ CMorphSetData
 C-o&@
 collision_group
 collision_group_override
+COLLISION_MODE_INITIAL_TRACE_DOWN
+COLLISION_MODE_PER_FRAME_PLANESET
+COLLISION_MODE_PER_PARTICLE_TRACE
+COLLISION_MODE_USE_NEAREST_TRACE
 collision_prop
 color
 COLORCORRECTION_VERSION_1
@@ -651,6 +655,7 @@ C_OP_SetRandomControlPointPosition
 C_OP_SetSingleControlPointPosition
 C_OP_StopAfterCPDuration
 C_OP_TwistAroundAxis
+C_OP_WorldTraceConstraint
 COrientConstraint
 cos( %s )
 CovMatrix3
@@ -1066,7 +1071,6 @@ hf@9i
 hidden
 Hitbox indexing is incorrect for set %s, hitbox %s. Hitboxes will not be setup properly.
 H-@)J	@
-hj58Y
 HostStateMgr001
 h&Q)d
 hR@y`
@@ -1421,6 +1425,7 @@ m_ConeCutoff
 m_ConfigName
 m_Configs
 m_constraints
+m_Constraints
 m_constraints2
 m_ControlRigData
 m_controls
@@ -1792,6 +1797,7 @@ m_nClusterSizeMin
 m_nCollisionAttribute
 m_nCollisionAttributeIndex
 m_nCollisionMask
+m_nCollisionMode
 m_nCollisionPlaneIndex
 m_nCollisionSphereInclusiveCount
 m_nCollisionSphereIndex
@@ -2461,7 +2467,7 @@ qAdjust
 QAngle
 Qi"A)`
 qJT-s
-	qm9I
+	qn9I
 Quaternion
 QueuedLoaderVersion001
 Quintic
@@ -2708,7 +2714,6 @@ turn_rate
 Two Bone
 Two KV3 format GUIDs with the same human-friendly name ('%s')
 TypeManager
-	!u9	
 Unable to determine buffer encoding.
 unable to load mesh "%s"
 Unable to read resource file %s!
@@ -2736,6 +2741,7 @@ Using 10-bit blend indices: are you sure they are supproted on the target hardwa
 Using 16-bit blend indices
 utlbuffer.cpp
 utlstring.cpp
+	!v9	
 V_acosf
 vanmgrph
 VApplication001
@@ -2828,6 +2834,7 @@ vpcf22
 vpcf23
 vpcf24
 vpcf25
+vpcf26
 vpcf3
 vpcf4
 vpcf5

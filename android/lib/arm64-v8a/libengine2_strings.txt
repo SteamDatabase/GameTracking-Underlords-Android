@@ -250,7 +250,6 @@ $0 to $1,
 13IPrerequisite
 13ISoundService
 13IStatsService
-	149L
 14CAimConstraint
 14CAppSystemDict
 14CBaseAppSystemI10IAppSystemE
@@ -338,6 +337,7 @@ $0 to $1,
 14ISource2Engine
 1.5.13
 1.5.2
+	159L
 15CBaseConstraint
 15CBaseSpawnGroup
 15CDemoConsoleCmd
@@ -612,7 +612,6 @@ $0 to $1,
 17IEngineServiceMgr
 17IGameEventWatcher
 180.0
-	189&
 18CBaseEngineServiceI12IToolServiceE
 18CBaseEngineServiceI13IInputServiceE
 18CBaseEngineServiceI13ISoundServiceE
@@ -659,6 +658,7 @@ $0 to $1,
 18MenuItemCheckImage
 18ToolTraceRayResult
 -1@9_
+	199&
 !)19BJRZcks{
 19C2S_CONNECT_Message
 19CBidirMsg_RelayInfo
@@ -690,6 +690,7 @@ $0 to $1,
 19INetworkStringTable
 19IScreenshotCallback
 19ISplitScreenService
+	1=9m]
 1@9M5
 19NetMessagePacketEnd
 19RestartMapToolEvent
@@ -928,7 +929,7 @@ $0 to $1,
 28INetworkStringTableContainer
 2_!8k
 2@9()
-2	}"9
+2	}#9
 2		 9
 29CBidirMsg_RebroadcastSource_t
 29CBoneConstraintPoseSpaceMorph
@@ -941,16 +942,16 @@ $0 to $1,
 29CSimpleWindowsLoggingListener
 29CSVCMsg_FlattenedSerializer_t
 29CToolGameSimulationDispatcher
-2	}"9EX
+2	}#9EX
 29ILoopModePrerequisiteRegistry
 29IToolGameSimulationDispatcher
 2,	@9L
 2	9l6	9pR
-2	}"9;M
-2	}"9O_
+2	}#9;M
+2	}#9O_
 29ToolEvent_GetEntityInfoResult
-2	a"9
-2	a"9	`
+2	a#9
+2	a#9	`
 2	a@9Ia
 2	AA9
 2Ay)	
@@ -969,8 +970,8 @@ $0 to $1,
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
 2Gio8
 2	h(8
-2h"	9
-2h"	9E7
+2h"	9-/
+2h"	9h&
 2hb@9H
 2hBK9H
 2hj)8
@@ -980,13 +981,14 @@ $0 to $1,
 %2i/%2i on map %s
 2*i(8h*@
 2	i+8h
-2	i"9
-2	i"98`
-2	i"9$N
-2	i"9.Y
+2	i#9
+2	i#98`
+2	i#9$N
+2	i#9.Y
 2Ii(8h
 2ii*x
 2ij(8
+2ij(8h 
 2ij(x
 2-ik8k
 2+imx
@@ -994,29 +996,28 @@ $0 to $1,
 2j"	9I
 2j"@9)p
 2?".k
-2?k782+
-2?k881'
-2_k88B
+2?k78
+2?k88
+2_k88@u
 2kii8l}C
 2Kkj8k
 2L%@x+
-2	m"9
-2	m"9ZS
+2	m#9
+2	m#9ZS
 2 .ProtoFlattenedSerializerField_t"!
-2	q"9
-2	q"96S
+2	q#9
+2	q#96S
 2 - resize down
-	2!t!
-2	u"9
+2	u#9
 2	u	9
 2Way_0( %s )
 2Way_1( %s )
 2x"@9
 2@y	!
-2	y"9
-2	y"9iX
-2	y"9_M
-2	y"9s_
+2	y#9
+2	y#9iX
+2	y#9_M
+2	y#9s_
 30000
 30CBidirMsg_RebroadcastGameEvent
 30CConnectGameClientPrerequisite
@@ -1111,10 +1112,7 @@ $0 to $1,
 49CNetworkClientSpawnGroup_LoadSaveGamePrerequisite
 49CNetworkServerSpawnGroup_LoadEntitiesPrerequisite
 49CNetworkServerSpawnGroup_LoadSaveGamePrerequisite
-	-49q
 &4@9R
-4Ayk&
-4AyK&
 4CLog
 4CPVS
 4Csv_voiceenable
@@ -1174,10 +1172,10 @@ $4DTdt
 53CNetworkServerSpawnGroup_AllocateEntitiesPrerequisite
 53CNetworkServerSpawnGroup_LoadSaveGamePrerequisiteBase
 53CNetworkServerSpawnGroup_WaitForAssetLoadPrerequisite
-	549+
 54CNetworkClientSpawnGroup_LoadPreviousLevelPrerequisite
 54CNetworkServerSpawnGroup_LoadPreviousLevelPrerequisite
 54q`	
+	559+
 55CNetworkClientSpawnGroup_AllocateSpawnGroupPrerequisite
 &'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz
 58jv@
@@ -1188,6 +1186,7 @@ $4DTdt
 59CNetworkServerSpawnGroup_WaitForOwnerSpawnGroupPrerequisite
 *5@9J
 5@9J9
+	-59q
 	5Ay*
 5CVEfx
 % 5d: % 5d
@@ -1220,11 +1219,10 @@ $4DTdt
 60CNetworkClientSpawnGroup_WaitForManualCompletionPrerequisite
 %6.2f %6.2f %6.2f %.3f %.3f %.3f
 64-bit
+(!69f
  6`"A
 (6`&A
 6Ay+}E
-6Ayk&
-6Ayy&
 `6`BD
 6ConVar
 _6	D@
@@ -1404,10 +1402,6 @@ _6inA9
 87`f@
 :,@8[,@8
 %8.8s: %-5d entries, '%s', ...
-	=89]
-	!89~
-	)891
-	-89K
 %8@9R
 8b  16-May-2010
 8CFmtStrNILi1024ELb0EE
@@ -1431,8 +1425,8 @@ _8"h 8
 )8hv@
 *8hv@
 (8HXhx
+@8i/@8
 @8i/@8J
-@8i/@8X
 @8+ih8
 @8,ij8_}
 @8*ij8
@@ -1476,6 +1470,7 @@ _8y,@8
 )=@9)}
 )!@9)
 )	@9*
+@@9	"
 @9)!@
 @9)&@
 @9*&@
@@ -1499,7 +1494,7 @@ $@9	(
 @9;7@9<
 9.@8 
 @9*-@8K
- 9?	 9$
+ 9?	 9
 (`@9	`@9
 )9@9)}
 @9-+@9.
@@ -1509,6 +1504,8 @@ $@9	(
 @9+/@9,
 @9+	@9
 @9+	@9)
+	=99]
+	!99~
 	9@9)
 9,	@9)
 9*	@9)
@@ -1516,6 +1513,7 @@ $@9	(
 9+	@9
 @9/'@90
 . @9/$@90(@918@9.}
+	)991
 9	!@9i
 9	%@9i
  @9	$@9J
@@ -1523,11 +1521,12 @@ $@9	(
 9@9j9
  @9	$@9JmF
 @9+	@9K
-	)&99T
+	-99K
+	)'99L
 @9a2@
-	9A9i
 @9-b@
 @9*b@
+	9B9i
 @9)+C
 @9	}C
 	9C%A
@@ -1587,6 +1586,7 @@ $@9	(
 9hZB9
 ) @9i
 @9i&@
+ @9I$
 @9I	@
 "@9i"@9
  9I	 9
@@ -1636,6 +1636,7 @@ $@9	(
 9kj(8|
 9Kkj8k
 9Kkj8k}
+	!'9$L
 *	9l.	9
 @9L	@9l
 @9L=@9M
@@ -1664,18 +1665,17 @@ $@9	(
 @9R1@9D
 9	S)M*
 @9T|@
-	!&9$T
-	9t9i
 @9T)@9K
 (@@9tB
 @9U|@
-	!,9v
+	9u9i
+	!-9v
 @9V%@9W
 @9-{vx
 @9){vxl
 /9W?O
 /9W?OZ
-	9x9i
+	9y9i
 @9+	@yHA
 @9+	@yHM
 9y*xi
@@ -1685,7 +1685,6 @@ $@9	(
 A-!(!
 A)`~@
 a2@yh2@y
-	A89\z
 a8#%D
 _A8qh
 +a@9?
@@ -1694,6 +1693,7 @@ _A8qh
 		A9	
 	A@9)
 	A@9)	
+	A99\v
 a@9+a
 a@9	a
 A9)]G
@@ -1703,8 +1703,6 @@ A9)]G
 ^A9i^
 "A9i"
 *	A9i
-	=A9i
-	]A9i
 	A@9i
 A9i>@
 	A@9I
@@ -1717,18 +1715,19 @@ A9|J@
 +	A9K
 A9Kik
 +	A9lC
-	A;9Ot
+(A%9}m
+	A<9Op
 ?A9tJ@
-	A<9zp
+	A=9zl
 A-'@A-
 AA9(	
 AA9(	@
-	AA9i
 A(aN!
 $	A)Ar
 a^  b
-	aB9j1
-	aB9J1
+	aB9*2
+	AB9i
+	aB9J2
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 aBI9J
@@ -2022,7 +2021,6 @@ AsyncBeginRenderingViews
 async_serialize
 async_track_all
 asyncwrite
-	At9i
 \ at end of pattern
 ATI1N
 ATI2N
@@ -2052,6 +2050,7 @@ _attr_
 attrib
 Attribute counts between meshes is inconsistent
 Attribute "%s" was defined more than once.
+	Au9i
 audible_mask
 audio
 AudioLanguage
@@ -2090,7 +2089,7 @@ avg_packets_out
 AVI recording failed! Missing expected pixels!
 avisound 
 /AV?O!
-	aw9	
+	ax9	
 A{"xB
 Ax_! k
 A@yi*@
@@ -2103,10 +2102,12 @@ B-!(#
 B-1HD-
 *-B),5C)_
 B@9	A
+B	9D#
 ^B9h^
 b@9hb
 b"@9i
-	}b9I
+	=B9i
+	]B9i
 b@9ib
 bA9hb
 BA9hB
@@ -2458,6 +2459,7 @@ C-!8"
 C9an@
 C9fj@
  c@9!g@9"
+	}c9I
 cA9s~
 cable
 cache/DownloadCache.db
@@ -3407,6 +3409,10 @@ codes %d
 	CODE_SIZE
 Collect CPU usage stats
 collision_group
+COLLISION_MODE_INITIAL_TRACE_DOWN
+COLLISION_MODE_PER_FRAME_PLANESET
+COLLISION_MODE_PER_PARTICLE_TRACE
+COLLISION_MODE_USE_NEAREST_TRACE
 collision_prop
 color2
 color_array
@@ -3603,6 +3609,7 @@ C_OP_SetRandomControlPointPosition
 C_OP_SetSingleControlPointPosition
 C_OP_StopAfterCPDuration
 C_OP_TwistAroundAxis
+C_OP_WorldTraceConstraint
 C&opy
 CopyAttrFrom
 CopyExistingEntity: invalid recv table for ent %d.
@@ -3897,7 +3904,8 @@ D24X8_SHADOW
 d2@yI
 d3@yI
 *-D),5E)_
-d6@yC
+d6@y#
+d6@yc
 	D@8!
 D@8)%
 	D@8)m
@@ -4277,12 +4285,12 @@ dynamic_interaction
 .dynsym
 -@))-E
 E-!("
-	e"94
+	e#94
 	!e9i
-	e!9J
-	EA9i
+	e"9J
  *Each frame will render %d times*
-	eb9)
+	EB9i
+	ec9)
 echoln
 Echo log information to the console.
 Echo text to console.
@@ -4702,6 +4710,7 @@ extreme cHRM chunk cannot be converted to tristimulus values
 F-!($
 F-%:%
 *-F),5G)_
+F	9<#
 	!f9i
 fA9hf
 FA9hF
@@ -5546,6 +5555,7 @@ h)8Ay)
 @H`8b
 h"@9(
 h"@9)
+h"@9)$
 h"@9	
 `H9)}
 ?h98a
@@ -5558,6 +5568,8 @@ h*\9h
 h.@9H
 	!h9i
 h"@9i
+h"@9i$
+h"@9I
 h:	9i>	9
 -H@9m
 H9)yx
@@ -5594,15 +5606,14 @@ hBB9(
 hbB9h
 hBD9iz@
 hBD9t
-hBF9	
 *hbGy		
 hbGy`
 hbGyi
-hbGyI
 hBH9H
 *hBK9
-hBk9	0
+hBk9)2
 hBK9H
+hBk9I2
 =hb@y
 hB.y(5
 *hB.yK
@@ -5668,7 +5679,7 @@ High Poly Draw Calls
 high_value
 Hit rate
 Hits/m
-hj58AV
+hj48vJ
 hj|8H
 hj)8H'@
 hj8li*8J
@@ -5753,7 +5764,6 @@ HParticleSystemDefinition
 HPostProcessing
 HRenderTexture
 hrEy)
-hrEy	!
 hrEyi
 hrEyu
 )hrG9
@@ -5782,6 +5792,7 @@ hvUyh
 h*@y_
 h*@y	
 h&@y)
+h&@yI
 hzEyH
 hzEyi
 hzEyirB
@@ -5798,9 +5809,9 @@ i6@yh
 i78w"B
 i7xh6@
 _i(8+
+?i(8~
 	*	i8
 	I*8)
-	I89qz
 i)8a^A
 *i(8B
 ?i(8h
@@ -5820,10 +5831,11 @@ i(8m&W
 ?i(8v
 i*8?y*xJ
 *i"@9
-	i'9*
+	i(9*
+	I99qv
 I9`BA
 "I9)!D
-	I;9dt
+	I<9dp
 	!i9i
 )I@9I
 i"@9J
@@ -6453,7 +6465,6 @@ i)xhzA
 *i.xi
 *i,xi>@yj:
 *i.xi>@yj:
-iy8^p
 i>@yh
 Iyix8}
 IyixJylx+
@@ -6462,35 +6473,30 @@ j.])
 @ @-J
 j2?)?
 j2	)k
-j38dR
-j48#|
+j38bF
 j48	C
-j48h 
 j48t^@
 j4xH;@
-j58h#
 j58hf@9(
 j58"l
-j68("
-j68(#
-j68H"
+j58Z#
 j68u"@
-j68X 
+j68X&
 j7Ayh3Ay)	
-j88E(
+j(8H(
 j)8hjj
 j(8(Z@
  J9?@
 $J9!|
 J!@9_
 J!@9#
+j98z!
 J9afA
  J9F|
 	!j9i
 j	@9I
 J!@9jB
 J9tB	
-	*JA*
 ja8B(
 J]A9_
 jA9hj
@@ -6574,6 +6580,7 @@ jpeg_quality
  jpeg_quality nnn = sets jpeq quality to nnn (range 1 to 100), default %d
 jpeg_screenshot
  jpg/jpeg = outputs .jpg files
+	*JQ%
 J	@Q*
 jr82"
 jr822
@@ -6614,21 +6621,23 @@ K1@yk
 *k2@y
 ?k58D
 K5@yk
-?k68hx
-?k78`(
+?k68fl
+?k78^
 *?k78
-k78_;
+k78(#
+k78E/
 ?k78h
+k78H&
 ?k)8(
-k:8<#
 _k88?
 ?k88_
+?k88H&
 ?k88w
-	k(8d
-k(8H)
+?k88x$
 k(8vV@
 K!@9+!
 K	@9)
+_k98(!
 _k98x
 K9@yk
 K	A9lC
@@ -6901,6 +6910,7 @@ LayoutFileChanged
 lb@9l
 LC_ALL
 L=cl_clock_correction
+LCQ9j
 %ld%c
 leading_comments
 leading_detached_comments
@@ -7146,10 +7156,10 @@ LrwcE
 lseek
 %ls [wstring, len = %d]
 [L:%u:%u]
-	M<9bo
-	M<9Gp
+	M=9bk
+	M=9Gl
 m%@9i)
-	M;9is
+	M<9io
 m	A9j"
 m_aAngOffset
 Machine
@@ -7312,7 +7322,6 @@ max_spawngroup_creationsequence
 maxSpringTension
 max( %s, %s )
 maxVerticesPerHull
-	mb9I
 m_bApplyMinForce
 m_bAutoHideButtons
 m_bbox
@@ -7380,6 +7389,7 @@ m_bUseShadowFastPath
 m_bUsesIndexedBakedLighting
 m_bVisible
 +MBxK
+	mc9I
 m_ChainData
 m_Children
 m_Choices
@@ -7391,11 +7401,11 @@ m_ConeCutoff
 m_ConfigName
 m_Configs
 m_constraints
+m_Constraints
 m_ControlRigData
 m_cRenderColor
 m_CScriptComponent
 m_CullDataIndex
-	MD9i
 m_DefaultSolverSettings
 MDefaultString
 m_DefaultTargetSettings
@@ -7404,6 +7414,7 @@ m_drawCalls
 m_drawCullData
 m_dynamicParams
 m_dynamicTextureParams
+	ME9i
 media/l4d2_background%02d.bik
 m_eHand
 m_ElementName
@@ -7583,10 +7594,10 @@ m_flValue
 m_flWeight
 m_ForceGenerators
 m_FullSendTables
-	mG9i
 m_Gradient
 m_GroupName
 *mGxJ
+	mH9i
 m_hActivator
 m_hBuffer
 m_hCaller
@@ -7692,6 +7703,7 @@ m_nChoice
 m_nClientOutputFrames
 m_nClusterSizeMax
 m_nClusterSizeMin
+m_nCollisionMode
 m_nControlPoint
 m_nControlPointNumber
 m_nCount
@@ -9281,11 +9293,11 @@ PVS cluster %d
 pvs.cpp
 PVS origin %s
 py_generic_services
-	Q{9)
-	Q<9Ao
-	Q;9Hs
+	Q|9)
+	Q=9Ak
+	Q<9Ho
 *Q@9j
-	Q<9&p
+	Q=9&l
 Q(aNf(!
 qangle
 QAngle
@@ -9761,9 +9773,9 @@ RIO_WILL_RELAY
 Rjjh8hB
 rJMJJ
 RJ	* &v
-R?k78*S
-R?k)8
+R?k78(G
 R(k)8
+R?k)8#L
 R(kh8
 R(kh8h
 r_lpv_debug_lobe_count
@@ -11249,7 +11261,6 @@ T#$@9D
 T#$@9D(
 T#,@9D0
 T#\@9D0
-	-t9i
 T*9	S
 T	/A)
 T	a@9
@@ -11841,8 +11852,9 @@ T"zrx
 \U%08x
 u64( %lld = 0x%llX )
 )U7O{
-	UA9i
-	ub9I
+	-u9i
+	UB9i
+	uc9I
 %u CPU%s
 %u[%d]
 udp/ip   : %s:%i
@@ -12137,7 +12149,7 @@ utlstringtoken
 UVLX8888
 UVWQ8888
 u[|)x_})`
-	uY9i
+	uZ9i
 v8array
 v8callback
 v8object
@@ -12514,6 +12526,7 @@ vpcf22
 vpcf23
 vpcf24
 vpcf25
+vpcf26
 vpcf3
 vpcf4
 vpcf5
@@ -12823,9 +12836,6 @@ X80ijx
 @x_!8k
 @x_!8k@
 X8Qikx
-	!x9	
-	=x9i
-	-x9i
 @x_!9k
 xboxsystem.cpp
 XboxSystemInterface001
@@ -12860,7 +12870,9 @@ Y80ijx
 #Y80ijx
 Y8Qikx
 #Y8Qikx
-	}Y9i
+	!y9	
+	=y9i
+	-y9i
 @y?!9k
 y+	@9km
 Yaw; 
@@ -12870,15 +12882,16 @@ yaw_start
 @.yb4
 YB)5}@
 @.yB8
-	yb9I
 Y@    block %d: crc = 0x%8x, combined CRC = 0x%8x, size = %d
 +%@yBy|
 @yc|	
 #@@yc
 y#	@=c
+	yc9I
 yC	@}c
 @y+}E
 #@yh^
+#@yh*
 yh2@y
 %@y!ha
 yhBGy
@@ -12958,6 +12971,7 @@ _Z6ConMsgPKcz
 _Z6DevMsgPKcz
 #Z80ijx
 Z*=@8H
+	}Z9i
 #@)`zA
 ZA9iZ
 ZB9hZ

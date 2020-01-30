@@ -613,10 +613,10 @@ A file with this name is already in the pool.
 aggregate_value
 Ah1xhj+
 A)hR@9K
-	Ai9	
 )AIJ)
 ai_model_info
 AIWalkable
+	Aj9	
 A[k+"
 allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
 allow_alias
@@ -827,6 +827,7 @@ bytes.
 Byte size calculation and serialization were inconsistent.  This may indicate a bug in protocol buffers or it may be caused by concurrent modification of 
 bz@9_
 .C))}
+c2@y"
 !C9!9@
 cA9s~
 cable
@@ -1054,6 +1055,7 @@ C_INIT_VelocityFromCP
 C_INIT_VelocityFromNormal
 C_INIT_VelocityRadialRandom
 C_INIT_VelocityRandom
+cj@9"
 classes
 class_id
 class_name
@@ -1174,6 +1176,10 @@ code_filename
 	code_path
 	CODE_SIZE
 collision_group
+COLLISION_MODE_INITIAL_TRACE_DOWN
+COLLISION_MODE_PER_FRAME_PLANESET
+COLLISION_MODE_PER_PARTICLE_TRACE
+COLLISION_MODE_USE_NEAREST_TRACE
 collision_prop
 color
 COLORCORRECTION_VERSION_1
@@ -1251,6 +1257,7 @@ C_OP_SetRandomControlPointPosition
 C_OP_SetSingleControlPointPosition
 C_OP_StopAfterCPDuration
 C_OP_TwistAroundAxis
+C_OP_WorldTraceConstraint
 Could not create an instance of 
 Could not find type "
 Couldn't parse default value "
@@ -1363,7 +1370,6 @@ __cxa_guard_acquire
 __cxa_guard_release
 __cxa_pure_virtual
 Cycle or diamond double-reference to '%s'
-c@yi	
 [+%d]
  D-	(@
 d6@y#	
@@ -1599,7 +1605,6 @@ Extensions to non-lite types can only be declared in non-lite files.  Note that 
 Extra connection [%s]:
 E@y*i
 f3@ygk@9
-	!f9	
 F@9H,
 fA9hf
 FA9iF
@@ -1733,6 +1738,7 @@ g6hz@
 g6i^@
 g6in@
 G6v.@
+	!g9	
 game_class
 game_dir
 game_keys
@@ -1914,7 +1920,6 @@ h2@9)eB
 H6h>@
 H6hV@
 H6in@
-,H@9-
 *H@9*
 	H@9)
 	H@9	
@@ -1931,6 +1936,7 @@ H`@9iFG9
 H@9J(
 H@9k	
 -H@9m
+,H@9M
 h"A9)IF
 HammerMapLoader001
 handindex
@@ -2248,11 +2254,12 @@ Iyix8}
 IyixJylx+
 izhx)
 J#07k
+J38ip
 j48	C
 j48t^@
 j4xH;@
-j58"l
-J78Hp
+j58"p
+J780p
 j`8'k`8
 J!@9#
 J@9.A
@@ -2300,9 +2307,8 @@ JY@y)1
 *k2@y
 k2@yh
 ?k58D
-k68.	
+*?k78B
 ?k78h
-*?k78Z
 _!)kA
 K	A9lC
 K?B@qk
@@ -2473,6 +2479,7 @@ m_Children
 MClassHasCustomAlignedNewDelete
 m_Color
 m_ColorScale
+m_Constraints
 m_ControlRigData
 m_DefaultSolverSettings
 m_DefaultTargetSettings
@@ -2572,6 +2579,7 @@ m_nBehaviorVersion
 m_nBiasType
 m_nClusterSizeMax
 m_nClusterSizeMin
+m_nCollisionMode
 m_nControlPoint
 m_nControlPointNumber
 m_nCP
@@ -3296,10 +3304,10 @@ PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
 py_generic_services
 #Q8(X
-	Qa9I
 qangle
 QAngle
 qangle_pitch_yaw
+	Qb9I
 	QB9i
 q?h(8
 qhz;x
@@ -4246,6 +4254,7 @@ vpcf22
 vpcf23
 vpcf24
 vpcf25
+vpcf26
 vpcf3
 vpcf4
 vpcf5

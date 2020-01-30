@@ -565,6 +565,7 @@ $@)  "
 29ISolveIKChainAnimNodeInstance
 	2)a(
 	2)a%
+2B-!	
 2_BONE_IK
 2dtri
 %.2f degrees, %.2f ratio
@@ -741,6 +742,7 @@ $@)  "
 @9_`[kA
 @9_`@kA
 @9_`RkA
+@9!T6
 (@@9tB
 (@@9tB	
 @9wiu
@@ -898,7 +900,6 @@ AIWalkable
 	AJ9	
 ,%A)k
 A[k+"
-#@-	AK
 AllocateAndLoad failed for '%s'
 AllocateAndLoad failed for '%s' (%s)
 allowstatic
@@ -1647,6 +1648,10 @@ CMoverInstanceData
 CMoveSpeedCondition
 CNeuralNetAnimNode
 collision_group
+COLLISION_MODE_INITIAL_TRACE_DOWN
+COLLISION_MODE_PER_FRAME_PLANESET
+COLLISION_MODE_PER_PARTICLE_TRACE
+COLLISION_MODE_USE_NEAREST_TRACE
 Collision point & hit normal
 collision_prop
 COLORCORRECTION_VERSION_1
@@ -1755,6 +1760,7 @@ C_OP_SetRandomControlPointPosition
 C_OP_SetSingleControlPointPosition
 C_OP_StopAfterCPDuration
 C_OP_TwistAroundAxis
+C_OP_WorldTraceConstraint
 COrientConstraint
 cos( %s )
 Counter Rotation Scale
@@ -1885,7 +1891,7 @@ c@yhR
 %d : 
  D-	(@
 D-"/@
-d6@y#
+d6@yC
 d@9hf
 %d.Add( %s, %d, %.2f )
 Damped Path Motor
@@ -2134,7 +2140,7 @@ fetchframe
 fetchframerange
 %f %f %f %f
 ffffff
->fff?$P
+>fff?t.
 FIELD_BOOLEAN
 FIELD_CHARACTER
 FIELD_CLASSPTR
@@ -2449,7 +2455,7 @@ Height Increase Scale
 HELPER_BONE
 HelpSystem_001
 =hf@9
-hf@9A
+hf@9a
 hf@9h
 hf@9H
 hf@9i
@@ -2481,7 +2487,7 @@ Hit React node requires its %s parameter %s to NOT be interpolated
 Hit Strength
 Hit Strength Parameter
 h&@-j
-hj48k
+hj58`
 hj@9yF@
 h&@-j.A-
 !H*JAJ*
@@ -2505,14 +2511,14 @@ hscript_lightbinding
 HSCRIPT-new
 HSequence
 =hs@y+
-=hs@y1
+=hs@yQ
 hurt_me
 hurt_them
 [hxVYyxk
 h&Y)9
 h&@y)ED
 h"@yi
-h&@yI
+h&@yi
 h"@ys
 hZE9h
 *-@i)	
@@ -3250,6 +3256,7 @@ m_boolParamID
 m_bOrientMovement
 m_bParentJointRequiresAlignment
 m_bParticleFeathering
+MbP?H
 m_bPose
 m_bPost
 m_bPredicted
@@ -3341,10 +3348,10 @@ m_configName
 m_ConfigName
 m_Configs
 m_constraints
+m_Constraints
 m_container
 m_ControlRigData
 m_cRenderColor
-@Mct>
 m_CullDataIndex
 m_currentSegmentIndex
 m_currentSequenceIndex
@@ -3782,6 +3789,7 @@ m_nChoice
 m_nClipIndex
 m_nClusterSizeMax
 m_nClusterSizeMin
+m_nCollisionMode
 m_nCompressorIndex
 m_nControlPoint
 m_nControlPointNumber
@@ -4242,7 +4250,6 @@ myjx?
 "N(  
 $N   
 $N  "
-$N!\#
 $N@ #
 &N  !
 #N  !
@@ -4687,6 +4694,7 @@ N37CTypesafeIntrospectedToKV3TypeManagerILy469920276854E9CAnimDataE26IKV3Resourc
 N37CTypesafeIntrospectedToKV3TypeManagerILy469920276854E9CAnimDataE28IKV3ResourceDeallocatorUtilsE
 N37CTypesafeIntrospectedToKV3TypeManagerILy482955714934E15CAnimationGroupE26IKV3ResourceAllocatorUtilsE
 N37CTypesafeIntrospectedToKV3TypeManagerILy482955714934E15CAnimationGroupE28IKV3ResourceDeallocatorUtilsE
+!N!4!
 "N$4$n
 N- 8 
 $NA*#
@@ -4698,6 +4706,8 @@ nav_data
  NB8&
 nBX nB
 #NC((
+!NcT#
+#NcT#
 'nD:$
 $ND8 
 %Ne*$
@@ -4765,6 +4775,7 @@ Not safe to 'new' this class due to alignment requirements
 No valid format conversion from '%s' to '%s'
 $np:0
 &nQ:1
+ N!T.
 <null>
 (null)
 << NULL >>
@@ -4986,6 +4997,7 @@ ptr( 0x%p )
 ../public/tier1/utlsortvector.h
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
+!@)@Q
 )Q@9)
 qangle
 QAngle
@@ -4994,6 +5006,7 @@ Qi"A)`
 qJT-s
 Qj$xij0
 Qj/xnj0
+#@-	QM
 '=qs~?
 quaternion
 Quaternion-world
@@ -5861,6 +5874,7 @@ TwoBoneIK does not have a valid end effector attachment.
 TwoBoneIK does not have a valid target attachment.
 TwoBoneIK node has invalid IK chain.
 Two KV3 format GUIDs with the same human-friendly name ('%s')
+TX~$r
 TypeManager
 U20>3
 U: %.2f deg
@@ -6050,6 +6064,7 @@ vpcf22
 vpcf23
 vpcf24
 vpcf25
+vpcf26
 vpcf3
 vpcf4
 vpcf5
@@ -6104,7 +6119,7 @@ V_vsnprintf
 V_vsnprintfSize
 V_vsnprintfWarnTrunc
 V_wcstoi64
-w2@99
+w2@9Y
 walkspeed
 Warning
 Warning! autocycle specified on sequence "%s", but it's not looping, ignoring autocycle

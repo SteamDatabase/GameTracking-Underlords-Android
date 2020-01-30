@@ -201,7 +201,7 @@ attenuation1
 attenuation2
 auto_unragdoll_duration
 Available resource leak tracking configuration aliases:
-	Ax9	
+	Ay9	
 *** Bad deletion request: Refcount for %s resource "%s" (%016llX) is greater than zero. (%d)!
 Bad header format (expected '<!--'
 Bad header format (expected ':'
@@ -338,6 +338,10 @@ ClothShapeList
 ClothShapeSphere
 CMemAllocSystemInitialize
 collision_group
+COLLISION_MODE_INITIAL_TRACE_DOWN
+COLLISION_MODE_PER_FRAME_PLANESET
+COLLISION_MODE_PER_PARTICLE_TRACE
+COLLISION_MODE_USE_NEAREST_TRACE
 collision_prop
 COLORCORRECTION_VERSION_1
 command
@@ -392,6 +396,7 @@ C_OP_SetRandomControlPointPosition
 C_OP_SetSingleControlPointPosition
 C_OP_StopAfterCPDuration
 C_OP_TwistAroundAxis
+C_OP_WorldTraceConstraint
 CParticleSystemDefinition
 CreateInterface
 create_particle
@@ -605,10 +610,11 @@ HostStateMgr001
 hurt_me
 hurt_them
 **hx)
-h"@y	
+h"@y)
 h*@y_
 I)!|@
 i6@yh
+i;8sZ
 I'A9)
 ib@9(
 ib@9)
@@ -688,9 +694,7 @@ IQuickTime001
 is_debris
 IsResourceManifestGroupKnown: Manifest group name is empty or null
 i"@yh
-J38$A
 j6@y_
-j88-U
 JEIJJ}
 JIIJJ}
 jj(8(
@@ -808,6 +812,7 @@ m_ChainData
 m_Children
 m_Color
 m_ColorScale
+m_Constraints
 m_ControlRigData
 m_DefaultSolverSettings
 m_DefaultTargetSettings
@@ -891,6 +896,7 @@ m_nBehaviorVersion
 m_nBiasType
 m_nClusterSizeMax
 m_nClusterSizeMin
+m_nCollisionMode
 m_nControlPoint
 m_nControlPointNumber
 m_nCP
@@ -1031,7 +1037,6 @@ origin_max_delta
 origin_relative
 outerconeangle
 )P@9h
-	!p9I
 "pA3QuW
 PanoramaTextServices001
 PanoramaUIClient001
@@ -1107,6 +1112,7 @@ pthread_mutex_destroy
 ../public/tier1/utlsortvector.h
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
+	!q9I
 QAngle
 Qi"A)`
 Qi^*yi
@@ -1339,7 +1345,6 @@ Truncated data
 turn_rate
 Two Bone
 Two KV3 format GUIDs with the same human-friendly name ('%s')
-	!u9	
 	U@9)
 uint64
 Unable to determine buffer encoding.
@@ -1359,6 +1364,7 @@ use_additional_offset
 UserInfoChangeService_001
 utlbuffer.cpp
 utlstring.cpp
+	!v9	
 vagrp
 vanim
 vanmgrph
@@ -1440,6 +1446,7 @@ vpcf22
 vpcf23
 vpcf24
 vpcf25
+vpcf26
 vpcf3
 vpcf4
 vpcf5
@@ -1522,6 +1529,7 @@ yi^jy)
 	$@yJ
 )YJJ)}
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
+Ys.9Cc
 ^*ySi(
 @y	y3x-
 _Z14V_stristr_fastPKcS0_

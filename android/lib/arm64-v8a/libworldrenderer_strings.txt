@@ -306,7 +306,6 @@ abs( %s )
 ACT_IDLE
 activator
 ACT_NEUTRAL_REF_POSE
-	ad9	
 Add an output
 Adding animation group resource in replace animations: %s
 AddOutput
@@ -316,6 +315,7 @@ AddResource
 Adds an I/O connection that will call the named function on the passed entity when the specified output fires.
 Adds an I/O connection that will call the named function on this entity when the specified output fires.
 !	A)Dr
+	ae9	
 AE_ACTION_SET_TURN_RATE_SCALE
 AE_BLIND_ZOMBIE_SNIFF
 AE_CL_ADD_PARTICLE_EFFECT_CP
@@ -720,6 +720,10 @@ CNetworkFieldScratchData.m_MemoryStacks[ 0 ]
 CNetworkFieldScratchData.m_MemoryStacks[ %d ]
 CNetworkVarChainer
 collision_group
+COLLISION_MODE_INITIAL_TRACE_DOWN
+COLLISION_MODE_PER_FRAME_PLANESET
+COLLISION_MODE_PER_PARTICLE_TRACE
+COLLISION_MODE_USE_NEAREST_TRACE
 collision_prop
 COLORCORRECTION_VERSION_1
 Combo(
@@ -789,6 +793,7 @@ C_OP_SetRandomControlPointPosition
 C_OP_SetSingleControlPointPosition
 C_OP_StopAfterCPDuration
 C_OP_TwistAroundAxis
+C_OP_WorldTraceConstraint
 CopyAttrFrom
 COrientConstraint
 cos( %s )
@@ -949,7 +954,6 @@ DynamicCubeMapTexture_FlipMipEncode.vtex
 dynamic_interaction
 .dynstr
 .dynsym
-	!e9	
 EconItemToolModel_001
 _edata
 EditorDynamicConfig
@@ -1073,6 +1077,7 @@ ExtraVertexStreamOverride_t
 eye_data
 eye_data_list
 *-F),5G)_
+	!f9	
 f@9H1
 f@9h2
 faceMergeAngle
@@ -1353,8 +1358,7 @@ h"F9H
 hf@9i
 (hide)
 Hitbox indexing is incorrect for set %s, hitbox %s. Hitboxes will not be setup properly.
-hj58Fx
-hj58k
+hj58F|
 H#L9`3
 HMaterial
 HModel
@@ -1372,6 +1376,7 @@ hscript_lightbinding
 HSCRIPT-new
 hurt_me
 hurt_them
+h&@y	
 h&@y)UG
 	*I}`
 	i48h6@
@@ -1791,6 +1796,7 @@ m_ConfigName
 m_Configs
 m_connections
 m_constraints
+m_Constraints
 m_ControlRigData
 m_cRenderColor
 m_CScriptComponent
@@ -1997,6 +2003,7 @@ m_nBoneWeightCount
 m_nChoice
 m_nClusterSizeMax
 m_nClusterSizeMin
+m_nCollisionMode
 m_nCompressedAtlasSize
 m_nControlPoint
 m_nControlPointNumber
@@ -2443,7 +2450,6 @@ Output unserialization of entities on map load. 0 - off, 1 - client/server, 2 - 
 overlay
 !OZW?O
 ($?)P
-	!p9	
 "pA3QuW
 PanoramaTextServices001
 PanoramaUIClient001
@@ -2577,6 +2583,7 @@ ptr( 0x%p )
 PushCurrentSkewBrightnessValuesToSceneObject
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
+	!q9	
 Q(aNf(!
 qangle
 QAngle
@@ -3176,6 +3183,7 @@ vpcf22
 vpcf23
 vpcf24
 vpcf25
+vpcf26
 vpcf3
 vpcf4
 vpcf5

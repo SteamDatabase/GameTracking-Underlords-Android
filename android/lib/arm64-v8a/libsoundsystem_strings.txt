@@ -265,7 +265,7 @@
 29CVSoundStackScriptTypeManager
 	[%2d] %16.16s : %s (%d)
 (%2db) %6i : %s
-2h2/9
+2h209
 2hb@9
 2	i:8
 2ij(8
@@ -276,7 +276,7 @@
 2_!-kc	
 2Ki)8x
 2L1@y
-2t~	){
+2t~	)c
 2x"@9
 30CAudioSource_PlayerVoiceStream
 30CSosGroupActionTimeLimitSchema
@@ -555,8 +555,7 @@ Available Operators:
 ?AVki#
 *A_x)a_xk^
 )!Ay?	
-!Ay,4
-!AyBK
+!AyBG
 @-B	@
 B-" @
 B-(  
@@ -763,6 +762,10 @@ ClothShapeSphere
 Cmath_filter_float
 CMemAllocSystemInitialize
 collision_group
+COLLISION_MODE_INITIAL_TRACE_DOWN
+COLLISION_MODE_PER_FRAME_PLANESET
+COLLISION_MODE_PER_PARTICLE_TRACE
+COLLISION_MODE_USE_NEAREST_TRACE
 collision_prop
 COLORCORRECTION_VERSION_1
 command
@@ -826,6 +829,7 @@ C_OP_SetRandomControlPointPosition
 C_OP_SetSingleControlPointPosition
 C_OP_StopAfterCPDuration
 C_OP_TwistAroundAxis
+C_OP_WorldTraceConstraint
 Copying '%s' to '%s'
 core.null
 core_update_default
@@ -1386,7 +1390,7 @@ HIGHDPI
 Highest
 HighPass
 h&I)tb
-hj)8:	
+hj)8Z	
 hJAy`
 hJAy	
 HoA8	
@@ -1443,6 +1447,7 @@ ID of the sound device to use
 i"D)U	
 )idx?
 )idx9
+@-#iE
 *if@9
 If set to 1, report more error found when playing sounds.
 If set to 1, show all incoming updates to vmix inputs.
@@ -2064,6 +2069,7 @@ m_Children
 MClassHasCustomAlignedNewDelete
 m_Color
 m_ColorScale
+m_Constraints
 m_controlInputArrays
 m_controlInputs
 m_controlMeters
@@ -2206,6 +2212,7 @@ m_nChannels
 m_nChannelSelect
 m_nClusterSizeMax
 m_nClusterSizeMin
+m_nCollisionMode
 m_nControlInputIndex
 m_nControlPoint
 m_nControlPointNumber
@@ -3708,6 +3715,7 @@ vpcf22
 vpcf23
 vpcf24
 vpcf25
+vpcf26
 vpcf3
 vpcf4
 vpcf5
@@ -3846,7 +3854,6 @@ y+a@9*)
 yaw_end
 yaw_start
 y+a_x
-@-#YC
 Y?calc_occlusion_src2
 (!@yh"
 #@yH 
