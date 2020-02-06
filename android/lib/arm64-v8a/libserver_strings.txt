@@ -35,7 +35,7 @@
 !	@)<
 !	@) 
 !	@),
-!	@)'+
+!	@)'
 !	@)(
 !	@))
 !	@){
@@ -79,6 +79,7 @@ $.!("
 $@)   
 $@)  "
 $@)#@@)
+*-@)!
 *-@))	@
 *,@)	!@))
 *!@-)	@
@@ -89,6 +90,7 @@ $@)#@@)
 +!@))	@
 	) 	)
 	)@)	(
+	*!$,
 	*(#:
 	*	}`
  [$0]
@@ -116,7 +118,7 @@ $0$1 = $2
  !"#$%&'()*+,-./0123
 $0$1$2 $3 = $4
 0123456789abcdef
-0123456789ABCDEF`r
+0123456789ABCDEF
 %0.2f
 (%0.2f) %s
 (%0.2f): %s
@@ -157,7 +159,6 @@ $0$1$2 $3 = $4
 06iZ@
 06izC
 06j6@
-*-@)!07
 0.75f
 07(	87(
 07af@
@@ -171,7 +172,7 @@ $0$1$2 $3 = $4
 .>()09
 	0@9?
 >()09,)G>r
-0A9K,
+0A9+,
 0~B8 
 @0bDG
 0CClientMsg_WorldUIControllerHasPanelChangedEvent
@@ -1214,6 +1215,7 @@ $0 to $1,
 16CModifierFactoryI32CDAC_Modifier_BlightStone_DebuffE
 16CModifierFactoryI32CDAC_Modifier_CrystalMaidenDeathE
 16CModifierFactoryI32CDAC_Modifier_Drow_Trueshot_AuraE
+16CModifierFactoryI32CDAC_Modifier_EnnoAirBrawlPoisonE
 16CModifierFactoryI32CDAC_Modifier_EnnoAirBrawlTargetE
 16CModifierFactoryI32CDAC_Modifier_EnnoPoisonSpinCastE
 16CModifierFactoryI32CDAC_Modifier_EnnoStealAnimationE
@@ -1810,9 +1812,8 @@ $0 to $1,
 18TEFizz_GameEvent_t
 18ToolTraceRayResult
 1960/00/00
-	1;9_A;9
 	1.9_A.9
-1%9?A%9_
+	1&9_A&9
 19CAI_ChangeHintGroup
 19CAmmoDefInitializer
 19CAttributeContainer
@@ -1952,7 +1953,6 @@ $0 to $1,
 1k_UnpackBundle_Failed_UnableToCreateContainedItem
               -1 = let clients set cl_interp_ratio to anything
 <1+=Mg'
-	1N9)
 1O[y?
 1) Red  : %i
 1sAL"
@@ -2123,9 +2123,7 @@ $0 to $1,
 20TESparks_GameEvent_t
 20ToolTraceRayResult_t
 20TransitioningLayer_t
-2	139
-2	139h
-2	1 9
+2*1!9
 21CAnimGraphTraceFilter
 21CBaseAnimatingOverlay
 21CBaseAttributableItem
@@ -2552,8 +2550,6 @@ $0 to $1,
 23TEExplosion_GameEvent_t
 23ToolEvent_GetEntityInfo
 23TraceRayServerToolEvent
-2	!49
-2	!49n
 24CAnimGraphSaveRestoreOps
 24CBaseAnimatingController
 24CCLCMsg_RespondCvarValue
@@ -2841,6 +2837,8 @@ $0 to $1,
 25TEPlayerDecal_GameEvent_t
 25ToolEvent_FireEntityInput
 25ToolEvent_GetEntityInputs
+2	!69
+2	!69n
 26CCLCMsg_SplitPlayerConnect
 26CClientMsg_CustomGameEvent
 26CDAC_Ability_Enno_AirBrawl
@@ -3152,7 +3150,6 @@ $0 to $1,
 27s@y
 27TEArmorRicochet_GameEvent_t
 	2 8 
-2	!89s
 28CAnimGraphNetworkedVariables
 28CBoneConstraintPoseSpaceBone
 28CCleanupDefaultRelationships
@@ -3276,7 +3273,6 @@ $0 to $1,
 28TEProjectedDecal_GameEvent_t
 28TEShatterSurface_GameEvent_t
 28VPhysicsCollisionAttribute_t
-2	! 9
 2	!:9
 2	!)9
 2	!)9;
@@ -3384,15 +3380,13 @@ $0 to $1,
 29ToolEvent_GetEntityInfoResult
 2	A89
 2	A89p
-2	a-9
+2	a89s
+2	a 9
 2	a,9
-2	A?9
-2	A$9(
-2	A=9B
+2	A$9
 2A9i2
 2	a@9Ia
 2	a,9l
-2	A?9p
 2	AA9
 2A.CWorkshop_PopulateItemDescriptions_Request.SingleItemDescription"F
 2A-k	 
@@ -3400,7 +3394,7 @@ $0 to $1,
 2) Blue : %i
 2_BONE_IK
 @?$2bUs
-2(C%9
+2(C29
 2 .CBidirMsg_RelayInfo.Operation_t
 2 .CCommunity_ClanAnnouncementInfo"p
 2).CGameInfo.CDotaGameInfo.CHeroSelectEvent
@@ -3548,7 +3542,6 @@ $0 to $1,
 2>.CWorkshop_SetItemPaymentRules_Request.WorkshopItemPaymentRule
 %2d: %s
 2)E@9
-2	E	9
 2F9I!@
 %.2f: server (pre-update)
 2GAME_PARTICLE_MANAGER_EVENT_UPDATE_ENTITY_POSITION
@@ -3581,7 +3574,6 @@ $0 to $1,
 2ii*x
 2ij(8
 2ij(8\
-2ij(84N
 2+imx
 2ir>9
 2j"@9)p
@@ -3592,9 +3584,9 @@ $0 to $1,
 2_!(k
 2?!!k
 2?"!k`
-2?k78Y
+2?k78
 2_k88
-2?k88X
+2?k88
 2K9	S
 2k_EGCMsgInitiateTradeResponse_VAC_Banned_Initiator
 2Ki(8
@@ -3608,7 +3600,6 @@ $0 to $1,
 2l*@9h
 2L.CMsgClientToGCHandleItemPurchaseResponse.PurchaseResponse.EPurchaseResponse
 2li(8l
-2lQ-9l
 2l"@y?
 2Ly+xi
 ?2lZJ
@@ -3620,7 +3611,9 @@ $0 to $1,
 2O9A.
 }2'@+P
 2 .ProtoFlattenedSerializerField_t"!
-2	q(9
+2	q39
+2	q 9
+2*Q<9
 2	q@y?
 	2R*3
 2) Red  : %i
@@ -3630,8 +3623,8 @@ $0 to $1,
 ?2uWv
 2Way_0( %s )
 2Way_1( %s )
-2x2%9
 2x"@9
+2xr%9
 2@y*%
 2*y5xi"@
 2*y7xi"@
@@ -3816,6 +3809,7 @@ $0 to $1,
 30IEntityResourceManifestBuilder
 %-30s
 ?.|3 1
+'3)	1
 31CAttributeIterator_HasAttribute
 31CBaseAnimatingOverlayController
 31CCommunity_ClanAnnouncementInfo
@@ -3933,6 +3927,7 @@ $0 to $1,
 32CDAC_Modifier_BlightStone_Debuff
 32CDAC_Modifier_CrystalMaidenDeath
 32CDAC_Modifier_Drow_Trueshot_Aura
+32CDAC_Modifier_EnnoAirBrawlPoison
 32CDAC_Modifier_EnnoAirBrawlTarget
 32CDAC_Modifier_EnnoPoisonSpinCast
 32CDAC_Modifier_EnnoStealAnimation
@@ -4086,7 +4081,6 @@ $0 to $1,
 33IEconItemUntypedAttributeIterator
 33IStreamEntitiesFromFileCompletion
 33ToolEvent_GetEntityInputsResult_t
-3!49_
 34CBodyComponentBaseAnimatingOverlay
 34CDAC_Ability_Abaddon_AphoticShield
 34CDAC_Ability_Batrider_StickyNapalm
@@ -4398,6 +4392,7 @@ $0 to $1,
 38CSoundEventEntityAlias_snd_event_point
 38CWorkshop_GetItemDailyRevenue_Response
 38CWorkshop_SetItemPaymentRules_Response
+39_!39
 39CCommunity_GetClanAnnouncements_Request
 39CDAC_Ability_Shadow_Demon_Demonic_Purge
 39CDAC_Ability_WitchDoctor_ParalyzingCask
@@ -4435,6 +4430,7 @@ $0 to $1,
 39CUserMsg_ParticleManager_CreateParticle
 39CUserMsg_ParticleManager_UpdateParticle
 (3@9h/
+3a49_
 3A-`9 
      3: Alyx Blind
 @@-3B!
@@ -4458,6 +4454,7 @@ $0 to $1,
 3.t8!
 3X@-7
 !	@)4
+!	@)?4
 4('@)*
 4(0@9
 40CColorCorrectionMaterialOverrideModifier
@@ -4663,7 +4660,8 @@ $0 to $1,
 49CUserMsg_ParticleManager_UpdateParticleShouldDraw
 49GameToolEventToolTraceRayResult_tHookupGameSystem
 4((@9h
-4a<9_
+4A&9_
+4A+9_
 4`&C-
 4(d@9(
 4(D@9(
@@ -4706,8 +4704,8 @@ $0 to $1,
 4h&O)j
 4hRO9(
 4hrP9H
-4hr@y`A
-4hR@y`A
+4hr@y
+4hR@y
 4h"S9
 4h"S9(
 4hsI9
@@ -4750,6 +4748,8 @@ $0 to $1,
 4(x@9h
 4(X@9h
 |?5^:+
+!	@)!5
+!	@))5
 ?}?5^
 %50.50s: %2.2d bits == '%s'
 50CDAC_Modifier_EarthSpirit_Geogmagnetic_Grip_Debuff
@@ -4795,6 +4795,7 @@ $0 to $1,
 58CWorkshop_GetItemDailyRevenue_Response_CountryDailyRevenue
 58GameToolEventDestroyAllEntitiesToolEvent_tHookupGameSystem
 )5@9?
+591K	
 59ajM
 59CMsgGCToGCGrantAccountRolledItems_Item_AdditionalAuditEntry
 59CProtoItemSocket_AssetModifier_DESERIALIZE_FROM_STRING_ONLY
@@ -4839,8 +4840,8 @@ $0 to $1,
 5i6F9
 5ib@y
 5i*C))
+5i"J)
 )5IJ(}
-5i"J)ua
 5ISave
 5i.@y
 5J1]9
@@ -4898,6 +4899,7 @@ _6	8@
 6_@)8
 6]@-8	@
 	6	9J
+&@)6A
 6	a@9)
 6	@A9
 /6`B@
@@ -5089,8 +5091,8 @@ _6iJ@
 ?6iJ@
 /6iJ@
 @6iJ@
+6i"J)
 6iJA9
-6i"J)Ua
 ?.@6$Ik
 _6iN@
 ?6iN@
@@ -5156,8 +5158,10 @@ _6v:@
 +@;^7[/
 	**!7
 	(7	0E
+'7)	1
 72CWorkshop_PopulateItemDescriptions_Request_ItemDescriptionsLanguageBlock
 (7`3@
+!	@)74
  74	(74
 74	 74
  74	(7t
@@ -5212,7 +5216,6 @@ _6v:@
 77h2A
 77	X77
 79_!79
-_!79j
 7AIJ)
 (7($B9
 7CBotCmd
@@ -5224,7 +5227,6 @@ _!79j
 7CTEDust
 7CTEFizz
 7c"@y
-!	@)7D
 7D-+'@
 :=]7e
 7		E9I
@@ -5379,7 +5381,6 @@ $(7hRA9
 87xR@
 %8.8s: %-5d entries, '%s', ...
 	8~9(
-89_!89
 8CAISound
 8CAmmoDef
 8CCredits
@@ -5439,7 +5440,7 @@ _8|{t
 8x9,7
 `"@9	
 |@9		
- @9)@
+ @9).
 _!:9)
 ?9% &
 .@9)	
@@ -5455,13 +5456,13 @@ _!:9)
 {9#	 
 @-`9 
 @- 9(
-@@9)@
+@@9)`
 @9)!@
 @9)	@
 @9*	@
 @9+	@
 ** @9
-#@9@;
+#@9`;
 	 @9)
 	 @9	
 	)@9)
@@ -5473,7 +5474,6 @@ _!:9)
 90.0f
 <9}@0>1
 9(0@y
-9!39_
 )#@95c
 95*P>
 @96Y@
@@ -5483,7 +5483,6 @@ _!:9)
 @9!8"
 98]@)5	@
 98N*>
-)9_!)9
 @9*	@9-
 @9%	@9
 @9%	@9$
@@ -5492,13 +5491,16 @@ _!:9)
 %@9	)@9
 9)@@9
 9+	@9
-@9 9F
  @9	$@9J
  @9	$@9JYF
+ @9)a
+"@9)a
 @9A(!
-9A49)
+9a39_
+9A89_
 @9_aAkA
 ?9A@c
+@9 AF
 9AIJI
 9A)k!
 -9A)K1A)k
@@ -5599,10 +5601,10 @@ _!:9)
 @9I	@
 @9+i(8k
 "@9i"@9
+@9i"@9
 9	i@9
 ^9I9)
 9*i@9J
-@9i"@9t:
 9IEconTool
 9ifA9
 9	ii8(
@@ -5619,6 +5621,7 @@ _!:9)
 @9jb@
 @9jjh8*
 @9JU	
+	!@9JU
 !!@9K
 >9K!0>N
 )!@9	k(8I
@@ -5627,6 +5630,7 @@ _!:9)
 9Ki@9k
 9k_ItemPurgatoryResponse_Finalize_Failed_CouldNotFindItems
 9kj(8|
+(! 9KS
 9l"A9
 9('O9
 )9}[p=
@@ -5638,11 +5642,9 @@ _!:9)
 @9R"@9)
 @9_`RkA
 **9	S
-*9	S;
 *9	S?
 *9	S)!
 9	S0M0
-9	S5i
 *9	SH
 (9	SHM(
 	9	SIM)
@@ -5704,11 +5706,10 @@ a2U0*
 ?a2v>
 a2@yh2@y
 ,-A-.5@-
-a591_	
 A-)5A
 -A),5A)J
 A5fSXbf7
-a796a
+a793\
 	a79H
  .a8"
 @-a	@- 8 
@@ -5718,6 +5719,7 @@ A-!8#
 +a@9?
 	a@9	
 a"@9`
+a"@9~~
 a"@9 
 "A9		
 (A@9(
@@ -5736,7 +5738,6 @@ A9@)
 A9@)(
 a@9+a
 `A9)`A9
-a"@9b9
 A9@g@
 .A9h.
 "A9h"
@@ -5760,7 +5761,8 @@ A9i>@
 )A@9	i98h:@
 A9	ii
 A9iji
-a"@9~j
+a@9iL
+(a-9J
 *!A9J
 A9|J@
 	A9j"A
@@ -5779,12 +5781,10 @@ A-'@A-
 	aa9	
 AA9(	
 AA9(	@
-a"A9Y
 aaaaaaaazzzzzzzz
 aabb_max
 aabb_min
 AABB_t
-A	A-j?
 ?AAk	"
 A@-B8(
 A-b>B
@@ -7844,9 +7844,6 @@ An RR_Concept couldn't find its string in the symbol table!
  any other value = set minimum value for cl_interp_ratio
 &A)(o@
 (aO)?Q
-A-OYG
-	aP9	
-	Ap9	
 api_key
 `AP$N
 appear_time
@@ -7880,6 +7877,8 @@ A protocol message was rejected because it was too big (more than
 A@Q?%
 >!@A+r
 AR2AltFire
+	aR9	
+	Ar9	
 arcana_level
 arcane_boots
 arcane_boots_new
@@ -7938,7 +7937,6 @@ armory_remap
 arrow_range
 arrow_speed
 arrow_width
-	As9	
 as_above_so_below
 as_above_so_below_talent
 as_coach
@@ -8116,6 +8114,7 @@ Attribute type not specified in dynamic recipe definition
 attribute_value
 Attribute value not specified in dynamic recipe definition
 attr_value
+	Au9	
 audible_mask
 audio
 audioparams_t
@@ -8187,6 +8186,7 @@ Avg/Msg
 avg_packets_in
 avg_packets_out
 ?AVki#
+	AW9i
 AWARDED
 away_team_talent
 Away Team Won - %d damage applied to home team.
@@ -8201,7 +8201,7 @@ A-!Xh
 Ax? /k 
 ?aXY6
 ?A@YY$
-!	@)b)
+!	@)b
 ""\\//b
 @-b("
 @-b	@
@@ -8224,6 +8224,7 @@ B-!8"
 ~b8~q)=
  B\9{
 B9@  
+B>9'2
 B@9(6
 B@9a'
 ?B9b8"
@@ -8244,9 +8245,8 @@ b"@9i
 B9$i@
 B9I	87
 b@9ib
-B>9!J
 B9)qA
-B>9.s
+B>9U?
 B-A8!
 `BA9 %
 bA9hb
@@ -8461,6 +8461,7 @@ bitsDamageType
 bitsToTest
 ?{^;b>j
 @-b.J
+&B)jE
 #bJ$Q
 ?'bj{V
 	)B)K
@@ -8520,7 +8521,8 @@ Bmaps\%s.vpk
 bMKBTested
 b@modifier_butterfly
 bMoved
-BO9A(
+BO9!(
+BO9	5
 board_code
 board_spray
 board_unit_limit
@@ -8763,15 +8765,13 @@ ButtonBitMask_t
 "B)Ux
 buy_unit
 bValue
-`b@yb
 `b@yh
 B@yhB
 By how much to modify the unit's health
 By how much to modify the unit's health.
 b	yi6
 BYield
-b@yk2
-`b@yS
+`b@yJ
 bytes
 bytes. 
 bytes_data
@@ -8779,8 +8779,8 @@ Byte size calculation and serialization were inconsistent.  This may indicate a 
 bytes_read
 bytes_written
 b	yu6
-`b@yy
 $.c($
+&)c<-
 :C)   
 !	@-C
 .C))}
@@ -11576,6 +11576,7 @@ CProtoItemSocket_Strange
 CPushable
 	cpu_usage
 c"Q9a
+(Cr9h
 crafting
 CRagdoll
 CRagdollConstraint
@@ -12193,7 +12194,6 @@ cycler_flex used on model %s without enough flexes.
 %d | 
  D-	(@
 !	@)D
-!	@)?D
 ?D]`,
 @-D	@
 	D-	)@
@@ -12207,14 +12207,14 @@ d3_citadel_04
 d3_citadel_05
 .D=3w
 *-D),5E)_
-d6@y#
-d6@y#=
 d6@yc
-d6@yc/
+d6@yc,
+d6@yc!
 d6@yc%
 d6@yC
-d6@yC,
-d6@yCE
+d6@yC=
+d6@yC%
+d6@y#E
 D-)9,
 D9   
 D9i2@
@@ -13320,8 +13320,6 @@ D)yV@
 ?e;:	
 @-e	@
 -E)		
-!	@)!E
-!	@))E
 .E))}
 e0F$J
 ?=((E+7
@@ -14778,7 +14776,6 @@ ffffff
 fflush
 fGain
 F*%h3x%hgx
-F-H	G
 F*&h%x%hsx
 F*%h'x%hsx
 @-FI@-)	@
@@ -15716,8 +15713,9 @@ Gaussian
 G-B8%
 G-bB@
 GB@-Q
+'G)c@
 G-c*#
-GC9	a79
+GC9	a799U
 	gc_app_id
 	gc_binary
 GCC: (GNU) 4.9.x 20150123 (prerelease)
@@ -16236,13 +16234,12 @@ H0@)_
 H0@9(0
 H0@yU
 H0@yV
-!^!h1
 h1A)M9A)/AA)
 h1xij 
 h1xkj.
 h2~9(
 h2@9)
-h2>9D$
+h2>9D,
 h2`9h
 h2@9h
 h2~9H
@@ -16261,8 +16258,10 @@ h2N9H
 h2O9H
 h2P9H
 h2@ytB
+!^!h3
 h3F9(d
 *-H),5I)_
+*H6"6
 h6@9h
 h6>9n
 )h6A9
@@ -16296,8 +16295,9 @@ H=)@8f
 )h&~9
 h'@9(
 h"@9)
-h"@9)@
 h&@) 9.
+h"@9)a
+h"@9	a
 ;h@)9\A)<
 H @9`b
 h'@9h
@@ -16311,13 +16311,14 @@ h"_9H
 h*@9H
 (H@9h
 H @9h"
-h"@9i<
 h"@9i-
-h"@9i.
 h"@9I
+h"@9I6
+h"@9i9
+h"@9I9
 H @9i @9
+h"@9IK
 h&@9k
-h"@9	K
 h9	Q@
 H9	ShM(
 h%A)`
@@ -16410,7 +16411,8 @@ hB]9(
 hB@9`
 hB@9(
 hB@9)
-hB>9;4
+hb@9)a
+hB>9A
 hb@9h
 hb~9H
 hb@9H
@@ -16426,7 +16428,7 @@ h*B9i
 hB@9t
 hB@9u"@
 hB>9v
-hB<9V1
+hB<9V
 h&^)b:A
 hbA9(
 )hBA9
@@ -16447,10 +16449,9 @@ hBF9h
 hbI9(
 hbI9H
 H-bN@
+hbO9).
 hbO9h
 hbO9tB
-hBO9)V
-hBQ9I@
 hBr9H
 hBR9i
 hBt9H
@@ -16698,7 +16699,7 @@ hFD9u
 hfQ9h
 *hFT9
 hFT9(
-hF	yh*O9iF
+hF	yh*O9
 hf	yh*R9
 hgrunt;scientist
 H%@)h&
@@ -16798,9 +16799,12 @@ hi,xk
 h&_)j
 h&@-j
 H%@)J	@
-hj48'
+hj48(
 hj583
 h*J)7	@
+hJ_948
+hJ^9I4
+hJ^9II
 hj@9yF@
 h&@-j.A-
 hjF9(
@@ -16808,10 +16812,8 @@ hjF9(
 hjG9)
 hjN9h
 hjN9tB
-hJO9)>
-hjO9)5
 hJO9H
-hJP9T,
+hjW9Ia
 hJX9v
 hj@y 
 h&^-k.@
@@ -16950,7 +16952,6 @@ hR@9h
 hR~9H
 hRB9`
 hrD9h
-hRe9`4
 HRenderTexture
 HRenderTextureStrong
 hResult
@@ -17002,9 +17003,9 @@ hv@9)
 h&V9h
 !^hVB
 hVKyH
-h&@)vL
 hVN9H
 hVN9iRN9
+hVV9)S
 hV@yh
 hV	yh
 hv	yhJR9
@@ -17014,6 +17015,7 @@ HW@9XS@9H
 H-"X(
 h:@y*
 h*@y_
+h&@y	0
 h*Y9v
 h&	yh
 H'@yh'
@@ -17051,6 +17053,7 @@ i1xjj,
 *i2>9
 i2>9(
 i2>9h
+*i2>9R
 !^i2E
 @i4^_
 i6F9h
@@ -17059,6 +17062,7 @@ i6@yh
 I+7)U
 *i;8{
 !	I- 8 
+#I)*8
 I-!8"
 *	i88
 	i:89
@@ -17085,9 +17089,8 @@ i+8Ki@9k
 i*8*Y@
 )i@9	
 )I@9I
-i*@9j
 i"@9J
-i*@9J5
+i*@9j5
 I9	S	M)
 	*i.A
 i"A9	!
@@ -17104,14 +17107,14 @@ ib@9`
 ib@9(
 ib@9)
 ib@9h
-ib@9H
+i*B9h[
 ib@9i
 i"B9i
 i#B9i
 ib@9j
 ib@9l
 iBA9	!
-iBA9J3
+iBB9hM
 iBB9hn@
 i*B)h
 ibh9vb(
@@ -17383,6 +17386,7 @@ ignoring %s.HL%s on %s
 iGroup
 I-!H#
 )ih8?
+(ih8)h
 )ih8Hyh
 )ih8Ii(8
 (ih8*ij8+ik8,il8-im8.in8/io80ip81iq82ir8"ib8#ic8$id8%ie8&if8)i`8
@@ -17431,15 +17435,10 @@ i*J)(
 I!@)J	@
 *ij8+ik8,il8-im8.in8/io80ip8(ih8
 ij,8kj*8mj(8
-ij\9h`
-ij_9hB
-ijc9(G
 ijF9i
 +i-`jG
 ijj8?
 =ijk9
-iJP9hG
-ijR9HD
 ijw8*
 )ijx?
 *ijx_
@@ -18628,6 +18627,7 @@ i*xh>@yt:
 i*xh>@yu:
 ixhy*xh
 *+i,xi
+i)xiM
 *i-xi>@yj:
 *i,xi>@yj:
 *i.xi>@yj:
@@ -18637,7 +18637,6 @@ i#xjj-
 *i,x	=@y
 ix`yi
 	iy8)
-i*Y9HH
 i>@yh
 i'@yH'@y?
 Iyix8}
@@ -18649,7 +18648,7 @@ i"Yy?
 @I@z)
 iZA9	
 <j.?)
-!	@)j)
+!	@)j
 )j.@)
 &@)j.@)
 	*j{(
@@ -18659,75 +18658,71 @@ j.@)
 @-J	,
 @-J	@
 J-` $
-j08A*
-j08PK
+j08!*
+j080K
 J0@y_
 J0@yI
 J0@ykAF
-j1xQ*
+j1x1*
 j2?)?
-j28rG
+j28RG
 j2F9*
 j2V-m
 j2@yh
-j48([
-j48(B
 j48	C
-j48H-
 j48t^@
 j4xH;@
-j58(B
-j58H-
+j58(.
+j58hB
+j58HB
 j58hf@9(
+j58[U
 J5@y_
-j68(a
-j68Hg
-j68hk
+j68HU
 j68u*@
 j68v&@
-j.8.!
+j68(W
 j.8	!
-j(8(!
 j(8()
+j)8()
 j)8	?
 j)8	"
-j)8	)
 j)8	+
-j+8*!
-j+8+!
-j(8h"
+j*8*)
+j*8**
+j+8+)
+j(8(0
+j(8H"
 j(8H$
-j)8H)
 j)8H$
-j(8Hc
+j*8)H
 j(8HM
 j(8hN
 j(8Hr
-j;8HU
-j)8i"
+j)8I"
 j)8I6
 j)8ID
-j)8iI
 j)8iM
 j(8`j
 j)8`j
 j*8j.
-j*8j"
-j*8J)
+j*8J"
 j*8J*
-j+8jP
 j-8K,
+j)8/K
 j+8K:
-j+8K)
 j`8'k`8
 j+8Kd
 j+8KH
 j,8LH
 j,8Lr
-j-8m"
 j-8M,
+j-8M"
 j-8MV
+j-8mW
 j)8)r
+j(8!t
+j*8*W
 J!@9_
 J!@9#
 J@9h6
@@ -18741,6 +18736,7 @@ JA@9)}@
 jA9hj
 JA9iJ
 Ja@9J
+$J)AA
 JAAHJ
 JAAHJ	 
 JAAIJ
@@ -18796,7 +18792,7 @@ jj)8`
 j!JJ+
 j!JJK
 !JJK|
-jJX9I=
+jj)x[H
 	J"}	K
 )+J)-#K)+3L)
 Jki8_5
@@ -18892,19 +18888,20 @@ jV@y)|@
 jV@y!y|
 jV@y:yt
 jV@y!yt
+j-x-*
 j)x	"
 j)x		
 j*x*)
 J!_x_!5k
 j)x	6
 j)x	e
-j(xhP
+j)xi#
 j)x	I
 j$xij.
 j-xM 
-j-xM*
 j.xN.
 j)x	O
+j x@X
 J!@y)}@
 JYix*$
 Jykx)ij
@@ -18935,11 +18932,12 @@ k2Q)m
 *k2@y
 ?k58D
 k5N9K
+k68|j
+*?k78
 ?k78h
-k78hk
-*?k78M
+k78(l
 	K!8"
-_k88a
+?k88:]
 k(8vV@
 ?){K9_
 @){K9_
@@ -19990,7 +19988,6 @@ kv3format_manager.cpp
 KV3 load transfer failed: %s
 KV Conditional Evaluation Error
 K %vmo
-	k!x0
 k	@y)
 K!@y?
 Kykx)
@@ -20019,6 +20016,7 @@ l9hf,9
 l9	SJM,
 L9	Sk
 L9	SkM,
+LA9+5O
 la@9L	
 L	A9mC
 label
@@ -20521,6 +20519,7 @@ m1B)n
 m1E)n
 :m2OS
 m2V-j
+!	@)M3
 :m@)5eA)6qB)
 m%@9i)
 m	A9j"
@@ -21477,7 +21476,6 @@ m_bWorldSpaceScale
 m_bWrap
 *MBx_! k 
 m_ByteVariables
-!	@)MC
 m_CachedResults
 m_cancelTime
 m_CBodyComponent
@@ -24024,6 +24022,7 @@ modifier_enemy_onfire_myside
 modifier_enigma_malefice
 modifier_enigma_midnight_pulse
 modifier_enigma_primordial_bonus
+modifier_enno_airbrawl_poison
 modifier_enno_airbrawl_self
 modifier_enno_airbrawl_targets
 modifier_enno_crew_cheer
@@ -25952,7 +25951,6 @@ N@9hN
 ,N9i"@
 	!N9i
 	!N9I
-N9!iE
 +*N9k
 N9l>F
 N9m>F
@@ -27055,15 +27053,14 @@ O6`R@
 O6v2@
 o6vB@
 o-!8#
+"O9!(
+&O9!(
 .O9A.
-"O9A(
 *O9A.
-&O9A(
 O9`.B
 o9@)u	@
 "O9X/
 ? !o^A?
-oA)a8
 o/A-m'B-n+@-`C
 objc_class_prefix
 object_data
@@ -28839,16 +28836,18 @@ py_generic_services
 q-@	*
 -	-	Q
 @-'@@-Q
+(q090Y
 q;4,F
+	Q89_a89
 Q8q(2
-	q>9_
+	q;9_
+	q"9(
 	q	9_
-q	!%9
-_Q$9*
-	!Q9	
 Q"@9?
 	Q99_a99
+	Q)9_a)9
 q@9HA
+q	a%9
 	qA9?
 qangle
 QAngle-world
@@ -28868,11 +28867,11 @@ qJT-s
 Qj$xij0
 Qj/xnj0
 qK5B),	
-	QKyJ<
 	qL9	
 >QL^9
 	qL9i
 	qL9I
+	qN9)
 Qn=@-s	@
 qo[k!
 ~-QQC-
@@ -28922,7 +28921,6 @@ QuitServer() executing "quit"
 ?q?}WF
 "@:R".
 R-   
-R09hQ
 r0@GP!
 >r3\9
 ?r4GV~	
@@ -28930,16 +28928,16 @@ R59A#
 R5i98
 r)5IJY}
 r)5IJZ}
+R695I
 @-R8'
 ?R8q(2)
 *R)8yv
+r>9{#
 R@9h>
 r@9hr
 r@9ir
 R@9iR@9
 R"@9R
-R>9XU
-R	A	9
 RA9hR
 rA9ir
 RA9iR
@@ -29026,7 +29024,7 @@ razor
 RB9hR
 R~~C@
 r_cacheSequenceData
-Re9`4
+`RCyR
 Reached an unintended state: CPPTYPE_MESSAGE
 Reached impossible case in HasBit().
 reading weapons from %s
@@ -29503,7 +29501,7 @@ r_JeepViewZHeight
 rJ@LB
 rJMJJ
 rk5KJk}
-R?k78n%
+R?k78
 R(k)8
 R(k)8(
 R(kh8h
@@ -29625,14 +29623,14 @@ RunTimeOfDayCommand
 	R)v4N
 r_VehicleViewDampen
 r@y`&@
+`R@y7
+R@yC7
 `R@yh
 R@yHq
 r@yhr
 R	yi2
-`R@yO{
 R	yt2
 r	yu:
-R@yY,
 --- %s: 
 "%s" 
 "%s":
@@ -29694,6 +29692,7 @@ s7>Ip
 %s : %8.2f:  vol %.3f for '%s'
 %s : %8.2f: waiting scene to become interruptible
 s"@9)
+	!S9	
 S@9h"
 (SA9(
 %s:  added global entity %d %s (%s)
@@ -32289,7 +32288,6 @@ T+5@y
 T@8	S
 *T)8yv
 (@t9(
-	!t9	
 T(@@9
 T)	@9
 ?t`9B
@@ -32624,6 +32622,7 @@ Th>F9
 Th:F9
 Th.F9
 Th"F9
+Th"F9{g
 Th"F9h
 ThF@9h
 ThFT9
@@ -32662,7 +32661,7 @@ ThjF9H
 ThjO9
 ThJO9v
 ThjP9v
-ThJU9
+ThJU9TN
 ThJW9v
 Thj@y
 ThJ@y
@@ -32689,6 +32688,7 @@ THROW HULL BLOCKED
 THROW POST BLOCKED
 THROW PRE BLOCKED
 ThR@y
+ThR@yYQ
 Th"S9h
 Th"S9H
 ThS@9i
@@ -33269,6 +33269,7 @@ U-`>@
 \U%08x
 U: %.2f deg
 )u2@y
+!	@)U3
 u64( %lld = 0x%llX )
 U7r8Ne
 U8mAU
@@ -33276,8 +33277,8 @@ u9% &
 u"@9b
 U9iRV9
 ]u9n5;> )"
+U@9@sG
 	uA9?
-!	@)UC
 %u[%d]
 uD-@	D-
 udp_connect_ip
@@ -33793,6 +33794,7 @@ v8callback
 v8object
 v8value
 V8@yCx@9A|@9
+	!v9	
 V9i2F9
 v@9iv
 ?(-\Va3
@@ -34521,7 +34523,6 @@ V@y!yv
 Vzjii
 v>zlK9T
 @W?,}
-#()(W
 W-!("
 W)` !
 W3|Uxa
@@ -34820,6 +34821,7 @@ wrong submessage type
 W`@-Y
 WY@)U	@
 ?Wzm6V"
+)x^	)
 @%@x	
 x]/(@
 \x%02x
@@ -34838,7 +34840,6 @@ x6ij@
 x6iz@
 x6`J@
 X6jR@
-)x^	)6L
 X75	`7
 x7hRF
 X7i*@
@@ -34919,8 +34920,8 @@ yh6@yu:
 yh*^9
 yh*[9
 yh*\9
-yh*a9
 yh&A9
+yh*a9TA
 @yhb@
 yh*b9
 yhbI9
@@ -35025,7 +35026,6 @@ yl	@y,1
 @yL	@yJ
 Ym@)\	@
 %Y-%m-%dT%H:%M:%SZ
-@y ME
 *	@ym	@y
 y*M@yJ
 @Y_nA
