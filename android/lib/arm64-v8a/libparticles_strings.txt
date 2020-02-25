@@ -5,6 +5,7 @@
 !^   
 !^!("
 !@-		@
+.-@-*	@
 '":|;
 ". ( 
 )@-		@
@@ -18,6 +19,7 @@
 @-!	!
 @-@ !
 @-@ #
+@-@"#
 @-$	@
 @-&	@
 @-#(!
@@ -46,7 +48,7 @@ $@)  "
 1 0 0
 100.0
 100000
-100000.0
+1000000
 100000000
 1000000000
 1000 1000 1000
@@ -68,7 +70,6 @@ $@)  "
 .125 .125 .125
 -128 0 0
 12@9?
-12CEmptyConVar
 12CGeneralSpin
 12C_OP_FadeOut
 12C_OP_SetToCP
@@ -130,7 +131,6 @@ $@)  "
 16CPointConstraint
 16CTwistConstraint
 16ISceneObjectDesc
-17C_INIT_CodeDriven
 17C_INIT_MakeShapes
 17C_OP_DistanceCull
 17C_OP_DistanceToCP
@@ -166,6 +166,7 @@ $@)  "
 18C_OP_SetCPtoVector
 18C_OP_VelocityDecay
 18CParticleSystemMgr
+18CPlaceholderConVar
 18IParticleSystemMgr
 19CBoneConstraintBase
 19C_INIT_CreateOnGrid
@@ -189,6 +190,7 @@ $@)  "
 +1@)-%A)
 1bL9?2
 1bQJ1~
+1C-!I@
 1DBlend
 -1 for all asleep, 1 for all awake
 1ik8 il8)ip8R
@@ -254,7 +256,6 @@ $@)  "
 22C_INIT_Orient2DRelToCP
 22C_INIT_RemapCPtoScalar
 22C_INIT_RemapCPtoVector
-22C_OP_CodeDrivenEmitter
 22C_OP_ConstrainDistance
 22C_OP_ContinuousEmitter
 22C_OP_ControlpointLight
@@ -266,6 +267,7 @@ $@)  "
 22C_OP_RenderScreenShake
 22C_OP_SequenceFromModel
 22C_OP_SetFromCPSnapshot
+22C_OP_SetSimulationRate
 22C_OP_UpdateLightSource
 22CParticleFunctionForce
 22CSceneAnimatableObject
@@ -354,6 +356,7 @@ $@)  "
 27C_INIT_OffsetVectorToVector
 27C_INIT_RandomSecondSequence
 27C_INIT_VelocityRadialRandom
+27CModelConfigElement_Command
 27C_OP_ColorInterpolateRandom
 27C_OP_DistanceBetweenCPsToCP
 27C_OP_LocalAccelerationForce
@@ -423,6 +426,7 @@ $@)  "
 2@9PU
 2_BONE_IK
 2F9c|
+2H339
 	2	i*
 2i2@9
 2)ia8
@@ -527,7 +531,6 @@ $@)  "
 32CParticleFunctionDefinitionTypedI16C_OP_RenderRopesE
 32CParticleFunctionDefinitionTypedI16C_OP_RenderSoundE
 32CParticleFunctionDefinitionTypedI16C_OP_VectorNoiseE
-32CParticleFunctionDefinitionTypedI17C_INIT_CodeDrivenE
 32CParticleFunctionDefinitionTypedI17C_INIT_MakeShapesE
 32CParticleFunctionDefinitionTypedI17C_OP_DistanceCullE
 32CParticleFunctionDefinitionTypedI17C_OP_DistanceToCPE
@@ -614,7 +617,6 @@ $@)  "
 32CParticleFunctionDefinitionTypedI22C_INIT_Orient2DRelToCPE
 32CParticleFunctionDefinitionTypedI22C_INIT_RemapCPtoScalarE
 32CParticleFunctionDefinitionTypedI22C_INIT_RemapCPtoVectorE
-32CParticleFunctionDefinitionTypedI22C_OP_CodeDrivenEmitterE
 32CParticleFunctionDefinitionTypedI22C_OP_ConstrainDistanceE
 32CParticleFunctionDefinitionTypedI22C_OP_ContinuousEmitterE
 32CParticleFunctionDefinitionTypedI22C_OP_ControlpointLightE
@@ -626,6 +628,7 @@ $@)  "
 32CParticleFunctionDefinitionTypedI22C_OP_RenderScreenShakeE
 32CParticleFunctionDefinitionTypedI22C_OP_SequenceFromModelE
 32CParticleFunctionDefinitionTypedI22C_OP_SetFromCPSnapshotE
+32CParticleFunctionDefinitionTypedI22C_OP_SetSimulationRateE
 32CParticleFunctionDefinitionTypedI22C_OP_UpdateLightSourceE
 32CParticleFunctionDefinitionTypedI23C_INIT_ChaoticAttractorE
 32CParticleFunctionDefinitionTypedI23C_INIT_DistanceToCPInitE
@@ -790,6 +793,7 @@ $@)  "
 32CParticleFunctionDefinitionTypedI38C_INIT_RemapNamedModelBodyPartToScalarE
 32CParticleFunctionDefinitionTypedI38C_INIT_RemapNamedModelSequenceToScalarE
 32CParticleFunctionDefinitionTypedI38C_OP_RemapNamedModelMeshGroupOnceTimedE
+32CParticleFunctionDefinitionTypedI38C_OP_SetControlPointToVectorExpressionE
 32CParticleFunctionDefinitionTypedI39C_INIT_RemapNamedModelMeshGroupToScalarE
 32CParticleFunctionDefinitionTypedI39C_OP_MovementMoveAlongSkinnedCPSnapshotE
 32CParticleFunctionDefinitionTypedI39C_OP_RemapControlPointDirectionToVectorE
@@ -853,6 +857,7 @@ $@)  "
 38C_INIT_RemapNamedModelBodyPartToScalar
 38C_INIT_RemapNamedModelSequenceToScalar
 38C_OP_RemapNamedModelMeshGroupOnceTimed
+38C_OP_SetControlPointToVectorExpression
 39C_INIT_RemapNamedModelMeshGroupToScalar
 39CKV3Transfer_EmptyResourceLoadInterface
 39C_OP_MovementMoveAlongSkinnedCPSnapshot
@@ -898,6 +903,7 @@ $@)  "
 .5 .5 .5
 5hf@9
 5hFG9h
+5hJG9
 5hJG9(
 5iFE9jJ
 )5IJ(}
@@ -913,8 +919,8 @@ $@)  "
 6hbE9
 6hb@y
 6hrZ9
-6il8n
 6n8+a
+6Y3s9
 (7c8%
 7hb@9h
 7hf@9
@@ -924,7 +930,6 @@ $@)  "
 7ib@9i
 7IConVar
 7)ij8
-7in8p
 7Jik8
 7.yw"@
 8]@)6	@
@@ -947,6 +952,7 @@ $@)  "
 9*AA9
 @9_aAkA
 @9_aYkA
+)@9ba
 @9?c@kA
 9C_OP_Cull
 9C_OP_Spin
@@ -962,15 +968,15 @@ $@)  "
 9i(x(?
 @9_`[kA
 @9_`@kA
-9	PE9J-C
+9	PE9J=D
 @9_`RkA
 (@@9t
 (@@9t"
 (@@9t"	
 (@@9tb
 (@@9tB
+(@@9u
 (@@9u"
-(@@9ub
 @9)uG
 @9wiu
 9@z(~`
@@ -982,15 +988,17 @@ A-!8
 a]8Ja
 A-'@A-
 ?AAk	"
+	AB9I
 AB-!H#
 AbsolutePoseControl
 abs( %s )
-	Ac9)
 Acceleration
+Access of unconnected ConVarRef
+Access of unconnected SplitScreenConVarRef
 ACT_IDLE
 activity override
 ACT_NEUTRAL_REF_POSE
-	ad9	
+A	@-D	@
 Add a wind-like force to particles that used the particle normal to scale the force
 Add Decay to Bounce
 Additive alpha - write alpha during additive
@@ -1002,6 +1010,7 @@ Add to Current Value
 Add to Initial Value
 Add vector to vector
 >Ae@?
+	Ae9	
 )aE9Be@
 *AE9j
 AE_ACTION_SET_TURN_RATE_SCALE
@@ -1043,7 +1052,6 @@ ahe8chf8
 ai_model_info
 AIWalkable
 A[k+"
-)aL9(
 )aL9)
 )aL9j
 +aL9k
@@ -1124,6 +1132,7 @@ AnimDelta
 AnimEvent
 AnimFile
 animgraph0
+animgraph1
 AnimGraphEditorUtils001
 AnimIkLockLocal
 AnimLayer
@@ -1179,7 +1188,6 @@ Attempt to read and write stencil at the same time on a particle system. Ignorin
 attenuation0
 attenuation1
 attenuation2
-Attribute counts between meshes is inconsistent
 attribute_%d
 attributes
 attribute to cache to
@@ -1196,6 +1204,8 @@ Avg. Render (us)
 avg_sim
 Avg. Sim (us)
 ?AVki#
+	Ax9)
+	ay9	
 B-#@!
 B-1HD-
 *-B),5C)_
@@ -1234,7 +1244,7 @@ baselayer
 BasePhysicsShape
 Base Spring; 
 batch particle systems
-Bc9hB#9
+BB9Zz
 B-,	D-/
 bE9  (
 BE91~
@@ -1245,8 +1255,10 @@ behavior if parent particle dies
 BenchmarkService001
 bentnormal
 BentNormalData
+BEyhB
 bF9hb
 BF9hB
+bh9hb(94*
 bias distance
 biased 0 500
 bias in local space
@@ -1319,7 +1331,6 @@ __bss_start__
 bT9hb
 BT9hB
 /BT?OB
-Bu9hB59m+
 BuildParticleSimList
 bulge control 0=random 1=orientation of start pnt 2=orientation of end point
 Bump Strength
@@ -1328,6 +1339,7 @@ burst_randomize
 burst_scale
 BY9hB
 B@yhB
+bz9hb:9
 C-2-@
 C-!8"
 cable end cap offset amount
@@ -1338,6 +1350,8 @@ cablevertices
 cache attribute to read from
 CAimConstraint
 Calculate vector attribute
+CAnimMotorList
+CAnimMovementManager
 Cannot allocate abstract class
 Cannot construct abstract class
 Cannot copy abstract class
@@ -1372,6 +1386,7 @@ CConstraintSlave
 CConstraintTarget
 C-d	 
 CDrawCullingData
+%C-e	
 center around control point
 center core radius
 center offset
@@ -1395,10 +1410,10 @@ CHitBoxSet
 CHitBoxSetList
 C-HU@
 Cie8;ye
+Cim8Diq8p
 C_INIT_AddVectorToVector
 C_INIT_AgeNoise
 C_INIT_ChaoticAttractor
-C_INIT_CodeDriven
 C_INIT_ColorLitPerParticle
 C_INIT_CreateAlongPath
 C_INIT_CreateFromCPs
@@ -1542,6 +1557,7 @@ CMesh Cannot create packed input layout, because the bone indices are out of ran
 CModelConfig
 CModelConfigElement
 CModelConfigElement_AttachedModel
+CModelConfigElement_Command
 CModelConfigElement_RandomColor
 CModelConfigElement_RandomPick
 CModelConfigElement_SetBodygroup
@@ -1553,8 +1569,6 @@ CMorphConstraint
 CNewParticleEffect
 CNewParticleEffect *CParticleProperty::Create(const char *, ParticleAttachment_t, AttachmentHandle_t, CUtlStringToken, Vector, matrix3x4_t *)
 CNewParticleEffect::DetectChanges
-Code driven emitter
-Code driven initializer
 cohesion strength
 CollectionFloatInput()
 CollectionVecInput()
@@ -1609,7 +1623,7 @@ ConfigAttachedModel
 config_state
 ConfigurationSystem_001
 configvalue.cpp
-Confirm Collision
+Confirm Collision Speed Threshold
 Constant Interpolation
 Constant - No Falloff
 Constrain distance to path between two control points
@@ -1671,7 +1685,6 @@ C_OP_Callback
 C_OP_ChooseRandomChildrenInGroup
 C_OP_ClampScalar
 C_OP_ClampVector
-C_OP_CodeDrivenEmitter
 C_OP_ColorAdjustHSL
 C_OP_ColorInterpolate
 C_OP_ColorInterpolateRandom
@@ -1864,6 +1877,7 @@ C_OP_SetControlPointToHand
 C_OP_SetControlPointToHMD
 C_OP_SetControlPointToImpactPoint
 C_OP_SetControlPointToPlayer
+C_OP_SetControlPointToVectorExpression
 C_OP_SetCPOrientationToDirection
 C_OP_SetCPOrientationToGroundNormal
 C_OP_SetCPOrientationToPointAtCP
@@ -1877,6 +1891,7 @@ C_OP_SetParentControlPointsToChildCP
 C_OP_SetPerChildControlPoint
 C_OP_SetPerChildControlPointFromAttribute
 C_OP_SetRandomControlPointPosition
+C_OP_SetSimulationRate
 C_OP_SetSingleControlPointPosition
 C_OP_SetToCP
 C_OP_SetVec
@@ -2042,6 +2057,8 @@ cylinder top control point
 @-D	@
 D-@ !
 *-D),5E)_
+=d6W9
+=d6W9:(
 D- 8 
 D9  "
 D9!	)
@@ -2050,6 +2067,7 @@ D90zp
 D95il
 D96yu
 D98yh
+D9B8#
 D9bxb
 D9Byi
 D9Byk
@@ -2058,10 +2076,12 @@ D9Eyi
 D9Eyk
 D9Fyk
 D9({h
+D9h{h
 D9H{h
 D9hyh
 D9Hyh
 D9hzh
+D9i{i
 D9)ij
 D9)ir
 D9)iv8Hyh
@@ -2069,7 +2089,6 @@ D9iyi
 D9Iyi
 D9Iyl
 D9Iyy
-D9jcB
 D9Jy|
 D9Jyh
 D9jyj
@@ -2107,6 +2126,7 @@ D9)yj
 D9^yk
 D9)yk
 D9[yk
+D9+yk
 D9 zk
 D9Zyo
 D)`AF)j9@
@@ -2130,6 +2150,7 @@ Default HSV Color
 default_sort
 default text
 default value
+<deferred>
 (%d)  EffectName "%s"  Dormant? %s  Emission Stopped? %s 
 def min cpu=%d system cpu=%d def gpu=%d system gpu=%d
  ( def. "%s" )
@@ -2148,6 +2169,7 @@ dest control point component
 dest CP
 destination scalar field
 destroy all particles immediately
+destroy particles immediately when child is removed
 $DETAIL2BLENDFACTOR
 DETAIL_2_COMBO_ADD
 DETAIL_2_COMBO_ADD_SELF_ILLUM
@@ -2225,8 +2247,6 @@ duration at which to stop
 duration field
 duration scale
 Duration value for path point
-=dvU9
-=dvU9f
 .dynamic
 __dynamic_cast
 DynamicConfigList
@@ -2234,17 +2254,15 @@ dynamic control point count
 dynamic_interaction
 .dynstr
 .dynsym
-!	@|e
 E9!( 
 E9!	 
 E9	~	
 "E9`B
-E9)%C
 `E9	dE9
 "E9h"
 *E9h*
  E9LU
-E9)MC
+E9(yh
 E9	yj
 EarlyRetireParticleSystems
 ease in and out
@@ -2253,6 +2271,7 @@ E-B0@
 EconItemToolModel_001
 _edata
 EditorDynamicConfig
+@=@eE
 .eh_frame
 .eh_frame_hdr
 eikonal
@@ -2363,6 +2382,7 @@ External generic forces
 External wind force
 Extra Arc Data Point
 =!@f>
+f@)`"	
 >!@F>
 *-F),5G)_
 f@9H1
@@ -2402,6 +2422,7 @@ F_ALPHA_TEST
 false
 F_ANIMATE_IN_FPS
 FATAL ERROR: unable to register all schema data: %s
+f@)`B
 F_BLENDFRAMES_SEQ0
 FCVAR_NEVER_AS_STRING
 f %d %d %d
@@ -2528,8 +2549,7 @@ gBF9b
 GCC: (GNU) 4.9.x 20150123 (prerelease)
 g cMesh
 g default
-GE9h8
-../_generated_code/particles/release/androidarm64/../../../../particles/pfunc_renderers.cpp(7296): 
+../_generated_code/particles/release/androidarm64/../../../../particles/pfunc_renderers.cpp(7380): 
 GenerateDistanceField
 generate normals for cylinder
 GenerateResourceNameFromFileName: Invalid extension specified in file name "%s"!
@@ -2555,6 +2575,7 @@ GLOW_RGB
 .gnu.version
 .gnu.version_r
 golden angle (is 137.508)
+gO-tN4
 .got.plt
 g_pMemAlloc
 G@-R*5
@@ -2567,7 +2588,6 @@ g_VProfCurrentProfile
 h&?);
 h&@)?
 #H)	}	
-H1O9ImH
 h1xij 
 h1xkj.
 h)8Ay)
@@ -2586,16 +2606,13 @@ HAT	K
 hb@9`
 hb@9(
 hb@9(  
-hB@9`
 hB@9h
 hb@9v
 hBE9i
 HBroot
 h&Byu"
 HC@9h
-.-@-hCE9*	@
 *hCE9
-*h#E9
 h'E9B
 h#E9h
 h+E9H
@@ -2615,8 +2632,6 @@ hf@9i
 hfByub
 hFByuB
 hFD9u
-hfU9vU
-Hih8Iii8
 Hih8Jik8)yk
 hih8kij8)yj
 hih8kil8Jyl
@@ -2627,9 +2642,9 @@ hii8Iyi
 hii8kin8
 hii8Vyi
 H$@iJ
-Hik8kzk
 Hik8+yk
 Hil8J
+Hin8KU
 Hitboxes fall back to render bounds
 Hitbox Index
 HITBOX_INDEX
@@ -2641,10 +2656,10 @@ Hitbox Offset Position
 HITBOX_RELATIVE_XYZ
 hitbox set
 H%@)J	@
-hj48k
-hj58&
+=hjh8
+=hJW9@
 hk989
-hnU9z
+=hNW9
 hollow
 horizontal texture offset
 horizontal texture scale
@@ -2655,23 +2670,24 @@ hrE9(
 hRG9h
 hrZ9(
 HsE9AKA
-=hsP9
 HSV Shift Control Point
 HSV Shift to control point
 hue adjust
 hurt_me
 hurt_them
 hVG9aBA
+h&W9vU
+h.W9z
 hwB9(
 h&@y)1G
 #@)i"@
+	)@)i
 	)@)i*
 	)@)I(
 =i0@9
 i1xhj*
 i1xjj,
 i6@yh
-i;8DW
 i`8Jy`
 i`8ky`
 I@@9JD@9KH@9(
@@ -2686,7 +2702,7 @@ ib@9)
 ib@9j
 ib@9l
 iBE9_
-*iCA9j
+ICA9J
 I cannot be refracted through refracting objects like water
 IControlPointEditorData
 I CUtlLinkedList<int, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short> >::AllocInternal(bool) [T = int, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short>]
@@ -2700,7 +2716,6 @@ id8jyd
 )idx?
 )idx9
 iFE9jJ
-ifU9hz
 i:G9"
 Ignore delta time (RenderTrails)
 ignore normal
@@ -2716,10 +2731,9 @@ ignore radius
 .ih80ik8/ij8)il8
 [ih88yh
 (ih8aJA
+)ih8({h
 ih8Hyh
 |ih8Hyh
-(ih8i
-(ih8I
 *(ih8I
 (ih8)ij8
 .ih8/ik8)il8
@@ -2729,7 +2743,6 @@ ih8Hyh
 -ih8Wyh
 \ih8(yh
 ih8,yl
-II=)1A
 ii8Iyi
 ii8Jyk
 ii8nyi
@@ -2748,7 +2761,6 @@ iii8\yl
 %i %i %i %i
 iiix+
 iil8rio8Lyl
-Iin8Wio8Jip8
 I-IU@
 Ii+x!
 i"@)j
@@ -2767,11 +2779,11 @@ ij8kym
 ij8*yj
 iJG9hR
 iJG9i
-ijU9`
 <i)@)k	@
 *ik8!
-\ik8hbU94yk
+\ik8h"W94yk
 +ik8)ij8
+ik8+{k
 ik8Kyk
 -ik8Kyk
 ik8Pym
@@ -2795,6 +2807,7 @@ il8,yl
 il8/yl
 i*?)m
 im8iym
+im8nyh
 ,im8o
 im8pih8Syh
 im8Rih8
@@ -2809,8 +2822,7 @@ IMPULSE_TYPE_NONE
 IMPULSE_TYPE_PARTICLE_SYSTEM
 IMPULSE_TYPE_ROPE
 =)in8
-*in8!(
-:in82
+*in8!
 in8aYj
 in8dyp
 in8Jyn
@@ -2851,7 +2863,6 @@ Init Vec
 Init vector attribute from a list of values
 innerconeangle
 inner cone angle
-Input 1
 input field
 input field 0-2 X/Y/Z
 input field 1
@@ -2896,7 +2907,7 @@ interpolation scale
 interval to snap to
 intraframe zoom amount for sequence 0
 intraframe zoom amount for sequence 1
-inU9h
+Invalid access of deferred ConVarRef for '%s'
 invalid_bone
 Invalid Color Control Point
 Invalid compressed buffer size
@@ -2942,17 +2953,19 @@ ir8OH/
 ir8\yr
 ir@9	
 iRG9hBA
-=iRU9kVU9lZU9
 is_debris
 it8oU
 it8.yt
 #It contains connectivity part %d with %d vertices
 itemgroups
-i"T)j
 iu8Hyu
+i"U)j
 iv8Myv
 iv8(yv
 iw8\yw
+i*W9`
+i&W9h:
+i.W9hB
 ix8[yx
 ix8\yx
 i#xjj-
@@ -2961,7 +2974,8 @@ iy89yy
 @-J	,
 j0@98
 j2?)?
-J78cK
+J38CK
+J686L
 j`8'k`8
 "J9h"
 J9sJ<
@@ -2979,20 +2993,19 @@ J?Constrain distance to control point
 J-dj@
 JEIJJ}
 J%F9!
-JG9hJ
-j&@-h
 jh8Gkh8
-jh8({h
-jh8hzh
-jh8J}
 ji8hj)8
 Jib8_
 Jidx?
 Jig82yg
 JIGGLE_BONE
 jiggle bone %u
+*jih8(yh
+Jih8(yh
+Jii8	yi
 JIIJJ}
 jij8iii8
+Jik8+yk
 =Jil8
 Jil8kyl
 Jim8KU
@@ -3016,8 +3029,6 @@ k?!@&>
 	K	}@
 K1B)M9C)
 k2D-m:E-
-kaL9(
-kaL9)
 kaL9*
 @-kaL9JU
 kBE9?
@@ -3030,9 +3041,10 @@ Kib8Cie8Lif8Jig8
 =Kib8:yb
 kicxJ
 kih84yh
+Kih8Lii8
 Kih8(yh
 kii8Hyi
-Kii8K
+kii8Iyi
 kijxj
 Kik80yl
 Kik82yl
@@ -3054,7 +3066,7 @@ K)@)j
 kki8K
 kl8rhl8
 KMeansQuantization
-kMih8Jik8+yk
+kMih8.yh
 *(kt8H
 kt8;k48
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
@@ -3067,7 +3079,6 @@ Last/Newest Particle
 last_sniff
 latency CP
 latency CP field
-l#E9l
 Left Hand
 Length; 
 length max
@@ -3159,6 +3170,7 @@ LightmapUV
 LightmapUVW
 lightness adjust
 light per vertex
+light priority
 light radius multiplier
 lightsourceshape
 LightSourceShape_t
@@ -3167,9 +3179,11 @@ lighttype
 light type
 LightType_t
 L-(ih8
-Lih8hzh
-Lih8Jik8+yk
+Lih8.
+Lih8Jik8-yh
 lih8kii8
+lih8(yh
+lii8Iyi
 Lii8Jih8uyh
 Lii8Mim8
 lij8*yj
@@ -3192,6 +3206,7 @@ Line %d: Invalid value "%s"
 Line %d: %s
 Line length constraint
 Line segments
+Lir8Qie8
  %llu aggs, %s total data
 LoadKV3ObjectInPlace error: %s
 Local acceleration force
@@ -3224,7 +3239,6 @@ LowerEyelid(
 lowprecisionuv
 lowprecisionuv1
 low violence definition
-l @_p
 L?Render fog sprites
 LrwcE
 L-Vil8IU
@@ -3250,6 +3264,7 @@ manual time placement field
 mapbuilder.nodraw
 mapbuilder.occluder
 MapListService_001
+m_Args
 master_morph_weight
 MATCHFRAMEWORK_001
 material float variables
@@ -3292,6 +3307,7 @@ max_expected
 max force
 maxHullVertices
 Maximum Count
+maximum creation distance
 maximum distance
 maximum distance end
 maximum distance middle
@@ -3341,7 +3357,6 @@ m_bActiveRange
 m_bAdditive
 m_bAdditiveAlpha
 m_bAllocated
-m_bAlpha
 m_bAnimated
 m_bAnimateInFPS
 m_bAnimationNonLooping
@@ -3365,8 +3380,6 @@ m_bClampLowerRange
 m_bClampUpperRange
 m_bClampV
 m_bClosedLoop
-m_bColor
-m_bConfirmCollision
 m_bCopyAlpha
 m_bCopyColor
 m_bCopyRadius
@@ -3375,6 +3388,7 @@ m_bCullInside
 m_bCullOnMiss
 m_bCullOutside
 m_bDecayBounce
+m_bDerivative
 m_bDestroyImmediately
 m_bDirectionOnly
 m_bDisableAggregation
@@ -3422,7 +3436,6 @@ m_bHasBakedLightingBasisInVertex
 m_bHasBakedLightingFromLightMap
 m_bHasBakedLightingFromVertexStream
 m_bHasCullingData
-m_bHasPerInstanceBakedLightingData
 m_bHideMaterialGroupInTools
 m_bHideRenderColorInTools
 m_bHollow
@@ -3504,7 +3517,6 @@ m_BoundingBoxMax
 m_BoundingBoxMin
 m_bOutline
 m_bOverrideTranslucentMaterials
-MbP?<
 m_bParticleFeathering
 m_bParticles
 m_bPerParticle
@@ -3513,15 +3525,13 @@ m_bPerVertexLighting
 m_bPlaceAlongPath
 m_bPlayEndCap
 m_bPlayEndcapOnStop
-m_bPosition
-m_bPrevPosition
 m_bProjectCharacter
 m_bProjectWater
 m_bProjectWorld
 m_bProportional
 m_bProportionalOp
+MbP? z
 m_bRadialCheck
-m_bRadius
 m_bRadiusScale
 m_bRandom
 m_bRandomDistribution
@@ -3532,6 +3542,7 @@ m_bRemapPullForceToLife
 m_bRemove
 m_bRenderDiffuse
 m_bRenderSpecular
+m_bRenderTransmissive
 m_bResetAnimOnStop
 m_bReverse
 m_bReverseOrder
@@ -3541,7 +3552,6 @@ m_bRigid
 m_bRopeDecay
 m_bRopes
 m_bRopesZOnly
-m_bRotation
 m_bRunForParentApplyKillList
 m_bSaturateColorPreAlphaBlend
 m_bSaveOffset
@@ -3557,8 +3567,6 @@ m_bScaleRadius
 m_bScaleVelocity
 m_bScreenSpaceEffect
 m_bSelected
-m_bSequence
-m_bSequence1
 m_bSetNormal
 m_bSetOnce
 m_bSetOrientation
@@ -3631,7 +3639,7 @@ m_bWriteNormal
 m_bWriteStencilOnDepthFail
 m_bWriteStencilOnDepthPass
 m_bXYVelocityOnly
-mCE9o
+mCE9jI*
 m_CenterOffset
 m_ChainData
 m_ChildRef
@@ -3647,6 +3655,7 @@ m_ColorFadeMin
 m_ColorMax
 m_ColorMin
 m_ColorScale
+m_Command
 m_ConeAxis
 m_ConeCutoff
 m_ConfigName
@@ -3773,6 +3782,7 @@ m_flClusterRefireTimeMax
 m_flClusterRefireTimeMin
 m_flClusterSize
 m_flCohesionStrength
+m_flCollisionConfirmationSpeed
 m_flColorMapOffsetU
 m_flColorMapOffsetV
 m_flColorWarpIntensity
@@ -3929,6 +3939,7 @@ m_flLOSScale
 m_flMax
 m_flMaxAngle
 m_flMaxBoneVelocity
+m_flMaxCreationDistance
 m_flMaxDist
 m_flMaxDistance
 m_flMaxDistance0
@@ -4081,6 +4092,7 @@ m_flSequence1AlphaWeight
 m_flSequence1RGBWeight
 m_flShadowCascadeDistance
 m_flShakeDuration
+m_flSimulationScale
 m_flSlideAmount
 m_flSlopeIncoming
 m_flSlopeOutgoing
@@ -4199,6 +4211,7 @@ m_hOverrideMaterial
 m_hOwner
 m_hProjectedMaterial
 @Mhr@
+@Mhr%
 m_hReferenceReplacement
 m_hSnapshot
 m_hTexture
@@ -4206,11 +4219,12 @@ m_hTexture
 m_iAttachType
 m_iControlPoint
 mid point position
+Mih8H
 =Mih8Nio8Jil8(yh
 mih8Vyh
 Mih8(yh
-Mii8i
 *Mii8Jik8
+Mii8kU
 mii8ril8.
 @Miih8kij8
 mij8N
@@ -4224,7 +4238,6 @@ Mim81yk
 mim8kin8Jyn
 Mim8n
 Mim8Qii8Rik8
-Min80
 min8Nyn
 Min8P
 min8pii8qil8
@@ -4291,7 +4304,6 @@ MissingParentInheritBehavior_t
 MISSING_PARENT_KILL
 Missing snapshot buffer block
 M)Iyi
-@MJ|@
 )MJJ }
 m_JointConstraintData
 m_JointConstraintPairs
@@ -4332,6 +4344,7 @@ m_MinForce
 m_model
 m_ModelList
 m_morphSet
+m_MotorList
 mM@x_
 m_nAggregationMinAvailableParticles
 m_nAllowRenderControlPoint
@@ -4578,6 +4591,7 @@ m_nRefCP1
 m_nRefCP2
 m_nRefractBlurRadius
 m_nRefractBlurType
+m_nRoundness
 m_nScalarAttribute
 m_nScalarFieldForTextureCoordinate
 m_nScaleControlPoint
@@ -4769,6 +4783,7 @@ m_pDebugName
 m_Phi
 m_pJointConstraintData
 m_PlaneNormal
+m_pMovementManager
 m_pName
 m_pNext
 m_pointList
@@ -4792,7 +4807,6 @@ MPropertySortPriority
 MPropertySuppressField
 m_pSemantic
 m_pszCullReplacementName
-<"m_pszSnapshotName
 m_pszSoundName
 m_pszTargetLayerID
 m_pszTimeOfDayParameter
@@ -4957,6 +4971,8 @@ m_vGravity
 m_vHeelOffset
 m_vInfluenceOffsets
 m_vInfluenceRotations
+m_vInput1
+m_vInput2
 m_vInputMax
 m_vInputMin
 m_vInterpOutput0
@@ -4985,6 +5001,7 @@ m_vUpLS
 m_vUpVector
 m_vVectorAttributeScale
 m_wristBones
+M-"Yh
 'n(  
 &n(  
 #n(  
@@ -5054,11 +5071,12 @@ nin8rij8`il8
 Nin8&yo
 nio8qii8ril8
 !NJu|
-#Nk9F
+#Nk1F
 NLii8,
 NNih8Pil8i
 No Buffer
 No DATA block for resource '%s'
+<no deferred ref found>
 <NO EXPRESSION>
 <no failure reason set>
 noise amount 0
@@ -5082,6 +5100,7 @@ normalize
 Normalize3ComponentVectorInAttributes
 Normalized3x3SobelEdgeFilterFrom
 normalize fade times to endcap
+Normalize Input 1
 normalize output
 normalize output 0/1
 Normalize vector
@@ -5125,7 +5144,6 @@ nxjD-p
 O9in@
 O9l @
 O9L @
-O-b9.
 object local space axis 0/1
 # of children to enable
 # of children to set
@@ -5258,14 +5276,15 @@ override CP (X/Y/Z *= radius/density/speed)
 override CP (X/Y/Z *= radius/thickness/speed)
 override max velocity from this CP
 override translucent materials
-O-"Yh
 ($?)P
 	(P))}@
 p0@9QU
+"P9h"
 "pA3QuW
 PanoramaTextServices001
 PanoramaUIClient001
 PanoramaUIEngine001
+PARALLEL_PROCESS particlemgr.cpp:975
 PARALLEL_PROCESS utlsoacontainer.cpp:2533
 , parent: 
 PARENT
@@ -5480,6 +5499,7 @@ PF_RANDOM_MODE_COUNT
 PF_RANDOM_MODE_INVALID
 PF_RANDOM_MODE_VARYING
 PF_TYPE_COLLECTION_AGE
+PF_TYPE_CONTROL_POINT_CHANGE_AGE
 PF_TYPE_CONTROL_POINT_COMPONENT
 PF_TYPE_COUNT
 PF_TYPE_ENDCAP_AGE
@@ -5496,6 +5516,7 @@ PF_TYPE_PARTICLE_VECTOR_COMPONENT
 PF_TYPE_RANDOM_BIASED
 PF_TYPE_RANDOM_UNIFORM
 Ph`8 P@
+physaggregatedata.cpp
 physgun_interactions
 physib
 Physics
@@ -5551,6 +5572,7 @@ Plat_GetTime
 Plat_IsInDebugSession
 Plat_MSTime
 Plat_NeedsLowFragmentation
+Plat_SetDenormalsAreZero
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_USTime
 Plat_UUIDFromString
@@ -5617,17 +5639,15 @@ PreviewBoneAttachedModel
 PreviewBoneMergedModel
 PreviewPreset
 PreviewPresetList
-previous position
 previous position sacale
 previous position scale
 PREV_XYZ
 Print debug message every time a particle collection is created
 Print out information on existing particle systems
-priority
 Problem loading error.vpcf, please validate your game install
 _procedural_particle_snapshot.vsnap
 procedural_spritecard.vmat
-ProcessPSystem
+ProcessPSystems
 Profile particle
 Profile particle spike
 projected texture alpha test point scale field
@@ -5653,12 +5673,15 @@ pthread_mutex_init
 pthread_mutex_lock
 pthread_mutex_unlock
 ../public/ordered_constructor.h
+../public/scenesystem/vertexformat.h
+../public/tier0/globallist.h
 ../public/tier0/tslist.h
 ../public/tier1/utlblockmemory.h
 ../public/tier1/utlleanvector.h
 ../public/tier1/utllinkedlist.h
 ../public/tier1/utlrbtree.h
 ../public/tier1/utlsortvector.h
+../public/tier1/utlsymbol.h
 Pull towards control point
 p(?!@V>
 ?pvec_color_black
@@ -5682,7 +5705,7 @@ q0@9RU
 !^Q90
 QAngle
 ,QAy,
-,QAy*C
+,QAy*
 Qi"A)`
 q(ih8
 qih8*
@@ -5690,8 +5713,9 @@ qii8Iyi
 qJT-s
 Qj$xij0
 Qj/xnj0
-qk^U9iF
-qlbU9i.
+qk"W9
+QQ9(J(7h
+)QQ9)R(7
 Quadrilaterals
 Quantize Float
 QuarterSizeAttrWithBoxFilter
@@ -5866,7 +5890,7 @@ Render Flatten Grass
 RenderHardwareConfig002
 Rendering filter
 Render lights
-rendermesh.cpp(717): 
+rendermesh.cpp(712): 
 RenderMeshFile
 Render models
 render particles 100 times and show perf
@@ -5889,6 +5913,7 @@ Render Status Effect
 RenderSystemSurface001
 Render Text
 Render tonemap controller
+rendertransmissive
 Render Tree Shake
 RenderUtils_001
 Render VR Haptic Event
@@ -5923,6 +5948,7 @@ reverse point order
 reverse warp (0/1)
 reverse z-buffer test
 r_freezeparticles
+rFyhr
 RGB blend weight for sequence 0
 RGB blend weight for sequence 1
 rhBE9aFA
@@ -5931,6 +5957,7 @@ Rhk)8
 RHk)8
 Rhkh8h
 RHkh8h
+R*i+8
 R(i*8h
 r#ib8
 right eye first seq offset
@@ -5979,10 +6006,12 @@ Rotation spin yaw
 rotation strength
 Rotation yaw flip random
 Rotation yaw random
+roundness factor
 r_particle_crop
 r_particle_debug_force_simulation
 r_particle_enable_fastpath
 r_particle_max_detail_level
+r_particle_max_draw_distance
 r_particle_min_timestep
 r_particle_render_refreshes_sleep_timer
 r_particle_render_test
@@ -6155,6 +6184,7 @@ Set control point to particles' center
 Set control point to player
 Set control point to random position
 Set control point to time-of-day value
+Set control point to vector expression
 Set CP offset to CP percentage between two control points
 Set CP orientation to CP direction
 Set CP orientation to ground normal
@@ -6176,6 +6206,7 @@ Set per child control point from particle positions
 set positions in world space
 set Previous XYZ only
 Set Radius
+Set Simulation Timescale
 Set single control point position
 Set System-Wide Float
 set to trace endpoint if no collision
@@ -6202,6 +6233,7 @@ Sim Time Average: %.2fms
 Sim Time Max: %.2fms
 Sim Time Min: %.2fms
 Simulated
+simulation timescale
 singleplayer
 sin( %s )
 %s is trying to get CP object %d but the function read limit is %d
@@ -6420,6 +6452,7 @@ Th2Cy
 Th:Cy
 Th#E9Q90
 The maximum detail level of particle to create
+The maximum distance that particles will render
 Thf@9
 thickness
 TH$@iJ,Ai
@@ -6461,7 +6494,7 @@ tint perc
 TINT_RGB
 tint update movement threshold
 Ti"Q)`B@
-TJib8_
+Tj2@9j
 T?k(8
 TK	@9)A
 TKih8
@@ -6525,18 +6558,15 @@ twist axis
 Two Bone
 Two KV3 format GUIDs with the same human-friendly name ('%s')
 )UAy?
-U=c"U=d&U=e*U=f2U=g6U=p:U=qBU=rFU=sJU=
-uih8Hyh
 uii8Wyi
 uij8:yl
-Uik8-
 Uik8M
-@="uJ
 Ultra
 Unable to determine buffer encoding.
 Unable to find a valid model handle for m_bModelFromRenderer in '%s'
 Unable to read resource file %s!
 Unable to write file '%s'
+<unconnected>
 Underwater Explosion
 Unexpected end of file
 uniform speed
@@ -6596,11 +6626,13 @@ Use sequential CP pairs between start and end point
 use skinning instead of hitboxes
 useSmoothPaths
 use soft edges for distance alpha
+use the derivative
 use velocity for test direction
 Using 10-bit blend indices: are you sure they are supproted on the target hardware?
 Using 16-bit blend indices
 utlbuffer.cpp
 utlstring.cpp
+utlsymbol.cpp
 ,>u"u?
 $>!@v>
 V_acos
@@ -6633,6 +6665,16 @@ VectorAligned
 vector_component
 Vector Component
 Vector component random
+VECTOR_EXPRESSION_ADD
+VECTOR_EXPRESSION_DIVIDE
+VECTOR_EXPRESSION_INPUT_1
+VECTOR_EXPRESSION_MAX
+VECTOR_EXPRESSION_MIN
+VECTOR_EXPRESSION_MUL
+VECTOR_EXPRESSION_NORMALIZE_INPUT_1
+VECTOR_EXPRESSION_SUBTRACT
+VectorExpressionType_t
+VECTOR_EXPRESSION_UNINITIALIZED
 Vector random
 Velocity away from hitbox random
 Velocity Control Point
@@ -6664,6 +6706,7 @@ V_fmod
 V_fmodf
 V_fpclassify
 V_frexpf
+V-gBS-r
 V_GetFileExtension
 v %g %g %g
 v %g %g %g%s
@@ -6675,7 +6718,6 @@ VGUI_Surface032
 VGUI_System010
 view model effect
 Vin8A
-Vir8.
 Vir8N
 virtual void *CParticleTypeManager::GetErrorResource()
 V_IsAbsolutePath
@@ -6785,6 +6827,7 @@ V_stricmp_fast
 VStringTokenSystem001
 _V_strncmp
 _V_strncpy
+_V_strnicmp_fast
 V_strnlen
 V_strtod
 V_strtoi64
@@ -6818,7 +6861,6 @@ warp scale control point number
 warp transition start time
 warp transition time (treats min/max as start/end sizes)
 Wil8[in8Jip8:yn
-Wim8/
 Wim8O
 Within-Cluster Fire Count Before Cooldown
 Within-Cluster Refire Time
@@ -6837,18 +6879,20 @@ write stencil on z-buffer test success
 Writing kdTree with %d triangles
 written field
 @-X+<
+"X9h"
 	'@xaB
 X axis scaling scalar field
 X Dimension Count
 X Dimension Spacing
 xf@)*
-Xio81
 Xio8Q
 *-@x_! k
 Xkh86yh
 X offset of center point
+xrYm_pszSnapshotName
 XY velocity only
 @y`&@
+y	)@)
 	y4xl
 Yaw; 
 yaw_end
@@ -6894,7 +6938,6 @@ Z Dimension Spacing
 _ZdlPv
 zG9k}
 Zih8;yk
-Zii8izi
 zii8[yi
 Zik8*yl
 =Z.K>
@@ -6914,16 +6957,18 @@ _ZN13CBufferString5PurgeEi
 _ZN13CBufferString6FormatEPKcz
 _ZN13CBufferString6InsertEiPKcib
 _ZN13CBufferString8RemoveAtEii
+_ZN13CThreadRWLock11UnlockWriteEPKci
+_ZN13CThreadRWLock12LockForWriteEPKci
 _ZN16CThreadSemaphoreD1Ev
 _ZN17CThreadSyncObjectD2Ev
 ZN18CNewParticleEffect12StopEmissionEbbbbE3$_0
-_ZN22CThreadRWLock_FastRead20UnlockReadAccountingEj
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEj
+_ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
+_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
 _ZN22CThreadRWLock_FastReadC1Ev
 _Znam
 _ZnamRKSt9nothrow_t
 zn@)j
-_ZNV16CThreadFastMutex4LockEyj
+_ZNV16CThreadFastMutex4LockEPKciyj
 _Znwm
 _ZnwmRKSt9nothrow_t
 zrVij

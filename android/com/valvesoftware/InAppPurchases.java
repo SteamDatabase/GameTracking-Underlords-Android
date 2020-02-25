@@ -17,11 +17,18 @@ import com.android.billingclient.api.SkuDetails;
 import com.android.billingclient.api.SkuDetailsParams;
 import com.android.billingclient.api.SkuDetailsParams.Builder;
 import com.android.billingclient.api.SkuDetailsResponseListener;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.List;
 
 public class InAppPurchases implements PurchasesUpdatedListener {
+    private final int IAP_CONSUMED_STATUS_ERROR = 1;
+    private final int IAP_CONSUMED_STATUS_OK = 0;
+    private final int IAP_PURCHASE_STATUS_CANCELLED = 3;
+    private final int IAP_PURCHASE_STATUS_PENDING = 2;
+    private final int IAP_PURCHASE_STATUS_PURCHASED = 1;
+    private final int IAP_PURCHASE_STATUS_UNKNOWN = 0;
     private final String k_sSpewPackageName = "com.valvesoftware.InAppPurchases";
     /* access modifiers changed from: private */
     public boolean m_bBillingClientConnected = false;
@@ -92,33 +99,46 @@ public class InAppPurchases implements PurchasesUpdatedListener {
     public void onPurchasesUpdated(BillingResult billingResult, List<Purchase> list) {
         String str = "com.valvesoftware.InAppPurchases";
         if (billingResult.getResponseCode() == 0) {
-            for (Purchase purchase : list) {
-                String sku = purchase.getSku();
-                String purchaseToken = purchase.getPurchaseToken();
-                if (purchase.getPurchaseState() == 1) {
-                    StringBuilder sb = new StringBuilder();
-                    sb.append("Purchased: ");
-                    sb.append(sku);
-                    Log.d(str, sb.toString());
-                } else if (purchase.getPurchaseState() == 2) {
-                    StringBuilder sb2 = new StringBuilder();
-                    sb2.append("Purchased pending for: ");
-                    sb2.append(sku);
-                    Log.d(str, sb2.toString());
+            if (list != null) {
+                for (Purchase purchase : list) {
+                    String sku = purchase.getSku();
+                    String purchaseToken = purchase.getPurchaseToken();
+                    int i = 0;
+                    if (purchase.getPurchaseState() == 1) {
+                        StringBuilder sb = new StringBuilder();
+                        sb.append("Purchased: ");
+                        sb.append(sku);
+                        Log.d(str, sb.toString());
+                        i = 1;
+                    } else if (purchase.getPurchaseState() == 2) {
+                        StringBuilder sb2 = new StringBuilder();
+                        sb2.append("Purchased pending for: ");
+                        sb2.append(sku);
+                        Log.d(str, sb2.toString());
+                        i = 2;
+                    }
+                    UpdateIAPPurchaseStatus(sku, purchaseToken, i, purchase.isAcknowledged());
                 }
-                UpdateIAPPurchaseStatus(sku, purchaseToken, purchase.getPurchaseState(), purchase.isAcknowledged());
             }
-        } else if (billingResult.getResponseCode() == 1) {
-            Log.d(str, "user cancelled purchase");
-        } else {
+        } else if (billingResult.getResponseCode() != 1) {
             StringBuilder sb3 = new StringBuilder();
             sb3.append("onPurchasesUpdated error: ");
             sb3.append(billingResult.getDebugMessage());
             Log.d(str, sb3.toString());
+        } else if (list != null) {
+            for (Purchase purchase2 : list) {
+                String sku2 = purchase2.getSku();
+                String purchaseToken2 = purchase2.getPurchaseToken();
+                StringBuilder sb4 = new StringBuilder();
+                sb4.append("user cancelled purchase for: ");
+                sb4.append(sku2);
+                Log.d(str, sb4.toString());
+                UpdateIAPPurchaseStatus(sku2, purchaseToken2, 3, purchase2.isAcknowledged());
+            }
         }
     }
 
-    public void querySkuDetails(final List<String> list) {
+    public void querySkuDetails(final List<String> list, final Runnable runnable) {
         runBillingClientJob(new Runnable() {
             public void run() {
                 Builder newBuilder = SkuDetailsParams.newBuilder();
@@ -140,6 +160,9 @@ public class InAppPurchases implements PurchasesUpdatedListener {
                                 InAppPurchases.this.m_skuDetailsTable.put(sku, skuDetails);
                             }
                             InAppPurchases.UpdateIAPPricing(sku, skuDetails.getOriginalPrice(), skuDetails.getPrice());
+                        }
+                        if (runnable != null) {
+                            runnable.run();
                         }
                     }
                 });
@@ -174,9 +197,24 @@ public class InAppPurchases implements PurchasesUpdatedListener {
                 SkuDetails skuDetails = (SkuDetails) InAppPurchases.this.m_skuDetailsTable.get(str);
                 if (skuDetails == null) {
                     StringBuilder sb2 = new StringBuilder();
-                    sb2.append("purchaseSku error. sku not found: ");
+                    sb2.append("querying sku details before purchasing: ");
                     sb2.append(str);
                     Log.d(str, sb2.toString());
+                    ArrayList arrayList = new ArrayList();
+                    arrayList.add(str);
+                    InAppPurchases.this.querySkuDetails(arrayList, new Runnable() {
+                        public void run() {
+                            SkuDetails skuDetails = (SkuDetails) InAppPurchases.this.m_skuDetailsTable.get(str);
+                            if (skuDetails == null) {
+                                StringBuilder sb = new StringBuilder();
+                                sb.append("purchaseSku error. sku not found: ");
+                                sb.append(str);
+                                Log.d("com.valvesoftware.InAppPurchases", sb.toString());
+                                return;
+                            }
+                            InAppPurchases.this.m_billingClient.launchBillingFlow(activity, BillingFlowParams.newBuilder().setSkuDetails(skuDetails).build());
+                        }
+                    });
                     return;
                 }
                 InAppPurchases.this.m_billingClient.launchBillingFlow(activity, BillingFlowParams.newBuilder().setSkuDetails(skuDetails).build());
@@ -198,19 +236,22 @@ public class InAppPurchases implements PurchasesUpdatedListener {
         this.m_consumedTokens.add(str);
         final AnonymousClass5 r0 = new ConsumeResponseListener() {
             public void onConsumeResponse(BillingResult billingResult, String str) {
+                int i;
                 String str2 = "com.valvesoftware.InAppPurchases";
                 if (billingResult.getResponseCode() != 0) {
                     StringBuilder sb = new StringBuilder();
                     sb.append("onConsumeResponse error: ");
                     sb.append(billingResult.getDebugMessage());
                     Log.d(str2, sb.toString());
+                    i = 0;
                 } else {
+                    i = 1;
                     StringBuilder sb2 = new StringBuilder();
                     sb2.append("Consumed token: ");
                     sb2.append(str);
                     Log.d(str2, sb2.toString());
                 }
-                InAppPurchases.UpdateIAPConsumedStatus(str, billingResult.getResponseCode());
+                InAppPurchases.UpdateIAPConsumedStatus(str, i);
             }
         };
         runBillingClientJob(new Runnable() {

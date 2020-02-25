@@ -399,8 +399,21 @@ public class PatchSystem {
                 String optString = jSONObject2.optString(str, string);
                 StringBuilder sb2 = new StringBuilder();
                 sb2.append(optString);
-                sb2.append(str3);
+                sb2.append(str3.replace(" ", "%20"));
                 String sb3 = sb2.toString();
+                StringBuilder sb4 = new StringBuilder();
+                sb4.append(optString);
+                sb4.append(str3);
+                String sb5 = sb4.toString();
+                if (sb3.compareTo(sb5) != 0) {
+                    StringBuilder sb6 = new StringBuilder();
+                    sb6.append("Sanitizing Manifest URL \"");
+                    sb6.append(sb5);
+                    sb6.append("\" to \"");
+                    sb6.append(sb3);
+                    sb6.append("\"");
+                    Log.i(str2, sb6.toString());
+                }
                 String optString2 = jSONObject2.optString("depotgroup", "common");
                 if (!optString2.equals("client_vulkan_iosall")) {
                     if (DeviceIsVulkanCompatible) {
@@ -409,15 +422,15 @@ public class PatchSystem {
                     } else if (optString2.equals("client_vulkan_androidall")) {
                     }
                     if (!file.exists()) {
-                        StringBuilder sb4 = new StringBuilder();
-                        sb4.append("Forcing Download for Missing Asset: ");
-                        sb4.append(str3);
-                        Log.i(str2, sb4.toString());
+                        StringBuilder sb7 = new StringBuilder();
+                        sb7.append("Forcing Download for Missing Asset: ");
+                        sb7.append(str3);
+                        Log.i(str2, sb7.toString());
                     } else if (this.m_Registry.HasAssetVersion(str3, string2)) {
-                        StringBuilder sb5 = new StringBuilder();
-                        sb5.append("Skipping Download for Existing Asset: ");
-                        sb5.append(str3);
-                        Log.i(str2, sb5.toString());
+                        StringBuilder sb8 = new StringBuilder();
+                        sb8.append("Skipping Download for Existing Asset: ");
+                        sb8.append(str3);
+                        Log.i(str2, sb8.toString());
                     }
                     PendingDownload pendingDownload = new PendingDownload();
                     pendingDownload.strFilePath = str3;
@@ -445,10 +458,10 @@ public class PatchSystem {
                 WaitForUserInput(EState.ManifestDownloadedWaitingOnUser, EErrorCode.None);
             }
         } catch (Exception e) {
-            StringBuilder sb6 = new StringBuilder();
-            sb6.append("Manifest Exception: ");
-            sb6.append(e.toString());
-            Log.e(str2, sb6.toString());
+            StringBuilder sb9 = new StringBuilder();
+            sb9.append("Manifest Exception: ");
+            sb9.append(e.toString());
+            Log.e(str2, sb9.toString());
             WaitForUserInput(EState.Error, EErrorCode.Manifest);
         }
     }
@@ -544,18 +557,26 @@ public class PatchSystem {
 
     private boolean ProcessCompletedDownload(PendingDownload pendingDownload, String str) {
         File file = new File(Uri.parse(str).getPath());
-        String str2 = "com.valvesoftware.PatchSystem";
+        String str2 = ")";
+        String str3 = "\" (DownloadID: ";
+        String str4 = "com.valvesoftware.PatchSystem";
         if (!file.exists()) {
             StringBuilder sb = new StringBuilder();
-            sb.append("Download Not Found: ");
+            sb.append("Download Not Found: \"");
             sb.append(file.getAbsolutePath());
-            Log.e(str2, sb.toString());
+            sb.append(str3);
+            sb.append(pendingDownload.nDownloadID);
+            sb.append(str2);
+            Log.e(str4, sb.toString());
             return false;
         } else if (file.length() <= 0) {
             StringBuilder sb2 = new StringBuilder();
-            sb2.append("Downloaded Zero Bytes: ");
+            sb2.append("Downloaded Zero Bytes: \"");
             sb2.append(file.getAbsolutePath());
-            Log.e(str2, sb2.toString());
+            sb2.append(str3);
+            sb2.append(pendingDownload.nDownloadID);
+            sb2.append(str2);
+            Log.e(str4, sb2.toString());
             return false;
         } else if (this.m_bDownloadingAPK) {
             return true;
@@ -565,36 +586,48 @@ public class PatchSystem {
             if (!DeleteExistingFile(file2)) {
                 return false;
             }
-            String str3 = " to ";
+            String str5 = "\" to \"";
             if (!file.renameTo(file2)) {
                 StringBuilder sb3 = new StringBuilder();
-                sb3.append("Couldn't Move File: ");
+                sb3.append("Couldn't Move File: \"");
                 sb3.append(file.getAbsolutePath());
-                sb3.append(str3);
+                sb3.append(str5);
                 sb3.append(file2.getAbsolutePath());
-                Log.e(str2, sb3.toString());
+                sb3.append(str3);
+                sb3.append(pendingDownload.nDownloadID);
+                sb3.append(str2);
+                Log.e(str4, sb3.toString());
                 StringBuilder sb4 = new StringBuilder();
-                sb4.append("Attempting to Copy then Delete: ");
+                sb4.append("Attempting to Copy then Delete: \"");
                 sb4.append(file.getAbsolutePath());
-                sb4.append(str3);
+                sb4.append(str5);
                 sb4.append(file2.getAbsolutePath());
-                Log.e(str2, sb4.toString());
+                sb4.append(str3);
+                sb4.append(pendingDownload.nDownloadID);
+                sb4.append(str2);
+                Log.e(str4, sb4.toString());
                 if (!MoveFile(file, file2)) {
                     StringBuilder sb5 = new StringBuilder();
-                    sb5.append("Couldn't Copy then Delete: ");
+                    sb5.append("Couldn't Copy then Delete: \"");
                     sb5.append(file.getAbsolutePath());
-                    sb5.append(str3);
+                    sb5.append(str5);
                     sb5.append(file2.getAbsolutePath());
-                    Log.e(str2, sb5.toString());
+                    sb5.append(str3);
+                    sb5.append(pendingDownload.nDownloadID);
+                    sb5.append(str2);
+                    Log.e(str4, sb5.toString());
                     return false;
                 }
             }
             StringBuilder sb6 = new StringBuilder();
-            sb6.append("Moved File: ");
+            sb6.append("Moved File: \"");
             sb6.append(file.getAbsolutePath());
-            sb6.append(str3);
+            sb6.append(str5);
             sb6.append(file2.getAbsolutePath());
-            Log.i(str2, sb6.toString());
+            sb6.append(str3);
+            sb6.append(pendingDownload.nDownloadID);
+            sb6.append(str2);
+            Log.i(str4, sb6.toString());
             this.m_Registry.SetAssetVersion(pendingDownload.strFilePath, pendingDownload.strVersionCode);
             return true;
         }

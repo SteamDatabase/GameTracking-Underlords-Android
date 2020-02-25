@@ -72,6 +72,7 @@ Plat_IAPUpdatePurchaseStatus
 Plat_QueueSteamLoginWithAccessCode
 Plat_SetGlobalSafeAreaInsets
 Plat_SetModuleFilename
+../public/tier0/globallist.h
 .rela.dyn
 .rela.plt
 Release
@@ -97,8 +98,8 @@ _ZN16CThreadSemaphore7ReleaseEiPi
 _ZN16CThreadSemaphoreD1Ev
 _ZN17CThreadSyncObject4WaitEj
 _ZN17CThreadSyncObjectD2Ev
-_ZN22CThreadRWLock_FastRead20UnlockReadAccountingEj
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEj
+_ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
+_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
 _ZN22CThreadRWLock_FastRead30HandleFirstWriteLockTransitionEv
 _ZN22CThreadRWLock_FastReadC1Ev
 _Znwm

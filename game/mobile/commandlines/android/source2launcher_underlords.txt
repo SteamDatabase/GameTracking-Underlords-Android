@@ -3,3 +3,12 @@
 
 -oldtexturestreaming
 -ideal_mobile_resolution_y 800
+
+//-gl_disable_android_present_timing
+//+r_texture_streaming_timesliced 0
+//+r_texture_stream_throttle_amount 100000
+//+r_texture_stream_throttle_count 100000
+
+//-earlytelemetry
+//-favor_load_speed
+//-favor_consistent_framerate

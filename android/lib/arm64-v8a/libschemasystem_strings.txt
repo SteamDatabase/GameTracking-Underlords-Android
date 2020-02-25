@@ -13,7 +13,6 @@
 11CSchemaType
 %-120s
 %-120s - %s
-12CEmptyConVar
 13CSchemaSystem
 13ISchemaSystem
 14CBaseAppSystemI13ISchemaSystemE
@@ -25,6 +24,7 @@
 %.15lf
 16CDefaultAccessor
 16ICommandCallback
+18CPlaceholderConVar
 18CSchemaType_Atomic
 19CSchemaRegistration
 19CSchemaType_Builtin
@@ -34,6 +34,7 @@
 20CSchemaType_Atomic_I
 20CSchemaType_Atomic_T
 20CSchemaType_Bitfield
+2	1<9s
 21CSchemaType_Atomic_TT
 22CSchemaInstallCallback
 22CSchemaSystemTypeScope
@@ -49,6 +50,8 @@
 25CSchemaType_DeclaredClass
 26ICommandCompletionCallback
 29CSchemaRegistration_schemalib
+2	!=9D
+2hB89
 2+imx
 2_!<k
 2_!<k!
@@ -75,13 +78,13 @@
 8CFmtStrNILi256ELb0EE
 8x9,7
 )!@9)
-	!|9	
 @9hV@
 "@9i"@9
 a2@yh2@y
-	a{9	
 AbsolutePoseControl
  (Abstract)
+Access of unconnected ConVarRef
+Access of unconnected SplitScreenConVarRef
 AE_ACTION_SET_TURN_RATE_SCALE
 AE_BLIND_ZOMBIE_SNIFF
 AE_CL_ADD_PARTICLE_EFFECT_CP
@@ -142,6 +145,7 @@ AnimDelta
 AnimEvent
 AnimFile
 animgraph0
+animgraph1
 AnimGraphEditorUtils001
 AnimIkLockLocal
 AnimLayer
@@ -224,6 +228,8 @@ burst_randomize
 burst_scale
 B@yg&@
 cable
+CAnimMotorList
+CAnimMovementManager
 Cannot allocate abstract class
 Cannot construct abstract class
 Cannot copy abstract class
@@ -402,7 +408,6 @@ __cxa_guard_acquire
 __cxa_guard_release
 __cxa_pure_virtual
 Cycle or diamond double-reference to '%s'
-d6@yc
 d6@yC
 -DANGER_MODE_ignore_schema_mismatches
 .data
@@ -412,6 +417,7 @@ DebugTextureInfo001
 Decompression failure
 default
 Default
+<deferred>
  ( def. "%s" )
 %d enumerators:
 (detailed layout)
@@ -547,7 +553,6 @@ handindex
 .hash
 Has Trivial Constructor: %s
 Has Trivial Destructor: %s
-hB@9`
 headtype
 health
 health_override
@@ -558,7 +563,7 @@ hurt_me
 hurt_them
 h:@y)
 h*@y_
-Hyh6B
+Hyh2B
 h+@yi
 *h>@yt:
 i6@yh:@y`
@@ -581,6 +586,7 @@ Ignorable Indirection
 	iix?
 Ii+x!
 	iix?!4k
+	iix?!4k`
 	iix?!4ka
 	iix?!6k`
 	iix?!<k
@@ -610,6 +616,7 @@ InstallSchemaBindings
 int CUtlString::FormatV(const char *, va_list)
 Intentionally vague touch behavior for %p
 interfaces.cpp
+Invalid access of deferred ConVarRef for '%s'
 Invalid compressed buffer size
 Invalid data.
 Invalid data for member '%s'
@@ -619,18 +626,18 @@ invert_orientation
 IQuickTime001
 is_debris
 Is Polymorphic: %s
-i)xh5B
-i)xhmB
+i)xh1B
 i)xhqA
+i)xhQB
 *i,xi>@yj:
 *i.xi>@yj:
 *i:@yh
 i>@yh
-IyhnB
-j2Gyh
 JAAHJ
 JaAIJ
 JAJJ)
+jbGyh
+jbJyh
 Jikx_
 JIMIJ*
 JjAJJ+
@@ -645,12 +652,13 @@ JNI_OnUnload
 !}	K)
 *k2@y
 kAKJk
-kBJyh
+kbFyh
+kbHyh
+kbIyhRB
 _!(kc
 KeyValueCache001
 K)@)j
 Km@x+
-kRFyh
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
 kv3format_manager.cpp
 k	@y)
@@ -798,6 +806,7 @@ m_keyValuesData
 m_LiteralColor
 m_matrix3x4a_t
 m_matrix3x4_t
+m_MotorList
 m_Name
 m_nAnimationType
 m_nAttributeToWrite
@@ -875,6 +884,7 @@ m_Operators
 m_pBody
 m_pJointConstraintData
 m_pKeyValues
+m_pMovementManager
 m_pParent
 m_PreEmissionOperators
 m_pszSnapshotName
@@ -934,6 +944,7 @@ No binding found named '%s'
 No Buffer
 -no_bundle_module
 No class or enum found named '%s'
+<no deferred ref found>
 <no failure reason set>
 (None)
 NoPoseControl
@@ -1002,6 +1013,7 @@ Plat_GetEnv
 Plat_GetModuleProcAddress
 Plat_IsInDebugSession
 Plat_LoadModule
+Plat_SetDenormalsAreZero
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_UnloadModule
 play_endcap
@@ -1023,9 +1035,13 @@ prop_data
 PropertyEditorSystem_001
 pthread_mutex_destroy
 ../public/ordered_constructor.h
+../public/tier0/globallist.h
 ../public/tier1/utlrbtree.h
+../public/tier1/utlsymbol.h
+../public/tier1/utltshash.h
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
+Qhe	y
 Qi"A)`
 QueuedLoaderVersion001
 radius0
@@ -1100,6 +1116,7 @@ schemasystem
 SchemaSystem
 SchemaSystem_001
 schemasystem.cpp
+./schemasystem.h
 SchemaTestExternal_One_001
 SchemaTestExternal_Two_001
 schematype.cpp
@@ -1193,11 +1210,11 @@ TestScriptMgr001
 TextLayout_001
 TextMessageMgr_001
 texturescale
-T(]Fy
-T(=Gy
-Th^Fy
-Th>Gy
-ThNJy
+ThnFy
+ThnGy
+ThnHy
+ThnIy
+ThnJy
 ThreadGetCurrentId
 ThreeState_t
 Th>@y
@@ -1209,7 +1226,11 @@ Ti>@y)
 Ti:@y
 TK	@9)A
 TL	@9kA
-T(MJy
+T(mFy
+T(mGy
+T(mHy
+T(mIy
+T(mJy
 ToolFramework2_002
 ToolGameSimulationDispatcher_001
 ToolGameSimulationSystem_001
@@ -1233,6 +1254,7 @@ uint8
 Unable to determine buffer encoding.
 Unable to write file '%s'
 Unaccounted
+<unconnected>
 Unexpected end of file
 UniqueId_t
 Unknown disk indirection type %d for field %s
@@ -1251,6 +1273,7 @@ UserInfoChangeService_001
 -use_tier2_bundle
 -use_tier3_bundle
 utlstring.cpp
+utlsymbol.cpp
 vanmgrph
 VApplication001
 V_atof
@@ -1362,6 +1385,7 @@ V_stricmp_fast
 VStringTokenSystem001
 _V_strncmp
 _V_strncpy
+_V_strnicmp_fast
 VTable?
 V_uuid_t
 V_vsnprintf
@@ -1386,9 +1410,11 @@ Y@------------------------------------------------------------------------------
 *@y?5
 yaw_end
 yaw_start
-yh5Gy|9
-yhEJytI
-yhUFy|Y
+yheFy|i
+yheGy|i
+yheHy|i
+yheIyti	y
+yheJyti
 :@yh:@y?
 {YIN?
 :@yi:@y
@@ -1404,17 +1430,17 @@ _ZN13CBufferString5PurgeEi
 _ZN13CBufferString6FormatEPKcz
 _ZN13CBufferString6InsertEiPKcib
 _ZN16CThreadSemaphoreD1Ev
-_ZN17CThreadSpinRWLock10UnlockReadEv
-_ZN17CThreadSpinRWLock11LockForReadEv
-_ZN17CThreadSpinRWLock11UnlockWriteEv
-_ZN17CThreadSpinRWLock16SpinLockForWriteEy
+_ZN17CThreadSpinRWLock10UnlockReadEPKci
+_ZN17CThreadSpinRWLock11LockForReadEPKci
+_ZN17CThreadSpinRWLock11UnlockWriteEPKci
+_ZN17CThreadSpinRWLock16SpinLockForWriteEPKciy
 _ZN17CThreadSyncObjectD2Ev
-_ZN22CThreadRWLock_FastRead20UnlockReadAccountingEj
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEj
+_ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
+_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
 _ZN22CThreadRWLock_FastReadC1Ev
 _Znam
 _ZnamRKSt9nothrow_t
-_ZNV16CThreadFastMutex4LockEyj
+_ZNV16CThreadFastMutex4LockEPKciyj
 _Znwm
 _ZnwmRKSt9nothrow_t
 _ZTVN10__cxxabiv117__class_type_infoE

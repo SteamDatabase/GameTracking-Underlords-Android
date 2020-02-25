@@ -23,6 +23,7 @@ import com.valvesoftware.source2launcher.application.EPermissionsState;
 public class applauncher extends Activity {
     private static final int MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 1;
     private static Context s_context;
+    private final String k_sSpewPackageName = "com.valvesoftware.source2launcher.applauncher";
     private boolean m_bMadeAPIChoice = false;
     private boolean m_bWriteAccess = false;
     Handler m_timerHandler = new Handler();
@@ -219,6 +220,17 @@ public class applauncher extends Activity {
 
     /* access modifiers changed from: protected */
     public void ChooseRenderingAPI() {
+        boolean[] GetBoolean = Resources.GetBoolean("Graphics_UseVulkan");
+        if (GetBoolean != null) {
+            StringBuilder sb = new StringBuilder();
+            sb.append("Graphics choice supplied by vpc resource Graphics_UseVulkan=");
+            sb.append(GetBoolean[0]);
+            Log.i("com.valvesoftware.source2launcher.applauncher", sb.toString());
+            ((application) JNI_Environment.m_application).SetUseVulkan(GetBoolean[0]);
+            this.m_bMadeAPIChoice = true;
+            bootStrapIntoGame();
+            return;
+        }
         Builder builder = new Builder(this);
         String str = "Vulkan";
         builder.setTitle("Rendering API").setMessage("Please choose a rendering API").setNegativeButton("OpenGL ES", new OnClickListener() {

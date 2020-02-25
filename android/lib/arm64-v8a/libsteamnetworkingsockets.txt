@@ -23,6 +23,7 @@
  __cxa_guard_acquire
  __cxa_guard_release
  __cxa_pure_virtual
+ __cxa_rethrow
  __cxa_throw
  D ACCESS_DESCRIPTION_it
  D ASN1_ANY_it
@@ -299,10 +300,12 @@
  __gxx_personality_v0
  ioctl@@LIBC
  isalnum@@LIBC
- __isfinite@@LIBC
+ isinf@@LIBC
+ isnan@@LIBC
  isspace@@LIBC
  isupper@@LIBC
  isxdigit@@LIBC
+ localeconv@@LIBC
  localtime@@LIBC
  lseek@@LIBC
  malloc@@LIBC
@@ -319,7 +322,6 @@
  operator delete[](void*)
  operator new(unsigned long)
  operator new[](unsigned long)
- operator new(unsigned long, std::nothrow_t const&)
  poll@@LIBC
  posix_memalign@@LIBC
  printf@@LIBC
@@ -431,11 +433,8 @@
  std::__ndk1::ctype<char>::id
  std::__ndk1::ios_base::clear(unsigned int)
  std::__ndk1::ios_base::getloc() const
- std::__ndk1::ios_base::init(void*)
- std::__ndk1::ios_base::~ios_base()
  std::__ndk1::ios_base::__set_badbit_and_consider_rethrow()
  std::__ndk1::locale::~locale()
- std::__ndk1::locale::locale()
  std::__ndk1::locale::use_facet(std::__ndk1::locale::id&) const
  std::__ndk1::mutex::lock()
  std::__ndk1::mutex::unlock()
@@ -445,18 +444,15 @@
  std::__ndk1::recursive_timed_mutex::~recursive_timed_mutex()
  std::__ndk1::recursive_timed_mutex::recursive_timed_mutex()
  std::__ndk1::recursive_timed_mutex::unlock()
- std::__ndk1::__shared_weak_count::__add_shared()
- std::__ndk1::__shared_weak_count::__get_deleter(std::type_info const&) const
- std::__ndk1::__shared_weak_count::__release_shared()
- std::__ndk1::__shared_weak_count::~__shared_weak_count()
  std::__ndk1::thread::join()
  std::__ndk1::__thread_local_data()
  std::__ndk1::__thread_struct::~__thread_struct()
  std::__ndk1::__thread_struct::__thread_struct()
  std::__ndk1::thread::~thread()
  std::__ndk1::__throw_system_error(int, char const*)
- std::nothrow
- std::out_of_range::~out_of_range()
+ std::overflow_error::~overflow_error()
+ std::runtime_error::~runtime_error()
+ std::runtime_error::runtime_error(char const*)
  std::terminate()
  std::uncaught_exception()
  strcasecmp@@LIBC
@@ -3657,13 +3653,17 @@
  T SteamDatagramClient_SetAppID
  T SteamDatagramClient_SetLauncher
  T SteamDatagramClient_SetUniverse
+ T SteamDatagram_GetNetworkConfigURL
  T SteamDatagramServer_Init_InternalV2
  T SteamDatagramServer_Kill
+ T SteamDatagram_SetNetworkConfig
  T SteamGameServerNetworkingMessages_Lib
  T SteamGameServerNetworkingSockets_Lib
  T SteamNetworkingMessages_Lib
  T SteamNetworkingSockets_Lib
  T SteamNetworkingSockets_Poll
+ T SteamNetworkingSockets_SetLockAcquiredCallback
+ T SteamNetworkingSockets_SetLockWaitWarningThreshold
  T SteamNetworkingSockets_SetManualPollMode
  T SteamNetworkingUtils_Lib
  T string_to_hex
@@ -4260,9 +4260,8 @@
  T X9_62_PENTANOMIAL_new
  typeinfo for std::exception
  typeinfo for std::length_error
- typeinfo for std::__ndk1::ios_base
- typeinfo for std::__ndk1::__shared_weak_count
- typeinfo for std::out_of_range
+ typeinfo for std::overflow_error
+ typeinfo for std::runtime_error
  usleep@@LIBC
  vfprintf@@LIBC
  vsnprintf@@LIBC
@@ -4270,6 +4269,6 @@
  vtable for __cxxabiv1::__si_class_type_info
  vtable for __cxxabiv1::__vmi_class_type_info
  vtable for std::length_error
- vtable for std::out_of_range
+ vtable for std::overflow_error
  write@@LIBC
  W _ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendIPKcEENS_9enable_ifIXaasr21__is_forward_iteratorIT_EE5valuesr38__libcpp_string_gets_noexcept_iteratorISA_EE5valueERS5_E4typeESA_SA_

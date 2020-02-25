@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2000379" android:versionName="1.0" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.valvesoftware.underlords" platformBuildVersionCode="28" platformBuildVersionName="9">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2000386" android:versionName="1.0" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.valvesoftware.underlords" platformBuildVersionCode="28" platformBuildVersionName="9">
     <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
     <uses-permission android:name="com.android.vending.BILLING"/>
-    <application android:theme="@style/ApplicationStyle" android:label="Underlords" android:icon="@mipmap/ic_launcher" android:name="com.valvesoftware.underlords.application" android:hasCode="true" android:hardwareAccelerated="true" android:appComponentFactory="android.support.v4.app.CoreComponentFactory">
+    <application android:theme="@style/Theme.AppCompat" android:label="Underlords" android:icon="@mipmap/ic_launcher" android:name="com.valvesoftware.underlords.application" android:hasCode="true" android:hardwareAccelerated="true" android:appComponentFactory="android.support.v4.app.CoreComponentFactory">
         <activity android:label="Underlords" android:name="com.valvesoftware.underlords.applauncher" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

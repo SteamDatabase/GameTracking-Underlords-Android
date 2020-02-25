@@ -22,7 +22,6 @@
 %-120s - %s
 1.2.7
 12CDeviceFence
-12CEmptyConVar
 12CRefCounted1I11IRefCounted20CRefCountServiceBaseILb1E6CRefMTEE
 12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE
 12CRenderUtils
@@ -37,8 +36,8 @@
 14q,	
 1.5.13
 1.5.2
-15CMemberFunctor4IP19CTextureManagerBaseMS0_FvP25IAsyncResourceDataRequestP12CTextureBase22TextureSpecification_tiES3_S5_S6_i12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
-15CMemberFunctor9IP19CTextureManagerBaseMS0_FvP12CTextureBase11CWeakHandleI31InfoForResourceTypeCTextureBaseE12ResourceId_tPvi22TextureSpecification_tS9_i23TextureBitsMemoryType_tES3_S6_S7_S8_iS9_S9_iSA_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
+15CMemberFunctor5IP19CTextureManagerBaseMS0_FvP25IAsyncResourceDataRequest11CWeakHandleI31InfoForResourceTypeCTextureBaseEP12CTextureBase22TextureSpecification_tiES3_S6_S8_S9_i12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
+15CMemberFunctor9IP19CTextureManagerBaseMS0_FvP12CTextureBase11CWeakHandleI31InfoForResourceTypeCTextureBaseE12ResourceId_tPvj22TextureSpecification_tS9_i23TextureBitsMemoryType_tES3_S6_S7_S8_iS9_S9_iSA_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CRenderPassDesc
 15CSwapChainEmpty
 15CTier0AppSystemI12IRenderUtilsE
@@ -54,6 +53,7 @@
 17CRenderDeviceBase
 18CBlendStateCreator
 18CEmptyShaderBuffer
+18CPlaceholderConVar
 18CRenderDeviceEmpty
 18ITSHashConstructorI24CTextureSequenceRecord_tE
 18ITSHashConstructorIPvE
@@ -64,7 +64,6 @@
 19IKeyValuesErrorSpew
 19IRenderShaderBuffer
 !1AQaq
-@)1}E
 20CPostConnectCallback
 20CRefCountServiceBaseILb1E6CRefMTE
 20CRenderDeviceMgrBase
@@ -90,7 +89,6 @@
 "2BRbr
 2Gio8
 2	h(8
-2hB59
 2ij(8
 2x"@9
 37CSchemaRegistration_rendersystemempty
@@ -103,7 +101,6 @@
 4(@@9(
 .4@)((A)+0B))
 4a"J9
-4D!B)I	
 $4DTdt
 4GdEy#
 4hb@9
@@ -248,6 +245,7 @@ _8Jhj8*
 )%@9i
 9`i`8
 9@i`8
+9	i+8
 9@I`8
 9`i`81J
 9@i`81J
@@ -312,6 +310,8 @@ $	A)Ar
 aBE9a
 abort
 aB@ya
+Access of unconnected ConVarRef
+Access of unconnected SplitScreenConVarRef
 -adapter
 Adobe APP14 marker: version %d, flags 0x%04x 0x%04x, transform %d
 !	A)Dr
@@ -342,7 +342,6 @@ Application transferred too few scanlines
 Application transferred too many scanlines
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 A\@Q!`
-	aq9	
 a(@Q! ?Q?
 archive
 Arithmetic table 0x%02x was not defined
@@ -365,6 +364,7 @@ A)tU@)x
 A)TU@)X
 -autoconfig
 -autoconfig_level
+	aw9	
 A{"xB
 B@9A1
 bA9JqG
@@ -440,12 +440,13 @@ Cannot reconstruct lineOffset table in DecodeEXRImage.
 Cannot transcode due to multiple use of quantization table %d
 Cannot write a file
 Can't clear TEXTURE_WAITING_FOR_IO flag because of streaming request mismatch: %d in handle, %d in request
+Can't clear TEXTURE_WAITING_FOR_IO flag because pTexture is NULL
 Can't detect memory size on this platform!
 Can't discard critical data on CRC error
 Can't set both read_data_fn and write_data_fn in the same structure
  Can't specify initial state of dynamic constant buffers at creation time!
 Caution: quantization tables are too coarse for baseline JPEG
-CB: %u buffers, %.2f MB
+  CB: %u buffers, %.2f MB
 CCIR601 sampling not implemented yet
 CCommandBufferChunk CUtlMemoryPoolMT
 CCommand::Tokenize: Encountered command which overflows the argument buffer.. Clamped!
@@ -455,6 +456,7 @@ cfg/mobile_gpu_level.txt
 cfg/video_%02d.txt
 cfg/videodefaults.txt
 cfg/video.txt
+cfg/video_version.txt
 ChangeCallbackOnChange
 ChangeCallbackOnChangeOrCreate
 channels
@@ -522,6 +524,7 @@ CSOAContainer::SetAttributeType - ERROR, trying to change type of previously-def
 CTextureInfoId CTextureManagerBase::AllocTextureSlot()
 CTextureManagerBase::MarkAsyncUpdatedThisFrame - Invalid texture handle.
 CTextureManagerBase::WasAsyncUpdatedThisFrame - Invalid texture handle.
+CThreadedJob
 CTransform
 CTSListBase::CTSListBase()
 CTSListBase: Misaligned list
@@ -594,6 +597,7 @@ DebugTextureInfo001
 Decompressed %i texture mips in %.2f ms (%.1fmb/s)
 Decompression error
 Decompression Error
+<deferred>
 -deferTextureLoads
 Define Arithmetic Table 0x%02x: 0x%02x
 Define Huffman Table 0x%02x
@@ -726,13 +730,13 @@ FlattenedSerializersVersion001
 float
 floatbitmap.cpp
 floatbitmap.cpp(141): Unknown gamma type "%s"!
-floatbitmap.cpp(2473): Error calling TGALoader::GetInfo( %s )
-floatbitmap.cpp(2484): Error loading %s
-floatbitmap.cpp(2507): Error! Unknown file type for %s
-floatbitmap.cpp(2526): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s
-floatbitmap.cpp(325): Conversion not supported yet!
-floatbitmap.cpp(425): Conversion not supported yet!
-floatbitmap.cpp(888): Unsupported color format "%s", skipping!
+floatbitmap.cpp(2486): Error calling TGALoader::GetInfo( %s )
+floatbitmap.cpp(2497): Error loading %s
+floatbitmap.cpp(2520): Error! Unknown file type for %s
+floatbitmap.cpp(2539): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s
+floatbitmap.cpp(338): Conversion not supported yet!
+floatbitmap.cpp(438): Conversion not supported yet!
+floatbitmap.cpp(901): Unsupported color format "%s", skipping!
 FloatBitMap::DownsampleNiceFiltered
 FloatBitMap::QuarterSize
 FloatBitMap::QuarterSizeBlocky
@@ -816,7 +820,6 @@ hb@9h
 hc87hd89hc88hb8
 hc8#h 8
 hC@9H
-HcOy@
 hd8% 
 hd8%,
 hd8%(
@@ -845,7 +848,6 @@ h'@)jS@
 hn8c|
 HostStateMgr001
 hr1yI
-=hrCy
 hrqy`Z
 Huffman code size table overflow
 Huffman table 0x%02x was not defined
@@ -864,8 +866,9 @@ ib@9)
 ib@9i
 ib@9l
 ibA9JqG
-IB: %d buffers, %.2f MB
+  IB: %d buffers, %.2f MB
 IB)Mki
+iBNy`
 ic8)Q
 I CUtlLinkedList<COcclusionQueryMgr::OcclusionQueryObject_t, long long, true, long long, CUtlFixedMemory<UtlLinkedListElem_t<COcclusionQueryMgr::OcclusionQueryObject_t, long long> > >::AllocInternal(bool) [T = COcclusionQueryMgr::OcclusionQueryObject_t, S = long long, ML = true, I = long long, M = CUtlFixedMemory<UtlLinkedListElem_t<COcclusionQueryMgr::OcclusionQueryObject_t, long long> >]
 I CUtlLinkedList<CSwapChainBase *, long long, true, long long, CUtlFixedMemory<UtlLinkedListElem_t<CSwapChainBase *, long long> > >::AllocInternal(bool) [T = CSwapChainBase *, S = long long, ML = true, I = long long, M = CUtlFixedMemory<UtlLinkedListElem_t<CSwapChainBase *, long long> >]
@@ -978,6 +981,7 @@ internal row logic error
 internal row size calculation error
 internal row width error
 internal sequential row size calculation error
+Invalid access of deferred ConVarRef for '%s'
 invalid alpha mode
 Invalid argument for DecodeEXRImage().
 Invalid argument for LoadDeepEXR
@@ -1084,16 +1088,15 @@ invalid window size
 io8k9
 io8N	
 IQuickTime001
-irCy`
 )Iv8(
 	*iW@
 *'i$x
-	*J10
+!~j	(
 j58hf@9(
 @j!8!
-j(8Bw
+j(84}
+j(8a~
 j`8!i 8
-j(8!v
  J9?@
 J9e:A
 ja8 i!8!
@@ -1126,6 +1129,7 @@ KDDEy%
 KEdEy
 	K)eP
 KeyValueCache001
+keyvalues.cpp
 KeyValues Error: %s in file %s
 KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s
 KeyValues::RecursiveSaveToFile: TODO, missing code for TYPE_COLOR.
@@ -1149,7 +1153,6 @@ KMeansQuantization
 KOio8
 KPip8
 KRir8\K
-k}	Sj
 KV Conditional Evaluation Error
 %ld%c
 LE_BGRA8888
@@ -1337,6 +1340,7 @@ nh~xO
 Nin8/
 Nin8M
 .>N^n~
+<no deferred ref found>
 <no failure reason set>
 No image in file
 No memory for pCAL params
@@ -1385,6 +1389,7 @@ NV_NULL
 NV_RAWZ
 Obtained EMS handle %u
 Obtained XMS handle %u
+occlusionquerymgr.cpp
 o$ c.! cn
 # of channels is zero.
 Oio8,
@@ -1414,6 +1419,7 @@ Output file write error --- out of disk space?
 output gamma out of expected range
 Output memory size is zero
 OUTSTANDING_HOOKUP_REQUEST 
+Overall System GPU memory use:
 Overflow of the sheet cache texture. Releasing and starting over. This is ok in asset browser, not so ok if the game is triggering this!
 Overflow of the sheet cache texture: Try increasing SheetCacheTextureRows in gameinfo.gi (current value %d)!
 p6aVA
@@ -1453,6 +1459,7 @@ Plat_IsHighDPI
 Plat_IsInDebugSession
 Plat_OsSpecificHandleToPlatWindow
 Plat_ReconfigureWindow
+Plat_SetDenormalsAreZero
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_WindowToOsSpecificHandle
 png_do_encode_alpha: unexpected call
@@ -1482,11 +1489,14 @@ pthread_mutex_lock
 pthread_mutex_unlock
 ptr( 0x%p )
 ../public/ordered_constructor.h
+../public/tier0/globallist.h
 ../public/tier0/tslist.h
+../public/tier1/memstack.h
 ../public/tier1/utlblockmemory.h
 ../public/tier1/utlfixedmemory.h
 ../public/tier1/utllinkedlist.h
 ../public/tier1/utlrbtree.h
+../public/tier1/utltshash.h
 _!@q	
 Q0&	S
 Q1iq8Rir8`i`8
@@ -1512,7 +1522,6 @@ R16F_EXPAND
 R32_UINT
 R8G8B8A8_ETC2_EAC
 R8G8B8_ETC2
-	!r9	
 RadianEuler
 raise
 R channel not found
@@ -1544,12 +1553,13 @@ RENDER_BUFFER_USAGE_UNORDERED_ACCESS
 RENDER_BUFFER_USAGE_VERTEX_BUFFER
 rendercontextbase.cpp
 RenderDevice003
-renderdevicebase.cpp(1487): 
-renderdevicebase.cpp(1648): 
-renderdevicebase.cpp(3116): 
-renderdevicebase.cpp(644): 
-renderdevicebase.cpp(918): 
-renderdevicebase.cpp(935): 
+renderdevicebase.cpp
+renderdevicebase.cpp(1500): 
+renderdevicebase.cpp(1664): 
+renderdevicebase.cpp(3183): 
+renderdevicebase.cpp(656): 
+renderdevicebase.cpp(930): 
+renderdevicebase.cpp(947): 
 Render Device Empty
 RenderDeviceMgr001
 renderdevicemgrbase.cpp
@@ -1615,12 +1625,14 @@ RENDER_SLOT_INVALID
 RENDER_SLOT_PER_INSTANCE
 RENDER_SLOT_PER_VERTEX
 RenderSlotType_t
+./renderstatehelper.h
 RenderSystem
 RenderSystem/AllowSampleableDepthInVr
 RenderSystem/AlwaysPreloadTexturesInGame
 #RenderSystem_CannotCreateDevice
 rendersystemempty
 Rendersystem/SheetCacheTextureCols
+rendersystem (%s) tracked resources:
 RenderSystemSurface001
 -rendersystem_thread_mode
 #RenderSystem_UnableToStartGame
@@ -1669,12 +1681,8 @@ R(i*8
 riihx
 rijh8
 r)ijx?
-r+ik8
-r+ikxk	
 Rir8!
 r?i*x
-RKik8
-RKikxk	
 -r_max_device_threads
 r_max_texture_pool_size
 rnd_down
@@ -1695,6 +1703,7 @@ RViv8`
 r_wait_on_present
 "%s" 
 (*%s*), 
+}	S,}
 S6jh8)
 (%s): ADD %s = %s
 SAh 8b>B
@@ -1806,6 +1815,8 @@ srgbgammatolinear
 ss_added
   Ss=%d, Se=%d, Ah=%d, Al=%d
 (%s): Setting %s to %s
+  %s / %s MB
+  %s / %s MB (non-evictable: %s MB)
 %s: string format requested %d chars
 __stack_chk_fail
 Start Of Frame 0x%02x: width=%u, height=%u, components=%d
@@ -1895,6 +1906,7 @@ TestFormatD
 TestFormatE
 TestScriptMgr001
 TEXMAN: Abandoning job in %s
+TEXMAN: Abandoning streaming request early in %s
 TEXMAN: Abandoning streaming request in %s
 TEXMAN: Adding %s, %llx to abandoned hookup jobs
 TEXMAN: DeferTextureLoads %s MarkTextureBitsLoaded (%s)
@@ -1907,21 +1919,22 @@ text compression mode is out of range
 TextLayout_001
 TextMessageMgr_001
 texturebase.cpp
-texturebase.cpp(1731):Error loading texture: %s
-texturebase.cpp(2647):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2668):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2679):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2690):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2701):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2722):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2733):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2744):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2755):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(1803):Error loading texture: %s
+texturebase.cpp(2737):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2758):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2769):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2780):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2791):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2812):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2823):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2834):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2845):ResourceHandleToData( %s ) failed! Falling back to error texture!
 Texture manager out of space! Can't allocate new texture!
 Texture memory discrepancy! %llu != %llu
 TextureSpecificationFlags_t
+Texture Streaming:
 Texture streaming validation OK (%d texture loads in flight).
-TEX: %u textures, %.2f MB
+  TEX: %u textures, %.2f MB
 Tfh!8
 TFh`8
 TFLFy
@@ -1971,7 +1984,7 @@ Too many color components: %d, max %d
 Too many IDATs found
 too many length or distance symbols
 Too many threads (%d) accessing the render device, need to increase -r_max_device_threads (%d)
-TOTAL: %.2f MB
+  TOTAL: %.2f MB
 Total size of the texture pool in MB
 T` p7@
 T$P@9C,
@@ -2015,6 +2028,7 @@ uint64 CTextureManagerBase::MN_BuildRequestedResourcesList(CUtlVector<CTextureMa
 uiu8c
 Unable to read file %s
 Unable to stream in resource file "%s" (Error: %s)
+<unconnected>
 undefined
 Unexpected marker 0x%02x
 Unexpected resource version '%d' for '%s'
@@ -2068,7 +2082,7 @@ VAvi001
 VBAllocTracker001
 VBaseFileSystem011
 vb_created_input_layout
-VB: %d buffers, %.2f MB
+  VB: %d buffers, %.2f MB
 VBik001
 VConComm001
 VDebugService_001
@@ -2077,6 +2091,7 @@ Vector4D
 VectorAligned
 VendorID
 VEngineCvar007
+Version
 version error
 VFileSystem017
 V_GetErrno
@@ -2089,6 +2104,8 @@ VGUI_Surface032
 VGUI_System010
 Video Card %s (%04x : %04x)
 video.cfg
+Video config version number changed ( '%s' is version %i, current version is %i ). Resetting video config.
+video_version
 Virtual array controller messed up
 virtual void CRenderContextBase::SetAssociatedThreadIndex(int)
 V_IsAbsolutePath
@@ -2102,8 +2119,8 @@ VNewAsyncFileSystem001
 void ConnectInterfaces(CreateInterfaceFn *, int)
 void COrderedConstructor_Create<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, CResolveOrderedFunc<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, &_ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC>, false>::AddRef(bool) [T = COrderedInitShutdownRefWrapper<&EarlyInit_Common>, RESOLVECLASS = CResolveOrderedFunc<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, &_ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC>, bCONSTRUCT_ON_FIRST_USE = false]
 void CSheetDataTextureCache::AllocateAndUploadSequenceData(const Sheet_t *, Vector2D *, int *)
-void CTextureManagerBase::AsyncHookUpTextureBits(CTextureBase *, HRenderTexture, ResourceId_t, void *, int, TextureSpecification_t, TextureSpecification_t, int32, TextureBitsMemoryType_t)
-void CTextureManagerBase::MN_OnResourceFileLoaded(IAsyncResourceDataRequest *, CTextureBase *, TextureSpecification_t, int32)
+void CTextureManagerBase::AsyncHookUpTextureBits(CTextureBase *, HRenderTexture, ResourceId_t, void *, uint, TextureSpecification_t, TextureSpecification_t, int32, TextureBitsMemoryType_t)
+void CTextureManagerBase::MN_OnResourceFileLoaded(IAsyncResourceDataRequest *, HRenderTexture, CTextureBase *, TextureSpecification_t, int32)
 void CTextureManagerBase::MN_OnResourceLoadCompleted(CTextureBase *, TextureObjectInfo_t &, int32, int)
 void CTextureManagerBase::MN_OnResourceLoadFailed(CTextureBase *, int32)
 void CTextureManagerBase::PreloadTextureBits(HRenderTexture, RenderTextureDetail_t)
@@ -2119,6 +2136,7 @@ VPhysics2_Handle_Interface_001
 VPhysics2_Interface_001
 VPhysX Interface ResourceMgr v0.1
 VpO9WpO
+V_PrettifyNum
 VProcessUtils002
 VProfService_001
 V_qsort
@@ -2184,6 +2202,7 @@ X360_DST24
 X360_DST24F
 X6`(@Q
 .X7 '(7
+	!x9	
 Xbox 360
 	{(xh2B
 Xix84
@@ -2255,14 +2274,14 @@ _ZN13CBufferString6InsertEiPKcib
 _ZN13CBufferString8RemoveAtEii
 _ZN16CThreadSemaphore7ReleaseEiPi
 _ZN16CThreadSemaphoreD1Ev
-_ZN17CThreadSpinRWLock10UnlockReadEv
-_ZN17CThreadSpinRWLock11LockForReadEv
-_ZN17CThreadSpinRWLock11UnlockWriteEv
-_ZN17CThreadSpinRWLock16SpinLockForWriteEy
+_ZN17CThreadSpinRWLock10UnlockReadEPKci
+_ZN17CThreadSpinRWLock11LockForReadEPKci
+_ZN17CThreadSpinRWLock11UnlockWriteEPKci
+_ZN17CThreadSpinRWLock16SpinLockForWriteEPKciy
 _ZN17CThreadSyncObject4WaitEj
 _ZN17CThreadSyncObjectD2Ev
-_ZN22CThreadRWLock_FastRead20UnlockReadAccountingEj
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEj
+_ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
+_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
 _ZN22CThreadRWLock_FastRead30HandleFirstWriteLockTransitionEv
 _ZN22CThreadRWLock_FastReadC1Ev
 _Znam
@@ -2278,7 +2297,7 @@ _ZNSt6__ndk17num_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEE2idE
 _ZNSt6__ndk18ios_base4initEPv
 _ZNSt6__ndk18ios_base5clearEj
 _ZNSt6__ndk18ios_baseD2Ev
-_ZNV16CThreadFastMutex4LockEyj
+_ZNV16CThreadFastMutex4LockEPKciyj
 _Znwm
 _ZnwmRKSt9nothrow_t
 \z^@Q

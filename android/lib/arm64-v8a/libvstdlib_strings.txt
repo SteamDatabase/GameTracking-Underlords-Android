@@ -20,7 +20,6 @@
 11IThreadPool
 %-120s
 %-120s - %s
-12CEmptyConVar
 12CEventSystem
 12CRefCounted1I11IRefCounted20CRefCountServiceBaseILb1E6CRefMTEE
 12CRefCounted1I11IThreadPool20CRefCountServiceBaseILb1E6CRefMTEE
@@ -57,6 +56,7 @@
 17CDefaultCvarQuery
 17CGlobalThreadPool
 17CPooledFunctorJob
+18CPlaceholderConVar
 18CUtlCharConversion
 18CUtlJSONConversion
 18ITSHashConstructorI8CEventIdE
@@ -84,7 +84,7 @@
 26CDefaultKeyValuesErrorSpew
 26ICommandCompletionCallback
 2) channel names: name1 name2 ...           // Lists channels by name.
-2ij(84
+2ij(8
 2+imx
 2?"!k`
 2ninx
@@ -108,11 +108,12 @@
 6ConVar
 6hb@9
 6x"@9
-6xRBy
+6xbBy
 7	$@9)
 7hb@9h
 7hf@9
 7hf@9h
+7hZO9
 7ib@9
 7ib@9i
 7IConVar
@@ -133,9 +134,13 @@
 @9hV@
 9	ii8(
 9IPipeRead
+9*P7Z~
 a2@yh2@y
 A-#9!
+A9	!L-
 ACCESSIBLE_FROM_THREADS
+Access of unconnected ConVarRef
+Access of unconnected SplitScreenConVarRef
 A channel specifier is either:
 All functions are case insensitive.
 Android clang version 5.0.300080  (based on LLVM 5.0.300080)
@@ -192,7 +197,6 @@ Can't open file (%s) passed to -testscript
 CCommand::Tokenize: Encountered command which overflows the argument buffer.. Clamped!
 >CCommand::Tokenize: Encountered command which overflows the tokenizer buffer.. Skipping!
 CConfigurationSystem::ReadConfiguration: Error parsing configuration file!
-CCvar::FindCommandBase
 cfg/configdefaults.android.vcfg
 cfg/configschema.vcfg
 Channel Name
@@ -228,6 +232,7 @@ consoleonly
       <+/->ConsoleOnly                      // Enable/disable a flag to send text only to the console.
 const void *CConfigurationSystem::RegisterConfigValueInternal(const char *, ConfigType_t, ConfigValueType_t, CConfigValueOptions &&, bool)
 ConVarRef %s doesn't point to an existing ConVar
+Convars/CCvar::FindCommandBase
 ConVar(%s) defined with infinite float value (%s)
 Convar %s has conflicting %s flags (child: %s%s, parent: %s%s, parent wins)
 Convar %s has multiple help strings:
@@ -259,6 +264,7 @@ CTestScriptMgr::LoopCount( %s ): no loop with this name exists.
 CTestScriptMgr::LoopForNumSeconds( %s ): no loop with this name exists.
 CTestScriptMgr: not initialized.
 CTestScriptMgr::StartLoop( %s ): loop already exists.
+CThreadedJob
 CThreadPool::Start called and it was already initialized.
 CTSListBase::CTSListBase()
 CTSListBase: Misaligned list
@@ -272,7 +278,7 @@ CTSQueue::Node_t *CTSQueue<CConfigurationSystem::QueuedValueChange_t, false>::Pu
 CTSQueue::Node_t *CTSQueue<CEventQueue::QueuedEvent_t, false>::Push(CTSQueue::Node_t *) [T = CEventQueue::QueuedEvent_t, bTestOptimizer = false]
 CTSQueue::Node_t *CTSQueue<CFunctorCallback *, false>::Push(CTSQueue::Node_t *) [T = CFunctorCallback *, bTestOptimizer = false]
 CTSQueue::Node_t *CTSQueue<CThreadedJob *, false>::Push(CTSQueue::Node_t *) [T = CThreadedJob *, bTestOptimizer = false]
-<CUniformRandomStream had an array overrun: tried to write to element %d of 0..31. 
+CUniformRandomStream had an array overrun: tried to write to element %d of 0..31. 
 CUtlFixedMemory overflow!
 CUtlLinkedList overflow! (exhausted index range)
 CUtlLinkedList overflow! (exhausted memory allocator)
@@ -303,6 +309,7 @@ defaults
                                             // 'default' turns on most messages
 defaultValue
 DEFAULT_WRITE_PATH
+<deferred>
  ( def. "%s" )
 delete
 DestroyThreadPool
@@ -350,8 +357,10 @@ essential
                                             // 'essential' turns on vital logs
 Event_CreateHandle
 Event_DestroyHandle
+eventdispatcherutils.cpp
 Event_HandleToData
 EventSystem001
+eventsystem.cpp
 execute_per_tick
 EXECUTE_PER_TICK
 execve
@@ -427,7 +436,6 @@ h"A9a
 HammerMapLoader001
 .hash
 hb@9`
-hB@9`
 hB@9(
 hB@9h
 h&E)j.G)
@@ -441,12 +449,15 @@ hf@9h
 hf@9i
 HIGHDPI
 hj)8kj*8
+hJD9(
 hJD9*
+hJD9H
 Hkx8(
 HostStateMgr001
 hr@y`
 )hx8?)
 h*@y_
+*hZO9
 	*I}`
 i6@yh
 ?i(8?i*x?i+
@@ -495,6 +506,7 @@ int CUtlString::FormatV(const char *, va_list)
 int( %d = 0x%X )
 Intentionally vague touch behavior for %p
 interfaces.cpp
+Invalid access of deferred ConVarRef for '%s'
 <invalid handle>
 	Invalid variable type "%s"!
 IOJob
@@ -506,8 +518,8 @@ ITALIAN
 i>@yh
 !@i)yj
 j58hf@9(
-j88/#
 j)8hii8
+j(8ml
 j(8S	
 J!@9_
 JAJJ)
@@ -520,6 +532,7 @@ JSON error, unterminated element:
 *k2@y
 k(8vV@
 KeyValueCache001
+keyvalues.cpp
 KeyValues Error: %s in file %s
 KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s
 KeyValues::RecursiveSaveToFile: TODO, missing code for TYPE_COLOR.
@@ -622,6 +635,7 @@ NetworkService_001
 NetworkSystemUtilsVersion001
 NetworkSystemVersion001
 nf@9/
+<no deferred ref found>
 nolog
 (no name set)
 (none)
@@ -682,6 +696,7 @@ POSIX
 PostProcessingSystem_001
 print
 PRINTABLEONLY
+processutils.cpp
 PropertyEditorSystem_001
 PROTECTED
 pthread_mutexattr_init
@@ -692,17 +707,20 @@ pthread_mutex_lock
 pthread_mutex_unlock
 ptr( 0x%p )
 ../public/ordered_constructor.h
+../public/tier0/globallist.h
+../public/tier0/threadtools.h
 ../public/tier0/tslist.h
+../public/tier1/memstack.h
 ../public/tier1/quantizedfloatencoder.h
 ../public/tier1/utlfixedmemory.h
 ../public/tier1/utllinkedlist.h
 ../public/tier1/utlrbtree.h
+../public/tier1/utltshash.h
 qangle
-	QF9	
 Qi"A)`
 QueuedLoaderVersion001
 raise
-random.cpp
+<random.cpp
 RandomFloat
 RandomFloatExp
 RandomGaussianFloat
@@ -749,7 +767,7 @@ ReturnJobManualEventToPool
 R	h(8	
 Rhjh8
 Rhjh8(
-R(ih8
+R(kh8
 rnd_down
 rnd_up
 .rodata
@@ -947,6 +965,7 @@ uint64
 Unable to create multiwait object set
 Unable to create thread in %s
 Unable to exec '%s'
+<unconnected>
 unit test
 unknown
 <unknown>
@@ -966,7 +985,9 @@ Usage:  find <string> [<string>...]
 Usage:  help <cvarname>
 USERINFO
 UserInfoChangeService_001
+utlobjectregistry.cpp
 utlstring.cpp
+utlstringtokensystem.cpp
 	Value is actually %s, code is expecting a %s value
 	Value is actually type %s, code is expecting a %s type value
 VApplication001
@@ -1140,16 +1161,16 @@ _ZN12CThreadEvent5CheckEv
 _ZN12CThreadEvent5ResetEv
 _ZN12CThreadEventC1Eb
 _ZN12CThreadEventC1EPKcbb
-_ZN12CThreadMutex7TryLockEv
+_ZN12CThreadMutex7TryLockEPKci
 _ZN13CBufferString5PurgeEi
 _ZN13COneTimeEvent8AllocateEv
 _ZN13CWorkerThreadC2Ev
 _ZN16CThreadSemaphore7ReleaseEiPi
 _ZN16CThreadSemaphoreD1Ev
-_ZN17CThreadSpinRWLock10UnlockReadEv
-_ZN17CThreadSpinRWLock11LockForReadEv
-_ZN17CThreadSpinRWLock11UnlockWriteEv
-_ZN17CThreadSpinRWLock16SpinLockForWriteEy
+_ZN17CThreadSpinRWLock10UnlockReadEPKci
+_ZN17CThreadSpinRWLock11LockForReadEPKci
+_ZN17CThreadSpinRWLock11UnlockWriteEPKci
+_ZN17CThreadSpinRWLock16SpinLockForWriteEPKciy
 _ZN17CThreadSyncObject4WaitEj
 _ZN17CThreadSyncObjectD2Ev
 _ZN20CUniformRandomStream11RandomFloatEff
@@ -1169,9 +1190,9 @@ _ZN21CThreadMultiWaitEventC1Eb
 _ZN21CThreadMultiWaitEventC2Eb
 _ZN21CThreadMultiWaitEventD1Ev
 _ZN21CThreadMultiWaitEventD2Ev
-_ZN22CThreadRWLock_FastRead20UnlockReadAccountingEj
+_ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
 _ZN22CThreadRWLock_FastRead23UnlockRead_LockForWriteEv
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEj
+_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
 _ZN22CThreadRWLock_FastRead30HandleFirstWriteLockTransitionEv
 _ZN22CThreadRWLock_FastReadC1Ev
 _ZN25CThreadMultiWaitSemaphore7ReleaseEv
@@ -1194,7 +1215,7 @@ _ZN7CThreadD2Ev
 _ZN9CVProfile19FindOrCreateCounterEPKc14CounterGroup_t
 _Znam
 _ZnamRKSt9nothrow_t
-_ZNV16CThreadFastMutex4LockEyj
+_ZNV16CThreadFastMutex4LockEPKciyj
 _Znwm
 _ZnwmRKSt9nothrow_t
 _ZTI20CUniformRandomStream

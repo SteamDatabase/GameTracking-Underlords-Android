@@ -73,8 +73,9 @@ public class application extends Application implements ActivityLifecycleCallbac
     public application() {
         String str = "es";
         String str2 = "zh";
-        String str3 = "pt";
-        this.m_languageMap = new LanguageCountryMap[]{new LanguageCountryMap("en", "US", "english"), new LanguageCountryMap("de", "DE", "german"), new LanguageCountryMap("fr", "FR", "french"), new LanguageCountryMap("it", "IT", "italian"), new LanguageCountryMap("ko", "KR", "koreana"), new LanguageCountryMap(str, "ES", "spanish"), new LanguageCountryMap(str2, "CN", "schinese"), new LanguageCountryMap(str2, "TW", "tchinese"), new LanguageCountryMap("ru", "RU", "russian"), new LanguageCountryMap("th", "TH", "thai"), new LanguageCountryMap("ja", "JP", "japanese"), new LanguageCountryMap(str3, "PT", "portuguese"), new LanguageCountryMap("pl", "PL", "polish"), new LanguageCountryMap("da", "DK", "danish"), new LanguageCountryMap("nl", "NL", "dutch"), new LanguageCountryMap("fi", "FI", "finnish"), new LanguageCountryMap("no", "NO", "norwegian"), new LanguageCountryMap("sv", "SE", "swedish"), new LanguageCountryMap("hu", "HU", "hungarian"), new LanguageCountryMap("cs", "CZ", "czech"), new LanguageCountryMap("ro", "RO", "romanian"), new LanguageCountryMap("tr", "TR", "turkish"), new LanguageCountryMap(str3, "BR", "brazilian"), new LanguageCountryMap("bg", "BG", "bulgarian"), new LanguageCountryMap("el", "GR", "greek"), new LanguageCountryMap("uk", "UA", "ukrainian"), new LanguageCountryMap(str, "MX", "latam"), new LanguageCountryMap("vi", "VN", "vietnamese")};
+        String str3 = "tchinese";
+        String str4 = "pt";
+        this.m_languageMap = new LanguageCountryMap[]{new LanguageCountryMap("en", "US", "english"), new LanguageCountryMap("de", "DE", "german"), new LanguageCountryMap("fr", "FR", "french"), new LanguageCountryMap("it", "IT", "italian"), new LanguageCountryMap("ko", "KR", "koreana"), new LanguageCountryMap(str, "ES", "spanish"), new LanguageCountryMap(str2, "CN", "schinese"), new LanguageCountryMap(str2, "TW", str3), new LanguageCountryMap(str2, "HK", str3), new LanguageCountryMap("ru", "RU", "russian"), new LanguageCountryMap("th", "TH", "thai"), new LanguageCountryMap("ja", "JP", "japanese"), new LanguageCountryMap(str4, "PT", "portuguese"), new LanguageCountryMap("pl", "PL", "polish"), new LanguageCountryMap("da", "DK", "danish"), new LanguageCountryMap("nl", "NL", "dutch"), new LanguageCountryMap("fi", "FI", "finnish"), new LanguageCountryMap("no", "NO", "norwegian"), new LanguageCountryMap("sv", "SE", "swedish"), new LanguageCountryMap("hu", "HU", "hungarian"), new LanguageCountryMap("cs", "CZ", "czech"), new LanguageCountryMap("ro", "RO", "romanian"), new LanguageCountryMap("tr", "TR", "turkish"), new LanguageCountryMap(str4, "BR", "brazilian"), new LanguageCountryMap("bg", "BG", "bulgarian"), new LanguageCountryMap("el", "GR", "greek"), new LanguageCountryMap("uk", "UA", "ukrainian"), new LanguageCountryMap(str, "MX", "latam"), new LanguageCountryMap("vi", "VN", "vietnamese")};
     }
 
     /* access modifiers changed from: 0000 */
@@ -249,7 +250,7 @@ public class application extends Application implements ActivityLifecycleCallbac
     public boolean QuerySkuDetailsAsync(String str) {
         ArrayList arrayList = new ArrayList();
         arrayList.add(str);
-        this.m_inAppPurchases.querySkuDetails(arrayList);
+        this.m_inAppPurchases.querySkuDetails(arrayList, null);
         return true;
     }
 

@@ -4,7 +4,6 @@
 >{}()':
  -> %
 -> $$ =
--@),)
 ;()[]
 !^   
 !:@=!
@@ -68,7 +67,6 @@
 %-120s - %s
 1.2.7
 12CDeviceFence
-12CEmptyConVar
 12CRefCounted1I11IRefCounted20CRefCountServiceBaseILb1E6CRefMTEE
 12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE
 12CRenderUtils
@@ -95,10 +93,10 @@
 1.5.13
 1.5.2
 15CMemberFunctor1IP26CParallelProcessorAbstractI18CParallelProcessorIi27CMemberFuncJobItemProcessorIi11CCallQueueTI8CTSQueueIP8CFunctorLb0EEES8_ELi1EEEMSB_FviEi12CRefCounted1IS5_20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
-15CMemberFunctor4IP19CTextureManagerBaseMS0_FvP25IAsyncResourceDataRequestP12CTextureBase22TextureSpecification_tiES3_S5_S6_i12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
+15CMemberFunctor5IP19CTextureManagerBaseMS0_FvP25IAsyncResourceDataRequest11CWeakHandleI31InfoForResourceTypeCTextureBaseEP12CTextureBase22TextureSpecification_tiES3_S6_S8_S9_i12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CMemberFunctor6IP13CSOAContainerMS0_Fviiiii13__Float32x4_tEiiiiiS2_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CMemberFunctor7IP13CSOAContainerMS0_FviiiiPKS0_iiEiiiiS3_ii12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
-15CMemberFunctor9IP19CTextureManagerBaseMS0_FvP12CTextureBase11CWeakHandleI31InfoForResourceTypeCTextureBaseE12ResourceId_tPvi22TextureSpecification_tS9_i23TextureBitsMemoryType_tES3_S6_S7_S8_iS9_S9_iSA_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
+15CMemberFunctor9IP19CTextureManagerBaseMS0_FvP12CTextureBase11CWeakHandleI31InfoForResourceTypeCTextureBaseE12ResourceId_tPvj22TextureSpecification_tS9_i23TextureBitsMemoryType_tES3_S6_S7_S8_iS9_S9_iSA_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CPipelineVulkan
 15CRenderPassDesc
 15CRenderResource
@@ -140,6 +138,7 @@
 18CBlendStateCreator
 18CColorFormatVulkan
 18CIndexBufferVulkan
+18CPlaceholderConVar
 18CRenderContextBase
 18CShaderTableVulkan
 18ITSHashConstructorI20CSamplerStateBindingE
@@ -166,6 +165,7 @@
 %!~1,>S
 @1,S,>S,,
 %1,S,>S,
+@)1UC
 ~*1,V
 /1V?O	
 /1V?OA
@@ -184,7 +184,7 @@
 20CVfxShaderFileVulkan
 20IHibernationListener
 20IResourceTypeManager
-2*1#9
+2*1&9
 21CConstantBufferVulkan
 21CFramebufferMgrVulkan
 21CRenderHardwareConfig
@@ -203,6 +203,7 @@
 23IConCommandBaseAccessor
 24CRenderPassManagerVulkan
 24CTextureManagerVulkanNew
+256.0
 25CConCommandMemberAccessorI17CRenderDeviceBaseE
 25CConCommandMemberAccessorI18CShaderTableVulkanE
 25CConCommandMemberAccessorI19CTextureManagerBaseE
@@ -229,8 +230,7 @@
 2hB	9
 2hBE9h
 2hj)8
-2hrU9
-2Hs.9
+2Hs<9
 2	i4xh
 2*i58
 2ij(8
@@ -295,7 +295,6 @@ $2,>S,,
 4	!A9
 4a"J9
 4(CA9
-4D!B)I	
 $4DTdt
 4GdEy#
 4h&@9(
@@ -359,7 +358,7 @@ $4DTdt
 5i"L9?
 5i.@y
 5`>J9
-5kB'9	AC
+5kB)9	AC
 5@)N$
 5r_texturefilteringquality
 5Ua@y
@@ -403,11 +402,12 @@ $4DTdt
 6@y_! k
 6@y?! k
 6@y?! kC
-6Ysn9
+6Ys|9
 @7('@
 7 ! 7
 (7@9H
 7	aI9I
+7`B@y
 7d"J9bREy
  7F507
 '7GWgw
@@ -415,7 +415,6 @@ $4DTdt
 7h*@9
 7hb@9h
 7hbA9
-7hBg9
 7h*C9(
 7hf@9
 7hf@9(
@@ -474,7 +473,6 @@ _8ji)8
 )=@9)}
 )!@9)
 ))@9	
-@@9)#
 @9`>@
 @9)!@
 @9)%@
@@ -577,10 +575,12 @@ _8ji)8
 )%@9i
 @9i&@
 #@9i	
+@@9I#
 @9I}	
 *!@9_I
 9`i`8
 9@i`8
+9	i+8
 9@I`8
 9`i`81J
 9@i`81J
@@ -604,7 +604,6 @@ _8ji)8
 9J%@9j
 @9JA@9J}
 9jij8
-!9k`	
 9?k(8
 9?k(8Q
 9k=@9
@@ -663,7 +662,6 @@ _8ji)8
 @9wiu
 /9W?O
 /9W?OZ
-9(wU9i
 @9x;@
 @9x"@
 @9x*@
@@ -675,7 +673,6 @@ _8ji)8
 @9+	@yHA
 @9+	@yHM
 9@z(~`
-&@)@A
 a2@yh2@y
 *,A)($@),4B)o
 A8kB@9l
@@ -685,7 +682,6 @@ A8kB@9l
 	a@9?
 	a@9	
 *A@9+
-	A`9*,
 A95)^
 A95+^
 A959Q
@@ -730,6 +726,7 @@ aA9`m@
 ?AAk	"
 A(aN!
 $	A)Ar
+	Ab9J,
 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789
 aBE9a
 A block must end with a branch instruction.
@@ -746,6 +743,8 @@ aB@ya
 	aC9I	 6
 accelerationStructureNV can only be used in uniform variables or function parameters:
 $accept
+Access of unconnected ConVarRef
+Access of unconnected SplitScreenConVarRef
 access qualifier
 According to the 
 : according to the Vulkan spec atomic Result Type needs to be a 32-bit int scalar type
@@ -772,7 +771,6 @@ acospi
 AcquireVfxShaderFile: Failed to unserialize CVfxShaderFile.  Is your shadercache out-of-date?  Try deleting it.
 AcquireVfxShaderFile: Failed to unserialize CVfxShaderFileVulkan.  Is your shadercache out-of-date?  Try deleting it.
 active
-	Ad9)
 -adapter
 ADD_ASSIGN
 addInvocations
@@ -799,9 +797,7 @@ addressw
 add second child into first child
 Adobe APP14 marker: version %d, flags 0x%04x 0x%04x, transform %d
 !	A)Dr
-(aDy5
 *** A dynamic combo in %s doesn't start with "D_"! Aborting shader compile!
-	ae9	
 AE_ACTION_SET_TURN_RATE_SCALE
 AE_BLIND_ZOMBIE_SNIFF
 AE_CL_ADD_PARTICLE_EFFECT_CP
@@ -834,6 +830,7 @@ AE_VORTIGAUNT_ZAP_SHOOT
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
 *** A feature in %s doesn't start with "F_"! Aborting shader compile!
+After hitting throttling limits for streamout, allow it to continue up to this number of milliseconds.
 after solve err=%f
 A function (
 A FunctionCall must happen within a function body.
@@ -931,6 +928,7 @@ AnimDelta
 AnimEvent
 AnimFile
 animgraph0
+animgraph1
 AnimGraphEditorUtils001
 AnimIkLockLocal
 AnimLayer
@@ -950,8 +948,6 @@ any-hit
 AnyHitNV
 anyInvocation
 anyInvocationARB
-	ap9)
-	ap9	
 A)phi
 appear as the final member of an OpTypeStruct, thus cannot 
  appears in the binary before its dominator 
@@ -964,6 +960,7 @@ Application transferred too many scanlines
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 A\@Q!`
 a(@Q! ?Q?
+	ar9	
 arc cosine
 archive
 arc hyp. cosine
@@ -1163,11 +1160,11 @@ A@y5yj
 A@y6yh
 A@y7yh
 *Ay_9
-~Ay?!9k#
 A@y9yj
 ,A@y-a@y)
 A@y)A@yAyh
 )A@yIyi
+Ay?!:k#
 )A@ykA@y
 A@yMA@y,yl
 [Ay	Q
@@ -1179,8 +1176,9 @@ A@y!yh
 A@y(yh
 a@y#yj
 A@y*yj
+b"@9_
 B@9A1
-B(9hr
+B*9hr
 #B9JA
 BA9	A
 back-edge block
@@ -1271,6 +1269,7 @@ BGRA5551
 BGRA8888_LINEAR
 BGRX8888_LINEAR
 bhb8"
+Bht8F
 __BI_
 __BI_Append
 Biases the mip level the texture streaming system choses to stream for each texture.
@@ -1386,6 +1385,7 @@ block name cannot redefine a non-block name
 block redeclaration has extra members
 Block(s) 
 block_structure
+B`M9B
 bN!(a
 bNEy_
 BodyGroup
@@ -1513,7 +1513,6 @@ byteAddrTemp
 , bytes per element=
 ByVal
 @=%	@=c
-	!c9	
 c@95ID
 (C@9)?@9*#@9
 C9an@
@@ -1539,6 +1538,8 @@ Call to NULL read function
 Call to vkCreateSwapchainWSI returned an error.
 Call to vkGetPhysicalDeviceSurfaceSupportKHR returned an error.
 C(aN#
+CAnimMotorList
+CAnimMovementManager
 cannot access member variables (static member function?)
 cannot add memory qualifier to redeclared block member
 cannot add non-XFB layout to redeclared block member
@@ -1736,6 +1737,7 @@ can only use on input blocks in mesh shader
 can only use on input in tessellation-evaluation shader
 can only use on output in tessellation-control shader
 Can't clear TEXTURE_WAITING_FOR_IO flag because of streaming request mismatch: %d in handle, %d in request
+Can't clear TEXTURE_WAITING_FOR_IO flag because pTexture is NULL
 can't construct structure containing 16-bit type
 can't construct structure containing 8-bit type
 can't convert
@@ -1810,7 +1812,7 @@ catch
 CAuthPhysBody
 CAuthPhysJoint
 Caution: quantization tables are too coarse for baseline JPEG
-CB: %u buffers, %.2f MB
+  CB: %u buffers, %.2f MB
 cbuffer
 (cC9(
 *(cC9
@@ -1838,6 +1840,7 @@ cfg/mobile_vulkan_gpu_level.txt
 cfg/video_%02d.txt
 cfg/videodefaults.txt
 cfg/video.txt
+cfg/video_version.txt
 ChangeCallbackOnChange
 ChangeCallbackOnChangeOrCreate
 channels
@@ -1946,6 +1949,7 @@ ClothShapeList
 ClothShapeSphere
 ClusteredReduce
 cluster size
+c`M9c
 CmdExecTime
 CMediumCommandBufferChunk CUtlMemoryPoolMT
 CMemAllocSystemInitialize
@@ -2594,7 +2598,6 @@ CRenderDeviceVulkan::UpdateDescriptorSet: Failed to update descriptor set.
 CRenderThreadVulkan::OnReadPixels not supported for MSAA depth.  Requires shader-based MSAA depth resolve to be implemented.
 CResourceArray
 CResourceString
-CRITICAL: 
 cross
 Cross
 cross-product
@@ -2613,6 +2616,7 @@ CTextureInfoId CTextureManagerBase::AllocTextureSlot()
 CTextureManagerBase::MarkAsyncUpdatedThisFrame - Invalid texture handle.
 CTextureManagerBase::WasAsyncUpdatedThisFrame - Invalid texture handle.
 CTextureManagerVulkan::ComputeTextureObject: Tried to create a depth-stencil texture which is *not* a render target!
+CThreadedJob
 /cT?O
 CTransform
 CTSListBase::CTSListBase()
@@ -2666,6 +2670,7 @@ CUtlStringToken
 CUtlSymbol
 CUtlSymbolLarge
 CUtlVector
+(CW9sBE
 __cxa_allocate_exception
 __cxa_atexit
 __cxa_begin_catch
@@ -2790,6 +2795,7 @@ Default
 default qualifier requires 'uniform', 'buffer', 'in', or 'out' storage qualification
 ' default value must be at least 1.
 DefaultVB
+<deferred>
 -deferTextureLoads
 #define
 Define Arithmetic Table 0x%02x: 0x%02x
@@ -2965,6 +2971,9 @@ DepthStencil
 depth_unchanged
 DepthUnchanged
 Deref
+__deregister_frame
+__deregister_frame_info
+__deregister_frame_info_bases
 DerivativeControl
 derivative_group_
 derivative_group_linearnv
@@ -3034,6 +3043,7 @@ displayWindow
 DIV_ASSIGN
 divide second child into first child
 division by 0
+dl_iterate_phdr
 dlopen
 dlsym
 DMAT2
@@ -3173,6 +3183,7 @@ DXT5_NM
 Dya:A
 Dya~B
 .dynamic
+Dynamically adjust texture streaming budget based on GPU memory usage.
 DynamicCombo
 DynamicComboFromFeature
 DynamicComboRule
@@ -4212,13 +4223,13 @@ float64_t matrix
 float64_t vector
 floatbitmap.cpp
 floatbitmap.cpp(141): Unknown gamma type "%s"!
-floatbitmap.cpp(2473): Error calling TGALoader::GetInfo( %s )
-floatbitmap.cpp(2484): Error loading %s
-floatbitmap.cpp(2507): Error! Unknown file type for %s
-floatbitmap.cpp(2526): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s
-floatbitmap.cpp(325): Conversion not supported yet!
-floatbitmap.cpp(425): Conversion not supported yet!
-floatbitmap.cpp(888): Unsupported color format "%s", skipping!
+floatbitmap.cpp(2486): Error calling TGALoader::GetInfo( %s )
+floatbitmap.cpp(2497): Error loading %s
+floatbitmap.cpp(2520): Error! Unknown file type for %s
+floatbitmap.cpp(2539): Error! Slice %d format %dx%dx%d Attr(%d) != previous slices of %dx%d Attr(%d) for %s
+floatbitmap.cpp(338): Conversion not supported yet!
+floatbitmap.cpp(438): Conversion not supported yet!
+floatbitmap.cpp(901): Unsupported color format "%s", skipping!
 FloatBitMap::DownsampleNiceFiltered
 FloatBitMap::QuarterSize
 FloatBitMap::QuarterSizeBlocky
@@ -4374,6 +4385,7 @@ FragStencilRef
 FragStencilRefEXT
 frame
 	Framebuffer Count ( %d ): 
+__frame_state_for
 FrameSync() - bailing out of vkWaitForFences( fenceCount = %d ) after %f seconds, error = %s
 fread
 `fread' error. file may be corrupted.
@@ -4879,6 +4891,7 @@ Google spiregg
 g_pMemAlloc
 g_pThreadPool
 GPU memory available (%d MB of %d MB used). Increasing texture pool size %d MB -> %d MB.
+GPU memory available (%d MB of %d MB used). Reducing texture pool size %d MB -> %d MB
 GPU reports %dMB available memory which is too low, using %d MB
 Graphics Device changed, resetting video config
 graphics-robust-access
@@ -4963,6 +4976,8 @@ gs_4_1
 gs_5_0
 g_Tier1_BitWriteMasks
 __gxx_personality_v0
+(!Gy)
+(!Gy5
 g@yRz
 	)	)h
 h&@)?
@@ -5072,8 +5087,10 @@ Hash: %llu
 has storage class StorageBuffer.
 Having 
 H(Ay	M
+h&B)@
 !Hb8b
 hb8bF
+hb 9<_
 hb@9`
 hb@9h
 hb@9H
@@ -5081,7 +5098,6 @@ hB@9h
 hB@9i
 hB@9t
 hb@9w
-h&B)@A
 hBA9)
 hbA9h
 hBA9h
@@ -5091,8 +5107,6 @@ hbC9H
 *hbC9H
 hBE9h
 hBE9j
-hBg9)
-hBH9h
 hBI9H%
 hB@yh&
 hc87hd89hc88hb8
@@ -5106,7 +5120,6 @@ hcC9H
 *hcC9H
 HcC9h
 HcC9H
-HcOy@
 hd8% 
 hd8%,
 hd8%(
@@ -5137,8 +5150,8 @@ hexadecimal literal too long
 HEX_DIGIT
 HEXINTEGERLITERAL
 =hf@9
-hf@9!
 hf@9a*
+hf@9A
 hf@9h
 hf@9H
 hf@9i
@@ -5180,8 +5193,7 @@ H%@)J	@
 hj8."@
 hJ@9h
 hjh8{
-hjj8)5C
-hJL9	
+hjj8)1C
 h'@)jS@
 *hjt8
 hjt8U
@@ -5195,7 +5207,6 @@ hn8c|
 HostStateMgr001
 hr1yI
 h"R9h
-=hrCy
 hrqy`Z
 hr@y`
 hs_5_0
@@ -5242,7 +5253,6 @@ i(8hilxi*
 i)8i&
 i*8?i,x
 ?i(8?i*x?i+
-i`8j%
 I8VEC2
 I8VEC3
 I8VEC4
@@ -5260,10 +5270,11 @@ ib@9i
 iB@9i
 ib@9l
 ibA9J
-IB: %d buffers, %.2f MB
+  IB: %d buffers, %.2f MB
 *ibE9
 ibE9I
 IB)Mki
+iBNy`
 *** IB "%s": Tried to lock a GPU-only buffer!
 *** IB "%s": Tried to lock a non integral number of indices!
 *** IB "%s": Tried to lock a static buffer twice!
@@ -5378,6 +5389,7 @@ ignoring unrecognized register type
 )ihxAyi
 	ii8(&
 	ii8	
+ii8	,
 ii8	a
 ii8Fhi8
 	ii8i
@@ -5410,23 +5422,22 @@ iimageCubeArray
 IIMAGECUBEARRAY
 ii*x	
 Ii+x!
-	iix?!6k
+	iix?!4k 
+	iix?!5k
 	iix?!6k`
 	iix?!7k
 	iix?!8k
-	iix?!8k 
 	iix?!9k
 	iixh
 	iix?!<k
-	iix?!;k
 	iix?!:k
 i"@)j
+<)ij8
 )ij8?
 )ij8	
 *ij(8
 ij8(	
 ij(8h
-<)ij8j&
 -ij8J
 ij8kI
 )ijx?
@@ -5637,6 +5648,7 @@ Incorrect sRGB chunk length
 Incorrect tIME chunk length
 Incorrect tRNS chunk length
 Incorrect vpk path delimiter for shader %s
+Increase texture memory pool size by this many MB / s when under budget.
  index=
 Index 
 indexable
@@ -5715,6 +5727,7 @@ input_attachment_index
 InputAttachmentIndex
 input blocks cannot be used in a mesh shader
 Input file read error
+./inputlayoutbase.h
 INPUT_LAYOUT_VARIATION_DEFAULT
 INPUT_LAYOUT_VARIATION_MAX
 INPUT_LAYOUT_VARIATION_STREAM1_INSTANCEID
@@ -5842,6 +5855,7 @@ in    uvec3  gl_LaunchIDNV;in    uvec3  gl_LaunchSizeNV;in     int   gl_Primitiv
 in    uvec3  gl_LaunchIDNV;in    uvec3  gl_LaunchSizeNV;in    vec3   gl_WorldRayOriginNV;in    vec3   gl_WorldRayDirectionNV;in    vec3   gl_ObjectRayOriginNV;in    vec3   gl_ObjectRayDirectionNV;in    float  gl_RayTminNV;in    float  gl_RayTmaxNV;in    uint   gl_IncomingRayFlagsNV;
 <invalid>
 Invalid 
+Invalid access of deferred ConVarRef for '%s'
 invalid alpha mode
 Invalid argument for DecodeEXRImage().
 Invalid argument for LoadDeepEXR
@@ -6059,7 +6073,6 @@ IQuickTime001
 iR_8jB_8b
 ; IR after last pass
 ; IR before pass 
-irCy`
 IS_8JC_8B
 isalpha
  is already a merge block for another header
@@ -6225,11 +6238,12 @@ IVEC2
 IVEC3
 IVEC4
 	*iW@
+.i(x/
 *'i$x
 *i,xi>@yj:
 *i.xi>@yj:
 i#xjj-
-i+xjZ
+i+xjj
 I!@y?
 iy8J	
 i>@yh
@@ -6238,39 +6252,45 @@ Iy_! k
 Iyk:B
 Iy?! kC
 Iy*wB
+!~j	(
 )*J=@
 **J=@
 +*J=@
+	*J13
 j1By_! k
-',)j2G
 ',)j3@
-j48lE
-j58-=
+j48lI
+j58-A
 j58@c
-j58G;
-j58H%
+j58G?
+j58h%
 j58hf@9(
 j68HC@9h
 j68i"S
+j68X|
 @j!8!
 j*8*%
+j-82?
 j(8a6@
 j(8`B
+j(8dj
 j(8h*@
-j(8H-
+j(8H^
 j)8HA
 j/8hj)
-j(8HU
+j(8Hx
 j`8!i 8
 j`8'k`8
 j-8nj)
-j(8rn
  J9?@
 J9e:A
 J)@9j
+j 9vb
 j"@9)Y@
+ja8? 
 ja8 i!8!
 J,A)(yh
+jb8_ 
 jB_8?
 jbA9)
 JC@9L
@@ -6280,6 +6300,7 @@ JFIF extension marker: JPEG-compressed thumbnail image, length %u
 JFIF extension marker: palette thumbnail image, length %u
 JFIF extension marker: RGB thumbnail image, length %u
 JFIF extension marker: type 0x%02x, length %u
+',)j:G
 jh8Gkh8
 ji8J}
 Jidx?
@@ -6308,11 +6329,11 @@ JSON error, unterminated element:
 /JU7OB
 jump_statement
 Ju@y_
-j(x()
+j*x$F
 j$xij.
 j(x	k(x)k(x
-j*xmE
-j*xXE
+j+xvA
+j(x(Z
 J%@y_
 Jy?! kC
 J!@y-!@ylyj
@@ -6327,11 +6348,13 @@ K[ .)
 _k58(
 k68+c
 k68wZ@
+_k78h
 ?k78h
 ?k78H
 |k(8('@
 _k;8(
 *?k(8
+_k88H
 ?k<8h
 k(8hF@
 ?k(8J
@@ -6354,6 +6377,7 @@ keep-uncalled
 kernel enqeue flags
 kernel profiling info
 KeyValueCache001
+keyvalues.cpp
 KeyValues Error: %s in file %s
 KeyValues::ParseIncludedKeys: Couldn't load included keyvalue file %s
 KeyValues::RecursiveSaveToFile: TODO, missing code for TYPE_COLOR.
@@ -6387,11 +6411,9 @@ KMdEy
 KMeansQuantization
 Km@x+
 kn1V?OK
-(knNh
 KOio8
 KPip8
 KRir8\K
-k}	Sj
 /kU?O
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
 kv3format_manager.cpp
@@ -6399,9 +6421,8 @@ KV Conditional Evaluation Error
 K%@xl}
 k	@y)
 k!@yJ
+-@)L)
 l5<)_
-+-)l6G
-l6H))
 l!@9)
 l	@9,
 l	@9J
@@ -6452,6 +6473,7 @@ Less than 1GB of texture memory detected, force streaming texture manager.
 lessThanEqual
 LEVEL 
 Lexer encountered %i errors parsing compile targets expression "%s"
++-)l>G
 lgamma
 lgamma_r
 li-8(ih8i
@@ -6600,7 +6622,6 @@ loop-unroll-partial
 --loop-unroll-partial must have a positive integer argument
 loop-unswitch
 Loop with condition 
-Low GPU memory detected (%d MB of %d MB used). Reducing texture pool size %d MB -> %d MB
 lowp   int bitCount(  int);lowp ivec2 bitCount(ivec2);lowp ivec3 bitCount(ivec3);lowp ivec4 bitCount(ivec4);lowp   int bitCount( uint);lowp ivec2 bitCount(uvec2);lowp ivec3 bitCount(uvec3);lowp ivec4 bitCount(uvec4);lowp   int findMSB(highp   int);lowp ivec2 findMSB(highp ivec2);lowp ivec3 findMSB(highp ivec3);lowp ivec4 findMSB(highp ivec4);lowp   int findMSB(highp  uint);lowp ivec2 findMSB(highp uvec2);lowp ivec3 findMSB(highp uvec3);lowp ivec4 findMSB(highp uvec4);
 lowp   int findLSB(  int);lowp ivec2 findLSB(ivec2);lowp ivec3 findLSB(ivec3);lowp ivec4 findLSB(ivec4);lowp   int findLSB( uint);lowp ivec2 findLSB(uvec2);lowp ivec3 findLSB(uvec3);lowp ivec4 findLSB(uvec4);
 lowp precision qualifier
@@ -6614,6 +6635,7 @@ LunarG
  l-value of swizzle cannot have duplicate components
  l-value required
 LZMA compression of static combo data failed
+@`M9`
 macro expansion
 Macro redefined; different argument names:
 Macro redefined; different number of arguments:
@@ -6759,7 +6781,7 @@ m_bNoColor
 m_bOffsetExistingPos
 m_Bone
 m_bParticleFeathering
-MbP?x
+MbP?t
 m_bRemapPullForceToLife
 m_bRunForParentApplyKillList
 m_bScaleCurrent
@@ -7018,6 +7040,7 @@ m_Joints
 mjq8jjn
 m_LiteralColor
 -=M]m}
+m_MotorList
 mM@x_
 m_Name
 m_nAnimationType
@@ -7146,6 +7169,7 @@ move second child to first child
 m_pBody
 m_pD3DSemanticName
 m_pJointConstraintData
+m_pMovementManager
 m_pName
 m_pParent
 m_PreEmissionOperators
@@ -7244,6 +7268,7 @@ N2Z .
 N7glslang7TShader8IncluderE
 !n9[ .
 [ n9+a
+N@9-F
 ,.n*a
 name already defined
 named_barrier
@@ -7331,6 +7356,7 @@ NoCapture
  noContraction
 NoContraction
 no declaration found for redeclaration
+<no deferred ref found>
 node is still EOpNull!
 No displayable format found for swapchain that supports the requested display mode.
 No errors.  No code generation or linking was requested.
@@ -7518,6 +7544,7 @@ ObjectRayTminNV
 	Objects - %d
 Obtained EMS handle %u
 Obtained XMS handle %u
+occlusionquerymgr.cpp
 o$ c.! cn
 octal and hex sequences not supported
 OCTAL_ESC
@@ -7777,6 +7804,7 @@ out uint gl_PrimitiveCountNV;out uint gl_PrimitiveIndicesNV[];in uint gl_MeshVie
 out uint gl_TaskCountNV;const highp uvec3 gl_WorkGroupSize = uvec3(1,1,1);in highp uvec3 gl_WorkGroupID;in highp uvec3 gl_LocalInvocationID;in highp uvec3 gl_GlobalInvocationID;in highp uint gl_LocalInvocationIndex;in uint gl_MeshViewCountNV;in uint gl_MeshViewIndicesNV[4];
 out vec4 gl_ClipVertex;
 	o.vColor = v.vColor;							
+Overall System GPU memory use:
 Overflow of the sheet cache texture. Releasing and starting over. This is ok in asset browser, not so ok if the game is triggering this!
 Overflow of the sheet cache texture: Try increasing SheetCacheTextureRows in gameinfo.gi (current value %d)!
 overlapping offsets at
@@ -7873,7 +7901,6 @@ peel_count
 PeelCount
 PeelCount and DontUnroll loop controls must not both be specified
 PERCENT
-Percentage of heap budget used when we are in a critical state.
 PERFORMANCE
 Perf Warning End Convert image 2 format %dX%d %d mipCount
 Perf Warning Start Convert image 2 format %s=>%s %dX%d %d mipCount
@@ -7970,6 +7997,7 @@ Plat_OsSpecificHandleToPlatWindow
 Plat_ReconfigureWindow
 Plat_RelativeTicks
 Plat_RequireSDL
+Plat_SetDenormalsAreZero
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_TicksAfterSecsF
 Plat_UUIDFromString
@@ -8098,6 +8126,7 @@ psize
 	PSO Count ( %d ) 
 PS_RENDER_STATE
 _psrs
+pthread_create
 pthread_getspecific
 pthread_key_create
 pthread_mutexattr_init
@@ -8106,6 +8135,7 @@ pthread_mutex_destroy
 pthread_mutex_init
 pthread_mutex_lock
 pthread_mutex_unlock
+pthread_once
 pthread_setspecific
 _ptr_
 ptr( 0x%p )
@@ -8115,12 +8145,15 @@ PtrEqual
 PtrNotEqual
 public
 ../public/ordered_constructor.h
+../public/tier0/globallist.h
 ../public/tier0/tslist.h
+../public/tier1/memstack.h
 ../public/tier1/utlblockmemory.h
 ../public/tier1/utlfixedmemory.h
 ../public/tier1/utlleanvector.h
 ../public/tier1/utllinkedlist.h
 ../public/tier1/utlrbtree.h
+../public/tier1/utltshash.h
 PushConstant
 PushConstant id '
 PushConstant OpVariable <id> '
@@ -8131,7 +8164,6 @@ _!@q
 Q0&	S
 Q1iq8Rir8`i`8
 _	Q?9
-	Q^9I
 qaI	T
 Q(aNf(!
 QAngle
@@ -8250,6 +8282,7 @@ redeclaration only allowed for viewport_relative or secondary_view_offset layout
 redeclaring non-array as array
 redefinition of built-in function
 reduce-load-size
+Reduce texture memory pool size by this many MB / s when over budget.
 Reduce texture memory pool size when this percentage of the budget is full.
 Reducing stack by rule %d (line %lu):
 reference conversion to uvec2
@@ -8257,6 +8290,12 @@ Reflect
 refract
 Refract
 RegisterConfigValue: Unknown error constructing config value "%s"!
+__register_frame
+__register_frame_info
+__register_frame_info_bases
+__register_frame_info_table
+__register_frame_info_table_bases
+__register_frame_table
 RegisterHibernationListener
 register number description
 RegisterStringToken
@@ -8288,12 +8327,13 @@ RENDER_BUFFER_USAGE_UNORDERED_ACCESS
 RENDER_BUFFER_USAGE_VERTEX_BUFFER
 rendercontextbase.cpp
 RenderDevice003
-renderdevicebase.cpp(1487): 
-renderdevicebase.cpp(1648): 
-renderdevicebase.cpp(3116): 
-renderdevicebase.cpp(644): 
-renderdevicebase.cpp(918): 
-renderdevicebase.cpp(935): 
+renderdevicebase.cpp
+renderdevicebase.cpp(1500): 
+renderdevicebase.cpp(1664): 
+renderdevicebase.cpp(3183): 
+renderdevicebase.cpp(656): 
+renderdevicebase.cpp(930): 
+renderdevicebase.cpp(947): 
 Render Device Empty
 RenderDeviceMgr001
 renderdevicemgrbase.cpp
@@ -8356,17 +8396,20 @@ RENDER_PRIM_TRIANGLE_STRIP
 RENDER_PRIM_TRIANGLE_STRIP_WITH_ADJACENCY
 RENDER_PRIM_TRIANGLES_WITH_ADJACENCY
 RENDER_PRIM_TYPE_COUNT
+./renderresource.h
 RenderService_001
 RENDER_SLOT_INVALID
 RENDER_SLOT_PER_INSTANCE
 RENDER_SLOT_PER_VERTEX
 RenderSlotType_t
+./renderstatehelper.h
 __RenderStateLiteral__
 RenderSystem
 RenderSystem/AllowSampleableDepthInVr
 RenderSystem/AlwaysPreloadTexturesInGame
 #RenderSystem_CannotCreateDevice
 Rendersystem/SheetCacheTextureCols
+rendersystem (%s) tracked resources:
 RenderSystemSurface001
 RenderSystem/SwapChainSampleableDepth
 -rendersystem_thread_mode
@@ -8546,7 +8589,7 @@ R	hi8
 rhj)8
 rhj)8@
 Rhj)8
-rhj)8SA
+rhj)8NC
 Rhj)8t
 rhjh8
 Rhjh8
@@ -8586,8 +8629,6 @@ Rijh8
 Rijhx
 Riji8
 r)ijx?
-r+ik8
-r+ikxk	
 R)il8_
 Rir8!
 ri}	S
@@ -8600,9 +8641,7 @@ rJik8J
 RJik8J
 Rjjhx
 rjjixk
-R?k88u
-RKik8
-RKikxk	
+R?k88
 rkjjxk
 RkMKJ,
 Rljo8
@@ -8636,18 +8675,20 @@ r_pipeline_stats_present_flush
 r_prefer_loop_unrolling
 RSS delta
 rs_submit_twice
+r_texture_budget_dynamic
 r_texture_budget_threshold
-r_texture_budget_threshold_critical
 r_texture_budget_update_period
 r_texture_eager_eviction
 r_texture_hookup_uses_threadpool
 r_texture_nonstreaming_load
 r_texture_nonstreaming_only_fullmipchain
+r_texture_pool_increase_rate
+r_texture_pool_reduce_rate
 r_texture_pool_size
 r_textures_evict_all
-r_texture_stream_debug_spew
 r_texture_streaming_timesliced
 r_texture_stream_mip_bias
+r_texture_streamout_unthrottle_ms
 r_texture_stream_throttle_amount
 r_texture_stream_throttle_count
 RTit8
@@ -8688,6 +8729,7 @@ Rxjhx
    %s 
 "%s" 
 (*%s*), 
+}	S,}
 S,,>,>
    %s 0..0
 %s.360%s
@@ -8695,6 +8737,7 @@ S3,	S48
 S)5K*j
 S6jh8)
 S\8	C\8
+	!s9	
 s))A@9)
 s_abs
 s_abs_diff
@@ -9286,6 +9329,8 @@ SSign
 *** %s "%s" in %s has max(%d) > 254!
 *** %s "%s" in %s has min(%d) < 0!
 *** %s "%s" in %s has min(%d) > max(%d)!
+  %s / %s MB
+  %s / %s MB (non-evictable: %s MB)
 %s: string format requested %d chars
 's struct member count.
 %s     subgroupAdd(%s);
@@ -9381,7 +9426,6 @@ StaticPool_%s
 	Static Type ( %s ): Count ( %d ) ( %llu MB ) ( Free: %llu MB, Largest Free Block %llu MB )
 static void CGlobalConfigValueRegistry::HookUpConfigValue(const char *, ConfigType_t, ConfigValueType_t, CConfigValueOptions &&, const void **)
 static void CSchemaRegistration::RegisterAllModuleData(ISchemaSystem *)
-static void CTextureManagerVulkanNew::RemoveMipLevelsForTextures(const CUtlVector<TextureStreamingPriorityInfo_t> &, uint64, int, uint64, int &, int &, uint64 &)
 StatsService_001
 St+B)U
 std140
@@ -9879,6 +9923,7 @@ T#@@9$D@9 H@9cx
 T	!@9i
 T`.@9s.
 T	`A9
+Ta[axc
 TafEyab
 tangents
 tangentt
@@ -9988,6 +10033,7 @@ texelFetch
 texelFetchOffset
 texel offset
 TEXMAN: Abandoning job in %s
+TEXMAN: Abandoning streaming request early in %s
 TEXMAN: Abandoning streaming request in %s
 TEXMAN: Adding %s, %llx to abandoned hookup jobs
 TEXMAN: CTextureManagerVulkan::LoadStreamingData MarkTextureBitsLoadRequired (%s)
@@ -10030,16 +10076,16 @@ texture3DProjGradARB
 texture3DProjLod
 texture address mode
 texturebase.cpp
-texturebase.cpp(1731):Error loading texture: %s
-texturebase.cpp(2647):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2668):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2679):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2690):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2701):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2722):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2733):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2744):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2755):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(1803):Error loading texture: %s
+texturebase.cpp(2737):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2758):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2769):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2780):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2791):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2812):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2823):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2834):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2845):ResourceHandleToData( %s ) failed! Falling back to error texture!
 TextureBuffer
 textureClamp
 textureClampARB
@@ -10078,7 +10124,7 @@ Texture manager doesn't know about texture "%s" - returning error texture in  CT
 Texture manager doesn't know about texture "%s" - returning error texture in CTextureManagerVulkan::GetResourceView
 Texture manager out of space! Can't allocate new texture!
 Texture memory discrepancy! %llu != %llu
-Texture memory limit: %s; in use: %s in %s textures
+Texture memory: %s / %s MB; in %s textures (%s MB non-evictable)
 Texture missing shader resource view - returning error texture in  CTextureManagerVK::GetImageView
 Texture missing shader resource view - returning error texture in CTextureManagerVulkan::GetResourceView
 textureOffset
@@ -10105,14 +10151,15 @@ TextureSize
 TextureSpecificationFlags_t
 TextureStaging
 texture state
-TEXTURESTREAMING: Extremely low memory: Available mem: %.2f MB, Required: %.2f MB. Kicking out all non-pinned textures.
+Texture Streaming:
+TEXTURESTREAMING: Extremely low memory: Available mem: %.2f MB, Required: %.2f MB.
 TEXTURESTREAMING: Filled %d fallback textures in %.3f ms
 TEXTURESTREAMING: Resource view ptr or texture resources are still NULL after waiting.
 Texture streaming validation OK (%d texture loads in flight).
 Texture template struct return slots exceeded
 Texture template structure members must same basic type
 texture type for multisample
-TEX: %u textures, %.2f MB
+  TEX: %u textures, %.2f MB
 Tfh!8
 TFh`8
 TFLFy
@@ -10129,13 +10176,11 @@ THa@9(
 TH#A9
 that allocate pointers must be in Function or Private 
  that is not a scalar or vector
-Th~Ay
 T hb8
 T#hb8
 Thb@9
 Thb@9H
 ThbC9H
-ThBH9h
 ThBJy
 ThBL9
 Th.By
@@ -10191,13 +10236,13 @@ this instruction is currently limited to 32-bit width
 . This may be a bug in the validator.
 '. This structure has 
 ThJJy
+Thj@y
 ThJ@y
 ThJ@yi
 ThN@9
 ThN@9h
 ThN@9L
 ThrA9
-ThrBy
 ThreadGetCurrentId
 ThreadJoin
 	Thread (%llu) Command Buffers (%d)
@@ -10209,9 +10254,7 @@ Thr@y
 ThvAy
 Thw@y
 Th.@y
-ThzBy
 Thz@y
-ThZ@y
 Ti2@yh
 Ti3@y
 Ti5KJ(}
@@ -10255,7 +10298,7 @@ Tl5D)_
 TL	@9kA
 Tlii8k
 TL!@y
-TMK@y
+TmK@y
 tn)U?O
 /!T?O
  to be int or float scalar or vector type
@@ -10296,7 +10339,7 @@ Too many threads (%d) accessing the render device, need to increase -r_max_devic
 Too many threads (%d) accessing the render device, need to increase -r_max_device_threads (%d)
 , topLevelArrayStride %d
 to storage image
-TOTAL: %.2f MB
+  TOTAL: %.2f MB
 Total Combined ( %llu MB ) 
 Total Combos After Rules:  %15s ( %s Static, 
 Total Combos Before Rules: %15s ( %s Static, %s Dynamic )
@@ -10619,6 +10662,7 @@ Unable to write validation shader cache %s file.
 unary_expression
 unary operator
 unary_operator
+<unconnected>
 undeclared identifier
 #undef
 undefined
@@ -10821,7 +10865,24 @@ Unsupported PSD color mode!
 Unsupported text encoding id.
 Unsupported version or scanline
 unterminated mips operator:
+_Unwind_Backtrace
+_Unwind_DeleteException
+_Unwind_FindEnclosingFunction
+_Unwind_Find_FDE
+_Unwind_ForcedUnwind
+_Unwind_GetCFA
+_Unwind_GetDataRelBase
+_Unwind_GetGR
+_Unwind_GetIP
+_Unwind_GetIPInfo
+_Unwind_GetLanguageSpecificData
+_Unwind_GetRegionStart
+_Unwind_GetTextRelBase
+_Unwind_RaiseException
 _Unwind_Resume
+_Unwind_Resume_or_Rethrow
+_Unwind_SetGR
+_Unwind_SetIP
 /]U?O
 UpdateExternalTexture called on unknown external texture '%s'
 UPDATE_STRING_TOKEN_DATABASE
@@ -11010,7 +11071,7 @@ VAvi001
 VBAllocTracker001
 VBaseFileSystem011
 vb_created_input_layout
-VB: %d buffers, %.2f MB
+  VB: %d buffers, %.2f MB
 VBik001
 *** VB "%s": Failed to lock!
 *** VB "%s": Tried to lock a GPU-only buffer!
@@ -11134,13 +11195,13 @@ vfx_common.cpp(3678): Error! Ref count !=0 for static combo data cache entry!
 *** vfx_common.cpp(5608): Error opening file "%s"!
 *** vfx_common.cpp(5712): Error opening file "%s"!
 *** vfx_common.cpp(6167): Programmer Error! The order of VfxVariableSourceType_t does not match s_shaderVariableSource!
-vfx_common.cpp(6838): Error opening file %s
-vfx_common.cpp(6912): VCS %s Unserialize failed
-vfx_common.cpp(6926): VCS %s Unserialize hit EOF
-vfx_common.cpp(7064): Error opening file %s
-vfx_common.cpp(7071): Error calling SkipAndValidateVCSHeader() for %s
-*** vfx_common.cpp(7302): Programmer Error! NULL pointer passed into function!
-*** vfx_common.cpp(7328): Programmer Error! Non feature rule found in feature rule array!
+vfx_common.cpp(6840): Error opening file %s
+vfx_common.cpp(6914): VCS %s Unserialize failed
+vfx_common.cpp(6928): VCS %s Unserialize hit EOF
+vfx_common.cpp(7066): Error opening file %s
+vfx_common.cpp(7073): Error calling SkipAndValidateVCSHeader() for %s
+*** vfx_common.cpp(7304): Programmer Error! NULL pointer passed into function!
+*** vfx_common.cpp(7330): Programmer Error! Non feature rule found in feature rule array!
 vfx_compile_target_expr.cpp(106): : Failed to create lexer from "%s"
 vfx_compile_target_expr.cpp(114): : Failed to create token stream from "%s"
 vfx_compile_target_expr.cpp(122): : Failed to create parser from "%s"
@@ -11169,6 +11230,8 @@ VGUI_Surface032
 VGUI_System010
 Video Card %s (%04x : %04x)
 video.cfg
+Video config version number changed ( '%s' is version %i, current version is %i ). Resetting video config.
+video_version
 view port array2
 viewport_relative
 virtual
@@ -11815,12 +11878,13 @@ void CRenderContextVulkan::MarkIssuesCommands()
 void CRenderContextVulkan::SetConstantBufferDataInternal(ConstantBufferHandle_t, uint32, uint32, const void *const *, uint32)
 void CRenderDeviceVulkan::CreateDefaultShaders()
 void CSheetDataTextureCache::AllocateAndUploadSequenceData(const Sheet_t *, Vector2D *, int *)
-void CTextureManagerBase::AsyncHookUpTextureBits(CTextureBase *, HRenderTexture, ResourceId_t, void *, int, TextureSpecification_t, TextureSpecification_t, int32, TextureBitsMemoryType_t)
-void CTextureManagerBase::MN_OnResourceFileLoaded(IAsyncResourceDataRequest *, CTextureBase *, TextureSpecification_t, int32)
+void CTextureManagerBase::AsyncHookUpTextureBits(CTextureBase *, HRenderTexture, ResourceId_t, void *, uint, TextureSpecification_t, TextureSpecification_t, int32, TextureBitsMemoryType_t)
+void CTextureManagerBase::MN_OnResourceFileLoaded(IAsyncResourceDataRequest *, HRenderTexture, CTextureBase *, TextureSpecification_t, int32)
 void CTextureManagerBase::MN_OnResourceLoadCompleted(CTextureBase *, TextureObjectInfo_t &, int32, int)
 void CTextureManagerBase::MN_OnResourceLoadFailed(CTextureBase *, int32)
 void CTextureManagerBase::PreloadTextureBits(HRenderTexture, RenderTextureDetail_t)
 void CTextureManagerBase::RemoveTextureFromAnyQueues(CTextureBase *)
+void CTextureStreamingHelper::RemoveMipLevelsForTextures(const CUtlVector<TextureStreamingPriorityInfo_t> &, uint64, int, float, uint64, int &, int &, uint64 &)
 void CUtlBlockMemory<CVfxStaticComboData, int>::ChangeSize(int) [T = CVfxStaticComboData, I = int]
 void CUtlBlockMemory<unsigned int, int>::ChangeSize(int) [T = unsigned int, I = int]
 void CUtlBuffer::VaPrintf(const char *, va_list)
@@ -11918,11 +11982,11 @@ V_RemoveDotSlashes
 VRenderDeviceSetupV001
 vr_explicit_timing_mode
 VR explicit timing mode for Vulkan
-vr_flush_on_timer
 vr_multigpu_skip_semaphores
 vr_multigpu_skip_transfers
 vr_vulkan_wait_fence_between_eyes
 vR@)wbAi{rCiyjB)
+]V}S&
 $&,V,S
 vs_3_0
 vs_4_0
@@ -12027,6 +12091,7 @@ vulkan/forceloadshadervulkan.h
 -vulkan_force_sm30
 Vulkan Framebuffer Manager Stats:
 vulkan_framebuffermgr_print
+vulkan/framebuffermgrvulkan.cpp
 Vulkan framebuffers: %s; renderpasses: %s
 Vulkan initialization failed, '%s' likely failed to load.
 #Vulkan_InitializationFailure
@@ -12040,6 +12105,7 @@ VulkanKhrSwapchain()->vkGetSwapchainImagesKHR( m_pDeviceVulkan, m_pSwapChainKHR,
 Vulkan lazily allocating render targets.
 vulkan_memgr_fragmentation_print
 vulkan_memgr_print
+vulkan/memorymgrvulkan.cpp
 VulkanMemoryModel
 VulkanMemoryModelDeviceScope
 VulkanMemoryModelDeviceScopeKHR
@@ -12068,20 +12134,24 @@ Vulkan PMB Memory Manager Stats:
 -vulkan_qc_disable_null_pixel_shader_workaround
 vulkan_readpixels_resolve.vtex
 vulkan/rendercontextvulkan.cpp
-vulkan/rendercontextvulkan.cpp(499): 
-vulkan/rendercontextvulkan.cpp(512): 
+vulkan/rendercontextvulkan.cpp(501): 
+vulkan/rendercontextvulkan.cpp(514): 
 vulkan/renderdevicevulkan.cpp
 vulkan/renderdevicevulkan.cpp(1708): 
 vulkan/renderdevicevulkan.cpp(2342): 
 vulkan/renderdevicevulkan.cpp(2971): 
 vulkan/renderdevicevulkan.cpp(3280): 
 vulkan/renderdevicevulkan.cpp(4017): 
+vulkan/renderpassvulkan.cpp
+vulkan/renderpipelinestatsvulkan.cpp
 -vulkanrenderthreadstack
+vulkan/renderthreadvulkan.cpp
 vulkan/renderthreadvulkan.cpp(194): Error! NULL texture pointer sent to OnReadPixels()!
 #Vulkan_RequiredExtensionMissing
 -vulkan_scene_system_job_cost
 Vulkan shader pipeline cache file version is %d instead of %d for %s. Deleting.
 vulkan_shader_table_print
+vulkan/shadertablevulkan.cpp
 Vulkan spec allows BuiltIn 
 Vulkan spec allows BuiltIn HelperInvocation to be only used for variables with Input storage class. 
 Vulkan spec allows BuiltIn HelperInvocation to be used only with Fragment execution model. 
@@ -12129,9 +12199,9 @@ Vulkan swapchain does not support VK_IMAGE_USAGE_TRANSFER_SRC_BIT. Screenshots n
 Vulkan swapchain out-of-date, suboptimal, or surface lost - recreating.  Result: (%s)
 Vulkan swapchain recreated succesfully.  Attempting to acquire next image...
 Vulkan texture manager frame update
-vulkan/texturevulkan.cpp(1446): 
-vulkan/texturevulkan.cpp(728): 
-vulkan/texturevulkan.cpp(744): 
+vulkan/texturevulkan.cpp(1443): 
+vulkan/texturevulkan.cpp(725): 
+vulkan/texturevulkan.cpp(741): 
 Vulkan using external subpass dependencies for all renderpasses.
 -vulkan_validation_warnings
 V_UTF16ToUTF8
@@ -12160,7 +12230,6 @@ v@yxW
 v@yY@
 W3C WebGPU Group
 W3C WebGPU Group WHLSL Shader Translator
-(#W9sBE
 Waited for left eye command buffers to finish for 250ms, trying again.  Likely a GPU hang.
 WAITING_FOR_HOOKUP_JOB 
 WAITING_FOR_IO 
@@ -12338,6 +12407,7 @@ XYZ values out of representable range
 !@y	!
 "@y*%
 )%@y?
+	#@y?
 @y3yh
 !@y3yj
 	y4xl
@@ -12373,7 +12443,6 @@ y(/Bx
 #@@yc
 y#	@=c
 yC	@}c
-y	eDy
 *@yh2
 yh2Dy
 .@yh6
@@ -12385,7 +12454,6 @@ yH/Bx
 yhj)x
 yh/Jx
 yH/Jx
-yhrBy
 yhr@y
 yhR@y
 yhvCyvz
@@ -12395,7 +12463,6 @@ yh:@y
 )	@yi*
 @yI}	
 	yi:B
-yi~Byk
  yielding Result Id 
 yif@9
 yiFJy?
@@ -12410,7 +12477,6 @@ yin@y)
 yI/@y)
 yI'@y?
 yI/@yJ
-yizByj
 	yj:B
 )YJJ)}
 yjx+y*
@@ -12478,6 +12544,7 @@ _Z6DevMsgPKcz
 #Z80ijx
 #Z8	A
 _ZdaPv
+zd?(knN
 _ZdlPv
 ZeroExtend
 Zero length tRNS chunk
@@ -12502,18 +12569,18 @@ _ZN13CBufferString8RemoveAtEii
 _ZN13COneTimeEvent8AllocateEv
 _ZN16CThreadSemaphore7ReleaseEiPi
 _ZN16CThreadSemaphoreD1Ev
-_ZN17CThreadSpinRWLock10UnlockReadEv
-_ZN17CThreadSpinRWLock11LockForReadEv
-_ZN17CThreadSpinRWLock11UnlockWriteEv
-_ZN17CThreadSpinRWLock16SpinLockForWriteEy
+_ZN17CThreadSpinRWLock10UnlockReadEPKci
+_ZN17CThreadSpinRWLock11LockForReadEPKci
+_ZN17CThreadSpinRWLock11UnlockWriteEPKci
+_ZN17CThreadSpinRWLock16SpinLockForWriteEPKciy
 _ZN17CThreadSyncObject4WaitEj
 _ZN17CThreadSyncObjectD2Ev
 Z n1*a
 _ZN21CThreadMultiWaitEvent3SetEv
-_ZN22CThreadRWLock_FastRead20UnlockReadAccountingEj
+_ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
 _ZN22CThreadRWLock_FastRead23UnlockRead_LockForWriteEv
 _ZN22CThreadRWLock_FastRead23UnlockWrite_LockForReadEv
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEj
+_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
 _ZN22CThreadRWLock_FastRead30HandleFirstWriteLockTransitionEv
 _ZN22CThreadRWLock_FastReadC1Ev
 _Znam
@@ -12548,7 +12615,7 @@ _ZNSt6__ndk19to_stringEi
 _ZNSt6__ndk19to_stringEj
 _ZNSt6__ndk19to_stringEx
 _ZNSt9exceptionD2Ev
-_ZNV16CThreadFastMutex4LockEyj
+_ZNV16CThreadFastMutex4LockEPKciyj
 _Znwm
 _ZnwmRKSt9nothrow_t
 Z n)Y n

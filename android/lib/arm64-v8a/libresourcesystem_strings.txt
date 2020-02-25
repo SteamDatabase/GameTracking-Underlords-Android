@@ -1,5 +1,7 @@
+<()@)
 >{}()':
 '":|;
+()@))	@
 {}[]=, 	
 {}[]()=&, 	
 	*	}`
@@ -9,7 +11,6 @@
 11IRefCounted
 %-120s
 %-120s - %s
-12CEmptyConVar
 12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE
 14CBaseAppSystemI15IResourceSystemE
 14ConCommandBase
@@ -25,6 +26,7 @@
 16CLoadingResource
 16CNullTypeManager
 16ICommandCallback
+18CPlaceholderConVar
 18ITSHashConstructorI21ResourceBindingBase_tE
 19CSchemaRegistration
 1bQJ1~
@@ -56,7 +58,7 @@
 29CRD_RegisterResourceDataUtils
 29IRD_RegisterResourceDataUtils
 2	h(8H
-2Hs.9
+2hb	9
 30IAsyncResourceDataRequestOwner
 32CSchemaRegistration_resourcefile
 34CSchemaRegistration_resourcesystem
@@ -84,7 +86,6 @@
 6hb@9
 6hbp9
 6h"@y
-6Ysn9
 7hb@9h
 7hf@9
 7hf@9(
@@ -109,9 +110,12 @@
 9(!@yj
 )!A9?
 *	!A9
+	A~9)
 	A@9i
 AABB_t
 AbsolutePoseControl
+Access of unconnected ConVarRef
+Access of unconnected SplitScreenConVarRef
 AE_ACTION_SET_TURN_RATE_SCALE
 AE_BLIND_ZOMBIE_SNIFF
 AE_CL_ADD_PARTICLE_EFFECT_CP
@@ -143,7 +147,6 @@ AE_VORTIGAUNT_ZAP_POWERUP
 AE_VORTIGAUNT_ZAP_SHOOT
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
-	AH9	
 AH*I}
 ai_model_info
 AIWalkable
@@ -170,6 +173,7 @@ AnimDelta
 AnimEvent
 AnimFile
 animgraph0
+animgraph1
 AnimGraphEditorUtils001
 AnimIkLockLocal
 AnimLayer
@@ -201,7 +205,6 @@ attenuation1
 attenuation2
 auto_unragdoll_duration
 Available resource leak tracking configuration aliases:
-	Ay9	
 *** Bad deletion request: Refcount for %s resource "%s" (%016llX) is greater than zero. (%d)!
 Bad header format (expected '<!--'
 Bad header format (expected ':'
@@ -260,6 +263,8 @@ burst_randomize
 burst_scale
 b*yhZ*yhf*ya
 cable
+CAnimMotorList
+CAnimMovementManager
 Cannot register same format from/to a KV3 conversion (from '%s' to '%s')
 Cannot save as KV3_FORMAT_LOAD_WITH_NO_UPCONVERSION.
 Cannot save KV3 text to a non-text buffer!
@@ -455,6 +460,7 @@ DebugTextureInfo001
 Decompression failure
 default
 Default
+<deferred>
  ( def. "%s" )
 DegreeEuler
 Deleting empty loading resource
@@ -599,7 +605,6 @@ HammerMapLoader001
 handindex
 .hash
 hb@9`
-hB@9`
 headtype
 health
 health_override
@@ -610,11 +615,11 @@ HostStateMgr001
 hurt_me
 hurt_them
 **hx)
-h"@y)
+h"@y	
 h*@y_
 I)!|@
 i6@yh
-i;8sZ
+i;8MW
 I'A9)
 ib@9(
 ib@9)
@@ -655,7 +660,6 @@ InfoForResourceTypeCRenderMesh
 InfoForResourceTypeCResourceManifestInternal
 InfoForResourceTypeCSequenceGroupData
 InfoForResourceTypeCTextureBase
-InfoForResourceTypeCVectorGraphic
 InfoForResourceTypeCVMixListResource
 InfoForResourceTypeCVoxelVisibility
 InfoForResourceTypeCVPhysXSurfacePropertiesList
@@ -666,6 +670,7 @@ InfoForResourceTypeIAnimationGraph
 InfoForResourceTypeIMaterial2
 InfoForResourceTypeIParticleSnapshot
 InfoForResourceTypeIParticleSystemDefinition
+InfoForResourceTypeIVectorGraphic
 InfoForResourceTypeVSound_t
 InfoForResourceTypeWorld_t
 .init_array
@@ -684,6 +689,7 @@ int CUtlString::FormatV(const char *, va_list)
 Intentionally vague touch behavior for %p
 interfaces.cpp
 <INVALID>
+Invalid access of deferred ConVarRef for '%s'
 Invalid compressed buffer size
 Invalid data.
 Invalid data for member '%s'
@@ -694,7 +700,9 @@ IQuickTime001
 is_debris
 IsResourceManifestGroupKnown: Manifest group name is empty or null
 i"@yh
+J68yA
 j6@y_
+J78M@
 JEIJJ}
 JIIJJ}
 jj(8(
@@ -800,6 +808,7 @@ m_bParticleFeathering
 m_bRemapPullForceToLife
 m_bRenderDiffuse
 m_bRenderSpecular
+m_bRenderTransmissive
 m_bRunForParentApplyKillList
 m_bScaleCurrent
 m_bScaleInitialRange
@@ -887,7 +896,9 @@ m_JointConstraintPairs
 m_JointName
 m_Joints
 m_lightCookie
+m_lightGroups
 m_LiteralColor
+m_MotorList
 m_Name
 m_nAnimationType
 m_nAttributeToWrite
@@ -914,6 +925,7 @@ m_nFeatheringMode
 m_nFirstMultipleOverride_BackwardCompat
 m_nFogLightingMode
 m_nIncrement
+m_nLightGroupCount
 m_nMapType
 m_nMinParticlesToEmit
 m_nOpScaleCP
@@ -970,6 +982,7 @@ m_Operators
 m_pBody
 m_Phi
 m_pJointConstraintData
+m_pMovementManager
 m_pParent
 m_PreEmissionOperators
 m_pszSnapshotName
@@ -1021,6 +1034,7 @@ NetworkSystemVersion001
 Newline in string literal
 nf@9/
 No Buffer
+<no deferred ref found>
 <no failure reason set>
 nogroup
 NoPoseControl
@@ -1082,6 +1096,7 @@ Plat_GetEnv
 Plat_IsInDebugSession
 Plat_MicroSecTickDiff
 Plat_RelativeTicks
+Plat_SetDenormalsAreZero
 Plat_ShouldCollectMiniDumpsForFatalErrors
 Plat_TickDiffMilliSecF
 Plat_USTime
@@ -1105,14 +1120,17 @@ prop_data
 PropertyEditorSystem_001
 pthread_mutex_destroy
 ../public/ordered_constructor.h
+../public/tier0/globallist.h
 ../public/tier0/tslist.h
 ../public/tier1/utlblockmemory.h
 ../public/tier1/utllinkedlist.h
 ../public/tier1/utlrbtree.h
+../public/tier1/utlreferencetracker.h
 ../public/tier1/utlsortvector.h
+../public/tier1/utlsymbol.h
+../public/tier1/utltshash.h
 PVEC_TYPE_LITERAL
 PVEC_TYPE_LITERAL_COLOR
-	!q9I
 QAngle
 Qi"A)`
 Qi^*yi
@@ -1145,6 +1163,7 @@ RenderMeshFile
 RenderService_001
 renderspecular
 RenderSystemSurface001
+rendertransmissive
 RenderUtils_001
 replicated
 Reporting references for leak tracker error: "%s"
@@ -1189,6 +1208,7 @@ RESOURCE_TYPE_NONE
 RESOURCE_TYPE_RESOURCE_MANIFEST
 rhj)8
 rhj)8@
+rhj)8Q
 rhjh8
 rhjh8(
 Rhjh8(
@@ -1349,6 +1369,7 @@ Two KV3 format GUIDs with the same human-friendly name ('%s')
 uint64
 Unable to determine buffer encoding.
 Unable to write file '%s'
+<unconnected>
 Unexpected end of file
 Unrecognized flag name '%s'
 Unrecognized resource leak tracking parameter: "%s", available configuration aliases:
@@ -1364,7 +1385,7 @@ use_additional_offset
 UserInfoChangeService_001
 utlbuffer.cpp
 utlstring.cpp
-	!v9	
+utlsymbol.cpp
 vagrp
 vanim
 vanmgrph
@@ -1485,6 +1506,7 @@ VStringTokenSystem001
 _V_strncat
 _V_strncmp
 _V_strncpy
+_V_strnicmp_fast
 V_strnlen
 V_strtod
 V_strtoi64
@@ -1529,7 +1551,6 @@ yi^jy)
 	$@yJ
 )YJJ)}
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
-Ys.9Cc
 ^*ySi(
 @y	y3x-
 _Z14V_stristr_fastPKcS0_
@@ -1561,18 +1582,18 @@ _ZN14CStackTop_BaseD2Ev
 _ZN16CThreadSemaphoreD1Ev
 _ZN17CCallStackCaptureC1EPFiPPviiEjj
 _ZN17CCallStackCaptureC2EPFiPPviiEjj
-_ZN17CThreadSpinRWLock10UnlockReadEv
-_ZN17CThreadSpinRWLock11LockForReadEv
-_ZN17CThreadSpinRWLock11UnlockWriteEv
-_ZN17CThreadSpinRWLock16SpinLockForWriteEy
+_ZN17CThreadSpinRWLock10UnlockReadEPKci
+_ZN17CThreadSpinRWLock11LockForReadEPKci
+_ZN17CThreadSpinRWLock11UnlockWriteEPKci
+_ZN17CThreadSpinRWLock16SpinLockForWriteEPKciy
 _ZN17CThreadSyncObject4WaitEj
 _ZN17CThreadSyncObjectD2Ev
-_ZN22CThreadRWLock_FastRead20UnlockReadAccountingEj
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEj
+_ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
+_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
 _ZN22CThreadRWLock_FastReadC1Ev
 _Znam
 _ZnamRKSt9nothrow_t
-_ZNV16CThreadFastMutex4LockEyj
+_ZNV16CThreadFastMutex4LockEPKciyj
 _Znwm
 _ZnwmRKSt9nothrow_t
 _ZTVN10__cxxabiv117__class_type_infoE

@@ -21,8 +21,8 @@
 10ITestSuite
  %12.3f %12.2f
 12CCommandLine
-12CStdMemAllocI24MemoryAllocationHeader_tI9MemConfigILb0ELb0E27DefaultAdditionalPropertiesEEE
-12CStdMemAllocI24MemoryAllocationHeader_tI9MemConfigILb0ELb0E27RuntimeAdditionalPropertiesEEE
+12CStdMemAllocI9MemConfigILb0ELb0E27DefaultAdditionalPropertiesEE
+12CStdMemAllocI9MemConfigILb0ELb0E27RuntimeAdditionalPropertiesEE
 12CThreadEvent
 12ICommandLine
  %12s %12s
@@ -37,10 +37,11 @@
 16CThreadFullMutex
 16CThreadSemaphore
 16ILoggingListener
-17CStdMemAlloc_DataI24MemoryAllocationHeader_tI9MemConfigILb0ELb0E27DefaultAdditionalPropertiesEEE
-17CStdMemAlloc_DataI24MemoryAllocationHeader_tI9MemConfigILb0ELb0E27RuntimeAdditionalPropertiesEEE
+17CStdMemAlloc_DataI9MemConfigILb0ELb0E27DefaultAdditionalPropertiesEE
+17CStdMemAlloc_DataI9MemConfigILb0ELb0E27RuntimeAdditionalPropertiesEE
 17CThreadSyncObject
 18CThreadManualEvent
+18IMemAlloc_Internal
 22B@q
 22CLogCatLoggingListener
 22CPerfTraceDepotDefault
@@ -54,24 +55,21 @@
 27CMiniDumpCommentBuilderBase
 27CVProfileOutputColumn_Count
 28CallStackStatStructDescFuncs
-28CStdMemAlloc_Data_StackStatsI24MemoryAllocationHeader_tI9MemConfigILb0ELb0E27DefaultAdditionalPropertiesEELb0EE
-28CStdMemAlloc_Data_StackStatsI24MemoryAllocationHeader_tI9MemConfigILb0ELb0E27RuntimeAdditionalPropertiesEELb0EE
+28CStdMemAlloc_Data_StackStatsI9MemConfigILb0ELb0E27DefaultAdditionalPropertiesELb0EE
+28CStdMemAlloc_Data_StackStatsI9MemConfigILb0ELb0E27RuntimeAdditionalPropertiesELb0EE
 -?[`/?291?
 29CDefaultLoggingResponsePolicy
-2	A 9
 2(A@qJ5
 2CB@q
 %2d.%03d
-2hF 9
 2*hi8
-2	I 9
 2*ki8J
 2mymx
   %2u - proc %2u (grp %u:%-2u / phy %u / cor %u / smt %u): max freq %llu
 40CVProfileOutputColumn_AverageTimePerCall
 41CVProfileOutputColumn_AverageTimePerFrame
 4(3H9
-4hbG9h
+4hBF9h
 4-ij8
 4-ik8
 4oil8
@@ -86,11 +84,11 @@
 /6`>H
 '6`>H
 @6`>H
+6q19hfA
 	6RtcZO"
 76`>H
 77hJ@
 7	A@qJ7
-7`B@y
 7CThread
 7]hh8
 %8.4f / %9.2f:  %s
@@ -105,6 +103,7 @@
 9CTestCase
 9h2@9i6@9
 @9.h`8
+9HC[9h
 9Hh{8
 9ib@9
 9ib@9)}
@@ -118,7 +117,7 @@
 A)"	@
 +a@9?
 	!A9 
-A9)5G
+A9)1G
 a@9*a
 &aacute;
 &Aacute;
@@ -169,9 +168,10 @@ __android_log_write
 android/os/Build
 android/os/Build$VERSION
 android/os/Debug
+	AP9i
 &apos;
 AppendMiniProfilerToList
-	AQ9i
+aq9(	
 A@qH7
 A@qI7
 (A@qJ7
@@ -183,6 +183,7 @@ A@qn5
 asctime
 Assert
 -assertbreak
+assert_dialog.cpp
 Assertion Failed
 Assertion Failed in function %s():
 AssertionFailureListenerMiniDumpContext_t
@@ -206,14 +207,12 @@ Average %.2f fps, %.2f ms per frame
    Avg Time/Frame (%s)
 a?y#c?sIe?
 -&B'-
-b"@9_
 b@9ib@9
 Bad node link detected
 BASE_OS
  Base:"%s"
 ******** BEGIN VPROF REPORT ********
 BinaryProperties_GetValue
-B`M9B
 bool Plat_HasClipboardText()
 bool RunTSListTests(int, int)
 bool RunTSQueueTests(int, int)
@@ -265,7 +264,6 @@ Client Simulation
 Client VScript
 clock_gettime
 CLoggingSystem::AllocTag overflowed!
-c`M9c
 CMemAllocSystemInitialize
 CMiniDumpComment encountered an error while generating the comment
 [/code]
@@ -324,14 +322,12 @@ D"A/oyu
 .data.rel.ro
 dbg.cpp
 -debugbreak
+debugdraw.cpp
 -debug_exitprocess
 DEBUG_EXITPROCESS
 DeclareCurrentThreadIsMainThread
 -dedicated
 &deg;
-__deregister_frame
-__deregister_frame_info
-__deregister_frame_info_bases
 detailed
 Developer
 DeveloperConsole
@@ -347,14 +343,12 @@ distributed...
 dladdr
 dlclose
 dlerror
-dl_iterate_phdr
 dlopen
 dlsym
 DoAssertDialog: invalid Assert response returned from dialog/vxconsole - breaking to debugger
 .dynamic
 .dynstr
 .dynsym
-E9)5G
 &eacute;
 &Eacute;
 EarlyInit_Tier0
@@ -402,6 +396,7 @@ Exit Process
 exitprocess_%d
 -export:RunWithAlternateStack-export:JmpToAlternateStack
 Expr: %s
+F9)1G
  failed to dlopen "%s" error=%s
  failed to dlopen %s error=%s
 FAIL: !IsEmpty()
@@ -412,6 +407,7 @@ Fatal Error
 fchmod
 fcntl
 fcntl(%d) for %s failed
+fibertools.cpp
 File: %s
 FileSystem
 FindAndLoadNativeLibrary
@@ -428,7 +424,6 @@ __fpclassifyd
 &frac14;
 &frac34;
 Frame Boundary
-__frame_state_for
 FreeCommandLine
 fseeko
 ftello
@@ -439,7 +434,7 @@ game/
 game\..\autoargs
 g_bPlatCpuTimeIsReliable
 g_bPlatHasHookedStdOut
-GCC: (GNU) 4.9.x 20150123 (prerelease)
+?GCC: (GNU) 4.9.x 20150123 (prerelease)
 General
 Generic_x86
 GetAddressTranslationData
@@ -511,11 +506,9 @@ g_VProfSignalSpike
 h2@9i6@9
 h6@9`2
 h6@9i2
- H`8a
 h<8]hh8J
 h=8]hh8J
 h>8j	
-h"]9H
 HangWatchdog
 HangWatchdog_IndicateActivity
 HangWatchdog_Initialize
@@ -527,39 +520,40 @@ HangWatchdog_Shutdown
 .hash
 hb@9h
 hb@9H
-hB]9H
-hBG9H
+HC[9(
 Heap: standard allocator
 HEAP WARNING: memory block at %p appears to be corrupt
 HEAP WARNING: memory block at %p is unexpectedly allocated
 HEAP WARNING: memory block at %p is unexpectedly free
 HEAP WARNING: memory block at %p is unexpectedly unrecognized
 HEAP WARNING: memory pointer %p is invalid
+h"F9H
 H!HJB
 HH:MM:SS.z
 *+hi8K
 hi8_q
+hibernate.cpp
 -- Hierarchical Call Graph --
 higher
 hj*8Hhi8K
 hjC)j>@
-hRC9h
+hrC9h
 hr@y`
 hr@yH
-hr@yt
+hr@yt"
 H>*SL>
 Hs@y@
-Hs@yIGA
+Hs@yIOA
 HttpGet
 	*I}`
 i2@9h6@9?
 i2q		
+	i;8C
 ?i*8i
 )ia8?q
 &iacute;
 &Iacute;
 IAssertionFailureListener::AssertionFailure()
-ib@9I
 &icirc;
 &Icirc;
 &iexcl;
@@ -577,7 +571,6 @@ Ignore This File
 Ihh8?)
 =ij(8
 )ij8?)
-ij(8(
 ijh8?
 iji8?
 Illegal char string format specifier '%c' (%d) in '%s'
@@ -607,11 +600,13 @@ InvokeMiniDumpHandler
 &iquest;
 isDebuggerConnected
 isspace
+	it8?
 IterateCapturedStackAnnotations
 &iuml;
 &Iuml;
+j;8a"@
+j98a"@
 J	@9k	@9_
-ja8? 
 Java_com_valvesoftware_AttributeSetNative_getAttributeBooleanValue_1Native(__complex int0_t)
 Java_com_valvesoftware_AttributeSetNative_getAttributeBooleanValue_1Native__JLjava_lang_String_2Ljava_lang_String_2Z
 Java_com_valvesoftware_AttributeSetNative_getAttributeCount_1Native
@@ -633,7 +628,6 @@ Java_com_valvesoftware_AttributeSetNative_getPositionDescription_1Native
 Java_com_valvesoftware_runnableNative_runNative
 Java_com_valvesoftware_TextView_1OnEditorActionListenerNative_onEditorActionNative
 java/lang/ClassLoader
-jb8_ 
 jh8?)
 JmpToAlternateStack
 JNI_OnLoad
@@ -734,8 +728,6 @@ LoggingSystem_UnregisterLoggingListener
 LoggingTag_t *CLoggingSystem::AllocTag(const char *)
 lower
 &lsquo;
-(\M8h
-@`M9`
 macos
 Mac OS
 MacOS 10.10
@@ -799,9 +791,11 @@ N11TSListTests8CListOpsE
 N11TSListTests8CTestOpsE
 N11TSListTests9CQueueOpsE
 nanosleep
+NavMesh
 &nbsp;
 &ndash;
 Networking
+NextBot
 nexttoken
 no affinity...
 -noassert
@@ -820,6 +814,8 @@ NOTE: this is the total bytes of the regions above, not the growth since the old
 &ntilde;
 &Ntilde;
 nTries < 10000000
+O9aU@
+O9`V@
 &oacute;
 &Oacute;
 &ocirc;
@@ -1042,6 +1038,7 @@ Plat_SetCpuTimeIsReliable
 Plat_SetCurrentDirectory
 Plat_SetCurrentFrame
 Plat_SetDefaultMonitorIndex
+Plat_SetDenormalsAreZero
 Plat_SetDesktopNotifyIconPath
 Plat_SetFileReadOnly
 Plat_SetForegroundWindow
@@ -1098,6 +1095,7 @@ Player
 &plusmn;
 popen
 PopMiniProfilerTS
+posix_memalign
 &pound;
 prctl
 </pre>
@@ -1119,6 +1117,7 @@ processor
 -- Profile scopes sorted by time (including children) --
 -- Profile scopes sorted by time (without children) --
 pthread_attr_destroy
+pthread_attr_getstack
 pthread_attr_init
 pthread_attr_setstacksize
 pthread_cond_broadcast
@@ -1128,6 +1127,7 @@ pthread_cond_signal
 pthread_cond_timedwait
 pthread_cond_wait
 pthread_create
+pthread_getattr_np
 pthread_getschedparam
 pthread_getspecific
 pthread_join
@@ -1146,6 +1146,7 @@ pthread_self
 pthread_setaffinity_np
 pthread_setspecific
 ../public/ordered_constructor.h
+../public/tier0/globallist.h
 ../public/tier0/tslist.h
 PurchaseSku
 PushMiniProfilerTS
@@ -1155,7 +1156,7 @@ putenv
 *		@q
 :>	Q>>
 @@q(7
-(Q 9jN 9
+(Q	9`
 Q@)Gz`1
 @@qh7
 qH}V*
@@ -1179,12 +1180,6 @@ RD?4KF?=GH?9FJ?8HL?
 realloc
 &reg;
 RegisterAssertionFailureListener
-__register_frame
-__register_frame_info
-__register_frame_info_bases
-__register_frame_info_table
-__register_frame_info_table_bases
-__register_frame_table
 RegisterHibernationListener
 RegisterKeyValuesSystem
 .rela.dyn
@@ -1452,6 +1447,7 @@ StackStats_DumpNamedInstance
 StackStats_EnumerateRegisteredInstances
 StackStats_GathererRegistration
 StackStats_GetSymbolTranslationDefault
+stacktools.cpp
 StackTools_EnumerateKnownLoadedModules
 StackTools_EnumerateVirtualMachineEncoders
 StackTools_InstallModuleMappingListener
@@ -1502,7 +1498,6 @@ sysinfo
 system
 &szlig;
 T(`@9i`@9(
-Ta[axc
 TBi)8
 TBi+8	
 Test bucket %d has an invalid value %d
@@ -1565,6 +1560,7 @@ Tier0GenericMiniDumpHandler_SetFilenamePrefix
 Tier0GenericMiniDumpHandler_SetGetAdditionalFileAttachmentCallback
 Tier0GenericMiniDumpHandler_SetOptions
 Tier0GenericMiniDumpHandler_SetPreHandlerCallback
+tier0_stdlib.cpp
 tier0_strtools.cpp
 &times;
 TimestampedEvent
@@ -1615,24 +1611,7 @@ Unknown (invalid)
 UnknownOS
 UnregisterAssertionFailureListener
 UnregisterHibernationListener
-_Unwind_Backtrace
-_Unwind_DeleteException
-_Unwind_FindEnclosingFunction
-_Unwind_Find_FDE
-_Unwind_ForcedUnwind
-_Unwind_GetCFA
-_Unwind_GetDataRelBase
-_Unwind_GetGR
-_Unwind_GetIP
-_Unwind_GetIPInfo
-_Unwind_GetLanguageSpecificData
-_Unwind_GetRegionStart
-_Unwind_GetTextRelBase
-_Unwind_RaiseException
-_Unwind_Resume
-_Unwind_Resume_or_Rethrow
-_Unwind_SetGR
-_Unwind_SetIP
+urC9`
 [/url]
 [url=
 ur@yu
@@ -1782,8 +1761,8 @@ void CBufferString::ToUpperFast(int)
 void COrderedConstructor_Create<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, CResolveOrderedFunc<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, &_ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC>, false>::AddRef(bool) [T = COrderedInitShutdownRefWrapper<&EarlyInit_Common>, RESOLVECLASS = CResolveOrderedFunc<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, &_ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC>, bCONSTRUCT_ON_FIRST_USE = false]
 void COrderedConstructor_Create<COrderedInitShutdownRefWrapper<&OrderedInit_Platform>, CResolveOrderedFunc<COrderedInitShutdownRefWrapper<&OrderedInit_Platform>, &_ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC>, false>::AddRef(bool) [T = COrderedInitShutdownRefWrapper<&OrderedInit_Platform>, RESOLVECLASS = CResolveOrderedFunc<COrderedInitShutdownRefWrapper<&OrderedInit_Platform>, &_ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC>, bCONSTRUCT_ON_FIRST_USE = false]
 void COrderedConstructor_Create<CThreadLocalScope::CScopeCreatedOrDestroyedHandler, CResolveOrderedFunc<CThreadLocalScope::CScopeCreatedOrDestroyedHandler, &ResolveOrderedConstructor_ThreadCreationEventHandler_ThreadID>, false>::AddRef(bool) [T = CThreadLocalScope::CScopeCreatedOrDestroyedHandler, RESOLVECLASS = CResolveOrderedFunc<CThreadLocalScope::CScopeCreatedOrDestroyedHandler, &ResolveOrderedConstructor_ThreadCreationEventHandler_ThreadID>, bCONSTRUCT_ON_FIRST_USE = false]
-void CStdMemAlloc<MemoryAllocationHeader_t<MemConfig<false, false, DefaultAdditionalProperties> > >::NoteAlloc(MemAllocHeader_t *, size_t, const AllocInfo_t &, size_t, const CCallStackCapture &, size_t) [MemAllocHeader_t = MemoryAllocationHeader_t<MemConfig<false, false, DefaultAdditionalProperties> >]
-void CStdMemAlloc<MemoryAllocationHeader_t<MemConfig<false, false, RuntimeAdditionalProperties> > >::NoteAlloc(MemAllocHeader_t *, size_t, const AllocInfo_t &, size_t, const CCallStackCapture &, size_t) [MemAllocHeader_t = MemoryAllocationHeader_t<MemConfig<false, false, RuntimeAdditionalProperties> >]
+void CStdMemAlloc<MemConfig<false, false, DefaultAdditionalProperties> >::NoteAlloc(MemAllocHeader_t *, size_t, const AllocInfo_t &, const CCallStackCapture &) [MemorySystemConfig = MemConfig<false, false, DefaultAdditionalProperties>, MemAllocHeader_t = MemoryAllocationHeader_t<MemHeaderConfig_t<false, false, false, false, false, false, false, MemoryDebuggingLevel_t::MEMORYDEBUGGINGLEVEL_NONE, 16, false, Mem::void_t, _MemAllocHeaderAdditionalProperties<LowLevelAllocationScheme_malloc> > >]
+void CStdMemAlloc<MemConfig<false, false, RuntimeAdditionalProperties> >::NoteAlloc(MemAllocHeader_t *, size_t, const AllocInfo_t &, const CCallStackCapture &) [MemorySystemConfig = MemConfig<false, false, RuntimeAdditionalProperties>, MemAllocHeader_t = MemoryAllocationHeader_t<MemHeaderConfig_t<false, false, false, false, false, false, false, MemoryDebuggingLevel_t::MEMORYDEBUGGINGLEVEL_NONE, 16, false, Mem::void_t, _MemAllocHeaderAdditionalProperties<LowLevelAllocationScheme_malloc> > >]
 void CTimestampedEventLog::FlushBuffer()
 VoidFnPtrLookup_Tier0
 void Plat_ClearClipboardText()
@@ -1803,6 +1782,7 @@ V_PrettifyFloat
 V_PrettifyMem
 V_PrettifyNum
 vprintf
+vprof.cpp
 VProf spike "%s" from %f to %f ms
 VPROJECT
 V_qsort
@@ -2088,7 +2068,7 @@ _ZN12CThreadEventC2Eb
 _ZN12CThreadEventC2EPKcbb
 _ZN12CThreadFiberC1Em
 _ZN12CThreadFiberC2Em
-_ZN12CThreadMutex7TryLockEv
+_ZN12CThreadMutex7TryLockEPKci
 _ZN12JNIGlobals_t6GetEnvEv
 _ZN13CBufferString10ExtendPathEPKcc
 _ZN13CBufferString10FixSlashesEc
@@ -2149,12 +2129,12 @@ _ZN13CBufferString9ReplaceAtEiiPKcib
 _ZN13CBufferString9ReplaceAtEiPKcib
 _ZN13CBufferString9SetLengthEibPi
 _ZN13CBufferString9StrFormatEPKcz
-_ZN13CThreadRWLock11UnlockWriteEv
+_ZN13CThreadRWLock11UnlockWriteEPKci
 _ZN13CThreadRWLock11WaitForReadEv
-_ZN13CThreadRWLock12LockForWriteEv
-_ZN13CThreadRWLock15TryLockForWriteEv
-_ZN13CThreadRWLock23UnlockRead_LockForWriteEv
-_ZN13CThreadRWLock23UnlockWrite_LockForReadEv
+_ZN13CThreadRWLock12LockForWriteEPKci
+_ZN13CThreadRWLock15TryLockForWriteEPKci
+_ZN13CThreadRWLock23UnlockRead_LockForWriteEPKci
+_ZN13CThreadRWLock23UnlockWrite_LockForReadEPKci
 _ZN13CWorkerThread10CallMasterEjj
 _ZN13CWorkerThread10CallWorkerEjjb
 _ZN13CWorkerThread11WaitForCallEjPj
@@ -2189,8 +2169,8 @@ _ZN15CCachedJNIClass4FindEPKc
 _ZN15CCachedJNIClassD1Ev
 _ZN15CCachedJNIClassD2Ev
 _ZN15CThreadSpinLock11SetMaxSpinsEi
-_ZN15CThreadSpinLockC1Ei
-_ZN15CThreadSpinLockC2Ei
+_ZN15CThreadSpinLockC1EPKci
+_ZN15CThreadSpinLockC2EPKci
 _ZN16CCallStackMarkerC1Eb
 _ZN16CCallStackMarkerC2Eb
 _ZN16CMiniDumpComment13AppendCommentEPKc
@@ -2230,12 +2210,12 @@ ZN17CThreadLocalScopeC1EP16ThreadHandle_t(bool)
 ZN17CThreadLocalScopeC2EP16ThreadHandle_t(bool)
 _ZN17CThreadLocalScopeD1Ev
 _ZN17CThreadLocalScopeD2Ev
-_ZN17CThreadSpinRWLock10UnlockReadEv
-_ZN17CThreadSpinRWLock11LockForReadEv
-_ZN17CThreadSpinRWLock11UnlockWriteEv
-_ZN17CThreadSpinRWLock16SpinLockForWriteEy
-_ZN17CThreadSpinRWLock23UnlockRead_LockForWriteEv
-_ZN17CThreadSpinRWLock23UnlockWrite_LockForReadEv
+_ZN17CThreadSpinRWLock10UnlockReadEPKci
+_ZN17CThreadSpinRWLock11LockForReadEPKci
+_ZN17CThreadSpinRWLock11UnlockWriteEPKci
+_ZN17CThreadSpinRWLock16SpinLockForWriteEPKciy
+_ZN17CThreadSpinRWLock23UnlockRead_LockForWriteEPKci
+_ZN17CThreadSpinRWLock23UnlockWrite_LockForReadEPKci
 _ZN17CThreadSwapTarget14OwnerThreadRunEv
 _ZN17CThreadSwapTarget16ReserveOwnershipEv
 _ZN17CThreadSwapTarget18ReleaseOwnerThreadEv
@@ -2278,10 +2258,10 @@ _ZN22CThreadMultiWaitObjectC1Ev
 _ZN22CThreadMultiWaitObjectC2Ev
 _ZN22CThreadMultiWaitObjectD1Ev
 _ZN22CThreadMultiWaitObjectD2Ev
-_ZN22CThreadRWLock_FastRead20UnlockReadAccountingEj
+_ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
 _ZN22CThreadRWLock_FastRead23UnlockRead_LockForWriteEv
 _ZN22CThreadRWLock_FastRead23UnlockWrite_LockForReadEv
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEj
+_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
 _ZN22CThreadRWLock_FastRead30HandleFirstWriteLockTransitionEv
 _ZN22CThreadRWLock_FastReadC1Ev
 _ZN22CThreadRWLock_FastReadC2Ev
@@ -2414,6 +2394,7 @@ _ZN9CVProfile19AddDeferredFunctionEPFvPvES0_
 _ZN9CVProfile19FindBudgetGroupNameEPKc
 _ZN9CVProfile19FindOrCreateCounterEPKc14CounterGroup_t
 _ZN9CVProfile19GetBudgetGroupColorEiRiS0_S0_S0_
+_ZN9CVProfile20AssignNextTimespanIdEv
 _ZN9CVProfile22RemoveDeferredFunctionEPFvPvES0_
 _ZN9CVProfile24ExecuteDeferredFunctionsEv
 _ZN9CVProfile30BudgetGroupNameToBudgetGroupIDEPKc
@@ -2461,10 +2442,10 @@ _ZNK9CVProfile14GetCounterNameEi
 _ZNK9CVProfile14GetNumCountersEv
 _ZNK9CVProfile15GetCounterGroupEi
 _ZNK9CVProfile15GetCounterValueEi
-_ZNK9CVProfile22GetCounterNameAndValueEiRi
+_ZNK9CVProfile22GetCounterNameAndValueEiRm
 _ZNKSt11logic_error4whatEv
 _ZNSt11logic_errorC2EPKc
-_ZNV16CThreadFastMutex4LockEyj
+_ZNV16CThreadFastMutex4LockEPKciyj
 _Znwm
 _ZTI10CTestSuite
 _ZTI12CThreadEvent

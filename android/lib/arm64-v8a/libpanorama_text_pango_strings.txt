@@ -33,7 +33,6 @@ $0 to $1,
 11#?*0
 %-120s
 %-120s - %s
-12CEmptyConVar
 13CUIFontFilePB
 14CBaseAppSystemIN8panorama15IUITextServicesEE
 14ConCommandBase
@@ -42,9 +41,11 @@ $0 to $1,
 15CTier2AppSystemIN8panorama15IUITextServicesELi0EE
 15CTier3AppSystemIN8panorama15IUITextServicesELi0EE
 16CDefaultAccessor
+18CPlaceholderConVar
 1bQJ1~
 20CPostConnectCallback
 20CUIFontFilePackagePB
+2	1	9s
 22CSchemaInstallCallback
 ;22dV::tN
 23IConCommandBaseAccessor
@@ -52,8 +53,6 @@ $0 to $1,
 2	AA9
 2,.CUIFontFilePackagePB.CUIEncryptedFontFilePB
 2dV2:tN:
-2h":9
-2hb99#
 2Ht\l
 2j"@9)p
 2?k78
@@ -212,6 +211,8 @@ aaj_55
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
 abort
+Access of unconnected ConVarRef
+Access of unconnected SplitScreenConVarRef
     Actual    : 
   Actual   : 
 AddAllocatedMessage
@@ -242,6 +243,7 @@ AnimGraphEditorUtils001
 annotation
 Annotation
 ", another member of oneof "
+aP9uN
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
  a protocol 
 A protocol message was rejected because it was too big (more than 
@@ -443,8 +445,10 @@ DecorationStyle
  [default = $0
 default_value
 Default value for an enum field must be an identifier.
+<deferred>
  ( def. "%s" )
 "DeleteMapValue"
+delta_ignore
 dependency
 deprecated
 DescriptorProto
@@ -452,6 +456,7 @@ DescriptorProtosH
 ""Df**T~
 "Df"*T~*
 Df""T~**;
+diff_encode_field
 Don't lookup extension types if they aren't present (1). 
 Don't lookup extension types if they aren't present (2). 
 DotaCardGameClient_001
@@ -536,8 +541,11 @@ Extensions to non-lite types can only be declared in non-lite files.  Note that 
 FA9iF
 : failed to parse contents
 false
+false:=
 false"
 False
+false:7
+falseB
 FastHexToBuffer() wants non-negative integers, not 
 FATAL
 FATAL ERROR: unable to register all schema data: %s
@@ -672,7 +680,6 @@ H6hV@
 h8,4$
 !H88p
 h"@9)
-h"@9	
 h@9!<
 h*@9h/
 H@9)H@9
@@ -709,7 +716,6 @@ HostStateMgr001
 +HpXhE
 *hr@y
 hr@y`
-hr@y)
 \h!T[
 hv@9)
 h*@y_
@@ -759,6 +765,7 @@ Integer out of range (
 Intentionally vague touch behavior for %p
 interfaces.cpp
 Interpreting non ascii codepoint %d.
+Invalid access of deferred ConVarRef for '%s'
 Invalid control characters encountered in text.
 INVALID_CPPTYPE
 Invalid escape sequence in string literal.
@@ -804,7 +811,6 @@ isnan
 )it8?}
 !iv8?|
 IyixJylx+
-j3834
 j48	C
 j48t^@
 j4xH;@
@@ -821,7 +827,6 @@ JB9hJ
 _jbF~T
 JB`	J
 j.E)l2@
-J@EqU_
 j!JJ+
 j!JJK
 !JJK|
@@ -845,9 +850,11 @@ _!+k#
 !(k		
 ?!,k#
 ?k58D
-?k78/
+?k682a
+k68ci
 *?k78
 ?k78h
+k78o_
 !(k	A
 K	A9lC
 _!+kb
@@ -922,6 +929,8 @@ map<$0, $1>
 "MapEnd"
 	map_entry
 map_entry should not be set explicitly. Use map<KeyType, ValueType> instead.
+	map_field
+map_key
 MapKey::GetBoolValue
 MapKey::GetInt32Value
 MapKey::GetInt64Value
@@ -1015,6 +1024,7 @@ NetworkSystemUtilsVersion001
 NetworkSystemVersion001
 &''Ni
 No default value
+<no deferred ref found>
 <no failure reason set>
 No field named "uninterpreted_option" in the Options proto.
 Non-primitive types can't be packed.
@@ -1159,7 +1169,7 @@ pango_layout_set_width
 pango_layout_set_wrap
 pango_layout_xy_to_index
 PANGO_LIBDIR
-?PANGO_SYSCONFDIR
+PANGO_SYSCONFDIR
 panorama/fonts/fonts.conf
 panorama_text_pango
 PanoramaTextServices001
@@ -1219,6 +1229,7 @@ pthread_mutex_unlock:
 pthread_setspecific
 public_dependency
 ../public/ordered_constructor.h
+../public/tier0/globallist.h
 ../public/tier1/utllinkedlist.h
 ../public/tier1/utlrbtree.h
 P<xD<
@@ -1424,7 +1435,7 @@ text format contains deprecated field "
 TextFormat::Parser for Any supports only type.googleapis.com and type.googleprod.com, but found "
 TextLayout_001
 TextMessageMgr_001
-text/uitextlayoutpango.cpp
+?text/uitextlayoutpango.cpp
 THa@9(
 Th"B9
 ThB@9
@@ -1519,6 +1530,7 @@ uint64
 Unable to create Pango context
 Unable to create Pango font map
 Unable to watch '%s'
+<unconnected>
 Unexpected end of string.
 Unexpected failure while serializing option submessage 
  unexpected for field 
@@ -1557,6 +1569,7 @@ Value of type "
 Value out of range for int32 option "
 Value out of range for int64 option "
 Value out of range for uint32 option "
+valveextensions.proto
 VApplication001
 V_atof
 V_atofloat64
@@ -1692,8 +1705,8 @@ _ZN13CBufferString5PurgeEi
 _ZN13CBufferString6InsertEiPKcib
 _ZN16CThreadSemaphoreD1Ev
 _ZN17CThreadSyncObjectD2Ev
-_ZN22CThreadRWLock_FastRead20UnlockReadAccountingEj
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEj
+_ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
+_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
 _ZN22CThreadRWLock_FastReadC1Ev
 _Znam
 _ZnamRKSt9nothrow_t
@@ -1709,7 +1722,7 @@ _ZNSt6__ndk17num_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEE2idE
 _ZNSt6__ndk18ios_base4initEPv
 _ZNSt6__ndk18ios_base5clearEj
 _ZNSt6__ndk18ios_baseD2Ev
-_ZNV16CThreadFastMutex4LockEyj
+_ZNV16CThreadFastMutex4LockEPKciyj
 _Znwm
 _ZnwmRKSt9nothrow_t
 _ZSt18uncaught_exceptionv
