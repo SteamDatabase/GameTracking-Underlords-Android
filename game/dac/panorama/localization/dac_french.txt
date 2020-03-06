@@ -121,7 +121,7 @@
 
 	"DAC_PreMatchDetails_FindMatch"						"Rechercher"
 	"DAC_PreMatchDetails_BeginMatch"					"Lancer la partie"
-	"DAC_Start"											"Commencer"
+	"DAC_Start"											"Prêt ?"
 
 	"DAC_AlertPlayer_MatchReadyTitle"					"État du matchmaking"
 	"DAC_AlertPlayer_MatchReadyText"					"Votre partie est prête"
@@ -240,6 +240,9 @@
 	"DAC_PurchaseEvent_AlreadyOwned"					"Vous possédez déjà ce passe de saison"	
 	"DAC_PurchaseEvent_SuccessTitle"					"Succès "
 	"DAC_PurchaseEvent_SuccessBody"						"L'achat du passe de bataille a été effectué !"
+	"StoreCheckout_Error_Title"							"Erreur"
+	"StoreCheckout_CannotPurchase"						"Achat impossible"
+
 
 
 	"DAC_PurchaseEventCurrency_ErrorTitle"				"Erreur"
@@ -500,6 +503,7 @@
 	"DAC_GenericError_RegionInfoNotProvided"			"Vous devez enregistrer votre compte pour jouer en ligne."
 	"DAC_GenericError_DurationControlBlocked"				"Vous avez dépassé le temps de jeu en ligne autorisé."
 
+	"DAC_PurchaseError_NotSignedIn"						"Pour effectuer des achats, vous devez être connecté(e) à votre compte Steam."
 	"DAC_PurchaseError_NotConnectedToGC"				"Vous devez être connecté(e) au réseau Dota Underlords pour effectuer des achats"
 	"DAC_PurchaseError_NoResponse"						"Impossible de contacter le réseau Dota Underlords. Veuillez réessayer dans quelques minutes."
 	"DAC_PurchaseError_InternalError"					"Une erreur inattendue s'est produite pendant la vérification de votre achat. Veuillez réessayer plus tard."
@@ -512,6 +516,11 @@
 	"DAC_PurchaseError_InvalidQuantity"					"La quantité demandée pour cet objet n'est pas valide."
 	"DAC_PurchaseError_OutstandingReservations"			"Certains achats sont en cours pour cet objet. Veuillez les annuler ou les finaliser pour acheter d'autres objets."
 	"DAC_PurchaseError_ExceedsCreditLimit"				"Vous avez déjà trop de crédits non dépensés sur ce compte. Veuillez les dépenser avant d'en acheter d'autres."
+
+	"DAC_PurchaseError_InternalStore"					"Une erreur inattendue s'est produite au moment de l'achat."
+	"DAC_PurchaseError_CannotPurchase"					"Vous ne pouvez pas effectuer d'achat avec votre compte."
+	"DAC_PurchaseError_MissingItem"						"Une erreur inattendue s'est produite. Ce produit n'est pas disponible."
+	"DAC_PurchaseError_Cancelled"						"L'achat a été annulé."
 
 	"DAC_ReservationError_NoResponse"					"Impossible de contacter le réseau Dota Underlords. Veuillez réessayer dans quelques minutes."
 	"DAC_ReservationError_InternalError"				"Une erreur inattendue s'est produite. Veuillez réessayer dans quelques minutes."
@@ -853,7 +862,7 @@
 	"dac_hero_hint_jumping_movement"					"Se jette sur les ennemis"
 	"dac_hero_hint_teleport_movement"					"Se téléporte jusqu'aux ennemis"
 	"dac_hero_hint_high_single_target_damage"			"Dégâts importants sur un seul ennemi"
-	"dac_hero_hint_high_group_damage"					"Dégâts importants sur plusieurs ennemis"
+	"dac_hero_hint_high_group_damage"					"Dégâts de zone importants"
 	"dac_hero_hint_aoe_ministun"						"Étourdit brièvement les ennemis à proximité"
 	"dac_hero_hint_freezes_enemies"						"Gèle les ennemis"
 	"dac_hero_hint_aoe_silence"							"Silence de zone"
@@ -1558,7 +1567,7 @@
 	"DAC_InGame_UnitDPS_Query"							"DPS : <span class=\"Count\">{i:attack_dps}</span>"
 	"DAC_InGame_UnitHP_Query"							"PV : <span class=\"Count\">{i:selectedUnitHP}</span>"
 	"DAC_InGame_UnitArmor_Query"						"Armure : <span class=\"Count\">{i:selectedUnitArmor}{s:selectedUnitBonusArmor}</span>"
-	"DAC_InGame_KillCount_Query"						"Victimes : <span class=\"Count\">{d:kill_count}</span>"
+	"DAC_InGame_KillCount_Query"						"Victimes : <span class=\"Count\">{f:kill_count}</span>"
 	"DAC_InGame_KillStreak_Query"						"Série de victimes : <span class=\"Count\">{d:kill_streak}</span>"
 	"DAC_InGame_DuelBonusDamage_Query"					"Dégâts bonus apportés par les Duels : <span class=\"Count\">{d:duel_bonus_damage}</span>"
 	"DAC_InGame_BrawnyKillCount_Query"						"Total de victimes des unités robustes : <span class=\"Count\">{f:brawny_kills}</span>"
@@ -1853,7 +1862,7 @@
 	"DAC_EndGame_Anessix_does_good_with_inventor"		"L'ingéniosité des Keens fait frôler la victoire à Anessix"
 	"DAC_EndGame_Anessix_does_good_with_knights"		"Les chevaliers d'Anessix distancés d'une courte tête dans une bataille pleine de suspense"
 	"DAC_EndGame_Anessix_does_good_with_mages"			"Les mages d'Anessix ont failli dominer jusqu'au bout"
-	"DAC_EndGame_Anessix_does_good_with_primordial"		"Aidé par les forces primaires, Anessix voit le contrôle de Flèche blanche lui échapper de peu"
+	"DAC_EndGame_Anessix_does_good_with_primordial"		"Aidée par les forces primaires, Anessix voit le contrôle de Flèche blanche lui échapper de peu"
 	"DAC_EndGame_Anessix_does_good_with_savage"			"Les unités sauvages d'Anessix mettent en pièces ses adversaires, mais sont finalement vaincues"
 	"DAC_EndGame_Anessix_does_good_with_scaled"			"Anessix à deux doigts de la victoire grâce à la racaille du Récif sombre"
 	"DAC_EndGame_Anessix_does_good_with_spirits"		"Grâce à l'aide des frères esprits, Anessix n'a pas à rougir de sa performance"
@@ -2159,7 +2168,7 @@
 	"DAC_EndGame_DamageDealt"							"Dégâts infligés aux unités"
 	"DAC_EndGame_DamagePlayers"							"Dégâts infligés aux autres joueurs"
 	"DAC_EndGame_GoldEarned"							"Pièces d'or gagnées"
-	"DAC_EndGame_RoundsWon"								"Manches gagnées"
+	"DAC_EndGame_RoundsWon"								"Manche(s) gagnée(s)"
 
 	"DAC_PostGame_Alliances_Title"						"Alliances"
 	"DAC_PostGame_GlobalItems_Title"					"Objets globaux"
@@ -2180,7 +2189,7 @@
 	"DAC_Battlepass_SeasonTitle"						"Saison 1"
 	"DAC_Battlepass_Welcome_Page1"						"Faites des parties, relevez des défis et débloquez des zones de Cavale en ville pour faire progresser votre passe de bataille."
 	"DAC_Battlepass_Welcome_Page2"						"La saison 1 contient plus de 20 récompenses GRATUITES, que vous gagnerez au fur et à mesure que votre niveau augmentera. Achetez le passe de bataille pour débloquer plus de 100 récompenses supplémentaires !"
-	"DAC_Battlepass_Welcome_Page3"						"Accédez à tout le contenu de Cavale en ville ainsi que la ligne entière de récompenses du passe de bataille pour obtenir de nouveaux champs de bataille et des décors pour les personnaliser, des cibles d’entraînement, des réactions et bien plus !"
+	"DAC_Battlepass_Welcome_Page3"						"Accédez à tout le contenu de Cavale en ville ainsi qu'à la ligne entière de récompenses du passe de bataille pour obtenir de nouveaux champs de bataille et des décors pour les personnaliser, des cibles d’entraînement, des réactions et bien plus !"
 
 	"DAC_Battlepass_Level"								"{i:battlepass_level}"
 	"DAC_Battlepass_LevelUpText"						"Acheter des niveaux"
@@ -2197,7 +2206,7 @@
 	"DAC_Battlepass_YouWillUnlockTheseRewards"			"Vous débloquerez ces récompenses"
 	"DAC_Battlepass_LockedRewardsDescription"			"Vous avez déjà reçu {i:num_rewards} récompenses, débloquez-les en achetant le passe de bataille."
 	"DAC_Battlepass_LockedRewardsDescription1Reward"	"Vous avez déjà reçu 1 récompense, débloquez-la en achetant le passe de bataille."	
-	"DAC_Battlepass_UnlockDescriptionNoRewards"			"Accédez à tout le contenu de Cavale en ville ainsi que la ligne entière de récompenses du passe de bataille pour obtenir de nouveaux champs de bataille et des décors pour les personnaliser, des cibles d’entraînement, des réactions et bien plus !"
+	"DAC_Battlepass_UnlockDescriptionNoRewards"			"Accédez à tout le contenu de Cavale en ville ainsi qu'à la ligne entière de récompenses du passe de bataille pour obtenir de nouveaux champs de bataille et des décors pour les personnaliser, des cibles d’entraînement, des réactions et bien plus !"
 	"DAC_Battlepass_IncludesLevels"					"5 niveaux inclus"
 	"DAC_Battlepass_LevelUpBuy2"						"2 niveaux"
 	"DAC_Battlepass_LevelUpBuy10"						"10 niveaux"
@@ -2207,6 +2216,20 @@
 	"DAC_Battlepass_YouHaveOneLockedReward"				"Vous avez 1 récompense verrouillée"
 	"DAC_Battlepass_YouHaveLockedRewards"				"Vous avez {i:num_locked_rewards} récompenses verrouillées"
 	"DAC_Purchase"										"Acheter"
+	"DAC_Battlepass_ItemOdds"							"Chances d'apparition des objets"
+	
+	"DAC_ItemOdds_Title"								"Chances d'apparition pour les trésors aléatoires"
+	"DAC_ItemOdds_BoardPropHeader"						"Chances d'apparition des décors du champ de bataille"
+	"DAC_ItemOdds_BoardPropDescription"					"Le passe de bataille contient 20 décors aléatoires du champ de bataille qui proviennent d'une liste de 20 décors du champ de bataille ne contenant aucun doublon. Les joueurs qui achètent le passe de bataille et atteignent le niveau 100 débloqueront tous les décors. Parmi ces décors aléatoires, quatre sont gratuits et peuvent être débloqués (en plus de toutes les autres récompenses gratuites) quand le joueur atteint le niveau du passe de bataille correspondant. Les décors du champ de bataille n'ont qu'une valeur esthétique et n'ont aucun impact sur le gameplay."
+	"DAC_ItemOdds_StreetFightItemsHeader"				"Chances d'apparition des objets de combat de rue"
+	"DAC_ItemOdds_StreetFightItemsDescription"			"Il y a 12 objets aléatoires de combat de rue pour chaque Underlord ; le passe de bataille en comprend 8, et les 40 autres sont obtenus comme récompenses dans Cavale en ville. Ces objets proviennent d'une liste sans doublons pour chaque Underlord, et les probabilités sont les mêmes pour chaque niveau. Ils peuvent uniquement être utilisés dans les combats de rue de Cavale en ville (contenu pour les parties en solo) et n'ont aucun impact sur le gameplay des parties contre d'autres joueurs.
+
+Les objets de chaque Underlord proviennent de listes identiques, et aucune des listes ne contient d'objet dupliqué. Cependant, le même objet peut être tiré pour plusieurs Underlords. Par exemple, vous ne recevrez jamais deux Claymores pour Enno, mais il est possible que vous receviez une Claymore pour Enno et une autre pour Anessix."
+	"DAC_ItemOdds_StreetFightItemsHeaderTier1"			"Objets de niveau 1 : 1 chance d'apparition par Underlord"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier2"			"Objets de niveau 2 : 3 chances d'apparition par Underlord"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier3"			"Objets de niveau 3 : 5 chances d'apparition par Underlord"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier4"			"Objets de niveau 4 : 2 chances d'apparition par Underlord"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier5"			"Objets de niveau 5 : 1 chance d'apparition par Underlord"
 
 	"GenericConfirmText_Label"							"Confirmer"
 	"DAC_PurchaseError_Title"		"Achat impossible"
@@ -2253,7 +2276,7 @@
 	"DAC_ChallengeWorldMapPage"							"Cavale en ville"
 	"DAC_CityCrawlObjectives"							"Objectifs de Cavale en ville"
 	"DAC_ChallengeWorldMapPage_Challenges"				"{d:city_crawl_challenges_available} objectifs actifs"
-	"DAC_ChallengeWorldMapPage_ClaimableChallenges"		"{d:city_crawl_challenges_claimable} objectifs à récupérer"
+	"DAC_ChallengeWorldMapPage_ClaimableChallenges"		"{d:city_crawl_challenges_claimable} objectif(s) à récupérer"
 	"DAC_CityCrawlButtonNeedsSteam"						"Connexion à Steam requise"
 
 	"DAC_Zoo_PostGame_GameMode"							"Mode de jeu"
@@ -2517,7 +2540,7 @@
 
 	"DAC_Synergy_Desc_Summoner"			"Les unités invoquées alliées gagnent {s:damage_percent} % de dégâts."
 	
-	"DAC_Synergy_Desc_Vigilant"			"Dès qu'une unité ennemie lance un sort, {s:alliance_eligible} ciblent cette unité si elle est à leur portée."
+	"DAC_Synergy_Desc_Vigilant"			"Whenever an enemy unit casts a spell, {s:alliance_eligible} target that enemy if it is within their range. The damage of the next attack against this target is increased by {s:damage_percent}%."
 	
 	"DAC_Synergy_Desc_Void"				"Tous les héros alliés ont {s:proc_chance} % de chances de porter une attaque supplémentaire qui inflige {s:pure_damage_percent} % des PV de la cible sous forme de dégâts purs."
 
@@ -3511,7 +3534,7 @@
 	"dac_hotkey_scroll_camera_up_desc" 				"Lever la caméra."
 	"dac_hotkey_scroll_camera_down_desc" 			"Baisser la caméra."
 	"dac_hotkey_tilt_camera_modifier_desc" 			"Maintenez la touche enfoncée pour ajuster la caméra. Faites un double appui pour réinitialiser."
-
+	"dac_hotkey_board_spray_desc"					"Place Board Spray at cursor."
 	"dac_hotkey_alliances_tab"						"Voir l'onglet des alliances."
 	"dac_hotkey_dps_tab"							"Voir l'onglet des DPS."
 	"dac_hotkey_items_tab"							"Voir l'onglet des objets."
@@ -3599,14 +3622,14 @@
 	"DAC_Hero_Odds_Tier2"							"Unités de niveau 2 : {s:odds_tier_2} %"
 	"DAC_Hero_Odds_Tier3"							"Unités de niveau 3 : {s:odds_tier_3} %"
 	"DAC_Hero_Odds_Tier4"							"Unités de niveau 4 : {s:odds_tier_4} %"
-	"DAC_Hero_Odds_Tier5"							"Héros légendaires : {s:odds_tier_5} %"
+	"DAC_Hero_Odds_Tier5"							"Tier 5 Units: {s:odds_tier_5}%"
 
 	"DAC_Hero_Odds_Next_Level"						"au niveau suivant"
 	"DAC_Hero_Odds_Tier1_Next"						"Unités de niveau 1 : {s:odds_tier_1_next} %"
 	"DAC_Hero_Odds_Tier2_Next"						"Unités de niveau 2 : {s:odds_tier_2_next} %"
 	"DAC_Hero_Odds_Tier3_Next"						"Unités de niveau 3 : {s:odds_tier_3_next} %"
 	"DAC_Hero_Odds_Tier4_Next"						"Unités de niveau 4 : {s:odds_tier_4_next} %"
-	"DAC_Hero_Odds_Tier5_Next"						"Héros légendaires : {s:odds_tier_5_next} %"
+	"DAC_Hero_Odds_Tier5_Next"						"Tier 5 Units: {s:odds_tier_5_next}%"
 
 	"DAC_Hero_Odds_Tier1_Short"							"{s:odds_tier_1} %"
 	"DAC_Hero_Odds_Tier2_Short"							"{s:odds_tier_2} %"
@@ -3633,7 +3656,8 @@
 	"DAC_CityCrawl_MostRecent"						"Dernier objectif"
 	"DAC_CityCrawl_RecommendedHeader"				"Dernier objectif :<br/><span class='RecommendedChallengeDesc'>{s:recommended_challenge}</span>"
 	"DAC_ChallengeGameModeRequirementsNotMet"		"Sélectionnez un autre mode de jeu pour compléter votre objectif de Cavale en ville."
-	"DAC_ChallengeDifficultyRequirementsNotMet"		"Sélectionnez le niveau de difficulté extrême (XP) du passe de bataille pour terminer votre défi de Cavale en ville."
+	"DAC_ChallengeDifficultyRequirementsNotMet"		"Sélectionnez le niveau de difficulté extrême (XP) avec des bots ou participez à une partie multijoueur pour faire progresser votre passe de bataille."
+	"DAC_ChallengePrivateGameNotFull"				"Votre groupe doit être complet pour faire progresser votre passe de bataille."
 
 	"DAC_Challenge_DodgeAttacks_Desc"				"Esquivez {s:threshold} attaques."
 	"DAC_Challenge_CritAttacks_Desc"				"Portez {s:threshold} coups critiques."
@@ -3652,7 +3676,7 @@
 	"DAC_RewardsAbout_PointsEarned"					"Points gagnés"
 	"DAC_Challenge_RerollAt"						"Nouveau défi dans {t:d:time_to_reroll}"
 	"DAC_Challenge_RerollAvailableAt"				"Nouveau défi"
-	"DAC_Challenge_Claimable"						"Récupérer la récompense"
+	"DAC_Challenge_Claimable"						"Récupérer"
 	"DAC_Challenge_ChallengeComplete"				"Accompli"
 	"DAC_Challenge_Number"							"Défi n° {d:challenge_slot}"
 	"DAC_Challenge_HobgenCombine2Stars_Desc"		"Créez {s:threshold} unités ★★."
@@ -3781,10 +3805,11 @@
 	"DAC_LoadoutUnderlords"							"Équipement : Underlords"
 	"DAC_LoadoutGame"								"Équipement : jeu"
 	"DAC_LoadoutPlayer"								"Équipement : joueur"
-	"DAC_LoadoutMapPropEditor"						"Équipement : éditeur de décors de champs de bataille"
+	"DAC_LoadoutMapPropEditor"						"Équipement : éditeur de décors du champ de bataille"
 
 	"DAC_LoadoutEquip"								"Équiper"
 	"DAC_LoadoutEquipped"							"Sélectionné(e)"
+	"DAC_EditBoardProps"							"Edit Board Props"
 	"DAC_LoadoutEquip_Popup_Close"					"Fermer"
 	"DAC_LoadoutEquip_Failed_Title"					"Sélection impossible"
 	"DAC_LoadoutEquip_Failed_Body"					"Impossible de sélectionner cet objet pour le moment. Veuillez réessayer plus tard."
@@ -4097,6 +4122,7 @@
 	"DAC_Challenge_Popup_2_Valid_Modes"		"Modes de jeu valides : {s:game_mode_1}, {s:game_mode_2}"
 	"DAC_Challenge_Popup_1_Valid_Mode"		"Modes de jeu valides : {s:game_mode_1}"
 	"DAC_challenge_map_city_key_count"		"{d:city_keys}"
+	"DAC_challenge_map_objectives_count"	"{d:city_objectives}"
 
 	"DAC_Area_Inventory_Title"				"Sac à dos :"
 	"DAC_Area_Inventory_Description"		"Les objets que vous débloquez pour {s:underlord_name} grâce aux combats de rue et aux récompenses du passe de bataille peuvent être utilisés pour améliorer votre équipe lors des prochains combats de rue."
@@ -4378,6 +4404,7 @@
 	"DAC_Challenge_Street_Fight_Desc"			"Combat de rue terminé !"
 	"DAC_Challenge_Street_Fight_Lore"			"Grek. Mec. Mon pote. T'aurais dû te cantonner au trucage de combats... — <i>Hobgen a affaire à un arriviste</i>"
 
+	"DAC_Challenge_Puzzle_Desc"					"Casse-tête terminé !"
 	
 	"dac_challenge_difficulty_1"				"Facile"
 	"dac_challenge_difficulty_2"				"Difficile"
@@ -5089,7 +5116,7 @@
 
 	"DAC_Challenge_Puzzle_s1_jull3_title"	"Objectifs confus"
 	"DAC_Challenge_Puzzle_s1_jull3_quote"	"Les gens viennent à la Lune scindée pour y faire des libations inédites. Est-ce que mon cocktail à base de vigile venimeuse a fait quelques victimes ? Oui. Mais pour ceux qui ont survécu, l'expérience est extatique. — <i>Jull, mixologue mortel</i>"
-	"DAC_Challenge_Puzzle_s1_jull3_lore"	"Si Jull siège aujourd'hui aux Orchidées blanches, c'est grâce à son idée de mélanger du venin de vigile venimeuse à un coktail... Bien que le titre de cocktail est..."cocktail" is generous... its basically just venom and Icewrack white."
+	"DAC_Challenge_Puzzle_s1_jull3_lore"	"Si Jull siège aujourd'hui aux Orchidées blanches, c'est grâce à son idée de mélanger du venin de vigile venimeuse à un cocktail... Le titre de « cocktail » est néanmoins quelque peu présomptueux... Il s'agit simplement de venin et de vin blanc des Landes de glace."
 
 	"DAC_Challenge_Puzzle_s1_jull4_title"	"Personne n'échappe à Sven"
 	"DAC_Challenge_Puzzle_s1_jull4_quote"	"Je vais trouver un moyen de résoudre ce problème... — <i>Jull, défonceur de barrières</i>"
@@ -5345,7 +5372,7 @@
 
 	"DAC_Challenge_Puzzle_s1_anessix2_title"	"Insaisissables…"
 	"DAC_Challenge_Puzzle_s1_anessix2_quote"	"Les frères esprits essaient de me museler… J'admire leur dévouement, mais je déteste leur façon d'adopter la futilité. — <i>Anessix, fléau des esprits</i>"
-	"DAC_Challenge_Puzzle_s1_anessix2_lore"		"De nombreuses forces voient l'ascension au pouvoir d'Anessix d'un mauvais œil. Mais pas les frères esprits."
+	"DAC_Challenge_Puzzle_s1_anessix2_lore"		"De nombreuses forces voyaient d'un mauvais œil l'ascension d'Anessix au pouvoir. Cependant, les frères esprits ont été les seuls à réagir."
 
 	"DAC_Challenge_Puzzle_s1_anessix3_title"	"Serviteurs des Jumeaux écorchés"
 	"DAC_Challenge_Puzzle_s1_anessix3_quote"	"L'opposition à mon règne, bien qu'attendue, est toujours une déception. — <i>La cour de Ristul en conflit avec Les Jumeaux écorchés</i>"
@@ -5504,13 +5531,13 @@
 	"DAC_Challenge_Streetfight_bloodbounds_and_warlocks_Win"		"Enno chasse les démonistes et met fin aux mystérieuses disparitions dans les Dédales"
 	"DAC_Challenge_Streetfight_bloodbounds_and_warlocks_Lose"		"Rumeur : des géants greffés de chair rôderaient dans les Dédales"
 	
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Title"		"Experimental Growth"
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Bot"		"Bloodbound Warlocks"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Title"		"Croissance expérimentale"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Bot"		"Les démonistes liés par le sang"
 	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_BotDesc"		"bloodbounds_and_warlock Desc"
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Lore"		"It's not unusual to see Warlocks turn to the Warrens when they are looking for \"volunteers\" for their experiments."
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Quote"		"In which Enno declares that life may be cheap in White Spire, but his people aren't for sale"
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Win"		"Mysterious disappearances in The Warrens comes to an end as Enno drives out Warlocks"
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Lose"		"Rumor! Fleshgrafted giants stalk The Warrens"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Lore"		"Il n'est pas inhabituel de voir les démonistes se tourner vers les Dédales quand ils cherchent des « volontaires » pour leurs expériences."
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Quote"		"Enno réitère que, si la vie n'est pas chère à Flèche blanche, ce n'est pas pour autant que ses habitants sont à vendre"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Win"		"Enno chasse les démonistes et met fin aux mystérieuses disparitions dans les Dédales"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Lose"		"Rumeur : des géants greffés de chair rôderaient dans les Dédales"
 	
 
 
@@ -5637,6 +5664,16 @@
 	"DAC_Challenge_Puzzle_intro_quote"			"Hobgen, Anessix, Jull et Enno s'apprêtaient à s'embarquer dans la conquête de territoires la plus dangereuse. Hobgen avait jeté son dévolu sur Novténèbres, les terres préférées de Momma Eeb. Jull convoitait Port ombragé dans l'espoir de contrôler les importations et les exportations. Anessix s'était tournée vers La petite Revtel et toutes les richesses et les secrets qu'elle dissimule. Et Enno... Eh bien, Enno est resté Enno, et il avait pour ambition de se proclamer souverain des Dédales."
 	"DAC_Challenge_Puzzle_intro_lore"			"De nombreuses épreuves attendaient ceux qui espéraient succéder à Eeb. En dehors de la violence urbaine habituelle, ils allaient être confrontés à des scénarios et des complications que même ces criminels endurcis ne pouvaient prévoir."
 
+	// City Crawl Complete
+	
+	"DAC_citycrawl_complete_hobgen"				"Grâce à sa mainmise sur Novténèbres, Hobgen s'est implanté durablement à Flèche blanche. Pour l'instant, l'heure est à la fête pour le féetaud… qui n'a aucune idée des décisions difficiles qui l'attendent dans les mois à venir."
+	"DAC_citycrawl_complete_jull"				"Jull a fêté son emprise sur Port ombragé tel Jull dans toute sa splendeur : il s'est pris une cuite à la Lune scindée. Il était d'une humeur tellement festive qu'il a même autorisé Hache à revenir dans le bar. Selon les rumeurs qui courent, Belplume travaillerait actuellement sur un livre contant les péripéties de cette nuit de débauches."
+	"DAC_citycrawl_complete_enno"				"Maintenant qu'il est le maître incontesté des Dédales, Enno doit faire face à un choix difficile… Se contentera-t-il d'être le roi des bas quartiers ? Ou cherchera-t-il à étendre son emprise… Seul l'avenir nous le dira."
+	"DAC_citycrawl_complete_anessix"			"En se frayant un chemin dans la petite Revtel, les agents d'Anessix ont tissé une puissante toile de secrets et de confidents. Mais la démone terre-à-terre n'est pas satisfaite… et elle joue un jeu dangereux avec la cour de Ristul. Si ses véritables intentions sont découvertes, tout ce qu'elle a construit sera réduit en cendres."
+	"DAC_citycrawl_complete_all"				"Les frontières ont été tracées, mais l'histoire de Flèche blanche n'en est qu'à ses balbutiements. La ville des Délices infâmes abrite autant d'ennemis que de secrets… et ce n'est qu'une question de temps avant qu'ils ne soient découverts."
+
+
+	
 	
 }
 

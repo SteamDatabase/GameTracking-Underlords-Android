@@ -673,6 +673,7 @@ _8ji)8
 @9+	@yHA
 @9+	@yHM
 9@z(~`
+@9zF@
 a2@yh2@y
 *,A)($@),4B)o
 A8kB@9l
@@ -726,7 +727,8 @@ aA9`m@
 ?AAk	"
 A(aN!
 $	A)Ar
-	Ab9J,
+	Ab9*,
+	Ab9j,
 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789
 aBE9a
 A block must end with a branch instruction.
@@ -1269,7 +1271,6 @@ BGRA5551
 BGRA8888_LINEAR
 BGRX8888_LINEAR
 bhb8"
-Bht8F
 __BI_
 __BI_Append
 Biases the mip level the texture streaming system choses to stream for each texture.
@@ -2694,6 +2695,7 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 D3DCOLORtoUBYTE4
+d6@y#
 	D@8!
 D@8)%
 D$@8$
@@ -2720,7 +2722,7 @@ DCT scaled block size %dx%d not supported
 %d %d
 %d..%d
 DDDDUUUU
-DDDDUUUUDDDDUUUU
+DDDDUUUUDDDDUUUU$T
 ddx_coarse
 ddx_fine
 ddy_coarse
@@ -5090,7 +5092,6 @@ H(Ay	M
 h&B)@
 !Hb8b
 hb8bF
-hb 9<_
 hb@9`
 hb@9h
 hb@9H
@@ -5150,12 +5151,13 @@ hexadecimal literal too long
 HEX_DIGIT
 HEXINTEGERLITERAL
 =hf@9
+hf@9a
 hf@9a*
-hf@9A
 hf@9h
 hf@9H
 hf@9i
 h"F9i
+hf 9ib
 hfC9H
 hFD9u
 h"G9i
@@ -5205,6 +5207,7 @@ hlsl-offsets
 HlslSemanticGOOGLE
 hn8c|
 HostStateMgr001
+hr1yi
 hr1yI
 h"R9h
 hrqy`Z
@@ -5367,6 +5370,7 @@ If OpTypeBool is stored in conjunction with OpVariable, it
 *ig8)
 'ig8S
 -ignoredxsupportcfg
+-ignore_gpu_slam
 ignoreIntersectionNV
 IgnoreIntersectionNV
 Ignoring attempt to set cHRM RGB triangle with zero area
@@ -5387,11 +5391,11 @@ ignoring unrecognized register type
 ,ih8k
 ,ih8l
 )ihxAyi
-	ii8(&
 	ii8	
 ii8	,
 ii8	a
 ii8Fhi8
+	ii8H&
 	ii8i
 ii8jn
 Iii8?)
@@ -5435,11 +5439,11 @@ i"@)j
 <)ij8
 )ij8?
 )ij8	
-*ij(8
 ij8(	
 ij(8h
 -ij8J
 ij8kI
+*ij(8s
 )ijx?
 *ijx_
 ijx6yh
@@ -6238,7 +6242,6 @@ IVEC2
 IVEC3
 IVEC4
 	*iW@
-.i(x/
 *'i$x
 *i,xi>@yj:
 *i.xi>@yj:
@@ -6256,36 +6259,32 @@ Iy*wB
 )*J=@
 **J=@
 +*J=@
-	*J13
 j1By_! k
 ',)j3@
 j48lI
-j58-A
+j58-=
 j58@c
-j58G?
+j58G;
 j58h%
 j58hf@9(
 j68HC@9h
 j68i"S
-j68X|
+j68Xx
 @j!8!
+j)8	^
 j*8*%
-j-82?
 j(8a6@
 j(8`B
-j(8dj
 j(8h*@
-j(8H^
 j)8HA
 j/8hj)
-j(8Hx
 j`8!i 8
 j`8'k`8
 j-8nj)
  J9?@
+j 9Db
 J9e:A
 J)@9j
-j 9vb
 j"@9)Y@
 ja8? 
 ja8 i!8!
@@ -6329,11 +6328,12 @@ JSON error, unterminated element:
 /JU7OB
 jump_statement
 Ju@y_
-j*x$F
+j+x1A
+j(xHx
 j$xij.
 j(x	k(x)k(x
-j+xvA
-j(x(Z
+j*xm@
+j)x)Z
 J%@y_
 Jy?! kC
 J!@y-!@ylyj
@@ -6348,13 +6348,12 @@ K[ .)
 _k58(
 k68+c
 k68wZ@
-_k78h
 ?k78h
 ?k78H
 |k(8('@
 _k;8(
 *?k(8
-_k88H
+_k88h
 ?k<8h
 k(8hF@
 ?k(8J
@@ -6746,7 +6745,9 @@ max_primitives =
 max_primitives*
 max_processor_count
 maxtessfactor
+-maxtexturepoolsize_2gb
 -maxtextureres
+-maxtextureres_2gb
 max_vertices
 max_vertices = 
 maxVerticesPerHull
@@ -6781,7 +6782,6 @@ m_bNoColor
 m_bOffsetExistingPos
 m_Bone
 m_bParticleFeathering
-MbP?t
 m_bRemapPullForceToLife
 m_bRunForParentApplyKillList
 m_bScaleCurrent
@@ -7120,6 +7120,7 @@ MOBILE_GLES_3_0
 MOBILE_GLES_3_1
 Mobile SM 3.0 (GLES 3.0)
 Mobile SM 3.0 (GLES 3.1)
+mobile_version
 MOD_ASSIGN
 modeldoc0
 modeldoc1
@@ -7268,7 +7269,7 @@ N2Z .
 N7glslang7TShader8IncluderE
 !n9[ .
 [ n9+a
-N@9-F
+N@9-J
 ,.n*a
 name already defined
 named_barrier
@@ -8589,7 +8590,6 @@ R	hi8
 rhj)8
 rhj)8@
 Rhj)8
-rhj)8NC
 Rhj)8t
 rhjh8
 Rhjh8
@@ -8599,7 +8599,7 @@ Rhjh8vBI
 rhjhx
 Rhjhx
 rhj)x
-rhk)8|
+rhk)8|"@
 RHkh8
 R	i5x
 R	i6x
@@ -8634,6 +8634,7 @@ Rir8!
 ri}	S
 r?i*x
 R{j(8
+r|jh8
 rJik8
 rJik8_
 RJik8
@@ -8911,6 +8912,7 @@ setting.DisableShaderOptimizations
 setting.DXLevel
 setting.fullscreen
 setting.fullscreen_min_on_focus_loss
+setting.gpu_level
 setting.HasBrokenPipelineStats
 setting.high_dpi
 setting.knowndevice
@@ -10076,16 +10078,16 @@ texture3DProjGradARB
 texture3DProjLod
 texture address mode
 texturebase.cpp
-texturebase.cpp(1803):Error loading texture: %s
-texturebase.cpp(2737):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2758):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2769):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2780):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2791):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2812):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2823):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2834):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2845):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(1808):Error loading texture: %s
+texturebase.cpp(2742):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2763):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2774):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2785):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2796):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2817):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2828):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2839):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2850):ResourceHandleToData( %s ) failed! Falling back to error texture!
 TextureBuffer
 textureClamp
 textureClampARB
@@ -10651,7 +10653,6 @@ Unable to populate VK_EXT_debug_report entrypoints.
 Unable to populate VK_EXT_debug_utils entrypoints.
 unable to populate vk_ext_khr_device_swapchain entrypoints.
 Unable to populate vk_ext_khr_swapchain entrypoints.
-Unable to populate VK_NVX_trim_command_pool entrypoints.
 Unable to query size of supported swapchain formats.
 Unable to query supported swapchain formats.
 Unable to read file %s
@@ -11770,7 +11771,6 @@ VK_TIMEOUT
 -vktrace
 vkTrimCommandPool
 vkTrimCommandPoolKHR
-vkTrimCommandPoolNVX
 vkUnmapMemory
 vkUnregisterObjectsNVX
 vkUpdateDescriptorSets
@@ -11986,7 +11986,6 @@ vr_multigpu_skip_semaphores
 vr_multigpu_skip_transfers
 vr_vulkan_wait_fence_between_eyes
 vR@)wbAi{rCiyjB)
-]V}S&
 $&,V,S
 vs_3_0
 vs_4_0
@@ -12079,7 +12078,6 @@ Vulkan driver version Major = %d, Minor = %d, Patch = %d
 -vulkan_dump_shaders
 Vulkan Dynamic Memory Manager Stats:
 -vulkan_enable_gpu_validation
--vulkan_enable_nvx_trim_command_pool
 -vulkan_enable_robust_buffer_access
 -vulkan_enable_validation
 Vulkan enabling ARM Mali G76 workaround to avoid VK_ERROR_DEVICE_LOST by setting VK_IMAGE_USAGE_TRANSFER_DST_BIT on swapchain depth/stencil image for <= r16 driver.
@@ -12137,11 +12135,11 @@ vulkan/rendercontextvulkan.cpp
 vulkan/rendercontextvulkan.cpp(501): 
 vulkan/rendercontextvulkan.cpp(514): 
 vulkan/renderdevicevulkan.cpp
-vulkan/renderdevicevulkan.cpp(1708): 
-vulkan/renderdevicevulkan.cpp(2342): 
-vulkan/renderdevicevulkan.cpp(2971): 
-vulkan/renderdevicevulkan.cpp(3280): 
-vulkan/renderdevicevulkan.cpp(4017): 
+vulkan/renderdevicevulkan.cpp(1738): 
+vulkan/renderdevicevulkan.cpp(2401): 
+vulkan/renderdevicevulkan.cpp(3030): 
+vulkan/renderdevicevulkan.cpp(3339): 
+vulkan/renderdevicevulkan.cpp(4082): 
 vulkan/renderpassvulkan.cpp
 vulkan/renderpipelinestatsvulkan.cpp
 -vulkanrenderthreadstack
@@ -12202,6 +12200,12 @@ Vulkan texture manager frame update
 vulkan/texturevulkan.cpp(1443): 
 vulkan/texturevulkan.cpp(725): 
 vulkan/texturevulkan.cpp(741): 
+-vulkan_trim_all_command_pools
+-vulkan_trim_all_command_pools_2gb
+Vulkan trim all command pools per frame enabed.
+-vulkan_trim_command_pools
+-vulkan_trim_command_pools_2gb
+Vulkan trim command pools on rebalancing threads enabed.
 Vulkan using external subpass dependencies for all renderpasses.
 -vulkan_validation_warnings
 V_UTF16ToUTF8
@@ -12544,7 +12548,7 @@ _Z6DevMsgPKcz
 #Z80ijx
 #Z8	A
 _ZdaPv
-zd?(knN
+zd?(knN 
 _ZdlPv
 ZeroExtend
 Zero length tRNS chunk

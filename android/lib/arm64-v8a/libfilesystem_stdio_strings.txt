@@ -40,6 +40,7 @@
 17CFileSystem_Stdio
 17IAsyncFileRequest
 17IAsyncRequestBase
+17IMemoryMappedFile
 18CCountedStringPool
 18CFileAsyncWriteJob
 18CPlaceholderConVar
@@ -63,11 +64,13 @@
 25CFileSystemReloadFileList
 26CDefaultKeyValuesErrorSpew
 26CFileAsyncDirectoryScanJob
-2hB$9
-2hR#9#
+28CFioReadOnlyMemoryMappedFile
+28CPackedStoreMemoryMappedFile
+2	a(9D
 2ij,xl=
 2+imx
 2_!(k
+2	q'9s
 2x"@9
  [%.3f server clamped to %.3f]
 4hf@9
@@ -347,11 +350,11 @@ fs_fake_read_delay_ms
 fs_monitor_read_from_pack
 fs_report_long_reads
 fs_report_sync_opens
----FS%s:  close %s %p %i (%.3f)
+---FS%s:  close %s 0x%llX %i (%.3f)
 FS: Specified two path IDs (%s, %s).
----FS%s:  read %s %i %p (%.3f)
+---FS%s:  read %s %i 0x%llX (%.3f)
 ---FS%s:  %s %s (%.3f)
----FS%s:  write %s %i %p
+---FS%s:  write %s %i 0x%llX
 fstat
 FS:  Tried to Close NULL file handle!
 FS:  Tried to EndOfFile NULL file handle!
@@ -404,7 +407,7 @@ hrAy`Z
 hr@y`
 hZC)	
 i6@yh
-i78;>
+i78[>
 ?i(8?i*x?i+
 IAsyncRequestBase *CAsyncRequestBase::GetInterfaceBase()
 ib@9`
@@ -457,10 +460,12 @@ Invalid Path
 IOJob
 IQuickTime001
 \i)x)	
+i)xfA
 *i.xi>@yj:
 I	@y(
 i>@yh
 j58hf@9(
+J68<7
 ji,x!
 ji)x)	
 j!JJ+
@@ -535,8 +540,8 @@ ModelDocUtils001
 MODEL_PROCESSING_SCRIPT_INTERFACE_001
 MODEL_PROCESSING_SERVICES_INTERFACE_001
 Modifying Async Filesystem Request after it has been submitted
+munmap
 "N$4$n
-!n9uN
 nCentralDirectoryEntries_ThisDisk
 nCentralDirectoryEntries_Total
  need to hook up zip for linux
@@ -560,12 +565,10 @@ nTries < 10000000
 <NULL>
 numberOfTheDiskWithStartOfCentralDirectory
 numberOfThisDisk
--onethreadpool
 opened_files.txt
 Open( %llu microsecs, %s )
 Open( %s )
 Ordered constructor wrapped type has no default constructor.
-P,3`44
 packedstore.cpp
 Packed store %s with refcount > 0.
 pak%s%02d_dir.vpk
@@ -593,6 +596,7 @@ Plat_IsFile
 Plat_IsHighDPI
 Plat_IsInDebugSession
 Plat_LoadModule
+Plat_NeedsLowFragmentation
 Plat_RelativeTicks
 Plat_RemoveDirectory
 Plat_RemoveFile
@@ -755,6 +759,7 @@ strlen
 strrchr
 strstr
 (s@y 
+sysconf
 Tc"B)`
 TestFormatA
 TestFormatB
@@ -765,6 +770,7 @@ TestScriptMgr001
 .text
 TextLayout_001
 TextMessageMgr_001
+Th2@y
 The filename may only contain lower case alphanumeric characters, dashes, and underscores.
 Thf@9
 ThreadGetCurrentId
@@ -794,10 +800,10 @@ Total Seconds: %.5f
 toupper
 T?!@q
 T?)@q
-Tried to close unknown file pointer %p
-Tried to read %i bytes from unknown file pointer %p
+Tried to close unknown file pointer 0x%llX
+Tried to read %i bytes from unknown file pointer 0x%llX
 Tried to Seek NULL file handle!
-Tried to write %i bytes from unknown file pointer %p
+Tried to write %i bytes from unknown file pointer 0x%llX
 T+yA9
  - %u
 u64( %lld = 0x%llX )

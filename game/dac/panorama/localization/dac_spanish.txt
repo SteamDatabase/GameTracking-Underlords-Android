@@ -240,6 +240,9 @@
 	"DAC_PurchaseEvent_AlreadyOwned"					"Ya tienes esta temporada"	
 	"DAC_PurchaseEvent_SuccessTitle"					"Hecho"
 	"DAC_PurchaseEvent_SuccessBody"						"¡Has comprado con éxito el pase de batalla!"
+	"StoreCheckout_Error_Title"							"Error"
+	"StoreCheckout_CannotPurchase"						"No se puede comprar el artículo"
+
 
 
 	"DAC_PurchaseEventCurrency_ErrorTitle"				"Error"
@@ -500,6 +503,7 @@
 	"DAC_GenericError_RegionInfoNotProvided"			"Para jugar en línea, debes registrar tu cuenta."
 	"DAC_GenericError_DurationControlBlocked"				"Has excedido el tiempo disponible que tienes permitido para jugar en línea."
 
+	"DAC_PurchaseError_NotSignedIn"						"Para realizar cualquier compra, debes iniciar sesión en Steam."
 	"DAC_PurchaseError_NotConnectedToGC"				"Debes estar conectado a la red de Dota Underlords para realizar cualquier compra"
 	"DAC_PurchaseError_NoResponse"						"No se pudo conectar con la red de Dota Underlords en este momento. Inténtalo de nuevo en unos minutos."
 	"DAC_PurchaseError_InternalError"					"Se ha producido un error inesperado al intentar verificar que este artículo se puede comprar. Por favor, inténtalo de nuevo más tarde."
@@ -512,6 +516,11 @@
 	"DAC_PurchaseError_InvalidQuantity"					"La cantidad solicitada no es válida para este artículo."
 	"DAC_PurchaseError_OutstandingReservations"			"Hay compras pendientes para este artículo que ya están en proceso. Borra o completa estas compras para seguir comprando."
 	"DAC_PurchaseError_ExceedsCreditLimit"				"Ya tienes demasiados créditos pendientes en esta cuenta. Por favor, gástalos antes de comprar otros nuevos."
+
+	"DAC_PurchaseError_InternalStore"					"Se ha producido un error inesperado al intentar comprar el objeto."
+	"DAC_PurchaseError_CannotPurchase"					"Tu cuenta no puede realizar compras."
+	"DAC_PurchaseError_MissingItem"						"Ha habido un error inesperado. No se encuentra el objeto."
+	"DAC_PurchaseError_Cancelled"						"La compra ha sido cancelada."
 
 	"DAC_ReservationError_NoResponse"					"No se pudo conectar con la red de Dota Underlords en este momento. Inténtalo de nuevo en unos minutos."
 	"DAC_ReservationError_InternalError"				"Ha ocurrido un error inesperado. Por favor, inténtalo de nuevo más tarde."
@@ -560,7 +569,7 @@
 	"DAC_Underlord_1_SubDesc"						"Invocador de demonios"
 	"DAC_Underlord_DescriptionHeader_1"				"Un Traficante de Secretos"
 	"DAC_Underlord_Description_1"					"Hay muchos malentendidos en la búsqueda de poder, por ejemplo, que para lograrlo, tienes que hacer trabajos sucios. Nada más lejos de la realidad. Cualquier persona digna de valor no se ensuciará las manos con sangre ajena, para eso está otra gente. No, la violencia es una herramienta. Una palanca que puedes usar para ayudarte a conseguir lo que quieras. Pero ¿qué pensarías si te digo que existe otra herramienta? Algo más simple. Algo efectivo. Por supuesto, estoy hablando de los secretos. Mira, los secretos son un gran factor de equilibrio. No importa si eres un mendigo o el rey, si alguien se te acerca y te dice que sabe algo que tú no sabes, de forma inmediata deseas conseguir esa información. Esto es lo que hace que los secretos sean no solo divertidos, sino también increíblemente provechosos... Y yo estoy al tanto de todos."
-	"DAC_Underlord_Overview_1"						"Anessix es una manipuladora demoníaca que convoca demonios para luchar por ella."
+	"DAC_Underlord_Overview_1"						"Anessix es una manipuladora demoníaca que invoca demonios para que luchen por ella."
 
 	"DAC_Underlord_HypeMeter_Info1_1"				"Carga a 5 FPS (furor por segundo)"
 	"DAC_Underlord_HypeMeter_Info2_1"				"El FPS aumenta en 1,25 por cada aliado demoníaco en el tablero."
@@ -568,13 +577,13 @@
 	"DAC_Underlord_2"								"Jull"
 	"DAC_Underlord_Subtitle_2"						"Patapalo de Icewrack"
 	"DAC_Underlord_2_SubDesc"						"Morsa boxeadora"
-	"DAC_Underlord_Overview_2"						"Un poderoso tanque de melé, Jull mantiene a su equipo hidratado con bebidas para darles ventaja."
+	"DAC_Underlord_Overview_2"						"Jull es un poderoso tanque de melé que abastece de bebidas a su equipo para darles ventaja."
 	"DAC_Underlord_DescriptionHeader_2"				"Un gánster con principios"
 	"DAC_Underlord_Description_2"					"Lo que hacen pasar por vino en el sur es algo vergonzoso.  Lo que llaman whisky es abominable.  Nunca tuve la intención de inspirar terror... lo único que yo quería era traerle a la gente de Agujablanca los licores de calidad por los que se conoce Icerack.  Pero los competidores celosos crean hombres desesperados.  Y los hombres desesperados toman... malas decisiones.  No tuve muchas opciones: Necesitaba darles un castigo ejemplar a todos ellos."
 
 	"DAC_Underlord_3"								"Enno"
 	"DAC_Underlord_Subtitle_3"						"Rey de los Rateros"
-	"DAC_Underlord_Overview_3"						"Una amenaza de largo alcance, Enno salta a través del tablero, envenenando a los enemigos y causando estragos generalizados."
+	"DAC_Underlord_Overview_3"						"Enno es un peligro a distancia que salta por todo el tablero envenenando a los enemigos y causando estragos."
 	"DAC_Underlord_DescriptionHeader_3"				"Un pícaro adorable"
 	"DAC_Underlord_Description_3"					"Su gente son los rateros de Agujablanca, escabulléndose por Los Laberintos y los barrios pobres de la ciudad, buscando lo que puedan para sobrevivir. En esa comunidad improvisada, él es el rey."
 
@@ -582,7 +591,7 @@
 	"DAC_Underlord_Subtitle_4"						"Pirómano aficionado"
 	"DAC_Underlord_4_SubDesc"						"Lanzallamas a distancia"
 	"DAC_Underlord_Description_4"					"<i>Déjame contarte un pequeño secreto sobre el amor. No es solo una cosa hermosa, sino también poderosa. Su presencia eleva tu espíritu en los momentos más oscuros. Su ausencia crea un vacío que sientes en lo más profundo de tu ser. El amor va más allá del romance. El amor es una obsesión saludable. Un motivador. Una inspiración. Algo que te hace mejor. Así es como sé que amo los incendios provocados.</i>"
-	"DAC_Underlord_Overview_4"						"Un pirómano con ataque a distancia, Hobgen se deleita en prender fuego a los héroes."
+	"DAC_Underlord_Overview_4"						"Hobgen es un pirómano con ataque a distancia que se deleita prendiendo fuego a los héroes."
 	"DAC_Underlord_HypeMeter_Info1_4"				"Carga a 3 FPS (furor por segundo)"
 	"DAC_Underlord_HypeMeter_Info2_4"				"El FPS aumenta en 1,25 por cada enemigo que está en llamas."
 
@@ -820,7 +829,7 @@
 	"dac_item_tank_buster_lore"							"Esta hoja fue forjada en Dragonhold por el propio Kaden. El famoso Dragon Knight tenía un dicho: «Cuanto más grande eres, más fuerte te golpea esta cosa». <i>&#8213;Zenok, perista de Agujablanca</i>"
 
 	"dac_item_armlet"									"Brazalete de Mordiggian"
-	"dac_item_armlet_desc"								"+{d:attack_damage} Daño de ataque. +{d:armor} Armadura. El héroe equipado pierde {d:health_loss_per_second} de vida por segundo."
+	"dac_item_armlet_desc"								"+{d:attack_damage} de daño de ataque. +{d:armor} de armadura. El héroe que lo lleva pierde {d:health_loss_per_second} de vida por segundo."
 	"dac_item_armlet_lore"								"No esperes simplemente que deletree esto correctamente en la fractura. <i>&#8213;Zenok, perista de Agujablanca</i>"
 
 	"dac_name_mango_tree"								"Árbol de Mango"
@@ -829,7 +838,7 @@
 	"dac_item_mango_tree_lore"							"No vas a querer estar en el campo de batalla cuando tu nivel de azúcar en sangre es bajo. <i>&#8213;Zenok, perista de Agujablanca</i>"
 
 	"dac_hero_hint_melee"								"Melé"
-	"dac_hero_hint_ranged"								"Alcance"
+	"dac_hero_hint_ranged"								"A distancia"
 	"dac_hero_hint_tanky"								"Fortachón"
 	"dac_hero_hint_dragon"								"Más poderoso con otros dragones"
 	"dac_hero_hint_healer"								"Cura a varios aliados"	
@@ -853,7 +862,7 @@
 	"dac_hero_hint_jumping_movement"					"Salta hacia los enemigos"
 	"dac_hero_hint_teleport_movement"					"Teletransporta hacia los enemigos"
 	"dac_hero_hint_high_single_target_damage"			"Daño elevado a un solo objetivo"
-	"dac_hero_hint_high_group_damage"					"Daño elevado a multiples objetivos"
+	"dac_hero_hint_high_group_damage"					"Daño elevado a un grupo"
 	"dac_hero_hint_aoe_ministun"						"Miniaturdimiento a enemigos cercanos"
 	"dac_hero_hint_freezes_enemies"						"Congela a los enemigos"
 	"dac_hero_hint_aoe_silence"							"Silencia una zona amplia"
@@ -1558,7 +1567,7 @@
 	"DAC_InGame_UnitDPS_Query"							"DPS: <span class=\"Count\">{i:attack_dps}</span>"
 	"DAC_InGame_UnitHP_Query"							"Vida: <span class=\"Count\">{i:selectedUnitHP}</span>"
 	"DAC_InGame_UnitArmor_Query"						"Armadura: <span class=\"Count\">{i:selectedUnitArmor}{s:selectedUnitBonusArmor}</span>"
-	"DAC_InGame_KillCount_Query"						"Víctimas: <span class=\"Count\">{d:kill_count}</span>"
+	"DAC_InGame_KillCount_Query"						"Víctimas: <span class=\"Count\">{f:kill_count}</span>"
 	"DAC_InGame_KillStreak_Query"						"Racha de víctimas: <span class=\"Count\">{d:kill_streak}</span>"
 	"DAC_InGame_DuelBonusDamage_Query"					"Daño adicional de Duelos: <span class=\"Count\">{d:duel_bonus_damage}</span>"
 	"DAC_InGame_BrawnyKillCount_Query"						"Total de víctimas de fornidos: <span class=\"Count\">{f:brawny_kills}</span>"
@@ -1717,7 +1726,7 @@
 	"DAC_EndGame_Hobgen_win_with_spirits"			"Los hermanos espíritus ayudan a darle la victoria a Hobgen"
 	"DAC_EndGame_Hobgen_win_with_trolls"			"Hobgen lidera un ejército de troles para tomar control de Agujablanca"
 	"DAC_EndGame_Hobgen_win_with_void"				"Hobgen recurre al Vacío para sellar su victoria"
-	"DAC_EndGame_Hobgen_win_with_vigilant"			"Al equipo de Vigías de Hobgen no le pueden pasar por encima"
+	"DAC_EndGame_Hobgen_win_with_vigilant"			"Al equipo de vigías de Hobgen no le pueden pasar por encima"
 	"DAC_EndGame_Hobgen_win_with_warlock"			"Los brujos de Hobgen trenzan un hechizo sobre Agujablanca"
 	"DAC_EndGame_Hobgen_win_with_warrior"			"Los matones de Hobgen dan palizas por todos lados"
 	"DAC_EndGame_Hobgen_win_with_summoners"			"Hobgen abruma a sus rivales con un ejército aparentemente interminable"
@@ -1773,7 +1782,7 @@
 	"DAC_EndGame_Hobgen_does_ok_with_spirits"			"Ember Spirit y Hobgen no consiguen quemar suficientes cosas"
 	"DAC_EndGame_Hobgen_does_ok_with_trolls"			"Hobgen y sus troles aliados no consiguen asegurarse la victoria"
 	"DAC_EndGame_Hobgen_does_ok_with_void"				"Hobgen se queda mirando al Vacío... y el Vacío le responde con un «Eh»"
-	"DAC_EndGame_Hobgen_does_ok_with_vigilant"			"Hobgen contrata a guardias Vigías cuya habilidad laboral es cuestionable"
+	"DAC_EndGame_Hobgen_does_ok_with_vigilant"			"Hobgen contrata a guardias vigías cuya habilidad laboral es cuestionable"
 	"DAC_EndGame_Hobgen_does_ok_with_warlock"			"Los brujos lanzan hechizos para Hobgen que resultan ser poco efectivos"
 	"DAC_EndGame_Hobgen_does_ok_with_warrior"			"Los guerreros de Hobgen luchan con fuerza, pero no la suficiente"
 	"DAC_EndGame_Hobgen_does_ok_with_summoners"			"Hobgen subcontrata su ejército y obtiene resultados dispares"
@@ -1801,7 +1810,7 @@
 	"DAC_EndGame_Hobgen_does_bad_with_spirits"			"«¿Ayudar a Hobgen? ¡Es un engreído!» <i>&#8213;Storm Spirit explicando porqué dejó morir a Hobgen"
 	"DAC_EndGame_Hobgen_does_bad_with_trolls"			"Los troles se niegan a cumplir con Hobgen"
 	"DAC_EndGame_Hobgen_does_bad_with_void"				"Hobgen se queda mirando al Vacío... y la cosa no le funcionó"
-	"DAC_EndGame_Hobgen_does_bad_with_vigilant"			"Hobgen se esforzó por ser Vigía, pero no funcionó"
+	"DAC_EndGame_Hobgen_does_bad_with_vigilant"			"Hobgen se esforzó por ser vigía, pero no funcionó"
 	"DAC_EndGame_Hobgen_does_bad_with_warlock"			"Los brujos se rebelan contra Hobgen, se niegan a ayudarle a reclamar la victoria"
 	"DAC_EndGame_Hobgen_does_bad_with_warrior"			"Hobgen contrata a guerreros que no tenían interés en ganar"
 	"DAC_EndGame_Hobgen_does_bad_with_summoners"		"Hobgen contrata a B, que a su vez subcontrata a C"
@@ -1831,7 +1840,7 @@
 	"DAC_EndGame_Anessix_win_with_spirits"			"Los hermanos espíritus ayudan a darle la victoria a Anessix"
 	"DAC_EndGame_Anessix_win_with_trolls"			"Anessix lidera un ejército de troles para tomar el control de Agujablanca"
 	"DAC_EndGame_Anessix_win_with_void"				"Anessix recurre al Vacío para sellar su victoria"
-	"DAC_EndGame_Anessix_win_with_vigilant"			"Al equipo de Vigías de Anessix no le pueden pasar por encima"
+	"DAC_EndGame_Anessix_win_with_vigilant"			"Al equipo de vigías de Anessix no le pueden pasar por encima"
 	"DAC_EndGame_Anessix_win_with_warlock"			"Los brujos de Anessix tejen un hechizo sobre Agujablanca"
 	"DAC_EndGame_Anessix_win_with_warrior"			"Los matones de Anessix dan palizas por todos lados"
 	"DAC_EndGame_Anessix_win_with_summoners"		"Anessix abruma a sus rivales con un ejército aparentemente interminable"
@@ -1887,7 +1896,7 @@
 	"DAC_EndGame_Anessix_does_ok_with_spirits"			"Ember Spirit y Anessix no consiguen quemar suficientes cosas"
 	"DAC_EndGame_Anessix_does_ok_with_trolls"			"Anessix y sus troles aliados no consiguen asegurarse la victoria"
 	"DAC_EndGame_Anessix_does_ok_with_void"				"Anessix se queda mirando al Vacío... y el Vacío le responde con un «Eh»"
-	"DAC_EndGame_Anessix_does_ok_with_vigilant"			"Anessix contrata a guardias Vigías cuya habilidad laboral es cuestionable"
+	"DAC_EndGame_Anessix_does_ok_with_vigilant"			"Anessix contrata a guardias vigías cuya habilidad laboral es cuestionable"
 	"DAC_EndGame_Anessix_does_ok_with_warlock"			"Los brujos lanzan hechizos para Anessix que resultan ser poco efectivos"
 	"DAC_EndGame_Anessix_does_ok_with_warrior"			"Los guerreros de Anessix luchan con fuerza, pero no la suficiente"
 	"DAC_EndGame_Anessix_does_ok_with_summoners"		"Anessix subcontrata su ejército y obtiene resultados dispares"
@@ -1915,7 +1924,7 @@
 	"DAC_EndGame_Anessix_does_bad_with_spirits"			"«Hobgen nos paga más» &#8213;Ember Spirit, hablando de por qué dejó morir a Anessix"
 	"DAC_EndGame_Anessix_does_bad_with_trolls"			"Los troles se niegan a cumplir con Anessix"
 	"DAC_EndGame_Anessix_does_bad_with_void"			"Anessix se queda mirando al Vacío... y la cosa no le funcionó"
-	"DAC_EndGame_Anessix_does_bad_with_vigilant"		"Anessix se esforzó por ser Vigía, pero no funcionó"
+	"DAC_EndGame_Anessix_does_bad_with_vigilant"		"Anessix se esforzó por ser vigía, pero no funcionó"
 	"DAC_EndGame_Anessix_does_bad_with_warlock"			"Los brujos se rebelan contra Anessix, se niegan a ayudarla a reclamar la victoria"
 	"DAC_EndGame_Anessix_does_bad_with_warrior"			"Anessix contrata a guerreros que no tenían interés en ganar"
 	"DAC_EndGame_Anessix_does_bad_with_summoners"		"Anessix contrata a B, que a su vez subcontrata a C"
@@ -1945,7 +1954,7 @@
 	"DAC_EndGame_Jull_win_with_spirits"					"Los hermanos espíritus ayudan a darle la victoria a Jull"
 	"DAC_EndGame_Jull_win_with_trolls"					"Jull lidera un ejército de troles para tomar el control de Agujablanca"
 	"DAC_EndGame_Jull_win_with_void"					"Jull recurre al Vacío para sellar su victoria"
-	"DAC_EndGame_Jull_win_with_vigilant"				"Al equipo de Vigías de Jull no le pueden pasar por encima"
+	"DAC_EndGame_Jull_win_with_vigilant"				"Al equipo de vigías de Jull no le pueden pasar por encima"
 	"DAC_EndGame_Jull_win_with_warlock"					"Los brujos de Jull urden un hechizo sobre Agujablanca"
 	"DAC_EndGame_Jull_win_with_warrior"					"Los matones de Jull dan palizas por todos lados"
 	"DAC_EndGame_Jull_win_with_summoners"				"Jull abruma a sus rivales con un ejército aparentemente interminable"
@@ -2001,7 +2010,7 @@
 	"DAC_EndGame_Jull_does_ok_with_spirits"				"Earth Spirit y Jull no consiguen golpear a suficiente gente"
 	"DAC_EndGame_Jull_does_ok_with_trolls"				"Jull y sus troles aliados no consiguen asegurarse la victoria"
 	"DAC_EndGame_Jull_does_ok_with_void"				"Jull se queda mirando al Vacío... y el Vacío le responde con un «Eh»"
-	"DAC_EndGame_Jull_does_ok_with_vigilant"			"Jull contrata a guardias Vigías cuya habilidad laboral es cuestionable"
+	"DAC_EndGame_Jull_does_ok_with_vigilant"			"Jull contrata a guardias vigías cuya habilidad laboral es cuestionable"
 	"DAC_EndGame_Jull_does_ok_with_warlock"				"Los brujos lanzan hechizos para Jull que resultan ser poco efectivos"
 	"DAC_EndGame_Jull_does_ok_with_warrior"				"Los guerreros de Jull luchan con fuerza, pero no la suficiente"
 	"DAC_EndGame_Jull_does_ok_with_summoners"			"Jull subcontrata su ejército y obtiene resultados dispares"
@@ -2029,7 +2038,7 @@
 	"DAC_EndGame_Jull_does_bad_with_spirits"			"«¿Ayudar a Jull?  Es un arrogante»  &#8213;Storm Spirit indicando por qué dejó que Jull muriese"
 	"DAC_EndGame_Jull_does_bad_with_trolls"				"Los troles se niegan a cumplir con Jull"
 	"DAC_EndGame_Jull_does_bad_with_void"				"Jull se queda mirando al Vacío... y la cosa no le funcionó"
-	"DAC_EndGame_Jull_does_bad_with_vigilant"			"Jull se esforzó por ser Vigía, pero no funcionó"
+	"DAC_EndGame_Jull_does_bad_with_vigilant"			"Jull se esforzó por ser vigía, pero no funcionó"
 	"DAC_EndGame_Jull_does_bad_with_warlock"			"Los brujos se rebelan contra Jull, se niegan a ayudarle a reclamar la victoria"
 	"DAC_EndGame_Jull_does_bad_with_warrior"			"Jull contrata a guerreros que no tenían interés en ganar"
 	"DAC_EndGame_Jull_does_bad_with_summoners"			"Jull contrata a B, que a su vez subcontrata a C"
@@ -2061,7 +2070,7 @@
 	"DAC_EndGame_Enno_win_with_spirits"					"Los hermanos espíritus ayudan a darle la victoria a Enno"
 	"DAC_EndGame_Enno_win_with_trolls"					"Enno lidera un ejército de troles para tomar control de Agujablanca"
 	"DAC_EndGame_Enno_win_with_void"					"Enno recurre al Vacío para sellar su victoria"
-	"DAC_EndGame_Enno_win_with_vigilant"				"Al equipo de Vigías de Enno no le pueden pasar por encima"
+	"DAC_EndGame_Enno_win_with_vigilant"				"Al equipo de vigías de Enno no le pueden pasar por encima"
 	"DAC_EndGame_Enno_win_with_warlock"					"Los brujos de Enno trenzan un hechizo sobre Agujablanca"
 	"DAC_EndGame_Enno_win_with_warrior"					"Los matones de Enno dan palizas por todos lados"
 	"DAC_EndGame_Enno_win_with_summoners"				"Enno abruma a sus rivales con un ejército aparentemente interminable"
@@ -2117,7 +2126,7 @@
 	"DAC_EndGame_Enno_does_ok_with_spirits"				"Earth Spirit y Enno no consiguen golpear a suficiente gente"
 	"DAC_EndGame_Enno_does_ok_with_trolls"				"Enno y sus troles aliados no consiguen asegurar la victoria"
 	"DAC_EndGame_Enno_does_ok_with_void"				"Enno se queda mirando al Vacío... y el Vacío le responde con un «Eh»"
-	"DAC_EndGame_Enno_does_ok_with_vigilant"			"Enno contrata a guardias Vigías cuya habilidad laboral es cuestionable"
+	"DAC_EndGame_Enno_does_ok_with_vigilant"			"Enno contrata a guardias vigías cuya habilidad laboral es cuestionable"
 	"DAC_EndGame_Enno_does_ok_with_warlock"				"Los brujos lanzan hechizos para Enno que resultan ser poco efectivos"
 	"DAC_EndGame_Enno_does_ok_with_warrior"				"Los guerreros de Enno luchan con fuerza, pero no la suficiente"
 	"DAC_EndGame_Enno_does_ok_with_summoners"			"Enno subcontrata su ejército y obtiene resultados dispares"
@@ -2145,7 +2154,7 @@
 	"DAC_EndGame_Enno_does_bad_with_spirits"			"«¿Ayudar a Enno? ¡Es un engreído!» &#8213;Storm Spirit, explicando porqué dejó morir a Enno"
 	"DAC_EndGame_Enno_does_bad_with_trolls"				"Los troles se niegan a cumplir con Enno"
 	"DAC_EndGame_Enno_does_bad_with_void"				"Enno se queda mirando al Vacío... y la cosa no le funcionó"
-	"DAC_EndGame_Enno_does_bad_with_vigilant"			"Enno se esforzó por ser Vigía, pero no funcionó"
+	"DAC_EndGame_Enno_does_bad_with_vigilant"			"Enno se esforzó por ser vigía, pero no funcionó"
 	"DAC_EndGame_Enno_does_bad_with_warlock"			"Los brujos se rebelan contra Enno, se niegan a ayudarle a reclamar la victoria"
 	"DAC_EndGame_Enno_does_bad_with_warrior"			"Enno contrata a guerreros que no tenían interés en ganar"
 	"DAC_EndGame_Enno_does_bad_with_summoners"			"Enno contrata a B, que a su vez subcontrata a C"
@@ -2207,6 +2216,20 @@
 	"DAC_Battlepass_YouHaveOneLockedReward"				"Tienes 1 recompensa bloqueada"
 	"DAC_Battlepass_YouHaveLockedRewards"				"Tienes {i:num_locked_rewards} recompensas bloqueadas"
 	"DAC_Purchase"										"Comprar"
+	"DAC_Battlepass_ItemOdds"							"Probabilidad de objetos"
+	
+	"DAC_ItemOdds_Title"								"Probabilidad de tesoro aleatorio"
+	"DAC_ItemOdds_BoardPropHeader"						"Probabilidad de decoraciones del tablero"
+	"DAC_ItemOdds_BoardPropDescription"					"Hay 20 objetos de tablero aleatorios en el pase de batalla. Estos se obtienen de una lista de 20 decoraciones del tablero (no hay duplicados). Los jugadores que compren el pase de batalla y alcancen el nivel 100 desbloquearán todas las decoraciones del tablero. 4 de las decoraciones aleatorias del tablero son gratuitas y se pueden desbloquear (junto con otras recompensas gratuitas) si es que el jugador llega al nivel adecuado del pase de batalla. Las decoraciones del tablero son totalmente estéticas y no afectan a la forma de juego."
+	"DAC_ItemOdds_StreetFightItemsHeader"				"Probabilidad de objetos de Lucha Callejera"
+	"DAC_ItemOdds_StreetFightItemsDescription"			"Hay 8 objetos aleatorios de Lucha Callejera en el pase de batalla y 40 objetos aleatorios de Lucha Callejera que se otorgan como recompensa en el «City Crawl», es decir 12 objetos por Underlord. Se extraen de una lista sin duplicados para cada Underlord, y las probabilidades son las mismas dentro de cada categoría. Estos objetos solo se pueden usar en las Luchas Callejeras del «City Crawl» (contenido para jugador individual) y no afectan a la forma de juego JcJ.
+
+Cada uno de los objetos de Underlord salen de listas idénticas y no están duplicados en cada lista. No obstante, distintos Underlords pueden sacar el mismo objeto. Entonces, no puedes sacar dos Claymores para Enno, pero sí es posible sacar una Claymore para Enno y otra para Anessix."
+	"DAC_ItemOdds_StreetFightItemsHeaderTier1"			"Objetos de categoría 1: 1 soltado por Underlord"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier2"			"Objetos de categoría 2: 3 soltados por Underlord"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier3"			"Objetos de categoría 3: 5 soltados por Underlord"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier4"			"Objetos de categoría 4: 2 soltados por Underlord"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier5"			"Objetos de categoría 5: 1 soltado por Underlord"
 
 	"GenericConfirmText_Label"							"Confirmar"
 	"DAC_PurchaseError_Title"		"No se puede comprar"
@@ -2434,8 +2457,8 @@
 	"DAC_Synergy_Tooltip_Goblin_1"		"Todas las unidades belicosas"
 	"DAC_Synergy_Tooltip_Goblin_2"		"Todos los aliados"
 
-	"DAC_Synergy_Tooltip_Vigilant_0"	"Unidades vigías aliadas"
-	"DAC_Synergy_Tooltip_Vigilant_1"	"Todas las unidades aliadas"
+	"DAC_Synergy_Tooltip_Vigilant_0"	"las unidades vigías aliadas"
+	"DAC_Synergy_Tooltip_Vigilant_1"	"todas las unidades aliadas"
 
 	"DAC_Synergy_Tooltip_Savage_0"				"Unidades salvajes aliadas"
 	"DAC_Synergy_Tooltip_Savage_1"				"Todos los héroes aliados"
@@ -2517,9 +2540,9 @@
 
 	"DAC_Synergy_Desc_Summoner"			"Las unidades invocadas aliadas obtienen un +{s:damage_percent}% de daño."
 	
-	"DAC_Synergy_Desc_Vigilant"			"Cada vez que una unidad enemiga lanza un hechizo, se convierte en el objetivo de {s:alliance_eligible}, si se encuentra a su alcance."
+	"DAC_Synergy_Desc_Vigilant"			"Cada vez que una unidad enemiga lanza un hechizo, se convierte en el objetivo de la alianza de {s:alliance_eligible}, si está a su alcance. El daño del siguiente ataque contra ese objetivo aumenta en un {s:damage_percent}%."
 	
-	"DAC_Synergy_Desc_Void"				"Todos los héroes aliados tienen un {s:proc_chance}% de probabilidad de infligir un {s:pure_damage_percent}% adicional de la vida máxima del objetivo como daño puro."
+	"DAC_Synergy_Desc_Void"				"Todos los héroes aliados tienen un {s:proc_chance}% de probabilidad de infligir un {s:pure_damage_percent}% de la vida máxima del objetivo como daño puro adicional."
 
 	"DAC_Synergy_Desc_MegaWarrior"		"Los aliados megaguerreros ganan +{s:armor_bonus} de armadura"
 	"DAC_Synergy_Desc_MegaWarlock"		"Al lanzar un megabrujo un hechizo queda vinculado al aliado con menos vida por 3 segundos. Si una de las unidades vinculadas inflige daño, ambas unidades se curan en un {s:lifesteal_pct}% del daño infligido."
@@ -3310,11 +3333,11 @@
 	"howto_chart_level"			"Nivel de jugador"
 	"howto_chart_xp"			"EXP necesaria"
 	"howto_unitchart_title"		"Probabilidades de la tienda según el nivel del jugador"
-	"howto_chart_units_1"		"Unidades de categoría 1"
-	"howto_chart_units_2"		"Unidades de categoría 2"
-	"howto_chart_units_3"		"Unidades de categoría 3"
-	"howto_chart_units_4"		"Unidades de categoría 4"
-	"howto_chart_units_5"		"Unidades de categoría 5"
+	"howto_chart_units_1"		"Unidades de cat. 1"
+	"howto_chart_units_2"		"Unidades de cat. 2"
+	"howto_chart_units_3"		"Unidades de cat. 3"
+	"howto_chart_units_4"		"Unidades de cat. 4"
+	"howto_chart_units_5"		"Unidades de cat. 5"
 	"howto_chart_level11_note"	"*Aplicable cuando el jugador alcanza nivel 10 y tiene el objeto «Un Criminal de Categoría»"
 	"howto_itemchart_title"		"Probabilidades de nivel de objeto por ronda de botín"
 	"howto_chart_round"			"Ronda de botín"
@@ -3511,7 +3534,7 @@
 	"dac_hotkey_scroll_camera_up_desc" 				"Mover la cámara más arriba"
 	"dac_hotkey_scroll_camera_down_desc" 			"Mover la cámara más abajo"
 	"dac_hotkey_tilt_camera_modifier_desc" 			"Mantener presionada para ajustar la cámara. Tocar para restablecer."
-
+	"dac_hotkey_board_spray_desc"					"Colocar el espray para el tablero donde el cursor."
 	"dac_hotkey_alliances_tab"						"Ver la pestaña de alianzas."
 	"dac_hotkey_dps_tab"							"Ver la pestaña de DPS."
 	"dac_hotkey_items_tab"							"Ver la pestaña de objetos."
@@ -3592,21 +3615,21 @@
 	"dac_scoreboard_totalgold"						"{i:net_worth}"
 
 	"DAC_Hero_Odds_XP"								"{i:xp}/{i:next_level_xp} EXP"
-	"DAC_Hero_Odds_Header"							"Probabilidad de que las unidades de la tienda aparezcan en:"
+	"DAC_Hero_Odds_Header"							"Probabilidad de aparición por categoría de unidades en la tienda:"
 
 	"DAC_Hero_Odds_Current_Level"					"Tu nivel actual"
-	"DAC_Hero_Odds_Tier1"							"Unidades de categoría 1: {s:odds_tier_1}%"
-	"DAC_Hero_Odds_Tier2"							"Unidades de categoría 2: {s:odds_tier_2}%"
-	"DAC_Hero_Odds_Tier3"							"Unidades de categoría 3: {s:odds_tier_3}%"
-	"DAC_Hero_Odds_Tier4"							"Unidades de categoría 4: {s:odds_tier_4}%"
-	"DAC_Hero_Odds_Tier5"							"Unidades Ases: {s:odds_tier_5}%"
+	"DAC_Hero_Odds_Tier1"							"Unidades de cat. 1: {s:odds_tier_1}%"
+	"DAC_Hero_Odds_Tier2"							"Unidades de cat. 2: {s:odds_tier_2}%"
+	"DAC_Hero_Odds_Tier3"							"Unidades de cat. 3: {s:odds_tier_3}%"
+	"DAC_Hero_Odds_Tier4"							"Unidades de cat. 4: {s:odds_tier_4}%"
+	"DAC_Hero_Odds_Tier5"							"Unidades de categoría 5: {s:odds_tier_5}%"
 
 	"DAC_Hero_Odds_Next_Level"						"El siguiente nivel"
-	"DAC_Hero_Odds_Tier1_Next"						"Unidades de categoría 1: {s:odds_tier_1_next}%"
-	"DAC_Hero_Odds_Tier2_Next"						"Unidades de categoría 2: {s:odds_tier_2_next}%"
-	"DAC_Hero_Odds_Tier3_Next"						"Unidades de categoría 3: {s:odds_tier_3_next}%"
-	"DAC_Hero_Odds_Tier4_Next"						"Unidades de categoría 4: {s:odds_tier_4_next}%"
-	"DAC_Hero_Odds_Tier5_Next"						"Unidades Ases: {s:odds_tier_5_next}%"
+	"DAC_Hero_Odds_Tier1_Next"						"Unidades de cat. 1: {s:odds_tier_1_next}%"
+	"DAC_Hero_Odds_Tier2_Next"						"Unidades de cat. 2: {s:odds_tier_2_next}%"
+	"DAC_Hero_Odds_Tier3_Next"						"Unidades de cat. 3: {s:odds_tier_3_next}%"
+	"DAC_Hero_Odds_Tier4_Next"						"Unidades de cat. 4: {s:odds_tier_4_next}%"
+	"DAC_Hero_Odds_Tier5_Next"						"Unidades de categoría 5: {s:odds_tier_5_next}%"
 
 	"DAC_Hero_Odds_Tier1_Short"							"{s:odds_tier_1}%"
 	"DAC_Hero_Odds_Tier2_Short"							"{s:odds_tier_2}%"
@@ -3633,7 +3656,8 @@
 	"DAC_CityCrawl_MostRecent"						"Más reciente"
 	"DAC_CityCrawl_RecommendedHeader"				"Más reciente:<br/><span class='RecommendedChallengeDesc'>{s:recommended_challenge}</span>"
 	"DAC_ChallengeGameModeRequirementsNotMet"		"Elige un modo de juego diferente para completar tu objetivo de «City Crawl»."
-	"DAC_ChallengeDifficultyRequirementsNotMet"		"Elige la dificultad extrema (EXP) para completar tu objetivo de «City Crawl»."
+	"DAC_ChallengeDifficultyRequirementsNotMet"		"Elige la dificultad extrema (EXP) del bot o juega en el modo multijugador para progresar en el pase de batalla."
+	"DAC_ChallengePrivateGameNotFull"				"Tu grupo debe estar completo para progresar en el pase de batalla."
 
 	"DAC_Challenge_DodgeAttacks_Desc"				"Elude {s:threshold} ataques."
 	"DAC_Challenge_CritAttacks_Desc"				"Consigue hacer {s:threshold} ataques críticos."
@@ -3781,10 +3805,11 @@
 	"DAC_LoadoutUnderlords"							"Equipamiento: Underlords"
 	"DAC_LoadoutGame"								"Equipamiento: Partida"
 	"DAC_LoadoutPlayer"								"Equipamiento: Jugador"
-	"DAC_LoadoutMapPropEditor"						"Cargar: editor de las decoraciones del mapa"
+	"DAC_LoadoutMapPropEditor"						"Equipamiento: Editor de decoración del tablero"
 
 	"DAC_LoadoutEquip"								"Equipar"
 	"DAC_LoadoutEquipped"							"Equipado"
+	"DAC_EditBoardProps"							"Editar decoraciones del tablero"
 	"DAC_LoadoutEquip_Popup_Close"					"Cerrar"
 	"DAC_LoadoutEquip_Failed_Title"					"Imposible equipar el objeto"
 	"DAC_LoadoutEquip_Failed_Body"					"El objeto no se puede equipar en este momento. Inténtalo más tarde."
@@ -3962,7 +3987,7 @@
 
 	"s1_title_row_1"			"Te damos la bienvenida a"
 	"s1_title_row_2"			"Agujablanca"
-	"s1_description"			"Con la muerte de Mamá Eeb la ciudad está lista para ser conquistada. Junta un equipo, métete en peleas y apodérate de Agujablanca en el <span class='Emphasis'>«City Crawl»</span>.<br><br>Completa los desafíos, juega partidas y gana recompensas en el <span class='Emphasis'>pase de batalla</span>. ¡Bienvenido a la temporada 1 de Underlords!"
+	"s1_description"			"Al morir Mamá Eeb la ciudad está sin gobernante. Junta un equipo, métete en peleas y apodérate de Agujablanca en el <span class='Emphasis'>«City Crawl»</span>.<br><br>Completa desafíos, lucha y gana recompensas en el <span class='Emphasis'>pase de batalla</span>. ¡Bienvenido a la temporada 1 de Underlords!"
 	"s1_play_trailer"			"Ver el avance"
 	"s1_ricky_beta_message"		"¡PSS, eh!, gracias por jugar a la beta. Recogí algunos regalitos para ti, como un regalo por volver a verte: ¡los tableros de la temporada beta, el título de un cartel y una estatua para tu tablero!"
 
@@ -4097,6 +4122,7 @@
 	"DAC_Challenge_Popup_2_Valid_Modes"		"Modos de juego validos: {s:game_mode_1}, {s:game_mode_2}"
 	"DAC_Challenge_Popup_1_Valid_Mode"		"Modos de juego validos: {s:game_mode_1}"
 	"DAC_challenge_map_city_key_count"		"{d:city_keys}"
+	"DAC_challenge_map_objectives_count"	"{d:city_objectives}"
 
 	"DAC_Area_Inventory_Title"				"Mochila:"
 	"DAC_Area_Inventory_Description"		"Tanto los {s:underlord_name} objetos que desbloqueas mediante Luchas Callejeras, como las recompensas del pase de batalla se pueden usar para mejorar a tu equipo en Luchas Callejeras futuras."
@@ -4378,6 +4404,7 @@
 	"DAC_Challenge_Street_Fight_Desc"			"¡Has completado la Lucha Callejera!"
 	"DAC_Challenge_Street_Fight_Lore"			"Grek.  Compañero.  Amigo.  Te deberías haber quedado amañando peleas... <i>&#8213;Hobgen, encargándose de un advenedizo</i>"
 
+	"DAC_Challenge_Puzzle_Desc"					"¡Rompecabezas completado!"
 	
 	"dac_challenge_difficulty_1"				"Fácil"
 	"dac_challenge_difficulty_2"				"Difícil"
@@ -4471,7 +4498,7 @@
 	"dac_underlord_picker_4_title"					"Pirómano a distancia"
 
 	"dac_underlord_picker_4_build_0_title"			"Infligidor de daño elevado"
-	"dac_underlord_picker_4_build_0_ability_desc"	"Laza bombas al tablero, infligiendo daño de área de efecto."
+	"dac_underlord_picker_4_build_0_ability_desc"	"Laza bombas al tablero, infligiendo daño de área."
 
 	"dac_underlord_picker_4_build_1_title"			"Repartidor de daño de apoyo"
 	"dac_underlord_picker_4_build_1_ability_desc"	"Hobgen es mejorado y el ejército completo gana velocidad de ataque."
@@ -5089,7 +5116,7 @@
 
 	"DAC_Challenge_Puzzle_s1_jull3_title"	"Objetivos confusos"
 	"DAC_Challenge_Puzzle_s1_jull3_quote"	"La gente viene al Luna Desgarrada porque pueden conseguir libaciones jamás vistas en ningún otro lugar. ¿Que mi cóctel a base de guardián de la plaga ha causado algunas bajas? Pues sí. Pero los que sobreviven hablan maravillas de la experiencia. <i>&#8213;Jull, barman letal</i>"
-	"DAC_Challenge_Puzzle_s1_jull3_lore"	"La incorporación de veneno de Guardián de la Plaga en sus cócteles, hizo que Jull consiguiera una silla entre las Orquídeas Blancas. Pero llamarlo un "cocktail" is generous... its basically just venom and Icewrack white."
+	"DAC_Challenge_Puzzle_s1_jull3_lore"	"La incorporación de veneno de Guardián de la Plaga en sus cócteles, ha hecho que Jull consiguiera un lugar entre las Orquídeas Blancas. Pero llamarlo «cóctel» es... generoso; pues básicamente es veneno con hielo de Icewrack."
 
 	"DAC_Challenge_Puzzle_s1_jull4_title"	"No se puede pasar por encima de Sven"
 	"DAC_Challenge_Puzzle_s1_jull4_quote"	"Encontraré una forma de resolver este problema... <i>&#8213;Jull, rompiendo barreras</i>"
@@ -5345,7 +5372,7 @@
 
 	"DAC_Challenge_Puzzle_s1_anessix2_title"	"Ahora los ves…"
 	"DAC_Challenge_Puzzle_s1_anessix2_quote"	"Los hermanos espíritus pretenden imponerme restricciones... Admiro su dedicación, pero detesto su deseo de aceptar la futilidad. <i>&#8213;Anessix, la Bane de los espíritus"
-	"DAC_Challenge_Puzzle_s1_anessix2_lore"		"Muchas fuerzas habían estado observando el ascenso al poder de Anessix, todos con preocupación... excepto los hermanos espíritus."
+	"DAC_Challenge_Puzzle_s1_anessix2_lore"		"Muchas fuerzas habían estado observando con preocupación el ascenso al poder de Anessix... pero solo los hermanos espíritus decidieron hacer algo al respecto."
 
 	"DAC_Challenge_Puzzle_s1_anessix3_title"	"Los sirvientes de los Gemelos Despellejados"
 	"DAC_Challenge_Puzzle_s1_anessix3_quote"	"Resistirse a mi reinado, si bien es esperable, siempre es una decepción. &#8213;La Corte de Ristul desvelando el conflicto con los Gemelos Despellejados"
@@ -5504,13 +5531,13 @@
 	"DAC_Challenge_Streetfight_bloodbounds_and_warlocks_Win"		"Las misteriosas desapariciones en Los Laberintos llegan a su fin cuando Enno expulsa a los brujos"
 	"DAC_Challenge_Streetfight_bloodbounds_and_warlocks_Lose"		"¡Rumor! Gigantes pútridos acechan Los Laberintos"
 	
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Title"		"Experimental Growth"
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Bot"		"Bloodbound Warlocks"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Title"		"Crecimiento experimental"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Bot"		"Brujos de pacto de sangre"
 	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_BotDesc"		"bloodbounds_and_warlock Desc"
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Lore"		"It's not unusual to see Warlocks turn to the Warrens when they are looking for \"volunteers\" for their experiments."
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Quote"		"In which Enno declares that life may be cheap in White Spire, but his people aren't for sale"
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Win"		"Mysterious disappearances in The Warrens comes to an end as Enno drives out Warlocks"
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Lose"		"Rumor! Fleshgrafted giants stalk The Warrens"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Lore"		"No es raro ver a los brujos recurrir a Los Laberintos cuando están buscando «voluntarios» para sus experimentos."
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Quote"		"Enno, declarando que la vida puede ser barata en Agujablanca, pero su gente no está a la venta"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Win"		"Las misteriosas desapariciones en Los Laberintos llegan a su fin cuando Enno expulsa a los brujos"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Lose"		"¡Rumor! Gigantes pútridos acechan Los Laberintos"
 	
 
 
@@ -5637,6 +5664,16 @@
 	"DAC_Challenge_Puzzle_intro_quote"			"Hobgen, Anessix, Jull y Enno estaban a punto de embarcarse en la más peligrosa de las conquistas territoriales. Hobgen tenía sus ojos puestos en Nuevo Tenebroso, los antiguos terrenos frecuentados por Momma Eeb. Jull ponía sus miras en Puerto Sombrío, en un esfuerzo por controlar la importación y la exportación. Anessix fijaba su atención en Pequeña Revtel y en todo el dinero y los secretos que albergaba.  Y Enno... Bueno, Enno se comportaba como Enno y esperaba convertirse en el soberano de Los Laberintos."
 	"DAC_Challenge_Puzzle_intro_lore"			"A quienes tenían la esperanza de sustituir a Eeb les esperaban muchas tribulaciones, más allá de la simple violencia callejera... les aguardaban escenarios y complicaciones que ni siquiera estos criminales experimentados podrían predecir."
 
+	// City Crawl Complete
+	
+	"DAC_citycrawl_complete_hobgen"				"Con Nuevo Tenebroso bajo su control, Hobgen aseguró una valiosa presencia en Agujablanca. Por ahora, el pirómano feérico lo celebra… ajeno a las difíciles decisiones con las que tendrá que enfrentarse durante los próximos meses."
+	"DAC_citycrawl_complete_jull"				"Jull ha celebrado su dominio sobre Puerto Sombrío de la manera más Jull posible: emborrachándose en la Luna Desgarrada. Tan inmerso estaba en sus juergas que incluso permitió a Axe volver a entrar en el bar. Circulan rumores de que Goodkind está trabajando, mientras hablamos, en un libro sobre esa noche de desenfreno."
+	"DAC_citycrawl_complete_enno"				"Ahora como Rey de Los Laberintos, Enno se enfrenta a una dura decisión… ¿se conforma con ser el soberano de los barrios pobres? ¿O buscará extender su alcance aún más allá…? Solo el tiempo lo dirá."
+	"DAC_citycrawl_complete_anessix"			"Los agentes de Anessix se abrieron paso por toda Pequeña Revtel, creando una poderosa red de secretos y de confidentes. Pero la demonio terrenal no estaba satisfecha… Estaba jugando un peligroso juego con la Corte de Ristul y si descubrieran sus intenciones, todo lo que ha construido se reduciría a cenizas."
+	"DAC_citycrawl_complete_all"				"Se han trazado líneas territoriales, pero la historia de Agujablanca apenas está comenzando. La ciudad de los placeres abyectos tiene tantos enemigos como secretos… y es solo cuestión de tiempo antes de que salgan a la luz."
+
+
+	
 	
 }
 

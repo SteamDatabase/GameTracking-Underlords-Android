@@ -366,7 +366,7 @@
 		
 		//BLOODSEEKER
 		"dac_ability_bloodseeker_blood_rage"									"ブラッドレイジ"
-		"dac_ability_bloodseeker_blood_rage_Description"						"パッシブ：ブラッドシーカーは毎秒、その最大ヘルスの{s:self_dmg_pct}%に等しいダメージを受ける。<br><br>ヘルスが失われるごとに攻撃速度が増す（最大は{s:min_health_pct}%のヘルスで{s:attack_speed_bonus_max}）。<br><br>近接する敵が死ぬと、最大ヘルスの{s:heal_pct}%を回復する。"
+		"dac_ability_bloodseeker_blood_rage_Description"						"パッシブ：ブラッドシーカーは敵のヘルスが下がると、ヘルスの{s:min_health_pct}%、最大{s:attack_speed_bonus_max}の攻撃速度を得る。<br><br>ブラッドシーカーが対象を倒すと、最大ヘルスの{s:heal_pct}%を回復する。"
 		"dac_ability_bloodseeker_blood_rage_Lore"								"この商売から学んだことがあるとすれば…人は血を見るのが好きだってことだ。この男を雇え。— <i>グレック、決断力ある興行主</i>"
 		
 		//ARC WARDEN
@@ -376,7 +376,7 @@
 		
 		//ARC WARDEN
 		"dac_ability_arc_warden_tempest_double_no_items"						"電磁波分身"
-		"dac_ability_arc_warden_tempest_double_no_items_Description"			"アークウォーデンは自身の現在のヘルスを持つ複製を作り出す。"
+		"dac_ability_arc_warden_tempest_double_no_items_Description"			"アークウォーデンは自身の現在のヘルスと同じ複製を作り出す。クローンの与ダメージは{s:clone_dmg_reduction}%削減される。"
 		"dac_ability_arc_warden_tempest_double_no_items_Lore"					"彼は創造の神秘をもたらす。— <i>トゥラス、謎めいた預言者</i>"
 
 		//MIRANA
@@ -410,7 +410,7 @@
 
 		// Lone Druid Bear
 		"dac_ability_lone_druid_spirit_bear_entangle"							"からみつく爪"
-		"dac_ability_lone_druid_spirit_bear_entangle_description"				"スピリットベアの攻撃は対象にからみつき、スタンを与える可能性がある。"
+		"dac_ability_lone_druid_spirit_bear_entangle_description"				"スピリットベアの攻撃は対象にからみつき、ルート状態にし武装解除する。"
 		"dac_ability_lone_druid_spirit_bear_entangle_lore"						" "
 
 		// THUNDER LIZARD BLOODLUST

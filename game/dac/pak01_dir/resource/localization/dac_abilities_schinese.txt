@@ -146,7 +146,7 @@
 
 		//ENIGMA
 		"dac_ability_enigma_midnight_pulse"										"午夜凋零"
-		"dac_ability_enigma_midnight_pulse_Description"							"谜团将生命值最高敌人所在的区域浸入黑暗共振中，对目标周围最多 {s:radius} 格内的所有敌方单位造成其最大生命值 {s:damage_percent}% 的伤害，持续 {s:duration} 秒，并使其减速 {s:slow_percent}%。"
+		"dac_ability_enigma_midnight_pulse_Description"							"谜团将最大生命值最高敌人所在的区域浸入黑暗共振中，对目标周围最多 {s:radius} 格内的所有敌方单位造成其最大生命值 {s:damage_percent}% 的伤害，持续 {s:duration} 秒，并使其减速 {s:slow_percent}%。"
 		"dac_ability_enigma_midnight_pulse_Lore"								"这世上有些事情是你无法控制的。- <i>疯法师塔拉什</i>"
 
 		//TINKER
@@ -366,7 +366,7 @@
 		
 		//BLOODSEEKER
 		"dac_ability_bloodseeker_blood_rage"									"血怒"
-		"dac_ability_bloodseeker_blood_rage_Description"						"被动：血魔每秒受到的伤害相当于其最大生命值的 {s:self_dmg_pct}%。<br><br>血魔损失生命值时，获得攻击速度加成，最多可在剩余 {s:min_health_pct}% 生命值时获得 {s:attack_speed_bonus_max} 攻击速度加成。<br><br>毗邻敌人死亡时，恢复最大生命值的 {s:heal_pct}%。"
+		"dac_ability_bloodseeker_blood_rage_Description"						"被动：敌人生命值降低时，血魔获得攻击速度加成，最多可在剩余 {s:min_health_pct}% 生命值时获得 {s:attack_speed_bonus_max} 攻击速度加成。<br><br>血魔每击杀一个目标，就获得他们最大生命值的 {s:heal_pct}%。"
 		"dac_ability_bloodseeker_blood_rage_Lore"								"要说我干这一行学到了什么，那就是人人嗜血。雇用这个家伙吧。- <i>果断的煽动者格瑞克</i>"
 		
 		//ARC WARDEN
@@ -376,7 +376,7 @@
 		
 		//ARC WARDEN
 		"dac_ability_arc_warden_tempest_double_no_items"						"风暴双雄"
-		"dac_ability_arc_warden_tempest_double_no_items_Description"			"天穹守望者自我复制，复制体具有当前相同生命值。"
+		"dac_ability_arc_warden_tempest_double_no_items_Description"			"天穹守望者自我复制，复制体具有当前相同生命值。复制体造成的伤害减少 {s:clone_dmg_reduction}%。"
 		"dac_ability_arc_warden_tempest_double_no_items_Lore"					"他带来了造物的奥秘。- <i>隐秘的预言家塔拉什</i>"
 
 		//MIRANA
@@ -410,7 +410,7 @@
 
 		// Lone Druid Bear
 		"dac_ability_lone_druid_spirit_bear_entangle"							"缠绕之爪"
-		"dac_ability_lone_druid_spirit_bear_entangle_description"				"熊灵在攻击时有机会缠绕住目标，使其眩晕。"
+		"dac_ability_lone_druid_spirit_bear_entangle_description"				"熊灵在攻击时有机会缠绕住目标，缠绕对方并使其缴械。"
 		"dac_ability_lone_druid_spirit_bear_entangle_lore"						" "
 
 		// THUNDER LIZARD BLOODLUST

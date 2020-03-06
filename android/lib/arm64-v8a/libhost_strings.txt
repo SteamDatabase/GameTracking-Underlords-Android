@@ -330,7 +330,6 @@ $0 to $1,
 20DACTutorialDef_State
 20IGameSystem2HostHook
 20IResourceTypeManager
-2	1+9s
 21CEntityMessageDoSpark
 21CGCMsgMemCachedDelete
 21CGCToGCMsgRoutedReply
@@ -594,7 +593,7 @@ $0 to $1,
 29CMsgSOCacheSubscribedUpToDate
 29CResourceManifestPrerequisite
 29CSOEconItemTournamentPassport
-2	!,9D
+2	a,9D
 2A9i2
 2	AA9
 2A.CWorkshop_PopulateItemDescriptions_Request.SingleItemDescription"F
@@ -698,18 +697,19 @@ $0 to $1,
 2>.CWorkshop_SetItemPaymentRules_Request.WorkshopItemPaymentRule
 2GAME_PARTICLE_MANAGER_EVENT_UPDATE_ENTITY_POSITION
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
+2H379
 	2	i*
 2I.CWorkshop_PopulateItemDescriptions_Request.ItemDescriptionsLanguageBlock
 2+imx
 2j"@9)p
 2?"!k`
-2?k78
-2_k88
-2?k88
+2?k78?
+2?k88>
+2_k88g
 2k_EGCMsgInitiateTradeResponse_VAC_Banned_Initiator
 2k_ItemPurgatoryResponse_Finalize_Failed_Incomplete
 2ninx
-2	q*9
+2	q+9s
 2Way_0( %s )
 2Way_1( %s )
 2x"@9
@@ -978,7 +978,6 @@ $0 to $1,
 4k_EGCMsgInitiateTradeResponse_Trade_Banned_Initiator
 #4#.n<
 4n&	&
-4W	@7
 50CMsgClientToServerLocalPlayerInventory_LoadoutItem
 50CUserMessageCameraTransition_Transition_DataDriven
 50CUserMsg_ParticleManager_SetParticleShouldCheckFoW
@@ -1206,6 +1205,7 @@ _6v:@
 '6vj@
 6	x@9
 6x"@9
+6Y3w9
 72CWorkshop_PopulateItemDescriptions_Request_ItemDescriptionsLanguageBlock
  74	(74
 74	 74
@@ -1263,7 +1263,6 @@ _6v:@
 7hF@9
 @7h	H7
 7hR@9
-7hR@9h	
 7ib@9
 7iB@9
 7ib@9i
@@ -1271,7 +1270,6 @@ _6v:@
 7IF 7
 (7w"@
 @7w:@
-7w	 7
 7W	 7w
 7W	`7W
  7wB@
@@ -1370,7 +1368,6 @@ _8o%@8
 A-!(!
 a2@yh2@y
 +a@9?
-	a@9	
 a	@9?
 (A@9(
 		A9?
@@ -1414,6 +1411,7 @@ abort
 AbsolutePoseControl
 absolute_timeout
 abs( %s )
+	aC9	
 acceleration
 accept
 Access of unconnected ConVarRef
@@ -1512,6 +1510,7 @@ AE_ZOMBIE_TOGGLE_HEAD
 affects_all_allied_summons_of_keyword_and_allied_heroes
 affects_all_allied_units
 affects_all_allies_with_keyword
+affects_all_allies_with_keyword_and_all_summons
 affects_all_enemies_with_keyword
 affects_all_enemy_units
 affects_random_ally
@@ -1616,7 +1615,6 @@ APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 APPSYSTEM: In ReconnectGameInterface(), tried to use different connection modes!
  a protocol 
 A protocol message was rejected because it was too big (more than 
-	Aq9	
 archive
  args were given.  Full format string was: "
 armor
@@ -1809,7 +1807,6 @@ bytes_read
 bytes_written
 .C))}
 C-2-@
-	!C9	
 (C@9h
 cA9s~
 cable
@@ -1867,6 +1864,7 @@ $CBroadcast_PostGameDataFrame_Request
 CBufferString
 CBufferStringN
 cc_enable_arenas
+CCGameModelInfo::GetModelIndex() Lazy loading mode
 cc_generic_services
 CClientReconnectInfo
 CCommand::Tokenize: Encountered command which overflows the argument buffer.. Clamped!
@@ -1935,7 +1933,6 @@ CGCToGCMsgMasterAck_Response
 CGCToGCMsgMasterStartupComplete
 CGCToGCMsgRouted
 CGCToGCMsgRoutedReply
-CGetModelMaterialColor:  Available on client only!
 	Challenge
 challenge_id
 challenges
@@ -2921,6 +2918,7 @@ __cxa_pure_virtual
 cycle
 Cycle or diamond double-reference to '%s'
  D-	(@
+	!D9	
 DACAbilityID_t
 dac/dac_gamedefinitions.cpp
 dac/dac_gamemanager.cpp
@@ -3694,6 +3692,7 @@ FlattenedSerializersVersion001
 Flexible; 
 float
 float( %f )
+float_kill_count
 float_value
 fltx4
 F_MORPH_SUPPORTED
@@ -3987,6 +3986,7 @@ GetInt64
 "GetMapData"
 GetMessage
 get_misses
+GetModelMaterialColor:  Available on client only!
 get_params
 GetRawRepeatedField
 "GetRawRepeatedField"
@@ -4063,18 +4063,16 @@ h6iz@
 h6jF@
 H6u2@
 h6uB@
-h77	p7
 $H77'P7W*X7w-`7
 H7h	P7(
 H7t	P7
 H7t	P7i
 h7u	p7
-h7U	p7
+h7W	p7
 H7x"@
 H7xR@
 h)8Ay)
 h"@9)
-h"@9	
 h"@9h
 h*@9h/
 h.@9H
@@ -4141,7 +4139,7 @@ hintWords
 	histogram
 HistogramBucket
 histogram_buckets
-hj58ji
+hj58jm
 	hold_time
 host_computationtime
 "host_computationtime_std_deviation
@@ -4152,7 +4150,6 @@ host_frametime_std_deviation
 hostname
 HostStateMgr001
 HostUtils001
-hr{9H
 HSCRIPT
 hurt_me
 hurt_them
@@ -4469,6 +4466,7 @@ iw8B/
 i>@yh
 IyixJylx+
 j2?)?
+j38Gn
 j48	C
 j48t^@
 j4xH;@
@@ -4515,11 +4513,10 @@ JYix*$
 	*jz-
 *k2@y
 ?k58D
-*?k78,
+*?k78
 ?k78h
-?k78l
 k78o_
-_k88)
+k<8Kp
 k(8vV@
 Ka@9+
 Ka@9k
@@ -6199,7 +6196,6 @@ P6h^@
 p6hF@
 P6hN@
 p6hvA
-p6hVA9
 P6hzB9	6
 P6i6@
 p6iv@
@@ -6612,7 +6608,7 @@ right
 rights_flags
 Rigid; 
 rJMJJ
-R?k786
+R?k78
 Rmij8
 rnd_down
 rnd_up
@@ -6639,7 +6635,6 @@ rt_birth_date
 rt_identity_linked
 rtime_oldest_date
 rtime_vacban_starts
-rtr;9
 rule_description
 rules
 	rule_type
@@ -7641,6 +7636,7 @@ W6hFA9
 W6hJB9	4
 w6hv@
 w6hvA
+w6hVA9
 W6hzB9
 w6hZB9	2
 W6i~@
@@ -7718,6 +7714,7 @@ wrong submessage type
 X6h^@
 X6h~B9
 x6hJ@
+x6hZ@
 X6i:@
 x6iz@
 x6iZ@
@@ -7746,7 +7743,6 @@ yielding_jobs
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 @y(Q*
 Y`x($
-y[(x9
 _Z13V_SplitStringPKcS0_R10CUtlVectorIPc10CUtlMemoryIS2_iEE
 _Z14V_stristr_fastPKcS0_
 _Z17LoggingSystem_Logi17LoggingSeverity_tRK14LeafCodeInfo_tPKcz

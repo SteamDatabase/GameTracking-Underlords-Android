@@ -10130,6 +10130,7 @@
 			"item_description"		"#DAC_Item_S1TargetBuddySkin04_desc"
 			"event_id"		"2"
 			"image_inventory"		"battle_pass/bp1/items/target_buddy_04"
+			"model_scale"		"0.800000"
 			"model_player"		"models/props_gameplay/dummy/dummy_snowperson.vmdl"
 			"clicks_to_destroy"		"6"
 			"visuals"
@@ -10569,12 +10570,6 @@
 			{
 				"asset_modifier0"
 				{
-					"type"		"particle"
-					"asset"		"particles/ui/end_of_round/victory/eor_victory_hero.vpcf"
-					"modifier"		"econ/s0/particles/ui/end_of_round/victory/hearts/eor_victory_hero_variant_hearts.vpcf"
-				}
-				"asset_modifier1"
-				{
 					"type"		"model_skin"
 					"modifier"		"s1_boss_p1"
 				}
@@ -10594,12 +10589,6 @@
 			"visuals"
 			{
 				"asset_modifier0"
-				{
-					"type"		"particle"
-					"asset"		"particles/ui/end_of_round/victory/eor_victory_hero.vpcf"
-					"modifier"		"econ/s0/particles/ui/end_of_round/victory/hearts/eor_victory_hero_variant_hearts.vpcf"
-				}
-				"asset_modifier1"
 				{
 					"type"		"model_skin"
 					"modifier"		"s1_boss_battle_p1"
@@ -10621,12 +10610,6 @@
 			{
 				"asset_modifier0"
 				{
-					"type"		"particle"
-					"asset"		"particles/ui/end_of_round/victory/eor_victory_hero.vpcf"
-					"modifier"		"econ/s0/particles/ui/end_of_round/victory/hearts/eor_victory_hero_variant_hearts.vpcf"
-				}
-				"asset_modifier1"
-				{
 					"type"		"model_skin"
 					"modifier"		"s1_stud_p1"
 				}
@@ -10646,12 +10629,6 @@
 			"visuals"
 			{
 				"asset_modifier0"
-				{
-					"type"		"particle"
-					"asset"		"particles/ui/end_of_round/victory/eor_victory_hero.vpcf"
-					"modifier"		"econ/s0/particles/ui/end_of_round/victory/hearts/eor_victory_hero_variant_hearts.vpcf"
-				}
-				"asset_modifier1"
 				{
 					"type"		"model_skin"
 					"modifier"		"s1_stud_battle_p1"
@@ -10748,12 +10725,6 @@
 			{
 				"asset_modifier0"
 				{
-					"type"		"particle"
-					"asset"		"particles/ui/end_of_round/victory/eor_victory_hero.vpcf"
-					"modifier"		"econ/s0/particles/ui/end_of_round/victory/hearts/eor_victory_hero_variant_hearts.vpcf"
-				}
-				"asset_modifier1"
-				{
 					"type"		"model_skin"
 					"modifier"		"s1_circus_p1"
 				}
@@ -10774,12 +10745,6 @@
 			{
 				"asset_modifier0"
 				{
-					"type"		"particle"
-					"asset"		"particles/ui/end_of_round/victory/eor_victory_hero.vpcf"
-					"modifier"		"econ/s0/particles/ui/end_of_round/victory/hearts/eor_victory_hero_variant_hearts.vpcf"
-				}
-				"asset_modifier1"
-				{
 					"type"		"model_skin"
 					"modifier"		"s1_pajamas_p1"
 				}
@@ -10799,12 +10764,6 @@
 			"visuals"
 			{
 				"asset_modifier0"
-				{
-					"type"		"particle"
-					"asset"		"particles/ui/end_of_round/victory/eor_victory_hero.vpcf"
-					"modifier"		"econ/s0/particles/ui/end_of_round/victory/hearts/eor_victory_hero_variant_hearts.vpcf"
-				}
-				"asset_modifier1"
 				{
 					"type"		"model_skin"
 					"modifier"		"s1_jailbird_p1"
@@ -13107,8 +13066,16 @@
 			"item_name"		"#DAC_Item_S1UnderlordTitle_Default_15"
 			"item_description"		"#DAC_Item_S1UnderlordTitleDesc_Default_15"
 			"event_id"		"2"
-			"panorama_class"		"poster_title;black_title"
-			"image_inventory"		"econ/s1/posters/titles/underlord_title_anessix.psd"
+			"panorama_class"		"poster_title;white_title"
+			"image_inventory"		"econ/s1/posters/titles/underlord_title_anessix_quarter.psd"
+			"visuals"
+			{
+				"asset_modifier"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/ui/titles/anessix/titles_anessix_sparkles.vpcf"
+				}
+			}
 		}
 		"12666"
 		{
@@ -13118,8 +13085,16 @@
 			"item_name"		"#DAC_Item_S1UnderlordTitle_Default_16"
 			"item_description"		"#DAC_Item_S1UnderlordTitleDesc_Default_16"
 			"event_id"		"2"
-			"panorama_class"		"poster_title;white_title"
-			"image_inventory"		"econ/s1/posters/titles/underlord_title_jull.psd"
+			"panorama_class"		"poster_title;black_title"
+			"image_inventory"		"econ/s1/posters/titles/underlord_title_jull_quarter.psd"
+			"visuals"
+			{
+				"asset_modifier"
+				{
+					"type"		"particle_create"
+					"modifier"		"particles/ui/titles/jull/titles_jull_sparkles.vpcf"
+				}
+			}
 		}
 		"12667"
 		{
@@ -13148,14 +13123,14 @@
 			"item_name"		"#DAC_Item_S1UnderlordTitle_Default_18"
 			"item_description"		"#DAC_Item_S1UnderlordTitleDesc_Default_18"
 			"event_id"		"2"
-			"panorama_class"		"poster_title;black_title"
-			"image_inventory"		"econ/s1/posters/titles/underlord_title_enno.psd"
+			"panorama_class"		"poster_title;white_title"
+			"image_inventory"		"econ/s1/posters/titles/underlord_title_enno_quarter.psd"
 			"visuals"
 			{
 				"asset_modifier"
 				{
 					"type"		"particle_create"
-					"modifier"		"particles/ui/titles/moneyman/titles_moneyman.vpcf"
+					"modifier"		"particles/ui/titles/moneyman/titles_moneyman_sparkles.vpcf"
 				}
 			}
 		}
@@ -13290,7 +13265,7 @@
 			"item_name"		"#DAC_Item_S1UnderlordTitle_Default_31"
 			"item_description"		"#DAC_Item_S1UnderlordTitleDesc_Default_31"
 			"event_id"		"2"
-			"panorama_class"		"poster_title;black_title"
+			"panorama_class"		"poster_title;white_title"
 			"image_inventory"		"econ/s1/posters/titles/underlord_title_beta.psd"
 		}
 		"12901"

@@ -163,7 +163,7 @@
 	"DAC_Popup_ChinaDurationControlTimeOut_Body"			"Olet pelannut alaikäiselle sallitun enimmäisajan. Kaikki verkkopelit ovat pois käytöstä huomisaamuun asti tai kunnes olet pitänyt riittävän pitkän tauon."
 
 	"DAC_Popup_DisconnectListenServer_Header"			"Haluatko poistua pelistä?"
-	"DAC_Popup_DisconnectListenServer_Body"				"Edistymisesi tallentuu automattisesti jokaisen valmisteluvaihetoiminnon jälkeen. Haluatko jatkaa päävalikkoon?"
+	"DAC_Popup_DisconnectListenServer_Body"				"Edistymisesi tallentuu automaattisesti jokaisen valmisteluvaihetoiminnon jälkeen. Haluatko jatkaa päävalikkoon?"
 	"DAC_Popup_DisconnectListenServerTutorial_Body"		"Jatkatko päävalikkoon?"
 
 	"DAC_Popup_QuitPuzzle_Header"						"Poistu pulmasta"
@@ -240,6 +240,9 @@
 	"DAC_PurchaseEvent_AlreadyOwned"					"Omistat jo tämän kauden"	
 	"DAC_PurchaseEvent_SuccessTitle"					"Onnistui"
 	"DAC_PurchaseEvent_SuccessBody"						"Olet onnistuneesti ostanut taistelupassin!"
+	"StoreCheckout_Error_Title"							"Virhe"
+	"StoreCheckout_CannotPurchase"						"Tuotetta ei voi ostaa."
+
 
 
 	"DAC_PurchaseEventCurrency_ErrorTitle"				"Virhe"
@@ -500,6 +503,7 @@
 	"DAC_GenericError_RegionInfoNotProvided"			"Pelataksesi verkossa sinun pitää rekisteröidä tilisi."
 	"DAC_GenericError_DurationControlBlocked"				"Olet ylittänyt sallitun verkkopeliaikasi."
 
+	"DAC_PurchaseError_NotSignedIn"						"Jotta voit tehdä ostoksia, sinun täytyy olla kirjautuneena Steamiin."
 	"DAC_PurchaseError_NotConnectedToGC"				"Sinun pitää olla yhteydessä Dota Underlords -verkkoon tehdäksesi ostoja"
 	"DAC_PurchaseError_NoResponse"						"Dota Underlords -verkkoon ei saada yhteyttä. Yritä muutaman minuutin kuluttua uudelleen."
 	"DAC_PurchaseError_InternalError"					"Tapahtui odottamaton virhe, kun yritimme vahvistaa, että tämä esine voidaan ostaa. Yritä myöhemmin uudelleen."
@@ -512,6 +516,11 @@
 	"DAC_PurchaseError_InvalidQuantity"					"Valittu määrä ei kelpaa tälle esineelle."
 	"DAC_PurchaseError_OutstandingReservations"			"Tälle esineelle on jo ostoja jonossa. Tyhjennä ne jonosta tai osta ne, jotta voit ostaa muita esineitä."
 	"DAC_PurchaseError_ExceedsCreditLimit"				"Sinulla on jo liian paljon käyttämätöntä krediittiä tällä tilillä. Käytä ne ennen kuin ostat uusia."
+
+	"DAC_PurchaseError_InternalStore"					"Tätä tuotetta ostaessa tapahtui odottamaton virhe."
+	"DAC_PurchaseError_CannotPurchase"					"Tällä tilillä ei voi tehdä ostoksia."
+	"DAC_PurchaseError_MissingItem"						"Tapahtui odottamaton virhe. Tuote puuttuu."
+	"DAC_PurchaseError_Cancelled"						"Osto peruttiin."
 
 	"DAC_ReservationError_NoResponse"					"Dota Underlords -verkkoon ei saada yhteyttä. Yritä muutaman minuutin kuluttua uudelleen."
 	"DAC_ReservationError_InternalError"				"Tapahtui odottamaton virhe. Yritä myöhemmin uudelleen."
@@ -853,7 +862,7 @@
 	"dac_hero_hint_jumping_movement"					"Hyökkää vihollisia kohti"
 	"dac_hero_hint_teleport_movement"					"Teleporttaa vihollisia kohti"
 	"dac_hero_hint_high_single_target_damage"			"Iso vahinko yhdelle kohteelle"
-	"dac_hero_hint_high_group_damage"					"Iso vahinko usealle kohteelle"
+	"dac_hero_hint_high_group_damage"					"Korkea ryhmävahinko"
 	"dac_hero_hint_aoe_ministun"						"Minitainnuttaa lähellä olevat viholliset"
 	"dac_hero_hint_freezes_enemies"						"Jäädyttää vihollisia"
 	"dac_hero_hint_aoe_silence"							"Laajan alueen hiljennys"
@@ -1430,7 +1439,7 @@
 	"DAC_Home_ForceMatch"								"Pakota peli"
 	"DAC_Home_Quit"										"Lopeta"
 	"DAC_Home_Tutorial"									"Pelaa opetuspeliä"
-	"DAC_Home_SubmitFeedbackIntro"						"Tervetuloa Dota Underlords -pelin betakaudelle."
+	"DAC_Home_SubmitFeedbackIntro"						"Tervetuloa Dota Underlords -pelin beta-kaudelle."
 	"DAC_Home_Underlords"								"Underlordit"
 
 	"mmr_change_prediction_title"						"Rank-pisteesi tästä pelistä:"
@@ -1559,7 +1568,7 @@
 	"DAC_InGame_UnitDPS_Query"							"Vahinkoa/s: <span class=\"Count\">{i:attack_dps}</span>"
 	"DAC_InGame_UnitHP_Query"							"Terveys: <span class=\"Count\">{i:selectedUnitHP}</span>"
 	"DAC_InGame_UnitArmor_Query"						"Panssaria: <span class=\"Count\">{i:selectedUnitArmor}{s:selectedUnitBonusArmor}</span>"
-	"DAC_InGame_KillCount_Query"						"Tappoja: <span class=\"Count\">{d:kill_count}</span>"
+	"DAC_InGame_KillCount_Query"						"Tappoja: <span class=\"Count\">{f:kill_count}</span>"
 	"DAC_InGame_KillStreak_Query"						"Tappoputki: <span class=\"Count\">{d:kill_streak}</span>"
 	"DAC_InGame_DuelBonusDamage_Query"					"Lisävahinkoa kaksintaisteluissa: <span class=\"Count\">{d:duel_bonus_damage}</span>"
 	"DAC_InGame_BrawnyKillCount_Query"						"Pullistelijoiden tappoja yhteensä: <span class=\"Count\">{f:brawny_kills}</span>"
@@ -2208,6 +2217,20 @@
 	"DAC_Battlepass_YouHaveOneLockedReward"				"Sinulla on 1 lukittu palkinto"
 	"DAC_Battlepass_YouHaveLockedRewards"				"Sinulla on {i:num_locked_rewards} lukittua palkintoa"
 	"DAC_Purchase"										"Osta"
+	"DAC_Battlepass_ItemOdds"							"Esineiden todennäköisyydet"
+	
+	"DAC_ItemOdds_Title"								"Satunnaisen aarteen todennäköisyydet"
+	"DAC_ItemOdds_BoardPropHeader"						"Pelilaudan rekvisiitan todennäköisyydet"
+	"DAC_ItemOdds_BoardPropDescription"					"Taistelupassissa on 20 satunnaista pelilaudan rekvisiittaa. Ne haetaan 20 pelilaudan rekvisiitan listasta, jossa kutakin esinettä on vain yksi. Taistelupassin ostaneet tasolle 100 pääsevät pelaajat avaavat kaikki pelilaudan rekvisiitat. Pelilaudan satunnaisista rekvisiitoista neljä on ilmaisia, ja ne voidaan avata (muiden ilmaisten palkintojen lisäksi), jos pelaaja saavuttaa tietyn taistelupassin tason. Pelilaudan rekvisiitat ovat ainoastaan kosmeettisia esineitä eivätkä vaikuta pelin kulkuun."
+	"DAC_ItemOdds_StreetFightItemsHeader"				"Katutaisteluesineiden todennäköisyydet"
+	"DAC_ItemOdds_StreetFightItemsDescription"			"Taistelupassissa on 8 satunnaista katutaisteluesinettä ja 40 satunnaista kaupunkikierroksessa palkinnoksi saatavaa katutaisteluesinettä – 12 esinettä underlordia kohti. Nämä haetaan jokaiselle underlordille listalta, jossa on vain yksi kutakin esinettä. Samalla tasolla olevien esineiden esiintymistodennäköisyys on aina sama. Esineitä voi käyttää ainoastaan kaupunkikierroksen katutaisteluissa (yksinpelin sisältö), eivätkä ne vaikuta pelaaja vastaan pelaaja -peleihin.
+
+Jokaisella underlordilla on identtinen esinelista, jolla kutakin esinettä on vain yksi. Eri underlordit voivat saada kuitenkin saman esineen. Eli et voi saada kahta Claymorea Ennolle, mutta voit saada Claymoren Ennolle ja toisen Anessixelle."
+	"DAC_ItemOdds_StreetFightItemsHeaderTier1"			"1. tason esineet: 1 esinemyöntö underlordia kohti"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier2"			"2. tason esineet: 3 esinemyöntöä underlordia kohti"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier3"			"3. tason esineet: 5 esinemyöntöä underlordia kohti"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier4"			"4. tason esineet: 2 esinemyöntöä underlordia kohti"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier5"			"5. tason esineet: 1 esinemyöntö underlordia kohti"
 
 	"GenericConfirmText_Label"							"Vahvista"
 	"DAC_PurchaseError_Title"		"Ei voi ostaa"
@@ -2254,7 +2277,7 @@
 	"DAC_ChallengeWorldMapPage"							"Kaupunkikierros"
 	"DAC_CityCrawlObjectives"							"Kaupunkierroksen tehtävät"
 	"DAC_ChallengeWorldMapPage_Challenges"				"{d:city_crawl_challenges_available} aktiivista tehtävää"
-	"DAC_ChallengeWorldMapPage_ClaimableChallenges"		"{d:city_crawl_challenges_claimable} lunastettavaa tehtävää"
+	"DAC_ChallengeWorldMapPage_ClaimableChallenges"		"{d:city_crawl_challenges_claimable} lunastettava(a) tehtävä(ä)"
 	"DAC_CityCrawlButtonNeedsSteam"						"Vaatii Steam-kirjautumisen"
 
 	"DAC_Zoo_PostGame_GameMode"							"Pelitila"
@@ -2435,8 +2458,8 @@
 	"DAC_Synergy_Tooltip_Goblin_1"		"Kaikki riidankylväjät"
 	"DAC_Synergy_Tooltip_Goblin_2"		"Kaikki liittolaiset"
 
-	"DAC_Synergy_Tooltip_Vigilant_0"	"Liittoutuneet suojelijat"
-	"DAC_Synergy_Tooltip_Vigilant_1"	"Kaikki liittolaiset"
+	"DAC_Synergy_Tooltip_Vigilant_0"	"liittoutuneet suojelijat"
+	"DAC_Synergy_Tooltip_Vigilant_1"	"kaikki liittolaiset"
 
 	"DAC_Synergy_Tooltip_Savage_0"				"Liittoutuneet raakalaiset"
 	"DAC_Synergy_Tooltip_Savage_1"				"Kaikki liittolaissankarit"
@@ -2518,7 +2541,7 @@
 
 	"DAC_Synergy_Desc_Summoner"			"Liittoutuneet kutsujat saavat +{s:damage_percent} % vahinkoa."
 	
-	"DAC_Synergy_Desc_Vigilant"			"Kun vihollinen langettaa loitsun, {s:alliance_eligible} kohdistavat hyökkäyksensä loitsun langettajaan, jos se on niiden hyökkäysetäisyydellä."
+	"DAC_Synergy_Desc_Vigilant"			"Whenever an enemy unit casts a spell, {s:alliance_eligible} target that enemy if it is within their range. The damage of the next attack against this target is increased by {s:damage_percent}%."
 	
 	"DAC_Synergy_Desc_Void"				"Kaikilla liittolaissankareilla on {s:proc_chance} % mahdollisuus tehdä {s:pure_damage_percent} % kohteen enimmäisterveydestä puhtaana vahinkona."
 
@@ -3267,7 +3290,7 @@
 	"DAC_RankUp_Subheading"					"Putkeen menee!"
 
 	"DAC_Season"								"Sanasto"
-	"DAC_Season_Subhead"                        "Tervetuloa Dota Underlords -pelin betakaudelle"
+	"DAC_Season_Subhead"                        "Tervetuloa Dota Underlords -pelin beta-kaudelle"
 	"DAC_Season_Abstract"						"Täältä löydät tarkempia selityksiä erilaisista termeistä ja käsitteistä, joihin viitataan ympäri Dota Underlords -peliä."
 
 	"DAC_Season_Mobile"								"Sanasto"
@@ -3512,7 +3535,7 @@
 	"dac_hotkey_scroll_camera_up_desc" 				"Liikuta kameraa ylemmäksi."
 	"dac_hotkey_scroll_camera_down_desc" 			"Liikuta kameraa alemmaksi."
 	"dac_hotkey_tilt_camera_modifier_desc" 			"Pidä alhaalla säätääksesi kameraa. Napauta nollaaksesi."
-
+	"dac_hotkey_board_spray_desc"					"Sijoita pelilautagraffiti kursorin kohtaan."
 	"dac_hotkey_alliances_tab"						"Näytä liittoumien välilehti."
 	"dac_hotkey_dps_tab"							"Näytä vahinkovälilehti."
 	"dac_hotkey_items_tab"							"Näytä esinevälilehti."
@@ -3600,14 +3623,14 @@
 	"DAC_Hero_Odds_Tier2"							"2. tason yksiköt: {s:odds_tier_2} %"
 	"DAC_Hero_Odds_Tier3"							"3. tason yksiköt: {s:odds_tier_3} %"
 	"DAC_Hero_Odds_Tier4"							"4. tason yksiköt: {s:odds_tier_4} %"
-	"DAC_Hero_Odds_Tier5"							"Ässäyksiköt: {s:odds_tier_5} %"
+	"DAC_Hero_Odds_Tier5"							"5. tason yksiköt: {s:odds_tier_5} %"
 
 	"DAC_Hero_Odds_Next_Level"						"Seuraavalla tasolla"
 	"DAC_Hero_Odds_Tier1_Next"						"1. tason yksiköt: {s:odds_tier_1_next} %"
 	"DAC_Hero_Odds_Tier2_Next"						"2. tason yksiköt: {s:odds_tier_2_next} %"
 	"DAC_Hero_Odds_Tier3_Next"						"3. tason yksiköt: {s:odds_tier_3_next} %"
 	"DAC_Hero_Odds_Tier4_Next"						"4. tason yksiköt: {s:odds_tier_4_next} %"
-	"DAC_Hero_Odds_Tier5_Next"						"Ässäyksiköt: {s:odds_tier_5_next} %"
+	"DAC_Hero_Odds_Tier5_Next"						"5. tason yksiköt: {s:odds_tier_5_next} %"
 
 	"DAC_Hero_Odds_Tier1_Short"							"{s:odds_tier_1} %"
 	"DAC_Hero_Odds_Tier2_Short"							"{s:odds_tier_2} %"
@@ -3634,7 +3657,8 @@
 	"DAC_CityCrawl_MostRecent"						"Viimeisin"
 	"DAC_CityCrawl_RecommendedHeader"				"Viimeisin:<br/><span class='RecommendedChallengeDesc'>{s:recommended_challenge}</span>"
 	"DAC_ChallengeGameModeRequirementsNotMet"		"Valitse toinen pelitila ja suorita kaupunkikierrostehtävä siinä."
-	"DAC_ChallengeDifficultyRequirementsNotMet"		"Valitse taistelupassin vaikein (XP) taso ja suorita kaupunkikierrostehtävä."
+	"DAC_ChallengeDifficultyRequirementsNotMet"		"Valitse vaikein (XP) bottien vaikeustaso tai pelaa moninpeliä, jotta edistyt taistelupassissa."
+	"DAC_ChallengePrivateGameNotFull"				"Ryhmäsi pitää olla täynnä, jotta edistyt taistelupassissa."
 
 	"DAC_Challenge_DodgeAttacks_Desc"				"Väistä {s:threshold} hyökkäystä."
 	"DAC_Challenge_CritAttacks_Desc"				"Tee {s:threshold} kriittistä osumaa."
@@ -3709,11 +3733,11 @@
 	"DAC_Achievement_criminal_mastermind"			 "Saavuta taso 200 taistelupassissa"
 	"DAC_Achievement_brawler"						 "Suorita kaikki kaupunkikierroksen katutaistelut"
 	"DAC_Achievement_land_baron"					 "Suorita kaikki kaupunkikierroksen tehtävät"
-	"DAC_Achievement_brainiac"					 "Suorita kaikki kaupunkikierroksen pulmat."
+	"DAC_Achievement_brainiac"					 "Suorita kaikki kaupunkikierroksen pulmat"
 	"DAC_Achievement_heir_apparent"				 "Suorita kaupunkikierros"
 	"DAC_Achievement_untouched"					 "Virheetön Tyrmäys-pelin voitto"
 	"DAC_Achievement_perfectionist"				 "Virheetön normaalipelin voitto"
-	"DAC_Achievement_master_of_none"				 "Voita erä siten, että sinulla on 11 aktiivista liittoumaa."
+	"DAC_Achievement_master_of_none"				 "Voita kierros ja pidä 11 aktiivista liittoumaa"
 	"DAC_Achievement_lord_of_whitespire"			 "Saavuta Valkoisen tornin herra -taso."
 	"DAC_Achievement_stonehall_savior"				 "Tee yksiköllä yli 30 000 vahinkoa yhdessä erässä"
 	"DAC_Achievement_pied_piper"					 "Kutsu 20 yksikköä yhdessä erässä"
@@ -3737,7 +3761,7 @@
 	"DAC_Achievement_heir_apparent_desc"				 "Suorita kaupunkikierros"
 	"DAC_Achievement_untouched_desc"					 "Virheetön Tyrmäys-pelin voitto"
 	"DAC_Achievement_perfectionist_desc"				 "Virheetön normaalipelin voitto"
-	"DAC_Achievement_master_of_none_desc"				 "Voita erä siten, että sinulla on 11 aktiivista liittoumaa."
+	"DAC_Achievement_master_of_none_desc"				 "Voita erä siten, että sinulla on 11 aktiivista liittoumaa"
 	"DAC_Achievement_lord_of_whitespire_desc"			 "Saavuta Valkoisen tornin herra -taso."
 	"DAC_Achievement_stonehall_savior_desc"				 "Luo Legion Commanderista raid-pomo"
 	"DAC_Achievement_pied_piper_desc"					 "Kutsu 50 yksikköä yhdessä erässä"
@@ -3782,10 +3806,11 @@
 	"DAC_LoadoutUnderlords"							"Varustus: underlordit"
 	"DAC_LoadoutGame"								"Varustus: peli"
 	"DAC_LoadoutPlayer"								"Varustus: pelaaja"
-	"DAC_LoadoutMapPropEditor"						"Varustus: karttarekvisiitan muokkaus"
+	"DAC_LoadoutMapPropEditor"						"Varustus: pelilaudan rekvisiitan muokkaus"
 
 	"DAC_LoadoutEquip"								"Varusta"
 	"DAC_LoadoutEquipped"							"Varustettu"
+	"DAC_EditBoardProps"							"Muokkaa pelilaudan rekvisiittaa"
 	"DAC_LoadoutEquip_Popup_Close"					"Sulje"
 	"DAC_LoadoutEquip_Failed_Title"					"Esineen varustaminen epäonnistui."
 	"DAC_LoadoutEquip_Failed_Body"					"Esinettä ei voi varustaa tällä hetkellä. Yritä myöhemmin uudelleen."
@@ -3841,7 +3866,7 @@
 	"DAC_Map_Prop_Editor_DiscardChanges"			"Hylkää muutokset"
 	"DAC_Map_Prop_Editor_SaveWarning"				"Jotkut rekvisiitat ovat yhä lukittuja, eikä niitä tallenneta."
 	"DAC_Map_Prop_Editor_ClearProp"					"Poista rekvisiitta"	
-	"DAC_Map_Prop_Editor_LimitText"					"Raja: {u:map_limit}"	
+	"DAC_Map_Prop_Editor_LimitText"					"Enintään: {u:map_limit}"	
 
 	"DAC_Rewards_Title"								"Protopassi"
 	"DAC_Rewards_Sell"                              "Taistelupassin käyttöoikeus"
@@ -3852,7 +3877,7 @@
 	"DAC_Rewards_Rewards"                           "Palkinnot"
 	"DAC_Rewards_Subhead"							"Edistymisesi"
 	"DAC_Rewards_Intro"					            "Pelaa peliä ja suorita haasteita, jotta saat avattua alla näkyvät palkinnot."
-	"DAC_Rewards_Description"						"Protopassi on muiden betaversioiden tavoin oppimiskokemus Underlords-tiimille. Lähettäkää arvokasta palautettanne, koska siitä on meille apua, kun suunnittelemme 1. kauden taistelupassia."
+	"DAC_Rewards_Description"						"Protopassi on muiden beta-versioiden tavoin oppimiskokemus Underlords-tiimille. Lähettäkää arvokasta palautettanne, koska siitä on meille apua, kun suunnittelemme 1. kauden taistelupassia."
 	"DAC_BattlePass_GCIssue"						"Pelikoordinaattoriin ei saada nyt yhteyttä."
 	"DAC_Rewards_CurrentLevel"						"Taso: <br><span class='LevelNumber'>{d:current_level}</span>"
 
@@ -3895,7 +3920,7 @@
 	"DAC_Profile_FinishSecond"				"Toinen"
 	"DAC_Profile_FinishThird"				"Kolmas"
 
-	"DAC_Profile_BotMatch"					"[BOTS]"
+	"DAC_Profile_BotMatch"					"[BOTIT]"
 
 	"DAC_Profile_TopAlliances"				"Viimeksi pelatut liittoumat"
 
@@ -3963,7 +3988,7 @@
 
 	"s1_title_row_1"			"Tervetuloa"
 	"s1_title_row_2"			"Valkoiseen torniin"
-	"s1_description"			"Momma Eeb on poissa, ja tilaisuus hallita kaupunkia on koittanut. Kokoa joukkueesi, taistele ja valloita Valkoinen torni <span class='Emphasis'>kaupunkikierroksessa</span>.<br><br>Suorita haasteita, pelaa otteluita ja ansaitse palkintoja <span class='Emphasis'>taistelupassissa</span>. Tervetuloa Unrdelordsin ykköskaudelle!"
+	"s1_description"			"Momma Eeb on poissa, ja kaupunki on vailla uutta hallitsijaa. Kokoa joukkue, taistele ja valloita Valkoinen torni <span class='Emphasis'>kaupunkikierroksessa</span>.<br><br>Suorita haasteita, pelaa otteluita ja ansaitse palkintoja <span class='Emphasis'>taistelupassissa</span>.<br><br> Tervetuloa Underlordsin ykköskaudelle!"
 	"s1_play_trailer"			"Toista traileri"
 	"s1_ricky_beta_message"		"PSST! Kiitos, että pelasit beta-kaudella. Toin sinulle muutaman tervetuliaislahjan: beta-kauden pelilaudat, julisteotsikon ja patsaan pelilaudallesi!"
 
@@ -4098,6 +4123,7 @@
 	"DAC_Challenge_Popup_2_Valid_Modes"		"Vain pelimuodoissa: {s:game_mode_1}, {s:game_mode_2}"
 	"DAC_Challenge_Popup_1_Valid_Mode"		"Vain pelimuodoissa: {s:game_mode_1}"
 	"DAC_challenge_map_city_key_count"		"{d:city_keys}"
+	"DAC_challenge_map_objectives_count"	"{d:city_objectives}"
 
 	"DAC_Area_Inventory_Title"				"Reppu:"
 	"DAC_Area_Inventory_Description"		"Underlordin {s:underlord_name} esineitä, jotka avasit katutaisteluiden ja taistelupassin palkintoina, voidaan käyttää jatkossa joukkueesi vahvistamiseen katutaisteluissa."
@@ -4289,7 +4315,7 @@
 	"DAC_SelectedPlayerName" "{g:dac_player_slot_persona:b:selected_player_slot}"
 	"DAC_Spectating" "Katsellaan:"
 
-	"DAC_Puzzle_Exit"									"Palaa kaupunkikierrokseen"
+	"DAC_Puzzle_Exit"									"Palaa kierrokselle"
 	"DAC_ReturnToCityCrawl"								"Palaa kaupunkikierrokseen"
 
 	"DAC_Puzzle_RuleDescription_Current"				"Nykyinen: {d:current}"
@@ -4379,6 +4405,7 @@
 	"DAC_Challenge_Street_Fight_Desc"			"Katutaistelu suoritettu!"
 	"DAC_Challenge_Street_Fight_Lore"			"Grek, kamuni, ystäväni. Sinun olisi pitänyt vaan pysytellä sopumatsien järjestämisessä... – <i>Hobgen huolehtii tulokkaasta</i>"
 
+	"DAC_Challenge_Puzzle_Desc"					"Pulma suoritettu!"
 	
 	"dac_challenge_difficulty_1"				"Helppo"
 	"dac_challenge_difficulty_2"				"Haastava"
@@ -4448,7 +4475,7 @@
 	"dac_underlord_picker_1_build_0_ability_desc"	"Merkitsee vihollisen hyökkäyskohteeksi ja heikentää sitä. Jos vihollinen kuolee, se muuttuu demoniorjaksi."
 
 	"dac_underlord_picker_1_build_1_title"			"Parantava tuki"
-	"dac_underlord_picker_1_build_1_ability_desc"	"Kutsuu golemin vihollislinjojen taakaa taistelemaan joukkueessasi."
+	"dac_underlord_picker_1_build_1_ability_desc"	"Kutsuu golemin vihollislinjojen takaa taistelemaan joukkueessasi."
 
 	"dac_underlord_picker_2_name"					"Jull"
 	"dac_underlord_picker_2_title"					"Panssaroitu lähitaistelija"
@@ -4529,7 +4556,7 @@
 	"DAC_CC_Bounty_Title"						"Lunnas:"
 	"DAC_CC_MostWanted_Title"					"Etsityin"
 	"DAC_CC_Challenge_Progress"					"Tehtävien edistyminen"
-	"DAC_CC_Challenge_Part1"					"ja"
+	"DAC_CC_Challenge_Part1"					" "
 	"DAC_CC_Challenge_Part2"					"Pelissä:"
 	"DAC_CC_Puzzle_Requirements"				"Pulman vaatimukset"
 	"DAC_CC_Streetfight_Goal"					"Tavoitteesi"
@@ -4563,13 +4590,13 @@
 	"DAC_CC_ChallengeTypeDesc_Puzzle"				"Need Puzzle Description"
 	"DAC_CC_ChallengeTypeSubDesc_Puzzle"			"Need Puzzle Sub Description"
 	"DAC_CC_ChallengeType_StreetFight"				"Katutaistelu"
-	"DAC_CC_ChallengeTypeDesc_StreetFight"			"Valitse paketti ja osta yksiköitä kaupasta, jotta voit taistella hyökkääjiäsi vastaan."
+	"DAC_CC_ChallengeTypeDesc_StreetFight"			"Valitse joukkue ja osta yksiköitä kaupasta, jotta voit taistella hyökkääjiäsi vastaan."
 	"DAC_CC_ChallengeTypeSubDesc_StreetFight"		"Katutaistelut pelataan paras kolmesta erästä -muodossa. Onnea!"
 
 	"DAC_CC_ChallengeType_StreetFight_PosterTitle"	"Katutaistelu"
 
 	"DAC_CC_StreetFight_Difficulty_0"					"– Opetuspeli"
-	"DAC_CC_StreetFight_Difficulty_1"					"– 1. taso"
+	"DAC_CC_StreetFight_Difficulty_1"					" – 1. taso"
 	"DAC_CC_StreetFight_Difficulty_2"					"– 2. taso"
 	"DAC_CC_StreetFight_Difficulty_3"					"– 3. taso"
 	"DAC_CC_StreetFight_Difficulty_4"					"– 4. taso"
@@ -4577,11 +4604,11 @@
 	"DAC_CC_StreetFight_Difficulty_6"					"– 6. taso"
 	
 	"DAC_CC_StreetFight_Modal_Title"					"Katutaistelu"
-	"DAC_CC_StreetFight_Modal_Desc1"					"Valitse paketti ja osta yksiköitä kaupasta, jotta voit taistella hyökkääjiäsi vastaan."
+	"DAC_CC_StreetFight_Modal_Desc1"					"Valitse joukkue ja osta yksiköitä kaupasta, jotta voit taistella hyökkääjiäsi vastaan."
 	"DAC_CC_StreetFight_Modal_Desc2"					"Katutaistelut pelataan paras kolmesta erästä -muodossa. Onnea!"
 
 	"DAC_CC_Puzzle_Modal_Title"							"Pulma"
-	"DAC_CC_Puzzle_Modal_Desc1"							"Seuraa pulman vaatimuksia, jotta voit voittaa."
+	"DAC_CC_Puzzle_Modal_Desc1"							"Seuraa pulman vaatimuksia voittaaksesi."
 	"DAC_CC_Puzzle_Modal_Desc2"							" Yksiköt päivitetään napauttamalla niitä ja valitsemalla taso ylös-/alaspäin painikkeesta. Onnea matkaan!"
 
 	"DAC_Play_City_Crawl_Challenge"					"Kaupunkikierrostehtävä"
@@ -4592,7 +4619,7 @@
 	"DAC_Play_City_Challenges_None_Available"		"0 aktiivisena"
 	"DAC_Play_City_Crawl_Invalid_Challenge"			"Tehtävä ei kelpaa valitulle pelitilalle"
 	"DAC_Play_Visit_City_Crawl"						"Käy kaupunkikierroksella"
-	"DAC_City_Crawl_Intro_Video_Subtitle"			"Momma Eebin kuolema järisytti kaupunkia perustuksia myöten. Nyt neljä underlodia aikovat todistaa kykynsä johtaa Valkoista tornia."
+	"DAC_City_Crawl_Intro_Video_Subtitle"			"Momma Eebin kuolema järisytti kaupunkia perustuksia myöten. Nyt neljä underlodia aikoo todistaa kykynsä johtaa Valkoista tornia."
 	"DAC_City_Crawl_Zoom_Out"						"Loitonna"
 
 
@@ -5090,7 +5117,7 @@
 
 	"DAC_Challenge_Puzzle_s1_jull3_title"	"Sotkuiset tehtävät"
 	"DAC_Challenge_Puzzle_s1_jull3_quote"	"Väki tulee Särkyneeseen kuuhun, koska sieltä saa virvokkeita, joita ei saa mistään muualta. Tuleeko ruttoluikerodrinkkien teosta ruumiita? Kyllä, mutta selviytyjät ylistävät kokemusta. – <i>Jull, tappava drinkkien sekoittelija</i>"
-	"DAC_Challenge_Puzzle_s1_jull3_lore"	"Jullin keksintö laittaa ruttoluikeron myrkkyä drinkkiin oli se seikka, millä Jull ansaitsi paikkansa Valko-orkideoiden pöydässä. Jotkut kutsuvat sitä..."cocktail" is generous... its basically just venom and Icewrack white."
+	"DAC_Challenge_Puzzle_s1_jull3_lore"	"Jull keksi laittaa ruttoluikeron myrkkyä cocktailiin ja ansaitsi sen takia paikkansa Valko-orkideoiden pöydässä. Cocktail on juomalle ihan liian hieno nimitys, sillä siinä on vain myrkkyä ja Jääraunion kirkasta."
 
 	"DAC_Challenge_Puzzle_s1_jull4_title"	"Kukaan ei pääse Svenin ohi"
 	"DAC_Challenge_Puzzle_s1_jull4_quote"	"Löydän ratkaisun tähän ongelmaan. – <i>Jull, rajojen rikkoja</i>"
@@ -5346,7 +5373,7 @@
 
 	"DAC_Challenge_Puzzle_s1_anessix2_title"	"Nyt näet ne…"
 	"DAC_Challenge_Puzzle_s1_anessix2_quote"	"Henkiveljet yrittävät laittaa minut ruotuun… Ihailen niiden omistautumista mutten joutavuuden ihailua. – <i>Anessix, henkien kiusa</i>"
-	"DAC_Challenge_Puzzle_s1_anessix2_lore"		"Monet olivat huolissaan Anessixen noususta valtaan. Henkiveljiä tämä ei huolettanut."
+	"DAC_Challenge_Puzzle_s1_anessix2_lore"		"Monet olivat huolissaan Anessixen noususta valtaan, mutta henkiveljet päättivät tehdä asialle jotain."
 
 	"DAC_Challenge_Puzzle_s1_anessix3_title"	"Nyljettyjen kaksosten palvelijat"
 	"DAC_Challenge_Puzzle_s1_anessix3_quote"	"Valta-asemani vastustaminen, vaikkakin ennakoitua, on aina pettymys. – Ristulin hovilla on on konflikti nyljettyjen kaksosten kanssa"
@@ -5505,13 +5532,13 @@
 	"DAC_Challenge_Streetfight_bloodbounds_and_warlocks_Win"		"Käytäväverkoston asukkaita piinanneet katoamiset päättyivät, kun Enno ajoi poppamiehet matkoihinsa"
 	"DAC_Challenge_Streetfight_bloodbounds_and_warlocks_Lose"		"Huhu: laboratoriosta karanneet jätit vaanivat Käytäväverkostoissa"
 	
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Title"		"Experimental Growth"
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Bot"		"Bloodbound Warlocks"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Title"		"Kokeellista kasvua"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Bot"		"Veriveliset poppamiehet"
 	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_BotDesc"		"bloodbounds_and_warlock Desc"
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Lore"		"It's not unusual to see Warlocks turn to the Warrens when they are looking for \"volunteers\" for their experiments."
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Quote"		"In which Enno declares that life may be cheap in White Spire, but his people aren't for sale"
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Win"		"Mysterious disappearances in The Warrens comes to an end as Enno drives out Warlocks"
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Lose"		"Rumor! Fleshgrafted giants stalk The Warrens"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Lore"		"Ei ole tavatonta, että poppamiehet suuntavat Käytäväverkostoon, kun ne etsivät \"vapaaehtoisia\" kokeisiinsa."
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Quote"		"Enno ilmoittaa, että vaikka henki ei ole ehkä kallis Valkoisessa tornissa, sen väki ei ole myytävänä."
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Win"		"Käytäväverkoston asukkaita piinanneet katoamiset päättyivät, kun Enno ajoi poppamiehet matkoihinsa"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Lose"		"Huhu: laboratoriosta karanneet jätit vaanivat Käytäväverkostoissa"
 	
 
 
@@ -5638,6 +5665,16 @@
 	"DAC_Challenge_Puzzle_intro_quote"			"Hobgen, Anessix, Jull ja Enno olivat lähdössä vaarallisista vaarallisimmille valloitusretkille. Hobgen iski silmänsä Uuteen hämärälään, Momma Eebin vanhaan lempipaikkaan. Jull turvautui Varjoisaan satamaan toiveenaan hallita vientiä ja tuontia. Anessix halusi Pikku-Revtelin ja sen rahat ja salaisuudet. Enno puolestaan... Enno oli Enno ja halusi hallita Käytäväverkostoja."
 	"DAC_Challenge_Puzzle_intro_lore"			"Useat koettelemukset odottivat Eebin seuraajia, eikä niihin kuulunut pelkästään katuväkivalta... Edessä oli tapahtumia ja vaikeuksia, joita edes paatuneet rikolliset eivät voineet ennustaa."
 
+	// City Crawl Complete
+	
+	"DAC_citycrawl_complete_hobgen"				"Nyt kun Uusi hämärälä on tiukasti Hobgenin hallussa, sillä on tiukka jalansija Valkoisessa tornissa. Keiju nauttii voitostaan… tietämättömänä vaikeista ratkaisuista, joita sen pitää tehdä lähikuukausina."
+	"DAC_citycrawl_complete_jull"				"Jull juhli Varjoisan sataman herruuttaan jullimaisimmalla tavalla: vetämällä kaatokännit Särkyneessä kuussa. Se oli niin heikossa hapessa, että päästi jopa Axen takaisin baariin. Huhujen mukaan Goodkind on kirjoittamassa parhaillaan kirjaa tästä irstailujen yöstä."
+	"DAC_citycrawl_complete_enno"				"Käytäväverkostojen kiistaton kuningas Enno on nyt vaikean valinnan edessä. Onko se tyytyväinen slummien hallitsijana? Vai haluaako se laajentaa reviiriään? Aika näyttää..."
+	"DAC_citycrawl_complete_anessix"			"Anessixen agentit punoivat tiensä Pikku-Revtelin läpi ja loivat voimakkaan salaisuuksien ja uskottujen verkon. Mutta maallinen demoni ei ollut tyytyväinen… Se pelasi vaarallista peliä Ristulin hovin kanssa. Jos ne pääsisivät Anessixen aikeista selville, kaikki sen saavutukset valuisivat hiekkana maahan."
+	"DAC_citycrawl_complete_all"				"Reviirilinjat on vedetty, mutta Valkoisen tornin tarina on vasta alkamassa. Viheliäisten riemujen kaupungilla on yhtä paljon vihollisia kuin salaisuuksiakin… On vain ajan kysymys, milloin ne paljastuvat."
+
+
+	
 	
 }
 

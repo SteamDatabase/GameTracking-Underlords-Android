@@ -23,7 +23,6 @@
 !^  (
 !^ ( 
 !^ 	 
-!^!|(
 !^!("
 !^!(*
 !^"	"
@@ -36,7 +35,6 @@
 !~@( 
 !*,=@
 !	@-#	@
-!	@)$[
 ?)>>!;/
 ?}@=	
 '":|;
@@ -45,7 +43,7 @@
 ((@-)
 ()@))	@
 (%@-*	@
-(%@)`=
+(%@)`
 )@-		@
 )*-)+
 )+@)+
@@ -86,7 +84,6 @@ $@)#@@)
 +%@),
 	) 	)
 	)@)	(
-	*!@+
 	*(#:
 	*	}`
  [$0]
@@ -115,7 +112,7 @@ $0$1 = $2
  !"#$%&'()*+,-./0123
 $0$1$2 $3 = $4
 0123456789abcdef
-0123456789ABCDEFlB
+0123456789ABCDEFX
 %0.2f
 (%0.2f) %s
 (%0.2f): %s
@@ -170,6 +167,7 @@ $0$1$2 $3 = $4
 .>()09
 	0@9?
 >()09,)G>r
+0A9K,
 0~B8 
 @0bDG
 0CClientMsg_WorldUIControllerHasPanelChangedEvent
@@ -1827,7 +1825,7 @@ $0 to $1,
 (1@9@
 1960/00/00
 	1?9_A?9
-	1)9_A)9
+_!19*c
 19CAI_ChangeHintGroup
 19CAmmoDefInitializer
 19CAttributeContainer
@@ -1923,7 +1921,8 @@ $0 to $1,
 19CVariantSaveDataOps
 19CVoiceGameMgrHelper
 19CWeaponScriptParser
-	1:9h
+	1-9H
+1@9Hd
 19IAttachmentOverride
 19IConsoleDisplayFunc
 19IDecalEmitterSystem
@@ -1936,9 +1935,7 @@ $0 to $1,
 19interactions_data_t
 19ISource2GameClients
 19IVoiceGameMgrHelper
-1@9ld
 19RestartMapToolEvent
-!1@9S
 19TEDecal_GameEvent_t
 19TESmoke_GameEvent_t
 19TonemapParameters_t
@@ -1972,6 +1969,7 @@ $0 to $1,
 1w?WA
 	1@y?!"k`
 ?2: 	
+#2)^)
 +2: 	
 	2"("
 	2@( 
@@ -2462,7 +2460,6 @@ $0 to $1,
 23CDAC_Modifier_VoidStone
 23CDAC_Modifier_WispDeath
 23CDACServerCrashSentinel
-23CDACUniformRandomStream
 23CDebugOverlayGameSystem
 23CDebugVisualizerAbsTime
 23CDefaultLagCompensation
@@ -3291,8 +3288,7 @@ $0 to $1,
 28TEShatterSurface_GameEvent_t
 28VPhysicsCollisionAttribute_t
 *|2@9
-2	!?9
-2	!?9;
+2	!<9
 {2@99
 29CBodyComponentBaseModelEntity
 29CBoneConstraintPoseSpaceMorph
@@ -3311,6 +3307,7 @@ $0 to $1,
 29CDAC_Ability_Treant_LeechSeed
 29CDAC_Ability_Tusk_WalrusPunch
 29CDAC_Clockwerk_BatteryAssault
+29CDACCombatUniformRandomStream
 29CDACGameRulesHookupGameSystem
 29CDAC_Gyrocopter_Deadeye_Bonus
 29CDAC_Item_HeartOfTarrasqueOld
@@ -3394,16 +3391,18 @@ $0 to $1,
 29CTraceFilterAgainstEntityList
 29CTraceFilterEntityIgnoreOther
 29DestroyAllEntitiesToolEvent_t
-2	!?9l
 2*9	S)!@
 2+9	S
 2(9	SHM(
 29ToolEvent_GetEntityInfoResult
 2	A89
+2	a?9
+2	a?9;
 2	a+9
 2	A.9
 2	A#9D
 2A9i2
+2	a?9l
 2	AA9
 2A.CWorkshop_PopulateItemDescriptions_Request.SingleItemDescription"F
 2A-k	 
@@ -3577,10 +3576,10 @@ $0 to $1,
 2h2>9
 2	h(8
 2h"?9
-2h&>9
 2h&!9
 2h.,9h
 2h"!9h
+2h&>9t?
 2h&(9T
 2hb>9
 2hb!9
@@ -3590,6 +3589,7 @@ $0 to $1,
 2hB/9
 2hB.9
 2hB99
+2hB 9h^
 2hB"9T
 2hf!9
 2hfa9
@@ -3639,7 +3639,6 @@ $0 to $1,
 2k_ItemPurgatoryResponse_Finalize_Failed_Incomplete
 ?-2KLa
 2Ky)xi"@
-	2!L!
 2L@-4
 @2l9<)8
 2l*@9h
@@ -3655,9 +3654,8 @@ $0 to $1,
 }2'@+P
 2 .ProtoFlattenedSerializerField_t"!
 2	Q09
-2	Q69
-2	Q%9
-2	Q	9
+2	Q%9h
+2	Q	9Ha
 	2R*3
 2) Red  : %i
 2RF-5:@
@@ -3674,7 +3672,7 @@ $0 to $1,
 2@y"!A
 2	yi6
 2@yJ!F
-2	y/n
+2	y/v
 2*y(x	
 -30.0
 300.0
@@ -4506,9 +4504,8 @@ $0 to $1,
 39CUserMsg_ParticleManager_CreateParticle
 39CUserMsg_ParticleManager_UpdateParticle
 (3@9h/
-!39h5
-!39uB
-3a$9\
+!39H5
+!39UB
 3A-`9 
 3A;9_
      3: Alyx Blind
@@ -4532,7 +4529,6 @@ $0 to $1,
 =3PF-5XG-
 3.t8!
 3X@-7
-	*!4'
 4('@)*
 4(0@9
 40CColorCorrectionMaterialOverrideModifier
@@ -4755,6 +4751,7 @@ $0 to $1,
 49CUserMsg_ParticleManager_UpdateParticleShouldDraw
 49GameToolEventToolTraceRayResult_tHookupGameSystem
 4((@9h
+4~9iD
 4(d@9(
 4(D@9(
 %% 4d=[%%%d.%ds] at cycle %%6.4f weight %%5.3f
@@ -4831,7 +4828,6 @@ $0 to $1,
 4tr@y
 ?`4uh
 4V'@9_#
-4W	@7
 4w>Mw
 4(x@9h
 4(X@9h
@@ -4916,7 +4912,7 @@ $0 to $1,
 5ib@y
 5i*C))
 )5IJ(}
-5i"J)uc
+5i"J)5c
 5ISave
 5i.@y
 5`J@)q
@@ -5058,7 +5054,7 @@ _6	H@
 (6hf@
 ?6hF@
 '6hF@
-6h"F9`SN
+6h"F9`cN
 6hfa9
 6hFA9
 '6hFB9
@@ -5168,9 +5164,9 @@ _6iJ@
 ?6iJ@
 /6iJ@
 @6iJ@
+6i"J)5c
 _6ijA
 6iJA9
-6i"J)uc
 ?.@6$Ik
 _6iN@
 ?6iN@
@@ -5297,6 +5293,7 @@ _6v:@
  7(	(7H
 7(	 7H
 77h2A
+_!79j
 7AIJ)
 (7($B9
 7CBotCmd
@@ -5340,7 +5337,6 @@ _6v:@
 7hr`9
 7hR@9
 7hr~9H
-7hR@9h	
 7hrAyv2@
 7hT@y
 7hU@y
@@ -5384,7 +5380,6 @@ _6v:@
 	 7V	(7
 (7w"@
 @7w:@
-7w	 7
 7W	 7
 7W	 7w
 7W	`7W
@@ -5409,6 +5404,7 @@ _6v:@
 @-	8"
 @8)		
 @8	}@
+*-@)!`8
 #.$8&
 	**!8
 @-%80
@@ -5552,7 +5548,6 @@ _8|{t
 90.0f
 <9}@0>1
 9(0@y
-"?94Q
 )#@95c
 95*P>
 @96Y@
@@ -5570,18 +5565,20 @@ _8|{t
 @9+	@9,
 %@9	)@9
 9+	@9
+@9%	@9	0
 99h&N
-@9%	@9I0
  @9	$@9J
 ">9(A
 @9A(!
 @9_aAkA
 ?9A@c
+"@9AC
 9AIJI
 9A)k!
 9*a`y
 @9_aYkA
 @9B!@
+!#9c	
 @9)+C
 9CBaseFlex
 9CBaseProp
@@ -5624,6 +5621,7 @@ _8|{t
 )@@9h
 @9h*@
 	#@9h
+(`@9H
 (@@9H
 9h2@y
 @9H	(7
@@ -5676,11 +5674,11 @@ _8|{t
 @9i&@
  @9I/
 @9I	@
- @9i7
+ @9I7
 "@9i"@9
 @9i"]9
-@9i"@9
 9	i@9
+@9i"@94:
 9*i@9J
 -9i^A
 9IEconTool
@@ -5710,6 +5708,7 @@ _8|{t
 9Ki@9k
 9k_ItemPurgatoryResponse_Finalize_Failed_CouldNotFindItems
 9kj(8|
+>9l/!
 9l"A9
 )9}[p=
 9Px? FcH
@@ -5719,11 +5718,11 @@ _8|{t
 9QH@)A
 @9R"@9)
 @9_`RkA
+(!+9s
 **9	S
 *9	S?
 *9	S)!
 9	S0M0
-9	S5k
 *9	SH
 (9	SHM(
 	9	SIM)
@@ -5791,20 +5790,22 @@ A-@ #
 A))!@
 *A09`
 a2@9 
+a2@9'
 a2@9"
 a2@9"[@
-a2@9*
+a2@9{
 a2@9	
 a2@9B
-a2@9B:
+a2@9B8
 a2@9c
 a2@9c#
 a2@9cc
 a2@9cC
+a2@9"i
 a2@9"ih
-a2@9j_
-a2@9J
-a2@9u
+a2@9Pn
+a2@9q
+a2@9<s
 a2B9bz@
 a2U0*	
 ?a2U0*i
@@ -5813,8 +5814,6 @@ a2U0*
 a2@yh2@y
 ,-A-.5@-
 A5fSXbf7
-a6@9B
-_a69J
  .a8"
 @-a	@- 8 
 A- 8 
@@ -5865,6 +5864,7 @@ A9i>@
 A9	ii
 A9iji
 a@9iM
+_a%9j
 A9|J@
 	A9j"A
 A9jji
@@ -5891,7 +5891,7 @@ aabb_min
 AABB_t
 ?AAk	"
 A@-B8(
-ab@9~
+ab@95
 ab@9B
 A-b.C
 abcdefghijklmnopqrrqponmlkjihgfedcba
@@ -7799,8 +7799,8 @@ always_notify
 always_send_to_server
 always_send_to_servers
 always tradable
+!	@)aM
 ;Am@  
-#Am"4
 AmbientCubes
 ambient_generic
 Ambiguous
@@ -7817,7 +7817,6 @@ amplitude
 	amplitude
 AMPLITUDE: %f
 (AN9)
-	AN9i
 anchor_angles
 AnchorList
 Anchor nav_begin_area Z to editing player's feet
@@ -7955,7 +7954,6 @@ An orthographic spot light entity
 An RR_Concept couldn't find its string in the symbol table!
  any other value = set minimum value for cl_interp_ratio
 &A)(o@
-A-OIJ
 api_key
 `AP$N
 appear_time
@@ -8026,7 +8024,7 @@ Arguments: <weapon_name>
 	Arguments: x1 y1 z1 x2 y2 z2
 	Arguments: x y z
 	Arguments:  x y z pitch yaw roll <lifetime = 10.0> <r g b a>
-arh9`d
+arh9nl
 ARk-#
 armor
 armor_bonus
@@ -8305,6 +8303,7 @@ a world layer in a dota map
 `awpf*
 *A)X#
 Ax_!7k
+	AX9i
 *A_x)a_xk^
 axe_culling_blade
 axe_damage
@@ -8323,9 +8322,8 @@ B-`!
 B-   
 B-'("
 B-)( 
-*B)!0
 B-1HD-
-b1@yaC
+b1@y!C
 B-(5@
 *-B),5C)_
 @-b8"
@@ -8341,8 +8339,8 @@ B99aJN
 B99)y
 B@9a'
 B9)]A
+B9AiN
 ?B9b8"
-b 9Bx
 ?B\9{g
 B\9{gt
 ^B9h^
@@ -8359,7 +8357,6 @@ b@9ib
 b@9JAF
 B%9`R
 b@9w	
-B!9zz
 B-A8!
 bA9hb
 BA9hB
@@ -8484,7 +8481,7 @@ battle_fury_new
 bAyhb
 %B-@	B-
 B-B8#
-BB9{\
+BB9{`
 bB9hb
 BB9hB
 BB9hj:8
@@ -8534,6 +8531,7 @@ bEOFUnlocked
 bExitsMesh
 bezier
 Bezier
+&B)*F
 bFired
 bFound
 ?B&:G
@@ -8821,6 +8819,7 @@ BrushSolidities_e
 BRUSHSOLID_NEVER
 BRUSHSOLID_TOGGLE
 brute_debuff
+BS9a(
 bspline
 B-Spline
 __bss_end__
@@ -8834,10 +8833,10 @@ bucket
 bucket_position
 Buckshot
 BUCKSHOT
-B-(uD
 "B)Ud
 buddha
 buddha_reset_hp
+B-(UF
 BUF_DEFAULT
 buffer. Use the 'bytes' type if you intend to send raw 
 buff_modifier
@@ -8882,14 +8881,16 @@ ButtonBitMask_t
 "B)Ux
 buy_unit
 bValue
-b	yAb
+`b@y?
+b	yAv
+`b@ye
 `b@yh
 B@yhB
 By how much to modify the unit's health
 By how much to modify the unit's health.
 b	yi6
 BYield
-`b@yq
+`b@yN
 b	yt6
 bytes
 bytes. 
@@ -8901,6 +8902,7 @@ $.c($
 :C)   
 !	@-C
 .C))}
+($C)  @
 @-'@@-C
 &C)   
 C-   
@@ -8923,6 +8925,7 @@ C@9h4
 C9,h5
 C@9HC
 c@9hS
+c@9J.
 C)A8!
 CA9`:
 cA9h"
@@ -9275,7 +9278,6 @@ CCustomGameEventManager::ScriptSend_ServerToPlayer - Invalid player
 CCustomGameEventManager::Script_UnregisterListener - ID %d not found.
 CCustomGameEventManager::Script_UnregisterListener - Invalid ID
 C-d	 
-($C)*,D),(@
 CDAC_Ability
 CDAC_Ability_Abaddon_AphoticShield
 CDAC_Ability_Alchemist_AcidSpray
@@ -9413,6 +9415,7 @@ CDAC_Axe_BerserkersCall
 CDAC_BaseNPC::DamageImpact
 CDAC_BuffParticle
 CDAC_Clockwerk_BatteryAssault
+CDACCombatUniformRandomStream::s_pInstalledStream
 CDAC_Disruptor_Warlock_Bonus
 CDAC_DoomBringer_Doom
 CDAC_Enigma_MidnightPulse
@@ -9601,7 +9604,6 @@ CDAC_Timbersaw_WhirlingDeath
 CDACTurboShopOfferingState
 CDACUnderlordPickerOfferingState
 CDAC_Underlord_Thinker
-CDACUniformRandomStream::s_pInstalledStream
 CDACUnitState
 CDACUnitState *CDACPlayerState::AddUnit(int, int, DACBoardPosition_t)
 CDAC_Venomancer_PlagueWard
@@ -10261,7 +10263,6 @@ CJobImplClassMgr -- Dispatch completed work items
 CJobImplClassMgr::m_WorkThreadPool
 CJobImplClassMgr::PassMsgToJob() job %s received unexpected message %s when paused for %s
 Cj$SO0
-!	@)cK
 ?c	kc
 c?kdWZF
 CKeepUpright
@@ -11383,7 +11384,7 @@ CombatRound
 combat_rounds
 combats
 combat_savage_damage
-Combat Share Code: %s (RNG Seed: %u)
+Combat Share Code: %s
 Combat Simulation for Player %d took %f seconds
 combat_type
 {Combat %u: %u vs %u}
@@ -12394,11 +12395,15 @@ d3_citadel_04
 d3_citadel_05
 .D=3w
 *-D),5E)_
+d6@y##
 d6@yc
 d6@yc-
-d6@yc#
-d6@yC*
-d6@yC#
+d6@yc'
+d6@yC
+d6@yC-
+d6@yC;
+d6@yc0
+d6@ycD
 D-)9,
 D9`.@
 D9   
@@ -12431,7 +12436,6 @@ dac_autorun_bot_game_ml_model_previous
 dac_autorun_bot_game_ml_random_action
 dac_autorun_bot_game_ml_random_action_variance
 dac_autorun_bot_game_ml_temperature
-dac_autosave_sequence_number_backchannel
 DACBoardBuddyState
 DACBoardPosition_t
 dac_bot_cheat_win
@@ -12503,7 +12507,6 @@ DACGameManager001
 dac_gamemessages.proto
 dac_gamerules
 DACGameRules()->GetCurrentCombat()
-DACGameRules()->IsListenServerGame()
 dac_gcmessages_client.proto
 dac_gcmessages_common.proto
 dac_gcmessages_server.proto
@@ -13537,7 +13540,6 @@ E-!8#
 \|e9d
 e`@9d0
 	E@9i
-#E)9J
 !E9#L
 'E-a9-
 +E-a9/
@@ -13775,6 +13777,7 @@ EItemPurgatoryResponse_Refund
 <eJ)?)
 ;eJ)?)
 eKeypoints
+!	@)eL
 Elapsed
 electrical
 Electrical.Explode
@@ -14982,6 +14985,7 @@ FCVAR_UNREGISTERED
 FCVAR_USERINFO
 FCVAR_VCONSOLE_SET_FOCUS
 @-fD@-
+@F=(D
 )@FD1y
 fDamage
 f %d %d %d
@@ -15007,6 +15011,7 @@ ffffff
 fflush
 fGain
 F*%h3x%hgx
+F-HqE
 F*&h%x%hsx
 F*%h'x%hsx
 @-FI@-)	@
@@ -15326,6 +15331,7 @@ float64
 float%d
 float( %f )
 float GetRoundDuration(CDACGameMode *, EGameState, ERoundState, int, float, bool)
+float_kill_count
 float_value
 floatValue
 Floor %d ('%s') of elevator at ( %3.2f, %3.2f, %3.2f ) has no matching navigation areas
@@ -15713,6 +15719,7 @@ G-7F@
 g\8"@6
 G`9h`
 G9jkj8?
+]G-a/
 gA}-d
 Gambler
 game_
@@ -15965,7 +15972,7 @@ G-B8%
 G-bB@
 GB@-Q
 G-c*#
-'G)cA
+'G)CA
 	gc_app_id
 	gc_binary
 GCC: (GNU) 4.9.x 20150123 (prerelease)
@@ -16481,8 +16488,8 @@ h&?);
 h&@)?
 h&@)*
 ;+%@H
-!	@)^H
 @-H  
+#+)H#
 #H)	}	
 H0@)_
 H0@9(0
@@ -16494,11 +16501,11 @@ h2~9(
 h2@9 
 h2@9)
 h2@9@
+h2>9'd
 h2@9)EE
 h2@9h
 h2~9H
 h2[9H
-h2>9Q
 )h2A9
 h2By`
 h2@y	
@@ -16510,8 +16517,11 @@ h2	yw
 *-H),5I)_
 H6{2@
 h6@9h
+h6>9lw
+h6>9O
 )h6A9
 h6{B@
+-H6B6
 H6h>@
 h6hB@
 H6hB@
@@ -16532,13 +16542,12 @@ h6uB@
 h6@y(
 h6	y(
 h6	yh
-h77	p7
 $H77'P7W*X7w-`7
 H7h	P7(
 H7t	P7
 H7t	P7i
 h7u	p7
-h7U	p7
+h7W	p7
 H7x"@
 H7xR@
 *-h)8)
@@ -16551,13 +16560,12 @@ h.!9*
 h'@9(
 h" 9&
 h"@9)
+h"@9):
 h"@9)/
 h&@) 9.
-h"@9)7
+h"@9	7
 ;h@)9\A)<
 H @9`b
-h*[9)c
-h">9e
 h&#9F
 h'@9h
 h"~9h
@@ -16569,13 +16577,18 @@ h.@9H
 h*@9H
 (H@9h
 H @9h"
-h"@9i/
-h"@9I:
+h"@9i=
+h"@9I/
 H @9i @9
+h"@9ib
 h"@9IL
 h&@9k
+h"@9	L
+,H@9MF
 H9	ShM(
 H9	S(M(
+h">9u
+h:>9W
 	*h:A
 h%A)`
 )h>A9
@@ -16665,6 +16678,7 @@ hb~9`
 hb@9`
 hb@9	
 =hB@9
+hB>9+
 hB?9>
 hB@9(
 hB@9)
@@ -16681,10 +16695,9 @@ h"B9H
 hB@9H
 H'B9h
 h*B9i
-hB`9iN
+hB`9)N
 hB@9t
 hB@9u"@
-hB>9X
 h&^)b:A
 hbA9(
  @-hBa9	
@@ -16703,14 +16716,15 @@ hbb9`j
 hBD9i
 hbF9(#
 hbF99
+hBF9	b
 hbF9h
 hBF9h
-hBF9Ib
 H-bN@
 hbN9tB
 hbN9v
 hBP9t"
 hBR9H
+hBR9iS
 hbS9(
 hbS9H
 hBS9H
@@ -16959,7 +16973,7 @@ h*F)7	@
 hf@9_
 hf@9(
 hF@9)
-hf@9a
+hf@9A
 hf@9h
 *hf@9H
 hf@9H
@@ -17086,19 +17100,19 @@ hi,xk
 h&_)j
 h&@-j
 H%@)J	@
+hj48D
 hj`9H
 hJ\9v
 hj@9yF@
 hjb9T6
 hjG9)
-hJk9tH
+hJk94H
 *hjl9
 hjl9h
 hjR9h
 hjR9v
 hJR9v
 hjS9I6
-hjT95?
 hJv9(
 hj@y 
 h&^-k.@
@@ -17157,7 +17171,7 @@ holdtime
 holdTime
     hold time: %f
 holiday_restriction
-Home Team Won
+Home Team Won and was not a combat mirroring source.
 Home Team Won - %d damage applied to away team.
 hood_of_defiance_new
 hook_speed
@@ -17229,12 +17243,14 @@ h&Q)j
 "	)hR
 hr@9(
 hR~9(
+hr>9$h
 hr@9h
 hr@9H
 h*R9h
 hR]9h
 hR@9h
 hR~9H
+hR>9Je
 h*R9t
 hRB9`
 h@)`RD
@@ -17303,6 +17319,7 @@ H'@yh'
 h:@yi
 h&@yi"
 h">yI
+h&@yi5
 hype_burn
 hype_pct
 hype_per_demon
@@ -17336,7 +17353,7 @@ i1xhj*
 i1xjj,
 *i2>9
 i2>9(
-*i2>9F
+*i2>99
 i2>9h
 i2l9v2,
 @i4^_
@@ -17371,6 +17388,7 @@ i+8Ki@9k
 i*8*Y@
 )i@9	
 I9bzD
+i*`9Hb
 I9hFC
 )I@9I
 I9(ih
@@ -17399,8 +17417,9 @@ i"B9i
 i#B9i
 ib@9j
 ib@9l
-ib!9r)
+ib!9r%
 iBB9hn@
+iBB9hN
 !^ibE
 iBF9hb@
 i*B)h
@@ -17536,7 +17555,6 @@ I CUtlRBTree<CUtlMap<int, CPlayerAchievementState *, unsigned short, bool (*)(co
 I CUtlRBTree<CUtlMap<int, CUtlVector<CEntityDebugGameSystem::DebugScrollingMessage_t, CUtlMemory<CEntityDebugGameSystem::DebugScrollingMessage_t, int> > *, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short, CUtlMap<int, CUtlVector<CEntityDebugGameSystem::DebugScrollingMessage_t, CUtlMemory<CEntityDebugGameSystem::DebugScrollingMessage_t, int> > *, unsigned short, bool (*)(const int &, const int &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, CUtlVector<CEntityDebugGameSystem::DebugScrollingMessage_t, CUtlMemory<CEntityDebugGameSystem::DebugScrollingMessage_t, int> > *, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<int, CUtlVector<CEntityDebugGameSystem::DebugScrollingMessage_t, CUtlMemory<CEntityDebugGameSystem::DebugScrollingMessage_t, int> > *, unsigned short, bool (*)(const int &, const int &)>::Node_t, I = unsigned short, L = CUtlMap<int, CUtlVector<CEntityDebugGameSystem::DebugScrollingMessage_t, CUtlMemory<CEntityDebugGameSystem::DebugScrollingMessage_t, int> > *, unsigned short, bool (*)(const int &, const int &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, CUtlVector<CEntityDebugGameSystem::DebugScrollingMessage_t, CUtlMemory<CEntityDebugGameSystem::DebugScrollingMessage_t, int> > *, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<int, CUtlVector<CVScriptGameEventListener::GameEventFunc_t, CUtlMemory<CVScriptGameEventListener::GameEventFunc_t, int> > *, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short, CUtlMap<int, CUtlVector<CVScriptGameEventListener::GameEventFunc_t, CUtlMemory<CVScriptGameEventListener::GameEventFunc_t, int> > *, unsigned short, bool (*)(const int &, const int &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, CUtlVector<CVScriptGameEventListener::GameEventFunc_t, CUtlMemory<CVScriptGameEventListener::GameEventFunc_t, int> > *, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<int, CUtlVector<CVScriptGameEventListener::GameEventFunc_t, CUtlMemory<CVScriptGameEventListener::GameEventFunc_t, int> > *, unsigned short, bool (*)(const int &, const int &)>::Node_t, I = unsigned short, L = CUtlMap<int, CUtlVector<CVScriptGameEventListener::GameEventFunc_t, CUtlMemory<CVScriptGameEventListener::GameEventFunc_t, int> > *, unsigned short, bool (*)(const int &, const int &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, CUtlVector<CVScriptGameEventListener::GameEventFunc_t, CUtlMemory<CVScriptGameEventListener::GameEventFunc_t, int> > *, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<int, Entity2Networkable_t, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short, CUtlMap<int, Entity2Networkable_t, unsigned short, bool (*)(const int &, const int &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, Entity2Networkable_t, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<int, Entity2Networkable_t, unsigned short, bool (*)(const int &, const int &)>::Node_t, I = unsigned short, L = CUtlMap<int, Entity2Networkable_t, unsigned short, bool (*)(const int &, const int &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, Entity2Networkable_t, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short>, unsigned short>]
-I CUtlRBTree<CUtlMap<int, float, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short, CUtlMap<int, float, unsigned short, bool (*)(const int &, const int &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, float, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<int, float, unsigned short, bool (*)(const int &, const int &)>::Node_t, I = unsigned short, L = CUtlMap<int, float, unsigned short, bool (*)(const int &, const int &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, float, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<int, GCSDK::CSOIDNameInfo, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short, CUtlMap<int, GCSDK::CSOIDNameInfo, unsigned short, bool (*)(const int &, const int &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, GCSDK::CSOIDNameInfo, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<int, GCSDK::CSOIDNameInfo, unsigned short, bool (*)(const int &, const int &)>::Node_t, I = unsigned short, L = CUtlMap<int, GCSDK::CSOIDNameInfo, unsigned short, bool (*)(const int &, const int &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, GCSDK::CSOIDNameInfo, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<int, int, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short, CUtlMap<int, int, unsigned short, bool (*)(const int &, const int &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short>, unsigned short> >::NewNode(const T *) [T = CUtlMap<int, int, unsigned short, bool (*)(const int &, const int &)>::Node_t, I = unsigned short, L = CUtlMap<int, int, unsigned short, bool (*)(const int &, const int &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<int, int, unsigned short, bool (*)(const int &, const int &)>::Node_t, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<item_definition_index_t, item_definition_index_t, int, CDefLess<item_definition_index_t> >::Node_t, int, CUtlMap<item_definition_index_t, item_definition_index_t, int, CDefLess<item_definition_index_t> >::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<item_definition_index_t, item_definition_index_t, int, CDefLess<item_definition_index_t> >::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<item_definition_index_t, item_definition_index_t, int, CDefLess<item_definition_index_t> >::Node_t, I = int, L = CUtlMap<item_definition_index_t, item_definition_index_t, int, CDefLess<item_definition_index_t> >::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<item_definition_index_t, item_definition_index_t, int, CDefLess<item_definition_index_t> >::Node_t, int>, int>]
@@ -17675,10 +17693,9 @@ I-!H#
 )ih8?
 )ih8Hyh
 )ih8Ii(8
-(Ih8Ij
 (ih8*ij8+ik8,il8-im8.in8/io80ip81iq82ir8"ib8#ic8$id8%ie8&if8)i`8
-(ih8)j
 (ih8	j
+(Ih8	j
 IHandleEntity
 IHasAttributes
 I("hq
@@ -17726,7 +17743,7 @@ ij,8kj*8mj(8H0
 iJ[9(H
 iJB9)
 ijj8?
-ijS9HI
+ijS9(I
 ijw8*
 )ijx?
 *ijx_
@@ -17784,6 +17801,7 @@ Illegal jstype for int64, uint64, sint64, fixed64 or sfixed64 field:
 iLockedSentence
 )ilxi
 i*?)m
+!	@)iM
 im_about_to_break_talent
 image_banner
 image_inventory
@@ -18713,8 +18731,9 @@ IsValidEntity
 is_verified
 is_wallet_cash_trusted
 iszString
+!	@)IT
 )it8?}
-i*T9hI
+i*T9HI
 #It contains connectivity part %d with %d vertices
 iTeamNum
 item_*
@@ -18909,6 +18928,7 @@ i*xh>@yt:
 i*xh>@yu:
 ixhy*xh
 *+i,xi
+i)xiN
 *i-xi>@yj:
 *i,xi>@yj:
 *i.xi>@yj:
@@ -18939,15 +18959,20 @@ j.@)_
 @-J	,
 @-J	@
 J-` $
+j08a*
+j08nF
+j08pF
 J0@y_
 J0@yI
 J0@yk!F
+j18qF
+j1xq*
 j2?)?
+j28qF
 j28R`
+j28rF
 j2W-m
 j2@yh
-j48(]
-j487L
 j48	C
 j48t^@
 j4xH;@
@@ -18955,66 +18980,67 @@ j58h/
 j58hC
 j58HC
 j58hf@9(
+j58{V
 J5@y_
-j68`]
-J682q
-J68eq
-j68hi
-j68hX
-j68,s
+j68Hb
+j68HV
+j68(i
 j68u*@
 j68v&@
+j68(X
 j6@9(
+j-8-&
 j/8.#
 j.8.!
 j.8)!
+j(8(-
 j(8(!
-j(8("
-j)8:!
 j)8	 
 j)8	?
+j)8	.
 j)8	"
+j)8	)
 j)8	#
 j+8*!
 j+8+!
-j(8(0
 j*8	2
 j)8	7
+j(8(e
 j(8h"
-j(8H-
-j(8H'
-j)8H)
-j(8he
+j)8h)
+j(8H)
+j(8H0
+j(8He
 j(8Hk
 j(8hl
 j(8Hr
 j(8h&Yy
 j)8i"
 j)8	I
-j)8I.
-j)8I)
-j*8)I
+j*8	I
 j)8ID
 j)8ik
 j)8`j
+j*8j.
 j*8j"
+j*8j)
+j*8j*
+j*8JX
+j+8k)
 j-8K,
-j)8)K
+j)8	K
 j+8K:
 j`8'k`8
 j+8Kd
 j+8KH
-j+8kM
 j,8LH
 j,8Lr
 j-8m"
 j-8M,
-j-8M&
+j+8+M
 j-8MV
 j)8	o
-j+8*R
 j)8	V
-j;8(W
 j)8Z0
 J!@9_
 J!@9#
@@ -19073,7 +19099,6 @@ jiggle bone %u
 JIIJJ}
 jiix_
 Jiix)1
-jij8Kj
 Jikx_
 Jikx_!!k
 JiMIJ+
@@ -19084,7 +19109,6 @@ jj)8`
 j!JJ+
 j!JJK
 !JJK|
-jj)xb
 	J"}	K
 )+J)-#K)+3L)
 Jki8_5
@@ -19176,18 +19200,17 @@ jV@y)|@
 jV@y!y|
 jV@y:yt
 jV@y!yt
-j,x,!
 j.x.!
-j)x))
-j)x	"
+j(x("
+j)x	)
 j)x		
-j+x++
 j)x	4
 J!_x_!5k
 j)x	g
-j(xH"
 j$xij.
+j*xJ)
 j)x	l
+j-xm*
 j-xM 
 j-xM*
 j-xM8
@@ -19195,7 +19218,6 @@ j-xMF
 j-xMT
 j.xN.
 j)x	O
-j(x(R
 J!@y)}@
 JYix*$
 Jykx)ij
@@ -19206,8 +19228,9 @@ _!(k#
 &@)k	
 	*_!;k
 	*_!(k
-!	@)[K
+	k!(:
 ('K)_
+($@)K
 	K	}@
 K)@)-
 (@)k0@)n
@@ -19222,11 +19245,13 @@ k2	)j~
 k2Q)m
 *k2@y
 ?k58D
-k68K)
+?k68z
+?k78:
+*?k78
 ?k78h
-k78h>
-*?k78w
+k78H>
 	K!8"
+?k88z^
 k(8vV@
 ?){K9_
 @){K9_
@@ -19238,6 +19263,7 @@ K9	S)M+
 K9	S+M+
 K)A)+)
 Ka@9+
+KA_9H
 kA@9J}@
 Ka@9k
 K	A9lC
@@ -19264,7 +19290,6 @@ _!(kc
 _!(kC
 K-#c@
 kCyi&A
-($@)K=D
 ))Ke@9k
 k_eActionType_Placholder
 k_eAlreadyClaimed
@@ -20188,7 +20213,6 @@ KI`9K
 kickid %d CBaseEntity::InputKill()
 kicxJ
 ?kIG9
-Kih8*j
 Kih8Ki)8Mi(8
 kijxJ1
 kill_all_bots
@@ -20578,7 +20602,6 @@ LightStyles
 lighttype
 LightType_t
 lightworld
-lih8Kj
 Liixi
 Lik8m
 L@I@L
@@ -22455,6 +22478,7 @@ m_flJoystickAnalogValueY
 m_flKillDelay
 m_flKillMultiplier
 m_flKillRate
+m_flKills
 m_flLaggedMovementValue
 m_flLastAccess
 m_flLastAngVelocity
@@ -22769,6 +22793,7 @@ m_flTimeWeaponIdle
 m_flTonemapMinAvgLum
 m_flTonemapPercentBrightPixels
 m_flTonemapPercentTarget
+m_flTotalKills
 m_flTotalMass
 m_flTouchOutputPerEntityDelay
 m_flTraceHeight
@@ -23541,6 +23566,7 @@ m_keyPoints
 m_keyPoints[0]
 m_keyPoints[1]
 mktime
+!	@)mL
 m_ladderSurfaceProps
 m_LastCmd
 m_lastDamageAmount
@@ -24152,7 +24178,6 @@ m_nTimeZone
 m_nTotalDamageGiven
 m_nTotalExperience
 m_nTotalHealingDone
-m_nTotalKills
 m_nTotalTicks
 m_nTotalTicksThisFrame
 m_nTouchers
@@ -25954,7 +25979,6 @@ m_unHorizontalAlign
 m_unHumanPlayerSlot
 m_unHumanPlayerSlot != INVALID_PLAYER_SLOT
 m_unItemID
-m_unKills
 m_unKillStreak
 m_unOrientation
 m_unOverrideOrigin
@@ -26272,6 +26296,7 @@ m_zmin
 'N(  
 "N(  
 $N(  
+\-.}N
 #N(  
 #N)	}	
 %N(  
@@ -26364,7 +26389,7 @@ N5GCSDK17CGCClientProtoJobI31CMsgGCToClientPollConvarRequestEE
 N5GCSDK17CGCClientProtoJobI35CMsgGCToServerUpdateConsoleCommandsEE
 N5GCSDK17CGCClientProtoJobI36CMsgGCToServerCancelAllocateForMatchEE
 N5GCSDK17GCClientJobLambdaIZN14CDAC_GM_Puzzle12StartNewGameERK10CUtlVectorIPK15CDACPlayerState10CUtlMemoryIS5_iEEE3$_0EE
-N5GCSDK17GCClientJobLambdaIZN14CDAC_GM_Puzzle13OnCombatEndedEPK15CMsgRoundCombatE3$_6EE
+N5GCSDK17GCClientJobLambdaIZN14CDAC_GM_Puzzle13OnCombatEndedEPK15CMsgRoundCombatbE3$_7EE
 N5GCSDK18CSharedObjectCacheE
 N5GCSDK21ISharedObjectListenerE
 N5GCSDK22CGCSOUpdateMultipleJobE
@@ -26392,7 +26417,6 @@ N)!9,
 N@9hN
 N9	S.M.
 n9@yN
-!	@)nA
 n	A9-
 nA9hn
 NA9iN
@@ -27273,7 +27297,7 @@ NSt6__ndk110__function6__funcIZN12CDAC_PB_Bot221RerollShopIfNecessaryEvE3$_7NS_9
 NSt6__ndk110__function6__funcIZN12CNavDrawArea18DrawConnectedAreasERK8CNavAreaPK6VectorffPK9IPathCostE3$_0NS_9allocatorISC_EEF21NavSearchAreaResult_tRS3_P19NavSearchAreaInfo_tEEE
 NSt6__ndk110__function6__funcIZN12CNavDrawMesh13DrawJumpLinksER8CNavMesh9NavHull_tRK6VectorffE3$_1NS_9allocatorIS9_EEFbP8CNavAreaEEE
 NSt6__ndk110__function6__funcIZN13CDACGameRules12SetGameStateE10EGameState11ERoundStateifE4$_20NS_9allocatorIS5_EEFvP13IDACPlayerBotEEE
-NSt6__ndk110__function6__funcIZN13CDACGameRules13OnCombatEndedEPK15CMsgRoundCombatE3$_6NS_9allocatorIS6_EEFviPK10KeyValues3EEE
+NSt6__ndk110__function6__funcIZN13CDACGameRules13OnCombatEndedEPK15CMsgRoundCombatbE3$_6NS_9allocatorIS6_EEFviPK10KeyValues3EEE
 NSt6__ndk110__function6__funcIZN13CDACGameRules14OnUnitSummonedEP8CDAC_NPCS4_E4$_13NS_9allocatorIS5_EEFviPK10KeyValues3EEE
 NSt6__ndk110__function6__funcIZN13CDACGameRules16SetGameStatePostE10EGameState11ERoundStateiE4$_21NS_9allocatorIS5_EEFvP13IDACPlayerBotEEE
 NSt6__ndk110__function6__funcIZN13CDACGameRules22PlayerOrder_ReRollShopE12PlayerSlot_tjE4$_15NS_9allocatorIS4_EEFviPK10KeyValues3EEE
@@ -27429,6 +27453,7 @@ NuZ@-wbA-
 nValue
 ?(?N=w
 ?N=w'
+!	@)NW
 NWay( 
 nWinnerTeamNumber == TEAM_HOME || nWinnerTeamNumber == TEAM_AWAY
 Nx	V @M
@@ -27498,7 +27523,6 @@ O6v2@
 o6vB@
 o-!8#
 o9#	 
-"O9#	
 ? !o^A?
 objc_class_prefix
 object_data
@@ -27788,7 +27812,6 @@ o}Xot#
 @-p	@
 ($?)P
 @-P	@
-*-@)!P%
 *#P);
 p2A-r
 p;4,F
@@ -27797,7 +27820,6 @@ p6hF@
 P6hJ@
 P6hN@
 p6hvA
-p6hVA9
 P6hzB9	6
 P6i6@
 P6iB@
@@ -29337,27 +29359,25 @@ q-@	*
 q;4,F
 Q8?33
 Q8q(2
+	q)9_
 Q"@9?
 Q9@)+
-	Q?9_a?9
-	Q'9_a'9
 Q9bjD
-(q.9eX
+	q 9H
 q@9HA
 Q9hrD
 Q9hvD
 Q9i"@
+Q9!iN
 Q9l.G
 Q9m.G
 Q9n.G
-Q@9z{
 	qA9?
 qangle
 QAngle-world
 Q-b)"
 	QB9i
 ?@@qC
-q@)(=D
 QD-{(#
 qD	@za
 ?qe?A
@@ -29379,6 +29399,7 @@ Qn=@-s	@
 qo[k!
 ~-QQC-
 ?\qqTn
+!	@)QT
 )QU9)
 quAKJ
 qualities
@@ -29424,7 +29445,6 @@ QuitServer() executing "quit"
 _quote
 %qVDM
 ?q?}WF
-!	@)r@
 "@:R".
 R-   
 R09(S
@@ -29534,7 +29554,6 @@ RB_8J
 RB9hR
 R~~C@
 r_cacheSequenceData
-`RCyI
 Reached an unintended state: CPPTYPE_MESSAGE
 Reached impossible case in HasBit().
 reading weapons from %s
@@ -30146,12 +30165,11 @@ RunTimeOfDayCommand
 	R)v4N
 r_VehicleViewDampen
 r@y`&@
-`R@y8x
+R@y00
 `R@yh
 R@yHq
 r@yhr
-`R@yMa
-`R@ynw
+R	yk/
 r	yt:
 --- %s: 
 "%s" 
@@ -30166,6 +30184,7 @@ r	yt:
 %s+--
 +++ %s: 
 s)~+@
+!	@)	S
 ?;? +S'
 )`>s0
 %s%02d
@@ -30195,7 +30214,7 @@ s2@9V
 [%s %.3f] Anim Event %d -> '%s'(%d)
 [%s %.3f] Sound event skipped because %i sound events were fired at once!
 *?S49
-(S49G
+(S49F
 %s : (%6.2f|%6.2f) %12s, %7.2f, source %s, target %s
 s69F~
 s7>Ip
@@ -31458,7 +31477,7 @@ skeletonRenderingEnableChanged
 SKii8
 skill
 skill.cfg
-%s  KILLS;  deceased %s, killer %s, kills %u, kill streak %u
+%s  KILLS;  deceased %s, killer %s, kills %1.f, kill streak %u
 Skin:
 skin_cp
 Skin: %d
@@ -32198,9 +32217,9 @@ static const ::Reflection::TypeID IToolObject::MyTypeID()
 static const ::Reflection::TypeID Reflection::Object::MyTypeID()
 StaticDecal
 static_recipe
+static void CDACCombatUniformRandomStream::Install()
+static void CDACCombatUniformRandomStream::Uninstall()
 static void CDAC_ShareCode_Util::ImportCell(PlayerSlot_t, const CDAC_ShareCode *, int, int)
-static void CDACUniformRandomStream::Install(int)
-static void CDACUniformRandomStream::Uninstall()
 static void CEntitySystem::DestroyEntitySystem()
 static void CGlobalConfigValueRegistry::HookUpConfigValue(const char *, ConfigType_t, ConfigValueType_t, CConfigValueOptions &&, const void **)
 static void CKV3TransferValHelper<EDACLobbyTeam, void>::LoadValue(CKV3TransferLoadContext *, const KeyValues3 *, TProtoEnum &) [T = EDACLobbyTeam, Enable = void, U = EDACLobbyTeam]
@@ -32815,8 +32834,8 @@ Switches to navmesh for the specified spawngroup
 Switching local lobby state to %s from %s
 Switching to server state %s from %s based upon the lobby being updated to this state
 %s (%x) spoke %s (%f)
-s@yaC
-S@yaC
+s@y!C
+S@y!C
 Symbol name "
 symbols
 Synchronously spawn an entity group from a list of spawn tables.
@@ -33095,6 +33114,7 @@ tf_escort_score_rate
 #TF_UnknownStyle
 _T)`*H
 TH'@)
+Th2@9
 Th2~9h
 Th2@9H
 Th2Cy)
@@ -33178,7 +33198,7 @@ they_hear_you
 Thf@9
 Thf@9(
 Th"F9
-Th"F9{h
+Th"F9;h
 ThF@9h
 Thfa9
 ThFp9
@@ -33235,6 +33255,7 @@ THROW HULL BLOCKED
 THROW POST BLOCKED
 THROW PRE BLOCKED
 ThR@y
+ThR@yyR
 ThrZ9
 Th*S9
 ThS@9i
@@ -33817,6 +33838,7 @@ U8mAU
 u9% &
 ]u9n5;> )"
 	uA9?
+uB.9Hn
 %u[%d]
 uD-@	D-
 udp_connect_ip
@@ -34348,7 +34370,6 @@ v8object
 v8value
 V8@yCx@9A|@9
 v@9iv
-!	@)vA
 ?(-\Va3
 VA9	2
 VA9hV
@@ -34578,7 +34599,6 @@ VguiScreen
 VGUI_Surface032
 VGUI_System010
 =vgU)z[@
-!	@)VH
 ?+Vh{O@
 Vh{O@n
 V-hV@
@@ -34613,7 +34633,6 @@ virtual CEntityInstance *CLoadingSpawnGroup::CreateEntityToSpawn(SpawnGroupHandl
 virtual float CDAC_GM_Puzzle::GetMaxCombatRoundDuration() const
 virtual_grant_item
 virtual_grant_items
-virtual int CDAC_GM_Normal::GetCombatRNGSeedForRoundNumber(int) const
 virtual int CNetworkSerializerBindingBuildFilter::GetFieldPriority(ClassIntrospectionHandle_t) const
 VirtualItem
 VirtualItemEquip
@@ -34624,6 +34643,7 @@ virtual_items
 Virtual item unlock is set to auto equip but is flagged as always being sent to the server. This can lead to ambiguous situations on which item is equipped
 virtual_item_unlocks
 virtual matrix3x4a_t CEntityLumpRequest::ComputeWorldOrigin(const char *, SpawnGroupHandle_t, IWorld *)
+virtual void CDACCombatUniformRandomStream::SetSeed(int)
 virtual void CDACGameRules::GameInit(const EventGameInit_t &)
 virtual void CDACGameRules::GameShutdown(const EventGameShutdown_t &)
 virtual void CDAC_GM_Duos::CalculateCombatAssignments(CUtlVector<const CDACPlayerState *>, CUtlVector<DACCombatAssignment_t> *)
@@ -34639,7 +34659,6 @@ virtual void CDAC_GM_Sandbox::OnSaveGameLoaded()
 virtual void CDAC_GM_TechPrototypeA::CalculateCombatAssignments(CUtlVector<const CDACPlayerState *>, CUtlVector<DACCombatAssignment_t> *)
 virtual void CDAC_GM_Tutorial::CalculateCombatAssignments(CUtlVector<const CDACPlayerState *>, CUtlVector<DACCombatAssignment_t> *)
 virtual void CDAC_GM_Tutorial::OnSaveGameLoaded()
-virtual void CDACUniformRandomStream::SetSeed(int)
 virtual void CGameEntitySystem::Spawn(int, const EntitySpawnInfo_t *)
 virtual void CHLTVDirector::SetHLTVServer(IHLTVServer *)
 virtual void *CNetworkFieldScratchData::Alloc(uint32)
@@ -34714,6 +34733,7 @@ void CConcreteEntityList::AllocEntityChunk(bool)
 void CConcreteEntityList::PreservePlayerNetworkables(int)
 void CDAC_Ability::SetCastPosition(Vector)
 void CDAC_AttackRecordManager::RemoveRecord(CDAC_AttackRecord *)
+void CDACCombatUniformRandomStream::TrackCallStack()
 void CDACEventSchema::Initialize(bool)
 void CDACGameRules::ApplyCombatPlayerDamage(CDACPlayerState *, CDACPlayerState *, int, const CompletedCombatResult_t &)
 void CDACGameRules::CalculateNextCombatAssignments()
@@ -34755,9 +34775,7 @@ void CDACPlayerState::OnLevelChanged(int)
 void CDACPlayerState::PreCalculateEndOfRoundRewards(int)
 void CDACPlayerState::RemoveUnit(CDACUnitState *, bool)
 void CDACPlayerState::TakeDamage(int, int)
-void CDACPlayerWinsLosses::CheckResetWinStreak()
 void CDACPlayerWinsLosses::QueueChangeForCombat(ERoundCombatResult)
-void CDACUniformRandomStream::TrackCallStack()
 void CEntitySystem::AddKeyToUnserialize(int, const CEntitySystem::ComponentFieldUnserializerInfo_t &, const char *, const char *, const char *, typedescription_t *, fieldtype_t, uint32, bool)
 void CEntitySystem::DataDesc_AddComponentFieldUnserializer(int, const CEntitySystem::ComponentFieldUnserializerInfo_t &, const char *, typedescription_t *)
 void CEntitySystem::DataDesc_AddComponentProceduralKeys(int, const char *, const char *, datamap_t *, bool, DynComponentUnserializerClassInfo_t *, CUtlMap<EntityKeyId_t, CUtlString, int> &)
@@ -34883,7 +34901,6 @@ _vpc_/unity_server_dota_auto_chess/androidarm64/../../../../../_generated_code/s
 _vpc_/unity_server_dota_auto_chess/androidarm64/../../../../../_generated_code/server_dota_auto_chess/release/androidarm64/../../../../game/server/dac/dac_npc.cpp
 _vpc_/unity_server_dota_auto_chess/androidarm64/../../../../../_generated_code/server_dota_auto_chess/release/androidarm64/../../../../game/server/dac/dac_underlord_thinker.cpp
 _vpc_/unity_server_dota_auto_chess/androidarm64/../../../../../_generated_code/server_dota_auto_chess/release/androidarm64/../../../../game/server/dac/gamemodes/dac_gm_duos.cpp
-_vpc_/unity_server_dota_auto_chess/androidarm64/../../../../../_generated_code/server_dota_auto_chess/release/androidarm64/../../../../game/server/dac/gamemodes/dac_gm_normal.cpp
 _vpc_/unity_server_dota_auto_chess/androidarm64/../../../../../_generated_code/server_dota_auto_chess/release/androidarm64/../../../../game/server/dac/gamemodes/dac_gm_puzzle.cpp
 _vpc_/unity_server_dota_auto_chess/androidarm64/../../../../../_generated_code/server_dota_auto_chess/release/androidarm64/../../../../game/server/dac/gamemodes/dac_gm_sandbox.cpp
 _vpc_/unity_server_dota_auto_chess/androidarm64/../../../../../_generated_code/server_dota_auto_chess/release/androidarm64/../../../../game/server/dac/gamemodes/dac_gm_streetfight.cpp
@@ -35084,6 +35101,7 @@ V_vscprintf
 V_vsnprintf
 V_vsnprintfSize
 V_vsnprintfWarnTrunc
+!	@)VW
 V_wcstod
 V_wcstoi64
 v\@-x
@@ -35098,7 +35116,6 @@ v>zlK9T
 W-!("
 W)` !
 w2@9b
-w2>9j{
 W3|Uxa
 W6	@@
 W6	4@
@@ -35119,6 +35136,7 @@ W6hN@
 W6hr@
 w6hv@
 w6hvA
+w6hVA9
 W6hzB9
 w6hZB9	2
 W6i~@
@@ -35424,6 +35442,7 @@ X6hfM9
 x6hJ@
 X6hn@
 X6hN@
+x6hZ@
 X6i:@
 x6ij@
 x6in@
@@ -35459,6 +35478,7 @@ _x_!"k
 xL9-C
 	xp_earned
 x_pos
+xR>9>
 ?XRQi
 xrYvpcf1
 xT)~)>
@@ -35618,6 +35638,7 @@ yl	@y,1
 *	@ym	@y
 y*M@yJ
 @Y_nA
+*@ync
 Yni5$.
 @yO	@
 yo_count
@@ -35653,7 +35674,6 @@ y+-@yk
 Yy?!!k
 YYYY-MM-DD
 YYYY-MM-DD hh:mm:ss
-!	@)z@
 Z0000
 z	?0e`9
 *z0x1
@@ -35669,6 +35689,7 @@ _Z6ConMsgPKcz
 _Z6DevMsgPKcz
 Z*=@8H
 z@9iz
+!z9l!
 ZA9?	
 ZA9iZ
 ZB9hZ
@@ -35717,7 +35738,7 @@ _ZN13CBufferString6SetPtrEPciibb
 _ZN13CBufferString8RemoveAtEii
 _ZN13CBufferString9StrFormatEPKcz
 ZN13CDACGameRules12SetGameStateE10EGameState11ERoundStateifE4$_20
-ZN13CDACGameRules13OnCombatEndedEPK15CMsgRoundCombatE3$_6
+ZN13CDACGameRules13OnCombatEndedEPK15CMsgRoundCombatbE3$_6
 ZN13CDACGameRules14OnUnitSummonedEP8CDAC_NPCS1_E4$_13
 ZN13CDACGameRules16SetGameStatePostE10EGameState11ERoundStateiE4$_21
 ZN13CDACGameRules22PlayerOrder_ReRollShopE12PlayerSlot_tjE4$_15

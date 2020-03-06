@@ -57,7 +57,7 @@
 		//SHADOW FRIEND
 		"dac_ability_shadow_fiend_requiem"										"영혼의 진혼곡"
 		"dac_ability_shadow_fiend_requiem_Description"							"그림자 마귀가 저주받은 자들의 영혼을 불러와 주위에 악마의 기운을 발산하여 폭발에 휩싸인 대상 모두에게 {s:damage}의 피해를 줍니다."
-		"dac_ability_shadow_fiend_requiem_Lore"									"리스털 궁정과 나는... 서로를 이해하지. - <i>세속적인 악마 아네식스</i>"
+		"dac_ability_shadow_fiend_requiem_Lore"									"리스털 궁정과 나는... 서로를 이해하지. - <i>지상에 묶인 악마 아네식스</i>"
 
 		//PHANTOM ASSASSIN
 		"dac_ability_phantom_assassin_coup_de_grace"							"최후의 일격"
@@ -84,7 +84,7 @@
 		"dac_ability_axe_culling_blade_Lore"									"도끼전사님은 사람들을 반으로 갈라버리는 일을 정말 잘하시죠.- <i>도끼전사의 음유시인 굿카인드</i>" 
 
 		"dac_ability_axe_counter_helix"											"반격의 나선"
-		"dac_ability_axe_counter_helix_Description"								"공격을 당하면 도끼전사가 {s:spin_chance}% 확률로 나선을 그리며 반격해 1칸 안에 있는 적 모두에게 {s:spin_damage}의 순수 피해를 줍니다."
+		"dac_ability_axe_counter_helix_Description"								"공격을 받으면 도끼전사가 {s:spin_chance}% 확률로 나선을 그리며 반격해 1칸 안에 있는 적 모두에게 {s:spin_damage}의 순수 피해를 줍니다."
 		"dac_ability_axe_counter_helix_Lore"									"그자를 갈라진 달에 들어오게 한 적이 한 번 있었지... 그 싸움이 벌어진 후 술집 전체를 싹 다 고쳐야 했지. - <i>줄이 도끼전사가 자기 술집에 다시 오지 못하는 이유를 설명하며 하는 말</i>" 
 
 		//RAZOR
@@ -157,7 +157,7 @@
 		//SNIPER
 		"dac_ability_sniper_assassinate"										"암살"
 		"dac_ability_sniper_assassinate_Description"							"저격수가 {s:castPoint}초 동안 적 유닛 하나를 조준한 후 엄청나게 파괴적인 탄환을 발사하여 대상에게 {s:damage}의 피해를 주고 짧은 기절에 빠뜨립니다. 언더로드를 대상으로 시전할 수 없습니다."
-		"dac_ability_sniper_assassinate_Lore"									"알겠지만, 난 단신족 공연을 개막 쇼로 넣곤 했었지. 관중들에게는 좋은 공연이었지만 책임 보험 면에서는 좋지 않았어. - <i>핵심에 초점을 맞추는 그렉</i>"
+		"dac_ability_sniper_assassinate_Lore"									"알겠지만, 난 단신족 공연을 개막 공연으로 넣곤 했었지. 관중들에게는 좋은 공연이었지만 책임 보험 면에서는 좋지 않았어. - <i>핵심에 초점을 맞추는 그렉</i>"
 
 		//NECROLYTE
 		"dac_ability_necrophos_death_pulse"										"죽음의 파동"
@@ -367,7 +367,7 @@
 		
 		//BLOODSEEKER
 		"dac_ability_bloodseeker_blood_rage"									"피의 분노"
-		"dac_ability_bloodseeker_blood_rage_Description"						"지속 효과: 혈귀가 매초 최대 체력의 {s:self_dmg_pct}%에 해당하는 피해를 받습니다.<br><br>혈귀가 체력을 잃으면 {s:min_health_pct}%의 체력에 최대 {s:attack_speed_bonus_max}의 공격 속도를 얻습니다.<br><br>인접한 적이 죽을 때마다, 최대 체력의 {s:heal_pct}%를 회복합니다."
+		"dac_ability_bloodseeker_blood_rage_Description"						"지속 효과: 적이 체력을 잃으면 {s:min_health_pct}%의 체력일 때 혈귀가 최대 {s:attack_speed_bonus_max}의 공격 속도를 얻습니다.<br><br>혈귀가 대상을 처치할 때마다, 최대 체력의 {s:heal_pct}%를 회복합니다."
 		"dac_ability_bloodseeker_blood_rage_Lore"								"내 일을 하면서 배운 게 하나 있다면, 대중들은 피를 좋아한다는 거야. 이 자를 고용하라고. - <i>결단력 있는 기획자 그렉</i>"
 		
 		//ARC WARDEN
@@ -377,7 +377,7 @@
 		
 		//ARC WARDEN
 		"dac_ability_arc_warden_tempest_double_no_items"						"이중 폭풍"
-		"dac_ability_arc_warden_tempest_double_no_items_Description"			"번개 감시자가 자신의 모습과 현재 체력을 그대로 본뜬 존재를 만들어냅니다"
+		"dac_ability_arc_warden_tempest_double_no_items_Description"			"번개 감시자가 현재의 체력을 똑같이 보유한 자신의 복제를 만들어 냅니다. 복제는 {s:clone_dmg_reduction}% 적은 피해를 가합니다."
 		"dac_ability_arc_warden_tempest_double_no_items_Lore"					"그자는 창조의 수수께끼를 가져왔다. - <i>난해한 예언자 투라스</i>"
 
 		//MIRANA
@@ -411,7 +411,7 @@
 
 		// Lone Druid Bear
 		"dac_ability_lone_druid_spirit_bear_entangle"							"휘감는 발톱"
-		"dac_ability_lone_druid_spirit_bear_entangle_description"				"영혼 곰이 공격 시 일정 확률로 대상을 휘감아 기절시킵니다."
+		"dac_ability_lone_druid_spirit_bear_entangle_description"				"영혼 곰이 공격 시 일정 확률로 대상을 휘감아 그 자리에 묶고 무장 해제합니다."
 		"dac_ability_lone_druid_spirit_bear_entangle_lore"						" "
 
 		// THUNDER LIZARD BLOODLUST
@@ -482,7 +482,7 @@
 
 		// BROODMOTHER
 		"dac_ability_broodmother_spawn_spiderlings"									"새끼거미 생성"
-		"dac_ability_broodmother_spawn_spiderlings_description"						"거미여왕이 자신의 새끼를 적에게 주입해 {s:damage}의 피해를 줍니다. 적이 죽으면 새끼거미 {s:num_spiderlings}마리가 부화합니다. 새끼거미는 대상으로 지정할 수 없는 유닛이며 약한 피해를 주고 1의 체력을 지닙니다."
+		"dac_ability_broodmother_spawn_spiderlings_description"						"거미여왕이 자신의 새끼를 적에게 주입해 {s:damage}의 피해를 줍니다. 적이 죽으면 새끼거미 {s:num_spiderlings}마리가 부화합니다. 새끼거미는 대상으로 지정할 수 없는 유닛이며 약한 피해를 주고 1의 체력을 보유합니다."
 		"dac_ability_broodmother_spawn_spiderlings_lore"							"이봐. 난 사람들을 산 채로 태워버릴 수도 있지만, 적어도 사람 안에 알을 낳지는 않는다고... - <i>홉겐이 얼버무리며 하는 말</i>"
 
 		"dac_ability_broodmother_spin_web"											"거미줄 치기"

@@ -240,6 +240,9 @@
 	"DAC_PurchaseEvent_AlreadyOwned"					"Ya tienes esta temporada"	
 	"DAC_PurchaseEvent_SuccessTitle"					"Listo"
 	"DAC_PurchaseEvent_SuccessBody"						"¡Compraste con éxito el pase de batalla!"
+	"StoreCheckout_Error_Title"							"Error"
+	"StoreCheckout_CannotPurchase"						"No se puede comprar el artículo"
+
 
 
 	"DAC_PurchaseEventCurrency_ErrorTitle"				"Error"
@@ -500,6 +503,7 @@
 	"DAC_GenericError_RegionInfoNotProvided"			"Para jugar en línea, debes registrar tu cuenta."
 	"DAC_GenericError_DurationControlBlocked"				"Has excedido el tiempo que puedes jugar en línea."
 
+	"DAC_PurchaseError_NotSignedIn"						"Para realizar cualquier compra, debes iniciar sesión en Steam."
 	"DAC_PurchaseError_NotConnectedToGC"				"Debe estar conectado a la red de Dota Underlords para realizar cualquier compra"
 	"DAC_PurchaseError_NoResponse"						"No se pudo conectar con la red de Dota Underlords en este momento. Inténtalo de nuevo en unos minutos."
 	"DAC_PurchaseError_InternalError"					"Se produjo un error inesperado al intentar verificar que este artículo se puede comprar. Inténtalo de nuevo más tarde."
@@ -512,6 +516,11 @@
 	"DAC_PurchaseError_InvalidQuantity"					"La cantidad solicitada no es válida para este artículo."
 	"DAC_PurchaseError_OutstandingReservations"			"Hay compras pendientes para este artículo que ya están en proceso. Borra o completa esas compras para comprar más."
 	"DAC_PurchaseError_ExceedsCreditLimit"				"Ya tienes demasiados créditos pendientes en esta cuenta. Gástalos antes de comprar otros nuevos."
+
+	"DAC_PurchaseError_InternalStore"					"Se produjo un error inesperado al intentar comprar el artículo."
+	"DAC_PurchaseError_CannotPurchase"					"Tu cuenta no puede realizar compras."
+	"DAC_PurchaseError_MissingItem"						"Hubo un error inesperado. No se encuentra el artículo."
+	"DAC_PurchaseError_Cancelled"						"La compra fue cancelada."
 
 	"DAC_ReservationError_NoResponse"					"No se pudo conectar con la red de Dota Underlords en este momento. Inténtalo de nuevo en unos minutos."
 	"DAC_ReservationError_InternalError"				"Hubo un error inesperado. Inténtalo de nuevo más tarde."
@@ -851,9 +860,9 @@
 	"dac_hero_hint_line_stun"							"La habilidad aturde enemigos"
 	"dac_hero_hint_ramping_damage"						"El daño aumenta con el paso del tiempo"		
 	"dac_hero_hint_jumping_movement"					"Salta hacia los enemigos"
-	"dac_hero_hint_teleport_movement"					"Se teletransporta hacia los enemigos"
+	"dac_hero_hint_teleport_movement"					"Se teletransporta a los enemigos"
 	"dac_hero_hint_high_single_target_damage"			"Mayor daño a un solo objetivo"
-	"dac_hero_hint_high_group_damage"					"Mayor daño a multiples objetivos"
+	"dac_hero_hint_high_group_damage"					"Daño elevado de grupo"
 	"dac_hero_hint_aoe_ministun"						"Miniaturdimiento a enemigos cercanos"
 	"dac_hero_hint_freezes_enemies"						"Congela a los enemigos"
 	"dac_hero_hint_aoe_silence"							"Silencia una zona amplia"
@@ -1558,7 +1567,7 @@
 	"DAC_InGame_UnitDPS_Query"							"DPS: <span class=\"Count\">{i:attack_dps}</span>"
 	"DAC_InGame_UnitHP_Query"							"Vida: <span class=\"Count\">{i:selectedUnitHP}</span>"
 	"DAC_InGame_UnitArmor_Query"						"Armadura: <span class=\"Count\">{i:selectedUnitArmor}{s:selectedUnitBonusArmor}</span>"
-	"DAC_InGame_KillCount_Query"						"Víctimas: <span class=\"Count\">{d:kill_count}</span>"
+	"DAC_InGame_KillCount_Query"						"Víctimas: <span class=\"Count\">{f:kill_count}</span>"
 	"DAC_InGame_KillStreak_Query"						"Racha de víctimas: <span class=\"Count\">{d:kill_streak}</span>"
 	"DAC_InGame_DuelBonusDamage_Query"					"Daño adicional de duelo: <span class=\"Count\">{d:duel_bonus_damage}</span>"
 	"DAC_InGame_BrawnyKillCount_Query"						"Total de víctimas de fornidos: <span class=\"Count\">{f:brawny_kills}</span>"
@@ -2207,6 +2216,20 @@
 	"DAC_Battlepass_YouHaveOneLockedReward"				"Tienes 1 recompensa bloqueada"
 	"DAC_Battlepass_YouHaveLockedRewards"				"Tienes {i:num_locked_rewards} recompensas bloqueadas"
 	"DAC_Purchase"										"Comprar"
+	"DAC_Battlepass_ItemOdds"							"Probabilidad de objeto"
+	
+	"DAC_ItemOdds_Title"								"Probabilidad de tesoro aleatorio"
+	"DAC_ItemOdds_BoardPropHeader"						"Probabilidad de decoraciones del tablero"
+	"DAC_ItemOdds_BoardPropDescription"					"Hay 20 objetos de tablero aleatorios en el pase de batalla. Estos salen de una lista de 20 objetos de tablero, y no puedes obtener duplicados. Los jugadores que compren el pase de batalla y alcancen el nivel 100 desbloquearán todos los objetos de tablero. 4 de los objetos de tablero aleatorio son gratuitos y se pueden desbloquear (junto con las recompensas gratuitas) si es que el jugador llega al nivel adecuado del pase de batalla. Los objetos de tablero son totalmente estéticos y no afectan las partidas."
+	"DAC_ItemOdds_StreetFightItemsHeader"				"Probabilidad de objeto de Pelea Callejera"
+	"DAC_ItemOdds_StreetFightItemsDescription"			"Hay 8 objetos aleatorios de Pelea Callejera en el pase de batalla y 40 objetos aleatorios de Pelea Callejera como recompensa en Conquista de la Ciudad, 12 objetos por Underlord. Los objetos se seleccionan de una lista no duplicada por cada Underlord, y las probabilidades son las mismas dentro de cada categoría. Estos objetos solo se pueden usar en las peleas callejeras de Conquista de la Ciudad (contenido para un jugador), y no afecta las partidas de JcJ.
+
+Los objetos de cada Underlord se seleccionan de listas identicas, y no están duplicados en las mismas. Sin embargo, diferentes Underlords pueden obtener el mismo objeto. De esta manera no recibirás dos Claymore por Enno, es posible que recibas un Claymore por Enno y un Claymore por Anessix."
+	"DAC_ItemOdds_StreetFightItemsHeaderTier1"			"Objetos de categoría 1: 1 obtención por Underlord"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier2"			"Objetos de categoría 2: 3 obtenciones por Underlord"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier3"			"Objetos de categoría 3: 5 obtenciones por Underlord"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier4"			"Objetos de categoría 4: 2 obtenciones por Underlord"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier5"			"Objetos de categoría 5: 1 obtención por Underlord"
 
 	"GenericConfirmText_Label"							"Confirmar"
 	"DAC_PurchaseError_Title"		"No se puede comprar"
@@ -2517,7 +2540,7 @@
 
 	"DAC_Synergy_Desc_Summoner"			"Todas las unidades aliadas invocadas obtienen +{s:damage_percent}% de daño."
 	
-	"DAC_Synergy_Desc_Vigilant"			"Cada vez que una unidad enemiga lanza un hechizo, se convierte en el objetivo de {s:alliance_eligible} si se encuentra a su alcance."
+	"DAC_Synergy_Desc_Vigilant"			"Cada vez que una unidad enemiga lanza un hechizo, se convierte en el objetivo de la alianza de {s:alliance_eligible}, si está a su alcance. El daño del siguiente ataque contra ese objetivo aumenta en un {s:damage_percent}%."
 	
 	"DAC_Synergy_Desc_Void"				"Todos los héroes aliados tienen un {s:proc_chance}% de probabilidad de infligir un {s:pure_damage_percent}% adicional del máximo de vida del objetivo como daño puro."
 
@@ -3511,7 +3534,7 @@
 	"dac_hotkey_scroll_camera_up_desc" 				"Mover la cámara más arriba"
 	"dac_hotkey_scroll_camera_down_desc" 			"Mover la cámara más abajo"
 	"dac_hotkey_tilt_camera_modifier_desc" 			"Mantén presionada para ajustar la cámara. Toca para restablecer."
-
+	"dac_hotkey_board_spray_desc"					"Colocar el grafiti para el tablero en el cursor."
 	"dac_hotkey_alliances_tab"						"Ver la pestaña Alianzas."
 	"dac_hotkey_dps_tab"							"Ver la pestaña DPS."
 	"dac_hotkey_items_tab"							"Ver la pestaña Objetos."
@@ -3599,14 +3622,14 @@
 	"DAC_Hero_Odds_Tier2"							"Unidades de categoría 2: {s:odds_tier_2}%"
 	"DAC_Hero_Odds_Tier3"							"Unidades de categoría 3: {s:odds_tier_3}%"
 	"DAC_Hero_Odds_Tier4"							"Unidades de categoría 4: {s:odds_tier_4}%"
-	"DAC_Hero_Odds_Tier5"							"Ases: {s:odds_tier_5}%"
+	"DAC_Hero_Odds_Tier5"							"Unidades de categoría 5: {s:odds_tier_5}%"
 
 	"DAC_Hero_Odds_Next_Level"						"El siguiente nivel"
 	"DAC_Hero_Odds_Tier1_Next"						"Unidades de categoría 1: {s:odds_tier_1_next}%"
 	"DAC_Hero_Odds_Tier2_Next"						"Unidades de categoría 2: {s:odds_tier_2_next}%"
 	"DAC_Hero_Odds_Tier3_Next"						"Unidades de categoría 3: {s:odds_tier_3_next}%"
 	"DAC_Hero_Odds_Tier4_Next"						"Unidades de categoría 4: {s:odds_tier_4_next}%"
-	"DAC_Hero_Odds_Tier5_Next"						"Ases: {s:odds_tier_5_next}%"
+	"DAC_Hero_Odds_Tier5_Next"						"Unidades de categoría 5: {s:odds_tier_5_next}%"
 
 	"DAC_Hero_Odds_Tier1_Short"							"{s:odds_tier_1}%"
 	"DAC_Hero_Odds_Tier2_Short"							"{s:odds_tier_2}%"
@@ -3633,7 +3656,8 @@
 	"DAC_CityCrawl_MostRecent"						"Más reciente"
 	"DAC_CityCrawl_RecommendedHeader"				"Más reciente:<br/><span class='RecommendedChallengeDesc'>{s:recommended_challenge}</span>"
 	"DAC_ChallengeGameModeRequirementsNotMet"		"Elige un modo de juego diferente para completar tu objetivo de Conquista de la Ciudad."
-	"DAC_ChallengeDifficultyRequirementsNotMet"		"Elige la dificultad extrema (EXP) para completar tu objetivo de Conquista de la Ciuda."
+	"DAC_ChallengeDifficultyRequirementsNotMet"		"Elige la dificultad extrema (EXP) del bot o juega en el modo multijugador para progresar en el pase de batalla."
+	"DAC_ChallengePrivateGameNotFull"				"Tu grupo debe estar lleno para progresar en el pase de batalla."
 
 	"DAC_Challenge_DodgeAttacks_Desc"				"Elude {s:threshold} ataques."
 	"DAC_Challenge_CritAttacks_Desc"				"Asesta {s:threshold} ataques críticos."
@@ -3781,10 +3805,11 @@
 	"DAC_LoadoutUnderlords"							"Cargar: Underlords"
 	"DAC_LoadoutGame"								"Cargar: Partida"
 	"DAC_LoadoutPlayer"								"Cargar: Jugador"
-	"DAC_LoadoutMapPropEditor"						"Cargar: editor de las decoraciones del mapa"
+	"DAC_LoadoutMapPropEditor"						"Equipamiento: editor de decoración del tablero"
 
 	"DAC_LoadoutEquip"								"Equipar"
 	"DAC_LoadoutEquipped"							"Equipado"
+	"DAC_EditBoardProps"							"Editar decoraciones del tablero"
 	"DAC_LoadoutEquip_Popup_Close"					"Cerrar"
 	"DAC_LoadoutEquip_Failed_Title"					"Imposible equipar el objeto"
 	"DAC_LoadoutEquip_Failed_Body"					"El objeto no se puede equipar en este momento. Inténtalo más tarde."
@@ -4097,6 +4122,7 @@
 	"DAC_Challenge_Popup_2_Valid_Modes"		"Modos de juego válidos: {s:game_mode_1}, {s:game_mode_2}"
 	"DAC_Challenge_Popup_1_Valid_Mode"		"Modos de juego válidos: {s:game_mode_1}"
 	"DAC_challenge_map_city_key_count"		"{d:city_keys}"
+	"DAC_challenge_map_objectives_count"	"{d:city_objectives}"
 
 	"DAC_Area_Inventory_Title"				"Mochila:"
 	"DAC_Area_Inventory_Description"		"Para mejorar a tu equipo en peleas callejeras futuras, podrán usarse {s:underlord_name} objetos desbloqueados en las peleas callejeras y en las recompensas del pase de batalla."
@@ -4378,6 +4404,7 @@
 	"DAC_Challenge_Street_Fight_Desc"			"¡Completaste la Pelea Callejera!"
 	"DAC_Challenge_Street_Fight_Lore"			"Grek. Compañero. Amigo. Te deberías haber quedado arreglando peleas... <i>&#8213;Hobgen, encargándose de un principiante</i>"
 
+	"DAC_Challenge_Puzzle_Desc"					"¡Rompecabezas completado!"
 	
 	"dac_challenge_difficulty_1"				"Fácil"
 	"dac_challenge_difficulty_2"				"Desafiante"
@@ -5089,7 +5116,7 @@
 
 	"DAC_Challenge_Puzzle_s1_jull3_title"	"Objetivos Confusos"
 	"DAC_Challenge_Puzzle_s1_jull3_quote"	"La gente viene a Luna Desgarrada porque pueden obtener libaciones que no hay en ningún otro lugar. ¿Mi coctel a base de Guardián de la Plaga tiene un recuento corporal? Sí. Pero los que sobreviven elogian la experiencia. <i>&#8213;Jull, mixólogo mortal</i>"
-	"DAC_Challenge_Puzzle_s1_jull3_lore"	"La incorporación de veneno de Guardián de la Plaga en sus cocteles, hizo que Jull consiguiera una silla entre Las Orquídeas Blancas. Pero llamarlo coctel... "cocktail" is generous... its basically just venom and Icewrack white."
+	"DAC_Challenge_Puzzle_s1_jull3_lore"	"La incorporación de veneno de Guardián de la Plaga en sus cocteles, hizo que Jull consiguiera un lugar entre Las Orquídeas Blancas. Pero llamarlo coctel... es generoso. Básicamente, es veneno y licor de Icewrack."
 
 	"DAC_Challenge_Puzzle_s1_jull4_title"	"Nadie Pasa a Sven"
 	"DAC_Challenge_Puzzle_s1_jull4_quote"	"Encontraré la forma de resolver este problema… <i>&#8213;Jull, rompiendo barreras</i>"
@@ -5345,7 +5372,7 @@
 
 	"DAC_Challenge_Puzzle_s1_anessix2_title"	"Ahora Los Ves…"
 	"DAC_Challenge_Puzzle_s1_anessix2_quote"	"Los Espíritus Hermanos pretenden imponerme restricciones… Admiro su dedicación, pero detesto su deseo de aceptar la futilidad. <i>&#8213;Anessix, la pesadilla de los espíritus</i>"
-	"DAC_Challenge_Puzzle_s1_anessix2_lore"		"Muchas fuerzas habían estado observando el ascenso al poder de Anessix, todos con preocupación... excepto los Espíritus Hermanos."
+	"DAC_Challenge_Puzzle_s1_anessix2_lore"		"Muchas fuerzas habían estado observando el ascenso al poder de Anessix, todos con preocupación... Pero solo los Espíritus Hermanos decidieron hacer algo al respecto."
 
 	"DAC_Challenge_Puzzle_s1_anessix3_title"	"Los Sirvientes de los Gemelos Despellejados"
 	"DAC_Challenge_Puzzle_s1_anessix3_quote"	"Resistirse a mi reinado, si bien es esperable, siempre es una decepción.<i>&#8213;La Corte de Ristul sobre el conflicto con los Gemelos Despellejados</i>"
@@ -5504,13 +5531,13 @@
 	"DAC_Challenge_Streetfight_bloodbounds_and_warlocks_Win"		"Las misteriosas desapariciones en Los Barrios llegan a su fin cuando Enno expulsa a los brujos"
 	"DAC_Challenge_Streetfight_bloodbounds_and_warlocks_Lose"		"¡Rumor! Gigantes pútridos acechan Los Barrios"
 	
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Title"		"Experimental Growth"
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Bot"		"Bloodbound Warlocks"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Title"		"Crecimiento experimental"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Bot"		"Brujos de Pacto"
 	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_BotDesc"		"bloodbounds_and_warlock Desc"
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Lore"		"It's not unusual to see Warlocks turn to the Warrens when they are looking for \"volunteers\" for their experiments."
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Quote"		"In which Enno declares that life may be cheap in White Spire, but his people aren't for sale"
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Win"		"Mysterious disappearances in The Warrens comes to an end as Enno drives out Warlocks"
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Lose"		"Rumor! Fleshgrafted giants stalk The Warrens"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Lore"		"No es raro ver a los brujos visitando Los Barrios cuando están buscando \"voluntarios\" para sus experimentos."
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Quote"		"Enno declara que la vida puede ser barata en Agujablanca, pero su gente no está a la venta"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Win"		"Las misteriosas desapariciones en Los Barrios llegan a su fin cuando Enno expulsa a los brujos"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Lose"		"¡Rumor! Gigantes pútridos acechan Los Barrios"
 	
 
 
@@ -5637,6 +5664,16 @@
 	"DAC_Challenge_Puzzle_intro_quote"			"Hobgen, Anessix, Jull y Enno estaban a punto de partir a la misión más peligrosa de apropiación de tierras. Hobgen tenía los ojos puestos en Nueva Tiniebla, el viejo territorio de Mamá Eeb. Jull se dirigía a Puerto Sombrío, en un esfuerzo por controlar las importaciones y exportaciones. El destino de Anessix era Pequeña Revtel y todo el dinero y los secretos que residen allí. Y Enno... Enno continuó siendo Enno y ahora buscaba convertirse en el soberano de Los Barrios."
 	"DAC_Challenge_Puzzle_intro_lore"			"Muchas tribulaciones esperaban a aquellos que buscaban ser el reemplazo de Eeb más allá de la simple violencia callejera... situaciones y complicaciones que ni siquiera estos experimentados criminales podían predecir."
 
+	// City Crawl Complete
+	
+	"DAC_citycrawl_complete_hobgen"				"Con Nueva Tiniebla bajo su control, Hobgen aseguró conexiones en Agujablanca. Por ahora, el pirómano feérico celebraba… desapercibido de las difíciles decisiones que tendría que tomar en los próximos meses."
+	"DAC_citycrawl_complete_jull"				"Jull celebró su dominio sobre Puerto Sombrío de la manera más Jull posible: emborrachándose en La Luna Desgarrada. Tan inmerso estaba en sus juergas que incluso permitió a Axe volver a entrar en el bar. Circulan rumores de que Goodkind está trabajando en un libro sobre esa noche de desenfreno mientras hablamos."
+	"DAC_citycrawl_complete_enno"				"Ahora como el rey indiscutible de Los Barrios, Enno se enfrenta a una dura decisión… ¿Se conforma con ser el soberano del bajo mundo? ¿O buscará extender su alcance aún más allá…? Solo el tiempo lo dirá."
+	"DAC_citycrawl_complete_anessix"			"Los agentes de Anessix se abrieron camino por toda Pequeña Revtel, creando una poderosa red de secretos y confidentes. Pero la demonia terrenal no estaba satisfecha… Estaba jugando un peligroso juego con la Corte de Ristul y si descubrían sus intenciones, todo lo que construyó se reduciría a cenizas."
+	"DAC_citycrawl_complete_all"				"Se han trazado líneas territoriales, pero la historia de Agujablanca apenas está comenzando. La Ciudad de las Delicias Nefastas tiene tantos enemigos como secretos… y es solo cuestión de tiempo antes de que salgan a la luz."
+
+
+	
 	
 }
 

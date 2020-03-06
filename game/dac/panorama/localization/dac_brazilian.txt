@@ -239,7 +239,10 @@
 	"DAC_PurchaseEvent_ExpectedCostMismatch"			"Ocorreu um erro inesperado ao comprar este passe, o seu cliente pode estar desatualizado"
 	"DAC_PurchaseEvent_AlreadyOwned"					"Você já possui este passe"	
 	"DAC_PurchaseEvent_SuccessTitle"					"Sucesso"
-	"DAC_PurchaseEvent_SuccessBody"						"Sua compra do passe de batalha foi completada com sucesso!"
+	"DAC_PurchaseEvent_SuccessBody"						"A compra do passe de batalha foi concluída com sucesso!"
+	"StoreCheckout_Error_Title"							"Erro"
+	"StoreCheckout_CannotPurchase"						"Não foi possível comprar o item"
+
 
 
 	"DAC_PurchaseEventCurrency_ErrorTitle"				"Erro"
@@ -256,7 +259,7 @@
 	"DAC_PurchaseEventCurrency_InsufficientCredits"		"Você não possui créditos suficientes para comprar estes níveis."
 	"DAC_PurchaseEventCurrency_CurrencyOverflow"		"O seu nível está muito alto para comprar estes níveis adicionais."
 	"DAC_PurchaseEventCurrency_SuccessTitle"			"Sucesso"
-	"DAC_PurchaseEventCurrency_SuccessBody"				"Sua compra dos níveis do passe de batalha foi completada com sucesso!"
+	"DAC_PurchaseEventCurrency_SuccessBody"				"A compra de níveis do passe de batalha foi concluída com sucesso!"
 
 
 	"DAC_StopMatchMaking_ErrorTitle"					"Erro"
@@ -500,6 +503,7 @@
 	"DAC_GenericError_RegionInfoNotProvided"			"Cadastre a sua conta para poder jogar online."
 	"DAC_GenericError_DurationControlBlocked"				"Você atingiu o seu limite permitido de tempo de jogo online."
 
+	"DAC_PurchaseError_NotSignedIn"						"Inicie a sessão no Steam para poder efetuar uma compra."
 	"DAC_PurchaseError_NotConnectedToGC"				"Conecte-se à rede do Dota Underlords para realizar compras"
 	"DAC_PurchaseError_NoResponse"						"Não foi possível se comunicar com a rede do Dota Underlords. Tente novamente em alguns minutos."
 	"DAC_PurchaseError_InternalError"					"Ocorreu um erro inesperado ao tentar verificar se o item pode ser comprado. Tente novamente mais tarde."
@@ -512,6 +516,11 @@
 	"DAC_PurchaseError_InvalidQuantity"					"A quantidade solicitada não é válida para este item."
 	"DAC_PurchaseError_OutstandingReservations"			"Há compras deste item pendentes. Cancele ou conclua tais compras para comprar mais unidades."
 	"DAC_PurchaseError_ExceedsCreditLimit"				"Você já tem uma quantia muito alta de créditos nesta conta. Gaste um pouco antes de comprar mais."
+
+	"DAC_PurchaseError_InternalStore"					"Ocorreu um erro inesperado ao tentar comprar o item."
+	"DAC_PurchaseError_CannotPurchase"					"Conta sem permissão para efetuar compras."
+	"DAC_PurchaseError_MissingItem"						"Ocorreu um erro inesperado. O item sumiu."
+	"DAC_PurchaseError_Cancelled"						"A compra foi cancelada."
 
 	"DAC_ReservationError_NoResponse"					"Não foi possível se comunicar com a rede do Dota Underlords. Tente novamente em alguns minutos."
 	"DAC_ReservationError_InternalError"				"Ocorreu um erro inesperado. Tente novamente mais tarde."
@@ -853,7 +862,7 @@
 	"dac_hero_hint_jumping_movement"					"Salta sobre os inimigos"
 	"dac_hero_hint_teleport_movement"					"Teletransporta-se até os inimigos"
 	"dac_hero_hint_high_single_target_damage"			"Grande dano a um único alvo"
-	"dac_hero_hint_high_group_damage"					"Grande dano a múltiplos alvos"
+	"dac_hero_hint_high_group_damage"					"Grande dano em grupo"
 	"dac_hero_hint_aoe_ministun"						"Miniatordoa inimigos próximos"
 	"dac_hero_hint_freezes_enemies"						"Congela inimigos"
 	"dac_hero_hint_aoe_silence"							"Silenciamento em área"
@@ -1078,7 +1087,7 @@
 	"dac_item_mana_sponge_lore"							"Os maiores atos de heroísmo surgem dos momentos mais difíceis. — <i>Zenok, contrabandista da Espiral Branca</i>"
 	
 	"dac_item_quelling_blade"							"Machado Supressor"
-	"dac_item_quelling_blade_desc"						"+{d:damage} de dano de ataque. O herói portador dará prioridade a atacar unidades invocadas. Ataques contra unidades invocades causam {d:crit_bonus_vs_neutrals}% de dano crítico."
+	"dac_item_quelling_blade_desc"						"+{d:damage} de dano de ataque. O herói portador dará prioridade a atacar unidades invocadas. Ataques contra unidades invocadas causam {d:crit_bonus_vs_neutrals}% de dano crítico."
 	"dac_item_quelling_blade_lore"						"Grek odeia quando compram isso. — <i>Zenok, contrabandista da Espiral Branca</i>"
 	
 	"dac_item_boots_of_speed"							"Botas de Velocidade"
@@ -1558,7 +1567,7 @@
 	"DAC_InGame_UnitDPS_Query"							"DPS: <span class=\"Count\">{i:attack_dps}</span>"
 	"DAC_InGame_UnitHP_Query"							"Vida: <span class=\"Count\">{i:selectedUnitHP}</span>"
 	"DAC_InGame_UnitArmor_Query"						"Armadura: <span class=\"Count\">{i:selectedUnitArmor}{s:selectedUnitBonusArmor}</span>"
-	"DAC_InGame_KillCount_Query"						"Vítimas: <span class=\"Count\">{d:kill_count}</span>"
+	"DAC_InGame_KillCount_Query"						"Vítimas: <span class=\"Count\">{f:kill_count}</span>"
 	"DAC_InGame_KillStreak_Query"						"Em sequência: <span class=\"Count\">{d:kill_streak}</span>"
 	"DAC_InGame_DuelBonusDamage_Query"					"Dano adicional por Duelos: <span class=\"Count\">{d:duel_bonus_damage}</span>"
 	"DAC_InGame_BrawnyKillCount_Query"						"Vítimas de Corpulentos: <span class=\"Count\">{f:brawny_kills}</span>"
@@ -2207,6 +2216,20 @@
 	"DAC_Battlepass_YouHaveOneLockedReward"				"Você possui 1 recompensa travada"
 	"DAC_Battlepass_YouHaveLockedRewards"				"Você possui {i:num_locked_rewards} recompensas travadas"
 	"DAC_Purchase"										"Comprar"
+	"DAC_Battlepass_ItemOdds"							"Probabilidade de itens"
+	
+	"DAC_ItemOdds_Title"								"Probabilidade de tesouros aleatórios"
+	"DAC_ItemOdds_BoardPropHeader"						"Probabilidade de enfeites de tabuleiro"
+	"DAC_ItemOdds_BoardPropDescription"					"Há 20 enfeites de tabuleiro aleatórios no passe de batalha. Estes enfeites são sorteados a partir de uma lista sem duplicatas com um total de 20 enfeites. Usuários que adquirirem o passe de batalha e alcançarem o nível 100 destravarão todos os enfeites de tabuleiro. 4 dos enfeites aleatórios são gratuitos e podem ser destravados (juntamente de todas as outras recompensas gratuitas) caso o jogador alcance o respectivo nível no passe de batalha. Enfeites de tabuleiro são puramente cosméticos e não afetam a jogabilidade."
+	"DAC_ItemOdds_StreetFightItemsHeader"				"Probabilidade de itens de briga de rua"
+	"DAC_ItemOdds_StreetFightItemsDescription"			"Há 8 itens aleatórios de briga de rua no passe de batalha, além de 40 itens aleatórios de briga de rua como recompensas do Domínio Local — 12 itens por Underlord. Estes itens são sorteados a partir de uma lista sem duplicatas por Underlord, e a probabilidade é a mesma dentro de uma mesma classe. Os itens são para uso exclusivo em brigas de rua do Domínio Local (conteúdo individual) e não afetam partidas contra outros jogadores.
+
+Os itens de cada Underlord são sorteados a partir de listas idênticas, sem duplicatas dentro de uma mesma lista. Por outro lado, Underlords diferentes podem sortear o mesmo item. Desta forma, você não receberá duas Claymores para Enno, mas pode receber uma Claymore para Enno e uma Claymore para Anessix."
+	"DAC_ItemOdds_StreetFightItemsHeaderTier1"			"Itens de classe 1: 1 item por Underlord"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier2"			"Itens de classe 2: 3 itens por Underlord"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier3"			"Itens de classe 3: 5 itens por Underlord"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier4"			"Itens de classe 4: 2 itens por Underlord"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier5"			"Itens de classe 5: 1 item por Underlord"
 
 	"GenericConfirmText_Label"							"Confirmar"
 	"DAC_PurchaseError_Title"		"Não foi possível comprar"
@@ -2253,7 +2276,7 @@
 	"DAC_ChallengeWorldMapPage"							"Domínio Local"
 	"DAC_CityCrawlObjectives"							"Objetivos do Domínio Local"
 	"DAC_ChallengeWorldMapPage_Challenges"				"{d:city_crawl_challenges_available} objetivos ativos"
-	"DAC_ChallengeWorldMapPage_ClaimableChallenges"		"Áreas domináveis: {d:city_crawl_challenges_claimable}"
+	"DAC_ChallengeWorldMapPage_ClaimableChallenges"		"Área(s) dominável(is): {d:city_crawl_challenges_claimable}"
 	"DAC_CityCrawlButtonNeedsSteam"						"Iniciar sessão no Steam"
 
 	"DAC_Zoo_PostGame_GameMode"							"Modo de jogo"
@@ -2435,7 +2458,7 @@
 	"DAC_Synergy_Tooltip_Goblin_2"		"Todos os aliados"
 
 	"DAC_Synergy_Tooltip_Vigilant_0"	"Vigias aliados"
-	"DAC_Synergy_Tooltip_Vigilant_1"	"todas as unidade aliadas"
+	"DAC_Synergy_Tooltip_Vigilant_1"	"todas as unidades aliadas"
 
 	"DAC_Synergy_Tooltip_Savage_0"				"Selvagens aliados"
 	"DAC_Synergy_Tooltip_Savage_1"				"Todos os heróis aliados"
@@ -2517,7 +2540,7 @@
 
 	"DAC_Synergy_Desc_Summoner"			"Unidades invocadas aliadas ganham +{s:damage_percent}% de dano."
 	
-	"DAC_Synergy_Desc_Vigilant"			"Sempre que uma unidade inimiga usa uma habilidade, ela torna-se alvo de {s:alliance_eligible} caso dentro do alcance."
+	"DAC_Synergy_Desc_Vigilant"			"Sempre que uma unidade inimiga usa uma habilidade, ela torna-se alvo de {s:alliance_eligible} caso dentro do alcance. O dano do próximo ataque contra este alvo é {s:damage_percent}% maior."
 	
 	"DAC_Synergy_Desc_Void"				"Todos os heróis aliados têm {s:proc_chance}% de chance de causar {s:pure_damage_percent}% da vida máxima do alvo como dano puro adicional."
 
@@ -3467,7 +3490,7 @@
 	"DAC_FightResultDefeat"						"DERROTA"
 	"DAC_FightResultDefeatDmg"					"-{d:damage_taken}"
 	"DAC_FightResultDraw"						"EMPATE"
-	"DAC_FightResultWinStreak"					"x{d:win_streak} SEGUIDAS!"
+	"DAC_FightResultWinStreak"					"{d:win_streak} SEGUIDAS!"
 	"DAC_FightResultWinStreakComplete"			"SEQUÊNCIA CONCLUÍDA!"
 
 	"DAC_Duos_Team_Header"						"Equipe {d:lobby_team}"
@@ -3511,7 +3534,7 @@
 	"dac_hotkey_scroll_camera_up_desc" 				"Elevar câmera"
 	"dac_hotkey_scroll_camera_down_desc" 			"Rebaixar câmera"
 	"dac_hotkey_tilt_camera_modifier_desc" 			"Pressione para ajustar a câmera. Toque para restaurar."
-
+	"dac_hotkey_board_spray_desc"					"Posicionar pintura de tabuleiro na posição do mouse."
 	"dac_hotkey_alliances_tab"						"Abrir a aba de alianças."
 	"dac_hotkey_dps_tab"							"Abrir a aba de DPS."
 	"dac_hotkey_items_tab"							"Abrir a aba de itens."
@@ -3599,14 +3622,14 @@
 	"DAC_Hero_Odds_Tier2"							"Unidades de classe 2: {s:odds_tier_2}%"
 	"DAC_Hero_Odds_Tier3"							"Unidades de classe 3: {s:odds_tier_3}%"
 	"DAC_Hero_Odds_Tier4"							"Unidades de classe 4: {s:odds_tier_4}%"
-	"DAC_Hero_Odds_Tier5"							"Unidades lendárias: {s:odds_tier_5}%"
+	"DAC_Hero_Odds_Tier5"							"Unidades de classe 5: {s:odds_tier_5}%"
 
 	"DAC_Hero_Odds_Next_Level"						"Próximo nível"
 	"DAC_Hero_Odds_Tier1_Next"						"Unidades de classe 1: {s:odds_tier_1_next}%"
 	"DAC_Hero_Odds_Tier2_Next"						"Unidades de classe 2: {s:odds_tier_2_next}%"
 	"DAC_Hero_Odds_Tier3_Next"						"Unidades de classe 3: {s:odds_tier_3_next}%"
 	"DAC_Hero_Odds_Tier4_Next"						"Unidades de classe 4: {s:odds_tier_4_next}%"
-	"DAC_Hero_Odds_Tier5_Next"						"Unidades lendárias: {s:odds_tier_5_next}%"
+	"DAC_Hero_Odds_Tier5_Next"						"Unidades de classe 5: {s:odds_tier_5_next}%"
 
 	"DAC_Hero_Odds_Tier1_Short"							"{s:odds_tier_1}%"
 	"DAC_Hero_Odds_Tier2_Short"							"{s:odds_tier_2}%"
@@ -3633,7 +3656,8 @@
 	"DAC_CityCrawl_MostRecent"						"Mais recente"
 	"DAC_CityCrawl_RecommendedHeader"				"Mais recente:<br/><span class='RecommendedChallengeDesc'>{s:recommended_challenge}</span>"
 	"DAC_ChallengeGameModeRequirementsNotMet"		"Selecione outro modo de jogo para cumprir o seu objetivo do Domínio Local."
-	"DAC_ChallengeDifficultyRequirementsNotMet"		"Selecione a dificuldade \"Brutais (XP)\" para cumprir o seu objetivo do Domínio Local."
+	"DAC_ChallengeDifficultyRequirementsNotMet"		"Escolha a dificuldade \"Brutais (XP)\" ou jogue no modo Multijogador para progredir no passe de batalha."
+	"DAC_ChallengePrivateGameNotFull"				"O seu grupo deve estar cheio para progredir no passe de batalha."
 
 	"DAC_Challenge_DodgeAttacks_Desc"				"Esquive-se de {s:threshold} ataques."
 	"DAC_Challenge_CritAttacks_Desc"				"Acerte {s:threshold} ataques críticos."
@@ -3785,6 +3809,7 @@
 
 	"DAC_LoadoutEquip"								"Equipar"
 	"DAC_LoadoutEquipped"							"Equipado"
+	"DAC_EditBoardProps"							"Editar enfeites"
 	"DAC_LoadoutEquip_Popup_Close"					"Fechar"
 	"DAC_LoadoutEquip_Failed_Title"					"Não foi possível\nequipar este item"
 	"DAC_LoadoutEquip_Failed_Body"					"Este item não pode ser equipado no momento. Tente novamente mais tarde."
@@ -4097,6 +4122,7 @@
 	"DAC_Challenge_Popup_2_Valid_Modes"		"Modos de jogo válidos: {s:game_mode_1} e {s:game_mode_2}"
 	"DAC_Challenge_Popup_1_Valid_Mode"		"Modo de jogo válido: {s:game_mode_1}"
 	"DAC_challenge_map_city_key_count"		"{d:city_keys}"
+	"DAC_challenge_map_objectives_count"	"{d:city_objectives}"
 
 	"DAC_Area_Inventory_Title"				"Mochila:"
 	"DAC_Area_Inventory_Description"		"Itens para {s:underlord_name} destravados em brigas de rua e obtidos como recompensas do passe de batalha podem ser usados para impulsionar a sua equipe em brigas de rua futuras."
@@ -4378,6 +4404,7 @@
 	"DAC_Challenge_Street_Fight_Desc"			"Briga de rua vencida!"
 	"DAC_Challenge_Street_Fight_Lore"			"Grek. Parça. Colega. Você devia ter continuado no ramo da fraude de lutas... — <i>Hobgen começa os trabalhos</i>"
 
+	"DAC_Challenge_Puzzle_Desc"					"Problema resolvido!"
 	
 	"dac_challenge_difficulty_1"				"Fácil"
 	"dac_challenge_difficulty_2"				"Médio"
@@ -4492,7 +4519,7 @@
 	"dac_turbo_bucket_tip_Ogre"					"<span class='Ogre'>Dano de ataque adicional</span>"
 	"dac_turbo_bucket_tip_Orc"					"<span class='Orc'>Vida adicional por vítima</span>"
 	"dac_turbo_bucket_tip_Troll"				"<span class='Troll'>Vel. de ataque adicional</span>"
-	"dac_turbo_bucket_tip_Undead"				"<span class='Undead'>Reduz a armadura inimiga</span>"
+	"dac_turbo_bucket_tip_Undead"				"<span class='Undead'>Reduzem a armadura inimiga</span>"
 	"dac_turbo_bucket_tip_Assassin"				"<span class='Assassin'>Chance de dano crítico</span>"
 	"dac_turbo_bucket_tip_Druid"				"<span class='Druid'>Aprimora unidade mais fraca</span>"
 	"dac_turbo_bucket_tip_Hunter"				"<span class='Hunter'>Vel. de ataque adicional</span>"
@@ -4508,7 +4535,7 @@
 	"dac_turbo_bucket_tip_Insect"				"<span class='Insect'>Invocam aranhas</span>"
 	"dac_turbo_bucket_tip_SpiritBrother"			"<span class='SpiritBrother'>Ataque triangular</span>"
 	"dac_turbo_bucket_tip_Champion"				"<span class='Champion'>Ganham bônus de todas alianças</span>"
-	"dac_turbo_bucket_tip_Brutal"				"<span class='Brutal'>Reduz o dano inimigo</span>"
+	"dac_turbo_bucket_tip_Brutal"				"<span class='Brutal'>Reduzem o dano inimigo</span>"
 	"dac_turbo_bucket_tip_Healer"				"<span class='Healer'>Cura aprimorada</span>"
 	"dac_turbo_bucket_tip_Summoner"				"<span class='Summoner'>Aprimoram unidades invocadas</span>"
 	"dac_turbo_bucket_tip_Vigilant"				"<span class='Vigilant'>Alvejam quem usar habilidades</span>"
@@ -5089,7 +5116,7 @@
 
 	"DAC_Challenge_Puzzle_s1_jull3_title"	"Objetivos Incertos"
 	"DAC_Challenge_Puzzle_s1_jull3_quote"	"As pessoas vêm até a Lua Fendida em busca de drinques que não existem em nenhum outro lugar. O meu coquetel de sentinela de praga já matou várias pessoas? Já. Mas quem sobrevive diz que é uma experiência incrível. — <i>Jull, mixologista mortal</i>"
-	"DAC_Challenge_Puzzle_s1_jull3_lore"	"O uso de veneno de sentinelas de praga em um coquetel foi o que deu a Jull um lugar junto às Orquídeas Brancas — difícil chamá-lo de "cocktail" is generous... its basically just venom and Icewrack white."
+	"DAC_Challenge_Puzzle_s1_jull3_lore"	"O uso de veneno de sentinelas de praga em um coquetel foi o que deu a Jull um lugar junto às Orquídeas Brancas — mas chamar de \"coquetel\" é um exagero... Não passa de veneno misturado com um vinho branco das Geleiras Devastadas."
 
 	"DAC_Challenge_Puzzle_s1_jull4_title"	"Ninguém Passa de Sven"
 	"DAC_Challenge_Puzzle_s1_jull4_quote"	"Vou descobrir como lidar com este problema… — <i>Jull, quebrador de barreiras</i>"
@@ -5345,7 +5372,7 @@
 
 	"DAC_Challenge_Puzzle_s1_anessix2_title"	"Agora Você os Vê…"
 	"DAC_Challenge_Puzzle_s1_anessix2_quote"	"Os Espíritos Irmãos querem me impedir… Eu admiro a dedicação, mas abomino essa insistência em aceitar a futilidade. — <i>Anessix, pavor dos Espíritos</i>"
-	"DAC_Challenge_Puzzle_s1_anessix2_lore"		"Muitas forças têm observado a ascensão de Anessix com preocupação — mas não os Espíritos Irmãos."
+	"DAC_Challenge_Puzzle_s1_anessix2_lore"		"Muitas forças têm observado a ascensão de Anessix com preocupação — mas os Espíritos Irmãos decidiram tomar uma atitude."
 
 	"DAC_Challenge_Puzzle_s1_anessix3_title"	"Os Servos dos Gêmeos Esfolados"
 	"DAC_Challenge_Puzzle_s1_anessix3_quote"	"A resistência ao meu reinado, apesar de previsível, é sempre decepcionante. — <i>Conflito entre a Corte de Ristul e os Gêmeos Esfolados</i>"
@@ -5626,17 +5653,27 @@
 
 	// City Crawl Tutorial
 	"DAC_Challenge_Streetfight_tutorial_creeps_Title"		"As Boas-vindas à Espiral Branca"
-	"DAC_Challenge_Streetfight_tutorial_creeps_Bot"			"A Primeira Vítima de Muitas"
+	"DAC_Challenge_Streetfight_tutorial_creeps_Bot"			"A 1ª Vítima de Muitas"
 	"DAC_Challenge_Streetfight_tutorial_creeps_BotDesc"		"tutorial_creeps Desc"
 	"DAC_Challenge_Streetfight_tutorial_creeps_Lore"		"A Mamãe Eeb deixou claro o que esperava para o substituto após a sua morte: uma mente ardilosa para guiar a Cidade dos Deleites Deploráveis, uma personalidade carismática que inspirasse lealdade e fé... Além da disposição para fazer o que for preciso para vencer."
 	"DAC_Challenge_Streetfight_tutorial_creeps_Quote"		"A Mamãe Eeb sabia que era apenas questão de tempo até que alguém viesse tirar a sua vida. Então ela se certificou de deixar uma lista de instruções para aqueles que quisessem tomar o seu lugar."
-	"DAC_Challenge_Streetfight_tutorial_creeps_Win"			"Potencial Lorde da Espiral Branca aprende as delicadezas das guerras de rua."
+	"DAC_Challenge_Streetfight_tutorial_creeps_Win"			"Potencial Lorde da Espiral Branca aprende as delicadezas das guerras de rua"
 	"DAC_Challenge_Streetfight_tutorial_creeps_Lose"		"Aspirante a Lorde da Espiral Branca morre a facadas antes de fazer qualquer coisa"
 
 	"DAC_Challenge_Puzzle_intro_title"			"A Primeira Provação, de Muitas"
 	"DAC_Challenge_Puzzle_intro_quote"			"Hobgen, Anessix, Jull e Enno estavam prestes a embarcar em uma das disputas de terra mais perigosas. Hobgen se voltou para Nova Tênebra, um dos lugares favoritos da Mamãe Eeb. Jull preferiu o Porto Sombroso, de onde poderia controlar o trânsito de mercadorias. Anessix foi atrás da Pequena Revtel, bem como o ouro e os segredos que lá habitam. Por fim, Enno... Bem, Enno continuou sendo Enno e resolveu controlar As Tocas."
 	"DAC_Challenge_Puzzle_intro_lore"			"Muitas desventuras aguardavam aqueles que buscavam substituir Eeb no comando da violência na cidade... cenários e complicações que nem mesmo esses criminosos experientes poderiam imaginar."
 
+	// City Crawl Complete
+	
+	"DAC_citycrawl_complete_hobgen"				"Com a Nova Tênebra sob o seu total domínio, Hobgen conquistou uma região importante da Espiral Branca. Por enquanto, o piromaníaco comemora, sem saber das escolhas difíceis que terá que tomar nos próximos meses."
+	"DAC_citycrawl_complete_jull"				"Jull celebrou a sua conquista do Porto Sombroso do jeito dele: enchendo a cara na Lua Fendida. Ele estava tão focado em festejar que até deixou o Machado voltar para o bar. Segundo boatos, Genteboa está escrevendo um livro sobre aquela noite devassa neste exato momento."
+	"DAC_citycrawl_complete_enno"				"Indiscutível rei das Tocas, Enno depara-se com uma decisão difícil… Será que ser o soberano das favelas é o bastante? Ou será que ele irá querer estender o seu domínio? Só o tempo dirá."
+	"DAC_citycrawl_complete_anessix"			"Os agentes de Anessix se espalharam por toda a Pequena Revtel, criando uma poderosa teia de segredos e confidentes. Mas a demônia terrena não se deu por satisfeita… Ela estava em uma negociação delicada com a Corte de Ristul, e caso as suas reais intenções fossem descobertas, todas as suas conquistas seriam reduzidas a cinzas."
+	"DAC_citycrawl_complete_all"				"Os territórios foram divididos, mas a história da Espiral Branca está apenas no primeiro capítulo. A Cidade dos Deleites Deploráveis têm tantos inimigos quanto segredos… e é só questão de tempo até que venham à tona."
+
+
+	
 	
 }
 

@@ -9,6 +9,8 @@
 //-deferTextureLoads
 //-nosound
 -maxtextureres 1024
+-maxtextureres_2gb 256
+-maxtexturepoolsize_2gb 256
 //-clientonly
 
 // general rendering
@@ -35,7 +37,7 @@
 // Panorama
 //+@panorama_show_fps 1
 //+@panorama_show_fps_scale 3
-+@panorama_min_comp_layer_cache_cost 0
+//+@panorama_min_comp_layer_cache_cost 0
 
 // dota specifics?
 +r_ssao 0

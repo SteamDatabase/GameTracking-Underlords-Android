@@ -366,7 +366,7 @@
 		
 		//BLOODSEEKER
 		"dac_ability_bloodseeker_blood_rage"									"Blutzorn"
-		"dac_ability_bloodseeker_blood_rage_Description"						"PASSIV: Der Blutjäger erleidet pro Sekunde {s:self_dmg_pct} % seiner maximalen Lebenspunkte als Schaden.<br><br>Gleichzeitig erhöht sich sein Angriffstempo, bis er bei {s:min_health_pct} % seiner Lebenspunkte den maximalen Bonus von {s:attack_speed_bonus_max} % Angriffstempo erreicht.<br><br>Stirbt ein nahestehender Gegner, erlangt er {s:heal_pct} % seiner maximalen Lebenspunkte zurück."
+		"dac_ability_bloodseeker_blood_rage_Description"						"PASSIV: Je niedriger die Lebenspunkte seines Gegners fallen, desto mehr Angriffstempo erhält der Blutjäger, bis er bei {s:min_health_pct} % der Lebenspunkte den maximalen Bonus von {s:attack_speed_bonus_max} Angriffstempo erreicht.<br><br>Wenn Blutjäger ein Ziel tötet, erlangt er {s:heal_pct} % seiner maximalen Lebenspunkte zurück."
 		"dac_ability_bloodseeker_blood_rage_Lore"								"Wenn ich eines während meiner Karriere gelernt habe, dann dass einige Typen Blut lieben. Stell diesen Kerl ein. – <i>Grek, entschiedener Befürworter</i>"
 		
 		//ARC WARDEN
@@ -376,7 +376,7 @@
 		
 		//ARC WARDEN
 		"dac_ability_arc_warden_tempest_double_no_items"						"Sturmillusion"
-		"dac_ability_arc_warden_tempest_double_no_items_Description"			"Der Plasmawächter erschafft eine Kopie seiner selbst, die auch seine derzeitigen Lebenspunkte widerspiegelt."
+		"dac_ability_arc_warden_tempest_double_no_items_Description"			"Der Plasmawächter erschafft eine Kopie seiner selbst, die auch seine derzeitigen Lebenspunkte widerspiegelt. Klone verursachen {s:clone_dmg_reduction} % weniger Schaden."
 		"dac_ability_arc_warden_tempest_double_no_items_Lore"					"In seinem Inneren birgt er die Geheimnisse der Schöpfung. – <i>Turath, kryptischer Prophet</i>"
 
 		//MIRANA
@@ -410,7 +410,7 @@
 
 		// Lone Druid Bear
 		"dac_ability_lone_druid_spirit_bear_entangle"							"Umschlingende Krallen"
-		"dac_ability_lone_druid_spirit_bear_entangle_description"				"Die Angriffe des Geisterbären haben eine Chance, das Ziel zu umschlingen und dabei zu betäuben."
+		"dac_ability_lone_druid_spirit_bear_entangle_description"				"Die Angriffe des Geisterbären haben eine Chance, das Ziel zu umschlingen und dabei festzusetzen und zu entwaffnen."
 		"dac_ability_lone_druid_spirit_bear_entangle_lore"						" "
 
 		// THUNDER LIZARD BLOODLUST
@@ -481,7 +481,7 @@
 
 		// BROODMOTHER
 		"dac_ability_broodmother_spawn_spiderlings"									"Spinnlinge ausbrüten"
-		"dac_ability_broodmother_spawn_spiderlings_description"						"Brutmutter injiziert ihren Nachwuchs in eine gegnerische Einheit, was dieser {s:damage} Schaden zufügt. Wenn das Ziel getötet wird, schlüpfen {s:num_spiderlings} Spinnlinge. Spinnlinge sind nicht auswählbare Einheiten, die geringen Schaden verursachen und einen Lebenspunkt haben."
+		"dac_ability_broodmother_spawn_spiderlings_description"						"Brutmutter injiziert ihren Nachwuchs in eine gegnerische Einheit, was dieser {s:damage} Schaden zufügt. Wenn das Ziel getötet wird, schlüpfen {s:num_spiderlings} Spinnlinge. Spinnlinge sind nicht anvisierbare Einheiten, die wenig Schaden anrichten und 1 Lebenspunkt haben."
 		"dac_ability_broodmother_spawn_spiderlings_lore"							"Ich verbrenne vielleicht gerne Leute bei lebendigem Leibe, aber wenigstens brüte ich keine Eier in ihnen aus. – <i>Hobgen, redet zweideutig</i>"
 
 		"dac_ability_broodmother_spin_web"											"Spinnennetz"

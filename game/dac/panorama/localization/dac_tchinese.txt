@@ -241,6 +241,9 @@
 	"DAC_PurchaseEvent_AlreadyOwned"					"您已擁有此賽季"	
 	"DAC_PurchaseEvent_SuccessTitle"					"成功"
 	"DAC_PurchaseEvent_SuccessBody"						"你成功購買了戰鬥通行證！"
+	"StoreCheckout_Error_Title"							"錯誤"
+	"StoreCheckout_CannotPurchase"						"無法購買物品"
+
 
 
 	"DAC_PurchaseEventCurrency_ErrorTitle"				"錯誤"
@@ -501,6 +504,7 @@
 	"DAC_GenericError_RegionInfoNotProvided"			"你必須先登記帳戶資料才能在線上遊玩。"
 	"DAC_GenericError_DurationControlBlocked"				"你已超過線上遊玩所允許的可用時數。"
 
+	"DAC_PurchaseError_NotSignedIn"						"必須先登入 Steam 才能進行購買。"
 	"DAC_PurchaseError_NotConnectedToGC"				"你必須連線至 Dota 霸業網路才能進行購買"
 	"DAC_PurchaseError_NoResponse"						"現在無法與 Dota 霸業網路聯繫。請過幾分鐘後再試。"
 	"DAC_PurchaseError_InternalError"					"驗證此物品是否可供購買時發生意外錯誤。請稍後再試。"
@@ -513,6 +517,11 @@
 	"DAC_PurchaseError_InvalidQuantity"					"你要求的數量無法套用至此物品。"
 	"DAC_PurchaseError_OutstandingReservations"			"正在進行此物品的幾項待處理的購買。請清除或完成這些購買，以便進行更多交易。"
 	"DAC_PurchaseError_ExceedsCreditLimit"				"此帳戶尚未使用的額度過多。請先消耗一些再行購買。"
+
+	"DAC_PurchaseError_InternalStore"					"嘗試購買物品時發生意外錯誤。"
+	"DAC_PurchaseError_CannotPurchase"					"你的帳戶無法進行購買。"
+	"DAC_PurchaseError_MissingItem"						"發生意外的錯誤。缺失此物品。"
+	"DAC_PurchaseError_Cancelled"						"已取消購買。"
 
 	"DAC_ReservationError_NoResponse"					"現在無法與 Dota 霸業網路聯繫。請過幾分鐘後再試。"
 	"DAC_ReservationError_InternalError"				"發生意外的錯誤，請稍後再試。"
@@ -755,7 +764,7 @@
 	"dac_item_shivas_guard_new_desc"					"+{d:bonus_armor} 護甲。發出一道寒冷的波動，對周圍 3 格內的敵方單位造成 {d:blast_damage} 傷害、降低移動速度和攻擊速度 {s:blast_debuff_duration} 秒（一場戰鬥一次）。"
 	"dac_item_shivas_guard_new_lore"					"不要問這東西是怎麼被弄出藍寶石教團的寶庫的。- <i>白色尖塔贓物商澤諾克</i>"
 	"dac_item_stonehall_pike"							"石堂城長矛"
-	"dac_item_stonehall_pike_desc"						"裝備此物品的英雄每擊殺一個單位，便造成 +{d:damage_per_kill} 傷害（在死鬥模式中則造成 +12 傷害）。"
+	"dac_item_stonehall_pike_desc"						"裝備此物品的英雄每擊殺一個單位，造成的傷害便 +{d:damage_per_kill}（在死鬥模式中則為 +12 ）。"
 	"dac_item_stonehall_pike_lore"						"石堂城軍團使人懼怕不是沒有原因的。- <i>白色尖塔贓物商澤諾克</i>"
 	"dac_item_stonehall_cloak"							"石堂城披風"
 	"dac_item_stonehall_cloak_desc"						"裝備此物品的英雄每擊殺一個單位，便獲得 +{d:hp_per_kill} 生命（在死鬥模式中則獲得 +200 生命）。"
@@ -854,7 +863,7 @@
 	"dac_hero_hint_jumping_movement"					"跳入敵方單位之中"
 	"dac_hero_hint_teleport_movement"					"傳送至敵方單位眼前"
 	"dac_hero_hint_high_single_target_damage"			"對單一目標造成大量傷害"
-	"dac_hero_hint_high_group_damage"					"對多個目標造成大量傷害"
+	"dac_hero_hint_high_group_damage"					"高群體傷害"
 	"dac_hero_hint_aoe_ministun"						"短暫暈眩附近敵方單位"
 	"dac_hero_hint_freezes_enemies"						"凍結敵方單位"
 	"dac_hero_hint_aoe_silence"							"大範圍沉默"
@@ -1559,7 +1568,7 @@
 	"DAC_InGame_UnitDPS_Query"							"每秒傷害：<span class=\"Count\">{i:attack_dps}</span>"
 	"DAC_InGame_UnitHP_Query"							"生命：<span class=\"Count\">{i:selectedUnitHP}</span>"
 	"DAC_InGame_UnitArmor_Query"						"護甲：<span class=\"Count\">{i:selectedUnitArmor}{s:selectedUnitBonusArmor}</span>"
-	"DAC_InGame_KillCount_Query"						"擊殺：<span class=\"Count\">{d:kill_count}</span>"
+	"DAC_InGame_KillCount_Query"						"擊殺：<span class=\"Count\">{f:kill_count}</span>"
 	"DAC_InGame_KillStreak_Query"						"連殺：<span class=\"Count\">{d:kill_streak}</span>"
 	"DAC_InGame_DuelBonusDamage_Query"					"決鬥傷害加成：<span class=\"Count\">{d:duel_bonus_damage}</span>"
 	"DAC_InGame_BrawnyKillCount_Query"						"悍將總擊殺數：<span class=\"Count\">{f:brawny_kills}</span>"
@@ -2180,7 +2189,7 @@
 	"DAC_BPInGameProgressLegend"						"來自這場遊戲的初版通行證進度。"
 	"DAC_Battlepass_SeasonTitle"						"第一賽季"
 	"DAC_Battlepass_Welcome_Page1"						"進行比賽、完成挑戰、解鎖城市遊走中的區域來升級你的通行證。"
-	"DAC_Battlepass_Welcome_Page2"						"第 1 賽季包含 20 項以上免費獎勵，提升等級即可獲得。購買戰鬥通行證還可解鎖 100 項以上額外獎勵！"
+	"DAC_Battlepass_Welcome_Page2"						"第一賽季包含 20 項以上免費獎勵，提升等級即可獲得。購買戰鬥通行證還可解鎖 100 項以上額外獎勵！"
 	"DAC_Battlepass_Welcome_Page3"						"暢玩完整城市遊走內容，以及所有戰鬥通行證系列物品，包括新棋盤、用於自訂地盤的道具、小目標、「喲」樣式，和更多獎勵。"
 
 	"DAC_Battlepass_Level"								"{i:battlepass_level}"
@@ -2208,6 +2217,20 @@
 	"DAC_Battlepass_YouHaveOneLockedReward"				"你尚有 1 項未解鎖的獎勵"
 	"DAC_Battlepass_YouHaveLockedRewards"				"你尚有 {i:num_locked_rewards} 項未解鎖的獎勵"
 	"DAC_Purchase"										"購買"
+	"DAC_Battlepass_ItemOdds"							"物品機率"
+	
+	"DAC_ItemOdds_Title"								"隨機寶藏機率"
+	"DAC_ItemOdds_BoardPropHeader"						"棋盤道具機率"
+	"DAC_ItemOdds_BoardPropDescription"					"戰鬥通行證有 20 項隨機的棋盤道具。這些道具會從共 20 個棋盤道具的列表中抽選，不會重複掉落。購買戰鬥通行證並達等級 100 的玩家可解鎖所有棋盤道具。（除了其它免費獎勵以外）玩家達到相應的戰鬥通行證等級即可免費獲得並隨機解鎖 4 項棋盤道具。棋盤道具僅有美觀效果，不影響遊戲玩法。"
+	"DAC_ItemOdds_StreetFightItemsHeader"				"街頭火拼物品機率"
+	"DAC_ItemOdds_StreetFightItemsDescription"			"每名霸主各有 12 項街頭火拼物品，8 項由戰鬥通行證隨機贈送，另外 40 項為城市遊走的獎勵。每名霸主都有一個不重複的物品列表用以抽選物品，而抽中相同級別物品的機率也相同。這些物品僅適用於城市遊走的街頭火拚（單人遊戲內容），不影響玩家對戰。
+
+每個霸主的物品抽選列表都完全相同，各列表中的物品也不會重複。但不同的霸主仍可能抽到相同的物品。也就是說，雖然恩諾不會抽到兩把大劍，但則可能在抽到一把給恩諾的大劍後，再抽到一把給安納西克斯。"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier1"			"級別 1 物品：每名霸主 1 次掉落"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier2"			"級別 2 物品：每名霸主 3 次掉落"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier3"			"級別 3 物品：每名霸主 5 次掉落"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier4"			"級別 4 物品：每名霸主 2 次掉落"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier5"			"級別 5 物品：每名霸主 1 次掉落"
 
 	"GenericConfirmText_Label"							"確認"
 	"DAC_PurchaseError_Title"		"無法購買"
@@ -2518,7 +2541,7 @@
 
 	"DAC_Synergy_Desc_Summoner"			"友方召喚單位獲得 +{s:damage_percent}% 傷害"
 	
-	"DAC_Synergy_Desc_Vigilant"			"每當敵方單位施放技能，若該單位在{s:alliance_eligible}攻擊範圍內，便將其視為目標"
+	"DAC_Synergy_Desc_Vigilant"			"Whenever an enemy unit casts a spell, {s:alliance_eligible} target that enemy if it is within their range. The damage of the next attack against this target is increased by {s:damage_percent}%."
 	
 	"DAC_Synergy_Desc_Void"				"所有友方英雄有 {s:proc_chance}% 機率額外造成目標最大生命的 {s:pure_damage_percent}% 的純粹傷害"
 
@@ -2663,7 +2686,7 @@
 	"DAC_BotDifficultyName2"	"困難"
 	"DAC_BotDifficultyName3"	"高手"
 	"DAC_BotDifficultyName4"	"僅限人類參與"
-	"DAC_BotDifficultyName5"	"硬派（經驗值）"
+	"DAC_BotDifficultyName5"	"高手（經驗值）"
 	"DAC_BotDifficultyName6"    "艾布媽媽[安息]"
 	"DAC_BotDifficultyDesc0"	"適合用來學習基本玩法，或進行一場感覺良好的遊戲。"
 	"DAC_BotDifficultyDesc1"	"電腦能對英雄和金錢做出稍微聰明一點的決策。"
@@ -3062,8 +3085,8 @@
 	"dac_settings_submitfeedback"				"提交意見回饋"
 	"dac_settings_feedback"						"意見回饋"
 	"dac_Privacy_Policy"						"隱私權政策"
-	"DAC_SettingsCredits"						"額度"
-	"DAC_SettingsShowCredits"					"顯示額度"
+	"DAC_SettingsCredits"						"製作人員名單"
+	"DAC_SettingsShowCredits"					"顯示製作人員名單"
 	"VALVE"										"VALVe"
 	"DAC_Credits_Contractors"					"承包商"
 	"DAC_Credits_VoiceActors"					"配音員"
@@ -3512,7 +3535,7 @@
 	"dac_hotkey_scroll_camera_up_desc" 				"提高鏡頭。"
 	"dac_hotkey_scroll_camera_down_desc" 			"降低鏡頭。"
 	"dac_hotkey_tilt_camera_modifier_desc" 			"長按可調整鏡頭，輕觸可重置。"
-
+	"dac_hotkey_board_spray_desc"					"在滑鼠停放處放置棋盤噴漆。"
 	"dac_hotkey_alliances_tab"						"檢視特性分頁。"
 	"dac_hotkey_dps_tab"							"檢視每秒傷害分頁。"
 	"dac_hotkey_items_tab"							"檢視物品分頁。"
@@ -3600,14 +3623,14 @@
 	"DAC_Hero_Odds_Tier2"							"級別 2 單位：{s:odds_tier_2}%"
 	"DAC_Hero_Odds_Tier3"							"級別 3 單位：{s:odds_tier_3}%"
 	"DAC_Hero_Odds_Tier4"							"級別 4 單位：{s:odds_tier_4}%"
-	"DAC_Hero_Odds_Tier5"							"王牌單位：{s:odds_tier_5}%"
+	"DAC_Hero_Odds_Tier5"							"Tier 5 Units: {s:odds_tier_5}%"
 
 	"DAC_Hero_Odds_Next_Level"						"下一個等級"
 	"DAC_Hero_Odds_Tier1_Next"						"級別 1 單位：{s:odds_tier_1_next}%"
 	"DAC_Hero_Odds_Tier2_Next"						"級別 2 單位：{s:odds_tier_2_next}%"
 	"DAC_Hero_Odds_Tier3_Next"						"級別 3 單位：{s:odds_tier_3_next}%"
 	"DAC_Hero_Odds_Tier4_Next"						"級別 4 單位：{s:odds_tier_4_next}%"
-	"DAC_Hero_Odds_Tier5_Next"						"王牌單位：{s:odds_tier_5_next}%"
+	"DAC_Hero_Odds_Tier5_Next"						"Tier 5 Units: {s:odds_tier_5_next}%"
 
 	"DAC_Hero_Odds_Tier1_Short"							"{s:odds_tier_1}%"
 	"DAC_Hero_Odds_Tier2_Short"							"{s:odds_tier_2}%"
@@ -3631,10 +3654,11 @@
 	"DAC_CityCrawl_NoActiveObjectives"				"沒有進行中的目標"
 	"DAC_CityCrawl_GoToCityCrawl"					"前往城市遊走"
 	"DAC_CityCrawl_ChallengeHeader"					"{d:city_crawl_underlord_challenges} 項進行中"
-	"DAC_CityCrawl_MostRecent"						"最近期"
-	"DAC_CityCrawl_RecommendedHeader"				"最近期：<br/><span class='RecommendedChallengeDesc'>{s:recommended_challenge}</span>"
+	"DAC_CityCrawl_MostRecent"						"最近進行"
+	"DAC_CityCrawl_RecommendedHeader"				"最近進行：<br/><span class='RecommendedChallengeDesc'>{s:recommended_challenge}</span>"
 	"DAC_ChallengeGameModeRequirementsNotMet"		"請選擇其它遊戲模式以完成你的城市遊走目標。"
-	"DAC_ChallengeDifficultyRequirementsNotMet"		"選擇高手（經驗值）難度以完成你的城市遊走目標。"
+	"DAC_ChallengeDifficultyRequirementsNotMet"		"選擇高手（經驗值）電腦玩家難度，或進行多人比賽，以獲得戰鬥通行證進度。"
+	"DAC_ChallengePrivateGameNotFull"				"你的團隊滿員才能獲得戰鬥通行證進度。"
 
 	"DAC_Challenge_DodgeAttacks_Desc"				"閃避 {s:threshold} 次攻擊。"
 	"DAC_Challenge_CritAttacks_Desc"				"暴擊 {s:threshold} 次。"
@@ -3782,10 +3806,11 @@
 	"DAC_LoadoutUnderlords"							"著裝：霸主"
 	"DAC_LoadoutGame"								"著裝：比賽"
 	"DAC_LoadoutPlayer"								"著裝：玩家"
-	"DAC_LoadoutMapPropEditor"						"著裝：地圖道具編輯器"
+	"DAC_LoadoutMapPropEditor"						"著裝：棋盤道具編輯器"
 
 	"DAC_LoadoutEquip"								"裝備"
 	"DAC_LoadoutEquipped"							"已裝備"
+	"DAC_EditBoardProps"							"編輯棋盤道具"
 	"DAC_LoadoutEquip_Popup_Close"					"關閉"
 	"DAC_LoadoutEquip_Failed_Title"					"無法裝備物品"
 	"DAC_LoadoutEquip_Failed_Body"					"目前無法裝備此物品。請稍後再試。"
@@ -3963,7 +3988,7 @@
 
 	"s1_title_row_1"			"歡迎來到"
 	"s1_title_row_2"			"白色尖塔"
-	"s1_description"			"艾布媽媽殞落，城市準備好迎接新的接班人。招兵買馬、投入戰鬥，透過<span class='Emphasis'>城市遊走</span>接管白色尖塔。<br><br>完成挑戰、進行比賽，領取<span class='Emphasis'>戰鬥通行證</span>獎勵。歡迎來到霸業之第 1 賽季！"
+	"s1_description"			"艾布媽媽殞落，城市準備好迎接新的接班人。招兵買馬、投入戰鬥，透過<span class='Emphasis'>城市遊走</span>接管白色尖塔。<br><br>完成挑戰、進行比賽，領取<span class='Emphasis'>戰鬥通行證</span>獎勵。歡迎來到霸業之第一賽季！"
 	"s1_play_trailer"			"播放預告片"
 	"s1_ricky_beta_message"		"噓……嘿，感謝你遊玩測試版。為了歡迎你回來，我挑了些禮物給你：Beta 測試季的棋盤、一個海報稱號，以及可放在棋盤上的雕像！"
 
@@ -4098,6 +4123,7 @@
 	"DAC_Challenge_Popup_2_Valid_Modes"		"有效的遊戲模式：{s:game_mode_1}、{s:game_mode_2}"
 	"DAC_Challenge_Popup_1_Valid_Mode"		"有效的遊戲模式：{s:game_mode_1}"
 	"DAC_challenge_map_city_key_count"		"{d:city_keys}"
+	"DAC_challenge_map_objectives_count"	"{d:city_objectives}"
 
 	"DAC_Area_Inventory_Title"				"背包："
 	"DAC_Area_Inventory_Description"		"透過街頭火拼和戰鬥通行證解鎖的{s:underlord_name}物品可用來在未來的街頭火拼中增幅你的陣容。"
@@ -4379,6 +4405,7 @@
 	"DAC_Challenge_Street_Fight_Desc"			"完成街頭火拼！"
 	"DAC_Challenge_Street_Fight_Lore"			"格瑞克。夥伴。朋友。你應該老老實實搞你的假比賽就好……- <i>對付新人的哈伯根</i>"
 
+	"DAC_Challenge_Puzzle_Desc"					"謎題完成！"
 	
 	"dac_challenge_difficulty_1"				"簡單"
 	"dac_challenge_difficulty_2"				"中等"
@@ -4537,7 +4564,7 @@
 	"DAC_CC_Reward_Unlocked"					"獎勵已解鎖"
 	"DAC_CC_New_Item"							"新！"
 	"DAC_CC_Key_Tooltip"						"使用「城市之鑰」來跳過一項城市遊走挑戰，繼續在地圖上前進。鑰匙只能使用一次，請謹慎選擇。"
-	"DAC_CC_Locked_Content_Title"				"挑戰已解鎖"
+	"DAC_CC_Locked_Content_Title"				"挑戰已鎖定"
 	"DAC_CC_Locked_Content_Desc"				"解鎖第一賽季戰鬥通行證以暢遊城市遊走所有地區，當中還有 100 項以上高級獎勵。"
 	"DAC_CC_TakeOverWhiteSpire"					"接管白色尖塔"
 
@@ -5090,7 +5117,7 @@
 
 	"DAC_Challenge_Puzzle_s1_jull3_title"	"混淆焦點"
 	"DAC_Challenge_Puzzle_s1_jull3_quote"	"人們來到殘月是因為這裡有別處找不到的佳釀。我以瘟疫守衛為基底的雞尾酒有喝死過人嗎？有。但那些沒死掉的人對這體驗讚不絕口。- <i>奪命調酒師賈爾</i>"
-	"DAC_Challenge_Puzzle_s1_jull3_lore"	"賈爾放了瘟疫守衛毒液的雞尾酒為他在白蘭會贏下一席之地，雖然將之稱為"cocktail" is generous... its basically just venom and Icewrack white."
+	"DAC_Challenge_Puzzle_s1_jull3_lore"	"賈爾以瘟疫守衛毒液調製的雞尾酒為他在白蘭會贏下一席之地，雖然將之稱為「雞尾酒」有點太抬舉它了……基本上只是毒液兌冰川殘骸白酒。"
 
 	"DAC_Challenge_Puzzle_s1_jull4_title"	"過不了斯溫這關"
 	"DAC_Challenge_Puzzle_s1_jull4_quote"	"我會找到辦法處理這個問題…… - <i>突破障礙的賈爾</i>"
@@ -5346,7 +5373,7 @@
 
 	"DAC_Challenge_Puzzle_s1_anessix2_title"	"靈體顯現"
 	"DAC_Challenge_Puzzle_s1_anessix2_quote"	"靈體兄弟試圖箝制我……我欣賞他們的投入，但憎恨他們對無用之事的熱衷。- <i>靈體之災安納西克斯</i>"
-	"DAC_Challenge_Puzzle_s1_anessix2_lore"		"多方勢力早已憂慮安納西克斯的權勢日漸增長——之中卻不包含靈體兄弟。"
+	"DAC_Challenge_Puzzle_s1_anessix2_lore"		"多方勢力早已憂慮安納西克斯的權勢日漸增長——而靈體兄弟決定對其採取實際行動。"
 
 	"DAC_Challenge_Puzzle_s1_anessix3_title"	"剝皮雙子之使徒"
 	"DAC_Challenge_Puzzle_s1_anessix3_quote"	"雖然在預料之中，但有人反抗我的統治這件事依舊令人失望。- 與剝皮雙子發生衝突的瑞斯托王廷"
@@ -5505,13 +5532,13 @@
 	"DAC_Challenge_Streetfight_bloodbounds_and_warlocks_Win"		"恩諾把術士趕走後，蛇鼠之窩的神祕失蹤現象就不再發生了"
 	"DAC_Challenge_Streetfight_bloodbounds_and_warlocks_Lose"		"八卦！肉塊拼接的巨人在蛇鼠之窩徘徊"
 	
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Title"		"Experimental Growth"
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Bot"		"Bloodbound Warlocks"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Title"		"實驗性生長"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Bot"		"血親術士"
 	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_BotDesc"		"bloodbounds_and_warlock Desc"
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Lore"		"It's not unusual to see Warlocks turn to the Warrens when they are looking for \"volunteers\" for their experiments."
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Quote"		"In which Enno declares that life may be cheap in White Spire, but his people aren't for sale"
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Win"		"Mysterious disappearances in The Warrens comes to an end as Enno drives out Warlocks"
-	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Lose"		"Rumor! Fleshgrafted giants stalk The Warrens"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Lore"		"術士會跑到蛇鼠之窩找「自願」的實驗對象，並不稀奇。"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Quote"		"恩諾聲明白色尖塔的人命雖不值錢，但他的手下不能被收買"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Win"		"恩諾把術士趕走後，蛇鼠之窩的神祕失蹤現象就不再發生了"
+	"DAC_Challenge_Streetfight_bloodbounds_and_warlock_Lose"		"八卦！肉塊拼接的巨人在蛇鼠之窩徘徊"
 	
 
 
@@ -5629,7 +5656,7 @@
 	"DAC_Challenge_Streetfight_tutorial_creeps_Title"		"歡迎來到白色尖塔"
 	"DAC_Challenge_Streetfight_tutorial_creeps_Bot"			"眾多受害者的頭一位"
 	"DAC_Challenge_Streetfight_tutorial_creeps_BotDesc"		"tutorial_creeps Desc"
-	"DAC_Challenge_Streetfight_tutorial_creeps_Lore"		"艾布媽媽生前已表明她想要怎樣的接班人：要夠狡詐才能在這個以歹毒為樂的城市周旋，又要有領袖魅力才能獲得人們的忠誠和信任，更要能為達目的而不擇手段。"
+	"DAC_Challenge_Streetfight_tutorial_creeps_Lore"		"艾布媽媽生前已表明她想要怎樣的接班人：要夠狡詐才能在歡罪城周旋，又要有領袖魅力才能獲得人們的忠誠和信任，更要能為達目的而不擇手段。"
 	"DAC_Challenge_Streetfight_tutorial_creeps_Quote"		"艾布媽媽知道遲早有人會來要她的命，因此她決定為可能的接班人留下一份指示。"
 	"DAC_Challenge_Streetfight_tutorial_creeps_Win"			"有潛力的白色尖塔統治者學習街頭戰該注意的細節"
 	"DAC_Challenge_Streetfight_tutorial_creeps_Lose"		"未來的白色尖塔統治者在有所作為前遭刺"
@@ -5638,6 +5665,16 @@
 	"DAC_Challenge_Puzzle_intro_quote"			"哈伯根、安納西克斯、賈爾，和恩諾即將展開一場險峻至極的地盤爭奪戰。哈伯根盯上了艾布媽媽生前流連忘返的新暗巢。賈爾想得到幽影港以便掌控貨品進出口。安納西克斯把目標轉向小瑞文泰爾，看中那裡的財富和秘密。而恩諾……嗯，恩諾繼續做自己，希望成為蛇鼠之窩之主。"
 	"DAC_Challenge_Puzzle_intro_lore"			"不只是單純的街頭暴力，前方還有許多艱險等著想要接替艾布的人……會碰到的複雜情境和狀況甚至連這些經驗老道的罪犯都無法預測。"
 
+	// City Crawl Complete
+	
+	"DAC_citycrawl_complete_hobgen"				"全面掌握新暗巢的控制權後，哈伯根在白色尖塔的立足點就此鞏固。現在，這位精靈正狂歡慶祝……對未來幾個月將面臨的艱難抉擇毫不知情。"
+	"DAC_citycrawl_complete_jull"				"賈爾慶祝自己稱霸幽影港的方式很符合他的風格：在殘月酒吧大醉一場。在酒局中酩酊大醉的他，連斧王都准許再次進入酒吧。有傳言說小古此時已正在撰寫一本有關這狂野之夜的書。"
+	"DAC_citycrawl_complete_enno"				"現在，眾所認可的蛇鼠之王恩諾面臨艱難的抉擇……在貧民窟稱王他就滿足了嗎？還是應該把眼光放遠……看下去才知道。"
+	"DAC_citycrawl_complete_anessix"			"安納西克斯的使者穿梭小瑞文泰爾，織出一個由祕密與親信構成的強大網絡。但這個屬世的惡魔並不因此滿足……她在和瑞斯托王廷玩一場危險的遊戲，如果他們發現她的企圖，她所構築的一切都會灰飛煙滅。"
+	"DAC_citycrawl_complete_all"				"地盤邊界已定，但白色尖塔的故事才正要展開。歡罪城的宿敵如同它的祕密數不勝數……遲早都會浮上檯面。"
+
+
+	
 	
 }
 

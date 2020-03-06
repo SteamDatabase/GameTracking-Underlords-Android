@@ -240,6 +240,9 @@
 	"DAC_PurchaseEvent_AlreadyOwned"					"У вас уже есть этот сезон"	
 	"DAC_PurchaseEvent_SuccessTitle"					"Готово"
 	"DAC_PurchaseEvent_SuccessBody"						"Вы приобрели боевой пропуск!"
+	"StoreCheckout_Error_Title"							"Ошибка"
+	"StoreCheckout_CannotPurchase"						"Не удалось совершить покупку"
+
 
 
 	"DAC_PurchaseEventCurrency_ErrorTitle"				"Ошибка"
@@ -500,6 +503,7 @@
 	"DAC_GenericError_RegionInfoNotProvided"			"Чтобы играть по сети, нужно зарегистрировать акккаунт."
 	"DAC_GenericError_DurationControlBlocked"				"Вы превысили максимальное разрешённое время сетевой игры."
 
+	"DAC_PurchaseError_NotSignedIn"						"Чтобы совершать покупки, необходимо войти в Steam."
 	"DAC_PurchaseError_NotConnectedToGC"				"Чтобы совершать покупки, необходимо подключиться к сети игры"
 	"DAC_PurchaseError_NoResponse"						"Не удалось связаться с сетью игры. Повторите попытку позже."
 	"DAC_PurchaseError_InternalError"					"При проверке, можно ли приобрести этот предмет, произошла непредвиденная ошибка. Повторите попытку позже."
@@ -512,6 +516,11 @@
 	"DAC_PurchaseError_InvalidQuantity"					"Запрошенное число копий этого предмета недопустимо."
 	"DAC_PurchaseError_OutstandingReservations"			"Покупка этого предмета уже начата. Чтобы купить больше копий этого предмета, отмените или завершите активную покупку."
 	"DAC_PurchaseError_ExceedsCreditLimit"				"У вас слишком много неиспользованных кредитов на этом аккаунте. Пожалуйста, потратьте их перед приобретением новых."
+
+	"DAC_PurchaseError_InternalStore"					"При покупке предмета произошла непредвиденная ошибка."
+	"DAC_PurchaseError_CannotPurchase"					"С вашего аккаунта невозможно совершать покупки."
+	"DAC_PurchaseError_MissingItem"						"Произошла непредвиденная ошибка. Предмет отсутствует."
+	"DAC_PurchaseError_Cancelled"						"Покупка отменена."
 
 	"DAC_ReservationError_NoResponse"					"Не удалось связаться с сетью игры. Повторите попытку позже."
 	"DAC_ReservationError_InternalError"				"Произошла непредвиденная ошибка. Повторите попытку позже."
@@ -853,7 +862,7 @@
 	"dac_hero_hint_jumping_movement"					"Напрыгивает на врагов"
 	"dac_hero_hint_teleport_movement"					"Телепортируется к врагам"
 	"dac_hero_hint_high_single_target_damage"			"Наносит высокий урон одной цели"
-	"dac_hero_hint_high_group_damage"					"Наносит высокий урон нескольким целям"
+	"dac_hero_hint_high_group_damage"					"Наносит высокий урон по группе целей"
 	"dac_hero_hint_aoe_ministun"						"Ненадолго оглушает врагов рядом"
 	"dac_hero_hint_freezes_enemies"						"Замораживает врагов"
 	"dac_hero_hint_aoe_silence"							"Безмолвие по большой области"
@@ -1078,7 +1087,7 @@
 	"dac_item_mana_sponge_lore"							"«Настоящий героизм проявляется, когда терять уже нечего». <i>(Зенок, торгаш из Белого Шпиля)</i>"
 	
 	"dac_item_quelling_blade"							"Топорик пресечения"
-	"dac_item_quelling_blade_desc"						"+{d:damage} к урону от атак. Владелец в первую очередь атакует призванных существ, нанося им критические атаки с увеличенным на {d:crit_bonus_vs_neutrals} уроном."
+	"dac_item_quelling_blade_desc"						"+{d:damage} к урону от атак. Владелец в первую очередь атакует призванных существ, нанося критическими атаками {d:crit_bonus_vs_neutrals}% урона."
 	"dac_item_quelling_blade_lore"						"«Грэк так бесится, когда кто-нибудь покупает этот топорик». <i>(Зенок, торгаш из Белого Шпиля)</i>"
 	
 	"dac_item_boots_of_speed"							"Сапоги скорости"
@@ -1558,7 +1567,7 @@
 	"DAC_InGame_UnitDPS_Query"							"Урон в секунду: <span class=\"Count\">{i:attack_dps}</span>"
 	"DAC_InGame_UnitHP_Query"							"Здоровье: <span class=\"Count\">{i:selectedUnitHP}</span>"
 	"DAC_InGame_UnitArmor_Query"						"Броня: <span class=\"Count\">{i:selectedUnitArmor}{s:selectedUnitBonusArmor}</span>"
-	"DAC_InGame_KillCount_Query"						"Убийств: <span class=\"Count\">{d:kill_count}</span>"
+	"DAC_InGame_KillCount_Query"						"Убийств: <span class=\"Count\">{f:kill_count}</span>"
 	"DAC_InGame_KillStreak_Query"						"Серия убийств: <span class=\"Count\">{d:kill_streak}</span>"
 	"DAC_InGame_DuelBonusDamage_Query"					"Доп. урон от дуэлей: <span class=\"Count\">{d:duel_bonus_damage}</span>"
 	"DAC_InGame_BrawnyKillCount_Query"						"Убийств альянсом крепких: <span class=\"Count\">{f:brawny_kills}</span>"
@@ -2195,8 +2204,8 @@
 	"DAC_Battlepass_PurchasePriceWithCurrency"			"{i:credits_price} монет ({g:dac_item_price:purchase_offer_item_id})"
 	"DAC_Battlepass_PurchaseItemStorePrice"				"{g:dac_item_price:purchase_offer_item_id}"
 	"DAC_Battlepass_YouWillUnlockTheseRewards"			"Вы получите следующие награды"
-	"DAC_Battlepass_LockedRewardsDescription"			"Вы уже заработали несколько наград (а именно {i:num_rewards}). Купите боевой пропуск, чтобы получить их."
-	"DAC_Battlepass_LockedRewardsDescription1Reward"	"Вы уже заработали 1 награду. Купите боевой пропуск, чтобы получить её."	
+	"DAC_Battlepass_LockedRewardsDescription"			"Заработано наград: {i:num_rewards}. Чтобы получить их, купите боевой пропуск."
+	"DAC_Battlepass_LockedRewardsDescription1Reward"	"Заработано наград: 1. Чтобы получить её, купите боевой пропуск."	
 	"DAC_Battlepass_UnlockDescriptionNoRewards"			"Получите доступ ко всем испытаниям городского рейда и наградам боевого пропуска, включая новые поля, объекты для украшения поля, мишени, реакции и многое другое."
 	"DAC_Battlepass_IncludesLevels"					"Включает 5 уровней"
 	"DAC_Battlepass_LevelUpBuy2"						"2 уровня"
@@ -2207,6 +2216,20 @@
 	"DAC_Battlepass_YouHaveOneLockedReward"				"Неполученных наград: 1"
 	"DAC_Battlepass_YouHaveLockedRewards"				"Неполученных наград: {i:num_locked_rewards}"
 	"DAC_Purchase"										"Купить"
+	"DAC_Battlepass_ItemOdds"							"Шансы получения предметов"
+	
+	"DAC_ItemOdds_Title"								"Получение случайных предметов"
+	"DAC_ItemOdds_BoardPropHeader"						"Шансы у предметов для поля"
+	"DAC_ItemOdds_BoardPropDescription"					"В боевом пропуске можно получить 20 случайных предметов для поля. Каждый из них отбирается из 20 возможных предметов так, чтобы они не повторялись. Пользователи, которые приобретут боевой пропуск и достигнут 100 уровня, получат все предметы для поля. 4 случайных предмета можно получить бесплатно при достижении соответствующего уровня боевого пропуска (как и другие бесплатные награды). Предметы для поля — это украшения, не влияющие на игровой процесс."
+	"DAC_ItemOdds_StreetFightItemsHeader"				"Шансы у предметов уличного боя"
+	"DAC_ItemOdds_StreetFightItemsDescription"			"В боевом пропуске можно получить 8 случайных предметов уличного боя, а ещё 40 выдаются в городском рейде. Каждый лорд получит по 12 не повторяющихся предметов. Предметы одного разряда имеют одинаковый шанс получения. Эти предметы не влияют на игру в сетевых режимах. Их можно использовать только в уличных боях городского рейда, проходящих в одиночном режиме.
+
+Список возможных предметов одинаков для каждого лорда и не содержит повторяющихся предметов, но разным лордам может достаться один и тот же предмет. Например, получить два «Клеймора» для Энно невозможно, зато можно получить один «Клеймор» для Энно, а другой — для Анессикс."
+	"DAC_ItemOdds_StreetFightItemsHeaderTier1"			"Предметы 1 разряда: 1 предмет для каждого лорда"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier2"			"Предметы 2 разряда: 3 предмета для каждого лорда"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier3"			"Предметы 3 разряда: 5 предметов для каждого лорда"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier4"			"Предметы 4 разряда: 2 предмета для каждого лорда"
+	"DAC_ItemOdds_StreetFightItemsHeaderTier5"			"Предметы 5 разряда: 1 предмет для каждого лорда"
 
 	"GenericConfirmText_Label"							"Подтвердить"
 	"DAC_PurchaseError_Title"		"Не удалось совершить покупку"
@@ -2474,7 +2497,7 @@
 
 	"DAC_Synergy_Desc_Orc"		"Все крепкие существа получают +{s:hp_bonus} к максимальному здоровью"
 
-	"DAC_Synergy_Desc_Brawny"		"Крепкие существа получают +{s:hp_bonus} к максимальному здоровью за каждое убийство, совершённое крепкими (+[60/120] к максимальному здоровью в «Вышибалах»). Убийство призванного существа считается как 0,25 убийства."
+	"DAC_Synergy_Desc_Brawny"		"Крепкие существа получают +{s:hp_bonus} к максимальному здоровью за каждое убийство, совершённое крепкими (+[60/120] к максимальному здоровью в «Вышибалах»). Убийство призванного существа считается за четверть обычного убийства."
 	"DAC_Synergy_Desc_Brawny_ExtraData" "Убийств альянсом крепких: {f:brawny_kills}<br/>Доп. здоровье крепких: {d:brawny_bonus_health}"
 
 	"DAC_Synergy_Desc_Troll"		"Тролли получают +{s:attack_speed_bonus_trolls} к скорости атаки, остальные союзники получают +{s:attack_speed_bonus_others} к скорости атаки"
@@ -2517,7 +2540,7 @@
 
 	"DAC_Synergy_Desc_Summoner"			"Призванные союзниками существа получают +{s:damage_percent}% к урону от атак."
 	
-	"DAC_Synergy_Desc_Vigilant"			"Когда враг применяет способность, {s:alliance_eligible} нападают на него, если он в радиусе атаки."
+	"DAC_Synergy_Desc_Vigilant"			"Whenever an enemy unit casts a spell, {s:alliance_eligible} target that enemy if it is within their range. The damage of the next attack against this target is increased by {s:damage_percent}%."
 	
 	"DAC_Synergy_Desc_Void"				"Атаки всех союзных героев с шансом в {s:proc_chance}% наносят дополнительный чистый урон в размере {s:pure_damage_percent}% от максимального здоровья цели."
 
@@ -3511,7 +3534,7 @@
 	"dac_hotkey_scroll_camera_up_desc" 				"Поднять камеру выше"
 	"dac_hotkey_scroll_camera_down_desc" 			"Опустить камеру ниже"
 	"dac_hotkey_tilt_camera_modifier_desc" 			"Удерживайте, чтобы переместить камеру. Нажмите, чтобы сбросить."
-
+	"dac_hotkey_board_spray_desc"					"Нарисовать граффити в месте расположения курсора"
 	"dac_hotkey_alliances_tab"						"Просмотреть вкладку альянсов"
 	"dac_hotkey_dps_tab"							"Просмотреть вкладку урона в секунду"
 	"dac_hotkey_items_tab"							"Просмотреть вкладку предметов"
@@ -3599,14 +3622,14 @@
 	"DAC_Hero_Odds_Tier2"							"Герои 2 разряда: {s:odds_tier_2}%"
 	"DAC_Hero_Odds_Tier3"							"Герои 3 разряда: {s:odds_tier_3}%"
 	"DAC_Hero_Odds_Tier4"							"Герои 4 разряда: {s:odds_tier_4}%"
-	"DAC_Hero_Odds_Tier5"							"Главари: {s:odds_tier_5}%"
+	"DAC_Hero_Odds_Tier5"							"Герои 5 разряда: {s:odds_tier_5}%"
 
 	"DAC_Hero_Odds_Next_Level"						"Следующий уровень"
 	"DAC_Hero_Odds_Tier1_Next"						"Герои 1 разряда: {s:odds_tier_1_next}%"
 	"DAC_Hero_Odds_Tier2_Next"						"Герои 2 разряда: {s:odds_tier_2_next}%"
 	"DAC_Hero_Odds_Tier3_Next"						"Герои 3 разряда: {s:odds_tier_3_next}%"
 	"DAC_Hero_Odds_Tier4_Next"						"Герои 4 разряда: {s:odds_tier_4_next}%"
-	"DAC_Hero_Odds_Tier5_Next"						"Главари: {s:odds_tier_5_next}%"
+	"DAC_Hero_Odds_Tier5_Next"						"Герои 5 разряда: {s:odds_tier_5_next}%"
 
 	"DAC_Hero_Odds_Tier1_Short"							"{s:odds_tier_1}%"
 	"DAC_Hero_Odds_Tier2_Short"							"{s:odds_tier_2}%"
@@ -3633,7 +3656,8 @@
 	"DAC_CityCrawl_MostRecent"						"Недавнее"
 	"DAC_CityCrawl_RecommendedHeader"				"Недавнее:<br/><span class='RecommendedChallengeDesc'>{s:recommended_challenge}</span>"
 	"DAC_ChallengeGameModeRequirementsNotMet"		"Выберите другой режим игры, чтобы выполнить задание городского рейда."
-	"DAC_ChallengeDifficultyRequirementsNotMet"		"Выберите нечестных ботов, чтобы выполнить задание городского рейда."
+	"DAC_ChallengeDifficultyRequirementsNotMet"		"Выберите нечестных ботов (за опыт) или сыграйте с другими игроками, чтобы заработать очки боевого пропуска."
+	"DAC_ChallengePrivateGameNotFull"				"Чтобы заработать очки боевого пропуска, требуется заполненная группа."
 
 	"DAC_Challenge_DodgeAttacks_Desc"				"Уклонитесь от {s:threshold} атак."
 	"DAC_Challenge_CritAttacks_Desc"				"Нанесите {s:threshold} критических атак."
@@ -3652,7 +3676,7 @@
 	"DAC_RewardsAbout_PointsEarned"					"Очков заработано"
 	"DAC_Challenge_RerollAt"						"До нового испытания {t:d:time_to_reroll}"
 	"DAC_Challenge_RerollAvailableAt"				"Новое испытание"
-	"DAC_Challenge_Claimable"						"Получить награду"
+	"DAC_Challenge_Claimable"						"Получить"
 	"DAC_Challenge_ChallengeComplete"				"Пройдено"
 	"DAC_Challenge_Number"							"Испытание {d:challenge_slot}"
 	"DAC_Challenge_HobgenCombine2Stars_Desc"		"Создайте {s:threshold} ★★ существ"
@@ -3781,10 +3805,11 @@
 	"DAC_LoadoutUnderlords"							"Снаряжение: лорды"
 	"DAC_LoadoutGame"								"Снаряжение: игра"
 	"DAC_LoadoutPlayer"								"Снаряжение: игрок"
-	"DAC_LoadoutMapPropEditor"						"Снаряжение: предметы на поле"
+	"DAC_LoadoutMapPropEditor"						"Снаряжение: редактор предметов на поле"
 
 	"DAC_LoadoutEquip"								"Использовать"
-	"DAC_LoadoutEquipped"							"Используется"
+	"DAC_LoadoutEquipped"							"Выбрано"
+	"DAC_EditBoardProps"							"Изменить предметы на поле"
 	"DAC_LoadoutEquip_Popup_Close"					"Закрыть"
 	"DAC_LoadoutEquip_Failed_Title"					"Не удалось использовать"
 	"DAC_LoadoutEquip_Failed_Body"					"Сейчас этот предмет нельзя использовать. Повторите попытку позже."
@@ -4097,6 +4122,7 @@
 	"DAC_Challenge_Popup_2_Valid_Modes"		"Подходящие режимы: {s:game_mode_1}, {s:game_mode_2}"
 	"DAC_Challenge_Popup_1_Valid_Mode"		"Подходящие режимы: {s:game_mode_1}"
 	"DAC_challenge_map_city_key_count"		"{d:city_keys}"
+	"DAC_challenge_map_objectives_count"	"{d:city_objectives}"
 
 	"DAC_Area_Inventory_Title"				"Рюкзак:"
 	"DAC_Area_Inventory_Description"		"Предметами для лорда, полученными в уличных боях и в боевом пропуске, можно будет улучшать вашу команду в будущих уличных боях."
@@ -4378,6 +4404,7 @@
 	"DAC_Challenge_Street_Fight_Desc"			"Завершите уличный бой!"
 	"DAC_Challenge_Street_Fight_Lore"			"«Грэк. Друг. Дружище. Лучше бы ты и дальше возился с постановочными боями...» <i>(Хобген ставит выскочку на место)</i>"
 
+	"DAC_Challenge_Puzzle_Desc"					"Загадка решена!"
 	
 	"dac_challenge_difficulty_1"				"Лёгкая"
 	"dac_challenge_difficulty_2"				"Непростая"
@@ -4545,7 +4572,7 @@
 
 	"DAC_CC_Intro_Title"						"Захватите город"
 	"DAC_CC_Intro_Desc"							"Получайте костюмы лордов, победные танцы, плакаты о розыске и многое другое, проходя испытания и захватывая районы Белого Шпиля."
-	"DAC_CC_Intro_Desc_Outfits"					"Пройдя район лорда целиком, вы получите наряднейший костюм для него"
+	"DAC_CC_Intro_Desc_Outfits"					"Пройдя район лорда целиком, вы получите наряднейший костюм для него."
 	"DAC_CC_Intro_Node_Label"					"Типы испытаний:"
 	"DAC_CC_Intro_Puzzle_Title"					"Загадка"
 	"DAC_CC_Intro_Puzzle_Desc"					"Наймите команду и победите могучего врага. Осторожно: играть придётся по чужим правилам!"
@@ -4562,7 +4589,7 @@
 	"DAC_CC_ChallengeTypeDesc_Puzzle"				"Требуется описание загадки"
 	"DAC_CC_ChallengeTypeSubDesc_Puzzle"			"Требуется подописание загадки"
 	"DAC_CC_ChallengeType_StreetFight"				"Уличный бой"
-	"DAC_CC_ChallengeTypeDesc_StreetFight"			"Выберите начальный комплект и покупайте в лавке существ, чтобы отбиться от нападающих."
+	"DAC_CC_ChallengeTypeDesc_StreetFight"			"Выберите начальный состав и покупайте в лавке существ, чтобы отбиться от нападающих."
 	"DAC_CC_ChallengeTypeSubDesc_StreetFight"		"Уличные бои ведутся до двух побед. Удачи!"
 
 	"DAC_CC_ChallengeType_StreetFight_PosterTitle"	"Уличный бой"
@@ -4576,12 +4603,12 @@
 	"DAC_CC_StreetFight_Difficulty_6"					"- Уровень 6"
 	
 	"DAC_CC_StreetFight_Modal_Title"					"Уличный бой"
-	"DAC_CC_StreetFight_Modal_Desc1"					"Выберите начальный комплект и покупайте в лавке существ, чтобы победить."
+	"DAC_CC_StreetFight_Modal_Desc1"					"Выберите начальный состав и покупайте в лавке существ, чтобы отбиться от нападающих."
 	"DAC_CC_StreetFight_Modal_Desc2"					"Уличные бои ведутся до двух побед. Удачи!"
 
 	"DAC_CC_Puzzle_Modal_Title"							"Загадка"
 	"DAC_CC_Puzzle_Modal_Desc1"							"Для победы следуйте условиям загадки."
-	"DAC_CC_Puzzle_Modal_Desc2"							" Любое существо можно улучшить, выбрав его и отрегулировав ранг. Удачи!"
+	"DAC_CC_Puzzle_Modal_Desc2"							" Любое существо можно улучшить, выбрав его и добавив ему звёзд. Удачи!"
 
 	"DAC_Play_City_Crawl_Challenge"					"Задание городского рейда"
 	"DAC_Play_No_Challenge_Selected"				"Задание не выбрано"
@@ -5089,7 +5116,7 @@
 
 	"DAC_Challenge_Puzzle_s1_jull3_title"	"Туманные замыслы"
 	"DAC_Challenge_Puzzle_s1_jull3_quote"	"«В \"Осколок луны\" приходят за не виданной нигде выпивкой. Каждый ли переживёт мой коктейль на основе чумных тотемов? Нет. Но выжившие в восторге от такого приключения». <i>(Джул, смертоносный бармен)</i>"
-	"DAC_Challenge_Puzzle_s1_jull3_lore"	"Добавив яд Чумного тотема в коктейль, Джул завоевал себе место среди Белых орхидей, хотя вкус весьма специфи"cocktail" is generous... its basically just venom and Icewrack white."
+	"DAC_Challenge_Puzzle_s1_jull3_lore"	"Добавив яд Чумного тотема в коктейль, Джул завоевал себе место среди Белых орхидей, хотя называть это коктейлем чересчур щедро... это просто яд и беленькая из Айсрека."
 
 	"DAC_Challenge_Puzzle_s1_jull4_title"	"Мимо Свена не пройдёшь"
 	"DAC_Challenge_Puzzle_s1_jull4_quote"	"«Я найду способ разобраться с этой проблемой...» <i>(Джул устраняет препятствия)</i>"
@@ -5345,7 +5372,7 @@
 
 	"DAC_Challenge_Puzzle_s1_anessix2_title"	"С тобой связаться хотят…"
 	"DAC_Challenge_Puzzle_s1_anessix2_quote"	"«Братья-духи надеются сдержать меня... Я уважаю их самоотверженность, но не выношу их стремление познать тщетность». <i>(Анессикс, бич духов)</i>"
-	"DAC_Challenge_Puzzle_s1_anessix2_lore"		"Многие силы с тревогой следили за восхождением Анессикс к власти... но не братья-духи."
+	"DAC_Challenge_Puzzle_s1_anessix2_lore"		"Многие силы с тревогой следили за восхождением Анессикс к власти... но братья-духи решили всерьёз заняться ею."
 
 	"DAC_Challenge_Puzzle_s1_anessix3_title"	"Служители Бескожих близнецов"
 	"DAC_Challenge_Puzzle_s1_anessix3_quote"	"«Сопротивление моему господству, хоть и ожидаемо, всегда разочаровывает». (Ристульский двор не в ладах с Бескожими близнецами)"
@@ -5637,6 +5664,16 @@
 	"DAC_Challenge_Puzzle_intro_quote"			"Хобген, Анессикс, Джул и Энно решили начать свою делёжку с захвата самых опасных территорий. Хобген положил глаз на Новомрак, излюбленное место прогулок Мамаши Иб. Джул направился в порт Скольтень, чтобы взять под контроль импорт и экспорт товаров. Анессикс взялась за Малый Ревтел, где крутится много денег и секретов. А Энно... Ну, Энно остался самим собой и продолжил заправлять Трущобами."
 	"DAC_Challenge_Puzzle_intro_lore"			"Многие испытания ждут тех, кто желает занять место Мамаши Иб. Размахиванием кулаков дело не кончится: некоторые трудности и задачки не могут себе представить даже закоренелые преступники."
 
+	// City Crawl Complete
+	
+	"DAC_citycrawl_complete_hobgen"				"Установив контроль над Новомраком, Хобген создал ценный плацдарм в Белом Шпиле. Пока что фея торжествует... и не подозревает, какие тяжёлые решения ему придётся принять в ближайшие месяцы."
+	"DAC_citycrawl_complete_jull"				"Джул отпраздновал своё владычество в порту Скольтень самым что ни на есть джулячеством: он напился как морж в «Осколке луны» и так безудержно праздновал, что даже разрешил Аксу снова появиться в баре. Ходят слухи, что Мила уже начала работать над книгой о том ночном дебоше."
+	"DAC_citycrawl_complete_enno"				"Перед уже неоспоримым Королём Трущоб Энно стоит непростой вопрос... довольствоваться ли положением суверена нищих? Или замахнуться на расширение своих владений... только время покажет."
+	"DAC_citycrawl_complete_anessix"			"Посланники Анессикс сплели в Малом Ревтеле мощную паутину секретов и доверенных лиц. Но приземлённая демонесса не нашла удовлетворения… она играла в опасную игру с Ристульским двором, и, если бы её намерения раскрыли, все её старания пошли бы прахом."
+	"DAC_citycrawl_complete_all"				"Границы проложены, но история Белого Шпиля только начинается.  Город нижайших наслаждений имеет столько же врагов, сколько секретов… а когда они выйдут на свет — лишь вопрос времени."
+
+
+	
 	
 }
 

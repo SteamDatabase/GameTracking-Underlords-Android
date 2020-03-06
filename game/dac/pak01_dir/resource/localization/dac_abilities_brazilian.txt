@@ -366,7 +366,7 @@
 		
 		//BLOODSEEKER
 		"dac_ability_bloodseeker_blood_rage"									"Fúria por Sangue"
-		"dac_ability_bloodseeker_blood_rage_Description"						"PASSIVA: a cada segundo, o Sanguinário sofre dano equivalente a {s:self_dmg_pct}% da sua vida máxima.<br><br>Ele recebe velocidade de ataque conforme a vida é perdida, até um máximo de {s:attack_speed_bonus_max}% (com {s:min_health_pct}% de vida).<br><br>Sempre que um inimigo adjacente morre, ele recupera {s:heal_pct}% da vida máxima."
+		"dac_ability_bloodseeker_blood_rage_Description"						"PASSIVE: As Bloodseeker's enemy's health drops, he gains attack speed, up to a maximum of {s:attack_speed_bonus_max} at {s:min_health_pct}% health.<br><br>Whenever Bloodseeker kills a target, he regains {s:heal_pct}% of their max health."
 		"dac_ability_bloodseeker_blood_rage_Lore"								"Se eu aprendi algo na minha carreira, é que o pessoal adora sangue. Contrate esse cara. — <i>Grek, mestre da propaganda</i>"
 		
 		//ARC WARDEN
@@ -376,7 +376,7 @@
 		
 		//ARC WARDEN
 		"dac_ability_arc_warden_tempest_double_no_items"						"Duplicata Tempestuosa"
-		"dac_ability_arc_warden_tempest_double_no_items_Description"			"O Guardião do Arco cria uma cópia de si mesmo com a mesma quantidade de vida."
+		"dac_ability_arc_warden_tempest_double_no_items_Description"			"O Guardião do Arco cria uma cópia de si mesmo com a mesma quantidade de vida. Clones causam {s:clone_dmg_reduction}% a menos de dano."
 		"dac_ability_arc_warden_tempest_double_no_items_Lore"					"Ele traz consigo os mistérios da criação. — <i>Turath, profeta enigmático</i>"
 
 		//MIRANA
@@ -410,7 +410,7 @@
 
 		// Lone Druid Bear
 		"dac_ability_lone_druid_spirit_bear_entangle"							"Garras Entrelaçantes"
-		"dac_ability_lone_druid_spirit_bear_entangle_description"				"Ataques do Espírito Urso podem entrelaçar e atordoar o alvo."
+		"dac_ability_lone_druid_spirit_bear_entangle_description"				"Ataques do Espírito Urso podem entrelaçar o alvo, desarmando e causando enraizamento."
 		"dac_ability_lone_druid_spirit_bear_entangle_lore"						" "
 
 		// THUNDER LIZARD BLOODLUST
@@ -559,7 +559,7 @@
 
 		// MANGO TREE
 		"dac_ability_mango_tree_mango_throw"										"Lançamento de Manga"
-		"dac_ability_mango_tree_mango_throw_description"							"No início do combate e depois a cada {s:mango_production_interval} segundos, a Árvore de Manga lança uma manga em até {s:radius} casas de distância. Qualquer unidade que encostar em uma manga a come, restaurando 50 de mana e 100 de vida."
+		"dac_ability_mango_tree_mango_throw_description"							"No início do combate e a cada {s:mango_production_interval} segundos, a Mangueira lança uma manga em até {s:radius} casas de distância. Qualquer unidade que encostar em uma manga irá comê-la, restaurando 50 de mana e 100 de vida."
 		"dac_ability_mango_tree_mango_throw_lore"									"Não me olhe assim... É só uma fruta. — <i>Anessix tenta lutar desesperadamente contra os estereótipos</i>"
 
 		// UNDERLORDS

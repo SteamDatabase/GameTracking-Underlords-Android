@@ -273,6 +273,7 @@
 	[%2d] %16.16s : %s (%d)
 (%2db) %6i : %s
 2hb@9
+2hB	9
 2	i:8
 2ij(8
 2ij(8\
@@ -282,7 +283,7 @@
 2_!-kc	
 2Ki)8x
 2L1@y
-2t~	)F
+2t~	)>
 2x"@9
 30CAudioSource_PlayerVoiceStream
 30CSosGroupActionTimeLimitSchema
@@ -369,10 +370,12 @@ _@8j.@
 +8)m&@
 8x9,7
 `"@9	
+!@9!(
 !#@9	
 "#@9	
 )!@9)
 )	@9?
+	!{9	
 	*	(@9
 @9	0@
 (;@93+
@@ -387,7 +390,6 @@ _@8j.@
 9CFunctor1IPFvPK11CAudioStateEP19CAudioStateInternal12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEEE
 @9?c@kA
 9CSfxTable
-!@9!h
 9hb@9
 9hb@9)
 9hf@9(
@@ -420,15 +422,15 @@ A-@ !
 A))%@
 a2@yh2@y
 a6@=b6@
-	A{9	
 	A@9)
 A@9`	(
-a@9)A@
+a@9)I@
 [A)		A
 AA9	I@
 ?AAk	"
 Abort processing sound event %s (scheduled recursively will not process this frame)
 AbsolutePoseControl
+A-#}C
 Access of unconnected ConVarRef
 Access of unconnected SplitScreenConVarRef
 accumulate_indexed_speakers
@@ -576,13 +578,15 @@ auto_unragdoll_duration
 Available Operators:
 ?AVki#
 *A_x)a_xk^
-!Ay}=
 )!Ay?	
 !Ay1I
+!Ay}A
+	az9)
 @-B	@
 B-" @
 B-(  
 B-1HD-
+B99^C
 backward
 Bad Audio file '%s'
 Bad command in vmix!
@@ -1397,10 +1401,13 @@ h&@)?
 @-$H+
 h1xij 
 h1xkj.
+h249?A99
+h2t9H
 H5@yH
 h"@9	
 h#@9	
 H#@9	
+H)@99
 h.@9H
 h:@9u*
 h"A9a
@@ -1443,7 +1450,7 @@ hJAy
 h&N)jz@
 HoA8	
 HostStateMgr001
-hR@9)a
+hR@9)
 hRA9jN@
 hr@y`
 hr@y		
@@ -1836,7 +1843,7 @@ _i(xj~A
 i#xjj-
 _i(xjrA
 ixsyl
-!i@y@
+!i@y`
 )i@y_
 )i@y?
 i.@y	
@@ -1852,7 +1859,7 @@ i@yYyix
 @)J}	
 j58hf@9(
 j5@yk9@y?
-J78]|
+J78Yt
 j)8HK
 j`8'k`8
 Ja@9*
@@ -2749,6 +2756,7 @@ Plat_GetProcAddresses
 Plat_IsHighDPI
 Plat_IsInDebugSession
 Plat_LoadSDL
+Plat_NeedsLowFragmentation
 Plat_RequireSDL
 Plat_SetDenormalsAreZero
 Plat_ShouldCollectMiniDumpsForFatalErrors
@@ -2957,6 +2965,7 @@ rojj8
 ROOM Detected 
 rootNode
 round_to_int
+rt249
 Running snd_get_physics_surface_properties for %s mod.
 Running snd_set_physics_surface_properties for %s mod.
 : %s::
@@ -3943,6 +3952,7 @@ _x	 @y
 	@y(-
 	%@y)
 	y4xl
+	!y9	
 #@y)a
 y+a@9*)
 yaw_end
@@ -3985,7 +3995,7 @@ y+O@y
 )!@y =p
 y	q@y)
 @y	S@
-@ysBD
+@ysRD
 yux)I@
 +yux)y{x
 ywx)I@
@@ -4001,7 +4011,6 @@ _Z17LoggingSystem_Logi17LoggingSeverity_t5ColorPKcz
 _Z17LoggingSystem_Logi17LoggingSeverity_tRK14LeafCodeInfo_tPKcz
 _Z6ConMsgPKcz
 _Z6DevMsgPKcz
-	!z9)
 _ZdaPv
 _ZdlPv
 z:K(None)
