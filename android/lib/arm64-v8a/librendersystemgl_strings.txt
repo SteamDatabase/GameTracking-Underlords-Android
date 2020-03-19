@@ -81,7 +81,6 @@ $@)#@@)
 15CMemberFunctor5IP19CTextureManagerBaseMS0_FvP25IAsyncResourceDataRequest11CWeakHandleI31InfoForResourceTypeCTextureBaseEP12CTextureBase22TextureSpecification_tiES3_S6_S8_S9_i12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CMemberFunctor6IP13CSOAContainerMS0_Fviiiii13__Float32x4_tEiiiiiS2_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CMemberFunctor7IP13CSOAContainerMS0_FviiiiPKS0_iiEiiiiS3_ii12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
-15CMemberFunctor9IP19CTextureManagerBaseMS0_FvP12CTextureBase11CWeakHandleI31InfoForResourceTypeCTextureBaseE12ResourceId_tPvj22TextureSpecification_tS9_i23TextureBitsMemoryType_tES3_S6_S7_S8_iS9_S9_iSA_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CRenderDeviceGL
 15CRenderPassDesc
 15CRenderResource
@@ -100,6 +99,7 @@ $@)#@@)
 16CFunctorCallback
 16CIndexBufferBase
 16CInputLayoutDictI14CInputLayoutGLE
+16CMemberFunctor10IP19CTextureManagerBaseMS0_FvP12CTextureBase11CWeakHandleI31InfoForResourceTypeCTextureBaseE12ResourceId_tPvjP17IMemoryMappedFile22TextureSpecification_tSB_i23TextureBitsMemoryType_tES3_S6_S7_S8_iSA_SB_SB_iSC_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 16CRenderContextGL
 16CRenderQueryBase
 16ICommandCallback
@@ -169,13 +169,12 @@ $@)#@@)
 "2BRbr
 2DArray
 2Gio8
-2h"39
 2	h(8
+2hb49
 2hf!9
 2hj58
 2Hku8
 2hn!9
-2hR29
 2ij(8
 2ij(8h6T
 2+imx
@@ -489,6 +488,7 @@ _8Jhj8*
 /9W?OZ
 @9x*@9{"@9!<
 @9(yh
+9;@yh
 @9+	@yHA
 @9+	@yHM
 _A16B16G16R16
@@ -539,7 +539,6 @@ Allow%d
 Allow%d( 
 Allow immediately loading mips of textures (when possible) when their headers are loaded, saving IO & reducing latency.
 alpha
-	am9	
 -@(aN
 "(aN`(!
 (aN`(!
@@ -563,7 +562,6 @@ ANDROID_VULKAN_4_0
 AnimationSystem_001
 AnimationSystemUtils_001
 AnimGraphEditorUtils001
-	Ao9	
 	aO9i
 A)phi
 appendstructuredbuffer
@@ -581,7 +579,6 @@ ARB_texture_multisample
 archive
 Arithmetic table 0x%02x was not defined
 A@}S!@
-	As9	
 ASCII conversion buffer too small
 AssertMsg_ConditionFailed
 AssetBrowserSystem_001
@@ -647,6 +644,7 @@ Begin:
 /*BEGIN_UNIFORMBINDINGS
 BenchmarkService001
 b.EycZA
+bfh9!
 BGR565
 BGR888_BLUESCREEN
 BGRA1010102
@@ -654,6 +652,8 @@ BGRA4444
 BGRA5551
 BGRA8888_LINEAR
 BGRX8888_LINEAR
+b~h9!
+b"h9!
 bhb8"
 Biases the mip level the texture streaming system choses to stream for each texture.
 Bib81
@@ -663,13 +663,14 @@ binary_lz4
 BinaryProperties_GetValue
 binormal
 b"J9_@
-BK@9W]
+bjh9!
 BKbhTb~XBK!;
 blendindices
 blendweight
 blocking issue in occlusion queries!!
 bN!(a
 bNEy_
+bnh9!
 Bogus buffer control mode
 Bogus DAC index %d
 Bogus DAC value 0x%x
@@ -704,6 +705,7 @@ Buffer passed to JPEG library is too small
 B)v	@
 B)V	@
 BXcxc
+bzh9!
 @=%	@=c
 C9an@
 )C@9H
@@ -927,7 +929,6 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 d6@yc
-d6@yC
 	D@8!
 D@8)%
 D$@8$
@@ -957,7 +958,7 @@ DCT scaled block size %dx%d not supported
 %d..%d
 %d.%d.%d
 DDDDUUUU
-DDDDUUUUDDDDUUUU
+DDDDUUUUDDDDUUUU\
 -debugdxsupport
 DebugTextureInfo001
 Decompressed %i texture mips in %.2f ms (%.1fmb/s)
@@ -1178,7 +1179,6 @@ Extra compression data
 extreme cHRM chunk cannot be converted to tristimulus values
 F-4WE-6_G-
 f!9hb!9
-F9Ii@
 \|FA@
 Failed AllocateTexture for '%s'
 Failed to AddVideoCardKeys.
@@ -1303,6 +1303,7 @@ Function %s() expects %d arguments. Found %d.
 fYfxk
 	!g9`
 	!g9i
+G9Ii@
 *!g9j
 GAMECONSOLE
 gameinfo.gi
@@ -3105,31 +3106,31 @@ GL_RENDERBUFFER_WIDTH
 GL_RENDERBUFFER_WIDTH_EXT
 gl/rendercontextgl.cpp
 gl/renderdevicegl.cpp
-gl/renderdevicegl.cpp(1232): 
-gl/renderdevicegl.cpp(1476): 
-gl/renderdevicegl.cpp(1511): 
-gl/renderdevicegl.cpp(1546): 
-gl/renderdevicegl.cpp(1581): 
-gl/renderdevicegl.cpp(1626): 
-gl/renderdevicegl.cpp(2081): 
-gl/renderdevicegl.cpp(2088): 
-gl/renderdevicegl.cpp(2134): 
-gl/renderdevicegl.cpp(2386): 
-gl/renderdevicegl.cpp(2602): 
-gl/renderdevicegl.cpp(403): 
-gl/renderdevicegl.cpp(541): 
+gl/renderdevicegl.cpp(1233): 
+gl/renderdevicegl.cpp(1477): 
+gl/renderdevicegl.cpp(1512): 
+gl/renderdevicegl.cpp(1547): 
+gl/renderdevicegl.cpp(1582): 
+gl/renderdevicegl.cpp(1627): 
+gl/renderdevicegl.cpp(2090): 
+gl/renderdevicegl.cpp(2097): 
+gl/renderdevicegl.cpp(2143): 
+gl/renderdevicegl.cpp(2402): 
+gl/renderdevicegl.cpp(2618): 
+gl/renderdevicegl.cpp(404): 
+gl/renderdevicegl.cpp(542): 
 gl/renderdevicegl.cpp(59): 
-gl/renderdevicegl.cpp(657): 
-gl/renderdevicegl.cpp(675): 
+gl/renderdevicegl.cpp(658): 
+gl/renderdevicegl.cpp(676): 
 gl/renderdevicegl.cpp(68): 
 gl/renderdevicegl.cpp(77): 
 gl/renderdevicegl.cpp(86): 
 gl/renderdevicegl.cpp(95): 
-gl/renderdevicegl.cpp(964): 
+gl/renderdevicegl.cpp(965): 
 GL_RENDERER
 GL_RENDER_MODE
 GLRenderThread
-gl/renderthreadgl.cpp(1869): 
+gl/renderthreadgl.cpp(1876): 
 -glrenderthreadstack
 GL_REPEAT
 GL_REPLACE
@@ -3854,7 +3855,6 @@ h6@9h
 H6c"J9
 h6@yh
 h78abB
-@h7]f
 `h`8@
  h"8`
 "*"h 8
@@ -3872,10 +3872,10 @@ h`8ch`8$h`8
 h$8d:B
 h`8%h`8
 h#8Jh#8
-*h*!9!
 h""9	
 h"'90
 ?h98a
+*h*!9d
 h.@9H
 h"`9tb 
 h"A9a
@@ -3930,7 +3930,7 @@ Hih8h
 Hih8R
 Hitch alert: Present was waiting for %d iterations and %.1f seconds.
 hi)xh
-hj58,
+hj58"
 hj8."@
 hJAy	
 <hji8
@@ -3947,7 +3947,7 @@ Hkw8(
 hn8c|
 HostStateMgr001
 hr1yI
-hr@9J14
+hr@9Jq
 hrqy`Z
 hr@y`
 hs_5_0
@@ -4272,7 +4272,7 @@ IS_SM_
 iv@9I
 	*iW@
 *'i$x
-	i,x(
+	i,xH
 *i.xi>@yj:
 i>@yh
 !~j	(
@@ -4280,7 +4280,7 @@ j48*:
 j48t^@
 j58hf@9(
 @j!8!
-j(85\
+j(82:
 j(8(G
 j(8(H
 j)8HA
@@ -4291,6 +4291,7 @@ j(8HH
 j`8!i 8
  J9?@
 J9e:A
+j 9	k
 ja8 i!8!
 JA@9j
 JA@9J
@@ -4326,14 +4327,12 @@ j(x	k(x)k(x
 K[ .)
 *k2@y
 _k58(
-?k68a
 k68wZ@
 ?k78h
 k(8vV@
 (k:8Z
 k(8ZSF
 K	@9)
-k9B0;
 #kc8Ein8
 KDDEy%
 KD$@xc
@@ -4921,6 +4920,7 @@ Overflow of the sheet cache texture: Try increasing SheetCacheTextureRows in gam
 p6aVA
 P6hW@
 p6%pD9
+	!p9	
 	p@9(p@9
 (pA9h
 PanoramaTextServices001
@@ -5011,6 +5011,7 @@ PNG load error %s
 png_set_background
 png_set_gAMA
 PNG unsigned integer out of range
+PooledDynamicConstantBuffer
 PORTABILITY
 position
 positiont
@@ -5138,12 +5139,12 @@ RENDER_BUFFER_USAGE_VERTEX_BUFFER
 rendercontextbase.cpp
 RenderDevice003
 renderdevicebase.cpp
-renderdevicebase.cpp(1500): 
-renderdevicebase.cpp(1664): 
-renderdevicebase.cpp(3183): 
-renderdevicebase.cpp(656): 
-renderdevicebase.cpp(930): 
-renderdevicebase.cpp(947): 
+renderdevicebase.cpp(1506): 
+renderdevicebase.cpp(1670): 
+renderdevicebase.cpp(3189): 
+renderdevicebase.cpp(662): 
+renderdevicebase.cpp(936): 
+renderdevicebase.cpp(953): 
 RenderDeviceMgr001
 renderdevicemgrbase.cpp
 RenderDoc was detected.
@@ -5724,16 +5725,16 @@ text compression mode is out of range
 TextLayout_001
 TextMessageMgr_001
 texturebase.cpp
-texturebase.cpp(1808):Error loading texture: %s
-texturebase.cpp(2742):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2763):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2774):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2785):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2796):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2817):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2828):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2839):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2850):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(1818):Error loading texture: %s
+texturebase.cpp(2752):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2773):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2784):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2795):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2806):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2827):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2838):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2849):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2860):ResourceHandleToData( %s ) failed! Falling back to error texture!
 TextureDimLog2
 Texture manager out of space! Can't allocate new texture!
 Texture memory discrepancy! %llu != %llu
@@ -6082,7 +6083,7 @@ void CRenderThreadGL::Execute(CCommandStream *, bool)
 void CRenderThreadGL::OnUpdateIndexBuffer(const CommandUpdateIndexBuffer_t &, bool)
 void CRenderThreadGL::OnUpdateVertexBuffer(const CommandUpdateVertexBuffer_t &, bool)
 void CSheetDataTextureCache::AllocateAndUploadSequenceData(const Sheet_t *, Vector2D *, int *)
-void CTextureManagerBase::AsyncHookUpTextureBits(CTextureBase *, HRenderTexture, ResourceId_t, void *, uint, TextureSpecification_t, TextureSpecification_t, int32, TextureBitsMemoryType_t)
+void CTextureManagerBase::AsyncHookUpTextureBits(CTextureBase *, HRenderTexture, ResourceId_t, void *, uint, IMemoryMappedFile *, TextureSpecification_t, TextureSpecification_t, int32, TextureBitsMemoryType_t)
 void CTextureManagerBase::MN_OnResourceFileLoaded(IAsyncResourceDataRequest *, HRenderTexture, CTextureBase *, TextureSpecification_t, int32)
 void CTextureManagerBase::MN_OnResourceLoadCompleted(CTextureBase *, TextureObjectInfo_t &, int32, int)
 void CTextureManagerBase::MN_OnResourceLoadFailed(CTextureBase *, int32)

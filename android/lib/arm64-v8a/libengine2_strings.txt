@@ -44,7 +44,6 @@ $0  }
 00010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899
 0027015
 0027020
-00:56:58
 $0// $1
 $0$1}
 0>@)1
@@ -661,6 +660,7 @@ $0 to $1,
 18MenuItemCheckImage
 18ToolTraceRayResult
 -1@9_
+	1`9)
 	1?9>b
 !)19BJRZcks{
 19C2S_CONNECT_Message
@@ -751,6 +751,7 @@ $0 to $1,
 20ISource2WorldSession
 20PacketEntitiesFilter
 20SpawnEntityToolEvent
+2	1 9A(
 21C2S_CONNECT_Message_t
 21CBidirMsg_RelayPacket
 21.CBidirMsg_RelayPacket.SignedDestinationAddress_t
@@ -813,6 +814,7 @@ $0 to $1,
 22IToolsResourceListener
 22IUserInfoChangeService
 22SerializedNetAddress_t
+23:14:36
 23CBaseGameUIInputHandler
 23CBoundedCvar_UpdateRate
 23CCLCMsg_LoadingProgress
@@ -972,8 +974,8 @@ $0 to $1,
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
 2Gio8
 2	h(8
+2hB	9=$
 2hb@9H
-2hB	9k.
 2hBK9H
 2hj)8
 2hv%9
@@ -994,14 +996,13 @@ $0 to $1,
 2j"	9I
 2j"@9)p
 2?".k
-2?k78T
-2_k88
-2?k88S
+2?k78
+2?k88
+2_k88^m
 2kii8l}C
 2Kkj8k
 2L%@x+
 2 .ProtoFlattenedSerializerField_t"!
-#2)r'
 2 - resize down
 2Way_0( %s )
 2Way_1( %s )
@@ -1104,8 +1105,6 @@ $0 to $1,
 49CNetworkServerSpawnGroup_LoadSaveGamePrerequisite
 	-49f)
 &4@9R
-4Ay+'
-4AyK'
 4CLog
 4CPVS
 4Csv_voiceenable
@@ -1216,8 +1215,6 @@ $4DTdt
 (6`&A
  6arBy
 6Ay+}E
-6AyK'
-6AyY'
 `6`BD
 6ConVar
 _6	D@
@@ -1469,9 +1466,9 @@ _8y,@8
 )=@9)}
 )!@9)
 )	@9*
+@@9)"
 @9)!@
 @9)&@
-@9)%'
 @9*&@
 @9*	@
 @9+	@
@@ -1583,8 +1580,8 @@ $@9	(
 9hV@yvR
 9hZA9
 9hZB9
+ @9i$
 ) @9i
-@@9i"
 @9i&@
 		{9i
 @9I	@
@@ -1694,7 +1691,6 @@ _A8qh
 	A@9)	
 a@9+a
 a@9	a
-(a+9c
 		A9h
 	A9h&A
 	a@9i
@@ -1843,30 +1839,24 @@ AE_VORTIGAUNT_ZAP_POWERUP
 AE_VORTIGAUNT_ZAP_SHOOT
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
+	Af9i
 A file with this name is already in the pool.
 After selecting and moving a panel Ctrl-z will undo the move.
 after solve err=%f
 After this many seconds without a message from fully connected client, the client is dropped
 After this many seconds without receiving a packet from the server, the client will disconnect itself
-	aG9i
 A game file appears to be missing or corrupted.  In the Steam client go to the game's properties.  In the 'Local Files' tab select 'Verify Integrity of Game Cache' to have Steam double-check the game's installation.
 A-gBA-
 Agg data %d: %p (%d parts, crc 0x%08X)
 aggregate_value
-	aH9i
 <a href=
 A!;I2
-	aI9i
 #A)iBB
 ai_model_info
 .A)iV@
 AIWalkable
 A	@}J!
-	aJ9i
 a.JY .I
-	aK9?
-	aK9i
-	aL9i
 alias
 Alias a command.
 ALIGN_TYPE is wrong, please fix
@@ -2202,7 +2192,7 @@ battery_saver
 bB9hb
 BB9hB
 BB9hj:8
-bBA9a
+bBA9A
 bB@yG
 BC6h compression not supported on this target (windows only).
 BC7 compression not supported on this target (windows only).
@@ -2243,6 +2233,7 @@ BGRX8888_LINEAR
 B*"h3xA
 "*bh 8
 B)hZA
+Bi9i2
 Bidirectional_Messages
 #Bidirectional_Messages_LowFrequency
 bi_GameEvent
@@ -2461,7 +2452,7 @@ C-!($
 C-2-@
 C2S_CONNECTION_Message
 C2S_CONNECT_Message
-c3@yB
+c3@y"
 C-!8"
 (c@9+
 C9an@
@@ -2598,6 +2589,7 @@ CBidirMsg_RebroadcastSource
 CBidirMsg_RelayInfo
 CBidirMsg_RelayPacket
 CBitmapImagePanel
+cBL9B
 CBoneConstraintBase
 CBoneConstraintPoseSpaceBone
 CBoneConstraintPoseSpaceBone::Input_t
@@ -2751,8 +2743,10 @@ CFinalizeConnectionPrerequisite
 CFingerBone
 CFingerChain
 CFingerSource
+cFL9B
 CFootDefinition
 CFrameSnapshot CUtlMemoryPoolMT
+c~Fyb
 CGameClientConnectPrerequisite
 CGameEventSystem::SendRebroadcastMessage doesn't support more than %llu clients!
 .CGameInfo"
@@ -2768,6 +2762,7 @@ CGameResourceService::BuildResourceManifest(start)
 CGameResourceService::DescribeContents:  manifest handle == GAME_RESOURCE_MANIFEST_HANDLE_INVALID
 CGameUIService
 CGameUIService::OnAppShutdown
+c^Gyb
 challenge_context
 challenge_number
 challenging
@@ -3923,10 +3918,9 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 d2@yi
-d3@yi
+d3@yI
 *-D),5E)_
-d6@y#
-d6@yc
+d6@yC
 	D@8!
 D@8)%
 	D@8)m
@@ -4241,6 +4235,7 @@ downloadlistgenerator.cpp
 DownloadLists
 DownloadLists/%s.lst
 #<DownloadManager
+Downscaling native resolution from %dx%d to %dx%d
         %d pointers, %d sorted, %d scanned
 DragDrop
 DragDrop.DragFrame
@@ -4739,7 +4734,6 @@ extreme cHRM chunk cannot be converted to tristimulus values
 F-!($
 F-%:%
 *-F),5G)_
-	!f9i
 fA9hf
 FA9hF
 FA9iF
@@ -4803,7 +4797,6 @@ FastHexToBuffer() wants non-negative integers, not
 FATAL
 FATAL ERROR: unable to register all schema data: %s
 -favor_consistent_framerate
--favor_load_speed
 FB9hF
 FB9)q
 FCMOV 
@@ -4828,6 +4821,7 @@ fgcolor
 fgetc
 fg_image
 F*%h3x%hgx
+F-H}D
 F*&h%x%hsx
 F*%h'x%hsx
 field
@@ -5593,6 +5587,7 @@ h)8Ay)
 )h"@9)
 h"@9(
 h"@9)
+h"@9	
 h&@9(
 ?h98a
 H9a2B
@@ -5603,7 +5598,9 @@ h*\9h
 *h"@9H
 h.@9H
 h"@9i
+h"@9i$
 h"@9I
+h"@9I$
 h:	9i>	9
 -H@9m
 H9)yx
@@ -5838,9 +5835,10 @@ i6@yh
 i78w"B
 i7xh>@
 _i(8+
+?i(8(
 	*	i8
 	I*8)
-?i(8a
+?i(8A
 i)8a^A
 *i(8B
 ?i(8h
@@ -5851,14 +5849,14 @@ i-8h*@
 i)8hv@
 (i*8i
 i)8i&
-?i(8I
 i`8%i`8
 i)8i&W
 ?i(8?i*x?i+
 i)8j&W
 i*8j&W
-?i(8k
+?i(8M
 i(8m&W
+?i(8n
 ?i(8v
 i*8?y*xJ
 *i"@9
@@ -6502,6 +6500,7 @@ i*xh>@yt:
 *i,xi>@yj:
 *i.xi>@yj:
 i-xj*
+iy8(R
 i>@yh
 Iyix8}
 IyixJylx+
@@ -6510,20 +6509,21 @@ j.\)
 @ @-J
 j2?)?
 j2	)k
-j48(!
 j48	C
 j48t^@
 j4xH;@
-j58H$
 j58hf@9(
-j58"p
+j58"l
+j58z#
 j68u"@
+j68x&
 j7Ayh3Ay)	
-j)8F_
+j(8h(
 j)8hjj
 j(8`j
 j)8`j
-j)8m7
+j)8lK
+j)8RO
 j(8(Z@
  J9?@
 $J9!|
@@ -6535,6 +6535,7 @@ j	@9I
 J!@9jB
 J	9`N	9
 J9tB	
+	*JA4
 ja8B(
 J]A9_
 jA9hj
@@ -6640,11 +6641,12 @@ Jumping to random tick %d (%.2f min)
 just happens to cross-check the results of huge numbers of
 JustInTime Resource Spawn Group
 jv8?)
-j+x@(
+j+x)"
+j+x@"
 j+x`j
 j`x j`x?
-j+xn(
-j+xW(
+j+xn"
+j+xW"
 jx`xI}	
 #@)JY@
 J	@y_!5k
@@ -6661,22 +6663,26 @@ K1@yk
 *k2@y
 ?k58D
 K5@yk
-k68s!
+k68.9
+?k78|
 *?k78
+k78A(
 ?k78h
-k78h#
+k78H&
+k78H#
 ?k)8(
-k(8(*
-_k88~
 _k88?
 ?k88_
+_k889
+?k88h&
 ?k88w
+	k(8q[
 k(8vV@
-k)8x>
 K!@9+!
 K	@9)
-_k98h!
+_k98H!
 _k98x
+	K9C!
 K9@yk
 K	A9lC
 kaJJk[k
@@ -7197,7 +7203,6 @@ lseek
 :m@)<	@
 	m?9D`
 m%@9i)
-	m]9I
 	M?9Oa
 	M~9u
 	M)9v
@@ -7273,7 +7278,7 @@ MapValueRef::GetStringValue
 MapValueRef::GetUInt32Value
 MapValueRef::GetUInt64Value
 MapValueRef::type MapValueRef is not initialized.
-Mar  5 2020
+Mar 18 2020
 m_Args
 Marked tick %u in '%s'
 (*MARK) must have an argument
@@ -7681,6 +7686,7 @@ MinidumpUserStreamInfoGet
 MinimizeToSysTray
    Minimum frame time: %f ms (%f FPS)
 minimum-height
+-minimum_mobile_resolution_y
 MinimumPhysicalMemoryMB
 Minimum updates per second that the server will allow
 minimum-width
@@ -9632,7 +9638,7 @@ RenderingBudget
 RenderingBudget/ArtistTrianglesRendered
 renderingpipelines
 renderingworld.cpp
-rendermesh.cpp(712): 
+rendermesh.cpp(736): 
 RenderMeshFile
 RenderPrimitiveType_t
 Render safe area insets as wireframe.
@@ -9811,7 +9817,6 @@ R	h(8
 r	hi8I
 rhj)8
 rhj)8H
-rhj)8H%
 rhjh8
 Rhjh8
 Rhjh8(
@@ -9850,7 +9855,7 @@ RIO_WILL_RELAY
 Rjjh8hB
 rJMJJ
 RJ	* &v
-R?k78
+R?k78F?
 R?k)8
 R(k)8
 R(kh8
@@ -11670,7 +11675,6 @@ Tj2@9j
 Tj2B9)
 Tj6@y_! k
 TJ#]8
-tj(80
 T`"J9
 Tj"@9J
 TjJ@9

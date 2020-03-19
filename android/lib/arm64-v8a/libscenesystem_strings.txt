@@ -174,7 +174,6 @@ $0 to $1,
 !>@=1B
 1bQJ1~
 1DBlend
-1E	)?Q
 *1H9	
 @-1ho
 1 = visualize bounds, 2 = visualize sceneobject mesh materials, 3 = required texture size, 4 = bounds group
@@ -280,9 +279,9 @@ $0 to $1,
 2ij(8\
 2j"@9)p
 2jjj8l
-2?k788
+2?k78G
 2_k88
-2?k887
+2?k88F
 2(kh8(
 2Way_0( %s )
 2Way_1( %s )
@@ -375,6 +374,7 @@ $0 to $1,
 '6`:@
 '6	(@
 %6.2f %6.2f %6.2f %.3f %.3f %.3f
+?!69'
 6ConVar
 ?6`F@
 /6h.@
@@ -454,6 +454,7 @@ _6inA9
 7IConVar
 7IF 7
  7K=@
+7mKD)o
  7wB@
 =	}8)
 @8)		
@@ -497,8 +498,8 @@ _8o%@8
 @9(! 7
 @9() 7
 @9%	@9&
+ @9	$@9e
  @9	$@9JEG
- @9	$@9JIF
 @9_aAkA
 @9_aYkA
 	9	!B9
@@ -546,7 +547,6 @@ _8o%@8
 @9	ki8
 9kj(8|
 $9(M@
-.9	)?Q
 @9_`RkA
 (@@9sb
 (@@9t
@@ -674,10 +674,10 @@ A-G9@
 Agg data %d: %p (%d parts, crc 0x%08X)
 aggregate_value
 Ah1xhj+
+	ah9	
 ai_model_info
 AIWalkable
 A[k+"
-	ak9	
 		Aliases:
 Allocating new transform texture!
 allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
@@ -810,10 +810,8 @@ Ax_!"k
 !^B	*
 *-B)"
 	(B)(
-	*B@>
 B-1HD-
 *-B),5C)_
-	*B 8
 )!B9)
 B@9		
 ^B9h^
@@ -861,7 +859,7 @@ B-B8%
 bB9hb
 BB9hB
 BB9hj:8
-BB9Rt
+BB9\t
 !	B-C
 BC6h compression not supported on this target (windows only).
 BC7 compression not supported on this target (windows only).
@@ -1381,6 +1379,7 @@ CSceneObject
 CSceneObjectData
 CSceneObjectExtraData_t
 CSceneObjectReference_t
+CSceneSystem::m_hDefaultPerLayerConstants
 CSceneSystem::SetLightCookieTexture, trying to set texture %s that has no sheet data!
 CSceneSystem::Thread_RenderOccludersAndQueueRenderPartitions
 CSceneSystem::Thread_RenderPartition
@@ -1849,6 +1848,7 @@ FeModel combiner: Too many ropes (%u) or links (%u): cannot fit sum in uint16
 %f %f %f %f
 fff>fff>fff>fff>
 fflush
+F-H}F
 field
   Field       : 
 Field "
@@ -2153,8 +2153,7 @@ h2D9h
 h2F9(
 *-H),5I)_
 H6hV@
-h6Wy	
-h,87H
+h,87(
 h)8Ay)
 h"@9)EG
 h"@9h
@@ -2212,7 +2211,7 @@ hF@9h
 hf@9i
 hF@9)iC
 hFD9u
-hFJ9A
+hFJ9!
 hh8HU
 -h'	-i
 H*)	I*)
@@ -2222,7 +2221,7 @@ H$@-J
 H%@)J	@
 *hj)8h
 hj)8H
-hj)8N
+hj)8Xs
 *H'@)J/A)
 hJAyJ
 hjj8	
@@ -2323,8 +2322,6 @@ Ii+x!
 i/@)j_
 i"@)j
 *ij(8
-*ij(8"G
-*ij(8+G
 ij(8H
 *ij(8kj*
 ij(8Z
@@ -2464,7 +2461,6 @@ IQ@9	Q
 IQuickTime001
 )iqxD
 irradvolumescreenquad
-iRs9(
 iR@yH
 " is already defined.
 " is already defined (as something other than a package) in file "
@@ -2521,6 +2517,7 @@ j2?)?
 j48	C
 j48t^@
 j4xH;@
+j58%C
 j58hf@9(
 j(8hm
 j`8'k`8
@@ -2583,6 +2580,7 @@ jVB9j
 JVB9J
 j(xhb@9h
 j$xij.
+j*xr<
 JYix*$
 	*jz-
 *?!(k
@@ -2597,12 +2595,13 @@ K1F)M9G)
 K1H)M9I)
 ?k58D
 *?k78
+?k78ea
 ?k78h
 k78o_
-?k78Te
-k78v&
+_k88"b
 )k(8HY@
 k(8vV@
+	!k9	
 @k989
 K	A9lC
 kAKJJ
@@ -2638,7 +2637,6 @@ KV3 save transfer failed: %s
 KV Conditional Evaluation Error
 Kykx)
 !.l	 
-	!l9	
 "L9`2
 "L9 3
 (#L9@3
@@ -4093,7 +4091,7 @@ RenderHardwareConfig002
 RenderingPipeline
 renderingpipelines
 RenderingPipelines_001
-rendermesh.cpp(712): 
+rendermesh.cpp(736): 
 RenderMeshFile
 Render pending translucent drawlist
 RenderPrimitiveType_t
@@ -4153,7 +4151,7 @@ RGBA32323232F
 RGBA8888_LINEAR
 RGBX555
 RGBX8888
-Rh"0yh
+Rh"0y
 R	h(8	
 RhbE9h
 Rhf@9
@@ -4162,8 +4160,8 @@ R	hh8)
 RHhh8
 Rhi)8t
 Rhj)8
-Rhj)8d"
 rhj)8H
+Rhj)8U
 Rhjh8
 Rhjh8(
 Rhjh8h
@@ -4180,7 +4178,6 @@ R	ii8i
 R)ij8
 Rij(8h
 Rijh8
-Rijh8:
 Rijh8)
 Riji8
 Riji8?
@@ -4198,7 +4195,7 @@ Rjjj8
 rJMJJ
 RJMJJ,
 rJMJJi
-R?k78
+R?k78/
 R kh|!7_
 R(kh8
 R	kh8)
@@ -4237,6 +4234,7 @@ rt_bakecubemap_depthstencil.vtex
 rt_bakecubemap.vtex
 r_texture_lod_scale
 runspeed
+R@yi	
 --- %s: 
 "%s" 
 "%s":
@@ -4254,6 +4252,7 @@ S: %7.3f
 S*9	%A
 (S@9hS
 S@9	Q
+s9{SF
 SA)hb@
 SA)hJ@
 %s| AlignOf: %d
@@ -4734,6 +4733,7 @@ T	0@9)#
 T	4@y?!"kC
 T: %7.3f
 *T)8yv
+	!t9	
 T(@@9
 T)	@9
 T&A@-
@@ -5496,7 +5496,7 @@ yhB@y
 y+%I)
 @yi2@
 {YIN?
-y)iu8I
+y)iu8i
 @yiVA
 *	@yJ
 )YJJ)}

@@ -84,7 +84,9 @@ $@)  "
 20CTiltTwistConstraint
 20IResourceTypeManager
 20ISceneObjectDescBaseI20CSceneSkeletonObjectE
+2	!19s
 21CUtlMultiJobProcessor
+2	!29D
 22CSchemaInstallCallback
 22IToolsResourceListener
 23IConCommandBaseAccessor
@@ -159,8 +161,6 @@ $@)  "
 2A9	y
 2_BONE_IK
 %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f %.2f
-2hb69
-2Hs09
 	2	i*
 2	i58h
 2+imx
@@ -200,7 +200,6 @@ $@)  "
 6h^@y
 `6iJ@y
 6iZ@y
-6Ysp9
 	!@)7}
 7hb@9h
 7hf@9
@@ -211,6 +210,7 @@ $@)  "
 8CFunctor
 8x9,7
 )!@9)
+	!}9	
 !@9+!@9_
 @9+	@9,
 (@@9h
@@ -226,8 +226,6 @@ $@)  "
 A-!(!
 A-@ #
 a2@yh2@y
-	a}9	
-	A|9)
 A-'@A-
 AbsolutePoseControl
 abs( %s )
@@ -275,6 +273,7 @@ Agg data %d: %p (%d parts, crc 0x%08X)
 ai_model_info
 AIWalkable
 A)jz@
+	AK9	
 AllocateAndLoad failed for '%s'
 AllocateAndLoad failed for '%s' (%s)
 AllocateResource: Cannot find DATA block in resource %s!
@@ -360,6 +359,7 @@ audioreflectivity
 audioroughnessfactor
 audiosounds
 auto_unragdoll_duration
+	az9	
 B-1HD-
 *-B),5C)_
 Bad block type for embedded animation data
@@ -1076,7 +1076,7 @@ health
 health_override
 HELPER_BONE
 HelpSystem_001
-hf@9A
+hf@9!
 hf@9h
 hf@9H
 hf@9i
@@ -1086,6 +1086,7 @@ Hitbox indexing is incorrect for set %s, hitbox %s. Hitboxes will not be setup p
 H-@)J	@
 HostStateMgr001
 h&Q)d
+hru9H
 hR@y`
 hR@y	
 hR@yt
@@ -1101,7 +1102,6 @@ ib@9)
 ib@9j
 ib@9l
 ibAy?
-=ibz9
 I CUtlLinkedList<int, unsigned short, false, unsigned short, CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short> >::AllocInternal(bool) [T = int, S = unsigned short, ML = false, I = unsigned short, M = CUtlMemory<UtlLinkedListElem_t<int, unsigned short>, unsigned short>]
 I CUtlRBTree<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int, CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int>, unsigned int> >::NewNode(const T *) [T = CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, I = unsigned int, L = CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<CMeshEdgeSplitter::HalfEdge_t, CMeshEdgeSplitter::HalfEdgeData_t, unsigned int, bool (*)(const CMeshEdgeSplitter::HalfEdge_t &, const CMeshEdgeSplitter::HalfEdge_t &)>::Node_t, unsigned int>, unsigned int>]
 I CUtlRBTree<CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::Node_t, int, CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int> >::NewNode(const T *) [T = CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::Node_t, I = int, L = CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::CKeyLess, M = CUtlMemory<UtlRBTreeNode_t<CUtlMap<const char *, CAttachment, int, bool (*)(const char *const &, const char *const &)>::Node_t, int>, int>]
@@ -2527,7 +2527,7 @@ RenderDevice003
 RenderDeviceMgr001
 renderdiffuse
 RenderHardwareConfig002
-rendermesh.cpp(712): 
+rendermesh.cpp(736): 
 RenderMeshFile
 rendermeshmgr.cpp
 RenderPrimitiveType_t
@@ -2576,6 +2576,7 @@ RnTriangle_t
 _root_keyname
 rootNode
 ROTATION
+rtr59
 runspeed
 "%s" 
 %s+--

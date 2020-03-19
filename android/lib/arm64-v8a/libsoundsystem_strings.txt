@@ -194,6 +194,7 @@
 22CSosOperatorSourceInfo
 22CSosOperatorStartVMix8
 22CSosOperatorSteamAudio
+22+<l-
 23CDynamicsAudioProcessor
 23CEnvelopeAudioProcessor
 23CKV3ResourceTypeManagerILy2020175222EE
@@ -261,6 +262,7 @@
 28CSosOperatorRightAngleFloat3
 28ISchemaCollectionManipulator
 2@96\@)
+2	!99s
 29CKeyValuesDumpContextAsDevMsg
 29CSosOperatorCalcFixedRotation
 29CSosOperatorFloatAccumulate12
@@ -270,10 +272,10 @@
 29CSosSetSoundEventFieldsInfo_t
 29CVSoundEventScriptTypeManager
 29CVSoundStackScriptTypeManager
+2	!:9D
 	[%2d] %16.16s : %s (%d)
 (%2db) %6i : %s
 2hb@9
-2hB	9
 2	i:8
 2ij(8
 2ij(8\
@@ -283,7 +285,7 @@
 2_!-kc	
 2Ki)8x
 2L1@y
-2t~	)>
+2t~	)&
 2x"@9
 30CAudioSource_PlayerVoiceStream
 30CSosGroupActionTimeLimitSchema
@@ -346,6 +348,7 @@
 6iz@y
 6kB@y
 6x"@9
+6Y3C9
 6)@y4
 *7`@)
 7h.@9H
@@ -375,7 +378,6 @@ _@8j.@
 "#@9	
 )!@9)
 )	@9?
-	!{9	
 	*	(@9
 @9	0@
 (;@93+
@@ -422,6 +424,7 @@ A-@ !
 A))%@
 a2@yh2@y
 a6@=b6@
+	a{9	
 	A@9)
 A@9`	(
 a@9)I@
@@ -430,7 +433,6 @@ AA9	I@
 ?AAk	"
 Abort processing sound event %s (scheduled recursively will not process this frame)
 AbsolutePoseControl
-A-#}C
 Access of unconnected ConVarRef
 Access of unconnected SplitScreenConVarRef
 accumulate_indexed_speakers
@@ -439,6 +441,7 @@ ActionType_t
 Active ?: %s
 Active Sound events: %d
 Active Voices: %d
+A-#=D
 Adding operator stack matching existing name: %s
 AddNewSoundEvent:  %s has a hash collision with existing %s
 Addon unloaded, unloading sound resources.
@@ -578,15 +581,14 @@ auto_unragdoll_duration
 Available Operators:
 ?AVki#
 *A_x)a_xk^
+!Ay|=
 )!Ay?	
-!Ay1I
-!Ay}A
-	az9)
+!Ay2I
+	ay9	
 @-B	@
 B-" @
 B-(  
 B-1HD-
-B99^C
 backward
 Bad Audio file '%s'
 Bad command in vmix!
@@ -1401,8 +1403,6 @@ h&@)?
 @-$H+
 h1xij 
 h1xkj.
-h249?A99
-h2t9H
 H5@yH
 h"@9	
 h#@9	
@@ -1469,7 +1469,6 @@ h:@yi
 h"@yi&@y
 h:@yj
 h"@yj
-!^)I@
 i1xhj*
 i1xjj,
 i2@y?
@@ -1857,9 +1856,10 @@ i@y@yl
 i@yYyix
 *-@)j.
 @)J}	
+J38yt
 j58hf@9(
 j5@yk9@y?
-J78Yt
+J78@t
 j)8HK
 j`8'k`8
 Ja@9*
@@ -2027,6 +2027,7 @@ Lyixm
 l @yL 
 l!@yL!
 @m&!@}
+!^)M@
 @m0!@}
 m@9i5@
 m_actionInstanceType
@@ -2965,7 +2966,6 @@ rojj8
 ROOM Detected 
 rootNode
 round_to_int
-rt249
 Running snd_get_physics_surface_properties for %s mod.
 Running snd_set_physics_surface_properties for %s mod.
 : %s::
@@ -3326,6 +3326,7 @@ SoundSystemLowLevel
 Sound system not started
 SoundsystemVMixLoader
 SoundSystem/WaveDataCacheSizeMB
+SoundSystem/WaveDataCacheSizeMB_LowFragmentation
 Sound volume
 Source2Client002
 Source2ClientPrediction001
@@ -3952,7 +3953,6 @@ _x	 @y
 	@y(-
 	%@y)
 	y4xl
-	!y9	
 #@y)a
 y+a@9*)
 yaw_end
@@ -3996,9 +3996,9 @@ y+O@y
 y	q@y)
 @y	S@
 @ysRD
-yux)I@
+yux)M@
 +yux)y{x
-ywx)I@
+ywx)M@
 ;y|x`9,
 	y:xh
 @y,	@y)!

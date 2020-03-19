@@ -37,7 +37,6 @@
 1.5.13
 1.5.2
 15CMemberFunctor5IP19CTextureManagerBaseMS0_FvP25IAsyncResourceDataRequest11CWeakHandleI31InfoForResourceTypeCTextureBaseEP12CTextureBase22TextureSpecification_tiES3_S6_S8_S9_i12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
-15CMemberFunctor9IP19CTextureManagerBaseMS0_FvP12CTextureBase11CWeakHandleI31InfoForResourceTypeCTextureBaseE12ResourceId_tPvj22TextureSpecification_tS9_i23TextureBitsMemoryType_tES3_S6_S7_S8_iS9_S9_iSA_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CRenderPassDesc
 15CSwapChainEmpty
 15CTier0AppSystemI12IRenderUtilsE
@@ -48,6 +47,7 @@
 15CTier2AppSystemI16IRenderDeviceMgrLi0EE
 16CDefaultAccessor
 16CDeviceFenceBase
+16CMemberFunctor10IP19CTextureManagerBaseMS0_FvP12CTextureBase11CWeakHandleI31InfoForResourceTypeCTextureBaseE12ResourceId_tPvjP17IMemoryMappedFile22TextureSpecification_tSB_i23TextureBitsMemoryType_tES3_S6_S7_S8_iSA_SB_SB_iSC_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 16ICommandCallback
 16IRenderDeviceMgr
 17CRenderDeviceBase
@@ -303,7 +303,6 @@ _8Jhj8*
 @9wiu
 @9x*@9{"@9!<
 *,A)($@),4B)o
-	A{9*
 /A9a:J9`>
 	A{9j
 	 A9JqG
@@ -366,9 +365,9 @@ A)tU@)x
 A)TU@)X
 -autoconfig
 -autoconfig_level
-	Aw9)
-	ax9	
+	Ax9)
 A{"xB
+	ay9	
 B@9A1
 bA9JqG
 Backing store not supported
@@ -690,7 +689,6 @@ Extra compressed data
 Extra compression data
 extreme cHRM chunk cannot be converted to tristimulus values
 F-4WE-6_G-
-F9Ii@
 \|FA@
 Failed AllocateTexture for '%s'
 Failed to compute channel layout.
@@ -764,6 +762,7 @@ Freed EMS handle %u
 Freed XMS handle %u
 frexp
 fYfxk
+G9Ii@
 GAMECONSOLE
 GameResourceServiceClientV001
 GameResourceServiceServerV001
@@ -836,7 +835,6 @@ hd8ihi8
 header crc mismatch
 , height = 
 HelpSystem_001
-hf 9`
 hf@9h
 h"F9i
 $hh8Chh8
@@ -852,8 +850,8 @@ h'@)jS@
 hn8c|
 HostStateMgr001
 hr1yI
-hRq9H
 hrqy`Z
+hRr9H
 Huffman code size table overflow
 Huffman table 0x%02x was not defined
 H{vxH
@@ -1101,7 +1099,8 @@ IQuickTime001
 j58hf@9(
 @j!8!
 j`8!i 8
-j(8t}
+j(8Iz
+j(8v{
  J9?@
 J9e:A
 ja8 i!8!
@@ -1481,6 +1480,7 @@ PNG load error %s
 png_set_background
 png_set_gAMA
 PNG unsigned integer out of range
+PooledDynamicConstantBuffer
 POSIX
 PostProcessingSystem_001
 Potential overflow in png_zalloc()
@@ -1563,12 +1563,12 @@ RENDER_BUFFER_USAGE_VERTEX_BUFFER
 rendercontextbase.cpp
 RenderDevice003
 renderdevicebase.cpp
-renderdevicebase.cpp(1500): 
-renderdevicebase.cpp(1664): 
-renderdevicebase.cpp(3183): 
-renderdevicebase.cpp(656): 
-renderdevicebase.cpp(930): 
-renderdevicebase.cpp(947): 
+renderdevicebase.cpp(1506): 
+renderdevicebase.cpp(1670): 
+renderdevicebase.cpp(3189): 
+renderdevicebase.cpp(662): 
+renderdevicebase.cpp(936): 
+renderdevicebase.cpp(953): 
 Render Device Empty
 RenderDeviceMgr001
 renderdevicemgrbase.cpp
@@ -1707,7 +1707,7 @@ r_texture_pool_size
 r_textures_evict_all
 r_texture_stream_mip_bias
 RTit8
-rtR19
+rtR29
 r_validate_texture_streaming
 RViv8` 
 r_wait_on_present
@@ -1930,16 +1930,16 @@ text compression mode is out of range
 TextLayout_001
 TextMessageMgr_001
 texturebase.cpp
-texturebase.cpp(1808):Error loading texture: %s
-texturebase.cpp(2742):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2763):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2774):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2785):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2796):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2817):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2828):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2839):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2850):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(1818):Error loading texture: %s
+texturebase.cpp(2752):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2773):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2784):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2795):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2806):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2827):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2838):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2849):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2860):ResourceHandleToData( %s ) failed! Falling back to error texture!
 Texture manager out of space! Can't allocate new texture!
 Texture memory discrepancy! %llu != %llu
 TextureSpecificationFlags_t
@@ -2085,7 +2085,6 @@ uvCropped
 UVLX8888
 uvUncropped
 UVWQ8888
-	!v9	
 VApplication001
 V_atof
 V_atofloat64
@@ -2131,7 +2130,7 @@ VNewAsyncFileSystem001
 void ConnectInterfaces(CreateInterfaceFn *, int)
 void COrderedConstructor_Create<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, CResolveOrderedFunc<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, &_ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC>, false>::AddRef(bool) [T = COrderedInitShutdownRefWrapper<&EarlyInit_Common>, RESOLVECLASS = CResolveOrderedFunc<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, &_ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC>, bCONSTRUCT_ON_FIRST_USE = false]
 void CSheetDataTextureCache::AllocateAndUploadSequenceData(const Sheet_t *, Vector2D *, int *)
-void CTextureManagerBase::AsyncHookUpTextureBits(CTextureBase *, HRenderTexture, ResourceId_t, void *, uint, TextureSpecification_t, TextureSpecification_t, int32, TextureBitsMemoryType_t)
+void CTextureManagerBase::AsyncHookUpTextureBits(CTextureBase *, HRenderTexture, ResourceId_t, void *, uint, IMemoryMappedFile *, TextureSpecification_t, TextureSpecification_t, int32, TextureBitsMemoryType_t)
 void CTextureManagerBase::MN_OnResourceFileLoaded(IAsyncResourceDataRequest *, HRenderTexture, CTextureBase *, TextureSpecification_t, int32)
 void CTextureManagerBase::MN_OnResourceLoadCompleted(CTextureBase *, TextureObjectInfo_t &, int32, int)
 void CTextureManagerBase::MN_OnResourceLoadFailed(CTextureBase *, int32)
@@ -2186,6 +2185,7 @@ V_vsnprintfSize
 V_vsnprintfWarnTrunc
 V_wcstod
 V_wcstoi64
+	!w9	
 WAITING_FOR_HOOKUP_JOB 
 WAITING_FOR_IO 
 Warning: have %d in use and %d free per-frame memory stacks outstanding. The oldest stack was created at present %d, and we're now on present %d

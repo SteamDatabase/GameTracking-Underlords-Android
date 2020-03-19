@@ -96,7 +96,6 @@
 15CMemberFunctor5IP19CTextureManagerBaseMS0_FvP25IAsyncResourceDataRequest11CWeakHandleI31InfoForResourceTypeCTextureBaseEP12CTextureBase22TextureSpecification_tiES3_S6_S8_S9_i12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CMemberFunctor6IP13CSOAContainerMS0_Fviiiii13__Float32x4_tEiiiiiS2_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CMemberFunctor7IP13CSOAContainerMS0_FviiiiPKS0_iiEiiiiS3_ii12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
-15CMemberFunctor9IP19CTextureManagerBaseMS0_FvP12CTextureBase11CWeakHandleI31InfoForResourceTypeCTextureBaseE12ResourceId_tPvj22TextureSpecification_tS9_i23TextureBitsMemoryType_tES3_S6_S7_S8_iS9_S9_iSA_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CPipelineVulkan
 15CRenderPassDesc
 15CRenderResource
@@ -126,6 +125,7 @@
 16CGlslangIncluder
 16CIndexBufferBase
 16CInputLayoutDictI18CInputLayoutVulkanE
+16CMemberFunctor10IP19CTextureManagerBaseMS0_FvP12CTextureBase11CWeakHandleI31InfoForResourceTypeCTextureBaseE12ResourceId_tPvjP17IMemoryMappedFile22TextureSpecification_tSB_i23TextureBitsMemoryType_tES3_S6_S7_S8_iSA_SB_SB_iSC_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 16CSwapChainVulkan
 16ICommandCallback
 16IRenderDeviceMgr
@@ -230,7 +230,7 @@
 2hB	9
 2hBE9h
 2hj)8
-2Hs<9
+2Hs=9
 2	i4xh
 2*i58
 2ij(8
@@ -402,7 +402,7 @@ $4DTdt
 6@y_! k
 6@y?! k
 6@y?! kC
-6Ys|9
+6Ys}9
 @7('@
 7 ! 7
 (7@9H
@@ -573,9 +573,9 @@ _8ji)8
 @9hV@
 9hv@9
 )%@9i
+@@9i#
 @9i&@
 #@9i	
-@@9I#
 @9I}	
 *!@9_I
 9`i`8
@@ -674,6 +674,7 @@ _8ji)8
 @9+	@yHM
 9@z(~`
 @9zF@
+&@)@a
 a2@yh2@y
 *,A)($@),4B)o
 A8kB@9l
@@ -728,7 +729,7 @@ aA9`m@
 A(aN!
 $	A)Ar
 	Ab9*,
-	Ab9j,
+	Ab9J,
 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789
 aBE9a
 A block must end with a branch instruction.
@@ -962,7 +963,6 @@ Application transferred too many scanlines
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 A\@Q!`
 a(@Q! ?Q?
-	ar9	
 arc cosine
 archive
 arc hyp. cosine
@@ -1014,6 +1014,7 @@ ArrayStride
 , arrayStride %d
 array variable name expected
 A@}S!@
+	as9	
 ' as an operand of <id> '
 ASCII conversion buffer too small
 asdouble
@@ -1271,7 +1272,9 @@ BGRA5551
 BGRA8888_LINEAR
 BGRX8888_LINEAR
 bhb8"
+Bht8.
 __BI_
+Bi9)!	
 __BI_Append
 Biases the mip level the texture streaming system choses to stream for each texture.
 Bib81
@@ -2593,6 +2596,7 @@ CRenderDeviceVulkan::GetDeviceSpecificTexture() failed to get texture data.
 CRenderDeviceVulkan::InitDevice: failed to get queue properties
 CRenderDeviceVulkan::InitDevice: no graphics queue found
 CRenderDeviceVulkan::InitDevice: vkEnumerateDeviceExtensionProperties( ... ) failed.
+CRenderDeviceVulkan::m_hDefaultConstantBuffer
 CRenderDeviceVulkan::RebakeStaticDescriptorSetsReferencingTexture - could not allocate descriptor in new pool.
 CRenderDeviceVulkan::SetHardwareGammaRamp failed to get swap chain.
 CRenderDeviceVulkan::UpdateDescriptorSet: Failed to update descriptor set.
@@ -2722,7 +2726,7 @@ DCT scaled block size %dx%d not supported
 %d %d
 %d..%d
 DDDDUUUU
-DDDDUUUUDDDDUUUU$T
+DDDDUUUUDDDDUUUUt
 ddx_coarse
 ddx_fine
 ddy_coarse
@@ -4003,7 +4007,6 @@ f64vec4
 F64VEC4
 f@9H1
 f@9h2
-F9Ii@
 \|FA@
 faceforward
 face-forward
@@ -4490,6 +4493,7 @@ fwrite
 fYfxk
 	*	G)
 G@7WOH7
+G9Ii@
 game_class
 GAMECONSOLE
 gameinfo.gi
@@ -5089,9 +5093,9 @@ Hash: %llu
 has storage class StorageBuffer.
 Having 
 H(Ay	M
-h&B)@
 !Hb8b
 hb8bF
+hb 9~\
 hb@9`
 hb@9h
 hb@9H
@@ -5099,6 +5103,7 @@ hB@9h
 hB@9i
 hB@9t
 hb@9w
+h&B)@a
 hBA9)
 hbA9h
 hBA9h
@@ -5157,10 +5162,10 @@ hf@9h
 hf@9H
 hf@9i
 h"F9i
-hf 9ib
 hfC9H
 hFD9u
 h"G9i
+hh8?_
 $hh8Chh8
 *h&I)
 HIGHDPI
@@ -5207,9 +5212,10 @@ hlsl-offsets
 HlslSemanticGOOGLE
 hn8c|
 HostStateMgr001
-hr1yi
+hr1ya
 hr1yI
 h"R9h
+hrA9h
 hrqy`Z
 hr@y`
 hs_5_0
@@ -5225,11 +5231,11 @@ hvec4
 H{vxH
 hv@y	
 hv@y7
-*h&X)
 h*@y_
 h!@yIA@y(}
 H%@yJ
 hypot
+*h&Z)
 *I))}@
 &I)(}
 	*I}`
@@ -5439,11 +5445,11 @@ i"@)j
 <)ij8
 )ij8?
 )ij8	
+*ij(8
 ij8(	
 ij(8h
 -ij8J
 ij8kI
-*ij(8s
 )ijx?
 *ijx_
 ijx6yh
@@ -6247,6 +6253,7 @@ IVEC4
 *i.xi>@yj:
 i#xjj-
 i+xjj
+.i(xw
 I!@y?
 iy8J	
 i>@yh
@@ -6259,21 +6266,21 @@ Iy*wB
 )*J=@
 **J=@
 +*J=@
+	*J16
 j1By_! k
 ',)j3@
 j48lI
 j58-=
 j58@c
 j58G;
-j58h%
 j58hf@9(
 j68HC@9h
 j68i"S
-j68Xx
+j68X|
 @j!8!
-j)8	^
 j*8*%
 j(8a6@
+j)8	b
 j(8`B
 j(8h*@
 j)8HA
@@ -6282,7 +6289,6 @@ j`8!i 8
 j`8'k`8
 j-8nj)
  J9?@
-j 9Db
 J9e:A
 J)@9j
 j"@9)Y@
@@ -6328,12 +6334,10 @@ JSON error, unterminated element:
 /JU7OB
 jump_statement
 Ju@y_
-j+x1A
-j(xHx
+j)x)^
+j(xH|
 j$xij.
 j(x	k(x)k(x
-j*xm@
-j)x)Z
 J%@y_
 Jy?! kC
 J!@y-!@ylyj
@@ -6420,7 +6424,7 @@ KV Conditional Evaluation Error
 K%@xl}
 k	@y)
 k!@yJ
--@)L)
+-@)l)
 l5<)_
 l!@9)
 l	@9,
@@ -6707,6 +6711,7 @@ m_attributeDescriptions[ %d ].m_nBinding = %d
 m_attributeDescriptions[ %d ].m_nFormat = %d
 m_attributeDescriptions[ %d ].m_nLocation = %d
 m_attributeDescriptions[ %d ].m_nOffsetInBytes = %d
+m-Ax_
 MAX_ALLOC_CHUNK is wrong, please fix
 max_angle
 maxanisotropy
@@ -6782,6 +6787,7 @@ m_bNoColor
 m_bOffsetExistingPos
 m_Bone
 m_bParticleFeathering
+MbP?D
 m_bRemapPullForceToLife
 m_bRunForParentApplyKillList
 m_bScaleCurrent
@@ -7269,7 +7275,7 @@ N2Z .
 N7glslang7TShader8IncluderE
 !n9[ .
 [ n9+a
-N@9-J
+N@9UB
 ,.n*a
 name already defined
 named_barrier
@@ -8028,6 +8034,7 @@ Pointer type in OpTypeForwardPointer is not a pointer type.
 point_mode
 PointMode
 PointStream
+PooledDynamicConstantBuffer
 Pool: %s (Free: %0.2f MB)
 Pool Type ( %s ): 
 popcount
@@ -8329,12 +8336,12 @@ RENDER_BUFFER_USAGE_VERTEX_BUFFER
 rendercontextbase.cpp
 RenderDevice003
 renderdevicebase.cpp
-renderdevicebase.cpp(1500): 
-renderdevicebase.cpp(1664): 
-renderdevicebase.cpp(3183): 
-renderdevicebase.cpp(656): 
-renderdevicebase.cpp(930): 
-renderdevicebase.cpp(947): 
+renderdevicebase.cpp(1506): 
+renderdevicebase.cpp(1670): 
+renderdevicebase.cpp(3189): 
+renderdevicebase.cpp(662): 
+renderdevicebase.cpp(936): 
+renderdevicebase.cpp(953): 
 Render Device Empty
 RenderDeviceMgr001
 renderdevicemgrbase.cpp
@@ -8738,7 +8745,6 @@ S3,	S48
 S)5K*j
 S6jh8)
 S\8	C\8
-	!s9	
 s))A@9)
 s_abs
 s_abs_diff
@@ -9897,6 +9903,7 @@ T#8@9"8
 T 8@9B
 T$8@9C 
 T"8@9E(
+	!t9	
 T" @9#$
 T"(@9#,
 T"$@9#(
@@ -10078,16 +10085,16 @@ texture3DProjGradARB
 texture3DProjLod
 texture address mode
 texturebase.cpp
-texturebase.cpp(1808):Error loading texture: %s
-texturebase.cpp(2742):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2763):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2774):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2785):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2796):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2817):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2828):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2839):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2850):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(1818):Error loading texture: %s
+texturebase.cpp(2752):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2773):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2784):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2795):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2806):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2827):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2838):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2849):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2860):ResourceHandleToData( %s ) failed! Falling back to error texture!
 TextureBuffer
 textureClamp
 textureClampARB
@@ -11878,7 +11885,7 @@ void CRenderContextVulkan::MarkIssuesCommands()
 void CRenderContextVulkan::SetConstantBufferDataInternal(ConstantBufferHandle_t, uint32, uint32, const void *const *, uint32)
 void CRenderDeviceVulkan::CreateDefaultShaders()
 void CSheetDataTextureCache::AllocateAndUploadSequenceData(const Sheet_t *, Vector2D *, int *)
-void CTextureManagerBase::AsyncHookUpTextureBits(CTextureBase *, HRenderTexture, ResourceId_t, void *, uint, TextureSpecification_t, TextureSpecification_t, int32, TextureBitsMemoryType_t)
+void CTextureManagerBase::AsyncHookUpTextureBits(CTextureBase *, HRenderTexture, ResourceId_t, void *, uint, IMemoryMappedFile *, TextureSpecification_t, TextureSpecification_t, int32, TextureBitsMemoryType_t)
 void CTextureManagerBase::MN_OnResourceFileLoaded(IAsyncResourceDataRequest *, HRenderTexture, CTextureBase *, TextureSpecification_t, int32)
 void CTextureManagerBase::MN_OnResourceLoadCompleted(CTextureBase *, TextureObjectInfo_t &, int32, int)
 void CTextureManagerBase::MN_OnResourceLoadFailed(CTextureBase *, int32)
@@ -12135,11 +12142,11 @@ vulkan/rendercontextvulkan.cpp
 vulkan/rendercontextvulkan.cpp(501): 
 vulkan/rendercontextvulkan.cpp(514): 
 vulkan/renderdevicevulkan.cpp
-vulkan/renderdevicevulkan.cpp(1738): 
-vulkan/renderdevicevulkan.cpp(2401): 
-vulkan/renderdevicevulkan.cpp(3030): 
-vulkan/renderdevicevulkan.cpp(3339): 
-vulkan/renderdevicevulkan.cpp(4082): 
+vulkan/renderdevicevulkan.cpp(1741): 
+vulkan/renderdevicevulkan.cpp(2399): 
+vulkan/renderdevicevulkan.cpp(3021): 
+vulkan/renderdevicevulkan.cpp(3330): 
+vulkan/renderdevicevulkan.cpp(4073): 
 vulkan/renderpassvulkan.cpp
 vulkan/renderpipelinestatsvulkan.cpp
 -vulkanrenderthreadstack
@@ -12548,7 +12555,7 @@ _Z6DevMsgPKcz
 #Z80ijx
 #Z8	A
 _ZdaPv
-zd?(knN 
+zd?(knN
 _ZdlPv
 ZeroExtend
 Zero length tRNS chunk
