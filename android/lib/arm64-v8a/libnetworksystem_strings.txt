@@ -78,6 +78,7 @@ $0 to $1,
 13CNetMessagePBILin1E26NetMessageConnectionClosedL13SignonGroup_t11EL19NetChannelBufType_t1ELb0EE
 13CNetMessagePBILin1E27NetMessageConnectionCrashedL13SignonGroup_t11EL19NetChannelBufType_t1ELb0EE
 13CNetMessagePBILin1E32NetMessageSplitscreenUserChangedL13SignonGroup_t11EL19NetChannelBufType_t1ELb0EE
+13CNoRefFunctor
 13CSVCMsg_Print
 14CBaseAppSystemI14INetworkSystemE
 14CBaseAppSystemI19INetworkSystemUtilsE
@@ -127,6 +128,7 @@ $0 to $1,
 18CPlaceholderConVar
 18CSVCMsg_HLTVStatus
 18CSVCMsg_ServerInfo
+(1;9/
 19CBidirMsg_RelayInfo
 19CCLCMsg_BaselineAck
 19CNETMsg_SignonState
@@ -216,7 +218,6 @@ $0 to $1,
 29CMsgServerNetworkStats_Player
 2_!9k
 29NetMessageConnectionCrashed_t
-2?a)9
 2	a@9Ia
 2	AA9
 2B9h2
@@ -242,9 +243,9 @@ $0 to $1,
 2jjj8l
 2_!(k
 2?".k
-2?k78
+2?k78R
 2_k88
-2?k88
+2?k88Q
 2oi-x
 2 .ProtoFlattenedSerializerField_t"!
 2@yzz@
@@ -310,7 +311,6 @@ $0 to $1,
 '6	(@
 %60.60s %6.6s %15.15s %5.5s %10.10s
 %60.60s %6.6s %15.15s %5d %10d 
-6)A@y)-
 6B9h6
 6ConVar
 _6	D@
@@ -318,6 +318,7 @@ _6	D@
 /6h.@
 /6h"@
 '6h.@
+'6h)@
 '6h*@
 (6h.@
 @6h>@
@@ -364,6 +365,7 @@ _6hNB9	;
 '6i2@
 ?6i6@
 	(6i6@
+6iA@y)-
 6i"B)
 ?6if@
 _6iF@
@@ -436,7 +438,6 @@ _6inA9
 86h2@
 86i*@
 86iF@
-86IwA
 8CFmtStrNILi1024ELb0EE
 8CFmtStrNILi256ELb0EE
 8CFunctor
@@ -621,7 +622,6 @@ A)hR@9K
 )AIJ)
 ai_model_info
 AIWalkable
-)aJ9I
 A[k+"
 allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
 allow_alias
@@ -690,6 +690,7 @@ AssociateNetMessageWithAllChannelCategories: Passed in an invalid net message ha
 AssociateNetMessageWithChannelCategoryAbstract: Passed in an invalid net message handle!
 AssociateNetMessageWithChannelCategoryAbstract: Trying to use an unregistered netchannel category!
 Associating NetChan %s (%s) with Steam Net Connection handle #%u
+	at9	
   at depth %d items %d
 attachment
 attachment_offset
@@ -701,6 +702,7 @@ audio
 auto_unragdoll_duration
 [a:%u:%u]
 [A:%u:%u:%u]
+	aV9i
 available
 Available settings:
 Average Backing Raw Paths         :  %8.3f
@@ -724,8 +726,7 @@ avg_packet_out
 avg_packets_in
 avg_packets_out
 ?AVki#
-	Aw9	
-Ay@[H
+Ay@kH
 ^B9h^
 >B9h>
 :B9h:
@@ -1387,11 +1388,11 @@ __cxa_guard_release
 __cxa_pure_virtual
 C@y" 
 Cycle or diamond double-reference to '%s'
-c@yi	
 [+%d]
  D-	(@
 d6@y#
 d6@yc	
+d6@yC
 .data
 databytes
 data_compressed
@@ -1947,7 +1948,6 @@ h3@ye'@
 H6h>@
 H6hV@
 H6in@
-,H@9-
 *H@9*
 	H@9)
 	H@9	
@@ -1964,6 +1964,7 @@ H`@9iFG9
 H@9J(
 H@9k	
 -H@9m
+,H@9M
 h"A9)AF
 HammerMapLoader001
 handindex
@@ -1981,7 +1982,7 @@ hB@9h
 h"B9H
 hB@9H
 *h~B9i
-hB	9$l
+hB	9ml
 hB@9t
 hBA9h
 hbB9	
@@ -2026,7 +2027,6 @@ HostStateMgr001
 How long p2p connection requests should linger before we completely ignore them
 hrAyi
 hrAy`Z
-hRo9H
 hurt_me
 hurt_them
 hv@9)
@@ -2290,7 +2290,6 @@ j48	C
 j48t^@
 j4xH;@
 j58"l
-J78zk
 j`8'k`8
 J!@9#
 J@9.A
@@ -2314,6 +2313,7 @@ ji)8k
 Jidx?
 Jih8ji(8
 Jikx_
+	JJu@
 JNI_OnLoad
 JNI_OnUnload
 	JS_NORMAL
@@ -2327,7 +2327,7 @@ jstype is only allowed on int64, uint64, sint64, fixed64 or sfixed64 fields.
 jv8?)
 j$xij.
 JYix*$
-JY@y)1
+jY@y)1
 	*jz-
 *?".k
 	*_!(k
@@ -2335,9 +2335,8 @@ JY@y)1
 *k2@y
 k2@yh
 ?k58D
+*?k78
 ?k78h
-*?k78r
-_k88_
 _!)kA
 K	A9lC
 K?B@qk
@@ -3444,7 +3443,7 @@ RIO_REQUEST_RELAY
 RIO_WILL_RELAY
 rJAJJL
 rJMJJ
-R?k78l
+R?k78
 rkMKJ
 Rmij8
 rnd_down
@@ -3457,7 +3456,6 @@ RP_PAUSE
 RP_TOGGLEPAUSE
 RP_UNPAUSE
 Rtjhx
-rtR/9
 r@yhr
     [%s]:
 --- %s: 
@@ -3639,8 +3637,7 @@ sint32
 sint64
 %s - Invalid net message index: %d
 sky_name
-\sL9a
-\sL9L 
+[sL9j
 "%s":%lld
 "%s":%llu
 slots
@@ -3894,7 +3891,6 @@ syntax
 syntax = "$0";
 System
 *T)8yv
-	!t9	
 T)	@9
 t@9)QD
 table_id
@@ -4148,7 +4144,6 @@ utlvector count
 [U:%u:%u]
 (%u %u %u %u)
 [U:%u:%u:%u]
-	!V9i
 VA9iV
 val_bool
 val_byte
@@ -4348,6 +4343,7 @@ W6iB@
 w6if@
 W6if@
 W6ijA9
+	!w9	
 warning
 Warning
 WARNING
@@ -4442,12 +4438,13 @@ Z_!(k
 _ZN12CThreadEvent3SetEv
 _ZN12CThreadEventC1Eb
 _ZN13CBufferString13AppendFormatVEPKcSt9__va_list
+_ZN13CBufferString4TrimEPKc
 _ZN13CBufferString5PurgeEi
 _ZN13CBufferString6InsertEiPKcib
+_ZN13CBufferString7ReplaceEPKcS1_b
 _ZN13CThreadRWLock11UnlockWriteEPKci
 _ZN13CThreadRWLock11WaitForReadEv
 _ZN13CThreadRWLock12LockForWriteEPKci
-_ZN16CThreadSemaphore7ReleaseEiPi
 _ZN16CThreadSemaphoreD1Ev
 _ZN17CThreadSpinRWLock10UnlockReadEPKci
 _ZN17CThreadSpinRWLock11LockForReadEPKci
@@ -4457,10 +4454,13 @@ _ZN17CThreadSyncObjectD2Ev
 _ZN20CUniformRandomStream7SetSeedEi
 _ZN20CUniformRandomStreamC1Ev
 _ZN21CThreadMultiWaitEvent3SetEv
+_ZN22CThreadRWLock_FastRead11UnlockWriteEPKci
 _ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
-_ZN22CThreadRWLock_FastRead23UnlockRead_LockForWriteEv
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
-_ZN22CThreadRWLock_FastReadC1Ev
+_ZN22CThreadRWLock_FastRead23UnlockRead_LockForWriteEPKci
+_ZN22CThreadRWLock_FastRead35EncounteredComplexReadLockOperationEjbPKci
+_ZN22CThreadRWLock_FastReadC1Eb
+ZN26CParallelProcessorAbstractI18CParallelProcessorI30BuildFlattenedSerializerInfo_t27CMemberFuncJobItemProcessorIS1_37CBuildNetworkSerializerHierarchyOrderS3_ELi1EEE3RunEvE13CStackFunctor
+ZN26CParallelProcessorAbstractI18CParallelProcessorIN37CBuildNetworkSerializerHierarchyOrder12BuildEntry_tE27CMemberFuncJobItemProcessorIS2_S1_S1_ELi1EEE3RunEvE13CStackFunctor
 _Znam
 _ZnamRKSt9nothrow_t
 _ZNKSt11logic_error4whatEv

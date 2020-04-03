@@ -190,6 +190,7 @@ $@)  "
 +1@)-%A)
 1bL9?2
 1bQJ1~
+1C-!IF
 1DBlend
 -1 for all asleep, 1 for all awake
 1ik8 il8)ip8R
@@ -906,6 +907,7 @@ $@)  "
 5hJG9(
 5iFE9jJ
 )5IJ(}
+5in8p
 5NUY@-
 =5$@x
 >!@6>
@@ -917,6 +919,7 @@ $@)  "
 6hbE9
 6hb@y
 6hrZ9
+6il8n
 6n8+a
 6Y3s9
 (7c8%
@@ -928,6 +931,7 @@ $@)  "
 7ib@9i
 7IConVar
 7)ij8
+7in8p
 7Jik8
 7.yw"@
 8]@)6	@
@@ -941,7 +945,6 @@ $@)  "
 `"@9	
 )!@9)
 )@@9	
-)@9`]
 @-@9 
 @9*%@-(	@
 -90.0f
@@ -977,6 +980,7 @@ $@)  "
 (@@9u"
 @9)uG
 @9wiu
+)@9`Y
 9@z(~`
 .A@)/!
 'A)	}	
@@ -1240,7 +1244,7 @@ baselayer
 BasePhysicsShape
 Base Spring; 
 batch particle systems
-BB9dv
+BB9cz
 B-,	D-/
 bE9  (
 BE91~
@@ -2053,8 +2057,8 @@ cylinder top control point
 D-@ !
 *-D),5E)_
 =d6W9
-=d6W9	0
-=d6W9R0
+=d6W9	$
+=d6W9R$
 D- 8 
 D9  "
 D9!	)
@@ -2270,6 +2274,7 @@ EditorDynamicConfig
 .eh_frame
 .eh_frame_hdr
 eikonal
+@=@eK
 Elapsed time = %f
 <elt type not set>
 emission count scale control point
@@ -2291,6 +2296,7 @@ emitter lifetime start time (seconds)
 emitters
 Emit to maintain count
 EmptyAnim
+-enable_2gb_morphs
 Enable children from parent particle count
 Enable/disable particle rendering
 enable fading and clamping
@@ -2689,7 +2695,6 @@ I@@9JD@9KH@9(
 =#ia8+ib8-ie8)if8
 *ia8+ie8)if8
 ia8kir
-#@-	IB
 )ib8?
 )ib8k
 ib8Nyb
@@ -2730,6 +2735,7 @@ ignore radius
 )ih8({h
 ih8Hyh
 |ih8Hyh
+(ih8i
 *(ih8I
 (ih8)ij8
 .ih8/ik8)il8
@@ -2805,6 +2811,7 @@ il8/yl
 i*?)m
 im8iym
 im8nyh
+,im8o
 im8pih8Syh
 im8Rih8
 =`im8[ym
@@ -2819,10 +2826,10 @@ IMPULSE_TYPE_PARTICLE_SYSTEM
 IMPULSE_TYPE_ROPE
 =)in8
 *in8!
+:in82
 in8aYj
 in8dyp
 in8Jyn
-:in8r
 :in8R
 in8{ym
 in8$yq
@@ -3174,7 +3181,6 @@ lighttype
 light type
 LightType_t
 L-(ih8
-Lih8.
 Lih8Jik8-yh
 lih8kii8
 lih8(yh
@@ -4232,8 +4238,8 @@ Mim81yk
 mim8kin8Jyn
 Mim8n
 Mim8Qii8Rik8
+Min80
 min8Nyn
-Min8p
 Min8P
 min8pii8qil8
 min8Xyn
@@ -6555,7 +6561,7 @@ Two KV3 format GUIDs with the same human-friendly name ('%s')
 )UAy?
 uii8Wyi
 uij8:yl
-Uik8m
+Uik8-
 Uik8M
 Ultra
 Unable to determine buffer encoding.
@@ -6714,7 +6720,7 @@ VGUI_Surface032
 VGUI_System010
 view model effect
 Vin8A
-Vir8n
+Vir8.
 Vir8N
 virtual void *CParticleTypeManager::GetErrorResource()
 V_IsAbsolutePath
@@ -6858,7 +6864,7 @@ warp scale control point number
 warp transition start time
 warp transition time (treats min/max as start/end sizes)
 Wil8[in8Jip8:yn
-Wim8o
+Wim8/
 Wim8O
 Within-Cluster Fire Count Before Cooldown
 Within-Cluster Refire Time
@@ -6883,7 +6889,7 @@ X axis scaling scalar field
 X Dimension Count
 X Dimension Spacing
 xf@)*
-Xio8q
+Xio81
 Xio8Q
 *-@x_! k
 Xkh86yh
@@ -6962,8 +6968,8 @@ _ZN16CThreadSemaphoreD1Ev
 _ZN17CThreadSyncObjectD2Ev
 ZN18CNewParticleEffect12StopEmissionEbbbbE3$_0
 _ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
-_ZN22CThreadRWLock_FastReadC1Ev
+_ZN22CThreadRWLock_FastRead35EncounteredComplexReadLockOperationEjbPKci
+_ZN22CThreadRWLock_FastReadC1Eb
 _Znam
 _ZnamRKSt9nothrow_t
 zn@)j

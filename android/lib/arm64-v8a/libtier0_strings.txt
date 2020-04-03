@@ -42,6 +42,7 @@
 17CThreadSyncObject
 18CThreadManualEvent
 18IMemAlloc_Internal
+19hfA
 22B@q
 22CLogCatLoggingListener
 22CPerfTraceDepotDefault
@@ -63,13 +64,13 @@
 2CB@q
 %2d.%03d
 2*hi8
+2hr@y
 2*ki8J
 2mymx
   %2u - proc %2u (grp %u:%-2u / phy %u / cor %u / smt %u): max freq %llu
 40CVProfileOutputColumn_AverageTimePerCall
 41CVProfileOutputColumn_AverageTimePerFrame
 4(3H9
-4hBF9h
 4-ij8
 4-ik8
 4oil8
@@ -84,7 +85,6 @@
 /6`>H
 '6`>H
 @6`>H
-6q19hfA
 	6RtcZO"
 76`>H
 77hJ@
@@ -103,7 +103,6 @@
 9CTestCase
 9h2@9i6@9
 @9.h`8
-9HC[9h
 9Hh{8
 9ib@9
 9ib@9)}
@@ -116,7 +115,6 @@
 	@9k}A
 A)"	@
 +a@9?
-	!A9 
 A9)1G
 a@9*a
 &aacute;
@@ -168,10 +166,8 @@ __android_log_write
 android/os/Build
 android/os/Build$VERSION
 android/os/Debug
-	AP9i
 &apos;
 AppendMiniProfilerToList
-aq9(	
 A@qH7
 A@qI7
 (A@qJ7
@@ -509,6 +505,7 @@ h6@9i2
 h<8]hh8J
 h=8]hh8J
 h>8j	
+h"[9(
 HangWatchdog
 HangWatchdog_IndicateActivity
 HangWatchdog_Initialize
@@ -520,14 +517,13 @@ HangWatchdog_Shutdown
 .hash
 hb@9h
 hb@9H
-HC[9(
+hbF9H
 Heap: standard allocator
 HEAP WARNING: memory block at %p appears to be corrupt
 HEAP WARNING: memory block at %p is unexpectedly allocated
 HEAP WARNING: memory block at %p is unexpectedly free
 HEAP WARNING: memory block at %p is unexpectedly unrecognized
 HEAP WARNING: memory pointer %p is invalid
-h"F9H
 H!HJB
 HH:MM:SS.z
 *+hi8K
@@ -548,7 +544,7 @@ HttpGet
 	*I}`
 i2@9h6@9?
 i2q		
-	i;8?
+	i;8)
 ?i*8i
 )ia8?q
 &iacute;
@@ -636,6 +632,7 @@ Jobs/Coroutines
 *jyhx
 *(!(K
 	K"}@
+?k78k
 ?k88h
 k	@9J	
 Ka@9+
@@ -814,6 +811,8 @@ NOTE: this is the total bytes of the regions above, not the growth since the old
 &ntilde;
 &Ntilde;
 nTries < 10000000
+O9aeB
+O9`fB
 &oacute;
 &Oacute;
 &ocirc;
@@ -1154,7 +1153,6 @@ putenv
 *		@q
 :>	Q>>
 @@q(7
-(Q	9`
 Q@)Gz`1
 @@qh7
 qH}V*
@@ -1955,7 +1953,6 @@ Windows ME
 Windows NT
 Windows Vista
 Windows XP
-wj68r
 wn>Jj
 Working set: %s
 	%@x!
@@ -2257,13 +2254,14 @@ _ZN22CThreadMultiWaitObjectC1Ev
 _ZN22CThreadMultiWaitObjectC2Ev
 _ZN22CThreadMultiWaitObjectD1Ev
 _ZN22CThreadMultiWaitObjectD2Ev
+_ZN22CThreadRWLock_FastRead11UnlockWriteEPKci
 _ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
-_ZN22CThreadRWLock_FastRead23UnlockRead_LockForWriteEv
-_ZN22CThreadRWLock_FastRead23UnlockWrite_LockForReadEv
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
+_ZN22CThreadRWLock_FastRead23UnlockRead_LockForWriteEPKci
+_ZN22CThreadRWLock_FastRead23UnlockWrite_LockForReadEPKci
 _ZN22CThreadRWLock_FastRead30HandleFirstWriteLockTransitionEv
-_ZN22CThreadRWLock_FastReadC1Ev
-_ZN22CThreadRWLock_FastReadC2Ev
+_ZN22CThreadRWLock_FastRead35EncounteredComplexReadLockOperationEjbPKci
+_ZN22CThreadRWLock_FastReadC1Eb
+_ZN22CThreadRWLock_FastReadC2Eb
 _ZN22CVirtualMemorySnapshot13IsEqualRegionEPKS_PKNS_8Region_tES1_S4_
 _ZN22CVirtualMemorySnapshot4DiffEPKS_S1_
 _ZN22CVirtualMemorySnapshot5PurgeEv

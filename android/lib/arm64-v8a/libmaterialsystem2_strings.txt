@@ -20,6 +20,7 @@
 $@)*,@)	}`
 $@)#@@)
 *@)	)
+#+)?\
 	 ();,
 	*	!@
 	*	}`
@@ -49,6 +50,7 @@ $@)#@@)
 12IOpEvaluatorIiE
 13CFunctorData0
 13CMaterialMode
+13CNoRefFunctor
 13CPlatformFont
 13IMaterialMode
 14CBaseAppSystemI11ITextLayoutE
@@ -242,7 +244,6 @@ _"1k#
 A-   
 	A@9	
 @A9)@A9
-a9@y]
 A	A-!
 	Aa9)
 AA9*Q
@@ -375,9 +376,9 @@ auto_unragdoll_duration
 B-1HD-
 *-B),5C)_
 )%B9_
+B)9![
 "B90(
 'B9	#B9
-B 9:e
 	!B9i
 )!B9Ii+8j
 Bad header format (expected '<!--'
@@ -1238,10 +1239,10 @@ Iu@y?1
 i>@yh
 I$@yi
 j~	)`
-J38(-
 j58hf@9(
+J68G.
 j68hb@9h
-J68O.
+J68z.
 J8@-I0B-O4D-K
 J!@9_
 JaN9j
@@ -1276,7 +1277,6 @@ $Jo8$J!8!
 jq8!$B9
 )jR`y
 JSON error, unterminated element: 
-!^Ju%
 j(xhb@9
 j>@y_
 jyjx*
@@ -1319,7 +1319,6 @@ Kii8k
 kij8J
 K)@)j
 	kl-@
-(knN(*
 kr@9m
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
 kv3format_manager.cpp
@@ -2809,8 +2808,10 @@ _ZN17CThreadSpinRWLock16SpinLockForWriteEPKciy
 _ZN17CThreadSyncObjectD2Ev
 _ZN21CThreadMultiWaitEvent3SetEv
 _ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
-_ZN22CThreadRWLock_FastReadC1Ev
+_ZN22CThreadRWLock_FastRead35EncounteredComplexReadLockOperationEjbPKci
+_ZN22CThreadRWLock_FastReadC1Eb
+ZN26CParallelProcessorAbstractI18CParallelProcessorIi23CLambdaJobItemProcessorIiELi1EEE3RunEvE13CStackFunctor
+ZN26CParallelProcessorAbstractI26CFunctorParallelControllerIZ48CompileComboAndGetVariables_DynamicShaderCompileR10CUtlVectorI26DynamicShaderCompileTask_t10CUtlMemoryIS2_iEEPFviiEE3$_1EE3RunEvE13CStackFunctor
 ZN37CTypesafeIntrospectedToKV3TypeManagerILy1952542070E22MaterialResourceData_tE15AllocateAndLoadER23CKV3TransferLoadContextPK21ResourceBindingBase_tP29IRD_RegisterResourceDataUtilsE15CAllocatorUtils
 ZN37CTypesafeIntrospectedToKV3TypeManagerILy1952542070E22MaterialResourceData_tE24DeallocateDestroyCleanupEPvP25IResourceDeallocatorUtilsE17CDeallocatorUtils
 ZN37CTypesafeIntrospectedToKV3TypeManagerILy500152889462E24PostProcessingResource_tE15AllocateAndLoadER23CKV3TransferLoadContextPK21ResourceBindingBase_tP29IRD_RegisterResourceDataUtilsE15CAllocatorUtils

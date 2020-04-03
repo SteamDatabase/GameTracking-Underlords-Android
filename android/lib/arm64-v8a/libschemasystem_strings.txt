@@ -407,6 +407,7 @@ __cxa_guard_release
 __cxa_pure_virtual
 Cycle or diamond double-reference to '%s'
 d6@yc
+d6@yC
 -DANGER_MODE_ignore_schema_mismatches
 .data
 .data.rel.ro
@@ -647,6 +648,7 @@ JNI_OnLoad
 JNI_OnUnload
 	*jz-
 	*_!<k
+!}	K)
 *k2@y
 kAKJk
 kbFyh
@@ -654,7 +656,6 @@ kbHyh
 kbIyhRB
 _!(kc
 KeyValueCache001
-!}	KI
 K)@)j
 Km@x+
 <!-- kv3 encoding:%s:version{%s} format:%s:version{%s} -->
@@ -1434,8 +1435,8 @@ _ZN17CThreadSpinRWLock11UnlockWriteEPKci
 _ZN17CThreadSpinRWLock16SpinLockForWriteEPKciy
 _ZN17CThreadSyncObjectD2Ev
 _ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
-_ZN22CThreadRWLock_FastReadC1Ev
+_ZN22CThreadRWLock_FastRead35EncounteredComplexReadLockOperationEjbPKci
+_ZN22CThreadRWLock_FastReadC1Eb
 _Znam
 _ZnamRKSt9nothrow_t
 _ZNV16CThreadFastMutex4LockEPKciyj

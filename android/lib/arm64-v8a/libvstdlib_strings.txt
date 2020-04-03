@@ -134,8 +134,9 @@
 @9hV@
 9	ii8(
 9IPipeRead
-9*P7Z~
+9*P7b~
 a2@yh2@y
+(a59&
 A-#9!
 A9	!L-
 ACCESSIBLE_FROM_THREADS
@@ -1165,7 +1166,6 @@ _ZN12CThreadMutex7TryLockEPKci
 _ZN13CBufferString5PurgeEi
 _ZN13COneTimeEvent8AllocateEv
 _ZN13CWorkerThreadC2Ev
-_ZN16CThreadSemaphore7ReleaseEiPi
 _ZN16CThreadSemaphoreD1Ev
 _ZN17CThreadSpinRWLock10UnlockReadEPKci
 _ZN17CThreadSpinRWLock11LockForReadEPKci
@@ -1190,11 +1190,12 @@ _ZN21CThreadMultiWaitEventC1Eb
 _ZN21CThreadMultiWaitEventC2Eb
 _ZN21CThreadMultiWaitEventD1Ev
 _ZN21CThreadMultiWaitEventD2Ev
+_ZN22CThreadRWLock_FastRead11UnlockWriteEPKci
 _ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
-_ZN22CThreadRWLock_FastRead23UnlockRead_LockForWriteEv
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
+_ZN22CThreadRWLock_FastRead23UnlockRead_LockForWriteEPKci
 _ZN22CThreadRWLock_FastRead30HandleFirstWriteLockTransitionEv
-_ZN22CThreadRWLock_FastReadC1Ev
+_ZN22CThreadRWLock_FastRead35EncounteredComplexReadLockOperationEjbPKci
+_ZN22CThreadRWLock_FastReadC1Eb
 _ZN25CThreadMultiWaitSemaphore7ReleaseEv
 _ZN25CThreadMultiWaitSemaphoreC1Ev
 _ZN25CThreadMultiWaitSemaphoreD1Ev

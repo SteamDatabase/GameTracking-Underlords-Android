@@ -104,6 +104,7 @@ $0 to $1,
 12CShadowAtlas
 12ISceneSystem
 13CLightBinner2
+13CNoRefFunctor
 13IBaseSequence
 14CAimConstraint
 14CBaseAppSystemI11ISceneUtilsE
@@ -117,11 +118,8 @@ $0 to $1,
 14ITonemapSystem
 14IVolumetricFog
 15CBaseConstraint
-15CMemberFunctor1IP12CSceneSystemMS0_FvP10CSceneViewES3_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CMemberFunctor1IP26CParallelProcessorAbstractI18CParallelProcessorIi27CMemberFuncJobItemProcessorIi11CCallQueueTI8CTSQueueIP8CFunctorLb0EEES8_ELi1EEEMSB_FviEi12CRefCounted1IS5_20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CMemberFunctor1IP26CParallelProcessorAbstractI18CParallelProcessorIP12CSceneObject21CFuncJobItemProcessorIS3_ELi1EEEMS7_FviEi12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
-15CMemberFunctor5IP12CSceneSystemMS0_FvP10CSceneViewiiyyES3_iiii12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
-15CMemberFunctor5IP12CSceneSystemMS0_FvP10CSceneViewP11CSceneLayerP14CSceneDrawListP16CRenderBatchList18EBatchStartFlags_tES3_S5_S7_S9_SA_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CMemberFunctor6IP13CSOAContainerMS0_Fviiiii13__Float32x4_tEiiiiiS2_12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE18CFuncMemPolicyNoneE
 15CMsg_CVars_CVar
 15CTier0AppSystemI11ISceneUtilsE
@@ -259,6 +257,7 @@ $0 to $1,
 29CBaseNonPooledSceneObjectDescI18C6FaceSkyboxObjectE
 29CBoneConstraintPoseSpaceMorph
 29CVolumetricFogClipmapRenderer
+2	A39
 2	a@9Ia
 2	AA9
 2_BONE_IK
@@ -279,10 +278,10 @@ $0 to $1,
 2ij(8\
 2j"@9)p
 2jjj8l
-2?k78G
+2?k78
 2_k88
-2?k88F
-2(kh8(
+2?k88
+2(kh8
 2Way_0( %s )
 2Way_1( %s )
 2x"@9
@@ -325,8 +324,10 @@ $0 to $1,
 *3%	S
 +3@y+
 4096.0f
+40CFunctor_SceneSystem_Thread_DrawDrawList
 40ISceneAnimatableProceduralBoneTransforms
 41CCopySkyLightingReadTexturePixelsCallback
+43CFunctor_SceneSystem_Thread_RenderPartition
 ?456789:;<=
 456789:;<=
 4*aNc
@@ -351,17 +352,18 @@ $0 to $1,
 #4#.n<
 4n&	&
 4q:Aip
+50CFunctor_SceneSystem_Thread_ProcessProceduralLayer
 5?33s?r_pixelvisibility_partial
 5(3@9
 5h6WyH
 5hbE9
 5hf@9
-5Hku8|
 5hNJ9h
 5hr@9H
 )5IJ(}
 5i.@y
 5(kv8
+5	p@9i
 5	QM9)
 5@y)}
 )5@yi
@@ -374,7 +376,7 @@ $0 to $1,
 '6`:@
 '6	(@
 %6.2f %6.2f %6.2f %.3f %.3f %.3f
-?!69'
+67CFunctor_SceneSystem_Thread_RenderOccludersAndQueueRenderPartitions
 6ConVar
 ?6`F@
 /6h.@
@@ -485,7 +487,6 @@ _8o%@8
 (@@9	\
 )!@9)
 )	@9*
-@9`"&
 @9 !(
 @9)!@
 @9*	@
@@ -498,17 +499,16 @@ _8o%@8
 @9(! 7
 @9() 7
 @9%	@9&
- @9	$@9e
- @9	$@9JEG
+ @9	$@9JAG
+ @9	$@9JEF
 @9_aAkA
+@9)AF
+ @9)AG
 @9_aYkA
 	9	!B9
 @9)+C
-9CFunctor3IPFvP10CSceneViewP11CSceneLayerbES1_S3_b12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEEE
 @9?c@kA
 (@@9	E
-@9)EF
- @9)EG
 (@@9h
 @9h*@
 (@@9H
@@ -534,7 +534,7 @@ _8o%@8
 9ISequence
 9j*@9(
 @9J9	
-@9JEG
+@9JAG
 @9jjh8*
 9jqA9
 @9JU	
@@ -555,6 +555,7 @@ $9(M@
 (@@9tb
 (@@9tB
 @9U|@
+!+9vL
 (@@9	Y
 @9 	@z
 9@z(~`
@@ -674,7 +675,6 @@ A-G9@
 Agg data %d: %p (%d parts, crc 0x%08X)
 aggregate_value
 Ah1xhj+
-	ah9	
 ai_model_info
 AIWalkable
 A[k+"
@@ -687,6 +687,7 @@ Allow time-sliced shadow buffer rendering when enabled via gameinfo.gi
 Already saw decimal point or exponent; can't have another one.
 ambientocclusionproxy.cpp
 *aN6*aN
+	An9)
 anchor_angles
 anchor_position
 Android clang version 5.0.300080  (based on LLVM 5.0.300080)
@@ -753,6 +754,7 @@ AnimVRHand_t
 annotation
 Annotation
 ", another member of oneof "
+	ao9	
 AOProxies
 AO Proxies: %d (%d drawcalls)
 ao_proxy_box_list
@@ -762,10 +764,10 @@ ApplyNewState %d at %f
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
  a protocol 
 A protocol message was rejected because it was too big (more than 
-AQ9kIQ
 archive
  args were given.  Full format string was: "
 ARk-#
+	As9i
 A sceneobject (perhaps a decal) is still in the world that needs to be deleted before deleting the world.
 AssertMsg_ConditionFailed
 AssetBrowserSystem_001
@@ -816,7 +818,7 @@ B-1HD-
 B@9		
 ^B9h^
 (\B9h
-b@9J%F
+b@9J!F
 )@B9(L@
 B9.<Q)0DR)2
 bA9hb
@@ -859,7 +861,7 @@ B-B8%
 bB9hb
 BB9hB
 BB9hj:8
-BB9\t
+BB9[t
 !	B-C
 BC6h compression not supported on this target (windows only).
 BC7 compression not supported on this target (windows only).
@@ -1044,6 +1046,10 @@ CFingerBone
 CFingerChain
 CFingerSource
 CFootDefinition
+CFunctor_SceneSystem_Thread_DrawDrawList CUtlMemoryPoolMT
+CFunctor_SceneSystem_Thread_ProcessProceduralLayer CUtlMemoryPoolMT
+CFunctor_SceneSystem_Thread_RenderOccludersAndQueueRenderPartitions CUtlMemoryPoolMT
+CFunctor_SceneSystem_Thread_RenderPartition CUtlMemoryPoolMT
 C-G=@
 C-G1@
 C-G5@
@@ -1674,6 +1680,7 @@ emitFromWorld
 EmptyAnim
 "e" must be followed by exponent.
 __emutls_get_address
+-enable_2gb_morphs
 Enable display of console messages on screen. 1 = Enabled, 0 = Disabled, -1 = Enabled if vgui is not present
 enable_limit
 EncodeRGBM
@@ -1848,7 +1855,6 @@ FeModel combiner: Too many ropes (%u) or links (%u): cannot fit sum in uint16
 %f %f %f %f
 fff>fff>fff>fff>
 fflush
-F-H}F
 field
   Field       : 
 Field "
@@ -2149,13 +2155,13 @@ h&@)?
 H@-1	@
 h1xij 
 h1xkj.
+h"29e
 h2D9h
 h2F9(
 *-H),5I)_
 H6hV@
-h,87(
 h)8Ay)
-h"@9)EG
+h"@9)AG
 h"@9h
 h*@9h/
 h.@9H
@@ -2205,11 +2211,11 @@ HELPER_BONE
 HelpSystem_001
 Hex and octal numbers must be integers.
 =hf@9
+hF@9)eC
 hf@9h
 hf@9H
 hF@9h
 hf@9i
-hF@9)iC
 hFD9u
 hFJ9!
 hh8HU
@@ -2221,7 +2227,6 @@ H$@-J
 H%@)J	@
 *hj)8h
 hj)8H
-hj)8Xs
 *H'@)J/A)
 hJAyJ
 hjj8	
@@ -2272,7 +2277,7 @@ i6@yh
 i)8i&
 ?i(8?i*x?i+
 _i)8j
-i"@9JEG
+i"@9JAG
 ib@9`
 ib@9(
 ib@9)
@@ -2506,6 +2511,7 @@ is_transition
 	It is illegal to indicate LAYERFLAGS_PRESERVE_DEPTH_STENCIL_BUFFER but also do a stencil clear or use LAYERFLAGS_DISCARD_DEPTH_STENCIL_BUFFER!
 	It is illegal to read from a scratch render target before it was written to!
 !iv8?|
++i*x/
 *i(xi
 i#xjj-
 IyixJylx+
@@ -2517,7 +2523,7 @@ j2?)?
 j48	C
 j48t^@
 j4xH;@
-j58%C
+j583A
 j58hf@9(
 j(8hm
 j`8'k`8
@@ -2546,7 +2552,6 @@ j.E)l2@
 jh8_5
 jh8Gkh8
 JHMHJ
-ji8`"&
 Jidx?
 JIGGLE_BONE
 jiggle bone %u
@@ -2578,9 +2583,10 @@ j<@-UP@-i
 jv8?)
 jVB9j
 JVB9J
+j*x)D
+j)xDD
 j(xhb@9h
 j$xij.
-j*xr<
 JYix*$
 	*jz-
 *?!(k
@@ -2594,14 +2600,12 @@ K1D)M9E)
 K1F)M9G)
 K1H)M9I)
 ?k58D
+?k68E
 *?k78
-?k78ea
 ?k78h
-k78o_
-_k88"b
+k78oc
 )k(8HY@
 k(8vV@
-	!k9	
 @k989
 K	A9lC
 kAKJJ
@@ -2638,6 +2642,7 @@ KV Conditional Evaluation Error
 Kykx)
 !.l	 
 "L9`2
+"L9`22
 "L9 3
 (#L9@3
 La@9K
@@ -2729,7 +2734,6 @@ LINUX
 List all the active sceneworlds
 List the object class names known by scenesystem
 LITE_RUNTIME
-Li+xP
 L-@)J	@
  %llu aggs, %s total data
 LoadEXRImageFromMemory failed! Error message: %s
@@ -4151,7 +4155,7 @@ RGBA32323232F
 RGBA8888_LINEAR
 RGBX555
 RGBX8888
-Rh"0y
+Rh"0yg
 R	h(8	
 RhbE9h
 Rhf@9
@@ -4161,7 +4165,7 @@ RHhh8
 Rhi)8t
 Rhj)8
 rhj)8H
-Rhj)8U
+Rhj)8h=
 Rhjh8
 Rhjh8(
 Rhjh8h
@@ -4195,7 +4199,7 @@ Rjjj8
 rJMJJ
 RJMJJ,
 rJMJJi
-R?k78/
+R?k78
 R kh|!7_
 R(kh8
 R	kh8)
@@ -4234,7 +4238,6 @@ rt_bakecubemap_depthstencil.vtex
 rt_bakecubemap.vtex
 r_texture_lod_scale
 runspeed
-R@yi	
 --- %s: 
 "%s" 
 "%s":
@@ -4251,8 +4254,8 @@ s1_mapname
 S: %7.3f
 S*9	%A
 (S@9hS
+s9{OF
 S@9	Q
-s9{SF
 SA)hb@
 SA)hJ@
 %s| AlignOf: %d
@@ -4320,10 +4323,10 @@ SceneSystem/CMTAtlasChunkSizeMobile
 SceneSystem/CMTAtlasHeightMobile
 SceneSystem/CMTAtlasWidthMobile
 scenesystem.cpp
-scenesystem.cpp(1346): 
-scenesystem.cpp(4502): 
-scenesystem.cpp(6399): Expecting 1 renderable pass for material "%s" but found %d!
-scenesystem.cpp(7715): Waited 500 ms for jobs to complete. Attempt to drain windows message queue. Jobs in queue = %d
+scenesystem.cpp(1445): 
+scenesystem.cpp(4603): 
+scenesystem.cpp(6510): Expecting 1 renderable pass for material "%s" but found %d!
+scenesystem.cpp(7826): Waited 500 ms for jobs to complete. Attempt to drain windows message queue. Jobs in queue = %d
 SceneSystem/CsgoDefaultShadowTextureHeight
 SceneSystem/CsgoDefaultShadowTextureWidth
 SceneSystem/CsgoLightBinner
@@ -4494,7 +4497,6 @@ SetRepeatedUInt32
 SetRepeatedUInt64
 SetString
 setting m_SimulationState[%d].m_flSimulationTime=%f
-setting.shaderquality
 SetUInt32
 SetUInt64
 "%s":%f
@@ -5483,6 +5485,7 @@ xrYvpcf1
 Y) ( 
 	y4xl
 y+7@y+
+?#'y8F
 @yajN
 Yaw; 
 yaw_end
@@ -5563,7 +5566,6 @@ ZN14CLightBinnerVr19GatherVisibleLightsER23CUtlVectorFixedGrowableI15ConsiderLig
 ZN14CLightBinnerVr34AllocateMixedShadowsForLocalLightsEP10CSceneViewP11ISceneLayerRK8CFrustumRK17FrustumGeometry_tyyiE3$_1
 ZN16CLightBinnerCsgo19GatherVisibleLightsER23CUtlVectorFixedGrowableI15ConsiderLight_tLm256EES3_P10CSceneViewRK8CFrustumyyE3$_0
 ZN16CLightBinnerCsgo34AllocateMixedShadowsForLocalLightsEP10CSceneViewP11ISceneLayerRK8CFrustumRK21FrustumGeometryCSGO_tyyiE3$_1
-_ZN16CThreadSemaphore7ReleaseEiPi
 _ZN16CThreadSemaphoreD1Ev
 _ZN17CThreadSyncObject4WaitEj
 _ZN17CThreadSyncObjectD2Ev
@@ -5574,11 +5576,14 @@ _ZN21CThreadMultiWaitEvent3SetEv
 _ZN21CThreadMultiWaitEvent5ResetEv
 _ZN21CThreadMultiWaitEventC1Eb
 _ZN21CThreadMultiWaitEventD1Ev
+_ZN22CThreadRWLock_FastRead11UnlockWriteEPKci
 _ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
 _ZN22CThreadRWLock_FastRead30HandleFirstWriteLockTransitionEv
-_ZN22CThreadRWLock_FastReadC1Ev
+_ZN22CThreadRWLock_FastRead35EncounteredComplexReadLockOperationEjbPKci
+_ZN22CThreadRWLock_FastReadC1Eb
 ZN26CBindlessFastPathPartition21EnsureEnvironmentMapsEvE3$_0
+ZN26CParallelProcessorAbstractI18CParallelProcessorIi27CMemberFuncJobItemProcessorIi11CCallQueueTI8CTSQueueIP8CFunctorLb0EEES7_ELi1EEE3RunEvE13CStackFunctor
+ZN26CParallelProcessorAbstractI18CParallelProcessorIP12CSceneObject21CFuncJobItemProcessorIS2_ELi1EEE3RunEvE13CStackFunctor
 ZN32CBindlessFastPathSceneObjectDesc35EnsureLightProbeVolumeDescriptorSetEvE3$_1
 _Znam
 _ZnamRKSt9nothrow_t
@@ -5638,3 +5643,4 @@ _ZTVSt12length_error
 +z up
 Zy)(	
 Zy	|F
+Zyj~F

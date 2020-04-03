@@ -331,7 +331,7 @@ $4(PushBack
 %6.2f %6.2f %6.2f %.3f %.3f %.3f
 %6.2f %s
 6]@-8e
-6B-	eO
+6B-	%G
 6ConVar
 6E9)y
 6\E-B
@@ -415,7 +415,6 @@ _8!(1
 9((B9
 9($B9
 @9c((
-"@9}}D
 9#	F-
 	@9GA@-Q	@
 (|@9h
@@ -440,8 +439,8 @@ _8!(1
 @9j-@-l	@
 @9kNF9
 @9	kv8
+"@9}-L
 9lR	x
-9 MqG
 	@9n	@9
 	@9p	
 9.s*4
@@ -484,6 +483,7 @@ AABB_t
 AABB_t RnHullRefl_t::m_Bounds
 "A)az
 !A-	)B-
+AB-6qN
 A-'@B-B
 abnap
 AbsolutePoseControl
@@ -624,7 +624,6 @@ Assuming parameter -sdk
 =	AT9
 	AT9_
 	AT9*
-	AT9j
 ATTACHMENT_INFLUENCE_FLAGS_NONE
 attachment_offset
 attachment_type
@@ -732,7 +731,6 @@ B-'@C-1HD-
 BC-B81
 bcnbp
 *B)cz
-$.b}D
 bD-!('
 BD-b*"
 BE-`( 
@@ -755,6 +753,7 @@ Bi)x)
 BIyhj
 )bJ	)eB
 Bjl8_
+$.b-L
 blendamount
 blendindices
 BlendList
@@ -892,12 +891,13 @@ C)0(E)
 C-1*4
 C)1,E)
 C-2-@
-c	2cL
+c	2cL7
 C-!8"
 C--8E-"
 C-8gD-
 C]-@9 
 C9 8 
+C@9 E@
 "C9hB
 C-A	!
 cable
@@ -1026,6 +1026,7 @@ CFootTrajectories
 CFootTrajectory
 CFrustum
 CFrustum RnWorldRefl_t::m_DebugCamera
+CH-1E@
 ChangeCallbackOnChange
 ChangeCallbackOnChangeOrCreate
 Change global friction factor
@@ -1765,6 +1766,7 @@ E-m6@
 emitFromWorld
 [empty]
 EmptyAnim
+-enable_2gb_morphs
 enable_limit
 encoding
 ENCODING_TYPE_COUNT
@@ -2186,7 +2188,6 @@ F-Z('
 G-<0@
 G- 	6
 G9	0@
-G9	C@
 @-G@A-
 gAA-q
 GA@-c(&
@@ -2324,10 +2325,10 @@ H-@)J	@
 H&@)J
 H%@-J	@
 H%@)J	@
-hj48r
-hj58a
-hj)8)'
-hj)8}+
+hj48q
+hj58`
+hj)8|+
+hj)8('
 H$@)J,B)M$@
 H-k	9
 HMDAvatar
@@ -2372,10 +2373,10 @@ h&X)`	(
 =h~@y
 (h@y 
 h&@y)
-h&@yI
-hz5x8
-hz5xg
-hz5xl
+h&@yi
+hz5x7
+hz5xf
+hz5xk
 <	)@)i*
 *-@i)	
 	)@)i
@@ -2610,9 +2611,9 @@ J-{+?
 j1@)k	@
 )j2])
 j2?)?
-J38C{
+J38&{
 j58hf@9(
-J68k|
+J68N|
 j)8	]
 @-J8#
 j)8GN
@@ -2702,6 +2703,7 @@ K1@-M	@
 K-2[@
 k2A)m:@)oBC)qJB)`"@
 *k2@y
+@-K5O
 )k6^)
 k-7	@
 k{8(%@
@@ -4537,6 +4539,7 @@ Rhj)8
 Rhj)8(
 Rhj)8H
 Rhjh8
+Rhjh8(
 Rhjh8H
 Rhj)x
 R	i*8
@@ -6007,7 +6010,7 @@ y(	@yhb
 y(	@yhn
 y(	@yhz
 @y.yj
-@y.	@ylaO
+@y.	@yl!G
 )yyx_
 @y)Y@y
 @y%!@y&%@y41@y55@y
@@ -6060,8 +6063,8 @@ _ZN20CUniformRandomStream9RandomIntEii
 _ZN20CUniformRandomStreamC1Ev
 _ZN21CThreadMultiWaitEvent3SetEv
 _ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
-_ZN22CThreadRWLock_FastReadC1Ev
+_ZN22CThreadRWLock_FastRead35EncounteredComplexReadLockOperationEjbPKci
+_ZN22CThreadRWLock_FastReadC1Eb
 _Znam
 _ZnamRKSt9nothrow_t
 zn@)j

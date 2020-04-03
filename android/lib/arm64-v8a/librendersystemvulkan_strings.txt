@@ -76,6 +76,7 @@
 12IRenderUtils
 [1;30m
 13CLayoutInsert
+13CNoRefFunctor
 13CVulkanObjectIP11VkSampler_TXadL_Z16vkDestroySamplerEEE
 13CVulkanObjectIP13VkImageView_TXadL_Z18vkDestroyImageViewEEE
 13CVulkanObjectIP9VkFence_TXadL_Z14vkDestroyFenceEEE
@@ -256,6 +257,7 @@ $2,>S,,
 %!2,>S,
 @2,S,>S,,,
 %2,S,>S,,
+2vrCy
 2x"@9
 	2z"@
 3_0_gl
@@ -573,9 +575,9 @@ _8ji)8
 @9hV@
 9hv@9
 )%@9i
-@@9i#
 @9i&@
 #@9i	
+@@9I#
 @9I}	
 *!@9_I
 9`i`8
@@ -674,7 +676,6 @@ _8ji)8
 @9+	@yHM
 9@z(~`
 @9zF@
-&@)@a
 a2@yh2@y
 *,A)($@),4B)o
 A8kB@9l
@@ -729,7 +730,7 @@ aA9`m@
 A(aN!
 $	A)Ar
 	Ab9*,
-	Ab9J,
+	Ab9j,
 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789
 aBE9a
 A block must end with a branch instruction.
@@ -1272,9 +1273,8 @@ BGRA5551
 BGRA8888_LINEAR
 BGRX8888_LINEAR
 bhb8"
-Bht8.
+Bht8b
 __BI_
-Bi9)!	
 __BI_Append
 Biases the mip level the texture streaming system choses to stream for each texture.
 Bib81
@@ -1523,6 +1523,7 @@ C9an@
 C9(B07
 (c@9H
 (C@9h
+(c[9H8
 C9h 87
 cable
 cacheData
@@ -2675,7 +2676,7 @@ CUtlStringToken
 CUtlSymbol
 CUtlSymbolLarge
 CUtlVector
-(CW9sBE
+(CW95
 __cxa_allocate_exception
 __cxa_atexit
 __cxa_begin_catch
@@ -2726,7 +2727,7 @@ DCT scaled block size %dx%d not supported
 %d %d
 %d..%d
 DDDDUUUU
-DDDDUUUUDDDDUUUUt
+DDDDUUUUDDDDUUUU
 ddx_coarse
 ddx_fine
 ddy_coarse
@@ -5095,7 +5096,6 @@ Having
 H(Ay	M
 !Hb8b
 hb8bF
-hb 9~\
 hb@9`
 hb@9h
 hb@9H
@@ -5103,7 +5103,6 @@ hB@9h
 hB@9i
 hB@9t
 hb@9w
-h&B)@a
 hBA9)
 hbA9h
 hBA9h
@@ -5114,6 +5113,7 @@ hbC9H
 hBE9h
 hBE9j
 hBI9H%
+h&B)@m
 hB@yh&
 hc87hd89hc88hb8
 hc8#h 8
@@ -5158,6 +5158,7 @@ HEXINTEGERLITERAL
 =hf@9
 hf@9a
 hf@9a*
+hf 9F`
 hf@9h
 hf@9H
 hf@9i
@@ -5165,7 +5166,7 @@ h"F9i
 hfC9H
 hFD9u
 h"G9i
-hh8?_
+hh85_
 $hh8Chh8
 *h&I)
 HIGHDPI
@@ -5212,7 +5213,7 @@ hlsl-offsets
 HlslSemanticGOOGLE
 hn8c|
 HostStateMgr001
-hr1ya
+hr1y<
 hr1yI
 h"R9h
 hrA9h
@@ -5256,6 +5257,7 @@ I64VEC4
 i6xh&@
 i6@yh
 (i;8{
+i;8+a
 +i*8h
 ^i~8H
 i(8hilxi*
@@ -5376,7 +5378,6 @@ If OpTypeBool is stored in conjunction with OpVariable, it
 *ig8)
 'ig8S
 -ignoredxsupportcfg
--ignore_gpu_slam
 ignoreIntersectionNV
 IgnoreIntersectionNV
 Ignoring attempt to set cHRM RGB triangle with zero area
@@ -5445,7 +5446,7 @@ i"@)j
 <)ij8
 )ij8?
 )ij8	
-*ij(8
+*ij(8[
 ij8(	
 ij(8h
 -ij8J
@@ -6253,7 +6254,6 @@ IVEC4
 *i.xi>@yj:
 i#xjj-
 i+xjj
-.i(xw
 I!@y?
 iy8J	
 i>@yh
@@ -6266,17 +6266,16 @@ Iy*wB
 )*J=@
 **J=@
 +*J=@
-	*J16
 j1By_! k
 ',)j3@
-j48lI
-j58-=
+j48lE
+j58-9
 j58@c
-j58G;
+j58G7
 j58hf@9(
 j68HC@9h
 j68i"S
-j68X|
+j68Xx
 @j!8!
 j*8*%
 j(8a6@
@@ -6319,7 +6318,7 @@ jix?! k
 jj(8(
 jj(8(!
 jj86}
-	J)}	Kh
+	J)}	K
 JNI_OnLoad
 JNI_OnUnload
 jo8Jio8
@@ -6424,7 +6423,7 @@ KV Conditional Evaluation Error
 K%@xl}
 k	@y)
 k!@yJ
--@)l)
+-@)L)
 l5<)_
 l!@9)
 l	@9,
@@ -6638,6 +6637,7 @@ LunarG
  l-value of swizzle cannot have duplicate components
  l-value required
 LZMA compression of static combo data failed
+&@)@m
 @`M9`
 macro expansion
 Macro redefined; different argument names:
@@ -6787,7 +6787,6 @@ m_bNoColor
 m_bOffsetExistingPos
 m_Bone
 m_bParticleFeathering
-MbP?D
 m_bRemapPullForceToLife
 m_bRunForParentApplyKillList
 m_bScaleCurrent
@@ -7275,7 +7274,7 @@ N2Z .
 N7glslang7TShader8IncluderE
 !n9[ .
 [ n9+a
-N@9UB
+N@9$F
 ,.n*a
 name already defined
 named_barrier
@@ -8918,7 +8917,6 @@ setting.DisableShaderOptimizations
 setting.DXLevel
 setting.fullscreen
 setting.fullscreen_min_on_focus_loss
-setting.gpu_level
 setting.HasBrokenPipelineStats
 setting.high_dpi
 setting.knowndevice
@@ -10085,16 +10083,16 @@ texture3DProjGradARB
 texture3DProjLod
 texture address mode
 texturebase.cpp
-texturebase.cpp(1818):Error loading texture: %s
-texturebase.cpp(2752):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2773):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2784):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2795):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2806):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2827):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2838):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2849):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2860):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(1821):Error loading texture: %s
+texturebase.cpp(2755):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2776):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2787):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2798):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2809):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2830):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2841):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2852):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2863):ResourceHandleToData( %s ) failed! Falling back to error texture!
 TextureBuffer
 textureClamp
 textureClampARB
@@ -12204,7 +12202,7 @@ Vulkan swapchain does not support VK_IMAGE_USAGE_TRANSFER_SRC_BIT. Screenshots n
 Vulkan swapchain out-of-date, suboptimal, or surface lost - recreating.  Result: (%s)
 Vulkan swapchain recreated succesfully.  Attempting to acquire next image...
 Vulkan texture manager frame update
-vulkan/texturevulkan.cpp(1443): 
+vulkan/texturevulkan.cpp(1451): 
 vulkan/texturevulkan.cpp(725): 
 vulkan/texturevulkan.cpp(741): 
 -vulkan_trim_all_command_pools
@@ -12555,7 +12553,7 @@ _Z6DevMsgPKcz
 #Z80ijx
 #Z8	A
 _ZdaPv
-zd?(knN
+zd?(knN4
 _ZdlPv
 ZeroExtend
 Zero length tRNS chunk
@@ -12578,7 +12576,6 @@ _ZN13CBufferString5PurgeEi
 _ZN13CBufferString6InsertEiPKcib
 _ZN13CBufferString8RemoveAtEii
 _ZN13COneTimeEvent8AllocateEv
-_ZN16CThreadSemaphore7ReleaseEiPi
 _ZN16CThreadSemaphoreD1Ev
 _ZN17CThreadSpinRWLock10UnlockReadEPKci
 _ZN17CThreadSpinRWLock11LockForReadEPKci
@@ -12588,12 +12585,14 @@ _ZN17CThreadSyncObject4WaitEj
 _ZN17CThreadSyncObjectD2Ev
 Z n1*a
 _ZN21CThreadMultiWaitEvent3SetEv
+_ZN22CThreadRWLock_FastRead11UnlockWriteEPKci
 _ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
-_ZN22CThreadRWLock_FastRead23UnlockRead_LockForWriteEv
-_ZN22CThreadRWLock_FastRead23UnlockWrite_LockForReadEv
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
+_ZN22CThreadRWLock_FastRead23UnlockRead_LockForWriteEPKci
+_ZN22CThreadRWLock_FastRead23UnlockWrite_LockForReadEPKci
 _ZN22CThreadRWLock_FastRead30HandleFirstWriteLockTransitionEv
-_ZN22CThreadRWLock_FastReadC1Ev
+_ZN22CThreadRWLock_FastRead35EncounteredComplexReadLockOperationEjbPKci
+_ZN22CThreadRWLock_FastReadC1Eb
+ZN26CParallelProcessorAbstractI18CParallelProcessorIi27CMemberFuncJobItemProcessorIi11CCallQueueTI8CTSQueueIP8CFunctorLb0EEES7_ELi1EEE3RunEvE13CStackFunctor
 _Znam
 _ZnamRKSt9nothrow_t
 _ZNKSt11logic_error4whatEv

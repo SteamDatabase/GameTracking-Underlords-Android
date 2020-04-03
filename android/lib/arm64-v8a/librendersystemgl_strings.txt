@@ -58,6 +58,7 @@ $@)#@@)
 13CGLMSwapChain
 13CHullShaderGL
 13CLayoutInsert
+13CNoRefFunctor
 13IRenderDevice
 14CBaseAppSystemI12IRenderUtilsE
 14CBaseAppSystemI16IRenderDeviceMgrE
@@ -172,7 +173,7 @@ $@)#@@)
 2	h(8
 2hb49
 2hf!9
-2hj58
+2hj58uG
 2Hku8
 2hn!9
 2ij(8
@@ -644,7 +645,6 @@ Begin:
 /*BEGIN_UNIFORMBINDINGS
 BenchmarkService001
 b.EycZA
-bfh9!
 BGR565
 BGR888_BLUESCREEN
 BGRA1010102
@@ -652,8 +652,6 @@ BGRA4444
 BGRA5551
 BGRA8888_LINEAR
 BGRX8888_LINEAR
-b~h9!
-b"h9!
 bhb8"
 Biases the mip level the texture streaming system choses to stream for each texture.
 Bib81
@@ -663,14 +661,12 @@ binary_lz4
 BinaryProperties_GetValue
 binormal
 b"J9_@
-bjh9!
 BKbhTb~XBK!;
 blendindices
 blendweight
 blocking issue in occlusion queries!!
 bN!(a
 bNEy_
-bnh9!
 Bogus buffer control mode
 Bogus DAC index %d
 Bogus DAC value 0x%x
@@ -705,10 +701,10 @@ Buffer passed to JPEG library is too small
 B)v	@
 B)V	@
 BXcxc
-bzh9!
 @=%	@=c
 C9an@
 )C@9H
+(c[9H8
 c9tB#
 calloc
 Call to NULL read function
@@ -929,6 +925,7 @@ D24X4S4
 D24X8
 D24X8_SHADOW
 d6@yc
+d6@yC
 	D@8!
 D@8)%
 D$@8$
@@ -958,7 +955,7 @@ DCT scaled block size %dx%d not supported
 %d..%d
 %d.%d.%d
 DDDDUUUU
-DDDDUUUUDDDDUUUU\
+DDDDUUUUDDDDUUUUX	
 -debugdxsupport
 DebugTextureInfo001
 Decompressed %i texture mips in %.2f ms (%.1fmb/s)
@@ -3872,10 +3869,10 @@ h`8ch`8$h`8
 h$8d:B
 h`8%h`8
 h#8Jh#8
+*h*!9$
 h""9	
 h"'90
 ?h98a
-*h*!9d
 h.@9H
 h"`9tb 
 h"A9a
@@ -3892,6 +3889,7 @@ hB$9c
 hB&9c
 hb@9h
 hb@9H
+hb 9Ih
 hb^9t
 h"b9tb"
 hBA9)QG
@@ -3918,6 +3916,7 @@ HEXINTEGERLITERAL
 hf@9a*
 hf@9h
 h"F9i
+hf 9Rk
 hfj9t
 h"g9tb'
 $hh8Chh8
@@ -3930,7 +3929,6 @@ Hih8h
 Hih8R
 Hitch alert: Present was waiting for %d iterations and %.1f seconds.
 hi)xh
-hj58"
 hj8."@
 hJAy	
 <hji8
@@ -3947,7 +3945,8 @@ Hkw8(
 hn8c|
 HostStateMgr001
 hr1yI
-hr@9Jq
+hr1yW_
+hr@9J
 hrqy`Z
 hr@y`
 hs_5_0
@@ -4016,7 +4015,6 @@ if@9)
 *ig8)
 'ig8S
 -ignoredxsupportcfg
--ignore_gpu_slam
 Ignoring attempt to set cHRM RGB triangle with zero area
 Ignoring attempt to set negative chromaticity value
 Ignoring cHRM chunk with negative chromaticities
@@ -4276,11 +4274,12 @@ iv@9I
 *i.xi>@yj:
 i>@yh
 !~j	(
+	*J1?
 j48*:
 j48t^@
 j58hf@9(
 @j!8!
-j(82:
+j(8+6
 j(8(G
 j(8(H
 j)8HA
@@ -4291,7 +4290,7 @@ j(8HH
 j`8!i 8
  J9?@
 J9e:A
-j 9	k
+j 9]k
 ja8 i!8!
 JA@9j
 JA@9J
@@ -4327,6 +4326,7 @@ j(x	k(x)k(x
 K[ .)
 *k2@y
 _k58(
+?k68`
 k68wZ@
 ?k78h
 k(8vV@
@@ -5448,7 +5448,6 @@ setting.DisableShaderOptimizations
 setting.DXLevel
 setting.fullscreen
 setting.fullscreen_min_on_focus_loss
-setting.gpu_level
 setting.HasBrokenPipelineStats
 setting.high_dpi
 setting.knowndevice
@@ -5725,16 +5724,16 @@ text compression mode is out of range
 TextLayout_001
 TextMessageMgr_001
 texturebase.cpp
-texturebase.cpp(1818):Error loading texture: %s
-texturebase.cpp(2752):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2773):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2784):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2795):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2806):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2827):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2838):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2849):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2860):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(1821):Error loading texture: %s
+texturebase.cpp(2755):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2776):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2787):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2798):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2809):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2830):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2841):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2852):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2863):ResourceHandleToData( %s ) failed! Falling back to error texture!
 TextureDimLog2
 Texture manager out of space! Can't allocate new texture!
 Texture memory discrepancy! %llu != %llu
@@ -6318,7 +6317,6 @@ _ZN13CBufferString18StripTrailingSlashEv
 _ZN13CBufferString5PurgeEi
 _ZN13CBufferString6InsertEiPKcib
 _ZN13CBufferString8RemoveAtEii
-_ZN16CThreadSemaphore7ReleaseEiPi
 _ZN16CThreadSemaphoreD1Ev
 _ZN17CThreadSpinRWLock10UnlockReadEPKci
 _ZN17CThreadSpinRWLock11LockForReadEPKci
@@ -6328,10 +6326,12 @@ _ZN17CThreadSyncObject4WaitEj
 _ZN17CThreadSyncObjectD2Ev
 Z n1*a
 _ZN21CThreadMultiWaitEvent3SetEv
+_ZN22CThreadRWLock_FastRead11UnlockWriteEPKci
 _ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
 _ZN22CThreadRWLock_FastRead30HandleFirstWriteLockTransitionEv
-_ZN22CThreadRWLock_FastReadC1Ev
+_ZN22CThreadRWLock_FastRead35EncounteredComplexReadLockOperationEjbPKci
+_ZN22CThreadRWLock_FastReadC1Eb
+ZN26CParallelProcessorAbstractI18CParallelProcessorIi27CMemberFuncJobItemProcessorIi11CCallQueueTI8CTSQueueIP8CFunctorLb0EEES7_ELi1EEE3RunEvE13CStackFunctor
 _Znam
 _ZnamRKSt9nothrow_t
 _ZNKSt11logic_error4whatEv

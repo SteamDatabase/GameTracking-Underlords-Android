@@ -48,6 +48,7 @@ $@)  "
 12CRefCounted1I8CFunctor20CRefCountServiceBaseILb1E6CRefMTEE
 12CSceneObject
 12CThreadedJob
+13CNoRefFunctor
 13CScriptScopeTI22CDefScriptAccessorBaseLb1EE
 13CWorldManager
 13IBaseSequence
@@ -327,6 +328,7 @@ Adds an I/O connection that will call the named function on this entity when the
 !	A)Dr
 AE_ACTION_SET_TURN_RATE_SCALE
 AE_BLIND_ZOMBIE_SNIFF
+_<aEC
 AE_CL_ADD_PARTICLE_EFFECT_CP
 AE_CL_BODYGROUP_SET_VALUE
 AE_CL_CREATE_PARTICLE_BRASS
@@ -347,7 +349,6 @@ AE_NPC_SET_INTERACTION_CANTDIE
 AE_NPC_START_POWERED_RAGDOLL
 AE_NPC_WEAPON_FIRE
 AE_NPC_WEAPON_SET_SEQUENCE_NUMBER
-_<aEO
 AE_PASSENGER_PHYSICS_PUSH
 AE_SCRIPT_EVENT_FIREEVENT
 AE_SV_DUSTTRAIL
@@ -446,12 +447,10 @@ auto_unragdoll_duration
 	Av9_
 	Av9_!
 	Av9*	
-	Av94	
 	Av9j	
 	Av9J	
 	Av9v	
 /AV?O!
-	aW9j	
 B-1HD-
 *-B),5C)_
 B8h$87(S	
@@ -1004,6 +1003,7 @@ emitFromWorld
 #empty#
 EmptyAnim
 E*!N%
+-enable_2gb_morphs
 enable_limit
 encoding
 Encountered bad enum value "%s" for type %s, entity "%s" field "%s"!
@@ -1393,12 +1393,11 @@ hf@9h
 hf@9H
 h"F9H
 hf@9i
-hfA9	
 (hide)
 Hitbox indexing is incorrect for set %s, hitbox %s. Hitboxes will not be setup properly.
-hj48Bi
-hj58&
-hj581m
+hj48Be
+hj581i
+hj58S
 H#L9`3
 HMaterial
 HModel
@@ -1589,7 +1588,7 @@ ji8J}
 JIGGLE_BONE
 jiggle bone %u
 Jih8ji(8
-Ji/IE
+Ji/II
 JIIJJ}
 Jikx_
 jj(8(
@@ -3427,6 +3426,7 @@ yNs*!
 Y nsZ n
 Y n)Y nJY nkY n
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
+Ys,9=
 Y>t$7?*
 @yu&@
 _Z14V_stristr_fastPKcS0_
@@ -3455,8 +3455,10 @@ _ZN17CThreadSyncObjectD2Ev
 Z n1*a
 _ZN21CThreadMultiWaitEvent3SetEv
 _ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
-_ZN22CThreadRWLock_FastReadC1Ev
+_ZN22CThreadRWLock_FastRead35EncounteredComplexReadLockOperationEjbPKci
+_ZN22CThreadRWLock_FastReadC1Eb
+ZN26CParallelProcessorAbstractI18CParallelProcessorIi27CMemberFuncJobItemProcessorIi11CCallQueueTI8CTSQueueIP8CFunctorLb0EEES7_ELi1EEE3RunEvE13CStackFunctor
+ZN26CParallelProcessorAbstractI22CParallelLoopProcessorI13FloatBitMap_t31CLoopMemberFuncJobItemProcessorIS1_S1_S1_EEE3RunEvE13CStackFunctor
 ZN37CTypesafeIntrospectedToKV3TypeManagerILy431366240118E11WorldNode_tE15AllocateAndLoadER23CKV3TransferLoadContextPK21ResourceBindingBase_tP29IRD_RegisterResourceDataUtilsE15CAllocatorUtils
 ZN37CTypesafeIntrospectedToKV3TypeManagerILy431366240118E11WorldNode_tE24DeallocateDestroyCleanupEPvP25IResourceDeallocatorUtilsE17CDeallocatorUtils
 ZN37CTypesafeIntrospectedToKV3TypeManagerILy495874631030E20PermEntityLumpData_tE15AllocateAndLoadER23CKV3TransferLoadContextPK21ResourceBindingBase_tP29IRD_RegisterResourceDataUtilsE15CAllocatorUtils

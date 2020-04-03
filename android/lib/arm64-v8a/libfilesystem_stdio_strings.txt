@@ -91,7 +91,6 @@
 @8	}@
 8CFmtStrNILi256ELb0EE
 8x9,7
-8y6xh
 )!@9)
 9hb@9
 9hf@9(
@@ -100,6 +99,7 @@
 @9hV@
 9IFileList
 9	ii8(
+9y6xH
 a2@yh2@y
 Aborting IO request for %s
 Access of unconnected ConVarRef
@@ -461,9 +461,11 @@ IOJob
 IQuickTime001
 \i)x)	
 *i.xi>@yj:
+i)xuM
 I	@y(
 i>@yh
 j58hf@9(
+J68KC
 ji,x!
 ji)x)	
 j!JJ+
@@ -963,7 +965,6 @@ WINXP
 WorkshopSetup001
 WorldRendererBuilderMgr001
 WorldRendererMgr001
-xi*xJ	
 XZP%c %d
 @y9X@
 yh2Ay
@@ -1016,7 +1017,6 @@ _ZN13CBufferString9SetLengthEibPi
 _ZN13CThreadRWLock11UnlockWriteEPKci
 _ZN13CThreadRWLock11WaitForReadEv
 _ZN13CThreadRWLock12LockForWriteEPKci
-_ZN16CThreadSemaphore7ReleaseEiPi
 _ZN16CThreadSemaphoreD1Ev
 _ZN17CThreadSpinRWLock10UnlockReadEPKci
 _ZN17CThreadSpinRWLock11LockForReadEPKci
@@ -1025,10 +1025,11 @@ _ZN17CThreadSpinRWLock16SpinLockForWriteEPKciy
 _ZN17CThreadSyncObject4WaitEj
 _ZN17CThreadSyncObjectD2Ev
 _ZN21CThreadMultiWaitEvent3SetEv
+_ZN22CThreadRWLock_FastRead11UnlockWriteEPKci
 _ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
-_ZN22CThreadRWLock_FastRead25WaitForReadLockTransitionEjPKci
 _ZN22CThreadRWLock_FastRead30HandleFirstWriteLockTransitionEv
-_ZN22CThreadRWLock_FastReadC1Ev
+_ZN22CThreadRWLock_FastRead35EncounteredComplexReadLockOperationEjbPKci
+_ZN22CThreadRWLock_FastReadC1Eb
 _ZN7CThread15IsThreadRunningEv
 _ZN7CThread21WaitForCreateCompleteEP12CThreadEvent
 _ZN7CThread4InitEv
