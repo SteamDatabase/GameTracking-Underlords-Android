@@ -190,7 +190,6 @@ $@)  "
 +1@)-%A)
 1bL9?2
 1bQJ1~
-1C-!IF
 1DBlend
 -1 for all asleep, 1 for all awake
 1ik8 il8)ip8R
@@ -424,9 +423,11 @@ $@)  "
 29C_OP_SnapshotRigidSkinToBones
 29CSchemaRegistration_particles
 2@9PU
+2	A+9D
 2_BONE_IK
 2F9c|
-2H339
+2h2-9
+2Hs39
 	2	i*
 2i2@9
 2)ia8
@@ -445,6 +446,7 @@ $@)  "
 2kii8
 2Lii8
 2m>@-h
+2	Q*9s
 2Way_0( %s )
 2Way_1( %s )
 	2	Y+
@@ -907,7 +909,6 @@ $@)  "
 5hJG9(
 5iFE9jJ
 )5IJ(}
-5in8p
 5NUY@-
 =5$@x
 >!@6>
@@ -919,9 +920,8 @@ $@)  "
 6hbE9
 6hb@y
 6hrZ9
-6il8n
 6n8+a
-6Y3s9
+6Yss9
 (7c8%
 7hb@9h
 7hf@9
@@ -931,7 +931,6 @@ $@)  "
 7ib@9i
 7IConVar
 7)ij8
-7in8p
 7Jik8
 7.yw"@
 8]@)6	@
@@ -945,6 +944,7 @@ $@)  "
 `"@9	
 )!@9)
 )@@9	
+)@9`]
 @-@9 
 @9*%@-(	@
 -90.0f
@@ -969,7 +969,7 @@ $@)  "
 9i(x(?
 @9_`[kA
 @9_`@kA
-9	PE9JED
+9	PE9JMD
 @9_`RkA
 (@@9t
 (@@9t"
@@ -980,7 +980,6 @@ $@)  "
 (@@9u"
 @9)uG
 @9wiu
-)@9`Y
 9@z(~`
 .A@)/!
 'A)	}	
@@ -1053,7 +1052,10 @@ ai_model_info
 AIWalkable
 A[k+"
 )aL9)
+	AL9*
+	AL96
 )aL9j
+	AL9J
 +aL9k
 aL9kU
 Allocated Particles
@@ -1204,8 +1206,7 @@ Avg. Render (us)
 avg_sim
 Avg. Sim (us)
 ?AVki#
-	Ax9)
-	ay9	
+	Ay9	
 B-#@!
 B-1HD-
 *-B),5C)_
@@ -2057,8 +2058,8 @@ cylinder top control point
 D-@ !
 *-D),5E)_
 =d6W9
-=d6W9	$
-=d6W9R$
+=d6W9^+
+=d6W99,
 D- 8 
 D9  "
 D9!	)
@@ -2274,7 +2275,6 @@ EditorDynamicConfig
 .eh_frame
 .eh_frame_hdr
 eikonal
-@=@eK
 Elapsed time = %f
 <elt type not set>
 emission count scale control point
@@ -2735,7 +2735,6 @@ ignore radius
 )ih8({h
 ih8Hyh
 |ih8Hyh
-(ih8i
 *(ih8I
 (ih8)ij8
 .ih8/ik8)il8
@@ -2745,12 +2744,12 @@ ih8Hyh
 -ih8Wyh
 \ih8(yh
 ih8,yl
-II=)1C
 ii8Iyi
 ii8Jyk
 ii8nyi
 ii8tyi
 ii8Vyi
+II=)AC
 iih8 8 
 *Iii8
 iii8c
@@ -2811,7 +2810,6 @@ il8/yl
 i*?)m
 im8iym
 im8nyh
-,im8o
 im8pih8Syh
 im8Rih8
 =`im8[ym
@@ -2826,11 +2824,10 @@ IMPULSE_TYPE_PARTICLE_SYSTEM
 IMPULSE_TYPE_ROPE
 =)in8
 *in8!
-:in82
 in8aYj
 in8dyp
 in8Jyn
-:in8R
+:in8r
 in8{ym
 in8$yq
 include water
@@ -2978,6 +2975,8 @@ iy89yy
 @-J	,
 j0@98
 j2?)?
+J38Z>
+J78!>
 j`8'k`8
 "J9h"
 J9sJ<
@@ -3181,6 +3180,7 @@ lighttype
 light type
 LightType_t
 L-(ih8
+Lih8.
 Lih8Jik8-yh
 lih8kii8
 lih8(yh
@@ -4236,11 +4236,10 @@ mil8Lyl
 mim81
 Mim81yk
 mim8kin8Jyn
-Mim8n
+Mim8n 
 Mim8Qii8Rik8
-Min80
 min8Nyn
-Min8P
+Min8p
 min8pii8qil8
 min8Xyn
 min_angle
@@ -5706,7 +5705,7 @@ q0@9RU
 !^Q90
 QAngle
 ,QAy,
-,QAy*
+,QAy*#
 Qi"A)`
 q(ih8
 qih8*
@@ -6561,8 +6560,7 @@ Two KV3 format GUIDs with the same human-friendly name ('%s')
 )UAy?
 uii8Wyi
 uij8:yl
-Uik8-
-Uik8M
+Uik8m
 Ultra
 Unable to determine buffer encoding.
 Unable to find a valid model handle for m_bModelFromRenderer in '%s'
@@ -6720,8 +6718,7 @@ VGUI_Surface032
 VGUI_System010
 view model effect
 Vin8A
-Vir8.
-Vir8N
+Vir8n
 virtual void *CParticleTypeManager::GetErrorResource()
 V_IsAbsolutePath
 VisBuilder_001
@@ -6864,8 +6861,7 @@ warp scale control point number
 warp transition start time
 warp transition time (treats min/max as start/end sizes)
 Wil8[in8Jip8:yn
-Wim8/
-Wim8O
+Wim8o
 Within-Cluster Fire Count Before Cooldown
 Within-Cluster Refire Time
 WorkshopSetup001
@@ -6888,9 +6884,9 @@ written field
 X axis scaling scalar field
 X Dimension Count
 X Dimension Spacing
+xE=b%C
 xf@)*
-Xio81
-Xio8Q
+Xio8q
 *-@x_! k
 Xkh86yh
 X offset of center point
@@ -6907,6 +6903,7 @@ yaw offset min
 yaw random exponent
 yaw_start
 Y axis scaling scalar field
+#@-	YB
 Y Dimension Count
 Y Dimension Spacing
 @y+}E
@@ -6961,6 +6958,7 @@ _ZN13CBufferString13FixupPathNameEv
 _ZN13CBufferString5PurgeEi
 _ZN13CBufferString6FormatEPKcz
 _ZN13CBufferString6InsertEiPKcib
+_ZN13CBufferString7ReplaceEPKcS1_b
 _ZN13CBufferString8RemoveAtEii
 _ZN13CThreadRWLock11UnlockWriteEPKci
 _ZN13CThreadRWLock12LockForWriteEPKci

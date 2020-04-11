@@ -38,7 +38,9 @@ $0$1$2 $3 = $4
 06i6@
 06iB@
 06iJ@
+06iRA
 06j6@
+07hB@9
 07x"@
 "$0" does not declare $1 as an extension number.
 0ED- 
@@ -228,6 +230,7 @@ $0 to $1,
 17DAC_AbilityData_t
 17DACStreetfightDef
 17DAC_SynergyData_t
+17DungeonActionCard
 18446744073709551615
 18CDebugDrawQueueMgr
 18CGCMsgMemCachedGet
@@ -466,6 +469,7 @@ $0 to $1,
 25CMsgClientToServerChatMsg
 25CMsgCombatEvent_Resurrect
 25CMsgDuos_TeamCombatResult
+25CMsgGameModeState_Dungeon
 25CMsgGameModeState_Sandbox
 25CMsgGCCheckClanMembership
 25CMsgGCStorePurchaseCancel
@@ -703,11 +707,11 @@ $0 to $1,
 2?"!k`
 2?k78
 2?k88
-2_k88e
+2_k88D
 2k_EGCMsgInitiateTradeResponse_VAC_Banned_Initiator
 2k_ItemPurgatoryResponse_Finalize_Failed_Incomplete
 2ninx
-2	Q+9
+2	Q.9
 2Way_0( %s )
 2Way_1( %s )
 2x"@9
@@ -965,7 +969,6 @@ $0 to $1,
 4h&@9
 4hb@9
 4hB@9
-4hBA9
 4hf@9
 4hf@9(
 4hn@9
@@ -1151,6 +1154,7 @@ _6if@
 @6if@
 /6iF@
 '6iF@
+_6ifA
 6iFA9
 _6ij@
 /6ij@
@@ -1158,20 +1162,19 @@ _6ij@
 _6iJ@
 ?6iJ@
 /6iJ@
-_6ijA
+'6iJA
 6iJA9
 _6iN@
 ?6iN@
 /6iN@
 '6iN@
 @6iN@
-'6iNA
+/6iNA
 _6inA9
 ?6ir@
 (6ir@
 /6iR@
 @6iR@
-(6iRA
 6iRA9
  6iRA9
 @6iv@
@@ -1181,7 +1184,6 @@ _6inA9
 ?6iZ@
 /6iZ@
 @6iZ@
-?6iZA
 6iZA9
  6`j@
  6j*@
@@ -1253,13 +1255,11 @@ _6v:@
 7h	 7h
 7H	 7H
 7h"@9
-(7hB@9
 7hb@9h
 7hf@9
 7hf@9(
 7hF@9
 @7h	H7
-7hR@9
 7ib@9
 7iB@9
 7ib@9i
@@ -1297,9 +1297,9 @@ _6v:@
 	86iN@
 86iN@
 86iR@
-86iZA
 86u*@
 87H	@7
+87hN@9h
 87W	@7W
 %8.8s: %-5d entries, '%s', ...
 8CFmtStrNILi256ELb0EE
@@ -1308,7 +1308,6 @@ _6v:@
 8#GameUI_Disconnect_LocalProblem_HostedServerPrimaryRelay
 8h.@9
 8hB@9
-8hR@9
 8iB@9i
 @8j&A
 8k_ItemPurgatoryResponse_Refund_Failed_ItemNotInPurgatory
@@ -1395,7 +1394,6 @@ A9Kik
 "A9)uF
 A9)uF
 A-'@A-
-	aA9	
 AA9(	
 AA9(	@
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
@@ -1432,7 +1430,7 @@ ACT_IDLE
 action
 ... activated.
 Activate diffcheck system.
-Activating Definition Set (%s): bStaging = %s
+Activating Definition Set (%s): eDefinitionSet = %d
 active_challenge_slot_id
 active_jobs
 ActivePath
@@ -1446,6 +1444,7 @@ ACT_NEUTRAL_REF_POSE
     Actual    : 
   Actual   : 
 Actually show diffcheck results.
+	aD9	
 AddAllocatedMessage
 AddBool
 add_categories
@@ -1612,7 +1611,6 @@ APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 APPSYSTEM: In ReconnectGameInterface(), tried to use different connection modes!
  a protocol 
 A protocol message was rejected because it was too big (more than 
-	Ar9	
 archive
  args were given.  Full format string was: "
 armor
@@ -1655,6 +1653,7 @@ attribute_index
 attribute_name
 attributes_string
 attr_value
+	Au9	
 audit_action
 audit_data
 auto_deploy_units
@@ -1664,11 +1663,13 @@ autograph_item_id
 autograph_score
 auto_unragdoll_duration
 	available
+available_cards
 available_content
 AvailableUnits
 B-1HD-
 B@9(6
 ^B9h^
+B@9H3
 b@9ib
 bA9hb
 BA9iB
@@ -1841,6 +1842,7 @@ Can't get here: failed to get default value as string
 	can_trade
 can't reach here.
 Can't write binary data to a text buffer.
+card_id
 careAboutDupes
 castAnimation
 castPoint
@@ -2074,6 +2076,7 @@ CIPASNInfo
 .CIPASNInfo"?
 CIPLocationInfo
 .CIPLocationInfo"
+city_prestige_level
 claimed
 clamp_synergies_to_level
 clanid
@@ -2273,6 +2276,8 @@ CMsgGameModeSettings
 .CMsgGameModeSettings
 .CMsgGameModeSettings"
 CMsgGameModeState
+CMsgGameModeState_Dungeon
+.CMsgGameModeState_DungeonH
 CMsgGameModeState_Duos
 .CMsgGameModeState_DuosH
 .CMsgGameModeState_Normal
@@ -2828,6 +2833,7 @@ currency_name
 currency_price
 current
 Currently allocated agg data: {
+current_room_type
 current_value
 curr_items
 curvature
@@ -2917,7 +2923,6 @@ __cxa_pure_virtual
 cycle
 Cycle or diamond double-reference to '%s'
  D-	(@
-	!D9	
 DACAbilityID_t
 dac/dac_gamedefinitions.cpp
 dac/dac_gamemanager.cpp
@@ -2971,6 +2976,7 @@ default_value
 Default value for an enum field must be an identifier.
 <deferred>
 	def_index
+definition_set
  ( def. "%s" )
 DegreeEuler
 delete
@@ -3008,6 +3014,7 @@ details_cast_ability
 details_combat_ended
 details_damage
 details_death
+details_dungeon
 details_duos
 details_modifier_create
 details_modifier_destroy
@@ -3071,6 +3078,9 @@ duel_ban_expiration
 duel_bonus_damage
 duel__class_lock
 .dummy
+DungeonActionCard
+.DungeonActionCard"
+dungeon_phase
 duos_combine
 duos_rank_update
 duration
@@ -3104,6 +3114,10 @@ EDACAIType
 EDACBotDifficulty
 .EDACBotDifficulty
 EDACDisconnectReason
+EDACDungeonPhase
+.EDACDungeonPhase
+EDACDungeonRoomType
+.EDACDungeonRoomType
 EDACGameMessages
 .EDACGameMessages
 EDACGameMode
@@ -3285,6 +3299,7 @@ $EPlayerOrder_DevSetAutosavingEnabled
 EPlayerOrder_DevSetPlayerLevel
 EPlayerOrder_DevSetUnitRank
 EPlayerOrder_DevTalent
+!EPlayerOrder_Dungeon_AdvancePhase
 EPlayerOrder_GoToTutorialState
 #EPlayerOrder_ItemRewardChoiceReroll
 EPlayerOrder_LockShop
@@ -3761,6 +3776,7 @@ g6hRB9
 G6hrB9
 G6hv@
 G6hV@
+G6hZA
 g6i^@
 g6i>@
 G6i>@
@@ -3768,18 +3784,18 @@ G6i"@
 G6i*@
 G6i&@
 g6i2@
-G6i^A
 g6iB@
 g6ij@
+g6ijA
 g6in@
 g6iN@
-g6inA
 g6iR@
 G6iZ@
 g6	L@
 G6`N@
 g6v>@
 G6v.@
+	!G9	
 game_class
 GAMECONSOLE
 game_constants
@@ -4054,6 +4070,7 @@ h&@)*
 #H)	}	
 h6hB@
 h6hV@
+H6hv@
 H6hV@
 H6hz@
 H6iB@
@@ -4129,6 +4146,7 @@ hf@9h
 hf@9H
 hF@9h
 hf@9i
+hfA9H
 hidden
 hidden_only
 hideHealthBar
@@ -4140,7 +4158,7 @@ hintWords
 	histogram
 HistogramBucket
 histogram_buckets
-hj58pi
+hj58~i
 	hold_time
 host_computationtime
 "host_computationtime_std_deviation
@@ -4151,7 +4169,6 @@ host_frametime_std_deviation
 hostname
 HostStateMgr001
 HostUtils001
-hr|9H
 HSCRIPT
 hurt_me
 hurt_them
@@ -4168,8 +4185,8 @@ I)!|@
 *	i88
 i)8i&
 *i.8in@9jj
-i;8Is
 ?i(8?i*x?i+
+i;8[s
 i"@9J
 IA@9	
 ib@9`
@@ -4468,10 +4485,10 @@ iw8B/
 i>@yh
 IyixJylx+
 j2?)?
-j38Ef
 j48	C
 j48t^@
 j4xH;@
+j58fv
 j58hf@9(
 J!@9#
 j@9ij
@@ -4515,10 +4532,12 @@ JYix*$
 	*jz-
 *k2@y
 ?k58D
-*?k78\
+*?k787
+k78ev
 ?k78h
+k78jx
 k78o_
-k<8Ih
+_k88c
 k(8vV@
 Ka@9+
 Ka@9k
@@ -4610,6 +4629,22 @@ $k_EDACDisconnectReason_OldConnection
 !k_EDACDisconnectReason_UserCancel
 %k_EDACDisconnectReason_UserLeaveMatch
 "k_EDACDisconnectReason_UserQuitApp
+k_EDACDungeonPhase_Defeat
+*k_EDACDungeonPhase_Intro_ChoosingFirstUnit
+*k_EDACDungeonPhase_Intro_ChoosingUnderlord
+k_EDACDungeonPhase_None
+k_EDACDungeonPhase_Room_Main
++k_EDACDungeonPhase_Room_Post_ChooseNextRoom
+$k_EDACDungeonPhase_Room_Post_Rewards
+k_EDACDungeonPhase_Room_Setup
+k_EDACDungeonPhase_Victory
+k_EDACDungeonRoomType_Boss
+k_EDACDungeonRoomType_MiniBoss
+k_EDACDungeonRoomType_MiniGame
+k_EDACDungeonRoomType_Mystery
+k_EDACDungeonRoomType_None
+k_EDACDungeonRoomType_Shop
+$k_EDACDungeonRoomType_StandardCombat
 k_EDACGameMode_Duos
 k_EDACGameMode_Invalid
 k_EDACGameMode_Normal
@@ -5141,7 +5176,7 @@ KV3 load transfer failed: %s
 KV Conditional Evaluation Error
 k	@y)
 Kykx)
--@)L"
+-@)l"
 L	A9mC
 label
 Label
@@ -5588,7 +5623,7 @@ Missing field: FileDescriptorProto.name.
 Missing file '%s'
 Missing name.
 Missing required field 'level's in Synergy '%s'
-Missing required 'set_normal' in compiled '%s'
+Missing required '%s' in compiled '%s'
 )MJJ }
 m_JointConstraintData
 m_JointConstraintPairs
@@ -6026,6 +6061,7 @@ new_slot
 nexonid
 !next_combat_opponent_neutral_wave
 next_level_xp
+next_room_types
 nf@9/
 No Buffer
 No default value
@@ -6095,6 +6131,7 @@ O6hBA9
 O6hFB9	
 o6hr@
 o6hRA9
+O6hv@
 O6hvB9
 o6hVB9	1
 O6hvB9	4
@@ -6106,16 +6143,16 @@ O6i*@
 O6i2@
 o6i6@
 O6i6@
+O6i^A
 o6ib@
 O6ib@
 O6iB@
-O6ibA
 o6iF@
 O6ifA9
 O6iJ@
+o6inA
 o6ir@
 O6iR@
-o6irA
 O6irA9
 O6iV@
 O6iz@
@@ -6193,11 +6230,11 @@ owner_account_id
 owner_entindex
 owner_id
 owner_soid
+owns_event
 ($?)P
 P6h^@
 p6hF@
 P6hN@
-p6hvA
 P6hzB9	6
 P6i6@
 p6iv@
@@ -6392,6 +6429,7 @@ predicted_total
 PredictionDiffManager001
 preferred_carryangles
 prepared_statements_executed
+prestige_level
 PreviewAttachmentModel
 PreviewBoneAttachedModel
 PreviewBoneMergedModel
@@ -6610,7 +6648,7 @@ right
 rights_flags
 Rigid; 
 rJMJJ
-R?k78
+R?k78p
 Rmij8
 rnd_down
 rnd_up
@@ -6637,7 +6675,7 @@ rt_birth_date
 rt_identity_linked
 rtime_oldest_date
 rtime_vacban_starts
-rtr<9
+rtr?9
 rule_description
 rules
 	rule_type
@@ -6752,6 +6790,8 @@ service_id
 service_list
 ServiceOptions
 SetAllocatedMessage
+set_balance
+set_base
 SetBool
 set_control_point_model
 SetControlPointModel
@@ -6766,7 +6806,6 @@ set_for_output
 set_frozen
 SetInt32
 SetInt64
-set_normal
 set_particle_fow_properties
 SetParticleFoWProperties
 set_particle_should_check_fow
@@ -6926,7 +6965,6 @@ ss_added
 %s: string format requested %d chars
 __stack_chk_fail
 Stack depth limit hit (%d)
-staging
 start
 start_effect
 starting_charges
@@ -7135,8 +7173,9 @@ This shouldn't be called if all the sizes are equal.
 ), this value label conflicts with 
 . This will make the proto fail to compile for some languages, such as C#.
 This ZeroCopyOutputStream doesn't support aliasing. Reaching here usually means a ZeroCopyOutputStream implementation bug.
-ThJ@9(
 Thn@9
+ThN@9(
+ThR@9
 ThreadGetCurrentId
 threads
 threads_active
@@ -7316,6 +7355,7 @@ Unable to read resource file %s!
 Unable to write file '%s'
 unclaimed_reward_count
 <unconnected>
+underlord
 	underlord
 underlord_available_talents
 underlord_build_id
@@ -7638,7 +7678,6 @@ W6hF@
 W6hFA9
 W6hJB9	4
 w6hv@
-w6hvA
 w6hVA9
 W6hzB9
 w6hZB9	2
@@ -7646,12 +7685,13 @@ W6i~@
 W6i6@
 w6i"A9
 W6ib@
+W6ibA
 w6if@
 W6if@
 W6iF@
-W6ifA
 W6ijA9
 w6ir@
+w6irA
 w6iv@
 W6ivA9
 W6iZ@
@@ -7719,6 +7759,7 @@ X6h~B9
 x6hJ@
 x6hZ@
 X6i:@
+x6ivA
 x6iz@
 x6iZ@
 x6`J@
@@ -7746,6 +7787,7 @@ yielding_jobs
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 @y(Q*
 Y`x($
+y[(xx	
 _Z13V_SplitStringPKcS0_R10CUtlVectorIPc10CUtlMemoryIS2_iEE
 _Z14V_stristr_fastPKcS0_
 _Z17LoggingSystem_Logi17LoggingSeverity_tRK14LeafCodeInfo_tPKcz
@@ -7766,6 +7808,7 @@ _ZN13CBufferString13FixupPathNameEv
 _ZN13CBufferString5PurgeEi
 _ZN13CBufferString6FormatEPKcz
 _ZN13CBufferString6InsertEiPKcib
+_ZN13CBufferString7ReplaceEPKcS1_b
 _ZN13CBufferString8RemoveAtEii
 _ZN16CThreadSemaphoreD1Ev
 _ZN17CThreadSyncObjectD2Ev

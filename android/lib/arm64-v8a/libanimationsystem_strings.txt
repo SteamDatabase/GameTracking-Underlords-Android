@@ -5,7 +5,6 @@
 !~ 	 
 !~!	!
 !@-		@
-!@)@}
 '":|;
 (/@))
 (%@-*	@
@@ -562,7 +561,6 @@ $@)  "
 28CMoveHeadingConditionUpdater
 28IAnimMovementManagerInstance
 28ISchemaCollectionManipulator
-2	!99s
 29CAnimationGraphVisualizerAxis
 29CAnimationGraphVisualizerLine
 29CAnimationGraphVisualizerText
@@ -575,15 +573,16 @@ $@)  "
 29CSolveIKChainAnimNodeInstance
 29CStateMachineAnimNodeInstance
 29CTimeRemainingMetricEvaluator
-2	!:9D
+2	!<9D
 29IAnimationGraphVisualizerInfo
 29IFutureVelocityMetricInstance
 29ISolveIKChainAnimNodeInstance
+2	!;9s
 2B-!	
 2_BONE_IK
 2dtri
 %.2f degrees, %.2f ratio
-2Hs!9
+2Hs#9
 2h>@y
 	2	i*
 2	i38
@@ -683,7 +682,7 @@ $@)  "
 6i"@ij
 @6W!?
 6x"@9
-6Ysa9
+6Ysc9
 7hb@9h
 7hf@9
 7hf@9(
@@ -707,7 +706,6 @@ $@)  "
 8;@y(#@
 `"@9	
 )!@9)
-{9_!	
 @=#9 
 @-!9 
 *@9	)
@@ -774,7 +772,6 @@ a	@- 8
 A-!9 
 A9`&@
 a^@9b*
-	A^9j
 A@9)y
 A-'@A-
 ?AAk	"
@@ -913,9 +910,9 @@ Aim Matrix sequence %s has %i frames, needs %i
 ai_model_info
 AIWalkable
 	!A)j
-	aj9	
 ,%A)k
 A[k+"
+	al9	
 AllocateAndLoad failed for '%s'
 AllocateAndLoad failed for '%s' (%s)
 allowstatic
@@ -1957,6 +1954,7 @@ cycletoweightbias
 =$	D-#)@
  D-	(@
 D-"/@
+d6@yc
 d6@yC
 d@9hf
 %d.Add( %s, %d, %.2f )
@@ -2129,6 +2127,7 @@ event_class
 eventindex
 event_keys
 EventSystem001
+eVXtw
 Exclusive Root Motion
 Execute a script (internal)
 ExitNode
@@ -2208,7 +2207,7 @@ fetchcycle
 fetched: %s : %.3f
 fetchframe
 fetchframerange
->fff?@3
+>fff?
 %f %f %f %f
 ffffff
 FIELD_BOOLEAN
@@ -2533,7 +2532,6 @@ hf@9i
 hfB9	
 hFD9u
 hfGy`
-hfGy	
 h"G9(
 h"G9h
 h*@i)
@@ -2560,7 +2558,6 @@ Hit React node requires its %s parameter %s to NOT be interpolated
 Hit Strength
 Hit Strength Parameter
 h&@-j
-hj58v
 hj@9yF@
 h&@-j.A-
 !H*JAJ*
@@ -2574,8 +2571,8 @@ HostStateMgr001
 HParticleSystemDefinition
 HPostProcessing
 hrAy`Z
-hre9H
 HRenderTexture
+hrg9H
 HsAy@[
 hscript
 HSCRIPT CModelVScriptCompile::CreateSequence(HSCRIPT)
@@ -2589,7 +2586,6 @@ HSequence
 hurt_me
 hurt_them
 [hxVYyxk
-h&@y	
 h&Y)9
 h&@y))D
 h"@yi
@@ -3119,7 +3115,6 @@ lS@ymW@y
 LYkxk
 M)@)-)
 M- 8 
-	!m9	
 (MA8H
 m_aAngOffset
 m_activeSegments
@@ -3399,7 +3394,6 @@ m_bUserSpecifiedMaterialGroup
 m_bUseShadowFastPath
 m_bVisible
 m_bXFade
-@Mc4	
 M*cD9	
 m_chain
 m_ChainData
@@ -4802,6 +4796,7 @@ N37CTypesafeIntrospectedToKV3TypeManagerILy482955714934E15CAnimationGroupE28IKV3
 N- 8 
 $NA*#
 "Na8!
+!NA	L
 nav_attribute_avoid
 nav_data
  NB(&
@@ -4898,6 +4893,7 @@ nwaysequence
 #n,]@yB
 O- 8 
 O-!8 
+	!o9	
 Object
      o Bone Weights :: %d non-zero weights
      o Channel :: %3d Pattern :: %3d Count :: %d
@@ -5271,7 +5267,7 @@ Root to newly tilted bone
 Root to tilt bone original
 rotate
 rotWeight
-rtr%9
+rtr'9
 runspeed
 "%s" 
 (*%s*), 
@@ -5568,6 +5564,7 @@ Spring
 springConstant
 Spring Constant
 %s| Project: '%s' Binary: '%s'
+S_q:%
 sqrtf
 sqrt( %s )
 "%s" = "%s"
@@ -6307,6 +6304,7 @@ X;@yY#@
 ,]@y!
 ,	@y)
 !;@y(#@
+!	@y`
 @y`*@
 @y`&@
 	$@y(
@@ -6361,6 +6359,7 @@ _ZN13CBufferString5PurgeEi
 _ZN13CBufferString6FormatEPKcz
 _ZN13CBufferString6InsertEiPKcib
 _ZN13CBufferString6SetPtrEPciibb
+_ZN13CBufferString7ReplaceEPKcS1_b
 _ZN13CBufferString8RemoveAtEii
 _ZN16CThreadSemaphoreD1Ev
 _ZN17CThreadSyncObjectD2Ev

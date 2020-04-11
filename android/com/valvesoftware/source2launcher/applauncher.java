@@ -3,6 +3,7 @@ package com.valvesoftware.source2launcher;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
+import android.app.KeyguardManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
@@ -57,6 +58,17 @@ public class applauncher extends Activity {
                 Log.i("com.valvesoftware.applauncher", "Not task root, finish the activity.");
                 finish();
             }
+        }
+        try {
+            boolean[] GetBoolean = Resources.GetBoolean("RETAIL");
+            if (GetBoolean == null || !GetBoolean[0]) {
+                KeyguardManager keyguardManager = (KeyguardManager) getSystemService("keyguard");
+                if (keyguardManager != null) {
+                    super.setTurnScreenOn(true);
+                    keyguardManager.requestDismissKeyguard(this, null);
+                }
+            }
+        } catch (Throwable unused) {
         }
         super.onCreate(bundle);
         s_context = this;
