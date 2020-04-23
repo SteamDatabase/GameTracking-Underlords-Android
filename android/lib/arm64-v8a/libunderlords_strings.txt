@@ -35,6 +35,7 @@ g_JNI
 .got.plt
 .hash
 .init_array
+Intentionally vague touch behavior for %p
 Java_com_valvesoftware_InAppPurchases_UpdateIAPConsumedStatus
 Java_com_valvesoftware_InAppPurchases_UpdateIAPPricing
 Java_com_valvesoftware_InAppPurchases_UpdateIAPPurchaseStatus
@@ -58,8 +59,12 @@ libtier0.so
 libunderlords.so
 libunderlords.so.dbg
 libvstdlib.so
+LOG_GENERAL
+LoggingSystem_IsChannelEnabled
 memcpy
 .note.gnu.build-id
+Ordered constructor wrapped type has no default constructor.
+Plat_DebugPrint
 Plat_EnterHibernation
 Plat_ExitHibernation
 Plat_ExitProcess
@@ -72,12 +77,15 @@ Plat_IAPUpdatePurchaseStatus
 Plat_QueueSteamLoginWithAccessCode
 Plat_SetGlobalSafeAreaInsets
 Plat_SetModuleFilename
+Plat_ShouldCollectMiniDumpsForFatalErrors
+../public/ordered_constructor.h
 ../public/tier0/globallist.h
 .rela.dyn
 .rela.plt
 Release
 .rodata
 %s/bin/androidarm64
+sched_yield
 SDL_AndroidGetActivity
 SDL_main
 .shstrtab
@@ -90,7 +98,10 @@ ThreadGetCurrentId
 tier0
 UpdateIAPConsumedStatus
 V_atoui64
+void COrderedConstructor_Create<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, CResolveOrderedFunc<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, &_ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC>, false>::AddRef(bool) [T = COrderedInitShutdownRefWrapper<&EarlyInit_Common>, RESOLVECLASS = CResolveOrderedFunc<COrderedInitShutdownRefWrapper<&EarlyInit_Common>, &_ORDERED_INIT_SHUTDOWN_WRAPPER_RESOLVEFUNC>, bCONSTRUCT_ON_FIRST_USE = false]
 V_snprintf
+	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
+_Z17LoggingSystem_Logi17LoggingSeverity_tRK14LeafCodeInfo_tPKcz
 _ZdlPv
 _ZN12JNIGlobals_t6GetEnvEv
 _ZN16CThreadSemaphoreD1Ev

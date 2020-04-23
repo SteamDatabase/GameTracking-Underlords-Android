@@ -42,14 +42,14 @@
 !&@=!
 !	@-)	@
 !	@-#	@
-!	@)`%
-!	@)~?
+!	@)`
+!	@)~+
 !	@)>
 !	@) 
 !	@);
 !	@):
 !	@)(
-!	@)%'
+!	@)%
 ?)>>!;/
 ?}@=	
 '":|;
@@ -59,7 +59,7 @@
 ()@))	@
 ($@)`
 (%@-*	@
-(%@)`
+(%@)`!
 )(%@)
 )) 	)
 [ ! ]
@@ -195,6 +195,7 @@ $0$1$2 $3 = $4
 07H	87	
 07hB@9
 07hj@
+	07(R
 07x"@
 0.849 0.649 0.676
 0.849 0.849 0.976
@@ -213,6 +214,7 @@ $0$1$2 $3 = $4
 /0@9n9
 0@9	p@
 +0A).<@)0
+0A9K3
 0~B(!
 (0B9+
 @0bDG
@@ -278,6 +280,7 @@ $0 to $1,
 105.0
 %10.5f %10.5f %10.5f
 106 201 144
+	109I
 10C_BaseDoor
 10C_BaseFlex
 10CEntityMsg
@@ -1285,7 +1288,7 @@ $0 to $1,
 1960/00/00
 	1)9_A)9
 	1+9_A+9lm
-1|9aC
+1|9AC
 !)19BJRZcks{
 19CAmmoDefInitializer
 19CAttributeContainer
@@ -1463,6 +1466,8 @@ $0 to $1,
 	1T9I
 1 to output cl_showanimstate to Msg(). 2 to store in AnimStateClient.log. 3 for both.
 )1Ty	
+1U9AA
+1U9BA
 )1Uy	
 1w?WA
 )1Wy	
@@ -1478,7 +1483,7 @@ $0 to $1,
 !2@=!
 ?2: 	
 +2: 	
-	2! "
+	2!, 
 	2@( 
 	2*	@
 	2	(@)
@@ -1649,10 +1654,10 @@ $0 to $1,
 20TEImpact_GameEvent_t
 20TESparks_GameEvent_t
 20TransitioningLayer_t
-2+149
-2+159	
-2+1<9
-2+1:9
+2+149I
+2+159
+2+1<9)
+2+1:9i
 21CAnimGraphTraceFilter
 21C_BaseCombatCharacter
 21C_BaseExplosionEffect
@@ -2994,7 +2999,7 @@ $0 to $1,
 2ij(8
 2ij(8\
 2+imx
-2iv)9
+2iv)9	.
 2	ix8?)
 2(i+xi
 	2J!)
@@ -3034,15 +3039,16 @@ $0 to $1,
 }2'@+P
 2 .ProtoFlattenedSerializerField_t"!
 // 2 px horizontal radii 4px vertical elliptical corners on all sides
-2+Q29
-2+q-9
-2+q	9)
-2+Q=9
-2+Q,9
-2+Q/9
-2	Q99
-2+q&9i
+2+Q29I
+2+q&9
+2+q	9
+2	Q99HK
+2+q-9I
+2+Q/9i
+2+Q=9I
+2+Q,9I
 	2R*3
+2r59R
 2) Red  : %i
 2RF-5:@
 2: Same as 1, with but x and y sensitivity are scaled by m_pitch and m_yaw respectively.
@@ -3053,7 +3059,7 @@ $0 to $1,
 2Way_1( %s )
 2*%@x
 2x"@9
-2	xIW
+2	xIf
 2xr%9
 	2	y	
 2@y?=
@@ -3699,8 +3705,8 @@ $0 to $1,
 (3@9h/
 3@9(i:8
 3@9	i;8
-3@9In
 3A9h+
+3Am 7
 3.CHelpRequestLogs_UploadUserApplicationLog_Response"#
 3.CPlayer_GetMutualFriendsForIncomingInvites_Request
 3CPlayer_GetMutualFriendsForIncomingInvites_Response
@@ -3729,8 +3735,8 @@ $0 to $1,
 =3PF-5XG-
 3SB-H
 3X@-7
+3Y-ht
 3@y)IDy
-3@y!J
 3@yMMA
 40 40 40 196
 4(0@9
@@ -3825,7 +3831,6 @@ $0 to $1,
 43CSchemaAttributeType_DynamicRecipeComponent
 43IGameResourceManifestLoadCompletionCallback
 %43s%12d%12d%12s%12s
-	*!44
 440.0
 4(4@9
 44CGameItemDefinition_EconItemInterfaceWrapper
@@ -3849,6 +3854,7 @@ $0 to $1,
 %44s %12lld %12lld %12lld %12lld %8lld %8lld %8lld %8lld %8lld %8lld %8lld %8lld %8lld %8lld
 %44s  --- completed jobs (usec)----------------------------------  ------ lock counts----------------------------------  ------ failures -----------
 %44s        count   averuntime   maxruntime  aveduration #yielded  attempted waited   failed longheld longwait wait-t/o  t/o-msg jobfailed longslice
+	*!45
 ?456789:;<=
 456789:;<=
 45CDefaultResponseSystemSaveRestoreBlockHandler
@@ -3968,8 +3974,8 @@ $4DTdt
 4hRL9
 4hRU9H
 4hrX9
-4hr@y
-4hR@y
+4hr@y@<
+4hR@y@<
 4hvF9
 4hvF9(C
 4hvi9h
@@ -4116,8 +4122,8 @@ $4DTdt
 5hRA9
 5i*C))
 5iFO9
+5i"J)
 )5IJ(}
-5i"J)5d
 5ISave
 5i.@y
 5`>J9
@@ -4187,7 +4193,6 @@ _6	8@
 ?6	8@
 6(#@9
 6 @9h
-6&9hY
 	6	9J
 6	@A9
 /6`B@
@@ -4397,9 +4402,9 @@ _6iJ@
 ?6iJ@
 /6iJ@
 @6iJ@
-6i"J)
 '6iJA
 6iJA9
+6i"J)ud
 ?.@6$Ik
 _6iN@
 ?6iN@
@@ -4640,7 +4645,6 @@ _6v:@
  7x"@
 (7x:@
 @7x"@
-& 7XI
 ?7`%Yf
 7Ze&<o
 7`ZKV?e
@@ -4746,8 +4750,8 @@ _8cnA
 (8hn@
 8hR@9
 (8HXhx
-@8i/@888
 @8i/@8J
+@8i/@8x8
 8iB@9i
 8If set, remove from ignore/block list instead of adding "\
 8If true, return tag information in the returned details.
@@ -4780,10 +4784,10 @@ _8|{t
 8x9,7
 8@y ( 
 `"@9	
->@9 %
 |@9		
 |&@9{#
  @9( 
+ @9),
  @9	,
 ,@9(,
 ?9% &
@@ -4799,6 +4803,8 @@ _8|{t
 )@@9	
 )	@9*
 @- 9(
+@@9?{
+@@9)}
 @9)=@
 @9)!@
 @9)&@
@@ -4824,18 +4830,17 @@ _8|{t
 	@91~
 9+1@))	@
 9.1.15
-#	929
+#	92E
 92ji8R
 @92yr
 9(4@9
 95*P>
-@@96B
 	@9*6B9
 @9(	(7
 >@9!8"
+*-98a
 @9*-@8K
 98N*>
-*-98q
  @9) @9
 ,@9),@9
 "9	!#9
@@ -4846,7 +4851,6 @@ _8|{t
 @9,	@9
 @9*	@9-
 @9%	@9&
-@9%	@9	=
 @9+	@9
 @9+	@9,
 %@9	)@9
@@ -4857,6 +4861,7 @@ _8|{t
 . @9/$@90(@918@9.}
 99_!99
 9(,@9H
+@9%	@9i=
 9	!@9i
 9	%@9i
 )@9()@9I)B)
@@ -4866,16 +4871,16 @@ _8|{t
 @99X@)8 @9
 "@9	A
 (@@9	A
+"@9a5
 @9)a|9
 @9)A}9
 9	\A9(\A9?
 @9)Aa9
 @9_aAkA
-&9	Ab9
+&9	Ab9K
 ?9A@c
 @9)aC9*
 @9)AD9*
-#@9aF
 9*aH9
 9AIJI
 @9)am9
@@ -4984,12 +4989,13 @@ _8|{t
  @9e:B
 @@9E<H
 9ELanguage
-@@9Ev
 9EventID_t
+@@9Ez
 	- 9F
 @9f	@9
 9`FE9
 @9F\Ey(
+ @9)g
 @9G.@
 9GAME_PARTICLE_MANAGER_EVENT_SET_SCENE_OBJECT_GENERIC_FLAG
 9gCN>
@@ -5076,7 +5082,7 @@ _8|{t
 )@@9i
 @9i&@
 $9i"	
-@@9I?
+@@9I}
 @9I	@
 	%@9I
 @9	i48
@@ -5094,7 +5100,6 @@ $9i"
 9i*B)	
 9i*C)	
 9IClientUI
- @9Ie
 9IEconTool
 9if@9
 9iF@9
@@ -5116,11 +5121,11 @@ $9i"
 @9iR!
 9ir@9
 9IRegistry
+@@9IS
 9ISequence
 9ITempEnts
 9i"V)
 9i"V)c(%
-@@9Iy
 )9IYiy
 9i:@y	Q
 @9iz@
@@ -5128,24 +5133,23 @@ $9i"
 9iz@9	]
 @9j&@
 )!@9J
-@9J)*
 *	@9J
 @9j6@
 @9j6B9?
 9j*@9(
 @9J#@9*
 @9J9	
-	!@9jC
-	!@9JC
-	!@9Je
 @9jF@
 @9jij8
 @9jij8*G!7)
 @9jij8JE!6)
 @9jJ@
 @9jjh8*
+	!@9JM
 @9JU	
+	!@9jY
 @9jz@
+	!@9jZ
 @9k!@
 @9k&@
 		@9k
@@ -5179,12 +5183,12 @@ $9i"
 @9Mim8
 .@9n.@9k
 )9}[p=
+@@9p{
 @9)!p9
 @9)!p9j
 9	PA9(PA9?
 9@PEy
 9@PEy 
-@@9pw
 9Px? FcH
 9)P@y	q
 9Q"@)
@@ -5227,8 +5231,6 @@ $9i"
 9tR@y
 _@9)u
 .@9u&
-@@9}u
- @9)U
 (@@9	U
 @9	U@
 @9U|@
@@ -5236,24 +5238,23 @@ _@9)u
 (@@9uB
 9*uB9
 @9uz@
-@@9#v
 "@9vJ@
-@@9?w
+@@9W|
 @9wiu
-@@9Wu
-@@9Wx
+@@9Wy
+ @9	x
 @9x*@9{"@9!<
 9	XA9(XA9?
- @9	y
 ?9.>`y
-@@9)y
+@@9}y
 9		@y
 9		@y	
 )9yb	
+*-9Yb
 )9@yJ
-*-9Yr
 @9|*@y	y
 )9Yy	
+@@9#z
 @9 	@z
 9@z(~`
 9Zg,>4
@@ -5263,7 +5264,6 @@ _@9)u
 !^A(!
 'A)	}	
 @-'A@-
-	!@)A
 A-` "
 A-   
 A-!(!
@@ -5289,7 +5289,7 @@ _A<9
 (A@9(
 )`A9	
 *	A@9
-*A+9^
+*A+9^#
 \A9	)@)	(
 +A@9@
 		A9?
@@ -5315,10 +5315,10 @@ A9d:@
 &A9h&
 		A9h
 A9h&@
-#A9)H
 	A9h&A
 "A9hC
 (A@9hC
+A%9Hj
 ^A9i^
 "A9i"
 *	A9i
@@ -5334,7 +5334,6 @@ A9	ii
 A9i*X)k
 	 A9J
 A9|J@
-#A9J3
 	A9j"A
 A9j.D
 A@9k}@
@@ -5355,9 +5354,9 @@ AABB_t
 $	A)Ar
 )aAy	
 A-B8!
+	Ab9*
 	Ab9	
 Ab9)A
-	Ab9k
 	Ab9K
 	Ab9ME
 abcdefghijklmnopqrrqponmlkjihgfedcba
@@ -5417,6 +5416,7 @@ absorigin_follow
 abs( %s )
 AbsTagType(unknown)
 A burning player that gibs has burning gibs.
+)ABy*=
 )ABy	
 aB@ya
 aB@yw
@@ -7333,12 +7333,9 @@ always_send_to_server
 always_send_to_servers
 always tradable
 )ALy	
-#Am (
-+Am (
+#Am",
 A-	%M
 #Am@A!
-;AmaJ
-#Amb<
 ambientcolor1
 ambientcolor2
 ambientcolor3
@@ -7349,7 +7346,6 @@ ambientscale1
 ambientscale2
 ambient_shadow_amount
 Ambient %s:Unknown command %s
-#AmbP
 ammo2
 AmmoDefInitializer
 ammo_id
@@ -7522,7 +7518,6 @@ AnyFriendsPlaying
 	Ao9_=
 	Ao9_)
 	Ao9_	
-	Ao9;
 	Ao9*
 	Ao9	
 	Ao9_A
@@ -7533,6 +7528,9 @@ AnyFriendsPlaying
 	Ao9_q
 	Ao9_Q
 	Ao9_Q	
+	Ao9S
+	Ao9t
+	Ao9T
 	Ao9_U
 a	O-c
 A	O-C
@@ -7625,7 +7623,7 @@ armory_remap
 array_index
 arrowOffset
 arroworigin
-arU9%*
+arU9%
 )aRy	
 )ARy	
 	As9	
@@ -7882,6 +7880,7 @@ AwayTeamName
 a world layer in a dota map
 `awpf*
 )AWy	
+)aWy!H
 *-Ax_
 	-Ax?
 Ax_!4k
@@ -7909,7 +7908,6 @@ Ayhz@
 )	AyJ
 )A@yJ
 AyJ) 
-)a@yjn
 )a@yJ!@y
 )AYy	
 ?A@YY$
@@ -7934,6 +7932,7 @@ aZure : voiced postalveolar fricative
 B-   
 B-@ !
 B-1HD-
+b1@y!5
 @-b2@
 B33s?
 *-B),5C)_
@@ -7950,22 +7949,25 @@ B@9(6
 B@9	a
 B@9a'
 B@9A1
+B@9aF
+B@9)B
 ?B\9{g
 B\9{gt
 ^B9h^
 "B9h"
+B!9H/
 B@9H3
 b@9hb
 B@9hB
 B@9hB\9)
 B@9hC
 b"@9i
-B@9I?
 B9I	87
 b@9ib
 b@9ib@9
 )!b9J
 b@9JMA
+B@9y]
 B-'A@-1	@
 b>A9!
 b:A9A
@@ -8131,7 +8133,8 @@ BattleStatsSection
 bAyhb
 %B-@	B-
 B-B8#
-BB9bg
+bB9AD
+BB9bc
 bB9hb
 BB9hB
 BB9hj:8
@@ -8150,6 +8153,7 @@ B channel not found!
 BCheckLaunchParameters - redundant, ignoring
 %b %d
 B-D@@
+BD9Ht
 BDACPuzzleVictoryReturnToCrawl
 bDh%)
 BeamClipStyle_t
@@ -8196,7 +8200,6 @@ BetaUniverse
 bevel
 b.EycZA
 Bezier
-bfB9AI
 bFired
 ?B&:G
 B-gBC-
@@ -8251,10 +8254,8 @@ Bit Set
 bitsToTest
 ?{^;b>j
 b"J9_@
-&B)JL
 #bJ$Q
 ?'bj{V
-&B)*K
 	)B)K
 ?)bl|
 	-B)l
@@ -8531,7 +8532,6 @@ BRUSHSOLID_NEVER
 BRUSHSOLID_TOGGLE
 brute_debuff
 bR@yw>@
-bsB9AA
 bspline
 B-Spline
 BSR_ANYCRLF)
@@ -8672,14 +8672,15 @@ C-2-@
 C- 8 
 C-!8"
 ,c@9-
-c@9!(
 C@9("
 C9)|@
-!C92&	
+!C92.	
+c@9*5
+C@9*5
 "C9A'
+"C9AF
 C9an@
 C9bU@
-C@9!C
 (C@9h
 <(C@9H#
 C9,h5
@@ -8690,7 +8691,7 @@ C@9HC
 C9hJ-9
 C9jfD
 )!C9l
-!C9z)	
+!C9z1	
 C-A(!
 C-A	.
 (CA9(
@@ -8698,7 +8699,6 @@ CA9`:
 cA9h 
 cA9h"
 cA9h5
-CA9J3
 cA9s~
 cable
 cables_list
@@ -10718,7 +10718,6 @@ cl_voiceenabled
 cl_vprof_scope_entity_gamephys
 CL:  WARNING! User command buffer overflow (%i->%i), last cmd was %i bits long
 cl_yawspeed
-+C)m/
 +Cm!("
 C-m2W-
 CMarketController::YldRefreshClientMarketData
@@ -12841,17 +12840,22 @@ d3_citadel_05
 *-D),5E)_
 D)5XC)7 @
 d6@y#
-d6@y#%
-d6@yc)
-d6@yc#
-d6@yc	
+d6@y# 
+d6@y#"
+d6@y#@
+d6@y#A
 d6@yC
-d6@yC)
 d6@yc4
+d6@yc6
+d6@yC6
+d6@yCG
+d6@ycH
+d6@y#G
 D-!8"
 D$@8$
 "D@9%
 D@9_ 
+D9!40
 d9	 \9"
 D9c?A
 D@9ElA
@@ -14986,7 +14990,6 @@ days_to_expiration
 D-b*@
 \D-B8 
 	DB9(
-dB@9B5
 %d bone setup ents (name/count/entindex) ------------
 %d ('%c')
 D-c*@
@@ -15392,6 +15395,7 @@ dF-@"
 %d == false
 dFEycJEybNEy
 %d: %f %f %f
+@=D!G
 [%d] -> gsn(%s)
 D-h"@
 D-h2@
@@ -16148,6 +16152,7 @@ EdgeScrollerUp
 edictindex
 EditorDynamicConfig
 EditTeamNameButton
+eD)!t
 EDuosMessageTargetType
 .EDuosMessageTargetType
 EDuosMessageType
@@ -16283,6 +16288,7 @@ EM_RemoveAllDecals
 ?)^emS<
 EM_ScreenOverlay
 "e" must be followed by exponent.
+;Em@V
 }?E:n
 -enable_2gb_high_lod
 -enable_2gb_morphs
@@ -17142,7 +17148,6 @@ eZQ9\
 	)@{F
 F-!("
 F-"("
-F-{>	
 F-%:%
 F: %.2f deg
 ?-F/3
@@ -17152,7 +17157,9 @@ f^7:!
 F-!8"
 ?\%F9
 F9`!)
+F?95L
 f@9(7
+&f9!H
 &f9H"
 F9h&@
 f@9H1
@@ -17404,6 +17411,8 @@ ffffff
 fflush
 FgColorDim
 F*%h3x%hgx
+@F=H4
+F-H9G
 Fhf8&
 F*&h%x%hsx
 F*%h'x%hsx
@@ -17939,7 +17948,6 @@ fixed point overflow in
 Fix this or you'll see a crash.
 FixupResourceName: Illegal full path passed in ("%s")!
 FixupResourceName: Illegal path, missing extension passed in ("%s")!
-#F)j&
 FJ-&	&
 ?,F]k
 flAddAmount
@@ -18191,6 +18199,7 @@ fprintf
 fputc
 fputs
 !$fQ3
+F-{R	
 fraction
 fRadius
 Frame.AutoSnapRange
@@ -18443,7 +18452,6 @@ G- 8
 G-!8"
 g\8"@6
 G9`r@
-]G-A1
 gains
 gainsboro
 G-ak|
@@ -19296,8 +19304,8 @@ Gy)AGy
 Gy)IGy
 g@yRz
 !.h	 
-!	@)h@
-!	@)h%
+!	@)h
+!	@)h,
 ()@)h*
 )h&	)
 @-h  
@@ -19333,7 +19341,6 @@ h3@)m
 *-H),5I)_
 H5@)L	@
 	*h6@
--H6"?
 H6c"J9
 H6h>@
 h6hB@
@@ -19393,21 +19400,20 @@ h#8Jh#8
 *h"*9
 *h&*9
 h"@9)
-h"@9)@
+h"@9)[
 h"@9)#
+h"@9)%
 h"@9	
-h"@9	@
-h"@9	#
-h"@9	%
+h"@9	>
 h*@9	
 h+@9`
-h"@9)8
 ?h98a
 h"@9	 @9
 H @9	 @9
 h&-9D'
-h"@9(]E
-h"@9)f
+h"@9(}E
+h"@9)g
+h"@9	g
 h:@9h
 h.@9h
 h"@9h
@@ -19420,20 +19426,21 @@ h"@9H
 h"\9H
 h*@9H
 H @9h"
-h"@9i;
+H@9hG
 h"@9i)
-h"@9i\
+h"@9i@
 h"\9i
 h&/9i
-h"@9I;
 h"@9I)
-h"@9iS
-h"@9IS
-h"@9iT
+h"@9I#
+h"@9i8
+h"@9Ie
+h"@9iL
+h"@9iX
+h"\9iZ
 *H@9J
-h"@9	L
-h"@9	X
-h"@9	y
+h"@9	x
+h"@9)X
 h&_)a"
 	*h:A
 H)+A@
@@ -19450,7 +19457,6 @@ h^A9H
 h>A9H
 h"A9H
 hA9)hA9
-h"A9IL
 HackThatForcesALayout
 `"H=a&H=b*H=c.H=
 h&A-j
@@ -19633,6 +19639,7 @@ hB@9(
 hB\9(
 hb@94
 hB@9)5E
+hB@9)B
 hb@9h
 hb@9H
 h"B9h
@@ -19643,8 +19650,6 @@ h"B9H
 hB@9H
 hB\9H
 hB@9hF
-hb@9IM
-hB@9iR
 hB@9t
 hB@9u"@
 hb@9v
@@ -19662,14 +19667,11 @@ hBB9?5
 hbB9h
 hBB9`Z
 hbD9)C
-hbD9	y
 hbF9(#
 hbF99
 hbF9h
 hbh9h;
-hBK9z#
 hBm9H
-hBm9IC
 hbMy`V
 H-bN@
 hbN9tB
@@ -19716,7 +19718,6 @@ hd8ghg8
 hd8ihi8
 HDR Color Scale: %0.3f
 h&	)E
-h&E)*&
 h*E)9
 Header | 
 header crc mismatch
@@ -19769,6 +19770,7 @@ Height of closed caption Panorama panel
 height-percentage
 height-percentage( %s )
 h&E)j
+h&E)J&
 HelicopterMegaBomb
 HelicopterMegaBomb_global_client
 Help : breathy-voiced glottal fricative
@@ -19849,11 +19851,11 @@ h*F)7
 =hf@9
 *hf@9
 *hf@9(
-hf@9!
 hf@9(
 *hF@9
 hF@9?
 hF@9)
+hf@9A
 @=hF@9b
 h&f9)%C
 hf@9cb@9
@@ -20009,7 +20011,6 @@ Hkh89
 Hkh8H
 Hki8	kj8
 H)kN@
-`"@=HL
 H*@)L
 hl2_episodic
 H@L@J
@@ -20026,7 +20027,8 @@ hlvr_combine_barrier_cell_spacing
 ?(Hlw
 H:Ly?
 h"m9(
-h"M9V%
+h*m9	8
+h"M9v%
 HMaterial
 HMaterialStrong
 hmd_anchor_rotate
@@ -20037,6 +20039,7 @@ HMDHint
 HMD_Manufacturer_HTC
 HMD_Manufacturer_Oculus
 HMD_Manufacturer_OSVR
+h&M)Km
 HModel
 HModelStrong
 HMTLLinkAtPosition
@@ -20156,7 +20159,6 @@ hRT9h
 hr@y`
 hS^<6?G
 =h"S9H
-hS9i[
 hscript
 HSCRIPT-light
 hscript_lightbinding
@@ -20260,14 +20262,12 @@ H @y	H@9
 	h@y(h@y?
 h&@yi)
 h">yI
-)!Hy@i
 H @yi
-h&@yi6
-h&@yI6
 HypeBarBackground
 hypeCost
 HypeMeter
 HypeMeterActive
+)!Hy@q
 "Hy)QHy
 hy)x,
 Hy)x)
@@ -20282,7 +20282,6 @@ hzC9	P
 hzVy)
 hz	y 
 <i*?)
-)i*	)
 @-i(&
 	!@)i"
 	)@)i
@@ -20300,7 +20299,7 @@ i3Qy?
 @i4^_
 !@i)5@
 @i)5@
-i6B9J
+i6B9j
 i6xh>@yt:
 i6@yh
 i78[>
@@ -20369,7 +20368,6 @@ I#B)
 ib@9`
 ib@9(
 ib@9)
-ib@9H!
 ib@9i
 =iB/9i
 i"B9i
@@ -20696,6 +20694,7 @@ IHandleEntity
 IHasAttributes
 i*	-hf
 I("hq
+)i*	)HV
 (ihxA=
 +ihxh=@
 *ihx(Q*
@@ -22003,15 +22002,14 @@ IYixK9
 +I@yL
 Iy(xj
 i"Yy?
-)IzhF
 *iz(x
-)iZy*j
 <j.?)
 !	@)J
 @ @-J
 @-J	,
 *$J)(}
 J- 	 
+j08PF
 J0@yI
 J0@yk%C
 J1Ty?
@@ -22020,25 +22018,25 @@ j2W-m
 j2@yh
 j2@yI%
 j48	C
-j48h0
+j48HB
 j48t^@
 j4xH;@
+j58`b
+j58-b
 j58h:\
-j58h0
+j58HB
 j58hf@9(
-j58Hl
-j58`j
-j58-j
-j58kj
-j58;P
-j58si
-j58Yi
+j58HT
+j58kb
+j58sa
+j58(Y
+j58Ya
 J5@y_
-j681 
-j68S*
+j681$
+j68S.
 j68u*@
 j68v&@
-j68w2
+j68w:
 j6@9(
 j6B9#
 {j78h
@@ -22046,22 +22044,27 @@ j|8?
 j:8;)
 j)8)/
 j)8	"
-j)8	&
 J-!8"
-j(8h)
+j(86L
+j)8)g
 j(8h62
 j)8hf
+j;8hR
 j(8h&Yy
+j)8i&
 j`8!i 8
-j)8If
 j(8`j
 j)8`j
+j+8k&
 j`8'k`8
+j,8l&
+j-8M2
 j(8(Z@
  J9?@
 J!@9_
 J!@9#
 j98Hki8A
+j"@9AI
 `*j9a&j9
 J9e:A
 j	@9I
@@ -22120,6 +22123,7 @@ jbRy)
 jB@y)
 "J)*C
 J-cb@
+JD9It
 JDesired number of items in the voting queue.  May be clamped by the server",
 J-dj@
 Je@9*
@@ -22130,7 +22134,6 @@ j&	)h~
 jh8Gkh8
 jh8xc
 J!h9?
-*	)JI
 ji)8)
 ji)8	i@9
 ji)8	i@9)
@@ -22150,12 +22153,12 @@ ji)x)
 )j"J)
 jj(8(
 jj)8O
+jjd9)F
 jji8J
 j!JJ+
 j!JJK
 !JJK|
 JjMJJK
-jJT9i[
 j"Jy)!Oy
 j"Jy))Oy
 J)k^@
@@ -22319,6 +22322,7 @@ _!(k#
 	k	("
 	k	((
 	k	(*
+#@)!K
 	*K!;
 	*K}@
 	K)}}
@@ -22341,11 +22345,14 @@ k2N)jJ@
 ?k58D
 k5KJLV
 	*K!6
-k68bJ
+k68bB
 k68wZ@
 *?k78
 ?k78h
+k78\m
+k(8 }
 ?k88wr@
+?k88za
 (k;8H
 k(8vV@
 k@9(-
@@ -22375,6 +22382,7 @@ k_AddSocket_Succeeded
 kAKJJ
 kAKJk
 ?k,am
+KA@)mM
 KAU8K
 K.Ax E@
 Ka@yk
@@ -23535,7 +23543,6 @@ k	@y)
 )!Ky	
 K!@y?
 k!@yJ}@
-))Kyjf
 K-@yk
 Kykx)
 K)@yLY@9Hq@9M%D)J
@@ -23546,7 +23553,6 @@ k&Z)l
 	*l)<
 !.L	 
 	L- 	 
-	L@)*'
 L-!(#
 L0AyK
 L: %.2f deg
@@ -23561,7 +23567,6 @@ L5@)ky
 L-!8 
 L-!8"
 "L9`2
-`l9IC
 l9	SJM,
 L9	SkM,
 L	A9mC
@@ -24676,7 +24681,6 @@ maxVerticesPerHull
 Max view roll angle
 max-width
 maxwind
-mB69m)
 =mB(9iJ
 m_bActivated
 m_bActive
@@ -26010,7 +26014,8 @@ m_GraphParameterName
 m_groundNormal
 m_GroupName
 m_guid
-M@=H8
+M@=h8
+M@=h9
 m_hActivator
 m_hActiveHandAttachment
 m_hActiveWeapon
@@ -27044,6 +27049,7 @@ MODIFIER_STATE_ON_FIRE
 MODIFIER_STATE_OUT_OF_GAME
 MODIFIER_STATE_PASSIVES_DISABLED
 MODIFIER_STATE_PREVENT_ROUND_END
+MODIFIER_STATE_PREVENT_TEAM_WIPE
 MODIFIER_STATE_PROVIDES_VISION
 MODIFIER_STATE_ROOTED
 MODIFIER_STATE_SILENCED
@@ -28911,7 +28917,7 @@ No view anim created, use viewanim_create
 No : voiced alveolar nasal
 ( nOwner & 7 ) == 0 && ( nOwner & 0x8000000000000000ull ) != 0x8000000000000000ull
 nowrap
-#n!P*
+#n!P+
 npc_dota_courier
 npc_dota_hero_default
 npc_dota_hero_%s
@@ -29620,7 +29626,7 @@ o}Xot#
 &OYMW
 @-oyrn
 %O?ZE
-!	@)p@
+!	@)p,
 ?<-?p
 @-p	@
 ($?)P
@@ -31418,6 +31424,8 @@ q	kw8A
 	qL9i
 	qL9I
 )qLy	
+QM9!E
+qm9!I
 )QMy	
 )qNy	
 )QNy	
@@ -31481,6 +31489,7 @@ q:y6x
 Qy)!Ry
 Qy))Ry
 )qYy	
+!	@)R-
 /"	)(R@
 "@:R".
 R-!(%
@@ -31505,7 +31514,6 @@ r@9hr
 R@9hR
 r@9ir
 r@9ir@9
-!	@)RA
 R-A8!
 RA9	1
 RA9hR
@@ -32652,10 +32660,9 @@ s7>Ip
 %s : %8.2f:  finish %s
 %s : %8.2f:  ignored %s
 %s : %8.2f:  start %s
-@S@9,)
+@S@9,-
 S96|@
 S9 8"
-S@9!C
 %s	%.9f	%.9f	%.6f	%.2f	%.2f	%.2f
 S@9h"
 S@9irB
@@ -35296,6 +35303,9 @@ Switch which class the panel has for a given attribute slot. Allows easily chang
 %s writing start offset %d
 (s@y 
 	s@y?
+s@y!5
+S@y!5
+(s@yIt
 *s@y	iwx?
 symbol
 Symbol name "
@@ -35369,6 +35379,9 @@ T$8@9C
 T"8@9E(
 T?!8k
 *T)8yv
+"T9">
+*T9">
+&T9">
 T" @9#$
 T"(@9#,
 T"$@9#(
@@ -35395,9 +35408,8 @@ T#(@9D,
 T#$@9D(
 T#,@9D0
 T#@@9$D@9 H@9cx
-T9 ]E
+T9 }E
 t@9))F
-t**9HY
 		T9i
 T9ibR9
 T9`JE
@@ -35496,9 +35508,9 @@ Tb8	S
 TbFEyaJEy?
 Tbhd8
 T`b@y
+T`b@y@`
 T`b@y3
-T`b@y@p
-T`b@yym
+T`b@yy]
 T C	*
 Tc"A)`
 Tc"B)`
@@ -35796,6 +35808,7 @@ TH7@9H
 T%h`8DPFy
 T$h`8EPFy
 Th"@9
+Th*[9
 Th*@9
 TH'@9
 TH#@9
@@ -35805,7 +35818,6 @@ Th&@9h
 T)H@9I
 Th9	S(M(
 TH9	S(M(
-Th*[9T\
 Th"A9
 THa@9(
 Th*A9H
@@ -35952,6 +35964,7 @@ throttle
 ThrP9
 Thr@y
 ThR@y
+ThR@yyM
 Th^S9H
 th_TH
 ThVA9
@@ -36494,7 +36507,7 @@ trusted_server
 T`R@y
 T`R@y`
 Try changing the number of bones per vertex or the skin weighting, and send Sergiy a repro mesh with this error description.
-T`R@yi8
+T`R@yi4
 Trying to add duplicate decal material %s.
 Trying to change pitch on invalid sound event %s
 Trying to change volume on invalid sound event %s
@@ -36588,6 +36601,7 @@ txting_type_spacebar
 T)?@y?
 )!TyJ
 ))TyJ
+T@yLG
 Type appears to be in generated pool but wasn't 
 	TYPE_BOOL
 TYPE_BYTES
@@ -36630,7 +36644,7 @@ t"@yu
 Ty)!Uy
 Ty))Uy
 T	,Yy?
-tzByC|
+tzByCt
 tZP)a	+
 )?)	@u
 	*u~@
@@ -36642,6 +36656,7 @@ u64( %lld = 0x%llX )
 U7r8Ne
 u9% &
 U@9@#D
+"U9I>
 ]u9n5;> )"
 u9	Q@
 u axis
@@ -37523,6 +37538,7 @@ V_atoi64
 V_atoui64
 VAvi001
 v axis
+vB9a@
 VB9hV
 VBAllocTracker001
 VBaseFileSystem011
@@ -37962,6 +37978,7 @@ VOTE_FAILED_YES_MUST_EXCEED_NO
 votes_down
 votes_up
 VoxManager
+V-P1I
 VP4003
 vpcf10
 vpcf11
@@ -38391,6 +38408,7 @@ V_wcstoi64
 v\@-x
 V\@-X
 )	Vy	
+V@yJG
 V@y_! k
 V@y!yv
 Vzjii
@@ -38855,11 +38873,9 @@ $@y($@-
 @y)1Yy
 ,y=35
 	@y_!3k
-"@y4H
 @y?!4k
 @y?!4kC
 	y4xl
-)@y5^
 y6{(x
 _@y?!8k#
 ?@y?!8k#
@@ -38867,9 +38883,7 @@ y	-%9
 y,@@9m
 @y)9Py
 @y)9_y
-!'@ya|
 !@@ya
-@y)a$
 "@y*A
 y .A8
 @y)ABy
@@ -38883,6 +38897,7 @@ Yaw;
 YawArrow
 yaw_end
 yaw_start
+!'@yax
 y axis
 ^y)A@y
 @y)A^y
@@ -38941,6 +38956,7 @@ yield
 yielding
 YieldingAcquireLobbyTicket
 yielding_jobs
+	\yIf
 yijx?
 {YIN?
 @yiRA9
@@ -38956,7 +38972,6 @@ yi^@yk
 )	[yJ
 @yJ}@
 *-@yJ
-@yJa$
 =yjB)
 yjh9x
 yjiixJ
@@ -38972,12 +38987,9 @@ yjZ@y
 @y_!(k
 @y_!(k!
 @y?!(k@
-@yk!;
+@yk! 
 +@y	k@9
-@yka"
-@yka9
 @yK@A9
-.@ykb
 >@y?! kC
 @y?! kC
 ykh9x
@@ -38988,8 +39000,8 @@ ykZ@yI
 yl	@y,1
 %Y-%m-%d-%p_%I_%M_%S
 %Y-%m-%dT%H:%M:%SZ
+%@yMg
 yMI48
-%@yMk
 YMP)_Y
 *	@ym	@y
 y*M@yJ
@@ -39012,6 +39024,7 @@ youtubevideoid
 youtube_videoid
 )yOyJ
 )YOyJ
+)YOykf
 )!@y =p
 )yPyJ
 @y(Q*
@@ -39038,7 +39051,6 @@ ywi(xC
 @y)!Wy
 y*x(+
 Y`x($
-@y!x4
 y+xh-
 @yxVX)
 )y@y	
@@ -39051,11 +39063,11 @@ y*%@y_
 	#Yy*
 @y	y4x`
 @y	y6x
-@y	y8x`7
+@y	y8x
 !@y(y9xh"@
+%@yYf
 @y)YGy
 y*]@yJ
-%@yYj
 )!YyJ
 +Y@yJ
 Yy?!!k
@@ -39066,6 +39078,7 @@ YYYY-MM-DD
 YYYY-MM-DD hh:mm:ss
 )YZy	
 )YZyJ
+!	@)Z-
 Z0000
 z	?0e`9
 *z0x1
@@ -39091,12 +39104,10 @@ Z*=@8H
 z@9hz
 z@9iz
 z@9iz@9
-!	@)ZA
 ZA9iZ
 Zap : voiced alveolar fricative
 z axis
 ZB9hZ
-@zBh7
 zC9h&-9
 _ZdaPv
 _ZdlPv

@@ -299,9 +299,9 @@ public final class R {
     }
 
     public static final class bool {
-        public static final int abc_action_bar_embed_tabs = 2130903044;
-        public static final int abc_allow_stacked_button_bar = 2130903045;
-        public static final int abc_config_actionMenuItemAllCaps = 2130903046;
+        public static final int abc_action_bar_embed_tabs = 2130903046;
+        public static final int abc_allow_stacked_button_bar = 2130903047;
+        public static final int abc_config_actionMenuItemAllCaps = 2130903048;
 
         private bool() {
         }
@@ -733,11 +733,11 @@ public final class R {
     }
 
     public static final class integer {
-        public static final int abc_config_activityDefaultDur = 2131296257;
-        public static final int abc_config_activityShortDur = 2131296258;
-        public static final int cancel_button_image_alpha = 2131296259;
-        public static final int config_tooltipAnimTime = 2131296260;
-        public static final int status_bar_notification_info_maxnum = 2131296261;
+        public static final int abc_config_activityDefaultDur = 2131296258;
+        public static final int abc_config_activityShortDur = 2131296259;
+        public static final int cancel_button_image_alpha = 2131296260;
+        public static final int config_tooltipAnimTime = 2131296261;
+        public static final int status_bar_notification_info_maxnum = 2131296262;
 
         private integer() {
         }
