@@ -141,7 +141,7 @@ $@)#@@)
 20CRefCountServiceBaseILb1E6CRefMTE
 20CRenderDeviceMgrBase
 20CTextureManagerGLNew
-20IHibernationListener
+20IMobileEventListener
 20IResourceTypeManager
 21CAndroidPresentTiming
 21CRenderHardwareConfig
@@ -173,7 +173,7 @@ $@)#@@)
 2	h(8
 2hb49
 2hf!9
-2hj58uG
+2hj58tG
 2Hku8
 2hn!9
 2ij(8
@@ -3869,7 +3869,7 @@ h`8ch`8$h`8
 h$8d:B
 h`8%h`8
 h#8Jh#8
-*h*!9$
+*h*!9%
 h""9	
 h"'90
 ?h98a
@@ -3889,7 +3889,7 @@ hB$9c
 hB&9c
 hb@9h
 hb@9H
-hb 9Ih
+hb 9Id
 hb^9t
 h"b9tb"
 hBA9)QG
@@ -3916,7 +3916,7 @@ HEXINTEGERLITERAL
 hf@9a*
 hf@9h
 h"F9i
-hf 9Rk
+hf 9Vg
 hfj9t
 h"g9tb'
 $hh8Chh8
@@ -3945,7 +3945,7 @@ Hkw8(
 hn8c|
 HostStateMgr001
 hr1yI
-hr1yW_
+hr1yZ_
 hr@9J
 hrqy`Z
 hr@y`
@@ -4274,7 +4274,6 @@ iv@9I
 *i.xi>@yj:
 i>@yh
 !~j	(
-	*J1?
 j48*:
 j48t^@
 j58hf@9(
@@ -4290,7 +4289,7 @@ j(8HH
 j`8!i 8
  J9?@
 J9e:A
-j 9]k
+j 9]g
 ja8 i!8!
 JA@9j
 JA@9J
@@ -4326,7 +4325,7 @@ j(x	k(x)k(x
 K[ .)
 *k2@y
 _k58(
-?k68`
+?k68a
 k68wZ@
 ?k78h
 k(8vV@
@@ -5122,7 +5121,7 @@ RecursiveLoadFromBuffer:  recursion overflow
 Reduce texture memory pool size by this many MB / s when over budget.
 Reduce texture memory pool size when this percentage of the budget is full.
 RegisterConfigValue: Unknown error constructing config value "%s"!
-RegisterHibernationListener
+RegisterMobileEventListener
 .rela.dyn
 .rela.plt
 Release
@@ -5725,15 +5724,15 @@ TextLayout_001
 TextMessageMgr_001
 texturebase.cpp
 texturebase.cpp(1821):Error loading texture: %s
-texturebase.cpp(2755):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2776):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2787):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2798):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2809):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2830):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2841):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2852):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2863):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2762):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2783):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2794):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2805):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2816):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2837):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2848):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2859):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2870):ResourceHandleToData( %s ) failed! Falling back to error texture!
 TextureDimLog2
 Texture manager out of space! Can't allocate new texture!
 Texture memory discrepancy! %llu != %llu
@@ -5930,7 +5929,7 @@ Unknown variable name %s.
 Unknown zlib error
 Unrecognized component IDs %d %d %d, assuming YCbCr
 Unrecognized equation type for pCAL chunk
-UnregisterHibernationListener
+UnregisterMobileEventListener
 Unsatisfied dependency at present time = death!
 Unsupported color conversion request
 Unsupported component value : 

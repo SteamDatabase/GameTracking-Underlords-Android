@@ -706,8 +706,8 @@ $0 to $1,
 2j"@9)p
 2?"!k`
 2?k78
+2_k88
 2?k88
-2_k888
 2k_EGCMsgInitiateTradeResponse_VAC_Banned_Initiator
 2k_ItemPurgatoryResponse_Finalize_Failed_Incomplete
 2ninx
@@ -1666,6 +1666,7 @@ auto_unragdoll_duration
 available_cards
 available_content
 AvailableUnits
+'_az;
 B-1HD-
 B@9(6
 ^B9h^
@@ -2897,8 +2898,8 @@ CUtlStringToken
 CUtlSymbol
 CUtlSymbolLarge
 CUtlVector<const T *> GetDefinitionByName(const char *, CUtlVector<const T *>) [T = DACUnitDef]
-CUtlVector<const T *> ParseAvailableFromOperations(CKV3MemberRef, const CUtlVector<const T *> &(IDACGameManager::*)() const, TFilterFunc &&) [T = DAC_SynergyData_t, TFilterFunc = (lambda at dac/dac_gamedefinitions.cpp:551:106)]
-CUtlVector<const T *> ParseAvailableFromOperations(CKV3MemberRef, const CUtlVector<const T *> &(IDACGameManager::*)() const, TFilterFunc &&) [T = DACUnitDef, TFilterFunc = (lambda at dac/dac_gamedefinitions.cpp:554:98)]
+CUtlVector<const T *> ParseAvailableFromOperations(CKV3MemberRef, const CUtlVector<const T *> &(IDACGameManager::*)() const, TFilterFunc &&) [T = DAC_SynergyData_t, TFilterFunc = (lambda at dac/dac_gamedefinitions.cpp:579:106)]
+CUtlVector<const T *> ParseAvailableFromOperations(CKV3MemberRef, const CUtlVector<const T *> &(IDACGameManager::*)() const, TFilterFunc &&) [T = DACUnitDef, TFilterFunc = (lambda at dac/dac_gamedefinitions.cpp:582:98)]
 cvars
 CVrSkeletalInputSettings
 #CWorkshop_AddSpecialPayment_Request
@@ -4090,6 +4091,7 @@ H7x"@
 H7xR@
 h)8Ay)
 h"@9)
+h"@9	
 h"@9h
 h*@9h/
 h.@9H
@@ -4140,6 +4142,7 @@ HELPER_BONE
 HelpSystem_001
 heroid
 Hex and octal numbers must be integers.
+hf@9!
 hF@9)	C
 hf@9h
 hf@9H
@@ -4157,7 +4160,7 @@ hintWords
 	histogram
 HistogramBucket
 histogram_buckets
-hj58~i
+hj58~m
 	hold_time
 host_computationtime
 "host_computationtime_std_deviation
@@ -4185,7 +4188,7 @@ I)!|@
 i)8i&
 *i.8in@9jj
 ?i(8?i*x?i+
-i;8[s
+i;8[w
 i"@9J
 IA@9	
 ib@9`
@@ -4338,6 +4341,7 @@ Invalid key for map field.
 Invalid keyword for Synergy '%s'
 Invalid member name '%s'
 Invalid message set extension.
+Invalid model override when loading puzzle
 Invalid proto descriptor for file "
 Invalid public dependency index.
 <INVALID_RBF_TYPE>
@@ -4438,6 +4442,7 @@ is_user_facing
 is_vac_banned
 is_verified
 is_wallet_cash_trusted
+is_weekly
 )it8?}
 #It contains connectivity part %d with %d vertices
 ItemChoiceReward
@@ -4484,11 +4489,13 @@ iw8B/
 i>@yh
 IyixJylx+
 j2?)?
+J38|!
+j38$Y
 j48	C
 j48t^@
 j4xH;@
 j58hf@9(
-j58Zz
+J78C!
 J!@9#
 j@9ij
 J]A9_
@@ -4531,12 +4538,11 @@ JYix*$
 	*jz-
 *k2@y
 ?k58D
-*?k78+
-k78^|
+?k68u
+*?k78
 ?k78h
 k78o_
-k78Yz
-_k88W
+?k78W
 k(8vV@
 Ka@9+
 Ka@9k
@@ -5764,6 +5770,7 @@ modeldoc9
 ModelDocUtils001
 model_name
 modelName
+model_overrides
 MODEL_PROCESSING_SCRIPT_INTERFACE_001
 MODEL_PROCESSING_SERVICES_INTERFACE_001
 model_scale
@@ -6647,7 +6654,7 @@ right
 rights_flags
 Rigid; 
 rJMJJ
-R?k78d
+R?k78!
 Rmij8
 rnd_down
 rnd_up
@@ -7179,6 +7186,7 @@ ThreadGetCurrentId
 threads
 threads_active
 threads_connected
+three_star
 ThreeState_t
 Ti5KJ(}
 Ti"A)`
@@ -7849,4 +7857,3 @@ _ZTVN10__cxxabiv117__class_type_infoE
 _ZTVN10__cxxabiv120__si_class_type_infoE
 _ZTVN10__cxxabiv121__vmi_class_type_infoE
 _ZTVSt12length_error
-Z@yhZ

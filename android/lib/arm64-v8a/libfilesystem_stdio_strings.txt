@@ -61,17 +61,17 @@
 22CSchemaInstallCallback
 23CFileAsyncAppendFileJob
 23IConCommandBaseAccessor
+24CMemoryMappedFileSection
 25CFileSystemReloadFileList
 26CDefaultKeyValuesErrorSpew
 26CFileAsyncDirectoryScanJob
 28CFioReadOnlyMemoryMappedFile
 28CPackedStoreMemoryMappedFile
-2	a(9D
 2ij,xl=
 2+imx
 2_!(k
-2	q'9s
 2x"@9
+35CMemoryMappedFileSection_SelfDelete
  [%.3f server clamped to %.3f]
 4hf@9
 4i"J)
@@ -297,7 +297,6 @@ ERROR_PATHTOOLONG
 ERROR_READING
 ERROR_UNKNOWNID
 EventSystem001
-Exceeded limit of number of vpk files supported (%d)!
 EXECUTABLE_PATH
 EXPORTSYSTEM_INTERFACE_VERSION_001
 externalFileAttribs
@@ -314,7 +313,6 @@ FCVAR_NEVER_AS_STRING
 %f %f %f %f
 File change watching failed for '%s', retraversing
 fileCommentLength
-FileHandleTracker_t &CPackedStore::GetFileHandle(int)
 fileNameLength
 Filename '%s' is invalid to be contained in a VPK
 File Path:
@@ -461,11 +459,11 @@ IOJob
 IQuickTime001
 \i)x)	
 *i.xi>@yj:
-i)xtM
+i)xWI
 I	@y(
 i>@yh
 j58hf@9(
-J68JC
+J68-?
 ji,x!
 ji)x)	
 j!JJ+
@@ -625,6 +623,7 @@ pthread_mutex_unlock
 ptr( 0x%p )
 ../public/ordered_constructor.h
 ../public/tier0/globallist.h
+../public/tier0/threadtools.h
 ../public/tier0/tslist.h
 ../public/tier1/utlblockmemory.h
 ../public/tier1/utlfixedmemory.h
@@ -770,7 +769,6 @@ TestScriptMgr001
 .text
 TextLayout_001
 TextMessageMgr_001
-Th2@y
 The filename may only contain lower case alphanumeric characters, dashes, and underscores.
 Thf@9
 ThreadGetCurrentId
@@ -1027,6 +1025,7 @@ _ZN17CThreadSyncObjectD2Ev
 _ZN21CThreadMultiWaitEvent3SetEv
 _ZN22CThreadRWLock_FastRead11UnlockWriteEPKci
 _ZN22CThreadRWLock_FastRead20UnlockReadAccountingEPKcij
+_ZN22CThreadRWLock_FastRead23UnlockRead_LockForWriteEPKci
 _ZN22CThreadRWLock_FastRead30HandleFirstWriteLockTransitionEv
 _ZN22CThreadRWLock_FastRead35EncounteredComplexReadLockOperationEjbPKci
 _ZN22CThreadRWLock_FastReadC1Eb

@@ -544,7 +544,7 @@ HttpGet
 	*I}`
 i2@9h6@9?
 i2q		
-	i;8)
+	i;8%
 ?i*8i
 )ia8?q
 &iacute;
@@ -811,8 +811,8 @@ NOTE: this is the total bytes of the regions above, not the growth since the old
 &ntilde;
 &Ntilde;
 nTries < 10000000
-O9aeB
-O9`fB
+O9`6E
+O9a5E
 &oacute;
 &Oacute;
 &ocirc;
@@ -997,6 +997,8 @@ Plat_LoadModule
 Plat_LoadModuleRaw
 Plat_LoadSDL
 Plat_localtime
+Plat_LowMemoryWarning
+Plat_LowMemoryWarning()
 Plat_MessageBox
 Plat_MessageBox() called in headless mode:
 Plat_MicroSecTickDiff
@@ -1176,8 +1178,8 @@ RD?4KF?=GH?9FJ?8HL?
 realloc
 &reg;
 RegisterAssertionFailureListener
-RegisterHibernationListener
 RegisterKeyValuesSystem
+RegisterMobileEventListener
 .rela.dyn
 .rela.plt
 Release
@@ -1517,6 +1519,8 @@ ThreadGetCurrentHandle
 ThreadGetCurrentId
 ThreadGetCurrentProcessHandle
 ThreadGetCurrentProcessId
+ThreadGetDebugNameForThreadHandle
+ThreadGetDebugNameForThreadId
 ThreadGetPriority
 ThreadGetProcessExitCode
 ThreadGetProcessPriority
@@ -1606,7 +1610,7 @@ Unknown
 Unknown (invalid)
 UnknownOS
 UnregisterAssertionFailureListener
-UnregisterHibernationListener
+UnregisterMobileEventListener
 urC9`
 [/url]
 [url=
@@ -2197,6 +2201,7 @@ _ZN17CCallStackCaptureC1EPFiPPviiEjj
 _ZN17CCallStackCaptureC2EPFiPPviiEjj
 _ZN17CThreadLocalScope13SetThreadNameEPKc
 _ZN17CThreadLocalScope17GetScopeListMutexEv
+_ZN17CThreadLocalScope20FindScopeForThreadIdEy
 _ZN17CThreadLocalScope24FindScopeForThreadHandleEP16ThreadHandle_t__
 _ZN17CThreadLocalScope31CScopeCreatedOrDestroyedHandlerC1EPFvPS_bE
 _ZN17CThreadLocalScope31CScopeCreatedOrDestroyedHandlerC2EPFvPS_bE

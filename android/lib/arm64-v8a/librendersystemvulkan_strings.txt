@@ -28,6 +28,7 @@
 };																	
 }													
 *	)@)
+&@)@=
 	 ();,
 	!@)?
 	]@))}@
@@ -160,6 +161,8 @@
 1bQJ1~
 @)1]C
 1DBlend
+(1Gy)!
+(1Gy5!
 1.#IND
 -1.#INF
 +1.#INF
@@ -183,7 +186,7 @@
 20CRenderDeviceMgrBase
 20CSamplerStateCreator
 20CVfxShaderFileVulkan
-20IHibernationListener
+20IMobileEventListener
 20IResourceTypeManager
 21CConstantBufferVulkan
 21CFramebufferMgrVulkan
@@ -359,7 +362,7 @@ $4DTdt
 5i"L9?
 5i.@y
 5`>J9
-5kB)9	AC
+5kb)9	AC
 5@)N$
 5r_texturefilteringquality
 5Ua@y
@@ -473,6 +476,7 @@ _8ji)8
 )=@9)}
 )!@9)
 ))@9	
+@@9)#
 @9`>@
 @9)!@
 @9)%@
@@ -575,7 +579,6 @@ _8ji)8
 )%@9i
 @9i&@
 #@9i	
-@@9I#
 @9I}	
 *!@9_I
 9`i`8
@@ -1271,8 +1274,9 @@ BGRA5551
 BGRA8888_LINEAR
 BGRX8888_LINEAR
 bhb8"
+Bht8"
 __BI_
-Bi9)a
+bi9)a6
 __BI_Append
 Biases the mip level the texture streaming system choses to stream for each texture.
 Bib81
@@ -2596,6 +2600,7 @@ CRenderDeviceVulkan::InitDevice: failed to get queue properties
 CRenderDeviceVulkan::InitDevice: no graphics queue found
 CRenderDeviceVulkan::InitDevice: vkEnumerateDeviceExtensionProperties( ... ) failed.
 CRenderDeviceVulkan::m_hDefaultConstantBuffer
+CRenderDeviceVulkan::OnLowMemoryNotification - evicting all textures to reduce memory pressure.
 CRenderDeviceVulkan::RebakeStaticDescriptorSetsReferencingTexture - could not allocate descriptor in new pool.
 CRenderDeviceVulkan::SetHardwareGammaRamp failed to get swap chain.
 CRenderDeviceVulkan::UpdateDescriptorSet: Failed to update descriptor set.
@@ -3249,6 +3254,7 @@ Empty input file
 Empty JPEG image (DNL not supported)
 E*!N%
 enable_limit
+Enabling aggressive command pool rebalancing.
 Enabling GPU validation.
 Enabling instance extension: %s.
 Enabling validation layer: %s.
@@ -4980,8 +4986,6 @@ gs_4_1
 gs_5_0
 g_Tier1_BitWriteMasks
 __gxx_personality_v0
-(!Gy)
-(!Gy5
 g@yRz
 	)	)h
 h&@)?
@@ -5091,6 +5095,7 @@ Hash: %llu
 has storage class StorageBuffer.
 Having 
 H(Ay	M
+h&B)@=
 !Hb8b
 hb8bF
 hb@9`
@@ -5110,7 +5115,6 @@ hbC9H
 hBE9h
 hBE9j
 hBI9H%
-h&B)@U
 hB@yh&
 hc87hd89hc88hb8
 hc8#h 8
@@ -5153,17 +5157,17 @@ hexadecimal literal too long
 HEX_DIGIT
 HEXINTEGERLITERAL
 =hf@9
-hf@9a
 hf@9a*
-hf 9F`
+hf@9A
 hf@9h
 hf@9H
 hf@9i
 h"F9i
+hf 9J\
 hfC9H
 hFD9u
 h"G9i
-hh85_
+hh85c
 $hh8Chh8
 *h&I)
 HIGHDPI
@@ -5254,13 +5258,13 @@ I64VEC4
 i6xh&@
 i6@yh
 (i;8{
-i;8=]
 +i*8h
 ^i~8H
 i(8hilxi*
 i)8i&
 i*8?i,x
 ?i(8?i*x?i+
+i;8=U
 I8VEC2
 I8VEC3
 I8VEC4
@@ -5440,14 +5444,14 @@ Ii+x!
 	iix?!<k
 	iix?!:k
 i"@)j
-<)ij8
 )ij8?
 )ij8	
+*ij(8
 ij8(	
 ij(8h
+<)ij8j&
 -ij8J
 ij8kI
-*ij(8W
 )ijx?
 *ijx_
 ijx6yh
@@ -6266,9 +6270,9 @@ Iy*wB
 j1By_! k
 ',)j3@
 j48lE
-j58-9
+j58-A
 j58@c
-j58G7
+j58G?
 j58h%
 j58hf@9(
 j68(|
@@ -6323,6 +6327,8 @@ jo8Jio8
 JPEG datastream contains no image
 JPEGMEM
 JPEG parameter struct mismatch: library thinks size is %u, caller expects %u
+	*Jq-
+	*Jq'
 jr82"
 jr822
 jr8air8R
@@ -6332,9 +6338,11 @@ JSON error, unterminated element:
 jump_statement
 Ju@y_
 j)x)^
+j*x;;
 j(xH|
 j$xij.
 j(x	k(x)k(x
+j*xQ;
 J%@y_
 Jy?! kC
 J!@y-!@ylyj
@@ -7271,7 +7279,6 @@ N2Z .
 N7glslang7TShader8IncluderE
 !n9[ .
 [ n9+a
-N@9$F
 ,.n*a
 name already defined
 named_barrier
@@ -8268,6 +8275,7 @@ readpixels_staging_mem
 read storage image
  ReadToken overflow
 Real:
+Rebalancing command buffer pool for thread (%s). Has %d command buffers, rebalancing to size %d command buffers
 Rebalancing command buffer pools. Largest has %d command buffers, rebalancing to size %d command buffers
 recenter_on_parent_bone
 Recorded:
@@ -8301,7 +8309,7 @@ __register_frame_info_bases
 __register_frame_info_table
 __register_frame_info_table_bases
 __register_frame_table
-RegisterHibernationListener
+RegisterMobileEventListener
 register number description
 RegisterStringToken
 reinterpret_cast
@@ -10082,15 +10090,15 @@ texture3DProjLod
 texture address mode
 texturebase.cpp
 texturebase.cpp(1821):Error loading texture: %s
-texturebase.cpp(2755):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2776):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2787):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2798):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2809):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2830):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2841):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2852):ResourceHandleToData( %s ) failed! Falling back to error texture!
-texturebase.cpp(2863):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2762):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2783):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2794):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2805):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2816):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2837):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2848):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2859):ResourceHandleToData( %s ) failed! Falling back to error texture!
+texturebase.cpp(2870):ResourceHandleToData( %s ) failed! Falling back to error texture!
 TextureBuffer
 textureClamp
 textureClampARB
@@ -10249,8 +10257,9 @@ ThN@9h
 ThN@9L
 ThrA9
 ThreadGetCurrentId
+ThreadGetDebugNameForThreadId
 ThreadJoin
-	Thread (%llu) Command Buffers (%d)
+	Thread (%s) Command Buffers (%d)
 ThreadSetAffinityPreference
 ThreadSleep
 ThreadYield
@@ -10508,7 +10517,6 @@ type. Structure <id>
 type that can be constructed
 TypeVmeImageINTEL
 t@y	q
-&@)@U
 U16VEC2
 U16VEC3
 U16VEC4
@@ -10840,7 +10848,7 @@ Unrecognized equation type for pCAL chunk
 Unrecognized flag name '%s'
 unrecognized layout identifier, or qualifier requires assignment (e.g., binding = 4)
 Unrecognized type '%d'
-UnregisterHibernationListener
+UnregisterMobileEventListener
 Unresolved object reference '%s'
 : Unroll
 Unroll and DontUnroll loop controls must not both be specified
@@ -12032,6 +12040,8 @@ V_swscanf
 -vulkan
 vulkan1.1spv1.4
 vulkan_additional_semaphores
+-vulkan_aggressive_command_pool_rebalancing
+-vulkan_aggressive_command_pool_rebalancing_2gb
 -vulkan_alloc_callbacks
 -vulkan_amd_disable_bind_vertex_buffers_workaround
 vulkan_amd_timestamp_workaround

@@ -7,7 +7,6 @@
  ... }
  { ... };
 --------------------------------------------------------
--@),/
 !^	(#
 !:@=!
 !.@=!
@@ -56,7 +55,7 @@ $0$1$2 $3 = $4
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
-01:26:58
+02:12:47
 [%02d:%02d:%02.3f]: %s
 %0.2f, %0.2f, %0.2f, %i, %0.2f, %0.2f, %0.2f, %0.2f, %0.2f, %0.2f, %i, %i, setpos %0.2f %0.2f %0.2f; setang %0.2f %0.2f %0.2f
 %02i/%02i %02i:%02i:%02i 
@@ -664,7 +663,6 @@ $0 to $1,
 18ToolTraceRayResult
 -1@9_
 	1`9)
-	1?9>b
 !)19BJRZcks{
 19C2S_CONNECT_Message
 19CBidirMsg_RelayInfo
@@ -699,6 +697,7 @@ $0 to $1,
 1@9M5
 19NetMessagePacketEnd
 19RestartMapToolEvent
+	1?9>Z
 !1AQaq
 !>@=1B
 1bQJ1~
@@ -747,7 +746,7 @@ $0 to $1,
 20CVConActivateMessage
 20IFileLoggingListener
 20IGameResourceService
-20IHibernationListener
+20IMobileEventListener
 20ISoundSystemServices
 20ISource2ClientConfig
 20ISource2ServerConfig
@@ -935,9 +934,9 @@ $0 to $1,
 28INetworkStringTableContainer
 2_!8k
 2@9()
-	!292:
-	=29@6
-	)29&8
+	=29@2
+	!2926
+	)29&4
 29CBidirMsg_RebroadcastSource_t
 29CBoneConstraintPoseSpaceMorph
 29CCLCMsg_SplitPlayerDisconnect
@@ -950,12 +949,12 @@ $0 to $1,
 29CSVCMsg_FlattenedSerializer_t
 29CToolGameSimulationDispatcher
 	%29g
-	)29G:
+	)29G6
 29ILoopModePrerequisiteRegistry
 29IToolGameSimulationDispatcher
 2,	@9L
-	=29R7
-	=29s9
+	=29R3
+	=29s5
 29ToolEvent_GetEntityInfoResult
 	%29y
 2	a@9Ia
@@ -998,9 +997,9 @@ $0 to $1,
 2j"	9I
 2j"@9)p
 2?".k
-2?k78i
+2?k78k
 2_k88
-2?k88h
+2?k88j
 2kii8l}C
 2Kkj8k
 2L%@x+
@@ -1105,7 +1104,7 @@ $0 to $1,
 49CNetworkClientSpawnGroup_LoadSaveGamePrerequisite
 49CNetworkServerSpawnGroup_LoadEntitiesPrerequisite
 49CNetworkServerSpawnGroup_LoadSaveGamePrerequisite
-	-49f-
+	-49f)
 &4@9R
 4Ay+'
 4CLog
@@ -1170,8 +1169,8 @@ $4DTdt
 54q`	
 55CNetworkClientSpawnGroup_AllocateSpawnGroupPrerequisite
 &'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz
-	589d$
-	589o%
+	589d 
+	589o!
 58jv@
 ,5@9_
 )5@9)}
@@ -1213,7 +1212,7 @@ $4DTdt
 60CNetworkClientSpawnGroup_WaitForManualCompletionPrerequisite
 %6.2f %6.2f %6.2f %.3f %.3f %.3f
 64-bit
-	!69o)
+	!69o%
  6`"A
 (6`&A
  6arBy
@@ -1399,11 +1398,11 @@ _6inA9
 87`f@
 :,@8[,@8
 %8.8s: %-5d entries, '%s', ...
-	!89B&
-	-89O$
+	!89B"
+	-89O 
 %8@9R
-	)89W&
-	-89Z%
+	)89W"
+	-89Z!
 8b  16-May-2010
 8CFmtStrNILi1024ELb0EE
 8CFmtStrNILi1024ELb1EE
@@ -1486,8 +1485,8 @@ $@9	(
 9	0@9i
 9.1.15
 @91#@92
-	929e6
-	929w7
+	929e2
+	929w3
 92ji8R
 @92yr
 @9>3@9*
@@ -1496,7 +1495,7 @@ $@9	(
 @9(	 7
 @9;7@9<
 9.@8 
-	989'%
+	989'!
 @9*-@8K
 (`@9	`@9
 )9@9)}
@@ -1526,9 +1525,7 @@ $@9	(
 @9*b@
 @9)+C
 @9	}C
-	}?9C_
 	9C%A
-	-?9cb
 9CBlackBox
 9CCallbackI13CSteam3Client17LowBatteryPower_tLb0EE
 9CCallbackI13CSteam3Client20PersonaStateChange_tLb0EE
@@ -1544,6 +1541,8 @@ $@9	(
 9CDemoStop
 9CGameInfo
 9CRegistry
+	}?9CW
+	-?9cZ
 9	D@8
 9*E@8?
 @9E-@9U
@@ -1652,6 +1651,7 @@ $@9	(
 9mj+8
 @9N9@9Q
 @9n	@9o
+	!%9(O
 @9O	@9P
 @9p	@9
 &,@9R
@@ -1661,7 +1661,6 @@ $@9	(
 %(@9R
 @9R1@9D
 	9r9i
-	!%9(S
 9	S)M*
 @9T|@
 	9T9i
@@ -1982,7 +1981,6 @@ AppSystemDict: Error in Init() of interface '%s'!
 AppSystemDict: Interface '%s' (tier %d) depends on interface '%s' (tier %d) but is in a lower tier!
 APPSYSTEM: In ConnectInterfaces(), s_nRegistrationCount is %d!
 App UI Language: %s, convar %s
-Apr 30 2020
  a protocol 
 A protocol message was rejected because it was too big (more than 
 A\@Q!`
@@ -2197,6 +2195,7 @@ battery_saver
 bB9hb
 BB9hB
 BB9hj:8
+bBA9A
 bB@yG
 BC6h compression not supported on this target (windows only).
 BC7 compression not supported on this target (windows only).
@@ -2455,7 +2454,7 @@ C-!($
 C-2-@
 C2S_CONNECTION_Message
 C2S_CONNECT_Message
-c3@yB
+c3@y"
 C-!8"
 (c@9+
 C9an@
@@ -2764,6 +2763,7 @@ CGameResourceService::BuildResourceManifest(start)
 CGameResourceService::DescribeContents:  manifest handle == GAME_RESOURCE_MANIFEST_HANDLE_INVALID
 CGameUIService
 CGameUIService::OnAppShutdown
+c^Gyb
 challenge_context
 challenge_number
 challenging
@@ -3921,7 +3921,7 @@ D24X8_SHADOW
 d2@yi
 d3@yi
 *-D),5E)_
-d6@y#
+d6@yC
 	D@8!
 D@8)%
 	D@8)m
@@ -4307,7 +4307,7 @@ dynamic_interaction
 .dynstr
 .dynsym
 E-!("
-	E(9'8
+	E(9'4
 	E>9o
  *Each frame will render %d times*
 echoln
@@ -5588,7 +5588,6 @@ h)8Ay)
 )h"@9)
 h"@9(
 h"@9)
-h"@9	
 h&@9(
 ?h98a
 H9a2B
@@ -5599,7 +5598,7 @@ h*\9h
 *h"@9H
 h.@9H
 h"@9i
-h"@9I
+h"@9i$
 h:	9i>	9
 -H@9m
 H9)yx
@@ -5836,10 +5835,11 @@ i7xh>@
 _i(8+
 	*	i8
 	I*8)
+?i(8A
 i)8a^A
-?i(8B
 *i(8B
-?i(8d
+?i(8D
+?i(8f
 ?i(8h
 ?i(8h*@
 i-8h*@
@@ -5860,12 +5860,12 @@ i*8?y*xJ
 	I>92
 I9`BA
 [i9h	
-	i?9h`
+	i?9hX
 	]i9I
 )I@9I
 i"@9J
 	i+9l
-	I?9pa
+	I?9pY
 IAppSystem *CAppSystemDict::AddSystem(const char *, const char *, ErrorResponse_t)
 IAppSystem *CAppSystemDict::AddSystem(CreateInterfaceFn, const char *)
 IAppSystem *CAppSystemDict::AddSystem(IAppSystem *, const char *)
@@ -6509,10 +6509,10 @@ j48(!
 j48	C
 j48t^@
 j4xH;@
-j58H$
+j58($
 j58hf@9(
 j58"l
-j68(#
+j58z#
 j68u"@
 j7Ayh3Ay)	
 j)8hjj
@@ -6652,11 +6652,11 @@ K1@yk
 *k2@y
 ?k58D
 K5@yk
-k68#D
-*?k78!
+k68!d
+*?k78#3
 ?k78h
+k78h#
 ?k)8(
-k(8(*
 _k88?
 ?k88_
 ?k88w
@@ -6665,6 +6665,7 @@ K!@9+!
 K	@9)
 _k98h!
 _k98x
+	K9C$
 K9@yk
 K	A9lC
 kaJJk[k
@@ -6863,6 +6864,7 @@ kn1V?OK
 :(knNengine_show_frame_ticks
 Known by handlers: 
 Known Peer State "%s"
+	*kQ1
 Kq@yk
 KQ@yk
 K)T9J!P9j
@@ -7183,9 +7185,9 @@ lseek
 %ls [wstring, len = %d]
 [L:%u:%u]
 :m@)<	@
-	m?9D`
+	m?9DX
 m%@9i)
-	M?9Oa
+	M?9OY
 	M~9u
 	M)9v
 m	A9j"
@@ -7356,6 +7358,7 @@ max_spawngroup_creationsequence
 maxSpringTension
 max( %s, %s )
 maxVerticesPerHull
+May 14 2020
 m_bApplyMinForce
 m_bAutoHideButtons
 m_bbox
@@ -8745,7 +8748,6 @@ oversubscribed distance tree
 oversubscribed dynamic bit lengths tree
 oversubscribed literal/length tree
 	O@x	
-O@y(	
 !OZW?O
 ($?)P
 p2p_listpeers
@@ -9350,13 +9352,13 @@ pvs.cpp
 PVS origin %s
 py_generic_services
 Q0*aN
-	q?9 `
-	Q?9.a
 	Q~9i
 	Q[9i
 *Q@9j
 	Q)9U
 	q)9v
+	q?9 X
+	Q?9.Y
 Q(aNf(!
 qangle
 QAngle
@@ -9548,7 +9550,7 @@ reference to non-existent subpattern
 Refreshing cached DPI info
 RegisterConfigValue: Unknown error constructing config value "%s"!
 Registered comments:
-RegisterHibernationListener
+RegisterMobileEventListener
 RegisterStringToken
 regular expression is too large
 Rejecting connection request from %s (reservation cookie 0x%llx), server is reserved with reservation cookie 0x%llx for %.1f more seconds
@@ -9885,7 +9887,7 @@ r_stereo_eye_separation
 r_stereo_mode_anaglyph
 r_stereo_mode_crossed
 r_stereo_mode_parallel
-Rtj(8-
+Rtj(8/
 r_toggleviewportsize
 r_translucent
 rt+rld
@@ -11659,7 +11661,7 @@ Tj2B9)
 Tj6@y_! k
 TJ#]8
 tj)8t
-tj(8T
+tj(8V
 T`"J9
 Tj"@9J
 TjJ@9
@@ -11944,9 +11946,9 @@ T"zrx
 \U%08x
 u64( %lld = 0x%llX )
 )U7O{
-	u?9/_
 	!U9	
 	U)94
+	u?9/W
 u>Byh2By
 %u CPU%s
 %u[%d]
@@ -12100,7 +12102,7 @@ Unrecognized syntax:
 Unrecognized type '%d'
 Unrecognized unit type for oFFs chunk
 Unrecognized unit type for pHYs chunk
-UnregisterHibernationListener
+UnregisterMobileEventListener
 [Unreliable payload]
 unreserved
 Unresolved object reference '%s'
