@@ -118,18 +118,18 @@ public class AttributeSetNative implements AttributeSet {
     }
 
     public String getClassAttribute() {
-        return getAttributeValue(null, "class");
+        return getAttributeValue((String) null, "class");
     }
 
     public String getIdAttribute() {
-        return getAttributeValue(null, "id");
+        return getAttributeValue((String) null, "id");
     }
 
     public int getIdAttributeResourceValue(int i) {
-        return getAttributeResourceValue(null, "id", i);
+        return getAttributeResourceValue((String) null, "id", i);
     }
 
     public int getStyleAttribute() {
-        return getAttributeResourceValue(null, "style", 0);
+        return getAttributeResourceValue((String) null, "style", 0);
     }
 }

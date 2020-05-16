@@ -1,23 +1,7 @@
 package com.valvesoftware;
 
 import android.util.Log;
-import com.valvesoftware.IStreamingBootStrap.FileSystemQueryResult_t;
-import com.valvesoftware.IStreamingBootStrap.IAccessContextCallback;
-import com.valvesoftware.IStreamingBootStrap.IRequestHandler_Attribute;
-import com.valvesoftware.IStreamingBootStrap.IRequestHandler_FileSystem;
-import com.valvesoftware.IStreamingBootStrap.IRequestHandler_Ping;
-import com.valvesoftware.IStreamingBootStrap.IRequestHandler_Report;
-import com.valvesoftware.IStreamingBootStrap.IRequestHandler_Tunnel;
-import com.valvesoftware.IStreamingBootStrap.IResponseHandler_Attribute;
-import com.valvesoftware.IStreamingBootStrap.IResponseHandler_Base;
-import com.valvesoftware.IStreamingBootStrap.IResponseHandler_FileSystem;
-import com.valvesoftware.IStreamingBootStrap.IResponseHandler_Ping;
-import com.valvesoftware.IStreamingBootStrap.IResponseHandler_Tunnel;
-import com.valvesoftware.IStreamingBootStrap.IStreamHandler;
-import com.valvesoftware.IStreamingBootStrap.IStreamingBootStrapDataHandler;
-import com.valvesoftware.IStreamingBootStrap.IStreamingBootStrapIO;
-import com.valvesoftware.IStreamingBootStrap.IStreamingBootStrapIOImpl;
-import com.valvesoftware.IStreamingBootStrap.StaticHelpers;
+import com.valvesoftware.IStreamingBootStrap;
 import java.lang.ref.WeakReference;
 import java.lang.reflect.Array;
 import java.util.Vector;
@@ -37,23 +21,23 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
     private long[][] m_ChannelPacketCounters = ((long[][]) Array.newInstance(long.class, new int[]{2, 256}));
     private Vector<ContextData_t> m_ContextData = new Vector<>();
     private Lock m_ContextDataMutex = new ReentrantLock();
-    private IStreamingBootStrapIOImpl m_IOHandler;
+    private IStreamingBootStrap.IStreamingBootStrapIOImpl m_IOHandler;
     private Lock m_IOReadMutex = new ReentrantLock();
     private Lock m_IOWriteMutex = new ReentrantLock();
-    private IStreamingBootStrapDataHandler[] m_ImplementationHandlers = new IStreamingBootStrapDataHandler[128];
-    private Vector<IStreamHandler> m_IncomingStreamsByHandle = new Vector<>();
-    private Vector<IStreamHandler> m_IncomingStreamsBySerial = new Vector<>();
+    private IStreamingBootStrap.IStreamingBootStrapDataHandler[] m_ImplementationHandlers = new IStreamingBootStrap.IStreamingBootStrapDataHandler[128];
+    private Vector<IStreamingBootStrap.IStreamHandler> m_IncomingStreamsByHandle = new Vector<>();
+    private Vector<IStreamingBootStrap.IStreamHandler> m_IncomingStreamsBySerial = new Vector<>();
     private ResponseBase_t m_MidResponse = null;
     private Vector<WeakReference<COutgoingStreamImp>> m_OutgoingStreamsByHandle = new Vector<>();
     private Vector<WeakReference<COutgoingStreamImp>> m_OutgoingStreamsBySerial = new Vector<>();
     private long[] m_PreviousResponseID = new long[2];
     private byte[] m_ReadBuffer = null;
     private Lock m_RequestHandlerMutex = new ReentrantLock();
-    private IRequestHandler_Attribute m_RequestHandler_Attribute = null;
-    private IRequestHandler_FileSystem m_RequestHandler_FileSystem = null;
-    private IRequestHandler_Ping m_RequestHandler_Ping = null;
-    private IRequestHandler_Report m_RequestHandler_Report = null;
-    private IRequestHandler_Tunnel m_RequestHandler_Tunnel = null;
+    private IStreamingBootStrap.IRequestHandler_Attribute m_RequestHandler_Attribute = null;
+    private IStreamingBootStrap.IRequestHandler_FileSystem m_RequestHandler_FileSystem = null;
+    private IStreamingBootStrap.IRequestHandler_Ping m_RequestHandler_Ping = null;
+    private IStreamingBootStrap.IRequestHandler_Report m_RequestHandler_Report = null;
+    private IStreamingBootStrap.IRequestHandler_Tunnel m_RequestHandler_Tunnel = null;
     private ConcurrentLinkedQueue<ResponseBase_t> m_ResponseQueue = new ConcurrentLinkedQueue<>();
     private ReadWriteLock m_StreamHandlerRWLock = new ReentrantReadWriteLock();
     private boolean m_bDebug;
@@ -74,22 +58,22 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
     private int m_nRemoteProtocolVersion;
     private long m_nWaitingOnInputBytes = 1;
 
-    private static class AttributeResponse_t extends ResponseBase_t {
-        int m_nSpace;
-        int m_nSubOperation;
+    private static class ResponseBase_t {
+        public IStreamingBootStrap.IResponseHandler_Base m_ResponseHandler;
+        public int m_nOperation;
+        public long m_nPacketID;
 
-        private AttributeResponse_t() {
-            super();
+        private ResponseBase_t() {
         }
     }
 
-    private static class CDebugBootstrapIOHandler extends IStreamingBootStrapIOImpl {
-        public IStreamingBootStrapIOImpl m_RealHandler;
+    private static class CDebugBootstrapIOHandler extends IStreamingBootStrap.IStreamingBootStrapIOImpl {
+        public IStreamingBootStrap.IStreamingBootStrapIOImpl m_RealHandler;
         public boolean m_bSentGoodbye = false;
         public boolean m_bWritable = false;
         public long m_nByteCountdown = 0;
 
-        CDebugBootstrapIOHandler(IStreamingBootStrapIOImpl iStreamingBootStrapIOImpl) {
+        CDebugBootstrapIOHandler(IStreamingBootStrap.IStreamingBootStrapIOImpl iStreamingBootStrapIOImpl) {
             this.m_RealHandler = iStreamingBootStrapIOImpl;
         }
 
@@ -101,7 +85,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             try {
                 this.m_RealHandler.WriteRaw(bArr, i, i2);
             } catch (RuntimeException e) {
-                StaticHelpers.CaughtExternalCodeException(e);
+                IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
             }
         }
 
@@ -109,7 +93,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             try {
                 return this.m_RealHandler.WaitForData(i);
             } catch (RuntimeException e) {
-                StaticHelpers.CaughtExternalCodeException(e);
+                IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
                 return false;
             }
         }
@@ -118,7 +102,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             try {
                 return this.m_RealHandler.ReadData(bArr, i);
             } catch (RuntimeException e) {
-                StaticHelpers.CaughtExternalCodeException(e);
+                IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
                 return 0;
             }
         }
@@ -131,7 +115,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             try {
                 this.m_RealHandler.OnPacketStart(j);
             } catch (RuntimeException e) {
-                StaticHelpers.CaughtExternalCodeException(e);
+                IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
             }
         }
 
@@ -141,7 +125,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             try {
                 this.m_RealHandler.OnPacketEnd();
             } catch (RuntimeException e) {
-                StaticHelpers.CaughtExternalCodeException(e);
+                IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
             }
             this.m_bWritable = false;
         }
@@ -155,74 +139,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         }
     }
 
-    private static class CFileSystemQueryReplyEncoder {
-        public byte[] m_Buffer = new byte[19];
-        public int m_nWrittenBytes;
-
-        public void EncodeResult(FileSystemQueryResult_t fileSystemQueryResult_t) {
-            this.m_Buffer[0] = (byte) fileSystemQueryResult_t.nSetFields;
-            int i = 1;
-            if ((fileSystemQueryResult_t.nSetFields & 1) != 0) {
-                this.m_Buffer[1] = (byte) fileSystemQueryResult_t.nAttributeFlags;
-                i = 2;
-            }
-            if ((fileSystemQueryResult_t.nSetFields & 2) != 0) {
-                i += StaticHelpers.EncodeUVarInt(fileSystemQueryResult_t.nFileSize, this.m_Buffer, i);
-            }
-            if ((fileSystemQueryResult_t.nSetFields & 4) != 0) {
-                IStreamingBootStrapIO.WriteUINT32ToBuffer(fileSystemQueryResult_t.nLastModifiedSecondsSinceEpoch, this.m_Buffer, i);
-                i += 4;
-            }
-            if ((fileSystemQueryResult_t.nSetFields & 8) != 0) {
-                IStreamingBootStrapIO.WriteUINT32ToBuffer((long) fileSystemQueryResult_t.nCRC, this.m_Buffer, i);
-                i += 4;
-            }
-            this.m_nWrittenBytes = i;
-        }
-
-        public static int DecodeResult(byte[] bArr, int i, int i2, FileSystemQueryResult_t fileSystemQueryResult_t) {
-            if (i == i2) {
-                return -1;
-            }
-            fileSystemQueryResult_t.nSetFields = bArr[i];
-            int i3 = i + 1;
-            if ((fileSystemQueryResult_t.nSetFields & 1) != 0) {
-                if (i3 == i2) {
-                    return -1;
-                }
-                fileSystemQueryResult_t.nAttributeFlags = bArr[i3];
-                i3++;
-            }
-            if ((fileSystemQueryResult_t.nSetFields & 2) != 0) {
-                long[] jArr = new long[1];
-                int DecodeUVarInt = StaticHelpers.DecodeUVarInt(bArr, i3, i2, jArr);
-                if (DecodeUVarInt == 0) {
-                    return -1;
-                }
-                fileSystemQueryResult_t.nFileSize = jArr[0];
-                i3 += DecodeUVarInt;
-            }
-            if ((fileSystemQueryResult_t.nSetFields & 4) != 0) {
-                int i4 = i2 - i3;
-                if (i4 < 4) {
-                    return i4 - 4;
-                }
-                fileSystemQueryResult_t.nLastModifiedSecondsSinceEpoch = IStreamingBootStrapIO.ReadUINT32(bArr, i3);
-                i3 += 4;
-            }
-            if ((fileSystemQueryResult_t.nSetFields & 8) != 0) {
-                int i5 = i2 - i3;
-                if (i5 < 4) {
-                    return i5 - 4;
-                }
-                fileSystemQueryResult_t.nCRC = (int) IStreamingBootStrapIO.ReadUINT32(bArr, i3);
-                i3 += 4;
-            }
-            return i3 - i;
-        }
-    }
-
-    private static class COutgoingStreamImp extends IStreamHandler {
+    private static class COutgoingStreamImp extends IStreamingBootStrap.IStreamHandler {
         public StreamingBootStrap_JavaImpl m_Owner;
 
         public COutgoingStreamImp(StreamingBootStrap_JavaImpl streamingBootStrap_JavaImpl) {
@@ -242,29 +159,30 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
 
         public void OnStreamStart(long j) {
             StreamingBootStrap_JavaImpl.Assert(this.m_Owner != null);
-            if (this.m_Owner != null) {
-                if ((this.m_nFlags & 2) != 0) {
-                    StreamingBootStrap_JavaImpl.Assert(false);
-                    return;
-                }
-                this.m_Owner.OutgoingStreamBindToHandle(this);
-                byte[] bArr = new byte[9];
-                int EncodeUVarInt = StaticHelpers.EncodeUVarInt(this.m_nStreamHandle, bArr, 0);
-                byte[] bArr2 = new byte[9];
-                int EncodeUVarInt2 = StaticHelpers.EncodeUVarInt(this.m_nStreamSerial, bArr2, 0);
-                byte[] bArr3 = new byte[9];
-                int EncodeSVarInt = StaticHelpers.EncodeSVarInt(j, bArr3, 0);
-                IStreamingBootStrapIO PacketStart = this.m_Owner.PacketStart(2, (long) (EncodeUVarInt + 1 + EncodeUVarInt2 + EncodeSVarInt));
-                try {
-                    PacketStart.WriteUINT8(0);
-                    PacketStart.WriteRaw(bArr, 0, EncodeUVarInt);
-                    PacketStart.WriteRaw(bArr2, 0, EncodeUVarInt2);
-                    PacketStart.WriteRaw(bArr3, 0, EncodeSVarInt);
-                } catch (RuntimeException e) {
-                    StaticHelpers.CaughtExternalCodeException(e);
-                }
-                this.m_Owner.PacketCompleted();
+            if (this.m_Owner == null) {
+                return;
             }
+            if ((this.m_nFlags & 2) != 0) {
+                StreamingBootStrap_JavaImpl.Assert(false);
+                return;
+            }
+            this.m_Owner.OutgoingStreamBindToHandle(this);
+            byte[] bArr = new byte[9];
+            int EncodeUVarInt = IStreamingBootStrap.StaticHelpers.EncodeUVarInt(this.m_nStreamHandle, bArr, 0);
+            byte[] bArr2 = new byte[9];
+            int EncodeUVarInt2 = IStreamingBootStrap.StaticHelpers.EncodeUVarInt(this.m_nStreamSerial, bArr2, 0);
+            byte[] bArr3 = new byte[9];
+            int EncodeSVarInt = IStreamingBootStrap.StaticHelpers.EncodeSVarInt(j, bArr3, 0);
+            IStreamingBootStrap.IStreamingBootStrapIO PacketStart = this.m_Owner.PacketStart(2, (long) (EncodeUVarInt + 1 + EncodeUVarInt2 + EncodeSVarInt));
+            try {
+                PacketStart.WriteUINT8(0);
+                PacketStart.WriteRaw(bArr, 0, EncodeUVarInt);
+                PacketStart.WriteRaw(bArr2, 0, EncodeUVarInt2);
+                PacketStart.WriteRaw(bArr3, 0, EncodeSVarInt);
+            } catch (RuntimeException e) {
+                IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
+            }
+            this.m_Owner.PacketCompleted();
         }
 
         public void OnStreamEnd(boolean z, boolean z2, String str) {
@@ -287,13 +205,13 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             if (z) {
                 j = j2;
             }
-            int EncodeUVarInt = StaticHelpers.EncodeUVarInt(j, bArr, 0);
+            int EncodeUVarInt = IStreamingBootStrap.StaticHelpers.EncodeUVarInt(j, bArr, 0);
             int i = z2 ? 1 : 0;
             if (z3) {
                 i |= 2;
             }
             int i2 = 2;
-            IStreamingBootStrapIO PacketStart = streamingBootStrap_JavaImpl.PacketStart(2, (long) (EncodeUVarInt + 1 + 1 + (z3 ? IStreamingBootStrapIO.GetStringPayloadSize(str) : 0)));
+            IStreamingBootStrap.IStreamingBootStrapIO PacketStart = streamingBootStrap_JavaImpl.PacketStart(2, (long) (EncodeUVarInt + 1 + 1 + (z3 ? IStreamingBootStrap.IStreamingBootStrapIO.GetStringPayloadSize(str) : 0)));
             if (!z) {
                 i2 = 3;
             }
@@ -305,7 +223,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
                     PacketStart.WriteString(str);
                 }
             } catch (RuntimeException e) {
-                StaticHelpers.CaughtExternalCodeException(e);
+                IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
             }
             streamingBootStrap_JavaImpl.PacketCompleted();
         }
@@ -319,62 +237,21 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             }
             StreamingBootStrap_JavaImpl.Assert((this.m_nFlags & 2) != 0);
             byte[] bArr2 = new byte[9];
-            int EncodeUVarInt = StaticHelpers.EncodeUVarInt(this.m_nStreamHandle, bArr2, 0);
-            IStreamingBootStrapIO PacketStart = this.m_Owner.PacketStart(2, (long) (EncodeUVarInt + 1 + i2));
+            int EncodeUVarInt = IStreamingBootStrap.StaticHelpers.EncodeUVarInt(this.m_nStreamHandle, bArr2, 0);
+            IStreamingBootStrap.IStreamingBootStrapIO PacketStart = this.m_Owner.PacketStart(2, (long) (EncodeUVarInt + 1 + i2));
             try {
                 PacketStart.WriteUINT8(1);
                 PacketStart.WriteRaw(bArr2, 0, EncodeUVarInt);
                 PacketStart.WriteRaw(bArr, i, i2);
             } catch (RuntimeException e) {
-                StaticHelpers.CaughtExternalCodeException(e);
+                IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
             }
             this.m_Owner.PacketCompleted();
             return true;
         }
     }
 
-    private static class ContextData_t {
-        Object context;
-        String sName;
-
-        private ContextData_t() {
-        }
-    }
-
-    private static class FileSystemResponse_t extends ResponseBase_t {
-        IStreamHandler m_OutgoingStream;
-        int m_nSubOperation;
-
-        private FileSystemResponse_t() {
-            super();
-        }
-    }
-
-    private static class PingResponse_t extends ResponseBase_t {
-        private PingResponse_t() {
-            super();
-        }
-    }
-
-    private static class ResponseBase_t {
-        public IResponseHandler_Base m_ResponseHandler;
-        public int m_nOperation;
-        public long m_nPacketID;
-
-        private ResponseBase_t() {
-        }
-    }
-
-    private static class TunnelWaitResponse_t extends ResponseBase_t {
-        IStreamHandler m_OutgoingStream;
-        int m_nSubOperation;
-
-        private TunnelWaitResponse_t() {
-            super();
-        }
-    }
-
-    public void AccessContext(String str, IAccessContextCallback iAccessContextCallback) {
+    public void AccessContext(String str, IStreamingBootStrap.IAccessContextCallback iAccessContextCallback) {
         boolean z;
         Object obj;
         this.m_ContextDataMutex.lock();
@@ -384,7 +261,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             if (i >= this.m_ContextData.size()) {
                 break;
             }
-            int compareTo = ((ContextData_t) this.m_ContextData.elementAt(i)).sName.compareTo(str);
+            int compareTo = this.m_ContextData.elementAt(i).sName.compareTo(str);
             if (compareTo < 0) {
                 i++;
             } else if (compareTo == 0) {
@@ -392,11 +269,11 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             }
         }
         z = false;
-        Object obj2 = z ? ((ContextData_t) this.m_ContextData.elementAt(i)).context : null;
+        Object obj2 = z ? this.m_ContextData.elementAt(i).context : null;
         try {
             obj = iAccessContextCallback.OnAccessContext(str, obj2);
         } catch (RuntimeException e) {
-            StaticHelpers.CaughtExternalCodeException(e);
+            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
             obj = obj2;
         }
         if (obj != obj2) {
@@ -410,7 +287,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
                 contextData_t.context = obj;
                 this.m_ContextData.add(i, contextData_t);
             } else if (obj != null) {
-                ((ContextData_t) this.m_ContextData.elementAt(i)).context = obj;
+                this.m_ContextData.elementAt(i).context = obj;
             } else {
                 this.m_ContextData.removeElementAt(i);
             }
@@ -435,7 +312,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             try {
                 z = this.m_IOHandler.WaitForData(0);
             } catch (RuntimeException e) {
-                StaticHelpers.CaughtExternalCodeException(e);
+                IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
             }
         }
         this.m_IOReadMutex.unlock();
@@ -446,9 +323,6 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
     /* JADX WARNING: Removed duplicated region for block: B:121:0x017e  */
     /* JADX WARNING: Removed duplicated region for block: B:124:0x0176 A[EDGE_INSN: B:124:0x0176->B:118:0x0176 ?: BREAK  , SYNTHETIC] */
     /* JADX WARNING: Removed duplicated region for block: B:25:0x0046  */
-    /* JADX WARNING: Removed duplicated region for block: B:39:0x0066  */
-    /* JADX WARNING: Removed duplicated region for block: B:40:0x0068  */
-    /* JADX WARNING: Removed duplicated region for block: B:48:0x0082  */
     /* Code decompiled incorrectly, please refer to instructions dump. */
     public boolean ProcessIncomingData(int r19) {
         /*
@@ -740,9 +614,9 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.StreamingBootStrap_JavaImpl.ProcessIncomingData(int):boolean");
     }
 
-    public IStreamingBootStrapIO PacketStart(int i, long j) {
+    public IStreamingBootStrap.IStreamingBootStrapIO PacketStart(int i, long j) {
         byte[] bArr = new byte[9];
-        int EncodeUVarInt = StaticHelpers.EncodeUVarInt(j + 1, bArr, 0);
+        int EncodeUVarInt = IStreamingBootStrap.StaticHelpers.EncodeUVarInt(j + 1, bArr, 0);
         long j2 = j + ((long) EncodeUVarInt) + 1;
         this.m_IOWriteMutex.lock();
         this.m_nOutgoingPacketChannel = i;
@@ -751,7 +625,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             this.m_IOHandler.WriteRaw(bArr, 0, EncodeUVarInt);
             this.m_IOHandler.WriteUINT8(i);
         } catch (RuntimeException e) {
-            StaticHelpers.CaughtExternalCodeException(e);
+            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
         }
         this.m_nLastSentDataMS = System.currentTimeMillis();
         return this.m_IOHandler;
@@ -761,7 +635,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         try {
             this.m_IOHandler.OnPacketEnd();
         } catch (RuntimeException e) {
-            StaticHelpers.CaughtExternalCodeException(e);
+            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
         }
         long[] jArr = this.m_ChannelPacketCounters[0];
         int i = this.m_nOutgoingPacketChannel;
@@ -778,7 +652,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         return this.m_ChannelPacketCounters[1][i];
     }
 
-    public boolean RegisterIncomingStreamHandler(long j, IStreamHandler iStreamHandler) {
+    public boolean RegisterIncomingStreamHandler(long j, IStreamingBootStrap.IStreamHandler iStreamHandler) {
         boolean z = false;
         Assert((iStreamHandler.m_nFlags & 1) == 0);
         if ((iStreamHandler.m_nFlags & 1) != 0) {
@@ -793,7 +667,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             if (i >= this.m_IncomingStreamsBySerial.size()) {
                 break;
             }
-            int i2 = (((IStreamHandler) this.m_IncomingStreamsBySerial.elementAt(i)).m_nStreamSerial > j ? 1 : (((IStreamHandler) this.m_IncomingStreamsBySerial.elementAt(i)).m_nStreamSerial == j ? 0 : -1));
+            int i2 = (this.m_IncomingStreamsBySerial.elementAt(i).m_nStreamSerial > j ? 1 : (this.m_IncomingStreamsBySerial.elementAt(i).m_nStreamSerial == j ? 0 : -1));
             if (i2 >= 0) {
                 if (i2 > 0) {
                     size = i;
@@ -814,8 +688,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         return !z;
     }
 
-    public boolean UnregisterIncomingStreamHandler(IStreamHandler iStreamHandler) {
-        boolean z = true;
+    public boolean UnregisterIncomingStreamHandler(IStreamingBootStrap.IStreamHandler iStreamHandler) {
         Assert((iStreamHandler.m_nFlags & 1) != 0);
         if ((iStreamHandler.m_nFlags & 1) == 0) {
             return false;
@@ -831,17 +704,12 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             if (i >= this.m_IncomingStreamsBySerial.size()) {
                 break;
             }
-            IStreamHandler iStreamHandler2 = (IStreamHandler) this.m_IncomingStreamsBySerial.elementAt(i);
-            if (iStreamHandler2.m_nStreamSerial < j) {
+            IStreamingBootStrap.IStreamHandler elementAt = this.m_IncomingStreamsBySerial.elementAt(i);
+            if (elementAt.m_nStreamSerial < j) {
                 i++;
-            } else if (iStreamHandler != iStreamHandler2) {
+            } else if (iStreamHandler != elementAt) {
                 while (i < this.m_IncomingStreamsBySerial.size()) {
-                    StringBuilder sb = new StringBuilder();
-                    sb.append("Unfound remaining element [");
-                    sb.append(i);
-                    sb.append("] serial:");
-                    sb.append(((IStreamHandler) this.m_IncomingStreamsBySerial.elementAt(i)).m_nStreamSerial);
-                    Log.i("com.valvesoftware.StreamingBootStrap_JavaImpl.UnregisterIncomingStreamHandler", sb.toString());
+                    Log.i("com.valvesoftware.StreamingBootStrap_JavaImpl.UnregisterIncomingStreamHandler", "Unfound remaining element [" + i + "] serial:" + this.m_IncomingStreamsBySerial.elementAt(i).m_nStreamSerial);
                     i++;
                 }
             }
@@ -853,14 +721,14 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         iStreamHandler.m_nFlags &= -2;
         iStreamHandler.m_nStreamSerial = IStreamingBootStrap.INT64_MAX;
         writeLock.unlock();
-        if (i == -1) {
-            z = false;
+        if (i != -1) {
+            return true;
         }
-        return z;
+        return false;
     }
 
-    public IStreamHandler CreateSendStream() {
-        return GenerateOutgoingStreamHandler(null);
+    public IStreamingBootStrap.IStreamHandler CreateSendStream() {
+        return GenerateOutgoingStreamHandler((long[]) null);
     }
 
     public int GetConnectionState() {
@@ -871,10 +739,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         if (this.m_bReceivedGoodbye) {
             i = 1;
         }
-        if (this.m_bSentGoodbye) {
-            i |= 2;
-        }
-        return i;
+        return this.m_bSentGoodbye ? i | 2 : i;
     }
 
     public int GetIOHandlerConnectionState() {
@@ -890,22 +755,22 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         }
     }
 
-    public IRequestHandler_Ping GetRequestHandler_Ping() {
+    public IStreamingBootStrap.IRequestHandler_Ping GetRequestHandler_Ping() {
         this.m_RequestHandlerMutex.lock();
-        IRequestHandler_Ping iRequestHandler_Ping = this.m_RequestHandler_Ping;
+        IStreamingBootStrap.IRequestHandler_Ping iRequestHandler_Ping = this.m_RequestHandler_Ping;
         this.m_RequestHandlerMutex.unlock();
         return iRequestHandler_Ping;
     }
 
-    public IRequestHandler_Ping SetRequestHandler_Ping(IRequestHandler_Ping iRequestHandler_Ping) {
+    public IStreamingBootStrap.IRequestHandler_Ping SetRequestHandler_Ping(IStreamingBootStrap.IRequestHandler_Ping iRequestHandler_Ping) {
         this.m_RequestHandlerMutex.lock();
-        IRequestHandler_Ping iRequestHandler_Ping2 = this.m_RequestHandler_Ping;
+        IStreamingBootStrap.IRequestHandler_Ping iRequestHandler_Ping2 = this.m_RequestHandler_Ping;
         this.m_RequestHandler_Ping = iRequestHandler_Ping;
         this.m_RequestHandlerMutex.unlock();
         return iRequestHandler_Ping2;
     }
 
-    public void SendPing(IResponseHandler_Ping iResponseHandler_Ping) {
+    public void SendPing(IStreamingBootStrap.IResponseHandler_Ping iResponseHandler_Ping) {
         PingResponse_t pingResponse_t = null;
         if (iResponseHandler_Ping != null) {
             PingResponse_t pingResponse_t2 = new PingResponse_t();
@@ -913,7 +778,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             pingResponse_t2.m_nOperation = 0;
             pingResponse_t = pingResponse_t2;
         }
-        IStreamingBootStrapIO PacketStart = PacketStart(0, 1);
+        IStreamingBootStrap.IStreamingBootStrapIO PacketStart = PacketStart(0, 1);
         if (pingResponse_t != null) {
             pingResponse_t.m_nPacketID = GetOutgoingPacketID(0);
             this.m_ResponseQueue.add(pingResponse_t);
@@ -921,27 +786,27 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         try {
             PacketStart.WriteUINT8(0);
         } catch (RuntimeException e) {
-            StaticHelpers.CaughtExternalCodeException(e);
+            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
         }
         PacketCompleted();
     }
 
-    public IRequestHandler_Attribute GetRequestHandler_Attribute() {
+    public IStreamingBootStrap.IRequestHandler_Attribute GetRequestHandler_Attribute() {
         this.m_RequestHandlerMutex.lock();
-        IRequestHandler_Attribute iRequestHandler_Attribute = this.m_RequestHandler_Attribute;
+        IStreamingBootStrap.IRequestHandler_Attribute iRequestHandler_Attribute = this.m_RequestHandler_Attribute;
         this.m_RequestHandlerMutex.unlock();
         return iRequestHandler_Attribute;
     }
 
-    public IRequestHandler_Attribute SetRequestHandler_Attribute(IRequestHandler_Attribute iRequestHandler_Attribute) {
+    public IStreamingBootStrap.IRequestHandler_Attribute SetRequestHandler_Attribute(IStreamingBootStrap.IRequestHandler_Attribute iRequestHandler_Attribute) {
         this.m_RequestHandlerMutex.lock();
-        IRequestHandler_Attribute iRequestHandler_Attribute2 = this.m_RequestHandler_Attribute;
+        IStreamingBootStrap.IRequestHandler_Attribute iRequestHandler_Attribute2 = this.m_RequestHandler_Attribute;
         this.m_RequestHandler_Attribute = iRequestHandler_Attribute;
         this.m_RequestHandlerMutex.unlock();
         return iRequestHandler_Attribute2;
     }
 
-    public void GetAttributeValue(String str, IResponseHandler_Attribute iResponseHandler_Attribute) {
+    public void GetAttributeValue(String str, IStreamingBootStrap.IResponseHandler_Attribute iResponseHandler_Attribute) {
         AttributeResponse_t attributeResponse_t = null;
         if (iResponseHandler_Attribute != null) {
             AttributeResponse_t attributeResponse_t2 = new AttributeResponse_t();
@@ -951,7 +816,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             attributeResponse_t2.m_nSpace = 0;
             attributeResponse_t = attributeResponse_t2;
         }
-        IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrapIO.GetStringPayloadSize(str) + 2));
+        IStreamingBootStrap.IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrap.IStreamingBootStrapIO.GetStringPayloadSize(str) + 2));
         if (attributeResponse_t != null) {
             attributeResponse_t.m_nPacketID = GetOutgoingPacketID(0);
             this.m_ResponseQueue.add(attributeResponse_t);
@@ -961,12 +826,12 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             PacketStart.WriteUINT8(0);
             PacketStart.WriteString(str);
         } catch (RuntimeException e) {
-            StaticHelpers.CaughtExternalCodeException(e);
+            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
         }
         PacketCompleted();
     }
 
-    public void SetAttributeValue(String str, int i, String str2, IResponseHandler_Attribute iResponseHandler_Attribute) {
+    public void SetAttributeValue(String str, int i, String str2, IStreamingBootStrap.IResponseHandler_Attribute iResponseHandler_Attribute) {
         AttributeResponse_t attributeResponse_t = null;
         if (iResponseHandler_Attribute != null) {
             AttributeResponse_t attributeResponse_t2 = new AttributeResponse_t();
@@ -976,7 +841,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             attributeResponse_t2.m_nSpace = i;
             attributeResponse_t = attributeResponse_t2;
         }
-        IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrapIO.GetStringPayloadSize(str) + 2 + 1 + IStreamingBootStrapIO.GetStringPayloadSize(str2)));
+        IStreamingBootStrap.IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrap.IStreamingBootStrapIO.GetStringPayloadSize(str) + 2 + 1 + IStreamingBootStrap.IStreamingBootStrapIO.GetStringPayloadSize(str2)));
         if (attributeResponse_t != null) {
             attributeResponse_t.m_nPacketID = GetOutgoingPacketID(0);
             this.m_ResponseQueue.add(attributeResponse_t);
@@ -988,27 +853,27 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             PacketStart.WriteUINT8(i);
             PacketStart.WriteString(str2);
         } catch (RuntimeException e) {
-            StaticHelpers.CaughtExternalCodeException(e);
+            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
         }
         PacketCompleted();
     }
 
-    public IRequestHandler_FileSystem GetRequestHandler_FileSystem() {
+    public IStreamingBootStrap.IRequestHandler_FileSystem GetRequestHandler_FileSystem() {
         this.m_RequestHandlerMutex.lock();
-        IRequestHandler_FileSystem iRequestHandler_FileSystem = this.m_RequestHandler_FileSystem;
+        IStreamingBootStrap.IRequestHandler_FileSystem iRequestHandler_FileSystem = this.m_RequestHandler_FileSystem;
         this.m_RequestHandlerMutex.unlock();
         return iRequestHandler_FileSystem;
     }
 
-    public IRequestHandler_FileSystem SetRequestHandler_FileSystem(IRequestHandler_FileSystem iRequestHandler_FileSystem) {
+    public IStreamingBootStrap.IRequestHandler_FileSystem SetRequestHandler_FileSystem(IStreamingBootStrap.IRequestHandler_FileSystem iRequestHandler_FileSystem) {
         this.m_RequestHandlerMutex.lock();
-        IRequestHandler_FileSystem iRequestHandler_FileSystem2 = this.m_RequestHandler_FileSystem;
+        IStreamingBootStrap.IRequestHandler_FileSystem iRequestHandler_FileSystem2 = this.m_RequestHandler_FileSystem;
         this.m_RequestHandler_FileSystem = iRequestHandler_FileSystem;
         this.m_RequestHandlerMutex.unlock();
         return iRequestHandler_FileSystem2;
     }
 
-    public void QueryFile(String str, int i, IResponseHandler_FileSystem iResponseHandler_FileSystem) {
+    public void QueryFile(String str, int i, IStreamingBootStrap.IResponseHandler_FileSystem iResponseHandler_FileSystem) {
         FileSystemResponse_t fileSystemResponse_t = null;
         if (iResponseHandler_FileSystem != null) {
             FileSystemResponse_t fileSystemResponse_t2 = new FileSystemResponse_t();
@@ -1017,7 +882,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             fileSystemResponse_t2.m_nSubOperation = 0;
             fileSystemResponse_t = fileSystemResponse_t2;
         }
-        IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrapIO.GetStringPayloadSize(str) + 2 + 1));
+        IStreamingBootStrap.IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrap.IStreamingBootStrapIO.GetStringPayloadSize(str) + 2 + 1));
         if (fileSystemResponse_t != null) {
             fileSystemResponse_t.m_nPacketID = GetOutgoingPacketID(0);
             this.m_ResponseQueue.add(fileSystemResponse_t);
@@ -1028,12 +893,12 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             PacketStart.WriteString(str);
             PacketStart.WriteUINT8(i);
         } catch (RuntimeException e) {
-            StaticHelpers.CaughtExternalCodeException(e);
+            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
         }
         PacketCompleted();
     }
 
-    public void ListDirectory(String str, int i, IResponseHandler_FileSystem iResponseHandler_FileSystem) {
+    public void ListDirectory(String str, int i, IStreamingBootStrap.IResponseHandler_FileSystem iResponseHandler_FileSystem) {
         FileSystemResponse_t fileSystemResponse_t = null;
         if (iResponseHandler_FileSystem != null) {
             FileSystemResponse_t fileSystemResponse_t2 = new FileSystemResponse_t();
@@ -1042,7 +907,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             fileSystemResponse_t2.m_nSubOperation = 1;
             fileSystemResponse_t = fileSystemResponse_t2;
         }
-        IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrapIO.GetStringPayloadSize(str) + 2 + 1));
+        IStreamingBootStrap.IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrap.IStreamingBootStrapIO.GetStringPayloadSize(str) + 2 + 1));
         if (fileSystemResponse_t != null) {
             fileSystemResponse_t.m_nPacketID = GetOutgoingPacketID(0);
             this.m_ResponseQueue.add(fileSystemResponse_t);
@@ -1053,12 +918,12 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             PacketStart.WriteString(str);
             PacketStart.WriteUINT8(i);
         } catch (RuntimeException e) {
-            StaticHelpers.CaughtExternalCodeException(e);
+            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
         }
         PacketCompleted();
     }
 
-    public void DeleteFileOrDirectory(String str, IResponseHandler_FileSystem iResponseHandler_FileSystem) {
+    public void DeleteFileOrDirectory(String str, IStreamingBootStrap.IResponseHandler_FileSystem iResponseHandler_FileSystem) {
         FileSystemResponse_t fileSystemResponse_t = null;
         if (iResponseHandler_FileSystem != null) {
             FileSystemResponse_t fileSystemResponse_t2 = new FileSystemResponse_t();
@@ -1067,7 +932,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             fileSystemResponse_t2.m_nSubOperation = 3;
             fileSystemResponse_t = fileSystemResponse_t2;
         }
-        IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrapIO.GetStringPayloadSize(str) + 2));
+        IStreamingBootStrap.IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrap.IStreamingBootStrapIO.GetStringPayloadSize(str) + 2));
         if (fileSystemResponse_t != null) {
             fileSystemResponse_t.m_nPacketID = GetOutgoingPacketID(0);
             this.m_ResponseQueue.add(fileSystemResponse_t);
@@ -1077,14 +942,14 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             PacketStart.WriteUINT8(3);
             PacketStart.WriteString(str);
         } catch (RuntimeException e) {
-            StaticHelpers.CaughtExternalCodeException(e);
+            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
         }
         PacketCompleted();
     }
 
-    public IStreamHandler StoreFile(String str, IResponseHandler_FileSystem iResponseHandler_FileSystem) {
+    public IStreamingBootStrap.IStreamHandler StoreFile(String str, IStreamingBootStrap.IResponseHandler_FileSystem iResponseHandler_FileSystem) {
         FileSystemResponse_t fileSystemResponse_t = null;
-        IStreamHandler GenerateOutgoingStreamHandler = GenerateOutgoingStreamHandler(null);
+        IStreamingBootStrap.IStreamHandler GenerateOutgoingStreamHandler = GenerateOutgoingStreamHandler((long[]) null);
         if (iResponseHandler_FileSystem != null) {
             FileSystemResponse_t fileSystemResponse_t2 = new FileSystemResponse_t();
             fileSystemResponse_t2.m_ResponseHandler = iResponseHandler_FileSystem;
@@ -1094,8 +959,8 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             fileSystemResponse_t = fileSystemResponse_t2;
         }
         byte[] bArr = new byte[9];
-        int EncodeUVarInt = StaticHelpers.EncodeUVarInt(GenerateOutgoingStreamHandler.m_nStreamSerial, bArr, 0);
-        IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrapIO.GetStringPayloadSize(str) + 2 + EncodeUVarInt + 1));
+        int EncodeUVarInt = IStreamingBootStrap.StaticHelpers.EncodeUVarInt(GenerateOutgoingStreamHandler.m_nStreamSerial, bArr, 0);
+        IStreamingBootStrap.IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrap.IStreamingBootStrapIO.GetStringPayloadSize(str) + 2 + EncodeUVarInt + 1));
         if (fileSystemResponse_t != null) {
             fileSystemResponse_t.m_nPacketID = GetOutgoingPacketID(0);
             this.m_ResponseQueue.add(fileSystemResponse_t);
@@ -1107,13 +972,13 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             PacketStart.WriteRaw(bArr, 0, EncodeUVarInt);
             PacketStart.WriteUINT8(0);
         } catch (RuntimeException e) {
-            StaticHelpers.CaughtExternalCodeException(e);
+            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
         }
         PacketCompleted();
         return GenerateOutgoingStreamHandler;
     }
 
-    public void RetrieveFile(String str, IResponseHandler_FileSystem iResponseHandler_FileSystem) {
+    public void RetrieveFile(String str, IStreamingBootStrap.IResponseHandler_FileSystem iResponseHandler_FileSystem) {
         FileSystemResponse_t fileSystemResponse_t = null;
         if (iResponseHandler_FileSystem != null) {
             FileSystemResponse_t fileSystemResponse_t2 = new FileSystemResponse_t();
@@ -1122,7 +987,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             fileSystemResponse_t2.m_nSubOperation = 5;
             fileSystemResponse_t = fileSystemResponse_t2;
         }
-        IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrapIO.GetStringPayloadSize(str) + 2));
+        IStreamingBootStrap.IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrap.IStreamingBootStrapIO.GetStringPayloadSize(str) + 2));
         if (fileSystemResponse_t != null) {
             fileSystemResponse_t.m_nPacketID = GetOutgoingPacketID(0);
             this.m_ResponseQueue.add(fileSystemResponse_t);
@@ -1132,40 +997,40 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             PacketStart.WriteUINT8(5);
             PacketStart.WriteString(str);
         } catch (RuntimeException e) {
-            StaticHelpers.CaughtExternalCodeException(e);
+            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
         }
         PacketCompleted();
     }
 
-    public IRequestHandler_Report GetRequestHandler_Report() {
+    public IStreamingBootStrap.IRequestHandler_Report GetRequestHandler_Report() {
         this.m_RequestHandlerMutex.lock();
-        IRequestHandler_Report iRequestHandler_Report = this.m_RequestHandler_Report;
+        IStreamingBootStrap.IRequestHandler_Report iRequestHandler_Report = this.m_RequestHandler_Report;
         this.m_RequestHandlerMutex.unlock();
         return iRequestHandler_Report;
     }
 
-    public IRequestHandler_Report SetRequestHandler_Report(IRequestHandler_Report iRequestHandler_Report) {
+    public IStreamingBootStrap.IRequestHandler_Report SetRequestHandler_Report(IStreamingBootStrap.IRequestHandler_Report iRequestHandler_Report) {
         this.m_RequestHandlerMutex.lock();
-        IRequestHandler_Report iRequestHandler_Report2 = this.m_RequestHandler_Report;
+        IStreamingBootStrap.IRequestHandler_Report iRequestHandler_Report2 = this.m_RequestHandler_Report;
         this.m_RequestHandler_Report = iRequestHandler_Report;
         this.m_RequestHandlerMutex.unlock();
         return iRequestHandler_Report2;
     }
 
     public void ReportAssertionFailure(String str) {
-        IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrapIO.GetStringPayloadSize(str) + 2));
+        IStreamingBootStrap.IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrap.IStreamingBootStrapIO.GetStringPayloadSize(str) + 2));
         try {
             PacketStart.WriteUINT8(5);
             PacketStart.WriteUINT8(0);
             PacketStart.WriteString(str);
         } catch (RuntimeException e) {
-            StaticHelpers.CaughtExternalCodeException(e);
+            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
         }
         PacketCompleted();
     }
 
     public void ReportDroppedPacket(int i, long j, int i2) {
-        IStreamingBootStrapIO PacketStart = PacketStart(0, 15);
+        IStreamingBootStrap.IStreamingBootStrapIO PacketStart = PacketStart(0, 15);
         try {
             PacketStart.WriteUINT8(5);
             PacketStart.WriteUINT8(1);
@@ -1173,7 +1038,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             PacketStart.WriteUINT64(j);
             PacketStart.WriteUINT32((long) i2);
         } catch (RuntimeException e) {
-            StaticHelpers.CaughtExternalCodeException(e);
+            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
         }
         PacketCompleted();
     }
@@ -1183,15 +1048,15 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             str = "";
         }
         for (int i = 0; i < this.m_OutgoingStreamsBySerial.size(); i++) {
-            ((COutgoingStreamImp) ((WeakReference) this.m_OutgoingStreamsBySerial.elementAt(i)).get()).ConnectionShuttingDown();
+            ((COutgoingStreamImp) this.m_OutgoingStreamsBySerial.elementAt(i).get()).ConnectionShuttingDown();
         }
-        IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrapIO.GetStringPayloadSize(str) + 2));
+        IStreamingBootStrap.IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrap.IStreamingBootStrapIO.GetStringPayloadSize(str) + 2));
         try {
             PacketStart.WriteUINT8(5);
             PacketStart.WriteUINT8(2);
             PacketStart.WriteString(str);
         } catch (RuntimeException e) {
-            StaticHelpers.CaughtExternalCodeException(e);
+            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
         }
         this.m_bSentGoodbye = true;
         if (this.m_bDebug) {
@@ -1205,34 +1070,34 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         Lock writeLock = this.m_StreamHandlerRWLock.writeLock();
         writeLock.lock();
         while (this.m_IncomingStreamsBySerial.size() != 0) {
-            IStreamHandler iStreamHandler = (IStreamHandler) this.m_IncomingStreamsBySerial.elementAt(0);
-            iStreamHandler.OnStreamEnd(true, true, "Remote bootstrap connection shutdown");
-            UnregisterIncomingStreamHandler(iStreamHandler);
+            IStreamingBootStrap.IStreamHandler elementAt = this.m_IncomingStreamsBySerial.elementAt(0);
+            elementAt.OnStreamEnd(true, true, "Remote bootstrap connection shutdown");
+            UnregisterIncomingStreamHandler(elementAt);
         }
         writeLock.unlock();
     }
 
-    public IRequestHandler_Tunnel GetRequestHandler_Tunnel() {
+    public IStreamingBootStrap.IRequestHandler_Tunnel GetRequestHandler_Tunnel() {
         this.m_RequestHandlerMutex.lock();
-        IRequestHandler_Tunnel iRequestHandler_Tunnel = this.m_RequestHandler_Tunnel;
+        IStreamingBootStrap.IRequestHandler_Tunnel iRequestHandler_Tunnel = this.m_RequestHandler_Tunnel;
         this.m_RequestHandlerMutex.unlock();
         return iRequestHandler_Tunnel;
     }
 
-    public IRequestHandler_Tunnel SetRequestHandler_Tunnel(IRequestHandler_Tunnel iRequestHandler_Tunnel) {
+    public IStreamingBootStrap.IRequestHandler_Tunnel SetRequestHandler_Tunnel(IStreamingBootStrap.IRequestHandler_Tunnel iRequestHandler_Tunnel) {
         this.m_RequestHandlerMutex.lock();
-        IRequestHandler_Tunnel iRequestHandler_Tunnel2 = this.m_RequestHandler_Tunnel;
+        IStreamingBootStrap.IRequestHandler_Tunnel iRequestHandler_Tunnel2 = this.m_RequestHandler_Tunnel;
         this.m_RequestHandler_Tunnel = iRequestHandler_Tunnel;
         this.m_RequestHandlerMutex.unlock();
         return iRequestHandler_Tunnel2;
     }
 
-    public void Tunnel_Connect(int i, String str, long j, IResponseHandler_Tunnel iResponseHandler_Tunnel) {
+    public void Tunnel_Connect(int i, String str, long j, IStreamingBootStrap.IResponseHandler_Tunnel iResponseHandler_Tunnel) {
         if (str == null) {
             str = "";
         }
         TunnelWaitResponse_t tunnelWaitResponse_t = null;
-        IStreamHandler GenerateOutgoingStreamHandler = GenerateOutgoingStreamHandler(null);
+        IStreamingBootStrap.IStreamHandler GenerateOutgoingStreamHandler = GenerateOutgoingStreamHandler((long[]) null);
         if (iResponseHandler_Tunnel != null) {
             TunnelWaitResponse_t tunnelWaitResponse_t2 = new TunnelWaitResponse_t();
             tunnelWaitResponse_t2.m_ResponseHandler = iResponseHandler_Tunnel;
@@ -1241,12 +1106,11 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             tunnelWaitResponse_t2.m_OutgoingStream = GenerateOutgoingStreamHandler;
             tunnelWaitResponse_t = tunnelWaitResponse_t2;
         }
-        int SBS_strlen = StaticHelpers.SBS_strlen(str) + 1;
         byte[] bArr = new byte[9];
-        int EncodeUVarInt = StaticHelpers.EncodeUVarInt(j, bArr, 0);
+        int EncodeUVarInt = IStreamingBootStrap.StaticHelpers.EncodeUVarInt(j, bArr, 0);
         byte[] bArr2 = new byte[9];
-        int EncodeUVarInt2 = StaticHelpers.EncodeUVarInt(GenerateOutgoingStreamHandler.m_nStreamSerial, bArr2, 0);
-        IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (SBS_strlen + 3 + EncodeUVarInt + EncodeUVarInt2));
+        int EncodeUVarInt2 = IStreamingBootStrap.StaticHelpers.EncodeUVarInt(GenerateOutgoingStreamHandler.m_nStreamSerial, bArr2, 0);
+        IStreamingBootStrap.IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrap.StaticHelpers.SBS_strlen(str) + 1 + 3 + EncodeUVarInt + EncodeUVarInt2));
         if (tunnelWaitResponse_t != null) {
             tunnelWaitResponse_t.m_nPacketID = GetOutgoingPacketID(0);
             this.m_ResponseQueue.add(tunnelWaitResponse_t);
@@ -1259,17 +1123,17 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             PacketStart.WriteRaw(bArr, 0, EncodeUVarInt);
             PacketStart.WriteRaw(bArr2, 0, EncodeUVarInt2);
         } catch (RuntimeException e) {
-            StaticHelpers.CaughtExternalCodeException(e);
+            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
         }
         PacketCompleted();
     }
 
-    public void Tunnel_Listen(int i, String str, long j, IResponseHandler_Tunnel iResponseHandler_Tunnel) {
+    public void Tunnel_Listen(int i, String str, long j, IStreamingBootStrap.IResponseHandler_Tunnel iResponseHandler_Tunnel) {
         if (str == null) {
             str = "";
         }
         TunnelWaitResponse_t tunnelWaitResponse_t = null;
-        IStreamHandler GenerateOutgoingStreamHandler = GenerateOutgoingStreamHandler(null);
+        IStreamingBootStrap.IStreamHandler GenerateOutgoingStreamHandler = GenerateOutgoingStreamHandler((long[]) null);
         if (iResponseHandler_Tunnel != null) {
             TunnelWaitResponse_t tunnelWaitResponse_t2 = new TunnelWaitResponse_t();
             tunnelWaitResponse_t2.m_ResponseHandler = iResponseHandler_Tunnel;
@@ -1278,12 +1142,11 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             tunnelWaitResponse_t2.m_OutgoingStream = GenerateOutgoingStreamHandler;
             tunnelWaitResponse_t = tunnelWaitResponse_t2;
         }
-        int SBS_strlen = StaticHelpers.SBS_strlen(str) + 1;
         byte[] bArr = new byte[9];
-        int EncodeUVarInt = StaticHelpers.EncodeUVarInt(j, bArr, 0);
+        int EncodeUVarInt = IStreamingBootStrap.StaticHelpers.EncodeUVarInt(j, bArr, 0);
         byte[] bArr2 = new byte[9];
-        int EncodeUVarInt2 = StaticHelpers.EncodeUVarInt(GenerateOutgoingStreamHandler.m_nStreamSerial, bArr2, 0);
-        IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (SBS_strlen + 3 + EncodeUVarInt + EncodeUVarInt2));
+        int EncodeUVarInt2 = IStreamingBootStrap.StaticHelpers.EncodeUVarInt(GenerateOutgoingStreamHandler.m_nStreamSerial, bArr2, 0);
+        IStreamingBootStrap.IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrap.StaticHelpers.SBS_strlen(str) + 1 + 3 + EncodeUVarInt + EncodeUVarInt2));
         if (tunnelWaitResponse_t != null) {
             tunnelWaitResponse_t.m_nPacketID = GetOutgoingPacketID(0);
             this.m_ResponseQueue.add(tunnelWaitResponse_t);
@@ -1296,21 +1159,20 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             PacketStart.WriteRaw(bArr, 0, EncodeUVarInt);
             PacketStart.WriteRaw(bArr2, 0, EncodeUVarInt2);
         } catch (RuntimeException e) {
-            StaticHelpers.CaughtExternalCodeException(e);
+            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
         }
         PacketCompleted();
     }
 
-    public void Tunnel_EmbedConnection(String str, long j, String str2, long j2, IResponseHandler_Tunnel iResponseHandler_Tunnel) {
-        String str3 = "";
+    public void Tunnel_EmbedConnection(String str, long j, String str2, long j2, IStreamingBootStrap.IResponseHandler_Tunnel iResponseHandler_Tunnel) {
         if (str == null) {
-            str = str3;
+            str = "";
         }
         if (str2 == null) {
-            str2 = str3;
+            str2 = "";
         }
         TunnelWaitResponse_t tunnelWaitResponse_t = null;
-        IStreamHandler GenerateOutgoingStreamHandler = GenerateOutgoingStreamHandler(null);
+        IStreamingBootStrap.IStreamHandler GenerateOutgoingStreamHandler = GenerateOutgoingStreamHandler((long[]) null);
         if (iResponseHandler_Tunnel != null) {
             TunnelWaitResponse_t tunnelWaitResponse_t2 = new TunnelWaitResponse_t();
             tunnelWaitResponse_t2.m_ResponseHandler = iResponseHandler_Tunnel;
@@ -1320,12 +1182,12 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             tunnelWaitResponse_t = tunnelWaitResponse_t2;
         }
         byte[] bArr = new byte[9];
-        int EncodeUVarInt = StaticHelpers.EncodeUVarInt(j, bArr, 0);
+        int EncodeUVarInt = IStreamingBootStrap.StaticHelpers.EncodeUVarInt(j, bArr, 0);
         byte[] bArr2 = new byte[9];
-        int EncodeUVarInt2 = StaticHelpers.EncodeUVarInt(j2, bArr2, 0);
+        int EncodeUVarInt2 = IStreamingBootStrap.StaticHelpers.EncodeUVarInt(j2, bArr2, 0);
         byte[] bArr3 = new byte[9];
-        int EncodeUVarInt3 = StaticHelpers.EncodeUVarInt(GenerateOutgoingStreamHandler.m_nStreamSerial, bArr3, 0);
-        IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrapIO.GetStringPayloadSize(str) + 2 + EncodeUVarInt + IStreamingBootStrapIO.GetStringPayloadSize(str2) + EncodeUVarInt2 + EncodeUVarInt3));
+        int EncodeUVarInt3 = IStreamingBootStrap.StaticHelpers.EncodeUVarInt(GenerateOutgoingStreamHandler.m_nStreamSerial, bArr3, 0);
+        IStreamingBootStrap.IStreamingBootStrapIO PacketStart = PacketStart(0, (long) (IStreamingBootStrap.IStreamingBootStrapIO.GetStringPayloadSize(str) + 2 + EncodeUVarInt + IStreamingBootStrap.IStreamingBootStrapIO.GetStringPayloadSize(str2) + EncodeUVarInt2 + EncodeUVarInt3));
         if (tunnelWaitResponse_t != null) {
             tunnelWaitResponse_t.m_nPacketID = GetOutgoingPacketID(0);
             this.m_ResponseQueue.add(tunnelWaitResponse_t);
@@ -1339,12 +1201,12 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             PacketStart.WriteRaw(bArr2, 0, EncodeUVarInt2);
             PacketStart.WriteRaw(bArr3, 0, EncodeUVarInt3);
         } catch (RuntimeException e) {
-            StaticHelpers.CaughtExternalCodeException(e);
+            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
         }
         PacketCompleted();
     }
 
-    public StreamingBootStrap_JavaImpl(IStreamingBootStrapIOImpl iStreamingBootStrapIOImpl, int i, boolean z) {
+    public StreamingBootStrap_JavaImpl(IStreamingBootStrap.IStreamingBootStrapIOImpl iStreamingBootStrapIOImpl, int i, boolean z) {
         this.m_IOHandler = iStreamingBootStrapIOImpl;
         this.m_nRemoteProtocolVersion = i;
         this.m_bDebug = z;
@@ -1373,7 +1235,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         this.m_IOHandler.OwnerInstanceDestructing(this);
     }
 
-    /* access modifiers changed from: 0000 */
+    /* access modifiers changed from: package-private */
     /* JADX WARNING: Code restructure failed: missing block: B:15:0x0057, code lost:
         if (r8 == 0) goto L_0x005e;
      */
@@ -1484,7 +1346,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.StreamingBootStrap_JavaImpl.GenerateOutgoingStreamHandler(long[]):com.valvesoftware.IStreamingBootStrap$IStreamHandler");
     }
 
-    /* access modifiers changed from: 0000 */
+    /* access modifiers changed from: package-private */
     /* JADX WARNING: Code restructure failed: missing block: B:6:0x0023, code lost:
         if (r7 == r4) goto L_0x002a;
      */
@@ -1577,11 +1439,11 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.StreamingBootStrap_JavaImpl.GetIncomingStreamByHandle(long):com.valvesoftware.IStreamingBootStrap$IStreamHandler");
     }
 
-    /* access modifiers changed from: 0000 */
-    public IStreamHandler IncomingStreamBindToHandle(long j, long j2) {
+    /* access modifiers changed from: package-private */
+    public IStreamingBootStrap.IStreamHandler IncomingStreamBindToHandle(long j, long j2) {
         Lock writeLock = this.m_StreamHandlerRWLock.writeLock();
         writeLock.lock();
-        IStreamHandler GetIncomingStreamBySerial = GetIncomingStreamBySerial(j);
+        IStreamingBootStrap.IStreamHandler GetIncomingStreamBySerial = GetIncomingStreamBySerial(j);
         if (GetIncomingStreamBySerial != null) {
             boolean z = true;
             Assert((GetIncomingStreamBySerial.m_nFlags & 2) == 0);
@@ -1591,7 +1453,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
                 if (i >= this.m_IncomingStreamsByHandle.size()) {
                     break;
                 }
-                int i2 = (((IStreamHandler) this.m_IncomingStreamsByHandle.elementAt(i)).m_nStreamHandle > j2 ? 1 : (((IStreamHandler) this.m_IncomingStreamsByHandle.elementAt(i)).m_nStreamHandle == j2 ? 0 : -1));
+                int i2 = (this.m_IncomingStreamsByHandle.elementAt(i).m_nStreamHandle > j2 ? 1 : (this.m_IncomingStreamsByHandle.elementAt(i).m_nStreamHandle == j2 ? 0 : -1));
                 if (i2 >= 0) {
                     if (i2 == 0) {
                         z = false;
@@ -1610,8 +1472,8 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         return GetIncomingStreamBySerial;
     }
 
-    /* access modifiers changed from: 0000 */
-    public void IncomingStreamUnbindHandle(IStreamHandler iStreamHandler) {
+    /* access modifiers changed from: package-private */
+    public void IncomingStreamUnbindHandle(IStreamingBootStrap.IStreamHandler iStreamHandler) {
         if ((iStreamHandler.m_nFlags & 2) != 0) {
             Lock writeLock = this.m_StreamHandlerRWLock.writeLock();
             writeLock.lock();
@@ -1640,7 +1502,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         }
     }
 
-    /* access modifiers changed from: 0000 */
+    /* access modifiers changed from: package-private */
     public void OutgoingStreamBindToHandle(COutgoingStreamImp cOutgoingStreamImp) {
         int i = 0;
         Assert((cOutgoingStreamImp.m_nFlags & 2) == 0);
@@ -1652,7 +1514,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             if (i >= this.m_OutgoingStreamsByHandle.size()) {
                 i = size;
                 break;
-            } else if (((COutgoingStreamImp) ((WeakReference) this.m_OutgoingStreamsByHandle.elementAt(i)).get()).m_nStreamHandle > ((long) i)) {
+            } else if (((COutgoingStreamImp) this.m_OutgoingStreamsByHandle.elementAt(i).get()).m_nStreamHandle > ((long) i)) {
                 break;
             } else {
                 i++;
@@ -1664,7 +1526,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         writeLock.unlock();
     }
 
-    /* access modifiers changed from: 0000 */
+    /* access modifiers changed from: package-private */
     public void OutgoingStreamUnbindHandle(COutgoingStreamImp cOutgoingStreamImp) {
         Assert((cOutgoingStreamImp.m_nFlags & 2) != 0);
         Lock writeLock = this.m_StreamHandlerRWLock.writeLock();
@@ -1673,7 +1535,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         while (true) {
             size--;
             if (size >= 0) {
-                COutgoingStreamImp cOutgoingStreamImp2 = (COutgoingStreamImp) ((WeakReference) this.m_OutgoingStreamsByHandle.elementAt(size)).get();
+                COutgoingStreamImp cOutgoingStreamImp2 = (COutgoingStreamImp) this.m_OutgoingStreamsByHandle.elementAt(size).get();
                 if (cOutgoingStreamImp2 == null || cOutgoingStreamImp2 == cOutgoingStreamImp) {
                     this.m_OutgoingStreamsByHandle.removeElementAt(size);
                 }
@@ -1686,7 +1548,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         }
     }
 
-    /* access modifiers changed from: 0000 */
+    /* access modifiers changed from: package-private */
     public void OutgoingStreamClosed(COutgoingStreamImp cOutgoingStreamImp) {
         Assert((cOutgoingStreamImp.m_nFlags & 2) == 0);
         Lock writeLock = this.m_StreamHandlerRWLock.writeLock();
@@ -1695,7 +1557,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         while (true) {
             size--;
             if (size >= 0) {
-                COutgoingStreamImp cOutgoingStreamImp2 = (COutgoingStreamImp) ((WeakReference) this.m_OutgoingStreamsBySerial.elementAt(size)).get();
+                COutgoingStreamImp cOutgoingStreamImp2 = (COutgoingStreamImp) this.m_OutgoingStreamsBySerial.elementAt(size).get();
                 if (cOutgoingStreamImp2 == null || cOutgoingStreamImp2 == cOutgoingStreamImp) {
                     this.m_OutgoingStreamsBySerial.removeElementAt(size);
                 }
@@ -1708,18 +1570,24 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         }
     }
 
-    private IStreamingBootStrapIO BeginRequestResponse(long j) {
+    private IStreamingBootStrap.IStreamingBootStrapIO BeginRequestResponse(long j) {
         long j2 = this.m_ChannelPacketCounters[1][0];
         byte[] bArr = new byte[9];
-        int EncodeUVarInt = StaticHelpers.EncodeUVarInt(j2 - this.m_PreviousResponseID[1], bArr, 0);
-        IStreamingBootStrapIO PacketStart = PacketStart(1, ((long) EncodeUVarInt) + j);
+        int EncodeUVarInt = IStreamingBootStrap.StaticHelpers.EncodeUVarInt(j2 - this.m_PreviousResponseID[1], bArr, 0);
+        IStreamingBootStrap.IStreamingBootStrapIO PacketStart = PacketStart(1, ((long) EncodeUVarInt) + j);
         try {
             PacketStart.WriteRaw(bArr, 0, EncodeUVarInt);
         } catch (RuntimeException e) {
-            StaticHelpers.CaughtExternalCodeException(e);
+            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
         }
         this.m_PreviousResponseID[1] = j2;
         return PacketStart;
+    }
+
+    private static class PingResponse_t extends ResponseBase_t {
+        private PingResponse_t() {
+            super();
+        }
     }
 
     private long OnRequestReceived_Ping(byte[] bArr, int i, int i2, long j, long j2) {
@@ -1727,20 +1595,20 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             return Long.MIN_VALUE;
         }
         this.m_RequestHandlerMutex.lock();
-        IRequestHandler_Ping iRequestHandler_Ping = this.m_RequestHandler_Ping;
-        Long valueOf = Long.valueOf(0);
+        IStreamingBootStrap.IRequestHandler_Ping iRequestHandler_Ping = this.m_RequestHandler_Ping;
+        Long l = 0L;
         if (iRequestHandler_Ping != null) {
             try {
-                valueOf = Long.valueOf(iRequestHandler_Ping.GetLocalTimeMicroSeconds(this));
+                l = Long.valueOf(iRequestHandler_Ping.GetLocalTimeMicroSeconds(this));
             } catch (RuntimeException e) {
-                StaticHelpers.CaughtExternalCodeException(e);
+                IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
             }
         }
         this.m_RequestHandlerMutex.unlock();
         try {
-            BeginRequestResponse(8).WriteUINT64(valueOf.longValue());
+            BeginRequestResponse(8).WriteUINT64(l.longValue());
         } catch (RuntimeException e2) {
-            StaticHelpers.CaughtExternalCodeException(e2);
+            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e2);
         }
         PacketCompleted();
         return 0;
@@ -1794,6 +1662,15 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.StreamingBootStrap_JavaImpl.ProcessResponse_Ping(com.valvesoftware.StreamingBootStrap_JavaImpl$ResponseBase_t, byte[], int, int, long, long):long");
     }
 
+    private static class AttributeResponse_t extends ResponseBase_t {
+        int m_nSpace;
+        int m_nSubOperation;
+
+        private AttributeResponse_t() {
+            super();
+        }
+    }
+
     private long OnRequestReceived_Attribute(byte[] bArr, int i, int i2, long j, long j2) {
         int i3;
         int i4;
@@ -1808,7 +1685,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         }
         byte b = bArr2[i];
         int i10 = i + 1;
-        int SBS_strend = StaticHelpers.SBS_strend(bArr2, i10, i8);
+        int SBS_strend = IStreamingBootStrap.StaticHelpers.SBS_strend(bArr2, i10, i8);
         int i11 = 0;
         if (b != 0) {
             if (b != 1) {
@@ -1827,9 +1704,9 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
                             if (i14 < 8) {
                                 return (long) (i14 - 8);
                             }
-                            int ReadUINT32 = (int) IStreamingBootStrapIO.ReadUINT32(bArr2, i13);
+                            int ReadUINT32 = (int) IStreamingBootStrap.IStreamingBootStrapIO.ReadUINT32(bArr2, i13);
                             int i15 = i13 + 4;
-                            int ReadUINT322 = (int) IStreamingBootStrapIO.ReadUINT32(bArr2, i15);
+                            int ReadUINT322 = (int) IStreamingBootStrap.IStreamingBootStrapIO.ReadUINT32(bArr2, i15);
                             if (i15 + 4 != i8) {
                                 Assert(false);
                                 return Long.MIN_VALUE;
@@ -1838,14 +1715,14 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
                             try {
                                 i7 = this.m_RequestHandler_Attribute != null ? this.m_RequestHandler_Attribute.ModifyAttributeFlags(this, str, ReadUINT32, ReadUINT322) : 1;
                             } catch (RuntimeException e) {
-                                StaticHelpers.CaughtExternalCodeException(e);
+                                IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
                                 i7 = 2;
                             }
                             this.m_RequestHandlerMutex.unlock();
                             try {
                                 BeginRequestResponse(1).WriteUINT8(i7);
                             } catch (RuntimeException e2) {
-                                StaticHelpers.CaughtExternalCodeException(e2);
+                                IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e2);
                             }
                             PacketCompleted();
                             return 0;
@@ -1863,21 +1740,21 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
                         try {
                             i6 = this.m_RequestHandler_Attribute != null ? this.m_RequestHandler_Attribute.GetAttributeFlags(this, str2, iArr) : 1;
                         } catch (RuntimeException e3) {
-                            StaticHelpers.CaughtExternalCodeException(e3);
+                            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e3);
                             i6 = 2;
                         }
                         this.m_RequestHandlerMutex.unlock();
                         if (i6 != 0) {
                             i12 = 0;
                         }
-                        IStreamingBootStrapIO BeginRequestResponse = BeginRequestResponse((long) (i12 + 1));
+                        IStreamingBootStrap.IStreamingBootStrapIO BeginRequestResponse = BeginRequestResponse((long) (i12 + 1));
                         try {
                             BeginRequestResponse.WriteUINT8(i6);
                             if (i6 == 0) {
                                 BeginRequestResponse.WriteUINT32((long) iArr[0]);
                             }
                         } catch (RuntimeException e4) {
-                            StaticHelpers.CaughtExternalCodeException(e4);
+                            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e4);
                         }
                         PacketCompleted();
                         return 0;
@@ -1896,14 +1773,14 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
                     try {
                         i5 = this.m_RequestHandler_Attribute != null ? this.m_RequestHandler_Attribute.DeleteAttribute(this, b2, str3) : 1;
                     } catch (RuntimeException e5) {
-                        StaticHelpers.CaughtExternalCodeException(e5);
+                        IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e5);
                         i5 = 2;
                     }
                     this.m_RequestHandlerMutex.unlock();
                     try {
                         BeginRequestResponse(1).WriteUINT8(i5);
                     } catch (RuntimeException e6) {
-                        StaticHelpers.CaughtExternalCodeException(e6);
+                        IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e6);
                     }
                     PacketCompleted();
                     return 0;
@@ -1915,7 +1792,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
                 int i17 = SBS_strend + 1;
                 byte b3 = bArr2[i17];
                 int i18 = i17 + 1;
-                int SBS_strend2 = StaticHelpers.SBS_strend(bArr2, i18, i8);
+                int SBS_strend2 = IStreamingBootStrap.StaticHelpers.SBS_strend(bArr2, i18, i8);
                 if (SBS_strend2 == i8) {
                     return -1;
                 }
@@ -1928,14 +1805,14 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
                 try {
                     i4 = this.m_RequestHandler_Attribute != null ? this.m_RequestHandler_Attribute.SetAttributeValue(this, b3, str4, str5) : 1;
                 } catch (RuntimeException e7) {
-                    StaticHelpers.CaughtExternalCodeException(e7);
+                    IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e7);
                     i4 = 2;
                 }
                 this.m_RequestHandlerMutex.unlock();
                 try {
                     BeginRequestResponse(1).WriteUINT8(i4);
                 } catch (RuntimeException e8) {
-                    StaticHelpers.CaughtExternalCodeException(e8);
+                    IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e8);
                 }
                 PacketCompleted();
                 return 0;
@@ -1950,13 +1827,13 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             }
             String str7 = null;
             this.m_RequestHandlerMutex.lock();
-            IRequestHandler_Attribute iRequestHandler_Attribute = this.m_RequestHandler_Attribute;
+            IStreamingBootStrap.IRequestHandler_Attribute iRequestHandler_Attribute = this.m_RequestHandler_Attribute;
             if (iRequestHandler_Attribute != null) {
                 StringBuilder sb = new StringBuilder();
                 try {
                     i3 = iRequestHandler_Attribute.GetAttributeValue(this, str6, sb);
                 } catch (RuntimeException e9) {
-                    StaticHelpers.CaughtExternalCodeException(e9);
+                    IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e9);
                     i3 = 2;
                 }
                 if (i3 == 0) {
@@ -1967,23 +1844,23 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             }
             this.m_RequestHandlerMutex.unlock();
             if (str7 != null) {
-                i11 = IStreamingBootStrapIO.GetStringPayloadSize(str7);
+                i11 = IStreamingBootStrap.IStreamingBootStrapIO.GetStringPayloadSize(str7);
             }
-            IStreamingBootStrapIO BeginRequestResponse2 = BeginRequestResponse((long) (i11 + 1));
+            IStreamingBootStrap.IStreamingBootStrapIO BeginRequestResponse2 = BeginRequestResponse((long) (i11 + 1));
             try {
                 BeginRequestResponse2.WriteUINT8(i3);
                 if (i3 == 0) {
                     BeginRequestResponse2.WriteString(str7);
                 }
             } catch (RuntimeException e10) {
-                StaticHelpers.CaughtExternalCodeException(e10);
+                IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e10);
             }
             PacketCompleted();
             return 0;
         }
     }
 
-    /* JADX WARNING: Removed duplicated region for block: B:66:0x00ce  */
+    /* JADX WARNING: Removed duplicated region for block: B:65:0x00ce  */
     /* Code decompiled incorrectly, please refer to instructions dump. */
     private long ProcessResponse_Attribute(com.valvesoftware.StreamingBootStrap_JavaImpl.ResponseBase_t r8, byte[] r9, int r10, int r11, long r12, long r14) {
         /*
@@ -2129,6 +2006,82 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             return r14
         */
         throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.StreamingBootStrap_JavaImpl.ProcessResponse_Attribute(com.valvesoftware.StreamingBootStrap_JavaImpl$ResponseBase_t, byte[], int, int, long, long):long");
+    }
+
+    private static class FileSystemResponse_t extends ResponseBase_t {
+        IStreamingBootStrap.IStreamHandler m_OutgoingStream;
+        int m_nSubOperation;
+
+        private FileSystemResponse_t() {
+            super();
+        }
+    }
+
+    private static class CFileSystemQueryReplyEncoder {
+        public byte[] m_Buffer = new byte[19];
+        public int m_nWrittenBytes;
+
+        public void EncodeResult(IStreamingBootStrap.FileSystemQueryResult_t fileSystemQueryResult_t) {
+            this.m_Buffer[0] = (byte) fileSystemQueryResult_t.nSetFields;
+            int i = 1;
+            if ((fileSystemQueryResult_t.nSetFields & 1) != 0) {
+                this.m_Buffer[1] = (byte) fileSystemQueryResult_t.nAttributeFlags;
+                i = 2;
+            }
+            if ((fileSystemQueryResult_t.nSetFields & 2) != 0) {
+                i += IStreamingBootStrap.StaticHelpers.EncodeUVarInt(fileSystemQueryResult_t.nFileSize, this.m_Buffer, i);
+            }
+            if ((fileSystemQueryResult_t.nSetFields & 4) != 0) {
+                IStreamingBootStrap.IStreamingBootStrapIO.WriteUINT32ToBuffer(fileSystemQueryResult_t.nLastModifiedSecondsSinceEpoch, this.m_Buffer, i);
+                i += 4;
+            }
+            if ((fileSystemQueryResult_t.nSetFields & 8) != 0) {
+                IStreamingBootStrap.IStreamingBootStrapIO.WriteUINT32ToBuffer((long) fileSystemQueryResult_t.nCRC, this.m_Buffer, i);
+                i += 4;
+            }
+            this.m_nWrittenBytes = i;
+        }
+
+        public static int DecodeResult(byte[] bArr, int i, int i2, IStreamingBootStrap.FileSystemQueryResult_t fileSystemQueryResult_t) {
+            if (i == i2) {
+                return -1;
+            }
+            fileSystemQueryResult_t.nSetFields = bArr[i];
+            int i3 = i + 1;
+            if ((fileSystemQueryResult_t.nSetFields & 1) != 0) {
+                if (i3 == i2) {
+                    return -1;
+                }
+                fileSystemQueryResult_t.nAttributeFlags = bArr[i3];
+                i3++;
+            }
+            if ((fileSystemQueryResult_t.nSetFields & 2) != 0) {
+                long[] jArr = new long[1];
+                int DecodeUVarInt = IStreamingBootStrap.StaticHelpers.DecodeUVarInt(bArr, i3, i2, jArr);
+                if (DecodeUVarInt == 0) {
+                    return -1;
+                }
+                fileSystemQueryResult_t.nFileSize = jArr[0];
+                i3 += DecodeUVarInt;
+            }
+            if ((fileSystemQueryResult_t.nSetFields & 4) != 0) {
+                int i4 = i2 - i3;
+                if (i4 < 4) {
+                    return i4 - 4;
+                }
+                fileSystemQueryResult_t.nLastModifiedSecondsSinceEpoch = IStreamingBootStrap.IStreamingBootStrapIO.ReadUINT32(bArr, i3);
+                i3 += 4;
+            }
+            if ((fileSystemQueryResult_t.nSetFields & 8) != 0) {
+                int i5 = i2 - i3;
+                if (i5 < 4) {
+                    return i5 - 4;
+                }
+                fileSystemQueryResult_t.nCRC = (int) IStreamingBootStrap.IStreamingBootStrapIO.ReadUINT32(bArr, i3);
+                i3 += 4;
+            }
+            return i3 - i;
+        }
     }
 
     /* JADX WARNING: Removed duplicated region for block: B:145:0x01e3  */
@@ -2682,25 +2635,25 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.StreamingBootStrap_JavaImpl.ProcessResponse_FileSystem(com.valvesoftware.StreamingBootStrap_JavaImpl$ResponseBase_t, byte[], int, int, long, long):long");
     }
 
-    /* access modifiers changed from: 0000 */
+    /* access modifiers changed from: package-private */
     public long OnRequestReceived_Stream(byte[] bArr, int i, int i2, long j, long j2) {
         Assert(false);
         return Long.MIN_VALUE;
     }
 
-    /* access modifiers changed from: 0000 */
+    /* access modifiers changed from: package-private */
     public long ProcessResponse_Stream(ResponseBase_t responseBase_t, byte[] bArr, int i, int i2, long j, long j2) {
         Assert(false);
         return Long.MIN_VALUE;
     }
 
-    /* access modifiers changed from: 0000 */
+    /* access modifiers changed from: package-private */
     public long OnRequestReceived_Channel(byte[] bArr, int i, int i2, long j, long j2) {
         Assert(false);
         return Long.MIN_VALUE;
     }
 
-    /* access modifiers changed from: 0000 */
+    /* access modifiers changed from: package-private */
     public long ProcessResponse_Channel(ResponseBase_t responseBase_t, byte[] bArr, int i, int i2, long j, long j2) {
         Assert(false);
         return Long.MIN_VALUE;
@@ -2715,7 +2668,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             byte b = bArr[i];
             int i5 = i + 1;
             if (b == 0) {
-                int SBS_strend = StaticHelpers.SBS_strend(bArr, i5, i2);
+                int SBS_strend = IStreamingBootStrap.StaticHelpers.SBS_strend(bArr, i5, i2);
                 if (SBS_strend == i2) {
                     return -1;
                 }
@@ -2725,12 +2678,12 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
                     return Long.MIN_VALUE;
                 }
                 this.m_RequestHandlerMutex.lock();
-                IRequestHandler_Report iRequestHandler_Report = this.m_RequestHandler_Report;
+                IStreamingBootStrap.IRequestHandler_Report iRequestHandler_Report = this.m_RequestHandler_Report;
                 if (iRequestHandler_Report != null) {
                     try {
                         iRequestHandler_Report.AssertionFailure(this, str);
                     } catch (RuntimeException e) {
-                        StaticHelpers.CaughtExternalCodeException(e);
+                        IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
                     }
                 }
                 this.m_RequestHandlerMutex.unlock();
@@ -2742,20 +2695,20 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
                 } else {
                     byte b2 = bArr[i5];
                     int i7 = i5 + 1;
-                    long ReadUINT64 = IStreamingBootStrapIO.ReadUINT64(bArr, i7);
+                    long ReadUINT64 = IStreamingBootStrap.IStreamingBootStrapIO.ReadUINT64(bArr, i7);
                     int i8 = i7 + 8;
-                    int ReadUINT32 = (int) IStreamingBootStrapIO.ReadUINT32(bArr, i8);
+                    int ReadUINT32 = (int) IStreamingBootStrap.IStreamingBootStrapIO.ReadUINT32(bArr, i8);
                     if (i8 + 4 != i2) {
                         Assert(false);
                         return Long.MIN_VALUE;
                     }
                     this.m_RequestHandlerMutex.lock();
-                    IRequestHandler_Report iRequestHandler_Report2 = this.m_RequestHandler_Report;
+                    IStreamingBootStrap.IRequestHandler_Report iRequestHandler_Report2 = this.m_RequestHandler_Report;
                     if (iRequestHandler_Report2 != null) {
                         try {
                             iRequestHandler_Report2.ChannelError(this, b2, ReadUINT64, ReadUINT32);
                         } catch (RuntimeException e2) {
-                            StaticHelpers.CaughtExternalCodeException(e2);
+                            IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e2);
                         }
                     }
                     this.m_RequestHandlerMutex.unlock();
@@ -2765,7 +2718,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
                 Assert(false);
                 return Long.MIN_VALUE;
             } else {
-                int SBS_strend2 = StaticHelpers.SBS_strend(bArr, i5, i2);
+                int SBS_strend2 = IStreamingBootStrap.StaticHelpers.SBS_strend(bArr, i5, i2);
                 if (SBS_strend2 == i2) {
                     return -1;
                 }
@@ -2775,12 +2728,12 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
                     return Long.MIN_VALUE;
                 }
                 this.m_RequestHandlerMutex.lock();
-                IRequestHandler_Report iRequestHandler_Report3 = this.m_RequestHandler_Report;
+                IStreamingBootStrap.IRequestHandler_Report iRequestHandler_Report3 = this.m_RequestHandler_Report;
                 if (iRequestHandler_Report3 != null) {
                     try {
                         iRequestHandler_Report3.Goodbye(this, str2);
                     } catch (RuntimeException e3) {
-                        StaticHelpers.CaughtExternalCodeException(e3);
+                        IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e3);
                     }
                 }
                 this.m_RequestHandlerMutex.unlock();
@@ -2791,25 +2744,34 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         return (long) i3;
     }
 
-    /* access modifiers changed from: 0000 */
+    /* access modifiers changed from: package-private */
     public long ProcessResponse_Report(ResponseBase_t responseBase_t, byte[] bArr, int i, int i2, long j, long j2) {
         Assert(false);
         return Long.MIN_VALUE;
     }
 
-    /* access modifiers changed from: 0000 */
-    /* JADX WARNING: Removed duplicated region for block: B:102:0x017a A[Catch:{ RuntimeException -> 0x0187 }] */
-    /* JADX WARNING: Removed duplicated region for block: B:103:0x017e A[Catch:{ RuntimeException -> 0x0187 }] */
-    /* JADX WARNING: Removed duplicated region for block: B:135:0x01f3  */
-    /* JADX WARNING: Removed duplicated region for block: B:136:0x01fa  */
-    /* JADX WARNING: Removed duplicated region for block: B:138:0x01fd  */
-    /* JADX WARNING: Removed duplicated region for block: B:139:0x0204  */
-    /* JADX WARNING: Removed duplicated region for block: B:144:0x0212 A[Catch:{ RuntimeException -> 0x021f }] */
-    /* JADX WARNING: Removed duplicated region for block: B:145:0x0216 A[Catch:{ RuntimeException -> 0x021f }] */
-    /* JADX WARNING: Removed duplicated region for block: B:93:0x015b  */
-    /* JADX WARNING: Removed duplicated region for block: B:94:0x0162  */
-    /* JADX WARNING: Removed duplicated region for block: B:96:0x0165  */
-    /* JADX WARNING: Removed duplicated region for block: B:97:0x016c  */
+    private static class TunnelWaitResponse_t extends ResponseBase_t {
+        IStreamingBootStrap.IStreamHandler m_OutgoingStream;
+        int m_nSubOperation;
+
+        private TunnelWaitResponse_t() {
+            super();
+        }
+    }
+
+    /* access modifiers changed from: package-private */
+    /* JADX WARNING: Removed duplicated region for block: B:100:0x017a A[Catch:{ RuntimeException -> 0x0187 }] */
+    /* JADX WARNING: Removed duplicated region for block: B:101:0x017e A[Catch:{ RuntimeException -> 0x0187 }] */
+    /* JADX WARNING: Removed duplicated region for block: B:133:0x01f3  */
+    /* JADX WARNING: Removed duplicated region for block: B:134:0x01fa  */
+    /* JADX WARNING: Removed duplicated region for block: B:136:0x01fd  */
+    /* JADX WARNING: Removed duplicated region for block: B:137:0x0204  */
+    /* JADX WARNING: Removed duplicated region for block: B:142:0x0212 A[Catch:{ RuntimeException -> 0x021f }] */
+    /* JADX WARNING: Removed duplicated region for block: B:143:0x0216 A[Catch:{ RuntimeException -> 0x021f }] */
+    /* JADX WARNING: Removed duplicated region for block: B:91:0x015b  */
+    /* JADX WARNING: Removed duplicated region for block: B:92:0x0162  */
+    /* JADX WARNING: Removed duplicated region for block: B:94:0x0165  */
+    /* JADX WARNING: Removed duplicated region for block: B:95:0x016c  */
     /* Code decompiled incorrectly, please refer to instructions dump. */
     public long OnRequestReceived_Tunnel(byte[] r21, int r22, int r23, long r24, long r26) {
         /*
@@ -3160,7 +3122,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.StreamingBootStrap_JavaImpl.OnRequestReceived_Tunnel(byte[], int, int, long, long):long");
     }
 
-    /* access modifiers changed from: 0000 */
+    /* access modifiers changed from: package-private */
     /* JADX WARNING: Removed duplicated region for block: B:109:0x017f  */
     /* JADX WARNING: Removed duplicated region for block: B:99:0x016b  */
     /* Code decompiled incorrectly, please refer to instructions dump. */
@@ -3509,7 +3471,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             if (responseBase_t3 != null) {
                 int i10 = this.m_nMidResponseHeaderBytes;
                 boolean z3 = true;
-                if (CallResponseHandler(responseBase_t3, null, 0, 0, j + ((long) i10), j2 - ((long) i10)) != Long.MIN_VALUE) {
+                if (CallResponseHandler(responseBase_t3, (byte[]) null, 0, 0, j + ((long) i10), j2 - ((long) i10)) != Long.MIN_VALUE) {
                     z3 = false;
                 }
                 Assert(z3);
@@ -3522,7 +3484,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             ResponseBase_t responseBase_t4 = this.m_MidResponse;
             if (responseBase_t4 == null) {
                 long[] jArr = new long[1];
-                int DecodeUVarInt = StaticHelpers.DecodeUVarInt(bArr2, i8, i9, jArr);
+                int DecodeUVarInt = IStreamingBootStrap.StaticHelpers.DecodeUVarInt(bArr2, i8, i9, jArr);
                 if (DecodeUVarInt == 0) {
                     return -1;
                 }
@@ -3532,7 +3494,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
                     if (i6 == i9) {
                         return -1;
                     }
-                    int DecodeUVarInt2 = StaticHelpers.DecodeUVarInt(bArr2, i6, i9, jArr);
+                    int DecodeUVarInt2 = IStreamingBootStrap.StaticHelpers.DecodeUVarInt(bArr2, i6, i9, jArr);
                     Assert(DecodeUVarInt2 > 0);
                     if (DecodeUVarInt2 == 0) {
                         return -1;
@@ -3549,24 +3511,24 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
                 long[] jArr2 = this.m_PreviousResponseID;
                 long j5 = jArr2[0] + j4;
                 jArr2[0] = j5;
-                ResponseBase_t responseBase_t5 = (ResponseBase_t) this.m_ResponseQueue.peek();
-                if (responseBase_t5 == null) {
+                ResponseBase_t peek = this.m_ResponseQueue.peek();
+                if (peek == null) {
                     return j2;
                 }
-                ResponseBase_t responseBase_t6 = responseBase_t5;
+                ResponseBase_t responseBase_t5 = peek;
                 while (true) {
-                    if (responseBase_t6.m_nPacketID >= j5) {
+                    if (responseBase_t5.m_nPacketID >= j5) {
                         i7 = i5;
-                        responseBase_t2 = responseBase_t6;
+                        responseBase_t2 = responseBase_t5;
                         break;
                     }
-                    ResponseBase_t responseBase_t7 = responseBase_t6;
+                    ResponseBase_t responseBase_t6 = responseBase_t5;
                     i7 = i5;
-                    Assert(CallResponseHandler(responseBase_t6, null, 0, 0, 0, 0) == Long.MIN_VALUE);
-                    Assert(((ResponseBase_t) this.m_ResponseQueue.poll()) == responseBase_t7);
-                    responseBase_t6 = (ResponseBase_t) this.m_ResponseQueue.peek();
-                    if (responseBase_t6 == null) {
-                        responseBase_t2 = responseBase_t6;
+                    Assert(CallResponseHandler(responseBase_t5, (byte[]) null, 0, 0, 0, 0) == Long.MIN_VALUE);
+                    Assert(this.m_ResponseQueue.poll() == responseBase_t6);
+                    responseBase_t5 = this.m_ResponseQueue.peek();
+                    if (responseBase_t5 == null) {
+                        responseBase_t2 = responseBase_t5;
                         break;
                     }
                     i5 = i7;
@@ -3574,9 +3536,9 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
                 if (responseBase_t2 == null || responseBase_t2.m_nPacketID != j5) {
                     return j2;
                 }
-                Assert(((ResponseBase_t) this.m_ResponseQueue.poll()) == responseBase_t2);
+                Assert(this.m_ResponseQueue.poll() == responseBase_t2);
                 if (z) {
-                    if (CallResponseHandler(responseBase_t2, null, 0, 0, 0, 0) == Long.MIN_VALUE) {
+                    if (CallResponseHandler(responseBase_t2, (byte[]) null, 0, 0, 0, 0) == Long.MIN_VALUE) {
                         z2 = true;
                     }
                     Assert(z2);
@@ -3601,13 +3563,13 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
                     i3 = i8;
                 }
             }
-            ResponseBase_t responseBase_t8 = responseBase_t;
+            ResponseBase_t responseBase_t7 = responseBase_t;
             long CallResponseHandler = CallResponseHandler(responseBase_t, bArr, i3, i2, j3 > 0 ? j3 - ((long) i4) : 0, j2 - ((long) i4));
             int i14 = (CallResponseHandler > 0 ? 1 : (CallResponseHandler == 0 ? 0 : -1));
             if (i14 > 0) {
                 CallResponseHandler += (long) (i3 - i8);
                 if (j3 + CallResponseHandler < j2) {
-                    this.m_MidResponse = responseBase_t8;
+                    this.m_MidResponse = responseBase_t7;
                     this.m_nMidResponseHeaderBytes = i4;
                 } else {
                     this.m_MidResponse = null;
@@ -3615,7 +3577,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             } else if (CallResponseHandler == Long.MIN_VALUE || i14 == 0) {
                 this.m_MidResponse = null;
             } else {
-                this.m_MidResponse = responseBase_t8;
+                this.m_MidResponse = responseBase_t7;
                 this.m_nMidResponseHeaderBytes = i4;
             }
             return CallResponseHandler;
@@ -3646,21 +3608,21 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         byte b = bArr2[i3];
         int i6 = i3 + 1;
         if (b == 0) {
-            int DecodeUVarInt = StaticHelpers.DecodeUVarInt(bArr2, i6, i4, jArr);
+            int DecodeUVarInt = IStreamingBootStrap.StaticHelpers.DecodeUVarInt(bArr2, i6, i4, jArr);
             if (DecodeUVarInt == 0) {
                 return -1;
             }
             long j5 = jArr[0];
             int i7 = i6 + DecodeUVarInt;
             long[] jArr2 = new long[1];
-            int DecodeUVarInt2 = StaticHelpers.DecodeUVarInt(bArr2, i7, i4, jArr2);
+            int DecodeUVarInt2 = IStreamingBootStrap.StaticHelpers.DecodeUVarInt(bArr2, i7, i4, jArr2);
             if (DecodeUVarInt2 == 0) {
                 return -1;
             }
             long j6 = jArr2[0];
             int i8 = i7 + DecodeUVarInt2;
             long[] jArr3 = new long[1];
-            int DecodeSVarInt = StaticHelpers.DecodeSVarInt(bArr2, i8, i4, jArr3);
+            int DecodeSVarInt = IStreamingBootStrap.StaticHelpers.DecodeSVarInt(bArr2, i8, i4, jArr3);
             if (DecodeSVarInt == 0) {
                 return -1;
             }
@@ -3670,28 +3632,25 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             if (j8 < j7) {
                 return j8 - j7;
             }
-            IStreamHandler IncomingStreamBindToHandle = IncomingStreamBindToHandle(j6, j5);
+            IStreamingBootStrap.IStreamHandler IncomingStreamBindToHandle = IncomingStreamBindToHandle(j6, j5);
             if (IncomingStreamBindToHandle != null) {
                 try {
                     IncomingStreamBindToHandle.OnStreamStart(jArr3[0]);
-                    if (j7 != 0) {
-                        IncomingStreamBindToHandle.HandleStreamChunk(bArr2, i9, (int) j7);
+                    if (j7 == 0) {
+                        return 0;
                     }
+                    IncomingStreamBindToHandle.HandleStreamChunk(bArr2, i9, (int) j7);
+                    return 0;
                 } catch (RuntimeException e) {
-                    StaticHelpers.CaughtExternalCodeException(e);
+                    IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
+                    return 0;
                 }
             } else {
-                StringBuilder sb = new StringBuilder();
-                sb.append("Incoming stream handle ");
-                sb.append(j5);
-                sb.append(" with serial ");
-                sb.append(j6);
-                sb.append(" start has no handler!");
-                Log.i("com.valvesoftware.StreamingBootStrap_JavaImpl", sb.toString());
+                Log.i("com.valvesoftware.StreamingBootStrap_JavaImpl", "Incoming stream handle " + j5 + " with serial " + j6 + " start has no handler!");
+                return 0;
             }
-            return 0;
         } else if (b == 1) {
-            int DecodeUVarInt3 = StaticHelpers.DecodeUVarInt(bArr2, i6, i4, jArr);
+            int DecodeUVarInt3 = IStreamingBootStrap.StaticHelpers.DecodeUVarInt(bArr2, i6, i4, jArr);
             if (DecodeUVarInt3 == 0) {
                 return -1;
             }
@@ -3702,18 +3661,20 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             if (j11 < j10) {
                 return j11 - j10;
             }
-            IStreamHandler GetIncomingStreamByHandle = GetIncomingStreamByHandle(j9);
-            if (GetIncomingStreamByHandle != null) {
-                try {
-                    GetIncomingStreamByHandle.HandleStreamChunk(bArr2, i10, (int) j10);
-                } catch (RuntimeException e2) {
-                    StaticHelpers.CaughtExternalCodeException(e2);
-                }
+            IStreamingBootStrap.IStreamHandler GetIncomingStreamByHandle = GetIncomingStreamByHandle(j9);
+            if (GetIncomingStreamByHandle == null) {
+                return 0;
             }
-            return 0;
+            try {
+                GetIncomingStreamByHandle.HandleStreamChunk(bArr2, i10, (int) j10);
+                return 0;
+            } catch (RuntimeException e2) {
+                IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e2);
+                return 0;
+            }
         } else if (b == 2 || b == 3) {
             boolean z2 = b == 2;
-            int DecodeUVarInt4 = StaticHelpers.DecodeUVarInt(bArr2, i6, i4, jArr);
+            int DecodeUVarInt4 = IStreamingBootStrap.StaticHelpers.DecodeUVarInt(bArr2, i6, i4, jArr);
             if (DecodeUVarInt4 == 0) {
                 return -1;
             }
@@ -3727,7 +3688,7 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             boolean z3 = (b2 & 1) != 0;
             byte b3 = b2 & 2;
             if (b3 != 0) {
-                int SBS_strend = StaticHelpers.SBS_strend(bArr2, i12, i4);
+                int SBS_strend = IStreamingBootStrap.StaticHelpers.SBS_strend(bArr2, i12, i4);
                 if (SBS_strend == i4) {
                     return -1;
                 }
@@ -3740,22 +3701,23 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
                 Assert(false);
                 return Long.MIN_VALUE;
             }
-            IStreamHandler GetIncomingStreamByHandle2 = z2 ? GetIncomingStreamByHandle(j12) : GetIncomingStreamBySerial(j12);
-            if (GetIncomingStreamByHandle2 != null) {
-                if (b3 == 0) {
-                    z = false;
-                }
-                try {
-                    GetIncomingStreamByHandle2.OnStreamEnd(z3, z, str);
-                } catch (RuntimeException e3) {
-                    StaticHelpers.CaughtExternalCodeException(e3);
-                }
-                if (z3) {
-                    UnregisterIncomingStreamHandler(GetIncomingStreamByHandle2);
-                } else {
-                    IncomingStreamUnbindHandle(GetIncomingStreamByHandle2);
-                }
+            IStreamingBootStrap.IStreamHandler GetIncomingStreamByHandle2 = z2 ? GetIncomingStreamByHandle(j12) : GetIncomingStreamBySerial(j12);
+            if (GetIncomingStreamByHandle2 == null) {
+                return 0;
             }
+            if (b3 == 0) {
+                z = false;
+            }
+            try {
+                GetIncomingStreamByHandle2.OnStreamEnd(z3, z, str);
+            } catch (RuntimeException e3) {
+                IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e3);
+            }
+            if (z3) {
+                UnregisterIncomingStreamHandler(GetIncomingStreamByHandle2);
+                return 0;
+            }
+            IncomingStreamUnbindHandle(GetIncomingStreamByHandle2);
             return 0;
         } else {
             Assert(false);
@@ -3766,13 +3728,15 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
     private long CallChannelHandler(int i, byte[] bArr, int i2, int i3, long j, long j2) {
         int i4 = i;
         if (i4 >= 128) {
-            IStreamingBootStrapDataHandler iStreamingBootStrapDataHandler = this.m_ImplementationHandlers[i4 - 128];
-            if (iStreamingBootStrapDataHandler != null) {
-                try {
-                    return iStreamingBootStrapDataHandler.HandleBootstrapData(this, i, bArr, i2, i3, j, j2);
-                } catch (RuntimeException e) {
-                    StaticHelpers.CaughtExternalCodeException(e);
-                }
+            IStreamingBootStrap.IStreamingBootStrapDataHandler iStreamingBootStrapDataHandler = this.m_ImplementationHandlers[i4 - 128];
+            if (iStreamingBootStrapDataHandler == null) {
+                return Long.MIN_VALUE;
+            }
+            try {
+                return iStreamingBootStrapDataHandler.HandleBootstrapData(this, i, bArr, i2, i3, j, j2);
+            } catch (RuntimeException e) {
+                IStreamingBootStrap.StaticHelpers.CaughtExternalCodeException(e);
+                return Long.MIN_VALUE;
             }
         } else if (i4 == 0) {
             return StandardChannelHandler_Requests(bArr, i2, i3, j, j2);
@@ -3783,24 +3747,21 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
             if (i4 == 2) {
                 return StandardChannelHandler_Streams(bArr, i2, i3, j, j2);
             }
+            return Long.MIN_VALUE;
         }
-        return Long.MIN_VALUE;
     }
 
-    /* JADX WARNING: type inference failed for: r2v0, types: [byte[]] */
-    /* JADX WARNING: type inference failed for: r8v0 */
-    /* JADX WARNING: type inference failed for: r1v1, types: [int] */
-    /* JADX WARNING: type inference failed for: r24v1 */
-    /* JADX WARNING: type inference failed for: r3v7, types: [int] */
-    /* JADX WARNING: type inference failed for: r3v8 */
-    /* JADX WARNING: type inference failed for: r3v9, types: [int] */
-    /* JADX WARNING: type inference failed for: r1v7, types: [int] */
-    /* JADX WARNING: type inference failed for: r8v1 */
-    /* JADX WARNING: type inference failed for: r8v2 */
-    /* JADX WARNING: type inference failed for: r3v23 */
+    /* JADX DEBUG: Multi-variable search result rejected for TypeSearchVarInfo{r8v0, resolved type: byte} */
+    /* JADX DEBUG: Multi-variable search result rejected for TypeSearchVarInfo{r1v1, resolved type: byte} */
+    /* JADX DEBUG: Multi-variable search result rejected for TypeSearchVarInfo{r24v1, resolved type: byte} */
+    /* JADX DEBUG: Multi-variable search result rejected for TypeSearchVarInfo{r3v7, resolved type: byte} */
+    /* JADX DEBUG: Multi-variable search result rejected for TypeSearchVarInfo{r3v8, resolved type: byte} */
+    /* JADX DEBUG: Multi-variable search result rejected for TypeSearchVarInfo{r3v9, resolved type: byte} */
+    /* JADX DEBUG: Multi-variable search result rejected for TypeSearchVarInfo{r1v7, resolved type: byte} */
+    /* JADX DEBUG: Multi-variable search result rejected for TypeSearchVarInfo{r8v1, resolved type: byte} */
+    /* JADX DEBUG: Multi-variable search result rejected for TypeSearchVarInfo{r8v2, resolved type: byte} */
     /* JADX WARNING: Multi-variable type inference failed */
     /* JADX WARNING: Removed duplicated region for block: B:35:0x00a2  */
-    /* JADX WARNING: Unknown variable types count: 6 */
     /* Code decompiled incorrectly, please refer to instructions dump. */
     private long TryHandlingWaitingMessage(byte[] r24, int r25, int r26) {
         /*
@@ -4004,6 +3965,14 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
         throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.StreamingBootStrap_JavaImpl.TryHandlingWaitingMessage(byte[], int, int):long");
     }
 
+    private static class ContextData_t {
+        Object context;
+        String sName;
+
+        private ContextData_t() {
+        }
+    }
+
     public void SetErrorState() {
         this.m_IOReadMutex.lock();
         this.m_bErrorState = true;
@@ -4014,19 +3983,9 @@ public class StreamingBootStrap_JavaImpl implements IStreamingBootStrap {
 
     public void DumpBuffer() {
         this.m_IOReadMutex.lock();
-        StringBuilder sb = new StringBuilder();
-        sb.append("Dumping buffer [");
-        sb.append(this.m_nReadBufferPut);
-        sb.append("]: ");
-        String str = "com.valvesoftware.StreamingBootStrap_JavaImpl";
-        Log.i(str, sb.toString());
+        Log.i("com.valvesoftware.StreamingBootStrap_JavaImpl", "Dumping buffer [" + this.m_nReadBufferPut + "]: ");
         for (int i = 0; i < this.m_nReadBufferPut; i++) {
-            StringBuilder sb2 = new StringBuilder();
-            sb2.append("\t");
-            sb2.append(i);
-            sb2.append(": ");
-            sb2.append(this.m_ReadBuffer[i]);
-            Log.i(str, sb2.toString());
+            Log.i("com.valvesoftware.StreamingBootStrap_JavaImpl", "\t" + i + ": " + this.m_ReadBuffer[i]);
         }
         this.m_IOReadMutex.unlock();
     }

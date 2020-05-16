@@ -1,6 +1,8 @@
 package com.valvesoftware;
 
 public final class R {
+    private R() {
+    }
 
     public static final class anim {
         public static final int abc_fade_in = 2130771968;
@@ -1649,8 +1651,5 @@ public final class R {
 
         private styleable() {
         }
-    }
-
-    private R() {
     }
 }

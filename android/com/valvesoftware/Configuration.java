@@ -107,7 +107,7 @@ public abstract class Configuration {
         L_0x0080:
             if (r4 == 0) goto L_0x00a5
             org.json.JSONObject r1 = new org.json.JSONObject     // Catch:{ Throwable -> 0x00a5 }
-            r1.<init>(r4)     // Catch:{ Throwable -> 0x00a5 }
+            r1.<init>((java.lang.String) r4)     // Catch:{ Throwable -> 0x00a5 }
             java.lang.StringBuilder r0 = new java.lang.StringBuilder     // Catch:{ Throwable -> 0x00a4 }
             r0.<init>()     // Catch:{ Throwable -> 0x00a4 }
             java.lang.String r3 = "Config json \""
@@ -199,10 +199,10 @@ public abstract class Configuration {
             android.util.Log.i(r2, r0)
             org.json.JSONObject r0 = new org.json.JSONObject
             r0.<init>()
-            r0.put(r3, r1)     // Catch:{ Throwable -> 0x005c }
+            r0.put((java.lang.String) r3, (int) r1)     // Catch:{ Throwable -> 0x005c }
         L_0x005c:
             org.json.JSONObject r2 = sm_GlobalConfig     // Catch:{ Throwable -> 0x0062 }
-            r2.put(r4, r0)     // Catch:{ Throwable -> 0x0062 }
+            r2.put((java.lang.String) r4, (java.lang.Object) r0)     // Catch:{ Throwable -> 0x0062 }
             goto L_0x0063
         L_0x0062:
         L_0x0063:

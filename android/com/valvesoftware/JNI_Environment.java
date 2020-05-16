@@ -1,18 +1,16 @@
 package com.valvesoftware;
 
 import android.app.ActivityManager;
-import android.app.ActivityManager.MemoryInfo;
 import android.app.Application;
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Build.VERSION;
+import android.os.Build;
 import android.os.Debug;
 import android.os.Environment;
 import android.os.StatFs;
 import android.telephony.TelephonyManager;
 import android.util.Log;
-import com.android.volley.Response.ErrorListener;
-import com.android.volley.Response.Listener;
+import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
@@ -78,15 +76,12 @@ public class JNI_Environment {
         if (!z) {
             FindAndLoadNativeLibrary("libjni_environment.so");
         }
-        Class cls = null;
+        Class<?> cls = null;
         try {
-            StringBuilder sb = new StringBuilder();
-            sb.append(m_application.getPackageName());
-            sb.append(".R");
-            cls = Class.forName(sb.toString(), false, m_application.getClassLoader());
+            cls = Class.forName(m_application.getPackageName() + ".R", false, m_application.getClassLoader());
         } catch (Throwable unused2) {
         }
-        String str = setupNative(VERSION.SDK_INT, m_application, cls, m_sPrivatePath.getAbsolutePath(), m_sPublicPath.getAbsolutePath());
+        String str = setupNative(Build.VERSION.SDK_INT, m_application, cls, m_sPrivatePath.getAbsolutePath(), m_sPublicPath.getAbsolutePath());
         m_bSetupCalled = true;
         return str;
     }
@@ -1059,13 +1054,12 @@ public class JNI_Environment {
     }
 
     private static String MakeNativeLibraryExtensionCompatible(String str) {
-        String str2 = ".so";
-        if (str.endsWith(str2)) {
+        if (str.endsWith(".so")) {
             return str;
         }
         do {
             str = str.substring(0, str.lastIndexOf(46));
-        } while (!str.endsWith(str2));
+        } while (!str.endsWith(".so"));
         return str;
     }
 
@@ -1073,8 +1067,7 @@ public class JNI_Environment {
         boolean z;
         String str2;
         String str3;
-        String str4 = "/";
-        int indexOf = str.indexOf(str4);
+        int indexOf = str.indexOf("/");
         int indexOf2 = str.indexOf("\\");
         if (indexOf < 0 || (indexOf2 >= 0 && indexOf2 < indexOf)) {
             indexOf = indexOf2;
@@ -1082,11 +1075,7 @@ public class JNI_Environment {
         if (indexOf >= 0) {
             int indexOf3 = str.indexOf(":");
             if (indexOf3 < 0 || indexOf3 != indexOf - 1) {
-                StringBuilder sb = new StringBuilder();
-                sb.append("Library \"");
-                sb.append(str);
-                sb.append("\" must either be unqualified or an absolute abstract \"game:/bin/$(PLATFORM_ARCH)/*****\" style path");
-                Log.i("com.valvesoftware.JNI_Environment.NativeSupport.FindAndLoadNativeLibrary", sb.toString());
+                Log.i("com.valvesoftware.JNI_Environment.NativeSupport.FindAndLoadNativeLibrary", "Library \"" + str + "\" must either be unqualified or an absolute abstract \"game:/bin/$(PLATFORM_ARCH)/*****\" style path");
                 return false;
             }
             z = true;
@@ -1104,30 +1093,22 @@ public class JNI_Environment {
                 } else {
                     str3 = MakeNativeLibraryExtensionCompatible(str);
                 }
-                String str5 = str2;
+                String str4 = str2;
                 for (int i2 = 0; i2 < m_sNativeLibrarySearchPaths.length; i2++) {
                     INativeLibraryPathResolver iNativeLibraryPathResolver2 = m_NativeLibraryPathResolver;
                     if (iNativeLibraryPathResolver2 != null) {
-                        StringBuilder sb2 = new StringBuilder();
-                        sb2.append(m_sNativeLibrarySearchPaths[i2]);
-                        sb2.append(str4);
-                        sb2.append(str3);
-                        str5 = iNativeLibraryPathResolver2.ResolveNativeLibraryPath(sb2.toString());
+                        str4 = iNativeLibraryPathResolver2.ResolveNativeLibraryPath(m_sNativeLibrarySearchPaths[i2] + "/" + str3);
                     } else {
-                        StringBuilder sb3 = new StringBuilder();
-                        sb3.append(m_sNativeLibrarySearchPaths[i2]);
-                        sb3.append(str4);
-                        sb3.append(str3);
-                        str5 = sb3.toString();
-                        if (!new File(str5).exists()) {
-                            str5 = null;
+                        str4 = m_sNativeLibrarySearchPaths[i2] + "/" + str3;
+                        if (!new File(str4).exists()) {
+                            str4 = null;
                         }
                     }
-                    if (str5 != null) {
+                    if (str4 != null) {
                         break;
                     }
                 }
-                str2 = str5;
+                str2 = str4;
                 if (str2 != null) {
                     break;
                 }
@@ -1136,17 +1117,10 @@ public class JNI_Environment {
             str2 = null;
         }
         if (str2 == null) {
-            String str6 = "search:/";
             if (z) {
-                StringBuilder sb4 = new StringBuilder();
-                sb4.append(str6);
-                sb4.append(str.substring(str.lastIndexOf(str4) + 1));
-                str2 = sb4.toString();
+                str2 = "search:/" + str.substring(str.lastIndexOf("/") + 1);
             } else {
-                StringBuilder sb5 = new StringBuilder();
-                sb5.append(str6);
-                sb5.append(str);
-                str2 = sb5.toString();
+                str2 = "search:/" + str;
             }
         }
         return LoadNativeLibrary(str2);
@@ -1161,47 +1135,17 @@ public class JNI_Environment {
     }
 
     public static boolean LogMemory() {
-        ActivityManager activityManager = (ActivityManager) m_application.getBaseContext().getSystemService("activity");
-        MemoryInfo memoryInfo = new MemoryInfo();
-        activityManager.getMemoryInfo(memoryInfo);
-        StringBuilder sb = new StringBuilder();
-        sb.append("MI avail ");
-        sb.append(((double) memoryInfo.availMem) / 1048576.0d);
-        sb.append(", low Mem:");
-        sb.append(memoryInfo.lowMemory);
-        sb.append(", threshold: ");
-        sb.append(((double) memoryInfo.threshold) / 1048576.0d);
-        sb.append(", total");
-        sb.append(((double) memoryInfo.totalMem) / 1048576.0d);
-        sb.append("[end]");
-        Log.i("JBAPSYS", sb.toString());
+        ActivityManager.MemoryInfo memoryInfo = new ActivityManager.MemoryInfo();
+        ((ActivityManager) m_application.getBaseContext().getSystemService("activity")).getMemoryInfo(memoryInfo);
+        Log.i("JBAPSYS", "MI avail " + (((double) memoryInfo.availMem) / 1048576.0d) + ", low Mem:" + memoryInfo.lowMemory + ", threshold: " + (((double) memoryInfo.threshold) / 1048576.0d) + ", total" + (((double) memoryInfo.totalMem) / 1048576.0d) + "[end]");
         Debug.MemoryInfo memoryInfo2 = new Debug.MemoryInfo();
         Debug.getMemoryInfo(memoryInfo2);
-        float totalPss = ((float) memoryInfo2.getTotalPss()) / 1024.0f;
-        double nativeHeapAllocatedSize = ((double) Debug.getNativeHeapAllocatedSize()) / 1048576.0d;
-        double nativeHeapSize = ((double) Debug.getNativeHeapSize()) / 1048576.0d;
-        StringBuilder sb2 = new StringBuilder();
-        sb2.append("Memory log HeapMB=");
-        sb2.append(nativeHeapSize);
-        sb2.append(", HeapUsedMB=");
-        sb2.append(nativeHeapAllocatedSize);
-        sb2.append(", PSS MB=");
-        sb2.append(totalPss);
-        sb2.append(", dpss:");
-        sb2.append(memoryInfo2.dalvikPss);
-        sb2.append(", otherpss:");
-        sb2.append(memoryInfo2.otherPss);
-        sb2.append(", nativepss:");
-        sb2.append(memoryInfo2.nativePss);
-        Log.i("com.valvesoftware.JNI_Environment", sb2.toString());
+        Log.i("com.valvesoftware.JNI_Environment", "Memory log HeapMB=" + (((double) Debug.getNativeHeapSize()) / 1048576.0d) + ", HeapUsedMB=" + (((double) Debug.getNativeHeapAllocatedSize()) / 1048576.0d) + ", PSS MB=" + (((float) memoryInfo2.getTotalPss()) / 1024.0f) + ", dpss:" + memoryInfo2.dalvikPss + ", otherpss:" + memoryInfo2.otherPss + ", nativepss:" + memoryInfo2.nativePss);
         return true;
     }
 
     public static boolean OpenURL(String str) {
-        StringBuilder sb = new StringBuilder();
-        sb.append("Opening URL: ");
-        sb.append(str);
-        Log.i(BuildConfig.APPLICATION_ID, sb.toString());
+        Log.i(BuildConfig.APPLICATION_ID, "Opening URL: " + str);
         Intent intent = new Intent("android.intent.action.VIEW", Uri.parse(str));
         intent.addFlags(268435456);
         m_application.startActivity(intent);
@@ -1230,10 +1174,10 @@ public class JNI_Environment {
     }
 
     public static boolean HttpGet(String str) {
-        Volley.newRequestQueue(m_application).add(new StringRequest(0, str, new Listener<String>() {
+        Volley.newRequestQueue(m_application).add(new StringRequest(0, str, new Response.Listener<String>() {
             public void onResponse(String str) {
             }
-        }, new ErrorListener() {
+        }, new Response.ErrorListener() {
             public void onErrorResponse(VolleyError volleyError) {
                 Log.i("com.valvesoftware.JNI_Environment", "HttpGet failed");
             }
@@ -1254,7 +1198,7 @@ public class JNI_Environment {
                 return networkCountryIso.toUpperCase();
             }
         }
-        if (VERSION.SDK_INT >= 24) {
+        if (Build.VERSION.SDK_INT >= 24) {
             str = m_application.getBaseContext().getResources().getConfiguration().getLocales().get(0).getCountry();
         } else {
             str = m_application.getBaseContext().getResources().getConfiguration().locale.getCountry();

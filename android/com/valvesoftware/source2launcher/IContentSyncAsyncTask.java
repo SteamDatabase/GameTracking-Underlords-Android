@@ -1,29 +1,28 @@
 package com.valvesoftware.source2launcher;
 
 import android.os.AsyncTask;
-import com.valvesoftware.PatchSystem.EErrorCode;
-import com.valvesoftware.PatchSystem.EState;
+import com.valvesoftware.PatchSystem;
 
 public abstract class IContentSyncAsyncTask extends AsyncTask<Void, TaskStatus, Boolean> {
     TaskStatus m_status = new TaskStatus();
 
     public class TaskStatus {
-        public EErrorCode m_nErrorCode;
+        public PatchSystem.EErrorCode m_nErrorCode;
         public int m_nProgress;
-        public EState m_nState;
+        public PatchSystem.EState m_nState;
 
         public TaskStatus() {
-            this.m_nState = EState.Unstarted;
-            this.m_nErrorCode = EErrorCode.None;
+            this.m_nState = PatchSystem.EState.Unstarted;
+            this.m_nErrorCode = PatchSystem.EErrorCode.None;
             this.m_nProgress = 0;
-            this.m_nState = EState.Unstarted;
-            this.m_nErrorCode = EErrorCode.None;
+            this.m_nState = PatchSystem.EState.Unstarted;
+            this.m_nErrorCode = PatchSystem.EErrorCode.None;
             this.m_nProgress = 0;
         }
 
-        public TaskStatus(EState eState, EErrorCode eErrorCode, int i) {
-            this.m_nState = EState.Unstarted;
-            this.m_nErrorCode = EErrorCode.None;
+        public TaskStatus(PatchSystem.EState eState, PatchSystem.EErrorCode eErrorCode, int i) {
+            this.m_nState = PatchSystem.EState.Unstarted;
+            this.m_nErrorCode = PatchSystem.EErrorCode.None;
             this.m_nProgress = 0;
             this.m_nState = eState;
             this.m_nErrorCode = eErrorCode;
@@ -37,7 +36,7 @@ public abstract class IContentSyncAsyncTask extends AsyncTask<Void, TaskStatus, 
     }
 
     public final boolean IsDone() {
-        return this.m_status.m_nState == EState.Done;
+        return this.m_status.m_nState == PatchSystem.EState.Done;
     }
 
     /* access modifiers changed from: protected */
@@ -50,7 +49,7 @@ public abstract class IContentSyncAsyncTask extends AsyncTask<Void, TaskStatus, 
     }
 
     /* access modifiers changed from: protected */
-    public void updateProgress(EState eState, EErrorCode eErrorCode, int i) {
+    public void updateProgress(PatchSystem.EState eState, PatchSystem.EErrorCode eErrorCode, int i) {
         publishProgress(new TaskStatus[]{new TaskStatus(eState, eErrorCode, i)});
     }
 }

@@ -8,7 +8,6 @@ import android.opengl.EGLDisplay;
 import android.opengl.EGLSurface;
 import android.opengl.GLES20;
 import android.os.Build;
-import android.os.Build.VERSION;
 import android.util.Log;
 import java.util.ArrayList;
 import org.json.JSONArray;
@@ -19,7 +18,6 @@ public class VulkanWhitelist {
     private ArrayList<DeviceInfo> m_compatibleDevices;
 
     public static boolean DeviceIsVulkanCompatible(JSONObject jSONObject, Context context) {
-        boolean z = false;
         if (jSONObject == null) {
             Log.e(TAG, "jsonManifest is null.");
             return false;
@@ -32,20 +30,21 @@ public class VulkanWhitelist {
                 JSONArray jSONArray = jSONObject.getJSONArray("vulkan_whitelist");
                 if (jSONArray == null) {
                     Log.e(TAG, "Unable to get JSONArray \"vulkan_whitelist\".");
+                    return false;
                 } else if (!vulkanWhitelist.InitializeFromJSONObject(jSONArray).booleanValue()) {
                     Log.e(TAG, "VulkanWhitelist failed to load from JSONObject");
-                } else if (vulkanWhitelist.IsDeviceCompatible(context).booleanValue()) {
+                    return false;
+                } else if (!vulkanWhitelist.IsDeviceCompatible(context).booleanValue()) {
+                    return false;
+                } else {
                     Log.i(TAG, "Device is Vulkan compatible.");
-                    z = true;
+                    return true;
                 }
             } catch (Exception e) {
                 String str = TAG;
-                StringBuilder sb = new StringBuilder();
-                sb.append("VulkanWhitelist Exception: ");
-                sb.append(e.toString());
-                Log.e(str, sb.toString());
+                Log.e(str, "VulkanWhitelist Exception: " + e.toString());
+                return false;
             }
-            return z;
         }
     }
 
@@ -122,7 +121,7 @@ public class VulkanWhitelist {
         L_0x0092:
             if (r10 == 0) goto L_0x00e0
             org.json.JSONObject r4 = new org.json.JSONObject     // Catch:{ Exception -> 0x00bb }
-            r4.<init>(r10)     // Catch:{ Exception -> 0x00bb }
+            r4.<init>((java.lang.String) r10)     // Catch:{ Exception -> 0x00bb }
             java.lang.String r10 = TAG     // Catch:{ Exception -> 0x00b8 }
             java.lang.StringBuilder r2 = new java.lang.StringBuilder     // Catch:{ Exception -> 0x00b8 }
             r2.<init>()     // Catch:{ Exception -> 0x00b8 }
@@ -202,33 +201,29 @@ public class VulkanWhitelist {
                     this.m_compatibleDevices.add(PopulateFromJSON);
                 }
             }
-            return Boolean.valueOf(true);
+            return true;
         } catch (Exception e) {
             String str = TAG;
-            StringBuilder sb = new StringBuilder();
-            sb.append("Failed to parse Vulkan whitelist exception: ");
-            sb.append(e.toString());
-            Log.e(str, sb.toString());
-            return Boolean.valueOf(false);
+            Log.e(str, "Failed to parse Vulkan whitelist exception: " + e.toString());
+            return false;
         }
     }
 
     public Boolean IsDeviceCompatible(Context context) {
         DeviceInfo CollectThisDeviceInfo = CollectThisDeviceInfo(context);
-        Boolean valueOf = Boolean.valueOf(false);
         if (CollectThisDeviceInfo == null) {
-            return valueOf;
+            return false;
         }
         if (this.m_compatibleDevices != null) {
             for (int i = 0; i < this.m_compatibleDevices.size(); i++) {
-                if (DeviceInfo.DevicesCompatible(CollectThisDeviceInfo, (DeviceInfo) this.m_compatibleDevices.get(i))) {
+                if (DeviceInfo.DevicesCompatible(CollectThisDeviceInfo, this.m_compatibleDevices.get(i))) {
                     Log.i(TAG, "Device determined to be compatible with Vulkan.");
-                    return Boolean.valueOf(true);
+                    return true;
                 }
             }
         }
         Log.i(TAG, "Device determined not to be compatible with Vulkan.");
-        return valueOf;
+        return false;
     }
 
     private DeviceInfo CollectThisDeviceInfo(Context context) {
@@ -239,64 +234,47 @@ public class VulkanWhitelist {
             return null;
         }
         DeviceInfo deviceInfo = new DeviceInfo();
-        int i = VERSION.SDK_INT;
+        int i = Build.VERSION.SDK_INT;
         deviceInfo.m_nMaxOS = i;
         deviceInfo.m_nMinOS = i;
-        StringBuilder sb3 = new StringBuilder();
-        sb3.append(Build.MANUFACTURER);
-        sb3.append(" ");
-        sb3.append(Build.PRODUCT);
-        deviceInfo.m_sDeviceName = sb3.toString();
-        String sb4 = sb2.toString();
-        deviceInfo.m_sMaxDriverVersion = sb4;
-        deviceInfo.m_sMinDriverVersion = sb4;
+        deviceInfo.m_sDeviceName = Build.MANUFACTURER + " " + Build.PRODUCT;
+        String sb3 = sb2.toString();
+        deviceInfo.m_sMaxDriverVersion = sb3;
+        deviceInfo.m_sMinDriverVersion = sb3;
         deviceInfo.m_sRenderer = sb.toString();
         String str = TAG;
-        StringBuilder sb5 = new StringBuilder();
-        sb5.append("DeviceInfo OS: ");
-        sb5.append(deviceInfo.m_nMinOS);
-        Log.i(str, sb5.toString());
+        Log.i(str, "DeviceInfo OS: " + deviceInfo.m_nMinOS);
         String str2 = TAG;
-        StringBuilder sb6 = new StringBuilder();
-        sb6.append("DeviceInfo Device Name: ");
-        sb6.append(deviceInfo.m_sDeviceName);
-        Log.i(str2, sb6.toString());
+        Log.i(str2, "DeviceInfo Device Name: " + deviceInfo.m_sDeviceName);
         String str3 = TAG;
-        StringBuilder sb7 = new StringBuilder();
-        sb7.append("DeviceInfo Driver Version: ");
-        sb7.append(deviceInfo.m_sMinDriverVersion);
-        Log.i(str3, sb7.toString());
+        Log.i(str3, "DeviceInfo Driver Version: " + deviceInfo.m_sMinDriverVersion);
         String str4 = TAG;
-        StringBuilder sb8 = new StringBuilder();
-        sb8.append("DeviceInfo Renderer: ");
-        sb8.append(deviceInfo.m_sRenderer);
-        Log.i(str4, sb8.toString());
+        Log.i(str4, "DeviceInfo Renderer: " + deviceInfo.m_sRenderer);
         return deviceInfo;
     }
 
     private Boolean GetOpenGLDriverInfo(StringBuilder sb, StringBuilder sb2) {
-        Boolean valueOf = Boolean.valueOf(false);
         EGLDisplay eglGetDisplay = EGL14.eglGetDisplay(0);
         if (eglGetDisplay == EGL14.EGL_NO_DISPLAY) {
             Log.e(TAG, "eglGetDisplay failed.");
-            return valueOf;
+            return false;
         }
         int[] iArr = new int[2];
         if (!EGL14.eglInitialize(eglGetDisplay, iArr, 0, iArr, 1)) {
             Log.e(TAG, "eglInitialize failed.");
-            return valueOf;
+            return false;
         }
         EGLConfig[] eGLConfigArr = new EGLConfig[1];
         if (!EGL14.eglChooseConfig(eglGetDisplay, new int[]{12324, 8, 12323, 8, 12322, 8, 12321, 8, 12352, 68, 12344}, 0, eGLConfigArr, 0, eGLConfigArr.length, new int[1], 0)) {
             EGL14.eglTerminate(eglGetDisplay);
             Log.e(TAG, "eglChooseConfig failed.");
-            return valueOf;
+            return false;
         }
         EGLContext eglCreateContext = EGL14.eglCreateContext(eglGetDisplay, eGLConfigArr[0], EGL14.EGL_NO_CONTEXT, new int[]{12440, 3, 12344}, 0);
         if (eglCreateContext == EGL14.EGL_NO_CONTEXT || EGL14.eglGetError() != 12288) {
             EGL14.eglTerminate(eglGetDisplay);
             Log.e(TAG, "eglCreateContext failed.");
-            return valueOf;
+            return false;
         }
         EGLSurface eglCreatePbufferSurface = EGL14.eglCreatePbufferSurface(eglGetDisplay, eGLConfigArr[0], new int[]{12375, 4, 12374, 4, 12344}, 0);
         if (eglCreatePbufferSurface == null) {
@@ -304,13 +282,13 @@ public class VulkanWhitelist {
             EGL14.eglDestroySurface(eglGetDisplay, eglCreatePbufferSurface);
             EGL14.eglTerminate(eglGetDisplay);
             Log.e(TAG, "eglCreatePbufferSurface failed.");
-            return valueOf;
+            return false;
         } else if (!EGL14.eglMakeCurrent(eglGetDisplay, eglCreatePbufferSurface, eglCreatePbufferSurface, eglCreateContext)) {
             EGL14.eglDestroyContext(eglGetDisplay, eglCreateContext);
             EGL14.eglDestroySurface(eglGetDisplay, eglCreatePbufferSurface);
             EGL14.eglTerminate(eglGetDisplay);
             Log.e(TAG, "eglMakeCurrent failed.");
-            return valueOf;
+            return false;
         } else {
             String glGetString = GLES20.glGetString(7938);
             String glGetString2 = GLES20.glGetString(7937);
@@ -318,11 +296,11 @@ public class VulkanWhitelist {
             EGL14.eglDestroySurface(eglGetDisplay, eglCreatePbufferSurface);
             EGL14.eglTerminate(eglGetDisplay);
             if (glGetString == null || glGetString2 == null) {
-                return valueOf;
+                return false;
             }
             sb.append(glGetString2);
             sb2.append(glGetString);
-            return Boolean.valueOf(true);
+            return true;
         }
     }
 }

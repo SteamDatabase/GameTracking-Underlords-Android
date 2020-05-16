@@ -22,10 +22,7 @@ public abstract class Application extends android.app.Application {
     }
 
     public String[] GetNativeBinarySearchPaths(String str) {
-        StringBuilder sb = new StringBuilder();
-        sb.append("game:/bin/");
-        sb.append(str);
-        return new String[]{sb.toString()};
+        return new String[]{"game:/bin/" + str};
     }
 
     public void onCreate() {

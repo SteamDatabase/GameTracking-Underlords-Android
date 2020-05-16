@@ -28,7 +28,7 @@ public class SelfInstall {
     }
 
     /* JADX WARNING: Code restructure failed: missing block: B:50:0x00f2, code lost:
-        if (r1 != 0) goto L_0x00f7;
+        if (r1 != null) goto L_0x00f7;
      */
     /* Code decompiled incorrectly, please refer to instructions dump. */
     public static java.io.File GetContentDirectory() {
@@ -194,7 +194,7 @@ public class SelfInstall {
             r5 = r6
         L_0x0138:
             java.io.File r0 = r7.getAbsoluteFile()     // Catch:{ Throwable -> 0x0142 }
-            r3.put(r5, r0)     // Catch:{ Throwable -> 0x0142 }
+            r3.put((java.lang.String) r5, (java.lang.Object) r0)     // Catch:{ Throwable -> 0x0142 }
             com.valvesoftware.Configuration.MarkGlobalConfigurationDirty()     // Catch:{ Throwable -> 0x0142 }
         L_0x0142:
             return r7
@@ -223,18 +223,13 @@ public class SelfInstall {
                 if (nextEntry == null) {
                     break;
                 }
-                String replace = nextEntry.getName().replace("\\", "/");
-                StringBuilder sb = new StringBuilder();
-                sb.append(str);
-                sb.append(File.separator);
-                sb.append(replace);
-                String sb2 = sb.toString();
+                String str2 = str + File.separator + nextEntry.getName().replace("\\", "/");
                 boolean isDirectory = nextEntry.isDirectory();
                 if (nextEntry.getName().charAt(nextEntry.getName().length() - 1) == '\\') {
                     isDirectory = true;
                 }
                 if (!isDirectory) {
-                    if (new File(sb2).exists()) {
+                    if (new File(str2).exists()) {
                         z2 = true;
                     }
                     z3 = true;
@@ -247,10 +242,7 @@ public class SelfInstall {
             }
             zipInputStream.close();
             z = z2;
-            StringBuilder sb3 = new StringBuilder();
-            sb3.append("testunzip ");
-            sb3.append(z);
-            Log.e("com.valvesoftware.SelfInstall", sb3.toString());
+            Log.e("com.valvesoftware.SelfInstall", "testunzip " + z);
             return z;
         } catch (Throwable unused) {
         }
@@ -261,62 +253,36 @@ public class SelfInstall {
         if (GetString == null || GetString.length() == 0) {
             return testUnzip(inputStream, str);
         }
-        boolean z = false;
         try {
             if (!new File(str).exists()) {
                 return false;
             }
-            StringBuilder sb = new StringBuilder();
-            sb.append(str);
-            sb.append(File.separator);
-            sb.append(GetString);
-            if (new File(sb.toString()).exists()) {
-                z = true;
+            if (new File(str + File.separator + GetString).exists()) {
+                return true;
             }
-            return z;
+            return false;
         } catch (Throwable unused) {
-            StringBuilder sb2 = new StringBuilder();
-            sb2.append("isAlreadyUnpacked ");
-            sb2.append(false);
-            Log.e("com.valvesoftware.SelfInstall", sb2.toString());
+            Log.e("com.valvesoftware.SelfInstall", "isAlreadyUnpacked " + false);
             return false;
         }
     }
 
     private static void writeVersionFile(String str) throws IOException {
-        String str2 = "com.valvesoftware.SelfInstall";
         String GetString = Resources.GetString("VersionCodeString");
-        if (!(GetString == null || GetString.length() == 0)) {
-            String str3 = "nofile";
+        if (GetString != null && GetString.length() != 0) {
             try {
                 if (!new File(str).exists()) {
-                    StringBuilder sb = new StringBuilder();
-                    sb.append("Could not find ");
-                    sb.append(str);
-                    Log.e(str2, sb.toString());
+                    Log.e("com.valvesoftware.SelfInstall", "Could not find " + str);
                     return;
                 }
-                StringBuilder sb2 = new StringBuilder();
-                sb2.append(str);
-                sb2.append(File.separator);
-                sb2.append(GetString);
-                String sb3 = sb2.toString();
-                StringBuilder sb4 = new StringBuilder();
-                sb4.append("DAC installed version: ");
-                sb4.append(GetString);
-                String sb5 = sb4.toString();
-                BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(sb3));
-                bufferedWriter.write(sb5);
+                String str2 = str + File.separator + GetString;
+                String str3 = "DAC installed version: " + GetString;
+                BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(str2));
+                bufferedWriter.write(str3);
                 bufferedWriter.close();
-                StringBuilder sb6 = new StringBuilder();
-                sb6.append("Wrote version file ");
-                sb6.append(sb3);
-                Log.e(str2, sb6.toString());
+                Log.e("com.valvesoftware.SelfInstall", "Wrote version file " + str2);
             } catch (Throwable unused) {
-                StringBuilder sb7 = new StringBuilder();
-                sb7.append("Could not write ");
-                sb7.append(str3);
-                Log.e(str2, sb7.toString());
+                Log.e("com.valvesoftware.SelfInstall", "Could not write " + "nofile");
             }
         }
     }
@@ -329,21 +295,16 @@ public class SelfInstall {
         }
         ZipInputStream zipInputStream = new ZipInputStream(inputStream);
         for (ZipEntry nextEntry = zipInputStream.getNextEntry(); nextEntry != null; nextEntry = zipInputStream.getNextEntry()) {
-            String replace = nextEntry.getName().replace("\\", File.separator);
-            StringBuilder sb = new StringBuilder();
-            sb.append(str);
-            sb.append(File.separator);
-            sb.append(replace);
-            String sb2 = sb.toString();
+            String str2 = str + File.separator + nextEntry.getName().replace("\\", File.separator);
             boolean isDirectory = nextEntry.isDirectory();
             if (nextEntry.getName().charAt(nextEntry.getName().length() - 1) == '\\') {
                 isDirectory = true;
             }
             if (!isDirectory) {
-                new File(sb2.substring(0, sb2.lastIndexOf(File.separator))).mkdirs();
-                extractFile(zipInputStream, sb2);
+                new File(str2.substring(0, str2.lastIndexOf(File.separator))).mkdirs();
+                extractFile(zipInputStream, str2);
             } else {
-                File file2 = new File(sb2);
+                File file2 = new File(str2);
                 if (!file2.exists()) {
                     file2.mkdirs();
                     file2.mkdir();
@@ -370,10 +331,7 @@ public class SelfInstall {
         bufferedOutputStream.close();
         counter++;
         if (counter > 10) {
-            StringBuilder sb = new StringBuilder();
-            sb.append("extracting ");
-            sb.append(str);
-            Log.i("com.valvesoftware.SelfInstall", sb.toString());
+            Log.i("com.valvesoftware.SelfInstall", "extracting " + str);
             counter = 0;
         }
     }
@@ -385,64 +343,38 @@ public class SelfInstall {
         if (GetString == null || GetString.length() == 0) {
             GetString = "0000001";
         }
-        String str = "com.valvesoftware.SelfInstall";
         if (Environment.getExternalStorageState().equals("mounted")) {
             File obbDir = application.getApplicationContext().getObbDir();
-            StringBuilder sb = new StringBuilder();
-            sb.append("Looking for ObbFilePath: ");
-            sb.append(obbDir.toString());
-            Log.i(str, sb.toString());
+            Log.i("com.valvesoftware.SelfInstall", "Looking for ObbFilePath: " + obbDir.toString());
             if (obbDir.exists()) {
-                StringBuilder sb2 = new StringBuilder();
-                sb2.append(obbDir.toString());
-                sb2.append(File.separator);
-                sb2.append("main.");
-                sb2.append(GetString);
-                sb2.append(".");
-                sb2.append(packageName);
-                sb2.append(".obb");
-                File file = new File(sb2.toString());
+                File file = new File(obbDir.toString() + File.separator + "main." + GetString + "." + packageName + ".obb");
                 if (file.canRead()) {
                     return file;
                 }
-                StringBuilder sb3 = new StringBuilder();
-                sb3.append("Can't read expansion file: ");
-                sb3.append(file.toString());
-                Log.i(str, sb3.toString());
+                Log.i("com.valvesoftware.SelfInstall", "Can't read expansion file: " + file.toString());
                 return null;
             }
         } else {
-            Log.e(str, "ExternalStorage not mounted!");
+            Log.e("com.valvesoftware.SelfInstall", "ExternalStorage not mounted!");
         }
         return null;
     }
 
     private static InputStream GetAssetZipFile() {
         File FindExpansionFile = FindExpansionFile();
-        String str = "com.valvesoftware.SelfInstall";
         if (FindExpansionFile == null) {
             return JNI_Environment.m_application.getApplicationContext().getAssets().open("game01.zip");
         }
         try {
             FileInputStream fileInputStream = new FileInputStream(FindExpansionFile);
-            StringBuilder sb = new StringBuilder();
-            sb.append("Found OBB file ");
-            sb.append(FindExpansionFile.toString());
-            Log.e(str, sb.toString());
+            Log.e("com.valvesoftware.SelfInstall", "Found OBB file " + FindExpansionFile.toString());
             return fileInputStream;
         } catch (FileNotFoundException unused) {
-            StringBuilder sb2 = new StringBuilder();
-            sb2.append("game01.zip or ");
-            sb2.append(FindExpansionFile);
-            sb2.append(" not found, ok. ");
-            Log.e(str, sb2.toString());
+            Log.e("com.valvesoftware.SelfInstall", "game01.zip or " + FindExpansionFile + " not found, ok. ");
             return null;
         } catch (Throwable th) {
             th.printStackTrace();
-            StringBuilder sb3 = new StringBuilder();
-            sb3.append("game01.zip exception");
-            sb3.append(th.getMessage());
-            Log.e(str, sb3.toString());
+            Log.e("com.valvesoftware.SelfInstall", "game01.zip exception" + th.getMessage());
             return null;
         }
     }
@@ -450,20 +382,7 @@ public class SelfInstall {
     /* JADX WARNING: Removed duplicated region for block: B:22:0x00ad  */
     /* JADX WARNING: Removed duplicated region for block: B:23:0x00b0  */
     /* JADX WARNING: Removed duplicated region for block: B:29:0x00e1 A[Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }] */
-    /* JADX WARNING: Removed duplicated region for block: B:40:0x00e0 A[EDGE_INSN: B:40:0x00e0->B:28:0x00e0 ?: BREAK  
-    EDGE_INSN: B:40:0x00e0->B:28:0x00e0 ?: BREAK  
-    EDGE_INSN: B:40:0x00e0->B:28:0x00e0 ?: BREAK  
-    EDGE_INSN: B:40:0x00e0->B:28:0x00e0 ?: BREAK  
-    EDGE_INSN: B:40:0x00e0->B:28:0x00e0 ?: BREAK  , SYNTHETIC] */
-    /* JADX WARNING: Removed duplicated region for block: B:40:0x00e0 A[EDGE_INSN: B:40:0x00e0->B:28:0x00e0 ?: BREAK  
-    EDGE_INSN: B:40:0x00e0->B:28:0x00e0 ?: BREAK  
-    EDGE_INSN: B:40:0x00e0->B:28:0x00e0 ?: BREAK  
-    EDGE_INSN: B:40:0x00e0->B:28:0x00e0 ?: BREAK  , SYNTHETIC] */
-    /* JADX WARNING: Removed duplicated region for block: B:40:0x00e0 A[EDGE_INSN: B:40:0x00e0->B:28:0x00e0 ?: BREAK  
-    EDGE_INSN: B:40:0x00e0->B:28:0x00e0 ?: BREAK  
-    EDGE_INSN: B:40:0x00e0->B:28:0x00e0 ?: BREAK  , SYNTHETIC] */
-    /* JADX WARNING: Removed duplicated region for block: B:40:0x00e0 A[EDGE_INSN: B:40:0x00e0->B:28:0x00e0 ?: BREAK  
-    EDGE_INSN: B:40:0x00e0->B:28:0x00e0 ?: BREAK  , SYNTHETIC] */
+    /* JADX WARNING: Removed duplicated region for block: B:40:0x00e0 A[EDGE_INSN: B:40:0x00e0->B:28:0x00e0 ?: BREAK  , SYNTHETIC] */
     /* Code decompiled incorrectly, please refer to instructions dump. */
     private static boolean CheckZippedAssets() {
         /*

@@ -225,7 +225,7 @@ public class Resources {
         try {
             Field FindField = FindField(R_drawable, str);
             if (FindField != null) {
-                return new int[]{FindField.getInt(null)};
+                return new int[]{FindField.getInt((Object) null)};
             }
         } catch (Throwable unused) {
         }
@@ -239,7 +239,7 @@ public class Resources {
         try {
             Field FindField = FindField(R_font, str);
             if (FindField != null) {
-                return new int[]{FindField.getInt(null)};
+                return new int[]{FindField.getInt((Object) null)};
             }
         } catch (Throwable unused) {
         }
@@ -260,10 +260,11 @@ public class Resources {
         try {
             Field FindField = FindField(cls, str);
             if (FindField != null) {
-                return FindField.getInt(null);
+                return FindField.getInt((Object) null);
             }
+            return -1;
         } catch (Throwable unused) {
+            return -1;
         }
-        return -1;
     }
 }

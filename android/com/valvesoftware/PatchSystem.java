@@ -1,26 +1,21 @@
 package com.valvesoftware;
 
 import android.app.DownloadManager;
-import android.app.DownloadManager.Query;
-import android.app.DownloadManager.Request;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
-import android.os.Build.VERSION;
 import android.os.Handler;
 import android.os.StatFs;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.content.FileProvider;
 import android.util.Log;
-import com.android.volley.Response.ErrorListener;
-import com.android.volley.Response.Listener;
+import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
@@ -59,22 +54,21 @@ public class PatchSystem {
         public boolean m_bIsDone;
 
         public void run() {
-            String str = "com.valvesoftware.PatchSystem";
             if (PatchSystem.this.m_eUserResponse == EUserDownloadResponse.SkipDownloadAPK) {
                 PatchSystem.this.m_timerUserReponseHandler.removeCallbacks(PatchSystem.this.m_timerUserResponseRunnable);
-                Log.i(str, "Skipping APK download, we're done.");
+                Log.i("com.valvesoftware.PatchSystem", "Skipping APK download, we're done.");
                 PatchSystem.this.OnHaveCurrentAPK();
             } else if (PatchSystem.this.m_eUserResponse == EUserDownloadResponse.DownloadAPK) {
                 PatchSystem.this.m_timerUserReponseHandler.removeCallbacks(PatchSystem.this.m_timerUserResponseRunnable);
-                Log.i(str, "Downloading APK.");
+                Log.i("com.valvesoftware.PatchSystem", "Downloading APK.");
                 PatchSystem.this.OnContinueAPKDownload();
             } else if (PatchSystem.this.m_eUserResponse == EUserDownloadResponse.SkipDownloadVPK) {
                 PatchSystem.this.m_timerUserReponseHandler.removeCallbacks(PatchSystem.this.m_timerUserResponseRunnable);
-                Log.i(str, "Skipping VPK download, we're done.");
+                Log.i("com.valvesoftware.PatchSystem", "Skipping VPK download, we're done.");
                 PatchSystem.this.SetState(EState.Done);
             } else if (PatchSystem.this.m_eUserResponse == EUserDownloadResponse.DownloadVPK) {
                 PatchSystem.this.m_timerUserReponseHandler.removeCallbacks(PatchSystem.this.m_timerUserResponseRunnable);
-                Log.i(str, "Downloading VPKs.");
+                Log.i("com.valvesoftware.PatchSystem", "Downloading VPKs.");
                 PatchSystem.this.OnContinueFileDownload();
             } else {
                 PatchSystem.this.m_timerUserReponseHandler.postDelayed(this, 200);
@@ -82,150 +76,6 @@ public class PatchSystem {
         }
     };
     ArrayList<PendingDownload> m_vecPendingDownloads = new ArrayList<>();
-
-    private class CAsyncDownloadManagerTask extends AsyncTask<Void, Void, Boolean> {
-        private boolean m_bEnqueueError;
-
-        private CAsyncDownloadManagerTask() {
-            this.m_bEnqueueError = false;
-        }
-
-        /* access modifiers changed from: protected */
-        public Boolean doInBackground(Void... voidArr) {
-            Context applicationContext = JNI_Environment.m_application.getApplicationContext();
-            final DownloadManager downloadManager = (DownloadManager) applicationContext.getSystemService("download");
-            applicationContext.registerReceiver(new BroadcastReceiver() {
-                public void onReceive(Context context, Intent intent) {
-                    long longExtra = intent.getLongExtra("extra_download_id", -1);
-                    boolean z = true;
-                    boolean z2 = false;
-                    Cursor query = downloadManager.query(new Query().setFilterById(new long[]{longExtra}));
-                    int i = -1;
-                    String str = null;
-                    if (query.moveToFirst()) {
-                        if (query.getInt(query.getColumnIndex(NotificationCompat.CATEGORY_STATUS)) == 8) {
-                            z2 = true;
-                        }
-                        if (!z2) {
-                            i = query.getInt(query.getColumnIndex("reason"));
-                        } else {
-                            str = query.getString(query.getColumnIndex("local_uri"));
-                        }
-                    } else {
-                        Log.i("com.valvesoftware.PatchSystem", "moveToFirst failed");
-                        z = false;
-                    }
-                    query.close();
-                    if (!z) {
-                        return;
-                    }
-                    if (z2) {
-                        PatchSystem.this.OnDownloadResponseSuccess(longExtra, str);
-                    } else {
-                        PatchSystem.this.OnDownloadResponseFailure(longExtra, i);
-                    }
-                }
-            }, new IntentFilter("android.intent.action.DOWNLOAD_COMPLETE"));
-            Iterator it = PatchSystem.this.m_vecPendingDownloads.iterator();
-            while (it.hasNext()) {
-                PendingDownload pendingDownload = (PendingDownload) it.next();
-                Request request = new Request(Uri.parse(pendingDownload.strURL));
-                if (PatchSystem.this.m_bDownloadingAPK) {
-                    request.setDestinationUri(pendingDownload.uriDestinationPath);
-                } else {
-                    File externalCacheDir = applicationContext.getExternalCacheDir();
-                    StringBuilder sb = new StringBuilder();
-                    sb.append("download_");
-                    sb.append(Integer.toHexString(pendingDownload.strFilePath.hashCode()));
-                    sb.append("_");
-                    sb.append(pendingDownload.strVersionCode);
-                    sb.append(".tmp");
-                    request.setDestinationUri(Uri.fromFile(new File(externalCacheDir, sb.toString())));
-                }
-                request.setTitle(pendingDownload.strFilePath);
-                request.setDescription(pendingDownload.strFilePath);
-                request.setNotificationVisibility(0);
-                synchronized (PatchSystem.this.m_mapPendingDownloads) {
-                    try {
-                        pendingDownload.nDownloadID = downloadManager.enqueue(request);
-                        PatchSystem.this.m_mapPendingDownloads.put(Long.valueOf(pendingDownload.nDownloadID), pendingDownload);
-                        PatchSystem.this.m_nTotalDownloadBytes = PatchSystem.this.m_nTotalDownloadBytes + pendingDownload.nByteSize;
-                    } catch (Throwable th) {
-                        this.m_bEnqueueError = true;
-                        StringBuilder sb2 = new StringBuilder();
-                        sb2.append("Download Queue Failed: ");
-                        sb2.append(pendingDownload.strURL);
-                        sb2.append(" with exception: ");
-                        sb2.append(th.getMessage());
-                        Log.i("com.valvesoftware.PatchSystem", sb2.toString());
-                    }
-                }
-                StringBuilder sb3 = new StringBuilder();
-                sb3.append("Download Queued: ");
-                sb3.append(pendingDownload.strURL);
-                sb3.append(" (DownloadID: ");
-                sb3.append(String.valueOf(pendingDownload.nDownloadID));
-                sb3.append(")");
-                Log.i("com.valvesoftware.PatchSystem", sb3.toString());
-            }
-            PatchSystem.this.m_vecPendingDownloads.clear();
-            return Boolean.valueOf(true);
-        }
-
-        /* access modifiers changed from: protected */
-        public void onPostExecute(Boolean bool) {
-            super.onPostExecute(bool);
-            if (this.m_bEnqueueError) {
-                PatchSystem.this.WaitForUserInput(EState.Error, EErrorCode.QueueDownload);
-            } else {
-                PatchSystem.this.SetState(EState.AssetsDownloading);
-            }
-        }
-    }
-
-    private class CRegistry {
-        private SharedPreferences m_SharedPreferences;
-
-        public CRegistry() {
-            Context applicationContext = JNI_Environment.m_application.getApplicationContext();
-            String GetString = Resources.GetString("GameName");
-            StringBuilder sb = new StringBuilder();
-            sb.append("PatchSystemRegistry.");
-            sb.append(GetString);
-            this.m_SharedPreferences = applicationContext.getSharedPreferences(sb.toString(), 0);
-        }
-
-        public int GetLastFullyInstalledAppVersion() {
-            return this.m_SharedPreferences.getInt("lastfullyinstalledappversion", 0);
-        }
-
-        public void SetLastFullyInstalledAppVersion(int i) {
-            Editor edit = this.m_SharedPreferences.edit();
-            edit.putInt("lastfullyinstalledappversion", i);
-            edit.apply();
-        }
-
-        public boolean HasAssetVersion(String str, String str2) {
-            StringBuilder sb = new StringBuilder();
-            sb.append("assetversion:");
-            sb.append(str);
-            String string = this.m_SharedPreferences.getString(sb.toString(), null);
-            if (string == null) {
-                return false;
-            }
-            return str2.equals(string);
-        }
-
-        public void SetAssetVersion(String str, String str2) {
-            StringBuilder sb = new StringBuilder();
-            sb.append("assetversion:");
-            sb.append(str);
-            String sb2 = sb.toString();
-            Editor edit = this.m_SharedPreferences.edit();
-            edit.putString(sb2, str2);
-            edit.apply();
-        }
-    }
 
     public enum EErrorCode {
         None,
@@ -268,6 +118,40 @@ public class PatchSystem {
         }
     }
 
+    private class CRegistry {
+        private SharedPreferences m_SharedPreferences;
+
+        public CRegistry() {
+            Context applicationContext = JNI_Environment.m_application.getApplicationContext();
+            String GetString = Resources.GetString("GameName");
+            this.m_SharedPreferences = applicationContext.getSharedPreferences("PatchSystemRegistry." + GetString, 0);
+        }
+
+        public int GetLastFullyInstalledAppVersion() {
+            return this.m_SharedPreferences.getInt("lastfullyinstalledappversion", 0);
+        }
+
+        public void SetLastFullyInstalledAppVersion(int i) {
+            SharedPreferences.Editor edit = this.m_SharedPreferences.edit();
+            edit.putInt("lastfullyinstalledappversion", i);
+            edit.apply();
+        }
+
+        public boolean HasAssetVersion(String str, String str2) {
+            String string = this.m_SharedPreferences.getString("assetversion:" + str, (String) null);
+            if (string == null) {
+                return false;
+            }
+            return str2.equals(string);
+        }
+
+        public void SetAssetVersion(String str, String str2) {
+            SharedPreferences.Editor edit = this.m_SharedPreferences.edit();
+            edit.putString("assetversion:" + str, str2);
+            edit.apply();
+        }
+    }
+
     /* access modifiers changed from: private */
     public void WaitForUserInput(EState eState, EErrorCode eErrorCode) {
         this.m_eUserResponse = EUserDownloadResponse.Waiting;
@@ -277,10 +161,9 @@ public class PatchSystem {
     }
 
     private void ClearPendingDownloads() {
-        File[] listFiles;
         Context applicationContext = JNI_Environment.m_application.getApplicationContext();
         DownloadManager downloadManager = (DownloadManager) applicationContext.getSystemService("download");
-        Query query = new Query();
+        DownloadManager.Query query = new DownloadManager.Query();
         query.setFilterByStatus(31);
         Cursor query2 = downloadManager.query(query);
         if (query2 != null) {
@@ -303,25 +186,18 @@ public class PatchSystem {
 
     public void Start(String str, int i) {
         this.m_strSyncPath = JNI_Environment.GetPublicPath().getAbsolutePath();
-        String str2 = "com.valvesoftware.PatchSystem";
-        Log.i(str2, "Starting...");
-        StringBuilder sb = new StringBuilder();
-        sb.append("Manifest URL: ");
-        sb.append(str);
-        Log.i(str2, sb.toString());
-        StringBuilder sb2 = new StringBuilder();
-        sb2.append("Sync Path: ");
-        sb2.append(this.m_strSyncPath);
-        Log.i(str2, sb2.toString());
+        Log.i("com.valvesoftware.PatchSystem", "Starting...");
+        Log.i("com.valvesoftware.PatchSystem", "Manifest URL: " + str);
+        Log.i("com.valvesoftware.PatchSystem", "Sync Path: " + this.m_strSyncPath);
         this.m_Registry = new CRegistry();
         this.m_nApplicationVersion = i;
         ClearPendingDownloads();
         SetState(EState.ManifestDownloading);
-        Volley.newRequestQueue(JNI_Environment.m_application).add(new JsonObjectRequest(str, null, new Listener<JSONObject>() {
+        Volley.newRequestQueue(JNI_Environment.m_application).add(new JsonObjectRequest(str, (JSONObject) null, new Response.Listener<JSONObject>() {
             public void onResponse(JSONObject jSONObject) {
                 PatchSystem.this.OnManifestResponseSuccess(jSONObject);
             }
-        }, new ErrorListener() {
+        }, new Response.ErrorListener() {
             public void onErrorResponse(VolleyError volleyError) {
                 PatchSystem.this.OnManifestResponseFailure(volleyError.toString());
             }
@@ -378,41 +254,27 @@ public class PatchSystem {
 
     /* access modifiers changed from: private */
     public void OnHaveCurrentAPK() {
-        String str = "cdnroot";
         boolean DeviceIsVulkanCompatible = VulkanWhitelist.DeviceIsVulkanCompatible(this.m_JSONManifest, JNI_Environment.m_application.getApplicationContext());
         StringBuilder sb = new StringBuilder();
         sb.append("Rendering API chosen from VulkanWhitelist: ");
         sb.append(DeviceIsVulkanCompatible ? "Vulkan" : "OpenGL ES");
-        String str2 = "com.valvesoftware.PatchSystem";
-        Log.i(str2, sb.toString());
+        Log.i("com.valvesoftware.PatchSystem", sb.toString());
         this.m_vecPendingDownloads = new ArrayList<>();
         try {
-            String string = this.m_JSONManifest.getString(str);
+            String string = this.m_JSONManifest.getString("cdnroot");
             JSONObject jSONObject = this.m_JSONManifest.getJSONObject("assets");
-            Iterator keys = jSONObject.keys();
+            Iterator<String> keys = jSONObject.keys();
             while (keys.hasNext()) {
-                String str3 = (String) keys.next();
-                JSONObject jSONObject2 = jSONObject.getJSONObject(str3);
+                String next = keys.next();
+                JSONObject jSONObject2 = jSONObject.getJSONObject(next);
                 int i = jSONObject2.getInt("bytesize");
                 String string2 = jSONObject2.getString("version");
-                File file = new File(this.m_strSyncPath, str3);
-                String optString = jSONObject2.optString(str, string);
-                StringBuilder sb2 = new StringBuilder();
-                sb2.append(optString);
-                sb2.append(str3.replace(" ", "%20"));
-                String sb3 = sb2.toString();
-                StringBuilder sb4 = new StringBuilder();
-                sb4.append(optString);
-                sb4.append(str3);
-                String sb5 = sb4.toString();
-                if (sb3.compareTo(sb5) != 0) {
-                    StringBuilder sb6 = new StringBuilder();
-                    sb6.append("Sanitizing Manifest URL \"");
-                    sb6.append(sb5);
-                    sb6.append("\" to \"");
-                    sb6.append(sb3);
-                    sb6.append("\"");
-                    Log.i(str2, sb6.toString());
+                File file = new File(this.m_strSyncPath, next);
+                String optString = jSONObject2.optString("cdnroot", string);
+                String str = optString + next.replace(" ", "%20");
+                String str2 = optString + next;
+                if (str.compareTo(str2) != 0) {
+                    Log.i("com.valvesoftware.PatchSystem", "Sanitizing Manifest URL \"" + str2 + "\" to \"" + str + "\"");
                 }
                 String optString2 = jSONObject2.optString("depotgroup", "common");
                 if (!optString2.equals("client_vulkan_iosall")) {
@@ -422,19 +284,13 @@ public class PatchSystem {
                     } else if (optString2.equals("client_vulkan_androidall")) {
                     }
                     if (!file.exists()) {
-                        StringBuilder sb7 = new StringBuilder();
-                        sb7.append("Forcing Download for Missing Asset: ");
-                        sb7.append(str3);
-                        Log.i(str2, sb7.toString());
-                    } else if (this.m_Registry.HasAssetVersion(str3, string2)) {
-                        StringBuilder sb8 = new StringBuilder();
-                        sb8.append("Skipping Download for Existing Asset: ");
-                        sb8.append(str3);
-                        Log.i(str2, sb8.toString());
+                        Log.i("com.valvesoftware.PatchSystem", "Forcing Download for Missing Asset: " + next);
+                    } else if (this.m_Registry.HasAssetVersion(next, string2)) {
+                        Log.i("com.valvesoftware.PatchSystem", "Skipping Download for Existing Asset: " + next);
                     }
                     PendingDownload pendingDownload = new PendingDownload();
-                    pendingDownload.strFilePath = str3;
-                    pendingDownload.strURL = sb3;
+                    pendingDownload.strFilePath = next;
+                    pendingDownload.strURL = str;
                     pendingDownload.strVersionCode = string2;
                     pendingDownload.uriDestinationPath = Uri.fromFile(file);
                     pendingDownload.nByteSize = (long) i;
@@ -442,15 +298,15 @@ public class PatchSystem {
                 }
             }
             if (this.m_vecPendingDownloads.isEmpty()) {
-                Log.i(str2, "All files up-to-date, we're done.");
+                Log.i("com.valvesoftware.PatchSystem", "All files up-to-date, we're done.");
                 SetState(EState.Done);
                 return;
             }
             this.m_Registry.SetLastFullyInstalledAppVersion(0);
             this.m_nPotentialDownloadBytes = 0;
-            Iterator it = this.m_vecPendingDownloads.iterator();
+            Iterator<PendingDownload> it = this.m_vecPendingDownloads.iterator();
             while (it.hasNext()) {
-                this.m_nPotentialDownloadBytes += ((PendingDownload) it.next()).nByteSize;
+                this.m_nPotentialDownloadBytes += it.next().nByteSize;
             }
             if (GetAvailableStorageBytes() <= this.m_nPotentialDownloadBytes) {
                 WaitForUserInput(EState.Error, EErrorCode.Storage);
@@ -458,36 +314,23 @@ public class PatchSystem {
                 WaitForUserInput(EState.ManifestDownloadedWaitingOnUser, EErrorCode.None);
             }
         } catch (Exception e) {
-            StringBuilder sb9 = new StringBuilder();
-            sb9.append("Manifest Exception: ");
-            sb9.append(e.toString());
-            Log.e(str2, sb9.toString());
+            Log.e("com.valvesoftware.PatchSystem", "Manifest Exception: " + e.toString());
             WaitForUserInput(EState.Error, EErrorCode.Manifest);
         }
     }
 
     private boolean DeleteExistingFile(File file) {
-        String str = "com.valvesoftware.PatchSystem";
         if (file.exists()) {
             if (!file.delete()) {
-                StringBuilder sb = new StringBuilder();
-                sb.append("Couldn't Delete Existing File: ");
-                sb.append(file.getAbsolutePath());
-                Log.e(str, sb.toString());
+                Log.e("com.valvesoftware.PatchSystem", "Couldn't Delete Existing File: " + file.getAbsolutePath());
                 return false;
             }
-            StringBuilder sb2 = new StringBuilder();
-            sb2.append("Deleted Existing File: ");
-            sb2.append(file.getAbsolutePath());
-            Log.i(str, sb2.toString());
+            Log.i("com.valvesoftware.PatchSystem", "Deleted Existing File: " + file.getAbsolutePath());
         }
         if (!file.exists()) {
             return true;
         }
-        StringBuilder sb3 = new StringBuilder();
-        sb3.append("Didn't Actually Delete Existing File: ");
-        sb3.append(file.getAbsolutePath());
-        Log.e(str, sb3.toString());
+        Log.e("com.valvesoftware.PatchSystem", "Didn't Actually Delete Existing File: " + file.getAbsolutePath());
         return false;
     }
 
@@ -497,46 +340,118 @@ public class PatchSystem {
             SetState(EState.AssetsDownloading);
             this.m_bDownloadingAPK = true;
             Context applicationContext = JNI_Environment.m_application.getApplicationContext();
-            String str = "_underlords_tmp_install_.apk";
-            File file = new File(applicationContext.getExternalCacheDir(), str);
+            File file = new File(applicationContext.getExternalCacheDir(), "_underlords_tmp_install_.apk");
             if (!DeleteExistingFile(file)) {
                 WaitForUserInput(EState.Error, EErrorCode.Manifest);
                 return;
             }
-            String str2 = "com.valvesoftware.PatchSystem";
             if (!this.m_vecPendingDownloads.isEmpty()) {
-                Log.e(str2, "State exception - start download with non-empty pending list");
+                Log.e("com.valvesoftware.PatchSystem", "State exception - start download with non-empty pending list");
                 this.m_vecPendingDownloads.clear();
             }
             try {
                 PendingDownload pendingDownload = new PendingDownload();
-                pendingDownload.strFilePath = str;
+                pendingDownload.strFilePath = "_underlords_tmp_install_.apk";
                 pendingDownload.strURL = this.m_newAPKUrl;
                 pendingDownload.strVersionCode = "01";
                 pendingDownload.uriDestinationPath = Uri.fromFile(file);
                 pendingDownload.nByteSize = this.m_nPotentialDownloadBytes;
                 this.m_vecPendingDownloads.add(pendingDownload);
-                if (VERSION.SDK_INT >= 24) {
-                    StringBuilder sb = new StringBuilder();
-                    sb.append(applicationContext.getApplicationContext().getPackageName());
-                    sb.append(".provider");
-                    this.m_downloadedAPKLocation = FileProvider.getUriForFile(applicationContext, sb.toString(), file);
+                if (Build.VERSION.SDK_INT >= 24) {
+                    this.m_downloadedAPKLocation = FileProvider.getUriForFile(applicationContext, applicationContext.getApplicationContext().getPackageName() + ".provider", file);
                 } else {
-                    StringBuilder sb2 = new StringBuilder();
-                    sb2.append("file://");
-                    sb2.append(file);
-                    this.m_downloadedAPKLocation = Uri.parse(sb2.toString());
+                    this.m_downloadedAPKLocation = Uri.parse("file://" + file);
                 }
                 OnContinueFileDownload();
             } catch (Exception e) {
-                StringBuilder sb3 = new StringBuilder();
-                sb3.append("Manifest Exception: ");
-                sb3.append(e.toString());
-                Log.e(str2, sb3.toString());
+                Log.e("com.valvesoftware.PatchSystem", "Manifest Exception: " + e.toString());
                 WaitForUserInput(EState.Error, EErrorCode.Manifest);
             }
         } else {
             SetState(EState.APKDownloadedWaitingOnUser);
+        }
+    }
+
+    private class CAsyncDownloadManagerTask extends AsyncTask<Void, Void, Boolean> {
+        private boolean m_bEnqueueError;
+
+        private CAsyncDownloadManagerTask() {
+            this.m_bEnqueueError = false;
+        }
+
+        /* access modifiers changed from: protected */
+        public Boolean doInBackground(Void... voidArr) {
+            Context applicationContext = JNI_Environment.m_application.getApplicationContext();
+            final DownloadManager downloadManager = (DownloadManager) applicationContext.getSystemService("download");
+            applicationContext.registerReceiver(new BroadcastReceiver() {
+                public void onReceive(Context context, Intent intent) {
+                    long longExtra = intent.getLongExtra("extra_download_id", -1);
+                    boolean z = true;
+                    boolean z2 = false;
+                    Cursor query = downloadManager.query(new DownloadManager.Query().setFilterById(new long[]{longExtra}));
+                    int i = -1;
+                    String str = null;
+                    if (query.moveToFirst()) {
+                        if (query.getInt(query.getColumnIndex(NotificationCompat.CATEGORY_STATUS)) == 8) {
+                            z2 = true;
+                        }
+                        if (!z2) {
+                            i = query.getInt(query.getColumnIndex("reason"));
+                        } else {
+                            str = query.getString(query.getColumnIndex("local_uri"));
+                        }
+                    } else {
+                        Log.i("com.valvesoftware.PatchSystem", "moveToFirst failed");
+                        z = false;
+                    }
+                    query.close();
+                    if (!z) {
+                        return;
+                    }
+                    if (z2) {
+                        PatchSystem.this.OnDownloadResponseSuccess(longExtra, str);
+                    } else {
+                        PatchSystem.this.OnDownloadResponseFailure(longExtra, i);
+                    }
+                }
+            }, new IntentFilter("android.intent.action.DOWNLOAD_COMPLETE"));
+            Iterator<PendingDownload> it = PatchSystem.this.m_vecPendingDownloads.iterator();
+            while (it.hasNext()) {
+                PendingDownload next = it.next();
+                DownloadManager.Request request = new DownloadManager.Request(Uri.parse(next.strURL));
+                if (PatchSystem.this.m_bDownloadingAPK) {
+                    request.setDestinationUri(next.uriDestinationPath);
+                } else {
+                    File externalCacheDir = applicationContext.getExternalCacheDir();
+                    request.setDestinationUri(Uri.fromFile(new File(externalCacheDir, "download_" + Integer.toHexString(next.strFilePath.hashCode()) + "_" + next.strVersionCode + ".tmp")));
+                }
+                request.setTitle(next.strFilePath);
+                request.setDescription(next.strFilePath);
+                request.setNotificationVisibility(0);
+                synchronized (PatchSystem.this.m_mapPendingDownloads) {
+                    try {
+                        next.nDownloadID = downloadManager.enqueue(request);
+                        PatchSystem.this.m_mapPendingDownloads.put(Long.valueOf(next.nDownloadID), next);
+                        long unused = PatchSystem.this.m_nTotalDownloadBytes = PatchSystem.this.m_nTotalDownloadBytes + next.nByteSize;
+                    } catch (Throwable th) {
+                        this.m_bEnqueueError = true;
+                        Log.i("com.valvesoftware.PatchSystem", "Download Queue Failed: " + next.strURL + " with exception: " + th.getMessage());
+                    }
+                }
+                Log.i("com.valvesoftware.PatchSystem", "Download Queued: " + next.strURL + " (DownloadID: " + String.valueOf(next.nDownloadID) + ")");
+            }
+            PatchSystem.this.m_vecPendingDownloads.clear();
+            return true;
+        }
+
+        /* access modifiers changed from: protected */
+        public void onPostExecute(Boolean bool) {
+            super.onPostExecute(bool);
+            if (this.m_bEnqueueError) {
+                PatchSystem.this.WaitForUserInput(EState.Error, EErrorCode.QueueDownload);
+            } else {
+                PatchSystem.this.SetState(EState.AssetsDownloading);
+            }
         }
     }
 
@@ -548,35 +463,17 @@ public class PatchSystem {
 
     /* access modifiers changed from: private */
     public void OnManifestResponseFailure(String str) {
-        StringBuilder sb = new StringBuilder();
-        sb.append("Error: ");
-        sb.append(str.toString());
-        Log.e("com.valvesoftware.PatchSystem", sb.toString());
+        Log.e("com.valvesoftware.PatchSystem", "Error: " + str.toString());
         WaitForUserInput(EState.Error, EErrorCode.Manifest);
     }
 
     private boolean ProcessCompletedDownload(PendingDownload pendingDownload, String str) {
         File file = new File(Uri.parse(str).getPath());
-        String str2 = ")";
-        String str3 = "\" (DownloadID: ";
-        String str4 = "com.valvesoftware.PatchSystem";
         if (!file.exists()) {
-            StringBuilder sb = new StringBuilder();
-            sb.append("Download Not Found: \"");
-            sb.append(file.getAbsolutePath());
-            sb.append(str3);
-            sb.append(pendingDownload.nDownloadID);
-            sb.append(str2);
-            Log.e(str4, sb.toString());
+            Log.e("com.valvesoftware.PatchSystem", "Download Not Found: \"" + file.getAbsolutePath() + "\" (DownloadID: " + pendingDownload.nDownloadID + ")");
             return false;
         } else if (file.length() <= 0) {
-            StringBuilder sb2 = new StringBuilder();
-            sb2.append("Downloaded Zero Bytes: \"");
-            sb2.append(file.getAbsolutePath());
-            sb2.append(str3);
-            sb2.append(pendingDownload.nDownloadID);
-            sb2.append(str2);
-            Log.e(str4, sb2.toString());
+            Log.e("com.valvesoftware.PatchSystem", "Downloaded Zero Bytes: \"" + file.getAbsolutePath() + "\" (DownloadID: " + pendingDownload.nDownloadID + ")");
             return false;
         } else if (this.m_bDownloadingAPK) {
             return true;
@@ -586,48 +483,15 @@ public class PatchSystem {
             if (!DeleteExistingFile(file2)) {
                 return false;
             }
-            String str5 = "\" to \"";
             if (!file.renameTo(file2)) {
-                StringBuilder sb3 = new StringBuilder();
-                sb3.append("Couldn't Move File: \"");
-                sb3.append(file.getAbsolutePath());
-                sb3.append(str5);
-                sb3.append(file2.getAbsolutePath());
-                sb3.append(str3);
-                sb3.append(pendingDownload.nDownloadID);
-                sb3.append(str2);
-                Log.e(str4, sb3.toString());
-                StringBuilder sb4 = new StringBuilder();
-                sb4.append("Attempting to Copy then Delete: \"");
-                sb4.append(file.getAbsolutePath());
-                sb4.append(str5);
-                sb4.append(file2.getAbsolutePath());
-                sb4.append(str3);
-                sb4.append(pendingDownload.nDownloadID);
-                sb4.append(str2);
-                Log.e(str4, sb4.toString());
+                Log.e("com.valvesoftware.PatchSystem", "Couldn't Move File: \"" + file.getAbsolutePath() + "\" to \"" + file2.getAbsolutePath() + "\" (DownloadID: " + pendingDownload.nDownloadID + ")");
+                Log.e("com.valvesoftware.PatchSystem", "Attempting to Copy then Delete: \"" + file.getAbsolutePath() + "\" to \"" + file2.getAbsolutePath() + "\" (DownloadID: " + pendingDownload.nDownloadID + ")");
                 if (!MoveFile(file, file2)) {
-                    StringBuilder sb5 = new StringBuilder();
-                    sb5.append("Couldn't Copy then Delete: \"");
-                    sb5.append(file.getAbsolutePath());
-                    sb5.append(str5);
-                    sb5.append(file2.getAbsolutePath());
-                    sb5.append(str3);
-                    sb5.append(pendingDownload.nDownloadID);
-                    sb5.append(str2);
-                    Log.e(str4, sb5.toString());
+                    Log.e("com.valvesoftware.PatchSystem", "Couldn't Copy then Delete: \"" + file.getAbsolutePath() + "\" to \"" + file2.getAbsolutePath() + "\" (DownloadID: " + pendingDownload.nDownloadID + ")");
                     return false;
                 }
             }
-            StringBuilder sb6 = new StringBuilder();
-            sb6.append("Moved File: \"");
-            sb6.append(file.getAbsolutePath());
-            sb6.append(str5);
-            sb6.append(file2.getAbsolutePath());
-            sb6.append(str3);
-            sb6.append(pendingDownload.nDownloadID);
-            sb6.append(str2);
-            Log.i(str4, sb6.toString());
+            Log.i("com.valvesoftware.PatchSystem", "Moved File: \"" + file.getAbsolutePath() + "\" to \"" + file2.getAbsolutePath() + "\" (DownloadID: " + pendingDownload.nDownloadID + ")");
             this.m_Registry.SetAssetVersion(pendingDownload.strFilePath, pendingDownload.strVersionCode);
             return true;
         }
@@ -767,25 +631,14 @@ public class PatchSystem {
 
     /* access modifiers changed from: private */
     public void OnDownloadResponseFailure(long j, int i) {
-        StringBuilder sb = new StringBuilder();
-        sb.append("Download Failure: ");
-        sb.append(String.valueOf(j));
-        sb.append(" (Reason: ");
-        sb.append(String.valueOf(i));
-        sb.append(")");
-        Log.e("com.valvesoftware.PatchSystem", sb.toString());
+        Log.e("com.valvesoftware.PatchSystem", "Download Failure: " + String.valueOf(j) + " (Reason: " + String.valueOf(i) + ")");
         ClearPendingDownloads();
         WaitForUserInput(EState.Error, EErrorCode.Download);
     }
 
     /* access modifiers changed from: private */
     public void SetState(EState eState) {
-        StringBuilder sb = new StringBuilder();
-        sb.append("State Transition from ");
-        sb.append(this.m_eState.toString());
-        sb.append(" to ");
-        sb.append(eState.toString());
-        Log.i("com.valvesoftware.PatchSystem", sb.toString());
+        Log.i("com.valvesoftware.PatchSystem", "State Transition from " + this.m_eState.toString() + " to " + eState.toString());
         this.m_eState = eState;
     }
 
@@ -825,15 +678,13 @@ public class PatchSystem {
             long[] jArr = new long[this.m_mapPendingDownloads.size()];
             int i = 0;
             for (PendingDownload pendingDownload : this.m_mapPendingDownloads.values()) {
-                int i2 = i + 1;
                 jArr[i] = pendingDownload.nDownloadID;
-                i = i2;
+                i++;
             }
-            DownloadManager downloadManager = (DownloadManager) JNI_Environment.m_application.getApplicationContext().getSystemService("download");
             long j = this.m_nCompletedDownloadBytes;
-            Query query = new Query();
+            DownloadManager.Query query = new DownloadManager.Query();
             query.setFilterById(jArr);
-            Cursor query2 = downloadManager.query(query);
+            Cursor query2 = ((DownloadManager) JNI_Environment.m_application.getApplicationContext().getSystemService("download")).query(query);
             if (query2 != null) {
                 while (query2.moveToNext()) {
                     j += query2.getLong(query2.getColumnIndex("bytes_so_far"));

@@ -13,21 +13,11 @@ public class application extends com.valvesoftware.source2launcher.application {
         if (str == null) {
             return null;
         }
-        StringBuilder sb = new StringBuilder();
-        sb.append(str);
-        sb.append("&password=");
-        String sb2 = sb.toString();
+        String str2 = str + "&password=";
         String GetString = Resources.GetString("ManifestPasswordString");
         if (GetString != null) {
-            StringBuilder sb3 = new StringBuilder();
-            sb3.append(sb2);
-            sb3.append(GetString);
-            sb2 = sb3.toString();
+            str2 = str2 + GetString;
         }
-        StringBuilder sb4 = new StringBuilder();
-        sb4.append(sb2);
-        sb4.append("&version=");
-        sb4.append(String.valueOf(GetEffectiveApplicationVersion()));
-        return sb4.toString();
+        return str2 + "&version=" + String.valueOf(GetEffectiveApplicationVersion());
     }
 }
