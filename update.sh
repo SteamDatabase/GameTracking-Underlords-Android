@@ -65,11 +65,15 @@ rm -rf ./game
 CDNROOT="$(jq -er '.cdnroot' manifest_android.json)"
 
 # download all game files
-for FPATH in $(jq -er '.assets | keys[]' manifest_android.json); do
-
+for FPATH in $(jq -er '.assets | to_entries[] | select(.value.cdnroot|not) | .key' manifest_android.json); do
     mkdir -p "$(dirname ${FPATH})"
     wget -nv -O "${FPATH}" "${CDNROOT}${FPATH}"
+done
 
+for FURL in $(jq -er '.assets | to_entries[] | select(.value.cdnroot) | .value.cdnroot + .key' manifest_android.json); do
+    FPATH="${FURL#*\/mobilebuilds\/*\/}"
+    mkdir -p "$(dirname ${FPATH})"
+    wget -nv -O "${FPATH}" "${FURL}"
 done
 
 # list and unpack vpks
