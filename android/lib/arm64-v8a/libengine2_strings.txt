@@ -662,7 +662,6 @@ $0 to $1,
 18MenuItemCheckImage
 18ToolTraceRayResult
 -1@9_
-	1`9)
 !)19BJRZcks{
 19C2S_CONNECT_Message
 19CBidirMsg_RelayInfo
@@ -697,15 +696,16 @@ $0 to $1,
 1@9M5
 19NetMessagePacketEnd
 19RestartMapToolEvent
-	1?9>Z
+	1)9v
+	1?9 X
 !1AQaq
 !>@=1B
 1bQJ1~
-	1D9I
 1DBlend
     1 = force cl_predict to 1
 1hqx2hrx?
    -1 = let clients set cl_predict to anything
+	1P9i
 1 = Pause the game when pressing ~ to open the console. CTRL+~ opens the console without pause.
 1.QB!
 1 - resize right
@@ -715,6 +715,7 @@ $0 to $1,
 /1V?O	
 /1V?OA
 /1V?OR
+	1W9)
  1: write to NULL
 *1x0x
 !2@=!
@@ -753,7 +754,6 @@ $0 to $1,
 20ISource2WorldSession
 20PacketEntitiesFilter
 20SpawnEntityToolEvent
-2	1 9a(
 21C2S_CONNECT_Message_t
 21CBidirMsg_RelayPacket
 21.CBidirMsg_RelayPacket.SignedDestinationAddress_t
@@ -934,9 +934,6 @@ $0 to $1,
 28INetworkStringTableContainer
 2_!8k
 2@9()
-	=29@2
-	!2926
-	)29&4
 29CBidirMsg_RebroadcastSource_t
 29CBoneConstraintPoseSpaceMorph
 29CCLCMsg_SplitPlayerDisconnect
@@ -948,15 +945,11 @@ $0 to $1,
 29CSimpleWindowsLoggingListener
 29CSVCMsg_FlattenedSerializer_t
 29CToolGameSimulationDispatcher
-	%29g
-	)29G6
 29ILoopModePrerequisiteRegistry
 29IToolGameSimulationDispatcher
 2,	@9L
-	=29R3
-	=29s5
 29ToolEvent_GetEntityInfoResult
-	%29y
+2?a29
 2	a@9Ia
 2	AA9
 2Ay)	
@@ -997,9 +990,9 @@ $0 to $1,
 2j"	9I
 2j"@9)p
 2?".k
-2?k78k
+2?k78W
 2_k88
-2?k88j
+2?k88V
 2kii8l}C
 2Kkj8k
 2L%@x+
@@ -1098,13 +1091,11 @@ $0 to $1,
 48CBidirMsg_RelayPacket_SignedDestinationAddress_t
 48CNetworkClientSpawnGroup_WaitForChildSpawnGroups
 48CNetworkServerSpawnGroup_WaitForChildSpawnGroups
-	%49]
 4		@9
 49CNetworkClientSpawnGroup_LoadEntitiesPrerequisite
 49CNetworkClientSpawnGroup_LoadSaveGamePrerequisite
 49CNetworkServerSpawnGroup_LoadEntitiesPrerequisite
 49CNetworkServerSpawnGroup_LoadSaveGamePrerequisite
-	-49f)
 &4@9R
 4Ay+'
 4CLog
@@ -1169,8 +1160,6 @@ $4DTdt
 54q`	
 55CNetworkClientSpawnGroup_AllocateSpawnGroupPrerequisite
 &'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz
-	589d 
-	589o!
 58jv@
 ,5@9_
 )5@9)}
@@ -1179,6 +1168,7 @@ $4DTdt
 59CNetworkServerSpawnGroup_WaitForOwnerSpawnGroupPrerequisite
 *5@9J
 5@9J9
+	5?9/W
 	5Ay*
 5CVEfx
 % 5d: % 5d
@@ -1198,8 +1188,6 @@ $4DTdt
 5IVEfx
 5i.@y
 5(k|8
-	5r9i
-	5T9)
 ?6`*@
 ?6	(@
 /6`>@
@@ -1212,7 +1200,6 @@ $4DTdt
 60CNetworkClientSpawnGroup_WaitForManualCompletionPrerequisite
 %6.2f %6.2f %6.2f %.3f %.3f %.3f
 64-bit
-	!69o%
  6`"A
 (6`&A
  6arBy
@@ -1398,11 +1385,7 @@ _6inA9
 87`f@
 :,@8[,@8
 %8.8s: %-5d entries, '%s', ...
-	!89B"
-	-89O 
 %8@9R
-	)89W"
-	-89Z!
 8b  16-May-2010
 8CFmtStrNILi1024ELb0EE
 8CFmtStrNILi1024ELb1EE
@@ -1460,7 +1443,6 @@ _8y,@8
 -)@9_
 -%@9_
 -	@9_
-:9		@
 .@9)	
 (@@9	
 (@@9	 
@@ -1479,14 +1461,12 @@ $@9	(
 	)@9)
 	)@9*
 	@9*]
-		%9:
 ,@9	0
 @90	@9
 9	0@9i
 9.1.15
 @91#@92
-	929e2
-	929w3
+		>92
 92ji8R
 @92yr
 @9>3@9*
@@ -1495,7 +1475,6 @@ $@9	(
 @9(	 7
 @9;7@9<
 9.@8 
-	989'!
 @9*-@8K
 (`@9	`@9
 )9@9)}
@@ -1511,6 +1490,7 @@ $@9	(
 9*	@9)
 9*	@9*
 9+	@9
+99		@
 @9/'@90
 . @9/$@90(@918@9.}
 9	!@9i
@@ -1541,9 +1521,9 @@ $@9	(
 9CDemoStop
 9CGameInfo
 9CRegistry
-	}?9CW
-	-?9cZ
+	=?9CW
 9	D@8
+	-?9DX
 9*E@8?
 @9E-@9U
 @9h*@
@@ -1581,12 +1561,12 @@ $@9	(
 9hVA9
 9hVB9
 9hV@yvR
+	)?9hX
 9hZA9
 9hZB9
 ) @9i
 @@9i"
 @9i&@
-		{9i
 @9I	@
 "@9i"@9
 9IBlackBox
@@ -1635,6 +1615,8 @@ $@9	(
 9kj(8|
 9Kkj8k
 9Kkj8k}
+	)+9l
+9 >*L
 @9L	@9l
 @9L=@9M
 9l"A9
@@ -1651,29 +1633,26 @@ $@9	(
 9mj+8
 @9N9@9Q
 @9n	@9o
-	!%9(O
 @9O	@9P
 @9p	@9
+		?9pY
 &,@9R
 &$@9R
 %<@9R
 % @9R
 %(@9R
 @9R1@9D
-	9r9i
 9	S)M*
 @9T|@
-	9T9i
 @9T)@9K
 (@@9tB
-		;9u
 @9U|@
 @9V%@9W
 @9-{vx
 @9){vxl
+	!+9W
 /9W?O
 /9W?OZ
-	9x9i
 @9 y@
 @9+	@yHA
 @9+	@yHM
@@ -1713,7 +1692,6 @@ A9|J@
 A9Kik
 +	A9lC
 ?A9tJ@
-	a+9W
 A-'@A-
 AA9(	
 AA9(	@
@@ -1751,7 +1729,6 @@ active_spawngroup_handle
 ACT_NEUTRAL_REF_POSE
     Actual    : 
   Actual   : 
-	aD9I
 -adapter
 Adapter: %d
 AddAllocatedMessage
@@ -1842,24 +1819,31 @@ AE_VORTIGAUNT_ZAP_POWERUP
 AE_VORTIGAUNT_ZAP_SHOOT
 AE_ZOMBIE_POPHEADCRAB
 AE_ZOMBIE_TOGGLE_HEAD
-	Af9i
 A file with this name is already in the pool.
 After selecting and moving a panel Ctrl-z will undo the move.
 after solve err=%f
 After this many seconds without a message from fully connected client, the client is dropped
 After this many seconds without receiving a packet from the server, the client will disconnect itself
+	AG9i
 A game file appears to be missing or corrupted.  In the Steam client go to the game's properties.  In the 'Local Files' tab select 'Verify Integrity of Game Cache' to have Steam double-check the game's installation.
 A-gBA-
 Agg data %d: %p (%d parts, crc 0x%08X)
 aggregate_value
+	AH9i
 <a href=
 A!;I2
+	AI9i
+	aI9j2
+	aI9J2
 #A)iBB
 ai_model_info
 .A)iV@
 AIWalkable
 A	@}J!
+	AJ9i
 a.JY .I
+	AK9i
+	AL9i
 alias
 Alias a command.
 ALIGN_TYPE is wrong, please fix
@@ -1984,6 +1968,7 @@ App UI Language: %s, convar %s
  a protocol 
 A protocol message was rejected because it was too big (more than 
 A\@Q!`
+	aQ9	
 A@qA	
 archive
  args were given.  Full format string was: "
@@ -2020,8 +2005,6 @@ AsyncBeginRenderingViews
 async_serialize
 async_track_all
 asyncwrite
-	aT9	
-	AT9i
 \ at end of pattern
 ATI1N
 ATI2N
@@ -2104,8 +2087,8 @@ B-1HD-
 B@9	A
 ^B9h^
 b@9hb
+	}b9i
 b"@9i
-	%B9I
 b@9ib
 bA9hb
 BA9hB
@@ -2195,7 +2178,7 @@ battery_saver
 bB9hb
 BB9hB
 BB9hj:8
-bBA9A
+bBA9a
 bB@yG
 BC6h compression not supported on this target (windows only).
 BC7 compression not supported on this target (windows only).
@@ -3921,19 +3904,15 @@ D24X8_SHADOW
 d2@yi
 d3@yi
 *-D),5E)_
-d6@yC
+d6@yc
 	D@8!
 D@8)%
 	D@8)m
 "D@9%
 D@9_ 
 D9{6@
-	-D9I
 	!D9I
-	)D9I
-	]D9I
 	%D9I
-		D9I
 -dac_offline
 %d addons loaded
 ,DA)R
@@ -4307,8 +4286,6 @@ dynamic_interaction
 .dynstr
 .dynsym
 E-!("
-	E(9'4
-	E>9o
  *Each frame will render %d times*
 echoln
 Echo log information to the console.
@@ -4317,7 +4294,6 @@ Echo the command arguments on the console
 Echo to the console changes caused by toggling.
 EconItemToolModel_001
 E)d6@
-	eD9I
 _edata
 EDemoCommands
 editable
@@ -4334,8 +4310,8 @@ e.g.:  startmovie testmovie jpg wav jpeg_qality 75 framerate 30
 ehandle
 .eh_frame
 .eh_frame_hdr
-	ei9)
 eikonal
+	EL9?
 element
 element_array
 elementid
@@ -4629,7 +4605,6 @@ EventSystem001
 event_t
 Evictions/m
 Ex?!4k
-	Ex9i
 Example: blink r_ssao           - toggles between 0 and 1 every second
 Exclusive Fullscreen
 exec_async
@@ -5598,7 +5573,6 @@ h*\9h
 *h"@9H
 h.@9H
 h"@9i
-h"@9i$
 h:	9i>	9
 -H@9m
 H9)yx
@@ -5626,6 +5600,7 @@ h"B9h
 hB@9h
 h"B9H
 hB@9H
+hB@9i"
 hB@9t
 hb@9v
 hbA9(
@@ -5639,6 +5614,8 @@ hbGyi
 hBH9H
 *hBK9
 hBK9H
+hbL9H
+hBr9	1
 =hb@y
 hB.y(5
 *hB.yK
@@ -5833,13 +5810,12 @@ i6@yh
 i78w"B
 i7xh>@
 _i(8+
+?i(8,
 	*	i8
 	I*8)
-?i(8A
+?i(8a
 i)8a^A
 *i(8B
-?i(8D
-?i(8f
 ?i(8h
 ?i(8h*@
 i-8h*@
@@ -5854,18 +5830,16 @@ i)8i&W
 i)8j&W
 i*8j&W
 i(8m&W
+?i(8N
+?i(8s
 ?i(8v
 i*8?y*xJ
 *i"@9
-	I>92
+	%i9)
 I9`BA
 [i9h	
-	i?9hX
-	]i9I
 )I@9I
 i"@9J
-	i+9l
-	I?9pY
 IAppSystem *CAppSystemDict::AddSystem(const char *, const char *, ErrorResponse_t)
 IAppSystem *CAppSystemDict::AddSystem(CreateInterfaceFn, const char *)
 IAppSystem *CAppSystemDict::AddSystem(IAppSystem *, const char *)
@@ -6652,11 +6626,12 @@ K1@yk
 *k2@y
 ?k58D
 K5@yk
-k68!d
-*?k78#3
+k68	X
+*?k78
 ?k78h
 k78h#
 ?k)8(
+k(8(*
 _k88?
 ?k88_
 ?k88w
@@ -7185,11 +7160,10 @@ lseek
 %ls [wstring, len = %d]
 [L:%u:%u]
 :m@)<	@
-	m?9DX
 m%@9i)
-	M?9OY
-	M~9u
-	M)9v
+	m]9I
+	m"9t
+	m"9v
 m	A9j"
 m_aAngOffset
 Machine
@@ -7907,7 +7881,6 @@ Moves the camera position + orientation to the named entity
 Moves the camera position + orientation to the specified position
 ?Movie
 movie/%04d_%02d_%02d_%02d_%02d_%02d/%s
-	mP9i
 m_parentName
 m_PathIndex
 m_pAttributes
@@ -7940,7 +7913,6 @@ m_pTarget
 m_pTargetInput
 m_pValue
 	*MQ)
-	mQ9i
 m_qAimOffset
 m_qBaseOrientation
 m_qChildBindRotation
@@ -7987,6 +7959,7 @@ m_tipParentBoneName
 m_toeBoneName
 MTreatUnknownEnumeratorsAsZero
 m_Type
+	mU9i
 m_uint
 m_uint64
 multiplayer_break
@@ -8041,9 +8014,9 @@ m_vTraceOffset
 m_vTraceScale
 m_vUpLS
 m_vUpVector
-	mW9i
 m_worldGroupId
 m_wristBones
+	mY9i
 "N(  
 #N)	}	
 N}[ .=
@@ -8759,6 +8732,7 @@ p6jf@
 p6jR@
 p7v	P7
 P7x"@
+	-P9i
 "pA3QuW
 package
 package $0;
@@ -8956,8 +8930,6 @@ Plat_DesktopNotify
 Plat_DestroyWindow
 Plat_DisableIOBuffering
 Plat_EndWatchdogTimer
-Plat_EnterHibernation
-Plat_ExitHibernation
 Plat_ExitProcess
 Plat_FileExists
 Plat_FileSize
@@ -8980,6 +8952,7 @@ Plat_GetDPI
 Plat_GetEnv
 Plat_GetGameDirectory
 Plat_GetLocalTime
+Plat_GetMasterMobileEventHandler
 Plat_GetMemPageSize
 Plat_GetMiniDumpErrorString
 Plat_GetModuleFilename
@@ -9352,13 +9325,11 @@ pvs.cpp
 PVS origin %s
 py_generic_services
 Q0*aN
-	Q~9i
-	Q[9i
+)Q@9?
+	-Q9i
 *Q@9j
-	Q)9U
-	q)9v
-	q?9 X
-	Q?9.Y
+	q"9S
+	q"9U
 Q(aNf(!
 qangle
 QAngle
@@ -9367,7 +9338,6 @@ QAngle-world
 q(	AzK
 QB)5}@
 	QB9i
-	QC9I
 QE@yk
 *	qG9)
 	qG9)
@@ -9384,7 +9354,6 @@ qJT-s
 qknG9
 q	kw8A
 Q/!OJ
-	qP9i
         qsort [0x%x, 0x%x]   done %d   this %d
 	qSy)
 *qSyJ
@@ -9411,7 +9380,6 @@ Quits game after demo playback.
 Quit the game
 Quitting
 Qu@yk
-	qW9)
 qWiw8
 #Q)Xy
 Q-@yk
@@ -9426,7 +9394,6 @@ R6hx8
 R8G8B8A8_ETC2_EAC
 R8G8B8_ETC2
 *R)8yv
-	=r9i
 r@9ir
 R	9`V	9
 rA9hr
@@ -9887,7 +9854,7 @@ r_stereo_eye_separation
 r_stereo_mode_anaglyph
 r_stereo_mode_crossed
 r_stereo_mode_parallel
-Rtj(8/
+Rtj(8
 r_toggleviewportsize
 r_translucent
 rt+rld
@@ -11316,7 +11283,7 @@ T#8@9"8
 T$8@9C 
 t8HY@
 *T)8yv
-	-T9)
+	!T9	
 T(@@9
 T)	@9
 T*	@9*
@@ -11338,8 +11305,6 @@ T#$@9D
 T#$@9D(
 T#,@9D0
 T#\@9D0
-	-t9i
-	=T9i
 T*9	S
 t@9)uA
 T	/A)
@@ -11659,9 +11624,9 @@ TizEyJ
 Tj2@9j
 Tj2B9)
 Tj6@y_! k
+tj(8>
 TJ#]8
 tj)8t
-tj(8V
 T`"J9
 Tj"@9J
 TjJ@9
@@ -11946,9 +11911,8 @@ T"zrx
 \U%08x
 u64( %lld = 0x%llX )
 )U7O{
-	!U9	
-	U)94
-	u?9/W
+	u"92
+	u"94
 u>Byh2By
 %u CPU%s
 %u[%d]
@@ -12971,6 +12935,7 @@ Y80ijx
 Y8Qikx
 #Y8Qikx
 #Y9 3
+	}Y9i
 @y?!9k
 y+	@9km
 Yaw; 
@@ -12980,13 +12945,13 @@ yaw_start
 @.yb4
 YB)5}@
 @.yB8
+	yb9i
 Y@    block %d: crc = 0x%8x, combined CRC = 0x%8x, size = %d
 +%@yBy|
 @yc|	
 #@@yc
 y#	@=c
 yC	@}c
-	YD9I
 @y+}E
 #@yh^
 yh2By
@@ -13052,6 +13017,7 @@ you_hear_them
 Your current chat group is "%s"
 @yO	@y
 y(qSy
+	yU9i
 yu>Byh:
 yuJ	9(a@
 @y	WDy
@@ -13064,6 +13030,7 @@ y	,@y)
 .@y)Y@
 @y	y5x
 @y	y6x
+	yY9i
 _Z10DevWarningPKcz
 _Z11ConColorMsgRK5ColorPKcz
 _Z13V_SplitStringPKcS0_R10CUtlVectorIPc10CUtlMemoryIS2_iEE

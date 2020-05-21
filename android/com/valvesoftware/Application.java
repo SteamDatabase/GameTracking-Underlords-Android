@@ -1,6 +1,10 @@
 package com.valvesoftware;
 
 public abstract class Application extends android.app.Application {
+    private static native void onLowMemoryNative();
+
+    private static native void onTrimMemoryNative(int i);
+
     public boolean ConsumePurchase(String str) {
         return false;
     }
@@ -208,5 +212,21 @@ public abstract class Application extends android.app.Application {
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.Application.onBootStrap():void");
+    }
+
+    public void onLowMemory() {
+        try {
+            onLowMemoryNative();
+        } catch (Throwable unused) {
+        }
+        super.onLowMemory();
+    }
+
+    public void onTrimMemory(int i) {
+        try {
+            onTrimMemoryNative(i);
+        } catch (Throwable unused) {
+        }
+        super.onTrimMemory(i);
     }
 }

@@ -20,6 +20,7 @@
 10CTestSuite
 10ITestSuite
  %12.3f %12.2f
+(129p}
 12CCommandLine
 12CStdMemAllocI9MemConfigILb0ELb0E27DefaultAdditionalPropertiesEE
 12CStdMemAllocI9MemConfigILb0ELb0E27RuntimeAdditionalPropertiesEE
@@ -42,7 +43,7 @@
 17CThreadSyncObject
 18CThreadManualEvent
 18IMemAlloc_Internal
-19hfA
+20IMobileEventListener
 22B@q
 22CLogCatLoggingListener
 22CPerfTraceDepotDefault
@@ -60,6 +61,7 @@
 28CStdMemAlloc_Data_StackStatsI9MemConfigILb0ELb0E27RuntimeAdditionalPropertiesELb0EE
 -?[`/?291?
 29CDefaultLoggingResponsePolicy
+29hfA
 2(A@qJ5
 2CB@q
 %2d.%03d
@@ -68,6 +70,7 @@
 2*ki8J
 2mymx
   %2u - proc %2u (grp %u:%-2u / phy %u / cor %u / smt %u): max freq %llu
+31CTier0MasterMobileEventListener
 40CVProfileOutputColumn_AverageTimePerCall
 41CVProfileOutputColumn_AverageTimePerFrame
 4(3H9
@@ -113,10 +116,13 @@
 	@9J	
 )	@9J	@9?
 	@9k}A
+!,9KZ
 A)"	@
 +a@9?
+	!A9 
 A9)1G
 a@9*a
+(a*9jR*9h
 &aacute;
 &Aacute;
 AbortMessage({
@@ -267,6 +273,7 @@ CMiniDumpComment encountered an error while generating the comment
 .comment
 Comment unavailable. CMiniDumpComment encountered an error while generating the comment
 COM_TimestampedLog
+com.valvesoftware.Application
 com/valvesoftware/AttributeSetNative
 com/valvesoftware/JNI_Environment
 com/valvesoftware/runnableNative
@@ -505,7 +512,7 @@ h6@9i2
 h<8]hh8J
 h=8]hh8J
 h>8j	
-h"[9(
+h"]9H
 HangWatchdog
 HangWatchdog_IndicateActivity
 HangWatchdog_Initialize
@@ -515,8 +522,13 @@ HangWatchdog_SetHangImageRGBA
 HangWatchdog_SetMainThreadWindow
 HangWatchdog_Shutdown
 .hash
+hB@9)
 hb@9h
+hb]9H
 hb@9H
+hB]9H
+hBc9H
+hbE9H
 hbF9H
 Heap: standard allocator
 HEAP WARNING: memory block at %p appears to be corrupt
@@ -544,7 +556,6 @@ HttpGet
 	*I}`
 i2@9h6@9?
 i2q		
-	i;8%
 ?i*8i
 )ia8?q
 &iacute;
@@ -576,6 +587,9 @@ IMemAlloc::DumpStats: could not open output file %s
 [/img]
 [img]
 <img src="
+IMobileEventListener::OnEnterHibernationState()
+IMobileEventListener::OnExitHibernationState()
+IMobileEventListener::OnLowMemoryNotification()
  (including user space up to 63 bits)
 INCREMENTAL
 <init>
@@ -603,6 +617,8 @@ IterateCapturedStackAnnotations
 j;8a"@
 j98a"@
 J	@9k	@9_
+Java_com_valvesoftware_Application_onLowMemoryNative
+Java_com_valvesoftware_Application_onTrimMemoryNative
 Java_com_valvesoftware_AttributeSetNative_getAttributeBooleanValue_1Native(__complex int0_t)
 Java_com_valvesoftware_AttributeSetNative_getAttributeBooleanValue_1Native__JLjava_lang_String_2Ljava_lang_String_2Z
 Java_com_valvesoftware_AttributeSetNative_getAttributeCount_1Native
@@ -632,7 +648,7 @@ Jobs/Coroutines
 *jyhx
 *(!(K
 	K"}@
-?k78k
+?k78`
 ?k88h
 k	@9J	
 Ka@9+
@@ -811,8 +827,6 @@ NOTE: this is the total bytes of the regions above, not the growth since the old
 &ntilde;
 &Ntilde;
 nTries < 10000000
-O9`6E
-O9a5E
 &oacute;
 &Oacute;
 &ocirc;
@@ -840,6 +854,8 @@ Out of logging channels.
 ***** OUT OF MEMORY! /+/ attempted allocation size: %llu ****
 Out of thread ids. Decrease the number of threads or increase MAX_RECYCLEABLE_THREAD_IDS so we can recycle more
 -oX"'
+"P9aeA
+"P9`fA
 &para;
 Parameter file '%s' not found, skipping...
 Particle/Effect_Rendering
@@ -886,10 +902,6 @@ Plat_DisableIOBuffering
 Plat_EnableCustomerMachineMode
 Plat_EnableHeadlessMode
 Plat_EndWatchdogTimer
-Plat_EnterHibernation
-Plat_EnterHibernation()
-Plat_ExitHibernation
-Plat_ExitHibernation()
 Plat_ExitProcess
 Plat_FastVerifyHardwareKey
 Plat_FileExists
@@ -923,6 +935,7 @@ Plat_GetGlobalListRegistry
 Plat_GetLastGameInstanceMutex
 Plat_GetLocalTime
 Plat_GetMainWindowSwapChainScale
+Plat_GetMasterMobileEventHandler
 Plat_GetMemPageSize
 Plat_GetMiniDumpErrorString
 Plat_GetMobileDeviceInfo
@@ -997,8 +1010,6 @@ Plat_LoadModule
 Plat_LoadModuleRaw
 Plat_LoadSDL
 Plat_localtime
-Plat_LowMemoryWarning
-Plat_LowMemoryWarning()
 Plat_MessageBox
 Plat_MessageBox() called in headless mode:
 Plat_MicroSecTickDiff
@@ -1594,6 +1605,7 @@ UCS-2
 &Ugrave;
 uint64 CTimestampedEventLog::SetListener(TimestampedEventListener_t)
 uint64 Plat_GetCPUFrequency()
+uj68|
 </ul>
 &uml;
 Unable to create event, error %d
@@ -1957,6 +1969,7 @@ Windows ME
 Windows NT
 Windows Vista
 Windows XP
+wj68U
 wn>Jj
 Working set: %s
 	%@x!
