@@ -43,6 +43,7 @@
 ((@-)
 ()@))	@
 (%@-*	@
+(%@)`
 )@-		@
 )*-)+
 )+@)+
@@ -84,6 +85,7 @@ $@)#@@)
 +%@),
 	) 	)
 	)@)	(
+	*!@)
 	*(#:
 	*	}`
  [$0]
@@ -112,7 +114,7 @@ $0$1 = $2
  !"#$%&'()*+,-./0123
 $0$1$2 $3 = $4
 0123456789abcdef
-0123456789ABCDEFl
+0123456789ABCDEF
 %0.2f
 (%0.2f) %s
 (%0.2f): %s
@@ -1849,9 +1851,9 @@ $0 to $1,
 18TEDust_GameEvent_t
 18TEFizz_GameEvent_t
 18ToolTraceRayResult
+!1@9;
 (1@9@
 1960/00/00
-!1@9a
 	1;9_A;9
 19CAI_ChangeHintGroup
 19CAmmoDefInitializer
@@ -1948,7 +1950,6 @@ $0 to $1,
 19CVariantSaveDataOps
 19CVoiceGameMgrHelper
 19CWeaponScriptParser
-	1#9h
 19IAttachmentOverride
 19IConsoleDisplayFunc
 19IDecalEmitterSystem
@@ -2156,7 +2157,7 @@ $0 to $1,
 20TESparks_GameEvent_t
 20ToolTraceRayResult_t
 20TransitioningLayer_t
-2	1<9
+2	1<9(
 21CAnimGraphTraceFilter
 21CBaseAnimatingOverlay
 21CBaseAttributableItem
@@ -3648,7 +3649,7 @@ $0 to $1,
 2ii*x
 2ij(8
 2ij(8\
-2ij(84P
+2ij(8TP
 2+imx
 2ir>9
 2iR&9
@@ -3662,9 +3663,9 @@ $0 to $1,
 2?!:k
 2?!!k
 2?"!k`
-2?k78
+2?k78lp
 2_k88
-2?k88
+2?k88kl
 2K9	S
 2k_EGCMsgInitiateTradeResponse_VAC_Banned_Initiator
 2k_EMsgClientToGCEventChallengeProgressWithCurrency
@@ -3674,7 +3675,7 @@ $0 to $1,
 2k_ItemPurgatoryResponse_Finalize_Failed_Incomplete
 ?-2KLa
 2Ky)xi"@
-2l1"9,
+2l1"9L
 2L@-4
 @2l9<)8
 2l*@9h
@@ -3690,7 +3691,7 @@ $0 to $1,
 }2'@+P
 2 .ProtoFlattenedSerializerField_t"!
 2	q19
-2	q69)
+2	q69I
 2	q=9
 2	q 9
 	2R*3
@@ -3709,7 +3710,7 @@ $0 to $1,
 2@y"!A
 2	yi6
 2@yJ!F
-2	ywq
+2	ywm
 2*y(x	
 -30.0
 300.0
@@ -4514,6 +4515,7 @@ $0 to $1,
 38CSoundEventEntityAlias_snd_event_point
 38CWorkshop_GetItemDailyRevenue_Response
 38CWorkshop_SetItemPaymentRules_Response
+3!'9@$"
 39CCommunity_GetClanAnnouncements_Request
 39CDAC_Ability_Shadow_Demon_Demonic_Purge
 39CDAC_Ability_WitchDoctor_ParalyzingCask
@@ -4745,6 +4747,7 @@ $0 to $1,
 45CUserMsg_ParticleManager_UpdateEntityPosition
 45CUserMsg_ParticleManager_UpdateParticleOffset
 45CUserMsg_ParticleManager_UpdateParticleOrient
+	*!46
 46CDAC_Modifier_EmberSpirit_SleightOfFist_Caster
 46CDAC_Modifier_EmberSpirit_SleightOfFist_Marker
 46CDAC_Modifier_Puzzle_NoOtherKillerWinCondition
@@ -4843,8 +4846,8 @@ $0 to $1,
 4h"N9(
 4hn@9H
 4h&O)j
-4hr@y
-4hR@y
+4hr@y`@
+4hR@y`@
 4h:T9
 4)(@i
 4i2@yi
@@ -5270,7 +5273,6 @@ _6	p@
 (6	q@
 '6	T@
 6	t@9
-6T9	!
 6	TA9
  6tj@
 6tnM92
@@ -5301,7 +5303,6 @@ _6v:@
  75	(7
 75	 7
 75	 7u	(7
-$(75e
 `75	h7
 @75	H7
 76`&@
@@ -5427,6 +5428,7 @@ $(75e
  7T	(7T
 7	T@y
 7	T@y	
+$(7Ue
 7*U@y
 7+U@y
 7	U@yI
@@ -5497,10 +5499,10 @@ $(75e
 86iR@
 86u*@
 86`V@
-	875_
 87H	@7
 87hN@9h
 87i"A9i
+	87U_
 87W	@7W
 87xR@
 %8.8s: %-5d entries, '%s', ...
@@ -5601,6 +5603,7 @@ _8|{t
 9(0@y
 )#@95c
 95*P>
+(9{6#
 @96Y@
 @9(	(7
 @9(	(7`
@@ -5627,12 +5630,10 @@ _8|{t
 9A)k!
 9*a`y
 @9_aYkA
-@@9	b
+@@9)b
  @9	B
 @@9	B
 @9B!@
- @9)c
-"@9)c
 @9)+C
 9CBaseFlex
 9CBaseProp
@@ -5727,10 +5728,12 @@ _8|{t
 @9i&@
 @9I	@
 "@9i"@9
+@9i"@9
 9	i@9
 9*i@9J
-@9i"@9T:
 -9i^A
+ @9Ic
+"@9Ic
 9IEconTool
 9ifA9
 (@@9iFp9h&09
@@ -5797,7 +5800,6 @@ _8|{t
 9	SMM-
 9	SnM.
 9	SNM.
-9	Suk
 (@@9t
 (@@9t"
 (@@9t"$
@@ -5836,30 +5838,31 @@ A-(
 A-@ #
 A))!@
 a2@9 
+a2@9 <
+a2@9._
 a2@9"
-a2@9":
 a2@9"[@
-a2@9[_
+a2@9]
 a2@9	
-a2@98
+a2@92
+a2@94]
+a2@95c
 a2@9B
-a2@9B8
+a2@9B:
 a2@9c
 a2@9c#
 a2@9cc
 a2@9cC
-a2@9.E
-a2@9G`
+a2@9!d
 a2@9"ih
-a2@9TW
-a2@9X
-a2@9ZU
+a2@9x
 a2B9bz@
 a2U0*	
 ?a2U0*i
 ?|a2U0j
 ?a2v>
 a2@yh2@y
+*A39C&
 ,-A-.5@-
 A5fSXbf7
  .a8"
@@ -5920,9 +5923,9 @@ A@9k}@
 +	A9K
 +a@9Ka
 A9Kik
-*A!9L	(
 +	A9lC
 	A@9	P
+*A!9r
 ?A9tJ@
 a9vb!
 A@9vi)
@@ -5931,7 +5934,6 @@ a9wB!
 A-a)*
 A-'@A-
 A-)!A
-a"A9@@
 AA9(	
 AA9(	@
 aaaaaaaazzzzzzzz
@@ -5942,7 +5944,6 @@ A	A-JA
 ?AAk	"
 A@-B8(
 ab@9B
-ab@9h
 A-b.C
 abcdefghijklmnopqrrqponmlkjihgfedcba
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
@@ -7753,14 +7754,13 @@ a"@-i
 	Ai9_
 	Ai9_)
 	Ai9*
-	Ai94
+	Ai93
 	Ai99
 	Ai9_I
 	Ai9j
 	Ai9J
 	Ai9_q
-	Ai9v
-	Ai9y
+	Ai9T
 	Ai9_y
 AI_BaseNPC.SentenceStop
 ai_changehintgroup
@@ -8386,7 +8386,6 @@ B-
 B-'("
 B-)( 
 B-1HD-
-b1@yaC
 B-(5@
 *-B),5C)_
 @-b8"
@@ -8402,9 +8401,10 @@ B99aJN
 B99)y
 B@9a'
 B9)]A
-B9A)E
 ?B9b8"
 ?B\9{g
+B/9*G
+B(9(G
 B\9{gt
 ^B9h^
 "B9h"
@@ -8559,7 +8559,6 @@ bChainLightningConsidered
 bCraniumBasherTested
 %b %d
 B-d{@
-B-(%D
 B-D@@
 bDh%)
 bDiffusalApplied
@@ -8886,7 +8885,6 @@ BrushSolidities_e
 BRUSHSOLID_NEVER
 BRUSHSOLID_TOGGLE
 brute_debuff
-BS9a(
 bspline
 B-Spline
 __bss_end__
@@ -8947,7 +8945,8 @@ ButtonBitMask_t
 "B)Ux
 buy_unit
 bValue
-b	y=}
+`b@y[}
+b	y=e
 `b@yh
 B@yhB
 By how much to modify the unit's health
@@ -8961,7 +8960,6 @@ bytes_data
 Byte size calculation and serialization were inconsistent.  This may indicate a bug in protocol buffers or it may be caused by concurrent modification of 
 bytes_read
 bytes_written
-!	@)^c
 $.c($
 :C)   
 !	@-C
@@ -12466,11 +12464,9 @@ cycler_flex
 cycler_flex used on model "%s" specified unknown sequence "%s"
 cycler_flex used on model %s without enough flexes.
 C@y)q@
-!	@)@d
 @-d'@
 %d | 
  D-	(@
-!	@) D
 ?D]`,
 @-D	@
 	D-	)@
@@ -12484,12 +12480,11 @@ d3_citadel_05
 *-D),5E)_
 d6@y##
 d6@yc
-d6@yc-
-d6@yc'
+d6@yc;
 d6@yC
 d6@yC-
-d6@yC;
-d6@yc0
+d6@yC#
+d6@y#D
 D-)9,
 D9`.@
 D9   
@@ -13349,7 +13344,6 @@ divine_rapier_new
 DK@-0G@-
 D_LIKE
 <%d:%llu>
-!	@)DM
 dme_position_map
 dmg.bullets
 dmg.club
@@ -13440,6 +13434,7 @@ double_shot_npc
 double_value
 DoUniqueString
 @DP5z5@
+!	@)DQ
 %d queries, %d misses (%d free) suc spec = %d wasted spec=%d
 dragenemies
 dragon_knight_breathe_fire
@@ -13626,7 +13621,6 @@ D)yV@
 @-e	@
 -E)		
 .E))}
-\-.=E
 e0F$J
 ?=((E+7
 E-!8#
@@ -14859,6 +14853,7 @@ extremely_rare
 eyebrows_controller
 eyebrows_mover
 eyes_follow
+#E)yJ
 eZQ9\
 ?-f:*
 @+,]f}/
@@ -15110,6 +15105,7 @@ ffffff
 fflush
 fGain
 F*%h3x%hgx
+F-HiF
 F*&h%x%hsx
 F*%h'x%hsx
 @-FI@-)	@
@@ -15757,6 +15753,7 @@ fxTime
 f@y?!3ka
 f@y?! k
 FZ*o7
+!	@)^g
 @-g	@
 @g|_\
 .G))}
@@ -15821,7 +15818,6 @@ G-7F@
 g\8"@6
 G`9h`
 G9jkj8?
-]G-a/
 gA}-d
 Gambler
 game_
@@ -16582,6 +16578,7 @@ g_VProfSignalSpike
 gxXM|Z
 +g-`ZH
 -h&@)
+!	@)@h
 )h&	)
 @-h  
 	-h:@
@@ -16589,6 +16586,7 @@ h&?);
 h&@)?
 h&@)*
 ;+%@H
+!	@) H
 @-H  
 #H)	}	
 H0@)_
@@ -16617,7 +16615,7 @@ H6{2@
 h6@9h
 )h6A9
 h6{B@
--H6B6
+-H6b6
 H6h>@
 h6hB@
 H6hB@
@@ -16663,7 +16661,6 @@ h&@) 9.
 h"@9	B
 H @9`b
 h"@9)c
-h"@9	c
 h&#9F
 h" 9g
 h'@9h
@@ -16677,9 +16674,10 @@ h*@9H
 (H@9h
 H @9h"
 H @9i @9
-h*[9Ic
+h*[9ic
+h"@9Ic
+h"@9IL
 h&@9k
-h"@9)L
 H9	ShM(
 H9	S(M(
 h"\9	V
@@ -16773,14 +16771,12 @@ hb~9`
 hb@9`
 hb@9	
 =hB@9
-hB>9^ 
-hB>9#
+hB>9^$
 hB?9?
 hB@9(
 hB@9)
-hB@9	_
+hB@9)_
 hB@9	B
-hb@9)c
 hB%9(-D
 hb`9h
 hb@9h
@@ -16794,7 +16790,9 @@ h"B9H
 hB@9H
 H'B9h
 h*B9i
-hB`9IN
+hB>9I
+hb@9Ic
+hB`9iN
 hB@9t
 hB@9u"@
 h&^)b:A
@@ -16850,7 +16848,6 @@ hCA9(
 hCA9	8!
 hCallbackFunc
 hCallbackScope
-!	@)Hd
 h"D9t
 HDR Color Scale: %0.3f
 h&	)E
@@ -17101,6 +17098,7 @@ hf	yh
 hf	yh*R9
 #")hG@
 hgrunt;scientist
+!	@)Hh
 H%@)h&
 h&h9H
 Hi+8hrD
@@ -17207,6 +17205,7 @@ hj48f
 hj`9H
 hJ\9v
 hj@9yF@
+hjb9t6
 hjG9)
 hJk9tH
 *hjl9
@@ -17215,7 +17214,7 @@ hjR9h
 hjR9v
 hJR9v
 hjS9i6
-hjT95?
+hjT9U?
 hJv9(
 hj@y 
 h&^-k.@
@@ -17345,6 +17344,7 @@ h&Q)j
 "	)hR
 hr@9(
 hR~9(
+hR>9C
 hr@9h
 hr@9H
 h*R9h
@@ -17414,7 +17414,6 @@ hwA9h
 H-"X(
 h:@y*
 h*@y_
-h&@y	6
 h&@y)A@
 h"	yh
 H'@yh'
@@ -17441,7 +17440,6 @@ hz	y
 	!@)i"
 	)@)i
 !^I))
-!	@)\I
 !	I- ( 
 	*I{(
 	*I}`
@@ -17453,10 +17451,10 @@ I0@yJ
 +i18+i28p
 i1xhj*
 i1xjj,
-*i2>9/
+*i2>9
 i2>9(
 i2>9h
-*i2>9u
+*i2>9U
 i2l9v2,
 @i4^_
 	*i6A
@@ -17510,9 +17508,9 @@ ib@9`
 ib@9(
 ib@9)
 ib#9	
-i*B9(]
 ib@9	A
 ib@9h
+i*B9H]
 ib@9i
 i"B9i
 i#B9i
@@ -17527,7 +17525,7 @@ iBounceCount
 iBV9jFV9k
 ib@y?
 ib@y?!(k
-i*c9hD
+i*c9HD
 Ice_Explosion_Decal
 iCollide
 icon_path
@@ -17795,7 +17793,6 @@ I-!H#
 )ih8Hyh
 )ih8Ii(8
 (ih8ij
-(ih8Ij
 (ih8*ij8+ik8,il8-im8.in8/io80ip81iq82ir8"ib8#ic8$id8%ie8&if8)i`8
 IHandleEntity
 IHasAttributes
@@ -19060,73 +19057,70 @@ j.@)_
 @-J	,
 @-J	@
 J-` $
-j08a*
 J0@y_
 J0@yI
 J0@yk!F
-j1xq*
 j2?)?
 j28R`
 j2W-m
 j2@yh
-J38WH
+J381<
 j48	C
 j48(D
-j48h/
-j48H]
-j48k{
+j48h]
+j48kw
 j48t^@
 j4xH;@
-j58h/
 j58hf@9(
+j58Y]
 J5@y_
-j68dZ
-j68i\
+j68dR
+j68iT
+j68(n
 j68u*@
 j68v&@
+J68Y=
 j6@9!
 j6@9(
-j-8-&
 j/8.#
+j.8.!
+j.8)!
 j(8(-
-j(8("
+j(8(!
+j(8('
 j)8()
+j)8).
 j)8))
 j)8	 
 j)8	?
-j)8	.
 j)8	"
 j)8	#
+j+8*!
+j+8+!
 j*8	2
 j)8	7
 j(8h"
+j(8h)
 j(8h$
-j)8h)
 j)8h$
-j(8H!
-j(8H)
-j(8H0
+j(8h0
 j(8Hk
 j(8hl
 j(8Hr
-j;8HW
+j;8hW
 j(8h&Yy
 j)8i"
-j.8I!
 j)8	I
 j)8ID
+j*8iI
 j)8ik
-j)8iK
 j)8`j
 j*8j"
-j*8j*
-j*8J)
-j+8J!
+j*8j)
 j+8jR
 j+8k)
 j-8K,
 j+8K:
-j+8K!
 j`8'k`8
 j+8Kd
 j+8KH
@@ -19134,8 +19128,8 @@ j,8LH
 j,8Lr
 j-8m"
 j-8M,
+j-8M&
 j-8MV
-j.8N!
 j)8	o
 j)8	V
 J!@9_
@@ -19204,7 +19198,7 @@ jj)8`
 j!JJ+
 j!JJK
 !JJK|
-jj)x/
+jj)x	
 	J"}	K
 )+J)-#K)+3L)
 Jki8_5
@@ -19296,26 +19290,25 @@ jV@y)|@
 jV@y!y|
 jV@y:yt
 jV@y!yt
+j.x.!
 j(x("
-j)x	)
+j)x))
 j)x		
 j)x	4
 J!_x_!5k
 j)x	g
 j(xhR
-j(xHR
 j$xij.
 j*xj)
 j)x	l
-j-xm*
 j-xM 
 j-xM*
 j-xM8
 j-xMF
 j-xMT
-j.xN!
 j.xN.
 j)x	O
+j x Z
 J!@y)}@
 JYix*$
 Jykx)ij
@@ -19327,7 +19320,6 @@ _!(k#
 &@)k	
 	*_!;k
 	*_!(k
-	k!(>
 ('K)_
 ($@)K
 	K	}@
@@ -19344,12 +19336,12 @@ k2	)j~
 k2Q)m
 *k2@y
 ?k58D
-k687,
-?k68p
-*?k78~
-?k780
+k68]8
+?k68J
 ?k78h
-k78Hn
+k78hn
+k78(n
+*?k78X
 	K!8"
 k(8vV@
 ?){K9_
@@ -19605,6 +19597,7 @@ k_EDACPuzzleRule_UnitAllowed1
 k_EDACPuzzleRule_UnitAllowed2
 k_EDACPuzzleRule_UnitAllowed3
 k_EDACPuzzleRule_UnitAllowed4
+k_EDACPuzzleRule_UnitCopyLimit
 k_EDACPuzzleRule_UnitCountLimit
  k_EDACPuzzleRule_UnitDisallowed1
  k_EDACPuzzleRule_UnitDisallowed2
@@ -20328,7 +20321,6 @@ KI`9K
 kickid %d CBaseEntity::InputKill()
 kicxJ
 ?kIG9
-Kih8jj
 Kih8Ki)8Mi(8
 kijxJ1
 kill_all_bots
@@ -20562,7 +20554,6 @@ LAYOUTPOSITIONTYPE_NONE
 LAYOUTPOSITIONTYPE_VIEWPORT_RELATIVE
 LAYOUT_WORLD_DEFAULT
 [lazy = true] can only be specified for submessage fields.
-!	@)lb
 L-B(.
 @%LbZ
 L-c.@
@@ -20636,6 +20627,7 @@ level_type
 level_up
 levelup_rule
 Level Up Rule:
+!	@)lf
 L-F(&
 lfofrac
 lfomodpitch
@@ -21006,7 +20998,7 @@ lycan_wolf_spawn_shift
 ?lzPP
 @=#?m\
 @m"	@
-!	@)<M
+!	@)\M
 ))+M)
 +M)	)	)
 M0AyL
@@ -26565,6 +26557,7 @@ n9@yN
 n	A9-
 nA9hn
 NA9iN
+#naaE
 nActiveAreas %d + nAreasDestroyed %d + nAreasPendingDestruction %d = %d
 nAlpha
 nameable
@@ -27613,7 +27606,6 @@ Nx	V @M
 n@y?	
 nZ:0J
 ?'[nza
-!	@)	O
 ?(\O?
 O?0 ,	f
   o [%5d] '%s' (%s) [group entity]
@@ -29513,8 +29505,9 @@ py_generic_services
 ?	@q)
 q-@	*
 -	-	Q
+!	@)<Q
 @-'@@-Q
-	q29h
+#+)Q#
 	Q39_a39
 q;4,F
 Q8>)\
@@ -29525,20 +29518,19 @@ Q8q(2
 Q"@9?
 Q9@)+
 	Q99_a99
+Q@9$A
 	Q'9_a'9
 	Q(9_a(9
 Q9bjD
-Q9!)E
 q@9HA
 Q9hrD
 Q9hvD
 Q9i"@
-Q@9J9
 	Q+9K
 Q9l.G
 Q9m.G
 Q9n.G
-Q@9u9
+Q@9OA
 :Q@9Zy
 	qA9?
 qangle
@@ -30345,6 +30337,7 @@ r@y`&@
 `R@yh
 R@yHq
 r@yhr
+`R@ys5
 r	yt:
 --- %s: 
 "%s" 
@@ -30359,6 +30352,7 @@ r	yt:
 %s+--
 +++ %s: 
 s)~+@
+!	@)	S
 ?;? +S'
 )`>s0
 %s%02d
@@ -30403,7 +30397,7 @@ s7>Ip
 %s : %8.2f:  start %s [%s]
 %s : %8.2f:  vol %.3f for '%s'
 %s : %8.2f: waiting scene to become interruptible
-@S@9)7
+@S@9)3
 S@9h"
 (SA9(
 %s:  added global entity %d %s (%s)
@@ -33012,7 +33006,7 @@ Switching local lobby state to %s from %s
 Switching to server state %s from %s based upon the lobby being updated to this state
 %s (%x) spoke %s (%f)
 s@yaC
-S@yAC
+S@yaC
 Symbol name "
 symbols
 Synchronously spawn an entity group from a list of spawn tables.
@@ -33043,7 +33037,6 @@ T0:	S
 T0:	S0M0
 T0:	SpM0
 T1I@-f@!
-	*!t2
 T28	S
 T+5@y
 T@8	S
@@ -33129,7 +33122,6 @@ target_unit_idx
 tauntfrequency
 tax_loophole_talent
 tax_usd
-!	@)tb
 t-b8 
 Tb8	S
 T@BB9@
@@ -33288,6 +33280,7 @@ texturename
 texture_name
 texturescale
 TextureScroll
+!	@)tf
 t	Failed to save unsupported class
 tf_escort_score_rate
 ?TFm,r
@@ -33452,7 +33445,6 @@ Th*@y
 Th.Yy
 ThZ@y
 Ti"	)
-!	@)TI
 T)I) 
 Ti2@yh
 Ti5KJ(}
@@ -33670,6 +33662,7 @@ TLK_STALEMATE
 TLK_SUDDENDEATH_START
 TLK_TELEPORTED
 TLK_WINDMINIGUN
+!	@)TM
 TM!@9
 TM9@)O	@
 Tm9	S
@@ -34677,7 +34670,6 @@ VBaseFileSystem011
 V-BH*
 VBik001
 vb phys
-!	@)Vc
 v\C_0
 v^C-1*8
 vcd error, gesture %s of model %s is marked as STUDIO_LOOPING!
@@ -34781,6 +34773,7 @@ _V_FixupPathName
 V_fmodf
 V_fpclassify
 V_frexpf
+!	@)Vg
 VGAME
 V-gBS-r
 V_GetErrno
@@ -35315,7 +35308,7 @@ v>zlK9T
 @W?,}
 W-!("
 W)` !
-w2>9au
+w2>9aq
 w2@9b
 W3|Uxa
 W6	@@
@@ -35431,7 +35424,7 @@ water_material_override
 water_wake
 waterz
 W)B8 
-wB>9{t
+wB>9{p
 wb	yxV
 W?,|C
 W)c8%
@@ -35690,11 +35683,11 @@ X\V@%
 x*;XZ
 [xYq|m
 <) @y
-(%@)`y
 )%@y?
 )	@y?
 @y`&@
 @y;]@
+@y!\-
 *%@y(
 		@y_
 		@y?
