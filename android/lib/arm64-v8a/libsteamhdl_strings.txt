@@ -6,8 +6,8 @@
 01/01/00
 0123456789abcdef
 0123456789ABCDEF
-@%02d/%02d/%02d
 %02d:%02d:%02d
+%02d/%02d/%02d
 &#039;
 %04d%02d%02d%02d%02d%02d
 %04u-%02u-%02u
@@ -29,10 +29,12 @@
 13CCallbackImplILi4EE
 13CCallbackImplILi7EE
 13CCallbackImplILi8EE
-14:55:52
 14CSteamHeadless
 14CUtlLinkedListIN11SteamStdLib12CCommandLine18CommandLineParam_tEiE
 14ISteamHeadless
+15CCallbackManualI12CCallbackMgr23SteamAPICallCompleted_tLb0EE
+15CCallbackManualI12CCallbackMgr23SteamAPICallCompleted_tLb1EE
+18:04:20
 18CUtlCharConversion
 %.18g
 19CUtlNoEscConversion
@@ -40,12 +42,13 @@
 20CUniformRandomStream
 20IUniformRandomStream
 21CUtlCStringConversion
-2?k58y
+2(k48
 4h2@9h
-4`jx8 
+4`jx8`
   %52s%12d%12.3f%6.2f%%%12.3f%6.2f%%%12.3f%12.3f%12.3f
 6h2@9
 7`B@y
+<8$msu
 {%8X-%4X-%4X-%2X%2X-%2X%2X%2X%2X%2X%2X}
 %8X-%4X-%4X-%2X%2X-%2X%2X%2X%2X%2X%2X
 %8X%4X%4X%2X%2X%2X%2X%2X%2X%2X%2X
@@ -58,7 +61,7 @@
 9CCallbackI14CSteamHeadless27SteamServerConnectFailure_tLb0EE
 9?h(8
 9IMemAlloc
-9?k48
+	a39.
 +a@9?
 a@9*a
 &aacute;
@@ -86,6 +89,7 @@ Anonymous mutex cannot have bAllAccess == true
 &apos;
 &aring;
 &Aring;
+	as9	
 Assertion Failed: 0
 Assertion Failed: argLen < 0x10000000u
 Assertion Failed: bufferLen > 0 && bufferLen <= INT_MAX
@@ -143,6 +147,7 @@ Assertion Failed: m_Count == 0
 Assertion Failed: m_CounterNames[n]
 Assertion Failed: m_cReentrancyCount >= 0
 Assertion Failed: !m_data.HasError()
+Assertion Failed: m_nAllocationCount >= 0
 Assertion Failed: m_nRecursions > 0
 Assertion Failed: m_NumCounters+1 < MAXCOUNTERS
 Assertion Failed: m_pBudgetGroups
@@ -154,7 +159,6 @@ Assertion Failed: m_Put >= 0
 Assertion Failed: m_pvOrigNameAddress
 Assertion Failed: m_queueItemsPending.Count() == 0
 Assertion Failed: m_TotalElements != InvalidIndex()
-Assertion Failed: m_unSizeOfElements > 0
 Assertion Failed: m_unSizeOfElements == mem.m_unSizeOfElements
 Assertion Failed: m_vecParms.IsValidIndex( nIndex )
 Assertion Failed: m_vecRegisteredWriters.Count() == 0
@@ -174,6 +178,8 @@ Assertion Failed: nMonth == 1 || nMonth == 3 || nMonth == 5 || nMonth == 7 || nM
 Assertion Failed: !"Not implemented"
 Assertion Failed: nPut + nPutDelta <= outBuf.TellMaxPut()
 Assertion Failed: nSize >= 0
+Assertion Failed: nSizeOfType > 0
+Assertion Failed: num >= 0
 Assertion Failed: num > 0
 Assertion Failed: numElements >= 0
 Assertion Failed: numElements <= m_nAllocationCount
@@ -204,6 +210,7 @@ Assertion Failed: pFile->m_hFileDest != INVALID_OSFILEHANDLE
 Assertion Failed: pFmt
 Assertion Failed: pFormat != NULL
 Assertion Failed: pGroupName
+Assertion Failed: pLeft->m_iStackPC <= V_ARRAYSIZE(pLeft->m_StackPC)
 Assertion Failed: pNode && pNode->Next == QueueEnd()
 Assertion Failed: ppath
 Assertion Failed: prefix != NULL
@@ -230,9 +237,9 @@ Assertion Failed: (&src < m_Memory.Base()) || (&src >= (m_Memory.Base() + m_Size
 Assertion Failed: src != NULL
 Assertion Failed: str
 Assertion Failed: strlen(pchModuleName) + V_strlen(pModuleExtension) < MAX_UNICODE_PATH_IN_UTF8
+Assertion Failed: strlen( pGroupName ) < MAX_GROUP_NAME_LENGTH
 Assertion Failed: str != NULL
 Assertion Failed: szDomainName != nullptr
-Assertion Failed: _tcslen( pGroupName ) < MAX_GROUP_NAME_LENGTH
 Assertion Failed: unReadAheadChunkSize < INT32_MAX/2
 Assertion Failed: V_IsAbsolutePath( pPath )
 Assertion Failed: V_strlen( pchTime ) == 25
@@ -249,6 +256,7 @@ Average %.2f fps, %.2f ms per frame
 b"@9_
 Bad flag in RTime32DateAdd
 Bad thread local
+Bht8f
 B`M9B
 &brvbar;
 __bss_end__
@@ -257,20 +265,39 @@ __bss_start__
 Busy, please retry.
  bytes
 Calling Tell on an async file writer is unsafe, will race with thread and may corrupt file pointer.
+calloc
+calloc@@LIBC
 can't open/create semaphore name file (%s)
 CatchAndWriteContext_t::Invoke with bogus argc/argv
 CatchAndWriteContext_t::Invoke with bogus void *ptr
 CatchAndWriteContext_t::Set w/o a function pointer!
-C:/buildslave/steam_main_androidarm64/build/src/public\tier0/threadtools.h
-C:/buildslave/steam_main_androidarm64/build/src/public\tier0/tslist.h
-C:/buildslave/steam_main_androidarm64/build/src/public\tier0/vprof.h
-C:/buildslave/steam_main_androidarm64/build/src/public\tier1/utlbuffer.h
-C:/buildslave/steam_main_androidarm64/build/src/public/tier1\utldict.h
-C:/buildslave/steam_main_androidarm64/build/src/public\tier1/utllinkedlist.h
-C:/buildslave/steam_main_androidarm64/build/src/public/tier1/utlrbtree.h
-C:/buildslave/steam_main_androidarm64/build/src/public\tier1/utlstring.h
-C:/buildslave/steam_main_androidarm64/build/src/public/tier1/utlvector.h
-C:/buildslave/steam_main_androidarm64/build/src/public\tier1/utlvector.h
+C:/buildslave/steam_rel_alt_androidarm64/build/src/common/steam/client_api.cpp
+C:/buildslave/steam_rel_alt_androidarm64/build/src/public/rtime.cpp
+C:/buildslave/steam_rel_alt_androidarm64/build/src/public\tier0/memblockhdr.h
+C:/buildslave/steam_rel_alt_androidarm64/build/src/public\tier0/threadtools.h
+C:/buildslave/steam_rel_alt_androidarm64/build/src/public\tier0/tslist.h
+C:/buildslave/steam_rel_alt_androidarm64/build/src/public\tier0/vprof.h
+C:/buildslave/steam_rel_alt_androidarm64/build/src/public\tier1/utlbuffer.h
+C:/buildslave/steam_rel_alt_androidarm64/build/src/public/tier1\utldict.h
+C:/buildslave/steam_rel_alt_androidarm64/build/src/public\tier1/utllinkedlist.h
+C:/buildslave/steam_rel_alt_androidarm64/build/src/public/tier1/utlrbtree.h
+C:/buildslave/steam_rel_alt_androidarm64/build/src/public\tier1/utlstring.h
+C:/buildslave/steam_rel_alt_androidarm64/build/src/public/tier1/utlvector.h
+C:/buildslave/steam_rel_alt_androidarm64/build/src/public\tier1/utlvector.h
+C:/buildslave/steam_rel_alt_androidarm64/build/src/tier0/dbg.cpp
+C:/buildslave/steam_rel_alt_androidarm64/build/src/tier0/memstd.cpp
+C:/buildslave/steam_rel_alt_androidarm64/build/src/tier0/memstd.h
+C:/buildslave/steam_rel_alt_androidarm64/build/src/tier0/minidump.cpp
+C:/buildslave/steam_rel_alt_androidarm64/build/src/tier0/platform_posix.cpp
+C:/buildslave/steam_rel_alt_androidarm64/build/src/tier0/threadtools.cpp
+C:/buildslave/steam_rel_alt_androidarm64/build/src/tier0/vprof.cpp
+C:/buildslave/steam_rel_alt_androidarm64/build/src/tier1/fileio.cpp
+C:/buildslave/steam_rel_alt_androidarm64/build/src/tier1/interface.cpp
+C:/buildslave/steam_rel_alt_androidarm64/build/src/tier1/utlbuffer.cpp
+C:/buildslave/steam_rel_alt_androidarm64/build/src/tier1/utlmemory.cpp
+C:/buildslave/steam_rel_alt_androidarm64/build/src/tier1/utlstring.cpp
+C:/buildslave/steam_rel_alt_androidarm64/build/src/vstdlib/commandline.cpp
+C:/buildslave/steam_rel_alt_androidarm64/build/src/vstdlib/strtools.cpp
 &ccedil;
 &Ccedil;
 &cedil;
@@ -278,6 +305,7 @@ C:/buildslave/steam_main_androidarm64/build/src/public\tier1/utlvector.h
 CFileWriter::SetTimestamp() not implemented
 CFileWriterThread
 CFileWriterThread already exited
+ClientAPI_Init: Cannot create pipe.  Steam not running?
 ClientAPI_Init(GlobalInstance): GetIClientAppManager returned NULL.
 ClientAPI_Init(GlobalInstance): GetIClientApps returned NULL.
 ClientAPI_Init(GlobalInstance): GetIClientAudio returned NULL.
@@ -329,14 +357,13 @@ clock_gettime
 clock_gettime@@LIBC
 close@@LIBC
 c`M9c
-commandline.cpp
 Command line options:
 .comment
-../common/steam/client_api.cpp
 Compact is no longer supported
 com.valvesoftware.steam
 &copy;
 crashhandler002
+crashhandler003
 crashhandler.so
 CreateInterface
 C-runtime internal
@@ -347,6 +374,13 @@ CSteamHeadless::OnPostLogOn
 &curren;
 CUtlBuffer::GetStringFast: binary buffers only
 CUtlBuffer::GetStringFast: no string termination
+CUtlStringBuilder::Data::MoveToHeap
+CUtlStringBuilder::InternalPrepareBuffer
+CUtlStringBuilder::ReplaceInternal
+CUtlString::ReplaceInternal
+CUtlString::SetValue
+CUtlString::VAppendFormat
+CUtlString::VFormat
 __cxa_allocate_exception
 __cxa_atexit
 __cxa_atexit@@LIBC
@@ -359,11 +393,12 @@ __cxa_guard_abort
 __cxa_guard_acquire
 __cxa_guard_release
 __cxa_pure_virtual
+__cxa_rethrow
 __cxa_throw
 %d:00
 .data
 .data.rel.ro
-dbg.cpp
+DBG_STAT
 -debugbreak
 &deg;
 Deleting thread object from the thread, this is bad
@@ -371,7 +406,9 @@ __deregister_frame
 __deregister_frame_info
 __deregister_frame_info_bases
 /dev/
+/dev/urandom
 %d frames sampled for %.2f seconds
+	%d items : %s - %s:%d
 &divide;
 dladdr
 dladdr@@LIBC
@@ -385,7 +422,9 @@ dlopen@@LIBC
 dlsym
 dlsym@@LIBC
 DONT_BREAK_ON_ASSERT
+DONT_BREAK_ON_ASSERT=1
 Don't know how to check filesystem type on POSIX!
+DumpMemTrackingStats %d %d 
 .dynamic
 .dynstr
 .dynsym
@@ -398,6 +437,8 @@ _edata
 &Egrave;
 .eh_frame
 .eh_frame_hdr
+__emutls_get_address
+__emutls_register_common
 Encryption
 __end__
 __errno
@@ -416,17 +457,23 @@ _exit@@LIBC
 _ExitOnFatalAssert
 Expected %lld but got %lld!
 Failed to create thread (error 0x%x)
-Failed to determine free disk space for %s, error %d
 Fatal assert
 Fatal assert failed: %s, line %d.  Application exiting.
 Fatal Assertion Failed: 
 Fatal Assertion Failed: %s
+Fatal Assertion Failed: s_dev_urandom_fd >= 0
+Fatal Assertion Failed: urandom_result > 0 || ( urandom_result < 0 && errno == EINTR )
+  f_bavail: %lu
+  f_bfree : %lu
+  f_blocks: %lu
+  f_bsize : %lu
 fclose
 fclose@@LIBC
 fcntl
 fcntl@@LIBC
 fflush
 fflush@@LIBC
+  f_frsize: %lu
 fgets
 fgets@@LIBC
 File change notification for %s but no file contents changed based on hash
@@ -435,6 +482,10 @@ FileSystem
 .fini_array
 flock
 flock@@LIBC
+flock LOCK_EX request but file is not opened for writing, ignoring: %s
+flock LOCK_EX %s failed, errno = %d
+flock LOCK_SH requested but file is not opened for reading, ignoring: %s
+flock %s %s failed. errno = %d
 fopen
 fopen@@LIBC
 fprintf
@@ -445,9 +496,11 @@ fputc@@LIBC
 &frac14;
 &frac34;
 __frame_state_for
+Free disk space for %s would overflow
 free@@LIBC
 fstat
 fstat@@LIBC
+fsync %s failed, errno = %d
 [ func+child   func ]     Count
 [ func+child   func ]  [ func+child   func ]  [ func+child   func ]  Count   Peak
 fwrite
@@ -469,12 +522,10 @@ gettid@@LIBC
 .gnu.version
 .gnu.version_r
 __gxx_personality_v0
-h2@9(
  H`8a
-?h(8?h)8 
+?h)8?h(8?|
 *h^@9
 .hash
-hBA9t"
 -- Hierarchical Call Graph --
 -hometest
 &iacute;
@@ -510,6 +561,7 @@ Ka@9+
 Ka@9k
  Kbps
 Ki)88
+(kz8h
 &laquo;
 libandroid.so
 libaudio.so
@@ -519,12 +571,14 @@ libdl.so
 liblog.so
 libm.so
 liboverride.so
-libsteamclient.so
+@libsteamclient.so
 libsteamhdl.so
 libsteamhdl.so.dbg
 libsteam.so
 localtime_r
 localtime_r@@LIBC
+LOCK_EX
+LOCK_SH
 Logger
 lseek
 lseek@@LIBC
@@ -535,6 +589,7 @@ malloc
 malloc@@LIBC
 malloc_usable_size
 malloc_usable_size@@LIBC
+May 20 2020
 MbP?H
  Mbps
 &mdash;
@@ -547,14 +602,10 @@ memmove
 memmove@@LIBC
 memset
 memset@@LIBC
-memstd.cpp
-./memstd.h
 MemTotal:
 &micro;
 &middot;
-minidump.cpp
 Minidumps written:
-~MO5f
 N11SteamStdLib12CCommandLineE
 N11SteamStdLib12ICommandLineE
 N14CSteamHeadless17CCallback_OnLogOnE
@@ -564,9 +615,8 @@ N14CSteamHeadless24CCallback_OnLogOnFailureE
 nanosleep
 nanosleep@@LIBC
 &nbsp;
-nBytesItem is %d in UtlMemory_CalcNewAllocationCount
+nBytesItem is %zu in UtlMemory_CalcNewAllocationCount
 &ndash;
-nice() failed
 Nil time value
 -noassert
 -nocrashdialog
@@ -585,7 +635,6 @@ NULL buffer passed to V_atoi()
 &Ocirc;
 &ograve;
 &Ograve;
-olibsteamhdl.so.dbg
 Only thread can stop self: Use a higher-level protocol
 open@@LIBC
 &ordf;
@@ -604,7 +653,6 @@ OverlayRendering
 &para;
 Parameter file '%s' not found, skipping...
 Peak %.2f ms frame
-platform_posix.cpp
 &plusmn;
 POSIX does not support inheriting full mutexes
 posix_fadvise
@@ -663,7 +711,8 @@ pthread_setname_np
 pthread_setname_np@@LIBC
 pthread_setspecific
 pthread_setspecific@@LIBC
-../public/rtime.cpp
+putenv
+putenv@@LIBC
 &quot;
 &raquo;
 read@@LIBC
@@ -680,8 +729,7 @@ __register_frame_info_table_bases
 __register_frame_table
 .rela.dyn
 .rela.plt
-R?h)8
-R	i5xh
+R	i5x
 .rodata
 %s	0x%x
 %s.async%u.tmp
@@ -698,7 +746,6 @@ Seeking to a position not supported with async io
 Seeking to a position which is not sector aligned will break unbuffered io
 semaphore creation failed %s
 Semaphore name (%s) is longer than POSIX can handle, truncating.
-Sep  5 2019
 ServerMain
 __sF@@LIBC
 .shstrtab
@@ -707,6 +754,7 @@ signal
 signal@@LIBC
 %s %i %s
 Sleeping
+%s: no such process %d
 %s not implemented
 snprintf@@LIBC
 Someone called ClearWritingMinidump without holding the minidump lock.
@@ -716,11 +764,12 @@ Someone called SetWritingMinidump without holding the minidump lock.
 %s=%s
 sscanf
 sscanf@@LIBC
-	%s - %s:%d
 %s/steamXXXXXX
 -stack=
 __stack_chk_fail
 __stack_chk_fail@@LIBC
+statvfs64 failed for %s, errno %d
+statvfs64: ret %d errno %d
 Steam
 Steam_BGetCallback
 -steamconsole
@@ -756,7 +805,6 @@ strncpy@@LIBC
 strrchr
 strrchr@@LIBC
 .strtab
-strtools.cpp
 -- Summary --
        Sum (ms)         Avg Time/Frame (ms)     Avg Time/Call (ms)
 &sup1;
@@ -780,18 +828,13 @@ Thread(0x%p/0x%p/0x%x)
 Thread cannot be joined with self
 Thread did nothing but sleep during profile period.
 Thread failed to initialize
+ThreadGetProcessExitCode
 Thread synchronization object is unuseable
 ThreadTerminate
-threadtools.cpp
 ThreadWorkItem
-../tier1/fileio.cpp
-../tier1/interface.cpp
-../tier1/utlbuffer.cpp
-../tier1/utlmemory.cpp
-../tier1/utlstring.cpp
+tier1
 time@@LIBC
 &times;
-T@,^J
 /tmp/
 TMPDIR
 .tmp.save
@@ -843,7 +886,6 @@ V_ConvertStringToUUID
 V_ConvertUUIDToString
 vector
 V_MakeAbsolutePath: _getcwd failed.
-vprof.cpp
 VPROF Report for Thread: %d - %s
 V_RemoveDotSlashes failed for "%s".
 vsnprintf
@@ -852,10 +894,15 @@ vstdlib_wcstoi64
 vstdlib_wcstoui64
 V_URLDecode needs a dest buffer at least as large as the source
 Waited %u iterations in CFileWriter::Flush - m_cubOutstanding = %d
+Warning: failed to set thread priority: set failed for priority %d
+Warning: support for elevated priorities is most likely unavailable, suppressing future warnings
+Warning: thread priority outside allowed range %d
+write %s failed, errno = %d
 wrote too few bytes (%s)
 x86_64
 &yacute;
 &Yacute;
+^y)B(&|
 &yen;
 %Y-%m-%dT%H:%M:%SZ
 %Y%m%dT%H%M%SZ

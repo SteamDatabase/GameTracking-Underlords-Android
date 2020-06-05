@@ -2,6 +2,7 @@
  __android_log_print
  __android_log_write
  atoi@@LIBC
+ calloc@@LIBC
  clock_gettime@@LIBC
  close@@LIBC
  __cxa_allocate_exception
@@ -14,6 +15,7 @@
  __cxa_guard_acquire
  __cxa_guard_release
  __cxa_pure_virtual
+ __cxa_rethrow
  __cxa_throw
  dladdr@@LIBC
  dlclose@@LIBC
@@ -73,6 +75,7 @@
  pthread_self@@LIBC
  pthread_setname_np@@LIBC
  pthread_setspecific@@LIBC
+ putenv@@LIBC
  read@@LIBC
  readlink@@LIBC
  realloc@@LIBC
@@ -101,6 +104,8 @@
  T __deregister_frame
  T __deregister_frame_info
  T __deregister_frame_info_bases
+ T __emutls_get_address
+ T __emutls_register_common
  T __frame_state_for
  time@@LIBC
  tolower@@LIBC

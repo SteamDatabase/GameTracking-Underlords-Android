@@ -326,7 +326,6 @@
  frexp@@LIBC
  fseek@@LIBC
  fstat@@LIBC
- fsync@@LIBC
  ftell@@LIBC
  ftruncate@@LIBC
  fwrite@@LIBC
@@ -349,7 +348,8 @@
  isalnum@@LIBC
  isalpha@@LIBC
  __isfinitef@@LIBC
- __isfinite@@LIBC
+ isinf@@LIBC
+ isnan@@LIBC
  isspace@@LIBC
  isupper@@LIBC
  iswspace@@LIBC
@@ -377,7 +377,6 @@
  modf@@LIBC
  munmap@@LIBC
  nanosleep@@LIBC
- nice@@LIBC
  opendir@@LIBC
  open@@LIBC
  operator delete(void*)
@@ -423,6 +422,7 @@
  pthread_once@@LIBC
  pthread_self@@LIBC
  pthread_setname_np@@LIBC
+ pthread_setschedparam@@LIBC
  pthread_setspecific@@LIBC
  qsort@@LIBC
  R AES_version
@@ -483,6 +483,8 @@
  R TXT_DB_version
  R X509_version
  scandir@@LIBC
+ sched_get_priority_max@@LIBC
+ sched_get_priority_min@@LIBC
  sched_yield@@LIBC
  sem_close@@LIBC
  sem_open@@LIBC
@@ -549,6 +551,7 @@
  std::__ndk1::locale::operator=(std::__ndk1::locale const&)
  std::__ndk1::locale::use_facet(std::__ndk1::locale::id&) const
  std::__ndk1::mutex::lock()
+ std::__ndk1::mutex::~mutex()
  std::__ndk1::mutex::unlock()
  std::__ndk1::__next_prime(unsigned long)
  std::__ndk1::num_put<char, std::__ndk1::ostreambuf_iterator<char, std::__ndk1::char_traits<char> > >::id
@@ -560,10 +563,6 @@
  std::__ndk1::__rs_default::operator()()
  std::__ndk1::__rs_default::~__rs_default()
  std::__ndk1::__rs_get()
- std::__ndk1::__shared_weak_count::__add_shared()
- std::__ndk1::__shared_weak_count::__get_deleter(std::type_info const&) const
- std::__ndk1::__shared_weak_count::__release_shared()
- std::__ndk1::__shared_weak_count::~__shared_weak_count()
  std::__ndk1::thread::join()
  std::__ndk1::__thread_local_data()
  std::__ndk1::__thread_struct::~__thread_struct()
@@ -572,6 +571,9 @@
  std::__ndk1::__throw_system_error(int, char const*)
  std::nothrow
  std::out_of_range::~out_of_range()
+ std::overflow_error::~overflow_error()
+ std::runtime_error::~runtime_error()
+ std::runtime_error::runtime_error(char const*)
  std::terminate()
  std::uncaught_exception()
  strcasecmp@@LIBC
@@ -4484,8 +4486,9 @@
  typeinfo for std::exception
  typeinfo for std::length_error
  typeinfo for std::__ndk1::ios_base
- typeinfo for std::__ndk1::__shared_weak_count
  typeinfo for std::out_of_range
+ typeinfo for std::overflow_error
+ typeinfo for std::runtime_error
  uname@@LIBC
  unlink@@LIBC
  unsetenv@@LIBC
@@ -4495,10 +4498,13 @@
  vfprintf@@LIBC
  vsnprintf@@LIBC
  vtable for __cxxabiv1::__class_type_info
+ vtable for __cxxabiv1::__function_type_info
+ vtable for __cxxabiv1::__pointer_type_info
  vtable for __cxxabiv1::__si_class_type_info
  vtable for __cxxabiv1::__vmi_class_type_info
  vtable for std::length_error
  vtable for std::out_of_range
+ vtable for std::overflow_error
  waitpid@@LIBC
  wcscmp@@LIBC
  wcslen@@LIBC

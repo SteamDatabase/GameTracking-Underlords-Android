@@ -83,6 +83,14 @@ message CMsgClientNetworkingCertReply {
 	optional bytes ca_signature = 6;
 }
 
+message CMsgClientNetworkingMobileCertRequest {
+	optional uint32 app_id = 1;
+}
+
+message CMsgClientNetworkingMobileCertReply {
+	optional string encoded_cert = 1;
+}
+
 message CMsgClientGetAppOwnershipTicket {
 	optional uint32 app_id = 1;
 }
@@ -163,10 +171,12 @@ message CMsgClientGamesPlayed {
 		optional uint32 launch_source = 21 [default = 0];
 		optional uint32 vr_hmd_runtime = 22;
 		optional .CMsgIPAddress game_ip_address = 23;
+		optional uint32 controller_connection_type = 24 [default = 0];
 	}
 
 	repeated .CMsgClientGamesPlayed.GamePlayed games_played = 1;
 	optional uint32 client_os_type = 2;
+	optional uint32 cloud_gaming_platform = 3;
 }
 
 message CMsgGSApprove {
@@ -218,6 +228,8 @@ message CMsgClientLicenseList {
 		optional uint32 initial_time_unit = 14;
 		optional uint32 renewal_period = 15;
 		optional uint32 renewal_time_unit = 16;
+		optional uint64 access_token = 17;
+		optional uint32 master_package_id = 18;
 	}
 
 	optional int32 eresult = 1 [default = 2];
@@ -1031,6 +1043,7 @@ message CMsgClientPICSProductInfoRequest {
 	repeated .CMsgClientPICSProductInfoRequest.AppInfo apps = 2;
 	optional bool meta_data_only = 3;
 	optional uint32 num_prev_failed = 4;
+	optional uint32 supports_package_tokens = 5;
 }
 
 message CMsgClientPICSProductInfoResponse {
