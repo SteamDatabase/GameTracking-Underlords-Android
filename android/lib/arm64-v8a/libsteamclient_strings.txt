@@ -64,7 +64,7 @@ $0$1$2 $3 = $4
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz./
 0123456789abcdefHTTP Connection (%p) (connection handle %X) destructing! - Dispatching pending request (%p)
- !"#$%&'()*+,-./0123x
+ !"#$%&'()*+,-./0123t
 %019lu
 [0|1] : trigger app info update, optionally for update all
 [%02d:%02d:%02d] 
@@ -1018,7 +1018,6 @@ $0rpc $1(.$2) returns (.$3)
 "!"%"+"1"9"K"O"c"g"s"u"
 1@9M5
 1#@9s
-1@9)yA
 1A hash built using the IDs of the contained hits.
 !1AQaq
 1A service to manage and link to external accounts2
@@ -1054,6 +1053,7 @@ $0rpc $1(.$2) returns (.$3)
 1CPublishedFile_AreFilesInSubscriptionList_Request
 1Create a nonce for a cloud gaming service session
 1CRemoteClient_UnregisterStatusUpdate_Notification
+1D9(2
 1Data for each of the revisions that this item has
 1d[O~
 %.1f pct of time accounted for
@@ -2064,9 +2064,13 @@ _!@1J
 29IHTTPStreamingResponseHandler
 29PublishedFileDetails_Reaction
 29PublishedFileDetails_VoteData
-2	A89
+2	a,9
+2	a/9
+2	a(9
 @2A9 
 2	!A9
+2	A*9
+2(A=9AO
 2A.CChatUsability_ClientUsabilityMetrics_Notification.VoiceSettings
 2A.CMsgClientUCMEnumerateUserPublishedFilesResponse.PublishedFileId
 2(aNa
@@ -2078,6 +2082,7 @@ _!@1J
 2B.CMsgCREGetUserPublishedItemVoteDetailsResponse.UserItemVoteDetail
 2bk*8
 "2BRbr
+	2c	@
 2CAccountHardware_DeRegisterSteamController_Request
 2:.CAccountHardware_QueryAccountsRegisteredToSerial_Accounts"
 2.CAccountHardware_RegisterSteamController_Response"V
@@ -2270,7 +2275,6 @@ _!@1J
 2Cxhr
 *2d@95h@9%
 2dV2:tN:
-2	e29T
 2eh$8
 2!.ERemoteDeviceAuthorizationResult
 [%.2f] 
@@ -2278,6 +2282,7 @@ _!@1J
 2Get build status for previously uploaded depot ZIP
 2Gets a list of server SteamIDs given a list of IPs
 2	h(8
+2	h(8(
 2hB@9(
 2hB	9h
 2hBA9
@@ -2291,7 +2296,7 @@ _!@1J
 2hjz8
 2hr:9
 2Ht\l
-2hv:9n
+2hv:9y
 2i2*9h
 2*i(8_
 2*i(8h*@
@@ -2322,6 +2327,7 @@ _!@1J
 2J(NQj(N
 2(k48
 2?k78
+2?k78S
 2)k(8
 2?k88
 2k>@9
@@ -2352,7 +2358,8 @@ _!@1J
 2#.PublishedFileDetails.PlaytimeStats
 2PYoxq}
 2?!@q	=
-2	q99!i
+2	q#9
+2	q 9t
 2	QA9
 2Q.CChatUsability_ClientUsabilityMetrics_Notification.UIState.CategoryCollapseState
 2qyix?
@@ -2362,7 +2369,7 @@ _!@1J
 2..SiteServerUI_ClientStatus_Response.ClientInfo
 2+.SiteServerUI_ClientStatus_Response.Payment
 *2t@90x@9
-2tj(8bW
+2tj(8b[
 2User has picked a resolution for a Cloud conflict.
 2V)F9HIF9?E
 2vj(8hBE9
@@ -2753,6 +2760,7 @@ _!@1J
 33SiteServerUI_GetLanguage_Response
 33SiteServerUI_LoginStatus_Response
 33SiteServerUI_SetLanguage_Response
+33s?XLD
 34CAdapterSteamMatchmakingServers001
 34CAdapterSteamMatchmakingServers002
 34CAPIJobEnumerateUserPublishedFiles
@@ -3218,7 +3226,7 @@ _!@1J
 3App Id of the app that the files were published to.
 >#>)>/>3>A>W>c>e>w>
 3AybZ
-3AyBZ
+3Ay"W
 3.CAccountHardware_DeRegisterSteamController_Request
 3CAccountHardware_DeRegisterSteamController_Response"t
 3.CAccountHardware_SteamControllerGetConfig_Response"/
@@ -3840,7 +3848,7 @@ $4DTdt
 4h~@9
 4h_@9
 4h[@9
-4h>[9h
+4h^[9h
 4Ha@9
 4hb@9	
 4hB@9
@@ -3849,8 +3857,6 @@ $4DTdt
 4hbA9H%
 4hBE9h
 4hBF9h
-4hbG9(
-4hbU9H
 4h&C)
 4hc@9H
 4h"D9
@@ -3872,9 +3878,11 @@ $4DTdt
 4hkz8
 4hNG9
 4hn@y
+4h&O9(
 4hRE9h
 4h"S9H	
 4h"S9v"
+4h"V9(
 4hV@9
 4hvA9
 4hvA9(
@@ -4060,6 +4068,7 @@ $4DTdt
 5))@9I0
 5@9J9
 5	A@9
+5a 9H
 5Add two-factor authenticator to the logged-in account
 5aFEy`JEy
 !5!A!I!O!Y![!_!s!}!
@@ -4110,7 +4119,7 @@ $4DTdt
 5h6B9
 5h6E9h
 5 h`8
-5h>[9
+5h^[9
 5hBM9
 5#hc8
 5h.C9
@@ -4125,7 +4134,6 @@ $4DTdt
 5hR@9
 5hVK9
 5hvz9
-5hw8ry
 5hW@9
 5HW@9
 5hzz9i~z9
@@ -4454,7 +4462,6 @@ _6h&@
 6H3@9
 /6h6@
 ?6h~@9
-6h*[9h
 6(h@9I9
 _6h"A9
 6h&B)
@@ -4475,8 +4482,10 @@ _6hBA9
 6h&G)
 6h"G9h
 6hj@9
+6hJ[9h
 6hn@9
 6hNG9h
+6h"O9
 '6hr@9	
 6hr@9
 /6hv@9
@@ -4568,6 +4577,7 @@ _6`J@
 6"k`8x
 6k_EMsgClientRequestWebAPIAuthenticateUserNonceResponse
 6k_EMsgClientUCMEnumerateUserSubscribedFilesWithUpdates
+6"libsteamclient.so.dbg
 _6`n@
 `6`N@
 _6`N@
@@ -4643,6 +4653,7 @@ _6`Z@
 (7(	07
 (7)	07
 (7(	07h
+(7)	07iB@9
 70CChatRoomClient_MemberListViewUpdated_Notification_MemberListViewEntry
 71CFriendsMessages_GetActiveMessageSessions_Response_FriendMessageSession
 7	1F9
@@ -4778,7 +4789,6 @@ $@7a*@
 7H	 7
 `7)	h7iF@9)
 7h"@9
-7h&[9
 7h"@9H
 7hb@9
  7hB@9
@@ -4796,6 +4806,7 @@ $@7a*@
 7hBG9H
 7h:C9
 @7hF@9
+7hF[9
 7hF@9
 ?7hF@9h
 7hFK9
@@ -4990,7 +5001,6 @@ _830_8
 87`^A
 87aZA
 87CUserAccount_GetAvailableValveDiscountPromotions_Response_ValveDiscountPromotionDetails
-87h~@
 !87h"@7
 87h	@7(
 87hF@9H
@@ -5160,7 +5170,6 @@ $@9	(
 #@9?$
 +@9?,
 +@9?/
-	!}9)
 	)@9)
 	)@9*
 	*	#9
@@ -5234,13 +5243,10 @@ $ @9*$@9#,@9%(@9J=
 9	%@9i
  @9	$@9J
 9@9j9
- @9	$@9J	F
 @9+	@9K
 @9)	@9Lyl
 99rKJJ
 @99U@
-"@9a\
-&@9a\
 (@9$A@
 @9`A)
 @9a2@
@@ -5383,12 +5389,12 @@ $ @9*$@9#,@9%(@9J=
 9eig8
 ;!;#;-;9;E;S;Y;_;q;{;
 9E#@ye
-[@9	F
-@@9	F
+[@9)F
+@@9)F
 @9#F87`
 @9f	@9
 @9f(@9c @9
-@9FA(
+@9FA7
 9`FE9
 @9F\Ey(
 9Fif8
@@ -5439,7 +5445,7 @@ $ @9*$@9#,@9%(@9J=
 9hfW9)
 @9@HFy
 9h&G9)
-9)hh8
+$9)hh8
 @9(hh8'hg8&hf8%he8$hd8#hc8"hb8!hi8
 ~@9h~H9	
 9h&H)kJ@
@@ -5512,7 +5518,7 @@ $ @9*$@9#,@9%(@9J=
 9iB@9h
 9+ic8
 9IClientVR
-#@9If
+#@9if
 9iF@9	E
 9If non-zero, cap the number of recent messages to return.
 9+ig8
@@ -5529,7 +5535,7 @@ $ @9*$@9#,@9%(@9J=
 @9)ij8)
 9iJ@9	I
 9	ijxI
-"@9IK
+"@9iK
 @9*ik8
 9+ik8
 9IMemAlloc
@@ -5684,9 +5690,10 @@ __a__
 A:   
 A)*(@
 a0@9a
+	a19F
 A)	1@y
-*	a29
 a2@9!
+	A29%
 a2@9`R@9w2
 a2A9`r@9A
 a2d_ASN1_OBJECT
@@ -5710,7 +5717,6 @@ a8Ah 8
 a8Ak 8
 )a@9	
 +a@9?
-	a_9	
 	a@9?
 a:@9!
 a&@9!
@@ -5730,17 +5736,21 @@ a~@9A
 A9a@@9
 A9A@@9
 /A9a:J9`>
+(A<9AO
 a"@9B
 A9`B@9A
 #A9b"B
-#A9bY
 (#A9)+E
 A9`F@9A
 	a@9i
 	a@9I
 		A9i
+	A^9i
 	A@9i
+	!A9I
+	%A9I
 	A@9I
+	A\9I
 A9I'@
 A9I+@
 +A9iC
@@ -5760,15 +5770,16 @@ A#@9T
 A9ue_
 A9	uz9
 A9`V@9A
-a@9)yA
 A9`Z@9A
 __aa_
 !`aA>
 A!A3A5A;A?AYAeAkAwA{A
+	aA9?
 a*A9 
 	AA9	
 a"A9`b@9A
 a&A9`f@9A
+AA9IS
 a*A9`j@9A
 a.A9`n@9A
 a:A9`z@9A
@@ -6025,7 +6036,9 @@ actor_id
     Actual    : 
 &acute;
 a_d2i_fp.c
+	Ad9)
 	AD9	
+	Ad9I
 AdapterDescription
 adaptive_centering
 adaptive_threshold
@@ -6347,6 +6360,7 @@ aj@9A
 aJ@9A
 @AJB<
 aju8"
+	aK9)
 akamai
 Akbank
 akid mismatch
@@ -6454,7 +6468,6 @@ amtrecurring
 +aN{+!
 an@9A
 aN@9A
-	AN9I
 "(aNa(a
 #(aNA(a
 analog_emulation_duty_cycle_pct
@@ -6533,7 +6546,6 @@ Any language
 anyPolicy
 ANY PRIVATE KEY
 Any Purpose
-	AO9	
 a_object.c
 aOnly return results after time. Min value is 1. (seconds since epoch January 1st, 1970 Unix Time)"u
 AOwned apps that friends hadn't played for a while, but are again.
@@ -6915,11 +6927,11 @@ App %u updates now enabled
 AppWorkshop
  a protocol 
 A protocol message was rejected because it was too big (more than 
-a#q\.
 =_A@q(+
 *?A@q
 A\@Q!`
 ?A@q(7
+	aq9	
 (a	Qh
 A@qH7
 A@qI7
@@ -6931,7 +6943,6 @@ a(@Q! ?Q?
 A@qVc"
 ar@9A
 aR@9A
-	ar9I
 arabic
 ar_AE
 archiveCutoff
@@ -9559,6 +9570,7 @@ B@9	A
 B@9A1
 B9A D9
 b*@9B
+#B9BW
 b@9H	
 'B9h	
 B9h>@
@@ -9786,6 +9798,7 @@ B"`b	)(!
 bB"`3
 "`bB303
 BB4!!
+bB@9!G
 B#B)B/BCBSBUB[BaBsB}B
 bbc.co.uk
 bbcode_format
@@ -9963,8 +9976,9 @@ bhb8"
 bHb8c
 Bh;+j
 BHost name of server to which file should be uploaded via HTTP PUT.
-Bhs8! 
+Bhs8! ,
 @bHttpClientRecordHostnameDimension
+Bhv8+u
 B)hZA
 Bib81
 BIGNUM
@@ -10898,10 +10912,9 @@ C77nYmm
 (c@9	
 c>@9 
 C@9`"@
-C@96~
 C9an@
 c@9bW
-c@9BX
+c@9bX
 C@9bX
 c@9bY
 c@9BY
@@ -10911,10 +10924,11 @@ C9fj@
 c@9H!
 (C@9h
 C@9h	
-c@9iv@
+c@9iz@
 c@9_!+k`
 )!C9l
 C9)+P
+C@9V~
 C@9"W
 C} A!
 (cA9?
@@ -11469,10 +11483,13 @@ CAutoCloudManager::BYldWriteLastSessionFile
 CAutoCloudManager::YldBuildSavedSessionFilesList
 CAutoCloudManager::YldGetLastSessionAccountID
 CAutoCloudManager::YldSwapUserLocalFiles
-CAyBW
-cAyBZ
+CAy"[
+CAybW
+cAybZ
+CAy"W
 c!!B0
 CB4cJQlAc
+cB9bW
 cB9BW
 cB9bZ
 cB9BZ
@@ -13432,6 +13449,7 @@ Chunks out of order for %s
 Chunks should be compressed during depot building
 chunkstores
 chunk timeout
+chv82
 *cib8
 -;-C-I-M-a-e-q-
 CInfluxClient::SendCurrentBatchAsync
@@ -13532,7 +13550,7 @@ cityname_loginattempt
 cj 8_@
 cj!8_@
 cj"8?@
-cj"8\C
+cj"8|B
 cjb8d
 cjb8dj"8d
 cjf8d
@@ -13585,7 +13603,6 @@ CKeyValuesSystem::AddStringToPool: key name too long (%u chars)
 CKeyValuesSystem::AddStringToPool: out of memory
 CKeyValuesSystem::AddStringToPool: running out of memory (%u bytes left)
 \C.KK1Kbz
-'C),L
 c@L@A
 Claiming protocol V%u now, but earlier was using V%u
 claim_membership
@@ -13769,6 +13786,7 @@ CListHash::BLoadFromDisk: Could not load file %s into buffer.
 CListHash::BLoadFromDisk: Could not parse KeyValues file %s.
 CListHash::BSaveToDisk: Could not serialize KeyValues file.
 CListHash::BSaveToDisk: Could not write file %s.
+'C)LL
 CLoadBufferFromDiskWorkItem
 CLoadBufferFromDiskWorkItem::ThreadProcess
 CLoadFileContentsJob::ThreadedLoadFile
@@ -16835,8 +16853,6 @@ CXInputSteamMemStream::SetDeviceType(): Passed an invalid type: %d
 c@y1z
 -cybercafe
 Cyber cafe accounts can't purchase
-c@ybZ
-C@ybZ
 cycle
 Cycle detected in trust chain!  (Cert for key %llu, signed by CA key %llu)
 ^C)yhi
@@ -17880,7 +17896,6 @@ dlsym@@LIBC
 DL_UNLOAD
 %d_*.manifest
 dmdName
-@}DMM
 dmp1 not congruent to d
 dmq1 not congruent to d
  %d%n %n
@@ -19422,7 +19437,6 @@ EPurchaseResultDetail
 EPurchaseStatus
 EQUALS
 equipped_flags
-	er9I
 Erase all write feature report failed
 Erase page write feature report failed
 e_rc2.c
@@ -20306,6 +20320,7 @@ F@9?a
 	*F9A
 f&@9c"@9
 f@9`f
+F9t"%
 \|FA@
 facebook.com
 facebook_id
@@ -21341,7 +21356,6 @@ g6`Z@
 G6`Z@
 @=g8&
 (g@9(
-G99{A
 $G9	(G9
 (g@9h
 gameaction
@@ -22624,15 +22638,15 @@ H07iR@9IJ87iV@9
 h~0Q.
 H*0"ZOW
 <h1>%s</h1>
-h2@9)	@
+h2@9)
 h2\9`
+h2@9)}F
 h2@9h
 h2\9H
 h2\9ij
-h2@9)uF
 h2C9h
 h2D9H
-h2F9IK
+h2F9iK
 h2@)J
 h2j9H
 h2R9h
@@ -22742,8 +22756,6 @@ h#8Jh#8
 `h`8@x`x
 *h^@9
 h^{9(
-h"[9(
-h"]9(
 h"@9(
 h"@9)
 h@9!`
@@ -22751,11 +22763,10 @@ h&@9(
 H@94H@9
 h"@96
 ?h98a
-*h>[9h
+*h^[9h
+h^[9h
 h~@9h
-h>[9h
 h'@9h
-h"[9h
 h*@9h
 	h@9(h@9q
 H+@9i
@@ -22815,15 +22826,20 @@ hb8bF
 hb@9(
 h^B9(
 h^B9	
+hB[9(
 hB@9!
 hB@9(
 hB@9(-
 hB@9(	
 hB@9)
+hB@94G
 h"B9(a
-hB@9	F
+hB@9)F
+hB@9 G
+hB@9	G
 hb@9h
 h"B9h
+hB[9h
 hB@9h
 hB@9h"
 hB@9h%
@@ -22879,12 +22895,9 @@ $hc8D
 hc8#h 8
 hc8%jc8
 hc8/]P
-hC[9H
 hC@9H
 Hc@9H
 h&C)j^@
-hcK9h
-hcK9H
 !hcK+dbF&
 hconnection
 hcontent
@@ -23042,10 +23055,10 @@ hJ@9(
 hJ@9h
 hJ@9H
 hJ@9iB
+hjA9	x
 &H)jB@
 hJD9H
 hJG9)x
-hJG9	x
 HJh. 
 hjh8H
 hji8h
@@ -23325,7 +23338,6 @@ h~Uyh
 `Hv8a
 !Hv8b
 hv@9(
-h"V9(
 hV@9(
 hV@9a
 hv@9h
@@ -23356,6 +23368,8 @@ h*@yUV
 hZ@9(
 hZ@9a
 h~z9H
+h#Z9h
+h#Z9H
 hZ@9H
 h~z9hz:9
 hzF9H
@@ -23369,7 +23383,7 @@ hz@yH#
 	*I}{
 	*I}@
 	*I#<
-i2[9g"[9
+i2\9(]
 i2a_ACCESS_DESCRIPTION
 i2a_ASN1_INTEGER
 i2a_ASN1_OBJECT
@@ -23590,6 +23604,7 @@ i	 7I
 i)8A,
 *i(8B
 i"8b@@9!
+i)8dN'
 ?i(8h
 ?i(8h*@
 ?i(8h&
@@ -23614,14 +23629,12 @@ i+8L!
 i(8m&W
 i)8uW
 i)8uZ@
-	!i9	
 i^@9)
 i^@9	
 i~@9*
 =	I@9
 	I@9)
 i"@9	a
-i.[9bfA
 i&@9g"@9
 i&@9h"@9J!K
 i^@9i
@@ -23652,7 +23665,6 @@ iBE9I"
 iBF9(
 i*B)h
 I@BJj
-iBM9k^
 IB)Mki
 iB.yJ5
 ic8Cjc8
@@ -24033,7 +24045,6 @@ if@9i
 if@9I
 iF@9i
 iF@9I
-if@9j`
 `If a group chat is forced active (see SetAppChatRoomGroupForceActive), decrement the force count
 `If a paging cursor was used, then this will be the next cursor to use for paging through results"i
 IFCA?L
@@ -24358,6 +24369,7 @@ i <= n
 *iN@9
 iN@9)
 iN@9	
+iN[9bjA
 iN@9i
 iN@9I
 inactivation_reason
@@ -25174,6 +25186,7 @@ iqmp not inverse of q
 &iquest;
 iR@9)
 iR@9	
+iR[9gB[9
 iR@9i
 iR@9I
 IRawUDPSocket::Close
@@ -25491,15 +25504,14 @@ J#0@9&<@9
 j1@y_
 J2@@9y
 j2	)k
+j3880
 j38(cA9
 	J3p_8
-j48?i
+j48_h
 j48`k
 j48t^@
 J5JJJ}
 J5JJL}
-j68e|
-j68n}
 j68uj9
 `j78*
 j78h^
@@ -25535,6 +25547,8 @@ j`8Bh`8A
 j`8Ck`8
 j)8	d
 j)8+f
+j#8:F
+j(8gV&
 j`8`h
 j`8@h
 j!8h^
@@ -25544,12 +25558,13 @@ j(8hBE9h
 j(8hVq
 j`8!i 8
 j{8	i;8{
+j*8JX
 j)8kj*
+j(8kS
 j*8kV
 j 8m	
-j$8Rb
+j$8ra
 j`8s:
-j*8*X
 j(8`Z
 j(8(Z@
 `j@9 
@@ -25717,10 +25732,10 @@ JJ5Jj
   JJ5Jj
  JJ5Jjj
  JJ5JJj
-jj)8`
 J`j"8
 J`j$8
 Jj8_)
+jj)8k
 jj,8k>9
 jj)8k.9
 	Jj*@9f
@@ -25930,7 +25945,7 @@ k@9(
 K%@9+
 _k98#
 [k98@
-k98J%
+k98U-
 K9bRB
 K9e(%
 K9hVB
@@ -28225,8 +28240,6 @@ k"	)Wy)
 _k+xJ1
 kx`xj}
 K@y(%
-k@ybZ
-K@ybZ
 Kykx)
 *kYlxm
 (kz8(
@@ -28870,8 +28883,8 @@ low-pri yield - C:/buildslave/steam_rel_alt_androidarm64/build/src/clientdll/aut
 low-pri yield - C:/buildslave/steam_rel_alt_androidarm64/build/src/clientdll/autocloud.cpp:781
 low-pri yield - C:/buildslave/steam_rel_alt_androidarm64/build/src/clientdll/clientjobbuildchunkstore.cpp:1009
 low-pri yield - C:/buildslave/steam_rel_alt_androidarm64/build/src/clientdll/clientjob.cpp:261
-low-pri yield - C:/buildslave/steam_rel_alt_androidarm64/build/src/clientdll/clientjob.cpp:314
-low-pri yield - C:/buildslave/steam_rel_alt_androidarm64/build/src/clientdll/clientjob.cpp:571
+low-pri yield - C:/buildslave/steam_rel_alt_androidarm64/build/src/clientdll/clientjob.cpp:311
+low-pri yield - C:/buildslave/steam_rel_alt_androidarm64/build/src/clientdll/clientjob.cpp:568
 low-pri yield - C:/buildslave/steam_rel_alt_androidarm64/build/src/clientdll/ClientJobRemoteStorageSync.cpp:1145
 low-pri yield - C:/buildslave/steam_rel_alt_androidarm64/build/src/clientdll/ClientJobRemoteStorageSync.cpp:758
 low-pri yield - C:/buildslave/steam_rel_alt_androidarm64/build/src/clientdll/ClientJobRemoteStorageSync.cpp:986
@@ -28914,7 +28927,6 @@ LzmaDec_DecodeToDic no progress?
 \\m\\
 m2G-k"H-iJ@
 M3fU3
-!@m9?
 "M9_;
 @`M9`
 	M@9?!
@@ -29134,7 +29146,6 @@ may_parallelize
 mb%d.bin
 m_bHavePartialMsg is true, but no receive buffer is allocated!
 m_bNeedToReconnect set to false
-MbP?D
 m_bQueueProxyDiscoveryCheckOnDispatch is expected to be windows only!
 m!C9+!
 MCheck if the given parental unlock token is correct for the logged in account
@@ -30159,12 +30170,12 @@ N3IPC17SharedObjectMutexE
 N3IPC6IEventE
 N3IPC6IMutexE
 "N!4$n
- N!@5
 n6@9m2@9
 N6/~n.
 )#N)*7@
 n8/ho8
 `n@9 
+	!n9	
 `N@9 
 N@9Ad
 N9CJobFuncs20CJobFuncsDispatchJobE
@@ -30389,7 +30400,6 @@ nextUpdate
 nextupdate before thisupdate
 +!N?G
 nGroupID
-n@=h`
 "nhF@9gJ@9eN@9
 (>nH&p
 &''Ni
@@ -31074,7 +31084,6 @@ NUT!O
 /nvidiav1/GLCache
 /nvidiav1/GLCache/%s/%s
 nvme-
-=ny#;
 n@yhf
 n@yhn
 @nyj<
@@ -31385,6 +31394,8 @@ offset
 "offset_detection_blast_radius_post
 !offset_detection_blast_radius_pre
 offset_detection_enabled
+"offset_detection_max_distance_post
+!offset_detection_max_distance_pre
  offset_detection_min_clean_chunk
 offset of file block to upload
  of the Protocol Buffer runtime library, but the installed version is 
@@ -32042,6 +32053,7 @@ P6hW@
 P6`J@
 P6`N@
 p6%pD9
+P6`R@
 P6tf@
 P6u>@
 P6u"@
@@ -32072,7 +32084,6 @@ P7)_@y)
 &P_8'0
 &P_88`_8b
 +p\8Bt
-	!p9	
 	p@9(<
 p@9)<
 ,p@90t@9Op@9Ct@9
@@ -33800,6 +33811,7 @@ q#$@9 (
 q#,@9 0
 q$ @9%(@9c
 Q)$@9&,@9c
+Q(9?a(9S
 )q@9H
 Q9h2@
 	q@9i
@@ -33811,7 +33823,6 @@ Q@9M}@
 ?@	qa
 qA3@9A
 qA7@9A
-!qA9'
 qA/@9A
 qA'@9A
 qA#@9A
@@ -33833,7 +33844,6 @@ Q-c($
 @Qc,5Qc|@
 QC-nhj
 qcRFy
-QC)Sd'
 qcStatements
 q`>D9 
 q`:D9 
@@ -33983,11 +33993,11 @@ r:
 }{))R>
 R||))
 R|)))
-r	!09
-R	!19A
 R1h58
+r	!29
 R2I_CERTPOL
 R2I_PCI
+r	!39
 R3i*8s
 r)5IJ)}
 r)5IJ*}
@@ -33995,32 +34005,26 @@ R)5IJKV
 R6hv8
 R6hx8
 R6RJR~
+r	!79
 `r@9 
-r	!=9
-r	! 9
-r	!,9'
-r	!'9
-r	!)9;}
+r	!<9]
+r	!/9
+r	!&9
 `R@9 
 R-	@9.
 R% @9
+r	!.95
 R@9Ad
 r!9h2
-r	!%9J'
 r!9uR"9h2
 r'9xDrS
-r	A09
-r	a69
-r	a 9
-r	a-9
+r	A19t
+r	a49b
 r	a?9
-r	a#9
-r	A<9
-r	A?9#~
-r	A)9%
-r	A99
-r	a$9d
-r	a(9R
+r	a*9
+r	A$9.
+r	a99e
+r	A$9v
 @Rack informing site manager of new inbound client PSK connection
 rackspace
 RackSystem
@@ -34880,7 +34884,6 @@ rFC822localPart
 rfc822Mailbox
 R##Fe
 rG9h*
-rG9)yA
 RGBA: %.2X %.2X %.2X %.2X
 rgb to gray green coefficient
 rgb to gray red coefficient
@@ -34930,14 +34933,13 @@ r	h-xj
 r	h*xJ
 R	h,xL
 r	h,x	V
-R	i5x
+R	i5x(L
 R?i(8
 R(i*8
+R(i*8*\
 R	i*8
-R(i*89T
 R(i*8h
 R*i(8h*@
-R	i*8#T
 rich_presence
 RichPresence
 rich_presence_kv
@@ -35092,6 +35094,7 @@ RpE@)`	@
 RPip8
 rPipxOiox
 RPjpx
+R	Q19a
 RR|))
 RRecords a serial number and the calling user's account info for warranty purposes.
 rRjmx	
@@ -35275,6 +35278,7 @@ RTit8
 Rtj(x
 	rtmp_host
 rtmp_token
+R	U19
 Ru6I)
 Ruj(8
 Rujh8
@@ -35382,11 +35386,9 @@ S%8@9
 S@9(	
 S& @9
 S	(@9
-s@9bZ
 %s    %9d%9d%9d%9d%9d%9d%9d%9d%9d
 S9e(%
 S@9	i:8
-)S@9jh
 S9jZT9k
 S9v.i
 [%s] Abandoning attempt to migrate to %s, relay is shutting down soon.
@@ -36833,6 +36835,7 @@ S`i#8
 S i#8
 S@i#8
 S@I`8
+SI9"[
  siblings="%s"
 [%s] ICE failed %d %s
 [%s] ICE reports we are no longer writable
@@ -38985,6 +38988,7 @@ SteamUser019
 SteamUser020
 SteamUser021
 SteamUserBaseStorage
+SteamUserDataFolder
 STEAMUSERSTATS_INTERFACE_VERSION001
 STEAMUSERSTATS_INTERFACE_VERSION002
 STEAMUSERSTATS_INTERFACE_VERSION003
@@ -39378,7 +39382,7 @@ SXNET_it
 SXNET_new
 %s\%x%x
 sY8	5
-s@yA/
+s@ya/
 &*Syg
 S)ylx
 S)Ylx
@@ -39845,7 +39849,6 @@ T#h)8)
 T%h`8DPFy
 T$h`8EPFy
 Th^@9
-Th*[9
 Th&@9
 Th#@9	
 TH'@9(	
@@ -39872,8 +39875,6 @@ ThBA9h
 ThBB9
 ThbD9
 ThBE9
-ThbG9
-ThbG9(
 ThBG9
 ThBI9H
 ThBU9{zB
@@ -39991,6 +39992,7 @@ this version of PCRE is not compiled with PCRE_UTF8 support
 This ZeroCopyOutputStream doesn't support aliasing. Reaching here usually means a ZeroCopyOutputStream implementation bug.
 Th&J)
 Thj68
+ThJ[9
 ThJ@9
 ThJ@9(
 ThJCy
@@ -40056,6 +40058,8 @@ thumbnail_upload_token
 thumbnail_url
 thumbnail_width
 	thumbname
+Th"V9
+Th"V9(
 ThvA9
 ThvA9v
 Thvz9(
@@ -40297,7 +40301,6 @@ Tl	@9
 T#l@9B8
 T#L@9D(
 t\lHBW
-Tlibsteamclient.so.dbg
 TLii8
 Tlj28
 T!l@}"p@}#t@}!
@@ -40831,8 +40834,6 @@ TXT_DB_version
 TXT_DB_write
 T) @y
 T*	@y
-Ty`9,
-Ty 9(
 type: 
 , Type=
 Type=
@@ -40922,6 +40923,7 @@ UDP %s@%s
 u?fff?fff?r
 u?fff?fff?X
 %u frame functions of type %s:
+	ug9)
 UGCCDNReportPct
 UGCDownload
 UGCDownloadToLocation
@@ -41879,6 +41881,7 @@ V8zc5\e
 V@9('
 @V9HP
 v@9j 
+v@9J!F
 v@9O\
 VAC Admin
 vac_banned
@@ -42492,7 +42495,6 @@ Whitelist
 Who was your childhood hero?
 Why are making API calls on this connection?
 Why don't we know our install directory?
-WI9kyA
 width
 Width is too large for libpng to process pixels
 wikipedia.org
@@ -43437,13 +43439,14 @@ xzdD]
 @.y	%
 	!@y) 
 	)@y)
-y2uH=P
 @.y)5
 @y?!5k
 @y?!6ki
 y 7ib@9){(7ib@9
 @y(7@y?
 @y)	@9
+\y`9,
+\y 9(
 y@9	}
 	y@9j
 @y_!9ki
@@ -43470,7 +43473,6 @@ Yb6N4
 yB@J9b
 ybn@}B
 ybr@}B
-+@ybX
 @yc|	
 #@@yc
 Y@cloud_log
@@ -43655,7 +43657,6 @@ y)x+y
 @y		@y_
 	@y)	@y
 y	$@y
-@y)yA
 @y,!@y)	@y
 *y@y+}@y
 %YYyY
@@ -43680,7 +43681,7 @@ _ZdaPv
 _ZdlPv
 (ZdOt
 Ze2Zh@
-zE9)M
+zE9)M$
 )\ZEo^m/
 zero length keyword
 Zero length keyword
