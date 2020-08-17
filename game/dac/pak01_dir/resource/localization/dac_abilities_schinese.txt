@@ -32,7 +32,7 @@
 
 		//WINDRUNNER
 		"dac_ability_windrunner_powershot"										"强力击"
-		"dac_ability_windrunner_powershot_Description"							"风行者为她的弓蓄力，射出一支强力箭矢，最长可蓄力 {s:castPoint} 秒，造成最多 {s:powershot_damage} 伤害。强力击每击中一名敌人，箭矢的伤害都会降低 {s:damage_reduction}%。"
+		"dac_ability_windrunner_powershot_Description"							"风行者为她的弓蓄力，射出一支强力箭矢，最长可蓄力 {s:castPoint} 秒，造成最多 {s:powershot_damage} 伤害。强力击每击中一名敌人，箭矢的伤害都会降低 {s:damage_reduction}%。达到三星时，风行者开始为她的弓蓄力时，获得 {s:evasion}% 闪避，并对魔法免疫，持续 {s:evasion_duration} 秒。"
 		"dac_ability_windrunner_powershot_Lore"									"我行走江湖，交友广阔，需要帮助时不愁找不到人。- <i>江湖游历者阿任</i>"
 
 		//WITCHDOCTOR
@@ -366,7 +366,7 @@
 		
 		//BLOODSEEKER
 		"dac_ability_bloodseeker_blood_rage"									"血怒"
-		"dac_ability_bloodseeker_blood_rage_Description"						"被动：敌人生命值降低时，血魔获得攻击速度加成，最多可在剩余 {s:min_health_pct}% 生命值时获得 {s:attack_speed_bonus_max} 攻击速度加成。<br><br>血魔每击杀一个目标，就获得他们最大生命值的 {s:heal_pct}%。"
+		"dac_ability_bloodseeker_blood_rage_Description"						"被动：敌人生命值降低时，血魔获得攻击速度加成，最多可在剩余 {s:min_health_pct}% 生命值时获得 {s:attack_speed_bonus_max} 攻击速度加成。<br><br>血魔每击杀一个目标，就获得他们最大生命值的 {s:heal_pct}%。达到三星时，当任意敌人在血魔周围 {s:radius} 格内死亡，就会触发此效果。"
 		"dac_ability_bloodseeker_blood_rage_Lore"								"要说我干这一行学到了什么，那就是人人嗜血。雇用这个家伙吧。- <i>果断的煽动者格瑞克</i>"
 		
 		//ARC WARDEN
@@ -376,7 +376,7 @@
 		
 		//ARC WARDEN
 		"dac_ability_arc_warden_tempest_double_no_items"						"风暴双雄"
-		"dac_ability_arc_warden_tempest_double_no_items_Description"			"天穹守望者自我复制，复制体具有当前相同生命值。复制体造成的伤害减少 {s:clone_dmg_reduction}%。"
+		"dac_ability_arc_warden_tempest_double_no_items_Description"			"天穹守望者自我复制，复制体具有和当前相同的生命值。复制体造成的伤害减少 {s:clone_dmg_reduction}%，且每有一个复制体，该复制体获得的魔法值就减少 {s:clone_mana_pct_loss_per}%（以乘数叠加）。达到三星时，复制体还会复制天穹守望者的物品。"
 		"dac_ability_arc_warden_tempest_double_no_items_Lore"					"他带来了造物的奥秘。- <i>隐秘的预言家塔拉什</i>"
 
 		//MIRANA
@@ -471,7 +471,7 @@
 		"dac_ability_nyx_assassin_spiked_carapace_lore"								"正确的用词是节肢动物。- <i>注意细节的葵艾特</i>"
 
 		"dac_ability_nyx_assassin_vendetta"											"复仇"
-		"dac_ability_nyx_assassin_vendetta_description"								"被动：在传送以对单位进行攻击后，司夜刺客下次攻击时会造成 {s:bonus_damage} 伤害加成，并对敌人施加破坏效果，持续 {s:break_duration} 秒，还使所有被动效果失效。"
+		"dac_ability_nyx_assassin_vendetta_description"								"被动：在传送以对单位进行攻击后，司夜刺客下次攻击时会造成 {s:bonus_damage} 伤害加成，并对敌人施加破坏效果，持续 {s:break_duration} 秒，还使所有被动效果失效。达到三星时，司夜刺客还会在 {s:hits_to_trigger} 次连续攻击后施加复仇。如果复仇由于传送而触发，则计数会重置。"
 		"dac_ability_nyx_assassin_vendetta_lore"									"管它是昆虫还是节肢动物呢。重点是我需要他帮我杀死某个人……你到底能不能联系到他？- <i>欧尼亚并不喜欢被别人纠正</i>"
 
 		// WEAVER
@@ -494,7 +494,7 @@
 		"dac_ability_wisp_tether_lore"												"<i>恩诺目不转睛盯着艾欧</i>"
 
 		"dac_ability_wisp_relocate"													"降临"
-		"dac_ability_wisp_relocate_description"										"艾欧传送离开 {s:relocate_time_away} 秒，使一名死亡的英雄复活。两个单位满血返回且所有负面效果均已净化。达到三星时，艾欧还会重置死亡英雄的冷却时间。"
+		"dac_ability_wisp_relocate_description"										"艾欧传送离开 {s:relocate_time_away} 秒，使一名死亡的英雄复活。两个单位满血返回且所有负面效果均已净化。达到三星时，艾欧还会重置该英雄的冷却时间。"
 		"dac_ability_wisp_relocate_lore"											"<i>艾欧也死盯回去</i>"
 
 		// BRISTLEBACK	
@@ -550,7 +550,7 @@
 
 		// GRANNY LIZARD
 		"dac_ability_granny_lizard_shotgun_blast"									"电光石火"
-		"dac_ability_granny_lizard_shotgun_blast_description"						"电炎绝手在 4 次基本攻击之后准备好霰弹枪，在扇形区域内射击附近的敌人，造成 {s:blast_damage} 伤害，并使受影响单位的攻击速度降低 {s:blast_bonus_attack_speed}%。"
+		"dac_ability_granny_lizard_shotgun_blast_description"						"电炎绝手在 4 次基本攻击之后准备好霰弹枪，在扇形区域内射击附近的敌人，造成 {s:blast_damage} 伤害，并使受影响单位的攻击速度降低 {s:blast_bonus_attack_speed}%。达到三星时，受影响单位还会失去 {s:blast_armor_loss} 护甲值。效果持续 {s:debuff_duration} 秒。"
 		"dac_ability_granny_lizard_shotgun_blast_lore"								"基恩人总是对战争如此着迷，而战争是我的惯用手段了。也许生意找上门了。- <i>天使投资人葵艾特</i>"
 
 		"dac_ability_granny_lizard_bazooka"											"蜥蜴绝吻"
@@ -664,30 +664,138 @@
 		"dac_ability_3star"															"三星效果"
 
 		"dac_ability_warlock_3star"													"术士三星效果"
-		"dac_ability_warlock_3star_Description"										"达到三星时，只要术士仍然存活，就会阻止友方恶魔在施放技能时沉默彼此。"
+		"dac_ability_warlock_3star_Description"										"只要术士仍然存活，就会阻止友方恶魔在施放技能时沉默彼此。"
 
 		"dac_ability_razor_3star"													"剃刀三星效果"
-		"dac_ability_razor_3star_Description"										"达到三星时，剃刀每次攻击一名敌人，就会窃取 {s:stolen_dmg} 攻击伤害，最多 {s:max_stacks} 次。当更换目标时，会为剃刀重置，但不会为敌人重置。"
+		"dac_ability_razor_3star_Description"										"剃刀获得静电连接。剃刀每次攻击一名敌人，就会窃取 {s:stolen_dmg} 攻击伤害，最多 {s:max_stacks} 次。当更换目标时，会为剃刀重置，但不会为敌人重置。"
 
 		"dac_ability_chaos_knight_3star"											"混沌骑士三星效果"
-		"dac_ability_chaos_knight_3star_Description"								"达到三星时，只要混沌骑士仍然存活，其友方骑士总是算作和另外一名友方骑士毗邻。"
+		"dac_ability_chaos_knight_3star_Description"								"只要混沌骑士仍然存活，其友方骑士总是算作和另外一名友方骑士毗邻。"
 
 		"dac_ability_crystal_maiden_3star"											"冰晶圣女三星效果"
-		"dac_ability_crystal_maiden_3star_Description"								"达到三星时，只要冰晶圣女仍然存活，所有友军的冷却时间减少 {s:cooldown_reduction}%。"
+		"dac_ability_crystal_maiden_3star_Description"								"只要冰晶圣女仍然存活，所有友军的冷却时间减少 {s:cooldown_reduction}%。"
 
 		"dac_ability_terrorblade_3star"												"恐怖利刃三星效果"
-		"dac_ability_terrorblade_3star_Description"									"达到三星时，恐怖利刃对敌方恶魔造成 +{s:damage_bonus_pct}% 的纯粹伤害。"
+		"dac_ability_terrorblade_3star_Description"									"恐怖利刃可以召唤邪恶的能量，相对敌方恶魔获得 +{s:damage_bonus_pct}% 纯粹伤害。每次施法，加成持续 {s:duration} 秒。"
 
 		"dac_ability_tiny_3star"													"小小三星效果"
-		"dac_ability_tiny_3star_Description"										"达到三星时，小小每投掷一名敌人，体型就会变大，并获得 +{s:bonus_damage} 攻击伤害和 +{s:bonus_armor} 护甲值，但会失去 {s:aspd_loss} 攻击速度，最多 {s:max_stacks} 次。"
+		"dac_ability_tiny_3star_Description"										"小小每投掷一名敌人，体型就会变大，并获得 +{s:bonus_damage} 攻击伤害和 +{s:bonus_armor} 护甲值，但会失去 {s:aspd_loss} 攻击速度，最多 {s:max_stacks} 次。"
 
 		"dac_ability_luna_3star"													"露娜三星效果"
-		"dac_ability_luna_3star_Description"										"达到三星时，露娜获得月蚀。在露娜需要帮助时，赛莉蒙妮遮蔽露娜周围半径 {s:radius} 格内的光芒，并召唤 {s:beams} 道月能的光束打击敌人，每 {s:beam_interval} 秒一道，每道光束造成 {s:beam_damage} 伤害，并眩晕敌人 {s:beam_stun} 秒，每个敌方单位最多 {s:hit_count} 道光束。"
+		"dac_ability_luna_3star_Description"										"露娜获得月蚀。在露娜需要帮助时，赛莉蒙妮遮蔽露娜周围半径 {s:radius} 格内的光芒，并召唤 {s:beams} 道月能的光束打击敌人，每 {s:beam_interval} 秒一道，每道光束造成 {s:beam_damage} 伤害，并眩晕敌人 {s:beam_stun} 秒，每个敌方单位最多 {s:hit_count} 道光束。"
 
-		"dac_ability_dazzle_3star"													"戴泽三星特效"
-		"dac_ability_dazzle_3star_Description"										"达到三星时，戴泽给最多 {s:never_die_range} 格内的所有友方单位献上薄葬。所有被施放了薄葬的单位在受到致命一击时，可以额外存活 {s:never_die_duration} 秒。"
+		"dac_ability_dazzle_3star"													"戴泽三星效果"
+		"dac_ability_dazzle_3star_Description"										"戴泽给最多 {s:never_die_range} 格内的所有友方单位献上薄葬。所有被施放了薄葬的单位在受到致命一击时，可以额外存活 {s:never_die_duration} 秒。"
 
-		"dac_ability_broodmother_3star"												"育母蜘蛛三星特效"
-		"dac_ability_broodmother_3star_Description"									"达到三星时，只要育母蜘蛛仍然存活，会使所有友方蜘蛛幼虫无懈可击。"
+		"dac_ability_broodmother_3star"												"育母蜘蛛三星效果"
+		"dac_ability_broodmother_3star_Description"									"只要育母蜘蛛仍然存活，会使所有友方蜘蛛幼虫无懈可击。"
+
+		"dac_ability_pudge_3star"													"帕吉三星效果"
+		"dac_ability_pudge_3star_Description"										"帕吉变成腐肉堆积，并且每有一名敌人在其周围 {s:radius} 格内死亡时，获得 {s:bonus_health_per_death} 最大生命值和 {s:magical_resistance}% 魔法抗性。"
+
+		"dac_ability_viper_3star"													"冥界亚龙三星效果"
+		"dac_ability_viper_3star_Description"										"冥界亚龙每 {s:num_attacks} 次攻击进行一次蝮蛇突袭。敌方单位每秒承受 {s:damage} 伤害并失去 {s:bonus_movement_speed}% 移动速度和 {s:bonus_attack_speed} 攻击速度，且速度的放缓在 {s:debuff_duration} 秒的持续时间内逐渐减弱。"
+
+		"dac_ability_beastmaster_3star"												"兽王三星效果"
+		"dac_ability_beastmaster_3star_Description"									"兽王所承受来自受到召唤的单位的伤害减少 {s:damage_reduction}%，并对其所有魔法效果免疫。"
+
+		"dac_ability_juggernaut_3star"												"主宰三星效果"
+		"dac_ability_juggernaut_3star_Description"									"主宰获得剑舞：每次攻击有 {s:crit_chance}% 几率用暴击造成 {s:crit_bonus}% 伤害。"
+
+		"dac_ability_queenofpain_3star"												"痛苦女王三星效果"
+		"dac_ability_queenofpain_3star_Description"									"痛苦女王迷惑临近敌人，使其有 {s:evasion}% 几率躲避周围最多 {s:radius} 格内敌人的攻击。"
+
+		"dac_ability_drow_ranger_3star"												"卓尔游侠三星效果"
+		"dac_ability_drow_ranger_3star_Description"									"卓尔游侠的箭矢变为霜冻之箭。这种箭会减缓被击中单位 {s:move_speed_loss}% 的移动速度和 {s:attack_speed_loss} 的攻击速度。此效果持续 {s:slow_duration} 秒。"
+
+		"dac_ability_abaddon_3star"													"亚巴顿三星效果"
+		"dac_ability_abaddon_3star_Description"										"亚巴顿获得将魔霭诅咒施加给其攻击的敌人的技能。一旦亚巴顿连续攻击同一个敌方单位 {s:min_stacks} 次，该单位就被沉默，持续 {s:silence_duration} 秒，且亚巴顿相对该敌人获得 +{s:attack_speed} 攻击速度。每额外击中敌人一次就会刷新，但如果亚巴顿改变目标，则从 0 次攻击重新开始。"
+
+		"dac_ability_bloodseeker_3star"												"血魔三星效果"
+		"dac_ability_bloodseeker_3star_Description"									"如果当前有有效的刺客联盟，则血魔获得联盟所在等级带来的暴击加成。"
+
+		"dac_ability_morphling_3star"												"变体精灵三星效果"
+		"dac_ability_morphling_3star_Description"									"变体精灵就像敌方统御者一样，获得所有有效的敌方联盟的战斗中加成。"
+
+		"dac_ability_shadow_fiend_3star"											"影魔三星效果"
+		"dac_ability_Shadow_fiend_3star_Description"								"影魔获得魔王降临。由于影魔的恐怖降临，周围 {s:radius} 格内的敌人护甲值 -{s:armor_reduction}。"
+
+		"dac_ability_magnataur_3star"												"马格纳斯三星效果"
+		"dac_ability_magnataur_3star_Description"									"马格纳斯获得两极反转。施放时，周围 {s:radius} 格内的敌人受到 {s:damage} 伤害并被眩晕，持续 {s:duration} 秒。"
+
+		"dac_ability_arc_warden_3star"												"天穹守望者三星效果"
+		"dac_ability_arc_warden_3star_Description"									"风暴双雄的复制体复制天穹守望者的物品。"
+
+		"dac_ability_bat_rider_3star"												"蝙蝠骑士三星效果"
+		"dac_ability_bat_rider_3star_Description"									"粘性燃油使敌人着火。查看技能以了解详情。"
+
+		"dac_ability_nyx_assassin_3star"											"司夜刺客三星效果"
+		"dac_ability_nyx_assassin_3star_Description"								"复仇可以更频繁地施放。查看技能以了解详情。"
+
+		"dac_ability_shadow_demon_3star"											"暗影恶魔三星效果"
+		"dac_ability_shadow_demon_3star_Description"								"暗影恶魔向邪恶净化的目标施加灵魂猎手。查看技能以了解详情。"
+
+		"dac_ability_tusk_3star"													"巨牙海民三星效果"
+		"dac_ability_tusk_3star_Description"										"海象神拳会使敌人的速度降低持续时间更长，并导致其失去攻击速度和移动速度。详情请见技能。"
+
+		"dac_ability_venomancer_3star"												"剧毒术士三星效果"
+		"dac_ability_venomancer_3star_Description"									"瘟疫守卫对魔法伤害免疫。"
+
+		"dac_ability_weaver_3star"													"编织者三星效果"
+		"dac_ability_weaver_3star_Description"										"在缩地后，编织者的攻击会燃烧魔法值。查看技能以了解详情。"
+
+		"dac_ability_bristleback_3star"												"钢背兽三星效果"
+		"dac_ability_bristleback_3star_Description"									"刺针扫射的冷却时间大幅减少。查看技能以了解详情。"
+
+		"dac_ability_earth_spirit_3star"											"大地之灵三星效果"
+		"dac_ability_earth_spirit_3star_Description"								"地磁之握会眩晕敌人。查看技能以了解详情。"
+
+		"dac_ability_natures_prophet_3star"											"三星效果"
+		"dac_ability_natures_prophet_3star_Description"								"树精会在棋盘上的敌方一侧生成。"
+
+		"dac_ability_ogre_magi_3star"												"食人魔魔法师三星效果"
+		"dac_ability_ogre_magi_3star_Description"									"食人魔魔法师有机会使用嗜血术进行多重施法。查看技能以了解详情。"
+
+		"dac_ability_slardar_3star"													"斯拉达三星效果"
+		"dac_ability_slardar_3star_Description"										"斯拉达施放侵蚀雾霭后，还会进行重击。查看技能以了解详情。"
+
+		"dac_ability_windrunner_3star"												"风行者三星效果"
+		"dac_ability_windrunner_3star_Description"									"风行者在施放强力击时，获得闪避及魔法免疫。查看技能以了解详情。"
+
+		"dac_ability_witch_doctor_3star"											"巫医三星效果"
+		"dac_ability_witch_doctor_3star_Description"								"被麻痹药剂击中的敌人会被巫蛊咒术诅咒。查看技能以了解详情。"
+
+		"dac_ability_ember_spirit_3star"											"灰烬之灵三星效果"
+		"dac_ability_ember_spirit_3star_Description"								"无影拳的效果范围增加一倍。查看技能以了解详情。"
+
+		"dac_ability_enigma_3star"													"谜团三星效果"
+		"dac_ability_enigma_3star_Description"										"午夜凋零的效果范围增加两倍。查看技能以了解详情。"
+
+		"dac_ability_wisp_3star"													"艾欧三星效果"
+		"dac_ability_wisp_3star_Description"										"降临会重置复活英雄的冷却时间。"
+
+		"dac_ability_lycan_3star"													"狼人三星效果"
+		"dac_ability_lycan_3star_Description"										"变身会召唤更多的狼。查看技能以了解详情。"
+
+		"dac_ability_omniknight_3star"												"全知骑士三星效果"
+		"dac_ability_omniknight_3star_Description"									"洗礼的效果范围增加两倍。查看技能以了解详情。"
+
+		"dac_ability_shadow_shaman_3star"											"暗影萨满三星效果"
+		"dac_ability_shadow_shaman_3star_Description"								"暗影萨满会对群蛇守卫的目标单位使出妖术。"
+
+		"dac_ability_treant_protector_3star"										"三星效果"
+		"dac_ability_treant_protector_3star_Description"							"被寄生种子治疗的单位也获得活体护甲。查看技能以了解详情。"
+
+		"dac_ability_storm_spirit_3star"											"风暴之灵三星效果"
+		"dac_ability_storm_spirit_3star_Description"								"风暴之灵获得超负荷。施法时会产生电荷，在风暴之灵下次攻击时被释放，造成 {s:damage} 伤害，并使目标的攻击速度降低 {s:attack_speed_loss}，持续 {s:slow_duration} 秒。风暴之灵的三角攻击也算作攻击，这种情况下，所有在攻击中被风暴之灵击中的单位都会受到伤害并减速。"
+		
+		"dac_ability_legion_commander_3star"										"三星效果"
+		"dac_ability_legion_commander_3star_Description"							"决斗时，范围内的所有友军也会攻击军团指挥官的目标。"
+
+		"dac_ability_life_stealer_3star"										"噬魂鬼三星效果"
+		"dac_ability_life_stealer_3star_Description"							"噬魂鬼获得狂暴。施放时，噬魂鬼对魔法免疫，并获得 +{s:bonus_movement_speed_pct}% 移动速度和 +{S:bonus_attack_speed} 攻击速度。效果持续 {s:duration} 秒。"
+
+		"dac_ability_snapfire_3star"												"电炎绝手三星效果"
+		"dac_ability_snapfire_3star_Description"									"电光石火也会减少敌人的护甲值。查看技能以了解详情。"
 	}
 }

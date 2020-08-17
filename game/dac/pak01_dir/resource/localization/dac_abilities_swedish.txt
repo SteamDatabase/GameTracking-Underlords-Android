@@ -32,7 +32,7 @@
 
 		//WINDRUNNER
 		"dac_ability_windrunner_powershot"										"Powershot"
-		"dac_ability_windrunner_powershot_Description"							"Windranger spänner sin båge i upp till {s:castPoint} sekunder för att avfyra ett kraftigt skott som gör upp till {s:powershot_damage} i skada. För varje fiende som Powershot träffar, minskar dess skada med {s:damage_reduction} %."
+		"dac_ability_windrunner_powershot_Description"							"Windranger spänner sin båge i upp till {s:castPoint} sekunder för att avfyra ett kraftigt skott som gör upp till {s:powershot_damage} i skada. För varje fiende som Powershot träffar, minskar dess skada med {s:damage_reduction} %. Vid 3 stjärnor, när hon börjar spänna sin båge, får Windranger {s:evasion} % undvikande och blir immun mot magi. Detta varar i {s:evasion_duration} sekunder."
 		"dac_ability_windrunner_powershot_Lore"									"Jag skaffade många vänner under mina resor, och jag är inte rädd för att be dem om tjänster. – <i>Wren, världsresenär</i>"
 
 		//WITCHDOCTOR
@@ -366,7 +366,7 @@
 		
 		//BLOODSEEKER
 		"dac_ability_bloodseeker_blood_rage"									"Bloodrage"
-		"dac_ability_bloodseeker_blood_rage_Description"						"PASSIV: När Bloodseeker förlorar hälsa får han ökad attackhastighet upp till {s:attack_speed_bonus_max} som mest med {s:min_health_pct} % HP.<br><br>När han dödar återfår han {s:heal_pct} % av målets max-HP."
+		"dac_ability_bloodseeker_blood_rage_Description"						"PASSIV: När Bloodseeker förlorar hälsa får han ökad attackhastighet upp till {s:attack_speed_bonus_max} vid {s:min_health_pct} % HP.<br><br>När han dödar återfår han {s:heal_pct} % av målets max-HP. Vid 3 stjärnor sker detta när en fiende dör inom {s:radius} celler från Bloodseeker."
 		"dac_ability_bloodseeker_blood_rage_Lore"								"Om det är något jag lärt mig under min karriär är det att folk älskar blod. Anlita den här mannen. – <i>Grekk, beslutsam förespråkare</i>"
 		
 		//ARC WARDEN
@@ -376,7 +376,7 @@
 		
 		//ARC WARDEN
 		"dac_ability_arc_warden_tempest_double_no_items"						"Tempest Double"
-		"dac_ability_arc_warden_tempest_double_no_items_Description"			"Arc Warden skapar en kopia av sig själv med lika mycket HP som han själv har. Klonerna gör {s:clone_dmg_reduction}% mindre skada."
+		"dac_ability_arc_warden_tempest_double_no_items_Description"			"Arc Warden skapar en kopia av sig själv med samma hälsa som han för närvarande har. Kloner gör {s:clone_dmg_reduction} % mindre skada och får {s:clone_mana_pct_loss_per} % mindre mana per klon (staplas multiplikativt). Vid 3 stjärnor kopierar klonen också Arc Wardens föremål."
 		"dac_ability_arc_warden_tempest_double_no_items_Lore"					"Han för med sig skapelsens mysterier. – <i>Turath, kryptisk profet</i>"
 
 		//MIRANA
@@ -471,7 +471,7 @@
 		"dac_ability_nyx_assassin_spiked_carapace_lore"								"Den korrekta termen är leddjur. – <i>Quiet, perfektionist</i>"
 
 		"dac_ability_nyx_assassin_vendetta"											"Vendetta"
-		"dac_ability_nyx_assassin_vendetta_description"								"PASSIV: Nyx Assassin teleporterar och förstärker sin nästa attack, som gör {s:bonus_damage} extra skada och bryter enheten i {s:break_duration} sekunder, vilket inaktiverar alla dess passiva effekter."
+		"dac_ability_nyx_assassin_vendetta_description"								"PASSIV: Efter att ha teleporterat för att attackera en enhet, gör Nyx Assassin {s:bonus_damage} bonusskada under sin nästa attack och applicerar Break på fienden i {s:break_duration}, vilket inaktiverar alla passiva effekter. Vid 3 stjärnor applicerar Nyx Assassin också Vendetta efter {s:hits_to_trigger} stycken successiva attacker. Detta nollställs om Vendetta utlöses på grund av teleportering."
 		"dac_ability_nyx_assassin_vendetta_lore"									"Insekt. Leddjur. Vem bryr sig? Poängen är att jag måste få honom att döda någon ... kan du få tag i honom eller inte? – <i>O'nia gillar inte att bli rättad</i>"
 
 		// WEAVER
@@ -550,7 +550,7 @@
 
 		// GRANNY LIZARD
 		"dac_ability_granny_lizard_shotgun_blast"									"Ol' Scatterblast"
-		"dac_ability_granny_lizard_shotgun_blast_description"						"Efter 4 vanliga attacker laddar Snapfire sin hagelbössa och skjuter mot en fiende i närheten inom 2 rutor. Skottet gör {s:blast_damage} skada inom en kon som saktar ned påverkade enheter med {s:blast_bonus_attack_speed} %"
+		"dac_ability_granny_lizard_shotgun_blast_description"						"Efter 4 vanliga attacker laddar Snapfire sin hagelbössa och skjuter mot en fiende i närheten. Skottet gör {s:blast_damage} skada inom en kon som saktar ned påverkade enheters attacker med {s:blast_bonus_attack_speed}. Vid 3 stjärnor förlorar påverkade enheter också {s:blast_armor_loss} i skydd. Effekten varar i {s:debuff_duration} sekunder."
 		"dac_ability_granny_lizard_shotgun_blast_lore"								"Keens har alltid haft ett fascinerande sinne för krigföring, och krigföring är mitt levebröd. Vi kanske kan göra affärer. –<i>Quiet, affärsängel</i>"
 
 		"dac_ability_granny_lizard_bazooka"											"Mortimer Kisses"
@@ -664,30 +664,138 @@
 		"dac_ability_3star"															"Trestjärnig effekt"
 
 		"dac_ability_warlock_3star"													"Warlock – Trestjärnig effekt"
-		"dac_ability_warlock_3star_Description"										"Vid tre stjärnor och vid liv förhindrar Warlock allierade demoner från att tysta varandra när de använder förmågor."
+		"dac_ability_warlock_3star_Description"										"Så länge Warlock är vid liv hindrar han allierade demoner från att tysta varandra när de använder förmågor."
 
 		"dac_ability_razor_3star"													"Razor – Trestjärnig effekt"
-		"dac_ability_razor_3star_Description"										"Vid tre stjärnor stjäl Razor {s:stolen_dmg} attackskada varje gång en fiende attackeras, upp till {s:max_stacks} gånger. Detta nollställs för Razor, men inte fienden, när Razor byter mål."
+		"dac_ability_razor_3star_Description"										"Razor får Static Link. Han stjäl {s:stolen_dmg} attackskada varje gång han attackerar en fiende, upp till {s:max_stacks} gånger. Detta nollställs för Razor, men inte fienden, när Razor byter mål."
 
 		"dac_ability_chaos_knight_3star"											"Chaos Knight –Trestjärnig effekt"
-		"dac_ability_chaos_knight_3star_Description"								"Om Chaos Knight har tre stjärnor och är vid liv räknas alltid en allierade riddare som intilliggande en annan allierad riddare."
+		"dac_ability_chaos_knight_3star_Description"								"En allierade riddare räknas alltid som intilliggande en annan allierad riddare så länge Chaos Knight är vid liv."
 
 		"dac_ability_crystal_maiden_3star"											"Crystal Maiden –Trestjärnig effekt"
-		"dac_ability_crystal_maiden_3star_Description"								"Vid tre stjärnor och vid liv får Crystal Maiden och alla hennes allierade sina cooldowns reducerade med {s:cooldown_reduction} %."
+		"dac_ability_crystal_maiden_3star_Description"								"Crystal Maiden och alla hennes allierade har sina cooldowns reducerade med {s:cooldown_reduction} % så länge som hon är vid liv."
 
 		"dac_ability_terrorblade_3star"												"Terrorblade –Trestjärnig effekt"
-		"dac_ability_terrorblade_3star_Description"									"Vid tre stjärnor får Terrorblade +{s:damage_bonus_pct} % ren skada mot demoner."
+		"dac_ability_terrorblade_3star_Description"									"Terrorblade kan frammana demonisk energi för att få +{s:damage_bonus_pct} % i ren skada mot fiendedemoner. Bonusen varar i {s:duration} sekunder vid varje användning."
 
 		"dac_ability_tiny_3star"													"Tiny – Trestjärnig effekt"
-		"dac_ability_tiny_3star_Description"										"Vid tre stjärnor växer Tiny i storlek varje gång han kastar en fiende och får +{s:bonus_damage} attackskada och +{s:bonus_armor} skydd, men han förlorar {s:aspd_loss} attackhastighet, upp till maximalt {s:max_stacks} gånger."
+		"dac_ability_tiny_3star_Description"										"Tiny växer i storlek varje gång han kastar en fiende och får +{s:bonus_damage} attackskada och +{s:bonus_armor} skydd, men han förlorar {s:aspd_loss} attackhastighet, upp till maximalt {s:max_stacks} gånger."
 
 		"dac_ability_luna_3star"													"Luna – Trestjärnig effekt"
-		"dac_ability_luna_3star_Description"										"Vid tre stjärnor får Luna Eclipse. När Luna är i nöd blockerar Selemene ljuset inom en radie av {s:radius} rutor runt Luna och fienderna översköljs av {s:beams} strålar med månenergi, en var {s:beam_interval} sekund, vilket gör {s:beam_damage} skada per stråle och lamslår i {s:beam_stun} sekunder, med maximalt {s:hit_count} strålar per fiendeenhet."
+		"dac_ability_luna_3star_Description"										"Luna får Eclipse. När Luna är i nöd blockerar Selemene ljuset inom en radie av {s:radius} rutor runt Luna och fienderna översköljs av {s:beams} strålar med månenergi, en var {s:beam_interval} sekund, vilket gör {s:beam_damage} skada per stråle och lamslår i {s:beam_stun} sekunder, med maximalt {s:hit_count} strålar per fiendeenhet."
 
 		"dac_ability_dazzle_3star"													"Dazzle – Trestjärnig effekt"
-		"dac_ability_dazzle_3star_Description"										"Vid tre stjärnor ger Dazzle Shallow Grave till alla allierade enheter, som är upp till {s:never_die_range} rutor bort. Alla välsignade enheter överlever i {s:never_die_duration} extra sekunder efter att ha fått en dödlig träff."
+		"dac_ability_dazzle_3star_Description"										"Dazzle ger Shallow Grave till alla allierade enheter, som är upp till {s:never_die_range} rutor bort. Alla välsignade enheter överlever i {s:never_die_duration} extra sekunder efter att ha mottagit en dödlig träff."
 
 		"dac_ability_broodmother_3star"												"Broodmother – Trestjärnig effekt"
-		"dac_ability_broodmother_3star_Description"									"Vid tre stjärnor gör en levande Broodmother alla allierade Spiderlings osårbara."
+		"dac_ability_broodmother_3star_Description"									"Broodmother gör alla allierade Spiderlings osårbara så länge hon är vid liv."
+
+		"dac_ability_pudge_3star"													"Pudge – Trestjärnig effekt"
+		"dac_ability_pudge_3star_Description"										"Pudge blir en Flesh Heap och får {s:bonus_health_per_death} max-HP och {s:magical_resistance} % magiresistens varje gång en fiende dör inom {s:radius} rutor från honom."
+
+		"dac_ability_viper_3star"													"Viper – Trestjärnig effekt"
+		"dac_ability_viper_3star_Description"										"Viper utför en Viper Strike var {s:num_attacks} attack. Fiendeenheten tar {s:damage} skada per sekund och förlorar {s:bonus_movement_speed} % i förflyttningshastighet och {s:bonus_attack_speed} i attackhastighet, vilket sakta sjunker under varaktigheten på {s:debuff_duration} sekunder."
+
+		"dac_ability_beastmaster_3star"												"Beastmaster – Trestjärnig effekt"
+		"dac_ability_beastmaster_3star_Description"									"Beastmaster mottar {s:damage_reduction} % mindre skada från framkallade enheter och är immun mot deras magiska effekter."
+
+		"dac_ability_juggernaut_3star"												"Juggernaut – Trestjärnig effekt"
+		"dac_ability_juggernaut_3star_Description"									"Juggernaut får Blade Dance och varje attack har {s:crit_chance} % chans att bli en kritisk träff som gör {s:crit_bonus} % skada."
+
+		"dac_ability_queenofpain_3star"												"Queen of Pain – Trestjärnig effekt"
+		"dac_ability_queenofpain_3star_Description"									"Queen of Pain hänför närliggande fiender vilket ger henne {s:evasion} % chans att undvika attacker från fiender upp till {s:radius} rutor bort."
+
+		"dac_ability_drow_ranger_3star"												"Drow Ranger –Trestjärnig effekt"
+		"dac_ability_drow_ranger_3star_Description"									"Drow Rangers pilar blir till frostpilar. Dessa pilar saktar ned en träffad enhets rörelser med {s:move_speed_loss} % och dess attackhastighet med {s:attack_speed_loss}. Effekten dröjer sig kvar i {s:slow_duration} sekunder."
+
+		"dac_ability_abaddon_3star"													"Abaddon – Trestjärnig effekt"
+		"dac_ability_abaddon_3star_Description"										"Abaddon får förmågan att använda Curse of Avernus på de fiender han attackerar. När Abaddon har attackerat samma fientliga enhet {s:min_stacks} gånger i rad, blir den enheten tystad i {s:silence_duration} sekunder och Abaddon får +{s:attack_speed} i attackhastighet mot enheten. Bonusen förnyas vid varje attack därefter, men börjar om från 0 attacker om Abaddon ändrar mål."
+
+		"dac_ability_bloodseeker_3star"												"Bloodseeker – Trestjärnig effekt"
+		"dac_ability_bloodseeker_3star_Description"									"Bloodseeker får samma bonus för kritisk träff som eventuell aktiv lönnmördarallians."
+
+		"dac_ability_morphling_3star"												"Morphling – Trestjärnig effekt"
+		"dac_ability_morphling_3star_Description"									"Morphling får samma bonus i strid som alla aktiva fiendeallianser, som om han vore en fientlig mästare."
+
+		"dac_ability_shadow_fiend_3star"											"Shadow Fiend – Trestjärnig effekt"
+		"dac_ability_Shadow_fiend_3star_Description"								"Shadow Fiend får Presence of the Dark Lord. Fiender inom {s:radius} rutor får -{s:armor_reduction} i skydd på grund av Shadow Fiends fruktansvärda närvaro."
+
+		"dac_ability_magnataur_3star"												"Magnus – Trestjärnig effekt"
+		"dac_ability_magnataur_3star_Description"									"Magnus får Reverse Polarity. När det används skadas fiender inom {s:radius} rutor med {s:damage} skada och de blir lamslagna i {s:duration} sekunder."
+
+		"dac_ability_arc_warden_3star"												"Arc Warden – Trestjärnig effekt"
+		"dac_ability_arc_warden_3star_Description"									"Tempest Doubles kloner kopierar Arc Wardens föremål."
+
+		"dac_ability_bat_rider_3star"												"Batrider – Trestjärnig effekt"
+		"dac_ability_bat_rider_3star_Description"									"Sticky Napalm tänder eld på fiender. Se förmågan för detaljer."
+
+		"dac_ability_nyx_assassin_3star"											"Nyx Assassin – Trestjärnig effekt"
+		"dac_ability_nyx_assassin_3star_Description"								"Vendetta kan användas oftare. Se förmågan för detaljer."
+
+		"dac_ability_shadow_demon_3star"											"Shadow Demon – Trestjärnig effekt"
+		"dac_ability_shadow_demon_3star_Description"								"Shadow Demon applicerar Soul Catcher på målet för Demonic Purge. Se förmågan för detaljer."
+
+		"dac_ability_tusk_3star"													"Tusk – Trestjärnig effekt"
+		"dac_ability_tusk_3star_Description"										"Walrus Punch saktar ned fiender längre och får dem att förlora attackhastighet såväl som förflyttningshastighet. Se förmågan för detaljer."
+
+		"dac_ability_venomancer_3star"												"Venomancer – Trestjärnig effekt"
+		"dac_ability_venomancer_3star_Description"									"Plague Wards är immuna mot magisk skada."
+
+		"dac_ability_weaver_3star"													"Weaver – Trestjärnig effekt"
+		"dac_ability_weaver_3star_Description"										"Weavers attacker bränner mana efter en Shukuchi. Se förmågan för detaljer."
+
+		"dac_ability_bristleback_3star"												"Bristleback – Trestjärnig effekt"
+		"dac_ability_bristleback_3star_Description"									"Cooldown på Quill Spray har minskats rejält. Se förmågan för detaljer."
+
+		"dac_ability_earth_spirit_3star"											"Earth Spirit – Trestjärnig effekt"
+		"dac_ability_earth_spirit_3star_Description"								"Geomagnetic Grip lamslår fiender. Se förmågan för detaljer."
+
+		"dac_ability_natures_prophet_3star"											"Nature's Prophet – Trestjärnig effekt"
+		"dac_ability_natures_prophet_3star_Description"								"Treants skapas på fiendens planhalva."
+
+		"dac_ability_ogre_magi_3star"												"Ogre Magi – Trestjärnig effekt"
+		"dac_ability_ogre_magi_3star_Description"									"Ogre Magi har chansen att använda Bloodlust på ytterligare mål. Se förmågan för detaljer."
+
+		"dac_ability_slardar_3star"													"Slardar – Trestjärnig effekt"
+		"dac_ability_slardar_3star_Description"										"Slardar drämmer till sitt mål efter användning av Corrosive Haze. Se förmågan för detaljer."
+
+		"dac_ability_windrunner_3star"												"Windranger – Trestjärnig effekt"
+		"dac_ability_windrunner_3star_Description"									"Windranger får undvikande och blir immun mot magi vid användning av Powershot. Se förmågan för detaljer."
+
+		"dac_ability_witch_doctor_3star"											"Witch Doctor – Trestjärnig effekt"
+		"dac_ability_witch_doctor_3star_Description"								"Paralyzing Cask förbannar fiender som blir träffade med Maledict. Se förmågan för detaljer."
+
+		"dac_ability_ember_spirit_3star"											"Ember Spirit – Trestjärnig effekt"
+		"dac_ability_ember_spirit_3star_Description"								"Effektområdet för Sleight of Fist fördubblas. Se förmågan för detaljer."
+
+		"dac_ability_enigma_3star"													"Enigma – Trestjärnig effekt"
+		"dac_ability_enigma_3star_Description"										"Effektområdet för Midnight Pulse tredubblas. Se förmågan för detaljer."
+
+		"dac_ability_wisp_3star"													"Io – Trestjärnig effekt"
+		"dac_ability_wisp_3star_Description"										"Relocate återställer den återupplivade hjältens cooldowns."
+
+		"dac_ability_lycan_3star"													"Lycan – Trestjärnig effekt"
+		"dac_ability_lycan_3star_Description"										"Shapeshift framkallar fler vargar. Se förmågan för detaljer."
+
+		"dac_ability_omniknight_3star"												"Omniknight –Trestjärnig effekt"
+		"dac_ability_omniknight_3star_Description"									"Effektområdet för Purification tredubblas. Se förmågan för detaljer."
+
+		"dac_ability_shadow_shaman_3star"											"Shadow Shaman – Trestjärnig effekt"
+		"dac_ability_shadow_shaman_3star_Description"								"Shadow Shaman förtrollar målet för Mass Serpent Ward."
+
+		"dac_ability_treant_protector_3star"										"Treant Protector – Trestjärnig effekt"
+		"dac_ability_treant_protector_3star_Description"							"Enheter som helas med Leech Seed får även Living Armor. Se förmågan för detaljer."
+
+		"dac_ability_storm_spirit_3star"											"Storm Spirit – Trestjärnig effekt"
+		"dac_ability_storm_spirit_3star_Description"								"Storm Spirit får Overload. När besvärjelsen kastas skapas en elektrisk laddning som exploderar under Storms nästa attack och gör {s:damage} skada samt saktar ned målets attackhastighet med {s:attack_speed_loss} i {s:slow_duration} sekunder. En triangulär attack av Storm räknas som en attack, och alla enheter som Storm träffar i attacken tar skada och saktas ned."
+		
+		"dac_ability_legion_commander_3star"										"Trestjärnig effekt"
+		"dac_ability_legion_commander_3star_Description"							"Alla allierade i närheten attackerar också Legion Commander mål under en Duel."
+
+		"dac_ability_life_stealer_3star"										"Lifestealer – Trestjärnig effekt"
+		"dac_ability_life_stealer_3star_Description"							"Lifestealer får Rage. När den används blir Lifestealer immun mot magi och får +{s:bonus_movement_speed_pct} % förflyttningshastighet och +{S:bonus_attack_speed} attackhastighet. Effekten varar i {s:duration} sekunder."
+
+		"dac_ability_snapfire_3star"												"Snapfire – Trestjärnig effekt"
+		"dac_ability_snapfire_3star_Description"									"Ol' Scatterblast reducerar också fiendens skydd. Se förmågan för detaljer."
 	}
 }

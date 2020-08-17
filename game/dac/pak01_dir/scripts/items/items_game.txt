@@ -13333,83 +13333,145 @@
 		"12687"
 		{
 			"name"		"Weekly Challenge Reward 6"
-			"prefab"		"default"
+			"prefab"		"player_yo"
 			"creation_date"		"2020-01-27"
 			"item_name"		"#DAC_Item_WeeklyChallengeReward6Name"
 			"item_description"		"#DAC_Item_WeeklyChallengeReward6Description"
 			"event_id"		"2"
+			"image_inventory"		"weekly/yos/yo_newsie.psd"
+			"panorama_class"		"yo_newsie"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"sound"
+					"asset"		"DAC_UI.SocialYo"
+					"modifier"		"UL_UI.Social_Newsie_Yo"
+				}
+				"asset_modifier1"
+				{
+					"type"		"particle"
+					"asset"		"particles/fluff/yo/fluff_yo.vpcf"
+					"modifier"		"econ/weekly/particles/yos/weekly_yo_01.vpcf"
+				}
+			}
 		}
 		"12688"
 		{
 			"name"		"Weekly Challenge Reward 7"
-			"prefab"		"default"
+			"prefab"		"player_yo"
 			"creation_date"		"2020-01-27"
 			"item_name"		"#DAC_Item_WeeklyChallengeReward7Name"
 			"item_description"		"#DAC_Item_WeeklyChallengeReward7Description"
 			"event_id"		"2"
+			"image_inventory"		"weekly/yos/yo_newspaper.psd"
+			"panorama_class"		"yo_newspaper"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"sound"
+					"asset"		"DAC_UI.SocialYo"
+					"modifier"		"UL_UI.Social_Newspaper_Yo"
+				}
+				"asset_modifier1"
+				{
+					"type"		"particle"
+					"asset"		"particles/fluff/yo/fluff_yo.vpcf"
+					"modifier"		"econ/weekly/particles/yos/weekly_yo_02.vpcf"
+				}
+			}
 		}
 		"12689"
 		{
 			"name"		"Weekly Challenge Reward 8"
-			"prefab"		"default"
+			"prefab"		"board_spray"
 			"creation_date"		"2020-01-27"
 			"item_name"		"#DAC_Item_WeeklyChallengeReward8Name"
 			"item_description"		"#DAC_Item_WeeklyChallengeReward8Description"
+			"image_inventory"		"battle_pass/bp1/items/board_spray_weekly_qop"
 			"event_id"		"2"
+			"visuals"
+			{
+				"asset_modifier0"
+				{
+					"type"		"particle"
+					"asset"		"particles/board_sprays/boardspray_base.vpcf"
+					"modifier"		"econ/s1/particles/board_sprays/weekly_spray_qop.vpcf"
+				}
+			}
 		}
 		"12690"
 		{
 			"name"		"Weekly Challenge Reward 9"
-			"prefab"		"default"
+			"prefab"		"wanted_poster"
+			"panorama_class"		"wanted_poster"
 			"creation_date"		"2020-01-27"
 			"item_name"		"#DAC_Item_WeeklyChallengeReward9Name"
 			"item_description"		"#DAC_Item_WeeklyChallengeReward9Description"
+			"image_inventory"		"battle_pass/weekly/posters/disguises/jos_disguise_04.psd"
+			"image_inventory_overlay"		"battle_pass/weekly/posters/disguises/jos_disguise_04.psd"
 			"event_id"		"2"
 		}
 		"12691"
 		{
 			"name"		"Weekly Challenge Reward 10"
-			"prefab"		"default"
+			"prefab"		"wanted_poster"
+			"panorama_class"		"wanted_poster"
 			"creation_date"		"2020-01-27"
 			"item_name"		"#DAC_Item_WeeklyChallengeReward10Name"
 			"item_description"		"#DAC_Item_WeeklyChallengeReward10Description"
 			"event_id"		"2"
+			"image_inventory"		"battle_pass/weekly/posters/disguises/ilya_disguise_04.psd"
+			"image_inventory_overlay"		"battle_pass/weekly/posters/disguises/ilya_disguise_04.psd"
 		}
 		"12692"
 		{
 			"name"		"Weekly Challenge Reward 11"
-			"prefab"		"default"
+			"prefab"		"wanted_poster"
+			"panorama_class"		"wanted_poster"
 			"creation_date"		"2020-01-27"
 			"item_name"		"#DAC_Item_WeeklyChallengeReward11Name"
 			"item_description"		"#DAC_Item_WeeklyChallengeReward11Description"
 			"event_id"		"2"
+			"image_inventory"		"battle_pass/weekly/posters/disguises/ilya_disguise_03.psd"
+			"image_inventory_overlay"		"battle_pass/weekly/posters/disguises/ilya_disguise_03.psd"
 		}
 		"12693"
 		{
 			"name"		"Weekly Challenge Reward 12"
-			"prefab"		"default"
+			"prefab"		"wanted_poster"
+			"panorama_class"		"wanted_poster"
 			"creation_date"		"2020-01-27"
 			"item_name"		"#DAC_Item_WeeklyChallengeReward12Name"
 			"item_description"		"#DAC_Item_WeeklyChallengeReward12Description"
 			"event_id"		"2"
+			"image_inventory"		"battle_pass/weekly/posters/disguises/ilya_disguise_02.psd"
+			"image_inventory_overlay"		"battle_pass/weekly/posters/disguises/ilya_disguise_02.psd"
 		}
 		"12694"
 		{
 			"name"		"Weekly Challenge Reward 13"
-			"prefab"		"default"
+			"prefab"		"wanted_poster"
+			"panorama_class"		"wanted_poster"
 			"creation_date"		"2020-01-27"
 			"item_name"		"#DAC_Item_WeeklyChallengeReward13Name"
 			"item_description"		"#DAC_Item_WeeklyChallengeReward13Description"
 			"event_id"		"2"
+			"image_inventory"		"battle_pass/weekly/posters/disguises/jos_disguise_01.psd"
+			"image_inventory_overlay"		"battle_pass/weekly/posters/disguises/jos_disguise_01.psd"
 		}
 		"12695"
 		{
 			"name"		"Weekly Challenge Reward 14"
-			"prefab"		"default"
+			"prefab"		"wanted_poster"
+			"panorama_class"		"wanted_poster"
 			"creation_date"		"2020-01-27"
 			"item_name"		"#DAC_Item_WeeklyChallengeReward14Name"
 			"item_description"		"#DAC_Item_WeeklyChallengeReward14Description"
 			"event_id"		"2"
+			"image_inventory"		"battle_pass/weekly/posters/disguises/jos_disguise_03.psd"
+			"image_inventory_overlay"		"battle_pass/weekly/posters/disguises/jos_disguise_03.psd"
 		}
 		"12901"
 		{

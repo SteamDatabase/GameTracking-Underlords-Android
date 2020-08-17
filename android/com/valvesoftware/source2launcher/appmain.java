@@ -8,11 +8,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Display;
 import android.view.WindowManager;
+import com.valvesoftware.Activity;
 import com.valvesoftware.JNI_Environment;
 import com.valvesoftware.Resources;
-import org.libsdl.app.SDLActivity;
 
-public class appmain extends SDLActivity {
+public class appmain extends Activity.SDLActivityWrapper {
     private boolean m_bFastCleanup = false;
 
     private static native void enterHibernationNative();
@@ -22,7 +22,7 @@ public class appmain extends SDLActivity {
     private static native void onDestroyNative();
 
     /* access modifiers changed from: protected */
-    public void onLaunchLauncherActivity() {
+    public void LaunchAppLauncherActivity() {
         Class cls;
         Application application = JNI_Environment.m_application;
         try {
@@ -40,9 +40,9 @@ public class appmain extends SDLActivity {
     /* access modifiers changed from: protected */
     public void onCreate(Bundle bundle) {
         this.m_bFastCleanup = false;
-        if (!((application) JNI_Environment.m_application).HasRunLauncher()) {
+        if (!application.GetInstance().HasInstallSucceeded()) {
             this.m_bFastCleanup = true;
-            onLaunchLauncherActivity();
+            LaunchAppLauncherActivity();
             try {
                 super.onCreate(bundle);
             } catch (Throwable unused) {
@@ -105,6 +105,6 @@ public class appmain extends SDLActivity {
 
     /* access modifiers changed from: protected */
     public String[] getArguments() {
-        return JNI_Environment.sm_ProgramArguments;
+        return JNI_Environment.GetProgramArguments();
     }
 }

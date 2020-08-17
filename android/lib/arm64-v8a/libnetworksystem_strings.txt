@@ -128,7 +128,6 @@ $0 to $1,
 18CPlaceholderConVar
 18CSVCMsg_HLTVStatus
 18CSVCMsg_ServerInfo
-(1;9;
 19CBidirMsg_RelayInfo
 19CCLCMsg_BaselineAck
 19CNETMsg_SignonState
@@ -243,9 +242,9 @@ $0 to $1,
 2jjj8l
 2_!(k
 2?".k
-2?k78w
-2_k88
-2?k88v
+2?k78
+2?k88
+2_k88h
 2oi-x
 2 .ProtoFlattenedSerializerField_t"!
 2@yzz@
@@ -573,6 +572,8 @@ AddDouble
 AddEnum
 AddEnumValue accepts only valid integer values: value 
 AddFloat
+Adding 0--%dms of additional latency to %g%% packets, for random reordering
+Adding additional packet lag of %dms (%dms each way), Bernoulli loss of %g%%.
 AddInt32
 AddInt64
 additionalHops
@@ -838,6 +839,7 @@ bytes.
 Byte size calculation and serialization were inconsistent.  This may indicate a bug in protocol buffers or it may be caused by concurrent modification of 
 bz@9_
 .C))}
+c2@yB
 cA9s~
 cable
 CalcDelta
@@ -1064,6 +1066,7 @@ C_INIT_VelocityFromCP
 C_INIT_VelocityFromNormal
 C_INIT_VelocityRadialRandom
 C_INIT_VelocityRandom
+cj@9B
 classes
 class_id
 class_name
@@ -1386,12 +1389,10 @@ __cxa_guard_release
 __cxa_pure_virtual
 C@y" 
 Cycle or diamond double-reference to '%s'
-c@yi	
 [+%d]
  D-	(@
-d6@y#
-d6@yc	
-d6@yC	
+d6@yc
+d6@yC
 .data
 databytes
 data_compressed
@@ -1947,7 +1948,6 @@ h3@ye'@
 H6h>@
 H6hV@
 H6in@
-,H@9-
 *H@9*
 	H@9)
 	H@9	
@@ -1958,12 +1958,16 @@ h"@9)AG
 h*@9h/
 (H@9h
 H@9/H@9
+h"@9i
+h"@9i	
+h"@9I
 	H@9i"
 H`@9iFG9
 *H@9J
 H@9J(
 H@9k	
 -H@9m
+,H@9m
 h"A9)AF
 HammerMapLoader001
 handindex
@@ -2285,11 +2289,12 @@ i>@yh
 Iyix8}
 IyixJylx+
 izhx)
-J380k
 j48	C
 j48t^@
 j4xH;@
 j58"l
+j58L}
+J78Sj
 j`8'k`8
 J!@9#
 J@9.A
@@ -2335,10 +2340,9 @@ jY@y)1
 *k2@y
 k2@yh
 ?k58D
-?k682
-?k78*
-*?k78
+*?k78G
 ?k78h
+_k88C
 _!)kA
 K	A9lC
 K?B@qk
@@ -3359,6 +3363,7 @@ QueueChange
 queued
 QueuedLoaderVersion001
 	Q@y?
+	q@yz
 *R)8yv
 RA9iR
 RadianEuler
@@ -3435,6 +3440,7 @@ rhj)8H
 Rhjh8(
 Rhjh8	
 Rhjhx
+rhU$S
 RiJ@9	
 Rijhx
 Rijhx)
@@ -3445,7 +3451,7 @@ RIO_REQUEST_RELAY
 RIO_WILL_RELAY
 rJAJJL
 rJMJJ
-R?k78
+R?k78P
 rkMKJ
 Rmij8
 rnd_down

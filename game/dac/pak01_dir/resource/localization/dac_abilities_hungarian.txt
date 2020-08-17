@@ -32,7 +32,7 @@
 
 		//WINDRUNNER
 		"dac_ability_windrunner_powershot"										"Átlövés"
-		"dac_ability_windrunner_powershot_Description"							"Szélvész legfeljebb {s:castPoint} másodpercig felhúzva tartja íját egyetlen erőteljes lövéshez, amely legfeljebb {s:powershot_damage} pontot sebez. Az Átlövés sebzése minden egyes eltalált ellenséggel {s:damage_reduction}%-ot csökken."
+		"dac_ability_windrunner_powershot_Description"							"Szélvész legfeljebb {s:castPoint} másodpercig felhúzva tartja íját egyetlen erőteljes lövéshez, amely legfeljebb {s:powershot_damage} sebzést okoz. Az Átlövés sebzése minden egyes eltalált ellenséggel {s:damage_reduction}%-ot csökken. Háromcsillagosan Szélvész íja felhúzásának kezdetekor {s:evasion}% kitérést kap és varázsimmunissá válik. Ez {s:evasion_duration} másodpercig tart."
 		"dac_ability_windrunner_powershot_Lore"									"Sok barátot szereztem utazásaim során, és nem félek behajtani a tartozásokat. - <i>Wren, világutazó</i>"
 
 		//WITCHDOCTOR
@@ -366,7 +366,7 @@
 		
 		//BLOODSEEKER
 		"dac_ability_bloodseeker_blood_rage"									"Vérdüh"
-		"dac_ability_bloodseeker_blood_rage_Description"						"PASSZÍV: Ahogy Vérkopó ellenségeinek életereje csökken, támadási sebességre tesz szert, legfeljebb {s:attack_speed_bonus_max} pontig {s:min_health_pct}% életerőnél.<br><br>Valahányszor Vérkopó megöli egy célpontját, visszakapja annak maximális életerejének {s:heal_pct}%-át."
+		"dac_ability_bloodseeker_blood_rage_Description"						"PASSZÍV: Ahogy Vérkopó ellenségeinek életereje csökken, támadási sebességre tesz szert, legfeljebb {s:attack_speed_bonus_max} pontig {s:min_health_pct}% életerőnél.<br><br>Valahányszor Vérkopó megöli egy célpontját, visszakapja annak maximális életerejének {s:heal_pct}%-át. Háromcsillagosan ez akkor fordul elő, amikor bármelyik ellenség Vérkopótól {s:radius} mezőn belül hal meg."
 		"dac_ability_bloodseeker_blood_rage_Lore"								"Ha bármit is tanultam pályafutásom során, az az, hogy a népek szeretik a vért. Vegyétek fel ezt az alakot. - <i>Grek, a határozott szponzor</i>"
 		
 		//ARC WARDEN
@@ -376,7 +376,7 @@
 		
 		//ARC WARDEN
 		"dac_ability_arc_warden_tempest_double_no_items"						"Viharmás"
-		"dac_ability_arc_warden_tempest_double_no_items_Description"			"Égi Börtönőr másolatot hoz létre magából, annyi életerővel, amennyivel éppen rendelkezik. A klónok {s:clone_dmg_reduction}%-kal kevesebbet sebeznek."
+		"dac_ability_arc_warden_tempest_double_no_items_Description"			"Égi Börtönőr másolatot hoz létre magából ugyanannyi életerővel, amennyivel éppen rendelkezik. A klónok {s:clone_dmg_reduction}%-kal kevesebb sebzést okoznak, és klónonként {s:clone_mana_pct_loss_per}%-kal kevesebb manát szereznek (többszöröződően adódik össze). Háromcsillagosan a klón lemásolja Égi Börtönőr tárgyait is."
 		"dac_ability_arc_warden_tempest_double_no_items_Lore"					"A teremtés rejtelmeit hozza magával. - <i>Turath, a titokzatos próféta</i>"
 
 		//MIRANA
@@ -471,7 +471,7 @@
 		"dac_ability_nyx_assassin_spiked_carapace_lore"								"A helyes megnevezés: ízeltlábú. - <i>Csöndes, a részletekre ügyelő</i>"
 
 		"dac_ability_nyx_assassin_vendetta"											"Vérbosszú"
-		"dac_ability_nyx_assassin_vendetta_description"								"PASSZÍV: Egy egységhez teleportálás után Nyx Orgyilkos {s:bonus_damage} többletsebzést okoz következő támadásával, és {s:break_duration} másodperces Megtörést alkalmaz az ellenségen, kikapcsolva annak minden passzív hatását."
+		"dac_ability_nyx_assassin_vendetta_description"								"PASSZÍV: Egy egységhez teleportálás után Nyx Orgyilkos {s:bonus_damage} többletsebzést okoz következő támadásával, és {s:break_duration} másodperces Megtörést alkalmaz az ellenségen, kikapcsolva annak minden passzív hatását. Háromcsillagosan Nyx Orgyilkos {s:hits_to_trigger} egymást követő támadás után Vérbosszút is alkalmaz. A számláló alaphelyzetbe áll, ha a Vérbosszú teleportálás miatt aktiválódik."
 		"dac_ability_nyx_assassin_vendetta_lore"									"Rovar, ízeltlábú... Kit érdekel, a lényeg, hogy meg kell ölnie nekem valakit, szóval... meg tudod szerezni, vagy nem? - <i>O'nia, aki nem kedveli, ha kijavítják</i>"
 
 		// WEAVER
@@ -494,7 +494,7 @@
 		"dac_ability_wisp_tether_lore"												"<i>Enno, meredten Ióra bámulva</i>"
 
 		"dac_ability_wisp_relocate"													"Áthelyeződés"
-		"dac_ability_wisp_relocate_description"										"Ió {s:relocate_time_away} másodpercre elteleportál, hogy felélesszen egy halott hőst. A két egység teljes életerővel, minden negatív hatástól megtisztítva tér vissza. Háromcsillagosan Ió a halott hős újratöltődési idejeit is alaphelyzetbe állítja."
+		"dac_ability_wisp_relocate_description"										"Ió {s:relocate_time_away} másodpercre elteleportál, hogy felélesszen egy halott hőst. A két egység teljes életerővel, minden negatív hatástól megtisztítva tér vissza. Háromcsillagosan Ió a hős újratöltődési idejeit is alaphelyzetbe állítja."
 		"dac_ability_wisp_relocate_lore"											"<i>Ió, visszabámulva</i>"
 
 		// BRISTLEBACK	
@@ -550,7 +550,7 @@
 
 		// GRANNY LIZARD
 		"dac_ability_granny_lizard_shotgun_blast"									"Vén Sörétszóró"
-		"dac_ability_granny_lizard_shotgun_blast_description"						"4 alap támadás után Durrbele előkészíti sörétes puskáját, és rálő egy közeli ellenségre, kúp alakú területen {s:blast_damage} sebzést okozva és {s:blast_bonus_attack_speed}%-kal csökkenti az eltalált egységek támadási sebességét."
+		"dac_ability_granny_lizard_shotgun_blast_description"						"4 alaptámadás után Durrbele előkészíti sörétes puskáját, és rálő egy közeli ellenségre {s:blast_damage} sebzést okozva kúpban, és {s:blast_bonus_attack_speed} ponttal csökkentve az eltalált egységek támadási sebességét. Háromcsillagosan az eltalált egységek {s:blast_armor_loss} páncélt is veszítenek. A hatás {s:debuff_duration} másodpercig tart."
 		"dac_ability_granny_lizard_shotgun_blast_lore"								"A buzgók mindig is jól értettek a hadviseléshez, márpedig a hadviselés az én üzleti területem. Talán lehet itt valamit üzletelni. - <i>Csöndes, üzleti angyal</i>"
 
 		"dac_ability_granny_lizard_bazooka"											"Mortimer csókjai"
@@ -664,30 +664,138 @@
 		"dac_ability_3star"															"Háromcsillagos hatás"
 
 		"dac_ability_warlock_3star"													"Átokkovács ★★★ hatás"
-		"dac_ability_warlock_3star_Description"										"Háromcsillagosan, amíg Átokkovács életben van, meggátolja, hogy a baráti démonok képességek varázslásakor elhallgattassák egymást."
+		"dac_ability_warlock_3star_Description"										"Amíg Átokkovács életben van, meggátolja, hogy a baráti démonok képességek varázslásakor elhallgattassák egymást."
 
 		"dac_ability_razor_3star"													"Metsző ★★★ hatás"
-		"dac_ability_razor_3star_Description"										"Háromcsillagosan, valahányszor Metsző megtámad egy ellenséget, {s:stolen_dmg} támadási sebzést lop, maximum {s:max_stacks} alkalommal. Ez célpontváltáskor Metsző számára alaphelyzetbe áll, de az ellenség számára nem."
+		"dac_ability_razor_3star_Description"										"Metsző Sztatikus kapcsolat képességet kap. Valahányszor Metsző megtámad egy ellenséget, {s:stolen_dmg} támadási sebzést lop, maximum {s:max_stacks} alkalommal. Ez célpontváltáskor Metsző számára alaphelyzetbe áll, de az ellenség számára nem."
 
 		"dac_ability_chaos_knight_3star"											"Káoszlovag ★★★ hatás"
-		"dac_ability_chaos_knight_3star_Description"								"Háromcsillagosan Káoszlovag szövetséges lovagjai mindig egy baráti lovag szomszédjának számítanak, amíg Káoszlovag életben van."
+		"dac_ability_chaos_knight_3star_Description"								"Káoszlovag szövetséges lovagjai mindig egy baráti lovag szomszédjának számítanak, amíg Káoszlovag életben van."
 
 		"dac_ability_crystal_maiden_3star"											"Kristályhajadon ★★★ hatás"
-		"dac_ability_crystal_maiden_3star_Description"								"Háromcsillagosan, amíg Kristályhajadon életben van, minden szövetséges újratöltődési ideje {s:cooldown_reduction}%-kal csökken."
+		"dac_ability_crystal_maiden_3star_Description"								"Amíg Kristályhajadon életben van, minden szövetséges újratöltődési ideje {s:cooldown_reduction}%-kal csökken."
 
 		"dac_ability_terrorblade_3star"												"Rémpenge ★★★ hatás"
-		"dac_ability_terrorblade_3star_Description"									"Háromcsillagosan Rémpenge +{s:damage_bonus_pct}% tiszta sebzést kap ellenséges démonok ellen."
+		"dac_ability_terrorblade_3star_Description"									"Rémpenge démoni energiát tud megidézni, hogy +{s:damage_bonus_pct}% tiszta sebzést kapjon az ellenséges démonok ellen. A bónusz minden varázsláskor {s:duration} másodpercig tart."
 
 		"dac_ability_tiny_3star"													"Pici ★★★ hatás"
-		"dac_ability_tiny_3star_Description"										"Háromcsillagosan, valahányszor Pici elhajít egy ellenséget, nő a mérete, +{s:bonus_damage} támadási sebzést és +{s:bonus_armor} páncélt kap, de {s:aspd_loss} támadási sebességet veszít, legfeljebb {s:max_stacks} alkalommal."
+		"dac_ability_tiny_3star_Description"										"Valahányszor Pici elhajít egy ellenséget, nő a mérete, +{s:bonus_damage} támadási sebzést és +{s:bonus_armor} páncélt kap, de {s:aspd_loss} támadási sebességet veszít, legfeljebb {s:max_stacks} alkalommal."
 
 		"dac_ability_luna_3star"													"Luna ★★★ hatás"
-		"dac_ability_luna_3star_Description"										"Háromcsillagosan Luna Fogyatkozás képességet kap. Amikor Luna szorult helyzetbe kerül, Selemene {s:radius} mezőnyi hatósugárban blokkolja a fényt Luna körül, az ellenségekre pedig {s:beam_interval} másodpercenként {s:beams} sugárnyi holdenergiát zúdít, sugaranként {s:beam_damage} sebzést és {s:beam_stun} másodperces bénítást okozva, ellenségenként maximum {s:hit_count} alkalommal."
+		"dac_ability_luna_3star_Description"										"Luna Fogyatkozás képességet kap. Amikor Luna szorult helyzetbe kerül, Selemene {s:radius} mezőnyi hatósugárban blokkolja a fényt Luna körül, az ellenségekre pedig {s:beam_interval} másodpercenként {s:beams} sugárnyi holdenergiát zúdít, sugaranként {s:beam_damage} sebzést és {s:beam_stun} másodperces bénítást okozva, ellenségenként maximum {s:hit_count} alkalommal."
 
 		"dac_ability_dazzle_3star"													"Káprázat ★★★ hatás"
-		"dac_ability_dazzle_3star_Description"										"Háromcsillagosan Káprázat Sekély sírhantot varázsol minden szövetséges egységre legfeljebb {s:never_die_range} mezőnyi távolságban. Minden megáldott egység további {s:never_die_duration} másodpercig életben marad halálos csapás elszenvedése után."
+		"dac_ability_dazzle_3star_Description"										"Káprázat Sekély sírhantot varázsol minden baráti egységre legfeljebb {s:never_die_range} mezőnyi távolságban. Minden megáldott egység további {s:never_die_duration} másodpercig életben marad halálos csapás elszenvedése után."
 
 		"dac_ability_broodmother_3star"												"Pókanya ★★★ hatás"
-		"dac_ability_broodmother_3star_Description"									"Háromcsillagosan, amíg Pókanya életben van, sebezhetetlenné teszi az összes szövetséges Pókifjoncot."
+		"dac_ability_broodmother_3star_Description"									"Amíg Pókanya életben van, sebezhetetlenné teszi az összes szövetséges Pókifjoncot."
+
+		"dac_ability_pudge_3star"													"Puhos ★★★ hatás"
+		"dac_ability_pudge_3star_Description"										"Puhos Húsheggyé válik. {s:bonus_health_per_death} maximális életerőt és {s:magical_resistance}% mágiaellenállást kap, valahányszor egy ellenség tőle {s:radius} mezőnyire hal meg."
+
+		"dac_ability_viper_3star"													"Vipera ★★★ hatás"
+		"dac_ability_viper_3star_Description"										"Vipera {s:num_attacks} támadásonként Viperamarást hajt végre. Az ellenséges egység másodpercenként {s:damage} sebzést szenved, valamint {s:bonus_movement_speed}% mozgási sebességet és {s:bonus_attack_speed} támadási sebességet veszít, mely lassítás fokozatosan csökken a(z) {s:debuff_duration} másodperces időtartam alatt."
+
+		"dac_ability_beastmaster_3star"												"A Vadak Ura ★★★ hatás"
+		"dac_ability_beastmaster_3star_Description"									"A Vadak Ura {s:damage_reduction}%-kal kevesebb sebzést szenved idézett egységektől és immunis lesz minden varázslati hatásukra."
+
+		"dac_ability_juggernaut_3star"												"Fékezhetetlen ★★★ hatás"
+		"dac_ability_juggernaut_3star_Description"									"Fékezhetetlen Kardtáncot kap: minden támadásnak {s:crit_chance}%-os esélye van {s:crit_bonus}%-os sebzést okozó kritikus találatra."
+
+		"dac_ability_queenofpain_3star"												"A Fájdalom Királynője ★★★ hatás"
+		"dac_ability_queenofpain_3star_Description"									"A Fájdalom Királynője elbűvöli a közeli ellenségeket, ami {s:evasion}%-os esélyt ad neki a legfeljebb {s:radius} mezőn belüli ellenségek támadásainak elkerülésére."
+
+		"dac_ability_drow_ranger_3star"												"Drow Vadász ★★★ hatás"
+		"dac_ability_drow_ranger_3star_Description"									"Drow Vadász nyilai Dérnyilakká változnak. E nyilak az eltalált egység mozgását {s:move_speed_loss}%-kal, támadási sebességét pedig {s:attack_speed_loss} ponttal lassítják. A hatás {s:slow_duration} másodpercig megmarad."
+
+		"dac_ability_abaddon_3star"													"Abaddon ★★★ hatás"
+		"dac_ability_abaddon_3star_Description"										"Abaddon képes Avernus átkát alkalmazni a támadott ellenségekre. Miután Abaddon egymás után {s:min_stacks} alkalommal megtámadta ugyanazt az ellenséges egységet, az {s:silence_duration} másodpercre el lesz hallgattatva, Abaddon pedig +{s:attack_speed} támadási sebességet kap ellene. Ez minden további sikeresen bevitt támadáskor frissül, de 0 támadásról indul újra, ha Abaddon célpontot vált."
+
+		"dac_ability_bloodseeker_3star"												"Vérkopó ★★★ hatás"
+		"dac_ability_bloodseeker_3star_Description"									"Vérkopó megkapja az orgyilkos szövetség (ha van ilyen) aktuális aktív szintjének kritikus találati többletsebzését."
+
+		"dac_ability_morphling_3star"												"Formálódó ★★★ hatás"
+		"dac_ability_morphling_3star_Description"									"Formálódó megkapja minden aktív ellenséges szövetség harcbeli bónuszait, mintha ellenséges bajnok lenne."
+
+		"dac_ability_shadow_fiend_3star"											"Árnybestia ★★★ hatás"
+		"dac_ability_Shadow_fiend_3star_Description"								"Árnybestia A Sötét Úr jelenléte képességet kap. A(z) {s:radius} mezőn belüli ellenségek {s:armor_reduction} páncélcsökkentést szenvednek el Árnybestia félelmetes jelenléte miatt."
+
+		"dac_ability_magnataur_3star"												"Magnus ★★★ hatás"
+		"dac_ability_magnataur_3star_Description"									"Magnus Polaritásváltás képességet kap. Varázsláskor a(z) {s:radius} mezőn belüli ellenségek {s:damage} sebzést szenvednek el és {s:duration} másodpercre megbénulnak."
+
+		"dac_ability_arc_warden_3star"												"Égi Börtönőr ★★★ hatás"
+		"dac_ability_arc_warden_3star_Description"									"A Viharmás klónok lemásolják Égi Börtönőr tárgyait is."
+
+		"dac_ability_bat_rider_3star"												"Denevérlovas ★★★ hatás"
+		"dac_ability_bat_rider_3star_Description"									"A Ragacsos napalm felgyújtja az ellenségeket. Részletekért lásd a képességet."
+
+		"dac_ability_nyx_assassin_3star"											"Nyx Orgyilkos ★★★ hatás"
+		"dac_ability_nyx_assassin_3star_Description"								"A Vérbosszú gyakrabban varázsolódik. Részletekért lásd a képességet."
+
+		"dac_ability_shadow_demon_3star"											"Árnydémon ★★★ hatás"
+		"dac_ability_shadow_demon_3star_Description"								"Árnydémon Lélekfogót alkalmaz a Démoni megtisztítás célpontjára. Részletekért lásd a képességet."
+
+		"dac_ability_tusk_3star"													"Agyaras ★★★ hatás"
+		"dac_ability_tusk_3star_Description"										"A Rozmárütés hosszabb időtartamig lassítja az ellenségeket, valamint támadási és mozgási sebességet veszítenek. Részletekért lásd a képességet."
+
+		"dac_ability_venomancer_3star"												"Méregszövő ★★★ hatás"
+		"dac_ability_venomancer_3star_Description"									"A Pestisstrázsák immunisak a mágikus sebzésre."
+
+		"dac_ability_weaver_3star"													"Takács ★★★ hatás"
+		"dac_ability_weaver_3star_Description"										"Takács Sukucsi utáni támadásai manát égetnek. Részletekért lásd a képességet."
+
+		"dac_ability_bristleback_3star"												"Tüskéshátú ★★★ hatás"
+		"dac_ability_bristleback_3star_Description"									"A Tüskezápor újratöltődési ideje jelentősen csökken. Részletekért lásd a képességet."
+
+		"dac_ability_earth_spirit_3star"											"Földlélek ★★★ hatás"
+		"dac_ability_earth_spirit_3star_Description"								"A Geomágneses vonzás megbénítja az ellenségeket. Részletekért lásd a képességet."
+
+		"dac_ability_natures_prophet_3star"											"A Természet Prófétája ★★★ hatás"
+		"dac_ability_natures_prophet_3star_Description"								"A treantok a tábla ellenséges oldalán jelennek meg."
+
+		"dac_ability_ogre_magi_3star"												"Ogre Mágus ★★★ hatás"
+		"dac_ability_ogre_magi_3star_Description"									"Ogre Mágusnak esélye van a Vérszomj többszörös varázslására. Részletekért lásd a képességet."
+
+		"dac_ability_slardar_3star"													"Slardar ★★★ hatás"
+		"dac_ability_slardar_3star_Description"										"Slardar zúzást alkalmaz a Maró pára varázslása után. Részletekért lásd a képességet."
+
+		"dac_ability_windrunner_3star"												"Szélvész ★★★ hatás"
+		"dac_ability_windrunner_3star_Description"									"Szélvész kitérést és varázsimmunitást kap az Átlövés varázslása közben. Részletekért lásd a képességet."
+
+		"dac_ability_witch_doctor_3star"											"Kuruzsló ★★★ hatás"
+		"dac_ability_witch_doctor_3star_Description"								"A Bénító szelencével eltalált ellenségekre Átokmondás alkalmazódik. Részletekért lásd a képességet."
+
+		"dac_ability_ember_spirit_3star"											"Parázslélek ★★★ hatás"
+		"dac_ability_ember_spirit_3star_Description"								"Az Öklössorozat hatóterülete megduplázódik. Részletekért lásd a képességet."
+
+		"dac_ability_enigma_3star"													"Talány ★★★ hatás"
+		"dac_ability_enigma_3star_Description"										"A semmi lüktetésének hatóterülete megtriplázódik. Részletekért lásd a képességet."
+
+		"dac_ability_wisp_3star"													"Ió ★★★ hatás"
+		"dac_ability_wisp_3star_Description"										"Az Áthelyeződés nullázza a felélesztett hős újratöltődési idejeit."
+
+		"dac_ability_lycan_3star"													"Likantróp ★★★ hatás"
+		"dac_ability_lycan_3star_Description"										"Az Alakváltás több farkast idéz meg. Részletekért lásd a képességet."
+
+		"dac_ability_omniknight_3star"												"A Mindenség Lovagja ★★★ hatás"
+		"dac_ability_omniknight_3star_Description"									"A Megtisztítás hatóterülete megtriplázódik. Részletekért lásd a képességet."
+
+		"dac_ability_shadow_shaman_3star"											"Árnysámán ★★★ hatás"
+		"dac_ability_shadow_shaman_3star_Description"								"Árnysámán megátkozza a Kígyóstrázsatömeg által célzott egységet."
+
+		"dac_ability_treant_protector_3star"										"Védelmező Treant ★★★ hatás"
+		"dac_ability_treant_protector_3star_Description"							"A Szipolyozó mag által gyógyított egységek Élő páncélt is kapnak. Részletekért lásd a képességet."
+
+		"dac_ability_storm_spirit_3star"											"Viharlélek ★★★ hatás"
+		"dac_ability_storm_spirit_3star_Description"								"Viharlélek Túlterhelés képességet kap. Varázsláskor elektromos töltetet hoz létre, mely Viharlélek következő támadásakor kisülés formájában jelentkezik, {s:damage} sebzést okozva és a célpont támadási sebességét {s:slow_duration} másodpercre {s:attack_speed_loss} ponttal lassítva. Viharlélek Háromszögcsapása támadásnak számít, amely esetben a Viharlélek által a támadásban eltalált összes egység elszenvedi a sebzést és lelassul."
+		
+		"dac_ability_legion_commander_3star"										"Légióparancsnok ★★★ hatás"
+		"dac_ability_legion_commander_3star_Description"							"Bármely hatótávon belül levő szövetséges is támadni fogja Légióparancsnok célpontját a Párbaj során."
+
+		"dac_ability_life_stealer_3star"										"Életlopó ★★★ hatás"
+		"dac_ability_life_stealer_3star_Description"							"Életlopó Dühöngés képességet kap. Varázslásakor Életlopó varázsimmunissá válik, valamint +{s:bonus_movement_speed_pct}% mozgási sebességet és +{S:bonus_attack_speed} támadási sebességet kap. A hatások {s:duration} másodpercig tartanak."
+
+		"dac_ability_snapfire_3star"												"Durrbele ★★★ hatás"
+		"dac_ability_snapfire_3star_Description"									"A Vén Sörétszóró az ellenség páncélját is csökkenti. Részletekért lásd a képességet."
 	}
 }

@@ -705,9 +705,9 @@ $0 to $1,
 2+imx
 2j"@9)p
 2?"!k`
-2?k78hu
+2?k78;u
 2_k88
-2?k88gq
+2?k88:q
 2k_EGCMsgInitiateTradeResponse_VAC_Banned_Initiator
 2k_ItemPurgatoryResponse_Finalize_Failed_Incomplete
 2ninx
@@ -1760,6 +1760,7 @@ bone_names
 bonus
 bonus_armor
 bonus_count
+bonus_keyword
 bonus_to_add
 Boolean default must be true or false.
 booster_type
@@ -2899,8 +2900,8 @@ CUtlStringToken
 CUtlSymbol
 CUtlSymbolLarge
 CUtlVector<const T *> GetDefinitionByName(const char *, CUtlVector<const T *>) [T = DACUnitDef]
-CUtlVector<const T *> ParseAvailableFromOperations(CKV3MemberRef, const CUtlVector<const T *> &(IDACGameManager::*)() const, TFilterFunc &&) [T = DAC_SynergyData_t, TFilterFunc = (lambda at dac/dac_gamedefinitions.cpp:579:106)]
-CUtlVector<const T *> ParseAvailableFromOperations(CKV3MemberRef, const CUtlVector<const T *> &(IDACGameManager::*)() const, TFilterFunc &&) [T = DACUnitDef, TFilterFunc = (lambda at dac/dac_gamedefinitions.cpp:582:98)]
+CUtlVector<const T *> ParseAvailableFromOperations(CKV3MemberRef, const CUtlVector<const T *> &(IDACGameManager::*)() const, TFilterFunc &&) [T = DAC_SynergyData_t, TFilterFunc = (lambda at dac/dac_gamedefinitions.cpp:595:106)]
+CUtlVector<const T *> ParseAvailableFromOperations(CKV3MemberRef, const CUtlVector<const T *> &(IDACGameManager::*)() const, TFilterFunc &&) [T = DACUnitDef, TFilterFunc = (lambda at dac/dac_gamedefinitions.cpp:598:98)]
 cvars
 CVrSkeletalInputSettings
 #CWorkshop_AddSpecialPayment_Request
@@ -4093,6 +4094,7 @@ H7x"@
 H7xR@
 h)8Ay)
 h"@9)
+h"@9	
 h"@9h
 h*@9h/
 h.@9H
@@ -4161,7 +4163,7 @@ hintWords
 	histogram
 HistogramBucket
 histogram_buckets
-hj58~i
+hj58~m
 	hold_time
 host_computationtime
 "host_computationtime_std_deviation
@@ -4189,7 +4191,7 @@ I)!|@
 i)8i&
 *i.8in@9jj
 ?i(8?i*x?i+
-i;8[s
+i;8[w
 i"@9J
 IA@9	
 ib@9`
@@ -4490,11 +4492,12 @@ iw8B/
 i>@yh
 IyixJylx+
 j2?)?
+j38s[
 j48	C
 j48t^@
 j4xH;@
 j58hf@9(
-j58Xn
+j58+n
 J!@9#
 j@9ij
 J]A9_
@@ -4537,12 +4540,11 @@ JYix*$
 	*jz-
 *k2@y
 ?k58D
-?k68?
-?k78!
 *?k78
 ?k78h
 k78o_
 k(8vV@
+k<8y]
 Ka@9+
 Ka@9k
 K	A9lC
@@ -5181,7 +5183,6 @@ KV3 load transfer failed: %s
 KV Conditional Evaluation Error
 k	@y)
 Kykx)
--@)l"
 L	A9mC
 label
 Label
@@ -7795,6 +7796,7 @@ yielding_jobs
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 @y(Q*
 Y`x($
+y[(xB
 _Z13V_SplitStringPKcS0_R10CUtlVectorIPc10CUtlMemoryIS2_iEE
 _Z14V_stristr_fastPKcS0_
 _Z17LoggingSystem_Logi17LoggingSeverity_tRK14LeafCodeInfo_tPKcz

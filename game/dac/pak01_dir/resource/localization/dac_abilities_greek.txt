@@ -32,7 +32,7 @@
 
 		//WINDRUNNER
 		"dac_ability_windrunner_powershot"										"Powershot"
-		"dac_ability_windrunner_powershot_Description"							"Η Windranger φορτίζει το τόξο της για έως {s:castPoint} δευτερόλεπτα για μια ισχυρή βολή, προκαλώντας έως και {s:powershot_damage} ζημιά. Για κάθε εχθρό που πλήττει η βολή, η ζημιά της μειώνεται κατά {s:damage_reduction}%."
+		"dac_ability_windrunner_powershot_Description"							"Η Windranger φορτίζει το τόξο της για έως {s:castPoint} δευτερόλεπτα για μια ισχυρή βολή, προκαλώντας έως και {s:powershot_damage} ζημιά. Για κάθε εχθρό που πλήττει η βολή, η ζημιά της μειώνεται κατά {s:damage_reduction}%. Στα 3 αστέρια, στην αρχή της φόρτισης του τόξου της, η Windranger αποκτάει {s:evasion}% αποφυγή και γίνεται μαγικά άτρωτη. Αυτό διαρκεί για {s:evasion_duration} δευτερόλεπτα."
 		"dac_ability_windrunner_powershot_Lore"									"Έκανα πολλούς φίλους στα ταξίδια μου και δε φοβάμαι να ζητήσω χάρες. - <i>Wren, ταξιδευτής του κόσμου</i>"
 
 		//WITCHDOCTOR
@@ -366,7 +366,7 @@
 		
 		//BLOODSEEKER
 		"dac_ability_bloodseeker_blood_rage"									"Bloodrage"
-		"dac_ability_bloodseeker_blood_rage_Description"						"PASSIVE: Καθώς η ζωή του Bloodseeker πέφτει, αποκτάει ταχύτητα επίθεσης, με μέγιστο {s:attack_speed_bonus_max} σε {s:min_health_pct}% ζωή.<br><br>Όποτε ο Bloodseeker σκοτώνει ένα στόχο, αποκτάει ξανά το {s:heal_pct}% της μέγιστης ζωής του στόχου."
+		"dac_ability_bloodseeker_blood_rage_Description"						"ΠΑΘΗΤΙΚΟ: Καθώς η ζωή του Bloodseeker πέφτει, αποκτάει ταχύτητα επίθεσης, με μέγιστο {s:attack_speed_bonus_max} σε {s:min_health_pct}% ζωή.<br><br>Όποτε ο Bloodseeker σκοτώνει ένα στόχο, αποκτάει ξανά το {s:heal_pct}% της μέγιστης ζωής του στόχου. Στα 3 αστέρια, αυτό συμβαίνει όταν οποιοσδήποτε εχθρός πεθαίνει εντός {s:radius} κελιού του Bloodseeker."
 		"dac_ability_bloodseeker_blood_rage_Lore"								"Αν έχω μάθει κάτι στην καριέρα μου, είναι ότι στο κοινό αρέσει το αίμα. Προσλάβετε αυτόν τον άνθρωπο. - <i>Grek, αποφασιστικός προαγωγός</i>"
 		
 		//ARC WARDEN
@@ -376,7 +376,7 @@
 		
 		//ARC WARDEN
 		"dac_ability_arc_warden_tempest_double_no_items"						"Tempest Double"
-		"dac_ability_arc_warden_tempest_double_no_items_Description"			"Ο Arc Warden δημιουργεί ένα αντίγραφο του εαυτού του με την ίδια ζωή που έχει αυτή τη στιγμή. Οι κλώνοι προκαλούν {s:clone_dmg_reduction}% λιγότερη ζημιά."
+		"dac_ability_arc_warden_tempest_double_no_items_Description"			"Ο Arc Warden δημιουργεί ένα αντίγραφο του εαυτού του με την ίδια ζωή που έχει αυτή τη στιγμή. Οι κλώνοι προκαλούν {s:clone_dmg_reduction}% λιγότερη ζημιά και αποκτούν {s:clone_mana_pct_loss_per}% λιγότερη ενέργεια ανά κλώνο (συσσωρεύεται πολλαπλασιαστικά). Στα 3 αστέρια, ο κλώνος αντιγράφει επίσης και το αντικείμενο του Arc Warden."
 		"dac_ability_arc_warden_tempest_double_no_items_Lore"					"Φέρνει μαζί του τα μυστήρια της δημιουργίας. - <i>Turath, αινιγματικός προφήτης</i>"
 
 		//MIRANA
@@ -471,7 +471,7 @@
 		"dac_ability_nyx_assassin_spiked_carapace_lore"								"Η σωστή λέξη είναι Αρθρόποδο. - <i>Quiet, προσοχή στη λεπτομέρεια</i>"
 
 		"dac_ability_nyx_assassin_vendetta"											"Vendetta"
-		"dac_ability_nyx_assassin_vendetta_description"								"ΜΟΝΙΜΟ: Αφού τηλεμεταφερθεί για να επιτεθεί μια μονάδα, ο Nyx Assassin προκαλεί {s:bonus_damage} επιπλέον ζημιά στην επόμενή του επίθεση και και εφαρμόζει Θραύση στον εχθρό για {s:break_duration} δευτερόλεπτα, απενεργοποιώντας όλες τις μόνιμες επιδράσεις."
+		"dac_ability_nyx_assassin_vendetta_description"								"ΠΑΘΗΤΙΚΟ: Αφού τηλεμεταφερθεί για να επιτεθεί σε μία μονάδα, ο Nyx Assassin προκαλεί {s:bonus_damage} πρόσθετη ζημιά στην επόμενη επίθεσή του και εφαρμόζει θραύση στον εχθρό για {s:break_duration} δευτερόλεπτα, απενεργοποιώντας όλα τα παθητικά εφέ. Στα 3 αστέρια ο Nyx Assassin επίσης εφαρμόζει Vendetta μετά από {s:hits_to_trigger} διαδοχικές επιθέσεις. Ο μετρητής επαναφέρεται αν το Vendetta ενεργοποιηθεί λόγω τηλεμεταφοράς."
 		"dac_ability_nyx_assassin_vendetta_lore"									"Έντομο. Αρθρόποδο.  Ποιος νοιάζεται, το θέμα είναι ότι τον χρειάζομαι να σκοτώσει κάποιον τώρα... μπορείς να έρθεις σε επαφή μαζί του ή όχι; - <i>O'nia, δεν του αρέσει να τον διορθώνουν</i>"
 
 		// WEAVER
@@ -494,7 +494,7 @@
 		"dac_ability_wisp_tether_lore"												"<i>όπου ο Enno κοιτάει το Io έντονα</i>"
 
 		"dac_ability_wisp_relocate"													"Relocate"
-		"dac_ability_wisp_relocate_description"										"Το Io τηλεμεταφέρεται μακριά για {s:relocate_time_away} δευτερόλεπτα για να αναβιώσει ένα νεκρό ήρωα. Οι δύο μονάδες επιστρέφουν με πλήρη ζωή και καταλύονται από αρνητικές επιδράσεις. Στα 3 αστέρια, επαναφέρονται οι ικανότητες του νεκρού ήρωα."
+		"dac_ability_wisp_relocate_description"										"Το Io τηλεμεταφέρεται μακριά για {s:relocate_time_away} δευτερόλεπτα για να αναβιώσει ένα νεκρό ήρωα. Οι δύο μονάδες επιστρέφουν με πλήρη ζωή και καταλύονται από αρνητικές επιδράσεις. Στα 3 αστέρια, το Io επαναφέρει επίσης τις ικανότητες αυτού του ήρωα."
 		"dac_ability_wisp_relocate_lore"											"<i>όπου το Io κοιτάει πίσω</i>"
 
 		// BRISTLEBACK	
@@ -550,7 +550,7 @@
 
 		// GRANNY LIZARD
 		"dac_ability_granny_lizard_shotgun_blast"									"Ol' Scatterblast"
-		"dac_ability_granny_lizard_shotgun_blast_description"						"Μετά από 4 βασικές επιθέσεις, η Snapfire ετοιμάζει την καραμπίνα της, πλήττοντας έναν κοντινό εχθρό για {s:blast_damage} σε ένα κώνο και επιβραδύνει την ταχύτητα επίθεσης επηρεασμένων μονάδων κατά {s:blast_bonus_attack_speed}%"
+		"dac_ability_granny_lizard_shotgun_blast_description"						"Μετά από 4 βασικές επιθέσεις, η Snapfire ετοιμάζει την καραμπίνα της, πλήττοντας έναν κοντινό εχθρό για {s:blast_damage} σε ένα κώνο και επιβραδύνοντας την ταχύτητα επίθεσης επηρεασμένων μονάδων κατά {s:blast_bonus_attack_speed}. Στα 3 αστέρια, οι επηρεασμένες μονάδες επίσης χάνουν {s:blast_armor_loss} θωράκιση. Η επίδραση διαρκεί {s:debuff_duration} δευτερόλεπτα."
 		"dac_ability_granny_lizard_shotgun_blast_lore"								"Οι keen πάντα είχαν συναρπαστικό νου για πολεμικές επιχειρήσεις και ο πόλεμος είναι το κεφάλαιο και το εμπόριό μου. Ίσως μπορούμε να κάνουμε καλές δουλειές.  - <i>Quiet, πρώιμη επενδυτής</i>"
 
 		"dac_ability_granny_lizard_bazooka"											"Mortimer Kisses"
@@ -664,30 +664,138 @@
 		"dac_ability_3star"															"ΕΦΕ ΤΡΙΩΝ ΑΣΤΕΡΙΩΝ"
 
 		"dac_ability_warlock_3star"													"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ Warlock"
-		"dac_ability_warlock_3star_Description"										"Στα τρία αστέρια, όσο είναι ζωντανός ο Warlock αποτρέπει συμμαχικούς Δαίμονες από το προκαλούν σιγή ο ένας στον άλλο όταν εκτελούν ικανότητες."
+		"dac_ability_warlock_3star_Description"										"Όσο είναι ζωντανός ο Warlock αποτρέπει συμμαχικούς Δαίμονες από το να προκαλούν σιγή ο ένας στον άλλο όταν εκτελούν ικανότητες."
 
 		"dac_ability_razor_3star"													"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ RAZOR"
-		"dac_ability_razor_3star_Description"										"Στα τρία αστέρια, κάθε φορά που ο Razor επιτίθεται σε έναν εχθρό, κλέβει {s:stolen_dmg} ζημιά επίθεσης, με μέγιστο {s:max_stacks} φορές. Αυτό επαναφέρεται για τον Razor, αλλά όχι για τον εχθρό, όταν αλλάζει στόχους."
+		"dac_ability_razor_3star_Description"										"Ο Razor αποκτά Static Link. Κάθε φορά που ο Razor επιτίθεται σε έναν εχθρό, κλέβει {s:stolen_dmg} ζημιά επίθεσης, με μέγιστο {s:max_stacks} φορές. Αυτό επαναφέρεται για τον Razor, αλλά όχι για τον εχθρό, όταν αλλάζει στόχους."
 
 		"dac_ability_chaos_knight_3star"											"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ CHAOS KNIGHT"
-		"dac_ability_chaos_knight_3star_Description"								"Στα τρία αστέρια, οι συμμαχικοί Ιππότες του Chaos Knight θεωρούνται πάντα ως παρακείμενοι σε έναν συμμαχικό Ιππότη όσο είναι ζωντανός ο Chaos Knight."
+		"dac_ability_chaos_knight_3star_Description"								"Οι συμμαχικοί Ιππότες του Chaos Knight θεωρούνται πάντα ως παρακείμενοι σε έναν συμμαχικό Ιππότη όσο είναι ζωντανός ο Chaos Knight."
 
 		"dac_ability_crystal_maiden_3star"											"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ CRYSTAL MAIDEN"
-		"dac_ability_crystal_maiden_3star_Description"								"Στα τρία αστέρια, όλοι οι σύμμαχοι έχουν τις επαναφορτίσεις τους μειωμένες κατά {s:cooldown_reduction}% όσο η Crystal Maiden είναι ζωντανή."
+		"dac_ability_crystal_maiden_3star_Description"								"Όλοι οι σύμμαχοι έχουν τις επαναφορτίσεις τους μειωμένες κατά {s:cooldown_reduction}% όσο η Crystal Maiden είναι ζωντανή."
 
 		"dac_ability_terrorblade_3star"												"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ TERRORBLADE"
-		"dac_ability_terrorblade_3star_Description"									"Στα τρία αστέρια, ο Terrorblade αποκτάει +{s:damage_bonus_pct}% καθαρή ζημιά εναντίον εχθρικών Δαιμόνων."
+		"dac_ability_terrorblade_3star_Description"									"Ο Terrorblade μπορεί να κλητεύσει δαιμονική ενέργεια για να αποκτήσει +{s:damage_bonus_pct}% καθαρή ζημιά ενάντια σε εχθρικούς Δαίμονες. Η επαύξηση διαρκεί {s:duration} δευτερόλεπτα σε κάθε εκτέλεση."
 
 		"dac_ability_tiny_3star"													"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ TINY"
-		"dac_ability_tiny_3star_Description"										"Στα τρία αστέρια, κάθε φορά που ο Tiny πετάει έναν εχθρό, μεγαλώνει σε μέγεθος, αποκτώντας +{s:bonus_damage} ζημιά επίθεσης και +{s:bonus_armor} θωράκιση αλλά χάνοντας {s:aspd_loss} ταχύτητα επίθεσης, με μέγιστο {s:max_stacks} φορές."
+		"dac_ability_tiny_3star_Description"										"Κάθε φορά που ο Tiny πετάει έναν εχθρό, μεγαλώνει σε μέγεθος, αποκτώντας +{s:bonus_damage} ζημιά επίθεσης και +{s:bonus_armor} θωράκιση αλλά χάνοντας {s:aspd_loss} ταχύτητα επίθεσης, με μέγιστο {s:max_stacks} φορές."
 
 		"dac_ability_luna_3star"													"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ LUNA"
-		"dac_ability_luna_3star_Description"										"Στα τρία αστέρια, η Luna αποκτάει το Eclipse. Στη στιγμή ανάγκης της Luna, η Selemene μπλοκάρει το φως σε μια εμβέλεια {s:radius} κελιών γύρω από τη Luna και καταβρέχει τους εχθρούς με {s:beams} ακτίνες σεληνιακής ενέργειας, μία κάθε {s:beam_interval} δευτερόλεπτα, προκαλώντας {s:beam_damage} ζημιά ανά ακτίνα και σάστισμα για {s:beam_stun} δευτερόλεπτα, με μέγιστο {s:hit_count} ακτίνες ανά εχθρική μονάδα."
+		"dac_ability_luna_3star_Description"										"Η Luna αποκτάει το Eclipse. Στη στιγμή ανάγκης της Luna, η Selemene μπλοκάρει το φως σε μια εμβέλεια {s:radius} κελιών γύρω από τη Luna και καταβρέχει τους εχθρούς με {s:beams} ακτίνες σεληνιακής ενέργειας, μία κάθε {s:beam_interval} δευτερόλεπτα, προκαλώντας {s:beam_damage} ζημιά ανά ακτίνα και σάστισμα για {s:beam_stun} δευτερόλεπτα, με μέγιστο {s:hit_count} ακτίνες ανά εχθρική μονάδα."
 
 		"dac_ability_dazzle_3star"													"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ DAZZLE"
-		"dac_ability_dazzle_3star_Description"										"Στα τρία αστέρια, ο Dazzle προσφέρει ένα Shallow Grave σε όλες τις φιλικές μονάδες εντός {s:never_die_range} κελιού. Όλες οι ευλογημένες μονάδες επιβιώνουν για επιπλέον {s:never_die_duration} δευτερόλεπτα αφού λάβουν ένα θανάσιμο χτύπημα."
+		"dac_ability_dazzle_3star_Description"										"Ο Dazzle προσφέρει ένα Shallow Grave σε όλες τις φιλικές μονάδες εντός {s:never_die_range} κελιού. Όλες οι ευλογημένες μονάδες επιβιώνουν για επιπλέον {s:never_die_duration} δευτερόλεπτα αφού λάβουν ένα θανάσιμο χτύπημα."
 
 		"dac_ability_broodmother_3star"												"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ BROODMOTHER"
-		"dac_ability_broodmother_3star_Description"									"Στα τρία αστέρια, όσο είναι ζωντανή, η Broodmother κάνει όλα τα συμμαχικά αραχνίδια Spiderlings άτρωτα."
+		"dac_ability_broodmother_3star_Description"									"Όσο είναι ζωντανή, η Broodmother κάνει όλα τα συμμαχικά αραχνίδια Spiderlings άτρωτα."
+
+		"dac_ability_pudge_3star"													"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ PUDGE"
+		"dac_ability_pudge_3star_Description"										"Ο Pudge γίνεται ένας σωρός κρέατος και αποκτάει {s:bonus_health_per_death} μέγιστη ζωή και {s:magical_resistance}% μαγική αντίσταση κάθε φορά που πεθαίνει ένας εχθρός εντός {s:radius} κελιού από αυτόν."
+
+		"dac_ability_viper_3star"													"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ VIPER"
+		"dac_ability_viper_3star_Description"										"Ο Viper εκτελεί ένα Viper Strike κάθε {s:num_attacks} επιθέσεις. Η εχθρική μονάδα λαμβάνει {s:damage} ζημιά το δευτερόλεπτο και χάνει {s:bonus_movement_speed}% ταχύτητα κίνησης και {s:bonus_attack_speed} ταχύτητα επίθεσης, με την επιβράδυνση να εξασθενεί σταδιακά σε {s:debuff_duration} δευτερόλεπτα."
+
+		"dac_ability_beastmaster_3star"												"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ BEASTMASTER"
+		"dac_ability_beastmaster_3star_Description"									"Ο Beastmaster λαμβάνει {s:damage_reduction}% λιγότερη ζημιά από κλητευμένες μονάδες και είναι άτρωτος σε οποιαδήποτε μαγική επίδραση από αυτές."
+
+		"dac_ability_juggernaut_3star"												"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ JUGGERNAUT"
+		"dac_ability_juggernaut_3star_Description"									"Ο Juggernaut αποκτάει το Blade Dance: κάθε επίθεση έχει {s:crit_chance}% πιθανότητα για καίριο χτύπημα για {s:crit_bonus}% ζημιά."
+
+		"dac_ability_queenofpain_3star"												"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ QUEEN OF PAIN"
+		"dac_ability_queenofpain_3star_Description"									"Η Queen of Pain σαγηνεύει κοντινούς εχθρούς, επιτρέποντάς της να έχει {s:evasion}% πιθανότητα να αποφύγει επιθέσεις από εχθρούς έως {s:radius} κελιά μακριά."
+
+		"dac_ability_drow_ranger_3star"												"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ DROW RANGER"
+		"dac_ability_drow_ranger_3star_Description"									"Τα βέλη της Drow Ranger γίνονται παγωμένα βέλη. Αυτά τα βέλη επιβραδύνουν την ταχύτητα κίνησης μιας χτυπημένης μονάδας κατά {s:move_speed_loss}% και την ταχύτητα επίθεσής της κατά {s:attack_speed_loss}. Αυτή η επίδραση παραμένει για {s:slow_duration} δευτερόλεπτα."
+
+		"dac_ability_abaddon_3star"													"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ ABADDON"
+		"dac_ability_abaddon_3star_Description"										"Ο Abaddon αποκτάει την ικανότητα να εφαρμόζει Curse of Avernus σε εχθρούς που επιτίθεται. Αφότου ο Abaddon επιτεθεί στην ίδια μονάδα {s:min_stacks} φορές συνεχόμενα, αυτή η μονάδα δέχεται σιγή για {s:silence_duration} δευτερόλεπτα και ο Abaddon αποκτάει +{s:attack_speed} ταχύτητα επίθεσης εναντίον της. Αυτό επαναφέρεται για κάθε επιπλέον επίθεση που καταφέρει, αλλά ξεκινάει ξανά από το 0 αν ο Abaddon αλλάξει στόχους."
+
+		"dac_ability_bloodseeker_3star"												"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ BLOODSEEKER"
+		"dac_ability_bloodseeker_3star_Description"									"Ο Bloodseeker αποκτά την επαύξηση καίριας επίθεσης του τρέχοντος επιπέδου της Συμμαχίας Δολοφόνων, αν υπάρχει."
+
+		"dac_ability_morphling_3star"												"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ MORPHLING"
+		"dac_ability_morphling_3star_Description"									"Το Morphling αποκτά τις επαυξήσεις εντός μάχης όλων των ενεργών εχθρικών Συμμαχιών σαν να ήταν εχθρικός Πρωταθλητής."
+
+		"dac_ability_shadow_fiend_3star"											"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ SHADOW FIEND"
+		"dac_ability_Shadow_fiend_3star_Description"								"Ο Shadow Fiend αποκτάει το Presence of the Dark Lord. Οι εχθροί εντός {s:radius} κελιών λαμβάνουν -{s:armor_reduction} θωράκιση λόγω της τρομακτικής παρουσίας του Shadow Fiend."
+
+		"dac_ability_magnataur_3star"												"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ MAGNUS"
+		"dac_ability_magnataur_3star_Description"									"Ο Magnus αποκτάει το Reverse Polarity. Με την εκτέλεση, οι εχθροί εντός {s:radius} κελιών λαμβάνουν {s:damage} ζημιά και σαστίζονται για {s:duration} δευτερόλεπτο."
+
+		"dac_ability_arc_warden_3star"												"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ ARC WARDEN"
+		"dac_ability_arc_warden_3star_Description"									"Οι κλώνοι του Tempest Double αντιγράφουν το αντικείμενο του Arc Warden."
+
+		"dac_ability_bat_rider_3star"												"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ BATRIDER"
+		"dac_ability_bat_rider_3star_Description"									"Το Sticky Napalm αναφλέγει εχθρούς. Δείτε την ικανότητα για λεπτομέρειες."
+
+		"dac_ability_nyx_assassin_3star"											"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ NYX ASSASSIN"
+		"dac_ability_nyx_assassin_3star_Description"								"Το Vendetta μπορεί να εκτελεστεί πιο συχνά. Δείτε την ικανότητα για λεπτομέρειες."
+
+		"dac_ability_shadow_demon_3star"											"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ SHADOW DEMON"
+		"dac_ability_shadow_demon_3star_Description"								"Ο Shadow Demon εφαρμόζει Soul Catcher στο στόχο του Demonic Purge. Δείτε την ικανότητα για λεπτομέρειες."
+
+		"dac_ability_tusk_3star"													"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ TUSK"
+		"dac_ability_tusk_3star_Description"										"Το Walrus Punch επιβραδύνει εχθρούς για μεγαλύτερη διάρκεια και τους προκαλεί να χάνουν ταχύτητα επίθεσης καθώς και κίνησης. Δείτε την ικανότητα για λεπτομέρειες."
+
+		"dac_ability_venomancer_3star"												"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ VENOMANCER"
+		"dac_ability_venomancer_3star_Description"									"Τα δηλητηριώδη φυτά είναι απρόσβλητα από μαγική ζημιά."
+
+		"dac_ability_weaver_3star"													"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ WEAVER"
+		"dac_ability_weaver_3star_Description"										"Οι επιθέσεις του Weaver καίνε ενέργεια μετά από Shukuchi. Δείτε την ικανότητα για λεπτομέρειες."
+
+		"dac_ability_bristleback_3star"												"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ BRISTLEBACK"
+		"dac_ability_bristleback_3star_Description"									"Η επαναφόρτιση του Quill Spray μειώνεται σημαντικά. Δείτε την ικανότητα για λεπτομέρειες."
+
+		"dac_ability_earth_spirit_3star"											"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ EARTH SPIRIT"
+		"dac_ability_earth_spirit_3star_Description"								"Το Geomagnetic Grip σαστίζει εχθρούς. Δείτε την ικανότητα για λεπτομέρειες."
+
+		"dac_ability_natures_prophet_3star"											"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ NATURE'S PROPHET"
+		"dac_ability_natures_prophet_3star_Description"								"Τα δέντρα αναβιώνουν στην εχθρική πλευρά της πίστας."
+
+		"dac_ability_ogre_magi_3star"												"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ OGRE MAGI"
+		"dac_ability_ogre_magi_3star_Description"									"Ο Ogre Magi έχει πιθανότητα να εκτελέσει Bloodlust με Multicast. Δείτε την ικανότητα για λεπτομέρειες."
+
+		"dac_ability_slardar_3star"													"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ SLARDAR"
+		"dac_ability_slardar_3star_Description"										"Ο Slardar προκαλεί επίθεση σαστίσματος μετά από εκτέλεση του Corrosive Haze. Δείτε την ικανότητα για λεπτομέρειες."
+
+		"dac_ability_windrunner_3star"												"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ WINDRANGER"
+		"dac_ability_windrunner_3star_Description"									"Η Windranger αποκτάει αποφυγή και μαγική απροσβλητότητα ενώ εκτελεί Powershot. Δείτε την ικανότητα για λεπτομέρειες."
+
+		"dac_ability_witch_doctor_3star"											"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ WITCH DOCTOR"
+		"dac_ability_witch_doctor_3star_Description"								"Οι εχθροί που πλήττονται από Paralyzing Cask καταριούνται με Maledict. Δείτε την ικανότητα για λεπτομέρειες."
+
+		"dac_ability_ember_spirit_3star"											"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ EMBER SPIRIT"
+		"dac_ability_ember_spirit_3star_Description"								"Η περιοχή επίδρασης του Sleight of Fist διπλασιάζεται. Δείτε την ικανότητα για λεπτομέρειες."
+
+		"dac_ability_enigma_3star"													"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ ENIGMA"
+		"dac_ability_enigma_3star_Description"										"Η περιοχή επίδρασης του Midnight Pulse τριπλασιάζεται. Δείτε την ικανότητα για λεπτομέρειες."
+
+		"dac_ability_wisp_3star"													"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ IO"
+		"dac_ability_wisp_3star_Description"										"Το Relocate επαναφέρει τις επαναφορτίσεις του ήρωα που αναβιώνει."
+
+		"dac_ability_lycan_3star"													"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ LYCAN"
+		"dac_ability_lycan_3star_Description"										"Το Shapeshift κλητεύει περισσότερους λύκους. Δείτε την ικανότητα για λεπτομέρειες."
+
+		"dac_ability_omniknight_3star"												"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ OMNIKNIGHT"
+		"dac_ability_omniknight_3star_Description"									"Η περιοχή επίδρασης του Purification τριπλασιάζεται. Δείτε την ικανότητα για λεπτομέρειες."
+
+		"dac_ability_shadow_shaman_3star"											"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ SHADOW SHAMAN"
+		"dac_ability_shadow_shaman_3star_Description"								"Ο Shadow Shaman μεταμορφώνει τη μονάδα που στοχεύει με το Mass Serpent Ward."
+
+		"dac_ability_treant_protector_3star"										"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ TREANT PROTECTOR"
+		"dac_ability_treant_protector_3star_Description"							"Οι μονάδες που θεραπεύονται από το Leech Seed λαμβάνουν επίσης Living Armor. Δείτε την ικανότητα για λεπτομέρειες."
+
+		"dac_ability_storm_spirit_3star"											"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ STORM SPIRIT"
+		"dac_ability_storm_spirit_3star_Description"								"Ο Storm Spirit αποκτάει το Overload. Όποτε εκτελεί ένα ξόρκι φορτίζεται με ηλεκτρισμό που απελευθερώνεται με την επόμενη επίθεση του Storm Spirit, προκαλώντας {s:damage} ζημιά και επιβράδυνση στην ταχύτητα επίθεσης του στόχου κατά {s:attack_speed_loss} για {s:slow_duration} δευτερόλεπτα. Ένα τριγωνικό χτύπημα Δέλτα από τον Storm Spirit μετράει σαν μια επίθεση, οπότε και όλες οι μονάδες που πλήττει ο Storm Spirit λαμβάνουν τη ζημιά και επιβραδύνονται."
+		
+		"dac_ability_legion_commander_3star"										"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ"
+		"dac_ability_legion_commander_3star_Description"							"Οποιοιδήποτε σύμμαχοι εντός εμβέλειας θα επιτεθούν επίσης στο στόχο της Legion Commander κατά το Duel."
+
+		"dac_ability_life_stealer_3star"										"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ LIFESTEALER"
+		"dac_ability_life_stealer_3star_Description"							"Ο Lifestealer αποκτάει το Rage. Με την εκτέλεση ο Lifestealer γίνεται μαγικά απρόσβλητος και αποκτάει +{s:bonus_movement_speed_pct}% ταχύτητα κίνησης και +{S:bonus_attack_speed} ταχύτητα επίθεσης. Η επίδραση διαρκεί για {s:duration} δευτερόλεπτα."
+
+		"dac_ability_snapfire_3star"												"ΕΦΕ 3 ΑΣΤΕΡΙΩΝ SNAPFIRE"
+		"dac_ability_snapfire_3star_Description"									"Το Ol' Scatterblast επίσης μειώνει την εχθρική θωράκιση. Δείτε την ικανότητα για λεπτομέρειες."
 	}
 }

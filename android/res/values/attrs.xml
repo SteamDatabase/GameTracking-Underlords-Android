@@ -137,8 +137,11 @@
     </attr>
     <attr name="buttonBarStyle" format="reference">
     </attr>
+    <attr name="buttonCompat" format="reference">
+    </attr>
     <attr name="buttonGravity">
         <flag name="bottom" value="80" />
+        <flag name="center_vertical" value="16" />
         <flag name="top" value="48" />
     </attr>
     <attr name="buttonIconDimen" format="dimension">
@@ -211,8 +214,6 @@
     </attr>
     <attr name="controlBackground" format="reference">
     </attr>
-    <attr name="coordinatorLayoutStyle" format="reference">
-    </attr>
     <attr name="customNavigationLayout" format="reference">
     </attr>
     <attr name="defaultQueryHint" format="string">
@@ -240,7 +241,29 @@
     </attr>
     <attr name="dividerVertical" format="reference">
     </attr>
+    <attr name="drawableBottomCompat" format="reference">
+    </attr>
+    <attr name="drawableEndCompat" format="reference">
+    </attr>
+    <attr name="drawableLeftCompat" format="reference">
+    </attr>
+    <attr name="drawableRightCompat" format="reference">
+    </attr>
     <attr name="drawableSize" format="dimension">
+    </attr>
+    <attr name="drawableStartCompat" format="reference">
+    </attr>
+    <attr name="drawableTint" format="color">
+    </attr>
+    <attr name="drawableTintMode">
+        <enum name="add" value="16" />
+        <enum name="multiply" value="14" />
+        <enum name="screen" value="15" />
+        <enum name="src_atop" value="9" />
+        <enum name="src_in" value="5" />
+        <enum name="src_over" value="3" />
+    </attr>
+    <attr name="drawableTopCompat" format="reference">
     </attr>
     <attr name="drawerArrowStyle" format="reference">
     </attr>
@@ -323,56 +346,17 @@
     </attr>
     <attr name="itemPadding" format="dimension">
     </attr>
-    <attr name="keylines" format="reference">
-    </attr>
     <attr name="lastBaselineToBottomHeight" format="dimension">
     </attr>
     <attr name="layout" format="reference">
     </attr>
-    <attr name="layout_anchor" format="reference">
-    </attr>
-    <attr name="layout_anchorGravity">
-        <flag name="bottom" value="80" />
-        <flag name="center" value="17" />
-        <flag name="center_horizontal" value="1" />
-        <flag name="center_vertical" value="16" />
-        <flag name="clip_horizontal" value="8" />
-        <flag name="clip_vertical" value="128" />
-        <flag name="end" value="8388613" />
-        <flag name="fill" value="119" />
-        <flag name="fill_horizontal" value="7" />
-        <flag name="fill_vertical" value="112" />
-        <flag name="left" value="3" />
-        <flag name="right" value="5" />
-        <flag name="start" value="8388611" />
-        <flag name="top" value="48" />
-    </attr>
-    <attr name="layout_behavior" format="string">
-    </attr>
-    <attr name="layout_dodgeInsetEdges">
-        <flag name="all" value="119" />
-        <flag name="bottom" value="80" />
-        <flag name="end" value="8388613" />
-        <flag name="left" value="3" />
-        <flag name="none" value="0" />
-        <flag name="right" value="5" />
-        <flag name="start" value="8388611" />
-        <flag name="top" value="48" />
-    </attr>
-    <attr name="layout_insetEdge">
-        <enum name="bottom" value="80" />
-        <enum name="end" value="8388613" />
-        <enum name="left" value="3" />
-        <enum name="none" value="0" />
-        <enum name="right" value="5" />
-        <enum name="start" value="8388611" />
-        <enum name="top" value="48" />
-    </attr>
-    <attr name="layout_keyline" format="integer">
-    </attr>
     <attr name="lineHeight" format="dimension">
     </attr>
     <attr name="listChoiceBackgroundIndicator" format="reference">
+    </attr>
+    <attr name="listChoiceIndicatorMultipleAnimated" format="reference">
+    </attr>
+    <attr name="listChoiceIndicatorSingleAnimated" format="reference">
     </attr>
     <attr name="listDividerAlertDialog" format="reference">
     </attr>
@@ -390,9 +374,13 @@
     </attr>
     <attr name="listPreferredItemHeightSmall" format="dimension">
     </attr>
+    <attr name="listPreferredItemPaddingEnd" format="dimension">
+    </attr>
     <attr name="listPreferredItemPaddingLeft" format="dimension">
     </attr>
     <attr name="listPreferredItemPaddingRight" format="dimension">
+    </attr>
+    <attr name="listPreferredItemPaddingStart" format="dimension">
     </attr>
     <attr name="logo" format="reference">
     </attr>
@@ -401,6 +389,8 @@
     <attr name="maxButtonHeight" format="dimension">
     </attr>
     <attr name="measureWithLargestChild" format="boolean">
+    </attr>
+    <attr name="menu" format="reference">
     </attr>
     <attr name="multiChoiceItemLayout" format="reference">
     </attr>
@@ -504,8 +494,6 @@
     </attr>
     <attr name="state_above_anchor" format="boolean">
     </attr>
-    <attr name="statusBarBackground" format="reference|color">
-    </attr>
     <attr name="subMenuArrow" format="reference">
     </attr>
     <attr name="submitBackground" format="reference">
@@ -549,6 +537,8 @@
     <attr name="textColorAlertDialogListItem" format="reference|color">
     </attr>
     <attr name="textColorSearchUrl" format="reference|color">
+    </attr>
+    <attr name="textLocale" format="string">
     </attr>
     <attr name="theme" format="reference">
     </attr>

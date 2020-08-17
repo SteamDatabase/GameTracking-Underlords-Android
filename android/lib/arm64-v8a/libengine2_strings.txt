@@ -55,6 +55,7 @@ $0$1$2 $3 = $4
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+02:25:38
 [%02d:%02d:%02.3f]: %s
 %0.2f, %0.2f, %0.2f, %i, %0.2f, %0.2f, %0.2f, %0.2f, %0.2f, %0.2f, %i, %i, setpos %0.2f %0.2f %0.2f; setang %0.2f %0.2f %0.2f
 %02i/%02i %02i:%02i:%02i 
@@ -120,6 +121,7 @@ $0 to $1,
 10IVProfData
 1 1 1
 1.1.3
+(119}D
 11CBugService
 11CDemoPacket
 11CDemoPlayer
@@ -695,8 +697,7 @@ $0 to $1,
 1@9M5
 19NetMessagePacketEnd
 19RestartMapToolEvent
-	1)9v
-	1?9 X
+	1;9S
 !1AQaq
 !>@=1B
 1bQJ1~
@@ -704,7 +705,6 @@ $0 to $1,
     1 = force cl_predict to 1
 1hqx2hrx?
    -1 = let clients set cl_predict to anything
-	1P9i
 1 = Pause the game when pressing ~ to open the console. CTRL+~ opens the console without pause.
 1.QB!
 1 - resize right
@@ -714,7 +714,6 @@ $0 to $1,
 /1V?O	
 /1V?OA
 /1V?OR
-	1W9)
  1: write to NULL
 *1x0x
 !2@=!
@@ -753,7 +752,6 @@ $0 to $1,
 20ISource2WorldSession
 20PacketEntitiesFilter
 20SpawnEntityToolEvent
-21:02:12
 21C2S_CONNECT_Message_t
 21CBidirMsg_RelayPacket
 21.CBidirMsg_RelayPacket.SignedDestinationAddress_t
@@ -920,6 +918,7 @@ $0 to $1,
 27ITestScriptCommandProcessor
 2_!7k
 27NetMessageConnectionCrashed
+	2!87
 28CBoneConstraintPoseSpaceBone
 28CCLCMsg_SplitPlayerConnect_t
 28CEmptyEntityResourceManifest
@@ -934,6 +933,7 @@ $0 to $1,
 28INetworkStringTableContainer
 2_!8k
 2@9()
+	}29@2
 29CBidirMsg_RebroadcastSource_t
 29CBoneConstraintPoseSpaceMorph
 29CCLCMsg_SplitPlayerDisconnect
@@ -948,8 +948,9 @@ $0 to $1,
 29ILoopModePrerequisiteRegistry
 29IToolGameSimulationDispatcher
 2,	@9L
+	}29R3
+	}29s5
 29ToolEvent_GetEntityInfoResult
-2?a29
 2	a@9Ia
 2	AA9
 2Ay)	
@@ -967,7 +968,9 @@ $0 to $1,
 %.2f GB
 2#GameUI_Disconnect_RemoteProblem_TimeoutConnecting
 2Gio8
+2h"29
 2	h(8
+2H#+93
 2hB	9
 2hb@9H
 2hBK9H
@@ -990,13 +993,14 @@ $0 to $1,
 2j"	9I
 2j"@9)p
 2?".k
-2?k78W
+2?k78\
 2_k88
-2?k88V
+2?k88[
 2kii8l}C
 2Kkj8k
 2L%@x+
 2 .ProtoFlattenedSerializerField_t"!
+2	q 9a(
 2 - resize down
 2Way_0( %s )
 2Way_1( %s )
@@ -1164,14 +1168,16 @@ $4DTdt
 ,5@9_
 )5@9)}
 	5@9)
+	5;92
 59CNetworkClientSpawnGroup_WaitForOwnerSpawnGroupPrerequisite
 59CNetworkServerSpawnGroup_WaitForOwnerSpawnGroupPrerequisite
+	5{9i
 *5@9J
 5@9J9
-	5?9/W
 	5Ay*
 5CVEfx
 % 5d: % 5d
+	5D9I
 %5d:  DispatchEvent( %s )
 %5EUeu
 5h2I9h
@@ -1438,6 +1444,7 @@ _8X,@8
 8x9,7
 _8y,@8
  @9	$
+_#+9(
 --@9_
 -!@9_
 -)@9_
@@ -1458,15 +1465,19 @@ _8y,@8
 @9*	@
 @9+	@
 $@9	(
+*(!$9@
+	-)9}
 	)@9)
 	)@9*
 	@9*]
+		&9	
+		#9}
 ,@9	0
+	)	90
 @90	@9
 9	0@9i
 9.1.15
 @91#@92
-		>92
 92ji8R
 @92yr
 @9>3@9*
@@ -1490,7 +1501,6 @@ $@9	(
 9*	@9)
 9*	@9*
 9+	@9
-99		@
 @9/'@90
 . @9/$@90(@918@9.}
 9	!@9i
@@ -1521,9 +1531,9 @@ $@9	(
 9CDemoStop
 9CGameInfo
 9CRegistry
-	=?9CW
 9	D@8
-	-?9DX
+	9D9I
+	%$9E\
 9*E@8?
 @9E-@9U
 @9h*@
@@ -1561,12 +1571,12 @@ $@9	(
 9hVA9
 9hVB9
 9hV@yvR
-	)?9hX
 9hZA9
 9hZB9
 ) @9i
-@@9i"
 @9i&@
+	={9i
+@@9I"
 @9I	@
 "@9i"@9
 9IBlackBox
@@ -1615,7 +1625,6 @@ $@9	(
 9kj(8|
 9Kkj8k
 9Kkj8k}
-	)+9l
 @9L	@9l
 @9L=@9M
 9l"A9
@@ -1634,7 +1643,6 @@ $@9	(
 @9n	@9o
 @9O	@9P
 @9p	@9
-		?9pY
 &,@9R
 &$@9R
 %<@9R
@@ -1642,6 +1650,7 @@ $@9	(
 %(@9R
 @9R1@9D
 9	S)M*
+	-;9t
 @9T|@
 @9T)@9K
 (@@9tB
@@ -1649,7 +1658,6 @@ $@9	(
 @9V%@9W
 @9-{vx
 @9){vxl
-	!+9W
 /9W?O
 /9W?OZ
 @9 y@
@@ -1661,7 +1669,10 @@ $@9	(
 #@)`~A
 A-!(!
 A)`~@
+	a2926
 a2@yh2@y
+	a69o%
+	a89B"
 a8#%D
 _A8qh
 +a@9?
@@ -1670,14 +1681,17 @@ _A8qh
 		A9	
 	A@9)
 	A@9)	
+	A%9%
 a@9+a
 a@9	a
 		A9h
 	A9h&A
+A^9hK
 	a@9i
 ^A9i^
 "A9i"
 *	A9i
+	A{9i
 	A@9i
 A9i>@
 	A@9I
@@ -1691,6 +1705,7 @@ A9|J@
 A9Kik
 +	A9lC
 ?A9tJ@
+	a%9(W
 A-'@A-
 AA9(	
 AA9(	@
@@ -1728,6 +1743,8 @@ active_spawngroup_handle
 ACT_NEUTRAL_REF_POSE
     Actual    : 
   Actual   : 
+	aD9I
+	AD9I
 -adapter
 Adapter: %d
 AddAllocatedMessage
@@ -1787,6 +1804,7 @@ AddUInt64
 Adobe APP14 marker: version %d, flags 0x%04x 0x%04x, transform %d
 !	A)Dr
 AE- "$
+	AE9	
 AE_ACTION_SET_TURN_RATE_SCALE
 AE_BLIND_ZOMBIE_SNIFF
 AE_CL_ADD_PARTICLE_EFFECT_CP
@@ -1823,7 +1841,6 @@ After selecting and moving a panel Ctrl-z will undo the move.
 after solve err=%f
 After this many seconds without a message from fully connected client, the client is dropped
 After this many seconds without receiving a packet from the server, the client will disconnect itself
-	AG9i
 A game file appears to be missing or corrupted.  In the Steam client go to the game's properties.  In the 'Local Files' tab select 'Verify Integrity of Game Cache' to have Steam double-check the game's installation.
 A-gBA-
 Agg data %d: %p (%d parts, crc 0x%08X)
@@ -1832,8 +1849,6 @@ aggregate_value
 <a href=
 A!;I2
 	AI9i
-	aI9j2
-	aI9J2
 #A)iBB
 ai_model_info
 .A)iV@
@@ -1876,6 +1891,7 @@ Already recording movie!
 Already saw decimal point or exponent; can't have another one.
 "alt"	"1"
 Always force all engine & tools to render
+	AM9i
 (aN0*aN
 analogbindings
 an argument is not allowed for (*ACCEPT), (*FAIL), or (*COMMIT)
@@ -1967,7 +1983,6 @@ App UI Language: %s, convar %s
  a protocol 
 A protocol message was rejected because it was too big (more than 
 A\@Q!`
-	aQ9	
 A@qA	
 archive
  args were given.  Full format string was: "
@@ -1977,6 +1992,7 @@ armedFgColor_override
 ArmItem
 Arrow keys slowly move panels, holding shift + arrow will slowly resize it.
 Artist Triangles Rendered: 
+	AS9?
 ascii
 ASCII conversion buffer too small
 *** A special note about internal error number 1007 ***
@@ -2004,6 +2020,7 @@ AsyncBeginRenderingViews
 async_serialize
 async_track_all
 asyncwrite
+	AT9)
 \ at end of pattern
 ATI1N
 ATI2N
@@ -2032,10 +2049,12 @@ attenuation2
 _attr_
 attrib
 Attribute "%s" was defined more than once.
+	aU9	
 audible_mask
 audio
 AudioLanguage
 AudioSubLanguage
+Aug  6 2020
 auth_protocol
 auth_steam
 auth succeeded
@@ -2074,6 +2093,7 @@ avisound
 /AV?O!
 A{"xB
 Ax_! k
+)AY9?
 A@yi*@
 A)`z@
 AZUy!
@@ -2086,8 +2106,8 @@ B-1HD-
 B@9	A
 ^B9h^
 b@9hb
-	}b9i
 b"@9i
+	]B9i
 b@9ib
 bA9hb
 BA9hB
@@ -2444,6 +2464,7 @@ C9fj@
  c@9!g@9"
 cA9s~
 cable
+cacert.pem
 cache/DownloadCache.db
 cachefile_%s
 Cache sendtables
@@ -2468,6 +2489,11 @@ Camera settings can't be changed during a live broadcast.
 C(aN#
 CanBeDefaultButton
 Candidate
+CAndroidSteamSSLFix() found cacert.pem at "%s"
+CAndroidSteamSSLFix() old working directory "%s"
+CAndroidSteamSSLFix() restoring existing working directory to "%s"
+CAndroidSteamSSLFix() start
+CAndroidSteamSSLFix() using lowest game layer "%s"
 CAnimMotorList
 CAnimMovementManager
 Cannot allocate abstract class
@@ -2781,6 +2807,7 @@ channels
 "channels" attribute not found in the header.
 character
 character value in \x{...} sequence is too large
+chdir
 CHeapCompactionService
 cheat
 cheat_codes
@@ -3907,11 +3934,13 @@ d6@yc
 	D@8!
 D@8)%
 	D@8)m
+!d9	*
 "D@9%
+	%D9)
 D@9_ 
 D9{6@
-	!D9I
-	%D9I
+	=D9I
+	-D9I
 -dac_offline
 %d addons loaded
 ,DA)R
@@ -4285,7 +4314,12 @@ dynamic_interaction
 .dynstr
 .dynsym
 E-!("
+	e29g
+	e29y
+	e49]
+	E{9i
  *Each frame will render %d times*
+	eB9I
 echoln
 Echo log information to the console.
 Echo text to console.
@@ -4293,6 +4327,8 @@ Echo the command arguments on the console
 Echo to the console changes caused by toggling.
 EconItemToolModel_001
 E)d6@
+	eD9I
+	ED9I
 _edata
 EDemoCommands
 editable
@@ -4310,7 +4346,6 @@ ehandle
 .eh_frame
 .eh_frame_hdr
 eikonal
-	EL9?
 element
 element_array
 elementid
@@ -5415,6 +5450,7 @@ GetCommand
 GetConnectionInfo failed.  Did somebody else close the connection?
 GetCPUInformation
 GetCStringCharConversion
+getcwd
 GetDebugName
 GetDesignerNameForScriptClass
 GetDouble
@@ -5599,7 +5635,7 @@ h"B9h
 hB@9h
 h"B9H
 hB@9H
-hB@9i"
+hB@9I"
 hB@9t
 hb@9v
 hbA9(
@@ -5613,8 +5649,6 @@ hbGyi
 hBH9H
 *hBK9
 hBK9H
-hbL9H
-hBr9	1
 =hb@y
 hB.y(5
 *hB.yK
@@ -5802,6 +5836,8 @@ hzT9`zA
 	*	i*
 	*I}`
 i2@9(
+	i29&4
+	i29G6
 i2@9j
 %i %3i.%3i.%3i.%3i : %.3f min
 %i %3i.%3i.%3i.%3i : permanent
@@ -5809,9 +5845,11 @@ i6@yh
 i78w"B
 i7xh>@
 _i(8+
-?i(8,
+?i(8|
 	*	i8
 	I*8)
+?i(85
+	i89W"
 ?i(8a
 i)8a^A
 *i(8B
@@ -5829,16 +5867,18 @@ i)8i&W
 i)8j&W
 i*8j&W
 i(8m&W
-?i(8N
-?i(8s
 ?i(8v
+?i(8W
 i*8?y*xJ
 *i"@9
-	%i9)
+	I%9:
 I9`BA
 [i9h	
+	-i9i
+	I{9i
 )I@9I
 i"@9J
+	I;9u
 IAppSystem *CAppSystemDict::AddSystem(const char *, const char *, ErrorResponse_t)
 IAppSystem *CAppSystemDict::AddSystem(CreateInterfaceFn, const char *)
 IAppSystem *CAppSystemDict::AddSystem(IAppSystem *, const char *)
@@ -5925,6 +5965,8 @@ I CUtlRBTree<EntityClassAutoCompleteEntry_t, unsigned short, bool (*)(const Enti
 I CUtlRBTree<vgui::ListPanel::IndexItem_t, int, bool (*)(const vgui::ListPanel::IndexItem_t &, const vgui::ListPanel::IndexItem_t &), CUtlMemory<UtlRBTreeNode_t<vgui::ListPanel::IndexItem_t, int>, int> >::NewNode(const T *) [T = vgui::ListPanel::IndexItem_t, I = int, L = bool (*)(const vgui::ListPanel::IndexItem_t &, const vgui::ListPanel::IndexItem_t &), M = CUtlMemory<UtlRBTreeNode_t<vgui::ListPanel::IndexItem_t, int>, int>]
 I CUtlRBTree<void *, int, bool (*)(void *const &, void *const &), CUtlMemory<UtlRBTreeNode_t<void *, int>, int> >::NewNode(const T *) [T = void *, I = int, L = bool (*)(void *const &, void *const &), M = CUtlMemory<UtlRBTreeNode_t<void *, int>, int>]
 $Id8g
+	iD9I
+	ID9I
 -ideal_mobile_resolution_low_end_y
 -ideal_mobile_resolution_y
 "id" "elementid" 
@@ -6485,8 +6527,9 @@ j4xH;@
 j58($
 j58hf@9(
 j58"l
-j58z#
+j688!
 j68u"@
+j68x&
 j7Ayh3Ay)	
 j)8hjj
 j(8`j
@@ -6604,7 +6647,6 @@ js_value
 @@J	t
 /JU7OB
 Jumping to random tick %d (%.2f min)
-Jun  4 2020
 just happens to cross-check the results of huge numbers of
 JustInTime Resource Spawn Group
 jv8?)
@@ -6626,21 +6668,21 @@ K1@yk
 *k2@y
 ?k58D
 K5@yk
-k68	X
 *?k78
 ?k78h
+k78h&
 k78h#
 ?k)8(
 k(8(*
 _k88?
 ?k88_
+?k88h&
 ?k88w
 k(8vV@
 K!@9+!
 K	@9)
 _k98h!
 _k98x
-	K9C$
 K9@yk
 K	A9lC
 kaJJk[k
@@ -6839,7 +6881,6 @@ kn1V?OK
 :(knNengine_show_frame_ticks
 Known by handlers: 
 Known Peer State "%s"
-	*kQ1
 Kq@yk
 KQ@yk
 K)T9J!P9j
@@ -6913,6 +6954,7 @@ LayoutFileChanged
 [lazy = true] can only be specified for submessage fields.
 lb@9l
 LC_ALL
+LCl9j
 L=cl_clock_correction
 %ld%c
 leading_comments
@@ -7160,10 +7202,14 @@ lseek
 %ls [wstring, len = %d]
 [L:%u:%u]
 :m@)<	@
+	m49f)
+	m89O 
+	m89Z!
+	M%93
+	m?9cb
 m%@9i)
-	m]9I
-	m"9t
-	m"9v
+	M{9i
+	M;9P
 m	A9j"
 m_aAngOffset
 Machine
@@ -7416,6 +7462,7 @@ m_ControlRigData
 m_cRenderColor
 m_CScriptComponent
 m_CullDataIndex
+	mD9I
 m_DefaultSolverSettings
 MDefaultString
 m_DefaultTargetSettings
@@ -7945,6 +7992,8 @@ m_sSurfaceProperty
 m_sTargetMorph
 m_Stops
 m_stringAttributes
+	mT9)
+	mt9i
 m_targetDesc
 m_targetInput
 m_targets
@@ -7958,7 +8007,6 @@ m_tipParentBoneName
 m_toeBoneName
 MTreatUnknownEnumeratorsAsZero
 m_Type
-	mU9i
 m_uint
 m_uint64
 multiplayer_break
@@ -8013,9 +8061,9 @@ m_vTraceOffset
 m_vTraceScale
 m_vUpLS
 m_vUpVector
+	mW9i
 m_worldGroupId
 m_wristBones
-	mY9i
 "N(  
 #N)	}	
 N}[ .=
@@ -8731,7 +8779,6 @@ p6jf@
 p6jR@
 p7v	P7
 P7x"@
-	-P9i
 "pA3QuW
 package
 package $0;
@@ -9324,11 +9371,11 @@ pvs.cpp
 PVS origin %s
 py_generic_services
 Q0*aN
-)Q@9?
-	-Q9i
+	q`9)
+?Q:9		@
+	Q;90
+	q?9>b
 *Q@9j
-	q"9S
-	q"9U
 Q(aNf(!
 qangle
 QAngle
@@ -9337,6 +9384,7 @@ QAngle-world
 q(	AzK
 QB)5}@
 	QB9i
+	qD9I
 QE@yk
 *	qG9)
 	qG9)
@@ -9379,6 +9427,7 @@ Quits game after demo playback.
 Quit the game
 Quitting
 Qu@yk
+	QV9i
 qWiw8
 #Q)Xy
 Q-@yk
@@ -9393,6 +9442,7 @@ R6hx8
 R8G8B8A8_ETC2_EAC
 R8G8B8_ETC2
 *R)8yv
+	}r9i
 r@9ir
 R	9`V	9
 rA9hr
@@ -9853,7 +9903,7 @@ r_stereo_eye_separation
 r_stereo_mode_anaglyph
 r_stereo_mode_crossed
 r_stereo_mode_parallel
-Rtj(8
+Rtj(8 
 r_toggleviewportsize
 r_translucent
 rt+rld
@@ -9922,6 +9972,7 @@ S3: Duplicate client connection: UserID: %x SteamID %s
 %s %3i:  %s(vpanel%llu)(ctx%d)
 S3,	S48
 S)5K*j
+S:9		@
 %s. Ack, Net Buffer overflowed.
 %s:  adding %d:'%s' (%d total) userdata %d
 -safe_mode
@@ -11282,7 +11333,6 @@ T#8@9"8
 T$8@9C 
 t8HY@
 *T)8yv
-	!T9	
 T(@@9
 T)	@9
 T*	@9*
@@ -11304,6 +11354,7 @@ T#$@9D
 T#$@9D(
 T#,@9D0
 T#\@9D0
+	}T9i
 T*9	S
 t@9)uA
 T	/A)
@@ -11623,8 +11674,8 @@ TizEyJ
 Tj2@9j
 Tj2B9)
 Tj6@y_! k
-tj(8>
 TJ#]8
+tj(8C
 tj)8t
 T`"J9
 Tj"@9J
@@ -11910,11 +11961,13 @@ T"zrx
 \U%08x
 u64( %lld = 0x%llX )
 )U7O{
-	u"92
-	u"94
+	u89d 
+	u89o!
+	U%9H
 u>Byh2By
 %u CPU%s
 %u[%d]
+	UD9I
 udp/ip   : %s:%i
 udp_port
 -uidev
@@ -12107,6 +12160,7 @@ upper
 UpperEyelid( 
 uptime
 Uptime( %f )
+	ur9i
 URLLabel
 url_name
 URLName
@@ -12196,6 +12250,7 @@ usetitlesafe
 Using 10-bit blend indices: are you sure they are supproted on the target hardware?
 Using 16-bit blend indices
 Using AVI will bring up a dialog for choosing the codec, which may not show if you are running the engine in fullscreen mode!
+	uT9)
 UTF8)
 UTF-8 data when 
 utlbuffer.cpp
@@ -12205,6 +12260,7 @@ utlsymbol.cpp
 %u:%u:%u
 [U:%u:%u]
 [U:%u:%u:%u]
+	UV9i
 UVLX8888
 UVWQ8888
 u[|)x_})`
@@ -12257,7 +12313,6 @@ valveextensions.proto
 vanmgrph
 _V_AppendSlash
 VApplication001
-v@Apr  1 2020
 #var_
 var_encoder_sym
 variant
@@ -12462,6 +12517,7 @@ Visibility %s.
  (Visible)
 V_isnan
 V_iswspace
+v@Jan
 V_logf
 V_LogMultiline
 _V_MakeAbsolutePath
@@ -12757,7 +12813,6 @@ W6iB@
 w6if@
 W6if@
 W6ijA9
-	-W9i
 waiting
 waiting for first spawn group
 waiting for IsServerRunning()
@@ -12926,15 +12981,18 @@ XYZ values out of representable range
 @.y	%
 @y`&@
 	%@y?
+	y29e2
+	y29w3
 	y4xl
 @.y)5
 @y_!5k
 Y80ijx
 #Y80ijx
+	y89'!
 Y8Qikx
 #Y8Qikx
 #Y9 3
-	}Y9i
+	Y;9E
 @y?!9k
 y+	@9km
 Yaw; 
@@ -12944,14 +13002,16 @@ yaw_start
 @.yb4
 YB)5}@
 @.yB8
-	yb9i
 Y@    block %d: crc = 0x%8x, combined CRC = 0x%8x, size = %d
 +%@yBy|
 @yc|	
 #@@yc
 y#	@=c
 yC	@}c
+	YD9I
 @y+}E
+	Ye9)
+@y)!Fy
 #@yh^
 yh2By
 yh2@y
@@ -13016,12 +13076,14 @@ you_hear_them
 Your current chat group is "%s"
 @yO	@y
 y(qSy
-	yU9i
+	yr9i
+	yT9i
 yu>Byh:
 yuJ	9(a@
 @y	WDy
 Y`x($
 (y{x7
+	yx9i
 _Y)xhv@
 @y"y|
 y*	@y+
@@ -13029,7 +13091,6 @@ y	,@y)
 .@y)Y@
 @y	y5x
 @y	y6x
-	yY9i
 _Z10DevWarningPKcz
 _Z11ConColorMsgRK5ColorPKcz
 _Z13V_SplitStringPKcS0_R10CUtlVectorIPc10CUtlMemoryIS2_iEE
@@ -13077,6 +13138,7 @@ _ZN12CThreadFiberC1Em
 _ZN12CThreadMutex7TryLockEPKci
 _ZN13CBufferString10ExtendPathEPKcc
 _ZN13CBufferString10FixSlashesEc
+_ZN13CBufferString11ShortenPathEv
 _ZN13CBufferString11ToLowerFastEi
 _ZN13CBufferString12AppendConcatEiPKPKcPKib
 _ZN13CBufferString12AppendFormatEPKcz

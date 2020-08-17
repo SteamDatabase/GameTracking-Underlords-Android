@@ -2,16 +2,21 @@ package com.valvesoftware;
 
 import android.app.ActivityManager;
 import android.app.Application;
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Debug;
 import android.os.Environment;
+import android.os.Handler;
 import android.os.StatFs;
 import android.telephony.TelephonyManager;
 import android.util.Log;
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.BaseHttpStack;
+import com.android.volley.toolbox.HurlStack;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import java.io.File;
@@ -19,12 +24,14 @@ import java.io.File;
 public class JNI_Environment {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     private static INativeLibraryPathResolver m_NativeLibraryPathResolver;
+    public static Handler m_OSHandler;
     public static Application m_application;
     private static boolean m_bSetupCalled;
     private static String[] m_sNativeLibrarySearchPaths;
     private static File m_sPrivatePath;
     private static File m_sPublicPath;
-    public static String[] sm_ProgramArguments;
+    public static String m_sVPCPlatformName;
+    private static RequestQueue sm_VolleyQueue;
 
     public interface INativeLibraryPathResolver {
         String ResolveNativeLibraryPath(String str);
@@ -32,18 +39,21 @@ public class JNI_Environment {
 
     public static native String[] GetNeededSharedObjects(String str, boolean z);
 
+    public static native boolean IsSharedObjectLoadedNative(String str);
+
     private static native String setupNative(int i, Object obj, Class<?> cls, String str, String str2);
 
-    public static void setApplication(Application application) {
+    public static void onApplicationCreate(Application application, String str) {
+        m_OSHandler = new Handler();
         m_application = application;
-    }
-
-    public static void onBootStrap() {
-        AddNativeLibrarySearchPath(m_application.getApplicationContext().getApplicationInfo().nativeLibraryDir);
         m_sPrivatePath = new File(m_application.getFilesDir(), BuildConfig.APPLICATION_ID);
-        m_sPublicPath = SelfInstall.GetContentDirectory();
         if (!m_sPrivatePath.exists()) {
             m_sPrivatePath.mkdirs();
+        }
+        m_sPublicPath = SelfInstall.GetContentDirectory(Resources.GetString("BRANCH_ID"), str);
+        if (m_sPublicPath == null) {
+            Log.e("com.valvesoftware.JNI_Environment", "Could not determine a content directory");
+            System.exit(1);
         }
         if (!m_sPublicPath.exists()) {
             m_sPublicPath.mkdirs();
@@ -59,14 +69,11 @@ public class JNI_Environment {
         sb.append(GetAvailableStorageBytes(m_sPublicPath));
         sb.append(" Bytes total)");
         Log.i("com.valvesoftware.JNI_Environment", sb.toString());
+        AddNativeLibrarySearchPath(m_application.getApplicationContext().getApplicationInfo().nativeLibraryDir);
     }
 
-    public static String setup(INativeLibraryPathResolver iNativeLibraryPathResolver, String[] strArr) {
+    public static void setup() {
         boolean z;
-        sm_ProgramArguments = strArr;
-        if (iNativeLibraryPathResolver != null) {
-            SetPathResolver(iNativeLibraryPathResolver);
-        }
         try {
             System.loadLibrary("jni_environment");
             z = true;
@@ -81,9 +88,19 @@ public class JNI_Environment {
             cls = Class.forName(m_application.getPackageName() + ".R", false, m_application.getClassLoader());
         } catch (Throwable unused2) {
         }
-        String str = setupNative(Build.VERSION.SDK_INT, m_application, cls, m_sPrivatePath.getAbsolutePath(), m_sPublicPath.getAbsolutePath());
+        m_sVPCPlatformName = setupNative(Build.VERSION.SDK_INT, m_application, cls, m_sPrivatePath.getAbsolutePath(), m_sPublicPath.getAbsolutePath());
         m_bSetupCalled = true;
-        return str;
+        if (sm_VolleyQueue == null) {
+            sm_VolleyQueue = Volley.newRequestQueue((Context) m_application, (BaseHttpStack) new HurlStack());
+        }
+    }
+
+    public static String[] GetProgramArguments() {
+        Application GetInstance = Application.GetInstance();
+        if (GetInstance != null) {
+            return GetInstance.GetProgramArguments();
+        }
+        return null;
     }
 
     /* JADX WARNING: Missing exception handler attribute for start block: B:12:0x0019 */
@@ -142,25 +159,42 @@ public class JNI_Environment {
     }
 
     public static String GetVPCPlatformForABI(String str) {
-        if (str.startsWith("arm64")) {
-            return "androidarm64";
-        }
-        if (str.startsWith("armeabi")) {
+        if (str.equals("armeabi-v7a")) {
             return "androidarm32";
         }
-        if (str.equals("mips64")) {
-            return "androidmips64";
+        if (str.equals("arm64-v8a")) {
+            return "androidarm64";
         }
         if (str.equals("mips")) {
             return "androidmips32";
         }
-        if (str.equals("x86_64")) {
-            return "androidx8664";
+        if (str.equals("mips64")) {
+            return "androidmips64";
         }
         if (str.equals("x86")) {
             return "androidx8632";
         }
-        return null;
+        if (str.equals("x86_64")) {
+            return "androidx8664";
+        }
+        if (str.startsWith("arm")) {
+            if (str.contains("64")) {
+                return "androidarm64";
+            }
+            return "androidarm32";
+        } else if (str.startsWith("mips")) {
+            if (str.contains("64")) {
+                return "androidmips64";
+            }
+            return "androidmips32";
+        } else if (!str.startsWith("x86")) {
+            return null;
+        } else {
+            if (str.contains("64")) {
+                return "androidx8664";
+            }
+            return "androidx8632";
+        }
     }
 
     /* JADX WARNING: Removed duplicated region for block: B:116:0x04a8  */
@@ -1067,6 +1101,9 @@ public class JNI_Environment {
         boolean z;
         String str2;
         String str3;
+        if (IsSharedObjectLoaded(str)) {
+            return true;
+        }
         int indexOf = str.indexOf("/");
         int indexOf2 = str.indexOf("\\");
         if (indexOf < 0 || (indexOf2 >= 0 && indexOf2 < indexOf)) {
@@ -1158,30 +1195,50 @@ public class JNI_Environment {
     }
 
     public static boolean GetInAppPurchasePricingAsync(String str) {
-        return ((Application) m_application).QuerySkuDetailsAsync(str);
+        return Application.GetInstance().QuerySkuDetailsAsync(str);
     }
 
     public static boolean QueryExistingPurchases() {
-        return ((Application) m_application).QueryExistingPurchases();
+        return Application.GetInstance().QueryExistingPurchases();
     }
 
     public static boolean PurchaseSku(String str) {
-        return ((Application) m_application).PurchaseSku(str);
+        return Application.GetInstance().PurchaseSku(str);
     }
 
     public static boolean ConsumePurchase(String str) {
-        return ((Application) m_application).ConsumePurchase(str);
+        return Application.GetInstance().ConsumePurchase(str);
+    }
+
+    public static RequestQueue GetVolleyQueue() {
+        return sm_VolleyQueue;
     }
 
     public static boolean HttpGet(String str) {
-        Volley.newRequestQueue(m_application).add(new StringRequest(0, str, new Response.Listener<String>() {
+        Log.i("com.valvesoftware.JNI_Environment", "HttpGet( " + str + " )");
+        GetVolleyQueue().add(new StringRequest(0, str, new Response.Listener<String>() {
+            public String m_URL;
+
             public void onResponse(String str) {
+                Log.i("com.valvesoftware.JNI_Environment", "HttpGet succeded for \"" + this.m_URL + "\" with response " + str);
             }
-        }, new Response.ErrorListener() {
+
+            public Response.Listener<String> init(String str) {
+                this.m_URL = str;
+                return this;
+            }
+        }.init(str), new Response.ErrorListener() {
+            public String m_URL;
+
             public void onErrorResponse(VolleyError volleyError) {
-                Log.i("com.valvesoftware.JNI_Environment", "HttpGet failed");
+                Log.i("com.valvesoftware.JNI_Environment", "HttpGet failed for \"" + this.m_URL + "\" with error " + volleyError.getMessage());
             }
-        }));
+
+            public Response.ErrorListener init(String str) {
+                this.m_URL = str;
+                return this;
+            }
+        }.init(str)));
         return true;
     }
 
@@ -1279,5 +1336,13 @@ public class JNI_Environment {
             return r4
         */
         throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.JNI_Environment.GetDeviceID():long");
+    }
+
+    public static boolean IsSharedObjectLoaded(String str) {
+        try {
+            return IsSharedObjectLoadedNative(str);
+        } catch (Throwable unused) {
+            return false;
+        }
     }
 }

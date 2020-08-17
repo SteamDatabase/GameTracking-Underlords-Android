@@ -32,7 +32,7 @@
 
 		//WINDRUNNER
 		"dac_ability_windrunner_powershot"										"Disparo Poderoso"
-		"dac_ability_windrunner_powershot_Description"							"A Arqueira do Vento carrega o seu arco durante até {s:castPoint} segundos para dar um poderoso disparo, causando até {s:powershot_damage} de dano. O Disparo Poderoso vai perdendo {s:damage_reduction}% do dano por cada inimigo em que acertar."
+		"dac_ability_windrunner_powershot_Description"							"A Arqueira do Vento carrega o seu arco durante até {s:castPoint} segundos para dar um poderoso disparo, causando até {s:powershot_damage} de dano. O Disparo Poderoso vai perdendo {s:damage_reduction}% do dano por cada inimigo em que acertar. Se estiver a 3 estrelas, quando começar a carregar o seu arco, a Arqueira do Vento ganha {s:evasion}% de evasão e fica imune a magia. Este efeito dura {s:evasion_duration} segundos."
 		"dac_ability_windrunner_powershot_Lore"									"Fiz muitos amigos nas minhas viagens e não tenho medo de cobrar uns favores. - <i>Wren, viajante do mundo</i>"
 
 		//WITCHDOCTOR
@@ -366,7 +366,7 @@
 		
 		//BLOODSEEKER
 		"dac_ability_bloodseeker_blood_rage"									"Fúria Sanguinária"
-		"dac_ability_bloodseeker_blood_rage_Description"						"PASSIVA: O Sanguinário ganha velocidade de ataque à medida que o seu alvo perde vida, atingindo o máximo de {s:attack_speed_bonus_max} aos {s:min_health_pct}% de vida.<br><br>Sempre que o Sanguinário matar um alvo, ele recupera {s:heal_pct}% da sua vida máxima."
+		"dac_ability_bloodseeker_blood_rage_Description"						"PASSIVA: O Sanguinário ganha velocidade de ataque à medida que o seu alvo perde vida, atingindo o máximo de {s:attack_speed_bonus_max} aos {s:min_health_pct}% de vida.<br><br>Sempre que o Sanguinário matar um alvo, ele recupera {s:heal_pct}% da sua vida máxima. Se o Sanguinário estiver a 3 estrelas, isto ocorre sempre que um inimigo morrer a {s:radius} espaço de distância dele."
 		"dac_ability_bloodseeker_blood_rage_Lore"								"Se eu aprendi algo na minha carreira, é que o público gosta de sangue. Contrata este homem já. <i>Grek, com bom olho para o negócio</i>"
 		
 		//ARC WARDEN
@@ -376,7 +376,7 @@
 		
 		//ARC WARDEN
 		"dac_ability_arc_warden_tempest_double_no_items"						"Duplo Tempestuoso"
-		"dac_ability_arc_warden_tempest_double_no_items_Description"			"O Guardião Voltaico cria uma cópia dele mesmo com a mesma quantidade de vida que ele tiver no momento. Cada cópia causa menos {s:clone_dmg_reduction}% do dano."
+		"dac_ability_arc_warden_tempest_double_no_items_Description"			"O Guardião Voltaico cria uma cópia dele mesmo com a mesma quantidade de vida que ele tiver no momento. As cópias causam menos {s:clone_dmg_reduction}% do dano e geram menos {s:clone_mana_pct_loss_per}% de mana por cada cópia existente (acumula-se multiplicativamente). Se o Guardião Voltaico estiver a 3 estrelas, as suas cópias também copiam o item que ele tiver equipado."
 		"dac_ability_arc_warden_tempest_double_no_items_Lore"					"Ele traz consigo os mistérios da criação. - <i>Turath, profeta críptico</i>"
 
 		//MIRANA
@@ -471,7 +471,7 @@
 		"dac_ability_nyx_assassin_spiked_carapace_lore"								"A denominação correta é \"artrópode\". - <i>Quiet, com atenção aos detalhes</i>"
 
 		"dac_ability_nyx_assassin_vendetta"											"Vendeta"
-		"dac_ability_nyx_assassin_vendetta_description"								"PASSIVA: Depois de se teletransportar para atacar uma unidade, o próximo ataque do Assassino de Nyx causa mais {s:bonus_damage} de dano e suprime todos os efeitos passivos do alvo durante {s:break_duration} segundos."
+		"dac_ability_nyx_assassin_vendetta_description"								"PASSIVA: Depois de se teletransportar para atacar uma unidade, o próximo ataque do Assassino de Nyx causa mais {s:bonus_damage} de dano e suprime todos os efeitos passivos do alvo durante {s:break_duration} segundos. Se o Assassino de Nyx estiver a 3 estrelas, isto também ocorre após {s:hits_to_trigger} ataques sucessivos. A contagem dos ataques sucessivos é reiniciada se uma Vendeta ocorrer por um teletransporte."
 		"dac_ability_nyx_assassin_vendetta_lore"									"Quero lá saber se é inseto ou artrópode, o que eu preciso é que ele mate alguém por mim. Consegues entrar em contacto com ele ou não? <i>O'nia, sem paciência para ser corrigida</i>"
 
 		// WEAVER
@@ -550,7 +550,7 @@
 
 		// GRANNY LIZARD
 		"dac_ability_granny_lizard_shotgun_blast"									"Bom Velho Bacamarte"
-		"dac_ability_granny_lizard_shotgun_blast_description"						"Após 4 ataques normais, Snapfire prepara a sua caçadeira e atinge um inimigo próximo causando {s:blast_damage} de dano numa área frontal, reduzindo a velocidade de ataque das unidades afetadas em {s:blast_bonus_attack_speed}%"
+		"dac_ability_granny_lizard_shotgun_blast_description"						"Após 4 ataques normais, Snapfire prepara o seu bacamarte e dispara, causando {s:blast_damage} de dano na área à sua frente e reduzindo a velocidade de ataque das unidades afetadas em {s:blast_bonus_attack_speed}. Se ela estiver a 3 estrelas, as unidades afetadas também perdem {s:blast_armor_loss} de armadura. O efeito dura {s:debuff_duration} segundos."
 		"dac_ability_granny_lizard_shotgun_blast_lore"								"Os Keen sempre tiveram um talento brilhante para a guerra, e a guerra é o meu ofício. Talvez haja aqui uma oportunidade de negócio. - <i>Quiet, investidora privada</i>"
 
 		"dac_ability_granny_lizard_bazooka"											"Beijos do Mortimer"
@@ -664,30 +664,138 @@
 		"dac_ability_3star"															"Efeito a 3 estrelas"
 
 		"dac_ability_warlock_3star"													"Demonista: Efeito ★★★"
-		"dac_ability_warlock_3star_Description"										"Se o Demonista estiver a 3 estrelas e vivo, ele irá impedir Demónios aliados de se silenciarem uns aos outros quando usarem habilidades."
+		"dac_ability_warlock_3star_Description"										"Enquanto o Demonista estiver vivo, ele irá impedir Demónios aliados de se silenciarem uns aos outros quando usarem habilidades."
 
 		"dac_ability_razor_3star"													"Razor: Efeito ★★★"
-		"dac_ability_razor_3star_Description"										"Se o Razor estiver a 3 estrelas, ele rouba {s:stolen_dmg} de dano de ataque ao alvo, até {s:max_stacks} vezes no máximo. Ao trocar de alvo, o Razor perde o dano que roubou, mas o alvo não o recupera."
+		"dac_ability_razor_3star_Description"										"Sempre que o Razor atacar um inimigo, ele rouba {s:stolen_dmg} de dano de ataque ao alvo, até {s:max_stacks} vezes no máximo. Ao trocar de alvo, o Razor perde o dano que roubou, mas o alvo não o recupera."
 
-		"dac_ability_chaos_knight_3star"											"Cavaleiro do Caos: Efeito ★★★"
-		"dac_ability_chaos_knight_3star_Description"								"Se o Cavaleiro do Caos estiver a 3 estrelas e vivo, os Cavaleiros aliados serão sempre considerados como se estivessem adjacentes a um Cavaleiro aliado."
+		"dac_ability_chaos_knight_3star"											"Efeito ★★★"
+		"dac_ability_chaos_knight_3star_Description"								"Enquanto o Cavaleiro do Caos estiver vivo, os Cavaleiros aliados serão sempre considerados como se estivessem adjacentes a um Cavaleiro aliado."
 
-		"dac_ability_crystal_maiden_3star"											"Donzela Cristalina: Efeito ★★★"
-		"dac_ability_crystal_maiden_3star_Description"								"Se a Donzela Cristalina estiver a 3 estrelas e viva, o tempo de recarga de habilidades de todos os aliados será reduzido em {s:cooldown_reduction}%."
+		"dac_ability_crystal_maiden_3star"											"Efeito ★★★"
+		"dac_ability_crystal_maiden_3star_Description"								"Enquanto a Donzela Cristalina estiver viva, o tempo de recarga de habilidades de todos os aliados será reduzido em {s:cooldown_reduction}%."
 
 		"dac_ability_terrorblade_3star"												"Aterrorizador: Efeito ★★★"
-		"dac_ability_terrorblade_3star_Description"									"Se o Aterrorizador estiver a 3 estrelas, ele passará a causar +{s:damage_bonus_pct}% de dano puro a Demónios inimigos."
+		"dac_ability_terrorblade_3star_Description"									"O Aterrorizador pode invocar energia demoníaca para ganhar +{s:damage_bonus_pct}% de dano puro contra Demónios inimigos. O bónus dura {s:duration}s sempre que isto acontecer."
 
 		"dac_ability_tiny_3star"													"Rocha: Efeito ★★★"
-		"dac_ability_tiny_3star_Description"										"Se estiver a 3 estrelas, o Rocha aumenta de tamanho sempre que lançar um inimigo, ganhando +{s:bonus_damage} de dano de ataque e +{s:bonus_armor} de armadura, mas perde {s:aspd_loss} de velocidade de ataque. Este efeito pode acumular-se até um máximo de {s:max_stacks} vezes."
+		"dac_ability_tiny_3star_Description"										"Sempre que o Rocha lançar um inimigo, ele irá crescer, ganhando +{s:bonus_damage} de dano de ataque e +{s:bonus_armor} de armadura, mas perdendo {s:aspd_loss} de velocidade de ataque. Este efeito pode acumular-se até um máximo de {s:max_stacks} vezes."
 
 		"dac_ability_luna_3star"													"Luna: Efeito ★★★"
-		"dac_ability_luna_3star_Description"										"Se a Luna estiver a 3 estrelas, ela ganha a habilidade Eclipse. No momento em que a Luna mais precisar, Selemene bloqueia a luz num raio de {s:radius} espaços à volta da Luna e ataca inimigos com {s:beams} feixes de energia lunar (um a cada {s:beam_interval}s). Cada feixe causa {s:beam_damage} de dano, atordoa durante {s:beam_stun}s e cada inimigo só pode ser atingido por {s:hit_count} feixes no máximo."
+		"dac_ability_luna_3star_Description"										"No momento em que a Luna mais precisar, Selemene bloqueia a luz num raio de {s:radius} espaços à volta da Luna e ataca inimigos com {s:beams} feixes de energia lunar (um a cada {s:beam_interval}s). Cada feixe causa {s:beam_damage} de dano, atordoa durante {s:beam_stun}s e cada inimigo só pode ser atingido por {s:hit_count} feixes no máximo."
 
 		"dac_ability_dazzle_3star"													"Dazzle: Efeito ★★★"
-		"dac_ability_dazzle_3star_Description"										"Se o Dazzle estiver a 3 estrelas, ele abençoa todas as unidades aliadas a {s:never_die_range} espaço de distância, fazendo com que sobrevivam durante mais {s:never_die_duration} segundos após sofrerem um golpe fatal."
+		"dac_ability_dazzle_3star_Description"										"Dazzle abençoa todas as unidades aliadas a {s:never_die_range} espaço de distância, fazendo com que sobrevivam durante mais {s:never_die_duration} segundos após sofrerem um golpe fatal."
 
 		"dac_ability_broodmother_3star"												"Matriarca: Efeito ★★★"
-		"dac_ability_broodmother_3star_Description"									"Se a Matriarca estiver a 3 estrelas e viva, ela faz com que todas as Aranhinhas aliadas fiquem invulneráveis."
+		"dac_ability_broodmother_3star_Description"									"Enquanto a Matriarca estiver viva, todas as Aranhinhas aliadas são invulneráveis."
+
+		"dac_ability_pudge_3star"													"Pudge: Efeito ★★★"
+		"dac_ability_pudge_3star_Description"										"Pudge ganha {s:bonus_health_per_death} de vida máxima e {s:magical_resistance}% de resistência a magia sempre que um inimigo morrer a {s:radius} espaço de distância dele."
+
+		"dac_ability_viper_3star"													"Viper: Efeito ★★★"
+		"dac_ability_viper_3star_Description"										"Viper executa um Ataque Viperino a cada {s:num_attacks} ataques. A unidade inimiga sofre {s:damage} de dano por segundo, perde {s:bonus_movement_speed}% de velocidade de movimento e perde {s:bonus_attack_speed} de velocidade de ataque. O efeito abrandante vai perdendo a eficácia ao longo da duração de {s:debuff_duration} segundos."
+
+		"dac_ability_beastmaster_3star"												"Mestre das Feras: Efeito ★★★"
+		"dac_ability_beastmaster_3star_Description"									"O Mestre das Feras sofre menos {s:damage_reduction}% do dano de unidades invocadas e é imune a efeitos mágicos causados por elas."
+
+		"dac_ability_juggernaut_3star"												"Juggernaut: Efeito ★★★"
+		"dac_ability_juggernaut_3star_Description"									"Cada um dos ataques do Juggernaut terá uma probabilidade de {s:crit_chance}% de causar dano crítico ({s:crit_bonus}% do dano)."
+
+		"dac_ability_queenofpain_3star"												"Rainha da Dor: Efeito ★★★"
+		"dac_ability_queenofpain_3star_Description"									"A Rainha da Dor terá a probabilidade de {s:evasion}% de se esquivar de ataques de inimigos que estejam dentro de até {s:radius} espaços de distância."
+
+		"dac_ability_drow_ranger_3star"												"Arqueira Drow: Efeito ★★★"
+		"dac_ability_drow_ranger_3star_Description"									"Os inimigos atingidos pelas flechas da Arqueira Drow perdem {s:move_speed_loss}% de velocidade de movimento e {s:attack_speed_loss} de velocidade de ataque. O efeito dura {s:slow_duration} segundos."
+
+		"dac_ability_abaddon_3star"													"Abaddon: Efeito ★★★"
+		"dac_ability_abaddon_3star_Description"										"Sempre que o Abaddon atacar um alvo {s:min_stacks} vezes seguidas, o alvo fica silenciado durante {s:silence_duration}s e o Abaddon ganha +{s:attack_speed} de velocidade de ataque contra ele. A duração é restaurada com cada ataque subsequente, mas o bónus desaparece se o Abaddon mudar de alvo."
+
+		"dac_ability_bloodseeker_3star"												"Sanguinário: Efeito ★★★"
+		"dac_ability_bloodseeker_3star_Description"									"O Sanguinário ganha o bónus de dano crítico do nível ativo atual da aliança Assassino, se disponível."
+
+		"dac_ability_morphling_3star"												"Morfídeo: Efeito ★★★"
+		"dac_ability_morphling_3star_Description"									"O Morfídeo ganha os bónus de todas as alianças inimigas ativas no tabuleiro, como se ele fosse um Campeão inimigo."
+
+		"dac_ability_shadow_fiend_3star"											"Efeito ★★★"
+		"dac_ability_Shadow_fiend_3star_Description"								"O Terror das Sombras ganha uma aura que remove {s:armor_reduction} de armadura a inimigos dentro de até {s:radius} espaços de distância."
+
+		"dac_ability_magnataur_3star"												"Magnus: Efeito ★★★"
+		"dac_ability_magnataur_3star_Description"									"Magnus ganha a habilidade Inversão de Polaridade. Ao usá-la, inimigos dentro de {s:radius} espaços de distância sofrem {s:damage} de dano e são atordoados durante {s:duration} segundo."
+
+		"dac_ability_arc_warden_3star"												"Efeito ★★★"
+		"dac_ability_arc_warden_3star_Description"									"As cópias do Guardião Voltaico copiam o item que ele tiver equipado."
+
+		"dac_ability_bat_rider_3star"												"Morcegal: Efeito ★★★"
+		"dac_ability_bat_rider_3star_Description"									"Napalm Pegajoso incendeia inimigos. Podes encontrar mais detalhes na descrição dessa habilidade."
+
+		"dac_ability_nyx_assassin_3star"											"Assassino de Nyx: Efeito ★★★"
+		"dac_ability_nyx_assassin_3star_Description"								"Vendeta pode ser usada mais frequentemente. Podes encontrar mais detalhes na descrição dessa habilidade."
+
+		"dac_ability_shadow_demon_3star"											"Efeito ★★★"
+		"dac_ability_shadow_demon_3star_Description"								"O Demónio das Sombras causa dano adicional por segundo ao alvo de Purgação Demoníaca. Podes encontrar mais detalhes na descrição dessa habilidade."
+
+		"dac_ability_tusk_3star"													"Tusk: Efeito ★★★"
+		"dac_ability_tusk_3star_Description"										"O Murro Morsal abranda inimigos durante mais tempo e reduz a velocidade de ataque e de movimento deles. Podes encontrar mais detalhes na descrição dessa habilidade."
+
+		"dac_ability_venomancer_3star"												"Venomante: Efeito ★★★"
+		"dac_ability_venomancer_3star_Description"									"As Sentinelas Pestilentas ficam imunes a magia."
+
+		"dac_ability_weaver_3star"													"Tecedor: Efeito ★★★"
+		"dac_ability_weaver_3star_Description"										"Os ataques do Tecedor queimam mana quando acaba de usar Shukuchi. Podes encontrar mais detalhes na descrição dessa habilidade."
+
+		"dac_ability_bristleback_3star"												"Espinhoso: Efeito ★★★"
+		"dac_ability_bristleback_3star_Description"									"Reduz o tempo de recarga de Rajada de Espinhos. Podes encontrar mais detalhes na descrição dessa habilidade."
+
+		"dac_ability_earth_spirit_3star"											"Efeito ★★★"
+		"dac_ability_earth_spirit_3star_Description"								"Poder Geomagnético atordoa inimigos. Podes encontrar mais detalhes na descrição dessa habilidade."
+
+		"dac_ability_natures_prophet_3star"											"Efeito ★★★"
+		"dac_ability_natures_prophet_3star_Description"								"Os Treants são invocados no lado do tabuleiro do adversário."
+
+		"dac_ability_ogre_magi_3star"												"Ogre Magi: Efeito ★★★"
+		"dac_ability_ogre_magi_3star_Description"									"O Ogre Magi tem a probabilidade de afetar dois alvos com a habilidade Sede de Sangue. Podes encontrar mais detalhes na descrição dessa habilidade."
+
+		"dac_ability_slardar_3star"													"Slardar: Efeito ★★★"
+		"dac_ability_slardar_3star_Description"										"O Slardar causa dano e atordoa o alvo depois de usar Neblina Corrosiva. Podes encontrar mais detalhes na descrição dessa habilidade."
+
+		"dac_ability_windrunner_3star"												"Efeito ★★★"
+		"dac_ability_windrunner_3star_Description"									"A Arqueira do Vento ganha evasão e imunidade a magia enquanto prepara o Disparo Poderoso. Podes encontrar mais detalhes na descrição dessa habilidade."
+
+		"dac_ability_witch_doctor_3star"											"Curandeiro: Efeito ★★★"
+		"dac_ability_witch_doctor_3star_Description"								"Inimigos atingidos pelo Pó Paralisante são amaldiçoados e sofrem dano. Podes encontrar mais detalhes na descrição dessa habilidade."
+
+		"dac_ability_ember_spirit_3star"											"Efeito ★★★"
+		"dac_ability_ember_spirit_3star_Description"								"A habilidade Punhos Velozes passa a ter o dobro da área de efeito. Podes encontrar mais detalhes na descrição dessa habilidade."
+
+		"dac_ability_enigma_3star"													"Enigma: Efeito ★★★"
+		"dac_ability_enigma_3star_Description"										"A habilidade Pulsação da Meia-noite passa a ter o triplo da área de efeito. Podes encontrar mais detalhes na descrição dessa habilidade."
+
+		"dac_ability_wisp_3star"													"Io: Efeito ★★★"
+		"dac_ability_wisp_3star_Description"										"Ao ressuscitar um aliado com a habilidade Realocar, todas as habilidades dele podem voltar a ser usadas de imediato."
+
+		"dac_ability_lycan_3star"													"Lican: Efeito ★★★"
+		"dac_ability_lycan_3star_Description"										"A habilidade Transfiguração invoca mais lobos. Podes encontrar mais detalhes na descrição dessa habilidade."
+
+		"dac_ability_omniknight_3star"												"Omnipaladino: Efeito ★★★"
+		"dac_ability_omniknight_3star_Description"									"A habilidade Purificação passa a ter o triplo da área de efeito. Podes encontrar mais detalhes na descrição dessa habilidade."
+
+		"dac_ability_shadow_shaman_3star"											"Efeito ★★★"
+		"dac_ability_shadow_shaman_3star_Description"								"O Xamã das Sombras enfeitiça o alvo das Serpentes Sentinelas."
+
+		"dac_ability_treant_protector_3star"										"Protetor Treant: Efeito ★★★"
+		"dac_ability_treant_protector_3star_Description"							"Unidades curadas pela Semente Absorvente ganham armadura adicional. Podes encontrar mais detalhes na descrição dessa habilidade."
+
+		"dac_ability_storm_spirit_3star"											"Efeito ★★★"
+		"dac_ability_storm_spirit_3star_Description"								"Usar uma habilidade cria uma carga elétrica que explode durante o próximo ataque do Espírito da Tempestade, causando {s:damage} de dano e removendo {s:attack_speed_loss} de velocidade de ataque ao alvo durante {s:slow_duration} segundos. Todas as unidades atingidas por um Ataque Delta do Espírito da Tempestade também sofrerão dano e serão abrandadas."
+		
+		"dac_ability_legion_commander_3star"										"Efeito ★★★"
+		"dac_ability_legion_commander_3star_Description"							"Todos os aliados por perto também irão atacar o alvo da Comandante da Legião durante um Duelo."
+
+		"dac_ability_life_stealer_3star"										"Rouba-vida: Efeito ★★★"
+		"dac_ability_life_stealer_3star_Description"							"O Rouba-vida ganha a habilidade Fúria. Ao usá-la, ele torna-se imune a magia e ganha +{s:bonus_movement_speed_pct}% de velocidade de movimento e +{S:bonus_attack_speed} de velocidade de ataque. Os efeitos duram {s:duration} segundos."
+
+		"dac_ability_snapfire_3star"												"Snapfire: Efeito ★★★"
+		"dac_ability_snapfire_3star_Description"									"O Bom Velho Bacamarte também reduz a armadura de inimigos. Podes encontrar mais detalhes na descrição dessa habilidade."
 	}
 }

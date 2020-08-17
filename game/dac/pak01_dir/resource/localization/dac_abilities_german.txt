@@ -24,7 +24,7 @@
 		//FURION
 		"dac_ability_natures_prophet_summon_tree"								"Ruf der Natur"
 		"dac_ability_natures_prophet_summon_tree_Description"					"Der Prophet der Natur beschwört einen Treant. Der Treant wird als Druide betrachtet. Bei 3 Sternen erscheint der Treant auf der gegnerischen Seite des Spielfelds."
-		"dac_ability_natures_prophet_summon_tree_Lore"							"Enno hat seine kleinen Waldfreunde gerufen … das könnte ein Problem sein. – <i>O'nia, verbannte Händlerin aus Revtel</i>"
+		"dac_ability_natures_prophet_summon_tree_Lore"							"Enno hat seine kleinen Waldfreunde gerufen … das könnte ein Problem sein. – <i>O’nia, verbannte Händlerin aus Revtel</i>"
 
 		"dac_ability_natures_prophet_wrath_of_nature"							"Zorn der Natur"
 		"dac_ability_natures_prophet_wrath_of_nature_Description"				"Der Prophet der Natur trifft ein Ziel mit mächtiger Energie und verursacht dabei {s:damage} Schaden. Die Energie springt {s:jumps}-mal zu anderen Gegnern auf dem Feld weiter und verursacht dabei jeweils {s:increase_pct} % mehr Schaden."
@@ -32,7 +32,7 @@
 
 		//WINDRUNNER
 		"dac_ability_windrunner_powershot"										"Machtschuss"
-		"dac_ability_windrunner_powershot_Description"							"Die Windhüterin lädt ihren Bogen bis zu {s:castPoint} Sekunden lang auf und feuert einen einzelnen, mächtigen Schuss ab, der bis zu {s:powershot_damage} Schaden verursacht. Jeder getroffene Gegner verringert den Schaden des Schusses um {s:damage_reduction} %."
+		"dac_ability_windrunner_powershot_Description"							"Die Windhüterin lädt ihren Bogen bis zu {s:castPoint} Sekunden lang auf und feuert einen einzelnen, mächtigen Schuss ab, der bis zu {s:powershot_damage} Schaden verursacht. Jeder getroffene Gegner verringert den Schaden des Schusses um {s:damage_reduction} %. Bei 3 Sternen erhält die Windhüterin beim Aufladen Ihres Bogens eine {s:evasion}%ige Ausweichchance und wird zauberimmun. Dieser Effekt hält {s:evasion_duration} Sekunden an."
 		"dac_ability_windrunner_powershot_Lore"									"Auf meinen Reisen hab ich viele Freunde gefunden und ich hab keine Skrupel, schuldige Gefallen einzufordern. – <i>Wren, Weltenbummlerin</i>"
 
 		//WITCHDOCTOR
@@ -62,7 +62,7 @@
 		//PHANTOM ASSASSIN
 		"dac_ability_phantom_assassin_coup_de_grace"							"Coup de Grâce"
 		"dac_ability_phantom_assassin_coup_de_grace_Description"				"PASSIV: Die Phantomassassine trifft gegnerische Einheiten zu {s:crit_chance} % mit einem vernichtenden kritischen Treffer, der {s:crit_bonus} % Schaden verursacht."
-		"dac_ability_phantom_assassin_coup_de_grace_Lore"						"Sie hat Kwerthias ermordet, woher weiß ich, dass sie nicht als Nächstes hinter mit her ist? – <i>O'nia, paranoide Händlerin</i>"
+		"dac_ability_phantom_assassin_coup_de_grace_Lore"						"Sie hat Kwerthias ermordet, woher weiß ich, dass sie nicht als Nächstes hinter mit her ist? – <i>O’nia, paranoide Händlerin</i>"
 
 		//DROW RANGER
 		"dac_ability_drow_ranger_trueshot_aura"									"Aura der Präzision"
@@ -152,7 +152,7 @@
 		//TINKER
 		"dac_ability_tinker_heat_seeking_missile"								"Wärmesuchende Rakete"
 		"dac_ability_tinker_heat_seeking_missile_Description"					"Der Bastler feuert eine Salve Raketen auf {s:targets} zufällige Gegner ab, die diesen jeweils {s:damage_per_missile} Schaden zufügen."
-		"dac_ability_tinker_heat_seeking_missile_Lore"							"Die Gesellschaft des gleichgesinnten Keenvolks wird ein Problem werden, wenn wir sie einfach weiter machen lassen. – <i>O'nias Versuch, eine Einheitsfront zu bilden</i>"
+		"dac_ability_tinker_heat_seeking_missile_Lore"							"Die Gesellschaft des gleichgesinnten Keenvolks wird ein Problem werden, wenn wir sie einfach weiter machen lassen. – <i>O’nias Versuch, eine Einheitsfront zu bilden</i>"
 
 		//SNIPER
 		"dac_ability_sniper_assassinate"										"Gnadenschuss"
@@ -202,8 +202,8 @@
 		"dac_ability_viper_viper_strike_Lore"									"Wir sind nicht so verschieden … auch ich weiß, was es bedeutet, ein Sklave zu sein. – <i>Quiet, konspirativer Automat</i>"
 
 		"dac_ability_viper_nethertoxin"											"Niflgift"
-		"dac_ability_viper_nethertoxin_Description"								"Viper vergiftet eine Zelle. Das Gift fügt gegnerischen Einheiten {s:damage} Schaden pro Sekunde zu, setzt sie fest und deaktiviert alle passiven Effekte."
-		"dac_ability_viper_nethertoxin_Lore"									"Sei vorsichtig, Slark. Der Versuch, mich auszurauben, wird für dich nicht gut enden. – <i>O'nia lässt ihre angeheuerten Muskeln spielen</i>"
+		"dac_ability_viper_nethertoxin_Description"								"Viper vergiftet eine Zelle. Das Gift fügt gegnerischen Einheiten {s:damage} Schaden pro Sekunde zu, setzt sie fest und unterbricht sie."
+		"dac_ability_viper_nethertoxin_Lore"									"Sei vorsichtig, Slark. Der Versuch, mich auszurauben, wird für dich nicht gut enden. – <i>O’nia lässt ihre angeheuerten Muskeln spielen</i>"
 
 		"dac_ability_viper_corrosive_skin"										"Ätzende Haut"
 		"dac_ability_viper_corrosive_skin_Description"							"<i>DURCH DRACHENALLIANZ FREIGESCHALTET</i><br>PASSIV: Vipers Haut ist mit einem ansteckenden Toxin bedeckt, das Angreifer vergiftet und ihr Angriffstempo für {s:dot_duration} Sekunden um {s:attack_slow} % verlangsamt. Das ätzende Sekret erhöht außerdem die Magieresistenz von Viper um {s:magic_resistance} %."
@@ -231,7 +231,7 @@
 		//BOUNTY HUNTER
 		"dac_ability_bounty_hunter_shuriken_toss"								"Shurikenwurf"
 		"dac_ability_bounty_hunter_shuriken_toss_Description"					"Der Kopfgeldjäger wirft einen tödlichen Shuriken auf eine gegnerische Einheit, fügt dieser so {s:damage} Schaden zu und betäubt das Ziel kurz."
-		"dac_ability_bounty_hunter_shuriken_toss_Lore"							"Solange du genug Geld hast, vertraue stets dem, dessen Loyalität zum Verkauf steht. – <i>O'nia, zweifelhafte Weisheit</i>"
+		"dac_ability_bounty_hunter_shuriken_toss_Lore"							"Solange du genug Geld hast, vertraue stets dem, dessen Loyalität zum Verkauf steht. – <i>O’nia, zweifelhafte Weisheit</i>"
 
 		//BATRIDER
 		"dac_ability_batrider_sticky_napalm"									"Klebriges Napalm"
@@ -240,8 +240,8 @@
 
 		//DOOM BRINGER
 		"dac_ability_doom_bringer_doom"											"Verderben"
-		"dac_ability_doom_bringer_doom_Description"								"Das Verderben spricht einen mächtigen Fluch, der einen Gegner am Einsetzen von Zaubern hindert, seine passiven Effekte deaktiviert und {s:damage} Schaden pro Sekunde verursacht..<br><br>Hält {s:duration} Sekunden an."
-		"dac_ability_doom_bringer_doom_Lore"									"Ich bevorzuge es, Geschäfte mit metaphorischen Dämonen abzuschließen … – <i>O'nia denkt an Anessix' Verbündete</i>"
+		"dac_ability_doom_bringer_doom_Description"								"Das Verderben spricht einen mächtigen Fluch, der einen Gegner am Einsetzen von Zaubern hindert, ihn unterbricht und {s:damage} Schaden pro Sekunde verursacht..<br><br>Hält {s:duration} Sekunden an."
+		"dac_ability_doom_bringer_doom_Lore"									"Ich bevorzuge es, Geschäfte mit metaphorischen Dämonen abzuschließen … – <i>O’nia denkt an Anessix’ Verbündete</i>"
 
 		//GYROCOPTER
 		"dac_ability_gyrocopter_call_down"										"Luftschlag"
@@ -272,7 +272,7 @@
 		//OGRE MAGI
 		"dac_ability_ogre_magi_bloodlust"										"Blutrausch"
 		"dac_ability_ogre_magi_bloodlust_Description"							"Der Ogermagier treibt eine verbündete Einheit in Raserei, was ihr Bewegungstempo um {s:bonus_movement_speed} % und ihr Angriffstempo um {s:bonus_attack_speed} % erhöht. Wenn auf Ogermagier selbst gezaubert, erhöht sich sein Angriffstempo um {s:self_bonus} %. Der Ogermagier hat eine {s:multicast_chance}%ige Chance, diese Fähigkeit auf 2 Ziele zu zaubern."
-		"dac_ability_ogre_magi_bloodlust_Lore"									"Der Magier ist das Doppelte seines Preises wert. Glücklicherweise ist der Magier auch ein Idiot. – <i>O'nia, Schnäppchenjägerin</i>"
+		"dac_ability_ogre_magi_bloodlust_Lore"									"Der Magier ist das Doppelte seines Preises wert. Glücklicherweise ist der Magier auch ein Idiot. – <i>O’nia, Schnäppchenjägerin</i>"
 
 		// MAGNUS
 		"dac_ability_magnataur_empower"											"Stärkung"
@@ -306,7 +306,7 @@
 
 		// SHADOW_DEMON
 		"dac_ability_shadow_demon_demonic_purge"								"Dämonische Reinigung"
-		"dac_ability_shadow_demon_demonic_purge_Description"					"Entfernt kontinuierlich positive Effekte von der Zieleinheit, deaktiviert ihre passiven Effekte und verlangsamt sie für {s:duration} Sekunden. Das Ziel erhält das verlorene Bewegungs- und Angriffstempo während der Wirkungsdauer langsam zurück und erleidet an deren Ende {s:damage} Schaden. Bei 3 Sternen verliert die Einheit zu Beginn {s:health_pct} % der aktuellen Lebenspunkte und erhält die Hälfte davon nach Beendigung der Reinigung zurück, sollte sie überleben."
+		"dac_ability_shadow_demon_demonic_purge_Description"					"Entfernt kontinuierlich positive Effekte von der Zieleinheit, unterbricht sie und verlangsamt sie für {s:duration} Sekunden. Das Ziel erhält das verlorene Bewegungs- und Angriffstempo während der Wirkungsdauer langsam zurück und erleidet an deren Ende {s:damage} Schaden. Bei 3 Sternen verliert die Einheit zu Beginn {s:health_pct} % der aktuellen Lebenspunkte und erhält die Hälfte davon nach Beendigung der Reinigung zurück, sollte sie überleben."
 		"dac_ability_shadow_demon_demonic_purge_Lore"							"Jetzt hör mal zu, du haariger Mistkerl! Ich weiß, du denkst, dass du mit Anessix zusammenarbeiten könntest, aber hast du dir mal die Leute angesehen, mit denen sie verkehrt? – <i>Hobgen, kein Freund von Dämonen (oder Enno)</i>"
 
 		// SVEN
@@ -332,7 +332,7 @@
 		//ABADDON
 		"dac_ability_abaddon_aphotic_shield"									"Dunkler Schild"
 		"dac_ability_abaddon_aphotic_shield_Description"						"Abaddon beschützt eine befreundete Einheit mit einem Schutzschild, der {s:duration} Sekunden anhält und insgesamt {s:damage_absorb} Schaden absorbiert.<br><br>Wird der Schild zerstört, explodiert er und fügt allen Gegnern im Umkreis von {s:radius} Zellen {s:damage_absorb} Schaden zu.<br><br>Entfernt bei Aktivierung gewisse negative Statuseffekte und Betäubungen."
-		"dac_ability_abaddon_aphotic_shield_Lore"								"Ich habe viel Respekt für das Haus von Avernus. – <i>O'nia schmeichelt sich ein</i>"
+		"dac_ability_abaddon_aphotic_shield_Lore"								"Ich habe viel Respekt für das Haus von Avernus. – <i>O’nia schmeichelt sich ein</i>"
 
 		// TERRORBLADE
 		"dac_ability_terrorblade_metamorph"										"Metamorphose"
@@ -366,7 +366,7 @@
 		
 		//BLOODSEEKER
 		"dac_ability_bloodseeker_blood_rage"									"Blutzorn"
-		"dac_ability_bloodseeker_blood_rage_Description"						"PASSIV: Je niedriger die Lebenspunkte seines Gegners fallen, desto mehr Angriffstempo erhält der Blutjäger, bis er bei {s:min_health_pct} % der Lebenspunkte den maximalen Bonus von {s:attack_speed_bonus_max} Angriffstempo erreicht.<br><br>Wenn Blutjäger ein Ziel tötet, erlangt er {s:heal_pct} % seiner maximalen Lebenspunkte zurück."
+		"dac_ability_bloodseeker_blood_rage_Description"						"PASSIV: Je niedriger die Lebenspunkte seines Gegners fallen, desto mehr Angriffstempo erhält der Blutjäger, bis er bei {s:min_health_pct} % der Lebenspunkte den maximalen Bonus von {s:attack_speed_bonus_max} Angriffstempo erreicht.<br><br>Wenn Blutjäger ein Ziel tötet, erlangt er {s:heal_pct} % seiner maximalen Lebenspunkte zurück. Bei 3 Sternen geschieht dies auch, wenn ein Gegner im Umkreis von {s:radius} Zelle um Blutjäger stirbt."
 		"dac_ability_bloodseeker_blood_rage_Lore"								"Wenn ich eines während meiner Karriere gelernt habe, dann dass einige Typen Blut lieben. Stell diesen Kerl ein. – <i>Grek, entschiedener Befürworter</i>"
 		
 		//ARC WARDEN
@@ -376,7 +376,7 @@
 		
 		//ARC WARDEN
 		"dac_ability_arc_warden_tempest_double_no_items"						"Sturmillusion"
-		"dac_ability_arc_warden_tempest_double_no_items_Description"			"Der Plasmawächter erschafft eine Kopie seiner selbst, die auch seine derzeitigen Lebenspunkte widerspiegelt. Klone verursachen {s:clone_dmg_reduction} % weniger Schaden."
+		"dac_ability_arc_warden_tempest_double_no_items_Description"			"Der Plasmawächter erschafft eine Kopie seiner selbst, die auch seine derzeitigen Lebenspunkte widerspiegelt. Klone verursachen {s:clone_dmg_reduction} % weniger Schaden und erhalten {s:clone_mana_pct_loss_per} % weniger Mana pro Klon (wirkt multiplikativ). Bei 3 Sternen kopiert der Klon auch die ausgerüsteten Gegenstände des Plasmawächters."
 		"dac_ability_arc_warden_tempest_double_no_items_Lore"					"In seinem Inneren birgt er die Geheimnisse der Schöpfung. – <i>Turath, kryptischer Prophet</i>"
 
 		//MIRANA
@@ -471,8 +471,8 @@
 		"dac_ability_nyx_assassin_spiked_carapace_lore"								"Die korrekte Bezeichnung lautet Gliederfüßer. – <i>Quiet, achtet auf Kleinigkeiten</i>"
 
 		"dac_ability_nyx_assassin_vendetta"											"Vendetta"
-		"dac_ability_nyx_assassin_vendetta_description"								"PASSIV: Nachdem der Nyx-Assassine zu einer Einheit teleportiert, um diese anzugreifen, fügt sein nächster Angriff {s:bonus_damage} Bonusschaden zu und deaktiviert für {s:break_duration} Sekunden alle passiven Effekte seines Gegners."
-		"dac_ability_nyx_assassin_vendetta_lore"									"Insekt. Gliederfüßer. Wen interessiert das? Wichtig ist, dass er jemanden für mich umbringt … Bekommst du ihn nun in die Finger oder nicht. – <i>O'nia, kein Fan von Besserwissern</i>"
+		"dac_ability_nyx_assassin_vendetta_description"								"PASSIV: Nachdem der Nyx-Assassine zu einer Einheit teleportiert, um diese anzugreifen, fügt sein nächster Angriff {s:bonus_damage} Bonusschaden zu und unterbricht seinen Gegner für {s:break_duration} Sekunden. Bei 3 Sternen wendet der Nyx-Assassine Vendetta auch nach {s:hits_to_trigger} aufeinanderfolgenden Angriffen an. Wenn Vendetta wegen einer Teleportation ausgelöst wird, setzt sich der Zähler zurück."
+		"dac_ability_nyx_assassin_vendetta_lore"									"Insekt. Gliederfüßer. Wen interessiert das? Wichtig ist, dass er jemanden für mich umbringt … Bekommst du ihn nun in die Finger oder nicht. – <i>O’nia, kein Fan von Besserwissern</i>"
 
 		// WEAVER
 		"dac_ability_weaver_shukuchi"												"Shukuchi"
@@ -494,7 +494,7 @@
 		"dac_ability_wisp_tether_lore"												"<i>Enno starrt Io angespannt an</i>"
 
 		"dac_ability_wisp_relocate"													"Relokalisierung"
-		"dac_ability_wisp_relocate_description"										"Io teleportiert sich {s:relocate_time_away} Sekunden lang weg, um einen toten Helden wiederzubeleben. Die beiden Einheiten kehren mit vollem Leben und von negativen Effekten gesäubert zurück. Bei 3 Sternen setzt Io auch die Abklingzeiten des toten Helden zurück."
+		"dac_ability_wisp_relocate_description"										"Io teleportiert sich {s:relocate_time_away} Sekunden lang weg, um einen toten Helden wiederzubeleben. Die beiden Einheiten kehren mit vollem Leben und von negativen Effekten gesäubert zurück. Bei 3 Sternen setzt Io auch die Abklingzeiten dieses Helden zurück."
 		"dac_ability_wisp_relocate_lore"											"<i>Io starrt zurück</i>"
 
 		// BRISTLEBACK	
@@ -510,7 +510,7 @@
 		// DAZZLE
 		"dac_ability_dazzle_shadow_wave"											"Schattenwelle"
 		"dac_ability_dazzle_shadow_wave_description"								"Dazzle erzeugt einen Energieblitz, der bis zu {s:max_targets}-mal {s:bounce_radius} Zellen weit auf Verbündete überspringt, diese dabei um {s:damage} Lebenspunkte heilt und allen gegnerischen Einheiten innerhalb von {s:damage_radius} Zelle {s:damage} Schaden zufügt. Dazzle selbst wird von Schattenwelle immer geheilt."
-		"dac_ability_dazzle_shadow_wave_lore"										"Wie viel würde es kosten, Ihre Dienste in Anspruch zu nehmen? Ich habe ein persönliches Interesse daran, nicht zu sterben. – <i>O'nia stochert im Dunkeln</i>"
+		"dac_ability_dazzle_shadow_wave_lore"										"Wie viel würde es kosten, Ihre Dienste in Anspruch zu nehmen? Ich habe ein persönliches Interesse daran, nicht zu sterben. – <i>O’nia stochert im Dunkeln</i>"
 
 		// STORM SPIRIT
 		"dac_ability_storm_spirit_ball_lightning"									"Kugelblitz"
@@ -545,12 +545,12 @@
 		"dac_ability_void_spirit_dissimilate_lore"									"Man kommt nicht ohne guten Grund aus der Versenkung. Finde heraus, warum er hier ist. – <i>Anessix, sucht nach einem Geheimnis</i>"
 
 		"dac_ability_void_spirit_element"											"Leerenelement"
-		"dac_ability_void_spirit_element_description"								"PASSIV: Wenn der Leerengeist einen Deltaschlag ausführt, deaktiviert er für 3 Sekunden passive Effekte der getroffenen gegnerischen Einheiten."
+		"dac_ability_void_spirit_element_description"								"PASSIV: Wenn der Leerengeist einen Deltaschlag ausführt, unterbricht er die getroffene gegnerische Einheit für 3 Sekunden."
 		"dac_ability_void_spirit_element_lore"										"Nimm dich vor dem hier in Acht, Slark. – <i>Jull gibt einen gut gemeinten Rat</i>"
 
 		// GRANNY LIZARD
 		"dac_ability_granny_lizard_shotgun_blast"									"Streuwumme"
-		"dac_ability_granny_lizard_shotgun_blast_description"						"Nach 4 normalen Angriffen zieht Tante Knisterkeks ihre Schrotflinte, visiert einen umstehenden Gegner an und schießt eine kegelförmige Ladung ab. Diese fügt getroffenen Einheiten {s:blast_damage} Schaden zu und verlangsamt deren Angriffstempo um {s:blast_bonus_attack_speed} %."
+		"dac_ability_granny_lizard_shotgun_blast_description"						"Nach 4 normalen Angriffen zieht Tante Knisterkeks ihre Schrotflinte, visiert einen umstehenden Gegner an und schießt eine kegelförmige Ladung ab. Diese fügt getroffenen Einheiten {s:blast_damage} Schaden zu und verlangsamt deren Angriffstempo um {s:blast_bonus_attack_speed} %. Bei 3 Sternen verlieren getroffene Gegner zudem {s:blast_armor_loss} Rüstung. Der Effekt hält {s:debuff_duration} Sekunden an."
 		"dac_ability_granny_lizard_shotgun_blast_lore"								"Die Keen hatten schon immer einen beeindruckenden Sinn für Kriegsführung, und Kriegsführung ist mein Job. Vielleicht bahnt sich da ein Geschäft an. – <i>Quiet, Business Angel</i>"
 
 		"dac_ability_granny_lizard_bazooka"											"Mortimers Küsse"
@@ -566,7 +566,7 @@
 
 		"dac_ability_underlord_scales"												"Skaliert mit Underlord"
 
-		"dac_ability_anessix_summon_companions"										"Annessix' Dämonenkumpel"
+		"dac_ability_anessix_summon_companions"										"Annessix’ Dämonenkumpel"
 		"dac_ability_anessix_summon_companions_description"							"Anessix beschwört ihren Dämonentrupp. Wenn beide Dämonen tot sind, wird Anessix sie erneut beschwören."
 		"dac_ability_anessix_summon_companions_lore"								"Es lohnt sich, die richtigen Leute zu kennen … – <i>Anessix, Unterweltverbindung</i>"
 
@@ -596,7 +596,7 @@
 		"dac_ability_anessix_enthrall_description_lore"								"Jetzt gehörst du mir! – <i>Anessix beteiligt sich an einer feindlichen Übernahme</i>"
 
 		"dac_ability_demon_warrior_bash"											"Kriegerschlag"
-		"dac_ability_demon_warrior_bash_description"								"Anessix' Gefährte hat eine {s:bash_chance}%ige Chance, sein Ziel {s:bash_duration} Sekunden lang zu betäuben und {s:bonus_chance_damage} Bonusschaden zu verursachen."
+		"dac_ability_demon_warrior_bash_description"								"Anessix’ Gefährte hat eine {s:bash_chance}%ige Chance, sein Ziel {s:bash_duration} Sekunden lang zu betäuben und {s:bonus_chance_damage} Bonusschaden zu verursachen."
 		"dac_ability_demon_warrior_bash_lore"										"Du willst zu Anessix? Da musst du erst an mir vorbei. – <i>Brill, dämonischer Speichellecker</i>"
 
 		"dac_ability_hobgen_passive"												"Passive Fähigkeit"
@@ -664,30 +664,138 @@
 		"dac_ability_3star"															"3-Sterne-Effekt"
 
 		"dac_ability_warlock_3star"													"Hexenmeister – 3-Sterne-Effekt"
-		"dac_ability_warlock_3star_Description"										"Bei 3 Sternen verhindert der Hexenmeister, solange er lebt, dass verbündete Dämonen sich beim Zaubern von Fähigkeiten gegenseitig verstummen."
+		"dac_ability_warlock_3star_Description"										"Solange der Hexenmeister lebt, verhindert er, dass verbündete Dämonen sich beim Zaubern von Fähigkeiten gegenseitig verstummen."
 
 		"dac_ability_razor_3star"													"Razor – 3-Sterne-Effekt"
-		"dac_ability_razor_3star_Description"										"Bei 3 Sternen stiehlt Razor mit jedem Angriff bis zu {s:max_stacks}-mal {s:stolen_dmg} Angriffsschaden von seinem Gegner. Wenn Razor das Ziel wechselt, wird dieser Effekt für Razor zurückgesetzt, aber nicht für Gegner."
+		"dac_ability_razor_3star_Description"										"Razor erhält Statische Verbindung. Mit jedem Angriff stiehlt Razor bis zu {s:max_stacks}-mal {s:stolen_dmg} Angriffsschaden von seinem Gegner. Wenn Razor das Ziel wechselt, wird dieser Effekt für Razor zurückgesetzt, aber nicht für Gegner."
 
 		"dac_ability_chaos_knight_3star"											"Chaosritter – 3-Sterne-Effekt"
-		"dac_ability_chaos_knight_3star_Description"								"Bei 3 Sternen erhalten verbündete Ritter des Chaosritters, solange er lebt, Boni, als stünden sie neben verbündeten Rittern."
+		"dac_ability_chaos_knight_3star_Description"								"Solange der Chaosritter lebt, erhalten seine verbündeten Ritter Boni, als stünden sie neben verbündeten Rittern."
 
 		"dac_ability_crystal_maiden_3star"											"Kristallmaid – 3-Sterne-Effekt"
-		"dac_ability_crystal_maiden_3star_Description"								"Bei 3 Sternen werden die Abklingzeiten aller Verbündeter um {s:cooldown_reduction} % reduziert, solange Kristallmaid lebt."
+		"dac_ability_crystal_maiden_3star_Description"								"Solange die Kristallmaid lebt, werden die Abklingzeiten aller Verbündeter um {s:cooldown_reduction} % reduziert."
 
 		"dac_ability_terrorblade_3star"												"Terrorklinge – 3-Sterne-Effekt"
-		"dac_ability_terrorblade_3star_Description"									"Bei 3 Sternen erhält Terrorklinge +{s:damage_bonus_pct} % reinen Schaden gegen gegnerische Dämonen."
+		"dac_ability_terrorblade_3star_Description"									"Terrorklinge kann dämonische Energie beschwören, um +{s:damage_bonus_pct} % reinen Schaden gegen gegnerische Dämonen zu erhalten. Der Bonus hält nach jedem Zaubern {s:duration} Sekunden an."
 
 		"dac_ability_tiny_3star"													"Kleiner – 3-Sterne-Effekt"
-		"dac_ability_tiny_3star_Description"										"Bei 3 Sternen wächst Kleiner jedes Mal (max. {s:max_stacks}), wenn er einen Gegner wirft, und erhält dabei +{s:bonus_damage} Angriffsschaden und +{s:bonus_armor} Rüstung, verliert aber {s:aspd_loss} Angriffstempo."
+		"dac_ability_tiny_3star_Description"										"Kleiner wächst jedes Mal (max. {s:max_stacks}), wenn er einen Gegner wirft, und erhält dabei +{s:bonus_damage} Angriffsschaden und +{s:bonus_armor} Rüstung, verliert aber {s:aspd_loss} Angriffstempo."
 
 		"dac_ability_luna_3star"													"Luna – 3-Sterne-Effekt"
-		"dac_ability_luna_3star_Description"										"Bei 3 Sternen erhält Luna Eklipse. Wenn sie Unterstützung braucht, blockiert Selemene in einem Radius von {s:radius} Zellen um Luna das Licht und lässt {s:beams} Mondenergiestrahlen, ein Strahl pro {s:beam_interval} Sekunden, auf Gegner herabregnen, die pro Strahl {s:beam_damage} Schaden zufügen (maximal {s:hit_count} Strahlen pro gegnerischer Einheit) und gegnerische Einheiten für {s:beam_stun} Sekunden betäuben."
+		"dac_ability_luna_3star_Description"										"Luna erhält Eklipse. Wenn sie Unterstützung braucht, blockiert Selemene in einem Radius von {s:radius} Zellen um Luna das Licht und lässt {s:beams} Mondenergiestrahlen, ein Strahl pro {s:beam_interval} Sekunden, auf Gegner herabregnen, die pro Strahl {s:beam_damage} Schaden zufügen (maximal {s:hit_count} Strahlen pro gegnerischer Einheit) und gegnerische Einheiten für {s:beam_stun} Sekunden betäuben."
 
 		"dac_ability_dazzle_3star"													"Dazzle – 3-Sterne-Effekt"
-		"dac_ability_dazzle_3star_Description"										"Bei 3 Sternen bietet Dazzle allen verbündeten Einheiten im Umkreis von {s:never_die_range} Zellen ein Flaches Grab an. Alle gesegneten Einheiten überleben nach einem tödlichen Treffer {s:never_die_duration} weitere Sekunden."
+		"dac_ability_dazzle_3star_Description"										"Dazzle bietet allen verbündeten Einheiten im Umkreis von {s:never_die_range} Zellen ein Flaches Grab an. Alle gesegneten Einheiten überleben nach einem tödlichen Treffer {s:never_die_duration} weitere Sekunden."
 
 		"dac_ability_broodmother_3star"												"Brutmutter – 3-Sterne-Effekt"
-		"dac_ability_broodmother_3star_Description"									"Bei 3 Sternern macht Brutmutter, solange sie lebt, alle verbündeten Spinnlinge unverwundbar."
+		"dac_ability_broodmother_3star_Description"									"Solange die Brutmutter lebt, macht sie alle verbündeten Spinnlinge unverwundbar."
+
+		"dac_ability_pudge_3star"													"Pudge – 3-Sterne-Effekt"
+		"dac_ability_pudge_3star_Description"										"Pudge wird zu einem Fleischberg und erhält jedes Mal {s:bonus_health_per_death} max. Lebenspunkte und {s:magical_resistance} % Magieresistenz, wenn ein Gegner im Umkreis von {s:radius} Zelle stirbt."
+
+		"dac_ability_viper_3star"													"Viper – 3-Sterne-Effekt"
+		"dac_ability_viper_3star_Description"										"Viper führt bei jedem {s:num_attacks}. Angriff einen Vipernschlag aus. Die gegnerische Einheit erleidet {s:damage} Schaden pro Sekunde und verliert {s:bonus_movement_speed} % Bewegungstempo und {s:bonus_attack_speed} Angriffstempo, wobei die Verlangsamung über die Dauer von {s:debuff_duration} Sekunden abschwächt."
+
+		"dac_ability_beastmaster_3star"												"Bestienmeister – 3-Sterne-Effekt"
+		"dac_ability_beastmaster_3star_Description"									"Der Bestienmeister erleidet {s:damage_reduction} % weniger Schaden durch beschworene Einheiten und ist immun gegen alle von diesen verursachten magischen Effekte."
+
+		"dac_ability_juggernaut_3star"												"Moloch – 3-Sterne-Effekt"
+		"dac_ability_juggernaut_3star_Description"									"Moloch erhält Klingentanz: jeder Angriff hat eine {s:crit_chance}%ige Chance, kritische Treffer mit {s:crit_bonus} % Schaden zu verursachen."
+
+		"dac_ability_queenofpain_3star"												"Königin der Pein – 3-Sterne-Effekt"
+		"dac_ability_queenofpain_3star_Description"									"Die Königin der Pein bezaubert umstehende Gegner und erhält eine {s:evasion}%ige Chance, Angriffen von Gegnern innerhalb von {s:radius} Zellen auszuweichen."
+
+		"dac_ability_drow_ranger_3star"												"Drow-Waldhüterin – 3-Sterne-Effekt"
+		"dac_ability_drow_ranger_3star_Description"									"Die Pfeile der Drow-Waldhüterin werden zu Frostpfeilen. Diese Pfeile verlangsamen die Bewegung eines getroffenen Gegners um {s:move_speed_loss} % und dessen Angriffstempo um {s:attack_speed_loss}. Der Effekt dauert {s:slow_duration} Sekunden an."
+
+		"dac_ability_abaddon_3star"													"Abaddon – 3-Sterne-Effekt"
+		"dac_ability_abaddon_3star_Description"										"Abaddon erhält die Fähigkeit, den Fluch von Avernus auf Gegner, die er angreift, anzuwenden. Nachdem Abaddon dieselbe gegnerische Einheit {s:min_stacks} Mal hintereinander angegriffen hat, verstummt diese Einheit für {s:silence_duration} Sekunden und Abaddon erhält +{s:attack_speed} Angriffstempo gegen diese Einheit. Dieser Bonus wird mit jedem zusätzlichen Treffer erneuert, aber startet wieder bei 0, wenn Abaddon sein Ziel wechselt."
+
+		"dac_ability_bloodseeker_3star"												"Blutjäger – 3-Sterne-Effekt"
+		"dac_ability_bloodseeker_3star_Description"									"Der Blutjäger erhält den Bonus auf kritische Treffer der aktuellen Stufe der Assassinenallianz (falls zutreffend)."
+
+		"dac_ability_morphling_3star"												"Formwandler – 3-Sterne-Effekt"
+		"dac_ability_morphling_3star_Description"									"Der Formwandler erhält die Kampfboni aller aktiven gegnerischen Allianzen, als wäre er ein gegnerischer Champion."
+
+		"dac_ability_shadow_fiend_3star"											"Schattenunhold – 3-Sterne-Effekt"
+		"dac_ability_Shadow_fiend_3star_Description"								"Der Schattenunhold erhält Präsenz des Dunklen Meisters. Gegner im Umkreis von {s:radius} Zellen erleiden durch die furchterregende Präsenz des Schattenunholds −{s:armor_reduction} Rüstung."
+
+		"dac_ability_magnataur_3star"												"Magnus – 3-Sterne-Effekt"
+		"dac_ability_magnataur_3star_Description"									"Magnus erhält Antipol. Beim Zaubern erleiden Gegner im Umkreis von {s:radius} Zellen {s:damage} Schaden und werden für {s:duration} Sekunde betäubt."
+
+		"dac_ability_arc_warden_3star"												"Plasmawächter – 3-Sterne-Effekt"
+		"dac_ability_arc_warden_3star_Description"									"Durch Sturmillusion erschaffte Klone kopieren die Gegenstände des Plasmawächters."
+
+		"dac_ability_bat_rider_3star"												"Fledermausreiter – 3-Sterne-Effekt"
+		"dac_ability_bat_rider_3star_Description"									"Klebriges Napalm steckt Gegner in Brand. Details in der Beschreibung der Fähigkeit."
+
+		"dac_ability_nyx_assassin_3star"											"Nyx-Assassine – 3-Sterne-Effekt"
+		"dac_ability_nyx_assassin_3star_Description"								"Vendetta kann öfter gezaubert werden. Details in der Beschreibung der Fähigkeit."
+
+		"dac_ability_shadow_demon_3star"											"Schattendämon – 3-Sterne-Effekt"
+		"dac_ability_shadow_demon_3star_Description"								"Der Schattendämon wendet auf das Ziel von Dämonische Reinigung auch Seelenfänger an. Details in der Beschreibung der Fähigkeit."
+
+		"dac_ability_tusk_3star"													"Stoßzahn – 3-Sterne-Effekt"
+		"dac_ability_tusk_3star_Description"										"Walross-Schlag verlangsamt Gegner länger und verringert deren Angriffs- und Bewegungstempo. Details in der Beschreibung der Fähigkeit."
+
+		"dac_ability_venomancer_3star"												"Venomant – 3-Sterne-Effekt"
+		"dac_ability_venomancer_3star_Description"									"Pestwächter sind immun gegen magischen Schaden."
+
+		"dac_ability_weaver_3star"													"Weber – 3-Sterne-Effekt"
+		"dac_ability_weaver_3star_Description"										"Die Angriffe des Webers verbrennen nach einem Shukuchi Mana. Details in der Beschreibung der Fähigkeit."
+
+		"dac_ability_bristleback_3star"												"Borstenrücken – 3-Sterne-Effekt"
+		"dac_ability_bristleback_3star_Description"									"Stachelregen hat eine deutlich verkürzte Abklingzeit. Details in der Beschreibung der Fähigkeit."
+
+		"dac_ability_earth_spirit_3star"											"Erdgeist – 3-Sterne-Effekt"
+		"dac_ability_earth_spirit_3star_Description"								"Geomagnetischer Griff betäubt Gegner. Details in der Beschreibung der Fähigkeit."
+
+		"dac_ability_natures_prophet_3star"											"3-Sterne-Effekt"
+		"dac_ability_natures_prophet_3star_Description"								"Treants erscheinen auf der gegnerischen Seite des Spielfelds."
+
+		"dac_ability_ogre_magi_3star"												"Ogermagier – 3-Sterne-Effekt"
+		"dac_ability_ogre_magi_3star_Description"									"Ogermagier hat eine Chance, Blutrausch mehrfach zu zaubern. Details in der Beschreibung der Fähigkeit."
+
+		"dac_ability_slardar_3star"													"Slardar – 3-Sterne-Effekt"
+		"dac_ability_slardar_3star_Description"										"Slardar versetzt seinen Gegnern nach Ätzender Nebel einen betäubenden Schlag. Details in der Beschreibung der Fähigkeit."
+
+		"dac_ability_windrunner_3star"												"Windhüterin – 3-Sterne-Effekt"
+		"dac_ability_windrunner_3star_Description"									"Die Windhüterin erhält Ausweichchance und Zauberimmunität, während Sie Machtschuss zaubert. Details in der Beschreibung der Fähigkeit."
+
+		"dac_ability_witch_doctor_3star"											"Hexendoktor – 3-Sterne-Effekt"
+		"dac_ability_witch_doctor_3star_Description"								"Von Lähmende Dosis getroffene Gegner werden mit Malediktum verflucht. Details in der Beschreibung der Fähigkeit."
+
+		"dac_ability_ember_spirit_3star"											"Glutgeist – 3-Sterne-Effekt"
+		"dac_ability_ember_spirit_3star_Description"								"Der Wirkungsbereich von Faustfertigkeit ist verdoppelt. Details in der Beschreibung der Fähigkeit."
+
+		"dac_ability_enigma_3star"													"Enigma – 3-Sterne-Effekt"
+		"dac_ability_enigma_3star_Description"										"Der Wirkungbereich von Mitternachtswellen ist verdreifacht. Details in der Beschreibung der Fähigkeit."
+
+		"dac_ability_wisp_3star"													"Io – 3-Sterne-Effekt"
+		"dac_ability_wisp_3star_Description"										"Relokalisierung setzt die Abklingzeiten wiederbelebter Helden zurück."
+
+		"dac_ability_lycan_3star"													"Lykan – 3-Sterne-Effekt"
+		"dac_ability_lycan_3star_Description"										"Gestaltwandel beschwört mehr Wölfe. Details in der Beschreibung der Fähigkeit."
+
+		"dac_ability_omniknight_3star"												"Omniritter – 3-Sterne-Effekt"
+		"dac_ability_omniknight_3star_Description"									"Der Wirkungsbereich von Reinigung ist verdreifacht. Details in der Beschreibung der Fähigkeit."
+
+		"dac_ability_shadow_shaman_3star"											"Schatten­schamane – 3-Sterne-Effekt"
+		"dac_ability_shadow_shaman_3star_Description"								"Der Schatten­schamane verhext das Ziel von Schlangengrube."
+
+		"dac_ability_treant_protector_3star"										"3-Sterne-Effekt"
+		"dac_ability_treant_protector_3star_Description"							"Von Egelsamen geheilte Einheiten erhalten außerdem Lebendige Rüstung. Details in der Beschreibung der Fähigkeit."
+
+		"dac_ability_storm_spirit_3star"											"Sturmgeist – 3-Sterne-Effekt"
+		"dac_ability_storm_spirit_3star_Description"								"Der Sturmgeist erhält Überladen. Beim Zaubern lädt er eine elektrische Ladung auf, die er dann beim nächsten Angriff abfeuert. Der getroffene Gegner erleidet {s:damage} Schaden und sein Angriffstempo wird für {s:slow_duration} Sekunden um {s:attack_speed_loss} reduziert. Ein Dreieckangriff des Sturmgeists zählt als Angriff, bei dem alle getroffenen Gegner den Schaden erleiden und verlangsamt werden."
+		
+		"dac_ability_legion_commander_3star"										"3-Sterne-Effekt"
+		"dac_ability_legion_commander_3star_Description"							"Verbündete in Reichweite greifen während eines Duells auch das Ziel der Legionskommandantin an."
+
+		"dac_ability_life_stealer_3star"										"Lebensräuber – 3-Sterne-Effekt"
+		"dac_ability_life_stealer_3star_Description"							"Der Lebensräuber erhält Zorn. Beim Zaubern wird der Lebensräuber zauberimmun und erhält +{s:bonus_movement_speed_pct} % Bewegungstempo und +{S:bonus_attack_speed} Angriffstempo. Der Effekt hält {s:duration} Sekunden an."
+
+		"dac_ability_snapfire_3star"												"Tante Knisterkeks – 3-Sterne-Effekt"
+		"dac_ability_snapfire_3star_Description"									"Streuwumme reduziert auch die Rüstung getroffener Gegner. Details in der Beschreibung der Fähigkeit."
 	}
 }

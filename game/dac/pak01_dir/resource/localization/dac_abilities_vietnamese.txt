@@ -32,7 +32,7 @@
 
 		//WINDRUNNER
 		"dac_ability_windrunner_powershot"										"Mũi Tên Xuyên Phá"
-		"dac_ability_windrunner_powershot_Description"							"Con Cưng Thần Gió giương cung đến tối đa {s:castPoint} giây để bắn ra một mũi tên cực mạnh, gây tối đa {s:powershot_damage} sát thương. Sát thương giảm đi {s:damage_reduction}% cho mỗi kẻ địch nó xuyên qua."
+		"dac_ability_windrunner_powershot_Description"							"Con Cưng Thần Gió giương cung đến tối đa {s:castPoint} giây để bắn ra một mũi tên cực mạnh, gây tối đa {s:powershot_damage} sát thương. Sát thương giảm đi {s:damage_reduction}% cho mỗi kẻ địch nó xuyên qua. Khi đạt 3 sao, vào thời điểm bắt đầu giương cung, Con Cưng Thần Gió có {s:evasion}% né tránh và được miễn nhiễm phép thuật. Hiệu ứng này kéo dài {s:evasion_duration} giây."
 		"dac_ability_windrunner_powershot_Lore"									"Tôi kết giao với nhiều bạn bè trên những chuyến du hành, nên là không ngại nhờ giúp đỡ đâu. - <i>Wren, Kẻ chu du thế giới</i>"
 
 		//WITCHDOCTOR
@@ -366,7 +366,7 @@
 		
 		//BLOODSEEKER
 		"dac_ability_bloodseeker_blood_rage"									"Nộ Huyết Xung Thiên"
-		"dac_ability_bloodseeker_blood_rage_Description"						"NỘI TẠI: Mỗi khi kẻ thù của Kẻ Săn Máu giảm máu, hắn có thêm tốc độ đánh, tối đa đến {s:attack_speed_bonus_max} tại {s:min_health_pct}% máu.<br><br>Mỗi khi Kẻ Săn Máu giết một mục tiêu, hắn hồi {s:heal_pct}% lượng máu tối đa của đối thủ."
+		"dac_ability_bloodseeker_blood_rage_Description"						"NỘI TẠI: Mỗi khi kẻ thù của Kẻ Săn Máu giảm máu, hắn có thêm tốc độ đánh, tối đa đến {s:attack_speed_bonus_max} tại {s:min_health_pct}% máu.<br><br>Mỗi khi Kẻ Săn Máu giết một mục tiêu, hắn hồi {s:heal_pct}% lượng máu tối đa của đối thủ. Khi đạt 3 sao, hiệu ứng kích hoạt cho mỗi kẻ thù chết trong bán kính {s:radius} ô xung quanh Kẻ Săn Máu."
 		"dac_ability_bloodseeker_blood_rage_Lore"								"Nếu có một điều tui học được trong sự nghiệp của mình, thì đó là quần chúng thích đầu rơi máu chảy.  Thuê anh này mau và ngay. - <i>Grek, ông bầu quả quyết</i>"
 		
 		//ARC WARDEN
@@ -376,7 +376,7 @@
 		
 		//ARC WARDEN
 		"dac_ability_arc_warden_tempest_double_no_items"						"Phân Thân Bão Tố"
-		"dac_ability_arc_warden_tempest_double_no_items_Description"			"Cai Ngục Trăng Điên tạo phân thân với cùng lượng máu mà hắn hiện có. Những bản sao gây sát thương ít hơn {s:clone_dmg_reduction}%."
+		"dac_ability_arc_warden_tempest_double_no_items_Description"			"Cai Ngục Trăng Điên tạo phân thân với cùng lượng máu mà hắn hiện có. Những bản sao gây sát thương ít hơn {s:clone_dmg_reduction}%, và tăng mana chậm hơn {s:clone_mana_pct_loss_per}% với mỗi phân thân (dồn theo dạng bội số). Khi đạt 3 sao, phân thân cũng sao chép cả vật phẩm của Cai Ngục Trăng Điên."
 		"dac_ability_arc_warden_tempest_double_no_items_Lore"					"Ẩn trong hắn là bí mật của tạo hóa. - <i>Turath, nhà tiên tri huyền bí</i>"
 
 		//MIRANA
@@ -471,7 +471,7 @@
 		"dac_ability_nyx_assassin_spiked_carapace_lore"								"Danh từ đúng là động vật chân khớp. - <i>Quiet, chi li tiểu tiết</i>"
 
 		"dac_ability_nyx_assassin_vendetta"											"Báo Thù"
-		"dac_ability_nyx_assassin_vendetta_description"								"NỘI TẠI: Sau khi dịch chuyển tức thời để tấn công một đơn vị, Nyx Sát Thủ được tăng {s:bonus_damage} sát thương với đòn đánh kế tiếp và gây hiệu ứng phá nội tại lên mục tiêu trong {s:break_duration} giây."
+		"dac_ability_nyx_assassin_vendetta_description"								"NỘI TẠI: Sau khi dịch chuyển tức thời để tấn công một đơn vị, Nyx Sát Thủ được tăng {s:bonus_damage} sát thương với đòn đánh kế tiếp và gây hiệu ứng phá nội tại lên mục tiêu trong {s:break_duration} giây. Khi đạt 3 sao, Nyx Sát Thủ kích hoạt Báo Thù sau {s:hits_to_trigger} đòn đánh liên tục. Đếm lại từ đấu nếu Báo Thù kích hoạt vì dịch chuyển."
 		"dac_ability_nyx_assassin_vendetta_lore"									"Côn Trùng. Chân Khớp. Ai quan tâm chứ. Quan trọng là tôi cần gã giết ngay một tên này... Liên lạc được hay không nào? - <i>O'nia, không thích bị sửa sai</i>"
 
 		// WEAVER
@@ -494,7 +494,7 @@
 		"dac_ability_wisp_tether_lore"												"<i>Tại đó, Enno cố tình nhìn Io chằm chằm</i>"
 
 		"dac_ability_wisp_relocate"													"Vật Đổi Sao Dời"
-		"dac_ability_wisp_relocate_description"										"Io dịch chuyển khỏi bàn đấu trong {s:relocate_time_away} giây để hồi sinh tướng đã chết. Cả hai trở lại với đầy máu và hóa giải các hiệu ứng bất lợi. Khi đạt 3 sao, Io cũng xóa thời gian hồi chiêu của tướng đã chết đó."
+		"dac_ability_wisp_relocate_description"										"Io dịch chuyển khỏi bàn đấu trong {s:relocate_time_away} giây để hồi sinh tướng đã chết. Cả hai trở lại với đầy máu và hóa giải các hiệu ứng bất lợi. Khi đạt 3 sao, Io cũng xóa thời gian hồi chiêu của tướng đó."
 		"dac_ability_wisp_relocate_lore"											"<i>Ấy thế, Io nhìn chằm chằm đáp trả</i>"
 
 		// BRISTLEBACK	
@@ -550,7 +550,7 @@
 
 		// GRANNY LIZARD
 		"dac_ability_granny_lizard_shotgun_blast"									"Bắn Phá"
-		"dac_ability_granny_lizard_shotgun_blast_description"						"Sau 4 đòn tấn công cơ bản, Hỏa Bà Bà lên đạn shotgun của mình, thổi tung quân địch lân cận, gây {s:blast_damage} sát thương trong phạm vi hình nón và làm chậm tốc độ đánh của quân địch bị ảnh hưởng đi {s:blast_bonus_attack_speed}%"
+		"dac_ability_granny_lizard_shotgun_blast_description"						"Sau 4 đòn tấn công cơ bản, Hỏa Bà Bà lên đạn shotgun, thổi tung quân địch lân cận, gây {s:blast_damage} sát thương trong phạm vi hình nón và làm chậm {s:blast_bonus_attack_speed} tốc độ đánh của quân địch bị ảnh hưởng. Khi đạt 3 sao, các đơn vị ảnh hưởng cũng mất {s:blast_armor_loss} giáp. Hiệu ứng kéo dài {s:debuff_duration} giây."
 		"dac_ability_granny_lizard_shotgun_blast_lore"								"Người Keen luôn có tư duy hết sức thú vị về chiến tranh, mà chiến tranh là đời là nghiệp của ta. Có lẽ sắp có thương vụ rồi đây.  - <i>Quiet, nhà đầu tư thiên thần</i>"
 
 		"dac_ability_granny_lizard_bazooka"											"Mortimer Chùn Chụt"
@@ -664,30 +664,138 @@
 		"dac_ability_3star"															"Hiệu ứng 3 sao"
 
 		"dac_ability_warlock_3star"													"Hiệu ứng Ma Đạo Sư 3 sao"
-		"dac_ability_warlock_3star_Description"										"Khi đạt 3 sao và còn sống, Ma Đạo Sư ngăn đồng minh Quỷ khóa phép lẫn nhau khi dùng kỹ năng."
+		"dac_ability_warlock_3star_Description"										"Khi còn sống, Ma Đạo Sư ngăn đồng minh Quỷ khóa phép lẫn nhau khi dùng kỹ năng."
 
 		"dac_ability_razor_3star"													"Hiệu ứng Ma Sấm Sét 3 sao"
-		"dac_ability_razor_3star_Description"										"Khi đạt 3 sao, mỗi lần Ma Sấm Sét tấn công một kẻ địch, hắn cướp {s:stolen_dmg} sát thương, tối đa {s:max_stacks} lần. Khi chuyển mục tiêu, con số này bị lùi về cho Ma Sấm Sét, còn kẻ địch gốc thì giữ nguyên."
+		"dac_ability_razor_3star_Description"										"Ma Sấm Sét có được Liên Kết Tĩnh Điện. Mỗi lần Ma Sấm Sét tấn công một kẻ địch, hắn cướp {s:stolen_dmg} sát thương, tối đa {s:max_stacks} lần. Khi chuyển mục tiêu, con số này trở về 0 cho Ma Sấm Sét, còn kẻ địch gốc thì không đổi."
 
 		"dac_ability_chaos_knight_3star"											"Hiệu ứng Hỗn Nguyên Kỵ Sĩ 3 sao"
-		"dac_ability_chaos_knight_3star_Description"								"Khi đạt 3 sao, các Hiệp Sĩ đồng minh của Hỗn Nguyên Kỵ Sĩ sẽ luôn được tính là một đơn vị Hiệp Sĩ đứng gần khi Hỗn Nguyên Kỵ Sĩ vẫn còn sống."
+		"dac_ability_chaos_knight_3star_Description"								"Khi Hỗn Nguyên Kỵ Sĩ còn sống, Hiệp Sĩ đồng minh của Hỗn Nguyên Kỵ Sĩ sẽ luôn được tính là một đơn vị Hiệp Sĩ đứng gần."
 
 		"dac_ability_crystal_maiden_3star"											"Hiệu ứng Trinh Nữ Pha Lê 3 sao"
-		"dac_ability_crystal_maiden_3star_Description"								"Khi đạt 3 sao, tất cả đồng minh được giảm {s:cooldown_reduction}% thời gian hồi khi Trinh Nữ Pha Lê còn sống."
+		"dac_ability_crystal_maiden_3star_Description"								"Tất cả đồng minh được giảm {s:cooldown_reduction}% thời gian hồi khi Trinh Nữ Pha Lê còn sống."
 
 		"dac_ability_terrorblade_3star"												"Hiệu ứng Thảo Khấu Quỷ 3 sao"
-		"dac_ability_terrorblade_3star_Description"									"Khi đạt 3 sao, Thảo Khấu Quỷ có +{s:damage_bonus_pct}% sát thương thuần chống lại Quỷ phe địch."
+		"dac_ability_terrorblade_3star_Description"									"Thảo Khấu Quỷ có thể triệu tập năng lượng quỷ để có +{s:damage_bonus_pct}% sát thương thuần chống lại kẻ địch quỷ. Phần thêm này kéo dài {s:duration} giây mỗi lần vận phép."
 
 		"dac_ability_tiny_3star"													"Hiệu ứng Tí Nị 3 sao"
-		"dac_ability_tiny_3star_Description"										"Khi đạt 3 sao, mỗi lần Tí Nị thảy kẻ địch, hắn phình to lên, có +{s:bonus_damage} sát thương tấn công và +{s:bonus_armor} giáp nhưng mất {s:aspd_loss} tốc độ đánh, cộng dồn tối đa {s:max_stacks} lần."
+		"dac_ability_tiny_3star_Description"										"Mỗi lần Tí Nị thảy kẻ địch, hắn phình to lên, có +{s:bonus_damage} sát thương tấn công và +{s:bonus_armor} giáp nhưng mất {s:aspd_loss} tốc độ đánh, cộng dồn tối đa {s:max_stacks} lần."
 
 		"dac_ability_luna_3star"													"Hiệu ứng Luna 3 sao"
-		"dac_ability_luna_3star_Description"										"Khi đạt 3 sao, Luna có được Nhật Thực. Khi cần, Selemene chặn ánh sáng trong bán kính {s:radius} ô xung quanh Luna và dội xuống đối phương {s:beams} tia sáng năng lượng mặt trăng, một lần mỗi {s:beam_interval} giây, gây {s:beam_damage} sát thương mỗi tia và làm choáng {s:beam_stun} giây, với giới hạn tối đa {s:hit_count} tia cho mỗi đơn vị địch."
+		"dac_ability_luna_3star_Description"										"Luna có được Nhật Thực. Khi cần, Selemene chặn ánh sáng trong bán kính {s:radius} ô xung quanh Luna và dội xuống đối phương {s:beams} tia sáng năng lượng mặt trăng, một lần mỗi {s:beam_interval} giây, gây {s:beam_damage} sát thương mỗi tia và làm choáng {s:beam_stun} giây, với giới hạn tối đa {s:hit_count} tia cho mỗi đơn vị địch."
 
 		"dac_ability_dazzle_3star"													"Hiệu ứng Dazzle 3 sao"
-		"dac_ability_dazzle_3star_Description"										"Khi đạt 3 sao, Dazzle dùng bùa lợi Chôn Nông lên mọi đơn vị đồng minh, cách đó tối đa {s:never_die_range} ô. Các đơn vị được ban phước sẽ sống thêm {s:never_die_duration} giây sau khi dính đòn kết liễu."
+		"dac_ability_dazzle_3star_Description"										"Dazzle dùng bùa lợi Chôn Nông lên mọi đơn vị đồng minh, cách đó tối đa {s:never_die_range} ô. Các đơn vị được ban phước sẽ sống thêm {s:never_die_duration} giây sau khi dính đòn kết liễu."
 
 		"dac_ability_broodmother_3star"												"Hiệu ứng Nhện Mẹ 3 sao"
-		"dac_ability_broodmother_3star_Description"									"Khi đạt 3 sao và còn sống, Nhện Mẹ khiến tất cả nhện con đồng minh bất khả xâm phạm."
+		"dac_ability_broodmother_3star_Description"									"Khi còn sống, Nhện Mẹ khiến tất cả nhện con đồng minh bất khả xâm phạm."
+
+		"dac_ability_pudge_3star"													"Hiệu ứng Đồ Tể Pudge 3 sao"
+		"dac_ability_pudge_3star_Description"										"Đồ Tể Pudge trở thành Vựa Thịt và tăng {s:bonus_health_per_death} máu tối đa cùng với {s:magical_resistance}% kháng phép mỗi khi có kẻ địch chết trong bán kính {s:radius} ô từ hắn."
+
+		"dac_ability_viper_3star"													"Hiệu ứng Âm Giới Á Long 3 sao"
+		"dac_ability_viper_3star_Description"										"Cứ {s:num_attacks} đòn tấn công, Âm Giới Á Long phát huy Nọc Độc Tử Xà. Kẻ địch nhận {s:damage} sát thương mỗi giây và mất {s:bonus_movement_speed}% tốc độ di chuyển cùng {s:bonus_attack_speed} tốc độ đánh, từ từ giảm dần trong thời gian {s:debuff_duration} giây."
+
+		"dac_ability_beastmaster_3star"												"Hiệu ứng Thú Vương 3 sao"
+		"dac_ability_beastmaster_3star_Description"									"Thú Vương được giảm {s:damage_reduction}% sát thương phải nhận từ đơn vị triệu hồi và miễn nhiễm bất kỳ hiệu ứng phép thuật nào từ chúng."
+
+		"dac_ability_juggernaut_3star"												"Hiệu ứng Kiếm Vương 3 sao"
+		"dac_ability_juggernaut_3star_Description"									"Kiếm Vương có thêm kỹ năng Múa Kiếm: mỗi đòn tấn công có {s:crit_chance}% cơ hội đánh chí mạng, gây {s:crit_bonus}% sát thương."
+
+		"dac_ability_queenofpain_3star"												"Hiệu ứng Nữ Hoàng Thống Khổ 3 sao"
+		"dac_ability_queenofpain_3star_Description"									"Nữ Hoàng Thống Khổ làm kẻ địch xung quanh xiêu lòng, cho phép có {s:evasion}% cơ hội né đòn từ quân địch cách đó tối đa {s:radius} ô."
+
+		"dac_ability_drow_ranger_3star"												"Hiệu ứng Cảnh Binh Drow 3 sao"
+		"dac_ability_drow_ranger_3star_Description"									"Cảnh Binh Drow có Mũi Tên Sương Giá. Các mũi tên này sẽ làm đơn vị trúng đòn chậm {s:move_speed_loss}% tốc độ di chuyển và chậm {s:attack_speed_loss} tốc độ đánh. Hiệu ứng kéo dài trong {s:slow_duration} giây."
+
+		"dac_ability_abaddon_3star"													"Hiệu ứng Tà Sương Kỵ Sĩ 3 sao"
+		"dac_ability_abaddon_3star_Description"										"Tà Sương Kỵ Sĩ có thêm kỹ năng giáng Tai Ương Avernus lên đối thủ. Khi tấn công cùng một kẻ địch {s:min_stacks} lần liên tiếp, đơn vị đó bị khóa phép trong {s:silence_duration} giây và Tà Sương Kỵ Sĩ nhận +{s:attack_speed} tốc độ đánh. Hiệu ứng này được làm mới lại với mỗi đòn tấn công sau đó nhắm vào kẻ địch này và sẽ trở về 0 nếu Tà Sương Kỵ Sĩ thay đổi mục tiêu."
+
+		"dac_ability_bloodseeker_3star"												"Hiệu ứng Kẻ Săn Máu 3 sao"
+		"dac_ability_bloodseeker_3star_Description"									"Kẻ Săn Máu nhận thêm Đòn chí mạng dựa trên cấp độ hiện có của liên minh Sát Thủ, nếu có."
+
+		"dac_ability_morphling_3star"												"Hiệu ứng Dị Thể 3 sao"
+		"dac_ability_morphling_3star_Description"									"Dị Thể nhận tất cả các hiệu ứng trong khi chiến đấu của tất cả liên minh của địch, giống như một Thống Soái bên địch."
+
+		"dac_ability_shadow_fiend_3star"											"Hiệu ứng 3 sao Ác Ma Bóng Tối"
+		"dac_ability_Shadow_fiend_3star_Description"								"Ác Ma Bóng Tối có kỹ năng Chúa Tể Hắc Ám Hiện Diện. Kẻ địch trong phạm vi {s:radius} ô xung quanh sẽ bị -{s:armor_reduction} giáp do kinh hãi trước Ác Ma Bóng Tối."
+
+		"dac_ability_magnataur_3star"												"Hiệu ứng Magnus 3 sao"
+		"dac_ability_magnataur_3star_Description"									"Magnus có Khuynh Đảo Đất Trời. Khi dùng, kẻ địch trong phạm vi {s:radius} ô nhận {s:damage} sát thương và bị choáng {s:duration} giây."
+
+		"dac_ability_arc_warden_3star"												"Hiệu ứng Cai Ngục Trăng Điên 3 sao"
+		"dac_ability_arc_warden_3star_Description"									"Phân Thân Bão Tố sao chép cả vật phẩm của Cai Ngục Trăng Điên."
+
+		"dac_ability_bat_rider_3star"												"Hiệu ứng Dơi Kỵ Sĩ 3 sao"
+		"dac_ability_bat_rider_3star_Description"									"Chất Nhầy Bắt Lửa khiến kẻ địch bốc cháy. Xem chi tiết tại kỹ năng."
+
+		"dac_ability_nyx_assassin_3star"											"Hiệu ứng Nyx Sát Thủ 3 sao"
+		"dac_ability_nyx_assassin_3star_Description"								"Báo Thù có thể sử dụng thường xuyên hơn. Xem chi tiết tại kỹ năng."
+
+		"dac_ability_shadow_demon_3star"											"Hiệu ứng Tà Quỷ 3 sao"
+		"dac_ability_shadow_demon_3star_Description"								"Tà Quỷ áp dụng hiệu ứng Thâu Hồn lên mục tiêu bị trúng Bóng Đè. Xem chi tiết tại kỹ năng."
+
+		"dac_ability_tusk_3star"													"Hiệu ứng Hải Mã Đấu Sĩ 3 sao"
+		"dac_ability_tusk_3star_Description"										"Hải Mã Quyền làm chậm kẻ địch lâu hơn và khiến chúng bị giảm tốc độ đánh và tốc độ di chuyển. Xem chi tiết tại kỹ năng."
+
+		"dac_ability_venomancer_3star"												"Hiệu ứng Tà Độc Xà 3 sao"
+		"dac_ability_venomancer_3star_Description"									"Cọc Dịch Bệnh được miễn nhiễm sát thương phép."
+
+		"dac_ability_weaver_3star"													"Hiệu ứng Dệt Vận 3 sao"
+		"dac_ability_weaver_3star_Description"										"Các đòn đánh của Dệt Vận đốt mana sau khi dùng Vô Ảnh Bộ. Xem chi tiết tại kỹ năng."
+
+		"dac_ability_bristleback_3star"												"Hiệu ứng Lưng Gai 3 sao"
+		"dac_ability_bristleback_3star_Description"									"Giảm mạnh thời gian hồi Phóng Gai. Xem chi tiết tại kỹ năng."
+
+		"dac_ability_earth_spirit_3star"											"Hiệu ứng Địa Tinh Linh 3 sao"
+		"dac_ability_earth_spirit_3star_Description"								"Lực Hút Địa Từ làm choáng kẻ địch. Xem chi tiết tại kỹ năng."
+
+		"dac_ability_natures_prophet_3star"											"Hiệu ứng Tiên Tri Rừng Xanh 3 sao"
+		"dac_ability_natures_prophet_3star_Description"								"Ma cây sinh ra tại nửa bàn đấu phía địch."
+
+		"dac_ability_ogre_magi_3star"												"Hiệu ứng Ogre Pháp Sư 3 sao"
+		"dac_ability_ogre_magi_3star_Description"									"Ogre Pháp Sư có cơ hội dùng liên tiếp kỹ năng Cuồng Huyết. Xem chi tiết tại kỹ năng."
+
+		"dac_ability_slardar_3star"													"Hiệu ứng Hộ Vệ Biển Sâu 3 sao"
+		"dac_ability_slardar_3star_Description"										"Hộ Vệ Biển Sâu đánh choáng sau khi dùng Sương Mù Mòn Rữa. Xem chi tiết tại kỹ năng."
+
+		"dac_ability_windrunner_3star"												"Hiệu ứng Con Cưng Thần Gió 3 sao"
+		"dac_ability_windrunner_3star_Description"									"Con Cưng Thần Gió có cơ hội né đòn và được miễn nhiễm phép thuật khi giương cung bắn Mũi Tên Xuyên Phá. Xem chi tiết tại kỹ năng."
+
+		"dac_ability_witch_doctor_3star"											"Hiệu ứng Thầy Mo 3 sao"
+		"dac_ability_witch_doctor_3star_Description"								"Kẻ địch trúng Bột Xương Tê Liệt cũng sẽ bị nguyền rủa, nhận sát thương theo từng đợt. Xem chi tiết tại kỹ năng."
+
+		"dac_ability_ember_spirit_3star"											"Hiệu ứng Hỏa Tinh Linh 3 sao"
+		"dac_ability_ember_spirit_3star_Description"								"Phạm vi tác dụng của Vô Ảnh Quyền được nhân đôi. Xem chi tiết tại kỹ năng."
+
+		"dac_ability_enigma_3star"													"Hiệu ứng Thực Thể Bí Ẩn 3 sao"
+		"dac_ability_enigma_3star_Description"										"Phạm vi tác dụng của Xung Lực Hắc Ám được nhân ba. Xem chi tiết tại kỹ năng."
+
+		"dac_ability_wisp_3star"													"Hiệu ứng Io 3 sao"
+		"dac_ability_wisp_3star_Description"										"Vật Đổi Sao Dời xóa thời gian hồi chiêu của tướng được hồi sinh."
+
+		"dac_ability_lycan_3star"													"Hiệu ứng Ma Sói 3 sao"
+		"dac_ability_lycan_3star_Description"										"Hóa Sói triệu tập thêm sói. Xem chi tiết tại kỹ năng."
+
+		"dac_ability_omniknight_3star"												"Hiệu ứng Hiệp Sĩ Toàn Tri 3 sao"
+		"dac_ability_omniknight_3star_Description"									"Phạm vi tác dụng của Rửa Tội được nhân ba. Xem chi tiết tại kỹ năng."
+
+		"dac_ability_shadow_shaman_3star"											"Hiệu ứng Hầu Đồng Tà Sư 3 sao"
+		"dac_ability_shadow_shaman_3star_Description"								"Khi dùng Cọc Rắn Bủa Vây lên mục tiêu, Hầu Đồng Tà Sư biến đối tượng thành thú vô hại."
+
+		"dac_ability_treant_protector_3star"										"Hiệu ứng Đại Thụ Hộ Vệ 3 sao"
+		"dac_ability_treant_protector_3star_Description"							"Các đơn vị được Hạt Ký Sinh hồi máu cũng nhận hiệu ứng Giáp Sống. Xem chi tiết tại kỹ năng."
+
+		"dac_ability_storm_spirit_3star"											"Hiệu ứng Bão Tố Tinh Linh 3 sao"
+		"dac_ability_storm_spirit_3star_Description"								"Bão Tố Tinh Linh có Quá Tải Điện Năng. Tích điện khi dùng phép, và giải phóng điện thế này với đòn đánh tiếp theo, gây {s:damage} sát thương và làm chậm {s:attack_speed_loss} tốc độ đánh của mục tiêu trong {s:slow_duration} giây. Tam Giác Trận của Bão Tố Tinh Linh được tính là một đòn tấn công, trong trường hợp này mọi đơn vị trúng đòn trong đó sẽ nhận sát thương và bị làm chậm."
+		
+		"dac_ability_legion_commander_3star"										"Hiệu ứng 3 sao"
+		"dac_ability_legion_commander_3star_Description"							"Trong khi Thách Đấu, tất cả đồng minh trong cự ly sẽ tham chiến tấn công mục tiêu của Chỉ Huy Quân Đoàn."
+
+		"dac_ability_life_stealer_3star"										"Hiệu ứng Đoạt Mệnh 3 sao"
+		"dac_ability_life_stealer_3star_Description"							"Đoạt Mệnh có kỹ năng Tam Bành. Khi dùng, Đoạt Mệnh được miễn nhiễm phép và có +{s:bonus_movement_speed_pct}% tốc độ di chuyển và +{S:bonus_attack_speed} tốc độ đánh. Hiệu lực trong {s:duration} giây."
+
+		"dac_ability_snapfire_3star"												"Hiệu ứng Hỏa Bà Bà 3 sao"
+		"dac_ability_snapfire_3star_Description"									"Bắn Phá cũng giảm giáp của kẻ thù. Xem chi tiết tại kỹ năng."
 	}
 }

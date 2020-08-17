@@ -1,55 +1,34 @@
 package com.valvesoftware.source2launcher;
 
-import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.KeyguardManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
-import com.valvesoftware.JNI_Environment;
+import com.valvesoftware.Activity;
+import com.valvesoftware.Application;
 import com.valvesoftware.Resources;
-import com.valvesoftware.source2launcher.IContentSyncAsyncTask;
 import com.valvesoftware.source2launcher.application;
 
 public class applauncher extends Activity {
     private static final int MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 1;
+    private static final String k_sSpewPackageName = "com.valvesoftware.source2launcher.applauncher";
     private static Context s_context;
-    private final String k_sSpewPackageName = "com.valvesoftware.source2launcher.applauncher";
-    private boolean m_bMadeAPIChoice = false;
     private boolean m_bWriteAccess = false;
-    Handler m_timerHandler = new Handler();
-    Runnable m_timerRunnable = new Runnable() {
-        public boolean m_bIsDone;
-
-        public void run() {
-            application application = (application) JNI_Environment.m_application;
-            applauncher.this.setInstallStatus(application.GetBootStrapStatus());
-            if (application.IsDoneBootStrapping()) {
-                applauncher.this.m_timerHandler.removeCallbacks(applauncher.this.m_timerRunnable);
-                applauncher.this.onBootStrapFinished();
-                return;
-            }
-            applauncher.this.m_timerHandler.postDelayed(this, 30);
-        }
-    };
 
     protected static native void queueSteamLoginWithAccessCode(String str, String str2);
 
-    /* access modifiers changed from: protected */
-    public void setInstallStatus(IContentSyncAsyncTask.TaskStatus taskStatus) {
+    public boolean IsLaunchActivity() {
+        return true;
     }
 
     /* access modifiers changed from: protected */
     public void onCreate(Bundle bundle) {
-        KeyguardManager keyguardManager;
+        super.onCreate(bundle);
         if (!isTaskRoot()) {
             Intent intent = getIntent();
             String action = intent.getAction();
@@ -58,21 +37,28 @@ public class applauncher extends Activity {
                 finish();
             }
         }
-        try {
-            boolean[] GetBoolean = Resources.GetBoolean("RETAIL");
-            if ((GetBoolean == null || !GetBoolean[0]) && (keyguardManager = (KeyguardManager) getSystemService("keyguard")) != null) {
-                super.setTurnScreenOn(true);
-                keyguardManager.requestDismissKeyguard(this, (KeyguardManager.KeyguardDismissCallback) null);
-            }
-        } catch (Throwable unused) {
+        getWindow().getDecorView().setSystemUiVisibility(6);
+        if (Build.VERSION.SDK_INT >= 28) {
+            getWindow().getAttributes().layoutInDisplayCutoutMode = 1;
         }
-        super.onCreate(bundle);
+        Application.WakeForDebugging(this);
         s_context = this;
+        application GetInstance = application.GetInstance();
+        if (GetInstance != null) {
+            GetInstance.setupCommonUI(this);
+        }
+        getWindow().addFlags(128);
+        HandleSteamLogin();
+        application application = (application) Application.GetInstance();
+        if (application.HasInstallFinished()) {
+            application.LaunchMainActivity(true, this);
+            finish();
+        }
     }
 
     public void onResume() {
         super.onResume();
-        application application = (application) JNI_Environment.m_application;
+        application application = (application) Application.GetInstance();
         if (Build.VERSION.SDK_INT < 24 || Build.VERSION.SDK_INT > 25 || application != null) {
             Log.i("com.valvesoftware.applauncher", "Checking permissions");
             if (Build.VERSION.SDK_INT >= 23) {
@@ -85,13 +71,10 @@ public class applauncher extends Activity {
             }
             application.EPermissionsState GetPermissionsState = application.GetPermissionsState();
             if (GetPermissionsState == application.EPermissionsState.EHavePermissions) {
-                if (!application.TriedBootStrap()) {
-                    application.SetTriedBootStrap(true);
+                if (!application.HasInstallStarted()) {
                     Log.i("com.valvesoftware.applauncher", "We have read/write access");
-                    bootStrapIntoGame();
-                    return;
+                    StartInstallProcess();
                 }
-                this.m_timerHandler.postDelayed(this.m_timerRunnable, 1000);
             } else if (GetPermissionsState == application.EPermissionsState.ENeedPermissions) {
                 Log.i("com.valvesoftware.applauncher", "Showing permissions explanation to user");
                 showPermissionExplanation(Resources.GetStringSafe("Native_PermissionsTitle"), Resources.GetStringSafe("Native_PermissionsText"), "android.permission.WRITE_EXTERNAL_STORAGE", 1);
@@ -103,11 +86,6 @@ public class applauncher extends Activity {
         } else {
             forceRestart();
         }
-    }
-
-    public void onStop() {
-        this.m_timerHandler.removeCallbacks(this.m_timerRunnable);
-        super.onStop();
     }
 
     /* access modifiers changed from: private */
@@ -162,36 +140,9 @@ public class applauncher extends Activity {
     }
 
     /* access modifiers changed from: protected */
-    public void bootStrapIntoGame() {
-        if (!this.m_bMadeAPIChoice && Build.VERSION.SDK_INT >= 24) {
-            boolean[] GetBoolean = Resources.GetBoolean("PatchSystemEnabled");
-            boolean z = false;
-            if (GetBoolean != null && GetBoolean[0]) {
-                z = true;
-            }
-            if (!z) {
-                ChooseRenderingAPI();
-                this.m_bMadeAPIChoice = true;
-                return;
-            }
-        }
-        Log.i("com.valvesoftware.SelfInstall", "Bootstrapping");
-        this.m_timerHandler.postDelayed(this.m_timerRunnable, 1000);
-        ((application) JNI_Environment.m_application).onBootStrap();
-    }
-
-    /* access modifiers changed from: protected */
-    public void onBootStrapFinished() {
-        ((application) JNI_Environment.m_application).onBootStrapFinished();
-    }
-
-    /* access modifiers changed from: protected */
-    public boolean isConnectedToWifi() {
-        NetworkInfo activeNetworkInfo = ((ConnectivityManager) ((application) JNI_Environment.m_application).getSystemService("connectivity")).getActiveNetworkInfo();
-        if (activeNetworkInfo == null || activeNetworkInfo.getType() != 1) {
-            return false;
-        }
-        return true;
+    public void StartInstallProcess() {
+        Log.i("com.valvesoftware.StartInstallProcess", "Attempting install");
+        Application.GetInstance().TryInstall(this, true);
     }
 
     private static void forceRestart() {
@@ -209,8 +160,8 @@ public class applauncher extends Activity {
                 Log.i("com.valvesoftware.applauncher", "Queue activity restart.");
                 s_context.startActivity(launchIntentForPackage);
                 Context context2 = s_context;
-                if (context2 instanceof Activity) {
-                    ((Activity) context2).finish();
+                if (context2 instanceof android.app.Activity) {
+                    ((android.app.Activity) context2).finish();
                 }
                 Log.i("com.valvesoftware.applauncher", "Exit process.");
                 Runtime.getRuntime().exit(0);
@@ -222,29 +173,10 @@ public class applauncher extends Activity {
         Log.e("com.valvesoftware.applauncher", "Could not getPackageManager().");
     }
 
-    /* access modifiers changed from: protected */
-    public void ChooseRenderingAPI() {
-        boolean[] GetBoolean = Resources.GetBoolean("Graphics_UseVulkan");
-        if (GetBoolean != null) {
-            Log.i("com.valvesoftware.source2launcher.applauncher", "Graphics choice supplied by vpc resource Graphics_UseVulkan=" + GetBoolean[0]);
-            ((application) JNI_Environment.m_application).SetUseVulkan(GetBoolean[0]);
-            this.m_bMadeAPIChoice = true;
-            bootStrapIntoGame();
-            return;
+    private void HandleSteamLogin() {
+        Application.SteamLoginInfo_t GetSteamLoginFromIntentUrl = Application.GetSteamLoginFromIntentUrl(getIntent());
+        if (GetSteamLoginFromIntentUrl != null && Application.GetInstance().HasInstallFinished()) {
+            queueSteamLoginWithAccessCode(GetSteamLoginFromIntentUrl.authority, GetSteamLoginFromIntentUrl.accessCode);
         }
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Rendering API").setMessage("Please choose a rendering API").setNegativeButton("OpenGL ES", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialogInterface, int i) {
-                ((application) JNI_Environment.m_application).SetUseVulkan(false);
-                applauncher.this.bootStrapIntoGame();
-            }
-        }).setPositiveButton("Vulkan", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialogInterface, int i) {
-                ((application) JNI_Environment.m_application).SetUseVulkan(true);
-                applauncher.this.bootStrapIntoGame();
-            }
-        });
-        builder.setCancelable(false);
-        builder.create().show();
     }
 }

@@ -20,7 +20,6 @@
 10CTestSuite
 10ITestSuite
  %12.3f %12.2f
-(129p}
 12CCommandLine
 12CStdMemAllocI9MemConfigILb0ELb0E27DefaultAdditionalPropertiesEE
 12CStdMemAllocI9MemConfigILb0ELb0E27RuntimeAdditionalPropertiesEE
@@ -43,6 +42,7 @@
 17CThreadSyncObject
 18CThreadManualEvent
 18IMemAlloc_Internal
+(1 9j. 9
 20IMobileEventListener
 22B@q
 22CLogCatLoggingListener
@@ -59,12 +59,14 @@
 28CallStackStatStructDescFuncs
 28CStdMemAlloc_Data_StackStatsI9MemConfigILb0ELb0E27DefaultAdditionalPropertiesELb0EE
 28CStdMemAlloc_Data_StackStatsI9MemConfigILb0ELb0E27RuntimeAdditionalPropertiesELb0EE
+2	! 9
+2	) 9
 -?[`/?291?
 29CDefaultLoggingResponsePolicy
-29hfA
 2(A@qJ5
 2CB@q
 %2d.%03d
+2h& 9
 2*hi8
 2hr@y
 2*ki8J
@@ -88,6 +90,7 @@
 /6`>H
 '6`>H
 @6`>H
+6Q29hfA
 	6RtcZO"
 76`>H
 77hJ@
@@ -116,13 +119,11 @@
 	@9J	
 )	@9J	@9?
 	@9k}A
-!,9KZ
 A)"	@
 +a@9?
 	!A9 
 A9)1G
 a@9*a
-(a*9jR*9h
 &aacute;
 &Aacute;
 AbortMessage({
@@ -180,6 +181,7 @@ A@qI7
 A@qK5
 A@ql5
 A@qn5
+Ar9(	
 &aring;
 &Aring;
 asctime
@@ -227,6 +229,7 @@ __bss_start__
 buffer_string.cpp
 BuiltDebug
  bytes
+_C 9HC`9h
 Called Resume() on a thread that is not suspended!
 calloc
 Cannot flush timstamped event log with no listener!
@@ -433,7 +436,6 @@ ftello
 [   func+child         func ]
 [   func+child       func ]
 [ func+child     func ]
-game/
 game\..\autoargs
 g_bPlatCpuTimeIsReliable
 g_bPlatHasHookedStdOut
@@ -469,6 +471,7 @@ GetPerfSortedLogicalProcessors
 getpid
 GetPlatformName
 getpriority
+GetProgramArguments
 getrlimit
 getrusage
 GetSymbolNameFromAddress
@@ -512,7 +515,6 @@ h6@9i2
 h<8]hh8J
 h=8]hh8J
 h>8j	
-h"]9H
 HangWatchdog
 HangWatchdog_IndicateActivity
 HangWatchdog_Initialize
@@ -526,10 +528,7 @@ hB@9)
 hb@9h
 hb]9H
 hb@9H
-hB]9H
-hBc9H
-hbE9H
-hbF9H
+HC`9(
 Heap: standard allocator
 HEAP WARNING: memory block at %p appears to be corrupt
 HEAP WARNING: memory block at %p is unexpectedly allocated
@@ -614,8 +613,6 @@ isspace
 IterateCapturedStackAnnotations
 &iuml;
 &Iuml;
-j;8a"@
-j98a"@
 J	@9k	@9_
 Java_com_valvesoftware_Application_onLowMemoryNative
 Java_com_valvesoftware_Application_onTrimMemoryNative
@@ -648,7 +645,7 @@ Jobs/Coroutines
 *jyhx
 *(!(K
 	K"}@
-?k78`
+_k78]
 ?k88h
 k	@9J	
 Ka@9+
@@ -693,8 +690,8 @@ Linux 5.0
 [/list]
 [list]
 ()Ljava/lang/ClassLoader;
+()[Ljava/lang/String;
 ()Ljava/lang/String;
-[Ljava/lang/String;
 (Ljava/lang/String;)Ljava/lang/Class;
 (Ljava/lang/String;)Z
 %llu,%u,%u,%s
@@ -854,8 +851,6 @@ Out of logging channels.
 ***** OUT OF MEMORY! /+/ attempted allocation size: %llu ****
 Out of thread ids. Decrease the number of threads or increase MAX_RECYCLEABLE_THREAD_IDS so we can recycle more
 -oX"'
-"P9aeA
-"P9`fA
 &para;
 Parameter file '%s' not found, skipping...
 Particle/Effect_Rendering
@@ -867,6 +862,8 @@ Peak %.2f ms frame
 Peak resident virtual bytes: %s
 Peak total virtual bytes: %s
 Peak working set: %s
+PERSISTENT_STORAGE
+PERSISTENT_STORAGE/game
 -phased_window_create
 physical id
 Plat_AlertUser
@@ -1166,6 +1163,7 @@ putenv
 *		@q
 :>	Q>>
 @@q(7
+	!Q9i
 Q@)Gz`1
 @@qh7
 qH}V*
@@ -1381,7 +1379,6 @@ setpriority
 SetThreadedLoadLibraryFunc
 SetupWin32ConsoleIO
 SetWin32ConsoleColor
-%s/game
 .shstrtab
 &shy;
 SIGABRT
@@ -1434,7 +1431,6 @@ SIGXFSZ
 %s (%i) : %s
 %s %i %s
 %*s%ld
-sm_ProgramArguments
 SoundMix
 SoundOperators
 sprintf
@@ -1605,7 +1601,6 @@ UCS-2
 &Ugrave;
 uint64 CTimestampedEventLog::SetListener(TimestampedEventListener_t)
 uint64 Plat_GetCPUFrequency()
-uj68|
 </ul>
 &uml;
 Unable to create event, error %d
@@ -1969,9 +1964,9 @@ Windows ME
 Windows NT
 Windows Vista
 Windows XP
-wj68U
 wn>Jj
 Working set: %s
+WRITABLE_MANIFEST/game
 	%@x!
 XDG_CACHE_HOME
 XDG_CONFIG_DIRS

@@ -32,7 +32,7 @@
 
 		//WINDRUNNER
 		"dac_ability_windrunner_powershot"										"Tir de puissance"
-		"dac_ability_windrunner_powershot_Description"							"Rôdeuse du vent tend son arc pendant {s:castPoint} secondes au plus, et décoche une seule flèche puissante qui peut infliger jusqu'à {s:powershot_damage} de points de dégâts. Les dégâts infligés par le tir de puissance sont réduits de {s:damage_reduction} % pour chaque ennemi touché."
+		"dac_ability_windrunner_powershot_Description"							"Rôdeuse du vent tend son arc pendant {s:castPoint} secondes au plus, et décoche une seule flèche puissante qui peut infliger jusqu'à {s:powershot_damage} de points de dégâts. Les dégâts infligés par le tir de puissance sont réduits de {s:damage_reduction} % pour chaque ennemi touché. À 3 étoiles, quand Rôdeuse du vent commence à tendre son arc, elle gagne {s:evasion} % d'évasion et devient immunisée contre la magie. Cet effet dure {s:evasion_duration} secondes."
 		"dac_ability_windrunner_powershot_Lore"									"Je me suis fait de nombreux amis au cours de mes voyages, et je n'ai pas peur de faire jouer mes relations. — <i>Wren, globetrotteuse</i>"
 
 		//WITCHDOCTOR
@@ -281,7 +281,7 @@
 
 		//TREANT PROTECTOR
 		"dac_ability_treant_leech_seed"											"Graine vampirique"
-		"dac_ability_treant_leech_seed_Description"								"Protecteur tréant implante une graine vampirisante dans une unité ennemie, qui aspire {s:leech_damage} points de vie toutes les {s:damage_interval} secondes, et réduit sa fréquence d'attaque et sa vitesse de déplacement de {s:movement_slow} %.<br><br>La graine soigne les unités alliées dans un rayon de {s:radius} cases de la cible et, lorsque Protecteur tréant a trois étoiles, elle leur procure +{s:bonus_armor} d'Armure. Cette attaque dure {s:duration} secondes et contamine une nouvelle cible dans un rayon de {s:radius} case si la première cible meurt."
+		"dac_ability_treant_leech_seed_Description"								"Protecteur tréant implante une graine vampirisante dans une unité ennemie, qui aspire {s:leech_damage} points de vie toutes les {s:damage_interval} secondes, et réduit sa fréquence d'attaque et sa vitesse de déplacement de {s:movement_slow} %.<br><br>La graine soigne les unités alliées dans un rayon de {s:radius} cases de la cible et, lorsque Protecteur tréant a trois étoiles, elle leur procure {s:bonus_armor} d'armure. Cette attaque dure {s:duration} secondes et contamine une nouvelle cible dans un rayon de {s:radius} case si la première cible meurt."
 		"dac_ability_treant_leech_seed_Lore"									"Pour être honnête, jamais je n'aurais pensé qu'Enno recevrait l'aide d'un arbre. — <i>Jull et Anessix prennent un verre</i>"
 
 		//KEEPER OF THE LIGHT
@@ -325,7 +325,7 @@
 
 		//TUSK
 		"dac_ability_tusk_walrus_punch"											"Coup de poing de morse"
-		"dac_ability_tusk_walrus_punch_Description"								"Cornu lance son puissant coup de poing de morse, un coup critique si violent qu'il propulse sa victime dans les airs pendant {s:air_time} seconde(s) et inflige {s:critical_damage} % de dégâts critiques. Lorsqu'elle atterrit, la cible est ralentie de {s:move_slow} % pendant {s:slow_duration} secondes et perd {s:attack_slow} de fréquence d'attaque. Cornu ne peut pas être tué quand il donne le coup de poing."
+		"dac_ability_tusk_walrus_punch_Description"								"Cornu lance son puissant Coup de poing de morse, un coup critique si violent qu'il propulse sa victime dans les airs pendant {s:air_time} seconde(s) et inflige {s:critical_damage} % de dégâts critiques. Lorsqu'elle atterrit, la cible est ralentie de {s:move_slow} % pendant {s:slow_duration} secondes et perd {s:attack_slow} de fréquence d'attaque. Cornu ne peut pas être tué quand il donne le coup de poing."
 		"dac_ability_tusk_walrus_punch_Lore"									"On était amis avant. On va savoir bien assez vite s'il est là pour m'aider ou pour me frapper. — <i>Jull repense à son enfance</i>"
 		
 		
@@ -366,7 +366,7 @@
 		
 		//BLOODSEEKER
 		"dac_ability_bloodseeker_blood_rage"									"Rage sanguinaire"
-		"dac_ability_bloodseeker_blood_rage_Description"						"CAPACITÉ PASSIVE : plus les PV de ses ennemis diminuent, plus la fréquence d'attaque de Sanguinaire augmente, jusqu'à atteindre un maximum de {s:attack_speed_bonus_max} à {s:min_health_pct} % de ses PV.<br><br>Quand il achève un ennemi, il regagne {s:heal_pct} % des PV maximums de cet ennemi."
+		"dac_ability_bloodseeker_blood_rage_Description"						"CAPACITÉ PASSIVE : plus les PV de sa cible diminuent, plus la fréquence d'attaque de Sanguinaire augmente, jusqu'à atteindre un maximum de {s:attack_speed_bonus_max} à {s:min_health_pct} % de ses PV.<br><br>Quand il achève une unité ennemie, il regagne {s:heal_pct} % des PV maximums de cette unité. Lorsqu'il a 3 étoiles, il regagne un pourcentage des PV maximums de toutes les unités ennemies qui meurent dans un rayon de {s:radius} case autour de lui."
 		"dac_ability_bloodseeker_blood_rage_Lore"								"Si j'ai appris une chose dans ma carrière, c'est que les gens aiment le sang. Engage cet homme-là. — <i>Grek, instigateur décidé</i>"
 		
 		//ARC WARDEN
@@ -376,7 +376,7 @@
 		
 		//ARC WARDEN
 		"dac_ability_arc_warden_tempest_double_no_items"						"Ubiquité"
-		"dac_ability_arc_warden_tempest_double_no_items_Description"			"Gardien de l'arc crée un double de lui-même. Le clone possède le même nombre de PV que Gardien de l'arc, mais il inflige {s:clone_dmg_reduction} % de dégâts en moins."
+		"dac_ability_arc_warden_tempest_double_no_items_Description"			"Gardien de l'arc crée un double de lui-même. Le clone possède le même nombre de PV que Gardien de l'arc au moment où il est créé, mais il inflige {s:clone_dmg_reduction} % de dégâts en moins et obtient {s:clone_mana_pct_loss_per} % de mana en moins par clone (ce pourcentage est multiplié lorsqu'il est cumulé). Lorsqu'il a 3 étoiles, le clone copie également l'objet dont Gardien de l'arc est équipé."
 		"dac_ability_arc_warden_tempest_double_no_items_Lore"					"Il apporte avec lui les mystères de la création. — <i>Turath, prophète énigmatique</i>"
 
 		//MIRANA
@@ -471,7 +471,7 @@
 		"dac_ability_nyx_assassin_spiked_carapace_lore"								"Ça s'appelle un « arthropode ». — <i>Silence, à cheval sur les mots</i>"
 
 		"dac_ability_nyx_assassin_vendetta"											"Vendetta"
-		"dac_ability_nyx_assassin_vendetta_description"								"CAPACITÉ PASSIVE : après s'être téléporté pour attaquer une unité, Disciple de Nyx inflige {s:bonus_damage} de dégâts supplémentaires lors de son attaque suivante. Il INTERROMPT l'ennemi pendant {s:break_duration} secondes et désactive toutes ses capacités passives."
+		"dac_ability_nyx_assassin_vendetta_description"								"CAPACITÉ PASSIVE : après s'être téléporté pour attaquer une unité, Disciple de Nyx inflige {s:bonus_damage} de dégâts supplémentaires au cours de sa prochaine attaque. Il interrompt l'unité ennemie pendant {s:break_duration} secondes et désactive toutes ses capacités passives. Lorsqu'il a 3 étoiles, il applique également Vendetta après {s:hits_to_trigger} attaques consécutives. Le compteur d'attaques est remis à zéro quand Vendetta s'active après que Disciple de Nyx s'est téléporté."
 		"dac_ability_nyx_assassin_vendetta_lore"									"Insecte, arthropode... Peu importe. L'important, c'est que j'ai besoin de lui pour tuer quelqu'un... Alors, tu peux mettre la main sur lui ou pas ? — <i>O'nia n'aime pas être corrigée</i>"
 
 		// WEAVER
@@ -494,7 +494,7 @@
 		"dac_ability_wisp_tether_lore"												"<i>Enno regarde attentivement Io</i>"
 
 		"dac_ability_wisp_relocate"													"Relocalisation"
-		"dac_ability_wisp_relocate_description"										"Io se téléporte pendant {s:relocate_time_away} secondes pour ressusciter un héros. À leur retour, les deux héros sont guéris de tout effet négatif et leurs PV sont au maximum. Lorsqu'il a 3 étoiles, Io remet à zéro les temps de recharge des capacités et des objets du héros mort."
+		"dac_ability_wisp_relocate_description"										"Io se téléporte pendant {s:relocate_time_away} secondes pour ressusciter un héros ou une héroïne. À leur retour, les deux unités sont guéries de tout effet négatif et leurs PV sont au maximum. Lorsqu'il a 3 étoiles, Io remet à zéro les temps de recharge des capacités et des objets de l'unité ressuscitée."
 		"dac_ability_wisp_relocate_lore"											"<i>Io lui rend son regard</i>"
 
 		// BRISTLEBACK	
@@ -550,7 +550,7 @@
 
 		// GRANNY LIZARD
 		"dac_ability_granny_lizard_shotgun_blast"									"Bonne vieille explosion"
-		"dac_ability_granny_lizard_shotgun_blast_description"						"Après 4 attaques de base, Chevrotine charge son fusil de chasse et tire sur un ennemi à proximité. Elle inflige {s:blast_damage} de dégâts sur une zone en forme de cône et diminue la fréquence d'attaque des unités touchées de {s:blast_bonus_attack_speed} %."
+		"dac_ability_granny_lizard_shotgun_blast_description"						"Après 4 attaques de base, Chevrotine charge son fusil de chasse et tire sur une unité ennemie à proximité. Elle inflige {s:blast_damage} de dégâts sur une zone en forme de cône et diminue la fréquence d'attaque des unités touchées de {s:blast_bonus_attack_speed}. Lorsqu'elle a 3 étoiles, l'armure des unités touchées est réduite de {s:blast_armor_loss}. Cet effet dure {s:debuff_duration} secondes."
 		"dac_ability_granny_lizard_shotgun_blast_lore"								"Les Keens ont toujours été fascinés par la guerre, et la guerre, c'est mon fonds de commerce. Je pourrais peut-être faire une bonne affaire. — <i>Silence, investisseuse providentielle</i>"
 
 		"dac_ability_granny_lizard_bazooka"											"Baisers de Mortimer"
@@ -664,30 +664,138 @@
 		"dac_ability_3star"															"Effet trois étoiles"
 
 		"dac_ability_warlock_3star"													"Effet trois étoiles de Démoniste"
-		"dac_ability_warlock_3star_Description"										"Lorsqu'il a trois étoiles et tant qu'il est en vie, Démoniste empêche les démons alliés de se réduire mutuellement au silence quand ils lancent leurs capacités."
+		"dac_ability_warlock_3star_Description"										"Tant qu'il est en vie, Démoniste empêche les démons alliés de se réduire les uns les autres au silence quand ils lancent leurs capacités."
 
 		"dac_ability_razor_3star"													"Effet trois étoiles de Razor"
-		"dac_ability_razor_3star_Description"										"Lorsqu'il a trois étoiles, Razor vole {s:stolen_dmg} de dégâts d'attaque à sa cible à chaque fois qu'il l'attaque, et ce jusqu'à {s:max_stacks} fois. Lorsqu'il change de cible, Razor perd les dégâts volés, mais la cible ne récupère pas ceux qu'elle a perdus."
+		"dac_ability_razor_3star_Description"										"Razor acquiert la capacité Arc électrique. À chaque fois qu'il attaque une unité ennemie, il lui vole {s:stolen_dmg} de dégâts d'attaque, et ce jusqu'à {s:max_stacks} fois. Lorsqu'il change de cible, Razor perd les dégâts volés, mais la cible ne récupère pas ceux qu'elle a perdus."
 
 		"dac_ability_chaos_knight_3star"											"Effet trois étoiles de Chevalier du chaos"
-		"dac_ability_chaos_knight_3star_Description"								"Lorsque Chevalier du chaos a trois étoiles et tant qu'il est en vie, les chevaliers alliés bénéficient des effets de leur alliance, même quand ils ne sont pas à proximité l'un de l'autre."
+		"dac_ability_chaos_knight_3star_Description"								"Tant que Chevalier du chaos est en vie, les chevaliers alliés bénéficient des effets de leur alliance, même quand ils ne sont pas à proximité l'un de l'autre."
 
 		"dac_ability_crystal_maiden_3star"											"Effet trois étoiles de Vierge de cristal"
-		"dac_ability_crystal_maiden_3star_Description"								"Lorsque Vierge de cristal a trois étoiles et tant qu'elle est en vie, les temps de recharge de tous ses alliés sont réduits de {s:cooldown_reduction} %."
+		"dac_ability_crystal_maiden_3star_Description"								"Tant que Vierge de cristal est en vie, les temps de recharge de toutes les unités alliées sont réduits de {s:cooldown_reduction} %."
 
 		"dac_ability_terrorblade_3star"												"Effet trois étoiles de Lame d'effroi"
-		"dac_ability_terrorblade_3star_Description"									"Lorsque Lame d'effroi a trois étoiles, les dégâts purs qu'il inflige aux démons ennemis augmentent de {s:damage_bonus_pct} %."
+		"dac_ability_terrorblade_3star_Description"									"Lame d'effroi invoque de l'énergie démoniaque pour gagner un bonus de {s:damage_bonus_pct} % de dégâts purs contre les démons ennemis. Le bonus dure {s:duration} secondes pour chaque incantation."
 
 		"dac_ability_tiny_3star"													"Effet trois étoiles de Minus"
-		"dac_ability_tiny_3star_Description"										"Quand Minus a trois étoiles, il gagne en puissance à chaque fois qu'il lance un ennemi. Il gagne {s:bonus_damage} de dégâts d'attaque et {s:bonus_armor} d'armure, mais sa fréquence d'attaque est réduite de {s:aspd_loss} pour chaque ennemi lancé (jusqu'à {s:max_stacks} ennemis)."
+		"dac_ability_tiny_3star_Description"										"Minus gagne en puissance à chaque fois qu'il lance une unité ennemie. Il gagne {s:bonus_damage} de dégâts d'attaque et {s:bonus_armor} d'armure, mais sa fréquence d'attaque est réduite de {s:aspd_loss} pour chaque unité ennemie lancée (jusqu'à {s:max_stacks})."
 
 		"dac_ability_luna_3star"													"Effet trois étoiles de Luna"
-		"dac_ability_luna_3star_Description"										"Quand elle a trois étoiles, Luna acquiert la capacité Éclipse. Au moment opportun, Sélémène obscurcit une zone dans un rayon de {s:radius} cases autour de Luna et lance {s:beams} faisceaux d'énergie lunaire sur les ennemis qui s'y trouvent, et ce une fois toutes les {s:beam_interval} seconde. Chaque faisceau inflige {s:beam_damage} points de dégâts et étourdit pendant {s:beam_stun} seconde. Chaque unité ennemie peut être touchée par {s:hit_count} faisceaux maximum."
+		"dac_ability_luna_3star_Description"										"Luna acquiert la capacité Éclipse. Au moment opportun, Sélémène obscurcit une zone dans un rayon de {s:radius} cases autour de Luna et lance {s:beams} faisceaux d'énergie lunaire sur les unités ennemies qui s'y trouvent, et ce une fois toutes les {s:beam_interval} seconde. Chaque faisceau inflige {s:beam_damage} points de dégâts et étourdit pendant {s:beam_stun} seconde. Chaque unité ennemie peut être touchée par {s:hit_count} faisceaux maximum."
 
 		"dac_ability_dazzle_3star"													"Effet trois étoiles d'Albédo"
-		"dac_ability_dazzle_3star_Description"										"Quand il a trois étoiles, Albédo bénit de sa Mort ajournée les unités alliées qui se trouvent à moins de {s:never_die_range} case. Les unités bénies survivent pendant {s:never_die_duration} secondes supplémentaires après avoir reçu un coup fatal."
+		"dac_ability_dazzle_3star_Description"										"Albédo bénit de sa Mort ajournée les unités alliées qui se trouvent à moins de {s:never_die_range} case de lui. Les unités bénies survivent pendant {s:never_die_duration} secondes supplémentaires après avoir reçu un coup fatal."
 
 		"dac_ability_broodmother_3star"												"Effet trois étoiles de Génitrice"
-		"dac_ability_broodmother_3star_Description"									"Quand elle a trois étoiles et tant qu'elle est en vie, Génitrice rend les jeunes araignées alliées invulnérables."
+		"dac_ability_broodmother_3star_Description"									"Tant que Génitrice est en vie, les jeunes araignées alliées sont invulnérables."
+
+		"dac_ability_pudge_3star"													"Effet trois étoiles de Pudge"
+		"dac_ability_pudge_3star_Description"										"Pudge devient un Tas de chair. Chaque fois qu'une unité ennemie meurt dans un rayon de {s:radius} case, son maximum de PV augmente de {s:bonus_health_per_death} et sa résistance à la magie augmente de {s:magical_resistance} %."
+
+		"dac_ability_viper_3star"													"Effet trois étoiles de Viper"
+		"dac_ability_viper_3star_Description"										"Viper déclenche une Frappe vipérine toutes les {s:num_attacks} attaques. L'unité ennemie subit {s:damage} points de dégâts par seconde et perd {s:bonus_movement_speed} % de vitesse de déplacement et {s:bonus_attack_speed} de fréquence d'attaque. Ces effets s'estompent au fil des {s:debuff_duration} secondes qu'ils durent."
+
+		"dac_ability_beastmaster_3star"												"Effet trois étoiles de Maître des bêtes"
+		"dac_ability_beastmaster_3star_Description"									"Maître des bêtes subit {s:damage_reduction} % de dégâts en moins quand ceux-ci sont infligés par des unités invoquées, et il devient immunisé contre leurs sorts."
+
+		"dac_ability_juggernaut_3star"												"Effet trois étoiles de Jaggernaut"
+		"dac_ability_juggernaut_3star_Description"									"Jaggernaut acquiert la capacité Lame dansante. À chacune de ses attaques, il a {s:crit_chance} % de chances de porter un coup critique qui infligera {s:crit_bonus} % de dégâts supplémentaires."
+
+		"dac_ability_queenofpain_3star"												"Effet trois étoiles de Reine du supplice"
+		"dac_ability_queenofpain_3star_Description"									"Reine du supplice captive les unités ennemies à proximité, ce qui lui donne {s:evasion} % de chances d'esquiver les attaques des unités ennemies qui se trouvent dans un rayon de {s:radius} cases maximum."
+
+		"dac_ability_drow_ranger_3star"												"Effet trois étoiles de Rôdeuse drow"
+		"dac_ability_drow_ranger_3star_Description"									"Les flèches de Rôdeuse drow deviennent des flèches de givre. Celles-ci diminuent la vitesse de déplacement d'une unité touchée de {s:move_speed_loss} % et sa fréquence d'attaque de {s:attack_speed_loss}. L'effet se prolonge pendant {s:slow_duration} secondes."
+
+		"dac_ability_abaddon_3star"													"Effet trois étoiles d'Abaddon"
+		"dac_ability_abaddon_3star_Description"										"Abaddon obtient la capacité d'appliquer la Malédiction d'Avernus aux unités ennemies qu'il attaque. Après avoir été attaquée {s:min_stacks} fois d'affilée par Abaddon, une unité ennemie est réduite au silence pendant {s:silence_duration} secondes, et Abaddon gagne un bonus de fréquence d'attaque de {s:attack_speed} contre elle. Le bonus se réinitialise à chaque attaque réussie, mais il est remis à zéro si Abaddon change de cible."
+
+		"dac_ability_bloodseeker_3star"												"Effet trois étoiles de Sanguinaire"
+		"dac_ability_bloodseeker_3star_Description"									"Sanguinaire bénéficie du bonus de coup critique qui correspond au niveau actuel de l'alliance des assassins (à condition que l'alliance soit active)."
+
+		"dac_ability_morphling_3star"												"Effet trois étoiles d'Aquamorph"
+		"dac_ability_morphling_3star_Description"									"Aquamorph bénéficie des bonus de combat de toutes les alliances ennemies actives, comme s'il faisait partie de l'alliance des champions dans l'équipe ennemie."
+
+		"dac_ability_shadow_fiend_3star"											"Effet trois étoiles de Démon de l'ombre"
+		"dac_ability_Shadow_fiend_3star_Description"								"Démon de l'ombre obtient Présence du Seigneur des ténèbres. L'armure des unités ennemies situées dans un rayon de {s:radius} cases est réduite de {s:armor_reduction} par la présence terrifiante de Démon de l'ombre."
+
+		"dac_ability_magnataur_3star"												"Effet trois étoiles de Magnus"
+		"dac_ability_magnataur_3star_Description"									"Magnus acquiert la capacité Polarité inversée. Les unités ennemies qui se trouvent dans un rayon de {s:radius} cases subissent {s:damage} points de dégâts et sont étourdies pendant {s:duration} seconde."
+
+		"dac_ability_arc_warden_3star"												"Effet trois étoiles de Gardien de l'arc"
+		"dac_ability_arc_warden_3star_Description"									"Les clones d'Ubiquité obtiennent l'objet de Gardien de l'arc."
+
+		"dac_ability_bat_rider_3star"												"Effet trois étoiles de Cavalier chiroptère"
+		"dac_ability_bat_rider_3star_Description"									"Napalm poisseux enflamme les unités ennemies. Lisez la description de la capacité pour plus d'informations."
+
+		"dac_ability_nyx_assassin_3star"											"Effet trois étoiles de Disciple de Nyx"
+		"dac_ability_nyx_assassin_3star_Description"								"Le temps de recharge de Vendetta est réduit. Lisez la description de la capacité pour plus d'informations."
+
+		"dac_ability_shadow_demon_3star"											"Effet trois étoiles de Démon des ténèbres"
+		"dac_ability_shadow_demon_3star_Description"								"Démon des ténèbres applique Capture d'âme à la cible d'Élimination démoniaque. Lisez la description de la capacité pour plus d'informations."
+
+		"dac_ability_tusk_3star"													"Effet trois étoiles de Cornu"
+		"dac_ability_tusk_3star_Description"										"Coup de poing de morse ralentit les unités ennemies pendant plus longtemps et leur fait perdre en fréquence d'attaque et vitesse de déplacement. Lisez la description de la capacité pour plus d'informations."
+
+		"dac_ability_venomancer_3star"												"Effet trois étoiles de Vénimancien"
+		"dac_ability_venomancer_3star_Description"									"Les vigiles venimeuses sont immunisées contre les dégâts magiques."
+
+		"dac_ability_weaver_3star"													"Effet trois étoiles de Tisseur"
+		"dac_ability_weaver_3star_Description"										"Les attaques de Tisseur font perdre du mana aux unités qui sont la cible de Shukuchi. Lisez la description de la capacité pour plus d'informations."
+
+		"dac_ability_bristleback_3star"												"Effet trois étoiles d'Hystripic"
+		"dac_ability_bristleback_3star_Description"									"Le temps de recharge de Projection de piquants est fortement réduit. Lisez la description de la capacité pour plus d'informations."
+
+		"dac_ability_earth_spirit_3star"											"Effet trois étoiles d'Esprit de la terre"
+		"dac_ability_earth_spirit_3star_Description"								"Emprise géomagnétique étourdit les unités ennemies. Lisez la description de la capacité pour plus d'informations."
+
+		"dac_ability_natures_prophet_3star"											"Effet trois étoiles de Prophète de la nature"
+		"dac_ability_natures_prophet_3star_Description"								"Invoque un tréant dans le camp adverse."
+
+		"dac_ability_ogre_magi_3star"												"Effet trois étoiles d'Ogre mage"
+		"dac_ability_ogre_magi_3star_Description"									"Ogre mage a une chance de lancer Soif de sang sur plusieurs unités alliées. Lisez la description de la capacité pour plus d'informations."
+
+		"dac_ability_slardar_3star"													"Effet trois étoiles de Slardar"
+		"dac_ability_slardar_3star_Description"										"Slardar étourdit brièvement sa cible après avoir lancé Brume corrosive. Lisez la description de la capacité pour plus d'informations."
+
+		"dac_ability_windrunner_3star"												"Effet trois étoiles de Rôdeuse du vent"
+		"dac_ability_windrunner_3star_Description"									"Quand Rôdeuse du vent utilise Tir de puissance, elle gagne de l'évasion et devient immunisée contre la magie. Lisez la description de la capacité pour plus d'informations."
+
+		"dac_ability_witch_doctor_3star"											"Effet trois étoiles de Sorcier guérisseur"
+		"dac_ability_witch_doctor_3star_Description"								"Sorcier guérisseur lance un sort sur les unités ennemies étourdies par Tonneau paralysant. Lisez la description de la capacité pour plus d'informations."
+
+		"dac_ability_ember_spirit_3star"											"Effet trois étoiles d'Esprit ardent"
+		"dac_ability_ember_spirit_3star_Description"								"Le rayon de la zone d'effet de Tour de passe-passe est doublé. Lisez la description de la capacité pour plus d'informations."
+
+		"dac_ability_enigma_3star"													"Effet trois étoiles d'Enigma"
+		"dac_ability_enigma_3star_Description"										"Le rayon de la zone d'effet de Pulsation de minuit est triplé. Lisez la description de la capacité pour plus d'informations."
+
+		"dac_ability_wisp_3star"													"Effet trois étoiles d'Io"
+		"dac_ability_wisp_3star_Description"										"Relocalisation réinitialise les temps de recharge de l'unité ressuscitée."
+
+		"dac_ability_lycan_3star"													"Effet trois étoiles de Lycanthrope"
+		"dac_ability_lycan_3star_Description"										"Le nombre de loups invoqués par Transmutation est augmenté. Lisez la description de la capacité pour plus d'informations."
+
+		"dac_ability_omniknight_3star"												"Effet trois étoiles d'Omnichevalier"
+		"dac_ability_omniknight_3star_Description"									"Le rayon de la zone d'effet de Cure est triplé. Lisez la description de la capacité pour plus d'informations."
+
+		"dac_ability_shadow_shaman_3star"											"Effet trois étoiles de Chamane des ténèbres"
+		"dac_ability_shadow_shaman_3star_Description"								"Chamane des ténèbres transforme l'unité ennemie qui est la cible de Nuée de vigiles ophidiens."
+
+		"dac_ability_treant_protector_3star"										"Effet trois étoiles de Protecteur tréant"
+		"dac_ability_treant_protector_3star_Description"							"L'armure des unités alliées soignées par Graine vampirique est augmentée. Lisez la description de la capacité pour plus d'informations."
+
+		"dac_ability_storm_spirit_3star"											"Effet trois étoiles d'Esprit de la tempête"
+		"dac_ability_storm_spirit_3star_Description"								"Esprit de la tempête acquiert la capacité Surcharge. Quand il lance un sort, une charge électrique est créée. Lors de sa prochaine attaque, elle provoque une explosion qui inflige {s:damage} points de dégâts à sa cible et diminue sa fréquence d'attaque de {s:attack_speed_loss} pendant {s:slow_duration} seconde. Cela fonctionne également lorsqu'Esprit de la tempête exécute un deltaséïsme : dans ce cas, toutes les unités touchées subissent des dégâts et sont ralenties."
+		
+		"dac_ability_legion_commander_3star"										"Effet trois étoiles de Commandante de la Légion"
+		"dac_ability_legion_commander_3star_Description"							"Lors d'un Duel, les unités alliées à proximité de Commandante de la Légion attaqueront également sa cible."
+
+		"dac_ability_life_stealer_3star"										"Effet trois étoiles de Voleur de vie"
+		"dac_ability_life_stealer_3star_Description"							"Voleur de vie acquiert la capacité Rage. Quand cette capacité est lancée, Voleur de vie devient immunisé contre la magie. Sa vitesse de déplacement est augmentée de {s:bonus_movement_speed_pct} %, et sa fréquence d'attaque de {S:bonus_attack_speed}. Cet effet dure {s:duration} secondes."
+
+		"dac_ability_snapfire_3star"												"Effet trois étoiles de Chevrotine"
+		"dac_ability_snapfire_3star_Description"									"Bonne vieille explosion réduit également l'armure des unités ennemies touchées. Lisez la description de la capacité pour plus d'informations."
 	}
 }

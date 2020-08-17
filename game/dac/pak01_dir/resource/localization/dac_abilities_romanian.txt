@@ -32,7 +32,7 @@
 
 		//WINDRUNNER
 		"dac_ability_windrunner_powershot"										"Săgeată străpungătoare"
-		"dac_ability_windrunner_powershot_Description"							"Pădurașa Vântului își pregătește arcul timp de {s:castPoint} secunde pentru o lovitură puternică, cauzând până la {s:powershot_damage} de daune. Pentru fiecare inamic lovit de Săgeată străpungătoare, daunele îi vor fi reduse cu {s:damage_reduction}%."
+		"dac_ability_windrunner_powershot_Description"							"Pădurașa Vântului își încordează arcul timp de {s:castPoint} secunde pentru o singură lovitură puternică, cauzând până la {s:powershot_damage} de daune. Pentru fiecare inamic lovit de Săgeata străpungătoare, daunele săgeții sunt reduse cu {s:damage_reduction}%. La trei stele, la începutul încordării arcului, Pădurașa Vântului primește {s:evasion}% evitare și devine imună la magie. Aceste efecte durează {s:evasion_duration} secunde."
 		"dac_ability_windrunner_powershot_Lore"									"Mi-am făcut mulți prieteni de-a lungul călătoriilor mele și nu mi-e teamă să cer favoruri. - <i>Wren, călătoare prin lume</i>"
 
 		//WITCHDOCTOR
@@ -366,7 +366,7 @@
 		
 		//BLOODSEEKER
 		"dac_ability_bloodseeker_blood_rage"									"Furie însângerată"
-		"dac_ability_bloodseeker_blood_rage_Description"						"PASIV: Pe măsură ce viața inamicului Iscoadei Sângerii scade, viteza de atac a acestuia crește, până la un maxim de {s:attack_speed_bonus_max} la {s:min_health_pct}% viață.<br><br>Oricând Iscoadă Sângerie ucide o țintă, acesta se vindecă cu {s:heal_pct}% din viața maximă a țintei."
+		"dac_ability_bloodseeker_blood_rage_Description"						"PASIV: Pe măsură ce viața inamicului Iscoadei Sângerii scade, viteza de atac a acestuia crește, până la un maxim de {s:attack_speed_bonus_max} la {s:min_health_pct}% viață.<br><br>Oricând Iscoada Sângerie ucide o țintă, acesta se vindecă cu {s:heal_pct}% din viața maximă a țintei. La trei stele, acest lucru are loc atunci când un inamic moare la o distanță de {s:radius} celulă față de Iscoada Sângerie."
 		"dac_ability_bloodseeker_blood_rage_Lore"								"Dacă am învățat ceva de-a lungul carierei mele este faptul că lumii îi place sângele. Recrutează-l. - <i>Grek, promotorul decisiv</i>"
 		
 		//ARC WARDEN
@@ -376,7 +376,7 @@
 		
 		//ARC WARDEN
 		"dac_ability_arc_warden_tempest_double_no_items"						"Dublură furtunoasă"
-		"dac_ability_arc_warden_tempest_double_no_items_Description"			"Străjerul Voltaic creează o copie a sa care are aceeași viață ca originalul în momentul creării. Clonele cauzează cu {s:clone_dmg_reduction}% mai puține daune."
+		"dac_ability_arc_warden_tempest_double_no_items_Description"			"Străjerul Voltaic creează o copie a sa cu aceeași viață pe care o are acum. Clonele cauzează cu {s:clone_dmg_reduction}% mai puține daune și primesc cu {s:clone_mana_pct_loss_per}% mai puțină mana per clonă (se suprapune multiplicativ). La 3 stele, clona copiază de asemenea și obiectele Străjerului Voltaic."
 		"dac_ability_arc_warden_tempest_double_no_items_Lore"					"Cu el sosesc misterele creației. - <i>Turath, profetul criptic</i>"
 
 		//MIRANA
@@ -471,7 +471,7 @@
 		"dac_ability_nyx_assassin_spiked_carapace_lore"								"Cuvântul corect este artropod. - <i>Liniște, cu atenție la detalii</i>"
 
 		"dac_ability_nyx_assassin_vendetta"											"Vendetă"
-		"dac_ability_nyx_assassin_vendetta_description"								"PASIV: După ce se teleportează pentru a ataca o unitate, Nyx Asasin cauzează cu următorul său atac {s:bonus_damage} de daune bonus și perturbă inamicul, dezactivându-i toate efectele pasive timp de {s:break_duration} secunde."
+		"dac_ability_nyx_assassin_vendetta_description"								"PASIV: După ce se teleportează pentru a ataca o unitate, Nyx Asasin cauzează cu următorul său atac {s:bonus_damage} de daune bonus și perturbă inamicul, dezactivându-i toate efectele pasive timp de {s:break_duration} secunde. La trei stele, Nyx Asasin aplică Vendeta după {s:hits_to_trigger} atacuri succesive. Numărătoarea se resetează dacă Vendeta se declanșează în urma teleportării."
 		"dac_ability_nyx_assassin_vendetta_lore"									"Insectă. Artropod. Cu-i îi pasă? Chestia e că am nevoie de el ca să omor pe cineva acum... poți să faci rost de el sau nu? - <i>O'nia, cea căreia nu-i place să fie corectată</i>"
 
 		// WEAVER
@@ -550,7 +550,7 @@
 
 		// GRANNY LIZARD
 		"dac_ability_granny_lizard_shotgun_blast"									"Bombicel"
-		"dac_ability_granny_lizard_shotgun_blast_description"						"După 4 atacuri, Flăcărica își pregătește pușca, atacând un inamic din apropiere și cauzând {s:blast_damage} de daune într-un con, încetinind viteza de atac a unităților afectate cu {s:blast_bonus_attack_speed}%"
+		"dac_ability_granny_lizard_shotgun_blast_description"						"După 4 atacuri, Flăcărica își pregătește pușca, atacând un inamic din apropiere și cauzând {s:blast_damage} de daune într-un con, încetinind viteza de atac a unităților afectate cu {s:blast_bonus_attack_speed}. La trei stele, unitățile afectate pierd și {s:blast_armor_loss} armură. Efectul persistă {s:debuff_duration} secunde."
 		"dac_ability_granny_lizard_shotgun_blast_lore"								"Brejii au avut întotdeauna o minte fascinantă pentru război, iar războiul este specialitatea mea. Poate putem încheia niște afaceri.  - <i>Liniște, investitor fără interese</i>"
 
 		"dac_ability_granny_lizard_bazooka"											"Pupicii lui Mortimer"
@@ -664,30 +664,138 @@
 		"dac_ability_3star"															"Efect de 3 stele"
 
 		"dac_ability_warlock_3star"													"Mag Demonic - efect de 3 stele"
-		"dac_ability_warlock_3star_Description"										"La trei stele, cât timp se află în viață, Magul Demonic împiedică demonii aliați să se amuțească reciproc atunci când invocă abilități."
+		"dac_ability_warlock_3star_Description"										"Cât timp se află în viață, Magul Demonic împiedică demonii aliați să se amuțească reciproc atunci când invocă abilități."
 
 		"dac_ability_razor_3star"													"Tăiș - efect de 3 stele"
-		"dac_ability_razor_3star_Description"										"La trei stele, Tăiș fură {s:stolen_dmg} daune de atac de fiecare dată când atacă un inamic. Furtul de daune se suprapune de cel mult {s:max_stacks} ori. Acesta se resetează pentru Tăiș, dar nu și pentru ținta sa, atunci când ținta se schimbă."
+		"dac_ability_razor_3star_Description"										"Tăiș dobândește Legătura statică. De fiecare dată când Tăiș atacă un inamic, acesta fură {s:stolen_dmg} daune de atac, până la un maxim de {s:max_stacks} ori. Atunci când Tăiș schimbă ținta, acesta va pierde daunele pe care le-a furat, însă inamicul nu le va recupera."
 
 		"dac_ability_chaos_knight_3star"											"Cavalerul Haosului - Efect de 3 stele"
-		"dac_ability_chaos_knight_3star_Description"								"La trei stele, cât timp Cavalerul Haosului se află în viață, cavalerii aliați ai acestuia sunt considerați întotdeauna ca adiacenți față de un alt cavaler aliat."
+		"dac_ability_chaos_knight_3star_Description"								"Cât timp Cavalerul Haosului se află în viață, cavalerii aliați ai acestuia sunt considerați întotdeauna ca adiacenți față de un alt cavaler aliat."
 
 		"dac_ability_crystal_maiden_3star"											"Fecioară Cristalină - efect de 3 stele"
-		"dac_ability_crystal_maiden_3star_Description"								"La trei stele, toți aliații au repausurile reduse cu {s:cooldown_reduction}% cât timp Fecioara Cristalină se află în viață."
+		"dac_ability_crystal_maiden_3star_Description"								"Cât timp Fecioara Cristalină se află în viață, toți aliații au repausurile reduse cu {s:cooldown_reduction}%."
 
 		"dac_ability_terrorblade_3star"												"Teroare - efect de 3 stele"
-		"dac_ability_terrorblade_3star_Description"									"La trei stele, Teroare primește +{s:damage_bonus_pct}% daune pure împotriva demonilor inamici."
+		"dac_ability_terrorblade_3star_Description"									"Teroare poate invoca o energie demonică pentru a dobândi +{s:damage_bonus_pct}% daune pure împotriva demonilor inamici. Bonusul are o durată de {s:duration} secunde pentru fiecare invocare."
 
 		"dac_ability_tiny_3star"													"Micuțu' - efect de 3 stele"
-		"dac_ability_tiny_3star_Description"										"La trei stele, Micuțu' va crește de fiecare dată când aruncă un inamic, primind +{s:bonus_damage} daune de atac și +{s:bonus_armor} armură, pierzând în schimb {s:aspd_loss} viteză de atac, până la un maxim de {s:max_stacks} ori."
+		"dac_ability_tiny_3star_Description"										"Micuțu' va crește de fiecare dată când aruncă un inamic, primind +{s:bonus_damage} daune de atac și +{s:bonus_armor} armură, pierzând în schimb {s:aspd_loss} viteză de atac, până la un maxim de {s:max_stacks} ori."
 
 		"dac_ability_luna_3star"													"Luna – efect de 3 stele"
-		"dac_ability_luna_3star_Description"										"La trei stele, Luna obține Eclipsa. Atunci când Luna are nevoie, Selemene blochează lumina pe o rază de {s:radius} celule în jurul Lunei și asediază inamicii cu {s:beams} raze de lumină lunară, una la fiecare {s:beam_interval} secunde. Fiecare fascicul cauzează {s:beam_damage} de daune și năucește timp de {s:beam_stun} secunde, iar fiecare unitate inamică poate fi lovită de un maxim de {s:hit_count} fascicule."
+		"dac_ability_luna_3star_Description"										"Luna obține Eclipsa. Atunci când Luna are nevoie, Selemene blochează lumina pe o rază de {s:radius} celule în jurul Lunei și asediază inamicii cu {s:beams} fascicule de lumină lunară, una la fiecare {s:beam_interval} secunde. Fiecare fascicul cauzează {s:beam_damage} de daune și năucește timp de {s:beam_stun} secunde, iar fiecare unitate inamică poate fi lovită de un maxim de {s:hit_count} fascicule."
 
 		"dac_ability_dazzle_3star"													"Dazzle – efect de 3 stele"
-		"dac_ability_dazzle_3star_Description"										"La trei stele, Licăr oferă câte un Mormânt superficial tuturor unităților aliate aflate la cel mult {s:never_die_range} celulă distanță. Toate unitățile binecuvântate supraviețuiesc încă {s:never_die_duration} secunde după primirea loviturii finale."
+		"dac_ability_dazzle_3star_Description"										"Licăr oferă câte un Mormânt superficial tuturor unităților aliate aflate la cel mult {s:never_die_range} celulă distanță. Toate unitățile binecuvântate supraviețuiesc încă {s:never_die_duration} secunde după primirea loviturii finale."
 
 		"dac_ability_broodmother_3star"												"Muma Roiului - efect de 3 stele"
-		"dac_ability_broodmother_3star_Description"									"La trei stele, cât timp este în viață, Muma Roiului face invulnerabili toți Păianjenii aliați."
+		"dac_ability_broodmother_3star_Description"									"Cât timp este în viață, Muma Roiului face invulnerabili toți păianjenii aliați."
+
+		"dac_ability_pudge_3star"													"Slană - efect de 3 stele"
+		"dac_ability_pudge_3star_Description"										"Slană devine un Morman de carne și dobândește un maxim de {s:bonus_health_per_death} de viață și o rezistență de {s:magical_resistance}% la magie de fiecare dată când un inamic moare la cel mult {s:radius} celulă distanță față de el."
+
+		"dac_ability_viper_3star"													"Viperă - efect de 3 stele"
+		"dac_ability_viper_3star_Description"										"Vipera realizează o Lovitură de viperă la fiecare {s:num_attacks} atacuri. Unitatea inamică încasează {s:damage} de daune pe secundă și pierde {s:bonus_movement_speed}% din viteza de mișcare și {s:bonus_attack_speed} din viteza de atac, efectul încetinirii diminuându-se de-a lungul duratei de {s:debuff_duration} secunde."
+
+		"dac_ability_beastmaster_3star"												"Stăpânul Dihăniilor - efect de 3 stele"
+		"dac_ability_beastmaster_3star_Description"									"Stăpânul Dihăniilor încasează cu {s:damage_reduction}% mai puține daune de la unitățile invocate și devine imun la orice efect magic din partea acestora."
+
+		"dac_ability_juggernaut_3star"												"Demolator - efect de 3 stele"
+		"dac_ability_juggernaut_3star_Description"									"Demolator primește Dansul lamei: fiecare atac are o șansă de {s:crit_chance}% de a provoca o lovitură critică cu {s:crit_bonus}% daune."
+
+		"dac_ability_queenofpain_3star"												"Regina Durerii - efect de 3 stele"
+		"dac_ability_queenofpain_3star_Description"									"Regina Durerii farmecă inamicii din apropiere, având o șansă de {s:evasion}% de a evita atacurile inamicilor aflați la cel mult {s:radius} celule distanță."
+
+		"dac_ability_drow_ranger_3star"												"Pădurașă Drow - efect de 3 stele"
+		"dac_ability_drow_ranger_3star_Description"									"Săgețile Pădurașei Drow devin Săgeți de gheață. Aceste săgeți încetinesc viteza de mișcare a unității lovite cu {s:move_speed_loss}% și viteza de atac cu {s:attack_speed_loss}. Efectul persistă {s:slow_duration} secunde."
+
+		"dac_ability_abaddon_3star"													"Avadon - efect de 3 stele"
+		"dac_ability_abaddon_3star_Description"										"Avadon dobândește abilitatea de a aplica Blestemul Avernusului asupra inamicilor atacați. De îndată ce Avadon a atacat aceeași unitate inamică de {s:min_stacks} ori consecutiv, acea unitate este amuțită timp de {s:silence_duration} secunde, iar Avadon primește +{s:attack_speed} viteză de atac împotriva țintei. Bonusul acesta este reîmprospătat după fiecare atac suplimentar nimerit, dar Avadon pierde bonusul atunci când schimbă ținta."
+
+		"dac_ability_bloodseeker_3star"												"Iscoadă Sângerie - efect de 3 stele"
+		"dac_ability_bloodseeker_3star_Description"									"Iscoada Sângerie primește bonusul pentru lovituri critice de la nivelul activ din prezent al alianței asasinilor, dacă aceasta există."
+
+		"dac_ability_morphling_3star"												"Acvamarin - efect de trei stele"
+		"dac_ability_morphling_3star_Description"									"Acvamarin primește bonusurile din timpul luptelor de la toate alianțele active inamice, ca și cum ar fi un campion inamic."
+
+		"dac_ability_shadow_fiend_3star"											"Năpasta Umbrelor – efect de 3 stele"
+		"dac_ability_Shadow_fiend_3star_Description"								"Năpasta Umbrelor dobândește Prezența Lordului Întunecat. Inamicii aflați la cel mult {s:radius} celule distanță au armura redusă cu {s:armor_reduction} din cauza prezenței terifiante a Năpastei Umbrelor."
+
+		"dac_ability_magnataur_3star"												"Magnus – efect de 3 stele"
+		"dac_ability_magnataur_3star_Description"									"Magnus dobândește Polaritatea inversă. Când folosește abilitatea, inamicii aflați la cel mult {s:radius} celule distanță încasează {s:damage} de daune și sunt năuciți timp de {s:duration} secundă."
+
+		"dac_ability_arc_warden_3star"												"Străjer Voltaic - efect de 3 stele"
+		"dac_ability_arc_warden_3star_Description"									"Clonele Dublurii furtunoase copiază obiectul Străjerului Voltaic."
+
+		"dac_ability_bat_rider_3star"												"Călăreț de Liliac - efect de 3 stele"
+		"dac_ability_bat_rider_3star_Description"									"Napalmul lipicios incendiază inamicii. Vezi abilitatea pentru mai multe informații."
+
+		"dac_ability_nyx_assassin_3star"											"Nyx Asasin - efect de 3 stele"
+		"dac_ability_nyx_assassin_3star_Description"								"Vendeta poate fi invocată mai des. Vezi abilitatea pentru mai multe informații."
+
+		"dac_ability_shadow_demon_3star"											"Demonul Umbrelor - efect de 3 stele"
+		"dac_ability_shadow_demon_3star_Description"								"Demonul Umbrelor aplică Hoțul de suflete pe ținta Purjării demonice. Vezi abilitatea pentru mai multe informații."
+
+		"dac_ability_tusk_3star"													"Ivoriu - efect de 3 stele"
+		"dac_ability_tusk_3star_Description"										"Pumnul morsei încetinește inamicii pentru o durată mai îndelungată și face ca aceștia să piardă atât viteză de atac, cât și viteză de mișcare. Vezi abilitatea pentru mai multe informații."
+
+		"dac_ability_venomancer_3star"												"Venomant - efect de 3 stele"
+		"dac_ability_venomancer_3star_Description"									"Gărzile toxice sunt imune la daunele magice."
+
+		"dac_ability_weaver_3star"													"Țesător - efect de 3 stele"
+		"dac_ability_weaver_3star_Description"										"Atacurile Țesătorului ard mana după ce folosește Shukuchi. Vezi abilitatea pentru mai multe informații."
+
+		"dac_ability_bristleback_3star"												"Spată-Țepoasă - efect de 3 stele"
+		"dac_ability_bristleback_3star_Description"									"Repausul Valului de țepușe este redus semnificativ. Vezi abilitatea pentru mai multe informații."
+
+		"dac_ability_earth_spirit_3star"											"Spiritul Pământului - efect de 3 stele"
+		"dac_ability_earth_spirit_3star_Description"								"Strânsoarea geomagnetică năucește inamicii. Vezi abilitatea pentru mai multe informații."
+
+		"dac_ability_natures_prophet_3star"											"Profetul Naturii - efect de 3 stele"
+		"dac_ability_natures_prophet_3star_Description"								"Treants vor fi invocați pe partea adversă a tablei."
+
+		"dac_ability_ogre_magi_3star"												"Mag Căpcăun - efect de 3 stele"
+		"dac_ability_ogre_magi_3star_Description"									"Magul Căpcăun are o șansă de a multiinvoca Setea de sânge. Vezi abilitatea pentru mai multe informații."
+
+		"dac_ability_slardar_3star"													"Slardar - efect de 3 stele"
+		"dac_ability_slardar_3star_Description"										"Slardar izbește ținta după ce invocă Pâcla corozivă. Vezi abilitatea pentru mai multe informații."
+
+		"dac_ability_windrunner_3star"												"Pădurașa Vântului - efect de 3 stele"
+		"dac_ability_windrunner_3star_Description"									"Pădurașa Vântului primește evitare și imunitate la vrăji în timp ce invocă Săgeata străpungătoare. Vezi abilitatea pentru mai multe informații."
+
+		"dac_ability_witch_doctor_3star"											"Vraci - efect de 3 stele"
+		"dac_ability_witch_doctor_3star_Description"								"Inamicii loviți de Butoiul paralizant sunt blestemați. Vezi abilitatea pentru mai multe informații."
+
+		"dac_ability_ember_spirit_3star"											"Spiritul Scânteii - efect de 3 stele"
+		"dac_ability_ember_spirit_3star_Description"								"Zona de efect pentru Pumnii înlănțuiți este dublată. Vezi abilitatea pentru mai multe informații."
+
+		"dac_ability_enigma_3star"													"Enigma - efect de 3 stele"
+		"dac_ability_enigma_3star_Description"										"Zona de efect a Pulsului de miazănoapte este triplată. Vezi abilitatea pentru mai multe informații."
+
+		"dac_ability_wisp_3star"													"Io - efect de 3 stele"
+		"dac_ability_wisp_3star_Description"										"Relocarea resetează repausurile eroului reînviat."
+
+		"dac_ability_lycan_3star"													"Vârcolac - efect de 3 stele"
+		"dac_ability_lycan_3star_Description"										"Transformarea invocă mai mulți lupi. Vezi abilitatea pentru mai multe informații."
+
+		"dac_ability_omniknight_3star"												"Omnicavaler - efect de 3 stele"
+		"dac_ability_omniknight_3star_Description"									"Zona de efect a Purificării este triplată. Vezi abilitatea pentru mai multe informații."
+
+		"dac_ability_shadow_shaman_3star"											"Șamanul Umbrelor - efect de 3 stele"
+		"dac_ability_shadow_shaman_3star_Description"								"Șamanul Umbrelor deoache unitatea țintită cu Gărzile serpentiforme."
+
+		"dac_ability_treant_protector_3star"										"Ocrotitor Arborifer – efect de 3 stele"
+		"dac_ability_treant_protector_3star_Description"							"Unitățile vindecate de Sămânța parazită vor primi, de asemenea, Armura vie. Vezi abilitatea pentru mai multe informații."
+
+		"dac_ability_storm_spirit_3star"											"Spiritul Furtunii - efect de 3 stele"
+		"dac_ability_storm_spirit_3star_Description"								"Spiritul Furtunii dobândește Suprasarcina. Atunci când invocă o abilitate, Spiritul Furtunii va crea o sarcina electrică care va fi eliberată sub forma unei explozii la următorul său atac, Suprasarcina cauzând {s:damage} de daune și încetinind viteza de ataca a țintei cu {s:attack_speed_loss} timp de {s:slow_duration} secunde. Un atac triunghiular al Spiritului Furtunii este considerat un atac, caz în care, toate unitățile pe care Spiritul Furtunii le lovește în timpul atacului vor încasa daune și vor fi încetinite."
+		
+		"dac_ability_legion_commander_3star"										"Comandantul Legiunii - efect de 3 stele"
+		"dac_ability_legion_commander_3star_Description"							"Toți aliații din raza de acțiune vor ataca, de asemenea, ținta Comandantului Legiunii în timpul unui duel."
+
+		"dac_ability_life_stealer_3star"										"Pungașul Vieții - efect de 3 stele"
+		"dac_ability_life_stealer_3star_Description"							"Pungașul Vieții dobândește Mânia. Când folosește abilitatea, Pungașul Vieții devine imun la magie și primește +{s:bonus_movement_speed_pct}% viteză de mișcare și +{S:bonus_attack_speed} viteză de atac. Efectul persistă {s:duration} secunde."
+
+		"dac_ability_snapfire_3star"												"Flăcărica - efect de 3 stele"
+		"dac_ability_snapfire_3star_Description"									"Bombicel reduce și armura inamicului. Vezi abilitatea pentru mai multe informații."
 	}
 }

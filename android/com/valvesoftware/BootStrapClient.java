@@ -767,6 +767,59 @@ public class BootStrapClient {
             boolean ShouldRecurseIntoDirectory(String str);
         }
 
+        private static JSONObject FindSyncObject(JSONObject jSONObject, String str) {
+            try {
+                String[] split = str.split("[/\\\\]");
+                for (String optJSONObject : split) {
+                    jSONObject = jSONObject.optJSONObject(optJSONObject);
+                    if (jSONObject == null) {
+                        return null;
+                    }
+                }
+                return jSONObject;
+            } catch (Throwable unused) {
+                return null;
+            }
+        }
+
+        /* JADX WARNING: No exception handlers in catch block: Catch:{  } */
+        /* Code decompiled incorrectly, please refer to instructions dump. */
+        private static void AddSyncObject(org.json.JSONObject r4, java.lang.String r5, org.json.JSONObject r6) {
+            /*
+                java.lang.String r0 = "[/\\\\]"
+                java.lang.String[] r5 = r5.split(r0)     // Catch:{ Throwable -> 0x002e }
+                int r0 = r5.length
+                int r0 = r0 + -1
+                r1 = 0
+            L_0x000a:
+                if (r1 >= r0) goto L_0x0019
+                r2 = r5[r1]
+                org.json.JSONObject r2 = r4.optJSONObject(r2)
+                if (r2 != 0) goto L_0x0015
+                goto L_0x0019
+            L_0x0015:
+                int r1 = r1 + 1
+                r4 = r2
+                goto L_0x000a
+            L_0x0019:
+                if (r1 >= r0) goto L_0x0029
+                org.json.JSONObject r2 = new org.json.JSONObject
+                r2.<init>()
+                r3 = r5[r1]     // Catch:{ Throwable -> 0x0025 }
+                r4.put((java.lang.String) r3, (java.lang.Object) r2)     // Catch:{ Throwable -> 0x0025 }
+            L_0x0025:
+                int r1 = r1 + 1
+                r4 = r2
+                goto L_0x0019
+            L_0x0029:
+                r5 = r5[r0]     // Catch:{  }
+                r4.put((java.lang.String) r5, (java.lang.Object) r6)     // Catch:{  }
+            L_0x002e:
+                return
+            */
+            throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.BootStrapClient.RecursiveDownload.AddSyncObject(org.json.JSONObject, java.lang.String, org.json.JSONObject):void");
+        }
+
         public RecursiveDownload(IStreamingBootStrap iStreamingBootStrap, JSONObject jSONObject, String str, String str2, String str3, RemoteTimeDelta_t remoteTimeDelta_t, NotifyProgressMade notifyProgressMade, IRecursiveDownloadFilter iRecursiveDownloadFilter, IStreamingBootStrap.FileSystemQueryResult_t fileSystemQueryResult_t) {
             this.m_Connection = iStreamingBootStrap;
             this.m_sRemotePath = str;
@@ -781,7 +834,7 @@ public class BootStrapClient {
             this.m_SyncEntry = null;
             this.m_bSaveSyncState = false;
             this.m_bAnyErrors = false;
-            this.m_SyncEntry = jSONObject.optJSONObject(str);
+            this.m_SyncEntry = FindSyncObject(jSONObject, str);
             if (this.m_SyncEntry != null && !new File(str2).exists()) {
                 jSONObject.remove(str);
                 this.m_SyncEntry = null;
@@ -789,10 +842,7 @@ public class BootStrapClient {
             if (this.m_SyncEntry == null) {
                 Log.i("com.valvesoftware.BootStrapClient.RecursiveDownload", "Directory \"" + str + "\" did not have a sync entry");
                 this.m_SyncEntry = new JSONObject();
-                try {
-                    jSONObject.put(str, (Object) this.m_SyncEntry);
-                } catch (Throwable unused) {
-                }
+                AddSyncObject(jSONObject, str, this.m_SyncEntry);
             }
             this.m_nRemoteLastModifiedTime = this.m_SyncEntry.optLong("modified", -1);
             Log.i("com.valvesoftware.BootStrapClient.RecursiveDownload", "Directory \"" + str + "\" newest previously synced file age: " + this.m_nRemoteLastModifiedTime);
@@ -1946,7 +1996,7 @@ public class BootStrapClient {
             java.lang.String r1 = "paths"
             if (r0 != 0) goto L_0x0143
             java.io.File r0 = new java.io.File
-            java.io.File r2 = com.valvesoftware.JNI_Environment.GetPrivatePath()
+            java.io.File r2 = com.valvesoftware.JNI_Environment.GetPublicPath()
             java.lang.String r3 = "/.BootStrapClientSync"
             r0.<init>(r2, r3)
             boolean r2 = r0.exists()
@@ -2008,10 +2058,10 @@ public class BootStrapClient {
             com.valvesoftware.BootStrapClient$5 r9 = new com.valvesoftware.BootStrapClient$5
             r9.<init>()
             com.valvesoftware.IStreamingBootStrap$IAccessContextCallback r9 = r9.Init(r8, r12)
-            java.lang.String r10 = "BootStrapClient.RemoteSourceID"
+            java.lang.String r10 = "BootStrapClient.SyncSessionID"
             r12.AccessContext(r10, r9)
             r12 = r8[r7]
-            java.lang.String r8 = "remote id"
+            java.lang.String r8 = "SyncSessionID"
             java.lang.String r9 = "meta"
             java.lang.String r10 = "version"
             if (r2 == 0) goto L_0x00f9
@@ -2111,13 +2161,13 @@ public class BootStrapClient {
         }
         JSONObject jSONObject = m_SyncState;
         if (jSONObject != null && jSONObject.length() > 0) {
-            File file = new File(JNI_Environment.GetPrivatePath() + "/.BootStrapClientSync");
+            File file = new File(JNI_Environment.GetPublicPath() + "/.BootStrapClientSync");
             if (file.exists()) {
                 file.delete();
             }
             FileOutputStream fileOutputStream = null;
             try {
-                str = m_SyncState.toString(4);
+                str = m_SyncState.toString(1);
             } catch (Throwable unused) {
                 str = null;
             }

@@ -6958,7 +6958,7 @@
 			"id": 1117,
 			"event": 
 			{
-				"event_name": "unit_killed",
+				"event_name": "gold_worth_unit_killed",
 				"condition": 
 				{
 					"operator": "AND",
@@ -6975,12 +6975,6 @@
 							{
 								"!=": "local"
 							}
-						},
-						{
-							"killer_synergy": 
-							{
-								"=": "undead"
-							}
 						}
 					]
 				}
@@ -6996,9 +6990,9 @@
 			[
 				{
 					"id": 1,
-					"threshold": 300
+					"threshold": 5000
 				}
-			],	
+			],
 			"locstring": "weekly_challenge_6"
 		},
 		"weekly_street_fight_7": {
@@ -7079,7 +7073,8 @@
 			"id": 1120,
 			"event": 
 			{
-				"event_name": "unit_killed",
+				"event_name": "combat_apply_poison_stack",
+				"count_instances": true,
 				"condition": 
 				{
 					"operator": "AND",
@@ -7096,12 +7091,6 @@
 							{
 								"!=": "local"
 							}
-						},
-						{
-							"killer_synergy": 
-							{
-								"=": "undead"
-							}
 						}
 					]
 				}
@@ -7117,9 +7106,9 @@
 			[
 				{
 					"id": 1,
-					"threshold": 300
+					"threshold": 1200
 				}
-			],	
+			],
 			"locstring": "weekly_challenge_7"
 		},
 		"weekly_street_fight_8": {
@@ -7200,28 +7189,17 @@
 			"id": 1123,
 			"event": 
 			{
-				"event_name": "unit_killed",
+				"event_name": "buy_unit",
+				"count_instances": true,
 				"condition": 
-				{
+				{	
 					"operator": "AND",
 					"operands": 
 					[
 						{
-							"source_player": 
+							"cost": 
 							{
-								"=": "local"
-							}
-						},
-						{
-							"player": 
-							{
-								"!=": "local"
-							}
-						},
-						{
-							"killer_synergy": 
-							{
-								"=": "undead"
+								"=": 1
 							}
 						}
 					]
@@ -7238,7 +7216,7 @@
 			[
 				{
 					"id": 1,
-					"threshold": 300
+					"threshold": 100
 				}
 			],	
 			"locstring": "weekly_challenge_8"
@@ -7342,7 +7320,7 @@
 						{
 							"killer_synergy": 
 							{
-								"=": "undead"
+								"=": "assassin"
 							}
 						}
 					]
@@ -7359,7 +7337,7 @@
 			[
 				{
 					"id": 1,
-					"threshold": 300
+					"threshold": 400
 				}
 			],	
 			"locstring": "weekly_challenge_9"
@@ -7463,7 +7441,7 @@
 						{
 							"killer_synergy": 
 							{
-								"=": "undead"
+								"=": "Brutal"
 							}
 						}
 					]
@@ -7480,9 +7458,9 @@
 			[
 				{
 					"id": 1,
-					"threshold": 300
+					"threshold": 400
 				}
-			],	
+			],
 			"locstring": "weekly_challenge_10"
 		},
 		"weekly_street_fight_11": {
@@ -7582,9 +7560,8 @@
 							}
 						},
 						{
-							"killer_synergy": 
-							{
-								"=": "undead"
+							"has_synergy": {
+								"=": "Mage"
 							}
 						}
 					]
@@ -7601,7 +7578,7 @@
 			[
 				{
 					"id": 1,
-					"threshold": 300
+					"threshold": 400
 				}
 			],	
 			"locstring": "weekly_challenge_11"
@@ -7682,49 +7659,41 @@
 		},
 		"weekly_challenge_12": {
 			"id": 1135,
-			"event": 
-			{
+			"event": {
 				"event_name": "unit_killed",
-				"condition": 
-				{
+				"condition": {
 					"operator": "AND",
-					"operands": 
-					[
+					"operands": [
 						{
-							"source_player": 
-							{
+							"source_player": {
 								"=": "local"
 							}
 						},
 						{
-							"player": 
-							{
+							"player": {
 								"!=": "local"
 							}
 						},
 						{
-							"killer_synergy": 
-							{
-								"=": "undead"
+							"killer_synergy": {
+								"=": "Druid"
 							}
 						}
 					]
 				}
 			},
-			"goals": 
-			[
+			"goals": [
 				{
 					"goal": "$threshold",
-					"reward": {	}
+					"reward": {}
 				}
 			],
-			"configs": 
-			[
+			"configs": [
 				{
 					"id": 1,
-					"threshold": 300
+					"threshold": 400
 				}
-			],	
+			],
 			"locstring": "weekly_challenge_12"
 		},
 		"weekly_street_fight_13": {
@@ -7824,9 +7793,8 @@
 							}
 						},
 						{
-							"killer_synergy": 
-							{
-								"=": "undead"
+							"has_synergy": {
+								"=": "Human"
 							}
 						}
 					]
@@ -7926,31 +7894,14 @@
 			"id": 1141,
 			"event": 
 			{
-				"event_name": "unit_killed",
+				"event_name": "attack_crit",
+				"count_instances": true,
 				"condition": 
 				{
-					"operator": "AND",
-					"operands": 
-					[
-						{
-							"source_player": 
-							{
-								"=": "local"
-							}
-						},
-						{
-							"player": 
-							{
-								"!=": "local"
-							}
-						},
-						{
-							"killer_synergy": 
-							{
-								"=": "undead"
-							}
-						}
-					]
+					"source_player": 
+					{
+						"=": "local"
+					}
 				}
 			},
 			"goals": 

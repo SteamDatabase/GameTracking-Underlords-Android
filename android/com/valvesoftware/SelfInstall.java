@@ -1,9 +1,9 @@
 package com.valvesoftware;
 
-import android.app.Application;
 import android.os.Build;
 import android.os.Environment;
 import android.util.Log;
+import com.valvesoftware.Application;
 import java.io.BufferedOutputStream;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -23,15 +23,17 @@ public class SelfInstall {
         return false;
     }
 
-    public static boolean OnStartup() {
-        return CheckZippedAssets();
+    public static boolean OnStartup(Application.InstallTask installTask) {
+        return CheckZippedAssets(installTask);
     }
 
-    /* JADX WARNING: Code restructure failed: missing block: B:50:0x00f2, code lost:
-        if (r1 != null) goto L_0x00f7;
+    /* JADX WARNING: Code restructure failed: missing block: B:81:0x014e, code lost:
+        if (r1 != null) goto L_0x0153;
      */
+    /* JADX WARNING: Failed to process nested try/catch */
+    /* JADX WARNING: Missing exception handler attribute for start block: B:99:0x01cd */
     /* Code decompiled incorrectly, please refer to instructions dump. */
-    public static java.io.File GetContentDirectory() {
+    public static java.io.File GetContentDirectory(java.lang.String r14, java.lang.String r15) {
         /*
             android.app.Application r0 = com.valvesoftware.JNI_Environment.m_application
             android.content.Context r1 = r0.getApplicationContext()
@@ -58,148 +60,211 @@ public class SelfInstall {
             r2 = 1
         L_0x0023:
             java.lang.String r5 = "SelfInstall/Directories"
-            org.json.JSONObject r3 = com.valvesoftware.Configuration.GetGlobalKey(r5, r3)
-            java.lang.String r5 = "ZipInstall"
-            java.lang.String r6 = "StreamingDev"
-            r7 = 0
-            if (r2 == 0) goto L_0x0032
-            r8 = r5
-            goto L_0x0033
-        L_0x0032:
-            r8 = r6
-        L_0x0033:
-            java.lang.String r8 = r3.getString(r8)     // Catch:{ Throwable -> 0x0038 }
-            goto L_0x0039
-        L_0x0038:
-            r8 = r7
-        L_0x0039:
-            if (r8 == 0) goto L_0x0041
-            java.io.File r9 = new java.io.File
-            r9.<init>(r8)
-            goto L_0x0042
-        L_0x0041:
-            r9 = r7
+            org.json.JSONObject r5 = com.valvesoftware.Configuration.GetGlobalKey(r5, r3)
+            java.lang.String r6 = "ConfigVersion"
+            int r7 = r5.optInt(r6, r4)
+            java.lang.String r8 = "Install"
+            r9 = 0
+            if (r7 >= r3) goto L_0x005b
+            java.lang.String r7 = "ZipInstall"
+            java.lang.String r10 = r5.optString(r7, r9)
+            if (r10 == 0) goto L_0x0042
+            r5.put((java.lang.String) r8, (java.lang.Object) r10)     // Catch:{ Throwable -> 0x003f }
+        L_0x003f:
+            r5.remove(r7)
         L_0x0042:
-            java.lang.String r8 = "com.valvesoftware.SelfInstall"
-            if (r9 == 0) goto L_0x0074
-            boolean r10 = r9.exists()
-            if (r10 == 0) goto L_0x0074
-            java.lang.StringBuilder r0 = new java.lang.StringBuilder
-            r0.<init>()
-            java.lang.String r1 = "Re-using previous "
-            r0.append(r1)
-            if (r2 == 0) goto L_0x005b
-            java.lang.String r1 = "install"
-            goto L_0x005d
+            java.lang.String r7 = "StreamingDev"
+            java.lang.String r10 = r5.optString(r7, r9)
+            if (r10 == 0) goto L_0x005b
+            java.io.File r11 = new java.io.File
+            r11.<init>(r10)
+            boolean r10 = r11.exists()
+            if (r10 == 0) goto L_0x0058
+            r11.delete()
+        L_0x0058:
+            r5.remove(r7)
         L_0x005b:
-            java.lang.String r1 = "streaming dev"
-        L_0x005d:
-            r0.append(r1)
-            java.lang.String r1 = " directory "
-            r0.append(r1)
-            java.lang.String r1 = r9.getAbsolutePath()
-            r0.append(r1)
-            java.lang.String r0 = r0.toString()
-            android.util.Log.i(r8, r0)
+            r5.put((java.lang.String) r6, (int) r3)     // Catch:{ Throwable -> 0x005e }
+        L_0x005e:
+            com.valvesoftware.Configuration.MarkGlobalConfigurationDirty()
+            if (r2 != 0) goto L_0x007b
+            if (r14 == 0) goto L_0x007a
+            if (r15 != 0) goto L_0x0068
+            goto L_0x007a
+        L_0x0068:
+            org.json.JSONObject r3 = r5.optJSONObject(r15)
+            if (r3 != 0) goto L_0x007c
+            org.json.JSONObject r3 = new org.json.JSONObject
+            r3.<init>()
+            r5.put((java.lang.String) r15, (java.lang.Object) r3)     // Catch:{ Throwable -> 0x0076 }
+        L_0x0076:
+            com.valvesoftware.Configuration.MarkGlobalConfigurationDirty()
+            goto L_0x007c
+        L_0x007a:
             return r9
-        L_0x0074:
-            if (r2 == 0) goto L_0x009e
-            java.io.File r7 = r1.getExternalFilesDir(r7)
-            java.lang.StringBuilder r9 = new java.lang.StringBuilder
-            r9.<init>()
-            java.lang.String r10 = "Havezip wants to use "
-            r9.append(r10)
-            java.lang.String r10 = r7.getAbsolutePath()
-            r9.append(r10)
-            java.lang.String r9 = r9.toString()
-            android.util.Log.i(r8, r9)
-            boolean r9 = android.os.Environment.isExternalStorageEmulated(r7)
-            if (r9 != 0) goto L_0x009e
-            java.lang.String r0 = "Havezip favored directory is not emulated"
-            android.util.Log.i(r8, r0)
-            return r7
+        L_0x007b:
+            r3 = r9
+        L_0x007c:
+            java.lang.String r6 = "Branches"
+            if (r2 == 0) goto L_0x0085
+            java.lang.String r7 = r5.optString(r8, r9)
+            goto L_0x0095
+        L_0x0085:
+            if (r3 == 0) goto L_0x0094
+            if (r14 == 0) goto L_0x0094
+            org.json.JSONObject r7 = r3.optJSONObject(r6)
+            if (r7 == 0) goto L_0x0094
+            java.lang.String r7 = r7.optString(r14, r9)
+            goto L_0x0095
+        L_0x0094:
+            r7 = r9
+        L_0x0095:
+            if (r7 == 0) goto L_0x009d
+            java.io.File r10 = new java.io.File
+            r10.<init>(r7)
+            goto L_0x009e
+        L_0x009d:
+            r10 = r9
         L_0x009e:
-            java.io.File r9 = android.os.Environment.getExternalStorageDirectory()
+            java.lang.String r7 = "com.valvesoftware.SelfInstall"
+            if (r10 == 0) goto L_0x00d0
+            boolean r11 = r10.exists()
+            if (r11 == 0) goto L_0x00d0
+            java.lang.StringBuilder r14 = new java.lang.StringBuilder
+            r14.<init>()
+            java.lang.String r15 = "Re-using previous "
+            r14.append(r15)
+            if (r2 == 0) goto L_0x00b7
+            java.lang.String r15 = "install"
+            goto L_0x00b9
+        L_0x00b7:
+            java.lang.String r15 = "streaming dev"
+        L_0x00b9:
+            r14.append(r15)
+            java.lang.String r15 = " directory "
+            r14.append(r15)
+            java.lang.String r15 = r10.getAbsolutePath()
+            r14.append(r15)
+            java.lang.String r14 = r14.toString()
+            android.util.Log.i(r7, r14)
+            return r10
+        L_0x00d0:
+            if (r2 == 0) goto L_0x00fa
+            java.io.File r9 = r1.getExternalFilesDir(r9)
+            java.lang.StringBuilder r10 = new java.lang.StringBuilder
+            r10.<init>()
+            java.lang.String r11 = "Install wants to use "
+            r10.append(r11)
+            java.lang.String r11 = r9.getAbsolutePath()
+            r10.append(r11)
+            java.lang.String r10 = r10.toString()
+            android.util.Log.i(r7, r10)
             boolean r10 = android.os.Environment.isExternalStorageEmulated(r9)
-            boolean r11 = DeviceCanInstallToSD()
-            if (r11 == 0) goto L_0x00f5
-            java.lang.String r11 = "bTrySD"
-            android.util.Log.i(r8, r11)
-            if (r10 == 0) goto L_0x00f5
-            java.lang.String r11 = "bPublicBaseIsEmulated"
-            android.util.Log.i(r8, r11)
-            java.lang.String r11 = "checking getExternalFilesDirs"
-            android.util.Log.i(r8, r11)
-            java.lang.String r11 = "external"
-            java.io.File[] r11 = r1.getExternalFilesDirs(r11)
-            java.io.File r11 = FindNonEmulatedDirectoryInList(r11)
-            if (r11 != 0) goto L_0x00d7
-            java.lang.String r11 = "checking media dirs"
-            android.util.Log.i(r8, r11)
+            if (r10 != 0) goto L_0x00fa
+            java.lang.String r14 = "Install favored directory is not emulated"
+            android.util.Log.i(r7, r14)
+            return r9
+        L_0x00fa:
+            java.io.File r10 = android.os.Environment.getExternalStorageDirectory()
+            boolean r11 = android.os.Environment.isExternalStorageEmulated(r10)
+            boolean r12 = DeviceCanInstallToSD()
+            if (r12 == 0) goto L_0x0151
+            java.lang.String r12 = "bTrySD"
+            android.util.Log.i(r7, r12)
+            if (r11 == 0) goto L_0x0151
+            java.lang.String r12 = "bPublicBaseIsEmulated"
+            android.util.Log.i(r7, r12)
+            java.lang.String r12 = "checking getExternalFilesDirs"
+            android.util.Log.i(r7, r12)
+            java.lang.String r12 = "external"
+            java.io.File[] r12 = r1.getExternalFilesDirs(r12)
+            java.io.File r12 = FindNonEmulatedDirectoryInList(r12)
+            if (r12 != 0) goto L_0x0133
+            java.lang.String r12 = "checking media dirs"
+            android.util.Log.i(r7, r12)
             java.io.File[] r1 = r1.getExternalMediaDirs()
             java.io.File r1 = FindNonEmulatedDirectoryInList(r1)
-            goto L_0x00d8
-        L_0x00d7:
-            r1 = r11
-        L_0x00d8:
-            java.lang.StringBuilder r11 = new java.lang.StringBuilder
-            r11.<init>()
-            java.lang.String r12 = "non emulated dir result "
-            r11.append(r12)
-            if (r1 == 0) goto L_0x00e6
-            r12 = r1
-            goto L_0x00e8
-        L_0x00e6:
-            java.lang.String r12 = "[null]"
-        L_0x00e8:
-            r11.append(r12)
-            java.lang.String r11 = r11.toString()
-            android.util.Log.i(r8, r11)
-            if (r1 == 0) goto L_0x00f5
-            goto L_0x00f7
-        L_0x00f5:
-            r1 = r9
-            r4 = r10
-        L_0x00f7:
-            if (r2 == 0) goto L_0x012d
-            if (r4 == 0) goto L_0x0112
-            if (r7 == 0) goto L_0x0112
-            java.lang.StringBuilder r0 = new java.lang.StringBuilder
-            r0.<init>()
-            java.lang.String r1 = "everything is emulated, using the favored zip directory "
-            r0.append(r1)
-            r0.append(r7)
-            java.lang.String r0 = r0.toString()
-            android.util.Log.i(r8, r0)
             goto L_0x0134
-        L_0x0112:
-            java.io.File r7 = new java.io.File
-            java.lang.StringBuilder r4 = new java.lang.StringBuilder
-            r4.<init>()
-            java.lang.String r8 = "com.valvesoftware/"
-            r4.append(r8)
-            java.lang.String r0 = r0.getPackageName()
-            r4.append(r0)
-            java.lang.String r0 = r4.toString()
-            r7.<init>(r1, r0)
-            goto L_0x0134
-        L_0x012d:
-            java.io.File r7 = new java.io.File
-            java.lang.String r0 = "com.valvesoftware/dev/source2/main"
-            r7.<init>(r1, r0)
+        L_0x0133:
+            r1 = r12
         L_0x0134:
-            if (r2 == 0) goto L_0x0137
-            goto L_0x0138
-        L_0x0137:
-            r5 = r6
-        L_0x0138:
-            java.io.File r0 = r7.getAbsoluteFile()     // Catch:{ Throwable -> 0x0142 }
-            r3.put((java.lang.String) r5, (java.lang.Object) r0)     // Catch:{ Throwable -> 0x0142 }
-            com.valvesoftware.Configuration.MarkGlobalConfigurationDirty()     // Catch:{ Throwable -> 0x0142 }
+            java.lang.StringBuilder r12 = new java.lang.StringBuilder
+            r12.<init>()
+            java.lang.String r13 = "non emulated dir result "
+            r12.append(r13)
+            if (r1 == 0) goto L_0x0142
+            r13 = r1
+            goto L_0x0144
         L_0x0142:
-            return r7
+            java.lang.String r13 = "[null]"
+        L_0x0144:
+            r12.append(r13)
+            java.lang.String r12 = r12.toString()
+            android.util.Log.i(r7, r12)
+            if (r1 == 0) goto L_0x0151
+            goto L_0x0153
+        L_0x0151:
+            r1 = r10
+            r4 = r11
+        L_0x0153:
+            if (r2 == 0) goto L_0x0193
+            if (r4 == 0) goto L_0x016e
+            if (r9 == 0) goto L_0x016e
+            java.lang.StringBuilder r14 = new java.lang.StringBuilder
+            r14.<init>()
+            java.lang.String r15 = "everything is emulated, using the favored zip directory "
+            r14.append(r15)
+            r14.append(r9)
+            java.lang.String r14 = r14.toString()
+            android.util.Log.i(r7, r14)
+            goto L_0x0188
+        L_0x016e:
+            java.io.File r9 = new java.io.File
+            java.lang.StringBuilder r14 = new java.lang.StringBuilder
+            r14.<init>()
+            java.lang.String r15 = "com.valvesoftware/"
+            r14.append(r15)
+            java.lang.String r15 = r0.getPackageName()
+            r14.append(r15)
+            java.lang.String r14 = r14.toString()
+            r9.<init>(r1, r14)
+        L_0x0188:
+            java.io.File r14 = r9.getAbsoluteFile()     // Catch:{ Throwable -> 0x018f }
+            r5.put((java.lang.String) r8, (java.lang.Object) r14)     // Catch:{ Throwable -> 0x018f }
+        L_0x018f:
+            com.valvesoftware.Configuration.MarkGlobalConfigurationDirty()
+            goto L_0x01d7
+        L_0x0193:
+            java.lang.String r0 = "_"
+            java.lang.String r2 = "[^a-zA-Z0-9.-]"
+            java.lang.String r15 = r15.replaceAll(r2, r0)
+            java.lang.String r0 = r14.replaceAll(r2, r0)
+            java.io.File r9 = new java.io.File
+            java.lang.StringBuilder r2 = new java.lang.StringBuilder
+            r2.<init>()
+            java.lang.String r4 = "com.valvesoftware/dev/"
+            r2.append(r4)
+            r2.append(r15)
+            java.lang.String r15 = "/"
+            r2.append(r15)
+            r2.append(r0)
+            java.lang.String r15 = r2.toString()
+            r9.<init>(r1, r15)
+            if (r3 == 0) goto L_0x01d4
+            org.json.JSONObject r15 = r3.optJSONObject(r6)
+            if (r15 != 0) goto L_0x01cd
+            org.json.JSONObject r15 = new org.json.JSONObject
+            r15.<init>()
+            r3.put((java.lang.String) r6, (java.lang.Object) r15)     // Catch:{ Throwable -> 0x01cd }
+        L_0x01cd:
+            java.lang.String r0 = r9.toString()     // Catch:{ Throwable -> 0x01d4 }
+            r15.put((java.lang.String) r14, (java.lang.Object) r0)     // Catch:{ Throwable -> 0x01d4 }
+        L_0x01d4:
+            com.valvesoftware.Configuration.MarkGlobalConfigurationDirty()
+        L_0x01d7:
+            return r9
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.SelfInstall.GetContentDirectory():java.io.File");
+        throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.SelfInstall.GetContentDirectory(java.lang.String, java.lang.String):java.io.File");
     }
 
     public static boolean ShouldSyncContentFromBootstrap(IStreamingBootStrap iStreamingBootStrap) {
@@ -337,7 +402,7 @@ public class SelfInstall {
     }
 
     private static File FindExpansionFile() {
-        Application application = JNI_Environment.m_application;
+        android.app.Application application = JNI_Environment.m_application;
         String packageName = application.getApplicationContext().getPackageName();
         String GetString = Resources.GetString("VersionCodeString");
         if (GetString == null || GetString.length() == 0) {
@@ -384,168 +449,168 @@ public class SelfInstall {
     /* JADX WARNING: Removed duplicated region for block: B:29:0x00e1 A[Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }] */
     /* JADX WARNING: Removed duplicated region for block: B:40:0x00e0 A[EDGE_INSN: B:40:0x00e0->B:28:0x00e0 ?: BREAK  , SYNTHETIC] */
     /* Code decompiled incorrectly, please refer to instructions dump. */
-    private static boolean CheckZippedAssets() {
+    private static boolean CheckZippedAssets(com.valvesoftware.Application.InstallTask r10) {
         /*
-            java.lang.String r0 = " files to "
-            java.lang.String r1 = " exception"
-            java.io.File r2 = com.valvesoftware.JNI_Environment.GetPublicPath()
-            java.lang.String r2 = r2.getAbsolutePath()
-            android.app.Application r3 = com.valvesoftware.JNI_Environment.m_application
-            java.lang.String r4 = "com.valvesoftware.SelfInstall"
-            java.lang.String r5 = "Checking for game01.zip asset."
-            android.util.Log.e(r4, r5)
-            android.content.Context r3 = r3.getApplicationContext()
-            android.content.res.AssetManager r3 = r3.getAssets()
-            r5 = 0
-            java.io.InputStream r6 = GetAssetZipFile()     // Catch:{ FileNotFoundException -> 0x0094, Throwable -> 0x0076 }
-            boolean r7 = isAlreadyUnpacked(r6, r2)     // Catch:{ FileNotFoundException -> 0x0094, Throwable -> 0x0076 }
-            if (r7 == 0) goto L_0x003d
-            java.lang.StringBuilder r8 = new java.lang.StringBuilder     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
-            r8.<init>()     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
-            java.lang.String r9 = "Already unzipped files "
-            r8.append(r9)     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
-            r8.append(r2)     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
-            java.lang.String r8 = r8.toString()     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
-            android.util.Log.e(r4, r8)     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            java.lang.String r10 = " files to "
+            java.lang.String r0 = " exception"
+            java.io.File r1 = com.valvesoftware.JNI_Environment.GetPublicPath()
+            java.lang.String r1 = r1.getAbsolutePath()
+            android.app.Application r2 = com.valvesoftware.JNI_Environment.m_application
+            java.lang.String r3 = "com.valvesoftware.SelfInstall"
+            java.lang.String r4 = "Checking for game01.zip asset."
+            android.util.Log.e(r3, r4)
+            android.content.Context r2 = r2.getApplicationContext()
+            android.content.res.AssetManager r2 = r2.getAssets()
+            r4 = 0
+            java.io.InputStream r5 = GetAssetZipFile()     // Catch:{ FileNotFoundException -> 0x0094, Throwable -> 0x0076 }
+            boolean r6 = isAlreadyUnpacked(r5, r1)     // Catch:{ FileNotFoundException -> 0x0094, Throwable -> 0x0076 }
+            if (r6 == 0) goto L_0x003d
+            java.lang.StringBuilder r7 = new java.lang.StringBuilder     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            r7.<init>()     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            java.lang.String r8 = "Already unzipped files "
+            r7.append(r8)     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            r7.append(r1)     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            java.lang.String r7 = r7.toString()     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            android.util.Log.e(r3, r7)     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
             goto L_0x006f
         L_0x003d:
-            r6.close()     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
-            java.lang.StringBuilder r6 = new java.lang.StringBuilder     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
-            r6.<init>()     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
-            java.lang.String r8 = "Starting unzip files to "
-            r6.append(r8)     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
-            r6.append(r2)     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
-            java.lang.String r6 = r6.toString()     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
-            android.util.Log.e(r4, r6)     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
-            java.io.InputStream r6 = GetAssetZipFile()     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
-            unzip(r6, r2)     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
-            java.lang.StringBuilder r8 = new java.lang.StringBuilder     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
-            r8.<init>()     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
-            java.lang.String r9 = "Unzipped files to "
-            r8.append(r9)     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
-            r8.append(r2)     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
-            java.lang.String r8 = r8.toString()     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
-            android.util.Log.e(r4, r8)     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            r5.close()     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            java.lang.StringBuilder r5 = new java.lang.StringBuilder     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            r5.<init>()     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            java.lang.String r7 = "Starting unzip files to "
+            r5.append(r7)     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            r5.append(r1)     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            java.lang.String r5 = r5.toString()     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            android.util.Log.e(r3, r5)     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            java.io.InputStream r5 = GetAssetZipFile()     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            unzip(r5, r1)     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            java.lang.StringBuilder r7 = new java.lang.StringBuilder     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            r7.<init>()     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            java.lang.String r8 = "Unzipped files to "
+            r7.append(r8)     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            r7.append(r1)     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            java.lang.String r7 = r7.toString()     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            android.util.Log.e(r3, r7)     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
         L_0x006f:
-            r6.close()     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
-            r5 = 1
+            r5.close()     // Catch:{ FileNotFoundException -> 0x0095, Throwable -> 0x0074 }
+            r4 = 1
             goto L_0x009a
         L_0x0074:
-            r6 = move-exception
+            r5 = move-exception
             goto L_0x0078
         L_0x0076:
-            r6 = move-exception
-            r7 = 0
+            r5 = move-exception
+            r6 = 0
         L_0x0078:
-            r6.printStackTrace()
-            java.lang.StringBuilder r8 = new java.lang.StringBuilder
-            r8.<init>()
-            java.lang.String r9 = "game01.zip exception"
-            r8.append(r9)
-            java.lang.String r6 = r6.getMessage()
-            r8.append(r6)
-            java.lang.String r6 = r8.toString()
-            android.util.Log.e(r4, r6)
-            goto L_0x009a
-        L_0x0094:
-            r7 = 0
-        L_0x0095:
-            java.lang.String r6 = "game01.zip not found, ok. "
-            android.util.Log.e(r4, r6)
-        L_0x009a:
-            if (r5 == 0) goto L_0x0171
-            if (r7 != 0) goto L_0x0171
-            r6 = 2
-        L_0x009f:
+            r5.printStackTrace()
             java.lang.StringBuilder r7 = new java.lang.StringBuilder
             r7.<init>()
-            java.lang.String r8 = "game"
+            java.lang.String r8 = "game01.zip exception"
             r7.append(r8)
-            r8 = 10
-            if (r6 >= r8) goto L_0x00b0
-            java.lang.String r8 = "0"
+            java.lang.String r5 = r5.getMessage()
+            r7.append(r5)
+            java.lang.String r5 = r7.toString()
+            android.util.Log.e(r3, r5)
+            goto L_0x009a
+        L_0x0094:
+            r6 = 0
+        L_0x0095:
+            java.lang.String r5 = "game01.zip not found, ok. "
+            android.util.Log.e(r3, r5)
+        L_0x009a:
+            if (r4 == 0) goto L_0x0171
+            if (r6 != 0) goto L_0x0171
+            r5 = 2
+        L_0x009f:
+            java.lang.StringBuilder r6 = new java.lang.StringBuilder
+            r6.<init>()
+            java.lang.String r7 = "game"
+            r6.append(r7)
+            r7 = 10
+            if (r5 >= r7) goto L_0x00b0
+            java.lang.String r7 = "0"
             goto L_0x00b2
         L_0x00b0:
-            java.lang.String r8 = ""
+            java.lang.String r7 = ""
         L_0x00b2:
+            r6.append(r7)
+            r6.append(r5)
+            java.lang.String r7 = ".zip"
+            r6.append(r7)
+            java.lang.String r6 = r6.toString()
+            java.lang.StringBuilder r7 = new java.lang.StringBuilder
+            r7.<init>()
+            java.lang.String r8 = "Checking for "
             r7.append(r8)
             r7.append(r6)
-            java.lang.String r8 = ".zip"
+            java.lang.String r8 = " asset."
             r7.append(r8)
             java.lang.String r7 = r7.toString()
-            java.lang.StringBuilder r8 = new java.lang.StringBuilder
-            r8.<init>()
-            java.lang.String r9 = "Checking for "
-            r8.append(r9)
-            r8.append(r7)
-            java.lang.String r9 = " asset."
-            r8.append(r9)
-            java.lang.String r8 = r8.toString()
-            android.util.Log.e(r4, r8)
-            java.io.InputStream r8 = r3.open(r7)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
-            if (r8 != 0) goto L_0x00e1
+            android.util.Log.e(r3, r7)
+            java.io.InputStream r7 = r2.open(r6)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
+            if (r7 != 0) goto L_0x00e1
             goto L_0x0150
         L_0x00e1:
-            java.lang.StringBuilder r9 = new java.lang.StringBuilder     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
-            r9.<init>()     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
-            java.lang.String r10 = "Starting unzip "
-            r9.append(r10)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
-            r9.append(r7)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
-            r9.append(r0)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
-            r9.append(r2)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
-            java.lang.String r9 = r9.toString()     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
-            android.util.Log.e(r4, r9)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
-            unzip(r8, r2)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
-            java.lang.StringBuilder r9 = new java.lang.StringBuilder     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
-            r9.<init>()     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
-            java.lang.String r10 = "Unzipped "
-            r9.append(r10)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
-            r9.append(r7)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
-            r9.append(r0)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
-            r9.append(r2)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
-            java.lang.String r9 = r9.toString()     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
-            android.util.Log.e(r4, r9)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
-            r8.close()     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
-            int r6 = r6 + 1
+            java.lang.StringBuilder r8 = new java.lang.StringBuilder     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
+            r8.<init>()     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
+            java.lang.String r9 = "Starting unzip "
+            r8.append(r9)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
+            r8.append(r6)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
+            r8.append(r10)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
+            r8.append(r1)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
+            java.lang.String r8 = r8.toString()     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
+            android.util.Log.e(r3, r8)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
+            unzip(r7, r1)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
+            java.lang.StringBuilder r8 = new java.lang.StringBuilder     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
+            r8.<init>()     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
+            java.lang.String r9 = "Unzipped "
+            r8.append(r9)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
+            r8.append(r6)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
+            r8.append(r10)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
+            r8.append(r1)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
+            java.lang.String r8 = r8.toString()     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
+            android.util.Log.e(r3, r8)     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
+            r7.close()     // Catch:{ FileNotFoundException -> 0x013c, Throwable -> 0x011e }
+            int r5 = r5 + 1
             goto L_0x009f
         L_0x011e:
-            r0 = move-exception
-            r0.printStackTrace()
-            java.lang.StringBuilder r3 = new java.lang.StringBuilder
-            r3.<init>()
-            r3.append(r7)
-            r3.append(r1)
-            java.lang.String r0 = r0.getMessage()
-            r3.append(r0)
-            java.lang.String r0 = r3.toString()
-            android.util.Log.e(r4, r0)
+            r10 = move-exception
+            r10.printStackTrace()
+            java.lang.StringBuilder r2 = new java.lang.StringBuilder
+            r2.<init>()
+            r2.append(r6)
+            r2.append(r0)
+            java.lang.String r10 = r10.getMessage()
+            r2.append(r10)
+            java.lang.String r10 = r2.toString()
+            android.util.Log.e(r3, r10)
             goto L_0x0150
         L_0x013c:
-            java.lang.StringBuilder r0 = new java.lang.StringBuilder
-            r0.<init>()
-            r0.append(r7)
-            java.lang.String r3 = " not found, ok. "
-            r0.append(r3)
-            java.lang.String r0 = r0.toString()
-            android.util.Log.e(r4, r0)
+            java.lang.StringBuilder r10 = new java.lang.StringBuilder
+            r10.<init>()
+            r10.append(r6)
+            java.lang.String r2 = " not found, ok. "
+            r10.append(r2)
+            java.lang.String r10 = r10.toString()
+            android.util.Log.e(r3, r10)
         L_0x0150:
-            writeVersionFile(r2)     // Catch:{ Throwable -> 0x0154 }
+            writeVersionFile(r1)     // Catch:{ Throwable -> 0x0154 }
             goto L_0x0171
         L_0x0154:
-            r0 = move-exception
-            r0.printStackTrace()
-            java.lang.StringBuilder r3 = new java.lang.StringBuilder
-            r3.<init>()
-            r3.append(r2)
-            r3.append(r1)
-            java.lang.String r0 = r0.getMessage()
-            r3.append(r0)
-            java.lang.String r0 = r3.toString()
-            android.util.Log.e(r4, r0)
+            r10 = move-exception
+            r10.printStackTrace()
+            java.lang.StringBuilder r2 = new java.lang.StringBuilder
+            r2.<init>()
+            r2.append(r1)
+            r2.append(r0)
+            java.lang.String r10 = r10.getMessage()
+            r2.append(r10)
+            java.lang.String r10 = r2.toString()
+            android.util.Log.e(r3, r10)
         L_0x0171:
-            return r5
+            return r4
         */
-        throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.SelfInstall.CheckZippedAssets():boolean");
+        throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.SelfInstall.CheckZippedAssets(com.valvesoftware.Application$InstallTask):boolean");
     }
 
     private static File FindNonEmulatedDirectoryInList(File[] fileArr) {

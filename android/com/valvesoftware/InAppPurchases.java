@@ -20,13 +20,13 @@ import java.util.Hashtable;
 import java.util.List;
 
 public class InAppPurchases implements PurchasesUpdatedListener {
+    private static final String k_sSpewPackageName = "com.valvesoftware.InAppPurchases";
     private final int IAP_CONSUMED_STATUS_ERROR = 1;
     private final int IAP_CONSUMED_STATUS_OK = 0;
     private final int IAP_PURCHASE_STATUS_CANCELLED = 3;
     private final int IAP_PURCHASE_STATUS_PENDING = 2;
     private final int IAP_PURCHASE_STATUS_PURCHASED = 1;
     private final int IAP_PURCHASE_STATUS_UNKNOWN = 0;
-    private final String k_sSpewPackageName = "com.valvesoftware.InAppPurchases";
     /* access modifiers changed from: private */
     public boolean m_bBillingClientConnected = false;
     /* access modifiers changed from: private */
@@ -53,7 +53,7 @@ public class InAppPurchases implements PurchasesUpdatedListener {
             this.m_billingClient.startConnection(new BillingClientStateListener() {
                 public void onBillingSetupFinished(BillingResult billingResult) {
                     if (billingResult.getResponseCode() == 0) {
-                        Log.d("com.valvesoftware.InAppPurchases", "Billing Setup Connected");
+                        Log.d(InAppPurchases.k_sSpewPackageName, "Billing Setup Connected");
                         boolean unused = InAppPurchases.this.m_bBillingClientConnected = true;
                         Runnable runnable = runnable;
                         if (runnable != null) {
@@ -62,7 +62,7 @@ public class InAppPurchases implements PurchasesUpdatedListener {
                         }
                         return;
                     }
-                    Log.d("com.valvesoftware.InAppPurchases", "Billing Setup Failed with error: " + billingResult.getDebugMessage());
+                    Log.d(InAppPurchases.k_sSpewPackageName, "Billing Setup Failed with error: " + billingResult.getDebugMessage());
                 }
 
                 public void onBillingServiceDisconnected() {
@@ -73,7 +73,7 @@ public class InAppPurchases implements PurchasesUpdatedListener {
     }
 
     public void disconnectFromBillingClient() {
-        Log.d("com.valvesoftware.InAppPurchases", "Billing Setup Disconnected");
+        Log.d(k_sSpewPackageName, "Billing Setup Disconnected");
         BillingClient billingClient = this.m_billingClient;
         if (billingClient != null && billingClient.isReady()) {
             this.m_billingClient.endConnection();
@@ -97,22 +97,22 @@ public class InAppPurchases implements PurchasesUpdatedListener {
                     String purchaseToken = next.getPurchaseToken();
                     int i = 0;
                     if (next.getPurchaseState() == 1) {
-                        Log.d("com.valvesoftware.InAppPurchases", "Purchased: " + sku);
+                        Log.d(k_sSpewPackageName, "Purchased: " + sku);
                         i = 1;
                     } else if (next.getPurchaseState() == 2) {
-                        Log.d("com.valvesoftware.InAppPurchases", "Purchased pending for: " + sku);
+                        Log.d(k_sSpewPackageName, "Purchased pending for: " + sku);
                         i = 2;
                     }
                     UpdateIAPPurchaseStatus(sku, purchaseToken, i, next.isAcknowledged());
                 }
             }
         } else if (billingResult.getResponseCode() != 1) {
-            Log.d("com.valvesoftware.InAppPurchases", "onPurchasesUpdated error: " + billingResult.getDebugMessage());
+            Log.d(k_sSpewPackageName, "onPurchasesUpdated error: " + billingResult.getDebugMessage());
         } else if (list != null) {
             for (Purchase next2 : list) {
                 String sku2 = next2.getSku();
                 String purchaseToken2 = next2.getPurchaseToken();
-                Log.d("com.valvesoftware.InAppPurchases", "user cancelled purchase for: " + sku2);
+                Log.d(k_sSpewPackageName, "user cancelled purchase for: " + sku2);
                 UpdateIAPPurchaseStatus(sku2, purchaseToken2, 3, next2.isAcknowledged());
             }
         }
@@ -126,7 +126,7 @@ public class InAppPurchases implements PurchasesUpdatedListener {
                 InAppPurchases.this.m_billingClient.querySkuDetailsAsync(newBuilder.build(), new SkuDetailsResponseListener() {
                     public void onSkuDetailsResponse(BillingResult billingResult, List<SkuDetails> list) {
                         if (billingResult.getResponseCode() != 0 || list == null) {
-                            Log.d("com.valvesoftware.InAppPurchases", "onPurchasesUpdated error: " + billingResult.getDebugMessage());
+                            Log.d(InAppPurchases.k_sSpewPackageName, "onPurchasesUpdated error: " + billingResult.getDebugMessage());
                             return;
                         }
                         for (SkuDetails next : list) {
@@ -155,7 +155,7 @@ public class InAppPurchases implements PurchasesUpdatedListener {
                     InAppPurchases.this.onPurchasesUpdated(queryPurchases.getBillingResult(), queryPurchases.getPurchasesList());
                     return;
                 }
-                Log.d("com.valvesoftware.InAppPurchases", "queryPurchases error: " + queryPurchases.getResponseCode());
+                Log.d(InAppPurchases.k_sSpewPackageName, "queryPurchases error: " + queryPurchases.getResponseCode());
             }
         });
     }
@@ -163,17 +163,17 @@ public class InAppPurchases implements PurchasesUpdatedListener {
     public void purchaseSku(final Activity activity, final String str) {
         runBillingClientJob(new Runnable() {
             public void run() {
-                Log.d("com.valvesoftware.InAppPurchases", "attempting to purchase sku: " + str);
+                Log.d(InAppPurchases.k_sSpewPackageName, "attempting to purchase sku: " + str);
                 SkuDetails skuDetails = (SkuDetails) InAppPurchases.this.m_skuDetailsTable.get(str);
                 if (skuDetails == null) {
-                    Log.d("com.valvesoftware.InAppPurchases", "querying sku details before purchasing: " + str);
+                    Log.d(InAppPurchases.k_sSpewPackageName, "querying sku details before purchasing: " + str);
                     ArrayList arrayList = new ArrayList();
                     arrayList.add(str);
                     InAppPurchases.this.querySkuDetails(arrayList, new Runnable() {
                         public void run() {
                             SkuDetails skuDetails = (SkuDetails) InAppPurchases.this.m_skuDetailsTable.get(str);
                             if (skuDetails == null) {
-                                Log.d("com.valvesoftware.InAppPurchases", "purchaseSku error. sku not found: " + str);
+                                Log.d(InAppPurchases.k_sSpewPackageName, "purchaseSku error. sku not found: " + str);
                                 return;
                             }
                             InAppPurchases.this.m_billingClient.launchBillingFlow(activity, BillingFlowParams.newBuilder().setSkuDetails(skuDetails).build());
@@ -191,7 +191,7 @@ public class InAppPurchases implements PurchasesUpdatedListener {
         if (hashSet == null) {
             this.m_consumedTokens = new HashSet<>();
         } else if (hashSet.contains(str)) {
-            Log.d("com.valvesoftware.InAppPurchases", "Already consumed purchase token: " + str);
+            Log.d(k_sSpewPackageName, "Already consumed purchase token: " + str);
             return;
         }
         this.m_consumedTokens.add(str);
@@ -199,11 +199,11 @@ public class InAppPurchases implements PurchasesUpdatedListener {
             public void onConsumeResponse(BillingResult billingResult, String str) {
                 int i;
                 if (billingResult.getResponseCode() != 0) {
-                    Log.d("com.valvesoftware.InAppPurchases", "onConsumeResponse error: " + billingResult.getDebugMessage());
+                    Log.d(InAppPurchases.k_sSpewPackageName, "onConsumeResponse error: " + billingResult.getDebugMessage());
                     i = 0;
                 } else {
                     i = 1;
-                    Log.d("com.valvesoftware.InAppPurchases", "Consumed token: " + str);
+                    Log.d(InAppPurchases.k_sSpewPackageName, "Consumed token: " + str);
                 }
                 InAppPurchases.UpdateIAPConsumedStatus(str, i);
             }

@@ -32,7 +32,7 @@
 
 		//WINDRUNNER
 		"dac_ability_windrunner_powershot"										"パワーショット"
-		"dac_ability_windrunner_powershot_Description"							"ウィンドレンジャーは弓を最大{s:castPoint}秒間引き絞ることで単発の強力なショットを放ち、最大{s:powershot_damage}ダメージを与える。パワーショットのダメージは、敵に命中するごとに{s:damage_reduction}%ずつ低下する。"
+		"dac_ability_windrunner_powershot_Description"							"ウィンドレンジャーは弓を最大{s:castPoint}秒間引き絞ることで単発の強力なショットを放ち、最大{s:powershot_damage}ダメージを与える。パワーショットのダメージは、敵に命中するごとに{s:damage_reduction}%ずつ低下する。3つ星の場合、ウィンドレンジャーは弓を引き始める際に回避力が{s:evasion}%となり、魔法無効になる。この効果は{s:evasion_duration}秒間持続する。"
 		"dac_ability_windrunner_powershot_Lore"									"旅の途中でたくさんの友達ができた。頼み事をすることに躊躇なんてしないわよ。— <i>レン、世界中を旅する者</i>"
 
 		//WITCHDOCTOR
@@ -366,7 +366,7 @@
 		
 		//BLOODSEEKER
 		"dac_ability_bloodseeker_blood_rage"									"ブラッドレイジ"
-		"dac_ability_bloodseeker_blood_rage_Description"						"パッシブ：ブラッドシーカーは敵のヘルスが下がると、ヘルスの{s:min_health_pct}%、最大{s:attack_speed_bonus_max}の攻撃速度を得る。<br><br>ブラッドシーカーが対象を倒すと、最大ヘルスの{s:heal_pct}%を回復する。"
+		"dac_ability_bloodseeker_blood_rage_Description"						"パッシブ：ブラッドシーカーは敵のヘルスが下がると、ヘルスの{s:min_health_pct}%、最大{s:attack_speed_bonus_max}の攻撃速度を得る。<br><br>ブラッドシーカーが対象を倒すと、対象の最大ヘルスの{s:heal_pct}%分回復する。3つ星の場合、ブラッドシーカーの{s:radius}マス以内で敵が死んだ時にもこの効果が発動する。"
 		"dac_ability_bloodseeker_blood_rage_Lore"								"この商売から学んだことがあるとすれば…人は血を見るのが好きだってことだ。この男を雇え。— <i>グレック、決断力ある興行主</i>"
 		
 		//ARC WARDEN
@@ -376,7 +376,7 @@
 		
 		//ARC WARDEN
 		"dac_ability_arc_warden_tempest_double_no_items"						"電磁波分身"
-		"dac_ability_arc_warden_tempest_double_no_items_Description"			"アークウォーデンは自身の現在のヘルスと同じ複製を作り出す。クローンの与ダメージは{s:clone_dmg_reduction}%削減される。"
+		"dac_ability_arc_warden_tempest_double_no_items_Description"			"アークウォーデンは自身の現在のヘルスと同じ複製を作り出す。クローンの与ダメージは{s:clone_dmg_reduction}%少なく、得るマナはクローンごとに{s:clone_mana_pct_loss_per}%減少する（累積的にスタックする）。3つ星の場合、クローンはアークウォーデンのアイテムも複製する。"
 		"dac_ability_arc_warden_tempest_double_no_items_Lore"					"彼は創造の神秘をもたらす。— <i>トゥラス、謎めいた預言者</i>"
 
 		//MIRANA
@@ -471,7 +471,7 @@
 		"dac_ability_nyx_assassin_spiked_carapace_lore"								"正しくは節足動物だ。－<i>細部まで目を光らせるクワイエット</i>"
 
 		"dac_ability_nyx_assassin_vendetta"											"ヴェンデッタ"
-		"dac_ability_nyx_assassin_vendetta_description"								"パッシブ：ニクスアサシンはユニットを攻撃するためにテレポート後、次の攻撃対象に{s:bonus_damage}ボーナスダメージを与え、{s:break_duration}秒間、敵をブレイク状態にして、全パッシブ効果を無効にする。"
+		"dac_ability_nyx_assassin_vendetta_description"								"パッシブ：ニクスアサシンはユニットを攻撃するためにテレポート後、次の攻撃で{s:bonus_damage}ボーナスダメージを与え、{s:break_duration}秒間、敵をブレイク状態にし、全パッシブ効果を無効にする。3つ星の場合、{s:hits_to_trigger}回連続攻撃後にも、ヴェンデッタを適用する。テレポートによってヴェンデッタが発動した場合、カウンターはリセットされる。"
 		"dac_ability_nyx_assassin_vendetta_lore"									"昆虫。節足動物。どっちでも同じだ。とにかく彼に今すぐ殺してもらいたい奴がいる。彼を捕えることができるのか？－<i>正されることが嫌いなオニア</i>"
 
 		// WEAVER
@@ -494,7 +494,7 @@
 		"dac_ability_wisp_tether_lore"												"<i>アイオーを熱心に見つめるエンノ</i>"
 
 		"dac_ability_wisp_relocate"													"リロケート"
-		"dac_ability_wisp_relocate_description"										"アイオーは{s:relocate_time_away}秒間、離れた場所にテレポートし、死んだヒーローを復活させる。そのユニットとアイオーのヘルスは完全に回復し、負の効果も浄化される。3つ星の場合、アイオーは死んだヒーローのクールダウンもリセットする。"
+		"dac_ability_wisp_relocate_description"										"アイオーは{s:relocate_time_away}秒間、離れた場所にテレポートし、死んだヒーローを復活させる。そのユニットとアイオーのヘルスは完全に回復し、負の効果も浄化される。3つ星の場合、アイオーはヒーローのクールダウンもリセットする。"
 		"dac_ability_wisp_relocate_lore"											"<i>見つめ返すアイオー</i>"
 
 		// BRISTLEBACK	
@@ -550,7 +550,7 @@
 
 		// GRANNY LIZARD
 		"dac_ability_granny_lizard_shotgun_blast"									"オールドスキャターブラスト"
-		"dac_ability_granny_lizard_shotgun_blast_description"						"スナップファイアは、4回の基本攻撃の後ショットガンを構え、近接する敵に円錐状に{s:blast_damage}ダメージを与え、影響を受けたユニットの攻撃速度を{s:blast_bonus_attack_speed}%削減する。"
+		"dac_ability_granny_lizard_shotgun_blast_description"						"スナップファイアは、4回の基本攻撃の後、ショットガンを構え、近隣の敵に円錐状に{s:blast_damage}ダメージを与え、影響を受けたユニットの攻撃速度を{s:blast_bonus_attack_speed}削減する。3つ星の場合、影響を受けたユニットは防御力も{s:blast_armor_loss}失う。効果は{s:debuff_duration}秒間持続する。"
 		"dac_ability_granny_lizard_shotgun_blast_lore"								"キーンは戦争に関しては驚くほど画期的な考えの持ち主だ。戦争は私の得意な分野でもあるから…ビジネスのチャンスかもしれない。－<i>寛大な投資家、クワイエット</i>"
 
 		"dac_ability_granny_lizard_bazooka"											"モーティマーのキス"
@@ -664,30 +664,138 @@
 		"dac_ability_3star"															"3つ星効果"
 
 		"dac_ability_warlock_3star"													"ウォーロック3つ星効果"
-		"dac_ability_warlock_3star_Description"										"3つ星の場合、ウォーロックが生存中、味方の悪魔がアビリティをキャストした時に、お互いがサイレンス状態になるのを防ぐ。"
+		"dac_ability_warlock_3star_Description"										"ウォーロックは生存中、味方の悪魔がアビリティをキャストした時に、お互いがサイレンス状態になるのを防ぐ。"
 
 		"dac_ability_razor_3star"													"レイザー3つ星効果"
-		"dac_ability_razor_3star_Description"										"3つ星の場合、レイザーは敵を攻撃するたびに、最大{s:max_stacks}回まで{s:stolen_dmg}攻撃ダメージを奪う。対象が変わるとレイザーはリセットされるが、敵はリセットされない。"
+		"dac_ability_razor_3star_Description"										"レイザーはスタティックリンクを得る。レイザーは敵を攻撃するたびに、最大{s:max_stacks}回まで{s:stolen_dmg}攻撃ダメージを奪う。対象が変わるとレイザーはリセットされるが、敵はリセットされない。"
 
 		"dac_ability_chaos_knight_3star"											"カオスナイト3つ星効果"
-		"dac_ability_chaos_knight_3star_Description"								"3つ星の場合、カオスナイトが生存中、味方の騎士は、常に味方騎士の近接と見なされる。"
+		"dac_ability_chaos_knight_3star_Description"								"カオスナイトが生存中、味方の騎士は、常に味方の騎士の近接と見なされる。"
 
 		"dac_ability_crystal_maiden_3star"											"クリスタルメイデン3つ星効果"
-		"dac_ability_crystal_maiden_3star_Description"								"3つ星の場合、クリスタルメイデンが生存中、すべての味方のクールダウンが{s:cooldown_reduction}%短縮される。"
+		"dac_ability_crystal_maiden_3star_Description"								"クリスタルメイデンが生存中、すべての味方のクールダウンが{s:cooldown_reduction}%短縮される。"
 
 		"dac_ability_terrorblade_3star"												"テラーブレード3つ星効果"
-		"dac_ability_terrorblade_3star_Description"									"3つ星の場合、テラーブレードは敵の悪魔に対するピュアダメージが+{s:damage_bonus_pct}%増加。"
+		"dac_ability_terrorblade_3star_Description"									"テラーブレードは悪魔のエネルギーを召喚し、敵悪魔に対して+{s:damage_bonus_pct}%ピュアダメージを得る。このボーナスはキャストするたびに{s:duration}秒間持続する。"
 
 		"dac_ability_tiny_3star"													"タイニー3つ星効果"
-		"dac_ability_tiny_3star_Description"										"3つ星の場合、タイニーは敵をトスする度に大きくなり、+{s:bonus_damage}攻撃ダメージと+{s:bonus_armor}防御力を得るが、最大{s:max_stacks}回まで攻撃速度が{s:aspd_loss}減少する。"
+		"dac_ability_tiny_3star_Description"										"タイニーは敵をトスするたびに大きくなり、+{s:bonus_damage}攻撃ダメージと+{s:bonus_armor}防御力を得るが、最大{s:max_stacks}回まで攻撃速度が{s:aspd_loss}減少する。"
 
 		"dac_ability_luna_3star"													"ルナ3つ星効果"
-		"dac_ability_luna_3star_Description"										"3つ星の場合、ルナはエクリプスを得る。ルナの必要な時に、セレメネはルナの周囲{s:radius}マス以内の光を遮り、{s:beam_interval}秒ごとに敵に月のエネルギーを集めた{s:beams}本のビームを降らせ、毎回{s:beam_damage}ダメージを与え、{s:beam_stun}秒間スタン状態にする。ビームは敵ユニットあたり最大{s:hit_count}回ヒットする。"
+		"dac_ability_luna_3star_Description"										"ルナはエクリプスを得る。ルナの必要な時に、セレメネはルナの周囲{s:radius}マス以内の光を遮り、{s:beam_interval}秒ごとに敵に月のエネルギーを集めた{s:beams}本のビームを降らせ、毎回{s:beam_damage}ダメージを与え、{s:beam_stun}秒間スタン状態にする。ビームは敵ユニットあたり最大{s:hit_count}回ヒットする。"
 
 		"dac_ability_dazzle_3star"													"ダズル3つ星効果"
-		"dac_ability_dazzle_3star_Description"										"3つ星の場合、ダズルは{s:never_die_range}マス以内のすべての味方ユニットにシャロウグレイブをかける。祝福を受けたすべてのユニットは致命的打撃を受けた後、{s:never_die_duration}秒間余分に生き残る。"
+		"dac_ability_dazzle_3star_Description"										"ダズルは{s:never_die_range}マス以内のすべての味方ユニットにシャロウグレイブをかける。祝福を受けたすべてのユニットは致命的打撃を受けた後、{s:never_die_duration}秒間余分に生き残る。"
 
 		"dac_ability_broodmother_3star"												"ブルードマザー3つ星効果"
-		"dac_ability_broodmother_3star_Description"									"3つ星の場合、ブルードマザーが生存中、すべての味方のスパイダリングは無敵になる。"
+		"dac_ability_broodmother_3star_Description"									"ブルードマザーが生存中、すべての味方のスパイダリングは無敵になる。"
+
+		"dac_ability_pudge_3star"													"パッジ3つ星効果"
+		"dac_ability_pudge_3star_Description"										"パッジは肉の山となり、{s:radius}マス以内の敵が死ぬ度に{s:bonus_health_per_death}最大ヘルスと{s:magical_resistance}%魔法耐性を得る。"
+
+		"dac_ability_viper_3star"													"ヴァイパー3つ星効果"
+		"dac_ability_viper_3star_Description"										"ヴァイパーは{s:num_attacks}攻撃ごとにヴァイパーストライクを行う。敵ユニットは毎秒{s:damage}ダメージを受け{s:bonus_movement_speed}%の移動速度と{s:bonus_attack_speed}攻撃速度を失う。速度低下は{s:debuff_duration}秒間で徐々に元に戻る。"
+
+		"dac_ability_beastmaster_3star"												"ビーストマスター3つ星効果"
+		"dac_ability_beastmaster_3star_Description"									"ビーストマスターは召喚ユニットから受けるダメージが{s:damage_reduction}%減少し、召喚ユニットの魔法が無効になる。"
+
+		"dac_ability_juggernaut_3star"												"ジャガーノート3つ星効果"
+		"dac_ability_juggernaut_3star_Description"									"ジャガーノートはブレードダンスを得る。各攻撃は{s:crit_chance}%の確率でクリティカルヒットとなり、{s:crit_bonus}%のボーナスダメージを与える。"
+
+		"dac_ability_queenofpain_3star"												"クイーン・オブ・ペイン3つ星効果"
+		"dac_ability_queenofpain_3star_Description"									"クイーン・オブ・ペインは近隣の敵を魅了し、最大{s:radius}マス離れた敵からの攻撃を{s:evasion}%の確率で回避する。"
+
+		"dac_ability_drow_ranger_3star"												"ドローレンジャー3つ星効果"
+		"dac_ability_drow_ranger_3star_Description"									"ドローレンジャーの矢がフロストアローになる。これらの矢に当たったユニットの移動速度が{s:move_speed_loss}%、攻撃速度が{s:attack_speed_loss}遅くなる。効果は{s:slow_duration}秒間持続する。"
+
+		"dac_ability_abaddon_3star"													"アバドン3つ星効果"
+		"dac_ability_abaddon_3star_Description"										"アバドンは自分が攻撃する敵にアヴァーナスの呪いを適用するアビリティを得る。アバドンが同じ敵ユニットを{s:min_stacks}回連続で攻撃すると、そのユニットは{s:silence_duration}秒間サイレンス状態になり、アバドンはそのユニットに対して+{s:attack_speed}攻撃速度を得る。これは追加攻撃が当たるたびにリフレッシュされるが、アバドンが対象を変えた場合、攻撃は0から始まる。"
+
+		"dac_ability_bloodseeker_3star"												"ブラッドシーカー3つ星効果"
+		"dac_ability_bloodseeker_3star_Description"									"ブラッドシーカーは、アクティブであれば現在の暗殺者アライアンスレベルのクリティカルヒットボーナスを得る。"
+
+		"dac_ability_morphling_3star"												"モーフリング3つ星効果"
+		"dac_ability_morphling_3star_Description"									"モーフリングは、敵のチャンピオンであるかのように、アクティブな敵アライアンスのすべての戦闘ボーナスを得る。"
+
+		"dac_ability_shadow_fiend_3star"											"シャドウフィーンド3つ星効果"
+		"dac_ability_Shadow_fiend_3star_Description"								"シャドウフィーンドはダークロードの気配を得る。{s:radius}マス以内の敵はシャドウフィーンドの存在におののき、防御力が-{s:armor_reduction}になる。"
+
+		"dac_ability_magnataur_3star"												"マグナス3つ星効果"
+		"dac_ability_magnataur_3star_Description"									"マグナスは極性反転を得る。キャスト時、{s:radius}マス以内の敵は{s:damage}ダメージを受け、{s:duration}秒間スタン状態になる。"
+
+		"dac_ability_arc_warden_3star"												"アークウォーデン3つ星効果"
+		"dac_ability_arc_warden_3star_Description"									"電磁波分身のクローンはアークウォーデンのアイテムも複製する。"
+
+		"dac_ability_bat_rider_3star"												"バットライダー3つ星効果"
+		"dac_ability_bat_rider_3star_Description"									"粘着ナパームは敵を炎上させる。詳細はアビリティを参照。"
+
+		"dac_ability_nyx_assassin_3star"											"ニクスアサシン3つ星効果"
+		"dac_ability_nyx_assassin_3star_Description"								"ヴェンデッタはより頻繁にキャスト可能。詳細はアビリティを参照。"
+
+		"dac_ability_shadow_demon_3star"											"シャドウデーモン3つ星効果"
+		"dac_ability_shadow_demon_3star_Description"								"シャドウデーモンはデモニックパージの対象にソウルキャッチャーを適用する。詳細はアビリティを参照。"
+
+		"dac_ability_tusk_3star"													"タスク3つ星効果"
+		"dac_ability_tusk_3star_Description"										"セイウチパンチはより長い時間、敵の攻撃速度と移動速度を低下させる。詳細はアビリティを参照。"
+
+		"dac_ability_venomancer_3star"												"ヴェノマンサー3つ星効果"
+		"dac_ability_venomancer_3star_Description"									"疫病ワードは魔法ダメージを受け付けない。"
+
+		"dac_ability_weaver_3star"													"ウィーバー3つ星効果"
+		"dac_ability_weaver_3star_Description"										"ウィーバーの攻撃はシュクチ後、マナを燃焼させる。詳細はアビリティを参照。"
+
+		"dac_ability_bristleback_3star"												"ブリストルバック3つ星効果"
+		"dac_ability_bristleback_3star_Description"									"クイルスプレーのクールダウンは大幅に削減される。詳細はアビリティを参照。"
+
+		"dac_ability_earth_spirit_3star"											"アーススピリット3つ星効果"
+		"dac_ability_earth_spirit_3star_Description"								"ジオマグネティックグリップは敵をスタン状態にする。詳細はアビリティを参照。"
+
+		"dac_ability_natures_prophet_3star"											"3つ星効果"
+		"dac_ability_natures_prophet_3star_Description"								"トレントはボードの敵側にスポーンする。"
+
+		"dac_ability_ogre_magi_3star"												"オーガマギ3つ星効果"
+		"dac_ability_ogre_magi_3star_Description"									"オーガマギはブラッドラストを複数の敵にキャストする可能性が向上。詳細はアビリティを参照。"
+
+		"dac_ability_slardar_3star"													"スラーダー3つ星効果"
+		"dac_ability_slardar_3star_Description"										"スラーダーは腐食性煙霧のキャスト後にバッシュする。詳細はアビリティを参照。"
+
+		"dac_ability_windrunner_3star"												"ウィンドレンジャー3つ星効果"
+		"dac_ability_windrunner_3star_Description"									"ウィンドレンジャーはパワーショットをキャスト中、回避力と魔法無効を得る。詳細はアビリティを参照。"
+
+		"dac_ability_witch_doctor_3star"											"ウィッチドクター3つ星効果"
+		"dac_ability_witch_doctor_3star_Description"								"パラライズキャスクが当たった敵はマレディクトで呪われる。詳細はアビリティを参照。"
+
+		"dac_ability_ember_spirit_3star"											"エンバースピリット3つ星効果"
+		"dac_ability_ember_spirit_3star_Description"								"スライトオブフィストの範囲が倍になる。詳細はアビリティを参照。"
+
+		"dac_ability_enigma_3star"													"エニグマ3つ星効果"
+		"dac_ability_enigma_3star_Description"										"真夜中の波動の範囲が3倍になる。詳細はアビリティを参照。"
+
+		"dac_ability_wisp_3star"													"アイオー3つ星効果"
+		"dac_ability_wisp_3star_Description"										"リロケートは復活したヒーローのクールダウンをリセットする。"
+
+		"dac_ability_lycan_3star"													"ライカン3つ星効果"
+		"dac_ability_lycan_3star_Description"										"変身はより多くの狼を召喚する。詳細はアビリティを参照。"
+
+		"dac_ability_omniknight_3star"												"オムニナイト3つ星効果"
+		"dac_ability_omniknight_3star_Description"									"清めの範囲が3倍になる。詳細はアビリティを参照。"
+
+		"dac_ability_shadow_shaman_3star"											"シャドウシャーマン3つ星効果"
+		"dac_ability_shadow_shaman_3star_Description"								"シャドウシャーマンはマスサーペントワードの対象となったユニットをヘックス状態にする。"
+
+		"dac_ability_treant_protector_3star"										"3つ星効果"
+		"dac_ability_treant_protector_3star_Description"							"リーチシードによって回復したユニットは、リビングアーマーも得る。詳細はアビリティを参照。"
+
+		"dac_ability_storm_spirit_3star"											"ストームスピリット3つ星効果"
+		"dac_ability_storm_spirit_3star_Description"								"ストームはオーバーロードを得る。スペルの詠唱により生成される電気チャージがストームの次の攻撃で放たれ、{s:damage}ダメージを与え、{s:slow_duration}秒間、対象の攻撃速度を{s:attack_speed_loss}低下させる。ストームのデルタスラムは攻撃と数えられ、その場合、ストームの攻撃がヒットするすべてのユニットがダメージと減速を受ける。"
+		
+		"dac_ability_legion_commander_3star"										"3つ星効果"
+		"dac_ability_legion_commander_3star_Description"							"デュエルの間、範囲内のすべての味方も、レギオンコマンダーの対象を攻撃する。"
+
+		"dac_ability_life_stealer_3star"										"ライフスティーラー3つ星効果"
+		"dac_ability_life_stealer_3star_Description"							"ライフスティーラーはレイジを得る。キャスト時、ライフスティーラーは魔法無効になり、+{s:bonus_movement_speed_pct}%移動速度と+{S:bonus_attack_speed}攻撃速度を得る。効果は{s:duration}秒間持続する。"
+
+		"dac_ability_snapfire_3star"												"スナップファイア3つ星効果"
+		"dac_ability_snapfire_3star_Description"									"オールドスキャターブラストは敵の防御力を下げる。詳細はアビリティを参照。"
 	}
 }

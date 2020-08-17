@@ -32,7 +32,7 @@
 
 		//WINDRUNNER
 		"dac_ability_windrunner_powershot"										"강화사격"
-		"dac_ability_windrunner_powershot_Description"							"바람순찰자가 최대 {s:castPoint}초 동안 활에 힘을 집중하여 강력한 일격을 날립니다. 최대 {s:powershot_damage}의 피해를 줍니다. 강화 사격으로 쓰러뜨린 적 하나당 피해가 {s:damage_reduction}% 감소합니다."
+		"dac_ability_windrunner_powershot_Description"							"바람순찰자가 최대 {s:castPoint}초 동안 힘을 집중한 다음 강력한 일격을 날려 최대 {s:powershot_damage}의 피해를 줍니다. 강화사격에 타격당한 적은 모두 공격력이 {s:damage_reduction}% 감소합니다. 3성이 되면, 활에 힘을 집중하기 시작할 때 바람순찰자가 {s:evasion}% 회피 효과를 얻고 마법에 면역 상태가 됩니다. {s:evasion_duration}초 동안 집중합니다."
 		"dac_ability_windrunner_powershot_Lore"									"여행하면서 친구를 많이 사귀었어요. 그러니 이제 무언가 부탁할 일이 생겨도 문제없어요. - <i>세계 여행자 렌</i>"
 
 		//WITCHDOCTOR
@@ -367,7 +367,7 @@
 		
 		//BLOODSEEKER
 		"dac_ability_bloodseeker_blood_rage"									"피의 분노"
-		"dac_ability_bloodseeker_blood_rage_Description"						"지속 효과: 적이 체력을 잃으면 {s:min_health_pct}%의 체력일 때 혈귀가 최대 {s:attack_speed_bonus_max}의 공격 속도를 얻습니다.<br><br>혈귀가 대상을 처치할 때마다, 최대 체력의 {s:heal_pct}%를 회복합니다."
+		"dac_ability_bloodseeker_blood_rage_Description"						"지속 효과: 적이 체력을 잃으면 {s:min_health_pct}%의 체력일 때 혈귀가 최대 {s:attack_speed_bonus_max}의 공격 속도를 얻습니다.<br><br>혈귀가 대상을 처치할 때마다, 최대 체력의 {s:heal_pct}%를 회복합니다. 3성이 되면, 혈귀에게서 {s:radius}칸 안에 있는 적이 죽을 때 이 효과가 발생합니다."
 		"dac_ability_bloodseeker_blood_rage_Lore"								"내 일을 하면서 배운 게 하나 있다면, 대중들은 피를 좋아한다는 거야. 이 자를 고용하라고. - <i>결단력 있는 기획자 그렉</i>"
 		
 		//ARC WARDEN
@@ -377,7 +377,7 @@
 		
 		//ARC WARDEN
 		"dac_ability_arc_warden_tempest_double_no_items"						"이중 폭풍"
-		"dac_ability_arc_warden_tempest_double_no_items_Description"			"번개 감시자가 현재의 체력을 똑같이 보유한 자신의 복제를 만들어 냅니다. 복제는 {s:clone_dmg_reduction}% 적은 피해를 가합니다."
+		"dac_ability_arc_warden_tempest_double_no_items_Description"			"번개 감시자가 현재 체력을 똑같이 보유한 자신의 복제를 만들어 냅니다. 복제한 존재는 {s:clone_dmg_reduction}% 적은 피해를 주고 복제당 {s:clone_mana_pct_loss_per}% 적게 마나를 획득합니다. (배가하여 중첩됨) 3성이 되면, 복제한 존재는 번개 감시자의 아이템도 복사합니다."
 		"dac_ability_arc_warden_tempest_double_no_items_Lore"					"그자는 창조의 수수께끼를 가져왔다. - <i>난해한 예언자 투라스</i>"
 
 		//MIRANA
@@ -472,7 +472,7 @@
 		"dac_ability_nyx_assassin_spiked_carapace_lore"								"올바른 용어는 절지동물이다. - <i>세부 사항에 주의하는 콰이어트</i>"
 
 		"dac_ability_nyx_assassin_vendetta"											"피의 복수"
-		"dac_ability_nyx_assassin_vendetta_description"								"지속 효과: 닉스 암살자가 순간이동 후 유닛을 공격하며 {s:bonus_damage}의 보너스 피해를 줍니다. 적은 {s:break_duration}초 동안 단절 상태가 되며 모든 지속 효과가 무효가 됩니다."
+		"dac_ability_nyx_assassin_vendetta_description"								"지속 효과: 닉스 암살자가 유닛 하나에게 순간이동하여 공격한 후, 다음 공격 시 {s:bonus_damage}의 보너스 피해를 주며, 적은 {s:break_duration}초 동안 단절 상태가 되고 모든 지속 효과가 무력화됩니다. 3성이 되면, 닉스 암살자는 연속하여 {s:hits_to_trigger}번 공격할 때마다 피의 복수를 적용합니다. 피의 복수가 순간이동으로 발동하면 연속 수치가 초기화됩니다."
 		"dac_ability_nyx_assassin_vendetta_lore"									"곤충이니 절지동물이니. 무슨 상관이에요. 중요한 점은 저는 누군가를 죽여야 해서 그자가 필요하다는 거예요... 그자를 연결해줄 수 있어요, 없어요? - <i>자기 말을 누가 정정해주는 상황이 못마땅한 오니아</i>"
 
 		// WEAVER
@@ -495,7 +495,7 @@
 		"dac_ability_wisp_tether_lore"												"<i>이오를 뚫어지게 바라보는 엔노</i>"
 
 		"dac_ability_wisp_relocate"													"재배치"
-		"dac_ability_wisp_relocate_description"										"이오가 {s:relocate_time_away}초 동안 순간이동하여 죽은 영웅을 되살려냅니다. 연결된 두 유닛은 모든 체력을 회복하고 돌아오며 해로운 효과는 정화됩니다. 3성이 되면, 추가로 이오는 죽은 영웅의 쿨다운을 초기화합니다."
+		"dac_ability_wisp_relocate_description"										"이오가 {s:relocate_time_away}초 동안 순간이동하여 죽은 영웅을 되살려냅니다. 연결된 두 유닛은 모든 체력을 회복하고 돌아오며 해로운 효과는 정화됩니다. 3성이 되면, 추가로 이오는 해당 영웅의 쿨다운을 초기화합니다."
 		"dac_ability_wisp_relocate_lore"											"<i>엔노를 되쏘아보는 이오</i>"
 
 		// BRISTLEBACK	
@@ -538,7 +538,7 @@
 
 		"dac_ability_earth_spirit_element"											"대지 원소"
 		"dac_ability_earth_spirit_element_description"								"지속 효과: 대지령이 내려찍기 델타를 시행하면, 영향받은 적 유닛이 3초 동안 침묵에 빠집니다."
-		"dac_ability_earth_spirit_element_lore"										"손오공이 저자와 투기장에서 싸우는 광경을 볼 수 있다면 뭐든 할 텐데... - <i>환상의 채용 전문가 그렉</i>"
+		"dac_ability_earth_spirit_element_lore"										"손오공이 저자와 투기장에서 싸우는 광경을 볼 수 있다면 뭐든 할 텐데... - <i>환상의 계약 담당자 그렉</i>"
 
 		// VOID SPIRIT
 		"dac_ability_void_spirit_dissimilate"										"이화"
@@ -551,7 +551,7 @@
 
 		// GRANNY LIZARD
 		"dac_ability_granny_lizard_shotgun_blast"									"노련한 산탄포"
-		"dac_ability_granny_lizard_shotgun_blast_description"						"4회의 기본 공격 후 산탄총이 준비됩니다. 그다음 근처 부채꼴 범위에 있는 적에게 발사하면 {s:blast_damage}의 피해를 주고 영향받은 유닛의 공격이 {s:blast_bonus_attack_speed}% 느려지게 합니다."
+		"dac_ability_granny_lizard_shotgun_blast_description"						"4회의 기본 공격 후 산탄총이 준비됩니다. 그다음 근처 부채꼴 범위에 있는 인근 적에게 발사하면 {s:blast_damage}의 피해를 주고 영향받은 유닛의 공격이 {s:blast_bonus_attack_speed} 느려집니다. 3성이 되면, 영향받은 유닛은 {s:blast_armor_loss}의 방어력도 잃습니다. 효과는 {s:debuff_duration}초 동안 지속합니다."
 		"dac_ability_granny_lizard_shotgun_blast_lore"								"단신족은 언제나 전쟁에 대한 마음가짐이 탁월했다. 그리고 전쟁은 내 전문 분야다. 내가 손댈 사업이 있는 듯하다.  - <i>엔젤 투자자 콰이어트</i>"
 
 		"dac_ability_granny_lizard_bazooka"											"모티머의 입맞춤"
@@ -665,30 +665,138 @@
 		"dac_ability_3star"															"3성 효과"
 
 		"dac_ability_warlock_3star"													"흑마법사 3성 효과"
-		"dac_ability_warlock_3star_Description"										"3성이 되면, 살아 있는 흑마법사는 능력을 시전할 때 아군 악마들이 서로 침묵시키지 않도록 막습니다."
+		"dac_ability_warlock_3star_Description"										"흑마법사는 살아있는 동안 능력을 시전할 때 아군 악마들이 서로 침묵시키지 않도록 막습니다."
 
 		"dac_ability_razor_3star"													"레이저 3성 효과"
-		"dac_ability_razor_3star_Description"										"3성이 되면, 레이저는 적을 공격할 때마다 {s:stolen_dmg}의 공격력을 최대 {s:max_stacks}회까지 훔칩니다. 대상을 바꾸면 레이저의 한도 제한은 초기화되지만, 적은 계속 공격력을 뺏길 수 있습니다."
+		"dac_ability_razor_3star_Description"										"레이저가 정전기 연결 능력을 얻습니다. 레이저가 적을 공격할 때마다 {s:stolen_dmg}의 공격력을 최대 {s:max_stacks}회 훔칩니다. 대상을 바꾸면 레이저의 한도 제한은 초기화되지만, 적은 계속 공격력을 뺏길 수 있습니다."
 
 		"dac_ability_chaos_knight_3star"											"혼돈 기사 3성 효과"
-		"dac_ability_chaos_knight_3star_Description"								"3성이 되면, 혼돈 기사가 살아 있는 동안은 아군 기사가 항상 다른 아군 기사에 인접해 있는 것으로 간주합니다."
+		"dac_ability_chaos_knight_3star_Description"								"혼돈 기사가 살아 있는 동안은 아군 기사가 항상 다른 아군 기사에 인접해 있는 것으로 간주합니다."
 
 		"dac_ability_crystal_maiden_3star"											"수정의 여인 3성 효과"
-		"dac_ability_crystal_maiden_3star_Description"								"3성이 되면, 수정의 여인이 살아 있는 동안 모든 아군의 쿨다운이 {s:cooldown_reduction}% 감소합니다."
+		"dac_ability_crystal_maiden_3star_Description"								"수정의 여인이 살아 있는 동안 모든 아군의 쿨다운이 {s:cooldown_reduction}% 감소합니다."
 
 		"dac_ability_terrorblade_3star"												"테러블레이드 3성 효과"
-		"dac_ability_terrorblade_3star_Description"									"3성이 되면, 테러블레이드는 적 악마를 상대로 순수 피해를 +{s:damage_bonus_pct}% 더 줍니다."
+		"dac_ability_terrorblade_3star_Description"									"테러블레이드가 악마의 기운을 소환하여 적 악마를 대상으로 주는 순수 피해를 {s:damage_bonus_pct}% 증가시킵니다. 시전할 때마다 {s:duration}초 동안 보너스 효과가 지속합니다."
 
 		"dac_ability_tiny_3star"													"타이니 3성 효과"
-		"dac_ability_tiny_3star_Description"										"3성이 되면, 타이니는 적을 던질 때마다 몸집이 커지면서 {s:bonus_damage}의 공격력과 {s:bonus_armor}의 방어력을 얻는 한편 {s:aspd_loss}의 공격 속도를 잃습니다. 최대 {s:max_stacks}회까지 적용됩니다."
+		"dac_ability_tiny_3star_Description"										"타이니가 적을 던질 때마다 몸집이 커지면서 {s:bonus_damage}의 공격력과 {s:bonus_armor}의 방어력을 얻는 한편 {s:aspd_loss}의 공격 속도를 잃습니다. 최대 {s:max_stacks}회까지 적용됩니다."
 
 		"dac_ability_luna_3star"													"루나 3성 효과"
-		"dac_ability_luna_3star_Description"										"3성이 되면, 루나는 일식 능력을 얻습니다. 루나에게 위기가 닥쳤을 때, 셀레메네는 루나 주위 {s:radius}칸 반경에 빛을 봉쇄하고 달의 에너지 광선 {s:beams}줄기를 {s:beam_interval}초에 한 번씩 적에게 내리꽂아 광선당 {s:beam_damage}의 피해를 주고 {s:beam_stun}초 동안 기절시킵니다. 광선은 적 유닛 하나당 최대 {s:hit_count}번까지 타격합니다."
+		"dac_ability_luna_3star_Description"										"루나가 일식 능력을 얻습니다. 루나에게 위기가 닥쳤을 때, 셀레메네는 루나 주위 {s:radius}칸 반경에 빛을 봉쇄하고 달의 에너지 광선 {s:beams}줄기를 {s:beam_interval}초에 한 번씩 적에게 내리꽂아 광선당 {s:beam_damage}의 피해를 주고 {s:beam_stun}초 동안 기절시킵니다. 광선은 적 유닛 하나당 최대 {s:hit_count}번까지 타격합니다."
 
 		"dac_ability_dazzle_3star"													"대즐 3성 효과"
-		"dac_ability_dazzle_3star_Description"										"3성이 되면, 대즐은 최대 {s:never_die_range}칸 거리에 있는 모든 아군 유닛에게 얕은 무덤을 적용합니다. 축복받은 유닛은 마지막 타격을 받은 후 추가로 {s:never_die_duration}초 동안 생존합니다."
+		"dac_ability_dazzle_3star_Description"										"대즐이 최대 {s:never_die_range}칸 거리에 있는 모든 아군 유닛에게 얕은 무덤을 적용합니다. 축복받은 유닛은 마지막 타격을 받은 후 추가로 {s:never_die_duration}초 동안 생존합니다."
 
 		"dac_ability_broodmother_3star"												"거미여왕 3성 효과"
-		"dac_ability_broodmother_3star_Description"									"3성이 되면, 살아 있는 모든 거미여왕은 모든 아군 새끼거미를 무적으로 바꿉니다."
+		"dac_ability_broodmother_3star_Description"									"거미여왕이 살아 있는 동안은 모든 아군 새끼거미가 무적이 됩니다."
+
+		"dac_ability_pudge_3star"													"퍼지 3성 효과"
+		"dac_ability_pudge_3star_Description"										"퍼지가 살점 무더기가 되어 주위 {s:radius}칸 안에서 적이 죽을 때마다 {s:bonus_health_per_death}의 최대 체력과 {s:magical_resistance}%의 마법 저항력을 얻습니다."
+
+		"dac_ability_viper_3star"													"바이퍼 3성 효과"
+		"dac_ability_viper_3star_Description"										"바이퍼가 {s:num_attacks}번 공격할 때마다 바이퍼의 공습을 시행합니다. 적 유닛은 초당 {s:damage}의 피해를 받고 {s:bonus_movement_speed}%의 이동 속도와 {s:bonus_attack_speed}의 공격 속도를 잃습니다. 둔화 효과는 {s:debuff_duration}초에 걸쳐 점점 줄어듭니다."
+
+		"dac_ability_beastmaster_3star"												"야수지배자 3성 효과"
+		"dac_ability_beastmaster_3star_Description"									"야수지배자가 소환한 유닛에게서 {s:damage_reduction}% 적게 피해를 받고 해당 유닛이 가하는 마법 효과에 면역이 됩니다."
+
+		"dac_ability_juggernaut_3star"												"가면무사 3성 효과"
+		"dac_ability_juggernaut_3star_Description"									"가면무사가 검무 능력을 얻어 매 공격 시 {s:crit_chance}% 확률로 치명타를 가해 {s:crit_bonus}%의 피해를 줍니다."
+
+		"dac_ability_queenofpain_3star"												"고통의 여왕 3성 효과"
+		"dac_ability_queenofpain_3star_Description"									"고통의 여왕이 근처에 있는 적을 포로로 잡으며 {s:evasion}% 확률로 최대 {s:radius}칸 거리에 있는 적의 공격을 회피합니다."
+
+		"dac_ability_drow_ranger_3star"												"드로우 레인저 3성 효과"
+		"dac_ability_drow_ranger_3star_Description"									"드로우 레인저의 화살이 얼음 화살이 됩니다. 얼음 화살에 타격당한 유닛은 이동이 {s:move_speed_loss}%, 공격 속도가 {s:attack_speed_loss} 감소합니다. 효과는 {s:slow_duration}초 동안 남아 있습니다."
+
+		"dac_ability_abaddon_3star"													"아바돈 3성 효과"
+		"dac_ability_abaddon_3star_Description"										"아바돈이 능력을 얻어 공격하는 적에게 아베르누스의 저주를 걸 수 있습니다. 아바돈이 같은 적 유닛을 {s:min_stacks}번 연속으로 공격하면, 해당 유닛은 {s:silence_duration}초 동안 침묵에 빠지고 아바돈은 해당 유닛에 대한 공격 속도가 {s:attack_speed} 증가합니다. 추가로 공격에 성공할 때마다 다시 적용되지만, 공격 대상을 변경하면 효과가 0에서부터 다시 계산됩니다."
+
+		"dac_ability_bloodseeker_3star"												"혈귀 3성 효과"
+		"dac_ability_bloodseeker_3star_Description"									"암살자 동맹이 있다면 혈귀가 현재 활성화된 동맹 레벨의 치명타 보너스를 획득합니다."
+
+		"dac_ability_morphling_3star"												"모플링 3성 효과"
+		"dac_ability_morphling_3star_Description"									"모플링이 적 용사로 간주되어 활성화된 모든 적 동맹의 전투 보너스를 획득합니다."
+
+		"dac_ability_shadow_fiend_3star"											"그림자 마귀 3성 효과"
+		"dac_ability_Shadow_fiend_3star_Description"								"그림자 마귀가 암흑 군주의 위용 능력을 얻습니다. {s:radius}칸 안에 있는 적은 그림자 마귀의 무시무시한 위용으로 방어력이 {s:armor_reduction} 감소하는 고통을 겪습니다."
+
+		"dac_ability_magnataur_3star"												"마그누스 3성 효과"
+		"dac_ability_magnataur_3star_Description"									"마그누스가 극성 뒤집기 능력을 획득합니다. 시전하면, {s:radius}칸 안에 있는 적은 {s:damage}의 피해를 받고 {s:duration}초 동안 기절합니다."
+
+		"dac_ability_arc_warden_3star"												"번개 감시자 3성 효과"
+		"dac_ability_arc_warden_3star_Description"									"이중 폭풍으로 복제한 존재는 번개 감시자의 아이템도 복제합니다."
+
+		"dac_ability_bat_rider_3star"												"박쥐기수 3성 효과"
+		"dac_ability_bat_rider_3star_Description"									"끈적이는 네이팜으로 적에게 불을 붙입니다. 자세한 사항은 능력 설명에서 확인할 수 있습니다."
+
+		"dac_ability_nyx_assassin_3star"											"닉스 암살자 3성 효과"
+		"dac_ability_nyx_assassin_3star_Description"								"피의 복수를 더 자주 시전할 수 있습니다. 자세한 사항은 능력 설명에서 확인할 수 있습니다."
+
+		"dac_ability_shadow_demon_3star"											"그림자 악마 3성 효과"
+		"dac_ability_shadow_demon_3star_Description"								"그림자 악마가 악마의 정화에 걸린 대상에게 영혼 사냥꾼을 적용합니다. 자세한 사항은 능력 설명에서 확인할 수 있습니다."
+
+		"dac_ability_tusk_3star"													"얼음폭군 3성 효과"
+		"dac_ability_tusk_3star_Description"										"바다코끼리 펀치가 적을 더 오래 둔화하고 이동 속도는 물론 공격 속도를 잃게 합니다. 자세한 사항은 능력 설명에서 확인할 수 있습니다."
+
+		"dac_ability_venomancer_3star"												"맹독사 3성 효과"
+		"dac_ability_venomancer_3star_Description"									"역병 와드는 마법 피해에 면역입니다."
+
+		"dac_ability_weaver_3star"													"길쌈꾼 3성 효과"
+		"dac_ability_weaver_3star_Description"										"축지술 후 길쌈꾼이 공격할 때 마나를 태웁니다. 자세한 사항은 능력 설명에서 확인할 수 있습니다."
+
+		"dac_ability_bristleback_3star"												"가시멧돼지 3성 효과"
+		"dac_ability_bristleback_3star_Description"									"가시 흩뿌리기의 쿨다운이 많이 감소합니다. 자세한 사항은 능력 설명에서 확인할 수 있습니다."
+
+		"dac_ability_earth_spirit_3star"											"대지령 3성 효과"
+		"dac_ability_earth_spirit_3star_Description"								"대지의 자기장이 적을 기절시킵니다. 자세한 사항은 능력 설명에서 확인할 수 있습니다."
+
+		"dac_ability_natures_prophet_3star"											"자연의 예언자 3성 효과"
+		"dac_ability_natures_prophet_3star_Description"								"나무정령이 적 진영 대전판에 생성됩니다."
+
+		"dac_ability_ogre_magi_3star"												"오거 마법사 3성 효과"
+		"dac_ability_ogre_magi_3star_Description"									"오거 마법사가 일정 확률로 피의 욕망을 다중 시전합니다. 자세한 사항은 능력 설명에서 확인할 수 있습니다."
+
+		"dac_ability_slardar_3star"													"슬라다 3성 효과"
+		"dac_ability_slardar_3star_Description"										"슬라다가 부식의 연무를 시전한 후 강타를 날립니다. 자세한 사항은 능력 설명에서 확인할 수 있습니다."
+
+		"dac_ability_windrunner_3star"												"바람순찰자 3성 효과"
+		"dac_ability_windrunner_3star_Description"									"바람순찰자가 강화사격을 시전하는 동안 회피와 마법 면역 효과를 얻습니다. 자세한 사항은 능력 설명에서 확인할 수 있습니다."
+
+		"dac_ability_witch_doctor_3star"											"저주술사 3성 효과"
+		"dac_ability_witch_doctor_3star_Description"								"마비 약통에 맞은 적이 저주의 마법진에 걸립니다. 자세한 사항은 능력 설명에서 확인할 수 있습니다."
+
+		"dac_ability_ember_spirit_3star"											"불꽃령 3성 효과"
+		"dac_ability_ember_spirit_3star_Description"								"불타는 주먹의 효과 범위가 두 배로 늘어납니다. 자세한 사항은 능력 설명에서 확인할 수 있습니다."
+
+		"dac_ability_enigma_3star"													"에니그마 3성 효과"
+		"dac_ability_enigma_3star_Description"										"밤의 파동 효과 범위가 세 배로 늘어납니다. 자세한 사항은 능력 설명에서 확인할 수 있습니다."
+
+		"dac_ability_wisp_3star"													"이오 3성 효과"
+		"dac_ability_wisp_3star_Description"										"재배치로 되살린 영웅의 쿨다운이 초기화됩니다. 자세한 사항은 능력 설명에서 확인할 수 있습니다."
+
+		"dac_ability_lycan_3star"													"늑대인간 3성 효과"
+		"dac_ability_lycan_3star_Description"										"변신으로 소환하는 늑대가 증가합니다. 자세한 사항은 능력 설명에서 확인할 수 있습니다."
+
+		"dac_ability_omniknight_3star"												"전능기사 3성 효과"
+		"dac_ability_omniknight_3star_Description"									"정화의 효과 범위가 세 배로 늘어납니다. 자세한 사항은 능력 설명에서 확인할 수 있습니다."
+
+		"dac_ability_shadow_shaman_3star"											"그림자 주술사 3성 효과"
+		"dac_ability_shadow_shaman_3star_Description"								"그림자 주술사가 대규모 뱀 와드의 대상이 된 유닛에게 주술을 겁니다. 자세한 사항은 능력 설명에서 확인할 수 있습니다."
+
+		"dac_ability_treant_protector_3star"										"나무정령 수호자 3성 효과"
+		"dac_ability_treant_protector_3star_Description"							"씨 뿌리기로 치유받은 유닛이 생명의 갑옷 효과도 얻습니다. 자세한 사항은 능력 설명에서 확인할 수 있습니다."
+
+		"dac_ability_storm_spirit_3star"											"폭풍령 3성 효과"
+		"dac_ability_storm_spirit_3star_Description"								"폭풍령이 과부하 능력을 얻습니다. 주문 시전 시 전기가 충전되며 폭풍력의 다음 공격이 적중할 때 폭발을 일으킵니다. 이 폭발로 {s:damage}의 피해를 주고 {s:slow_duration}초 동안 대상의 공격 속도가 {s:attack_speed_loss} 감소합니다. 폭풍령의 삼각 공격도 공격으로 간주하여, 폭풍령이 공격 중 타격한 모든 유닛이 피해를 받고 둔화합니다."
+		
+		"dac_ability_legion_commander_3star"										"군단 사령관 3성 효과"
+		"dac_ability_legion_commander_3star_Description"							"결투가 진행되는 동안 범위 안의 모든 아군도 군단 사령관의 대상을 공격합니다."
+
+		"dac_ability_life_stealer_3star"										"흡혈마 3성 효과"
+		"dac_ability_life_stealer_3star_Description"							"흡혈마가 격노 능력을 얻습니다. 시전 시 흡혈마는 마법 면역 효과를 얻고 {s:bonus_movement_speed_pct}% 이동 속도와 {S:bonus_attack_speed} 공격 속도를 얻습니다. 효과는 {s:duration}초 동안 지속합니다."
+
+		"dac_ability_snapfire_3star"												"스냅파이어 3성 효과"
+		"dac_ability_snapfire_3star_Description"									"노련한 산탄포로 적의 방어력도 감소합니다. 자세한 사항은 능력 설명에서 확인할 수 있습니다."
 	}
 }
