@@ -705,9 +705,9 @@ $0 to $1,
 2+imx
 2j"@9)p
 2?"!k`
-2?k78;u
-2_k88
-2?k88:q
+2?k78
+2_k88+
+2?k88
 2k_EGCMsgInitiateTradeResponse_VAC_Banned_Initiator
 2k_ItemPurgatoryResponse_Finalize_Failed_Incomplete
 2ninx
@@ -1030,12 +1030,15 @@ _6`:@
 '6`6@
 _6	8@
 ?6	8@
+6A9	1
+6A9i6
 /6`B@
 6	c@9
 6ConVar
 6	d@9
 ?6`F@
 6GAME_PARTICLE_MANAGER_EVENT_SET_CONTROL_POINT_SNAPSHOT
+`6h^@
 `6h>@
  6h~@
  6h>@
@@ -1145,6 +1148,7 @@ _6i:@
 '6ib@
 ?6iB@
 /6iB@
+'6iB@
 (6iB@
 6i"B)
  6if@
@@ -1181,6 +1185,7 @@ _6inA9
 6iVA9
 (6iVA9
 '6iz@
+_6iZ@
 ?6iZ@
 /6iZ@
 @6iZ@
@@ -1296,7 +1301,6 @@ _6v:@
 86iJ@
 86in@
 	86iN@
-86iN@
 86iR@
 86u*@
 87H	@7
@@ -1800,6 +1804,7 @@ burst_randomize
 burst_scale
  but not used.
 ", but only 
+b@yhb
 B@yhB
 bytes
 bytes. 
@@ -2735,7 +2740,6 @@ cos( %s )
 cost_in_local_currency
 Could not create an instance of 
 Could not find type "
-Couldn't find an available content type named '%s' when loading a puzzle definition.
 Couldn't parse default value "
 count
 country
@@ -2899,9 +2903,8 @@ CUtlString
 CUtlStringToken
 CUtlSymbol
 CUtlSymbolLarge
-CUtlVector<const T *> GetDefinitionByName(const char *, CUtlVector<const T *>) [T = DACUnitDef]
-CUtlVector<const T *> ParseAvailableFromOperations(CKV3MemberRef, const CUtlVector<const T *> &(IDACGameManager::*)() const, TFilterFunc &&) [T = DAC_SynergyData_t, TFilterFunc = (lambda at dac/dac_gamedefinitions.cpp:595:106)]
-CUtlVector<const T *> ParseAvailableFromOperations(CKV3MemberRef, const CUtlVector<const T *> &(IDACGameManager::*)() const, TFilterFunc &&) [T = DACUnitDef, TFilterFunc = (lambda at dac/dac_gamedefinitions.cpp:598:98)]
+CUtlVector<const T *> ParseAvailableFromOperations(CKV3MemberRef, const CUtlVector<const T *> &(IDACGameManager::*)() const, TFilterFunc &&) [T = DAC_SynergyData_t, TFilterFunc = (lambda at dac/dac_gamedefinitions.cpp:598:106)]
+CUtlVector<const T *> ParseAvailableFromOperations(CKV3MemberRef, const CUtlVector<const T *> &(IDACGameManager::*)() const, TFilterFunc &&) [T = DACUnitDef, TFilterFunc = (lambda at dac/dac_gamedefinitions.cpp:601:98)]
 cvars
 CVrSkeletalInputSettings
 #CWorkshop_AddSpecialPayment_Request
@@ -3423,7 +3426,6 @@ EUnitKeyword_Brawler
 EUnitKeyword_Brawny
 EUnitKeyword_Brutal
 EUnitKeyword_Champion
-EUnitKeyword_Commander
 .EUnitKeyword"D
 EUnitKeyword_Demon
 EUnitKeyword_DemonHunter
@@ -3432,7 +3434,7 @@ EUnitKeyword_Druid
 EUnitKeyword_Dwarf
 EUnitKeyword_Element
 EUnitKeyword_Elf
-EUnitKeyword_Faerie
+EUnitKeyword_Fallen
 EUnitKeyword_Goblin
 EUnitKeyword_Guardian
 EUnitKeyword_Healer
@@ -3441,9 +3443,9 @@ EUnitKeyword_Hunter
 EUnitKeyword_Insect
 EUnitKeyword_Invalid
 EUnitKeyword_Inventor
-EUnitKeyword_Invoker
 EUnitKeyword_Knight
 EUnitKeyword_Mage
+EUnitKeyword_Magus
 EUnitKeyword_Mech
 EUnitKeyword_Meepo
 EUnitKeyword_MegaAssassin
@@ -3454,26 +3456,27 @@ EUnitKeyword_MegaScaled
 EUnitKeyword_MegaTroll
 EUnitKeyword_MegaWarlock
 EUnitKEyword_MegaWarrior
-EUnitKeyword_Monk
 EUnitKeyword_Naga
-EUnitKeyword_Necromancer
 EUnitKeyword_Ogre
 EUnitKeyword_Orc
+EUnitKeyword_Poisoner
 EUnitKeyword_Primordial
+EUnitKeyword_Rogue
 EUnitKeyword_%s
 EUnitKeyword_Satyr
 EUnitKeyword_Savage
 EUnitKeyword_Shaman
-EUnitKeyword_Sorceror
 EUnitKeyword_Spectral
 EUnitKeyword_SpiritBrother
 EUnitKeyword_Summoner
+EUnitKeyword_Swordsman
 EUnitKeyword_Troll
 EUnitKeyword_Undead
 EUnitKeyword_Vigilant
 EUnitKeyword_Void
 EUnitKeyword_Warlock
 EUnitKeyword_Warrior
+EUnitKeyword_Wild
 EUnitKeyword_Wisp
 EUnlockStyle
 EUnpackBundle
@@ -3619,6 +3622,7 @@ Failed to convert KV3 to string; error: %s
 Failed to determine polymorphic class name
 Failed to find valid Underlord ID for '%s'
 Failed to initialize game definition for '%s': KV3 Table Name '%s'
+Failed to load 'rewardTiers_classic' for Wave '%s'
 Failed to load 'rewardTiers' for Wave '%s'
 Failed to merge reload data for %s (%s)
 Failed to open file
@@ -3743,6 +3747,7 @@ fow_radius
 fprintf
 fputs
 frame_data
+free_reroll
 free_trial_expiration
 	frequency
 friction
@@ -4155,6 +4160,7 @@ hfA9H
 hidden
 hidden_only
 hideHealthBar
+hide_if_disabled
 HIGHDPI
 highlander
 highlight_keywords
@@ -4163,7 +4169,7 @@ hintWords
 	histogram
 HistogramBucket
 histogram_buckets
-hj58~m
+hj58~i
 	hold_time
 host_computationtime
 "host_computationtime_std_deviation
@@ -4432,6 +4438,7 @@ is_single_human_game
 " is specified along with field "
 " is specified multiple times.
 is_steamguard_enabled
+isStreetfight
 isStub
 is_subscribed
 is_summoned
@@ -4492,12 +4499,11 @@ iw8B/
 i>@yh
 IyixJylx+
 j2?)?
-j38s[
 j48	C
 j48t^@
 j4xH;@
 j58hf@9(
-j58+n
+j58Mw
 J!@9#
 j@9ij
 J]A9_
@@ -4542,9 +4548,11 @@ JYix*$
 ?k58D
 *?k78
 ?k78h
+k78Lw
 k78o_
+k78Qy
+_k88J
 k(8vV@
-k<8y]
 Ka@9+
 Ka@9k
 K	A9lC
@@ -4651,6 +4659,7 @@ k_EDACDungeonRoomType_Mystery
 k_EDACDungeonRoomType_None
 k_EDACDungeonRoomType_Shop
 $k_EDACDungeonRoomType_StandardCombat
+k_EDACGameMode_Classic
 k_EDACGameMode_Duos
 k_EDACGameMode_Invalid
 k_EDACGameMode_Normal
@@ -6161,7 +6170,6 @@ o6inA
 o6ir@
 O6iR@
 O6irA9
-O6iV@
 O6iz@
 O6iZ@
 o6jb@
@@ -6409,7 +6417,6 @@ player_type
 Please add a MovementSettings node to the model in ModelDoc
 Please add a Skeletal Input Settings node to the model in ModelDoc
 .  Please update your library.  If you compiled the program yourself, make sure that your headers are from the same version of Protocol Buffers as your link-time library.  (Version verification failed in "
-pNameMatchDef
 POINT
 point0
 point1
@@ -6437,6 +6444,7 @@ PredictionDiffManager001
 preferred_carryangles
 prepared_statements_executed
 prestige_level
+prevent_mana_items
 PreviewAttachmentModel
 PreviewBoneAttachedModel
 PreviewBoneMergedModel
@@ -6646,8 +6654,10 @@ revenue_percentage
 revenue_usd
 reward_flags
 	reward_id
+Reward Tier (Classic) Probabilities don't add up to 100 for Wave '%s'
 Reward Tier Probabilities don't add up to 100 for Wave '%s'
 rewardTiers
+rewardTiers_classic
 R	h(8	
 rhj)8H
 Rhjh8
@@ -6655,7 +6665,7 @@ right
 rights_flags
 Rigid; 
 rJMJJ
-R?k78
+R?k78W
 Rmij8
 rnd_down
 rnd_up
@@ -7540,6 +7550,7 @@ vb phys
 vcd_name
 VConComm001
 V_cosf
+v.cp>
 VDebugService_001
 Vector2D
 Vector4D
@@ -7702,6 +7713,7 @@ W6ijA9
 w6ir@
 w6irA
 w6iv@
+W6iV@
 W6ivA9
 W6iZ@
 w6	T@
@@ -7763,7 +7775,6 @@ writeback_queue
 Writing kdTree with %d triangles
 wrong submessage type
 \x%02x
-X6h^@
 X6h~B9
 x6hJ@
 x6hZ@
@@ -7796,7 +7807,6 @@ yielding_jobs
 	You must construct it with ORDERED_CONSTRUCT macro in the dependency resolution function.
 @y(Q*
 Y`x($
-y[(xB
 _Z13V_SplitStringPKcS0_R10CUtlVectorIPc10CUtlMemoryIS2_iEE
 _Z14V_stristr_fastPKcS0_
 _Z17LoggingSystem_Logi17LoggingSeverity_tRK14LeafCodeInfo_tPKcz
