@@ -121,7 +121,7 @@ $0 to $1,
 10IVProfData
 1 1 1
 1.1.3
-(119}D
+(119},
 11CBugService
 11CDemoPacket
 11CDemoPlayer
@@ -918,7 +918,6 @@ $0 to $1,
 27ITestScriptCommandProcessor
 2_!7k
 27NetMessageConnectionCrashed
-	2!87
 28CBoneConstraintPoseSpaceBone
 28CCLCMsg_SplitPlayerConnect_t
 28CEmptyEntityResourceManifest
@@ -933,7 +932,7 @@ $0 to $1,
 28INetworkStringTableContainer
 2_!8k
 2@9()
-	}29@2
+	}29@6
 29CBidirMsg_RebroadcastSource_t
 29CBoneConstraintPoseSpaceMorph
 29CCLCMsg_SplitPlayerDisconnect
@@ -948,8 +947,8 @@ $0 to $1,
 29ILoopModePrerequisiteRegistry
 29IToolGameSimulationDispatcher
 2,	@9L
-	}29R3
-	}29s5
+	}29R7
+	}29s9
 29ToolEvent_GetEntityInfoResult
 2	a@9Ia
 2	AA9
@@ -993,17 +992,18 @@ $0 to $1,
 2j"	9I
 2j"@9)p
 2?".k
-2?k78\
+2?k78]
 2_k88
-2?k88[
+2?k88\
 2kii8l}C
 2Kkj8k
 2L%@x+
 2 .ProtoFlattenedSerializerField_t"!
-2	q 9a(
+2	q 9
 2 - resize down
 2Way_0( %s )
 2Way_1( %s )
+	2!x6
 2x"@9
 2@y	!
 30000
@@ -1102,6 +1102,7 @@ $0 to $1,
 49CNetworkServerSpawnGroup_LoadSaveGamePrerequisite
 &4@9R
 4Ay+'
+4AyK'
 4CLog
 4CPVS
 4Csv_voiceenable
@@ -1209,9 +1210,9 @@ $4DTdt
  6`"A
 (6`&A
  6arBy
-6Ay+'
-6Ay9'
 6Ay+}E
+6AyK'
+6AyY'
 `6`BD
 6ConVar
 _6	D@
@@ -1533,9 +1534,9 @@ $@9	(
 9CRegistry
 9	D@8
 	9D9I
-	%$9E\
 9*E@8?
 @9E-@9U
+	%$9EX
 @9h*@
 "@9H	
 (@@9H
@@ -1574,9 +1575,9 @@ $@9	(
 9hZA9
 9hZB9
 ) @9i
+@@9i"
 @9i&@
 	={9i
-@@9I"
 @9I	@
 "@9i"@9
 9IBlackBox
@@ -1669,10 +1670,10 @@ $@9	(
 #@)`~A
 A-!(!
 A)`~@
-	a2926
+	a292:
 a2@yh2@y
-	a69o%
-	a89B"
+	a69o)
+	a89B&
 a8#%D
 _A8qh
 +a@9?
@@ -1704,8 +1705,8 @@ A9|J@
 +	A9K
 A9Kik
 +	A9lC
+	a%9(S
 ?A9tJ@
-	a%9(W
 A-'@A-
 AA9(	
 AA9(	@
@@ -2197,7 +2198,6 @@ battery_saver
 bB9hb
 BB9hB
 BB9hj:8
-bBA9a
 bB@yG
 BC6h compression not supported on this target (windows only).
 BC7 compression not supported on this target (windows only).
@@ -2456,7 +2456,7 @@ C-!($
 C-2-@
 C2S_CONNECTION_Message
 C2S_CONNECT_Message
-c3@y"
+c3@yB
 C-!8"
 (c@9+
 C9an@
@@ -2599,7 +2599,6 @@ CBidirMsg_RebroadcastSource
 CBidirMsg_RelayInfo
 CBidirMsg_RelayPacket
 CBitmapImagePanel
-cBL9b
 CBoneConstraintBase
 CBoneConstraintPoseSpaceBone
 CBoneConstraintPoseSpaceBone::Input_t
@@ -2753,7 +2752,6 @@ CFinalizeConnectionPrerequisite
 CFingerBone
 CFingerChain
 CFingerSource
-cFL9b
 CFootDefinition
 CFrameSnapshot CUtlMemoryPoolMT
 CGameClientConnectPrerequisite
@@ -2771,7 +2769,6 @@ CGameResourceService::BuildResourceManifest(start)
 CGameResourceService::DescribeContents:  manifest handle == GAME_RESOURCE_MANIFEST_HANDLE_INVALID
 CGameUIService
 CGameUIService::OnAppShutdown
-c^Gyb
 challenge_context
 challenge_number
 challenging
@@ -3930,11 +3927,12 @@ D24X8_SHADOW
 d2@yi
 d3@yi
 *-D),5E)_
-d6@yc
+d6@y#
 	D@8!
 D@8)%
 	D@8)m
-!d9	*
+!d9)*
+(!d9**
 "D@9%
 	%D9)
 D@9_ 
@@ -5607,7 +5605,7 @@ h*@9h/
 h*\9h
 *h"@9H
 h.@9H
-h"@9i
+h"@9I
 h:	9i>	9
 -H@9m
 H9)yx
@@ -5635,7 +5633,7 @@ h"B9h
 hB@9h
 h"B9H
 hB@9H
-hB@9I"
+hB@9i"
 hB@9t
 hb@9v
 hbA9(
@@ -5836,8 +5834,8 @@ hzT9`zA
 	*	i*
 	*I}`
 i2@9(
-	i29&4
-	i29G6
+	i29&8
+	i29G:
 i2@9j
 %i %3i.%3i.%3i.%3i : %.3f min
 %i %3i.%3i.%3i.%3i : permanent
@@ -5845,12 +5843,11 @@ i6@yh
 i78w"B
 i7xh>@
 _i(8+
-?i(8|
+?i(8}
 	*	i8
 	I*8)
-?i(85
-	i89W"
-?i(8a
+?i(86
+	i89W&
 i)8a^A
 *i(8B
 ?i(8h
@@ -5868,7 +5865,7 @@ i)8j&W
 i*8j&W
 i(8m&W
 ?i(8v
-?i(8W
+?i(8X
 i*8?y*xJ
 *i"@9
 	I%9:
@@ -6524,12 +6521,10 @@ j48(!
 j48	C
 j48t^@
 j4xH;@
-j58($
+j58H$
 j58hf@9(
 j58"l
-j688!
 j68u"@
-j68x&
 j7Ayh3Ay)	
 j)8hjj
 j(8`j
@@ -6670,13 +6665,10 @@ K1@yk
 K5@yk
 *?k78
 ?k78h
-k78h&
-k78h#
 ?k)8(
 k(8(*
 _k88?
 ?k88_
-?k88h&
 ?k88w
 k(8vV@
 K!@9+!
@@ -6909,6 +6901,7 @@ Kykx)
 K@y	Q
 Ky@yk
 KY@yk
+-@)L/
 L %02i/%02i/%04i - %02i:%02i:%02i: %s
 l	@9,
 "L9{2
@@ -6954,7 +6947,6 @@ LayoutFileChanged
 [lazy = true] can only be specified for submessage fields.
 lb@9l
 LC_ALL
-LCl9j
 L=cl_clock_correction
 %ld%c
 leading_comments
@@ -7202,9 +7194,9 @@ lseek
 %ls [wstring, len = %d]
 [L:%u:%u]
 :m@)<	@
-	m49f)
-	m89O 
-	m89Z!
+	m49f-
+	m89O$
+	m89Z%
 	M%93
 	m?9cb
 m%@9i)
@@ -8768,6 +8760,7 @@ oversubscribed distance tree
 oversubscribed dynamic bit lengths tree
 oversubscribed literal/length tree
 	O@x	
+O@y(	
 !OZW?O
 ($?)P
 p2p_listpeers
@@ -9816,8 +9809,8 @@ R	h(8
 R	h(8	
 r	hi8I
 rhj)8
-rhj)8(%
 rhj)8H
+rhj)8H%
 rhjh8
 Rhjh8
 Rhjh8(
@@ -9903,7 +9896,7 @@ r_stereo_eye_separation
 r_stereo_mode_anaglyph
 r_stereo_mode_crossed
 r_stereo_mode_parallel
-Rtj(8 
+Rtj(8!
 r_toggleviewportsize
 r_translucent
 rt+rld
@@ -9973,6 +9966,8 @@ S3: Duplicate client connection: UserID: %x SteamID %s
 S3,	S48
 S)5K*j
 S:9		@
+	!s9*1
+	!s9J1
 %s. Ack, Net Buffer overflowed.
 %s:  adding %d:'%s' (%d total) userdata %d
 -safe_mode
@@ -11675,7 +11670,7 @@ Tj2@9j
 Tj2B9)
 Tj6@y_! k
 TJ#]8
-tj(8C
+tj(8D
 tj)8t
 T`"J9
 Tj"@9J
@@ -11961,8 +11956,8 @@ T"zrx
 \U%08x
 u64( %lld = 0x%llX )
 )U7O{
-	u89d 
-	u89o!
+	u89d$
+	u89o%
 	U%9H
 u>Byh2By
 %u CPU%s
@@ -12981,14 +12976,14 @@ XYZ values out of representable range
 @.y	%
 @y`&@
 	%@y?
-	y29e2
-	y29w3
+	y29e6
+	y29w7
 	y4xl
 @.y)5
 @y_!5k
 Y80ijx
 #Y80ijx
-	y89'!
+	y89'%
 Y8Qikx
 #Y8Qikx
 #Y9 3

@@ -18,10 +18,9 @@ public class Activity extends android.app.Activity implements IActivity {
     }
 
     public static android.app.Activity GetInstallActivity() {
-        IActivity cast;
         for (int i = 0; i < sm_Activities.size(); i++) {
             android.app.Activity activity = (android.app.Activity) sm_Activities.get(i).get();
-            if (activity != null && (cast = IActivity.class.cast(activity)) != null && cast.IsLaunchActivity()) {
+            if (activity != null && IActivity.class.isInstance(activity) && IActivity.class.cast(activity).IsLaunchActivity()) {
                 return activity;
             }
         }
@@ -84,12 +83,12 @@ public class Activity extends android.app.Activity implements IActivity {
         }
 
         public void onActivityCreated(android.app.Activity activity, Bundle bundle) {
-            if (IActivity.class.isInstance(activity)) {
-                String name = activity.getClass().getName();
-                ComponentName callingActivity = activity.getCallingActivity();
-                String flattenToString = callingActivity != null ? callingActivity.flattenToString() : "<none>";
-                String intent = activity.getIntent().toString();
-                Log.i(Activity.k_sSpewPackageName, "onActivityCreated() class:" + name + ", caller:" + flattenToString + ", intent:" + intent);
+            String name = activity.getClass().getName();
+            ComponentName callingActivity = activity.getCallingActivity();
+            String flattenToString = callingActivity != null ? callingActivity.flattenToString() : "<none>";
+            String intent = activity.getIntent().toString();
+            Log.i(Activity.k_sSpewPackageName, "onActivityCreated() class:" + name + ", caller:" + flattenToString + ", intent:" + intent);
+            if (IActivity.class.isInstance(activity) || !name.startsWith(BuildConfig.APPLICATION_ID)) {
                 Activity.sm_Activities.add(new WeakReference(activity));
                 return;
             }
@@ -122,7 +121,7 @@ public class Activity extends android.app.Activity implements IActivity {
             String flattenToString = callingActivity != null ? callingActivity.flattenToString() : "<none>";
             String intent = activity.getIntent().toString();
             Log.i(Activity.k_sSpewPackageName, "onActivityResumed() class:" + name + ", caller:" + flattenToString + ", intent:" + intent);
-            if (IActivity.class.cast(activity).IsLaunchActivity()) {
+            if (IActivity.class.isInstance(activity) && IActivity.class.cast(activity).IsLaunchActivity()) {
                 Application.GetInstance().ResumeInstall();
             }
         }
@@ -133,7 +132,7 @@ public class Activity extends android.app.Activity implements IActivity {
             String flattenToString = callingActivity != null ? callingActivity.flattenToString() : "<none>";
             String intent = activity.getIntent().toString();
             Log.i(Activity.k_sSpewPackageName, "onActivityStopped() class:" + name + ", caller:" + flattenToString + ", intent:" + intent);
-            if (IActivity.class.cast(activity).IsLaunchActivity()) {
+            if (IActivity.class.isInstance(activity) && IActivity.class.cast(activity).IsLaunchActivity()) {
                 Application.GetInstance().PauseInstall();
             }
         }
