@@ -44,7 +44,8 @@ public class application extends Application {
     protected ImageView m_Logo = null;
     Random m_Random = new Random();
     protected Point m_ScreenSize = new Point(1, 1);
-    private boolean m_bUseVulkan = false;
+    /* access modifiers changed from: private */
+    public boolean m_bUseVulkan = false;
     private InAppPurchases m_inAppPurchases = null;
     LanguageCountryMap[] m_languageMap = {new LanguageCountryMap("en", "US", "english"), new LanguageCountryMap("de", "DE", "german"), new LanguageCountryMap("fr", "FR", "french"), new LanguageCountryMap("it", "IT", "italian"), new LanguageCountryMap("ko", "KR", "koreana"), new LanguageCountryMap("es", "ES", "spanish"), new LanguageCountryMap("zh", "CN", "schinese"), new LanguageCountryMap("zh", "TW", "tchinese"), new LanguageCountryMap("zh", "HK", "tchinese"), new LanguageCountryMap("ru", "RU", "russian"), new LanguageCountryMap("th", "TH", "thai"), new LanguageCountryMap("ja", "JP", "japanese"), new LanguageCountryMap("pt", "PT", "portuguese"), new LanguageCountryMap("pl", "PL", "polish"), new LanguageCountryMap("da", "DK", "danish"), new LanguageCountryMap("nl", "NL", "dutch"), new LanguageCountryMap("fi", "FI", "finnish"), new LanguageCountryMap("no", "NO", "norwegian"), new LanguageCountryMap("sv", "SE", "swedish"), new LanguageCountryMap("hu", "HU", "hungarian"), new LanguageCountryMap("cs", "CZ", "czech"), new LanguageCountryMap("ro", "RO", "romanian"), new LanguageCountryMap("tr", "TR", "turkish"), new LanguageCountryMap("pt", "BR", "brazilian"), new LanguageCountryMap("bg", "BG", "bulgarian"), new LanguageCountryMap("el", "GR", "greek"), new LanguageCountryMap("uk", "UA", "ukrainian"), new LanguageCountryMap("es", "MX", "latam"), new LanguageCountryMap("vi", "VN", "vietnamese")};
     protected int m_nLoadingBarFillWidth = 1;
@@ -412,6 +413,10 @@ public class application extends Application {
                         }
                     });
                 }
+            }
+
+            public boolean ShouldUseVulkanRendering(boolean z) {
+                return application.this.m_bUseVulkan;
             }
 
             public boolean ShouldDownloadManifestUpdate(final boolean z, final long j) {
@@ -866,6 +871,10 @@ public class application extends Application {
     public void ChooseRenderingAPI(Application.InstallTask installTask) {
         boolean z;
         this.m_bUseVulkan = false;
+        if (Build.VERSION.SDK_INT >= 30 && (Build.MODEL.toLowerCase().contains("pixel") || Build.MANUFACTURER.toLowerCase().contains("google"))) {
+            Log.i(k_sSpewPackageName, "Graphics choice forced to Vulkan for Android 11 Google Pixel device");
+            this.m_bUseVulkan = true;
+        }
         if (Build.VERSION.SDK_INT >= 24) {
             boolean[] GetBoolean = Resources.GetBoolean("PatchSystemEnabled");
             if (!(GetBoolean != null && GetBoolean[0])) {

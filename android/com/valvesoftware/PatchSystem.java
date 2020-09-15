@@ -74,6 +74,8 @@ public class PatchSystem {
         public abstract boolean ShouldDownloadManifestUpdate(boolean z, long j);
 
         public abstract boolean ShouldUpdatedAPK(boolean z, long j);
+
+        public abstract boolean ShouldUseVulkanRendering(boolean z);
     }
 
     private class PendingDownload {
@@ -399,16 +401,16 @@ public class PatchSystem {
     /* JADX WARNING: type inference failed for: r16v15 */
     /* JADX WARNING: type inference failed for: r16v16 */
     /* JADX WARNING: type inference failed for: r16v17 */
-    /* JADX WARNING: Code restructure failed: missing block: B:31:0x0098, code lost:
-        if (r15.equals(r7) != false) goto L_0x009a;
+    /* JADX WARNING: Code restructure failed: missing block: B:31:0x00a4, code lost:
+        if (r15.equals(r7) != false) goto L_0x00a6;
      */
     /* JADX WARNING: Multi-variable type inference failed */
-    /* JADX WARNING: Removed duplicated region for block: B:111:0x02cd A[Catch:{ Exception -> 0x0377 }] */
-    /* JADX WARNING: Removed duplicated region for block: B:112:0x0312 A[Catch:{ Exception -> 0x0377 }] */
-    /* JADX WARNING: Removed duplicated region for block: B:115:0x0330  */
-    /* JADX WARNING: Removed duplicated region for block: B:116:0x0337  */
-    /* JADX WARNING: Removed duplicated region for block: B:88:0x01bd A[Catch:{ Exception -> 0x0377 }] */
-    /* JADX WARNING: Removed duplicated region for block: B:89:0x01be A[Catch:{ Exception -> 0x0377 }] */
+    /* JADX WARNING: Removed duplicated region for block: B:111:0x02d9 A[Catch:{ Exception -> 0x0383 }] */
+    /* JADX WARNING: Removed duplicated region for block: B:112:0x031e A[Catch:{ Exception -> 0x0383 }] */
+    /* JADX WARNING: Removed duplicated region for block: B:115:0x033c  */
+    /* JADX WARNING: Removed duplicated region for block: B:116:0x0343  */
+    /* JADX WARNING: Removed duplicated region for block: B:88:0x01c9 A[Catch:{ Exception -> 0x0383 }] */
+    /* JADX WARNING: Removed duplicated region for block: B:89:0x01ca A[Catch:{ Exception -> 0x0383 }] */
     /* JADX WARNING: Unknown variable types count: 1 */
     /* Code decompiled incorrectly, please refer to instructions dump. */
     private boolean CheckForAssetUpdates(com.valvesoftware.PatchSystem.PatchSystemCallbacks r29) {
@@ -428,19 +430,23 @@ public class PatchSystem {
             org.json.JSONObject r0 = r1.m_JSONManifest
             android.app.Application r12 = com.valvesoftware.JNI_Environment.m_application
             android.content.Context r12 = r12.getApplicationContext()
-            boolean r12 = com.valvesoftware.VulkanWhitelist.DeviceIsVulkanCompatible(r0, r12)
-            java.lang.StringBuilder r0 = new java.lang.StringBuilder
-            r0.<init>()
-            java.lang.String r13 = "Rendering API chosen from VulkanWhitelist: "
-            r0.append(r13)
-            if (r12 == 0) goto L_0x0031
-            java.lang.String r13 = "Vulkan"
-            goto L_0x0033
-        L_0x0031:
-            java.lang.String r13 = "OpenGL ES"
-        L_0x0033:
-            r0.append(r13)
-            java.lang.String r0 = r0.toString()
+            boolean r0 = com.valvesoftware.VulkanWhitelist.DeviceIsVulkanCompatible(r0, r12)
+            boolean r12 = r2.ShouldUseVulkanRendering(r0)
+            java.lang.StringBuilder r13 = new java.lang.StringBuilder
+            r13.<init>()
+            java.lang.String r14 = "Rendering API chosen: "
+            r13.append(r14)
+            if (r12 == 0) goto L_0x0035
+            java.lang.String r14 = "Vulkan"
+            goto L_0x0037
+        L_0x0035:
+            java.lang.String r14 = "OpenGL ES"
+        L_0x0037:
+            r13.append(r14)
+            java.lang.String r14 = ", whitelisted="
+            r13.append(r14)
+            r13.append(r0)
+            java.lang.String r0 = r13.toString()
             java.lang.String r13 = "com.valvesoftware.PatchSystem"
             android.util.Log.i(r13, r0)
             r14 = 0
@@ -448,94 +454,94 @@ public class PatchSystem {
             java.util.ArrayList r0 = new java.util.ArrayList
             r0.<init>()
             r1.m_vecPendingDownloads = r0
-            org.json.JSONObject r0 = r1.m_JSONManifest     // Catch:{ Exception -> 0x037b }
-            java.lang.String r15 = r0.getString(r11)     // Catch:{ Exception -> 0x037b }
-            org.json.JSONObject r0 = r1.m_JSONManifest     // Catch:{ Exception -> 0x037b }
+            org.json.JSONObject r0 = r1.m_JSONManifest     // Catch:{ Exception -> 0x0387 }
+            java.lang.String r15 = r0.getString(r11)     // Catch:{ Exception -> 0x0387 }
+            org.json.JSONObject r0 = r1.m_JSONManifest     // Catch:{ Exception -> 0x0387 }
             java.lang.String r14 = "assets"
-            org.json.JSONObject r14 = r0.getJSONObject(r14)     // Catch:{ Exception -> 0x037b }
+            org.json.JSONObject r14 = r0.getJSONObject(r14)     // Catch:{ Exception -> 0x0387 }
             r16 = r3
             r2 = 0
-            r1.m_nWholeManifestCRC = r2     // Catch:{ Exception -> 0x0377 }
+            r1.m_nWholeManifestCRC = r2     // Catch:{ Exception -> 0x0383 }
             r17 = 1
-            java.util.Iterator r0 = r14.keys()     // Catch:{ Throwable -> 0x017e }
+            java.util.Iterator r0 = r14.keys()     // Catch:{ Throwable -> 0x018a }
             java.lang.String r2 = ""
             r3 = r2
             r18 = 0
-        L_0x0068:
-            boolean r19 = r0.hasNext()     // Catch:{ Throwable -> 0x016e }
-            if (r19 == 0) goto L_0x0157
-            java.lang.Object r19 = r0.next()     // Catch:{ Throwable -> 0x016e }
+        L_0x0074:
+            boolean r19 = r0.hasNext()     // Catch:{ Throwable -> 0x017a }
+            if (r19 == 0) goto L_0x0163
+            java.lang.Object r19 = r0.next()     // Catch:{ Throwable -> 0x017a }
             r20 = r0
             r0 = r19
-            java.lang.String r0 = (java.lang.String) r0     // Catch:{ Throwable -> 0x016e }
+            java.lang.String r0 = (java.lang.String) r0     // Catch:{ Throwable -> 0x017a }
             r19 = r11
-            org.json.JSONObject r11 = r14.getJSONObject(r0)     // Catch:{ Throwable -> 0x014f }
+            org.json.JSONObject r11 = r14.getJSONObject(r0)     // Catch:{ Throwable -> 0x015b }
             r21 = r15
-            java.lang.String r15 = r11.optString(r10, r9)     // Catch:{ Throwable -> 0x0147 }
-            boolean r22 = r15.equals(r8)     // Catch:{ Throwable -> 0x0147 }
-            if (r22 == 0) goto L_0x008b
-            goto L_0x009a
-        L_0x008b:
-            if (r12 == 0) goto L_0x0094
-            boolean r15 = r15.equals(r6)     // Catch:{ Throwable -> 0x0147 }
-            if (r15 == 0) goto L_0x00a1
-            goto L_0x009a
-        L_0x0094:
-            boolean r15 = r15.equals(r7)     // Catch:{ Throwable -> 0x0147 }
-            if (r15 == 0) goto L_0x00a1
-        L_0x009a:
+            java.lang.String r15 = r11.optString(r10, r9)     // Catch:{ Throwable -> 0x0153 }
+            boolean r22 = r15.equals(r8)     // Catch:{ Throwable -> 0x0153 }
+            if (r22 == 0) goto L_0x0097
+            goto L_0x00a6
+        L_0x0097:
+            if (r12 == 0) goto L_0x00a0
+            boolean r15 = r15.equals(r6)     // Catch:{ Throwable -> 0x0153 }
+            if (r15 == 0) goto L_0x00ad
+            goto L_0x00a6
+        L_0x00a0:
+            boolean r15 = r15.equals(r7)     // Catch:{ Throwable -> 0x0153 }
+            if (r15 == 0) goto L_0x00ad
+        L_0x00a6:
             r11 = r19
             r0 = r20
             r15 = r21
-            goto L_0x0068
-        L_0x00a1:
+            goto L_0x0074
+        L_0x00ad:
             r15 = r6
             r22 = r7
-            long r6 = r11.getLong(r4)     // Catch:{ Throwable -> 0x0141 }
+            long r6 = r11.getLong(r4)     // Catch:{ Throwable -> 0x014d }
             r23 = r15
-            java.lang.StringBuilder r15 = new java.lang.StringBuilder     // Catch:{ Throwable -> 0x013f }
-            r15.<init>()     // Catch:{ Throwable -> 0x013f }
-            r15.append(r2)     // Catch:{ Throwable -> 0x013f }
-            r15.append(r6)     // Catch:{ Throwable -> 0x013f }
-            java.lang.String r15 = r15.toString()     // Catch:{ Throwable -> 0x013f }
+            java.lang.StringBuilder r15 = new java.lang.StringBuilder     // Catch:{ Throwable -> 0x014b }
+            r15.<init>()     // Catch:{ Throwable -> 0x014b }
+            r15.append(r2)     // Catch:{ Throwable -> 0x014b }
+            r15.append(r6)     // Catch:{ Throwable -> 0x014b }
+            java.lang.String r15 = r15.toString()     // Catch:{ Throwable -> 0x014b }
             r24 = r2
             r2 = r16
-            java.lang.String r11 = r11.getString(r2)     // Catch:{ Throwable -> 0x013b }
+            java.lang.String r11 = r11.getString(r2)     // Catch:{ Throwable -> 0x0147 }
             r16 = r12
-            java.io.File r12 = new java.io.File     // Catch:{ Throwable -> 0x0136 }
+            java.io.File r12 = new java.io.File     // Catch:{ Throwable -> 0x0142 }
             r25 = r8
-            java.io.File r8 = r1.m_manifestPath     // Catch:{ Throwable -> 0x016c }
-            r12.<init>(r8, r0)     // Catch:{ Throwable -> 0x016c }
-            boolean r8 = r12.exists()     // Catch:{ Throwable -> 0x016c }
-            if (r8 == 0) goto L_0x00da
-            long r26 = r12.length()     // Catch:{ Throwable -> 0x016c }
+            java.io.File r8 = r1.m_manifestPath     // Catch:{ Throwable -> 0x0178 }
+            r12.<init>(r8, r0)     // Catch:{ Throwable -> 0x0178 }
+            boolean r8 = r12.exists()     // Catch:{ Throwable -> 0x0178 }
+            if (r8 == 0) goto L_0x00e6
+            long r26 = r12.length()     // Catch:{ Throwable -> 0x0178 }
             int r8 = (r26 > r6 ? 1 : (r26 == r6 ? 0 : -1))
-            if (r8 == 0) goto L_0x00f0
-        L_0x00da:
-            java.lang.StringBuilder r6 = new java.lang.StringBuilder     // Catch:{ Throwable -> 0x0131 }
-            r6.<init>()     // Catch:{ Throwable -> 0x0131 }
+            if (r8 == 0) goto L_0x00fc
+        L_0x00e6:
+            java.lang.StringBuilder r6 = new java.lang.StringBuilder     // Catch:{ Throwable -> 0x013d }
+            r6.<init>()     // Catch:{ Throwable -> 0x013d }
             java.lang.String r7 = "Manifest file missing or resized: "
-            r6.append(r7)     // Catch:{ Throwable -> 0x0131 }
-            r6.append(r12)     // Catch:{ Throwable -> 0x0131 }
-            java.lang.String r6 = r6.toString()     // Catch:{ Throwable -> 0x0131 }
-            android.util.Log.e(r13, r6)     // Catch:{ Throwable -> 0x0131 }
+            r6.append(r7)     // Catch:{ Throwable -> 0x013d }
+            r6.append(r12)     // Catch:{ Throwable -> 0x013d }
+            java.lang.String r6 = r6.toString()     // Catch:{ Throwable -> 0x013d }
+            android.util.Log.e(r13, r6)     // Catch:{ Throwable -> 0x013d }
             r18 = 1
-        L_0x00f0:
-            java.lang.StringBuilder r6 = new java.lang.StringBuilder     // Catch:{ Throwable -> 0x016c }
-            r6.<init>()     // Catch:{ Throwable -> 0x016c }
-            r6.append(r3)     // Catch:{ Throwable -> 0x016c }
-            r6.append(r0)     // Catch:{ Throwable -> 0x016c }
-            java.lang.String r0 = r6.toString()     // Catch:{ Throwable -> 0x016c }
-            java.lang.StringBuilder r3 = new java.lang.StringBuilder     // Catch:{ Throwable -> 0x016c }
-            r3.<init>()     // Catch:{ Throwable -> 0x016c }
-            r3.append(r0)     // Catch:{ Throwable -> 0x016c }
-            r3.append(r15)     // Catch:{ Throwable -> 0x016c }
-            java.lang.String r0 = r3.toString()     // Catch:{ Throwable -> 0x016c }
-            java.lang.StringBuilder r3 = new java.lang.StringBuilder     // Catch:{ Throwable -> 0x016c }
-            r3.<init>()     // Catch:{ Throwable -> 0x016c }
-            r3.append(r0)     // Catch:{ Throwable -> 0x016c }
-            r3.append(r11)     // Catch:{ Throwable -> 0x016c }
-            java.lang.String r3 = r3.toString()     // Catch:{ Throwable -> 0x016c }
+        L_0x00fc:
+            java.lang.StringBuilder r6 = new java.lang.StringBuilder     // Catch:{ Throwable -> 0x0178 }
+            r6.<init>()     // Catch:{ Throwable -> 0x0178 }
+            r6.append(r3)     // Catch:{ Throwable -> 0x0178 }
+            r6.append(r0)     // Catch:{ Throwable -> 0x0178 }
+            java.lang.String r0 = r6.toString()     // Catch:{ Throwable -> 0x0178 }
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder     // Catch:{ Throwable -> 0x0178 }
+            r3.<init>()     // Catch:{ Throwable -> 0x0178 }
+            r3.append(r0)     // Catch:{ Throwable -> 0x0178 }
+            r3.append(r15)     // Catch:{ Throwable -> 0x0178 }
+            java.lang.String r0 = r3.toString()     // Catch:{ Throwable -> 0x0178 }
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder     // Catch:{ Throwable -> 0x0178 }
+            r3.<init>()     // Catch:{ Throwable -> 0x0178 }
+            r3.append(r0)     // Catch:{ Throwable -> 0x0178 }
+            r3.append(r11)     // Catch:{ Throwable -> 0x0178 }
+            java.lang.String r3 = r3.toString()     // Catch:{ Throwable -> 0x0178 }
             r12 = r16
             r11 = r19
             r0 = r20
@@ -545,41 +551,41 @@ public class PatchSystem {
             r8 = r25
             r16 = r2
             r2 = r24
-            goto L_0x0068
-        L_0x0131:
+            goto L_0x0074
+        L_0x013d:
             r0 = move-exception
             r18 = 1
-            goto L_0x018f
-        L_0x0136:
+            goto L_0x019b
+        L_0x0142:
             r0 = move-exception
             r25 = r8
-            goto L_0x018f
-        L_0x013b:
+            goto L_0x019b
+        L_0x0147:
             r0 = move-exception
             r25 = r8
-            goto L_0x017b
-        L_0x013f:
+            goto L_0x0187
+        L_0x014b:
             r0 = move-exception
-            goto L_0x014c
-        L_0x0141:
+            goto L_0x0158
+        L_0x014d:
             r0 = move-exception
             r25 = r8
             r23 = r15
-            goto L_0x0179
-        L_0x0147:
+            goto L_0x0185
+        L_0x0153:
             r0 = move-exception
             r23 = r6
             r22 = r7
-        L_0x014c:
+        L_0x0158:
             r25 = r8
-            goto L_0x0179
-        L_0x014f:
+            goto L_0x0185
+        L_0x015b:
             r0 = move-exception
             r23 = r6
             r22 = r7
             r25 = r8
-            goto L_0x0177
-        L_0x0157:
+            goto L_0x0183
+        L_0x0163:
             r23 = r6
             r22 = r7
             r25 = r8
@@ -587,26 +593,26 @@ public class PatchSystem {
             r21 = r15
             r2 = r16
             r16 = r12
-            long r6 = CRC32String(r3)     // Catch:{ Throwable -> 0x016c }
-            r1.m_nWholeManifestCRC = r6     // Catch:{ Throwable -> 0x016c }
-            goto L_0x01a7
-        L_0x016c:
+            long r6 = CRC32String(r3)     // Catch:{ Throwable -> 0x0178 }
+            r1.m_nWholeManifestCRC = r6     // Catch:{ Throwable -> 0x0178 }
+            goto L_0x01b3
+        L_0x0178:
             r0 = move-exception
-            goto L_0x018f
-        L_0x016e:
+            goto L_0x019b
+        L_0x017a:
             r0 = move-exception
             r23 = r6
             r22 = r7
             r25 = r8
             r19 = r11
-        L_0x0177:
+        L_0x0183:
             r21 = r15
-        L_0x0179:
+        L_0x0185:
             r2 = r16
-        L_0x017b:
+        L_0x0187:
             r16 = r12
-            goto L_0x018f
-        L_0x017e:
+            goto L_0x019b
+        L_0x018a:
             r0 = move-exception
             r23 = r6
             r22 = r7
@@ -616,184 +622,184 @@ public class PatchSystem {
             r2 = r16
             r16 = r12
             r18 = 0
-        L_0x018f:
-            java.lang.StringBuilder r3 = new java.lang.StringBuilder     // Catch:{ Exception -> 0x0377 }
-            r3.<init>()     // Catch:{ Exception -> 0x0377 }
+        L_0x019b:
+            java.lang.StringBuilder r3 = new java.lang.StringBuilder     // Catch:{ Exception -> 0x0383 }
+            r3.<init>()     // Catch:{ Exception -> 0x0383 }
             java.lang.String r6 = "Manifest CRC exception: "
-            r3.append(r6)     // Catch:{ Exception -> 0x0377 }
-            java.lang.String r0 = r0.toString()     // Catch:{ Exception -> 0x0377 }
-            r3.append(r0)     // Catch:{ Exception -> 0x0377 }
-            java.lang.String r0 = r3.toString()     // Catch:{ Exception -> 0x0377 }
-            android.util.Log.e(r13, r0)     // Catch:{ Exception -> 0x0377 }
-        L_0x01a7:
-            if (r18 != 0) goto L_0x01c5
-            long r6 = r1.m_nWholeManifestCRC     // Catch:{ Exception -> 0x0377 }
+            r3.append(r6)     // Catch:{ Exception -> 0x0383 }
+            java.lang.String r0 = r0.toString()     // Catch:{ Exception -> 0x0383 }
+            r3.append(r0)     // Catch:{ Exception -> 0x0383 }
+            java.lang.String r0 = r3.toString()     // Catch:{ Exception -> 0x0383 }
+            android.util.Log.e(r13, r0)     // Catch:{ Exception -> 0x0383 }
+        L_0x01b3:
+            if (r18 != 0) goto L_0x01d1
+            long r6 = r1.m_nWholeManifestCRC     // Catch:{ Exception -> 0x0383 }
             r11 = 0
             int r0 = (r6 > r11 ? 1 : (r6 == r11 ? 0 : -1))
-            if (r0 == 0) goto L_0x01c5
-            long r6 = r1.m_nWholeManifestCRC     // Catch:{ Exception -> 0x0377 }
-            com.valvesoftware.PatchSystem$CRegistry r0 = r1.m_Registry     // Catch:{ Exception -> 0x0377 }
-            long r11 = r0.GetManifestCRC()     // Catch:{ Exception -> 0x0377 }
+            if (r0 == 0) goto L_0x01d1
+            long r6 = r1.m_nWholeManifestCRC     // Catch:{ Exception -> 0x0383 }
+            com.valvesoftware.PatchSystem$CRegistry r0 = r1.m_Registry     // Catch:{ Exception -> 0x0383 }
+            long r11 = r0.GetManifestCRC()     // Catch:{ Exception -> 0x0383 }
             int r0 = (r6 > r11 ? 1 : (r6 == r11 ? 0 : -1))
-            if (r0 == 0) goto L_0x01be
-            goto L_0x01c5
-        L_0x01be:
+            if (r0 == 0) goto L_0x01ca
+            goto L_0x01d1
+        L_0x01ca:
             java.lang.String r0 = "Manifest CRC is unchanged"
-            android.util.Log.i(r13, r0)     // Catch:{ Exception -> 0x0377 }
-            goto L_0x0328
-        L_0x01c5:
-            java.lang.StringBuilder r0 = new java.lang.StringBuilder     // Catch:{ Exception -> 0x0377 }
-            r0.<init>()     // Catch:{ Exception -> 0x0377 }
+            android.util.Log.i(r13, r0)     // Catch:{ Exception -> 0x0383 }
+            goto L_0x0334
+        L_0x01d1:
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder     // Catch:{ Exception -> 0x0383 }
+            r0.<init>()     // Catch:{ Exception -> 0x0383 }
             java.lang.String r3 = "Whole manifest CRC changed. Manifest CRC:"
-            r0.append(r3)     // Catch:{ Exception -> 0x0377 }
-            long r6 = r1.m_nWholeManifestCRC     // Catch:{ Exception -> 0x0377 }
-            java.lang.String r3 = java.lang.Long.toHexString(r6)     // Catch:{ Exception -> 0x0377 }
-            r0.append(r3)     // Catch:{ Exception -> 0x0377 }
-            r0.append(r5)     // Catch:{ Exception -> 0x0377 }
-            com.valvesoftware.PatchSystem$CRegistry r3 = r1.m_Registry     // Catch:{ Exception -> 0x0377 }
-            long r6 = r3.GetManifestCRC()     // Catch:{ Exception -> 0x0377 }
-            java.lang.String r3 = java.lang.Long.toHexString(r6)     // Catch:{ Exception -> 0x0377 }
-            r0.append(r3)     // Catch:{ Exception -> 0x0377 }
-            java.lang.String r0 = r0.toString()     // Catch:{ Exception -> 0x0377 }
-            android.util.Log.i(r13, r0)     // Catch:{ Exception -> 0x0377 }
-            java.util.Iterator r0 = r14.keys()     // Catch:{ Exception -> 0x0377 }
-        L_0x01f3:
-            boolean r3 = r0.hasNext()     // Catch:{ Exception -> 0x0377 }
-            if (r3 == 0) goto L_0x0328
-            java.lang.Object r3 = r0.next()     // Catch:{ Exception -> 0x0377 }
-            java.lang.String r3 = (java.lang.String) r3     // Catch:{ Exception -> 0x0377 }
-            org.json.JSONObject r6 = r14.getJSONObject(r3)     // Catch:{ Exception -> 0x0377 }
-            int r7 = r6.getInt(r4)     // Catch:{ Exception -> 0x0377 }
-            java.lang.String r8 = r6.getString(r2)     // Catch:{ Exception -> 0x0377 }
-            java.io.File r11 = new java.io.File     // Catch:{ Exception -> 0x0377 }
-            java.io.File r12 = r1.m_manifestPath     // Catch:{ Exception -> 0x0377 }
-            r11.<init>(r12, r3)     // Catch:{ Exception -> 0x0377 }
+            r0.append(r3)     // Catch:{ Exception -> 0x0383 }
+            long r6 = r1.m_nWholeManifestCRC     // Catch:{ Exception -> 0x0383 }
+            java.lang.String r3 = java.lang.Long.toHexString(r6)     // Catch:{ Exception -> 0x0383 }
+            r0.append(r3)     // Catch:{ Exception -> 0x0383 }
+            r0.append(r5)     // Catch:{ Exception -> 0x0383 }
+            com.valvesoftware.PatchSystem$CRegistry r3 = r1.m_Registry     // Catch:{ Exception -> 0x0383 }
+            long r6 = r3.GetManifestCRC()     // Catch:{ Exception -> 0x0383 }
+            java.lang.String r3 = java.lang.Long.toHexString(r6)     // Catch:{ Exception -> 0x0383 }
+            r0.append(r3)     // Catch:{ Exception -> 0x0383 }
+            java.lang.String r0 = r0.toString()     // Catch:{ Exception -> 0x0383 }
+            android.util.Log.i(r13, r0)     // Catch:{ Exception -> 0x0383 }
+            java.util.Iterator r0 = r14.keys()     // Catch:{ Exception -> 0x0383 }
+        L_0x01ff:
+            boolean r3 = r0.hasNext()     // Catch:{ Exception -> 0x0383 }
+            if (r3 == 0) goto L_0x0334
+            java.lang.Object r3 = r0.next()     // Catch:{ Exception -> 0x0383 }
+            java.lang.String r3 = (java.lang.String) r3     // Catch:{ Exception -> 0x0383 }
+            org.json.JSONObject r6 = r14.getJSONObject(r3)     // Catch:{ Exception -> 0x0383 }
+            int r7 = r6.getInt(r4)     // Catch:{ Exception -> 0x0383 }
+            java.lang.String r8 = r6.getString(r2)     // Catch:{ Exception -> 0x0383 }
+            java.io.File r11 = new java.io.File     // Catch:{ Exception -> 0x0383 }
+            java.io.File r12 = r1.m_manifestPath     // Catch:{ Exception -> 0x0383 }
+            r11.<init>(r12, r3)     // Catch:{ Exception -> 0x0383 }
             r18 = r0
             r15 = r19
             r12 = r21
-            java.lang.String r0 = r6.optString(r15, r12)     // Catch:{ Exception -> 0x0377 }
+            java.lang.String r0 = r6.optString(r15, r12)     // Catch:{ Exception -> 0x0383 }
             r19 = r2
-            java.lang.StringBuilder r2 = new java.lang.StringBuilder     // Catch:{ Exception -> 0x0377 }
-            r2.<init>()     // Catch:{ Exception -> 0x0377 }
-            r2.append(r0)     // Catch:{ Exception -> 0x0377 }
+            java.lang.StringBuilder r2 = new java.lang.StringBuilder     // Catch:{ Exception -> 0x0383 }
+            r2.<init>()     // Catch:{ Exception -> 0x0383 }
+            r2.append(r0)     // Catch:{ Exception -> 0x0383 }
             r20 = r4
             java.lang.String r4 = " "
             r21 = r12
             java.lang.String r12 = "%20"
-            java.lang.String r4 = r3.replace(r4, r12)     // Catch:{ Exception -> 0x0377 }
-            r2.append(r4)     // Catch:{ Exception -> 0x0377 }
-            java.lang.String r2 = r2.toString()     // Catch:{ Exception -> 0x0377 }
-            java.lang.StringBuilder r4 = new java.lang.StringBuilder     // Catch:{ Exception -> 0x0377 }
-            r4.<init>()     // Catch:{ Exception -> 0x0377 }
-            r4.append(r0)     // Catch:{ Exception -> 0x0377 }
-            r4.append(r3)     // Catch:{ Exception -> 0x0377 }
-            java.lang.String r0 = r4.toString()     // Catch:{ Exception -> 0x0377 }
-            int r4 = r2.compareTo(r0)     // Catch:{ Exception -> 0x0377 }
-            if (r4 == 0) goto L_0x026f
-            java.lang.StringBuilder r4 = new java.lang.StringBuilder     // Catch:{ Exception -> 0x0377 }
-            r4.<init>()     // Catch:{ Exception -> 0x0377 }
+            java.lang.String r4 = r3.replace(r4, r12)     // Catch:{ Exception -> 0x0383 }
+            r2.append(r4)     // Catch:{ Exception -> 0x0383 }
+            java.lang.String r2 = r2.toString()     // Catch:{ Exception -> 0x0383 }
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder     // Catch:{ Exception -> 0x0383 }
+            r4.<init>()     // Catch:{ Exception -> 0x0383 }
+            r4.append(r0)     // Catch:{ Exception -> 0x0383 }
+            r4.append(r3)     // Catch:{ Exception -> 0x0383 }
+            java.lang.String r0 = r4.toString()     // Catch:{ Exception -> 0x0383 }
+            int r4 = r2.compareTo(r0)     // Catch:{ Exception -> 0x0383 }
+            if (r4 == 0) goto L_0x027b
+            java.lang.StringBuilder r4 = new java.lang.StringBuilder     // Catch:{ Exception -> 0x0383 }
+            r4.<init>()     // Catch:{ Exception -> 0x0383 }
             java.lang.String r12 = "Sanitizing Manifest URL \""
-            r4.append(r12)     // Catch:{ Exception -> 0x0377 }
-            r4.append(r0)     // Catch:{ Exception -> 0x0377 }
+            r4.append(r12)     // Catch:{ Exception -> 0x0383 }
+            r4.append(r0)     // Catch:{ Exception -> 0x0383 }
             java.lang.String r0 = "\" to \""
-            r4.append(r0)     // Catch:{ Exception -> 0x0377 }
-            r4.append(r2)     // Catch:{ Exception -> 0x0377 }
+            r4.append(r0)     // Catch:{ Exception -> 0x0383 }
+            r4.append(r2)     // Catch:{ Exception -> 0x0383 }
             java.lang.String r0 = "\""
-            r4.append(r0)     // Catch:{ Exception -> 0x0377 }
-            java.lang.String r0 = r4.toString()     // Catch:{ Exception -> 0x0377 }
-            android.util.Log.i(r13, r0)     // Catch:{ Exception -> 0x0377 }
-        L_0x026f:
-            java.lang.String r0 = r6.optString(r10, r9)     // Catch:{ Exception -> 0x0377 }
+            r4.append(r0)     // Catch:{ Exception -> 0x0383 }
+            java.lang.String r0 = r4.toString()     // Catch:{ Exception -> 0x0383 }
+            android.util.Log.i(r13, r0)     // Catch:{ Exception -> 0x0383 }
+        L_0x027b:
+            java.lang.String r0 = r6.optString(r10, r9)     // Catch:{ Exception -> 0x0383 }
             r4 = r25
-            boolean r6 = r0.equals(r4)     // Catch:{ Exception -> 0x0377 }
-            if (r6 == 0) goto L_0x0287
+            boolean r6 = r0.equals(r4)     // Catch:{ Exception -> 0x0383 }
+            if (r6 == 0) goto L_0x0293
             r25 = r4
-        L_0x027d:
+        L_0x0289:
             r0 = r18
             r2 = r19
             r4 = r20
             r19 = r15
-            goto L_0x01f3
-        L_0x0287:
-            if (r16 == 0) goto L_0x0299
+            goto L_0x01ff
+        L_0x0293:
+            if (r16 == 0) goto L_0x02a5
             r6 = r23
-            boolean r0 = r0.equals(r6)     // Catch:{ Exception -> 0x0377 }
-            if (r0 == 0) goto L_0x0296
+            boolean r0 = r0.equals(r6)     // Catch:{ Exception -> 0x0383 }
+            if (r0 == 0) goto L_0x02a2
             r25 = r4
             r23 = r6
-            goto L_0x027d
-        L_0x0296:
+            goto L_0x0289
+        L_0x02a2:
             r12 = r22
-            goto L_0x02aa
-        L_0x0299:
+            goto L_0x02b6
+        L_0x02a5:
             r6 = r23
             r12 = r22
-            boolean r0 = r0.equals(r12)     // Catch:{ Exception -> 0x0377 }
-            if (r0 == 0) goto L_0x02aa
+            boolean r0 = r0.equals(r12)     // Catch:{ Exception -> 0x0383 }
+            if (r0 == 0) goto L_0x02b6
             r25 = r4
-        L_0x02a5:
+        L_0x02b1:
             r23 = r6
             r22 = r12
-            goto L_0x027d
-        L_0x02aa:
-            java.lang.StringBuilder r0 = new java.lang.StringBuilder     // Catch:{ Exception -> 0x0377 }
-            r0.<init>()     // Catch:{ Exception -> 0x0377 }
+            goto L_0x0289
+        L_0x02b6:
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder     // Catch:{ Exception -> 0x0383 }
+            r0.<init>()     // Catch:{ Exception -> 0x0383 }
             r25 = r4
             java.lang.String r4 = "0x"
-            r0.append(r4)     // Catch:{ Exception -> 0x0377 }
-            r0.append(r8)     // Catch:{ Exception -> 0x0377 }
-            java.lang.String r0 = r0.toString()     // Catch:{ Exception -> 0x0377 }
-            java.lang.Long r0 = java.lang.Long.decode(r0)     // Catch:{ Exception -> 0x0377 }
-            long r22 = r0.longValue()     // Catch:{ Exception -> 0x0377 }
-            long r26 = CRC32File(r11)     // Catch:{ Exception -> 0x0377 }
+            r0.append(r4)     // Catch:{ Exception -> 0x0383 }
+            r0.append(r8)     // Catch:{ Exception -> 0x0383 }
+            java.lang.String r0 = r0.toString()     // Catch:{ Exception -> 0x0383 }
+            java.lang.Long r0 = java.lang.Long.decode(r0)     // Catch:{ Exception -> 0x0383 }
+            long r22 = r0.longValue()     // Catch:{ Exception -> 0x0383 }
+            long r26 = CRC32File(r11)     // Catch:{ Exception -> 0x0383 }
             int r0 = (r26 > r22 ? 1 : (r26 == r22 ? 0 : -1))
-            if (r0 == 0) goto L_0x0312
-            java.lang.StringBuilder r0 = new java.lang.StringBuilder     // Catch:{ Exception -> 0x0377 }
-            r0.<init>()     // Catch:{ Exception -> 0x0377 }
+            if (r0 == 0) goto L_0x031e
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder     // Catch:{ Exception -> 0x0383 }
+            r0.<init>()     // Catch:{ Exception -> 0x0383 }
             java.lang.String r4 = "Download Asset: \""
-            r0.append(r4)     // Catch:{ Exception -> 0x0377 }
-            r0.append(r3)     // Catch:{ Exception -> 0x0377 }
+            r0.append(r4)     // Catch:{ Exception -> 0x0383 }
+            r0.append(r3)     // Catch:{ Exception -> 0x0383 }
             java.lang.String r4 = "\". Manifest CRC:"
-            r0.append(r4)     // Catch:{ Exception -> 0x0377 }
-            java.lang.String r4 = java.lang.Long.toHexString(r22)     // Catch:{ Exception -> 0x0377 }
-            r0.append(r4)     // Catch:{ Exception -> 0x0377 }
-            r0.append(r5)     // Catch:{ Exception -> 0x0377 }
-            java.lang.String r4 = java.lang.Long.toHexString(r26)     // Catch:{ Exception -> 0x0377 }
-            r0.append(r4)     // Catch:{ Exception -> 0x0377 }
-            java.lang.String r0 = r0.toString()     // Catch:{ Exception -> 0x0377 }
-            android.util.Log.i(r13, r0)     // Catch:{ Exception -> 0x0377 }
-            com.valvesoftware.PatchSystem$PendingDownload r0 = new com.valvesoftware.PatchSystem$PendingDownload     // Catch:{ Exception -> 0x0377 }
+            r0.append(r4)     // Catch:{ Exception -> 0x0383 }
+            java.lang.String r4 = java.lang.Long.toHexString(r22)     // Catch:{ Exception -> 0x0383 }
+            r0.append(r4)     // Catch:{ Exception -> 0x0383 }
+            r0.append(r5)     // Catch:{ Exception -> 0x0383 }
+            java.lang.String r4 = java.lang.Long.toHexString(r26)     // Catch:{ Exception -> 0x0383 }
+            r0.append(r4)     // Catch:{ Exception -> 0x0383 }
+            java.lang.String r0 = r0.toString()     // Catch:{ Exception -> 0x0383 }
+            android.util.Log.i(r13, r0)     // Catch:{ Exception -> 0x0383 }
+            com.valvesoftware.PatchSystem$PendingDownload r0 = new com.valvesoftware.PatchSystem$PendingDownload     // Catch:{ Exception -> 0x0383 }
             r4 = 0
-            r0.<init>()     // Catch:{ Exception -> 0x0377 }
-            r0.strFilePath = r3     // Catch:{ Exception -> 0x0377 }
-            r0.strURL = r2     // Catch:{ Exception -> 0x0377 }
-            r0.strVersionCode = r8     // Catch:{ Exception -> 0x0377 }
-            android.net.Uri r2 = android.net.Uri.fromFile(r11)     // Catch:{ Exception -> 0x0377 }
-            r0.uriDestinationPath = r2     // Catch:{ Exception -> 0x0377 }
-            long r2 = (long) r7     // Catch:{ Exception -> 0x0377 }
-            r0.nByteSize = r2     // Catch:{ Exception -> 0x0377 }
-            java.util.ArrayList<com.valvesoftware.PatchSystem$PendingDownload> r2 = r1.m_vecPendingDownloads     // Catch:{ Exception -> 0x0377 }
-            r2.add(r0)     // Catch:{ Exception -> 0x0377 }
-            goto L_0x02a5
-        L_0x0312:
-            java.lang.StringBuilder r0 = new java.lang.StringBuilder     // Catch:{ Exception -> 0x0377 }
-            r0.<init>()     // Catch:{ Exception -> 0x0377 }
+            r0.<init>()     // Catch:{ Exception -> 0x0383 }
+            r0.strFilePath = r3     // Catch:{ Exception -> 0x0383 }
+            r0.strURL = r2     // Catch:{ Exception -> 0x0383 }
+            r0.strVersionCode = r8     // Catch:{ Exception -> 0x0383 }
+            android.net.Uri r2 = android.net.Uri.fromFile(r11)     // Catch:{ Exception -> 0x0383 }
+            r0.uriDestinationPath = r2     // Catch:{ Exception -> 0x0383 }
+            long r2 = (long) r7     // Catch:{ Exception -> 0x0383 }
+            r0.nByteSize = r2     // Catch:{ Exception -> 0x0383 }
+            java.util.ArrayList<com.valvesoftware.PatchSystem$PendingDownload> r2 = r1.m_vecPendingDownloads     // Catch:{ Exception -> 0x0383 }
+            r2.add(r0)     // Catch:{ Exception -> 0x0383 }
+            goto L_0x02b1
+        L_0x031e:
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder     // Catch:{ Exception -> 0x0383 }
+            r0.<init>()     // Catch:{ Exception -> 0x0383 }
             java.lang.String r2 = "Skipping Download for Existing Asset: "
-            r0.append(r2)     // Catch:{ Exception -> 0x0377 }
-            r0.append(r3)     // Catch:{ Exception -> 0x0377 }
-            java.lang.String r0 = r0.toString()     // Catch:{ Exception -> 0x0377 }
-            android.util.Log.i(r13, r0)     // Catch:{ Exception -> 0x0377 }
-            goto L_0x02a5
-        L_0x0328:
+            r0.append(r2)     // Catch:{ Exception -> 0x0383 }
+            r0.append(r3)     // Catch:{ Exception -> 0x0383 }
+            java.lang.String r0 = r0.toString()     // Catch:{ Exception -> 0x0383 }
+            android.util.Log.i(r13, r0)     // Catch:{ Exception -> 0x0383 }
+            goto L_0x02b1
+        L_0x0334:
             java.util.ArrayList<com.valvesoftware.PatchSystem$PendingDownload> r0 = r1.m_vecPendingDownloads
             boolean r0 = r0.isEmpty()
-            if (r0 == 0) goto L_0x0337
+            if (r0 == 0) goto L_0x0343
             java.lang.String r0 = "All files up-to-date, we're done."
             android.util.Log.i(r13, r0)
-        L_0x0335:
+        L_0x0341:
             r2 = 0
             return r2
-        L_0x0337:
+        L_0x0343:
             r2 = 0
             com.valvesoftware.PatchSystem$CRegistry r0 = r1.m_Registry
             r0.SetLastFullyInstalledAppVersion(r2)
@@ -801,38 +807,38 @@ public class PatchSystem {
             r1.m_nPotentialDownloadBytes = r2
             java.util.ArrayList<com.valvesoftware.PatchSystem$PendingDownload> r0 = r1.m_vecPendingDownloads
             java.util.Iterator r0 = r0.iterator()
-        L_0x0347:
+        L_0x0353:
             boolean r2 = r0.hasNext()
-            if (r2 == 0) goto L_0x035b
+            if (r2 == 0) goto L_0x0367
             java.lang.Object r2 = r0.next()
             com.valvesoftware.PatchSystem$PendingDownload r2 = (com.valvesoftware.PatchSystem.PendingDownload) r2
             long r3 = r1.m_nPotentialDownloadBytes
             long r5 = r2.nByteSize
             long r3 = r3 + r5
             r1.m_nPotentialDownloadBytes = r3
-            goto L_0x0347
-        L_0x035b:
+            goto L_0x0353
+        L_0x0367:
             long r2 = r28.GetAvailableStorageBytes()
             long r4 = r1.m_nPotentialDownloadBytes
             int r0 = (r2 > r4 ? 1 : (r2 == r4 ? 0 : -1))
-            if (r0 > 0) goto L_0x0376
+            if (r0 > 0) goto L_0x0382
             boolean r0 = r28.CanPlayOffline()
             com.valvesoftware.PatchSystem$EErrorCode r2 = com.valvesoftware.PatchSystem.EErrorCode.Storage
             r3 = r29
             r1.EncounteredError(r0, r2, r3)
             java.util.ArrayList<com.valvesoftware.PatchSystem$PendingDownload> r0 = r1.m_vecPendingDownloads
             r0.clear()
-            goto L_0x0335
-        L_0x0376:
+            goto L_0x0341
+        L_0x0382:
             return r17
-        L_0x0377:
+        L_0x0383:
             r0 = move-exception
             r3 = r29
-            goto L_0x037d
-        L_0x037b:
+            goto L_0x0389
+        L_0x0387:
             r0 = move-exception
             r3 = r2
-        L_0x037d:
+        L_0x0389:
             java.lang.StringBuilder r2 = new java.lang.StringBuilder
             r2.<init>()
             java.lang.String r4 = "Manifest Exception: "
@@ -846,7 +852,7 @@ public class PatchSystem {
             boolean r0 = r28.CanPlayOffline()
             com.valvesoftware.PatchSystem$EErrorCode r2 = com.valvesoftware.PatchSystem.EErrorCode.Manifest
             r1.EncounteredError(r0, r2, r3)
-            goto L_0x0335
+            goto L_0x0341
         */
         throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.PatchSystem.CheckForAssetUpdates(com.valvesoftware.PatchSystem$PatchSystemCallbacks):boolean");
     }
