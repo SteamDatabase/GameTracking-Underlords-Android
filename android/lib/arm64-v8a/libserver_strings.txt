@@ -34,6 +34,9 @@
 !~@( 
 !*,=@
 !	@-#	@
+!	@)^_
+!	@) @
+!	@)@`
 ?)>>!;/
 ?}@=	
 '":|;
@@ -42,6 +45,7 @@
 ((@-)
 ()@))	@
 (%@-*	@
+(%@)`
 )@-		@
 )*-)+
 )+@)+
@@ -111,7 +115,7 @@ $0$1 = $2
  !"#$%&'()*+,-./0123
 $0$1$2 $3 = $4
 0123456789abcdef
-0123456789ABCDEF
+0123456789ABCDEFD.
 %0.2f
 (%0.2f) %s
 (%0.2f): %s
@@ -564,6 +568,7 @@ $0 to $1,
 13IPoseAccessor
 13IPrerequisite
 13sky3dparams_t
+_149J
 14CAimConstraint
 14CAssetModifier
 14CAttributeList
@@ -1570,6 +1575,7 @@ $0 to $1,
 16CModifierFactoryI45CDAC_Modifier_DragonKnight_CorrosiveBreathDoTE
 16CModifierFactoryI45CDAC_Modifier_Hobgen_Supercharge_DamageReduceE
 16CModifierFactoryI45CDAC_Modifier_KnightBonusDamageOnGodsStrengthE
+16CModifierFactoryI45CDAC_Modifier_Pangolier_ShieldCrash_TargetingE
 16CModifierFactoryI46CDAC_Modifier_EmberSpirit_SleightOfFist_CasterE
 16CModifierFactoryI46CDAC_Modifier_EmberSpirit_SleightOfFist_MarkerE
 16CModifierFactoryI46CDAC_Modifier_Puzzle_NoOtherKillerWinConditionE
@@ -1945,10 +1951,10 @@ $0 to $1,
 18TEDust_GameEvent_t
 18TEFizz_GameEvent_t
 18ToolTraceRayResult
-	1,9`
+*1,9`
 1960/00/00
-	1/9_A/9
-1:9?A:9_M
+	1=9_A=9
+	1;9_A;9
 19CAI_ChangeHintGroup
 19CAmmoDefInitializer
 19CAttributeContainer
@@ -2056,6 +2062,7 @@ $0 to $1,
 19interactions_data_t
 19ISource2GameClients
 19IVoiceGameMgrHelper
+!1@9K
 19RestartMapToolEvent
 19TEDecal_GameEvent_t
 19TESmoke_GameEvent_t
@@ -2252,6 +2259,8 @@ $0 to $1,
 20TESparks_GameEvent_t
 20ToolTraceRayResult_t
 20TransitioningLayer_t
+2	1>9
+2	1!9
 21CAnimGraphTraceFilter
 21CBaseAnimatingOverlay
 21CBaseAttributableItem
@@ -2693,7 +2702,7 @@ $0 to $1,
 23TEExplosion_GameEvent_t
 23ToolEvent_GetEntityInfo
 23TraceRayServerToolEvent
-2	!49
+2	!49H
 24CAnimGraphSaveRestoreOps
 24CBaseAnimatingController
 24CCLCMsg_RespondCvarValue
@@ -3460,7 +3469,7 @@ $0 to $1,
 28TEShatterSurface_GameEvent_t
 28VPhysicsCollisionAttribute_t
 *|2@9
-2	!'9
+2	!,9
 {2@99
 29CBodyComponentBaseModelEntity
 29CBoneConstraintPoseSpaceMorph
@@ -3575,12 +3584,12 @@ $0 to $1,
 2+9	S
 2(9	SHM(
 29ToolEvent_GetEntityInfoResult
+2	A49
 2	a>9
-2	a:9
+2	a'9
 2	A;9
 2	A.9
 2A9i2
-2	a:9n
 2	A;9o
 2	AA9
 2A.CWorkshop_PopulateItemDescriptions_Request.SingleItemDescription"F
@@ -3764,8 +3773,9 @@ $0 to $1,
 2h"B9
 2hB!9
 2hB.9
+2hB+9
 2hB99
-2hB 9(a
+2hB 9ha
 2hB"9T
 2hf!9
 2hfa9
@@ -3773,6 +3783,7 @@ $0 to $1,
 2hj+8H
 2hj!9
 	2hN	
+2hR*9i
 2h^@y
 2h>@y
 2Hyix
@@ -3814,7 +3825,7 @@ $0 to $1,
 2k_ItemPurgatoryResponse_Finalize_Failed_Incomplete
 ?-2KLa
 2Ky)xi"@
-	2!L4
+	2!L?
 2L@-4
 @2l9<)8
 2l*@9h
@@ -3829,12 +3840,10 @@ $0 to $1,
 2ninx
 }2'@+P
 2 .ProtoFlattenedSerializerField_t"!
-2	q69
-2	q/9)
-2	q*9
-2	Q>9
-2	Q99(
-2	Q:9h
+2	Q,9
+2	Q:9
+2	Q!9
+2	Q99h
 	2R*3
 2) Red  : %i
 2RF-5:@
@@ -4463,7 +4472,7 @@ $0 to $1,
 34GameEvent_RegisterHookupGameSystem
 34IAnimGraphSequenceFinishedListener
 34ToolEvent_SFMRecordingStateChanged
-'3)	5
+'3))5
 35CCommentary_SaveRestoreBlockHandler
 35CDAC_Ability_Bristleback_QuillSpray
 35CDAC_Ability_ChaosKnight_Chaos_Bolt
@@ -4787,6 +4796,8 @@ $0 to $1,
 39CTraceFilterSkipTwoEntitiesAndTeammates
 39CUserMsg_ParticleManager_CreateParticle
 39CUserMsg_ParticleManager_UpdateParticle
+3A79_
+3A<9_
 3A-`9 
      3: Alyx Blind
 @@-3B!
@@ -4984,6 +4995,7 @@ $0 to $1,
 45CDAC_Modifier_DragonKnight_CorrosiveBreathDoT
 45CDAC_Modifier_Hobgen_Supercharge_DamageReduce
 45CDAC_Modifier_KnightBonusDamageOnGodsStrength
+45CDAC_Modifier_Pangolier_ShieldCrash_Targeting
 45CDefaultResponseSystemSaveRestoreBlockHandler
 45CEnvSoundscapeProxyAlias_snd_soundscape_proxy
 45CUserMsg_ParticleManager_ReleaseParticleIndex
@@ -5212,8 +5224,8 @@ $0 to $1,
 5h"U9
 5ib@y
 5i*C))
+5i"J)
 )5IJ(}
-5i"J)Uf
 5ISave
 5i.@y
 5`J@)q
@@ -5470,9 +5482,9 @@ _6iJ@
 ?6iJ@
 /6iJ@
 @6iJ@
+6i"J)
 '6iJA
 6iJA9
-6i"J)Uf
 ?.@6$Ik
 _6iN@
 ?6iN@
@@ -5524,7 +5536,7 @@ _6	p@
 (6	q@
 '6	T@
 6	t@9
-6T9)!
+6T9I!
 6	TA9
  6tj@
 6tnM92
@@ -5543,7 +5555,6 @@ _6v:@
 6	x@9
 6x"@9
 6@y_! k
-6YsT9
 ?7[/<
 +@;^7[/
 	**!7
@@ -5552,7 +5563,7 @@ _6v:@
  74	(74
 74	 74
  74	(7t
-'7)	5
+'7))5
  75	(7
 75	 7
 75	 7u	(7
@@ -5749,6 +5760,7 @@ _6v:@
 86iR@
 86u*@
 86`V@
+	875b
 87H	@7
 87hN@9h
 87i"A9i
@@ -5836,6 +5848,8 @@ _8|{t
 ** @9
 	 @9)
 	 @9	
+	!_9	
+	!\9	
 	)@9)
 	)@9*
 	@9*]
@@ -5851,21 +5865,21 @@ _8|{t
 95*P>
 @96Y@
 @9(	(7
-@9(	(7`
 	*9!7
+!/9(8
 @9!8 
 @9!8"
 98]@)5	@
 98N*>
 @9)9@
 @9*	@9-
+@9%	@9
 @9%	@9$
 @9%	@9&
 @9+	@9,
 %@9	)@9
 9+	@9
 99h&N
-@9%	@9I0
  @9	$@9J
 @9A(!
 @9_aAkA
@@ -5910,7 +5924,7 @@ _8|{t
 9CTESparks
 9CTimeline
 9D7V=
-@9 eA
+"@9!E
 @9EgC
 9GAME_PARTICLE_MANAGER_EVENT_SET_SCENE_OBJECT_GENERIC_FLAG
 9gCN>
@@ -5928,6 +5942,7 @@ _8|{t
 9h^B9
 9hB@9
 9hbB9
+!?9hE
 %9hf@
 @9hF@
 @9hf@9
@@ -5973,11 +5988,6 @@ _8|{t
 9	i@9
 9*i@9J
 -9i^A
-@@9id
- @9iD
-@@9iD
- @9Ie
-"@9Ie
 9IEconTool
 9ifA9
 (@@9iFp9h&09
@@ -5999,6 +6009,7 @@ _8|{t
 @9JU	
 		@9k
 !!@9K
+$9K)	
 >9K!0>N
 )!@9	k(8I
 @9_`[kA
@@ -6007,6 +6018,7 @@ _8|{t
 9k_ItemPurgatoryResponse_Finalize_Failed_CouldNotFindItems
 9kj(8|
 9l"A9
+@9 mA
 )9}[p=
 9Px? FcH
 9)P@y	q
@@ -6035,7 +6047,6 @@ _8|{t
 	9	S	L)
 ,9	SLM,
 9	SLM,
-*9	Sm
 9	S-M-
 9	S,M,
 9	S.M.
@@ -6047,6 +6058,7 @@ _8|{t
 9	SMM-
 9	SnM.
 9	SNM.
+9	SUo
 (@@9t
 (@@9t"
 (@@9t"$
@@ -6076,7 +6088,6 @@ _@9)u
 9Zg,>4
 !^A(!
 'A)	}	
-(%@)`A
 A-`	+
 A-   
 A-  "
@@ -6086,17 +6097,25 @@ A-(
 A-@ #
 A))!@
 a2@9 
+a2@9_
+a2@9/
 a2@9"
 a2@9"[@
-a2@9]
+a2@9}
+a2@9@
+a2@9&
 a2@9	
+a2@9"9
 a2@9B
 a2@9c
 a2@9c#
 a2@9cc
 a2@9cC
-a2@9D
+a2@9f
 a2@9"ih
+a2@9q
+a2@9T
+a2@9w
 a2B9bz@
 a2U0*	
 ?a2U0*i
@@ -6105,6 +6124,7 @@ a2U0*
 a2@yh2@y
 ,-A-.5@-
 A5fSXbf7
+a6@9yd
  .a8"
 @-a	@- 8 
 A- 8 
@@ -6118,10 +6138,11 @@ A-!8#
 )!A9?
 )A@9)
 )A@9	
+*A,9`
+#A9*-
 +A9	-
 		A9?
 		A9	
-	A_9	
 	A@9)
 	A@9)	
 	A@9	
@@ -6183,8 +6204,8 @@ aabb_min
 AABB_t
 ?AAk	"
 A@-B8(
-ab@9"
 ab@9B
+ab@9D
 A-b.C
 abcdefghijklmnopqrrqponmlkjihgfedcba
 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_
@@ -8093,7 +8114,7 @@ always_send_to_server
 always_send_to_servers
 always tradable
 ;Am@  
-#Am"4
+#Amb4
 AmbientCubes
 ambient_generic
 Ambiguous
@@ -8247,7 +8268,7 @@ An orthographic spot light entity
 An RR_Concept couldn't find its string in the symbol table!
  any other value = set minimum value for cl_interp_ratio
 &A)(o@
-A-O9I
+A-O9K
 api_key
 `AP$N
 appear_time
@@ -8577,7 +8598,6 @@ autoteam
 auto_unragdoll_duration
 [a:%u:%u]
 [A:%u:%u:%u]
-	aV9i
 	available
 Available: 
 available_cards
@@ -8614,13 +8634,13 @@ Ax? /k
 @-b	@
 	-b("
 !^B($
+!	@)	B
 ('B)*
 @-B	@
 B-`! 
 B-   
 B-'("
 B-)( 
-*B)!0
 B-1HD-
 B-(5@
 *-B),5C)_
@@ -8647,6 +8667,7 @@ b@9hb
 B@9hB
 B@9hC
 b"@9i
+	!B9i
 B9$i@
 B9I	87
 b9I9)
@@ -8654,7 +8675,7 @@ b@9ib
 b@9J9F
 B%9`R
 B9)UA
-b 9#z
+*B)a0
 B-A8!
 bA9hb
 BA9hB
@@ -8793,7 +8814,7 @@ bbox.m_vMinBounds
 !	B-C
 bChainLightningConsidered
 bCraniumBasherTested
-`BCyv
+`BCyn
 %b %d
 B-d{@
 B-D@@
@@ -8826,7 +8847,6 @@ BeginFadeOutThink
 BeginRestoreEntities without previous EndRestoreEntities.
 BeginScriptDebug
 Begin shifting the Selected Set.
-B-(eI
 "bench_additional_unique_unit_count
 BenchmarkService001
 bentnormal
@@ -8837,6 +8857,7 @@ bEOFUnlocked
 bExitsMesh
 bezier
 Bezier
+BF=(:
 bFired
 bFound
 ?B&:G
@@ -8876,12 +8897,14 @@ bIsNotEmpty
 bitsDamageType
 bitsToTest
 ?{^;b>j
+&B)JH
 #bJ$Q
 ?'bj{V
 	)B)K
 ?)bl|
 	-B)l
 	)B)L
+B-(%L
 blackbox
 BlackBoxVersion001
 black_king_bar_new
@@ -9191,15 +9214,15 @@ ButtonBitMask_t
 "B)Ux
 buy_unit
 bValue
-`b@y\
+`b@yc
 `b@yh
 B@yhB
 By how much to modify the unit's health
 By how much to modify the unit's health.
 b	yi6
 BYield
-`b@yk
-b	y=q
+b	y=m
+`b@yT
 b	yt6
 bytes
 bytes. 
@@ -9207,6 +9230,7 @@ bytes_data
 Byte size calculation and serialization were inconsistent.  This may indicate a bug in protocol buffers or it may be caused by concurrent modification of 
 bytes_read
 bytes_written
+`b@yz
 $.c($
 :C)   
 !	@-C
@@ -9225,7 +9249,9 @@ C33s?)\
 C-!8"
 C-"8"
 ,c@9-
+c@9*/
 C@9("
+C@9*/
 C9)|@
 C@9	2
 C9*dA
@@ -9235,6 +9261,7 @@ C@9HC
 c@9hS
 C)A8!
 CA9`:
+CA9*-
 cA9h"
 cA9s~
 cable
@@ -12732,7 +12759,6 @@ CVRHandAttachmentInput
 CVRHandModelOverride
 CVrSkeletalInputSettings
 &C)Vys
-(CW9h
 CWeakHandle
 #CWorkshop_AddSpecialPayment_Request
 $CWorkshop_AddSpecialPayment_Response"W
@@ -12775,7 +12801,7 @@ cycler_flex used on model %s without enough flexes.
 C@y)i@
 %d | 
  D-	(@
-!	@) D
+!	@)	D
 ?D]`,
 @-D	@
 	D-	)@
@@ -12787,12 +12813,12 @@ d3_citadel_04
 d3_citadel_05
 .D=3w
 *-D),5E)_
+d6@y#
 d6@y##
 d6@yc
-d6@yC
-d6@yC-
-d6@yc0
-d6@yCF
+d6@yC*
+d6@yC#
+d6@ycF
 	@D9?
 D-)9,
 D9`.@
@@ -13526,6 +13552,7 @@ D_HATE
 DhUbv?
 `"D-i*@
 D-i"@
+!	@)DI
 DIALOG_ASKCONNECT
 DIALOG_ENTRY
 dialog_layout_name
@@ -13662,7 +13689,6 @@ divine_rapier_new
 DK@-0G@-
 D_LIKE
 <%d:%llu>
-!	@)DM
 dme_position_map
 dmg.bullets
 dmg.club
@@ -13938,6 +13964,7 @@ D)yV@
 ?e;:	
 @-e	@
 -E)		
+!	@)\E
 .E))}
 e0F$J
 ?=((E+7
@@ -15412,6 +15439,7 @@ _female
 FeModel combiner: Too many ropes (%u) or links (%u): cannot fit sum in uint16
 Fetched %d bytes item schema version %08X via HTTP; update is queued.
 [%f, %f]
+@F=(F
 ff&?33
 ?fff?
 (%f, %f, %f)
@@ -16073,7 +16101,6 @@ fxTime
 f@y?!3ka
 f@y?! k
 FZ*o7
-!	@)^g
 @-g	@
 @g|_\
 .G))}
@@ -16900,7 +16927,6 @@ g_VProfSignalSpike
 gxXM|Z
 +g-`ZH
 -h&@)
-!	@)@h
 )h&	)
 @-h  
 	-h:@
@@ -16908,6 +16934,7 @@ h&?);
 h&@)?
 h&@)*
 ;+%@H
+!	@)H`
 @-H  
 #H)	}	
 H0@)_
@@ -16923,6 +16950,7 @@ h2@9)EE
 h2@9h
 )h2A9
 h2By`
+h2W9H
 h2@y	
 h2	yh
 h2@yi
@@ -16950,6 +16978,7 @@ h6iz@
 h6jF@
 H6jJ@
 h6MyH
+h&@)6Q
 H6u2@
 h6uB@
 h6@y(
@@ -16972,12 +17001,11 @@ H=)@8f
 h.!9*
 h'@9(
 h"@9)
-h"@9)>
+h"@9)=
 h"@9	=
 h&@) 9.
 ;h@)9\A)<
 H @9`b
-h"@9)e
 h&#9F
 h'@9h
 h"@9h
@@ -16988,17 +17016,19 @@ h.@9H
 h*@9H
 (H@9h
 H @9h"
-,H@9-H
+h"@9I>
 h"@9I0
 h"@9i1
 H @9i @9
-h"@9iD
-h*[9ie
-h"@9Ie
-h"@9IM
+h"@9ie
+h"@9iM
+h",9j
 h&@9k
+h"@9)M
+,H@9mH
 h" 9r
 H9	ShM(
+h"\9	X
 	*h:A
 h%A)`
 )h>A9
@@ -17084,6 +17114,7 @@ have_versions
 h&B)(
 =hb!9@
 =hb@9
+hb?9'
 hb@9`
 hb@9	
 =hB@9
@@ -17103,11 +17134,8 @@ hB@9H
 H'B9h
 h*B9HC
 h*B9i
-hB@9ia
-hB@9iD
-hb@9Ie
+hB`9IO
 hB?9J
-hB`9	O
 hB@9t
 hB@9u"@
 h&^)b:A
@@ -17129,7 +17157,6 @@ hbF9(#
 hbF99
 hbF9h
 hBF9h
-hBF9Ie
 H-bN@
 hbN9tB
 hbN9v
@@ -17186,6 +17213,7 @@ healing_prevented
 healing_reduction_pct
 healing_ward_healing_aura_new
 heal_interval
+heal_pct
 heal_pct_per_second
 heal_percent
 heal_percentage
@@ -17445,7 +17473,6 @@ hf	y9
 hf	yh
 hf	yh*R9
 hgrunt;scientist
-!	@)Hh
 H%@)h&
 h&h9H
 Hi+8hrD
@@ -17550,19 +17577,20 @@ hi,xk
 h&_)j
 h&@-j
 H%@)J	@
-hj48Vw
+hj48S
 hj)8O
 hj`9H
 hJ\9v
 hj@9yF@
-hjb947
+hjb9T7
 hjG9)
+hJk9TI
 *hjl9
 hjl9h
 hjR9h
 hjR9v
 hJR9v
-hjS9	7
+hjS9)7
 hJv9(
 hj@y`
 hj@y 
@@ -17706,6 +17734,7 @@ hrDyH
 HRenderTexture
 HRenderTextureStrong
 hResult
+hrF9@5
 h&R)j
 hrm9H
 hr@y`
@@ -17788,7 +17817,7 @@ hz	y
 	!@)i"
 	)@)i
 !^I))
-!	@)\I
+!	@)<I
 !	I- ( 
 	*I{(
 	*I}`
@@ -17834,6 +17863,7 @@ i*8*Y@
 )i@9	
 I9b2P
 I9bzD
+i*`9He
 I9hFC
 )I@9I
 i"@9J
@@ -17855,7 +17885,6 @@ ib@9)
 ib#9	
 ib@9	A
 ib@9h
-i*B9h_
 ib@9i
 i"B9i
 i#B9i
@@ -18137,8 +18166,9 @@ I-!H#
 )ih8Hyh
 )ih8Ii(8
 (ih8*ij8+ik8,il8-im8.in8/io80ip81iq82ir8"ib8#ic8$id8%ie8&if8)i`8
-(ih8	n
-(Ih8)n
+(ih8In
+(Ih8in
+(ih8)n
 IHandleEntity
 IHasAttributes
 I("hq
@@ -18181,12 +18211,11 @@ i"@)j
 i*J)(
 )I-@)J	@
 I!@)J	@
-ij(8&
 *ij8+ik8,il8-im8.in8/io80ip8(ih8
 ij,8kj*8mj(8
 iJB9)
 ijj8?
-ijS9HN
+ijS9hN
 ijw8*
 )ijx?
 *ijx_
@@ -18855,7 +18884,6 @@ instance_data
 InstancedAutoGeneratedSoundScene:  Expecting non-NULL pActor for sound %s
 instanced_scripted_scene
 instance_id
-instant_heal_pct
 instant_regret_talent
 instructor_close_lesson
 instructor_server_hint_create
@@ -19024,7 +19052,7 @@ invited_by
 invites
 invulnerability_duration
 In-world UI panel
-=i*o9t8
+=i*o9
 ip8Rkp8
 IPhysicsPlayerController
 IPlayerInfo
@@ -19390,7 +19418,6 @@ i'@yH'@y?
 Iyix8}
 IyixJylx+
 +I@yL
-iyx)2
 Iy(xj
 i"Yy?
 @I@z)
@@ -19405,84 +19432,78 @@ j.@)_
 @-J	,
 @-J	@
 J-` $
-j08NH
-j08PH
+j082"
 J0@y_
 J0@yI
 J0@yk
-j18QH
+j1x1*
 j2?)?
-j28QH
 j28R`
-j28RH
 j2W-m
 j2@yh
 j48	C
-j48|f
+j48kw
 j48t^@
 j4xH;@
 j58(2
 j58(F
-j58hF
+j58HF
 j58hf@9(
-j58;Y
+j58{Y
 J5@y_
-J68.{
-j68hf
-j68(m
-j68Qj
+j68([
+J68&a
+j68bV
+j68hm
+j68HY
+J68n_
+j68]T
 j68u*@
 j68v&@
-J68vy
 j6@9!
 j6@9(
-j-8- 
-j-8-"
 j-8,"
-j.8.#
 j(8( 
-j(8(-
+j(8("
+j)8)"
 j)8	?
 j)8	"
 j)8	#
+j*8*"
 j*8	2
 j)8	7
-j(8h!
+j(8h-
+j(8h'
+j(8h"
 j(8H 
-j(8H'
-j(8H"
-j)8H)
-j(8H0
-j(8hh
-j(8Hh
+j(8h0
 j(8Hk
 j(8hl
 j(8Hr
 j(8h&Yy
-j.8i!
-j)8i)
 j)8	I
 j)8I 
-j)8I.
 j)8ID
 j)8ik
 j)8`j
-j+8j!
-j+8k!
+j*8J[
 j-8K,
 j+8K:
 j`8'k`8
 j+8Kd
 j+8KH
+j-8L"
 j,8L 
 j,8LH
 j,8Lr
+j-8m&
+j-8M 
 j-8M,
-j-8M&
-j.8M[
+j-8M"
 j-8MV
 j/8n#
-j.8n!
+j.8N#
+j.8N1
 j)8	o
 j)8	V
 J!@9_
@@ -19541,7 +19562,7 @@ jiggle bone %u
 JIIJJ}
 jiix_
 Jiix)1
-jij8+n
+jij8kn
 Jikx_
 Jikx_!!k
 JiMIJ+
@@ -19646,26 +19667,26 @@ jV@y!y|
 jV@y:yt
 jV@y!yt
 j-x-"
-j,x,!
 j,x,"
 j)x)"
-j)x	"
 j)x		
-j+x+"
 j)x	4
 J!_x_!5k
 j)x	g
-j(xh"
-j)xI)
+j)xi)
+j)xI"
 j$xij.
-j+xK+
+j+xk+
+j+xK"
+j,xl!
 j)x	l
+j,xL"
 j-xM 
+j-xM"
 j-xM*
 j-xM8
 j-xMF
 j-xMT
-j.xn!
 j.xN.
 j)x	O
 J!@y)}@
@@ -19680,6 +19701,7 @@ _!(k#
 	*_!;k
 	*_!(k
 	k 	*
+!	@)	K
 ('K)_
 	K	}@
 K)@)-
@@ -19696,9 +19718,11 @@ k2Q)m
 *k2@y
 ?k58D
 *?k78
+k78(A
 ?k78h
+k78Hr
 	K!8"
-?k88:a
+?k88za
 k(8vV@
 ?){K9_
 @){K9_
@@ -19709,7 +19733,6 @@ K9	S)
 K9	S)M+
 K9	S+M+
 K)A)+)
-k	A,9
 Ka@9+
 kA@9J}@
 Ka@9k
@@ -19737,7 +19760,6 @@ _!(kc
 _!(kC
 K-#c@
 kCyi&A
-($@)K-D
 ))Ke@9k
 k_eActionType_Placholder
 k_eAlreadyClaimed
@@ -20663,6 +20685,7 @@ keywords
 keyword_to_add
 keyword_to_remove
 `'Kf"
+($@)K-F
 k_Failed
 k_Failed_CodeAlreadyUsed
 k_Failed_CodeNotFound
@@ -20679,6 +20702,7 @@ KI`9K
 kickid %d CBaseEntity::InputKill()
 kicxJ
 ?kIG9
+Kih8Jn
 Kih8Ki)8Mi(8
 kijxJ1
 kill_all_bots
@@ -20837,6 +20861,7 @@ k	@y)
 K!@y?
 Kykx)
 Kykx5
+!	@)l^
 	*l!*
 .@)L)@)?
 *#L))
@@ -20912,7 +20937,6 @@ LAYOUTPOSITIONTYPE_NONE
 LAYOUTPOSITIONTYPE_VIEWPORT_RELATIVE
 LAYOUT_WORLD_DEFAULT
 [lazy = true] can only be specified for submessage fields.
-!	@)lb
 L-B(.
 @%LbZ
 L-c.@
@@ -21068,7 +21092,7 @@ LightStyles
 lighttype
 LightType_t
 lightworld
-lih8+n
+lih8kn
 Liixi
 Lik8m
 L@I@L
@@ -21359,7 +21383,6 @@ lycan_wolf_spawn_shift
 ?lzPP
 @=#?m\
 @m"	@
-!	@)<M
 ))+M)
 +M)	)	)
 M0AyL
@@ -25272,6 +25295,7 @@ modifier_paladin_sword
 modifier_paladin_sword_healing_amp
 modifier_pangolier_shield_crash_buff
 modifier_pangolier_shield_crash_jump
+modifier_pangolier_shield_crash_targeting
 modifier_phantom_assassin_coupdegrace
 modifier_phased_movement
 modifier_pipe
@@ -27042,6 +27066,7 @@ n	A9-
 nA9hn
 NA9iN
 nActiveAreas %d + nAreasDestroyed %d + nAreasPendingDestruction %d = %d
+#naIB
 nAlpha
 nameable
 named_value
@@ -28091,7 +28116,6 @@ Nx	V @M
 n@y?	
 nZ:0J
 ?'[nza
-!	@)	O
 ?(\O?
 O?0 ,	f
   o [%5d] '%s' (%s) [group entity]
@@ -28461,7 +28485,7 @@ p6jR@
 p7u	x7
 p7v	P7
 P7x"@
-P9_1	
+P9_A	
 (p@9h
 "pA3QuW
 P-A8!
@@ -30044,23 +30068,23 @@ py_generic_services
 q-@	*
 -	-	Q
 @-'@@-Q
-	Q39(m
+	Q39hm
 q;4,F
 Q8>)\
 Q8?33
 Q8q(2
+	q,9`
+	q/9_
 	q"9_
+(Q-9^ 
 Q"@9?
 Q9) @
 Q9@)+
-	Q,9_a,9
-	Q!9_a!9
 Q9bjD
 q@9HA
 Q9hrD
 Q9hvD
 Q9i"@
-	Q$9K
 Q9l.G
 Q9m.G
 Q9n.G
@@ -30073,11 +30097,10 @@ _#@qB
 Q-b)"
 	QB9i
 ?@@qC
-q@)(-D
 QD-{(#
-	Qd9)
 qD	@za
 ?qe?A
+q@)(-F
 QH@-$
 q?h(8
 ?"QhY
@@ -30144,7 +30167,7 @@ _quote
 ?q?}WF
 "@:R".
 R-   
-R09(V
+R09HV
 r0@GP!
 >r3\9
 ?r4GV~	
@@ -30154,11 +30177,11 @@ r)5IJZ}
 ?R8q(2)
 *R)8yv
 "R9!	.
-R(!+9
 r@9hr
 r@9ir
 R@9iR@9
 R"@9R
+R(a+9
 RA9	1
 RA9hR
 rA9ir
@@ -30254,7 +30277,6 @@ RB_8J
 RB9hR
 R~~C@
 r_cacheSequenceData
-`RCy"
 Reached an unintended state: CPPTYPE_MESSAGE
 Reached impossible case in HasBit().
 reading weapons from %s
@@ -30318,6 +30340,7 @@ refresh_radius
 refrigerator
 ref_shoot_
 ref_trans_id
+regen_immediate
 region_code
 region_codes
 	region_id
@@ -30684,6 +30707,7 @@ reward_sound
 reward_template
 reward_templates
 Reward Template '%s' references missing placeholder item '%s'
+rF9 5
 RGBA color to draw as the background color for nav areas while editing.
 R	h(8	
 Rhj)8
@@ -30879,12 +30903,11 @@ rv~?){
 r_VehicleViewDampen
 Rxjh8
 r@y`&@
+`R@y8h
 `R@yh
 R@yHq
 r@yhr
-`R@y@r
 r	yt:
-`R@y&T
 --- %s: 
 "%s" 
 "%s":
@@ -30901,6 +30924,8 @@ s)~+@
 ?;? +S'
 )`>s0
 %s%02d
+*?S09
+(S09F
 %s %.0f%%
 %s0x%08X %s = "%s"
 %s0x%08X:%s = "%s"
@@ -30942,7 +30967,7 @@ s7>Ip
 %s : %8.2f:  start %s [%s]
 %s : %8.2f:  vol %.3f for '%s'
 %s : %8.2f: waiting scene to become interruptible
-@S@9)7
+@S@9)3
 S@9h"
 (SA9(
 %s:  added global entity %d %s (%s)
@@ -33586,6 +33611,7 @@ System %s failed to init
   szFullScriptFile = %s
 szName
   szReplaysPath = %s
+!	@)t^
 ?"_t?
 T0:	S
 T0:	S0M0
@@ -33674,7 +33700,6 @@ target_unit_idx
 tauntfrequency
 tax_loophole_talent
 tax_usd
-!	@)tb
 t-b8 
 Tb8	S
 T@BB9@
@@ -33694,6 +33719,7 @@ T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<unsigned int, 3, short>, u
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<unsigned int, 9, short>, unsigned int, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<unsigned int, 9, short>, T = unsigned int, I = short]
 T *CUtlLeanVectorImpl<CUtlLeanVectorFixedGrowableBase<unsigned short, 6, short>, unsigned short, short>::AddToTailGetPtr() [B = CUtlLeanVectorFixedGrowableBase<unsigned short, 6, short>, T = unsigned short, I = short]
 T	|D9?
+!	@)TE
 team_
 team_behavior
 team_id
@@ -33920,9 +33946,8 @@ Thf@9
 Thf@9(
 Th"F9
 ThF@9h
-Th"F9{l
 Thfa9
-ThFp9
+ThFp9	"
 Thf@y
 thick
 TH_IGNORE_MAX_HITPOINTS
@@ -33977,7 +34002,7 @@ THROW HULL BLOCKED
 THROW POST BLOCKED
 THROW PRE BLOCKED
 ThR@y
-ThR@y9U
+ThR@yYU
 ThrZ9
 Th*S9
 ThS@9i
@@ -33993,7 +34018,6 @@ Th*@y
 Th.Yy
 ThZ@y
 Ti"	)
-!	@)TI
 T)I) 
 Ti2@yh
 Ti5KJ(}
@@ -35100,6 +35124,7 @@ UX@)W
 ?uYLl>
 uYLl>
 uz9GxV
+!	@)V_
 !V @;
 	!@)V
 v2@9i
@@ -35324,7 +35349,6 @@ _V_FixupPathName
 V_fmodf
 V_fpclassify
 V_frexpf
-!	@)Vg
 VGAME
 V-gBS-r
 V_GetErrno
@@ -36210,6 +36234,7 @@ x7w"@
 x7wB@
 X7xR@
 XAxis
+xB?9ti
 xb_9uB
 X@)`BH
 XBowBolt
@@ -36233,7 +36258,7 @@ xrYvpcf1
 xT)~)>
 X-V:;
 X\V@%
-)x^	)VP
+)x^	)vP
 x*;XZ
 [xYq|m
 <) @y
@@ -36256,7 +36281,6 @@ _@y?!8k#
 	!@y)9
 >@y?!9kC
 "@y*A
-@y)A$
 	yA9?
 Yaw; 
 YawArrow
@@ -36414,7 +36438,6 @@ Y@))UC
 ?#YvwS
 YWA)H/@
 @y)/@x
-	y;x/
 Y`x($
 @yXih
 	@y-	@y

@@ -49,16 +49,9 @@ public class application extends Application {
     private InAppPurchases m_inAppPurchases = null;
     LanguageCountryMap[] m_languageMap = {new LanguageCountryMap("en", "US", "english"), new LanguageCountryMap("de", "DE", "german"), new LanguageCountryMap("fr", "FR", "french"), new LanguageCountryMap("it", "IT", "italian"), new LanguageCountryMap("ko", "KR", "koreana"), new LanguageCountryMap("es", "ES", "spanish"), new LanguageCountryMap("zh", "CN", "schinese"), new LanguageCountryMap("zh", "TW", "tchinese"), new LanguageCountryMap("zh", "HK", "tchinese"), new LanguageCountryMap("ru", "RU", "russian"), new LanguageCountryMap("th", "TH", "thai"), new LanguageCountryMap("ja", "JP", "japanese"), new LanguageCountryMap("pt", "PT", "portuguese"), new LanguageCountryMap("pl", "PL", "polish"), new LanguageCountryMap("da", "DK", "danish"), new LanguageCountryMap("nl", "NL", "dutch"), new LanguageCountryMap("fi", "FI", "finnish"), new LanguageCountryMap("no", "NO", "norwegian"), new LanguageCountryMap("sv", "SE", "swedish"), new LanguageCountryMap("hu", "HU", "hungarian"), new LanguageCountryMap("cs", "CZ", "czech"), new LanguageCountryMap("ro", "RO", "romanian"), new LanguageCountryMap("tr", "TR", "turkish"), new LanguageCountryMap("pt", "BR", "brazilian"), new LanguageCountryMap("bg", "BG", "bulgarian"), new LanguageCountryMap("el", "GR", "greek"), new LanguageCountryMap("uk", "UA", "ukrainian"), new LanguageCountryMap("es", "MX", "latam"), new LanguageCountryMap("vi", "VN", "vietnamese")};
     protected int m_nLoadingBarFillWidth = 1;
-    private EPermissionsState m_nPermissionState = EPermissionsState.ENeedPermissions;
     protected ImageView m_progressBarBg = null;
     protected ImageView m_progressBarFill = null;
     protected TextView m_progressPctLabel = null;
-
-    public enum EPermissionsState {
-        ENeedPermissions,
-        ERequestedPermisions,
-        EHavePermissions
-    }
 
     /* access modifiers changed from: protected */
     public String GetManifestBaseURL(boolean z) {
@@ -374,6 +367,7 @@ public class application extends Application {
             public void OnFatalError(final PatchSystem.EErrorCode eErrorCode) {
                 PatchSystemInstallTask.this.BlockingUICall(new LongUITask.BlockingUICallRunnable_AsyncReturn<Boolean>() {
                     public void run() {
+                        PatchSystemInstallTask.this.SetProgressObject((Object) null);
                         application.this.setupErrorScreen(PatchSystemInstallTask.this.GetInstallActivity(), eErrorCode, false, this);
                     }
                 });
@@ -382,6 +376,7 @@ public class application extends Application {
             public boolean OnRecoverableError(final PatchSystem.EErrorCode eErrorCode) {
                 AnonymousClass2 r0 = new LongUITask.BlockingUICallRunnable_AsyncReturn<Boolean>() {
                     public void run() {
+                        PatchSystemInstallTask.this.SetProgressObject((Object) null);
                         application.this.setupErrorScreen(PatchSystemInstallTask.this.GetInstallActivity(), eErrorCode, true, this);
                     }
                 };
@@ -393,6 +388,7 @@ public class application extends Application {
                 this.m_bUpdateWasRequiredForOnline = z;
                 AnonymousClass3 r0 = new LongUITask.BlockingUICallRunnable_AsyncReturn<Boolean>() {
                     public void run() {
+                        PatchSystemInstallTask.this.SetProgressObject((Object) null);
                         application.this.setupAPKOutOfDateScreen(PatchSystemInstallTask.this.GetInstallActivity(), z, j, this);
                     }
                 };
@@ -422,6 +418,7 @@ public class application extends Application {
             public boolean ShouldDownloadManifestUpdate(final boolean z, final long j) {
                 AnonymousClass6 r0 = new LongUITask.BlockingUICallRunnable_AsyncReturn<Boolean>() {
                     public void run() {
+                        PatchSystemInstallTask.this.SetProgressObject((Object) null);
                         application.this.setupManifestDownloadedScreen(PatchSystemInstallTask.this.GetInstallActivity(), z, j, this);
                     }
                 };
@@ -445,6 +442,14 @@ public class application extends Application {
                 });
             }
 
+            public void OnCalculatingDownloadSet() {
+                PatchSystemInstallTask.this.BlockingUICall(new LongUITask.BlockingUICallRunnable() {
+                    public void run() {
+                        application.this.setupPreparingToDownloadScreen(PatchSystemInstallTask.this.GetInstallActivity());
+                    }
+                });
+            }
+
             public void OnStartDownloadingAPK() {
                 SetupDownloadingScreen();
             }
@@ -456,9 +461,14 @@ public class application extends Application {
             private void SetupDownloadingScreen() {
                 PatchSystemInstallTask.this.BlockingUICall(new LongUITask.BlockingUICallRunnable() {
                     public void run() {
+                        PatchSystemInstallTask.this.SetProgressObject((Object) null);
                         application.this.setupDownloadingScreen(PatchSystemInstallTask.this.GetInstallActivity());
                     }
                 });
+            }
+
+            public void SetNonDownloadTaskProgress(float f) {
+                PatchSystemInstallTask.this.SetProgressObject(new Float(f));
             }
         }
 
@@ -471,7 +481,11 @@ public class application extends Application {
 
         public int UIThread_Update(Object obj) {
             super.UIThread_Update(obj);
-            application.this.setProgress(this.m_PatchSystem.GetDownloadProgress());
+            if (obj == null || !Float.class.isInstance(obj)) {
+                application.this.setProgress(this.m_PatchSystem.GetDownloadProgress());
+                return 16;
+            }
+            application.this.setProgress(Float.class.cast(obj).floatValue());
             return 16;
         }
     }
@@ -954,14 +968,6 @@ public class application extends Application {
             return str;
         }
         return str + "&password=" + GetString;
-    }
-
-    public EPermissionsState GetPermissionsState() {
-        return this.m_nPermissionState;
-    }
-
-    public void SetPermissionsState(EPermissionsState ePermissionsState) {
-        this.m_nPermissionState = ePermissionsState;
     }
 
     public boolean QuerySkuDetailsAsync(String str) {
