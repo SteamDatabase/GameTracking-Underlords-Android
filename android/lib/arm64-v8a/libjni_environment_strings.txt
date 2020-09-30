@@ -5,6 +5,7 @@ __bss_end__
 __bss_start
 __bss_start__
 .comment
+com.valvesoftware.jni_environment
 com.valvesoftware.unknown
 __cxa_atexit
 __cxa_finalize
@@ -24,6 +25,7 @@ fclose
 fopen
 fread
 fseek
+ftell
 GCC: (GNU) 4.9.x 20150123 (prerelease)
 getApplicationInfo
 getenv
@@ -36,10 +38,14 @@ getPackageName
 .hash
 IiixHihx
 .init_array
+Java_com_valvesoftware_JNI_1Environment_CRC32FileNative
 Java_com_valvesoftware_JNI_1Environment_GetNeededSharedObjects
 Java_com_valvesoftware_JNI_1Environment_IsSharedObjectLoadedNative
 Java_com_valvesoftware_JNI_1Environment_setupNative
 java/lang/String
+j!JJ+
+j!JJK
+!JJK|
 JNIEnvironment_t::~JNIEnvironment_t %p
 JNIEnvironment_t::JNIEnvironment_t %p
 JNI_OnLoad
@@ -54,7 +60,8 @@ libm.so
 ()Ljava/lang/String;
 memcpy
 .note.gnu.build-id
-om.valvesoftwarecom.valvesoftware.jni_environment
+om.valvesoftware
+Qkkbal
 .rela.dyn
 .rela.plt
 .rodata
@@ -62,3 +69,4 @@ setenv
 .shstrtab
 __stack_chk_fail
 .text
+wn>Jj

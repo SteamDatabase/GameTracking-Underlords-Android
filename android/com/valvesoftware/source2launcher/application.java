@@ -885,10 +885,6 @@ public class application extends Application {
     public void ChooseRenderingAPI(Application.InstallTask installTask) {
         boolean z;
         this.m_bUseVulkan = false;
-        if (Build.VERSION.SDK_INT >= 30 && (Build.MODEL.toLowerCase().contains("pixel") || Build.MANUFACTURER.toLowerCase().contains("google"))) {
-            Log.i(k_sSpewPackageName, "Graphics choice forced to Vulkan for Android 11 Google Pixel device");
-            this.m_bUseVulkan = true;
-        }
         if (Build.VERSION.SDK_INT >= 24) {
             boolean[] GetBoolean = Resources.GetBoolean("PatchSystemEnabled");
             if (!(GetBoolean != null && GetBoolean[0])) {

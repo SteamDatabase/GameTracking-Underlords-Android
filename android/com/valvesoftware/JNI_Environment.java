@@ -23,6 +23,7 @@ import java.io.File;
 
 public class JNI_Environment {
     static final /* synthetic */ boolean $assertionsDisabled = false;
+    private static final String k_sSpewPackageName = "com.valvesoftware.JNI_Environment";
     private static INativeLibraryPathResolver m_NativeLibraryPathResolver;
     public static Handler m_OSHandler;
     public static Application m_application;
@@ -37,9 +38,11 @@ public class JNI_Environment {
         String ResolveNativeLibraryPath(String str);
     }
 
+    private static native long CRC32FileNative(String str);
+
     public static native String[] GetNeededSharedObjects(String str, boolean z);
 
-    public static native boolean IsSharedObjectLoadedNative(String str);
+    private static native boolean IsSharedObjectLoadedNative(String str);
 
     private static native String setupNative(int i, Object obj, Class<?> cls, String str, String str2);
 
@@ -52,7 +55,7 @@ public class JNI_Environment {
         }
         m_sPublicPath = SelfInstall.GetContentDirectory(Resources.GetString("BRANCH_ID"), str);
         if (m_sPublicPath == null) {
-            Log.e("com.valvesoftware.JNI_Environment", "Could not determine a content directory");
+            Log.e(k_sSpewPackageName, "Could not determine a content directory");
             System.exit(1);
         }
         if (!m_sPublicPath.exists()) {
@@ -68,7 +71,7 @@ public class JNI_Environment {
         sb.append(" (");
         sb.append(GetAvailableStorageBytes(m_sPublicPath));
         sb.append(" Bytes total)");
-        Log.i("com.valvesoftware.JNI_Environment", sb.toString());
+        Log.i(k_sSpewPackageName, sb.toString());
         AddNativeLibrarySearchPath(m_application.getApplicationContext().getApplicationInfo().nativeLibraryDir);
     }
 
@@ -1177,7 +1180,7 @@ public class JNI_Environment {
         Log.i("JBAPSYS", "MI avail " + (((double) memoryInfo.availMem) / 1048576.0d) + ", low Mem:" + memoryInfo.lowMemory + ", threshold: " + (((double) memoryInfo.threshold) / 1048576.0d) + ", total" + (((double) memoryInfo.totalMem) / 1048576.0d) + "[end]");
         Debug.MemoryInfo memoryInfo2 = new Debug.MemoryInfo();
         Debug.getMemoryInfo(memoryInfo2);
-        Log.i("com.valvesoftware.JNI_Environment", "Memory log HeapMB=" + (((double) Debug.getNativeHeapSize()) / 1048576.0d) + ", HeapUsedMB=" + (((double) Debug.getNativeHeapAllocatedSize()) / 1048576.0d) + ", PSS MB=" + (((float) memoryInfo2.getTotalPss()) / 1024.0f) + ", dpss:" + memoryInfo2.dalvikPss + ", otherpss:" + memoryInfo2.otherPss + ", nativepss:" + memoryInfo2.nativePss);
+        Log.i(k_sSpewPackageName, "Memory log HeapMB=" + (((double) Debug.getNativeHeapSize()) / 1048576.0d) + ", HeapUsedMB=" + (((double) Debug.getNativeHeapAllocatedSize()) / 1048576.0d) + ", PSS MB=" + (((float) memoryInfo2.getTotalPss()) / 1024.0f) + ", dpss:" + memoryInfo2.dalvikPss + ", otherpss:" + memoryInfo2.otherPss + ", nativepss:" + memoryInfo2.nativePss);
         return true;
     }
 
@@ -1215,12 +1218,12 @@ public class JNI_Environment {
     }
 
     public static boolean HttpGet(String str) {
-        Log.i("com.valvesoftware.JNI_Environment", "HttpGet( " + str + " )");
+        Log.i(k_sSpewPackageName, "HttpGet( " + str + " )");
         GetVolleyQueue().add(new StringRequest(0, str, new Response.Listener<String>() {
             public String m_URL;
 
             public void onResponse(String str) {
-                Log.i("com.valvesoftware.JNI_Environment", "HttpGet succeded for \"" + this.m_URL + "\" with response " + str);
+                Log.i(JNI_Environment.k_sSpewPackageName, "HttpGet succeded for \"" + this.m_URL + "\" with response " + str);
             }
 
             public Response.Listener<String> init(String str) {
@@ -1231,7 +1234,7 @@ public class JNI_Environment {
             public String m_URL;
 
             public void onErrorResponse(VolleyError volleyError) {
-                Log.i("com.valvesoftware.JNI_Environment", "HttpGet failed for \"" + this.m_URL + "\" with error " + volleyError.getMessage());
+                Log.i(JNI_Environment.k_sSpewPackageName, "HttpGet failed for \"" + this.m_URL + "\" with error " + volleyError.getMessage());
             }
 
             public Response.ErrorListener init(String str) {
@@ -1344,5 +1347,146 @@ public class JNI_Environment {
         } catch (Throwable unused) {
             return false;
         }
+    }
+
+    /* JADX WARNING: Missing exception handler attribute for start block: B:51:0x00e5 */
+    /* JADX WARNING: Removed duplicated region for block: B:24:0x0091 A[SYNTHETIC, Splitter:B:24:0x0091] */
+    /* JADX WARNING: Removed duplicated region for block: B:28:0x0095  */
+    /* JADX WARNING: Removed duplicated region for block: B:37:0x00b8 A[SYNTHETIC, Splitter:B:37:0x00b8] */
+    /* JADX WARNING: Removed duplicated region for block: B:44:0x00cb A[Catch:{ Throwable -> 0x0023, Throwable -> 0x002f, Throwable -> 0x006e, Throwable -> 0x0094, Throwable -> 0x00b5, Throwable -> 0x00c7, Throwable -> 0x00e5, Throwable -> 0x00eb, Throwable -> 0x00f2 }] */
+    /* JADX WARNING: Removed duplicated region for block: B:45:0x00d0  */
+    /* JADX WARNING: Removed duplicated region for block: B:49:0x00dc A[Catch:{ Throwable -> 0x0023, Throwable -> 0x002f, Throwable -> 0x006e, Throwable -> 0x0094, Throwable -> 0x00b5, Throwable -> 0x00c7, Throwable -> 0x00e5, Throwable -> 0x00eb, Throwable -> 0x00f2 }] */
+    /* Code decompiled incorrectly, please refer to instructions dump. */
+    public static long CRC32File(java.io.File r19) {
+        /*
+            r1 = r19
+            java.lang.String r2 = "CRC32File file \""
+            java.lang.String r3 = "com.valvesoftware.JNI_Environment"
+            r4 = 0
+            if (r1 == 0) goto L_0x00f7
+            boolean r0 = r19.exists()
+            if (r0 == 0) goto L_0x00f7
+            long r6 = r19.length()
+            int r0 = (r6 > r4 ? 1 : (r6 == r4 ? 0 : -1))
+            if (r0 != 0) goto L_0x001a
+            goto L_0x00f7
+        L_0x001a:
+            java.lang.String r0 = r19.getAbsolutePath()     // Catch:{ Throwable -> 0x0023 }
+            long r0 = CRC32FileNative(r0)     // Catch:{ Throwable -> 0x0023 }
+            return r0
+        L_0x0023:
+            long r6 = r19.length()
+            r8 = 0
+            java.io.FileInputStream r0 = new java.io.FileInputStream     // Catch:{ Throwable -> 0x002f }
+            r0.<init>(r1)     // Catch:{ Throwable -> 0x002f }
+            r9 = r0
+            goto L_0x004f
+        L_0x002f:
+            r0 = move-exception
+            java.lang.StringBuilder r9 = new java.lang.StringBuilder
+            r9.<init>()
+            r9.append(r2)
+            r9.append(r1)
+            java.lang.String r10 = "\" stream exception "
+            r9.append(r10)
+            java.lang.String r0 = r0.getMessage()
+            r9.append(r0)
+            java.lang.String r0 = r9.toString()
+            android.util.Log.i(r3, r0)
+            r9 = r8
+        L_0x004f:
+            if (r9 != 0) goto L_0x0069
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r0.<init>()
+            r0.append(r2)
+            r0.append(r1)
+            java.lang.String r1 = "\" no stream"
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            android.util.Log.i(r3, r0)
+            return r4
+        L_0x0069:
+            java.nio.channels.FileChannel r0 = r9.getChannel()     // Catch:{ Throwable -> 0x006e }
+            goto L_0x008f
+        L_0x006e:
+            r0 = move-exception
+            r10 = r0
+            java.lang.StringBuilder r0 = new java.lang.StringBuilder
+            r0.<init>()
+            r0.append(r2)
+            r0.append(r1)
+            java.lang.String r1 = "\" channel exception "
+            r0.append(r1)
+            java.lang.String r1 = r10.getMessage()
+            r0.append(r1)
+            java.lang.String r0 = r0.toString()
+            android.util.Log.i(r3, r0)
+            r0 = r8
+        L_0x008f:
+            if (r0 != 0) goto L_0x0095
+            r9.close()     // Catch:{ Throwable -> 0x0094 }
+        L_0x0094:
+            return r4
+        L_0x0095:
+            java.util.zip.CRC32 r1 = new java.util.zip.CRC32
+            r1.<init>()
+            r2 = r4
+            r16 = r8
+        L_0x009d:
+            int r10 = (r2 > r6 ? 1 : (r2 == r6 ? 0 : -1))
+            if (r10 >= 0) goto L_0x00ec
+            r10 = 131072(0x20000, double:6.47582E-319)
+            long r12 = r6 - r2
+            long r17 = java.lang.Math.min(r10, r12)
+            java.nio.channels.FileChannel$MapMode r11 = java.nio.channels.FileChannel.MapMode.READ_ONLY     // Catch:{ Throwable -> 0x00b5 }
+            r10 = r0
+            r12 = r2
+            r14 = r17
+            java.nio.MappedByteBuffer r10 = r10.map(r11, r12, r14)     // Catch:{ Throwable -> 0x00b5 }
+            goto L_0x00b6
+        L_0x00b5:
+            r10 = r8
+        L_0x00b6:
+            if (r10 == 0) goto L_0x00c9
+            r10.load()     // Catch:{ Throwable -> 0x00c7 }
+            boolean r11 = r10.isLoaded()     // Catch:{ Throwable -> 0x00c7 }
+            if (r11 == 0) goto L_0x00c9
+            r1.update(r10)     // Catch:{ Throwable -> 0x00c7 }
+            long r2 = r2 + r17
+            goto L_0x009d
+        L_0x00c7:
+            goto L_0x009d
+        L_0x00c9:
+            if (r16 != 0) goto L_0x00d0
+            r10 = 131072(0x20000, float:1.83671E-40)
+            byte[] r10 = new byte[r10]     // Catch:{ Throwable -> 0x00c7 }
+            goto L_0x00d2
+        L_0x00d0:
+            r10 = r16
+        L_0x00d2:
+            java.nio.ByteBuffer r11 = java.nio.ByteBuffer.wrap(r10)     // Catch:{ Throwable -> 0x00e5 }
+            int r11 = r0.read(r11, r2)     // Catch:{ Throwable -> 0x00e5 }
+            if (r11 <= 0) goto L_0x00e5
+            r12 = 0
+            r1.update(r10, r12, r11)     // Catch:{ Throwable -> 0x00e5 }
+            long r11 = (long) r11
+            long r2 = r2 + r11
+            r16 = r10
+            goto L_0x009d
+        L_0x00e5:
+            r0.close()     // Catch:{ Throwable -> 0x00eb }
+            r9.close()     // Catch:{ Throwable -> 0x00eb }
+        L_0x00eb:
+            return r4
+        L_0x00ec:
+            r0.close()     // Catch:{ Throwable -> 0x00f2 }
+            r9.close()     // Catch:{ Throwable -> 0x00f2 }
+        L_0x00f2:
+            long r0 = r1.getValue()
+            return r0
+        L_0x00f7:
+            return r4
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.valvesoftware.JNI_Environment.CRC32File(java.io.File):long");
     }
 }
